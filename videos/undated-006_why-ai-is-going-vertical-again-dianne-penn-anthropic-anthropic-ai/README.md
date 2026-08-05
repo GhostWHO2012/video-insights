@@ -7,12 +7,13 @@
 - B站链接：https://www.bilibili.com/video/BV1zdMQ6NEdc
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 11:28:19
-- 字幕数量：0
+- 字幕数量：2
 - 提纲图数量：3
 
 ## 字幕下载
 
-暂无中文在上字幕，后续补齐。
+- [字幕 1](subtitles/01_why-ai-is-going-vertical-again-opus4-8.srt)
+- [字幕 2](subtitles/02_why-ai-is-going-vertical-again-opus4-8.srt)
 
 ## 中文时间轴
 

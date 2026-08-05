@@ -1,0 +1,7354 @@
+1
+00:00:00,150 --> 00:00:04,037
+2023 年我刚来的时候，没人会把 Anthropic、Claude
+In 2023 when I started, nobody said Anthropic and Claude
+
+2
+00:00:04,037 --> 00:00:06,270
+和写代码放在同一句话里。
+and coding in the same sentence.
+
+3
+00:00:06,510 --> 00:00:11,047
+我想回到 Anthropic 刚起步的时候。我记得当时觉得，天啊，
+I want to go back to the beginning of Anthropic. I remember feeling, man,
+
+4
+00:00:11,047 --> 00:00:12,710
+这些人根本没机会。
+these guys have no chance.
+
+5
+00:00:12,950 --> 00:00:14,230
+OpenAI 遥遥领先。
+OpenAI is so far ahead.
+
+6
+00:00:14,470 --> 00:00:18,462
+那时候我看到，大家开始用这些模型，不只是做代码
+At the time I saw people are starting to use these models not just for code
+
+7
+00:00:18,462 --> 00:00:21,390
+自动补全，而是真的在写大段代码。
+autocomplete, but actually writing long form code.
+
+8
+00:00:21,630 --> 00:00:25,018
+这对我们来说是个机会：把 Opus 3 训练得更擅长这件事，
+It's not an opportunity for us to train Opus 3 to be better at
+
+9
+00:00:25,018 --> 00:00:26,470
+那就是转折点。
+that was the inflection.
+
+10
+00:00:26,670 --> 00:00:29,500
+我常想起一年后寒假期间的 Opus 4.5，
+I always think about Opus 4.5 a year later during winter break
+
+11
+00:00:29,500 --> 00:00:31,220
+当时大家都在家，都能写代码。
+when everyone was home, able to code.
+
+12
+00:00:31,420 --> 00:00:37,100
+Opus 4.5 神奇的地方在于，我们不只有了模型，还有了一个载体，
+What was magical about Opus 4.5 is we also now not just had a model but a vehicle,
+
+13
+00:00:37,100 --> 00:00:40,420
+一个像 Claude Code 这样出色的产品体验。
+a great product experience like Claude Code.
+
+14
+00:00:40,700 --> 00:00:45,105
+如果没有 Claude Code 这样的产品，Opus 4.5 也不会有那个高光时刻，
+Opus 4.5, wouldn't have had that moment without a product like Claude Code,
+
+15
+00:00:45,105 --> 00:00:50,140
+而如果没有 Opus 4.5，Claude Code 也不会有那样加速的普及。
+and Claude Code wouldn't have had that type of adoption accelerated without Opus 4.5.
+
+16
+00:00:50,260 --> 00:00:53,860
+我想聊聊我团队里产品这个角色正在怎么变化。
+I want to talk about how the product role is changing for my team.
+
+17
+00:00:54,340 --> 00:00:57,954
+创造用户价值的方式，是找到对的用户反馈，
+The way to drive user value is to figure out the right user feedback,
+
+18
+00:00:57,954 --> 00:01:01,761
+还有评测——我们团队里其实有句话，评测就是新的 PRD，
+the evals — we actually have a saying on the team, evals are the new PRDs,
+
+19
+00:01:01,761 --> 00:01:04,020
+这也是 Garry Tan 一直在讲的。
+something Garry Tan's been talking about.
+
+20
+00:01:04,260 --> 00:01:07,640
+如果你现在愿意每年花 10 万美元在 token 上，
+If you're willing to spend $100,000 a year right now in tokens,
+
+21
+00:01:07,640 --> 00:01:10,500
+你过的就是 2028 年某个人才会过的生活。
+you are living the way somebody in 2028 is gonna live.
+
+22
+00:01:10,700 --> 00:01:13,700
+你得像抠像素一样，去抠每一个 token。
+You have to sweat the tokens as much as you sweat the pixels.
+
+23
+00:01:13,940 --> 00:01:18,750
+你得用这些模型去想出更好、更棒、更进一步的点子。
+You have to be using the models to come up with good and great and better ideas.
+
+24
+00:01:18,910 --> 00:01:20,550
+这一点是没有替代品的。
+And there's no substitute for that.
+
+25
+00:01:20,790 --> 00:01:23,622
+现在大家用 AI 工具时应该更有野心一点，
+People need to be more ambitious with AI tools these days
+
+26
+00:01:23,622 --> 00:01:25,670
+因为它们能做的事实在太多了。
+because they're just capable of so much.
+
+27
+00:01:25,990 --> 00:01:29,670
+我经常问团队一个问题：假设 Claude 8 出来了。
+One thing I ask the team is, let's say Claude 8 comes around.
+
+28
+00:01:29,790 --> 00:01:33,760
+用户的行为会有什么变化？这对你今天怎么做产品意味着什么？
+What changes in what users do? What does that mean for how you're building today?
+
+29
+00:01:36,120 --> 00:01:39,554
+今天的嘉宾是 Dianne Penn，Anthropic AI Research
+Today, my guest is Dianne Penn, head of product for the AI Research
+
+30
+00:01:39,554 --> 00:01:41,080
+和 Labs 团队的产品负责人。
+and Labs teams at Anthropic.
+
+31
+00:01:41,360 --> 00:01:45,918
+三年多前，她作为 Anthropic 第一位 technical product manager 加入，
+She joined Anthropic as the first technical product manager over three years ago,
+
+32
+00:01:45,918 --> 00:01:50,080
+在 AI 世界里那简直是一辈子，当时产品团队只有五个工程师。
+which is a lifetime in AI time when the product team was just five engineers.
+
+33
+00:01:50,630 --> 00:01:54,590
+从 Claude 2 到 Fable，Anthropic 的每一代模型她都参与发布过。
+She's helped ship every model at Anthropic from Claude 2 through Fable.
+
+34
+00:01:55,070 --> 00:01:59,484
+她还帮忙孵化并推出了 Claude Code、MCP、Skills、Claude design，
+She's also helped incubate and launch Claude Code, MCP, Skills, Claude design,
+
+35
+00:01:59,484 --> 00:02:03,430
+以及像 computer use、tool use 和 reasoning 这样的核心能力。
+and also core capabilities like computer use, tool use and reasoning.
+
+36
+00:02:03,870 --> 00:02:08,363
+能和一位身处 AI 和产品管理最核心位置的人聊天，总是一种享受，
+It is always such a treat and so mind expanding to get to talk to someone who's at
+
+37
+00:02:08,363 --> 00:02:10,990
+也总能打开思路。
+the very center of AI and product management.
+
+38
+00:02:11,360 --> 00:02:13,725
+很难想象还有谁能比 Anthropic 研究和 Labs 团队的产品负责人，
+It's hard to imagine someone who has seen more of
+
+39
+00:02:13,725 --> 00:02:18,040
+更清楚事情正在往哪走。
+where things are going than the head of product for Anthropic's research and Labs teams.
+
+40
+00:02:18,480 --> 00:02:23,045
+在正式开始前，别忘了看看 Lenny's ProductPass，
+Before we get into it, don't forget to check out Lenny's ProductPass for a year
+
+41
+00:02:23,045 --> 00:02:27,146
+可以免费用一年全世界最热门、做工最精美的 AI 产品，
+free of the hottest and most beautifully crafted AI products in the world,
+
+42
+00:02:27,146 --> 00:02:30,520
+仅面向 Lenny's newsletter 订阅者开放。
+available exclusively to Lenny's newsletter subscribers.
+
+43
+00:02:31,080 --> 00:02:32,980
+那么，有请 Dianne Penn。
+With that, I bring you Dianne Penn.
+
+44
+00:02:36,500 --> 00:02:40,220
+Dianne，非常感谢你来。欢迎来到播客。
+Dianne, thank you so much for being here. Welcome to the podcast.
+
+45
+00:02:40,980 --> 00:02:43,220
+谢谢你，Lenny。很高兴又见到你。
+Thank you, Lenny. It's so nice to see you again.
+
+46
+00:02:43,580 --> 00:02:49,260
+我想回到 Anthropic 最开始、最早期的时候。
+I want to go back to the beginning of Anthropic, the early days.
+
+47
+00:02:49,900 --> 00:02:51,420
+我记得 Anthropic 刚成立的时候。
+I remember when Anthropic first launched.
+
+48
+00:02:51,500 --> 00:02:54,281
+那大概是几年前，第一个模型发布的时候，
+This was, I don't know, years, the first model when it launched years ago,
+
+49
+00:02:54,281 --> 00:02:55,740
+差不多三年前吧。
+three years ago, something like that.
+
+50
+00:02:56,720 --> 00:03:01,300
+三年前。我记得当时就觉得，天啊，这些人根本没机会。
+Three years. I remember just like feeling that, man, these guys have no chance.
+
+51
+00:03:01,940 --> 00:03:05,580
+OpenAI 遥遥领先。就觉得，他们到底在想什么？
+OpenAI is so far ahead. Every they're just like, what are they thinking?
+
+52
+00:03:05,620 --> 00:03:06,420
+这怎么可能？
+How is this possible?
+
+53
+00:03:06,940 --> 00:03:08,540
+OpenAI 已经赢了，太晚了。
+OpenAI has won. It's too late.
+
+54
+00:03:09,420 --> 00:03:10,980
+现在情况完全不一样了。
+Things are very different now.
+
+55
+00:03:11,300 --> 00:03:15,469
+我看到的最新数字是，Anthropic 大概在做，我也说不准，
+The latest number I saw was Anthropic was making like, I don't know,
+
+56
+00:03:15,469 --> 00:03:16,660
+500 亿美元的 ARR。
+$50 billion in ARR.
+
+57
+00:03:17,020 --> 00:03:19,416
+这相当于以前公司上市时的规模，
+That's like what companies used to go public at,
+
+58
+00:03:19,416 --> 00:03:23,010
+很成功的公司才会以 500 亿的估值上市。
+like very successful companies went public at 50 billion in valuation.
+
+59
+00:03:23,450 --> 00:03:26,130
+而 Anthropic 据说每年都能做到这个数。
+Anthropic reportedly is making that every single year.
+
+60
+00:03:26,930 --> 00:03:29,650
+你是最早期加入的 PM 之一。
+You joined as one of the earliest PMs.
+
+61
+00:03:30,290 --> 00:03:32,770
+你加入的时候，大概只有五个工程师。
+There were something like five engineers when you joined.
+
+62
+00:03:33,410 --> 00:03:36,130
+你加入时，模型甚至还没发布。
+The model hadn't even launched when you joined.
+
+63
+00:03:37,090 --> 00:03:39,717
+Anthropic 早期是什么样子的？
+What was it like in those early days of Anthropic?
+
+64
+00:03:39,717 --> 00:03:43,370
+有什么当时的情况可能会让人意外？
+What's something that might surprise people about what it was like?
+
+65
+00:03:43,590 --> 00:03:49,554
+一开始，我觉得如今 Anthropic 之所以是今天这样，很大一部分
+Yeah, at the beginning, I think a big part of what's made Anthropic today actually
+
+66
+00:03:49,554 --> 00:03:53,150
+其实从早期就一直是它的核心。
+has been very much the core of even the early days.
+
+67
+00:03:53,390 --> 00:03:58,750
+我是 2023 年加入的，就像你说的，当时我们有五个产品工程师。
+So I joined in 2023, like you said, we had five product engineers.
+
+68
+00:03:59,070 --> 00:04:02,030
+整个 API 业务只有一个工程师。
+There was one engineer for the entirety of our API business.
+
+69
+00:04:02,430 --> 00:04:08,018
+你信不信，我觉得很大一部分原因是文化真的
+If you if you believe um, and I think a big portion of it was the culture was really
+
+70
+00:04:08,018 --> 00:04:13,860
+很强，这也是我想对那些对公司感兴趣的人强调的一点，
+strong and I think this is something I emphasize for folks who are interested in the
+
+71
+00:04:13,860 --> 00:04:16,908
+我们真的是言行一致地践行
+company, um, really do walk the walk of, um,
+
+72
+00:04:16,908 --> 00:04:20,210
+使命、文化和价值观。
+the mission and the culture and the values. Um.
+
+73
+00:04:20,490 --> 00:04:22,970
+那种氛围非常像一家创业公司。
+And the energy was very much like a startup.
+
+74
+00:04:23,450 --> 00:04:29,780
+你说得对，早些年我们一直在努力寻找自己的定位。
+And I think you're right, we were very much trying to find our identity in the early years, like.
+
+75
+00:04:30,600 --> 00:04:33,506
+我觉得一部分是关于技术本身，
+I think there's one piece around the technology,
+
+76
+00:04:33,506 --> 00:04:36,482
+但这项技术如何为用户带来价值，
+but how does that technology bring value to users,
+
+77
+00:04:36,482 --> 00:04:39,600
+为社会带来价值，它究竟能是什么样？
+bring value to society and what could it possibly be?
+
+78
+00:04:40,120 --> 00:04:44,315
+我觉得早些年我们就是在用不同方式探索这些问题，
+And I think the early years were us exploring that in different ways,
+
+79
+00:04:44,315 --> 00:04:48,215
+比如我们确实是从 Claude.ai 起步的，就像又一个聊天机器人、
+like we did start with like Claude.ai, like another chatbot,
+
+80
+00:04:48,215 --> 00:04:51,600
+聊天助手，然后逐渐演变出像 tool use 这样的能力。
+chat assistant and evolving into things like tool use.
+
+81
+00:04:52,260 --> 00:04:57,408
+我觉得我们真正开始找到节奏的时刻之一，
+Um, I think one of the moments where really we started to get into our groove was
+
+82
+00:04:57,408 --> 00:05:00,180
+就是发布 Golden Gate Claude 这样的东西。
+shipping things like Golden Gate Claude.
+
+83
+00:05:00,180 --> 00:05:02,340
+不知道你还记不记得。不记得。
+I don't know if you like remember that. No.
+
+84
+00:05:02,500 --> 00:05:07,060
+这个其实只上线了大概 24 小时左右。
+Um, so this, this was actually up for about 24 hours or so.
+
+85
+00:05:07,540 --> 00:05:10,439
+我们当时刚刚发布了一项
+Uh, we had just published one of our, um,
+
+86
+00:05:10,439 --> 00:05:14,040
+2024 年初的早期可解释性研究。
+early interpretability research in early 2024.
+
+87
+00:05:14,920 --> 00:05:20,971
+其中一个例子基本上是说，你可以在模型的各个层里
+And one of the examples was essentially you could have what's called like features
+
+88
+00:05:20,971 --> 00:05:26,320
+找到所谓的“特征”，它们能表达某些类型的主题。
+of the model within the layers which express certain types of thematics.
+
+89
+00:05:26,680 --> 00:05:31,498
+研究员能识别出的其中一个主题，
+So one of the one of the themes that the researchers was able to identify was,
+
+90
+00:05:31,498 --> 00:05:33,640
+比如说是“用要点写作”。
+let's say, bullet point writing.
+
+91
+00:05:34,200 --> 00:05:35,880
+另一个是“人物和地点”。
+Another one was people and places.
+
+92
+00:05:36,440 --> 00:05:41,320
+还有一个经常出现、特别有共鸣的，就是金门大桥。
+And one that really came up frequently that resonated was the Golden Gate Bridge.
+
+93
+00:05:41,840 --> 00:05:45,898
+于是当你把那个特征调大之后，
+And so when you actually essentially dialed up that feature,
+
+94
+00:05:45,898 --> 00:05:49,240
+Claude 就会痴迷于金门大桥。
+Claude would obsess about the Golden Gate Bridge.
+
+95
+00:05:49,440 --> 00:05:51,522
+也就是说，它在每一条回复里，
+So meaning in every one of its responses,
+
+96
+00:05:51,522 --> 00:05:54,400
+都会绕回来聊金门大桥。
+it would come back and talk about the Golden Gate Bridge.
+
+97
+00:05:54,520 --> 00:05:58,812
+比如你说“给我一份做意大利面的食谱”，
+So if you said, like, give me a recipe for making spaghetti, uh,
+
+98
+00:05:58,812 --> 00:06:04,260
+它会说“这是食谱，那橙色就像 International Orange 那样”，
+it would say here is a recipe and the orange color is just like International Red
+
+99
+00:06:04,260 --> 00:06:08,140
+就是金门大桥的那种颜色。
+that the Golden Gate Bridge looked like.
+
+100
+00:06:08,860 --> 00:06:12,990
+这真的非常古怪有趣，我们当时特别想
+Um, and so it was like really quirky and we, we, we very much wanted to,
+
+101
+00:06:12,990 --> 00:06:15,888
+在那种情况下，把它带给用户，
+in that situation, just bring that user, bring,
+
+102
+00:06:15,888 --> 00:06:20,380
+带给大众，带给那些开始使用 Claude 的人。
+bring it to the masses and bring it to people who are starting to use Claude.
+
+103
+00:06:21,210 --> 00:06:27,247
+所以整个体验，我们其实就在 Claude.ai 网站上
+And uh, so the entire uh, experience actually we spun up on our Claude.ai website
+
+104
+00:06:27,247 --> 00:06:28,490
+在 24 小时内就搭建了出来。
+within 24 hours.
+
+105
+00:06:29,250 --> 00:06:33,067
+这需要工程、产品设计，
+And that took like engineering, product design, uh,
+
+106
+00:06:33,067 --> 00:06:36,450
+还有我们的研究团队一起协作。
+our like research teams all working together.
+
+107
+00:06:37,090 --> 00:06:42,090
+我们真的非常自豪。说实话，我觉得它可能只触达了 2000 个人。
+And we were really, really proud of it. I think it maybe reached only 2,000 people, to be honest.
+
+108
+00:06:42,710 --> 00:06:48,238
+但它让我们意识到，我们真的能带来全新的用户体验，
+Uh, but it, it made us feel like, oh, we can actually bring new user experiences,
+
+109
+00:06:48,238 --> 00:06:52,929
+用一种与众不同、又真正属于我们的方式来展示研究，
+showcase our research in a way that's different and authentic to us
+
+110
+00:06:52,929 --> 00:06:55,190
+而且是以非常创业公司的节奏。
+and in a very startupy like pace.
+
+111
+00:06:56,150 --> 00:07:00,481
+对我来说，那是一个可能不太被注意到的转折点，
+That to me was like one of those like maybe hidden inflection points of we were
+
+112
+00:07:00,481 --> 00:07:03,865
+我们开始找到自己的定位，意识到我们能做出产品、
+starting to find our identity that we could build products,
+
+113
+00:07:03,865 --> 00:07:08,467
+做出和竞争对手、和市面上已有的东西
+build experiences that were different for what our competitors had seen what was
+
+114
+00:07:08,467 --> 00:07:09,550
+都不一样的体验。
+already out there.
+
+115
+00:07:10,550 --> 00:07:14,750
+我觉得后来 Labs、Claude Code 这些，显然
+I think that obviously labs, Claude Code, etc.
+
+116
+00:07:14,790 --> 00:07:20,157
+我们开始把自己定位成，去思考这个世界
+Like we then started to identify ourselves as would we actually think the world, uh,
+
+117
+00:07:20,157 --> 00:07:23,990
+该如何看待 AI，如何把它更贴近大众。
+how to think about AI, how to bring that closer to the public.
+
+118
+00:07:24,550 --> 00:07:26,715
+但那是一种非常自下而上的文化。
+Um, but it was a very bottoms up culture.
+
+119
+00:07:26,715 --> 00:07:29,470
+所以整个那次体验都非常自下而上。
+And so that entire experience was very bottoms up.
+
+120
+00:07:30,230 --> 00:07:34,790
+我看到工程师、设计师主动贡献时间来参与。
+I see engineers, I see designers donating time to work on.
+
+121
+00:07:35,390 --> 00:07:38,851
+所以我总喜欢拿它当例子，说明当时那些
+And so I like to always use that as example of like what the day,
+
+122
+00:07:38,851 --> 00:07:43,195
+早期的日子是什么样，但文化和价值观基本上
+early days were like, but the culture and, and, and the values have very much,
+
+123
+00:07:43,195 --> 00:07:45,910
+我觉得从那些早期到现在几乎没变。
+I think, stayed the same since those early days.
+
+124
+00:07:46,630 --> 00:07:50,510
+本期节目由本季的呈现赞助商 WorkOS 为您带来。
+This episode is brought to you by our season's presenting sponsor, WorkOS.
+
+125
+00:07:51,170 --> 00:07:54,309
+OpenAI、Anthropic、Cursor、Vercel、Replit、
+What do OpenAI, Anthropic, Cursor, Vercel, Replit,
+
+126
+00:07:54,309 --> 00:07:58,690
+Sierra、Clay 以及数百家成功公司有什么共同点？
+Sierra, Clay and hundreds of other winning companies all have in common?
+
+127
+00:07:59,170 --> 00:08:00,850
+它们都由 WorkOS 提供支持。
+They are all powered by WorkOS.
+
+128
+00:08:01,530 --> 00:08:04,047
+如果你正在为企业客户打造产品，
+If you're building a product for the enterprise,
+
+129
+00:08:04,047 --> 00:08:07,301
+你一定体会过集成单点登录、SCIM、RBAC、
+you've felt the pain of integrating single sign on, SCIM, RBAC,
+
+130
+00:08:07,301 --> 00:08:10,370
+审计日志等大公司必备功能的痛苦。
+audit logs and other features required by large companies.
+
+131
+00:08:10,930 --> 00:08:15,901
+WorkOS 通过现代开发者平台，把这些成交障碍变成即插即用的 API，
+WorkOS turns those deal blockers into drop in APIs with a modern developer platform
+
+132
+00:08:15,901 --> 00:08:17,890
+专为 B2B SaaS 打造。
+built specifically for B2B SaaS.
+
+133
+00:08:18,760 --> 00:08:21,187
+我投资的每一家创业公司，
+Literally every startup that I'm an investor in
+
+134
+00:08:21,187 --> 00:08:24,705
+只要开始向高端市场扩张，最后都会用上 WorkOS，
+that starts to expand upmarket ends up working with WorkOS and that's
+
+135
+00:08:24,705 --> 00:08:26,040
+因为它们是最好的。
+because they are the best.
+
+136
+00:08:26,480 --> 00:08:30,620
+无论你是想拿下第一个企业客户的种子期创业公司，
+Whether you are a seed stage startup trying to land your first enterprise customer
+
+137
+00:08:30,620 --> 00:08:32,300
+还是正在全球扩张的独角兽，
+or a unicorn expanding globally,
+
+138
+00:08:32,300 --> 00:08:36,320
+WorkOS 都是最快让你达到企业级标准、扫清增长障碍的途径。
+WorkOS is the fastest path to becoming enterprise ready and unblocking growth.
+
+139
+00:08:36,760 --> 00:08:38,960
+它本质上就是企业级功能领域的 Stripe。
+It's essentially Stripe for enterprise features.
+
+140
+00:08:39,440 --> 00:08:42,256
+访问 WorkOS.com 即可开始，或者直接去他们的 Slack，
+Visit WorkOS.com to get started or just hit up their slack
+
+141
+00:08:42,256 --> 00:08:45,600
+那里有真正的工程师等着回答你的问题。
+where they have actual engineers waiting to answer your questions.
+
+142
+00:08:46,160 --> 00:08:49,060
+WorkOS 让你借助好用的 API、
+WorkOS allows you to build faster with delightful APIs,
+
+143
+00:08:49,060 --> 00:08:51,960
+完善的文档和顺畅的开发者体验，更快地构建产品。
+comprehensive docs and a smooth developer experience.
+
+144
+00:08:52,560 --> 00:08:55,880
+立即访问 WorkOS.com，让你的应用达到企业级标准。
+Go to WorkOS.com to make your app enterprise ready today.
+
+145
+00:08:56,760 --> 00:08:59,351
+还有哪些重大的转折时刻，
+What are some of the other big inflection moments
+
+146
+00:08:59,351 --> 00:09:02,574
+当你回顾 Anthropic 从这样一个
+as you think about just Anthropic going from just this, like,
+
+147
+00:09:02,574 --> 00:09:05,860
+试图和 OpenAI 这个庞然大物竞争的实验室，
+lab that's trying to compete with this juggernaut of OpenAI at
+
+148
+00:09:05,860 --> 00:09:07,440
+一路走到今天的样子？
+that point to what it is today.
+
+149
+00:09:07,520 --> 00:09:10,280
+有哪些时刻让你印象深刻，觉得“哇，这真的改变了一切”？
+What are some moments that stick out of like, wow, that really changed things?
+
+150
+00:09:11,120 --> 00:09:16,330
+那肯定是我们在训练和测试 Opus 3 的时候，
+Definitely when we were training and, uh, testing, uh, Opus 3,
+
+151
+00:09:16,330 --> 00:09:20,038
+我觉得那是一个关键时刻，当时公司
+I think that was the moment when the company,
+
+152
+00:09:20,038 --> 00:09:24,647
+我记得那会儿我们还不到 200 人，
+I think we were less than 200 people still at that point,
+
+153
+00:09:24,647 --> 00:09:31,160
+而且很明确，我们需要也想要打造一个前沿模型。
+and it was very clear that we needed and wanted to create a frontier model and a.
+
+154
+00:09:32,240 --> 00:09:37,248
+这对我们触达用户、
+That was very important in terms of like our ability to reach like, users,
+
+155
+00:09:37,248 --> 00:09:40,040
+消费者以及展示我们的研究成果非常重要。
+consumers and to showcase our research.
+
+156
+00:09:40,860 --> 00:09:47,140
+我们也在思考，人们为什么要选择 Claude？
+And we were looking for ways for also why should somebody choose Claude?
+
+157
+00:09:47,820 --> 00:09:49,340
+这是一个核心问题。
+And that was like a core question.
+
+158
+00:09:49,340 --> 00:09:52,380
+这也是早期我们经常被问到的核心问题。
+And that was a core question we were getting asked in the early days.
+
+159
+00:09:53,180 --> 00:09:57,996
+我觉得 Opus 3，它大概是 2024 年 3 月初发布的，
+And I think with Opus 3, you know it launched I think early March 2024,
+
+160
+00:09:57,996 --> 00:10:03,996
+但在那之前，跨推理、研究、
+but there was many, many months of various teams across inference, across research,
+
+161
+00:10:03,996 --> 00:10:10,080
+微调、预训练的各个团队，在不同阶段为一个共同目标齐心协力了好几个月。
+fine tuning, pre training that rallied at different points and towards a common goal.
+
+162
+00:10:10,960 --> 00:10:15,840
+我觉得每个参与其中的人都特别自豪。
+And I, I think everybody that was involved was like really proud.
+
+163
+00:10:16,040 --> 00:10:21,568
+我记得，作为 PM、研究负责人，还有我自己，我们都待在各自的
+I remember, uh, being the PMs, uh, the research leads, myself, we were all in our,
+
+164
+00:10:21,568 --> 00:10:23,600
+呃，当时大概是 12 月。
+um, this was around December.
+
+165
+00:10:23,600 --> 00:10:26,400
+所以我们都在家，在各自的
+So we were all at home in our various, uh.
+
+166
+00:10:27,580 --> 00:10:31,902
+父母家，看到每个人视频背景里儿时的房间，
+Parents homes and seeing everybody's background of like their childhood room
+
+167
+00:10:31,902 --> 00:10:35,241
+每个人都在拼命弄清楚，
+and everybody is working really hard to figure out that like,
+
+168
+00:10:35,241 --> 00:10:37,140
+我们训练这个模型到底是为了什么？
+what are we training the model for?
+
+169
+00:10:37,220 --> 00:10:38,700
+它表现得对不对？
+Is it showing up the right way?
+
+170
+00:10:39,260 --> 00:10:43,540
+我觉得那在建立信任方面非常有力量。
+So I think that was really powerful in terms of just building a lot of trust.
+
+171
+00:10:44,260 --> 00:10:47,186
+我们很多研究负责人其实，
+And a lot of our research leads have actually,
+
+172
+00:10:47,186 --> 00:10:51,114
+从那时候一路走来，现在有的在带强化学习，
+from that time are now like leading reinforcement learning,
+
+173
+00:10:51,114 --> 00:10:54,040
+有的在带我们的性格塑造工作、对齐工作。
+leading our character work, alignment work.
+
+174
+00:10:54,240 --> 00:10:56,533
+所以我觉得那种基础性的信任，
+So that foundational trust, I think,
+
+175
+00:10:56,533 --> 00:11:01,266
+也帮助我们现在能在产品和研究之间，
+also helped us work well now with any of our production models across product
+
+176
+00:11:01,266 --> 00:11:03,854
+顺畅地协作各种生产模型，
+and research because we were working just
+
+177
+00:11:03,854 --> 00:11:06,960
+因为早期我们一起在一线摸爬滚打了那么久。
+so much in the trenches together in the early days.
+
+178
+00:11:08,080 --> 00:11:14,140
+然后我觉得还有像意识到代码很重要这样的事，
+And then I think there were things like identifying that coding was important, right,
+
+179
+00:11:14,140 --> 00:11:18,348
+2023 年我刚来的时候，没人会把 Anthropic、Claude
+in 2023 when I started, um, nobody said Anthropic and Claude
+
+180
+00:11:18,348 --> 00:11:20,620
+和代码放在同一句话里。
+and coding in the same sentence.
+
+181
+00:11:21,220 --> 00:11:26,635
+我记得当时像 GPT-4 这样的竞品模型也有人用来写代码，
+I think competitor models like GPT-4 at the time was used a bit for coding,
+
+182
+00:11:26,635 --> 00:11:32,140
+但那只是众多用例之一。举个例子，我当时观察到的一个现象是，
+but it was one of many use cases. And one thing that, for example, I saw was.
+
+183
+00:11:33,390 --> 00:11:37,767
+人们开始用这些模型写代码，而且不只是写代码，
+People are starting to use code, these models, not just for code,
+
+184
+00:11:37,767 --> 00:11:42,550
+不只是代码自动补全，而是真正在写大段的代码。
+not just like code autocomplete, but actually writing long form code.
+
+185
+00:11:42,710 --> 00:11:47,310
+这对我们来说是个机会，可以把 Opus 3 训练得更擅长这件事。
+And it's not an opportunity for us to train, you know, Opus 3 to be better at.
+
+186
+00:11:47,830 --> 00:11:52,910
+从训练角度看，这最终是个相对较小的改动。
+And it ended up being a relatively smaller change from a training perspective.
+
+187
+00:11:53,430 --> 00:11:58,720
+但它帮助我们在早期竞争中脱颖而出，赢得用户，
+But it ended up helping us differentiate in the early days competitively for users
+
+188
+00:11:58,720 --> 00:12:02,783
+也吸引来了很多非常早期的 Claude 爱好者
+and actually bring in a lot of the very early Claude enthusiasts
+
+189
+00:12:02,783 --> 00:12:05,083
+和开发者，因为我们，呃，
+and developers because we were, uh,
+
+190
+00:12:05,083 --> 00:12:09,760
+提供了他们当时觉得根本不可能实现的价值。
+providing a value that they didn't really think was possible at the time.
+
+191
+00:12:10,160 --> 00:12:12,123
+你提到 Opus 3 真的很有意思，
+It's so interesting you talk about Opus 3,
+
+192
+00:12:12,123 --> 00:12:15,880
+那已经是很久以前的事了，很难想象那会是个大的转折点。
+like that's so long ago and just like it's hard to think that was a big inflection.
+
+193
+00:12:15,960 --> 00:12:19,600
+所以听到那在内部是个重要里程碑，真的很有意思。
+And so this is really interesting to hear that that was internally a big milestone.
+
+194
+00:12:20,130 --> 00:12:22,953
+感觉那几乎给你们建立了一种信心，哇，
+It almost feels like this confidence you all built that, wow,
+
+195
+00:12:22,953 --> 00:12:25,610
+我们真的能做出一个前沿模型，也就是今天这样。
+we could really ship a frontier model, which is now today.
+
+196
+00:12:25,730 --> 00:12:28,530
+如果拿它跟我们今天的成果比，其实并不算好。
+So not great if you compare it to what we've got today.
+
+197
+00:12:28,970 --> 00:12:32,212
+我总会想到 Opus 4.5，有意思的是，
+What I always think about is Opus 4.5, which was and interestingly,
+
+198
+00:12:32,212 --> 00:12:36,090
+大约一年后，也是在寒假期间，大家都在家，可以写代码。
+like a year later, also during winter break when everyone was home, able to code.
+
+199
+00:12:37,170 --> 00:12:43,890
+那是不是又一个大的里程碑？是的，我觉得 Opus 4.5 绝对是又一个重大时刻。
+Was that another big milestone? Yeah, Opus 4.5 was definitely another large moment, I think.
+
+200
+00:12:44,330 --> 00:12:47,727
+Opus 4.5 神奇的地方在于，
+What was magic about magical about Opus 4,
+
+201
+00:12:47,727 --> 00:12:51,512
+我们不只有了一个模型，还有了一个载体，
+5 is we also now not just had a model but a vehicle
+
+202
+00:12:51,512 --> 00:12:56,170
+也就是像 Claude Code 这样出色的产品体验。
+which is like a great product experience like Claude Code.
+
+203
+00:12:57,170 --> 00:13:02,703
+我们团队常说的一句话是，你需要前沿产品，才能真正拥有
+One thing we say a lot on the team is you need frontier products in order to have
+
+204
+00:13:02,703 --> 00:13:04,000
+前沿模型。
+frontier models.
+
+205
+00:13:04,080 --> 00:13:07,200
+也才能让人们感受到前沿模型的神奇。
+And for people to feel the magic of frontier models.
+
+206
+00:13:07,760 --> 00:13:13,350
+我觉得，我们感受到 Claude Code 的神奇，已经，呃，
+And I think, you know, we felt the magic of Claude code for very, for, for, uh,
+
+207
+00:13:13,350 --> 00:13:15,480
+在那之前好几个月就有了。
+for many months before that.
+
+208
+00:13:16,000 --> 00:13:21,693
+呃，但事实是，模型基本上达到了一种智能水平，
+Uh, but the fact that the model essentially got to a level of intelligence
+
+209
+00:13:21,693 --> 00:13:23,840
+在非常广泛的层面上，
+where at a very broad level.
+
+210
+00:13:24,650 --> 00:13:27,490
+用户可以同时体验到两者。
+Users can experience both.
+
+211
+00:13:27,570 --> 00:13:34,000
+在新用例中体验到前沿智能，让它以任意 agent 的方式端到端地完成任务。
+Frontier Intelligence in new use case says allow it to run things end to end in any agentic manner.
+
+212
+00:13:34,360 --> 00:13:37,000
+我觉得那就是转折点。其实是两者共同作用的结果。
+I think that was the inflection. It was actually both.
+
+213
+00:13:37,640 --> 00:13:42,760
+我觉得如果没有 Claude Code 这样的产品，Opus 4.5 不会有那个时刻。
+I. I think Opus 4.5 wouldn't have had that moment without a product like Claude Code.
+
+214
+00:13:43,160 --> 00:13:46,261
+而我觉得 Claude Code 也不会
+And Claude Code, I think, wouldn't have had
+
+215
+00:13:46,261 --> 00:13:50,160
+在没有 Opus 4.5 的情况下获得那样加速的普及。
+that type of adoption accelerated without Opus 4.5.
+
+216
+00:13:50,690 --> 00:13:54,605
+顺着这个话题说，呃，有意思的是，Dario Amodei，
+So kind of speaking on this, on this thread, uh, Dario Amodei, interestingly,
+
+217
+00:13:54,605 --> 00:13:57,990
+如果你回看他所有的预测，他基本上就是说，好，
+if you look back at all his predictions, he's just like, okay,
+
+218
+00:13:57,990 --> 00:13:59,450
+编程这件事会被解决。
+coding is gonna be solved.
+
+219
+00:13:59,490 --> 00:14:02,010
+大概一年左右就会做到 100%，差不多这个意思。
+It'll be 100% in like a year or something like that.
+
+220
+00:14:02,010 --> 00:14:04,290
+他一直在讲我们要怎么搞定代码。
+He kept talking about how we're gonna do code.
+
+221
+00:14:04,290 --> 00:14:08,050
+就是 AI 会写我们所有的代码，我记得大家都在说，不可能。
+Like AI is gonna do all our code and I remember everyone, uh, being like, there's no way.
+
+222
+00:14:08,090 --> 00:14:09,170
+这也太复杂了。
+This is way too complicated.
+
+223
+00:14:09,290 --> 00:14:12,633
+AI 怎么可能真的擅长这么复杂的事情，
+How was, how was AI ever gonna get really good at this very complex thing
+
+224
+00:14:12,633 --> 00:14:13,540
+这是人类才会做的。
+that humans do not.
+
+225
+00:14:13,700 --> 00:14:16,060
+这件事在很长时间里都得靠人类。结果他完全说对了。
+This is going to be humans for a long time. He was completely right.
+
+226
+00:14:17,260 --> 00:14:20,660
+他还经常讲的另一件事，是我们现在所处的这条指数曲线，
+Something else that he talks a lot about is this exponential that we're now,
+
+227
+00:14:20,660 --> 00:14:21,740
+就是我们现在正处在上面的这条。
+we're now that we're on.
+
+228
+00:14:21,860 --> 00:14:24,700
+他就是这么形容的。现在我们就像是身处这条指数曲线上。
+That's the way he describes it. Now we're like, we're on the exponential curve.
+
+229
+00:14:25,300 --> 00:14:28,169
+我记得不久前，新模型陆续发布，
+I remember not long ago, we were new models were being released
+
+230
+00:14:28,169 --> 00:14:30,100
+大家都在说，好了，到头了。
+and everybody was like, okay, we're done.
+
+231
+00:14:30,140 --> 00:14:33,500
+没有上升空间了。到平台期了。结束了。没有增长余地了。
+There's no more upside. It's plateauing. It's over. There's no more room to grow.
+
+232
+00:14:33,920 --> 00:14:36,640
+呃，而现在正好相反。现在我们身处其中。
+Uh, and now it's like the opposite. Now we're inside.
+
+233
+00:14:36,720 --> 00:14:39,901
+就像，如果你想象一下这条指数曲线，
+Like, if you think about the curve of the exponential,
+
+234
+00:14:39,901 --> 00:14:42,376
+我们现在就处在这条指数曲线的内部，
+we're like inside of the exponential now,
+
+235
+00:14:42,376 --> 00:14:46,052
+这从定义上就意味着每一次进步都是一次巨大的跃升，
+which by definition means every improvement is a massive jump
+
+236
+00:14:46,052 --> 00:14:48,738
+因为我们正处在那个曲棍球杆式陡增的部分，
+because we're like on that hockey stick part,
+
+237
+00:14:48,738 --> 00:14:52,768
+身处这个疯狂的历史性时刻之中是什么感觉，
+what's it like just being on the inside of this crazy historic moment
+
+238
+00:14:52,768 --> 00:14:54,040
+就在 AI 不断进步的时候。
+when AI is improving.
+
+239
+00:14:54,760 --> 00:14:57,080
+进步这么快，这么多东西被解锁。
+So fast, so much is being unlocked.
+
+240
+00:14:57,680 --> 00:15:03,040
+呃，那是什么感觉，人们又该如何为即将到来的加速做好准备，
+Uh, what is it like and how should people prep pair for the coming acceleration of
+
+241
+00:15:03,040 --> 00:15:05,360
+AI 带来越来越多的进步？
+more and more improvement from AI?
+
+242
+00:15:05,760 --> 00:15:08,410
+我在团队里常说的一句话是，
+One thing I like to say on the team is,
+
+243
+00:15:08,410 --> 00:15:11,678
+我们大多数人当时还没真正开始工作，
+most of us weren't like actively working yet
+
+244
+00:15:11,678 --> 00:15:17,772
+那时互联网正从一个新奇玩意变成人人都能用的东西，
+when the internet transition from this novelty to something that everyone can use
+
+245
+00:15:17,772 --> 00:15:21,040
+感觉这就是人类要经历的过程。
+and it feels like that's just taking humans.
+
+246
+00:15:21,320 --> 00:15:24,499
+我觉得类比很有帮助。所以，
+Uh, I think analogies are helpful. And so like,
+
+247
+00:15:24,499 --> 00:15:27,760
+我觉得这里的类比有几点。
+the analogy of that is I think a couple of things.
+
+248
+00:15:28,280 --> 00:15:33,320
+第一点是，适应力变得非常重要。
+Um, number one is adaptability becomes very important.
+
+249
+00:15:33,840 --> 00:15:40,918
+我们有 evals，在安全这一侧我们有安全测试，
+Um, I think we, we have evals, we have, you know, on the safety side, safety testing,
+
+250
+00:15:40,918 --> 00:15:46,662
+有 red teaming，在能力和产品这一侧有新的原型，
+red teaming on the capabilities and product side, new prototypes,
+
+251
+00:15:46,662 --> 00:15:50,150
+有像 Claude Code Tag 这样的产品等等。
+products like Claude Code Tag and others.
+
+252
+00:15:50,710 --> 00:15:54,190
+但很难预测确切的时间点或确切的模型。
+But it's very hard to predict the exact moment or the exact model.
+
+253
+00:15:54,790 --> 00:15:58,680
+所以当你面对新信息时的适应力，
+And so the adaptability of when you're faced with new information,
+
+254
+00:15:58,680 --> 00:16:02,570
+你是继续照旧计划，还是据此做出更好的决策？
+how do you then make better decisions versus keeping the same plan?
+
+255
+00:16:03,290 --> 00:16:05,570
+所以这种敏捷性真的很重要。
+And so like that agility is really important.
+
+256
+00:16:06,410 --> 00:16:08,891
+我觉得另一点是，
+I think another piece is with that,
+
+257
+00:16:08,891 --> 00:16:15,050
+你如何真正用第一性原理去思考、推演接下来会发生什么？
+how do you actually be thinking very first principles and reason through what's next?
+
+258
+00:16:15,290 --> 00:16:16,330
+那又意味着什么？
+What's the so what?
+
+259
+00:16:16,850 --> 00:16:18,690
+我们如何投入到新产品上？
+How do we invest in new products?
+
+260
+00:16:19,250 --> 00:16:22,760
+我们如何投入去向用户解释这些差异。
+How do we invest in explaining the differences to users.
+
+261
+00:16:23,600 --> 00:16:28,083
+所以我觉得身处这条指数曲线之中，
+So a lot of the, a lot of the experiences I think of being in
+
+262
+00:16:28,083 --> 00:16:32,947
+很多经验都在于理解你如何运作，
+that exponential is that pay, understanding how you operate
+
+263
+00:16:32,947 --> 00:16:36,476
+如何做出更好的决策，然后把
+and make better decisions and then applying
+
+264
+00:16:36,476 --> 00:16:42,771
+第一性原理的思考应用进去，去做一些原本我们计划中
+that first principles thinking to then do something that maybe we pull up a plan
+
+265
+00:16:42,771 --> 00:16:46,300
+要到几个月后才做的事。
+that we were expecting a few months from now.
+
+266
+00:16:46,340 --> 00:16:51,460
+但现在模型已经能做到、能落地，并真正把它带给用户。
+But now the model can actually do and work on and actually bring that to users.
+
+267
+00:16:51,620 --> 00:16:56,104
+所以就是像 Skills 这类东西，
+So this is things like co work skills tag, you know,
+
+268
+00:16:56,104 --> 00:16:59,840
+这是一个非常正向、自我强化的循环。
+it's a very positive self enforcing loop.
+
+269
+00:17:00,080 --> 00:17:04,640
+我觉得很重要的一部分还在于彼此之间的信任，
+And I I think a big part of it also is just having the like trust in each other,
+
+270
+00:17:04,640 --> 00:17:06,993
+确保我们，
+like making sure we have, like, we're,
+
+271
+00:17:06,993 --> 00:17:11,920
+我们在认真做正确的决策，也在带着大家一起前进。
+we're thinking through the right decision making, we're bringing folks along.
+
+272
+00:17:12,760 --> 00:17:16,240
+有些团队可能比其他团队更早看到、更快感受到这条指数曲线。
+Some teams might see the exponential, feel it faster than others.
+
+273
+00:17:16,870 --> 00:17:19,764
+所以我们如何有那份从容，去带着整个组织，
+So how do we kind of have the Grace to bring the organization,
+
+274
+00:17:19,764 --> 00:17:22,310
+带着不断成长的组织和公司一起跟上？
+the growing organization and company along on that?
+
+275
+00:17:22,910 --> 00:17:27,895
+所以我听到的意思是，你几乎无法预知每次模型发布
+So what I'm hearing here is you almost don't know what will be possible with every
+
+276
+00:17:27,895 --> 00:17:32,434
+会带来什么可能性，所以关键是要保持适应力，
+model release, and so the important things to focus on is being adaptable
+
+277
+00:17:32,434 --> 00:17:33,550
+随着新能力涌现而调整。
+as things emerge.
+
+278
+00:17:34,070 --> 00:17:37,439
+呃，按你说的，产品本身必须跟上，
+Uh, to your point, the product itself has to stay up to,
+
+279
+00:17:37,439 --> 00:17:39,610
+必须追上已经能实现的东西。
+has to catch up to what is possible.
+
+280
+00:17:40,130 --> 00:17:42,511
+还是按你说的，模型能做的事很多，
+To your point, again, just like it can do so much
+
+281
+00:17:42,511 --> 00:17:45,930
+但人们可能不知道怎么做，也可能做不到。
+but people may not understand how to do it and may not be able to do it.
+
+282
+00:17:46,130 --> 00:17:48,918
+所以产品把它变简单，甚至直接告诉你这里有件事
+So the product making it easy and even just like telling you here's something you
+
+283
+00:17:48,918 --> 00:17:50,250
+你可以去做，这感觉是很重要的一环。
+could do feels like an important part.
+
+284
+00:17:50,290 --> 00:17:53,130
+你说的大致是这个意思吗？我，我想是的。
+Is that roughly what you're describing? I. I think so.
+
+285
+00:17:53,130 --> 00:17:57,970
+我觉得，最初那些 scaling law 论文里有一些非常有意思的图。
+I think, um, there's some really interesting graphs in the original scaling law papers.
+
+286
+00:17:58,720 --> 00:18:04,091
+我觉得大家很熟悉 scaling law 的一个视角，
+And I think folks are very familiar with the scaling loss in the lens of
+
+287
+00:18:04,091 --> 00:18:08,351
+就是当你加入更多算力和数据时，所谓的 loss，
+as you add in more compute and data, what's called loss,
+
+288
+00:18:08,351 --> 00:18:12,240
+也就是下一个 token 预测的 loss 会下降。
+aka the loss from next token prediction goes down.
+
+289
+00:18:12,400 --> 00:18:16,193
+所以这是一条很平滑的线性曲线，模型随着规模扩大
+And so it's a very smooth linear curve of like the models get more intelligent
+
+290
+00:18:16,193 --> 00:18:17,200
+会变得越来越聪明。
+as you scale them up.
+
+291
+00:18:17,680 --> 00:18:20,304
+那篇论文里还有一点很有意思，
+What's actually also interesting in
+
+292
+00:18:20,304 --> 00:18:25,890
+就是有一些很不一样的涌现能力曲线。
+that paper is there are these like very different emerging capability graphs.
+
+293
+00:18:26,610 --> 00:18:29,491
+比如说，当你加入更多数据、
+And so, for example, as you add in more data
+
+294
+00:18:29,491 --> 00:18:32,453
+用更多算力去训练模型时，
+and you train the models with more compute,
+
+295
+00:18:32,453 --> 00:18:38,050
+你其实会看到这些不连续的涌现能力出现跳跃。
+you essentially see these actually discontinuous emerging capabilities jump.
+
+296
+00:18:38,610 --> 00:18:43,309
+于是模型从连 1+1 都算不出来，
+So the models go from 1 + 1 being a thing that it can't calculate to a thing
+
+297
+00:18:43,309 --> 00:18:45,460
+变成能可靠地算出来。
+that it can reliably calculate.
+
+298
+00:18:45,980 --> 00:18:51,962
+所以这些涌现能力，这种在可预测性上的某种特性，
+And so these emerging capabilities, this like some nature of like predictability is,
+
+299
+00:18:51,962 --> 00:18:57,612
+并不是说每个人都知道确切的时间点，你需要 evals
+is, is not necessarily everyone knows the exact moment like you need the e bells to
+
+300
+00:18:57,612 --> 00:19:03,344
+才能评估它，这其实一直是这项技术运作方式的一部分。
+be able to assess that has actually always been a part of how this technology works.
+
+301
+00:19:03,344 --> 00:19:05,920
+也正是这让类似的事情——
+And also what makes like things like.
+
+302
+00:19:05,960 --> 00:19:11,591
+让安全变得更难，因为如果你没有 evals，没有测试系统，
+Safety harder because unless you have the evals, unless you have the systems to test,
+
+303
+00:19:11,591 --> 00:19:15,160
+这些能力跃迁可能真的发生了，而你却不知道。
+these jumps might actually happen and you don't know.
+
+304
+00:19:16,640 --> 00:19:20,179
+太有意思了，你可能已经造出了这样一个 AI 大脑，
+That's so interesting that you may have developed this like AI brain
+
+305
+00:19:20,179 --> 00:19:22,600
+它能做一些你自己都没意识到的事情。
+that can do something you're not even aware of.
+
+306
+00:19:23,040 --> 00:19:24,912
+所以工作的一部分就是去发掘，哇，
+And so part of the job is just uncovering, wow,
+
+307
+00:19:24,912 --> 00:19:26,440
+它突然在这件事上变得特别厉害。
+it just got really good at this thing.
+
+308
+00:19:26,480 --> 00:19:27,320
+我们能拿它来做什么？
+What can we do with that?
+
+309
+00:19:27,560 --> 00:19:31,777
+我觉得这里存在产品层面和用户层面的未释放潜力，
+I think there's like product overhang and user overhang like to,
+
+310
+00:19:31,777 --> 00:19:35,760
+用我们 PM 的话说，哪怕在今天的模型上也是如此。
+to maybe put it in our, um, PM language even on today's models.
+
+311
+00:19:36,440 --> 00:19:39,435
+我觉得还有很多东西，
+And I think there's like a lot that, uh,
+
+312
+00:19:39,435 --> 00:19:45,706
+我们可以在现有的 Opus 模型上继续探索，Fable 当然也是，
+we could be exploring on like our current opuses and definitely with like fable,
+
+313
+00:19:45,706 --> 00:19:52,071
+比如说，这种发掘其实也是
+for example and that that discovery is actually another part of what's been in the
+
+314
+00:19:52,071 --> 00:19:57,500
+Anthropic 早期 DNA 的一部分。我觉得它也一直延续着。
+early days of Anthropic's DNA. And I think it's also continuing to be.
+
+315
+00:19:57,500 --> 00:20:02,820
+这是我们在产品、Labs 以及整个研究团队运作方式的重要组成部分。
+A big part of how we operate in product and labs and, and across research.
+
+316
+00:20:03,580 --> 00:20:06,878
+这让我想起 Garry Tan 一直在讲的一件事，
+This makes me think about something Garry Tan's been talking about, uh,
+
+317
+00:20:06,878 --> 00:20:07,660
+他是 YC 的负责人。
+president of YC.
+
+318
+00:20:07,700 --> 00:20:08,700
+我不太确定他具体的头衔。
+I don't know what his title is.
+
+319
+00:20:08,860 --> 00:20:11,515
+他有个很有意思的观点，
+Uh, he's, he had this interesting point that
+
+320
+00:20:11,515 --> 00:20:15,247
+如果你现在愿意每年花 10 万美元在 token 上，
+if you're willing to spend $100,000 a year right now in tokens,
+
+321
+00:20:15,247 --> 00:20:18,333
+你就是在过 2028 年某个人才会过的生活，
+you're living the way somebody in 2028 is gonna live
+
+322
+00:20:18,333 --> 00:20:20,630
+因为到那时它会变得非常便宜。
+because by then it'll be really cheap.
+
+323
+00:20:20,830 --> 00:20:21,790
+每个人都能用这种方式工作。
+Everyone can work this way.
+
+324
+00:20:21,950 --> 00:20:26,403
+但现在有一个抢先机会，可以提前活在未来，
+But if there's this alpha opportunity right now to just live in the future,
+
+325
+00:20:26,403 --> 00:20:31,215
+疯狂地花 token，所以人们有很大机会去了解
+go crazy on token spend, and so there's a big opportunity for people to learn what
+
+326
+00:20:31,215 --> 00:20:35,453
+未来是什么样，也能构建得快得多，关于这个想法你怎么看，
+the future is like and also just build much faster thoughts on this idea
+
+327
+00:20:35,453 --> 00:20:40,050
+以及所谓 token 拉满的价值。嗯，我更倾向于用一种——
+and the value of token maxing let's call it. Yeah, I think I I take more of like.
+
+328
+00:20:40,090 --> 00:20:43,878
+几乎是产品的视角，token 花费更像是输入，
+A almost product lens, it's almost like token spin is more the input
+
+329
+00:20:43,878 --> 00:20:47,530
+而真正的输出是你说的那种实验。
+and really the output is what you described of experimentation.
+
+330
+00:20:48,370 --> 00:20:53,850
+我觉得如果我们把目标围绕实验来设定，我感觉那样，
+And I think if we were orienting like goals around experimentation, I feel like that.
+
+331
+00:20:54,800 --> 00:20:57,487
+可能是对结果更好的框定方式，因此，
+That might be the better framing of the outcomes and therefore,
+
+332
+00:20:57,487 --> 00:20:59,920
+也可能有不同的方式去实现那个结果。
+there might be different ways of achieving that outcome.
+
+333
+00:21:00,880 --> 00:21:07,017
+我得说，在内部，一些最有创意的人、最好的原型开发者，
+I will say internally, some of the most creative thinkers, the best like prototypers,
+
+334
+00:21:07,017 --> 00:21:13,240
+每有新版本的研究模型，都会花大量时间和 Claude 相处。
+do spend a lot of time with Claude with every new version of a research model that we have.
+
+335
+00:21:13,960 --> 00:21:20,560
+所以这里有一点是，你必须真的去用这些模型，
+And so there is something around you have to be like using the models to then come
+
+336
+00:21:20,560 --> 00:21:24,060
+才能想出好的、更好的、乃至更棒的点子。
+up with good than great than better ideas.
+
+337
+00:21:24,620 --> 00:21:26,340
+这一点是无可替代的。
+And there's no substitute for that.
+
+338
+00:21:26,900 --> 00:21:31,604
+嗯，在技术变化如此之快的时候，如果你不去接触它，
+Um, it's very hard to come up with a perfect strategy without touching the
+
+339
+00:21:31,604 --> 00:21:34,380
+很难想出一个完美的策略。
+technology when it's moving this quickly.
+
+340
+00:21:35,580 --> 00:21:39,020
+与此同时，我觉得我们还有别的事情可以做。
+At the same time, I think there's other things that we could be doing.
+
+341
+00:21:39,220 --> 00:21:41,455
+比如，有一件我们
+Like, so one thing that we, um,
+
+342
+00:21:41,455 --> 00:21:46,730
+经常做的事，就是在 Anthropic 内部公开地工作。
+do a lot is actually working in public at internally within Anthropic.
+
+343
+00:21:47,250 --> 00:21:51,043
+在早期，我们的产品服务还比较少的时候，
+And so in the early days when we had less product services,
+
+344
+00:21:51,043 --> 00:21:53,809
+有一个 Slack 频道，几乎每个人，
+there was a Slack channel where everyone,
+
+345
+00:21:53,809 --> 00:21:57,997
+几乎整个公司都在测试 Claude 的早期版本，
+almost the entire company was testing early versions of Claude
+
+346
+00:21:57,997 --> 00:22:00,130
+尝试各种不同的用例。
+and trying different use cases.
+
+347
+00:22:00,250 --> 00:22:03,273
+大家其实不会把它们叫做用例，
+Like people were not calling them use cases,
+
+348
+00:22:03,273 --> 00:22:06,542
+但你可能会让它帮你改一篇文章，或者
+but you might be asking it to edit an essay or, uh,
+
+349
+00:22:06,542 --> 00:22:09,729
+想出发这封邮件的合适措辞。
+to come up with the right way to send this email.
+
+350
+00:22:09,809 --> 00:22:12,539
+这些其实都是不同的用例，
+Like, they were all different use cases,
+
+351
+00:22:12,539 --> 00:22:18,081
+但我们都是公开地在做，然后你会神奇地看到，不同的用户，
+but we all worked in public and then what you would see magically is different users
+
+352
+00:22:18,081 --> 00:22:22,337
+或者团队里不同的人想出一个点子，
+or different, different folks on the team coming up with an idea
+
+353
+00:22:22,337 --> 00:22:28,280
+接着其他人尝试这个点子的各种变体。然后大概在，
+and then other people trying different variations of that idea. And then within, maybe.
+
+354
+00:22:30,080 --> 00:22:35,280
+十来次请求之内，就会冒出一些很神奇的东西，或者一个潜在的用例。
+10 or so requests, there was something magical or potentially in the use case that emerges.
+
+355
+00:22:36,240 --> 00:22:41,427
+我觉得关键不只是个人独自摸索
+And I think there's a lot in not just individuals figuring out by themselves how to
+
+356
+00:22:41,427 --> 00:22:42,800
+该怎么用这项技术。
+use this technology.
+
+357
+00:22:42,960 --> 00:22:46,440
+我觉得我们可以做得更多，去真正带来那种
+I think we could be doing more to actually bring, like,
+
+358
+00:22:46,440 --> 00:22:49,920
+在做实验时的集体发掘。
+that communal discovery when we do experimentation.
+
+359
+00:22:50,200 --> 00:22:54,656
+就是说，实验不一定总是一项个人运动。
+Like, experimentation, it's not always necessarily a individual sport.
+
+360
+00:22:54,656 --> 00:22:55,950
+太有意思了。
+It's so interesting.
+
+361
+00:22:56,030 --> 00:22:56,270
+对。
+Yeah.
+
+362
+00:22:56,310 --> 00:23:00,430
+就是那种，我们其实也不确定它能做什么、我们能拿它来干什么。
+This idea that we're just, we're not sure what this is capable of or what we could do with it.
+
+363
+00:23:00,430 --> 00:23:03,452
+需要不断地试探、需要大家去尝试各种东西，
+And it takes all this poking around and people trying things,
+
+364
+00:23:03,452 --> 00:23:06,830
+听别人在尝试什么，来搞清楚什么是可能的。
+hearing what other people are trying to figure out what's possible.
+
+365
+00:23:07,230 --> 00:23:09,630
+这真是一种很有意思的，怎么说呢，技术。
+Such an interesting, uh, I don't know, technology.
+
+366
+00:23:09,870 --> 00:23:12,590
+我们就像，好，这是……哦，我发现它还能做这个。
+We're just like, okay, here's what, oh, I figured out it could do this thing.
+
+367
+00:23:12,630 --> 00:23:15,520
+那你要拿它来干嘛？我觉得从大方向上，我们是知道的，对吧？
+What are you gonna do with that? I think at a broad theme, we know, right?
+
+368
+00:23:15,560 --> 00:23:19,937
+我们知道模型能写出很棒的文章，能做长篇写作，
+We know that the models write great essays or can write long form writing,
+
+369
+00:23:19,937 --> 00:23:23,955
+但具体到你到底能用它解决哪些痛点，
+but individual pain points of what can you actually solve with that
+
+370
+00:23:23,955 --> 00:23:27,040
+并把它做到用户能真正用起来的程度。
+and bring it to like a user level that people can use.
+
+371
+00:23:27,880 --> 00:23:32,726
+嗯，我觉得这更多是一种探索或者实验，
+Um, I think is something that is more exploration or experimentation, uh,
+
+372
+00:23:32,726 --> 00:23:34,680
+沿着这条线索一路摸索出来的。
+based following this thread.
+
+373
+00:23:34,840 --> 00:23:39,800
+你负责 Labs 团队的产品，这非常酷。
+You uh, you oversee product for the Labs team, which, uh, is extremely cool.
+
+374
+00:23:39,880 --> 00:23:43,882
+我们请过 Ben Mann、Mike Krieger 上节目，他们现在都在 Labs 工作，
+We've had Ben Mann on the podcast, Mike Krieger, who both work on labs now,
+
+375
+00:23:43,882 --> 00:23:44,800
+聊过 Labs。
+talk about labs.
+
+376
+00:23:45,280 --> 00:23:46,080
+Labs 到底是什么？
+What is labs?
+
+377
+00:23:46,640 --> 00:23:47,760
+Labs 都做出了什么？
+What's come out of labs?
+
+378
+00:23:48,880 --> 00:23:52,090
+很多人都听说过这些东西，它们是怎么运作的，
+Many people have heard of these things and how do they work
+
+379
+00:23:52,090 --> 00:23:57,640
+让他们能在 Anthropic 核心产品团队之外，做出这么有创新性的点子。
+that enables them to create such innovative ideas outside of even the core Anthropic product team.
+
+380
+00:23:58,000 --> 00:24:01,969
+在很多方面，Labs 的核心思路是识别出，
+The thesis of labs in many ways is identifying
+
+381
+00:24:01,969 --> 00:24:07,610
+并顺着那些非连续性的大赌注去深挖，
+and pulling the thread on the thread of discontinuous large bets
+
+382
+00:24:07,610 --> 00:24:13,669
+这些东西可能不在核心路线图里，然后去判断这里面到底有没有东西，
+that might not be in the core roadmap and figuring out is there a there,
+
+383
+00:24:13,669 --> 00:24:16,280
+而且它的 10 倍机会在哪。
+there and also what is the 10x.
+
+384
+00:24:16,440 --> 00:24:19,200
+甚至是 100 倍、1000 倍的机会在哪？
+A 100x, 1,000 x of the there there?
+
+385
+00:24:21,250 --> 00:24:28,573
+比如说，像 Claude Code，嗯，我想我听说过这个，
+And so, for example, uh, things like Claude Code, um, I think I've heard of it, uh,
+
+386
+00:24:28,573 --> 00:24:32,726
+像 Claude Code，还有像，
+things like Claude Code, uh, things like, uh,
+
+387
+00:24:32,726 --> 00:24:36,770
+Skills，以及最近的 Claude Design、MCP。
+skills and most recently Claude Design MCP.
+
+388
+00:24:37,490 --> 00:24:42,259
+我们在团队里特别想强调的一点是，尤其是现在，
+The thing that we really try to emphasize within the teams is, especially right now,
+
+389
+00:24:42,259 --> 00:24:44,780
+能做的东西实在太多了。
+there are so many things that could be built.
+
+390
+00:24:45,580 --> 00:24:48,140
+那么，什么才算是一个非连续性的大赌注？
+What does it mean then to have a discontinuous bet?
+
+391
+00:24:48,900 --> 00:24:55,227
+我觉得我们今年采取的一种做法是，可以非常坚定地
+And I think one approach that we're taking this year is it can be very strongly held
+
+392
+00:24:55,227 --> 00:24:57,926
+持有对某个主题或领域的观点，
+opinion about the theme or the area
+
+393
+00:24:57,926 --> 00:25:02,020
+但对具体的原型则保持更松的态度。
+and then more weakly held about the exact prototype.
+
+394
+00:25:02,660 --> 00:25:05,500
+所以，这里有一种实验的文化。
+And so, like, there is a culture of experimentation.
+
+395
+00:25:06,220 --> 00:25:09,235
+嗯，很多是自下而上的，比如，
+Um, there's a lot of the bottoms up, like,
+
+396
+00:25:09,235 --> 00:25:12,871
+团队里的工程师非常有主动性，
+engineers on the team are very self-enabled, um,
+
+397
+00:25:12,871 --> 00:25:17,305
+会自我驱动去测试各种想法，有时候，
+self-driven to test out different ideas and sometimes, uh,
+
+398
+00:25:17,305 --> 00:25:20,498
+我们有个设想，但它可能暂时还行不通，
+we have a thesis and it might not work yet and
+
+399
+00:25:20,498 --> 00:25:25,730
+那我们可能就等一两代模型之后再回头看看。所以这种，
+so we then might revisit it in one to two model generations. And so this.
+
+400
+00:25:25,810 --> 00:25:30,560
+就是这些原型最后其实是帮我们去学习的想法。
+Idea of like these prototypes that actually end up just helping. Let's learn.
+
+401
+00:25:30,680 --> 00:25:35,040
+就算它没有马上带来能上线的东西，这也是有价值的。
+Like that's also valuable, even if it doesn't lead to something immediately shipping.
+
+402
+00:25:35,680 --> 00:25:38,085
+所以我觉得这让孵化，
+And so I think that allows the incubation
+
+403
+00:25:38,085 --> 00:25:40,985
+以及 Labs 的使命能够真正加速，
+and like the charter of labs to really accelerate
+
+404
+00:25:40,985 --> 00:25:44,026
+更广泛地帮 Anthropic 看到拐角之后的东西。
+and see around corners more broadly for Anthropic,
+
+405
+00:25:44,026 --> 00:25:47,280
+想到在 Anthropic 内部还有一个 Labs，挺有意思的。
+it's so funny to think about a labs within an Anthropic.
+
+406
+00:25:47,320 --> 00:25:50,915
+Anthropic 本身已经这么有创新力、这么有创造力，
+Which is already so innovative and, and creative and just, you know,
+
+407
+00:25:50,915 --> 00:25:55,520
+出货速度这么快，居然在里面再建一个 Labs 团队还是有价值的。
+shipping like crazy that there's value to still creating a Labs team within Anthropic.
+
+408
+00:25:56,120 --> 00:25:58,840
+是什么让 Labs 能做得这么好？
+What enables Labs to work as well as it has?
+
+409
+00:25:59,080 --> 00:26:03,040
+因为你列出的这些产品，简直就是 Anthropic 还发布过什么呢？
+Because you listed all these products and it's like, what else has Anthropic shipped?
+
+410
+00:26:03,080 --> 00:26:05,400
+感觉几乎所有最大的成果都在这里了。
+This like feels like all the biggest wins almost.
+
+411
+00:26:05,520 --> 00:26:07,200
+我相信肯定还有很多我现在没想到的。
+I'm sure there are many that I'm not thinking about right now.
+
+412
+00:26:07,840 --> 00:26:11,085
+在一家更大的公司内部，打造一个成功的 Labs 组织，
+What's what's kind of core to creating a successful labs org within,
+
+413
+00:26:11,085 --> 00:26:12,280
+核心到底是什么？
+within a larger company?
+
+414
+00:26:12,770 --> 00:26:17,868
+我觉得团队文化，跟整个 Anthropic 的文化类似，
+I think that team culture like similar to broadly at Anthropic,
+
+415
+00:26:17,868 --> 00:26:21,330
+我认为团队文化非常有价值。
+I think that team culture is very valuable.
+
+416
+00:26:21,650 --> 00:26:28,918
+我觉得 Ben 立下了很了不起的愿景，推动大家去思考一个想法的 10 倍、
+I think Ben sets an incredible vision and pushes people to think about the 10x,
+
+417
+00:26:28,918 --> 00:26:35,850
+100 倍的可能，而且你知道，Labs 里的团队、那些小组都很小。
+100x of the idea and, you know, are the teams, the pods within labs is small.
+
+418
+00:26:36,290 --> 00:26:39,990
+有时候这些想法就是从一个工程师开始的，对吧？
+Sometimes these ideas start with one engineer, right?
+
+419
+00:26:40,150 --> 00:26:47,485
+我觉得有时候，当一个特别大的团队去追一个非常模糊的
+And I think sometimes when there's almost really large teams pursuing very ambiguous
+
+420
+00:26:47,485 --> 00:26:53,190
+大想法时，反而会因为这样被拖慢。
+large ideas, you end up actually being slowed down because of that.
+
+421
+00:26:53,990 --> 00:26:57,990
+所以我觉得是文化。我觉得，其实我们……
+So I think it's culture. I think, you know, we actually.
+
+422
+00:26:58,940 --> 00:27:04,944
+我们也会挑选那些真正想做 0 到 1 探索的人，
+Also select for folks who actually want to do that 0 to 1 experimentation,
+
+423
+00:27:04,944 --> 00:27:06,420
+这并不容易。
+and it's not easy.
+
+424
+00:27:06,580 --> 00:27:12,634
+有很多押注我们最后会放弃或叫停，也许，
+There's a lot of bets that we end up turning down or turning off and maybe, you know,
+
+425
+00:27:12,634 --> 00:27:14,860
+我们以后会再重新考虑它们。
+we revisit them in the future.
+
+426
+00:27:15,740 --> 00:27:16,540
+但那很难。
+But that's hard.
+
+427
+00:27:16,860 --> 00:27:18,985
+当你倾注了全部心血，那真的很难，
+That's hard when you pour your heart and soul,
+
+428
+00:27:18,985 --> 00:27:21,780
+你像创始人一样在推动一个押注，但它还没成。
+you're acting as a founder for a bet and it's not working yet.
+
+429
+00:27:22,530 --> 00:27:26,777
+所以我觉得就是要挑那种性格的人，
+Um, so I think it's like that type selecting for that type of personality,
+
+430
+00:27:26,777 --> 00:27:30,050
+那些对 0 到 1 真正充满热情、投入很深的人。
+folks who are really passionate and deep about the 0 to 1.
+
+431
+00:27:30,250 --> 00:27:31,942
+所以你负责研究团队的产品。
+So you lead product for the research team.
+
+432
+00:27:31,942 --> 00:27:33,730
+你和 Anthropic 的研究员一起工作。
+You work with the researchers at Anthropic.
+
+433
+00:27:34,090 --> 00:27:37,201
+很多人大概有点概念，知道研究是什么、
+A lot of people kind of get an idea, sense of what is research, what are research,
+
+434
+00:27:37,201 --> 00:27:38,050
+研究员在做什么。
+what researchers do.
+
+435
+00:27:38,090 --> 00:27:42,406
+但我觉得很多人并不完全理解这些非常宝贵的人，
+I think a lot of people don't totally understand these very valuable people, uh,
+
+436
+00:27:42,406 --> 00:27:44,660
+在各个 AI 实验室里，至少在我看来是这样。
+at all the AI labs, the way I think about it.
+
+437
+00:27:44,660 --> 00:27:46,254
+我想帮大家理解，
+And I want to help people understand,
+
+438
+00:27:46,254 --> 00:27:48,980
+也帮我理解，研究员一整天到底在做什么？
+help me understand just what are the researchers doing all day?
+
+439
+00:27:49,220 --> 00:27:51,860
+我想象的是，他们对如何改进模型有个假设。
+What I imagine is they have a hypothesis for how to improve the model.
+
+440
+00:27:52,460 --> 00:27:57,345
+他们找数据，调整一些算法，检查并调整训练方式，
+They find data, they tweak some algorithms, they check, adjust how it's trained,
+
+441
+00:27:57,345 --> 00:28:00,075
+然后测试，看效果如何，不断迭代，
+and they test it, see how it did keep iterating
+
+442
+00:28:00,075 --> 00:28:03,020
+不断尝试找到改进模型的方法。
+and keep trying to find ways to improve the model.
+
+443
+00:28:03,530 --> 00:28:04,530
+大致是这样吗？
+Is that roughly right?
+
+444
+00:28:05,250 --> 00:28:08,050
+或者说，帮我们理解一下研究员一整天在做什么。
+Slash help us understand what researchers are doing all day.
+
+445
+00:28:08,570 --> 00:28:12,802
+那确实，我觉得很大一部分，也许是，
+That's really, I I think that's a lot of, uh, maybe the, the,
+
+446
+00:28:12,802 --> 00:28:14,530
+更偏日常的部分。
+like the more day to day.
+
+447
+00:28:14,930 --> 00:28:18,315
+我觉得关于研究员，
+I think one piece around, uh, researchers
+
+448
+00:28:18,315 --> 00:28:24,891
+以及像 Anthropic 这样的研究组织，还有一部分是对
+and like research organizations like at Anthropic is there's also a vision of the
+
+449
+00:28:24,891 --> 00:28:29,630
+更宏观未来的愿景。比如说，像是……
+future like more broadly. So for example, things like, uh.
+
+450
+00:28:30,990 --> 00:28:33,441
+我觉得甚至在公司创立之初，
+I think even at the founding of the company,
+
+451
+00:28:33,441 --> 00:28:37,390
+研究员就在讨论怎么让 Claude 使用电脑？
+researchers were talking about how do we get Claude to use a computer?
+
+452
+00:28:37,470 --> 00:28:40,270
+怎么让 AI 去操作一个屏幕，对吧？
+How do we get AI to, like, navigate a screen, right?
+
+453
+00:28:40,310 --> 00:28:45,718
+所以其实有很多我称之为很像创始人的那种劲头，
+So there is a lot of actually very founder like energy is how I describe it within
+
+454
+00:28:45,718 --> 00:28:49,569
+研究员们非常大胆、非常有野心，
+researchers are really bold and ambitious researchers
+
+455
+00:28:49,569 --> 00:28:53,830
+Anthropic 有一大批这样的人。所以这是一层，
+and we have a ton of those at Anthropic. So there's one layer of.
+
+456
+00:28:55,310 --> 00:28:58,470
+对这项技术能走多远的愿景。
+Vision of what this technology can go.
+
+457
+00:28:58,950 --> 00:29:01,483
+然后我觉得在这个循环的另一端，
+And then I think on this other side of the loop,
+
+458
+00:29:01,483 --> 00:29:05,283
+现在这项技术、也就是 Claude 已经到了大家手里，
+there's also now that this technology or cloud is in people's hands,
+
+459
+00:29:05,283 --> 00:29:06,950
+我们怎么让它今天就变得更好？
+how do we make it better today?
+
+460
+00:29:07,190 --> 00:29:11,129
+所以既有中长期，也投入很多精力去思考
+So it's a medium and long term and a lot of energy thinking about
+
+461
+00:29:11,129 --> 00:29:15,143
+那种面向未来的视角，同时在当下和短期内，
+that lens of the future and also in the immediate and short term,
+
+462
+00:29:15,143 --> 00:29:17,870
+我们能改进的地方有哪些。
+what are the improvement areas we can make.
+
+463
+00:29:17,910 --> 00:29:22,424
+所以我觉得你描述得挺准确的，就是我们怎么对
+And so like I think you're describing a really good sense of how do we make
+
+464
+00:29:22,424 --> 00:29:26,110
+Claude 的不同版本做迭代式的改进。
+iterative improvements on different versions of Claude.
+
+465
+00:29:26,870 --> 00:29:32,438
+我的团队和研究员合作的方式，是非常紧密地融入
+The way that like my team works with researchers is kind of being very integrated
+
+466
+00:29:32,438 --> 00:29:34,598
+并嵌入到那些循环里，
+and embedded in in those loops,
+
+467
+00:29:34,598 --> 00:29:38,670
+尤其是那些对用户影响很大的领域。
+particularly areas where there's a lot of impact on users.
+
+468
+00:29:39,110 --> 00:29:46,944
+比如像视觉、computer use、编码 agent、编码工具调用、测试时
+So this is things like vision computer use coding agent coding tool, use test time,
+
+469
+00:29:46,944 --> 00:29:51,713
+计算这些对用户有直接影响的东西，
+compute things where there's a direct user impact
+
+470
+00:29:51,713 --> 00:29:57,844
+然后想办法把用户反馈带进来，
+and then figuring out what are the ways to bring the user feedback
+
+471
+00:29:57,844 --> 00:30:03,180
+并把它落到用户能理解的层面。
+and ground it in a level that is understandable for user.
+
+472
+00:30:03,300 --> 00:30:07,500
+对研究员来说是可理解、也是可执行的。
+Uh, for researchers and also actionable for researchers.
+
+473
+00:30:08,460 --> 00:30:12,342
+我觉得这第二部分其实是这份工作很大的一块，
+And I think that's the second piece is actually a big part of the job
+
+474
+00:30:12,342 --> 00:30:14,460
+有时也是很难的一块。
+and sometimes a hard part of the job.
+
+475
+00:30:15,020 --> 00:30:20,300
+比如说，我们可能在 Claude.ai 上收到反馈说 Claude 产生了幻觉。
+So for example, we might get feedback on Claude.ai. Claude hallucinated.
+
+476
+00:30:21,610 --> 00:30:25,316
+如果你把这个拿去跟研究员说，那很模糊，你说，
+It's very vague if you bring that to a researcher and you say,
+
+477
+00:30:25,316 --> 00:30:29,690
+请修好 Claude 别再产生幻觉，这不太可执行。
+please fix Claude from being hallucinated, it's not very actionable.
+
+478
+00:30:30,450 --> 00:30:33,736
+所以团队一部分时间是在搞清楚，好，
+And so part of the time of the team is understanding, okay,
+
+479
+00:30:33,736 --> 00:30:37,090
+那个用户给出这个反馈背后的完整过程是什么？
+what's the trajectory of why that user gave that feedback?
+
+480
+00:30:37,250 --> 00:30:40,810
+而且是在用户同意的前提下。所以我们会去看，好。
+And it's like consented. And so we, we, we look at, okay.
+
+481
+00:30:41,800 --> 00:30:44,328
+Claude 在那个时刻本该调用什么工具
+What should Claude have called tools in
+
+482
+00:30:44,328 --> 00:30:48,464
+还是应该基于它现有的知识？也许它调用对了、
+that moment or from its current knowledge or it called the right,
+
+483
+00:30:48,464 --> 00:30:53,520
+看的文档也对，但在第一种情况里它看错了事实。
+looked at the right document, but it looked at the wrong facts in the first case.
+
+484
+00:30:53,720 --> 00:30:56,320
+那就属于工具调用出了问题。
+That would have been a failure on tool use.
+
+485
+00:30:57,040 --> 00:31:00,419
+而第二种情况，可以说问题出在
+On the second case, it would have been a failure on, let's say,
+
+486
+00:31:00,419 --> 00:31:03,400
+搜索、知识，以及搜索和信息整合上。
+search or knowledge and search and search synthesis.
+
+487
+00:31:04,279 --> 00:31:05,959
+也可能是跟对齐有关的问题。
+Or it could be something around alignment.
+
+488
+00:31:06,159 --> 00:31:11,338
+把这种细节程度带给研究员，让他们判断：
+And so bring that level of detail to researchers coming up with like,
+
+489
+00:31:11,338 --> 00:31:13,519
+这个问题是否足够重要？
+is this a big enough problem?
+
+490
+00:31:14,599 --> 00:31:18,719
+再想清楚用什么评测来判断我们何时改进了它。
+Figure out things like evals to then describe when we've improved it.
+
+491
+00:31:18,959 --> 00:31:21,660
+这些才是可执行的层面，
+Like, those are the levels of actionability
+
+492
+00:31:21,660 --> 00:31:24,799
+也是研究员日常在用的语言。
+and it's the day to day language of the researchers.
+
+493
+00:31:25,119 --> 00:31:28,158
+所以我们尽量贴近这个方式，
+And so we try to stay very close to how to bring
+
+494
+00:31:28,158 --> 00:31:33,416
+把用户反馈以可执行的方式带进核心模型训练
+that in an actionable man honor uh between users to to the core model training
+
+495
+00:31:33,416 --> 00:31:35,880
+和研究开发循环里。
+and the research development loop.
+
+496
+00:31:36,360 --> 00:31:41,524
+前几天我跟人聊到，感觉现在做研究、做 AI 研究，
+I was talking to someone the other day about how feels like research, AI research is,
+
+497
+00:31:41,524 --> 00:31:45,360
+是如果你想在人生中非常成功、就该去的地方？
+uh, the place to be now if you want to be very successful in life?
+
+498
+00:31:46,000 --> 00:31:49,400
+据你观察，成为一名真正成功的研究员需要什么？
+What does it take to become a really successful researcher from what you can tell?
+
+499
+00:31:49,720 --> 00:31:52,680
+你懂的，不是每个人都能进去，也不是每个人的大脑都适合这种方式。
+Uh, you know, not everyone can get in. Not everyone brain is going to work this way.
+
+500
+00:31:52,680 --> 00:31:55,740
+但假设有人说，嘿，我想探索这条职业路径。
+But just say people are like, hey, I want to explore this career path.
+
+501
+00:31:55,980 --> 00:31:58,420
+从你看到的来说，要做到这一点需要什么？
+From what you've seen, what does it take to, to make it there?
+
+502
+00:31:59,340 --> 00:32:04,580
+是指研究员本身，还是跟研究合作的产品经理，还是两者都算？两者都聊聊吧。
+Researchers generally or research and product managers working with research or both? Let's do both.
+
+503
+00:32:04,660 --> 00:32:06,547
+不过是的，研究员嘛，你知道的，
+But uh, yeah, the researchers like, you know,
+
+504
+00:32:06,547 --> 00:32:08,980
+和研究员合作的 PM 也会非常成功。
+PMs working researchers also going to be very successful.
+
+505
+00:32:09,460 --> 00:32:11,602
+但感觉现在每家公司都在
+But it feels like everyone's trying to, you know,
+
+506
+00:32:11,602 --> 00:32:13,900
+到处挖顶尖研究员。
+poach all the top researchers across every company.
+
+507
+00:32:14,290 --> 00:32:17,863
+我知道你不是 AI 研究员，但就你看到的来说，
+So just I know, I know you're not an AI researcher, but just from what you've seen,
+
+508
+00:32:17,863 --> 00:32:20,690
+在这条职业路径上做出成绩需要什么？
+just like what does it take to make it in that in that career path?
+
+509
+00:32:21,450 --> 00:32:25,153
+是的，我觉得 Anthropic 很多最成功的研究员
+Yeah, I think a lot of the most successful researchers
+
+510
+00:32:25,153 --> 00:32:30,337
+和研究团队负责人，都是非常强的
+and research leadership at Anthropic are folks who are really strong first
+
+511
+00:32:30,337 --> 00:32:32,970
+第一性原理思考者。
+principles thinkers about problems.
+
+512
+00:32:33,130 --> 00:32:35,999
+他们非常擅长推理问题。
+Like, they reason through problems really well.
+
+513
+00:32:36,679 --> 00:32:41,027
+他们对自己的研究领域充满热情，
+Um, who are just passionate about their research area
+
+514
+00:32:41,027 --> 00:32:45,471
+对它可能的样子有大胆的描绘，
+and have a bold description of what that could look like
+
+515
+00:32:45,471 --> 00:32:49,239
+同时又真正贴近细节。
+and then who are actually close to the details.
+
+516
+00:32:50,159 --> 00:32:54,924
+你知道，我们的领导层、首席科学家，
+And so, uh, you know, our, like, leadership, our chief scientists,
+
+517
+00:32:54,924 --> 00:33:00,456
+负责 fine tuning 和 RL 的人，其实都非常贴近
+our heads of like fine tuning and like RL folks are actually really close to the
+
+518
+00:33:00,456 --> 00:33:06,412
+训练过程，会去看训练进展、评测，
+training runs and actually look at things like how the training run is going, evals,
+
+519
+00:33:06,412 --> 00:33:08,710
+以及底层数据。
+looking at the underlying data.
+
+520
+00:33:09,150 --> 00:33:13,710
+也就是真正保持贴近，并乐于钻进细节里。
+So like actually staying really close and be excited to be in the details.
+
+521
+00:33:14,150 --> 00:33:17,916
+我觉得这是真正强的研究员的标志，
+I think have been like a sign of like really strong researchers
+
+522
+00:33:17,916 --> 00:33:19,510
+也在培养品味。
+and developing taste and.
+
+523
+00:33:20,770 --> 00:33:25,975
+我觉得另一点是他们能长期往大处想，
+I think like another piece is just like their ability to think big over time
+
+524
+00:33:25,975 --> 00:33:28,410
+并且非常有野心，对吧？
+and be like very ambitious, right?
+
+525
+00:33:28,410 --> 00:33:34,449
+就像 Dario Amodei 说的，我们可以彻底改变软件工程，
+Like the Dario Amodei, like we can transform software engineering and, and, and the,
+
+526
+00:33:34,449 --> 00:33:39,652
+我觉得朝那个方向走，你会学到很多，
+and I think, uh, going in that direction, you learn so much, you get,
+
+527
+00:33:39,652 --> 00:33:45,227
+我觉得你得在各种想法上都敢于追逐星辰，
+you had to shoot for the stars in, in many ways across your ideas, I think,
+
+528
+00:33:45,227 --> 00:33:51,080
+才能成为成功的研究员。我很喜欢“要更……”这个梗。
+in order to be a successful researcher. I love just this meme of just be more.
+
+529
+00:33:51,120 --> 00:33:55,320
+“更有野心”现在经常被提起，可这很难。说起来容易。
+Ambitious comes up so often now, which is so hard. Like it's, it's easy to say that.
+
+530
+00:33:55,320 --> 00:33:58,730
+真正难的是你能想多大，以及这有多大程度上
+It's hard to actually just like how big can you think and how that's
+
+531
+00:33:58,730 --> 00:34:00,280
+是 AI 现在所能解锁的。
+so much of what AI now unlocks.
+
+532
+00:34:00,400 --> 00:34:01,160
+就是要更有野心。
+Just be more ambitious.
+
+533
+00:34:01,840 --> 00:34:02,640
+是的，是的。
+Yeah. Yeah.
+
+534
+00:34:03,240 --> 00:34:12,327
+我觉得是先把它端到端想一两遍，然后
+I think it's thinking through it once or twice, end to end, and then being, I think,
+
+535
+00:34:12,327 --> 00:34:21,280
+在方向上坚持，而在具体方法上更灵活一些。嗯。
+stubborn about the area and maybe more loose around the exact like approach. Um.
+
+536
+00:34:23,360 --> 00:34:25,560
+这确实是我们不断拷问自己的问题。
+It, it is a question we challenge ourselves with.
+
+537
+00:34:25,880 --> 00:34:29,554
+但技术变化太快了，
+Uh, but the technology is moving so quickly and
+
+538
+00:34:29,554 --> 00:34:35,960
+所以你怎么确保你正在做的东西是向前兼容的？
+so how do you make sure what you're building is actually, uh, forward compatible?
+
+539
+00:34:37,240 --> 00:34:41,383
+所以我觉得这其实也是核心产品开发循环的一部分：
+And so it's also actually part of like I think the core product development loop to
+
+540
+00:34:41,383 --> 00:34:42,480
+要想得更大，对吧？
+think bigger, right?
+
+541
+00:34:43,080 --> 00:34:47,607
+有件事我经常问团队，或者说我思考产品时会想的一点是
+Um, one thing I ask the team frequently or how I think about
+
+542
+00:34:47,607 --> 00:34:53,738
+假设 Claude 8 出来了
+when we're building in product is let's say Claude 8 comes around, what do you,
+
+543
+00:34:53,738 --> 00:34:57,700
+用户的行为会发生什么变化
+what changes in what users do and then what should.
+
+544
+00:34:57,900 --> 00:35:00,217
+这对你今天的开发意味着什么？
+What does that mean for how you're building today?
+
+545
+00:35:00,217 --> 00:35:03,140
+它能不能向前兼容那种体验？
+Is it going to be forward compatible to that experience, right?
+
+546
+00:35:03,140 --> 00:35:05,375
+所以把它落到实处，我觉得
+So like just grounding it's, I think, um,
+
+547
+00:35:05,375 --> 00:35:07,216
+“有野心”是个很宽泛的概念
+being ambitious is very broad and
+
+548
+00:35:07,216 --> 00:35:11,752
+所以我们要用一些方式去具体描述它
+so trying to like ground it in in some ways of describing, describing that and also,
+
+549
+00:35:11,752 --> 00:35:15,104
+让所有事情朝着一个连贯一致的方向前进
+yeah, everything heading in a direction that all is cohesive
+
+550
+00:35:15,104 --> 00:35:18,720
+而且是合理的，而不是各自朝完全不同的方向乱冲
+and makes sense versus just ambitious in a completely different.
+
+551
+00:35:18,760 --> 00:35:22,440
+说到野心和 Claude 8
+Direction speaking of ambition and cloud eight, uh,
+
+552
+00:35:22,440 --> 00:35:28,211
+Fable 或者说 Mythos 最近感觉在模型上到了一个全新的临界点
+fable slash mythos recently feels like hit this very new kind of tipping point with
+
+553
+00:35:28,211 --> 00:35:31,640
+以前是你有一个很棒的模型
+models where used to be you have an awesome model.
+
+554
+00:35:32,530 --> 00:35:35,890
+直接发布。嘿大家好，Opus 4.5 上线了，所有人都能用
+Release it. Hey, everyone, welcome. Opus 4 5 is out. Everyone can use it.
+
+555
+00:35:36,170 --> 00:35:39,010
+Mythos 走了一条完全不同的路，它被锁起来了
+Mythos went in a very different direction. It got locked.
+
+556
+00:35:39,290 --> 00:35:42,913
+有很多审视，很多人担心它能做到什么
+There was a lot of scrutiny, a lot of concern about what was capable of, uh,
+
+557
+00:35:42,913 --> 00:35:47,130
+各家公司都得去确认它不会入侵他们的系统
+that all the companies had to go make sure it wasn't gonna hack into all their systems.
+
+558
+00:35:47,730 --> 00:35:51,662
+感觉现在每个模型，因为它们不断变强
+And it feels like now every model because they continue to get better,
+
+559
+00:35:51,662 --> 00:35:53,492
+都会受到更多审视
+well now have a lot more scrutiny
+
+560
+00:35:53,492 --> 00:35:58,170
+而且对谁能使用它们会有更多限制，这感觉是件大事
+and there will be more restrictions on who can use them, which feels like a big deal.
+
+561
+00:35:59,050 --> 00:36:02,080
+你怎么看这件事？它会怎样改变你们的运作方式？
+How do you think about that? How does that change the way you operate?
+
+562
+00:36:02,720 --> 00:36:07,120
+政策和出口管制那部分我先放一放
+I'm going to maybe leave the policy and the export control side to,
+
+563
+00:36:07,120 --> 00:36:09,520
+交给专门负责的人去处理
+to focus out on that and work on that.
+
+564
+00:36:10,720 --> 00:36:16,783
+我觉得产品层面的问题，以及我们内部怎么跟这些模型打交道
+I think the product question and how we interact with these internally is, I think,
+
+565
+00:36:16,783 --> 00:36:21,089
+就像你说的，随着前沿模型能力越来越强
+as you mentioned, as frontier models become more capable,
+
+566
+00:36:21,089 --> 00:36:25,043
+安全防护、红队演练和测试的方式
+the safeguards and the ways of red teaming and testing
+
+567
+00:36:25,043 --> 00:36:31,370
+以及发布前的流程，也需要快速演进和适应来应对这一点
+and the pre-release process also needs to evolve and adapt quickly to to address that.
+
+568
+00:36:31,970 --> 00:36:38,707
+举个例子，在 Fable 模型之前，我们并没有一套很强的
+And so one example is, you know, before fable models, we didn't have a strong of,
+
+569
+00:36:38,707 --> 00:36:41,770
+比如说，兜底的用户体验和系统
+let's say, fallback UX and systems.
+
+570
+00:36:42,740 --> 00:36:45,642
+因为我们的目标是要确保
+Because our, our, our goal is to make sure
+
+571
+00:36:45,642 --> 00:36:51,617
+这项技术带来的是非对称的收益，同时最大限度减少
+that like there is asymmetrical benefit for this technology and to minimize, like,
+
+572
+00:36:51,617 --> 00:36:54,860
+它的负面影响，或者说严重风险
+the downside or, like, a severe risk of, of it.
+
+573
+00:36:55,380 --> 00:36:59,164
+所以我们最后搭建了兜底系统
+And so we ended up building like fallback systems so
+
+574
+00:36:59,164 --> 00:37:04,180
+这样用户依然能立刻从 Opus 4.0 得到很好的回应
+that users will still get a great response from Opus 4 0 immediately.
+
+575
+00:37:04,910 --> 00:37:10,239
+所以我觉得有一部分是，在我们演进和改进安全系统的同时
+And so I think there's a piece around as we evolve and like improve safety systems,
+
+576
+00:37:10,239 --> 00:37:14,550
+怎么继续开发并交付很棒的用户体验？
+how do we continue to develop and deliver great user experiences?
+
+577
+00:37:16,030 --> 00:37:18,630
+我觉得在这两方面我们都还有更多可以做的
+I think there's more that we can do on both sides.
+
+578
+00:37:18,870 --> 00:37:21,004
+所以你会看到我们不断创新
+And so you'll see us innovating,
+
+579
+00:37:21,004 --> 00:37:25,352
+持续改进我们所说的模型安全防护套件
+improving on what we called out the model safeguards package, um,
+
+580
+00:37:25,352 --> 00:37:28,830
+在接下来的几周和几个月里会越来越多
+more and more in the coming, coming weeks and months.
+
+581
+00:37:29,190 --> 00:37:32,638
+这里真正有意思、也很出人意料的是，它带来了一个
+What's really interesting and just like unexpected here is creates this really
+
+582
+00:37:32,638 --> 00:37:36,035
+对 Anthropic 很有意思的优势，你能用上最新的东西
+interesting advantage for Anthropic where you have access to the latest stuff
+
+583
+00:37:36,035 --> 00:37:37,630
+而且每个实验室都会发生这种情况
+and this is gonna happen at every lab.
+
+584
+00:37:38,110 --> 00:37:42,135
+每家都会不断进步，这在实验室内部造就了一种不公平的优势
+Everyone's gonna keep improving and it's it creates this unfair advantage within the
+
+585
+00:37:42,135 --> 00:37:43,812
+也就是能用上最好的东西
+labs to have access to the best stuff
+
+586
+00:37:43,812 --> 00:37:47,670
+外面的人还用不上，虽然你其实更希望所有人都能用
+that other people can't yet outside of your control, you'd prefer everyone use it.
+
+587
+00:37:47,750 --> 00:37:50,430
+所以这是个很有意思的新反馈循环即将开始
+So it's a really interesting this new feedback loop that's gonna start where?
+
+588
+00:37:51,610 --> 00:37:54,452
+如此先进的模型只有某些公司能用
+Models that are so advanced are only accessible to certain companies,
+
+589
+00:37:54,452 --> 00:37:57,582
+这会是一个全新的、意料之外的，算是一种二阶效应
+and that's gonna be a whole new unexpected, it's like a second order effect of,
+
+590
+00:37:57,582 --> 00:37:58,690
+来自所有这些限制
+of all these restrictions.
+
+591
+00:37:59,010 --> 00:38:04,210
+我们的目标是开发这些系统和模型时尽可能包容、开放
+Our goal is to be, uh, to develop these systems and the models to be as inclusive as possible.
+
+592
+00:38:04,890 --> 00:38:08,650
+我觉得我们的目标就是不让那种情况发生
+Um, I think our goal is to not have that happen.
+
+593
+00:38:09,090 --> 00:38:12,512
+对于通用目的、通用用途的技术
+Uh, for the general purpose, general use like technologies
+
+594
+00:38:12,512 --> 00:38:14,360
+让它更容易被大家用到
+and to make him more accessible.
+
+595
+00:38:14,560 --> 00:38:18,796
+我觉得这现在算是我们最优先的事情之一
+I think, you know, this is like one of our top priorities right now to kind of
+
+596
+00:38:18,796 --> 00:38:20,640
+尽量减少我们看到的那种情况
+reduce what we're seeing there.
+
+597
+00:38:21,000 --> 00:38:23,706
+嗯，有道理。我能想象你们会希望尽可能多的客户
+Yeah, that makes sense. I would imagine you'd want as many customers
+
+598
+00:38:23,706 --> 00:38:25,320
+和用户来使用这个东西
+and people using this thing as possible.
+
+599
+00:38:26,040 --> 00:38:30,365
+本期节目由 Mercury 赞助，一种彻底不一样的银行服务
+This episode is brought to you by Mercury. Radically different banking,
+
+600
+00:38:30,365 --> 00:38:33,840
+深受超过 30 万创业者喜爱，现在还带 command 功能
+loved by over 300,000 entrepreneurs and now with command.
+
+601
+00:38:34,340 --> 00:38:36,754
+我已经是 Mercury 的客户超过六年了。
+I've been a customer of Mercury's for over six years.
+
+602
+00:38:36,754 --> 00:38:38,620
+我从没有想过要离开。
+I have never once thought about leaving.
+
+603
+00:38:38,980 --> 00:38:43,860
+Mercury 基本上就是——当银行是由产品人而不是银行家来打造时会发生的事。
+Mercury is basically what happens when banking is built by product people, not by bankers.
+
+604
+00:38:44,220 --> 00:38:49,224
+他们让开发票、转账变得如此简单，我甚至敢说很有趣，
+They make it so easy, dare I say fun, to send invoices, move money around,
+
+605
+00:38:49,224 --> 00:38:52,060
+还能为我团队的成员设置虚拟卡。
+set up virtual cards for folks on my team.
+
+606
+00:38:52,500 --> 00:38:57,910
+你的银行有 API、终端、原生 CLI 或者支持 AI 的 MCP server 吗？
+Does your bank have an API, a terminal, native CLI or an AI ready MCP server?
+
+607
+00:38:58,270 --> 00:38:58,990
+我看没有吧。
+I don't think so.
+
+608
+00:38:59,470 --> 00:39:01,735
+而且他们最近还推出了 Command，
+And just recently they launched command,
+
+609
+00:39:01,735 --> 00:39:04,905
+一个直接内置在 Mercury 里的对话式界面，
+a conversational interface built directly into Mercury,
+
+610
+00:39:04,905 --> 00:39:07,040
+它就像你的财务操作员。
+which acts as your financial operator.
+
+611
+00:39:07,480 --> 00:39:11,463
+我一直用 Command 来转账、搞清楚我在哪些类别上
+I've been using command to transfer money around to figure out what categories I've
+
+612
+00:39:11,463 --> 00:39:14,080
+花的钱最多，还能分析我的现金流。
+been spending the most money in, analyze my cash flows.
+
+613
+00:39:14,680 --> 00:39:18,296
+就在今天，我还用它查出我从某个特定赞助商那里
+And just today, I used it to find out how much I've made from a specific sponsor
+
+614
+00:39:18,296 --> 00:39:19,200
+过去一年里赚了多少钱。
+over the past year.
+
+615
+00:39:19,440 --> 00:39:22,740
+我只是问了一句：过去一年我从 X 赚了多少钱？
+I just asked how much have I made from X over the past year?
+
+616
+00:39:22,980 --> 00:39:26,140
+10 秒后我就有了答案，实在太酷了。
+10 seconds later, I have an answer, it is so freaking cool.
+
+617
+00:39:26,500 --> 00:39:30,054
+访问 mercury.com 了解更多，几分钟就能在线申请。
+Visit mercury.com to learn more and apply online in minutes.
+
+618
+00:39:30,054 --> 00:39:33,260
+Mercury 是一家金融科技公司，不是 FDIC 承保的银行。
+Mercury is a fintech company, not an FDIC insured bank.
+
+619
+00:39:33,460 --> 00:39:37,860
+银行服务由 Choice Financial Group 和 Column N.A. 提供，均为 FDIC 成员。
+Banking services provided through Choice Financial Group and column na members, FDIC.
+
+620
+00:39:38,340 --> 00:39:43,476
+我想聊聊产品这个角色正在如何变化，以及
+I want to talk a little bit about how the product role is changing and who,
+
+621
+00:39:43,476 --> 00:39:49,040
+在 AI 已成为我们生活核心的当下，谁在这个新世界里做得好？
+who is doing well in this new world now that AI is such a core part of, of our life?
+
+622
+00:39:49,760 --> 00:39:52,157
+当你在招 PM、招产品人的时候，
+When you're hiring PMs product people,
+
+623
+00:39:52,157 --> 00:39:55,788
+当你在观察那些在如今的世界里做得好的人时，
+when you're looking at people that do well in today's world,
+
+624
+00:39:55,788 --> 00:39:58,040
+你会注意到哪些特质？
+what are some things that you notice?
+
+625
+00:39:58,120 --> 00:40:00,520
+你最看重什么？你更看重什么？
+What are you looking for more most? What are you looking for more?
+
+626
+00:40:00,560 --> 00:40:02,729
+什么在你看来越来越重要、越来越受关注，
+What's kind of like trending up and what you find is important
+
+627
+00:40:02,729 --> 00:40:03,920
+又有什么在慢慢变得不那么重要？
+and what's kind of trending down?
+
+628
+00:40:04,420 --> 00:40:10,900
+其实我们团队的招聘流程，已经三年没变过了。
+We actually on my team have not changed our hiring loop, uh, for 3 years now.
+
+629
+00:40:11,540 --> 00:40:16,881
+所以我们真正看重的东西、看重的特质，还有我们的评估方式，
+Um, so what we actually look for and the traits and how we evaluate, uh,
+
+630
+00:40:16,881 --> 00:40:24,340
+对于像 PM 这样的通才、像 research product manager 这样的通才，其实一直都一样。
+generalists like PNS, generalists like research product managers have actually been the same.
+
+631
+00:40:25,270 --> 00:40:31,720
+我觉得这些特质里，第一位就是第一性原理思维。
+Um, so I think some of those traits, No. 1 is, is first principles thinking.
+
+632
+00:40:32,840 --> 00:40:38,561
+这真的不是去套用你以前做过的模式，
+And this is really, uh, rather than pattern matching what you used to do in,
+
+633
+00:40:38,561 --> 00:40:41,883
+比如做消费级产品或者 B2B SaaS，
+let's say consumer product or b to B SAS, um,
+
+634
+00:40:41,883 --> 00:40:48,158
+而是要在此时此刻，针对这群用户、用这项技术，
+but actually figuring out in this moment for this user group with this technology
+
+635
+00:40:48,158 --> 00:40:50,280
+弄清楚用户价值到底是什么。
+what what is the user value?
+
+636
+00:40:50,600 --> 00:40:54,680
+有没有一个例子？很多人一听到第一性原理思维就觉得，对，我懂了，
+Is there an example that a lot of people hear first principles thinking they're like, yes, I got it.
+
+637
+00:40:54,720 --> 00:40:57,828
+我很擅长这个。有没有哪个例子，是某人真正展现出了
+I'm good at this. What is, what's an example of someone having really demonstrated
+
+638
+00:40:57,828 --> 00:40:59,360
+非常好的第一性原理思维？
+really good first principles thinking?
+
+639
+00:40:59,920 --> 00:41:05,392
+我想一个例子是，你通常会把产品经理想成
+I think one example is I think you think of a product manager
+
+640
+00:41:05,392 --> 00:41:10,529
+“我负责产品策略、负责交付用户价值”，
+as I own product strategy and delivering user value as,
+
+641
+00:41:10,529 --> 00:41:18,570
+而我日常体现这一点的方式，是写 PRD 或者写产品愿景文档。
+but I demonstrate day to day by writing a PRD or dry writing a product vision DOC and for.
+
+642
+00:41:18,650 --> 00:41:22,742
+但对我团队里的 research product manager 来说，
+For my team as like research product managers,
+
+643
+00:41:22,742 --> 00:41:29,563
+推动用户价值的方式，是找到正确的用户反馈、找到对的 evals，
+the way to drive user value is to figure out the right user feedback, the evals,
+
+644
+00:41:29,563 --> 00:41:33,970
+对吧，它能把那种用户需求具象化出来。
+right, that then can be a personification of that.
+
+645
+00:41:34,880 --> 00:41:35,440
+也就是用户需求。
+User need.
+
+646
+00:41:36,000 --> 00:41:39,991
+所以我们确实也会写一些产品文档和 PRD，
+So like we do write some product documents and PRDs,
+
+647
+00:41:39,991 --> 00:41:45,560
+但我们团队里有句话：evals 就是新的 PRD，对吧？
+but we actually have a saying on the team of evals are the new PRDs, right?
+
+648
+00:41:45,680 --> 00:41:48,313
+因为要交付那种用户价值，
+Because in order to deliver that user value,
+
+649
+00:41:48,313 --> 00:41:52,582
+靠的已经不是人们过去这一二十年
+it's not that exact artifact that people used to write in the last, like,
+
+650
+00:41:52,582 --> 00:41:53,720
+一直在写的那种东西了。
+one to two decades.
+
+651
+00:41:54,160 --> 00:41:55,200
+这是一种全新的工作方式。
+It's a new way of working.
+
+652
+00:41:55,920 --> 00:41:59,544
+所以第一性原理思维应该是，
+And so the first think principles thinking would be,
+
+653
+00:41:59,544 --> 00:42:03,909
+让我想清楚，为了实现目标我该做的事情是什么，
+let me figure out what is the thing I should do to achieve my goals
+
+654
+00:42:03,909 --> 00:42:07,533
+而不是“这是我一直在做的一套动作，
+rather than here is a set of activities that I've done
+
+655
+00:42:07,533 --> 00:42:12,640
+所以我就继续这样做”。这里的意思是，过去是
+and therefore I will continue to do so. The idea here is used to be have kind.
+
+656
+00:42:12,640 --> 00:42:17,376
+先有一个想法，写一份 PRD，跟大家聊，对齐计划，做设计，
+Of an idea, create a PRD, talk to people about it, align on the plan, design it,
+
+657
+00:42:17,376 --> 00:42:20,040
+开发、上线，看看效果，再迭代。
+build it, ship it, see how it goes, iterate.
+
+658
+00:42:20,390 --> 00:42:22,028
+我从你这里听到的是，好，
+What I'm hearing here is it's like, okay,
+
+659
+00:42:22,028 --> 00:42:24,870
+这里有一些反馈，指出哪里出了问题，或者有什么机会。
+here's some feedback about something that's wrong or an opportunity.
+
+660
+00:42:25,750 --> 00:42:32,150
+第一步，现在用 eval 来定义工作是什么，而不是靠 PRD，
+Step 1 is the eval is now how you define what the work is versus a PRD maybe,
+
+661
+00:42:32,150 --> 00:42:37,590
+也许第一步是理解用户的痛点。
+maybe step 1 would be, uh, understanding the user pain point.
+
+662
+00:42:38,270 --> 00:42:42,400
+而且触达这个用户痛点的方式本身就变了，对吧？
+And so the way to even access that user pain point is different, right?
+
+663
+00:42:42,400 --> 00:42:44,360
+过去我们可能会做一次用户访谈。
+In the past, we might do a user interview.
+
+664
+00:42:45,240 --> 00:42:47,184
+我觉得如果你挖得够深，
+Um, I think if you go like deep enough,
+
+665
+00:42:47,184 --> 00:42:50,320
+你可能会让用户带你走一遍他们的使用流程。
+you you might have the user walk you through their user flow.
+
+666
+00:42:50,440 --> 00:42:56,080
+在这里，你得像抠像素一样抠 token。
+The pixels here, you have to sweat the tokens as much as you sweat the pixels.
+
+667
+00:42:56,840 --> 00:43:03,475
+所以我们团队有一项工作，就是读对话记录，去理解，
+And so one activity we have on the team is reading the transcripts and understanding,
+
+668
+00:43:03,475 --> 00:43:10,950
+那些失败的轨迹到底是怎么回事，深入去看，然后判断这是不是幻觉？
+uh, what was the trajectories that failed very deeply to then say was this like a hallucination?
+
+669
+00:43:11,630 --> 00:43:13,950
+是不是 Claude 太自信了？
+Was this claw being overconfident?
+
+670
+00:43:14,270 --> 00:43:19,194
+所以失败的类型其实有很多细微差别，
+So like the theme of the failure actually has a lot of nuance,
+
+671
+00:43:19,194 --> 00:43:23,133
+这能让你写出一个描述，
+and then that allows you to build a description,
+
+672
+00:43:23,133 --> 00:43:27,170
+一个对那个痛点持续、稳定的描述。
+a like sustained description of that pain point.
+
+673
+00:43:28,010 --> 00:43:31,330
+这基本上就能变成一个新的 eval。
+Uh, so that could be essentially in a new eval.
+
+674
+00:43:32,090 --> 00:43:34,770
+而且它是不是覆盖真实分布的 eval，对吧？
+And is it eval on distribution, right?
+
+675
+00:43:34,770 --> 00:43:39,518
+它有没有既覆盖到确实会失败的情况，
+Is it capturing both the positive situations where this is failing
+
+676
+00:43:39,518 --> 00:43:44,776
+也覆盖到本来不该失败的情况，然后把这些带回给，
+and also areas when it should actually not fail and then bring that back to,
+
+677
+00:43:44,776 --> 00:43:48,761
+比如研究团队，这样我们就能做出改进，
+let's say, research so that we can make the improvements
+
+678
+00:43:48,761 --> 00:43:53,340
+并真正衡量质量，比如等我们有了 Opus 5.5，
+and actually measure the quality of, okay, when we have Opus 5, 5.
+
+679
+00:43:53,780 --> 00:43:55,700
+这一块到底有没有变好？
+Is this area improving or not?
+
+680
+00:43:55,780 --> 00:44:01,474
+Claude 现在能不能在文档里找到正确的位置，
+Is Claude now able to identify the right places in the document
+
+681
+00:44:01,474 --> 00:44:04,540
+并提炼出正确的总结。
+and pull the right synthesis out.
+
+682
+00:44:05,140 --> 00:44:11,266
+所以关键就是可执行性，以及缩短我们和可执行性之间的距离，
+So it's just the actionability and shortening the distance to actionability for our
+
+683
+00:44:11,266 --> 00:44:16,530
+让研究员这样的相关方和合作团队能够采取行动。
+stakeholders and partner teams like researchers, um, to take action on.
+
+684
+00:44:16,730 --> 00:44:18,902
+有没有一个这样的例子，
+Is there an example of something like this
+
+685
+00:44:18,902 --> 00:44:22,750
+就是你发现了一个问题或机会，然后写了 eval，
+where you found an issue or opportunity and then wrote the eval and what is,
+
+686
+00:44:22,750 --> 00:44:25,170
+大多数情况下这个 eval 长什么样？
+what is the eval looking like in, in most cases?
+
+687
+00:44:25,530 --> 00:44:27,982
+当人们想象一个 eval 时，它是什么？
+Uh, what, when people want to picture an eval, what is that? What is,
+
+688
+00:44:27,982 --> 00:44:28,770
+他们脑海里会浮现什么？
+what do they picture?
+
+689
+00:44:29,410 --> 00:44:34,002
+我们其实是在 Anthropic 内部率先提出这个概念的。
+We actually, uh, pioneered this concept within Anthropic. So, uh,
+
+690
+00:44:34,002 --> 00:44:37,610
+一个早期的例子就是早期的 Claude 模型。
+one of the early examples is the early Claude models.
+
+691
+00:44:38,140 --> 00:44:41,820
+它们不太擅长遵循特定的格式规范。
+We're not very good at following specific schemas.
+
+692
+00:44:41,980 --> 00:44:45,672
+比如输出 JSON 之类的，
+So like things like outputs and JSON and, uh,
+
+693
+00:44:45,672 --> 00:44:51,460
+而现在这对 Claude 成为一个好的 agent 是很基础的，对吧？
+now that is fundamental to Claude being able to be a good agent, right?
+
+694
+00:44:51,460 --> 00:44:55,848
+如果你不能输出某种格式，你就不知道怎么访问 API，
+If you can't output a certain format, you don't know how to like access APIs,
+
+695
+00:44:55,848 --> 00:44:57,380
+也没法调用工具，等等。
+you can't call tools, etc.
+
+696
+00:44:58,080 --> 00:45:05,640
+所以最初的整个流程是，我听到了关于 Claude 的反馈。
+And so the initial end to end was I was hearing feedback around Claude.
+
+697
+00:45:05,840 --> 00:45:09,400
+在 Claude 2 时代，Claude 不太擅长遵循指令。
+Two days, Claude was not very good at following instructions.
+
+698
+00:45:10,120 --> 00:45:15,360
+于是就和用户深入去挖：你说 Claude 不擅长遵循指令，具体是什么意思？
+So then digging in with users. What do you mean by Claude is not good at following instructions?
+
+699
+00:45:15,600 --> 00:45:20,680
+告诉我这是在什么情况下发生的？具体是哪一段？
+Give me what situations this was happening. Like, what's the exact, like, paragraph?
+
+700
+00:45:20,720 --> 00:45:24,680
+你问了什么？Claude 的回答是什么？就是这种细节程度。
+What did you ask? What was Claude's response going to? Like, that level of detail.
+
+701
+00:45:25,320 --> 00:45:30,673
+我发现，在早期，大约 80% 的人所说的
+And what I saw was something like 80% of what people meant in the early days for
+
+702
+00:45:30,673 --> 00:45:34,520
+这种失败，其实是 Claude 写不出正确的 JSON。
+this failure was Claude would not write the right JSON.
+
+703
+00:45:35,840 --> 00:45:41,372
+那好，我们就先生成大概 30 到 40 个例子，
+And so then, okay, let's generate maybe to start just 30 to 40 examples of
+
+704
+00:45:41,372 --> 00:45:45,060
+都是 Claude 没做对的情况。
+when Claude was not doing this thing correctly.
+
+705
+00:45:46,020 --> 00:45:53,220
+这其实就是你的 eval set，基本上就是一个 prompt 加一个回答。
+And then that actually is your eval set and you could have essentially a prompt and a response.
+
+706
+00:45:54,140 --> 00:45:59,140
+如果它没有产出你预期的那个正确答案，
+And if that is not working in the right golden answer that you might have,
+
+707
+00:45:59,140 --> 00:46:02,140
+那就意味着这个 eval 基本上，
+then that means that the eval essentially.
+
+708
+00:46:02,960 --> 00:46:07,120
+它是有用的，因为它能稳定地识别出一个痛点。
+Uh, it is beneficial because it's identifying a pain point consistently.
+
+709
+00:46:07,640 --> 00:46:13,200
+于是我们就把它加到了我们的 eval 仓库里。
+And so then we added that to our, um, repositories for evals.
+
+710
+00:46:13,320 --> 00:46:19,280
+每当我们有新版本的 Claude，我们都会跑一遍这个 eval，检查一下。
+And when we have, uh, versions of Claude, we actually run that eval and just check.
+
+711
+00:46:19,360 --> 00:46:22,978
+我觉得现在基本上都是 100% 或者 99.9%。
+I think at this point it's always 100% or like 99.9.
+
+712
+00:46:22,978 --> 00:46:25,390
+所以它已经不再是痛点了。
+And so it's no longer a pain point.
+
+713
+00:46:25,950 --> 00:46:29,134
+但在早期，就是收集用户反馈，
+Uh, but in the early days was taking the user feedback,
+
+714
+00:46:29,134 --> 00:46:33,450
+弄清楚到底指的是什么，我们能不能复现，它是不是稳定出现，
+figuring out actually what I mean, can we reproduce it, is it consistent,
+
+715
+00:46:33,450 --> 00:46:34,440
+它是不是一个大问题？
+is it a big issue?
+
+716
+00:46:35,000 --> 00:46:37,336
+然后再想办法，
+And then figuring out how to, uh,
+
+717
+00:46:37,336 --> 00:46:41,920
+把它标准化成研究员能用的形式。
+standardize it in a way that can be consumable for researchers.
+
+718
+00:46:42,480 --> 00:46:44,680
+这基本上就是产品经理版的测试驱动开发。
+It's basically test driven development for PMs.
+
+719
+00:46:44,840 --> 00:46:47,960
+我们现在生活的世界，是不是你要先写测试？
+Is, is the world we're living now, uh, where you write the test first?
+
+720
+00:46:48,200 --> 00:46:52,280
+所以在 Anthropic，写这个是不是已经成了产品经理工作的核心部分？
+So is this just a core part of the product management job now at Anthropic writing?
+
+721
+00:46:52,400 --> 00:46:53,730
+你说呢？我觉得是的。
+You bet? I think so.
+
+722
+00:46:53,850 --> 00:46:58,416
+我，我也觉得这是我跟别人聊过的话题，
+I, I also think it's, um, something, uh, I've talked to others,
+
+723
+00:46:58,416 --> 00:47:02,368
+就是跟其他公司的 PM 聊过，我觉得这也越来越
+PMs at other companies about and I think it's also more
+
+724
+00:47:02,368 --> 00:47:07,197
+成为一种更广义的技能，因为我们做的很多产品
+and more of the skill set more broadly because a lot of the products
+
+725
+00:47:07,197 --> 00:47:12,290
+都处在模型和 harness（框架）交汇的地方。
+that we're building is at the intersection of models with harnesses.
+
+726
+00:47:12,730 --> 00:47:15,290
+面向一组用户、带着一组上下文。
+With a set of contexts for a set of users.
+
+727
+00:47:15,880 --> 00:47:19,153
+所以像 evals 这样的东西其实
+And so having things like evals actually isn't,
+
+728
+00:47:19,153 --> 00:47:24,472
+不只是做模型的人在用，在整个产品里，它也是一种
+is a way not just for folks working on models, but generally within product to,
+
+729
+00:47:24,472 --> 00:47:30,200
+通往更好用户体验的方式，因为你没法改进你没法衡量的东西。
+to get to better user experiences because you can't improve what you can't measure.
+
+730
+00:47:30,800 --> 00:47:35,640
+而且这里面很多还是很依赖手感、很依赖判断力的。
+And a lot of this is very still tactile based. It's still very judgment based.
+
+731
+00:47:36,120 --> 00:47:39,667
+所以你得贴近细节，而且它是非确定性的，
+And so you have to stay close to the details and also very non deterministic,
+
+732
+00:47:39,667 --> 00:47:43,720
+这是很关键的一点，它不会每次都给你一样的答案。
+which is a big part of this, just like it's not gonna give you the same answer every time.
+
+733
+00:47:43,720 --> 00:47:48,200
+所以你得更宽泛地去描述它，它不会是那种精确匹配。
+So you gotta describe it kind of more broadly. It's not gonna be, yeah, an exact match.
+
+734
+00:47:48,440 --> 00:47:52,140
+所以这是产品做法上一个很有意思的变化，
+So this is a really interesting change in the way product happens
+
+735
+00:47:52,140 --> 00:47:56,320
+未来也会如此，写 evals 相对于写 PRD，是其中很重要的一部分。
+and will happen is evals writing evals versus PRDS is is a big part of this.
+
+736
+00:47:56,440 --> 00:48:00,280
+你们还写 PRD 吗？还有那种描述问题的一页纸吗，还是说没了？
+Do you guys still do PRDs? Is there still like a one pager describing a problem or is it play?
+
+737
+00:48:00,280 --> 00:48:03,880
+好，你现在点头了。我们，我们还写，我们有。
+Okay, now you're shaking your head yes. We, we, we are. We do.
+
+738
+00:48:03,920 --> 00:48:06,857
+我觉得，当问题非常明确的时候，
+I think, um, when there's a very defined problem,
+
+739
+00:48:06,857 --> 00:48:10,080
+evals 这种东西几乎可以算是一种速记。
+I think things like evals might be almost a shorthand.
+
+740
+00:48:10,080 --> 00:48:13,240
+但在其他一些情况下，PRD 是非常有价值的。
+I think there's other cases where PRDs are really valuable.
+
+741
+00:48:14,120 --> 00:48:20,558
+PRD 是很好的载体，能让一大群人在
+Um, PRDs are great vehicles for getting a very large group of people aligned on a
+
+742
+00:48:20,558 --> 00:48:25,240
+关于体验的一组事实来源和一组目标上达成一致。
+set of sources of truth about experience and set of goals.
+
+743
+00:48:25,680 --> 00:48:31,403
+所以我们每出一个模型，其实每个模型我们都会写一份 PRD，
+So when we do have a model, we actually, for every model, we do have a PRD,
+
+744
+00:48:31,403 --> 00:48:38,096
+不一定是给研究员看的，更多是给我们不断增长的产品服务、
+less necessarily for our researchers, but more for our growing product services,
+
+745
+00:48:38,096 --> 00:48:41,200
+给我们的工程团队、给我们的，嗯，
+for our engineering teams, for our um.
+
+746
+00:48:42,180 --> 00:48:45,184
+给法务、安全等相关方看的，
+Stakeholders like legal and safety and others
+
+747
+00:48:45,184 --> 00:48:50,037
+作为一个事实来源，把我们想达成的目标整理清楚，
+as just a source of truth of putting together what we're aiming to achieve so
+
+748
+00:48:50,037 --> 00:48:53,580
+好让一大群人朝同一个方向使劲。
+that a big group of people can row in the same direction.
+
+749
+00:48:54,580 --> 00:48:59,247
+我觉得 PRD 有价值的另一个地方，是在更模糊的
+The other place where I do think PRDs are valuable are on the more ambiguous
+
+750
+00:48:59,247 --> 00:49:01,580
+问题和机会上，对吧？
+problems and opportunities, right?
+
+751
+00:49:01,620 --> 00:49:05,014
+比如说，在我们还没做出 computer use 这类东西之前，
+So we, if we haven't shipped a thing like computer use,
+
+752
+00:49:05,014 --> 00:49:09,540
+我们不一定总能明确列出用户具体的痛点。
+we don't necessarily have set up like user specific pain points always.
+
+753
+00:49:10,220 --> 00:49:16,664
+我觉得 PRD 里产品愿景那部分是有价值的，可以去探索
+And I think there's value in the product vision portions of a PRD to explore what
+
+754
+00:49:16,664 --> 00:49:21,937
+有什么可能，就算一项技术还没成熟到能服务所有人，
+could, even if a technology is not yet ready to work for everyone,
+
+755
+00:49:21,937 --> 00:49:27,698
+你怎么让它先在某一群人身上跑得好，好去探索它的价值？
+how do you get it to work well for some group so you can explore the value?
+
+756
+00:49:27,698 --> 00:49:30,920
+你其实能，它能带来一些东西。
+You can actually, it brings something.
+
+757
+00:49:30,920 --> 00:49:34,640
+那种对某一用户群来说是连贯的东西。
+That is, uh, coherent to a user group.
+
+758
+00:49:35,200 --> 00:49:39,400
+所以我们确实有 PRD，只是它的用法现在有点不一样了。
+So we do have PRDs. Um, I think the application is a little different now.
+
+759
+00:49:39,480 --> 00:49:40,160
+好，这很棒。
+Okay, this is great.
+
+760
+00:49:40,200 --> 00:49:42,220
+我刚采访过一位 Andrew，
+There's, I just had a, uh, Andrew for,
+
+761
+00:49:42,220 --> 00:49:46,000
+他是 OpenAI 的 Codex 应用负责人，你们的看法是一致的。
+he's the head of the Codex app at OpenAI and he's, you guys are aligned.
+
+762
+00:49:46,120 --> 00:49:51,640
+PRD 没死，对于特定的项目和想法它还是很有用的，很好。
+Uh, PRD is not dead, still very useful for specific projects and ideas. Uh, great.
+
+763
+00:49:52,000 --> 00:49:54,840
+好，那我们就此定论：PRD 还活着。
+Okay, we've closed closed the book on period is still kicking.
+
+764
+00:49:55,720 --> 00:49:59,181
+好，我们刚聊了一下，对产品人来说，正在
+Okay, so we've been talking a bit about just what kind of skills are kind of
+
+765
+00:49:59,181 --> 00:50:00,600
+涌现出哪些技能。
+emerging for product people.
+
+766
+00:50:01,000 --> 00:50:05,623
+还有没有别的什么你觉得变了，就是在这个新的 AI 世界里，
+Um, is there anything else that you find is shifted in what patterns, uh,
+
+767
+00:50:05,623 --> 00:50:10,401
+那些做得好的人身上有哪些共同的模式，
+are common across people that are doing well in this new AI world in terms of
+
+768
+00:50:10,401 --> 00:50:13,560
+尤其是产品经理和产品团队里的人。
+product managers and folks on the product teams.
+
+769
+00:50:13,900 --> 00:50:15,567
+还有没有别的什么让你觉得，
+Is there anything else that you're like, okay,
+
+770
+00:50:15,567 --> 00:50:17,020
+某个人得做出转变之类的？
+does somebody got to shift or something?
+
+771
+00:50:17,100 --> 00:50:18,580
+你会更看重哪些人？
+You look for more people?
+
+772
+00:50:18,940 --> 00:50:21,752
+我想具体来说，
+I think maybe specifically, uh,
+
+773
+00:50:21,752 --> 00:50:28,312
+对于那些可能处在职业中期，或者更多是坐在管理岗、
+for folks who might be mid career or folks who have been more in a managerial,
+
+774
+00:50:28,312 --> 00:50:31,540
+比如产品、比如领导岗位上的人来说。
+like product, like leadership seat.
+
+775
+00:50:32,340 --> 00:50:38,779
+有一件事我感触挺深，那就是要想成为
+Um, one thing that I think I feel pretty strongly about is in order to be good
+
+776
+00:50:38,779 --> 00:50:43,660
+用这项技术做事的团队里优秀的管理者和 PM，
+managers of teams and PMs working with this technology,
+
+777
+00:50:43,660 --> 00:50:50,410
+你自己必须真正亲自下场，而且不只是花时间随便捣鼓。
+you have to be really hands on yourself and have spent not just time tinkering.
+
+778
+00:50:50,490 --> 00:50:55,505
+而是真的用这项技术做出东西、发布出去，还是那句话，
+But actually shipping with this technology and, and, and again,
+
+779
+00:50:55,505 --> 00:51:00,427
+深入到细节里，跟你的 PM、
+being in the details and sweating the tokens along with your PMs
+
+780
+00:51:00,427 --> 00:51:03,120
+你的工程师、你的团队一起，为每个 token 较真。
+and your engineers and your teams.
+
+781
+00:51:03,840 --> 00:51:09,508
+所以哪怕是我招进来、有更多资深 PM 经验的人，
+And so even for folks that I hire who have more tenured PM experience,
+
+782
+00:51:09,508 --> 00:51:15,673
+他们的入职计划和那些比较，呃，
+the onboarding plans are exactly the same as somebody who is like more, uh,
+
+783
+00:51:15,673 --> 00:51:19,949
+处在职业早期的人是完全一样的，都是围绕理解用户，
+early career and it's around understanding users,
+
+784
+00:51:19,949 --> 00:51:25,120
+阅读经过授权的用户反馈，跟客户交流。
+reading like consented user feedback, talking to customers.
+
+785
+00:51:26,000 --> 00:51:30,139
+我觉得有一点很关键，就是能够，呃，
+I think there's something around, uh, being able to, like,
+
+786
+00:51:30,139 --> 00:51:32,842
+理解该拿这些做什么，什么，
+understand what to do with this, what,
+
+787
+00:51:32,842 --> 00:51:37,910
+明白好的标准是什么，并且是通过亲自下场培养出这种感觉的，
+what good looks like and having developed that in a very hands on manner,
+
+788
+00:51:37,910 --> 00:51:41,120
+这很重要。呃，这不一定。
+that's important. Um, it's not necessarily.
+
+789
+00:51:41,980 --> 00:51:46,798
+对一个人来说，呃，不一定容易去认同或看清，
+Easy for someone to, uh, agree or be able to see what a,
+
+790
+00:51:46,798 --> 00:51:52,164
+一个好的、甚至出色的 AI 产品或 AI 功能应该是什么样，
+what a good or great AI product or AI feature could look like
+
+791
+00:51:52,164 --> 00:51:57,420
+如果他们自己没有真正动手构建过。
+if they haven't kind of experience building themselves.
+
+792
+00:51:58,060 --> 00:52:02,606
+呃，所以我觉得，我真的挺坚定地认为，
+Um, so I think, I think there is a I, I, I do feel pretty strongly that like,
+
+793
+00:52:02,606 --> 00:52:05,940
+你知道，如果你是管理者，你必须亲自下场。
+you know, if you're a manager, you have to be hands on.
+
+794
+00:52:06,020 --> 00:52:08,540
+你得花一部分时间真正去做交付。
+You have to spend a portion of your time actually shipping.
+
+795
+00:52:09,780 --> 00:52:14,265
+你得站在团队的角度去体会，这也是我，
+You have to kind of walk in the shoes of your teams and, and that's I,
+
+796
+00:52:14,265 --> 00:52:17,282
+我总是尽量挤出一部分时间，
+I always try to carve out a portion of time to,
+
+797
+00:52:17,282 --> 00:52:22,663
+在有新模型的时候真正去负责一两条工作线，为了保持，
+to actually like own one to two work streams when we have models in order to keep,
+
+798
+00:52:22,663 --> 00:52:24,620
+就是保持我对模型的直觉理解。
+like, keep my theory of mind.
+
+799
+00:52:24,860 --> 00:52:30,055
+保持对模型进展、改进速度的感觉，呃，呃，
+Keep my sense of how the models are moving, how quickly it's improving, uh, uh,
+
+800
+00:52:30,055 --> 00:52:35,010
+这样我才能帮团队做决策，做出更好的决策。
+so I can help the team make, make decisions and, and make better decisions.
+
+801
+00:52:35,570 --> 00:52:37,414
+所以我听到的是，如果你没有，
+So what I'm hearing here is if you're not,
+
+802
+00:52:37,414 --> 00:52:40,234
+不管你在公司层级的哪个位置，
+no matter where you are in the ladder of hierarchy at a company,
+
+803
+00:52:40,234 --> 00:52:43,597
+如果你自己不动手构建，如果你没有真正去用 Claude，
+if you're not building yourself, if you're not actually talking to Clive,
+
+804
+00:52:43,597 --> 00:52:44,410
+去用 Codex。
+talking to Codex.
+
+805
+00:52:44,650 --> 00:52:46,495
+不去做东西，你是撑不下去的。
+Building stuff, you're not going to make it.
+
+806
+00:52:46,495 --> 00:52:48,690
+而且你应该享受用这项技术工作的过程。
+And you should have fun working with his technology.
+
+807
+00:52:48,810 --> 00:52:49,850
+我觉得这是另一个要点。
+I think that's the other piece.
+
+808
+00:52:50,580 --> 00:52:56,647
+我觉得不管处在什么级别，最成功的往往是这样的人，
+I think the folks that would be most successful regardless of their level are people
+
+809
+00:52:56,647 --> 00:53:01,413
+他们热爱和 AI 一起工作，不断探索、尝试，
+who love working with AI and, and are exploring and experimenting
+
+810
+00:53:01,413 --> 00:53:05,660
+并且挤出时间，不只是用来做实验。
+and carving out the time not just for the experimentation.
+
+811
+00:53:05,700 --> 00:53:09,698
+而是真正亲自端到端地交付，去获取用户反馈，
+But actually hands on shipping end to end, getting the user feedback,
+
+812
+00:53:09,698 --> 00:53:12,180
+我觉得这对每个人来说都必须是基本功。
+I think has to be fundamental for everyone.
+
+813
+00:53:12,620 --> 00:53:14,316
+我百分之百懂你的意思，
+I hundred percent know what you mean there,
+
+814
+00:53:14,316 --> 00:53:17,378
+就像我坐在这里，靠我的 newsletter 和播客只是嘴上聊这些，
+just like me sitting on my newsletter in this podcast just talking about stuff
+
+815
+00:53:17,378 --> 00:53:18,980
+然后说，对对，那听起来不错。
+and like, yeah, yeah, that sounds great.
+
+816
+00:53:19,140 --> 00:53:20,891
+但每次我真正动手做点东西，
+Like every time I actually build something
+
+817
+00:53:20,891 --> 00:53:23,614
+捣鼓各种小项目的时候，你就会想，好，
+and I tinker with all kinds of little projects, you just like, okay,
+
+818
+00:53:23,614 --> 00:53:25,900
+我明白这里在发生什么了，你收获会多得多。
+I see what's happening here and you just get so much more.
+
+819
+00:53:26,580 --> 00:53:30,077
+那种真正动手用模型、做东西时的体验，
+It's like hard to exactly describe what you're what you what you experience actually
+
+820
+00:53:30,077 --> 00:53:31,900
+其实很难用语言精确描述。
+working with the models and building stuff.
+
+821
+00:53:31,900 --> 00:53:34,466
+但那完全是另一个世界，就像，好，我看到了，
+But it's like a whole different world of like, okay, I see here's where the look,
+
+822
+00:53:34,466 --> 00:53:36,060
+原来他们说的 computer use 是这个意思。
+here's what they're talking about computer use.
+
+823
+00:53:36,140 --> 00:53:39,290
+原来他们说的这种 UX 上的局限是这么回事。
+Here's what they're talking about with this limitation of this UX situation.
+
+824
+00:53:39,690 --> 00:53:40,730
+对，对。
+Yeah, yeah.
+
+825
+00:53:40,730 --> 00:53:44,041
+所以就是，你提到一个特别有意思的点，
+So it's just like, and you made this really interesting point
+
+826
+00:53:44,041 --> 00:53:45,793
+就是你得从中找到乐趣，
+that you have to have fun with it,
+
+827
+00:53:45,793 --> 00:53:47,676
+这对很多人来说并不容易，
+which is not easy for a lot of people
+
+828
+00:53:47,676 --> 00:53:52,090
+因为他们是被逼着用 AI，或者根本不知道该拿它做什么。
+because they're pushed to use AI or they just don't know exactly what to do with it.
+
+829
+00:53:52,250 --> 00:53:54,730
+对那些觉得，我也不知道，就是特别烦的人来说。
+For people that are just like, I don't know, it's just so annoying.
+
+830
+00:53:54,770 --> 00:53:57,420
+我就得干这个。我也说不清。就是特别，
+I just have to do this. I don't know what. It's just so like,
+
+831
+00:53:57,420 --> 00:53:58,690
+我讨厌这破玩意儿。
+I hate this freaking thing.
+
+832
+00:53:58,730 --> 00:54:01,510
+我为什么非得用这个？一切都变得太快了。我累了。
+Why do I have to work with this? Things are changing so much. I'm tired.
+
+833
+00:54:02,710 --> 00:54:06,030
+有没有什么建议，能帮大家找到，找到这份工作中的乐趣？
+Advice for helping people find that, find that joy in this work?
+
+834
+00:54:06,350 --> 00:54:10,581
+我想我也许会再强调一下之前说过的一点，就是
+I think maybe I'll reemphasize something I said earlier around just
+
+835
+00:54:10,581 --> 00:54:13,698
+尝试探索不是一项单人运动，
+that experimentation is not an individual sport,
+
+836
+00:54:13,698 --> 00:54:18,671
+比如有些时候，我几乎接触过每一个版本的
+like some of the moments where I think I've touched practically every version of
+
+837
+00:54:18,671 --> 00:54:20,230
+研究模型。
+research models across.
+
+838
+00:54:21,280 --> 00:54:24,400
+到目前为止，还有二十多个版本的正式版 Claude。
+20 version plus versions of production, Claude, at this point.
+
+839
+00:54:24,920 --> 00:54:30,840
+我觉得一部分乐趣来自看到别人也发现新的用例。
+And I think part of the joy comes from seeing other people discover use cases too.
+
+840
+00:54:31,480 --> 00:54:37,414
+所以这里也许有个办法，就是和一个满怀热情的人结对，
+And so maybe one idea here would be pairing with somebody who is excited
+
+841
+00:54:37,414 --> 00:54:41,738
+看看你真正在意的某个使用场景，
+and seeing what on a use case that you care about and,
+
+842
+00:54:41,738 --> 00:54:48,879
+一起去做，而不是自己去找、去琢磨那个完美的使用场景，
+and working together versus identifying or trying to figure out the perfect use case
+
+843
+00:54:48,879 --> 00:54:52,600
+因为那样可能会感觉像在干活。
+yourself because that might feel like work.
+
+844
+00:54:52,840 --> 00:54:55,720
+而和别人一起做，很多时候会觉得很快乐。
+Working with others feels like joy a lot of the time.
+
+845
+00:54:56,000 --> 00:55:00,080
+我们还能不能做更多，把更多人也带进来？
+And is there more that we could do to bring that, bring other people along?
+
+846
+00:55:00,800 --> 00:55:03,601
+这一点在内部很多时候也是这样，
+That's something like a lot of times internally,
+
+847
+00:55:03,601 --> 00:55:05,924
+我们有一些特别好奇的人，
+we have somebody who is like very curious
+
+848
+00:55:05,924 --> 00:55:10,433
+他们分享一个新原型的想法，实际上会带动一大批人，
+and them sharing an idea of a new prototype actually brings a ton more people who
+
+849
+00:55:10,433 --> 00:55:13,780
+大家会说，哦，原来现在用 Claude 也能做到这个。
+are like, oh, I didn't know this could work now with Claude.
+
+850
+00:55:14,180 --> 00:55:16,220
+所以这里就形成了一些良性循环。
+And so there's just some virtuous cycles here.
+
+851
+00:55:16,980 --> 00:55:22,420
+也是一种持续从这项技术里获得乐趣的方式。
+Um, and, and ways of, yeah, bring, continue to have joy with, with this technology.
+
+852
+00:55:22,820 --> 00:55:23,660
+这个观点说得真好。
+That's such a good point.
+
+853
+00:55:23,940 --> 00:55:28,004
+我觉得这也是 Twitter 在这方面特别有用的原因，你能看到别人
+I think that's also why Twitter so useful for a lot of this is you see other people
+
+854
+00:55:28,004 --> 00:55:29,420
+分享他们做出来的东西。
+sharing what they've done.
+
+855
+00:55:30,240 --> 00:55:32,880
+这会激发你想出自己的一些小点子。
+And it inspires you to come up with your own little ideas.
+
+856
+00:55:32,880 --> 00:55:35,400
+而且分享自己做出来的东西，本身也很有意思。
+And also it's just, like, fun to share your own thing that you've done.
+
+857
+00:55:36,160 --> 00:55:37,200
+所以这个观点真的很好。
+So that's a really good point.
+
+858
+00:55:37,240 --> 00:55:40,760
+就是找一些人一起玩、一起找使用场景。
+Just like, find other people to kind of play around with and look for use cases.
+
+859
+00:55:41,040 --> 00:55:44,463
+我还经常听到的一点是，找一个你想在生活或工作中解决的问题，
+The thing I've also heard a lot is just find like a problem you want to solve in
+
+860
+00:55:44,463 --> 00:55:46,907
+然后直接打开 Claude、Claude Code，
+your life or work and just open up Claude, Claude code,
+
+861
+00:55:46,907 --> 00:55:48,320
+告诉它，我想做的是这个。
+tell it here's what I want to do.
+
+862
+00:55:48,320 --> 00:55:50,966
+让人惊讶的是，你能走得多远，仅仅靠
+And it's incredible how far you can get just with, like,
+
+863
+00:55:50,966 --> 00:55:52,980
+一个你想解决的问题的模糊想法。
+a vague idea of a problem you want to solve.
+
+864
+00:55:53,100 --> 00:55:56,199
+是的，我觉得难点在于，你能尝试的东西
+Yeah, I think it gets hard in that there's so many different things
+
+865
+00:55:56,199 --> 00:55:57,100
+实在太多了。
+that you could try.
+
+866
+00:55:57,540 --> 00:55:57,700
+是的。
+Yeah.
+
+867
+00:55:57,860 --> 00:56:01,830
+所以你要么就收窄范围，找个人一起配对，
+And so you just like narrowing in on either pairing with someone,
+
+868
+00:56:01,830 --> 00:56:03,963
+和一个特别
+working with somebody who, who is,
+
+869
+00:56:03,963 --> 00:56:08,154
+对这项技术充满热情的人一起做，要么就找一个
+who have a lot of joy about this technology or figuring out something
+
+870
+00:56:08,154 --> 00:56:10,580
+能立刻产生价值的东西。
+that you could immediately find value.
+
+871
+00:56:10,780 --> 00:56:14,178
+这两种方式都能让你深入进去，
+Like either of those things allow you to go deeper
+
+872
+00:56:14,178 --> 00:56:17,990
+而不是在太多东西上浮于表面。
+rather than like more high level about too many things?
+
+873
+00:56:19,110 --> 00:56:23,736
+我发现要跟上现在这么多原型和产品的节奏，真的很难，
+Um, I, I find it hard to keep pace with the number of prototypes or products
+
+874
+00:56:23,736 --> 00:56:24,950
+外面东西太多了。
+that are out there.
+
+875
+00:56:25,470 --> 00:56:30,590
+所以我的视角是，我怎么亲自把其中一两个做深？
+And so my lens has been how do I go deep in one to two of them myself?
+
+876
+00:56:31,270 --> 00:56:35,131
+你这么说太有意思了，因为这正是，
+That's, uh, that's so interesting you say that because that's exactly,
+
+877
+00:56:35,131 --> 00:56:38,927
+我们刚做了一个调查，是我和同事 Noam 一起做的，
+we just had the survey, uh, that I, I ran with, uh, my colleague Noam, uh,
+
+878
+00:56:38,927 --> 00:56:43,367
+问我的读者们，对现在科技和 AI 领域发生的这么多事
+asking my readers just how they're feeling about all the things going on in the tech
+
+879
+00:56:43,367 --> 00:56:44,590
+是什么感受。
+right now and AI and uh.
+
+880
+00:56:44,910 --> 00:56:47,485
+我们得到的最有意思的一个结论之一是，
+One of the most interesting takeaways we had was, uh,
+
+881
+00:56:47,485 --> 00:56:51,230
+幸福感恰恰就是你说的那样，深入做几件事。
+to find that happiness is exactly what you said, is go deep in a couple things.
+
+882
+00:56:52,290 --> 00:56:54,479
+而不是同时铺开一大堆小事情，
+Versus China, just ton of little things,
+
+883
+00:56:54,479 --> 00:56:57,570
+而是挑几件真正做好、然后深入下去。
+find a couple things to really solve well and then go deep.
+
+884
+00:56:57,650 --> 00:57:00,900
+这是幸福感的一个来源，因为大家感受到的很多快乐，
+And that is a source because a lot of that happiness people feel is
+
+885
+00:57:00,900 --> 00:57:04,992
+是当他们终于找到一种方式，让 AI 真正改善了生活，
+when they finally unlocked a way for AI to actually make their lives better versus
+
+886
+00:57:04,992 --> 00:57:07,880
+而不是弄出几个乱七八糟、半残不全的东西。
+just like a couple messed up, broken half working things.
+
+887
+00:57:08,200 --> 00:57:13,800
+是的，就是你怎么从“打个勾完成任务”那种状态走出来，对吧？
+Yeah, it's, it's, um, how do you go from this being a check the box, right?
+
+888
+00:57:13,960 --> 00:57:16,227
+所以对我们这些做产品的人来说，
+And so like us as product people,
+
+889
+00:57:16,227 --> 00:57:21,600
+这就变成了对你时间和精力的产品优先级排序练习。
+it's then a exercise of product prioritization of your time and your energy.
+
+890
+00:57:22,000 --> 00:57:25,370
+如果目标是带着乐趣去尝试，那你要怎么，
+And if the goal is to experiment with joy, then how do you,
+
+891
+00:57:25,370 --> 00:57:27,880
+你需要哪些输入来实现这个？
+what are the inputs that you need for that?
+
+892
+00:57:30,040 --> 00:57:32,569
+但是的，我觉得很多，
+But yeah, I think a lot of the,
+
+893
+00:57:32,569 --> 00:57:37,101
+我觉得 Anthropic 的秘诀在于它的文化，
+I think the secret sauce of Anthropic is the culture
+
+894
+00:57:37,101 --> 00:57:41,000
+以及大家自下而上的工作方式。
+and the bottoms of nature of how people work.
+
+895
+00:57:41,420 --> 00:57:46,960
+还有这种公开地做实验，通过这样做，
+And this like experimenting in public, um, and by doing that,
+
+896
+00:57:46,960 --> 00:57:51,740
+很大程度上就是在想办法把更多人带进来。
+it's very much about how to bring other people along.
+
+897
+00:57:52,500 --> 00:57:54,980
+我觉得这最终会变得非常有价值。
+Um, that ends up being, I think, really valuable.
+
+898
+00:57:55,580 --> 00:57:59,055
+是的，我从所有实验室那里听过太多次了，就是说，
+Yeah, I've heard this so many times from all the labs, just like, no,
+
+899
+00:57:59,055 --> 00:58:01,909
+没有人能确切知道这些东西会被怎么用，
+no one's exactly sure how some of this is going to be used
+
+900
+00:58:01,909 --> 00:58:05,570
+很多时候就是早点把东西放出去，看看大家怎么用。
+and a lot of it is just putting stuff out early, seeing how people use it.
+
+901
+00:58:05,650 --> 00:58:07,868
+看到有哪些可能性，然后利用
+Seeing what's possible and then using
+
+902
+00:58:07,868 --> 00:58:10,410
+这些信息去打造真正能拿去落地的产品。
+that information to build the actual product to lead in.
+
+903
+00:58:10,810 --> 00:58:11,490
+对，对。
+Yeah. Yeah.
+
+904
+00:58:11,530 --> 00:58:16,490
+我很好奇，顺着"让 AI 帮你处理工作和生活"这个话题。
+I'm curious, kind of on this thread of finding ways for AI to help you in your work and life.
+
+905
+00:58:16,610 --> 00:58:21,398
+你最近在工作中有没有什么有意思的方式，用 Claude 来
+Are there any interesting ways you've been using Claude lately in your work as a
+
+906
+00:58:21,398 --> 00:58:24,010
+作为一名 PM 来帮忙？我觉得有很多，比如
+as a PM? I think there's a lot of things with
+
+907
+00:58:24,870 --> 00:58:30,040
+你懂的，Fable，还有 Tag 这类东西。所以呢，
+um, you know, Fable and things like Tag. So there, there,
+
+908
+00:58:30,040 --> 00:58:34,000
+我觉得 Tag 还处在非常早期的阶段。
+I think Tag is in the very like early days.
+
+909
+00:58:34,280 --> 00:58:38,900
+我觉得有意思的是，你会换一种全新的工作范式，
+I think there's something around how you work in a different paradigm of allowing
+
+910
+00:58:38,900 --> 00:58:43,520
+让 agent 自己跑去干活，再把成果和体验带回来给你。
+this agent to go off and work and then bring back product and experiences to you.
+
+911
+00:58:44,160 --> 00:58:48,044
+我觉得有一个方面，虽然不算很新，
+I think one area that it's not more recent,
+
+912
+00:58:48,044 --> 00:58:51,817
+但我经常跟团队提起，
+but one that I bring up a lot with the team,
+
+913
+00:58:51,817 --> 00:58:58,920
+我觉得我们在用 AI 上还能做更多，就是怎么用它变得更
+and I think we could do more on using AI, is just like how to use it to also be more
+
+914
+00:58:59,400 --> 00:59:04,520
+呃，怎么让彼此之间沟通得更好，怎么成为更好的管理者。
+uh, to have better conversations with each other, to be better managers.
+
+915
+00:59:05,520 --> 00:59:08,112
+我，我觉得这不一定只是，
+I, I don't think it's necessarily uh,
+
+916
+00:59:08,112 --> 00:59:13,297
+只是提升我们打造的产品体验的"智商"，我还经常用它
+just about raising the IQ of like experiences we build, but also I use it a lot
+
+917
+00:59:13,297 --> 00:59:19,150
+来做准备，比如怎么在当下把对话谈得更好，
+and actually like prepping for how to have better conversations, um, in the moment,
+
+918
+00:59:19,150 --> 00:59:21,910
+尤其是那些关键对话的时候。
+during, like, crucial conversations.
+
+919
+00:59:22,150 --> 00:59:23,110
+我很喜欢那本书。
+So I love that book.
+
+920
+00:59:23,430 --> 00:59:27,261
+所以我其实做了一个 skill，帮我判断，我是不是
+And so I actually have a skill that helps me figure out, am I having,
+
+921
+00:59:27,261 --> 00:59:30,048
+有没有针对当下的情况，展开到合适的细节层次，
+am I going in the right level of detail given the
+
+922
+00:59:30,048 --> 00:59:33,810
+实际上帮我成为一个更好的管理者，
+the situation at hand and actually helping me be a better manager
+
+923
+00:59:33,810 --> 00:59:35,830
+也更好地支持团队。
+and better supporter for the team.
+
+924
+00:59:36,640 --> 00:59:39,231
+呃，所以对于团队里的管理者，
+Um, so for like managers on the team,
+
+925
+00:59:39,231 --> 00:59:43,864
+这其实是我最近越来越多分享给他们的东西，
+that's actually a thing that I've been sharing more with, with the, uh,
+
+926
+00:59:43,864 --> 00:59:45,120
+分享给我们的管理者。
+with our managers.
+
+927
+00:59:45,280 --> 00:59:48,408
+好，那你到底是怎么用 Claude 来，来，
+So, okay, how, how do you actually use Claude to, to,
+
+928
+00:59:48,408 --> 00:59:53,200
+让自己成为更好的教练的？因为有时候真的很难找到最恰当的措辞。
+to make you a better coach, because it's hard sometimes to find the right perfect words.
+
+929
+00:59:53,480 --> 00:59:56,360
+而模型能给出很多恰到好处的措辞。
+And the model has a lot of perfect and right words and
+
+930
+00:59:57,190 --> 00:59:59,790
+我，我觉得有意思的地方在于，
+I, I think there is something about how
+
+931
+01:00:00,020 --> 01:00:04,540
+哦，它其实能从情商这个角度增强我们，而不只是靠你自己。
+oh, you can actually augment us from like an EQ perspective, in addition to you.
+
+932
+01:00:04,860 --> 01:00:06,380
+天哪，这里面有太多有意思的东西了。
+Oh, man, there's so much interesting stuff there.
+
+933
+01:00:06,420 --> 01:00:09,020
+我理解一下你在做的事，你，你做了一个 skill。
+So just to understand what you're doing there, so you, you built a skill.
+
+934
+01:00:09,100 --> 01:00:11,421
+你相当于在帮 Claude 建立一个 skill，
+You're just like helping Claude build a skill,
+
+935
+01:00:11,421 --> 01:00:13,860
+把《关键对话》里的经验融进去。
+pulling in lessons from Crucial Conversations.
+
+936
+01:00:14,020 --> 01:00:17,420
+就是那本书，它已经了解得够多了，你甚至不用给它内容。
+The book, which it knows enough about, you don't have to even give it the content.
+
+937
+01:00:17,860 --> 01:00:19,985
+然后你用那个 skill 跟 Claude 对话。嘿，
+And then you use that skill to talk to Claude. Hey,
+
+938
+01:00:19,985 --> 01:00:22,940
+我马上要跟一位同事进行一场很难的对话。
+I have this very difficult conversation coming up with a colleague.
+
+939
+01:00:23,590 --> 01:00:26,030
+给我一些怎么处理的建议。对。
+Give me some tips on how to approach it. Yeah.
+
+940
+01:00:26,270 --> 01:00:32,251
+这，这真的很棒，就像是，呃，一对一的，
+And it's, it's a great, uh, it's almost like, uh, coaching, like individualized,
+
+941
+01:00:32,251 --> 01:00:35,945
+个性化的辅导，教你怎么变得更好，
+personalized coaching of just how to make you, and
+
+942
+01:00:35,945 --> 01:00:41,750
+我们一整天要做那么多情境切换，有 Claude 在
+and there's so much context switching that we do all day, and having like Claude
+
+943
+01:00:41,950 --> 01:00:43,670
+帮我搭档、帮我一把。
+help me pair and help me.
+
+944
+01:00:44,160 --> 01:00:49,235
+也许有时候我最后并没有采纳 Claude 的建议，
+And maybe there are times where I end up not using suggestions from Claude,
+
+945
+01:00:49,235 --> 01:00:54,720
+但它其实在启发思路、头脑风暴上帮了很大忙。
+but it actually ends up being very helpful for just coming up and brainstorming.
+
+946
+01:00:55,120 --> 01:00:58,480
+我对别人反应的判断方式对不对？
+Am I thinking about reactions in the right way?
+
+947
+01:00:58,880 --> 01:01:05,080
+我怎么才能更快深入、更快建立信任、更直接一些？
+How do I actually go a bit deeper faster, build trust faster, be more direct?
+
+948
+01:01:05,620 --> 01:01:07,980
+对。天哪，我这里有好多问题，太有意思了。
+Yeah. Man, I have so many questions here. This is so interesting.
+
+949
+01:01:08,300 --> 01:01:12,294
+呃，一个担忧是，大家会开始像 AI 那样说话，
+Uh, one is just like there's concern people are gonna start talking the way AI
+
+950
+01:01:12,294 --> 01:01:14,540
+因为他们跟 AI 聊得太多了。
+writes because they're talking to AI so much.
+
+951
+01:01:14,540 --> 01:01:17,220
+会变成那种，Dianne，不是这样，而是那样。
+And it's gonna be like, Dianne, it's not this, but it's that.
+
+952
+01:01:17,700 --> 01:01:20,161
+呃，我知道你没有这样，但这就是，你懂的，
+Uh, I know that you're not doing that, but that's all, you know,
+
+953
+01:01:20,161 --> 01:01:21,060
+大家会有的担忧。
+a concern people have.
+
+954
+01:01:21,660 --> 01:01:23,980
+那我就问问这个吧。你会担心这个吗？
+Let me just ask about that, I guess. Do you fear this?
+
+955
+01:01:24,180 --> 01:01:26,139
+就是那种，你懂的，"脑子退化"，
+There's this, you know, brain rot,
+
+956
+01:01:26,139 --> 01:01:30,056
+大家说的能力萎缩，就是现在你太依赖 AI，
+atrophy stuff people talk about, where you're just so reliant on AI now,
+
+957
+01:01:30,056 --> 01:01:32,757
+我们就不再学习、不再思考，你懂的，
+and we stop learning and thinking and, you know,
+
+958
+01:01:32,757 --> 01:01:36,066
+过度依赖 AI。你怎么看？你离它这么近，
+overrelying on AI. Thoughts on that, being so close to it and being
+
+959
+01:01:36,066 --> 01:01:38,700
+又一直和 AI 深度结合。很多
+so integrated with with AI constantly. A lot of
+
+960
+01:01:38,740 --> 01:01:42,620
+对我个人来说，思考过程和写作过程其实是绑在一起的。
+actually thinking process and writing process are tied together for me personally.
+
+961
+01:01:43,140 --> 01:01:49,940
+所以我觉得有些场景我会用 Claude 来增强我的思考。
+And so I think there are ways where I use Claude to augment my thinking.
+
+962
+01:01:50,430 --> 01:01:53,865
+但我想确保的是，可能你说的也是这个意思，
+But what I want to make sure, and maybe this is what you're describing,
+
+963
+01:01:53,865 --> 01:01:56,470
+那就是 Claude 不会完全替我思考。
+is Claude doesn't take over all of my thinking for me.
+
+964
+01:01:57,310 --> 01:02:00,563
+所以我觉得要看情况，
+And so I think depending on the situation,
+
+965
+01:02:00,563 --> 01:02:06,327
+取决于我在某个场景里想保留多少个人判断，
+depending on how much more personal judgment I want to have in a situation,
+
+966
+01:02:06,327 --> 01:02:12,090
+我可能会先形成自己的观点，再和 Claude 一起推进。
+I might come up with my own POV first and then work with Claude through that.
+
+967
+01:02:12,770 --> 01:02:19,170
+并且确保我全程保持自己的思路和语气。
+Um, and making sure that like I maintain my sense and tone throughout.
+
+968
+01:02:19,770 --> 01:02:22,519
+我觉得还有一些别的事情，比如各种进展汇报，对吧？
+I think there are then other things like updates, right?
+
+969
+01:02:22,519 --> 01:02:24,450
+我们有每月业务回顾。
+We have like monthly business reviews.
+
+970
+01:02:25,130 --> 01:02:28,210
+这种情况下，就更多是我在把关。
+And then in those cases, it's much more I watch.
+
+971
+01:02:28,290 --> 01:02:32,091
+你希望它是标准化的，我更希望它能把
+You want it to be standard and I want it to be much more like it gets a Chris
+
+972
+01:02:32,091 --> 01:02:35,828
+信息以正确的方式提炼出来，也许我有一个 Skill，
+crystallized information in the right way and maybe and I have a skill
+
+973
+01:02:35,828 --> 01:02:39,050
+我们在不断增强和改进这个 Skill。
+and like we're augmenting and improving our skill for that.
+
+974
+01:02:39,050 --> 01:02:44,201
+但我想达到一种状态，就是每月业务回顾里，
+But I want to get to a place where like the Monthly Business Review,
+
+975
+01:02:44,201 --> 01:02:50,850
+写作这件事的价值，可能远远比不上思考本身。
+the writing of that is potentially asymmetrically less valuable than the thinking.
+
+976
+01:02:51,290 --> 01:02:54,632
+所以我怎么才能把写作这块完全交给 Claude，
+And so how do I get that piece delegated to Claude fully
+
+977
+01:02:54,632 --> 01:02:58,420
+而我更多是这些信息的审阅者和核验者。
+and I'm more of a reviewer and a verifier of that information.
+
+978
+01:02:58,580 --> 01:03:00,080
+所以我觉得这要看，
+So I think it depends on, like,
+
+979
+01:03:00,080 --> 01:03:03,200
+你用 Claude 做什么，你想传达什么。
+what you're using Claude for and what you're trying to convey.
+
+980
+01:03:03,240 --> 01:03:10,720
+以及把更多东西交给 Claude，是不是有不成比例的价值？
+And like is there is there asymmetrical value in in delegating more to Claude?
+
+981
+01:03:11,360 --> 01:03:15,416
+我也听到了，第一个建议特别好，就是先思考，
+What I'm also hearing, the first tip is really great, which was think 1st,
+
+982
+01:03:15,416 --> 01:03:17,943
+先有一个观点，然后把 Claude
+have a point of view and then kind of use Claude
+
+983
+01:03:17,943 --> 01:03:21,800
+当成一个陪练，帮你完善想法、对想法提出反对。
+as a sparring partner almost to evolve the idea, push back on the idea.
+
+984
+01:03:22,290 --> 01:03:23,210
+对，对。
+Yeah. Yeah.
+
+985
+01:03:23,410 --> 01:03:27,875
+我觉得这正是我们的 alignment 研究
+And I think this is where things like actually our alignment research
+
+986
+01:03:27,875 --> 01:03:32,494
+和安全研究派上用场的地方，因为你不想要一个
+and safety research is helpful because it what you don't want is like a AI
+
+987
+01:03:32,494 --> 01:03:34,650
+只会附和你的 AI，对吧？
+that just agrees with you, right?
+
+988
+01:03:34,850 --> 01:03:38,264
+你想要的是这项技术真正能增强你、帮你成长，
+What you want is this technology to actually augment and grow
+
+989
+01:03:38,264 --> 01:03:41,410
+帮你得到更好的结果。所以有时候，
+and like get to a better outcome. And so sometimes, it's.
+
+990
+01:03:42,910 --> 01:03:46,910
+让 Claude 提出反对会让我变得更好，所以这很棒。
+Having Claude push back makes me better and so that's great.
+
+991
+01:03:47,630 --> 01:03:52,870
+就像同事一样，当我的想法还不成熟时，我希望有人能提出反对。
+Like a coworker, I want somebody to push back when my ideas are not fully formed.
+
+992
+01:03:53,190 --> 01:03:54,270
+我想多聊聊这个。
+I want to hear more about that.
+
+993
+01:03:54,350 --> 01:03:57,295
+我听说 Ben Mann 上播客的时候，
+I've heard that when Ben Man was on the podcast,
+
+994
+01:03:57,295 --> 01:04:00,996
+他谈到了内置在 Claude 里的“宪法”，
+he talked about the Constitution that is built into Claude
+
+995
+01:04:00,996 --> 01:04:06,132
+以及这些看似违反直觉的、对安全和 alignment 的关注，就像你说的，
+and how unintuitively the work and the focus on safety and alignment, as you said,
+
+996
+01:04:06,132 --> 01:04:10,890
+还有这套描述 Claude 该如何思考和运作的“宪法”。
+and this constitution that describes how Claude should think and operate.
+
+997
+01:04:11,210 --> 01:04:15,248
+你会以为这会限制 Claude 的能力，
+That actually you would think that would limit the abilities of Claude
+
+998
+01:04:15,248 --> 01:04:17,370
+让它变得没那么有趣。
+and make it less fun and interesting.
+
+999
+01:04:18,050 --> 01:04:21,364
+但恰恰相反。Claude 是最有意思的“人格”。
+It's exactly the opposite. Claude is the most interesting personality.
+
+1000
+01:04:21,364 --> 01:04:22,450
+我经常听到这种说法。
+I hear that constantly.
+
+1001
+01:04:22,570 --> 01:04:25,810
+就是说，我更喜欢跟它聊，有个很有名的例子，
+It's just like, I much prefer talking to, like, open claw, famously.
+
+1002
+01:04:26,630 --> 01:04:30,550
+有个产品是基于 Claude 做的，后来大家被迫换掉，这个我们就不展开了。
+Was built on Claude and then people were forced to switch. We won't get into it.
+
+1003
+01:04:30,710 --> 01:04:33,230
+大家被迫换成 GPT，然后就说，这太糟了。
+We're forced to switch to JPT and they're like, this is so bad.
+
+1004
+01:04:33,430 --> 01:04:35,390
+这不是我以前习惯聊天的那个对象。
+This is not who I'm used to talking to.
+
+1005
+01:04:35,910 --> 01:04:38,737
+所以我觉得这是个特别有意思的点，我想确保我们
+Uh, so that is, I think, a really interesting point I just want to make sure we
+
+1006
+01:04:38,737 --> 01:04:39,590
+花点时间聊一聊。
+spend a little time on.
+
+1007
+01:04:40,190 --> 01:04:43,999
+为什么会这样，就是这种对 alignment、安全，
+Why is it, why is that the case, just this focus on alignment, safety,
+
+1008
+01:04:43,999 --> 01:04:47,942
+以及这套清晰“宪法”的关注，为什么会让 Claude 变得更好，
+having this clear constitution, why does that make Claude better and,
+
+1009
+01:04:47,942 --> 01:04:51,417
+也更有意思？同时为了让 Claude
+and more interesting to talk to you also in order to make Claude
+
+1010
+01:04:51,417 --> 01:04:54,090
+尽可能地智能、尽可能地有能力。
+as like intelligent and as capable as possible.
+
+1011
+01:04:54,810 --> 01:05:01,553
+让 Claude 能够在合适的点上提出反对，而不只是
+Being able to have Claude actually push back in the right points and then add,
+
+1012
+01:05:01,553 --> 01:05:07,770
+简单说是或否，这其实能帮你得出更好的结论。
+it's like a yes or no and actually helps you come to a better conclusion.
+
+1013
+01:05:08,650 --> 01:05:11,009
+所以我用 Claude 帮我处理过一些事情，比如，
+So I've used Claude to help with things like,
+
+1014
+01:05:11,009 --> 01:05:14,770
+我们对下一版 Claude 的定价决策是不是对的？
+are we making the right pricing decision on the next version of Claude?
+
+1015
+01:05:15,210 --> 01:05:19,169
+这有点“套娃”，但用一个研究版的 Opus，
+It's a little bit meta, but using a research version of Opus,
+
+1016
+01:05:19,169 --> 01:05:21,941
+让它去想清楚自己该怎么定价，
+asking it to figure out how it should price
+
+1017
+01:05:21,941 --> 01:05:26,930
+最终能得出更好的结果，这才是目标。
+and being able to come out with better outcomes is a goal at the end of the day.
+
+1018
+01:05:27,570 --> 01:05:32,708
+所以让 AI 不只是一个助手，不只是一个执行者，
+And so having AI not just be an assistant, not just be a doer,
+
+1019
+01:05:32,708 --> 01:05:39,000
+也不只是被派活，而是能判断自己做的事对不对。
+not and being delegated task by figuring out is it doing the right thing.
+
+1020
+01:05:39,280 --> 01:05:43,440
+这其实和“知道什么时候该提出反对”是密不可分的，对吧？
+That's actually very integrated with knowing when to push back, right?
+
+1021
+01:05:44,040 --> 01:05:46,760
+这也是判断你什么时候该主动出击的一部分。
+That's part of knowing when you should be proactive.
+
+1022
+01:05:47,280 --> 01:05:52,200
+主动性不一定是去做你安排好要做的事。
+Proactivity is not necessarily always doing a thing that you are scheduled to do.
+
+1023
+01:05:52,660 --> 01:05:55,180
+而是知道什么时候该提出一个新想法。
+It is knowing when to come up with a new idea.
+
+1024
+01:05:55,340 --> 01:05:58,857
+所以为了让 Claude 更有用，
+And so in order for Claude to be more useful,
+
+1025
+01:05:58,857 --> 01:06:03,840
+大方向必须是让它知道什么时候该提出反对。
+the general approach has to be that it knows when to push back.
+
+1026
+01:06:03,920 --> 01:06:09,160
+这是这些模型整体特质里很核心的一部分。
+It's a core part of the characteristics together, uh, of the models.
+
+1027
+01:06:09,840 --> 01:06:10,680
+这太有意思了。
+That is so interesting.
+
+1028
+01:06:10,840 --> 01:06:13,565
+有意思的是，很大一部分原因，
+It's so interesting that that is what a big part of it,
+
+1029
+01:06:13,565 --> 01:06:17,405
+就是它没那么一味顺从，这几乎正是让它更好、更有用的原因，
+like it being less compliant is almost what makes it better and more useful
+
+1030
+01:06:17,405 --> 01:06:18,520
+因为我们需要这个。
+because we need that.
+
+1031
+01:06:18,960 --> 01:06:22,040
+我遇到过很多人说，嘿，AI 告诉我我是对的。
+Like, I've had so many people where they're like, hey, like, AI told me I was right.
+
+1032
+01:06:22,600 --> 01:06:23,800
+结果，其实并没有，我倒是希望是这样。
+And, like, no, I wish.
+
+1033
+01:06:24,320 --> 01:06:26,760
+是啊，而且它对别人也是这样。是的。
+Yeah, and, and, and to other people. Yeah.
+
+1034
+01:06:26,760 --> 01:06:29,568
+这又回到我们之前讲的关于思考的观点，对吧，
+And it comes back to our earlier point around thinking, right,
+
+1035
+01:06:29,568 --> 01:06:31,080
+你要如何保护自己的思考？
+how do you protect your thinking?
+
+1036
+01:06:31,920 --> 01:06:35,261
+如果你有一个能当思考伙伴的 AI，
+Um, if you have a AI that can be a thinking partner,
+
+1037
+01:06:35,261 --> 01:06:38,521
+思考伙伴不会只是一味认同你，
+a thinking partner doesn't just agree with you,
+
+1038
+01:06:38,521 --> 01:06:42,840
+它应该给你增益，到最后你应该带着收获离开。
+it should add to you and you should come away at the end of the day.
+
+1039
+01:06:43,880 --> 01:06:48,912
+因为和 Claude 一起工作而有了更好的想法。这才应该是核心目标，
+Having better ideas because you worked with Claude. That should be the hero goal,
+
+1040
+01:06:48,912 --> 01:06:51,280
+而不只是把你的想法改进 10%。
+not just making your ideas 10% better.
+
+1041
+01:06:52,080 --> 01:06:54,600
+是啊，我很喜欢这个。以前大家总说要想着做到 10 倍。
+Yeah, I love this. Since like used to be think 10 x.
+
+1042
+01:06:54,760 --> 01:06:56,501
+以前那种方式，你懂的，
+I used to be the the way, you know,
+
+1043
+01:06:56,501 --> 01:06:59,080
+创始人会推动大家：如果我们把这个做到 10 倍会怎样？
+founders push people like what if we 10 x of this?
+
+1044
+01:06:59,080 --> 01:07:01,288
+而我很喜欢我一直听到的说法，就是，
+And I love what I keep hearing is like, it's like,
+
+1045
+01:07:01,288 --> 01:07:03,000
+我们怎么从这个想法出发做到 1000 倍？
+how do we go thousand x from this idea?
+
+1046
+01:07:03,080 --> 01:07:05,410
+这件事最有野心的版本会是什么样？
+What is the most ambitious version of this?
+
+1047
+01:07:05,690 --> 01:07:08,887
+我想回到刚才我们聊到的一件事，那时我一直在想，
+I want to come back to something that I was thinking about as we were talking about,
+
+1048
+01:07:08,887 --> 01:07:10,250
+就是持续和 Claude 对话这件事。
+uh, talking to Claude constantly.
+
+1049
+01:07:10,730 --> 01:07:14,087
+现在，AI 写的东西还是很容易一眼看出来，
+Um, it's very clear when AI has written something still,
+
+1050
+01:07:14,087 --> 01:07:16,730
+有意思的是，它是一个大语言模型。
+it's funny that it's a large language model.
+
+1051
+01:07:16,850 --> 01:07:19,170
+你会觉得，怎么说它都应该很擅长写作。
+You think of all things, it would be very good at writing.
+
+1052
+01:07:19,770 --> 01:07:24,190
+但有意思的是，就是没有哪个 AI 真的很擅长写作。总是很明显。
+And interestingly, just no AI is very good at writing. It's always very clear.
+
+1053
+01:07:24,270 --> 01:07:25,390
+一看就是 AI 写的。
+This was AI written.
+
+1054
+01:07:26,510 --> 01:07:31,600
+你觉得我们会走到那样一步，让人看不出这是 AI 写的吗？
+Do you think we'll get to a place where we will not know this was AI?
+
+1055
+01:07:32,080 --> 01:07:34,928
+我觉得这取决于，
+I think it depends on what's the, uh,
+
+1056
+01:07:34,928 --> 01:07:39,200
+你通过“知不知道”想要达成的目标是什么。
+goal that you're looking to achieve by knowing or not.
+
+1057
+01:07:39,400 --> 01:07:41,240
+是啊，评测标准是什么？
+Yeah. Uh, what's the eval?
+
+1058
+01:07:41,920 --> 01:07:44,093
+其实我确实觉得，
+Um, I actually do think there's more
+
+1059
+01:07:44,093 --> 01:07:47,280
+在让 Claude 写得更好这方面，我们还能做更多。
+that we could be doing on making Claude write better.
+
+1060
+01:07:47,400 --> 01:07:50,040
+其实现在有很积极的投入，
+There's actually very active efforts, um,
+
+1061
+01:07:50,040 --> 01:07:55,320
+在我团队里，也在研究那边，就是要整体上让 Claude 写得更好。
+on on my team and on the research side about making Claude write better just generally.
+
+1062
+01:07:56,360 --> 01:08:06,000
+我觉得应该能看清楚一个想法是由谁主导的，是你 Lenny，还是我 Dianne。
+I think it should be clear where an idea is being LED by you or by you, Lenny, or me, Diane.
+
+1063
+01:08:06,720 --> 01:08:11,043
+我觉得这真的取决于那篇写作的目标是什么，
+I think it really depends on what's the goal of that writing,
+
+1064
+01:08:11,043 --> 01:08:14,760
+比如像月度业务回顾这样的东西。
+like for something like a monthly business review.
+
+1065
+01:08:15,700 --> 01:08:19,980
+我其实很乐意让 Claude 从头到尾把它写出来。
+I would actually love to have that end to end be written by Claude.
+
+1066
+01:08:21,140 --> 01:08:24,460
+而且显然，并不是要让它读起来像是人写的。
+Uh, and obviously, and not to make it feel like it was written by a human.
+
+1067
+01:08:24,620 --> 01:08:25,860
+你提的这个点太有意思了。
+It's such an interesting point you're making.
+
+1068
+01:08:25,900 --> 01:08:29,180
+就是，对我们来说，知道它是 AI 写的，是不是反而更好？
+Like, is it actually better for us to know that it's AI versus that?
+
+1069
+01:08:29,660 --> 01:08:36,125
+是啊，不过，也许换个角度看，重点更多在于，
+Yeah, but, but it's, it's, um, but it's also for maybe the lens is more around like
+
+1070
+01:08:36,125 --> 01:08:39,020
+可验证性，或者说是谁在做验证。
+verifiability or who's verifying.
+
+1071
+01:08:40,180 --> 01:08:42,660
+对输出结果，对吧？就是谁来拍板确认？
+The output, right? Like who's signing off?
+
+1072
+01:08:43,340 --> 01:08:46,740
+也许重点不在于谁在写，而在于谁在验证、谁来拍板。
+Uh, maybe less around who's writing, but who's verifying who's signing off.
+
+1073
+01:08:47,100 --> 01:08:51,060
+这反而变得比谁在写更重要。
+That becomes like more what matters than who's writing it.
+
+1074
+01:08:52,260 --> 01:08:55,420
+为什么？你觉得 AI 为什么不擅长写作？
+Why? Why do you think AI is not great at writing?
+
+1075
+01:08:56,220 --> 01:09:00,920
+我的猜测是，它学过人类历史上所有最优秀的写作。
+Like, my guess is it has studied all of the best writing in all of humanity.
+
+1076
+01:09:01,440 --> 01:09:03,880
+它已经搞清楚了：这就是最好的写法。
+It's figured out, here's the best way to write.
+
+1077
+01:09:03,920 --> 01:09:07,840
+而现在，写作的方式其实就那么几种。
+And now that we and it's just, there's only so many ways to, to write.
+
+1078
+01:09:07,920 --> 01:09:12,640
+所以我们就认出来了，好吧，这就是 AI 的套路，它有这些固定的写法。
+And so we've just recognized, okay, this is what AI does. It has these tropes.
+
+1079
+01:09:13,280 --> 01:09:14,962
+这是核心原因吗？还是说有别的东西，
+Is that the core of it? Is there something else
+
+1080
+01:09:14,962 --> 01:09:16,600
+阻碍了它成为一个优秀的写作者？
+that's keeping it from being a great writer?
+
+1081
+01:09:17,160 --> 01:09:19,261
+讽刺的是，作为一个大语言模型，
+Ironically, being a large language model, of all things,
+
+1082
+01:09:19,261 --> 01:09:20,880
+你会以为它应该特别擅长语言。
+you think you'd be really great at language.
+
+1083
+01:09:21,330 --> 01:09:23,646
+我觉得部分原因也在于，
+I think part of it is also, uh,
+
+1084
+01:09:23,646 --> 01:09:30,209
+我们需要在训练改进上投入更多，让 AI 持续在
+we need to invest more in training improvements to make AI continuously strong on
+
+1085
+01:09:30,209 --> 01:09:31,850
+写作这类领域保持强势。
+areas like writing.
+
+1086
+01:09:32,690 --> 01:09:34,536
+嗯，我觉得还有就是，
+Um, I think it's also you know,
+
+1087
+01:09:34,536 --> 01:09:38,892
+这项技术是参差不齐的，就像我们提到的，所以有时候
+like the technology is jagged edge like like we mentioned so sometimes
+
+1088
+01:09:38,892 --> 01:09:42,437
+当模型擅长写作但不够 agentic 时，我们的
+when the models were good at writing but not agentic, our,
+
+1089
+01:09:42,437 --> 01:09:47,015
+我们的思路是怎么让模型更 agentic、或者调用正确的工具。
+our thesis is how do we make the models more agentic or call the right tools.
+
+1090
+01:09:47,015 --> 01:09:49,230
+现在这方面改善了一些，
+Now that that's improved a bit then.
+
+1091
+01:09:49,270 --> 01:09:53,710
+那么，现在这些其他领域反而成了更明显的短板。
+It's, well, now these other areas actually become more of the rough edges.
+
+1092
+01:09:54,190 --> 01:09:59,052
+所以我觉得，在写作上我们正处于这样一个时刻，
+And so I think we're in one of those moments worth writing where, uh,
+
+1093
+01:09:59,052 --> 01:10:04,696
+我们需要真正去聚焦、优先训练模型，让它
+we need to actually just focus and prioritize on training the models to be like
+
+1094
+01:10:04,696 --> 01:10:09,646
+在这个领域做得很出色，而这对我们来说是一个非常活跃的方向。
+great at this area and like that is an active a very active area for us.
+
+1095
+01:10:09,646 --> 01:10:11,990
+就像你说的，挺有意思的，好。
+So fun like you mentioned, okay.
+
+1096
+01:10:12,030 --> 01:10:13,230
+我很高兴，我很高兴。
+I'm glad. I'm glad.
+
+1097
+01:10:13,230 --> 01:10:16,047
+而且，等 AI 好到一定程度会很有意思，我们会想，
+And also, uh, it's gonna be interesting once AI is so good, we're like,
+
+1098
+01:10:16,047 --> 01:10:18,087
+我不知道这是谁写的，但就像你说的，
+I don't know who wrote that, but, um, to your point,
+
+1099
+01:10:18,087 --> 01:10:20,030
+有时候我们其实想知道这是 AI 写的。
+sometimes we actually want to know that it's AI.
+
+1100
+01:10:20,190 --> 01:10:21,830
+这太有意思了，我从没这么想过。
+That's really interesting. I never thought of it that way.
+
+1101
+01:10:22,550 --> 01:10:26,025
+另一个有趣的地方是，有个喜剧演员开玩笑说，
+The other interesting part of this is that there's that comedian who was joking
+
+1102
+01:10:26,025 --> 01:10:29,500
+我们在飞机上，Wi-Fi 断了，我们就想，搞什么？
+that we're like on a plane and the Wi Fi is down and we're just like, what the hell?
+
+1103
+01:10:29,620 --> 01:10:31,040
+Wi-Fi，为什么在这架飞机上用不了？
+The Wi-Fi, why is not working on this plane?
+
+1104
+01:10:31,200 --> 01:10:33,713
+太糟了，你怎么敢，你正待在
+The socks, how dare you when you're like in a,
+
+1105
+01:10:33,713 --> 01:10:36,227
+一个在天上像鸟一样飞的铁管子里，
+in a tube in the sky flying like a bird and, uh,
+
+1106
+01:10:36,227 --> 01:10:39,080
+你怎么还敢抱怨 Wi-Fi 不能用？
+how dare you complain that the Wi-Fi doesn't work?
+
+1107
+01:10:39,280 --> 01:10:43,621
+就像你说的，已经有这么多进步、这么强的能力，
+Like your point is there's so much advancement and so much power, uh,
+
+1108
+01:10:43,621 --> 01:10:44,840
+我们没法把所有事都搞定。
+we can't fix it all.
+
+1109
+01:10:44,840 --> 01:10:47,520
+我们没法让所有东西都做到最好。
+We can't make it all work the best, uh, possible.
+
+1110
+01:10:47,560 --> 01:10:50,360
+所以基本上，AI 写作一直不是优先项，
+And so, uh, basically AI writing has been not the priority
+
+1111
+01:10:50,360 --> 01:10:53,160
+但感觉现在正有更多投入进来。
+and feels like there's more investment happening there.
+
+1112
+01:10:53,530 --> 01:10:56,570
+是的，我觉得语气和性格是一个优先项。
+Yeah, I think like tone and character is a priority.
+
+1113
+01:10:56,650 --> 01:11:01,370
+我觉得这项技术的进步是一个持续推进的过程。
+I think it's this advancement of the technology is a work in progress.
+
+1114
+01:11:01,970 --> 01:11:09,210
+我们看到 agentic 行为出现了一次飞跃、一次涌现。
+And so we made, we, we see a leap or emergence of like a jump in agentic behaviors.
+
+1115
+01:11:09,770 --> 01:11:11,930
+这成了一种新常态。
+And so that is a new normal.
+
+1116
+01:11:12,530 --> 01:11:16,330
+而这些其他能力需要继续提升，对。
+And then these other capabilities need to continue like improving. Yeah.
+
+1117
+01:11:16,530 --> 01:11:21,642
+我觉得一旦我们改进了写作、还有语气和性格，
+And I think once we improve, let's say, writing and, like, tone and character,
+
+1118
+01:11:21,642 --> 01:11:26,360
+我们可能又会问，怎么让 Claude 更主动一些？
+we probably will say, like, how do we have Claude be even more proactive?
+
+1119
+01:11:26,600 --> 01:11:30,620
+主动性是一个机会，这也是人的天性，
+Like, proactivity is an opportunity, and that's human nature. Like,
+
+1120
+01:11:30,620 --> 01:11:32,560
+我们想让自己变得更好。
+we want to make ourselves better.
+
+1121
+01:11:32,680 --> 01:11:34,240
+我们也想让这项技术变得更好。
+We want to make this technology better.
+
+1122
+01:11:35,440 --> 01:11:39,200
+所以，我觉得我们把这种心态用到了 AI 上，这是对的。
+So, yeah, I think we're applying it to AI, which is the right thing.
+
+1123
+01:11:39,360 --> 01:11:40,480
+我们应该让它变得更好。
+We should be making it better.
+
+1124
+01:11:41,180 --> 01:11:45,427
+我想问你几个问题，我喜欢问那些身处
+I want to ask you a couple questions I like to ask folks working at the very center
+
+1125
+01:11:45,427 --> 01:11:47,100
+未来正中心的人。
+of the future of that is coming.
+
+1126
+01:11:48,260 --> 01:11:54,220
+第一个是，你觉得未来这些年里，人脑在哪些方面会持续最有价值？
+One is, where do you think human brains will continue to be most valuable over the years?
+
+1127
+01:11:54,460 --> 01:11:58,778
+我知道 Anthropic 的使命和愿景是我们会实现 AGI，
+I know Anthropic's mission and and vision is we'll reach a GI,
+
+1128
+01:11:58,778 --> 01:12:00,640
+一种超级智能。
+a super for intelligence.
+
+1129
+01:12:00,680 --> 01:12:03,694
+所以在很远的未来，也许哪儿都没有，但在我们到达那之前，
+So in the future, maybe nowhere, but before we get there,
+
+1130
+01:12:03,694 --> 01:12:07,926
+在我们逼近那个时间线的过程中，你觉得人脑会在哪些方面
+where do you think human brains will continue to be most valuable as we approach
+
+1131
+01:12:07,926 --> 01:12:09,080
+持续最有价值？
+that, that timeline?
+
+1132
+01:12:09,800 --> 01:12:16,572
+我们开始讨论让 Claude 和模型在判断力上做得更好，
+We started to talk about making Claude and models better at judgment, um,
+
+1133
+01:12:16,572 --> 01:12:19,680
+尤其是在过去一年左右。
+especially in the last year or so.
+
+1134
+01:12:20,120 --> 01:12:25,970
+我觉得判断力是其中之一，它是大量细微差别的积累，
+I think judgment is one and is an area where it's accumulation of so much nuance
+
+1135
+01:12:25,970 --> 01:12:32,360
+也是大量经验的积累，而这些系统的经历还远不如人类多。
+and so much experience and these systems haven't experienced as much as humans have.
+
+1136
+01:12:32,680 --> 01:12:38,097
+所以我觉得这种来之不易的判断力，是一个属于
+And so I think that hard earned like judgment is a, a, a area for,
+
+1137
+01:12:38,097 --> 01:12:45,180
+产品负责人、乃至所有人的领域，会持续非常关键。
+for product leaders and just generally, um, will continue to be really critical.
+
+1138
+01:12:45,780 --> 01:12:51,038
+AI 能做的东西太多了，那哪些是像
+There are so many things AIS can build, which one are the things that, you know,
+
+1139
+01:12:51,038 --> 01:12:52,980
+Labs 这样的组织应该去做的？
+an org like lab should build?
+
+1140
+01:12:53,220 --> 01:12:56,660
+对吧？这里面很多都需要人类判断力、需要坚持。
+Right? A lot of that requires like human judgment, persistence.
+
+1141
+01:12:57,420 --> 01:12:58,500
+所以是主动性。
+So proactivity.
+
+1142
+01:12:58,660 --> 01:13:02,483
+这些都是超越通用能力的特质，
+These are all traits that are beyond just general capabilities,
+
+1143
+01:13:02,483 --> 01:13:07,226
+而是那种水平的人所具备的行为和特征，比如
+but just behaviors and characteristics of, like, people at that level of, like,
+
+1144
+01:13:07,226 --> 01:13:09,350
+你如何找到最佳解决方案？
+how do you get to the best solutions?
+
+1145
+01:13:09,510 --> 01:13:11,710
+你如何打造最好的体验？
+How do you create the best experiences?
+
+1146
+01:13:11,910 --> 01:13:17,570
+所以我觉得这类特质才是真正关键的特质，
+So I think those types of traits are actually the tactile traits
+
+1147
+01:13:17,570 --> 01:13:23,550
+我认为它们会一直重要下去。我觉得还有。
+that I think will be continue to be important. I think there is also.
+
+1148
+01:13:26,020 --> 01:13:29,740
+也还有很多能力和专业领域的专长。
+Still a lot of like capabilities and subject matter expertise as well.
+
+1149
+01:13:30,000 --> 01:13:35,753
+我觉得，软件工程已经被 AI 彻底改变了。
+I think, you know, software engineering has been really transformed by AI.
+
+1150
+01:13:35,753 --> 01:13:39,680
+我觉得还有像生物学、生命科学这样的领域。
+I think there's areas like biology, life sciences.
+
+1151
+01:13:40,000 --> 01:13:44,980
+这些领域我们还只是处在指数曲线的起点，
+These are all things that we're just kind of at like the foot of the exponential on,
+
+1152
+01:13:44,980 --> 01:13:49,960
+而软件工程这类，我们在某些方面已经上了指数曲线。
+like maybe software engineering, we're on the exponential on some of these area.
+
+1153
+01:13:50,160 --> 01:13:52,000
+其他领域，我们还没到那一步。
+Other areas, we're not quite there yet.
+
+1154
+01:13:52,550 --> 01:13:57,461
+所以，你会看到我们推出像 Claude science 这样的东西，
+And so, um, I think you're seeing us ship things like cloud science,
+
+1155
+01:13:57,461 --> 01:14:01,759
+在这些领域投入，因为这些领域，嗯，
+investing in these areas because those are areas that, um,
+
+1156
+01:14:01,759 --> 01:14:05,793
+我觉得就是把这项技术带给社会，
+I think it's just bring the, this technology to society
+
+1157
+01:14:05,793 --> 01:14:08,950
+并给社会带来积极的益处。
+and having a positive benefit for society.
+
+1158
+01:14:09,190 --> 01:14:10,790
+所以我觉得那里还有很大的空间。
+So I think there's a lot more to go there.
+
+1159
+01:14:11,310 --> 01:14:15,546
+我想问的另一个问题是，作为一个有孩子的人，
+Another question I want to ask is, um, as someone with kids,
+
+1160
+01:14:15,546 --> 01:14:21,424
+你怎么看待你在鼓励他们学习什么，或者你觉得你会
+how do you think about what you are encouraging them to learn or do you think you're
+
+1161
+01:14:21,424 --> 01:14:27,130
+引导他们在我们正进入的这个疯狂新世界里取得成功？
+going to nudge them to be successful in this wild new world that we're entering?
+
+1162
+01:14:27,530 --> 01:14:32,410
+我其实觉得，很多是你我成长过程中一样的特质，也就是。
+I actually think it's a lot of the same traits like you and I probably grew up with, which is.
+
+1163
+01:14:33,440 --> 01:14:38,699
+对学习的好奇心、坚持、相信自己内心的声音，
+Curiosity for learning, persistence, believing in your own inner voice,
+
+1164
+01:14:38,699 --> 01:14:42,600
+培养并相信自己内心的声音。
+developing and then believing in your own inner voice.
+
+1165
+01:14:43,440 --> 01:14:46,240
+比如我有一个四岁的孩子，还有一个八岁的孩子。
+Like I have a four year old, I have a eight year old.
+
+1166
+01:14:46,640 --> 01:14:51,768
+帮助他们是我们的责任，呃，帮他们培养内心的声音是我的责任，
+It's on us to help, uh, it's on me to help them develop their inner voice
+
+1167
+01:14:51,768 --> 01:14:56,984
+无论是有自己的主见、对我表明立场，对吧，
+and whether that's being opinionated and taking a stance to me, right,
+
+1168
+01:14:56,984 --> 01:14:59,990
+培养这一点、鼓励这一点。
+and developing that, encouraging that.
+
+1169
+01:15:00,760 --> 01:15:03,945
+我觉得这类能力才是那些，嗯，
+I think that those types of skills that are things that, um,
+
+1170
+01:15:03,945 --> 01:15:05,440
+在未来重要的东西。
+is important in the future.
+
+1171
+01:15:05,840 --> 01:15:09,720
+还有让他们拥有自己独特的声音。
+And I like having their own individual voice.
+
+1172
+01:15:10,440 --> 01:15:11,240
+那太有意思了。
+That is so interesting.
+
+1173
+01:15:11,280 --> 01:15:13,330
+这和你之前的回答太相关了，
+It's so related to the answer you had
+
+1174
+01:15:13,330 --> 01:15:17,497
+就是被问到如何避免大脑退化、避免过度依赖 AI 时，
+when asked about how to avoid a brain rot essentially and overlying on AI,
+
+1175
+01:15:17,497 --> 01:15:21,801
+也就是在过度依赖 AI 之前，
+which is just keep focused on your own point of view and your own perspective
+
+1176
+01:15:21,801 --> 01:15:26,310
+保持专注于自己的观点和视角。还有你描述的这种培养的想法。
+before you overline AI. And just this idea you're describing of building that.
+
+1177
+01:15:26,310 --> 01:15:27,670
+在孩子身上，真的非常重要。
+In kids is, is really important.
+
+1178
+01:15:28,230 --> 01:15:29,150
+呃，那太有意思了。
+Uh, that is so interesting.
+
+1179
+01:15:29,150 --> 01:15:32,796
+我很喜欢这一切是如何联系起来的，判断力、坚持，
+And I love how all this, all this kind of connects, judgment, persistence in a,
+
+1180
+01:15:32,796 --> 01:15:34,030
+以及你自己的观点。
+a point of view of your own.
+
+1181
+01:15:34,710 --> 01:15:39,150
+是的。对孩子和大人都是。是的。你有没有想过，嗯，为你的。
+Yeah. Both for kids and also adults. Yeah. Anything you think about, um, for your.
+
+1182
+01:15:39,350 --> 01:15:39,830
+哦，天啊。
+Oh, man.
+
+1183
+01:15:40,110 --> 01:15:42,511
+嗯，我在想的问题就是，
+Well, like, the question I'm thinking about is just
+
+1184
+01:15:42,511 --> 01:15:44,242
+什么时候让他们接触 AI 这类东西，
+when to get them on like some AI thing,
+
+1185
+01:15:44,242 --> 01:15:47,090
+你知道，我有个三岁的孩子，所以现在还挺早的。
+you know when I I have a 3 year old so it's pretty early for that.
+
+1186
+01:15:47,290 --> 01:15:50,530
+但你知道，你怎么让他们上手这个疯狂的东西？
+But you know, how do you get, how do you onboard them to this crazy thing?
+
+1187
+01:15:50,650 --> 01:15:51,984
+我最近参加了一个活动，
+I had, I was at an event recently
+
+1188
+01:15:51,984 --> 01:15:55,370
+一群家长在聊他们怎么看待 AI 和自己的孩子。
+and a bunch of parents were talking about how they think about AI and their kids.
+
+1189
+01:15:55,410 --> 01:15:58,257
+有一个人的做法特别有意思，
+And one person had a really interesting approach,
+
+1190
+01:15:58,257 --> 01:16:00,764
+就是让孩子用非常早期的模型，
+which is keep them on the very early models so
+
+1191
+01:16:00,764 --> 01:16:05,170
+这样他们还得稍微费点劲，不会立刻得到所有答案。
+that they still have to struggle a bit and not get all the answers immediately.
+
+1192
+01:16:06,090 --> 01:16:11,770
+我觉得挺有意思的，比如用一个开源的本地模型，不太稳定的那种。对对对。
+I thought that was interesting, like an open source local model, not stable. Yeah, yeah, yeah.
+
+1193
+01:16:12,450 --> 01:16:13,890
+好奇心是个很重要的东西。
+And curiosity is something.
+
+1194
+01:16:14,890 --> 01:16:18,693
+我一直在提 Ben Mann，但他对这个问题的回答一直
+I keep mentioning Ben Mann, but his answer actually to this question has always
+
+1195
+01:16:18,693 --> 01:16:22,553
+让我记忆深刻，就是好奇心，还有他非常推崇蒙特梭利教育，
+stuck with me, which is curiosity and also just like he's a big fan of Montessori,
+
+1196
+01:16:22,553 --> 01:16:26,010
+这也是我在为我们的孩子鼓励的。所以这里面有值得琢磨的东西。
+which is what I'm encouraging for our kids. So there's something there.
+
+1197
+01:16:27,230 --> 01:16:29,550
+也许沿着这个思路问最后一个问题。
+Maybe a last question just along kind of along these lines.
+
+1198
+01:16:30,280 --> 01:16:35,558
+这是 Fiona Fung 建议我问你的，她最近上过这个播客，
+Something Fiona Fung actually suggested I ask you, who's recently on the podcast,
+
+1199
+01:16:35,558 --> 01:16:40,529
+你如何保持精力充沛、不至于倦怠，身处这场疯狂
+how do you stay just recharged and not burn out being in the center of this crazy
+
+1200
+01:16:40,529 --> 01:16:43,053
+AI 风暴的中心，还作为一个在职的妈妈，你知道，
+storm of AI as a mom working in, you know,
+
+1201
+01:16:43,053 --> 01:16:45,960
+我们能看到 Anthropic 的研究成果。
+we're seeing the research work at Anthropic.
+
+1202
+01:16:47,080 --> 01:16:50,918
+我们正在经历一个前所未有的时代，
+I just like we're living through the most unprecedented time working at just like
+
+1203
+01:16:50,918 --> 01:16:53,910
+哪怕是从 Anthropic 外部来看，都觉得很疯狂。
+being, you know, being on the outside of Anthropic, it's crazy.
+
+1204
+01:16:53,910 --> 01:16:55,350
+我都无法想象身在其中是什么感觉。
+I don't even know what it's like to be on the inside.
+
+1205
+01:16:55,750 --> 01:16:58,979
+你在避免倦怠、保持精力，
+Um, what have you Learned about avoiding burnout, staying recharged,
+
+1206
+01:16:58,979 --> 01:17:00,950
+在这一切中保持理智方面，学到了什么？
+staying sane during the middle of all this?
+
+1207
+01:17:01,630 --> 01:17:07,310
+2024 年，我们全年发布了四个模型，或者说四个系列的模型。
+In 2024, we shipped four models for the. In the whole year or four series of models.
+
+1208
+01:17:08,150 --> 01:17:12,150
+而我觉得今年光是第二季度的量就超过了那个数。
+And I think we did more than that volume in just Q2 of this year.
+
+1209
+01:17:14,700 --> 01:17:19,447
+我觉得我很幸运，有我们一路成长起来的团队，
+I think I've been really lucky with the team that we grown and built,
+
+1210
+01:17:19,447 --> 01:17:22,499
+包括研究这边的相关同事，
+both the stakeholders on the research side
+
+1211
+01:17:22,499 --> 01:17:26,060
+也包括我们研究产品管理团队内部的人。
+and within our research product management team.
+
+1212
+01:17:27,300 --> 01:17:32,602
+我觉得应对这一切最神奇的一点是，
+I think that one of the magical parts about approaching all of this is
+
+1213
+01:17:32,602 --> 01:17:35,300
+这不是一项个人运动。
+that it's not an individual sport.
+
+1214
+01:17:36,270 --> 01:17:42,124
+这里有一种极强的主人翁意识和团队协作，
+Um, there's like a sense of radical ownership and team collaboration
+
+1215
+01:17:42,124 --> 01:17:47,575
+有时候确实感觉像是一项高强度的竞技运动，
+that I think sometimes it does feel like a high performance sport
+
+1216
+01:17:47,575 --> 01:17:51,310
+因为你身处非常关键的决策之中。
+because you're in very critical decisions.
+
+1217
+01:17:51,550 --> 01:17:54,717
+会有关于用户、关于训练的新信息，
+There's new information about users, about training,
+
+1218
+01:17:54,717 --> 01:17:59,330
+你得非常快地给出建议、判断和决策。
+and you have to make recommendations and judgments and decisions very quickly.
+
+1219
+01:18:00,200 --> 01:18:03,320
+没有人能靠一己之力长期这样做。
+And nobody can do that sustainably by themselves.
+
+1220
+01:18:04,400 --> 01:18:10,492
+所以我觉得真正帮到我的，是有一个非常出色的团队，
+Um, and so I think what's really helped is having a team that is incredible,
+
+1221
+01:18:10,492 --> 01:18:15,897
+他们彼此照应，比如在发布前一晚，
+who looks out for each other, who, you know, night before a launch,
+
+1222
+01:18:15,897 --> 01:18:22,480
+哪怕他们不是那个模型的核心 DRI，也会熬夜帮那个 DRI。
+even if they're not the core DRI on that model will stay up and help the DRI who, uh.
+
+1223
+01:18:22,560 --> 01:18:26,866
+帮忙审阅博客文章、做修改、想出更好的 demo，
+To review the blog post and make edits and come up with better demos
+
+1224
+01:18:26,866 --> 01:18:29,920
+懂得在彼此需要时搭把手。
+and knowing to be each other sort of extra hand.
+
+1225
+01:18:30,520 --> 01:18:35,527
+我觉得如果你把这一切变化都扛在自己肩上，很容易感到
+I think it's very easy if you take all of this change on your own shoulders to feel
+
+1226
+01:18:35,527 --> 01:18:39,320
+孤立无援，觉得什么都得自己来。
+like you're alone and to feel like you have to do everything.
+
+1227
+01:18:40,280 --> 01:18:42,390
+但我觉得 Anthropic 最神奇的一点，
+Um, but I think one of the, like,
+
+1228
+01:18:42,390 --> 01:18:45,960
+就是我们有这样的能力，
+magical parts of Anthropic is this ability for us to.
+
+1229
+01:18:47,590 --> 01:18:50,903
+去发现哪些地方可以互相帮助，
+Uh, figure out what are those opportunities to help each other
+
+1230
+01:18:50,903 --> 01:18:54,661
+然后再往前多走一步，我们叫它"脑子融合"，
+and actually then taking the next mile of like mind melting, we call it,
+
+1231
+01:18:54,661 --> 01:18:56,190
+就像进入了一种集体思维。
+like entering the hive mind.
+
+1232
+01:18:56,270 --> 01:19:00,019
+有篇文章写过这个，我觉得其中一部分原因就是，
+There was a article about this and I think like part of that is just
+
+1233
+01:19:00,019 --> 01:19:02,310
+这让整个团队能够恢复元气。
+that allows like the team to replenish.
+
+1234
+01:19:02,710 --> 01:19:05,590
+不是说你……我六月刚休了带薪假。
+It's not that you. I, I was just on PTO in June.
+
+1235
+01:19:06,190 --> 01:19:09,830
+不只是说你能休假，然后回来面对三倍的
+It's not just that you can take PTO and you come back to like 3 x.
+
+1236
+01:19:09,910 --> 01:19:13,534
+待办事项，而是你可以休假，
+The amount of things to do is actually you could take PTO
+
+1237
+01:19:13,534 --> 01:19:17,237
+而且知道团队能搞定该做的事，
+and know the team can figure out the right things to do and
+
+1238
+01:19:17,237 --> 01:19:20,940
+我们每个人也能彼此照应。
+that we individually can like, watch out for each other.
+
+1239
+01:19:21,740 --> 01:19:23,540
+所以我觉得这是很重要的一部分。
+Um, so I think that's a big part.
+
+1240
+01:19:24,060 --> 01:19:28,300
+就我个人而言，我真的很幸运，我的伴侣也非常支持我。
+I'm really lucky just personally. Um, also my partner is really supportive.
+
+1241
+01:19:29,020 --> 01:19:34,200
+这是我做 AI 的第六年了，先是 Amazon，然后是 Anthropic。
+Um, this is year 6 of me working in AI, so Amazon and then Anthropic.
+
+1242
+01:19:34,280 --> 01:19:38,559
+所以他看得到我有多热爱这项技术、多热爱它能做的事，
+And so he sees how much I just love the technology and what this can do and
+
+1243
+01:19:38,559 --> 01:19:39,720
+这真的很有帮助。
+that really helps.
+
+1244
+01:19:39,800 --> 01:19:44,126
+另外从个人角度来说，我也很喜欢，
+I think also, um, from like a personal perspective as well, I love,
+
+1245
+01:19:44,126 --> 01:19:46,800
+我很喜欢这些答案之间竟然如此相通。
+I love how many of these answers connect.
+
+1246
+01:19:47,080 --> 01:19:51,647
+我从中听到的，就是要和别人一起工作，
+So what I'm hearing here is just the having other people working with other people,
+
+1247
+01:19:51,647 --> 01:19:55,750
+依靠别人，在忙乱的时候互相帮衬，
+relying on other people, helping each other out when things get crazy, uh,
+
+1248
+01:19:55,750 --> 01:19:59,920
+这和你之前关于如何找到乐趣的回答很相似。
+which is a similar answer you had for just how to, how to find the joy and, and.
+
+1249
+01:20:00,480 --> 01:20:04,105
+在这份工作里找到乐趣，同样是从别人身上获得启发，
+And fun in this work just gets, again, be inspired by other people,
+
+1250
+01:20:04,105 --> 01:20:06,280
+看他们在做什么，一起协作。
+see what they're doing, work together.
+
+1251
+01:20:06,840 --> 01:20:07,200
+是的。
+Yeah.
+
+1252
+01:20:07,720 --> 01:20:10,029
+有意思的是，Fiona 最近上节目时，
+And it's interesting when Fiona was on the podcast recently, she,
+
+1253
+01:20:10,029 --> 01:20:12,800
+我问她软件工程的世界发生了什么变化？
+I was asking her just like what's changed in the world of software engineering?
+
+1254
+01:20:12,800 --> 01:20:14,899
+她指出，现在孤独多了，
+And she pointed out, it's a lot lonelier now
+
+1255
+01:20:14,899 --> 01:20:17,990
+因为我们现在是在和 agents 协作，而不是和其他人。
+because now we're working with agents instead of other humans.
+
+1256
+01:20:18,270 --> 01:20:21,590
+团队变小了，大家都有一大群 agent 在不停对话。
+Teams are smaller, people are having all these fleets they're talking to constantly.
+
+1257
+01:20:22,070 --> 01:20:25,790
+所以这正好提醒我们，身边真实的人有多重要。
+And so this is just a reminder of just the power of just actual other humans around you.
+
+1258
+01:20:26,710 --> 01:20:30,365
+我们被要求处理并决策非常重大的事情，
+We're asked to work and make decisions on really big things
+
+1259
+01:20:30,365 --> 01:20:33,870
+因为技术让你有了更大的规模，对吧？
+because you have more scale from the technology, right?
+
+1260
+01:20:34,550 --> 01:20:36,874
+我觉得有这样一群人，
+And I think having individuals,
+
+1261
+01:20:36,874 --> 01:20:42,726
+有更多人能和你在工作上达到某种“心意相通”
+having other folks more who can have some level of like mind meld with what you work on
+
+1262
+01:20:42,726 --> 01:20:46,599
+就是你的做事方式，不一定是每个细节
+on, how you approach, maybe not exactly every detail,
+
+1263
+01:20:46,599 --> 01:20:52,710
+而是你依据的第一性原理、你的前提假设，这些会帮到他们
+but what are the first principles, what are the assumptions you make then helps them.
+
+1264
+01:20:53,110 --> 01:20:58,530
+他们能给你补位，或者反驳你的决定，让你的思考更清晰
+Uh, you know, back up for you or, uh, push your decision and sharpen your thinking.
+
+1265
+01:20:59,450 --> 01:21:03,927
+所以我在做这件事时真的很看重这一点
+Um, so I think, you know, we really try to, like, I really try to look for that when,
+
+1266
+01:21:03,927 --> 01:21:07,135
+比如组建团队、扩张团队、招聘的时候
+like, building the team, growing the team, hiring, like,
+
+1267
+01:21:07,135 --> 01:21:09,741
+这个人在意的是自己的个人 ego
+is this person going to care about their own ego
+
+1268
+01:21:09,741 --> 01:21:12,280
+想搭一个大团队，还是说他们会
+and building out a big org or are they going to.
+
+1269
+01:21:12,280 --> 01:21:14,946
+更在意为 Anthropic 做贡献
+Care about contributing to Anthropic
+
+1270
+01:21:14,946 --> 01:21:18,195
+为团队的影响力做贡献
+and contributing to the like impact of the team
+
+1271
+01:21:18,195 --> 01:21:22,610
+我会更倾向找那种 ego 低、以团队为导向的人
+and orienting towards folks who are like low ego team oriented.
+
+1272
+01:21:23,530 --> 01:21:30,130
+我觉得这是可持续性很重要的一部分
+Um, I think that's yeah, it it's a big part of I think the sustainability.
+
+1273
+01:21:30,690 --> 01:21:34,730
+是的，很多东西最后都会回到文化和招聘
+Yeah, just always a lot of it's always just comes down back to culture and hiring
+
+1274
+01:21:34,730 --> 01:21:38,770
+我也听到很多说法，就是 Anthropic 能这么快的原因
+and, and I know I've heard a lot just the reason Anthropic is able to move so fast.
+
+1275
+01:21:38,850 --> 01:21:42,130
+我记得那段时间，几乎每天都有东西上线
+I remember that moment when like something shipped every day of the month.
+
+1276
+01:21:42,490 --> 01:21:43,907
+有一整个发布日历
+There's like a calendar of launches
+
+1277
+01:21:43,907 --> 01:21:45,890
+大家都在讨论这怎么可能做到
+and people are talking about how is this possible.
+
+1278
+01:21:46,250 --> 01:21:50,174
+我听到最多的说法就是，因为大家在使命上高度一致
+And what I heard a lot is just because everyone is so aligned around the mission
+
+1279
+01:21:50,174 --> 01:21:53,494
+在价值观上也一致，这让大家能非常快地做决定
+and the values, it allows people to make decisions really quickly
+
+1280
+01:21:53,494 --> 01:21:56,090
+在我们进入非常有意思的快问快答之前
+before we get to our very exciting lightning round.
+
+1281
+01:21:56,290 --> 01:21:58,770
+Dianne，你还有什么想分享的吗
+Is there anything else, Dan, that you wanted to share,
+
+1282
+01:21:58,770 --> 01:22:00,478
+有什么还想聊到的
+anything else you wanted to touch on,
+
+1283
+01:22:00,478 --> 01:22:03,730
+或者我们聊过的哪些点你想再强调一下
+anything you want to maybe double down on of things we've talked about?
+
+1284
+01:22:04,059 --> 01:22:07,401
+这其实很有意思，因为我觉得你的问题真的让我
+This was actually really fun because I feel like your questions actually sharpen
+
+1285
+01:22:07,401 --> 01:22:09,859
+更清晰地梳理了一些想法之间的联系
+some of my thinking around how the thoughts kind of connect.
+
+1286
+01:22:10,259 --> 01:22:12,099
+我就是你这边的真人版 Claude
+I'm your real human Claude over here.
+
+1287
+01:22:13,539 --> 01:22:16,508
+有一件事我真的很想
+One thing that I really want to,
+
+1288
+01:22:16,508 --> 01:22:23,701
+传达出来、让大家记住，一部分是工作方式
+like convey or have people take away is I think one in the ways of working but,
+
+1289
+01:22:23,701 --> 01:22:27,013
+但另一部分是
+but also just to that like this is a,
+
+1290
+01:22:27,013 --> 01:22:30,895
+这里面充满了成长和变化
+this is a lot out of like growth and change
+
+1291
+01:22:30,895 --> 01:22:35,120
+以及使用这项技术时的乐趣
+and having the joy in using this technology.
+
+1292
+01:22:35,200 --> 01:22:38,151
+如果你现在感觉
+And like if you're feeling like in this moment,
+
+1293
+01:22:38,151 --> 01:22:41,480
+没有那么多最初的那种乐趣
+you don't have as much of that feeling of initial joy.
+
+1294
+01:22:41,600 --> 01:22:43,240
+那怎么去找到那些还有这种乐趣的人
+How do you find people who do?
+
+1295
+01:22:44,480 --> 01:22:48,875
+如果这是一个你有热情、想投入的方向
+Uh, if this is an area that, that you're excited and like want to work on
+
+1296
+01:22:48,875 --> 01:22:51,072
+我觉得培养技能
+and I think developing skill sets,
+
+1297
+01:22:51,072 --> 01:22:56,452
+用很多方式去更新技能，比如用第一性原理去思考
+replenishing skill sets in many ways of things like thinking from a first principles
+
+1298
+01:22:56,452 --> 01:22:58,270
+你要解决的问题
+manner about what you solve.
+
+1299
+01:22:58,950 --> 01:23:01,691
+从根本上说，虽然你没问我这个
+I think fundamentally, you didn't ask me this,
+
+1300
+01:23:01,691 --> 01:23:05,485
+但社区里一直有个问题，就是我们还需要 PM 吗
+but there is this question in the community of do we still need PMs
+
+1301
+01:23:05,485 --> 01:23:09,350
+当模型这么强、工程师又主动上手的时候
+when the models are so capable, when engineers are leaning in? Um.
+
+1302
+01:23:10,610 --> 01:23:14,419
+我觉得那种以用户为中心的人的角色
+I think the role of people who are user centric,
+
+1303
+01:23:14,419 --> 01:23:20,768
+深入细节去理解用户想要完成什么
+who go into the details of understanding what users are trying to accomplish,
+
+1304
+01:23:20,768 --> 01:23:27,410
+把这些梳理成可执行的东西，并且坚持不懈地去做
+bubbling that up in an actionable manner and doing the relentless work to do that.
+
+1305
+01:23:27,770 --> 01:23:30,172
+在我看来这才是产品人的核心
+Like that to me is a core of a product person,
+
+1306
+01:23:30,172 --> 01:23:32,440
+而且我认为我们需要更多这样的人
+and I actually think we need more of that.
+
+1307
+01:23:34,040 --> 01:23:39,600
+我觉得我们正变得非常被技术层驱动
+I think we are becoming very technology layered driven.
+
+1308
+01:23:40,200 --> 01:23:43,238
+而要真正做出影响力，你必须深入
+And actually to make that impactful, it's you have to go deep,
+
+1309
+01:23:43,238 --> 01:23:45,800
+你要有好奇心，要非常亲自下场
+you have to be curious, you have to be super hands on.
+
+1310
+01:23:46,440 --> 01:23:49,950
+我觉得这些也是那种特质
+And those are things that I think are also traits that have, I think,
+
+1311
+01:23:49,950 --> 01:23:54,399
+从产品研发和模型研发的角度帮助了 Anthropic
+helped Anthropic from a product development and model development perspective and
+
+1312
+01:23:54,399 --> 01:23:55,590
+也是文化的一部分
+as part of the culture.
+
+1313
+01:23:55,630 --> 01:23:58,190
+希望这对其他人也有价值
+And hopefully that's valuable for others as well.
+
+1314
+01:23:59,310 --> 01:24:02,240
+太棒了，这个结尾真是鼓舞人心
+Amazing. What an inspiring way to end it.
+
+1315
+01:24:02,800 --> 01:24:05,320
+天哪，是的，我自己也说了很久了
+Oh, man. Yeah. And this is, I've been saying this too for a long time.
+
+1316
+01:24:05,360 --> 01:24:06,920
+现在“构建”本身变得很容易
+Just now that building is easy.
+
+1317
+01:24:08,120 --> 01:24:09,849
+关键部分就变成了，像你说的
+The part part becomes, as you said,
+
+1318
+01:24:09,849 --> 01:24:13,128
+我们应该构建什么，我们做出来的东西是否正确、是否够好
+what should we build and is the thing we have built correct and good
+
+1319
+01:24:13,128 --> 01:24:14,320
+是否值得投入
+and worth leading into?
+
+1320
+01:24:14,560 --> 01:24:17,600
+在我看来，这正是 PM 做的事，也是 PM 擅长的事
+And to me, that's what PMs do and what PMs are good at.
+
+1321
+01:24:17,960 --> 01:24:21,720
+对对对，还要深入到用户的细节里。
+Yeah, yeah, yeah. And it's getting into the details of the user.
+
+1322
+01:24:22,610 --> 01:24:23,690
+对，是同理心。
+Yeah, empathy.
+
+1323
+01:24:24,490 --> 01:24:26,330
+好，很好。PM 们能搞定的。
+Okay, great. PMs are gonna make it okay.
+
+1324
+01:24:26,490 --> 01:24:31,053
+PRD 还没死，这里有各种各样重要的经验，Dianne。
+PRD is not dead all kinds of all kinds of important lessons here Dan with
+
+1325
+01:24:31,053 --> 01:24:34,610
+说到这儿，我们就来到了激动人心的快问快答环节。
+that we've reached our very exciting lightning round.
+
+1326
+01:24:34,730 --> 01:24:37,130
+我有五个问题要问你。准备好了吗？好了。
+I've got five questions for you. Are you ready? Yep.
+
+1327
+01:24:37,890 --> 01:24:40,092
+第一个问题，有哪两三本书
+First question, what are two or three books
+
+1328
+01:24:40,092 --> 01:24:43,090
+是你最常推荐给别人的？
+that you find yourself recommending most to other people?
+
+1329
+01:24:43,960 --> 01:24:48,120
+有一本很个人的。我很喜欢《How to Raise an Adult》。
+One personal one. I really like how to raise an adult.
+
+1330
+01:24:49,320 --> 01:24:53,280
+我是一位母亲。
+So I. I'm a mom.
+
+1331
+01:24:54,280 --> 01:24:59,960
+我经常在想，我想在孩子身上培养哪些东西。
+I think a lot about what is the things that I want to instill in, in, in my kids.
+
+1332
+01:25:00,040 --> 01:25:03,563
+那本书很有帮助，它讲的是我们不是在养育孩子，
+And that book is really helpful for describing we're not trying to raise children,
+
+1333
+01:25:03,563 --> 01:25:04,840
+而是在培养未来的成年人。
+we're trying to raise adults.
+
+1334
+01:25:05,000 --> 01:25:07,040
+光是这个视角，思考它意味着什么，
+So just the framing of what does that mean?
+
+1335
+01:25:07,500 --> 01:25:11,563
+以及我们想在孩子身上打磨、
+And what does it mean, what are the characteristics that we want to hone and like,
+
+1336
+01:25:11,563 --> 01:25:13,140
+引导和培养哪些特质。
+harness and foster in our kids?
+
+1337
+01:25:14,020 --> 01:25:20,820
+另一本我最近在 Audible 上听的书是 Eric Ries 的《The Incorrigible》。
+Um, the other book that I, uh, was listening to on audible recently is incorrigible by Eric Reese.
+
+1338
+01:25:21,260 --> 01:25:24,868
+就是《The Incorrigible》。对，就是它。
+So the incorrigible. Incorrigible. Incorrigible, yes. Yes. Yeah.
+
+1339
+01:25:24,868 --> 01:25:26,260
+他最近也上过这个播客。
+His recent podcast guest.
+
+1340
+01:25:26,820 --> 01:25:33,280
+对，我觉得如何打造伟大公司这个问题很重要。
+Um, yeah. And I, I, I just, I think the question of how to build great companies is important.
+
+1341
+01:25:34,120 --> 01:25:38,306
+我个人最着迷的是如何让优秀的团队
+I personally just been most fascinated with how to keep great teams
+
+1342
+01:25:38,306 --> 01:25:40,548
+和优秀的公司走得更远，
+and great companies going further,
+
+1343
+01:25:40,548 --> 01:25:44,136
+看到他对这个问题的视角
+and it was very interesting to just kind of see his framing
+
+1344
+01:25:44,136 --> 01:25:46,080
+和重新框定，非常有意思。
+and reframing of the question.
+
+1345
+01:25:46,760 --> 01:25:51,240
+我很喜欢里面关于给文化设立指标的一些例子。
+Um, I loved some of the examples around having metrics around culture.
+
+1346
+01:25:51,640 --> 01:25:55,194
+如果你只衡量营收，
+You, if you can't, if you only measure revenue and then
+
+1347
+01:25:55,194 --> 01:25:57,880
+那你就只会朝那个方向走。
+that's kind of how you're going against.
+
+1348
+01:25:58,000 --> 01:26:00,465
+但如果你有其他更好的指标，
+But if you have other better metrics,
+
+1349
+01:26:00,465 --> 01:26:04,520
+那才是维系你在乎的价值观的方式。
+that's actually the way to sustain the values you care about.
+
+1350
+01:26:05,000 --> 01:26:07,689
+我一直在想，怎么把这些
+I've been kind of trying to think about how to actually bring
+
+1351
+01:26:07,689 --> 01:26:11,077
+落到团队层面，比如我们怎么更好地表达、写下我们的规范，
+that to the team level of like, how do we better articulate, write our norms,
+
+1352
+01:26:11,077 --> 01:26:13,120
+就是很多我们在团队里聊过的东西。
+a lot of the things we talked about on the team.
+
+1353
+01:26:13,540 --> 01:26:16,380
+所以我觉得这也是一本很值得读的书。就这样。
+So I think that's also a really good read. There you go.
+
+1354
+01:26:16,540 --> 01:26:18,927
+大家听到这里，那就是你们接下来该看的，
+That'll be your next watch, everyone, as you're listening to this,
+
+1355
+01:26:18,927 --> 01:26:19,780
+Eric Ries 那一期。
+the Eric Grice episode.
+
+1356
+01:26:20,620 --> 01:26:21,820
+特别好的一期。是的。
+Such a good episode. Yeah.
+
+1357
+01:26:22,660 --> 01:26:24,857
+他的书刚出，《The Incorrigible》，
+And his book just came out, incorruptible,
+
+1358
+01:26:24,857 --> 01:26:27,420
+我记得好像是纽约时报畅销书。
+and I think it was like a New York Times bestseller.
+
+1359
+01:26:27,540 --> 01:26:30,780
+卖得非常好，我看到很开心。
+Like, it's actually doing incredibly well, which I was really happy to see.
+
+1360
+01:26:31,180 --> 01:26:31,900
+对，没错。
+Yeah, exactly.
+
+1361
+01:26:32,540 --> 01:26:36,060
+下一个问题。最近最喜欢、真正让你享受的电影或电视剧是什么？
+Next question. Favorite recent movie or TV show? You really enjoy it.
+
+1362
+01:26:36,100 --> 01:26:38,620
+Anthropic 的大多数人都没时间干嘛？看剧。
+Most people at Anthropic do not have time to do what? To watch things.
+
+1363
+01:26:38,660 --> 01:26:44,410
+但我很好奇你有没有答案。我会说，趁着休息的一段时间。
+But I'm curious if you have an answer. I would say, um, drink, uh, some time off.
+
+1364
+01:26:44,450 --> 01:26:49,410
+上个月我确实在 Amazon Prime 上刷了《Fallout》（辐射）。
+Last month I did get to get like binge watch fallout on Amazon Prime.
+
+1365
+01:26:50,090 --> 01:26:56,330
+我还挺喜欢的，你听说过吗？
+So that was actually, uh, I kind of like, um, it's kind of, uh, have you heard of it?
+
+1366
+01:26:56,530 --> 01:26:59,530
+嗯，它是根据那个电子游戏改编的。对，是根据游戏改编的。
+Yeah, yeah. It's based on the video game. Yes, it's based on the video game.
+
+1367
+01:26:59,690 --> 01:27:04,273
+我觉得它特别机智、幽默，
+Uh, I think it's a, it was really, um, this witty, it's humorous,
+
+1368
+01:27:04,273 --> 01:27:07,040
+也非常偏动作向。
+it's also like super action oriented.
+
+1369
+01:27:07,160 --> 01:27:08,080
+所以强烈推荐。
+So highly recommend.
+
+1370
+01:27:08,680 --> 01:27:11,611
+好，下一个问题。你最近发现并特别喜欢的
+Okay, next question. Your favorite product you recently discovered
+
+1371
+01:27:11,611 --> 01:27:12,520
+产品是什么？
+that you really love?
+
+1372
+01:27:12,880 --> 01:27:17,960
+我真的觉得，从产品体验来说，Claude Tag 非常有意思。
+I really do think, like Claude Tag is very interesting in terms of a product experience.
+
+1373
+01:27:18,320 --> 01:27:23,750
+我们在 Anthropic 内部其实有它的不同版本，
+Um, we actually have like different versions of this, uh, within Anthropic and I, I,
+
+1374
+01:27:23,750 --> 01:27:28,560
+我觉得它真的是一个非常非常强大的工具。
+I think it's actually been really, uh, really, really, uh, powerful tool.
+
+1375
+01:27:28,960 --> 01:27:31,440
+是的，有些人可能会想，这有什么了不起的？
+Yeah, it feels like, I think some people are like, what's the big deal?
+
+1376
+01:27:31,960 --> 01:27:33,982
+但 Anthropic 的每个人都
+The fact that everyone at Anthropic is like,
+
+1377
+01:27:33,982 --> 01:27:36,823
+对它赞不绝口，这告诉我这里正发生一些重要的事，
+raving about it tells me something important is going on here,
+
+1378
+01:27:36,823 --> 01:27:39,883
+我正在尝试把它用到我的 Slack 社区里，
+and I'm trying to actually get it working within my Slack community
+
+1379
+01:27:39,883 --> 01:27:41,960
+就是我给付费订阅读者建的那个社区。
+that I have for paid newsletter subscribers.
+
+1380
+01:27:42,040 --> 01:27:43,960
+那该多酷啊。对，对。
+How cool would that be? Yeah, yeah.
+
+1381
+01:27:44,000 --> 01:27:46,600
+我们想弄清楚，当它不是一家公司时该怎么运作，
+We're trying to figure out how it works when it's not a company,
+
+1382
+01:27:46,600 --> 01:27:50,000
+只是一群互不相识的人，那要怎么运作，
+when it's just a bunch of people that don't know each other and how that might work,
+
+1383
+01:27:50,000 --> 01:27:51,000
+但我们正在尝试。
+but we're trying it out.
+
+1384
+01:27:51,400 --> 01:27:54,056
+好，还有两个问题。你最喜欢的人生格言，
+Okay. Uh, two more questions. Your favorite life motto
+
+1385
+01:27:54,056 --> 01:27:57,000
+那种在工作或生活中经常想起的。
+that you find yourself often coming back to in work or in life.
+
+1386
+01:27:57,200 --> 01:28:01,242
+其实我头十年是由祖父母带大的，
+So I was actually raised by my grandparents, uh, for the first 10,
+
+1387
+01:28:01,242 --> 01:28:02,440
+生命里最初的十年。
+10 years of my life.
+
+1388
+01:28:02,640 --> 01:28:07,920
+我父母是在美国读本科和硕士的移民学生。
+And my parents were immigrant college and master students in the US.
+
+1389
+01:28:08,720 --> 01:28:14,580
+我祖父总说，无论你走多远，
+And my grandfather always says, no matter how far you go,
+
+1390
+01:28:14,580 --> 01:28:22,434
+总还有更高的一层。我觉得这是个很好的说法，
+there's always another level, which is, I think, a really good way, though,
+
+1391
+01:28:22,434 --> 01:28:29,790
+也是一种挺强烈的方式，来形容他的人生哲学。
+like a pretty intense way of describing, uh, his, his life philosophy.
+
+1392
+01:28:30,000 --> 01:28:33,588
+但每当遇到新鲜或前所未有的事情，
+But I go back to that whenever there's something new or unprecedented
+
+1393
+01:28:33,588 --> 01:28:34,640
+我都会想起这句话。
+that we experience.
+
+1394
+01:28:35,160 --> 01:28:39,320
+我觉得今年上半年就有很多这样的时刻。
+And I think, you know, first half of this year, there was definitely a lot of that.
+
+1395
+01:28:39,400 --> 01:28:42,360
+有很多新东西要学，我也在不断学习。
+Like there was a lot of new things that we were learning, I was learning.
+
+1396
+01:28:43,160 --> 01:28:47,911
+所以总感觉前面总有另一座山，另一个
+Um, so just feeling like there's always like another mountain, another, uh,
+
+1397
+01:28:47,911 --> 01:28:51,920
+值得去攀登的机会。还不够好，Dan，我们得做得更好。
+opportunity to climb. Not good enough, Dan. We need to go better.
+
+1398
+01:28:53,460 --> 01:28:54,300
+我们得做得更大。
+We need to go bigger.
+
+1399
+01:28:54,420 --> 01:28:58,364
+这让我想起 Ben Mann 在他那期播客里说的另一句话，
+Uh, makes me think about actually another Ben Mann line from his podcast episode
+
+1400
+01:28:58,364 --> 01:29:00,660
+现在已经是最“正常”的时候了。
+that this is the most normal it's ever gonna be.
+
+1401
+01:29:00,900 --> 01:29:05,300
+以后只会越来越离谱、越来越疯狂。对对对，天哪。
+It's only gonna get weirder and crazier. Yeah, yeah, yeah. Oh, my God.
+
+1402
+01:29:06,540 --> 01:29:09,300
+好，最后一个问题。我翻了翻你的 LinkedIn。
+Okay, final question. Uh, I was poking around your LinkedIn.
+
+1403
+01:29:09,860 --> 01:29:14,400
+你职业早期是 JP Morgan Chase 的高收益债券交易员。
+You were a high yield bond trader, JP Morgan Chase, early in your career.
+
+1404
+01:29:15,080 --> 01:29:19,065
+你当时管理着一个，呃，被隐去具体数字的，
+Uh, you had like, uh, you have this like redacted, uh,
+
+1405
+01:29:19,065 --> 01:29:22,960
+大约一亿美元规模的交易组合。
+100 million dollar trading portfolio of some kind.
+
+1406
+01:29:23,640 --> 01:29:27,581
+那段经历给你留下了什么让你至今难忘的东西，
+Uh, what did you learn from that time in your life that has stuck with you
+
+1407
+01:29:27,581 --> 01:29:30,120
+或者那段时期有什么疯狂的故事吗？
+and or is there a crazy story from that period?
+
+1408
+01:29:30,120 --> 01:29:31,240
+那可是你人生中的四年。
+It was four years of your life.
+
+1409
+01:29:31,600 --> 01:29:35,949
+我觉得我确实学到很多，如今都用在了
+I think I Learned actually a lot that I, uh, apply here, uh,
+
+1410
+01:29:35,949 --> 01:29:39,210
+Anthropic 以及之后的其他工作里。
+at Anthropic and other jobs they're after.
+
+1411
+01:29:39,850 --> 01:29:43,507
+我在 JP Morgan 的时候，那个交易大厅，
+And so when I was at JP Morgan, the trading floor,
+
+1412
+01:29:43,507 --> 01:29:48,170
+你可以想象成典型的华尔街那种场面。
+you could kind of envision like sort of wall full Wall Street.
+
+1413
+01:29:48,210 --> 01:29:48,850
+那其实很不一样。
+That's very different.
+
+1414
+01:29:50,130 --> 01:29:52,859
+大多数交易员其实是坐在终端机前的。
+Most traders, I think are in front of a terminal.
+
+1415
+01:29:52,859 --> 01:29:55,930
+他们更多是在电脑上做分析。
+They're much more doing analyses on their computers.
+
+1416
+01:29:57,170 --> 01:29:59,730
+但那里还是很男性主导的。
+But it's still very, I would say, like male dominated.
+
+1417
+01:30:00,960 --> 01:30:06,994
+所以我是唯一的女性，也是交易台上唯一
+And so I was the only woman. I was the only person with like,
+
+1418
+01:30:06,994 --> 01:30:10,640
+有我这种背景的人。
+my background on the trading desk.
+
+1419
+01:30:11,120 --> 01:30:17,652
+我发现那是个很好的环境，一方面能建立
+And I Learned that there was a very good environment to kind of building, one,
+
+1420
+01:30:17,652 --> 01:30:20,000
+我对真实自我的认知。
+my sense of authentic self.
+
+1421
+01:30:21,370 --> 01:30:29,082
+另一方面，即使我最资浅、即使我看起来跟别人不同，
+And 2, uh, that even if I was the most junior person, even if I may look different,
+
+1422
+01:30:29,082 --> 01:30:35,625
+最好的想法、以及对最好想法的坚定信念，
+uh, that the best ideas and having conviction in the best ideas, uh,
+
+1423
+01:30:35,625 --> 01:30:43,220
+抛开其他所有因素，才是最重要的。
+and regardless of all of those other factors like is the most important thing.
+
+1424
+01:30:43,820 --> 01:30:49,620
+我觉得我把这种态度带进了如今的工作方式里。
+And so I think just bring that sense of how I show up more at work.
+
+1425
+01:30:50,420 --> 01:30:52,940
+我对团队相当坦诚、真实。
+I'm pretty vulnerable and authentic with my team.
+
+1426
+01:30:53,980 --> 01:30:58,780
+我努力确保，不管一个人级别多高、资历多深，
+I try to really make sure that regardless of people's levels or 10 years,
+
+1427
+01:30:58,780 --> 01:31:03,740
+只要有好点子，就帮他们去推进，我自己也这么做。
+if they have a great idea how to help them pursue that and to do also the same.
+
+1428
+01:31:04,280 --> 01:31:07,390
+就是把想法提出来，然后真的
+Um, so to like put the idea out there to actually, um,
+
+1429
+01:31:07,390 --> 01:31:11,150
+对它有信念，把它跟进到底，去做那些
+have conviction in it to do the follow through, to do the, like,
+
+1430
+01:31:11,150 --> 01:31:13,320
+琐碎但关键的落地工作。
+nitty gritty work to make it happen.
+
+1431
+01:31:13,960 --> 01:31:16,040
+这些都是我从交易工作中学到的。
+Um, so those were all things that I Learned from trading.
+
+1432
+01:31:16,480 --> 01:31:21,560
+我觉得这在很多方面适用于任何工作。说得真好。
+Um, and yeah, I think applies to any, any job in many ways. That is beautiful.
+
+1433
+01:31:22,480 --> 01:31:25,984
+如果大家想关注你，可以在哪里找到你，
+Where can people find you online if they want to follow you
+
+1434
+01:31:25,984 --> 01:31:28,320
+听众又能怎么帮到你？
+and how can listeners be useful to you?
+
+1435
+01:31:28,720 --> 01:31:32,880
+我在社交媒体上没什么存在感。
+I don't have a large presence on like social.
+
+1436
+01:31:33,360 --> 01:31:41,640
+想了解我和团队的工作，最好的方式其实是 Anthropic 的博客。
+I think the best way to find my work, my team's work is really the Anthropic blog.
+
+1437
+01:31:42,040 --> 01:31:47,611
+我们会在那里发布新模型、新的产品体验，
+And when we're publishing new models, new product experiences,
+
+1438
+01:31:47,611 --> 01:31:49,880
+至于怎么帮到我，
+I think in terms of useful.
+
+1439
+01:31:50,690 --> 01:31:54,130
+对我来说，最重要的第一点，就是你们的反馈。
+Uh, for me, I think the best thing, No. 1, is your feedback.
+
+1440
+01:31:54,410 --> 01:31:59,679
+只要你在我们任何一个产品界面上点了赞或点了踩，
+Like we actually, if, if you thumbs up or thumbs down on any of our product surfaces,
+
+1441
+01:31:59,679 --> 01:32:03,726
+如果你把对模型的反馈告诉你的销售对接人，
+if you contact your salesperson with feedback about the model,
+
+1442
+01:32:03,726 --> 01:32:05,330
+这些反馈最终会传到我这里。
+it will make its way to me.
+
+1443
+01:32:05,890 --> 01:32:08,514
+其实，对于每一个研究模型，
+Uh, we actually, with every like research model,
+
+1444
+01:32:08,514 --> 01:32:12,610
+我都会很深入地去了解大家的喜好和反馈。
+I actually get pretty close into understanding favorability and feedback.
+
+1445
+01:32:13,530 --> 01:32:18,010
+所以给我们反馈、去挑战 Claude、告诉我们它哪里做得不好，
+Um, so giving us a feedback, pushing Claude, telling us where it's falling down.
+
+1446
+01:32:18,570 --> 01:32:20,810
+这些都能帮我们把 Claude 做得更好。
+Um, those help us make Claude better.
+
+1447
+01:32:21,290 --> 01:32:23,417
+另一件事是，
+Uh, the other the other thing is like
+
+1448
+01:32:23,417 --> 01:32:27,883
+如果你身边有人符合
+if you have folks in your network who seem like this type of profile of person
+
+1449
+01:32:27,883 --> 01:32:31,570
+我刚才说的那种画像，我们在招人，团队在扩张。
+that I just talked about. I'm hiring. The team, uh, is growing.
+
+1450
+01:32:32,880 --> 01:32:38,288
+我们特别欢迎那些热爱这项技术、极度好奇的人，
+We really will love just people who love this technology, who are deeply curious,
+
+1451
+01:32:38,288 --> 01:32:43,218
+那种第一性原理思考者，敢于质疑各种假设，
+first principles thinkers, who are fearless in questioning assumptions
+
+1452
+01:32:43,218 --> 01:32:46,240
+还带着一股爱折腾、爱钻研的黑客精神的人。
+and who have like a tinkering hackery spirit.
+
+1453
+01:32:46,640 --> 01:32:49,066
+哇，这真是份梦想工作。所以基本上是说，
+Wow, what a dream job. So basically open,
+
+1454
+01:32:49,066 --> 01:32:51,920
+Anthropic 研究团队有开放的 PM 岗位？
+open PM roles at Anthropic on the research team?
+
+1455
+01:32:52,480 --> 01:32:55,390
+是的。我猜大家可以在官网的招聘页面上申请。
+Yes. And they apply, I assume, on the website, the careers page.
+
+1456
+01:32:56,630 --> 01:33:00,760
+天哪。好，那就这样。祝你享受即将涌来的一大波简历。
+Holy moly. All right, here we go. Enjoy the flood of resumes you're about to receive.
+
+1457
+01:33:01,680 --> 01:33:02,520
+谢谢你，Lenny。
+Thank you, Lenny.
+
+1458
+01:33:04,280 --> 01:33:05,520
+Dianne，非常感谢你来到这里。
+Dan, thank you so much for being here.
+
+1459
+01:33:06,200 --> 01:33:07,440
+非常感谢你邀请我。
+Thank you so much for having me.
+
+1460
+01:33:07,600 --> 01:33:11,897
+谢谢你提出这些很有帮助、很有启发性的问题，
+Thank you for really helpful, thought provoking questions,
+
+1461
+01:33:11,897 --> 01:33:15,857
+帮我把很多点串联起来，理清我们是怎么工作的，
+helping me even connect the dots on how, how we work, how,
+
+1462
+01:33:15,857 --> 01:33:21,250
+这整套技术是怎么整合起来的，以及我们作为产品人身处其中。
+how this whole technology is coming together and being product people in it.
+
+1463
+01:33:21,610 --> 01:33:24,210
+我真的很感激。不过说真的，谢谢你，Dianne。
+I really appreciate that. But thank you, Dan, for real.
+
+1464
+01:33:25,370 --> 01:33:26,610
+好了，各位再见。
+Okay, well, bye everyone.
+
+1465
+01:33:27,810 --> 01:33:28,970
+非常感谢大家的收听。
+Thank you so much for listening.
+
+1466
+01:33:29,130 --> 01:33:33,082
+如果你觉得有价值，可以在 Apple Podcasts、
+If you found this valuable, you can subscribe to the show on Apple Podcasts,
+
+1467
+01:33:33,082 --> 01:33:35,090
+Spotify 或你喜欢的播客应用上订阅本节目。
+Spotify or your favorite podcast app.
+
+1468
+01:33:35,770 --> 01:33:38,782
+也请考虑给我们打个分或留个评价，
+Also, please consider giving us a rating or leaving a review as
+
+1469
+01:33:38,782 --> 01:33:41,330
+这真的能帮助更多听众发现这档播客。
+that really helps other listeners find the podcast.
+
+1470
+01:33:41,790 --> 01:33:46,692
+你可以在 Lenny's Podcast.com 上找到所有往期节目或了解更多信息。
+You can find all past episodes or learn more about the show at Lenny's podcast com.
+
+1471
+01:33:46,692 --> 01:33:48,350
+下期节目再见。
+See you in the next episode.

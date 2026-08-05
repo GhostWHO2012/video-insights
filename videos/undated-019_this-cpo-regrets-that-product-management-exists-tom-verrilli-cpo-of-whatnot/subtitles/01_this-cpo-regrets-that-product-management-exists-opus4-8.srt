@@ -1,0 +1,8324 @@
+﻿1
+00:00:00,200 --> 00:00:03,010
+科技公司在扩张的某个阶段
+As tech companies scaled somewhere along the line,
+
+2
+00:00:03,010 --> 00:00:07,061
+冒出了一种小组的人员配比：每招六个工程师
+this HR ratio of a pod popped into being, every time you hire six engineers,
+
+3
+00:00:07,061 --> 00:00:08,760
+就加一个设计师、加一个 PM
+you add a designer, you add a PM.
+
+4
+00:00:09,040 --> 00:00:11,318
+招这么多 PM 会让工程师变得幼稚化
+Hiring so many PMs infantilizes the engineers
+
+5
+00:00:11,318 --> 00:00:14,707
+也让本来完全能做出好决策的设计师退化
+and the designers who are perfectly capable of making good decisions
+
+6
+00:00:14,707 --> 00:00:17,920
+因为总有个 PM 在旁边照看，他们根本不用自己做
+but just never had to because there was always a PM to babysit them.
+
+7
+00:00:18,080 --> 00:00:21,643
+你在网上写的一句话让很多人吃惊：在 Whatnot
+Something you wrote online that surprised a lot of people at whatnot,
+
+8
+00:00:21,643 --> 00:00:24,469
+产品团队建立在一个相当简单的前提上
+Product Team was built on the somewhat simple premise,
+
+9
+00:00:24,469 --> 00:00:26,680
+我们很遗憾产品管理这个职能存在
+we regret that product management exists.
+
+10
+00:00:27,020 --> 00:00:28,740
+这话你大概很少从 CPO 嘴里听到
+Not a thing you probably hear from a lot of CPOs.
+
+11
+00:00:28,940 --> 00:00:31,474
+我们这样表述，是为了强迫自己记住
+We articulate it that way to force ourselves to remember
+
+12
+00:00:31,474 --> 00:00:33,900
+你不该为了招 PM 而招 PM
+that you don't hire a PM just for the sake of hiring one.
+
+13
+00:00:33,940 --> 00:00:36,205
+只有在有非常具体需求时才招
+You hire one where there's really specific need.
+
+14
+00:00:36,205 --> 00:00:38,580
+最好别默认每个地方都需要 PM
+It is better to not assume we need a PM in every place.
+
+15
+00:00:38,820 --> 00:00:42,720
+你之所以想让产品管理成为一个专门
+The only argument for why you would want product management to be a specialist
+
+16
+00:00:42,720 --> 00:00:45,420
+岗位，唯一的理由是它是门手艺，而不是一种资历
+function is really it's a trade, not a qualification.
+
+17
+00:00:45,660 --> 00:00:48,540
+它是靠做才能练好的，是一块肌肉
+It's something you get good at by doing. It's a muscle.
+
+18
+00:00:48,820 --> 00:00:51,571
+但反过来说，你越是让工程师
+But the flip side of that is the more you abstract your engineers
+
+19
+00:00:51,571 --> 00:00:55,100
+和设计师远离这件事，他们这块肌肉就越萎缩
+and your designers from doing the same thing, their muscle gets underdeveloped.
+
+20
+00:00:55,220 --> 00:00:59,215
+他们还写了句很扎心的话：过去两年里
+They also wrote this brutal quote, in the last two years,
+
+21
+00:00:59,215 --> 00:01:03,380
+有 31,832 人申请来 Whatnot 做产品经理
+31,832 people applied to be a product manager and whatnot.
+
+22
+00:01:03,460 --> 00:01:05,980
+我们只招了一个。他招人时到底看重什么
+We hired one. What does he look for in the folks that you hire?
+
+23
+00:01:06,140 --> 00:01:08,305
+我可以告诉你什么明显在走下坡路
+I can tell you what's definitely trending down,
+
+24
+00:01:08,305 --> 00:01:11,769
+就是那些在面试里花大量时间讲怎么推动
+folks who spend a lot of their time in their interviews talking about driving
+
+25
+00:01:11,769 --> 00:01:13,554
+对齐和管理利益相关方的人
+alignment and stakeholder management
+
+26
+00:01:13,554 --> 00:01:17,072
+因为确实有一批 PM，专长不是技术
+because there's definitely a group of PMs whose specialty wasn't technical,
+
+27
+00:01:17,072 --> 00:01:17,830
+而是搞政治
+it was politics.
+
+28
+00:01:18,190 --> 00:01:20,530
+你对转向 IC 工作非常兴奋
+You're very excited about this move to IC work.
+
+29
+00:01:20,530 --> 00:01:23,230
+想远离那种庞大的组织管理世界
+come moving away from this big org management world.
+
+30
+00:01:23,310 --> 00:01:26,430
+过去你做 PM 很成功，就会被提拔成总监
+If you were really successful as a PM, you got promoted into being a director.
+
+31
+00:01:26,550 --> 00:01:29,990
+我们把最优秀的人才提拔到了不再干实事的位置
+We took all of our a players and then promoted them out of doing thing.
+
+32
+00:01:30,280 --> 00:01:32,559
+你为什么不想让 Messi（梅西）为你的球队上场
+Why wouldn't you want Messi playing for your team
+
+33
+00:01:32,559 --> 00:01:35,560
+而总想着培养青训梯队呢
+rather than trying to have the Academy coming along all the time?
+
+34
+00:01:37,840 --> 00:01:39,640
+今天我的嘉宾是 Tom Verrilli
+Today, my guest is Tom Verrilli.
+
+35
+00:01:39,920 --> 00:01:41,838
+Tom 是 Whatnot 的首席产品官
+Tom is chief product officer at whatnot,
+
+36
+00:01:41,838 --> 00:01:44,151
+曾长期担任 Twitch 的首席产品官
+former longtime chief product officer at Twitch
+
+37
+00:01:44,151 --> 00:01:46,520
+也曾任 Twitter 的产品增长总监
+and former director of product growth at Twitter.
+
+38
+00:01:46,920 --> 00:01:49,800
+他也是我一直很想请上节目的人
+He's also someone I've been wanting to get on this podcast for so long.
+
+39
+00:01:50,360 --> 00:01:52,360
+Tom 有很多犀利观点，还有非常独到
+Tom has a lot of hot takes and really unique
+
+40
+00:01:52,360 --> 00:01:55,103
+又重要的洞见，关于产品角色的未来
+and important insights on the future of the product role,
+
+41
+00:01:55,103 --> 00:01:57,903
+关于如今最优秀的 PM 有哪些不一样的做法
+what he's seeing the best PMs doing differently these days
+
+42
+00:01:57,903 --> 00:02:01,274
+以及他为团队招产品人才时看重什么
+and what he's looking for when he's hiring product people for his team.
+
+43
+00:02:01,274 --> 00:02:03,560
+如果你还不了解 Whatnot，它是一个
+Now if you're not familiar with whatnot, it's a.
+
+44
+00:02:03,560 --> 00:02:08,040
+直播购物平台，是美国有史以来增长最快的 marketplace 业务
+Livestream shopping platform, it's the fastest growing US marketplace business of all time.
+
+45
+00:02:08,520 --> 00:02:12,240
+中间 Tom 还聊到他怎么在平台上从一位渔民那儿买了只新鲜龙虾
+At one point, Tom shares how he bought a fresh lobster from a fisherman on the platform.
+
+46
+00:02:12,730 --> 00:02:17,076
+进入正题前，别忘了看看 Lenny's ProductPass.com，可以免费
+Before we get into it, don't forget to check out Lenny's ProductPass.com for a free
+
+47
+00:02:17,076 --> 00:02:21,485
+使用一年全球最热门、做得最精美的 AI 产品
+year of the hottest and most beautifully crafted AI products in the world available
+
+48
+00:02:21,485 --> 00:02:24,130
+仅对 Lenny's newsletter 订阅者开放
+exclusively to Lenny's newsletter subscribers.
+
+49
+00:02:24,490 --> 00:02:26,410
+那么，有请 Tom Verrilli
+With that, I bring you Tom Verrilli.
+
+50
+00:02:29,810 --> 00:02:33,650
+Tom，非常感谢你来，欢迎上节目
+Tom, thank you so much for being here, and welcome to the podcast.
+
+51
+00:02:33,850 --> 00:02:36,450
+太感谢了，兄弟。看了这么多年，现在坐在这儿感觉有点不真实
+Thank you so much, dude. It feels kind of surreal after years of watching.
+
+52
+00:02:37,680 --> 00:02:41,840
+我懂，我懂。大家上节目时都这么说，第一次上，却听了很久
+I hear that. I hear that. When people come on the podcast, here you are, first time, long time.
+
+53
+00:02:42,960 --> 00:02:43,600
+没错
+That's right.
+
+54
+00:02:45,040 --> 00:02:48,153
+我想从你在网上写的一句话开始
+I want to start with something that you wrote online
+
+55
+00:02:48,153 --> 00:02:53,076
+它让很多人吃惊，我想也会让很多人吃惊，尤其出自一位
+that surprised a lot of people and I think will surprise a lot of people coming from
+
+56
+00:02:53,076 --> 00:02:56,840
+长期担任首席产品官、长期做产品的人之口
+a long time chief product officer, long time product builder.
+
+57
+00:02:56,960 --> 00:02:59,360
+一个打造过很多成功产品和团队的人
+Someone that's built a lot of very successful products and teams.
+
+58
+00:03:00,010 --> 00:03:02,732
+你写的是：从最早成立起
+What you wrote is, since its earliest inception,
+
+59
+00:03:02,732 --> 00:03:06,980
+Whatnot 的产品团队就建立在一个相当简单的前提上
+the whatnot product team has built was built on the somewhat simple premise,
+
+60
+00:03:06,980 --> 00:03:09,370
+我们很遗憾产品管理这个职能存在
+we regret that product management exists.
+
+61
+00:03:09,770 --> 00:03:13,827
+是的。这话你大概不常从很多 CPO 嘴里听到
+Yes, sir. Not a thing you probably hear from a lot of CPOs.
+
+62
+00:03:13,827 --> 00:03:16,330
+那说说你为什么会这么想
+No talk about why you feel this way.
+
+63
+00:03:16,450 --> 00:03:18,690
+说说你是怎么走到这一步的，说说这意味着什么
+Talk about how you got to this place. Talk about what this means.
+
+64
+00:03:19,330 --> 00:03:19,610
+好的
+Sure.
+
+65
+00:03:20,160 --> 00:03:25,120
+我总是喜欢从历史讲起，这样才能理解事情
+I mean, I always try and start with like history in order to understand kind of things.
+
+66
+00:03:25,280 --> 00:03:27,905
+说到产品管理，有一点是这样的
+And one of the things when you come to product management is
+
+67
+00:03:27,905 --> 00:03:31,120
+如果一路追溯回去，其实产品管理原本并不存在，对吧
+if you go all the way back, like product management didn't exist, right?
+
+68
+00:03:31,200 --> 00:03:34,282
+一开始就是业务方，往往是创始人、
+It was like the business and, you know, very often founder,
+
+69
+00:03:34,282 --> 00:03:36,546
+CEO 那类人直接跟工程
+CEO types talking directly to engineering
+
+70
+00:03:36,546 --> 00:03:40,320
+和设计沟通我们要做什么，然后一起把它做出来
+and design about what we needed to build and then executing it together.
+
+71
+00:03:41,070 --> 00:03:43,665
+而事实证明，互联网业务
+And, you know, internet businesses, it turns out,
+
+72
+00:03:43,665 --> 00:03:46,630
+的扩张速度比历史上任何业务都快得多
+scaled a lot faster than any other businesses in history.
+
+73
+00:03:47,150 --> 00:03:51,900
+所以到了某个阶段，规模化就意味着把执行细节交给别人
+And so at some point, scale meant delegating the specifics of execution to somebody
+
+74
+00:03:51,900 --> 00:03:54,886
+或者信任别人去想清楚接下来做什么
+or trusting somebody else to work out what comes next
+
+75
+00:03:54,886 --> 00:03:58,550
+因为要处理的事情太多，一个人根本忙不过来
+because there's just too many things on for somebody to sit with.
+
+76
+00:03:58,910 --> 00:04:02,392
+但如果你看看大多数创业公司，或者想想这个演变过程
+But if you think about most startups or you think about how that evolution worked,
+
+77
+00:04:02,392 --> 00:04:05,310
+那本质上是一个专门的角色，由某个人来把事情理清
+that was really a specialist role where somebody was working it out.
+
+78
+00:04:05,350 --> 00:04:07,880
+通常你跟工程师说的话更少
+It was usually you said less things to the engineer
+
+79
+00:04:07,880 --> 00:04:11,615
+你需要更少的细节去描述你想完成什么
+where you had to describe in less detail what you were trying to get done to,
+
+80
+00:04:11,615 --> 00:04:15,230
+跟设计师也一样，因为他们已经理解或参与其中了
+to a designer because they understood or they'd, they'd been involved.
+
+81
+00:04:15,670 --> 00:04:20,051
+而说我们需要这样一类专门做决策的人
+And this idea that we need this kind of specialist decision making class of humans
+
+82
+00:04:20,051 --> 00:04:24,238
+在科技行业其实是更近代才有的一种职能，而非纯粹的必需
+in tech is really a more modern function, uh, than it is a, like pure necessity,
+
+83
+00:04:24,238 --> 00:04:26,880
+我的看法，也是
+you know, the way I would think about it and the way
+
+84
+00:04:26,880 --> 00:04:29,070
+Whatnot 一直以来的态度是这样的
+that whatnot is always treated is, like.
+
+85
+00:04:29,540 --> 00:04:33,095
+如果工程和设计本身就掌握了足够的背景信息
+It would actually be way better if engineering and design had the context
+
+86
+00:04:33,095 --> 00:04:35,660
+能直接在那里做出很棒的决策，那其实会好得多
+that they needed to just make great decisions there.
+
+87
+00:04:35,700 --> 00:04:38,805
+如果他们非常了解用户和用户的需求
+If they were so in touch with users and what they needed,
+
+88
+00:04:38,805 --> 00:04:41,438
+以至于能做出和产品经理一样的决策
+that they could kind of make the same decisions
+
+89
+00:04:41,438 --> 00:04:45,016
+据我所知，唯一能支持
+that a product manager is the only argument, as far as I'm aware,
+
+90
+00:04:45,016 --> 00:04:49,742
+让产品管理成为一个专门职能的理由，其实是
+for why you would want product management to be a specialist function is really it's
+
+91
+00:04:49,742 --> 00:04:51,700
+它是一门手艺，而不是一张资格证
+a trade, not a qualification. And.
+
+92
+00:04:51,900 --> 00:04:54,700
+我的意思是，它是靠动手做才能练好的东西
+And what I mean by that is it's something you get good at by doing.
+
+93
+00:04:55,420 --> 00:04:57,380
+用个更贴切的说法，它是一块肌肉
+It's a muscle for one of a better term.
+
+94
+00:04:57,700 --> 00:05:00,860
+而每个私人教练都告诉过我，肌肉是靠一次次训练练出来的
+And as every private trainer has ever told me, muscles are built by reps.
+
+95
+00:05:01,340 --> 00:05:03,540
+所以你做得越多，就越擅长
+And so the more you do it, the better you get at it.
+
+96
+00:05:03,700 --> 00:05:06,965
+但反过来说，你越是把工程师
+But the, the flip side of that is the more you abstract your engineers
+
+97
+00:05:06,965 --> 00:05:10,860
+和设计师从这些事情中抽离出来，他们的肌肉就越得不到锻炼
+and your designers from doing the same thing, their muscle gets underdeveloped.
+
+98
+00:05:11,260 --> 00:05:14,420
+所以我认为产品管理扮演着非常重要的角色
+And so I think product management plays a really important role.
+
+99
+00:05:14,540 --> 00:05:18,774
+我觉得你可以把产品管理部署到那些
+And I think, you know, you can deploy product management to have a really important
+
+100
+00:05:18,774 --> 00:05:21,780
+特别需要做好的事情上，发挥重要的杠杆作用
+leverage on particular things that need to go really well.
+
+101
+00:05:22,580 --> 00:05:24,788
+在很多情况下，这样做能让设计
+And in a lot of ways, doing that lets design
+
+102
+00:05:24,788 --> 00:05:28,700
+和工程在那些场景里把自己的手艺发挥到极致
+and engineering be the best they can be at their craft in those situations.
+
+103
+00:05:29,220 --> 00:05:32,540
+但只要有可能，最理想的其实是不设产品经理
+But wherever possible, it's kind of optimal to not have a product manager.
+
+104
+00:05:33,420 --> 00:05:36,156
+而是让设计和工程自己走一遍
+And instead have design and engineering going through those,
+
+105
+00:05:36,156 --> 00:05:39,260
+那些步骤，确保他们的肌肉得到充分锻炼
+those kind of steps and making sure that their muscles are well reps.
+
+106
+00:05:39,700 --> 00:05:43,821
+你是不是觉得，产品管理在早期非常有帮助、也很重要
+Do you feel like product management was very helpful early on and was important
+
+107
+00:05:43,821 --> 00:05:46,318
+然后经历了一个阶段——哇
+and then it kind of went through a period of, wow,
+
+108
+00:05:46,318 --> 00:05:48,940
+有太多并不那么出色的 PM 了
+there's way too many PMs that are not that amazing.
+
+109
+00:05:49,340 --> 00:05:52,860
+而现在又开始回归到：到底什么才是优秀的 PM
+And now there's kind of this coming back to, okay, what is actually an amazing PM?
+
+110
+00:05:52,900 --> 00:05:54,100
+也许我们需要的 PM 更少
+And maybe we need fewer of them.
+
+111
+00:05:54,460 --> 00:05:58,717
+是的，有趣的是，我觉得如果你去问大多数工程师，甚至设计师
+Yeah, uh, the funny thing is I think if you talk to most engineers or even designers,
+
+112
+00:05:58,717 --> 00:06:01,925
+他们能记住合作过的那些优秀 PM
+they will remember for the great PMs that they've worked with,
+
+113
+00:06:01,925 --> 00:06:04,640
+主要是因为他们合作过太多糟糕的 PM 了
+mostly because they've worked with so many bad ones.
+
+114
+00:06:05,240 --> 00:06:08,852
+我这么说并不是要打击谁、也不是贬低
+Uh, and I don't mean that as a disheartening pejorative for folks,
+
+115
+00:06:08,852 --> 00:06:12,266
+而是说，如果你作为一个职能
+but I think it's more, you know, if you're being kind of really,
+
+116
+00:06:12,266 --> 00:06:14,236
+真的非常严格地自我审视——
+really self critical as a function,
+
+117
+00:06:14,236 --> 00:06:17,848
+普通 PM 能给周围的人带来大量价值吗？像
+does the average PM add a ton of value to folks around them in the way
+
+118
+00:06:17,848 --> 00:06:21,000
+真正高质量的产品管理所能做到的那样吗
+that having really high quality product management can.
+
+119
+00:06:21,280 --> 00:06:21,600
+你懂的
+You know.
+
+120
+00:06:22,440 --> 00:06:25,851
+像他们那样传递清晰、吸收模糊，或者说
+Disseminate clarity and absorb ambiguity in the ways that they can or like,
+
+121
+00:06:25,851 --> 00:06:27,800
+帮助人们做出非常及时的决策
+help people make really timely decisions.
+
+122
+00:06:28,400 --> 00:06:32,239
+我觉得很大程度上是因为，随着科技公司规模扩大
+And I think a lot of it is this function of like as tech companies scaled
+
+123
+00:06:32,239 --> 00:06:35,880
+在某个阶段我们雇了太多工程师
+and we ended up hiring so many engineers somewhere along the line,
+
+124
+00:06:35,880 --> 00:06:37,800
+我不想把责任推到 HR 身上
+and I don't want to pin it on like HR.
+
+125
+00:06:37,920 --> 00:06:42,484
+但在某个阶段，出现了这种小组的人员配比
+But somewhere along the line, this kind of HR ratio of like a pod popped into being,
+
+126
+00:06:42,484 --> 00:06:46,713
+你懂的，每雇六个工程师，就加一个设计师、一个 PM
+you know, every time you hire six engineers, you add a designer, you add a PM,
+
+127
+00:06:46,713 --> 00:06:50,002
+再加一个 EM，这样一个核心团队就成型了
+you add an EM, and the and the, you know, the nucleus exists.
+
+128
+00:06:50,002 --> 00:06:53,090
+然后当你在做十亿 DAU 级别的产品时
+And then when you're now serving billion DAU products.
+
+129
+00:06:53,210 --> 00:06:56,930
+你有一大堆工程师，于是突然间也就有了一大堆产品经理
+You got a lot of engineers and so now all of a sudden you got a lot of product managers.
+
+130
+00:06:57,570 --> 00:07:03,460
+而在大多数情况下，通知基础设施其实并不需要一个 PM，对吧
+And in most cases, you probably don't need a PM for notifications infrastructure, right?
+
+131
+00:07:04,220 --> 00:07:07,260
+工程师完全有能力理解那套东西是怎么运作的
+Engineers are perfectly capable of understanding how that works.
+
+132
+00:07:07,700 --> 00:07:10,555
+而且在很多方面，就像我们刚才说的
+And in a lot of ways, you know, as we just described,
+
+133
+00:07:10,555 --> 00:07:13,207
+雇这么多 PM 反而让工程师变得幼稚化
+hiring so many PMs infantilizes the engineers
+
+134
+00:07:13,207 --> 00:07:17,150
+也让那些完全有能力做出好决策的设计师如此
+and the designers who are perfectly capable of making good decisions
+
+135
+00:07:17,150 --> 00:07:20,889
+但他们从来不需要自己做，因为总有个 PM 在旁边照看着
+but just never had to because there was always a PM to babysit them.
+
+136
+00:07:20,889 --> 00:07:23,540
+本期节目由我们本季的
+This episode is brought to you by our season's.
+
+137
+00:07:23,620 --> 00:07:25,340
+首席赞助商 WorkOS 为你呈现
+Presenting sponsor WorkOS.
+
+138
+00:07:26,040 --> 00:07:29,308
+OpenAI、Anthropic、Cursor、Vercel、Replit、
+What do OpenAI, Anthropic, Cursor, Vercel, Replit,
+
+139
+00:07:29,308 --> 00:07:33,480
+Sierra、Clay 以及数百家成功公司有什么共同点
+Sierra, Clay and hundreds of other winning companies all have in common?
+
+140
+00:07:34,000 --> 00:07:35,640
+它们都由 WorkOS 提供支持
+They are all powered by WorkOS.
+
+141
+00:07:36,320 --> 00:07:39,069
+如果你在为企业客户开发产品
+If you're building a product for the enterprise,
+
+142
+00:07:39,069 --> 00:07:42,757
+你一定体会过集成 single sign-on、SCIM、RBAC、
+you've felt the pain of integrating single sign on, SCIM, RBAC,
+
+143
+00:07:42,757 --> 00:07:46,109
+审计日志等大公司所需功能的痛苦
+audit logs and other features required by large companies,
+
+144
+00:07:46,109 --> 00:07:50,803
+WorkOS 用现代开发者平台把这些成交障碍变成即插即用的 API
+WorkOS turns those deal blockers into drop in APIs with a modern developer platform
+
+145
+00:07:50,803 --> 00:07:52,680
+专为 B2B SaaS 打造
+built specifically for B2B SaaS.
+
+146
+00:07:53,570 --> 00:07:55,997
+我投资的每一家创业公司
+Literally every startup that I'm an investor in
+
+147
+00:07:55,997 --> 00:07:59,515
+只要开始向高端市场扩展，最后都会用上 WorkOS
+that starts to expand up market ends up working with WorkOS and that's
+
+148
+00:07:59,515 --> 00:08:00,850
+因为他们是最好的
+because they are the best.
+
+149
+00:08:01,290 --> 00:08:05,017
+无论你是想拿下第一个企业客户的种子期创业公司
+Whether you are a seed stage startup trying to land your first enterprise customer
+
+150
+00:08:05,017 --> 00:08:06,530
+还是正在全球扩张的独角兽
+or a unicorn expanding globally.
+
+151
+00:08:06,850 --> 00:08:11,065
+WorkOS 都是最快实现企业级就绪、打通增长的路径
+WorkOS is the fastest path to becoming enterprise ready and unblocking growth.
+
+152
+00:08:11,065 --> 00:08:13,770
+它本质上就是企业级功能领域的 Stripe
+It's essentially Stripe for enterprise features.
+
+153
+00:08:14,270 --> 00:08:17,036
+访问 workos.com 即可上手，或者直接去他们的 Slack
+Visit workos.com to get started or just hit up their Slack
+
+154
+00:08:17,036 --> 00:08:20,390
+那里有真正的工程师等着解答你的问题
+where they have actual engineers waiting to answer your questions.
+
+155
+00:08:20,950 --> 00:08:23,850
+WorkOS 让你借助好用的 API、
+WorkOS allows you to build faster with delightful APIs,
+
+156
+00:08:23,850 --> 00:08:26,750
+完善的文档和流畅的开发者体验更快构建产品
+comprehensive docs and a smooth developer experience.
+
+157
+00:08:27,390 --> 00:08:30,670
+立即访问 workos.com，让你的应用实现企业级就绪
+Go to workos.com to make your app enterprise ready today.
+
+158
+00:08:31,630 --> 00:08:34,912
+我发现按这种思路想问题的人最终都会遇到一个情况
+Something that I find people run into eventually when they think this way
+
+159
+00:08:34,912 --> 00:08:36,795
+我想听听你的看法，那就是工程师
+that I want to get your take on is engineers
+
+160
+00:08:36,795 --> 00:08:39,646
+和设计师未必想做 PM 的那些工作
+and designers don't necessarily want to be doing the work of a PM
+
+161
+00:08:39,646 --> 00:08:42,390
+因为 PM 的很多工作挺烦人、也没意思
+because a lot of the work of a PM is kind of annoying and not fun.
+
+162
+00:08:42,950 --> 00:08:44,278
+你知道，它有光鲜的一面
+And, you know, there's a glamour part,
+
+163
+00:08:44,278 --> 00:08:46,270
+比如做决策，其实没大家想的那么光鲜
+like making decisions less glamorous than people think.
+
+164
+00:08:46,350 --> 00:08:49,310
+对，没错。你怎么看这个问题
+Yeah. Yes, exactly. How do you think about that?
+
+165
+00:08:49,310 --> 00:08:51,363
+尤其是随着公司规模扩大
+Just like especially as a company scales,
+
+166
+00:08:51,363 --> 00:08:54,707
+工程师得去开对齐会议、得写文档
+engineers having to be in alignment meetings, having to write docs,
+
+167
+00:08:54,707 --> 00:08:56,936
+让所有人达成一致、做记录，你懂的
+aligning everyone and taking note, you know,
+
+168
+00:08:56,936 --> 00:09:00,339
+PM 这些琐碎的部分，而且很关键的是
+all these like kind of minutia part of PM and also that's the big, like,
+
+169
+00:09:00,339 --> 00:09:02,920
+他们也想，你知道，工程师想搭东西
+they also want to, you know, engineers want to build.
+
+170
+00:09:03,000 --> 00:09:04,600
+工程师想写代码，设计师想做设计
+Engineers want to code. Designers want to design.
+
+171
+00:09:04,760 --> 00:09:09,520
+对于他们其实未必想做那些工作这一点，你怎么看
+How do you think about that element of they may not actually want to be doing that work?
+
+172
+00:09:09,720 --> 00:09:12,400
+我觉得这正是专业化双向起作用的地方，对吧
+I think this is where like specialization works both ways, right?
+
+173
+00:09:12,520 --> 00:09:15,720
+有一批擅长做决策的人是很有价值的
+It is useful to have folks who are well honed in making decisions.
+
+174
+00:09:15,880 --> 00:09:18,600
+同样，某个人说这话也完全合理，比如
+It's totally reasonable as well for someone to say, listen, uh,
+
+175
+00:09:18,600 --> 00:09:21,268
+我是基础设施负责人，我想多花心思在扩展性上
+I'm an infrastructure lead and I want to think a lot about scale
+
+176
+00:09:21,268 --> 00:09:23,782
+我不想把时间花在争论，你懂的
+and I do not want to have to spend my time debating, you know,
+
+177
+00:09:23,782 --> 00:09:25,270
+达成一致或争取大家认同上
+alignment or getting those buy-ins.
+
+178
+00:09:25,510 --> 00:09:29,310
+当然，对吧。而且某些技能不一定能很好地迁移，对吧
+Sure. Right. And certain skill sets don't necessarily translate super well, right?
+
+179
+00:09:29,310 --> 00:09:32,365
+如果你很擅长在脑子里构建关于基础设施该如何扩展的宏大心智模型
+If you're really good at building big mental models in your head of how
+
+180
+00:09:32,365 --> 00:09:35,736
+你可能并不具备去倾听的那种技能
+infrastructure should scale, you may not have the skill set of listening to a
+
+181
+00:09:35,736 --> 00:09:39,160
+客户，真正理解核心问题，而不是
+customer and actually understanding the core problem as opposed to the thing
+
+182
+00:09:39,160 --> 00:09:42,162
+他们说的那个表面需求，这也是我们逐渐积累出来的认识
+that they said, which again, just a thing that we've built over time.
+
+183
+00:09:42,162 --> 00:09:43,110
+所以我的假设是——
+So my supposition of.
+
+184
+00:09:43,110 --> 00:09:46,424
+“我们后悔”并不是说我们不想要产品经理
+We regret isn't to say that we don't want product managers,
+
+185
+00:09:46,424 --> 00:09:48,588
+只是我们意识到在那些情况下
+just we recognize in those situations
+
+186
+00:09:48,588 --> 00:09:51,970
+你确实需要帮助其他职能去专业化
+that you do need to kind of help other functions specialize.
+
+187
+00:09:52,250 --> 00:09:54,082
+但我觉得我们之所以这样表述
+But I think it's we, we articulate it
+
+188
+00:09:54,082 --> 00:09:56,463
+是为了强迫自己记住
+that way to kind of force ourselves to remember
+
+189
+00:09:56,463 --> 00:09:59,210
+你不会仅仅为了招 PM 而招 PM
+that you don't hire a PM just for the sake of hiring one.
+
+190
+00:09:59,250 --> 00:10:01,130
+你是因为一个非常具体的需求才招他
+You hire one with this really specific need.
+
+191
+00:10:01,850 --> 00:10:03,568
+Lenny，我觉得随之而来的是
+And I think what goes with it, Lenny,
+
+192
+00:10:03,568 --> 00:10:06,890
+你必须围绕这一点来打造组织文化
+is like you have to build the culture of the organization around that.
+
+193
+00:10:07,080 --> 00:10:09,496
+举个例子，当我们说
+So for example, when we say we, you know,
+
+194
+00:10:09,496 --> 00:10:14,620
+我们后悔产品管理存在时，每次写关于如何发布产品
+we regret product management exists every time we write documents about how we ship
+
+195
+00:10:14,620 --> 00:10:18,720
+或我们在做什么的文档时，我们都很明确：任何人都可以推动
+or what we're doing, we're very kind of clear that anyone can bring.
+
+196
+00:10:19,240 --> 00:10:22,350
+也就是说，新产品开发的 DRI 可以是
+You know, change forward that we can have DRIs of new product development
+
+197
+00:10:22,350 --> 00:10:23,880
+一个工程师，或者一个设计师
+that is an engineer or is a designer,
+
+198
+00:10:23,880 --> 00:10:26,786
+但每个人都要经过同样的流程，比如
+but that everybody goes through that same level of function of like,
+
+199
+00:10:26,786 --> 00:10:28,520
+你得走产品评审
+you've got to go through product review.
+
+200
+00:10:28,640 --> 00:10:31,080
+你得真正把活干了，因为这是实打实的工作
+You've got to actually do the work because it is real work.
+
+201
+00:10:31,600 --> 00:10:35,108
+如果有人不想做这个，想做点别的
+And if people don't want to do that, if they kind of want to do something else,
+
+202
+00:10:35,108 --> 00:10:37,280
+我们总是可以调整产品管理的分配
+we can always move product management around.
+
+203
+00:10:37,520 --> 00:10:40,728
+所以，与其把 PM 固定分配给团队，默认
+And so rather than mapping PMs to teams where you kind of assume
+
+204
+00:10:40,728 --> 00:10:42,332
+PM 永远负责那件事
+that the PM will always do that,
+
+205
+00:10:42,332 --> 00:10:45,786
+我们更倾向于把他们对应到问题或核心项目上
+we tend to map them to kind of problems or kind of like core projects,
+
+206
+00:10:45,786 --> 00:10:48,007
+这意味着会有一年多的时间里
+and that means that there will be a year more
+
+207
+00:10:48,007 --> 00:10:51,400
+某个特定工程团队没有配 PM
+where there isn't a PM attached to a particular engineering team.
+
+208
+00:10:51,520 --> 00:10:54,757
+尽管还有很多正在进行的产品工作要做
+Even though there's lots of ongoing product work to do,
+
+209
+00:10:54,757 --> 00:10:57,219
+我特别喜欢这一点，因为我们常听到
+what I love about this is we often hear, uh,
+
+210
+00:10:57,219 --> 00:11:00,596
+那些做偏技术边缘产品的人会这么说
+people at like edge oriented products talk like this, uh,
+
+211
+00:11:00,596 --> 00:11:03,270
+比如开发者工具，说我们不需要 PM
+like developer tools where we don't need PMs.
+
+212
+00:11:03,390 --> 00:11:04,190
+我们为什么需要 PM
+Why do we need PMs?
+
+213
+00:11:04,630 --> 00:11:07,270
+这种说法常常来自像 Linear 这样的公司
+Uh, and it's often comes from companies like linear and
+
+214
+00:11:07,270 --> 00:11:10,369
+以及那些做开发者工具的公司
+and on through like companies that are building developer tools
+
+215
+00:11:10,369 --> 00:11:12,550
+你能理解为什么在那里工程师就够了
+where you could see why engineers are enough.
+
+216
+00:11:12,990 --> 00:11:15,952
+所以从你的角度听到这个观点特别有意思
+And so it's really interesting to hear from your perspective
+
+217
+00:11:15,952 --> 00:11:18,566
+因为你做的是非常面向消费者的产品，非常、
+because you've built very consumery products, very,
+
+218
+00:11:18,566 --> 00:11:22,400
+非常面向消费者的产品，你认为它们需要很强的 PM 技能
+very consumery products that require what you think are very strong PM skills.
+
+219
+00:11:22,760 --> 00:11:25,213
+所以这话意义重大，尤其是出自你之口
+So it means a lot, even more so coming from you,
+
+220
+00:11:25,213 --> 00:11:27,473
+你却发现 PM 并不像人们以为的那样
+that you find that PMs aren't as necessary
+
+221
+00:11:27,473 --> 00:11:30,120
+在打造伟大产品时那么必不可少
+as people may think in building something great.
+
+222
+00:11:30,560 --> 00:11:33,200
+是的，我觉得有两方面促成了这一点
+Yeah, I think there was like two parts that that drove it.
+
+223
+00:11:33,600 --> 00:11:36,421
+我这里讲的很多东西，确实是
+And I've certainly like a lot of what I'm kind of talking about here are things
+
+224
+00:11:36,421 --> 00:11:37,920
+我这些年逐渐学到的
+that I've definitely Learned over time.
+
+225
+00:11:37,960 --> 00:11:41,460
+在来 Whatnot 之前，我在 Twitch 待了七年
+You know, I spent seven years at Twitch prior to time at whatnot.
+
+226
+00:11:41,460 --> 00:11:45,060
+那里非常 Amazon 式，讲究两个披萨团队、看比例
+And that was very Amazon to pizza team, you know, ratio driven.
+
+227
+00:11:45,820 --> 00:11:47,390
+我在硅谷是从 Twitter 起步的
+I started in the valley at Twitter and
+
+228
+00:11:47,390 --> 00:11:50,630
+那里同样非常讲究这种紧密的对齐
+that was similarly very like you always had this kind of very tight alignment
+
+229
+00:11:50,630 --> 00:11:53,060
+天哪，那时有一大堆对齐会议
+and there was, god, there was a lot of alignment meetings.
+
+230
+00:11:53,100 --> 00:11:55,060
+所以你能想象工程师为什么不想参加
+So you can imagine why engineers didn't want to be in them.
+
+231
+00:11:55,380 --> 00:11:58,274
+随着时间推移，我慢慢明白
+And it's kind of evolved over time to understand that like,
+
+232
+00:11:58,274 --> 00:12:02,173
+其实很多都只是因为管理层看不到
+actually a lot of that is just a function of like management not being able to see
+
+233
+00:12:02,173 --> 00:12:03,000
+到底发生了什么
+what's going on.
+
+234
+00:12:03,000 --> 00:12:06,190
+于是你招更多人，加更多层级
+And so you, you hire more folks and you build more layers
+
+235
+00:12:06,190 --> 00:12:08,270
+你的系统又催生出更多系统
+and your systems beget systems and,
+
+236
+00:12:08,270 --> 00:12:11,668
+我觉得真正在改变的是，人们开始意识到
+and I think what's really changing is people are realizing
+
+237
+00:12:11,668 --> 00:12:16,176
+那种唯一的杠杆就是往下多招
+that like it's not true anymore that the only way to get leverage is just to hire
+
+238
+00:12:16,176 --> 00:12:17,840
+PM 的说法，已经不成立了
+more PMs underneath you and.
+
+239
+00:12:17,920 --> 00:12:19,497
+以及不断往上升级
+And be more senior that, you know,
+
+240
+00:12:19,497 --> 00:12:23,440
+现在我们对业务里发生的事有了更好的理解，这变得更容易了
+we've got a better understanding of what's happening in businesses now it's easier
+
+241
+00:12:23,440 --> 00:12:25,862
+直接和代码库对话
+to kind of like converse directly with the code base
+
+242
+00:12:25,862 --> 00:12:27,890
+以及和工程师沟通，都比以往任何时候都容易
+and talk to engineers than it ever has been.
+
+243
+00:12:28,290 --> 00:12:31,450
+所以你其实不用陷入那种一切都讲规模的思路
+And so you don't actually have to get into this like all scale thing.
+
+244
+00:12:31,450 --> 00:12:34,946
+我也不太觉得消费级和企业级还是关键的分界线了
+And I don't really think consumer or enterprise is the cutting point anymore,
+
+245
+00:12:34,946 --> 00:12:37,850
+我觉得更多在于组织本身的文化
+I think it's more kind of the culture of the organization itself.
+
+246
+00:12:38,370 --> 00:12:41,717
+在你看来，这种转变有多少是 AI 驱动的
+How much of this shift in your mind is AI driven
+
+247
+00:12:41,717 --> 00:12:47,530
+因为 AI 现在让非 PM 也能做 PM 的工作，又有多少是在 AI 之前就存在的
+because AI now enables non PMs to do PME work and how much of it was like pre pre AI.
+
+248
+00:12:47,650 --> 00:12:49,759
+然后我想聊聊这在你团队里到底是什么样子
+And then I want to talk about just what this actually looks like in your team,
+
+249
+00:12:49,759 --> 00:12:50,730
+但先让我问这个问题
+but let me ask that question first.
+
+250
+00:12:51,090 --> 00:12:55,610
+我不觉得这明确是因为 AI，但我确实认为 AI 让这件事容易多了
+I don't think it's explicitly because of AI, but I do think AI makes it a lot easier.
+
+251
+00:12:56,410 --> 00:12:59,268
+我觉得有两点。AI 肯定意味着
+I think it's two things. I think AI certainly means
+
+252
+00:12:59,268 --> 00:13:02,330
+一个 IC 能拥有巨大的杠杆
+that there's an enormous amount of leverage for an IC.
+
+253
+00:13:02,570 --> 00:13:04,715
+我不知道别人有多少这种感受
+Now, I don't know how much other people feel this,
+
+254
+00:13:04,715 --> 00:13:07,802
+但前几天我和几位资深负责人聊，我们都觉得
+but I was talking to a couple of our senior leads the other day and we feel
+
+255
+00:13:07,802 --> 00:13:09,895
+现在借助 AI 我们能做的事太多了
+that we're so capable of doing things now with AI
+
+256
+00:13:09,895 --> 00:13:12,930
+以至于你几乎会为那些还没做的事感到压力
+that you almost feel a bunch of pressure of the stuff you're not doing.
+
+257
+00:13:13,090 --> 00:13:15,919
+因为你知道，如果再挤出几个小时，你就能
+Because you know that if you carved out a couple more hours, you could,
+
+258
+00:13:15,919 --> 00:13:17,090
+你就能推动很多事情
+you could move a lot of stuff.
+
+259
+00:13:17,810 --> 00:13:21,217
+嗯，有了 AI 工具，快速推进肯定更容易
+Um, it's certainly easier to move fast with AI tooling
+
+260
+00:13:21,217 --> 00:13:26,290
+如果你有磨练得很好的判断力，你现在能在一个 Hex thread 上直接拉数据
+if you've got well honed judgment, you know, you can pull data now on a hex thread.
+
+261
+00:13:26,450 --> 00:13:31,433
+这基本上相当于2017年一个 Amazon L7 级别的
+That is basically what it would take a week, two weeks with an Amazon L7, you know,
+
+262
+00:13:31,433 --> 00:13:32,920
+数据科学家花一到两周才能做的事
+data scientist in 2017.
+
+263
+00:13:33,160 --> 00:13:35,565
+所以如果你被赋予了权力，又有好的判断力
+And so if you're empowered and have good judgment,
+
+264
+00:13:35,565 --> 00:13:39,517
+你基本上能做出非常快的决策，让大家持续往前推进
+you can basically make really quick decisions and just kind of keep people moving,
+
+265
+00:13:39,517 --> 00:13:40,720
+这非常了不起
+which is extraordinary.
+
+266
+00:13:41,400 --> 00:13:45,530
+但不只是 AI，我觉得还有很多关于比例的，你知道的
+But more than just AI, I think it's also a lot of those kind of like ratio, you know,
+
+267
+00:13:45,530 --> 00:13:49,722
+这些推动也伴随着一系列其他文化上的推动，比如，你知道的
+like kind of pushes also came with a bunch of other cultural pushes like, you know,
+
+268
+00:13:49,722 --> 00:13:51,880
+雇优秀的人，然后别挡他们的路
+hire great people and get out of their way.
+
+269
+00:13:52,280 --> 00:13:54,361
+自下而上、路线图，以及所有这些环节
+Bottoms up, roadmaps and, and all of those pieces
+
+270
+00:13:54,361 --> 00:13:57,661
+我觉得科技行业在过去这段时间里发生了一点文化上的转变
+where I think there's been a bit of a cultural shift in tech over the last little
+
+271
+00:13:57,661 --> 00:14:00,960
+就是其实自上而下也挺好，因为高层的人
+while, which is like actually top down is pretty good because folks at the top.
+
+272
+00:14:01,560 --> 00:14:05,800
+一般来说，能做出快速决策，省掉所有这些对齐的争论
+Generally speaking, can make quick decisions and remove all of this alignment debate.
+
+273
+00:14:06,480 --> 00:14:09,480
+他们掌握的宏观背景可能比大多数人都多
+They have probably more macro context than most folks.
+
+274
+00:14:09,980 --> 00:14:13,735
+假设他们真正了解一线真实情况，而且足够优秀
+And assuming that they are genuinely in touch with ground truth and are good enough,
+
+275
+00:14:13,735 --> 00:14:17,437
+让高层领导参与很多这类决策，其实是一个非常高效的模式
+it's actually a really efficient model to be able to kind of have senior leadership
+
+276
+00:14:17,437 --> 00:14:19,100
+参与到很多这些决策中
+involved in a lot of those decisions.
+
+277
+00:14:19,540 --> 00:14:23,183
+这意味着，让他们高效的不只是工具
+Which means you it's not just the tooling that makes them efficient,
+
+278
+00:14:23,183 --> 00:14:25,995
+你可以让一位非常资深的 PM 负责更多事情
+but you can have one very senior PM across more things
+
+279
+00:14:25,995 --> 00:14:28,807
+而他们可能比，你知道的
+and they can be more efficient than having, you know,
+
+280
+00:14:28,807 --> 00:14:30,660
+三个相对初级的 PM 更高效
+three relatively entry level PMs.
+
+281
+00:14:31,190 --> 00:14:33,670
+但 AI 无疑让这一切都容易得多
+But certainly AI makes all of that a lot easier.
+
+282
+00:14:33,710 --> 00:14:36,750
+好，再回到那个大前提
+Again, so just to kind of coming back to the broad premise,
+
+283
+00:14:36,750 --> 00:14:39,030
+我觉得澄清这一点非常重要
+which I think is very important to clarify.
+
+284
+00:14:39,990 --> 00:14:44,362
+关于「遗憾产品管理存在」这个观点，并不是说我们不想要或
+This point about regretting product management exists isn't saying we don't want or
+
+285
+00:14:44,362 --> 00:14:45,470
+不认为 PM 有用
+think PMs are useful.
+
+286
+00:14:45,590 --> 00:14:49,390
+而是说，最好别假设每个地方都需要一个 PM
+It's that it is better to not assume we need a PM in every place.
+
+287
+00:14:49,630 --> 00:14:53,950
+让其他职能也能做 PM 的工作，是件好事
+And it is great to enable other functions to do the PM work.
+
+288
+00:14:54,380 --> 00:14:58,540
+呃，而且 PM 也会剥夺别人去做那些
+Uh, and also just PMs kind of take away the reps from people being able to do the
+
+289
+00:14:58,540 --> 00:14:59,580
+PM 该做的事的练习机会
+things that PMs do.
+
+290
+00:14:59,660 --> 00:15:02,325
+如果他们能做这些工作，他们其实能执行得更好
+And if they can do that work, they can actually execute better,
+
+291
+00:15:02,325 --> 00:15:03,350
+做出更好的产品
+build better products.
+
+292
+00:15:03,470 --> 00:15:07,829
+你知道，我觉得对 PM 来说，不被固定绑定到某个团队
+You know, I think it's also better for PMs to not be mapped specifically to a team
+
+293
+00:15:07,829 --> 00:15:11,990
+会比说「我们跟着某某走」更好，你会积累更多、更好的实战经验
+than it is to say, we go with the workers, you will build more and better reps.
+
+294
+00:15:12,070 --> 00:15:16,044
+通过在你负责的事情之间流动，你能锻炼到更多的肌肉群
+You can work out more muscle groups by like moving around on the things you work on
+
+295
+00:15:16,044 --> 00:15:19,485
+而不是说，我被绑在这个 EM 负责的东西上，那我们就
+as opposed to saying, I'm attached to whatever this em owns, so let's,
+
+296
+00:15:19,485 --> 00:15:20,790
+就顺着那条线走
+let's follow that thread.
+
+297
+00:15:21,400 --> 00:15:23,259
+你的团队是什么样的
+What does your, what does the team look like?
+
+298
+00:15:23,259 --> 00:15:25,720
+Whatnot 的 PM／工程／设计团队是什么样的
+What does the PM slash Eng design team look like at whatnot?
+
+299
+00:15:25,720 --> 00:15:29,198
+在这种世界观下，这个组织是什么样子？是的，我们，嗯
+What what does this org look like in this world view? Yeah, we've, um,
+
+300
+00:15:29,198 --> 00:15:30,480
+我们刚刚超过20个 PM
+we've just passed 20 PMs.
+
+301
+00:15:30,640 --> 00:15:35,158
+我们现在大概有，我想是21、22个PM，就在公司里
+We have, uh, kind of, I think 21, 22 PMs, uh, in the building today, which, um,
+
+302
+00:15:35,158 --> 00:15:39,819
+对于关注我们发展轨迹的人来说，考虑到
+for those following what our trajectory is, is pretty small considering, uh,
+
+303
+00:15:39,819 --> 00:15:42,400
+考虑到我们卖家创造的 GMV（商品交易总额）规模，这个数量算相当小
+the volume of, of GMV that our sellers move.
+
+304
+00:15:42,970 --> 00:15:46,459
+我们很松散地分成三个组，大概是买家、
+We're very loosely organized into three groups, kind of buyer,
+
+305
+00:15:46,459 --> 00:15:49,290
+卖家，还有我们称之为信任与风险的组
+seller and what we would call kind of trust and risk.
+
+306
+00:15:49,410 --> 00:15:53,930
+就是负责我们标准的人，比如支付、安全之类的
+So the folks looking after our standards, you know, payments, kind of safety, et cetera.
+
+307
+00:15:54,370 --> 00:15:57,432
+然后在这些大的组里面
+And then within those kind of like broad groups,
+
+308
+00:15:57,432 --> 00:16:00,570
+我们基本上会很经常地重新分配PM
+we basically reassign the PMs pretty regularly.
+
+309
+00:16:00,810 --> 00:16:03,090
+所以大家只是有个大致的归属
+So people have like loose, you know, alignment.
+
+310
+00:16:03,680 --> 00:16:07,960
+你可能大致是个增长PM，或者大致做发现相关的事
+Um, you might be like broadly a growth PM or broadly kind of like work on discovery.
+
+311
+00:16:08,320 --> 00:16:11,184
+但即便在这些组之间，也会被重新分配
+Um, but even amongst those groups kind of gets allocated
+
+312
+00:16:11,184 --> 00:16:14,171
+而且调动得很快，这是因为
+and moved around pretty quickly and that's because the way
+
+313
+00:16:14,171 --> 00:16:17,766
+我们的规划方式是每六个月，CEO、我
+that we do planning is like every six months, you know, the CEO, myself,
+
+314
+00:16:17,766 --> 00:16:21,240
+还有一些人和高级负责人会坐下来，明确
+some other folks and senior leads will sit down and just define what.
+
+315
+00:16:21,360 --> 00:16:22,948
+接下来六个月需要达成什么
+What needs to be true over the next 6 months,
+
+316
+00:16:22,948 --> 00:16:24,360
+作为一家公司我们必须完成什么
+what do we have to get done as a company?
+
+317
+00:16:25,190 --> 00:16:28,947
+既包括成果，也包括关键项目，然后我们坐下来
+Um, both in terms of like outcomes and critical projects and then we sit down
+
+318
+00:16:28,947 --> 00:16:31,690
+过一遍这个清单，问谁是DRI
+and we go through that list and say who's, who's the DRI?
+
+319
+00:16:31,850 --> 00:16:32,930
+谁对这件事负责
+Who's accountable for that?
+
+320
+00:16:33,450 --> 00:16:36,010
+这基本上就是我们分配PM工作的方式
+And that's mostly how we end up allocating PM work.
+
+321
+00:16:36,090 --> 00:16:38,666
+所以经常会有这样的情况
+And so quite regularly you'll have something, you know,
+
+322
+00:16:38,666 --> 00:16:41,460
+我们今天早上刚结束一个规划周期
+we've just finished a planning cycle literally this morning
+
+323
+00:16:41,460 --> 00:16:45,242
+你经常过完这些，到最后会说，好
+and you'll quite regularly go through those and you'll get to the end and say, cool,
+
+324
+00:16:45,242 --> 00:16:48,858
+有件事在好几个不同团队的路线图里
+there's this thing that's like second or third priority in a bunch of different
+
+325
+00:16:48,858 --> 00:16:51,160
+都是第二或第三优先级，感觉真的很重要。谁——
+teams roadmaps that feels really important. Who.
+
+326
+00:16:51,200 --> 00:16:51,680
+来负责这件事
+Owns that.
+
+327
+00:16:51,840 --> 00:16:54,900
+我们其实没人负责这个，于是我们会抓个PM说
+We actually don't have an owner for that, and we'll go and grab a PM and be like,
+
+328
+00:16:54,900 --> 00:16:58,200
+恭喜，这就是我们需要你在接下来六个月交付的东西
+congratulations, this is the thing we need you to deliver over the next six months.
+
+329
+00:16:59,120 --> 00:17:02,405
+很少会是"你要做一个正好这样运作、
+It's rarely you need to build a feature that works exactly this way
+
+330
+00:17:02,405 --> 00:17:03,480
+做这件事的功能"
+that does this thing.
+
+331
+00:17:03,880 --> 00:17:05,400
+它比那要更高层次一点
+It's a little more high level than that.
+
+332
+00:17:05,560 --> 00:17:08,273
+而是你怎么去搞清楚需要达成什么
+But like how do you go and work out what needs to be true
+
+333
+00:17:08,273 --> 00:17:11,850
+然后把你认为能推动这件事的人对应上去
+and then you map the human beings that you think can kind of guide that.
+
+334
+00:17:12,610 --> 00:17:14,873
+不是每个人都是PM，但绝大多数情况下
+Not every name is a PM name, but overwhelmingly,
+
+335
+00:17:14,873 --> 00:17:16,910
+当你走完这个规划流程时
+when you go through that planning process,
+
+336
+00:17:16,910 --> 00:17:21,210
+往往会是PM，而且往往是那些针对这件事有合适技能的PM
+it tends to be PMs and it tends to be kind of PMs who have the right skill set vis a vis what it is.
+
+337
+00:17:21,250 --> 00:17:24,391
+不管它更偏财务，还是更偏
+Whether it's more financial, whether it's more kind of like, you know,
+
+338
+00:17:24,391 --> 00:17:28,170
+算法和推荐，还是像核心用户功能
+algorithmic and recommendations based, whether or not it's like core user feature.
+
+339
+00:17:28,650 --> 00:17:31,875
+我想顺着最后那个具体的话题问下去，就是你在招聘
+Let me follow that actual specific thread at the end there around what you look for
+
+340
+00:17:31,875 --> 00:17:33,250
+产品经理时看重什么
+in product managers that you hire.
+
+341
+00:17:33,560 --> 00:17:38,240
+你还写过一句很扎心的话，过去两年里
+So you also wrote this brutal quote, in the last two years,
+
+342
+00:17:38,240 --> 00:17:42,920
+有31,832人申请来Whatnot做产品经理
+31,832 people applied to be a product manager at whatnot.
+
+343
+00:17:43,120 --> 00:17:44,080
+我们只招了一个
+We hired one.
+
+344
+00:17:44,960 --> 00:17:45,520
+是的
+Yes, sir.
+
+345
+00:17:48,240 --> 00:17:48,840
+挺厉害的
+Pretty great.
+
+346
+00:17:49,720 --> 00:17:51,320
+这里有几点我想聊聊
+So there's a few things here I want to talk about.
+
+347
+00:17:51,320 --> 00:17:53,990
+一是你在招人时到底看重什么
+One is just what is it you look for in the folks that you hire,
+
+348
+00:17:53,990 --> 00:17:55,080
+尤其是现在
+especially these days?
+
+349
+00:17:55,160 --> 00:17:55,720
+你有什么发现
+What do you find?
+
+350
+00:17:55,800 --> 00:18:00,207
+在真正成功的PM身上，你觉得哪些特质越来越重要
+What's kind of like trending up in what you find you need in really successful PMs
+
+351
+00:18:00,207 --> 00:18:02,640
+在Whatnot又有哪些可能越来越不重要
+and whatnot and what's maybe trending down?
+
+352
+00:18:02,960 --> 00:18:04,480
+我可以告诉你什么肯定越来越不重要
+I can tell you what's definitely trending down.
+
+353
+00:18:04,840 --> 00:18:09,001
+就是那些在面试里花很多时间大谈
+It's, uh, folks who spend a lot of their time in their interviews talking about
+
+354
+00:18:09,001 --> 00:18:13,674
+对齐会议、推动对齐、利益相关方管理
+those like alignment meetings and driving alignment and stakeholder management and,
+
+355
+00:18:13,674 --> 00:18:17,067
+以及那些东西的人，因为确实有一类PM
+and those pieces because, uh, there's definitely a group of PMs
+
+356
+00:18:17,067 --> 00:18:20,139
+我职业生涯早期肯定也是其中之一
+and I certainly used to be one of them earlier in my career,
+
+357
+00:18:20,139 --> 00:18:24,300
+他们的专长不是技术或客户导向，而是政治
+whose specialty wasn't technical or customer oriented. It was politics and.
+
+358
+00:18:24,300 --> 00:18:29,004
+所以那些天生倾向于推动对齐、
+So folks who tend to kind of like naturally lean towards like driving alignment,
+
+359
+00:18:29,004 --> 00:18:31,180
+建立关系的人
+building, building relationships.
+
+360
+00:18:31,420 --> 00:18:34,467
+你知道，告诉我你失败的那些时候，你会说，哦
+I, you know, tell me the amount of time when you failed and you're like, oh,
+
+361
+00:18:34,467 --> 00:18:36,514
+我没有及时向 CEO 同步某件事
+I didn't keep the CEO up to date with something and
+
+362
+00:18:36,514 --> 00:18:38,462
+结果导致了方向调整，这绝对算是一种
+that led to a pivot is definitely kind of a thing
+
+363
+00:18:38,462 --> 00:18:40,460
+有点反面模式、会拉低评价的表现
+that is a bit of an anti pattern that trends down.
+
+364
+00:18:41,210 --> 00:18:45,349
+我们在 PM 面试中真正看重的，是在整个
+What we tend to find kind of really jumps in a PM kind of interview is over the
+
+365
+00:18:45,349 --> 00:18:48,086
+面试或案例分析的过程中
+course of, of your interviews or your case study,
+
+366
+00:18:48,086 --> 00:18:51,290
+我们能不能同时看到宏观思维和微观思维
+can we see both the macro thinking and the micro thinking?
+
+367
+00:18:51,730 --> 00:18:53,490
+我觉得这个系统大概是这样运作的
+I think the system works something like this.
+
+368
+00:18:53,490 --> 00:18:56,370
+我能描述一个终态，但我能不能，你懂的
+And I can describe an end state, but can I, you know,
+
+369
+00:18:56,370 --> 00:19:01,170
+几乎带着一种急切感说，我会这样快速验证它
+almost exude impatience on like, and here's how I would validate that very quickly.
+
+370
+00:19:01,610 --> 00:19:03,910
+这是我会去推动完成的地方
+Here's where I would push to get that done.
+
+371
+00:19:04,470 --> 00:19:07,910
+而且你能不能具体说清你做过的东西
+And are you specific about the things that you've built, right?
+
+372
+00:19:07,950 --> 00:19:11,686
+有非常多人在 FAANG、Uber
+There's an awful lot of folks who've worked at, you know, Fang, Uber,
+
+373
+00:19:11,686 --> 00:19:15,945
+或随便哪家大公司，做的只是照看已有的东西，可能
+pick any scale company where they babysat things that existed and that maybe,
+
+374
+00:19:15,945 --> 00:19:19,550
+就是打磨一下边边角角，而不是能说出
+you know, polished the edges of it as opposed to the idea of saying.
+
+375
+00:19:19,910 --> 00:19:23,335
+我们拿到了这个问题，我得去想出一些独特、
+We were given this problem and I had to go and come up with something unique
+
+376
+00:19:23,335 --> 00:19:27,210
+新颖的东西，或者得真正一步步迭代出一个复杂的变化
+and novel or I had to kind of really iterate our way through a, a complicated change.
+
+377
+00:19:27,930 --> 00:19:31,031
+但我在这个过程中做了决策，因为我觉得
+But I made decisions along the way and we, because I think it's,
+
+378
+00:19:31,031 --> 00:19:35,086
+在一个有惯性的大组织里，很容易随波逐流
+it's easy in a very large organization with inertia to kind of go along with what's
+
+379
+00:19:35,086 --> 00:19:38,783
+顺着现状走，而不去做变革的推动者或决策者
+happening and not necessarily be an agent of change or be a decision maker,
+
+380
+00:19:38,783 --> 00:19:42,600
+而这恰恰是你需要 PM 去做的事。你刚才说的有一点
+which is ultimately what you need PM to do. There's something you said there.
+
+381
+00:19:42,640 --> 00:19:45,062
+我最近刚请 Elizabeth Stone 上过播客
+That I just had Elizabeth Stone on the podcast,
+
+382
+00:19:45,062 --> 00:19:48,167
+她是 Netflix 的 CPTO，我问她最看重、
+she's CPTO at Netflix and asked her what's the trait she most
+
+383
+00:19:48,167 --> 00:19:49,720
+同时也最在上升的特质是什么
+that is also most trending up.
+
+384
+00:19:49,720 --> 00:19:53,798
+她说的和你最初说的一模一样，就是系统思维
+And she said exactly what you said initially, which was the systems thinking,
+
+385
+00:19:53,798 --> 00:19:57,248
+从大局出发，考虑更大的业务
+thinking big picture, thinking about the bigger business and her
+
+386
+00:19:57,248 --> 00:19:59,130
+她关于如何提升这一点给了建议
+and her advice there to work on this.
+
+387
+00:19:59,130 --> 00:20:00,770
+我想问问你在这方面有没有别的建议
+And I wanna ask if you have any other advice here.
+
+388
+00:20:00,890 --> 00:20:02,513
+假设有人听到这些，心想，哇
+Say someone hears this, you're like, oh, wow,
+
+389
+00:20:02,513 --> 00:20:04,050
+我得练练我的系统思维能力
+I gotta work on my systems thinking skills.
+
+390
+00:20:04,850 --> 00:20:08,199
+她的建议是，从你的问题往后退一步，想想，好
+Her advice is take one click back from your problem and think about, okay,
+
+391
+00:20:08,199 --> 00:20:11,108
+对我的经理来说，他们怎么看这个问题，这又会
+for my manager, how do they think about this problem and how does
+
+392
+00:20:11,108 --> 00:20:12,810
+如何影响业务的其他部分
+that impact the rest of the business?
+
+393
+00:20:13,380 --> 00:20:15,817
+嗯，关于一个人怎样培养这项能力、
+Um, thoughts on just how somebody might develop the skill
+
+394
+00:20:15,817 --> 00:20:17,340
+让系统思维更强，你有什么想法
+and get better at systems thinking?
+
+395
+00:20:17,540 --> 00:20:19,620
+我觉得把它称作一种能力，说得非常对
+I mean, I think the skill is exactly the right way to say it.
+
+396
+00:20:19,620 --> 00:20:21,860
+我认为你可以通过纯粹的思维练习变得擅长它
+I think it you can get good at it from just a mental exercise.
+
+397
+00:20:21,940 --> 00:20:23,460
+所以你可以从小处开始做
+So like you can do it in small ways.
+
+398
+00:20:24,060 --> 00:20:27,009
+在产品评审里，当有人说，嘿
+One of the things I ask a lot in product review when someone says, hey,
+
+399
+00:20:27,009 --> 00:20:29,700
+我们想做个实验，我常问：如果结果是好的，我们怎么办
+we want to run an experiment is okay, what do we do if it's green?
+
+400
+00:20:29,900 --> 00:20:30,860
+如果结果是坏的，我们又怎么办
+What do we do if it's red?
+
+401
+00:20:31,620 --> 00:20:34,970
+如果大家说，其实我不知道我的策略会怎么变
+And if folks are like, actually, I don't know how my strategy would change, like,
+
+402
+00:20:34,970 --> 00:20:36,820
+那好，我们其实还没真正想过这个
+cool, we haven't really thought about that.
+
+403
+00:20:36,820 --> 00:20:39,780
+所以就停下来，做一下它会怎么运作的思维演练
+So like, stop and go and do the mental exercise of how it would work.
+
+404
+00:20:40,380 --> 00:20:42,020
+然后我觉得也是同样的道理
+And then I think it's the same thing.
+
+405
+00:20:42,140 --> 00:20:44,104
+如果你能快速搭出局部的解决方案
+If you can build quick local solutions,
+
+406
+00:20:44,104 --> 00:20:46,662
+如果你在脑子里做过这样的思维演练
+if you have done the mental exercise in your head of,
+
+407
+00:20:46,662 --> 00:20:50,530
+如果这东西的使用量是我们预期的一千倍会怎样，或者
+so what would happen if we had 1,000 times more usage of this than we expected or
+
+408
+00:20:50,530 --> 00:20:54,100
+这可能带来哪些意想不到的连锁反应，以及怎么应对
+what are the unexpected knock on effects that this could have and how do.
+
+409
+00:20:54,100 --> 00:20:57,918
+你在动笔之前，就开始在脑子里做完这一切
+You just start doing all of that in your head before you get pen on paper,
+
+410
+00:20:57,918 --> 00:20:59,730
+在把代码写进系统之前
+before you get code on the system.
+
+411
+00:21:00,180 --> 00:21:04,435
+我觉得这其实还能帮人扫清障碍、跑得更快
+And I think it, it helps actually unblock people to move faster too
+
+412
+00:21:04,435 --> 00:21:09,696
+因为我觉得另一件常拖慢 PM 的事就是，噢，有风险
+because I think the other thing that PMs are often slowed down by is like, oh, risk,
+
+413
+00:21:09,696 --> 00:21:13,100
+噢，法务可能会、财务可能会、别的团队可能会
+oh, legal might, finance might, another team might.
+
+414
+00:21:13,940 --> 00:21:17,078
+我们内部有个说法叫「先想清楚，再行动」
+And I think one of the monikers we use internally is no, then go,
+
+415
+00:21:17,078 --> 00:21:20,276
+意思就是把所有可能出问题的地方都想一遍
+as in just like think through all the things that could go wrong,
+
+416
+00:21:20,276 --> 00:21:22,087
+弄清楚规模会在哪里崩掉
+understand where scale will break,
+
+417
+00:21:22,087 --> 00:21:26,130
+弄清楚可能发生的情况，然后照样往前走
+understand the things that might happen and then make the, like, move on anyway.
+
+418
+00:21:26,130 --> 00:21:27,940
+因为如果你已经想透了
+Because if you've thought through.
+
+419
+00:21:27,940 --> 00:21:29,653
+在规模化过程中可能发生的一切
+All the things that could happen at scale,
+
+420
+00:21:29,653 --> 00:21:31,660
+你多半就能提前化解掉其中不少问题
+you're probably going to preempt a bunch of them.
+
+421
+00:21:31,820 --> 00:21:34,732
+我很喜欢 Elizabeth 那句话，但我的想法是
+So I really like Elizabeth's quote there, but mine is like,
+
+422
+00:21:34,732 --> 00:21:37,288
+就做个思维演练，去推演一下
+just do the mental exercise of just like playing out
+
+423
+00:21:37,288 --> 00:21:39,665
+如果它被广泛采用，如果真的发生
+if it gets really widely adopted, if it happens,
+
+424
+00:21:39,665 --> 00:21:42,340
+如果有什么会出问题，那会是什么
+if there is something that goes wrong, what will it be?
+
+425
+00:21:42,580 --> 00:21:45,300
+你不用把它们全都解决，你只要把它们都想清楚
+You don't have to solve all of them. You've just got to think through all of them.
+
+426
+00:21:45,600 --> 00:21:48,200
+最后你解决的会比你以为的多。我很喜欢这一点
+And then you end up solving more than you think. I love that.
+
+427
+00:21:48,200 --> 00:21:52,372
+所以本质上不要只关注这个实验有没有影响力
+So it's essentially don't just focus on will this be an impactful experiment
+
+428
+00:21:52,372 --> 00:21:56,610
+还要想接下来会怎样，如果它成立接下来又会怎样，比如说，好
+and think about what comes next and what comes next if this is true, like, okay,
+
+429
+00:21:56,610 --> 00:22:00,000
+我推动了它，尤其是在高增长的环境里
+it's I moved it, particularly in a higher growth environment.
+
+430
+00:22:00,280 --> 00:22:02,440
+你要找的其实不是一个 5% 的统计显著性胜利
+You're not really looking for a 5% stat SIG win,
+
+431
+00:22:02,440 --> 00:22:06,094
+你要找的是那种能彻底推动业务的东西
+you're looking for something that kind of like totally moves the business, um,
+
+432
+00:22:06,094 --> 00:22:08,420
+而且随着时间会产生复利效应
+and that has kind of compounding effect over time.
+
+433
+00:22:08,540 --> 00:22:10,540
+所以你必须想清楚那到底是什么
+And so you just gotta think through what that, what that is.
+
+434
+00:22:11,060 --> 00:22:12,989
+你还提到另一件事，呃
+Something else you said that, uh,
+
+435
+00:22:12,989 --> 00:22:17,465
+关于 PM 工作方式的变化，你很兴奋的是转向 IC
+is changing in how PMs operate that you're very excited about is this move to IC
+
+436
+00:22:17,465 --> 00:22:22,700
+也就是 PM 从那种大团队管理的世界，转向真正去做事
+work, PMs moving away from this kind of big org management world to actually doing the work.
+
+437
+00:22:23,100 --> 00:22:26,300
+聊聊这个，以及它对产品管理这个角色意味着什么
+Talk about that and what that means for the role of product management.
+
+438
+00:22:26,660 --> 00:22:30,362
+我前面稍微提过，就是在，你懂的
+I mentioned a little bit earlier, but there was this thing in the, you know,
+
+439
+00:22:30,362 --> 00:22:34,184
+在那种论资排辈的世界里，如果你做 PM 很成功
+in the ratio land where like what you did if you were really successful as a PM,
+
+440
+00:22:34,184 --> 00:22:36,214
+你就会被提拔成总监
+as you got promoted into being a director
+
+441
+00:22:36,214 --> 00:22:39,200
+然后突然之间就变成别再亲自动手了
+and then all of a sudden it was like don't be hands on anymore.
+
+442
+00:22:39,360 --> 00:22:41,560
+你的目标就只是去辅导和引导
+Your goal, goal is just to coach and guide.
+
+443
+00:22:41,840 --> 00:22:45,847
+于是我们把所有顶尖的人才，都提拔到不再做事的位置上
+And so we took all of our a players and then promoted them out of doing things,
+
+444
+00:22:45,847 --> 00:22:48,263
+他们把所有时间都花在对齐共识上
+and they spent all of their time in alignment,
+
+445
+00:22:48,263 --> 00:22:51,061
+他们把所有时间都花在辅导别人
+and they spent all of their time kind of like coaching
+
+446
+00:22:51,061 --> 00:22:53,160
+以及微调团队在做的事情上
+and tweaking what their team was doing.
+
+447
+00:22:53,440 --> 00:22:56,754
+于是你就得到一个来回拉锯的开发流程，有人做了一堆工作
+And you get this really yo yo development process where somebody does all this work,
+
+448
+00:22:56,754 --> 00:22:59,358
+拿去评审，被否掉，然后你就一直来来回回
+it goes to review, it gets told no and you're just kind of going back
+
+449
+00:22:59,358 --> 00:23:00,400
+在评审里反复折腾
+and forward in in reviews.
+
+450
+00:23:00,960 --> 00:23:02,600
+你能看出我这是被折磨出来的经验
+You can see my scar tissue coming through.
+
+451
+00:23:03,280 --> 00:23:07,700
+呃，在我们团队里，大家都是，有管理者，大概
+Um, uh, on our team, uh, everybody is like, there are managers, there's like,
+
+452
+00:23:07,700 --> 00:23:11,360
+我觉得整个团队里有四五个人管理其他 PM
+I think four or five people across the team who manage other PMs.
+
+453
+00:23:11,640 --> 00:23:15,250
+他们所有人都会把 90% 以上的时间用来做 IC 的活
+All of them would spend 90+ percent of their time doing IC work.
+
+454
+00:23:15,690 --> 00:23:19,290
+我自己大概也还有 50% 的时间在做 IC 的活
+I'm still probably 50% of my time doing IC work personally.
+
+455
+00:23:20,090 --> 00:23:22,730
+我觉得这样有几个实实在在的好处
+And I think there's kind of a couple real advantages of it.
+
+456
+00:23:22,730 --> 00:23:26,995
+第一，如果你是产品 VP，有十几年
+The first is if you are a kind of VP product where you've got a decade plus,
+
+457
+00:23:26,995 --> 00:23:29,767
+也许十五年做产品的经验
+maybe 15 years of experience building things,
+
+458
+00:23:29,767 --> 00:23:32,824
+那你对什么会奏效的直觉
+hopefully your instincts as to what's going to work
+
+459
+00:23:32,824 --> 00:23:35,170
+到这个阶段应该已经磨练得相当好了
+and not fairly well honed at this point.
+
+460
+00:23:35,470 --> 00:23:40,270
+你能比别人更快做出决策，你能非常非常快地产生真正的影响
+You can just make decisions more quickly than people. You can have real impact very, very quickly.
+
+461
+00:23:40,870 --> 00:23:44,489
+对组织来说，有一个能做到这一点的人是非常好的
+And it's really great for the organization to have somebody who can do that
+
+462
+00:23:44,489 --> 00:23:48,283
+而不是那种要穿过三层，你懂的，我们
+as opposed to the idea of, like, working through three layers of, you know, we,
+
+463
+00:23:48,283 --> 00:23:50,910
+我们把问题拆分给几个 PM
+we divide the problem up against amongst a couple PMs.
+
+464
+00:23:51,470 --> 00:23:52,857
+那些人得先去对齐共识
+Those folks need to get into alignment.
+
+465
+00:23:52,857 --> 00:23:54,790
+还有不同的工程团队在争论各种事
+There's different engineering teams debating stuff.
+
+466
+00:23:55,110 --> 00:23:59,090
+你就是能推进下去，所以那很棒。我觉得第二点是
+You just tend to go, so that's wonderful. I think the second thing is.
+
+467
+00:24:00,000 --> 00:24:02,280
+这最终会从两个方面带来杠杆效应
+There's two ways that that ends up driving leverage.
+
+468
+00:24:02,520 --> 00:24:04,276
+一个是，理论上一个 VP 可以，你懂的
+One is a VP in theory can, you know,
+
+469
+00:24:04,276 --> 00:24:08,603
+承担好几个更初级 PM 的工作量，就像我说的
+handle the workload of multiple kind of like more junior PMs just because as I said,
+
+470
+00:24:08,603 --> 00:24:09,920
+因为他们更高效
+they're more efficient.
+
+471
+00:24:10,360 --> 00:24:13,953
+这意味着在任何时刻你都能看到更全的局面
+And that means that you see more of the board at any given point in time,
+
+472
+00:24:13,953 --> 00:24:17,979
+所以你更有可能做出符合直觉的正确决策，比如
+and so you're far more likely to make the intuitively correct decision for how
+
+473
+00:24:17,979 --> 00:24:22,253
+我们该如何调整发现算法，去应对发货慢的人，这是
+should we tune the discovery algorithm vis a vis people who ship slowly, which is a,
+
+474
+00:24:22,253 --> 00:24:25,970
+你懂的，电商里一个永恒的话题。如果你在思考
+you know, an evergreen thing in in ecom. Well, if you're thinking about.
+
+475
+00:24:26,050 --> 00:24:29,783
+我们怎么去，你懂的，管理，呃，发货慢的卖家，还有，你懂的
+How we, you know, manage, uh, sellers who ship slowly and, you know,
+
+476
+00:24:29,783 --> 00:24:32,117
+关于发现机制的那种力量
+about the power of kind of like discovery,
+
+477
+00:24:32,117 --> 00:24:35,250
+无论哪种情况你都能做出比较正确的决策
+you can in either case make the kind of correct decision.
+
+478
+00:24:35,690 --> 00:24:39,641
+你知道吗，有件事我记得困扰了 Twitch 很久
+You know, one of the things that I remember plaguing Twitch for a long time,
+
+479
+00:24:39,641 --> 00:24:43,018
+而我可能是最该为此负责的人之一
+and I was probably one of the people more at fault of it than ever,
+
+480
+00:24:43,018 --> 00:24:47,160
+就是发现团队和广告团队总是在为曝光量而争抢，对吧
+was discovery team and the ads team were always at war for impressions, right?
+
+481
+00:24:47,160 --> 00:24:48,800
+比如，广告应该放在信息流的哪里
+Like where do ads go in the feed?
+
+482
+00:24:49,000 --> 00:24:53,400
+对发现指标有什么影响？对广告收入又有什么影响
+What's the impact to discovery metrics, what's the impact to kind of ad dollars?
+
+483
+00:24:53,760 --> 00:24:56,895
+我到 Twitch 后做的头几件事之一，就是把广告放进发现页
+One of the first things I did when I got to Twitch was just put ads in discovery
+
+484
+00:24:56,895 --> 00:24:59,582
+并确保由同一个 PM 同时对这两件事负责
+and make sure that there's the same PM who's accountable for both
+
+485
+00:24:59,582 --> 00:25:02,120
+因为他们会自然地做出取舍
+because they're going to make the natural trade off that say.
+
+486
+00:25:02,160 --> 00:25:04,760
+目标是信息流带来的 GMV
+The goal is GMV generated from the feed.
+
+487
+00:25:05,240 --> 00:25:07,043
+其中一部分来自自然流量
+One of them is through organic,
+
+488
+00:25:07,043 --> 00:25:10,510
+另一部分则来自付费替代的部分
+one of them is through kind of like a paid substitution soul.
+
+489
+00:25:10,630 --> 00:25:13,374
+当你让同一个人负责多件事时
+And when you put the same person across multiple things,
+
+490
+00:25:13,374 --> 00:25:15,593
+他们往往会自然地把这些事情协调起来
+they tend to organically align those things,
+
+491
+00:25:15,593 --> 00:25:18,746
+你就省掉了好几个月来回扯皮的过程
+and you just cut out months and months and months of back and forth
+
+492
+00:25:18,746 --> 00:25:22,950
+以及那种会把"公司优先"变成"个人前途优先"的办公室政治
+and the politics that tends to kind of take it from being company first to career first.
+
+493
+00:25:23,470 --> 00:25:28,238
+所以让 VP 大部分时间做 IC 的活，让总监大部分时间做 IC 的活
+And so having, uh, vps mostly in IC land, having directors mostly doing IC work,
+
+494
+00:25:28,238 --> 00:25:32,934
+甚至让我自己也要亲自处理 IC 的工作，能让每个人都贴近
+even having me having to grapple with IC work keeps everybody connected to the
+
+495
+00:25:32,934 --> 00:25:37,630
+真实的第一线，而不是评审会上看起来"像是真的"的东西
+ground floor of what's actually true as opposed to what seems true in a review.
+
+496
+00:25:38,270 --> 00:25:42,693
+这也意味着你更有可能在早期就做出那种直觉上正确的
+But also means that you're more likely to make the kind of intuitively correct
+
+497
+00:25:42,693 --> 00:25:47,524
+决策，因为你为什么不想，为你的团队
+decision early just because why wouldn't you want, you know, messy playing for your,
+
+498
+00:25:47,524 --> 00:25:50,790
+亲自下场，而不是总想着让
+your team when you, rather than trying to kind of have the.
+
+499
+00:25:50,910 --> 00:25:53,250
+那套学院式流程一直跟着你。我很喜欢这一点
+The Academy coming along all the time. I love this.
+
+500
+00:25:53,370 --> 00:25:57,730
+那当你说 PM 要做 IC 的活时，在这个语境下具体指什么
+So when you talk about IC work for PM, what does IC work for PM in this context mean?
+
+501
+00:25:57,770 --> 00:26:01,131
+是指写代码、做构建，还是带团队、运营、
+Does it mean shipping code building or is it like running a team, running,
+
+502
+00:26:01,131 --> 00:26:03,170
+负责路线图、写战略文档
+owning a roadmap, writing the strategy DOC?
+
+503
+00:26:03,810 --> 00:26:05,523
+我想应该是第二类，呃
+Imagine it's the second bucket, uh,
+
+504
+00:26:05,523 --> 00:26:09,290
+简短来说，就是为了最高效地交付所需要做的一切
+whatever is required to kind of like most effectively ship is the short answer.
+
+505
+00:26:09,690 --> 00:26:12,970
+呃，我自己在 Whatnot 有没有交付过生产代码？有
+Um, have I personally shipped some production code at whatnot? Yes.
+
+506
+00:26:13,970 --> 00:26:17,250
+呃，我觉得那真是我时间的最佳用途吗？并不是
+Uh, do I think that's really the best use of my time? Not really.
+
+507
+00:26:17,930 --> 00:26:21,566
+你知道，我很确定，有人悄悄地把我大部分代码都重写了
+You know, I'm, I'm certain that quietly somebody reworked most of my code in order
+
+508
+00:26:21,566 --> 00:26:24,561
+以确保 linting 正确、本地化能正常工作
+to be sure that the linting was correct and the localization worked
+
+509
+00:26:24,561 --> 00:26:28,090
+以及几十年软件工程积累下来的那些细节
+and all of the nuance that decades of software engineering has taught you that.
+
+510
+00:26:28,290 --> 00:26:30,370
+那些我和 Claude Code 没搞对的地方
+You know, me and Claude Code did not get right.
+
+511
+00:26:30,930 --> 00:26:33,810
+但我确实觉得，起点是：你有没有真正去看那些客服工单
+But I do think it starts with like, are you literally in the support tickets?
+
+512
+00:26:34,130 --> 00:26:36,210
+你知道我们的用户遇到了什么问题吗
+Do you know what customer problems we're having?
+
+513
+00:26:36,590 --> 00:26:39,630
+你有没有自己把数据都拉出来，好真正理解它
+Have you pulled all of the data yourself so that you actually understand it?
+
+514
+00:26:40,110 --> 00:26:42,110
+你有没有和工程、设计坐在一起
+Have you sat with engineering and design?
+
+515
+00:26:42,670 --> 00:26:45,701
+你有没有直接查询代码库，去理解东西
+You know, have you queried the code base directly in order to understand how things
+
+516
+00:26:45,701 --> 00:26:47,150
+是怎么运作的，然后你有没有亲自写规格文档
+work and then have you written the spec?
+
+517
+00:26:47,590 --> 00:26:49,592
+然后你有没有主持站会，我们开始推进
+Are you then running? You stand up and we go,
+
+518
+00:26:49,592 --> 00:26:52,150
+我觉得这一切都是核心的 IC 工作
+I think all of that is just like core individual IC work.
+
+519
+00:26:52,470 --> 00:26:56,384
+有很多人一路往上爬，做产品做上来
+There's a lot of people that have worked their way up the ladder of product,
+
+520
+00:26:56,384 --> 00:26:59,540
+当上了 VP，让他们回去做那些活并不让人兴奋
+become a VP, and it doesn't feel exciting to go back to being.
+
+521
+00:27:00,720 --> 00:27:02,960
+有些人，比如你显然很爱这个，很享受
+Some people like clearly you love it, you enjoy it.
+
+522
+00:27:03,200 --> 00:27:04,975
+很多人会想，我以为我早就不用做这些了
+A lot of people are like, I thought I was done with this.
+
+523
+00:27:04,975 --> 00:27:06,080
+我本可以只通过管人来做事
+I could just work through people.
+
+524
+00:27:06,320 --> 00:27:09,080
+我本可以只想大方向，你怎么看这个
+I could think big picture, how do you feel about that?
+
+525
+00:27:09,080 --> 00:27:11,400
+对于那一类人，你会对他们说什么
+And what do you, what would you say to folks in the in that bucket?
+
+526
+00:27:12,040 --> 00:27:14,813
+我觉得可能仍然有很多组织
+I think there are probably still a lot of organizations where
+
+527
+00:27:14,813 --> 00:27:16,880
+那种做法确实很有价值，他们也会那么运作
+that is really valuable and that they will go.
+
+528
+00:27:17,240 --> 00:27:19,835
+我招的人往往是那种"天啊
+My recruiting tends to be the folks who are, oh, my god,
+
+529
+00:27:19,835 --> 00:27:21,796
+我以前很爱做产品管理，可我现在
+I used to love product management and I am
+
+530
+00:27:21,796 --> 00:27:23,988
+实在厌倦了整天坐在对齐会里"的人
+so sick of sitting in alignment meetings and,
+
+531
+00:27:23,988 --> 00:27:26,872
+我就到处去游说那些 CPO 和产品 VP，跟他们说
+and I'm out there pitching CPOs and vps of product to be like,
+
+532
+00:27:26,872 --> 00:27:29,640
+你难道不怀念真正动手做事吗？想不想
+don't you miss actually doing things? Do you want to come?
+
+533
+00:27:29,640 --> 00:27:32,313
+回来？我觉得我们完全可以承认
+Back, and I think it's okay for us to acknowledge
+
+534
+00:27:32,313 --> 00:27:35,320
+整个行业会出现一种分化
+that there will be a bifurcation across the industry.
+
+535
+00:27:35,680 --> 00:27:38,971
+我确实认为有些组织足够大
+I do think that there are organizations that are sufficiently large
+
+536
+00:27:38,971 --> 00:27:41,280
+让每个人都亲自下场也许并不合适
+that maybe everyone being hands on isn't right.
+
+537
+00:27:41,480 --> 00:27:43,555
+我也觉得，你知道，我前面提到过
+I also think, you know, I mentioned earlier
+
+538
+00:27:43,555 --> 00:27:47,071
+你得有一种匹配的文化来配合这种
+that like you have to have a matching culture to kind of go with this kind of
+
+539
+00:27:47,071 --> 00:27:50,760
+以此为默认预期的环境，那种大家会说
+environment where that's the expectation, you know, where people are like.
+
+540
+00:27:50,760 --> 00:27:52,040
+我不想谈这个的环境
+I don't want to talk about it.
+
+541
+00:27:52,120 --> 00:27:55,881
+我就想，你懂的，那咱们就去做那件事吧，而且很多时候，你懂的
+I want to just, you know, let's go and do that thing and in a lot of ways, you know,
+
+542
+00:27:55,881 --> 00:27:58,600
+每一家创业公司都是其创始人的映照
+every, every startup is a reflection of their founders.
+
+543
+00:27:58,960 --> 00:28:00,681
+所以很自然地，这就体现在，你懂的
+And so that naturally tends to be, you know,
+
+544
+00:28:00,681 --> 00:28:03,120
+他们怎么想，以及他们想怎么运营这个组织
+how do they think and how do they want to run the organization.
+
+545
+00:28:03,640 --> 00:28:06,467
+但我实际上发现，在很多情况下
+But I've actually found that for a little lot of the cases,
+
+546
+00:28:06,467 --> 00:28:08,763
+你去跟一个人聊，他过去五、
+you go and talk to somebody who spent the last 5,
+
+547
+00:28:08,763 --> 00:28:10,883
+六年一直在 Meta 当高级总监，你懂的
+6 years as a as a senior director at you know,
+
+548
+00:28:10,883 --> 00:28:13,651
+他把全部时间都花在对齐会议上
+meta who spends their entire time in alignment meetings
+
+549
+00:28:13,651 --> 00:28:17,067
+他们其实很怀念跟客户聊、跟工程师聊
+and they miss actually talking to customers and talking to engineers
+
+550
+00:28:17,067 --> 00:28:19,010
+还有真正把东西做出来。这让我想到
+and shipping things. What makes makes.
+
+551
+00:28:19,010 --> 00:28:19,530
+让我想到一件事
+Me think about it.
+
+552
+00:28:19,530 --> 00:28:23,315
+我猜你见过那份名单，上面全是这些首席技术官
+I imagine you've seen this list of all of these chief technology officers
+
+553
+00:28:23,315 --> 00:28:26,170
+他们跑去 Anthropic 只当普通工程师
+that have gone to become just engineers and anthropic.
+
+554
+00:28:26,250 --> 00:28:28,392
+你说话的时候我把这份名单调出来了
+I pulled up this list as you were talking.
+
+555
+00:28:28,392 --> 00:28:31,920
+Workday 的 CTO 在 Anthropic 只是一名技术人员
+The CTO of workday is just a member of technical staff at anthropic.
+
+556
+00:28:32,160 --> 00:28:35,868
+呃，Instagram、Box 的 CTO，super.com 的 CTO
+Uh, CEO, CTO, Instagram box, the CTO, uh, super.com, CTO.
+
+557
+00:28:35,868 --> 00:28:38,880
+他们现在在 Anthropic 就只是工程师
+They're just like engineers now at anthropic.
+
+558
+00:28:38,960 --> 00:28:39,320
+是的
+Yep.
+
+559
+00:28:39,600 --> 00:28:44,227
+呃，我最大的愿望就是 Whatnot 的产品团队基本上就像那样
+Uh, if it's my greatest desire that the whatnot product bench basically looks like
+
+560
+00:28:44,227 --> 00:28:48,518
+嗯，全是这些技能出众、理解深刻的人
+that, um, all of these people with like great skills and great understanding
+
+561
+00:28:48,518 --> 00:28:51,200
+最终都以 IC 的身份来做事、来搭建产品
+and actually end up coming and building as IC's.
+
+562
+00:28:52,260 --> 00:28:55,180
+那这条路径的薪酬怎么办呢
+What about the like the, the comp of this path?
+
+563
+00:28:55,620 --> 00:28:59,100
+你懂的，那是很多人的梦想，升到 VP，赚上百万美元
+You know, that's people's dream, move up to VP, make millions of dollars.
+
+564
+00:28:59,420 --> 00:29:02,380
+有没有可能既做 IC 又能拿到那样的收入
+Is there a world where you can still do that and be an IC?
+
+565
+00:29:03,100 --> 00:29:04,140
+我其实觉得那样更容易
+I actually think it's easier.
+
+566
+00:29:04,540 --> 00:29:07,692
+呃，这话有点大胆，但你想想
+Uh, spicy take, but like go and take the uh,
+
+567
+00:29:07,692 --> 00:29:11,204
+要让 5 个 L5 向 1 个 L7 汇报所需的薪酬
+comp required to have 5 L fives reporting to 1L7
+
+568
+00:29:11,204 --> 00:29:15,797
+再加上 4 个 L7 向一位 VP 汇报，把这个产品组织的薪酬全加起来
+and then 4 l sevens reporting to one VP and now total the comp of
+
+569
+00:29:15,797 --> 00:29:21,380
+然后反过来问：如果我只要 3 个人呢？我为什么不能
+that product org and turn around and say, what if I had 3 people? Why can't I?
+
+570
+00:29:21,380 --> 00:29:23,327
+给他们每个人都发 VP 级别的钱呢，你懂的
+Pay them all, you know, d two VP money,
+
+571
+00:29:23,327 --> 00:29:26,279
+尤其是如果他们产生的影响力，呃
+particularly if they're having the level of impact, uh,
+
+572
+00:29:26,279 --> 00:29:28,100
+达到那些人所能产生的水平
+that those folks are having there.
+
+573
+00:29:28,300 --> 00:29:29,060
+那为什么不呢
+Like, why not?
+
+574
+00:29:29,500 --> 00:29:32,538
+为了充分理解为什么会这样、为什么应该这样
+And just to fully understand why this is happening, why this should happen,
+
+575
+00:29:32,538 --> 00:29:34,660
+我听到的是，这里有多种因素叠加
+what I'm hearing, there's kind of many combination.
+
+576
+00:29:34,780 --> 00:29:38,660
+一是 AI 让这成为可能，这很棒，时机正好。对
+One is AI is enabling this, which is great, perfect timing. Yes.
+
+577
+00:29:39,350 --> 00:29:41,361
+那还有哪些动机去这么做
+What are the other motivations to do this?
+
+578
+00:29:41,361 --> 00:29:43,430
+是因为产品最终会更好吗
+Is it just the product ends up being better?
+
+579
+00:29:43,510 --> 00:29:44,510
+是因为人更少吗
+Is it fewer people?
+
+580
+00:29:45,270 --> 00:29:47,430
+呃，我确实认为产品最终会更好
+Uh, I certainly think the product ends up being better.
+
+581
+00:29:47,590 --> 00:29:51,414
+就像很多人长期以来一直跟我们说的，对
+Like one of the things that folks have been telling us for a long time is, yeah,
+
+582
+00:29:51,414 --> 00:29:52,310
+那种方式没法规模化
+that won't scale.
+
+583
+00:29:52,950 --> 00:29:56,590
+说什么领导层没办法一直亲力亲为地了解情况
+Like, oh, leadership isn't gonna be able to stay hands on with what's going on.
+
+584
+00:29:57,110 --> 00:29:59,150
+你得去多招好几层的人
+You're going to need to go and hire tons more layers.
+
+585
+00:29:59,190 --> 00:30:01,720
+但我们发现事实并非如此，对吧
+And what we found is that's actually not true, right?
+
+586
+00:30:02,280 --> 00:30:03,440
+这需要一种不同的能力
+It requires a different muscle.
+
+587
+00:30:03,480 --> 00:30:06,921
+你得下功夫确保自己真正理解，你懂的
+You have to make an effort to make sure you genuinely understand, you know,
+
+588
+00:30:06,921 --> 00:30:10,528
+比如底层真相。我们常举的一个例子是，我们在增长会议上聊
+like ground truth, an example we use all the time is we'll be talking in a growth
+
+589
+00:30:10,528 --> 00:30:12,360
+有人会说，哦，对
+meeting and someone will say, oh, yeah.
+
+590
+00:30:12,360 --> 00:30:13,080
+但那是欺诈
+But that was fraud.
+
+591
+00:30:14,080 --> 00:30:16,040
+你懂的，就反问一句：你怎么知道那是欺诈
+You know, turn around and be like, how do you know that was fraud?
+
+592
+00:30:16,440 --> 00:30:20,000
+哦，数据集里标注成欺诈了。好，那你知道它是怎么被标注的吗
+Oh, it's labeled in the data set as fraud. Okay. Do you know how it gets labeled?
+
+593
+00:30:21,100 --> 00:30:25,140
+我猜是运营部门的某个人吧。好，那你知道他们标注的 SOP 是什么吗
+I assume someone in Ops doesn't. Okay. Do you know the SOP or how they label that?
+
+594
+00:30:25,180 --> 00:30:25,820
+不知道。好吧
+No. Okay.
+
+595
+00:30:25,860 --> 00:30:28,762
+所以你其实并不知道那是欺诈，而如果你去追问，你懂的
+So you don't know it's fraud and if you push, you know,
+
+596
+00:30:28,762 --> 00:30:33,180
+一个经验丰富的产品总监就会说：说得好
+a really experienced product director like that, they're gonna go, good point.
+
+597
+00:30:33,300 --> 00:30:34,780
+我确实不知道，我去查清楚
+I don't, I'm gonna go find out.
+
+598
+00:30:35,340 --> 00:30:38,257
+然后你必然会去加强那套系统
+And then you invariably end up strengthening the system
+
+599
+00:30:38,257 --> 00:30:40,429
+就是 agents 用来做，你懂的
+that agents are using to kind of, you know,
+
+600
+00:30:40,429 --> 00:30:44,773
+数据标注的系统，因为突然有一个非常聪明的人非常投入地去
+data label because suddenly there's a very smart person who's very invested in like
+
+601
+00:30:44,773 --> 00:30:47,380
+理解我们怎么做，并帮助引导这个过程
+understanding how we do that and helping guide it.
+
+602
+00:30:47,500 --> 00:30:51,100
+就是这种态度，我们要做更少的事
+And so just that attitude that says, like, we're gonna do fewer things,
+
+603
+00:30:51,100 --> 00:30:53,784
+但要确保把它们执行到极致
+we're gonna make sure we execute the hell out of them,
+
+604
+00:30:53,784 --> 00:30:57,750
+我们要让最优秀的人到处深入细节，这意味着
+and we're gonna kind of push our best people to be in the weeds everywhere means
+
+605
+00:30:57,750 --> 00:30:59,580
+你在推进过程中会顺手修复很多问题
+that you fix lots of things as you go.
+
+606
+00:30:59,700 --> 00:31:02,885
+而不是最后只能做出一堆妥协取舍
+And you don't end up kind of just making loads of trade offs.
+
+607
+00:31:02,885 --> 00:31:05,420
+我觉得有一种普遍的看法是
+And I think there's a general belief that like.
+
+608
+00:31:06,430 --> 00:31:08,805
+否则增长太容易掩盖所有问题了
+It's too easy otherwise for growth to hide all sins,
+
+609
+00:31:08,805 --> 00:31:10,904
+你越做越大，然后就一味扩张
+like you get bigger and you just end up scaling
+
+610
+00:31:10,904 --> 00:31:13,390
+每个人都在按平均值做事
+and everybody's kind of like working off of averages.
+
+611
+00:31:13,510 --> 00:31:17,756
+所以从文化上，我觉得你得真正下定决心
+So culturally, I think you gotta be really committed to like let's, you know,
+
+612
+00:31:17,756 --> 00:31:21,804
+我有时会说，全力做好少数几件事，致敬 Ron Swanson
+whole ass few things as I tend to say sometimes, shout out Ron Swanson, uh,
+
+613
+00:31:21,804 --> 00:31:25,320
+然后让最优秀的人真正深入到细节里
+and then push your best people to be really in the weeds of stuff.
+
+614
+00:31:25,320 --> 00:31:27,510
+其实随着时间推移你会发现
+And actually what you find over time is.
+
+615
+00:31:27,510 --> 00:31:29,271
+这样做反而让你更高效
+You end up being more efficient by doing that
+
+616
+00:31:29,271 --> 00:31:31,795
+因为你第一次就真正搞懂了事情是怎么运作的
+because you actually understand how things work the first time
+
+617
+00:31:31,795 --> 00:31:33,080
+也做出了最好的决策
+and you make the best decisions.
+
+618
+00:31:33,480 --> 00:31:36,640
+再说，AI 在这方面提供了巨大的杠杆
+And then listen, AI, huge leverage for all this.
+
+619
+00:31:37,200 --> 00:31:37,320
+我
+I.
+
+620
+00:31:37,400 --> 00:31:41,722
+我都想不起来当初做初级 PM 时，花了多少时间去问工程师某件事有多难
+I can't think of how much time I spent as a junior PM asking my engineers how hard
+
+621
+00:31:41,722 --> 00:31:43,583
+会有多困难，你懂的
+something would be and, you know,
+
+622
+00:31:43,583 --> 00:31:47,240
+为了规划未来的东西，反而干扰了实际的开发速度
+distracting actual velocity in order to help scope future stuff.
+
+623
+00:31:47,240 --> 00:31:51,280
+而现在我可以坐下来，和 Claude 聊聊，大致了解工作量
+And now I can sit and, you know, talk to Claude and understand roughly Loes.
+
+624
+00:31:52,360 --> 00:31:54,119
+我可以坐在那儿逐一梳理，然后说
+I can sit there and go through and be like,
+
+625
+00:31:54,119 --> 00:31:57,377
+感觉有一堆弹窗乱成一团，肯定会砸到新用户
+it feels like there's some car crash of modals that must be hitting new users
+
+626
+00:31:57,377 --> 00:31:58,360
+就在他们打开 app 的时候
+as they open up the app.
+
+627
+00:31:58,480 --> 00:32:00,646
+你完全可以逐一梳理，然后说
+And you can literally just go through and be like, let's,
+
+628
+00:32:00,646 --> 00:32:03,688
+我们把 feed 加载出来，跟我讲讲谁按什么顺序看到什么的逻辑
+let's load up the feed and talk to me about the logic of who sees what in what order
+
+629
+00:32:03,688 --> 00:32:04,840
+以及这个东西什么时候触发
+and when does this thing fire?
+
+630
+00:32:04,880 --> 00:32:08,602
+你能很快得到答案，而且就像我之前说的
+And you can get answers really quickly and having, as I said before,
+
+631
+00:32:08,602 --> 00:32:13,320
+有足够资历和经验的人，能看出问题然后说，你知道吗
+folks with enough tenure and enough reps that they can see that and say, you know what?
+
+632
+00:32:13,360 --> 00:32:16,940
+这不行，我们直接做个好决策，把这些顺序改一下
+That's bad. Let's just make a good decision and change the ordering of those.
+
+633
+00:32:18,140 --> 00:32:22,332
+我这样省下了一个启动会、一周一次的对齐会、写 PRD、
+I've saved now a kickoff meeting, an alignment meeting a week, writing PRDS,
+
+634
+00:32:22,332 --> 00:32:26,786
+还有实验时间，全靠让一个被授权的人直接去
+experiment time, all of that by just having somebody who's kind of empowered to go
+
+635
+00:32:26,786 --> 00:32:27,900
+做决定
+and make a decision.
+
+636
+00:32:28,580 --> 00:32:32,531
+回到那些想找 PM 工作的人，不管你是新人
+So coming back to people that are trying to get a job as a PM, whether you're new,
+
+637
+00:32:32,531 --> 00:32:36,300
+我们先不谈新人，说说那些比如说是管理者的人
+let's actually hold off on new people, but people that are, say, managers.
+
+638
+00:32:37,170 --> 00:32:38,927
+那些资深的人，会想，哇
+Senior folks that are just like, wow,
+
+639
+00:32:38,927 --> 00:32:42,780
+市场真的变了，我们现在常听到的一大点是，你得
+the market has really shifted the a big thing we're hearing right now is you need to
+
+640
+00:32:42,780 --> 00:32:46,010
+愿意重新回到 IC 角色，放下你那些光鲜的头衔
+be comfortable with moving back into IC, giving up your fancy title.
+
+641
+00:32:46,530 --> 00:32:50,565
+对于那些在找工作、
+Is there anything more along those lines of just people looking for a job,
+
+642
+00:32:50,565 --> 00:32:53,410
+找工作很艰难的人，你还有别的建议吗
+struggling to find a job, any other advice for them?
+
+643
+00:32:54,130 --> 00:32:56,970
+我的建议是，从你现在的岗位上就开始做 IC 的活儿
+Start doing IC work in the role you're in would be my push.
+
+644
+00:32:57,010 --> 00:32:59,348
+就是回归基础，确保
+Like get back to the basics of like make sure
+
+645
+00:32:59,348 --> 00:33:01,750
+你在承担一些实际的工作
+that you're taking on kind of practical work
+
+646
+00:33:01,750 --> 00:33:06,231
+因为我觉得最好确保你把那些能力
+because I just think it's like good to make sure that you're keeping those muscles,
+
+647
+00:33:06,231 --> 00:33:07,400
+保持得很熟练
+you know, well honed.
+
+648
+00:33:07,800 --> 00:33:10,920
+我觉得这也要从在内部主动推动这些事开始
+I think it also starts with like pushing internally for those things.
+
+649
+00:33:10,960 --> 00:33:13,331
+我敢打赌，如果你开始把
+Like I would, I would bet that if you started bringing
+
+650
+00:33:13,331 --> 00:33:16,080
+那种生产力带回你现在的岗位
+that level of productivity back into the role that you're in,
+
+651
+00:33:16,080 --> 00:33:18,882
+除了帮你在现在的位置上更好，可能还能帮你
+probably helps you where you are in addition to kind of help you
+
+652
+00:33:18,882 --> 00:33:19,960
+走向你未来可能去的地方
+where you might move to.
+
+653
+00:33:20,460 --> 00:33:23,459
+当然，网上有很多讨论
+But I think there's a lot of chatter online, obviously,
+
+654
+00:33:23,459 --> 00:33:25,220
+比如说现在 PM 或工程师之类的
+about like PMs or engineers now.
+
+655
+00:33:25,660 --> 00:33:29,020
+我觉得这些都挺好的，这是一项值得去锤炼的能力
+And I think that's all well and good. Like it's a great muscle to go and go and hone.
+
+656
+00:33:29,100 --> 00:33:31,237
+就像我说的，我也提交过一些生产代码
+As I said, I've, I've pushed some production code
+
+657
+00:33:31,237 --> 00:33:33,998
+因为我想亲身走一遍来理解它
+because I wanted to go through the exercise of understanding it
+
+658
+00:33:33,998 --> 00:33:36,864
+但我觉得，在你真正开始动手做东西之前
+but I think there's also, before you get to, like building things,
+
+659
+00:33:36,864 --> 00:33:40,460
+关键是你能多快找回界定正确目标的那种能力
+it's like how quickly can you get back into the muscle of scoping the correct thing.
+
+660
+00:33:40,620 --> 00:33:44,197
+理解问题，能够定义什么才算好
+Understanding the problem, being able to define what good looks like
+
+661
+00:33:44,197 --> 00:33:47,527
+充分利用你所拥有的规模和覆盖面
+and like take advantage of the scale and the scope that you've got
+
+662
+00:33:47,527 --> 00:33:49,870
+让你能看得更多，也能带来更多
+that you can see more and bring more to things.
+
+663
+00:33:50,350 --> 00:33:53,008
+我想大多数坐在那个位置的人，你懂的
+Like I think most folks who've sat in a, you know,
+
+664
+00:33:53,008 --> 00:33:56,064
+做过总监及以上级别的人都懂那种煎熬
+a director plus role will know the pain of sitting there
+
+665
+00:33:56,064 --> 00:34:00,051
+看着一个初级 PM 在同一份 PRD 上来回反复地送去评审
+and watching a junior PM yo yo back and forth on the same PRD back to review
+
+666
+00:34:00,051 --> 00:34:02,310
+而你其实早就知道答案是什么
+where you kind of know what the answer is.
+
+667
+00:34:03,730 --> 00:34:05,757
+不知从什么时候起，我们决定，你懂的
+Somewhere along the way we decided that, you know,
+
+668
+00:34:05,757 --> 00:34:08,701
+把马牵到水边，而不是帮他们真正理解答案
+lead a horse to water as opposed to kind of help them understand the answer
+
+669
+00:34:08,701 --> 00:34:09,570
+然后继续往前走
+and then keep moving.
+
+670
+00:34:09,690 --> 00:34:12,388
+我觉得我们的辅导方式里有些东西
+And I think there's like something in our coaching styles
+
+671
+00:34:12,388 --> 00:34:13,793
+是可以重新捡回来的，就像
+that we can get back to of like,
+
+672
+00:34:13,793 --> 00:34:16,940
+相对快速地帮人理解什么才叫做得好
+help somebody understand what good looks like relatively quickly
+
+673
+00:34:16,940 --> 00:34:18,570
+而不是无休止地评审
+as opposed to just endless review.
+
+674
+00:34:18,730 --> 00:34:18,970
+来回折腾
+Yoyo.
+
+675
+00:34:19,530 --> 00:34:24,130
+呃，你说 PM 不该亲自上线部署这一点，我非常认同
+Uh, this point you make about PMs not, uh, shipping to production, I so agree with.
+
+676
+00:34:24,480 --> 00:34:28,582
+我最近因为之前一位播客嘉宾的观点而改变了看法
+Is my mind changed on this recently with a previous podcast guest with this point
+
+677
+00:34:28,582 --> 00:34:30,480
+就是 PM 真正的价值在于杠杆效应
+that PMs are ready like the leverage.
+
+678
+00:34:31,160 --> 00:34:34,129
+如果 PM 不是坐在那儿埋头上线部署
+PMs have so much more leverage if they're not sitting there trying to ship to
+
+679
+00:34:34,129 --> 00:34:36,721
+他们的杠杆会大得多，赋能团队更好更快地交付
+production, they can, enabling the team to ship better and faster
+
+680
+00:34:36,721 --> 00:34:39,878
+并确保交付的东西质量更高，这远比 PM
+and making sure the things that are shipping are better is a much better use of PMs
+
+681
+00:34:39,878 --> 00:34:41,480
+坐在那儿自己上线更有价值
+time than sitting there shipping stuff.
+
+682
+00:34:41,520 --> 00:34:43,393
+我是说，这听起来挺蠢的，伙计
+I mean, this sounds really silly, mate,
+
+683
+00:34:43,393 --> 00:34:47,024
+但对我来说，处理那些琐碎细节要花的时间长得多，比如
+but like it takes me substantially longer to go through the minutia of, like,
+
+684
+00:34:47,024 --> 00:34:49,464
+搞定 git commit 之类的所有环节
+getting git commit and all of the kind of like pieces
+
+685
+00:34:49,464 --> 00:34:53,266
+这些对工程师来说是本能，反而比真正搞清楚
+that are second nature to engineer aligned then it does to actually work out what
+
+686
+00:34:53,266 --> 00:34:55,820
+问题是什么、并把它描述出来还要久。所以是的，就像
+the problem is and be able to describe it. So yes, like.
+
+687
+00:34:56,180 --> 00:34:58,940
+亲自动手是个好习惯，你懂的，确保你在实际做事
+Good practice to try and, you know, make sure you're doing something.
+
+688
+00:34:59,460 --> 00:35:00,959
+呃，比如说，我不想仅凭别人告诉我的话
+Uh, for example, I don't want to judge
+
+689
+00:35:00,959 --> 00:35:03,860
+就去判断我们的开发工具是不是变得更好用了
+if our dev tools have gotten easier or not based on what someone tells me.
+
+690
+00:35:03,940 --> 00:35:07,340
+我会亲自去试，然后确认，对，这比我上次做的时候更简单了
+I'm gonna go and try it and be like, yep, that was easier than last time I did it.
+
+691
+00:35:07,700 --> 00:35:11,137
+但我确实觉得，理解代码库能让你走很远
+But I do think you can get an awful long way understanding the code base
+
+692
+00:35:11,137 --> 00:35:14,100
+然后再和真正能执行到位的人交流
+and then talking to somebody who can actually execute well.
+
+693
+00:35:14,520 --> 00:35:17,080
+你懂的，否则你就会，你会
+You know, otherwise you're just gonna get, you're gonna,
+
+694
+00:35:17,080 --> 00:35:19,533
+你会掉进上千个经典的坑里
+you're gonna fall foul of like a thousand classic traps
+
+695
+00:35:19,533 --> 00:35:22,520
+而其他工程师在 L4 级别时就学会了如何避开这些坑
+that every other engineer Learned how not to do when they were in L4.
+
+696
+00:35:22,960 --> 00:35:25,060
+那我们顺着这个话题往下聊
+So following that thread a little bit,
+
+697
+00:35:25,060 --> 00:35:29,325
+AI 在哪些方面让你和你的团队跑得更快
+what are some of the ways that AI has enabled you and or your team to move faster,
+
+698
+00:35:29,325 --> 00:35:30,440
+更有效率
+be more productive?
+
+699
+00:35:30,880 --> 00:35:34,051
+呃，除了做原型，那是 AI 对 PM
+Uh, other than prototyping, which is the very, uh,
+
+700
+00:35:34,051 --> 00:35:36,920
+和产品团队非常明显的好处
+clear benefit of AI for PMs and product teams.
+
+701
+00:35:37,200 --> 00:35:37,480
+还有别的吗
+What else?
+
+702
+00:35:37,520 --> 00:35:39,449
+有哪些能进前三的、让你觉得，哇
+What are maybe in the top three of like, wow,
+
+703
+00:35:39,449 --> 00:35:43,040
+这真的释放了我们的生产力，还有我们工作的质量
+this is really unlocked our productivity and, and, and the quality of what we do.
+
+704
+00:35:43,240 --> 00:35:46,560
+我觉得排第一、而且遥遥领先的，是数据科学
+I mean, the first one I think by a country mile is data science.
+
+705
+00:35:47,200 --> 00:35:49,200
+你懂的，我们在 Whatnot 内部用 Hex threads
+You know, we use hex threads internally at whatnot.
+
+706
+00:35:49,240 --> 00:35:52,539
+我相信市面上也有其他类似的产品
+I'm sure there are other kind of like comparable products,
+
+707
+00:35:52,539 --> 00:35:55,367
+但我觉得现在几乎很难回想起当 PM 时
+but I think it's almost hard to remember time as a PM
+
+708
+00:35:55,367 --> 00:35:57,185
+还没有这种工具的日子
+before you had tooling like that
+
+709
+00:35:57,185 --> 00:36:00,821
+有了它你能真正开始拉取全新的数据分群
+where you could genuinely start pulling very new cohorts of data
+
+710
+00:36:00,821 --> 00:36:05,063
+你可以针对某个听说过反馈的具体用户
+where you could kind of grab an individual user where you've heard a report,
+
+711
+00:36:05,063 --> 00:36:08,160
+去真正理解，你懂的，比如说，我们把日志拉出来
+actually understand, you know, like, let's pull logs.
+
+712
+00:36:08,280 --> 00:36:10,560
+帮我搞清楚这个用户到底做了什么、看到了什么
+Help me understand exactly what this user did and saw.
+
+713
+00:36:11,200 --> 00:36:13,354
+有多少其他用户和这个情况类似，你懂的
+How many other users look like this, you know,
+
+714
+00:36:13,354 --> 00:36:16,925
+影响会是什么，然后突然之间你就能构建出相当有意义的
+what would impact be and then all of a sudden you can build pretty meaningful
+
+715
+00:36:16,925 --> 00:36:20,722
+敏感度模型，或者对可能发生情况的预测、回归模型
+sensitivity models or like forecasts of what might happen, regression models,
+
+716
+00:36:20,722 --> 00:36:24,520
+等等，而且非常非常非常快，这实在是太强大了
+et cetera, really, really, really quickly, which is like incredibly powerful.
+
+717
+00:36:25,240 --> 00:36:28,913
+呃，我们发现的另一件事是，它帮我们更快地
+Um, the other thing that we've found is it helps us move much more quickly with
+
+718
+00:36:28,913 --> 00:36:31,323
+交付东西，因为你能发现回归问题
+shipping things because you can spot regressions
+
+719
+00:36:31,323 --> 00:36:35,800
+以及两个产品混在一起产生的奇怪连锁反应，比过去发现得更快
+and weird knock on effects of two products into mixing more quickly than you used to be able to.
+
+720
+00:36:36,400 --> 00:36:39,118
+我觉得在那些非常庞大复杂的系统里，你懂的
+And I think in, you know, really large complicated systems,
+
+721
+00:36:39,118 --> 00:36:42,869
+这一直是拖慢你速度的因素之一，比如发布周期
+that's always one of the things that ends up slowing you down of like release trains
+
+722
+00:36:42,869 --> 00:36:45,587
+诸如此类，而如果你构建了合适的 AI 工具
+and all of that versus like if you build the right AI tooling,
+
+723
+00:36:45,587 --> 00:36:47,490
+你就能非常快地发现回归问题
+you can spot regressions really quickly.
+
+724
+00:36:47,570 --> 00:36:49,992
+这基本上让人们可以直接往前走
+Which basically lets people just kind of like go,
+
+725
+00:36:49,992 --> 00:36:52,827
+所以我不知道数据科学的未来会是什么样
+so I don't know what the future of data science looks like,
+
+726
+00:36:52,827 --> 00:36:54,422
+但我觉得作为一名产品经理
+but I think as a product manager,
+
+727
+00:36:54,422 --> 00:36:58,970
+过去一年我跟数据科学家交流的时间，是我职业生涯中最少的
+I've spent less time in the last year talking to a data scientist than I ever have in my career.
+
+728
+00:36:59,090 --> 00:37:01,859
+尽管我花在数据上的时间可能多了十倍
+Even though I've probably spent 10 times more time in data
+
+729
+00:37:01,859 --> 00:37:06,129
+用来真正理解产品是怎么运作的，比我职业生涯任何时候都多
+and understanding actually how the product's working than I have ever have in my career.
+
+730
+00:37:06,169 --> 00:37:07,849
+所以我觉得这一点真的很强大
+So that one, I think, is really powerful.
+
+731
+00:37:09,009 --> 00:37:10,964
+第二点我已经提过了，就是
+Second one I've already mentioned, which is like,
+
+732
+00:37:10,964 --> 00:37:13,989
+别再拿代码库怎么运作的问题去烦工程师，而是直接
+stop bothering engineers with how does the code base work and actually just go
+
+733
+00:37:13,989 --> 00:37:16,409
+去问 Claude 并理解它，这真的很有帮助
+and talk to Claude and understand it, which is really helpful.
+
+734
+00:37:16,569 --> 00:37:18,531
+你知道，我职业生涯早期常说
+You know, I used to say early on in my career
+
+735
+00:37:18,531 --> 00:37:21,614
+目标始终是要在方框和连线的层面理解你的系统
+that the goal was always to be understand your systems at the boxes
+
+736
+00:37:21,614 --> 00:37:24,529
+就是搞清楚哪个系统驱动哪个东西
+and lines level of, you know, which system drives which thing.
+
+737
+00:37:24,569 --> 00:37:28,510
+现在你没有借口不去理解这些，甚至更细致的层面
+And now there's no excuse not to understand that or a nuance layer.
+
+738
+00:37:29,630 --> 00:37:32,508
+但另外一点，这可能非常特定于 Whatnot
+But the the other one, and this might be very specific to whatnot,
+
+739
+00:37:32,508 --> 00:37:34,480
+所以我不确定这对每个人都有用
+so I don't know that this will help everyone.
+
+740
+00:37:34,680 --> 00:37:38,542
+但我职业生涯中很幸运做过的一件事，就是一直在做
+But one of the things that I've been lucky to do in my career is basically worked on
+
+741
+00:37:38,542 --> 00:37:40,040
+直播类产品，到现在有十年了
+live products for a decade now.
+
+742
+00:37:40,800 --> 00:37:43,965
+所以能发布一个产品，一直都是件很酷的事
+And so it's always been really cool to be able to ship a product
+
+743
+00:37:43,965 --> 00:37:47,440
+然后看着用户使用它，看着他们慢慢摸索明白
+and then watch a customer use it and watch them kind of figure it out.
+
+744
+00:37:47,960 --> 00:37:51,991
+我觉得人们通过 Listen Labs 之类的工具刚开始有了这种体验
+So like I think people have just gotten this experience with like Listen Labs and
+
+745
+00:37:51,991 --> 00:37:55,600
+还有那一批同类工具，去观察人们使用你的产品
+and you know, others in that cohort of watching people use your product.
+
+746
+00:37:55,940 --> 00:37:59,189
+但我一直都能坐下来看人们第一次使用某个东西
+But I've always been able to sit and watch people use a thing for the first time
+
+747
+00:37:59,189 --> 00:38:01,220
+经历那种新用户的理解落差
+and go through that new user comprehension gap.
+
+748
+00:38:01,740 --> 00:38:04,793
+现在很多 AI 工具真正酷的地方在于
+What's really cool with a bunch of the AI tooling right now is,
+
+749
+00:38:04,793 --> 00:38:07,247
+当他们在描述"哦，我遇到了一个问题"时
+as they're describing, oh, I'm having a problem,
+
+750
+00:38:07,247 --> 00:38:10,300
+你可以真的实时看着代码库去弄清楚
+you can literally be watching the code base live and work out.
+
+751
+00:38:10,340 --> 00:38:13,740
+这到底是不是一个此刻正在发生的 bug？就在此刻
+Is that actually a bug that's happening right now? Right now.
+
+752
+00:38:14,220 --> 00:38:17,185
+还是说这是一种理解落差，产品没有按预期运作
+Or is that a comprehension gap where it doesn't work as expected
+
+753
+00:38:17,185 --> 00:38:20,710
+而你突然就有了一段用户使用你产品的录像
+and suddenly you've got this video artifact of someone using your product.
+
+754
+00:38:21,030 --> 00:38:23,249
+你可以实时分析代码库
+You can be analyzing the code base in real time
+
+755
+00:38:23,249 --> 00:38:27,219
+你还可以通过 AI 跟代码库对话，去理解到底
+and you can be just talking kind of through AI to the code base to understand what's
+
+756
+00:38:27,219 --> 00:38:28,270
+发生了什么
+actually happening.
+
+757
+00:38:28,310 --> 00:38:30,258
+这就像是，你知道
+And it's this, it's like, you know,
+
+758
+00:38:30,258 --> 00:38:34,892
+一个被极度强化的反馈闭环，因为你突然就完全清楚发生了什么
+a feedback loop on steroids because all of a sudden you know exactly what's going on
+
+759
+00:38:34,892 --> 00:38:39,391
+用户端、代码端，还有作为观察者的观看端，全都实时同步
+customer side, code side, and observe side as, as like a viewer, uh, in real time,
+
+760
+00:38:39,391 --> 00:38:40,600
+这真的很酷
+which is really cool.
+
+761
+00:38:40,880 --> 00:38:45,710
+这听起来既很棒又很有压力，去做那些
+That sounds, uh, both awesome and very stressful to be building products that are,
+
+762
+00:38:45,710 --> 00:38:47,040
+实时运行的产品
+that live in real time.
+
+763
+00:38:47,280 --> 00:38:50,078
+我想到 Netflix，他们现在也在投入直播
+I think about, um, Netflix where they invest in live now and
+
+764
+00:38:50,078 --> 00:38:53,104
+而这正是你十年来一直在做的事，以及这对他们来说
+that's just like all you've done for 10 years and how big of a deal
+
+765
+00:38:53,104 --> 00:38:53,960
+是多大的一件事
+that was for them.
+
+766
+00:38:54,000 --> 00:38:54,840
+我知道规模是不一样的
+I know the scale is different.
+
+767
+00:38:54,880 --> 00:38:57,428
+但说实话，我在 Whatnot 的第二周
+But honestly, my second week at whatnot, um,
+
+768
+00:38:57,428 --> 00:39:02,110
+我记得坐在一个房间里看着，呃，对不熟悉的人来说
+I remember sitting in a room watching so, uh, uh, one after those not familiar, uh,
+
+769
+00:39:02,110 --> 00:39:06,310
+它主要是一个偏拍卖的交易平台，但也是个直播电商平台
+kind of commerce largely auction platform, but live commerce platform.
+
+770
+00:39:06,870 --> 00:39:09,585
+呃，运营拍卖有各种不同的方式
+Um, and there's varieties of different ways to run an auction,
+
+771
+00:39:09,585 --> 00:39:13,710
+其中一种叫"骤死式"，就是计时器一结束，拍卖就结束，对吧
+but one of them is what's called sudden death, which is like when the timer ends, it ends, right?
+
+772
+00:39:13,750 --> 00:39:17,616
+否则在经典的拍卖场景里，如果有人在最后五秒出价
+Otherwise, the classic auction environment, somebody bids in the last five seconds,
+
+773
+00:39:17,616 --> 00:39:19,388
+计时器就会再加回十秒
+it adds 10 seconds back on the clock, uh,
+
+774
+00:39:19,388 --> 00:39:21,750
+卖家可以决定自己想用哪种拍卖模式
+and a seller can decide what auction model they want.
+
+775
+00:39:21,950 --> 00:39:24,910
+我坐在那儿看着一个卖家，他说，这些拍卖太慢了
+And I was sitting there watching a seller who was like, these are taking too long.
+
+776
+00:39:24,950 --> 00:39:27,455
+我希望这个 7 秒的计时器其实是 3 秒
+I wish this 7 second timer was actually 3 seconds
+
+777
+00:39:27,455 --> 00:39:29,710
+因为我想卖出更多商品
+because I want to move more product and the.
+
+778
+00:39:30,070 --> 00:39:32,683
+我看着办公室里两个工程师对视了一眼，说
+I watched two engineers in the office look at each other and be like,
+
+779
+00:39:32,683 --> 00:39:33,430
+那会有冲突
+that's a conflict.
+
+780
+00:39:33,510 --> 00:39:34,390
+我们完全可以做到
+We could totally do that.
+
+781
+00:39:34,670 --> 00:39:36,301
+于是他们实时更新了代码
+And so they went and updated it in real time
+
+782
+00:39:36,301 --> 00:39:38,910
+然后进到一个直播的聊天里说，刷新一下你的 app
+and then jumped in the chat of a show and just said, refresh your app.
+
+783
+00:39:39,230 --> 00:39:42,910
+然后突然间，砰，就那样运行起来了。我心想，酷
+And then all of a sudden, bang, it was operating that way. And I was like, cool,
+
+784
+00:39:42,910 --> 00:39:43,830
+我找到同类了
+I'm with my people.
+
+785
+00:39:43,910 --> 00:39:46,983
+我来对地方了，因为这就是那种
+I'm in, like, the right place because that's the level of, like,
+
+786
+00:39:46,983 --> 00:39:49,650
+在直播环境里能达到的响应速度
+responsiveness that you can get in a live environment.
+
+787
+00:39:49,650 --> 00:39:53,344
+显然，AI 让很多人都能轻松做到这一点
+And obviously, AI means that that's really easy for lots of people to take on,
+
+788
+00:39:53,344 --> 00:39:56,460
+倒不是说我会那样去动生产环境的代码，因为
+not that I would touch production code in that kind of way because
+
+789
+00:39:56,460 --> 00:39:57,730
+那是个灾难性的主意
+that's a disastrous idea.
+
+790
+00:39:58,290 --> 00:40:01,730
+但对有资质的人来说，这很棒。那真的很酷
+But the qualified humans, it's a wonderful one. That is very cool.
+
+791
+00:40:02,450 --> 00:40:06,787
+本期节目由 Mercury 赞助。彻底不同的银行服务
+This episode is brought to you by Mercury. Radically different banking,
+
+792
+00:40:06,787 --> 00:40:10,270
+深受超过 30 万创业者喜爱，如今还带来了 Command
+loved by over 300,000 entrepreneurs and now with command.
+
+793
+00:40:10,790 --> 00:40:13,155
+我做 Mercury 的客户已经六年多了
+I've been a customer of Mercury's for over 6 years.
+
+794
+00:40:13,155 --> 00:40:15,070
+我从没想过要离开
+I have never once thought about leaving.
+
+795
+00:40:15,390 --> 00:40:20,310
+Mercury 基本上就是当银行服务由产品人而不是银行家来打造时的样子
+Mercury is basically what happens when banking is built by product people, not by bankers.
+
+796
+00:40:20,670 --> 00:40:25,649
+他们让开发票、转账变得非常简单，甚至可以说有趣
+They make it so easy, dare I say fun, to send invoices, move money around,
+
+797
+00:40:25,649 --> 00:40:28,470
+还能给我团队的人设置虚拟卡
+set up virtual cards for folks on my team.
+
+798
+00:40:29,130 --> 00:40:34,370
+你的银行有 API、终端、原生 CLI 或支持 AI 的 MCP 服务器吗
+Your bank have an API, a terminal, native CLI or an AI ready MCP server?
+
+799
+00:40:34,690 --> 00:40:35,450
+我看没有
+I don't think so.
+
+800
+00:40:35,970 --> 00:40:38,220
+就在最近，他们推出了 Command
+And just recently they launched command,
+
+801
+00:40:38,220 --> 00:40:41,369
+一个直接内置在 Mercury 里的对话式界面
+a conversational interface built directly into Mercury,
+
+802
+00:40:41,369 --> 00:40:43,490
+它就像你的财务操作员
+which acts as your financial operator.
+
+803
+00:40:43,930 --> 00:40:47,913
+我一直用 Command 来转账，弄清楚我在哪些类别上
+I've been using command to transfer money around to figure out what categories I've
+
+804
+00:40:47,913 --> 00:40:50,530
+花钱最多，分析我的现金流
+been spending the most money in, analyze my cash flows.
+
+805
+00:40:51,100 --> 00:40:55,580
+就在今天，我用它查了过去一年从某个特定赞助商那里赚了多少钱
+And just today I used it to find out how much I've made from a specific sponsor over the past year.
+
+806
+00:40:55,900 --> 00:40:59,100
+我只是问，过去一年我从 X 赚了多少
+I just asked how much have I made from X over the past year.
+
+807
+00:40:59,460 --> 00:41:02,580
+十秒后我就得到了答案。太酷了
+10 seconds later, I have an answer. It is so freaking cool.
+
+808
+00:41:02,940 --> 00:41:06,494
+访问 mercury.com 了解更多，几分钟就能在线申请
+Visit mercury.com to learn more and apply online in minutes.
+
+809
+00:41:06,494 --> 00:41:09,700
+Mercury 是一家金融科技公司，不是受 FDIC 保险的银行
+Mercury is a fintech company, not an FDIC insured bank.
+
+810
+00:41:09,900 --> 00:41:14,370
+银行服务由 Choice Financial Group 和 Column N.A. 提供，均为 FDIC 成员
+Banking services provided through Choice Financial Group and column na members FDIC.
+
+811
+00:41:15,210 --> 00:41:19,577
+回到数据科学这个话题，我有个朋友是数据
+Coming back to this data science point I I had a I have a friend who's a data
+
+812
+00:41:19,577 --> 00:41:23,143
+科学家，他说现在对数据科学家来说是段艰难时期
+scientist and he said it's a rough time for data scientists
+
+813
+00:41:23,143 --> 00:41:24,890
+就是因为这个原因
+because of this exact thing.
+
+814
+00:41:24,890 --> 00:41:26,667
+再补充一点细节
+And to add a little more color,
+
+815
+00:41:26,667 --> 00:41:30,362
+基本上以前他们的工作是被要求做些数据分析
+basically their time used to be asked to do some data analysis,
+
+816
+00:41:30,362 --> 00:41:33,773
+处理一下数据，然后回来说，这是结果
+do some work with the data, come back, here's the results,
+
+817
+00:41:33,773 --> 00:41:36,260
+我对这个结论很有信心
+here's I'm confident in this conclusion.
+
+818
+00:41:36,540 --> 00:41:41,475
+现在他们的时间基本上是看那些非数据科学家做出的半吊子数据分析
+Now their time is basically uh seeing like half ass data science work from non data
+
+819
+00:41:41,475 --> 00:41:44,740
+然后被问，你看看，这对不对
+scientists and, and just like, show me, is this right?
+
+820
+00:41:44,820 --> 00:41:47,307
+结果一半时候是错的，他们就想
+And then they're, and half the time it's wrong and they're like,
+
+821
+00:41:47,307 --> 00:41:48,340
+我现在这工作到底算什么
+what the hell is my job now?
+
+822
+00:41:48,420 --> 00:41:48,780
+太糟心了
+It sucks.
+
+823
+00:41:49,380 --> 00:41:53,060
+是啊。听着，我很能理解这一点，因为我确实见过
+Yeah. Listen, uh, I have a lot of empathy for that because I've certainly seen it.
+
+824
+00:41:53,400 --> 00:41:55,425
+这又是一个论据，说明为什么人数更少、
+Another plug for why having fewer,
+
+825
+00:41:55,425 --> 00:41:59,684
+更资深的 PM 会有帮助，因为那些人见过更多
+more senior PMs is helpful because those are folks who've seen more of the
+
+826
+00:41:59,684 --> 00:42:01,080
+实战经验，也更懂行
+as reps and understand.
+
+827
+00:42:01,520 --> 00:42:03,495
+但我也认为，很多时候
+But I also think a lot of the time that, uh,
+
+828
+00:42:03,495 --> 00:42:05,586
+这种不清晰来自另一件事
+lack of clarity comes from the other thing,
+
+829
+00:42:05,586 --> 00:42:09,420
+那就是组织在历史上对数据工程投入不足
+which is organizations have historically underinvested in data engineering
+
+830
+00:42:09,420 --> 00:42:11,744
+对数据结构、良好的数据标注也投入不足
+and data structures and, and good data labeling
+
+831
+00:42:11,744 --> 00:42:15,520
+不只是你的分类体系有没有搞对
+and whether or not you've got your kind of, um, not just your taxonomies right.
+
+832
+00:42:15,520 --> 00:42:19,629
+而是你有没有真正搞清楚你的数据系统
+But whether or not you really understand whether whether or not your data systems
+
+833
+00:42:19,629 --> 00:42:21,200
+和结构有没有搭建好
+and structures are set up well.
+
+834
+00:42:21,200 --> 00:42:24,510
+所以我们发现，很多最优秀的数据科学家都在朝
+And so what we found is a lot of our best data scientists are pushing in
+
+835
+00:42:24,510 --> 00:42:28,342
+这个方向努力，比如，我们是不是真的正确更新了
+that direction of like, uh, are we actually, you know, correctly updating, uh,
+
+836
+00:42:28,342 --> 00:42:31,303
+我们追踪和归因运作的所有方式
+all of the ways in which our tracking and attribution works so
+
+837
+00:42:31,303 --> 00:42:33,510
+好让大家不那么容易
+that it's less easy for people to kind of like.
+
+838
+00:42:33,550 --> 00:42:37,767
+误解这些数据。是的，用 AI 工具去找一份数据
+Misunderstand those and then yeah, uh using an AI tool to find a piece of data,
+
+839
+00:42:37,767 --> 00:42:39,942
+就像用 AI 工具写代码一样
+much like using an AI tool to write code,
+
+840
+00:42:39,942 --> 00:42:44,950
+并不能免除你确保它是好的分析、好的代码的责任
+doesn't absolve you of responsibility to make sure that that was good analysis, good code.
+
+841
+00:42:45,410 --> 00:42:48,410
+这往往只是给那些天生擅长这方面的人提供了杠杆
+It's just tends to be leverage for those people who are naturally inclined that way.
+
+842
+00:42:48,730 --> 00:42:52,808
+那么想想这些不同的职能：数据科学、用户研究、设计、
+So thinking about these different functions, data science, user research, design,
+
+843
+00:42:52,808 --> 00:42:56,370
+工程、PM，我目前听到的是我们可能需要更少的 PM
+engineering, PM, what I'm hearing so far is we'll need probably fewer PMs.
+
+844
+00:42:56,850 --> 00:42:58,250
+我们需要更少的数据科学家
+We'll need fewer data scientists.
+
+845
+00:42:58,930 --> 00:43:00,821
+你觉得还有没有其他角色
+Are there any other roles that you think they'll,
+
+846
+00:43:00,821 --> 00:43:02,850
+在需求上呈下降趋势的
+they're kind of trending down in terms of we'll need?
+
+847
+00:43:02,930 --> 00:43:04,760
+有没有哪些角色需求在上升，让你觉得，哇
+And are there any roles trending up like, wow,
+
+848
+00:43:04,760 --> 00:43:06,830
+我们会需要多得多这类人
+we're going to need a lot more of this kind of person?
+
+849
+00:43:07,230 --> 00:43:10,590
+有意思的是，就像我说的，我有段时间没和数据科学团队聊过了
+Well, funnily enough, like as I say, I haven't spoken to data science in a while.
+
+850
+00:43:10,590 --> 00:43:14,866
+我们肯定还招了不少，因为我确实觉得那种，呃
+We've we've certainly still hired plenty because I do think that kind of, uh,
+
+851
+00:43:14,866 --> 00:43:19,276
+所有那些追踪、归因和度量的工作真的非常强大，嗯
+all that tracking and attribution and measurement really really powerful um,
+
+852
+00:43:19,276 --> 00:43:22,350
+我也觉得，我们说需要更少人，还有另一面
+I also think one of the flip sides of we say we need fewer.
+
+853
+00:43:22,990 --> 00:43:26,510
+那是指同样产出下需要更少人
+It's like fewer of for the same output.
+
+854
+00:43:27,970 --> 00:43:30,717
+从宏观上不一定意味着总量更少，因为
+Doesn't necessarily mean fewer of in macro because
+
+855
+00:43:30,717 --> 00:43:34,359
+如果你正确使用这些系统，你可以增长得更快
+if you are using these systems right, you can just grow more quickly,
+
+856
+00:43:34,359 --> 00:43:37,170
+你可以做更多东西，承担更多事情
+you can build more things, you can take on more stuff.
+
+857
+00:43:37,490 --> 00:43:43,330
+所以说实话，如果最后净人数变少，我反而会意外
+So, you know, I would be surprised actually if we ended up with like net fewer.
+
+858
+00:43:43,610 --> 00:43:47,570
+我觉得更像是相对于客户影响而言，两者的人数都净变少
+I think it's more like net fewer vis a vis customer impact for both.
+
+859
+00:43:48,410 --> 00:43:53,599
+嗯，当然，我觉得在这些角色里随时间上升的是
+Um, certainly, I think kind of like trending up over time within these roles are
+
+860
+00:43:53,599 --> 00:43:58,788
+这类，我不记得大家以前用的确切叫法
+these kind of like, and I don't remember the exact label that people used to use,
+
+861
+00:43:58,788 --> 00:44:02,876
+但就是那种 tech lead，有点像混合型的 EM
+but this idea of like tech leads that are kind of like a hybrid em
+
+862
+00:44:02,876 --> 00:44:04,370
+你在带一个团队
+where you're running.
+
+863
+00:44:04,410 --> 00:44:08,568
+一个很小的团队去冲着某些事情干，因为就像我们会说的
+A very small team kind of running at things because the same way that we'd say,
+
+864
+00:44:08,568 --> 00:44:11,427
+尝试一件事的成本已经下降了
+you know, the cost of trying something has come down,
+
+865
+00:44:11,427 --> 00:44:14,091
+这意味着你可以有一种核心专注
+the idea that says you can have kind of core focus,
+
+866
+00:44:14,091 --> 00:44:15,910
+这是我们非常看重的一点
+which is a thing we're very big on.
+
+867
+00:44:16,030 --> 00:44:18,984
+我们也发现孵化很多小团队，让他们过去
+We've also found incubating a lot of smaller teams to gonna go over
+
+868
+00:44:18,984 --> 00:44:22,100
+坐在角落里，就去试着把这个东西做出来，你懂的
+and sit in the corner and just try and build this thing going, you know,
+
+869
+00:44:22,100 --> 00:44:25,215
+这不完全是做原型，而是像去尝试做一件
+it's not quite prototyping, but it's like go and take a swing at a thing
+
+870
+00:44:25,215 --> 00:44:27,310
+我们过去一直觉得太难的事
+that we've historically thought was too hard.
+
+871
+00:44:28,110 --> 00:44:31,310
+正变得越来越便宜，而且杠杆越来越高
+Is getting cheaper and increasingly has very high leverage.
+
+872
+00:44:31,390 --> 00:44:36,284
+所以，姑且叫它「轻量版工程经理」吧，这是
+So the idea of like engineering manager light for one of a better term is the thing
+
+873
+00:44:36,284 --> 00:44:39,790
+我肯定觉得我们会越来越常见到的角色
+that I'm definitely think that we'll see more and more of.
+
+874
+00:44:39,870 --> 00:44:43,609
+它不完全是纯技术岗，虽然那当然很好
+It's like not quite the technical member of staff, although that must be lovely,
+
+875
+00:44:43,609 --> 00:44:46,845
+但肯定也不是那种完整的 EM 角色，我觉得这样的角色
+but certainly not the kind of like full blown em role I think is one that
+
+876
+00:44:46,845 --> 00:44:48,910
+肯定会越来越频繁地出现
+that definitely will come about more often.
+
+877
+00:44:49,270 --> 00:44:52,745
+那么，为了给这部分对话收个尾，有这样一个
+So maybe just to close the loop on this part of the conversation, there's this,
+
+878
+00:44:52,745 --> 00:44:55,150
+你懂的，人人都是 builder 的趋势
+you know, trend towards everyone's kind of a builder.
+
+879
+00:44:55,820 --> 00:44:58,439
+PM 会做一点交付，更像工程师一点
+PMs are shipping a little bit, being a little more engineer,
+
+880
+00:44:58,439 --> 00:45:00,220
+工程师承担更多 PM 的工作
+engineers are taking on more the PM work.
+
+881
+00:45:00,660 --> 00:45:04,482
+你觉得在未来几年里，这大概会怎样演变
+How do you think this just kind of maybe plays out over the next couple of years in
+
+882
+00:45:04,482 --> 00:45:06,740
+就产品团队大致会是什么样子而言
+terms of what product teams look like broadly?
+
+883
+00:45:06,940 --> 00:45:11,540
+还是 PM、工程师、一名设计师、某处还有个数据科学家吗
+Is it still PM engineers, a designer, data scientist somewhere?
+
+884
+00:45:11,780 --> 00:45:15,860
+你怎么设想未来几年里典型的产品团队
+Is there how do you kind of envision the canonical product team over the coming years?
+
+885
+00:45:16,460 --> 00:45:16,980
+好问题
+Great question.
+
+886
+00:45:17,700 --> 00:45:19,860
+我也不确定自己知道它在各处会是什么样
+And I don't know that I know what it looks like everywhere.
+
+887
+00:45:20,570 --> 00:45:23,907
+我觉得在 Whatnot，它大概还是基本上和
+I think what it'll look like at whatnot is it probably still looks mostly like it
+
+888
+00:45:23,907 --> 00:45:25,525
+过去差不多，就是，你懂的
+has historically, which is, you know,
+
+889
+00:45:25,525 --> 00:45:29,114
+你之所以会有专门的设计师、专门的工程师、
+there are reasons that you would have a specialist designer, specialist engineers,
+
+890
+00:45:29,114 --> 00:45:30,530
+专门的产品管理，是有原因的
+specialist product management.
+
+891
+00:45:31,290 --> 00:45:35,819
+我觉得那种非常固定的团队，大多会留给非常
+I think those kind of very concrete teams will largely be reserved for like very
+
+892
+00:45:35,819 --> 00:45:40,212
+具体的项目，或者那些我们高度确信、坚信
+specific projects or like things that we have high confidence or conviction
+
+893
+00:45:40,212 --> 00:45:43,918
+我们需要解决的事情，或者我们相当确信、坚信
+that we need to solve or we're pretty high confidence conviction
+
+894
+00:45:43,918 --> 00:45:46,800
+我们在某件事上有明确路径，而且我们想要
+that we have a path forward on a thing and we want to.
+
+895
+00:45:46,800 --> 00:45:47,600
+取得实质进展
+Make good progress.
+
+896
+00:45:48,120 --> 00:45:49,850
+而我觉得在这些之外的边缘地带
+And I think at the edges around that,
+
+897
+00:45:49,850 --> 00:45:53,310
+会有大得多的自由空间让人去发挥，比如，嘿
+there's going to be a lot more free space for people to play on, like, hey,
+
+898
+00:45:53,310 --> 00:45:57,000
+我相当确定我能去把这个东西做出有意义的改进
+I'm reasonably sure I can go and make a meaningful improvement to this thing.
+
+899
+00:45:57,040 --> 00:46:02,233
+而且无论你是设计师、工程师、产品经理
+And it doesn't matter if you are a designer, an engineer, a product manager,
+
+900
+00:46:02,233 --> 00:46:05,530
+还是数据科学家，你都可以，也应该去做，对吧
+a data scientist, you can and you should, right?
+
+901
+00:46:05,650 --> 00:46:08,191
+如果你周五下午坐在那儿，没法专注写文档
+If you're sitting there on a Friday afternoon and you can't focus on the pod,
+
+902
+00:46:08,191 --> 00:46:10,490
+你在写东西，但你很确定自己可以去修好某个东西
+you're writing, but you're pretty sure you can go and fix something.
+
+903
+00:46:10,690 --> 00:46:11,250
+那就去做吧
+Go for it.
+
+904
+00:46:11,730 --> 00:46:15,558
+嗯，所以我觉得它可能不会以那种更正式的方式演变
+Um, and so I think it probably doesn't morph in the more formal sense,
+
+905
+00:46:15,558 --> 00:46:19,990
+但我确实觉得，对那些精通客户问题、
+but I do think there's just a lot more free space for people who are well versed in
+
+906
+00:46:19,990 --> 00:46:24,154
+精通代码库、并理解一些宏观背景的人来说
+the customer problems, well versed in the code base and understand some of
+
+907
+00:46:24,154 --> 00:46:26,840
+会有多得多的自由空间。他们会被赋能去
+that macro context. We'll just be empowered to.
+
+908
+00:46:26,840 --> 00:46:27,640
+做越来越多的事
+Do more and more things.
+
+909
+00:46:28,240 --> 00:46:29,960
+大概两年、两年半前，我发过一篇帖子
+Two, two and a half years ago, I had this post.
+
+910
+00:46:30,000 --> 00:46:35,520
+我在里面说，为什么 PM 是科技行业中最有条件在 AI 时代蓬勃发展的角色
+So I put out where I said, why PMs are the best positioned role in tech to thrive in an AI world.
+
+911
+00:46:35,960 --> 00:46:39,632
+我觉得，尽管我们对话一开始像是在说，呃
+And I feel like even though the beginning of our conversation was like, uh,
+
+912
+00:46:39,632 --> 00:46:42,120
+我们应该生活在一个「遗憾 PM 存在」的世界里
+we should live in a world where we regret PM exists.
+
+913
+00:46:42,560 --> 00:46:46,343
+但我感觉我们其实认同一点：那些看起来最重要、
+I feel like we agree on this idea that the skills that seem to matter most
+
+914
+00:46:46,343 --> 00:46:48,139
+也将最有价值的技能
+and are going to be most valuable,
+
+915
+00:46:48,139 --> 00:46:52,050
+不管是 PM、工程师还是设计师在做，都是非常 PM 式的技能
+whether it's a PM doing them or an engineer or designers, very PMI skills.
+
+916
+00:46:52,370 --> 00:46:54,250
+我从这篇帖子里分享几个例子
+I'll share a few examples in this from this post.
+
+917
+00:46:54,410 --> 00:46:57,530
+比如说，谁真的擅长这些事
+Like what what do we who is really good at this stuff?
+
+918
+00:46:58,010 --> 00:47:02,103
+这些事包括：识别要做什么、提炼和传达需求、
+These these things identifying what to build, distilling, communicating requirements,
+
+919
+00:47:02,103 --> 00:47:05,172
+从大家的想法中优先排出 ROI 最高的机会、
+prioritizing everyone's ideas for the highest ROI opportunities,
+
+920
+00:47:05,172 --> 00:47:08,834
+对设计给出反馈以提升影响力、制定 go-to-market 策略、
+giving feedback and design to improve impact, developing go to market strategy,
+
+921
+00:47:08,834 --> 00:47:10,450
+理解业务战略
+understanding business strategy.
+
+922
+00:47:10,910 --> 00:47:13,518
+对我来说，这就是 PM 该做的事，而且感觉这些正变得
+Like to me, this is what PMs do and it feels like that's becoming more
+
+923
+00:47:13,518 --> 00:47:14,310
+越来越重要
+and more important.
+
+924
+00:47:14,510 --> 00:47:16,139
+所以我想问你的问题是
+So I guess the question to you is,
+
+925
+00:47:16,139 --> 00:47:20,002
+你是否同意这个观点：随着 AI 接手「构建」的部分
+do you agree with this idea that the PME skills seem to be the most valuable now
+
+926
+00:47:20,002 --> 00:47:21,390
+PM 的技能如今似乎最有价值
+as AI takes on the building?
+
+927
+00:47:21,950 --> 00:47:22,550
+完全同意
+Definitely agree.
+
+928
+00:47:23,070 --> 00:47:26,350
+而且给你点赞，居然还带着证据、连时间戳都有，朋友，干得漂亮
+Also props for bringing in the receipts, even with a timestamp, my friend. Well done.
+
+929
+00:47:28,710 --> 00:47:33,659
+我唯一想补充的是，我觉得这些核心 PM 技能
+I think what my only build on that would be to say I think those core PM skills
+
+930
+00:47:33,659 --> 00:47:39,246
+并不一定是过去五年里我们奖励 PM 的东西
+aren't necessarily the things that we have rewarded PMs for over the last five years
+
+931
+00:47:39,246 --> 00:47:42,279
+相比之下，我们奖励的更多是讲故事、对齐、战略
+versus storytelling, alignment, strategy.
+
+932
+00:47:42,959 --> 00:47:45,615
+所以我确实觉得你百分之百说对了，比如说
+And so I do think you're 100% correct that like,
+
+933
+00:47:45,615 --> 00:47:47,999
+我能不能真正理解客户
+can I genuinely understand the customer?
+
+934
+00:47:48,159 --> 00:47:51,199
+我能不能真正理解业务？能不能真正理解技术
+Can I genuinely understand the business? Can I genuinely understand the tech?
+
+935
+00:47:51,359 --> 00:47:54,754
+我能不能把这三者结合起来，你懂的
+And can I translate the three together from, you know,
+
+936
+00:47:54,754 --> 00:47:59,581
+当做事的成本变低时，追求最优效率就是杠杆所在
+optimal efficiency is the point of leverage when doing things gets cheaper,
+
+937
+00:47:59,581 --> 00:48:01,920
+尝试的成本更低，等等
+trying things is cheaper, et cetera.
+
+938
+00:48:02,400 --> 00:48:07,400
+嗯，所以我绝对同意产品技能可能是最经得起时间考验的
+Um, so absolutely agree that product skills are probably the most durable.
+
+939
+00:48:07,920 --> 00:48:11,386
+我要补充的只是，有很多顶着 PM 头衔的人
+My build would just be there's a lot of people who have the title PM who haven't
+
+940
+00:48:11,386 --> 00:48:14,256
+过去五年里并没有花很多时间锤炼这些技能
+spent a lot of time building those skills in the last five years,
+
+941
+00:48:14,256 --> 00:48:17,560
+但很擅长向管理层传达各种框架
+but have gotten really good at communicating frameworks to leadership.
+
+942
+00:48:18,160 --> 00:48:22,780
+呃，所以我想把我们这个职能拉回到那些核心工作上
+Uh, and so I just kind of push us back as a function into like that core work.
+
+943
+00:48:23,100 --> 00:48:25,300
+是的，Marty Cagan 把这叫做「产品剧场」
+Yeah. Marty Kagan calls this product theater.
+
+944
+00:48:25,940 --> 00:48:29,376
+很多人只是在做 PM 表面上该做的事。而且说实话
+A lot of people just do the things that PM should be doing. And listen,
+
+945
+00:48:29,376 --> 00:48:30,340
+我自己也犯过这毛病
+I'm guilty of this.
+
+946
+00:48:30,340 --> 00:48:32,300
+我们奖励这种行为已经太久了
+We have we rewarded it for so long.
+
+947
+00:48:32,820 --> 00:48:33,020
+是啊
+Yeah.
+
+948
+00:48:33,460 --> 00:48:35,018
+所以我一点都不惊讶
+That like it doesn't surprise me that
+
+949
+00:48:35,018 --> 00:48:37,580
+「产品剧场」成了很多人核心的一套技能
+that product theater is a is a core skill set for a lot of folks.
+
+950
+00:48:37,940 --> 00:48:41,020
+我只是觉得，如今再靠这个已经没什么地方可躲了
+I just think that there's not a lot of place to hide in that anymore.
+
+951
+00:48:41,300 --> 00:48:44,380
+这又回到那个话题：有三万两千人来应聘岗位
+And this comes back to that 32,000 people applied for jobs.
+
+952
+00:48:44,890 --> 00:48:49,690
+我猜其中很多人只是自认为是 PM，或者顶着 PM 头衔，却并不具备……
+I imagine a lot of that is just people who think they're PMs or have the title PM but don't have.
+
+953
+00:48:49,850 --> 00:48:51,410
+而正是你刚才描述的那种人
+But are exactly what you described.
+
+954
+00:48:51,450 --> 00:48:54,528
+他们只是把大量精力放在对齐、写文档、开会之类的事上
+They just focus a lot on alignment, writing docs, meetings, things like that,
+
+955
+00:48:54,528 --> 00:48:57,890
+而不是真正的构建，不理解打造一款成功产品需要什么
+and not actual building, understanding what it takes to build a successful product.
+
+956
+00:48:58,090 --> 00:49:00,911
+是啊，Lenny，有很多人在产品面试里表现非常好
+Yeah, the number of people who do really well in a product interview, Lenny,
+
+957
+00:49:00,911 --> 00:49:02,210
+然后你给他们一个案例研究
+and then you give them a case study.
+
+958
+00:49:02,450 --> 00:49:06,210
+在 Whatnot，任何岗位被录用的人都要做一个真正动手的案例研究
+So everyone who gets hired at whatnot in any role has to do an actual hands on case study.
+
+959
+00:49:06,580 --> 00:49:09,083
+但有很多人表达得极其出色
+But the number of people who present incredibly well
+
+960
+00:49:09,083 --> 00:49:11,131
+然后你给他们一个题目和一些数据
+and then you give them a prompt and some data
+
+961
+00:49:11,131 --> 00:49:13,406
+让他们带着对某件事的观点回来
+and ask them to come back with a POV on something,
+
+962
+00:49:13,406 --> 00:49:15,340
+然后我们让他们当面为此辩护
+and then we make them verbally defend it.
+
+963
+00:49:16,180 --> 00:49:19,892
+那些擅长表演、
+How quickly the thinking decays from folks who are good at the theater
+
+964
+00:49:19,892 --> 00:49:22,900
+却讲不清细节的人，思路崩塌得有多快，其实很能说明问题
+but not the specifics is kind of really telling, I think.
+
+965
+00:49:23,340 --> 00:49:27,511
+好，那我们跳过招聘这一步，假设你已经招了某个人
+Okay, so kind of going beyond the hiring step, say you hire somebody,
+
+966
+00:49:27,511 --> 00:49:32,780
+关于如何最大程度发挥招来的人的价值，你学到了哪些经验
+what are some things you've Learned about how to get the most out of the people you hire?
+
+967
+00:49:33,100 --> 00:49:35,107
+你提到过一个有点反常规的观点
+You mentioned this kind of contrarian take
+
+968
+00:49:35,107 --> 00:49:38,340
+就是你不认同"招最好的人，然后别挡他们路"这套说法
+that you don't agree with this hire great people, get out of their way.
+
+969
+00:49:38,380 --> 00:49:39,807
+所以我想多听听这个观点
+So I want to hear more about that
+
+970
+00:49:39,807 --> 00:49:43,484
+以及关于打造一个非常成功、世界级产品团队的要素
+and just is there anything else you've Learned about just elements to building a
+
+971
+00:49:43,484 --> 00:49:45,460
+你还学到了什么
+very successful world class product team?
+
+972
+00:49:45,900 --> 00:49:51,140
+我得说，我那句"招人然后别挡路是错的"其实需要一些细化
+I mean, nuance required in my like hire people and get out of the way is wrong, I will say.
+
+973
+00:49:51,920 --> 00:49:54,600
+但有几点可以在此基础上展开
+But couple, couple pieces to build off of it.
+
+974
+00:49:54,760 --> 00:49:57,461
+我觉得总体来说，"招高水平的人
+I think in general, the higher grade people
+
+975
+00:49:57,461 --> 00:50:02,488
+然后别挡路"变成了一种笼统的说法，意思是让他们自己去搞清楚
+and get out of their way became this kind of like macro saying for let them work out
+
+976
+00:50:02,488 --> 00:50:06,240
+路线图是什么，让他们自己去搞清楚问题是什么
+what the road map is, let them work out what the problems are.
+
+977
+00:50:06,320 --> 00:50:10,480
+就好像完全放手，你懂吗，到底在发生什么
+Just like completely devolve, you know, like what's going on?
+
+978
+00:50:10,680 --> 00:50:13,785
+我觉得真正的答案显然是，你招的人越优秀
+And I think the real answer is obviously the better people you hire,
+
+979
+00:50:13,785 --> 00:50:17,500
+你就越能完全信任他们知道自己在做什么
+the more you can kind of like totally trust that they're know what they're doing.
+
+980
+00:50:17,660 --> 00:50:20,211
+但我们往往处在"先验证再信任"的状态
+But we tend to live in a verify then trust land
+
+981
+00:50:20,211 --> 00:50:23,589
+而不是"完全信任"，甚至不是"信任但要验证"
+as opposed to a like totally trust or even trust but verify,
+
+982
+00:50:23,589 --> 00:50:28,071
+也就是说，在理解我们系统里各个不同环节如何拼在一起这件事上
+which is like I'm probably in a better position than any of my kind of directs to
+
+983
+00:50:28,071 --> 00:50:31,380
+我可能比我任何一个直接下属都更有优势
+understand how all of the different pieces of our system.
+
+984
+00:50:31,620 --> 00:50:33,540
+买家、卖家之间的信任是如何契合的
+Buyer seller kind of trust fit together.
+
+985
+00:50:34,310 --> 00:50:38,692
+但在理解那些具体功能各自如何运作的细节上
+They're almost certainly in a better position than me to understand the nuance of
+
+986
+00:50:38,692 --> 00:50:41,270
+他们几乎肯定比我更有优势
+like how any of those individual features work.
+
+987
+00:50:41,390 --> 00:50:45,314
+你懂的，如果今天有人考我 Whatnot 发现模型里
+You know, if somebody quizzed me today on exactly all the weightings in the whatnot
+
+988
+00:50:45,314 --> 00:50:49,067
+各个权重到底是多少，相比那个团队里的任何一个工程师
+discovery model, I would definitely be wrong vis-a-vis any of the engineers on
+
+989
+00:50:49,067 --> 00:50:50,830
+相比团队里任何人，我肯定都会答错
+that team, vis-a-vis any of the team.
+
+990
+00:50:50,910 --> 00:50:53,270
+那个团队里的 PM 你懂的，他们更清楚
+You know the PMs on that team. Good.
+
+991
+00:50:53,750 --> 00:50:57,517
+但其实我有责任去学习、去理解这些
+But like, it's actually kind of incumbent on me to learn that and understand
+
+992
+00:50:57,517 --> 00:51:01,463
+并随时间深入，因为我在要求他们做决策，也在审批
+that over time because I'm asking them to make decisions and I'm proving things
+
+993
+00:51:01,463 --> 00:51:02,480
+他们正在做的事
+that they're doing.
+
+994
+00:51:02,720 --> 00:51:07,428
+所以真正和这些团队并肩作战、一起在一线
+And so time spent actually working alongside those teams, like in the trenches,
+
+995
+00:51:07,428 --> 00:51:10,520
+解决问题的时间，是非常非常有力量的
+trying to solve something really, really powerful.
+
+996
+00:51:11,280 --> 00:51:14,226
+我刚加入 Whatnot 时最早看到的一件事
+One of the things that I saw earliest when I joined whatnot
+
+997
+00:51:14,226 --> 00:51:16,681
+也是我看到 Grant——我们的创始人兼 CEO——
+that I've seen kind of grant, who's our founder,
+
+998
+00:51:16,681 --> 00:51:20,240
+会做的事，就是你在一个评审会上说"我觉得这不对"
+CEO do is you'll sit in a review and be like, I don't think this is right.
+
+999
+00:51:21,460 --> 00:51:24,020
+然后他会停下来说，我要把今天剩下的时间都空出来
+And then he'll pause and say, I'm gonna clear the rest of my day.
+
+1000
+00:51:24,100 --> 00:51:25,140
+我们坐下来把它搞清楚
+Let's sit and figure it out.
+
+1001
+00:51:25,740 --> 00:51:30,198
+他真的会和团队坐在一起，一起过一遍，你懂的，再说一次
+And he'll actually end up sitting with the team and going through, you know, again,
+
+1002
+00:51:30,198 --> 00:51:31,620
+有了 AI 数据工具会更容易
+easier with AI data tools.
+
+1003
+00:51:32,260 --> 00:51:35,682
+我们真的把工单调出来，把代码调出来
+Let's literally pull up the tickets, let's literally pull up the code,
+
+1004
+00:51:35,682 --> 00:51:37,712
+逐行地过一遍数据
+let's like go through the data line by line
+
+1005
+00:51:37,712 --> 00:51:41,540
+弄清楚到底发生了什么，这样我们就能当场做决定
+and understand what's actually happening so that we can make a decision there.
+
+1006
+00:51:42,130 --> 00:51:46,807
+这意味着他对正在发生的事非常了解，而且在文化上
+And it means he's very up to date with what's going on, kind of very culturally,
+
+1007
+00:51:46,807 --> 00:51:49,037
+也为团队定下了基调，就是
+sets the tone for the team that, like,
+
+1008
+00:51:49,037 --> 00:51:53,210
+我们只是在追求真相，这让它更像是"我们一起"，而不是"我对你"
+we're just seeking truth and it makes it very much a like us versus you.
+
+1009
+00:51:53,450 --> 00:51:56,730
+有段时间评审会很容易变成，你懂的，只想听到——
+Like reviews got very into like, listen for.
+
+1010
+00:51:56,850 --> 00:51:59,514
+对，曾经有一阵子，你作为 PM
+Yes, for a little while there where all you're trying to do
+
+1011
+00:51:59,514 --> 00:52:03,176
+想做的全部就是拿到一个绿灯，好回去对你的产品团队、你的工程师说
+as a PM is just get a green light so that you can go back to your PM, your engineers,
+
+1012
+00:52:03,176 --> 00:52:04,730
+我有点信誉了
+and say, I have some credibility.
+
+1013
+00:52:04,850 --> 00:52:07,684
+我能让 CPO 批准我们正在做的东西
+I can get, you know, the CPO to approve what we're building
+
+1014
+00:52:07,684 --> 00:52:11,522
+而不是这样一种理念：我们只是在努力找出正确答案
+as opposed to this idea that says we're just trying to find out the right answer
+
+1015
+00:52:11,522 --> 00:52:14,710
+而且理论上，所有人都希望我们能得出正确答案
+and in theory, everyone wants us to come up with the right answer.
+
+1016
+00:52:14,830 --> 00:52:16,626
+所以你懂的，我们用规划来
+So, you know, we use planning to,
+
+1017
+00:52:16,626 --> 00:52:21,150
+让全公司对我们真正必须解决的重要问题达成一致
+to align the company on like what are the really important things we have to solve?
+
+1018
+00:52:21,750 --> 00:52:24,470
+那主要是一场资源分配的讨论，对吧
+That's mostly a resourcing discussion, right?
+
+1019
+00:52:24,590 --> 00:52:27,739
+比如，如果我们选对了事情，把它们全部排好优先级，最终
+Like, if we pick the right things, stack, rank them all, ultimately,
+
+1020
+00:52:27,739 --> 00:52:29,562
+我是最需要为此负责的人，去确保——
+I'm most accountable for making sure so
+
+1021
+00:52:29,562 --> 00:52:32,600
+我们把合适的资源放在了合适的位置来达成目标
+that we have the right resources in the right places to hit things.
+
+1022
+00:52:33,000 --> 00:52:35,531
+但说实话，我并不知道那些是不是合适的位置
+But like, I don't know if those are the right places
+
+1023
+00:52:35,531 --> 00:52:38,061
+如果我只是把事情丢给团队让他们自己搞定
+if all I do is delegate to the team to go figure it out
+
+1024
+00:52:38,061 --> 00:52:42,520
+却没有定期和他们一起深入了解这到底是怎么运作的
+and I'm not actually periodically very deep with them on like exactly how does that work.
+
+1025
+00:52:42,680 --> 00:52:47,080
+比如，我们的推荐机制是怎么运作的
+You know, how do our, like, you know, referrals work?
+
+1026
+00:52:47,600 --> 00:52:51,760
+具体来说，欺诈者会用什么逻辑来让一笔推荐失效
+Literally? What is the logic that fraud might use in order to invalidate one?
+
+1027
+00:52:52,310 --> 00:52:55,350
+哦，是基于地址信号。那我们是怎么计算地址信号的
+Oh, based on address signals. How do we calculate address signals?
+
+1028
+00:52:55,430 --> 00:52:59,041
+那是像 Google 标准化那样处理的，还是说
+Is that like a Google normalized thing or is that like, you know,
+
+1029
+00:52:59,041 --> 00:53:03,198
+是用户随手输入的自由文本？如果你不逼自己沉下去
+free text that's put in and if you don't actually push yourself down to sit
+
+1030
+00:53:03,198 --> 00:53:06,946
+和你的 IC 工程师、IC 设计师、IC PM 坐在一起
+alongside your IC engineers and your IC designers and your icPMs,
+
+1031
+00:53:06,946 --> 00:53:08,990
+你其实根本不了解这些东西
+you don't actually know that stuff.
+
+1032
+00:53:09,110 --> 00:53:11,950
+所以没有微观的了解，就做不出好的宏观决策
+So you can't make good macro decisions without the micro.
+
+1033
+00:53:12,760 --> 00:53:18,080
+所以我越来越觉得，我会逼自己做一个 T 型人才
+So increasingly, I think, you know, I, I push myself to, I try and be t shaped.
+
+1034
+00:53:18,400 --> 00:53:22,080
+需要时我能钻得非常非常深，但大多数时候我是横向覆盖各个方面
+I can go very, very deep when required, but I'm mostly broad across pieces.
+
+1035
+00:53:22,280 --> 00:53:25,235
+我觉得那种只管招人
+And I think the idea of just like hiring people and then,
+
+1036
+00:53:25,235 --> 00:53:27,098
+然后就不再多问问题
+like not asking any more questions
+
+1037
+00:53:27,098 --> 00:53:31,403
+把所有细节都放手交出去的做法，其实并不是最成功的模式
+and delegating all of the detail just isn't really the most successful model for
+
+1038
+00:53:31,403 --> 00:53:35,450
+尤其是在一个有很强产品思维的创始人的组织里，很难把团队的价值发挥到最大
+getting the most out of an organization with a very product minded founder.
+
+1039
+00:53:35,810 --> 00:53:38,552
+CPO 一直以来对很多人来说都是个非常有挑战的角色
+CPO classically is a very challenging role for people
+
+1040
+00:53:38,552 --> 00:53:42,330
+因为你基本上夹在一个很有主见的创始人
+because you're basically this person between a very opinionated founder
+
+1041
+00:53:42,330 --> 00:53:43,610
+和实际做产品的团队之间
+and the team building it.
+
+1042
+00:53:44,290 --> 00:53:50,570
+你觉得怎么做才能营造出一个让你在这个角色里做得开心的环境
+What have you found works in creating an environment where you are happy in that role?
+
+1043
+00:53:51,290 --> 00:53:54,950
+说来也有意思，其实我职业生涯的大部分时间都是这样
+Yeah, and kind of funnily, that's been most of my career, actually.
+
+1044
+00:53:54,990 --> 00:54:00,034
+我连续为三位创始人工作过，他们都很有产品思维
+I worked for three founder founders in a row who are all kind of very product minded
+
+1045
+00:54:00,034 --> 00:54:04,634
+这其实总的来说是一种幸运
+and it would not have got two, which is a blessing actually, in general, uh,
+
+1046
+00:54:04,634 --> 00:54:08,120
+我尽量不去重复做事，比如如果 Grant 或 Logan
+I try not to kind of double up if, you know, grant or Logan.
+
+1047
+00:54:08,240 --> 00:54:11,312
+我们的创始人已经在盯某件事，那可能就不需要我了
+Our, our founders are on a thing probably doesn't need me.
+
+1048
+00:54:11,312 --> 00:54:13,680
+多加一层又有什么好处呢
+Like what's the advantage of an extra layer?
+
+1049
+00:54:14,400 --> 00:54:17,580
+团队里有个 PM 开玩笑地把这叫做
+Um, you know, I think jokingly one of the PMs on the team has referred to it
+
+1050
+00:54:17,580 --> 00:54:21,185
+“两个爸爸”的问题，就是有两个人发出
+as the two dads problem, where you've just got like two people issuing kind of like
+
+1051
+00:54:21,185 --> 00:54:23,623
+相互矛盾的指令，或者有人想审一遍
+conflicting instructions or somebody wants to review
+
+1052
+00:54:23,623 --> 00:54:25,690
+然后你花一大堆功夫做好呈给我看
+and then you do all this work to present it to me.
+
+1053
+00:54:25,690 --> 00:54:27,250
+结果回过头来又变成了另一套
+And then you go back and it gets a different thing.
+
+1054
+00:54:27,330 --> 00:54:30,047
+所以我的第一条原则是，如果 Grant 或 Logan 在盯这件事
+So my first thing is like, if grant or Logan are on it,
+
+1055
+00:54:30,047 --> 00:54:34,090
+我确认他们在跟进、对它负责，然后我就退出
+I check that they're watching it, they're accountable for it, and I step out.
+
+1056
+00:54:34,250 --> 00:54:35,786
+所以会有很长一段时间
+So there'll be long periods of time
+
+1057
+00:54:35,786 --> 00:54:38,381
+我团队里整整一半的人可能都在做某件事
+where like fully half my team could be working on something
+
+1058
+00:54:38,381 --> 00:54:41,876
+而我没法告诉你它每天进展到哪一步，因为它在 Grant 手里
+and I couldn't tell you day to day where it is because, you know, it's with grant,
+
+1059
+00:54:41,876 --> 00:54:43,730
+在 Logan 手里，这完全没问题
+it's with Logan, and that's totally fine.
+
+1060
+00:54:44,090 --> 00:54:47,130
+我不需要掌握他们在做的每一件事
+I don't have to be across all of the things they're doing.
+
+1061
+00:54:47,370 --> 00:54:49,890
+我们只需要确保有人在做那种拉高标准的事
+We just need to make sure that there is somebody doing that bar raising.
+
+1062
+00:54:50,690 --> 00:54:52,610
+所以我们会花不少时间去做这种对齐
+So we spend a bunch of time doing that alignment.
+
+1063
+00:54:53,050 --> 00:54:54,781
+我觉得第二点是，归根结底
+I think the second one is like ultimately,
+
+1064
+00:54:54,781 --> 00:54:56,907
+如果你是一家创始人主导的公司里的产品负责人
+if you are a product leader in a founder LED company,
+
+1065
+00:54:56,907 --> 00:54:59,330
+你必须明白这不是你的公司，是他们的
+you have to understand it's not your company, it's theirs.
+
+1066
+00:54:59,650 --> 00:55:02,364
+你要找到那种恰当的平衡，比如说，嘿
+And you just find the right balance of like, you know, hey,
+
+1067
+00:55:02,364 --> 00:55:03,890
+这件事你愿意听听反馈吗
+are you open to feedback on this?
+
+1068
+00:55:03,890 --> 00:55:06,789
+你已经拿定主意了吗？这件事你愿意让我推一把吗
+Have you made up your mind? You know, are you open to a push on this?
+
+1069
+00:55:06,789 --> 00:55:10,748
+你就是这样和大家磨合出一种节奏，总的来说
+And you just find that rhythm kind of working with folks, generally speaking,
+
+1070
+00:55:10,748 --> 00:55:14,829
+创始人主导的公司在我们这个行业里做得这么好，是有原因的
+you know, there's a reason that founder LED companies do so well in our industry.
+
+1071
+00:55:15,109 --> 00:55:19,106
+一开始要做出这个东西所需要的洞察力，以及那种对客户的直觉
+You know, the insight required and the kind of customer intuition to make the thing
+
+1072
+00:55:19,106 --> 00:55:21,829
+而且要真正跑通，这往往是非常关键的
+in the first place and work tends to be really important.
+
+1073
+00:55:22,669 --> 00:55:24,314
+然后我就把我的工作看作是
+And then I just view my job as, you know,
+
+1074
+00:55:24,314 --> 00:55:27,450
+确保在创始人没顾及到的地方我们有覆盖
+making sure that we've got coverage on the places where our founders are.
+
+1075
+00:55:27,890 --> 00:55:28,490
+太好了
+Awesome.
+
+1076
+00:55:28,490 --> 00:55:32,885
+你在打造产品方面学到的几点，我觉得在消费者领域
+So a couple things you've Learned here for buildings and this I think in consumer,
+
+1077
+00:55:32,885 --> 00:55:38,250
+这一点尤其重要，而且和大家通常认为该怎么做恰恰相反
+this is especially important is counter intuitively to how maybe people think things should work.
+
+1078
+00:55:38,530 --> 00:55:43,786
+你发现最好的团队、公司、产品最终往往是自上而下产生的
+You're finding that the best teams, companies, products end up coming from top down,
+
+1079
+00:55:43,786 --> 00:55:47,043
+几乎是创始人主导的，虽然“微观管理”这个词
+founder LED almost, you know, micromanagement is a,
+
+1080
+00:55:47,043 --> 00:55:51,780
+对很多人来说是个贬义词，但它本质上就是扎进细节里，呃
+is a dirty word to a lot of people, but it's basically being in the weeds is, uh.
+
+1081
+00:55:51,820 --> 00:55:55,140
+不管大家感受如何，这最终确实会带来更好的结果
+In spite of how people may feel, this actually ends up being leading to better stuff.
+
+1082
+00:55:55,500 --> 00:55:59,319
+如果领导层能深入细节，自上而下的方式就能奏效
+Top down works well if leadership is good enough to be in the weeds
+
+1083
+00:55:59,319 --> 00:56:02,855
+并且能做到具体正确，我觉得它失灵的地方在于
+and be specifically correct, I think where it falls apart is
+
+1084
+00:56:02,855 --> 00:56:05,401
+你其实并不掌握真实情况
+where you don't actually know ground truth
+
+1085
+00:56:05,401 --> 00:56:08,300
+却还试图从上层去管理下面的人
+and then you attempt to manage people from above.
+
+1086
+00:56:08,340 --> 00:56:10,460
+我觉得这就是"微观管理"这个词的由来
+And that's where I think the term micromanagement comes from.
+
+1087
+00:56:11,060 --> 00:56:14,256
+反之，如果你依据的是同样的数据，而且你掌握了它
+Otherwise, if you're working from the same data and you have it,
+
+1088
+00:56:14,256 --> 00:56:18,236
+我没见过哪个初级工程师或入门级设计师，会不兴奋地坐在
+I don't know a junior engineer or an entry level designer who isn't stoked to sit
+
+1089
+00:56:18,236 --> 00:56:21,312
+那里，跟 CPO 或 CEO 一起协作、一起交付东西
+there and work alongside the CPO or the CEO and ship something
+
+1090
+00:56:21,312 --> 00:56:22,940
+因为你的阻碍一下就没了
+because you're just unblocked.
+
+1091
+00:56:23,020 --> 00:56:24,660
+没有对齐会议，什么流程都不用走
+There's no alignment meetings, there's nothing to do.
+
+1092
+00:56:25,020 --> 00:56:27,479
+我还发现，你能给出好得多的反馈
+I also find that like you can give way better feedback
+
+1093
+00:56:27,479 --> 00:56:29,100
+前提是你真的深入到细节里
+if you're literally in the detail.
+
+1094
+00:56:29,260 --> 00:56:30,793
+我觉得微妙之处就在于
+And I think the nuance is just, like,
+
+1095
+00:56:30,793 --> 00:56:32,990
+你怎么保证自己能在足够多的地方做到这一点
+how do you make sure you can do that in enough places?
+
+1096
+00:56:33,430 --> 00:56:35,432
+现在是最好的时机
+There's never been a better time to be in,
+
+1097
+00:56:35,432 --> 00:56:37,315
+去尝试深入到事情的细节里
+to attempt to be in the detail on things
+
+1098
+00:56:37,315 --> 00:56:39,670
+因为你真的可以实时查询数据
+because you can literally query it in real time.
+
+1099
+00:56:40,230 --> 00:56:43,950
+我觉得这是个非常重要的细节。这个故事太有说服力了
+I think that's such an important nuance here. The story told is so powerful.
+
+1100
+00:56:44,030 --> 00:56:46,190
+就是 Grant 那种做法，好，我要清空我今天的日程
+This idea of grant just, okay, I'm going to clear my day.
+
+1101
+00:56:46,230 --> 00:56:47,790
+我要花时间深入钻研这些东西
+I'm going to spend time going deep on this stuff.
+
+1102
+00:56:47,990 --> 00:56:52,345
+这感觉是高层做出这些微观决策时
+That feels like a very necessary ingredient for someone at the top to be making
+
+1103
+00:56:52,345 --> 00:56:53,350
+一个非常必要的前提
+micro decisions.
+
+1104
+00:56:53,830 --> 00:56:56,033
+因为正如你所说，如果他们没有掌握所有细节
+Because to your point, if they don't have all the details,
+
+1105
+00:56:56,033 --> 00:56:58,190
+他们做的决策就不是基于真实数据的
+they don't they're not making decision out of real data.
+
+1106
+00:56:58,470 --> 00:57:01,007
+我们能做到这一点，是因为，如我所说，我们
+And we can do that because, you know, as I said, we,
+
+1107
+00:57:01,007 --> 00:57:05,400
+我们先规划要做的事，然后分配任务，再分而治之
+we plan what we're doing and then we allocate and then we're dividing and conquering.
+
+1108
+00:57:05,480 --> 00:57:09,200
+所以他大概一次会专注搞定三四件最重要的事
+So like he's probably trying to nail three or four most important things at a time.
+
+1109
+00:57:09,200 --> 00:57:10,400
+而且你知道，他是 CEO
+And, you know, he's the CEO.
+
+1110
+00:57:10,560 --> 00:57:12,760
+他会拍板说，这就是我现在负责的四件事
+He's gonna call the ball and say, these are the four things I own right now.
+
+1111
+00:57:12,760 --> 00:57:15,520
+那我就会说，很好，那我就去管别的
+And I'm gonna be like, great, I'll be over here then.
+
+1112
+00:57:15,760 --> 00:57:19,086
+然后除了这些，我这一天剩下的时间里做的事
+And then within those, like, what am I doing with the rest of my day
+
+1113
+00:57:19,086 --> 00:57:23,520
+有什么会比搞定我说过这半年要完成的五件事更重要呢
+that is more important than nailing the five things I've said we'll get done this half.
+
+1114
+00:57:23,880 --> 00:57:28,382
+除了招聘、例会之类的事
+Like if it's anything other than maybe hiring, standing meetings, any of that stuff,
+
+1115
+00:57:28,382 --> 00:57:32,695
+你都可以清掉，给团队定下基调：在我们把它搞明白之前
+you can just clear it and set the tone for the team that like until we understand it,
+
+1116
+00:57:32,695 --> 00:57:34,280
+我们没法做别的事
+we, we can't do anything else.
+
+1117
+00:57:34,920 --> 00:57:38,369
+假设有人在找 CPO 岗位，或者第一份 PM 的工作
+Say somebody is looking for a CPO role or a first PM role,
+
+1118
+00:57:38,369 --> 00:57:41,667
+本质上都差不多，就是给创始人打工，呃
+kind of similar basically working for a founder, uh,
+
+1119
+00:57:41,667 --> 00:57:46,091
+你会给他们什么建议，好让他们落脚到一个自己满意的地方
+what would be your advice for them to land in a place where they're happy
+
+1120
+00:57:46,091 --> 00:57:48,190
+而不是被搞得特别沮丧
+and not just super frustrated by.
+
+1121
+00:57:48,310 --> 00:57:51,710
+被这种其实没有任何自主权的中间层搞得沮丧
+By this kind of middle layer where they just don't actually have any agency.
+
+1122
+00:57:52,110 --> 00:57:54,918
+嗯。我觉得你首先要想清楚的是
+Yeah. I mean, I think the first thing you've got to work out is like,
+
+1123
+00:57:54,918 --> 00:57:55,990
+你为什么想要这个岗位，对吧
+why do you want it, right?
+
+1124
+00:57:56,430 --> 00:57:58,100
+有一种看法是，CPO 这份工作
+There's this idea that like the CPO's job,
+
+1125
+00:57:58,100 --> 00:58:00,390
+你可以决定所有的路线图之类的东西
+you get to decide all of the roadmaps and all those things.
+
+1126
+00:58:00,390 --> 00:58:01,350
+我得告诉你个坏消息
+And I've got bad news for you.
+
+1127
+00:58:01,390 --> 00:58:05,605
+事实并非完全如此，但我觉得这也归结于花一些
+That's like not strictly true, but I think it also comes down to like spending some
+
+1128
+00:58:05,605 --> 00:58:08,704
+时间跟那个人相处，弄清楚我们怎么一起讨论一个话题
+time with that person to work out like how do we jam on a topic,
+
+1129
+00:58:08,704 --> 00:58:10,130
+他们喜欢别人怎么反驳、怎么推动他们
+how do they like to get push.
+
+1130
+00:58:10,250 --> 00:58:12,650
+又不喜欢怎样？然后你会花大量时间去磨合
+How do they not? And then you spend a lot of your time calibrating.
+
+1131
+00:58:12,770 --> 00:58:14,531
+比如在我加入 Whatnot 之前
+So like before I joined whatnot,
+
+1132
+00:58:14,531 --> 00:58:17,596
+我记得我和 Grant 大概喝了五六次咖啡
+I think grant and I had like five or six different coffees
+
+1133
+00:58:17,596 --> 00:58:21,770
+我们聊的都是，你要怎么让这类团队动起来
+where we talked about like, how do you get, you know, this type of team to move?
+
+1134
+00:58:22,210 --> 00:58:23,330
+你要怎么去推进这些事情
+How do you work on those things?
+
+1135
+00:58:24,050 --> 00:58:26,379
+然后我当然也经历了一系列面试
+And then I obviously went through a series of interviews
+
+1136
+00:58:26,379 --> 00:58:29,650
+我实际上还飞到了 LA，Grant 和 Logan 当时就在那儿
+and actually came down to kind of LA where grant and Logan were based at the time.
+
+1137
+00:58:29,850 --> 00:58:31,185
+我跟他们待了一整天
+And spent a whole day with them,
+
+1138
+00:58:31,185 --> 00:58:33,855
+就是在一个房间里过一遍几个不同的问题
+just like in a room going through a couple different problems,
+
+1139
+00:58:33,855 --> 00:58:37,450
+讨论路线图里的各种事情，真正深入地钻进去
+talking through different things in the roadmap, just like really getting into it.
+
+1140
+00:58:37,890 --> 00:58:41,095
+我在那个过程中尽量做最真实平常的自己
+And I tried through that to kind of be my most ordinary self
+
+1141
+00:58:41,095 --> 00:58:44,166
+而不是那个面试时的自己，如果你懂我意思的话
+as opposed to like interview self, if that makes sense,
+
+1142
+00:58:44,166 --> 00:58:46,370
+因为你得问问自己
+because you kind of got to ask yourself,
+
+1143
+00:58:46,370 --> 00:58:50,910
+我真的想把全部时间都花在这种讨论和争论上吗
+do I really want to spend my whole time like having this discussion in this debate.
+
+1144
+00:58:51,230 --> 00:58:54,170
+但我喜欢做 CPO，或者说产品负责人
+But like I like being a CPO or kind of a product lead
+
+1145
+00:58:54,170 --> 00:58:58,902
+因为很多时候，我做的是帮忙把那个愿景
+because in a lot of ways what I'm doing is I'm like helping translate that vision
+
+1146
+00:58:58,902 --> 00:59:00,910
+和那种直觉转化为现实
+and that intuition into reality.
+
+1147
+00:59:01,510 --> 00:59:05,653
+而且，学会怎么推动一个人却又不至于
+And then, you know, there is an art to learning how to push somebody without kind of
+
+1148
+00:59:05,653 --> 00:59:06,750
+跟他们竞争，这是一门艺术
+competing with them.
+
+1149
+00:59:06,830 --> 00:59:10,287
+我见过很多 CPO 和 CEO 关系恶化的情况
+And I think a lot of the times I've seen the CPO CEO relationship go badly
+
+1150
+00:59:10,287 --> 00:59:13,392
+最后往往是 CPO 在跟 CEO 争夺愿景
+and ends up with like the CPO is competing with the CEO for vision
+
+1151
+00:59:13,392 --> 00:59:15,150
+然后两人陷入僵局
+and they end up at like loggerheads.
+
+1152
+00:59:15,470 --> 00:59:17,150
+我觉得，那并不是你的职责
+And I think, you know, that's not your job.
+
+1153
+00:59:17,870 --> 00:59:21,972
+我想多聊聊这一点，这种反驳的艺术
+I want to ask more about that, this art of pushing back and, and, you know,
+
+1154
+00:59:21,972 --> 00:59:23,750
+以及把事情往某个方向推动
+nudging things in a direction.
+
+1155
+00:59:24,110 --> 00:59:28,310
+有没有什么诀窍或建议可以分享给大家，帮他们做好这件事
+Is there kind of one trick or one tip you might share with folks to get to be good at?
+
+1156
+00:59:28,310 --> 00:59:31,173
+因为很多人要跟高管打交道，他们总想着
+Cause a lot of people deal with exacts and they're always trying to, you know,
+
+1157
+00:59:31,173 --> 00:59:32,470
+让高管同意自己的想法
+get them to agree to what they want.
+
+1158
+00:59:32,720 --> 00:59:34,880
+我觉得第一点是，别把它当成技巧
+I think the first thing is, like, don't treat it as a trick.
+
+1159
+00:59:35,040 --> 00:59:38,840
+我是说，你不是想要一个答案或一个「同意」
+I mean, you're not trying to get an answer and a yes.
+
+1160
+00:59:38,960 --> 00:59:41,480
+你要做的是探寻真相，这是我想说的第一点
+You're trying to kind of seek truth is like my first statement.
+
+1161
+00:59:41,800 --> 00:59:46,840
+所以我不会说我们经常一开始就意见不合
+And so I wouldn't say it's especially common that we start out of alignment.
+
+1162
+00:59:46,880 --> 00:59:48,774
+但我确实觉得，你角色的一部分
+But I do think, you know, part of your role,
+
+1163
+00:59:48,774 --> 00:59:51,697
+如果你是在场比较资深的产品人
+if you're one of the more senior product folks in the room and the,
+
+1164
+00:59:51,697 --> 00:59:53,699
+而 CEO，或者说，如果你是总监
+the CEO or you know, if you're a director and,
+
+1165
+00:59:53,699 --> 00:59:56,297
+而在场的是 CFO，正在以一种
+and it's the CFO in the room is like pushing the team in a way
+
+1166
+00:59:56,297 --> 00:59:57,650
+你没有预料到的方式推动团队
+that you don't really expect.
+
+1167
+00:59:57,690 --> 01:00:00,050
+或者你不太理解，那就从好奇的心态出发
+Or you don't really understand is like start from a place of curious.
+
+1168
+01:00:00,020 --> 01:00:00,420
+好奇
+City.
+
+1169
+01:00:01,300 --> 01:00:03,786
+那个人是不是掌握了比你更多的背景，或者有什么
+Does that person have more context than you or is there a thing
+
+1170
+01:00:03,786 --> 01:00:05,540
+你没意识到的因素在左右这件事
+that you're not aware of that is guiding it?
+
+1171
+01:00:05,540 --> 01:00:08,356
+所以我常常这样开头，你能不能
+So I often try and start with like, can you, can,
+
+1172
+01:00:08,356 --> 01:00:11,100
+我这样理解对吗，这是你的既有判断
+am I hearing you right that this is your prior?
+
+1173
+01:00:12,500 --> 01:00:15,794
+是不是有什么背景信息，是我不掌握的
+Is there a, you know, piece of context or something that I don't have
+
+1174
+01:00:15,794 --> 01:00:17,500
+能帮助形成那个判断，好
+that helps inform that prior cool.
+
+1175
+01:00:17,620 --> 01:00:19,100
+确保大家都在同一个基准上
+Make sure everybody's on that same baseline.
+
+1176
+01:00:19,140 --> 01:00:21,460
+而且，我也一直教我的团队对我这样做
+And, you know, I coach my fans to do this with me all the time, too.
+
+1177
+01:00:21,660 --> 01:00:24,004
+比如如果我用一个你没料到的角度来找你
+Like if I'm coming at you from an angle you don't expect,
+
+1178
+01:00:24,004 --> 01:00:25,890
+先停一下，弄清楚为什么
+pause and make sure that you understand why.
+
+1179
+01:00:26,850 --> 01:00:30,050
+在那之后，我会尝试做几件不同的事
+And then after that, you know, I try and do a couple different things.
+
+1180
+01:00:30,250 --> 01:00:33,490
+显然，人终归是人，对吧？有状态好的时候，也有状态差的时候
+Obviously, just people are people, right? They have good days, they have bad days.
+
+1181
+01:00:34,370 --> 01:00:36,175
+有时候可以简单到就问一句
+Sometimes it can be as simple as like,
+
+1182
+01:00:36,175 --> 01:00:39,786
+你在这件事上是不是已经拿定主意，还是愿意听意见，如果回答是，不
+is your mind made up on this or are you open to input if the answer is like, no,
+
+1183
+01:00:39,786 --> 01:00:41,650
+我已经很确定这就是答案
+I'm pretty set that this is the answer.
+
+1184
+01:00:42,270 --> 01:00:45,390
+那就别说了，别为了争而争
+Shut up. Like, don't pick a fight for the purposes of picking a fight.
+
+1185
+01:00:45,710 --> 01:00:49,053
+如果回答是，其实可以，欢迎你来推我
+If the answer is like, actually, yes, you're welcome to push me,
+
+1186
+01:00:49,053 --> 01:00:52,080
+但我需要看到数据，如果我手头没有任何数据
+but I'd need to see data if I don't have any data in the room,
+
+1187
+01:00:52,080 --> 01:00:55,990
+只是我的观点，那这场辩论的规则就很清楚了
+if it's just my opinion, then I've the terms of the debate are pretty clear.
+
+1188
+01:00:56,470 --> 01:00:58,540
+如果我有新数据，那就拿出来。呃
+If I have fresh data, bring it. Uh,
+
+1189
+01:00:58,540 --> 01:01:02,310
+如果我很坚信某件事却没有数据，那就问问自己为什么
+if I really believe a thing and I don't have data question why?
+
+1190
+01:01:03,130 --> 01:01:06,090
+嗯，或者去把数据拿到，然后带着数据再找他们
+Um, or go get it and then go back to them with the data.
+
+1191
+01:01:06,210 --> 01:01:10,250
+但如果情况是谁都没有数据，只是两种观点
+But if the answer is like if it's nobody's got data, it's just two opinions.
+
+1192
+01:01:10,450 --> 01:01:13,730
+那 CEO 的观点会赢，这也没问题
+The CEO's opinion is going to win and like that's okay.
+
+1193
+01:01:14,130 --> 01:01:17,810
+把自尊放在门外，找到答案。但如果你有数据，那就拿出来
+Check your ego at the door, get to the answer. But if you've got data, bring it.
+
+1194
+01:01:18,290 --> 01:01:20,070
+然后有时候，就是要确保
+And then sometimes it's like, just make sure
+
+1195
+01:01:20,070 --> 01:01:21,850
+你争论是出于正确的理由
+that you're debating for the right reasons.
+
+1196
+01:01:22,290 --> 01:01:24,098
+我觉得，在你说的那种 PM 表演式做派里，很容易
+I think it's, you know, easy in your PM theater
+
+1197
+01:01:24,098 --> 01:01:26,143
+就是那种想要确保
+that you're describing of like wanting to make sure
+
+1198
+01:01:26,143 --> 01:01:27,570
+由你来定框架、定基调
+that you set the framing in the tone.
+
+1199
+01:01:28,120 --> 01:01:33,217
+在我们这个行业里，确实有些时候命名很重要
+And there are gen you only times in our industry where like nomenclature matters
+
+1200
+01:01:33,217 --> 01:01:36,640
+到底用哪个词可能真的很关键
+and exactly what word is used can be really important.
+
+1201
+01:01:37,280 --> 01:01:38,600
+但很多时候并非如此
+But a lot of the time it doesn't.
+
+1202
+01:01:39,360 --> 01:01:41,569
+有个概念我听过很多次
+There's a concept that I heard come up a bunch
+
+1203
+01:01:41,569 --> 01:01:43,480
+就是我和跟你共事的人聊天时
+when I talk to people who work with you.
+
+1204
+01:01:44,120 --> 01:01:46,120
+那句话是"play the accordion"（拉手风琴）
+The phrase was play the accordion.
+
+1205
+01:01:47,200 --> 01:01:47,760
+解释一下
+Explain.
+
+1206
+01:01:48,400 --> 01:01:50,700
+我前面提过，我不太热衷于框架
+So I mentioned earlier, I'm not huge on frameworks,
+
+1207
+01:01:50,700 --> 01:01:53,320
+但我确实觉得有一个心智模型很有用
+but I do think there's a mental model which is quite useful.
+
+1208
+01:01:53,780 --> 01:01:56,833
+这就回到了我们之前聊的那个点
+That goes to the thing that you and I discussed earlier on,
+
+1209
+01:01:56,833 --> 01:01:58,806
+就是先在脑子里把问题想清楚
+like think through a problem mental,
+
+1210
+01:01:58,806 --> 01:02:02,368
+即使你根本还没发布，也要先做好思考工作，就是说
+do the mental work even if you're not shipping at all, which is like,
+
+1211
+01:02:02,368 --> 01:02:05,612
+显然代码的魔力在于你可以发布东西
+obviously the magic of code is that you can kind of ship things
+
+1212
+01:02:05,612 --> 01:02:09,620
+快速迭代，边做边拿数据。我觉得其中一个
+and iterate really quickly and get data as you go. And I think one of the, the.
+
+1213
+01:02:09,660 --> 01:02:12,440
+随之而来的陷阱是你只是一味往前迭代
+Trappings that comes with that is you're just iterating forward
+
+1214
+01:02:12,440 --> 01:02:13,829
+到处乱试
+and throwing spaghetti at a wall
+
+1215
+01:02:13,829 --> 01:02:16,300
+却根本不知道自己要往哪个方向走
+and you don't really know what direction you're going in.
+
+1216
+01:02:16,860 --> 01:02:18,680
+我觉得还有第二种失败模式
+I think there's a second failure mode,
+
+1217
+01:02:18,680 --> 01:02:21,411
+就是人们坐下来写出长长的路线图
+which is people sit down and write out these long roadmaps
+
+1218
+01:02:21,411 --> 01:02:24,540
+和战略愿景文档，规划未来两三年要做什么
+and strategic vision docs of what we'll do over the next 2, 3 years.
+
+1219
+01:02:25,060 --> 01:02:29,486
+这就丢掉了我们相对其他行业的比较优势
+That kind of loses the comparative advantage we have over every other industry,
+
+1220
+01:02:29,486 --> 01:02:31,467
+也就是学习能力，比如 A/B 测试意味着
+which is learning like AB tests mean
+
+1221
+01:02:31,467 --> 01:02:34,308
+你可以更新对一个问题的理解
+that you can update your understanding of a problem
+
+1222
+01:02:34,308 --> 01:02:36,950
+从而改变你该走的方向
+and therefore change your direction should go.
+
+1223
+01:02:37,350 --> 01:02:39,728
+所以，play the accordion 这个比喻的重点是
+So, uh, the point of the analogy of play the accordions,
+
+1224
+01:02:39,728 --> 01:02:42,675
+如果你想象一个键盘手风琴，在你弹出一个音之前
+if you think about like a piano accordion, before you can play a note,
+
+1225
+01:02:42,675 --> 01:02:44,950
+你得把它完全拉开，把空气吸进去
+you got to stretch it all the way out, bring the air in.
+
+1226
+01:02:45,030 --> 01:02:46,750
+就好比在问：我们到底想做成什么
+So like what is it we're trying to get done here?
+
+1227
+01:02:47,630 --> 01:02:49,832
+但你要按下琴键才会发出声音
+But you don't make music until you press the key
+
+1228
+01:02:49,832 --> 01:02:51,470
+把它一路压回去，做出 V1
+and push it all the way back into V1.
+
+1229
+01:02:52,030 --> 01:02:53,571
+然后当你要弹下一段
+And then when you go to play the,
+
+1230
+01:02:53,571 --> 01:02:56,830
+下一段进行时，你又把它完全拉开
+the next kind of like progression you pull it all the way out again.
+
+1231
+01:02:57,380 --> 01:03:00,620
+好，根据我们刚学到的，我们该做什么
+Okay, given what we just Learned, what do we do?
+
+1232
+01:03:01,060 --> 01:03:03,535
+然后你再去构建下一个东西，就像
+And then you go and build the next thing again and like,
+
+1233
+01:03:03,535 --> 01:03:07,220
+你得习惯这个动作，它本身并不创造价值
+you've got to get used to this motion that says, like, this isn't creating value.
+
+1234
+01:03:07,340 --> 01:03:10,100
+就像把它拉开其实什么也没做成
+Like pulling it out doesn't actually do anything.
+
+1235
+01:03:11,220 --> 01:03:12,550
+所有价值都是在这里创造的，但是
+All the value is created here, but
+
+1236
+01:03:12,550 --> 01:03:15,020
+除非你不断重复这个动作，去问
+until you are going through this motion constantly of saying,
+
+1237
+01:03:15,020 --> 01:03:18,060
+我们重新评估已知的东西，这会如何改变我们正在做的事
+we'll reevaluate what we understand, how does this change what we're doing?
+
+1238
+01:03:18,620 --> 01:03:22,290
+否则你很可能没弹对。我知道我大概是在乱套用
+You're probably not playing the right thing. And I know I'm probably bastardizing.
+
+1239
+01:03:22,850 --> 01:03:25,901
+评论区某处肯定会有个音乐家指出
+Somewhere in the in the comments there's going to be a musician who points out to me
+
+1240
+01:03:25,901 --> 01:03:28,010
+说这其实也是制造音乐的方式之一
+that this is actually also one of the ways you make music.
+
+1241
+01:03:28,170 --> 01:03:31,002
+但我发现它总体上非常有价值，算是
+But I found it just a generally very valuable, like,
+
+1242
+01:03:31,002 --> 01:03:32,781
+给 PM 的一个记忆工具，提醒你
+memory device for PMs to be like,
+
+1243
+01:03:32,781 --> 01:03:36,074
+你得不断地拉远看全局，再压回去落地
+you've got to constantly be zooming out and pushing back in,
+
+1244
+01:03:36,074 --> 01:03:38,050
+拉远看，再压回去
+zooming out and and pushing back in.
+
+1245
+01:03:38,530 --> 01:03:41,447
+是啊，这个比喻很有意思，因为，你知道
+Yeah, that's such a fun analogy because, you know,
+
+1246
+01:03:41,447 --> 01:03:44,642
+就是说，即便展开时也在制造音乐
+it's like the even though you make music, expanding it,
+
+1247
+01:03:44,642 --> 01:03:47,420
+那更像是向内，或者说是在学习
+it's like inward or it's like learning from the.
+
+1248
+01:03:48,180 --> 01:03:51,180
+对，压缩。我们学到了什么？你怎么传达给所有人？没错
+Yeah, the compression. What have we Learned? How do you communicate to everyone? Exactly.
+
+1249
+01:03:51,380 --> 01:03:54,466
+回到发布。这像是另一种音乐，内在的音乐
+Back to shipping. It's like a different kind of music, internal music,
+
+1250
+01:03:54,466 --> 01:03:55,460
+对外的实验
+external experiment.
+
+1251
+01:03:56,020 --> 01:03:58,582
+是的，因为确实有些人非常看重路线图
+Yeah, because genuinely there are people who are really big on roadmaps
+
+1252
+01:03:58,582 --> 01:04:00,460
+也有些人非常看重迭代
+and there are people who are really big on iteration.
+
+1253
+01:04:00,820 --> 01:04:04,690
+我觉得诚实的答案是两者都得做。不能在任一头上用力过猛
+I think the honest answer is you've got to do both. You can't over index on either.
+
+1254
+01:04:05,330 --> 01:04:07,761
+所以这里的教训是去做实验
+So the lesson here is run experiments,
+
+1255
+01:04:07,761 --> 01:04:13,610
+但一定要从全局去思考结果的含义
+but then make sure you think about the implication of the of the result at the bigger picture.
+
+1256
+01:04:13,810 --> 01:04:15,933
+然后我们到底想做什么？要有一个计划
+And then what are we trying to do? Have a plan.
+
+1257
+01:04:15,933 --> 01:04:17,770
+比如我认为这个系统是这样运作的
+Like I think the system works this way.
+
+1258
+01:04:17,930 --> 01:04:21,755
+我有个信念：如果我们出于某某原因改变发现算法的运作方式
+I have this belief that if we change the way the discovery algorithms work for XYZ
+
+1259
+01:04:21,755 --> 01:04:23,410
+它会产生这样的影响
+reasons, it will have this impact.
+
+1260
+01:04:24,160 --> 01:04:28,160
+我能做的最小尝试是什么，来证明这一点，好，它效果很好
+What's the smallest thing I can do to to prove that okay, it worked great.
+
+1261
+01:04:28,280 --> 01:04:29,840
+计划 v2 不用改
+No change to plan v2.
+
+1262
+01:04:30,430 --> 01:04:31,510
+糟糕，那个没成
+Oh, shit, that didn't work.
+
+1263
+01:04:32,710 --> 01:04:33,955
+v3 就得不一样了
+V3 is going to have to be different.
+
+1264
+01:04:33,955 --> 01:04:36,230
+你就是想一直重复这个动作
+And you just kind of want to always be going through that motion.
+
+1265
+01:04:36,710 --> 01:04:40,910
+没在 YouTube 上看的观众，Tom 正在挥舞双手，比划得很夸张
+People not watching in YouTube, uh, Tom is moving his hands, gesticulating wildly.
+
+1266
+01:04:42,270 --> 01:04:45,688
+有没有那种场景，你会对某人说，嘿
+What's like, uh, what's, what's like a context where you had said to someone, hey,
+
+1267
+01:04:45,688 --> 01:04:48,452
+去拉手风琴，或者我们来拉手风琴，就是那种
+go play the accordion or we're playing the accordion, like, like,
+
+1268
+01:04:48,452 --> 01:04:49,910
+他们通常是哪里做错了
+what are they usually doing wrong?
+
+1269
+01:04:50,390 --> 01:04:54,896
+往往是你在很局部的层面上发布了东西，却没有
+It tends to be that you're shipping something with it in a very local sense without
+
+1270
+01:04:54,896 --> 01:04:56,950
+真正理解它的影响
+necessarily understanding impact.
+
+1271
+01:04:57,070 --> 01:05:02,830
+举个眼下的例子，大多数 marketplace 的核心是 listing，对吧
+So an example right now is, you know, the core of most marketplaces is listings, right?
+
+1272
+01:05:02,830 --> 01:05:05,563
+比如你想想 Amazon.com，如果没有 listing
+Like if you try and think about Amazon dot com, without listings,
+
+1273
+01:05:05,563 --> 01:05:07,030
+那基本上就什么都没有了
+there's basically nothing there.
+
+1274
+01:05:07,030 --> 01:05:09,550
+就剩一堆左边栏、右边栏和几个视频
+It's a bunch of, you know, it's a left rail or right rail and some videos.
+
+1275
+01:05:10,410 --> 01:05:13,011
+而在 video commerce 和 live commerce，或者说 Whatnot 上
+Um, in video commerce and live commerce or whatnot,
+
+1276
+01:05:13,011 --> 01:05:15,370
+历史上你其实并不需要 listing
+you don't really historically need listings.
+
+1277
+01:05:15,530 --> 01:05:17,169
+如果我想卖你一副 AirPods
+If I want to sell you a pair of AirPods,
+
+1278
+01:05:17,169 --> 01:05:20,817
+我完全可以把它举到屏幕前，给你看、给你描述，然后说
+I could literally hold them up to screen and show you them and describe them and say,
+
+1279
+01:05:20,817 --> 01:05:21,610
+这是 AirPods
+they're AirPods.
+
+1280
+01:05:22,170 --> 01:05:23,330
+我从 1 美元起拍
+I'm going to start them at $1.
+
+1281
+01:05:23,650 --> 01:05:28,382
+而作为买家，你现在已经掌握了所有需要的信息，去
+And as a buyer, you now have all the information you need in order to kind of like
+
+1282
+01:05:28,382 --> 01:05:30,930
+做出购买决定，这很棒
+make a purchase decision, which is great.
+
+1283
+01:05:31,650 --> 01:05:36,243
+所以你可能不必像别人那样投入精力去做 listing
+And so you may not have to invest in making listings the way that someone else does,
+
+1284
+01:05:36,243 --> 01:05:40,092
+但这对卖家可能并不好，因为做一个 listing 要花大约
+and that's probably not good for a seller because it takes like three
+
+1285
+01:05:40,092 --> 01:05:45,090
+三分半钟，而口头描述并举起一个东西几乎不花时间
+and a/2 minutes to make a listing and it takes zero minutes to describe a thing and hold it.
+
+1286
+01:05:45,090 --> 01:05:47,805
+但你随后拉远视角，会想，糟糕
+Up but you then zoom out and say, oh, shit,
+
+1287
+01:05:47,805 --> 01:05:52,757
+新买家会来到 live commerce，并期望搜索能正常工作
+new buyers are going to come to Live Commerce and expect search to function
+
+1288
+01:05:52,757 --> 01:05:56,910
+可如果我要等你卖完之后才知道你卖了什么
+if I don't know what you're selling until after you've sold it.
+
+1289
+01:05:57,390 --> 01:06:01,119
+那我就根本没办法把想买 AirPods 的人引到对的直播间
+There's no possible way that I can put somebody in the right stream for AirPods
+
+1290
+01:06:01,119 --> 01:06:03,472
+因为他们不知道，我们也不知道你有这东西
+because they didn't, we didn't know you have them
+
+1291
+01:06:03,472 --> 01:06:05,480
+所以我也没法把人导流过去
+and I therefore can't direct people to it.
+
+1292
+01:06:05,560 --> 01:06:08,120
+于是你就经历这么个过程，先说，我们不用去修它
+And so you go through this exercise of like, we don't need to fix it.
+
+1293
+01:06:08,160 --> 01:06:09,680
+它能用。然后你想，好，不错
+It works. And then you're like, okay, great.
+
+1294
+01:06:10,200 --> 01:06:12,040
+那这会对其他事情有什么影响
+What does that have implications for other things?
+
+1295
+01:06:13,000 --> 01:06:14,352
+好吧，那我们该怎么办？哦
+Okay, then what would we do? Oh,
+
+1296
+01:06:14,352 --> 01:06:17,680
+我们要让所有人都做 listing，然后你又把视角拉远一次
+we're gonna make everyone make listings and you're like zoom back out again.
+
+1297
+01:06:17,720 --> 01:06:21,888
+如果每个卖家现在每做一个 listing 都要花三分钟
+If every seller is now spending three minutes for every listing that they're making,
+
+1298
+01:06:21,888 --> 01:06:26,056
+那他们每小时能卖的东西数量就会大幅、大幅下降
+the number of things they can sell per hour is now dramatically, dramatically lower,
+
+1299
+01:06:26,056 --> 01:06:27,700
+这就意味着对卖家不利
+which means it's bad for sellers.
+
+1300
+01:06:28,380 --> 01:06:29,740
+好吧，糟糕，这我们又不能这么干
+Okay, shit. We can't do that again.
+
+1301
+01:06:29,780 --> 01:06:32,163
+所以你就得不断地伸缩切换，去想
+And so you just, you have to keep stretching through the like,
+
+1302
+01:06:32,163 --> 01:06:35,900
+我们正在做的东西有哪些更长期的影响，或者会带来哪些连锁反应
+what are the longer term implications or what are the knock on effects of things we're building.
+
+1303
+01:06:36,260 --> 01:06:37,340
+这非常有帮助
+That is extremely helpful.
+
+1304
+01:06:37,820 --> 01:06:41,933
+Whatnot 有意思的地方在于，存在这么一个光谱，一端是 Whatnot
+What's interesting about whatnot is it's there's like this spectrum of like whatnot
+
+1305
+01:06:41,933 --> 01:06:44,539
+另一端是整个 agentic commerce（智能体电商）的趋势
+and then there's this whole trend of agentic commerce
+
+1306
+01:06:44,539 --> 01:06:47,088
+由 agent（智能体）替你去购买东西
+where agents are going to be buying the things for you
+
+1307
+01:06:47,088 --> 01:06:50,390
+它们彼此协作，创造出一个全新的智能体经济
+and just working with each other create a whole new agentic economy.
+
+1308
+01:06:50,870 --> 01:06:53,818
+而 Whatnot 几乎是反过来的，人们实时互相交流
+And this is like the opposite. Humans live talking to each other,
+
+1309
+01:06:53,818 --> 01:06:54,910
+彼此之间做买卖
+buying from each other.
+
+1310
+01:06:55,910 --> 01:07:00,350
+你怎么看这个趋势，以及它可能会怎样影响你们
+Thoughts on that, on that trend and, and how may, how that might impact you guys.
+
+1311
+01:07:00,910 --> 01:07:05,807
+说实话，对某些事我举双手欢迎 agent 来当主宰，比如我根本不想
+Listen, I for one welcome our agentic overlords for things like I don't want to have
+
+1312
+01:07:05,807 --> 01:07:08,220
+去操心灯泡、空气滤芯
+to think about light bulbs, air filters,
+
+1313
+01:07:08,220 --> 01:07:11,910
+以及任何维持我日常生活所需的例行事务，对吧
+any of the programmatic stuff that I need to run my life, right?
+
+1314
+01:07:12,390 --> 01:07:16,230
+嗯，对于那些意图非常明确的事，我也很乐意交给它
+Um, I'm also pretty great with it for, like, really high intent things.
+
+1315
+01:07:16,310 --> 01:07:18,150
+比如我需要给电脑配一根特定的线
+I need a particular cable for my computer.
+
+1316
+01:07:18,350 --> 01:07:22,137
+或者我在找给家里用的户外灯
+I'm looking for, you know, outdoor lights for my house,
+
+1317
+01:07:22,137 --> 01:07:25,430
+这类搜索起来特别费劲的东西
+things where there are really taxing searches.
+
+1318
+01:07:26,260 --> 01:07:29,475
+我想想，比如要去参加婚礼，也就是说我需要一双黑皮鞋
+I think about this, you know, gotta go to a wedding, which means I need black shoes,
+
+1319
+01:07:29,475 --> 01:07:32,265
+但周四之前必须送到，因为如果周四前到不了
+but live it by Thursday because if they don't get here before Thursday,
+
+1320
+01:07:32,265 --> 01:07:33,920
+那对我就没用了，就是这类事情
+they're no good for me kind of things like.
+
+1321
+01:07:34,440 --> 01:07:34,920
+当然
+Absolutely.
+
+1322
+01:07:35,440 --> 01:07:38,520
+但在美国，大多数消费其实并不是高意图购物
+But most of commerce in America isn't actually high intent.
+
+1323
+01:07:39,040 --> 01:07:43,000
+电商发展到现在有多少年了？差不多有 30 年了
+Like, how many years are we into ecom now? Like 30 years into ecom.
+
+1324
+01:07:43,320 --> 01:07:48,320
+而电商从来没有超过美国零售支出的 20%，对吧
+And e-commerce has never exceeded 20% of retail spend in America, right?
+
+1325
+01:07:48,360 --> 01:07:52,416
+美国绝大绝大多数的零售购物，仍然是
+The vast, vast, vast majority of retail shopping in the United States is still
+
+1326
+01:07:52,416 --> 01:07:54,600
+人们亲自到店去买东西
+people going in person and buying things.
+
+1327
+01:07:55,160 --> 01:07:58,080
+在英国，大概是 75 比 25 这样的比例
+In the UK, it's somewhere, it's like 75, 25.
+
+1328
+01:07:58,640 --> 01:08:02,560
+事实证明，其实很多购物都是低意图的
+And it turns out, actually, that a lot of shopping is low intent.
+
+1329
+01:08:03,560 --> 01:08:04,520
+比如我去逛商场
+I'm going to the mall.
+
+1330
+01:08:05,040 --> 01:08:08,400
+可能是因为快要参加婚礼，却没有合适的衣服穿
+I might be because I've got a wedding coming up and I don't have anything to wear.
+
+1331
+01:08:08,440 --> 01:08:11,284
+于是我到处逛逛，看看有什么可选的
+And I'm going to wander around and see what people have available
+
+1332
+01:08:11,284 --> 01:08:13,760
+因为我其实并不清楚自己具体想要什么
+because I don't actually know specifically what I want.
+
+1333
+01:08:14,350 --> 01:08:18,755
+实体店的价值其实在于，经营
+And actually, the value of stores is that that person who runs
+
+1334
+01:08:18,755 --> 01:08:24,110
+那家鞋店的人有主见、有品味，她精心挑选了一批鞋子
+that shoe store has agency and taste, and she curates a selection of shoes.
+
+1335
+01:08:24,870 --> 01:08:27,110
+她提供一定水准的客户服务
+She has, you know, a level of customer service.
+
+1336
+01:08:27,310 --> 01:08:30,989
+她有橱窗展示，能让我看到她店里有哪些款式
+She has a window display which can show me the types of things she has
+
+1337
+01:08:30,989 --> 01:08:32,698
+我可以在商场里逛来逛去
+and I can wander around the mall
+
+1338
+01:08:32,698 --> 01:08:36,180
+慢慢弄清楚自己想买什么，或者从中获得启发
+and actually work out what it is I want to buy or be educated by it.
+
+1339
+01:08:36,620 --> 01:08:38,660
+事实证明，这个过程其实相当愉快
+And as it turns out, it's quite pleasant.
+
+1340
+01:08:38,660 --> 01:08:41,300
+商场之所以是一种社交场合，是有原因的
+Like there's a reason that the mall is a social thing.
+
+1341
+01:08:41,700 --> 01:08:46,180
+所以我认为，agentic 会是一个巨大的方向
+And so I think, you know, that Agentic is going to be huge.
+
+1342
+01:08:46,980 --> 01:08:50,947
+不过零售在美国是一个 7.5 万亿美元的产业
+Retail is a seven and a half trillion dollar industry in the US though,
+
+1343
+01:08:50,947 --> 01:08:53,820
+所以我不觉得这是赢家通吃的局面
+so I don't think it's a like winner takes all thing.
+
+1344
+01:08:54,060 --> 01:08:56,965
+我认为直播电商做到的，是第一次
+What I think Live Commerce does is it's the first time
+
+1345
+01:08:56,965 --> 01:09:00,266
+我们能够把互联网的规模
+that we've ever managed to kind of like bring together scale
+
+1346
+01:09:00,266 --> 01:09:03,764
+和便利结合起来，同时又保留那种
+and convenience of the internet and also that same kind of like,
+
+1347
+01:09:03,764 --> 01:09:06,537
+实体购物的社交文化体验
+social cultural experience of physical shopping
+
+1348
+01:09:06,537 --> 01:09:09,970
+因为你知道，在 Twitch 我们基本上会假设
+because you know at at Twitch we used to basically assume that.
+
+1349
+01:09:09,970 --> 01:09:11,793
+如果一场直播的观众少于 1000 人
+If it's less than 1,000 people in a stream,
+
+1350
+01:09:11,793 --> 01:09:14,450
+就不划算，因为你是靠 CPM 来运营的
+it's non economic because you're you're operating on CPM's.
+
+1351
+01:09:15,130 --> 01:09:18,810
+但你在 Whatnot 上进入一场直播，可能只看到三五十个人
+So but you can go into a stream on whatnot and see 30, 50 people in that stream.
+
+1352
+01:09:19,010 --> 01:09:22,480
+你想象一下，你在商场里经营一家鞋店
+And you, you imagine for a moment that you're running a shoe store at a mall
+
+1353
+01:09:22,480 --> 01:09:24,130
+而店里有 50 个人
+and you had 50 people in your store.
+
+1354
+01:09:24,250 --> 01:09:25,170
+你永远不会关门
+You'd never close.
+
+1355
+01:09:25,810 --> 01:09:29,074
+你几乎永远不会关店，因为这
+Like you would literally never shut down the store because that's
+
+1356
+01:09:29,074 --> 01:09:32,337
+比你能想象的实体店客流量要大得多
+so much more foot traffic than you can ever imagine being in a store
+
+1357
+01:09:32,337 --> 01:09:35,779
+因为电商和娱乐的经济模型完全不同
+because commerce has totally different economics to entertainment
+
+1358
+01:09:35,779 --> 01:09:38,509
+CPM 根本不是你需要担心的东西
+and CPM's aren't the thing that you have to worry about.
+
+1359
+01:09:38,509 --> 01:09:40,170
+所以我觉得它并不真的是
+So I think it's not really in kind.
+
+1360
+01:09:40,170 --> 01:09:41,939
+和 agentic 的直接竞争
+Of like competition with Agentic,
+
+1361
+01:09:41,939 --> 01:09:45,110
+我觉得它满足的是完全不同的客户需求
+I think it's completely different kind of like customer need.
+
+1362
+01:09:45,870 --> 01:09:47,644
+太棒了，大家都有各自的空间
+Amazing. There's room for everyone.
+
+1363
+01:09:47,644 --> 01:09:49,990
+也许我想用一个关于 Twitter 的问题来结束
+I want to end maybe with a question about Twitter.
+
+1364
+01:09:50,110 --> 01:09:53,470
+你曾经在 Twitter 工作过？是的，在 Twitter 做增长方向的 PM
+So you were at Twitter? Yes, sir. A PM at Twitter working on growth.
+
+1365
+01:09:54,110 --> 01:09:56,446
+我感觉每个在 Twitter 工作过的人
+I feel like everybody that worked at Twitter
+
+1366
+01:09:56,446 --> 01:09:59,350
+作为 PM，都被那段 Twitter 的经历留下了创伤
+as a PM was just scarred from the experience of Twitter.
+
+1367
+01:09:59,390 --> 01:10:01,408
+每个人都说千万别这样做事。有没有，呃
+Everyone's do not do things this way. What's, uh,
+
+1368
+01:10:01,408 --> 01:10:03,870
+那段经历里有什么让你记忆深刻的东西
+what's something that stuck with you from that experience?
+
+1369
+01:10:03,910 --> 01:10:06,030
+你学到了什么？又抛弃了哪些旧观念？说来有趣
+What did you learn? What you unlearn? It is funny.
+
+1370
+01:10:06,190 --> 01:10:07,938
+我，呃，我以前跟一个朋友说过
+I, uh, I have said to a friend before
+
+1371
+01:10:07,938 --> 01:10:10,710
+让一个在 2015、
+that asking someone who was at Twitter in like the 2015,
+
+1372
+01:10:10,710 --> 01:10:15,230
+16 年那段时期在 Twitter 待过的人回忆，有点像治疗师让人讲述自己的童年
+16 era is a little bit like a therapist asking somebody to tell them about their childhood.
+
+1373
+01:10:15,270 --> 01:10:17,590
+就是那种，你知道的，被勾起来的创伤
+It's like, you know, the trauma that you're, you're bringing up.
+
+1374
+01:10:18,030 --> 01:10:18,470
+是啊
+Yeah.
+
+1375
+01:10:18,670 --> 01:10:20,455
+对于不熟悉那段往事的人来说
+For those who not familiar with that lore,
+
+1376
+01:10:20,455 --> 01:10:23,310
+我在那儿的两年里，我们换了九任产品负责人
+I think we had nine heads of product in the two years that I was there.
+
+1377
+01:10:23,350 --> 01:10:24,670
+混乱就到了那种程度
+It was that level of kind of chaos.
+
+1378
+01:10:24,870 --> 01:10:27,681
+我最喜欢的一句话是合作团队的一个人说的
+I think my favorite quote was from someone on the partnerships team who said,
+
+1379
+01:10:27,681 --> 01:10:29,350
+他说感觉就像活在层出不穷的戏码里
+it felt like Caris, wish I lived in the events.
+
+1380
+01:10:29,680 --> 01:10:32,560
+那就是那地方各种狗血剧情发生的频率
+That was like how often drama was going on about the place.
+
+1381
+01:10:33,200 --> 01:10:37,045
+嗯，Lenny，我觉得我从
+Um, I think, Lenny, I probably took two overwhelming things away from,
+
+1382
+01:10:37,045 --> 01:10:40,760
+在 Twitter 的那段时间里，除了结识一些很棒的朋友之外，大概带走了两个特别深刻的收获
+from my time at Twitter and other than like some incredible friends.
+
+1383
+01:10:40,800 --> 01:10:43,057
+我得说，从那个时代的 Twitter
+And I will say that the, the product diaspora from
+
+1384
+01:10:43,057 --> 01:10:45,920
+走出来的产品人才真的很惊人，如今遍地都是
+that era of Twitter is pretty incredible and, and everywhere.
+
+1385
+01:10:46,600 --> 01:10:50,004
+第一个是，如果你真的找到了产品市场契合度
+The first one is like if you truly find product market fit,
+
+1386
+01:10:50,004 --> 01:10:52,344
+如果你真的抓住了那道闪电
+like if you manage to bottle lightning,
+
+1387
+01:10:52,344 --> 01:10:56,245
+那么无论你把组织搞得多糟
+doesn't matter how badly you screw up the organization, uh, of it,
+
+1388
+01:10:56,245 --> 01:11:00,854
+它依然是巨大的，Twitter 确实达到了那种程度的产品市场契合度
+like it's huge and like Twitter genuinely had that level of product market fit
+
+1389
+01:11:00,854 --> 01:11:02,840
+那是你能在情感上感受到的
+that you could emotionally feel.
+
+1390
+01:11:03,280 --> 01:11:04,678
+人们有多爱你的产品
+How much people loved your product.
+
+1391
+01:11:04,678 --> 01:11:07,800
+在职业生涯相对早期就学到这一点，是一个非常有力的试金石
+And it's a really powerful litmus test to learn relatively early in your career.
+
+1392
+01:11:07,960 --> 01:11:12,340
+这才是 PMF，而不是说，嘿，图表看起来还行，对吧
+And that's what PMF is not like, hey, the graphs look okay, right?
+
+1393
+01:11:12,380 --> 01:11:14,100
+里面有一种狂热的程度
+There's like a level of fervor that goes in.
+
+1394
+01:11:14,980 --> 01:11:19,624
+嗯，另一面比较不那么正面的，是我肯定
+Um, I think maybe on the flip side of like less positive is like what it definitely
+
+1395
+01:11:19,624 --> 01:11:23,714
+学到的一点：大多数时候你听说事情很复杂，其实并不是
+Learned is like most of the time you hear it's really complex it it isn't
+
+1396
+01:11:23,714 --> 01:11:25,100
+只是领导力太弱了
+leaderships just weak.
+
+1397
+01:11:25,820 --> 01:11:28,788
+就拿我在那儿的那两年来说
+So, you know, the two years that I was there,
+
+1398
+01:11:28,788 --> 01:11:33,900
+所有人都知道我们迟早得取消 140 字的限制，对吧
+everyone knew we were going to have to lift the 140 character limit, right?
+
+1399
+01:11:33,900 --> 01:11:38,593
+一个又一个工作组，"超越 140" 这个项目
+There was working group after working group, like the project beyond 140 was, like,
+
+1400
+01:11:38,593 --> 01:11:41,609
+到处都是，因为我们知道，比如说
+everywhere because we knew, for example, that, like,
+
+1401
+01:11:41,609 --> 01:11:45,900
+日本用户发推的频率是西方市场用户的六倍
+people in Japan tweeted six times more often than people in western markets.
+
+1402
+01:11:45,980 --> 01:11:48,106
+我们跟他们交流后发现，很大程度上
+And it was largely when we spoke to them
+
+1403
+01:11:48,106 --> 01:11:52,758
+是因为在相同字数下，汉字能表达的内容比
+because kanji let you say heaps more in the same number of characters than, you know,
+
+1404
+01:11:52,758 --> 01:11:54,020
+罗曼语系多得多
+romance language did.
+
+1405
+01:11:54,590 --> 01:11:56,456
+我们知道那是不可避免的最终状态
+We knew that was the inevitable end state,
+
+1406
+01:11:56,456 --> 01:11:59,654
+但显然需要做一堆工作，还有各种取舍
+but there's obviously a bunch of like work that was needed and tradeoffs
+
+1407
+01:11:59,654 --> 01:12:01,360
+只是没人愿意拍板
+and just no one wanted to make the call.
+
+1408
+01:12:01,480 --> 01:12:05,160
+于是就又来一轮设计冲刺，又来一个周期
+And so there was just, like, yet another design sprint, yet another cycle.
+
+1409
+01:12:06,000 --> 01:12:08,080
+在我离开之后又过了一年半
+And it was another year and a half after I left.
+
+1410
+01:12:08,160 --> 01:12:10,664
+我觉得可能差不多是我离开近两年后
+I think it was maybe even almost two years after I left
+
+1411
+01:12:10,664 --> 01:12:12,200
+才终于有人真正去做了这件事
+before someone actually did it.
+
+1412
+01:12:12,840 --> 01:12:15,160
+结果呢，没人因此丧命
+And it turns out, you know, nobody died.
+
+1413
+01:12:15,760 --> 01:12:17,240
+这个地方的灵魂也没有崩塌
+The soul of the place didn't fall apart.
+
+1414
+01:12:17,560 --> 01:12:19,907
+我猜关于编辑推文也经历了同样的讨论
+I imagine the same discussion went on for editing tweets,
+
+1415
+01:12:19,907 --> 01:12:21,520
+那又花了两年半
+which took another two and a half years.
+
+1416
+01:12:21,600 --> 01:12:26,120
+有时候事情其实没那么复杂，只是领导力太弱了
+Like, sometimes things aren't actually that complicated. It's just weak leadership.
+
+1417
+01:12:26,640 --> 01:12:29,600
+是啊，发展到这一步挺有意思的。现在你都能在 Twitter 上写整篇博客文章了
+Yeah, it's funny how far it's come. Now you can write entire blog posts on Twitter.
+
+1418
+01:12:29,680 --> 01:12:33,560
+比如长文功能，就是在产品市场契合度这块下的一个大赌注
+Like articles is a big bet on the product market fit piece.
+
+1419
+01:12:33,560 --> 01:12:36,660
+我觉得更重要的其实是 Twitter 的网络效应
+I think even more important there is the network effects of a Twitter,
+
+1420
+01:12:36,660 --> 01:12:40,134
+你花了很多时间思考如何构建 marketplace，对我来说
+which you spend a lot of time thinking about building marketplaces like to me,
+
+1421
+01:12:40,134 --> 01:12:43,340
+看着 Elon 基本上把一切都改了，我忘了是谁发的推
+watching Elon basically change everything, I forget who tweeted this,
+
+1422
+01:12:43,340 --> 01:12:44,890
+但就是一切都变了
+but just like everything changed.
+
+1423
+01:12:45,010 --> 01:12:48,640
+品牌、名字、网站、员工人数，什么都变了
+The brand, the name, the website, uh, number of people working there, everything.
+
+1424
+01:12:48,640 --> 01:12:49,850
+是啊，人员、团队
+Yeah, the people, the team.
+
+1425
+01:12:49,930 --> 01:12:51,399
+那么，唯一没变的东西是什么
+Like what, what was the thing that,
+
+1426
+01:12:51,399 --> 01:12:54,490
+基本上就是 Twitter 的网络效应
+that stayed the same and it was basically the network effects of Twitter.
+
+1427
+01:12:54,690 --> 01:12:55,010
+没错
+Yep.
+
+1428
+01:12:55,530 --> 01:12:58,370
+那就是大家该待的地方，所以人人都在那儿，这很难打破
+That's the place to be. So everyone's there and that's hard to break.
+
+1429
+01:12:58,650 --> 01:13:02,250
+即便你怎么折腾想把它搞砸，它依然活蹦乱跳
+And even in spite of how much you tried to mess it all up, uh, it's still kicking.
+
+1430
+01:13:03,700 --> 01:13:07,260
+就是这样。如果你真的抓住了那道闪电，你是感觉得到的。是的
+That's it. If you bottle lightning, genuinely, you can tell. Yeah.
+
+1431
+01:13:07,660 --> 01:13:11,540
+好，我要带大家进入播客的一个固定环节，Fail Corner（失败角）
+Okay, I'm gonna take us to a recurring corner of the podcast, Fail Corner.
+
+1432
+01:13:12,220 --> 01:13:14,904
+我喜欢做这个环节，是因为大家看到你
+Why I like doing this is because people see you,
+
+1433
+01:13:14,904 --> 01:13:19,103
+看到像你这样的人来上播客，有着辉煌的职业生涯
+see people like you coming on the podcast, have this illustrious career,
+
+1434
+01:13:19,103 --> 01:13:22,820
+一切都很顺利，你一直都做得很出色
+everything's going great, constantly, you're just killing it.
+
+1435
+01:13:23,340 --> 01:13:28,060
+他们看不到那些没成功的事，以及你失败的时候
+And, and they don't see the things that don't work out and the times that you failed.
+
+1436
+01:13:28,420 --> 01:13:30,020
+而在他们自己的生活里，事情却常常不顺
+And in their life, things often go.
+
+1437
+01:13:30,680 --> 01:13:34,316
+所以，我给你的问题是，能不能举一个你职业生涯中
+So, uh, so the question for you is just what's an example of a time in your career
+
+1438
+01:13:34,316 --> 01:13:36,218
+事情失败的例子，你做的某个东西
+where things fail, something you build,
+
+1439
+01:13:36,218 --> 01:13:38,400
+或者你做的某个职业选择，没能成功
+some career move you made that didn't work out.
+
+1440
+01:13:38,400 --> 01:13:39,920
+然后，你从那段经历中学到了什么
+And then what would you learn from that experience?
+
+1441
+01:13:40,360 --> 01:13:43,225
+说实话，兄弟，你说了这么多好话，我很感激
+Honestly, mate, and it's, it's very nice of you to say nice things,
+
+1442
+01:13:43,225 --> 01:13:47,080
+但说真的，回顾我的职业生涯，我觉得失败的次数比成功多
+but I feel like I fail more often than I succeed across the course of my career, genuinely.
+
+1443
+01:13:47,360 --> 01:13:50,657
+呃，说到你一开始提到的那篇博客，我发布的时候
+Uh, to the, to the blog you referenced right at the start, I published in the,
+
+1444
+01:13:50,657 --> 01:13:54,320
+在最后附上了我们内部讨论如何做产品的实际文档
+in the back of that, the actual document we use internally to talk about how we build.
+
+1445
+01:13:54,520 --> 01:13:58,240
+开头就写着，五成的命中率就是目标
+And it starts with like, batting 500 is, like, the goal.
+
+1446
+01:13:58,480 --> 01:14:00,760
+也就是说，你希望做对的次数和做错的次数差不多
+So, like, you're hoping to be right as often as you're wrong.
+
+1447
+01:14:01,560 --> 01:14:03,894
+所以具体的例子可能实在太多了
+So there's probably just too many specific examples of,
+
+1448
+01:14:03,894 --> 01:14:05,434
+那些我在职业生涯中搞砸的时候
+of times I've screwed up in my career,
+
+1449
+01:14:05,434 --> 01:14:07,520
+但它们背后可能有个很常见的共性
+but there probably is a really common thread to it.
+
+1450
+01:14:07,760 --> 01:14:12,230
+我觉得这可能是任何 PM 都容易掉进去的陷阱，就是说
+And I think it's probably an easy trap for, for any PM to fall into, which is like,
+
+1451
+01:14:12,230 --> 01:14:16,565
+呃，平均值对具体个体毫无意义，这大概是让我
+um, averages mean nothing to the individual is probably the thing that I've,
+
+1452
+01:14:16,565 --> 01:14:17,920
+真正吃过大亏的一点
+like really scarred by.
+
+1453
+01:14:18,760 --> 01:14:21,741
+呃，在任何规模够大的群体里，你会很想去
+Uh, in any sizable population, it's really attractive to go
+
+1454
+01:14:21,741 --> 01:14:25,021
+看某个功能的平均使用率或平均采用率
+and look at like average utility or average adoption of something
+
+1455
+01:14:25,021 --> 01:14:26,869
+然后你会发现，你懂的
+and then you find that like, you know,
+
+1456
+01:14:26,869 --> 01:14:29,552
+只有 3% 的人用某个功能，你就想，行啊
+only 3% of people use something and you're like, cool,
+
+1457
+01:14:29,552 --> 01:14:31,520
+我们大概可以把这个功能砍掉
+we can probably get rid of that feature.
+
+1458
+01:14:31,600 --> 01:14:32,600
+用的人不多
+It's not used widely.
+
+1459
+01:14:33,180 --> 01:14:36,560
+但如果你不再深入一层想想，其实对于，你懂的
+But if you don't go a layer deeper and be like, actually for like, you know,
+
+1460
+01:14:36,560 --> 01:14:40,660
+它只占 3%，但对某一群人来说，这就是他们全部要做的事
+it's only 3% of something, but there's a group of people for whom it's 100% of what they do.
+
+1461
+01:14:40,900 --> 01:14:42,340
+这是他们的核心使用场景
+This is their core use case.
+
+1462
+01:14:42,860 --> 01:14:46,267
+而为了图省事，因为有人不想再维护这个功能
+And for expediency sake, because somebody doesn't want to maintain a feature anymore,
+
+1463
+01:14:46,267 --> 01:14:47,620
+你就直接把它下线了
+you're just going to deprecate it.
+
+1464
+01:14:48,700 --> 01:14:52,620
+结果你等于把那群人的使用场景整个炸掉了
+And then it turns out you like, blow up the use case of that group of humans.
+
+1465
+01:14:52,620 --> 01:14:55,160
+然后说到你刚才讲的网络效应
+And then to your last point about network effects,
+
+1466
+01:14:55,160 --> 01:14:57,700
+由此持续螺旋放大的影响可能非常巨大
+the ongoing spiral effect of that can be enormous.
+
+1467
+01:14:58,260 --> 01:15:02,980
+你知道，在电商领域我经常想到，这可是某个人的生意，对吧
+You know, I think about it a lot in e-commerce of like this is somebody's business, right?
+
+1468
+01:15:03,020 --> 01:15:05,840
+如果我们不可靠，或者随意下线某个功能
+If we're just not reliable or like deprecating a feature,
+
+1469
+01:15:05,840 --> 01:15:09,540
+这就有点像 Westfield 购物中心在临近圣诞时
+it's kind of like a Westfield mall just turning off the power in the lead up to
+
+1470
+01:15:09,540 --> 01:15:11,420
+想都不想就把电给断了
+Christmas without thinking about it.
+
+1471
+01:15:11,580 --> 01:15:14,962
+所以这对人们的生意会有实实在在的下游影响
+And so like there are real downstream impacts to people's businesses
+
+1472
+01:15:14,962 --> 01:15:18,635
+而这往往只是因为对指标的理解不够细致
+that often come from just, like, a lack of nuance in understanding metrics,
+
+1473
+01:15:18,635 --> 01:15:21,900
+尤其是平均值，它们无时无刻不在骗你
+particularly averages like they, they just lie to you all the time.
+
+1474
+01:15:22,290 --> 01:15:26,390
+我想，你知道，我这辈子几乎各种搞砸的方式都试过了
+And I think, you know, I've probably screwed up in all of the ways in my career,
+
+1475
+01:15:26,390 --> 01:15:30,297
+但大多数时候，我做出那种让自己都失望的
+but most of the time I've made genuinely like I'm disappointed in myself,
+
+1476
+01:15:30,297 --> 01:15:31,450
+糟糕决策
+levels of decisions.
+
+1477
+01:15:31,570 --> 01:15:34,727
+通常都是因为我依赖了平均值，却没去想那些隐藏在下面的
+It's typically that I've relied on averages without thinking about the individual
+
+1478
+01:15:34,727 --> 01:15:36,170
+具体使用场景
+use cases that are hidden underneath.
+
+1479
+01:15:36,730 --> 01:15:40,659
+这让我想到 Jeff Bezos 的一句话，当你同时有数据和个案时
+Makes me think about Jeff Bezos as a quote, when you have data and an anecdote,
+
+1480
+01:15:40,659 --> 01:15:42,010
+相信个案。对
+trust the anecdote. Yeah.
+
+1481
+01:15:43,720 --> 01:15:44,640
+完全正确
+That's exactly right.
+
+1482
+01:15:46,040 --> 01:15:49,200
+Tom，我想聊的都聊完了
+Well, Tom, we've gone through everything I wanted to talk about.
+
+1483
+01:15:49,320 --> 01:15:51,462
+你还有别的想分享的吗
+Is there anything else that you wanted to share,
+
+1484
+01:15:51,462 --> 01:15:53,337
+有没有什么想留给听众的话
+anything you want to leave listeners with
+
+1485
+01:15:53,337 --> 01:15:55,640
+在我们进入非常精彩的快问快答之前
+before we get to our very exciting lightning round?
+
+1486
+01:15:55,960 --> 01:15:59,520
+兄弟，我唯一想补充的是，我真的很享受这次讨论，谢谢你，我的观点也一样
+I think all I'd add, mate, and I've really enjoyed the discussion, so thank you, is like same.
+
+1487
+01:15:59,800 --> 01:16:01,945
+我不认为做产品管理只有一种方式
+I don't think there is one way to do product management
+
+1488
+01:16:01,945 --> 01:16:04,520
+我也不认为 AI 会以单一的方式重塑这个行业
+and I don't think there is one way that AI will shape the industry.
+
+1489
+01:16:04,600 --> 01:16:07,374
+所以对于 Whatnot 来说，我们相当确信
+So like we're pretty confident that for whatnot,
+
+1490
+01:16:07,374 --> 01:16:11,637
+就我们在做的产品和公司的文化而言
+the product we're building and the culture of the company that we have that,
+
+1491
+01:16:11,637 --> 01:16:15,899
+你懂的，这种 PM 更少、更资深、拥有更多
+you know, this model of like fewer PMs who are more senior with like a lot more
+
+1492
+01:16:15,899 --> 01:16:17,320
+自主权的模式很适合我们
+autonomy is right for us.
+
+1493
+01:16:18,080 --> 01:16:20,056
+我并不会去假装，你知道，断定
+I don't pretend to, you know, presume that,
+
+1494
+01:16:20,056 --> 01:16:21,976
+这对整个行业都成立
+that will be true for the entire industry,
+
+1495
+01:16:21,976 --> 01:16:25,433
+但我确实认为，现在是回归本质的绝佳时机，回到
+but I do think there has never been a better time to go back to the roots of like
+
+1496
+01:16:25,433 --> 01:16:29,220
+真正的产品工作上，摆脱那种做样子的表演。我觉得这一点大概
+the actual product work and getting out of that theater. And I think that probably.
+
+1497
+01:16:29,220 --> 01:16:30,540
+在哪里都成立
+Is true everywhere.
+
+1498
+01:16:31,540 --> 01:16:34,936
+即便你依然，你知道，有些人是很棒的带人管理者
+Even if you are still, you know, there are people who are wonderful people, managers,
+
+1499
+01:16:34,936 --> 01:16:38,140
+真的从带团队、培养和辅导他人中获得满足感
+and really derive their satisfaction from doing that and growing and coaching.
+
+1500
+01:16:38,140 --> 01:16:40,580
+我相信在很多地方，这依然很有价值
+And I'm sure there'll be loads of places where that's still valuable.
+
+1501
+01:16:40,700 --> 01:16:43,814
+所以要假设我说的至少有一半是错的，基于同样的道理
+So assume that at least half of what I've said is wrong in the same basis
+
+1502
+01:16:43,814 --> 01:16:46,820
+就像我做过的产品里大概有一半也是不对的
+that half of the things I've probably ever shipped are not correct.
+
+1503
+01:16:47,180 --> 01:16:50,618
+这就是我喜欢这类对话的原因，也是我觉得这份工作
+That's why I love these conversations and why I think this work
+
+1504
+01:16:50,618 --> 01:16:55,510
+我们一起做的这件事很重要，因为我们正经历职业生涯中最疯狂的时期
+that we do together is important is we are living through the wildest time in our careers.
+
+1505
+01:16:55,950 --> 01:16:59,230
+太多东西在变化，正如你所说，太多东西正在被重新思考
+So much is changing. So much is being rethought as you've described.
+
+1506
+01:16:59,270 --> 01:17:02,949
+感觉我们要顺利度过这一切，唯一的办法就是
+And it feels like the only way we can make our way through this successfully is to
+
+1507
+01:17:02,949 --> 01:17:06,405
+向别人的做法学习，看看他们学到了什么
+learn from how other people are approaching it, see what they've learned,
+
+1508
+01:17:06,405 --> 01:17:07,910
+看看什么对他们没起作用
+see what they've not worked.
+
+1509
+01:17:08,110 --> 01:17:12,070
+吸收有共鸣的部分，忽略那些听起来夸张或不适用的部分
+Bits that resonate. Ignore the bits that seem bombastic or not applicable.
+
+1510
+01:17:12,620 --> 01:17:14,780
+没错，因为没人确切知道方向在哪
+Exactly. Cause, like, no one knows exactly where.
+
+1511
+01:17:15,140 --> 01:17:18,483
+Elizabeth Sohn 有个很好的说法，我们正处在这样一种阶段
+Uh, Elizabeth Sohn had this great way of putting it, we're in this kind of there's,
+
+1512
+01:17:18,483 --> 01:17:20,401
+有一个 storming（激荡）阶段和一个 norming（规范）阶段
+there's a storming phase and the norming phase
+
+1513
+01:17:20,401 --> 01:17:22,220
+而我们正处在那种「我的天」的激荡阶段
+and we're in the storming phase of holy shit.
+
+1514
+01:17:22,500 --> 01:17:25,137
+我记得在我的 PM 职业生涯里，当我开始写东西的时候
+Like I remember in my PM career as I started writing and stuff,
+
+1515
+01:17:25,137 --> 01:17:28,860
+大家总问我，过去十年产品管理有什么变化
+everyone's always asking me, how is product management changed over the last decade?
+
+1516
+01:17:28,940 --> 01:17:30,820
+我会说，它没变，基本上还是老样子
+I'm like, it hasn't changed. It's the same, basically.
+
+1517
+01:17:31,380 --> 01:17:34,300
+但现在感觉它真的发生了重大变化
+But it feels like now it actually significantly changed.
+
+1518
+01:17:34,800 --> 01:17:36,376
+不过正如你之前说的
+Although to your point earlier,
+
+1519
+01:17:36,376 --> 01:17:39,120
+其实核心的东西也会保持不变
+actually the core thing and also not will all be the same.
+
+1520
+01:17:39,360 --> 01:17:40,400
+对对对
+Yeah, yeah, yeah.
+
+1521
+01:17:40,760 --> 01:17:44,389
+所以这些对话才这么有用，让大家看到一个团队是
+So, so that's why these are so useful just for people to see here's how a team is
+
+1522
+01:17:44,389 --> 01:17:47,280
+怎么运作的，他们学到了什么，有哪些可以尝试的做法
+operating and what they've learned and here's things to try.
+
+1523
+01:17:47,320 --> 01:17:50,160
+它对你可能不管用，但这就是我们互相学习的方式
+And it may not work for you, but this is how we learn from each other.
+
+1524
+01:17:51,040 --> 01:17:53,975
+说到这，我们就进入非常精彩的快问快答环节了
+With that, we have reached a very exciting lightning round.
+
+1525
+01:17:53,975 --> 01:17:55,560
+我有五个问题要问你
+I've got five questions for you.
+
+1526
+01:17:55,560 --> 01:17:58,041
+好，开始吧。有哪两三本书
+All right, here we go. What are two or three books
+
+1527
+01:17:58,041 --> 01:18:01,080
+是你最常推荐给别人的
+that you find yourself recommending most to other people?
+
+1528
+01:18:01,280 --> 01:18:01,600
+好
+Okay.
+
+1529
+01:18:01,720 --> 01:18:05,010
+不想落俗套，但我仍然觉得《The Hard Thing About Hard Things》是
+Uh, not to be cliche, but the hard thing about hard things I still think is the best
+
+1530
+01:18:05,010 --> 01:18:06,680
+关于产品管理写得最好的书
+book written about product management.
+
+1531
+01:18:07,200 --> 01:18:11,769
+就从你要经历、尝试去做
+Um, just from a like breadth of things that you have to go through and try and do
+
+1532
+01:18:11,769 --> 01:18:12,840
+还会搞砸很多次的广度来说
+and screw up a lot.
+
+1533
+01:18:13,840 --> 01:18:15,240
+有点冷门
+Slightly left field.
+
+1534
+01:18:15,600 --> 01:18:18,500
+但别人推荐给我读过的最好的书
+Um, but the best book anyone's ever recommended to me to read,
+
+1535
+01:18:18,500 --> 01:18:20,206
+我现在也会推荐给别人
+which I now recommend to others, um,
+
+1536
+01:18:20,206 --> 01:18:23,050
+是牧师 Rick Warren 写的《The Purpose Driven Church》
+is The Purpose Driven Church by a pastor called Rick Warren.
+
+1537
+01:18:23,690 --> 01:18:27,370
+Twitch 的 CEO Emmett Shear 以前基本上会确保大家都去读它
+Emmett Shear, the CEO at Twitch, used to basically make sure that people read it.
+
+1538
+01:18:27,730 --> 01:18:31,491
+这本书极为深入地探讨了人们为什么会对某件事投入情感
+It's this wild examination of why people emotionally invest in something
+
+1539
+01:18:31,491 --> 01:18:35,130
+以及如何在一群人中营造出这种情感投入
+and how to engineer emotional investment into it from a group of people.
+
+1540
+01:18:35,970 --> 01:18:40,130
+它其实就是一本 90 年代写的教你怎么建立教会的指南
+It's literally a like how to go and build a church guidebook written in the 90s.
+
+1541
+01:18:40,850 --> 01:18:44,310
+如果你做的是任何形式的社区类产品，绝对值得一读
+Definitely worth a read if you're in a community product of any form.
+
+1542
+01:18:45,110 --> 01:18:48,641
+最后一本，如果你想找点小说或奇幻类的
+And the last one is if you're looking for kind of like fiction or fantasy,
+
+1543
+01:18:48,641 --> 01:18:51,230
+那也是我晚上常看的，就是 R.F. Kuang 的《Babel》
+which is where I tend to go in the evening, Babel by R F.
+
+1544
+01:18:51,310 --> 01:18:53,486
+我喜欢那些从没被提过的书
+Quinn. I love when books have never been mentioned
+
+1545
+01:18:53,486 --> 01:18:55,870
+被加入到推荐书单里
+before you get added to the canon of recommended books.
+
+1546
+01:18:56,110 --> 01:18:56,790
+很有意思
+It's very fun.
+
+1547
+01:18:58,070 --> 01:19:00,950
+最近你特别喜欢的电影或剧集是哪部
+Favorite recent movie or TV show that you've really enjoyed?
+
+1548
+01:19:02,070 --> 01:19:03,790
+Apple TV 上的《Star City》
+Star City on Apple TV.
+
+1549
+01:19:04,520 --> 01:19:07,704
+如果你喜欢《For All Mankind》，它有点像那部的反面
+Uh, if you liked for all mankind. It's kind of like the flip of that,
+
+1550
+01:19:07,704 --> 01:19:08,920
+但讲的是苏联那一边
+but it's the Soviet side.
+
+1551
+01:19:09,080 --> 01:19:12,760
+就像把《The Americans》和《For All Mankind》混在一起看
+It's like watching the Americans and, uh, for all mankind mixed together.
+
+1552
+01:19:13,600 --> 01:19:16,880
+最近你发现的、特别喜欢的产品是什么
+Favorite product that you have recently discovered that you really like?
+
+1553
+01:19:17,360 --> 01:19:21,040
+这个非常小众，所以我要先跟大多数听众说声抱歉
+Uh, this is a very deep cut, so I will apologize to most listeners.
+
+1554
+01:19:21,440 --> 01:19:23,871
+希望你已经听出我的口音了
+Um, uh, hopefully you've detected the accent.
+
+1555
+01:19:23,871 --> 01:19:26,800
+大家老跟我说我的澳大利亚口音在慢慢消失
+I'm told constantly that my Australian accent is going.
+
+1556
+01:19:26,840 --> 01:19:29,283
+但我很喜欢的一点是，每次我回家
+But one of the things that I love is every time I go home,
+
+1557
+01:19:29,283 --> 01:19:33,680
+我发现澳大利亚有一批政府服务类 App 其实做得非常出色
+I realized was actually a bunch of the government services apps in Australia have become phenomenal.
+
+1558
+01:19:34,120 --> 01:19:35,840
+你有没有过那种想法，就是
+You ever had that kind of concept where you're like,
+
+1559
+01:19:35,840 --> 01:19:37,080
+我希望政府掌握我所有的数据
+I wish the government has all my data.
+
+1560
+01:19:37,200 --> 01:19:39,729
+我希望有那么一个地方，我只要点一下就能
+I wish there was just like one place where I could, with one click,
+
+1561
+01:19:39,729 --> 01:19:41,040
+更新我的驾照
+get my driver's license renewed.
+
+1562
+01:19:41,160 --> 01:19:43,812
+我可以过户产权证，处理所有那些
+I could, like, transfer titles and do all of the admin
+
+1563
+01:19:43,812 --> 01:19:45,680
+生活里拖你后腿的行政手续
+that slows you down in life services.
+
+1564
+01:19:45,840 --> 01:19:47,160
+New South Wales 真的做得很棒
+New South Wales actually nailed.
+
+1565
+01:19:47,480 --> 01:19:50,830
+我居然会在播客上说这话，自己都觉得离谱
+Bizarre to me that I would ever come on a podcast and say, actually,
+
+1566
+01:19:50,830 --> 01:19:53,510
+偏偏是澳大利亚一个政府做的 app，是吧
+a government run app in Australia of all places is it?
+
+1567
+01:19:53,510 --> 01:19:57,470
+但我最近回国得办各种生活手续，体验真的很棒
+But I was home recently and had to do all of my life admin and it's incredible.
+
+1568
+01:19:58,350 --> 01:19:58,590
+哇
+Wow.
+
+1569
+01:19:58,870 --> 01:20:02,633
+说到这个话题，我最近听到一件关于澳大利亚的事
+Uh, something I heard recently about Australia while we're in that topic,
+
+1570
+01:20:02,633 --> 01:20:06,336
+快速插一句题外话，就是他们大规模铺设太阳能板后
+real quick Tangent from Lightning Round is uh with a solar panel build out
+
+1571
+01:20:06,336 --> 01:20:11,070
+澳大利亚现在的电力供应多到用不完
+that has happened there, there's more electricity available in Australia than they can use.
+
+1572
+01:20:11,270 --> 01:20:13,830
+对，太阳能在澳大利亚普及得非常广
+Yep. And they're giving people solar huge in Australia.
+
+1573
+01:20:14,180 --> 01:20:17,081
+所以他们在正午时段免费给大家供电
+So it's like, uh, they're giving people free electricity in the middle of the day
+
+1574
+01:20:17,081 --> 01:20:18,380
+因为电实在太多了
+because there's so much available.
+
+1575
+01:20:18,420 --> 01:20:20,607
+他们就鼓励大家在正午多用电
+And they're like, use all your stuff in the middle of the day
+
+1576
+01:20:20,607 --> 01:20:22,660
+因为不然这些电就浪费了
+because this is way otherwise it's going to go to waste.
+
+1577
+01:20:22,860 --> 01:20:24,472
+有一种说法是
+There is a pitch somewhere that says
+
+1578
+01:20:24,472 --> 01:20:27,588
+如果 AI 数据中心真的需要海量电力
+if AI actually needs loads of electricity in order to be data centers,
+
+1579
+01:20:27,588 --> 01:20:30,220
+那澳大利亚整个 21 世纪的经济支柱就该是电力
+Australia's entire 21st century economy should be power.
+
+1580
+01:20:30,940 --> 01:20:35,496
+太厉害了。这真是好消息，我们正在找到办法
+Incredible. That's like such good news that we are finding ways to generate, uh,
+
+1581
+01:20:35,496 --> 01:20:37,400
+从太阳能板产出这么多能源
+so much energy from solar panels.
+
+1582
+01:20:37,600 --> 01:20:39,809
+大约 20 年前有一条小规定，说
+Uh, small piece of regulation and about 20 years ago that said,
+
+1583
+01:20:39,809 --> 01:20:42,400
+如果你建新房子，就得在屋顶装太阳能板
+if you're building a new property, you got to put solar panels on the roof.
+
+1584
+01:20:42,440 --> 01:20:45,200
+结果效果特别好。天啊，我太喜欢了
+And it turns out it works great. Oh, my god. I love this.
+
+1585
+01:20:45,200 --> 01:20:47,236
+我喜欢这种对未来的乐观，因为你知道
+I love this optimism of the future because, you know,
+
+1586
+01:20:47,236 --> 01:20:49,040
+客户一路都在参与评估
+clients entered like reviews the way through.
+
+1587
+01:20:49,440 --> 01:20:53,800
+不，这不是问题。嗯，你在这儿。好，还有两个问题
+Not, not the problem. Hmm, you're here. Okay, two more questions.
+
+1588
+01:20:53,960 --> 01:20:58,720
+你有没有一句最喜欢的人生格言，在工作或生活中经常回味
+Do you have a favorite life motto that you often come back to in work or in life?
+
+1589
+01:20:59,080 --> 01:21:01,440
+呃，在我读书那会儿或大学时代
+Uh, in my unit days or back in college.
+
+1590
+01:21:01,440 --> 01:21:04,329
+给美国人翻译一下，我以前有个派对绝活，就是背下了
+For American translation, I used to have a party trick if I'd memorized
+
+1591
+01:21:04,329 --> 01:21:07,560
+Rudyard Kipling 的诗《If》，因为我觉得它很深刻、很有意义
+if by Rudyard Kipling because I thought it was like deep and really meaningful.
+
+1592
+01:21:09,040 --> 01:21:13,720
+但说实话，最贴近的可能是"我会搞定它"
+But I think if I'm being really honest, I'll figure it out is probably the closest.
+
+1593
+01:21:14,240 --> 01:21:17,800
+你知道，其实大多数事情没有人们想的那么难
+You know, like it turns out most things are not as hard as people think.
+
+1594
+01:21:17,800 --> 01:21:18,680
+就是，我们总能解决
+Like we'll work it out.
+
+1595
+01:21:18,920 --> 01:21:23,282
+只要你愿意投入必要的时间、金钱、努力、
+I'll figure it out if you're willing to devote the required time, money, effort,
+
+1596
+01:21:23,282 --> 01:21:25,430
+精力，几乎什么都能解决
+energy, you can solve almost anything.
+
+1597
+01:21:26,110 --> 01:21:28,390
+如果你不愿意，那它大概也没那么严重
+And if you're not, then it's probably not that big of a problem.
+
+1598
+01:21:28,990 --> 01:21:29,510
+最后一个问题
+Final question.
+
+1599
+01:21:29,790 --> 01:21:32,810
+我想很多人都问过你，但我也很好奇
+I imagine people ask you this a lot, but I'm also just curious,
+
+1600
+01:21:32,810 --> 01:21:36,954
+过去一个月左右，你在 Whatnot 上买过什么特别棒的东西
+what's something you bought on whatnot in the past month or so that was just awesome,
+
+1601
+01:21:36,954 --> 01:21:40,270
+让人惊喜、有趣的？我最近买过最有意思的东西
+delightful, surprising, the most fun thing I've bought recently.
+
+1602
+01:21:40,430 --> 01:21:41,910
+不开玩笑，是一只活龙虾
+I'm not joking, is a live lobster.
+
+1603
+01:21:43,150 --> 01:21:46,674
+呃，最近在 Whatnot 上非常火爆的一个品类
+So, um, recently one of the things that's really taken off on,
+
+1604
+01:21:46,674 --> 01:21:50,750
+就是生鲜和特色食品这一类
+on whatnot is now like, um, fresh and specialty foods kind of category.
+
+1605
+01:21:51,150 --> 01:21:54,399
+有一个很棒的卖家，叫 E Fishco
+And so there's this wonderful seller who goes by E Fishco,
+
+1606
+01:21:54,399 --> 01:21:57,310
+他在 San Diego 码头有一家海鲜店
+who has a seafood store down on the dock in San Diego.
+
+1607
+01:21:57,550 --> 01:21:59,373
+每天早上渔船进港时
+And every morning as the boats come in,
+
+1608
+01:21:59,373 --> 01:22:03,302
+他真的会出去，直播一箱箱海鲜从
+he literally goes out and livestreams all of the crates of seafood coming in off the
+
+1609
+01:22:03,302 --> 01:22:05,979
+船上卸下来，然后在直播里拍卖
+boats, and then he auctions them off live on Walmart and,
+
+1610
+01:22:05,979 --> 01:22:07,460
+第二天就送货到你家门口
+and ships next day to your door.
+
+1611
+01:22:07,820 --> 01:22:13,300
+所以我通过一场直播，买了一只加州刺龙虾直接送到家门口
+So, uh, I got a California spiny tail lobster shipped direct to my door courtesy of a livestream.
+
+1612
+01:22:13,740 --> 01:22:17,300
+这是怎么运作的？他们放进冰里，隔天发货，对吧
+And how does this work? They put in ice, uh, ship it next. It was in my day, right?
+
+1613
+01:22:17,420 --> 01:22:21,340
+装在带冰的容器里，用 UPS 隔夜送达，第二天就到我家门口
+Ice kind of like container and it's no UPS overnight on my door the next day.
+
+1614
+01:22:21,500 --> 01:22:24,088
+这就是为什么 agentic commerce 会很棒
+And that is why Agentic Commerce is going to be great,
+
+1615
+01:22:24,088 --> 01:22:28,204
+但不会包揽一切，因为那天早上我根本没打算买加州刺龙虾
+but not all encompassing because no intention of buying a spiny California lobster
+
+1616
+01:22:28,204 --> 01:22:31,380
+除非你的 agent 替你决定，今天你就得吃龙虾
+that morning unless your agent decides, you need lobster today.
+
+1617
+01:22:31,420 --> 01:22:32,980
+说句实话，那龙虾真的很好吃
+And we gotta be honest with you, it was delicious.
+
+1618
+01:22:34,500 --> 01:22:36,420
+太厉害了。我都不知道还能买到这种东西
+Amazing. I did not know you could buy stuff like that.
+
+1619
+01:22:36,820 --> 01:22:38,812
+Tom，大家可以在网上哪里找到你
+Tom, where can folks find you online
+
+1620
+01:22:38,812 --> 01:22:43,460
+如果他们想关注你的文章，或了解你在招什么人
+if they want to follow your writing slash hiring, talk about what you're hiring for.
+
+1621
+01:22:43,460 --> 01:22:45,780
+最后一个问题，听众可以怎么帮到你
+And finally, how can listeners be useful to you?
+
+1622
+01:22:45,820 --> 01:22:49,900
+想在网上找我的话，我在 Twitter 上是 TDrobo，也就是 TDr0BB0
+If you're looking for me online, I'm TDrobo, TDr0BB0 on Twitter,
+
+1623
+01:22:49,900 --> 01:22:53,980
+现在应该叫 X 了，我大部分的碎碎念都发在那儿
+which is or x I guess, uh, which is where I uh, do most of my musing.
+
+1624
+01:22:54,300 --> 01:22:57,690
+内容是产品管理，再加上对 Warriors 比赛的各种吐槽
+Uh, it's a mix of product management, uh, and yelling about Warriors games,
+
+1625
+01:22:57,690 --> 01:22:58,820
+所以先说声抱歉
+so apologies in advance.
+
+1626
+01:22:59,460 --> 01:23:02,780
+然后在 LinkedIn 上，我发大部分跟工作相关的文章
+Uh, and then on LinkedIn is the other place I put most of my kind of like work writing.
+
+1627
+01:23:02,860 --> 01:23:06,260
+我得说，我追求的是质量而不是数量
+I will say it's, uh, I, I try for quality over volume.
+
+1628
+01:23:06,340 --> 01:23:09,820
+所以别指望我在哪个平台上天天更新，我只发精品
+So don't expect, uh, daily, daily drops from me on either. Just bangers.
+
+1629
+01:23:09,940 --> 01:23:10,980
+只发精品，一年一次
+Just bangers. Once a year.
+
+1630
+01:23:11,460 --> 01:23:14,502
+这是别人夸我隔那么久发一次内容时最好听的说法
+That was the nicest thing anyone said about being ages, uh, just,
+
+1631
+01:23:14,502 --> 01:23:18,107
+就是随手扔几个精品。说到大家怎么能帮到我，说实话
+just dropping casual bangers and how can folks be, be helpful, honestly, uh,
+
+1632
+01:23:18,107 --> 01:23:20,530
+我随时欢迎关于 Whatnot 的反馈
+would always welcome feedback around Whatnot, uh,
+
+1633
+01:23:20,530 --> 01:23:23,290
+大家用得怎么样，我们还能在哪些方面做得更好
+and how people are finding it and what more we can do better.
+
+1634
+01:23:23,290 --> 01:23:26,744
+所以在这两个平台上找我都行，有什么犀利观点、
+So, like, hit me up on either of those platforms with, you know, hot takes, uh,
+
+1635
+01:23:26,744 --> 01:23:27,770
+反馈或想法都可以
+feedback or thoughts.
+
+1636
+01:23:28,210 --> 01:23:31,311
+然后，尽管你对产品管理有那么多强烈的看法
+And then, uh, you're hiring PMs even in spite of the many strong opinions of our
+
+1637
+01:23:31,311 --> 01:23:32,170
+你们还是在招 PM
+product management.
+
+1638
+01:23:32,250 --> 01:23:35,334
+要不聊聊这个，以及大家可以去哪里申请？当然。听着
+Maybe just talk about that and where folks can apply? Sure. Uh, listen,
+
+1639
+01:23:35,334 --> 01:23:36,850
+我们一直都在招 PM
+we are constantly looking for PMs.
+
+1640
+01:23:36,930 --> 01:23:40,896
+我之前讲有多少人申请、录用了多少
+The, the intent of kind of like explaining how many people applied versus hired was
+
+1641
+01:23:40,896 --> 01:23:42,390
+并不是想打击大家
+not to discourage, uh, people.
+
+1642
+01:23:42,390 --> 01:23:46,176
+我更想说的是，产品管理岗位的泛滥
+It was more along the lines of like the proliferation of product management doesn't
+
+1643
+01:23:46,176 --> 01:23:48,989
+本身并不会自然培养出那种技能组合的人
+itself naturally lend to the people with the skill set that you
+
+1644
+01:23:48,989 --> 01:23:51,910
+也就是你我刚才花了近 90 分钟讨论的那种人
+and I spent the better part of 90 minutes talking about right now.
+
+1645
+01:23:52,510 --> 01:23:54,437
+但你知道吗，我们昨天就招了两个人
+But, you know, we hired two people yesterday.
+
+1646
+01:23:54,437 --> 01:23:56,110
+我很期待他们入职
+I'm very excited for them to come start.
+
+1647
+01:23:56,470 --> 01:23:59,230
+而且我们一直都有各种 PM 职位在招
+Um, and we've always got a variety of of PM roles open.
+
+1648
+01:23:59,750 --> 01:24:02,382
+你只要 Google 一下 Whatnot 的招聘
+The Whatnot, if you just kind of Google Whatnot jobs, the,
+
+1649
+01:24:02,382 --> 01:24:06,056
+正确的申请流程就会出来。或者我发现
+the right kind of application process will, will pop up there or I've found that,
+
+1650
+01:24:06,056 --> 01:24:09,072
+硅谷这个圈子够小，产品管理也没那么冷门
+you know, the valley is small enough and product management is not
+
+1651
+01:24:09,072 --> 01:24:11,869
+你大概能找到在 Whatnot 工作的
+that kind of obscure that you can probably find one of the 20 or
+
+1652
+01:24:11,869 --> 01:24:13,240
+那 20 来个人中的一个
+so humans who work at Whatnot.
+
+1653
+01:24:13,280 --> 01:24:16,600
+然后联系他们。不过我们现在在招各种岗位
+And and reach out to them. But we're looking at a variety of things right now.
+
+1654
+01:24:17,000 --> 01:24:20,680
+支付在我们的优先事项里排得很靠前，物流也是
+Payments very high on, on our list of what we're doing as well as logistics.
+
+1655
+01:24:21,080 --> 01:24:24,710
+所以如果有人特别想来做隔夜运送龙虾的未来
+So if anyone is really excited to come work on the future of shipping lobsters
+
+1656
+01:24:24,710 --> 01:24:28,680
+你会发现那里其实有大量精细的产品工作要做
+overnight, it turns out there's quite a lot of nuanced product work to happen there.
+
+1657
+01:24:29,120 --> 01:24:32,480
+太棒了。Tom，非常感谢你来上节目。很荣幸，哥们
+Amazing. Tom, thank you so much for being here. It was a pleasure, mate.
+
+1658
+01:24:32,520 --> 01:24:34,120
+谢谢邀请。大家再见
+Thanks for having me. Bye, everyone.
+
+1659
+01:24:35,120 --> 01:24:36,200
+非常感谢大家的收听
+Thank you so much for listening.
+
+1660
+01:24:36,400 --> 01:24:40,299
+如果你觉得有价值，可以在 Apple Podcasts、
+If you found this valuable, you can subscribe to the show on Apple Podcasts,
+
+1661
+01:24:40,299 --> 01:24:42,280
+Spotify 或你喜欢的播客应用上订阅本节目
+Spotify or your favorite podcast app.
+
+1662
+01:24:42,960 --> 01:24:45,993
+也请考虑给我们打个分或留个评价
+Also, please consider giving us a rating or leaving a review as
+
+1663
+01:24:45,993 --> 01:24:48,560
+这真的能帮到其他听众发现这个播客
+that really helps other listeners find the podcast.
+
+1664
+01:24:49,080 --> 01:24:53,970
+你可以在 Lennyspodcast.com 上找到所有往期节目，或了解更多节目信息
+You can find all past episodes or learn more about the show at Lenny's podcast.com.
+
+1665
+01:24:53,970 --> 01:24:55,600
+下期节目再见
+See you in the next episode.

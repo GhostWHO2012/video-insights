@@ -7,12 +7,13 @@
 - B站链接：https://www.bilibili.com/video/BV1Ei3q6YEnK
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-07-28 19:49:26
-- 字幕数量：0
+- 字幕数量：2
 - 提纲图数量：2
 
 ## 字幕下载
 
-暂无中文在上字幕，后续补齐。
+- [字幕 1](subtitles/01_inside-how-openai-uses-codex-to-do-product-work-opus4-8.srt)
+- [字幕 2](subtitles/02_inside-how-openai-uses-codex-to-do-product-work-opus4-8.srt)
 
 ## 中文时间轴
 

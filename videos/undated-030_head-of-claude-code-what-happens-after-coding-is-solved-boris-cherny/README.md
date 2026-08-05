@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_head-of-claude-code-what-happens-after-coding-is-solved-.srt)
+- [字幕 1](subtitles/01_Head of Claude Code What happens after coding is solved Boris Cherny - Lenny's P.srt)
 
 ## 中文时间轴
 

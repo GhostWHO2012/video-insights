@@ -7,14 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV1WKTw6aER5
 - 原视频链接：https://www.youtube.com/watch?v=P3KDebPTUrw
 - 发布时间：发布时间**: 2026-06-30 23:17:16
-- 字幕数量：3
+- 字幕数量：1
 - 提纲图数量：2
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
-- [字幕 2](subtitles/02_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
-- [字幕 3](subtitles/03_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
+- [字幕 1](subtitles/01_有翻译参考资料版.双语.中文在上.去多余标点修正版.srt)
 
 ## 中文时间轴
 

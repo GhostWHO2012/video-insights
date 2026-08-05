@@ -7,13 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV19p3i6pEL7
 - 原视频链接：https://www.youtube.com/watch?v=WLg9qWOf6zw
 - 发布时间：发布时间**: 2026-07-28 14:05:01
-- 字幕数量：2
+- 字幕数量：1
 - 提纲图数量：2
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_how-i-use-chatgpt-work-and-gpt-5-opus4-8.srt)
-- [字幕 2](subtitles/02_how-i-use-chatgpt-work-and-gpt-5-opus4-8.srt)
+- [字幕 1](subtitles/01_术语统一-去多余标点版.srt)
 
 ## 中文时间轴
 

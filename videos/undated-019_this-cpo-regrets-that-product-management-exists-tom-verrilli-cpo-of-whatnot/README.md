@@ -7,13 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV1xHuw6uEqC
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-04 15:47:49
-- 字幕数量：2
+- 字幕数量：1
 - 提纲图数量：7
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_this-cpo-regrets-that-product-management-exists-opus4-8.srt)
-- [字幕 2](subtitles/02_this-cpo-regrets-that-product-management-exists-opus4-8.srt)
+- [字幕 1](subtitles/01_术语小修-去多余行尾标点版.srt)
 
 ## 中文时间轴
 

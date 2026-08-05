@@ -7,14 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV19GMR6wEnz
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 22:07:02
-- 字幕数量：3
+- 字幕数量：1
 - 提纲图数量：4
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
-- [字幕 2](subtitles/02_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
-- [字幕 3](subtitles/03_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
+- [字幕 1](subtitles/01_校正版.双语.中文在上.srt)
 
 ## 中文时间轴
 

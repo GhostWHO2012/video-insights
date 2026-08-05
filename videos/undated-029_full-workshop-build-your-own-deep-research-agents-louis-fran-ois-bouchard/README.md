@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_full-workshop-build-your-own-deep-research-agents-louis-.srt)
+- [字幕 1](subtitles/01_Full Workshop Build Your Own Deep Research Agents - Louis-Fran鏾is Bouchard, Paul.srt)
 
 ## 中文时间轴
 

@@ -7,15 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV1gRMX6REGo
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 16:53:23
-- 字幕数量：4
+- 字幕数量：1
 - 提纲图数量：6
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_sam-altman-opus4-8.srt)
-- [字幕 2](subtitles/02_sam-altman-opus4-8.srt)
-- [字幕 3](subtitles/03_sam-altman-opus4-8.srt)
-- [字幕 4](subtitles/04_sam-altman-opus4-8.srt)
+- [字幕 1](subtitles/01_术语小修去行尾标点版.有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

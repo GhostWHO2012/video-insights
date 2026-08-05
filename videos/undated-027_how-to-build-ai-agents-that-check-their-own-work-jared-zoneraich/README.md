@@ -7,13 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV1Jb3v68Esq
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-07-28 16:18:42
-- 字幕数量：2
+- 字幕数量：1
 - 提纲图数量：2
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_how-to-build-ai-agents-that-check-their-own-work-opus4-8.srt)
-- [字幕 2](subtitles/02_how-to-build-ai-agents-that-check-their-own-work-opus4-8.srt)
+- [字幕 1](subtitles/01_术语统一-去多余标点版.srt)
 
 ## 中文时间轴
 

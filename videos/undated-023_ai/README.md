@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_viktor-oddy-on-x-insane-social-media-designs-in-minutes-.srt)
+- [字幕 1](subtitles/01_Viktor Oddy on X Insane Social Media Designs in Minutes. Claude Nano Banana. Ful.srt)
 
 ## 中文时间轴
 

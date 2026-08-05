@@ -7,13 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV14kK86mEfx
 - 原视频链接：https://www.youtube.com/watch?v=hyYCn_kAngI
 - 发布时间：发布时间**: 2026-07-21 21:17:19
-- 字幕数量：2
+- 字幕数量：1
 - 提纲图数量：1
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_how-to-get-your-first-customers-opus4-8.srt)
-- [字幕 2](subtitles/02_how-to-get-your-first-customers-opus4-8.srt)
+- [字幕 1](subtitles/01_术语统一-去多余标点版.srt)
 
 ## 中文时间轴
 

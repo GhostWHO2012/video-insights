@@ -7,13 +7,12 @@
 - B站链接：https://www.bilibili.com/video/BV1PTGG6gEky
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-01 21:45:11
-- 字幕数量：2
+- 字幕数量：1
 - 提纲图数量：12
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_jensen-huang-the-mindset-that-built-nvidia-opus4-8-no-en.srt)
-- [字幕 2](subtitles/02_jensen-huang-the-mindset-that-built-nvidia-opus4-8.srt)
+- [字幕 1](subtitles/01_有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

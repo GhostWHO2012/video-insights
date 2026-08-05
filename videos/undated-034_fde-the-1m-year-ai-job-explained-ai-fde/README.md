@@ -7,12 +7,15 @@
 - B站链接：https://www.bilibili.com/video/BV1MFK867Ei5
 - 原视频链接：https://www.youtube.com/watch?v=zXysLUTLjw4
 - 发布时间：发布时间**: 2026-07-21 15:18:40
-- 字幕数量：1
+- 字幕数量：4
 - 提纲图数量：2
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_术语统一-去多余标点版.srt)
+- [字幕 1](subtitles/01_fde-the-1m-year-ai-job-explained-opus4-8-fde.srt)
+- [字幕 2](subtitles/02_fde-the-1m-year-ai-job-explained-opus4-8-fde.srt)
+- [字幕 3](subtitles/03_how-to-talk-to-users-opus4-8.srt)
+- [字幕 4](subtitles/04_how-to-talk-to-users-opus4-8.srt)
 
 ## 中文时间轴
 

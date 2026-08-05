@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_Harness Engineering How to Build Software When Humans Steer, Agents Execute — Ry.srt)
+- [字幕 1](subtitles/01_harness-engineering-how-to-build-software-when-humans-st.srt)
 
 ## 中文时间轴
 

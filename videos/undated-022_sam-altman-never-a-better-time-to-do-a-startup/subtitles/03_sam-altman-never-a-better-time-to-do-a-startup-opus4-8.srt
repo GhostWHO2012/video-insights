@@ -1,0 +1,3069 @@
+1
+00:00:07,750 --> 00:00:09,310
+Sam，谢谢你来。
+Sam, thanks for joining us.
+
+2
+00:00:10,150 --> 00:00:11,030
+这场面真不小。
+This is something.
+
+3
+00:00:11,830 --> 00:00:13,710
+比早年的 Startup School 大多了。
+This is like a lot bigger than the earlier startup schools.
+
+4
+00:00:13,990 --> 00:00:17,630
+是啊，现在的创业公司比以往任何时候都大得多。
+Yeah, I mean, startups are a lot bigger now than they have ever been.
+
+5
+00:00:17,670 --> 00:00:21,990
+所以它们更大了。
+So, I mean, they've bigger.
+
+6
+00:00:22,190 --> 00:00:26,457
+它们比以往任何时候都大，正是因为你对 AGI 的那份愿景，
+They're bigger than they've ever been because of the vision that you had for AGI,
+
+7
+00:00:26,457 --> 00:00:30,470
+所以我觉得现在会是世界上最适合创业的时候，
+which is why, I think this is gonna be the best time in the world to do a startup
+
+8
+00:00:30,470 --> 00:00:32,890
+接下来会非常精彩。
+and it's it's going to be quite amazing to see.
+
+9
+00:00:33,730 --> 00:00:36,428
+那我想先从这个说起，
+So I wanted to start with, you know,
+
+10
+00:00:36,428 --> 00:00:42,475
+2005 年，你是 Y Combinator（YC）第一批创业者之一，
+a time and place which is you were in the very first batch of Y Combinator in 2005
+
+11
+00:00:42,475 --> 00:00:46,010
+做了一家叫 Loopt 的位置分享公司。
+with location sharing company called Loopt.
+
+12
+00:00:47,050 --> 00:00:51,330
+关于那段你还记得什么，你最喜欢的 Paul Graham（PG）故事是什么？
+What do you remember about that and what was your best PG, Paul Graham, story?
+
+13
+00:00:52,530 --> 00:00:57,836
+我觉得那时候和现在差得不能再远了，
+I think if it were possible to get as like far from this moment as, like,
+
+14
+00:00:57,836 --> 00:01:02,410
+你想想，那会儿创业一点都不酷。
+I can imagine it was, you know, startups were not cool at all.
+
+15
+00:01:02,850 --> 00:01:08,603
+我们像躲在 Cambridge 的一栋小楼里。
+We were like hiding out in this little building in Cambridge.
+
+16
+00:01:08,603 --> 00:01:12,890
+PG 给我们做晚饭，你知道当时——
+PG was making us dinner and you know what took.
+
+17
+00:01:14,710 --> 00:01:17,851
+那时候要花三个月才能做出来的东西，每家公司，
+3 months to build at the time that we, each company,
+
+18
+00:01:17,851 --> 00:01:23,910
+整个 YC 期间做出来的东西，现在一个编程 agent 大概七分钟就能搞定。
+built over the whole YC startup could now be done with like in like seven minutes by a coding agent.
+
+19
+00:01:24,710 --> 00:01:27,590
+而这才不过二十年前。
+And it was only, I mean, only 20, 20 years ago.
+
+20
+00:01:27,990 --> 00:01:33,537
+我觉得现在创业公司能做到的事，
+Uh, and I think that the difference in what's possible for a startup now,
+
+21
+00:01:33,537 --> 00:01:37,050
+一家创业公司能挑战的东西，真的不一样。
+what a startup can take on, you know, it's pot.
+
+22
+00:01:37,050 --> 00:01:39,311
+是啊，你可以选择难过，觉得，天啊，
+Yeah. I think you could either be sad and be like, oh, man,
+
+23
+00:01:39,311 --> 00:01:40,850
+一条 Codex prompt 就顶一整家创业公司。
+like a codex prompt is a whole startup.
+
+24
+00:01:40,930 --> 00:01:44,570
+或者你可以想，我可以去创办世界上最有雄心、最疯狂的公司。
+Or you could be like, I can go start the world's most ambitious, crazy company.
+
+25
+00:01:44,690 --> 00:01:47,309
+我可以让各个领域的专家一起协作。
+I can have, like, experts in every field working together.
+
+26
+00:01:47,309 --> 00:01:50,570
+我可以做那些以前根本不可能的硬科技。
+I can do these very hard technological things that were just impossible.
+
+27
+00:01:51,300 --> 00:01:54,180
+那会非常棒。但当年完全不是这种感觉。
+Um, and it's gonna be amazing. But at the time it felt nothing like that.
+
+28
+00:01:54,780 --> 00:01:57,460
+当时想把任何东西做成都非常难。
+And it was very difficult to get anything to work.
+
+29
+00:01:58,940 --> 00:02:03,564
+我觉得 Paul Graham 大概是过去几十年创业领域里
+I think Paul Graham is probably the most important force in startups of the last few
+
+30
+00:02:03,564 --> 00:02:06,580
+最重要的力量，毫无疑问。对，毫无疑问。
+decades. And without question. Yes, no question. Um.
+
+31
+00:02:12,060 --> 00:02:16,631
+我关于 Paul Graham 的记忆是，我们每周都会去，
+And, and my kind of Paul Graham memory is we would all, every week come,
+
+32
+00:02:16,631 --> 00:02:20,020
+我记得是周二，他会亲自下厨。
+I think it was on Tuesdays, and he would like cook up.
+
+33
+00:02:20,540 --> 00:02:24,588
+他会亲自给我们做晚饭，我们进门时都觉得特别没希望、
+He himself would cook us dinner and we would all walk in feeling like very hopeless
+
+34
+00:02:24,588 --> 00:02:25,540
+特别沮丧。
+and very dejected.
+
+35
+00:02:26,220 --> 00:02:28,024
+当时一共有八家公司，
+And we would, there were eight companies
+
+36
+00:02:28,024 --> 00:02:29,881
+到最后我们各自回家时，
+and then we would all go home at the end of it
+
+37
+00:02:29,881 --> 00:02:33,118
+他已经说服了我们每个人，觉得自己的创业公司马上就要
+and he had convinced like each of us that our startups were about to, like,
+
+38
+00:02:33,118 --> 00:02:37,402
+统治世界了。我们会成为下一个 Google 什么的，
+take over the world. And we're gonna be, like, you know, the next Google or whatever,
+
+39
+00:02:37,402 --> 00:02:41,802
+那时候可能是 Facebook。这种能力，
+Facebook maybe at the time. And that ability to sort of, like,
+
+40
+00:02:41,802 --> 00:02:48,149
+从无到有创造出乐观、势头和信念，是 PG 真正的绝活。
+create optimism and momentum and belief out of nothing was like a real PG special.
+
+41
+00:02:48,589 --> 00:02:51,071
+早年 YC 看起来像个糟糕的主意，
+And in the early days when YC seemed like a terrible idea
+
+42
+00:02:51,071 --> 00:02:54,254
+创业看起来是个坏主意，尤其是那种
+and startups seemed like a bad idea, and certainly startups that were,
+
+43
+00:02:54,254 --> 00:02:58,030
+全是年轻技术型创始人、没有商业人士的创业，看起来更是糟透了。
+like young technical founders with no business people seemed like a terrible idea.
+
+44
+00:02:58,710 --> 00:03:04,648
+PG 就这么硬生生把它变成了现实，但这也需要一个真正——
+PG just sort of like wielded in to existence, but it also takes someone who actually,
+
+45
+00:03:04,648 --> 00:03:09,398
+我是说，你是出了名的行动力极强的人，
+I mean, you're sort of famously par excellence, an agentic person,
+
+46
+00:03:09,398 --> 00:03:12,960
+早在我们开始谈 agents 之前就是这样。
+like even before we thought about agents, period.
+
+47
+00:03:13,000 --> 00:03:16,155
+我记得 Paul 写过，
+I mean, you just, I remember Paul wrote, I mean,
+
+48
+00:03:16,155 --> 00:03:20,605
+今天甚至还在 X 上被转来转去，Paul 在
+it's making the rounds on X today even that Paul wrote in the early,
+
+49
+00:03:20,605 --> 00:03:22,628
+2000 年代后期写道，
+in the late 2000s that you would be,
+
+50
+00:03:22,628 --> 00:03:26,430
+你是他见过的前五名创业者之一。
+you were one of the top five entrepreneurs he'd ever met.
+
+51
+00:03:27,790 --> 00:03:31,580
+他这么说太客气了。我觉得，跟很多二十来岁的人一样，
+That was very nice of him to say. Um, I, I think like many 20 year olds,
+
+52
+00:03:31,580 --> 00:03:34,810
+我有很多精力，也有很大的雄心，
+I had like a lot of energy and a lot of ambition,
+
+53
+00:03:34,810 --> 00:03:39,230
+但很没方向，也不确定该做什么。
+but it was sort of very not directed and I wasn't sure what to do.
+
+54
+00:03:40,310 --> 00:03:42,390
+Paul 以前常说一件事，
+Paul had this thing he used to say of like, uh,
+
+55
+00:03:42,390 --> 00:03:44,470
+做一个好的创业投资人这件事，
+the the job of being a good startup investor.
+
+56
+00:03:46,020 --> 00:03:48,860
+是一种老师，但不是我们通常想的那种老师。
+Is a teacher, but it's a kind of teacher we don't usually use.
+
+57
+00:03:48,980 --> 00:03:52,265
+我们通常觉得老师就是讲课的人，
+Like we usually think of teacher as someone who like gives a lecture
+
+58
+00:03:52,265 --> 00:03:56,020
+但靠给别人讲一堂创业课，其实帮不了他多少。
+and you can't help someone that much by like giving a lecture about a startup.
+
+59
+00:03:56,260 --> 00:03:59,554
+还有另一种老师，像飞行教练那样，
+There's another kind of teacher, which is like a flight instructor, the person who,
+
+60
+00:03:59,554 --> 00:04:02,900
+坐在你旁边说，做这个，别做那个。这样管用，这样不行。
+like, sits next to you saying, like, do this, don't do this. That worked. This isn't.
+
+61
+00:04:03,020 --> 00:04:04,798
+你漏掉了那件事，或者你在犯这些错误
+You missed that thing or you're making these mistakes
+
+62
+00:04:04,798 --> 00:04:06,260
+我就跟你谈这一件事。
+and I'm just gonna talk to you about this one.
+
+63
+00:04:06,520 --> 00:04:09,623
+那种非常亲力亲为的方式，你知道的，
+And that very like hands on kind of, uh, you know,
+
+64
+00:04:09,623 --> 00:04:14,200
+就是告诉你该把这种布朗运动般的能量引向哪里。
+here's where to like direct this sort of like Brownian motion energy.
+
+65
+00:04:14,800 --> 00:04:16,520
+那对我来说非常重要。是的。
+That was very important to me. Yeah.
+
+66
+00:04:16,840 --> 00:04:22,438
+我想后来你成了 YC 的总裁，然后你，
+I, I guess later you, uh, came on to become president of YC and, um, you,
+
+67
+00:04:22,438 --> 00:04:26,202
+你把完全相同的能量带给了，
+you sort of brought exactly the same energy to,
+
+68
+00:04:26,202 --> 00:04:29,580
+这些年里许许多多的 YC 创始人。
+to a great many YC founders over the years.
+
+69
+00:04:31,400 --> 00:04:35,762
+那段时间有没有什么让你印象特别深的，
+Did you have anything like, did anything jump out at you from that time around,
+
+70
+00:04:35,762 --> 00:04:38,648
+你知道的，去接住某个非常，
+you know, taking this raw energy of someone really,
+
+71
+00:04:38,648 --> 00:04:43,480
+非常聪明但也许有点没方向的人的原始能量，然后把他们推向更强的主动性。
+really smart and maybe a little undirected and then driving them more towards agency.
+
+72
+00:04:44,320 --> 00:04:45,240
+是的，我。
+Yeah, I.
+
+73
+00:04:45,760 --> 00:04:48,489
+首先，我热爱创业公司。我觉得不是每个人，
+So first of all, I love startups. I think not everyone,
+
+74
+00:04:48,489 --> 00:04:50,065
+创业公司并不适合所有人，
+they're not like for everyone,
+
+75
+00:04:50,065 --> 00:04:53,717
+但我觉得创业公司是整个商业世界里最酷的东西。嗯，
+but I think startups are the coolest thing in all of business. Um,
+
+76
+00:04:53,717 --> 00:04:56,355
+我觉得创业公司真的是那个最关键的东西，
+I think startups are really like the main thing
+
+77
+00:04:56,355 --> 00:04:59,770
+让经济不至于陷入停滞。
+that keeps the economy from becoming stagnant.
+
+78
+00:05:00,290 --> 00:05:02,488
+嗯，我觉得大公司就是会，
+Um, I think companies do just, like,
+
+79
+00:05:02,488 --> 00:05:07,250
+不断滑向平庸，而创业公司会永远保持重要。
+drift towards suckiness and startups will continue to be important forever.
+
+80
+00:05:07,330 --> 00:05:11,122
+事实上，如果我们对 AI 会带来这么大变革的判断是对的，
+In fact, if if we are right that AI is going to be such a big change,
+
+81
+00:05:11,122 --> 00:05:14,198
+那创业公司会更加重要，去确保
+startups will be much more important to making sure
+
+82
+00:05:14,198 --> 00:05:19,134
+这项技术的能力能广泛分布到整个经济
+that the power of this technology gets widely distributed throughout the economy
+
+83
+00:05:19,134 --> 00:05:23,712
+和社会中，而不只是集中在少数几家公司或模型里。所以我，
+and society and it's not just concentrated in a few companies or models. So I,
+
+84
+00:05:23,712 --> 00:05:27,092
+我觉得创业公司是一件难以置信地酷、有趣、
+I think startups are. This like unbelievably cool, fun,
+
+85
+00:05:27,092 --> 00:05:30,400
+极其痛苦和艰难但又美好的事。
+extremely painful and difficult but wonderful thing.
+
+86
+00:05:31,000 --> 00:05:37,580
+我觉得运营 YC 的工作很大一部分，就是你有点像
+And I think a big part of job, the job of running YC is you are kind of the like
+
+87
+00:05:37,580 --> 00:05:42,110
+创业运动的非官方旗手。
+unofficial flag bearer for the startup movement.
+
+88
+00:05:43,390 --> 00:05:48,230
+你知道的，创业公司有很多，创业的方式也有很多。
+You know, like there there's lots of startups. There's lots of ways to do a startup.
+
+89
+00:05:48,310 --> 00:05:50,601
+你显然不是非得做 YC，
+You obviously don't need to do YC,
+
+90
+00:05:50,601 --> 00:05:55,510
+但它一直对公司帮助巨大，是一股非常强大的力量。
+but it has always been a huge help to companies and a very powerful force.
+
+91
+00:05:55,990 --> 00:05:59,100
+所以从 PG 开始，再到我们所有人，你知道的，
+And so starting with PG and then all of us like, you know,
+
+92
+00:05:59,100 --> 00:06:03,021
+我们得让 YC 成功，但我觉得我们真的得，
+we have to like make YC successful, but I think we really have to, like,
+
+93
+00:06:03,021 --> 00:06:07,415
+为创业公司为什么重要、人们为什么该考虑创业而奋力争取，
+fight for why startups are important and why people should consider startups
+
+94
+00:06:07,415 --> 00:06:10,390
+并帮助把相对更多的权力放到创始人手里。
+and help put like relatively more power in the hands.
+
+95
+00:06:10,390 --> 00:06:12,579
+放到创始人手中，鼓励更多人去创业。
+Of founders and encourage more people to start them.
+
+96
+00:06:12,579 --> 00:06:14,270
+而这其实效果非常好。
+And that's actually worked really well.
+
+97
+00:06:14,390 --> 00:06:18,310
+回想 YC 早期的时候，那时候是这样的。
+I think thinking back to the early days of YC, it was like.
+
+98
+00:06:20,500 --> 00:06:23,300
+相对于投资人，做创始人的杠杆非常小。
+Very little leverage in being a founder relative to an investor.
+
+99
+00:06:23,780 --> 00:06:28,220
+而那种转变，你知道的，我觉得对投资人其实也是好事。
+And that shift, you know, I think that's even been good for the investors.
+
+100
+00:06:28,660 --> 00:06:31,220
+我觉得对整个创业生态来说都好得多。
+I think it's just been like much better for the whole startup ecosystem.
+
+101
+00:06:31,660 --> 00:06:35,742
+所以我在 YC 主要想做的，就是推动更多创业，
+So mostly what I tried to do at YC was just push for more startups
+
+102
+00:06:35,742 --> 00:06:38,725
+鼓励人们去考虑创业，
+and encourage people to think about startups
+
+103
+00:06:38,725 --> 00:06:43,278
+想清楚我们能做什么来帮助创始人，帮助让创业公司
+and figure out what we could do to help founders and help make startups
+
+104
+00:06:43,278 --> 00:06:46,340
+和创业生态尽可能变得更好。
+and the startup ecosystem as good as possible.
+
+105
+00:06:47,140 --> 00:06:51,948
+其中肯定有一部分是推动人们拥有更大的雄心、去做更大的尝试，
+Definitely part of that was pushing people towards more ambition and bigger swings,
+
+106
+00:06:51,948 --> 00:06:54,860
+但相比现在，那感觉就像小联盟。
+but it feels like the minor leagues relative to now.
+
+107
+00:06:55,580 --> 00:07:00,344
+我觉得你是真正把硬科技以一种宏大方式
+I mean, I think you were one of the people who really brought hard tech to YC in a
+
+108
+00:07:00,344 --> 00:07:01,460
+带进 YC 的人之一。
+really grand way.
+
+109
+00:07:02,040 --> 00:07:07,080
+而我们现在在 YC 看到的一件事是，那个比例，你知道的，
+And then one of the things we're seeing at YC now is that number was, you know,
+
+110
+00:07:07,080 --> 00:07:11,640
+很多年里大概是 5% 或 10%，而现在我们到了 15%、20%、25%。
+maybe 5 or 10% for many years and then now we're getting to 15, 20, 25%.
+
+111
+00:07:12,240 --> 00:07:17,400
+我认为这背后是因为用 AI agents 变得容易多了。
+Uh, I would argue on the back of how much easier it is, uh, to use agents.
+
+112
+00:07:17,600 --> 00:07:19,160
+是的，成本在下降。
+Yeah, cost coming down.
+
+113
+00:07:20,960 --> 00:07:23,711
+我觉得有雄心的创业公司永远很棒，
+I, I think like ambitious startups are always awesome
+
+114
+00:07:23,711 --> 00:07:26,461
+硬科技创业公司对很多人很有吸引力，
+and hard tech startups are appealing to a lot of people
+
+115
+00:07:26,461 --> 00:07:29,640
+但它们很难，一直都很难，将来也还是会很难。
+but they're hard or they've been hard, they still will be hard.
+
+116
+00:07:30,000 --> 00:07:33,900
+但你现在能用来去做一个真正有雄心的项目的东西，
+But what you can do now to go take on a really ambitious project,
+
+117
+00:07:33,900 --> 00:07:36,900
+就好比你可以把
+like in the same way that you can make the startup
+
+118
+00:07:36,900 --> 00:07:41,850
+我们当年不停干了三个月才做出来的创业成果，用三个月的工作
+that took us three months of nonstop work in 17 seconds with three months of work
+
+119
+00:07:41,850 --> 00:07:46,200
+加上大量 AI agents，在 17 秒内做出来，你能做出难以置信的事。所以我觉得我们会。
+and a lot of agents, you can do unbelievable things. So I think we will.
+
+120
+00:07:46,200 --> 00:07:49,304
+迎来一个创业的黄金时代，人们会说，
+See a golden age of startups where people are like,
+
+121
+00:07:49,304 --> 00:07:51,299
+你知道，我要去做一些事
+you know what I'm gonna do things
+
+122
+00:07:51,299 --> 00:07:55,363
+这些事对一家创业公司来说本来是完全不可能的
+that would have been completely impossible for a startup to even,
+
+123
+00:07:55,363 --> 00:07:58,910
+一年前在 YC 那个时间点，连想都不敢想
+like dream at a year ago in in sort of like the YC time frame.
+
+124
+00:07:59,070 --> 00:08:00,670
+我是说，这其实是个非常大的思维转变
+I mean that's actually a really big reframe.
+
+125
+00:08:00,750 --> 00:08:05,250
+我是说，就算在这个房间里，可能也有人会担心
+I mean, there are probably people even in this room who might be worried that, well,
+
+126
+00:08:05,250 --> 00:08:07,533
+随取随用的智能意味着
+intelligence on tap means that, you know,
+
+127
+00:08:07,533 --> 00:08:12,033
+他们可能看着 Loopt 或者我的创业公司 Posterous，心想
+they might be looking at a Loopt or my startup, Posterous, and they're like, well,
+
+128
+00:08:12,033 --> 00:08:19,390
+我没法再创办那样的公司了。但各位，那其实已经是很久以前的事了
+I can't start that company anymore. But guys, that was like a long time ago, actually, man.
+
+129
+00:08:19,590 --> 00:08:23,073
+现在流传着这样一种说法
+There's this whole meme going around which is like, you know,
+
+130
+00:08:23,073 --> 00:08:27,238
+你必须加入一个 frontier lab，否则你就会成为永久底层阶级的一员
+you have to join a frontier lab or you're gonna be a member of the permanent
+
+131
+00:08:27,238 --> 00:08:31,706
+这种说法太蠢了。因为大家说
+underclass because it's so dumb. Um, because there's gonna be like, you know,
+
+132
+00:08:31,706 --> 00:08:34,230
+创业已经完了，创业没有经济价值了
+startups are over and there's like no economic value.
+
+133
+00:08:34,890 --> 00:08:34,930
+我
+I.
+
+134
+00:08:37,050 --> 00:08:41,133
+这不是真的。我是说，如果真是那样，这世界就彻底完蛋了
+That's not true. I mean, if that were true, the world is like totally fucked
+
+135
+00:08:41,133 --> 00:08:42,570
+那会是一个非常糟糕的世界
+and it's a very bad place.
+
+136
+00:08:43,010 --> 00:08:47,628
+但我敢打赌，今天创办的普通创业公司会是这样
+But it's I I would bet that the average startups created today will be like,
+
+137
+00:08:47,628 --> 00:08:52,246
+我敢打赌，这个房间里就坐着未来的万亿富翁，我还敢打赌
+I bet there's some future trillionaire sitting in this room and I would bet
+
+138
+00:08:52,246 --> 00:08:56,024
+今天创办的创业公司会有价值得多
+that the startups created today will be much more valuable.
+
+139
+00:08:56,024 --> 00:08:59,650
+比过去的创业公司更有影响力得多，而且我
+Much more impactful than startups of the past, and I kind.
+
+140
+00:09:01,070 --> 00:09:04,320
+大家现在稍微能看清这一点了。我是说，曾经有一段时间
+People see that a little bit more now. I mean, there was this period where like,
+
+141
+00:09:04,320 --> 00:09:06,350
+AI 会不会直接把整个经济搞崩？
+are is AI just going to break the whole economy?
+
+142
+00:09:06,830 --> 00:09:10,230
+我觉得大家现在基本已经度过了那种震惊反应
+And I think people are like mostly over the sort of shock response of that.
+
+143
+00:09:11,030 --> 00:09:13,865
+但确实曾经有那么一段时间
+But there was like, yeah, definitely a time, you know,
+
+144
+00:09:13,865 --> 00:09:17,835
+每一届 YC 项目，我都很想看看
+come every YC batch and I'll be interested to see how the kind of like level of
+
+145
+00:09:17,835 --> 00:09:19,851
+焦虑和雄心的比重是怎么变化的
+anxiety versus ambition was trending
+
+146
+00:09:19,851 --> 00:09:23,758
+感觉它经历过一个很大的低谷，那时大家会说
+and it feel like it went through this like big trough where people are like,
+
+147
+00:09:23,758 --> 00:09:25,900
+完了，模型就要
+you know, it's over. The models are just.
+
+148
+00:09:25,900 --> 00:09:28,700
+把一切都吞掉。而现在又回到了那种“我们干吧”的状态
+Going to eat everything. So now it's back towards like, let's go do it.
+
+149
+00:09:29,300 --> 00:09:33,700
+有哪些具体可操作的东西？比如硬科技，我听到
+What are some practical things here? I mean, hard tech, for instance, I was hearing,
+
+150
+00:09:33,700 --> 00:09:35,271
+在某次休息时
+you know, at one of the breaks,
+
+151
+00:09:35,271 --> 00:09:39,900
+有人问，我该不该去读个 PhD？学历有多重要？
+someone was asking, like, should I go get my PhD? How important are credentials?
+
+152
+00:09:41,930 --> 00:09:43,811
+你会怎么回答这个问题？
+You know, how would you answer that?
+
+153
+00:09:43,811 --> 00:09:47,010
+尤其是那些想做这些更硬核技术的人？我
+Especially people who want to do these harder tech things? I.
+
+154
+00:09:50,410 --> 00:09:53,177
+先说一个总体上的观察
+Well, as a general observation first,
+
+155
+00:09:53,177 --> 00:09:58,969
+我觉得当技术格局变化得非常快时，创业公司往往会胜出
+I think startups tend to win when the sort of technology landscape is moving very
+
+156
+00:09:58,969 --> 00:10:01,649
+当成本在下降时
+quickly, when costs are coming down,
+
+157
+00:10:01,649 --> 00:10:07,010
+当迭代周期很短时，而这些现在正在同时发生
+when cycle times are short and all of those things are happening right now.
+
+158
+00:10:07,650 --> 00:10:12,368
+所以如果你回看过去创业公司集中涌现的那些时期
+So if you look at when there have been the great clusters of startups in the past,
+
+159
+00:10:12,368 --> 00:10:16,585
+有互联网热潮，大概是 98、99 年那会儿
+you know, there was the internet boom and whatever that was like 99, 98,
+
+160
+00:10:16,585 --> 00:10:18,730
+99 年，那时很多新东西变得可能
+99 when new things became possible.
+
+161
+00:10:19,650 --> 00:10:23,650
+还有一个小一点的版本，大家基本上是在 Facebook 应用之上做开发
+There was another version of a mini version of people building on top of basically
+
+162
+00:10:23,650 --> 00:10:26,797
+还有另一个大的版本
+like Facebook apps. There was then another big version
+
+163
+00:10:26,797 --> 00:10:28,850
+就是 iPhone App Store 上线的时候
+when the iPhone App Store launched.
+
+164
+00:10:30,590 --> 00:10:33,900
+但优秀的创业公司往往集中出现在生态系统转变时
+But the great startups tend to cluster when the ecosystem shifts
+
+165
+00:10:33,900 --> 00:10:36,230
+而且在位者失去大量优势的时候
+and incumbents lose a lot of their advantage.
+
+166
+00:10:36,630 --> 00:10:40,855
+再加上这种成本和迭代周期的变化
+And then also when you have these like cost and cycle time change,
+
+167
+00:10:40,855 --> 00:10:43,750
+就这些因素而言，此刻感觉非常重大
+this moment feels very big for those things.
+
+168
+00:10:44,550 --> 00:10:47,273
+它还有你刚才提到的另一点
+It also has this other thing that you were talking about,
+
+169
+00:10:47,273 --> 00:10:50,750
+就是很多传统上很难获得的专业能力
+which is a lot of the traditional things that were hard to get expertise.
+
+170
+00:10:51,810 --> 00:10:55,536
+比如去雇到那些优秀的人
+You know, the ability to go like hire excellent people that were,
+
+171
+00:10:55,536 --> 00:10:59,330
+能做你需要的特定事情的人，这一点已经真正改变了
+that could do specific things you needed, that's really shifted.
+
+172
+00:10:59,610 --> 00:11:04,970
+在过去几个月里，我看到很多人，他们基本上是
+And in the last few months, I have seen a lot of people who just kind of grew up
+
+173
+00:11:04,970 --> 00:11:07,823
+这几年伴着 AI 长大的，他们会说
+using AI the last few years who are like,
+
+174
+00:11:07,823 --> 00:11:13,615
+我可以用一整套 agents 加上我们四个人，把整家创业公司自动化
+I can kind of automate an entire startup of agents and four of us, four people and,
+
+175
+00:11:13,615 --> 00:11:18,110
+再加上这么多算力。我觉得我们会看到更多
+you know, all this compute. And I think we're going to see much.
+
+176
+00:11:18,110 --> 00:11:20,666
+这样的情况。显然，品味和主动性
+More of that. I clearly like taste and agency
+
+177
+00:11:20,666 --> 00:11:23,430
+以及对商业底层逻辑的理解
+and understanding of kind of like the physics of
+
+178
+00:11:23,430 --> 00:11:27,757
+比如在哪里能建起一家有价值的公司、该怎么思考
+business, like where you can build up a valuable business, how to think,
+
+179
+00:11:27,757 --> 00:11:32,950
+什么才算好的网络效应、好的护城河，而不是假护城河
+what about like a good network effect or sort of a good moat looks like versus a fake one.
+
+180
+00:11:34,150 --> 00:11:37,190
+但我敢打赌，这总体上会
+But I would, I would bet that this generally will cut.
+
+181
+00:11:38,330 --> 00:11:42,810
+而不是看重多年经验，更看重那些非常熟练使用这些工具的人。
+Against many years of experience in favor of people who have a lot of fluency with the tools.
+
+182
+00:11:44,810 --> 00:11:50,119
+我想聊聊 OpenAI 的开端，它其实最初
+I guess, I want to get into the beginning of OpenAI and that it actually started
+
+183
+00:11:50,119 --> 00:11:55,862
+是作为 YC Research 在研究这个想法。这算是个挺疯狂的想法，
+as YC Research looking at this idea. I mean, kind of a crazy idea that, you know,
+
+184
+00:11:55,862 --> 00:12:02,400
+你和一群杂牌军决定要把一生投入到创造 AGI 上。
+you and a ragtag crew decided you were going to dedicate our lives to this creation of AGI.
+
+185
+00:12:02,800 --> 00:12:07,075
+但在今天听起来，这好像已成定局，对吧？是啊。
+But at, you know, today it sounds fait accompli, right? Yeah.
+
+186
+00:12:07,075 --> 00:12:10,680
+但你刚开始的时候完全不是这种感觉。
+But that really wasn't how it felt when you started.
+
+187
+00:12:11,920 --> 00:12:16,760
+这很难，因为现在这几乎是大家唯一想谈的事。
+It's really hard because it now it like is the only thing people want to talk about.
+
+188
+00:12:17,000 --> 00:12:19,356
+很难想起当时到底是什么样子。
+It's really hard to remember what it was like.
+
+189
+00:12:19,356 --> 00:12:22,085
+甚至连我自己都很难回忆起来，除非
+It's even hard for me to remember this without, like,
+
+190
+00:12:22,085 --> 00:12:25,657
+翻出十年前的笔记，那时候大家都在说，
+finding notes from the time 10 years ago when everyone was like,
+
+191
+00:12:25,657 --> 00:12:30,172
+他们不仅错在认为有可能造出 AGI，
+not only are they wrong about saying they think it might be possible to build AGI,
+
+192
+00:12:30,172 --> 00:12:33,650
+而且他们还会，凭一己之力再引发一次 AI winter。
+but they're gonna. They're single handedly gonna cause another AI winter.
+
+193
+00:12:33,810 --> 00:12:38,474
+说我们又错、又不负责任、又糟糕。呃，然后，
+It's they're wrong and irresponsible and bad. Um, it, and, and,
+
+194
+00:12:38,474 --> 00:12:40,410
+也许我最重要的，
+and maybe like my highest.
+
+195
+00:12:42,810 --> 00:12:48,565
+我给你们所有人最重要的建议就是，去找到那些
+Order. But like my highest bit of advice to all of you is find the things
+
+196
+00:12:48,565 --> 00:12:52,960
+你能建立起合理信念的东西，
+that you can develop like reasonable conviction in
+
+197
+00:12:52,960 --> 00:12:58,990
+而主流常识认定它们就是错的，
+that people decide like the conventional wisdom is they're just wrong
+
+198
+00:12:58,990 --> 00:13:05,532
+并且能接受这需要很长时间，接受别人非常，
+and be okay with it taking a long time and having people be like very, you know,
+
+199
+00:13:05,532 --> 00:13:10,543
+让人抓狂地错了好几年、一直不屑一顾。在 OpenAI，我觉得
+very frustratingly wrong and dismissive for years at OpenAI. I felt.
+
+200
+00:13:10,543 --> 00:13:13,740
+我们像是知道了世界上最大的秘密。
+Like we knew the biggest secret in the world.
+
+201
+00:13:14,820 --> 00:13:16,060
+每个人都在骂我们是白痴。
+Everybody was calling us an idiot.
+
+202
+00:13:16,580 --> 00:13:21,860
+呃，而我们有越来越多的数据点让自己相信我们没有妄想。
+Uh, and we had increasing data points to convince ourselves we weren't delusional.
+
+203
+00:13:22,780 --> 00:13:27,060
+那真的很让人沮丧，极其让人沮丧。
+And it was very frustrating. It was extremely frustrating.
+
+204
+00:13:28,220 --> 00:13:30,751
+但回头看，那其实是一份不可思议的双重礼物，
+But it looking back, it was like an incredible double gift
+
+205
+00:13:30,751 --> 00:13:33,492
+因为这意味着我们没有那么多强大的竞争对手，
+because it meant we didn't have this like massive competitors
+
+206
+00:13:33,492 --> 00:13:36,760
+我们有时间做研究、做产品、打造我们的公司。
+and we had time to do our research and build our stuff and build our company.
+
+207
+00:13:37,200 --> 00:13:45,400
+呃，后来我发现很多公司在不同方面都是这样。
+Um, and I've since noticed that this is the case for like a a lot of companies in different ways.
+
+208
+00:13:45,880 --> 00:13:48,738
+他们最终去做了一件事，而别人，
+They they end up doing something that other people
+
+209
+00:13:48,738 --> 00:13:53,160
+比如领域或行业里的专家，都坚信那是个非常糟糕的主意。
+that like experts in the field or the industry are convinced is a very bad idea.
+
+210
+00:13:55,320 --> 00:13:59,520
+而另一面是，如果你做的创业公司和所有人一样，
+And on the other side of this, if you're starting the same startup as everybody else,
+
+211
+00:13:59,520 --> 00:14:02,460
+你会得到很多热度，也能融到很多钱，
+it's like you get a lot of hype and you can raise a lot of money
+
+212
+00:14:02,460 --> 00:14:06,060
+但这类事很少会成为那种巨大的机会、
+but it's it's sort of like those are much less frequently the big option,
+
+213
+00:14:06,060 --> 00:14:08,309
+那种巨大的结果。所以如果我是你们，
+the big outcomes. So if I were. You all,
+
+214
+00:14:08,309 --> 00:14:11,543
+我会去想清楚，那个真正巨大又全新的东西是什么，
+I would figure out what the really big brand new thing is
+
+215
+00:14:11,543 --> 00:14:15,150
+是现在有可能、而几年前还不可能的。
+that is possible now that wasn't possible a few years ago.
+
+216
+00:14:15,430 --> 00:14:17,940
+对我们来说，那时候没有哪个 AI 真的能用，
+In our case, it was no AI had really been working
+
+217
+00:14:17,940 --> 00:14:22,510
+然后深度学习的神奇时刻出现了，而世界并没有足够地更新认知。
+and then the deep learning magic moment happened and the world didn't update enough.
+
+218
+00:14:22,870 --> 00:14:25,284
+世界，这又是一句经典的 PG 名言。
+The world, this is another great PGism.
+
+219
+00:14:25,284 --> 00:14:28,868
+世界不懂怎么去直觉地理解指数增长，
+The world does not understand how to intuit exponentials,
+
+220
+00:14:28,868 --> 00:14:32,587
+所以他们错过了这一次。现在肯定有新的指数曲线正在形成。
+and so they missed this one. There's gotta be new exponentials forming right now.
+
+221
+00:14:32,587 --> 00:14:33,790
+我不知道它们是什么。
+I don't know what they are.
+
+222
+00:14:34,059 --> 00:14:35,653
+但如果你能想清楚，
+But if you can figure those out and
+
+223
+00:14:35,653 --> 00:14:38,557
+如果你能基于更多数据建立起持续的信念，
+if you can develop continuing conviction based on more data,
+
+224
+00:14:38,557 --> 00:14:41,859
+那就庆幸世界现在还不懂吧，他们终究会懂的。
+be grateful that the world doesn't understand they will eventually.
+
+225
+00:14:42,099 --> 00:14:45,089
+这就像一种巨大的超能力。听起来在你的历程里，
+This is like a huge superpower. It sounds like in your journey,
+
+226
+00:14:45,089 --> 00:14:47,619
+有几件不同的事情叠加在了一起。
+there were like a few different things that stacked.
+
+227
+00:14:47,819 --> 00:14:51,326
+也许第一件事就是相信 AGI 是有可能造出来的，
+Maybe the first one was even that AGI was possible to be built
+
+228
+00:14:51,326 --> 00:14:54,833
+以及找到其他也相信这件事的人，
+and finding other people who believed that thing, you know,
+
+229
+00:14:54,833 --> 00:14:58,690
+很多人不相信这可能，其实并不重要。
+it didn't matter that lots of people didn't think it was possible.
+
+230
+00:14:58,890 --> 00:15:02,770
+重要的是你找到了那些真正非常聪明、又确实相信这件事的人。
+It mattered that you found really, really smart people who did believe that.
+
+231
+00:15:03,330 --> 00:15:05,228
+是啊。我们以前开玩笑说，呃，
+Yeah. We used to joke that only, um,
+
+232
+00:15:05,228 --> 00:15:08,108
+全世界只有 50 个人相信 AGI 是可能的，
+50 people in the world believe that AGI was possible,
+
+233
+00:15:08,108 --> 00:15:10,730
+但没关系，因为其中 45 个都在 OpenAI 工作。
+but it was okay cause 45 of them worked at OpenAI.
+
+234
+00:15:11,370 --> 00:15:16,690
+呃，我觉得这差不多是真的。你并不需要很多人。
+Um, and I think that's kind of true. Like you don't need a ton of people.
+
+235
+00:15:17,290 --> 00:15:22,223
+呃，事实上，说这种离经叛道的话，可能正是那些人想要
+Uh, and in fact, saying the heretical thing was probably why those people wanted to
+
+236
+00:15:22,223 --> 00:15:23,510
+聚到一起的原因。
+like all be together.
+
+237
+00:15:24,070 --> 00:15:27,379
+所以再说一次，我觉得真正想清楚你相信什么，
+So, so again, I think like really figuring out what you believe,
+
+238
+00:15:27,379 --> 00:15:29,939
+愿意在很长时间里被人误解，
+being willing to be misunderstood for a long time
+
+239
+00:15:29,939 --> 00:15:33,279
+并把这群相信它的边缘人聚到一起。
+and bringing together the like crew of misfits that believes it.
+
+240
+00:15:33,279 --> 00:15:35,630
+早期的 YC 也是这样。
+That's also what YC was like in the early days.
+
+241
+00:15:37,790 --> 00:15:40,815
+在座的人可能会想，那个，
+One of the things that people in the room are probably thinking is like, well,
+
+242
+00:15:40,815 --> 00:15:45,210
+我相信这件事，但我还没找到同路人。这算是妄想吗？你说呢？
+I believe this thing, but I haven't found my people yet. Like, is that delusion? You know, what?
+
+243
+00:15:45,210 --> 00:15:48,760
+这会不会其实是你建议大家设置的一道门槛？
+Is that actually maybe even a gate that you would propose people have?
+
+244
+00:15:48,880 --> 00:15:51,178
+就是说，你得找到，
+It's like, well, you need to find, you know,
+
+245
+00:15:51,178 --> 00:15:54,560
+五个可能也相信这件事的人，哪怕只有一个联合创始人也行。
+five people who might believe that or even one like a co founder.
+
+246
+00:15:54,840 --> 00:15:59,680
+也许这就是我们在 YC 这么看重联合创始人的原因之一。
+You know, people maybe that's one of the explanations for why we like co founders at YC so much.
+
+247
+00:16:00,440 --> 00:16:04,222
+是的，我觉得如果你找不到任何一个和你信念一致的人，
+Yeah, I think if you can't find anybody else that shares your belief,
+
+248
+00:16:04,222 --> 00:16:06,080
+你就应该重视这一点。
+you should pay attention to that.
+
+249
+00:16:06,960 --> 00:16:11,207
+而且一个人创业非常难，也非常孤独，
+Um, and it's also very hard to do a startup on your own and very lonely
+
+250
+00:16:11,207 --> 00:16:14,240
+但我不认为你需要找很多人。
+but I don't think you need to find a lot of people.
+
+251
+00:16:14,360 --> 00:16:18,840
+事实上，如果每个人都相信它，那也是个不好的信号。
+And in fact, if everybody believes it, that's also like a bad, a bad sign.
+
+252
+00:16:19,120 --> 00:16:24,272
+这个问题，我不知道这是不是现在仍然限制更多
+Um, the question, I don't know if this is still what feels like the limiter on more
+
+253
+00:16:24,272 --> 00:16:26,502
+创业公司出现的因素，但五到十年前，
+startups, but five or 10 years ago,
+
+254
+00:16:26,502 --> 00:16:31,808
+感觉限制 YC 能资助多少创业公司的，是怎么
+what felt like was limiting the number of startups YC could fund is figuring out how
+
+255
+00:16:31,808 --> 00:16:36,960
+解决联合创始人匹配的问题。有很多真正有才华的人。
+to solve the cofounder matching problem. Like, a lot of really talented people.
+
+256
+00:16:36,960 --> 00:16:39,160
+但他们就是找不到自己的群体，找不到自己的同路人。
+And they just couldn't find their tribe. They couldn't find their people.
+
+257
+00:16:39,600 --> 00:16:42,704
+你知道，过去有件事很离经叛道，
+Um, you know, it used to be very heretical
+
+258
+00:16:42,704 --> 00:16:46,720
+就是 YC 告诉大家必须搬到 San Francisco。
+that YC told people they had to move to San Francisco.
+
+259
+00:16:47,680 --> 00:16:49,200
+现在回头看，这显然是对的。
+And looking back, it was clearly right.
+
+260
+00:16:49,720 --> 00:16:52,470
+我想，我不确定这在接下来十年是否还成立，
+And I think, I don't know if this is still going to be true for the next 10 years,
+
+261
+00:16:52,470 --> 00:16:55,893
+我猜会的。但如果你想找到一起创业的同路人，
+I suspect it will be. But the best thing you could do if you wanted to, like,
+
+262
+00:16:55,893 --> 00:16:58,710
+你能做的最好的事就是搬到 Bay Area。
+find your people to do a startup with was to move to the Bay Area.
+
+263
+00:16:59,590 --> 00:17:03,470
+就好像魔法发生了，你会遇到很多幸运的机会和碰撞。
+You just, like, magic happened. You got a lot of like lucky chances and collisions.
+
+264
+00:17:04,510 --> 00:17:07,550
+我仍然觉得这大概是个好建议，
+I still think that's probably good advice,
+
+265
+00:17:07,550 --> 00:17:12,870
+虽然我感觉现在对这点的直觉没那么强了。我还觉得，
+although I feel like I have less of an intuition for it now. I also think that.
+
+266
+00:17:14,750 --> 00:17:16,230
+这话我能说，Garry 可能不方便说。
+I can say this, Gary probably can't.
+
+267
+00:17:16,670 --> 00:17:21,790
+我觉得做 YC 带来的溢价，现在比以往任何时候都大。
+I think the premium on doing YC is bigger now than it's like ever been before.
+
+268
+00:17:22,510 --> 00:17:26,047
+YC 和第二名之间的差距拉大了。
+The distance between like YC and second place has expanded.
+
+269
+00:17:26,047 --> 00:17:29,230
+这提醒了我们网络效应的力量。
+And this is a reminder of the power of network effects.
+
+270
+00:17:29,590 --> 00:17:36,123
+所以找到你能加入、能帮你认识这些人的网络，
+And so finding networks that you can be part of that help you just meet those people,
+
+271
+00:17:36,123 --> 00:17:40,762
+就像和我一起创办 OpenAI 的那些人，我在很多年前
+like the people that I started OpenAI with, I met like many,
+
+272
+00:17:40,762 --> 00:17:44,738
+就认识了，有些情况下是在创办 OpenAI 好多年前，
+many years in some cases before uh starting OpenAI
+
+273
+00:17:44,738 --> 00:17:50,029
+我是在漫长的职业旅程中慢慢认识他们的。
+and I kind of like got to know them. Over the long, like a very long career journey.
+
+274
+00:17:51,389 --> 00:17:52,957
+这种事一次又一次地发生。
+And this happens again and again.
+
+275
+00:17:52,957 --> 00:17:55,308
+所以你越早让自己进入一种状态，
+And so the sooner you can put yourself just in a flow
+
+276
+00:17:55,308 --> 00:17:56,827
+在那里遇到那些
+where you're gonna meet the people
+
+277
+00:17:56,827 --> 00:18:00,440
+最终会成为你这家或下一家创业公司联合创始人的人。
+that will be your eventual co founders for this startup or the next one or whatever.
+
+278
+00:18:00,600 --> 00:18:03,360
+我觉得越早越好。这需要很长时间去复利积累。
+I think the better. It takes a long time to compound.
+
+279
+00:18:04,040 --> 00:18:07,748
+我想接着你刚才说的，就是，
+I guess I'm keying off what you just said, which is like, you know,
+
+280
+00:18:07,748 --> 00:18:12,554
+有些和你最后一起做各种事情的人，
+some of the people you ended up starting, you know, all these different things with,
+
+281
+00:18:12,554 --> 00:18:16,880
+你当时并不知道这是为了什么，也不知道它会有用，
+you didn't necessarily know what that was for or that it would be useful in a.
+
+282
+00:18:17,040 --> 00:18:20,489
+在人脉这个意义上完全没想过，你只是收集了很酷、
+You know, sort of network setting at all like you just collected cool,
+
+283
+00:18:20,489 --> 00:18:21,560
+很有意思的人。
+interesting people.
+
+284
+00:18:21,680 --> 00:18:24,920
+我是说，你就这么做，我觉得 Peter Thiel 这方面做得非常非常好。
+I mean, I think you're, you do this. I think Peter Thiel does this really, really well.
+
+285
+00:18:25,690 --> 00:18:30,039
+对于满屋子刚起步、还在
+What would you say to a room full of people who are just starting out and, like,
+
+286
+00:18:30,039 --> 00:18:32,010
+摸索谁是自己同路人的人，你会说些什么？
+figuring out who their people are?
+
+287
+00:18:32,770 --> 00:18:36,647
+嗯，我最有把握的一条建议就是，
+Just like, yeah, highest confidence piece of advice here is just, like,
+
+288
+00:18:36,647 --> 00:18:39,490
+想办法对很多人都稍微帮上一点忙。
+find a way to be like mildly helpful to a lot of people.
+
+289
+00:18:40,130 --> 00:18:42,570
+这做起来很有意思，你会看到很多有趣的东西。
+It's like fun to do. You'll see a lot of interesting stuff.
+
+290
+00:18:43,210 --> 00:18:46,968
+帮到别人是件挺有成就感的事，但你知道，
+Um, it's like kind of gratifying to be helpful, but, you know,
+
+291
+00:18:46,968 --> 00:18:51,315
+就拿你刚才说的例子来说，我认识 Greg Brockman，
+even that example you were just talking about, I met Greg Brockman, uh,
+
+292
+00:18:51,315 --> 00:18:55,294
+我 OpenAI 的联合创始人，是因为我很早就投资了 Stripe，
+my co founder OpenAI because I was a very early investor in stripe
+
+293
+00:18:55,294 --> 00:18:57,210
+当时我大概 22 岁左右。
+when I was like 22 or something.
+
+294
+00:18:57,490 --> 00:19:00,504
+那时候他们还没有，你知道，
+And they were like, this was before they had, you know,
+
+295
+00:19:00,504 --> 00:19:03,250
+那种真正能帮到他们的投资人。
+like real investors that could really help them.
+
+296
+00:19:03,530 --> 00:19:05,810
+他们说，我们正想敲定第一位员工。
+And they said, you know, we're trying to close our first hire.
+
+297
+00:19:06,370 --> 00:19:08,290
+你今晚能不能开车去 Palo Alto，
+Um, will you like drive down to Palo Alto tonight
+
+298
+00:19:08,290 --> 00:19:10,738
+和这个人一起吃个饭，说服他应该
+and have dinner with this guy to convince him he should, like,
+
+299
+00:19:10,738 --> 00:19:13,090
+退学加入 Stripe，那个人就是 Greg Brockman。
+drop out of school and join stripe, which is Greg Brockman.
+
+300
+00:19:13,410 --> 00:19:16,330
+然后大约八年后，我们一起创办了一家公司。
+Um, and then like eight years later, we started a company together.
+
+301
+00:19:17,130 --> 00:19:20,850
+我可以这样做，你们也可以。
+So, and I could like, you know, we, you could too.
+
+302
+00:19:20,890 --> 00:19:24,813
+我们完全可以把剩下的时间都用来讲这类故事
+We could, like, spend the rest of this time just telling stories like that
+
+303
+00:19:24,813 --> 00:19:29,250
+那些完全没预料到、最后却在很多方面变得重要的事。我确实有。
+that was totally unpredicted but ended up being important in big ways. So I, I have.
+
+304
+00:19:30,870 --> 00:19:31,670
+对，讲起来挺有意思的。
+Yeah, it's fun to do.
+
+305
+00:19:31,710 --> 00:19:35,464
+我觉得你帮人应该是为了帮人本身
+And I think you should do it for its own reason or it's like its own sake,
+
+306
+00:19:35,464 --> 00:19:39,736
+但多帮别人真的会带来很大回报
+but just like helping people a lot really goes a long way in terms of these things
+
+307
+00:19:39,736 --> 00:19:43,310
+后面这些事就会汇聚到一起。我觉得这其实是个很重要的信息。
+coming together later. I mean, I think that's actually a really important message.
+
+308
+00:19:43,390 --> 00:19:48,752
+现在有个梗，我在 X 上看到的，叫 live
+You know, one of the things, one of the memes right now is I see it on X is live
+
+309
+00:19:48,752 --> 00:19:53,230
+action role play。这是人们最近在 X 上常说的一种说法。
+action role play. That's like one of the things that people have been saying on X.
+
+310
+00:19:53,350 --> 00:19:57,950
+我搞不懂他们为什么这么说，因为在我看来这根本不对。
+I mean, I can't tell why they're doing it because it just seems wrong to me.
+
+311
+00:19:58,030 --> 00:20:02,335
+比如说，YC 特别看重的一点
+Like, I mean, one of the things that we really love at YC, for instance,
+
+312
+00:20:02,335 --> 00:20:04,710
+是真诚，而且用词很重要。
+is earnestness and also words matter.
+
+313
+00:20:05,070 --> 00:20:08,470
+所以说，把我们做的事说成是 live action role play
+So, you know, this idea that what we're trying to do is a live action role play is
+
+314
+00:20:08,470 --> 00:20:12,988
+其实让我挺反感的。很抱歉，各位
+like kind of deeply offensive to me, actually. It's very sorry, guys,
+
+315
+00:20:12,988 --> 00:20:14,390
+请别这么干。
+please don't do that.
+
+316
+00:20:15,550 --> 00:20:18,065
+他们是专门这么说 YC 的吗？不，是有些人
+They say that about YC specifically? No, there people,
+
+317
+00:20:18,065 --> 00:20:20,416
+就是这个房间里的一些参会者在发这种推文
+just attendees in this room have been tweeting that
+
+318
+00:20:20,416 --> 00:20:21,670
+我们希望他们别发了。
+and we'd like them to stop.
+
+319
+00:20:24,440 --> 00:20:26,719
+他们到底在说什么？这个所谓的 LARP 指的是什么？
+What are they claim? What's the claimed LARP?
+
+320
+00:20:26,719 --> 00:20:29,838
+我觉得他们就是想带点讽刺
+I think it's just being a little sarcastic about and, you know,
+
+321
+00:20:29,838 --> 00:20:33,200
+而讽刺基本上跟你我看重的东西是相反的。
+it's sarcasm is sort of the opposite of what I think you and I like.
+
+322
+00:20:33,320 --> 00:20:34,728
+我们看重的是真诚
+It's just like we like earnestness,
+
+323
+00:20:34,728 --> 00:20:36,840
+也就是我们是真的在这里做一件事。
+which is like we're actually trying to do a thing here.
+
+324
+00:20:37,080 --> 00:20:42,000
+我再说件事。我能吐槽一下吗？请便。好。
+I'll tell you another thing. Can I go on a little rant? Please. Okay.
+
+325
+00:20:43,120 --> 00:20:43,800
+尽管吐槽。
+Rant away.
+
+326
+00:20:44,880 --> 00:20:46,755
+有件很烦的事，我再说一次
+Get one of the annoying thing I again,
+
+327
+00:20:46,755 --> 00:20:49,960
+我可以替 Garry Tan 说这些，因为他现在没法说。
+I can say these things for Gary cause he can't say them right now.
+
+328
+00:20:49,960 --> 00:20:51,600
+但你知道，等下一个人他会替他说的。
+But you know, he'll say them for the next guy.
+
+329
+00:20:51,840 --> 00:20:56,149
+呃，管理 YC 有很多烦人的地方，其中之一就是你得一直应付
+Um, one of the many annoying things about running YC is you just have to deal with
+
+330
+00:20:56,149 --> 00:20:58,760
+Twitter 上那些黑子，一天到晚没完没了。
+these haters on Twitter all of the fucking time.
+
+331
+00:21:00,280 --> 00:21:03,490
+特别让人上头。你得坐在那儿装得像个政治家一样，好吧
+It's so frustrating. You have to sit there and be like a statesman, well,
+
+332
+00:21:03,490 --> 00:21:05,680
+你比我强。我以前经常上钩。
+you're better at it. I kind of like took the bait a lot.
+
+333
+00:21:06,720 --> 00:21:13,637
+你就想跟他们吵，而我最终意识到的
+And you just want to argue with them and, and the thing that I realized eventually
+
+334
+00:21:13,637 --> 00:21:20,243
+你想怎么理解都行——管理 YC 或经营一家创业公司很难
+and take from this whatever you want is it is very hard to run YC or run a startup
+
+335
+00:21:20,243 --> 00:21:27,160
+或者说在世界上创造真正有价值的东西很难。而很容易做的是
+or, you know, create like an actual thing of value in the world. It is very easy to.
+
+336
+00:21:27,640 --> 00:21:32,052
+去 Twitter 上挖苦别人，发一条讽刺评论，收获一堆点赞
+Go take shots on Twitter and make a sarcastic comment and get a lot of likes
+
+337
+00:21:32,052 --> 00:21:36,898
+然后觉得自己在做很重要的事，在跟权威叫板
+and feel like you're doing something really important and sticking it to the man
+
+338
+00:21:36,898 --> 00:21:40,080
+就像“Garry Tan，哈哈，抓到你了，你个蠢货”。然后
+and being like, Gary, haha, I got you, you idiot. And.
+
+339
+00:21:41,550 --> 00:21:42,910
+而这会腐蚀你的灵魂。
+And it will poison your soul.
+
+340
+00:21:43,630 --> 00:21:45,470
+这是件道德上破产的事。
+It is a morally bankrupt thing to do.
+
+341
+00:21:46,190 --> 00:21:46,630
+确实是。
+It is.
+
+342
+00:21:47,910 --> 00:21:50,270
+而且它是那种很潜移默化地伤人的坏。
+And it's like bad in a very insidious way.
+
+343
+00:21:50,510 --> 00:21:53,805
+我完全理解发泄一下、找点乐子，但别
+Like I totally get blowing off steam and having fun, but don't.
+
+344
+00:21:53,805 --> 00:21:56,150
+你应该对自己有比这更高的要求。
+Like hold yourself to a higher bar than this.
+
+345
+00:21:56,230 --> 00:21:56,510
+别这样。
+Don't.
+
+346
+00:21:58,830 --> 00:22:02,982
+挖苦那些在做难事的人太容易了
+It's so easy to take shots at people that are trying to do hard things
+
+347
+00:22:02,982 --> 00:22:07,323
+那些在努力建公司的人。你会看到某个
+and trying to build companies. And you'll see some like, you know,
+
+348
+00:22:07,323 --> 00:22:11,810
+有着糟糕创业点子的小孩，在 Twitter 上为自己做的事兴奋。
+kid with a bad startup idea trying to get excited about what he's doing on Twitter.
+
+349
+00:22:11,930 --> 00:22:15,685
+发一条讽刺评论、拿到一万个赞太容易了
+It's so easy to, like, make a sarcastic comment and get the 10,000 likes
+
+350
+00:22:15,685 --> 00:22:19,250
+然后觉得，哇，我今天真是刷到了我的网络积分。
+and feel like, man, I really like I scored my internet points today.
+
+351
+00:22:19,770 --> 00:22:22,626
+呃，但这会影响到你
+Um, but it'll have an effect on you and the
+
+352
+00:22:22,626 --> 00:22:26,574
+当我回想那些年 Twitter 上的喷子
+when I like reflected on the years of like Twitter trolls
+
+353
+00:22:26,574 --> 00:22:31,950
+在我管理 YC 时说 YC 和创业公司的坏话，我想
+that said mean things about YC and startups while I was running YC, I was like.
+
+354
+00:22:32,230 --> 00:22:35,519
+我敢说有很多天他们真觉得自己整到我了
+I bet there were like a lot of days where they really felt like they got me
+
+355
+00:22:35,519 --> 00:22:37,470
+但这十年里，没有一个人真的整到我。
+and like over the decade, none of them did.
+
+356
+00:22:38,350 --> 00:22:41,927
+你应该把全部精力投入到创造东西上
+And you should like put all of your energy into building stuff
+
+357
+00:22:41,927 --> 00:22:43,750
+而不是去发那些轻松的冷嘲热讽。
+and like resist the easy shots.
+
+358
+00:22:44,030 --> 00:22:46,670
+说真的，我特别喜欢这段内容。
+I mean, I really like this as a content, seriously.
+
+359
+00:22:55,200 --> 00:22:57,672
+我是说，我喜欢把它当作一个对比，呃
+I mean, I like this as a contrast to, uh,
+
+360
+00:22:57,672 --> 00:23:01,920
+跟你刚才讲的、帮 Patrick Collison 招到 Greg Brockman 的那个故事对比。
+the story you just told about helping Patrick with Greg Brockman.
+
+361
+00:23:02,080 --> 00:23:06,261
+我是说，这确实有帮助，这个房间里有些人以后会成为
+I mean, you know, it helped like there are people in this room who are going to be
+
+362
+00:23:06,261 --> 00:23:09,542
+一辈子的朋友，他们会互相扶持
+lifelong friends and they're going to do that for one another
+
+363
+00:23:09,542 --> 00:23:13,080
+然后就会发生这些奇妙的连接，你懂的。
+and then sort of these magical connections happen like, you know.
+
+364
+00:23:13,080 --> 00:23:17,286
+这已经是一群极其难得的人了。而当你加入 YC，
+This already is the most rarefied set of people. And then when you join YC,
+
+365
+00:23:17,286 --> 00:23:19,010
+就更是万里挑一。
+it's like even more rarified.
+
+366
+00:23:19,610 --> 00:23:24,450
+而外面有这样一群人，他们很有雄心。
+And then there's just a set of people out there who, like, they're ambitious.
+
+367
+00:23:24,450 --> 00:23:25,905
+对。你知道，这里面的某个人，
+Yeah. You know, someone in this,
+
+368
+00:23:25,905 --> 00:23:28,221
+这个房间里的某个人，会遇到另一个人
+like someone in this room is gonna meet someone else
+
+369
+00:23:28,221 --> 00:23:31,235
+你会和他一起创业，你也会遇到某个人
+that you're gonna start a company with and somebody you'll meet somebody
+
+370
+00:23:31,235 --> 00:23:34,594
+他会把你介绍给你的另一半，这些事都会发生
+that'll introduce you to your spouse like they're all of these things will happen
+
+371
+00:23:34,594 --> 00:23:36,669
+然后还会有一堆不那么显而易见的事
+and then there will be a bunch of non obvious things
+
+372
+00:23:36,669 --> 00:23:38,250
+要花上十年二十年才能想明白。
+that take a decade or two to figure out.
+
+373
+00:23:38,370 --> 00:23:40,961
+某种程度上，你们现在会互相帮助，
+In some way, you know, one of you will help each other now,
+
+374
+00:23:40,961 --> 00:23:43,000
+这会变成某个了不起的新东西。
+which will turn into some amazing new thing.
+
+375
+00:23:43,320 --> 00:23:46,760
+我觉得这正是 YC 能成功的很大一部分原因
+Um, I think this is a huge part of what has made YC work
+
+376
+00:23:46,760 --> 00:23:49,720
+也是更广阔的创业生态成功的原因。
+and the broader broader startup ecosystem.
+
+377
+00:23:50,280 --> 00:23:54,300
+我觉得，抛开 Bay Area 文化的所有负面，
+I think this is like a for all of the negatives of the culture of the Bay Area,
+
+378
+00:23:54,300 --> 00:23:58,320
+这种松散网络和互相帮助的精神，
+this is the kind of like loose network and the spirit of helping each other.
+
+379
+00:23:58,320 --> 00:24:01,320
+加上很长期的视角，是一件很棒的事。
+And it's like very long term from outlook has been an awesome thing.
+
+380
+00:24:02,440 --> 00:24:08,738
+好，我们回到即将到来的 AGI。我猜你，我是说，
+Well, let's let's get back to the impending AGI. Okay, I guess you had a, I mean,
+
+381
+00:24:08,738 --> 00:24:13,269
+我们这周都因为 Hugging Face 的事经历了不少。对。
+we've all had an eventful week with the hugging face. Yeah.
+
+382
+00:24:13,269 --> 00:24:16,320
+我想知道你能跟我们讲讲那件事吗。
+I wonder what you can tell us about that.
+
+383
+00:24:16,320 --> 00:24:21,342
+我觉得那对很多人来说其实是个重要时刻，包括我，
+And I think that's actually a really big moment for people, including me, who,
+
+384
+00:24:21,342 --> 00:24:26,210
+你知道，过去我一直被认为对 AI 安全持怀疑态度。
+you know, uh, in the past I've been known to be skeptical about safety and AI.
+
+385
+00:24:26,330 --> 00:24:28,330
+但另一方面，这是个真正的时刻。
+But on the other hand, like this is a real Mo.
+
+386
+00:24:28,330 --> 00:24:32,490
+我们正进入这些 frontier 模型发展的一个新阶段。
+Like we're entering a new moment in what's happening with these frontier models.
+
+387
+00:24:33,050 --> 00:24:35,829
+对，这是动真格的了。
+Yeah, this, this is the real deal. Um,
+
+388
+00:24:35,829 --> 00:24:40,490
+我觉得任何没有认真对待它的人，至少
+and I think anybody who's not taking it seriously and at least.
+
+389
+00:24:43,060 --> 00:24:47,796
+有一点害怕或谦卑，或者很多这类情绪，但至少要有一点。
+A little bit scared or humbled or a lot of those things, but at least a little bit.
+
+390
+00:24:47,796 --> 00:24:50,020
+否则就是没把它当回事。
+Is not taking this seriously enough?
+
+391
+00:24:55,860 --> 00:25:01,116
+你知道，很长时间以来，这个领域一直在谈论
+You know, for a long time, the field has been talking about AI safety incidents of
+
+392
+00:25:01,116 --> 00:25:05,316
+这种形态的 AI 安全事件，而这次不算大的。我也不想夸大它
+this kind of a shape and this is not a big one. I also don't want to overblow it
+
+393
+00:25:05,316 --> 00:25:08,226
+说这是一次真正的失控事件，说这就是
+and say this is like a real loss of control incident and this is the,
+
+394
+00:25:08,226 --> 00:25:13,340
+那件大事。但如果你在我们十年前起步时问大多数人，
+this is the thing. But if you had asked most people when we started 10 years ago,
+
+395
+00:25:13,340 --> 00:25:15,500
+在这个谱系上的位置，
+like where on the spectrum of.
+
+396
+00:25:16,400 --> 00:25:21,865
+从什么都没有到 superintelligence。会不会有个 AI 系统突破它的 sandbox
+Nothing to super intelligence. Do you have like an AI system breaking out of its sandbox
+
+397
+00:25:21,865 --> 00:25:27,320
+侵入另一家公司，做出这次发生的这种事。
+and hacking into some other company and kind of, you know, doing what this happened.
+
+398
+00:25:27,640 --> 00:25:30,963
+我觉得大多数人会说，那已经相当接近
+I think like people would have said pretty far are towards the like super
+
+399
+00:25:30,963 --> 00:25:35,771
+superintelligence 那一端了。现在标准被改写了，很容易说，你知道，
+intelligence point. Now the goal posts have moved and it's easy to say, well, you know,
+
+400
+00:25:35,771 --> 00:25:39,355
+事情是这么发生的，这里是那些错误
+here were the here's how this happened and here are the mistakes
+
+401
+00:25:39,355 --> 00:25:42,533
+OpenAI 犯的，我们确实犯了一些大错，当然，
+that OpenAI made and we did make some big ones, of course,
+
+402
+00:25:42,533 --> 00:25:45,440
+但这些系统的能力已经强得惊人。
+but these systems have gotten incredibly capable.
+
+403
+00:25:46,320 --> 00:25:48,720
+所以我认为这是一次对齐失败。
+Um, so I think it's an alignment failure.
+
+404
+00:25:48,760 --> 00:25:51,200
+我认为这是一次安全失败。我认为这非常严重。
+I think it's a security failure. I think it's like a very serious.
+
+405
+00:25:52,140 --> 00:25:56,780
+尽管它，你知道，不是后果最严重的例子。
+Thing, even though it's, you know, not, not the biggest example of consequence.
+
+406
+00:26:01,470 --> 00:26:05,396
+我觉得这实实在在地提醒了我们现在事态的利害，
+And I think it's a real reminder of the stakes of what's happening and
+
+407
+00:26:05,396 --> 00:26:09,390
+以及失控事故并不完全是理论上的东西。
+that loss of control accidents are not entirely theoretical things.
+
+408
+00:26:10,950 --> 00:26:13,686
+我认为我们会从中学到东西，我们，整个领域，
+I think we will learn, we, the whole field,
+
+409
+00:26:13,686 --> 00:26:17,830
+我们 OpenAI 会从这一次学到很多，并能够应对它。
+we OpenAI will learn a lot from this one and be able to address it.
+
+410
+00:26:17,830 --> 00:26:19,924
+但你知道，那些我，
+But you know, the things that I,
+
+411
+00:26:19,924 --> 00:26:24,354
+有各种关于网络安全和生物安全的问题，
+there are all of the things about like cyber safety and biosafety,
+
+412
+00:26:24,354 --> 00:26:26,609
+但还有另一类问题
+but this other category of things
+
+413
+00:26:26,609 --> 00:26:31,764
+可能一直处在公众 Overton 窗口之外的，那就是我们真的
+that have been maybe just outside the public's Overton window of it's really
+
+414
+00:26:31,764 --> 00:26:35,710
+很重要不能在 AI 上出现失控事故。
+important we don't have a loss of control accident with AI.
+
+415
+00:26:36,230 --> 00:26:39,794
+很重要的是，不能让权力过度集中在少数几个
+It's really important we don't have power be too concentrated in a small number of
+
+416
+00:26:39,794 --> 00:26:42,362
+模型或公司手里，而要扩散到整个经济中
+models or companies, but diffused throughout the economy
+
+417
+00:26:42,362 --> 00:26:43,830
+好让人们能够保护自己。
+so people can defend themselves.
+
+418
+00:26:43,910 --> 00:26:47,560
+就像我，你知道，很重要的是人们，
+Like I, um, you know, it's really important that people,
+
+419
+00:26:47,560 --> 00:26:51,520
+人类价值观要在每一步都引导着这些系统。
+human values are guiding these systems every step of the way.
+
+420
+00:26:51,920 --> 00:26:56,520
+嗯，对，我觉得我们已经进入了这件事动真格的阶段。
+Uh, yeah, I think we're like in the real, the real deal phase of this.
+
+421
+00:26:56,880 --> 00:27:00,884
+我真的很喜欢你既思考权力集中，
+I mean, I really like how you've been thinking about both concentration,
+
+422
+00:27:00,884 --> 00:27:03,247
+也把 OpenAI 当作一种公共设施来思考，
+but also so thinking of OpenAI as a utility,
+
+423
+00:27:03,247 --> 00:27:05,741
+这其实是一个非常重要的信息，
+which is actually a really important message
+
+424
+00:27:05,741 --> 00:27:08,760
+因为外面不是所有人都在传递这个信息。
+because not everyone out there is saying that message.
+
+425
+00:27:08,880 --> 00:27:12,436
+你知道，在权力集中这件事上，
+Like, you know, there's, yeah, there's a lot to be worried about in terms of
+
+426
+00:27:12,436 --> 00:27:13,640
+确实有很多值得担心的地方。
+concentration of power.
+
+427
+00:27:14,520 --> 00:27:19,825
+我觉得在人类历史的每个时刻，权力集中基本上都是坏事，
+I think concentration of power has basically been bad in every moment of human
+
+428
+00:27:19,825 --> 00:27:22,600
+当然程度各有不同。
+history, to varying degrees, of course.
+
+429
+00:27:22,640 --> 00:27:28,213
+但我有一种真切的信念，我觉得这也是创业精神的一部分，
+But I have a real spirit and I think this is part of the startup spirit of thinking
+
+430
+00:27:28,213 --> 00:27:31,844
+那就是当权力被非常广泛地分散时，
+that the world, the economy, society is the best off
+
+431
+00:27:31,844 --> 00:27:34,800
+世界、经济和社会才处于最好的状态，
+when power is very widely distributed and
+
+432
+00:27:34,800 --> 00:27:39,360
+当任何有好点子的人都能创办公司，或者做出很棒的
+when anybody with a great idea can start a company or make a great.
+
+433
+00:27:39,440 --> 00:27:43,706
+艺术项目，或者去竞选公职，做他们想做的任何事。嗯，
+Art project or, you know, run for office or do whatever they want. Um,
+
+434
+00:27:43,706 --> 00:27:45,727
+我完全能想象出一些世界，
+and I can totally imagine worlds
+
+435
+00:27:45,727 --> 00:27:50,710
+AI 带来我们见过的最广泛的权力分散。
+where AI leads to the greatest distribution of power we've ever seen.
+
+436
+00:27:50,870 --> 00:27:56,664
+我也能想象出一些世界，AI 把权力集中到我们从未见过的程度，
+And I can also imagine worlds where AI concentrates power to a degree we have never
+
+437
+00:27:56,664 --> 00:28:02,288
+嗯，一家公司、一个人或一个模型拥有的权力超过地球上
+seen, um, and one company or person or model having more power than everybody or
+
+438
+00:28:02,288 --> 00:28:07,056
+其他所有人和所有东西的总和。就像那些科幻故事说的那样，
+everything else on earth put together. Whatever the SCI fi stories have said,
+
+439
+00:28:07,056 --> 00:28:09,624
+我觉得那太可怕了，
+I think that's terrible and would really,
+
+440
+00:28:09,624 --> 00:28:13,471
+你知道，也许我们能从中获得一些短期的安全好处，
+you know, maybe we would get some short term safety benefit from that,
+
+441
+00:28:13,471 --> 00:28:18,180
+但长期是灾难，我觉得我们谁都不该想被锁死在某一个模型上。
+but long term disaster, I don't think any of us should want to be locked into one model.
+
+442
+00:28:18,180 --> 00:28:22,020
+某一个 AI、某一个人或某一家公司的道德世界观。
+One AI's or one person's or one company's moral worldview.
+
+443
+00:28:23,680 --> 00:28:25,760
+我觉得创业公司在这里扮演着非常重要的角色。
+I think startups have a very important role to play here.
+
+444
+00:28:26,280 --> 00:28:31,640
+呃，一种情况就是过多的经济权力集中在一家公司
+Uh, you know, one way that that happens is too much economic concentration in one
+
+445
+00:28:31,640 --> 00:28:34,563
+或一个 AI 模型上。我觉得创业公司，
+company or one AI model. And I think startups,
+
+446
+00:28:34,563 --> 00:28:37,562
+因为我们前面聊过的那些原因，
+because of the things we talked about earlier,
+
+447
+00:28:37,562 --> 00:28:42,360
+天生就非常适合确保这一切被广泛分散。
+will be naturally very well suited to make sure that this is widely distributed.
+
+448
+00:28:44,120 --> 00:28:46,365
+但我们想赋能尽可能多的创业公司、尽可能多的公司、
+But we want to enable as many startups, as many companies,
+
+449
+00:28:46,365 --> 00:28:47,440
+尽可能多的人。
+as many people as possible.
+
+450
+00:28:47,840 --> 00:28:52,370
+这意味着我们必须相当克制，不去，呃，
+And that means that we have to, you know, be fairly quite reserved about not, uh,
+
+451
+00:28:52,370 --> 00:28:57,106
+强加我们对人们该不该用 AI 做什么的世界观，
+imposing our world view about what we think people should or shouldn't do with AI or
+
+452
+00:28:57,106 --> 00:28:59,234
+甚至不去强加我们觉得什么才是好点子，
+even what we think the good ideas are,
+
+453
+00:28:59,234 --> 00:29:02,940
+同时又要确保我们能守住足够的安全门槛。
+while still making sure that we can ensure enough of a safety bar.
+
+454
+00:29:02,980 --> 00:29:05,020
+让像 Hugging Face 事件那样的事情不再发生。
+That stuff like the hugging face incident is not happening.
+
+455
+00:29:06,060 --> 00:29:08,316
+嗯，有一点是，呃，你知道，
+Um, one of the things is, uh, you know,
+
+456
+00:29:08,316 --> 00:29:12,100
+这个房间里坐满了将来会做出非常了不起事情的人。
+this is a room full of people who will do really amazing things.
+
+457
+00:29:12,180 --> 00:29:14,420
+他们往往正处在职业生涯的起点。
+They're often right at the beginning of their career.
+
+458
+00:29:15,050 --> 00:29:18,430
+嗯，他们可能会看着 AI 安全或权力集中的问题说，
+Um, and they might look at AI safety or concentration of power and say, well,
+
+459
+00:29:18,430 --> 00:29:21,810
+你知道，我做不了什么，那肯定是那些实验室要去做的事。
+you know, I can't really do it that that must be something the labs have to do.
+
+460
+00:29:21,850 --> 00:29:24,730
+但其实，你知道，他们是有事情可以做的。
+Like, you know, there is something they can do though.
+
+461
+00:29:25,690 --> 00:29:32,070
+嗯，我是说，你只要创办一家成功的创业公司，
+Um, I mean, you can help on the concentration of power issue simply by starting a
+
+462
+00:29:32,070 --> 00:29:33,810
+就能在权力集中问题上出一份力。
+successful startup.
+
+463
+00:29:34,690 --> 00:29:39,010
+你只要做这一件事，让经济在资本主义那种魔力下持续运转，
+That's the only thing you do. And the economy keeps working in the kind of magic of capitalism and.
+
+464
+00:29:39,940 --> 00:29:42,955
+让这个协同运作的生态系统存在，
+Having this ecosystem that works together,
+
+465
+00:29:42,955 --> 00:29:46,540
+光是延续这一点就已经是巨大的贡献。
+continuing that alone would be a huge contribution.
+
+466
+00:29:46,660 --> 00:29:51,943
+但你看，我觉得在职业生涯初期怀疑自己、
+But look, I think it's very natural at the beginning of a career to doubt yourself
+
+467
+00:29:51,943 --> 00:29:54,860
+不敢假设自己能做出了不起的事，是很自然的。
+and not assume you can go do an amazing thing.
+
+468
+00:29:56,420 --> 00:29:58,420
+我肯定经历过那个阶段。我相信你也经历过。
+I certainly went through that. I'm sure you went through that.
+
+469
+00:29:58,980 --> 00:30:01,280
+你会边走边学，能做的事越来越多。
+You kind of learn as you go on. You can do more and more.
+
+470
+00:30:02,240 --> 00:30:06,628
+会有更多这样的事，我觉得这两点都成立，你知道，
+There will be far more like I think it is both true that, you know,
+
+471
+00:30:06,628 --> 00:30:12,423
+也许创造 superintelligence 会是商业史或人类社会史上
+maybe creating super intelligence will be the most important thing yet to happen in
+
+472
+00:30:12,423 --> 00:30:14,850
+迄今为止最重要的事情。
+the history of business or human society.
+
+473
+00:30:14,850 --> 00:30:18,318
+但同时它又会在某家新创业公司面前相形见绌，
+And also that it will pale in comparison to some new startup,
+
+474
+00:30:18,318 --> 00:30:20,240
+而那家公司但愿会由你们中的某个人来创办。
+something that hopefully one of you will do.
+
+475
+00:30:20,610 --> 00:30:24,770
+呃，所以这种“这就是历史的终点”
+Uh, and so this whole, this whole trap of like, this is the end of history.
+
+476
+00:30:25,010 --> 00:30:27,290
+“这就是经济的终点”的陷阱，显然是错的。
+This is the end of the economy. Like clearly wrong.
+
+477
+00:30:27,730 --> 00:30:31,869
+嗯，我觉得正确的态度是，你现在能在 17 分钟里
+Um, and I think the right approach is you can now do three months of work in 17
+
+478
+00:30:31,869 --> 00:30:36,408
+完成三个月的工作，但你最好还是拿这三个月，去做三个月的工作，
+minutes, but you better just go do three months of work in three months of work with
+
+479
+00:30:36,408 --> 00:30:38,410
+无论那个新标准是什么。
+the whatever the new bar for that is.
+
+480
+00:30:39,770 --> 00:30:44,690
+我想如果不问一句就太失职了，你能给我们透露点什么内幕消息吗？
+I guess I would be remiss in asking, you know, what alpha leak can you give us about?
+
+481
+00:30:44,690 --> 00:30:46,210
+最新的进展是什么。
+What's the latest about.
+
+482
+00:30:47,020 --> 00:30:51,440
+你知道，模型还会变得多厉害，就你能说的范围
+What, you know, how much more awesome are the models going to be to the extent you
+
+483
+00:30:51,440 --> 00:30:52,980
+我觉得会有。
+can say, I think there will.
+
+484
+00:30:53,100 --> 00:30:57,280
+我觉得接下来这六个月，可能相当于过去
+I think it will feel like the next six months is like maybe equivalent to the last
+
+485
+00:30:57,280 --> 00:30:59,940
+两年的模型进步，差不多这个感觉。
+two years of model progress, something like that.
+
+486
+00:31:00,500 --> 00:31:03,309
+所以我觉得我们会经历一段非常陡峭的，呃，
+So I think we'll go through like a very steep, uh,
+
+487
+00:31:03,309 --> 00:31:06,540
+我们会经历一段非常陡峭的时期，再说一遍。
+we'll go through like a very steep period, which again.
+
+488
+00:31:07,460 --> 00:31:09,580
+现在是创业最好的时候，从未有过更好的时刻。
+Never a better time to do a startup than right now.
+
+489
+00:31:09,740 --> 00:31:11,885
+我希望从现在起每一年都能这么说，
+I hope we can say that again every year from now on,
+
+490
+00:31:11,885 --> 00:31:14,500
+但相比历史上任何时刻，现在确实如此。
+but it's certainly true about this to any moment in history.
+
+491
+00:31:16,580 --> 00:31:19,714
+假设这里有人的想法显得太有野心。
+Let's see if someone here has an idea that feels too ambitious.
+
+492
+00:31:19,714 --> 00:31:20,980
+你会对他们说什么？
+What would you tell them?
+
+493
+00:31:22,060 --> 00:31:25,740
+我很想听那个 pitch。对，我大概会很感兴趣。
+I would love to hear that pitch. Yeah, I probably be very interested in that.
+
+494
+00:31:25,900 --> 00:31:28,260
+对。呃，对，给我发封邮件。对。
+Yeah. Um, yeah. Send me an email. Yeah.
+
+495
+00:31:28,260 --> 00:31:34,670
+听起来它会，呃，会和创办 OpenAI 有相似的形态
+It sounds like it would, um, it would take a similar shape to creating OpenAI
+
+496
+00:31:34,670 --> 00:31:41,080
+那么，你是不是得做好准备，被人攻击或者被人看不起？
+and that like, do you need to be ready for people to attack you or dismiss you?
+
+497
+00:31:44,280 --> 00:31:47,760
+当然。我是说，如果你在世界上做任何有意义的事，
+Definitely. I mean, if you do anything that matters in the world,
+
+498
+00:31:47,760 --> 00:31:50,200
+就会有很多人骂你是白痴。
+you will have a lot of people call you an idiot.
+
+499
+00:31:51,550 --> 00:31:52,710
+或者干脆无视你。
+Or just dismiss you.
+
+500
+00:31:53,950 --> 00:31:58,083
+你做得越多，做得越好，他们就越会攻击你，
+The more you do, the more, the better you do, the more they'll attack you,
+
+501
+00:31:58,083 --> 00:32:01,872
+你越是威胁到世界现有的秩序，
+the more you kind of like threaten the existing state of the world,
+
+502
+00:32:01,872 --> 00:32:03,870
+攻击就会不断升级。
+it will just continue to escalate.
+
+503
+00:32:08,420 --> 00:32:14,180
+我注意到很多最好的想法有一个特点：愿景是清晰的。
+One thing that I've noticed about many of the best ideas is the vision is clear.
+
+504
+00:32:14,300 --> 00:32:19,620
+比如，我们想造 AGI，但最初的几步非常不清晰。
+Like, we wanted to build AGI, but the first steps were super unclear.
+
+505
+00:32:20,380 --> 00:32:23,100
+比如，我们并不知道自己会成为一家产品公司。
+Like, we didn't know that we were going to be a product company.
+
+506
+00:32:23,260 --> 00:32:27,940
+我们创办这个非营利研究实验室有很多原因，其中之一是。
+We started this nonprofit research lab for many reasons, but one of which was it.
+
+507
+00:32:28,360 --> 00:32:31,353
+我们真的没想到自己会做出一个产品
+It really didn't occur to us that we were going to make a product
+
+508
+00:32:31,353 --> 00:32:33,080
+让人们愿意付费。
+that people would be able to pay for.
+
+509
+00:32:33,160 --> 00:32:37,640
+你知道，过了好多年我们才想出 ChatGPT、API 这些点子。
+Like this was, you know, it was years till we came up with the idea of ChatGPT, the API.
+
+510
+00:32:38,920 --> 00:32:44,181
+所以我觉得，如果最高层面的愿景是清晰的，
+And so I think if the, the kind of like highest level vision is clear,
+
+511
+00:32:44,181 --> 00:32:49,160
+但最初的几步非常不清晰，这不是坏事。
+but the first few steps are very unclear, that's not a bad thing.
+
+512
+00:32:49,240 --> 00:32:51,930
+这在非常有野心的想法上经常发生。
+That often happens with, like, very ambitious ideas.
+
+513
+00:32:52,450 --> 00:32:56,530
+我不会因此让你现在退缩。
+And I wouldn't let that cause you to lean out now.
+
+514
+00:32:56,530 --> 00:32:59,520
+你还是得往前迈几步，哪怕它们并不完美，
+You do still have to take some steps forward, imperfect though they may be,
+
+515
+00:32:59,520 --> 00:33:01,315
+我们当年的那几步肯定非常不完美。
+and ours were certainly very imperfect.
+
+516
+00:33:01,315 --> 00:33:04,853
+所以还有另一种失败情况：你有一个绝妙的大想法
+So there's like another failure case where you have this like brilliant big idea
+
+517
+00:33:04,853 --> 00:33:07,120
+却几乎永远没法往前推进。
+and you can kind of never make any forward progress.
+
+518
+00:33:07,360 --> 00:33:10,640
+到某个时刻你就得去拿一些新的数据点。对。
+At some point you got to just like get some new data points. Yeah.
+
+519
+00:33:11,080 --> 00:33:12,880
+你觉得推理这块会发生什么？
+What do you think is going to happen to inference?
+
+520
+00:33:13,600 --> 00:33:15,560
+我很喜欢 roon 关于这个的推文。
+I really like runes tweet about this.
+
+521
+00:33:15,720 --> 00:33:20,427
+就是你要么，呃，要么作为模型公司死掉，要么活得够久
+Like you either, uh, you're either you either die a model company or live long
+
+522
+00:33:20,427 --> 00:33:24,030
+久到能卖推理，这是 roon 一条很好笑的推文。
+enough to sell inference, which is a very funny rune tweet.
+
+523
+00:33:24,910 --> 00:33:28,296
+我觉得他那条推文的意思是，呃，你知道，
+I I think what he meant with that tweet is, uh, you know,
+
+524
+00:33:28,296 --> 00:33:31,983
+就是如果你最后掉出了模型前沿，
+like if you end up falling off of the sort of model frontier,
+
+525
+00:33:31,983 --> 00:33:35,595
+你至少还能卖推理，就像很多其他。
+you can at least sell the inference like with a lot of other.
+
+526
+00:33:35,595 --> 00:33:37,659
+甚至不是推理训练，
+Not even the inference training,
+
+527
+00:33:37,659 --> 00:33:41,852
+算力太值钱了，如果你买了很多算力
+someone will like compute is so valuable that if you buy a lot of compute
+
+528
+00:33:41,852 --> 00:33:46,470
+作为一家 AI 实验室，你还行，因为你可以转卖给别人。
+as a AI lab, you've been okay by the fact that you can resell it to somebody else.
+
+529
+00:33:46,830 --> 00:33:53,064
+但另外，我猜全球对推理的需求，主观感觉
+But separately, I would guess that worldwide demand for inference sign it kind of
+
+530
+00:33:53,064 --> 00:33:57,190
+在接下来很多年里每年增长 10 倍。
+subjectively grows 10 x a year for the next many years.
+
+531
+00:33:57,670 --> 00:34:00,953
+我是说，可能吧，我不知道，按我们 YC 内部的估算，
+I mean, might be, I don't know by by our accounts internal to YC,
+
+532
+00:34:00,953 --> 00:34:04,994
+可能是 90,000 倍，我是说会是，我不觉得
+it's like might be 90,000 x I mean it's gonna be I don't think one of the wildest
+
+533
+00:34:04,994 --> 00:34:09,350
+世界能连续支撑那么多年 1,000 倍的增长。有道理。但我们会尽力。
+the world can support that many years of 1,000 x in a row. Fair enough. But we'll try.
+
+534
+00:34:09,350 --> 00:34:10,830
+尽力而为。我们会想出办法的。
+Our best. We'll figure something out.
+
+535
+00:34:11,030 --> 00:34:16,120
+我是说，产能，我想它就是取决于你对智能的野心
+I mean, the capacity, I guess it's just it's a function of how much bigger your
+
+536
+00:34:16,120 --> 00:34:20,733
+有多大，以及，你知道，如果你做得更多，
+ambitions are for intelligence and how, you know, if you do a lot more,
+
+537
+00:34:20,733 --> 00:34:24,630
+我觉得我们大概永远都摆脱不了算力短缺。
+I think we will sort of never be out of the compute shortage.
+
+538
+00:34:26,430 --> 00:34:29,190
+我从没见过任何像这样的一种商品。但。
+I've never seen any commodity quite like this one. But.
+
+539
+00:34:30,040 --> 00:34:34,025
+在我看来，对足够高质量的智能、以足够低价格的需求
+It seems to me like the demand for sufficiently high quality intelligence at a
+
+540
+00:34:34,025 --> 00:34:36,600
+实际上是没有上限的。
+sufficiently low price is effectively uncapped.
+
+541
+00:34:38,280 --> 00:34:42,387
+电力需求确实会随着价格下降而上升，
+The demand for electricity certainly goes up as the price goes down,
+
+542
+00:34:42,387 --> 00:34:47,214
+但到某个点，你就很难想出还能用电力多做点什么，
+but at some point, like it gets harder to figure out incremental things to do with
+
+543
+00:34:47,214 --> 00:34:50,456
+至少历史上是这样。但是，你懂的，
+electricity, at least historically it has. But, you know,
+
+544
+00:34:50,456 --> 00:34:53,830
+增量的智能却有大量可以做的事情。
+there's a lot of things to do with incremental intelligence.
+
+545
+00:34:53,950 --> 00:34:55,790
+你可以让各种东西不断为你变得更好。
+You can just keep having stuff be better for you.
+
+546
+00:34:55,910 --> 00:34:59,653
+这让我想起早期计算革命时的一些名言，
+It reminds me of some of those quotes from the early computing revolution
+
+547
+00:34:59,653 --> 00:35:01,617
+当时人们会说，你懂的，
+when people would say, like, you know,
+
+548
+00:35:01,617 --> 00:35:04,870
+没人的电脑需要超过 640k 的内存之类的。
+no one needs more than 640k of RAM or whatever in their computer.
+
+549
+00:35:05,990 --> 00:35:08,990
+结果证明你需要。我们总能想出更多、更好的东西。
+Turns out you do. We just keep thinking of, like more and better stuff.
+
+550
+00:35:09,030 --> 00:35:10,790
+我觉得 AI 也会这样。
+And I think that's gonna happen with AI.
+
+551
+00:35:11,540 --> 00:35:16,860
+这里有个我很喜欢的数据。
+And actually maybe a statistic here that I really like.
+
+552
+00:35:17,100 --> 00:35:22,015
+六年半前，全世界 token 用量最高的是一位 OpenAI 员工，大约
+Six and a half years ago, the World token leader was an OpenAI employee using about
+
+553
+00:35:22,015 --> 00:35:23,460
+每月十万个 token。
+100,000 tokens a month.
+
+554
+00:35:24,660 --> 00:35:27,451
+这在当时看起来很荒谬。
+And this seemed ludicrous at the time.
+
+555
+00:35:27,451 --> 00:35:30,940
+全球人均用量基本是零。
+The worldwide average per capita was like zero.
+
+556
+00:35:31,960 --> 00:35:34,402
+现在，全球每月 token 的平均用量，
+Now, the worldwide average of tokens per month,
+
+557
+00:35:34,402 --> 00:35:37,760
+我觉得 token 是最蠢的指标，但我们只有这个，
+which I think tokens are the dumbest metric, but it's what we have.
+
+558
+00:35:38,200 --> 00:35:39,240
+大概就是十万。
+It's like 100,000.
+
+559
+00:35:39,800 --> 00:35:43,680
+而 OpenAI 里用量最高的人用到了几千亿。
+And the token leader at OpenAI uses something in the hundreds of billions.
+
+560
+00:35:45,400 --> 00:35:48,574
+如果这种情况再次发生，我觉得很可能会，
+If that happens again, which I think it probably will,
+
+561
+00:35:48,574 --> 00:35:52,806
+那么再过六年半，普通人每月大概会用，比如说，
+then in another six and a half years, the average person uses, let's say,
+
+562
+00:35:52,806 --> 00:35:57,672
+五千亿个 token，而用量最高的人会用到千万亿甚至更多
+500 billion tokens a month and the token leader uses a quadrillion or quadrillions
+
+563
+00:35:57,672 --> 00:35:58,730
+token，每个月。
+of tokens a month.
+
+564
+00:36:00,530 --> 00:36:02,410
+我觉得这会变成人们默认的预期。
+And I think that will just become the expectation.
+
+565
+00:36:04,210 --> 00:36:07,650
+假设这一切都发生了，都成真了。现在是十年后。
+So all of these things happen, they come to pass. It's 10 years from now.
+
+566
+00:36:09,130 --> 00:36:11,605
+那个最好的版本会是什么样，
+What's the best version of that,
+
+567
+00:36:11,605 --> 00:36:17,747
+十年后智能随取随用，superintelligence 已经到来，
+that 10 years from now with intelligence fully on tap, super intelligence here,
+
+568
+00:36:17,747 --> 00:36:22,130
+而我们把它搞定了，我们做到了。整个社会做到了。
+and we figure it out, we make it. You know, the society makes it.
+
+569
+00:36:23,130 --> 00:36:27,539
+我大概觉得，如果每年人们都有更多自由
+I kind of think if every year people have more freedom
+
+570
+00:36:27,539 --> 00:36:33,250
+和主动性，把更多时间花在自己想做的事情上，
+and agency to spend more of their time doing the stuff they want to do.
+
+571
+00:36:33,570 --> 00:36:35,513
+而且他们觉得生活质量
+And they feel like the quality of life
+
+572
+00:36:35,513 --> 00:36:38,460
+和时间的质量一年比一年高，
+and the quality of their time is going up year after year,
+
+573
+00:36:38,460 --> 00:36:42,677
+那我们大概就没什么大问题了。我们会避免掉那种疯狂的权力
+we'll probably be mostly okay. We will have avoided like a crazy concentration of
+
+574
+00:36:42,677 --> 00:36:44,290
+集中，或者经济崩溃。
+power or an economic collapse.
+
+575
+00:36:44,410 --> 00:36:48,530
+我们必然也会避免掉一次重大的安全事件。
+We'll have necessarily avoided a huge safety, um, incident.
+
+576
+00:36:48,650 --> 00:36:52,050
+我们会避免在任何一个时间单位里变化太快。
+We'll have avoided like too much change in any one time unit.
+
+577
+00:36:52,730 --> 00:36:56,280
+呃，你懂的，有一种反乌托邦，
+Um, and, you know, there's like one dystopia
+
+578
+00:36:56,280 --> 00:37:02,900
+是我对十年后特别担心的，那就是我们对 AI 安全反应过度。
+that I'm particularly nervous about 10 years from now is we overreact to AI safety.
+
+579
+00:37:03,140 --> 00:37:06,740
+于是我们说，各位，你们会得到癌症的治愈方法，
+And so we say, look, everyone, you're gonna get a cure for cancer.
+
+580
+00:37:07,100 --> 00:37:09,854
+你们会拥有物质上的富足，但你们不会有自由。
+You're gonna have material abundance, but you will have no freedom.
+
+581
+00:37:09,854 --> 00:37:10,820
+你们不会有任何主动性。
+You will have no agency.
+
+582
+00:37:10,860 --> 00:37:12,932
+那会是一个完美的监控国家。
+It will be a perfect surveillance state.
+
+583
+00:37:12,932 --> 00:37:15,980
+没有隐私，这就是你们会得到的。
+There will be no privacy and that's what it you're gonna get.
+
+584
+00:37:17,220 --> 00:37:19,624
+你们会得到极大的舒适，但你们会……
+You're gonna get great comfort, but you will have,
+
+585
+00:37:19,624 --> 00:37:22,429
+这个世界上不会再有什么真正值得你去做的事，
+there will be nothing left in the world for you to really do,
+
+586
+00:37:22,429 --> 00:37:23,860
+没有什么真正有意义的事。
+nothing that really matters.
+
+587
+00:37:23,980 --> 00:37:26,521
+你们就只是活着，你懂的，
+You'll just kind of live at the, you know,
+
+588
+00:37:26,521 --> 00:37:29,360
+供 AI 差遣，让它给你物质财富。
+service of the AI giving you material wealth.
+
+589
+00:37:30,950 --> 00:37:32,150
+我真的很想避免这一点。
+I'd really like to avoid that.
+
+590
+00:37:32,670 --> 00:37:35,430
+而且我觉得，人很容易接受暂时的妥协。
+And I think it's easy to accept temporary trade offs.
+
+591
+00:37:35,470 --> 00:37:38,022
+所以如果我们说，每年自由和主动性都必须提升，
+So if we say every year freedom and agency has got to go up,
+
+592
+00:37:38,022 --> 00:37:40,249
+人们必须更能掌控自己的时间，
+people have got to be more in control of their time
+
+593
+00:37:40,249 --> 00:37:43,181
+做更多自己想做的事，获得更多长期的成就感，
+and do more of the stuff they want and more long term fulfillment,
+
+594
+00:37:43,181 --> 00:37:44,430
+我觉得那会非常好。
+I think that'd be very good.
+
+595
+00:37:46,190 --> 00:37:52,670
+让我把你放回斯坦福大二那年，你正要来 YC。
+Let me put you back into sophomore year of Stanford. You're coming to YC.
+
+596
+00:37:53,410 --> 00:37:56,244
+呃，如果你能给自己，一个，一个，
+Um, if you could give yourself like a, a,
+
+597
+00:37:56,244 --> 00:37:59,679
+像漂流瓶一样传给那时的 Sam Altman，
+like a message in a bottle to that Sam Altman, um,
+
+598
+00:37:59,679 --> 00:38:02,170
+你现在会对他说什么？
+what would you say to him right now?
+
+599
+00:38:04,010 --> 00:38:08,477
+呃，我就会说，一切都会好起来的，你懂的，
+Um, I would just, it's all gonna work out like I it was, you know,
+
+600
+00:38:08,477 --> 00:38:11,226
+这感觉太疯狂了，确实很疯狂
+it feels like such a crazy, it is a crazy
+
+601
+00:38:11,226 --> 00:38:14,490
+创业是件压力很大的事。
+and it's very stressful thing to do a startup.
+
+602
+00:38:15,250 --> 00:38:18,486
+我的第一家创业公司做得并不好，
+And, you know, my first startup like didn't work out great
+
+603
+00:38:18,486 --> 00:38:21,250
+那算是我人生中挺艰难的一段时期。
+and it was like a sort of difficult time in my life.
+
+604
+00:38:21,770 --> 00:38:25,106
+但有一件事，我想很多人都会这么说，
+But it one of the thing I think this many people say this
+
+605
+00:38:25,106 --> 00:38:28,516
+当他们回看自己职业生涯早期时，
+as they like look back on the early part of their career,
+
+606
+00:38:28,516 --> 00:38:30,370
+你可以犯很多错误。
+you can make a lot of mistakes.
+
+607
+00:38:30,810 --> 00:38:35,690
+你可以搞砸事情，尤其科技行业对这些非常宽容。
+You can fail at stuff. Like the tech industry in particular is very forgiving of this.
+
+608
+00:38:36,360 --> 00:38:39,992
+我真希望当时能告诉自己，
+And I would have just like, I wish I could have like told myself to like,
+
+609
+00:38:39,992 --> 00:38:42,685
+保持所有的干劲和野心，但是，
+have all the drive and the ambition, but just, like,
+
+610
+00:38:42,685 --> 00:38:44,877
+一路上开心一点，并且相信
+be a little happier along the way and trust
+
+611
+00:38:44,877 --> 00:38:48,760
+一切最终都会好起来，因为当下真的太难了。
+that like eventually it was going to be okay because it feels so difficult.
+
+612
+00:38:48,760 --> 00:38:50,120
+那一刻既可怕又痛苦。
+And scary and painful in the moment.
+
+613
+00:38:50,680 --> 00:38:54,879
+没有比这更好的方式来结束 Startup School 2026 了，Sam Altman，
+Well, I can't think of a better way to end startup school 2026, Sam Altman,
+
+614
+00:38:54,879 --> 00:38:56,600
+非常感谢大家。谢谢。
+thank you all so much. Thanks.

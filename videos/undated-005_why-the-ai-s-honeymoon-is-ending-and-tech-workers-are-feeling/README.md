@@ -7,12 +7,13 @@
 - B站链接：https://www.bilibili.com/video/BV1GfKg6NEkm
 - 原视频链接：https://www.youtube.com/watch?v=_cmpIveXnvE
 - 发布时间：发布时间**: 2026-07-16 11:38:28
-- 字幕数量：1
+- 字幕数量：2
 - 提纲图数量：3
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_有翻译参考资料版.双语.中文在上.srt)
+- [字幕 1](subtitles/01_why-the-tech-workforce-is-quietly-splitting-in-two-opus4.srt)
+- [字幕 2](subtitles/02_why-the-tech-workforce-is-quietly-splitting-in-two-opus4.srt)
 
 ## 中文时间轴
 

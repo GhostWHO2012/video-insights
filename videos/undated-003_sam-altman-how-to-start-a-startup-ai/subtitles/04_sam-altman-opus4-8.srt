@@ -1,0 +1,6114 @@
+1
+00:00:00,200 --> 00:00:03,880
+[A] 今天我要和 OpenAI 的联合创始人 Sam Altman（萨姆·奥特曼）对谈。
+[A] Today, I'm sitting down with Sam Altman, the co-founder of OpenAI.
+
+2
+00:00:04,160 --> 00:00:09,400
+[A] 很久以前你在 Stanford 做过一场关于如何创办创业公司的演讲。
+[A] A long time ago you talked or did a talk at Stanford focused on how to start a startup.
+
+3
+00:00:09,560 --> 00:00:14,540
+[B] 过去这大概十年里，最大的变化是什么，
+[B] What is the biggest thing that has kind of shifted over the past like 10 years
+
+4
+00:00:14,540 --> 00:00:16,991
+[B] 从你最初做那些演讲到现在，
+[B] since you initially did those talks,
+
+5
+00:00:16,991 --> 00:00:21,576
+[B] 显然是 AI，还有如今一个小团队能做到的事情，
+[B] clearly AI and what is possible to do now with a small team of people has
+
+6
+00:00:21,576 --> 00:00:24,580
+[B] 以及你能做到这些事的速度。
+[B] and the speed with which you can do it and also.
+
+7
+00:00:24,660 --> 00:00:28,912
+[B] 不只是能做什么，考虑到世界变化如此之大，
+[B] Not only was possible like what you have to do to be competitive given how much the
+
+8
+00:00:28,912 --> 00:00:31,260
+[B] 要保持竞争力所需做的事感觉完全不同了。
+[B] world has shifted feels totally different.
+
+9
+00:00:32,460 --> 00:00:35,420
+[B] 一个只有十周的创业公司现在能做成什么样，让我惊叹。
+[B] It is amazing to me what a 10 week old startup now can look like.
+
+10
+00:00:36,300 --> 00:00:38,838
+[B] 而如果你看十年前一个十周的创业公司，
+[B] And also if you look like a ten week old startup from 10 years ago,
+
+11
+00:00:38,838 --> 00:00:39,940
+[B] 那基本上处境很糟。
+[B] you sort of are in bad shape.
+
+12
+00:00:40,380 --> 00:00:42,881
+[A] 你现在脑海里想到的那个十周的创业公司，
+[A] You think of the 10 week old startup in your mind today,
+
+13
+00:00:42,881 --> 00:00:46,660
+[A] 哪个是移动极快的创业公司的最佳例子？
+[A] what is the one that is the best example of a startup that moved extremely quickly?
+
+14
+00:00:47,060 --> 00:00:49,965
+[B] 我甚至不知道他们叫什么，但我见过一家，
+[B] I don't even know what they're called, but I met a,
+
+15
+00:00:49,965 --> 00:00:54,076
+[B] 一家大概只有两周的创业公司，差不多这样，
+[B] what will be a startup that is like two weeks old, something like that,
+
+16
+00:00:54,076 --> 00:00:58,540
+[B] 他们彻底重做了一整套办公、生产力软件之类的东西。
+[B] that has an entirely redone sort of office, productivity suite, whatever.
+
+17
+00:00:58,780 --> 00:01:03,305
+[B] 完全为这样一个世界打造：AI 得能使用文档、
+[B] All made for like a world where AI has got to be able to use documents,
+
+18
+00:01:03,305 --> 00:01:07,910
+[B] 演示文稿、表格等等，作为头等的使用者。
+[B] presentations, spreadsheets, whatever as a first class consumer.
+
+19
+00:01:08,630 --> 00:01:11,595
+[B] 我说不好，我感觉这在不久前对一家创业公司来说
+[B] And uh, I don't know, I felt like it would have been a year's worth of work for a
+
+20
+00:01:11,595 --> 00:01:12,630
+[B] 得是一年的工作量。
+[B] startup pretty recently.
+
+21
+00:01:13,150 --> 00:01:16,018
+[A] 我会假设，如果创办创业公司的门槛
+[A] I would assume that if the like barriers to starting startups
+
+22
+00:01:16,018 --> 00:01:19,449
+[A] 还有各种可用的工具越来越普及等等，
+[A] and the like tools out there become more proliferated and all this stuff,
+
+23
+00:01:19,449 --> 00:01:22,430
+[A] 你会以为更难的创业公司会变得更容易起步。
+[A] you would assume that like harder startups are easier to start.
+
+24
+00:01:23,460 --> 00:01:29,860
+[C] 而“难的创业公司”意味着什么，正在变得极快。
+[C] What it means to be a hard startup is changing so incredibly quickly.
+
+25
+00:01:31,380 --> 00:01:35,641
+[B] 所以我觉得我没有一个完美的心智模型来判断，在打造一家
+[B] That I don't think I have a perfect mental model for what over the many years
+
+26
+00:01:35,641 --> 00:01:38,458
+[B] 非常成功的公司所需的很多年里，
+[B] that it takes to build a very successful company,
+
+27
+00:01:38,458 --> 00:01:42,100
+[B] 什么会是真正难、真正有价值的事情？
+[B] what are going to be the really hard and really valuable things?
+
+28
+00:01:42,300 --> 00:01:44,535
+[B] 比如，我听很多人说，
+[B] Like, you know, I've heard a lot of people say, well,
+
+29
+00:01:44,535 --> 00:01:47,081
+[B] 现在物理世界里的任何东西都格外有价值，
+[B] anything in the physical world is extra valuable right now
+
+30
+00:01:47,081 --> 00:01:48,900
+[B] 因为软件将会变得免费。
+[B] because software is going to become free.
+
+31
+00:01:48,900 --> 00:01:52,827
+[B] 但你知道，用不了多久机器人就会变得非常厉害，
+[B] But, you know, oh, like, won't be that long until robots get really good and,
+
+32
+00:01:52,827 --> 00:01:55,008
+[B] 还有很多既有的预期，你知道的，
+[B] and a lot of the expectations of, you know,
+
+33
+00:01:55,008 --> 00:01:57,688
+[B] 造火箭之类的事真的很难，
+[B] it's really difficult to make rockets or whatever,
+
+34
+00:01:57,688 --> 00:01:59,870
+[B] 这可能会发生相当剧烈的变化。
+[B] that may change like quite dramatically.
+
+35
+00:02:00,510 --> 00:02:01,590
+[B] 我喜欢这样的时代。
+[B] I love times like this.
+
+36
+00:02:01,590 --> 00:02:04,480
+[B] 我认为创业公司拥有最大优势的时候，
+[B] I think startups are, they have the biggest edge
+
+37
+00:02:04,480 --> 00:02:08,960
+[B] 是地面变动最剧烈、成本快速下降、
+[B] when the ground is shifting the most and when costs are coming down rapidly
+
+38
+00:02:08,960 --> 00:02:12,790
+[B] 迭代周期快速缩短的时候，那时候创业公司，
+[B] and cycle times are coming down rapidly, that's when startups.
+
+39
+00:02:14,050 --> 00:02:19,901
+[B] 我真觉得就拥有巨大的内在优势，而这正在
+[B] Really, I think just have a massive inherent advantage and that's happening in
+
+40
+00:02:19,901 --> 00:02:22,206
+[B] 同时发生在这么多领域，
+[B] so many places at once right now
+
+41
+00:02:22,206 --> 00:02:25,930
+[B] 所以现在似乎是创业的绝佳时机，
+[B] that it seems like a great time to be doing startups
+
+42
+00:02:25,930 --> 00:02:32,490
+[B] 然而大多数创业公司都是“我现在要为某个企业垂直领域做 AI agents”。
+[B] and yet most startups are like I'm gonna go build AI agents for enterprise vertical X now.
+
+43
+00:02:34,000 --> 00:02:35,960
+[B] 这在很多情况下其实是可行的。
+[B] That actually will work in a lot of cases.
+
+44
+00:02:36,120 --> 00:02:40,217
+[B] 竞争会很激烈，而且可能并不是，事实上，
+[B] It'll be very competitive and it may not be like, in fact,
+
+45
+00:02:40,217 --> 00:02:46,320
+[B] 我会说这大概率不会是那个时代最成功、最具定义性的创业公司。
+[B] I'd say it probably won't be like the most successful defining startups of that era.
+
+46
+00:02:46,760 --> 00:02:51,167
+[B] 但它是行得通的，不过考虑到格局如此动荡，
+[B] Um, but it will work but but given how much the landscape is in flux,
+
+47
+00:02:51,167 --> 00:02:56,295
+[B] 我很惊讶没有更多人去做那种“我要去挑战
+[B] I am surprised there are not more people doing the like I'm gonna go take on the
+
+48
+00:02:56,295 --> 00:03:00,301
+[B] 那件疯狂的事，用这一整套全新的工具”，
+[B] crazy, the crazy thing with this completely new set of tools
+
+49
+00:03:00,301 --> 00:03:03,826
+[B] 并且愿意真正内化这样一个事实：
+[B] and also being willing to truly internalize the fact
+
+50
+00:03:03,826 --> 00:03:06,390
+[B] scaling laws 会持续下去。
+[B] that scaling laws are gonna continue.
+
+51
+00:03:07,030 --> 00:03:10,604
+[B] 并且去规划那些这个月还不可能或不划算，
+[B] And planning for the things that are not possible or economical this month,
+
+52
+00:03:10,604 --> 00:03:13,270
+[B] 但两年、四年或者随便多久后就会变得可能的事情。
+[B] but will be possible in two years, four years, whatever.
+
+53
+00:03:13,590 --> 00:03:17,438
+[B] 所以现在似乎是创业的绝佳时机，
+[B] So it seems like an unbelievable time to be starting startups
+
+54
+00:03:17,438 --> 00:03:19,550
+[B] 而且土壤非常肥沃。
+[B] and there's very fertile ground.
+
+55
+00:03:20,130 --> 00:03:24,030
+[B] 但也有，如果人们选择这条路我不做评判，
+[B] But there's also, and I no judgment if this is what people go for,
+
+56
+00:03:24,030 --> 00:03:29,180
+[B] 有一种极大的诱惑，就是直接把今天的 agents 用在那些容易
+[B] there's this incredible temptation to just like go apply today's agents to the easy
+
+57
+00:03:29,180 --> 00:03:30,210
+[B] 拿下的场景上，我能理解。
+[B] wins and I get it.
+
+58
+00:03:30,810 --> 00:03:33,979
+[A] 你这些年说过一件事，就是你基本上会尝试，
+[A] One thing that you've said throughout the years is you basically try to,
+
+59
+00:03:33,979 --> 00:03:36,197
+[A] 每当你遇到一个新的人，你会尝试定位
+[A] whenever you meet someone new, you try to like plot
+
+60
+00:03:36,197 --> 00:03:38,890
+[A] 他们在你对这个人是怎样一个人的心智模型里处于什么位置。
+[A] where they are on your mental model of who they are as a person.
+
+61
+00:03:38,970 --> 00:03:40,882
+[A] 然后下一次你再见到他们时，
+[A] And then the next time that you meet them,
+
+62
+00:03:40,882 --> 00:03:44,312
+[A] 你其实是想搞清楚他们进步了多少、进步有多快，
+[A] you basically want to figure out how far or how fast have they progressed,
+
+63
+00:03:44,312 --> 00:03:45,380
+[A] 做的就是这类判断。
+[A] did that sort of thing.
+
+64
+00:03:45,460 --> 00:03:49,685
+[A] 而在也许成千上万的人身上这么做，会影响你的一种能力，
+[A] And like doing this across maybe thousands of people impact your ability to kind of
+
+65
+00:03:49,685 --> 00:03:52,134
+[A] 就是说，好，这个模型今天是这么聪明，
+[A] say, okay, the model is this intelligent today,
+
+66
+00:03:52,134 --> 00:03:54,339
+[A] 三个月后又是那么聪明，
+[A] it's this intelligent three months later,
+
+67
+00:03:54,339 --> 00:03:58,380
+[A] 突然你就能把它画成曲线，这让你更容易相信这种增长。
+[A] suddenly you can like plot this out and it makes it easy to believe in the growth.
+
+68
+00:03:58,980 --> 00:04:02,741
+[B] 我觉得这两件事背后有个共通的东西，
+[B] I think there's like a general thing behind both of those,
+
+69
+00:04:02,741 --> 00:04:06,816
+[B] 那就是我逐渐建立起了对指数型趋势的高度信任，
+[B] which is I just like I developed a great trust in exponentials,
+
+70
+00:04:06,816 --> 00:04:09,010
+[B] 无论是人、公司还是模型。
+[B] in people or companies or models.
+
+71
+00:04:09,570 --> 00:04:15,059
+[B] 嗯，至少主观上我不觉得，看着
+[B] Um, I don't I don't think that subjectively least it doesn't feel like watching
+
+72
+00:04:15,059 --> 00:04:19,300
+[B] 模型进步和看着一个创始人成长是一回事，
+[B] model progress is the same as like watching a founder develop
+
+73
+00:04:19,300 --> 00:04:24,290
+[B] 但我觉得底层对世界的信念体系是一样的。
+[B] but I think the underlying belief system about the world is, is the same.
+
+74
+00:04:24,890 --> 00:04:27,071
+[B] 如果我还在给创业公司创始人做顾问，
+[B] If I were still advising startup founders,
+
+75
+00:04:27,071 --> 00:04:31,190
+[B] 这会是我最想让他们理解透的一件事。
+[B] this is the most important thing I would try to get them to wrap their heads around.
+
+76
+00:04:31,710 --> 00:04:34,629
+[B] 而这显然很难，原因和
+[B] And it is evidently hard for the same reason
+
+77
+00:04:34,629 --> 00:04:40,710
+[B] 市场上还留有可以押注高成长年轻创始人的“免费的钱”是一样的。
+[B] that there's like free money left in the market for betting on high growth young founders.
+
+78
+00:04:41,470 --> 00:04:44,550
+[B] 也就是说，市场对这一点还没有充分适应。
+[B] And it's like one of the market is still not adapted enough for that.
+
+79
+00:04:45,430 --> 00:04:49,913
+[B] 我觉得市场同样还没有充分适应，
+[B] I think the market is also still not adapted enough for like the exponential of
+
+80
+00:04:49,913 --> 00:04:51,982
+[B] 模型进步的指数曲线会继续下去，
+[B] model progress is going to continue
+
+81
+00:04:51,982 --> 00:04:56,810
+[B] 而且现在就着手去做那些需要更聪明或更便宜模型的事，是完全可以的。
+[B] and it is okay to start working on things now that require smarter or cheaper models.
+
+82
+00:04:57,530 --> 00:05:01,610
+[A] 这种不断变化的混乱，你是怎么变得擅长应对的？
+[A] This idea of constantly shifting chaos, how do you get good at it?
+
+83
+00:05:01,770 --> 00:05:04,050
+[A] 你是怎么变得擅长在混乱环境中运转的？
+[A] How do you get good at operating in a chaotic environment?
+
+84
+00:05:04,810 --> 00:05:08,770
+[B] 我觉得就是靠练习。有那么几件事，
+[B] I think it's just practice. There are a handful of things.
+
+85
+00:05:11,260 --> 00:05:15,540
+[B] 我觉得无论你在理智上理解得多透彻，
+[B] That I think no matter how much you intellectually understand,
+
+86
+00:05:15,540 --> 00:05:19,174
+[B] 都要经过大量反复，才能在情绪上真正扛得住，
+[B] take a lot of reps to like emotionally be able to handle
+
+87
+00:05:19,174 --> 00:05:23,776
+[B] 在大量混乱中运转，并且相信你能解决它，
+[B] and operating in a lot of chaos and trusting that you'll figure it out
+
+88
+00:05:23,776 --> 00:05:28,460
+[B] 相信最后会没事，相信这件事不会把你搞垮。
+[B] and it'll be okay and like this is not gonna be the thing that kills you.
+
+89
+00:05:28,460 --> 00:05:30,235
+[B] 而你还不太知道具体要怎么解决，
+[B] And you don't quite yet know how you're gonna solve it,
+
+90
+00:05:30,235 --> 00:05:31,260
+[B] 但你相信自己终会想出办法。
+[B] but you're gonna figure it out.
+
+91
+00:05:31,700 --> 00:05:37,140
+[B] 在我看来，这种东西只能靠亲身经历去学。
+[B] This seems to me to be something that you can only learn by going through it.
+
+92
+00:05:39,380 --> 00:05:42,978
+[B] 其实这正是年轻创始人的一个真正弱点，
+[B] And actually, this is a real weakness of young founders is
+
+93
+00:05:42,978 --> 00:05:48,300
+[B] 就是他们还没有那种在职业生涯中学会与之达成内心平静的经历。
+[B] that they have not had the career experience of getting to emotional peace with this.
+
+94
+00:05:48,300 --> 00:05:50,738
+[B] 所以在早期他们会非常难熬，
+[B] And so they have a very hard time with it in the early days
+
+95
+00:05:50,738 --> 00:05:53,018
+[B] 最终他们会学会，但代价是，你懂的，
+[B] and then they eventually learn it, but at, you know,
+
+96
+00:05:53,018 --> 00:05:54,820
+[B] 巨大的痛苦、成本和本可避免的失误。
+[B] great pain and cost and unforced errors.
+
+97
+00:05:56,580 --> 00:05:57,860
+[C] 你肯定会学会的。
+[C] You definitely will.
+
+98
+00:05:58,300 --> 00:06:02,095
+[B] 如果你最后从事的是那种高压、有影响力的工作，
+[B] If you end up in a high stress sort of impactful job,
+
+99
+00:06:02,095 --> 00:06:08,330
+[B] 你一定会学会应对混乱，并在其中运转得很好。
+[B] you will definitely learn how to deal with chaos and function very well through it.
+
+100
+00:06:08,570 --> 00:06:11,678
+[B] 至少大多数人会。但我不认为这东西教得会，
+[B] At least most people will. But I don't think it's teachable.
+
+101
+00:06:11,678 --> 00:06:13,170
+[B] 我觉得它只能靠自己学会。
+[B] I think it's only learnable.
+
+102
+00:06:13,410 --> 00:06:15,897
+[A] 你很久以前说过一句很有意思的话，
+[A] You had an interesting thing that you said a long time ago,
+
+103
+00:06:15,897 --> 00:06:19,471
+[A] 大意是当你第一次经历那种能搞垮公司的事件时，
+[A] which is basically like the first time you experience this company killing event,
+
+104
+00:06:19,471 --> 00:06:22,320
+[A] 感觉就像世界要崩塌了，然后你挺了过来。
+[A] feels like the world's falling apart and then you make it through.
+
+105
+00:06:22,360 --> 00:06:25,360
+[A] 到了第十次，就远没那么糟了。对。
+[A] And then by the 10th time, it's not nearly as bad. Yeah.
+
+106
+00:06:25,360 --> 00:06:27,960
+[A] 你会想，前九次我都撑过来了，这次大概也没那么糟。
+[A] And you're like, well, I survived the first nine. This one's probably not that bad.
+
+107
+00:06:28,520 --> 00:06:31,121
+[A] 你还有另一个想法，你在某个时候说过，
+[A] You also had this other idea where you said at some point,
+
+108
+00:06:31,121 --> 00:06:32,726
+[A] 我记得大概是一两年前，
+[A] I think it was like a year or two ago,
+
+109
+00:06:32,726 --> 00:06:35,880
+[A] 你得出的结论是，总会有事情出岔子。
+[A] you came to the conclusion that shit was always gonna be going wrong.
+
+110
+00:06:36,040 --> 00:06:37,916
+[A] 对。所以你多少得
+[A] Yeah. And so you kind of had to, like,
+
+111
+00:06:37,916 --> 00:06:42,480
+[A] 把体验痛苦、体验糟糕事情的过程内化成一种享受。
+[A] internalize the enjoyment of experiencing pain or, like, not great things happening.
+
+112
+00:06:43,110 --> 00:06:44,510
+[A] 呃，你是怎么完成这个转变的？
+[A] Uh, how did you make that transition?
+
+113
+00:06:45,150 --> 00:06:48,219
+[B] 你刚说这些的时候，我在回想，
+[B] I was reflecting earlier when you were saying this about how
+
+114
+00:06:48,219 --> 00:06:52,270
+[B] 当年我在 YC 做 office hours 时，我总能一眼看出谁是新创始人。
+[B] when I would do office hours at YC, I could always tell who the new founders were.
+
+115
+00:06:52,510 --> 00:06:52,790
+[B] 嗯。
+[B] Hmm.
+
+116
+00:06:53,350 --> 00:06:56,517
+[B] 因为他们面对事情糟糕透顶时的反应，和那种老手创始人不一样，
+[B] Because of the way that they reacted to stuff going horribly wrong versus the
+
+117
+00:06:56,517 --> 00:06:59,139
+[B] 因为我常常并不知道一家公司到底有多新，
+[B] founder, because I often didn't know like how new a company was,
+
+118
+00:06:59,139 --> 00:07:02,454
+[B] 但我能分辨出是刚进这一批的创始人，还是已经
+[B] but I could tell if it was like a founder in the batch versus a founder they've been
+
+119
+00:07:02,454 --> 00:07:03,790
+[B] 干了好几年的创始人。
+[B] doing this for a couple of years.
+
+120
+00:07:04,239 --> 00:07:07,599
+[B] 是通过他们谈论一个问题时的情绪状态吗？
+[B] By their like emotional state when they talked about a problem?
+
+121
+00:07:08,159 --> 00:07:14,782
+[B] 嗯，我觉得大多数人认为糟糕经历的反面是美好经历，
+[B] Um, I think most people think about the opposite of a bad experience is a good
+
+122
+00:07:14,782 --> 00:07:20,353
+[B] 他们当然更想要美好的经历，
+[B] experience and they would rather have the good experience, um,
+
+123
+00:07:20,353 --> 00:07:25,399
+[B] 因为那看起来更有趣、更愉快之类的。
+[B] because seems like more fun or more pleasant or whatever.
+
+124
+00:07:25,880 --> 00:07:31,040
+[B] 但你想想，糟糕经历的反面其实是没有经历。
+[B] But if you think about like the opposite of a bad experience is no experience.
+
+125
+00:07:31,480 --> 00:07:34,960
+[B] 而在不远的将来的某个时刻，你会进入没有经历的世界。
+[B] And at some point in the not distant future, you'll be in no experience land.
+
+126
+00:07:35,440 --> 00:07:41,025
+[B] 那时候，你就会对糟糕的经历心怀感激。Naval Ravikant
+[B] Uh, then, you know, you can be grateful for the bad experience to Naval Ravikant
+
+127
+00:07:41,025 --> 00:07:43,479
+[B] 曾说过一句我很喜欢的话，
+[B] used to say this thing that I loved,
+
+128
+00:07:43,479 --> 00:07:48,388
+[B] 那就是如果你的人生遥控器上有个快进键，
+[B] which is if you had like a fast forward button on a remote for your life,
+
+129
+00:07:48,388 --> 00:07:50,080
+[B] 你的人生就结束了。
+[B] your life would be over.
+
+130
+00:07:50,820 --> 00:07:52,929
+[B] 所以那些无聊的部分、糟糕的部分，
+[B] And so like the boring parts, the bad parts,
+
+131
+00:07:52,929 --> 00:07:54,980
+[B] 也远比没有经历要好。
+[B] it's like much better than no experience.
+
+132
+00:07:55,100 --> 00:07:59,860
+[B] 它们都是生活趣味的一部分，是情感的深度和广度。
+[B] It's all part of the like interestingness of and the kind of like emotional depth and range.
+
+133
+00:07:59,900 --> 00:08:03,658
+[A] 我不知道，反正我觉得对糟糕的日子心怀感激其实挺容易的。
+[A] And I don't know, I find it like fairly easy to be grateful for the bad days
+
+134
+00:08:03,658 --> 00:08:05,725
+[A] 说到难题，
+[A] when you think about like hard problems
+
+135
+00:08:05,725 --> 00:08:09,420
+[A] 是什么让人们兴奋地去攻克难题？
+[A] and like what rallies people to get excited to go work on hard problems?
+
+136
+00:08:09,780 --> 00:08:15,270
+[A] 你们在公司内部是怎么决定该去解决哪些问题、什么时候去做的？
+[A] How do you decide, like, internally at the company which things to go tackle and when?
+
+137
+00:08:15,790 --> 00:08:19,330
+[A] 什么时候你想专注于自己的核心能力，
+[A] And like when you want to like focus on just your core competencies versus like
+
+138
+00:08:19,330 --> 00:08:20,310
+[A] 什么时候又想扩大范围？
+[A] expanding the scope.
+
+139
+00:08:21,390 --> 00:08:28,336
+[C] 我觉得清晰的使命加上对问题的深刻理解，
+[C] I think like a clear mission and then a deep understanding of the problem together
+
+140
+00:08:28,336 --> 00:08:32,830
+[C] 就能相当好地指明你该做什么。
+[C] do a fairly good job of pointing to what you should do.
+
+141
+00:08:32,830 --> 00:08:37,428
+[B] 你不会全都做对。你还是会有些时候扩张过度，或者
+[B] You won't get it all right. You'll still like at some points overly expand or not be
+
+142
+00:08:37,428 --> 00:08:38,510
+[B] 不够有雄心。
+[B] ambitious enough.
+
+143
+00:08:38,990 --> 00:08:46,550
+[B] 嗯，但我们非常专注于一点：这将极大地赋能人们。
+[B] Um, but we are, we are like very focused on this is going to massively empower people.
+
+144
+00:08:46,750 --> 00:08:49,070
+[B] 这个过程会有波折，但会很美好。
+[B] It's going to be, you know, choppy but wonderful.
+
+145
+00:08:49,550 --> 00:08:54,854
+[B] 对我们来说极其重要的是，让世界上的权力更加去中心化、
+[B] And it's extremely important to us that power in the world get more decentralized
+
+146
+00:08:54,854 --> 00:08:56,180
+[B] 更加分散。
+[B] and more spread out.
+
+147
+00:08:56,940 --> 00:09:00,703
+[B] 事实上，我现在最担心的AI风险之一就是AI
+[B] And in fact, like one of the biggest AI risks I am worried right now is like AI
+
+148
+00:09:00,703 --> 00:09:02,402
+[B] 威权主义，
+[B] authoritarianism and, you know,
+
+149
+00:09:02,402 --> 00:09:06,287
+[B] 一小撮人或公司觉得自己需要掌控世界，
+[B] a small number of people or companies thinking they need to control the world
+
+150
+00:09:06,287 --> 00:09:07,440
+[B] 那会非常、非常糟糕。
+[B] that be very, very bad.
+
+151
+00:09:07,920 --> 00:09:12,145
+[B] 嗯，但基于这个使命，我们觉得必须想办法让AI
+[B] Um, but given this mission, we feel like we need to figure out how to make AI
+
+152
+00:09:12,145 --> 00:09:15,678
+[B] 极其充足、极其便宜、极其强大，
+[B] extremely abundant, extremely cheap, extremely powerful,
+
+153
+00:09:15,678 --> 00:09:19,280
+[B] 把它交到每个人手里，让大家都能大量使用。
+[B] put it in everyone's hands and like have a lot of it to get to use.
+
+154
+00:09:20,250 --> 00:09:22,791
+[B] 当我们审视是什么挡在路上时，
+[B] And as we look at what's in the way of that,
+
+155
+00:09:22,791 --> 00:09:27,723
+[B] 有一大堆新的约束，比如芯片、能源、数据中心、
+[B] there's a whole bunch of new constraints like chips and energy and data centers
+
+156
+00:09:27,723 --> 00:09:32,580
+[B] 机器人，以及所有需要整合起来才能构建这个平台的部件，
+[B] and robots and all the pieces that need to come together to build this platform
+
+157
+00:09:32,580 --> 00:09:33,850
+[B] 这样我们才能，
+[B] so that we can, like.
+
+158
+00:09:34,170 --> 00:09:37,690
+[B] 实现这个使命。而在这个平台之上，你能构建很多东西。
+[B] Enable this mission. Now there's a bunch of things you can build on top of that platform.
+
+159
+00:09:37,730 --> 00:09:39,690
+[B] 比如你可以去做每一个垂直领域、每一家创业公司。
+[B] Like you can go build every vertical, every startup.
+
+160
+00:09:40,310 --> 00:09:42,371
+[B] 我们并不想那样去做。
+[B] We have no desire to do that like that.
+
+161
+00:09:42,371 --> 00:09:45,430
+[B] 我认为去中心化的经济很重要，也很好。
+[B] I think a decentralized economy is important and good.
+
+162
+00:09:45,470 --> 00:09:49,510
+[B] 我希望我们只要把生产这些
+[B] And I would like us to just be really great about producing these units of
+
+163
+00:09:49,510 --> 00:09:53,213
+[B] 智能单元这件事做到极致，让全世界觉得，天哪，这真是
+[B] intelligence and make the world like, man, this is just, you know,
+
+164
+00:09:53,213 --> 00:09:55,906
+[B] 能力惊人、划算得不可思议，
+[B] incredibly capable, an incredibly great deal,
+
+165
+00:09:55,906 --> 00:09:59,070
+[B] 而我们会把它注入到每一个产品和服务里。
+[B] and we're going to imbue it in every product and service.
+
+166
+00:09:59,550 --> 00:10:02,110
+[B] 所以我觉得这对我们该做什么很有指导意义。
+[B] And so I think that's very instructive to us about what we have to go do.
+
+167
+00:10:02,510 --> 00:10:08,478
+[B] 有意思的是，实现极其充足、高质量、
+[B] My interestingly, the kind of key inputs to like extraordinarily abundant high
+
+168
+00:10:08,478 --> 00:10:13,466
+[B] 低成本智能的那些关键投入，比如能源、
+[B] quality, low cost intelligence, a lot of those things like energy,
+
+169
+00:10:13,466 --> 00:10:19,790
+[B] 比如机器人，也正是你在充足智能的世界里真正需要的东西。
+[B] like robots are also things that you really want in a world of abundant intelligence.
+
+170
+00:10:20,390 --> 00:10:23,432
+[B] 如果创意充裕，各种好东西都有，
+[B] If ideas are plentiful and there's all this great stuff,
+
+171
+00:10:23,432 --> 00:10:27,250
+[B] 我们仍然生活在物理世界里，仍然想让事情真正发生。
+[B] we still live like in a physical world and we still want stuff to happen.
+
+172
+00:10:27,410 --> 00:10:31,000
+[B] 所以，我们得有能力在那个世界里把事情做成。
+[B] So, you know, we need to be able to make stuff happen in that world.
+
+173
+00:10:31,640 --> 00:10:37,076
+[B] 我一直在想，能源和机器人在这条智能基础设施
+[B] And I have wondered if, like, the fact that energy and robots are going to be
+
+174
+00:10:37,076 --> 00:10:42,600
+[B] 扩张之路上会如此重要，
+[B] so important to stay in on this, in this intelligence infrastructure ramp.
+
+175
+00:10:42,880 --> 00:10:47,240
+[B] 而紧随其后你立刻需要的也是能源和机器人。
+[B] And also the things that you need immediately after it are energy and robots.
+
+176
+00:10:47,760 --> 00:10:51,700
+[B] 嗯，这到底说明了什么深刻的道理，还是只是最无聊、最显而易见的事实，
+[B] Um, says anything deep at all or is just like the most boring obvious thing,
+
+177
+00:10:51,700 --> 00:10:54,878
+[B] 那就是要生产任何东西，包括智能，
+[B] which is like to produce anything, intelligence included,
+
+178
+00:10:54,878 --> 00:10:56,530
+[B] 你都需要操纵物质。
+[B] you need to manipulate matter.
+
+179
+00:10:56,570 --> 00:10:59,416
+[B] 但挺有意思的是，我们现在做的事对这些新领域如此依赖，
+[B] But it is kind of interesting that we need these new areas
+
+180
+00:10:59,416 --> 00:11:03,050
+[B] 而紧接着又会更加依赖它们。
+[B] so much for what we're doing now and then so much more immediately after.
+
+181
+00:11:03,570 --> 00:11:05,210
+[A] 你觉得你最大的瓶颈是什么？
+[A] What do you think your biggest bottleneck is?
+
+182
+00:11:05,410 --> 00:11:08,793
+[A] 呃，如果你说，我们希望这个规模持续不受限地扩张，
+[A] Uh, if you just say like, we want this to continue scaling unabated,
+
+183
+00:11:08,793 --> 00:11:11,210
+[A] 你能看到的最大瓶颈是什么？
+[A] what is the biggest bottleneck that you can see?
+
+184
+00:11:12,970 --> 00:11:15,490
+[B] 先是晶体管，然后是电子，就这个顺序。
+[B] Transistors and then electrons in that order.
+
+185
+00:11:15,850 --> 00:11:19,339
+[A] 比如说，像 Jensen 这样的人，他特别
+[A] So let's say, you know, you take someone like Jensen where he's, like,
+
+186
+00:11:19,339 --> 00:11:22,647
+[A] 擅长把所有供应商都对齐到，你知道，
+[A] incredibly good at aligning all his suppliers towards, you know,
+
+187
+00:11:22,647 --> 00:11:23,970
+[A] 他对未来的愿景上。
+[A] his vision for the future.
+
+188
+00:11:24,370 --> 00:11:26,690
+[A] 我觉得你在这方面也非常厉害。
+[A] I think you're also extremely good at this.
+
+189
+00:11:26,770 --> 00:11:31,961
+[A] 呃，你是怎么想的，不仅让 OpenAI 按 OpenAI 的时间表走，
+[A] Um, how do you kind of think about not only keeping OpenAI on the OpenAI timelines,
+
+190
+00:11:31,961 --> 00:11:35,930
+[A] 还要让世界其他人也跟上 OpenAI 的时间表。
+[A] but also keep the rest of the world on OpenAI timelines as well.
+
+191
+00:11:36,090 --> 00:11:37,770
+[B] 你得经常和他们沟通，必须这样。
+[B] You talk to them a lot. You have to.
+
+192
+00:11:37,850 --> 00:11:42,309
+[B] 你不能只是说，我需要你在这个日期交付这台涡轮机或这块芯片，
+[B] And you don't just say like, I need you to like deliver this turbine or this chip on
+
+193
+00:11:42,309 --> 00:11:45,770
+[B] 因为大家会说，行吧，随便。
+[B] this date because, you know, people will say, okay, whatever.
+
+194
+00:11:45,890 --> 00:11:47,560
+[B] 他们还有一堆别的优先事项。
+[B] They have a bunch of other priorities.
+
+195
+00:11:47,560 --> 00:11:50,170
+[B] 你真得给他们看，这是即将推出的模型。
+[B] You really have to like show them here is the upcoming model.
+
+196
+00:11:50,210 --> 00:11:51,810
+[B] 这是它能带来什么，这是我们的研究。
+[B] Here's what it enables. Here's our research.
+
+197
+00:11:52,010 --> 00:11:53,657
+[B] 就是说我们，对我们的核心供应商，
+[B] Like we, we, for our core suppliers,
+
+198
+00:11:53,657 --> 00:11:57,282
+[B] 我们真的会详细展示我们在做什么，为什么我们这样相信，
+[B] we really show them a lot about what we're doing, why we believe what we believe,
+
+199
+00:11:57,282 --> 00:11:58,490
+[B] 它将带来什么。
+[B] what it's going to enable.
+
+200
+00:11:59,090 --> 00:12:00,984
+[B] 呃，你知道，你会琢磨明白，我是说，
+[B] Um, and you know, you figure out, I mean,
+
+201
+00:12:00,984 --> 00:12:04,256
+[B] 最重要的是让他们相信这个使命，
+[B] the most important thing is to like get them to believe in the mission
+
+202
+00:12:04,256 --> 00:12:05,920
+[B] 以及为什么他们需要优先考虑它。
+[B] and why they need to prioritize it.
+
+203
+00:12:05,920 --> 00:12:10,440
+[B] 但你也要尽量想办法，让他们的激励和你的对齐。
+[B] But you also try to figure out how to align their incentives with yours as much as you can.
+
+204
+00:12:10,800 --> 00:12:12,808
+[A] Charlie Munger 有句很棒的话，他说，
+[A] Charlie Munger has this awesome line where he's like,
+
+205
+00:12:12,808 --> 00:12:15,752
+[A] 每次我以为自己理解了激励的力量，
+[A] every time I've thought that I understood the power of incentives, I've, like,
+
+206
+00:12:15,752 --> 00:12:16,600
+[A] 我都还是低估了它们。
+[A] underestimated them.
+
+207
+00:12:16,840 --> 00:12:20,256
+[A] 你是怎么成功地把不同合作伙伴的激励，
+[A] How do you, like, successfully align all the incentives of the different partners
+
+208
+00:12:20,256 --> 00:12:21,840
+[A] 以及 OpenAI 内部人员的激励都对齐的？
+[A] as well as the people inside of OpenAI?
+
+209
+00:12:22,470 --> 00:12:27,221
+[C] 嗯，公司在这方面是很了不起的载体，一开始，你知道，
+[C] Well, companies are amazing vehicles for this to start the, you know,
+
+210
+00:12:27,221 --> 00:12:31,562
+[C] 我小时候就特别着迷于工业革命，
+[C] as a kid I was like very fascinated by the Industrial Revolution
+
+211
+00:12:31,562 --> 00:12:34,675
+[C] 我把它理解成一堆技术，
+[C] and I understood it as a bunch of technologies
+
+212
+00:12:34,675 --> 00:12:39,590
+[C] 出于某种令人费解的原因，恰好在同一时期出现。
+[C] that happened to come around the same time and for some puzzling reason.
+
+213
+00:12:39,670 --> 00:12:41,030
+[B] 又恰好在同一时期扩张起来。
+[B] Happened to scale it around the same time.
+
+214
+00:12:42,780 --> 00:12:45,850
+[B] 你知道，我会和朋友、父母之类的人讨论，
+[B] And, you know, I would like talk to my friends or my parents or whatever about
+
+215
+00:12:45,850 --> 00:12:49,700
+[B] 到底是这项技术还是那项技术是最重要的发明。
+[B] whether it was, like, this technology was the most important invention or this one or that one.
+
+216
+00:12:50,100 --> 00:12:55,285
+[B] 而以我现在的视角来看，作为一个花了更多时间
+[B] And my read of it from my current lens is like someone who has now spent more time
+
+217
+00:12:55,285 --> 00:13:00,709
+[B] 思考商业的人，我觉得最重要的发明是股份公司。
+[B] thinking about business, is that the the important invention was the joint stock
+
+218
+00:13:00,709 --> 00:13:03,660
+[B] 在它被发明之前，
+[B] corporation. And before that was invented.
+
+219
+00:13:04,750 --> 00:13:09,095
+[B] 你知道，那时都是靠信任运转的家族企业，
+[B] And, you know, you had these like kind of family businesses that ran on trust
+
+220
+00:13:09,095 --> 00:13:10,750
+[B] 你得认识每一个人。
+[B] and you had to know everyone.
+
+221
+00:13:11,270 --> 00:13:13,713
+[B] 那时还没有公司的概念。
+[B] And you didn't have the idea of a corporation.
+
+222
+00:13:13,713 --> 00:13:16,670
+[B] 也没有股东的概念，真的。
+[B] You didn't have the idea of like stockholders, really?
+
+223
+00:13:17,310 --> 00:13:19,990
+[B] 然后突然间，这个新东西被发明出来了。
+[B] And then all of a sudden this new thing was invented.
+
+224
+00:13:21,030 --> 00:13:27,151
+[B] 各国、世界上的君主们赋予了它一种新的地位，
+[B] Countries like the sovereigns of the world granted this sort of a new kind of status,
+
+225
+00:13:27,151 --> 00:13:30,123
+[B] 一种以前根本不存在的东西，
+[B] really a thing that didn't exist before,
+
+226
+00:13:30,123 --> 00:13:35,369
+[B] 一个非常强大的东西——我们要让这些新实体出现，
+[B] this very powerful thing that we're gonna let these new entities emerge
+
+227
+00:13:35,369 --> 00:13:38,080
+[B] 又不给它们国家的权力。
+[B] and not give them the power of a state.
+
+228
+00:13:38,080 --> 00:13:40,200
+[B] 但给它们远超个人的权力。
+[B] But give them like much more than the power of a person.
+
+229
+00:13:40,840 --> 00:13:44,633
+[B] 从根本上说，这关乎，你知道，激励对齐，
+[B] And fundamentally, this was about, you know, incentive alignment,
+
+230
+00:13:44,633 --> 00:13:48,560
+[B] 还有责任保护，这又是另一种激励对齐。
+[B] liability Protection, which is another kind of incentive alignment.
+
+231
+00:13:49,120 --> 00:13:51,215
+[B] 呃，还有汇集资本的能力，
+[B] Um, the ability to like amass capital
+
+232
+00:13:51,215 --> 00:13:55,540
+[B] 突然间你就能做家族企业做不到的事。
+[B] and all of a sudden you could do things beyond what a family business could do.
+
+233
+00:13:56,260 --> 00:14:00,528
+[B] 那种环境让人们能筹钱去开发技术，
+[B] And that environment let people raise money to develop technologies,
+
+234
+00:14:00,528 --> 00:14:02,988
+[B] 带有很强的投机性质，汇聚资本，
+[B] very speculative nature, pool capital,
+
+235
+00:14:02,988 --> 00:14:07,979
+[B] 想办法让不同的公司在不同方向上专业化，
+[B] figure out ways to get different companies to sort of specialize in different ways
+
+236
+00:14:07,979 --> 00:14:13,260
+[B] 并相互协作，还有成熟的金融体系和新型金融工具。
+[B] and interact with each other, serious financial systems and new kinds of instruments.
+
+237
+00:14:14,420 --> 00:14:15,780
+[B] 这真的是件了不起的事。
+[B] This was really an incredible thing.
+
+238
+00:14:16,700 --> 00:14:22,197
+[B] 公司这个概念，为对齐非常庞大群体的激励，
+[B] And, and the idea of a company has done a huge amount to align incentives of very
+
+239
+00:14:22,197 --> 00:14:24,819
+[B] 起到了巨大作用，现在你知道，
+[B] large groups of people now, you know,
+
+240
+00:14:24,819 --> 00:14:28,540
+[B] 数百万人可以成为一家公司的股东。
+[B] millions of people can be shareholders of a company.
+
+241
+00:14:29,060 --> 00:14:31,491
+[B] 我们还做了很多其他事情，
+[B] There's a bunch of other things we do,
+
+242
+00:14:31,491 --> 00:14:36,825
+[B] 但我不想低估这项了不起的发明，还有，
+[B] but I don't want to diminish what has been this incredible invention and like the,
+
+243
+00:14:36,825 --> 00:14:42,158
+[B] 资本主义在人类社会里那种夸张的超常表现，有一张图
+[B] the just ridiculous over performance of capitalism in human society like a chart
+
+244
+00:14:42,158 --> 00:14:46,943
+[B] 我觉得人们应该多看看，就是关于
+[B] that I think people should look at much more than they do is the like fall of
+
+245
+00:14:46,943 --> 00:14:48,119
+[B] 极端贫困的下降。
+[B] extreme poverty.
+
+246
+00:14:48,199 --> 00:14:51,559
+[B] 过去一百年里，还有婴儿死亡率之类的一切。
+[B] Over the last hundred years, like infant mortality and all the other things.
+
+247
+00:14:51,679 --> 00:14:53,639
+[B] 你想看哪个都行，任何相关的指标。
+[B] Any of them that you want, any of the associated things?
+
+248
+00:14:54,119 --> 00:14:57,235
+[B] 嗯，你知道，如果你回头看那些，
+[B] Um, you know, if you like kind of look back at that,
+
+249
+00:14:57,235 --> 00:15:00,960
+[B] 那是最放大的视角，也就是过去一百年。
+[B] that's like the most zoomed in view the last hundred years.
+
+250
+00:15:01,520 --> 00:15:06,895
+[B] 但如果你回看经济增长、生活质量的提升，呃，
+[B] But if you look back at kind of economic growth, quality of life improvements, uh,
+
+251
+00:15:06,895 --> 00:15:11,006
+[B] 所有这些东西，把整个人类历史都画出来，
+[B] all these things and you just like drew out all of human history
+
+252
+00:15:11,006 --> 00:15:14,800
+[B] 然后在公司这种形式被发明的那一刻标一条线。
+[B] and you put the line when, like, the company was invented.
+
+253
+00:15:15,560 --> 00:15:19,148
+[B] 你会看到那条曲线的形状
+[B] You would see, like, a really quite interesting change in the shape of
+
+254
+00:15:19,148 --> 00:15:20,200
+[B] 在那之后发生了非常有趣的变化。
+[B] that curve after it.
+
+255
+00:15:20,930 --> 00:15:23,790
+[B] 除此之外，呃，我觉得我们有一个使命，
+[B] Beyond that, uh, I think we have a mission
+
+256
+00:15:23,790 --> 00:15:29,090
+[B] 它超越任何经济力量所能带来的一切。
+[B] that transcends any amount of economic power, anything else could ever do.
+
+257
+00:15:29,250 --> 00:15:30,930
+[B] 呃，那可能才是更重要的。
+[B] Uh, and that's probably more important.
+
+258
+00:15:31,250 --> 00:15:34,428
+[A] 我觉得最有意思的一件事是，你有没有见过
+[A] One of the things that I've thought is the most interesting is have you ever seen
+
+259
+00:15:34,428 --> 00:15:35,825
+[A] 那种统计数据，大概是说，
+[A] one of those stats where it's like,
+
+260
+00:15:35,825 --> 00:15:38,810
+[A] 我不知道有多大比例的 CEO 是反社会人格者和精神病态者。
+[A] I don't know what percentage of like CEOs are sociopaths and psychopaths.
+
+261
+00:15:39,410 --> 00:15:40,450
+[A] 好像非常高。
+[A] It's like very high.
+
+262
+00:15:40,450 --> 00:15:41,210
+[C] 大家都会聊这个。
+[C] People talk about this.
+
+263
+00:15:41,650 --> 00:15:45,676
+[A] 所以我在想，资本主义是不是第一个让这些人
+[A] So I, I wonder if capitalism is the first system that allowed these people
+
+264
+00:15:45,676 --> 00:15:50,296
+[A] 那些极度自私自利的人，把他们的激励重新对齐到
+[A] that are like super kind of self serving to like their incentives are realigned with
+
+265
+00:15:50,296 --> 00:15:54,520
+[A] 社会利益上，去创造出色的产品，然后突然间你既帮助了社会，
+[A] societies and just create great products and then suddenly you help society
+
+266
+00:15:54,520 --> 00:15:57,820
+[A] 自己也赢了。嗯，我确实认识很多反社会人格的
+[A] but you also win. Um, I definitely know a lot of sociopathic.
+
+267
+00:15:57,860 --> 00:16:01,460
+[B] CEO，但我认识的最优秀的那些，我不会把他们归到那一类。
+[B] CEOs, but I would say the best ones I know, I would not put in that category.
+
+268
+00:16:01,780 --> 00:16:03,340
+[B] 有很多自我意识极强的 CEO。
+[B] There's a lot of very high ego CEOs.
+
+269
+00:16:03,860 --> 00:16:07,749
+[B] 他们对自己的评价高得离谱，这种程度也许
+[B] People just like incredibly high opinions of themselves on a way that maybe,
+
+270
+00:16:07,749 --> 00:16:10,180
+[B] 原本会单纯地让人厌烦。
+[B] like would have been just like purely annoying.
+
+271
+00:16:10,340 --> 00:16:13,965
+[B] 但现在因为人们可以买他们的股份，也许你就
+[B] But now because people can like, you know, buy their shares, maybe you like,
+
+272
+00:16:13,965 --> 00:16:16,440
+[B] 对他们那些讨厌的举动多一点容忍。
+[B] tolerate their annoyance and antics a little more.
+
+273
+00:16:16,440 --> 00:16:19,440
+[B] 所以这里面确实有某种利益对齐的东西。我也说不好。
+[B] So there's definitely some aligning thing there. I don't know.
+
+274
+00:16:19,440 --> 00:16:22,260
+[B] 我觉得有很多超大公司的 CEO
+[B] I think there are a lot of CEOs of very large companies
+
+275
+00:16:22,260 --> 00:16:25,080
+[B] 我根本不会把他们归到反社会人格那一类。
+[B] that I would not put in the sociopath category at all.
+
+276
+00:16:25,280 --> 00:16:26,520
+[A] 你觉得是什么在驱动这些人？
+[A] What do you think drives those people?
+
+277
+00:16:27,560 --> 00:16:29,680
+[B] 我是说，每个人都不一样。比如？
+[B] I mean, it's different for different ones of them. Like?
+
+278
+00:16:31,720 --> 00:16:35,231
+[B] 肯定有一部分是想看看自己在这场游戏里能做到多好，或者每年能比
+[B] Definitely seeing how good they can get at the game or like how much they can get
+
+279
+00:16:35,231 --> 00:16:38,040
+[B] 自己进步多少，我觉得这是很大一部分原因。
+[B] better than themselves every year, I think is a huge part of it.
+
+280
+00:16:38,480 --> 00:16:40,360
+[B] 你知道，这在智力上挺有刺激感的。
+[B] You know, it's like intellectually quite stimulating.
+
+281
+00:16:41,680 --> 00:16:44,883
+[A] 抛开所有其他问题，你算是在玩一场最有意思的
+[A] For all of the other problems, like you're kind of playing the most interesting
+
+282
+00:16:44,883 --> 00:16:47,505
+[A] 战略游戏，那会很有趣。如果让你想想
+[A] strategic game and that can be fun if you had to think about the way
+
+283
+00:16:47,505 --> 00:16:50,659
+[A] 你今天做事的方式，和十年前的做事方式相比，
+[A] that you operate today versus the way that you would have operated 10 years ago
+
+284
+00:16:50,659 --> 00:16:53,960
+[A] 假设把你放在你现在完全一样的位置上？最大的
+[A] if placed in the exact same position that you are currently? What are the biggest.
+
+285
+00:16:54,000 --> 00:16:55,320
+[A] 这两个人之间的区别是什么？
+[A] Differences between those two people.
+
+286
+00:16:56,240 --> 00:17:00,849
+[B] 好，回到上一个问题，最驱动我的东西是，
+[B] Well, on the to the previous question, the thing that drives me the most is like,
+
+287
+00:17:00,849 --> 00:17:04,760
+[B] 这是我能想到的最有意思、最重要的事。
+[B] this is the most interesting, important thing I can imagine doing.
+
+288
+00:17:04,800 --> 00:17:07,360
+[B] 而我们现在就处在奇点之中，
+[B] And we are now like in the singularity,
+
+289
+00:17:07,360 --> 00:17:12,560
+[B] 这就是那个时刻。十年前，这还是个相当遥远的
+[B] like this is the moment for the last 10 years ago, this was like a kind of far off.
+
+290
+00:17:13,580 --> 00:17:14,740
+[B] 顶多算是个梦。
+[B] Dream at best.
+
+291
+00:17:17,300 --> 00:17:18,620
+[B] 那时看起来非常不可能。
+[B] It seemed very improbable.
+
+292
+00:17:19,220 --> 00:17:22,222
+[B] 而现在我们真的身处在那个时刻，就是我们过去
+[B] And now we're like actually in the moment that we used to, like,
+
+293
+00:17:22,222 --> 00:17:24,820
+[B] 在午餐桌上很不当真地聊起的那个时刻。
+[B] talk about at the lunch table in a very not serious way.
+
+294
+00:17:26,540 --> 00:17:30,956
+[B] 所以驱动我的是，我这辈子都在等待这个时刻，
+[B] And so the thing that drives me is I've been waiting for this my whole life
+
+295
+00:17:30,956 --> 00:17:35,740
+[B] 我觉得它会非常了不起，对世界极其正面、无比美好。
+[B] and I think it's gonna be incredible, hugely positive, awesome for the world.
+
+296
+00:17:36,300 --> 00:17:38,700
+[B] 嗯，我很兴奋能投入去做这件事。
+[B] Um, I'm excited to get to work on that.
+
+297
+00:17:38,700 --> 00:17:42,607
+[B] 我也觉得其他公司描绘的一些另类愿景相当
+[B] I also think some of the alternative visions painted by other companies are like
+
+298
+00:17:42,607 --> 00:17:43,540
+[B] 令人恐惧。
+[B] quite terrifying.
+
+299
+00:17:43,580 --> 00:17:45,860
+[B] 我会确保有人去对抗它，不让它成为现实。
+[B] I'm going to make sure that gets pushed against and is not what happens.
+
+300
+00:17:46,420 --> 00:17:50,820
+[B] 嗯，但和十年前最大的不同就是，我们真的置身其中了。
+[B] Um, but the main thing of what's different than 10 years ago is like we're actually in it.
+
+301
+00:17:50,860 --> 00:17:51,820
+[B] 就像这是真实的。
+[B] Like this is the real.
+
+302
+00:17:52,860 --> 00:17:57,153
+[B] 我觉得这两点都成立：它整体上是一条疯狂的指数曲线，
+[B] I think it is both true that it is all one crazy exponential
+
+303
+00:17:57,153 --> 00:18:00,730
+[B] 而任何单一时刻又都不是那个临界点。
+[B] and any one moment is not like the tipping point.
+
+304
+00:18:01,330 --> 00:18:05,241
+[B] 同时我们又莫名其妙地处在又一个决定性的时期，
+[B] And also that we are somehow in another one of those decisive periods
+
+305
+00:18:05,241 --> 00:18:09,770
+[B] 就像我们10年前起步时那样，曲线可能走向这边，也可能走向那边。
+[B] where the curve can go one way or another like it was when we started 10 years ago.
+
+306
+00:18:10,130 --> 00:18:13,570
+[A] 你觉得把这段曲线走对，会带来哪些最大的影响？
+[A] What do you think the biggest impacts are on getting this part of the curve right?
+
+307
+00:18:14,650 --> 00:18:20,020
+[B] 我觉得，还有一些重大的 AI 对齐问题要解决，
+[B] I think like, there are still major AI alignment issues to solve
+
+308
+00:18:20,020 --> 00:18:26,505
+[B] 还有安全问题，还有重大的经济问题、就业的未来，
+[B] and safety issues and there are still major economic issues, future of jobs,
+
+309
+00:18:26,505 --> 00:18:28,430
+[B] 诸如此类的东西。
+[B] all that kind of stuff.
+
+310
+00:18:28,870 --> 00:18:33,017
+[B] 但我认为当下这个阶段的核心之争是，
+[B] But I think the fight of the current moment is,
+
+311
+00:18:33,017 --> 00:18:38,910
+[B] 我们会走向一个 AI 威权主义的世界，还是走向自由？
+[B] are we going to head to a world of AI authoritarianism or liberty?
+
+312
+00:18:39,510 --> 00:18:44,115
+[B] 我们会不会因为那些非常真实的安全问题，
+[B] Are we going to decide that because of the very real safety issues
+
+313
+00:18:44,115 --> 00:18:46,673
+[B] 和经济问题就决定，
+[B] and economic issues that, you know,
+
+314
+00:18:46,673 --> 00:18:52,046
+[B] 我们想要单一模型成为机器之神，或者由某家公司来掌控这一切，
+[B] we want one single model to be the machine god or the company associated to do
+
+315
+00:18:52,046 --> 00:18:56,224
+[B] 还是说我们会讲，你知道会是这样，
+[B] that or are we going to say like, you know what it's gonna be,
+
+316
+00:18:56,224 --> 00:18:57,930
+[B] 它可能会有点混乱。
+[B] it may be a little messy.
+
+317
+00:18:58,330 --> 00:19:03,770
+[B] 但每一次人类为了安全而牺牲自由，结果都是——
+[B] But every time that humanity has traded off its liberty for safety, it's been.
+
+318
+00:19:04,829 --> 00:19:08,469
+[B] 长期来看是净亏损，所以我们要把这交到人们手中。
+[B] A long term net loss, and so we are going to put this in the hands of people.
+
+319
+00:19:08,549 --> 00:19:09,549
+[B] 我们要赋能他们。
+[B] We're going to empower them.
+
+320
+00:19:09,589 --> 00:19:12,929
+[B] 我们要让社会表达它的想法，
+[B] We are going to let society express its ideas
+
+321
+00:19:12,929 --> 00:19:16,269
+[B] 并以他们想要的方式使用这项技术。
+[B] and use this technology in the way they want.
+
+322
+00:19:16,389 --> 00:19:19,422
+[B] 当然，是在一些护栏之内，带着一些护栏，但你知道，
+[B] Of course, according to some guardrails, with some guardrails, but, you know,
+
+323
+00:19:19,422 --> 00:19:20,709
+[B] 拥有巨大的力量和潜力。
+[B] with a lot of power and potential.
+
+324
+00:19:21,389 --> 00:19:24,109
+[B] 呃，我真的很在意我们以这种方式去做。
+[B] Uh, and I really care that we do it that way.
+
+325
+00:19:24,630 --> 00:19:27,468
+[A] 你之前在台上和 Patrick Collison 对谈时，
+[A] When you were talking with Patrick Holson on stage,
+
+326
+00:19:27,468 --> 00:19:32,088
+[A] 大概是几个月前吧，你说过一句让我印象很深的话，
+[A] must've been like a couple months ago, there was this fat saying thing that you said,
+
+327
+00:19:32,088 --> 00:19:36,840
+[A] 大意是你在内部每天要和300到400人交谈或发消息。
+[A] which is basically like you will talk or text with three to 400 people a day internally.
+
+328
+00:19:37,040 --> 00:19:40,080
+[B] 我发消息给的人比我认识的任何人都多。我不觉得这是件好事。
+[B] I text more people than anybody else I know. I don't think this is, like, a good thing.
+
+329
+00:19:40,280 --> 00:19:42,640
+[B] 我觉得这其实是个坏习惯。为什么？
+[B] I think this is actually, uh, like a bad habit. Why?
+
+330
+00:19:43,320 --> 00:19:46,638
+[B] 呃，因为它占用了我大部分时间，而且我会变得，
+[B] Um, because it takes up like most of my time and I get like into,
+
+331
+00:19:46,638 --> 00:19:48,720
+[B] 我现在的注意力持续时间非常短。
+[B] I have a very short attention span now.
+
+332
+00:19:49,440 --> 00:19:49,720
+[A] 有意思。
+[A] Interesting.
+
+333
+00:19:50,290 --> 00:19:51,690
+[A] 那这让你能做到什么？
+[A] What does that enable you to do that?
+
+334
+00:19:51,730 --> 00:19:53,650
+[B] 因为这样一来你就掌握了大量的上下文信息。
+[B] Like otherwise you have a huge amount of context.
+
+335
+00:19:53,690 --> 00:19:56,941
+[B] 我的意思是，我就像一个不太聪明的 AI 模型，但拥有海量的，
+[B] I mean, I'm like a AI model that's not that smart, but just has like a huge amount,
+
+336
+00:19:56,941 --> 00:20:00,290
+[B] 关于当下正在发生一切的短期上下文，然后就忘掉。
+[B] like a short term context on like whatever's happening right now and then forget.
+
+337
+00:20:00,650 --> 00:20:03,550
+[A] 这能让你做出别人做不出的决策吗？
+[A] Does that enable you to make decisions that other people wouldn't have?
+
+338
+00:20:03,550 --> 00:20:05,290
+[A] 比如哪些公司决策是更好还是更差？
+[A] Like what company decisions better or not?
+
+339
+00:20:05,410 --> 00:20:08,010
+[B] 我不知道。我是说，它让我能做出和别人不同的决策。
+[B] I don't know. I mean, it lets me make different decisions than other people would.
+
+340
+00:20:08,570 --> 00:20:11,610
+[A] 在过去大概12个月里，你做了哪些不同的决策，
+[A] What different decisions would you have you made in the last like 12 months
+
+341
+00:20:11,610 --> 00:20:14,160
+[A] 是如果没有这么多上下文你就不会做出的？
+[A] that you wouldn't have made if you didn't have so much context?
+
+342
+00:20:14,800 --> 00:20:17,694
+[B] 我不确定有没有一个能公开分享的具体例子，
+[B] I don't know if I have like a specific one I can share publicly,
+
+343
+00:20:17,694 --> 00:20:20,474
+[B] 但有很多情况是，你知道，因为我，
+[B] but there's like a lot of things where, you know, because I,
+
+344
+00:20:20,474 --> 00:20:24,446
+[B] 我知道某个即将到来的、随机的研究突破，它会影响
+[B] I know about some random research breakthrough impending that is gonna like affect
+
+345
+00:20:24,446 --> 00:20:26,489
+[B] 某个客户或某个供应商，诸如此类，
+[B] some customer or some supplier, whatever,
+
+346
+00:20:26,489 --> 00:20:30,120
+[B] 我当下就能做出稍微不同的决策。而如果我不知道——
+[B] I can make a slightly different decision in the moment. And if I hadn't known.
+
+347
+00:20:30,120 --> 00:20:32,320
+[B] 那天早上不知道，我就会做出不同的决策，而那会更糟。
+[B] It that morning, I would have made a different decision. It would have been worse.
+
+348
+00:20:32,720 --> 00:20:36,628
+[A] 我觉得你最擅长的事情之一，就是那种长期
+[A] One of the things that I think you are the best at is kind of like long term
+
+349
+00:20:36,628 --> 00:20:40,139
+[A] 思考，可与此同时又感觉一切都变化得如此之快，
+[A] thinking and yet it also seems like things are moving so quickly
+
+350
+00:20:40,139 --> 00:20:43,385
+[A] 世界变化如此之快，以至于规划20年之后，
+[A] and the world is changing so fast that planning 20 years out
+
+351
+00:20:43,385 --> 00:20:45,240
+[A] 然后再倒推回来。
+[A] and then like looking backwards.
+
+352
+00:20:45,560 --> 00:20:46,880
+[A] 我甚至不确定这样做还有没有意义。
+[A] I don't even know if that makes sense.
+
+353
+00:20:47,760 --> 00:20:51,000
+[A] 你是怎么看的？你的时间视野是在缩短吗？
+[A] How do you think about this? How is like, is your time horizon shortening?
+
+354
+00:20:51,680 --> 00:20:54,240
+[B] 我其实并不试图倒推着规划。
+[B] I actually don't try to plan backwards.
+
+355
+00:20:54,320 --> 00:20:58,439
+[B] 我试着对未来持有少数几个坚定的信念，
+[B] I try to have like a, a small number of strongly held convictions about the future
+
+356
+00:20:58,439 --> 00:21:00,837
+[B] 那些关于事物大方向的走向，
+[B] that are like direction tends to head towards,
+
+357
+00:21:00,837 --> 00:21:04,895
+[B] 然后我试着从当前状态往前规划，比如我们现在能
+[B] but then I try to like plan forwards from the current state about like what can we
+
+358
+00:21:04,895 --> 00:21:07,600
+[B] 做什么，今年能做什么？有时候你确实
+[B] do now, what can we do this year? And sometimes you do.
+
+359
+00:21:07,600 --> 00:21:10,880
+[B] 得在五年或十年的视野上规划一些事情。
+[B] Have to, like, plan a few things on a, you know, five or 10 year horizon.
+
+360
+00:21:11,480 --> 00:21:15,520
+[B] 但我尽量向前规划，由对未来的少数几个信念来指引。
+[B] But I try to plan forward guided to a small number of beliefs about the future.
+
+361
+00:21:16,120 --> 00:21:20,167
+[B] 我觉得有很多人对未来有太多固执的看法
+[B] I think there are a lot of people who have way too many beliefs about the future
+
+362
+00:21:20,167 --> 00:21:22,760
+[B] 有一种僵化的世界观，还想把一切都硬套进去
+[B] and a kind of rigid worldview that they try to fit.
+
+363
+00:21:22,800 --> 00:21:25,685
+[B] 结果他们就变成在不断追逐
+[B] And then but what happens is they end up like chasing, you know,
+
+364
+00:21:25,685 --> 00:21:28,680
+[B] 你会看到航天公司变成 AI 公司之类的
+[B] you see like space companies turn into AI companies or whatever.
+
+365
+00:21:29,080 --> 00:21:32,473
+[B] 而其实只保留少数几件事
+[B] Um, and like having just a small number of things
+
+366
+00:21:32,473 --> 00:21:38,157
+[B] 你对未来深信不疑，其余部分保持灵活
+[B] that you deeply believe about the future and being very flexible on the rest, um,
+
+367
+00:21:38,157 --> 00:21:41,550
+[B] 并且始终忠于核心，这很有帮助
+[B] and staying very true to the core is, is helpful.
+
+368
+00:21:42,070 --> 00:21:44,705
+[A] 我最了解的一个人，他公司最重要的
+[A] One of the people that I know the best, his top, you know,
+
+369
+00:21:44,705 --> 00:21:48,486
+[A] 核心价值观就是关键路径，只专注于关键路径
+[A] company core value is just critical path and just focusing on the critical path
+
+370
+00:21:48,486 --> 00:21:52,382
+[A] 盯住最大障碍背后的关键驱动因素
+[A] and like staying focused on the key drivers of whatever the biggest roadblock is,
+
+371
+00:21:52,382 --> 00:21:55,590
+[A] 先把它搞定，再解决下一个，如此循环。你
+[A] just unfuck that and then go to the next one and do that again. How do.
+
+372
+00:21:55,590 --> 00:21:57,074
+[A] 在自己的人生里怎么看待关键路径
+[A] You think about critical path in your own life
+
+373
+00:21:57,074 --> 00:21:58,910
+[A] 当你在做这些决定的时候
+[A] when you're kind of like trying to make these decisions.
+
+374
+00:21:59,830 --> 00:22:04,630
+[B] 说实话，很长时间以来，我都专注于一个目标：充足智能
+[B] I mean, for so long now, I have felt focused on the singular goal of abundant intelligence.
+
+375
+00:22:05,510 --> 00:22:09,645
+[B] 我相信，只要不出现奇怪的权力集中
+[B] And a belief that, like, incredible human prosperity will come from that as long
+
+376
+00:22:09,645 --> 00:22:11,928
+[B] 人类会因此迎来难以置信的繁荣
+[B] as we don't have a weird power concentration
+
+377
+00:22:11,928 --> 00:22:14,150
+[B] 也不会出现某种新型的威权主义
+[B] and kind of a new kind of authoritarianism.
+
+378
+00:22:14,710 --> 00:22:18,510
+[B] 任何时候，我都很清楚通往那里的关键路径是什么
+[B] It has been fairly clear to me at any given time what's on the critical path to get there.
+
+379
+00:22:18,910 --> 00:22:20,883
+[B] 我从来没有被诱惑去想
+[B] And I have not been tempted by, you know,
+
+380
+00:22:20,883 --> 00:22:24,470
+[B] 是不是该重新考虑目标，或去想别的事情
+[B] should I reconsider the goal or should I think about these other things?
+
+381
+00:22:25,710 --> 00:22:28,413
+[B] 最近我倒是稍微多想了一点，就是
+[B] I have been thinking about that a little bit more recently of like, okay,
+
+382
+00:22:28,413 --> 00:22:30,800
+[B] 如果我们真的接近超级智能，那接下来是什么
+[B] if we really are close to super intelligence, it's what's next?
+
+383
+00:22:31,200 --> 00:22:35,800
+[B] 但这大概就是我主观的感受
+[B] But but it's this that's kind of how I, I subjectively feel.
+
+384
+00:22:35,800 --> 00:22:36,440
+[B] 我们已经很接近了
+[B] We are close.
+
+385
+00:22:36,440 --> 00:22:40,640
+[B] 这是十多年来我第一次去想
+[B] This is the first time in like more than a decade I've thought about what is the
+
+386
+00:22:40,640 --> 00:22:42,280
+[B] 下一件事是什么，会是那个牧场吗
+[B] next thing and is it the ranch?
+
+387
+00:22:43,240 --> 00:22:46,806
+[B] 我是说，路上也许还会有几件事，但没错
+[B] Uh, I mean, eventually there might be a few more things on the way, but that is, yes,
+
+388
+00:22:46,806 --> 00:22:47,960
+[B] 那就是最终的计划
+[B] that is the eventual plan.
+
+389
+00:22:48,040 --> 00:22:51,603
+[A] 如果让你猜一下，Sam 在退隐牧场之前
+[A] If you had to like try to guess what else does Sam want to accomplish
+
+390
+00:22:51,603 --> 00:22:52,640
+[A] 还想完成什么
+[A] before he ranches?
+
+391
+00:22:53,840 --> 00:22:58,416
+[B] 你看，AI 超级智能就快建成了
+[B] Um, look, AI super intelligence is gonna get built like that, you know,
+
+392
+00:22:58,416 --> 00:23:03,302
+[B] 还没完成，但我们正处在通往它的下滑道上，到达是很
+[B] not done but like gonna we are we are on the glide path to they get there is very
+
+393
+00:23:03,302 --> 00:23:08,188
+[B] 明确的：丰富、去中心化、广泛可及，并确保
+[B] clear abundance and decentralize and like wide access to it and making sure
+
+394
+00:23:08,188 --> 00:23:11,600
+[B] 它最终带来广泛共享的繁荣
+[B] that it ends up with like broadly shared prosperity.
+
+395
+00:23:12,080 --> 00:23:13,240
+[B] 我真的很想完成这件事
+[B] I'd really like to accomplish that.
+
+396
+00:23:13,240 --> 00:23:16,690
+[B] 所以也许这就是我一直在想的下一件事
+[B] So maybe that that's the thing that I've been like thinking about as the next thing,
+
+397
+00:23:16,690 --> 00:23:19,640
+[B] 就是我们在技术上要如何完成我们的使命
+[B] like how does technologically we're going to accomplish our mission.
+
+398
+00:23:20,200 --> 00:23:23,890
+[B] 我觉得我们很多的世界观，以及很多关于安全的信念
+[B] I think a lot of our worldview and a lot of our beliefs about safety
+
+399
+00:23:23,890 --> 00:23:28,400
+[B] 还有它会带来的影响，这些我们也都做到了
+[B] and the impact is going to have, have also, we've gotten those things done, too.
+
+400
+00:23:29,000 --> 00:23:33,602
+[B] 但你知道，广泛共享的繁荣
+[B] Um, but, you know, very broadly, shared prosperity and, uh,
+
+401
+00:23:33,602 --> 00:23:36,640
+[B] 以及真正致力于赋能这个世界
+[B] a real focus on enabling the world here.
+
+402
+00:23:37,300 --> 00:23:38,820
+[B] 这看起来非常重要
+[B] Um, that seems very important.
+
+403
+00:23:39,460 --> 00:23:41,224
+[A] 我听你反复说过
+[A] I've heard you say again and again, uh,
+
+404
+00:23:41,224 --> 00:23:43,540
+[A] 在临界情况下就该登上飞机这个想法
+[A] this idea of get on planes in marginal situations.
+
+405
+00:23:43,980 --> 00:23:45,660
+[A] 我这么做过很多很多次
+[A] I've done this a huge number of times.
+
+406
+00:23:47,220 --> 00:23:48,820
+[A] 到目前为止效果都挺好
+[A] Uh, so far it's working pretty well.
+
+407
+00:23:48,940 --> 00:23:51,060
+[B] 挺好，我觉得这是非常靠谱的建议
+[B] Good, I think, I think it's, I think it's very solid advice.
+
+408
+00:23:51,460 --> 00:23:54,180
+[A] 你上一次在临界情况下登上飞机是什么时候
+[A] When was the last time that you got on a plane in a marginal situation?
+
+409
+00:23:54,900 --> 00:23:57,460
+[B] 我不能说是为了什么，但就在最近，而且成了
+[B] Well, I can't say what for, but very recently and it worked out.
+
+410
+00:23:57,870 --> 00:23:58,910
+[D] 恭喜。谢谢
+[D] Congratulations. Thank you.
+
+411
+00:23:59,790 --> 00:24:03,270
+[D] 我其实真的不想去，那是很不方便的、要在外面过两晚
+[D] And I really didn't want to. It was like a very inconvenient two overnights.
+
+412
+00:24:03,510 --> 00:24:06,790
+[D] 不想去，还有新生宝宝，一团乱。但结果其实还不错
+[D] Didn't want to do it. New baby, whole mess. But I did okay, actually.
+
+413
+00:24:06,990 --> 00:24:11,521
+[D] 带我了解一下你决定做这次全球巡回的心路历程
+[D] Take me into your, like, mental process for deciding to do this world tour
+
+414
+00:24:11,521 --> 00:24:15,533
+[D] 这真的，我是说，很难倒回到三年前
+[D] that is just, I mean it again, it's like hard to rewind three years
+
+415
+00:24:15,533 --> 00:24:18,950
+[D] 因为现在感觉 AI 好像一直都在
+[D] because now like it feels like AI has been here forever.
+
+416
+00:24:18,990 --> 00:24:20,110
+[D] 但三年前
+[D] But three years ago.
+
+417
+00:24:21,030 --> 00:24:24,230
+[B] 我们刚发布 GPT-4，整个世界都乱套了
+[B] We had just launched GPT 4. The world was melting down.
+
+418
+00:24:25,390 --> 00:24:28,950
+[B] 每个人都吓坏了，大家都是“天哪”
+[B] Everybody was freaking out. Um, everybody was just like, oh, man.
+
+419
+00:24:29,670 --> 00:24:32,390
+[B] 没有人知道该怎么想
+[B] And no one knew what to think.
+
+420
+00:24:32,470 --> 00:24:36,034
+[B] 我能感觉到，就像风暴云正在酝酿
+[B] And I could just feel these, like storm clouds brewing
+
+421
+00:24:36,034 --> 00:24:40,866
+[B] 比如人们变得很愤怒，或者一些世界各国领导人在问，
+[B] and like people just getting angry or it was like world leaders were like,
+
+422
+00:24:40,866 --> 00:24:44,430
+[B] 我们是不是该介入接管、把这些东西关掉？
+[B] do we need to, like, take control and shut things down?
+
+423
+00:24:44,550 --> 00:24:47,847
+[B] 好像在问这东西是不是要觉醒了，那真是一段很怪的时期，
+[B] Like is this thing waking up in about it was it was weird time and
+
+424
+00:24:47,847 --> 00:24:49,748
+[B] 因为这一切发生得太快了，
+[B] because it had all happened so fast,
+
+425
+00:24:49,748 --> 00:24:54,630
+[B] 人们还来不及消化、来不及经历这个适应过程之类的。
+[B] people had not had time to like wrap their head around it, go through this process, whatever.
+
+426
+00:24:55,150 --> 00:24:59,013
+[B] 所以你懂的，我们就一直收到各种不断升级的动静，还有这些，
+[B] Uh, so, you know, we were like getting all of this escalating stuff and all these,
+
+427
+00:24:59,013 --> 00:25:01,550
+[B] 各国领导人都在问，你愿意来见见我们吗？
+[B] like, world leaders were like, will you come meet us?
+
+428
+00:25:01,590 --> 00:25:03,950
+[B] 我们就想着做这个做那个。我当时想，呃。
+[B] We're like, you know, thinking about doing this and that. I was like, uh.
+
+429
+00:25:04,970 --> 00:25:08,610
+[B] 我觉得得是我或者公司里的人去，但那时候公司还不大。
+[B] I think if I or someone from the company, but at the time company is not very big.
+
+430
+00:25:08,610 --> 00:25:09,970
+[B] 所以我想，那大概只能是我去了。
+[B] So I was like probably have to be me.
+
+431
+00:25:10,370 --> 00:25:14,980
+[B] 如果不去露面跟人当面谈，我感觉事情会变得很糟，
+[B] Does not go like show up and talk to people I'd like a census about to go very badly
+
+432
+00:25:14,980 --> 00:25:19,730
+[B] 我本来想安排一堆短途行程，但我讨厌长途飞行。
+[B] and I was thinking about doing like a bunch of short trips, but I hate long flights.
+
+433
+00:25:19,770 --> 00:25:21,130
+[B] 我讨厌倒时差，全都讨厌。
+[B] I hate jet lag. I had the whole thing.
+
+434
+00:25:21,130 --> 00:25:26,070
+[B] 所以我想，干脆短时间内一次解决掉。
+[B] So I was like, I'm just gonna like get this over with in a short period of time.
+
+435
+00:25:26,750 --> 00:25:28,510
+[B] 呃，是 Brian Chesky 建议我这么做的。
+[B] Um, Brian Chesky advised me to do it.
+
+436
+00:25:28,510 --> 00:25:30,551
+[B] 他为 Airbnb 做过类似的事，
+[B] He had done something for Air B, similar for Air B, BMB,
+
+437
+00:25:30,551 --> 00:25:32,320
+[B] 但他大概只跑了八个城市之类的。
+[B] but he had done like eight cities or something.
+
+438
+00:25:32,560 --> 00:25:33,800
+[A] 你就想，管他呢，冲了。
+[A] And you're like, fuck it, we ball.
+
+439
+00:25:33,960 --> 00:25:34,760
+[B] 那就来个 30 个、20 个吧。
+[B] Let's just do 30, 20.
+
+440
+00:25:34,840 --> 00:25:37,720
+[C] 我记得我们跑了 28 个国家，35 天。
+[C] I think we did 28 countries, 35 days.
+
+441
+00:25:38,640 --> 00:25:41,960
+[B] 呃，我基本就住在飞机上了，那感觉很奇怪。
+[B] Uh, I like lived on an airplane. It was a very strange.
+
+442
+00:25:42,600 --> 00:25:44,400
+[C] 你有床吗？我有那种——
+[C] Did you have a bed? I had like a.
+
+443
+00:25:44,400 --> 00:25:45,720
+[B] 嗯，还挺舒服的。
+[B] Yeah, I was comfortable.
+
+444
+00:25:45,760 --> 00:25:50,280
+[A] 不过呢，呃，我平时坐经济舱，所以差别挺大。
+[A] But yeah, I said, um, I fly coach, so it's a little bit different.
+
+445
+00:25:50,440 --> 00:25:52,720
+[B] 这比那强多了吧？这可比那强太多了。
+[B] This is better than that, right? This is a lot better than that.
+
+446
+00:25:52,720 --> 00:25:54,560
+[B] 但你懂的，旅行本身还是很折磨人。
+[B] But like, you know, it's like travel still sucks.
+
+447
+00:25:54,640 --> 00:25:57,002
+[B] 就算你把它弄得再舒服，你还是会，
+[B] Like you can make it as comfortable as you want and you still, like,
+
+448
+00:25:57,002 --> 00:25:59,450
+[B] 想念自己的床、自己的时区、自己的办公室之类的。
+[B] miss your own bed and your own time zone and your office and whatever.
+
+449
+00:25:59,610 --> 00:26:03,904
+[A] 我学到的一件事是，不管多少人号称有治倒时差的
+[A] One thing that I've Learned is no matter how many people have like these cures for
+
+450
+00:26:03,904 --> 00:26:05,570
+[A] 妙方，全都是扯淡。
+[A] jet lag, they're all bullshit.
+
+451
+00:26:05,730 --> 00:26:06,690
+[A] 反正就是难受。
+[A] Like it just sucks.
+
+452
+00:26:07,210 --> 00:26:08,250
+[A] 你的大脑不喜欢这样。
+[A] Your brain doesn't like it.
+
+453
+00:26:08,410 --> 00:26:11,610
+[B] 因为我去了那么多地方，我从来没有——
+[B] I never in because I went to so many places.
+
+454
+00:26:11,650 --> 00:26:16,530
+[B] 整趟旅程里我最大的一次时差变化也就四个小时。
+[B] I think my biggest time zone change was four hours the whole trip.
+
+455
+00:26:16,980 --> 00:26:19,180
+[B] 而且大多是一次跨一个小时地跳着走。
+[B] And mostly it was like a one hour at a time hop.
+
+456
+00:26:19,780 --> 00:26:26,100
+[B] 所以我倒时差不算严重，就是特别累，而且很奇怪。
+[B] So I wasn't that jet lagged. I was just like exhausted and it was very strange.
+
+457
+00:26:26,380 --> 00:26:29,426
+[B] 能这么快地看遍世界其实挺酷的，
+[B] It was kind of cool to get to see the world so quickly
+
+458
+00:26:29,426 --> 00:26:31,674
+[B] 因为你真的能感受到，
+[B] because you really do get a sense for,
+
+459
+00:26:31,674 --> 00:26:36,460
+[B] 从一个地方到另一个地方之间那些很微妙的文化差异。
+[B] like cultural differences that are very subtle when you go from place to place.
+
+460
+00:26:36,500 --> 00:26:39,808
+[B] 但到了后期，最后那几天我开始，
+[B] But by the end of it, like the last few days I started,
+
+461
+00:26:39,808 --> 00:26:43,192
+[B] 就是那种很怪的、半睡半醒的、
+[B] it was one of these like weird, you know, half asleep,
+
+462
+00:26:43,192 --> 00:26:45,500
+[B] 半梦半醒的状态。
+[B] half awake kind of somewhat dreams.
+
+463
+00:26:45,820 --> 00:26:49,553
+[B] 但我开始有一种类似幻象的感觉，怎么说呢，
+[B] But I started having this like vision feeling, whatever,
+
+464
+00:26:49,553 --> 00:26:51,420
+[B] 觉得自己躺在小时候的床上。
+[B] of being in my childhood bed.
+
+465
+00:26:52,180 --> 00:26:52,540
+[C] 有意思。
+[C] Interesting.
+
+466
+00:26:52,620 --> 00:26:54,140
+[B] 这种感觉之前和之后我都没有过。
+[B] Which I never had before or since.
+
+467
+00:26:54,420 --> 00:26:56,127
+[B] 但我会迷迷糊糊地醒过来，
+[B] But I would sort of like vaguely wake up
+
+468
+00:26:56,127 --> 00:26:58,900
+[B] 会以为自己在小时候的房间、小时候的床上。
+[B] and I would think I was in my childhood bed in my childhood room.
+
+469
+00:26:59,820 --> 00:27:03,980
+[B] 我就想，好吧，这是某种很深层的“该回家了”的信号。
+[B] And I was like, okay, this is some, like, deep it's time to go home thing.
+
+470
+00:27:04,260 --> 00:27:06,660
+[B] 就像你的潜意识在反抗之类的。
+[B] You're like subconsciousness fighting back or something like that.
+
+471
+00:27:06,940 --> 00:27:11,256
+[A] 有意思的是，当你进入丧尸模式、还在勉强维持运转时，
+[A] Interesting when you're in zombie mode and you're kind of like trying to function,
+
+472
+00:27:11,256 --> 00:27:13,820
+[A] 呃，或者叫哥布林模式，随你怎么说。
+[A] I think, uh, or goblin mode, whatever you prefer.
+
+473
+00:27:14,500 --> 00:27:16,940
+[A] 你会有什么变化？你身上有什么不一样了？
+[A] How do you change? Like, what is different about you?
+
+474
+00:27:17,620 --> 00:27:20,540
+[A] 你怎么决定继续撑下去？我确实——
+[A] How do you decide to keep on going? I definitely.
+
+475
+00:27:21,420 --> 00:27:25,540
+[B] 到了快结束的时候，我就开始倒数还有几天能回家。
+[B] Got to this point near the end where I was like counting down the days till I could be home.
+
+476
+00:27:25,740 --> 00:27:29,383
+[B] 呃，因为每一天都像是，你懂的，
+[B] Um, I was like, I, cause each day was like, was like, you know,
+
+477
+00:27:29,383 --> 00:27:33,755
+[B] 连续 14 个小时不停歇，而我又不是个外向的人，你懂的，
+[B] 14 hours of like non stop and I'm like not a extroverted person, you know,
+
+478
+00:27:33,755 --> 00:27:37,180
+[B] 有些时候我一天要见几百号人。
+[B] I was meeting like hundreds of people a day in some cases.
+
+479
+00:27:37,940 --> 00:27:41,940
+[B] 呃，到后期紧张情绪缓和了一些。
+[B] Um, and like, tensions lowered by the end of it.
+
+480
+00:27:41,940 --> 00:27:46,684
+[B] 但一开始，整个世界都非常紧张，然后就，
+[B] But at the beginning, like, the world was like very nervous and, and then like,
+
+481
+00:27:46,684 --> 00:27:49,750
+[B] 你知道，我觉得后来它确实平静下来了。
+[B] you know, I think once it just like it did calm down.
+
+482
+00:27:50,750 --> 00:27:54,061
+[B] 我觉得有一点帮助的是，事情很清楚，
+[B] I think one thing that helped is it was clear that like,
+
+483
+00:27:54,061 --> 00:27:55,900
+[B] 我知道自己什么时候能回家，
+[B] I knew when I was gonna get home
+
+484
+00:27:55,900 --> 00:27:58,990
+[B] 也知道接下来一段时间还得再来一遍。
+[B] and I knew I was gonna have to do it again for a while.
+
+485
+00:27:59,350 --> 00:28:00,906
+[B] 后来我做过一些规模小一点的。
+[B] Um, I've done smaller ones since.
+
+486
+00:28:00,906 --> 00:28:03,630
+[B] 我大概一年会做一两次那样的事。
+[B] I probably do like something like that once or twice a year.
+
+487
+00:28:04,489 --> 00:28:07,999
+[B] 但我想说的是，我学到的一点是，我更愿意
+[B] But I was gonna say, like a thing I Learned is that I would much
+
+488
+00:28:07,999 --> 00:28:12,772
+[B] 把一堆国际出差集中放在七到十天里一次搞定，
+[B] rather put a bunch of international travel together in like a seven or 10 day chunk
+
+489
+00:28:12,772 --> 00:28:15,089
+[B] 而不是分散成一堆一天来回的行程。
+[B] than a bunch of one day trips spread out.
+
+490
+00:28:15,249 --> 00:28:16,649
+[B] 所以我总是尽量这么做。
+[B] So I always do try to do it that way.
+
+491
+00:28:16,649 --> 00:28:20,548
+[A] 我觉得很多人会高估
+[A] Now, I think a lot of people overestimate the, like,
+
+492
+00:28:20,548 --> 00:28:23,449
+[A] 大多数行动所涉及的风险。
+[A] risk involved in making most actions.
+
+493
+00:28:23,809 --> 00:28:26,174
+[A] 比如，如果你只是在 Robin Hood 上
+[A] Like, there is a lot of risk if you're just, you know,
+
+494
+00:28:26,174 --> 00:28:28,210
+[A] 买一堆看涨期权，那确实风险很大，
+[A] buying a bunch of call options on Robin Hood,
+
+495
+00:28:28,210 --> 00:28:31,290
+[A] 但坐飞机之类的风险可能小得多。
+[A] but there's probably a lot less risk on getting on planes and stuff.
+
+496
+00:28:31,770 --> 00:28:36,450
+[A] 有没有一些最典型的例子，是你做了某件
+[A] What have been the best examples of times where you basically did something
+
+497
+00:28:36,450 --> 00:28:41,650
+[A] 在别人看来很冒险、但你知道或相信其实并不冒险的事？
+[A] that seemed really risky to other people but you knew wasn't or you believed wasn't.
+
+498
+00:28:42,490 --> 00:28:46,170
+[B] 我想最明显的例子就是，我一直有极高的信念，
+[B] I guess the obvious example would be like, I was always extremely high conviction,
+
+499
+00:28:46,170 --> 00:28:47,450
+[B] 大量购买算力。
+[B] lost buying a lot of compute.
+
+500
+00:28:47,650 --> 00:28:50,290
+[A] 你见过那个梗吗——如果你是个胆小鬼，一切都是高风险？
+[A] You ever seen the meme, everything's high risk if you're a pussy?
+
+501
+00:28:50,930 --> 00:28:52,650
+[C] 好梗。
+[C] No good meme.
+
+502
+00:28:53,010 --> 00:28:59,188
+[B] 我花了很多时间去跟人聊，为什么他们觉得某个
+[B] Um, I spend a lot of time trying to talk to people about why they think a specific
+
+503
+00:28:59,188 --> 00:29:01,850
+[B] 决定是高风险还是低风险。
+[B] decision is high risk or low risk.
+
+504
+00:29:02,330 --> 00:29:06,624
+[B] 我发现，光是让人把它说出来，往往就能
+[B] And I have found that just getting people to speak about it out loud will often at
+
+505
+00:29:06,624 --> 00:29:10,202
+[B] 至少突破他们在某个方向上的理性障碍，
+[B] least get through their intellectual blocks in either direction
+
+506
+00:29:10,202 --> 00:29:13,130
+[B] 因为人们通常在某个方向上是错的。
+[B] because people are usually wrong one way or the other.
+
+507
+00:29:13,760 --> 00:29:16,015
+[A] 不一定能解决情绪层面的问题，
+[A] Not always the emotional part of it,
+
+508
+00:29:16,015 --> 00:29:20,073
+[A] 但有时你也得想清楚这样一种会议：
+[A] but sometimes also you had to think through one of these meetings
+
+509
+00:29:20,073 --> 00:29:24,507
+[A] 有人坚决反对你想做的某个决定，
+[A] where someone is like firmly against some decision that you want to do,
+
+510
+00:29:24,507 --> 00:29:28,640
+[A] 帮他们看到你所看到的，最有效的方式是什么？
+[A] what is the most effective way to kind of help them see what you see?
+
+511
+00:29:29,280 --> 00:29:30,920
+[C] 老实说，我觉得我并不太擅长这个。
+[C] I don't think I'm very good at this, to be honest.
+
+512
+00:29:30,920 --> 00:29:36,420
+[B] 我觉得正确的做法是花很多时间去真正解释清楚，
+[B] I think like the right answer is to spend a lot of time really trying to explain it
+
+513
+00:29:36,420 --> 00:29:37,920
+[B] 把人带到那个认识上。
+[B] and get people there.
+
+514
+00:29:38,080 --> 00:29:40,560
+[B] 我其实觉得我以前更擅长这个。
+[B] And I actually think I used to be better at that.
+
+515
+00:29:40,560 --> 00:29:42,260
+[B] 随着生活变得这么忙，
+[B] And as life has gotten so busy,
+
+516
+00:29:42,260 --> 00:29:46,408
+[B] 我现在更多是生气、沮丧，或者直接说“就这么定了”，
+[B] I'm more just like I get upset or frustrated or say this what we're gonna do
+
+517
+00:29:46,408 --> 00:29:49,332
+[B] 我觉得这不是什么好特质，
+[B] and I don't, I don't think it's like a positive trait
+
+518
+00:29:49,332 --> 00:29:54,160
+[B] 我希望能回到那种“我们好好谈一谈”的状态。你说过，
+[B] and I would like to get back to more of the like, let's really talk it through. You said.
+
+519
+00:29:54,160 --> 00:29:58,414
+[A] 你以前更难合作，大概是 2008、09、10 年，
+[A] That you used to be much harder to work with, I don't know, 2008, 9, 10,
+
+520
+00:29:58,414 --> 00:30:01,100
+[A] 那个时候，比今天更难相处。
+[A] somewhere around there than you are today.
+
+521
+00:30:01,700 --> 00:30:05,895
+[B] 我不知道大家会不会说跟我合作很有趣，
+[B] I don't know if people describe me as fun to work with,
+
+522
+00:30:05,895 --> 00:30:12,474
+[B] 我觉得是有意思、有成效、能提升雄心、非常聚焦
+[B] I like interesting to work with like effective ambition raising like very mission
+
+523
+00:30:12,474 --> 00:30:16,860
+[B] 使命，但日常合作起来算不算真的很有趣，
+[B] focused but like day to day like really fun to work with.
+
+524
+00:30:17,300 --> 00:30:19,300
+[B] 我觉得我整体上不算是个特别有趣的人。
+[B] I don't think I'm like a particularly fun person in general.
+
+525
+00:30:20,080 --> 00:30:23,800
+[A] 我觉得如果你自己玩得开心，这往往是有感染力的。
+[A] I feel like if you are having a good time, it's tends to be infectious.
+
+526
+00:30:23,960 --> 00:30:27,906
+[A] 我觉得如果你大体上在做自己想做的事，
+[A] And I think if you are generally working on things that you want to work on,
+
+527
+00:30:27,906 --> 00:30:29,200
+[A] 那本身就是一种享受。
+[A] it is having a good time.
+
+528
+00:30:30,680 --> 00:30:31,480
+[A] 也许我错了。
+[A] Maybe I'm wrong.
+
+529
+00:30:32,600 --> 00:30:34,680
+[B] 你可以去问一堆跟我共事的人。我不是。
+[B] I mean, you could go ask a bunch of people I work with. I'm not.
+
+530
+00:30:34,760 --> 00:30:37,800
+[B] 我不是。我觉得你不会听到大家异口同声说“合作很有趣”。
+[B] I'm not. I don't. I don't think you would get like a resounding fun to work with.
+
+531
+00:30:38,400 --> 00:30:39,400
+[A] 可能不会用那个词。
+[A] Maybe not that language.
+
+532
+00:30:40,010 --> 00:30:45,212
+[B] 我觉得大家会说一些像是“有创意的解决方案、新的洞见、
+[B] I think people would say stuff like creative solutions to problems, new insights,
+
+533
+00:30:45,212 --> 00:30:47,322
+[B] 极高的雄心，
+[B] like very high level of ambition,
+
+534
+00:30:47,322 --> 00:30:51,770
+[B] 让我做到了我以为自己做不到的事”，这类的话。
+[B] like got me to do something I didn't think I could do, that kind of thing.
+
+535
+00:30:52,450 --> 00:30:55,942
+[A] 当你跟某人开会，发现他们不够有雄心，
+[A] What does it typically look like when you go into a meeting with someone
+
+536
+00:30:55,942 --> 00:30:58,427
+[A] 而你需要设法帮他们变得更有雄心时，
+[A] and you realize that they are not ambitious enough
+
+537
+00:30:58,427 --> 00:31:01,090
+[A] 这通常是什么样的情形？
+[A] and you need to try to help them become more ambitious.
+
+538
+00:31:02,370 --> 00:31:06,143
+[B] 你这么说的时候，我脑海里浮现的版本，
+[B] The, the, the version of this that came to mind when you were saying
+
+539
+00:31:06,143 --> 00:31:09,848
+[B] 是我跟新的 YC 创始人第一次做 office hours 的情形，
+[B] that was like first office hours I would have with new YC founders
+
+540
+00:31:09,848 --> 00:31:14,170
+[B] 你想想一个普通人，在美国大公司工作过，或者你懂的。
+[B] and you take average person who's worked in corporate America or, you know.
+
+541
+00:31:14,170 --> 00:31:19,880
+[C] 在一家大科技公司待了几年，那种雄心的量级、规模、思维方式，
+[C] At a big tech company for a few years and the level of ambition, scaled, thinking,
+
+542
+00:31:19,880 --> 00:31:23,970
+[C] 还有自信心，随便什么，都低得离谱。
+[C] self belief, whatever, it's just catastrophically low.
+
+543
+00:31:24,480 --> 00:31:25,640
+[C] 太糟了，太糟了。
+[C] Horrible, horrible.
+
+544
+00:31:26,480 --> 00:31:32,360
+[B] 你会意识到，这个人这辈子从来没有一刻是没有老板的。
+[B] And you realize that like this person has never not had a boss in their life.
+
+545
+00:31:32,760 --> 00:31:37,131
+[B] 他们从来没有摆脱过父母、老师、经理之类的人，
+[B] They have never not had a parent or a teacher or a manager or whatever
+
+546
+00:31:37,131 --> 00:31:42,360
+[B] 那些告诉他们该做什么、允许他们做什么的人。
+[B] that kind of would tell them what to do or what they were allowed to do or whatever.
+
+547
+00:31:43,040 --> 00:31:48,290
+[B] 而且他们还因为太有创造力、想要太多，
+[B] And they also kind of got punished for being too creative or wanting too much or
+
+548
+00:31:48,290 --> 00:31:51,360
+[B] 或者想得太大、太有野心而受到惩罚。
+[B] thinking too big or too ambitious, whatever.
+
+549
+00:31:51,360 --> 00:32:00,155
+[C] 大多数国家或文化都有形容太有野心的说法，
+[C] Like the most countries or cultures have some sort of phrase for being too ambitious,
+
+550
+00:32:00,155 --> 00:32:03,500
+[C] 基本上就是“高罂粟综合症”（枪打出头鸟）。
+[C] basically tall Poppy syndrome.
+
+551
+00:32:03,620 --> 00:32:04,100
+[A] 这是其中一个。
+[A] That's one.
+
+552
+00:32:04,500 --> 00:32:08,007
+[B] 你会意识到，这东西在人心里扎得多深，
+[B] Um, and you realize, like, how deep this is in people and that they, like,
+
+553
+00:32:08,007 --> 00:32:10,052
+[B] 他们从小就听到，父母对他们这样说，
+[B] heard it and their parents said it to them,
+
+554
+00:32:10,052 --> 00:32:14,260
+[B] 老师这样说，朋友这样说，随便谁，从他们很小的时候开始。
+[B] their teachers said to them or friends with them, whatever, from when they were, like.
+
+555
+00:32:14,260 --> 00:32:14,660
+[B] 从很小的时候。
+[B] Quite little.
+
+556
+00:32:15,510 --> 00:32:21,710
+[B] 要让人不再那样想，得花上不少时间。
+[B] And getting people to just like not think that way, take some real time.
+
+557
+00:32:21,990 --> 00:32:25,707
+[A] 让一个人从不相信自己到相信自己，最有效的路径是什么？
+[A] What's the most effective path to get someone from not believing in themselves to
+
+558
+00:32:25,707 --> 00:32:26,910
+[A] 到相信自己？
+[A] believing in themselves?
+
+559
+00:32:27,470 --> 00:32:31,905
+[B] 我觉得是不断累积的小胜利，比如你做成了原以为做不到的事，
+[B] I think small repeated wins, like you do something you didn't think you could do or
+
+560
+00:32:31,905 --> 00:32:34,384
+[B] 或者你尝试了某件感觉，
+[B] you kind of try something that felt, you know,
+
+561
+00:32:34,384 --> 00:32:38,232
+[B] 太有野心或期望太高的事，结果成了，你就想，好吧，
+[B] too ambitious or too high expectation and it works and you're so, okay,
+
+562
+00:32:38,232 --> 00:32:39,210
+[B] 我再试一次。
+[B] I'll try it again.
+
+563
+00:32:39,610 --> 00:32:43,696
+[A] 你会像 Steve Jobs 那样吗？如果有人担心，
+[A] Do you do anything like Steve Jobs where he would like, if someone was worried,
+
+564
+00:32:43,696 --> 00:32:47,090
+[A] 他会盯着他们的眼睛——不，完全没有那种事。
+[A] he would like stare into their eyes and get no, nothing like that.
+
+565
+00:32:47,650 --> 00:32:48,370
+[C] 我不这么做。
+[C] I don't think so.
+
+566
+00:32:48,490 --> 00:32:49,570
+[A] 就像“你能做到”那样。
+[A] It's like you can do it.
+
+567
+00:32:50,330 --> 00:32:53,330
+[B] 我不，我不是那种，我不做励志演讲。
+[B] I, I don't, I don't, I'm not like an ins. I don't do inspirational speeches.
+
+568
+00:32:53,450 --> 00:32:55,290
+[B] 我不搞那种走心的东西，完全不搞。
+[B] I don't, I don't do like the hearts to none of that.
+
+569
+00:32:55,690 --> 00:32:56,970
+[A] 你最喜欢的策略游戏是什么？
+[A] What's your favorite strategy game?
+
+570
+00:32:59,130 --> 00:33:05,550
+[C] 除了和朋友的扑克之夜，我已经很久没玩过游戏了。
+[C] I have not played a game other than like my poker night with friends in so long.
+
+571
+00:33:05,830 --> 00:33:07,150
+[C] 我倒是希望我有玩。
+[C] Uh, I wish I had.
+
+572
+00:33:07,710 --> 00:33:12,990
+[C] 那我只能说扑克吧，但我很怀念那些好玩的桌游。
+[C] I guess I'll have to say poker, but I, uh, I miss, like, great board games.
+
+573
+00:33:13,270 --> 00:33:14,470
+[A] 你最喜欢的桌游是什么？
+[A] What was your favorite board game?
+
+574
+00:33:15,750 --> 00:33:18,288
+[B] 没有哪一款桌游会让我觉得，我想一遍又一遍地
+[B] There's like no one board game where I'd be like, I want to play that, like,
+
+575
+00:33:18,288 --> 00:33:18,870
+[B] 玩它。
+[B] again and again.
+
+576
+00:33:18,950 --> 00:33:21,468
+[B] 我没有那种，我不是那种会说
+[B] I don't have, like, a, like, I'm not like someone who's like,
+
+577
+00:33:21,468 --> 00:33:24,540
+[B] Catan（卡坦岛）是史上最佳桌游之类的人，但它们都很好玩。
+[B] Katana is the best board game of all time or whatever, but they're all fun.
+
+578
+00:33:24,780 --> 00:33:27,635
+[B] 它们好玩，是因为它们是新的，你得
+[B] And they're fun because they're like new and you have to, like,
+
+579
+00:33:27,635 --> 00:33:30,544
+[B] 弄清楚一套新的挑战、规则和其他一切。
+[B] figure out a new set of challenges and rules and everything else
+
+580
+00:33:30,544 --> 00:33:32,740
+[B] 说到商业世界，
+[B] when you're thinking about the business world.
+
+581
+00:33:33,100 --> 00:33:36,964
+[A] 我觉得你建立公司的方式，几乎和其他任何人
+[A] I think you build your company differently than almost anyone else is able to build
+
+582
+00:33:36,964 --> 00:33:38,980
+[A] 能建、愿意建公司的方式都不一样。
+[A] companies, is willing to build companies.
+
+583
+00:33:39,340 --> 00:33:42,940
+[C] 是什么让你能做到这一点？其实每家大公司都挺不一样的。
+[C] What allows you to do that? Actually, every big company is pretty different.
+
+584
+00:33:43,890 --> 00:33:45,130
+[B] 我不觉得这是什么独一无二的事。
+[B] I don't think this is a unique thing.
+
+585
+00:33:45,170 --> 00:33:49,217
+[B] 我觉得如果你列出最大的 20 家科技公司，
+[B] I think just like if you make a list of the 20 biggest tech companies or whatever,
+
+586
+00:33:49,217 --> 00:33:53,387
+[B] 它们在战略上都惊人地互不相同，
+[B] they're all like shockingly different from each other in terms of their strategy
+
+587
+00:33:53,387 --> 00:33:55,410
+[B] 运作方式和文化也都不同。
+[B] and how they operate and their culture.
+
+588
+00:33:55,450 --> 00:33:58,449
+[B] 我觉得我们和其他人相当不同，
+[B] And I think we are quite different than everybody else,
+
+589
+00:33:58,449 --> 00:34:02,490
+[B] 但这算不上什么深刻洞见。你觉得你的超能力是什么？
+[B] but that's not a deep insight. What do you think you're like superpower is?
+
+590
+00:34:04,480 --> 00:34:08,345
+[B] 我觉得我们做得很好的一点，是对某件事有一种有原则的坚定信念，
+[B] I think we did a really good job of a principled conviction on something
+
+591
+00:34:08,345 --> 00:34:12,865
+[B] 一件别人都不相信的事，尽管它本该是显而易见该相信的，
+[B] that no one else believed, even though it was the obvious thing one should believe,
+
+592
+00:34:12,865 --> 00:34:16,402
+[B] 然后把所有的要素和人才围绕这件事
+[B] and then putting together all of the pieces and the talent around
+
+593
+00:34:16,402 --> 00:34:18,040
+[B] 组织起来，让它成真。
+[B] that to sort of make it happen.
+
+594
+00:34:18,640 --> 00:34:23,287
+[A] 是什么让你有了别人没有的那种信念？
+[A] What allowed you to kind of have that conviction that where other people just didn't?
+
+595
+00:34:23,287 --> 00:34:25,120
+[A] 这个我想过很多。
+[A] Um, I've thought about this a lot.
+
+596
+00:34:26,090 --> 00:34:26,890
+[B] 我不知道。
+[B] I do not know.
+
+597
+00:34:27,090 --> 00:34:32,184
+[B] 在我们所有人看来它太明显了，我更担心的是
+[B] It seemed so clearly obvious is to all of us that I was more worried
+
+598
+00:34:32,184 --> 00:34:37,560
+[B] 我们是不是在自我陶醉，而不是担心别人都错了。
+[B] that we were drinking our own Kool Aid than everybody else was wrong.
+
+599
+00:34:40,080 --> 00:34:43,240
+[B] 但事后来看，我们显然是对的。
+[B] But with the benefit of hindsight, we were clearly right.
+
+600
+00:34:43,320 --> 00:34:46,487
+[B] 我不理解那种深层的心理障碍
+[B] And I don't understand the like deep mental block
+
+601
+00:34:46,487 --> 00:34:51,200
+[B] 而其他所有人都缺乏信念。这非常奇怪。我，我有。
+[B] and lack of conviction from everybody else. It's very strange. I. I have.
+
+602
+00:34:52,800 --> 00:34:55,640
+[B] 我花了很多时间试图理解这一点。
+[B] I have spent a lot of time trying to understand this.
+
+603
+00:34:56,200 --> 00:35:01,480
+[A] 在你那种"追问原因"的探索里，你找到答案了吗？
+[A] Did you find any explanation in your, you know, man's search for why or no?
+
+604
+00:35:01,600 --> 00:35:07,472
+[B] 嗯，有一些显而易见的因素，比如群体思维，还有，
+[B] Um, I mean, there's all the obvious stuff about, like, group think and, like,
+
+605
+00:35:07,472 --> 00:35:10,224
+[B] 重大变革就是，
+[B] the big transformations just come,
+
+606
+00:35:10,224 --> 00:35:14,720
+[B] 不会经常出现，指数曲线也不会。
+[B] don't come along that often and exponential curves don't.
+
+607
+00:35:15,780 --> 00:35:21,433
+[C] 长时间、频繁地保持强劲，但是你知道，
+[C] Stay powerful for so long, for so often, but like, you know,
+
+608
+00:35:21,433 --> 00:35:26,740
+[C] 也许在2016到2018年间，我们必须非常幸运。
+[C] maybe between 2016 and 2018, we had to get really lucky.
+
+609
+00:35:26,740 --> 00:35:29,740
+[C] 而且需要极大的信念。
+[C] And it required like a lot of great belief.
+
+610
+00:35:30,500 --> 00:35:35,380
+[B] 但到了2019年，尤其是2020年，我们本不该还存在。
+[B] But then by 2019, certainly by 2020, we shouldn't have really gotten to exist.
+
+611
+00:35:35,540 --> 00:35:36,900
+[B] Google（谷歌）本该轻松领跑。
+[B] Google should have just run away with it.
+
+612
+00:35:37,100 --> 00:35:37,340
+[A] 是的。
+[A] Yeah.
+
+613
+00:35:37,340 --> 00:35:40,757
+[A] 我记得Jeff Bezos把这称为一种商业奇迹，他们做出了AWS，
+[A] I think Jeff Bezos called it like a business miracle that they built AWS
+
+614
+00:35:40,757 --> 00:35:44,000
+[A] 然后大概七年里都没有任何强劲的竞争对手。
+[A] and then didn't have any serious competition for like seven years.
+
+615
+00:35:44,120 --> 00:35:46,280
+[A] 我觉得OpenAI就像又一个商业奇迹。
+[A] And I feel like open AI is like another business miracle.
+
+616
+00:35:46,800 --> 00:35:51,587
+[B] 这里显然涉及大公司为什么会变得僵化，
+[B] There's clearly something here about why big companies get sclerotic
+
+617
+00:35:51,587 --> 00:35:55,400
+[B] 固守成规，而这在很多方面其实也帮到了它们。
+[B] and set in their ways and it helps them in a lot of ways too.
+
+618
+00:35:56,120 --> 00:35:58,200
+[B] 但这个，我是说，这很棒。
+[B] But this is like, I mean, this is wonderful.
+
+619
+00:35:58,240 --> 00:36:02,480
+[B] 我觉得大公司不能永远是唯一的主导力量，这是好事。
+[B] I think it's great that the big companies don't stay the only dominant forces forever.
+
+620
+00:36:02,480 --> 00:36:05,241
+[B] 那会很糟糕。嗯，但显然有一种情况，
+[B] That'd be really bad. Um, but there's clearly something
+
+621
+00:36:05,241 --> 00:36:08,120
+[B] 这些商业奇迹发生了，而它们本不该发生。
+[B] where these business miracles happen and they shouldn't.
+
+622
+00:36:08,640 --> 00:36:09,880
+[A] 是这样吗？还是说它们本该发生？
+[A] Is that right? Or should they?
+
+623
+00:36:10,680 --> 00:36:13,080
+[B] 我觉得它们发生了，对世界来说是好事，对吧？
+[B] Well, I think it's great for the world that they do. Right?
+
+624
+00:36:13,200 --> 00:36:17,822
+[B] 但要回过头解释，2019年那些拥有海量资金、
+[B] But to go back and explain in 2019 why open AI was like allowed by the Giants with
+
+625
+00:36:17,822 --> 00:36:22,160
+[B] 人才等一切资源的巨头，为什么允许OpenAI做成我们做成的事。
+[B] huge amounts of capital and talent and everything else to do, we've done.
+
+626
+00:36:23,830 --> 00:36:25,710
+[B] 这很难解释。
+[B] It's like hard to explain.
+
+627
+00:36:26,230 --> 00:36:27,870
+[A] 微软为什么给了你们那笔钱？
+[A] Why did Microsoft give you the money?
+
+628
+00:36:28,830 --> 00:36:31,514
+[B] 嗯，这个我觉得更容易解释，
+[B] Um, that I think is easier to explain,
+
+629
+00:36:31,514 --> 00:36:36,190
+[B] 就是Google有DeepMind，而微软没有押注AI。
+[B] which is Google had deep mind and Microsoft did not have an AI bet.
+
+630
+00:36:36,590 --> 00:36:40,250
+[B] 你知道，大公司会觉得自己在所有主要技术领域，
+[B] And you know, big companies feel like they should have something in play in all of
+
+631
+00:36:40,250 --> 00:36:41,670
+[B] 都应该有所布局。
+[B] the major areas of technology.
+
+632
+00:36:42,030 --> 00:36:43,985
+[A] 是不是有点像，他们觉得这会很大，
+[A] Was it kind of like they think it's going to be big,
+
+633
+00:36:43,985 --> 00:36:45,750
+[A] 但又低估了它到底会有多大？
+[A] but then underestimated how big it would be?
+
+634
+00:36:46,870 --> 00:36:48,190
+[B] 我觉得这对他们来说非常划算。
+[B] I think it's been like great for them.
+
+635
+00:36:48,350 --> 00:36:50,198
+[B] 我不知道我们是给微软增加了一万亿，
+[B] I don't know if we've added one trillion,
+
+636
+00:36:50,198 --> 00:36:52,971
+[B] 还是两万亿美元之类的市值，
+[B] two trillion dollars or whatever of market cap to Microsoft,
+
+637
+00:36:52,971 --> 00:36:56,450
+[B] 但我觉得是很大的一笔，而且他们获得了非凡的技术，
+[B] but I think it's been a lot and I think they have gotten incredible technology
+
+638
+00:36:56,450 --> 00:36:58,190
+[B] 以及云业务的增长，并且还会持续。
+[B] and cloud growth and will continue to.
+
+639
+00:36:58,190 --> 00:37:00,864
+[B] 所以是的，我相信它比我预想的还要大，
+[B] So yeah, I'm sure it's bigger than I thought it was going to be,
+
+640
+00:37:00,864 --> 00:37:03,590
+[B] 但我觉得他们下了一步好棋，也做得非常好。
+[B] but I think they made a good bet and have done super well with it.
+
+641
+00:37:03,590 --> 00:37:04,710
+[B] 我对此非常高兴。
+[B] And I'm very happy about that.
+
+642
+00:37:05,190 --> 00:37:08,590
+[A] OpenAI经历了不同的版本。第一个是研究实验室。
+[A] There's been different versions of open AI. The first one was the research lab.
+
+643
+00:37:08,910 --> 00:37:09,990
+[A] 下一个是产品公司。
+[A] Next one was the product company.
+
+644
+00:37:10,030 --> 00:37:12,710
+[A] 你曾说，你像是把产品公司硬接在了研究，
+[A] And you kind of said that like you bolted on the product company onto the research
+
+645
+00:37:12,710 --> 00:37:14,670
+[A] 实验室之上，而这和大多数公司的做法正好相反。
+[A] lab, which is the exact opposite of what most companies do.
+
+646
+00:37:15,280 --> 00:37:17,904
+[A] 而现在你基本上要变成一家庞大的基础设施公司，
+[A] And now you're basically gonna be like a massive infrastructure company
+
+647
+00:37:17,904 --> 00:37:20,657
+[A] 而OpenAI几乎所有的价值，都会来自这种低利润，
+[A] and like almost all the value from open AI is just gonna come from this like low
+
+648
+00:37:20,657 --> 00:37:21,560
+[A] 的基础设施。
+[A] margin infrastructure.
+
+649
+00:37:21,640 --> 00:37:23,724
+[A] 然后你还说过，基本上，
+[A] And then you also said that basically,
+
+650
+00:37:23,724 --> 00:37:26,981
+[A] 为了过渡到这项业务的下一个阶段，
+[A] in order to transition into the next phase of this business,
+
+651
+00:37:26,981 --> 00:37:29,131
+[A] 你的大脑运作方式，
+[A] it's not necessarily something the way
+
+652
+00:37:29,131 --> 00:37:33,560
+[A] 未必天生就适合在那种模式下运作。
+[A] that your brain works is naturally like designed to operate in that kind of model.
+
+653
+00:37:33,880 --> 00:37:37,240
+[A] 你必须改变什么？以及业务的下一个阶段是什么？
+[A] What do you have to change and like what is that next phase of the business?
+
+654
+00:37:37,920 --> 00:37:41,686
+[B] 我不回答这个，因为我觉得这已经进入了一个，
+[B] I don't answer this because I don't like, I think this is now a getting into like a,
+
+655
+00:37:41,686 --> 00:37:44,160
+[B] 我们还没准备好去谈的方向。
+[B] like a direction we're not quite ready to talk about.
+
+656
+00:37:44,240 --> 00:37:46,369
+[B] 但是，呃，我对下一个阶段非常兴奋，
+[B] But, uh, I am very excited for the next phase
+
+657
+00:37:46,369 --> 00:37:49,681
+[B] 而且我觉得我想清楚了，如何把我非常擅长、
+[B] and I think I figured out how to align something that I am very good at
+
+658
+00:37:49,681 --> 00:37:53,880
+[B] 也非常热爱的事情，和我们接下来10倍或100倍的增长对齐起来。
+[B] and very passionate about with what will be the next like 10 or hundred x of our growth.
+
+659
+00:37:53,960 --> 00:37:56,304
+[A] 那么，从研究实验室负责人的Sam，
+[A] So how did the transition of Sam,
+
+660
+00:37:56,304 --> 00:38:00,210
+[A] 到产品公司负责人的Sam，这个转变是怎么发生的？
+[A] the research lab head to Sam the product company head?
+
+661
+00:38:00,530 --> 00:38:03,490
+[A] 那是什么感觉？对你来说最大的转变是什么？
+[A] Like what was that? What were the biggest transitions for you on that?
+
+662
+00:38:04,370 --> 00:38:07,656
+[B] 我是说，整个事情完全不一样了。
+[B] I mean, that the whole thing was just extremely different.
+
+663
+00:38:07,656 --> 00:38:11,010
+[B] 感觉就像是两份几乎毫不相关的工作。
+[B] Like it has felt like two almost completely unrelated jobs.
+
+664
+00:38:11,530 --> 00:38:14,121
+[B] 也不能完全说，
+[B] And it's not quite to say like,
+
+665
+00:38:14,121 --> 00:38:16,609
+[B] 我做完一个，现在做另一个，
+[B] I did one and now I do the other
+
+666
+00:38:16,609 --> 00:38:21,377
+[B] 因为我仍然要负责研究实验室，
+[B] because I also still responsible for the research lab,
+
+667
+00:38:21,377 --> 00:38:24,590
+[B] 但它们几乎是两码事。
+[B] but they are almost separate things.
+
+668
+00:38:24,710 --> 00:38:29,229
+[B] 而且经营研究实验室完全没有让我准备好去经营一家产品
+[B] And definitely running the research lab did not prepare me for running the product
+
+669
+00:38:29,229 --> 00:38:30,670
+[B] 公司，一点都没有。
+[B] company in really any way.
+
+670
+00:38:31,110 --> 00:38:33,911
+[B] 那 YC 的经历有没有让你准备得更充分？
+[B] Did the YC experience prepare you more like,
+
+671
+00:38:33,911 --> 00:38:37,470
+[B] 我看过很多人不得不去扩张大公司。
+[B] I had watched a lot of people have to scale big companies.
+
+672
+00:38:37,830 --> 00:38:40,630
+[A] 终于自己坐上驾驶座，是不是挺有意思的？
+[A] Was it fun to kind of like finally get in the driver seat?
+
+673
+00:38:40,750 --> 00:38:41,030
+[C] 不。
+[C] No.
+
+674
+00:38:41,710 --> 00:38:47,343
+[C] ChatGPT 发布后的第五天，我们突破了 100 万用户，
+[C] I the fifth day after ChatGPT launch was the day we crossed 1 million users
+
+675
+00:38:47,343 --> 00:38:53,253
+[C] 我看着它第一天涨上去，下午又跌下来，
+[C] and I had like watched it go up the first day and then come down in the afternoon
+
+676
+00:38:53,253 --> 00:38:56,670
+[C] 然后第二天涨到一个更高的峰值。
+[C] and then go up the second day to a higher peak.
+
+677
+00:38:56,710 --> 00:38:59,830
+[B] 又跌下来，第三天涨到更高的峰值，然后又跌下来。
+[B] And then come down, go up the third day to a higher peak, and then come down.
+
+678
+00:39:00,160 --> 00:39:02,509
+[B] 每一天，研究员们都说，哦，
+[B] And each of these days, the researchers were like, oh,
+
+679
+00:39:02,509 --> 00:39:04,440
+[B] 那不过是一阵疯狂的、昙花一现的公关热度。
+[B] that was some crazy flash in the pan PR thing.
+
+680
+00:39:04,480 --> 00:39:06,520
+[B] 这已经过去了。你懂的，不会持续的。
+[B] This is like over. And, you know, that's not gonna happen.
+
+681
+00:39:07,080 --> 00:39:12,457
+[B] 但我在 YC 见得够多了，我知道当一样东西像那样增长时，
+[B] And I had seen enough at YC that I knew that when something was growing like that,
+
+682
+00:39:12,457 --> 00:39:17,590
+[B] 完全是自发的，在我看来它具备了所有那种特征——
+[B] completely organically, it, this had all of the spectral signature to me of
+
+683
+00:39:17,590 --> 00:39:20,360
+[B] 那种真正要成事的东西。
+[B] something that is like was gonna happen.
+
+684
+00:39:20,990 --> 00:39:23,670
+[B] 然后到第五天，它突破了 100 万用户。
+[B] And then on the fifth day it crossed a million users.
+
+685
+00:39:24,910 --> 00:39:27,170
+[B] 我回到家，那一刻我才真正意识到，
+[B] And I came home and that was when it really hit me
+
+686
+00:39:27,170 --> 00:39:30,590
+[B] 我们就要变成一家公司了，而且会发展得非常快。
+[B] that like we were about to become a company and it was gonna go very fast.
+
+687
+00:39:30,630 --> 00:39:35,632
+[B] 那会很疯狂，我们会一下子变成一家大
+[B] And it was gonna be a crazy like a like we were just gonna turn into like a big
+
+688
+00:39:35,632 --> 00:39:40,470
+[B] 公司，我看过那些创始人都经历了什么。
+[B] company real quick and I had watched what these founders went through.
+
+689
+00:39:42,230 --> 00:39:47,750
+[B] 我回到家，Ali 说，哦，我看到你们突破 100 万用户了。
+[B] And I came home and Ali was like, oh, I saw that you crossed a million users.
+
+690
+00:39:47,750 --> 00:39:50,300
+[B] 恭喜。我说，你根本不知道这有多糟糕。
+[B] Congratulations. I was like, you have no idea how bad this is.
+
+691
+00:39:50,300 --> 00:39:51,950
+[B] 你根本不知道接下来会发生什么。
+[B] You have no idea what's about to happen.
+
+692
+00:39:52,070 --> 00:39:53,870
+[B] 这不只是对我糟糕，对你也糟糕。
+[B] It's not just bad for me. It's bad for you, too.
+
+693
+00:39:53,950 --> 00:39:57,270
+[B] 我们本来过着这种安静美好的生活，真的很棒。
+[B] Like we have this nice quiet life, you know, it's really wonderful.
+
+694
+00:39:57,510 --> 00:40:02,470
+[B] 而它即将像被塞进大炮一样炸开，后来也确实如此。
+[B] It's about to like kind of go through a cannon and that is what happened.
+
+695
+00:40:02,710 --> 00:40:05,740
+[B] 但那是一个非常突然的转变。
+[B] But it was like a very abrupt transition.
+
+696
+00:40:05,860 --> 00:40:08,990
+[B] 我知道它会来，我也看过别人经历过，
+[B] I knew it was gonna come and I had watched other people go through it,
+
+697
+00:40:08,990 --> 00:40:12,399
+[B] 我知道那不是什么愉快的体验，但我想，好吧，
+[B] and I knew that it was like not a pleasant experience, but I was like, well,
+
+698
+00:40:12,399 --> 00:40:14,020
+[B] 我们要被大炮射出去了。
+[B] we're being shot out of the cannon.
+
+699
+00:40:14,100 --> 00:40:14,540
+[C] 开始吧。
+[C] Here we go.
+
+700
+00:40:14,740 --> 00:40:19,208
+[A] 你有没有在潜意识里为此准备了很多年，如果你知道
+[A] Were you like subconsciously just like preparing yourself for years if you know
+
+701
+00:40:19,208 --> 00:40:21,408
+[A] 这最终一定会发生，
+[A] that this is eventually going to happen
+
+702
+00:40:21,408 --> 00:40:24,609
+[A] 而且智能会变得足够好，好到
+[A] and the intelligence is gonna get good enough where like,
+
+703
+00:40:24,609 --> 00:40:27,610
+[A] 会出现一款神奇的产品。我的看法是，我
+[A] there will be a magical product. My take on it is that I.
+
+704
+00:40:30,040 --> 00:40:33,480
+[B] 其实知道它总有一天会发生，只是不知道是什么时候。
+[B] Actually knew it was gonna happen at some point. I had no idea when.
+
+705
+00:40:33,480 --> 00:40:34,960
+[B] 我当然不知道那就是那个时刻。
+[B] I didn't know that was gonna be the moment, of course.
+
+706
+00:40:35,400 --> 00:40:38,248
+[B] 嗯，但我决定假装，
+[B] Um, but that I had decided to pretend to,
+
+707
+00:40:38,248 --> 00:40:45,240
+[B] 骗我自己，我成功地让自己相信、表现得像它不会发生一样。
+[B] to myself and I had successfully deluded myself into a sort of acting like it wasn't gonna happen.
+
+708
+00:40:45,680 --> 00:40:49,779
+[B] 嗯，说真的，经营研究实验室是我能想象到的最酷、最有趣、
+[B] Um, truly running the research lab was the coolest, most fun,
+
+709
+00:40:49,779 --> 00:40:54,440
+[B] 最棒的工作和生活方式。
+[B] most amazing job and lifestyle setup I could possibly have imagined.
+
+710
+00:40:54,990 --> 00:40:55,590
+[C] 怎么说？
+[C] How so?
+
+711
+00:40:56,430 --> 00:40:59,750
+[C] 我是说，你会觉得，一点压力都没有。
+[C] I mean, you were like, it's not stressful at all.
+
+712
+00:41:00,310 --> 00:41:03,430
+[B] 呃，它在智识上极其令人满足。
+[B] Uh, it was intellectually incredibly satisfying.
+
+713
+00:41:03,550 --> 00:41:07,654
+[B] 那是一群最聪明的人，做着可能是
+[B] It was the smartest group of people with probably the most important work
+
+714
+00:41:07,654 --> 00:41:11,690
+[B] 过去一个世纪、也许更久以来最重要的工作，我也说不好。
+[B] that has happened in like, the last century, maybe longer, I don't know.
+
+715
+00:41:11,690 --> 00:41:13,910
+[B] 而我就坐在第一排的位置上。
+[B] And I had this, like, front row seat and.
+
+716
+00:41:14,730 --> 00:41:19,341
+[B] 那是好几代人才有一次的时刻，简直难以置信。
+[B] Like that was a once in many generations moment. It was unbelievable.
+
+717
+00:41:19,341 --> 00:41:21,010
+[B] 那是最酷的事情。
+[B] It was the coolest thing.
+
+718
+00:41:21,490 --> 00:41:25,730
+[A] 你们现在也在经历那种同样的增长吗？
+[A] Are you guys experiencing that same kind of growth?
+
+719
+00:41:26,130 --> 00:41:30,803
+[A] 你知道，我一直看到 TBO 在 Twitter 上发帖，基本上就是“又一次重置”，
+[A] You know, I keep on seeing TBO post on Twitter that basically here's another reset,
+
+720
+00:41:30,803 --> 00:41:32,090
+[A] “又一次重置”。
+[A] here's another reset.
+
+721
+00:41:32,370 --> 00:41:36,210
+[A] 你又看到那种类似 ChatGPT 的体验了吗？
+[A] Are you seeing that same like ChatGPT-esque experience again?
+
+722
+00:41:36,530 --> 00:41:41,930
+[C] 完全是。我觉得到目前为止出现了两个巨大的形态，以及随之而来的增长。
+[C] Totally. Um, I think there have been two giant form factors and associated growth so far.
+
+723
+00:41:42,690 --> 00:41:45,207
+[B] 一个是聊天机器人，然后是编程 agents，
+[B] There was the sort of chatbots and then the coding agents,
+
+724
+00:41:45,207 --> 00:41:47,410
+[B] 而编程 agents 现在完全火爆了。
+[B] and the coding agents are just going totally nuts.
+
+725
+00:41:48,090 --> 00:41:50,024
+[B] 我觉得很快会出现第三个，
+[B] There will be a third one soon, I think,
+
+726
+00:41:50,024 --> 00:41:53,832
+[B] 就是那种持续运行的 agents，像幕僚长、
+[B] which will be this idea of this sort of persistent agents, chiefs of staffs,
+
+727
+00:41:53,832 --> 00:41:56,250
+[B] 合作伙伴、同事，不管我们怎么叫它们。
+[B] co workers, colleagues, whatever we call them.
+
+728
+00:41:56,930 --> 00:41:58,970
+[B] 而且我觉得那个会很快到来。
+[B] And that'll, and you know, I think that'll come pretty soon.
+
+729
+00:41:59,010 --> 00:42:02,850
+[C] 所以我们会很快经历这三波浪潮中的第三波。
+[C] So we're gonna go through like the third of these waves pretty fast.
+
+730
+00:42:03,250 --> 00:42:07,127
+[A] 很久以前，好像是去年八月，
+[A] So a long time ago, apparently in August last year,
+
+731
+00:42:07,127 --> 00:42:10,912
+[A] 我看到你发了条推文，我心想，
+[A] I saw you tweet something and I thought to myself,
+
+732
+00:42:10,912 --> 00:42:16,450
+[A] 这对形象没帮助。我们来看看，你当时为什么那么发？
+[A] this is not gonna help the reputation. Let's see why. Why did you do that?
+
+733
+00:42:20,710 --> 00:42:24,525
+[B] 首先，我很喜欢电影里那一幕，就是 Death Star（死星）
+[B] Well, first of all, I love that scene from the movie like the Death Star is coming
+
+734
+00:42:24,525 --> 00:42:27,994
+[B] 从超空间里出来，配上那种戏剧性的音乐，特别棒，
+[B] out of hyperspace and there's this dramatic music and it's like a great,
+
+735
+00:42:27,994 --> 00:42:29,150
+[B] 那是个很棒的场景。
+[B] it's like a great scene.
+
+736
+00:42:29,790 --> 00:42:33,818
+[B] 我觉得挺好玩的，当时就是，你懂的，
+[B] Um, I thought it was a funny, like I was, it was like, you know,
+
+737
+00:42:33,818 --> 00:42:35,510
+[B] 我在刷 Twitter。
+[B] I was scrolling Twitter.
+
+738
+00:42:35,550 --> 00:42:37,190
+[B] 应该是深夜，我记不太清了。
+[B] I think it was late at night. I don't really remember.
+
+739
+00:42:37,750 --> 00:42:41,516
+[A] 阴谋论就是从这儿冒出来的。就好像你、你就是
+[A] This is where the conspiracy theories happen. Like you're, you're like,
+
+740
+00:42:41,516 --> 00:42:43,060
+[A] 在这儿火上浇油。
+[A] you're feeding the fire here.
+
+741
+00:42:45,020 --> 00:42:47,260
+[B] 我当时就是觉得它挺逗的。
+[B] I just thought it was, it amused me at the time.
+
+742
+00:42:47,340 --> 00:42:53,580
+[C] 说实话、说清楚点，那其实不算一条好推文。
+[C] There was like, it was, I don't know, it was not a great tweet, to be honest, to be clear.
+
+743
+00:42:54,420 --> 00:42:55,900
+[A] 呃，我倒觉得挺不错的。
+[A] Uh, I actually thought it was great.
+
+744
+00:42:56,060 --> 00:42:56,820
+[B] 我觉得挺搞笑的。
+[B] I thought it was funny.
+
+745
+00:42:57,020 --> 00:42:59,980
+[A] 我觉得挺搞笑的。我想我当时确实觉得好笑。对。
+[A] I thought it was funny. I think I thought it was funny. Yeah.
+
+746
+00:43:00,060 --> 00:43:04,900
+[A] 我确实觉得，世界越来越有那种感觉了。
+[A] Um, I do feel like this is more and more what the world feels like.
+
+747
+00:43:05,530 --> 00:43:11,330
+[C] 呃，是的。是的。好吧。
+[C] Uh, yes. Uh, yes. Okay.
+
+748
+00:43:12,370 --> 00:43:14,810
+[C] 对，那是个好梗。
+[C] Yes, that's a good, that's a good meme.
+
+749
+00:43:15,530 --> 00:43:22,036
+[B] 有人是这样解释 OpenAI
+[B] The way that somebody explained kind of the marketing challenge for OpenAI
+
+750
+00:43:22,036 --> 00:43:25,237
+[B] 以及整个行业的营销挑战的，第一，
+[B] and the industry in general is, No. 1,
+
+751
+00:43:25,237 --> 00:43:30,400
+[B] 我们快要创造出我们需要向世界解释的东西了。
+[B] we are close to creating what we need to explain in the world.
+
+752
+00:43:30,480 --> 00:43:33,360
+[B] 第一，我们快要创造出一个能实现任何愿望的精灵了。
+[B] No. 1, we are close to creating a genie that can grant any wish.
+
+753
+00:43:34,080 --> 00:43:38,896
+[B] 第二，我们要确保最初的这些愿望能广泛造福人类，
+[B] No.2, we are going to make sure that our first wishes broadly benefit humanity
+
+754
+00:43:38,896 --> 00:43:41,415
+[B] 并且把世界带到一个地方，
+[B] and that we kind of get the world to a place
+
+755
+00:43:41,415 --> 00:43:45,120
+[B] 让更多人能许下更多的愿望。
+[B] where a lot more people get to have a lot more witches wishes.
+
+756
+00:43:45,600 --> 00:43:46,120
+[B] 还有第……
+[B] And No..
+
+757
+00:43:46,120 --> 00:43:50,223
+[B] 第三，你能许愿的空间极其巨大、极富创造力，
+[B] 3, the space of what you can wish for is incredibly big and creative
+
+758
+00:43:50,223 --> 00:43:52,536
+[B] 而且会非常令人兴奋，就是
+[B] and it'll be quite exciting to, like,
+
+759
+00:43:52,536 --> 00:43:56,490
+[B] 用真实的人类价值观和偏好去把它摸索清楚。
+[B] figure that out with real sort of human values and preferences.
+
+760
+00:43:57,090 --> 00:44:01,410
+[B] 但我觉得还有第四点，就是这个。
+[B] But, but I think there's a fourth thing too, which is exactly that.
+
+761
+00:44:01,450 --> 00:44:05,869
+[B] 你开始许愿，计算机把它们实现了，然后你会想，
+[B] You start making these wishes, the computer grants them, and then you're like,
+
+762
+00:44:05,869 --> 00:44:07,810
+[B] 我没想到那真能行。
+[B] I didn't think that was gonna work.
+
+763
+00:44:08,250 --> 00:44:09,610
+[C] 对，那接下来呢？
+[C] Yeah, what now?
+
+764
+00:44:09,850 --> 00:44:10,810
+[B] 那是种很奇怪的感觉。
+[B] It's a weird feeling.
+
+765
+00:44:11,730 --> 00:44:15,716
+[A] 对，就像那种问题，人们花了，
+[A] Yeah, it's just like the problem where I guess, you know, people spent,
+
+766
+00:44:15,716 --> 00:44:19,230
+[A] 大概一百年想去反驳某个，那叫什么来着，Jacobian？
+[A] like 100 years trying to disprove some, what was it, Jacobian?
+
+767
+00:44:19,390 --> 00:44:20,190
+[A] 对，就是那东西。
+[A] Yeah, this thing.
+
+768
+00:44:20,270 --> 00:44:23,462
+[A] 然后有个人就直接去问了 Claude，结果，我也说不好，
+[A] And then some guy just asked Claude and it was like, I don't know,
+
+769
+00:44:23,462 --> 00:44:25,510
+[A] 几天之内就搞定了之类的。
+[A] within a few days or something like this.
+
+770
+00:44:25,750 --> 00:44:28,670
+[B] 所以我，我觉得未来会有很多很棒的工作。
+[B] So I'm, I'm, I'm, I think there's gonna be lots of great jobs in the future.
+
+771
+00:44:28,710 --> 00:44:29,150
+[B] 我是真这么想的。
+[B] I really do.
+
+772
+00:44:29,150 --> 00:44:32,240
+[B] 我觉得我们会获得很多智识上的满足感，
+[B] I think we're gonna have lots of intellectual fulfillment
+
+773
+00:44:32,240 --> 00:44:36,150
+[B] 而且我觉得大多数工作的适应程度会超出人们的预期。
+[B] and I think most jobs are going to adapt more than it seems like they should.
+
+774
+00:44:36,550 --> 00:44:41,650
+[B] 但我认为数学是一个非常重要的例子，值得我们现在
+[B] But math, I think, is a very important example of something for us to study very
+
+775
+00:44:41,650 --> 00:44:45,260
+[B] 密切研究，因为它可能不会朝那个方向走。
+[B] closely right now of something that may not go that way.
+
+776
+00:44:45,300 --> 00:44:47,060
+[B] 事实上，我觉得它很可能不会那样。
+[B] In fact, I would say probably won't go that way.
+
+777
+00:44:47,580 --> 00:44:51,427
+[A] 看起来，即使系统变得越来越好，
+[A] It seems like even as the systems get better and better,
+
+778
+00:44:51,427 --> 00:44:54,940
+[A] 我认识的人里，没有人变得更闲。
+[A] the people that I know that like no one is less busy.
+
+779
+00:44:55,420 --> 00:44:56,340
+[A] 每个人都更忙了。
+[A] Everyone is more busy.
+
+780
+00:44:56,620 --> 00:45:00,124
+[A] 每个人都在做更多的事，除了那些说“哦，我……”的人。
+[A] Everyone's just doing more stuff except for the people that are like, oh, I,
+
+781
+00:45:00,124 --> 00:45:03,184
+[A] 我用掉了一万亿个token，呃，就是那种，我很喜欢这个，呃，
+[A] I spent a trillion tokens, uh, and like, what have, I love this, uh,
+
+782
+00:45:03,184 --> 00:45:05,520
+[A] 我看到有人说的那种，比如，我花了。
+[A] thing that I saw where someone said, like, I spent.
+
+783
+00:45:05,560 --> 00:45:07,280
+[A] 你懂的，多到离谱的token数量。
+[A] You know, ungodly numbers of tokens.
+
+784
+00:45:07,400 --> 00:45:10,654
+[B] 然后有人问，那你怎么没更成功呢，你懂的，
+[B] And then someone said, why aren't you more successful, you know,
+
+785
+00:45:10,654 --> 00:45:14,751
+[B] 长期以来技术一直在向人们承诺，他们会工作得更少
+[B] technology for a long time has been promising people that they're gonna work less
+
+786
+00:45:14,751 --> 00:45:16,800
+[B] 会有大把的闲暇时间。
+[B] and they're gonna have all this leisure.
+
+787
+00:45:17,280 --> 00:45:21,960
+[C] 事情确实朝这个方向发展了，我觉得人们确实
+[C] And it has gone in that direction, like I think people do.
+
+788
+00:45:23,680 --> 00:45:28,485
+[B] 比历史上很多时期都有更多闲暇时间
+[B] Have more time for leisure than they had at many previous points in history
+
+789
+00:45:28,485 --> 00:45:31,120
+[B] 在很多方面生活质量也更高了。
+[B] and a higher quality of life in many ways.
+
+790
+00:45:32,480 --> 00:45:37,560
+[B] 但不知怎的，整个社会从来没有真正兑现每周工作四小时的承诺。
+[B] But somehow we never get the promise of the four hour work week at mass scale in society.
+
+791
+00:45:38,000 --> 00:45:39,840
+[B] 我也不认为AI会改变这一点。
+[B] And I don't expect AI to change that.
+
+792
+00:45:39,960 --> 00:45:44,731
+[C] 呃，很明显社会对很多人来说运转得并不好
+[C] Uh, clearly society is not working for a lot of people
+
+793
+00:45:44,731 --> 00:45:52,320
+[C] 而让更多生产力提升真正惠及普通人，会是件好事。
+[C] and more productivity gains that actually accrued to people would be a great thing.
+
+794
+00:45:52,720 --> 00:45:55,080
+[B] 我觉得会的，我觉得这会发生。
+[B] And I suspect they will. I suspect that will happen.
+
+795
+00:45:55,160 --> 00:46:01,080
+[B] 但我真正欣赏人类的一点是，我们的期望会不断提高。
+[B] But I think that I really admire about people is our expectations go up.
+
+796
+00:46:01,080 --> 00:46:04,726
+[B] 我们总想要更多，我们会想出新东西，为彼此创造，
+[B] We always want more. We think of new things to do to create for each other,
+
+797
+00:46:04,726 --> 00:46:05,880
+[B] 为自己去追求。
+[B] to want for ourselves.
+
+798
+00:46:06,630 --> 00:46:11,150
+[B] 而且，你懂的，这就像一场相对性的游戏。
+[B] And we, you know, it's like a, it's like a relative game.
+
+799
+00:46:11,230 --> 00:46:14,030
+[B] 人们非常在意自己相对于别人做得怎么样。
+[B] People are like very focused on how they're doing relative to other people.
+
+800
+00:46:14,510 --> 00:46:18,680
+[B] 所以正是这种竞争在驱动经济，还有那种，我觉得那种，
+[B] And so the competition that drives the economy and the kind of, I think the, the,
+
+801
+00:46:18,680 --> 00:46:22,345
+[B] 那种非常美好的渴望——想对别人有用
+[B] the very wonderful desires about wanting to be useful to other people
+
+802
+00:46:22,345 --> 00:46:24,430
+[B] 想创造点什么、想服务他人。
+[B] and create something and be of service.
+
+803
+00:46:24,550 --> 00:46:27,950
+[C] 这一整套东西，我认为会一直延续下去。
+[C] And that whole cluster, I expect that to keep going.
+
+804
+00:46:28,110 --> 00:46:32,595
+[B] 我觉得在超级智能之后的世界里，我们都会比自己以为的忙碌得多
+[B] And I think we're all gonna be much busier than we thought we were supposed to be in
+
+805
+00:46:32,595 --> 00:46:34,470
+[B] 在一个后超级智能的世界里。
+[B] a post super intelligence world.
+
+806
+00:46:34,470 --> 00:46:36,950
+[B] 我们还是会抱怨，但内心其实是开心的。
+[B] And we're still gonna complain about it, but secretly we're gonna be happy.
+
+807
+00:46:37,510 --> 00:46:40,159
+[A] 你觉得当我们越来越少的直接投入
+[A] How do you think the status games change as less
+
+808
+00:46:40,159 --> 00:46:44,030
+[A] 与价值创造相关时，地位游戏会怎么变化？
+[A] and less of our direct input is correlated with like value creation?
+
+809
+00:46:45,070 --> 00:46:48,203
+[B] 我不觉得，我不觉得它会让人感觉像是我们直接的，
+[B] I don't, I don't think it will feel at all like our direct,
+
+810
+00:46:48,203 --> 00:46:49,870
+[B] 就是我们所看重的东西。
+[B] like the things that we value.
+
+811
+00:46:50,730 --> 00:46:55,610
+[B] 我猜那些会是非常有人情味的东西。
+[B] I suspect will be things that are like very human.
+
+812
+00:46:56,330 --> 00:46:59,010
+[A] 比如说，为别人做饭就是一个例子。
+[A] But like one thing is like cooking for people.
+
+813
+00:46:59,610 --> 00:47:02,281
+[B] 你并没有为世界创造多少价值，
+[B] You're not like creating a bunch of value in the world,
+
+814
+00:47:02,281 --> 00:47:04,655
+[B] 但它表达了爱，你其实在创造价值
+[B] but it like shows love you are creating value and
+
+815
+00:47:04,655 --> 00:47:06,672
+[B] 就是那些体验
+[B] that it's like those are the experiences
+
+816
+00:47:06,672 --> 00:47:10,530
+[B] 你也许没有在传统意义上创造经济价值。
+[B] that you're not creating like economic value in the maybe traditional sense.
+
+817
+00:47:11,510 --> 00:47:13,830
+[B] 呃，为别人做饭就是个很好的例子。
+[B] Um, cooking for people is a great example.
+
+818
+00:47:14,870 --> 00:47:21,268
+[B] 我猜，即便机器人早就能把饭做得很好之后
+[B] I suspect that people cooking and eating together will remain important long
+
+819
+00:47:21,268 --> 00:47:24,910
+[B] 人们一起做饭、一起吃饭仍然会很重要。
+[B] after robots can do a great job cooking food.
+
+820
+00:47:25,590 --> 00:47:30,087
+[A] 你觉得一个不错的经验法则会不会几乎就是那些最伟大的作品、
+[A] Do you think that a good heuristic would almost be like the greatest works of the
+
+821
+00:47:30,087 --> 00:47:31,790
+[A] 那些流传最久的作品。
+[A] the longest surviving works.
+
+822
+00:47:31,910 --> 00:47:33,597
+[A] 比如说《圣经》，
+[A] So let's say the Bible for example,
+
+823
+00:47:33,597 --> 00:47:36,681
+[A] 很可能一千年后它依然会有影响力
+[A] odds are it's still gonna be impactful like 1,000 years from now
+
+824
+00:47:36,681 --> 00:47:39,590
+[A] 因为它在过去两千年里一直都有影响力。
+[A] because it's been impactful for the past 2,000 years so far.
+
+825
+00:47:39,950 --> 00:47:43,361
+[A] 你觉得，如果要推断出哪些东西
+[A] Do you think that if you had to like extrapolate out what are the things
+
+826
+00:47:43,361 --> 00:47:47,830
+[A] 是人类仍然会在意的，那会不会就是最原始、最早的那些东西？
+[A] that humans are still gonna care about, it's like, what is the most primal, earliest thing?
+
+827
+00:47:47,870 --> 00:47:49,630
+[A] 你懂的，我们热爱冒险，我们喜欢一场精彩的探险。
+[A] You know, we love adventure. We love a good quest.
+
+828
+00:47:50,070 --> 00:47:55,190
+[B] 是的，我觉得跟进化生物学对着干，通常是个坏赌注。对。所以我会。
+[B] Yeah, I think betting against evolutionary biology is, like, usually a bad bet. Yeah. And so I would.
+
+829
+00:47:56,290 --> 00:47:58,250
+[B] 我会假设那些东西会延续下去。
+[B] I would assume those things continue.
+
+830
+00:47:58,690 --> 00:48:00,762
+[A] 你上一次意识到
+[A] When was the last time that you realized
+
+831
+00:48:00,762 --> 00:48:03,210
+[A] 自己雄心不够是什么时候？
+[A] that you weren't like being ambitious enough?
+
+832
+00:48:04,690 --> 00:48:07,730
+[B] 我是说，我在算力投资上肯定严重低估了。
+[B] I mean, I definitely badly undershot on the compute investments.
+
+833
+00:48:08,570 --> 00:48:12,610
+[A] 如果当时有正确的思维模型，你本来能预见到吗？
+[A] Could you have known going in with the right mental model?
+
+834
+00:48:13,170 --> 00:48:17,503
+[B] 能，但我大概是被金融市场之类的吓住了，我也说不好。
+[B] Yes, but I got like psyched out by the financial markets or something. I don't know.
+
+835
+00:48:17,503 --> 00:48:19,010
+[B] 那显然是个错误。
+[B] That was a clearly a mistake.
+
+836
+00:48:20,000 --> 00:48:21,080
+[A] 你以后要怎么纠正这一点？
+[A] How do you correct that in the future?
+
+837
+00:48:22,360 --> 00:48:24,896
+[B] 嗯，我是说，希望我能从中吸取教训，然后去犯一些新的错误，
+[B] Well, I mean, hopefully I'll learn from it and I'll make some new mistakes,
+
+838
+00:48:24,896 --> 00:48:25,960
+[B] 但那个错误我不会再犯了。
+[B] but I won't make that one again.
+
+839
+00:48:26,400 --> 00:48:30,389
+[A] 在算力这块，这算是有史以来最大的基础设施项目之一
+[A] On the compute side, this is kind of like the biggest infrastructure project of
+
+840
+00:48:30,389 --> 00:48:31,960
+[A] 或许是有史以来最大的，或者即将成为。
+[A] maybe all time or is about to be.
+
+841
+00:48:32,480 --> 00:48:32,760
+[A] 嗯。
+[A] Yeah.
+
+842
+00:48:33,200 --> 00:48:37,301
+[A] 你们会不会想在 OpenAI 内部纵向整合所有环节，
+[A] Are you gonna try and like vertically integrate under OpenAI's hood everything from
+
+843
+00:48:37,301 --> 00:48:40,246
+[A] 从发电到 token 生成，
+[A] like power generation to like token generation to, you know,
+
+844
+00:48:40,246 --> 00:48:43,019
+[A] 再到为 ChatGPT 或 Codex 里的某个用户提供服务之类，
+[A] serving some person in ChatGPT or Codex or something like
+
+845
+00:48:43,019 --> 00:48:45,560
+[A] 还是说你们会找一堆合作伙伴？
+[A] that or are you gonna try and have a bunch of partners?
+
+846
+00:48:46,000 --> 00:48:51,248
+[B] 显然，我们不会真的想把这一切都放在 OpenAI 内部做，
+[B] We're not literally gonna try to do it all inside of OpenAI, obviously,
+
+847
+00:48:51,248 --> 00:48:57,920
+[B] 但我们会争取把供应链运作得比目前更好。
+[B] but we will try to do a better job of a well functioning supply chain than we have done so far.
+
+848
+00:48:58,600 --> 00:49:02,832
+[B] 比如，我们已经把芯片设计和模型设计结合在一起，
+[B] Like you know, we, we have brought chip design and model design together and
+
+849
+00:49:02,832 --> 00:49:03,840
+[B] 这一点做得不错。
+[B] that's been good.
+
+850
+00:49:04,090 --> 00:49:07,390
+[B] 我觉得我们不需要用同样的方式把发电也整合进来，
+[B] I don't think we need to bring like electron production together in the same way
+
+851
+00:49:07,390 --> 00:49:08,890
+[B] 因为那更像是一种大宗商品。
+[B] because that's more of a commodity.
+
+852
+00:49:09,650 --> 00:49:16,263
+[C] 呃，不过，当你真正去想那条为了生产智能 | 呃，不过，当你真正去想那条为了生产智能
+[C] Uh, however, I am when you really think about the whole supply chain
+
+853
+00:49:16,263 --> 00:49:24,530
+[C] 而必须整合到一起的完整供应链时，我会说相对而言——
+[C] that has to come together to produce intelligence, I would say there is relatively.
+
+854
+00:49:25,460 --> 00:49:29,220
+[B] 太多注意力放在了能创造更好算法的算法上，
+[B] Too much focus on algorithms that create.
+
+855
+00:49:30,610 --> 00:49:33,867
+[B] 而对能创造更多数据中心的数据中心，
+[B] Better algorithms and not enough focus on data centers
+
+856
+00:49:33,867 --> 00:49:35,920
+[B] 关注得不够，
+[B] that can create more data centers,
+
+857
+00:49:35,920 --> 00:49:39,531
+[B] 而在一个有机器人、供应链真正自动化的世界里，
+[B] which in a world of robots and a truly automated supply chain,
+
+858
+00:49:39,531 --> 00:49:44,416
+[B] 你完全可以想象这么做——你可以用一个数据中心的思考能力，
+[B] you can totally imagine doing, you can like spend a data center's thinking power to
+
+859
+00:49:44,416 --> 00:49:48,027
+[B] 去驱动一支机器人队伍，制造出更多数据中心的副本。
+[B] drive a fleet of robots to make more copies of the data center.
+
+860
+00:49:48,027 --> 00:49:50,930
+[B] 这大概是件非常美妙的事。
+[B] And that's probably a very wonderful thing to do.
+
+861
+00:49:51,280 --> 00:49:53,603
+[B] 呃，相对于那份算力的其他用途，
+[B] Uh, relative to other uses of that compute,
+
+862
+00:49:53,603 --> 00:49:57,668
+[B] 如果我们对那些额外算力最终能释放的价值判断没错的话。
+[B] if we're right about what that additional compute will eventually unlock,
+
+863
+00:49:57,668 --> 00:50:01,798
+[B] 你有多少时间是花在思考如何成功设计出
+[B] how much of your time is spent thinking about how to like successfully design
+
+864
+00:50:01,798 --> 00:50:03,604
+[B] 那个完全由机器人端到端运作的未来，
+[B] that fully robot end to end future
+
+865
+00:50:03,604 --> 00:50:08,185
+[B] 还是说几乎没时间去想，几乎全都投入到执行上？
+[B] where Intel almost no time spent thinking about almost all goes into like execution,
+
+866
+00:50:08,185 --> 00:50:10,960
+[B] 那个点子其实很显而易见，非常——
+[B] like the idea that's a very obvious idea. It's very.
+
+867
+00:50:10,960 --> 00:50:12,934
+[B] 很简单。你可以相对快地说出，
+[B] Easy. You can like kind of relatively quickly say,
+
+868
+00:50:12,934 --> 00:50:14,720
+[B] 这些是需要拼到一起的部分。
+[B] here's the pieces that need to come together.
+
+869
+00:50:15,160 --> 00:50:19,489
+[B] 但要让整套机器和所有那些公司协同运转，
+[B] But then to like get that whole machinery and all those companies working together,
+
+870
+00:50:19,489 --> 00:50:23,447
+[B] 呃，那，那就没有大点子的光环，也不是去想那些
+[B] um, that, that, you know, none of the glory of the big idea and trying to, like,
+
+871
+00:50:23,447 --> 00:50:25,240
+[B] 宏大的想法，而是——
+[B] think the big thoughts, but, like.
+
+872
+00:50:25,240 --> 00:50:28,584
+[A] 大量的埋头苦干。当你想到执行的时候，
+[A] A lot of grinding when you think of like execution,
+
+873
+00:50:28,584 --> 00:50:33,680
+[A] 它对你来说通常意味着什么？没有什么“通常”，就像——
+[A] what does that typically mean for you? Not there's no typical there like the.
+
+874
+00:50:36,000 --> 00:50:39,164
+[B] 我是说，真要说有的话，那就是你只是
+[B] I mean, to the degree that there is, it's that you just like,
+
+875
+00:50:39,164 --> 00:50:43,360
+[B] 去做这个问题里所需的每一步，想办法把它实现。
+[B] do whatever step is required in the problem to figure out how to make it happen.
+
+876
+00:50:43,880 --> 00:50:48,892
+[B] 但你知道，搞清楚如何为新晶圆厂的建设融资，
+[B] But, you know, figuring out how to like finance new fab build out is very different
+
+877
+00:50:48,892 --> 00:50:52,652
+[B] 和搞清楚如何组建一支优秀的芯片设计团队，
+[B] than figuring out how to get a great chip design team together
+
+878
+00:50:52,652 --> 00:50:55,527
+[B] 再让他们和研究团队合作，
+[B] and then get them to work with the research team
+
+879
+00:50:55,527 --> 00:50:58,770
+[B] 然后真正让供应链顺畅运转，是完全不同的。
+[B] and then actually get the supply chain running well.
+
+880
+00:50:59,050 --> 00:50:59,330
+[C] 就像——
+[C] Like.
+
+881
+00:51:00,450 --> 00:51:02,090
+[B] 每一件事都是一种非常不同的做法。
+[B] Each of those is like a very different approach.
+
+882
+00:51:02,770 --> 00:51:07,024
+[A] 我知道 Brian Chesky 有个做法，他会毫不脸红地
+[A] One thing that I know that Brian Chesky does is he talks about like shamelessly
+
+883
+00:51:07,024 --> 00:51:10,034
+[A] 去找任何一件事里的那个专家，
+[A] trying to find whoever the expert is and any given thing
+
+884
+00:51:10,034 --> 00:51:13,306
+[A] 然后基本上就直接去问他心里的任何问题，
+[A] and then basically just go ask them whatever question he has
+
+885
+00:51:13,306 --> 00:51:15,858
+[A] 只要他想快速上手某件事。
+[A] if he's trying to come up to speed on something.
+
+886
+00:51:15,858 --> 00:51:18,410
+[A] 你在做这类事情时的流程是怎样的？
+[A] What is your process for doing something like.
+
+887
+00:51:18,410 --> 00:51:23,250
+[A] 就是那种你需要在极短时间内变得擅长的新东西。
+[A] That if it's something new that you need to become good at in a very rapid period of time.
+
+888
+00:51:24,230 --> 00:51:28,270
+[B] 肯定是去找专家聊，尽可能多地阅读。
+[B] Definitely finding the experts and talking to them, reading as much as I can.
+
+889
+00:51:28,950 --> 00:51:31,550
+[B] 我没有太多，那种很厉害的。我没有太多
+[B] I don't have a lot of, like, great. I don't have a lot of, like,
+
+890
+00:51:31,550 --> 00:51:32,590
+[B] 新奇的策略。
+[B] novel strategies here.
+
+891
+00:51:33,670 --> 00:51:35,956
+[B] 我一直非常感激，
+[B] I've always been really grateful
+
+892
+00:51:35,956 --> 00:51:41,670
+[B] 也惊喜地发现，只要你开口，专家们愿意提供的帮助有多大。
+[B] and pleasantly surprised by how much experts are willing to help people if they ask.
+
+893
+00:51:43,750 --> 00:51:45,390
+[C] 这算是人性中很美好的一点。
+[C] It's like a very nice thing about humanity.
+
+894
+00:51:46,150 --> 00:51:49,526
+[A] 我听你说过一句话，你应该总是开口要你想要的东西，
+[A] One thing I've heard you say is you should always ask for what you want
+
+895
+00:51:49,526 --> 00:51:52,310
+[A] 因为你不会每次都得到，但有时候你会。
+[A] because not all the time you get it, but sometimes you do.
+
+896
+00:51:52,590 --> 00:51:55,030
+[A] 有时候你会。而当你得到时，就可能发生了不起的事。
+[A] Sometimes you do. And when you do, amazing things can happen.
+
+897
+00:51:55,750 --> 00:51:58,148
+[A] 你上一次开口要一样
+[A] When was the last time that you asked for something
+
+898
+00:51:58,148 --> 00:52:01,230
+[A] 在别人看来完全疯狂、而你居然拿到了的东西，是什么时候？
+[A] that would seem absolutely insane to someone else and you got it.
+
+899
+00:52:02,190 --> 00:52:05,600
+[B] 其实，就是最近有一次我登上了一架飞机，这事我现在还不能说，但——
+[B] Actually, it was this recent time I got on a plane that I still can't talk about, but it.
+
+900
+00:52:05,720 --> 00:52:06,840
+[A] 好，我们再往回退一步。
+[A] Okay, go back one more.
+
+901
+00:52:07,560 --> 00:52:09,040
+[A] 再往前说一个你可以聊的例子。
+[A] Go back one more that you can talk about.
+
+902
+00:52:10,640 --> 00:52:13,280
+[B] 我是说，某种意义上 Codex 就是一个例子。
+[B] I mean, in some sense, Codex was an example of this.
+
+903
+00:52:13,920 --> 00:52:17,520
+[B] 它不是最近的那个，但我觉得很有启发性。
+[B] Like, this is not the most recent one, but it was one that I think it's instructive.
+
+904
+00:52:18,120 --> 00:52:20,557
+[B] 我们当时远远落后于 Claude Code。
+[B] Um, we were way behind Cloud Code
+
+905
+00:52:20,557 --> 00:52:26,153
+[B] 想用一个编程应用去打败他们，似乎是一次疯狂的自杀式任务，
+[B] and it seemed like a kind of crazy kamikaze mission to try to beat them with a
+
+906
+00:52:26,153 --> 00:52:30,125
+[B] 你知道，大家的共识是，
+[B] coding app and and you know, the like the consensus is
+
+907
+00:52:30,125 --> 00:52:35,360
+[B] 这种事永远行不通，你应该转向下一件事。
+[B] that this kind of thing never works and you just move on to the next one.
+
+908
+00:52:35,400 --> 00:52:38,142
+[B] 你知道，这就像是徒劳无功，
+[B] But, you know, it's like a fool's errand to try to like win
+
+909
+00:52:38,142 --> 00:52:41,760
+[B] 尤其当别人已经在某个产品品类里占了上风。
+[B] when someone else already has momentum in a particular product category.
+
+910
+00:52:42,120 --> 00:52:45,840
+[B] 但我们觉得这真的很重要，就让一个团队去做。
+[B] But we decided we thought it was really important, we asked a team to do it.
+
+911
+00:52:46,160 --> 00:52:49,692
+[B] 他们完成了一件真正的、难以置信的，
+[B] They performed a legitimate, like unbelievable,
+
+912
+00:52:49,692 --> 00:52:52,720
+[B] 在商业史上都非常罕见的事。
+[B] very rare in the history of business thing.
+
+913
+00:52:53,260 --> 00:52:58,371
+[B] 现在它成了我认识的大多数顶尖程序员
+[B] And now it is the product that most of and model that most of the best coders
+
+914
+00:52:58,371 --> 00:52:59,460
+[B] 所使用的产品和模型。
+[B] that I know use.
+
+915
+00:53:00,060 --> 00:53:02,580
+[B] 这在当时感觉是不可能完成的事。
+[B] Um, and that felt like an impossible thing.
+
+916
+00:53:02,620 --> 00:53:04,307
+[B] 但如果我们没有对团队说，嘿，
+[B] But if we hadn't asked the team, like, hey,
+
+917
+00:53:04,307 --> 00:53:06,815
+[B] 我们有一个非常重要但极其艰难的任务交给你们，
+[B] we have a really important but extremely hard mission for you,
+
+918
+00:53:06,815 --> 00:53:08,020
+[B] 这件事根本不会发生。
+[B] just wouldn't have happened.
+
+919
+00:53:08,620 --> 00:53:11,496
+[A] 你为什么做这个决定？为什么不干脆放弃？
+[A] Why did you make that decision? Why didn't you just give up?
+
+920
+00:53:11,496 --> 00:53:13,140
+[A] 因为它感觉属于那种，
+[A] Because it felt like one of these.
+
+921
+00:53:14,070 --> 00:53:17,030
+[B] 少数几个非常战略、而且会很快发生的领域。
+[B] Few very strategic areas that was gonna happen very quickly.
+
+922
+00:53:17,590 --> 00:53:20,186
+[B] 编程对 RSI 太重要了，
+[B] And coding is so important to RSI,
+
+923
+00:53:20,186 --> 00:53:24,545
+[B] 更不用说它的经济价值，我们实在没法，
+[B] to say nothing of the economic value that we just didn't,
+
+924
+00:53:24,545 --> 00:53:27,790
+[B] 它不像是我们能放弃的那种。
+[B] it didn't feel like one we could give up on.
+
+925
+00:53:28,150 --> 00:53:33,061
+[A] 在 YC，你其实拥有了那个使命最纯粹的版本，
+[A] At YC, you basically had the most distilled version of what the mission was,
+
+926
+00:53:33,061 --> 00:53:37,270
+[A] 就是尽力增加世界上的创新总量。
+[A] is just trying to increase the amount of innovation in the world.
+
+927
+00:53:38,270 --> 00:53:42,853
+[A] 我的直觉是，如果你真的想过为什么决定去做
+[A] My hunch is that if you actually like thought about why did you decide to go work on
+
+928
+00:53:42,853 --> 00:53:46,068
+[A] OpenAI 而不是继续做 YC，你几乎可以论证说，
+[A] open AI instead of YC, you could almost make the argument
+
+929
+00:53:46,068 --> 00:53:50,720
+[A] 通过做这个，你其实能对增加世界上的创新总量
+[A] that you could just have a bigger impact on increasing the amount of innovation in
+
+930
+00:53:50,720 --> 00:53:52,430
+[A] 产生更大的影响。
+[A] the world through working on.
+
+931
+00:53:52,590 --> 00:53:55,350
+[B] 当时并没有想得这么理性，就只是，
+[B] It wasn't that intellectualized at the time, it was just like.
+
+932
+00:53:56,690 --> 00:53:59,290
+[C] 我大概就是知道。
+[C] I kinda knew that.
+
+933
+00:53:59,730 --> 00:54:02,643
+[C] 不，我一生都想做 AI，而且我大概知道，
+[C] No, my whole life I wanted to work on AI and I kind of knew
+
+934
+00:54:02,643 --> 00:54:05,880
+[C] 这会是我这辈子能碰到的最重要的事。
+[C] that it would be the most important thing I could ever touch.
+
+935
+00:54:06,240 --> 00:54:10,320
+[B] 对我来说这就是我的热情所在，而且我确实觉得它会非常重要。
+[B] Like for me it was like my passion. I just, and I did think it'd be really important.
+
+936
+00:54:10,440 --> 00:54:11,240
+[B] 我就是想去做。
+[B] I just wanted to do it.
+
+937
+00:54:11,600 --> 00:54:13,920
+[A] 最初那几周是什么样的？
+[A] What were those first few weeks like?
+
+938
+00:54:13,920 --> 00:54:16,740
+[A] 我知道有过那么一段，不知道你会不会把它形容成一个营地，
+[A] I know that there was this, I, I don't know if you'd describe it as a camp,
+
+939
+00:54:16,740 --> 00:54:19,559
+[A] 但大家基本上就是聚在一起搞了个类似闭关的活动，
+[A] but people just basically like all got together on some kind of retreat
+
+940
+00:54:19,559 --> 00:54:23,000
+[A] 当时甚至都不打算做成一家公司，我觉得就只是……
+[A] and it wasn't even like, meant to be a company at the time. I think it was just like, like.
+
+941
+00:54:23,000 --> 00:54:24,887
+[B] 一开始的头几周，是的。我们，
+[B] The first few weeks, once we started, yeah. No, we were,
+
+942
+00:54:24,887 --> 00:54:26,200
+[B] 我们在 Greg Brockman 的公寓里。
+[B] we were in Greg Brockman's apartment.
+
+943
+00:54:26,580 --> 00:54:30,060
+[B] 对，当时大概有十个人，十二个人。
+[B] Yes. Um, and there were maybe like 10 of us, 12 of us.
+
+944
+00:54:31,180 --> 00:54:33,900
+[B] 你知道，为了把这事启动起来，之前做了那么多准备。
+[B] And, you know, it had been all of this work to get it going.
+
+945
+00:54:34,020 --> 00:54:35,300
+[B] 然后有一天我们就来了。
+[B] And then we showed up one day.
+
+946
+00:54:36,140 --> 00:54:39,460
+[C] 第一天，大概是一月吧，差不多那时候。
+[C] The first day I was like, you know, January, something like that.
+
+947
+00:54:39,980 --> 00:54:44,860
+[C] 我当时就想，好，我们到齐了。我们要做什么？
+[C] And I was like, so here we are. What are we gonna do?
+
+948
+00:54:46,190 --> 00:54:47,110
+[C] 我们该弄块白板。
+[C] We should get a whiteboard.
+
+949
+00:54:47,750 --> 00:54:48,990
+[C] 我们该开始讨论点子。
+[C] We should start talking about ideas.
+
+950
+00:54:49,870 --> 00:54:50,990
+[B] 也许我们该写些论文。
+[B] Maybe we should write papers.
+
+951
+00:54:51,910 --> 00:54:54,270
+[B] 我当时心里就想，糟了，我们到底做了什么？
+[B] And I had this like, oh, fuck, what have we done?
+
+952
+00:54:54,790 --> 00:54:57,030
+[C] 那真是一个非常疯狂的时刻。
+[C] Like, it was like a really crazy moment.
+
+953
+00:54:57,630 --> 00:55:01,177
+[A] 你是不是已经向全世界和一大堆人承诺了，
+[A] Um, had you already like, committed to the world and a whole bunch of other people,
+
+954
+00:55:01,177 --> 00:55:02,742
+[A] 是的，我们要做这件事，但，
+[A] yeah, we're doing this, but it took,
+
+955
+00:55:02,742 --> 00:55:05,037
+[A] 我们花了好几年才真正找到节奏，
+[A] it took a couple of years to like really get our groove
+
+956
+00:55:05,037 --> 00:55:06,550
+[A] 想清楚我们到底要做什么。
+[A] and figure out what we're gonna do.
+
+957
+00:55:07,020 --> 00:55:12,327
+[C] 只是当时并不清楚，我是说，我们知道想搞清楚怎么造出 AI，
+[C] Just it was not, I mean, we knew that we wanted to like figure out how to build AI,
+
+958
+00:55:12,327 --> 00:55:14,940
+[C] 但除此之外，天啊，真的非常不清楚。
+[C] but beyond that, man, really unclear.
+
+959
+00:55:15,460 --> 00:55:21,273
+[A] 当你处在这种类似曼哈顿计划的、在树林里摸黑前行的阶段时，
+[A] When you're in the like stumbling through the woods phase of this type of Manhattan
+
+960
+00:55:21,273 --> 00:55:26,834
+[A] 你怎样才能最高效地穿过这些树木，快速地
+[A] Project, how do you most efficiently just stumble through the trees to rapidly
+
+961
+00:55:26,834 --> 00:55:28,940
+[A] 想清楚哪些事情不该做？
+[A] figure out what not to work on?
+
+962
+00:55:29,690 --> 00:55:36,730
+[C] 我是说，如果某件事行不通、你又没主意了，那就砍掉它。
+[C] I mean, if something's not working and you run out of ideas, you can kill it.
+
+963
+00:55:36,850 --> 00:55:37,730
+[B] 这反而容易些。
+[B] That's kind of easier.
+
+964
+00:55:38,250 --> 00:55:41,389
+[B] 真正难的是，当某件事进展特别顺利时，
+[B] The really hard thing is when something is working super well,
+
+965
+00:55:41,389 --> 00:55:44,890
+[B] 你什么时候决定砍掉其他东西，让它做得更好？
+[B] when do you decide to kill the other things to make it work even better?
+
+966
+00:55:45,810 --> 00:55:50,267
+[B] OpenAI 历史上有过很多相当重要的时刻，
+[B] So there have been a lot of quite important moments in OpenAI's history
+
+967
+00:55:50,267 --> 00:55:52,567
+[B] 其中某件事开始真正起效，
+[B] where one thing started to really work
+
+968
+00:55:52,567 --> 00:55:56,520
+[B] 我们砍掉了其他不错的项目，好让最好的那件事做得更好。
+[B] and we killed other good things to make the best thing work better.
+
+969
+00:55:57,600 --> 00:56:00,760
+[B] 所以当 GPT-3 开始见效时，我们关掉了像机器人这样的项目，
+[B] So when GPT 3 started to work, we shut down things like robotics,
+
+970
+00:56:00,760 --> 00:56:03,920
+[B] 那些我们本来非常兴奋的东西，就是为了全力专注在这上面。
+[B] stuff that we were really excited about to really focus on this.
+
+971
+00:56:03,960 --> 00:56:06,550
+[B] 后来最近编程 agents 开始见效时，
+[B] And then when coding agents started to work recently,
+
+972
+00:56:06,550 --> 00:56:09,772
+[B] 我们又关掉了像 Sora 这类我们同样非常兴奋的项目，
+[B] we shut down things like Sora that we were also really excited about
+
+973
+00:56:09,772 --> 00:56:12,880
+[B] 还有浏览器，就是为了全力做这件事，而这么做很难。
+[B] and the browser to really work on this and that is difficult to do.
+
+974
+00:56:12,880 --> 00:56:18,010
+[A] 嗯，比如说你往某个像 Sora 这样的新业务投了 10 亿美元。
+[A] Um, let's say you invest $1 billion into some new business like Sora.
+
+975
+00:56:18,730 --> 00:56:24,290
+[A] 你怎么判断那个业务会不会成为 OpenAI 的支柱？
+[A] How do you decide whether or not that business is going to, like, become a, you know, OpenAI pillar?
+
+976
+00:56:24,450 --> 00:56:26,730
+[B] 哦，它本来会的。不不，它本来会非常成功。
+[B] Oh, it would have been. No, no, it would have been super successful.
+
+977
+00:56:26,730 --> 00:56:31,010
+[B] 只是把算力和精力投入到编程上更重要。
+[B] It was just like it was more important to put the compute and the energy into coding.
+
+978
+00:56:31,090 --> 00:56:34,970
+[A] 带我进到那样一场会议里。想象你就在那场会议中。
+[A] Agents take me into one of those meetings. Like imagine you're in that meeting.
+
+979
+00:56:35,090 --> 00:56:38,449
+[A] 我猜你可能就在那场会议里，你说，
+[A] I guess maybe you were in that meeting where you are saying,
+
+980
+00:56:38,449 --> 00:56:41,877
+[A] 我们在这件事上花了一年多，投入了巨额资金、
+[A] we've spent a year plus on this thing, huge amounts of money,
+
+981
+00:56:41,877 --> 00:56:46,470
+[A] 巨量算力、大量人力和资源，还有很大的势头。
+[A] huge amounts of compute, lots of people and resources, a lot of momentum into it.
+
+982
+00:56:46,750 --> 00:56:49,750
+[A] 人们在用它，也很喜欢它。然后你决定要把它停掉。
+[A] People use it. They love it. And then you decide we're going to pull the plug.
+
+983
+00:56:49,830 --> 00:56:51,070
+[A] 你是怎么做这个决定的？
+[A] Like how do you make that call?
+
+984
+00:56:51,510 --> 00:56:54,230
+[B] 是的，这不是一场会议就能定的事。
+[B] Yeah, it's not like, it's not, it's not a one meeting thing.
+
+985
+00:56:54,310 --> 00:56:56,666
+[C] 它更像是，我觉得是一种真实的，
+[C] It's like a, I think it's a real,
+
+986
+00:56:56,666 --> 00:56:59,838
+[C] 是一种逐渐形成的认知，
+[C] it's like a somewhat gradual realization
+
+987
+00:56:59,838 --> 00:57:05,458
+[C] 意识到这些算力、这些人，
+[C] that there is a more important use of this compute, these people, you know,
+
+988
+00:57:05,458 --> 00:57:11,620
+[C] 这个产品方向有更重要的用途，我们要做一个非常痛苦的决定去实现它。
+[C] this product direction and we're gonna make a very painful decision to get there.
+
+989
+00:57:11,620 --> 00:57:14,430
+[C] 一旦你这么做了，你怎么让大家重新对齐目标？
+[C] How do you realign people once you do.
+
+990
+00:57:14,430 --> 00:57:17,790
+[A] 你得砍掉他们的“心血宝宝”，把他们转去做另一个。
+[A] Have to like kind of kill their baby to move them to another baby.
+
+991
+00:57:18,270 --> 00:57:20,586
+[B] 大家其实都理解使命和利害关系，
+[B] People kind of understand the mission and the stakes
+
+992
+00:57:20,586 --> 00:57:23,270
+[B] 也理解为了达成目标需要重新调整方向。所以即便他们，
+[B] and the need to reorient to get there. So even if they're like.
+
+993
+00:57:24,140 --> 00:57:28,580
+[C] 当下不开心，有时他们其实很开心。
+[C] Unhappy in the moment sometimes they're very happy.
+
+994
+00:57:28,700 --> 00:57:30,460
+[B] 有时是，对，这对使命来说是正确的事。
+[B] Sometimes like, yeah, this is the right thing for the mission.
+
+995
+00:57:30,500 --> 00:57:34,134
+[B] 但即便当下不开心，他们也会想，我理解我们为什么这么做，
+[B] But even if they're unhappy in the moment, they're like, I get why we're doing this,
+
+996
+00:57:34,134 --> 00:57:37,820
+[B] 而这种持续聚焦到超级智能上的做法是件好事。
+[B] and the kind of continuing refocus towards super intelligence is like a good thing.
+
+997
+00:57:38,220 --> 00:57:41,700
+[A] 你觉得现在有没有一些项目会被砍掉？
+[A] Do you think that there's gonna be projects currently that are gonna get killed?
+
+998
+00:57:42,220 --> 00:57:43,900
+[C] 我想会的。为了去追求别的。是的。
+[C] I assume so. In order to pursue. Yeah.
+
+999
+00:57:44,330 --> 00:57:47,533
+[A] John Collison 有一句很棒的话，他说，
+[A] There's this amazing line from John Collison where he said,
+
+1000
+00:57:47,533 --> 00:57:50,736
+[A] 基本上世界上的一切，你只要环顾四周就会发现，
+[A] basically everything in the world, if you just look around,
+
+1001
+00:57:50,736 --> 00:57:53,170
+[A] 把事情做成是如此之难。
+[A] it's like so difficult to make things happen.
+
+1002
+00:57:53,210 --> 00:57:56,690
+[A] 哪怕只是建一张公园长椅，都难得不可思议。
+[A] Even like getting so difficult park bench built, it's incredibly difficult.
+
+1003
+00:57:57,050 --> 00:57:59,267
+[A] 所以当你环顾四周，你可以把这个世界
+[A] And so when you look around, you can kind of think of the world
+
+1004
+00:57:59,267 --> 00:58:00,730
+[A] 想象成一个由热爱驱动的项目组成的宇宙。
+[A] as like a universe of passion projects.
+
+1005
+00:58:01,290 --> 00:58:06,881
+[A] 我觉得如果你处在类似 Steve Jobs 的位置，你将要
+[A] And I think that if you are in like Steve Jobs-esque position where you're gonna,
+
+1006
+00:58:06,881 --> 00:58:12,638
+[A] 打造出某种东西，可能有十亿人每天都会
+[A] like, create something where a billion people might interact with it every single
+
+1007
+00:58:12,638 --> 00:58:14,140
+[A] 和它互动好几个小时。
+[A] day for, like, hours.
+
+1008
+00:58:14,420 --> 00:58:17,500
+[A] 你就必须深入思考，我该如何
+[A] You have to, like, think deeply about how do I, like,
+
+1009
+00:58:17,500 --> 00:58:22,300
+[A] 设计出人们会喜爱、并且最好不会让他们不满的东西？
+[A] design something that people are going to love and ideally not be unhappy about?
+
+1010
+00:58:22,500 --> 00:58:23,660
+[A] 你是怎么看待设计的？
+[A] How do you think about design?
+
+1011
+00:58:25,020 --> 00:58:29,260
+[B] 我觉得能和 Johnny Ive 一起做设计非常幸运。
+[B] I feel super lucky to get to work with Johnny Ive on designing.
+
+1012
+00:58:30,280 --> 00:58:30,520
+[C] 各种东西。
+[C] Things.
+
+1013
+00:58:31,160 --> 00:58:34,936
+[B] 我从他身上学到了很多，他会真正去研究一个问题，
+[B] And I have learned so much from him about how he really studies a problem
+
+1014
+00:58:34,936 --> 00:58:37,304
+[B] 然后才试着去找解决方案，而不是，
+[B] before trying to get to the solution and not,
+
+1015
+00:58:37,304 --> 00:58:41,528
+[B] 甚至不让自己过多去想解决方案，直到他真正地设计、
+[B] not even letting him think too much about the solution until he really designs,
+
+1016
+00:58:41,528 --> 00:58:43,320
+[B] 真正理解了那个问题。
+[B] really understands the problem.
+
+1017
+00:58:44,400 --> 00:58:48,280
+[B] 我觉得这是我以前没能领会的一个关键。
+[B] And I think this is a key that I didn't appreciate before.
+
+1018
+00:58:48,520 --> 00:58:53,720
+[B] 真正伟大的设计，更多在于理解问题，而不是灵光一现。
+[B] Like, really great design is way more about understanding the problem than the flash of insight.
+
+1019
+00:58:53,760 --> 00:58:58,900
+[C] 如果你急着冲向结果，或者过早把自己锁死在某个方案上，
+[C] And if you try to rush towards the thing or lock yourself too much into the thing,
+
+1020
+00:58:58,900 --> 00:59:01,080
+[C] 嗯，你就做不出那么好的成果。
+[C] um, you will not do as good of a job.
+
+1021
+00:59:01,400 --> 00:59:08,920
+[C] 我觉得iPhone是人类迄今为止共同创造出的最伟大的科技产品。
+[C] I think the iPhone is the greatest piece of technology humanity has collectively yet made.
+
+1022
+00:59:09,000 --> 00:59:10,440
+[B] 它是一件不可思议的东西。
+[B] It is incredible thing.
+
+1023
+00:59:11,090 --> 00:59:13,170
+[B] 但我已经不太喜欢我和它之间的关系了。
+[B] But I don't like love my relationship with it anymore.
+
+1024
+00:59:13,970 --> 00:59:16,450
+[B] 我关掉了通知，所以现在我反而更喜欢它了。
+[B] I turned off my notifications. So I actually like it much better now.
+
+1025
+00:59:16,650 --> 00:59:18,250
+[A] 是啊，我一直开着勿扰模式。
+[A] Yeah, I keep myself on do not disturb.
+
+1026
+00:59:18,890 --> 00:59:20,421
+[B] 那还不够，我就干脆，
+[B] That wasn't even enough. I just like,
+
+1027
+00:59:20,421 --> 00:59:23,730
+[B] 我把除了极少数几样东西之外的所有通知都关了。
+[B] I turned off notifications for everything except a very small number of things.
+
+1028
+00:59:24,730 --> 00:59:26,762
+[B] 我从来不开通知，因为，你懂的，
+[B] And I never have them on because I just, you know,
+
+1029
+00:59:26,762 --> 00:59:28,490
+[B] 想看的时候我自己去看就行。
+[B] I can like look at it if I want to look at it.
+
+1030
+00:59:28,570 --> 00:59:29,330
+[A] 连消息应用也是。
+[A] Even messages apps.
+
+1031
+00:59:29,970 --> 00:59:30,730
+[B] 连消息应用也关。
+[B] Even messages apps.
+
+1032
+00:59:31,280 --> 00:59:33,298
+[B] 那算是一次很大的生活升级。
+[B] That was like a big life upgrade.
+
+1033
+00:59:33,298 --> 00:59:36,960
+[B] 我还删了TikTok，因为它实在太有威力了。
+[B] And I deleted TikTok because it was just like too powerful.
+
+1034
+00:59:38,040 --> 00:59:40,160
+[C] 呃，你曾经对TikTok上瘾，你知道，我……
+[C] Uh, you were addicted to TikTok, you know, I.
+
+1035
+00:59:40,200 --> 00:59:43,080
+[B] 呃，我们做Sora这款应用时发生了一件很疯狂的事。
+[B] Uh, so here's a crazy thing that happened when we were building the Sora app.
+
+1036
+00:59:43,520 --> 00:59:46,520
+[B] 我让自己对TikTok上瘾，因为我就是想去学习。
+[B] I made myself get addicted to TikTok cuz I wanted to just, like learn.
+
+1037
+00:59:46,680 --> 00:59:49,120
+[B] 我当时想，你知道，我之前从没真正用过它。
+[B] Like I was like, you know, I, I never really used it before.
+
+1038
+00:59:49,120 --> 00:59:51,566
+[B] 我是说，会有人给我发TikTok之类的，
+[B] I mean I had like people would send me a TikTok or whatever,
+
+1039
+00:59:51,566 --> 00:59:52,840
+[B] 但我从没被吸进去过。
+[B] but I never got sucked into it.
+
+1040
+00:59:53,000 --> 00:59:56,858
+[B] 我当时想，我真的不想做一个会让
+[B] And I was like, I really don't want to build something that is gonna have
+
+1041
+00:59:56,858 --> 00:59:59,800
+[B] 那种东西吞掉人们时间的产品，但又……然后。
+[B] that kind of thing absorb people's time, but not. And.
+
+1042
+01:00:00,080 --> 01:00:03,115
+[A] 我爱上了它。我爱上了TikTok，我真的觉得它很棒。嗯，
+[A] I loved it. I loved TikTok. I really thought it was great. Um,
+
+1043
+01:00:03,115 --> 01:00:05,240
+[A] 然后我以为我能控制得住它。
+[A] and then I thought I could like control it.
+
+1044
+01:00:05,240 --> 01:00:07,434
+[A] 我想，哦，你知道，它其实挺好玩的，
+[A] I was like, oh, you know, it's actually kind of fun,
+
+1045
+01:00:07,434 --> 01:00:09,941
+[A] 但我只在睡前放松时用大概10分钟，
+[A] but I only use it for like 10 minutes to wind down before bed
+
+1046
+01:00:09,941 --> 01:00:11,560
+[A] 我觉得自己完全掌控得住。
+[A] and I'm like totally in control of it.
+
+1047
+01:00:12,400 --> 01:00:14,092
+[A] 然后有一晚就变成了一个小时，
+[A] And then it was like an hour one night
+
+1048
+01:00:14,092 --> 01:00:17,927
+[A] 再后来某个周六下午，我在沙发上刷了差不多三个小时，我心想，
+[A] and then some Saturday afternoon I was on the couch like three hours and I was like,
+
+1049
+01:00:17,927 --> 01:00:21,480
+[A] 这真的不是我心目中iPhone该有的样子。
+[A] this is, like, really not what I thought the iPhone was supposed to be about.
+
+1050
+01:00:21,740 --> 01:00:27,100
+[A] 我当下确实像嗑药一样享受，但我能感觉到它对我有害。
+[A] Now I'm really enjoying in the moment like a drug, but I can tell it's bad for me.
+
+1051
+01:00:27,820 --> 01:00:30,785
+[A] 然后我短暂地又把它控制住了，降到了大概5分钟，
+[A] And then I like briefly got it back under control and I was down to like 5,
+
+1052
+01:00:30,785 --> 01:00:33,900
+[A] 一晚10分钟，随便啦，就是睡前稍微放松一下。
+[A] 10 minutes a night, whatever, you know, like a little wind down before bed.
+
+1053
+01:00:33,900 --> 01:00:35,180
+[A] 然后我就觉得够了。
+[A] Then I was just like enough.
+
+1054
+01:00:35,820 --> 01:00:41,139
+[A] 我觉得iPhone很了不起，但我觉得自己没有足够的自控力
+[A] I think the iPhone is amazing and yet I did not feel like I had enough self control
+
+1055
+01:00:41,139 --> 01:00:46,377
+[A] 去留着那个应用，也不觉得消息应用上的通知
+[A] to keep that app or I did not feel like the notifications on messaging apps were
+
+1056
+01:00:46,377 --> 01:00:48,230
+[A] 对我而言是净收益的好事。
+[A] like a net good thing for me.
+
+1057
+01:00:48,630 --> 01:00:53,684
+[A] 我确信我们会做出一套不可思议、漂亮、真正有用、
+[A] And I'm sure we will make an incredible, beautiful, like really helpful,
+
+1058
+01:00:53,684 --> 01:00:55,590
+[A] 能赋能于人的设备。
+[A] empowering set of devices.
+
+1059
+01:00:56,670 --> 01:00:58,429
+[A] 我同样确信人们会滥用它们，
+[A] And I'm also sure that people will misuse them
+
+1060
+01:00:58,429 --> 01:01:00,790
+[A] 会以我们想象不到的方式让人们的生活变得更糟。
+[A] and it'll make people's lives worse in ways we can't imagine.
+
+1061
+01:01:00,830 --> 01:01:03,750
+[A] 我们会去适应。但这就是强大技术的特点。
+[A] And we'll adapt. But this is a thing about powerful technology.
+
+1062
+01:01:04,260 --> 01:01:05,540
+[B] 你在发明一种新设备。
+[B] You're inventing a new device.
+
+1063
+01:01:06,380 --> 01:01:10,220
+[B] 如果换成Johnny，他在这个问题空间里探索的过程是怎样的？
+[B] What is that process of exploration through the problem space like if you're Johnny?
+
+1064
+01:01:10,900 --> 01:01:12,100
+[A] 我不替他回答。
+[A] I don't answer on his behalf.
+
+1065
+01:01:12,180 --> 01:01:17,189
+[A] 嗯，不过好吧，他之前多少讲过一些，就是他的流程，
+[A] Um, but okay, he's like talked about this before somewhat, but it's like his process,
+
+1066
+01:01:17,189 --> 01:01:19,165
+[A] 你知道，当他在做一辆车的时候，
+[A] you know, when he's doing the car,
+
+1067
+01:01:19,165 --> 01:01:22,128
+[A] 他会去研究整个赛车运动的历史，
+[A] he will like go study all the history of motorsport
+
+1068
+01:01:22,128 --> 01:01:24,386
+[A] 然后是各种不同的字体，
+[A] and then like the different typefaces
+
+1069
+01:01:24,386 --> 01:01:28,690
+[A] 就是人们用在车厢内文字上的那些字体，还有材料以及为什么这么用。
+[A] that people use for the text in the cabin of a car and the materials and why.
+
+1070
+01:01:28,770 --> 01:01:31,712
+[A] 还有引擎多年来发出的各种不同声音，
+[A] And like the diff different sounds that engines have made over time
+
+1071
+01:01:31,712 --> 01:01:32,920
+[A] 以及为什么其中有些声音更吸引人。
+[A] and why some have appealed.
+
+1072
+01:01:33,040 --> 01:01:36,982
+[A] 我是说，他会真的写出一整本本书，记录他对所有这些
+[A] I mean, he'll write literal books of all his explorations of all of these like
+
+1073
+01:01:36,982 --> 01:01:39,200
+[A] 极其细致的小部件的探索。
+[A] unbelievably detailed small components.
+
+1074
+01:01:39,960 --> 01:01:42,566
+[B] 你们是不是基本上就拿那些书，去试着，
+[B] Did you guys basically take those books and, like, try to,
+
+1075
+01:01:42,566 --> 01:01:45,280
+[B] 把它们当作训练数据，去做一个Johnny模型？
+[B] like use them as training data to make, like, a Johnny model?
+
+1076
+01:01:45,440 --> 01:01:48,800
+[A] 呃，没有，但那倒是件值得一试的好事。
+[A] Um, no, but that would be a great thing to try there.
+
+1077
+01:01:48,880 --> 01:01:51,120
+[A] 是啊，他的流程里肯定有一部分是我理解不了的。
+[A] Yeah, there is definitely a part of his process that I don't understand.
+
+1078
+01:01:51,160 --> 01:01:53,060
+[A] 比如研究这一步我能理解。
+[A] Like I understand the studying.
+
+1079
+01:01:54,220 --> 01:01:58,180
+[A] 把一个全新的概念打磨成很棒的东西，这一步我也能理解。
+[A] I understand the refinement of a very new concept into something great.
+
+1080
+01:01:58,620 --> 01:02:00,241
+[A] 但中间还有那么一步，
+[A] But there is like a middle step,
+
+1081
+01:02:00,241 --> 01:02:04,543
+[A] 那种来自真正理解问题的灵感，一直到那种
+[A] the inspiration that comes from understanding the problem really well to the like
+
+1082
+01:02:04,543 --> 01:02:07,660
+[A] 非常新颖的想法，在我看来好像是一下子同时冒出来的。
+[A] very novel idea kind of that seems to me to happen all at once.
+
+1083
+01:02:07,700 --> 01:02:11,070
+[B] 我不太理解，当你在思考设计一样东西时，
+[B] And I don't understand that when you're thinking about designing something that,
+
+1084
+01:02:11,070 --> 01:02:12,260
+[B] 你脑子里在想什么？
+[B] what goes through your mind?
+
+1085
+01:02:13,580 --> 01:02:14,860
+[A] 反正我不是设计师。
+[A] I'm not a designer anyway.
+
+1086
+01:02:14,940 --> 01:02:16,449
+[A] 我会，我不会，我，我，呃，
+[A] I would, I would not, I, I, uh,
+
+1087
+01:02:16,449 --> 01:02:20,031
+[A] 我尽量很清楚地认识到自己不擅长什么，我
+[A] I try to be like pretty good about realizing what I'm not good at and I,
+
+1088
+01:02:20,031 --> 01:02:22,420
+[A] 我不会在那方面硬要有很强的观点。
+[A] I wouldn't try to have a strong opinion there.
+
+1089
+01:02:23,220 --> 01:02:26,940
+[B] 在做企业这方面，你最不擅长的是什么？
+[B] What are you the worst at on the business building side?
+
+1090
+01:02:27,860 --> 01:02:28,660
+[A] 也许是产品。
+[A] Maybe product.
+
+1091
+01:02:29,380 --> 01:02:30,100
+[A] 真的吗？也许吧。
+[A] Really? Maybe.
+
+1092
+01:02:31,540 --> 01:02:34,500
+[B] 好，如果你不擅长产品，你怎么找到优秀的产品人才？
+[B] Okay. How do you find great product people if you're bad at product?
+
+1093
+01:02:35,870 --> 01:02:38,590
+[A] 这是我一直不太认同别人的一点。
+[A] This is a thing that I've never quite agreed with people on.
+
+1094
+01:02:38,630 --> 01:02:40,904
+[A] 商界有一种说法，
+[A] There's like, there's like a, there's like a business meme
+
+1095
+01:02:40,904 --> 01:02:43,550
+[A] 说你只能招你自己深刻理解的人和事。
+[A] that you can only hire people and things that you deeply understand.
+
+1096
+01:02:43,630 --> 01:02:46,870
+[A] 我觉得，你知道，如果他们很优秀，我觉得这显然不成立。
+[A] I think it, you know, if they're great. I think this is just clearly not true.
+
+1097
+01:02:47,830 --> 01:02:49,820
+[A] 我也不懂设计。我知道 Johnny 设计很棒。
+[A] I don't understand design either. I know Johnny's great design.
+
+1098
+01:02:49,820 --> 01:02:51,110
+[A] 有很多东西我都能指出来。
+[A] Like there's lots of things I can point to.
+
+1099
+01:02:51,110 --> 01:02:52,537
+[B] 你跟他聊三十分钟，
+[B] And you talk to him for 30 minutes,
+
+1100
+01:02:52,537 --> 01:02:55,697
+[B] 就很清楚哪些东西你要主动去提升，
+[B] it's very obvious which things do you try to actively get better at and then
+
+1101
+01:02:55,697 --> 01:02:58,092
+[B] 哪些东西你只需要外包出去，并且明白
+[B] which things do you just try to outsource and understand
+
+1102
+01:02:58,092 --> 01:03:00,080
+[B] 你永远都不会成为这方面最顶尖的人。
+[B] that you're just never gonna be one of the best.
+
+1103
+01:03:00,480 --> 01:03:03,771
+[A] 我非常相信，你应该努力提升你的长处，而那种
+[A] I am a big believer in you should try to get better at your strengths and the whole,
+
+1104
+01:03:03,771 --> 01:03:06,030
+[A] 执着于要提升那些
+[A] like, obsession with I'm gonna get better at the things
+
+1105
+01:03:06,030 --> 01:03:08,240
+[A] 我根本不擅长、也永远不会擅长的东西的想法。
+[A] that I'm just not good at all and never gonna be good at.
+
+1106
+01:03:08,400 --> 01:03:10,800
+[A] 那是个大坑，要把长处发挥到极致。
+[A] Huge trap, super good at your strengths.
+
+1107
+01:03:11,200 --> 01:03:15,000
+[B] 好，如果非要你排个序，你最大的长处是什么？
+[B] Okay, what are your biggest strengths if you had to like force rank?
+
+1108
+01:03:15,240 --> 01:03:18,760
+[A] 我讨厌这个问题。呃，我不是出于假谦虚才讨厌它。
+[A] I hate this question. Um, I don't hate this from a false modesty perspective.
+
+1109
+01:03:18,760 --> 01:03:22,390
+[A] 我觉得，要对自己的长处说出什么有见地的话，真的很难。
+[A] I think it's, like, very hard to say anything insightful about your own strengths.
+
+1110
+01:03:23,070 --> 01:03:26,310
+[B] 你显然很擅长把大家凝聚到某个目标上。
+[B] You're clearly good at really rallying people around some objective.
+
+1111
+01:03:27,030 --> 01:03:27,390
+[A] 是的。
+[A] Sure.
+
+1112
+01:03:27,550 --> 01:03:31,179
+[A] 呃，但我不觉得我能教会一个原本不擅长
+[A] Uh, but I don't like, I don't think I could teach someone who isn't good at
+
+1113
+01:03:31,179 --> 01:03:32,510
+[A] 这件事的人怎么去擅长它。
+[A] that how to be good at that.
+
+1114
+01:03:33,270 --> 01:03:37,233
+[A] 我觉得那些对某人来说浑然天成的东西很难，
+[A] I think the things that come supernaturally to someone are very hard to,
+
+1115
+01:03:37,233 --> 01:03:39,347
+[A] 我说不好，至少就我自己而言，
+[A] I don't know, or at least in my own case,
+
+1116
+01:03:39,347 --> 01:03:43,310
+[A] 我并不真正明白自己为什么擅长这个，或者该拿它怎么办。
+[A] I don't like deeply understand why I'm good at that or what to do about it.
+
+1117
+01:03:43,810 --> 01:03:46,774
+[A] 不过我想我们之前聊过那一类东西，
+[A] Although I think we talked about earlier like this category of things
+
+1118
+01:03:46,774 --> 01:03:48,410
+[A] 就是你能学会、却没法教的东西。
+[A] that you can learn but you can't teach.
+
+1119
+01:03:49,850 --> 01:03:53,049
+[A] 我觉得理解这一点很重要，
+[A] I think this is quite important to understand and like
+
+1120
+01:03:53,049 --> 01:03:57,882
+[A] 如果你想擅长这类东西，让别人给你讲解，
+[A] if you want to get good at something like that, asking someone to explain it to you,
+
+1121
+01:03:57,882 --> 01:03:59,730
+[A] 以我的经验，从来不管用。
+[A] in my experience, never works.
+
+1122
+01:04:00,570 --> 01:04:02,721
+[A] 真正去研究他们，跟他们一起开会，
+[A] Really studying them and like sitting with them in meetings
+
+1123
+01:04:02,721 --> 01:04:04,570
+[A] 去观察，自己把它学会。
+[A] and just trying to observe it and learn it yourself.
+
+1124
+01:04:05,130 --> 01:04:05,970
+[A] 这才管用。
+[A] That does work.
+
+1125
+01:04:06,650 --> 01:04:10,742
+[A] 呃，但当有某件我确实想提升的事情时，
+[A] Um, but, and like when there has been something that I do want to get better at,
+
+1126
+01:04:10,742 --> 01:04:15,090
+[A] 我会尽量待在擅长它的人身边，深入地去研究它。
+[A] I have tried to just be around someone who's great at it and really deeply study it.
+
+1127
+01:04:15,450 --> 01:04:17,210
+[A] 但我觉得他们没法给我讲清楚。
+[A] But I don't think they would have been able to explain it to me.
+
+1128
+01:04:17,250 --> 01:04:19,530
+[A] 我觉得他们没法靠跟我谈这件事就把它教给我。
+[A] I don't think they could have like taught it to me by talking to me about it.
+
+1129
+01:04:19,850 --> 01:04:21,010
+[B] 我觉得完全正确。
+[B] I think that's totally right.
+
+1130
+01:04:21,010 --> 01:04:24,461
+[B] 你看世界上最顶尖的人是怎么学电子游戏的，
+[B] If you look at like the way that the best people in the world learn video games,
+
+1131
+01:04:24,461 --> 01:04:27,050
+[B] 比如你在玩 CS:GO，你就先玩一玩 CS:GO。
+[B] if you're playing, like, CS go, you, like, play some CS go.
+
+1132
+01:04:27,090 --> 01:04:30,538
+[B] 掌握基本的游戏机制，然后你就去看职业选手，
+[B] So you have like the basic game dynamics and then you just go watch a pro
+
+1133
+01:04:30,538 --> 01:04:32,560
+[B] 看他们在地图上是怎么操作的。
+[B] and like see how they interact on the map.
+
+1134
+01:04:32,640 --> 01:04:34,440
+[B] 在游戏的不同阶段完全投入，诸如此类。
+[B] hundred % at different points in the game and stuff.
+
+1135
+01:04:34,760 --> 01:04:38,689
+[B] 当你想到组织、节奏，你知道，还有雄心，
+[B] When you think about like organization, pace, you know, there's like ambition,
+
+1136
+01:04:38,689 --> 01:04:42,560
+[B] 这些方方面面，但理想情况下随着时间推移你希望你的组织，
+[B] all these other things, but like you ideally over time want your organization.
+
+1137
+01:04:43,480 --> 01:04:46,600
+[B] 你显然不希望它变慢，理想情况下它甚至要更快。
+[B] You obviously don't want it to slow down, but ideally it even moves faster.
+
+1138
+01:04:47,400 --> 01:04:48,800
+[B] 你要怎么把这一点内建进去？
+[B] How do you like bake that in?
+
+1139
+01:04:49,240 --> 01:04:52,361
+[A] 我觉得这九成取决于你放在领导岗位上的人。好，
+[A] I think it's like 90% the people you put in leadership roles. Okay,
+
+1140
+01:04:52,361 --> 01:04:54,120
+[A] 还有一些其他你能做的事。
+[A] there's like other things you can do.
+
+1141
+01:04:54,280 --> 01:04:56,412
+[A] 大家有各种不同的运作节奏
+[A] People have all these different sort of operating rhythms
+
+1142
+01:04:56,412 --> 01:04:59,240
+[A] 有各种经营公司的方式，各种管理手法。
+[A] and how they try to run the company and this management technique and that one.
+
+1143
+01:04:59,240 --> 01:05:01,800
+[A] 但我觉得，最终主要还是取决于人。
+[A] And I think it's, I think mostly just comes down to the people.
+
+1144
+01:05:02,320 --> 01:05:06,042
+[A] 对于处在那种岗位上的人，我一定会考虑的一点是，
+[A] Definitely something I think about with everybody in a role like that is like,
+
+1145
+01:05:06,042 --> 01:05:07,760
+[A] 他们做事是快还是慢？
+[A] are they a fast mover or a slow mover?
+
+1146
+01:05:08,040 --> 01:05:10,560
+[B] 如果之前没和他们共事过，你怎么衡量这一点？
+[B] How do you measure that without actually having worked with them in the past?
+
+1147
+01:05:11,160 --> 01:05:14,520
+[A] 理想情况下，你以前就和他们共事过，大多数时候是这样。
+[A] Well, ideally, you have worked them in the past. I think most of the time.
+
+1148
+01:05:15,460 --> 01:05:19,660
+[A] 公司的高管应该从内部提拔，而不是从外部招聘。好。
+[A] Executives at a company should be promoted internally, not hired externally. Okay.
+
+1149
+01:05:20,020 --> 01:05:23,129
+[A] 但当你确实需要从外部招人时，
+[A] Um, but it when you do need to hire someone externally,
+
+1150
+01:05:23,129 --> 01:05:27,620
+[A] 你要花大量时间和他们交流，花大量时间做背景调查。
+[A] you spend a lot of time talking to them, spend a lot of time reference checking.
+
+1151
+01:05:27,780 --> 01:05:30,340
+[A] 你会试着以某种不那么正式的方式一起共事。
+[A] You try to like work together in some kind of casual way.
+
+1152
+01:05:30,900 --> 01:05:32,820
+[B] 换个稍微不同的话题，过去12个月里
+[B] Slightly different note, what was the most painful thing
+
+1153
+01:05:32,820 --> 01:05:34,020
+[B] 发生的最痛苦的事是什么？
+[B] that happened in the last 12 months?
+
+1154
+01:05:35,750 --> 01:05:39,098
+[A] 老实说，一边养孩子一边拼命工作，太残酷了。
+[A] Honestly, having kids and working really hard at the same time is brutal.
+
+1155
+01:05:39,098 --> 01:05:40,470
+[A] 真的极其痛苦。
+[A] It's just extremely painful.
+
+1156
+01:05:41,390 --> 01:05:47,830
+[A] 你知道，相对来说，我算是个很在场的爸爸。
+[A] Like you like know you're I, I, and I think I'm like a very present dad relative.
+
+1157
+01:05:47,870 --> 01:05:51,190
+[A] 现在我基本上除了工作，就是陪家人，别的什么都不做。
+[A] Like I don't do anything but work and hang out my family really at this point.
+
+1158
+01:05:51,590 --> 01:05:54,830
+[A] 但我还是觉得，我错过了这段只有一次的时光里的很多东西。
+[A] But I still feel like I'm missing so much of this like one time thing.
+
+1159
+01:05:56,080 --> 01:06:00,320
+[B] 想到像 Masa（孙正义）这样的人时，会觉得很难受。
+[B] It's very painful when you think of someone like Massa, for example, apple.
+
+1160
+01:06:01,040 --> 01:06:05,440
+[B] 他的头脑、他看世界的方式，是那么与众不同。
+[B] What about like his brain and the way that he sees the world is so different.
+
+1161
+01:06:05,720 --> 01:06:12,000
+[B] 我觉得他最终会成为这个十年里最惊人的成功者之一。
+[B] I think he will end up being like, one of the wild successes of this decade.
+
+1162
+01:06:12,160 --> 01:06:13,720
+[B] 是的，非常了不起的人。
+[B] Yeah, incredible person.
+
+1163
+01:06:14,000 --> 01:06:15,800
+[A] 是的，好朋友，了不起的人。
+[A] Yeah. Dear friend. Incredible person.
+
+1164
+01:06:16,440 --> 01:06:21,600
+[A] 有极强的信念，完全不畏惧巨大的数字和规模。
+[A] Massive conviction and belief and not afraid at all of big numbers and scale.
+
+1165
+01:06:22,450 --> 01:06:23,250
+[A] 这很棒。
+[A] And it's great.
+
+1166
+01:06:24,010 --> 01:06:26,224
+[A] 世界上像 Masa 这样的人不多，
+[A] There are not many Massa like people in the world
+
+1167
+01:06:26,224 --> 01:06:28,050
+[A] 我们应该非常感激他们。
+[A] and we should be very grateful for them.
+
+1168
+01:06:28,330 --> 01:06:33,484
+[B] 是什么让他这样，我不知道你有没有和他聊过，但，
+[B] What made him like, what, what I, I don't know if you've like talked with him, but,
+
+1169
+01:06:33,484 --> 01:06:37,330
+[B] 呃，据我所知，他一直就是这样的。
+[B] uh, I mean, as far as I can tell, he was like, always like this.
+
+1170
+01:06:37,890 --> 01:06:41,581
+[B] 你是不是也有那种，完全没有概念，
+[B] Do you also have the same sort of just like no concept,
+
+1171
+01:06:41,581 --> 01:06:43,930
+[B] 对规模没有上限概念的想法？
+[B] like no ceiling concept of scale?
+
+1172
+01:06:44,770 --> 01:06:48,170
+[A] 不，我觉得 Masa 是独一档的人物。
+[A] Not I. I think Massa is like a n of 1 character.
+
+1173
+01:06:48,770 --> 01:06:51,410
+[B] 你会不会有点把 OpenAI 看成会下金蛋的鹅？
+[B] Do you kind of view open AI as a little bit like the golden goose?
+
+1174
+01:06:51,930 --> 01:06:52,610
+[A] 从哪个角度说？
+[A] In what way?
+
+1175
+01:06:52,850 --> 01:06:56,371
+[B] 随着时间不断孵化出一堆非常有价值的东西，
+[B] Um, spawning a bunch of very valuable things over time
+
+1176
+01:06:56,371 --> 01:07:01,770
+[B] 并建立起一种核心能力，不断提升世界上的智能水平。
+[B] and just building like a core competency of increasing intelligence in the world.
+
+1177
+01:07:02,410 --> 01:07:04,650
+[A] 我不太是这么想的，不过我懂你的意思。
+[A] Not really how I think of it. I get, I get what you're saying.
+
+1178
+01:07:05,430 --> 01:07:08,630
+[A] 但感觉我们并不只是在不停下金蛋。
+[A] But it, it doesn't feel like we're just like spitting out golden eggs.
+
+1179
+01:07:08,750 --> 01:07:10,990
+[A] 感觉更像是在打造一种会复利增长的东西。
+[A] It feels like we're building this kind of compounding thing.
+
+1180
+01:07:11,870 --> 01:07:13,856
+[B] 我从你那里学到的、最喜欢的思维模型之一，
+[B] I think one of the my favorite mental models
+
+1181
+01:07:13,856 --> 01:07:17,110
+[B] 就是真实趋势与虚假趋势这个概念。
+[B] that I've taken from you is this idea of real trends versus fake trends.
+
+1182
+01:07:17,630 --> 01:07:19,870
+[A] 对，这是一件很重要的事。
+[A] And oh yeah, this is a this is an important thing.
+
+1183
+01:07:20,110 --> 01:07:23,224
+[B] 每当人们谈论泡沫之类的东西时，
+[B] Like whenever people talked about bubbles or anything else,
+
+1184
+01:07:23,224 --> 01:07:24,750
+[B] 我总是有点困惑。
+[B] I was always kind of confused.
+
+1185
+01:07:24,830 --> 01:07:27,794
+[B] 你知道，我研究过很多 Warren Buffett 和 Charlie Munger，
+[B] Like I'm, you know, I studied Warren Buffett and Charlie Munger a bunch,
+
+1186
+01:07:27,794 --> 01:07:30,560
+[B] 他们很喜欢谈泡沫，谈某些东西被高估。
+[B] and so they love to talk about bubbles and things being overvalued.
+
+1187
+01:07:30,840 --> 01:07:34,637
+[B] 我一直想弄明白，你怎么判断一样东西是真的
+[B] I was trying to like decipher how do you figure out whether or not something is real
+
+1188
+01:07:34,637 --> 01:07:38,880
+[B] 还是假的，它是会持续下去，还是会，你懂的。
+[B] or fake and whether or not it's going to persist and continue or it's just going to, you know.
+
+1189
+01:07:38,880 --> 01:07:40,400
+[B] 回归均值，以及你最后想通了什么。
+[B] Revert to the mean and what you figure out.
+
+1190
+01:07:40,920 --> 01:07:44,218
+[B] 我觉得你的思维模型基本上是，
+[B] Well, it was, I think your mental model of basically
+
+1191
+01:07:44,218 --> 01:07:49,280
+[B] 什么才是真实趋势和虚假趋势的区别。
+[B] if there's a small group of people, like what is a real trend versus a fake trend.
+
+1192
+01:07:49,400 --> 01:07:52,970
+[B] 虚假趋势就像 VR 那样，有很多炒作，
+[B] A fake trend is, you know, the VR situation where someone, there's a lot of hype,
+
+1193
+01:07:52,970 --> 01:07:55,620
+[B] 但有人买了那个东西，其实并不真的喜欢它。
+[B] but then someone buys the thing, they don't really love it.
+
+1194
+01:07:55,740 --> 01:07:57,273
+[B] 他们并不会真的开始，
+[B] They don't really start to, like,
+
+1195
+01:07:57,273 --> 01:08:00,940
+[B] 围绕使用它的体验来安排自己的生活，于是它就被搁在一边了。
+[B] design their life around the experience of using it and then it sits on the shelf.
+
+1196
+01:08:01,380 --> 01:08:03,423
+[B] 而对我来说，ChatGPT 不一样，
+[B] Whereas like for me with ChatGPT,
+
+1197
+01:08:03,423 --> 01:08:07,947
+[B] 几乎每天都在用，有时我需要大量工作，
+[B] it's pretty much every day and maybe for like sometimes I need to work a lot,
+
+1198
+01:08:07,947 --> 01:08:11,813
+[B] 就会用上大概三个小时，有些天几乎不用，
+[B] so I spend like three hours or some days it's like almost nothing
+
+1199
+01:08:11,813 --> 01:08:16,410
+[B] 但它就是持续存在于我的生活里。你是怎么判断的，
+[B] but it's like there persistent in my life. How do you kind of like figure out.
+
+1200
+01:08:17,170 --> 01:08:21,416
+[B] 在公司内部，怎么判断一样东西是真实趋势还是虚假趋势。
+[B] Now whether or not something is a real trend or a fake trend inside of the company
+
+1201
+01:08:21,416 --> 01:08:25,147
+[B] 大体上还是同样的原则，就是它是否真实、深层、持久，
+[B] and just generally same principle like is there real deep, enduring,
+
+1202
+01:08:25,147 --> 01:08:28,170
+[B] 你是怎么形成那套哲学或思维框架的？
+[B] how did you come to that philosophy or mental framework?
+
+1203
+01:08:28,210 --> 01:08:29,850
+[A] 嗯，我算是看过很多创业公司。
+[A] Well, I like kind of watched a lot of startups.
+
+1204
+01:08:29,970 --> 01:08:33,253
+[A] 呃，在 YC 工作有很多很棒的地方，
+[A] Uh, the, the, there are many amazing things about working at YC,
+
+1205
+01:08:33,253 --> 01:08:35,050
+[A] 其中之一就是你能拿到大量数据。
+[A] but just the amount of data you get.
+
+1206
+01:08:35,570 --> 01:08:38,145
+[A] 只要你愿意花时间去分析它，
+[A] And as long as you're willing to like spend the time trying to analyze it
+
+1207
+01:08:38,145 --> 01:08:40,370
+[A] 去理解它，你真的能搞明白很多事情。
+[A] and make sense of it, you can really figure out a lot of things.
+
+1208
+01:08:40,970 --> 01:08:44,359
+[B] 有没有哪些你以前一直有的大思维框架，
+[B] Are there any big mental frameworks that you used to have
+
+1209
+01:08:44,359 --> 01:08:48,540
+[B] 你觉得在今天的环境里已经错了，而且还会继续，
+[B] that you think are wrong in today's environment and will be continue,
+
+1210
+01:08:48,540 --> 01:08:52,650
+[B] 随着智能的爆发，会越来越错。
+[B] continue to get more wrong over time as like intelligence explodes.
+
+1211
+01:08:53,730 --> 01:08:56,250
+[A] 我觉得，很大一部分都是这样。
+[A] I mean, I kind of think a huge amount of them.
+
+1212
+01:08:57,600 --> 01:08:59,200
+[A] 它们当时不一定是错的，
+[A] Are they weren't necessarily wrong at the time,
+
+1213
+01:08:59,200 --> 01:09:01,120
+[A] 当然我肯定也有一堆事情本来就想错了。
+[A] although I'm sure I was wrong about a bunch of things, too.
+
+1214
+01:09:01,360 --> 01:09:03,000
+[A] 但其中很大一部分现在都错了。
+[A] But a huge amount of them are wrong now.
+
+1215
+01:09:03,560 --> 01:09:08,447
+[A] 嗯，我觉得今天的创业公司大体上还是像 10 年前的创业公司，
+[A] Um, I think a startup of today still looks mostly like a startup of 10 years ago
+
+1216
+01:09:08,447 --> 01:09:12,800
+[A] 因为普遍的常识就是这么教你的。
+[A] because that's what the received wisdom says you're supposed to do.
+
+1217
+01:09:13,240 --> 01:09:14,680
+[A] 当然，在某些方面是不一样的。
+[A] And sure, it's different in some ways.
+
+1218
+01:09:14,720 --> 01:09:16,723
+[A] 大家会说，好吧，我要少雇点人，
+[A] People are like, well, I'm gonna hire less people
+
+1219
+01:09:16,723 --> 01:09:18,872
+[A] 把更多钱花在 Codex 的 token 之类的上面，
+[A] and spend more money on tokens for Codex or whatever,
+
+1220
+01:09:18,872 --> 01:09:20,680
+[A] 但它其实应该长得很不一样。
+[A] but it should probably look very different.
+
+1221
+01:09:21,440 --> 01:09:28,169
+[A] 我确实见过几个人在用一种完全不同的方式创业，
+[A] And I have met a few people who are trying to do a startup in a completely different
+
+1222
+01:09:28,169 --> 01:09:32,989
+[A] 但大多数人的做法就是多用点 Codex，
+[A] way, but most people just use means like use more Codex and
+
+1223
+01:09:32,989 --> 01:09:35,600
+[A] 而这看起来还不够。
+[A] that doesn't seem like enough.

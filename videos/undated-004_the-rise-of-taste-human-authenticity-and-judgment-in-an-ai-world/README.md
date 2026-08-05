@@ -7,12 +7,15 @@
 - B站链接：https://www.bilibili.com/video/BV1jEN96tEx1
 - 原视频链接：https://www.youtube.com/watch?v=yQ_EWmtfWvQ
 - 发布时间：发布时间**: 2026-07-14 16:12:11
-- 字幕数量：1
+- 字幕数量：4
 - 提纲图数量：3
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_无翻译参考资料版.双语.中文在上.去标点版.srt)
+- [字幕 1](subtitles/01_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
+- [字幕 2](subtitles/02_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
+- [字幕 3](subtitles/03_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
+- [字幕 4](subtitles/04_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
 
 ## 中文时间轴
 

@@ -2,22 +2,22 @@
 
 | 发布日期 | 视频 | 字幕 | 提纲图 |
 |---|---|---:|---:|
-| 发布时间**: 2026-08-04 15:47:49 | [为什么说“产品经理岗位本不该存在” | Tom Verrilli（Whatnot首席产品官）](videos/undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot/) | 1 | 7 |
-| 发布时间**: 2026-08-03 22:07:02 | [从没有比现在更适合创业的时候 | Sam Altman](videos/undated-022_sam-altman-never-a-better-time-to-do-a-startup/) | 1 | 4 |
-| 发布时间**: 2026-08-03 16:53:23 | [AI 时代如何创办一家初创公司 | Sam Altman](videos/undated-003_sam-altman-how-to-start-a-startup-ai/) | 1 | 6 |
-| 发布时间**: 2026-08-03 11:28:19 | [AI 为何再次垂直起飞｜Dianne Penn(Anthropic)](videos/undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai/) | 1 | 3 |
-| 发布时间**: 2026-08-01 21:45:11 | [成就 NVIDIA 的思维方式 | 黄仁勋](videos/undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia/) | 1 | 12 |
-| 发布时间**: 2026-07-28 19:49:26 | [深入解析 OpenAI 内部如何用 Codex 做产品工作 | Rohan Varma](videos/undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai/) | 1 | 2 |
-| 发布时间**: 2026-07-28 16:18:42 | [如何打造会自我检查工作成果的 AI Agent | Jared Zoneraich](videos/undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich/) | 1 | 2 |
-| 发布时间**: 2026-07-28 14:05:01 | [用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流｜Peter Yang](videos/undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything/) | 1 | 2 |
-| 发布时间**: 2026-07-21 22:22:35 | [YC合伙人谈：为什么创业早期要做不能规模化的事](videos/undated-017_startup-experts-discuss-doing-things-that-don-t-scale/) | 1 | 2 |
-| 发布时间**: 2026-07-21 21:17:19 | [YC创业课:创业公司如何拿下第一批客户 | Gustaf Alströmer](videos/undated-013_how-to-get-your-first-customers-startup-school-yc/) | 1 | 1 |
+| 发布时间**: 2026-08-04 15:47:49 | [为什么说“产品经理岗位本不该存在” | Tom Verrilli（Whatnot首席产品官）](videos/undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot/) | 2 | 7 |
+| 发布时间**: 2026-08-03 22:07:02 | [从没有比现在更适合创业的时候 | Sam Altman](videos/undated-022_sam-altman-never-a-better-time-to-do-a-startup/) | 3 | 4 |
+| 发布时间**: 2026-08-03 16:53:23 | [AI 时代如何创办一家初创公司 | Sam Altman](videos/undated-003_sam-altman-how-to-start-a-startup-ai/) | 4 | 6 |
+| 发布时间**: 2026-08-03 11:28:19 | [AI 为何再次垂直起飞｜Dianne Penn(Anthropic)](videos/undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai/) | 2 | 3 |
+| 发布时间**: 2026-08-01 21:45:11 | [成就 NVIDIA 的思维方式 | 黄仁勋](videos/undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia/) | 2 | 12 |
+| 发布时间**: 2026-07-28 19:49:26 | [深入解析 OpenAI 内部如何用 Codex 做产品工作 | Rohan Varma](videos/undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai/) | 2 | 2 |
+| 发布时间**: 2026-07-28 16:18:42 | [如何打造会自我检查工作成果的 AI Agent | Jared Zoneraich](videos/undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich/) | 2 | 2 |
+| 发布时间**: 2026-07-28 14:05:01 | [用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流｜Peter Yang](videos/undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything/) | 2 | 2 |
+| 发布时间**: 2026-07-21 22:22:35 | [YC合伙人谈：为什么创业早期要做不能规模化的事](videos/undated-017_startup-experts-discuss-doing-things-that-don-t-scale/) | 2 | 2 |
+| 发布时间**: 2026-07-21 21:17:19 | [YC创业课:创业公司如何拿下第一批客户 | Gustaf Alströmer](videos/undated-013_how-to-get-your-first-customers-startup-school-yc/) | 2 | 1 |
 | 发布时间**: 2026-07-21 19:24:08 | [YC创业课:如何与用户交谈 | Gustaf Alströmer](videos/undated-014_how-to-talk-to-users-startup-school-yc/) | 0 | 1 |
-| 发布时间**: 2026-07-21 15:18:40 | [揭秘年薪百万美元的 AI 工作：FDE | Vas](videos/undated-034_fde-the-1m-year-ai-job-explained-ai-fde/) | 1 | 2 |
-| 发布时间**: 2026-07-16 11:38:28 | [观点：美国AI 蜜月期正在结束，科技从业者已经感受到了｜Noam Segal](videos/undated-005_why-the-ai-s-honeymoon-is-ending-and-tech-workers-are-feeling/) | 1 | 3 |
-| 发布时间**: 2026-07-14 16:12:11 | [AI 时代，品味、人的真实性与判断力为何愈发重要 | Adam Mosseri（Instagram 负责人）](videos/undated-004_the-rise-of-taste-human-authenticity-and-judgment-in-an-ai-world/) | 1 | 3 |
+| 发布时间**: 2026-07-21 15:18:40 | [揭秘年薪百万美元的 AI 工作：FDE | Vas](videos/undated-034_fde-the-1m-year-ai-job-explained-ai-fde/) | 4 | 2 |
+| 发布时间**: 2026-07-16 11:38:28 | [观点：美国AI 蜜月期正在结束，科技从业者已经感受到了｜Noam Segal](videos/undated-005_why-the-ai-s-honeymoon-is-ending-and-tech-workers-are-feeling/) | 2 | 3 |
+| 发布时间**: 2026-07-14 16:12:11 | [AI 时代，品味、人的真实性与判断力为何愈发重要 | Adam Mosseri（Instagram 负责人）](videos/undated-004_the-rise-of-taste-human-authenticity-and-judgment-in-an-ai-world/) | 4 | 3 |
 | 发布时间**: 2026-07-07 17:11:23 | [超大规模测试时计算如何改变 AI 的基准测试、安全与研究 | Noam Brown(OpenAI）](videos/undated-041_really-big-test-time-compute-in-ai-changes-benchmarks-safety-and-research/) | 0 | 3 |
-| 发布时间**: 2026-06-30 23:17:16 | [OpenAI Codex 负责人谈 AI 时代产品工作的重塑 | Andrew Ambrosino](videos/undated-012_openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino/) | 1 | 2 |
+| 发布时间**: 2026-06-30 23:17:16 | [OpenAI Codex 负责人谈 AI 时代产品工作的重塑 | Andrew Ambrosino](videos/undated-012_openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino/) | 3 | 2 |
 | 发布时间**: 2026-06-16 20:42:41 | [好故事的线索|Andrew Stanton](videos/undated-026_the-clues-to-a-great-story-andrew-stanton-ted/) | 0 | 1 |
 | 发布时间**: 2026-06-16 20:21:56 | [故事的形状|Kurt Vonnegut](videos/undated-035_kurt-vonnegut-on-the-shapes-of-stories/) | 0 | 1 |
 | 发布时间**: 2026-06-16 20:17:25 | [讲故事|Ira Glass](videos/undated-028_ira-glass-on-storytelling/) | 0 | 2 |
@@ -36,7 +36,7 @@
 | 发布时间**: 2026-05-14 22:08:53 | [为什么构建评估（Eval）平台如此困难|Phil Hetzel(Braintrust)](videos/undated-018_why-building-eval-platforms-is-hard-phil-hetzel-braintrust-eval/) | 1 | 2 |
 | 发布时间**: 2026-05-14 01:05:45 | [交付复杂的AI应用程序|Braintrust & Trainline](videos/undated-020_shipping-complex-ai-applications-braintrust-trainline-ai/) | 1 | 3 |
 | 发布时间**: 2026-05-13 01:34:56 | [超越传统评估的 AI 可观测性 | Danny Gollapalli&Zubin Koticha](videos/undated-042_full-workshop-ai-observability-beyond-evals-danny-gollapalli-zubin-koticha-raindrop-ai/) | 1 | 4 |
-| 发布时间**: 2026-05-05 21:05:40 | [与 Boris Cherny 一起构建 Claude Code](videos/undated-015_building-claude-code-with-boris-cherny-boris-cherny-claude-code/) | 1 | 3 |
+| 发布时间**: 2026-05-05 21:05:40 | [与 Boris Cherny 一起构建 Claude Code](videos/undated-015_building-claude-code-with-boris-cherny-boris-cherny-claude-code/) | 2 | 3 |
 | 发布时间**: 2026-05-03 22:28:11 | [当编程被终结后会发生什么？ | Boris Cherny（Claude Code 负责人）](videos/undated-030_head-of-claude-code-what-happens-after-coding-is-solved-boris-cherny/) | 1 | 3 |
 | 发布时间**: 2026-05-02 11:01:43 | [Claude Code 最佳实践及功能解析|Cal Rueb](videos/undated-009_claude-code-best-practices-code-w-claude-claude-code-cal-rueb/) | 0 | 2 |
 | 发布时间**: 2026-04-28 00:59:41 | [Anthropic 的产品团队如何保持业内领先的迭代速度 | Cat Wu（Claude Code 产品负责人）](videos/undated-033_how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu/) | 0 | 6 |

@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_The AI paradox More automation, more humans, more work Dan Shipper - Lenny's Pod.srt)
+- [字幕 1](subtitles/01_the-ai-paradox-more-automation-more-humans-more-work-dan.srt)
 
 ## 中文时间轴
 

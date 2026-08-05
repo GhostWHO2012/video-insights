@@ -6,7 +6,7 @@
 - 原视频标题：OpenAI Codex lead on the new shape of product work | Andrew Ambrosino
 - B站链接：https://www.bilibili.com/video/BV1WKTw6aER5
 - 原视频链接：https://www.youtube.com/watch?v=P3KDebPTUrw
-- 发布时间：发布时间**: 2026-06-30 23:17:16
+- 发布时间：2026-06-30 23:17:16
 - 字幕数量：3
 - 提纲图数量：2
 

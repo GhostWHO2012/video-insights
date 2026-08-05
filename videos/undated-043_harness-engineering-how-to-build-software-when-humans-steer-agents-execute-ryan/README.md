@@ -6,7 +6,7 @@
 - 原视频标题：Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI
 - B站链接：https://www.bilibili.com/video/BV1U3dQBwEkH
 - 原视频链接：https://www.youtube.com/watch?v=am_oeAoUhew
-- 发布时间：发布时间**: 2026-04-21 23:38:41
+- 发布时间：2026-04-21 23:38:41
 - 字幕数量：1
 - 提纲图数量：3
 

@@ -5,8 +5,8 @@
 - B站标题：深入解析 OpenAI 内部如何用 Codex 做产品工作 | Rohan Varma
 - 原视频标题：Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma
 - B站链接：https://www.bilibili.com/video/BV1Ei3q6YEnK
-- 原视频链接：待补充
-- 发布时间：发布时间**: 2026-07-28 19:49:26
+- 原视频链接：https://www.youtube.com/watch?v=fAdFE7y6K2o
+- 发布时间：2026-07-28 19:49:26
 - 字幕数量：2
 - 提纲图数量：2
 

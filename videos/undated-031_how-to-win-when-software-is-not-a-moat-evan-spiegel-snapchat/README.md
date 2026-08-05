@@ -6,7 +6,7 @@
 - 原视频标题：How to win when software is not a moat | Evan Spiegel (Snapchat CEO)
 - B站链接：https://www.bilibili.com/video/BV1xeLP68Ety
 - 原视频链接：https://www.youtube.com/watch?v=-7Yol5vX5xw
-- 发布时间：发布时间**: 2026-05-18 20:41:15
+- 发布时间：2026-05-18 20:41:15
 - 字幕数量：1
 - 提纲图数量：4
 

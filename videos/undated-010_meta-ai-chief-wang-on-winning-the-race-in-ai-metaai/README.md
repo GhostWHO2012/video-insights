@@ -6,7 +6,7 @@
 - 原视频标题：Meta AI Chief Wang on Winning the Race in AI
 - B站链接：https://www.bilibili.com/video/BV1KCE76kEiL
 - 原视频链接：https://www.youtube.com/watch?v=bO06SaZdnXs
-- 发布时间：发布时间**: 2026-06-09 19:32:12
+- 发布时间：2026-06-09 19:32:12
 - 字幕数量：0
 - 提纲图数量：2
 

@@ -6,7 +6,7 @@
 - 原视频标题：How To Talk To Users | Startup School
 - B站链接：https://www.bilibili.com/video/BV1y8Kh6yEjh
 - 原视频链接：https://www.youtube.com/watch?v=z1iF1c8w5Lg
-- 发布时间：发布时间**: 2026-07-21 19:24:08
+- 发布时间：2026-07-21 19:24:08
 - 字幕数量：0
 - 提纲图数量：1
 

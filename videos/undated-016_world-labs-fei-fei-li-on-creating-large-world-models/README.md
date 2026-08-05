@@ -6,7 +6,7 @@
 - 原视频标题：World Labs' Fei-Fei Li on Creating Large World Models
 - B站链接：https://www.bilibili.com/video/BV16gEm62EPD
 - 原视频链接：https://www.youtube.com/watch?v=pNYVckbCFuk
-- 发布时间：发布时间**: 2026-06-09 21:12:42
+- 发布时间：2026-06-09 21:12:42
 - 字幕数量：0
 - 提纲图数量：2
 

@@ -6,7 +6,7 @@
 - 原视频标题：Shipping complex AI applications — Braintrust & Trainline
 - B站链接：https://www.bilibili.com/video/BV1zq526eEEN
 - 原视频链接：https://www.youtube.com/watch?v=ZdheJTfLu-s
-- 发布时间：发布时间**: 2026-05-14 01:05:45
+- 发布时间：2026-05-14 01:05:45
 - 字幕数量：1
 - 提纲图数量：3
 

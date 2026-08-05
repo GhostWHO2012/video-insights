@@ -6,7 +6,7 @@
 - 原视频标题：Agentic Search for Context Engineering — Leonie Monigatti, Elastic
 - B站链接：https://www.bilibili.com/video/BV1ujLu67Epr
 - 原视频链接：https://www.youtube.com/watch?v=ynJyIKwjonM
-- 发布时间：发布时间**: 2026-05-19 11:56:07
+- 发布时间：2026-05-19 11:56:07
 - 字幕数量：1
 - 提纲图数量：3
 

@@ -6,7 +6,7 @@
 - 原视频标题：Really Big Test-Time Compute in AI Changes Benchmarks, Safety and Research with OpenAI's Noam Brown
 - B站链接：https://www.bilibili.com/video/BV1caM86GEqL
 - 原视频链接：https://www.youtube.com/watch?v=AZrU6y3pUcU
-- 发布时间：发布时间**: 2026-07-07 17:11:23
+- 发布时间：2026-07-07 17:11:23
 - 字幕数量：0
 - 提纲图数量：3
 

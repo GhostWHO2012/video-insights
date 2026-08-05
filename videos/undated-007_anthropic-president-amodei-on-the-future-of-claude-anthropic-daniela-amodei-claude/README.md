@@ -6,7 +6,7 @@
 - 原视频标题：Anthropic President Amodei on the Future of Claude
 - B站链接：https://www.bilibili.com/video/BV1QMEq6TE3W
 - 原视频链接：https://www.youtube.com/watch?v=Kfz-NxEvu-U
-- 发布时间：发布时间**: 2026-06-11 20:27:00
+- 发布时间：2026-06-11 20:27:00
 - 字幕数量：0
 - 提纲图数量：2
 

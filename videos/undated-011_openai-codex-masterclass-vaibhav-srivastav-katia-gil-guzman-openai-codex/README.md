@@ -6,7 +6,7 @@
 - 原视频标题：OpenAI Codex Masterclass — Vaibhav Srivastav & Katia Gil Guzman
 - B站链接：https://www.bilibili.com/video/BV1gNLq6bEpu
 - 原视频链接：https://www.youtube.com/watch?v=MhHEGMFCEB0
-- 发布时间：发布时间**: 2026-05-19 18:06:27
+- 发布时间：2026-05-19 18:06:27
 - 字幕数量：0
 - 提纲图数量：3
 

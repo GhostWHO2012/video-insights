@@ -6,7 +6,7 @@
 - 原视频标题：The AI-native startup: 5 products, 7-figure revenue, 100% AI-written code. | Dan Shipper (Every)
 - B站链接：https://www.bilibili.com/video/BV1f9VN6mEeK
 - 原视频链接：https://www.youtube.com/watch?v=crMrVozp_h8
-- 发布时间：发布时间**: 2026-05-26 20:59:45
+- 发布时间：2026-05-26 20:59:45
 - 字幕数量：0
 - 提纲图数量：2
 

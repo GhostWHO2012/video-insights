@@ -5,8 +5,8 @@
 - B站标题：成就 NVIDIA 的思维方式 | 黄仁勋
 - 原视频标题：Jensen Huang: The Mindset That Built NVIDIA
 - B站链接：https://www.bilibili.com/video/BV1PTGG6gEky
-- 原视频链接：待补充
-- 发布时间：发布时间**: 2026-08-01 21:45:11
+- 原视频链接：https://www.youtube.com/watch?v=I4B37S1dyQQ
+- 发布时间：2026-08-01 21:45:11
 - 字幕数量：2
 - 提纲图数量：12
 

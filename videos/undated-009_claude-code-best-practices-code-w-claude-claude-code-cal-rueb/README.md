@@ -6,7 +6,7 @@
 - 原视频标题：Claude Code best practices | Code w/ Claude
 - B站链接：https://www.bilibili.com/video/BV13aR5BFEMJ
 - 原视频链接：https://www.youtube.com/watch?v=gv0WHhKelSE&t=142s
-- 发布时间：发布时间**: 2026-05-02 11:01:43
+- 发布时间：2026-05-02 11:01:43
 - 字幕数量：0
 - 提纲图数量：2
 

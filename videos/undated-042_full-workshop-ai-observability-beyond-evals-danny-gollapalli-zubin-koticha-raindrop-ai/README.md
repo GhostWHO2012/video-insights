@@ -6,7 +6,7 @@
 - 原视频标题：Full Workshop: AI Observability Beyond Evals — Danny Gollapalli & Zubin Koticha, Raindrop
 - B站链接：https://www.bilibili.com/video/BV11c536GEG3
 - 原视频链接：https://www.youtube.com/watch?v=-aM2EDTiaMs
-- 发布时间：发布时间**: 2026-05-13 01:34:56
+- 发布时间：2026-05-13 01:34:56
 - 字幕数量：1
 - 提纲图数量：4
 

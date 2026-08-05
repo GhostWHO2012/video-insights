@@ -6,7 +6,7 @@
 - 原视频标题：142. 雨森的创投观察第2集：Harness、下一个字节、2026大机会和Stanley Druckenmiller
 - B站链接：https://www.bilibili.com/video/BV1Q8Vz6AEe6
 - 原视频链接：https://www.youtube.com/watch?v=XEhf371Aeso
-- 发布时间：发布时间**: 2026-06-02 16:32:45
+- 发布时间：2026-06-02 16:32:45
 - 字幕数量：0
 - 提纲图数量：3
 

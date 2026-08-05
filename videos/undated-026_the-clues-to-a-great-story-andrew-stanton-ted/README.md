@@ -6,7 +6,7 @@
 - 原视频标题：The clues to a great story | Andrew Stanton | TED
 - B站链接：https://www.bilibili.com/video/BV1ZqjV6GEwD
 - 原视频链接：https://www.youtube.com/watch?v=KxDwieKpawg
-- 发布时间：发布时间**: 2026-06-16 20:42:41
+- 发布时间：2026-06-16 20:42:41
 - 字幕数量：0
 - 提纲图数量：1
 

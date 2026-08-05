@@ -6,7 +6,7 @@
 - 原视频标题：一堂价值3000万的AI营销课
 - B站链接：https://www.bilibili.com/video/BV1HBQgBZEwu
 - 原视频链接：https://www.bilibili.com/video/BV1ofDYBUEpd/?spm_id_from=333.337.search-card.all.click
-- 发布时间：发布时间**: 2026-04-14 18:38:49
+- 发布时间：2026-04-14 18:38:49
 - 字幕数量：1
 - 提纲图数量：2
 

@@ -6,7 +6,7 @@
 - 原视频标题：FDE: The $1M/Year AI Job Explained
 - B站链接：https://www.bilibili.com/video/BV1MFK867Ei5
 - 原视频链接：https://www.youtube.com/watch?v=zXysLUTLjw4
-- 发布时间：发布时间**: 2026-07-21 15:18:40
+- 发布时间：2026-07-21 15:18:40
 - 字幕数量：4
 - 提纲图数量：2
 

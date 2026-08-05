@@ -6,7 +6,7 @@
 - 原视频标题：Inside How Anthropic Is Building the Next Claude | Alex Albert
 - B站链接：https://www.bilibili.com/video/BV13MGR6zEdL
 - 原视频链接：https://www.youtube.com/watch?v=T4ieZPIEmd8
-- 发布时间：发布时间**: 2026-05-25 19:28:11
+- 发布时间：2026-05-25 19:28:11
 - 字幕数量：1
 - 提纲图数量：3
 

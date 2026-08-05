@@ -6,7 +6,7 @@
 - 原视频标题：Anthropic's Ethicist on Whether AI Can Become Conscious
 - B站链接：https://www.bilibili.com/video/BV1YFEG6iENi
 - 原视频链接：https://www.youtube.com/watch?v=6v15PyTfu4U
-- 发布时间：发布时间**: 2026-06-08 23:08:39
+- 发布时间：2026-06-08 23:08:39
 - 字幕数量：0
 - 提纲图数量：2
 

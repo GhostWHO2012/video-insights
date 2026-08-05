@@ -6,7 +6,7 @@
 - 原视频标题：Head of Claude Code: What happens after coding is solved | Boris Cherny
 - B站链接：https://www.bilibili.com/video/BV1E9RcBqEVc
 - 原视频链接：https://www.youtube.com/watch?v=We7BZVKbCVw
-- 发布时间：发布时间**: 2026-05-03 22:28:11
+- 发布时间：2026-05-03 22:28:11
 - 字幕数量：1
 - 提纲图数量：3
 

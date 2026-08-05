@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_this-cpo-regrets-that-product-management-exists-opus4-8.srt)
-- [字幕 2](subtitles/02_this-cpo-regrets-that-product-management-exists-opus4-8.srt)
+- [字幕 1](subtitles/This CPO regrets that product management exists.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修+去多余行尾标点版.srt)
+- [字幕 2](subtitles/This CPO regrets that product management exists.OPUS4-8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

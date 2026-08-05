@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_harness-engineering-how-to-build-software-when-humans-st.srt)
+- [字幕 1](subtitles/Harness Engineering How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI - AI Engineer (1080p, h264, youtube)_final.srt)
 
 ## 中文时间轴
 

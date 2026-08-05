@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_jensen-huang-the-mindset-that-built-nvidia-opus4-8-no-en.srt)
-- [字幕 2](subtitles/02_jensen-huang-the-mindset-that-built-nvidia-opus4-8.srt)
+- [字幕 1](subtitles/Jensen Huang： The Mindset That Built NVIDIA.OPUS4-8有翻译参考资料版.双语.中文在上.no-ending-punc.srt)
+- [字幕 2](subtitles/Jensen Huang： The Mindset That Built NVIDIA.OPUS4-8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

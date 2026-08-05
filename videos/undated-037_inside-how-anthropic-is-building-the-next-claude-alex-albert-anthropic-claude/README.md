@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_inside-how-anthropic-is-building-the-next-claude-alex-al.srt)
+- [字幕 1](subtitles/Inside How Anthropic Is Building the Next Claude  Alex Albert - Peter Yang (1080p, h264, youtube)_final.srt)
 
 ## 中文时间轴
 

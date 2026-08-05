@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_why-the-tech-workforce-is-quietly-splitting-in-two-opus4.srt)
-- [字幕 2](subtitles/02_why-the-tech-workforce-is-quietly-splitting-in-two-opus4.srt)
+- [字幕 1](subtitles/Why the tech workforce is quietly splitting in two.OPUS4.8去多余标点修正版.srt)
+- [字幕 2](subtitles/Why the tech workforce is quietly splitting in two.OPUS4.8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_shipping-complex-ai-applications-braintrust-trainline-ai.srt)
+- [字幕 1](subtitles/Shipping complex AI applications — Braintrust & Trainline - AI Engineer (1080p, h264, youtube)_final.srt)
 
 ## 中文时间轴
 

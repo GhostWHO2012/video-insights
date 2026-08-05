@@ -12,10 +12,10 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_fde-the-1m-year-ai-job-explained-opus4-8-fde.srt)
-- [字幕 2](subtitles/02_fde-the-1m-year-ai-job-explained-opus4-8-fde.srt)
-- [字幕 3](subtitles/03_how-to-talk-to-users-opus4-8.srt)
-- [字幕 4](subtitles/04_how-to-talk-to-users-opus4-8.srt)
+- [字幕 1](subtitles/FDE The 1M_Year AI Job Explained.OPUS4.8有翻译参考资料版.双语.中文在上.FDE术语统一去多余标点版.srt)
+- [字幕 2](subtitles/FDE The 1M_Year AI Job Explained.OPUS4.8有翻译参考资料版.双语.中文在上.FDE首次括号标注去多余标点版.srt)
+- [字幕 3](subtitles/How To Talk To Users.OPUS4.8有翻译参考资料版.双语.中文在上.srt)
+- [字幕 4](subtitles/How To Talk To Users.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt)
 
 ## 中文时间轴
 

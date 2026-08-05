@@ -12,10 +12,10 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_sam-altman-opus4-8.srt)
-- [字幕 2](subtitles/02_sam-altman-opus4-8.srt)
-- [字幕 3](subtitles/03_sam-altman-opus4-8.srt)
-- [字幕 4](subtitles/04_sam-altman-opus4-8.srt)
+- [字幕 1](subtitles/Sam Altman.OPUS4-8有翻译参考资料版.双语.中文在上.srt)
+- [字幕 2](subtitles/Sam Altman.OPUS4-8术语小修去行尾标点版.有翻译参考资料版.双语.中文在上.srt)
+- [字幕 3](subtitles/Sam Altman.OPUS4-8术语小修版.有翻译参考资料版.双语.中文在上.srt)
+- [字幕 4](subtitles/Sam Altman.OPUS4.8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

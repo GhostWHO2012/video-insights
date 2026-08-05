@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_building-claude-code-with-boris-cherny-the-pragmatic-eng.srt)
-- [字幕 2](subtitles/02_head-of-claude-code-what-happens-after-coding-is-solved-.srt)
+- [字幕 1](subtitles/Building Claude Code with Boris Cherny - The Pragmatic Engineer (1080p, h264, youtube)_final.srt)
+- [字幕 2](subtitles/Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt)
 
 ## 中文时间轴
 

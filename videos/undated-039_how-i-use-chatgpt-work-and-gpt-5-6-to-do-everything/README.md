@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_how-i-use-chatgpt-work-and-gpt-5-opus4-8.srt)
-- [字幕 2](subtitles/02_how-i-use-chatgpt-work-and-gpt-5-opus4-8.srt)
+- [字幕 1](subtitles/How I Use ChatGPT Work and GPT-5.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt)
+- [字幕 2](subtitles/How I Use ChatGPT Work and GPT-5.OPUS4.8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

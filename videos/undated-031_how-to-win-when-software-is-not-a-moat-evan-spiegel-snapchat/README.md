@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_how-to-win-when-software-is-not-a-moat-evan-spiegel-snap.srt)
+- [字幕 1](subtitles/How to win when software is not a moat ｜ Evan Spiegel (Snapchat CEO)_final.srt)
 
 ## 中文时间轴
 

@@ -12,9 +12,9 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
-- [字幕 2](subtitles/02_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
-- [字幕 3](subtitles/03_why-openai-is-merging-codex-and-chatgpt-and-the-opus4-8.srt)
+- [字幕 1](subtitles/Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8无翻译参考资料版.双语.中文在上.srt)
+- [字幕 2](subtitles/Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8有翻译参考资料版.双语.中文在上.srt)
+- [字幕 3](subtitles/Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8有翻译参考资料版.双语.中文在上.去多余标点修正版.srt)
 
 ## 中文时间轴
 

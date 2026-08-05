@@ -12,9 +12,9 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
-- [字幕 2](subtitles/02_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
-- [字幕 3](subtitles/03_sam-altman-never-a-better-time-to-do-a-startup-opus4-8.srt)
+- [字幕 1](subtitles/Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8参考资料校正版.双语.中文在上.srt)
+- [字幕 2](subtitles/Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8无翻译参考资料版.双语.中文在上.srt)
+- [字幕 3](subtitles/Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8有翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

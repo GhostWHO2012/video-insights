@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_the-ai-paradox-more-automation-more-humans-more-work-dan.srt)
+- [字幕 1](subtitles/The AI paradox More automation, more humans, more work  Dan Shipper - Lenny's Podcast (1080p, h264, youtube)_final (2).srt)
 
 ## 中文时间轴
 

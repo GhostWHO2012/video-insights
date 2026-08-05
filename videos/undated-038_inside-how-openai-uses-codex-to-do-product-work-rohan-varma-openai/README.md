@@ -12,8 +12,8 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_inside-how-openai-uses-codex-to-do-product-work-opus4-8.srt)
-- [字幕 2](subtitles/02_inside-how-openai-uses-codex-to-do-product-work-opus4-8.srt)
+- [字幕 1](subtitles/Inside How OpenAI Uses Codex to Do Product Work.OPUS4.8无翻译参考资料版.双语.中文在上.参考资料检查去多余标点版.srt)
+- [字幕 2](subtitles/Inside How OpenAI Uses Codex to Do Product Work.OPUS4.8无翻译参考资料版.双语.中文在上.srt)
 
 ## 中文时间轴
 

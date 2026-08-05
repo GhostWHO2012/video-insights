@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_everything-you-need-to-know-about-agent-observability-da.srt)
+- [字幕 1](subtitles/Everything You Need To Know About Agent Observability — Danny Gollapalli & Zubin Koticha, Raindrop - AI Engineer (1080p, h264, youtube)_final.srt)
 
 ## 中文时间轴
 

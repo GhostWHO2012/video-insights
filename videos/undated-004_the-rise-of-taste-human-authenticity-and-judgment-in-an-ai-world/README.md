@@ -12,10 +12,10 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
-- [字幕 2](subtitles/02_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
-- [字幕 3](subtitles/03_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
-- [字幕 4](subtitles/04_the-rise-of-taste-human-authenticity-and-judgment-opus4-.srt)
+- [字幕 1](subtitles/The rise of taste, human authenticity and judgment.OPUS4.8参考资料优化版.srt)
+- [字幕 2](subtitles/The rise of taste, human authenticity and judgment.OPUS4.8参考资料优化版.品位统一修正版.srt)
+- [字幕 3](subtitles/The rise of taste, human authenticity and judgment.OPUS4.8无翻译参考资料版.双语.中文在上.srt)
+- [字幕 4](subtitles/The rise of taste, human authenticity and judgment.OPUS4.8无翻译参考资料版.双语.中文在上.去标点版.srt)
 
 ## 中文时间轴
 

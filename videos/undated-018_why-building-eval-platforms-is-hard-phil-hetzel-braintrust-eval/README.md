@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_why-building-eval-platforms-is-hard-phil-hetzel-braintru.srt)
+- [字幕 1](subtitles/Why building eval platforms is hard — Phil Hetzel, Braintrust - AI Engineer (1080p, h264, youtube)_final.srt)
 
 ## 中文时间轴
 

@@ -12,7 +12,7 @@
 
 ## 字幕下载
 
-- [字幕 1](subtitles/01_head-of-claude-code-what-happens-after-coding-is-solved-.srt)
+- [字幕 1](subtitles/Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt)
 
 ## 中文时间轴
 

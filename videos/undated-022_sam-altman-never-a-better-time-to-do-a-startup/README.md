@@ -4,7 +4,7 @@
 
 - B站标题：从没有比现在更适合创业的时候 | Sam Altman
 - 原视频标题：Sam Altman: "Never a Better Time to Do a Startup"
-- B站链接：视频链接**: https://www.bilibili.com/video/BV19GMR6wEnz
+- B站链接：https://www.bilibili.com/video/BV19GMR6wEnz
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 22:07:02
 - 字幕数量：3

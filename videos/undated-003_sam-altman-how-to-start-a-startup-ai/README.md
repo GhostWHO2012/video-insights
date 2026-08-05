@@ -4,7 +4,7 @@
 
 - B站标题：AI 时代如何创办一家初创公司 | Sam Altman
 - 原视频标题：Sam Altman - How to Start a Startup
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1gRMX6REGo
+- B站链接：https://www.bilibili.com/video/BV1gRMX6REGo
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 16:53:23
 - 字幕数量：4

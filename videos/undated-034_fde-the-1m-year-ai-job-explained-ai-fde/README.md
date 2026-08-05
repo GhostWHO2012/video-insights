@@ -4,7 +4,7 @@
 
 - B站标题：揭秘年薪百万美元的 AI 工作：FDE | Vas
 - 原视频标题：FDE: The $1M/Year AI Job Explained
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1MFK867Ei5
+- B站链接：https://www.bilibili.com/video/BV1MFK867Ei5
 - 原视频链接：https://www.youtube.com/watch?v=zXysLUTLjw4
 - 发布时间：发布时间**: 2026-07-21 15:18:40
 - 字幕数量：4

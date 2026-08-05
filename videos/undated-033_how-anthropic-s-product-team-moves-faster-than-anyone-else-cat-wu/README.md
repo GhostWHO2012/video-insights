@@ -4,7 +4,7 @@
 
 - B站标题：Anthropic 的产品团队如何保持业内领先的迭代速度 | Cat Wu（Claude Code 产品负责人）
 - 原视频标题：How Anthropic’s product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code)
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1jVo1BhEK6
+- B站链接：https://www.bilibili.com/video/BV1jVo1BhEK6
 - 原视频链接：https://www.youtube.com/watch?v=PplmzlgE0kg
 - 发布时间：发布时间**: 2026-04-28 00:59:41
 - 字幕数量：0

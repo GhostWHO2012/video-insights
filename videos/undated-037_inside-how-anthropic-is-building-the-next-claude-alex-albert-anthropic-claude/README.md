@@ -4,7 +4,7 @@
 
 - B站标题：深入了解 Anthropic 如何构建下一代 Claude | Alex Albert
 - 原视频标题：Inside How Anthropic Is Building the Next Claude | Alex Albert
-- B站链接：视频链接**: https://www.bilibili.com/video/BV13MGR6zEdL
+- B站链接：https://www.bilibili.com/video/BV13MGR6zEdL
 - 原视频链接：https://www.youtube.com/watch?v=T4ieZPIEmd8
 - 发布时间：发布时间**: 2026-05-25 19:28:11
 - 字幕数量：1

@@ -4,7 +4,7 @@
 
 - B站标题：与 Boris Cherny 一起构建 Claude Code
 - 原视频标题：Building Claude Code with Boris Cherny
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1YcR1BQERU
+- B站链接：https://www.bilibili.com/video/BV1YcR1BQERU
 - 原视频链接：https://www.youtube.com/watch?v=julbw1JuAz0
 - 发布时间：发布时间**: 2026-05-05 21:05:40
 - 字幕数量：2

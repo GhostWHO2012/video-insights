@@ -4,7 +4,7 @@
 
 - B站标题：为什么构建评估（Eval）平台如此困难|Phil Hetzel(Braintrust)
 - 原视频标题：Why building eval platforms is hard — Phil Hetzel, Braintrust
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1if5R6HEw2
+- B站链接：https://www.bilibili.com/video/BV1if5R6HEw2
 - 原视频链接：https://www.youtube.com/watch?v=_fQ7Z_Wfouk
 - 发布时间：发布时间**: 2026-05-14 22:08:53
 - 字幕数量：1

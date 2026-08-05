@@ -4,7 +4,7 @@
 
 - B站标题：YC创业课:如何与用户交谈 | Gustaf Alströmer
 - 原视频标题：How To Talk To Users | Startup School
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1y8Kh6yEjh
+- B站链接：https://www.bilibili.com/video/BV1y8Kh6yEjh
 - 原视频链接：https://www.youtube.com/watch?v=z1iF1c8w5Lg
 - 发布时间：发布时间**: 2026-07-21 19:24:08
 - 字幕数量：0

@@ -4,7 +4,7 @@
 
 - B站标题：OpenAI Codex 负责人谈 AI 时代产品工作的重塑 | Andrew Ambrosino
 - 原视频标题：OpenAI Codex lead on the new shape of product work | Andrew Ambrosino
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1WKTw6aER5
+- B站链接：https://www.bilibili.com/video/BV1WKTw6aER5
 - 原视频链接：https://www.youtube.com/watch?v=P3KDebPTUrw
 - 发布时间：发布时间**: 2026-06-30 23:17:16
 - 字幕数量：3

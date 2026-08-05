@@ -4,7 +4,7 @@
 
 - B站标题：人工智能科学家 Bengio 谈如何打造更安全的智能体|Bengio
 - 原视频标题：AI Scientist Bengio on Engineering Safer Agents
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1xXEY6DEaE
+- B站链接：https://www.bilibili.com/video/BV1xXEY6DEaE
 - 原视频链接：https://www.youtube.com/watch?v=v6W_Q-Dq0Bw
 - 发布时间：发布时间**: 2026-06-11 11:23:22
 - 字幕数量：0

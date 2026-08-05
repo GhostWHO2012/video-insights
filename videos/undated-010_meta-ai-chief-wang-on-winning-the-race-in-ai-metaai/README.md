@@ -4,7 +4,7 @@
 
 - B站标题：Meta AI 负责人 Alexandr Wang 谈如何赢得 AI 竞赛|Alexandr Wang
 - 原视频标题：Meta AI Chief Wang on Winning the Race in AI
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1KCE76kEiL
+- B站链接：https://www.bilibili.com/video/BV1KCE76kEiL
 - 原视频链接：https://www.youtube.com/watch?v=bO06SaZdnXs
 - 发布时间：发布时间**: 2026-06-09 19:32:12
 - 字幕数量：0

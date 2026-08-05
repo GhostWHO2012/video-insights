@@ -4,7 +4,7 @@
 
 - B站标题：YC创业课:创业公司如何拿下第一批客户 | Gustaf Alströmer
 - 原视频标题：How to Get Your First Customers | Startup School
-- B站链接：视频链接**: https://www.bilibili.com/video/BV14kK86mEfx
+- B站链接：https://www.bilibili.com/video/BV14kK86mEfx
 - 原视频链接：https://www.youtube.com/watch?v=hyYCn_kAngI
 - 发布时间：发布时间**: 2026-07-21 21:17:19
 - 字幕数量：2

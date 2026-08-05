@@ -4,7 +4,7 @@
 
 - B站标题：AI 时代，品味、人的真实性与判断力为何愈发重要 | Adam Mosseri（Instagram 负责人）
 - 原视频标题：The rise of taste, human authenticity and judgment in an AI world | Adam Mosseri (Head of IG)
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1jEN96tEx1
+- B站链接：https://www.bilibili.com/video/BV1jEN96tEx1
 - 原视频链接：https://www.youtube.com/watch?v=yQ_EWmtfWvQ
 - 发布时间：发布时间**: 2026-07-14 16:12:11
 - 字幕数量：4

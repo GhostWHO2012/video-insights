@@ -4,7 +4,7 @@
 
 - B站标题：完整工作坊：构建你自己的深度研究智能体|Louis-François Bouchard, Paul Iusztin, Samridhi
 - 原视频标题：Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1czonBiEKY
+- B站链接：https://www.bilibili.com/video/BV1czonBiEKY
 - 原视频链接：https://www.youtube.com/watch?v=mYSRn6PC1mc
 - 发布时间：发布时间**: 2026-04-22 10:35:54
 - 字幕数量：1

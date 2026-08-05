@@ -4,7 +4,7 @@
 
 - B站标题：当软件不再是护城河时如何取胜 | Evan Spiegel (Snapchat CEO)
 - 原视频标题：How to win when software is not a moat | Evan Spiegel (Snapchat CEO)
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1xeLP68Ety
+- B站链接：https://www.bilibili.com/video/BV1xeLP68Ety
 - 原视频链接：https://www.youtube.com/watch?v=-7Yol5vX5xw
 - 发布时间：发布时间**: 2026-05-18 20:41:15
 - 字幕数量：1

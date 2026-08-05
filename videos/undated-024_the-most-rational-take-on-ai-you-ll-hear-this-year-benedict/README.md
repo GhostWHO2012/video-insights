@@ -4,7 +4,7 @@
 
 - B站标题：别再被失业恐慌骗了，AI只消灭任务，不消灭工作|Benedict Evans
 - 原视频标题：The most rational take on AI you’ll hear this year | Benedict Evans
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1tXVi6DEx4
+- B站链接：https://www.bilibili.com/video/BV1tXVi6DEx4
 - 原视频链接：https://www.youtube.com/watch?v=BD3vLtWhT5A&t=28s
 - 发布时间：发布时间**: 2026-06-02 14:15:05
 - 字幕数量：0

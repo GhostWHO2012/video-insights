@@ -4,7 +4,7 @@
 
 - B站标题：AI 为何再次垂直起飞｜Dianne Penn(Anthropic)
 - 原视频标题：Why AI is going vertical (again) | Dianne Penn (Anthropic)
-- B站链接：视频链接**: https://www.bilibili.com/video/BV1zdMQ6NEdc
+- B站链接：https://www.bilibili.com/video/BV1zdMQ6NEdc
 - 原视频链接：待补充
 - 发布时间：发布时间**: 2026-08-03 11:28:19
 - 字幕数量：0

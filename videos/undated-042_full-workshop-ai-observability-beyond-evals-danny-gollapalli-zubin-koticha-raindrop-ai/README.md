@@ -4,7 +4,7 @@
 
 - B站标题：超越传统评估的 AI 可观测性 | Danny Gollapalli&Zubin Koticha
 - 原视频标题：Full Workshop: AI Observability Beyond Evals — Danny Gollapalli & Zubin Koticha, Raindrop
-- B站链接：视频链接**: https://www.bilibili.com/video/BV11c536GEG3
+- B站链接：https://www.bilibili.com/video/BV11c536GEG3
 - 原视频链接：https://www.youtube.com/watch?v=-aM2EDTiaMs
 - 发布时间：发布时间**: 2026-05-13 01:34:56
 - 字幕数量：1

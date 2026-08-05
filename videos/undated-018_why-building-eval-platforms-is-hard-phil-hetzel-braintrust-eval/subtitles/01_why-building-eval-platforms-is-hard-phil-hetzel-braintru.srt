@@ -1,0 +1,1904 @@
+1
+00:00:13,860 --> 00:00:15,980
+好的，现在是11点15分
+All right, it's 11.15.
+
+2
+00:00:16,280 --> 00:00:17,680
+我们现在就开始
+We're going to go ahead and get started.
+
+3
+00:00:17,820 --> 00:00:20,820
+在此之前，大家一起说“evals” evals
+Before we do, everyone say evals. Evals!
+
+4
+00:00:22,540 --> 00:00:25,120
+我刚才在跟我的同事罗斯说
+I was telling my colleague Rose,
+
+5
+00:00:25,380 --> 00:00:30,080
+她现在在门口，我以前当了好几年的兼职教授
+who's at the door, that I was an adjunct professor for a number of years.
+
+6
+00:00:31,220 --> 00:00:35,080
+而在我做兼职教授的第一年
+And the first year that I did it,
+
+7
+00:00:35,180 --> 00:00:39,840
+我以为每周都会有130人的满员课堂，大家都迫不及待想学习
+I thought I was going to have this full class of 130 people every single week, eager to learn.
+
+8
+00:00:40,280 --> 00:00:41,740
+但随着周数一周一周过去
+And then as the weeks went on,
+
+9
+00:00:41,980 --> 00:00:44,980
+130人变成60人，再变成30人，最后只剩10个人
+130 became 60, became 30, became 10.
+
+10
+00:00:45,440 --> 00:00:50,100
+所以我总是告诉自己，每当我要做演讲时，现场只会来四五个人
+So I always tell myself that whenever I give a talk that only about four or five people are going to show up,
+
+11
+00:00:50,440 --> 00:00:53,160
+但我会非常兴奋地去教好这四五个人
+but I'm going to be really excited to teach those four or five.
+
+12
+00:00:54,140 --> 00:00:59,860
+今天真是太幸运了，因为现场座无虚席
+Today's a real blessing because we have a packed house here today.
+
+13
+00:01:00,380 --> 00:01:02,960
+大家都很兴奋地想来了解评估（eval）
+Everyone's excited to learn about evals,
+
+14
+00:01:03,300 --> 00:01:05,320
+而我也很兴奋能来讲这个主题
+and I'm excited to teach it.
+
+15
+00:01:06,660 --> 00:01:08,900
+下面是我们今天要讲的内容
+Here's what we're going to be talking about today.
+
+16
+00:01:09,080 --> 00:01:13,780
+我会先简单介绍一下我自己和我所在的公司
+I'll give you a little bit of intro about myself and the company that I work for,
+
+17
+00:01:14,440 --> 00:01:16,960
+然后概述一下我们要解决的问题
+an overview of the problem statement.
+
+18
+00:01:17,600 --> 00:01:23,540
+接着我们会讲人们在构建评估平台时会经历的不同阶段
+We'll go into the different stages of when people are building eval platforms.
+
+19
+00:01:24,400 --> 00:01:26,020
+然后在那之后，我们会讨论
+And after that, we'll talk about,
+
+20
+00:01:26,440 --> 00:01:27,580
+至少在我看来
+at least in my opinion,
+
+21
+00:01:28,100 --> 00:01:31,740
+我认为评估平台未来会走向哪里
+where I think eval platforms are going to go.
+
+22
+00:01:33,480 --> 00:01:34,480
+好的，说回到我自己
+But yeah, this is me.
+
+23
+00:01:34,620 --> 00:01:35,840
+我叫菲尔·赫策尔
+My name is Phil Hetzel.
+
+24
+00:01:36,460 --> 00:01:39,120
+我在Braintrust负责解决方案工程
+I lead solutions engineering at Braintrust.
+
+25
+00:01:39,320 --> 00:01:41,540
+我一会儿会介绍什么是Braintrust
+I'll go into what Braintrust is in a second.
+
+26
+00:01:42,360 --> 00:01:49,120
+所谓解决方案工程，基本上就是我和我的团队要确保大家
+Solution engineering, that basically means I'm the person and my team are the people that make sure that people
+
+27
+00:01:49,120 --> 00:01:53,980
+能尽快、最大化地从我们的平台中获得价值
+are getting the most value out of our platform and as quickly as possible.
+
+28
+00:01:54,680 --> 00:01:58,020
+所以我很幸运，因为在和所有客户合作的过程中
+So, I'm fortunate because throughout all of our customers,
+
+29
+00:01:58,260 --> 00:02:04,180
+我能看到评估（eval）和智能体可观测性这两个领域的最新实践
+I see what the state of the art is in both evals and agent observability.
+
+30
+00:02:05,260 --> 00:02:10,640
+在加入Braintrust之前，我在咨询和系统实施领域工作了12年
+Prior to Braintrust, I spent 12 years in consulting and systems implementation.
+
+31
+00:02:11,240 --> 00:02:13,060
+我在毕马威（KPMG）工作了四年
+I worked for KPMG for four years.
+
+32
+00:02:13,260 --> 00:02:21,240
+我在一家叫Slalom咨询的公司工作了八年，在那里我负责全球的Databricks业务单元
+I worked for a company called Slalom Consulting for eight years where I led the global Databricks business unit.
+
+33
+00:02:21,840 --> 00:02:29,160
+我注意到，当我在帮助客户做这些实施项目时，他们做得非常好
+And I noticed that as I was helping my clients with those implementations, they were great.
+
+34
+00:02:29,460 --> 00:02:33,000
+他们非常擅长做各种生成式AI的概念验证（POC）
+They were so good at generating these generative AI proofs of concepts.
+
+35
+00:02:33,540 --> 00:02:35,400
+但这些项目几乎都没有真正上线到生产环境
+And none of them were getting to production.
+
+36
+00:02:36,320 --> 00:02:43,180
+我很想帮上忙，确保这些概念验证（POC）能真正进入生产
+And I wanted to be helpful in making sure that those POCs could get to production.
+
+37
+00:02:43,480 --> 00:02:47,440
+所以我开始使用Braintrust，因为我知道它能在这个领域提供帮助
+So, I actually started using Braintrust because I knew it helped out in this space.
+
+38
+00:02:48,020 --> 00:02:49,360
+我一开始是以用户的身份来用它
+I started using it as a user.
+
+39
+00:02:50,400 --> 00:02:52,860
+我太喜欢这个平台了，于是就去应聘加入了公司
+And I like the platform so much that I applied for a job.
+
+40
+00:02:53,460 --> 00:02:55,500
+到现在我在这里已经大约一年了
+And I've been here for about a year.
+
+41
+00:02:56,620 --> 00:03:00,580
+工作之外，我喜欢下棋
+Outside of work, I like to play chess.
+
+42
+00:03:00,660 --> 00:03:02,240
+但我下得很烂
+But I'm very bad at it.
+
+43
+00:03:02,980 --> 00:03:05,940
+我也喜欢和我的妻子以及我的腊肠犬一起度过时光
+And I like to spend time with my wife and my dachshund.
+
+44
+00:03:06,340 --> 00:03:08,720
+这只腊肠犬叫手枪皮特
+The dachshund is named Pistol Pete.
+
+45
+00:03:09,680 --> 00:03:12,180
+照片里有他……他就是那个穿棕色的
+And he's pictured... he's the person in brown.
+
+46
+00:03:12,440 --> 00:03:13,560
+不是那个穿黑色的
+He's not the person in black.
+
+47
+00:03:14,080 --> 00:03:15,020
+穿黑色的是我
+The person in black is me.
+
+48
+00:03:16,320 --> 00:03:18,340
+之前有谁听说过Braintrust吗
+Has anyone heard of Braintrust before?
+
+49
+00:03:19,140 --> 00:03:20,380
+有吗 有几只手举起来了
+Anyone? A couple hands.
+
+50
+00:03:20,760 --> 00:03:24,680
+有多少人是这周才第一次听说Braintrust的
+How many people have heard about Braintrust for the first time this week?
+
+51
+00:03:25,980 --> 00:03:28,200
+真的啊 好的 太好了 很棒
+Really? Okay. Great. Wonderful.
+
+52
+00:03:29,300 --> 00:03:31,960
+提醒一下关于Braintrust
+Braintrust, for just a reminder,
+
+53
+00:03:32,600 --> 00:03:35,640
+我把我们看作是一个智能体质量平台
+I think of ourselves as an agent quality platform.
+
+54
+00:03:36,580 --> 00:03:39,440
+而“质量”这个概念里面可以包含很多东西
+And there's a lot of things that can go into quality.
+
+55
+00:03:40,000 --> 00:03:42,740
+要实现智能体质量
+The way that we can get to agent quality,
+
+56
+00:03:43,280 --> 00:03:48,120
+有两个主要支柱，就是通过评估（eval）和通过可观测性
+two main pillars, through evals and through observability.
+
+57
+00:03:48,500 --> 00:03:51,760
+而我们认为这其实是两类非常相似的问题
+Which we think of as really similar problems to solve.
+
+58
+00:03:52,460 --> 00:03:58,720
+评估（eval）是指在你的智能体上线生产之前，在实验阶段你对它所做的事情
+Evals, that's what you're doing with your agent before it gets to production, as you're experimenting,
+
+59
+00:03:59,100 --> 00:04:02,240
+这样你才能对你的智能体建立足够的信心
+so that you can become confident in your agent.
+
+60
+00:04:03,020 --> 00:04:05,260
+而可观测性其实非常类似
+And then observability is really similar,
+
+61
+00:04:05,440 --> 00:04:06,680
+只是这时你已经在生产环境中
+but you're already in production.
+
+62
+00:04:07,220 --> 00:04:11,380
+你的智能体正面对真实用户的真实使用场景
+Your agent is in front of real usage from real users.
+
+63
+00:04:12,220 --> 00:04:13,600
+你希望自己能够有信心
+And you want to be confident,
+
+64
+00:04:14,060 --> 00:04:14,940
+更准确地说，是持续保持信心
+you want to remain confident,
+
+65
+00:04:15,060 --> 00:04:19,720
+相信你的智能体依然按照你当初构建它时所预期的方式在运行
+I should say, that your agent is performing the way that you thought that it would when
+
+66
+00:04:19,720 --> 00:04:20,320
+就像你在构建它时设想的那样
+you were building it.
+
+67
+00:04:22,300 --> 00:04:27,500
+这就是Braintrust 而且有人特别叮嘱我不要把这变成一场销售宣讲
+So, that's Braintrust. I was specifically told to not make this a sales pitch.
+
+68
+00:04:27,760 --> 00:04:31,280
+所以这基本上是你们今天会看到的最后一页Braintrust相关的幻灯片
+So, that's like really the last Braintrust slide that you'll get today.
+
+69
+00:04:31,940 --> 00:04:35,740
+当然，如果这周大家对我们公司有问题，我非常乐意回答
+Although, of course, I'm very happy to answer questions about our company this week.
+
+70
+00:04:36,740 --> 00:04:44,320
+但主要来说，我更想从概念层面来谈，人们是如何开始成熟起来并构建这些平台的
+But mainly, I wanted to talk more conceptually about how people start to mature and build these platforms.
+
+71
+00:04:44,720 --> 00:04:48,180
+这些都是基于我们在这个领域积累的大量经验来说的
+Spoken from a place where we have a lot of experience in the space.
+
+72
+00:04:49,220 --> 00:04:51,300
+先说，为什么评估（eval）很重要
+First, why evals are important.
+
+73
+00:04:52,140 --> 00:04:53,720
+评估（eval）之所以重要，是因为
+Evals are important because,
+
+74
+00:04:54,360 --> 00:04:59,360
+这听起来很显然，但大语言模型（LLM）具有极强的波动性
+this sounds obvious, but LLMs have extreme variability.
+
+75
+00:05:00,300 --> 00:05:02,940
+我们喜欢大语言模型（LLM），正是因为它们高度多变
+We love LLMs because they're highly variable.
+
+76
+00:05:03,520 --> 00:05:08,000
+大语言模型（LLM）可以通过推理解决非常多不同类型的问题
+There are so many different types of problems that LLMs can reason to solve.
+
+77
+00:05:08,620 --> 00:05:13,220
+这就是我们如此被这种技术所吸引的原因
+That's why we're so attracted to them as a technology.
+
+78
+00:05:14,900 --> 00:05:16,460
+当然，智能体同样如此
+Agents are also, of course,
+
+79
+00:05:16,500 --> 00:05:18,940
+智能体是以大语言模型（LLM）作为其“大脑”的
+agents use LLMs as the brain of the agent.
+
+80
+00:05:19,680 --> 00:05:24,200
+智能体正在成为客户与公司交互的一种常态方式
+Agents are becoming the norm in how customers are interacting with companies.
+
+81
+00:05:24,420 --> 00:05:27,320
+现在人们已经开始期待一种智能体化体验
+People expect an agentic experience now.
+
+82
+00:05:27,940 --> 00:05:30,800
+所以如果把这两点结合起来看
+So, if you combine both of those things together,
+
+83
+00:05:31,120 --> 00:05:37,360
+你就必须对你的智能体在生产环境中的表现有足够的信心
+you really need to be confident in how your agent is going to perform once it is in production.
+
+84
+00:05:38,080 --> 00:05:44,140
+否则，你就会，或者说很可能会，承担巨大的风险
+Without doing so, you're going to incur or you can potentially incur a great deal of risk
+
+85
+00:05:44,140 --> 00:05:49,040
+无论是从品牌角度、合规角度
+from both a brand perspective, a compliance perspective,
+
+86
+00:05:49,700 --> 00:05:55,300
+还是从成本、运维以及系统层面的角度来看都是如此
+and even more of a cost and maintenance and systems perspective.
+
+87
+00:05:55,300 --> 00:06:00,320
+所以我们希望避免这些情况的发生，并确保我们的客户
+So, we want to avoid all of those things happening and make sure that our customers are
+
+88
+00:06:00,320 --> 00:06:06,520
+拥有良好的使用体验，而且我们的智能体表现得和我们预期的一样
+having a great experience and that our agents are acting the way that we thought that they would act.
+
+89
+00:06:08,440 --> 00:06:10,900
+有多少人是那种
+How many people are, like,
+
+90
+00:06:11,440 --> 00:06:12,780
+现在确实在做评估（eval）
+they're doing evals right now,
+
+91
+00:06:12,880 --> 00:06:15,900
+但只是用Google表格或者某种电子表格在做
+but it's just on a Google sheet or some spreadsheet.
+
+92
+00:06:16,600 --> 00:06:18,740
+这大概……这没什么可羞愧的，我的朋友
+There's probably... there's no shame in that, my friend.
+
+93
+00:06:18,940 --> 00:06:20,580
+把手高高举起来 太棒了
+Raise that hand high. That's great.
+
+94
+00:06:21,900 --> 00:06:24,060
+我真心觉得这很好
+And I think that's great.
+
+95
+00:06:24,280 --> 00:06:26,660
+能迈出这一步本身就非常重要
+Like, just making the step is really important.
+
+96
+00:06:26,880 --> 00:06:29,200
+这说明你已经意识到了这个问题空间的存在
+It's an acknowledgement of the problem space.
+
+97
+00:06:29,920 --> 00:06:31,620
+而且很多人会这样做
+And a lot of folks will,
+
+98
+00:06:31,920 --> 00:06:34,180
+你知道的，他们会来找我们，然后说
+you know, they'll come to us and they'll say,
+
+99
+00:06:34,300 --> 00:06:36,700
+嗯，我其实不太理解Braintrust，因为
+well, I don't really understand Braintrust because,
+
+100
+00:06:37,220 --> 00:06:42,360
+你看，我只需要知道怎么用几种不同的方式循环跑一下我的智能体
+you know, all I need to know is how to loop through my agent with a couple of different
+
+101
+00:06:42,360 --> 00:06:45,800
+用不同的输入，然后能展示一些
+inputs and be able to display some,
+
+102
+00:06:45,900 --> 00:06:49,260
+比如说，关于那个智能体的手写笔记和评分
+you know, handwritten notes and scores about that agent.
+
+103
+00:06:49,800 --> 00:06:52,020
+所以，我刚才提到的东西有三点
+So, the things that I mentioned there, three things.
+
+104
+00:06:52,320 --> 00:06:54,320
+一种执行你的智能体的方法
+Some way to execute your agent.
+
+105
+00:06:55,120 --> 00:07:00,920
+一些界面。有时候只是一个电子表格就够了，用来展示那些输出和分数
+Some UI. Sometimes it's as simple as a spreadsheet to show those outputs and scores.
+
+106
+00:07:01,740 --> 00:07:05,200
+还有一种收集输入样本的方法
+And then also a way to gather input examples.
+
+107
+00:07:05,480 --> 00:07:11,140
+我说的输入样本，是指能触发一次智能体运行的那个东西
+What I mean by input example is the thing that can initiate a run of an agent.
+
+108
+00:07:11,400 --> 00:07:12,900
+就是能调用智能体的那个东西
+The thing that can invoke an agent.
+
+109
+00:07:13,100 --> 00:07:15,080
+以及为此所需的所有信息
+Whatever information that's necessary for that.
+
+110
+00:07:16,900 --> 00:07:20,700
+如果评估（eval）就只有这些内容，那这会是一场非常短的演讲
+It will be a really short presentation if this is all evals was.
+
+111
+00:07:21,140 --> 00:07:23,300
+我会感谢大家的时间，然后走出这个房间
+I would thank you for your time and I would walk out the room.
+
+112
+00:07:23,440 --> 00:07:24,840
+但这不是你们来这里的原因
+But that's not what you're here for.
+
+113
+00:07:25,340 --> 00:07:27,000
+冰山下面还有一大块内容
+There's a whole other part of the iceberg.
+
+114
+00:07:28,640 --> 00:07:30,120
+事情远比那复杂
+It's way more complicated than that.
+
+115
+00:07:30,640 --> 00:07:36,320
+当你真正认真对待评估（eval）时，最终会发现有很多东西需要构建
+There are a lot of things that you end up having to build when you're really serious about evals.
+
+116
+00:07:36,540 --> 00:07:40,320
+我们今天不会把这些东西一项项都讲完
+We're not gonna talk about every single one of these things today.
+
+117
+00:07:41,140 --> 00:07:43,320
+但我们会涉及其中的很多部分
+But we will touch on many of them.
+
+118
+00:07:43,680 --> 00:07:47,540
+当然，如果这里有我没讲到、但你感兴趣的内容
+And, of course, if there's anything here that I don't cover that you're interested in,
+
+119
+00:07:47,900 --> 00:07:50,920
+我会留出一些时间来回答相关问题
+I'll leave some time for questions for that.
+
+120
+00:07:51,440 --> 00:07:53,220
+我也看到有很多人举起了手机
+I also see a lot of phones up.
+
+121
+00:07:53,340 --> 00:07:55,540
+我先停一下，让大家拍冰山的照片
+I'll pause for iceberg pictures.
+
+122
+00:07:58,720 --> 00:08:00,740
+在你们拍照的时候，我再说两点
+A couple of things while that's happening.
+
+123
+00:08:01,120 --> 00:08:02,920
+为什么这是一个复杂的问题
+Why is this a complicated problem?
+
+124
+00:08:03,660 --> 00:08:08,020
+我们已经稍微谈过，底层技术本身就相当复杂
+We already talked a little bit about how the underlying technology is quite complex.
+
+125
+00:08:08,160 --> 00:08:11,700
+大语言模型（LLM）并不是一个随机引擎
+LLMs are not a stochastic engine.
+
+126
+00:08:12,700 --> 00:08:16,720
+但构建这些智能体本身也是一个多角色参与的问题
+But it's also a multi-persona problem building these agents.
+
+127
+00:08:16,960 --> 00:08:20,620
+这不是工程师单打独斗就能完成的事情
+It's not just something that engineers do in isolation.
+
+128
+00:08:21,260 --> 00:08:23,480
+这是一个需要工程师
+It's something where engineers,
+
+129
+00:08:24,460 --> 00:08:27,440
+不管是产品工程师、AI工程师，还是两者兼具
+whether they're product engineers or AI engineers or both,
+
+130
+00:08:27,640 --> 00:08:30,020
+还需要让系统跑起来的系统工程师
+systems engineers to get the thing running,
+
+131
+00:08:31,600 --> 00:08:35,000
+以及拥有领域知识的领域专家（SME）
+SMEs that have the domain knowledge,
+
+132
+00:08:35,080 --> 00:08:36,300
+所有这些人都需要参与进来
+all of these people need to be involved.
+
+133
+00:08:37,340 --> 00:08:41,100
+最后，评估（eval）本身也会变成一个系统性问题
+And then lastly, evals themselves become a systems problem.
+
+134
+00:08:41,260 --> 00:08:43,300
+这将是我们今天最后要谈的内容
+That'll be the last thing that we touch on today.
+
+135
+00:08:44,580 --> 00:08:47,100
+那么，构建一个评估平台会经历哪些不同阶段
+So, what are the different stages of building an eval platform?
+
+136
+00:08:48,360 --> 00:08:53,620
+刚才那位自豪地举手说自己是从电子表格开始的朋友
+My friend over there that raised his hand proudly about starting out in a spreadsheet,
+
+137
+00:08:54,500 --> 00:08:55,700
+这是一个很好的起点
+this is a great place to start.
+
+138
+00:08:56,240 --> 00:08:58,260
+最重要的是你先开始做起来
+The most important thing is that you just get started.
+
+139
+00:08:58,860 --> 00:09:00,600
+所以，你有了一个电子表格，也有了一个for循环
+So, you've got a spreadsheet and you've got a for loop.
+
+140
+00:09:00,880 --> 00:09:04,320
+你有一堆可以迭代跑的输入样本
+You've got a bunch of input examples that you can iterate through.
+
+141
+00:09:04,700 --> 00:09:06,840
+你还有一种执行智能体的方法
+And you have a way to execute your agent.
+
+142
+00:09:07,080 --> 00:09:10,320
+这样，每次你调整智能体时
+So, you can see every time you tweak your agent,
+
+143
+00:09:10,320 --> 00:09:13,140
+你都能看到它的输出是如何随时间变化的
+how the outputs are different over time.
+
+144
+00:09:14,100 --> 00:09:19,440
+这是一个很好的起点，因为几乎没有门槛
+Well, this is a great place to start because there is no barrier to entry here.
+
+145
+00:09:19,620 --> 00:09:24,200
+每个人多少都能接触到某种电子表格工具
+Everyone has some way to access some type of spreadsheet technology.
+
+146
+00:09:25,460 --> 00:09:28,260
+但回报会因为一些原因而逐渐递减
+The returns can be diminishing for a couple of reasons.
+
+147
+00:09:29,500 --> 00:09:31,620
+这个阶段更多，我会称之为记录
+This is more, I would call this documenting.
+
+148
+00:09:31,960 --> 00:09:33,360
+而不是真正的实验
+It's not really experimenting.
+
+149
+00:09:34,360 --> 00:09:36,600
+所以，尽管你有这样一个表格
+So, while you have this spreadsheet of,
+
+150
+00:09:36,660 --> 00:09:38,560
+里面有一堆输入样本
+you know, a bunch of input examples,
+
+151
+00:09:39,160 --> 00:09:43,820
+你可能会记录下每次调整智能体时
+maybe you keep track across each time you are tweaking your agent,
+
+152
+00:09:44,380 --> 00:09:46,540
+它产生的不同输出
+the different output that emitted.
+
+153
+00:09:47,500 --> 00:09:51,620
+当然，随着时间推移，这会变得很难管理
+That can become cumbersome to manage over time, of course.
+
+154
+00:09:52,160 --> 00:09:58,320
+想要直接对比不同时期的实验结果会非常困难
+It's really challenging to be able to compare directly experiments over time.
+
+155
+00:09:58,860 --> 00:10:03,480
+你大概也不会对这些实验做太多分析
+You're probably not doing a lot of analytics across those experiments.
+
+156
+00:10:04,160 --> 00:10:07,200
+即便你做了一些分析
+And the analytics that you are doing or performing,
+
+157
+00:10:07,620 --> 00:10:09,980
+很可能也是基于某种人工评分
+they're likely coming from some type of human score,
+
+158
+00:10:10,280 --> 00:10:11,780
+这种评分非常有价值
+which is really valuable,
+
+159
+00:10:12,200 --> 00:10:14,780
+但在实践中很难扩展
+but challenging to scale in practice.
+
+160
+00:10:16,320 --> 00:10:17,660
+评估（eval）是一项团队运动
+Evals are a team sport,
+
+161
+00:10:17,820 --> 00:10:19,360
+有点像我之前说的那样
+kind of what I was talking about before.
+
+162
+00:10:19,860 --> 00:10:22,780
+我们要确保把很多人都拉进来一起做
+We want to make sure that we're bringing a ton of people into the fold.
+
+163
+00:10:23,180 --> 00:10:24,400
+不只是技术人员
+Not just technical folks,
+
+164
+00:10:24,400 --> 00:10:25,740
+还包括非技术人员
+but also non-technical folks.
+
+165
+00:10:25,780 --> 00:10:33,480
+他们因为独特的领域专业知识以及贴近用户的优势，能为你的智能体带来巨大价值
+They can add a lot of value to your agent because of their unique domain expertise and proximity to users.
+
+166
+00:10:33,580 --> 00:10:36,020
+但我的意思是，他们大概不会跑到电子表格里来
+They're probably not coming into the spreadsheet, is my point.
+
+167
+00:10:36,760 --> 00:10:43,400
+而且这很慢。每次你做评估（eval），都得经历一个有点繁琐的流程
+And it's slow. Each time you eval, you have to go through probably a little bit of a cumbersome process
+
+168
+00:10:43,400 --> 00:10:46,400
+去重建或追加电子表格
+to recreate or append to the spreadsheet.
+
+169
+00:10:48,100 --> 00:10:58,220
+所以，在我的工作中，最有趣的对话之一是，会有一位非常
+So, probably one of the most fun conversations that I have in my job is I'll have a very
+
+170
+00:10:58,220 --> 00:11:01,200
+自豪的产品工程师和我开会
+proud product engineer that gets on a call with me,
+
+171
+00:11:01,960 --> 00:11:04,000
+他们挺起胸膛
+and they puff their chest out,
+
+172
+00:11:04,140 --> 00:11:04,880
+冲我得意一笑
+and they smirk at me,
+
+173
+00:11:04,940 --> 00:11:06,480
+然后说，我完全可以凭感觉编码 / 随手撸代码做一个Braintrust
+and they say, well, I can just vibe-code Braintrust.
+
+174
+00:11:07,000 --> 00:11:07,780
+这没问题
+It's no problem.
+
+175
+00:11:08,900 --> 00:11:10,480
+而我认为，对于
+And I think for, like,
+
+176
+00:11:10,740 --> 00:11:12,940
+如果你刚刚开始这段旅程
+if you're just getting started in your journey,
+
+177
+00:11:13,160 --> 00:11:15,480
+这是一个非常不错的阶段性提升
+it's a really nice step to go to.
+
+178
+00:11:15,820 --> 00:11:19,480
+所以，现在你不再停留在电子表格的世界里
+So, now instead of being in a spreadsheet land,
+
+179
+00:11:19,740 --> 00:11:25,740
+你开始做一些更定制化的东西，让其他人也能参与进来
+you're making something a little bit more bespoke for other people to bring them into the fold.
+
+180
+00:11:26,220 --> 00:11:28,160
+所以现在你大概有了一个for循环
+So, now you've probably got a for loop,
+
+181
+00:11:28,940 --> 00:11:30,600
+你还有了一个更好看的界面
+you have a nicer UI now.
+
+182
+00:11:30,780 --> 00:11:31,620
+这样就更容易被人接受
+So, it's more approachable.
+
+183
+00:11:32,700 --> 00:11:40,160
+也希望你已经升级到某种不再是Excel或Google表格的数据库
+And hopefully you've graduated into some database that isn't Excel or Google Sheets.
+
+184
+00:11:40,260 --> 00:11:42,220
+你大概会
+You probably, you know,
+
+185
+00:11:42,800 --> 00:11:47,680
+用上像Neon之类的新数据库
+use a new database in something like Neon or something.
+
+186
+00:11:48,480 --> 00:11:51,580
+这样你在评估（eval）的数据持久化方面就有了更好的方案
+So, now you have a better story around persistence of evals.
+
+187
+00:11:52,540 --> 00:11:55,500
+也正因为如此，你能让更多人参与进来
+And because of this, you're bringing more people into the fold,
+
+188
+00:11:56,100 --> 00:12:00,840
+你会为特定用户做出更定制化的界面
+you are making UIs that are a little bit more bespoke for your specific users.
+
+189
+00:12:02,700 --> 00:12:06,860
+这里的问题在于，你其实还没有真正开始迭代
+The thing that's a problem here is that you're still not really iterating yet.
+
+190
+00:12:06,940 --> 00:12:11,900
+你做的事情仍然更偏向于报表
+You're still performing work that is a little bit more just reporting,
+
+191
+00:12:12,160 --> 00:12:16,220
+更像是文档记录，而不是鼓励大量迭代
+just documentation, rather than encouraging a lot of iteration.
+
+192
+00:12:16,800 --> 00:12:18,220
+所以，这里更多还是一个报表工具
+So, more of a reporting tool here.
+
+193
+00:12:18,340 --> 00:12:20,980
+有多少人是凭感觉编码 / 随手撸代码做过自己的界面
+How many people have vibe coded their own UI?
+
+194
+00:12:21,340 --> 00:12:22,680
+嗯，可以理解
+Yeah. Makes sense.
+
+195
+00:12:25,130 --> 00:12:29,250
+下一步，你就会想要鼓励大量实验
+Next step here. So, you want to encourage a lot of experimentation.
+
+196
+00:12:29,770 --> 00:12:31,570
+不只是让技术用户来实验
+Not just with technical users,
+
+197
+00:12:31,730 --> 00:12:33,310
+还要让非技术用户也能参与实验
+but with non-technical users.
+
+198
+00:12:34,110 --> 00:12:43,850
+所以你看，我现在展示的这张图，更偏向于支持非技术用户进行实验的场景
+So, you know, I'm showing this image that is more aligned to allowing experimentation for non-technical users.
+
+199
+00:12:44,130 --> 00:12:46,810
+但当然了，当你在构建这些平台的时候
+But of course, as you're building these platforms,
+
+200
+00:12:46,810 --> 00:12:50,430
+你也会希望支持更多由SDK驱动的体验
+you want to allow for more SDK driven experience as well.
+
+201
+00:12:50,790 --> 00:12:53,990
+只是那种东西在演示文稿里很难画成一张好看的图
+That just doesn't make for a very nice image in a presentation.
+
+202
+00:12:55,310 --> 00:13:03,630
+所以对我来说，“实验”意味着你可以让用户接入一个智能体
+So, experimentation to me means that you can give a user access to an agent,
+
+203
+00:13:03,850 --> 00:13:06,150
+在沙盒环境里使用某个智能体的配置
+a configuration of an agent in a sandbox.
+
+204
+00:13:06,930 --> 00:13:11,090
+然后允许他们去微调这个智能体里的某些参数
+And you allow them to tweak certain parameters within that agent.
+
+205
+00:13:11,390 --> 00:13:17,950
+在我这里的例子中，我允许用户在界面里修改一个智能体的系统指令
+In my example here, I'm allowing a user in the UI to change the system instructions to an
+
+206
+00:13:17,950 --> 00:13:23,670
+这个智能体运行在我的评估平台之外，并且允许他们对比两种不同的
+agent running outside of my eval platform and allowing them to compare two different
+
+207
+00:13:23,670 --> 00:13:27,710
+系统提示词配置
+configurations of that system prompt.
+
+208
+00:13:28,370 --> 00:13:34,810
+然后我会对这两次不同的智能体运行做评估，从而把分数汇总出来
+And I'm running evals across those two different agent runs so that I can bubble up scores.
+
+209
+00:13:35,190 --> 00:13:36,730
+你现在在图里就能看到这一点
+You can see that in the image now.
+
+210
+00:13:36,950 --> 00:13:43,490
+我可以汇总出不同的分数，从技术和功能两个层面来理解我的智能体是怎么表现的
+I can bubble up different scores to understand both technically and functionally how my agent is behaving.
+
+211
+00:13:44,690 --> 00:13:48,270
+所以这就有点像，你会听说很多平台都有一个“playground”功能
+So, this is, like, you'll hear about a lot of platforms have a playground feature.
+
+212
+00:13:48,650 --> 00:13:50,650
+你也会希望有某种类型的playground功能
+You're going to want some type of playground feature,
+
+213
+00:13:50,850 --> 00:13:52,810
+同时服务技术用户和非技术用户
+both for technical and non-technical users.
+
+214
+00:13:53,610 --> 00:13:55,570
+这就是开始真正落地、见真章的地方
+This is where the rubber starts hitting the road,
+
+215
+00:13:55,710 --> 00:14:02,630
+因为做评估的最佳方式，是认真思考你的
+because the best way to perform evals is to really think about the failure modes that your
+
+216
+00:14:02,630 --> 00:14:08,010
+智能体可能会掉进哪些失效模式，然后围绕这些失效模式设计打分函数
+agent can fall into and build scoring functions around those failure modes.
+
+217
+00:14:08,290 --> 00:14:16,590
+而一开始发现这些失效模式的最佳方式，是能拿到生产环境的追踪数据，也就是
+The best way to find those failure modes in the first place is to have access to production trace data, i.e.
+
+218
+00:14:16,630 --> 00:14:20,570
+你的智能体真实地面对真实用户和真实使用场景
+your agent in front of real users and real usage.
+
+219
+00:14:21,390 --> 00:14:23,730
+所以下一步其实非常关键
+So, the next step here is a really important one.
+
+220
+00:14:24,250 --> 00:14:26,330
+我们要确保自己能把我们
+We want to make sure that we can connect what we,
+
+221
+00:14:26,450 --> 00:14:28,890
+至少在内部称之为“飞轮”的东西串联起来
+at least internally, we call the flywheel.
+
+222
+00:14:29,230 --> 00:14:35,130
+从系统视角来看，对我们来说，可观测性和评估其实是同一个问题
+Observability and evals, to us, it's actually the same problem from a systems perspective.
+
+223
+00:14:36,090 --> 00:14:37,770
+有个挺好玩的故事，我们以前
+Funny story, we used to be,
+
+224
+00:14:38,070 --> 00:14:39,310
+大概三年前刚起步的时候
+three years ago when we started,
+
+225
+00:14:39,430 --> 00:14:40,750
+只是一家做评估平台的公司
+we were only an evals platform.
+
+226
+00:14:41,430 --> 00:14:46,450
+后来我们发现有个客户在跑一个巨大的评估任务
+And then we noticed one of our customers was running this massive eval,
+
+227
+00:14:46,690 --> 00:14:48,890
+基本上是每天每个小时都在跑
+like, every hour of every day.
+
+228
+00:14:49,070 --> 00:14:50,330
+所以我们就联系了这个人
+So, we reached out to this person,
+
+229
+00:14:50,450 --> 00:14:51,230
+他就说，哦，对
+and they said, oh, yeah,
+
+230
+00:14:51,270 --> 00:14:55,090
+我只是把所有生产流量都导进这个数据库
+I'm just piping all of my production traffic into this database,
+
+231
+00:14:55,270 --> 00:14:56,670
+然后在这些数据上跑评估
+and I'm running an eval against it.
+
+232
+00:14:56,730 --> 00:14:57,550
+于是我们就想，好吧
+So, we're like, okay,
+
+233
+00:14:57,590 --> 00:15:06,190
+我们大概应该直接把追踪和观测真实流量的能力做进产品里
+we should probably just make that ability to trace and observe actual traffic and account
+
+234
+00:15:06,190 --> 00:15:09,690
+而不是硬把这种用例塞进离线评估的框架里
+for that use case without having to cram it into offline evals.
+
+235
+00:15:10,530 --> 00:15:13,930
+所以，确保我们能在生产环境里观测一切，这点非常重要
+So, this is really important to make sure that we can observe things in production,
+
+236
+00:15:14,550 --> 00:15:17,250
+这样才能理解我们的智能体在真实环境中的实际行为
+understand the actual behavior of our agents,
+
+237
+00:15:17,630 --> 00:15:23,490
+也才能真正看清我们对智能体做的改动到底带来了多大提升
+also understand the real lift that the changes that we're making to our agents are having.
+
+238
+00:15:24,530 --> 00:15:26,250
+所以我们会对这些数据做分析
+So, we're analyzing that data.
+
+239
+00:15:26,790 --> 00:15:31,210
+我们把这些真实样本拉回到一个离线环境里
+We pull that back, those actual examples back into an offline environment,
+
+240
+00:15:31,870 --> 00:15:35,270
+然后用离线评估在这些样本上持续改进
+and then we improve upon those using offline evals.
+
+241
+00:15:35,690 --> 00:15:38,190
+这其实是一个循环，而不只是一次性的流程
+This is a loop, so it's not just a process.
+
+242
+00:15:38,950 --> 00:15:40,490
+你会不断地跑这个循环
+You're going to be performing this loop,
+
+243
+00:15:40,890 --> 00:15:44,890
+理想情况下，在你把智能体推到生产环境后的整个生命周期里都要这样做
+hopefully, for the lifetime of the agent that you're pushing to production.
+
+244
+00:15:45,470 --> 00:15:48,650
+你应该尽可能多地迭代这个循环
+You should be iterating this loop as many times as possible.
+
+245
+00:15:48,790 --> 00:15:49,910
+这就是你不断变好的方式
+That's how you improve.
+
+246
+00:15:51,930 --> 00:15:53,370
+所以，随着这一切的发生
+So, as a result of that,
+
+247
+00:15:53,370 --> 00:15:55,050
+你的范围其实已经有点变化了
+you've changed your scope a little.
+
+248
+00:15:55,230 --> 00:15:57,890
+准确说，你的范围已经被大大拓宽了
+You've widened your scope a lot, actually.
+
+249
+00:15:58,590 --> 00:16:00,750
+你现在已经是一个追踪平台
+You are now a tracing platform.
+
+250
+00:16:00,950 --> 00:16:02,290
+你现在也是一个日志平台
+You're now a logging platform,
+
+251
+00:16:02,450 --> 00:16:06,150
+而不仅仅是一个离线评估平台
+in addition to being an offline evals platform.
+
+252
+00:16:06,790 --> 00:16:13,510
+再说一遍，这样做的好处是，你能从用户
+Again, the benefit of that is that you're starting to get far higher signal from how users
+
+253
+00:16:13,510 --> 00:16:16,510
+与智能体的交互中获取到更高质量的信号
+are interacting with your agents,
+
+254
+00:16:16,710 --> 00:16:19,030
+而且你可以利用这些真实交互
+and you can use those real interactions.
+
+255
+00:16:20,110 --> 00:16:25,590
+所以你几乎可以把评估看作是在一个安全环境里重放生产环境
+So, you can almost think about evals almost like you're rerunning production in a safe environment.
+
+256
+00:16:25,850 --> 00:16:30,370
+在这个例子里，你基本已经做到这一点了
+You're now getting to that point with this example.
+
+257
+00:16:31,190 --> 00:16:33,570
+你也可以做在线评估
+You can also perform online evals,
+
+258
+00:16:33,650 --> 00:16:39,730
+也就是说，你可以把打分函数直接指向你的可观测性流量
+so you can point scoring functions to your observability traffic,
+
+259
+00:16:40,230 --> 00:16:42,170
+然后做一些比如告警之类的事情
+and perform things like alerting,
+
+260
+00:16:42,730 --> 00:16:48,270
+这些都是在你评估体系成熟到这个阶段时可以内建进去的能力
+all things that you could build in when you're at this phase of maturity for running evals.
+
+261
+00:16:48,990 --> 00:16:51,950
+不太妙的一点是，如果你把这一切都搭起来了
+The bad here, if you build it,
+
+262
+00:16:52,010 --> 00:16:52,850
+你就得负责运维它
+you have to manage it,
+
+263
+00:16:53,130 --> 00:16:54,990
+所以哪怕你只是
+so just because you've,
+
+264
+00:16:55,330 --> 00:16:58,210
+凭感觉撸了一个平台，结果会怎样呢
+you know, vibe-coded a platform, guess what?
+
+265
+00:16:58,330 --> 00:16:59,770
+你可能会因此升职
+You might get a promotion for it,
+
+266
+00:16:59,790 --> 00:17:02,050
+但同时，这也会变成你的日常工作
+but also, like, that's going to be your job now,
+
+267
+00:17:02,630 --> 00:17:09,370
+你得以整个行业发展的速度来运维并持续扩展你的评估平台
+is to manage and continue to grow your eval platform at the pace that the industry is
+
+268
+00:17:09,370 --> 00:17:11,990
+这会是个既刺激又有挑战的事情
+moving, which can be an exciting challenge.
+
+269
+00:17:11,990 --> 00:17:14,170
+这基本上就是我们公司在押注的方向
+That's kind of the bet that our company is making,
+
+270
+00:17:14,170 --> 00:17:15,730
+而且我们也很兴奋能去解决这个问题
+and we're excited to solve that problem.
+
+271
+00:17:16,650 --> 00:17:18,150
+更重要的挑战在于
+The more important challenge,
+
+272
+00:17:18,230 --> 00:17:20,070
+智能体的追踪数据
+though, is that agent traces,
+
+273
+00:17:20,190 --> 00:17:22,250
+尤其是如果你看屏幕上的这些
+specifically, if you kind of look on the screen,
+
+274
+00:17:22,550 --> 00:17:24,190
+其实非常棘手
+these are really nasty.
+
+275
+00:17:24,490 --> 00:17:26,690
+它们跟普通应用的追踪数据完全不一样
+They're not like normal application traces.
+
+276
+00:17:27,650 --> 00:17:30,170
+它们往往只是半结构化的
+They are really semi-structured.
+
+277
+00:17:30,430 --> 00:17:31,610
+很多时候甚至是完全非结构化的
+A lot of times, they're unstructured.
+
+278
+00:17:31,810 --> 00:17:36,810
+里面充满了大量文本，这是我们在解决的大语言模型（LLM）问题所固有的
+There's just a ton of text inherent to LLM problems that we're solving.
+
+279
+00:17:38,750 --> 00:17:42,390
+它们不仅复杂，而且体量非常大
+They're just, like, very large in addition to being complicated,
+
+280
+00:17:42,610 --> 00:17:44,490
+所以如果你试图把
+so if you're trying to cram,
+
+281
+00:17:45,190 --> 00:17:49,770
+比如一个1GB的trace塞进一行Postgres记录里
+you know, a one-gigabyte trace into a Postgres row,
+
+282
+00:17:50,030 --> 00:17:53,710
+那会带来一堆性能问题，而且问题会非常多
+that can lead to a lot of performance problems, and they're numerous.
+
+283
+00:17:53,870 --> 00:17:57,970
+它还是高吞吐的，因为生产环境里会有大量使用
+It's high-velocity, because there's so much usage happening in production,
+
+284
+00:17:58,110 --> 00:18:00,530
+理想情况下，都是在用你推到线上去的那个智能体
+hopefully, with the agent that you've pushed.
+
+285
+00:18:01,990 --> 00:18:04,330
+所以这是我们过去解决这个问题的方式
+So, this is how we used to solve this problem.
+
+286
+00:18:04,670 --> 00:18:07,610
+举个例子，如果你已经成熟到这个阶段
+Just as an example, if you're at this stage in maturity,
+
+287
+00:18:08,150 --> 00:18:09,370
+你会有大量trace不断涌入
+you've got traces coming in.
+
+288
+00:18:12,650 --> 00:18:19,950
+你在做可观测性，就需要一种方式让大家能立刻看到自己的trace
+You're performing observability, you need a way for folks to instantly be able to see their traces.
+
+289
+00:18:20,130 --> 00:18:21,470
+这对大家来说非常重要
+It's very important to people.
+
+290
+00:18:21,810 --> 00:18:27,610
+所以你需要一个极低延迟的数据写入方式
+So, you'll need a very low-latency way to ingest data,
+
+291
+00:18:27,810 --> 00:18:35,710
+然后你还需要第二层持久化存储，用来支持这样一种查询模式
+and then you also need a second layer of persistence for the query pattern of,
+
+292
+00:18:36,010 --> 00:18:39,810
+“我想对这些数据做分析和聚合”
+I want to be able to analyze and aggregate these data.
+
+293
+00:18:40,070 --> 00:18:43,290
+过去我们会用一个开源数据仓库来做这件事
+So, we used to use an open-source data warehouse for this.
+
+294
+00:18:43,810 --> 00:18:51,030
+我们曾经通过一个自己造的领域特定语言把这两种数据源拼在一起
+We used to stitch these two sources together through a domain-specific language that we
+
+295
+00:18:51,030 --> 00:18:53,610
+这个语言叫BTQL，没人喜欢
+created called BTQL that no one liked,
+
+296
+00:18:54,310 --> 00:18:56,310
+包括我们自己在内，我们也很讨厌它
+and including us, we hated it,
+
+297
+00:18:56,590 --> 00:19:02,450
+然后我们会在浏览器里用DuckDB做第三层聚合
+and then we would perform a third level of aggregation using DuckDB in the browser.
+
+298
+00:19:03,250 --> 00:19:05,730
+这一套对我们来说一开始运转得还不错
+This worked for us for a bit,
+
+299
+00:19:06,450 --> 00:19:08,670
+但后来在某个阶段就不再奏效了
+and then it didn't work when,
+
+300
+00:19:09,330 --> 00:19:11,110
+我就用我们其中一个客户的例子来说明
+I'll just use one of our customer examples,
+
+301
+00:19:12,030 --> 00:19:15,030
+比如像 Notion 这样的客户
+a customer like Notion as an example.
+
+302
+00:19:15,610 --> 00:19:19,350
+他们会给我们发送海量的非结构化数据
+Just a ton of unstructured data that they were sending us.
+
+303
+00:19:19,770 --> 00:19:23,250
+他们希望能够在一条追踪里做类似全文搜索这样的操作
+They wanted to be able to perform things like full text search across a trace.
+
+304
+00:19:23,910 --> 00:19:30,110
+这些技术其实都不太适合做这种文本风格的分析
+None of these technologies are really equipped to perform text-style analytics,
+
+305
+00:19:30,470 --> 00:19:33,650
+而在大语言模型（LLM）领域这是个难题 因为文本量实在太大
+which is a challenge with the LLM domain because there's just so much text.
+
+306
+00:19:35,170 --> 00:19:36,510
+所以 这就把我们引到了下面这一点
+So, that leads us to this.
+
+307
+00:19:37,050 --> 00:19:40,050
+衡量智能体质量 做评估（eval） 做可观测性
+Measuring agent quality, performing evals, performing observability.
+
+308
+00:19:40,470 --> 00:19:42,170
+这本质上其实是一个系统层面的问题
+It's actually a systems problem,
+
+309
+00:19:42,290 --> 00:19:43,750
+而不仅仅是一个 UI、UX 的问题
+not just a UI, UX problem.
+
+310
+00:19:44,410 --> 00:19:49,430
+我们意识到 凭感觉编码 / 随手撸代码做一个评估（eval）的 UI 其实挺容易
+We recognize that it's quite easy to vibe code the UI of evals,
+
+311
+00:19:49,970 --> 00:19:57,370
+但要打造支撑成功运行的那个数据层就要难得多得多
+but it's way, way, way more challenging to create that data layer of running a successful
+
+312
+00:19:57,370 --> 00:19:59,670
+用来支撑评估（eval）和可观测性的评估平台
+evals and observability platform.
+
+313
+00:19:59,670 --> 00:20:02,630
+不仅仅是规模层面的问题 虽然规模也很重要
+And not just from a scale perspective, although that matters,
+
+314
+00:20:03,030 --> 00:20:07,970
+更主要是功能层面 要让人们能做他们理所当然想做的那些事
+mostly from a functional perspective of allowing people to do the things that they would
+
+315
+00:20:07,970 --> 00:20:14,490
+比如在他们选用的平台里 对上百万条追踪做全文搜索
+expect to do, like performing full text search across millions of traces in their platform of choice.
+
+316
+00:20:15,990 --> 00:20:17,590
+这个我刚才稍微提到过
+I talked about this a little bit.
+
+317
+00:20:17,790 --> 00:20:22,990
+之所以这是一个非常新颖的问题 是因为它在很多维度上都很特殊
+The reason why this is such a novel problem to solve is across a lot of these dimensions,
+
+318
+00:20:23,190 --> 00:20:25,090
+我就不在这一页上逐条念了
+which I won't drain this slide,
+
+319
+00:20:25,410 --> 00:20:28,130
+但数据进来的速度非常快
+but the data comes in really fast.
+
+320
+00:20:29,310 --> 00:20:32,490
+而且每次进来的数据体量都非常大
+The data are just really large when they come in.
+
+321
+00:20:32,950 --> 00:20:36,830
+所以 即便在一条追踪里 传统的 span
+So, even though traditional spans in a trace,
+
+322
+00:20:37,090 --> 00:20:38,290
+span 只是追踪中的一个片段
+span is just one part of a trace,
+
+323
+00:20:38,650 --> 00:20:40,650
+传统的 span 也就几 KB 大小
+traditional span would be a couple kilobytes.
+
+324
+00:20:41,050 --> 00:20:44,450
+在这里，我们见过大小为 10、20 兆字节的跨度
+Here, we've seen spans that are 10, 20 megabytes in size.
+
+325
+00:20:45,350 --> 00:20:47,810
+这些 span 里包含了极其丰富的上下文
+So much context within those spans.
+
+326
+00:20:48,950 --> 00:20:53,990
+且高度非结构化 另外 还存在很多不同类型的读取模式
+Highly unstructured. And then also, there are a lot of different types of read patterns.
+
+327
+00:20:54,810 --> 00:20:58,830
+你可能会做聚合类的读取模式
+So, you might be performing aggregate types of read patterns,
+
+328
+00:20:58,970 --> 00:21:02,750
+但同时你又希望有非常低延迟的读取模式
+but also you want very low latency types of read patterns.
+
+329
+00:21:03,170 --> 00:21:06,370
+单看任何一个问题都不算独一无二
+So, none of these problems are individually unique,
+
+330
+00:21:06,690 --> 00:21:11,670
+但把这些问题叠加在一起 从系统角度看就变成了一个非常独特的难题
+but together, they make for a very unique problem from a systems perspective.
+
+331
+00:21:13,610 --> 00:21:16,670
+所以我们所做的是…… 然后
+So, what we've done is... and,
+
+332
+00:21:16,770 --> 00:21:21,070
+如果你们要自己搭这样一个系统 也需要在这方面下功夫
+you know, what you all would have to endeavor to do if you were building this yourselves
+
+333
+00:21:21,070 --> 00:21:28,230
+你必须认真思考如何为追踪构建合适的数据平台 这样你才能
+is you really have to think about making the right data platform for traces so that you
+
+334
+00:21:28,230 --> 00:21:34,050
+支撑后面逐步出现的那些更复杂的功能性需求
+can perform some of the more functional requirements that eventually come down the line.
+
+335
+00:21:34,770 --> 00:21:37,010
+我这里举的例子是
+The example that I have here is that,
+
+336
+00:21:37,250 --> 00:21:42,950
+比如说 你想在你的评估平台上放出一个编码智能体
+you know, let's say that you want to let a coding agent loose on your evals platform so
+
+337
+00:21:42,950 --> 00:21:48,890
+让它能更自愈式地从你的评估平台里抓取聚合数据
+that you can be a little bit more self-healing with grabbing data in aggregate from your
+
+338
+00:21:48,890 --> 00:21:54,730
+用这个编码智能体把数据拉进上下文里 然后修改你的智能体
+evals platform, using a coding agent to grab that into context and change your agent
+
+339
+00:21:54,730 --> 00:21:59,650
+就在同一个编码智能体会话之内完成这些事
+within, you know, within a coding agent session.
+
+340
+00:22:00,030 --> 00:22:04,150
+如果你没法在评估平台的数据后端上大量跑纯 SQL
+That's something that's going to be really challenging to do if you can't run a lot of
+
+341
+00:22:04,150 --> 00:22:09,090
+要实现这一点就会非常困难
+just pure SQL on the data backend of your evals platform.
+
+342
+00:22:09,630 --> 00:22:14,530
+我们确实观察到很多这种无头式的使用场景 在这些场景里 人们对 UI 并不感兴趣
+We've actually noticed a lot of these headless style use cases come up where people aren't
+
+343
+00:22:14,530 --> 00:22:16,230
+完全不在乎界面长什么样
+interested in the UI at all.
+
+344
+00:22:16,670 --> 00:22:20,930
+他们唯一关心的是 我怎样做评估（eval）
+The only thing that they're interested in is how can I perform evals in a way where I can
+
+345
+00:22:20,930 --> 00:22:30,740
+才能用 Codex 或 Claude Code 来帮我提升智能体的质量
+use Codex or I can use Claude Code to help increase the quality of my agent for me.
+
+346
+00:22:32,020 --> 00:22:35,520
+接下来我要讲的最后一个问题是 “那又怎样” 这个问题
+So, the last problem here that I'll talk about is the so what problem.
+
+347
+00:22:36,700 --> 00:22:39,160
+出于时间考虑 这一部分我们先跳过
+And we'll skip this for now for the sake of time.
+
+348
+00:22:39,160 --> 00:22:40,320
+这是 Braintrust 是怎么做这件事的
+This is how Braintrust does this.
+
+349
+00:22:40,380 --> 00:22:42,220
+如果你感兴趣 我们有一篇相关的博客
+We have a blog about this if you're interested.
+
+350
+00:22:42,560 --> 00:22:43,440
+刚刚发布不久
+That just got released.
+
+351
+00:22:46,480 --> 00:22:53,020
+但接下来你可以预期在你的评估平台里构建的能力是
+But what kind of comes next here for what you can expect to build into your evals platform
+
+352
+00:22:53,020 --> 00:22:57,180
+你要能把你的智能体里那些 “未知的未知” 告诉大家
+is you want to be able to tell folks the unknown unknowns of your agent,
+
+353
+00:22:57,380 --> 00:23:00,880
+也就是说 不要让我自己去翻一大堆追踪
+i.e., don't make me look across a whole bunch of traces,
+
+354
+00:23:01,480 --> 00:23:05,360
+而是直接告诉我 人们到底是怎么使用我们的智能体的
+just tell me how people are using our agent.
+
+355
+00:23:05,940 --> 00:23:11,220
+所以你希望通过主题建模等技术挖掘出这些未知的未知
+So, you want to be able to uncover those unknown unknowns through topic modeling
+
+356
+00:23:11,220 --> 00:23:14,000
+这样你就知道工程资源该花在什么地方
+techniques so that you know where to spend your engineering time.
+
+357
+00:23:14,960 --> 00:23:19,040
+你要确保你构建的平台不仅是为人类服务
+You want to make sure that you are building your platform not just for humans,
+
+358
+00:23:19,180 --> 00:23:25,120
+也要为智能体服务 因为这已经是人们创造技术的主要媒介之一
+but also for agents, because that's one of the main media for how people are creating technology now.
+
+359
+00:23:25,920 --> 00:23:30,040
+我们甚至还没谈到构建这些平台时涉及的非功能性需求
+We didn't even talk about the nonfunctional requirements that go into building these
+
+360
+00:23:30,040 --> 00:23:33,000
+比如基于角色的访问控制 数据脱敏
+platforms, like role-based access control, data masking.
+
+361
+00:23:33,280 --> 00:23:37,500
+当你想要在大规模下运行时 这些同样非常关键
+That's also something that's super important that comes up when you want to operate at scale.
+
+362
+00:23:38,400 --> 00:23:45,780
+最后 你还要考虑通过某种 AI 代理或网关来加入自动追踪
+And then, lastly, a consideration for adding automatic tracing through some type of AI
+
+363
+00:23:45,780 --> 00:23:51,480
+这样大家根本没得选 必须对他们的大语言模型（LLM）做追踪
+proxy or gateway, so that people don't even have a choice but to trace their LLMs.
+
+364
+00:23:51,840 --> 00:23:57,920
+通过在评估平台里自动加入追踪 你就能实现非常集中化的治理
+You can govern very centrally by adding tracing automatically to your eval platform.
+
+365
+00:23:59,600 --> 00:24:01,080
+感谢大家的时间
+So, I appreciate the time.
+
+366
+00:24:01,400 --> 00:24:05,000
+我大概还剩一分二十秒可以用来回答问题
+I've got, like, a minute and 20 seconds left for questions.
+
+367
+00:24:05,300 --> 00:24:07,040
+我大概可以回答两个问题
+I can probably take two of them,
+
+368
+00:24:07,680 --> 00:24:08,920
+如果有人有问题的话
+if anyone has any questions.
+
+369
+00:24:09,700 --> 00:24:09,820
+好的
+Yes?
+
+370
+00:24:37,520 --> 00:24:43,140
+那么 Braintrust 具体是如何处理多模态的输入输出以及追踪的呢
+So, like, how does Braintrust specifically handle multimodal outputs and inputs and traces?
+
+371
+00:24:44,080 --> 00:24:46,220
+嗯 从技术细节上讲
+Yeah, we, like, just very technically,
+
+372
+00:24:46,980 --> 00:24:50,020
+我们会把这些东西放到某个对象存储里
+we put them in some object storage,
+
+373
+00:24:50,560 --> 00:24:54,400
+然后通过引用的方式 直接在追踪里展示出来
+reference them, and then display them directly into the trace.
+
+374
+00:24:54,660 --> 00:24:55,260
+所以如果你有
+So, if you have, like,
+
+375
+00:24:55,260 --> 00:24:56,860
+比如音频文件或视频文件
+an audio file or a video file,
+
+376
+00:24:57,140 --> 00:25:00,520
+在有人查看这条追踪时 就可以直接在追踪里播放
+you can play it in the trace when someone's reviewing the trace itself.
+
+377
+00:25:00,720 --> 00:25:03,120
+我们不希望人们为此离开平台
+We don't want people to have to exit the platform for that.
+
+378
+00:25:05,560 --> 00:25:08,840
+有可能，是的 问题是 提示管理是在 Braintrust 里吗
+It could be, yeah. The question was, is prompt management in Braintrust?
+
+379
+00:25:08,960 --> 00:25:11,220
+可以包含 也可以不包含
+It could be, or it doesn't have to be.
+
+380
+00:25:12,080 --> 00:25:12,200
+嗯
+Yeah.
+
+381
+00:25:15,660 --> 00:25:18,080
+好的 太棒了 非常感谢大家今天的聆听
+Okay. Perfect. Thank you so much for your attention today.

@@ -1,0 +1,1594 @@
+﻿1
+00:00:09,250 --> 00:00:12,818
+大家早上好，我叫 Gustaf，在 Y Combinator（YC）工作
+Good morning, everyone. My name is Gustaf and I work here at Y Combinator
+
+2
+00:00:12,818 --> 00:00:13,770
+担任 YC 合伙人
+as a group partner.
+
+3
+00:00:14,330 --> 00:00:16,050
+我从 2017 年就在这里了
+I've been here since 2017.
+
+4
+00:00:16,330 --> 00:00:21,690
+加入 YC 之前，我在 Airbnb 担任产品负责人，其实我在 2007 年也是一名 YC 创始人
+Before YC, I was a product lead at Airbnb and actually a YC founder back in 2007.
+
+5
+00:00:21,970 --> 00:00:26,210
+今天我要讲的是，如何和你的用户以及潜在客户交谈
+Today, I'm going to talk about how to talk to your users and your future customers.
+
+6
+00:00:26,810 --> 00:00:28,502
+这是我今天打算讲的内容
+Here's what I plan to cover today.
+
+7
+00:00:28,502 --> 00:00:32,490
+第一，为什么最好的创始人会在公司的整个生命周期里持续和用户交谈
+Why the best founders talk to the users throughout the lifetime of the company.
+
+8
+00:00:32,759 --> 00:00:35,559
+第二，如何找到你的用户，以及如何和他们交谈。第三
+2. How to find your users and how to talk to them. 3.
+
+9
+00:00:35,839 --> 00:00:39,158
+该问他们什么问题，不该问什么问题。第四
+What questions to ask them and what not to ask them. And 4.
+
+10
+00:00:39,158 --> 00:00:41,559
+如何把你的结论变成一个 MVP（最小可行产品）
+How to turn your conclusions into an MVP.
+
+11
+00:00:42,039 --> 00:00:45,079
+世界上大多数人对新创业公司如何诞生的理解
+Most people in the world have the idea on how new startups are formed.
+
+12
+00:00:45,199 --> 00:00:48,680
+完全是错的。他们以为新产品的点子，是创始人随手
+Completely wrong. They think ideas of new products is something the founders just
+
+13
+00:00:48,680 --> 00:00:49,335
+就想出来的
+come up with on a
+
+14
+00:00:49,335 --> 00:00:51,199
+也许是在某个慵懒的周日，或者深夜写代码的时候？
+lazy Sunday or a late night coding session?
+
+15
+00:00:51,919 --> 00:00:53,639
+你大概知道，事情并不是这样的
+You probably know it doesn't work this way.
+
+16
+00:00:53,890 --> 00:00:57,370
+你们看到的这个画面，是电影 The Social Network（《社交网络》）里的一幕
+This scene, as you can see here, is a scene from the Social Network movie.
+
+17
+00:00:57,530 --> 00:01:01,530
+这是部好电影，但它在 Facebook 到底怎么起步这件事上搞错了很多
+It's a great movie, but they got a lot of things wrong on how Facebook actually got started.
+
+18
+00:01:02,010 --> 00:01:05,612
+这位是 Brian Chesky。Brian 是 Airbnb 的联合创始人兼 CEO
+This is Brian Chesky. Brian is the co founder and CEO of Airbnb.
+
+19
+00:01:05,612 --> 00:01:07,690
+照片左边这位是 Amol
+On the left side of the photo is Amol.
+
+20
+00:01:08,250 --> 00:01:10,274
+Amol 是 Airbnb 上的第一位房客
+Amol was the very first guest on Airbnb.
+
+21
+00:01:10,274 --> 00:01:14,690
+在 Airbnb 刚上线的时候，他们真的一起在旧金山度过了一个周末
+They actually spent a weekend together in San Francisco when Airbnb kind of launched.
+
+22
+00:01:14,850 --> 00:01:17,961
+你注意到这张照片和上一张的区别了吗？
+You notice the difference between this photo and the previous photo? Well,
+
+23
+00:01:17,961 --> 00:01:19,393
+这张照片是真实的照片
+this photo actually is a real photo
+
+24
+00:01:19,393 --> 00:01:22,290
+里面包含了和一位真实客户的双向对话
+and includes a two way conversation with a real customer.
+
+25
+00:01:22,290 --> 00:01:25,970
+优秀的创始人在还没有产品的时候，就会和潜在客户交谈
+Great founders talk to future customers before they even have a product.
+
+26
+00:01:26,250 --> 00:01:30,634
+事实上，世界上最好的创始人，会直接向他们的用户学习
+In fact, the very best founders in the world Learned a directly from their users
+
+27
+00:01:30,634 --> 00:01:33,777
+贯穿公司的整个生命周期。好好体会这一点
+throughout the life of their company. Let that sink in.
+
+28
+00:01:33,777 --> 00:01:36,782
+如果你正确地找到了谁是你的用户
+If you have correctly identified who your users are,
+
+29
+00:01:36,782 --> 00:01:40,755
+你就应该在公司的整个生命周期里向他们学习
+you should learn from them throughout the lifetime of your company.
+
+30
+00:01:40,755 --> 00:01:44,240
+你也许会问为什么，因为用户和客户会让你保持诚实
+Why you might ask, users and customers will keep you honest.
+
+31
+00:01:44,720 --> 00:01:48,120
+他们是唯一真正付钱给你的利益相关者
+They are the only stakeholders actually paying you anything.
+
+32
+00:01:48,120 --> 00:01:50,800
+如果有谁会跟你说真话，那一定是他们
+If anyone will tell you the truth, it will be them.
+
+33
+00:01:51,210 --> 00:01:53,583
+所以我今天要讲的，就是如何把这件事做好
+So my talk today is about how to do this well.
+
+34
+00:01:53,583 --> 00:01:55,890
+我们再来讲一个 Airbnb 的故事
+So let's talk about another Airbnb story.
+
+35
+00:01:56,570 --> 00:02:00,874
+2010 年，我自己都记得这件事，Airbnb 的 CEO Brian Chesky
+In 2010, and I remember this myself, Brian Chesky, the CEO of Airbnb,
+
+36
+00:02:00,874 --> 00:02:03,290
+决定做一个实验
+he'll decide to launch an experiment.
+
+37
+00:02:03,850 --> 00:02:05,672
+他打算放弃自己的公寓
+He was going to give up his apartment
+
+38
+00:02:05,672 --> 00:02:08,890
+在接下来的几个月里，住进 50 个不同的 Airbnb 房源
+and live in 50 different Airbnbs over the next couple of months.
+
+39
+00:02:09,010 --> 00:02:12,210
+你可能会想，谁会去做这种事？太麻烦了
+You might ask yourself, why would anyone do that? So much hassle.
+
+40
+00:02:12,450 --> 00:02:15,637
+大多数读到这个实验相关文章的人（因为他确实公开宣布了）
+Most people who read the articles about this experiment, because he did announce it,
+
+41
+00:02:15,637 --> 00:02:16,490
+都没抓住重点
+they missed the point.
+
+42
+00:02:17,330 --> 00:02:19,930
+我个人记得当时觉得这挺疯狂的
+I personally remember this being kind of crazy.
+
+43
+00:02:20,170 --> 00:02:23,972
+通过这样做，Brian 能真真切切地和这 50 位
+By doing this, Brian will literally get a chance to talk to every one of these 50
+
+44
+00:02:23,972 --> 00:02:25,523
+房东交谈，在旅途中的每一天
+hosts each single day on his trip.
+
+45
+00:02:25,523 --> 00:02:28,570
+这对你的产品来说，是多么难得的诚实反馈来源
+And what an incredible source of honest feedback on your product.
+
+46
+00:02:28,770 --> 00:02:31,890
+没有 Airbnb 的房东，就没有今天的 Airbnb
+Without the Airbnb hosts, Airbnb would not exist. Exist today.
+
+47
+00:02:32,010 --> 00:02:35,690
+Brian、Joe 和 Nate 很早就做到的一件事，是深入理解房东的动机
+What Brian, Joe and Nate did so early is deeply understand the motivations.
+
+48
+00:02:37,080 --> 00:02:39,900
+以及他们的反馈。直到今天
+And the feedback from their hosts. Still today,
+
+49
+00:02:39,900 --> 00:02:44,200
+Brian 和 Joe 仍会接到房东打到他们私人手机上的电话
+Brian and Joe gets calls from hosts on their personal cell phone numbers.
+
+50
+00:02:44,680 --> 00:02:47,800
+我记得我在 Airbnb 上班的第一天，他们就跟我说了这件事
+I remember them telling me that on the first day I worked at Airbnb.
+
+51
+00:02:48,640 --> 00:02:51,930
+他们为什么这么做？因为那是他们早期放在网站上
+Why do they do that? Well, it's the number that they put on the website
+
+52
+00:02:51,930 --> 00:02:53,862
+并分享给所有房东的号码
+and share with all of their hosts early on.
+
+53
+00:02:53,862 --> 00:02:55,960
+他们没有躲在匿名邮箱后面
+They weren't hiding behind anonymous email.
+
+54
+00:02:56,320 --> 00:02:57,640
+他们想听到客户的声音
+They wanted to hear from the customers.
+
+55
+00:02:58,210 --> 00:03:00,450
+在当时，这看起来几乎是很激进的
+At the time, this seemed almost radical.
+
+56
+00:03:01,010 --> 00:03:04,517
+大多数创始人会把时间花在电脑前，试图找到
+Most founders would spend their time in front of the computers trying to find
+
+57
+00:03:04,517 --> 00:03:07,262
+像 Google Ads 这样可扩展的增长渠道。不幸的是
+scalable growth channels like Google Ads. Unfortunately,
+
+58
+00:03:07,262 --> 00:03:10,610
+大多数创始人至今仍没有和用户建立起私人联系
+most founders still don't build personal connections with their users.
+
+59
+00:03:10,690 --> 00:03:16,170
+如今，他们躲在 info@ 邮箱，或者 do-not-reply 邮箱后面
+Today, they hide behind info at emails or don't do not reply emails.
+
+60
+00:03:16,970 --> 00:03:20,618
+不信？你只要在自己的邮箱里搜一下 do-not-reply@
+You don't believe me? You should just do a search in your email for do not reply at
+
+61
+00:03:20,618 --> 00:03:23,560
+看看有多少人不愿意和自己的客户聊
+and see how many people don't want to talk to their customers.
+
+62
+00:03:23,960 --> 00:03:27,720
+那我们先从搞清楚该和谁聊开始
+So let's start by trying to figure out who I should talk to.
+
+63
+00:03:27,960 --> 00:03:32,400
+访谈你认识的人或者你人脉圈里的人总是最容易的
+It's always easy to interview people that you know or people who are in your network.
+
+64
+00:03:32,600 --> 00:03:35,224
+他们只是最有可能回应你
+They're simply the most likely to respond,
+
+65
+00:03:35,224 --> 00:03:39,160
+但为了不冒犯你，他们的回答可能没那么诚实
+but perhaps can be less honest in their answers to not offend you.
+
+66
+00:03:39,360 --> 00:03:43,610
+别害怕去联系他们，也别害怕被拒绝
+Don't be afraid of reaching out to them and don't be afraid of rejection.
+
+67
+00:03:43,970 --> 00:03:46,439
+第二类人是同事或前同事
+The second group here is co-workers or former co-workers.
+
+68
+00:03:46,439 --> 00:03:47,850
+他们可以是非常好的信息来源
+They can be a really great source.
+
+69
+00:03:48,090 --> 00:03:52,455
+他们可能对这个话题很了解，如果你是在为创业公司做软件
+They might know the topic really well and if you're building software for startups,
+
+70
+00:03:52,455 --> 00:03:56,010
+你就能轻松找到一个潜在用户
+you can easily navigate yourself to someone who's a potential user.
+
+71
+00:03:56,410 --> 00:04:00,620
+还有一种很常见的情况，你聊的早期用户在你的个人
+It's also very common that the early users you speak to are outside of your personal
+
+72
+00:04:00,620 --> 00:04:02,450
+圈子或同事圈子之外
+circles or your co-worker circles.
+
+73
+00:04:02,980 --> 00:04:06,042
+当问到 YC 创始人是怎么找到早期用户的
+When asking YC founders how they found their early users,
+
+74
+00:04:06,042 --> 00:04:09,359
+最常见的一些答案是 LinkedIn、Reddit 论坛
+some of the most common answers were LinkedIn, Reddit forums,
+
+75
+00:04:09,359 --> 00:04:12,740
+Slack 或 Discord 社区，有时还有线下活动
+Slack or discord communities, and sometimes in person events.
+
+76
+00:04:13,380 --> 00:04:18,420
+为了更好地说明这个过程，我要开一家新的模拟创业公司
+So to illustrate this process a little better, I'm going to start a new mock startup.
+
+77
+00:04:18,780 --> 00:04:20,740
+这不是真实的公司，只是我编出来的
+This is not a real company. I'm just making it up.
+
+78
+00:04:20,740 --> 00:04:23,980
+但我会像对待真实公司一样走一遍整个流程
+But I'm going to go through the process as I would have if this was a real company.
+
+79
+00:04:24,390 --> 00:04:27,323
+首先，我想搞清楚这个问题是不是真实存在的
+And first, I want to understand if the problem is real.
+
+80
+00:04:27,323 --> 00:04:29,018
+我这里有一个假设
+My hypothesis that I have here,
+
+81
+00:04:29,018 --> 00:04:32,087
+有点像我们在 YC 有时说的“想法空间”
+or kind of like the idea space that we sometimes call at YC,
+
+82
+00:04:32,087 --> 00:04:35,093
+就是企业想减少自己的碳排放
+is that companies want to reduce their carbon emissions,
+
+83
+00:04:35,093 --> 00:04:38,760
+但因为种种原因没有去做。所以我的计划很简单
+but for whatever reasons don't do that. So my plan is very simple.
+
+84
+00:04:38,880 --> 00:04:41,554
+第一，我想先访谈一些潜在客户。第二
+I want to first interview some potential customers. 2.
+
+85
+00:04:41,554 --> 00:04:45,101
+了解围绕碳排放的问题和动机；第三
+Learn about the problems and motivations around carbon emissions and 3,
+
+86
+00:04:45,101 --> 00:04:48,720
+试着搞清楚 MVP 会是什么样子。MVP 就是最小可行产品
+try to understand what an MVP will look like. MVP is a minimal viable product.
+
+87
+00:04:49,120 --> 00:04:53,855
+为了做这个调研，我打算先去联系创始人、CEO
+To do this research, I plan to start by reaching out to founders, CEOs,
+
+88
+00:04:53,855 --> 00:04:55,080
+以及创业公司的 CFO
+CFOs at startups.
+
+89
+00:04:56,010 --> 00:04:56,690
+或者更大的公司
+Or bigger companies.
+
+90
+00:04:57,450 --> 00:05:00,356
+我还会在 LinkedIn 上联系一些人
+I'm also going to reach out to people on LinkedIn
+
+91
+00:05:00,356 --> 00:05:03,989
+他们的头衔里带有 carbon、climate 或 sustainability 这类词
+that have titles like carbon or climate or sustainability,
+
+92
+00:05:03,989 --> 00:05:08,930
+基本上就是能提示我他们可能值得聊的词
+basically words that gives me a hint that they might be relevant people to talk to.
+
+93
+00:05:09,130 --> 00:05:12,530
+那我想了解什么呢？首先，我想搞清楚
+So what am I looking to learn? Well, first, I'm trying to understand,
+
+94
+00:05:12,530 --> 00:05:15,570
+他们所在的公司在不在意自己的碳排放？
+do the company that they work for care about their carbon emissions?
+
+95
+00:05:16,310 --> 00:05:20,950
+第二，如果在意，为什么在意；如果不在意，又为什么不在意？
+And 2, why do they care and why do they not care if they don't care?
+
+96
+00:05:21,510 --> 00:05:26,510
+第三，公司里谁可能最在意这件事，为什么？
+And 3, who in that company might be the one who cares the most about this and why?
+
+97
+00:05:26,510 --> 00:05:29,590
+好，这里有两个联系信息的例子
+All right, so, so here are two examples of outreach messages.
+
+98
+00:05:30,150 --> 00:05:33,910
+第一个是发给一位曾在 Airbnb 共事过的 CFO 的 LinkedIn 消息
+So the first one is a LinkedIn message to a CFO who I used to work with at Airbnb.
+
+99
+00:05:34,150 --> 00:05:37,126
+消息大概是这样，首先我做自我介绍
+The message will go something like this, first, I introduce myself.
+
+100
+00:05:37,126 --> 00:05:39,110
+我提一下我们在 Airbnb 共事的经历
+I mention something about our time at Airbnb.
+
+101
+00:05:39,310 --> 00:05:41,954
+然后我说我在做一个新项目，简单描述一下
+Then I say I'm starting a new project. Briefly describe it,
+
+102
+00:05:41,954 --> 00:05:43,141
+但不要太详细
+but not too much in detail,
+
+103
+00:05:43,141 --> 00:05:45,380
+然后就约一个 20 分钟的电话或视频通话
+and I just ask for a 20 minute phone call or a video call.
+
+104
+00:05:45,780 --> 00:05:49,340
+就这样。这是另一个例子，发给一个我不认识的人
+That's it. And here's another example of a message to someone I don't know.
+
+105
+00:05:49,700 --> 00:05:52,940
+同样是在 LinkedIn 上，发给我之前提到的那类人
+It's also on LinkedIn to the same group that I mentioned earlier.
+
+106
+00:05:53,540 --> 00:05:55,580
+内容类似，但针对的是我不认识的人
+It's similar but geared towards people I don't know.
+
+107
+00:05:55,660 --> 00:05:58,340
+所以消息和语气都会稍有不同
+So the message will and the tone will be a little bit different.
+
+108
+00:05:58,780 --> 00:06:03,020
+好，一旦我接通电话或视频
+All right, so one, once I get on the phone or once I get on the video call,
+
+109
+00:06:03,020 --> 00:06:07,040
+我们来聊聊怎么真正去访谈潜在客户
+let's talk about how to actually interview potential customers.
+
+110
+00:06:07,480 --> 00:06:11,051
+首先，你要确保这些访谈是通过视频通话
+So first you want to make sure that these interviews are over video calls,
+
+111
+00:06:11,051 --> 00:06:12,280
+电话或者面对面进行的
+phone calls or in person.
+
+112
+00:06:12,920 --> 00:06:18,920
+五分钟的视频访谈能让你学到的，远比 500 份甚至 5000 份问卷回答还多
+You can learn a lot more from a five minute video interview than 500 or 5000 survey responses.
+
+113
+00:06:20,040 --> 00:06:22,640
+其次，你要和受访者建立一些融洽的关系
+Secondly, you want to build some rapport with the interviewee.
+
+114
+00:06:23,200 --> 00:06:25,063
+他们要回答的问题
+They're going to give you answers to questions
+
+115
+00:06:25,063 --> 00:06:26,640
+可能之前从没有人问过他们
+that maybe no one has asked them before.
+
+116
+00:06:26,720 --> 00:06:28,282
+所以你要确保他们能信任你
+So you need to make sure that they can trust you
+
+117
+00:06:28,282 --> 00:06:29,680
+并且在这种情境下感到自在
+and feel comfortable in this situation.
+
+118
+00:06:29,920 --> 00:06:32,997
+接下来，这里最重要的一点，最最
+Next, the most important thing here, the most, most,
+
+119
+00:06:32,997 --> 00:06:37,754
+重要的一点，就是不要过早介绍你的想法，最好等到通话
+most important thing here is to not introduce your idea till maybe at the end of the
+
+120
+00:06:37,754 --> 00:06:42,160
+快结束时再说，甚至干脆不说，太早说会让他们的回答产生偏差
+call or maybe not at all, doing this too early can bias them in their answers.
+
+121
+00:06:42,720 --> 00:06:47,240
+你在这次访谈里的角色是倾听，而不是说话
+Your role here in this interview is to listen, not to talk.
+
+122
+00:06:48,080 --> 00:06:50,380
+有一些很好的技巧，能让人愿意敞开心扉
+There are some great techniques to get people to open up
+
+123
+00:06:50,380 --> 00:06:51,680
+谈谈他们遇到的问题
+and talk about their problems.
+
+124
+00:06:51,920 --> 00:06:54,960
+其中一个好方法，就是提开放式追问
+And one good one is to ask follow up questions that are open ended.
+
+125
+00:06:55,600 --> 00:07:00,227
+比如“跟我说说那件事”。如果你不录下这次访谈
+For example, tell me about that. If you're not recording the interview,
+
+126
+00:07:00,227 --> 00:07:02,824
+至少也要尽可能多做笔记
+you should at least take notes as much as you can.
+
+127
+00:07:02,824 --> 00:07:05,746
+反正你迟早要把录音整理成笔记
+You need to translate the recordings to notes anyway,
+
+128
+00:07:05,746 --> 00:07:08,190
+所以不如在访谈现场就直接记笔记
+so you might as well take notes in the in the actual interview.
+
+129
+00:07:08,390 --> 00:07:13,287
+我这里放一个示例视频，演示我这家碳排放公司的一位潜在客户
+I'm gonna play an example video here on how a potential customer for my carbon
+
+130
+00:07:13,287 --> 00:07:18,030
+以及那段对话会是什么样子。嗨，你好吗？
+emission company and how that conversation would go like, hi, how are you?
+
+131
+00:07:18,590 --> 00:07:22,950
+自从我们在 Airbnb 一起共事，已经很久了。是啊，很高兴见到你
+It's been a long time since we worked together at Airbnb. Yeah, great to see you.
+
+132
+00:07:23,840 --> 00:07:27,363
+不知道我有没有跟你说过，我在考虑再创办一家公司
+So I don't know if I told you this, but I'm thinking about starting another company,
+
+133
+00:07:27,363 --> 00:07:30,019
+我有几个问题想问问你，关于这个我感兴趣的领域
+and I have a couple questions I wanted to ask you about this area
+
+134
+00:07:30,019 --> 00:07:33,224
+呃，你们公司 Monteview Inc
+that I'm interested in. Uh, does your company, Monteview Inc,
+
+135
+00:07:33,224 --> 00:07:35,320
+你们在意自己的碳排放吗？
+do you care about your carbon emissions?
+
+136
+00:07:36,400 --> 00:07:40,960
+我们确实在意，我们请了一位顾问，每年做一份 PDF 报告
+We do actually care, and we use a consultant who creates these PDF reports once a year.
+
+137
+00:07:42,160 --> 00:07:44,720
+有意思。呃，那份报告你们拿来做什么？
+Interesting. Uh, what do you do with a report?
+
+138
+00:07:45,680 --> 00:07:49,080
+我是说，很遗憾，目前我们其实没怎么根据它采取行动
+I mean, right now I don't think we really take much action on it, unfortunately.
+
+139
+00:07:50,200 --> 00:07:51,080
+什么？为什么不呢？
+What? Why not?
+
+140
+00:07:51,840 --> 00:07:54,240
+就是很难知道那些信息该怎么用
+It's just really hard to know what to do with the information.
+
+141
+00:07:55,000 --> 00:07:59,160
+那些信息太密集了，还用了一些我们看不太懂的词
+The information is really dense and uses words we don't really understand.
+
+142
+00:08:00,120 --> 00:08:01,080
+跟我多说说这个
+Tell me more about that.
+
+143
+00:08:01,960 --> 00:08:03,560
+是这样，我们请了这位顾问
+Well, we hired this consultant.
+
+144
+00:08:04,320 --> 00:08:07,789
+他们让我们在一个 Word 文档里填写信息
+They asked us to fill out this word DOC with information,
+
+145
+00:08:07,789 --> 00:08:11,480
+但里面填进去的很多数据，呃，好像并不准确
+but much of the data that goes into it, uh, seems inaccurate.
+
+146
+00:08:11,640 --> 00:08:15,680
+我就觉得我们还得再找个专家，来搞清楚这些数据该怎么用
+And I just feel like we need another expert to figure out what to do with the data.
+
+147
+00:08:16,920 --> 00:08:22,320
+明白，明白。呃，但对你们公司来说，追踪碳排放到底为什么重要？
+Got it. Got it. Um, but why is it important for your company at all to track carbon emission?
+
+148
+00:08:23,200 --> 00:08:26,863
+是这样，我们的客户一直在问我们的排放情况，我们的银行也在问
+Well, our customers have been asking about our emissions and so has our bank
+
+149
+00:08:26,863 --> 00:08:28,200
+就是我们想申请新贷款的时候
+when we try to get new loans.
+
+150
+00:08:29,000 --> 00:08:31,480
+呃，我觉得还有一些法规也快出台了
+Um, and I think there's some regulations coming up, too.
+
+151
+00:08:32,330 --> 00:08:36,210
+你注意到了吗，我自始至终都没有介绍产品或解决方案
+You notice here how I never introduced a product or a solution.
+
+152
+00:08:36,650 --> 00:08:40,250
+我只是提问，去了解 Amy 遇到的问题
+I only ask questions to learn about the problem that Amy is having.
+
+153
+00:08:40,330 --> 00:08:41,890
+我甚至都没说我打算做什么产品
+I don't even say what I'm going to build.
+
+154
+00:08:42,570 --> 00:08:45,650
+你就应该这么做。这里有一些非常具体的问题
+That's how you want to do it. Here are some very specific questions
+
+155
+00:08:45,650 --> 00:08:47,330
+可以用在你的访谈里
+that you can use in your interviews.
+
+156
+00:08:47,810 --> 00:08:53,302
+1. 跟我说说你现在是怎么做 X 的。X 当然是指某个具体的问题、某个任务
+1. Tell me how you do X today. By X, of course, I'm referring to a specific problem, a task,
+
+157
+00:08:53,302 --> 00:08:55,959
+或者你想实现的某个目标。2.
+or a goal that you are trying to solve. 2.
+
+158
+00:08:55,959 --> 00:08:59,180
+在做 X 这件事上，最难的是什么？3.
+What is the hardest thing you are doing about X? 3.
+
+159
+00:08:59,580 --> 00:09:03,600
+为什么难？4. 你多久要做一次 X？5.
+Why is it hard? 4. How often do you have to do X? 5.
+
+160
+00:09:03,760 --> 00:09:05,820
+对你们公司来说，做 X 为什么重要？
+Why is it important for your company to do X?
+
+161
+00:09:05,820 --> 00:09:07,880
+一定要把这个问题深挖下去
+Make sure you dive deep into this question.
+
+162
+00:09:07,920 --> 00:09:10,320
+理解他们的动机在这里会非常关键
+Like understanding their motivation is going to be critical here.
+
+163
+00:09:10,400 --> 00:09:13,920
+6. 你现在是怎么自己解决这个问题的？
+And 6, what do you do to solve this problem for yourself today?
+
+164
+00:09:14,080 --> 00:09:17,360
+弄清楚他们实际在做什么，非常重要
+It's really important to understand what they're doing.
+
+165
+00:09:18,280 --> 00:09:21,480
+如果你能亲眼看着他们操作，那就更好了
+Now, if you can watch them do this, that's even better.
+
+166
+00:09:21,640 --> 00:09:25,953
+如果他们能在视频通话里共享屏幕，或者在访谈时给你看他们的电脑
+If they can screen share during the video call or show you their laptop
+
+167
+00:09:25,953 --> 00:09:30,861
+让你看看他们实际是怎么拿到那份 PDF 报告的
+as you're doing the interview and show you how they actually get the PDF report,
+
+168
+00:09:30,861 --> 00:09:33,240
+他们拿它做什么，它长什么样
+what they do with it, how it looks like.
+
+169
+00:09:34,200 --> 00:09:37,839
+那是最理想的状态。你要深入理解他们的行为
+That's the ideal state. You want to deeply understand their behavior,
+
+170
+00:09:37,839 --> 00:09:40,230
+不只是他们说了什么，而是他们做了什么
+not just what they're saying but what they're doing,
+
+171
+00:09:40,230 --> 00:09:42,240
+因为改变行为会很难
+because changing the behavior will be hard.
+
+172
+00:09:42,400 --> 00:09:46,400
+你也可以做追问，请一定学会怎么用好这些问题
+You can also ask follow up questions and please learn how to make use of these ones.
+
+173
+00:09:47,240 --> 00:09:50,680
+很难指望别人在一个问题的一个回答里就把一切都说清楚
+It's very hard to get someone to say everything in just one answer to one question.
+
+174
+00:09:50,960 --> 00:09:54,440
+要习惯多问这样的问题，比如“你这么说是什么意思？”
+Get comfortable with asking questions like, what do you mean by that?
+
+175
+00:09:54,640 --> 00:09:58,720
+或者“你能多说说吗？”，又或者“这对你为什么重要？”
+Or can you tell me more about that or why is that important to you?
+
+176
+00:09:58,960 --> 00:10:01,731
+这里有一些你不该问的问题。比如说
+Here are some questions that you should not ask. Like,
+
+177
+00:10:01,731 --> 00:10:04,440
+有些做法会让访谈偏离正轨
+there are ways you can kind of derail this interview.
+
+178
+00:10:05,130 --> 00:10:06,250
+“你会用我们的产品吗？”
+Will you use our product?
+
+179
+00:10:06,890 --> 00:10:08,300
+他们大概率会说会
+They're probably going to say yes,
+
+180
+00:10:08,300 --> 00:10:10,730
+但那个回答对你其实毫无价值
+but they're not going to mean anything to you in that answer.
+
+181
+00:10:11,490 --> 00:10:14,530
+第二，哪些功能能让产品 X 变得更好？
+Two, which features would make product X better?
+
+182
+00:10:15,410 --> 00:10:17,810
+记住，用户的任务是告诉你问题所在
+Remember, their job is to tell you about the problem.
+
+183
+00:10:18,450 --> 00:10:21,410
+你的任务是思考用哪些功能来解决这个问题
+Your job is to think about what features to solve that problem.
+
+184
+00:10:21,930 --> 00:10:25,530
+所以让他们做你该做的事，其实帮不了你
+So asking them about your job isn't really going to help you.
+
+185
+00:10:25,690 --> 00:10:28,780
+是非题对你来说也没太大帮助
+Yes and no questions, that's not really that helpful for you.
+
+186
+00:10:28,900 --> 00:10:35,180
+你希望他们展开讲，给你尽可能多的具体、真实的例子
+You want them to explain and give you as many concrete and real examples as possible.
+
+187
+00:10:35,300 --> 00:10:38,220
+所以只是简单地问是非题并不理想
+So just simply asking yes no questions is not ideal here.
+
+188
+00:10:38,340 --> 00:10:43,460
+第四，在你看来，更好的产品 X 会是什么样？
+And 4, how would a better product X look like to you?
+
+189
+00:10:43,500 --> 00:10:46,540
+在你看来，更好的碳排放统计软件会是什么样？
+How would a better carbon emission counting software look like to you?
+
+190
+00:10:47,460 --> 00:10:50,048
+很多用户不是产品开发者，也不是软件工程师
+Many of the people aren't product developers. They're not software engineers.
+
+191
+00:10:50,048 --> 00:10:50,820
+他们不是设计师
+They're not designers.
+
+192
+00:10:50,900 --> 00:10:53,390
+他们不是产品经理，这不是他们的工作
+They're not product managers. This is not their job.
+
+193
+00:10:53,990 --> 00:10:55,390
+他们的工作是另一回事
+Their job is to do a different job.
+
+194
+00:10:56,230 --> 00:11:00,830
+是你在努力理解他们工作中难在哪里
+You are the one trying to understand what is the challenging part about their job.
+
+195
+00:11:01,870 --> 00:11:06,070
+最后，同时问两个问题会让他们困惑
+And finally asking two questions at the same time, it's going to confuse them.
+
+196
+00:11:06,190 --> 00:11:07,190
+也会让你得到的答案变得混乱
+It's going to confuse your answers.
+
+197
+00:11:07,310 --> 00:11:11,797
+当你急着想要答案时，很容易犯这个毛病
+So this is when you're eager to get, get answers, it's very easy to do this,
+
+198
+00:11:11,797 --> 00:11:13,288
+但要尽量避免
+this thing, but try to avoid it.
+
+199
+00:11:13,288 --> 00:11:16,040
+不过我想强调我这里提到的其中一点
+But I want to highlight one of the things I mentioned here.
+
+200
+00:11:16,280 --> 00:11:17,972
+访谈中有一个很大的风险
+There's one big danger during interviews,
+
+201
+00:11:17,972 --> 00:11:20,040
+那就是只关注功能，而不是问题
+and that is to focus on features instead of problems.
+
+202
+00:11:20,800 --> 00:11:22,320
+你很自然会这么做
+It's very natural for you to do that.
+
+203
+00:11:23,480 --> 00:11:26,600
+你的大脑在想各种解决这个问题的办法
+Your brain is thinking through all the ways you're going to solve this problem.
+
+204
+00:11:27,320 --> 00:11:30,870
+但你在这次访谈里真正要做的，是深入理解
+But really what you're here for during this interview is to deeply understand the
+
+205
+00:11:30,870 --> 00:11:33,480
+问题，而不是想出解决方案。那是留给
+problems, not actually come up with solutions. That's for.
+
+206
+00:11:34,699 --> 00:11:38,856
+另一个环节的。用户通常能提出好问题
+For a separate event. So users generally have good problems,
+
+207
+00:11:38,856 --> 00:11:41,219
+但给出的解决方案通常很糟
+but also generally bad solutions.
+
+208
+00:11:41,699 --> 00:11:45,149
+我举两个具体例子。Gmail 早期
+So I'll give you two specific examples. So early days of Gmail,
+
+209
+00:11:45,149 --> 00:11:48,067
+用户要求 Gmail 的创始人 Paul Buchheit
+users were asking Paul Buchheit, the founder of Gmail,
+
+210
+00:11:48,067 --> 00:11:50,783
+能在同一个屏幕上同时看到收件箱
+to view both the inbox and the actual email
+
+211
+00:11:50,783 --> 00:11:53,499
+和他们正在读的那封邮件
+that they were reading on the same screen.
+
+212
+00:11:53,779 --> 00:11:57,748
+他们为什么会这么要求？原因很简单，就是 Gmail 太慢了
+Now, why would they ask for that? Well, reason was simply that Gmail was too slow
+
+213
+00:11:57,748 --> 00:12:01,520
+用户不想等收件箱里每封邮件都加载出来
+and people did not want to wait to load each of the emails in the inbox.
+
+214
+00:12:01,560 --> 00:12:02,800
+他们想同时看到所有内容
+They want to see everything at the same time.
+
+215
+00:12:03,080 --> 00:12:07,250
+同样，在 Airbnb 早期，很多房客想拿到
+Similarly, in early Airbnb, a lot of guests want to have the phone numbers of the
+
+216
+00:12:07,250 --> 00:12:08,640
+房东的电话号码，好打电话给他们
+host so they can call them.
+
+217
+00:12:09,400 --> 00:12:10,978
+我们心想，你们为什么需要这个？
+We're like, why do you need that?
+
+218
+00:12:10,978 --> 00:12:13,960
+结果发现，是他们并不完全信任这个平台
+It just turned out that they didn't fully trust the platform.
+
+219
+00:12:14,120 --> 00:12:16,829
+就是说我们在 Airbnb 上没有展现出足够的信任感
+Like we had not displayed enough trust in Airbnb,
+
+220
+00:12:16,829 --> 00:12:20,332
+所以他们需要在真正下单前先了解房东
+so they needed to feel comfortable with getting to know the host
+
+221
+00:12:20,332 --> 00:12:23,679
+感到安心。其次
+before actually making the booking. Secondly,
+
+222
+00:12:23,679 --> 00:12:28,700
+用户对任何额外功能几乎都没有动力说不
+users don't have incentive to say no to really any additional features.
+
+223
+00:12:28,860 --> 00:12:30,930
+如果你问要不要这个功能、那个功能、另一个功能
+If you ask for this feature or this feature or this feature,
+
+224
+00:12:30,930 --> 00:12:32,620
+他们大概什么都会说要，对吧？
+they'll probably say yes to everything, right?
+
+225
+00:12:32,860 --> 00:12:35,596
+但你才是负责排优先级的人
+You, however, are in charge of the prioritizations
+
+226
+00:12:35,596 --> 00:12:38,842
+而且你比他们更有动力去搞清楚
+and you have a lot more incentives than they have to figure out
+
+227
+00:12:38,842 --> 00:12:41,260
+哪些功能才是最重要的
+which are the most important of the features.
+
+228
+00:12:41,840 --> 00:12:43,357
+那我们来聊聊下一步
+So let's talk about next steps.
+
+229
+00:12:43,357 --> 00:12:46,040
+假设你已经做了五到十次这样的用户访谈
+So you've done your five or 10 of these user interviews.
+
+230
+00:12:46,400 --> 00:12:49,800
+你也记好了笔记。我们来聊聊接下来该怎么做
+You've written down your notes. Let's let's talk about what you do then.
+
+231
+00:12:50,200 --> 00:12:52,720
+第一，确保你每一次访谈都有笔记
+1, you want to make sure you have notes from all each of the interviews.
+
+232
+00:12:53,040 --> 00:12:56,956
+你可以用便利贴或类似的软件来整理这些收获
+You can use sticky notes or some similar software to organize these learnings.
+
+233
+00:12:56,956 --> 00:12:58,973
+你可以把它们归到不同的类别里
+You can bucket them in different buckets
+
+234
+00:12:58,973 --> 00:13:00,966
+每一类对应不同的问题，然后看看
+that kind of describes different problems and see
+
+235
+00:13:00,966 --> 00:13:03,054
+哪一个才是真正最重要的
+which one is actually the thing that matters the most
+
+236
+00:13:03,054 --> 00:13:05,158
+然后写下你的结论
+and then you want to write down your conclusions.
+
+237
+00:13:05,158 --> 00:13:06,800
+你从这一切中学到了什么？
+What are you learning from all of this?
+
+238
+00:13:07,070 --> 00:13:10,737
+你要用所有这些信息，提出一个关于解决方案的假设
+You want to use all of this information to create a hypothesis of what the solution
+
+239
+00:13:10,737 --> 00:13:13,670
+猜测这个问题的解法可能是什么。别把这个过程想得太复杂
+to this problem might be. Don't over intellectualize this process.
+
+240
+00:13:14,110 --> 00:13:16,603
+其实，你只想尽快开始设计 MVP
+Really, you just want to start designing MVP as fast as you can,
+
+241
+00:13:16,603 --> 00:13:19,720
+但你要确保在决定 MVP 时手里有准确的信息
+but you want to make sure you have accurate information when you decide the MVP
+
+242
+00:13:19,720 --> 00:13:21,590
+然后再用同一批用户去测试它
+and then you want to test it with the same users.
+
+243
+00:13:21,950 --> 00:13:24,670
+弄清楚你要解决的问题是否真的有价值，也很重要
+It's also important to know if the problem you're solving is actually valuable.
+
+244
+00:13:25,190 --> 00:13:29,381
+我的意思是，人们会看重这个问题的解决方案
+What I mean by this is that people will value the solution to the problem
+
+245
+00:13:29,381 --> 00:13:33,280
+而且愿意为它付钱，或者说这个问题本身，解决它是有价值的
+and enough to pay for it or the problem itself. Solving the problem is valuable.
+
+246
+00:13:33,720 --> 00:13:35,920
+下面是几个判断它是否有价值的好方法
+So here are some good tips to determine if it is.
+
+247
+00:13:36,280 --> 00:13:39,400
+第一，现在有没有人为这个领域的其他解决方案付钱？
+1, are people paying money for other solutions in the space today?
+
+248
+00:13:39,720 --> 00:13:42,537
+那些为碳排放核算做 PDF 报告的人
+Are the people that make the PDF reports for carbon emissions accounting,
+
+249
+00:13:42,537 --> 00:13:43,400
+他们能拿到钱吗？
+are they getting paid?
+
+250
+00:13:43,560 --> 00:13:44,642
+如果他们能拿到钱
+Well, if they are getting paid,
+
+251
+00:13:44,642 --> 00:13:46,640
+那就是个好迹象，说明这大概是件有价值的事
+that's a good sign that this is probably a valuable thing.
+
+252
+00:13:47,080 --> 00:13:49,000
+人们是不是已经有了解决这个问题的办法？
+Do people already have solutions to this problem?
+
+253
+00:13:49,200 --> 00:13:52,836
+而且他们对现有办法很满意，哪怕在你看来很简陋，比如
+They are very happy with, even though it might appear basics to you, for example,
+
+254
+00:13:52,836 --> 00:13:56,472
+像 Excel 或 Google 表格，其实是很多很多创业公司的竞争对手
+like Excel or Google spreadsheets is actually competitors to many, many, many,
+
+255
+00:13:56,472 --> 00:13:59,240
+数以百计的创业公司，而且是相当强劲的对手
+many hundreds of startups, actually quite a formidable one.
+
+256
+00:13:59,340 --> 00:14:01,570
+要让别人放弃 Excel 或 Google 表格
+To move someone off Excel or Google spreadsheet,
+
+257
+00:14:01,570 --> 00:14:04,780
+你得让你方案的体验好上一大截
+you need to make the experience of your solution dramatically better.
+
+258
+00:14:05,020 --> 00:14:08,029
+他们不会每月付你几百美元，去买一个
+They're not going to pay you hundreds of dollars a month for something they can
+
+259
+00:14:08,029 --> 00:14:10,020
+用 Google 表格或 Excel 几乎一样轻松就能做的东西
+almost as easily do in Google Spreadsheet or Excel.
+
+260
+00:14:10,180 --> 00:14:13,820
+第三，你要评估卖给这类人群有多容易
+And 3, you want to evaluate how easy it is to sell to this audience.
+
+261
+00:14:14,140 --> 00:14:17,100
+这也是我很爱和合作的公司一起做的一件事
+And this is one thing that I like to do a lot with the companies I work with.
+
+262
+00:14:17,260 --> 00:14:21,383
+比如，卖给水管工或承包商，出了名地比
+For example, selling to plumbers or contractors is notoriously difficult compared to
+
+263
+00:14:21,383 --> 00:14:22,400
+卖给创业公司难
+selling to startups.
+
+264
+00:14:22,560 --> 00:14:26,711
+前两类人很少更换他们的工具或软件
+The first two groups just don't change their tools or the software very often,
+
+265
+00:14:26,711 --> 00:14:29,840
+而创业公司则随时愿意尝试新东西
+versus startups are open to trying new things all the time.
+
+266
+00:14:30,360 --> 00:14:32,457
+所以就算你解决的问题很有价值
+So if you are solving a problem that's valuable,
+
+267
+00:14:32,457 --> 00:14:35,604
+你还是得想想，卖给这类特定人群
+you still have to think about whether it's going to be easy to sell to this
+
+268
+00:14:35,604 --> 00:14:38,327
+是否容易。一旦你有了 MVP 原型
+particular audience. Once you have an MVP prototype,
+
+269
+00:14:38,327 --> 00:14:40,142
+你可以先把它拿给用户看
+you can start by showing it to users,
+
+270
+00:14:40,142 --> 00:14:43,680
+哪怕它只是 InVision 之类做的设计原型
+even if it's just a design prototype in envision or something like that.
+
+271
+00:14:43,800 --> 00:14:44,520
+你能直接点着走一遍
+You can just click through.
+
+272
+00:14:45,040 --> 00:14:46,800
+我们在 Airbnb 时经常这么做
+We used to do this at Airbnb all the time.
+
+273
+00:14:47,320 --> 00:14:50,379
+我们会下楼到办公室里，找一些人
+We'd go downstairs in our in our office and we'd find some people
+
+274
+00:14:50,379 --> 00:14:54,247
+那些在等面试、或者在等咖啡之类的人
+that were waiting for an interview or waiting for getting a coffee or something,
+
+275
+00:14:54,247 --> 00:14:56,944
+然后把 app 的最新版本拿给他们看
+and we'd just show them the latest version of, of the app.
+
+276
+00:14:56,944 --> 00:14:59,240
+这会是我们手机上的一个 InVision 原型
+This would be a envision prototype on our phone.
+
+277
+00:14:59,280 --> 00:15:02,760
+大概就是把手机递给他们，展示给他们看
+It would be like hand them our phone and, and, and show it to them.
+
+278
+00:15:03,000 --> 00:15:04,640
+这些东西我们甚至还没做出来
+This is stuff that we haven't even built yet.
+
+279
+00:15:04,920 --> 00:15:10,480
+用这个方法的关键，是不要告诉他们该怎么做
+The key thing, if you're doing this tactic is to not tell them what to do.
+
+280
+00:15:10,880 --> 00:15:13,440
+不要告诉他们该怎么做，只要看着他们自己去摆弄
+Do not tell them what to do. Just watch them play around with it.
+
+281
+00:15:13,480 --> 00:15:17,771
+你可以给他们一个具体目标，比如在 Airbnb 上订一次房，或者
+You can tell them a specific goal like try to make a booking on Airbnb or try to do
+
+282
+00:15:17,771 --> 00:15:20,675
+在 Airbnb 上按日期搜索之类的
+a search with dates on Airbnb or something like that,
+
+283
+00:15:20,675 --> 00:15:23,580
+但不要告诉他们每个界面到底该怎么操作
+but do not tell them exactly how to solve each screen.
+
+284
+00:15:23,700 --> 00:15:25,280
+记住，如果这是个真实的产品
+Remember, if this was a real product,
+
+285
+00:15:25,280 --> 00:15:27,980
+你不会站在他们旁边给他们出主意
+you wouldn't be standing there next to them to give them advice.
+
+286
+00:15:28,300 --> 00:15:30,297
+做这件事时，还有一个好技巧
+Another good trick when you're doing this,
+
+287
+00:15:30,297 --> 00:15:33,236
+无论你是在旁听，还是在录下他们的操作
+either when you're listening or having them or recording them,
+
+288
+00:15:33,236 --> 00:15:35,788
+就是让他们边操作边把想法说出来
+is to have them speak their mind while they're doing it,
+
+289
+00:15:35,788 --> 00:15:39,208
+让他们准确说出每一步在想什么
+have them describe exactly what they're thinking on each of the steps.
+
+290
+00:15:39,208 --> 00:15:41,063
+也许是他们正在读的那些字
+Maybe the words that they're reading,
+
+291
+00:15:41,063 --> 00:15:44,062
+也许这能提示你，哪些词他们看得懂
+maybe that will give you hints of what words that they understand and
+
+292
+00:15:44,062 --> 00:15:48,060
+哪些词看不懂，或者某个界面是什么意思、有什么用
+which words they don't understand or maybe what a specific screen means or what purpose is.
+
+293
+00:15:48,340 --> 00:15:50,882
+等你做完一批这样的访谈
+And after you've done a bunch of these interviews
+
+294
+00:15:50,882 --> 00:15:52,928
+或许还有一些 MVP 原型测试环节之后
+and then maybe MVP prototype sessions,
+
+295
+00:15:52,928 --> 00:15:57,020
+让这些受访者全程参与进来，是个很好的主意
+it's a great idea to keep these interviewees involved throughout the process.
+
+296
+00:15:57,980 --> 00:16:01,666
+很多 YC 公司常用的一个做法是，建一个 Slack
+One common idea that a lot of YC companies are using is to create a Slack instance
+
+297
+00:16:01,666 --> 00:16:03,620
+或者和客户建一个 WhatsApp 群
+or a WhatsApp group with their customers.
+
+298
+00:16:04,340 --> 00:16:06,820
+你要让他们觉得自己很特别，对吧？
+Now, you want to make them feel special, right?
+
+299
+00:16:06,940 --> 00:16:10,938
+你要让他们觉得自己能独家、实时地接触到那个未来的
+You want to make them feel like they have exclusive active access to the future
+
+300
+00:16:10,938 --> 00:16:14,678
+会改变世界的产品。所以要想想你的措辞
+world changing product. So think about how you are wording or, or,
+
+301
+00:16:14,678 --> 00:16:18,510
+或者你怎么告诉他们你要把他们拉进这个 WhatsApp 群
+or how you communicate this WhatsApp group that you're adding them to.
+
+302
+00:16:18,590 --> 00:16:21,710
+在开发推进过程中，持续把原型展示给他们看，是个很好的做法
+It's a great idea to keep showing them your prototype as they are progressing.
+
+303
+00:16:21,910 --> 00:16:24,479
+这样能给他们一种专属感
+Then kind of give them this exclusive feeling
+
+304
+00:16:24,479 --> 00:16:26,846
+觉得"我是第一个看到这个产品的人"
+that I'm the first one to see this product,
+
+305
+00:16:26,846 --> 00:16:29,550
+看着产品一路演进，也看着你在做
+product as it's progressing and also as you are.
+
+306
+00:16:30,730 --> 00:16:33,984
+根据他们说的话做出回应，你可以上线一个新的
+Reacting to things that they're saying you can ship a new,
+
+307
+00:16:33,984 --> 00:16:36,696
+一个新的界面、新的产品版本
+a new screen with a new version of the product and
+
+308
+00:16:36,696 --> 00:16:38,730
+这会建立起你和他们之间的信任
+that builds trust with it with them.
+
+309
+00:16:39,210 --> 00:16:41,450
+他们会知道，你对他们的反馈反应非常快
+They now know that you react to their feedback very fast.
+
+310
+00:16:41,690 --> 00:16:46,410
+最后，有些人会很喜欢认识跟他们做同样事情的人
+Finally, some of them will love connecting with other people doing the same thing as they are.
+
+311
+00:16:47,130 --> 00:16:51,410
+他们平时很少有这种机会，而你正是促成这件事的人
+They don't get to do this very often. And you are the one enabling that.
+
+312
+00:16:51,450 --> 00:16:55,770
+如果你做完这些步骤，就能从未来的用户那里收集到正确的信息
+If you do all these steps, you will collect the right information from your future users.
+
+313
+00:16:55,930 --> 00:16:59,382
+你会让他们持续参与进来，并把信息转化成……
+You will keep them involved and translate information and
+
+314
+00:16:59,382 --> 00:17:03,610
+这能让你把信息转化成第一个原型和 MVP
+that allow you to translate information into a first prototype and MVP.
+
+315
+00:17:04,010 --> 00:17:06,290
+总结一下，这就是我今天讲的内容
+So to summarize, here's what I covered today.
+
+316
+00:17:06,530 --> 00:17:09,690
+为什么最好的创始人会在公司整个生命周期里都和用户交谈
+Why the best founders talk to the users throughout the lifetime of the company.
+
+317
+00:17:10,690 --> 00:17:14,625
+如何找到你的用户、如何和他们聊，问他们什么问题
+How to find your users and how to talk to them, what questions to ask them,
+
+318
+00:17:14,625 --> 00:17:19,150
+不该问什么，最后，如何把其中一些结论转化成一个 MVP
+what not to ask them, and finally, how to turn some of those conclusions into an MVP.
+
+319
+00:17:19,150 --> 00:17:20,330
+谢谢大家
+Thank you, everyone.

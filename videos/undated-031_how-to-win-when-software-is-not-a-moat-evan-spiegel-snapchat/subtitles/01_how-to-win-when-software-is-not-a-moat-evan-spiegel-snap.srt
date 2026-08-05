@@ -1,0 +1,7309 @@
+1
+00:00:00,000 --> 00:00:02,820
+你们拥有十亿月活跃用户
+You guys have a billion monthly active users.
+
+2
+00:00:03,080 --> 00:00:06,100
+为什么打造一个经久不衰的
+Why is it so freaking hard to build a durable,
+
+3
+00:00:06,380 --> 00:00:07,940
+持久的社交消费产品会这么难
+lasting social consumer product?
+
+4
+00:00:08,260 --> 00:00:11,840
+绝大多数消费科技都在关注自己有没有产品市场契合度
+So much of consumer technology focuses on do I have a product market fit?
+
+5
+00:00:12,060 --> 00:00:16,080
+人们几乎没花足够时间去思考分发渠道／用户获取渠道以及如何把它搞清楚
+People don't spend nearly enough time thinking about distribution and figuring out distribution.
+
+6
+00:00:16,200 --> 00:00:20,460
+我觉得在你们团队能持续产出多少新东西这件事上 Snap 一直在越级打怪
+I feel like Snap has always been punching above its weight in terms of just how much new
+
+7
+00:00:20,460 --> 00:00:21,760
+你们团队源源不断地做出新东西
+stuff comes out of your team.
+
+8
+00:00:22,020 --> 00:00:24,460
+快拍（Stories）、AR眼镜、滑动式导航
+Stories, AR glasses, swipe-based navigation.
+
+9
+00:00:24,920 --> 00:00:29,660
+我们有一个非常非常小的设计团队却在不断创新、不断创造新东西
+We have a very, very small design team that is constantly innovating and creating new things.
+
+10
+00:00:29,660 --> 00:00:32,240
+所以你加入设计团队的第一天就要上台展示作品
+So your first day that you join the design team, you present work.
+
+11
+00:00:32,360 --> 00:00:34,060
+你要开始做东西 如果你想有一个好点子
+You're making things. If you want to have a good idea,
+
+12
+00:00:34,120 --> 00:00:35,140
+你就必须先有很多很多点子
+you have to have lots of ideas.
+
+13
+00:00:35,240 --> 00:00:38,840
+别人一直在抄你 作为一个普通人 看到这种事不断发生是什么感觉
+People copy you. As a human, how does it feel just to see this consistently happen?
+
+14
+00:00:38,900 --> 00:00:41,780
+15 年前我们其实就已经明白 软件不是护城河
+15 years ago, we essentially learned that software is not a moat,
+
+15
+00:00:41,900 --> 00:00:44,620
+这也是大家今天在 AI 上重新发现的事情
+which is something that everyone is discovering today with AI.
+
+16
+00:00:44,760 --> 00:00:47,120
+你把即将到来的一年称为关键转折时刻
+You describe this coming year as the crucible moment.
+
+17
+00:00:47,220 --> 00:00:48,340
+这是一个真正的转折点
+It's a real turning point.
+
+18
+00:00:48,540 --> 00:00:52,680
+我们身处的这个行业 绝大部分讨论都集中在技术本身
+We're in an industry where so much of the conversation is focused on technology.
+
+19
+00:00:52,980 --> 00:00:58,820
+但人性重要得多 因为人性决定了技术会如何被采纳
+Humanity is far more important because humanity dictates how technology is adopted.
+
+20
+00:00:59,060 --> 00:01:03,060
+科技领袖们往往以为人们会盲目接受新技术
+Technology leaders think that folks will just blindly adopt new technology.
+
+21
+00:01:03,160 --> 00:01:06,820
+但随着技术不断涌现 社会上会对很多
+As it comes out, there's going to be a huge amount of societal pushback on a lot of the
+
+22
+00:01:06,820 --> 00:01:08,280
+伴随 AI 而来的变革产生巨大反弹
+changes that are coming with AI.
+
+23
+00:01:10,310 --> 00:01:12,250
+今天我的嘉宾是埃文·斯皮格尔
+Today, my guest is Evan Spiegel,
+
+24
+00:01:12,430 --> 00:01:13,910
+Snap 的首席执行官兼联合创始人
+CEO and co-founder of Snap.
+
+25
+00:01:14,390 --> 00:01:19,470
+埃文是这个世界上极少数成功打造并扩展
+Evan is one of the very few humans in the world who has successfully built and scaled a
+
+26
+00:01:19,470 --> 00:01:21,310
+一个持久存在的消费社交应用的人之一
+lasting consumer social app.
+
+27
+00:01:21,750 --> 00:01:23,710
+在 Snapchat 上线后的这 15 年里
+In the 15 years since Snapchat launched,
+
+28
+00:01:23,710 --> 00:01:28,470
+基本没有新的消费社交应用能上线并真正存活下来
+there are essentially zero social consumer apps that have launched and stuck around.
+
+29
+00:01:29,050 --> 00:01:31,970
+Snapchat 拥有超过 10 亿月活跃用户
+Snapchat has over 1 billion monthly active users,
+
+30
+00:01:32,270 --> 00:01:34,990
+每年创造超过 60 亿美元营收
+is generating over $6 billion a year in revenue,
+
+31
+00:01:35,230 --> 00:01:40,050
+用户每天在 Snapchat 上发布超过 80 亿张 AR滤镜 照片
+people post over 8 billion AR lens photos a day on Snapchat.
+
+32
+00:01:40,550 --> 00:01:44,670
+多年来 埃文和他的团队发明了快拍（Stories）这个概念
+And over the years, Evan and his team have invented the concept of stories,
+
+33
+00:01:45,110 --> 00:01:47,550
+他们推出了市场上第一款 AR眼镜 产品
+they had the first AR glasses product in the market,
+
+34
+00:01:47,890 --> 00:01:49,690
+他们发明了滑动式导航
+they invented swipe-based navigation,
+
+35
+00:01:49,690 --> 00:01:52,710
+相机是主要的，而且在过去的那些日子里
+the camera being primary, and also back in the day,
+
+36
+00:01:52,810 --> 00:01:54,810
+换脸 把人变老之类的功能
+face swapping, making people look older,
+
+37
+00:01:55,150 --> 00:01:57,990
+以及无数后来被整个行业到处抄袭的东西
+and so many of the things that are just copied throughout the entire industry.
+
+38
+00:01:58,470 --> 00:02:01,150
+如果现在真的是消费产品的黄金时代
+If this is truly the golden age of consumer products,
+
+39
+00:02:01,430 --> 00:02:03,870
+就像很多人说 AI 将会带来的一样
+like many people say AI is going to enable,
+
+40
+00:02:04,210 --> 00:02:09,890
+那我们就有很多可以向埃文和他的团队学习的地方 包括他们如何思考 如何运作 以及如何持续创新
+there's a lot that we can learn about how Evan and his team think and operate and are able to continue innovating.
+
+41
+00:02:10,310 --> 00:02:13,590
+这是一次难得的与埃文的播客访谈 我们聊到了非常多的内容
+This is a rare podcast interview with Evan and we cover a lot of ground.
+
+42
+00:02:13,590 --> 00:02:14,810
+在正式开始之前
+Before we get into it,
+
+43
+00:02:15,110 --> 00:02:21,090
+别忘了去看看 Lenny产品通行证（lennysprodductpass.com） 可以免费使用一年全球最火最
+don't forget to check out Lenny's Product Pass (lennysprodductpass.com) for a year free of the hottest and most
+
+44
+00:02:21,090 --> 00:02:23,370
+精心打造的 AI 产品
+well-crafted AI products in the world,
+
+45
+00:02:23,670 --> 00:02:26,230
+仅向 Lenny 的新闻通讯订阅者开放
+available exclusively to Lenny's newsletter subscribers.
+
+46
+00:02:26,790 --> 00:02:28,870
+话不多说 下面请出埃文·斯皮格尔
+With that, I bring you Evan Spiegel.
+
+47
+00:02:32,130 --> 00:02:34,170
+埃文 非常感谢你来参加节目
+Evan, thank you so much for being here.
+
+48
+00:02:34,230 --> 00:02:35,210
+欢迎来到这个播客
+Welcome to the podcast.
+
+49
+00:02:35,990 --> 00:02:37,310
+非常感谢 谢谢你们邀请我
+Thank you so much. Thanks for having me.
+
+50
+00:02:37,370 --> 00:02:38,190
+我很期待接下来的对话
+I'm looking forward to it.
+
+51
+00:02:38,570 --> 00:02:43,330
+我想先从一件事聊起 试着自己搞清楚 也帮大家搞清楚 为什么
+I want to start with just trying to understand and help people understand why is it so
+
+52
+00:02:43,330 --> 00:02:45,730
+打造一个经久不衰的
+freaking hard to build a durable,
+
+53
+00:02:46,010 --> 00:02:49,890
+消费产品 尤其是社交消费产品 会这么难
+lasting consumer product and in particular a social consumer product.
+
+54
+00:02:50,310 --> 00:02:51,770
+为了给大家一点背景
+And just to give people this context,
+
+55
+00:02:51,870 --> 00:02:52,950
+我觉得很多人其实没意识到
+I don't think people realize this,
+
+56
+00:02:53,050 --> 00:02:55,250
+自从你们 15 年前上线以来
+but since you launched 15 years ago,
+
+57
+00:02:55,430 --> 00:02:57,090
+基本上就只多了一个 TikTok
+there's basically a TikTok,
+
+58
+00:02:57,470 --> 00:02:58,710
+但它其实并不算真正的社交产品
+which is not really social.
+
+59
+00:02:58,870 --> 00:03:00,830
+我会说它更像是一个媒体平台
+It's more of like a media platform, I'd say.
+
+60
+00:03:00,930 --> 00:03:02,470
+然后可能还有 Threads
+And then maybe threads,
+
+61
+00:03:02,650 --> 00:03:05,030
+但我觉得这有点作弊 因为它完全是搭在 Instagram 之上的
+which I think is cheating because it just sits on top of Instagram.
+
+62
+00:03:05,550 --> 00:03:09,790
+除了 15 年前的 Snapchat 之外 基本没有别的产品真正跑出来
+Basically, nothing else has worked other than Snapchat 15 years ago.
+
+63
+00:03:10,790 --> 00:03:14,650
+尽管几乎所有人 天生第一反应都想做一个消费类
+And in spite of everyone just like everyone innately just wants to build a consumer
+
+64
+00:03:14,650 --> 00:03:17,030
+产品 社交应用 这几乎是大家创业时的首选方向
+product, social app, it's just like where everyone first goes,
+
+65
+00:03:17,230 --> 00:03:18,530
+但大家几乎都失败了 没有一个真正跑通
+everybody fails, nothing works.
+
+66
+00:03:19,530 --> 00:03:20,270
+为什么会这么难
+Why is it so hard?
+
+67
+00:03:20,350 --> 00:03:21,390
+你觉得大家没想明白的是什么
+What do you think people don't get?
+
+68
+00:03:21,650 --> 00:03:22,510
+我觉得这点其实挺有意思
+Well, I think it's really interesting,
+
+69
+00:03:22,810 --> 00:03:26,830
+你知道，就像你刚才提到的那些例子，对吧，比如抖音和Threads方面，
+you know, in terms of the examples that you just shared, right, of TikTok and threads,
+
+70
+00:03:26,870 --> 00:03:30,470
+因为这正好是两家把分发渠道／用户获取渠道搞明白了的公司
+because you just shared two examples of people who figured out distribution.
+
+71
+00:03:30,890 --> 00:03:35,270
+而我认为 这其实是当今消费科技里最难搞清楚的事情之一
+And I think that that's actually one of the hardest things to figure out in consumer technology today.
+
+72
+00:03:35,390 --> 00:03:37,010
+我们在做 Snapchat 的时候非常幸运
+We were so fortunate when we created Snapchat,
+
+73
+00:03:37,570 --> 00:03:39,110
+因为那时候智能手机
+the mobile phone, you know,
+
+74
+00:03:39,150 --> 00:03:41,090
+和应用商店都还刚刚起步
+in the app store, we're just getting started.
+
+75
+00:03:41,390 --> 00:03:44,150
+所以人们那会儿经常下载各种新应用
+So people were downloading lots of new apps all the time.
+
+76
+00:03:44,230 --> 00:03:46,930
+大家对尝试新服务非常兴奋
+They were really excited about trying new services.
+
+77
+00:03:47,250 --> 00:03:50,390
+你看 Instagram 我记得好像比 Snapchat 早一年左右上线
+You know, Instagram, I think it started a year before Snapchat or something like that.
+
+78
+00:03:50,390 --> 00:03:53,810
+那个时代大家对新应用和新服务的胃口真的很大
+So there was a real appetite to try new apps and new services.
+
+79
+00:03:53,810 --> 00:03:55,810
+而今天已经不是这样了
+And that's not the case today.
+
+80
+00:03:55,810 --> 00:03:59,270
+现在要为一个新想法或新服务获取分发渠道／用户获取渠道难得多
+It's a lot harder to get distribution for new ideas and new services.
+
+81
+00:03:59,870 --> 00:04:02,710
+人们现在下载应用的数量远不如当年
+People aren't downloading as many apps now as they used to.
+
+82
+00:04:02,790 --> 00:04:05,970
+而 TikTok 和 Threads 都把分发渠道／用户获取渠道这件事搞明白了
+And both TikTok and threads figured out distribution,
+
+83
+00:04:06,150 --> 00:04:09,030
+这也是为什么我认为它们是最近少有的成功案例
+which is why I think there are more recent examples of success.
+
+84
+00:04:09,190 --> 00:04:10,130
+TikTok 是靠砸钱做到的
+TikTok did it with money,
+
+85
+00:04:10,510 --> 00:04:12,270
+我其实觉得这挺有创新性的
+which I actually thought was really innovative.
+
+86
+00:04:12,650 --> 00:04:16,710
+他们花了数十亿美元去补贴视频市场的两端
+They spent billions of dollars subsidizing both sides of their video marketplace,
+
+87
+00:04:17,030 --> 00:04:21,090
+一边花钱获客让用户来看视频 一边付钱给创作者让他们拍视频
+right, acquiring customers to watch videos and then paying creators to make videos.
+
+88
+00:04:21,230 --> 00:04:23,270
+这样他们就能自我启动
+And so they were able to bootstrap,
+
+89
+00:04:23,390 --> 00:04:25,170
+把自己的生态盘活起来
+you know, their ecosystem.
+
+90
+00:04:25,370 --> 00:04:31,490
+我认为在 Threads 上很明显的一点是 他们能够利用 Meta 在所有其他产品中所拥有的惊人分发能力
+And I think with threads, obviously, they were able to leverage the amazing distribution that Meta has across all their other products.
+
+91
+00:04:31,570 --> 00:04:35,190
+所以我觉得现在大部分消费科技公司都只关注
+So I think so much of consumer technology focuses on,
+
+92
+00:04:35,270 --> 00:04:36,790
+我做的产品对不对
+you know, am I building the right product?
+
+93
+00:04:36,850 --> 00:04:38,150
+我有没有产品市场契合度
+Do I have a product market fit?
+
+94
+00:04:38,290 --> 00:04:41,590
+我是不是做出了一个真的能打动用户
+Have I, you know, built something that's really going to resonate with customers that
+
+95
+00:04:41,590 --> 00:04:43,030
+让他们愿意一直用下去的东西
+they're really going to want to use all the time?
+
+96
+00:04:43,330 --> 00:04:48,130
+而我认为大家几乎没花足够时间去思考分发渠道／用户获取渠道以及如何把它真正搞清楚
+And I think people don't spend nearly enough time thinking about distribution and figuring out distribution.
+
+97
+00:04:48,290 --> 00:04:51,530
+在我看来那似乎是一个巨大的差异化因素
+And that seems to me to be a huge differentiator.
+
+98
+00:04:51,710 --> 00:04:54,530
+所以当我回顾打造 Snapchat 的早期时光时
+So, you know, as I reflect on the early days of building Snapchat,
+
+99
+00:04:55,190 --> 00:04:57,810
+我们在分发渠道／用户获取渠道方面摸索出来的一点是
+the thing that we figured out in terms of distribution,
+
+100
+00:04:58,370 --> 00:04:59,850
+尤其是在社交产品上
+especially when it comes to social,
+
+101
+00:05:00,050 --> 00:05:06,470
+当时人们相信社交网络里存在网络效应
+was that, you know, back then people believed that there were network effects in social
+
+102
+00:05:06,470 --> 00:05:10,210
+也就是说使用你服务的人越多
+networks that meant that the more people you had using the service,
+
+103
+00:05:10,310 --> 00:05:12,050
+你的产品就越黏人 对吧
+the stickier that it is, right?
+
+104
+00:05:12,110 --> 00:05:16,790
+所以根本不可能打败最大的那些网络 因为它们被认为是最有价值的
+And so there was no way to beat the biggest networks because those were the most valuable.
+
+105
+00:05:17,010 --> 00:05:19,190
+而 Snapchat 意识到的是
+And what Snapchat figured out that was,
+
+106
+00:05:19,350 --> 00:05:20,810
+我觉得不一样的一点在于
+I think, different was that,
+
+107
+00:05:20,830 --> 00:05:24,350
+尽管当时有规模更大 连接更多人的网络
+you know, despite the fact that there were much bigger networks that connected more
+
+108
+00:05:24,350 --> 00:05:27,950
+但真正重要的是把你和对的人连在一起
+people, what really mattered was connecting you to the right people.
+
+109
+00:05:28,410 --> 00:05:31,010
+所以如果你不是把某个人和他所有朋友都连起来
+And so if you could just connect someone not to all their friends,
+
+110
+00:05:31,150 --> 00:05:32,310
+而是只连到他最好的朋友
+but to their best friend,
+
+111
+00:05:32,410 --> 00:05:34,070
+他的伴侣 他的配偶
+to their partner, to their spouse,
+
+112
+00:05:34,470 --> 00:05:36,370
+也就是这个世界上他最在乎的那些人
+the people that they cared most about in the world,
+
+113
+00:05:36,470 --> 00:05:39,950
+那才是这个网络中大部分价值所在
+that's where the majority of the value is in the network.
+
+114
+00:05:40,130 --> 00:05:43,090
+这就是让我们在早期真正得以增长的原因
+And so that's what really allowed us to grow in those early days.
+
+115
+00:05:43,290 --> 00:05:45,790
+我们当然受益于应用商店和移动端的分发渠道／用户获取渠道
+You know, we had the benefit of the app store and mobile distribution,
+
+116
+00:05:45,790 --> 00:05:47,870
+但我们还有一种不同的增长方式
+but we also had a different way of growing our service,
+
+117
+00:05:47,910 --> 00:05:49,550
+它不是要让你拥有最多的好友
+which wasn't about having the most friends.
+
+118
+00:05:49,570 --> 00:05:51,350
+而是要让你拥有最亲密的好友
+It was about having your close friends.
+
+119
+00:05:51,910 --> 00:05:52,570
+这太有意思了
+That is so interesting.
+
+120
+00:05:52,690 --> 00:05:54,090
+这其实是我最近一直在思考的一件事
+It's something that I've been thinking a lot about,
+
+121
+00:05:54,130 --> 00:05:57,010
+尤其是因为 AI 带来的分发渠道／用户获取渠道这个问题
+actually, this idea of distribution because of AI.
+
+122
+00:05:57,250 --> 00:06:00,410
+如果你想想 AI 是怎么进入市场的
+If you think about just where AI has come into the market,
+
+123
+00:06:00,630 --> 00:06:03,850
+一开始它只是帮人自动补全代码
+it started originally just like helping people autocomplete code.
+
+124
+00:06:04,030 --> 00:06:05,390
+这是我在这个播客里经常聊的话题
+There's something I've been talking a lot on this podcast.
+
+125
+00:06:05,470 --> 00:06:06,950
+先是 好 自动补全代码
+It's like, OK, autocomplete code.
+
+126
+00:06:07,030 --> 00:06:08,010
+好 现在它在写我们所有的代码
+OK, now it's writing all our code.
+
+127
+00:06:08,370 --> 00:06:10,650
+好 现在它在审查我们的代码 还在自测
+OK, now it's reviewing our code and now it's testing itself.
+
+128
+00:06:11,270 --> 00:06:12,730
+接下来它还要帮我们想点子
+And now it's going to help us come up with ideas.
+
+129
+00:06:12,830 --> 00:06:16,190
+所以它像是从产品开发流程的中间切入 然后向两端扩展
+So it's like starting in the middle of the product development process and expanding out.
+
+130
+00:06:16,650 --> 00:06:20,630
+我觉得它会非常擅长提出好点子和制定战略
+And I feel like it will be very good at coming up with great ideas and developing strategy
+
+131
+00:06:20,630 --> 00:06:22,370
+就好像它在往上走
+like it's going up the,
+
+132
+00:06:22,410 --> 00:06:24,910
+不管是产品构建的漏斗 还是时间线
+I don't know, the funnel or the timeline of building a product.
+
+133
+00:06:25,330 --> 00:06:27,270
+而我觉得分发渠道／用户获取渠道会变成那个最终的环节
+And I feel like distribution is where it ends up being,
+
+134
+00:06:27,910 --> 00:06:30,850
+会变成新的护城河 也是新的最大挑战
+what ends up being the new moat and the new biggest challenge,
+
+135
+00:06:31,330 --> 00:06:33,430
+因为在那一块 AI 并不能真正帮到你
+because AI is not going to really help you there.
+
+136
+00:06:33,590 --> 00:06:37,250
+所以这在消费类产品上更为真实 这一点真的很有意思
+So it's really interesting that that's even more so true for consumer products.
+
+137
+00:06:37,770 --> 00:06:39,190
+我完全同意
+I think that's absolutely the case.
+
+138
+00:06:39,350 --> 00:06:40,630
+我唯一想补充的是
+And the only thing I would say is,
+
+139
+00:06:40,790 --> 00:06:45,610
+科技领域里最令人兴奋的时刻 往往是新平台被创造出来的时候
+you know, the most exciting times in technology are when there are new platforms that get created.
+
+140
+00:06:45,710 --> 00:06:47,770
+而大量价值通常就诞生在这些地方
+And that tends to be where a lot of the value comes from.
+
+141
+00:06:47,830 --> 00:06:51,010
+你想一想，现在很多大型的消费科技公司
+You think about, you know, a lot of the big consumer technology companies today,
+
+142
+00:06:51,010 --> 00:06:52,650
+其实都是诞生于移动时代的 对吧
+they were really born out of mobile, right?
+
+143
+00:06:52,750 --> 00:06:54,170
+不管是 Uber
+Whether, you know, it's Uber,
+
+144
+00:06:54,790 --> 00:07:00,070
+还是 Snapchat 这些真正抓住了移动端分发渠道／用户获取渠道的早一代公司
+you know, Snapchat, some of those early generation companies that really got distribution
+
+145
+00:07:00,070 --> 00:07:01,150
+它们都是在移动端基础上发展起来的
+and built themselves on mobile.
+
+146
+00:07:01,290 --> 00:07:02,870
+所以我觉得当我们展望未来
+And so I think as we look forward to,
+
+147
+00:07:02,930 --> 00:07:04,730
+比如这些下一代的硬件形态
+you know, sort of these next generation form factors,
+
+148
+00:07:04,870 --> 00:07:08,450
+像眼镜这样的设备 会带来一整套全新的机会
+things like glasses, there's going to be a whole new set of opportunities and a whole new
+
+149
+00:07:08,450 --> 00:07:11,310
+也会提供一个全新的载体 让人们去打造跨世代的消费品牌公司
+surface for people to build generational consumer companies.
+
+150
+00:07:11,470 --> 00:07:12,450
+这让我非常兴奋
+I'm really excited about that.
+
+151
+00:07:12,730 --> 00:07:14,270
+尤其是如果他们已经有分发渠道／用户获取渠道的话
+Especially if they have distribution already.
+
+152
+00:07:14,370 --> 00:07:15,430
+感觉那会变成
+Feels like that's going to be like,
+
+153
+00:07:15,470 --> 00:07:16,490
+我只是替初创公司有点担心
+I'm just worried for startups.
+
+154
+00:07:16,630 --> 00:07:18,930
+要拿到分发渠道／用户获取渠道会非常难
+It's going to be very hard to get distribution,
+
+155
+00:07:19,350 --> 00:07:21,930
+就像现在每天都有太多新东西上线
+just like it's there's so much launching every day,
+
+156
+00:07:22,290 --> 00:07:23,470
+有太多东西需要关注
+so much to pay attention to.
+
+157
+00:07:23,530 --> 00:07:27,710
+在现有这些
+And it just feels very hard for a startup to get any attention with existing,
+
+158
+00:07:28,010 --> 00:07:29,450
+你知道的 既有巨头面前 初创公司要获得任何关注都太难了
+you know, against existing incumbents.
+
+159
+00:07:30,130 --> 00:07:34,330
+本期节目由本季首席赞助商 WorkOS 带来
+This episode is brought to you by our season's presenting sponsor, WorkOS.
+
+160
+00:07:34,910 --> 00:07:42,490
+OpenAI、Anthropic、Cursor、Vercel、Replit、Sierra、Clay 以及数百家其他成功公司都有一个什么共同点
+What do OpenAI, Anthropic, Cursor, Vercel, Replit, Sierra, Clay, and hundreds of other winning companies all have in common?
+
+161
+00:07:42,850 --> 00:07:44,610
+它们都由 WorkOS 提供支持
+They are all powered by WorkOS.
+
+162
+00:07:45,270 --> 00:07:46,870
+如果你在为企业用户打造产品
+If you're building a product for the enterprise,
+
+163
+00:07:47,210 --> 00:07:49,470
+你一定感受过集成单点登录（SSO）
+you've felt the pain of integrating single sign-on,
+
+164
+00:07:49,890 --> 00:07:52,050
+SCIM（跨域身份管理系统） RBAC（基于角色的访问控制） 审计日志
+SCIM, RBAC, audit logs,
+
+165
+00:07:52,290 --> 00:07:54,390
+以及其他大公司要求的这些功能有多痛苦
+and other features required by large companies.
+
+166
+00:07:54,770 --> 00:08:00,010
+WorkOS 把这些阻碍成交的难题变成了即插即用的 API
+WorkOS turns those deal blockers into drop-in APIs with a modern developer platform built
+
+167
+00:08:00,010 --> 00:08:01,770
+它是专门为 B2B SaaS 打造的现代化开发者平台
+specifically for B2B SaaS.
+
+168
+00:08:02,250 --> 00:08:08,030
+基本上我投的每一家开始往大客户市场走的初创公司 最后都在用 WorkOS
+Literally every startup that I'm an investor in that starts to expand up market ends up working with WorkOS.
+
+169
+00:08:08,370 --> 00:08:09,970
+因为他们就是这方面最好的
+And that's because they are the best.
+
+170
+00:08:10,290 --> 00:08:15,610
+不管你是想拿下第一个企业客户的种子期初创公司 还是在全球扩张的独角兽
+Whether you are a seed-stage startup trying to land your first enterprise customer or a unicorn expanding globally,
+
+171
+00:08:15,950 --> 00:08:20,110
+WorkOS 都是让你具备企业级能力并打通增长通路的最快路径
+WorkOS is the fastest path to becoming enterprise-ready and unblocking growth.
+
+172
+00:08:20,510 --> 00:08:22,810
+它本质上就是企业级功能领域的 Stripe
+It's essentially Stripe for enterprise features.
+
+173
+00:08:23,310 --> 00:08:27,510
+访问 WorkOS.com 开始使用 或者直接加入他们的 Slack
+Visit WorkOS.com to get started or just hit up their Slack where they have actual
+
+174
+00:08:27,510 --> 00:08:29,550
+里面有真正的工程师随时回答你的问题
+engineers waiting to answer your questions.
+
+175
+00:08:29,950 --> 00:08:33,010
+WorkOS 通过好用的 API
+WorkOS allows you to build faster with delightful APIs,
+
+176
+00:08:33,430 --> 00:08:35,910
+完整的文档和顺畅的开发体验 让你构建产品更快
+comprehensive docs, and a smooth developer experience.
+
+177
+00:08:36,150 --> 00:08:39,690
+现在就去 WorkOS.com 让你的应用具备企业级能力
+Go to WorkOS.com to make your app enterprise-ready today.
+
+178
+00:08:40,250 --> 00:08:43,930
+Snapchat 一直让我觉得很有意思的一点是
+Something that has always been really interesting to me about Snapchat is it feels like
+
+179
+00:08:43,930 --> 00:08:46,910
+这些年你们做了太多创新
+you guys have just innovated so much over the years.
+
+180
+00:08:46,990 --> 00:08:48,930
+基本上所有东西都是你们先发明的
+You guys basically just invent all the things.
+
+181
+00:08:49,610 --> 00:08:52,570
+别人抄你们的 然后从中获益良多
+People copy you, benefit greatly from it,
+
+182
+00:08:52,610 --> 00:08:55,050
+这一切看起来真的有点疯狂
+and it's just kind of wild to watch.
+
+183
+00:08:55,190 --> 00:08:56,970
+随便举几个我能想到的例子
+And just like a few examples that come to mind.
+
+184
+00:08:57,870 --> 00:08:59,670
+快拍（Stories）是你们创造的
+Stories you guys created.
+
+185
+00:09:00,030 --> 00:09:01,690
+你们在 AR眼镜 上也非常早
+You were very early on AR glasses.
+
+186
+00:09:01,950 --> 00:09:04,750
+在 Meta 涉足这些东西之前 你们就已经推出了 Spectacles（Snap智能眼镜）
+You guys launched spectacles before meta got into the stuff.
+
+187
+00:09:05,510 --> 00:09:08,230
+滑动式导航 我记得也是你们最先做的
+Swipe-based navigation I think you guys started.
+
+188
+00:09:08,810 --> 00:09:11,850
+还有长按拍视频 点按拍照片这个交互
+The idea of holding to do a video versus a photo.
+
+189
+00:09:12,450 --> 00:09:13,530
+可能还有一大堆
+There's probably a bunch.
+
+190
+00:09:14,210 --> 00:09:16,590
+先问个问题 你觉得下一个会被别人偷走的东西是什么
+First of all, what's the next thing someone's going to steal, do you think?
+
+191
+00:09:17,250 --> 00:09:20,870
+天哪 嗯 我刚看到 Instagram Plus 上线了
+Oh gosh. Well, I just saw Instagram Plus launch.
+
+192
+00:09:21,050 --> 00:09:22,450
+所以我觉得那就是最新的一次抄袭
+So I think that's the latest rip.
+
+193
+00:09:23,370 --> 00:09:24,210
+就是一个订阅服务
+Which is a subscription.
+
+194
+00:09:25,110 --> 00:09:29,410
+是的 我想我们刚刚在 Snapchat Plus 上达到了 2500 万订阅用户
+Yeah, I think we just hit 25 million subscribers on Snapchat Plus,
+
+195
+00:09:29,410 --> 00:09:31,030
+超过十亿美元的营收运行率
+more than a billion revenue run rate.
+
+196
+00:09:31,270 --> 00:09:35,270
+所以我觉得这可能已经足以引起Meta的注意 让他们觉得是个抄袭的好时机
+So it was, I think, probably enough to get meta's attention that it's a good time to copy.
+
+197
+00:09:35,270 --> 00:09:40,630
+甚至连“Plus”这个名字 他都直接拿去用了
+And the Plus, he's just even taking the Plus as the name.
+
+198
+00:09:40,850 --> 00:09:44,130
+天哪 我想以一个普通人的身份问你
+Oh my god. Let me just ask you, like as a human,
+
+199
+00:09:44,630 --> 00:09:48,010
+一次又一次看到这种事发生在你身上 你是什么感受
+how does it feel just to see this consistently happen to you?
+
+200
+00:09:48,110 --> 00:09:49,570
+你们想出一个很棒的点子
+You guys come up with something awesome.
+
+201
+00:09:50,610 --> 00:09:52,790
+别人抄走 然后从中获益巨大
+Someone rips it off, benefits hugely from it,
+
+202
+00:09:52,790 --> 00:09:54,330
+而你们只能一遍又一遍继续做下去
+and you just have to keep doing that again and again.
+
+203
+00:09:54,830 --> 00:09:58,290
+你知道 这肯定比做出没人想抄的东西要好
+You know, it's certainly better than making stuff that people don't want to copy.
+
+204
+00:09:58,670 --> 00:10:00,770
+所以我觉得
+So I think, you know,
+
+205
+00:10:00,790 --> 00:10:03,590
+从很多方面看 能够持续创新对我们来说是一种幸运
+in many ways it's a blessing that we've been able to continue to innovate,
+
+206
+00:10:03,670 --> 00:10:06,870
+去创造那些真正能引起人们共鸣 并且最终让人们想要
+to make new things that really resonate with folks and that ultimately people want to end
+
+207
+00:10:06,870 --> 00:10:10,310
+从Snap那里抄来的新东西
+up copying from Snap.
+
+208
+00:10:10,410 --> 00:10:12,750
+所以我觉得 这肯定比另一种情况要好
+So I think it certainly beats the alternative,
+
+209
+00:10:13,510 --> 00:10:17,390
+但这也意味着我们必须非常慎重地思考我们的战略
+but it does mean that we have to be really thoughtful about our strategy.
+
+210
+00:10:17,650 --> 00:10:18,990
+所以我认为 其中一件事是
+And so I think one of the things,
+
+211
+00:10:19,110 --> 00:10:23,870
+这段时间让我有机会回顾过去15年的战略 这非常有意思
+it's been an interesting time for me to reflect a lot on our strategy over the last 15 years.
+
+212
+00:10:23,910 --> 00:10:25,230
+因为在15年前
+Because 15 years ago,
+
+213
+00:10:25,250 --> 00:10:27,590
+我们基本上就已经明白 软件不是护城河
+we essentially learned that software is not a moat,
+
+214
+00:10:27,810 --> 00:10:30,830
+这也是大家今天在AI上正在重新发现的事情
+which is something that everyone is discovering today with AI.
+
+215
+00:10:31,570 --> 00:10:36,670
+但在15年前 因为我们能做出的所有软件功能
+But 15 years ago, because all the software features that we could create were so easily
+
+216
+00:10:36,670 --> 00:10:37,770
+都能被竞争对手轻易克隆
+cloned by our competitors,
+
+217
+00:10:37,890 --> 00:10:40,470
+我们就开始思考如何打造一个更持久的业务
+we started to think about how to build a more durable business,
+
+218
+00:10:40,590 --> 00:10:44,290
+如何打造一个拥有更大更有效护城河的业务
+how to build a business that had bigger and more effective moats.
+
+219
+00:10:44,390 --> 00:10:48,070
+我们最先做的事情之一 就是高度专注于构建生态系统
+One of the first things we did was focus a lot on building ecosystems,
+
+220
+00:10:48,270 --> 00:10:51,870
+无论是创作者和Snapchat用户之间的关系
+whether those are the relationships between creators and Snapchatters,
+
+221
+00:10:52,110 --> 00:10:54,630
+还是我们围绕增强现实构建的平台
+whether that's the platform we built around augmented reality,
+
+222
+00:10:54,770 --> 00:10:57,370
+在那个平台上 开发者已经打造了数百万个这类滤镜
+where developers have built millions of these lenses.
+
+223
+00:10:58,270 --> 00:11:01,290
+所以复制软件功能非常容易
+So it's very easy to copy software features.
+
+224
+00:11:01,290 --> 00:11:07,170
+但要复制或复刻一个完整的生态系统或平台则非常困难
+It's very hard to copy or to replicate a full ecosystem or a platform.
+
+225
+00:11:07,870 --> 00:11:12,910
+因此我们意识到 越是能在业务周围构建平台
+And so we realized that the more that we could build a platform around our business,
+
+226
+00:11:12,910 --> 00:11:15,270
+越是能和创作者与开发者一起构建生态系统
+the more that we could build an ecosystem with creators and developers,
+
+227
+00:11:15,270 --> 00:11:18,410
+别人就越难轻易把它抄走
+the harder it would be for folks to just copy that.
+
+228
+00:11:18,490 --> 00:11:22,270
+这也影响了我们在其他领域的投资思路 那些领域
+And then it also informed a lot of our thinking about investing in other places that are
+
+229
+00:11:22,270 --> 00:11:24,350
+非常难以被复制 包括硬件
+really hard to copy, including hardware,
+
+230
+00:11:24,610 --> 00:11:31,030
+在那里 想要复制我们围绕增强现实打造的 完整垂直一体化技术栈是极其困难的
+where it's really, really challenging to copy our fully vertically integrated stack around augmented reality.
+
+231
+00:11:31,290 --> 00:11:34,990
+所以我确信在这方面还有很多可以聊的
+So I'm certain there's a lot more to talk about there.
+
+232
+00:11:35,090 --> 00:11:37,630
+但我认为我们很早就学到 软件很容易被复制
+But I think we learned early on that software is easy to copy.
+
+233
+00:11:37,790 --> 00:11:39,770
+因此构建更持久的护城河就变得非常重要
+And so it's really important to build more durable moats.
+
+234
+00:11:40,250 --> 00:11:42,490
+听你这样说真的很有意思
+That's really interesting hearing this from you.
+
+235
+00:11:42,550 --> 00:11:43,490
+我本来打算稍后再聊这个话题
+And I was going to get to this later,
+
+236
+00:11:43,550 --> 00:11:44,590
+但我们现在就可以谈
+but we can talk about this now,
+
+237
+00:11:44,670 --> 00:11:46,830
+你们在硬件上投入的这笔巨大投资
+this big investment you've been putting into hardware.
+
+238
+00:11:47,430 --> 00:11:49,670
+人们通常会认为 网络效应就是护城河
+You would think network effects would be the moat.
+
+239
+00:11:49,850 --> 00:11:55,310
+大家一直都在追求这个 因为那在传统意义上是非常好的护城河
+That's what everybody's always trying to get to because that's classically a great moat.
+
+240
+00:11:55,930 --> 00:11:59,950
+你的意思是 这可能都算不上那么好的护城河 或者说 这还远远不够
+Are you saying that that's maybe not even as great a moat or that's just not enough?
+
+241
+00:12:00,390 --> 00:12:02,090
+然后你还需要更多东西 比如说硬件
+And then you need something more, like, say, hardware?
+
+242
+00:12:02,550 --> 00:12:06,670
+我认为 网络效应当然是拼图中非常重要的一块
+I think network effects are certainly an important piece of the puzzle, for sure.
+
+243
+00:12:07,030 --> 00:12:12,150
+但在面对这种软件层面的克隆时 我不认为它们足够
+But I don't think they're enough when it comes to these sorts of software cloning.
+
+244
+00:12:12,530 --> 00:12:16,070
+所以 尽管我们拥有大量专利 并且对所有这些想法
+And so, you know, despite the fact that we've got a ton of patents and we protected all
+
+245
+00:12:16,070 --> 00:12:21,110
+做了保护 但在软件领域的运作方式下 别人仍然很容易复制
+these ideas, the way that it works in software is that it's quite easy for folks to copy
+
+246
+00:12:21,110 --> 00:12:22,430
+或在这些想法之上进行迭代
+or iterate on top of these ideas.
+
+247
+00:12:22,570 --> 00:12:24,230
+因此我认为 除了网络效应之外
+And so I think in addition to network effects,
+
+248
+00:12:24,230 --> 00:12:29,570
+通过真正构建一个平台 来打造更具防御性的业务 这一点非常重要
+it's really important to try to build businesses that are more defensible by truly
+
+249
+00:12:29,570 --> 00:12:32,770
+这个平台能够支撑创作者之间的关系
+building out a platform that can support relationships between creators,
+
+250
+00:12:32,950 --> 00:12:34,050
+开发者以及社区之间的关系
+developers, and the community.
+
+251
+00:12:34,070 --> 00:12:35,730
+因为这一点本身
+Because that in and of itself,
+
+252
+00:12:35,810 --> 00:12:37,730
+我们发现就已经极其难以复制
+we've found is incredibly difficult to copy.
+
+253
+00:12:38,230 --> 00:12:39,530
+这太有意思了 如果你仔细想想
+It's so interesting. Like, if you think about it,
+
+254
+00:12:39,530 --> 00:12:45,170
+你在做的是两类最难的业务 消费级社交平台 和 硬件
+you're working on two of the hardest types of businesses, consumer, social, platform, and hardware.
+
+255
+00:12:46,070 --> 00:12:47,330
+而我很欣赏你在做这些事
+And I love that you're doing that.
+
+256
+00:12:48,010 --> 00:12:49,010
+而且在硬件方面的投入
+And this hardware investment,
+
+257
+00:12:49,170 --> 00:12:50,230
+你们已经坚持了很长时间
+you've been at it for a long time.
+
+258
+00:12:50,490 --> 00:12:51,870
+你们做过Spectacles 也做过无人机
+You had Spectacles, you had drones.
+
+259
+00:12:52,030 --> 00:12:54,610
+我觉得很多人都不记得 你们曾经有一款可以给你拍照的无人机
+I don't think people remember you had this drone that could take photos of you.
+
+260
+00:12:54,970 --> 00:12:56,350
+然后你们又要推出Specs
+And then you have Specs coming out.
+
+261
+00:12:56,430 --> 00:12:59,170
+顺便问一下，今天要发布的那个东西名字到底是叫 Specs 还是 Spectacles
+Is it Specs or Spectacles, the name of what's coming out today, by the way?
+
+262
+00:12:59,510 --> 00:13:00,690
+今年要发布的是Spectacles
+Spectacles is coming out this year.
+
+263
+00:13:01,030 --> 00:13:02,390
+Specs 好 那我们一会儿就来聊聊它
+Specs. Okay, well, we're going to talk about it.
+
+264
+00:13:02,510 --> 00:13:05,050
+不过 或许你刚才已经部分回答了
+But just maybe you've already answered it,
+
+265
+00:13:05,090 --> 00:13:06,890
+为什么你对这件事如此有热情
+why this is something you're so passionate about.
+
+266
+00:13:06,910 --> 00:13:09,930
+但为什么要在硬件上持续不断地投入
+But why this kind of ongoing investment in hardware?
+
+267
+00:13:09,930 --> 00:13:16,130
+我想先往回拉得远一点说起 我非常热爱电脑
+Well, I think to take a huge step back, I love computers.
+
+268
+00:13:16,410 --> 00:13:19,030
+我从小就一直在用电脑
+I grew up using computers all the time.
+
+269
+00:13:19,190 --> 00:13:21,610
+我在初中的时候自己组装过电脑
+I built my own computer when I was in middle school.
+
+270
+00:13:22,770 --> 00:13:28,330
+我爱上了平面设计 每到午休时间都会泡在电脑教室里
+I fell in love with graphic design and would spend every lunch period in the computer lab.
+
+271
+00:13:28,990 --> 00:13:32,610
+而我注意到 关于电脑有一件事
+And I think one of the things that I noticed about computers,
+
+272
+00:13:32,810 --> 00:13:34,350
+而且我觉得今天的手机也是如此
+and I think today with mobile phones,
+
+273
+00:13:34,870 --> 00:13:35,970
+就是在很多方面
+is that in many ways,
+
+274
+00:13:36,010 --> 00:13:37,850
+它们把我们彼此隔离开来
+they isolate us from one another.
+
+275
+00:13:38,070 --> 00:13:40,490
+它们实际上把我们从社交互动中抽离出来
+They actually take us out of our social interactions.
+
+276
+00:13:40,670 --> 00:13:45,870
+它们在课间把我从操场上拉走 把我带进了电脑教室
+They took me off the playground at recess and put me into the computer lab.
+
+277
+00:13:46,110 --> 00:13:48,590
+又或者当我看着我们现在15岁的孩子和他的朋友们时
+Or if I look at our 15-year-old today and his friends,
+
+278
+00:13:48,910 --> 00:13:50,310
+有时候他们在一起玩
+sometimes when they're hanging out,
+
+279
+00:13:50,370 --> 00:13:51,850
+却都低头看着手机
+they're all looking down at their phones,
+
+280
+00:13:51,870 --> 00:13:53,130
+尽管他们人是聚在一起的
+even though they're all together.
+
+281
+00:13:53,390 --> 00:13:57,950
+所以我认为 这里有一个巨大的机会 去打造一种技术 它真正能
+And so I think there's just such a big opportunity to build technology that actually
+
+282
+00:13:57,950 --> 00:14:00,770
+把我们重新聚在一起 让我们扎根在现实世界中
+brings us together, that keeps us grounded in the real world,
+
+283
+00:14:01,090 --> 00:14:03,510
+而不是把我们从现实中抽离出去
+rather than removing us from it.
+
+284
+00:14:03,810 --> 00:14:06,150
+这也是我们在Snapchat早期就意识到的一点
+And that's something that we realized early on with Snapchat.
+
+285
+00:14:06,150 --> 00:14:09,670
+当时我们在创新 打造滤镜和增强现实
+We were innovating, building lenses and augmented reality.
+
+286
+00:14:10,070 --> 00:14:14,130
+但最终我们发现 人们是在这些小小的手机屏幕上使用AR
+But ultimately, we saw that people were using AR on these tiny little phone screens that
+
+287
+00:14:14,130 --> 00:14:16,510
+你必须用拇指去和它交互
+required you to use your thumbs to interact.
+
+288
+00:14:17,250 --> 00:14:20,910
+所以那几乎就像是透过钥匙孔与世界互动
+And so it's almost like interacting with the world through a keyhole,
+
+289
+00:14:21,050 --> 00:14:25,450
+而不是脚踏实地地 和朋友一起在现实中互动
+rather than actually staying grounded and being able to interact together with friends.
+
+290
+00:14:25,630 --> 00:14:30,610
+因此 随着电脑在我们生活中扮演的角色越来越重要 这一点就显得非常显而易见
+So it just seems so obvious that as computers play a bigger and bigger role in our lives,
+
+291
+00:14:30,690 --> 00:14:35,010
+我想 现在人们平均每天在屏幕前要花七八个小时
+I think today people spend seven or eight hours a day on average on screens,
+
+292
+00:14:35,010 --> 00:14:40,750
+必须有些东西发生改变 让这类技术能更好地融入我们的生活
+that something has got to change to make this technology fit better into our lives.
+
+293
+00:14:40,890 --> 00:14:42,670
+我们从电脑中获得了巨大的价值
+We get enormous value from computers.
+
+294
+00:14:42,910 --> 00:14:43,710
+但与此同时
+But at the same time,
+
+295
+00:14:43,730 --> 00:14:45,870
+我认为这种代价是相当有意义的
+I think the cost is quite meaningful.
+
+296
+00:14:46,270 --> 00:14:49,450
+而且我觉得它们需要进化
+And I think they need to evolve.
+
+297
+00:14:49,750 --> 00:14:52,450
+所以在早期版本的 Spectacles（Snap智能眼镜）上
+So with the early version of Spectacles,
+
+298
+00:14:52,570 --> 00:14:54,990
+我记得那大概是在 2014 年左右
+I guess that was back in 2014 or something like that,
+
+299
+00:14:55,430 --> 00:14:58,450
+最初的想法是把相机从手机上解放出来
+the initial idea was to get the camera off the phone,
+
+300
+00:14:58,530 --> 00:15:03,770
+从你的口袋里拿出来，让你更轻松地在现实世界中拍 Snap
+out of your pocket, and allow you to more easily take snaps out in the world.
+
+301
+00:15:04,490 --> 00:15:07,010
+但在此基础上我们制定了一条产品路线图
+But we then built a roadmap from there,
+
+302
+00:15:07,090 --> 00:15:09,250
+在其中我们增加了第二个摄像头来获取深度信息
+where we added a second camera to get depth,
+
+303
+00:15:09,350 --> 00:15:14,510
+我们增加了一个显示屏，可以把数字物体叠加到现实世界中，并帮助你与之互动
+we added a display to be able to overlay digital objects into the world and help you interact with them.
+
+304
+00:15:14,590 --> 00:15:16,810
+然后在 2024 年的上一代产品中
+And then with the last generation in 2024,
+
+305
+00:15:16,930 --> 00:15:19,190
+我们发布了自己的操作系统
+we released our operating system,
+
+306
+00:15:19,210 --> 00:15:25,590
+现在它允许开发者在眼镜里构建功能完整的软件，为
+which now allows developers to build full-featured software inside of specs in preparation
+
+307
+00:15:25,590 --> 00:15:28,110
+面向消费者的发布做准备
+for the consumer launch.
+
+308
+00:15:28,310 --> 00:15:32,090
+所以我觉得，现在是时候出现一种新型计算设备了
+So I don't know, I think the time is right for a new type of computer.
+
+309
+00:15:32,270 --> 00:15:37,330
+我认为人们已经对今天使用手机和电脑所付出的代价感到厌倦
+I think people are frustrated with the cost of using phones and computers today.
+
+310
+00:15:37,410 --> 00:15:39,150
+他们都像小妖精一样弓着背
+They're kind of all hunched over like gremlins.
+
+311
+00:15:39,730 --> 00:15:42,590
+而我们可以打造一种新的计算设备
+And we can build a new computer.
+
+312
+00:15:42,650 --> 00:15:45,150
+我们已经打造出一种能把人们带到户外的新计算设备
+We have built a new computer that brings people outside,
+
+313
+00:15:45,470 --> 00:15:47,310
+帮助他们和朋友们建立连接
+that helps them connect together with their friends,
+
+314
+00:15:47,430 --> 00:15:50,730
+让他们真正解放双手去和世界互动
+that frees them up to actually use their hands to interact with the world.
+
+315
+00:15:50,970 --> 00:15:53,230
+而这对我来说非常令人兴奋
+And that to me is really exciting.
+
+316
+00:15:53,370 --> 00:15:55,010
+我认为这是全新的一个篇章
+I think it's a whole new chapter.
+
+317
+00:15:55,290 --> 00:15:56,270
+而且天哪，我是说
+And gosh, I mean, what,
+
+318
+00:15:56,330 --> 00:15:58,430
+距离 iPhone 问世已经有二十年左右了
+it's been 20 years or something since the iPhone.
+
+319
+00:15:58,630 --> 00:16:00,590
+所以我觉得，是时候出现点新的东西了
+So it's about time for something new, I think.
+
+320
+00:16:00,970 --> 00:16:04,470
+我提前体验了这款眼镜，真的非常酷
+So I got an early preview of the specs and it's extremely cool.
+
+321
+00:16:05,030 --> 00:16:06,930
+我学会了怎么当一个“控气术士”
+I learned how to be an airbender.
+
+322
+00:16:07,670 --> 00:16:09,890
+我在家里各个地方都放上了植物
+I put plants all over my house,
+
+323
+00:16:10,430 --> 00:16:11,710
+到处乱涂乱画
+drawing all over the place.
+
+324
+00:16:11,850 --> 00:16:13,130
+而且还有多人模式功能
+And there's multiplayer features,
+
+325
+00:16:13,170 --> 00:16:15,210
+这非常酷，我觉得这正是其中的一部分理念
+which is very cool, which I think is part of the idea,
+
+326
+00:16:15,210 --> 00:16:18,690
+就是让你和别人建立连接，而不是一个人坐在 VR 环境里
+is you're connecting with people versus sitting in a VR environment on your own.
+
+327
+00:16:19,770 --> 00:16:21,930
+我会担心自己一直处于连接状态
+I worry about being connected all the time.
+
+328
+00:16:22,010 --> 00:16:23,910
+所以我想这也是我们需要解决的新问题
+So I imagine that's a new thing we have to figure out.
+
+329
+00:16:24,370 --> 00:16:28,290
+我们要如何避免只沉迷于看旁边的内容，而不是看着和我们在一起的人
+How do we not just get hooked on just watching things on the side instead of looking at someone we're with?
+
+330
+00:16:29,270 --> 00:16:30,550
+你在这方面有什么想法吗
+Do you have any thoughts there?
+
+331
+00:16:30,790 --> 00:16:33,350
+除了依靠社会规范之外，还有别的解决方案吗
+Is there a solution to that other than just social norms?
+
+332
+00:16:33,930 --> 00:16:37,890
+我确实认为社会规范会发挥很大的作用
+I do think social norms will play a big role.
+
+333
+00:16:38,030 --> 00:16:43,130
+但我也认为，人们在使用 AR 眼镜时的一个体验是
+But I also think one of the things people experience with AR specs,
+
+334
+00:16:43,490 --> 00:16:45,530
+它和那些抬头显示眼镜不一样
+unlike these heads-up display glasses,
+
+335
+00:16:45,630 --> 00:16:51,330
+它不会只是把一个烦人的小屏幕贴在你脸上
+they don't just put an annoying little screen that's stuck to your face on the glasses.
+
+336
+00:16:51,470 --> 00:16:53,770
+它实际上是把内容锚定在现实世界中
+They actually anchor content in the world,
+
+337
+00:16:54,190 --> 00:16:55,570
+这点非常不同
+which is really different.
+
+338
+00:16:55,790 --> 00:17:02,070
+它会把内容直接放在你的视野里，而不是要求你去看
+They put that content directly in your field of view rather than requiring you to look
+
+339
+00:17:02,070 --> 00:17:05,190
+低头看一个小屏幕，或者接收某些文字提醒或通知
+down at some little screen or get some text alert or notification.
+
+340
+00:17:05,190 --> 00:17:10,250
+所以坦白说，我不觉得那些用例有多吸引人
+So I think, frankly, I don't think those use cases are very compelling.
+
+341
+00:17:10,490 --> 00:17:18,230
+我不认为把手机通知推到你脸上，对大多数人来说是个有价值的主张
+I don't think receiving phone notifications on your face is a valuable proposition for most folks.
+
+342
+00:17:18,290 --> 00:17:21,470
+所以我觉得我们不必太担心这一点，因为大多数人并不想要那样
+So I don't think we necessarily have to worry about that because I think most people don't want that.
+
+343
+00:17:21,630 --> 00:17:25,970
+我认为对这款眼镜真正重要的是，向人们展示
+I think what is going to be really important with specs is showing people all the
+
+344
+00:17:25,970 --> 00:17:30,630
+他们戴着眼镜可以用多么不可思议的新方式和朋友一起玩、一起连接
+incredible new ways they can hang out and connect together with their friends wearing specs.
+
+345
+00:17:31,010 --> 00:17:35,430
+但我不认为它会是打扰式的、以通知为中心之类的东西
+But I don't think it'll be disruptive or notification-based or something like that.
+
+346
+00:17:35,490 --> 00:17:38,810
+我特别不喜欢抬头显示眼镜的一点是，当你
+One of the things that I really dislike about the heads-up display glasses is when you're
+
+347
+00:17:38,810 --> 00:17:41,970
+看角落里的那个小小的抬头显示屏时
+looking at the little heads-up display in the corner,
+
+348
+00:17:42,090 --> 00:17:46,650
+如果你在聊天时去看那个抬头显示屏，你实际上是在盯着你朋友的裆部
+you're actually looking at your friend's crotch while you're talking to them if you check the heads-up display.
+
+349
+00:17:46,830 --> 00:17:48,870
+所以那个位置非常奇怪
+So the position is just very strange.
+
+350
+00:17:48,950 --> 00:17:52,630
+我不认为这真的是能打动用户的东西
+And I don't think that that's something that really is resonating with customers,
+
+351
+00:17:52,730 --> 00:17:55,910
+也不觉得这会变成一种广泛的行为模式
+nor do I think that's something that's going to become a widespread behavior.
+
+352
+00:17:56,490 --> 00:17:59,710
+我想回到“如何创新”这个话题
+I want to go back to this idea of how to innovate.
+
+353
+00:18:00,470 --> 00:18:05,090
+我觉得在产出新东西的数量上，Snap 一直都在超水平发挥
+I feel like Snap has always been punching above its weight in terms of just how much new
+
+354
+00:18:05,090 --> 00:18:06,570
+你们团队不断推出各种新东西
+stuff comes out of your team,
+
+355
+00:18:07,170 --> 00:18:08,910
+有那么多发明出现
+how many inventions happen,
+
+356
+00:18:09,430 --> 00:18:12,690
+考虑到公司的规模和历史
+considering the size of the company and the history.
+
+357
+00:18:13,090 --> 00:18:16,430
+在你看来，要让创新发生，需要具备哪些前提
+What do you find needs to be true for innovation to happen?
+
+358
+00:18:16,650 --> 00:18:19,650
+你们是怎么做的，才能让这些好点子不断涌现
+What do you do to allow for all these great ideas to emerge?
+
+359
+00:18:20,210 --> 00:18:23,710
+最好的学术概述或总结
+The best sort of academic overview or summary,
+
+360
+00:18:24,010 --> 00:18:25,290
+我觉得来自一个人
+I think, comes from a guy,
+
+361
+00:18:25,450 --> 00:18:27,970
+他叫 Safi Bahcall，写了一本书叫《Loonshots》
+Safi Bahcall, who wrote a book called Loonshots.
+
+362
+00:18:28,310 --> 00:18:29,510
+这本书非常值得一读
+It's really worth reading.
+
+363
+00:18:29,650 --> 00:18:31,610
+它完全是在讲创新的过程
+It's all about the innovation process.
+
+364
+00:18:31,890 --> 00:18:32,890
+而且实际上，当我读到这本书时
+And actually, when I read it,
+
+365
+00:18:32,910 --> 00:18:33,730
+我心想，天哪
+I was like, oh, my gosh,
+
+366
+00:18:33,750 --> 00:18:37,510
+这几乎把我们在 Snap 是如何思考创新的都解释清楚了
+that kind of explains a lot of how we think about innovation at Snap.
+
+367
+00:18:37,970 --> 00:18:40,550
+我想先把这个学术版本总结一下
+And I think to summarize the academic version,
+
+368
+00:18:40,630 --> 00:18:43,030
+然后再谈谈我们在 Snap 实际开发和构建的东西
+we can talk about what we've developed and built at Snap.
+
+369
+00:18:43,210 --> 00:18:45,830
+但简单来说
+But to summarize, essentially,
+
+370
+00:18:45,970 --> 00:18:49,410
+他的结论大致是
+his findings are that basically,
+
+371
+00:18:49,650 --> 00:18:51,430
+如果你想大规模交付一款产品
+if you want to deliver a product at scale,
+
+372
+00:18:51,470 --> 00:18:53,330
+通常需要一个相当庞大的组织
+you usually need quite a large organization.
+
+373
+00:18:53,510 --> 00:18:55,910
+大型组织需要层级和结构
+A large organization needs hierarchy and structure,
+
+374
+00:18:55,910 --> 00:18:58,170
+以及大量严谨的运营管理
+a lot of operational rigor.
+
+375
+00:18:58,750 --> 00:19:02,470
+一旦你有了这样一个庞大且高度结构化的组织
+And as soon as you have an organization that's very large and very structured like that,
+
+376
+00:19:02,710 --> 00:19:06,030
+人们就会非常专注于升职
+people become very focused on getting a promotion,
+
+377
+00:19:06,390 --> 00:19:08,870
+想要进入层级中的下一阶
+getting into the next step of the hierarchy.
+
+378
+00:19:09,390 --> 00:19:11,290
+这就意味着
+And that means that all of a sudden,
+
+379
+00:19:11,450 --> 00:19:13,210
+他们会突然变得更加厌恶风险
+they become a lot more risk averse.
+
+380
+00:19:13,650 --> 00:19:16,170
+他们不再那么愿意尝试新事物
+They're not really as willing to try new things.
+
+381
+00:19:16,170 --> 00:19:21,970
+他们会非常专注于完成这个运营层级为他们设定的目标
+They're very focused on achieving the goals that have sort of been set for them in this operational hierarchy.
+
+382
+00:19:22,350 --> 00:19:25,850
+而这使得创新变得非常非常具有挑战性
+And that makes it very, very challenging to innovate.
+
+383
+00:19:26,610 --> 00:19:27,590
+但从另一个角度看
+Now, on the flip side,
+
+384
+00:19:28,210 --> 00:19:33,450
+真正有利于创新、对创新健康且建设性的结构，通常都非常非常扁平
+structures that are really healthy and constructive for innovation typically are very, very flat.
+
+385
+00:19:34,170 --> 00:19:36,010
+我们的设计团队也是这样
+That's the same for our design team,
+
+386
+00:19:36,090 --> 00:19:39,110
+比如说，没有谁拥有更花哨的头衔或职位
+for example, where there's no one that has a fancier title or a role.
+
+387
+00:19:39,630 --> 00:19:43,990
+在尝试新事物和快速失败方面有很大的灵活性
+There's a lot of flexibility in terms of the ability to try new things and fail quickly
+
+388
+00:19:43,990 --> 00:19:46,090
+也可以大胆提出各种疯狂的想法
+and put up crazy ideas.
+
+389
+00:19:46,910 --> 00:19:51,770
+而他的基本发现是，那些非常成功的公司实际上
+And what he basically finds is that the companies that are very successful actually have
+
+390
+00:19:51,770 --> 00:19:54,270
+在公司内部同时拥有这两种类型的组织
+both types of organizations inside their company.
+
+391
+00:19:55,010 --> 00:19:59,170
+而组织的领导者则需要负责在这两种组织之间建立
+And that the leaders of the organization are the ones who are responsible for creating a
+
+392
+00:19:59,170 --> 00:20:02,670
+一种健康且运转良好的关系
+healthy, functioning relationship between the two types of organizations.
+
+393
+00:20:03,010 --> 00:20:06,850
+因为在很多公司里最终会发生的情况是那个小型
+Because what ends up happening in a lot of companies is that the small,
+
+394
+00:20:06,970 --> 00:20:10,150
+创新团队会开始批评大型组织
+innovative team becomes critical of the large organization.
+
+395
+00:20:10,490 --> 00:20:12,250
+哦 他们太官僚 太慢了
+Oh, they're so bureaucratic and slow.
+
+396
+00:20:12,390 --> 00:20:13,990
+他们不创新 诸如此类
+They don't innovate, things like that.
+
+397
+00:20:14,410 --> 00:20:16,850
+然后大型组织这边则会觉得
+And then the larger organization is like,
+
+398
+00:20:16,910 --> 00:20:18,550
+哦 这些小丑在干嘛
+oh, what are these jokers doing?
+
+399
+00:20:18,670 --> 00:20:20,970
+只是在搞创新 他们并没有真正推动业务
+Just innovating. They're not really driving the business.
+
+400
+00:20:21,090 --> 00:20:22,110
+他们也没有在支持我们的客户
+They're not supporting our customers.
+
+401
+00:20:22,570 --> 00:20:26,590
+所以很多紧张关系其实是由不同的组织结构引发的
+And so a lot of tension actually arises from the different organizational structures.
+
+402
+00:20:26,810 --> 00:20:28,810
+因此领导层的责任
+And so the leadership responsibility,
+
+403
+00:20:28,970 --> 00:20:32,430
+而且我认为Safi在回顾历史时做得非常好
+and I think Safi does a really good job looking throughout history,
+
+404
+00:20:32,530 --> 00:20:38,490
+去研究哪些领导者在以下两者之间建立了非常建设性且强有力的关系
+what leaders have cultivated really constructive and powerful relationships between the
+
+405
+00:20:38,490 --> 00:20:44,990
+一边是组织中更具创新性或更扁平的部分 另一边是更结构化和等级分明的部分
+more innovative or flat parts of the organization and the more structured and hierarchical
+
+406
+00:20:44,990 --> 00:20:45,930
+组织的这些部分之间
+parts of the organization.
+
+407
+00:20:46,630 --> 00:20:48,170
+你如何建立那种相互尊重
+How you create that mutual respect,
+
+408
+00:20:48,390 --> 00:20:51,790
+如何在这些组织部分之间建立对话是极其重要的
+how you create that dialogue between those parts of the organization is so important.
+
+409
+00:20:52,010 --> 00:20:53,450
+所以当我读到这些时
+And so when I read that,
+
+410
+00:20:53,510 --> 00:20:56,650
+我就觉得 哇 这听起来和我们在Snap的情况非常相似
+I was like, wow, that actually sounds quite similar to what we have at Snap.
+
+411
+00:20:56,890 --> 00:20:58,930
+我们必须运营一家大型上市公司
+We have to run a large public company,
+
+412
+00:20:59,030 --> 00:21:00,450
+为将近十亿用户提供服务
+serve almost a billion customers.
+
+413
+00:21:00,630 --> 00:21:03,290
+这意味着我们的服务必须非常可靠
+That means our service needs to be really reliable.
+
+414
+00:21:03,570 --> 00:21:05,630
+这意味着我们在运营上必须非常
+It means that we need to operate really,
+
+415
+00:21:05,950 --> 00:21:07,830
+非常高效 才能服务好我们的用户
+really effectively to serve our customers.
+
+416
+00:21:07,910 --> 00:21:10,210
+与此同时，我们还有一个非常非常小的
+And at the same time, we have a very, very small,
+
+417
+00:21:10,310 --> 00:21:17,730
+人数在九到十二人之间波动的设计团队 不断在创新和创造新东西
+it oscillates between nine and 12 people design team that is constantly innovating and creating new things.
+
+418
+00:21:17,850 --> 00:21:22,550
+而我认为 我最喜欢Snap的一点在于 这两个团队之间的对话
+And I think the beauty of what I love about Snap is that the dialogue between those two
+
+419
+00:21:22,550 --> 00:21:24,490
+正是大量创新发生的地方
+teams is where a lot of that innovation happens.
+
+420
+00:21:24,650 --> 00:21:29,150
+因为很多致力于服务用户或提升可靠性的工程师
+Because a lot of our engineers working to serve our customers or working on reliability
+
+421
+00:21:29,150 --> 00:21:30,470
+手里都有一堆很棒的想法
+have a bunch of great ideas,
+
+422
+00:21:30,570 --> 00:21:31,390
+我们的设计师也是如此
+and so do our designers.
+
+423
+00:21:31,590 --> 00:21:32,870
+只要他们保持对话
+And as long as they're in dialogue,
+
+424
+00:21:33,390 --> 00:21:34,990
+就会发生非常棒的事情
+really great things can happen.
+
+425
+00:21:35,530 --> 00:21:37,350
+有个人 我忘了是谁
+There's someone, I forget who this was,
+
+426
+00:21:37,410 --> 00:21:41,770
+但他把这种方法描述为组织中的快速思考部分和慢速思考部分
+but they described this approach as the fast thinking and slow thinking part of the
+
+427
+00:21:41,770 --> 00:21:45,230
+有点像卡尼曼提出的系统一 系统二的那种方式
+organization, kind of like Kahneman's system one, system two approach.
+
+428
+00:21:46,130 --> 00:21:47,910
+这很有趣 这个快速行动的
+It's interesting, the fast moving,
+
+429
+00:21:47,910 --> 00:21:51,130
+你们怎么称呼这个创新团队
+what do you call this innovation team?
+
+430
+00:21:51,350 --> 00:21:52,370
+你们有没有给它起个名字
+Do you have a label for this,
+
+431
+00:21:52,570 --> 00:21:54,950
+就是这个“来想新点子”的组织部分
+let's come up with the new ideas part of the org?
+
+432
+00:21:55,190 --> 00:21:59,310
+我认为非常重要的一点是要承认新想法可以来自任何地方 而我们也希望如此
+Well, I think it's really important to acknowledge that new ideas come from everywhere and we want that.
+
+433
+00:21:59,470 --> 00:22:02,470
+但我觉得尤其对设计团队来说 这一点非常重要
+But I think the design team in particular, it's really important,
+
+434
+00:22:02,490 --> 00:22:03,490
+我们就叫它设计团队
+and we call it the design team,
+
+435
+00:22:03,610 --> 00:22:05,610
+对他们来说 拥有一个扁平
+it's really important that they have a flat,
+
+436
+00:22:05,850 --> 00:22:09,890
+非等级化的结构 让新想法可以从任何地方冒出来 是非常重要的
+non-hierarchical structure where new ideas can come from anywhere.
+
+437
+00:22:10,070 --> 00:22:12,850
+我认为这是绝对关键的
+I think that that is absolutely critical.
+
+438
+00:22:13,170 --> 00:22:14,650
+那么在如何把这一点落实到运营层面上
+So in terms of how you operationalize this,
+
+439
+00:22:14,690 --> 00:22:18,330
+你所看到的创新的关键 是否就在于这个特定的
+is that the key to the innovation you've seen is this specific,
+
+440
+00:22:18,750 --> 00:22:22,110
+能够高效工作的精小设计团队
+small design team who can work?
+
+441
+00:22:22,330 --> 00:22:25,830
+说说你们实际上是如何把这种工作方式运营起来的
+Talk about just how you actually operationalize this sort of way of working.
+
+442
+00:22:26,450 --> 00:22:28,030
+是的 我觉得这是其中一个重要部分
+Yeah, I mean, I think it's an important part of it,
+
+443
+00:22:28,090 --> 00:22:32,910
+但我们构建Snap的很多方式 实际上是以我和Bobby Murphy最初的合作关系为模型的 对吧
+but a lot of how we built Snap was modeled actually on mine and Bobby Murphy's original relationship, right?
+
+444
+00:22:32,990 --> 00:22:39,190
+Bobby Murphy有非常扎实的计算机科学和统计学背景
+Where Bobby Murphy has a heavy duty computer science and stats background,
+
+445
+00:22:39,690 --> 00:22:41,830
+数学和计算科学背景
+mathematical and computational science,
+
+446
+00:22:41,930 --> 00:22:48,010
+但他非常喜欢设计 喜欢思考如何为用户构建产品 并与他们共情
+but he really likes design and likes thinking about building things for customers and empathizing with them.
+
+447
+00:22:48,370 --> 00:22:49,850
+而我有设计背景 对吧
+I have a design background, right?
+
+448
+00:22:49,890 --> 00:22:52,950
+我在学校时读的是产品设计项目
+I was in the product design program back at school,
+
+449
+00:22:53,130 --> 00:22:55,790
+当时这个项目实际上隶属于机械工程系
+which actually was part of the mechanical engineering department at the time.
+
+450
+00:22:55,890 --> 00:22:57,710
+我也上过一些计算机科学课程
+I took some computer science classes.
+
+451
+00:22:58,570 --> 00:23:03,930
+所以在谈到计算机科学时 我多少还是懂一点的
+So I sort of knew what I was talking about when it came to computer science.
+
+452
+00:23:04,110 --> 00:23:08,550
+因此我们彼此尊重对方 也尊重彼此的技能和背景 并且
+So we both had mutual respect for each other and our skill sets and our backgrounds and
+
+453
+00:23:08,550 --> 00:23:13,650
+都很享受一起讨论我们想要创造的产品类型
+both enjoyed talking together about the types of products we wanted to create.
+
+454
+00:23:13,730 --> 00:23:16,170
+而这种对话带来了大量创新
+And that dialogue created a lot of innovation.
+
+455
+00:23:16,370 --> 00:23:19,450
+所以我们在思考公司如何随时间成长时 很多做法都是围绕着
+And so a lot of how we've thought about growing the company over time is like
+
+456
+00:23:19,450 --> 00:23:24,150
+加强工程师和设计师之间的对话 并创造一种环境
+strengthening that dialogue between engineers and designers and creating an environment
+
+457
+00:23:24,150 --> 00:23:28,730
+让大家可以放心大胆地抛出非常疯狂的想法
+where folks feel comfortable throwing out really crazy ideas.
+
+458
+00:23:28,910 --> 00:23:31,030
+但我认为 对设计团队来说尤其如此
+But I think for the design team in particular,
+
+459
+00:23:31,070 --> 00:23:36,170
+其中可能最重要的一点是设计工作的速度
+the thing that is probably most important is the velocity of design work.
+
+460
+00:23:36,290 --> 00:23:41,350
+所以我通常每周会和我们的设计师见面几个小时 我们就只是一起看作品
+So I typically meet with our designers for a couple hours every week and we just look at work.
+
+461
+00:23:41,610 --> 00:23:43,190
+我的意思是 每周都有新作品
+I mean, new work every week,
+
+462
+00:23:43,750 --> 00:23:45,370
+我猜可能有上百个想法
+hundreds of ideas, I would guess,
+
+463
+00:23:45,550 --> 00:23:46,790
+每周都是这样
+on a weekly basis.
+
+464
+00:23:47,410 --> 00:23:54,490
+对我来说 如果回想我是从哪里学会设计和构建东西的
+To me, if I think about where I learned how to design and build things,
+
+465
+00:23:54,590 --> 00:23:59,050
+我的经历有点有趣的组合 因为我在斯坦福读的是产品
+I have sort of an interesting combination because I went to Stanford for the product
+
+466
+00:23:59,050 --> 00:24:01,170
+设计项目 这个项目非常强调共情
+design program, which is really focused on empathy,
+
+467
+00:24:01,370 --> 00:24:05,650
+强调通过迭代过程去理解人们想要什么 然后做原型
+this iterative process of understanding what people want and building prototypes and
+
+468
+00:24:05,650 --> 00:24:08,950
+不断迭代 但核心始终是共情 以人为本的设计
+iterating, but really centered on empathy, human-centered design.
+
+469
+00:24:09,730 --> 00:24:11,570
+然后与此同时 我也上过艺术学校
+And then at the same time, I had also been to art school.
+
+470
+00:24:11,670 --> 00:24:12,790
+我在ArtCenter学习过
+So I had studied at ArtCenter.
+
+471
+00:24:13,050 --> 00:24:15,590
+也在洛杉矶这边的Otis学习过
+I'd studied at Otis here in Los Angeles,
+
+472
+00:24:15,870 --> 00:24:17,570
+这两所都是很棒的艺术院校
+both great art schools.
+
+473
+00:24:17,890 --> 00:24:24,510
+所以我已经习惯了那种高压预期 就是你必须一直在创作新作品
+And so I was used to this grinding expectation that you're making new work all the time
+
+474
+00:24:24,510 --> 00:24:29,330
+然后还要定期经历极其严苛的作品评审过程
+and then just an absolutely brutal critique process on a regular basis.
+
+475
+00:24:29,850 --> 00:24:35,290
+因此对我来说 当我回想自己教育中真正喜欢的部分时
+And so for me, as I thought about the parts of my education that I really liked,
+
+476
+00:24:35,290 --> 00:24:39,910
+正是这种组合 一方面是深入培养对人的共情 以及对他们想要的产品类型的理解
+it was this combination of really developing empathy with people and the types of products
+
+477
+00:24:39,910 --> 00:24:40,870
+也就是他们在生活中想要的那些产品
+that they want in their lives.
+
+478
+00:24:41,290 --> 00:24:42,010
+但与此同时
+But at the same time,
+
+479
+00:24:42,030 --> 00:24:50,490
+还要有一种高速度的工作伦理 不是整天只在想新产品
+having this really high-velocity work ethic where you're not just thinking all the time about new products.
+
+480
+00:24:50,490 --> 00:24:53,350
+而是每周都在真正做东西 一直在做
+You're actually making stuff every week, all the time.
+
+481
+00:24:53,470 --> 00:24:57,130
+然后你们作为一个团队来讨论这些作品 因为在评审过程中
+And then you're talking about it as a team because that critique process is where so much
+
+482
+00:24:57,130 --> 00:24:58,650
+会发生大量的学习
+of the learning happens.
+
+483
+00:24:59,090 --> 00:25:04,290
+所以我会说 工作的速度非常重要 因为我们最喜欢的一句话是
+So I would say that the velocity of work is really important because our favorite saying
+
+484
+00:25:04,290 --> 00:25:05,970
+如果你想要有一个好点子
+is, if you want to have a good idea,
+
+485
+00:25:06,050 --> 00:25:07,050
+你就必须先有很多很多点子
+you have to have lots of ideas.
+
+486
+00:25:07,290 --> 00:25:08,570
+这一点非常非常重要
+That's really, really important.
+
+487
+00:25:09,210 --> 00:25:10,870
+我刚刚在播客上采访了Keith Rabois
+I just had Keith Rabois on the podcast.
+
+488
+00:25:11,350 --> 00:25:12,750
+我不知道你是否了解
+I don't know if you know this about his,
+
+489
+00:25:12,890 --> 00:25:14,190
+他有很多反主流的观点
+he has many contrarian takes.
+
+490
+00:25:14,750 --> 00:25:16,710
+其中一个是 如果你在做一款面向消费者的产品
+One is if you're building a consumer product,
+
+491
+00:25:17,110 --> 00:25:18,210
+不要和客户说话
+do not talk to customers.
+
+492
+00:25:18,810 --> 00:25:19,990
+这不仅没有用
+Not only is it not useful,
+
+493
+00:25:20,150 --> 00:25:26,070
+他的建议是这有害处 因为它会渗入你的潜意识 而且就是不会
+his advice is it's harmful because it can infiltrate your subconscious and it just doesn't
+
+494
+00:25:26,070 --> 00:25:26,930
+带来什么了不起的结果
+lead to great things.
+
+495
+00:25:27,290 --> 00:25:28,350
+你对此怎么看
+What's your perspective on that?
+
+496
+00:25:28,710 --> 00:25:30,150
+哇 这真的很有意思
+Wow, that's really interesting.
+
+497
+00:25:30,370 --> 00:25:32,790
+我会说你必须和客户交谈
+I would say you have to talk to customers.
+
+498
+00:25:32,970 --> 00:25:36,390
+你必须尽快分享你的想法
+You have to share your idea as quickly as possible,
+
+499
+00:25:36,470 --> 00:25:37,570
+而且要尽可能频繁地分享
+as frequently as possible.
+
+500
+00:25:38,030 --> 00:25:40,390
+这并不意味着你需要采纳别人的建议或反馈
+It doesn't mean you need to take people's advice or feedback,
+
+501
+00:25:40,630 --> 00:25:41,810
+但这件事本身非常重要
+but it's really important,
+
+502
+00:25:41,870 --> 00:25:42,490
+我认为 倾听本身很重要
+I think, to listen.
+
+503
+00:25:43,110 --> 00:25:47,090
+对我来说 这不是那种问卷调查式的倾听
+I think for me, it's not like the survey model of listening.
+
+504
+00:25:47,190 --> 00:25:48,410
+我不觉得那种方式特别有用
+I don't think that's particularly helpful.
+
+505
+00:25:48,570 --> 00:25:51,230
+但我认为 深入地和某个人聊一个小时
+But I think going deep and talking with someone for an hour,
+
+506
+00:25:51,350 --> 00:25:53,130
+两个小时 聊他们是如何使用科技的
+two hours about how do they use technology?
+
+507
+00:25:53,290 --> 00:25:54,310
+它如何融入他们的生活
+How does it fit in their lives?
+
+508
+00:25:54,370 --> 00:25:56,670
+他们对自己正在使用的产品有什么感受
+How do they feel about the products they're using?
+
+509
+00:25:56,730 --> 00:25:57,910
+你能从中学到太多东西
+You can learn so much.
+
+510
+00:25:58,030 --> 00:26:04,070
+在打造产品这件事上 我认为客户是取之不尽的灵感来源
+I think customers are an endless source of inspiration when it comes to building products.
+
+511
+00:26:04,090 --> 00:26:06,050
+所以我是非常支持和用户交谈的
+So pro-talking to users,
+
+512
+00:26:06,250 --> 00:26:09,190
+因为我觉得你一直很擅长那种
+because I feel like you've been really good at just like,
+
+513
+00:26:09,270 --> 00:26:11,750
+这就是它会变成什么样 这就是它应该是什么样
+here's what it'll be and here's how it should be.
+
+514
+00:26:12,130 --> 00:26:14,430
+即使人们可能不理解 这才是它应该的样子
+And even though people may not understand this is what it should be,
+
+515
+00:26:14,570 --> 00:26:16,050
+但我相信我自己 它会运作得非常好
+I trust me it'll work really well.
+
+516
+00:26:16,390 --> 00:26:17,630
+那这种平衡到底是什么样的
+What's that balance of just like,
+
+517
+00:26:17,710 --> 00:26:19,710
+哪些是我要关注的
+here's what I'll pay attention to,
+
+518
+00:26:19,790 --> 00:26:20,310
+哪些是我不会去管的
+here's what I won't?
+
+519
+00:26:20,670 --> 00:26:23,310
+那我们就用快拍（Stories）来举个例子吧
+Well, let's use stories as an example, right?
+
+520
+00:26:23,390 --> 00:26:26,990
+当时我们一直在听到客户的反馈
+So, you know, back then we were hearing from customers all the time,
+
+521
+00:26:27,070 --> 00:26:28,030
+我想要一个“全部发送”按钮
+I want to send all button.
+
+522
+00:26:28,150 --> 00:26:29,170
+我想要一个“全部发送”按钮
+I want to send all button.
+
+523
+00:26:29,790 --> 00:26:33,590
+在我的Snapchat好友列表里一个个勾选太烦人了
+You know, it's so annoying to select everybody on my list of friends and Snapchat.
+
+524
+00:26:33,710 --> 00:26:34,630
+如果你能给我一个“全部发送”按钮
+If you just give me a send all button,
+
+525
+00:26:34,730 --> 00:26:36,790
+那我就可以一整天给所有人疯狂发Snap
+then I can blast snaps to everybody all day long.
+
+526
+00:26:36,870 --> 00:26:37,510
+那就太棒了
+And that'd be really great.
+
+527
+00:26:38,950 --> 00:26:42,710
+与此同时，我们也在和人们讨论他们使用社交媒体的情况，对吧
+And at the same time, we were talking to people about their use of social media, right?
+
+528
+00:26:42,750 --> 00:26:43,370
+他们会说 哦
+And they're like, oh,
+
+529
+00:26:43,370 --> 00:26:45,310
+天哪 社交媒体让我压力山大
+gosh, social media, I feel all this pressure, right?
+
+530
+00:26:45,330 --> 00:26:47,490
+我发上去的所有东西都是永久存在的
+Everything I put up there is permanent all the time.
+
+531
+00:26:47,870 --> 00:26:49,590
+上面还有各种点赞和评论
+You know, it's got all these likes and comments.
+
+532
+00:26:49,610 --> 00:26:50,570
+所以充满了各种评判
+So there's all this judgment.
+
+533
+00:26:50,730 --> 00:26:53,890
+所以我只觉得自己能发一些漂亮完美的东西上去
+So I only feel like I can put like pretty and perfect things up there,
+
+534
+00:26:54,670 --> 00:26:57,390
+你懂的 而我就是不喜欢那种压力
+you know, and I just don't like that pressure.
+
+535
+00:26:57,470 --> 00:26:58,190
+那种感觉一点也不好
+That doesn't feel good.
+
+536
+00:26:58,190 --> 00:27:02,730
+我其实很喜欢Snapchat的方式 它让我可以只是表达自己 并和我的
+I actually love the way that Snapchat allows me to just express myself and share with my
+
+537
+00:27:02,730 --> 00:27:06,270
+朋友分享 而不会有那种评判和压力
+friends without that sort of judgment and pressure.
+
+538
+00:27:07,250 --> 00:27:08,750
+所以我们觉得这点非常有意思
+And so we thought that was really interesting.
+
+539
+00:27:08,910 --> 00:27:10,390
+所以你知道 我们就更深入地去研究
+And so, you know, we dug deeper into the,
+
+540
+00:27:10,510 --> 00:27:11,790
+人们到底是如何使用社交媒体的
+you know, how people were using social media.
+
+541
+00:27:11,950 --> 00:27:15,370
+我们发现 他们觉得很奇怪的一点是 所有东西在信息流里
+We found that one of the things they thought was really weird was that everything was in
+
+542
+00:27:15,370 --> 00:27:17,370
+都是按时间倒序排列的
+reverse chronological order in the feed.
+
+543
+00:27:17,450 --> 00:27:19,470
+当时的信息流 也就是时间线 对吧
+So the feed back in the day, the timeline, right?
+
+544
+00:27:20,030 --> 00:27:21,930
+比如说 人们发照片的时候
+Like, you know, when people posted photos,
+
+545
+00:27:22,550 --> 00:27:26,590
+他们总会发现 生日派对的结尾部分先出现在信息流里
+you know, they would always find that like the end of the birthday party appeared first in the feed, right?
+
+546
+00:27:26,630 --> 00:27:27,670
+然后是中间的部分 接着
+And then the middle and then,
+
+547
+00:27:27,950 --> 00:27:29,070
+才是派对一开始的部分
+you know, the beginning of the party.
+
+548
+00:27:29,170 --> 00:27:31,150
+所以一切都有点像是
+So everything was sort of,
+
+549
+00:27:31,290 --> 00:27:33,870
+在信息流里倒放一样
+you know, just like played in reverse in the feed,
+
+550
+00:27:33,970 --> 00:27:36,370
+这对大家来说非常奇怪
+which was really strange to folks.
+
+551
+00:27:36,570 --> 00:27:38,830
+所以我们把这些全都听进去了
+So we listened to all of that, right?
+
+552
+00:27:38,830 --> 00:27:40,470
+这些反馈我们都听到了
+And heard all of that.
+
+553
+00:27:40,810 --> 00:27:43,470
+但接着我们想出了一个完全全新的 不一样的东西
+But then we came up with something totally new and different,
+
+554
+00:27:43,490 --> 00:27:46,450
+那些都是故事 对吧 而且是对反馈作出回应的 对吧
+which were stories, right? That were responsive to the feedback, right?
+
+555
+00:27:46,470 --> 00:27:47,450
+它们并没有 你知道
+They didn't, you know,
+
+556
+00:27:47,490 --> 00:27:48,410
+做出一个“全部发送”按钮
+create a send all button,
+
+557
+00:27:48,430 --> 00:27:51,990
+但它们确实创造了一种方式 让你可以轻松地和所有朋友分享 而不会整天刷屏打扰他们
+but they did create a way to easily share with all of your friends without spamming them all day long.
+
+558
+00:27:52,090 --> 00:27:54,630
+它们去掉了那些指标
+They removed, you know, metrics.
+
+559
+00:27:54,710 --> 00:27:55,530
+它们没有 你知道
+They didn't have, you know,
+
+560
+00:27:55,590 --> 00:27:58,410
+点赞 评论之类的东西 来减轻压力
+likes and comments and things like that to reduce pressure.
+
+561
+00:27:58,570 --> 00:28:02,590
+内容在24小时后消失 这样每个人第二天都能重新开始
+They disappeared after 24 hours so that everyone could start the day fresh again,
+
+562
+00:28:02,750 --> 00:28:03,910
+你懂的 新的一天
+you know, the next day.
+
+563
+00:28:03,990 --> 00:28:06,070
+而且 也许最重要的是
+And they, you know, maybe most importantly,
+
+564
+00:28:06,150 --> 00:28:07,130
+它们是按时间顺序排列的
+were in chronological order,
+
+565
+00:28:07,210 --> 00:28:08,850
+这才是人类讲故事的方式
+which is the way that people have told stories,
+
+566
+00:28:08,950 --> 00:28:10,730
+自古以来一直如此
+you know, since the beginning of time.
+
+567
+00:28:10,870 --> 00:28:14,690
+所以我认为这是一个例子 说明倾听是多么有价值
+So I think that's an example where like listening is incredibly valuable.
+
+568
+00:28:14,690 --> 00:28:16,370
+我们从中获得的所有洞见
+All of those insights that we,
+
+569
+00:28:16,430 --> 00:28:20,690
+也就是通过倾听人们得到的 让产品设计过程发生了巨大的变化
+you know, received just from listening to folks made a huge difference in the product design process.
+
+570
+00:28:20,810 --> 00:28:22,850
+但我们并没有照着他们提的需求一模一样去做
+But we didn't build exactly what they asked for.
+
+571
+00:28:22,950 --> 00:28:24,330
+我们先共情 然后
+We empathized and then,
+
+572
+00:28:24,450 --> 00:28:25,610
+想出了一个全新的东西
+you know, came up with something new.
+
+573
+00:28:25,930 --> 00:28:26,750
+这真是一个很棒的故事
+That is such a great story.
+
+574
+00:28:26,890 --> 00:28:30,210
+我很喜欢听这些功能的故事 大家现在都在用 它们是怎么诞生的
+I love hearing these stories of features that everyone's using now and how they came to be.
+
+575
+00:28:30,710 --> 00:28:32,490
+有没有那么一个瞬间 就是那种
+Was there like a moment of just like,
+
+576
+00:28:32,590 --> 00:28:34,910
+这就是答案了 这就是快拍这个概念 的那种时刻 你还记得吗
+this is the way, this is the story concept that you remember?
+
+577
+00:28:35,030 --> 00:28:36,870
+还是说它更像是一个非常渐进的演化过程
+Or was it kind of this very gradual evolution?
+
+578
+00:28:37,210 --> 00:28:39,190
+它是迭代出来的 因为在很多方面
+It was iterative because in a lot of ways,
+
+579
+00:28:39,230 --> 00:28:40,350
+一些早期的想法
+some of the early ideas,
+
+580
+00:28:40,530 --> 00:28:42,950
+更像是从状态更新这个方向开始的
+you know, started more around like a status update,
+
+581
+00:28:43,290 --> 00:28:44,690
+有点像是那种
+you know, that was sort of like,
+
+582
+00:28:44,790 --> 00:28:48,330
+即使你没有在和Snapchat上的朋友互发Snap
+you know, how could you know what your friends on Snapchat were up to even if you weren't
+
+583
+00:28:48,330 --> 00:28:49,490
+你也能知道他们在干什么
+sending snaps back and forth?
+
+584
+00:28:49,650 --> 00:28:52,170
+所以你知道 它大概就是从那里起步的
+And so, you know, it sort of started there.
+
+585
+00:28:52,310 --> 00:28:54,670
+然后你知道的，再一次通过和人交流、不断迭代，
+And then, you know, again, through talking to people and iterating,
+
+586
+00:28:54,830 --> 00:28:57,230
+去理解大家真正想要的是什么
+understanding what folks were really looking for,
+
+587
+00:28:57,290 --> 00:28:58,390
+最终我们就 你知道
+we ended up, you know,
+
+588
+00:28:58,390 --> 00:28:59,250
+最后就发展出了快拍（Stories）
+ended up with stories.
+
+589
+00:28:59,350 --> 00:29:00,130
+还有一些手势操作
+And some of the gestures,
+
+590
+00:29:00,270 --> 00:29:02,450
+你知道的，就是人们今天可能已经习以为常的那些
+you know, that people maybe take for granted today,
+
+591
+00:29:02,490 --> 00:29:06,150
+比如可以点按向前或向后浏览快拍（Stories），全屏显示，对吧
+being able to tap forward through stories and backwards through stories, full screen, right?
+
+592
+00:29:06,290 --> 00:29:10,030
+竖屏内容 这些在当时全都是非常新的东西
+Vertical content. Those were all really new things at the time.
+
+593
+00:29:10,490 --> 00:29:15,170
+还有没有别的你们做过的东西的故事 是那种很有趣的
+Is there another story of something that you all built that just like was interesting and
+
+594
+00:29:15,170 --> 00:29:15,850
+以及它是怎么诞生的
+of how it came to be?
+
+595
+00:29:15,890 --> 00:29:18,550
+这些故事太有意思了 而且大家都不知道这段历史
+These are so interesting and people don't know these histories.
+
+596
+00:29:18,790 --> 00:29:23,170
+其中一个我最喜欢的故事是关于截屏检测的
+You know, one of my favorite stories was around screenshot detection,
+
+597
+00:29:23,430 --> 00:29:24,470
+实际上是在早期的时候
+actually, in the early days,
+
+598
+00:29:24,530 --> 00:29:27,870
+因为当我们刚做出 Snapchat 并且
+because when we first built Snapchat and we,
+
+599
+00:29:27,910 --> 00:29:28,670
+跟大家分享说
+you know, shared with people,
+
+600
+00:29:28,790 --> 00:29:29,990
+哦 你可以发送会消失的照片
+oh, you could send photos that disappear.
+
+601
+00:29:30,090 --> 00:29:31,750
+所有人都说 不可能
+Everyone said, no, you can't.
+
+602
+00:29:31,770 --> 00:29:32,790
+你随时都可以截屏啊
+You can always take a screenshot.
+
+603
+00:29:33,250 --> 00:29:34,750
+你说可以发会消失的东西是什么意思
+What do you mean you can send things that disappear?
+
+604
+00:29:34,790 --> 00:29:35,530
+这完全说不通
+That makes no sense.
+
+605
+00:29:36,010 --> 00:29:38,430
+所以你知道 我们想了很多
+And so, you know, we thought a lot.
+
+606
+00:29:38,510 --> 00:29:39,570
+我记得那个夏天
+I remember that summer,
+
+607
+00:29:39,770 --> 00:29:42,130
+你知道吧，放学之后我们就回家，在我爸的房子上干活
+you know, after school, we went home, we're working on my dad's house.
+
+608
+00:29:42,150 --> 00:29:44,310
+我和 Bobby Murphy 一直来回讨论 我们当时就想
+And Bobby Murphy and I were just going back and forth and we were like,
+
+609
+00:29:44,330 --> 00:29:47,270
+我们自己用这个产品玩得很开心
+you know, we were having fun using the product.
+
+610
+00:29:47,390 --> 00:29:48,150
+我们在互相发送
+We were sending, you know,
+
+611
+00:29:48,210 --> 00:29:49,130
+各种照片来回传
+photos back and forth.
+
+612
+00:29:49,330 --> 00:29:50,290
+但大家还是不停地说
+But people would just keep saying,
+
+613
+00:29:50,350 --> 00:29:51,070
+嗯 这个东西吧
+well, this like this,
+
+614
+00:29:51,170 --> 00:29:53,990
+它根本不是所谓的会消失的照片 因为你完全可以把它们存下来
+just it's not about disappearing photos because you can just save them.
+
+615
+00:29:54,090 --> 00:29:54,890
+我就是不明白
+Like, I don't get it.
+
+616
+00:29:55,170 --> 00:29:57,690
+当时我们发明的其中一个东西是
+And one of the things we invented at the time,
+
+617
+00:29:57,730 --> 00:29:59,050
+我们想出了一种办法
+we figured out a way.
+
+618
+00:29:59,390 --> 00:30:04,390
+我们意识到 如果你按住屏幕来打开一个 Snap 并且一直把手指放在
+We realized that if you were pressing and holding to open a snap and left your finger on
+
+619
+00:30:04,390 --> 00:30:06,930
+屏幕上 然后你再截屏
+the screen and you took a screenshot,
+
+620
+00:30:06,930 --> 00:30:09,330
+它基本上会触发
+it would basically trigger,
+
+621
+00:30:09,570 --> 00:30:15,750
+你知道 本质上是一个手机事件 让手机报告说
+you know, an event on the phone essentially that made the phone would essentially report
+
+622
+00:30:15,750 --> 00:30:18,270
+你的手指已经离开了屏幕
+that your finger had lost contact with the screen.
+
+623
+00:30:18,490 --> 00:30:20,070
+这就是截屏机制在做的事情
+That's what the screenshot mechanism did.
+
+624
+00:30:20,170 --> 00:30:23,230
+所以即使当时苹果没有提供一个 API 告诉你发生了截屏
+So even though Apple didn't provide an API at the time to let you know that a screenshot
+
+625
+00:30:23,230 --> 00:30:28,130
+我们还是有办法通过检测这个触控事件 来得知
+had been taken, there was a way for us to essentially detect this touch event to learn
+
+626
+00:30:28,130 --> 00:30:29,690
+已经发生了截屏
+that a screenshot had happened.
+
+627
+00:30:29,710 --> 00:30:32,490
+然后我们就会给发送方发一条通知
+And then we would just send a notification back to the sender that,
+
+628
+00:30:32,490 --> 00:30:34,650
+告诉他 收件人截了屏
+you know, the recipient had taken a screenshot.
+
+629
+00:30:35,290 --> 00:30:37,230
+而在早期 对我们来说
+And that for us in the early days,
+
+630
+00:30:37,350 --> 00:30:41,290
+这点真的和我们的社区产生了共鸣 因为他们并不介意有人
+you know, really resonated with our community because they didn't mind if somebody,
+
+631
+00:30:41,490 --> 00:30:42,850
+把他们的某个 Snap 保存下来
+you know, saved one of their snaps.
+
+632
+00:30:42,910 --> 00:30:43,830
+他们只是想知道这件事
+They just wanted to know.
+
+633
+00:30:44,390 --> 00:30:45,270
+我觉得这件事
+And I think that that,
+
+634
+00:30:45,370 --> 00:30:49,770
+那个早期的发明 是最早真正获得大量
+you know, that early invention was one of the first things that really got a lot of
+
+635
+00:30:49,770 --> 00:30:50,950
+关注和使用的功能之一
+traction in the early days.
+
+636
+00:30:51,030 --> 00:30:52,230
+而且我认为
+And I think, you know,
+
+637
+00:30:53,390 --> 00:30:56,290
+它帮助 Snapchat 作为一种全新的沟通方式传播开来
+helped Snapchat spread as a new way of communicating.
+
+638
+00:30:56,830 --> 00:30:57,810
+这真的非常酷
+And that is that is really cool.
+
+639
+00:30:57,890 --> 00:31:01,090
+我无法想象如果你们没想到这一点 Snapchat 会是什么样
+I can't imagine Snapchat existing without you figuring that out.
+
+640
+00:31:01,150 --> 00:31:02,270
+这感觉就是一个特别核心的东西
+That feels like such a core.
+
+641
+00:31:03,990 --> 00:31:06,150
+一种机制 还有一件也非常
+Mechanic. Something that is also really,
+
+642
+00:31:06,390 --> 00:31:11,690
+我会说 在产品经理圈子里很有名的关于 Snap 的一点是 你们很久才开始招产品经理
+I'd say, famous in the PM community about Snap is you guys waited a long time to hire product managers.
+
+643
+00:31:12,070 --> 00:31:17,410
+我做过很多研究报告 专门看那些顶级公司花了多久才开始招他们的产品经理
+I've done all these research reports on just like how long it took the top companies to hire their PMs.
+
+644
+00:31:17,510 --> 00:31:21,970
+我看到的数字是 你们在招第一个产品经理之前 已经有 200 名员工了
+And the number I saw is you had 200 employees before you hired your first PM.
+
+645
+00:31:22,790 --> 00:31:25,750
+我很好奇 你觉得等那么久是不是一个错误
+I'm curious if you think that was a mistake, waiting that long.
+
+646
+00:31:26,010 --> 00:31:28,710
+以及你现在对产品经理的看法
+And just your current thoughts on product managers,
+
+647
+00:31:28,930 --> 00:31:31,130
+比如他们在 Snap 里应该扮演什么角色
+just like how they fit into Snap.
+
+648
+00:31:31,250 --> 00:31:32,630
+听这期节目的人里有很多是产品经理
+A lot of people listening to this are PMs.
+
+649
+00:31:32,710 --> 00:31:34,290
+所以我只是很好奇你的感受
+And so I'm just curious how you feel.
+
+650
+00:31:34,670 --> 00:31:41,750
+我对产品管理的很多看法 其实是由我对设计师以及
+A lot of my view of product management was actually driven by my view of designers and the
+
+651
+00:31:41,750 --> 00:31:42,850
+设计师应该扮演的角色所塑造的
+role that designers should play.
+
+652
+00:31:43,370 --> 00:31:46,510
+而我在科技圈里担心的一件事是
+And one of the things that I was concerned about in the tech community,
+
+653
+00:31:46,710 --> 00:31:48,770
+你看传统科技公司的组织结构
+you know, if you look at the traditional tech or structure,
+
+654
+00:31:49,350 --> 00:31:51,490
+设计师其实主要就是在做视觉稿
+you know, designers really are producing visuals.
+
+655
+00:31:51,830 --> 00:32:00,650
+他们并不真正负责产品方向 策略 愿景 或者全新的创新
+They're not really producing the product direction or the strategy or the vision or net new innovation.
+
+656
+00:32:01,030 --> 00:32:04,490
+在很多情况下 他们其实只是被动响应产品经理说
+They're really responsive, actually, I think in many cases to the PM saying,
+
+657
+00:32:04,650 --> 00:32:05,310
+这是我们要做的东西
+this is what we're building.
+
+658
+00:32:05,470 --> 00:32:06,510
+现在去给我做点视觉稿
+Now go make me some visuals.
+
+659
+00:32:07,330 --> 00:32:11,130
+而我绝对不希望那种文化在这里扎根
+And I absolutely did not want that type of culture to take root.
+
+660
+00:32:11,210 --> 00:32:12,130
+因为就像我之前说的
+Because again, as I mentioned,
+
+661
+00:32:12,210 --> 00:32:16,690
+我们在 Snap 的很多产品开发方式 都是仿照早期
+we modeled a lot of the way that we develop products here at Snap on that early
+
+662
+00:32:16,690 --> 00:32:18,370
+我和 Bobby Murphy 之间的那种合作关系来的
+relationship between myself and Bobby Murphy.
+
+663
+00:32:18,490 --> 00:32:24,690
+也就是设计和工程之间非常和谐的关系 以及这种关系有多重要
+Really this harmonious relationship between design and engineering and how important that
+
+664
+00:32:24,690 --> 00:32:28,250
+那种对话对于打造伟大的东西和伟大的产品有多关键
+is, that dialogue is to building great things and great, great products.
+
+665
+00:32:28,830 --> 00:32:30,330
+所以我觉得 在早期
+And so, you know, I think in the early days,
+
+666
+00:32:30,370 --> 00:32:32,310
+我的看法并不是说我们不需要产品经理
+my view was not that we don't need PMs.
+
+667
+00:32:32,350 --> 00:32:33,950
+我的看法是 这些工作应该由设计师来做
+My view is that designers should do that work.
+
+668
+00:32:34,370 --> 00:32:37,730
+所以基本上 这就是我们会对设计师说的话
+So that's essentially, you know, what we would say to our designers,
+
+669
+00:32:37,730 --> 00:32:40,730
+就是那种，你知道的，嘿，如果你需要项目经理方面的支持
+which was like, you know, hey, if you need PM support,
+
+670
+00:32:40,790 --> 00:32:42,050
+那你为什么不自己来做呢
+why don't you just do it yourself?
+
+671
+00:32:42,170 --> 00:32:43,090
+这有什么难的
+What's the big deal?
+
+672
+00:32:43,590 --> 00:32:45,470
+我认为这确实帮助了
+And I think that that really helped,
+
+673
+00:32:45,870 --> 00:32:49,170
+坦白说 帮助设计师在产品开发过程中扮演了更主动的角色
+frankly, designers play a more active role in the product development process.
+
+674
+00:32:49,170 --> 00:32:50,510
+但现在 你也知道
+Now, today, you know,
+
+675
+00:32:50,510 --> 00:32:52,190
+对于一家在我们这个规模运作的公司来说
+at a company operating at our scale,
+
+676
+00:32:52,450 --> 00:32:54,350
+你看看法律合规方面的要求
+you know, if you look at the legal requirements,
+
+677
+00:32:54,570 --> 00:32:56,310
+还有我们在信任与安全方面的做法
+our approach to trust and safety,
+
+678
+00:32:57,490 --> 00:33:01,910
+要把一个新产品真正推起来 确实需要很多团队一起协作
+you know, it really does take a village to get a new product off the ground.
+
+679
+00:33:02,070 --> 00:33:05,950
+而产品经理在这一切中扮演着非常重要的协调角色
+And product managers play a really important coordination role in all that,
+
+680
+00:33:05,990 --> 00:33:07,690
+除了要综合整理
+in addition to synthesizing,
+
+681
+00:33:07,770 --> 00:33:13,350
+比如说数据科学分析 以及把一个工作小组组织起来 尝试去解决
+for example, data science analysis and bringing together a working group to try to solve
+
+682
+00:33:13,350 --> 00:33:15,230
+问题 或者做创新 或者让产品变得更好
+problems or innovate or make the product better.
+
+683
+00:33:15,350 --> 00:33:16,150
+所以我觉得
+So I think, you know,
+
+684
+00:33:16,170 --> 00:33:18,290
+随着组织不断壮大 并且出现了
+as the organization grows and there becomes,
+
+685
+00:33:18,410 --> 00:33:21,870
+各种公司在早期并不具备的不同能力时
+you know, all of these different capabilities that the company didn't have in the early
+
+686
+00:33:21,870 --> 00:33:23,450
+这些天里 不管是数据科学
+days, you know, whether it's data science,
+
+687
+00:33:23,850 --> 00:33:25,110
+你知道的 你随便说
+you know, you name it,
+
+688
+00:33:25,450 --> 00:33:29,110
+产品经理在把所有这些人聚到一起这件事上扮演着非常重要的角色 并且
+product managers play a really important role in bringing all those folks to the table and
+
+689
+00:33:29,110 --> 00:33:30,110
+确保我们能够交付
+making sure we deliver,
+
+690
+00:33:30,350 --> 00:33:32,490
+你知道 在正确的时间交付正确的东西
+you know, the right thing at the right time.
+
+691
+00:33:32,810 --> 00:33:37,250
+我非常兴奋地想跟你介绍本季的支持赞助商 Vanta
+I am so excited to tell you about this season's supporting sponsor, Vanta.
+
+692
+00:33:37,630 --> 00:33:43,770
+Vanta 帮助了超过一万五千家像 Cursor Ramp Duolingo Snowflake
+Vanta helps over 15,000 companies like Cursor, Ramp, Duolingo, Snowflake,
+
+693
+00:33:43,950 --> 00:33:47,210
+和 Atlassian 这样的公司赢得并证明来自客户的信任
+and Atlassian earn and prove trust with their customers.
+
+694
+00:33:47,710 --> 00:33:50,830
+多亏了 AI 各个团队构建和发布产品的速度比以往任何时候都更快
+Teams are building and shipping products faster than ever thanks to AI.
+
+695
+00:33:51,230 --> 00:33:55,490
+但因此 被引入你的产品和业务中的风险量
+But as a result, the amount of risk being introduced into your product and your business
+
+696
+00:33:55,490 --> 00:33:57,150
+也达到了前所未有的高度
+is higher than it's ever been.
+
+697
+00:33:57,590 --> 00:34:04,350
+我和每一位安全负责人交谈时 他们都能感受到保护自己组织和业务的压力在不断增加
+Every security leader that I talk to is feeling the increasing weight of protecting their organization, their business,
+
+698
+00:34:04,630 --> 00:34:06,210
+更不用说还要保护客户数据
+and not to mention their customer data.
+
+699
+00:34:06,650 --> 00:34:08,230
+因为一切变化得太快
+Because things are moving so fast,
+
+700
+00:34:08,230 --> 00:34:10,010
+他们总是在被动应对
+they are constantly reacting,
+
+701
+00:34:10,350 --> 00:34:11,490
+只能去猜测优先级
+having to guess at priorities,
+
+702
+00:34:11,690 --> 00:34:14,030
+还不得不将就使用过时的解决方案
+and having to make do with outdated solutions.
+
+703
+00:34:14,450 --> 00:34:19,330
+Vanta 通过三十多种安全和隐私
+Vanta automates compliance and risk management with over 35 security and privacy
+
+704
+00:34:19,330 --> 00:34:23,830
+合规框架，包括 SOC 2、ISO 27001 和 HIPAA
+frameworks, including SOC 2, ISO 27001, and HIPAA.
+
+705
+00:34:24,150 --> 00:34:27,510
+这帮助公司快速达成合规并持续保持合规状态
+This helps companies get compliant fast and stay compliant.
+
+706
+00:34:27,910 --> 00:34:28,890
+比以往任何时候都更明显的是
+More than ever before,
+
+707
+00:34:29,090 --> 00:34:31,570
+信任有能力成就或摧毁你的业务
+trust has the power to make or break your business.
+
+708
+00:34:31,570 --> 00:34:34,490
+访问 Vanta.com 斜杠 Lenny 了解更多信息
+Learn more at Vanta.com slash Lenny.
+
+709
+00:34:34,810 --> 00:34:36,070
+作为本播客的听众
+And as a listener of this podcast,
+
+710
+00:34:36,250 --> 00:34:38,250
+你可以在购买 Vanta 时减免一千美元
+you get $1,000 off Vanta.
+
+711
+00:34:38,750 --> 00:34:40,930
+地址是 Vanta.com 斜杠 Lenny
+That's Vanta.com slash Lenny.
+
+712
+00:35:02,110 --> 00:35:05,230
+更加强大 所以这就更应该是我们采用的方式
+more powerful. And so this is even more the way to approach.
+
+713
+00:35:05,370 --> 00:35:07,910
+来聊聊你觉得这会如何改变
+Talk about just like how you think this shifts,
+
+714
+00:35:08,030 --> 00:35:10,490
+这个由 AI 赋能人的三方关系
+this triad with AI enabling people.
+
+715
+00:35:10,950 --> 00:35:13,790
+嗯 如果大家真那样对峙 听起来是高度失调的
+Well, it sounds highly dysfunctional if folks are having that standoff.
+
+716
+00:35:13,910 --> 00:35:15,370
+那可不是什么好事
+That is not a good thing.
+
+717
+00:35:15,630 --> 00:35:20,510
+但我确实很喜欢大家开始思考用完全不同的方式来工作
+But I do like that people are thinking about doing work really differently.
+
+718
+00:35:20,750 --> 00:35:22,730
+我认为在当下这个时刻 这是势在必行的
+I think that's imperative at this moment of time.
+
+719
+00:35:22,810 --> 00:35:24,810
+变化的速度非常惊人
+The rate of change is extraordinary.
+
+720
+00:35:25,610 --> 00:35:29,430
+你看 我确实觉得设计师在很多方面都感到被证明是对的 对吧
+Look, I do think designers feel vindicated in a lot of ways, right?
+
+721
+00:35:29,550 --> 00:35:31,530
+你知道 很多设计师的父母以前都会说
+You know, a lot of designers had parents who were saying,
+
+722
+00:35:31,630 --> 00:35:33,130
+你为什么不学计算机科学
+why aren't you studying computer science?
+
+723
+00:35:33,290 --> 00:35:36,030
+你学会画画这种技能以后能干嘛
+What are you going to do with this skill set, drawing things?
+
+724
+00:35:36,170 --> 00:35:37,250
+这完全说不通
+This doesn't make any sense.
+
+725
+00:35:37,750 --> 00:35:42,550
+而我觉得现在 我们很多设计师已经在亲自写代码并上线产品了 这太了不起了 对吧
+And I think today, a lot of our designers are now shipping code, which is extraordinary, right?
+
+726
+00:35:42,570 --> 00:35:47,630
+而且在设计在这里的工作方式方面 这是一个非常巨大且非常有意义的变化
+And that's a really big and really meaningful change in terms of the way that the design
+
+727
+00:35:47,630 --> 00:35:50,270
+无论是在 Snap 的设计工作方式 还是在整个创意流程的运作方式上都是如此
+works here at Snap and the way the creative process works.
+
+728
+00:35:50,370 --> 00:35:54,930
+所以我认为 从创意流程中去除摩擦 并且能够从一个想法
+And so I think removing friction from the creative process and being able to go from idea
+
+729
+00:35:54,930 --> 00:36:01,910
+走向影响到近十亿 Snapchat 用户的规模 这对设计师来说非常赋能 并且
+to impact at the scale of almost a billion people using Snapchat is really empowering and
+
+730
+00:36:01,910 --> 00:36:08,810
+令人兴奋 他们会觉得这些工具在某种程度上让创意人士站在了更公平的起跑线上
+exciting for designers who feel like these tools maybe level the playing field to some
+
+731
+00:36:08,810 --> 00:36:10,310
+在某种程度上为创意人群创造了更公平的环境
+extent for creative people.
+
+732
+00:36:10,770 --> 00:36:11,670
+是的 我自己的感觉是
+Yeah, what I feel like,
+
+733
+00:36:11,730 --> 00:36:12,830
+我还没真正看到这种情况发生
+I don't see this happening yet,
+
+734
+00:36:12,890 --> 00:36:15,630
+但我觉得因为现在构建东西变得太容易了
+but I feel like because now it's so much easier to build,
+
+735
+00:36:15,770 --> 00:36:17,390
+大家上线了大量还算过得去的东西
+people are shipping all these okay things.
+
+736
+00:36:17,610 --> 00:36:23,450
+而这让人感觉 设计此刻本该迎来自己的高光时刻 作为一种差异化因素
+And it feels like design should have its moment of glory right now as a differentiator of
+
+737
+00:36:23,450 --> 00:36:24,990
+去让人一眼就觉得 这个东西真的很棒
+like, this is actually awesome.
+
+738
+00:36:25,650 --> 00:36:26,910
+我还没真切感受到这一点
+I haven't felt that yet,
+
+739
+00:36:27,030 --> 00:36:29,330
+我也很好奇这是不是接下来会开始发生的事情
+and I'm curious if that's what will begin to happen.
+
+740
+00:36:29,830 --> 00:36:30,550
+嗯 对我们来说
+Well, I think for us,
+
+741
+00:36:30,610 --> 00:36:33,710
+设计在公司里其实一直是一个瓶颈
+design actually has always operated as a bottleneck at the company,
+
+742
+00:36:33,830 --> 00:36:35,510
+而这是非常重要的 对吧
+which is incredibly important, right?
+
+743
+00:36:35,510 --> 00:36:39,250
+让所有东西在上线前必须经过设计审批 这是我们有意为之的
+It's intentional that things need to be approved by design to ship.
+
+744
+00:36:39,750 --> 00:36:41,690
+有时候这会让大家非常烦躁
+And sometimes that really annoys people,
+
+745
+00:36:41,830 --> 00:36:44,170
+而且确实会拖慢上线节奏
+and it does slow down the shipping process.
+
+746
+00:36:44,370 --> 00:36:47,370
+有时候这也意味着 如果你不知道如何和设计良好合作 或者不知道怎么把你的想法
+Sometimes it means that if you don't know how to work well with design or get your ideas
+
+747
+00:36:47,370 --> 00:36:52,410
+展现在设计面前 那么一些由产品经理或
+in front of design, that some really innovative or cool new thing developed by a PM or
+
+748
+00:36:52,410 --> 00:36:55,110
+工程师开发的非常创新或很酷的新东西 可能就没法像本该那样快速上线
+developed by an engineer maybe doesn't get shipped as fast as it should.
+
+749
+00:36:55,630 --> 00:36:57,210
+但这个瓶颈确实
+But that bottleneck is really,
+
+750
+00:36:57,530 --> 00:37:01,550
+非常重要 因为正是它带来了连贯一致的用户体验
+really important because that's what results in a cohesive customer experience.
+
+751
+00:37:01,690 --> 00:37:07,090
+而且我觉得你一眼就能看出来 一个应用是不是由各自负责
+And I think you can see when an app has been built by teams who are responsible for
+
+752
+00:37:07,090 --> 00:37:10,670
+不同页面或不同体验部分的团队拼出来的
+different pages of the app or different parts of the experience,
+
+753
+00:37:10,670 --> 00:37:12,890
+但中间并没有真正连贯一致的主线
+but there isn't really like a cohesive through line.
+
+754
+00:37:13,390 --> 00:37:15,350
+而对我们 Snap 来说
+And I think for us at Snap,
+
+755
+00:37:15,570 --> 00:37:21,310
+让设计在帮助管理我们要上线什么
+having design really actually be that bottleneck in terms of helping to manage what we're
+
+756
+00:37:21,310 --> 00:37:23,990
+它长什么样 以及各部分如何协同运作方面 真正成为那个瓶颈
+shipping and what it looks like and how it all works together,
+
+757
+00:37:24,070 --> 00:37:25,050
+我认为是非常重要的
+I think is really important.
+
+758
+00:37:25,290 --> 00:37:27,410
+这正好可以引出我接下来想问你的一个问题
+That's a good segue to something I wanted to ask you about,
+
+759
+00:37:27,510 --> 00:37:32,110
+就是大家都知道你会非常深入地参与所有正在发生的事情
+which is you're famously very in the weeds on everything that is going on,
+
+760
+00:37:32,170 --> 00:37:33,210
+包括所有即将上线的东西
+all the things that are shipping.
+
+761
+00:37:33,470 --> 00:37:34,870
+你会非常关注每一个像素级的细节
+You're very close to the pixels.
+
+762
+00:37:35,590 --> 00:37:37,710
+我很好奇 这件事对你来说是如何随着时间演变的
+I'm curious how that's evolved for you over time.
+
+763
+00:37:37,850 --> 00:37:40,810
+你现在还会亲自去看所有即将上线的东西吗
+Are you still in there looking at everything that's about to ship?
+
+764
+00:37:41,150 --> 00:37:45,310
+以及你对创始人是否必须参与
+And what's your philosophy on founders having to be involved in,
+
+765
+00:37:45,570 --> 00:37:47,890
+比如说 像素级和产品细节这些事情 有什么看法
+let's say, the pixels and the details of the product?
+
+766
+00:37:47,890 --> 00:37:50,670
+首先 这是我最热爱的事情
+First and foremost, this is what I love to do.
+
+767
+00:37:50,930 --> 00:37:52,610
+我热爱构建东西
+I love building things.
+
+768
+00:37:52,750 --> 00:37:55,170
+我热爱打造新产品
+I love making new products,
+
+769
+00:37:55,230 --> 00:37:56,230
+为我们的社区提供新的服务
+services for our community.
+
+770
+00:37:56,450 --> 00:37:58,670
+这就是驱动我的动力
+That is what drives me.
+
+771
+00:37:58,890 --> 00:38:00,810
+我非常非常享受这个过程中的那一部分
+I really, really enjoy that part of the process.
+
+772
+00:38:01,070 --> 00:38:02,850
+所以对我来说 这不算工作
+So it's not work to me.
+
+773
+00:38:02,930 --> 00:38:05,910
+这是我真心热爱去做 并且热爱和团队一起去做的事情
+It's something that I really just love doing and love doing together with our team.
+
+774
+00:38:06,050 --> 00:38:07,350
+所以对我来说
+And so I think for me,
+
+775
+00:38:07,530 --> 00:38:10,530
+除了能在 Snap 和这么多优秀的人一起工作之外
+in addition to all the great people I get to work with here at Snap,
+
+776
+00:38:10,650 --> 00:38:14,050
+每天早上能让我带着笑容醒来的那件事
+the thing that wakes me up with a smile on my face every morning,
+
+777
+00:38:14,130 --> 00:38:17,750
+以及我会迫不及待去上班的原因 就是我能深入参与我们在构建和
+the reason I'm skipping to work is because I am in the weeds on what we're building and
+
+778
+00:38:17,750 --> 00:38:20,070
+向社区发布的所有东西
+shipping to our community.
+
+779
+00:38:20,530 --> 00:38:23,170
+话虽如此 总会有更聪明
+That being said, there are always smarter,
+
+780
+00:38:23,350 --> 00:38:28,510
+更优秀 更有才华的专家在负责我们正在做的各个项目
+better, more talented experts working on all the different things that we have going on.
+
+781
+00:38:28,610 --> 00:38:31,750
+但我确实很喜欢紧贴我们正在创造的东西
+But I really do like staying close to what we're creating.
+
+782
+00:38:32,610 --> 00:38:34,910
+我不认为这只和创始人有关
+I don't think it's relevant just to founders.
+
+783
+00:38:35,050 --> 00:38:38,630
+我觉得无论你在运营什么类型的公司 也无论你在公司中的角色是什么
+I think no matter what type of company you're running or your role in the company,
+
+784
+00:38:38,810 --> 00:38:41,330
+保持贴近你的客户
+staying close to your customers,
+
+785
+00:38:41,330 --> 00:38:44,610
+紧贴产品本身以及它服务客户的方式
+staying close to the product and the way that it's serving your customer is the
+
+786
+00:38:45,250 --> 00:38:48,550
+从根本上说是你能做的最重要的事情
+fundamentally most important thing you could possibly do.
+
+787
+00:38:48,730 --> 00:38:52,270
+我完全认同那种老派做法
+I absolutely subscribe to the old school,
+
+788
+00:38:52,470 --> 00:38:54,490
+在办公室里走动起来和客户聊天
+walk the floors, talk to your customers,
+
+789
+00:38:54,710 --> 00:38:58,770
+走到一线去了解你的服务实际发生了什么
+get out there and stay in touch with what's actually happening with your service,
+
+790
+00:38:58,890 --> 00:39:00,750
+了解你的社区和你的团队
+with your community, with your team.
+
+791
+00:39:00,950 --> 00:39:04,650
+我认为这大概是任何公司里任何领导者最重要的工作
+And I think that's probably the most important job that any leader can do in any company
+
+792
+00:39:04,650 --> 00:39:05,710
+就是贴近他们的客户
+is stay close to their customers,
+
+793
+00:39:05,810 --> 00:39:06,530
+贴近他们的团队
+stay close to their team.
+
+794
+00:39:07,270 --> 00:39:11,290
+你觉得对于一个面向消费者的、尤其是社交类的产品
+Do you feel like especially for a consumer and consumer social product,
+
+795
+00:39:11,330 --> 00:39:16,230
+在所有要上线的东西上都深度参与是不是格外重要
+this is extra important to just be like extremely in the weeds on everything that is
+
+796
+00:39:16,230 --> 00:39:20,150
+比如让你的设计团队事事都要过你这一关
+shipping and say, having your design team have to prove everything?
+
+797
+00:39:20,310 --> 00:39:22,030
+你觉得这对消费类产品来说是不是特别重要
+Do you feel like that's especially important for consumer?
+
+798
+00:39:22,650 --> 00:39:24,270
+我不认为这对消费类产品来说格外重要
+I don't think it's especially important for consumer.
+
+799
+00:39:24,410 --> 00:39:28,510
+我认为这对任何想要向其社区提供优秀产品的公司都格外重要
+I think it's especially important for any company that wants to deliver great products to their community.
+
+800
+00:39:29,090 --> 00:39:32,150
+各家公司有不同的优势和差异化点
+Companies have different points of strength and differentiation,
+
+801
+00:39:32,470 --> 00:39:35,450
+但如果你想在产品体验上做出差异
+but if you want to differentiate on the product experience,
+
+802
+00:39:35,830 --> 00:39:39,010
+我认为就必须非常贴近这一块
+I think it's really important that stay very close to that.
+
+803
+00:39:39,390 --> 00:39:41,570
+在你招聘设计师时你会特别看重什么
+Is there anything special you look for in the designers you hire,
+
+804
+00:39:41,870 --> 00:39:45,810
+因为你知道他们基本上在主导一切、审批一切
+knowing that they're basically running the show and just approving everything and just
+
+805
+00:39:45,810 --> 00:39:47,470
+有点像埃文·斯皮格尔的得力助手
+kind of like the right hand to Evan?
+
+806
+00:39:47,790 --> 00:39:51,230
+在招聘这些设计师时你有没有特别看重的点
+Is there anything in particular you look for when you're hiring these designers?
+
+807
+00:39:52,030 --> 00:39:53,850
+有 有几个非常重要的点
+Yeah, there's a couple really important things.
+
+808
+00:39:54,050 --> 00:39:58,710
+首先 我们所有的招聘决定完全基于作品集
+First of all, we make all of our hiring decisions just based off portfolio.
+
+809
+00:39:59,010 --> 00:40:00,790
+这基本上就是我们唯一想看的东西
+So that's really all we want to see.
+
+810
+00:40:00,910 --> 00:40:03,630
+我真的不在乎你之前在哪工作或你的资历有多深
+I really don't care where you've worked or your level of experience.
+
+811
+00:40:03,790 --> 00:40:06,090
+事实上 大多数加入我们设计团队的人都是刚毕业
+In fact, most people join our design team right out of school,
+
+812
+00:40:06,670 --> 00:40:09,430
+而不是来自什么大型科技公司之类的地方
+not from a big tech company or something like that.
+
+813
+00:40:09,850 --> 00:40:12,270
+我真正关注的是理解你的作品集
+And really what I'm focused on is understanding the portfolio.
+
+814
+00:40:12,690 --> 00:40:15,310
+而我希望从作品集中看到两件事
+And I want to see two things from the portfolio.
+
+815
+00:40:15,610 --> 00:40:18,550
+第一是非常宽广的跨度
+The first is a really wide range.
+
+816
+00:40:18,970 --> 00:40:21,530
+这就是艺术和设计之间的区别
+And that is the difference between art and design.
+
+817
+00:40:21,910 --> 00:40:25,490
+有很多人有非常鲜明的个人风格
+So there are lots of people who have a very distinct style, right?
+
+818
+00:40:25,510 --> 00:40:28,050
+他们有非常独特的构建和创作方式
+They have a very distinct way of building things and creating things.
+
+819
+00:40:28,210 --> 00:40:29,550
+那其实是艺术
+That really is art, right?
+
+820
+00:40:29,570 --> 00:40:32,670
+他们在表达自己以及他们对世界的个人看法
+They're expressing themselves and their own personal point of view on the world.
+
+821
+00:40:32,730 --> 00:40:33,970
+这可能非常美
+And it can be very beautiful,
+
+822
+00:40:33,970 --> 00:40:35,010
+但那不是设计
+but it is not design.
+
+823
+00:40:35,390 --> 00:40:38,970
+设计真正关乎的是对客户的共情
+Design is really about empathizing with your customer,
+
+824
+00:40:39,170 --> 00:40:40,490
+对你的受众的共情
+empathizing with your audience,
+
+825
+00:40:40,590 --> 00:40:41,750
+无论是观众还是其他任何人
+your viewer, whoever it is,
+
+826
+00:40:41,810 --> 00:40:44,190
+然后创造出真正能引起他们共鸣的东西
+and then building something that really resonates with them.
+
+827
+00:40:44,410 --> 00:40:47,650
+这意味着你需要有非同寻常的跨度
+And that means you need to have an extraordinary amount of range.
+
+828
+00:40:47,810 --> 00:40:51,110
+你必须能构建和创造看起来完全不同的东西
+You've got to be able to build and create things that look totally different.
+
+829
+00:40:51,330 --> 00:40:52,770
+所以当我在看一个作品集时
+So when I'm going through a portfolio,
+
+830
+00:40:53,290 --> 00:40:54,670
+我首先会看
+the first thing I'm looking for is,
+
+831
+00:40:54,810 --> 00:40:56,970
+他们做的东西是不是看起来都差不多
+are they building stuff that all looks the same?
+
+832
+00:40:57,210 --> 00:41:00,070
+还是他们做的东西看起来真的很不一样
+Or are they building things that look really different, right?
+
+833
+00:41:00,190 --> 00:41:05,070
+能够响应不同的一组组需求
+That have been responsive to different sets of needs.
+
+834
+00:41:05,170 --> 00:41:08,130
+这就是我判断他们是设计师而不只是艺术家的方式
+And that's how I know that they're a designer and not just an artist.
+
+835
+00:41:08,850 --> 00:41:10,910
+另外一件我想了解的事
+And then the other thing I want to understand,
+
+836
+00:41:11,130 --> 00:41:14,790
+而且通常每个加入我们团队的设计师我都会亲自面试
+and typically, I interview every designer that joins our team.
+
+837
+00:41:15,250 --> 00:41:19,810
+我想了解的是他们为什么这么做以及作品背后的故事
+And what I want to understand is why and the story behind the work that they created.
+
+838
+00:41:19,950 --> 00:41:21,070
+所以通常我会这样说
+So typically, what I'll do is just say,
+
+839
+00:41:21,130 --> 00:41:22,790
+你从作品集中随便挑一个
+hey, pick something in your portfolio,
+
+840
+00:41:23,150 --> 00:41:24,390
+只要是你有强烈感受的作品
+anything you feel strongly about.
+
+841
+00:41:24,550 --> 00:41:25,350
+你可以很喜欢它
+If you could love it,
+
+842
+00:41:25,370 --> 00:41:25,990
+也可以很讨厌它 我不在乎
+hate it, I don't care.
+
+843
+00:41:26,090 --> 00:41:27,410
+只要你对它有强烈的情绪就行
+You just have to feel strongly about it.
+
+844
+00:41:27,490 --> 00:41:31,750
+然后告诉我你为什么做它 以及在这个过程中你学到了什么
+And just tell me the story of why you made it and what you learned through that process.
+
+845
+00:41:32,090 --> 00:41:33,870
+我觉得很快
+And I think pretty quickly,
+
+846
+00:41:34,090 --> 00:41:40,090
+你就能理解一个人在构建或发明东西时的过程
+you can understand someone's process in terms of building something or inventing something.
+
+847
+00:41:40,190 --> 00:41:41,050
+他们是怎么做的
+How did they go about it?
+
+848
+00:41:41,070 --> 00:41:44,930
+而我真正想确保的是 我们团队里有用不同方式做事的人
+And I'm really trying to make sure that we have people who have different ways of doing
+
+849
+00:41:44,930 --> 00:41:45,650
+在用不同方式完成这些事
+that on our team.
+
+850
+00:41:45,730 --> 00:41:49,170
+我们设计团队的一个优势是大家来自非常多元的背景
+One of the strengths of our design team has been that people come from lots of different backgrounds, right?
+
+851
+00:41:49,190 --> 00:41:50,970
+他们可能来自3D动画领域
+They might come from 3D animation,
+
+852
+00:41:50,990 --> 00:41:52,570
+也可能来自电气工程
+or they might come from electrical engineering.
+
+853
+00:41:52,830 --> 00:41:57,350
+拥有一群以不同方式看世界并且具备完全不同技能组合的人
+And that's a real strength to have folks who see the world differently and have totally
+
+854
+00:41:57,350 --> 00:41:58,350
+这是非常大的优势
+different sets of skills.
+
+855
+00:41:58,950 --> 00:42:00,310
+在我为这次对话做准备的时候
+So as I was preparing for this chat,
+
+856
+00:42:00,350 --> 00:42:02,910
+我和一批这些年在Snap工作过的人聊了聊
+I talked to a bunch of people that worked at Snap over the years,
+
+857
+00:42:03,010 --> 00:42:05,890
+我已经在整个对话中融入了他们的想法
+and I've integrated their ideas throughout already.
+
+858
+00:42:06,470 --> 00:42:10,150
+但有一点我觉得很有意思 就是我听说你花了很多时间
+But one that came up that I thought was interesting is I hear that you spend a lot of time
+
+859
+00:42:10,150 --> 00:42:12,130
+培养年轻的设计人才
+developing young design talent,
+
+860
+00:42:12,290 --> 00:42:13,530
+这对你来说是一个很重要的重点
+and that's a big focus of yours.
+
+861
+00:42:13,930 --> 00:42:17,310
+你能谈谈你是如何培养年轻设计人才的吗
+Can you just talk about how you develop young design talent?
+
+862
+00:42:17,310 --> 00:42:23,310
+我认为培养年轻设计人才的首要方式就是帮他们多做东西
+Well, I think the number one way to develop young design talent is just help them make
+
+863
+00:42:23,310 --> 00:42:26,570
+并且从很多渠道获得反馈
+lots of stuff and get a lot of feedback from,
+
+864
+00:42:26,790 --> 00:42:29,030
+不管是来自我们的客户
+you know, whether it's our customers or,
+
+865
+00:42:29,210 --> 00:42:30,350
+他们的队友
+you know, their teammates or,
+
+866
+00:42:30,610 --> 00:42:32,110
+还是直接来自我本人
+you know, myself directly.
+
+867
+00:42:32,270 --> 00:42:34,730
+所以在Snap我们做的一件不太一样的事是
+And so one of the things that we do that's different at Snap is,
+
+868
+00:42:34,850 --> 00:42:37,310
+你加入设计团队的第一天就要展示作品
+you know, your first day that you join the design team, you present work.
+
+869
+00:42:37,530 --> 00:42:39,810
+而且非常非常重要的是
+And it's really, really important that,
+
+870
+00:42:39,950 --> 00:42:42,970
+你到团队的第一天就开始在做东西
+you know, the first day that you show up on the team, you're making things.
+
+871
+00:42:42,970 --> 00:42:47,930
+这为你之后在设计团队的整个体验和成长定下了基调
+That just sets the tone for the rest of your experience on the design team and growth on
+
+872
+00:42:47,930 --> 00:42:50,870
+设计团队，因为说到底，这正是我们的全部所在
+the design team because, really, that's what we're all about.
+
+873
+00:42:51,490 --> 00:42:55,970
+所以我认为那些能很快适应这种高频创作节奏的人
+And so I think folks who can get comfortable very quickly in that velocity of making things, that's where,
+
+874
+00:42:56,050 --> 00:42:58,110
+会在这个过程中慢慢放下自我
+you know, the ego sort of melts away because,
+
+875
+00:42:58,270 --> 00:43:00,350
+因为当你在创造一千个新点子时
+you know, when you're creating a thousand new ideas,
+
+876
+00:43:00,570 --> 00:43:02,650
+谁还在乎其中大多数是不是好点子
+who cares if most of them are not great ideas?
+
+877
+00:43:02,690 --> 00:43:03,790
+那完全没问题
+That's totally fine, right?
+
+878
+00:43:04,030 --> 00:43:06,050
+我们真正想消除的是那种
+What we want to get rid of is that sense of,
+
+879
+00:43:06,070 --> 00:43:09,090
+人们对自己点子过度珍视的感觉 他们会觉得
+you know, preciousness that people have around ideas where they feel like,
+
+880
+00:43:09,150 --> 00:43:11,590
+哦 我有一个完美又伟大的点子
+oh, I've got this one really perfect, great idea.
+
+881
+00:43:11,650 --> 00:43:12,550
+如果别人不喜欢它
+And if people don't love it,
+
+882
+00:43:12,550 --> 00:43:14,010
+那就说明我不是一个优秀的设计师
+that means that I'm not a great designer.
+
+883
+00:43:14,130 --> 00:43:15,190
+其实不是 这太荒谬了
+It's like, no, that's ridiculous.
+
+884
+00:43:15,470 --> 00:43:21,050
+我们所有人都需要尽可能多地提出各种想法把我们带向前进
+We all, you know, need to just create as many ideas as possible that will lead us to,
+
+885
+00:43:21,170 --> 00:43:23,190
+希望随着时间推移从中孕育出一些真正伟大的点子
+you know, some really great ideas, hopefully, over time.
+
+886
+00:43:23,290 --> 00:43:24,490
+所以我认为对年轻设计师来说
+And so I think for young designers,
+
+887
+00:43:25,170 --> 00:43:30,390
+很早就建立起高频产出创意的节奏是非常非常重要的
+establishing that velocity of ideation very early on is really, really important.
+
+888
+00:43:30,490 --> 00:43:32,750
+还有另一件我觉得我们做得不太一样的事
+And then the other thing we do that I think is different,
+
+889
+00:43:32,910 --> 00:43:33,530
+虽然我也不太确定
+although I don't know,
+
+890
+00:43:33,590 --> 00:43:35,150
+因为我其实没怎么在别的地方工作过
+I've never really worked anywhere else,
+
+891
+00:43:36,010 --> 00:43:44,350
+就是我们不会让设计师在某个具体产品或垂类上卡太久
+you know, is we don't allow designers to get stuck on specific products or verticals for very long.
+
+892
+00:43:44,510 --> 00:43:49,150
+我们会尽量确保大家在产品的不同部分之间轮换
+We like to make sure people are rotating through different parts of the product to bring
+
+893
+00:43:49,150 --> 00:43:52,010
+带来新的想法和新鲜视角同时也避免产生厌倦感
+new ideas and fresh perspectives and also to avoid getting bored.
+
+894
+00:43:52,130 --> 00:43:54,490
+比如说如果你是个很棒的设计师却被困在
+Like if you're a great designer and you're stuck,
+
+895
+00:43:54,550 --> 00:43:56,830
+比如连续三年都在做聊天体验设计
+you know, designing the chat experience for three years,
+
+896
+00:43:56,910 --> 00:43:58,470
+那得多无聊啊
+like, I mean, how boring is that?
+
+897
+00:43:58,510 --> 00:44:02,630
+我觉得在 Snap 能够跨这些不同领域工作是非常令人兴奋的
+It's really exciting, I think, at Snap to be able to work across all of these,
+
+898
+00:44:02,670 --> 00:44:04,410
+这些都是用户高度参与的产品和服务
+you know, highly engaged product services.
+
+899
+00:44:04,530 --> 00:44:08,730
+我们拥有规模最大的增强现实平台之一
+We have one of the biggest augmented reality platform.
+
+900
+00:44:08,910 --> 00:44:11,290
+这些对设计师来说都是非常令人兴奋的机会
+Like these are really exciting opportunities for designers.
+
+901
+00:44:11,410 --> 00:44:13,410
+所以让他们在这些领域之间轮换非常重要
+And it's important that we are rotating them across,
+
+902
+00:44:13,530 --> 00:44:16,870
+在所有这些不同产品之间流动而不是被卡在某一处
+you know, all of these different products so they're not getting stuck.
+
+903
+00:44:17,070 --> 00:44:18,970
+我之前在播客里请过 Jenny Arden
+I had Jenny Arden on the podcast.
+
+904
+00:44:19,210 --> 00:44:22,110
+她是 Figma 的设计负责人兼联合创始人
+She's the, she was head of design for Figma and co-founder.
+
+905
+00:44:22,230 --> 00:44:24,630
+她在 Figma 时是总监级别
+And she was like a director at Figma.
+
+906
+00:44:25,050 --> 00:44:29,630
+后来她去了 Anthropic 又回到纯个人贡献的设计岗位我就问她
+And then she came to Anthropic and moved to just IC Design again and asked her what's the
+
+907
+00:44:29,630 --> 00:44:30,470
+这次转变最难的部分是什么
+hardest part of that move.
+
+908
+00:44:30,490 --> 00:44:33,350
+她说就是现在要面对的所有设计评审
+And she said, it's just all the crits that she has to deal with now,
+
+909
+00:44:33,450 --> 00:44:35,710
+太多的批评和源源不断的反馈
+just so much criticism and constant feedback.
+
+910
+00:44:35,910 --> 00:44:37,570
+她都已经忘了这部分是什么感觉了
+And she's forgotten about that part of it.
+
+911
+00:44:37,990 --> 00:44:40,130
+所以很有意思的是在你们这里这却是一个如此核心的部分
+So it's interesting that's such a core part of the way you,
+
+912
+00:44:40,630 --> 00:44:43,030
+是大家本质上必须学会并且要擅长的东西
+like the thing that people have to learn essentially and get good at.
+
+913
+00:44:43,490 --> 00:44:44,970
+还有一件非常重要的事
+Well, and one of the things that's so important,
+
+914
+00:44:45,070 --> 00:44:47,390
+关于我们的设计团队和设计文化
+right, about our design team and our design culture,
+
+915
+00:44:47,470 --> 00:44:52,570
+我们一直在做的一点就是每周向我展示作品没有任何门槛
+one of the things that we try to do is there is no gate to showing me work every week.
+
+916
+00:44:52,830 --> 00:44:55,430
+不存在说你不喜欢某个想法
+So there is no, you don't like any idea.
+
+917
+00:44:55,510 --> 00:44:56,430
+这都无所谓
+It doesn't matter, you know,
+
+918
+00:44:56,450 --> 00:44:57,510
+不管大家觉得它多好
+how good people think it is,
+
+919
+00:44:57,550 --> 00:44:59,410
+或者多糟糕你都可以把它带到设计会议上
+how bad it is, you can bring it to that design meeting,
+
+920
+00:44:59,830 --> 00:45:02,950
+把它排进议程分享你的作品和想法
+get it on the on the list and share your work and your idea.
+
+921
+00:45:03,470 --> 00:45:06,150
+这点非常重要因为呼应你刚才说的
+And that is so important because I think to your point,
+
+922
+00:45:06,310 --> 00:45:10,670
+有时候大家过度依赖评审流程反而会把好点子筛掉
+you know, sometimes people overrely on this critique process and great ideas get filtered out.
+
+923
+00:45:11,110 --> 00:45:15,130
+所以我觉得在团队里营造一种文化
+And so I think creating this culture on the team where like you can bring anything to the
+
+924
+00:45:15,130 --> 00:45:16,370
+就是你可以把任何东西带到设计会议上
+design meeting, there's no,
+
+925
+00:45:16,450 --> 00:45:18,450
+中间没有筛选流程
+you know, filtering process,
+
+926
+00:45:18,530 --> 00:45:20,090
+这真的非常重要
+I think is just so important.
+
+927
+00:45:20,690 --> 00:45:22,910
+你刚才提到 AI 以及设计师开始提交代码
+You mentioned AI, how designers are shipping code.
+
+928
+00:45:23,450 --> 00:45:28,130
+我有个在大科技公司工作的朋友他说他们整个设计团队
+I have a friend who works at a big tech company and he just said all the design team,
+
+929
+00:45:28,250 --> 00:45:30,310
+被要求要提交
+they're required to ship like,
+
+930
+00:45:30,370 --> 00:45:32,810
+我也不太记得大概是每月 10 个 PR 之类的
+I don't know, 10 PRS a month or something like that,
+
+931
+00:45:32,830 --> 00:45:35,330
+或者每季度多少这是一个完全不同的新世界
+or a quarter, which is such a new world.
+
+932
+00:45:36,190 --> 00:45:37,310
+所以首先我想问的是
+I guess one is just like,
+
+933
+00:45:37,590 --> 00:45:39,310
+你怎么看待设计师提交代码这件事
+how do you think about designers shipping code?
+
+934
+00:45:39,370 --> 00:45:40,490
+是那种能写就写
+Is that like, just do it if you can?
+
+935
+00:45:40,570 --> 00:45:42,050
+还是说有某种硬性要求
+Or is there like a requirement sort of thing?
+
+936
+00:45:42,390 --> 00:45:46,910
+更广泛地说我也好奇 AI 是如何改变你们团队的运作方式的
+And broadly, I'm just curious how AI is changing the way your team operates?
+
+937
+00:45:47,370 --> 00:45:51,970
+有哪些由 AI 驱动的变化对你们团队的运作方式产生了明显影响
+What are just like a few things that have been impactful in how your team operates that are AI driven?
+
+938
+00:45:52,610 --> 00:45:56,510
+先退一步说在设计团队里提交代码绝对不是硬性要求
+Taking a step back, it's definitely not a requirement to ship code on design team.
+
+939
+00:45:56,610 --> 00:46:00,530
+但我觉得大家对学习新东西都非常有热情也很好奇
+But I think people are so passionate and curious about learning new things.
+
+940
+00:46:00,690 --> 00:46:01,450
+我的意思是有一件事
+I mean, one of the things,
+
+941
+00:46:01,570 --> 00:46:04,830
+就是我们在设计团队里一直在做的就是遇到问题就想办法搞懂它
+you know, we've always tried to do on the design team is just figure it out, right?
+
+942
+00:46:04,850 --> 00:46:08,670
+我记得在我们刚开始做一些 3D 图形相关东西的时候
+I remember, in the early days of some of the 3d graphics stuff that we were trying to do,
+
+943
+00:46:08,730 --> 00:46:11,190
+有个团队成员之前从没做过 3D 图形
+one of our team members had never done 3d graphics before.
+
+944
+00:46:11,270 --> 00:46:12,510
+然后他就说
+And they're like, like,
+
+945
+00:46:12,550 --> 00:46:13,710
+好那我们就来研究一下吧
+okay, let's just figure it out.
+
+946
+00:46:13,710 --> 00:46:15,610
+于是他就去上了一些在线教程
+Right. So they took some online tutorials and like,
+
+947
+00:46:15,790 --> 00:46:17,250
+然后很快我们就一路干起来了
+you know, boom, like we were off to the races.
+
+948
+00:46:17,430 --> 00:46:22,270
+所以我觉得设计团队在好奇心和学习新事物方面一直都非常灵活
+So I think the design team has always been really flexible in terms of their curiosity, learning new things.
+
+949
+00:46:22,330 --> 00:46:25,790
+所以我不认为你需要去强推大家或者设定什么硬性指标
+And so I don't think you have to like push people or create a requirement or something
+
+950
+00:46:25,790 --> 00:46:29,190
+才能让大家愿意去采用新工具
+like that, for folks to want to adopt new tools and want to,
+
+951
+00:46:29,190 --> 00:46:30,010
+或者愿意去提交代码
+you know, want to ship code.
+
+952
+00:46:30,110 --> 00:46:34,050
+我觉得现在的大问题是既然所有人都觉得自己可以
+I think, you know, the big question now that everyone and anyone thinks they can,
+
+953
+00:46:34,110 --> 00:46:37,290
+提交 PR 那我们如何在十亿级
+you know, submit a PR is like how we don't break things at a billion,
+
+954
+00:46:37,630 --> 00:46:39,950
+或接近十亿用户规模下不把系统搞崩
+you know, or nearly a billion user scale, right?
+
+955
+00:46:40,010 --> 00:46:45,830
+这点非常重要所以我们真正努力在做的是开发 AI 工具和防护栏
+That's really important. So I think what we've really tried to do is also develop AI tools and guardrails to make
+
+956
+00:46:45,830 --> 00:46:47,430
+让更多人更容易
+it easier for more people to,
+
+957
+00:46:47,470 --> 00:46:49,330
+参与进来并提交代码
+you know, participate and submit code,
+
+958
+00:46:49,390 --> 00:46:51,790
+同时也降低
+but also reduce the likelihood that,
+
+959
+00:46:51,930 --> 00:46:53,570
+出现各种 bug 的可能性
+you know, we're going to have some sort of bug.
+
+960
+00:46:53,670 --> 00:46:55,790
+所以现在我们有自动化代码审查
+So, you know, we've got automated code review now.
+
+961
+00:46:55,970 --> 00:46:59,410
+我们已经自动检测出了接近一万
+We've, I think, automatically detected like close to 10,000
+
+962
+00:46:59,410 --> 00:47:00,630
+个 bug 差不多是这个量级
+bugs at this point, probably.
+
+963
+00:47:01,170 --> 00:47:03,870
+我们在 Snap 还有一个系统
+You know, we've got, we have a system at Snap where,
+
+964
+00:47:04,050 --> 00:47:05,990
+在应用的内部版本里
+you know, on the internal version of the app,
+
+965
+00:47:06,010 --> 00:47:07,090
+你可以通过摇一摇来上报问题
+you can shake to report,
+
+966
+00:47:07,170 --> 00:47:09,790
+然后现在智能代理会
+you know, your problem and agents now,
+
+967
+00:47:09,890 --> 00:47:11,770
+调试并找出到底发生了什么
+you know, debug exactly what happened,
+
+968
+00:47:11,850 --> 00:47:12,910
+哪里出了问题
+what went wrong and, you know,
+
+969
+00:47:12,950 --> 00:47:15,070
+甚至还能给出修复建议
+can actually like suggest a fix.
+
+970
+00:47:15,130 --> 00:47:15,770
+而且我觉得
+And I think, you know,
+
+971
+00:47:15,770 --> 00:47:18,170
+很快它也会开始实施这个修复
+in pretty short order, it'll be implementing the fix as well,
+
+972
+00:47:18,250 --> 00:47:19,390
+这真的挺疯狂的
+which is pretty crazy.
+
+973
+00:47:19,550 --> 00:47:20,710
+所以我觉得
+So I think, you know,
+
+974
+00:47:20,710 --> 00:47:25,170
+退一步看大家对 AI 将如何改变公司运作方式都充满期待
+taking a step back, there's so much excitement around the way that AI is going to change
+
+975
+00:47:25,170 --> 00:47:26,270
+尤其是对公司运作方式的改变
+the way that companies work.
+
+976
+00:47:26,550 --> 00:47:28,170
+很明显尤其是软件公司
+Obviously, software companies in particular,
+
+977
+00:47:28,370 --> 00:47:32,790
+像我们这样的公司基本站在 AI 改变构建方式
+like ours, I think, are on the cutting edge of the way that AI is changing how things get
+
+978
+00:47:32,790 --> 00:47:34,530
+和工作内容的最前沿
+built and what gets done.
+
+979
+00:47:35,590 --> 00:47:37,190
+我们确实想要为这一切带来一些
+We really wanted to bring some,
+
+980
+00:47:37,210 --> 00:47:38,570
+秩序让这种混乱变得有条理
+like, order to that chaos.
+
+981
+00:47:38,910 --> 00:47:44,210
+所以我们的做法是从社区和广告主的待完成任务出发
+And so the way that we did that was really by starting with the jobs to be done for our
+
+982
+00:47:44,210 --> 00:47:45,450
+以此为起点来梳理这一切
+community and our advertisers.
+
+983
+00:47:45,890 --> 00:47:48,050
+所以如果回到非常非常基础的层面
+So getting really, really basic and,
+
+984
+00:47:48,190 --> 00:47:49,350
+你知道，就是很直接地去思考
+you know, straightforward on,
+
+985
+00:47:49,470 --> 00:47:51,790
+好，比方说，对 Snapchat 用户来说
+okay, you know, for Snapchatters,
+
+986
+00:47:51,930 --> 00:47:53,070
+或者说，从要完成的任务角度来看
+right, or jobs to be done,
+
+987
+00:47:53,150 --> 00:47:54,070
+事情其实简单到就是
+it's as simple as like,
+
+988
+00:47:54,230 --> 00:47:55,550
+让人们去下载这个应用
+get people to download the app,
+
+989
+00:47:55,650 --> 00:47:57,670
+然后让他们把自己的亲密好友加进来
+right, get them to add their close friends,
+
+990
+00:47:58,210 --> 00:47:59,210
+再让他们去
+you know, get them to,
+
+991
+00:47:59,370 --> 00:48:00,090
+你知道的，我也说不上来
+you know, I don't know,
+
+992
+00:48:00,150 --> 00:48:01,270
+用用滤镜之类的
+use lenses, something like that.
+
+993
+00:48:01,330 --> 00:48:02,350
+在广告主这边
+On the advertiser front,
+
+994
+00:48:02,410 --> 00:48:07,590
+对，就是说，这可能是把人引入广告平台、帮他们配置广告活动之类的
+right, it could be, you know, getting bringing people into the ad platform, configuring their campaign, etc.
+
+995
+00:48:08,190 --> 00:48:10,450
+所以通过把所有这些要完成的任务都列出来
+And so by listing out all these jobs to be done,
+
+996
+00:48:10,570 --> 00:48:14,510
+无论是针对社区用户的使用旅程还是针对广告主
+you know, really for the for the community journey and for advertisers as well,
+
+997
+00:48:14,870 --> 00:48:17,210
+我们就能非常清楚地看到哪些地方可以用智能代理
+it became very clear where we could use agents,
+
+998
+00:48:17,230 --> 00:48:21,750
+以及在哪些任务上需要高度聚焦去搭建跨职能团队
+where we needed to be very focused in terms of building cross-functional teams around
+
+999
+00:48:21,750 --> 00:48:23,990
+用 AI 工具来支撑这些任务
+those jobs supported by AI tools.
+
+1000
+00:48:24,510 --> 00:48:25,450
+这也为我们提供了
+And it's also given us,
+
+1001
+00:48:25,530 --> 00:48:29,670
+一个非常有用的机制，用来跟踪我们在业务结果上的进展
+I think, a really helpful mechanism to track our progress against the business outcomes
+
+1002
+00:48:29,670 --> 00:48:31,870
+针对每一项任务的进展
+for each of those jobs.
+
+1003
+00:48:32,090 --> 00:48:33,350
+所以我觉得
+So I think, you know,
+
+1004
+00:48:33,390 --> 00:48:35,150
+对我们来说，在努力
+for us trying to, you know,
+
+1005
+00:48:35,190 --> 00:48:37,170
+尽管我认为在当下这个时间点
+while I think in this moment of time,
+
+1006
+00:48:37,190 --> 00:48:38,150
+你当然会希望
+you certainly want to like,
+
+1007
+00:48:38,330 --> 00:48:41,730
+让百花齐放，让大家都去构建各种智能代理、做各种实验
+you know, have a thousand flowers bloom and people are building agents and experimenting.
+
+1008
+00:48:42,090 --> 00:48:43,170
+但与此同时我也认为
+I think at the same time,
+
+1009
+00:48:43,170 --> 00:48:46,730
+必须确保我们始终聚焦在对我们的社区真正重要的事情上
+making sure that we stay focused on what matters to our community,
+
+1010
+00:48:46,730 --> 00:48:50,450
+以及对广告主真正重要的事情上，这一点非常非常关键
+what matters to advertisers is really, really important.
+
+1011
+00:48:51,110 --> 00:48:54,990
+好，我想稍微往回拉一步，做一点回顾
+Okay, I want to take a step back and think about just kind of reflect back.
+
+1012
+00:48:55,050 --> 00:48:57,730
+你已经在做 Snap 有 15 年了
+It's been 15 years since you've been working on Snap.
+
+1013
+00:48:57,830 --> 00:48:59,130
+你们大概是在 15 年前上线的
+You launched about 15 years ago.
+
+1014
+00:48:59,670 --> 00:49:03,350
+我很好奇在这期间你得到的一些最大教训是什么
+I'm curious just what are some of the maybe biggest lessons,
+
+1015
+00:49:03,590 --> 00:49:06,190
+或者说这 15 年里最难的那些教训
+maybe the hardest lessons you've learned over the past 15 years,
+
+1016
+00:49:06,250 --> 00:49:07,230
+那些会让你觉得
+things that you're like,
+
+1017
+00:49:07,350 --> 00:49:09,470
+哦，当初创业的时候我完全没意识到这些
+oh, I didn't realize this as I was starting this company.
+
+1018
+00:49:09,850 --> 00:49:15,750
+是的，我觉得很难想象这份工作会随着时间发生多大的变化
+Yeah, I think it's hard to comprehend how much the job changes over time.
+
+1019
+00:49:16,090 --> 00:49:18,830
+我的意思是，从一开始到现在这种变化真的非常惊人
+I mean, it's really quite extraordinary to go from,
+
+1020
+00:49:19,230 --> 00:49:19,970
+比如说我当时的工作
+you know, my job, you know,
+
+1021
+00:49:19,990 --> 00:49:21,890
+在早期我和 Bobby Murphy 一起的时候
+in the early days with Bobby Murphy and I,
+
+1022
+00:49:21,890 --> 00:49:23,930
+我一方面在帮忙做产品设计
+I was, you know, helping design the product,
+
+1023
+00:49:24,010 --> 00:49:26,090
+但同时我也在回复客服邮件
+but I was also answering customer support emails.
+
+1024
+00:49:26,310 --> 00:49:29,170
+我还在想办法把公司的法律文件都理顺
+I was, you know, trying to get our legal filing sorted out.
+
+1025
+00:49:29,230 --> 00:49:30,490
+我也在努力去融资
+I was trying to raise money, right?
+
+1026
+00:49:31,230 --> 00:49:33,870
+随着公司成长、事情不断演变
+As, you know, the company grows and things evolve,
+
+1027
+00:49:33,970 --> 00:49:37,330
+这份工作有很大一部分就变成了关于领导力
+like so much more of the job is about leadership, right?
+
+1028
+00:49:37,350 --> 00:49:39,770
+关于确保你真正能培养好团队里的每个人
+About making sure you're really developing people,
+
+1029
+00:49:39,890 --> 00:49:43,590
+选对加入团队的人、打造公司的文化
+selecting the right people to be on the team, developing the culture,
+
+1030
+00:49:44,190 --> 00:49:45,730
+而且要非常非常认真地去做这些事
+doing that really, really seriously.
+
+1031
+00:49:45,950 --> 00:49:48,470
+而且在某种程度上还要搭建一套结构来保证这些事情能被贯彻下去
+And, you know, in some ways creating a structure that can enforce that,
+
+1032
+00:49:48,850 --> 00:49:52,830
+让公司有一个统一的文化和清晰的愿景
+you know, to have a cohesive culture and a vision around the company.
+
+1033
+00:49:53,610 --> 00:49:56,510
+然后这份工作又变成了关于战略
+You know, it becomes about strategy, right?
+
+1034
+00:49:56,810 --> 00:49:58,310
+要在各种变化中带领公司前进
+Managing through, you know,
+
+1035
+00:49:58,330 --> 00:50:03,130
+比如像我们今天在人工智能上看到的这种巨大变革
+enormous change like what we're seeing with artificial intelligence today,
+
+1036
+00:50:03,250 --> 00:50:05,210
+还有几年前
+but also, you know, several years ago,
+
+1037
+00:50:05,330 --> 00:50:09,330
+在疫情期间，或者在我们重建广告平台的时候
+managing through the pandemic or managing through rebuilding our advertising platform as
+
+1038
+00:50:09,330 --> 00:50:12,010
+当整个环境发生变化时，如何带领公司度过那些阶段
+the landscape, you know, changed.
+
+1039
+00:50:12,210 --> 00:50:14,950
+所以这份工作本身发生了极其剧烈的变化
+So the job has just changed so dramatically.
+
+1040
+00:50:15,150 --> 00:50:18,150
+我觉得这也是它让人充满能量的一部分
+And I think that's part of what's so energizing about it,
+
+1041
+00:50:18,150 --> 00:50:19,490
+也是我特别享受的部分
+what I enjoy so much about it,
+
+1042
+00:50:19,490 --> 00:50:24,030
+但这同样是我在当初创业时
+but it's also something I like never in a million years could have anticipated when we
+
+1043
+00:50:24,030 --> 00:50:25,690
+无论如何都不可能预料到的
+were first getting started.
+
+1044
+00:50:26,730 --> 00:50:28,710
+那你自己最大的变化
+How have you most changed and,
+
+1045
+00:50:28,770 --> 00:50:30,530
+或者说在这段历程中是如何成长的
+I guess, evolved over that course?
+
+1046
+00:50:30,610 --> 00:50:32,530
+你在哪个方面的提升最大
+What's like a big area that you've improved in?
+
+1047
+00:50:32,970 --> 00:50:38,670
+对我来说，一个非常重要的关注点是学会如何更高效地沟通
+You know, one of the big focus areas for me was learning how to communicate more effectively, you know,
+
+1048
+00:50:38,690 --> 00:50:40,590
+既包括对团队内部
+both to our team, but also,
+
+1049
+00:50:40,790 --> 00:50:43,570
+也包括像现在这样在播客上、面对整个世界
+you know, here on a podcast or with the world.
+
+1050
+00:50:43,670 --> 00:50:46,730
+说到底，这份工作有很大一部分就是要成为一个出色的沟通者
+I mean, so much of the job is about becoming a great communicator.
+
+1051
+00:50:46,850 --> 00:50:51,350
+我记得在公司早期我有机会见到克林顿总统
+I remember I had the opportunity to meet President Clinton at one point in the early days of the company.
+
+1052
+00:50:51,430 --> 00:50:52,930
+他当时说，有件事很有意思
+And he was like, you know, it's very interesting,
+
+1053
+00:50:53,230 --> 00:50:56,450
+当总统其实就像是当“首席讲解官”
+you know, being president is really like being explainer-in-chief.
+
+1054
+00:50:56,970 --> 00:51:01,530
+你的工作其实就是给大家解释事情，帮他们理解
+And your job is actually to just explain stuff to people and help them make sense of the
+
+1055
+00:51:01,530 --> 00:51:03,430
+这个世界、这家公司，以及他们在其中扮演的角色
+world and the company and their role in it.
+
+1056
+00:51:03,470 --> 00:51:05,270
+我一直觉得这句话非常有意思
+And I always thought that was really interesting.
+
+1057
+00:51:05,410 --> 00:51:06,490
+我经常会回想起这句话
+And I go back to that a lot.
+
+1058
+00:51:06,690 --> 00:51:11,250
+我的工作有很大一部分就是向公司里的每个人解释清楚各种事情
+So much of my job is to explain things to our company and,
+
+1059
+00:51:11,250 --> 00:51:12,390
+也包括向我们的股东解释
+you know, to our shareholders,
+
+1060
+00:51:12,730 --> 00:51:18,470
+以及向外界解释，用一种真正说得通、能激励大家的方式
+to the world in ways that really make sense and can inspire folks and help us to all move
+
+1061
+00:51:18,470 --> 00:51:19,590
+帮助我们所有人朝着正确的方向前进
+in the right direction.
+
+1062
+00:51:19,790 --> 00:51:23,750
+所以我认为沟通就变成了一项极其核心的能力
+So I think communication just becomes such a core skill.
+
+1063
+00:51:23,850 --> 00:51:30,590
+我觉得在早期的时候，我其实有点不必要地轻视了沟通所起到的那个非常重要的作用
+And I think in the early days, I was, you know, unnecessarily dismissive of the really important role of communication.
+
+1064
+00:51:31,310 --> 00:51:32,810
+对于那些听到这里、心想
+For founders that are hearing this and are like,
+
+1065
+00:51:32,810 --> 00:51:33,970
+好，我也要在这方面下功夫 的创始人来说
+OK, I'm going to work on this.
+
+1066
+00:51:34,630 --> 00:51:37,410
+在这方面，什么对你提升最大
+What most helped you level up in this space?
+
+1067
+00:51:37,510 --> 00:51:39,390
+是像教练那样的人吗 是你身边的人吗
+Is it like coaches? Is it people around you?
+
+1068
+00:51:39,410 --> 00:51:40,230
+还是说就是不断去做
+Is it just doing it?
+
+1069
+00:51:40,750 --> 00:51:43,410
+说实话，真的只有不断去做这一条路
+You know, just doing it is really the only way.
+
+1070
+00:51:43,950 --> 00:51:47,110
+我记得当时我们有一位董事给我的建议就是这样
+You know, and I remember that was really the advice like one of our board members gave to
+
+1071
+00:51:47,110 --> 00:51:48,470
+因为那时候我非常抗拒
+me because I was so reluctant.
+
+1072
+00:51:48,610 --> 00:51:49,730
+我不想开全员大会
+I didn't want to do an all hands.
+
+1073
+00:51:49,870 --> 00:51:51,050
+我也不想做问答环节
+I didn't want to do Q&A.
+
+1074
+00:51:51,670 --> 00:51:53,130
+在公司早期
+You know, in the early days of the company,
+
+1075
+00:51:53,130 --> 00:51:54,150
+我当时就想
+I was like, well, you know,
+
+1076
+00:51:54,230 --> 00:51:55,410
+我发封邮件就好了
+I'll just send an email.
+
+1077
+00:51:55,550 --> 00:51:56,850
+然后他就说，你在干嘛
+And he's like, what are you doing?
+
+1078
+00:51:56,910 --> 00:51:58,290
+他就说，很遗憾啊，Evan
+Like, he's like, too bad, Evan.
+
+1079
+00:51:58,350 --> 00:51:59,410
+但这就是你的工作
+Like, this is your job.
+
+1080
+00:51:59,910 --> 00:52:01,910
+而且我觉得那真的是非常非常好的建议
+And I think that was really, really good advice.
+
+1081
+00:52:02,310 --> 00:52:04,010
+所以当时我心里真的就是想说，好吧行
+And so literally, I was like, OK, fine.
+
+1082
+00:52:04,430 --> 00:52:07,230
+你知道的，这是我工作中一个核心部分，也是我必须学会去做的事情
+You know, this is a core part of my job and what I need to learn how to do.
+
+1083
+00:52:07,330 --> 00:52:08,510
+我要去学会爱上它
+I'm going to I'm going to learn to love it.
+
+1084
+00:52:08,810 --> 00:52:09,470
+我想要爱上它
+I want to love it.
+
+1085
+00:52:09,510 --> 00:52:10,630
+我想要走上台前 然后
+I want to get up there and,
+
+1086
+00:52:10,630 --> 00:52:12,770
+站在整个公司面前 真正地享受
+you know, get in front of our company and really enjoy,
+
+1087
+00:52:12,950 --> 00:52:15,090
+回答所有这些非常棘手的问题 然后
+you know, answering all these really tough questions and,
+
+1088
+00:52:15,290 --> 00:52:16,970
+和我们的团队一起深入剖析业务
+you know, digging into the business with our team.
+
+1089
+00:52:16,990 --> 00:52:18,310
+而现在我确实做到了
+And now I really do.
+
+1090
+00:52:18,730 --> 00:52:22,290
+你知道的 我已经学会了真正享受和团队之间那种对话
+You know, I've learned to learn to really enjoy that that dialogue with our team.
+
+1091
+00:52:22,310 --> 00:52:24,870
+而且我从大家提出的问题中学到了很多
+And I learned so much from the questions that folks ask.
+
+1092
+00:52:24,890 --> 00:52:26,150
+我也很喜欢这种开放
+And I love that openness.
+
+1093
+00:52:26,230 --> 00:52:28,670
+我认为这正是我们公司以及我们自身非常重要的一部分
+I think it's just such an important part of our company and who we are.
+
+1094
+00:52:28,910 --> 00:52:31,490
+不久前我在播客里请过Rahul Vohra
+I had Rahul Vohra on the podcast a while back,
+
+1095
+00:52:31,690 --> 00:52:32,830
+他是Superhuman的创始人
+the founder of Superhuman.
+
+1096
+00:52:33,490 --> 00:52:34,510
+他也经历过类似的
+And he went through a similar,
+
+1097
+00:52:34,730 --> 00:52:35,930
+我不知道这是不是你经历过的那种
+I don't know if this is what you went through,
+
+1098
+00:52:35,990 --> 00:52:39,970
+但他经历了一个转变 从非常热爱自己在做的事 到最后被
+but he went through a transition where he loved what he was doing and then ended up being
+
+1099
+00:52:39,970 --> 00:52:41,770
+投资人和一些领导层推动着去做一些
+pushed by VCs and leaders to like,
+
+1100
+00:52:41,870 --> 00:52:43,070
+“好 你必须去做这些别的事情”的事
+OK, you've got to do these other things.
+
+1101
+00:52:43,750 --> 00:52:48,030
+然后就变成 “好吧 我真的不喜欢这些 我要想办法回到做我
+And then like, OK, I really don't like this and I'm going to find a way to do the thing I
+
+1102
+00:52:48,030 --> 00:52:53,090
+真正喜欢的事情 因为那会在业务的方方面面产生影响 帮助我们成功”
+really enjoy because that's going to reflect in so many ways across the business and help us succeed.
+
+1103
+00:52:53,250 --> 00:52:54,750
+这是你也经历过的事情吗 还是说你只是觉得
+Is that something you went through or just like,
+
+1104
+00:52:54,790 --> 00:52:56,850
+“好 我只想回到产品和构建本身”
+OK, I just want to get back to the product and building?
+
+1105
+00:52:57,290 --> 00:53:01,950
+你知道的 如果你想继续做CEO 那种说法只对了一部分
+You know, I think that's only partly true if you want to stay in the CEO job.
+
+1106
+00:53:02,330 --> 00:53:09,130
+我觉得CEO这份工作有很多要求 并不一定都是你
+I think the CEO job has a lot of requirements that are not necessarily things that you
+
+1107
+00:53:09,130 --> 00:53:10,210
+早上醒来就会很想去做的事情
+love to do in the morning.
+
+1108
+00:53:10,650 --> 00:53:15,470
+做CEO意味着要承担巨大的责任
+There's a huge amount of responsibility that comes along with being CEO.
+
+1109
+00:53:15,790 --> 00:53:20,270
+我认为还需要建立起大量严谨的运营能力
+There's a lot of operational rigor that I think needs to be developed.
+
+1110
+00:53:20,650 --> 00:53:24,190
+我觉得CEO工作的每一部分都并不光鲜亮丽
+I think not every part of the CEO job is glamorous.
+
+1111
+00:53:24,410 --> 00:53:27,130
+所以如果我只是想做产品
+So I think if I just wanted to work on product,
+
+1112
+00:53:27,230 --> 00:53:28,750
+我会在Snap选择一份别的工作
+I would pick a different job at Snap.
+
+1113
+00:53:28,910 --> 00:53:32,830
+但我想之所以我还在做这份工作 是因为我真的很喜欢带领公司 带领业务的方向和
+But I think because I really like leading our company and leading the direction and
+
+1114
+00:53:32,830 --> 00:53:37,210
+战略 而且我看到了一个巨大的机会 去改变人们
+strategy for the business and because I see a huge opportunity in transforming the way
+
+1115
+00:53:37,210 --> 00:53:39,930
+未来使用计算设备的方式
+that people use computing in the future,
+
+1116
+00:53:40,510 --> 00:53:41,390
+无论是通过Snapchat
+you know, both through Snapchat,
+
+1117
+00:53:41,470 --> 00:53:43,250
+还是通过Spectacles（Snap智能眼镜）
+but also with specs.
+
+1118
+00:53:43,690 --> 00:53:47,210
+我觉得此刻这就是最适合我的角色
+I think this is the right role for me right now.
+
+1119
+00:53:47,330 --> 00:53:52,430
+当然 换个角色的话 我肯定会花更多时间陪家人 可能周日也会更轻松
+I mean, certainly I would spend more time with my family and probably have more fun on
+
+1120
+00:53:52,430 --> 00:53:56,890
+或者如果我是在一个更专注于设计的角色上
+Sundays if I was in a different role or more focused on design.
+
+1121
+00:53:57,070 --> 00:54:01,410
+但我认为 对于像我们这样规模的公司来说
+But I think the opportunity for a business like ours at the scale that we have,
+
+1122
+00:54:01,670 --> 00:54:04,930
+这是我一生仅有一次的机会
+it's a once-in-a-lifetime opportunity for me.
+
+1123
+00:54:05,250 --> 00:54:07,470
+尽管它充满挑战
+And despite its challenges,
+
+1124
+00:54:07,470 --> 00:54:08,910
+我确实是喜欢CEO这份工作的
+I do like the CEO job.
+
+1125
+00:54:09,490 --> 00:54:10,370
+所以顺着这个话题
+So kind of along those lines,
+
+1126
+00:54:10,490 --> 00:54:11,350
+你发了一封公开信
+you put out this letter,
+
+1127
+00:54:11,450 --> 00:54:12,650
+我记得是在去年的年底
+I think it was the end of last year,
+
+1128
+00:54:12,670 --> 00:54:16,390
+在那封信里你把接下来这一年称为Snap的关键转折时刻
+where you described this coming year as the crucible moment for Snap.
+
+1129
+00:54:17,350 --> 00:54:21,710
+这太有意思了 你们有十亿月活跃用户
+It's so interesting, just like you guys have a billion monthly active users.
+
+1130
+00:54:21,790 --> 00:54:24,890
+这简直夸张 我觉得很多人根本没意识到这一点
+That's just absurd. I don't think people realize this.
+
+1131
+00:54:25,610 --> 00:54:29,050
+你们一年营收大概有60亿美元左右
+You're making $6 billion a year in revenue, something like that.
+
+1132
+00:54:29,470 --> 00:54:32,450
+是为数不多真正活下来的社交网络之一
+One of the very few social networks that lasts,
+
+1133
+00:54:32,730 --> 00:54:37,030
+而且非常稳健 拥有一群非常有价值 又很有意思的用户
+that is durable, with like a very valuable, interesting audience.
+
+1134
+00:54:37,950 --> 00:54:40,810
+但另一方面 股价表现并不算亮眼
+On the flip side, the stock hasn't been killing it.
+
+1135
+00:54:40,910 --> 00:54:42,630
+有很多投资人不断向你施压
+There's like these investors coming at you,
+
+1136
+00:54:42,750 --> 00:54:44,730
+想要告诉你要去改变一大堆事情
+trying to tell you to change all these things.
+
+1137
+00:54:45,550 --> 00:54:46,910
+我想听听你的想法
+I guess just thoughts,
+
+1138
+00:54:47,090 --> 00:54:50,590
+你的反思 以及你觉得大家对Snap未来的走向到底忽略了什么
+reflections, and what do you think people are missing about where this might go?
+
+1139
+00:54:51,040 --> 00:54:55,850
+这其实就是我把今年称为关键转折时刻的原因之一
+Well, that's really one of the reasons why I called this year a crucible moment.
+
+1140
+00:54:56,010 --> 00:54:59,270
+公司规模已经快要达到可以进入财富500强的程度
+The company is almost at the scale of entering the Fortune 500,
+
+1141
+00:54:59,470 --> 00:55:00,370
+这非常令人兴奋
+which is really exciting.
+
+1142
+00:55:00,570 --> 00:55:04,110
+月活跃用户也快到十亿了
+It's almost at a billion monthly active users.
+
+1143
+00:55:04,850 --> 00:55:11,430
+在为这个未来计算平台投入了12年之后 我们也即将推出Spectacles（Snap智能眼镜）
+It's about to launch specs after 12 years of investment in this future computing platform.
+
+1144
+00:55:12,130 --> 00:55:13,050
+但与此同时
+But at the same time,
+
+1145
+00:55:13,170 --> 00:55:15,550
+我们在净利润层面仍然没有实现盈利
+it's still not net income profitable,
+
+1146
+00:55:15,790 --> 00:55:21,730
+比如说 因为我们一直在为未来进行大量投入 而且是主动做出的这种选择
+for example, because we've been investing so heavily in the future and making the choice to do that.
+
+1147
+00:55:21,850 --> 00:55:29,090
+所以我认为今年我们必须证明 Snapchat可以成为一个非常强大且盈利的业务
+And so I think this is the year that we have to prove that Snapchat can be a really strong, profitable business,
+
+1148
+00:55:29,090 --> 00:55:35,130
+证明它可以在用户覆盖面和用户对新产品的参与度上持续增长
+that it continues to grow both in terms of the reach of our audience and their engagement
+
+1149
+00:55:35,130 --> 00:55:39,130
+不管是话题聊天 还是Spotlight
+with new products, whether it's topic chats or spotlight.
+
+1150
+00:55:39,590 --> 00:55:43,350
+我记得现在每个月有2亿人在Snapchat上玩游戏
+I think we've got 200 million people playing games every month on Snapchat now.
+
+1151
+00:55:43,450 --> 00:55:49,290
+所以游戏正在成为Snapchat上推动互动的重要组成部分
+So gaming is becoming a big part of the engagement drivers on Snapchat.
+
+1152
+00:55:50,070 --> 00:55:53,410
+这之所以如此重要 是因为如果没有一个非常扎实的基础
+And the reason why that's so important is that it's going to be very hard for us to win
+
+1153
+00:55:53,410 --> 00:55:55,850
+我们很难在Spectacles（Snap智能眼镜）上取得长期胜利
+long-term in specs without a really solid foundation.
+
+1154
+00:55:56,750 --> 00:56:00,490
+所以我认为 在花了几年时间重建广告
+And so I think we need to demonstrate that after a couple of years of rebuilding our ad
+
+1155
+00:56:00,490 --> 00:56:02,370
+平台 重建我们的市场拓展体系之后
+platform, rebuilding our go-to-market efforts,
+
+1156
+00:56:02,510 --> 00:56:05,990
+并且真正加速我们中小客户业务的增长
+really accelerating the growth of the small-medium customer part of our business,
+
+1157
+00:56:06,110 --> 00:56:08,670
+这一块对我们来说增长得非常快
+which has grown really rapidly for us,
+
+1158
+00:56:08,750 --> 00:56:14,390
+今年我们已经拥有一个非常扎实的基础 可以开启公司历史的下一个篇章
+that this year we have a really solid foundation to launch the next chapter in the company's history.
+
+1159
+00:56:14,570 --> 00:56:17,810
+所以这对Snap来说真的是一个非常令人兴奋的转折点
+So it's a real turning point for Snap that's really exciting,
+
+1160
+00:56:17,970 --> 00:56:22,050
+但对公司来说 这绝对是一个需要全员投入的时刻
+but it's definitely an all-hands-on-deck moment for the company.
+
+1161
+00:56:22,750 --> 00:56:24,890
+你对Snap在市场中的定位有一个非常有趣的说法
+You had a really interesting way of describing Snap in the market.
+
+1162
+00:56:25,050 --> 00:56:26,930
+你把Snap称作“中间的孩子”
+You called Snap the middle child.
+
+1163
+00:56:27,750 --> 00:56:29,310
+说说这到底是什么意思
+Talk about just what that means.
+
+1164
+00:56:29,950 --> 00:56:34,570
+是的 我觉得关于我们这项服务有件很好玩的事 就是虽然在用户规模上
+Yeah, I think one of the things that's so funny about our service is that while we're
+
+1165
+00:56:34,570 --> 00:56:37,250
+我们非常非常大
+very, very large in terms of the scale of our audience,
+
+1166
+00:56:37,250 --> 00:56:38,630
+在业务规模上也是
+in terms of the scale of our business,
+
+1167
+00:56:39,230 --> 00:56:41,710
+比如我们比Pinterest或Reddit大得多
+we're much larger than Pinterest or Reddit,
+
+1168
+00:56:41,830 --> 00:56:44,630
+但同时我们又远小于Meta和Google
+for example, we're also way smaller than Meta and Google.
+
+1169
+00:56:44,870 --> 00:56:49,430
+所以我们在市场上处在一个非常有趣的中间位置
+And so we occupy this very interesting middle position in the market.
+
+1170
+00:56:49,670 --> 00:56:53,150
+我认为这带来了很多好处 因为我们的体量已经足够大
+And I think that comes with a lot of benefits because we're big enough.
+
+1171
+00:56:53,250 --> 00:56:55,050
+有足够的规模去做很多非常有意思的事情
+We have enough scale to do really interesting things.
+
+1172
+00:56:55,170 --> 00:56:58,990
+但这也带来了被掩盖的挑战
+But it also comes with the challenges of being overshadowed,
+
+1173
+00:56:59,010 --> 00:57:00,570
+在某些情况下 会被那些“哥哥们”盖过去
+in some cases, by our older brothers.
+
+1174
+00:57:00,870 --> 00:57:06,090
+有时候那些“年纪更小的孩子”也会得到更多关注
+And maybe sometimes the younger kids are getting more attention.
+
+1175
+00:57:06,350 --> 00:57:07,530
+所以我觉得 再次回到刚才的话题
+And so I think, again,
+
+1176
+00:57:07,630 --> 00:57:08,850
+在这个关键转折时刻
+in this crucible moment,
+
+1177
+00:57:08,970 --> 00:57:12,850
+这也是在重新定义我们作为一家公司 作为一门生意到底是谁的一部分
+it's part of defining who we are as a company and who we are as a business.
+
+1178
+00:57:13,170 --> 00:57:18,710
+而我认为在这个过程中 一个非常重要的事情就是把Spectacles（Snap智能眼镜）真正带给消费者
+And I think one of the things that will play an important role in that is getting specs out to consumers.
+
+1179
+00:57:18,870 --> 00:57:19,830
+因为我觉得在当下
+Because I think right now,
+
+1180
+00:57:20,230 --> 00:57:23,310
+我们已经花了很长时间在讨论Spectacles（Snap智能眼镜）在这个世界中将扮演的角色
+we've talked so long about the role that specs will play in the world.
+
+1181
+00:57:23,470 --> 00:57:26,170
+我们也为开发这个平台投入了非常长的时间
+We've worked on developing the platform for so long.
+
+1182
+00:57:26,250 --> 00:57:31,410
+但如果没有一个你真的可以去玩、去拿在手里、自己去使用的东西
+But without something that you can really play with and hang on to and use yourself,
+
+1183
+00:57:31,870 --> 00:57:36,390
+那就很难真正理解Snap旅程的下一篇章
+it's hard to really understand the next chapter of Snap's journey.
+
+1184
+00:57:36,630 --> 00:57:41,770
+所以我认为中间的孩子面临的最大挑战之一就是定义自己
+So I think one of the biggest challenges that middle children face is defining themselves,
+
+1185
+00:57:42,010 --> 00:57:45,150
+从他们的哥哥姐姐和弟弟妹妹中脱颖而出
+standing out from their older siblings and younger siblings.
+
+1186
+00:57:45,330 --> 00:57:50,010
+所以我觉得今年、此刻就是Snap真正要定义自己的时候
+And so I think this is a moment and a year when Snap is really going to define itself.
+
+1187
+00:57:50,470 --> 00:57:52,030
+而我对此感到非常兴奋
+And I'm really excited about that.
+
+1188
+00:57:52,610 --> 00:57:53,350
+说到中间的孩子
+Speaking of middle child,
+
+1189
+00:57:53,510 --> 00:57:54,890
+你有好几个孩子
+you have a number of children.
+
+1190
+00:57:55,690 --> 00:57:58,830
+我很好奇，这个问题会完全换一个方向
+And I'm curious, there's a whole going a whole different direction.
+
+1191
+00:57:59,270 --> 00:58:01,950
+你对屏幕和电子设备的管控政策是什么
+What's your policy on screens and devices?
+
+1192
+00:58:02,250 --> 00:58:03,730
+你知道，你既打造了Snapchat
+You know, having built Snapchat,
+
+1193
+00:58:04,290 --> 00:58:08,290
+还做了Spectacles（Snap智能眼镜），那你是怎么看待你孩子使用设备这件事的
+and then also specs, just how do you think about devices in your kids?
+
+1194
+00:58:08,950 --> 00:58:10,590
+嗯，我们的情况跨度挺大的
+Well, we've got a real range.
+
+1195
+00:58:10,930 --> 00:58:12,930
+我们有四个男孩，分别是两岁
+We've got four boys, two,
+
+1196
+00:58:13,350 --> 00:58:15,310
+六岁、七岁和十五岁
+six, seven, and 15.
+
+1197
+00:58:15,450 --> 00:58:19,610
+所以针对不同年龄的孩子，我们采取的方式完全不一样
+So we approach it very differently for all the kids at different ages.
+
+1198
+00:58:19,750 --> 00:58:20,670
+对于两岁的那个
+For the two year old,
+
+1199
+00:58:20,910 --> 00:58:22,750
+基本上就是零屏幕时间
+it's like zero screen time.
+
+1200
+00:58:23,350 --> 00:58:24,790
+我们其实就是
+We really just, you know,
+
+1201
+00:58:24,870 --> 00:58:27,910
+想要本质上是陪他一起读书、玩耍
+want to, you know, essentially read with him and play,
+
+1202
+00:58:28,150 --> 00:58:30,750
+带他到外面探索世界之类的活动
+you know, explore outside and those sorts of things,
+
+1203
+00:58:30,810 --> 00:58:35,130
+但基本不会让他接触屏幕，除非他在理发
+but not really focus on screens unless he is getting a haircut,
+
+1204
+00:58:35,470 --> 00:58:39,090
+因为他理发的时候真的很难配合
+because he really struggles with getting his haircut.
+
+1205
+00:58:39,290 --> 00:58:40,570
+所以当他理发的时候
+So when he gets a haircut,
+
+1206
+00:58:40,810 --> 00:58:43,670
+他特别喜欢Bobcat拖拉机
+he really loves Bobcat tractors,
+
+1207
+00:58:43,750 --> 00:58:46,390
+就是那种四轮的Bobcat拖拉机
+you know, those four wheel sort of Bobcat tractors.
+
+1208
+00:58:46,510 --> 00:58:50,550
+他特别爱看人开着Bobcat拖拉机到处开的YouTube视频
+And he loves to watch YouTube videos of people driving Bobcat tractors around.
+
+1209
+00:58:50,670 --> 00:58:51,890
+所以当他理发的时候
+So when he gets his haircut,
+
+1210
+00:58:51,970 --> 00:58:54,290
+他就可以看别人开Bobcat拖拉机
+he can watch people drive Bobcat tractors.
+
+1211
+00:58:54,430 --> 00:58:56,610
+但除此之外，就没有屏幕时间
+But other than that, no screen time.
+
+1212
+00:58:56,830 --> 00:58:58,330
+对于六岁和七岁的孩子
+For the six and seven year olds,
+
+1213
+00:58:58,770 --> 00:59:02,610
+他们，我会说，只是偶尔看一看电影
+you know, they are, I would say, infrequent movie watchers.
+
+1214
+00:59:02,730 --> 00:59:04,230
+但除此之外
+But other than that, again,
+
+1215
+00:59:04,410 --> 00:59:06,930
+我们不会给他们手机之类的东西
+you know, we don't give them phones or anything like that.
+
+1216
+00:59:07,010 --> 00:59:08,530
+事实上，有件事特别有趣
+In fact, it was really fun for,
+
+1217
+00:59:09,230 --> 00:59:10,890
+就是在假期圣诞节的时候
+you know, over the holidays for Christmas,
+
+1218
+00:59:10,890 --> 00:59:11,630
+我送了他们一个东西
+I gave them that.
+
+1219
+00:59:11,750 --> 00:59:15,590
+我记得Palmer Luckey有一家创业公司，他们在某种程度上重制Gameboy
+I think Palmer Luckey has a startup where they are sort of remaking Gameboys.
+
+1220
+00:59:16,590 --> 00:59:17,410
+我也有一个那个
+I have one of those.
+
+1221
+00:59:17,770 --> 00:59:18,510
+对，那个真的很好玩
+Yeah, it's really fun.
+
+1222
+00:59:18,670 --> 00:59:25,390
+是啊 模拟的 对 模拟的 TBPN 的那些家伙圣诞节的时候给了我两个送给我们孩子
+Yeah. Analogue. Yeah, Analogue. So the TBPN guys gave me two of them for our kids for Christmas.
+
+1223
+00:59:25,690 --> 00:59:29,890
+所以除了偶尔看电影之外，他们还能偶尔玩一会儿那个
+And so they get to spend a little time on those in addition to watching movies every now and then.
+
+1224
+00:59:29,970 --> 00:59:31,890
+然后，对十五岁的那个来说
+And then, you know, with the 15 year old,
+
+1225
+00:59:32,090 --> 00:59:35,190
+他是彻底沉浸在科技里的
+he is all in on technology,
+
+1226
+00:59:35,290 --> 00:59:38,690
+不管是用来学习、和朋友聊天，还是用Snapchat
+whether he's using it for school or whether he's using it to talk with his friends or using Snapchat.
+
+1227
+00:59:38,890 --> 00:59:42,390
+所以，这真的取决于孩子以及他们在发展阶段中的位置
+So, you know, it really depends on kids and where they're at developmentally.
+
+1228
+00:59:42,490 --> 00:59:44,370
+但对我们来说，这就是我们一直以来的做法
+But I think for us, like that's been our approach.
+
+1229
+00:59:44,570 --> 00:59:46,590
+在你孩子身上，你们在AI方面有没有做什么事情
+Is there anything you're doing with AI in your kids,
+
+1230
+00:59:46,590 --> 00:59:47,710
+比如说对年纪大一点的那个
+like maybe even the older one,
+
+1231
+00:59:47,810 --> 00:59:51,210
+比如用AI教育类工具、ChatGPT之类的
+just like AI education sort of tools, ChatGPT?
+
+1232
+00:59:51,530 --> 00:59:52,550
+有，特别有意思
+Yeah, it's so funny.
+
+1233
+00:59:52,690 --> 00:59:54,070
+前几天早上在早餐桌上
+At the breakfast table the other morning,
+
+1234
+00:59:54,110 --> 00:59:55,830
+我其实一直在问他们很多问题
+actually, I was just asking them a lot about like,
+
+1235
+00:59:55,870 --> 00:59:57,750
+比如他们的老师在学校是怎么谈AI的
+how are their teachers talking about AI at school?
+
+1236
+00:59:57,950 --> 00:59:59,910
+他们打算怎么把AI整合进课程里
+How are they thinking about integrating in the curriculum?
+
+1237
+01:00:00,110 --> 01:00:02,010
+你们是不是一直在用AI
+Are you guys using AI all the time?
+
+1238
+01:00:02,810 --> 01:00:05,010
+到目前为止，他们的回答基本都是没有
+And I think the answer so far has been not really,
+
+1239
+01:00:05,730 --> 01:00:07,110
+我觉得这还挺有意思的
+you know, which I think is interesting.
+
+1240
+01:00:07,290 --> 01:00:10,710
+但当然了 你也知道 我们的孩子在家里会拿它来玩
+But certainly, you know, our kids play around with it at home.
+
+1241
+01:00:11,010 --> 01:00:13,410
+他们还是Spectacles（Snap智能眼镜）的测试用户
+They are beta testers for specs,
+
+1242
+01:00:13,450 --> 01:00:14,230
+这件事特别有趣
+which is really fun.
+
+1243
+01:00:14,290 --> 01:00:20,550
+我特别喜欢和他们一起戴着眼镜体验那些很酷的功能
+I really love using the glasses together with them and some of the really cool experiences there.
+
+1244
+01:00:20,830 --> 01:00:21,610
+然后，你知道，Flynn
+And, you know, Flynn,
+
+1245
+01:00:21,710 --> 01:00:25,010
+作为老大，大概是最熟练使用AI工具的那个
+who's the eldest, is probably most fluent in using AI tools.
+
+1246
+01:00:25,050 --> 01:00:26,110
+但我觉得特别有意思的是
+But what I think is so fun,
+
+1247
+01:00:26,210 --> 01:00:29,390
+作为孩子，我觉得我们每个人在小时候
+you know, as a kid, I think all of us as kids,
+
+1248
+01:00:29,410 --> 01:00:30,970
+都有着极其丰富的想象力
+right, are incredibly imaginative, right?
+
+1249
+01:00:30,970 --> 01:00:31,970
+我们天生就很有创造力
+We're all born creative.
+
+1250
+01:00:32,150 --> 01:00:33,870
+我们有很多很棒的点子想要分享
+We have all these amazing ideas to share.
+
+1251
+01:00:33,990 --> 01:00:35,870
+而我觉得AI最酷的一点在于
+And I think what's so cool about AI is how,
+
+1252
+01:00:35,990 --> 01:00:37,710
+它几乎可以在一瞬间
+you know, in nearly an instant,
+
+1253
+01:00:37,710 --> 01:00:40,230
+把你脑海里的任何想法变成一个实实在在的东西
+you can take any idea you have and make something.
+
+1254
+01:00:40,410 --> 01:00:43,150
+所以我觉得这对年轻人来说非常有赋能作用
+And so I think that's so empowering for young people.
+
+1255
+01:00:43,290 --> 01:00:45,770
+这绝对是我希望自己孩子能拥有的体验
+It's certainly an experience I want our kids to have.
+
+1256
+01:00:45,930 --> 01:00:49,610
+而且我认为，把AI深度融入到
+And I think it's going to be so important to deeply integrate into the way that,
+
+1257
+01:00:49,650 --> 01:00:50,970
+当今教育的运作方式中会非常重要
+you know, education works today.
+
+1258
+01:00:51,510 --> 01:00:56,170
+是的，很有意思，Snapchat一直都很擅长让你去创作，并且让你感觉自己像个超级明星
+Yeah, it's interesting. Snapchat has always been really good at allowing you to create and feel like a superstar,
+
+1259
+01:00:56,330 --> 01:01:00,530
+你可以创造各种疯狂的滤镜、AR滤镜之类的一大堆东西
+just create all these really crazy lenses and filters and all these things.
+
+1260
+01:01:00,610 --> 01:01:02,730
+而有趣的是，AI就像写代码一样
+And it's interesting, AI, just like by coding,
+
+1261
+01:01:02,970 --> 01:01:04,970
+能释放出巨大的创造力
+just unleashes so much creativity.
+
+1262
+01:01:05,310 --> 01:01:06,970
+而孩子本来就非常有想象力
+And kids are so imaginative already.
+
+1263
+01:01:07,630 --> 01:01:10,990
+完全同意，真的很有意思，好，那在结束我们的对话之前
+Absolutely. So interesting. Okay, well, to close out our conversation,
+
+1264
+01:01:11,130 --> 01:01:12,930
+我这边有几个环节，想带你进入几个固定板块
+I've got a couple, I'm going to take us to a couple corners,
+
+1265
+01:01:13,070 --> 01:01:14,370
+这是我们播客里反复出现的固定板块
+recurring corners on the podcast.
+
+1266
+01:01:14,650 --> 01:01:16,010
+其中一个是AI板块
+One is AI corner.
+
+1267
+01:01:16,750 --> 01:01:20,150
+所以问题是，你在什么场景下使用AI
+So the question is, what's a way you use AI in your,
+
+1268
+01:01:20,290 --> 01:01:24,010
+比如说在工作中，有哪些比较有意思的用法
+let's say, work that is just interesting,
+
+1269
+01:01:24,110 --> 01:01:26,270
+可能也值得其他人借鉴
+that might be interesting for other people to learn from?
+
+1270
+01:01:26,950 --> 01:01:30,210
+嗯，我特别喜欢AI的一点是
+Well, one of the things that I really love about AI,
+
+1271
+01:01:30,350 --> 01:01:35,190
+在Snap，我可以访问我们所有的仪表盘、文档和数据
+you know, at Snap, I've got access to all of our dashboards and documents and data.
+
+1272
+01:01:35,330 --> 01:01:36,250
+所以我就搭了一个
+And so, you know, I built,
+
+1273
+01:01:36,450 --> 01:01:37,930
+我们有Glean来整合
+we have Glean that integrates,
+
+1274
+01:01:37,930 --> 01:01:39,990
+把所有这些数据都整合在一起
+you know, all this data for me.
+
+1275
+01:01:40,350 --> 01:01:43,230
+然后我就做了一个智能代理，它会去梳理公司里发生的一切
+And I built just an agent that will go and comb through everything that's happening in the
+
+1276
+01:01:43,230 --> 01:01:45,210
+告诉我现在的情况如何
+company and let me know what's up,
+
+1277
+01:01:45,270 --> 01:01:46,190
+以及我需要关注什么
+what I need to focus on,
+
+1278
+01:01:46,250 --> 01:01:46,930
+我需要捕捉到的东西
+what I need to catch.
+
+1279
+01:01:46,950 --> 01:01:47,790
+而且时不时地
+And every now and then,
+
+1280
+01:01:48,070 --> 01:01:49,570
+我确实会捕捉到一些东西，我
+I really catch something that I,
+
+1281
+01:01:49,650 --> 01:01:52,730
+你知道的，此前没有意识到或者需要多关注一点的东西
+you know, hadn't realized or needed to focus a bit more on.
+
+1282
+01:01:52,810 --> 01:01:56,230
+所以我觉得我们公司有这么多结构化数据是非常幸运的
+And so I think we're just so fortunate to have so much structured data in our company.
+
+1283
+01:01:56,330 --> 01:01:57,410
+我的意思是，你知道，对我们的领导来说
+I mean, you know, for our leaders,
+
+1284
+01:01:57,430 --> 01:01:58,810
+他们也会给我发，你知道的
+they also send me, you know,
+
+1285
+01:01:58,810 --> 01:02:01,830
+每周发来本周的三件事和展望未来的三件事之类的内容
+every week, kind of the three things from the week and three things looking ahead.
+
+1286
+01:02:01,930 --> 01:02:03,450
+所以我可以非常
+And so I can like very,
+
+1287
+01:02:03,610 --> 01:02:04,950
+非常轻松地了解
+very easily get a sense for,
+
+1288
+01:02:05,070 --> 01:02:06,190
+你知道，公司里的热点问题
+you know, the hotspots in the company,
+
+1289
+01:02:06,250 --> 01:02:10,550
+优先关注的领域，再结合我们所有关于人们如何使用我们服务的仪表盘和指标
+the priority areas, and combined with all of our dashboards and metrics about the way that
+
+1290
+01:02:10,550 --> 01:02:11,630
+了解人们是如何使用我们服务的情况
+people are using our service.
+
+1291
+01:02:11,810 --> 01:02:16,150
+我觉得我对公司里正在发生的事情有非常清晰的把握
+I feel like I have a really good sense for what's happening in the company.
+
+1292
+01:02:16,350 --> 01:02:17,250
+所以我认为，你知道
+So I think, you know,
+
+1293
+01:02:17,270 --> 01:02:21,290
+在AI方面让我最兴奋的是它正在促成
+what's been most exciting for me in terms of AI is that it's enabling,
+
+1294
+01:02:21,470 --> 01:02:24,270
+我认为，是那种我一直想要的领导架构
+I think, the type of leadership structure that I've always wanted,
+
+1295
+01:02:24,410 --> 01:02:25,730
+也就是，你知道，非常扁平化
+which is, you know, very flat,
+
+1296
+01:02:26,170 --> 01:02:27,250
+非常快速运转
+you know, very fast moving.
+
+1297
+01:02:27,630 --> 01:02:28,370
+而且我认为，你知道
+And I think, you know,
+
+1298
+01:02:28,410 --> 01:02:32,390
+有一个AI副驾驶来帮我做到这一点，是件非常重要的事
+having an AI co-pilot to help me do that's been a big deal.
+
+1299
+01:02:32,930 --> 01:02:34,790
+而那个智能体是，你是在Glean里构建的
+And that agent was, you built it in Glean,
+
+1300
+01:02:35,110 --> 01:02:35,970
+它现在也运行在那上面吗
+is that where it lives?
+
+1301
+01:02:35,970 --> 01:02:39,950
+对，我是用Glean做的，这非常棒
+Yeah, I mean, that I've done in Glean, which is great.
+
+1302
+01:02:40,010 --> 01:02:41,790
+显然，你可以在Figma里构建各种东西
+Obviously, you can build all sorts of stuff in Figma,
+
+1303
+01:02:41,870 --> 01:02:45,570
+但对我们来说，Glean是访问我们所有不同文档和
+but Glean for us is the most secure way to access all of our different documents and
+
+1304
+01:02:45,570 --> 01:02:46,670
+仪表盘之类内容的最安全方式
+dashboards and things like that.
+
+1305
+01:02:46,870 --> 01:02:48,990
+你们的AI技术栈里有没有什么有趣的东西
+Is there anything interesting in your AI stack?
+
+1306
+01:02:49,250 --> 01:02:53,250
+比如 Glean、Figma 这些工具，还有别的有意思的东西吗
+There's sounds like Glean, Figma, is there anything else that's interesting,
+
+1307
+01:02:53,550 --> 01:02:55,190
+也许是很多人不会想到的那种
+maybe some people may not think about?
+
+1308
+01:02:55,490 --> 01:02:59,270
+我觉得我们现在非常关注的一件事，是把整个
+I think one of the things that we're thinking a lot about is just taking the entire
+
+1309
+01:02:59,270 --> 01:03:02,190
+工作流程都用一个智能体来驱动
+workflow and enabling it with an agent.
+
+1310
+01:03:02,330 --> 01:03:04,290
+比如说，你知道
+So, for example, you know,
+
+1311
+01:03:04,430 --> 01:03:08,210
+把一个产品想法交给我们的上市推广智能体
+taking a product idea and with our go-to-market agent,
+
+1312
+01:03:08,670 --> 01:03:09,710
+由它接手这个产品想法
+taking that product idea,
+
+1313
+01:03:10,010 --> 01:03:16,370
+写出产品规格说明，找出需要参与审批和理解这个产品的相关人员，对吧
+writing the spec, identifying the relevant folks who need to be involved in sign offs and understanding it, right,
+
+1314
+01:03:16,430 --> 01:03:19,730
+还真正帮助对产品进行风险分析
+actually helping to do the risk analysis on the product,
+
+1315
+01:03:19,810 --> 01:03:21,590
+比如从法律、信任与安全的角度
+right, from a legal trust and safety perspective,
+
+1316
+01:03:22,210 --> 01:03:24,990
+撰写上市推广材料，比如博客等内容
+writing the go-to-market materials like the blog, etc.
+
+1317
+01:03:25,190 --> 01:03:27,930
+我们现在也在着手让它真正生成视觉素材
+We're working now on actually building the visuals as well.
+
+1318
+01:03:27,930 --> 01:03:29,630
+但把这些一步完成
+But doing that in one shot,
+
+1319
+01:03:29,770 --> 01:03:32,330
+你知道的，真的非常疯狂
+you know, is really wild.
+
+1320
+01:03:32,430 --> 01:03:36,670
+所以我认为，在公司各个地方都有类似的例子
+So I think there's all sorts of examples like that across the company in terms of the way
+
+1321
+01:03:36,670 --> 01:03:41,350
+展示了智能体如何在改变我们的工作方式上发挥巨大作用
+that agents can play a really massive role in changing the way that we work.
+
+1322
+01:03:41,450 --> 01:03:42,610
+而这也关联到
+And that's connected to,
+
+1323
+01:03:42,690 --> 01:03:44,610
+你知道，我们如何看待那些待完成的工作，对吧
+you know, how we think about those jobs to be done, right?
+
+1324
+01:03:44,630 --> 01:03:49,170
+所以如果我们能把一项待完成的工作定义得足够清晰，从而可以为它构建一个智能体
+So if we can define a job to be done clearly enough that we can build an agent to do it,
+
+1325
+01:03:49,510 --> 01:03:52,390
+那就真的能带来巨大的提升
+that can really create a lot of lift.
+
+1326
+01:03:53,090 --> 01:03:54,530
+你们是在哪里构建这个智能体的
+Where do you build this agent?
+
+1327
+01:03:54,790 --> 01:03:56,350
+使用的平台是什么
+What's the platform to use?
+
+1328
+01:03:56,870 --> 01:03:59,470
+我们一直在用Figma来完成很多这方面的工作
+We've been using Figma to do a lot of the work,
+
+1329
+01:03:59,710 --> 01:04:01,770
+在整个Snap内部都是这样，是的
+you know, across Snap, yeah.
+
+1330
+01:04:02,090 --> 01:04:06,950
+太棒了。好，我来带我们进入播客里另一个固定环节，逆风观点角
+Sweet. Okay, I'll take us to another recurring corner in the podcast, contrarian corner.
+
+1331
+01:04:07,370 --> 01:04:10,450
+有什么是你相信但很多其他人并不相信的事情吗
+What's something that you believe that a lot of other people don't believe?
+
+1332
+01:04:10,550 --> 01:04:14,310
+关于你想到的任何话题，你有什么逆风观点吗
+What's kind of a contrarian take about anything that comes to mind?
+
+1333
+01:04:14,730 --> 01:04:15,730
+嗯，对我来说
+Well, I think for me,
+
+1334
+01:04:15,810 --> 01:04:21,050
+我们身处一个大量讨论都聚焦在技术本身的行业
+we're in an industry where so much of the conversation is focused on technology.
+
+1335
+01:04:21,050 --> 01:04:25,390
+而我觉得，也许我逆风的观点或角度在于
+And I think maybe my contrarian point of view or my contrarian angle is like,
+
+1336
+01:04:25,650 --> 01:04:28,130
+人性要重要得多
+humanity is far more important,
+
+1337
+01:04:28,290 --> 01:04:31,450
+你知道，比技术发展本身重要得多
+you know, than the technological developments,
+
+1338
+01:04:31,610 --> 01:04:35,630
+很大程度上是因为人性决定了技术会如何被采纳，对吧
+largely because humanity dictates how technology is adopted, right?
+
+1339
+01:04:35,650 --> 01:04:36,830
+比如我认为
+I think, for example,
+
+1340
+01:04:36,850 --> 01:04:42,010
+现在，人们严重低估了人类采纳程度以及人类
+right now, people are massively underestimating the role that human adoption and human
+
+1341
+01:04:42,010 --> 01:04:46,990
+对人工智能进步的舒适度在多大程度上会决定它的部署方式，你懂的，对吧
+comfort, you know, with advances in artificial intelligence will determine its deployment, right?
+
+1342
+01:04:46,990 --> 01:04:52,790
+我觉得很多技术领导者认为人们会在新技术出现时盲目地接受它
+I think technology leaders think that folks will just blindly adopt new technology as it comes out.
+
+1343
+01:04:52,850 --> 01:04:55,550
+而我认为我们将进入一个时期
+And I think we're going to enter a period of time where there's going to be a huge amount
+
+1344
+01:04:55,550 --> 01:04:59,250
+社会会对AI带来的许多变革产生巨大反弹
+of societal pushback on a lot of the changes that are coming with AI.
+
+1345
+01:04:59,450 --> 01:05:01,890
+所以我认为，作为一个行业，我们的很多关注点
+And so I think a lot of our focus as an industry,
+
+1346
+01:05:01,970 --> 01:05:04,810
+以及更广泛地说，在整个世界范围内，都需要把人性放在首位
+but more broadly in the world needs to be putting humanity first,
+
+1347
+01:05:04,910 --> 01:05:09,390
+对吧，要确保我们开发的工具是在推动人类的目标
+right, making sure that the tools we're developing are advancing humanity's goals,
+
+1348
+01:05:09,530 --> 01:05:12,650
+你知道的，而不仅仅是商业目标
+you know, in addition to business goals.
+
+1349
+01:05:12,770 --> 01:05:14,150
+而且，你知道，我觉得在我们的行业里
+And, you know, I think in our industry,
+
+1350
+01:05:14,250 --> 01:05:15,650
+至少这是有点逆风的观点
+at least that that's a bit contrarian.
+
+1351
+01:05:16,330 --> 01:05:18,450
+是的，我们也不用在这条路上聊得太深
+Yeah, and just so we don't need to go too down this path.
+
+1352
+01:05:18,570 --> 01:05:20,410
+但这对AI实验室来说真的很难
+But it's so hard for the AI labs,
+
+1353
+01:05:20,450 --> 01:05:21,870
+我觉得，一方面
+I think, to on the one hand,
+
+1354
+01:05:21,910 --> 01:05:25,810
+他们要说，好，如果它变得更聪明，这真的会很危险
+be like, okay, this is really dangerous if it gets much smarter.
+
+1355
+01:05:25,810 --> 01:05:29,030
+而且我们需要让人们知道这一点，因为这件事正在发生并快速推进
+And we need people to know this because this is happening and moving quickly.
+
+1356
+01:05:29,530 --> 01:05:33,410
+另一方面，你又要避免把所有人都吓坏，让大家对
+On the other hand, how do you not just freak everyone out and make everyone so afraid of
+
+1357
+01:05:33,410 --> 01:05:34,010
+事情的发展方向感到极度恐惧
+where things are going?
+
+1358
+01:05:34,050 --> 01:05:35,050
+就像是，那你要怎么做，你该怎么办
+It's like, well, how do you what do you do?
+
+1359
+01:05:35,110 --> 01:05:36,330
+对他们来说，正确的做法是什么
+What's the right thing for them to do?
+
+1360
+01:05:36,530 --> 01:05:38,090
+而且，由于这一切
+And, and because of all that,
+
+1361
+01:05:38,130 --> 01:05:39,050
+这些末日般的阴郁情绪
+of that doom and gloom,
+
+1362
+01:05:39,070 --> 01:05:41,370
+就是，我相信你也看过这些调查
+it's like, I'm sure you've seen these surveys,
+
+1363
+01:05:41,510 --> 01:05:44,770
+在受欢迎程度上，AI甚至排在冰块后面
+AI is like below ice in terms of popularity and,
+
+1364
+01:05:44,770 --> 01:05:47,050
+甚至比伊朗还不受欢迎
+and like below like Iran.
+
+1365
+01:05:48,310 --> 01:05:49,570
+这进展得并不理想
+And this isn't going great.
+
+1366
+01:05:49,910 --> 01:05:51,450
+我也不知道，如果我是实验室，我会怎么做
+I don't know. I don't know what I would do if I were lab.
+
+1367
+01:05:51,950 --> 01:05:56,130
+而我很喜欢，我想这也是Snapchat的一个优势，你们一直在
+And I love, I guess that's like a benefit of Snapchat is it makes like you guys have been
+
+1368
+01:05:56,130 --> 01:05:58,070
+很长一段时间里深耕AI
+in AI from for a very long time.
+
+1369
+01:05:58,430 --> 01:06:00,790
+它向大家展示了AI可以多么有趣好玩
+And it shows you the playfulness of it all.
+
+1370
+01:06:00,910 --> 01:06:02,850
+而且，你知道，它不一定非得那么严肃
+And, you know, it doesn't have to be that serious.
+
+1371
+01:06:03,910 --> 01:06:05,730
+总之，说到这里，Evan
+Anyway, with that, Evan,
+
+1372
+01:06:05,930 --> 01:06:08,430
+我们来到了非常令人兴奋的快问快答环节
+we reached our very exciting lightning round.
+
+1373
+01:06:08,550 --> 01:06:09,770
+我为你准备了五个问题
+I've got five questions for you.
+
+1374
+01:06:09,770 --> 01:06:10,110
+你准备好了吗
+Are you ready?
+
+1375
+01:06:11,250 --> 01:06:12,210
+来试试吧
+Let's give it a shot.
+
+1376
+01:06:13,070 --> 01:06:13,070
+好
+Okay.
+
+1377
+01:06:14,190 --> 01:06:17,910
+你最常向别人推荐的两三本书是什么
+What are two or three books that you find yourself recommending most to other people?
+
+1378
+01:06:18,510 --> 01:06:23,490
+嗯 我刚读完的一本书叫《Creative Selection》
+Well, you know, what I just finished was Creative Selection.
+
+1379
+01:06:23,630 --> 01:06:24,450
+我觉得这本书非常好
+I thought it was great.
+
+1380
+01:06:24,570 --> 01:06:26,910
+我会推荐前半本 因为
+I would recommend the first half because,
+
+1381
+01:06:27,070 --> 01:06:32,010
+他采访了大概150位早期苹果团队成员 里面的故事都特别精彩
+you know, he interviews like 150 early Apple team members and the stories are just great.
+
+1382
+01:06:32,090 --> 01:06:33,570
+而且里面有很多可以学习的东西
+And there's a lot of learnings in there.
+
+1383
+01:06:34,310 --> 01:06:36,350
+所以我非常喜欢这本书
+So I really enjoyed that.
+
+1384
+01:06:36,810 --> 01:06:39,290
+我在想 我最近还读了什么
+I think what else have I read recently?
+
+1385
+01:06:39,770 --> 01:06:44,830
+有一本很棒的书也许和当下这个时刻很相关，叫《世界的终结才刚刚开始》
+There's a great book maybe relevant for this particular moment called The End of the World is Just the Beginning,
+
+1386
+01:06:45,430 --> 01:06:50,370
+它其实大量讨论了全球航运体系的脆弱性
+which actually touches a lot on the vulnerability of global shipping.
+
+1387
+01:06:50,690 --> 01:06:52,830
+比如全球经济就是建立在全球航运之上的
+Like the global economy is built on global shipping.
+
+1388
+01:06:53,530 --> 01:06:56,990
+它有点在预测一个世界 在那个世界里 美国
+And it sort of predicts a world where the U.S.
+
+1389
+01:06:57,030 --> 01:07:00,890
+将会更难以掌控和保护全球航道
+was going to have a much harder time securing the global waterways.
+
+1390
+01:07:01,410 --> 01:07:05,770
+而这对我们如何生产东西 以及如何组织我们的社会意味着什么
+And what does that mean for the way that we build things and organize ourselves as a society?
+
+1391
+01:07:05,910 --> 01:07:07,770
+这听起来和现在的情况非常相似
+That sounds quite familiar these days.
+
+1392
+01:07:08,030 --> 01:07:09,950
+和当下这个时刻非常相关
+Quite relevant for the given moment.
+
+1393
+01:07:10,890 --> 01:07:10,950
+太棒了
+Awesome.
+
+1394
+01:07:12,370 --> 01:07:15,050
+最近有没有你特别喜欢的电影或电视剧
+Is there a recent movie or TV show you have really enjoyed?
+
+1395
+01:07:15,450 --> 01:07:16,650
+我觉得这答案有点太典型了
+I mean, I feel like this is so typical,
+
+1396
+01:07:16,850 --> 01:07:18,950
+但我超爱《Marty Supreme》
+but like I loved Marty Supreme.
+
+1397
+01:07:19,230 --> 01:07:21,270
+我觉得那部电影好到爆表
+I thought that movie was off the charts.
+
+1398
+01:07:21,870 --> 01:07:24,630
+然后我就觉得 我也不知道
+And I was like, I don't know,
+
+1399
+01:07:24,630 --> 01:07:27,070
+我不太习惯看这么极致的东西
+I'm not used to watching stuff that extreme.
+
+1400
+01:07:27,210 --> 01:07:29,570
+你知道吗 我几乎全程都紧张到坐立不安
+You know, I mean, I could I was like on the edge of my seat the whole time.
+
+1401
+01:07:29,630 --> 01:07:32,190
+那真的是一次全速推进的电影体验
+It's like a full throttle movie experience.
+
+1402
+01:07:32,270 --> 01:07:34,410
+强烈推荐 我自己还没看
+Highly recommend. I've not seen it yet.
+
+1403
+01:07:34,490 --> 01:07:35,670
+但我一直听到各种好评
+I keep hearing amazing things.
+
+1404
+01:07:35,810 --> 01:07:37,270
+它非常强烈 没错
+It's very intense. Yeah.
+
+1405
+01:07:37,750 --> 01:07:43,090
+下一个问题 你最近有没有发现一个你特别喜欢的产品
+Next question. Do you have a... is there a product you recently discovered that you really love?
+
+1406
+01:07:43,390 --> 01:07:46,730
+可以是一个应用 也可以是衣服 小玩意儿 任何东西都行
+Could be an app, could be clothing, gadget, anything?
+
+1407
+01:07:47,250 --> 01:07:48,870
+嗯 我觉得是因为现在有了孩子
+Well, I think through our kids right now,
+
+1408
+01:07:48,930 --> 01:07:51,330
+我在重新发现宝可梦
+I'm just rediscovering Pokemon,
+
+1409
+01:07:51,750 --> 01:07:53,330
+实在是太好玩了
+which is so fun.
+
+1410
+01:07:53,530 --> 01:07:56,330
+它真的太棒了 而且我觉得
+It's so great. And I think, you know,
+
+1411
+01:07:56,450 --> 01:08:03,370
+里面有非常多的艺术性 个性和角色设定 是一个极其出色的品牌和IP
+there's so much art to it and personality and character and what an amazing brand and franchise.
+
+1412
+01:08:03,970 --> 01:08:05,090
+而且我觉得
+And I think, you know,
+
+1413
+01:08:05,170 --> 01:08:06,270
+我的整体看法是
+my general view is like,
+
+1414
+01:08:06,330 --> 01:08:09,250
+他们在扩展这套IP上还有太多太多可以做的事情
+there's just so, so much they could do to grow,
+
+1415
+01:08:09,730 --> 01:08:12,270
+就是围绕这套IP和整个系列
+you know, that IP and franchise,
+
+1416
+01:08:12,630 --> 01:08:14,310
+至少从我们家孩子的反应来看是这样
+at least if our kids are any indication.
+
+1417
+01:08:14,690 --> 01:08:16,590
+我第一次提到宝可梦是在快问快答环节
+I first mentioned a Pokemon in the lightning round.
+
+1418
+01:08:18,190 --> 01:08:23,310
+下一个问题 你在工作或生活中有没有经常会想起的座右铭
+Next question. Do you have a favorite life motto that you often come back to in work or in life?
+
+1419
+01:08:23,610 --> 01:08:25,370
+你有两只耳朵和一张嘴
+You have two ears and one mouth.
+
+1420
+01:08:25,470 --> 01:08:26,510
+按这个比例去使用它们
+Use them in that proportion.
+
+1421
+01:08:27,150 --> 01:08:32,050
+不错 最后一个问题 这些年来你们做了很多滤镜
+Nice. Final question. You guys have created many lenses over the years.
+
+1422
+01:08:32,590 --> 01:08:34,930
+我很好奇你有没有一个最喜欢的滤镜
+I'm curious if you have just like a favorite lens,
+
+1423
+01:08:35,150 --> 01:08:38,390
+就是有史以来最喜欢的 以及有史以来最不喜欢的 最糟的那个
+like all time favorite and then all time least favorite, the worst.
+
+1424
+01:08:39,570 --> 01:08:43,710
+我觉得有史以来最喜欢的大概是那个彩虹呕吐滤镜
+I mean, all time favorite is probably the vomiting rainbow.
+
+1425
+01:08:43,950 --> 01:08:48,650
+我觉得那个滤镜给很多人带来了巨大的快乐 这太棒了
+I think like that just brought so much joy to so many people, which is great.
+
+1426
+01:08:49,010 --> 01:08:51,950
+最不喜欢的 大概是那个变老滤镜
+Least favorite, probably like the old lens,
+
+1427
+01:08:52,450 --> 01:08:53,770
+我也不确定 或者是换脸滤镜
+I don't know, or face swap.
+
+1428
+01:08:54,090 --> 01:08:56,350
+我只是觉得那些有点太强烈了
+I just, those are intense.
+
+1429
+01:08:56,870 --> 01:08:59,390
+是啊 哇 一下子回忆杀 你们是第一个做这个的 对吧
+Yeah. Wow. Flashback. And you guys were the first to do that, right?
+
+1430
+01:08:59,850 --> 01:09:00,950
+对 我是说 那些全部都是
+Yeah. I mean, and that was all,
+
+1431
+01:09:01,030 --> 01:09:02,210
+在非常早期的时候做出来的
+that was all early days,
+
+1432
+01:09:02,350 --> 01:09:05,210
+在设备端进行的实时机器学习变换
+real time machine learning transformation on the device.
+
+1433
+01:09:05,410 --> 01:09:08,230
+你知道 在当时那已经相当前沿了
+You know, like that was like pretty cutting edge at the time.
+
+1434
+01:09:08,270 --> 01:09:12,470
+我觉得很多人可能不知道 Bobby Murphy大概在10年前就创建了我们的生成式AI实验室
+I mean, I don't think people realize like Bobby Murphy created our Gen AI Lab like 10 years ago,
+
+1435
+01:09:12,550 --> 01:09:13,670
+差不多就是十年前左右
+a decade ago, something like that.
+
+1436
+01:09:13,870 --> 01:09:16,550
+那真是一个时代 换脸的时代
+What a time, the face swapping era.
+
+1437
+01:09:16,550 --> 01:09:19,690
+是的 那是生成式AI的早期应用
+Yeah. The early use of generative AI.
+
+1438
+01:09:20,190 --> 01:09:21,930
+哇 我都忘了那也是一次创新
+Wow. I forgot that was another innovation.
+
+1439
+01:09:22,150 --> 01:09:25,930
+后来还有一些公司和应用干脆把这个当成一整套业务来做
+And then there's like businesses and apps that just sat to build that as a whole business.
+
+1440
+01:09:26,190 --> 01:09:28,930
+然后据我所知 这些基本都消失了
+And then all went away as far as I can tell.
+
+1441
+01:09:29,590 --> 01:09:31,290
+哇 那真是段美好的时光
+Wow. That was a good time.
+
+1442
+01:09:32,030 --> 01:09:34,850
+好的 那么 Evan 你还有什么想分享的吗
+All right. Well, Evan, is there anything else you want to share?
+
+1443
+01:09:34,930 --> 01:09:36,770
+在我们结束之前 你还有什么想留给听众的
+Anything else you want to leave listeners with before we,
+
+1444
+01:09:37,370 --> 01:09:37,910
+在我让你离开之前
+before I let you go?
+
+1445
+01:09:38,230 --> 01:09:39,010
+我觉得这是一个
+I think it's such an,
+
+1446
+01:09:39,050 --> 01:09:40,410
+特别令人兴奋的时代
+it's such an exciting time.
+
+1447
+01:09:40,550 --> 01:09:44,650
+很明显 大家对人工智能将如何
+Obviously, I think there's a lot of concern about the way that artificial intelligence is
+
+1448
+01:09:44,650 --> 01:09:45,570
+改变我们的社会有很多担忧
+going to change our society.
+
+1449
+01:09:45,690 --> 01:09:50,510
+但我认为在计算机如何变得更具人性这一点上 仍然有非常多值得乐观的地方
+But I think there's so much to be optimistic about in terms of the way that computing can become more human.
+
+1450
+01:09:50,830 --> 01:09:52,950
+而这正是我们真正专注的方向
+And that's really what we're focused on.
+
+1451
+01:09:53,150 --> 01:09:56,590
+所以我非常期待在今年晚些时候分享更多我们一直在做的事情
+So really excited to share more about all the stuff we've been working on later this year.
+
+1452
+01:09:57,010 --> 01:09:58,290
+Evan 非常感谢你来参加节目
+Evan, thank you so much for being here.
+
+1453
+01:09:58,510 --> 01:09:59,970
+我的荣幸 谢谢你 Lenny
+My pleasure. Thanks, Lenny.
+
+1454
+01:10:00,090 --> 01:10:00,570
+大家再见
+Bye everyone.
+
+1455
+01:10:01,930 --> 01:10:02,910
+非常感谢你的收听
+Thank you so much for listening.
+
+1456
+01:10:03,230 --> 01:10:04,150
+如果你觉得这些内容有价值
+If you found this valuable,
+
+1457
+01:10:04,430 --> 01:10:06,810
+你可以在Apple Podcasts上订阅本节目
+you can subscribe to the show on Apple Podcasts,
+
+1458
+01:10:06,810 --> 01:10:09,010
+在Spotify 或你最喜欢的播客应用上订阅
+Spotify, or your favorite podcast app.
+
+1459
+01:10:09,550 --> 01:10:14,110
+另外 也请考虑给我们评分或留下评论 因为这真的能帮助其他
+Also, please consider giving us a rating or leaving a review as that really helps other
+
+1460
+01:10:14,110 --> 01:10:15,370
+听众发现这个播客
+listeners find the podcast.
+
+1461
+01:10:15,870 --> 01:10:20,690
+你可以在lennyspodcast.com找到所有往期节目 或了解更多关于本节目的信息
+You can find all past episodes or learn more about the show at lennyspodcast.com.
+
+1462
+01:10:20,990 --> 01:10:22,210
+我们下期再见
+See you in the next episode.

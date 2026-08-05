@@ -1,0 +1,1529 @@
+1
+00:00:00,000 --> 00:00:04,840
+在这个视频中，你将学到如何完全借助 AI 来创建像这样子的社交媒体帖子
+In this video, you will learn how you can create social media posts just like these using completely AI.
+
+2
+00:00:05,120 --> 00:00:08,380
+我们不会去做任何自定义设计或手动动画
+We're not going to be designing customly anything or animating.
+
+3
+00:00:08,520 --> 00:00:12,180
+所有这些东西你现在都可以用 AI 来完成，包括动画
+All of this stuff you can learn how to do now with AI, with animations.
+
+4
+00:00:12,540 --> 00:00:13,600
+很明显，这些是静态的
+Obviously, these are static,
+
+5
+00:00:14,000 --> 00:00:15,880
+但我们现在就可以把它们做成带动画的
+but we can create with animations right now.
+
+6
+00:00:15,980 --> 00:00:17,460
+这就是我今天要和你分享的内容
+So this is what I'm sharing with you today.
+
+7
+00:00:17,800 --> 00:00:18,580
+在看完这个视频之后
+By the end of this video,
+
+8
+00:00:18,580 --> 00:00:23,200
+你就能生成吸睛的图片，并且学会如何非常轻松地添加文字
+you'll be able to generate images that catch attention and then how to add text very
+
+9
+00:00:23,200 --> 00:00:28,360
+即使完全不懂设计或字体排版，也能在最后把它们做成动画
+easily without knowing anything about design or typography and how to animate that at the end.
+
+10
+00:00:28,360 --> 00:00:33,820
+那我们先从创建一个不带任何图片的社交媒体帖子开始
+So let's start with just creating a social media post without any images.
+
+11
+00:00:34,200 --> 00:00:36,820
+先随便打开一个网站搭建工具
+Let's first go to any website builder.
+
+12
+00:00:36,980 --> 00:00:38,260
+我会用 bolt.new
+I'm going to go to bolt.new,
+
+13
+00:00:38,660 --> 00:00:40,440
+但你也可以用 Lovable 或 Cursor
+but you can go to Lovable or Cursor.
+
+14
+00:00:40,520 --> 00:00:42,560
+我和这些网站都没有任何合作关系
+I'm not affiliated with any of these sites.
+
+15
+00:00:43,080 --> 00:00:48,560
+然后我们先让它创建一个由三个正方形图片组成的网格布局
+And let's just start by saying create a grid of three square images.
+
+16
+00:00:48,880 --> 00:00:51,220
+我们就是要做一个社交媒体帖子
+And we're just going to be creating a social media post.
+
+17
+00:00:51,540 --> 00:00:52,840
+现在先把这些方块留空
+For now, keep them empty.
+
+18
+00:00:53,200 --> 00:00:55,800
+然后我们要六行
+And let's have six rows.
+
+19
+00:00:55,960 --> 00:00:57,700
+也就是上面三个、下面三个
+So three on the top and three on the bottom.
+
+20
+00:01:01,240 --> 00:01:06,480
+把它们设成纯黑色，先不要加任何东西，只保留这些方块
+Let's make them pure black and nothing yet, just the squares.
+
+21
+00:01:08,580 --> 00:01:15,380
+我还会选择 Claude Opus 4.5，然后点击开始，等着看
+I'm going to choose also Claude Opus 4.5 and let's just click get started and let's wait and see
+
+22
+00:01:15,380 --> 00:01:16,280
+它会给我们生成什么
+what it comes back with.
+
+23
+00:01:17,100 --> 00:01:18,860
+这就是我生成出来的东西
+So this is what I created.
+
+24
+00:01:19,160 --> 00:01:23,400
+如你所见，我们有这些方块，可以把不同的设计方案贴进去，或者
+As you can see, we have the squares where we can paste different options of our design or
+
+25
+00:01:23,400 --> 00:01:24,800
+如果我们在做轮播图
+if we're building a carousel,
+
+26
+00:01:24,880 --> 00:01:26,220
+就可以放不同的幻灯片
+we can have different slides.
+
+27
+00:01:26,720 --> 00:01:31,840
+我在做几个不同的版本，因为当你让 AI 一次性生成多个方案时，它的效果会更好
+I'm just building a few different options because AI works better if you give it tasks to create multiple options.
+
+28
+00:01:32,080 --> 00:01:35,560
+现在我们来给文字部分加上主标题和说明文案
+Now let's add a headline and description for the text.
+
+29
+00:01:35,680 --> 00:01:38,680
+我想让它是跟 AI 相关的主题
+I want it to be a kind of something about AI.
+
+30
+00:01:38,820 --> 00:01:41,020
+所以我会用“用 AI 简化你的工作”这句话
+So I'm going to say simplify your work with AI.
+
+31
+00:01:42,200 --> 00:01:45,560
+我们就说在某个地方添加主标题和说明文案
+Let's say add a headline and description somewhere.
+
+32
+00:01:47,610 --> 00:01:48,890
+至于主标题
+And for the headline,
+
+33
+00:01:49,030 --> 00:01:50,010
+我们就用这句
+we're going to say.
+
+34
+00:01:51,050 --> 00:01:53,030
+就用这句，然后在某个地方放说明文案
+This one and description somewhere.
+
+35
+00:01:53,370 --> 00:01:56,350
+我们还需要一些比较独特的字体
+And also we need something, some unique fonts.
+
+36
+00:01:56,350 --> 00:01:59,910
+为此你可以去 Figma 上找一些独特的字体
+So for that, you can go to Figma and try to find unique fonts.
+
+37
+00:02:00,170 --> 00:02:03,870
+我会去一个叫 Motion Sites AI 的网站，从那里挑一些
+I'm going to go to the website called Motion Sites AI and take some from there.
+
+38
+00:02:04,370 --> 00:02:09,190
+在这里我挺喜欢这组大号字用的这个字体
+So here I like this font from this kind of large letters.
+
+39
+00:02:09,330 --> 00:02:10,470
+我就直接把它粘贴过来
+I'm just going to paste it.
+
+40
+00:02:11,250 --> 00:02:13,150
+很明显，我不需要全部内容
+And obviously, I don't need all of that,
+
+41
+00:02:13,190 --> 00:02:19,750
+所以我只会把它粘在这里，然后在这个提示词里找到字体相关的部分
+so I'm going to just paste it here and I'm going to find the font section from this prompt.
+
+42
+00:02:20,370 --> 00:02:21,310
+所以我们在这里就有了
+So we have here.
+
+43
+00:02:22,990 --> 00:02:23,970
+基本上它就在这儿
+Basically, it is here.
+
+44
+00:02:23,970 --> 00:02:28,250
+这是一个 Google 字体，它给了我们一个链接，我们可以把这个链接贴进去
+This is a Google font and it gives us a link so we can paste that.
+
+45
+00:02:28,850 --> 00:02:31,830
+所以我会说第一张卡片
+So I'm going to say for the first card,
+
+46
+00:02:31,950 --> 00:02:33,330
+就用这个字体
+let's use this font.
+
+47
+00:02:35,930 --> 00:02:37,470
+我就直接把它粘上去
+And I'm just going to paste that.
+
+48
+00:02:37,710 --> 00:02:39,950
+然后我们再说第二张卡片
+And let's say for the second card,
+
+49
+00:02:40,030 --> 00:02:41,730
+使用这套样式和字体
+use this styles and fonts.
+
+50
+00:02:45,220 --> 00:02:51,360
+我会再找一个我喜欢其字体的设计，用来对比几个不同的方案
+And I'm going to find another design that I like the fonts of to just compare a few different options.
+
+51
+00:02:55,990 --> 00:02:59,590
+我们就选一个像这样的，有几种不同文字样式的设计
+Let's take something like this with a few different styles of text.
+
+52
+00:02:59,770 --> 00:03:00,890
+我会在这里做同样的事
+I'm going to do the same here.
+
+53
+00:03:00,990 --> 00:03:05,350
+我会把它粘过来，然后复制其中的字体排版设置，再贴到这里
+I'm just going to paste it and I'm going to copy the typography and paste it here.
+
+54
+00:03:09,600 --> 00:03:12,160
+我们回到提示词的开头，我会说
+Let's go to the beginning of the prompt and I'm going to say,
+
+55
+00:03:12,360 --> 00:03:16,900
+先为前两个帖子各做一张卡片
+let's build first two cards for first two posts.
+
+56
+00:03:17,100 --> 00:03:19,120
+我已经给了你主标题和说明文案
+I have given you the headline and description,
+
+57
+00:03:19,260 --> 00:03:20,520
+但你需要再补充一些文字
+but you should add more text.
+
+58
+00:03:20,660 --> 00:03:23,260
+想一想 Instagram 帖子里还能加些什么
+So think about what can be added to Instagram post,
+
+59
+00:03:23,680 --> 00:03:26,860
+比如一些对用户有用的额外内容
+like some other additional stuff that can be useful for the users.
+
+60
+00:03:33,330 --> 00:03:38,550
+确认已经选中了 Claude Opus 4.5，然后发出去，看看它会生成什么
+Let's make sure that the Claude Opus 4.5 selected and let's send it and see what it comes back with.
+
+61
+00:03:38,650 --> 00:03:41,850
+最后还有一点，我们先把背景保持为黑色
+One final thing. Let's make, let's keep the background black for now.
+
+62
+00:03:41,950 --> 00:03:43,890
+之后我会再加视频和动画
+I'll have videos, animations later.
+
+63
+00:03:46,250 --> 00:03:48,630
+那我们就直接发出去，看看它会给出什么结果
+And let's just send that and see what it comes back with.
+
+64
+00:03:49,170 --> 00:03:51,350
+这就是我们拿到的第一版结果
+So this is what we got as a first result.
+
+65
+00:03:51,350 --> 00:03:53,030
+如你所见，我们得到了这段文字
+As you can see, we got this text,
+
+66
+00:03:53,170 --> 00:03:55,110
+用的就是我想要的那个字体
+which is the font that I wanted.
+
+67
+00:03:55,290 --> 00:03:56,670
+第二张是这个样子
+And the second one, this.
+
+68
+00:03:56,990 --> 00:03:59,890
+现在我们来加一些图形元素
+Let's now add some of the graphics here.
+
+69
+00:03:59,890 --> 00:04:04,070
+为此我会去 Pinterest 找一些灵感
+And for that, I'm going to go to Pinterest and find some of the inspirations.
+
+70
+00:04:04,570 --> 00:04:07,510
+我们来找一些更有个性的东西
+Let's go with something more unique,
+
+71
+00:04:07,650 --> 00:04:08,630
+类似这种风格的
+something in this style.
+
+72
+00:04:08,770 --> 00:04:10,030
+我已经找到了一张这样的图片
+I already found this image.
+
+73
+00:04:10,290 --> 00:04:13,110
+我先快速给你看一下第一个结果
+And let me quickly show you the first result.
+
+74
+00:04:13,190 --> 00:04:16,570
+我这儿有个机器人，我用它生成了几张图片
+So I got this robot that I generated a few images with.
+
+75
+00:04:17,190 --> 00:04:20,750
+现在我们把它真正放到我们的画面里
+And now let's actually place it on our image.
+
+76
+00:04:20,830 --> 00:04:21,930
+我会选这一张
+So I'm going to take this one.
+
+77
+00:04:22,270 --> 00:04:25,190
+我就直接点下载
+I'm going to just click download.
+
+78
+00:04:25,370 --> 00:04:27,950
+但在此之前，我还会先把它做成动画
+But before that, I'm also going to animate this.
+
+79
+00:04:27,950 --> 00:04:31,390
+顺便说一下，我和 Higgsfield 也没有任何合作关系
+And by the way, I'm not affiliated with Higgsfield.
+
+80
+00:04:31,550 --> 00:04:33,390
+我只是演示一下我是怎么做的
+I'm just going to show you what I do.
+
+81
+00:04:34,450 --> 00:04:36,030
+当我点击“animate this”之后
+So once I click animate this,
+
+82
+00:04:36,130 --> 00:04:37,330
+我可以说“把这个做成动画”
+I can say animate this,
+
+83
+00:04:38,110 --> 00:04:41,510
+让他的或她的头动起来
+make his or her head move.
+
+84
+00:04:47,300 --> 00:04:50,500
+让它的——我也不太确定这到底是什么
+Make his, I'm not sure whatever this is.
+
+85
+00:04:54,100 --> 00:04:55,860
+然后我们选择 Kling 3
+And let's choose Kling 3.
+
+86
+00:04:56,220 --> 00:05:00,720
+至于持续时间，我们打算选择大约10秒或9秒
+And for the duration, we're going to choose around 10 seconds or nine seconds.
+
+87
+00:05:00,720 --> 00:05:04,360
+现在点击生成，看看它会给出什么结果
+And now let's click generate and see what it comes back with.
+
+88
+00:05:06,120 --> 00:05:07,820
+这就是我们得到的结果
+And this is the result that we've got.
+
+89
+00:05:07,960 --> 00:05:10,520
+我们可以直接把它下载下来，或者其实也不用下载
+Let's just download this or even not download.
+
+90
+00:05:10,680 --> 00:05:12,160
+我会在这里复制一个链接
+I'm just going to copy a link here,
+
+91
+00:05:12,360 --> 00:05:16,600
+在新的后台页面打开它，然后回到我们的 Lovable 网站
+open this in the new background and go back to our lovable site.
+
+92
+00:05:16,700 --> 00:05:17,640
+然后我会这样说
+And I'm just going to say.
+
+93
+00:05:19,180 --> 00:05:22,720
+把这个视频作为第一张卡片的背景
+Add this video as a background to the first card,
+
+94
+00:05:23,080 --> 00:05:24,860
+把它水平翻转一下，然后
+flip it horizontally and.
+
+95
+00:05:26,260 --> 00:05:30,120
+我再看一眼这个视频，然后我会说
+Let me take a look one more time on the video and I'm going to say.
+
+96
+00:05:38,590 --> 00:05:43,350
+从左侧给它一个负的偏移量内边距
+Give it a negative offset padding from the left side,
+
+97
+00:05:43,670 --> 00:05:46,390
+这样视频就会被整体往右移一点
+so the video should be moved more to the right side,
+
+98
+00:05:46,430 --> 00:05:49,770
+大概 300 像素，如果你明白我的意思，这样它就不会
+around 300 pixels, if you understand what I mean, so it doesn't.
+
+99
+00:05:50,830 --> 00:05:52,910
+和文字重叠得太多
+Too much overlap with the text,
+
+100
+00:05:53,250 --> 00:05:55,010
+也稍微再加一点
+also add a slight.
+
+101
+00:05:55,950 --> 00:06:00,270
+从深色到透明，从底部由黑色过渡到透明
+Dark to transparent, creating from bottom from black to transparent.
+
+102
+00:06:02,900 --> 00:06:06,880
+然后我们就发出去看看它返回什么
+And let's just send that and see what it comes back with.
+
+103
+00:06:09,400 --> 00:06:11,240
+然后这里你可以看到
+And here, as you can see,
+
+104
+00:06:11,400 --> 00:06:14,040
+视频正好被放在我们想要的位置
+the video is placed exactly what we wanted to.
+
+105
+00:06:14,480 --> 00:06:18,360
+现在我们来用类似的风格创建第二张卡片
+And now let's create a card two in similar styles.
+
+106
+00:06:18,500 --> 00:06:20,380
+所以我要到下面的第二张卡片那里
+So I'm going to go to the car to below it.
+
+107
+00:06:20,420 --> 00:06:23,460
+它会是这个轮播图的第二部分
+It's going to be the second part of this carousel, let's say.
+
+108
+00:06:24,000 --> 00:06:24,940
+所以我就会这样说
+So I'm just going to say.
+
+109
+00:06:27,600 --> 00:06:29,800
+在它下面的第四张卡片里
+Under that in the fourth card,
+
+110
+00:06:29,860 --> 00:06:33,540
+我们要做一个类似第一个轮播图第二部分的内容
+we're going to build like the second part of the first carousel,
+
+111
+00:06:33,680 --> 00:06:36,600
+所以我们来修改第二张卡片里的文字
+so let's change the text in the second car.
+
+112
+00:06:36,600 --> 00:06:40,460
+把“用AI简化你的工作”改成在逻辑上顺承的其他文案
+Simplify your work with AI to something else that would follow logically.
+
+113
+00:06:41,140 --> 00:06:43,920
+也给那个页面加上液态渐变
+And let's also add liquid gradient to that site.
+
+114
+00:06:45,240 --> 00:06:46,640
+关于液态渐变
+So for the liquid gradient,
+
+115
+00:06:46,820 --> 00:06:49,300
+我要从 Motion Sites AI 那里取用
+I'm going to take it from motion sites.
+
+116
+00:06:49,480 --> 00:06:52,040
+有一个设计用了这种液态渐变
+There is a design that has this liquid gradient,
+
+117
+00:06:52,100 --> 00:06:55,280
+就像你在这里看到的这样
+as you can see right here.
+
+118
+00:06:56,140 --> 00:06:58,080
+所以我就直接用这个
+So I'm just going to take that.
+
+119
+00:06:58,220 --> 00:06:59,280
+我们来复制这个提示词
+Let's copy the prompt.
+
+120
+00:06:59,660 --> 00:07:01,440
+按照刚才同样的步骤来做
+Let's do the same thing that we did.
+
+121
+00:07:01,500 --> 00:07:05,080
+我要把它粘贴进去然后找到那个液态玻璃效果的卡片
+I'm going to paste that and I'm going to find the liquid glass card.
+
+122
+00:07:08,160 --> 00:07:10,980
+也许再用这个网站里的另一张
+Maybe another one from this site.
+
+123
+00:07:11,280 --> 00:07:14,000
+我觉得我更喜欢这个渐变
+I like, I think, more the gradient.
+
+124
+00:07:16,660 --> 00:07:19,320
+对 这样说明得更清楚
+Yeah, so it's more clearly explained.
+
+125
+00:07:19,440 --> 00:07:25,300
+我们就把它复制回 Bolt.new 里 然后我也把这个加进去
+Let's just copy that and go back to our bolt and I'm going to also add this.
+
+126
+00:07:27,100 --> 00:07:30,680
+所以在那张卡片里 我们把文字放在中间
+So in that card, let's position text in the center,
+
+127
+00:07:30,980 --> 00:07:34,620
+有些在中间 有些在顶部 之类的排布
+some in the center, some on the top and stuff like that.
+
+128
+00:07:34,640 --> 00:07:37,640
+但也给这一侧加上液态玻璃效果
+But let's also add a liquid glass effect to this side.
+
+129
+00:07:37,640 --> 00:07:38,980
+我已经把代码附在下面了
+I've attached the code below.
+
+130
+00:07:43,230 --> 00:07:43,750
+帖子
+Post.
+
+131
+00:07:44,990 --> 00:07:47,070
+不是页面 是帖子
+Not site, but post.
+
+132
+00:07:49,680 --> 00:07:52,340
+然后我们发出去看看它返回什么
+And let's just send that and see what it comes back with.
+
+133
+00:07:52,940 --> 00:07:55,220
+这里就是前两张卡片
+So here are two first cards.
+
+134
+00:07:55,340 --> 00:07:57,340
+你可以看到 它把所有文字都加上去了
+As you can see, it added all of the text,
+
+135
+00:07:57,500 --> 00:07:58,500
+但现在看起来有点无聊
+but it looks boring now.
+
+136
+00:07:58,620 --> 00:08:00,420
+我们来加点好看的东西
+Let's add some of the nice stuff.
+
+137
+00:08:00,940 --> 00:08:01,920
+对于第一张卡片
+So for the first card,
+
+138
+00:08:02,000 --> 00:08:04,300
+我要这样描述第一张卡片
+I'm going to say for the first card,
+
+139
+00:08:04,440 --> 00:08:10,000
+我们从这个颜色加一个到透明的渐变
+let's add some gradient from this color to transparent.
+
+140
+00:08:10,660 --> 00:08:12,520
+大概从页面底部开始
+Somewhere from the bottom of the page,
+
+141
+00:08:12,660 --> 00:08:13,720
+就像渐变本来该有的那样
+like a gradient should be.
+
+142
+00:08:16,780 --> 00:08:20,920
+我会把这个颜色粘贴进去 然后在第四张卡片里说明
+And I'm just going to paste this color and I'm going to say in the fourth card,
+
+143
+00:08:21,100 --> 00:08:23,220
+我们把这个视频作为背景
+let's have this video as the background.
+
+144
+00:08:23,960 --> 00:08:26,360
+要做一个视频背景其实很简单
+And to create a video background, it's very simple.
+
+145
+00:08:27,660 --> 00:08:31,160
+我们只需要先给这个机器人截一张图
+We're just going to create a screenshot of this robot.
+
+146
+00:08:31,780 --> 00:08:36,080
+回到 Higgsfield 去生成我们的图片
+Go back to Higgsfield to generate our image.
+
+147
+00:08:37,890 --> 00:08:39,610
+然后我会这样写提示词
+And I'm just going to say.
+
+148
+00:08:40,470 --> 00:08:47,010
+像这样 提示词我会写 为我的桌面壁纸创建一个背景
+Like this. For the prompt, I'm going to say create a background for wallpapers for my desktop.
+
+149
+00:08:47,170 --> 00:08:49,370
+风格类似 但只用抽象物体
+So similar style, only abstract objects.
+
+150
+00:08:49,630 --> 00:08:51,910
+然后点生成 看看它给我们什么结果
+And let's click generate and see what it comes back with.
+
+151
+00:08:53,560 --> 00:08:54,860
+这就是我们得到的效果
+So this is what we've got.
+
+152
+00:08:54,960 --> 00:08:56,880
+现在我们需要给它做动画
+Now we need to create animation for it.
+
+153
+00:08:56,980 --> 00:09:04,420
+只要复制这张图 打开 Kling 3.0 这个网站 就可以直接在那里生成视频
+Just copy the image, go to the website Kling 3.0 and you can generate the video straight up there.
+
+154
+00:09:05,060 --> 00:09:12,240
+我已经做过了 我用的是 Kling 3.0 时长九秒 提示词就是 把这个做成动画
+I already did. I used Kling 3.0, duration nine seconds and the prompt would be animate this.
+
+155
+00:09:12,600 --> 00:09:15,100
+就是 我觉得 直接写 把这个做成动画 就行
+Make, I think, just animate this,
+
+156
+00:09:15,160 --> 00:09:16,180
+就像你在这里看到的这样
+as you can see here.
+
+157
+00:09:16,280 --> 00:09:20,780
+这样我们就有了可以加到第四张卡片里的动画
+And we have this animation that we can add to our fourth card.
+
+158
+00:09:20,980 --> 00:09:22,560
+我们也把链接复制一下
+Let's copy the link also.
+
+159
+00:09:23,320 --> 00:09:24,780
+我就像这样把它复制下来
+So I'm just going to copy it like this.
+
+160
+00:09:25,300 --> 00:09:27,880
+回到我们这里的页面
+Go back to our site here.
+
+161
+00:09:28,540 --> 00:09:29,640
+然后我会这样写
+And I'm going to say,
+
+162
+00:09:29,820 --> 00:09:31,120
+我会直接粘贴这个链接
+I'm just going to paste the link.
+
+163
+00:09:32,180 --> 00:09:33,220
+不要叠加层
+No overlay.
+
+164
+00:09:34,680 --> 00:09:37,440
+然后发出去看看它返回什么
+And let's just send it and see what it comes back with.
+
+165
+00:09:38,260 --> 00:09:40,940
+这就是我们的第一张卡片
+And here is our first card.
+
+166
+00:09:41,020 --> 00:09:42,840
+你可以看到 它在底部加上了这个渐变
+As you can see, it added this gradient at the bottom.
+
+167
+00:09:42,920 --> 00:09:45,380
+唯一我不太喜欢的是这个字体
+The only thing I'm not really loving is the font.
+
+168
+00:09:46,020 --> 00:09:47,740
+那我们就把它换掉
+So let's just replace that.
+
+169
+00:09:48,180 --> 00:09:49,320
+然后在第二张卡片里
+And in the second card,
+
+170
+00:09:49,420 --> 00:09:50,860
+它已经把我们的视频更新上去了
+it's updated our video.
+
+171
+00:09:51,200 --> 00:09:54,540
+除了这个字体之外 其他我基本都挺喜欢
+So I pretty much like everything except this font as well.
+
+172
+00:09:54,660 --> 00:09:59,440
+所以我要说明 在两张卡片里凡是写着 build for speed 的地方
+So I'm going to say, in both cards where it says build for speed,
+
+173
+00:09:59,560 --> 00:10:02,140
+我们把那个字体替换成
+let's replace that font to be a...
+
+174
+00:10:02,700 --> 00:10:05,920
+然后我会把这个字体名字填进去
+And I'm just going to place this name.
+
+175
+00:10:06,180 --> 00:10:08,400
+然后发出去看看它返回什么
+And let's just send that and see what it comes back with.
+
+176
+00:10:10,000 --> 00:10:14,360
+现在字体已经更新好 视频也在加载中
+And here is our font updated and the videos are loading.
+
+177
+00:10:14,580 --> 00:10:17,220
+现在我们来真正把它准备成社交媒体帖子
+Now, let's actually prepare it for social media posts.
+
+178
+00:10:17,320 --> 00:10:18,820
+我们要做的就是把画面放大
+And all we have to do is just zoom in,
+
+179
+00:10:19,300 --> 00:10:21,720
+打开你用的任意录屏工具
+open any screen recording tool that you use.
+
+180
+00:10:21,900 --> 00:10:25,100
+我会打开 CleanShot X
+I'm going to just open CleanShot X,
+
+181
+00:10:25,520 --> 00:10:27,020
+同样也没有任何合作关系
+not affiliated with them either.
+
+182
+00:10:27,700 --> 00:10:32,240
+把录屏框拖到屏幕上 然后点开始录制视频
+And just drag it over the screen and click record video.
+
+183
+00:10:32,800 --> 00:10:36,940
+录几秒钟 让它完整播放一遍
+And just record a few seconds for it to play all the way through.
+
+184
+00:10:37,080 --> 00:10:38,980
+然后我们可以在这里加一些效果
+And then we can add some of the effects here,
+
+185
+00:10:39,160 --> 00:10:44,800
+比如滤镜 或者给噪点加渐变 让它在社交媒体上看起来更有趣
+like a filter or gradient to noise to make it look more interesting for social media.
+
+186
+00:10:45,520 --> 00:10:49,200
+然后我们裁剪一下 让剪辑痕迹不那么明显
+And let's just crop so the cut is not that visible.
+
+187
+00:10:50,000 --> 00:10:51,260
+所以我会在这里裁一刀
+So I'm just going to crop here.
+
+188
+00:10:52,520 --> 00:10:55,520
+还有在她直视镜头的这个位置也裁一下
+And also here when she looks directly into the camera.
+
+189
+00:10:56,740 --> 00:11:01,320
+我们先替换这个视频 然后我会打开一个叫 shots.so 的网站
+Let's replace the video and then I'm going to go to the website called shots.so.
+
+190
+00:11:03,660 --> 00:11:07,020
+我记得这个要付费才能创建内容
+I believe this is a paid option for you to be able to create,
+
+191
+00:11:07,340 --> 00:11:11,260
+但它基本可以让你很快做出漂亮的样机效果图
+but it allows you basically to create beautiful mockups pretty quickly,
+
+192
+00:11:11,500 --> 00:11:12,840
+同样 我也没有和他们合作
+again, not affiliated with them.
+
+193
+00:11:12,880 --> 00:11:14,100
+只是我自己工作中在用的工具
+Just what I use for my work.
+
+194
+00:11:15,480 --> 00:11:17,680
+我会从这里重新开始
+And I'm just going to start over here.
+
+195
+00:11:19,550 --> 00:11:26,090
+我会进入模板 选择动画类 然后选这个模板
+I'm going to go to templates and I'm going to choose animated and then I'm going to choose this one.
+
+196
+00:11:26,550 --> 00:11:29,250
+点用这个模板 然后把素材拖进来
+Use template and let's just drop it here.
+
+197
+00:11:29,590 --> 00:11:31,490
+我其实不需要这个背景
+I don't really need the background.
+
+198
+00:11:33,150 --> 00:11:36,250
+所以我只需要把画面放大
+So all I have to do is just zoom in.
+
+199
+00:11:37,110 --> 00:11:40,310
+像这样 然后把画框选成正方形
+Like this, let's select frame to be square.
+
+200
+00:11:41,550 --> 00:11:45,470
+一对一，然后我们就像这样在这里放大
+One on one, and let's just zoom in here like this.
+
+201
+00:11:45,890 --> 00:11:51,410
+但我在这里需要的只是这种效果，让它看起来有点故障闪烁之类的
+But all that I needed for here is just this effect that it like has this glitch or whatever.
+
+202
+00:11:51,410 --> 00:11:53,330
+我们实际上要选择
+We're going to select actually,
+
+203
+00:11:53,830 --> 00:11:56,390
+对，就是这个故障效果的那个
+yeah, the glitch one.
+
+204
+00:11:56,810 --> 00:12:02,870
+现在我们先预览一下，然后就可以把它下载下来，再发布到我们想发的任何社交媒体上
+And now let's just preview it and we can download it and then post it on whatever social media we wanted to post.
+
+205
+00:12:03,170 --> 00:12:06,050
+我们对第二张图片也做同样的操作
+Let's do with the same with the second image as well.
+
+206
+00:12:06,690 --> 00:12:08,910
+所以你只要重复同样的流程
+So just you can do the same process,
+
+207
+00:12:08,990 --> 00:12:10,730
+基本上就是录制之类的操作
+basically just record and stuff like that.
+
+208
+00:12:10,750 --> 00:12:15,430
+但现在我们进入更有趣的部分，在这里我们可以真正创建非常酷的
+But now let's get to the more interesting part where we can create actual very cool
+
+209
+00:12:15,430 --> 00:12:19,770
+设计，看起来就像你在 Pinterest 上看到的那些
+designs that look exactly like the ones that you see on Pinterest.
+
+210
+00:12:19,770 --> 00:12:22,310
+为此我们会直接使用 Napkin AI
+We're going to be using directly Napkin AI for that.
+
+211
+00:12:22,570 --> 00:12:30,070
+我们不会去 Gemini 里做这些，因为我们会用到非常非常多
+We're not going to go to the Gemini to build that because we're going to be using very,
+
+212
+00:12:30,370 --> 00:12:35,010
+很酷的图形和很多很酷的字体，而这些在网页上是没有的
+very a lot of cool graphics and a lot of cool fonts which are not available on the web.
+
+213
+00:12:35,130 --> 00:12:35,950
+那我们就开始吧
+So let's get started.
+
+214
+00:12:36,150 --> 00:12:37,790
+我先点开第一个
+And I'm going to click on the first one.
+
+215
+00:12:38,150 --> 00:12:42,330
+你可以看到，你只要到这里来，就能根据自己的细分领域看到很多不同的海报
+If you can see, you can just go here and you can see a lot of different posters depending on your niche.
+
+216
+00:12:42,630 --> 00:12:45,530
+先挑出你喜欢的几个，然后我们再继续往下做
+Just look for the few that you like and then we can keep building.
+
+217
+00:12:46,670 --> 00:12:48,410
+我找到了一张带这只鸟的
+I found one with this bird.
+
+218
+00:12:48,410 --> 00:12:51,550
+我们把它丢进 Figma，别担心
+Let's just move it to Figma and no worries,
+
+219
+00:12:51,630 --> 00:12:53,110
+我们其实不需要做太多设计
+we don't really need to design much.
+
+220
+00:12:53,250 --> 00:12:54,750
+只要从预设里选择
+Just select from the presets,
+
+221
+00:12:55,290 --> 00:12:59,730
+社交媒体，然后选 Instagram 帖子，这样基本就是个正方形
+the social media and then Instagram post to have a pretty much square.
+
+222
+00:13:00,330 --> 00:13:05,630
+现在我们可以把它裁一下，然后对这张图片截个图
+And now we can just crop it and just take a screenshot of this image.
+
+223
+00:13:07,420 --> 00:13:08,360
+就像这样
+Like this.
+
+224
+00:13:10,740 --> 00:13:18,060
+打开你用来做视频编辑的任意 AI 网站，比如 Napkin AI，然后粘贴上
+Go to any AI site that you're using to video edit like Napkin AI and just paste the
+
+225
+00:13:18,060 --> 00:13:22,100
+这样的提示词：用 8K 分辨率创建一张类似这样的图片
+prompt which is create an image like this in 8K,
+
+226
+00:13:22,380 --> 00:13:24,280
+但要去掉所有按钮和文字
+but remove any buttons, text.
+
+227
+00:13:24,800 --> 00:13:25,880
+我只要背景
+I just want the background.
+
+228
+00:13:28,800 --> 00:13:32,840
+然后我们发出去，看看它返回什么
+And let's just send that and see what it comes back with.
+
+229
+00:13:32,940 --> 00:13:34,920
+啊，我忘了选对
+Oh, I forgot to select the correct.
+
+230
+00:13:35,960 --> 00:13:38,120
+我们选 Claude Opus 4.5
+Let's choose Claude Opus 4.5.
+
+231
+00:13:40,360 --> 00:13:41,440
+这样我们就有了这张图片
+So we have this image,
+
+232
+00:13:41,560 --> 00:13:45,020
+但假设我在做一个 FinTech 相关的东西，我喜欢这个横幅
+but let's say I'm building something for FinTech and I like this banner,
+
+233
+00:13:45,220 --> 00:13:46,920
+但它其实不太符合我的风格
+but it doesn't really fit my style.
+
+234
+00:13:47,420 --> 00:13:49,960
+那我可以直接说：给我创建一张类似这样的图片
+So what I can do is just say create me an image like this.
+
+235
+00:13:50,040 --> 00:13:51,620
+还不错，但我会接着说
+No bad, but I'm going to say,
+
+236
+00:13:51,940 --> 00:13:53,080
+但是把这只鸟换掉
+but instead of this bird,
+
+237
+00:13:53,240 --> 00:13:58,040
+换成一张信用卡，风格、颜色、质感、3D 效果都保持相似
+we're going to have a credit card and similar styles, colors, textures, 3D.
+
+238
+00:14:02,190 --> 00:14:03,070
+颜色、位置也一样
+Colors, position.
+
+239
+00:14:04,830 --> 00:14:07,210
+然后我们发出去，看看这里会返回什么
+And let's just send it and see what it comes back here.
+
+240
+00:14:10,190 --> 00:14:12,170
+这里就是我们得到的几张图片
+So here are a few images that we've got.
+
+241
+00:14:12,170 --> 00:14:13,550
+我们可以随便选一张
+We can choose any of these,
+
+242
+00:14:13,710 --> 00:14:17,150
+下载下来，然后像这样粘贴到 Figma 里
+just download it and paste in Figma like this.
+
+243
+00:14:17,550 --> 00:14:20,270
+现在我们来处理文字
+And now let's just take the text.
+
+244
+00:14:20,910 --> 00:14:24,030
+对你想加到横幅上的那段文字截个图就行
+Just take a screenshot of the text you want to add to your banner.
+
+245
+00:14:24,270 --> 00:14:25,630
+我只想加这段
+I just wanted to add this.
+
+246
+00:14:26,330 --> 00:14:31,890
+我会把它粘到我们的 Napkin AI 里，然后说：把除了某个词以外的所有文字都去掉
+I'm going to paste it into our Napkin AI and I'm going to say remove all of the text except.
+
+247
+00:14:35,210 --> 00:14:37,310
+然后我只复制那个词
+And I'm just going to copy the word.
+
+248
+00:14:37,490 --> 00:14:40,450
+比如我们复制这个词，就是 Exotica
+So let's copy this word, which is Exotica.
+
+249
+00:14:47,220 --> 00:14:51,840
+还要把 Exotica 这个词改成 Fintech
+Also change the word Exotica to Fintech,
+
+250
+00:14:52,040 --> 00:14:53,140
+使用同样的渐变
+use the same gradient,
+
+251
+00:14:53,320 --> 00:14:57,120
+同样的风格，但把图片里其他所有东西都去掉，放在一个纯色背景上
+the same style, but remove everything from else from the image on a plain background.
+
+252
+00:15:02,340 --> 00:15:05,220
+然后我们发出去，看看它返回什么
+And let's just send that and see what it comes back with.
+
+253
+00:15:05,280 --> 00:15:09,160
+我们选这个，看看它给我们生成什么
+Let's select this and see what it comes back with.
+
+254
+00:15:09,580 --> 00:15:11,040
+这就是我们的文字
+And here is our text.
+
+255
+00:15:11,460 --> 00:15:16,860
+我们把它下载下来，然后你可以用任意网站的 AI 背景移除工具
+Let's just download this and you can use any website, AI background remover,
+
+256
+00:15:17,040 --> 00:15:18,000
+在线搜一下就有
+just type it online.
+
+257
+00:15:18,000 --> 00:15:19,540
+有一大堆是免费的
+There's a bunch of them for free.
+
+258
+00:15:21,040 --> 00:15:23,300
+我在 Figma 里做这个，所以我就把它拖到这里
+Do this in Figma, so I'm just going to drop it here.
+
+259
+00:15:23,440 --> 00:15:24,480
+点一下这个移除背景
+Click this remove background.
+
+260
+00:15:24,780 --> 00:15:26,540
+这个功能不幸是付费的
+This is unfortunately a paid feature,
+
+261
+00:15:26,640 --> 00:15:27,860
+不过非常值得
+although way worth it.
+
+262
+00:15:28,320 --> 00:15:35,800
+所以我们就等几秒钟，然后像这样把它拖到我们的横幅上
+So we're just going to wait a couple of seconds and we're just going to drag it onto our banner like this.
+
+263
+00:15:37,460 --> 00:15:39,800
+我们也在上面加点文字
+Let's also add some text here at the top.
+
+264
+00:15:40,000 --> 00:15:42,240
+那我们回到预览图
+So let's go back to our preview image.
+
+265
+00:15:43,620 --> 00:15:44,780
+就是这张
+Which is this one.
+
+266
+00:15:45,460 --> 00:15:46,900
+然后我会说
+And I'm going to say,
+
+267
+00:15:47,780 --> 00:15:51,100
+其实我们可以直接把这段文字打出来，这没什么复杂的
+well, actually we can just type this text, it's nothing complicated,
+
+268
+00:15:51,400 --> 00:15:53,660
+这样你之后也能很容易地编辑
+so you can very easily later edit it.
+
+269
+00:15:53,720 --> 00:15:56,880
+所以就点一下这个
+So just click on this one.
+
+270
+00:15:57,240 --> 00:16:00,220
+这样你就有了文本框，然后输入类似
+So you have the text and then type something like,
+
+271
+00:16:00,280 --> 00:16:02,340
+我们就照抄他们这里写的内容
+let's just copy exactly what they have here.
+
+272
+00:16:09,160 --> 00:16:10,820
+然后把字号调小一点
+And make it smaller.
+
+273
+00:16:13,600 --> 00:16:14,720
+分成三行
+Three lines.
+
+274
+00:16:19,200 --> 00:16:25,640
+就像这样。当然，你可以在这里加上自己的 logo，再加一些类似的细节
+Just like this. Obviously, you can add your logo here and add some more details like this.
+
+275
+00:16:26,080 --> 00:16:27,460
+这只是一个快速示例
+This was just a quick example.
+
+276
+00:16:27,700 --> 00:16:30,720
+同样的，你也可以把这个做成动效
+And the same thing, just you can also animate this.
+
+277
+00:16:31,100 --> 00:16:34,360
+如果我们想的话，就点一下这个
+So if we wanted to, we can just click on this.
+
+278
+00:16:37,000 --> 00:16:38,000
+点“动画”
+Click animate.
+
+279
+00:16:39,520 --> 00:16:44,580
+我会说给这个加动画，让它旋转
+I'd say animate this, make it spin.
+
+280
+00:16:45,300 --> 00:16:47,580
+然后我会选几秒钟
+And I'm going to select a few seconds,
+
+281
+00:16:47,700 --> 00:16:49,400
+比如六秒，点创建
+like six seconds, create,
+
+282
+00:16:49,700 --> 00:16:51,400
+生成一下，看看它给我们什么效果
+generate and see what it comes back.
+
+283
+00:16:52,220 --> 00:16:55,280
+生成好之后，我们就可以把它下载下来
+So once it did, we just can download this.
+
+284
+00:16:57,280 --> 00:16:59,220
+粘贴到我们的 Figma 里
+Paste it into our Figma.
+
+285
+00:17:00,420 --> 00:17:03,160
+把视频替换掉，然后预览一下
+Replace the video and just preview.
+
+286
+00:17:03,640 --> 00:17:05,820
+记得打开录屏工具
+Remember, open the screen recording tool.
+
+287
+00:17:06,720 --> 00:17:08,260
+像这样把它录下来
+Just record it like this.
+
+288
+00:17:09,200 --> 00:17:10,060
+点“开始录制”
+Click record.
+
+289
+00:17:11,520 --> 00:17:13,680
+确保它完整转一圈
+Make sure it does the full circle.
+
+290
+00:17:15,260 --> 00:17:19,620
+停止视频。现在你可以裁剪成你需要的尺寸
+Stop the video. Now you can crop it to fit whatever you need.
+
+291
+00:17:20,540 --> 00:17:21,760
+我们把它导出
+Let's export this.
+
+292
+00:17:26,350 --> 00:17:27,810
+你可以做同样的事
+You can do the same thing.
+
+293
+00:17:28,030 --> 00:17:32,590
+打开 shots，然后把视频替换成这里这个
+Go to shots and just replace the video to be here.
+
+294
+00:18:14,320 --> 00:18:18,720
+这样一来，我们就有了一张可以在社交媒体上分享的动图
+And just like that, we have animated image that we can share on social media,
+
+295
+00:18:18,860 --> 00:18:22,560
+也可以发给客户，然后用 AI 非常轻松地更新
+that we can send to our clients and then update it very easily with AI.
+
+296
+00:18:24,450 --> 00:18:25,530
+如果你喜欢这个视频
+If you like this video,
+
+297
+00:18:25,590 --> 00:18:26,830
+那就点个赞并订阅
+then leave a like and subscribe.
+
+298
+00:18:27,370 --> 00:18:30,790
+希望你已经学到了一两招如何制作社交媒体帖子
+And hopefully you've learned a thing or two about creating social media posts,
+
+299
+00:18:30,870 --> 00:18:33,670
+关于整个流程，也就是如何寻找灵感的过程
+about the flow, the process of how to find inspirations,
+
+300
+00:18:33,770 --> 00:18:39,670
+如何找到高质量图片，然后把它们变成视频，以及如何制作
+how to find quality images and then how to turn them into the videos and how to make,
+
+301
+00:18:40,270 --> 00:18:42,730
+添加文案并加入漂亮的渐变
+add copy and add beautiful gradients,
+
+302
+00:18:43,070 --> 00:18:44,650
+液态玻璃效果之类的东西
+liquid glass and stuff like that.
+
+303
+00:18:45,010 --> 00:18:46,270
+如果你喜欢这个内容，如果你从中学到了东西
+If you like this, if you learn it,
+
+304
+00:18:46,330 --> 00:18:47,370
+那就点个赞并订阅
+then leave a like and subscribe.
+
+305
+00:18:47,470 --> 00:18:49,690
+在下一期视频中我会给你展示更多很酷的技巧和窍门
+In the next video, I'll show you even more cool tips and tricks.
+
+306
+00:18:49,810 --> 00:18:50,410
+感谢你的观看
+Thank you for watching.

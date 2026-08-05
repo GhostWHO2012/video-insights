@@ -1,0 +1,3609 @@
+1
+00:00:14,120 --> 00:00:18,480
+我们接下来的演讲者将为大家讲述驾驭式工程
+Our next speaker is here to speak about Harness Engineering,
+
+2
+00:00:18,980 --> 00:00:23,800
+在人类掌舵、智能体执行的情况下如何构建软件
+how to build software when humans steer and agents execute.
+
+3
+00:00:24,280 --> 00:00:26,780
+让我们一起欢迎上台
+Please join me in welcoming to the stage,
+
+4
+00:00:27,320 --> 00:00:31,120
+来自OpenAI的技术人员瑞安·洛波波洛
+member of technical staff at OpenAI, Ryan Lopopolo.
+
+5
+00:00:39,860 --> 00:00:41,120
+早上好，伦敦
+Good morning, London!
+
+6
+00:00:45,950 --> 00:00:47,890
+今天能来到这里我感到非常兴奋
+I'm super excited to be here today.
+
+7
+00:00:48,270 --> 00:00:51,730
+我是瑞安·洛波波洛，在过去九个月里
+I'm Ryan Lopopolo, and for the last nine months,
+
+8
+00:00:51,810 --> 00:00:55,510
+我有幸只使用智能体来构建软件
+I have had the privilege of building software exclusively with agents.
+
+9
+00:00:56,370 --> 00:00:57,930
+我是一个Token亿万富翁
+I am a token billionaire,
+
+10
+00:00:58,370 --> 00:01:02,530
+我相信，为了让我们走向通用人工智能的未来
+and I believe that, in order for us to get into our AGI future,
+
+11
+00:01:02,810 --> 00:01:04,890
+我们希望每个人都成为Token亿万富翁
+we want everybody to be token billionaires,
+
+12
+00:01:05,050 --> 00:01:08,030
+使用模型来完成整份工作
+to use the models to do the full job,
+
+13
+00:01:08,690 --> 00:01:17,130
+这意味着要充分相信模型有能力胜任一名完整的软件工程师
+and what that means is to lean into the idea that the models are capable of being a full software engineer.
+
+14
+00:01:17,650 --> 00:01:22,150
+我通过禁止我的团队碰自己的编辑器来践行这一点
+I've lived that experience by banning my team from even touching their editors to have to
+
+15
+00:01:22,150 --> 00:01:24,650
+他们必须通过模型来完成所有工作
+work through the models in order to get the job done.
+
+16
+00:01:25,790 --> 00:01:29,830
+今天我会和大家聊一聊，真正拥抱这一点意味着什么
+Today, I'm going to talk to you a little bit about what it means to lean into that and
+
+17
+00:01:29,830 --> 00:01:31,510
+以及如何把这种方式落实到你的工作流程中
+operationalise the way you work,
+
+18
+00:01:31,930 --> 00:01:33,310
+落实到你所处的代码空间中
+the code spaces you live in,
+
+19
+00:01:33,470 --> 00:01:37,510
+以及落实到你团队的流程中，从而让智能体完成整份工作
+and the processes on your teams in order to get the agents to do the full job.
+
+20
+00:01:40,370 --> 00:01:45,250
+当我说我们构建软件的方式已经改变时，我相信在座的各位早已深有体会
+I believe I'm preaching to the choir here when I say that the way we build software has changed.
+
+21
+00:01:45,770 --> 00:01:46,890
+在过去六个月里
+In the last six months,
+
+22
+00:01:47,050 --> 00:01:49,390
+我们看到编程智能体席卷全球
+we have seen coding agents take over the world,
+
+23
+00:01:49,750 --> 00:01:56,450
+而且这些模型及其所处的
+and capability has continually advanced at a super-fast pace to have these models and the
+
+24
+00:01:56,450 --> 00:02:00,190
+驾驭框架的能力以极快的速度持续提升，能够执行更复杂的操作
+harnesses within which they live take more complex actions,
+
+25
+00:02:00,540 --> 00:02:05,510
+在更长的时间跨度上以更高的可靠性完成更复杂的工作
+do more complicated work with higher reliability over longer time horizons.
+
+26
+00:02:06,470 --> 00:02:11,950
+而我们现在所处的阶段是，实现代码不再是
+And the place we've gotten to here is that implementation is no longer the scarce resource
+
+27
+00:02:11,950 --> 00:02:14,750
+完成软件工程工作时的稀缺资源
+of what it means to do the job of software engineering.
+
+28
+00:02:15,450 --> 00:02:21,050
+代码是免费的，我们拥有海量代码来解决日常遇到的问题
+Code is free. We have an abundance of code to solve the problems that we come across in our day-to-day
+
+29
+00:02:21,050 --> 00:02:24,430
+无论是在管理团队、构建软件
+as we run our teams, build software,
+
+30
+00:02:24,750 --> 00:02:26,130
+还是解决用户问题时都是如此
+and solve user problems.
+
+31
+00:02:27,770 --> 00:02:34,950
+为团队“雇佣”敲键盘的双手，现在只受GPU算力和Token预算的限制
+Hiring the hands on the keyboards as part of our teams is only constrained by GPU capacity and token budgets.
+
+32
+00:02:35,890 --> 00:02:39,510
+而在座的每一位工程师，如今都可以调动相当于5名
+And each engineer today in this room has access to 5,
+
+33
+00:02:39,690 --> 00:02:46,210
+50名，甚至5000名工程师的产能，而且全年无休、全天候可用
+50, or 5,000 engineers' worth of capacity 24-7 every day of the year.
+
+34
+00:02:47,130 --> 00:02:48,890
+唯一需要做的事情
+The only thing that needs to happen,
+
+35
+00:02:49,250 --> 00:02:54,850
+或者说我们的职责，就是弄清楚如何高效地把这些资源投入到代码中
+or roles, is to figure out how to productively deploy these resources into our code and
+
+36
+00:02:54,850 --> 00:02:57,730
+投入到我们的团队中，从而利用这份全新的产能
+into our teams to make use of this new capacity.
+
+37
+00:02:59,190 --> 00:03:03,830
+在这样的世界里，技能正在更多地向系统思维
+And in this world, skill sets are shifting more towards systems thinking,
+
+38
+00:03:04,330 --> 00:03:09,930
+系统设计和任务分配倾斜，以便利用这无限的代码生产能力
+system design, and delegation in order to make use of this abundant capacity to produce
+
+39
+00:03:09,930 --> 00:03:11,410
+来解决问题
+code to solve problems.
+
+40
+00:03:12,050 --> 00:03:14,110
+这一切的发生有三个原因
+And there are three reasons that this happened,
+
+41
+00:03:14,390 --> 00:03:16,490
+而它们都出现在2025年末
+all of which happened in late 2025.
+
+42
+00:03:18,750 --> 00:03:22,130
+对我来说，真正的魔法时刻是GPT-4o
+For me, the magic moment was GPT-4o,
+
+43
+00:03:22,470 --> 00:03:26,010
+它一发布就已经能够完成一名软件工程师的全部工作
+which when it came out was able to do the full job of a software engineer.
+
+44
+00:03:26,710 --> 00:03:31,610
+在这一点上，这些模型已经足够优秀，在产出高质量代码、解决真实用户问题方面
+The models at this point are good enough where they're isomorphic to you and I in terms of
+
+45
+00:03:31,610 --> 00:03:37,510
+与你我在真实代码库中的能力几乎同构
+the ability to produce code at high quality that solve real user problems in real codebases.
+
+46
+00:03:39,590 --> 00:03:45,950
+代码是免费的，我知道这听起来可能有点可怕，因为代码意味着维护负担
+Code is free. And I know this is maybe a scary thing to hear because code carries maintenance burden,
+
+47
+00:03:46,370 --> 00:03:47,750
+但它的产出本身是免费的
+but it's free to produce,
+
+48
+00:03:47,990 --> 00:03:53,650
+重构也是免费的，因此不再是我们需要纠结的东西
+free to refactor, and it is not a thing to get hung up on any more.
+
+49
+00:03:54,450 --> 00:03:59,950
+我们之所以把代码视为负担，是因为它会同步消耗团队中人类工程师的注意力
+We think of code as burden because it's a synchronous attention drain on the human
+
+50
+00:03:59,950 --> 00:04:01,010
+把他们的精力拖进去
+engineers on our team,
+
+51
+00:04:01,290 --> 00:04:03,650
+但模型却极其有耐心
+but the models are incredibly patient.
+
+52
+00:04:04,090 --> 00:04:07,030
+它们可以无限并行，因此在产出
+They're infinitely parallel, so the ability to produce,
+
+53
+00:04:07,230 --> 00:04:12,790
+维护、重构和删除代码方面，不再是我们在工程团队中
+maintain, refactor, and delete code is no longer a forcing function on figuring out how to
+
+54
+00:04:12,790 --> 00:04:15,370
+进行资源分配时的约束因素
+allocate resources on your engineering teams.
+
+55
+00:04:16,370 --> 00:04:22,190
+所以，所谓深信AGI理念，就是要相信模型有能力产出我们可能需要的每一行代码
+So sort of be AGI-pilled here is to believe that the models are capable of producing every
+
+56
+00:04:22,190 --> 00:04:24,030
+覆盖所有潜在需求
+line of code we could ever possibly need,
+
+57
+00:04:24,790 --> 00:04:26,170
+也能判断何时删除这些代码
+figuring out when to delete them,
+
+58
+00:04:26,690 --> 00:04:29,310
+何时对其进行重构或提升可靠性
+figuring out when to refactor them or make them more reliable,
+
+59
+00:04:29,970 --> 00:04:36,030
+而作为软件工程师，你们的职责是想办法为你的智能体团队
+and it's your role as software engineers to figure out how to unblock your team of agents
+
+60
+00:04:36,030 --> 00:04:43,050
+以及驱动这些智能体的人类清除障碍，让他们能够在长周期任务中完成整份工作
+and humans driving those agents from being able to drive them over long-horizon work to do the full job.
+
+61
+00:04:44,690 --> 00:04:47,710
+这里的理念是，在座的每一位都是一名Staff工程师
+The idea here is that every one of you is a staff engineer.
+
+62
+00:04:48,290 --> 00:04:53,710
+你可以拥有只要你能同时驾驭、且Token足够支撑的任意数量的团队成员
+You have as many team members as you can possibly drive concurrently and have tokens to
+
+63
+00:04:53,710 --> 00:04:57,190
+你需要向前看一天
+support, and you need to look one day,
+
+64
+00:04:57,530 --> 00:05:02,410
+一周，甚至六个月，去思考你需要搭建什么样的结构
+one week, six months into the future to figure out what structures you need to put in
+
+65
+00:05:02,410 --> 00:05:07,030
+才能高效驾驭这无限的代码生产能力
+place to productively harness this infinite capacity to produce code.
+
+66
+00:05:10,340 --> 00:05:15,220
+在我们今天看到的这个世界里，真正稀缺的资源有三样
+The scarce resources in this world that we see today are three things.
+
+67
+00:05:15,940 --> 00:05:18,880
+人类时间、人类与模型的注意力
+Human time, human and model attention,
+
+68
+00:05:19,540 --> 00:05:21,020
+以及模型的上下文窗口
+and model context window.
+
+69
+00:05:22,060 --> 00:05:25,920
+在一个人类时间和注意力都极其稀缺的世界里
+And in the world where human time and attention is scarce,
+
+70
+00:05:27,000 --> 00:05:30,000
+我们的职责是思考这些时间都花在了哪里
+the role is to think about where that time is going,
+
+71
+00:05:30,600 --> 00:05:32,840
+找到高效自动化这些工作的方式
+figure out ways to productively automate it,
+
+72
+00:05:33,100 --> 00:05:37,960
+把这些同步占用的人类时间转移到杠杆更高的活动上
+and move that synchronous human time into higher-leverage activities.
+
+73
+00:05:39,860 --> 00:05:46,240
+在过去那个“人类时间稀缺、且必须由人来写代码”的世界里
+In a world where human time is scarce and human time is required to produce code,
+
+74
+00:05:46,580 --> 00:05:47,480
+我们会做优先级排序
+we have a stack rank.
+
+75
+00:05:48,180 --> 00:05:50,620
+事情要么是P0，要么是P2
+Things are either P0s or P2s.
+
+76
+00:05:50,940 --> 00:05:52,760
+那些P3永远都做不完
+Those P3s will never get done.
+
+77
+00:05:53,340 --> 00:05:57,120
+然而，在一个代码免费且无限充裕的世界里
+However, in a world where code is free and infinitely abundant,
+
+78
+00:05:57,560 --> 00:05:59,840
+所有那些P3都可以立刻启动
+all those P3s get kicked off immediately,
+
+79
+00:06:00,600 --> 00:06:02,020
+甚至可以四倍并行地同时推进多个方案
+maybe 4x in parallel.
+
+80
+00:06:02,540 --> 00:06:04,580
+然后我们选出那个真正解决问题的方案
+We pick one that solves the problem,
+
+81
+00:06:05,040 --> 00:06:05,680
+直接把它合入系统
+and in it goes.
+
+82
+00:06:06,660 --> 00:06:11,880
+我有幸在OpenAI内部构建了大量智能体
+I've had the privilege of building a ton of agents internally at OpenAI to improve the
+
+83
+00:06:11,880 --> 00:06:13,180
+来提升同事们的生产力
+productivity of my co-workers,
+
+84
+00:06:13,900 --> 00:06:16,000
+而当代码是免费的时候
+and, when code is free,
+
+85
+00:06:16,460 --> 00:06:22,440
+所有这些内部工具从第一天起就可以拥有良好的本地化和国际化支持
+all these internal tools can have good localisation and internationalisation from day one.
+
+86
+00:06:22,800 --> 00:06:28,620
+我可以为伦敦、都柏林、巴黎、布鲁塞尔
+I can make tools that my colleagues in London, Dublin, Paris, Brussels,
+
+87
+00:06:28,800 --> 00:06:34,560
+苏黎世和慕尼黑的同事打造工具，让他们用母语体验
+Zurich, and Munich are able to experience in their native languages without really having
+
+88
+00:06:34,560 --> 00:06:39,400
+而几乎不用牺牲我团队在其他方面的产能，就能做出高质量的工具
+to trade against any of my other team's capacity in order to make high-quality tools.
+
+89
+00:06:40,360 --> 00:06:45,500
+我们应该假定，那些我们在软件工程中最看重、最熟悉、最擅长的部分
+We should be working with the assumption that the best parts of software engineering that
+
+90
+00:06:45,500 --> 00:06:51,200
+在我们构建的任何产品中、在任何时候都可以被实现
+we all know, live, and breathe are available in any product that we could ever build all the time.
+
+91
+00:06:52,600 --> 00:06:55,860
+人类不再需要为具体实现操心
+Humans no longer need to concern themselves with implementation.
+
+92
+00:06:56,780 --> 00:06:58,200
+重要的已经不再是代码本身
+The important thing is not the code,
+
+93
+00:06:58,440 --> 00:07:00,780
+而是把你带到那段代码的提示词和防护栏
+but the prompt and the guardrails that got you there.
+
+94
+00:07:01,440 --> 00:07:03,500
+这就是为什么要留下“面包屑”
+This is why leaving breadcrumbs,
+
+95
+00:07:03,660 --> 00:07:09,320
+文档、架构决策记录（ADR）、以及围绕“什么是做好这件事”的角色导向文档
+documentation, ADRs, persona-oriented documentation around what a good job looks like,
+
+96
+00:07:09,700 --> 00:07:12,760
+还有所有历史工单和代码评审记录
+all the historical logs of tickets and code reviews,
+
+97
+00:07:13,040 --> 00:07:17,000
+正是这些过程，带领你和你的团队走到了今天的代码和产品
+this is the process that got you and your teams to the code and products that you have
+
+98
+00:07:17,000 --> 00:07:21,660
+同样也需要用在你的智能体身上，才能把它们带到同样的高度
+today, and this is what needs to happen in order to get your agents there as well.
+
+99
+00:07:22,740 --> 00:07:25,140
+你的工作是构建系统
+Your job is to build systems,
+
+100
+00:07:25,680 --> 00:07:29,160
+构建软件和组织结构，让你的团队能够取得成功
+software, and structures that enable your team to be successful,
+
+101
+00:07:29,740 --> 00:07:35,640
+而要做到这一点，我们需要让那些驱动具体实现的智能体也能清晰理解这些内容
+and, to do that, we need to make them legible to those agents that are driving the implementation.
+
+102
+00:07:36,400 --> 00:07:39,480
+这意味着要以一种对智能体来说天然友好的方式来组织这些内容
+That means structuring them in a way that is native to the agents,
+
+103
+00:07:40,260 --> 00:07:43,440
+用一种尊重稀缺上下文的方式来撰写它们
+writing them in a way that is respecting of scarce context,
+
+104
+00:07:43,580 --> 00:07:45,860
+因为上下文也是这里另一种稀缺资源
+which is this other scarce resource here,
+
+105
+00:07:46,340 --> 00:07:50,580
+并且要想办法让完成任务所需的那些Token更容易被预测
+and figuring out ways to make the tokens that are required to do the job easy to predict.
+
+106
+00:07:51,060 --> 00:07:55,320
+这意味着要尽可能让事物保持一致，从而限制模型在完成任务时需要激活的
+That means making things the same as much as possible so we can limit the amount of
+
+107
+00:07:55,320 --> 00:07:58,360
+注意力数量
+attention the model needs to activate in order to do the job.
+
+108
+00:07:59,540 --> 00:08:02,500
+在这个世界里，大规模重构是免费的
+Large-scale refactoring in this world is free,
+
+109
+00:08:02,840 --> 00:08:06,500
+所以让事物保持一致是你们完全可以做到的事情
+so making things the same is something that you are all able to do.
+
+110
+00:08:06,980 --> 00:08:11,560
+再也不会出现一个迁移悬而未决六个月、你迟迟搞不定
+There's never going to be a migration that hangs open for six months now that you can't
+
+111
+00:08:11,560 --> 00:08:13,340
+因为你没法处理完代码库最后那一部分的情况
+get the last parts of the codebase to do,
+
+112
+00:08:13,780 --> 00:08:16,880
+因为你可以直接启动15个智能体来把这项工作推进到完成
+because you can just fire off 15 agents to drive that work to completion.
+
+113
+00:08:17,380 --> 00:08:19,660
+这才叫做做一次迁移，对吧
+This is what it means to have a migration, right?
+
+114
+00:08:19,740 --> 00:08:20,700
+现在我们可以把它们都做完
+We can finish them now.
+
+115
+00:08:21,640 --> 00:08:23,400
+加油 太棒了 太棒了 鼓掌
+Come on. That's good. That's good. Clap!
+
+116
+00:08:27,890 --> 00:08:28,810
+这里有点像是
+There's sort of this,
+
+117
+00:08:28,830 --> 00:08:33,650
+一个关于“做好一件事到底意味着什么”的元认识论问题
+like, meta epistemological question here about what it means to do a good job,
+
+118
+00:08:34,290 --> 00:08:37,650
+而作为一名软件工程师把事情做好是很难的
+and doing a good job as a software engineer is hard.
+
+119
+00:08:38,630 --> 00:08:45,510
+这需要我们在行业里工作多年，才能真正内化什么叫写出高质量、可维护的
+It requires us years of being in the industry to fully internalise what it means to write high-quality, maintainable,
+
+120
+00:08:45,750 --> 00:08:51,510
+让队友能够在其之上继续构建的可靠代码会为整个代码库不断积累杠杆效应
+reliable code that our teammates are able to build on top of that is going to accrue leverage to the codebase.
+
+121
+00:08:52,610 --> 00:08:59,530
+想把一个补丁做好，可能需要在过程中围绕那些被严重欠定义的
+To do a single patch well probably requires 500 little decisions along the way around the
+
+122
+00:08:59,530 --> 00:09:04,290
+非功能性需求做出大约500个细小决策，才能产出好代码
+underspecified non-functional requirements that go into producing good code.
+
+123
+00:09:05,390 --> 00:09:07,850
+智能体、模型在训练过程中
+The agents, the models during their training,
+
+124
+00:09:08,210 --> 00:09:13,010
+已经见过数万亿行代码，里面对这些非功能性需求做出了各种可能的
+have seen trillions of lines of code that make every possible choice of those
+
+125
+00:09:13,010 --> 00:09:15,790
+决策，远超你能想象的范围
+non-functional requirements that you could ever imagine.
+
+126
+00:09:16,310 --> 00:09:19,650
+所以我们的工作就是把这些非功能性需求具体化
+So it's our job to specify those non-functional requirements,
+
+127
+00:09:19,990 --> 00:09:24,950
+以一种智能体能看懂的方式把它们写下来，让它们知道什么才叫做好、
+to write them down in a way that the agents can see this is what it is to do a good,
+
+128
+00:09:25,130 --> 00:09:27,890
+可接受、能被合并进主干的补丁
+acceptable job that's going to produce a merged patch.
+
+129
+00:09:28,650 --> 00:09:30,510
+如果智能体没有做到这一点
+And if the agents aren't doing that,
+
+130
+00:09:30,790 --> 00:09:36,390
+那就需要我们想办法细化并约束它们的输出，使得它们写出的代码
+it's our job to figure out ways to refine and restrict their output such that the code
+
+131
+00:09:36,390 --> 00:09:38,070
+是可接受的
+they write is acceptable.
+
+132
+00:09:38,670 --> 00:09:40,870
+你可以直接说不要产出劣质代码
+You can just simply say do not produce slop.
+
+133
+00:09:41,390 --> 00:09:43,770
+不接受劣质代码，你的代码库里就不会出现劣质代码
+Don't accept slop, you won't get slop in your codebase.
+
+134
+00:09:44,150 --> 00:09:48,990
+但要做到这一点，就需要在短期内牺牲一点开发速度，退一步或者
+But to do that requires taking short-term velocity hits in order to back up or
+
+135
+00:09:48,990 --> 00:09:54,030
+深入挖掘某个任务，弄清楚智能体在你的环境中到底卡在了哪里
+double-click into a task to figure out what it is the agents are struggling with in your
+
+136
+00:09:54,030 --> 00:09:58,870
+然后设好护栏，让它们不再犯那些错误
+environment, put the guardrails in place so they stop making those mistakes,
+
+137
+00:09:59,870 --> 00:10:04,930
+接着再想办法退回到更高层，把时间花在更高杠杆的活动上
+and then figure out ways to step back and spend your time on higher leverage activities
+
+138
+00:10:04,930 --> 00:10:07,830
+一旦你在短期内解决了一些阻塞问题
+once you solve some of the blockers in the short-term.
+
+139
+00:10:09,310 --> 00:10:11,930
+当我思考如何用这种方式赋能我的团队时
+When I think about empowering my team in this way,
+
+140
+00:10:12,770 --> 00:10:15,210
+每个人在自己带来的那部分能力上都是专家
+everyone is an expert in what it is they bring.
+
+141
+00:10:15,670 --> 00:10:23,310
+我有一个多元化的全栈团队，有擅长前端架构的、擅长后端可扩展性的、擅长产品思维的专家
+I have a diverse full-stack team that is experts in front-end architecture, back-end scalability, being product-minded,
+
+142
+00:10:23,810 --> 00:10:29,710
+每一种不同的角色都带来不同的理解，丰富了我团队的技能结构
+and each one of those different personas fleshes out the skill set of my team by bringing a different understanding,
+
+143
+00:10:30,410 --> 00:10:33,450
+为那些非功能性需求提供了不同的一套解决方案
+a different set of solves for those non-functional requirements.
+
+144
+00:10:34,150 --> 00:10:39,450
+让队友把这些写下来，实际上就意味着每个驱动智能体的工程师
+Getting teammates to write those down actually means that every engineer driving agents
+
+145
+00:10:39,450 --> 00:10:42,150
+都能获得我团队里每一个人的最佳经验
+gets the best of every single person on my team.
+
+146
+00:10:42,630 --> 00:10:49,730
+我不需要被低信号的代码评审卡住，只为搞清楚什么叫写出一个好的质量保障计划
+I don't need to block on low-signal code review in order to learn what it means to write a good QA plan.
+
+147
+00:10:50,810 --> 00:10:55,610
+只要让团队里有一位工程师把这件事以一种持久的方式文档化，就意味着每条智能体
+To have one engineer on my team document that in a durable way means every agent
+
+148
+00:10:55,610 --> 00:10:58,170
+轨迹都会得到一个好的质量保障计划
+trajectory is going to get a good QA plan,
+
+149
+00:10:58,510 --> 00:11:02,790
+而且我们只需要用一次高杠杆的方式完成它，之后就可以在此基础上不断叠加
+and we can do this once in a high-leverage way that we are able to stack on top of.
+
+150
+00:11:05,690 --> 00:11:08,250
+那么，我们要如何让智能体把事情做好呢
+So, how can we get the agents to do a good job?
+
+151
+00:11:08,370 --> 00:11:13,030
+我们有哪些工具和技术，能够本质上对智能体进行提示注入
+What are some of the tools and techniques we have in order to essentially prompt-inject
+
+152
+00:11:13,030 --> 00:11:17,590
+不断提醒它们，在那些非功能性需求上做出我们期望的
+our agents and continually remind them of what it means to make those specific choices
+
+153
+00:11:17,590 --> 00:11:20,310
+具体选择到底意味着什么
+that we expect around those non-functional requirements?
+
+154
+00:11:21,010 --> 00:11:22,730
+我们有很多种方式可以做到这一点
+There are a bunch of ways we can do this.
+
+155
+00:11:23,390 --> 00:11:25,810
+我们可以写好AGENTS.md文件
+We can write good AGENTS.md files.
+
+156
+00:11:25,810 --> 00:11:30,730
+不过，随着自动压缩这一能力不断提升
+However, with auto-compaction, which is a thing that has continued to improve,
+
+157
+00:11:31,810 --> 00:11:34,630
+GPT-4.1和Codex在自动压缩方面表现非常出色
+GPT-4.1 and Codex are fantastic at auto-compaction.
+
+158
+00:11:35,470 --> 00:11:42,950
+我的Twitter上有照片，是我把笔记本绑在车后座上
+I've got pictures on my Twitter of me strapping my laptop into the back of my car so I can
+
+159
+00:11:42,950 --> 00:11:46,090
+这样我在上下班通勤时还能继续跑推理
+continue running inference while I'm commuting to and from work.
+
+160
+00:11:47,070 --> 00:11:55,050
+在这样的世界里，你必须基于这样一种预期来构建系统：上下文会随着时间被逐步换出
+In this world, you have to kind of build for that expectation that context will get paged out over time.
+
+161
+00:11:55,530 --> 00:11:59,850
+当智能体执行任务时，我们需要不断刷新上下文
+We need to be continually refreshing context as the agent goes about doing a task,
+
+162
+00:12:00,450 --> 00:12:05,470
+实现这一点的方法之一，是让审查型智能体在过程中持续查看代码
+and the ways we can do that are by having reviewer agents look at the code along the way
+
+163
+00:12:05,470 --> 00:12:09,210
+从“什么叫成功”的视角来审视它，对吧
+through the lens of what it means to be successful, right?
+
+164
+00:12:09,630 --> 00:12:14,070
+在我们的代码库里，有安全和可靠性审查智能体在持续运行
+We have security and reliability review agents in our codebase that are continually
+
+165
+00:12:14,070 --> 00:12:18,970
+它们作为每次持续集成（CI）推送的一部分，查看变更中的文档
+running as part of every push in CI that look at those documentations in the proposed
+
+166
+00:12:18,970 --> 00:12:21,530
+并做一些简单的检查，比如说
+patch and do simple things like say,
+
+167
+00:12:21,730 --> 00:12:25,570
+这段网络代码是否设置了超时和重试
+are there timeouts and retries on this bit of network code?
+
+168
+00:12:25,970 --> 00:12:30,730
+新引入的代码接口是否足够安全、几乎不可能被误用
+Has the code that has been introduced have a secure interface that is impossible to misuse?
+
+169
+00:12:31,930 --> 00:12:37,830
+我敢肯定在座各位都曾因为某段网络代码在生产环境失败而被报警
+I'm sure everyone here has been paged at some point for network code that failed in
+
+170
+00:12:37,830 --> 00:12:42,130
+导致故障，而其实只要加个重试和超时就能补救
+production, causing an outage that could have been remediated by a retry and a timeout.
+
+171
+00:12:42,890 --> 00:12:46,870
+我自己就干过这种事：加上重试和超时
+I know I'm guilty of putting that retry and timeout in,
+
+172
+00:12:47,350 --> 00:12:50,070
+把这个修复合并，然后就再也没管过这件事
+merging the bug fix, and otherwise ignoring that.
+
+173
+00:12:50,510 --> 00:12:55,510
+在这个非功能性需求上，我既不是一个可靠的审查者，也不是一个可靠的代码作者
+I am not a reliable reviewer or author of code with respect to this non-functional requirement.
+
+174
+00:12:56,030 --> 00:13:00,030
+然而，只要花点时间写一些文档
+However, taking the time to write some docs,
+
+175
+00:13:00,370 --> 00:13:04,710
+再写一个针对我代码库定制的代码检查（lint），去检查每一次我调用
+write a lint that is bespoke to my codebase that is going to look at every time I call
+
+176
+00:13:04,710 --> 00:13:09,750
+fetch 时是否包裹了重试和超时，就意味着我已经以一种持久的方式
+fetch to make sure that there's a retry and a timeout wrapped around it means I've durably
+
+177
+00:13:09,750 --> 00:13:14,810
+解决了这个问题，而我之所以能做到，是因为我依赖这样一个公理：代码是免费的
+solved this problem, and I'm able to do it because I lean on this axiom that code is free,
+
+178
+00:13:15,290 --> 00:13:17,250
+智能体能够把事情做好
+that the agents are able to do a good job,
+
+179
+00:13:17,510 --> 00:13:22,090
+我可以彻底迁移整个代码库，一次性、持久地解决这个问题
+that I can completely migrate the codebase to solve this problem durably once and for all.
+
+180
+00:13:23,070 --> 00:13:26,590
+而要以这种方式运作
+And, in order to kind of operate in this way,
+
+181
+00:13:27,090 --> 00:13:33,190
+我们需要退一步，审视智能体和人类在代码库中一再犯下的那些持久性失败类型
+we need to step back and look at the durable classes of failures that the agents and the
+
+182
+00:13:33,190 --> 00:13:36,070
+看看哪些错误在反复出现
+humans in the codebase are making time after time,
+
+183
+00:13:37,010 --> 00:13:39,570
+弄清楚我们为什么总要在这些问题上花时间
+figure out why we're spending time on it,
+
+184
+00:13:40,050 --> 00:13:43,630
+然后设计一个方案，系统性地消除这一类不良行为
+devise a solution to systematically eliminate this class of misbehavior,
+
+185
+00:13:44,430 --> 00:13:46,010
+接着继续观察
+and then continue to observe,
+
+186
+00:13:46,530 --> 00:13:50,250
+迭代改进，并在那些非功能性需求上做出更多决策
+refine, and make additional choices on those non-functional requirements.
+
+187
+00:13:51,410 --> 00:13:57,710
+我在这里用的一个非常巧妙的小技巧是：你也可以针对源代码本身写测试
+One really neat trick I use here is that you can write tests about the source code as well
+
+188
+00:13:57,710 --> 00:14:00,050
+这些测试是独立于代码检查（lint）的，对吧
+that are separate from lints, right?
+
+189
+00:14:00,250 --> 00:14:02,090
+如果我们知道上下文是有限的
+If we know that context is limited,
+
+190
+00:14:02,890 --> 00:14:07,950
+我们就可以写一个测试，限制文件长度不能超过350行
+we can write a test that limits the fact that files are no longer than 350 lines.
+
+191
+00:14:08,630 --> 00:14:11,290
+我们是在让代码库适配驾驭式工程
+We're adapting our codebase to the harness,
+
+192
+00:14:11,590 --> 00:14:16,710
+适配模型，做一些工程化工作，让它在上下文使用上更高效，从而从现有模型能力中
+to the models, to do a little bit of engineering to be context-efficient and squeeze more
+
+193
+00:14:16,710 --> 00:14:19,430
+挤出更多价值
+juice out of the model capability that we have today.
+
+194
+00:14:21,730 --> 00:14:28,150
+我们还能做的另一件事，是提供好的错误信息，给出真正可执行的
+The other things we can think about are providing good error messages that give actual
+
+195
+00:14:28,150 --> 00:14:32,890
+补救步骤，告诉模型和人类接下来该怎么做
+remediation steps to the model and to humans for how to proceed next.
+
+196
+00:14:33,410 --> 00:14:38,290
+仅仅说“我们有一个代码检查（lint）失败，因为我们在循环里等待”是不够的
+It's not enough to say we've got a lint failure because we're waiting in a loop,
+
+197
+00:14:38,710 --> 00:14:42,790
+或者说“在代码库的某个深层位置有个unknown”也不够
+or that we have an unknown at this deep part of the codebase,
+
+198
+00:14:42,830 --> 00:14:45,130
+以及“为什么模型写了一个叫做isRecord的函数”这种说法也不够
+and why is the model writing a function called isRecord?
+
+199
+00:14:45,610 --> 00:14:52,350
+我们需要做的是通过一次代码检查（lint）或一次测试失败提供一个提示，说
+What we need to do is provide a prompt via a lint or a test failure that says,
+
+200
+00:14:52,630 --> 00:14:55,330
+不不不，你这里根本不应该出现 unknown
+no, no, no, you shouldn't have an unknown here at all,
+
+201
+00:14:55,550 --> 00:14:58,470
+因为我们的做法是只做解析，而不是在边界做校验
+because we parse, don't validate at the edge,
+
+202
+00:14:58,670 --> 00:15:01,630
+而且你这里显然有一个从 Zod 推导出来的类型
+and you certainly have a type here which was derived from Zod,
+
+203
+00:15:02,090 --> 00:15:04,410
+这是支撑我们 AI 未来的关键基础设施
+load-bearing infrastructure for our AI future.
+
+204
+00:15:09,610 --> 00:15:11,110
+你可以直接通过提示来驱动一切
+You can just prompt things.
+
+205
+00:15:11,950 --> 00:15:14,550
+我今天在这里谈到的所有东西本质上都是提示
+Everything I've talked about here today is a prompt.
+
+206
+00:15:14,990 --> 00:15:17,790
+你完全不用改动模型权重就能做到这些
+You can do this without touching the model weights at all.
+
+207
+00:15:19,730 --> 00:15:24,970
+有点好笑的插曲是，看起来我们在这方面的每一次进步
+Kind of a funny digression here is it seems like each advancement we've had in the
+
+208
+00:15:24,970 --> 00:15:30,350
+在与这些模型交互的代码复杂度上，既来自于
+complexity of the way we write code to interact with these models comes from both
+
+209
+00:15:30,350 --> 00:15:37,130
+模型能力的提升，也来自于我们往模型里注入提示的方式越来越多样、越来越细分
+increasing capability in the models and increasingly niche ways for injecting prompts into those models.
+
+210
+00:15:37,750 --> 00:15:40,210
+提示，你们肯定都知道，就是提示
+Prompts, I'm sure you're aware, are prompts.
+
+211
+00:15:40,790 --> 00:15:43,630
+Powers，是提示；规则文件，是提示
+Powers, prompts. Rules files, prompts.
+
+212
+00:15:44,050 --> 00:15:48,790
+技能，是提示；我刚才说的这些代码检查报错信息，也是提示
+Skills, prompts. These lint error messages that I'm talking about, prompts.
+
+213
+00:15:48,970 --> 00:15:53,830
+审查智能体会在 PR 上插入评论，而我们要求智能体在
+Review agents that inject comments onto the PR that we require the agent to address before
+
+214
+00:15:53,830 --> 00:15:55,450
+它有资格发起合并提案之前先处理完这些评论
+it is able to propose it for merge.
+
+215
+00:15:55,810 --> 00:15:56,170
+这些都是提示
+Prompts.
+
+216
+00:15:57,350 --> 00:16:00,810
+你会发现有很多方式可以把提示嵌入到你的代码里
+You're going to find lots of ways to insert prompts into your code.
+
+217
+00:16:01,330 --> 00:16:07,950
+其中一种方式是把智能体 SDK 嵌入到你的测试里
+And one way you can do that is by embedding agent SDKs into your tests that are going to
+
+218
+00:16:07,950 --> 00:16:12,910
+让它用嵌入代码中的提示来审查整个代码库是否达标
+review the code base for acceptability using prompts that get embedded into the code.
+
+219
+00:16:13,450 --> 00:16:16,570
+如果我发现自己花了大量时间在写提示上
+And if I find myself spending a ton of time writing prompts,
+
+220
+00:16:17,250 --> 00:16:19,590
+我们其实也可以把这件事外包给智能体来做
+we can actually shell out to the agent for that as well.
+
+221
+00:16:21,250 --> 00:16:26,270
+我把 Codex 指向我们在 OpenAI 开发者
+I've pointed codex at all of the prompting cookbooks we have on the open AI developer
+
+222
+00:16:26,270 --> 00:16:30,470
+指南里所有关于提示的“菜谱”，让它从中综合出一个“如何写提示”的技能
+guide and told them to synthesize a skill out of them for how to write prompts,
+
+223
+00:16:30,710 --> 00:16:34,690
+这就意味着，当我需要通过编写提示来提升本地代码里的智能体表现时
+which means when I find a need to write prompts in order to improve my agent performance
+
+224
+00:16:34,690 --> 00:16:39,350
+我会用这个技能来写提示，而这个技能本身是我让智能体阅读这些提示之后
+locally in the code, I use the skill to write prompts that I wrote with the agent looking
+
+225
+00:16:39,350 --> 00:16:40,670
+帮我写出来的提示，用来写提示
+at the prompts to write the prompts.
+
+226
+00:16:45,350 --> 00:16:49,190
+你注入到代码仓库里的所有这些杠杆
+All the leverage that you're encoding into your repository,
+
+227
+00:16:49,710 --> 00:16:53,310
+通过这种方式在你的团队和智能体之间层层叠加，效果极其可观
+your team, and the agents in this way stacks incredibly well.
+
+228
+00:16:53,890 --> 00:17:00,230
+回到之前那个观点：我团队里一个有产品思维的工程师
+To kind of pull back to this idea that a single product-minded engineer on my team was
+
+229
+00:17:00,230 --> 00:17:01,630
+就能给我们带来巨大的提升
+able to give us a big lift,
+
+230
+00:17:02,770 --> 00:17:05,250
+因为他们知道一份好的质量保障计划意味着什么
+they know what it means to write a good QA plan.
+
+231
+00:17:05,610 --> 00:17:06,930
+要写出一份好的质量保障计划
+To write a good QA plan,
+
+232
+00:17:07,010 --> 00:17:09,750
+你必须把你所有的功能都文档化
+though, you have to document all the features that you have,
+
+233
+00:17:09,950 --> 00:17:11,150
+把关键的用户路径写清楚
+the critical user journeys,
+
+234
+00:17:11,410 --> 00:17:13,730
+以及用户是如何使用你的应用
+and how users engage with your applications,
+
+235
+00:17:14,430 --> 00:17:16,570
+包括 Web 应用、API 和各种服务
+web apps, APIs, and services.
+
+236
+00:17:17,610 --> 00:17:22,970
+一旦你把“如何写一份好的质量保障计划”这些内容写下来，并且要求所有
+Once you write those down on how to write a good QA plan with the expectation that all
+
+237
+00:17:22,970 --> 00:17:25,170
+面向用户的工作都必须附带一份质量保障计划
+user-facing work has a QA plan,
+
+238
+00:17:25,510 --> 00:17:31,190
+那么审查智能体就能基于这些内容，对“如何证明你
+now a review agent is able to assert expectations around what it means to prove that you
+
+239
+00:17:31,190 --> 00:17:32,530
+已经有效实现了这个功能”提出明确的要求
+have effectively written the feature.
+
+240
+00:17:33,030 --> 00:17:38,890
+一份质量保障计划会说明 PR 里应该附上哪些媒体资料，方便人类和智能体
+A QA plan indicates what media should be attached to the PR for the humans and agents to
+
+241
+00:17:38,890 --> 00:17:40,470
+判断你是不是把事情做好了
+know that you've done a good job,
+
+242
+00:17:40,730 --> 00:17:44,210
+结果就是我会更信任这些输出
+which has the consequence of me trusting the output more,
+
+243
+00:17:44,610 --> 00:17:46,550
+不再需要一直在旁边盯着智能体
+needing to shoulder surf the agent less,
+
+244
+00:17:47,350 --> 00:17:53,130
+进一步把自己从流程中抽离，把越来越多的工作交给智能体
+and removing myself from the loop even more to delegate more and more of the work to agents.
+
+245
+00:17:53,630 --> 00:18:01,870
+而这一切只是为了确保智能体拥有完成整项工作的工具、Token 和上下文
+And all of this is just making sure the agents have the tools and tokens and context to do
+
+246
+00:18:01,870 --> 00:18:06,150
+从而让我不再需要作为一个同步驱动者参与其中
+the full job, to remove myself from the need as a synchronous driver.
+
+247
+00:18:07,110 --> 00:18:13,470
+这些模型渴望获得更多的 token，我们可以把代码库流程化，让它们不断从中获取 token 来推动自身前进
+The models crave tokens, we can operationalize our code base to give them tokens to drive them forward,
+
+248
+00:18:13,730 --> 00:18:17,910
+再通过子智能体和其他各种技术来不断打磨智能体的输出
+using sub-agents and all these other techniques to refine the agent output.
+
+249
+00:18:20,360 --> 00:18:22,380
+我今天非常兴奋地想告诉大家
+I'm excited to let you all know today,
+
+250
+00:18:22,700 --> 00:18:23,880
+用你们一贯的方式
+in the way you all do,
+
+251
+00:18:24,140 --> 00:18:25,380
+你们可以直接去把东西做出来
+that you can just go build things.
+
+252
+00:18:26,100 --> 00:18:30,790
+不要犹豫，把自己从流程中抽离，让智能体完成整条工作链
+Do not hesitate to remove yourselves from the loop by getting the agents to do the full
+
+253
+00:18:30,790 --> 00:18:31,790
+因为它们做得到
+job, because they can.
+
+254
+00:18:32,470 --> 00:18:32,910
+谢谢大家
+Thank you.
+
+255
+00:18:34,310 --> 00:18:37,830
+我们非常高兴请到今天的嘉宾
+We're very excited to bring on our guest.
+
+256
+00:18:38,070 --> 00:18:39,710
+今天我们请到了瑞安·洛波波洛
+We've got Ryan Lopopolo today,
+
+257
+00:18:39,790 --> 00:18:40,650
+他刚刚做完主题演讲
+he just gave the keynote.
+
+258
+00:18:41,330 --> 00:18:46,310
+他是一个非常精彩的演讲者，这位仁兄在 OpenAI 全力投入高强度工程实践
+Very exciting speaker. The man is full send hyperengineering at OpenAI,
+
+259
+00:18:46,610 --> 00:18:48,390
+先简单介绍一下背景
+so a little bit of background.
+
+260
+00:18:48,970 --> 00:18:50,890
+我们之前和他录过一期 Latent Space 节目
+We did a Latent Space episode with him,
+
+261
+00:18:50,950 --> 00:18:52,110
+前几天刚刚发布
+we shipped it the other day.
+
+262
+00:18:52,510 --> 00:18:55,450
+故事是这样的：他写了一篇非常棒的文章，叫《驾驭式工程》
+The story, he wrote this great article called Harness Engineering,
+
+263
+00:18:55,890 --> 00:18:57,790
+我们当时就觉得，哇，这简直是纯金干货
+and we're like, wow, this is pure gold.
+
+264
+00:18:57,910 --> 00:18:58,730
+所以就把他请到了播客上
+We have him on the podcast.
+
+265
+00:18:59,270 --> 00:19:00,470
+他是个 Token亿万富翁
+He's a token billionaire,
+
+266
+00:19:00,850 --> 00:19:03,470
+每天要花掉超过十亿个输出 Token
+spending over a billion output tokens a day.
+
+267
+00:19:03,730 --> 00:19:04,830
+差不多就是一千多美元
+That's like over $1,000.
+
+268
+00:19:05,330 --> 00:19:07,170
+所以你知道的，这位是真的在实战中狂用
+So, you know, man is really living it.
+
+269
+00:19:07,710 --> 00:19:09,070
+我们希望把这场活动办得有趣一点
+We want to keep this exciting,
+
+270
+00:19:09,290 --> 00:19:11,570
+多问一些好问题、有意思的问题
+ask good questions, ask interesting stuff,
+
+271
+00:19:11,650 --> 00:19:12,870
+问一些大家能从中学到东西的问题
+ask things that people can learn from.
+
+272
+00:19:13,050 --> 00:19:14,790
+那现在，让我们欢迎瑞安上台
+But, you know, let's welcome Ryan onto the stage.
+
+273
+00:19:19,900 --> 00:19:20,900
+大家好，最近怎么样
+Hi, folks, how's it going?
+
+274
+00:19:21,060 --> 00:19:21,900
+很高兴能来到这里
+Excited to be here.
+
+275
+00:19:22,940 --> 00:19:24,160
+伦敦这次之行非常棒
+London has been fantastic,
+
+276
+00:19:24,340 --> 00:19:29,020
+我也很期待和大家分享我们在做什么、我们是怎么工作的
+and excited to walk through what it is that we do and how we work here.
+
+277
+00:19:29,400 --> 00:19:30,280
+我想你得再往这边走一点
+I think you have to come on.
+
+278
+00:19:30,380 --> 00:19:31,880
+摄像机就在这里
+The camera is just here.
+
+279
+00:19:32,080 --> 00:19:33,660
+我刚刚被那个二维码晃到了眼
+I got blinded by the QR code.
+
+280
+00:19:35,660 --> 00:19:37,820
+先说一下安排，我们大概有一个小时
+So, background, we have about an hour.
+
+281
+00:19:38,900 --> 00:19:41,320
+扫一下这个二维码，你就能打开 Slido
+Scan this QR code, you should get Slido.
+
+282
+00:19:41,820 --> 00:19:43,440
+通过 Slido 你可以提问
+Slido will let you ask questions.
+
+283
+00:19:43,880 --> 00:19:45,160
+如果你看到有意思的问题
+If you see interesting stuff,
+
+284
+00:19:45,260 --> 00:19:47,240
+可以给它点个赞
+you can thumbs them up,
+
+285
+00:19:47,320 --> 00:19:48,380
+我们会尽量把这些问题都回答到
+and we'll try to get through them.
+
+286
+00:19:48,560 --> 00:19:49,940
+不幸的是，第一个问题
+Unfortunately, the first one,
+
+287
+00:19:50,260 --> 00:19:51,940
+我不太能直接做，但我们还是先开始吧
+I can't super do, but let's just kick it off.
+
+288
+00:19:52,380 --> 00:19:54,440
+瑞安，你能给我们展示一下你真实的工作环境吗
+Ryan, can you show us your actual working setup?
+
+289
+00:19:56,340 --> 00:20:02,160
+呃，可以啊，就这样：沙滩、玛格丽塔鸡尾酒、Linear，对吧
+Um, yeah, here. Beach, margarita, linear, right?
+
+290
+00:20:02,500 --> 00:20:07,180
+呃，我先说一下我们发的那期播客
+Um, I'll say what's the podcast we put out.
+
+291
+00:20:07,320 --> 00:20:08,760
+里面我们聊到了一些具体的工作内容
+We go through some of the work.
+
+292
+00:20:08,980 --> 00:20:09,980
+不过如果你想在这里再聊聊的话
+But if you want to talk about it,
+
+293
+00:20:10,020 --> 00:20:13,280
+我想就算不真的给我们看屏幕，也可以讲讲你的工作流是怎样的
+I guess without actually showing us what's your workflow like,
+
+294
+00:20:13,360 --> 00:20:16,120
+你的环境是怎样的，你通常是怎么着手处理一个任务的
+what's your setup, how do you approach a task?
+
+295
+00:20:16,940 --> 00:20:24,440
+好的，我和我的团队的工作方式是从工单开始的，对吧
+Sure. So, the way me and my team work is to start with tickets, right?
+
+296
+00:20:24,500 --> 00:20:26,620
+我们会把要做的事情拆成一块一块的工作单元
+We have chunks of work that we want to do,
+
+297
+00:20:26,760 --> 00:20:28,180
+比如我们想给应用加的功能
+features we want to add to our apps,
+
+298
+00:20:28,320 --> 00:20:29,840
+我们想要做的可靠性相关工作
+reliability work that we want to do.
+
+299
+00:20:30,600 --> 00:20:32,320
+我们把那张工单交给一个智能体
+We give that ticket to an agent,
+
+300
+00:20:32,420 --> 00:20:36,700
+同时再给它配上几项能让它操作我们应用的技能
+along with a couple of skills that enable it to manipulate our app.
+
+301
+00:20:37,580 --> 00:20:40,880
+我们希望开发流程的入口是Codex
+We want the entry point to the development process to be Codex,
+
+302
+00:20:40,980 --> 00:20:43,660
+而不是我们在它周围搭建的某个环境
+not an environment which we build around it.
+
+303
+00:20:43,880 --> 00:20:48,060
+所以我们有点像是从外向里地做事对吧
+So, we kind of do things outside-in, right?
+
+304
+00:20:48,520 --> 00:20:50,700
+Codex 是入口点，就像你本来也会是一样
+Codex is the entry point, the same way you would be,
+
+305
+00:20:50,880 --> 00:20:51,820
+我们给它提供工具
+and we give it tools,
+
+306
+00:20:51,940 --> 00:20:53,400
+我们给它提供“怎么下厨”的指令
+we give it instructions on how to cook.
+
+307
+00:20:53,900 --> 00:20:58,160
+所以我们不是创建一个壳把我们的应用和Codex一起塞进去
+So, rather than creating a shell that our app and Codex get spawned into,
+
+308
+00:20:58,640 --> 00:21:01,060
+而是提供一个技能教Codex如何启动应用
+we have a skill that teaches Codex how to launch the app,
+
+309
+00:21:01,360 --> 00:21:05,860
+教Codex如何拉起本地可观测性栈来提供日志和遥测
+that teaches Codex how to spin up that local observability stack to give it logging and telemetry.
+
+310
+00:21:06,300 --> 00:21:13,000
+我们给它一个技能让它能启动Chrome DevTools并附加到
+We give it a skill that enables it to boot up Chrome DevTools and attach to the
+
+311
+00:21:13,000 --> 00:21:18,460
+应用上去 通过一个本地CLI连接到我们运行的某个守护进程
+application with a local CLI that will connect via some daemon that we have.
+
+312
+00:21:18,920 --> 00:21:24,280
+所以我们设置代码仓库以及所有本地开发工具的整个方式
+So, the whole way we have set up the repository and all of the local DevTools is for
+
+313
+00:21:24,280 --> 00:21:25,720
+就是为了让Codex先来调用它们
+Codex to invoke them first.
+
+314
+00:21:26,560 --> 00:21:31,000
+这意味着我们在代码库里有一堆小型的迷你“驾驭器”
+That means we have kind of like a bunch of little mini-harnesses within the codebase that
+
+315
+00:21:31,000 --> 00:21:33,920
+让我们可以很容易地插入额外的护栏
+make it really easy for us to slot in additional guardrails.
+
+316
+00:21:34,900 --> 00:21:41,180
+比如一大包自定义ESLint规则 会被接入工作区里每一个pnpm包
+You know, a big package of custom ESLint rules which get wired into every pnpm package in the workspace.
+
+317
+00:21:41,800 --> 00:21:47,260
+我们还有另一种本地开发驾驭器 让我们可以添加更高层次的
+We have another sort of local dev harness that allows us to add sort of like higher level
+
+318
+00:21:47,260 --> 00:21:52,940
+整体性测试 去断言代码本身的结构 而不是只看
+holistic tests that assert the structure of the code itself rather than like either the
+
+319
+00:21:52,940 --> 00:21:54,740
+语法或代码行为
+syntax or the behavior of the code.
+
+320
+00:21:55,140 --> 00:21:56,460
+比如说
+Things like, you know,
+
+321
+00:21:57,620 --> 00:22:01,620
+包的私有性 我们技术栈不同层之间的依赖边界
+package privacy, dependency edges between different layers of our stack,
+
+322
+00:22:01,720 --> 00:22:02,440
+诸如此类的东西
+these sorts of things.
+
+323
+00:22:02,920 --> 00:22:06,680
+确保在多个文件之间
+Making sure that, you know, across multiple files,
+
+324
+00:22:06,820 --> 00:22:08,240
+Zod的schema不会重复定义
+Zod schemas are deduplicated,
+
+325
+00:22:08,400 --> 00:22:11,880
+确保我们的异步辅助函数只有一个规范实现
+that there's a single canonical implementation of like our async helpers,
+
+326
+00:22:12,420 --> 00:22:13,360
+之类的事情
+these sorts of things.
+
+327
+00:22:14,080 --> 00:22:19,100
+因为我们观察到智能体有时会倾向于优化某个包的局部
+Because, you know, the way we have seen the agents work is to sometimes optimize for local
+
+328
+00:22:19,100 --> 00:22:24,580
+一致性 而不是去用我们的共享工具库之类的东西
+coherence of a package rather than using like our shared utilities and things like that.
+
+329
+00:22:24,780 --> 00:22:26,140
+所以在观察到这种行为之后
+So having observed that behavior,
+
+330
+00:22:26,440 --> 00:22:32,300
+我们就构建了一堆伪代码检查（lint）式的源码校验工具
+we kind of have built a bunch of little pseudo-linter source code verification things that
+
+331
+00:22:32,300 --> 00:22:37,380
+把这些不良行为筛出来 这样人类在代码评审时就不用被这些问题分心
+shake out some of that bad behavior so the humans don't get distracted paying attention to that in reviews.
+
+332
+00:22:37,780 --> 00:22:46,000
+大致就是这些 但整个设置是为了让智能体来完成工作 而人类不必去追踪
+Stuff like that. But the setup optimizes for the agent to do the job and for the humans to not have to keep
+
+333
+00:22:46,000 --> 00:22:47,840
+代码库里那些高频变动
+track of the high churn in the code base.
+
+334
+00:22:48,620 --> 00:22:52,280
+我们基本把杠杆集中在五到十个技能上
+We kind of centralize our leverage around 5 to 10 skills.
+
+335
+00:22:52,960 --> 00:22:55,080
+我们不会在技能数量上铺得特别开
+We don't go super wide on skills,
+
+336
+00:22:55,180 --> 00:22:57,640
+而是更倾向于把现有技能打磨得更好
+preferring to make the existing skills better.
+
+337
+00:22:58,160 --> 00:23:03,540
+因为至少在我看来 仓库里的基础设施
+Because at least I find that the infrastructure within the repository,
+
+338
+00:23:03,740 --> 00:23:06,420
+以及所有本地开发工具变化都非常频繁
+all the local developer tools change super frequently.
+
+339
+00:23:06,980 --> 00:23:10,000
+而我其实没有精力去追踪这些变化
+And I don't really have the bandwidth to keep track of this.
+
+340
+00:23:10,120 --> 00:23:16,320
+所以我们把这些复杂度都藏在那些人类需要调用的技能下面
+So we hide all that complexity beneath the skills that the human has to invoke and let the
+
+341
+00:23:16,320 --> 00:23:17,520
+让智能体自己去搞定
+agent just kind of figure it out.
+
+342
+00:23:17,920 --> 00:23:24,280
+有个挺有意思的例子是 当我们从直接使用Chrome DevTools协议
+One kind of neat thing here is when we moved from using Chrome DevTools protocol directly
+
+343
+00:23:24,280 --> 00:23:25,860
+迁移到用这么一个守护进程方案时
+to having this like daemon thing,
+
+344
+00:23:26,000 --> 00:23:28,420
+我有大概三周时间都不知道这事已经发生了
+I didn't know that had happened for like three weeks.
+
+345
+00:23:29,000 --> 00:23:32,000
+但一切都完全没问题 因为Codex照样能完成任务
+It was like totally fine because Codex was able to do the thing,
+
+346
+00:23:32,040 --> 00:23:35,020
+靠的就是我们已有的文档和相关内容
+you know, with the documentation and things that we had in place.
+
+347
+00:23:35,720 --> 00:23:38,080
+其中一部分内容 你可以在你的文章里看到更详细的说明
+And part of this, you can get more detail in your article.
+
+348
+00:23:38,220 --> 00:23:41,260
+先补点背景 你写过一篇很棒的文章叫《驾驭式工程》
+So some background. You wrote a great piece called Harness Engineering.
+
+349
+00:23:41,560 --> 00:23:44,660
+里面有整整一节在讲你是如何思考技能这件事的
+There's a whole section in there on how you thought about skills,
+
+350
+00:23:44,980 --> 00:23:48,060
+是要搞上千个技能 还是把它简化成少数几个
+thousands of skills versus simplifying it to just quite a few.
+
+351
+00:23:48,440 --> 00:23:54,660
+好 那继续说 你是怎么避免自己在驾驭器上过度设计的
+But okay. Continuing on, how do you stop yourself from overengineering harnesses?
+
+352
+00:23:54,840 --> 00:24:01,260
+还有个类似的追问是 你会经常给自己做一些小工具吗 如果会的话
+And a little bit of a similar follow up is do you often build small tools for yourself, if ever?
+
+353
+00:24:01,900 --> 00:24:03,240
+你会做定制工具吗
+Do you build custom tools?
+
+354
+00:24:03,860 --> 00:24:08,500
+会的 我觉得这其实有点在指向所谓“苦涩教训”对吧
+Yeah. So I think this is kind of gesturing in the direction of the bitter lesson here, right?
+
+355
+00:24:08,560 --> 00:24:13,760
+也就是我要如何确保我做的工作不会因为
+Which is how do I make sure the work that I do isn't like completely obsoleted by an
+
+356
+00:24:13,760 --> 00:24:15,080
+模型能力的提升而被完全淘汰
+increase in model capability?
+
+357
+00:24:15,520 --> 00:24:21,080
+而我对这件事的思考是 只做最低限度的上下文
+And the way I have thought about that is doing sort of the bare minimum amount of context
+
+358
+00:24:21,080 --> 00:24:27,460
+管理 把智能体在整个工作过程中
+management to kind of pull in requirements for the agent to do an acceptable job over the
+
+359
+00:24:27,460 --> 00:24:28,220
+做到“合格”所需要的需求拉进来
+course of its work.
+
+360
+00:24:28,860 --> 00:24:32,860
+而上下文本身这件事 我觉得是永远不会被淘汰的对吧
+And context is a thing that I don't think will ever be obsoleted, right?
+
+361
+00:24:32,960 --> 00:24:34,780
+模型必须被告知
+The models must be told,
+
+362
+00:24:34,860 --> 00:24:37,060
+比如任务的需求
+like, the requirements of the task,
+
+363
+00:24:37,180 --> 00:24:38,740
+要注意哪些护栏
+which guardrails to pay attention to,
+
+364
+00:24:38,840 --> 00:24:39,680
+诸如此类的信息
+these sorts of things.
+
+365
+00:24:40,280 --> 00:24:46,140
+所以一个好的驾驭器 其实就是围绕在正确的时间把文本给到模型来运作
+So a good harness is really operationalized around giving the model text at the right time
+
+366
+00:24:46,140 --> 00:24:50,820
+这样它就能对照自己已经做的工作和“什么叫做好”的相关信息
+so it can look at the work it has done and the information around what a good job looks like.
+
+367
+00:24:51,460 --> 00:24:55,820
+而且从根本上说 模型是被训练来遵循指令的
+And, you know, fundamentally the models are trained to follow instructions.
+
+368
+00:24:56,240 --> 00:25:00,080
+驾驭器要做的就是在正确的时间把指令呈现给模型
+All the harness should do is surface instructions to the model at the right time.
+
+369
+00:25:00,780 --> 00:25:03,640
+所以我们也希望把这个量降到最小对吧
+So we do want to minimize that, too, right?
+
+370
+00:25:03,640 --> 00:25:06,740
+你不想一开始就把所有指令都塞给它 不然你就会
+You don't want to front load all those instructions because then you kind of,
+
+371
+00:25:06,760 --> 00:25:08,300
+把智能体给“喂爆”
+like, overwhelm the agent.
+
+372
+00:25:08,640 --> 00:25:13,040
+但所有关于“什么叫做好”的这些要求
+But all of these sort of requirements around what a good job do need to be paid attention
+
+373
+00:25:13,040 --> 00:25:15,020
+都需要在整个PR生命周期里被持续关注 对吧
+to over the entire course of the PR, right?
+
+374
+00:25:15,240 --> 00:25:21,440
+所以想办法要么延后 要么在恰当时机再把这些指令抛出来
+So figuring out ways to either defer or just in time surface those instructions is kind of
+
+375
+00:25:21,440 --> 00:25:23,920
+这基本就是一个好驾驭器该做的事对吧
+what a good harness should do, right?
+
+376
+00:25:24,620 --> 00:25:29,900
+比如你知道自己希望React组件
+If you know that you want your React components,
+
+377
+00:25:30,040 --> 00:25:35,180
+被拆分成更无状态的小块 以便做出好的快照测试 对吧
+right, to be decomposed so that they make good snapshot tests for individual more stateless pieces, right?
+
+378
+00:25:35,360 --> 00:25:37,120
+你没必要一开始就把这个要求塞进去
+You don't need to load that up front.
+
+379
+00:25:37,520 --> 00:25:41,220
+相反 你应该先让智能体自由发挥 去做原型 去尝试你想要构建的UI
+Instead, you should kind of let the agent cook and prototype and experiment with the UI
+
+380
+00:25:41,220 --> 00:25:41,900
+也就是你想要构建的界面
+you want to build.
+
+381
+00:25:42,260 --> 00:25:43,880
+然后在代码检查（lint）或测试阶段
+And then at lint or test time,
+
+382
+00:25:43,980 --> 00:25:45,920
+再告诉它 好 你已经把功能写完了
+say, okay, you've done the work.
+
+383
+00:25:45,960 --> 00:25:46,940
+为了把这事真正收尾
+In order to finish it,
+
+384
+00:25:46,980 --> 00:25:50,620
+你得把这些东西拆开 让组件变得更小 更无状态
+you have to break this apart so that your components are small and as stateless as
+
+385
+00:25:50,620 --> 00:25:54,900
+并且通过本地hooks依赖而不是一层层传props 或者任何你希望代码呈现的样子
+possible and have local dependencies on hooks instead of prop drilling or whatever it is
+
+386
+00:25:54,900 --> 00:25:56,920
+也就是你希望代码呈现出来的结构
+that you want the code to look like.
+
+387
+00:25:57,180 --> 00:25:58,200
+然后智能体就会“意识到”
+And then the agent will say,
+
+388
+00:25:58,300 --> 00:26:00,260
+哦 这是一个新的指令
+oh, this is a new instruction for me.
+
+389
+00:26:00,440 --> 00:26:01,760
+让我基于已经写好的补丁
+Let me take the patch as written,
+
+390
+00:26:02,240 --> 00:26:04,380
+做修改以确保它符合这些指令
+modify it to make sure that it adheres to the instructions,
+
+391
+00:26:04,700 --> 00:26:06,280
+然后把它推到GitHub上去
+and then up it goes to GitHub.
+
+392
+00:26:06,860 --> 00:26:11,880
+而这种东西不会因为模型能力的提升而被淘汰
+And this sort of thing is not going to be obsoleted by increases in model capability.
+
+393
+00:26:12,100 --> 00:26:14,640
+它本质上就是要拿到那段正确的文本
+It's really just about getting that right text,
+
+394
+00:26:14,760 --> 00:26:16,520
+在正确的时间提供正确的上下文
+that right context at the right time.
+
+395
+00:26:17,580 --> 00:26:20,220
+我们能不能聊一个好的驾驭器的例子
+Can we talk about an example of a good harness?
+
+396
+00:26:20,780 --> 00:26:24,700
+现在很多人都在问Codex模型 也就是Codex的驾驭器
+So a lot of people are asking about the codex model, the codex harness.
+
+397
+00:26:25,080 --> 00:26:28,060
+那和其他测试框架相比如何 Claude Code、OpenCode
+How does that compare to other harnesses? Claude Code, OpenCode.
+
+398
+00:26:28,520 --> 00:26:31,240
+你们是如何把这些决策因素纳入考量的
+How do you guys take these decisions into play?
+
+399
+00:26:31,480 --> 00:26:33,100
+你并不直接在Codex上工作
+You don't work directly on codex,
+
+400
+00:26:33,160 --> 00:26:36,540
+但如果有一些关于Codex驾驭式工程框架你可以谈的内容
+but if there's stuff you can speak about about the codex harness,
+
+401
+00:26:36,960 --> 00:26:39,600
+你们在设计它时都看到了些什么
+what you guys see as you architect it out?
+
+402
+00:26:40,300 --> 00:26:48,020
+嗯 我认为一个非常强大的点是 这些实验室不仅仅是在对模型做后训练
+Yeah. So one thing that I think is super powerful is this notion that the labs are not just post-training the models,
+
+403
+00:26:48,180 --> 00:26:53,120
+而是是在它们主要被部署的那个驾驭式工程框架的上下文中进行后训练 对吧
+but post-training the models in the context of the harness in which they are primarily deployed in, right?
+
+404
+00:26:53,260 --> 00:26:59,040
+比如 apply patch 工具 或者调用 bash 工具时特定的引用语义
+Like, the apply patch tool or the specific quoting semantics of how to invoke the bash
+
+405
+00:26:59,040 --> 00:27:03,800
+都被纳入实验室这些驾驭式工程框架的后训练流程之中
+tool are in the loop for the post-training process for the harnesses from the labs,
+
+406
+00:27:03,860 --> 00:27:10,220
+这意味着直接依赖这类第一方驾驭式工程框架可以获得很大的杠杆效应
+which means there is leverage to be had by depending on these sort of first-party harnesses directly.
+
+407
+00:27:10,620 --> 00:27:11,900
+至少我是这么认为的
+At least this is what I believe.
+
+408
+00:27:12,760 --> 00:27:19,580
+因此 能够通过 SDK 之类的东西 或者
+And as such, kind of being able to direct through them via things like the SDK or
+
+409
+00:27:19,580 --> 00:27:24,460
+直接操作 Codex 应用服务器 就意味着你可以顺势利用
+manipulating the codex app server directly means you kind of get to ride the wave of all
+
+410
+00:27:24,460 --> 00:27:28,680
+那些后训练里获得的全部杠杆效应 而把精力放在你真正关心的部分上
+that leverage in post-training and instead focus on the parts that you care about,
+
+411
+00:27:28,780 --> 00:27:30,960
+比如说 正确的代码应该长什么样
+which is, like, what correct code looks like.
+
+412
+00:27:33,000 --> 00:27:37,880
+我相当有信心 像 Claude Code 和 Codex 这样的东西会持续变得更好
+I kind of have high confidence that things like Claude Code and codex will continue to get better.
+
+413
+00:27:38,300 --> 00:27:42,040
+那是那种负责开发这些编码代理的团队的责任
+That is the responsibility of, like, the teams working on these coding agents.
+
+414
+00:27:42,200 --> 00:27:47,800
+所以在我的角色里 我其实并不想把精力放在编程驾驭式工程框架本身上
+So in my role, where I don't really want to focus on the coding harness at all,
+
+415
+00:27:47,960 --> 00:27:53,200
+而是要想办法以某种方式接入它们
+is figuring out ways to plug into them in ways that kind of,
+
+416
+00:27:53,200 --> 00:27:54,560
+从而去引导这个智能体
+like, steer the agent.
+
+417
+00:27:55,100 --> 00:27:57,220
+这意味着我的工作可以某种程度上
+That means my job can sort of,
+
+418
+00:27:57,300 --> 00:28:01,060
+上升到思考不同版本发布之间模型行为的差异
+like, move up to thinking about differences in model behavior between releases,
+
+419
+00:28:01,220 --> 00:28:04,380
+而不是深入理解这个驾驭式工程框架的各种细枝末节
+rather than deeply understanding the nuts and bolts of the harness.
+
+420
+00:28:05,020 --> 00:28:12,540
+相反，我可以思考的是，基于我观察到的行为去引导我想要的行为，这意味着什么，而不是
+Instead, I can think about what it means to drive the behavior that I want based on the observed behavior, rather than,
+
+421
+00:28:12,580 --> 00:28:14,020
+去研究这个东西内部的机械细节
+like, the inner mechanics of the thing.
+
+422
+00:28:14,720 --> 00:28:16,940
+这就完美引出了下一个问题 那就是
+It's a perfect follow-up to the next question, which is...
+
+423
+00:28:17,540 --> 00:28:20,340
+你有没有什么协作平台的推荐
+Do you have any recommendations for collaboration platforms?
+
+424
+00:28:20,640 --> 00:28:23,040
+那在软件开发生命周期中
+So when you're in the software development lifecycle,
+
+425
+00:28:23,460 --> 00:28:27,440
+有没有什么平台是你们让智能体 工程师 开发者
+is there any platform that you use for agents, engineers, developers,
+
+426
+00:28:27,560 --> 00:28:29,320
+一起协作完成各种工作的
+all to collaborate on working on anything?
+
+427
+00:28:29,660 --> 00:28:30,940
+有什么建议或工具吗
+Any tips? Any tools?
+
+428
+00:28:31,500 --> 00:28:31,780
+有的
+Yeah.
+
+429
+00:28:33,080 --> 00:28:41,780
+在这个场景里 我们主要就是用代码仓库里的 markdown 文件和 GitHub
+So in this world, it has largely been just markdown files in the repository and GitHub.
+
+430
+00:28:42,200 --> 00:28:45,100
+它们一直是我们主要的枢纽辐射式中心
+That had been the primary sort of hub-and-spoke sort of thing.
+
+431
+00:28:45,740 --> 00:28:49,360
+如果你想象一下在一个文档上协作
+If you think about collaborating on a document,
+
+432
+00:28:49,720 --> 00:28:50,920
+比如你打开 Google Docs
+like, you open Google Docs,
+
+433
+00:28:51,000 --> 00:28:52,840
+你写点东西 然后征求反馈
+you write something, you ask for feedback,
+
+434
+00:28:53,080 --> 00:28:54,540
+别人评论 你采纳建议
+people comment, you apply suggestions,
+
+435
+00:28:54,700 --> 00:28:55,440
+诸如此类的流程
+these sorts of things,
+
+436
+00:28:55,620 --> 00:29:00,900
+这就像是为你正在产出的这个工作成果专门准备的一个小型洁净室环境
+this is kind of like a little clean room environment just for this work artifact that you're producing.
+
+437
+00:29:01,300 --> 00:29:03,560
+PR 在某种程度上也有类似的用途
+Like, a PR kind of has a similar purpose.
+
+438
+00:29:03,900 --> 00:29:09,600
+所以我们把它当作一个大型的枢纽辐射式广播域 让所有智能体
+So we kind of treat that as a big hub-and-spoke broadcast domain where all of the agents
+
+439
+00:29:09,600 --> 00:29:11,380
+和人类一起协作
+and humans collaborate together.
+
+440
+00:29:12,560 --> 00:29:14,940
+而且因为我们优化的是吞吐量
+And because we optimize for throughput,
+
+441
+00:29:15,080 --> 00:29:16,800
+我们不会因为任何
+we don't block on any sort of,
+
+442
+00:29:17,000 --> 00:29:17,980
+对它的贡献而阻塞流程
+like, contribution to that.
+
+443
+00:29:18,200 --> 00:29:19,940
+比如 人可以选择审查也可以不审查
+Like, folks can either review or not.
+
+444
+00:29:20,060 --> 00:29:21,580
+智能体可以选择审查也可以不审查
+Agents can either review or not.
+
+445
+00:29:21,980 --> 00:29:24,440
+实施智能体可以确认
+The implementation agent can acknowledge,
+
+446
+00:29:24,680 --> 00:29:27,280
+延后处理 或拒绝它收到的任何反馈
+defer, or reject any feedback that it gets.
+
+447
+00:29:27,720 --> 00:29:32,800
+这样真正让每一个参与产出 diff 的个体
+Really allowing each participant in the production of diffs to kind of make their own
+
+448
+00:29:32,800 --> 00:29:35,560
+自己判断交付意味着什么
+judgments around what it means to deliver,
+
+449
+00:29:35,800 --> 00:29:37,140
+如何接收和回应反馈
+receive, respond to feedback.
+
+450
+00:29:37,740 --> 00:29:40,040
+而且这有一个很好的特性
+And this has a nice property of,
+
+451
+00:29:40,060 --> 00:29:43,400
+就是不会在很多地方把模型关进条条框框里
+like, not putting the model in a box in a bunch of places.
+
+452
+00:29:43,540 --> 00:29:46,980
+我们希望它们能发挥自己的良好推理能力之类的
+We want them to use their good reasoning sort of thing.
+
+453
+00:29:47,220 --> 00:29:51,860
+所以如果我们非常教条地要求 每一条反馈都必须被处理
+So being super prescriptive around every bit of feedback must be addressed can kind of
+
+454
+00:29:51,860 --> 00:29:57,000
+就可能出现一种灾难性的失败模式 就是你的编程智能体被所有
+have this catastrophic failure mode of your coding agent being bullied by all of the
+
+455
+00:29:57,000 --> 00:30:00,960
+审查者集体“霸凌” 而我们真正想要的是偏向代码被接受
+reviewers when really we want to bias toward code being accepted,
+
+456
+00:30:01,260 --> 00:30:03,960
+而不是追求完美 或淹没在细枝末节里
+not perfect, not drowning in minutiae,
+
+457
+00:30:04,000 --> 00:30:04,860
+以及类似的问题
+and these sorts of things.
+
+458
+00:30:05,880 --> 00:30:08,800
+人们应该如何开始使用编程智能体
+How should people get started with using coding agents?
+
+459
+00:30:08,920 --> 00:30:13,300
+那些一直大量手写代码的人
+People that have been using a lot of... doing a lot of manually written code,
+
+460
+00:30:13,720 --> 00:30:15,480
+他们该如何开始转变
+how do they start to transition?
+
+461
+00:30:15,480 --> 00:30:16,700
+他们应该把什么事情交给智能体
+What should they offload?
+
+462
+00:30:17,020 --> 00:30:19,660
+他们该如何跨过那道心理障碍
+How do they kind of come over that barrier of,
+
+463
+00:30:19,800 --> 00:30:21,520
+比如 我仍然在检查每一个 PR
+okay, I'm still checking every PR,
+
+464
+00:30:21,720 --> 00:30:23,700
+我在从 Codex 里复制粘贴
+I'm copy-pasting from Codex.
+
+465
+00:30:24,200 --> 00:30:27,540
+那普通工程师应该如何开始使用这些工具
+How should, like, the average engineer start to use these tools?
+
+466
+00:30:28,300 --> 00:30:30,620
+我认为有两种方式来处理这个问题
+I think there's two ways to approach this problem.
+
+467
+00:30:30,940 --> 00:30:37,860
+一种方式是开始使用编程智能体 来提升你对现有代码本身的信心
+One is to start using the coding agents to improve your confidence in the code itself as
+
+468
+00:30:37,860 --> 00:30:39,360
+就是对今天已经写好的这些代码的信心 对吧
+it is written today, right?
+
+469
+00:30:39,500 --> 00:30:41,120
+我想我们都会同意
+I think we would all agree that,
+
+470
+00:30:41,120 --> 00:30:43,340
+更多测试大概是件好事 对吧
+like, more tests is probably a good thing, right?
+
+471
+00:30:43,400 --> 00:30:49,920
+用来断言我们的程序被很好地规格化 并且在用户与之交互时表现正确
+To assert that our programs are well-specified and behave correctly as our users interact
+
+472
+00:30:49,920 --> 00:30:50,740
+这当然是好事
+with them is a good thing.
+
+473
+00:30:51,240 --> 00:30:56,700
+而智能体非常擅长在了解一些使用上下文的前提下 审视现有代码
+And the agents are super good at looking at the existing code with some context around how
+
+474
+00:30:56,700 --> 00:31:00,300
+并编写断言这种行为的测试
+it is meant to be used and writing tests that assert that behavior.
+
+475
+00:31:00,740 --> 00:31:06,080
+所以用这种方式来提升你对代码质量的信心
+So kind of using this to improve your confidence in the quality of the code will also
+
+476
+00:31:06,080 --> 00:31:09,960
+也会提升智能体成功驾驭这份代码的能力
+increase the agent's ability to successfully navigate it,
+
+477
+00:31:09,960 --> 00:31:15,320
+这意味着你不必再那么担心对智能体输出做极其细致的审查
+which means you don't have to worry as much around doing super detailed review of the agent output.
+
+478
+00:31:15,960 --> 00:31:20,860
+另一种思路是审视你是如何花费时间的
+The other way to think about this is to look at how you are spending your time.
+
+479
+00:31:21,600 --> 00:31:24,580
+是在 你知道的 盯着编辑器写代码吗
+Is it, you know, staring at your editor, writing code?
+
+480
+00:31:24,860 --> 00:31:26,440
+是在等测试跑完吗
+Is it waiting for tests to run?
+
+481
+00:31:26,780 --> 00:31:28,800
+是在等人工审查反馈吗
+Is it waiting for human review feedback?
+
+482
+00:31:29,080 --> 00:31:32,220
+是持续集成很慢 然后你一直在等它吗
+Is CI slow? And you're, like, waiting on that.
+
+483
+00:31:32,300 --> 00:31:33,660
+也许你有一大堆不稳定的测试
+Maybe you have a ton of flaky tests.
+
+484
+00:31:33,840 --> 00:31:39,600
+然后用智能体逐步自动化那些你花时间最多的部分
+And using the agents to incrementally automate the parts where you are spending your time.
+
+485
+00:31:40,240 --> 00:31:45,680
+归根结底 我们工作中杠杆最高的部分 是定义必须完成的工作
+Ultimately, the high leverage parts of our jobs is to define the work that must be done,
+
+486
+00:31:46,420 --> 00:31:48,020
+为这些工作排定优先级和时间表
+prioritize and schedule that work,
+
+487
+00:31:48,340 --> 00:31:51,560
+然后有效地赋能团队里的成员去完成这些工作
+and then effectively empower folks on our team to do that work.
+
+488
+00:31:52,500 --> 00:31:56,580
+而我们越是能够把事情委派出去 自己转向这种
+And the more and more we can delegate and move into sort of this,
+
+489
+00:31:56,740 --> 00:31:58,480
+负责排序和编排的角色
+like, sequencing and orchestration role,
+
+490
+00:31:58,740 --> 00:32:00,360
+即便你只是在思考
+even if you just think about,
+
+491
+00:32:00,380 --> 00:32:01,880
+比如 管理你的团队 对吧
+like, managing your teams, right?
+
+492
+00:32:01,980 --> 00:32:04,360
+你能让这些被委派的执行越并行
+The more parallel and the more,
+
+493
+00:32:04,360 --> 00:32:08,540
+单次执行越深入 越多层次 对吧
+like, deeper individual executions of those delegations we're able to do, right?
+
+494
+00:32:08,540 --> 00:32:12,940
+如果我预先放好一些基础构件，让某件事变得超级容易去做
+If I put primitives in place that make it super easy to,
+
+495
+00:32:13,020 --> 00:32:16,560
+比如说，轻松搭起一套响应我 Kafka 队列事件的机制，对吧
+like, spin up ways to respond to events on my Kafka queue, right?
+
+496
+00:32:16,640 --> 00:32:19,180
+这样我就不需要和每个工程师一起陷在细枝末节里
+Like, I don't really need to be in the weeds with every engineer,
+
+497
+00:32:19,300 --> 00:32:20,440
+去确保他们
+making sure they, like,
+
+498
+00:32:20,560 --> 00:32:22,080
+把一个消费者实现正确，对吧
+implement a consumer correctly, right?
+
+499
+00:32:22,200 --> 00:32:23,680
+而同样这种
+And these same sort of,
+
+500
+00:32:23,680 --> 00:32:28,820
+积木式的构建技巧也非常适用于智能体，而且可以很好地叠加起来
+like, building block style techniques apply really well to the agents and stack really well, too.
+
+501
+00:32:29,780 --> 00:32:31,940
+有个有趣的问题 你在车里是怎么和智能体一起工作的
+A fun one. How do you work with agents in your car?
+
+502
+00:32:34,880 --> 00:32:40,440
+我还没用过最近在 CarPlay 里上线的新语音模式
+So, I have not used the new voice mode that launched in CarPlay recently.
+
+503
+00:32:41,320 --> 00:32:42,400
+我还没准备好用那个
+Not ready for that.
+
+504
+00:32:42,600 --> 00:32:48,720
+但我通常会在离开办公室前启动一个任务
+But usually what I'll do is kick off a task right before I leave the office,
+
+505
+00:32:49,440 --> 00:32:51,540
+把笔记本连到手机热点上
+tether my laptop to my phone,
+
+506
+00:32:52,020 --> 00:32:53,100
+把电脑用安全带固定在后座
+buckle it into the back seat,
+
+507
+00:32:53,200 --> 00:32:55,660
+然后在我开车回家那三十分钟里让它自己跑
+and kind of let it cook in the 30 minutes it takes me to get home.
+
+508
+00:32:56,100 --> 00:32:59,040
+大多数时候我们调用的技能会告诉智能体
+Most of the time with the skills we invoke that tell the agent,
+
+509
+00:32:59,100 --> 00:33:00,400
+你现在在执行一个任务
+you know, you're operating on a task,
+
+510
+00:33:00,540 --> 00:33:02,100
+一直做到所有测试变绿为止
+you go until the tests are green.
+
+511
+00:33:02,860 --> 00:33:05,160
+我不需要伸手到后排去点“是”
+I don't have to reach back there and poke yes,
+
+512
+00:33:05,260 --> 00:33:06,340
+也不需要点“继续做这个”之类的按钮
+continue onto the thing.
+
+513
+00:33:07,220 --> 00:33:13,700
+这样我基本上就能把一天的时间尽可能充分地用在 Token 消耗上
+And I'm basically able to more fully saturate my day with token consumption.
+
+514
+00:33:15,260 --> 00:33:20,060
+我的梦想是实际有 50 个智能体 7×24 小时在跑 而我完全不需要和它们交互
+The dream here is that I actually have 50 agents running 24-7 and I don't have to interact
+
+515
+00:33:20,060 --> 00:33:20,700
+完全不用理它们
+with them at all.
+
+516
+00:33:21,540 --> 00:33:24,440
+要做到这一点 就要把工作定义得足够清晰
+And the way to do that is to define the work well,
+
+517
+00:33:24,840 --> 00:33:29,400
+想办法让这些工作能自动被调度 把我从“点按钮”的环节里彻底移除
+figure out ways for it to automatically be scheduled and remove myself from having to click the button.
+
+518
+00:33:29,860 --> 00:33:35,020
+每次我不得不给智能体输入“继续” 都说明这个驾驭式工程在提供
+Every time I have to type continue to the agent is a failure of the harness to provide
+
+519
+00:33:35,020 --> 00:33:37,440
+“继续直到完成”这件事的上下文方面做得不够好
+enough context around what it means to continue to completion.
+
+520
+00:33:38,720 --> 00:33:41,080
+哇 最后这句话说得很好
+Wow. Good statement at the end.
+
+521
+00:33:41,200 --> 00:33:43,840
+每次你不得不和智能体交互 都是一种失败
+Every time you have to interact with the agent is a failure.
+
+522
+00:33:44,440 --> 00:33:47,760
+好 接下来的问题有点是在把这个放大来看 对吧
+Okay. So the following question kind of scales this out, right?
+
+523
+00:33:47,820 --> 00:33:49,860
+随着你们组织的知识地图不断扩张
+As your org knowledge map scales,
+
+524
+00:33:50,440 --> 00:33:54,480
+你在实践中是怎么一步步实现渐进式暴露信息的
+what practical steps do you have to enable progressive disclosure?
+
+525
+00:33:54,660 --> 00:33:56,900
+当你的代码库越来越大
+So as you have a larger and larger code base,
+
+526
+00:33:56,960 --> 00:33:57,700
+人越来越多
+as you have more people,
+
+527
+00:33:58,080 --> 00:34:00,600
+你是如何扩展你的智能体 让它们在这种环境下工作得更好
+how do you scale your agents to work better with this?
+
+528
+00:34:00,980 --> 00:34:07,140
+嗯 当我最初开始做这个项目的时候
+Yeah. So when I sort of initially started this project that I was working on,
+
+529
+00:34:07,560 --> 00:34:10,840
+是一个空仓库 然后创建一个 Electron 应用 对吧
+blank repository, create electron app, right?
+
+530
+00:34:10,980 --> 00:34:13,340
+单一包结构 就是这一套东西
+Single package, all this sort of stuff.
+
+531
+00:34:13,620 --> 00:34:16,200
+然后最后就变成了一团乱麻 对吧
+And eventually ended up with a mess, right?
+
+532
+00:34:16,220 --> 00:34:23,100
+因为没有包级隐私机制让我区分哪些 API 是公开的哪些不是
+Because there's no package privacy that allows me to around what APIs are public versus which ones are not.
+
+533
+00:34:23,340 --> 00:34:24,940
+智能体也没有
+The agent didn't have,
+
+534
+00:34:24,940 --> 00:34:30,860
+文件系统里那种明确的钩子 来判断哪些领域和其他领域是隔离开的
+like, concrete hooks in the file system to determine which domains were separate from the other ones.
+
+535
+00:34:31,200 --> 00:34:32,200
+所以我们最后走向了
+So we ended up going,
+
+536
+00:34:32,360 --> 00:34:36,520
+一整套好像是给一万人工程组织用的那种重型架构
+like, full 10,000 engineer organization heavy on the architecture.
+
+537
+00:34:37,400 --> 00:34:44,360
+750 个包 按业务逻辑领域或技术栈层级隔离开来
+750 packages in the isolated by business logic domain or layer of the stack.
+
+538
+00:34:44,760 --> 00:34:50,860
+这些是封装可复用功能的小包 我们会对它们的使用做代码检查（lint）
+Individual small packages that encapsulate reusable functionality that we lint on being
+
+539
+00:34:50,860 --> 00:34:52,740
+并且可以在里面编码各种可复用的能力
+used, that we can encode leverage in.
+
+540
+00:34:53,420 --> 00:34:55,500
+我确实认为
+And I do think that, like,
+
+541
+00:34:55,600 --> 00:34:58,700
+在这个世界里 即使你实际上没有微服务
+in this world, even if you don't actually have microservices,
+
+542
+00:34:59,200 --> 00:35:02,680
+也应该把仓库结构设计成 你可以真正限定
+structuring your repositories in ways that you can actually scope,
+
+543
+00:35:02,920 --> 00:35:08,540
+你要看的目录子树范围 就能完成大部分改动 这样会很有帮助
+like, the directory subtree you are looking in to be able to do most of the change helps.
+
+544
+00:35:09,560 --> 00:35:14,360
+而且 你知道 文件系统里的代码本质上也是文本
+And, you know, code in the file system is also text,
+
+545
+00:35:14,500 --> 00:35:17,720
+这就意味着它其实是你给编程智能体的提示词
+which means it's effectively prompts that you're giving to your coding agent.
+
+546
+00:35:18,460 --> 00:35:25,380
+所以让代码尽可能保持一致性 会让智能体无论在仓库的哪个位置查看
+So making the code as much the same as possible kind of makes it so that regardless of
+
+547
+00:35:25,380 --> 00:35:30,560
+当你的代理在代码库中的某个位置进行查找时，它会积累大量可迁移的上下文，对吧
+where in the repository your agent is looking, it develops a ton of transferable context, right?
+
+548
+00:35:30,660 --> 00:35:33,440
+比如 你应该只有一种方式
+Like, you should have one way to,
+
+549
+00:35:33,500 --> 00:35:35,600
+来实现有界并发的辅助工具
+like, do a bounded concurrency helper.
+
+550
+00:35:35,960 --> 00:35:42,100
+你应该只有一种方式来构造可观测且带监控的有副作用命令
+You should have one way to construct observable and instrumented side effectful command.
+
+551
+00:35:42,400 --> 00:35:44,120
+你应该只用一个 ORM 对吧
+You should have one ORM, right?
+
+552
+00:35:44,200 --> 00:35:45,740
+你应该只用一种编程语言
+You should have one programming language.
+
+553
+00:35:45,840 --> 00:35:47,620
+你应该只有一种写持续集成（CI）脚本的方式
+You should have one way of writing CI scripts.
+
+554
+00:35:47,720 --> 00:35:49,620
+你应该只有一种添加额外代码检查（lint）规则的方式
+You should have one way of adding additional lint rules.
+
+555
+00:35:49,680 --> 00:35:50,480
+就是类似这些事情
+These sorts of things.
+
+556
+00:35:50,740 --> 00:35:51,880
+因为这意味着
+Because it means that,
+
+557
+00:35:51,900 --> 00:35:57,120
+你希望模型产出的那些 Token 更容易被预测 而且预测得更一致
+like, the tokens that you want the model to produce are easier to predict and more consistently predicted,
+
+558
+00:35:57,220 --> 00:35:58,400
+不管它在看哪里
+regardless of where it looks.
+
+559
+00:35:59,420 --> 00:36:04,500
+所以我会说 要想办法把代码结构设计成 对于你和系统交互的大多数方式来说
+So I would say figure out ways to structure the code so it is local to a subtree in a
+
+560
+00:36:04,500 --> 00:36:07,780
+它都局限在仓库的某个子树里
+repository for most of the ways you would interact with that system.
+
+561
+00:36:08,220 --> 00:36:12,640
+然后再想办法用这些智能体把整个代码库完全迁移成统一风格
+And then figure out a way to use these agents to completely migrate the codebase to be the same.
+
+562
+00:36:13,360 --> 00:36:17,760
+授权你团队里某个人当“独裁者” 说这事就必须这样做 对吧
+Empower someone on your team to be a dictator to say this is the way it must be done, right?
+
+563
+00:36:17,840 --> 00:36:19,060
+或者大家一起把这套规范定出来
+Or figure that out together.
+
+564
+00:36:20,800 --> 00:36:22,200
+然后 把它写下来
+And, you know, write it down.
+
+565
+00:36:23,060 --> 00:36:25,260
+再不断演进代码 让它真正反映出这套现实
+Evolve the code so that it reflects that reality.
+
+566
+00:36:25,380 --> 00:36:25,960
+就是类似这些做法
+These sorts of things.
+
+567
+00:36:26,580 --> 00:36:28,680
+我们收到了一些关于代码评审的问题
+We've got a few questions on code review.
+
+568
+00:36:28,920 --> 00:36:32,060
+在你们现在这么高的开发速度下 你是怎么做代码评审的
+How do you approach code review now that you have such high velocity?
+
+569
+00:36:32,800 --> 00:36:34,120
+你是不是干脆不看代码了
+Do you just not read the code?
+
+570
+00:36:34,220 --> 00:36:36,240
+还是说你就完全信任测试覆盖率
+Do you just trust the test coverage?
+
+571
+00:36:36,540 --> 00:36:38,060
+你是怎么写出好的测试的
+How do you write good tests?
+
+572
+00:36:38,340 --> 00:36:40,500
+你是怎么摆脱那种心理负担的
+How do you offload that stigma of,
+
+573
+00:36:40,800 --> 00:36:42,280
+就是那种心理障碍
+like, you know, you have a mental blocker.
+
+574
+00:36:42,360 --> 00:36:45,480
+“在合并 PR 之前我必须手动检查所有东西”
+I need to manually check everything before I merge PRs.
+
+575
+00:36:46,660 --> 00:36:51,660
+还是同样的思路 你得看看自己时间都花在哪儿
+So that same sort of idea where you have to look at where you're spending your time and
+
+576
+00:36:51,660 --> 00:36:53,780
+然后想办法少花点时间
+figure out ways to spend less of it.
+
+577
+00:36:54,600 --> 00:36:57,300
+你看 我们刚开始的时候
+You know, when we started,
+
+578
+00:36:57,580 --> 00:37:01,220
+首先要做的是搞清楚如何让智能体稳定地产出
+right, the first thing to do was figure out how to get the agent reliably producing code
+
+579
+00:37:01,220 --> 00:37:01,980
+我们可以接受的代码
+that we would accept.
+
+580
+00:37:02,480 --> 00:37:08,880
+而我们遇到的一个大挑战是 每个工程师每天会产出三到五个 PR
+And a big challenge we ran into is with each engineer producing three to five PRs per day,
+
+581
+00:37:08,960 --> 00:37:10,120
+即使团队只有三个人
+even on a team of three,
+
+582
+00:37:10,260 --> 00:37:12,800
+合并冲突也会非常痛苦 对吧
+merge conflicts were super miserable, right?
+
+583
+00:37:12,980 --> 00:37:15,160
+因为这些 PR 往往都挺大
+Because these PRs tended to be pretty big.
+
+584
+00:37:15,500 --> 00:37:18,380
+而且我们都在改代码库的同一块地方
+We were working on the same parts of the code base.
+
+585
+00:37:18,600 --> 00:37:20,900
+所以我们从两个方向来解决
+So that's where we moved in two directions.
+
+586
+00:37:21,120 --> 00:37:25,300
+一是把代码稍微摊开一点 来尽量减少这些合并冲突
+One was to, like, spread out the code a bit more to minimize these merge conflicts.
+
+587
+00:37:25,580 --> 00:37:30,960
+另一个是尽量缩短 PR 处于打开状态的时间 这样可以降低
+But also minimize the amount of time PRs were open so that we were reducing the likelihood
+
+588
+00:37:30,960 --> 00:37:32,680
+实际发生合并冲突的概率
+of a merge conflict actually occurring.
+
+589
+00:37:33,440 --> 00:37:37,900
+而 PR 之所以会开那么久 是因为我们需要代码评审
+And the reason PRs were staying open so long was because we needed code review.
+
+590
+00:37:38,420 --> 00:37:42,660
+因为在这个场景里 人是瓶颈
+Because humans were being the blocker in this scenario.
+
+591
+00:37:43,520 --> 00:37:48,660
+所以为了把这部分自动化处理
+So in order to do that piece automatically,
+
+592
+00:37:49,080 --> 00:37:52,760
+我基本上要求团队里的每一位工程师每周拿出一天的时间
+I essentially asked every engineer on the team to take one day a week,
+
+593
+00:37:53,060 --> 00:37:55,160
+在周五，我们把这一天称为垃圾回收日
+Fridays, we called it garbage collection day,
+
+594
+00:37:55,520 --> 00:38:02,480
+这一天我们的全部工作就是把这一周里我们观察到的每一处劣质代码
+where our entire job was to take every bit of slop we had observed over the course of the
+
+595
+00:38:02,480 --> 00:38:07,460
+这些让PR很难合并的东西，想办法从根本上
+week that was making a PR difficult to merge and figure out ways to categorically
+
+596
+00:38:07,460 --> 00:38:09,780
+把它们彻底消灭掉，防止以后再发生
+eliminate it from ever happening in the first place.
+
+597
+00:38:10,080 --> 00:38:14,860
+也正是在这里，我们开始闭合这样一个循环：人类在PR上给出的反馈
+Which is where we kind of started closing this loop between the feedback that humans were
+
+598
+00:38:14,860 --> 00:38:18,360
+表明智能体在上下文上出现了一些失败
+giving on the PR indicates some context failure on behalf of the agent,
+
+599
+00:38:19,180 --> 00:38:20,540
+然后把这些反馈写入代码仓库
+getting that into the repository,
+
+600
+00:38:21,020 --> 00:38:24,520
+接着想办法自动向智能体注入提示，让它在出现这种不良行为时
+and then figuring out ways to automatically prompt inject the agent so that it would
+
+601
+00:38:24,520 --> 00:38:26,480
+能够自我修复
+self-heal when it produced this bad behavior.
+
+602
+00:38:26,920 --> 00:38:31,700
+这基本上就是你如何从人类同步花时间在代码评审里给反馈
+And this is kind of how you go from synchronous human time spent giving feedback as code
+
+603
+00:38:31,700 --> 00:38:36,560
+再到把这些反馈写成仓库里的文档，最后自动把这些文档暴露出来
+review comments to documentation in the repository to automatically surfacing this
+
+604
+00:38:36,560 --> 00:38:41,860
+要么通过失败的测试，要么通过一个被预设好、按这些文档来审查代码的评审智能体
+documentation, either via a failing test or a reviewer agent who is primed to review the
+
+605
+00:38:41,860 --> 00:38:44,380
+让它在这些文档的上下文中审查写出来的代码
+code as written in the context of these docs.
+
+606
+00:38:45,340 --> 00:38:49,280
+但这一切的前提是把这些文档放在一个所有这些流程都能挂接上的单一位置
+But all of that happens by putting those docs in a single place that all these processes
+
+607
+00:38:49,280 --> 00:38:50,580
+让它们都能连接到那里
+are able to attach to.
+
+608
+00:38:52,200 --> 00:38:58,080
+我们会让大家把自己给出的评审反馈类型大致归类到他们当时扮演的角色里
+You know, we kind of asked folks to basically bucket the types of review feedback they
+
+609
+00:38:58,080 --> 00:39:03,700
+比如前端架构师、可靠性工程师、可扩展性之类的角色
+were giving into the persona they were operating as, front-end architect, reliability,
+
+610
+00:39:04,320 --> 00:39:06,460
+像这样去划分
+engineer, scalability sort of thing.
+
+611
+00:39:06,960 --> 00:39:08,580
+然后基本上针对每一种角色
+And then basically for each of those personas,
+
+612
+00:39:08,800 --> 00:39:12,220
+我们都启动了一个评审智能体，在每次推送时触发，去判断
+we spun up a review agent that gets triggered on every push that says,
+
+613
+00:39:12,380 --> 00:39:13,360
+这段代码是否够好
+is this code good?
+
+614
+00:39:13,500 --> 00:39:17,940
+并且基于这些文档，把任何会阻止这个PR合并的P2及以上问题暴露出来
+Surface any P2s or above that would block this PR from merging based on these
+
+615
+00:39:17,940 --> 00:39:19,920
+这些文档定义了“好”的代码应该是什么样
+documentation that says what good looks like.
+
+616
+00:39:20,740 --> 00:39:24,980
+通过这种方式，并且持续往这些文件里追加内容
+And with that, and just continuously appending to these files,
+
+617
+00:39:25,120 --> 00:39:27,240
+我们开始看到劣质代码不断减少、再减少、再减少
+we started to see slop reduce, reduce, reduce.
+
+618
+00:39:28,580 --> 00:39:30,800
+大家对你那十亿个Token有很多疑问
+People have questions about your billion tokens.
+
+619
+00:39:31,300 --> 00:39:33,060
+你觉得这些Token大概是怎么分配使用的
+Where do you think those are split up?
+
+620
+00:39:33,140 --> 00:39:35,080
+其中有多少花在代码评审上
+So how much of it is on code review?
+
+621
+00:39:35,560 --> 00:39:38,400
+大部分的用量主要来自哪里
+Where is the majority of that usage coming from?
+
+622
+00:39:38,740 --> 00:39:41,460
+还有一个后续问题，对于刚刚起步的人来说
+And a follow-up, for people that are just getting started,
+
+623
+00:39:41,600 --> 00:39:45,640
+比如他们已经上车买了一个200美元的专业套餐，对吧
+say they have jumped and done a $200 pro plan, right?
+
+624
+00:39:45,700 --> 00:39:47,860
+如果你被迫要把用量削减到原来的五分之一
+If you had to cut your usage by a fifth,
+
+625
+00:39:48,200 --> 00:39:51,260
+那大家应该怎么最大化利用这些用量呢
+how should people maximize their usage, right?
+
+626
+00:39:51,280 --> 00:39:52,600
+你会碰到用量上限
+You run into usage limits.
+
+627
+00:39:53,320 --> 00:39:57,460
+你肯定不想每六个小时就复制粘贴一百万行代码进去
+You don't want to just copy-paste a million lines of code every six hours,
+
+628
+00:39:57,540 --> 00:39:58,860
+而且还完全打不到提示缓存
+no prompt cache hit.
+
+629
+00:39:58,920 --> 00:40:01,500
+那我们应该怎么思考和规划这件事
+But how should we think about that?
+
+630
+00:40:01,920 --> 00:40:09,040
+我会说，大概可以粗略地按三分之一来算
+Yeah. So I would say probably it's probably a third,
+
+631
+00:40:09,120 --> 00:40:10,920
+三分之一、三分之一、三分之一地分布在
+a third, a third between,
+
+632
+00:40:10,920 --> 00:40:16,640
+比如规划、需求单整理、文档、实现
+like, planning, ticket curation, documentation, implementation,
+
+633
+00:40:17,080 --> 00:40:18,620
+以及在持续集成（CI）里运行的那些东西上
+and stuff that runs in CI.
+
+634
+00:40:18,860 --> 00:40:19,620
+你会用计划模式吗
+Do you use plan mode?
+
+635
+00:40:21,820 --> 00:40:23,240
+我用过执行计划（exec plans）
+I've used exec plans,
+
+636
+00:40:23,500 --> 00:40:25,700
+那算是我们早期发布的一个版本
+which was kind of like an early version of this that we published,
+
+637
+00:40:25,800 --> 00:40:29,820
+有点像一个原型技能，告诉你一个计划应该如何组织
+which is sort of like a proto skill that says this is how you should structure a plan with
+
+638
+00:40:29,820 --> 00:40:31,440
+包括里程碑和验收标准
+milestones and acceptance criteria.
+
+639
+00:40:32,640 --> 00:40:35,600
+我其实完全没有把计划模式当作驾驭式工程的一部分来用过
+I haven't really used plan mode as part of the harness at all.
+
+640
+00:40:35,760 --> 00:40:40,040
+我在这方面的预期是，我应该可以直接丢一个需求单进去，让系统自己完成工作
+My sort of expectation here is that I should be able to drop a ticket in and have it do
+
+641
+00:40:40,040 --> 00:40:42,560
+而不需要先绕一圈经过一个计划
+the job anyway without diverting through a plan.
+
+642
+00:40:43,160 --> 00:40:45,480
+因为大多数时候我根本不会去读那个计划
+Because most of the time I'm never going to read it anyway.
+
+643
+00:40:46,120 --> 00:40:51,000
+所以我发现，如果你用了一个计划，却完全不看就批准它
+So I find that if you do use a plan and you approve it without reading it at all,
+
+644
+00:40:51,160 --> 00:40:54,800
+你实际上是在写入一堆你并不一定希望被执行的指令
+you're actually encoding a bunch of instructions that you don't necessarily want followed.
+
+645
+00:40:55,460 --> 00:40:57,740
+所以如果你打算使用计划
+So if you are going to use plans,
+
+646
+00:40:57,840 --> 00:41:01,940
+我的建议是把这些计划单独作为一个只包含计划内容的PR提交上去
+my recommendation is to push those up as single PRs with just the plan,
+
+647
+00:41:02,420 --> 00:41:06,120
+让人类真正逐行审查这些内容
+where you actually have humans review every line of it and,
+
+648
+00:41:06,120 --> 00:41:09,460
+并且在合并和启动之前必须通过人工审批，否则就阻塞
+like, block on human approval before they get merged and then kicked off.
+
+649
+00:41:10,320 --> 00:41:16,020
+因为你很可能会在一次上线中，按照一套
+Because you're effectively potentially wasting your time on a rollout with instructions
+
+650
+00:41:16,020 --> 00:41:17,180
+实际上很糟糕的指令白白浪费时间
+that, like, are bad.
+
+651
+00:41:17,760 --> 00:41:20,080
+所以你要尽量减少这种情况发生的时间窗口
+So you want to kind of minimize the time that happens.
+
+652
+00:41:20,300 --> 00:41:27,520
+但我确实认为，让Token在持续集成（CI）里被消耗是这里必不可少的一环
+But I do think that kind of getting tokens to be spent in CI is a necessary part here.
+
+653
+00:41:27,700 --> 00:41:30,900
+因为写代码本身已经不再是难点
+Because writing code no longer is the hard part.
+
+654
+00:41:31,060 --> 00:41:36,400
+让代码被接受，并推动代码和产品向前发展
+Like, getting code accepted and advancing the code and product forward is what it takes to
+
+655
+00:41:36,400 --> 00:41:38,280
+这才是让写出来的代码真正有价值的关键
+make that written code be valuable.
+
+656
+00:41:39,160 --> 00:41:41,880
+你也知道，大家都听过这样一句格言
+And, you know, kind of have all heard the aphorism that,
+
+657
+00:41:42,000 --> 00:41:43,960
+就是高级工程师会给出好的代码评审
+like, you know, senior engineers give good code reviews.
+
+658
+00:41:44,080 --> 00:41:46,680
+同样，我们也期望作为智能体的“高级工程师”做到这一点
+Like, we expect our senior engineers as agents to do the same.
+
+659
+00:41:49,160 --> 00:41:52,200
+有人问，代码是不是一种一次性的构建产物
+Someone asked, is code a disposable build artifact?
+
+660
+00:41:54,400 --> 00:41:58,200
+是的。我觉得我们在Swarm上已经谈到过这一点
+Yes. I think we touch on this with Swarm,
+
+661
+00:41:58,360 --> 00:42:00,780
+Swarm是我们发布的那种智能体编排器
+which is sort of this agent orchestrator that we released.
+
+662
+00:42:00,800 --> 00:42:02,660
+它背后的理念是
+This idea that, you know,
+
+663
+00:42:02,680 --> 00:42:10,820
+我们可以发布一个库，它本质上是一个定义极其清晰的规范，而代码只是这个规范编译出来的产物
+we can publish a library that's actually a super well-defined spec that the code is a compiled artifact of.
+
+664
+00:42:11,380 --> 00:42:18,640
+我认为，把大模型当作一个模糊编译器，是一个很有趣的心智模型
+And I think, like, using LLM as fuzzy compiler is an interesting mental model to have.
+
+665
+00:42:18,940 --> 00:42:23,880
+我们为驾驭式工程放进代码库里的所有上下文
+All of the context that we're putting in the code base for harness engineering is
+
+666
+00:42:23,880 --> 00:42:29,800
+本质上就像是在规定和优化，什么样的代码才是可以被接受
+effectively, like, constraints and optimization passes on which code is acceptable to
+
+667
+00:42:29,800 --> 00:42:31,160
+可以被构建出来的
+build in the first place.
+
+668
+00:42:31,640 --> 00:42:33,340
+这和下面这种情况非常类似
+And this is pretty similar to,
+
+669
+00:42:33,340 --> 00:42:38,620
+就是像LLVM这样的工具在编译Rust代码时做的静态分析和优化过程
+like, the static analysis and optimization passes that something like LLVM would do in the
+
+670
+00:42:38,620 --> 00:42:40,260
+在整个Rust编译流程中所做的那些事情
+process of compiling Rust code.
+
+671
+00:42:41,320 --> 00:42:46,240
+而把一个模型换成另一个模型
+And sort of swapping out one model for another is sort of,
+
+672
+00:42:46,280 --> 00:42:49,400
+有点像把你的代码生成后端从
+like, changing your code generation backend from,
+
+673
+00:42:49,460 --> 00:42:52,360
+LLVM换成Rust编译器里的Cranelift
+you know, LLVM to Cranelift in the Rust compiler.
+
+674
+00:42:52,880 --> 00:42:57,640
+你会期望，关于“什么是可接受的Rust代码”的所有规则
+And you would expect that all of the sort of rules around what acceptable Rust code looks
+
+675
+00:42:57,640 --> 00:43:02,020
+在后端依然会生成有效且健全的机器码
+like produce valid sound machine code at the back,
+
+676
+00:43:02,180 --> 00:43:06,640
+即便生成过程不同，最后得到的x86指令也不一样
+even if the generation process is different and you end up with different x86 instructions.
+
+677
+00:43:06,980 --> 00:43:09,740
+对大模型来说，心态也是一样的
+So same sort of mindset for LLMs,
+
+678
+00:43:09,860 --> 00:43:11,400
+只是换用不同的模型而已
+swapping out different models sort of thing.
+
+679
+00:43:11,520 --> 00:43:19,380
+我们希望围绕代码的结构，基本上能限制代码的写法
+We want the structure around the code to basically limit how it is written to things that
+
+680
+00:43:19,380 --> 00:43:20,780
+让它只能被写成我们可以接受的样子
+would be acceptable to us.
+
+681
+00:43:21,380 --> 00:43:26,200
+从宏观层面上，你能给我们描绘一下你正在构建的未来图景吗
+At a high level, can you give us a picture of what future you're building for?
+
+682
+00:43:26,520 --> 00:43:27,720
+到那时上下文还重要吗
+Does context still matter?
+
+683
+00:43:28,140 --> 00:43:30,100
+人们会如何做工程
+How do people do engineering,
+
+684
+00:43:30,300 --> 00:43:31,680
+如何做驾驭式工程、上下文工程
+harness engineering, context engineering?
+
+685
+00:43:32,000 --> 00:43:33,140
+未来会是什么样子
+What does the future look like?
+
+686
+00:43:35,380 --> 00:43:42,200
+我想要构建的未来，大致是这样的：我可以拿出一个Token预算
+Sort of the future that I want to build toward here is where I'm able to take a token
+
+687
+00:43:42,200 --> 00:43:46,040
+再加上一个季度
+budget and a quarter,
+
+688
+00:43:46,540 --> 00:43:53,320
+半年，或者一年的工作量，然后用人类输入来排序什么最重要
+a half, or a year's worth of work and take the human input to rank what is most important,
+
+689
+00:43:53,780 --> 00:43:56,280
+包括成功指标、可靠性指标
+success metrics, reliability metrics,
+
+690
+00:43:56,660 --> 00:43:57,860
+把这些交给机器
+give it to the machines,
+
+691
+00:43:58,160 --> 00:44:04,140
+让它们持续工作，不断推动我的产品向前发展，而不需要我亲自下场
+and have them continually work and advance my product forward without sort of my hands
+
+692
+00:44:04,140 --> 00:44:05,680
+完全不需要亲自上手操作键盘鼠标
+explicitly on the wheels at all.
+
+693
+00:44:07,600 --> 00:44:12,580
+随着我们从非常早期的原型阶段一路走到内部 Alpha
+As we have gone through very early prototyping to internal alpha,
+
+694
+00:44:13,440 --> 00:44:15,480
+内部 Beta，再到外部 Alpha
+internal beta, external alpha,
+
+695
+00:44:15,480 --> 00:44:20,740
+我逐渐感觉到，软件工程流程中的一些新环节好像
+I kind of have felt that new parts of the software engineering process have kind of
+
+696
+00:44:20,740 --> 00:44:23,540
+是从零开始的，我们不得不一点点把能力搭建起来
+started from zero and we've had to build up capability.
+
+697
+00:44:23,820 --> 00:44:30,500
+有点像那种五边形性格雷达图，在某个方向我能力值拉得很高
+Kind of like these pentagonal personality charts where I spike in this direction,
+
+698
+00:44:30,660 --> 00:44:32,000
+但在另一些方向我可能就比较薄弱
+maybe I'm weak over here.
+
+699
+00:44:32,540 --> 00:44:36,360
+当我们第一次走到真正部署软件这一步时
+And when we get to deployed software for the first time,
+
+700
+00:44:36,900 --> 00:44:42,580
+在构建产物被提升到发布阶段之前，智能体对这些产物做冒烟测试的能力
+the agent's ability to do QA smoke testing on our built artifacts before they're promoted
+
+701
+00:44:42,580 --> 00:44:44,060
+是很薄弱的
+to distribution was weak.
+
+702
+00:44:44,200 --> 00:44:45,620
+我们之前完全没在这方面投入时间
+We hadn't invested any time in this.
+
+703
+00:44:45,720 --> 00:44:49,740
+没有文档，也没有工具让智能体可以下载构建产物
+There were no docs, there were no tools that the agents could use to download the built
+
+704
+00:44:49,740 --> 00:44:54,940
+启动它、到处点点看，来确保我们最关键的用户路径
+artifact, launch it, poke around to make sure that our most critical user journeys were
+
+705
+00:44:54,940 --> 00:44:56,280
+得到了充分的验证和测试
+well validated and tested.
+
+706
+00:44:56,980 --> 00:44:59,700
+所以因为我不想亲自碰电脑
+So because I don't want to be touching the computer,
+
+707
+00:45:00,420 --> 00:45:04,740
+我们就得想办法让智能体自己构建工具来完成这部分工作
+we needed to figure out ways for the agents to build themselves tools to do that part.
+
+708
+00:45:05,720 --> 00:45:10,840
+而在写代码之外，还有整整一个软件工程的宇宙
+And there's a whole universe of software engineering outside of writing code.
+
+709
+00:45:11,080 --> 00:45:12,920
+我在分拣用户反馈
+I'm triaging user feedback,
+
+710
+00:45:13,260 --> 00:45:20,380
+我在处理告警页面，确保线上日志里没有任何个人敏感信息泄露
+I'm triaging pages, I'm making sure that we don't have any PII leaking in the logs in production.
+
+711
+00:45:20,860 --> 00:45:25,140
+我在关注 Twitter 上的舆论氛围，确认大家在享受使用我的软件
+I'm making sure that the Twitter vibes are good and people are enjoying my software.
+
+712
+00:45:25,820 --> 00:45:31,640
+我还要确保用户运营团队有写得很好的操作手册支撑他们
+That our user operations staff are supported with well-written run books that allow them
+
+713
+00:45:31,640 --> 00:45:34,960
+去分级处理并缓解高频用户问题
+to triage and mitigate high-volume user issues.
+
+714
+00:45:35,140 --> 00:45:38,140
+然后再把这些经验落实回代码里，从源头上避免这些问题发生
+And then moving that into the code itself so they don't happen in the first place.
+
+715
+00:45:38,800 --> 00:45:41,920
+而当我不再需要亲自写代码时
+And as I no longer have to produce code,
+
+716
+00:45:42,660 --> 00:45:47,060
+我的精力就可以转向这些更高层次、也更偏软性的活动
+my mind can shift to these other higher-level or more squishy activities,
+
+717
+00:45:47,320 --> 00:45:49,580
+但智能体其实也已经足够胜任这些事情
+but the agents are good enough to do these things, too.
+
+718
+00:45:49,700 --> 00:45:53,800
+而思考如何把流程和验收标准写清楚
+And figuring out how to write down the processes and the acceptance criteria becomes the
+
+719
+00:45:53,800 --> 00:45:57,180
+就成了这份工作里用智能体做元编程的那一部分
+metaprogramming part of the job, using these agents.
+
+720
+00:45:57,680 --> 00:45:58,920
+这是一个非常好的收尾方式
+That's a great way to end it.
+
+721
+00:45:58,960 --> 00:45:59,780
+多么令人兴奋的特性
+What an exciting feature.
+
+722
+00:46:00,160 --> 00:46:01,900
+大家把掌声送给瑞安，谢谢各位
+Give it up for Ryan, guys. Thank you, folks.

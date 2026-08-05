@@ -1,0 +1,4219 @@
+1
+00:00:14,960 --> 00:00:16,060
+大家都准备好了吗
+Everyone ready?
+
+2
+00:00:17,500 --> 00:00:19,680
+太棒了 欢迎来到 AI Engineer
+Awesome. Welcome to AI Engineer.
+
+3
+00:00:20,280 --> 00:00:21,560
+感谢大家来参加我的分享
+Thanks for joining my session.
+
+4
+00:00:22,940 --> 00:00:27,100
+今天我们要讨论用于上下文工程的智能体搜索
+We are going to be talking about agentic search for context engineering today.
+
+5
+00:00:27,900 --> 00:00:29,160
+我叫 Leonie
+My name is Leonie.
+
+6
+00:00:29,380 --> 00:00:33,160
+我在 Elastic 工作 也就是 Elasticsearch 背后的那家公司
+I work at Elastic, the company behind Elasticsearch.
+
+7
+00:00:35,220 --> 00:00:38,700
+平时我喜欢在 Twitter 上聊检索相关的话题
+And usually I like to talk about retrieval on Twitter.
+
+8
+00:00:39,060 --> 00:00:41,280
+今天能在线下和大家一起讨论 我感到非常兴奋
+Today I'm super excited to be doing this in person.
+
+9
+00:00:42,240 --> 00:00:43,600
+先说一点会前说明
+A little bit of housekeeping.
+
+10
+00:00:43,880 --> 00:00:47,460
+如果你想获取我们待会要看的幻灯片和代码
+If you want to access the slides and the code we will be looking at,
+
+11
+00:00:47,500 --> 00:00:49,440
+你可以扫描这个二维码
+you can scan the QR code.
+
+12
+00:00:51,840 --> 00:00:57,860
+那么 我们先从一件事开始 也就是为什么我对搜索和检索如此兴奋 以及希望到这次工作坊结束时你们
+So... let's start with why I'm excited about search and retrieval and hopefully why you
+
+13
+00:00:57,860 --> 00:01:01,020
+也会对它同样感到兴奋
+are excited about it by the end of this workshop as well.
+
+14
+00:01:02,540 --> 00:01:05,720
+在座有谁之前做过智能体 或类似的东西吗
+Who here has built an agent or some form of it before?
+
+15
+00:01:07,200 --> 00:01:13,600
+太好了 那你们大概不会被这张图吓到
+Awesome. Then you are probably not intimidated by this image.
+
+16
+00:01:14,140 --> 00:01:17,560
+你们很可能之前看过和这张类似的其他版本
+You have probably seen some alternative to this one before.
+
+17
+00:01:17,960 --> 00:01:20,880
+这基本上就是上下文工程的样子
+This is essentially what context engineering looks like.
+
+18
+00:01:21,060 --> 00:01:23,220
+所以上下文工程 当我们谈到它时
+So context engineering, when you talk about it,
+
+19
+00:01:23,820 --> 00:01:30,540
+指的是一种艺术或工程方法 即在所有可能的上下文来源中
+is the art or engineering techniques about how from all of the possible context sources we
+
+20
+00:01:30,540 --> 00:01:38,220
+我们究竟如何决定哪些内容进入上下文窗口 以便我们的大语言模型能生成最好的回答
+have, how do we actually decide what goes into the context window so our LLMs can generate the best responses?
+
+21
+00:01:40,240 --> 00:01:41,760
+通常当我们谈论这个话题时
+Often when we talk about this,
+
+22
+00:01:41,840 --> 00:01:49,500
+我们会说是上下文筛选 指的就是这条从上下文来源指向上下文窗口的小箭头
+we talk about context curation and we mean this little arrow from context sources to context window.
+
+23
+00:01:50,340 --> 00:01:55,360
+但我们其实没有给这条小箭头足够的重视
+But we're not giving this little arrow right there enough credit,
+
+24
+00:01:55,580 --> 00:01:59,720
+在我看来 因为真正驱动它的是搜索工具
+in my opinion, because what's powering this is the search tool.
+
+25
+00:02:00,160 --> 00:02:06,140
+或者说是一组搜索工具 真正决定了从上下文来源到上下文窗口的内容
+Or search tools that actually decide what goes from context sources to the context window.
+
+26
+00:02:06,780 --> 00:02:10,280
+今天我们会来看一看我们有哪些不同的搜索工具
+And today we're going to be looking at the different search tools we have.
+
+27
+00:02:10,460 --> 00:02:12,840
+这是我个人的一个观点
+So this is my personal hot take.
+
+28
+00:02:13,240 --> 00:02:19,080
+我倾向于说 上下文工程有大约 80% 都是智能体搜索 因为就是这个
+I like to say that context engineering is about 80% agentic search because it's this
+
+29
+00:02:19,080 --> 00:02:20,040
+这里的这个小方框
+little box right here.
+
+30
+00:02:21,300 --> 00:02:24,220
+好 那我们先从一点小小的历史开始
+All right. Let's start with a little bit of history.
+
+31
+00:02:24,680 --> 00:02:25,580
+当我说历史时
+And when I say history,
+
+32
+00:02:25,680 --> 00:02:26,860
+指的其实就是过去三年
+I mean the last three years.
+
+33
+00:02:28,700 --> 00:02:32,460
+说到 RAG（检索增强生成） 当我们一开始使用 RAG 时
+RAG. When we started with RAG,
+
+34
+00:02:32,600 --> 00:02:36,680
+最初的想法是使用一条固定的检索流水线
+the original idea was that we had a fixed retrieval pipeline.
+
+35
+00:02:37,060 --> 00:02:46,400
+所以用户的消息通常会几乎原封不动地被当作搜索查询
+So the user message would usually more or less verbatim be used as a search query to be
+
+36
+00:02:46,400 --> 00:02:52,620
+通常作为向量搜索查询 从数据库中拉取一些数据或数据块
+used usually as a vector search query to pull some data or chunks from a database.
+
+37
+00:02:53,640 --> 00:02:55,620
+然后连同检索到的上下文一起
+And together with a retrieved context,
+
+38
+00:02:55,800 --> 00:03:00,840
+用户消息会被放入上下文窗口 再一起送入大语言模型
+the user message would go into the context window and then it would be fed to the LLM.
+
+39
+00:03:01,880 --> 00:03:02,420
+听起来还不错
+Nice.
+
+40
+00:03:03,660 --> 00:03:06,360
+但这显然有很多局限
+This has clearly many limitations.
+
+41
+00:03:07,340 --> 00:03:09,060
+因为这是一个固定的流水线
+So since this is a fixed pipeline,
+
+42
+00:03:09,240 --> 00:03:11,720
+不管你实际上需不需要额外上下文
+whether or not you actually need any context,
+
+43
+00:03:12,140 --> 00:03:14,700
+你都会去检索额外的信息
+you're still retrieving additional information.
+
+44
+00:03:15,220 --> 00:03:16,120
+而在最糟糕的情况下
+And in the worst case,
+
+45
+00:03:16,220 --> 00:03:18,340
+这些信息反而会把你的大语言模型搞糊涂 对吧
+that can actually confuse your LLM, right?
+
+46
+00:03:19,600 --> 00:03:22,520
+另一方面 如果你只检索一次
+On the other hand, if you're only retrieving once,
+
+47
+00:03:23,380 --> 00:03:26,520
+比如你需要做一些多跳检索
+let's say you need some multi hop retrieval,
+
+48
+00:03:26,520 --> 00:03:29,320
+你在问大语言模型一个更复杂的问题
+you're asking your LLM something more complex,
+
+49
+00:03:30,020 --> 00:03:32,200
+那么如果你只检索一次
+then if you're only retrieving once,
+
+50
+00:03:32,280 --> 00:03:37,700
+也许第一次检索到的数据块里 暗示了你还需要发起另一个搜索查询
+maybe the retrieved chunks reveal some information about another search query you need,
+
+51
+00:03:37,960 --> 00:03:42,960
+那你其实就会希望能进行第二轮搜索 对吧
+then you would actually might want to have a second round of search, right?
+
+52
+00:03:43,300 --> 00:03:46,800
+这就是为什么后来我们转向了智能体 RAG
+So that's why we then moved on to agentic RAG.
+
+53
+00:03:47,900 --> 00:03:52,260
+我们用一个搜索工具来替代原来的固定流水线
+So we replaced the fixed pipeline with now a search tool.
+
+54
+00:03:52,960 --> 00:04:03,460
+现在智能体可以自己决定要不要调用搜索工具 去检索一些信息
+So now the agent can decide by itself whether or not to call the search tool and retrieve some information.
+
+55
+00:04:03,620 --> 00:04:07,660
+这样我们就不再有 “我到底需不需要额外信息” 这个问题
+So we don't have the problem anymore of do I actually need any information?
+
+56
+00:04:08,160 --> 00:04:10,300
+而且当我真的去检索信息时
+And when I actually retrieve information,
+
+57
+00:04:10,960 --> 00:04:12,200
+也可以判断这些信息是否相关
+is this even relevant?
+
+58
+00:04:12,460 --> 00:04:13,860
+我是否需要再多检索一些
+Do I need to retrieve more?
+
+59
+00:04:15,580 --> 00:04:19,060
+我是不是得先检索点什么
+Do I actually have to retrieve something,
+
+60
+00:04:19,620 --> 00:04:21,020
+再重写搜索查询
+rewrite the search query?
+
+61
+00:04:22,940 --> 00:04:23,320
+没错
+Yeah.
+
+62
+00:04:24,400 --> 00:04:30,540
+不过在这种情况下 我们仍然只有一个上下文来源 也就是一个数据库
+So we still only have one context source in this case, one database.
+
+63
+00:04:31,160 --> 00:04:33,160
+但当我们看上下文工程时
+Now when we look at context engineering,
+
+64
+00:04:33,900 --> 00:04:37,480
+上下文分布在很多不同的地方 对吧
+the context lies in many different places, right?
+
+65
+00:04:37,500 --> 00:04:40,380
+比如我们在本地文件里有上下文来源
+So we have context sources in local files.
+
+66
+00:04:41,080 --> 00:04:43,120
+比如说你的编程智能体
+So when you think about your coding agent,
+
+67
+00:04:43,320 --> 00:04:50,760
+你的代码项目或代码文件很可能就放在本地文件系统里
+you probably have your coding project or code files laying around in your local file system.
+
+68
+00:04:51,320 --> 00:04:54,680
+也许你还在用某种工作记忆
+Maybe you're using some kind of working memory,
+
+69
+00:04:54,800 --> 00:04:59,680
+比如一个草稿板 你会和智能体一起在上面规划你要做什么
+like a scratch pad, so you're planning with your agent what you want to do,
+
+70
+00:04:59,820 --> 00:05:02,580
+那你大概会有一个类似 plan.md 的文件
+then you probably have something like a plan.md file.
+
+71
+00:05:03,740 --> 00:05:05,260
+当你有智能体技能时
+When you have agent skills,
+
+72
+00:05:05,260 --> 00:05:08,940
+它们通常也会放在某个本地文件夹里
+you also have them usually in a local folder somewhere.
+
+73
+00:05:09,800 --> 00:05:11,120
+我们依然有数据库
+We still have databases,
+
+74
+00:05:11,260 --> 00:05:14,860
+因为很多企业会把数据存放在数据库中
+because many enterprises have their data stored in databases.
+
+75
+00:05:16,300 --> 00:05:19,180
+我们还有网络 作为另一个上下文来源
+We have the web as another context source.
+
+76
+00:05:20,200 --> 00:05:24,140
+我知道这张图在这里会非常有争议
+And I know this is a super controversial image here,
+
+77
+00:05:24,200 --> 00:05:29,540
+因为我没有明确把长期记忆放在本地文件系统里 还是放在数据库里
+because I did not commit to having the long-term memory in the local file system or the database.
+
+78
+00:05:29,740 --> 00:05:32,200
+我觉得这目前是一个很大的讨论话题
+This is, I think, currently a very big discussion.
+
+79
+00:05:32,420 --> 00:05:35,020
+如果你们愿意 我们可以在问答环节聊聊这个
+We can get into this in the Q&A, if you like.
+
+80
+00:05:36,020 --> 00:05:39,820
+但无论如何 我们还有长期记忆 作为另一个上下文来源 对吧
+But we also have long-term memory as another context source, right?
+
+81
+00:05:40,960 --> 00:05:44,700
+那我们究竟要如何从这些地方检索上下文呢
+So how do we actually retrieve context from these?
+
+82
+00:05:45,160 --> 00:05:47,420
+通常我们会有一组
+Usually we have a set of,
+
+83
+00:05:47,900 --> 00:05:51,540
+可以说是 “上下文来源原生” 的搜索工具
+let's say, context source native search tools.
+
+84
+00:05:51,760 --> 00:05:53,120
+比如对于本地文件
+So for the local files,
+
+85
+00:05:53,200 --> 00:05:58,500
+你通常会有类似搜索文件工具这样的东西
+you usually have something like a search files tool.
+
+86
+00:05:58,700 --> 00:06:01,900
+对于技能 你通常会有一个技能加载工具
+For skills, you usually have a skill loading tool.
+
+87
+00:06:02,760 --> 00:06:04,360
+当你想到数据库时
+When you think about databases,
+
+88
+00:06:05,540 --> 00:06:07,580
+我们会有一些更定制化的工具
+we have a little bit more custom tools.
+
+89
+00:06:08,460 --> 00:06:12,280
+比如一个语义搜索工具
+So something like a semantic search tool.
+
+90
+00:06:12,680 --> 00:06:16,220
+也许你还会有一些更通用的工具
+Maybe you also have something more general purpose,
+
+91
+00:06:16,460 --> 00:06:20,760
+比如一个可以对数据库执行完整搜索查询的工具
+like a tool that lets you execute entire search queries against the database,
+
+92
+00:06:20,920 --> 00:06:21,960
+比如说 SQL 之类的
+like SQL, for example.
+
+93
+00:06:22,820 --> 00:06:24,920
+对于网络 你会有网络搜索工具
+For web, you have web search tools.
+
+94
+00:06:25,240 --> 00:06:28,520
+对于记忆 你会有类似专门的记忆工具
+And for memory, you have something like a dedicated memory tool.
+
+95
+00:06:29,960 --> 00:06:31,940
+如果光是这些还不够让人觉得信息量爆炸
+If that's not overwhelming enough,
+
+96
+00:06:32,240 --> 00:06:35,060
+我们现在还有一种叫做 Shell 工具的东西
+we now also have something called a shell tool.
+
+97
+00:06:37,060 --> 00:06:38,980
+在 LangChain 里 它被称为 Shell 工具
+Langchain calls it a shell tool.
+
+98
+00:06:39,660 --> 00:06:41,440
+在 Anthropic 里 它被称为 Bash 工具
+Anthropic calls it the bash tool.
+
+99
+00:06:42,060 --> 00:06:45,300
+如果你用过 Claude Code
+If you've played around with Claude Code,
+
+100
+00:06:45,380 --> 00:06:46,700
+它在那里被叫作 执行工具
+it's called the exec tool.
+
+101
+00:06:47,100 --> 00:06:51,760
+但所有这些工具的共同点是它们都能让你的智能体在终端里运行命令
+But what all of these tools do is they let your agent run commands in the terminal.
+
+102
+00:06:52,600 --> 00:06:55,760
+而这实际上让它们变得非常多才多用
+And that actually makes them super versatile.
+
+103
+00:06:56,060 --> 00:07:04,700
+因为现在你可以让智能体使用命令行工具来浏览和探索你的本地文件
+Because now you can let your agent use CLIs to navigate and explore your local files.
+
+104
+00:07:04,820 --> 00:07:09,560
+这样你就可以直接运行 ls 和 grep 在本地文件系统中查找数据
+So you can just run ls and grep to find data in your local file system.
+
+105
+00:07:11,920 --> 00:07:15,320
+如果你的数据库有自定义的命令行工具
+If your database has a custom CLI,
+
+106
+00:07:15,720 --> 00:07:21,600
+你实际上可以让智能体也使用这个 Shell 工具来与数据库交互
+you can actually let the agent also use the shell tool and interact with the database.
+
+107
+00:07:23,080 --> 00:07:28,460
+你还可以让智能体从零开始写出一整个脚本
+You could also let your agent write an entire script from scratch,
+
+108
+00:07:28,600 --> 00:07:29,940
+比如连接到你的数据库
+like connect to your database,
+
+109
+00:07:30,120 --> 00:07:31,060
+然后运行一个搜索查询
+run a search query.
+
+110
+00:07:32,880 --> 00:07:35,800
+如果你的数据库通过 HTTPS 暴露出来
+If your database is exposed via HTTPS,
+
+111
+00:07:36,300 --> 00:07:37,780
+你就可以直接运行一个 curl 命令
+you can just run a curl command,
+
+112
+00:07:38,240 --> 00:07:40,260
+通过这个 Shell 工具与数据库交互
+interact with the database through the shell tool.
+
+113
+00:07:41,440 --> 00:07:46,080
+说到 curl 命令，如果你愿意的话，你也可以进行网页搜索
+Speaking of curl commands, you can also do web searches, if you like.
+
+114
+00:07:47,100 --> 00:07:50,100
+所以这个 Shell 工具是非常多才多用的，对吧
+So this shell tool is super versatile, right?
+
+115
+00:07:50,960 --> 00:07:57,820
+所以今天的问题和主题是……我们到底需要什么样的搜索工具
+So the question and the topic of today is... What search tool do we actually need?
+
+116
+00:07:58,360 --> 00:08:00,340
+我们只需要一个 Shell 工具吗
+Do we only need a shell tool?
+
+117
+00:08:00,620 --> 00:08:02,140
+我需要所有这些工具吗
+Do I need all of these?
+
+118
+00:08:04,280 --> 00:08:07,240
+如果你今天只能带走一个结论
+And if you take home only one thing from today,
+
+119
+00:08:07,560 --> 00:08:11,380
+那就是要把搜索做好是非常困难的
+it's that doing good search is incredibly difficult.
+
+120
+00:08:12,100 --> 00:08:15,920
+这也就是为什么我们有这么多不同的搜索技术，对吧
+And that's why we have many different techniques to do search, right?
+
+121
+00:08:15,980 --> 00:08:17,140
+我们有向量搜索
+We have vector search,
+
+122
+00:08:17,260 --> 00:08:18,380
+我们有关键词搜索
+we have keyword search,
+
+123
+00:08:18,880 --> 00:08:20,240
+甚至在向量搜索里面
+even in vector search,
+
+124
+00:08:20,440 --> 00:08:21,980
+我们有稠密嵌入
+we have dense embeddings,
+
+125
+00:08:22,140 --> 00:08:24,500
+稀疏嵌入、多向量嵌入
+sparse embeddings, multivector embeddings.
+
+126
+00:08:25,040 --> 00:08:27,240
+然后我们还有许多不同的索引技术
+Then we have many different indexing techniques.
+
+127
+00:08:27,620 --> 00:08:34,480
+所以根据你在搜索需求和延迟需求上的不同
+So depending on what kind of search requirements and latency requirements you have,
+
+128
+00:08:35,440 --> 00:08:39,800
+你就需要打造一套适合自己的搜索工具栈，对吧
+you will need to curate your own stack of search tools, right?
+
+129
+00:08:41,660 --> 00:08:44,180
+所以今天我们会看其中的几种
+So today we're going to be looking at a few of these.
+
+130
+00:08:44,540 --> 00:08:45,980
+很遗憾我们只有一个小时
+Unfortunately we only have one hour,
+
+131
+00:08:46,060 --> 00:08:47,940
+所以我没法把所有的都展示给你们
+so I cannot show you all of them.
+
+132
+00:08:50,520 --> 00:08:52,600
+在我们进入代码之前
+Before we get into some code,
+
+133
+00:08:52,740 --> 00:08:59,100
+我想先讲几个构建优秀搜索工具的基本原则
+I want to give you a few fundamentals of building good search tools.
+
+134
+00:09:00,140 --> 00:09:06,440
+因为从表面上看，智能体搜索似乎非常直观
+Because agentic search at the surface level seems very straightforward.
+
+135
+00:09:07,320 --> 00:09:08,760
+用户发出一个请求
+The user makes a request,
+
+136
+00:09:09,940 --> 00:09:12,580
+智能体用正确的参数调用正确的工具
+the agent calls the right tool with the right parameters.
+
+137
+00:09:13,540 --> 00:09:14,920
+我看到有人在笑
+I see someone laughing.
+
+138
+00:09:16,280 --> 00:09:19,100
+检索工具给出工具响应
+The retrieval tool gives you the tool response,
+
+139
+00:09:19,100 --> 00:09:23,160
+然后你的智能体再用正确的答案来回复你
+and then your agent responds to you with the correct answer.
+
+140
+00:09:25,120 --> 00:09:31,280
+在 Elastic，我们帮助很多内部和外部团队构建智能体来与
+At Elastic, we help a lot of internal and external teams build agents to interact with
+
+141
+00:09:31,280 --> 00:09:37,700
+Elasticsearch 数据交互，而现实情况是，这个过程会以各种方式出错
+Elasticsearch data, and the reality is that this can break in many different ways.
+
+142
+00:09:38,600 --> 00:09:41,480
+我今天只给你们展示三种
+I'm just going to show you three today.
+
+143
+00:09:41,680 --> 00:09:45,020
+第一种是智能体根本不调用任何工具
+So the first is the agent doesn't call any tool.
+
+144
+00:09:46,080 --> 00:09:51,660
+这意味着智能体认为自己可以仅凭参数化知识来回答这个问题
+So this means the agent decides I actually can answer this question based on my parametric knowledge.
+
+145
+00:09:51,900 --> 00:09:56,020
+我不需要使用任何上下文检索工具
+I don't need to use any context retrieval tool.
+
+146
+00:09:56,580 --> 00:09:59,960
+另一种问题是智能体调用了错误的工具
+And the other problem is that the agent calls the wrong tool.
+
+147
+00:10:00,300 --> 00:10:02,960
+我最近在和一位同事聊天
+I was recently talking to a colleague of mine,
+
+148
+00:10:03,320 --> 00:10:07,920
+我问他，你的项目里最具挑战性的部分是什么
+I was asking him what was the most challenging aspect of your project,
+
+149
+00:10:08,080 --> 00:10:10,040
+他说，你可能不会相信
+and he was like, you won't believe it,
+
+150
+00:10:10,120 --> 00:10:14,700
+但最难的是让智能体不要去调用网络搜索工具
+but it was really difficult to get the agent to actually not call the web search tool,
+
+151
+00:10:15,160 --> 00:10:17,060
+而是去调用数据库搜索工具
+but call the database search tool.
+
+152
+00:10:19,420 --> 00:10:24,640
+然后，根据你的搜索工具参数有多复杂
+And then, depending on how complex your parameters are for your search tool,
+
+153
+00:10:25,400 --> 00:10:32,440
+让智能体生成正确的搜索参数也会变得相当困难，对吧
+it can also be quite challenging to get your agent to generate the right search parameters, right?
+
+154
+00:10:34,100 --> 00:10:35,860
+还有很多其他失败场景
+There's many more failure cases,
+
+155
+00:10:35,980 --> 00:10:38,680
+但我们今天就只讨论这三种
+but we're going to limit this to these three today.
+
+156
+00:10:40,580 --> 00:10:43,120
+我个人其实很讨厌这一页
+So I personally hate this slide,
+
+157
+00:10:43,240 --> 00:10:49,100
+因为我觉得在座各位大概都知道，工具描述是最重要的部分
+because I feel like everyone in this room probably knows that the tool description is the most important aspect.
+
+158
+00:10:49,980 --> 00:10:52,300
+但每次我看到别人写的工具描述
+But any time I see a tool description,
+
+159
+00:10:52,520 --> 00:10:54,000
+都是最省力的那种
+it's like the least effort,
+
+160
+00:10:54,280 --> 00:10:59,220
+就一句话，然后你还在纳闷为什么你的智能体总是调用不到正确的工具
+one sentence, and then you're wondering why your agent isn't calling the right tool.
+
+161
+00:11:00,140 --> 00:11:03,640
+可以说，这是一个非常长的工具描述
+So arguably, this is a very long tool description.
+
+162
+00:11:04,160 --> 00:11:06,340
+我并不是说你必须写成这样
+I'm not saying you have to write it like this.
+
+163
+00:11:06,760 --> 00:11:10,500
+我只是说，如果你一开始只写一个核心用途
+I'm just saying if you just start with a core purpose,
+
+164
+00:11:10,860 --> 00:11:12,700
+如果效果不错，那就很好
+if it works fine, great.
+
+165
+00:11:13,220 --> 00:11:15,340
+但如果你加了更多参数
+But if you add more parameters,
+
+166
+00:11:15,740 --> 00:11:22,240
+或者增加了更多工具，而你的智能体开始难以调用正确的工具
+or more tools, and your agent is starting to struggle with calling the right tool,
+
+167
+00:11:22,620 --> 00:11:26,520
+那就可以考虑加上一些触发条件
+then maybe add some trigger condition.
+
+168
+00:11:26,840 --> 00:11:28,160
+这个工具应该在什么时候被使用
+When should this tool be used?
+
+169
+00:11:28,260 --> 00:11:29,720
+什么时候不应该使用这个工具
+When should this tool not be used?
+
+170
+00:11:30,340 --> 00:11:32,640
+尤其是当你有多个工具时
+Especially if you have multiple tools,
+
+171
+00:11:33,020 --> 00:11:36,520
+加上一些类似“工具之间关系”的说明就非常重要
+adding something like relationships is super important.
+
+172
+00:11:36,760 --> 00:11:40,760
+比如在真正调用这个工具之前，先调用某个智能体技能
+Like first call this agent skill before you actually call this tool.
+
+173
+00:11:40,940 --> 00:11:43,940
+或者在调用这个工具之前先获取一些确认
+Or get some confirmation before you call this tool.
+
+174
+00:11:46,180 --> 00:11:50,680
+如果你已经有了完美的工具描述，而智能体仍然没有调用正确的工具
+If you have the perfect tool description and your agent still doesn't call the right tool,
+
+175
+00:11:50,820 --> 00:11:53,700
+那就把这些内容强化写进智能体的系统提示词里
+then reinforce it in the agent system prompt.
+
+176
+00:11:53,820 --> 00:11:56,860
+这在大多数情况下都会有所帮助
+That should actually help out in most cases.
+
+177
+00:11:58,360 --> 00:12:03,400
+接下来我想快速讲一下参数复杂度的问题
+Then I want to quickly touch on some on the parameter complexity.
+
+178
+00:12:05,660 --> 00:12:08,660
+如果你的搜索工具非常简单
+If you have a search tool that's just very simple,
+
+179
+00:12:08,920 --> 00:12:12,020
+比如类似“通过 ID 获取客户”这种
+in the sense that something like get customer by ID,
+
+180
+00:12:12,640 --> 00:12:17,280
+对智能体来说生成一个 ID 参数应该是相当直接的
+it should be fairly straightforward for the agent to generate an ID parameter,
+
+181
+00:12:17,780 --> 00:12:19,800
+前提是这是一个有效的 ID
+given that it's a valid ID.
+
+182
+00:12:21,700 --> 00:12:23,900
+做语义搜索也是一样，对吧
+Same for if you're doing a semantic search, right?
+
+183
+00:12:24,380 --> 00:12:30,120
+生成一段有效的字符串一般不会有什么问题
+Generating some valid string shouldn't cause any issues.
+
+184
+00:12:30,900 --> 00:12:34,580
+但假设你想要一个语义搜索工具
+But let's say if you want to have a semantic search tool,
+
+185
+00:12:34,760 --> 00:12:37,660
+而且不只是给一个主题
+and instead of just giving a topic,
+
+186
+00:12:38,180 --> 00:12:40,920
+你现在还想给它一些过滤条件
+you now also want to give it some filter conditions.
+
+187
+00:12:41,280 --> 00:12:43,100
+也许你还想定义 Top K（返回前 K 条）
+Maybe you want to define the top K.
+
+188
+00:12:43,600 --> 00:12:45,900
+那你就开始有更多参数了，对吧
+Then you start to have more parameters, right?
+
+189
+00:12:46,500 --> 00:12:48,520
+这里的例子还不算太复杂
+This isn't very complex here,
+
+190
+00:12:48,620 --> 00:12:51,320
+但你的参数列表越长
+but the longer the list of parameters you have,
+
+191
+00:12:51,720 --> 00:12:55,960
+智能体要生成正确参数就会变得越困难
+the more difficult it's going to get for the agent to generate the right ones.
+
+192
+00:12:57,300 --> 00:13:02,920
+而我认为对智能体来说非常复杂的一种情况是，当你有一个更通用的东西
+And I think a very complex one for an agent is when you have something that's more general
+
+193
+00:13:02,920 --> 00:13:10,040
+比如让智能体对数据库执行完整的搜索查询
+purpose, like letting the agent execute entire search queries against the database.
+
+194
+00:13:10,460 --> 00:13:14,600
+比如这里我用的是 ESQL，也就是 Elastic 搜索查询语言
+So here I have ESQL, which is the Elastic Search Query Language.
+
+195
+00:13:15,080 --> 00:13:21,600
+也可能是 SQL，因此让代理从零开始写出一整条 SQL 查询会相当具有挑战性
+It could be SQL as well, so letting the agent write an entire SQL query from scratch can be quite challenging.
+
+196
+00:13:21,800 --> 00:13:25,100
+大多数情况下效果还不错，但有些就不太行
+Most are pretty good, but some aren't.
+
+197
+00:13:25,780 --> 00:13:26,980
+所以要记住一点
+So just keep in mind,
+
+198
+00:13:27,700 --> 00:13:34,560
+可以说参数的复杂度本身也是一种失败模式
+let's say the complexity of the parameter also is kind of a failure mode,
+
+199
+00:13:34,700 --> 00:13:41,780
+而且如果这些问题比较复杂的话你可能需要在其中一些方面帮智能体一把
+and you might need to help the agent out with a few of these if they are more complex.
+
+200
+00:13:43,780 --> 00:13:46,540
+好的 我们来看一点代码
+Good. Let's look at some code.
+
+201
+00:14:00,010 --> 00:14:03,930
+好 那么快速举个手
+Okay. So quick show of hands,
+
+202
+00:14:04,010 --> 00:14:08,270
+在座谁之前做过某种智能体 RAG 或智能体搜索
+who here has built some sort of agentic rag, agentic search before?
+
+203
+00:14:09,730 --> 00:14:11,230
+好 大概一半人 不错
+Okay. About half. That's good.
+
+204
+00:14:13,090 --> 00:14:15,510
+接下来我们要看三件事
+So we're going to be looking at three things.
+
+205
+00:14:16,390 --> 00:14:22,030
+我会先快速回顾或介绍一个非常基础版的智能体搜索示例
+I'm going to give you a quick recap or intro to the very vanilla agentic search demo,
+
+206
+00:14:22,710 --> 00:14:28,030
+然后我会给你们展示这个常见示例有多容易被搞崩
+and then I'm going to show you how easy it is to break this usual demo.
+
+207
+00:14:29,030 --> 00:14:34,050
+接着我们会把语义搜索工具替换成一个更通用的东西
+And then we're replacing the semantic search tool with something more general purpose.
+
+208
+00:14:34,850 --> 00:14:38,170
+也就是说我们让智能体从零开始自己写完整的搜索查询
+So we're letting the agent write an entire search query from scratch.
+
+209
+00:14:39,310 --> 00:14:42,190
+对于前两个示例
+And for these two examples,
+
+210
+00:14:42,410 --> 00:14:47,870
+我们会使用本地的 Elasticsearch 集群作为上下文来源
+we will be using a local Elastic Search cluster as a context source.
+
+211
+00:14:48,110 --> 00:14:49,650
+然后在第三部分
+And then for the third part,
+
+212
+00:14:49,710 --> 00:14:54,670
+我会切换一下方向 给你们展示如何在本地文件系统上做搜索
+I'm switching gears, and I'm going to be showing you how search over a local file system
+
+213
+00:14:54,670 --> 00:14:57,310
+也就是用 Bash 工具来实现
+works with the bash tool,
+
+214
+00:14:57,690 --> 00:14:59,810
+或者说用 Shell 工具来实现
+and then I'm also going to show... or the shell tool.
+
+215
+00:15:00,530 --> 00:15:05,630
+接着我还会给你们展示 Shell 工具的一些局限性 以及你可以如何
+And then I'm also going to show you some limitations of the shell tool and how you can
+
+216
+00:15:05,630 --> 00:15:07,490
+通过自定义 CLI 来扩展它
+expand it with custom CLIs.
+
+217
+00:15:10,390 --> 00:15:19,730
+好 今天我们要做的示例是 我手里有本次大会的所有会议日程数据
+All right. The example that we'll be doing today is I have the conference session data of this conference here.
+
+218
+00:15:21,490 --> 00:15:24,410
+我先给你们看一下
+And let me show you this one.
+
+219
+00:15:24,790 --> 00:15:26,010
+先快速回顾一下
+So just a quick recap.
+
+220
+00:15:27,030 --> 00:15:30,490
+我们有一个 Elasticsearch 数据库
+We have an Elastic Search database,
+
+221
+00:15:30,770 --> 00:15:36,090
+我们要在上面写一个语义搜索工具
+and we're going to be writing a semantic search tool.
+
+222
+00:15:37,370 --> 00:15:44,830
+在这个数据库里 我已经把会议日程切成了数据块
+And in the database, I have the conference session already chunked.
+
+223
+00:15:45,070 --> 00:15:48,830
+你们大概已经知道如何把数据切块并存进数据库
+You probably already know how to chunk and store data in a database,
+
+224
+00:15:49,050 --> 00:15:50,230
+所以这部分我们就略过
+so we're skipping this part.
+
+225
+00:15:50,290 --> 00:15:51,630
+这不是今天的重点
+This is not the important aspect.
+
+226
+00:15:54,970 --> 00:15:57,950
+那么在大语言模型里要构建一个智能体 我们需要什么
+So what do we need for an agent in LLM?
+
+227
+00:15:58,830 --> 00:15:59,870
+啊 不好意思
+Oh, sorry.
+
+228
+00:16:01,270 --> 00:16:06,110
+在这个环节我们会使用 LangChain
+We're going to be using LangChain for this session,
+
+229
+00:16:06,410 --> 00:16:08,770
+主要是因为它封装了很多复杂细节
+just because it wraps a lot of the complexity,
+
+230
+00:16:10,070 --> 00:16:14,730
+让我们可以把精力放在高层概念上
+and it lets us concentrate on the high-level concepts.
+
+231
+00:16:15,150 --> 00:16:20,390
+而且它有一些很好用的内置功能 比如内置了 Shell 工具
+Also, it has some nice built-in features like the shell tool is built in,
+
+232
+00:16:20,530 --> 00:16:24,070
+还提供了技能加载工具的代码示例
+and it has some code samples for skill-loading tools,
+
+233
+00:16:24,170 --> 00:16:25,550
+这些我们待会也会看
+which we will be looking at later.
+
+234
+00:16:27,090 --> 00:16:28,750
+好 我们切回正题
+Okay. Switching back.
+
+235
+00:16:29,750 --> 00:16:33,370
+在这个演示里我用的是 GPT-4.1 nano
+I'm using GPT-4.1 nano for this demo.
+
+236
+00:16:34,610 --> 00:16:37,450
+接着我们定义一个非常简单的系统提示词
+Then we're defining a very simple system prompt,
+
+237
+00:16:37,630 --> 00:16:42,310
+就是那种很常见的 你是一个负责回答问题的搜索智能体
+so the usual you are a search agent tasked with answering questions.
+
+238
+00:16:44,290 --> 00:16:47,210
+你可以使用不同的上下文检索工具
+You have access to different context-retrieval tools,
+
+239
+00:16:47,450 --> 00:16:49,010
+在回答问题之前
+and before answering a question,
+
+240
+00:16:49,550 --> 00:16:52,990
+先判断自己是否需要检索额外的上下文
+decide whether or not you need to retrieve additional context.
+
+241
+00:16:54,190 --> 00:16:55,690
+为了稍微帮智能体一把
+To help the agent a little bit,
+
+242
+00:16:55,890 --> 00:17:01,210
+我提供了一些关于数据在 Elasticsearch 中是如何组织的信息
+I have some information about how the data is structured in Elasticsearch,
+
+243
+00:17:01,410 --> 00:17:03,730
+比如这里我们有一个 text 字段
+so here we have a text field.
+
+244
+00:17:04,250 --> 00:17:09,350
+它由每个会议的标题和每个会议的描述拼在一起组成
+It's comprised of the title of each session and the description of each session,
+
+245
+00:17:09,770 --> 00:17:15,490
+而 text 字段才是真正会被做成向量嵌入 用于语义
+and the text field is what actually gets embedded as the vector embeddings for semantic
+
+246
+00:17:15,490 --> 00:17:19,190
+搜索的 另外我还有一些元数据字段
+search, and then I also have some metadata fields,
+
+247
+00:17:19,470 --> 00:17:24,010
+比如说，日期、时间、教室、演讲者的名字，
+so, for example, the day, the time, the room, the speaker's name,
+
+248
+00:17:24,730 --> 00:17:27,270
+由于这些元数据没有被做成嵌入
+so since the metadata is not embedded,
+
+249
+00:17:27,690 --> 00:17:30,550
+我只能在它们上面做过滤
+I can only run filters over them,
+
+250
+00:17:30,750 --> 00:17:32,350
+而不能做语义搜索
+but not any semantic search,
+
+251
+00:17:32,770 --> 00:17:34,570
+这里先说明一下
+just for your information.
+
+252
+00:17:35,930 --> 00:17:36,130
+好
+Okay.
+
+253
+00:17:37,450 --> 00:17:39,310
+接下来是有意思的部分
+Now, the interesting part.
+
+254
+00:17:39,950 --> 00:17:41,590
+我们来构建一个语义搜索工具
+Let's build a semantic search tool.
+
+255
+00:17:42,310 --> 00:17:47,270
+在 LangChain 里要这么做 首先我得定义一个嵌入模型
+So, how that works in LangChain is I have to first define an embedding model.
+
+256
+00:17:47,450 --> 00:17:51,470
+这里我用的是新的 Jina Embeddings v3 模型
+In this case, I'm using the new Jina Embeddings v3 model.
+
+257
+00:17:53,730 --> 00:17:58,330
+它用来在查询时对搜索查询做嵌入
+This is used to embed the search queries at query time,
+
+258
+00:17:59,250 --> 00:18:07,010
+然后我把这个嵌入模型和 Elasticsearch 里的数据结合起来
+and the embedding model I'm putting with putting it into my Elasticsearch store together
+
+259
+00:18:07,010 --> 00:18:11,410
+在 Elastic 里创建一个向量存储
+with Elastic data to create a vector store,
+
+260
+00:18:11,990 --> 00:18:17,950
+接着我就可以基于它创建一个搜索工具
+and then I can create a search tool.
+
+261
+00:18:18,390 --> 00:18:25,750
+在这个例子里 我只需要调用相似度搜索的方法
+So, in this case, I have all I have to do is I call the similarity search method.
+
+262
+00:18:25,930 --> 00:18:27,670
+它接收一个搜索查询
+It takes in a search query,
+
+263
+00:18:28,150 --> 00:18:31,970
+在这里我把 Top K（返回前 K 条）设成了 3
+and in this case, I'm setting the top K to three.
+
+264
+00:18:32,690 --> 00:18:34,430
+这里稍微埋个伏笔
+This is a little bit of foreshadowing,
+
+265
+00:18:34,530 --> 00:18:41,570
+因为我把这个工具的能力限制在只能返回三条搜索结果 对吧
+because I'm limiting the capabilities of this tool to just returning three search results, right?
+
+266
+00:18:43,290 --> 00:18:48,350
+LangChain 还有个很好的地方是 当你在上面用这个 tool 装饰器时
+What's nice in LangChain as well is that when you use the tool decorator up here,
+
+267
+00:18:48,890 --> 00:18:52,590
+它可以把任意 Python 函数转换成一个搜索工具
+it lets you convert any Python function into a search tool.
+
+268
+00:18:53,010 --> 00:18:54,870
+抱歉 更准确说是转换成一个智能体工具
+Sorry. Into an agent tool.
+
+269
+00:18:55,750 --> 00:19:04,430
+默认情况下 它会把 Python 函数名当作工具名
+So, by default, it takes the Python functions name as the tool name,
+
+270
+00:19:04,730 --> 00:19:10,950
+而下面的文档字符串会被转换成工具描述
+and the doc string down here is going to get converted into the tool description.
+
+271
+00:19:11,770 --> 00:19:17,850
+你可以看到我在这里其实违背了自己的原则 因为这个工具描述非常短
+You can see I'm breaking my own rule by having a very short tool description here.
+
+272
+00:19:18,570 --> 00:19:23,050
+之所以还能凑合用 是因为我这里只有一个搜索工具 对吧
+Why this works is because I only have one search tool here, right?
+
+273
+00:19:23,150 --> 00:19:27,570
+你们会看到我后面会再加一些东西
+So, you will see I'm adding a few things later on,
+
+274
+00:19:27,710 --> 00:19:31,510
+不过在这个演示里也不会写得特别详细
+but it's not going to get very descriptive in this demo here.
+
+275
+00:19:32,550 --> 00:19:39,750
+现在我们可以跑一下测试 用 regulatory constraints 这个搜索查询来试试
+So, now we can run a test and test it for a search query of regulatory constraints,
+
+276
+00:19:40,250 --> 00:19:46,390
+你会看到它找到了我一个朋友做的演讲 主题是如何在主权
+and you can see it finds a talk by my friend on engineering AI systems under sovereignty
+
+277
+00:19:46,390 --> 00:19:50,570
+约束下构建 AI 系统 同时它还找到了更多相关的演讲
+constraints, and it also finds some more talks.
+
+278
+00:19:50,950 --> 00:19:53,390
+一个是 Tejas 的 还有一个是 Pedro 的
+One by Tejas and one by Pedro.
+
+279
+00:19:55,150 --> 00:19:57,290
+好 那我们把它接入进去
+All right. Let's plug it in.
+
+280
+00:19:58,610 --> 00:20:00,990
+我们把大语言模型
+So, we're plugging in the LLM,
+
+281
+00:20:01,290 --> 00:20:02,870
+系统提示词和搜索工具都接起来
+the system prompt, and the search tool.
+
+282
+00:20:03,790 --> 00:20:04,930
+我这里没有加记忆
+I'm leaving out memory.
+
+283
+00:20:05,210 --> 00:20:07,870
+很明显 记忆本来也是智能体的一个核心组件
+Obviously, this would be another core component of an agent.
+
+284
+00:20:07,870 --> 00:20:12,230
+但在这个例子里我把它省略掉 让示例更简洁一点
+In this case, I'm leaving it out to keep it kind of concise.
+
+285
+00:20:14,190 --> 00:20:23,390
+现在我可以问一个简单的问题 比如 哪些会议讨论了 AI
+Now, I can run a simple question like which sessions discuss regulatory constraints in AI
+
+286
+00:20:23,390 --> 00:20:30,450
+系统中的监管约束 你会看到智能体首先调用了我的语义搜索工具
+systems, and you can see the agent first calls my semantic search tool.
+
+287
+00:20:30,910 --> 00:20:35,610
+它写了一个相当长的搜索查询
+It wrote a quite extensive search query,
+
+288
+00:20:35,810 --> 00:20:37,590
+在我看来有点啰嗦 但确实能用
+in my opinion, but it works.
+
+289
+00:20:38,410 --> 00:20:40,490
+它找到了 Bilge 做的那场正确的演讲
+It finds the right talk by Bilge.
+
+290
+00:20:41,470 --> 00:20:45,010
+然后它觉得这显然还不够
+Then it decided that that apparently wasn't enough,
+
+291
+00:20:45,170 --> 00:20:47,430
+于是又重写了一次搜索查询
+so it rewrote the search query,
+
+292
+00:20:48,130 --> 00:20:52,970
+但最后拿到的搜索结果其实和之前非常相似
+but decided but got the very similar search results back.
+
+293
+00:20:53,950 --> 00:20:57,550
+所以在那之后 它就决定 抱歉
+So, after that, it decided that sorry,
+
+294
+00:20:58,290 --> 00:21:04,050
+它决定自己现在已经可以用这些正确的演讲来回答问题了
+it decided that it's now able to respond with the right talks.
+
+295
+00:21:05,990 --> 00:21:09,450
+大多数智能体搜索演示到这里就宣告成功
+This is where most agentic search demos fail,
+
+296
+00:21:10,130 --> 00:21:11,490
+但其实这种方式非常脆弱
+but this is very brittle.
+
+297
+00:21:12,290 --> 00:21:14,870
+有没有人想过我们要怎么把它搞崩
+Does anyone have an idea how we can break this?
+
+298
+00:21:22,400 --> 00:21:23,780
+是的，这是个好主意
+Yes, that's a good idea.
+
+299
+00:21:24,860 --> 00:21:25,840
+还有别的吗
+Anything else?
+
+300
+00:21:30,460 --> 00:21:34,820
+问它一些数据库里没有的内容会很不错
+Asking it something that's not in the database would be something great.
+
+301
+00:21:35,000 --> 00:21:40,740
+要不要问它一个语义搜索实际上会失效的问题
+What about asking it something where semantic search actually falls short?
+
+302
+00:21:41,100 --> 00:21:45,600
+比如一个我们想要查找某个关键词、某个特定关键词的问题
+Maybe something where we want to look for a keyword, a specific keyword.
+
+303
+00:21:48,160 --> 00:21:50,220
+还可以做一些类似过滤的事情
+Also doing something like filtering,
+
+304
+00:21:50,560 --> 00:21:52,100
+因为在这个搜索工具里
+because in this search tool,
+
+305
+00:21:52,200 --> 00:21:54,780
+我们其实没有实现任何过滤功能对吧
+we don't have any filters implemented, right?
+
+306
+00:21:56,460 --> 00:22:07,020
+所以我选择的搜索问题是我应该参加哪些会议来更多了解 JEPA
+So, my choice of search query is which sessions should I visit to learn more about JEPA?
+
+307
+00:22:08,280 --> 00:22:09,500
+我都不太确定
+I'm not even sure.
+
+308
+00:22:09,700 --> 00:22:12,360
+就是我听别人谈起过 JEPA
+Like, I've heard people talk about JEPA.
+
+309
+00:22:12,560 --> 00:22:14,900
+我都不确定自己发音是不是对的
+I'm not even sure if I'm pronouncing it correctly.
+
+310
+00:22:15,060 --> 00:22:18,180
+抱歉 这就是我一定得参加这场会议的原因
+Sorry. That's why I need to definitely attend this session.
+
+311
+00:22:20,380 --> 00:22:26,920
+所以你现在可以看到智能体调用了语义搜索工具
+So, what you can see is the agent now calls the semantic search tool,
+
+312
+00:22:27,520 --> 00:22:29,820
+这一次它在搜索 JEPA
+and this time it's looking for JEPA.
+
+313
+00:22:30,320 --> 00:22:31,200
+目前为止一切正常
+So far, so good.
+
+314
+00:22:32,340 --> 00:22:40,180
+但你会看到它实际上返回的是一场关于 DeepMind 的 Gemma 模型的演讲
+But now you can see it's actually returning a talk for DeepMind's Gemma models.
+
+315
+00:22:40,940 --> 00:22:45,380
+我猜从分词的角度来看
+I guess from a tokenization perspective,
+
+316
+00:22:45,540 --> 00:22:47,300
+它可能和 JEPA 有点相似
+it could be similar to JEPA,
+
+317
+00:22:47,400 --> 00:22:48,600
+或者 JEPA 我也不确定
+or JEPA, I don't know.
+
+318
+00:22:49,700 --> 00:22:52,100
+然后它又返回了一些关于 harness engineering 的内容
+Then it returns something on harness engineering.
+
+319
+00:22:52,660 --> 00:22:54,780
+我不确定那是不是一定相关
+I'm not sure if that's necessarily related.
+
+320
+00:22:55,840 --> 00:22:57,680
+然后还有第三个
+And then a third one.
+
+321
+00:22:58,520 --> 00:23:01,060
+很明显这些都和 JEPA 没什么关系
+Clearly none of these are related to JEPA.
+
+322
+00:23:03,840 --> 00:23:07,880
+提前透露一下 我知道是有一场关于 JEPA 或 JEPA 的演讲的
+Spoiler alert. I know there's a talk about JEPA or JEPA.
+
+323
+00:23:08,140 --> 00:23:10,120
+我记得应该就在这一场之后
+Again, I think it's right after this one.
+
+324
+00:23:10,720 --> 00:23:15,560
+所以我们可以看到我们刚刚创建的这个搜索工具
+So, we can see the search tool we just created,
+
+325
+00:23:15,960 --> 00:23:17,460
+它并不是特别有用
+it's not very useful.
+
+326
+00:23:18,020 --> 00:23:23,940
+至少说它只在非常窄的一小部分场景里有用 对吧
+Or at least useful only for a very narrow scope of use cases, right?
+
+327
+00:23:26,080 --> 00:23:30,220
+那如果我们现在让智能体从零开始自己写一整条搜索查询呢
+What if we let the agent now write an entire search query from scratch?
+
+328
+00:23:30,840 --> 00:23:32,440
+我来给你演示一下我们怎么做到这一点
+Let me show you how we can do this.
+
+329
+00:23:33,600 --> 00:23:41,840
+所以我们现在把之前的数据库工具替换成一个执行查询工具
+So, we're now replacing the database tool that we had with an execute query tool.
+
+330
+00:23:41,980 --> 00:23:46,440
+也就是说我们不只是让智能体接收一个主题
+So, we're letting the agent not only take like a topic,
+
+331
+00:23:47,020 --> 00:23:52,460
+而是这一次我们给搜索工具的是一整条搜索查询
+but this time we're giving the search tool an entire search query.
+
+332
+00:23:53,660 --> 00:23:55,440
+接下来我要给你演示
+And I'm going to show you,
+
+333
+00:23:55,960 --> 00:23:58,360
+因为这对智能体来说其实挺难的
+because this is quite difficult for an agent,
+
+334
+00:23:59,020 --> 00:24:01,740
+我们还把它和一个技能加载工具结合在一起
+we're also combining it with a skill loading tool.
+
+335
+00:24:06,260 --> 00:24:08,200
+所以还是做同样的事情
+So, doing the same thing.
+
+336
+00:24:08,320 --> 00:24:09,520
+我先配置我的大语言模型
+I'm setting up my LLM.
+
+337
+00:24:10,640 --> 00:24:14,600
+你可能已经注意到我这里换成了一个稍微更强一点的模型
+You've probably noticed I'm switching to a little more powerful model here.
+
+338
+00:24:14,960 --> 00:24:19,200
+所以我从 GPT-4.1 nano 换成了 mini
+So, I'm switching from the GPT-4.1 nano to the mini.
+
+339
+00:24:19,820 --> 00:24:24,340
+因为我预期写搜索查询会稍微难一点
+Because I am now anticipating that writing search queries is a little bit more difficult.
+
+340
+00:24:24,500 --> 00:24:27,000
+所以 nano 可能不太够用
+So, the nano is probably not powerful enough.
+
+341
+00:24:29,740 --> 00:24:32,900
+我用的还是和之前完全一样的系统提示词
+I'm using the exact same system prompt as before.
+
+342
+00:24:34,660 --> 00:24:38,640
+现在我在创建一个通用的数据库查询工具
+And now I'm creating a general purpose database query tool.
+
+343
+00:24:38,640 --> 00:24:42,520
+因为我用的是 Elasticsearch
+So, since I'm using Elasticsearch,
+
+344
+00:24:42,720 --> 00:24:46,500
+所以我要使用 Elasticsearch 查询语言
+I'm going to be using the Elasticsearch query language,
+
+345
+00:24:46,800 --> 00:24:49,240
+它是一种用于过滤
+which is a piped query language for filtering,
+
+346
+00:24:49,600 --> 00:24:51,180
+转换和分析数据的管道式查询语言
+transforming, and analyzing data.
+
+347
+00:24:52,880 --> 00:24:54,640
+它大概长这样
+It looks something like this.
+
+348
+00:24:55,220 --> 00:24:57,040
+可能会让你想到 SQL
+Maybe it reminds you of SQL.
+
+349
+00:24:57,680 --> 00:24:58,700
+但它还是有点不一样
+It's a little bit different.
+
+350
+00:24:58,840 --> 00:25:00,040
+它有不同的能力
+It has different capabilities.
+
+351
+00:25:00,480 --> 00:25:02,320
+这些对本场会议来说不重要
+Not important for this session.
+
+352
+00:25:03,680 --> 00:25:10,100
+但你可以看到当我连接到客户端 然后用这个 SQL 类里的 query 方法
+But you can see when I connect to my client and then I use this query method from the SQL
+
+353
+00:25:10,100 --> 00:25:13,380
+并运行这条查询时
+class and run this query,
+
+354
+00:25:13,580 --> 00:25:17,960
+你会看到确实有一场 Samuel 主讲的会议
+you can actually see that there is a session by Samuel,
+
+355
+00:25:18,620 --> 00:25:20,720
+里面讲了很多关于 JEPA 的内容
+which talks a lot about JEPA.
+
+356
+00:25:21,240 --> 00:25:22,500
+你可以看到这里有一个匹配
+You can see here is a match.
+
+357
+00:25:23,680 --> 00:25:24,780
+这里还有一个匹配
+Here is another match.
+
+358
+00:25:26,560 --> 00:25:29,160
+所以我们把这个封装成一个搜索工具
+So, let's wrap this into a search tool.
+
+359
+00:25:33,800 --> 00:25:41,040
+你可以看到这次我在这里又只是调用了一次 query 方法
+You can see this time I just used the query method again here.
+
+360
+00:25:41,560 --> 00:25:45,460
+智能体把 ESQL 查询作为参数传进来
+And the agent takes in the ESQL query as a parameter.
+
+361
+00:25:47,480 --> 00:25:54,600
+然后我把工具描述改成了“对会议日程执行一条 ESQL 查询”
+And I exchanged the tool description with something that's called execute an ESQL query
+
+362
+00:25:54,600 --> 00:25:55,920
+这样的描述
+against the conference schedule.
+
+363
+00:25:56,280 --> 00:25:57,980
+该索引在 Elasticsearch 中
+Index in Elasticsearch.
+
+364
+00:25:59,600 --> 00:26:05,300
+你有没有注意到我写这个搜索工具和之前那个有什么不同
+Notice anything different about how I wrote this search tool versus the other one?
+
+365
+00:26:13,190 --> 00:26:19,610
+这次我在这里加了一个 try except 块来做错误处理
+This time I added a try except block here for error handling.
+
+366
+00:26:20,490 --> 00:26:22,710
+一般来说你都应该做错误处理
+Generally speaking, you should have error handling.
+
+367
+00:26:23,190 --> 00:26:29,910
+但因为我预期写出一条好的 或者说合法的 ESQL 查询
+But since I'm anticipating that writing a good ESQL query or a valid one is gonna cause
+
+368
+00:26:29,910 --> 00:26:32,470
+会给工具带来更多问题
+more problems for the tool,
+
+369
+00:26:33,070 --> 00:26:37,110
+我不希望智能体一失败整个系统就崩掉
+I don't want the agent to just fail and then the whole system to crash.
+
+370
+00:26:37,410 --> 00:26:43,650
+所以我会把错误响应返回给智能体 这样它就可以
+So, instead of instead I return the error response to the agent so it can kind of
+
+371
+00:26:43,650 --> 00:26:45,510
+自我纠正 重新改写查询
+self-correct, rewrite the query.
+
+372
+00:26:47,410 --> 00:26:49,890
+总体来说有这一点非常重要 对吧
+Generally speaking, super important to have this, right?
+
+373
+00:26:50,050 --> 00:26:51,410
+这样智能体才能自我纠正
+So, the agent can self-correct.
+
+374
+00:26:51,770 --> 00:26:54,590
+所以我们可以在这里测试一下
+So, we can test this here.
+
+375
+00:26:54,770 --> 00:26:55,690
+这个细节不重要
+This is not important.
+
+376
+00:26:56,670 --> 00:26:58,550
+然后我把大语言模型
+Then I'm plugging in the LLM,
+
+377
+00:26:58,670 --> 00:27:02,910
+系统提示词和我的新搜索工具再次接到智能体里
+the system prompt, and my new search tool into the agent again.
+
+378
+00:27:03,710 --> 00:27:08,390
+当我现在再问它和之前完全一样的问题时
+And when I now ask it the exact same question as before,
+
+379
+00:27:08,790 --> 00:27:11,830
+就是我应该参加哪一场会议来更多了解 JEPA
+which session should I visit to learn more about JEPA,
+
+380
+00:27:12,890 --> 00:27:16,730
+你会看到它调用了执行 ESQL 查询工具
+you can see it calls the execute ESQL query tool.
+
+381
+00:27:17,530 --> 00:27:22,150
+它生成了一段看起来像是合法 ESQL 的东西
+And it generates something that looks like valid ESQL.
+
+382
+00:27:23,130 --> 00:27:26,450
+我并不指望大家都对 ESQL 很熟
+I'm not expecting anyone to be very familiar with ESQL.
+
+383
+00:27:27,170 --> 00:27:34,470
+这段查询的问题在于 ESQL 并不用百分号作为通配符
+What's wrong with this is that ESQL doesn't use the percentage sign as a wildcard character.
+
+384
+00:27:35,390 --> 00:27:37,850
+在 ESQL 里你应该用星号
+In ESQL, you would use the asterisk.
+
+385
+00:27:38,310 --> 00:27:42,910
+所以在这个例子里 它实际上是在查找百分号
+So, in this case, it's actually looking for percentage sign,
+
+386
+00:27:43,130 --> 00:27:46,610
+JEPA 百分号 这样的精确匹配数据
+JEPA percentage sign in the data as an exact match.
+
+387
+00:27:47,090 --> 00:27:51,390
+这就是为什么它实际上返回了零条搜索结果
+So, that's why it's actually returning zero search results.
+
+388
+00:27:52,230 --> 00:27:56,810
+而在你使用搜索工具时 还有一个非常重要的问题要考虑
+And this is when you're working with search tools also super important to think about is
+
+389
+00:27:56,810 --> 00:28:02,990
+返回零条结果到底是一个合法响应 还是一种失败模式
+returning zero search results actually a valid response or is it a failure mode?
+
+390
+00:28:06,480 --> 00:28:07,160
+好
+Okay.
+
+391
+00:28:08,780 --> 00:28:10,420
+那我要怎么解决这个问题呢
+How could I overcome this?
+
+392
+00:28:10,760 --> 00:28:17,060
+我可以写一个更详细的工具描述
+I could probably write a more descriptive tool description,
+
+393
+00:28:17,780 --> 00:28:21,500
+多给它一些关于如何写好参数的帮助
+give it a little bit more help on how to write better parameters.
+
+394
+00:28:22,480 --> 00:28:25,260
+我也可以在系统提示词里强化这些信息
+I could reinforce it in the system prompt,
+
+395
+00:28:25,400 --> 00:28:26,820
+在那里给它更多指令
+give it more instructions there.
+
+396
+00:28:27,700 --> 00:28:29,660
+或者我可以用一个智能体技能
+Or I could use an agent skill.
+
+397
+00:28:30,100 --> 00:28:35,360
+因为你需要的不只是一句话的文档 对吧
+Because you need more documentation than just like a one-liner, right?
+
+398
+00:28:36,860 --> 00:28:41,300
+现在我来演示如何添加一个智能体技能
+So, now I'm going to show you how to add an agent skill.
+
+399
+00:28:43,560 --> 00:28:51,420
+在这个例子里，我会自己编写一个非常简短的自定义智能体技能
+So, in this case, I'm going to be writing my own very short custom agent skill.
+
+400
+00:28:52,000 --> 00:28:55,720
+快问一句 有谁之前用过或玩过智能体技能吗
+Quick question. Who has used and played with agent skills before?
+
+401
+00:28:57,120 --> 00:28:58,660
+好的 人数还不少
+Okay. Good amount.
+
+402
+00:29:00,420 --> 00:29:05,460
+所以我接下来会写一个非常简短的技能
+So, I'm going to be writing a very short one here.
+
+403
+00:29:08,160 --> 00:29:13,520
+如果你想试一试 其实有官方的 Elasticsearch 智能体技能可以用
+There is official Elasticsearch agent skills available if you want to play around with it.
+
+404
+00:29:13,720 --> 00:29:17,960
+但在这个例子里 我只用我自己的自定义技能
+In this case, I'm just using my own custom ones.
+
+405
+00:29:18,060 --> 00:29:25,400
+它的工作方式是 你需要一个技能名称 以及一个技能描述
+So, how that works is you have the skill name and then also skill description,
+
+406
+00:29:25,660 --> 00:29:28,240
+这个描述会被注入到系统提示词中
+which gets injected into the system prompt.
+
+407
+00:29:28,460 --> 00:29:32,740
+如果你用 Markdown 来写
+So, if you write it in Markdown,
+
+408
+00:29:32,960 --> 00:29:37,080
+被注入到系统提示词里的就是前置元数据部分
+it's the front matter that gets injected into the system prompt.
+
+409
+00:29:37,600 --> 00:29:39,560
+然后当你需要它的时候
+And then when you need it,
+
+410
+00:29:41,340 --> 00:29:45,480
+关于这个智能体技能的更多信息会被加载进上下文窗口
+more information on the agent skill is loaded into the context window.
+
+411
+00:29:45,880 --> 00:29:48,780
+这有点类似所谓的渐进式披露
+So, it's called something like progressive disclosure,
+
+412
+00:29:48,840 --> 00:29:52,980
+也就是按需逐步补充更多关于技能的信息
+where you kind of add more information about the skill as needed.
+
+413
+00:29:54,220 --> 00:29:58,900
+在这个例子里 我只写了一些最小化的指令
+So, in this case, I have some minimal instructions,
+
+414
+00:29:59,160 --> 00:30:04,420
+比如 这里是一个 ESQL 查询的基本结构
+like here's the basic structure of an ESQL query.
+
+415
+00:30:06,100 --> 00:30:09,340
+ESQL 使用双引号来表示字符串字面量
+ESQL uses double quotes for string literals.
+
+416
+00:30:10,440 --> 00:30:12,420
+就是一些非常基础的语法规则
+Just some very basic syntax rules.
+
+417
+00:30:13,000 --> 00:30:16,900
+我还补充了一些关于通配符模式的说明
+And I also added some more information about the wild card pattern.
+
+418
+00:30:17,020 --> 00:30:19,380
+这样它就不会再犯同样的错误
+So, it's not making this mistake again.
+
+419
+00:30:21,240 --> 00:30:22,880
+然后就像我之前提到的
+And then as I mentioned,
+
+420
+00:30:23,280 --> 00:30:29,660
+LangChain 提供了一些样板代码 你可以直接复制复用来使用智能体技能
+Langchain has some boilerplate code you can just copy and reuse for using agent skills.
+
+421
+00:30:29,880 --> 00:30:31,040
+这一部分我就略过了
+So, I'm skipping over this.
+
+422
+00:30:31,220 --> 00:30:34,720
+你只需要知道 我们有一个工具
+All you have to know is we have a tool,
+
+423
+00:30:35,020 --> 00:30:36,600
+一个技能加载工具
+a skill loading tool,
+
+424
+00:30:37,180 --> 00:30:40,640
+它会被注入到 抱歉
+and it's getting injected sorry,
+
+425
+00:30:41,120 --> 00:30:44,100
+它会和一个叫做技能中间件的东西组合在一起
+it gets combined with something called a skill middleware.
+
+426
+00:30:44,980 --> 00:30:49,040
+这部分我也略过 因为和本场内容关系不大
+Skipping over this, because this is not relevant for our session.
+
+427
+00:30:50,880 --> 00:31:01,580
+现在我只需要修改一下通用搜索工具的工具描述
+And now, all I have to do is edit the tool description of my general purpose search tool.
+
+428
+00:31:01,940 --> 00:31:06,760
+这个工具本身和我之前用的是完全同一个
+So, this is the exact same tool that I had before,
+
+429
+00:31:07,140 --> 00:31:12,320
+只是这次我给它加了一些关联说明
+except this time I'm now adding some relationship.
+
+430
+00:31:12,780 --> 00:31:20,780
+我会写上 在使用这个工具之前 一定要先使用 Elasticsearch ESQL 技能来生成 ESQL 查询
+I'm saying always use the Elasticsearch ESQL skill to generate the ESQL query before using this tool.
+
+431
+00:31:21,380 --> 00:31:29,620
+否则 如果智能体还是先用这个工具 而不先用智能体
+Because otherwise, if the agent then still uses this tool first without using the agent
+
+432
+00:31:29,620 --> 00:31:31,760
+技能 那就有点可惜了 对吧
+skill, then that would be a shame, right?
+
+433
+00:31:33,500 --> 00:31:35,240
+我在别的地方也做了同样的事
+I'm doing the exact same.
+
+434
+00:31:35,740 --> 00:31:38,280
+我现在在系统提示词里再次强化这一点
+So, I'm reinforcing this now in the system prompt.
+
+435
+00:31:38,360 --> 00:31:44,700
+我会写上 在调用通用搜索工具之前 要先使用 Elasticsearch 智能体技能
+I'm saying the same thing to use the Elasticsearch agent skill first before calling the
+
+436
+00:31:44,700 --> 00:31:46,400
+也就是这个通用搜索工具
+general purpose search tool.
+
+437
+00:31:47,580 --> 00:31:50,380
+现在我再把这些东西接回到智能体里
+And now, I'm plugging it into the agent again.
+
+438
+00:31:50,540 --> 00:31:54,460
+这一次 大语言模型针对技能加载工具的系统提示词里
+So, this time, LLM system prompt for the skill loading tool,
+
+439
+00:31:54,540 --> 00:31:55,880
+我包含了技能中间件
+I have the skill middleware,
+
+440
+00:31:56,120 --> 00:32:00,140
+以及我的通用 ESQL 查询工具
+and then my general purpose ESQL query tool.
+
+441
+00:32:01,500 --> 00:32:07,340
+现在当我让 智能体回答 我应该去哪个 Session 来进一步了解
+And now, when I let the when I ask the agent which session should I visit to learn more
+
+442
+00:32:07,340 --> 00:32:11,080
+JEPA 时 你会看到它首先会加载这个技能
+about JEPA, you can see it first loads the skill.
+
+443
+00:32:12,720 --> 00:32:19,860
+它会把技能主体部分的所有内容加载进我的上下文窗口
+So, it actually loads everything that's kind of in the body part of the skill into my context window.
+
+444
+00:32:23,320 --> 00:32:35,160
+然后这一次它生成了一个完全合法的 ESQL 查询 用星号作为通配符
+And then, it generates this time a very valid ESQL with the asterisks as my wildcard characters.
+
+445
+00:32:35,940 --> 00:32:38,600
+你可以看到 它确实找到了正确的 Session
+And you can see it actually finds the right session.
+
+446
+00:32:39,820 --> 00:32:42,820
+然后它告诉我 在 10 点 40 分
+And now, it tells me that at 1040.
+
+447
+00:32:43,520 --> 00:32:44,520
+也就是在本场结束之后
+So, after this session,
+
+448
+00:32:45,120 --> 00:32:51,080
+我应该去参加那一场 来进一步了解 JEPA 以及学会正确的发音
+I should be going to this session to learn more about JEPA and learn how to pronounce it correctly.
+
+449
+00:32:52,680 --> 00:32:52,860
+好
+Okay.
+
+450
+00:32:54,940 --> 00:33:00,760
+另外一个很酷的点是 现在智能体能做很多事情 对吧
+What's also cool about this is now the agent can do a lot of things, right?
+
+451
+00:33:00,780 --> 00:33:03,120
+它也可以做聚合
+It can also do aggregations.
+
+452
+00:33:04,600 --> 00:33:09,500
+比如我问它 4 月 8 号有多少个 Session
+So, if I ask it something like how many sessions are on April 8th,
+
+453
+00:33:09,720 --> 00:33:15,380
+你会看到 它又会先加载 Elasticsearch ESQL 工具
+you can see, again, it loads the Elasticsearch ESQL tool.
+
+454
+00:33:18,080 --> 00:33:21,160
+然后它会写出一条 ESQL 查询
+And then, it writes an ESQL query.
+
+455
+00:33:21,420 --> 00:33:21,720
+哎呀
+Oops.
+
+456
+00:33:23,200 --> 00:33:26,800
+它写了一条带过滤条件的 ESQL 查询
+It writes an ESQL query that's using a filter.
+
+457
+00:33:26,800 --> 00:33:29,020
+也就是只筛选 4 月 8 号
+So, it's filtering for April 8th.
+
+458
+00:33:29,260 --> 00:33:33,260
+然后再做一个聚合 也就是计数
+And then, it also does an aggregation, some counting.
+
+459
+00:33:33,940 --> 00:33:36,800
+它告诉我 今天一共有 27 个 Session
+It tells me today there are 27 sessions.
+
+460
+00:33:39,780 --> 00:33:45,080
+这就很好 因为如果我只是做一次搜索
+This is nice because if I just do a search,
+
+461
+00:33:45,160 --> 00:33:49,760
+比如我让它告诉我 4 月 8 号有哪些 Session
+let's say I ask it to tell me which sessions are on April 8th,
+
+462
+00:33:49,880 --> 00:33:51,880
+而它只做了一次带过滤条件的搜索
+and it only runs a filtered search, right?
+
+463
+00:33:51,960 --> 00:33:57,720
+想象一下 它会给我一份包含今天全部 27 个 Session 的列表
+So, just imagine it would give me a list of all 27 sessions that are today,
+
+464
+00:33:58,040 --> 00:34:02,340
+然后再让智能体自己去数有多少个
+and we let the agent count how many sessions there are.
+
+465
+00:34:03,320 --> 00:34:05,240
+这样可能就不太妙
+That would probably not be so good,
+
+466
+00:34:05,300 --> 00:34:09,700
+因为我们都知道 智能体在数数方面一向很不靠谱
+because we all know agents are notoriously bad at counting things.
+
+467
+00:34:11,280 --> 00:34:14,480
+而且 这也会把你的上下文窗口塞得满满的
+And also, it would fill up your context window, right?
+
+468
+00:34:14,720 --> 00:34:19,200
+所以 通过让智能体把计算这部分
+So, by letting the agent do its own calculations,
+
+469
+00:34:19,920 --> 00:34:24,140
+外包给搜索工具来完成
+like outsourcing the calculation part into the search tool,
+
+470
+00:34:24,440 --> 00:34:28,100
+这其实是一个相当高效的做法 对吧
+it's actually quite an efficient way to do this, right?
+
+471
+00:34:30,480 --> 00:34:32,100
+到目前为止有什么问题吗
+Any questions so far?
+
+472
+00:34:41,230 --> 00:34:43,170
+好 那我们换个话题
+Okay. Let's switch gears.
+
+473
+00:34:44,950 --> 00:34:48,770
+这是目前非常热门的一个话题
+This is a very prominent topic at the moment.
+
+474
+00:34:49,450 --> 00:34:55,570
+你可能听说过那种讨论 说一个智能体只需要一个 Shell 工具和一个文件系统就够了
+Maybe you've heard the discussion about all an agent needs is a shell tool and a file system.
+
+475
+00:34:56,950 --> 00:34:59,690
+所以我在 Elastic 工作，但我不会搞歧视
+So, I work at Elastic, but I don't discriminate.
+
+476
+00:35:00,010 --> 00:35:03,030
+我们来看看在文件系统里要怎么做
+Let's look at file systems and how to do this.
+
+477
+00:35:03,710 --> 00:35:07,130
+因为我觉得整体来说这是个非常有趣的话题
+Because I think it's a very interesting topic in general.
+
+478
+00:35:07,370 --> 00:35:16,330
+所以这次我做的是 把数据准备在本地文件系统里
+So, what I did here, I prepared the data this time in a local file system,
+
+479
+00:35:16,410 --> 00:35:19,010
+我有一个叫 session data 的文件夹
+so I have a folder called session data,
+
+480
+00:35:19,010 --> 00:35:23,050
+在里面 针对每一种 Session 类型
+and in here, I have for each type of session,
+
+481
+00:35:23,310 --> 00:35:24,810
+比如主题演讲和工作坊
+like keynotes and workshops,
+
+482
+00:35:25,110 --> 00:35:26,090
+我各自建了一个子文件夹
+I have another folder,
+
+483
+00:35:26,270 --> 00:35:29,930
+然后每个 Session 对应一个文件
+and in there, there's per session, one file.
+
+484
+00:35:30,710 --> 00:35:31,910
+大概长这样
+Looks something like this.
+
+485
+00:35:32,230 --> 00:35:35,570
+里面有标题 一些元数据 以及描述
+So, with a title, some metadata, and a description.
+
+486
+00:35:38,330 --> 00:35:42,950
+接下来我会演示如何用 Shell 工具来操作这些数据
+And now, I'm going to show you how you can use the shell tool with this.
+
+487
+00:35:47,390 --> 00:35:50,510
+所以我现在切回 GPT-4.1 nano
+So, I'm switching back to the GPT-4.1 nano,
+
+488
+00:35:50,930 --> 00:35:58,150
+因为大语言模型在浏览文件系统和写 Shell 命令方面一般都挺擅长
+because LLMs are generally good at navigating file systems, writing shell commands.
+
+489
+00:35:58,510 --> 00:36:02,310
+所以在这个场景下 GPT-4.1 nano 就足够了
+So, GPT-4.1 nano is sufficient in this case.
+
+490
+00:36:05,470 --> 00:36:08,250
+我会再定义一个系统提示词
+I define another system prompt.
+
+491
+00:36:08,450 --> 00:36:16,530
+这个系统提示词的前半部分和我们之前用的是完全一样的
+So, the first part of the system prompt is exactly the same as the one we had before.
+
+492
+00:36:18,310 --> 00:36:24,210
+不同的是 这次我不再解释数据在 Elasticsearch 里的结构
+And what I'm replacing this time is instead of explaining how the data is structured in
+
+493
+00:36:24,210 --> 00:36:28,670
+而是改为解释数据在本地文件系统里的结构
+Elasticsearch, I'm explaining how the data is structured in my local file system.
+
+494
+00:36:31,390 --> 00:36:36,670
+好 那我们来用一下 Shell 工具
+Okay. So, let's use the shell tool.
+
+495
+00:36:37,490 --> 00:36:39,110
+我得先给你一个免责声明
+I have to give you a disclaimer.
+
+496
+00:36:39,490 --> 00:36:42,090
+使用 Shell 工具是有风险的
+Using the shell tool can be risky,
+
+497
+00:36:42,330 --> 00:36:44,750
+因为让你的智能体访问终端
+since giving your agent access to a terminal
+
+498
+00:36:48,290 --> 00:36:52,710
+可能会让它删除文件或做一些你不希望它做的事情
+can make it delete files or do other things you don't want it to do.
+
+499
+00:36:52,790 --> 00:36:57,770
+所以一定要建议在沙箱环境中使用它
+So, always recommend it to use it in a sandbox environment.
+
+500
+00:36:58,350 --> 00:37:01,390
+另外在 LangChain 里它默认是没有任何安全防护的
+Also, in LangChain, it doesn't have any safeguards by default.
+
+501
+00:37:01,570 --> 00:37:03,470
+所以使用这个功能时请务必小心
+So, please be careful when using this.
+
+502
+00:37:05,070 --> 00:37:07,750
+但除此之外它用起来非常简单
+But other than that, it's very easy to use.
+
+503
+00:37:07,850 --> 00:37:12,930
+你只需要导入这个 Shell 工具然后在这里实例化它
+So, you can just use import the shell tool and instantiate it here.
+
+504
+00:37:13,790 --> 00:37:16,610
+这里你可以看到你会如何使用它
+And here you can see how you would use it.
+
+505
+00:37:16,690 --> 00:37:19,130
+它接收一个 commands 参数
+So, it takes in the commands parameter.
+
+506
+00:37:19,510 --> 00:37:21,270
+所以当我输入 echo hello world 时
+So, when I say echo hello world,
+
+507
+00:37:21,770 --> 00:37:25,790
+你可以看到下面它确实在我的终端里打印出了 hello world
+you can see down here it actually prints hello world into my terminal.
+
+508
+00:37:28,430 --> 00:37:30,290
+然后你要做的就是
+And then all you have to do,
+
+509
+00:37:30,430 --> 00:37:32,130
+再次把大语言模型接进来
+again, plug in the LLM,
+
+510
+00:37:32,350 --> 00:37:34,210
+再加上系统提示词和这个 Shell 工具
+the system prompt, and the shell tool.
+
+511
+00:37:34,890 --> 00:37:39,850
+现在你就可以问它我们之前的那个完全相同的问题
+And now you can ask it this exact same thing we had earlier.
+
+512
+00:37:40,070 --> 00:37:42,230
+比如说有没有关于 JEPA 的任何 Session
+So, are there any sessions about JEPA?
+
+513
+00:37:42,950 --> 00:37:47,290
+你可以看到这里它调用了终端
+And you can see here it's called the terminal here.
+
+514
+00:37:47,730 --> 00:37:51,990
+但实际上是智能体在调用 Shell 工具
+But the agent calls the shell tool.
+
+515
+00:37:52,430 --> 00:37:54,930
+它真的写出了几条命令
+And it actually writes a few commands.
+
+516
+00:37:55,130 --> 00:37:58,370
+首先它在查看文件夹结构
+So, first it's looking at the folder structure.
+
+517
+00:37:58,890 --> 00:38:01,970
+然后它运行了一些 grep 命令
+And then it runs some grab commands.
+
+518
+00:38:02,210 --> 00:38:05,050
+它在 Session 数据里查找 JEPA
+So, it's looking for JEPA in the session data.
+
+519
+00:38:05,170 --> 00:38:07,630
+我想它是在看前 50 条记录
+And I think it's looking for the first 50 entries.
+
+520
+00:38:09,850 --> 00:38:14,690
+你可以看到它看到了文件夹结构
+So, you can see it saw the folder structure.
+
+521
+00:38:15,330 --> 00:38:19,190
+然后它也找到了我们之前提到的那个 Session
+And then it also found the one session we were talking about earlier.
+
+522
+00:38:20,270 --> 00:38:25,690
+但因为我只看了前 50 条而且只找到一个 Session
+But since I was only looking at the first 50 and only found one session,
+
+523
+00:38:25,830 --> 00:38:30,270
+我就让它干脆去查看整个 Session 数据
+I decided that it should probably look at the entire session data.
+
+524
+00:38:31,210 --> 00:38:33,610
+所以它又一次找到了同一个 Session
+So, it finds the exact same session again.
+
+525
+00:38:34,670 --> 00:38:35,950
+这一次它决定
+So, this time it decides,
+
+526
+00:38:36,070 --> 00:38:38,710
+好吧那我应该去看看这个 Session 的具体内容
+okay, then I should probably look at the contents of this session.
+
+527
+00:38:40,170 --> 00:38:44,290
+所以现在它读取了整个文件内容
+So, now it reads the entire file content.
+
+528
+00:38:45,650 --> 00:38:53,310
+这里你可以看到 Session 信息作为工具的返回结果
+And here you can see the the session information as a tool response.
+
+529
+00:38:54,510 --> 00:38:58,110
+然后最后智能体告诉我应该去参加哪一个 Session
+And then at the end, the agent tells me which session I should visit.
+
+530
+00:39:01,250 --> 00:39:01,470
+好
+Okay.
+
+531
+00:39:04,460 --> 00:39:08,500
+GREP 是基于精确匹配工作的对吧
+GREP works based on exact matches, right?
+
+532
+00:39:09,020 --> 00:39:19,600
+还有正则表达式 我只是想给你看这个因为我觉得智能体在 bash 上表现得出乎意料地好挺有意思的
+And regex. And I just want to show you this because I think it's funny how surprisingly good agents are with bash.
+
+533
+00:39:19,860 --> 00:39:22,540
+因为它们某种程度上可以在语义搜索上“作弊”
+Because they kind of can cheat at semantic search.
+
+534
+00:39:23,320 --> 00:39:24,420
+我来给你演示一下
+Let me show you this.
+
+535
+00:39:30,280 --> 00:39:35,260
+当我问它哪些 Session 讨论了如何处理监管约束时
+So, when I ask it which sessions discuss handling regulatory constraints,
+
+536
+00:39:35,400 --> 00:39:38,720
+这就是我们一开始的那个语义搜索查询
+this was our semantic search query from the beginning.
+
+537
+00:39:39,500 --> 00:39:42,800
+你可以看到它又在查看文件夹结构
+You can see it again looks at the folder structure.
+
+538
+00:39:43,240 --> 00:39:48,100
+然后它执行的第一条命令也就是第一次搜索
+And then the first command or the first search it does,
+
+539
+00:39:48,220 --> 00:39:49,380
+是在搜索 regulat
+it's looking for regulat.
+
+540
+00:39:50,000 --> 00:39:54,060
+这也算合理 它在找 regulation 和 regulatory
+It's fair. It's looking for regulation, for regulatory.
+
+541
+00:39:54,900 --> 00:39:57,060
+我觉得这是个还算合理的起点
+I guess that's a fair start.
+
+542
+00:39:57,400 --> 00:40:02,360
+但接着它开始把一堆同义词串在一起
+But then it goes ahead and now it just chains a bunch of synonyms together.
+
+543
+00:40:02,480 --> 00:40:03,760
+它在搜索 compliance
+So, it's looking for compliance.
+
+544
+00:40:04,400 --> 00:40:05,600
+它在搜索 constraints
+It's looking for constraints.
+
+545
+00:40:05,980 --> 00:40:07,460
+它在搜索 GDPR
+It's looking for GDPR.
+
+546
+00:40:07,820 --> 00:40:09,040
+它在搜索 governance
+It's looking for governance.
+
+547
+00:40:09,880 --> 00:40:11,620
+嗯我觉得这也说得过去
+Yeah, I guess that's fair.
+
+548
+00:40:14,160 --> 00:40:17,000
+我觉得它确实找到了不少 Session
+I think it actually finds a bunch of sessions.
+
+549
+00:40:17,560 --> 00:40:18,300
+所以它就觉得好
+So, it's like, okay.
+
+550
+00:40:18,820 --> 00:40:21,440
+我再试一堆别的同义词
+Let me try a bunch of other synonyms.
+
+551
+00:40:21,920 --> 00:40:28,540
+所以现在它又在搜索 regulat、compliance、GDPR、sovereignty
+So, now it's looking again for regulat, compliance, GDPR, sovereignty.
+
+552
+00:40:29,840 --> 00:40:31,820
+我想是的 列表还在继续往下扩展
+I think, yeah. The list goes on.
+
+553
+00:40:32,000 --> 00:40:34,540
+它就是在查一大堆不同的同义词
+It's just looking at a bunch of different synonyms.
+
+554
+00:40:35,180 --> 00:40:38,380
+而且它这样做实际上是成功的
+And it actually is successful with this.
+
+555
+00:40:38,860 --> 00:40:49,040
+它找到了那个 Session 并返回了 Session 信息然后就能正确回答问题
+And it finds the session by and returns the session information and then is able to respond correctly.
+
+556
+00:40:50,880 --> 00:40:52,560
+看起来这办法确实能用
+I guess it works.
+
+557
+00:40:53,160 --> 00:40:55,280
+这是完成这件事最高效的方式吗
+Is that the most efficient way to do this?
+
+558
+00:40:56,560 --> 00:40:59,780
+可能不是 我举个例子
+Probably not. I mean, just as an example.
+
+559
+00:41:00,140 --> 00:41:07,780
+比如说你想搜索带有动物超级英雄的电影之类的东西
+So, let's say you want to search for something like movies with animal superheroes or something.
+
+560
+00:41:08,300 --> 00:41:13,140
+你真的想让你的智能体去搜索一个包含所有可能动物的列表吗
+Do you really want to do your agent to search for a list of all the animals possible?
+
+561
+00:41:13,480 --> 00:41:17,900
+你能找到所有有动物超级英雄的超级英雄电影吗
+Will you find all the superhero movies with animal superheroes?
+
+562
+00:41:18,640 --> 00:41:22,360
+大概不行 所以说这方法能用
+Probably not. So, it works.
+
+563
+00:41:23,440 --> 00:41:24,700
+但它是最好的办法吗
+Is it the best?
+
+564
+00:41:25,180 --> 00:41:26,040
+这个就留给你自己判断
+I'll let you decide.
+
+565
+00:41:27,500 --> 00:41:33,660
+目前有很多可以替代 GREP 的语义搜索方案
+So, at the moment, there's many different semantic search alternatives to GREP.
+
+566
+00:41:35,660 --> 00:41:39,600
+我记得 LlamaIndex 有一个叫 SemGrep 的工具
+I think there's one by LlamaIndex called SemGrep.
+
+567
+00:41:40,180 --> 00:41:44,080
+有一个由 LightOn 推出的非常酷的模型，叫做 ColPali Grep
+There's a really cool one by LightOn, which is called ColPali Grep,
+
+568
+00:41:44,160 --> 00:41:46,060
+它是基于多向量嵌入的
+based on multi-vector embeddings.
+
+569
+00:41:47,620 --> 00:41:50,460
+此外我们 Jina 自己也有一个
+Also, there's one by our own Jina.
+
+570
+00:41:51,280 --> 00:41:57,940
+叫 JinaGrep 今天我要给你演示把它和你的智能体一起使用有多简单
+It's called JinaGrep. So, today I'm going to show you how easy it is to actually use this together with your agent.
+
+571
+00:41:59,200 --> 00:42:04,820
+你要做的就是先安装 JinaGrep 的 CLI
+So, all you have to do is go ahead and install the JinaGrep CLI.
+
+572
+00:42:06,360 --> 00:42:12,040
+然后你只需要告诉你的智能体它现在可以使用这个工具了
+And then all you have to do is tell your agent that it now has access to this tool.
+
+573
+00:42:12,580 --> 00:42:19,220
+也就是这个 CLI 这是和我之前完全相同的系统提示词
+To the CLI. So, this is the exact same system prompt as I had earlier.
+
+574
+00:42:19,820 --> 00:42:27,960
+只是现在多了一个部分 我在向它解释它拥有 JinaGrep 以及 JinaGrep
+Now, with the difference that I'm explaining to it that it has JinaGrep and how JinaGrep
+
+575
+00:42:27,960 --> 00:42:29,900
+是如何工作的 它应该怎么用
+works, how it should use it.
+
+576
+00:42:32,480 --> 00:42:35,640
+这里是一些你会如何使用 JinaGrep 的示例
+Here are some examples of how you would use JinaGrep.
+
+577
+00:42:37,420 --> 00:42:40,040
+先说明一下 JinaGrep 有很多不同的模式
+Just a disclaimer, JinaGrep has many different modes.
+
+578
+00:42:40,180 --> 00:42:42,620
+你可以用它做分类
+You can use it for classification,
+
+579
+00:42:43,120 --> 00:42:44,360
+也可以用它做重排序
+you can use it for re-ranking.
+
+580
+00:42:44,460 --> 00:42:46,980
+今天我只演示如何把它用在语义搜索上
+Today I'm just showing you how to use it for semantic search.
+
+581
+00:42:49,240 --> 00:42:54,960
+最后我还会向智能体解释它什么时候应该用 GREP 什么时候
+And at the end, I'm also explaining to the agent when it should use GREP and when it
+
+582
+00:42:54,960 --> 00:42:58,620
+应该用 JinaGrep 这样它就知道如果是精确匹配
+should use JinaGrep, just so it knows for exact matches,
+
+583
+00:42:58,720 --> 00:43:00,360
+你大概还是会想用 GREP
+you probably still want to use GREP.
+
+584
+00:43:00,440 --> 00:43:04,860
+而对于更偏语义搜索或模糊查询的情况就用 JinaGrep
+And for more semantic search or fuzzy queries, use JinaGrep.
+
+585
+00:43:06,980 --> 00:43:11,020
+然后再把这些配置接回到我的智能体里
+And then, plugging this in to my agent again.
+
+586
+00:43:12,860 --> 00:43:17,260
+当我现在再次运行我们之前那个完全相同的语义搜索查询时
+And when I now run the exact same semantic search query we had earlier,
+
+587
+00:43:17,520 --> 00:43:23,620
+也就是哪些 Session 讨论了如何处理监管约束
+so, which sessions discuss handling regulatory constraints,
+
+588
+00:43:24,080 --> 00:43:26,080
+你会看到类似的行为
+you can see the same behavior.
+
+589
+00:43:26,260 --> 00:43:28,020
+它会调用终端工具
+So, it calls the terminal tool.
+
+590
+00:43:28,880 --> 00:43:32,160
+它先探索文件夹结构
+It first explores the folder structure,
+
+591
+00:43:32,360 --> 00:43:33,320
+然后它实际上
+and then it actually,
+
+592
+00:43:33,640 --> 00:43:37,320
+第一次尝试就能正确使用 JinaGrep
+on the first try, is able to correctly use JinaGrep.
+
+593
+00:43:37,420 --> 00:43:40,060
+它在搜索 regulatory constraints
+So, it's looking for regulatory constraints.
+
+594
+00:43:41,140 --> 00:43:47,040
+然后一下子 它第一次就找到了那个 Session
+And boom, it actually finds the session on the first try.
+
+595
+00:43:49,140 --> 00:43:51,560
+它还找到了另外几个 因为它在查找 10 条结果
+Finds a few others, because it's looking for 10.
+
+596
+00:43:52,520 --> 00:43:55,280
+它这里写的是返回 Top K（返回前 K 条）为 10
+It says return top K of 10.
+
+597
+00:43:56,560 --> 00:43:59,380
+然后它就能够正确回答我的问题
+And then, it's able to answer me correctly.
+
+598
+00:44:00,200 --> 00:44:00,540
+不错
+Nice.
+
+599
+00:44:02,000 --> 00:44:03,500
+好的 到目前为止有什么问题吗
+All right. Any questions so far?
+
+600
+00:44:06,100 --> 00:44:09,180
+好 那我切回去
+Good. Then I'm switching back.
+
+601
+00:44:23,150 --> 00:44:26,730
+我们今天看了很多不同的工具
+So, we were looking at a bunch of different tools today.
+
+602
+00:44:26,830 --> 00:44:30,090
+我们看到了整个工具生态有多庞大
+We saw how big the tool landscape is.
+
+603
+00:44:30,390 --> 00:44:34,010
+我给你们展示了我们的一些搜索工具
+I showed you a few of the search tools we have.
+
+604
+00:44:34,470 --> 00:44:39,510
+接下来是一些关于在什么场景下该用什么工具的实用建议
+Now, some practical recommendations on when should you actually use what.
+
+605
+00:44:41,630 --> 00:44:45,610
+那我们先从这一点开始
+So, maybe let's start with this.
+
+606
+00:44:45,770 --> 00:44:48,330
+如果你在寻找一个万能的银弹工具
+If you're looking for one silver bullet tool,
+
+607
+00:44:48,870 --> 00:44:51,230
+那大概率不是一个正确的思路
+that's probably not the right way to go.
+
+608
+00:44:52,470 --> 00:44:58,310
+再说一遍，如果你仔细想想，要做好搜索是非常困难的
+Again, if you think about it, doing good search is incredibly difficult.
+
+609
+00:44:58,650 --> 00:45:07,310
+所以理想情况下 你需要为你的智能体的搜索行为准备或精选一套合适的搜索工具
+So, ideally, you want to have or curate the right set of search tools for your agent's search behaviors.
+
+610
+00:45:08,710 --> 00:45:16,310
+你需要同时拥有一些专用工具和一些通用工具的组合
+And you want to have a combination of specialized tools and a combination and general purpose tools.
+
+611
+00:45:17,070 --> 00:45:22,190
+所谓专用工具就是智能体可以开箱即用的那种
+So, specialized tools are something that the agent can use out of the box.
+
+612
+00:45:22,330 --> 00:45:24,570
+参数非常简单的那种
+Something with a very simple parameter.
+
+613
+00:45:25,870 --> 00:45:30,150
+这种工具不需要非常强大的大语言模型来驱动
+Something where you're not where you don't need a very powerful LLM.
+
+614
+00:45:30,470 --> 00:45:33,030
+你知道智能体在使用它时不会犯太多错误
+You know the agent isn't going to make a lot of mistakes.
+
+615
+00:45:33,250 --> 00:45:36,050
+智能体可以直接开箱使用这个工具
+The agent can just use this tool out of the box.
+
+616
+00:45:36,750 --> 00:45:41,430
+在 Elastic 我们喜欢强调要有一个很低的门槛
+So, at Elastic, we like to think about having a low floor.
+
+617
+00:45:41,930 --> 00:45:44,130
+这是一个来自用户体验领域的概念
+So, this is a concept from user experience.
+
+618
+00:45:44,650 --> 00:45:48,850
+指的是智能体可以直接使用某个工具
+Where the agent can just use a tool.
+
+619
+00:45:49,450 --> 00:45:51,470
+而且不会犯太多错误
+Doesn't make many mistakes.
+
+620
+00:45:51,850 --> 00:45:55,170
+同时也要高效 不需要反复多次调用你的工具
+It's also efficient. So, it doesn't have to run your tool multiple times.
+
+621
+00:45:56,030 --> 00:45:59,430
+你可以把它类比成我们之前提到的那个语义搜索工具
+You can think about this as the semantic search tool we had earlier.
+
+622
+00:45:59,910 --> 00:46:04,710
+比如你可能经常需要通过 ID 查询客户
+Maybe you need to look up customers by ID a lot of the time.
+
+623
+00:46:04,710 --> 00:46:09,150
+那么为这个特定操作准备一个专用工具就会很有帮助
+Then having a specialized tool for that exact operation would be helpful.
+
+624
+00:46:10,450 --> 00:46:14,030
+但同时你也希望给智能体一个很高的上限
+But then you also want to give the agent a high ceiling.
+
+625
+00:46:14,630 --> 00:46:21,030
+也就是说 对于那些意料之外的查询 或者复杂的问题
+That means for unexpected queries, for complex questions,
+
+626
+00:46:21,430 --> 00:46:26,090
+你还是希望智能体能够处理这些问题 对吧
+you want the agent to still be able to handle these questions, right?
+
+627
+00:46:26,370 --> 00:46:30,870
+而不是只有这些受限的专用工具 然后只能说
+And not have these limited specialized tools and be like,
+
+628
+00:46:30,970 --> 00:46:32,450
+我解决不了这个问题
+I cannot solve this.
+
+629
+00:46:33,090 --> 00:46:39,210
+所以在这种情况下 类似 Shell 工具 或者我们之前提到的那个非常通用的
+So, for this case, something like a shell tool or the very general purpose one we had
+
+630
+00:46:39,210 --> 00:46:43,530
+查询执行工具 就会非常有用
+earlier of a query execution tool would be very helpful.
+
+631
+00:46:44,890 --> 00:46:50,970
+但你们之前看到的查询执行工具或者 Shell 工具有个问题 就是因为
+But the problem with the query execution tool or the shell tool you saw earlier is since
+
+632
+00:46:50,970 --> 00:46:52,510
+它太通用了
+it's so general purpose,
+
+633
+00:46:53,370 --> 00:46:59,330
+智能体有时可能需要多次迭代才能真正得到正确答案 对吧
+the agent sometimes might need more iterations to actually get to the right answer, right?
+
+634
+00:47:01,670 --> 00:47:10,330
+所以我的实用建议是 要有一套平衡的搜索工具 既要门槛低
+So, this is my practical recommendation of having a balanced set of search tools of a low
+
+635
+00:47:10,330 --> 00:47:11,750
+又要上限高
+floor and high ceiling.
+
+636
+00:47:13,610 --> 00:47:17,270
+如果你已经了解智能体的行为模式 这些都很好办
+This is all nice when you already know your agent's behavior.
+
+637
+00:47:18,330 --> 00:47:21,730
+但如果你还不了解智能体的查询行为
+But if you don't know your agent's query behavior yet,
+
+638
+00:47:22,290 --> 00:47:25,990
+那我会建议先从一个通用工具开始
+then I would recommend to start with a general purpose tool.
+
+639
+00:47:27,890 --> 00:47:30,950
+然后记录智能体的行为日志
+Then log your agent's behavior.
+
+640
+00:47:32,190 --> 00:47:35,330
+总的来说 我都建议记录智能体的行为日志
+Generally speaking, logging your agent's behavior, I recommend it.
+
+641
+00:47:35,830 --> 00:47:44,590
+但如果你发现 智能体每个问题要调用四五次工具
+But if you notice, maybe your agent is taking four or five tool calls per question,
+
+642
+00:47:45,210 --> 00:47:46,650
+那调用次数就太多了
+that's too many tool calls.
+
+643
+00:47:47,190 --> 00:47:52,430
+这很可能是在提示 你给智能体的这个工具
+Then you probably, that's probably an indicator that the tool your agent has is too
+
+644
+00:47:52,430 --> 00:47:53,830
+对它来说太难用了
+difficult for it to use.
+
+645
+00:47:54,190 --> 00:47:58,170
+那你就一定要去看看 智能体到底在尝试解决什么问题
+Then definitely look at what the agent's actually trying to solve.
+
+646
+00:47:58,630 --> 00:48:01,350
+在这种情况下 也许应该设计一些更专用的工具
+Maybe scope out something more specialized in that case.
+
+647
+00:48:06,060 --> 00:48:10,020
+另外 如果你注意到一些特定的查询行为
+Also, if you notice specific query behaviors,
+
+648
+00:48:10,600 --> 00:48:14,140
+我自己在测试 Claude Code 时就是这么做的
+this is what I personally did with my test Claude Code.
+
+649
+00:48:14,720 --> 00:48:16,780
+它有执行工具
+It has the exec tool.
+
+650
+00:48:17,240 --> 00:48:19,860
+然后我开始记录它的行为日志
+And I started logging its behavior.
+
+651
+00:48:20,420 --> 00:48:22,980
+很明显 我当时在折腾各种数据库
+And obviously, I was playing around with databases.
+
+652
+00:48:23,600 --> 00:48:24,400
+所以三天之后
+So, after three days,
+
+653
+00:48:24,480 --> 00:48:27,300
+我就问它 你看到了哪些有趣的模式
+I was asking it, what kind of interesting patterns do you see?
+
+654
+00:48:27,360 --> 00:48:35,160
+然后它实际上建议我实现一些专门与数据库交互的搜索工具
+And it was recommending me actually to implement some specific search tools to interact with the database.
+
+655
+00:48:35,560 --> 00:48:38,440
+因为一开始它只能开箱即用执行工具
+Because it was out of the box only using the exec tool.
+
+656
+00:48:40,240 --> 00:48:44,240
+好的 如果你还不了解用户行为 就先从通用工具开始
+All right. Start with general purpose tools if you don't know your user's behavior yet.
+
+657
+00:48:44,440 --> 00:48:47,200
+把那些会出问题的地方拦下来 然后为它们增加专门设计的接口
+Block what breaks and add purpose-built interfaces.
+
+658
+00:48:49,100 --> 00:48:51,600
+是的 信息量有点大
+Yeah, that was a lot to take in.
+
+659
+00:48:54,340 --> 00:48:56,060
+我相信你们肯定有很多问题
+I'm sure you have lots of questions.
+
+660
+00:48:56,360 --> 00:48:58,360
+所以接下来进入问答环节
+So, I'm opening it up for Q&A.
+
+661
+00:48:58,820 --> 00:49:00,280
+如果没有问题的话 在你们离开的时候
+And otherwise, on your way out,
+
+662
+00:49:00,360 --> 00:49:02,060
+别忘了顺手拿点贴纸
+don't forget to grab yourself some stickers.
+
+663
+00:49:02,540 --> 00:49:04,280
+也谢谢大家来参加我的分享
+And then thank you for joining my session.
+
+664
+00:49:16,040 --> 00:49:18,060
+我想话筒正在递过来
+I think there's a mic coming.
+
+665
+00:49:18,060 --> 00:49:26,980
+谢谢 那你会不会说 你所需要的工具栈在很大程度上也取决于你打算使用的模型
+Thank you. So, would you say the tool stack you need is also mostly dependent on the model you're willing to use?
+
+666
+00:49:27,320 --> 00:49:28,720
+比如如果你用的是一个非常强的模型
+So, if you're using a very good model,
+
+667
+00:49:29,200 --> 00:49:32,300
+那直接用 Shell 工具或者搜索工具可能就没问题
+it might be fine using the shell tool or search tool.
+
+668
+00:49:32,360 --> 00:49:34,120
+但如果是一个很小的模型
+But a very small model,
+
+669
+00:49:34,420 --> 00:49:36,920
+一个轻量级智能体 可能就需要更多专用工具
+a light agent, might need more specialized tools?
+
+670
+00:49:37,220 --> 00:49:40,820
+是的 其实在我们的内部测试中
+Yeah. Actually, I think in our internal testing,
+
+671
+00:49:40,940 --> 00:49:47,580
+我们发现 更强的模型确实能降低参数出错的比例
+we noticed that a more powerful tool actually reduces the error rate for the parameters.
+
+672
+00:49:48,520 --> 00:49:50,320
+我不太记得具体数字
+I don't know the numbers exactly,
+
+673
+00:49:50,440 --> 00:49:54,200
+但误差率的下降幅度是非常明显的
+but it was a very big amount where it reduced the error rate.
+
+674
+00:49:54,360 --> 00:50:01,260
+所以在使用通用工具时 拥有一个更强的模型肯定是有帮助的
+So, having a stronger model definitely helps for the general purpose tools.
+
+675
+00:50:01,440 --> 00:50:03,280
+但我觉得你不能指望
+But I think you cannot expect,
+
+676
+00:50:03,740 --> 00:50:05,420
+仅仅因为你有一个很强的模型
+just because you have a very strong model,
+
+677
+00:50:05,600 --> 00:50:07,420
+就完全不会出错
+that there's gonna be no errors,
+
+678
+00:50:07,700 --> 00:50:08,460
+你懂我的意思
+if that makes sense.
+
+679
+00:50:08,460 --> 00:50:08,820
+嗯
+Yeah.
+
+680
+00:50:18,640 --> 00:50:19,940
+谢谢你精彩的分享
+Thanks for a nice talk.
+
+681
+00:50:20,800 --> 00:50:21,780
+我有一个问题
+I have one question.
+
+682
+00:50:21,900 --> 00:50:23,600
+可能有点偏题
+Maybe it's a slightly off topic,
+
+683
+00:50:23,900 --> 00:50:27,280
+但我们现在在讨论智能体 RAG
+but so now we are talking about agentic rack,
+
+684
+00:50:27,520 --> 00:50:32,780
+但它相比传统 RAG 的缺点是延迟更高
+but it comes with the drawback of having higher latency against typical rack.
+
+685
+00:50:33,480 --> 00:50:40,940
+那你会不会建议再做一条简单 RAG 的通路 用来提供更快速的回答
+So, would you recommend of having like a second pathway for simple rack for fast answers?
+
+686
+00:50:41,280 --> 00:50:46,080
+那你会如何引导智能体真正选择合适的那一条路径
+And how would you guide the agent to actually choose the right one?
+
+687
+00:50:46,180 --> 00:50:52,840
+因为我觉得很难判断 哪些问题应该用智能体 RAG 回答 哪些应该用简单 RAG
+Because I think it's hard to say which question should be answered by agentic rack or by simple rack.
+
+688
+00:50:54,240 --> 00:50:55,600
+这是个好问题
+That's a good question.
+
+689
+00:50:59,000 --> 00:51:05,080
+我现在一时半会儿想不出一个特别好的答案
+I don't think I have a good answer on the top of my head right now.
+
+690
+00:51:05,840 --> 00:51:08,320
+我可以说一个相关的点
+I think maybe something related.
+
+691
+00:51:08,580 --> 00:51:09,540
+最近有人问我
+I was asked recently,
+
+692
+00:51:09,800 --> 00:51:10,940
+如果你已经有一个 RAG 系统
+if you have a rack system,
+
+693
+00:51:11,040 --> 00:51:12,860
+要不要把它替换成智能体 RAG
+should you replace it with agentic rack?
+
+694
+00:51:13,340 --> 00:51:21,940
+我想这其实也是在问同一个方向的问题 就是你到底什么时候才真正需要智能体 RAG 对吧
+And I guess this is kind of going in the same direction of when do you actually need agentic rack, right?
+
+695
+00:51:25,700 --> 00:51:28,420
+可能对很多用例来说都是这样
+Probably for a lot of use cases.
+
+696
+00:51:29,020 --> 00:51:31,420
+我知道 RAG 已经被宣判“死亡”很多次了
+I know rack has been killed many times,
+
+697
+00:51:31,560 --> 00:51:37,720
+但我认为现实情况是 RAG 对很多用例仍然非常有效
+but I think the reality is that rack is still very effective for many use cases.
+
+698
+00:51:39,720 --> 00:51:45,580
+你实际上会如何在 RAG 和智能体 RAG 之间切换
+How would you actually switch between rack and agentic rack?
+
+699
+00:51:45,740 --> 00:51:47,960
+我不太确定，因为我猜这又是
+I'm not sure because I assume it's again,
+
+700
+00:51:48,080 --> 00:51:52,800
+它需要某种近似智能体式的逻辑来在两者之间切换
+it needs some kind of almost agentic logic of switching between them.
+
+701
+00:51:53,180 --> 00:51:55,940
+所以我不太确定
+So, I'm not sure.
+
+702
+00:51:56,080 --> 00:51:57,720
+抱歉 在
+I'm sorry. In
+
+703
+00:52:06,770 --> 00:52:17,110
+这种情况下，比如在 JEPA 示例中你有通配符时
+such cases, like when you have the wildcard in the JEPA example,
+
+704
+00:52:17,710 --> 00:52:29,250
+为什么我们不能做一个混合工具 来搜索并替换那些常见的错误
+why can't we just perform a hybrid tool that maybe search and replaces common wrong
+
+705
+00:52:29,250 --> 00:52:37,110
+比如把来自 SQL 的错误通配符符号替换成正确的符号
+wildcard symbols coming from SQL with the correct ones, for instance?
+
+706
+00:52:38,190 --> 00:52:41,610
+我不确定我是否正确理解了你的问题
+I'm not sure if I understand your question correctly.
+
+707
+00:52:42,090 --> 00:52:52,830
+我的意思是 有些情况下 智能体不知道如何写出正确的查询
+I mean, there are cases in which the agent doesn't know how to write the correct query
+
+708
+00:52:52,830 --> 00:53:03,030
+因为它可能认为来自 SQL 的占位符也适用于 ESQL
+because maybe he thinks the placeholders coming from SQL apply to ESQL.
+
+709
+00:53:04,230 --> 00:53:18,430
+那么为什么我们不做一个混合工具 来搜索并替换错误的占位符
+So, why don't we perform a hybrid tool that search and replaces the wrong placeholder,
+
+710
+00:53:19,250 --> 00:53:23,050
+把百分号替换成星号
+the percentage symbol with the asterisk?
+
+711
+00:53:23,570 --> 00:53:29,810
+是的 其实我给你们展示的使用智能体技能的例子并不一定是
+Yeah. Actually, so the example I showed you of using the agent skill wasn't necessarily the
+
+712
+00:53:31,210 --> 00:53:33,210
+解决这个问题所必需的方案
+necessary solution for it.
+
+713
+00:53:33,410 --> 00:53:43,310
+你也可以只加一些非常简单的指令 比如在 ESQL 中不要使用百分号
+You can also add just some very simple instructions on for ESQL don't use the percentage
+
+714
+00:53:43,310 --> 00:53:44,830
+作为通配符字符
+sign as a wildcard character.
+
+715
+00:53:44,950 --> 00:53:47,810
+这实际上是有效的 我在构建演示时试过
+It actually works. I tried it when I was building the demo.
+
+716
+00:53:49,450 --> 00:53:53,210
+但当智能体接下来又遇到下一个问题时
+But then when the agent now runs in the next issue,
+
+717
+00:53:53,290 --> 00:53:56,410
+你就会开始再添加下一段文档说明
+then you start adding the next piece of documentation.
+
+718
+00:53:56,410 --> 00:54:02,470
+然后你就会开始把整份 ESQL 文档从头写进你的系统提示词里
+Then you can kind of start writing the entire ESQL documentation from scratch into your system prompt.
+
+719
+00:54:03,270 --> 00:54:05,310
+是的 就演示目的而言
+And yes, for the demo purposes,
+
+720
+00:54:05,530 --> 00:54:06,590
+这样是可行的
+it would have worked.
+
+721
+00:54:06,630 --> 00:54:13,090
+但当你要构建一个更健壮的系统时 大概不会真的这么做 对吧
+But it's probably not how you would do it necessarily when you're building something more robust, right?
+
+722
+00:54:13,150 --> 00:54:15,310
+因为如果你只是不断添加
+Because if you just add,
+
+723
+00:54:15,450 --> 00:54:20,050
+类似创可贴一样的小补丁 每次遇到错误就贴一个
+like, little, like, band-aids every time you run into an error,
+
+724
+00:54:20,170 --> 00:54:24,030
+那当你遇到下一个边缘情况时会怎样呢
+then what happens when you run into the next edge case?
+
+725
+00:54:24,610 --> 00:54:25,650
+这样说有道理吗
+Does that make sense?
+
+726
+00:54:25,890 --> 00:54:25,990
+嗯
+Yeah.
+
+727
+00:54:33,220 --> 00:54:36,800
+你好 非常感谢你这场精彩的演讲
+Hi. Thank you for a really wonderful presentation.
+
+728
+00:54:37,020 --> 00:54:37,700
+我有一个问题
+I have a question.
+
+729
+00:54:38,180 --> 00:54:43,920
+在演示中 我们看了使用数据库查询工具的智能体搜索 还看了
+In the demo, we have walked through the agentic search with DB queries tool and also
+
+730
+00:54:43,920 --> 00:54:45,380
+另一个使用 Shell 工具的示例
+another one with shell tool.
+
+731
+00:54:45,660 --> 00:54:47,800
+在实际使用中 你会不会建议
+Would you recommend in the practical use,
+
+732
+00:54:47,980 --> 00:54:55,580
+我们也可以把这两种工具结合起来 然后验证每个工具返回的结果
+we can also kind of use combine both tool and then we validate the result from each of
+
+733
+00:54:55,580 --> 00:54:59,320
+再据此提升我们对大语言模型输出结果的信心
+tool and then we kind of add the confidence of the result from the LLM?
+
+734
+00:54:59,480 --> 00:55:01,740
+你会建议在实际场景中这样做吗
+Would you, like, recommend doing this in a practical use?
+
+735
+00:55:01,980 --> 00:55:03,760
+会的 会的 这是个非常好的问题
+Yes, yes. That's a great question.
+
+736
+00:55:04,180 --> 00:55:07,440
+另外 在这个演示里我其实有点作弊 对吧
+Also, again, I'm kind of cheating in this demo, right?
+
+737
+00:55:07,480 --> 00:55:10,620
+因为我每个演示只给你们看一个工具
+Because I'm only showing you one tool per demo.
+
+738
+00:55:10,860 --> 00:55:13,140
+在现实中 你会有更多的东西
+In reality, you would have something more,
+
+739
+00:55:13,880 --> 00:55:19,540
+比如一堆不同的工具 然后你或者智能体需要决定
+like, a bunch of different tools where you then have to decide which or the agent has to
+
+740
+00:55:19,540 --> 00:55:20,780
+要使用哪个工具
+decide which tool to use.
+
+741
+00:55:21,260 --> 00:55:25,460
+我记得 Vercel 有一篇非常有趣的博客
+I think there was a very interesting blog post by Vercel,
+
+742
+00:55:25,620 --> 00:55:28,660
+我印象中是他们做了一个实验
+I believe, and they did an experiment.
+
+743
+00:55:29,460 --> 00:55:31,260
+如果你想去查一下 我记得标题叫
+I think it's called, if you want to look it up,
+
+744
+00:55:31,320 --> 00:55:35,020
+好像是“testing if bash is all you need” 这是那篇博客的标题
+I think it's called testing is if bash is all you need is the title,
+
+745
+00:55:35,140 --> 00:55:36,100
+我记得是这样
+I think, of the blog post.
+
+746
+00:55:36,100 --> 00:55:42,880
+他们实际上对一个带 Bash 工具的智能体做了基准测试
+And they actually kind of benchmarked or tested an agent with a bash tool,
+
+747
+00:55:43,480 --> 00:55:46,520
+一个只带文件搜索工具的智能体
+an agent with just file search tools,
+
+748
+00:55:46,600 --> 00:55:49,820
+以及一个带数据库工具的智能体
+I believe, and an agent with database tools.
+
+749
+00:55:50,640 --> 00:55:56,100
+最后 他们还有一个同时拥有 Bash 工具和数据库工具的智能体
+And in the end, they also had one agent with a bash tool and the database tool,
+
+750
+00:55:56,200 --> 00:55:58,700
+他们发现这一点非常有趣
+and they noticed that was super interesting.
+
+751
+00:56:00,020 --> 00:56:02,400
+对于一组特定类型的查询
+For a specific set of queries,
+
+752
+00:56:04,440 --> 00:56:06,540
+也就是分析型查询
+where you have analytical queries,
+
+753
+00:56:07,840 --> 00:56:09,320
+这是一个特定的用例
+this is a specific use case.
+
+754
+00:56:09,740 --> 00:56:12,140
+实际上 数据库工具更有效
+Actually, the database tool was more effective.
+
+755
+00:56:12,760 --> 00:56:13,780
+但另一方面
+But on the other hand,
+
+756
+00:56:13,900 --> 00:56:16,260
+文件搜索也非常有效
+the file search was very effective,
+
+757
+00:56:16,280 --> 00:56:19,000
+就像你看到的那样 用于快速查找内容时
+as you saw, for just quickly finding things.
+
+758
+00:56:19,820 --> 00:56:26,660
+但非常有趣的一点是 那个同时拥有 Bash 工具和数据库
+But the very interesting aspect was the hybrid agent with the bash tool and the database
+
+759
+00:56:26,660 --> 00:56:31,800
+工具的混合智能体 实际上达到了最高的准确率
+tool was actually achieving the highest accuracy,
+
+760
+00:56:32,300 --> 00:56:35,960
+因为一开始 我记得它会先使用数据库工具
+because at first, I believe it was first using the database tool,
+
+761
+00:56:36,220 --> 00:56:40,540
+然后再用 Shell 工具来验证结果
+and then verifying the results with the shell tool.
+
+762
+00:56:41,260 --> 00:56:44,940
+这让智能体实际达到了更好的准确率
+And that led the agent to actually achieve better accuracy.
+
+763
+00:56:45,120 --> 00:56:49,700
+所以我认为 这是在智能体身上看到的一种非常有趣的方式和行为
+So, I think that was a very interesting way and behavior to see in agents.
+
+764
+00:56:50,340 --> 00:56:51,940
+感谢你的分享
+Thanks for sharing.
+
+765
+00:57:04,420 --> 00:57:10,080
+第二个问题 如果我们使用语义搜索工具
+One second question. So, if we use the semantic search tool,
+
+766
+00:57:10,220 --> 00:57:16,380
+我觉得在实践中 你可能会用某种阈值来截断结果
+I think in practice, you probably would use some kind of threshold to cut the results,
+
+767
+00:57:16,480 --> 00:57:19,220
+以便在没有答案时不要返回无关内容
+to not get something if there's no answer.
+
+768
+00:57:20,440 --> 00:57:23,080
+但在智能体范式下
+But in the agentic regime,
+
+769
+00:57:23,260 --> 00:57:24,340
+你会不会说 好
+would you then say, okay,
+
+770
+00:57:24,400 --> 00:57:29,620
+我们设置一个保守一点的阈值 以免把智能体搞糊涂
+let's put a conservative threshold such that we don't confuse our agent?
+
+771
+00:57:30,200 --> 00:57:32,640
+还是你会认为智能体已经足够聪明
+Or would you say the agent is smart enough,
+
+772
+00:57:32,740 --> 00:57:35,720
+即使我们检索到的结果并不是特别相关
+even if we retrieve results that are not really relevant,
+
+773
+00:57:36,120 --> 00:57:39,540
+它也足够擅长识别出这一点
+that we're good enough to notice that?
+
+774
+00:57:40,000 --> 00:57:42,600
+嗯 这其实是个非常好的问题
+Yeah. That's a great question, actually.
+
+775
+00:57:43,500 --> 00:57:50,620
+在这些示例中 你可能看到有些地方 智能体返回了 我记得在最后那个 JinaGrep 示例里
+So, in the examples, you probably saw some where the agent was returning... I think in the last JinaGrep example,
+
+776
+00:57:50,760 --> 00:57:53,720
+你会看到它实际上返回了 Top K（返回前 K 条）结果
+you see it's actually returning the top K results,
+
+777
+00:57:53,880 --> 00:57:57,160
+但只有第一条是真正相关的
+where only the first one is the actual relevant one.
+
+778
+00:57:57,700 --> 00:58:02,920
+我认为 因为智能体会对搜索结果是否
+And I think, because the agent does a little bit of reasoning over whether the search
+
+779
+00:58:02,920 --> 00:58:05,580
+与搜索查询相关做一些推理
+results are relevant to the search query,
+
+780
+00:58:06,120 --> 00:58:11,400
+现在它们在剔除不相关内容方面已经好得多了
+I think they're much better today at kind of weeding out what's not relevant.
+
+781
+00:58:11,600 --> 00:58:13,580
+但接着你会遇到一个风险
+But then you kind of run into the risk,
+
+782
+00:58:13,660 --> 00:58:15,260
+如果你有更长时间的对话
+if you have longer running conversations,
+
+783
+00:58:15,540 --> 00:58:19,320
+这些搜索结果会一直待在你的上下文窗口里
+that kind of these search results sit in your context window.
+
+784
+00:58:19,440 --> 00:58:23,820
+长期来看 可能会在长时间内让你的智能体感到困惑
+Long-term could have the problem of confusing your agent long-term.
+
+785
+00:58:24,180 --> 00:58:38,480
+所以我认为 这在某种程度上取决于你的用例 以及你的智能体能多好地处理无关的搜索结果
+So, I think it kind of depends on your use case of how your agent can handle irrelevant search results.
+
+786
+00:58:38,620 --> 00:58:41,920
+但总体来说 基于搜索结果
+But generally speaking, based on search results,
+
+787
+00:58:42,020 --> 00:58:44,320
+它是可以过滤掉不相关内容的
+it can filter out what's irrelevant.
+
+788
+00:58:57,180 --> 00:58:58,800
+谢谢 感谢你的分享
+Thanks. Thank you for the talk.
+
+789
+00:58:59,320 --> 00:58:59,720
+太精彩了
+Amazing.
+
+790
+00:59:01,240 --> 00:59:04,460
+你在这些搜索查询中有使用子智能体吗
+Are you utilizing sub-agents for these search queries?
+
+791
+00:59:04,760 --> 00:59:06,800
+因为 如果我们让它们来决定
+Because, yeah, if we let them decide,
+
+792
+00:59:06,960 --> 00:59:08,580
+是否要用一个“这是否相关”的问题
+is it relevant to use a question,
+
+793
+00:59:08,760 --> 00:59:11,040
+就像在 RAGAS 框架中那样
+like, it's done in RAGAS framework,
+
+794
+00:59:11,140 --> 00:59:12,100
+比如用于评估时那样
+for example, for evaluation?
+
+795
+00:59:13,300 --> 00:59:15,000
+我的意思是，子智能体会有很大帮助
+I mean, sub-agents would help a lot.
+
+796
+00:59:15,200 --> 00:59:17,300
+我们在这方面有任何经验吗
+Do we have any experience with them?
+
+797
+00:59:17,860 --> 00:59:21,040
+很遗憾没有 我还没实际用过子智能体
+Unfortunately not. I have not played around with sub-agents yet.
+
+798
+00:59:21,160 --> 00:59:23,440
+我只能跟你说我所知道的
+I can only tell you that I know,
+
+799
+00:59:23,760 --> 00:59:25,900
+比如说 我记得在 Claude Code 里
+for example, I believe that in Claude Code,
+
+800
+00:59:26,000 --> 00:59:29,120
+他们会用子智能体来执行特定的搜索任务
+they're using sub-agents for doing specific search tasks.
+
+801
+00:59:29,240 --> 00:59:36,520
+我记得有一篇博客讲他们是如何实际用一个子智能体来回答特定的
+I think there was a blog post on how they're actually using a sub-agent to answer specific
+
+802
+00:59:36,520 --> 00:59:38,420
+关于 Claude Code 的问题
+questions about Claude Code,
+
+803
+00:59:38,500 --> 00:59:42,380
+因为那类问题算是用户会问的比较小众的问题
+because it's kind of like a niche question a user would ask.
+
+804
+00:59:42,840 --> 00:59:47,700
+所以在这种情况下 他们等于是把这部分专业能力外包给了一个子智能体
+So, in this case, they kind of outsourced the expertise to a sub-agent.
+
+805
+00:59:47,860 --> 00:59:50,880
+所以 为特定的小众问题配一个子智能体
+So, having a sub-agent for specific niche questions,
+
+806
+00:59:50,920 --> 00:59:52,660
+我觉得会很有意思
+I think, would be interesting,
+
+807
+00:59:52,840 --> 00:59:55,460
+但我在这方面经验不多
+but I don't have too much experience.
+
+808
+00:59:57,800 --> 01:00:00,580
+好的 谢谢 我还能再问一个问题吗
+Okay, thanks. Can I ask another question?
+
+809
+01:00:04,240 --> 01:00:05,980
+糟了 我忘了 不好意思
+Damn, I forgot. Sorry.
+
+810
+01:00:07,420 --> 01:00:08,480
+我待会儿再想起来补问
+I'll try to catch up later.
+
+811
+01:00:26,310 --> 01:00:29,430
+嗯 哦 抱歉 你刚才有点跑题
+Yeah, oh, kindly, you're off-topic,
+
+812
+01:00:29,670 --> 01:00:31,150
+不过你提到了技能
+but you talked about skills.
+
+813
+01:00:31,450 --> 01:00:38,090
+技能最大的好处是 只需要在系统提示词里放上技能描述
+And the big benefit of skills is just have the description in the system prompt,
+
+814
+01:00:38,150 --> 01:00:41,470
+然后在需要的时候再把完整技能加载进来
+and whenever needed, we need to load this full skill.
+
+815
+01:00:43,190 --> 01:00:47,270
+你有没有什么建议 什么时候以及如何再次清理系统提示词
+Do you have any recommendation when and how to clear the system prompt again?
+
+816
+01:00:47,530 --> 01:00:51,510
+因为我们想让上下文窗口尽量小
+So, because we want to keep the context window small,
+
+817
+01:00:51,730 --> 01:00:55,290
+而且在一个很长的会话里
+and maybe for a long session,
+
+818
+01:00:55,490 --> 01:00:57,470
+我们可能会有多达十个技能
+we might have up to ten skills,
+
+819
+01:00:57,770 --> 01:00:59,010
+完整技能都在上下文里
+full skills in the context.
+
+820
+01:00:59,590 --> 01:01:01,210
+嗯 这个我不太确定
+Yeah. I'm not sure.
+
+821
+01:01:01,510 --> 01:01:03,270
+Joe 你有没有更好的回答
+Joe, do you have a better answer?
+
+822
+01:01:36,400 --> 01:01:38,360
+嗯 对 所以是这样的
+Oh, but yeah, so, like,
+
+823
+01:01:38,580 --> 01:01:43,080
+我们在幕后处理的方式是 我们会提供
+the way that we are doing it behind the scenes is that we're providing,
+
+824
+01:01:43,260 --> 01:01:46,180
+一种类似“逐步暴露技能”的机制
+like, that kind of progressive disclosure of skills.
+
+825
+01:01:46,340 --> 01:01:47,480
+所以我们会先提供
+So, we're providing those,
+
+826
+01:01:47,940 --> 01:01:50,240
+技能名称和工具描述
+the skill names and descriptions,
+
+827
+01:01:50,620 --> 01:01:52,180
+以及它在文件存储里的位置
+the location within the file store,
+
+828
+01:01:52,920 --> 01:01:54,680
+然后再从文件存储里
+and then from the file store,
+
+829
+01:01:54,880 --> 01:01:58,260
+在需要这个技能时把它加载进上下文窗口
+we're loading into the context window when we need that skill.
+
+830
+01:01:58,580 --> 01:02:00,660
+然后当它
+And then we offload it once it's,
+
+831
+01:02:01,500 --> 01:02:05,220
+被新的内容顶出上下文窗口之后 我们就把它卸载掉
+you know, the context window progresses ahead of time around that.
+
+832
+01:02:05,580 --> 01:02:08,980
+所以我们是用一种更按需加载的方式来处理
+So, we have this kind of more on-demand one around that.
+
+833
+01:02:09,240 --> 01:02:11,740
+这跟我们做上下文压缩的方式也是类似的
+And that's the same with our, like, compaction, like,
+
+834
+01:02:12,440 --> 01:02:14,740
+对上下文做压缩 这也是我会建议你们采用的做法
+of context, and that's what I would advise you to do,
+
+835
+01:02:14,800 --> 01:02:16,540
+用在你刚才提到的那些问题上
+like, some of the questions to do.
+
+836
+01:02:16,940 --> 01:02:18,960
+尽量多利用文件存储
+Try and use the file store as much as you can,
+
+837
+01:02:19,200 --> 01:02:21,360
+并且配套好这些工具
+and have those tools as well,
+
+838
+01:02:21,440 --> 01:02:26,340
+比如可以在文件存储里 grep 之前的工具结果
+like, being able to grep the file store for when you want to see previous tool results,
+
+839
+01:02:27,120 --> 01:02:29,520
+然后再从那里取用
+and then use it from that.
+
+840
+01:02:32,930 --> 01:02:35,750
+谢谢 这位是我在 Elastic 的同事 Joe
+Thanks. This is my colleague Joe from Elastic as well.
+
+841
+01:02:40,680 --> 01:02:43,460
+太好了 如果没有更多问题
+Awesome. If there are no more questions,
+
+842
+01:02:43,620 --> 01:02:47,020
+我就让大家去喝咖啡休息一下
+I will let you guys go into the coffee break.
+
+843
+01:02:47,580 --> 01:02:49,640
+再提醒一下 别忘了顺手拿点贴纸
+Again, don't forget to grab yourself some stickers,
+
+844
+01:02:50,080 --> 01:02:55,140
+如果有人感兴趣 很乐意在走廊里继续聊 非常感谢
+and happy to catch up in the halls if anyone's interested. Thanks so much.

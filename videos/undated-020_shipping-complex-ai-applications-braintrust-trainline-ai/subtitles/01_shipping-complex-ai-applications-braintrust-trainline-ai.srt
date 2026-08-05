@@ -1,0 +1,7974 @@
+1
+00:00:14,380 --> 00:00:17,000
+下午好，各位 欢迎来到阳光明媚的伦敦 嘿
+Good afternoon, everybody. Welcome to sunny London. Hey.
+
+2
+00:00:18,400 --> 00:00:19,700
+这是大家第一次来这里吗
+Is it everyone's first time here?
+
+3
+00:00:19,840 --> 00:00:21,460
+我想是的 因为这是第一次举办这个大会
+I think it is, because this is the first conference.
+
+4
+00:00:22,680 --> 00:00:26,300
+太棒了 非常感谢大家参加今天的环节
+Amazing, amazing. Well, thank you very much for joining today's session.
+
+5
+00:00:26,980 --> 00:00:28,220
+希望你现在在正确的场次
+Hopefully you are in the right session,
+
+6
+00:00:28,300 --> 00:00:30,580
+但如果你需要进一步了解
+but for those who need to double-click,
+
+7
+00:00:30,800 --> 00:00:34,420
+这是一个使用 Braintrust 交付高质量AI应用的动手实践工作坊
+this is a hands-on workshop to delivering quality AI applications with Braintrust.
+
+8
+00:00:35,100 --> 00:00:37,580
+我们还会和来自 Trainline 的同事合作
+And we'll also be partnering with our colleagues at Trainline,
+
+9
+00:00:37,740 --> 00:00:39,000
+我稍后会做介绍
+which I'll introduce shortly.
+
+10
+00:00:40,000 --> 00:00:42,080
+你们可能在想 这家伙是谁
+So, probably you'll be wondering, who's this guy?
+
+11
+00:00:42,360 --> 00:00:43,040
+他真的是这里的人吗
+Does he even go here?
+
+12
+00:00:43,360 --> 00:00:45,480
+他叫什么名字呢 先做一下自我介绍
+What's his name? Introduction to myself is,
+
+13
+00:00:46,080 --> 00:00:46,860
+你们可以叫我 Duran
+you can call me Duran,
+
+14
+00:00:47,020 --> 00:00:48,580
+就像那个乐队 杜兰杜兰乐队 Duran Duran 里的 Duran
+but like the band, Duran Duran with a D,
+
+15
+00:00:48,700 --> 00:00:50,200
+希望在座有人是西蒙·勒邦的粉丝
+so hopefully folks are Simon Le Bon fan.
+
+16
+00:00:50,860 --> 00:00:57,120
+我的大部分职业生涯都在帮助各类组织和企业扩展关键任务系统的采用规模
+And I've had a better part of helping organizations and enterprises help scale adoption of mission-critical systems,
+
+17
+00:00:57,120 --> 00:00:58,440
+而现在我们正迈入AI时代
+and now moving into the age of AI.
+
+18
+00:00:59,520 --> 00:01:01,400
+我的背景是正规的数学训练
+You know, background in formal mathematics,
+
+19
+00:01:01,640 --> 00:01:05,300
+所以我很清楚 这股从机器学习到数据科学再到AI
+so I know there's all the rage going from machine learning to data science and now AI
+
+20
+00:01:05,300 --> 00:01:07,560
+工程的热潮 正好发生在当下这个非常应景的时刻
+engineering, and this comes at a very topical time.
+
+21
+00:01:08,120 --> 00:01:10,420
+如果你想交流 欢迎在 LinkedIn 上加我
+Feel free to connect me with LinkedIn if you want to talk,
+
+22
+00:01:10,540 --> 00:01:12,340
+或者只是想
+or just want to, you know,
+
+23
+00:01:12,360 --> 00:01:14,040
+在这个领域随便聊聊天也可以
+just do general chit-chat around this area.
+
+24
+00:01:14,780 --> 00:01:17,300
+我这次也和来自 Trainline 的两位朋友一起来
+I'm also joined by my two friends over at Trainline,
+
+25
+00:01:17,420 --> 00:01:19,920
+团队两位要不要上来做个自我介绍
+if you want to come over and introduce yourselves, team.
+
+26
+00:01:20,360 --> 00:01:22,000
+当然 前提是麦克风好用
+Of course, if the mic is working.
+
+27
+00:01:22,000 --> 00:01:24,720
+都没问题吗 好的 大家好
+All good? Yes. Hello, everyone.
+
+28
+00:01:25,000 --> 00:01:26,360
+感谢大家来参加这个工作坊
+Thanks for coming to this workshop,
+
+29
+00:01:26,520 --> 00:01:30,780
+尤其是在午餐和外面这么好的天气之后还能过来
+especially after that lunch break and the sunny time outside.
+
+30
+00:01:31,100 --> 00:01:32,200
+非常感谢你们来到这里
+Thank you very much for coming here.
+
+31
+00:01:32,680 --> 00:01:34,020
+我叫 Osama
+So, my name is Osama,
+
+32
+00:01:34,300 --> 00:01:36,700
+我是 Trainline 的高级AI/ML工程师
+I'm a senior AI ML engineer at Trainline.
+
+33
+00:01:37,680 --> 00:01:40,720
+对那些认识我的人来说 嗯 好像就一位
+For those who know me... yeah, one person.
+
+34
+00:01:41,280 --> 00:01:43,740
+之前我是资深平台工程师
+Yeah, I was a staff platform engineer before,
+
+35
+00:01:43,920 --> 00:01:46,500
+我的背景是计算机视觉
+and I have a background in computer vision,
+
+36
+00:01:46,500 --> 00:01:49,860
+另外我也在业余时间做移动应用
+and I was doing also mobile apps on the side,
+
+37
+00:01:49,960 --> 00:01:53,220
+所以有一段时间其实和AI完全没关系
+so nothing to do with AI at some point,
+
+38
+00:01:53,300 --> 00:01:56,720
+但现在 我和 Mayank 一起在 Trainline 做AI相关的工作
+but, yeah, now we are doing AI together with Mayank at Trainline.
+
+39
+00:01:57,720 --> 00:01:59,880
+大家好 我叫 Mayank
+Hi, everyone, my name is Mayank.
+
+40
+00:02:01,000 --> 00:02:03,360
+我是 Trainline 的高级AI工程师
+I'm a senior AI engineer at Trainline.
+
+41
+00:02:03,580 --> 00:02:05,620
+我的研究背景是大语言模型（LLM）
+I have a research background in LLMs,
+
+42
+00:02:06,180 --> 00:02:10,000
+但我的研究主要是在大规模大语言模型之前的阶段
+but my research is in the pre big LLMs,
+
+43
+00:02:10,120 --> 00:02:11,760
+比如说 如果你听说过 BERT
+so, like, if you've heard of BERT,
+
+44
+00:02:12,100 --> 00:02:18,940
+或者更早期的大语言模型 我们现在在 Trainline 持续构建最先进的智能体式产品
+or the older LLMs, so we're continuing building a state-of-the-art agentic products at Trainline.
+
+45
+00:02:19,360 --> 00:02:20,820
+如果你是从国外来的
+If you've come here from abroad,
+
+46
+00:02:21,160 --> 00:02:22,660
+我相信你多半已经用过 Trainline
+I'm sure you must have used Trainline.
+
+47
+00:02:22,980 --> 00:02:30,080
+如果还没有用过 也请一定试试 因为它是购买车票等服务的最先进应用
+If not, please do, because it's the state-of-the-art app for buying tickets and other things.
+
+48
+00:02:30,560 --> 00:02:33,680
+总之 欢迎大家 我们非常高兴能在这个工作坊接待各位
+So, yeah, welcome, and we're very excited to host you at this workshop,
+
+49
+00:02:34,400 --> 00:02:37,280
+我们也会带领大家完成整个动手实践的体验
+and, yeah, we'll guide you through the hands-on experience.
+
+50
+00:02:38,000 --> 00:02:42,440
+太好了 我这次还和几位从大西洋彼岸赶来的 Braintrust 同事一起来
+Fantastic. I'm also joined by some of my colleagues as well from Braintrust coming over the pond,
+
+51
+00:02:42,760 --> 00:02:45,260
+所以 Phil、Eric 和 Rose，如果你们举一下手的话
+so Phil, Eric, and Rose, if you just show your hands,
+
+52
+00:02:45,360 --> 00:02:46,220
+或者大家也不用紧张
+or don't worry, folks,
+
+53
+00:02:46,260 --> 00:02:47,380
+如果你在过程中遇到问题 他们会很好地帮你
+you're in safe hands if you're ever stuck,
+
+54
+00:02:47,500 --> 00:02:49,660
+只要招呼一声 他们就会来帮忙
+so just holler, and they can help.
+
+55
+00:02:52,200 --> 00:02:54,540
+太好了 接下来做一点会前说明
+Fantastic. Just want to do a little bit of housekeeping as well.
+
+56
+00:02:54,780 --> 00:02:59,260
+请大家加入 AI engineer 的 Slack 频道
+If everybody could join into the AI engineer Slack channel,
+
+57
+00:02:59,760 --> 00:03:01,660
+其实有一个 AI engineer 的组织
+well, there's an AI engineer organisation,
+
+58
+00:03:02,120 --> 00:03:06,920
+但我们今天会用一个专门的 Slack 频道来推进这个工作坊
+but there's also a specific Slack channel which we'll be using today to help progress the workshop.
+
+59
+00:03:07,080 --> 00:03:07,840
+所以如果你遇到问题
+So, if you are stuck,
+
+60
+00:03:08,060 --> 00:03:10,080
+我们可以通过这个 Slack 频道互相帮助
+we can use the Slack channel to help each other out.
+
+61
+00:03:10,180 --> 00:03:11,620
+我们已经在频道里了
+Again, we're already on there,
+
+62
+00:03:11,720 --> 00:03:13,820
+随着我们推进到动手实践的部分
+but as we progress and get to the hands-on element,
+
+63
+00:03:13,900 --> 00:03:14,580
+如果你卡住了
+and if you are stuck,
+
+64
+00:03:15,460 --> 00:03:16,400
+这个频道会非常有用
+this will really help.
+
+65
+00:03:16,880 --> 00:03:19,080
+我们还会提供一份速查表
+We're also providing a cheat sheet,
+
+66
+00:03:19,180 --> 00:03:21,940
+所以如果你遇到某个具体的难点
+so if you are encountering a particular hurdle,
+
+67
+00:03:22,080 --> 00:03:26,240
+上面有一步一步的指引 帮助你顺利跟上我们在
+there's a step-by-step instructions which help you just get to where we need to go to the
+
+68
+00:03:26,240 --> 00:03:29,160
+工作坊中的进度 而不用担心自己落后
+workshop without having to feel like you're falling behind.
+
+69
+00:03:29,580 --> 00:03:32,780
+此外 我们今天分享的很多资料都是公开可获取的
+Again, a lot of the assets which we share today is publicly available.
+
+70
+00:03:33,300 --> 00:03:36,440
+如果有需要 我们之后也可以做一些跟进
+Again, we can have any particular follow-ups if needed.
+
+71
+00:03:36,820 --> 00:03:41,040
+不过我们会先留几分钟时间 让大家完成登录并加入频道
+But we'll give a few minutes to make sure you get onto that and then join the channel,
+
+72
+00:03:41,340 --> 00:03:44,320
+也就是 AI Engineer Europe 2026 Braintrust工作坊 这个频道
+AI Engineer Europe 2026 Braintrust-Workshop.
+
+73
+00:03:44,540 --> 00:03:45,680
+这是一个公开频道
+It's a public-facing channel.
+
+74
+00:03:49,770 --> 00:03:50,410
+好的 各位
+All right, team.
+
+75
+00:03:52,310 --> 00:03:53,630
+我想我们可以开始了
+I guess we can start.
+
+76
+00:03:54,690 --> 00:03:56,430
+对 坐在后排的同学
+Yep, just for the people who are in the back,
+
+77
+00:03:59,150 --> 00:04:01,030
+我们也需要你们加入这个 Slack 频道
+we'll need you to join the Slack channel.
+
+78
+00:04:01,810 --> 00:04:03,270
+所以如果你看到 Piers 的话
+So, if you've seen Piers,
+
+79
+00:04:03,650 --> 00:04:04,290
+那就说明一切就绪
+then we'll be good.
+
+80
+00:04:05,070 --> 00:04:06,150
+好的 各位 再次谢谢大家
+So, team, thank you, everybody.
+
+81
+00:04:07,170 --> 00:04:11,990
+我们继续 接下来先帮大家梳理一下今天工作坊的结构
+Let's proceed. Okay, so just to kind of help orient today's workshop,
+
+82
+00:04:12,430 --> 00:04:14,390
+我们会把它分成三个主要部分
+we'll be breaking it into kind of three main sections.
+
+83
+00:04:14,950 --> 00:04:17,710
+我们会先花一点时间介绍背景 说明我们为什么在这里
+We'll spend a little time just setting a bit of establishing the background why we're here
+
+84
+00:04:17,710 --> 00:04:19,670
+以及这个工作坊为什么和你们相关
+and why this workshop is relevant.
+
+85
+00:04:20,110 --> 00:04:22,730
+希望这能为后面正式进入工作坊时打好背景基础
+Hopefully, it'll set the context for when we go into the workshop,
+
+86
+00:04:23,470 --> 00:04:26,030
+包括搭建系统 以及讨论
+building the system, talking about this,
+
+87
+00:04:26,270 --> 00:04:28,390
+比如说 我们如何交付高质量的AI
+you know, how do we ship AI equality,
+
+88
+00:04:28,970 --> 00:04:34,890
+然后我们会做一个总结 回顾关键收获 并留下来回答各种
+and then we'll wrap up for the key takeaways and we'll be around to answer any kind of
+
+89
+00:04:34,890 --> 00:04:37,430
+来自一线实践中的开放性问题
+open questions and answers that we have from the field.
+
+90
+00:04:39,630 --> 00:04:45,610
+今天在座的各位应该来自很多不同的背景
+Okay, so hopefully today there's going to be a lot of people from very different backgrounds.
+
+91
+00:04:46,670 --> 00:04:49,150
+我们设计这个工作坊的目标对象是
+We intended this workshop to be catered for,
+
+92
+00:04:49,770 --> 00:04:52,490
+大概在座每个人都知道什么是大语言模型（LLM）
+again, probably everyone here knows what an LLM is.
+
+93
+00:04:52,570 --> 00:04:53,570
+我并不是要小看任何人
+I don't want to insult anybody,
+
+94
+00:04:54,050 --> 00:04:59,290
+但希望你们已经开始探索 如何让自己的AI相关运营
+but hopefully you're starting to explore your journey in terms of maturing your operations
+
+95
+00:04:59,290 --> 00:05:01,030
+在构建AI系统方面逐步走向成熟
+in terms of building AI systems.
+
+96
+00:05:01,250 --> 00:05:02,730
+所以无论你是AI产品工程师
+So whether you're an AI product engineer,
+
+97
+00:05:03,390 --> 00:05:06,650
+也许来自应用团队 或者是传统机器学习出身
+probably an applied team or come up from a traditional machine learning folks,
+
+98
+00:05:07,110 --> 00:05:09,170
+也可能是做平台运维基础设施的
+maybe you might be a platform operation infrastructure,
+
+99
+00:05:09,810 --> 00:05:11,630
+这真的非常适合你
+this is really appropriate for you.
+
+100
+00:05:12,030 --> 00:05:13,290
+先简单举个手
+Just kind of a show of hands here,
+
+101
+00:05:13,410 --> 00:05:14,590
+比如说在座谁是来自
+like who here comes from a,
+
+102
+00:05:14,630 --> 00:05:16,970
+比如说传统数据科学背景的
+let's say, a traditional data science background, perhaps?
+
+103
+00:05:18,050 --> 00:05:23,350
+好的，有意思有意思 那谁是来自软件工程背景后来转到AI的
+Okay, interesting, interesting. Who here perhaps comes from maybe software engineering or then pivoting into AI?
+
+104
+00:05:24,270 --> 00:05:26,730
+那就说明你们来对地方了
+Okay, so this is definitely the right room for you.
+
+105
+00:05:27,450 --> 00:05:30,670
+希望接下来我们能在推进过程中帮大家加速
+So hopefully we'll be able to kind of accelerate things as we progress.
+
+106
+00:05:32,650 --> 00:05:34,770
+好的 先看一下整体背景
+Okay, just to look at the context here,
+
+107
+00:05:35,130 --> 00:05:37,450
+我觉得这并不是一个少见的说法
+I think this is not an uncommon expression,
+
+108
+00:05:37,690 --> 00:05:39,550
+我们在整个行业里都越来越常听到
+which we are seeing more broadly across the industry.
+
+109
+00:05:40,670 --> 00:05:44,930
+再次举手示意一下 在座各位谁做过机器学习或人工智能的概念验证
+Again, a bit of show of hands, who here has done a machine learning or AI POC?
+
+110
+00:05:45,070 --> 00:05:47,810
+更具体一点 生成式AI的概念验证（POC）
+Let's say more specifically a generative AI POC,
+
+111
+00:05:48,370 --> 00:05:49,970
+但最后没能把它真正上线到生产环境里
+but then has failed to kind of take that into production?
+
+112
+00:05:51,470 --> 00:05:53,010
+好 看到有几只手
+Okay, just got a few hands, yeah.
+
+113
+00:05:53,090 --> 00:05:54,670
+要是没人举手我反而会担心
+I'll be worried if everyone didn't,
+
+114
+00:05:54,670 --> 00:05:56,870
+但这其实点出了一个关键问题
+but this is kind of a key thing which is,
+
+115
+00:05:57,010 --> 00:05:59,730
+比如我和客户 高管们聊天时
+you know, speaking to me and my customers, you know, executives,
+
+116
+00:05:59,990 --> 00:06:02,070
+这些高层现在都非常热衷这件事
+top level folks, all the rage,
+
+117
+00:06:02,430 --> 00:06:04,370
+他们都在思考这项新技术
+you know, they're thinking about this new technology.
+
+118
+00:06:05,110 --> 00:06:06,150
+它未必真的是全新的
+It's not necessarily new,
+
+119
+00:06:06,290 --> 00:06:07,890
+但对很多人来说还是比较新
+but it's newer for a lot of folks,
+
+120
+00:06:07,970 --> 00:06:10,830
+尤其是在更偏企业级和强监管的行业里
+especially in kind of more enterprise and regulated industries.
+
+121
+00:06:11,170 --> 00:06:14,890
+他们想把这东西用来真正为客户创造价值
+And then they're trying to take this to delivering value to their customers.
+
+122
+00:06:15,190 --> 00:06:20,390
+但不幸的是 从你本地机器上做出来的东西
+But unfortunately, there's a big hurdle between taking what you might develop locally on
+
+123
+00:06:20,390 --> 00:06:23,470
+到把它工程化 产业化 并确保在真实场景下可靠运行 中间有一道巨大的鸿沟
+your machine and then industrializing it and making sure it works in anger.
+
+124
+00:06:24,030 --> 00:06:26,550
+但从现有所有研究里我们看到的关键点是
+But the key thing that we've seen from all of the research out there,
+
+125
+00:06:26,690 --> 00:06:29,210
+问题不在于模型不够聪明
+it's not that the models aren't particularly smart.
+
+126
+00:06:29,370 --> 00:06:30,690
+现在我们已经有非常复杂的模型
+Like we've got very sophisticated models,
+
+127
+00:06:30,810 --> 00:06:32,170
+不管你是自己自研
+whether you're building something in-house,
+
+128
+00:06:32,470 --> 00:06:34,490
+还是用那种顶级的现成的
+or you're using kind of a top off-the-shelf,
+
+129
+00:06:34,630 --> 00:06:37,050
+商业大语言模型（LLM）服务提供商的模型
+you know, top commercial LLM providers out there.
+
+130
+00:06:37,430 --> 00:06:41,870
+更普遍看到的问题是 在把系统真正交付到规模化运行时
+What we do see more broadly speaking is the type of operational rigor when it comes to
+
+131
+00:06:41,870 --> 00:06:44,250
+所需要的那种运营和运维上的严谨性并没有跟上
+delivering the system to scale has not kind of kept up.
+
+132
+00:06:44,510 --> 00:06:45,850
+因为传统软件工程
+Because traditional software engineering,
+
+133
+00:06:45,850 --> 00:06:48,590
+是非常确定性的 一加一等于二 很好
+very deterministic, 1 plus 1 equals 2, great.
+
+134
+00:06:49,250 --> 00:06:50,710
+而大语言模型（LLM）系统呢
+LLM systems, you know,
+
+135
+00:06:50,750 --> 00:06:52,730
+就像我家10岁…不对 5岁小孩会说的那样
+as my 10-year-old... sorry, 5-year-old would say,
+
+136
+00:06:52,910 --> 00:06:54,330
+“两加二等于十 爸爸”
+you know, 2 plus 2 equals 10, daddy.
+
+137
+00:06:54,870 --> 00:06:58,630
+所以我们必须调整思路 确保在大规模交付时还能运转良好
+So it's having to kind of adjust it and make sure that we're delivering that to scale.
+
+138
+00:07:00,090 --> 00:07:04,730
+从整体上看 在真正上线这些系统时我们发现
+And again, holistically, what we're seeing when shipping these things is the fact that,
+
+139
+00:07:04,790 --> 00:07:06,730
+很多人觉得演示状态就已经足够了
+again, people think a demo state is suitable.
+
+140
+00:07:07,510 --> 00:07:10,670
+做两三个甚至五个demo当然没问题
+But clearly, doing 2 to 3 to 5 demos, great.
+
+141
+00:07:11,030 --> 00:07:12,810
+但一上生产环境就各种翻车
+Putting in production, everything goes awry.
+
+142
+00:07:13,890 --> 00:07:15,830
+把一部分日志当成可观测性手段
+Treating some of your logs as observability,
+
+143
+00:07:16,070 --> 00:07:18,810
+这点对我们看待Braintrust来说非常关键
+and then this is really critical to how we look at Braintrust,
+
+144
+00:07:19,470 --> 00:07:21,990
+日志只能告诉你发生了什么
+is, you know, logs will tell you what has happened.
+
+145
+00:07:22,410 --> 00:07:25,830
+但有时候你需要深入系统内部去理解它的行为
+But sometimes you need to go deep into the system and understand its behavior.
+
+146
+00:07:26,210 --> 00:07:28,350
+这就是可观测性真正发挥作用的地方
+And this is really where observability comes into play.
+
+147
+00:07:29,430 --> 00:07:30,670
+还有一种常见情况是
+Something as well is,
+
+148
+00:07:30,790 --> 00:07:32,810
+在我机器上好好的 一到生产就挂
+you know, works on my machine, fails in production.
+
+149
+00:07:33,090 --> 00:07:34,590
+然后我就去打补丁 改提示词
+I try to patch the prompt.
+
+150
+00:07:35,570 --> 00:07:39,770
+接着它又能跑一阵子 直到下一次出问题或下一次失败 但是
+And then, again, it's operational until the next issue happens or the next failure But,
+
+151
+00:07:40,130 --> 00:07:41,630
+我们要怎么持续跟踪这些变化
+again, how do we keep track of that?
+
+152
+00:07:42,210 --> 00:07:44,070
+尤其是当你没有一套系统在那儿时
+Especially if you don't have a system in place,
+
+153
+00:07:45,270 --> 00:07:46,790
+不管你用什么工具
+irrespective of what tooling you use,
+
+154
+00:07:47,430 --> 00:07:50,310
+这都会带来本质层面的影响
+this can, you know, has a categorical effect.
+
+155
+00:07:51,330 --> 00:07:52,530
+所以我们反复看到的情况是
+So, again, a lot of what we see,
+
+156
+00:07:52,930 --> 00:07:54,870
+问题并不在于工具或技术本身
+again, it's not to do with the tooling technology.
+
+157
+00:07:55,170 --> 00:07:57,030
+而是在于运营和工作流层面
+It's down to more operational workflows.
+
+158
+00:07:57,110 --> 00:08:00,230
+这正是我们今天这个工作坊想帮你们解决的
+And this is really what we're aiming to help you in today's workshop.
+
+159
+00:08:01,270 --> 00:08:02,570
+正如我刚才说的
+So, again, as I mentioned,
+
+160
+00:08:02,870 --> 00:08:03,610
+问题不在原型
+it's not the prototype.
+
+161
+00:08:03,950 --> 00:08:07,450
+而是在于让我们能清楚知道系统里到底改了什么
+It's getting to a state where we're knowing exactly what's changed in the system.
+
+162
+00:08:07,850 --> 00:08:09,470
+我们要如何介入这些变化
+How do we interrupt with that?
+
+163
+00:08:09,630 --> 00:08:13,310
+然后如何系统性地建立一套严谨机制 让系统不断变好
+And then, how do we systematically set a rigor so that we can get better and better?
+
+164
+00:08:13,610 --> 00:08:16,570
+记住 我们的目标不是做到100%的覆盖率
+Remember, our target is not 100% coverage.
+
+165
+00:08:16,710 --> 00:08:19,370
+而是在尽量接近的同时
+It's getting as close as possible while maintaining,
+
+166
+00:08:20,170 --> 00:08:21,450
+不断修补那些已经存在的漏洞和空白
+fixing the gaps that might have existed.
+
+167
+00:08:23,910 --> 00:08:26,310
+还有一个我们一次次看到的情况是
+And, again, something that we see time and time again is,
+
+168
+00:08:26,410 --> 00:08:27,910
+一个提示词在某个场景下可能很好用
+again, a one prompt might work,
+
+169
+00:08:28,130 --> 00:08:29,870
+但当你往前推进 把它产业化 工程化时
+but as you move and industrialize it,
+
+170
+00:08:30,130 --> 00:08:35,490
+你往往需要把它拆分成多个各自负责不同职能的部分
+you want to probably do things like breaking this down into each individual sectors of responsibility.
+
+171
+00:08:35,950 --> 00:08:38,150
+所以如果你是软件工程背景
+So, again, if you do come from the software engineering background,
+
+172
+00:08:38,290 --> 00:08:38,930
+你对这些概念应该很熟
+you know about these,
+
+173
+00:08:39,250 --> 00:08:40,950
+就像把单体架构拆成微服务一样
+you're breaking down the monolith into microservices.
+
+174
+00:08:41,290 --> 00:08:44,510
+在讲如何构建这些系统时 我们会介绍一个非常类似的方法
+We'll outline a very similar approach here when we talk about building these systems.
+
+175
+00:08:46,390 --> 00:08:48,970
+再次强调 要确保我们理解这些变化
+Again, making sure that we're understanding these changes,
+
+176
+00:08:49,490 --> 00:08:51,030
+并建立起一整套配套系统
+putting a set of systems in place.
+
+177
+00:08:51,730 --> 00:08:53,570
+这就是我们今天工作坊真正想做的事
+This is really what we want to do in today's workshop.
+
+178
+00:08:55,870 --> 00:08:57,890
+至于今天的安排 希望
+In terms of today, hopefully,
+
+179
+00:08:58,370 --> 00:08:59,830
+正如我说的 这是一个动手实践工作坊
+as I mentioned, this is a hands-on workshop.
+
+180
+00:09:00,090 --> 00:09:01,550
+所以我们会进到终端里操作
+So, we're going to be going into the terminal,
+
+181
+00:09:01,730 --> 00:09:02,730
+也会进入UI界面
+we're going to be going into the UI,
+
+182
+00:09:03,210 --> 00:09:05,850
+然后一步一步带着大家走完整个流程
+and we're going to be going through this step-by-step and guiding you along the way.
+
+183
+00:09:06,430 --> 00:09:12,710
+我们会搭建一个分阶段的AI系统 使用多阶段工具调用
+So, we'll be doing a staged AI system with multi-stage tool calling,
+
+184
+00:09:13,010 --> 00:09:16,350
+这样可以让我们更好地看到
+which really allows us to see this more,
+
+185
+00:09:16,550 --> 00:09:17,710
+可以说是更智能体式的流程
+let's say, agentic flow.
+
+186
+00:09:18,290 --> 00:09:22,850
+我们会用Braintrust做埋点和监测 看应用的性能表现如何
+We're going to use Braintrust to instrument and see how the performance of the application is working.
+
+187
+00:09:23,330 --> 00:09:28,350
+接着我们还会看看如何创建并识别我们所谓的失败模式
+We then also want to then take a look at creating what we call identifying failure modes
+
+188
+00:09:28,350 --> 00:09:29,750
+利用一套黄金数据集来完成这件事
+using a golden set.
+
+189
+00:09:30,030 --> 00:09:30,950
+我们会把这整套流程跑一遍
+So, we'll push that through.
+
+190
+00:09:31,670 --> 00:09:33,490
+然后还会讨论如何把这一切产业化 工程化
+We also then want to talk about how we industrialize this.
+
+191
+00:09:33,570 --> 00:09:35,430
+所以，他们正在从“嘿，它只在我的机器上能跑”这种状态转变
+So, they're moving from, hey, it just works on my machine,
+
+192
+00:09:35,530 --> 00:09:39,310
+变成一个可以在生产环境中使用 并且有系统化机制持续管理的东西
+to something that you can use in production and have it managed forward with a system in place.
+
+193
+00:09:39,990 --> 00:09:42,910
+而关键在于识别那些边缘案例
+And key thing is identifying those edge cases,
+
+194
+00:09:42,930 --> 00:09:44,910
+因为你当然可以自己造一套测试数据集
+because again, you can create a test dataset,
+
+195
+00:09:45,370 --> 00:09:48,570
+但归根结底 没有什么能替代真实世界的数据
+but ultimately, there's no substitute for real-world data.
+
+196
+00:09:48,850 --> 00:09:53,630
+所以我们会向你展示如何把这些真实信号引入进来 做评估 并闭合整个循环
+So, again, we'll be able to show you how we take those real signals in and evaluate and complete the loop.
+
+197
+00:09:55,750 --> 00:09:57,950
+那今天在这里我也先做一点简单的介绍
+So, just a bit of introduction here today as well.
+
+198
+00:09:58,210 --> 00:09:59,950
+在座有谁听说过Braintrust
+Who here has heard of Braintrust,
+
+199
+00:10:00,070 --> 00:10:00,950
+有谁实际用过Braintrust
+has played around Braintrust?
+
+200
+00:10:01,030 --> 00:10:01,730
+能举个手让我看看吗
+Can I get a show of hands?
+
+201
+00:10:02,870 --> 00:10:04,870
+好的 太好了 非常棒 好的
+Okay. Great. Fantastic. So, okay.
+
+202
+00:10:05,390 --> 00:10:06,290
+太喜欢这样了 也很喜欢在座各位
+Love this. Love you all.
+
+203
+00:10:06,410 --> 00:10:08,370
+接下来简单介绍一下Braintrust
+So, just a bit of introduction to Braintrust.
+
+204
+00:10:08,610 --> 00:10:09,890
+我们现在是一家
+We're a company now that's,
+
+205
+00:10:10,110 --> 00:10:12,470
+我记得大概还不到三年的公司
+I think, just shy of three years old.
+
+206
+00:10:13,130 --> 00:10:16,970
+我们目前大致处在B轮融资阶段
+We're approximately a Series B company.
+
+207
+00:10:17,070 --> 00:10:18,410
+几个月前我们对外宣布
+So, we announced that a few months ago,
+
+208
+00:10:18,550 --> 00:10:21,030
+我们以8亿美元估值完成了8000万美元的融资
+we raised $80 million at $800 million valuation.
+
+209
+00:10:22,230 --> 00:10:24,770
+我们的投资方包括ICONIQ
+We have investors such as ICONIQ,
+
+210
+00:10:24,930 --> 00:10:32,710
+a16z以及Greylock 他们都在支持我们帮助各类组织大规模交付高质量AI
+a16z, as well as Greylock to really talk about helping organizations ship quality AI at scale.
+
+211
+00:10:33,110 --> 00:10:34,970
+所以我们是一个专注AI可观测性的平台
+So, we're the platform for AI observability.
+
+212
+00:10:36,030 --> 00:10:38,510
+我们在全球拥有大量用户
+We've got a heavy user base globally,
+
+213
+00:10:38,890 --> 00:10:41,350
+同时也在大力扩展我们在欧洲的业务版图
+but we're also expanding our presence heavily in Europe.
+
+214
+00:10:41,590 --> 00:10:46,530
+我本人是最早加入的工程师之一 现在在这里帮助搭建我们的市场拓展职能
+So, again, I'm one of the first engineers to join and help build out our go-to-market function here.
+
+215
+00:10:46,610 --> 00:10:47,550
+我们非常兴奋
+And we're very excited,
+
+216
+00:10:47,890 --> 00:10:50,570
+能和我们的客户以及在Trainline的朋友们一起推进这件事
+again, with our customers and our friends over at Trainline to do that.
+
+217
+00:10:51,030 --> 00:10:52,950
+我们在本地的其他一些客户还包括Lovable
+Some of our other local customers include Lovable,
+
+218
+00:10:53,250 --> 00:10:57,090
+以及Driverless AI等公司 他们都在把这些AI系统推向前沿
+Driverless AI as well, which are really pushing the forefront of these AI systems.
+
+219
+00:10:59,890 --> 00:11:02,150
+再说回到使用Braintrust这件事
+Again, when it comes to using Braintrust,
+
+220
+00:11:02,310 --> 00:11:04,930
+我不想现在就让大家立刻上手操作
+again, I don't want to get your hands on with it,
+
+221
+00:11:04,990 --> 00:11:08,270
+但我们的真正差异化在于能够把这一切做到大规模
+but where we really distinguish ourselves is being able to do this at scale.
+
+222
+00:11:08,910 --> 00:11:10,090
+我们的创始人Ankur Goyal
+So, our founder, Ankur Goyal,
+
+223
+00:11:10,790 --> 00:11:13,010
+其实这是他第三次打造Braintrust了
+this is actually his third time building Braintrust.
+
+224
+00:11:13,350 --> 00:11:16,530
+他在数据库系统领域是位专家
+So, he's an expert when it comes to database systems,
+
+225
+00:11:16,650 --> 00:11:24,130
+此前他创办过一家名为Impira的公司 被Figma收购 主要做文档抽取相关的工作
+and he's built a company called Impira previously that was acquired by Figma that talks about document extraction.
+
+226
+00:11:24,350 --> 00:11:31,010
+他在那里带领机器学习团队 因为他意识到构建这些评估非常困难
+And he's led the ML machine learning team out there because he realised building these evaluations are hard,
+
+227
+00:11:31,090 --> 00:11:32,570
+理解生产环境中的调用轨迹也非常困难
+understanding production traces are hard.
+
+228
+00:11:33,230 --> 00:11:35,690
+所以我们自己也在面对这些问题
+So, we're having this issue.
+
+229
+00:11:35,790 --> 00:11:38,250
+我也确信外面还有很多组织在经历同样的事情
+I'm sure there are other organisations out there which are doing the same.
+
+230
+00:11:38,570 --> 00:11:41,650
+因此他创立了Braintrust 来真正帮助大家在大规模场景下解决这些问题
+And so, he founded Braintrust to really help do this at scale.
+
+231
+00:11:42,150 --> 00:11:46,170
+当我们在处理并理解这些不断涌入的调用轨迹时
+And as we're doing and understanding these traces which are coming in,
+
+232
+00:11:46,350 --> 00:11:49,190
+这些数据高度半结构化 而且经常变化
+and again, being very highly semi-structured data which changes,
+
+233
+00:11:49,990 --> 00:11:52,810
+他意识到传统分析系统并不适用
+he realised that traditional analytical systems weren't fit for purpose.
+
+234
+00:11:53,310 --> 00:11:57,730
+所以我们创建了一个新的数据库类别 叫做BTQL
+So, we've created a new category of databases called BTQL,
+
+235
+00:11:57,750 --> 00:12:00,750
+它真正能在大规模场景下帮助识别并加速这一切
+which really helps identify and accelerate this at scale.
+
+236
+00:12:01,870 --> 00:12:04,650
+使用我们的产品时 我们在工具和平台上都是中立的
+With us, again, we're tool work, we're platform agnostic.
+
+237
+00:12:05,090 --> 00:12:10,510
+不管你使用的是哪种智能体框架 或是哪家大语言模型（LLM）提供商
+So, irrespective of the agent framework you're using or the LLM providers out there,
+
+238
+00:12:10,670 --> 00:12:14,430
+我们的目标都是在不受这些限制的前提下 帮助你交付价值
+we're intending to help you deliver value irrespective of that.
+
+239
+00:12:16,510 --> 00:12:21,590
+在这个工作坊接下来的内容中 我会讲到的一个概念是飞轮
+One of the things I will talk about as we progress in this workshop is the concept of a flywheel.
+
+240
+00:12:22,250 --> 00:12:25,270
+如果你做过敏捷开发
+So, again, if you ever come from agile development,
+
+241
+00:12:25,970 --> 00:12:27,730
+你就会知道 完美是好方案的敌人
+you know, perfection is the enemy of good,
+
+242
+00:12:28,130 --> 00:12:29,150
+我们需要先从某个点开始
+we want to start somewhere.
+
+243
+00:12:29,330 --> 00:12:33,110
+所以即便这是一个全新的应用 你完全不知道它在生产环境中的表现
+So, even if it's the case that it's a new application and you don't know how it's going to behave in production,
+
+244
+00:12:33,650 --> 00:12:35,350
+我们也可以先从一套评估数据集开始
+we can start up with an evaluation set.
+
+245
+00:12:35,610 --> 00:12:38,150
+如果你已经有一个现有应用可以接入监控
+If you have an existing application to instrumenting,
+
+246
+00:12:38,150 --> 00:12:41,870
+那就更好了 我们可以把这些信息拉进来 并在这里识别出失败模式
+that's great, we can pull that information in and identify the failure modes here.
+
+247
+00:12:42,030 --> 00:12:46,590
+所以关键是先把信息送进系统 然后识别出这些模式
+So, the key thing is get information into the system, identify those modes,
+
+248
+00:12:47,070 --> 00:12:48,650
+进行修复 再把新版本发布出去
+remediate, ship it out,
+
+249
+00:12:48,930 --> 00:12:53,030
+接着持续监控 不断完成这个飞轮循环 直到达到你想要的状态
+and then monitor and complete the flywheel again and again until you get to where you need.
+
+250
+00:12:54,210 --> 00:12:54,930
+好 那么
+All right then.
+
+251
+00:12:55,930 --> 00:12:57,370
+你们已经听了我说了不少
+You've heard a lot from me.
+
+252
+00:12:57,550 --> 00:13:01,970
+接下来我要做的一件事是把时间交给我在Trainline的同事
+So, one thing I'm going to do is I'm going to provide my colleagues over at Trainline to
+
+253
+00:13:01,970 --> 00:13:04,290
+让他们来分享一下他们的经验
+maybe just share their experiences of,
+
+254
+00:13:04,370 --> 00:13:07,770
+比如在使用Braintrust之前的情况 以及现在Braintrust是如何提供帮助的
+you know, prior to Braintrust and how they're helping out.
+
+255
+00:13:07,990 --> 00:13:09,610
+那Osama 接下来交给你
+So, Osama, I'll give it to you.
+
+256
+00:13:09,910 --> 00:13:10,950
+非常感谢
+Thank you very much.
+
+257
+00:13:12,650 --> 00:13:15,290
+也再次向刚刚加入我们的朋友们问好
+And hello again for people who are joining us just now.
+
+258
+00:13:16,810 --> 00:13:20,530
+正如刚才介绍的那样 关于Trainline
+As my introduced Trainline,
+
+259
+00:13:20,850 --> 00:13:25,010
+我们是一家真正帮助人们坐上火车的公司
+we are a company that's actually helping people get on the trains.
+
+260
+00:13:25,930 --> 00:13:27,110
+火车和飞机是不一样的
+Trains are different than planes,
+
+261
+00:13:27,350 --> 00:13:28,210
+如果你之前不了解的话
+if you don't know.
+
+262
+00:13:28,730 --> 00:13:30,910
+飞机有一个全球性的系统
+There is this worldwide system,
+
+263
+00:13:31,110 --> 00:13:33,290
+是一个覆盖全球所有航班的中央系统
+central system for all planes around the world.
+
+264
+00:13:33,390 --> 00:13:34,710
+但火车并不是这样
+It's not the case for trains.
+
+265
+00:13:35,430 --> 00:13:37,070
+在欧洲和英国
+And in Europe and the UK,
+
+266
+00:13:37,330 --> 00:13:38,310
+我会说 这件事其实非常难
+it's very hard, I would say,
+
+267
+00:13:38,370 --> 00:13:40,350
+如果你想为每一家铁路运营商都装一个App
+if you would like to install an app for each carrier.
+
+268
+00:13:40,570 --> 00:13:43,610
+你的手机存储空间肯定会被占满
+It will take the whole space on your mobile phone for sure.
+
+269
+00:13:44,410 --> 00:13:49,910
+所以Trainline本质上就是那个统一的平台 来帮你订票
+So, Trainline is actually being that platform basically to help you book tickets.
+
+270
+00:13:50,790 --> 00:13:53,770
+不依赖特定手机应用 不依赖特定平台 也不依赖特定运营商
+Mobile app agnostic, platform agnostic, career agnostic.
+
+271
+00:13:54,070 --> 00:13:57,530
+你只用一个App 就可以订从巴黎到伦敦的火车
+You do it on one app and you can book a train from Paris to London,
+
+272
+00:13:58,810 --> 00:14:04,430
+从里昂到米兰 等等 你基本上想去哪都可以
+from Lyon to Milano, whenever you like, basically.
+
+273
+00:14:04,830 --> 00:14:06,590
+覆盖欧盟内的所有铁路运营商
+Every carrier in the EU.
+
+274
+00:14:07,070 --> 00:14:12,250
+我们几乎已经售出了大约63亿张火车票
+We sell almost like 6.3 billion of tickets on the trains.
+
+275
+00:14:12,930 --> 00:14:15,490
+拥有2700万活跃用户 而且还在持续增长
+27 million active users and counting.
+
+276
+00:14:16,090 --> 00:14:22,130
+对这次大会来说 另一个有趣的点是 我们的AI对话量有多大
+And the other interesting probably one for this conference is how many AI conversations
+
+277
+00:14:22,130 --> 00:14:24,470
+这些对话都是通过我们的旅行助手完成的
+actually that we have with our travel assistant.
+
+278
+00:14:24,790 --> 00:14:27,930
+我们确实有一个面向用户开放的旅行助手
+So, we do have a travel assistant that is exposed to people.
+
+279
+00:14:28,350 --> 00:14:29,990
+它不只是一个聊天机器人
+And it's not just a chatbot.
+
+280
+00:14:30,610 --> 00:14:35,470
+它实际上是一个多智能体系统 可以帮你处理退票
+It's actually a multi-agent system that actually can handle refunds for you,
+
+281
+00:14:35,830 --> 00:14:37,830
+也可以帮你改签火车
+can handle changing trains for you.
+
+282
+00:14:38,050 --> 00:14:39,590
+所以我会说 它是一个非常
+So, it is very, I would say,
+
+283
+00:14:39,970 --> 00:14:45,570
+主动的智能体式系统 而不仅仅是一个聊天机器人
+proactive agentic system and not just a chatbot.
+
+284
+00:14:45,850 --> 00:14:47,530
+可能Mayank还会想在这方面补充一些内容
+Probably Mayank would like to add more about that.
+
+285
+00:14:47,950 --> 00:14:54,370
+拥有2700万活跃用户的一个好处是 你有非常大的空间去探索如何
+So, one of the benefits of having 27 active customers is you've got a huge space of how
+
+286
+00:14:54,370 --> 00:14:57,110
+把智能体式应用实时地服务给用户
+you can serve agentic applications live to customers.
+
+287
+00:14:57,710 --> 00:15:01,670
+其中一个例子就是Osama刚才提到的旅行助手 你可以
+One of the examples of that is what Osama talked about is a travel assistant which you can
+
+288
+00:15:01,670 --> 00:15:03,850
+直接从应用里的购票窗口进入到这个助手
+get to from a ticket window in the application.
+
+289
+00:15:04,730 --> 00:15:09,230
+它是一个智能体式系统 我们稍后在幻灯片中还会再详细讲到这一点
+It's an agentic system which is something we're going to talk about a little bit later in the slide.
+
+290
+00:15:12,070 --> 00:15:13,750
+太棒了 这也把我们带到了
+Awesome. Which brings us, I would say,
+
+291
+00:15:13,790 --> 00:15:14,770
+接下来的一个话题
+to the next point.
+
+292
+00:15:15,370 --> 00:15:16,150
+我会尽量讲得简短一些
+I will keep it short.
+
+293
+00:15:17,890 --> 00:15:22,550
+我们卖火车票 看起来就是一家火车票公司
+Selling train tickets and being like a train ticket company,
+
+294
+00:15:22,870 --> 00:15:24,830
+那我们为什么会做机器学习呢
+how come that we are doing machine learning?
+
+295
+00:15:24,990 --> 00:15:25,810
+当然是可以的
+Of course, we can.
+
+296
+00:15:26,270 --> 00:15:32,890
+在用户出行 购票 乘车等各个环节 我们有太多事情可以做来帮助他们
+There's so much things to do and to help people in terms of their journeys, getting their tickets, getting their trains,
+
+297
+00:15:33,150 --> 00:15:34,490
+基本上就是回家
+getting back home, basically.
+
+298
+00:15:35,290 --> 00:15:36,970
+我们做两件事
+We do two things.
+
+299
+00:15:37,130 --> 00:15:40,630
+首先是经典的机器学习部分，也就是实际去构建模型
+So, the classic ML part which is actually building models.
+
+300
+00:15:40,950 --> 00:15:44,390
+这部分我们在做 我们在Trainline内部从零开始构建机器学习模型
+We do that. We build ML models inside of train line from scratch,
+
+301
+00:15:44,710 --> 00:15:45,810
+从数据一直到模型
+from data to model.
+
+302
+00:15:45,990 --> 00:15:46,730
+这是我们在做的事情
+This is something we do.
+
+303
+00:15:47,170 --> 00:15:55,350
+我们还在大语言模型（LLM）之上构建现在大家熟悉的多智能体式系统
+And we also do the multi-agentic systems that we are now familiar with on top of LLMs that
+
+304
+00:15:55,350 --> 00:15:57,030
+这些是我们非常喜爱并悉心打磨的东西
+we love and cherish.
+
+305
+00:15:57,410 --> 00:15:58,430
+以上这些全部都是
+All of that.
+
+306
+00:15:59,490 --> 00:16:02,270
+这些都是我们在做的 所以我们同时覆盖了这两个方向
+We do that. So, we do these both sides of the story.
+
+307
+00:16:04,230 --> 00:16:12,010
+这里是两个例子 展示用户实际上是如何在这些系统之上使用它们的
+And these are two examples of what users are actually using on top of those systems.
+
+308
+00:16:12,410 --> 00:16:20,330
+在左侧，所以你可以把它想象成你的天气应用程序，不过是用来查看火车中断情况的
+On the left side, so, this is you can think of it as your weather application but for train disruptions.
+
+309
+00:16:20,670 --> 00:16:22,730
+比如说 你有一张火车票
+So, basically, you have a ticket for a train.
+
+310
+00:16:22,890 --> 00:16:27,510
+当你到站时 我们知道这趟车会不会出现中断
+You get there. We know if this train would be disrupted or not.
+
+311
+00:16:27,930 --> 00:16:30,590
+会不会大概率晚点
+If it will be probably late or not.
+
+312
+00:16:30,830 --> 00:16:37,150
+我们能知道 是基于我们掌握的大量数据 以及在这些数据之上训练出的一个机器学习模型 它
+We know that. But based on huge data that we have on top of it that was a machine learning model that
+
+313
+00:16:37,150 --> 00:16:43,310
+已经过训练 可以实际预测列车中断 晚点等情况
+was trained and can actually predict train disruptions being late and all of that.
+
+314
+00:16:43,810 --> 00:16:45,410
+这就是经典的机器学习部分
+So, this is the classic ML part.
+
+315
+00:16:45,790 --> 00:16:48,330
+另一个就是我刚才提到的旅客系统
+The other one, that's the traveler system that I told you about.
+
+316
+00:16:48,730 --> 00:16:51,110
+正如我所说 它是一个非常
+It is, as I said, it's very,
+
+317
+00:16:51,210 --> 00:16:53,350
+我会说是非常先进的多智能体系统
+I would say, advanced multi-agent system.
+
+318
+00:16:53,670 --> 00:16:57,850
+如果你的列车被取消或出现问题 它可以为你展示替代车次
+It can show you alternative trains if your train is canceled or something wrong with it.
+
+319
+00:16:58,210 --> 00:16:59,630
+要你自己来做这些 祝你好运
+Good luck doing that yourself.
+
+320
+00:17:00,030 --> 00:17:04,270
+另外它还能处理退款
+And the other one is handle refunds.
+
+321
+00:17:04,330 --> 00:17:09,790
+所以如果你的列车晚点之类的 你实际上可以为你的车票申请退款
+So, you can actually get for a refund on your ticket if your train is late or all of that,
+
+322
+00:17:09,950 --> 00:17:15,130
+它可以在无需转接人工的情况下完成这些 当然也可以在需要时把流程转接
+and it actually can give you all of that without a handover and also can do the handover
+
+323
+00:17:15,130 --> 00:17:19,830
+给我们出色的人工客服团队中的真实客服人员
+to actual human customer support in our lovely customer support team.
+
+324
+00:17:22,250 --> 00:17:24,830
+这意味着 如果你要在生产环境中做这些
+Which means that if you are doing this at production,
+
+325
+00:17:25,450 --> 00:17:28,810
+在生产级别 并且是在Trainline这种规模上
+in production level and that scale at train line scale,
+
+326
+00:17:28,930 --> 00:17:31,890
+这就会引出一个问题
+it means that or you can ask the question,
+
+327
+00:17:31,970 --> 00:17:33,330
+我们是不是在Trainline把系统搞崩了
+are we breaking things at train line?
+
+328
+00:17:33,790 --> 00:17:35,770
+我们当然不希望这样
+Of course, we don't want to do that.
+
+329
+00:17:36,710 --> 00:17:39,610
+同时我们也在快速前进 因为技术本身发展得非常快
+And we are moving fast because technology is definitely moving fast.
+
+330
+00:17:40,270 --> 00:17:42,010
+这也是我们今天在这里的原因
+And this is why we are here.
+
+331
+00:17:42,110 --> 00:17:43,530
+我们在这里是想向大家展示
+We are here to show you,
+
+332
+00:17:43,590 --> 00:17:47,370
+在AI层面 我们是如何做到在不把系统搞崩的前提下快速前进的
+like, what are we doing to move fast without breaking things in terms,
+
+333
+00:17:47,490 --> 00:17:48,510
+当然 这里指的是AI相关的部分
+of course, of AI.
+
+334
+00:17:48,950 --> 00:17:56,430
+而且在此基础上 我们还能继续运维那些我们非常喜爱并悉心维护的复杂软件系统
+And we can do that on top of handling the complex software systems that we love and
+
+335
+00:17:56,430 --> 00:18:01,290
+包括大规模的API服务以及为数百万用户提供服务
+cherish from APIs at scale and serving millions of users.
+
+336
+00:18:02,310 --> 00:18:05,470
+我们更愿意用这样一个尺度来思考这件事
+So, how we would like to think about it is this scale.
+
+337
+00:18:05,950 --> 00:18:09,590
+我们非常清楚 现有的软件系统
+So, we know for sure that whatever we have, our software systems,
+
+338
+00:18:09,750 --> 00:18:12,130
+代表的是我们这边故事中的确定性一面
+this is the deterministic side of the story that we have.
+
+339
+00:18:12,710 --> 00:18:14,390
+而在另一边
+And on the other side,
+
+340
+00:18:14,530 --> 00:18:15,670
+构建机器学习模型
+building the ML models,
+
+341
+00:18:15,830 --> 00:18:17,790
+则是故事中非确定性的一面
+this is the non-deterministic side of the story.
+
+342
+00:18:18,190 --> 00:18:21,390
+而我们也很清楚 智能体式系统是介于两者之间的
+And we know for sure that the agentic systems are in between.
+
+343
+00:18:21,810 --> 00:18:23,990
+其中有一部分是确定性的
+There are parts of them that are deterministic.
+
+344
+00:18:24,150 --> 00:18:27,210
+也有一部分是明显非确定性的
+There are parts of them that are not definitely deterministic.
+
+345
+00:18:28,870 --> 00:18:31,610
+这就是我们构建思考框架的方式
+And this is how the framework of thinking that we have.
+
+346
+00:18:31,850 --> 00:18:34,310
+那在质量方面 我们是如何处理的呢
+In terms of quality, how are we handling that?
+
+347
+00:18:34,410 --> 00:18:43,250
+问题就在这里 对于机器学习模型 我们非常关注用于训练模型的数据质量
+That's the question. For the ML models, we do care about the quality of data that we use for training the models.
+
+348
+00:18:43,430 --> 00:18:44,950
+但除此之外 在这之上我们还有
+But also, we have on top of it,
+
+349
+00:18:45,050 --> 00:18:47,590
+当然 机器学习评估
+of course, ML, machine learning evaluations,
+
+350
+00:18:48,290 --> 00:18:49,910
+无论是离线评估还是在线评估
+whether offline or online.
+
+351
+00:18:50,150 --> 00:18:51,130
+离线评估指的是
+Offline, it means, like,
+
+352
+00:18:51,210 --> 00:18:52,430
+在进入生产环境之前
+before going to production,
+
+353
+00:18:52,670 --> 00:18:54,110
+你需要先完成评估
+you need to do your evaluations.
+
+354
+00:18:54,110 --> 00:18:56,770
+在线评估则是基于来自生产环境的数据
+And online is the data from production,
+
+355
+00:18:56,870 --> 00:19:00,410
+拿到这些数据之后 评估你的模型表现是否良好
+you get it, and evaluate your model if it's doing well or not.
+
+356
+00:19:00,530 --> 00:19:01,590
+以我们的场景为例
+In our case, for instance,
+
+357
+00:19:01,730 --> 00:19:03,070
+对于那个“天气预报”系统
+for that weather forecast,
+
+358
+00:19:03,650 --> 00:19:08,210
+它是否正确预测了列车的状态 比如是否中断
+is it predicting the state of the train if it's disrupted or not?
+
+359
+00:19:08,370 --> 00:19:10,530
+模型的预测是否准确
+Is the model correct in its prediction?
+
+360
+00:19:10,790 --> 00:19:12,190
+这就是一个例子
+So, that's one example.
+
+361
+00:19:13,350 --> 00:19:16,790
+另一方面 对于熟悉软件工程的人来说
+On the other hand, for people who are familiar with software engineering,
+
+362
+00:19:17,210 --> 00:19:18,710
+我们会做所有
+we do all, I would say,
+
+363
+00:19:18,750 --> 00:19:22,530
+各种质量检查 各类架构图之类的东西 以及我们用于在大规模下处理质量问题的各种工具
+quality checks and the diagrams or whatever and the tooling that we have for handling
+
+364
+00:19:22,530 --> 00:19:25,330
+以支撑在Trainline这种超大规模下的质量保障
+quality at scale, a very large scale train line.
+
+365
+00:19:27,010 --> 00:19:28,830
+而对于这些系统
+And for those systems,
+
+366
+00:19:29,390 --> 00:19:31,530
+我想你们已经猜到了
+I think you already guessed it,
+
+367
+00:19:31,770 --> 00:19:33,290
+它本质上是两者的结合
+it's basically a combination of both.
+
+368
+00:19:33,690 --> 00:19:36,150
+绝对不是只用其中一个而不用另一个
+It's not one without another, for sure.
+
+369
+00:19:36,470 --> 00:19:41,470
+在确定性系统上 我们会做所有常规的质量保障工作
+We do everything that we do quality-wise in terms of deterministic systems,
+
+370
+00:19:41,630 --> 00:19:49,570
+但同时我们也会采用来自非确定性系统的评估手段
+but we also use the evaluation side from the non-deterministic systems.
+
+371
+00:19:50,410 --> 00:19:51,470
+所以 我会说
+So, yeah, that's, I would say,
+
+372
+00:19:51,630 --> 00:19:54,610
+这就是我们在Trainline的思考框架
+the framework of thinking that we have a train line,
+
+373
+00:19:54,730 --> 00:19:55,710
+用来思考这些系统
+thinking about these systems.
+
+374
+00:19:56,350 --> 00:20:00,350
+而且Braintrust的确在这方面给了我们很大帮助
+And definitely, Braintrust is helping with that.
+
+375
+00:20:01,030 --> 00:20:02,270
+顺便说一句 这里做个声明
+And by the way, disclaimer,
+
+376
+00:20:03,090 --> 00:20:04,050
+我们并不是那种
+we are not, I would say,
+
+377
+00:20:04,130 --> 00:20:07,790
+收钱来做宣传的人 我们之所以在这里 是因为我们确信Braintrust对我们确实有效
+we are here just because we are convinced that Braintrust works for us.
+
+378
+00:20:07,970 --> 00:20:08,990
+我们没有收任何费用
+We are not paid.
+
+379
+00:20:09,390 --> 00:20:13,150
+这一点是百分之百真实的 我们只是非常满意的客户
+So, that's 100%. We are happy customers,
+
+380
+00:20:13,150 --> 00:20:15,490
+我们和Braintrust合作已经很久了
+we have been with Braintrust for a long time,
+
+381
+00:20:15,950 --> 00:20:17,470
+而且我们在不同场景下使用它
+and we use it in different,
+
+382
+00:20:17,690 --> 00:20:20,190
+Braintrust的一些功能
+some of Braintrust features,
+
+383
+00:20:20,310 --> 00:20:21,330
+我们在这里的场景中也确实在用
+we actually use them here.
+
+384
+00:20:21,710 --> 00:20:24,350
+比如说 在机器学习和AI评估方面
+So, for instance, for the ML AI evaluations,
+
+385
+00:20:24,710 --> 00:20:30,390
+我们会使用它 并在多个维度上跟踪旅行助手的评分
+we do that, and we follow the scoring of travel assistant on many levels,
+
+386
+00:20:30,850 --> 00:20:35,910
+从语气风格到在处理车票问题时的实际有用程度
+from tone of voice to actual helpfulness when it comes to tickets,
+
+387
+00:20:35,990 --> 00:20:37,050
+而车票相关问题确实是
+and tickets are really,
+
+388
+00:20:37,630 --> 00:20:39,730
+在推理层面非常非常复杂的
+really, I would say, complex in terms of reasoning,
+
+389
+00:20:40,230 --> 00:20:41,390
+包括你应该获得什么
+and what you should get,
+
+390
+00:20:41,470 --> 00:20:42,330
+不应该获得什么
+what you should not get,
+
+391
+00:20:42,410 --> 00:20:44,670
+取决于列车是否晚点
+depending on if the train is late or not,
+
+392
+00:20:45,070 --> 00:20:47,010
+以及车票类型 比如是不是往返票
+the type of ticket, is it a return ticket,
+
+393
+00:20:47,170 --> 00:20:47,830
+或者是不是预售票
+or is it advanced?
+
+394
+00:20:48,090 --> 00:20:49,430
+有非常多复杂的情况
+So many complex cases.
+
+395
+00:20:50,150 --> 00:20:52,770
+但没错 我们确实在持续跟进这方面的评估
+But, yeah, we do follow that evaluation side.
+
+396
+00:20:52,930 --> 00:20:54,330
+可能Mayank还想在这方面补充一些内容
+Probably Mayank would like to add more about that.
+
+397
+00:20:54,470 --> 00:21:00,550
+好的 那我想请在座有在LLM成本方面遇到过困难的同学举一下手
+Yeah. So, can I get a raise of hand from people who have struggled with LLM costs,
+
+398
+00:21:00,910 --> 00:21:04,170
+比如说Token数量 模型切换之类的问题
+number of tokens, switching models, problems like this?
+
+399
+00:21:04,890 --> 00:21:06,150
+好的 看来情况还挺普遍的
+Right. So, yeah, that's nice to see.
+
+400
+00:21:06,390 --> 00:21:08,450
+这些问题在Trainline里我们也同样遇到过
+So, it was a problem with train line as well,
+
+401
+00:21:08,570 --> 00:21:10,230
+因为我们是大规模在做这件事
+because we do this at scale,
+
+402
+00:21:10,790 --> 00:21:16,410
+我们为OpenAI和Anthropic付出的费用高得有点离谱
+and the amount of OpenAI Anthropic amount that we pay is just, like, bizarre.
+
+403
+00:21:16,950 --> 00:21:18,550
+所以我们不得不不断切换模型
+So, we have to keep switching models,
+
+404
+00:21:18,650 --> 00:21:20,170
+去找最适合我们场景的模型
+which is, like, the best model for our use case,
+
+405
+00:21:20,290 --> 00:21:23,290
+更便宜的模型 Token更高效的模型
+cheaper models, models with efficient tokens.
+
+406
+00:21:23,810 --> 00:21:25,890
+但每次你想切换模型的时候
+Now, any time you want to switch models,
+
+407
+00:21:26,550 --> 00:21:31,310
+你都得确保它的表现至少不比当前模型差 对吧
+you want to make sure that it is performing at least at the same level as your current model, right?
+
+408
+00:21:32,230 --> 00:21:35,330
+在使用Braintrust之前 我们其实没有一个明确的方法来做到这一点
+Before Braintrust, we had no specific way of doing it,
+
+409
+00:21:35,330 --> 00:21:36,590
+因为我们没有建立起评分体系
+because we didn't have scores set up,
+
+410
+00:21:36,650 --> 00:21:37,770
+我们也没有那种
+we didn't have, you know,
+
+411
+00:21:37,830 --> 00:21:38,770
+比较系统化的评估机制
+sort of, like, the evaluation.
+
+412
+00:21:39,410 --> 00:21:41,210
+所以在使用Braintrust之后
+So, with the usage of Braintrust,
+
+413
+00:21:41,330 --> 00:21:45,950
+它让我们可以去模拟更便宜模型的性能会是什么样
+what it has enabled us to do is to simulate how the performance of the lower model would
+
+414
+00:21:45,950 --> 00:21:50,910
+我们大量使用Braintrust做离线评估 来看
+look like, and we've used Braintrust extensively to run offline evaluation and see what
+
+415
+00:21:50,910 --> 00:21:51,810
+换模型之后效果会如何
+the effect is going to be,
+
+416
+00:21:51,870 --> 00:21:58,170
+还会做在线评估 来验证离线评估中预期的效果在真实环境下是否如我们所愿
+and also online evaluation to see that the intended effect that we observed in offline is as expected.
+
+417
+00:21:58,350 --> 00:21:59,770
+我觉得这是一个典型的使用场景
+So, that's, I think, one of the use cases.
+
+418
+00:21:59,850 --> 00:22:00,990
+另一个场景就更通用了
+The other one is more generic,
+
+419
+00:22:01,190 --> 00:22:02,990
+比如说 以前我们要花很长时间
+which is, like, it would have taken us,
+
+420
+00:22:02,990 --> 00:22:07,250
+才能评估一个要上线到Travel Assistant里的新功能
+like, a lot long to evaluate a new feature shipping into Travel Assistant,
+
+421
+00:22:07,610 --> 00:22:08,510
+但有了Braintrust之后
+but with Braintrust,
+
+422
+00:22:08,610 --> 00:22:13,310
+我们已经能够确保并确信用户的新体验会是好的
+we have been able to make sure that we are assured that the new experience for the user is going to be good.
+
+423
+00:22:13,630 --> 00:22:16,130
+所以Braintrust在帮助我们快速上线方面起到了很大作用
+So, Braintrust has helped us a lot in shipping fast.
+
+424
+00:22:17,270 --> 00:22:20,250
+很好 另外一个关键点当然就是可观测性
+Cool. And also, the other part is observability, for sure.
+
+425
+00:22:20,850 --> 00:22:23,870
+我们确实在可观测性方面使用Braintrust
+We do use Braintrust for observability,
+
+426
+00:22:23,910 --> 00:22:24,830
+来看某个东西到底有没有正常工作
+if this one is working.
+
+427
+00:22:24,990 --> 00:22:29,230
+是的 这是一个来自Braintrust的真实示例
+Yes. So, yeah, this is a true example from Braintrust.
+
+428
+00:22:29,290 --> 00:22:30,210
+严格来说 我们现在有点在剧透
+We are spoiling, basically,
+
+429
+00:22:30,430 --> 00:22:32,790
+把你们在工作坊里会看到的内容先展示出来了
+the workshop, whatever you are going to see there.
+
+430
+00:22:33,190 --> 00:22:36,310
+但没关系 我们可以追踪所有与工具调用相关的内容
+But, yeah, we can track everything regarding tool calling,
+
+431
+00:22:36,590 --> 00:22:39,510
+以及其他智能体 在数量层面
+the other agent, in terms of number,
+
+432
+00:22:39,690 --> 00:22:40,830
+和质量层面的表现
+in terms of quality.
+
+433
+00:22:41,370 --> 00:22:42,770
+这种类型的洞察
+Those kind of insights,
+
+434
+00:22:42,910 --> 00:22:49,050
+是你们从概念验证走向真正的生产环境系统时所必需的
+you will need them to get from proof of concept to actual system in production or in your
+
+435
+00:22:49,050 --> 00:22:54,290
+无论是在你们公司内部 还是在对外真正被用户使用的系统里
+company or for something actually that's been used out there,
+
+436
+00:22:54,610 --> 00:22:56,730
+这样用户才会觉得这是一个
+and users find it, I would say,
+
+437
+00:22:56,730 --> 00:22:58,990
+真正可用的产品
+a true working product and not,
+
+438
+00:22:59,090 --> 00:23:03,010
+而不是那种随便拼出来的AI生成系统
+I would say, just any slope AI-generated system.
+
+439
+00:23:03,130 --> 00:23:07,170
+所以在这些场景下 这些能力是绝对必需的
+No, we need that definitely for those cases.
+
+440
+00:23:07,530 --> 00:23:08,570
+你这边还想补充点什么吗
+Would you like to add something here?
+
+441
+00:23:08,690 --> 00:23:13,450
+我只想补充 Braintrust可以让你深入观察复杂的智能体式
+I was just going to say that Braintrust enables you to look inside complex agentic
+
+442
+00:23:13,450 --> 00:23:16,430
+工作流可以细化到那种，比如说工具调用级别、token 级别
+workflows up to, like, tool call level, token level,
+
+443
+00:23:16,530 --> 00:23:21,210
+这些信息非常有价值 能帮你在生产环境中排查很多问题
+which is, like, very insightful and helps you debug a lot of things in production and
+
+444
+00:23:21,210 --> 00:23:22,130
+也能在部署之前就发现问题
+before you deploy it.
+
+445
+00:23:23,030 --> 00:23:24,450
+可能还有最后一点
+And one last thing, probably,
+
+446
+00:23:24,630 --> 00:23:28,490
+就是它对跨职能协作非常友好
+is the cross-functional friendly point.
+
+447
+00:23:28,870 --> 00:23:31,290
+这是我们在实践过程中逐渐发现的
+That's something that we have discovered along the way.
+
+448
+00:23:31,710 --> 00:23:33,590
+因为我们在构建这些系统
+Because we are building those systems,
+
+449
+00:23:33,710 --> 00:23:35,150
+从Travel Assistant到底层模型
+from travel assistant to the models,
+
+450
+00:23:35,550 --> 00:23:37,250
+到了某个阶段 我们就需要
+at some point, we need to have,
+
+451
+00:23:37,310 --> 00:23:38,230
+毕竟我们是一家大公司
+we are a big company,
+
+452
+00:23:38,370 --> 00:23:40,190
+有产品同事
+and we have people from product,
+
+453
+00:23:40,310 --> 00:23:42,170
+也有很多非技术背景的同事
+people with non-technical backgrounds,
+
+454
+00:23:42,370 --> 00:23:45,190
+我们需要沟通 需要共享大量信息
+and we need to communicate and we need to share many things,
+
+455
+00:23:45,390 --> 00:23:48,770
+而且他们也需要能够自助获取一部分内容
+and they also need to self-serve some of those things.
+
+456
+00:23:48,890 --> 00:23:49,590
+我们不可能总是
+We cannot, I would say,
+
+457
+00:23:49,670 --> 00:23:51,310
+手把手照顾每个人 比如说
+babysit any people and say,
+
+458
+00:23:51,370 --> 00:23:52,230
+嘿 你应该这么做
+hey, you should do this,
+
+459
+00:23:52,410 --> 00:23:53,690
+我来帮你把日志导出来
+let me get you the logs,
+
+460
+00:23:53,830 --> 00:23:54,810
+下载好再发给你
+download it, and send them.
+
+461
+00:23:54,910 --> 00:23:55,930
+这种方式是行不通的
+That does not work.
+
+462
+00:23:56,250 --> 00:23:59,770
+在大规模场景下 我们需要一种方式
+At scale, we need a way where we can help,
+
+463
+00:23:59,850 --> 00:24:04,670
+既能支持跨职能协作 又能让大家
+I would say, can work cross-functional way and let people be,
+
+464
+00:24:04,830 --> 00:24:11,530
+自由地按自己的需求使用数据和洞察 自助完成很多事情
+I would say, free to do whatever they want and self-serve with data and insights.
+
+465
+00:24:11,750 --> 00:24:14,730
+这也是我们在实践中逐渐意识到的一点
+So this is what we have also discovered along the way,
+
+466
+00:24:14,830 --> 00:24:15,870
+而Braintrust在这方面给了我们很大帮助
+and Braintrust helps us,
+
+467
+00:24:15,910 --> 00:24:18,750
+满足了我们提出的很多需求
+I would say, with many requests that we had,
+
+468
+00:24:18,850 --> 00:24:20,790
+这一点我真的非常感激
+but I really appreciate it, for sure.
+
+469
+00:24:21,350 --> 00:24:22,730
+当然 还有更多用法
+And, of course, more.
+
+470
+00:24:22,910 --> 00:24:25,650
+我们目前其实只用到了这个系统的一部分功能
+We are using just a part of that system.
+
+471
+00:24:25,850 --> 00:24:27,330
+我们也有自己的一些自研组件
+We have our own things.
+
+472
+00:24:27,690 --> 00:24:31,010
+我知道你们还在开发更多工具
+I think you are building even more toolings,
+
+473
+00:24:31,230 --> 00:24:33,250
+所以后面肯定还有更多可以期待的东西
+so definitely more to come.
+
+474
+00:24:33,350 --> 00:24:36,890
+我相信这次工作坊一定能帮你们把这些能力都挖掘出来
+I think the workshop will definitely help you discover all those things.
+
+475
+00:24:37,470 --> 00:24:40,110
+当然 也希望你们在构建过程中玩得开心
+And, of course, have fun building,
+
+476
+00:24:40,870 --> 00:24:42,690
+就在这次工作坊期间
+during the workshop, let's say,
+
+477
+00:24:42,770 --> 00:24:44,750
+打开你们的电脑 如果你感兴趣的话
+laptops out, and if you are interested,
+
+478
+00:24:44,950 --> 00:24:47,530
+Trainline目前正在AI工程方向招聘
+Trainline is hiring in the AI engineering side,
+
+479
+00:24:47,630 --> 00:24:49,470
+好 那我把话筒交还给你 Ja
+of course, and give it to you, Ja.
+
+480
+00:24:49,970 --> 00:24:51,550
+太好了 非常感谢你们整个团队的分享
+Perfect. Thank you so much for that, team.
+
+481
+00:24:52,570 --> 00:24:53,710
+我再补充一句
+And just to say, again,
+
+482
+00:24:54,270 --> 00:24:55,290
+个人也非常感谢你们
+a personal thank you,
+
+483
+00:24:55,890 --> 00:24:57,010
+也代我妻子向你们表示感谢
+an extension of my wife,
+
+484
+00:24:57,110 --> 00:24:59,110
+我们真的非常感谢你们做的Split-Saver这个功能
+we thank you so much for the split-saver functionality.
+
+485
+00:25:02,110 --> 00:25:03,390
+好的 各位
+All right, then, team.
+
+486
+00:25:05,010 --> 00:25:07,070
+我们接下来进入环境配置环节
+Let's proceed with the set-up.
+
+487
+00:25:07,230 --> 00:25:09,430
+再提醒一下 这将是一个动手实践工作坊
+Again, this is going to be a hands-on workshop.
+
+488
+00:25:10,250 --> 00:25:12,250
+大家最好把自己的bash技能翻一翻出来
+Better dust off your bash skills, team.
+
+489
+00:25:12,350 --> 00:25:15,450
+开个玩笑 我准备了一个不错的速查表来帮你们
+Joke's, I've got a nice raffle to help out with that.
+
+490
+00:25:15,850 --> 00:25:22,310
+希望大家 或者至少大部分人 已经加入了AI engineer的Slack组织
+Hopefully, everybody, or at least most folks have joined the Slack organisation for AI engineer,
+
+491
+00:25:22,670 --> 00:25:23,970
+并且加入了对应的频道
+and then also joined the channel.
+
+492
+00:25:24,370 --> 00:25:25,890
+我已经把相关链接发出去了
+I've put a link to this,
+
+493
+00:25:26,310 --> 00:25:30,230
+另外还有一个指向我们将要使用的代码仓库的二维码
+but there's also a QR code to the repository which we will be using.
+
+494
+00:25:31,310 --> 00:25:32,470
+我会再等几分钟
+I will give it a few minutes.
+
+495
+00:25:33,270 --> 00:25:40,670
+最关键的一点是注册一个免费的Braintrust账号
+The really key thing is signing up to a free Braintrust account.
+
+496
+00:25:41,350 --> 00:25:46,590
+如果你使用Gmail，可以用加号这个小技巧来创建一个新账号
+If you use Gmail, you can use a little plus sign trick to just create a new account.
+
+497
+00:25:46,910 --> 00:25:51,110
+如果你今天已经是Braintrust的现有用户
+If you are an existing Braintrust user today,
+
+498
+00:25:51,390 --> 00:25:54,390
+希望这不会干扰你现有的账号
+so hopefully it doesn't pollute your existing one.
+
+499
+00:25:54,870 --> 00:25:57,870
+你还需要能够使用一个OpenAI的API密钥
+You will also need access to an open AI API key.
+
+500
+00:25:59,270 --> 00:26:01,350
+正常情况下你应该很容易就能生成一个密钥，如果
+This should be easy for you to generate if,
+
+501
+00:26:01,790 --> 00:26:04,010
+如果因为某些原因你没办法生成密钥
+for some reason, you're not able to generate a key,
+
+502
+00:26:04,150 --> 00:26:05,950
+那就请告诉我的同事
+then please let my colleagues know.
+
+503
+00:26:06,070 --> 00:26:11,410
+我们可以在Slack上发私信给你一个密钥，用于今天这场特定的活动
+We will be able to send a DM you on Slack to use for this specific session today.
+
+504
+00:26:12,530 --> 00:26:13,110
+而且我想，很显然
+And I think, obviously,
+
+505
+00:26:13,270 --> 00:26:14,590
+作为一场工程技术会议
+as an engineering conference,
+
+506
+00:26:14,710 --> 00:26:15,470
+尤其还是关于AI的
+and especially in AI,
+
+507
+00:26:16,090 --> 00:26:18,210
+如果你在使用AI编程助手
+if you are using AI coding assistance,
+
+508
+00:26:18,590 --> 00:26:23,830
+完全可以在你的IDE或终端里使用它来引导你完成整个过程
+feel free to use that within your ID or in the terminal to guide you along the way,
+
+509
+00:26:24,090 --> 00:26:26,130
+比如就代码库提问等等
+ask questions around the codebase, and so forth.
+
+510
+00:26:26,950 --> 00:26:30,790
+我已经尽量简化了很多脚手架相关的内容
+I've tried to simplify a lot of the scaffolding in place,
+
+511
+00:26:30,910 --> 00:26:38,430
+所以我在这台机器上用Mise来管理Node和PNPM
+so I'm using Mize to manage Node and PMPM on the machine,
+
+512
+00:26:39,070 --> 00:26:43,210
+但你也可以选择下载指定版本的Node v22
+but alternatively, you can download Node v22 in the specific version there.
+
+513
+00:26:43,930 --> 00:26:45,710
+这样应该没问题，不过再强调一下
+It should be fine, but again,
+
+514
+00:26:45,750 --> 00:26:46,290
+我只是想先打个预防针
+I just want to caveat,
+
+515
+00:26:46,430 --> 00:26:47,490
+尤其是针对这次工作坊
+especially for this workshop,
+
+516
+00:26:47,610 --> 00:26:51,550
+我把那个特定的运行时环境固定住了
+I fixed that specific, let's say, runtime.
+
+517
+00:26:52,430 --> 00:26:54,650
+我在用Make，再次说明
+I'm using Make to, just again,
+
+518
+00:26:54,770 --> 00:26:56,690
+只是把一些命令做了一点语法糖式的封装
+a bit of syntactic sugar to wrap the commands.
+
+519
+00:26:57,730 --> 00:26:59,730
+如果因为某些原因你没有安装Make
+If, for some reason, you don't have Make installed,
+
+520
+00:26:59,810 --> 00:27:00,910
+比如你是在Windows机器上
+if you're on a Windows machine,
+
+521
+00:27:01,310 --> 00:27:04,430
+那你可以直接运行PNPM命令
+you can then just run the PMPM commands,
+
+522
+00:27:04,550 --> 00:27:06,970
+它们其实就是对package.json里脚本的简单封装
+which are then just wrappers for the package.json file.
+
+523
+00:27:08,870 --> 00:27:16,890
+那我们就再给大家几分钟时间来扫码和克隆仓库
+So, yeah, we'll give it a few minutes for folks to scan and clone.
+
+524
+00:27:17,310 --> 00:27:18,570
+还想顺便提醒一下
+And just worth pointing out as well,
+
+525
+00:27:19,470 --> 00:27:22,030
+我在那个表格里
+I have in the sheet there,
+
+526
+00:27:22,110 --> 00:27:25,690
+我看到已经有很多人看过了
+I can see lots of folks have already gone through it,
+
+527
+00:27:25,830 --> 00:27:28,410
+里面我们提供了逐步操作的说明
+but yeah, we provide a step-by-step logo.
+
+528
+00:27:28,590 --> 00:27:33,210
+所以就像刚才说的，在我们今天推进这个工作坊的过程中
+So, as mentioned, as we're proceeding with the workshop today,
+
+529
+00:27:33,270 --> 00:27:36,470
+如果你卡住了，可以在Slack频道里提问
+if you are stuck, you can please ask questions on the Slack channel,
+
+530
+00:27:36,550 --> 00:27:37,810
+也可以参考那份说明
+but also you can refer to this.
+
+531
+00:27:38,330 --> 00:27:39,450
+像刚才说的，这个文档会一直保留
+As mentioned, this will stay,
+
+532
+00:27:39,530 --> 00:27:40,610
+它是一个对外公开的资源
+this is a public facing asset,
+
+533
+00:27:41,070 --> 00:27:43,550
+所以即使你不在这次工作坊现场
+so even if you're outside of this workshop,
+
+534
+00:27:43,690 --> 00:27:46,650
+以后遇到问题也可以随时自己去看
+you're stuck, you can kind of go to it at your own leisure.
+
+535
+00:28:05,130 --> 00:28:06,650
+我想先简单举个手统计一下
+Just kind of maybe a show of hands,
+
+536
+00:28:07,310 --> 00:28:10,690
+现场谁拿不到OpenAI的API密钥
+who here is not able to get an open API key?
+
+537
+00:28:11,690 --> 00:28:13,190
+是OpenAI，抱歉，API密钥
+Open AI, sorry, API key.
+
+538
+00:28:13,790 --> 00:28:15,370
+希望大家都能把这个密钥准备好
+Hopefully, folks will be able to provision that.
+
+539
+00:28:16,310 --> 00:28:17,750
+这对今天的内容非常关键
+It's really critical to this.
+
+540
+00:28:22,560 --> 00:28:26,140
+好，有人说有些晚到的同学没有拿到二维码
+Yeah? There are some people joining late who don't have the QR code.
+
+541
+00:28:26,500 --> 00:28:28,080
+是Slack的二维码吗 对，是Slack的
+For the Slack? For the Slack, yeah.
+
+542
+00:28:28,100 --> 00:28:28,920
+行，我可以再放一次
+I can do that, yeah.
+
+543
+00:28:33,210 --> 00:28:33,650
+好
+Okay,
+
+544
+00:28:38,020 --> 00:28:39,900
+各位，我想我们确实有一些晚到的同学
+folks, I think we did have a few late starters,
+
+545
+00:28:40,360 --> 00:28:42,560
+所以我不想在这上面花太久时间
+so, yep, I don't want to spend too long with this,
+
+546
+00:28:42,660 --> 00:28:44,060
+不过如果你是刚刚才进来的
+but if you did join late,
+
+547
+00:28:44,320 --> 00:28:45,920
+请扫一下那个二维码
+please scan that QR code,
+
+548
+00:28:46,540 --> 00:28:50,980
+它会让你加入AI Slack工程组织
+which will give you access to the AI Slack engineering organization,
+
+549
+00:28:51,800 --> 00:28:53,660
+然后再加入那个AI频道
+and then join the AI channel,
+
+550
+00:28:54,440 --> 00:28:56,620
+也就是AI Engineer Europe 2026 Braintrust工作坊这个频道
+AI Engineer Europe 2026 Braintrust Workshop.
+
+551
+00:28:56,780 --> 00:28:57,800
+这是一个对外公开的频道
+It's a public-facing channel.
+
+552
+00:28:58,480 --> 00:29:03,920
+通过这个频道你可以访问置顶内容
+Through that channel, you'll be able to get access to the pinned content,
+
+553
+00:29:04,460 --> 00:29:06,520
+包括代码仓库以及一份速查表
+so the repository, as well as a cheat sheet,
+
+554
+00:29:06,640 --> 00:29:07,800
+我们接下来也会按那份速查表来走
+which we'll be following as well.
+
+555
+00:29:14,040 --> 00:29:16,060
+好，简单确认一下情况
+Yeah, just a bit of a sense check, folks.
+
+556
+00:29:17,060 --> 00:29:22,820
+希望大部分人已经加入了Slack频道，也能克隆这个
+Hopefully, most of you have been able to join the Slack channel and are able to clone the
+
+557
+00:29:22,820 --> 00:29:24,340
+仓库，并且可以访问它
+repository, have access to that.
+
+558
+00:29:25,240 --> 00:29:25,880
+好，那我们继续
+All right, then.
+
+559
+00:29:27,140 --> 00:29:30,680
+就像我在议程开头提到的那样
+As I mentioned at the start of the agenda as well,
+
+560
+00:29:30,980 --> 00:29:34,200
+我们要做的是构建一个示例
+what we'll be doing is creating an example,
+
+561
+00:29:34,500 --> 00:29:35,820
+可以说是一个支持工单分诊智能体
+let's say, support triage agent.
+
+562
+00:29:36,220 --> 00:29:43,520
+希望它能代表很多大家已经构建过或
+So, hopefully, this exemplifies a lot of systems that folks maybe have already built or
+
+563
+00:29:43,520 --> 00:29:44,220
+正在尝试构建的系统
+are trying to build.
+
+564
+00:29:44,660 --> 00:29:49,580
+这是一个专门为本次工作坊设计的虚构应用
+It is a fictitious application designed specifically for this workshop.
+
+565
+00:29:49,940 --> 00:29:51,080
+请不要在生产环境中使用它
+Please do not use it in production.
+
+566
+00:29:51,260 --> 00:29:56,460
+它只是用来教我们如何把这些AI模式构建出来并扩展到一定规模
+It's just really around to just teach us how do we build these AI patterns into scale.
+
+567
+00:29:56,460 --> 00:29:57,940
+所以它的思路是
+So, the idea there is,
+
+568
+00:29:58,820 --> 00:30:01,720
+在某个系统里有工单被创建出来
+given a ticket might be raised in a particular system,
+
+569
+00:30:02,720 --> 00:30:05,980
+我们有一组智能体会经过一个流水线式的处理过程
+we have a set of agents that goes through a pipeline process,
+
+570
+00:30:06,120 --> 00:30:06,700
+我不太想叫它流水线
+I won't say pipeline,
+
+571
+00:30:06,860 --> 00:30:07,740
+更像是一个分阶段的过程
+but a staged process,
+
+572
+00:30:07,920 --> 00:30:13,300
+通过工具调用，生成一组信息，可以被发送到下游
+tool calling, that produces a set of information that can be emitted into downstream
+
+573
+00:30:13,300 --> 00:30:15,300
+系统，从这个角度来看是这样的
+systems from that perspective.
+
+574
+00:30:16,840 --> 00:30:20,240
+为了帮大家更直观地理解这个系统在做什么
+Just to kind of help visualize what the system does,
+
+575
+00:30:20,640 --> 00:30:22,400
+再说一遍，我们先拿到工单输入
+again, we're taking the ticket input.
+
+576
+00:30:23,000 --> 00:30:25,340
+我们的第一步是收集上下文
+We have a first step, which is collecting the context.
+
+577
+00:30:25,340 --> 00:30:28,240
+这是一个相当确定性的抽取信息的方式
+It's quite a deterministic way of extracting information.
+
+578
+00:30:29,360 --> 00:30:32,240
+然后我们进入智能体式的那一部分
+We then proceed with the agentic type of portion,
+
+579
+00:30:32,380 --> 00:30:34,120
+我们把它拆成了三个阶段
+where we've broken that into three stages.
+
+580
+00:30:34,700 --> 00:30:38,680
+我们用大语言模型（LLM）加工具调用来对具体问题进行分诊
+So, we have an LLM and tool calls to triage a particular issue.
+
+581
+00:30:39,480 --> 00:30:43,660
+接着我们要做一次策略审查，确保输出是正确的
+We then want to do a policy review to make sure the output is correct.
+
+582
+00:30:44,200 --> 00:30:45,740
+然后我们要创建并起草
+We then want to create and draft,
+
+583
+00:30:45,820 --> 00:30:49,060
+比如说，用一个回复生成器写一封面向客户的回复草稿
+let's say, a customer-facing reply with reply writer.
+
+584
+00:30:49,740 --> 00:30:51,620
+然后我们要把这些打包在一起
+And then we want to package this together.
+
+585
+00:30:52,280 --> 00:30:56,000
+并且根据这个工单的严重程度
+And depending on how severe this particular ticket,
+
+586
+00:30:56,400 --> 00:31:00,580
+再调用另一个工具来判断是否需要把它升级给
+we can invoke another tool call to whether we need to escalate this to,
+
+587
+00:31:00,740 --> 00:31:01,820
+比如说，引入人工参与
+let's say, a human in the loop,
+
+588
+00:31:02,400 --> 00:31:03,660
+然后再起草最终结果
+and then draft the final result.
+
+589
+00:31:04,080 --> 00:31:06,260
+所以整体来说并不算太复杂
+So, again, not too complex,
+
+590
+00:31:06,420 --> 00:31:12,120
+只是为了让你了解我们在这节课里要构建并投入运行的大致系统
+but just give you an idea of the system that we'll be trying to build and operationalize in this session.
+
+591
+00:31:13,320 --> 00:31:15,260
+有一点需要说明的是
+One thing to point out is,
+
+592
+00:31:15,620 --> 00:31:17,620
+当我们开始使用Braintrust时
+as we begin to use Braintrust,
+
+593
+00:31:17,720 --> 00:31:22,500
+那么它究竟在帮助你进行大规模部署和管理时处在什么位置
+really, where does it fit into helping you deploy and manage this at scale?
+
+594
+00:31:22,920 --> 00:31:24,800
+我刚刚在这里把这一部分单独拎了出来
+I've just isolated this here,
+
+595
+00:31:24,940 --> 00:31:27,500
+也就是我们在接下来要做的所有事情
+where everything we're going to be doing towards the end,
+
+596
+00:31:27,600 --> 00:31:28,420
+尤其是随着我们不断推进
+especially as we progress,
+
+597
+00:31:28,760 --> 00:31:30,080
+我们会对它进行端到端追踪
+we'll trace it end-to-end,
+
+598
+00:31:30,240 --> 00:31:31,840
+就像我的同事们之前提到的那样
+as my colleagues talked about.
+
+599
+00:31:32,760 --> 00:31:34,500
+我们会对提示词使用托管模式
+We'll use manage mode for prompts,
+
+600
+00:31:34,680 --> 00:31:38,840
+也就是把你本地要做的事情卸载到一个安全环境中去
+so offloading what you'll do locally into a secure environment.
+
+601
+00:31:39,520 --> 00:31:40,840
+工具调用同样会被托管管理
+Tool calls as well will be managed.
+
+602
+00:31:40,840 --> 00:31:44,820
+所以你也会涉及如何访问外部系统
+So, again, you'll talk about getting to external systems.
+
+603
+00:31:45,340 --> 00:31:47,300
+最后是在评估和打分这一块
+And lastly, around evaluations and scorers,
+
+604
+00:31:47,500 --> 00:31:49,820
+这些都会通过我们的Braintrust基础设施来运行
+which will be run through our Braintrust infrastructure.
+
+605
+00:31:53,740 --> 00:31:55,000
+还值得一提的是
+It's worth pointing out as well,
+
+606
+00:31:55,060 --> 00:31:58,320
+如果你进入GitHub代码仓库
+if you do go into the GitHub repository,
+
+607
+00:31:59,260 --> 00:32:01,620
+里面还有一个对应的GitHub Pages版本
+there's a GitHub Pages version of this as well.
+
+608
+00:32:01,780 --> 00:32:04,940
+所以这些幻灯片会随时供你使用和查看
+So, again, the slides will be readily available for you to use and consume.
+
+609
+00:32:07,280 --> 00:32:15,300
+这里还有一个关键点是我尽量帮你把每个阶段都做成一个检查点
+Key thing as well with this is I've tried to help you do each phase and checkpoint this.
+
+610
+00:32:15,440 --> 00:32:16,520
+所以如果你在某一步卡住了
+So, if you're ever stuck,
+
+611
+00:32:16,780 --> 00:32:20,840
+思路就是用git checkout切到某个特定的tag或分支
+the idea is just use get checkout to a specific tag or the branch,
+
+612
+00:32:21,140 --> 00:32:26,120
+在这里，每一个独立的tag或分支在对应阶段都是可以完整运行的
+but in this case, each individual tag or branch is fully runnable at that stage.
+
+613
+00:32:26,580 --> 00:32:27,620
+所以如果你哪一步卡住了
+So, if you're ever stuck,
+
+614
+00:32:27,700 --> 00:32:29,720
+再次强调，就git checkout到那个分支
+again, get checkout to that branch,
+
+615
+00:32:29,840 --> 00:32:31,360
+然后执行make install、make setup
+so you make install, make setup,
+
+616
+00:32:32,080 --> 00:32:34,920
+运行这些命令，你就应该能得到几乎相同的输出结果
+run the commands, and then you should be able to get near identical output.
+
+617
+00:32:34,920 --> 00:32:39,860
+每次都可以做到 这些内容在readme里都有记录
+Every time. So, again, this is all documented in the readme,
+
+618
+00:32:40,100 --> 00:32:43,120
+也同样包含在速查表里，方便你一步步往下做
+but it's also included in the cheat sheet as well for you to progress.
+
+619
+00:32:44,700 --> 00:32:47,840
+好 那我先给你梳理一下整个步骤顺序
+Okay. So, yeah, just to kind of give you the sequence of events,
+
+620
+00:32:48,200 --> 00:32:50,280
+我们会先做脚手架搭建和环境配置
+we'll be doing kind of a scaffold and setup.
+
+621
+00:32:50,920 --> 00:32:53,460
+我会讲一下如何构建一个基础的agent
+I'll talk about building a basic agent.
+
+622
+00:32:53,560 --> 00:32:56,840
+再强调一下，这个工作坊并不是专门讲如何构建agent的
+Again, this workshop isn't really designed to talk about building agents.
+
+623
+00:32:56,960 --> 00:32:58,580
+而是说当你已经有了一个agent之后
+It's about, okay, once you do have an agent,
+
+624
+00:32:58,940 --> 00:33:00,280
+接下来要如何把它运营化、工程化
+how do you then operationalize that?
+
+625
+00:33:00,280 --> 00:33:02,040
+但为了简化流程
+But just for brevity,
+
+626
+00:33:02,320 --> 00:33:03,740
+我们还是希望按步骤一点点来
+we wanted to kind of do it step by step.
+
+627
+00:33:04,300 --> 00:33:07,200
+然后我们会进入核心部分，给它加上追踪能力
+And then we'll kind of get into the core of it where we'll add the tracing,
+
+628
+00:33:07,500 --> 00:33:09,160
+讨论评估相关的内容
+talk about the evaluations,
+
+629
+00:33:09,600 --> 00:33:13,200
+讨论那个黄金数据集，并找出可以改进的地方
+talking about that golden set and identifying where we can improve.
+
+630
+00:33:13,920 --> 00:33:17,120
+接着再把这一切串联起来，利用
+And then, again, tying it all together and using kind of managed infrastructure within
+
+631
+00:33:17,120 --> 00:33:19,760
+Braintrust里的托管基础设施来帮助把它运营化
+BrainTrust to help operationalize this out.
+
+632
+00:33:19,820 --> 00:33:22,860
+还会再谈到我在Trainline的同事提到的那种协作方式
+And again, talk about that collaboration that my colleagues at Trainline talked about.
+
+633
+00:33:23,940 --> 00:33:25,040
+还有一个关键点是
+Also, kind of the key thing,
+
+634
+00:33:25,140 --> 00:33:27,520
+一旦你在生产环境中发现了某个失败模式
+which is once you do identify a production failure,
+
+635
+00:33:28,180 --> 00:33:32,500
+接下来要如何对它进行修复，完成这个飞轮闭环，并最终产出一个定型的资产
+it's then how do we apply a fix to this and then complete that flywheel and give you a finalized asset.
+
+636
+00:33:34,540 --> 00:33:38,020
+好 那在第一步我们会讲如何构建这个agent
+Okay. So in step one, we're going to be talking about building the agent.
+
+637
+00:33:38,920 --> 00:33:40,600
+在这个检查点里
+So in this checkpoint here,
+
+638
+00:33:41,440 --> 00:33:43,940
+我们总得从某个地方开始 对吧
+again, we need to start somewhere, right?
+
+639
+00:33:44,040 --> 00:33:45,380
+那我们要做什么呢
+So what do we do?
+
+640
+00:33:45,780 --> 00:33:48,260
+我们会先发起一次对大语言模型（LLM）的初始调用
+We will take an initial call to an LLM.
+
+641
+00:33:48,360 --> 00:33:49,040
+我们会设置一个提示词
+We'll set up a prompt.
+
+642
+00:33:49,680 --> 00:33:51,280
+单轮调用 一次输入 一次输出
+One shot, one in, one out,
+
+643
+00:33:51,380 --> 00:33:52,060
+然后拿到一个输出结果
+and get an output.
+
+644
+00:33:52,720 --> 00:33:55,160
+所以如果你在做一个概念验证（POC）
+So again, if you're doing a proof of concept,
+
+645
+00:33:56,400 --> 00:33:59,940
+这可能非常适合作为最初那次功能探索的一部分
+this might be great as part of that initial spike.
+
+646
+00:34:00,200 --> 00:34:02,120
+但我们也清楚后面还有很多工作要做
+But again, we know there's work to be done.
+
+647
+00:34:02,440 --> 00:34:03,200
+不过就上下文而言
+But yeah, for context,
+
+648
+00:34:03,340 --> 00:34:04,480
+我们现在只是按步骤把它走一遍
+we're just going to be stepping through this.
+
+649
+00:34:05,080 --> 00:34:08,420
+但正如我说过的 在演示里能跑通
+But as I mentioned, just because it works in the demo doesn't mean it's necessarily going
+
+650
+00:34:08,420 --> 00:34:09,020
+并不代表在生产环境里也一定能跑通
+to work in production.
+
+651
+00:34:10,760 --> 00:34:13,300
+我在这里放了一些伪代码来说明这一点
+I've put some pseudocode here just to articulate here.
+
+652
+00:34:13,420 --> 00:34:14,260
+你可以看到
+But you can see here,
+
+653
+00:34:15,040 --> 00:34:18,460
+和所有这类语言模型一样
+as with all these language models,
+
+654
+00:34:18,900 --> 00:34:20,920
+我们会提供一段系统提示词
+we provide a set of a system prompt.
+
+655
+00:34:21,040 --> 00:34:23,220
+我们会提供用户信息 尤其是文本内容
+We provide the user, and especially the text,
+
+656
+00:34:23,720 --> 00:34:25,700
+然后把模型的输出再传回到我们的应用里
+and we pass that output back into our application.
+
+657
+00:34:26,100 --> 00:34:27,380
+所以就是一个函数 一次模型调用
+So one function, one model call,
+
+658
+00:34:27,940 --> 00:34:29,040
+我们就能拿到结构化输出
+we have the structured output,
+
+659
+00:34:29,140 --> 00:34:31,760
+也就是我们期望得到的那部分结果
+which we want to receive as part of the output.
+
+660
+00:34:34,100 --> 00:34:35,500
+接下来我们还会做的一件事是
+So what we'll do as well,
+
+661
+00:34:35,660 --> 00:34:39,600
+当我们搭好脚手架并切到第一个分支时
+when we do the scaffolding and checking out to the first branch,
+
+662
+00:34:40,160 --> 00:34:42,120
+我们可以运行一组预先构建好的工单
+we can run a set of pre-built tickets.
+
+663
+00:34:42,500 --> 00:34:45,060
+这些场景已经在代码里写好了
+So it's a case that's already done in code,
+
+664
+00:34:45,100 --> 00:34:46,180
+你也可以通过命令行来用它们
+or you can use a command line.
+
+665
+00:34:46,260 --> 00:34:47,540
+我一会儿会简单演示一下
+So I'll just demonstrate that shortly,
+
+666
+00:34:47,660 --> 00:34:49,720
+看看输出大概长什么样
+what it would look like with the output.
+
+667
+00:34:50,480 --> 00:34:54,320
+你会得到类似那样的JSON格式结果
+And you'll get something similar to that in JSON format.
+
+668
+00:35:01,020 --> 00:35:03,240
+希望现在大家都能看到这个界面
+So hopefully everyone can see this at the moment.
+
+669
+00:35:03,740 --> 00:35:06,980
+我这边已经把应用打开了
+I have the application here.
+
+670
+00:35:09,810 --> 00:35:14,210
+好 那我现在要切到basic这个checkout
+Okay, so I'm just going to go to basic checkout.
+
+671
+00:35:21,980 --> 00:35:23,380
+然后你会看到这是个什么东西
+And what's this?
+
+672
+00:35:24,440 --> 00:35:27,780
+如果我在这里看一下
+So if I take a look here,
+
+673
+00:35:27,860 --> 00:35:30,680
+现在我已经切到了第一个tag
+so I'm now checked out into that first tag,
+
+674
+00:35:30,760 --> 00:35:31,720
+也就是构建基础agent的那个tag
+so building the basic agent.
+
+675
+00:35:33,460 --> 00:35:35,080
+这里我已经有这个应用了
+I've got the application here,
+
+676
+00:35:35,600 --> 00:35:37,740
+它和刚才的提示词示例代码非常相似
+which is again very similar to the prompt code.
+
+677
+00:35:39,020 --> 00:35:42,300
+我们在创建客户端 并调用OpenAI的SDK
+We're creating the client, calling OpenAI SDK.
+
+678
+00:35:42,640 --> 00:35:46,900
+同样是为了简化 我没有使用任何agent SDK
+Again, for brevity, I've didn't use any agent SDKs,
+
+679
+00:35:46,960 --> 00:35:50,940
+但在后续的工作坊过程中 我们是完全支持这些SDK的
+but we fully support that as well as we proceed with the workshop.
+
+680
+00:35:53,400 --> 00:35:54,820
+所以这些东西已经准备好了
+So this is already available,
+
+681
+00:35:55,000 --> 00:35:56,380
+你也可以从makefile里看到
+and you'll see again from makefile,
+
+682
+00:35:57,080 --> 00:35:58,420
+如果你没有安装make
+if you don't have make installed,
+
+683
+00:35:58,540 --> 00:36:01,060
+那你可以直接执行pnpm的脚本
+then you can just execute pnpm scripts.
+
+684
+00:36:01,800 --> 00:36:04,100
+或者你用npm或yarn也行
+Or I don't know if you use npm or yarn,
+
+685
+00:36:04,680 --> 00:36:06,120
+这些方式同样是可以的
+that's also possible as well.
+
+686
+00:36:06,200 --> 00:36:10,120
+我没亲自测过 但理论上应该没问题 因为它只是用到了一个package.json
+I haven't tested it, but theoretically it should work because it's just using a package of JSON.
+
+687
+00:36:11,780 --> 00:36:14,680
+所以在这个例子里 假设你想执行make ticket这样的命令
+So in this case, let's say you want to do something like make ticket.
+
+688
+00:36:16,760 --> 00:36:17,780
+我想给它传入一个内容
+So I want to give it a thing,
+
+689
+00:36:17,880 --> 00:36:23,980
+比如说“我的密码需要重置”
+say my password needs to be reset.
+
+690
+00:36:25,440 --> 00:36:27,320
+在这个例子里 我预设了一些默认值
+In this case, I provided some defaults,
+
+691
+00:36:27,440 --> 00:36:28,920
+所以我只需要一路回车回车回车
+so I'm just going to enter, enter, enter.
+
+692
+00:36:29,700 --> 00:36:31,760
+然后它现在就会向OpenAI发起一次调用
+And now it's just making a call to OpenAI.
+
+693
+00:36:32,000 --> 00:36:36,660
+我现在用的模型是 GPT-4o mini 你们大概已经在环境变量文件里看到过了
+I'm just using, you probably would have seen from the environment variable file, I'm using GPT-4o mini.
+
+694
+00:36:37,000 --> 00:36:38,100
+如果你愿意的话可以切换成别的模型
+You can switch it if you want to,
+
+695
+00:36:38,240 --> 00:36:39,860
+但就这次演示的目的来说
+but just for the purpose of this,
+
+696
+00:36:39,860 --> 00:36:40,540
+我们就保持简单一点
+we'll keep it simple.
+
+697
+00:36:41,720 --> 00:36:43,200
+你可以看到这里我已经拿到了这个工单
+So you can see here I've got the ticket,
+
+698
+00:36:43,620 --> 00:36:46,220
+而且这里也已经生成了一些输出
+and it's provided some output here as well.
+
+699
+00:36:46,840 --> 00:36:47,920
+但这依然只是一次单轮调用
+But again, that's a singular shot.
+
+700
+00:36:49,000 --> 00:36:52,700
+我想我们已经……所以
+I think we've... So,
+
+701
+00:36:56,890 --> 00:36:58,090
+你看根据这个输出
+you know, based on this output,
+
+702
+00:36:58,290 --> 00:36:59,770
+看起来还是挺可信的
+it looks fairly plausible.
+
+703
+00:37:00,490 --> 00:37:04,510
+但同样地 它并不会覆盖我们想要处理的很多边缘案例
+But again, it's not going to account for a lot of the edge cases that we want,
+
+704
+00:37:04,590 --> 00:37:06,990
+尤其是当你的组织里有很多细微差别和特殊情况时
+especially if you've got a lot of nuance to the organization,
+
+705
+00:37:07,310 --> 00:37:09,690
+而我们正试图把这些都嵌进这里的逻辑里
+which we're trying to bolt into the logic here.
+
+706
+00:37:20,540 --> 00:37:23,460
+我甚至可以做一些像 make demo 这样的操作
+I can even do things like make demo.
+
+707
+00:37:25,900 --> 00:37:26,920
+比如说 make demo……
+So, make demo...
+
+708
+00:37:29,240 --> 00:37:30,080
+我把脚本给忘了
+I forgot the scripts.
+
+709
+00:37:30,980 --> 00:37:31,720
+对 其实是同一回事
+Yeah, it's the same thing.
+
+710
+00:37:31,800 --> 00:37:33,680
+我只是调用了同一个函数
+I'm just calling the same function,
+
+711
+00:37:33,800 --> 00:37:35,740
+但我在这里把它用 JSON 的形式固化下来了
+but I've got it codified as JSON here.
+
+712
+00:37:44,410 --> 00:37:46,970
+所以这些 JSON 字段都是可以直接看到的
+So yeah, the JSON fields are available to see.
+
+713
+00:38:03,510 --> 00:38:06,270
+好 这个部分还是相当直观的
+Okay, so that's fairly straightforward.
+
+714
+00:38:06,710 --> 00:38:07,970
+我不想在这上面花太多时间
+I don't want to dwell on that too much.
+
+715
+00:38:08,630 --> 00:38:12,210
+接下来我想讲的是如何添加本地工具
+So the next thing I want to do then is talk about adding local tools.
+
+716
+00:38:12,990 --> 00:38:14,490
+所以我们大概会说
+So we probably want to say,
+
+717
+00:38:14,590 --> 00:38:17,450
+我们来试着把这个过程变得更确定性一点
+look, let's try to make this a bit more deterministic.
+
+718
+00:38:17,570 --> 00:38:19,370
+即使一个提示词写得非常规范
+Even though a prompt might be very well structured,
+
+719
+00:38:19,830 --> 00:38:23,310
+我可能还是希望引入一些不同的运行方式
+I may want to bring in different ways of how it might operate.
+
+720
+00:38:23,570 --> 00:38:30,210
+所以在这个例子里 我会调用三个不同的工具 去查看与之相关的帮助台文章
+So in this case, I'm calling three different tools to look at relevant helpdesk articles around that.
+
+721
+00:38:30,710 --> 00:38:32,830
+这些文章既可能是内部的 也可能是外部的
+This could be both internal and external.
+
+722
+00:38:33,430 --> 00:38:36,030
+我可能还想看看这个账号最近发生过哪些事情
+I may want to look at certain things that have happened to the account.
+
+723
+00:38:36,190 --> 00:38:38,790
+比如说某个客户可能做过一次迁移
+So let's say a customer might have done a certain migration,
+
+724
+00:38:39,070 --> 00:38:40,850
+而那次迁移可能会影响后端系统
+and that might have an impact on back-end systems.
+
+725
+00:38:41,590 --> 00:38:44,410
+这也可能就是我想在这里创建升级工单的原因
+And that's probably the reason why I want to create an escalation here.
+
+726
+00:38:44,570 --> 00:38:47,350
+在这个例子里 我做的就是让它变得更确定性一些
+In the case what I've done is I've made it a bit more deterministic.
+
+727
+00:38:47,690 --> 00:38:49,270
+出于这次工作坊的目的
+For the purposes of this workshop,
+
+728
+00:38:49,410 --> 00:38:50,850
+这些东西还是被当作代码来处理
+again, this is kind of treated as code.
+
+729
+00:38:51,330 --> 00:38:57,710
+但在真实环境中 你很可能会对接像 VectorSearch MCP CLI 这样的外部系统
+But in reality, you probably are going to be interfacing with external systems like VectorSearch, MCP, CLI,
+
+730
+00:38:57,870 --> 00:39:02,490
+以及其他各种接口来构建这类能力
+and other types of interfaces to build out this capability.
+
+731
+00:39:04,590 --> 00:39:07,970
+这里的关键点还是 你加的东西越多
+And again, key thing here is the more things that you add,
+
+732
+00:39:08,670 --> 00:39:11,630
+它可能出错的方式也会随之增加
+the number of ways that it can fail will also increase.
+
+733
+00:39:11,950 --> 00:39:13,610
+所以这也就是为什么链路追踪
+So again, this is why tracing,
+
+734
+00:39:13,930 --> 00:39:16,070
+在我们继续往下做的时候会变得越来越重要
+as we begin to go, will become more important.
+
+735
+00:39:17,110 --> 00:39:18,110
+好
+All right.
+
+736
+00:39:20,120 --> 00:39:21,480
+这里再看一个
+So just one here.
+
+737
+00:39:21,900 --> 00:39:23,800
+同样 先看一下这里的 readme
+So again, read me here.
+
+738
+00:39:24,280 --> 00:39:26,720
+接下来我们要做的是进入添加本地工具这一步
+Next thing we'll do is go to add local tools.
+
+739
+00:39:35,400 --> 00:39:36,400
+好
+All right.
+
+740
+00:39:39,510 --> 00:39:41,270
+在这个例子里
+So in this case, yeah,
+
+741
+00:39:41,310 --> 00:39:45,670
+我创建的这些工具现在都可以在这里使用了
+the tools that I created are then available here.
+
+742
+00:39:46,610 --> 00:39:49,930
+但为了简单起见 它们只是以代码形式提交在这里
+But again, they just kind of checked in as code for simplicity's sake.
+
+743
+00:39:50,870 --> 00:39:56,870
+同样 我可以再做一次创建工单的操作
+And again, I can do the same thing where you make a ticket.
+
+744
+00:39:58,870 --> 00:40:05,270
+比如说 密码需要重置 账号被锁定
+Say password needs resetting account locked.
+
+745
+00:40:28,680 --> 00:40:31,200
+好 现在它给出了更多一些的信息
+Okay. Now it's provided a little bit more information.
+
+746
+00:40:31,340 --> 00:40:36,220
+你可以看到输出更啰嗦了一点 因为我们在这里引入了工具调用
+You can see it's a little bit more verbose because we've introduced tool calls into this
+
+747
+00:40:36,220 --> 00:40:39,180
+它也因此给大语言模型（LLM）提供了更多上下文
+and it's giving more context to the LLM.
+
+748
+00:40:50,160 --> 00:40:50,980
+另外需要说明的是
+Also worth pointing out,
+
+749
+00:40:51,000 --> 00:40:51,840
+如果你做到哪一步卡住了
+if you are feeling stuck,
+
+750
+00:40:52,120 --> 00:40:59,580
+各位 这个工作坊里很多分支的 tag 是按顺序构建的
+folks, that a lot of the tags of the workshop branches are built sequentially.
+
+751
+00:40:59,820 --> 00:41:02,880
+所以如果你，我们进入一下，比方说第六个 git 标签
+So if you let's go into, let's say, git tag number six,
+
+752
+00:41:02,980 --> 00:41:04,640
+它会包含之前所有相关的内容
+it's going to include everything that's part of that.
+
+753
+00:41:04,820 --> 00:41:07,120
+所以不用觉得自己必须一个个按顺序做完每一步
+So don't feel like you have to go through each one.
+
+754
+00:41:07,220 --> 00:41:08,580
+如果你卡住了 想跳过某些步骤
+If you are feeling stuck and you want to skip,
+
+755
+00:41:09,300 --> 00:41:10,180
+你完全可以这么做
+you can do that as well.
+
+756
+00:41:20,100 --> 00:41:22,760
+好 我们继续讲工具部分
+Okay. Let's get on to tools.
+
+757
+00:41:23,320 --> 00:41:25,780
+代码我其实已经给大家看过了
+So again, I've already showed the code anyway.
+
+758
+00:41:26,200 --> 00:41:27,700
+不过这里是一个伪代码的示意
+But this is an idea of pseudocode,
+
+759
+00:41:27,760 --> 00:41:28,440
+大概会长成什么样
+what it would look like.
+
+760
+00:41:31,840 --> 00:41:33,940
+接下来是阶段 我觉得这是下一步要讲的内容
+Stages. So I think this is the next thing where,
+
+761
+00:41:34,040 --> 00:41:36,580
+我们会继续把对大语言模型（LLM）的那次单体式调用拆解开来
+again, we're breaking down that monolithic call for an LLM.
+
+762
+00:41:36,960 --> 00:41:37,960
+我们已经引入了工具
+We're now introducing tools.
+
+763
+00:41:38,100 --> 00:41:42,520
+下一步就是进一步细分出大语言模型（LLM）在不同阶段应该如何行为的专门阶段
+And the next thing is even further drilling down to special stages of how the LLM should behave.
+
+764
+00:41:42,660 --> 00:41:44,960
+从那个时序图里你可以看到
+So you would see from that sequence diagram,
+
+765
+00:41:45,200 --> 00:41:47,600
+我们实际上把这个流程拆成了五个阶段
+we've done effectively five stages for this,
+
+766
+00:41:47,760 --> 00:41:50,860
+其中包括先设置好收集上下文的步骤
+where I'm now setting up things to collect the context,
+
+767
+00:41:51,460 --> 00:41:53,960
+分诊 判断是否符合品牌政策
+triage, determining if it's meeting brand policies,
+
+768
+00:41:54,640 --> 00:41:56,200
+生成一个对客户友好的回复
+providing a customer-friendly reply,
+
+769
+00:41:56,740 --> 00:41:58,800
+以及为我们内部系统准备的一些内容
+and also something internally for our systems,
+
+770
+00:41:59,260 --> 00:42:01,380
+最后再把结果整理好 交给下游系统
+and then finalizing the result for downstream systems.
+
+771
+00:42:02,360 --> 00:42:06,620
+这其实就是沿用传统软件工程里的做法
+Again, it's just coming from traditional software engineering.
+
+772
+00:42:06,980 --> 00:42:08,080
+把问题拆解成更小的部分
+You're breaking down your problem.
+
+773
+00:42:08,500 --> 00:42:11,120
+这样你就能清楚看到在栈里的哪一层出了问题
+You can see exactly where something's going wrong in the stack,
+
+774
+00:42:11,340 --> 00:42:12,440
+然后就能有针对性地修复
+and you'll be able to remediate.
+
+775
+00:42:12,780 --> 00:42:14,020
+所以在可能的情况下
+So again, where possible,
+
+776
+00:42:14,160 --> 00:42:18,000
+尽量把流程写得更明确 并拆解成可以逐个解决的子问题
+try to be more explicit and break it down into challenges that you can work on.
+
+777
+00:42:21,040 --> 00:42:22,620
+所以这只是一些伪代码
+So yeah, just a bit of pseudocode.
+
+778
+00:42:23,980 --> 00:42:25,520
+大概就是这个样子
+This is kind of like what it would look like.
+
+779
+00:42:26,660 --> 00:42:31,860
+你可能会在一个新的 IDE 里挂上调试器 然后仔细看一下
+Probably gonna put a debugger with a new ID and take a look at that.
+
+780
+00:42:35,880 --> 00:42:38,580
+好 接下来我会分步骤来做这件事
+Okay, so I'm going to be doing this in part,
+
+781
+00:42:39,100 --> 00:42:42,540
+不过我们已经从起点开始了
+but we've already started with the start point,
+
+782
+00:42:42,760 --> 00:42:46,360
+接着我会讲一下如何在这里实现这些专门的阶段
+and then I'm going to talk about doing the specialist stage here.
+
+783
+00:42:47,060 --> 00:42:49,660
+那我们来看一下 readme 的下一部分
+So let's take a look at the next part of the readme.
+
+784
+00:42:54,460 --> 00:42:59,790
+在这里我们就看到了这些专门的阶段
+So we get specialist stages here.
+
+785
+00:43:00,270 --> 00:43:01,290
+如果我现在去看一下
+So if I take a look now,
+
+786
+00:43:02,670 --> 00:43:03,550
+在 source 这个文件夹里
+in the source folder,
+
+787
+00:43:03,550 --> 00:43:08,510
+里面已经把各个独立函数拆分好了
+it's got the individual functions which are pieced out.
+
+788
+00:43:09,790 --> 00:43:13,810
+与这些函数对应的提示词也在被使用
+The prompts associated with that is being used.
+
+789
+00:43:13,950 --> 00:43:17,530
+比如说 这里就是我们正在用的一个分诊阶段
+So let's say here is a triage from what we're using.
+
+790
+00:43:17,750 --> 00:43:18,950
+如果我再往下看应用层
+If I go down to the application,
+
+791
+00:43:19,470 --> 00:43:22,830
+你就能看到它已经在这里实现好了
+you can see it's done here.
+
+792
+00:43:22,870 --> 00:43:27,370
+所以我现在是用异步函数来执行
+So I'm using asynchronous functions to execute.
+
+793
+00:43:30,270 --> 00:43:33,310
+同样地，如果我做类似这样的事情
+And similarly as well, if I do something like,
+
+794
+00:43:33,430 --> 00:43:35,350
+比如说，你知道的，创建一张工单
+you know, make a ticket,
+
+795
+00:43:36,570 --> 00:43:37,850
+也许我会做点不太一样的事情
+maybe I'll do something a bit different.
+
+796
+00:43:38,410 --> 00:43:39,910
+还有什么经典问题呢
+What's another classical problem?
+
+797
+00:43:40,210 --> 00:43:48,690
+哦，就像是，我需要把我的套餐从专业版升级到企业版
+Oh, it's just like, I need to upgrade my plan from pro to enterprise,
+
+798
+00:43:49,990 --> 00:43:54,690
+但是网站不能用
+but the website is not working,
+
+799
+00:43:56,010 --> 00:43:57,950
+一直报500错误
+getting 500 euros.
+
+800
+00:44:00,190 --> 00:44:04,470
+所以在这个例子里，我是第二等级的客户
+So in this case, I'm in customer tier two.
+
+801
+00:44:05,290 --> 00:44:08,430
+我们现在讨论的是账单问题
+We're talking about billing here,
+
+802
+00:44:08,890 --> 00:44:10,790
+而我的账号实际上是账号三号
+and my account is actually account number three.
+
+803
+00:44:11,690 --> 00:44:14,050
+所以再一次说明，这是实时的
+So again, just to show you that this is live,
+
+804
+00:44:14,050 --> 00:44:16,810
+它并不是在执行系统里硬编码好的东西
+it's not doing something that's hard-coded in the system.
+
+805
+00:44:41,970 --> 00:44:43,070
+还有一点值得指出
+Worth pointing out as well,
+
+806
+00:44:43,290 --> 00:44:49,290
+这个阶段会稍微慢一点，因为我们把原本一次性的大语言模型（LLM）调用拆分成了顺序调用
+this stage is slightly slow because we've broken down the individual one-shot LLM into sequential calls.
+
+807
+00:44:49,570 --> 00:44:52,110
+所以预期会花更长一点时间
+So it is expected to take a little bit longer,
+
+808
+00:44:52,270 --> 00:44:54,890
+但这正是构建这个智能体式流程的一部分
+but again, that's this part of building out this agentic flow.
+
+809
+00:44:55,230 --> 00:44:56,090
+现在你又可以看到
+And now you can see again,
+
+810
+00:44:56,170 --> 00:44:58,610
+它的输出更啰嗦了一点
+it's a bit more verbose,
+
+811
+00:44:59,090 --> 00:45:03,570
+但这个智能体在这里投入了更多思考
+but there's a lot more thought into this agent here.
+
+812
+00:45:03,570 --> 00:45:05,030
+所以我想你又可以看到
+So I guess you can see again,
+
+813
+00:45:05,110 --> 00:45:06,370
+我们刚才讨论的是一个账单问题
+we talked about a billing issue.
+
+814
+00:45:07,290 --> 00:45:11,690
+你可以看到它认为优先级相当高，因为客户想要进行那次
+You can see that it believes that it's quite high because a customer wants to do that
+
+815
+00:45:11,690 --> 00:45:13,410
+从一个不同等级升级
+upgrade from a different tier,
+
+816
+00:45:13,790 --> 00:45:16,470
+但从收入角度看，这显然会带来影响
+but there's obviously an impact to this from a revenue perspective.
+
+817
+00:45:16,610 --> 00:45:20,970
+所以在这种情况下，我们应该在内部升级给合适的负责人
+So in this case, we should escalate to the appropriate people on our side.
+
+818
+00:45:22,010 --> 00:45:24,590
+所以你可以在这里看到应该升级到哪个区域
+So you can see here what the escalation region should be,
+
+819
+00:45:25,330 --> 00:45:29,970
+以及内部回复和面向客户的回复
+and both the internal and the customer facing reply as well.
+
+820
+00:45:32,190 --> 00:45:38,230
+所以我们加入了一个置信度分数，用来判断这是不是真正的问题
+So we've included a confidence score to say if this is a true issue.
+
+821
+00:45:38,790 --> 00:45:40,390
+但就像刚才提到的
+But again, as mentioned,
+
+822
+00:45:41,130 --> 00:45:45,070
+工具调用可以从不同系统中拉取正在发生的信息来
+tool calls will be able to pull information which is happening across different systems to
+
+823
+00:45:45,870 --> 00:45:47,890
+提供更高程度的置信度
+provide a greater level of confidence.
+
+824
+00:45:49,330 --> 00:45:49,830
+好
+Okay.
+
+825
+00:45:54,350 --> 00:45:54,850
+太好了
+Perfect.
+
+826
+00:45:56,290 --> 00:46:00,510
+好的 在此基础上 再次总结一下
+All right. With that in mind, so again,
+
+827
+00:46:01,010 --> 00:46:04,450
+我们现在希望已经展示了如何把一个智能体
+we've now hopefully shown how we can take an agent,
+
+828
+00:46:04,850 --> 00:46:07,550
+拆解开来，构建成一个多阶段的东西
+break it down, build something that's multi-stage,
+
+829
+00:46:07,670 --> 00:46:10,510
+并引入工具调用来获得我们需要的能力
+introducing tool calling to give us what we need.
+
+830
+00:46:10,910 --> 00:46:15,670
+下一步就是把这些信息提供出来并开始做追踪，这样我们就可以真正
+The next thing is then to provide that information and start tracing it so we can actually
+
+831
+00:46:15,670 --> 00:46:18,650
+看到到底发生了什么，一直到具体细节层面
+see what's happening down to the individual details.
+
+832
+00:46:19,430 --> 00:46:22,150
+这就是可观测性这一部分发挥作用的地方
+And this is where observability piece comes into play.
+
+833
+00:46:23,230 --> 00:46:27,110
+所以在这一部分我们想做的是拆解完整的执行路径
+So what we want to do in this section is break down the full execution path.
+
+834
+00:46:27,590 --> 00:46:32,110
+我们知道这些东西的结构非常嵌套
+We know that the stuff is very nested in structure.
+
+835
+00:46:32,290 --> 00:46:33,630
+所以有工具调用
+So there's tool calls,
+
+836
+00:46:33,750 --> 00:46:35,350
+还有在其背后的额外函数调用
+there's additional function calls behind it.
+
+837
+00:46:36,050 --> 00:46:38,230
+我们确实想要追踪一些关键内容
+We do want to track some of the key things.
+
+838
+00:46:38,450 --> 00:46:46,330
+我记得Mayank提到过他们一开始在延迟、成本、token计数这些方面遇到的困难
+And I think Mayank pointed out the early struggles that they had to talk about latency, cost, tokens account,
+
+839
+00:46:46,450 --> 00:46:50,510
+尤其是首个token时间，这是我们看到很多
+especially time to first token is a very important metrics that we see many of our
+
+840
+00:46:50,510 --> 00:46:51,790
+客户都在努力监控的一个非常重要的指标
+customers trying to identify.
+
+841
+00:46:53,490 --> 00:46:55,070
+另外还有输入是什么
+Also, what were the inputs,
+
+842
+00:46:55,230 --> 00:46:55,970
+输出是什么
+what were the outputs,
+
+843
+00:46:56,330 --> 00:46:57,890
+以及与之相关的元数据
+metadata associated with this,
+
+844
+00:46:58,410 --> 00:47:01,050
+还要包含其他类型的字段 这样
+and then also including additional types of fields so that,
+
+845
+00:47:01,310 --> 00:47:03,890
+当我们再次谈到监控和可观测性时
+again, when we talk about monitoring and observability,
+
+846
+00:47:04,490 --> 00:47:08,430
+我们就可以在界面里即时查询 并在需要时设置告警
+we can query it within the UI on the fly and set up alerting if needed.
+
+847
+00:47:09,130 --> 00:47:11,190
+所以 再说一遍 只有输出是不够的
+So, again, having an output is not enough.
+
+848
+00:47:11,330 --> 00:47:14,190
+我们需要理解完整的执行路径
+We need to understand the full execution path,
+
+849
+00:47:14,270 --> 00:47:16,110
+而这正是追踪所能帮助我们做到的
+and that's what tracing allows us to do.
+
+850
+00:47:19,750 --> 00:47:21,930
+好 先给你一点背景
+Yeah, just to give you an idea of the context,
+
+851
+00:47:22,130 --> 00:47:25,510
+我知道对某些人来说这是个很有争议的话题
+and I know it's a very contentious topic to someone,
+
+852
+00:47:25,650 --> 00:47:28,970
+因为我本身是做全栈开发出身的
+because, again, I come from a background in full stack development.
+
+853
+00:47:29,370 --> 00:47:31,810
+所以 你知道的 我会随手用Python
+So, you know, I spitballing in terms of both Python,
+
+854
+00:47:32,030 --> 00:47:33,350
+Go 以及TypeScript来写点东西
+Go, as well as TypeScript.
+
+855
+00:47:33,770 --> 00:47:37,150
+但我们的SDK本身是多语言的
+But yeah, our SDK is multilingual.
+
+856
+00:47:37,150 --> 00:47:41,690
+所以Ruby、Go 我记得甚至还有.NET
+So Ruby, Go, I think even .NET,
+
+857
+00:47:41,810 --> 00:47:43,290
+已经有一些人在用
+we've got some folks who are using it,
+
+858
+00:47:43,510 --> 00:47:44,630
+这都没问题
+and that's all good.
+
+859
+00:47:45,090 --> 00:47:47,810
+不过今天我只是为了简单起见一直用TypeScript
+But yeah, I've just kept TypeScript for simplicity here today,
+
+860
+00:47:47,950 --> 00:47:53,530
+但没错 我们的SDK确实覆盖了很多不同语言 你可以用它们来开始
+but yes, our SDKs do cover a range of different languages out there that you can start
+
+861
+00:47:53,530 --> 00:47:54,630
+对你的应用做追踪
+tracing your application with.
+
+862
+00:47:57,450 --> 00:47:59,930
+所以 这里有个真正关键的点
+So, yeah, a real key thing to this,
+
+863
+00:48:00,150 --> 00:48:03,590
+也是我在很多客户那里看到的一个挑战
+and one of my challenges I do see with our customers broadly,
+
+864
+00:48:03,850 --> 00:48:10,250
+就是他们会把每次交互都挂在一个单一的父span下面
+is they will do an individual interaction against a singular parent span,
+
+865
+00:48:10,930 --> 00:48:14,410
+即便是在多轮、多会话的智能体场景下 他们也这么做
+and this even might work with, let's say, multi-turn, multi-conversational agents.
+
+866
+00:48:14,830 --> 00:48:18,810
+而我们真正想要的是把这些追踪成一个嵌套结构 这样你就可以看到
+What we want to be able to do is trace that into a nested structure so you can see
+
+867
+00:48:18,810 --> 00:48:21,110
+所有细节 但仍然把一次交互
+everything, but in one interaction,
+
+868
+00:48:21,290 --> 00:48:24,490
+比如说一次完整对话 归在一个父span里
+let's say one conversation in a parent span.
+
+869
+00:48:24,630 --> 00:48:28,630
+所以当我们开始给应用做埋点时 确保
+So it's really critical as we start instrumenting our application to make sure that we're
+
+870
+00:48:28,630 --> 00:48:30,230
+建立起正确的结构是非常关键的
+getting the right structures in place.
+
+871
+00:48:30,230 --> 00:48:34,190
+否则 你就无法完整看到问题可能出在
+Otherwise, you're not going to be able to see the full effect of where things might go
+
+872
+00:48:34,190 --> 00:48:35,170
+应用的哪些地方
+wrong in your application.
+
+873
+00:48:38,930 --> 00:48:41,290
+归根结底 这都要靠你去读trace
+Again, this will just come down to reading the trace.
+
+874
+00:48:41,650 --> 00:48:47,270
+希望大家 尤其是我知道在座有很多软件工程师 正在使用传统的
+Hopefully, folks, especially, I know you've got more software engineers in the room that are using the traditional
+
+875
+00:48:47,270 --> 00:48:48,790
+可观测性工具
+observability tools out there,
+
+876
+00:48:49,110 --> 00:48:50,310
+这个和那些并没有太大不同
+this is not too dissimilar.
+
+877
+00:48:51,090 --> 00:48:53,450
+但对那些第一次看到这个界面的人来说
+But for folks who may be new to the screen,
+
+878
+00:48:53,650 --> 00:48:56,510
+trace不仅能让我们知道已经发生了什么
+a trace just allows us to not find out what has happened,
+
+879
+00:48:56,570 --> 00:49:00,890
+还能让我们实时看到应用当前正在发生什么
+but what's currently happening with the application in real time.
+
+880
+00:49:01,170 --> 00:49:03,390
+所以 再说一次 我们会追踪每一次调用
+So again, tracking every single call,
+
+881
+00:49:03,550 --> 00:49:04,510
+把相关元数据也带进来
+bringing in that metadata,
+
+882
+00:49:05,350 --> 00:49:07,570
+然后根据失败模式出现的位置
+and again, depending where the failure mode is,
+
+883
+00:49:07,790 --> 00:49:08,530
+我们就可以判断
+we can then identify,
+
+884
+00:49:08,710 --> 00:49:11,790
+好 接下来我们需要采取什么补救措施
+okay, what might be the course of remediation that we need to take.
+
+885
+00:49:13,790 --> 00:49:16,030
+好 那在下一步
+Okay, so in the next stage,
+
+886
+00:49:16,250 --> 00:49:18,090
+我们要做的是给这个加上追踪
+what we're going to do is add tracing to this.
+
+887
+00:49:19,170 --> 00:49:23,470
+然后我们会真正跑起来 再进到Braintrust里 希望能看到它的执行情况
+And then we're actually going to run it and then go into Braintrust and hopefully we'll see it happening.
+
+888
+00:49:24,330 --> 00:49:29,630
+但在我这么做之前 有一点我想先记在心里 所以
+But one thing I do want to bear in mind before I do that, so...
+
+889
+00:49:32,380 --> 00:49:34,080
+那我们先打开readme
+So let's go to our readme.
+
+890
+00:49:34,840 --> 00:49:36,420
+上面告诉我们要加上追踪
+It's telling us to add tracing.
+
+891
+00:49:43,380 --> 00:49:44,220
+如果我能把它拼对
+If I can spell.
+
+892
+00:49:45,300 --> 00:49:46,260
+好的 现在没问题了
+Okay, now we're good.
+
+893
+00:49:53,760 --> 00:49:55,620
+我就先保持这样
+And I'm going to keep it there.
+
+894
+00:49:57,060 --> 00:50:01,540
+好的 我在这里引入了一个名为 tracing 的辅助脚本
+Okay, so I've introduced a helper script here called tracing.
+
+895
+00:50:02,200 --> 00:50:07,540
+我们在自己的 SDK 里做得比较好的一点是
+So what we do quite well within our SDK is,
+
+896
+00:50:07,680 --> 00:50:10,540
+同样 我们不想在不需要的地方引入更多复杂性
+again, we want to not introduce more complexity where it's needed.
+
+897
+00:50:11,140 --> 00:50:12,760
+所以如果你在使用
+So if you are using, again,
+
+898
+00:50:12,800 --> 00:50:15,780
+标准的大语言模型（LLM）服务商的 SDK
+the standard LLM providers SDK,
+
+899
+00:50:16,100 --> 00:50:17,480
+你可以很简单地把那个函数包一层
+you can simply just wrap that function.
+
+900
+00:50:17,620 --> 00:50:18,680
+这在我们这里是开箱即用的
+We provide that out of the box.
+
+901
+00:50:19,300 --> 00:50:21,640
+但当涉及到具体的每一次调用时
+But then when it comes down to the individual calls,
+
+902
+00:50:21,860 --> 00:50:28,440
+我们同样可以在这里设置一些辅助脚本 按需做一层封装
+again, we can set up some helper scripts here to help just kind of wrap up as needed.
+
+903
+00:50:28,780 --> 00:50:30,400
+如果你用的是 Python 之类的语言
+If you are using something like Python,
+
+904
+00:50:30,560 --> 00:50:34,120
+那你也可以使用装饰器函数来帮忙
+then you can also have a decorator function which helps as well.
+
+905
+00:50:34,520 --> 00:50:35,460
+在这个例子里
+In this case, you know,
+
+906
+00:50:35,680 --> 00:50:39,400
+我写了一个小巧的函数来处理父子关系
+I've got a nice little function which helps with parent and child.
+
+907
+00:50:40,240 --> 00:50:44,420
+然后在真正做应用追踪的时候
+And then when it comes down to the actual application tracing,
+
+908
+00:50:45,280 --> 00:50:50,960
+你可以看到这里我有一个子 span 它已经被
+you can see here like I've got a child span which has been
+
+909
+00:50:55,570 --> 00:51:02,550
+在整个过程中执行了 我现在不太想频繁切到代码里 因为代码已经变得相当庞大
+executed throughout this. Again, I don't want to do too many code divs at this point because the code is expanding pretty heavily.
+
+910
+00:51:03,490 --> 00:51:06,710
+我主要是想带大家过一下这里的一些关键概念
+But yeah, just kind of want to walk through the kind of key concepts for this.
+
+911
+00:51:08,990 --> 00:51:13,030
+好的 在我运行这个应用之前
+Okay, before I run the application,
+
+912
+00:51:13,310 --> 00:51:15,370
+我想先切到 Braintrust 的界面里看一下
+I do want to go over into the Braintrust UI.
+
+913
+00:51:16,030 --> 00:51:19,730
+有时候如果你已经注册了一个免费试用账号
+Sometimes it might create a... if you've already signed up for a free trial account,
+
+914
+00:51:19,810 --> 00:51:21,230
+希望你今天早些时候已经完成了这一步
+so hopefully you would have done that earlier today,
+
+915
+00:51:21,730 --> 00:51:23,410
+它会自动创建一个类似测试项目的东西
+it'll create like a test project.
+
+916
+00:51:23,550 --> 00:51:26,570
+那完全没问题 我们在执行这个流程时会新建一个项目
+That's totally fine. We will create a new project as we execute this.
+
+917
+00:51:27,190 --> 00:51:29,230
+还有一点非常关键
+A really key thing as well,
+
+918
+00:51:29,950 --> 00:51:32,810
+如果你还没做的话 在左上角
+if you haven't done already, top left-hand corner,
+
+919
+00:51:33,590 --> 00:51:34,690
+你需要进入你的个人资料页
+you go to your profile.
+
+920
+00:51:36,090 --> 00:51:38,310
+好的 我先新建一个
+Okay, let me just create a new one.
+
+921
+00:51:38,630 --> 00:51:42,050
+好 就先随便创建一个
+Okay, let's create that just for now.
+
+922
+00:51:42,550 --> 00:51:47,750
+进入你的个人资料 然后找到 API keys 那一栏
+Go to your profile and then where it says API keys,
+
+923
+00:51:50,110 --> 00:51:52,030
+给这个 key 填一个名字
+enter your name for the key,
+
+924
+00:51:52,310 --> 00:51:55,670
+生成这个 key 然后在你的环境里使用它
+generate that in and then use that within your environment,
+
+925
+00:51:56,230 --> 00:52:00,890
+比如放在 .env 文件里 或者如果你已经有 key vault 就把它安全地存进去
+your .env file or secure that in a key vault if you have that already.
+
+926
+00:52:02,890 --> 00:52:04,590
+另外还有 OpenAI 的 key
+There's also the OpenAI key,
+
+927
+00:52:04,750 --> 00:52:06,210
+我们希望你已经生成好了
+which we're hoping you generated.
+
+928
+00:52:07,250 --> 00:52:12,690
+那个也应该在 AI providers 里使用
+That should also be used in AI providers.
+
+929
+00:52:13,890 --> 00:52:15,530
+所以我把这个配置在了组织级别
+So I've set this at the organization level.
+
+930
+00:52:15,710 --> 00:52:17,030
+你也可以按项目来配置
+You can also do this per project,
+
+931
+00:52:17,550 --> 00:52:21,490
+比如你想按特定团队或环境做隔离的话
+you know, depending if you want to segregate it by a particular team or environment,
+
+932
+00:52:22,050 --> 00:52:23,130
+这也是完全支持的
+that's also fully supported.
+
+933
+00:52:23,970 --> 00:52:30,130
+但在这个场景下 我们稍后在做托管和在线打分时会需要这个 key
+But in this case, we'll need this key for later when it comes down to the managed and online scoring.
+
+934
+00:52:30,710 --> 00:52:32,070
+这里再补充一点小提示
+But just a bit of a tidbit,
+
+935
+00:52:32,570 --> 00:52:33,850
+你刚才生成的那个 key
+that key that you generated,
+
+936
+00:52:34,230 --> 00:52:39,730
+一定要把它配置到你的 Braintrust 组织里 以便后面使用
+make sure you put it into your Braintrust organization here to be used later.
+
+937
+00:52:44,850 --> 00:52:46,030
+好 在记住这些之后
+Right, with that in mind,
+
+938
+00:52:46,370 --> 00:52:48,130
+我就要开始跑这个演示了
+I'm going to run the demo.
+
+939
+00:52:51,150 --> 00:52:53,410
+顺便说一句 作为一个参考
+So, and just point of reference,
+
+940
+00:52:53,530 --> 00:52:56,210
+如果你在某个地方卡住了
+if you are ever stuck with something,
+
+941
+00:52:56,770 --> 00:52:57,930
+你可以直接运行 make setup
+you should just use make setup,
+
+942
+00:52:58,350 --> 00:52:59,550
+确保所有东西都已经就绪
+make sure everything's in place.
+
+943
+00:53:00,110 --> 00:53:02,370
+在这个例子里 我们接下来要运行 make demo 之类的命令
+In this case, then we want to do kind of make demo.
+
+944
+00:53:03,930 --> 00:53:05,630
+然后我们就会去运行并执行那些工单
+And just we're going to run and execute those tickets.
+
+945
+00:53:06,850 --> 00:53:11,350
+我甚至也可以用 make ticket 这个命令来做
+I can even do it using the make ticket command as well.
+
+946
+00:53:18,880 --> 00:53:20,620
+所以当它在后台运行的时候
+So while it's running in the background,
+
+947
+00:53:24,140 --> 00:53:27,980
+如果你回到你的应用里
+if you go back to your application,
+
+948
+00:53:29,800 --> 00:53:33,200
+你会看到有一个名为 helper workshop 的项目
+you would see there's a project called helper workshop.
+
+949
+00:53:33,980 --> 00:53:37,860
+那就是今天这个工作坊过程中会创建出来的项目
+So that's the one that will be created as part of this workshop there today.
+
+950
+00:53:39,480 --> 00:53:42,060
+如果你切到 logs 这个标签页
+If you navigate to the logs tab,
+
+951
+00:53:42,600 --> 00:53:46,080
+你就会开始实时看到这些日志流进来
+you'll start to see this coming through in real time.
+
+952
+00:53:46,540 --> 00:53:47,380
+这里再强调一下
+It's worth pointing out again,
+
+953
+00:53:47,560 --> 00:53:49,740
+得益于我们 BTQL 的能力
+thanks to our capabilities of BTQL,
+
+954
+00:53:50,500 --> 00:53:55,680
+我们可以几乎瞬时写入系统 并在很短时间后就能读取
+we have near instantaneous right into our system and read available shortly after.
+
+955
+00:53:56,280 --> 00:53:58,120
+尤其是这是一个非阻塞的功能
+So especially it's a non-blocking function.
+
+956
+00:53:58,500 --> 00:53:59,980
+所以我们很多客户
+So a lot of our customers,
+
+957
+00:54:01,000 --> 00:54:06,240
+尤其是那些更成熟的客户 都在大规模使用 Braintrust 并不断挑战极限
+especially the more sophisticated ones are really using Braintrust at scale and really pushing the envelope.
+
+958
+00:54:06,440 --> 00:54:07,540
+所以并不是那种
+So it's not the case like,
+
+959
+00:54:07,600 --> 00:54:08,980
+只是说 我这儿有一千条 trace
+hey, I've got a thousand traces,
+
+960
+00:54:09,240 --> 00:54:10,200
+他们是在推送
+you know, they're pushing,
+
+961
+00:54:10,400 --> 00:54:14,500
+在很短时间内一次性推送上千万条 trace
+you know, tens of millions of traces at a time across a very short period.
+
+962
+00:54:14,980 --> 00:54:16,480
+而且他们希望能够对这些数据做聚合
+And they want to be able to get an aggregate this.
+
+963
+00:54:16,660 --> 00:54:20,700
+同样 随着你的应用变得越来越复杂
+And again, as you build more sophistication in your application,
+
+964
+00:54:21,200 --> 00:54:23,260
+你会把它推给更多用户
+you're sending this out to more users,
+
+965
+00:54:23,520 --> 00:54:25,100
+规模会很快膨胀起来
+that's going to grow up pretty quickly.
+
+966
+00:54:25,140 --> 00:54:28,580
+你就需要一个能在这种规模下运转的系统
+And you need to be able to have a system that can handle this at scale.
+
+967
+00:54:29,980 --> 00:54:33,020
+所以当你开始看到日志进来时
+So once you start to see the logs that are coming in,
+
+968
+00:54:33,220 --> 00:54:34,340
+它们是按逆序显示的
+come in reverse order,
+
+969
+00:54:34,700 --> 00:54:36,560
+我这里就先看第一条
+I'm just going to take a look at the first one here.
+
+970
+00:54:37,300 --> 00:54:41,160
+然后我们就能看到这个加了埋点的应用是如何被追踪的
+And we'll start to see the instrument application will be traced.
+
+971
+00:54:43,300 --> 00:54:46,420
+这里有一个按钮可以让你全屏查看
+There's a particular button here that allows you to view this in full screen,
+
+972
+00:54:46,580 --> 00:54:47,560
+我觉得这还挺有用的
+which I think is quite helpful.
+
+973
+00:54:48,440 --> 00:54:52,760
+正如我刚才说的 因为我们这里有一个嵌套结构 我们会
+So as I mentioned, because we've got this nested structure in place where we're going
+
+974
+00:54:52,760 --> 00:54:54,800
+逐层走完整棵树
+through each in the sort of tree,
+
+975
+00:54:55,580 --> 00:54:59,280
+最顶上的这个交互就是那个 demo 工单
+this interaction at the top is the demo ticket.
+
+976
+00:54:59,760 --> 00:55:01,020
+你可以在最顶层看到
+You can see the very top level,
+
+977
+00:55:01,360 --> 00:55:04,540
+我们标出了这次调用实际运行花了多长时间
+we're saying how long it took to actually run that invocation.
+
+978
+00:55:05,840 --> 00:55:07,160
+提示词的输入 token 数
+The prompt tokens in,
+
+979
+00:55:07,280 --> 00:55:09,880
+输出 token 数 成本以及对应的延迟
+out, cost and latency associated with that as well.
+
+980
+00:55:10,260 --> 00:55:13,980
+我还加了一些元数据 因为我希望之后可以把它们提取出来做筛选
+I've also included some metadata because I want to be able to kind of extract and filter
+
+981
+00:55:13,980 --> 00:55:14,720
+按需把这些东西过滤出来
+that out as needed.
+
+982
+00:55:14,840 --> 00:55:15,840
+我一会儿会演示这是怎么用的
+And I'll show you how that will work.
+
+983
+00:55:17,560 --> 00:55:19,600
+所有内容都可以在这里查看
+And everything is available here to view.
+
+984
+00:55:22,440 --> 00:55:26,040
+元数据也在这儿 如果我想换一种视角来看
+Metadata is there. If I also want to take a different look at this,
+
+985
+00:55:26,100 --> 00:55:28,420
+我们甚至可以单独查看每一个步骤
+we can even look at individual steps.
+
+986
+00:55:28,500 --> 00:55:34,080
+比如在这个例子里 我想看从分诊专员这一层到底下发生了什么
+So in this case, I want to look at what's happened with triage specialist down to the
+
+987
+00:55:34,080 --> 00:55:36,460
+一直到真正调用大语言模型（LLM）这一层
+actual invocation to the LLM.
+
+988
+00:55:36,600 --> 00:55:41,060
+所以在这方面 SDK 提供了很大的灵活性
+So again, SDK provides a lot of flexibility around this.
+
+989
+00:55:41,160 --> 00:55:42,320
+你可以看到输入了什么
+So you can see what was put in,
+
+990
+00:55:43,600 --> 00:55:44,980
+以及背后的推理过程
+the reasoning behind it,
+
+991
+00:55:45,320 --> 00:55:46,800
+以及我们设定输出的信息
+and the information that we set output.
+
+992
+00:55:47,540 --> 00:55:49,120
+然后说到最后一点
+And then coming down to the last,
+
+993
+00:55:49,360 --> 00:55:51,040
+也就是你知道的，我们到底要不要升级处理
+you know, should we escalate or not?
+
+994
+00:55:53,640 --> 00:55:57,300
+作为这一部分的另一个用法，是查看时间线
+Another use that we will see as part of this is taking a look at the timeline.
+
+995
+00:55:57,540 --> 00:55:58,780
+这样可以给你一个大致的概念
+So just gives you an idea,
+
+996
+00:55:58,940 --> 00:56:00,520
+有点像瀑布式方法那样去看
+like a waterfall methodology to see,
+
+997
+00:56:00,760 --> 00:56:02,560
+好，比方说是不是某个特定步骤花的时间更长
+okay, was there a particular step which is taking longer?
+
+998
+00:56:03,020 --> 00:56:04,100
+我们需不需要做补救
+Do we need to remediate?
+
+999
+00:56:04,460 --> 00:56:06,540
+这些都是可以做到的
+It's all possible to do.
+
+1000
+00:56:08,740 --> 00:56:09,380
+好
+All right.
+
+1001
+00:56:11,740 --> 00:56:14,580
+那如果我看一下日志页面
+So if I take a look at logs page,
+
+1002
+00:56:14,920 --> 00:56:17,620
+退出刚才的界面，然后刷新一下
+get back out of that, refresh.
+
+1003
+00:56:17,960 --> 00:56:20,800
+我想大概有四个工单被推送了上来
+So I think there's kind of four tickets that were pushed.
+
+1004
+00:56:21,840 --> 00:56:23,000
+对，现在这些应该会进来
+Yeah, this should come through right now.
+
+1005
+00:56:24,520 --> 00:56:27,820
+好的，对，现在是两个工单
+Okay. Yeah. So that's, it's two tickets at the moment.
+
+1006
+00:56:28,080 --> 00:56:32,680
+所以我们刚才演示的那些相同信息，在控制台里也都能看到
+So again, that same information that we played is also available in the console.
+
+1007
+00:56:37,510 --> 00:56:38,030
+好
+Okay.
+
+1008
+00:56:39,910 --> 00:56:41,510
+是的，所以我们已经讲完了追踪部分
+Yep. So we've covered tracing.
+
+1009
+00:56:43,070 --> 00:56:46,450
+接下来我们来讲一下这一块的评估部分
+Let's talk about the evaluation portion for this.
+
+1010
+00:56:47,150 --> 00:56:49,230
+好，这部分其实挺有意思
+Okay. It's quite interesting.
+
+1011
+00:56:49,610 --> 00:56:53,370
+当然，这还要看你在构建这个应用的旅程中处在什么阶段
+Again, depending where you are in your journey of building this application,
+
+1012
+00:56:53,790 --> 00:56:56,750
+很多客户已经把应用搭建好了
+a lot of customers already build an application already,
+
+1013
+00:56:57,290 --> 00:56:58,790
+也已经做了一定的监控并把数据拉进来
+have it sort of monitored and pull that in.
+
+1014
+00:56:59,130 --> 00:57:02,890
+但如果你实际上遇到的是冷启动问题，你甚至还不清楚自己要构建什么，该怎么办
+But what happens when you have effectively a cold-start problem where you don't know what you're building?
+
+1015
+00:57:03,370 --> 00:57:05,470
+对吧，那什么才算是“好”的效果
+Right. So what does good look like?
+
+1016
+00:57:06,190 --> 00:57:08,430
+以及从本质上讲，“好”的标准发生变化又意味着什么
+And effectively, what does goodness shift mean?
+
+1017
+00:57:09,690 --> 00:57:14,190
+以我们今天在做的这个客服应用为例
+In the case of the support application that we're developing today,
+
+1018
+00:57:15,210 --> 00:57:19,630
+会出现一些绝对不能妥协的点，比如我们有没有对支持工单进行分类
+can occur non-negotiables, you know, have we categorized the support case?
+
+1019
+00:57:20,350 --> 00:57:22,210
+我们有没有确保在严重程度上
+Have we made sure that there's no severity,
+
+1020
+00:57:22,210 --> 00:57:25,850
+不会把这些阻塞性问题误判成低严重级别
+low severity outcome for these issues which are blocking?
+
+1021
+00:57:26,790 --> 00:57:29,390
+升级流程是否符合SLA相关策略
+Does the escalation stay in policy with SLAs?
+
+1022
+00:57:30,230 --> 00:57:32,310
+整体结构是否合理
+Does the structure look sound?
+
+1023
+00:57:33,170 --> 00:57:35,530
+而且如果我们做了某些改动
+And if we're making any particular changes,
+
+1024
+00:57:35,770 --> 00:57:41,870
+它到底是改善了应用的表现，还是在破坏、在引入回归
+does it actually improve the way we're actually breaking or having a regression to the application?
+
+1025
+00:57:42,710 --> 00:57:44,630
+这些都可以通过评估来完成
+We can do this using evaluation.
+
+1026
+00:57:45,070 --> 00:57:47,250
+对于评估这件事
+So an evaluation for those,
+
+1027
+00:57:47,830 --> 00:57:49,490
+希望在座很多人已经知道它是什么
+hopefully many folks know what they are,
+
+1028
+00:57:49,630 --> 00:57:51,730
+但对于在场还不太熟悉的人来说
+but those folks in the room,
+
+1029
+00:57:52,230 --> 00:57:54,750
+你可以把它理解成这样一个过程：你有一份数据集
+think of it as a way you have your dataset,
+
+1030
+00:57:54,930 --> 00:57:56,750
+有输入，有一个任务
+your input, you have a task,
+
+1031
+00:57:57,070 --> 00:58:00,210
+然后你有一个想要对结果进行评估的标准，或者说打分函数
+and then you have an outcome which you want to evaluate against that or scoring function.
+
+1032
+00:58:01,130 --> 00:58:06,710
+而这和传统软件开发有点不一样
+And this is kind of a little bit different comparing traditional software development into
+
+1033
+00:58:06,710 --> 00:58:09,330
+因为在和AI系统打交道时，它本身具有非确定性的特性
+working with AI systems because it's non-deterministic nature.
+
+1034
+00:58:11,770 --> 00:58:14,390
+所以在这一部分
+So in this particular portion,
+
+1035
+00:58:14,570 --> 00:58:19,190
+我要讲的是如何创建我们所谓的黄金数据集
+what I'm going to be talking about here is creating what we call a golden dataset.
+
+1036
+00:58:19,530 --> 00:58:21,030
+在这个客服应用里
+So in this support application,
+
+1037
+00:58:21,190 --> 00:58:23,130
+我一开始会做一些经验性的测试
+I'll be kind of testing anecdotally,
+
+1038
+00:58:23,550 --> 00:58:28,790
+但我还想构建一组边缘案例，我认为这会真正帮助我们
+but I want to create a set of edge cases where I think this is really going to help give
+
+1039
+00:58:28,790 --> 00:58:32,810
+至少在一开始就能让业务方对我们要发布的东西有一定信心
+us at least an initial level of confidence to the business that what we're releasing out
+
+1040
+00:58:32,810 --> 00:58:36,570
+也就是进入生产环境的东西基本上是能用的、对路的
+into production is sort of for purpose.
+
+1041
+00:58:37,350 --> 00:58:38,770
+当然总是还有改进空间
+There's always room for improvement,
+
+1042
+00:58:39,330 --> 00:58:39,970
+但我希望它至少是可用的
+but I want to be functional.
+
+1043
+00:58:40,290 --> 00:58:41,210
+我不想只是想着
+I want to just think,
+
+1044
+00:58:41,270 --> 00:58:44,150
+我不是凭感觉就把这个应用发出去
+look, it's not just me releasing this application based on vibes.
+
+1045
+00:58:44,370 --> 00:58:45,750
+我需要有一个具体的方法来说明
+I have a concrete way of saying,
+
+1046
+00:58:45,890 --> 00:58:48,190
+好，这就是它在一段时间内的表现
+okay, this is how it's performed over time.
+
+1047
+00:58:49,110 --> 00:58:53,750
+为了做到这一点，我们通常会用两大类打分函数
+To do this, again, we use kind of two main types of scoring functions.
+
+1048
+00:58:54,130 --> 00:58:55,950
+第一类是确定性的
+The first of which is deterministic.
+
+1049
+00:58:56,250 --> 00:58:59,470
+我想很多人可能已经开始用这种方式了
+So I think a lot of folks may have already started using this,
+
+1050
+00:58:59,630 --> 00:59:01,910
+这其实是从传统软件工程延伸过来的
+again, coming from traditional software engineering,
+
+1051
+00:59:02,350 --> 00:59:03,210
+比如大家熟悉的单元测试
+you know, unit tests.
+
+1052
+00:59:04,610 --> 00:59:05,750
+我不会说它们完全等价
+I wouldn't say analogous,
+
+1053
+00:59:05,870 --> 00:59:11,170
+但在本质上很相似：易于运行、成本低
+but they are quite similar in nature where they're very easy to run, cost effective.
+
+1054
+00:59:11,670 --> 00:59:13,730
+在这个阶段你其实并没有真正调用模型
+You're not actually using a model at this point.
+
+1055
+00:59:14,470 --> 00:59:16,570
+第二类会稍微复杂一些
+The secondary type, which is a little bit more sophisticated,
+
+1056
+00:59:17,010 --> 00:59:19,050
+就是用一个大语言模型（LLM）作为评判者
+which is then using an LLM as a judge,
+
+1057
+00:59:19,110 --> 00:59:20,070
+也就是再用一个AI系统
+so another AI system.
+
+1058
+00:59:20,550 --> 00:59:24,030
+当系统里存在很多细微差别时，这种方式就非常有用
+And this is really helpful when it comes to systems where there's nuance,
+
+1059
+00:59:24,270 --> 00:59:27,990
+这些细节是单靠确定性系统没法判断清楚的
+which can't really be determined on deterministic systems alone.
+
+1060
+00:59:28,530 --> 00:59:31,610
+所以我们会再创建一个评估
+So again, creating one to talk about,
+
+1061
+00:59:31,670 --> 00:59:32,670
+比如看它的品牌风格
+you know, branding style,
+
+1062
+00:59:32,930 --> 00:59:36,570
+是否满足客户满意度之类的指标
+is this meeting, you know, customer satisfaction, and so forth.
+
+1063
+00:59:37,410 --> 00:59:41,950
+所以最重要的一点是，如果你没法用确定性的方式来写这个评估
+So the most important thing is if you cannot write it in a deterministic way,
+
+1064
+00:59:42,530 --> 00:59:45,030
+那在可能的情况下，你就应该用大语言模型（LLM）来做评判
+you want to be using LLM as a judge where possible.
+
+1065
+00:59:45,990 --> 00:59:47,630
+之所以说这点更重要
+And why this is more important,
+
+1066
+00:59:48,010 --> 00:59:54,130
+还是为了确保在推进过程中，我们做的每一次变更在安全性上都是可控的
+again, it's just making sure that any change that we make is a safety change as we progress this.
+
+1067
+00:59:55,770 --> 01:00:01,130
+好，那我现在再切回到IDE里
+Okay, so I'm going to pivot into the IDE again.
+
+1068
+01:00:02,650 --> 01:00:06,030
+我们来看一下readme文件
+Let's take a look at the readme file,
+
+1069
+01:00:06,030 --> 01:00:09,060
+然后我们要做的是
+and then we're going to do...
+
+1070
+01:00:11,290 --> 01:00:16,250
+嗯，看起来有个字典可能是来自
+Well, looks like a dictionary may be coming from...
+
+1071
+01:00:17,620 --> 01:00:18,440
+我来确认一下
+I'll see.
+
+1072
+01:00:19,660 --> 01:00:20,900
+我们来检查看看
+Let's give it a check out.
+
+1073
+01:00:23,370 --> 01:00:25,030
+出来了，好
+There we go. Okay.
+
+1074
+01:00:26,390 --> 01:00:27,830
+然后基于这里的内容
+And then based on this here,
+
+1075
+01:00:29,630 --> 01:00:32,110
+运行make demo，不对，是make setup
+the make demo, no, make setup,
+
+1076
+01:00:32,530 --> 01:00:33,570
+这样我们就没问题了
+we should be fine.
+
+1077
+01:00:34,690 --> 01:00:39,250
+好，我还希望你做的一件事是运行create-dataset这个命令
+Okay, so one thing I'd like you to do as well is then to run the create-dataset command.
+
+1078
+01:00:39,630 --> 01:00:43,570
+所以我们执行make create-dataset
+So we do make create-dataset.
+
+1079
+01:00:46,180 --> 01:00:53,340
+好，这个命令会把我们的评估测试用例上传到Braintrust的界面里
+Okay, so what this will do is it's going to upload our evaluation test cases into the Braintrust UI.
+
+1080
+01:00:54,740 --> 01:00:58,480
+所以如果我现在切到我的数据集页面
+So if I pivot into my datasets now,
+
+1081
+01:00:59,120 --> 01:01:02,020
+你会看到有一个叫helper create-dataset的
+you'll see it's called helper create-dataset.
+
+1082
+01:01:02,360 --> 01:01:03,600
+同样是为了简单起见
+Again, just for simplicity,
+
+1083
+01:01:03,840 --> 01:01:06,720
+我只创建了10条输入
+I've created 10 inputs.
+
+1084
+01:01:07,320 --> 01:01:11,900
+我也在那里面给它们做了分类
+I've also categorized them around there.
+
+1085
+01:01:12,240 --> 01:01:14,300
+包括输入、我们期望的结果
+So the input, what we expect,
+
+1086
+01:01:14,420 --> 01:01:16,060
+以及和它们相关的一些元数据
+and some metadata associated with that.
+
+1087
+01:01:16,140 --> 01:01:19,480
+这基本就是创建一个评估所需的核心结构
+So kind of the core structure to creating an evaluation.
+
+1088
+01:01:28,780 --> 01:01:31,160
+同时在这一步里
+So as part of this as well,
+
+1089
+01:01:32,220 --> 01:01:35,340
+针对确定性和非确定性两类情况
+and the deterministic and non-deterministic,
+
+1090
+01:01:35,340 --> 01:01:37,140
+我已经写好了一些打分函数
+I've created some scoring functions,
+
+1091
+01:01:37,960 --> 01:01:39,840
+我们会把这个作为本次内容的一部分来使用
+which we'll be using as part of this.
+
+1092
+01:01:40,760 --> 01:01:42,560
+所以它在这里就可以使用
+So it's available here.
+
+1093
+01:01:45,500 --> 01:01:47,240
+接下来是评分函数
+And then the scoring functions.
+
+1094
+01:01:48,160 --> 01:01:49,740
+也就是再次检查类别
+So again, checking the category,
+
+1095
+01:01:50,420 --> 01:01:52,100
+看是否已经有一个模式在那儿
+is a schema in place?
+
+1096
+01:01:55,260 --> 01:01:57,380
+在需要时是否有升级原因
+Is an escalation reason when needed?
+
+1097
+01:01:57,760 --> 01:02:00,460
+同样非常容易运行并固化到代码里
+Again, very easy to run and codify.
+
+1098
+01:02:04,390 --> 01:02:07,890
+是的 在自定义评分标准方面我们会更精细一些
+Yeah, we have a little more sophistication with the custom rubric.
+
+1099
+01:02:08,070 --> 01:02:10,970
+所以这里更像是让大语言模型（LLM）来充当评审的用例
+So this is more of the LLM as a judge case here.
+
+1100
+01:02:13,230 --> 01:02:23,570
+好 接下来我们可以回到readme文件
+All right. And then what we can do is then go back to the readme.
+
+1101
+01:02:25,090 --> 01:02:26,630
+所以我们不需要再做演示
+So we don't need to do the demo.
+
+1102
+01:02:26,770 --> 01:02:27,810
+我们已经把那部分跑完了
+We already pushed that through.
+
+1103
+01:02:29,190 --> 01:02:35,690
+接下来我们来执行一下 make eval
+Let's go ahead and then do make eval.
+
+1104
+01:02:36,530 --> 01:02:41,230
+好 这就会启动一次评估
+Okay. So this is then going to run an evaluation.
+
+1105
+01:02:45,840 --> 01:02:46,840
+就是这里这个东西
+And this right here.
+
+1106
+01:02:48,820 --> 01:02:50,140
+还有这些种子数据
+The seed data as well.
+
+1107
+01:02:50,780 --> 01:02:52,420
+同样 你不一定非得把它写进代码里
+Again, you don't necessarily have to put it into code,
+
+1108
+01:02:53,000 --> 01:02:55,300
+不管它是来自数据库
+but whether it's coming from a database,
+
+1109
+01:02:55,420 --> 01:02:57,520
+在这个例子里 我只是用了一个扁平的JSON文件
+in this case, I've just used a flat file JSON for this,
+
+1110
+01:02:58,160 --> 01:02:59,380
+只是为了给你一点背景信息
+just to give you some context.
+
+1111
+01:03:01,860 --> 01:03:03,460
+所以我们现在正在运行这次评估
+So we are running this evaluation.
+
+1112
+01:03:24,680 --> 01:03:27,560
+如果我们打开UI界面 应该能看到
+And we should have, if we go to the UI,
+
+1113
+01:03:29,380 --> 01:03:30,700
+一个用于实验的页面
+a place for experiments.
+
+1114
+01:03:32,920 --> 01:03:34,580
+我在这里再确认一下
+So I'll just double check here.
+
+1115
+01:03:35,140 --> 01:03:39,720
+对 那个实验已经针对所有关联的JSON文件跑完了
+Yeah, so that experiment ran against all the JSONs associated with it.
+
+1116
+01:03:41,880 --> 01:03:44,300
+所以你应该会得到类似这样的输出
+So you should get an output like this,
+
+1117
+01:03:44,360 --> 01:03:45,060
+至少在终端里是这样的
+at least in the terminal.
+
+1118
+01:03:46,060 --> 01:03:47,500
+但如果我们回到UI界面
+But if we go back to the UI,
+
+1119
+01:03:48,820 --> 01:03:56,660
+我们就开始针对这个特定数据集 跟踪应用的输入和输出
+again, we're starting to track our application against the inputs and outputs for this particular dataset.
+
+1120
+01:04:07,310 --> 01:04:13,470
+这和你在在线追踪里看到的追踪视图非常相似
+Quite similar to the tracing view you've seen from the online traces,
+
+1121
+01:04:14,050 --> 01:04:20,330
+你会在这里看到一个非常类似的视图 并观察它在不同实验中的表现
+you get to see a very similar view here and see how it works across your experimentation as well.
+
+1122
+01:04:25,950 --> 01:04:27,810
+我想强调的是
+And I think pointing out,
+
+1123
+01:04:28,230 --> 01:04:29,370
+随着我们在这个工作坊中不断推进
+as we progress with the workshop,
+
+1124
+01:04:30,010 --> 01:04:33,750
+我们会开始看到如何利用这一组差异函数来改进它 并且
+we'll start to see how do we then improve it using the set of difference functions and
+
+1125
+01:04:33,750 --> 01:04:34,830
+在UI中对这些改进进行跟踪
+track that across the UI.
+
+1126
+01:04:41,030 --> 01:04:42,990
+如果你需要更多屏幕空间
+If you need a bit more real estate as well,
+
+1127
+01:04:43,590 --> 01:04:45,830
+你可以把菜单折叠起来 这会有帮助
+you can collapse the menu, which does help.
+
+1128
+01:04:52,910 --> 01:04:53,870
+好 时间差不多了
+Okay, time.
+
+1129
+01:04:55,310 --> 01:04:55,790
+很好
+Perfect.
+
+1130
+01:04:57,250 --> 01:04:57,430
+好
+Okay.
+
+1131
+01:05:05,450 --> 01:05:11,210
+那我们继续下一个检查点 也就是如何部署和管理这个东西
+All right, let's proceed with the next checkpoint around deploying and managing this.
+
+1132
+01:05:13,050 --> 01:05:17,690
+正如我之前提到的 我觉得很多人
+So, as I mentioned, I think a lot of folks,
+
+1133
+01:05:18,070 --> 01:05:18,810
+至少从一些经验之谈来看
+or at least anecdotally,
+
+1134
+01:05:18,890 --> 01:05:20,270
+根据我在客户那边看到的情况
+when I've seen this from the customers,
+
+1135
+01:05:20,930 --> 01:05:23,670
+情况往往是 代码在我本机上跑得特别好
+is, again, things will work really well on my machine.
+
+1136
+01:05:23,990 --> 01:05:25,690
+好 现在我把它提交到代码仓库
+Okay, now I'm checking that into code.
+
+1137
+01:05:26,330 --> 01:05:31,870
+我会希望把它放到一个能更好协作的地方
+I kind of want to take this into a place where I can start to collaborate a little bit better.
+
+1138
+01:05:32,730 --> 01:05:34,130
+有一个统一的参考点
+There's a point of reference.
+
+1139
+01:05:35,030 --> 01:05:36,190
+我能看到版本历史
+I've got version history.
+
+1140
+01:05:36,350 --> 01:05:37,590
+你就可以开始识别
+You can start to identify,
+
+1141
+01:05:37,750 --> 01:05:39,470
+谁做了哪些改动
+again, who's made what change.
+
+1142
+01:05:40,190 --> 01:05:43,690
+而且你需要一种方式把这些用户聚到一起
+And you need a way to be able to bring these users together.
+
+1143
+01:05:43,970 --> 01:05:46,010
+我记得Osama提到过协作这件事
+So, I think Osama talked about a collaboration.
+
+1144
+01:05:47,530 --> 01:05:48,710
+另外一个有意思的点是
+What's interesting as well is,
+
+1145
+01:05:48,810 --> 01:05:54,570
+你在自己机器上改了提示词 然后再试着把代码推到代码仓库
+again, changing the prompt on your machine and then trying to ship that code to a repository.
+
+1146
+01:05:54,850 --> 01:05:55,810
+但可能会有这样一个人
+And there may be somebody who's,
+
+1147
+01:05:55,950 --> 01:05:58,070
+比如说 一个不太懂技术的领域专家
+let's say, a non-technical SME,
+
+1148
+01:05:58,210 --> 01:05:59,290
+或者是产品经理
+a product manager, perhaps.
+
+1149
+01:05:59,690 --> 01:06:01,310
+他们想要更新提示词
+They want to update the prompts.
+
+1150
+01:06:01,530 --> 01:06:02,210
+但他们自己做不到
+They can't do it.
+
+1151
+01:06:02,510 --> 01:06:03,670
+他们只能来拍你的肩膀求助
+They have to tap you on the shoulder.
+
+1152
+01:06:04,350 --> 01:06:06,630
+今天在座的一些人可能就遇到过这种情况
+Maybe that's happened to some of the folks in the room here today.
+
+1153
+01:06:06,890 --> 01:06:09,110
+我自己以前也遇到过好几次
+I know it's happened to me a few times before.
+
+1154
+01:06:10,090 --> 01:06:11,670
+我知道这会让人非常沮丧
+And I understand it can get really frustrating.
+
+1155
+01:06:12,190 --> 01:06:15,110
+所以我们其实是想要一种方式把这一切整合起来
+So, we actually just want a way to be able to pull that together.
+
+1156
+01:06:16,030 --> 01:06:20,050
+有一个非常关键的点 尤其是对那些在高度监管行业工作的人来说
+A really key thing, especially for those who work in very regulated industries,
+
+1157
+01:06:20,810 --> 01:06:22,650
+可复现性是一个非常重要的要求
+reproducibility is a very big key thing.
+
+1158
+01:06:22,990 --> 01:06:27,730
+我在银行和资本市场领域工作了十多年
+And I've worked in a better part of over a decade in both banking and capital markets.
+
+1159
+01:06:28,230 --> 01:06:31,170
+我很清楚在监管要求之下
+I know, obviously, with the regulatory out there,
+
+1160
+01:06:31,250 --> 01:06:33,410
+尤其是像“被遗忘权”这样的规定
+especially things like right to be forgotten,
+
+1161
+01:06:34,110 --> 01:06:36,070
+你必须弄清楚是谁做了改动
+understanding who's made a change,
+
+1162
+01:06:36,130 --> 01:06:37,770
+尤其是在压力退出场景下
+especially in a stress exit scenario,
+
+1163
+01:06:37,890 --> 01:06:39,430
+我们要如何把这些东西迁移到一个新系统里
+how can we put this into a new system?
+
+1164
+01:06:39,990 --> 01:06:42,150
+这一点对解决这些问题非常关键
+This is really key to helping unlock that.
+
+1165
+01:06:43,870 --> 01:06:49,090
+而且在你真正执行之前识别出这些变更 这一点也很重要
+And interesting when it comes to identifying changes before you do that.
+
+1166
+01:06:49,170 --> 01:06:51,830
+所以我们不希望只是随便改一改
+So, again, we don't want to just be making changes,
+
+1167
+01:06:52,070 --> 01:06:54,050
+然后直接推到生产环境 再回头问发生了什么
+pushing out production and asking us what's happened.
+
+1168
+01:06:54,870 --> 01:06:57,210
+我们需要在此之前把这些机制先搭建好
+We need to be able to kind of get that in place.
+
+1169
+01:06:59,290 --> 01:07:00,250
+因此 对我们来说
+And so, for us, again,
+
+1170
+01:07:00,610 --> 01:07:02,890
+我们现在要引入一些新的能力
+we're introducing some capabilities now.
+
+1171
+01:07:03,130 --> 01:07:04,850
+到目前为止 你运行的一切
+So, what you've been running at the moment,
+
+1172
+01:07:04,970 --> 01:07:05,890
+包括这些工具
+you've been running the tools,
+
+1173
+01:07:06,130 --> 01:07:07,150
+以及这些提示词
+you've been running the prompts,
+
+1174
+01:07:07,290 --> 01:07:08,410
+全都是在你的本地机器上完成的
+everything on your local machine.
+
+1175
+01:07:09,030 --> 01:07:12,530
+我们现在想做的是把这些能力卸载到Braintrust上
+What we want to do is then offload that capability into Braintrust.
+
+1176
+01:07:13,010 --> 01:07:15,390
+这样当你的应用在一个安全环境中运行时
+So, when your application is running in a secure environment,
+
+1177
+01:07:15,610 --> 01:07:22,950
+它就可以去Braintrust获取这些信息 并让Braintrust来协助执行这部分逻辑 而这同样
+it can refer to Braintrust to pull that information and then help with the part of execution, which, again,
+
+1178
+01:07:23,010 --> 01:07:24,610
+会遵循我们已经实现的追踪机制
+follows the tracing mechanisms that we've done.
+
+1179
+01:07:25,690 --> 01:07:28,250
+默认情况下 当你运行这些make命令时
+So, by default, when you're running the make commands,
+
+1180
+01:07:28,910 --> 01:07:31,170
+运行模式是类似本地模式
+the runtime mode was set to kind of local.
+
+1181
+01:07:31,770 --> 01:07:33,190
+如果你想使用托管模式
+If you want to use managed mode,
+
+1182
+01:07:33,430 --> 01:07:38,510
+只需要在前面加上 managed 这个前缀 后面的make命令就会在托管模式下执行
+just use the prefix managed and whatever the remaining make commands will happen there as well.
+
+1183
+01:07:39,750 --> 01:07:44,510
+接下来我想切换回IDE里
+So, what I want to do then is pivot into the IDE.
+
+1184
+01:07:45,710 --> 01:07:50,590
+也就是回到我的README文件
+So, going back to my README.
+
+1185
+01:08:02,370 --> 01:08:03,370
+好
+Okay.
+
+1186
+01:08:09,640 --> 01:08:11,280
+然后执行 git checkout
+So, git checkout.
+
+1187
+01:08:18,330 --> 01:08:18,830
+好
+Okay.
+
+1188
+01:08:20,330 --> 01:08:21,790
+我在这里先看一下
+So, just taking a look here.
+
+1189
+01:08:22,910 --> 01:08:24,410
+我们来执行 make setup
+We'll do make setup.
+
+1190
+01:08:25,810 --> 01:08:28,490
+在这里我想特别强调一点
+And the key thing I do want to emphasize at this point,
+
+1191
+01:08:28,590 --> 01:08:31,310
+因为我们是在Braintrust里管理这一切的
+because we're managing this in Braintrust,
+
+1192
+01:08:31,690 --> 01:08:38,170
+在这里使用setup Braintrust这个命令
+use the setup Braintrust command here.
+
+1193
+01:08:39,150 --> 01:08:42,630
+这样做会把那些评分函数打包起来
+So, what that's going to do is it's going to package up those scoring functions,
+
+1194
+01:08:42,870 --> 01:08:44,230
+把那些工具、那些提示词也一起打包
+those tools, those prompts,
+
+1195
+01:08:44,690 --> 01:08:46,870
+然后推送到安全的基础设施上
+and push it onto the secured infrastructure.
+
+1196
+01:08:48,130 --> 01:08:50,330
+所以你应该会得到像这样的输出结果
+So, you should get an output like this.
+
+1197
+01:08:51,610 --> 01:08:55,030
+以及它在UI里的呈现方式
+And what that would look like in the UI.
+
+1198
+01:08:56,610 --> 01:08:59,070
+我们回到overview页面来看一下
+So, let's go back to overview to see.
+
+1199
+01:08:59,490 --> 01:09:03,750
+那么在左侧，如果我们来看一下提示的话
+So, on the left-hand side, if we take a look at prompts,
+
+1200
+01:09:04,750 --> 01:09:09,030
+你就会看到我们在那个工作流里创建的三个提示词
+you'll start to see the three prompts that we created as part of that workflow.
+
+1201
+01:09:10,170 --> 01:09:13,470
+我们点进triage specialist来给你一个直观的概念
+I'll give you an idea here if we go to the triage specialist.
+
+1202
+01:09:15,110 --> 01:09:18,490
+你可以定义一个slug
+So, you can define a slug.
+
+1203
+01:09:18,710 --> 01:09:20,650
+也就是一个不可变的ID
+So, let's say an immutable ID,
+
+1204
+01:09:21,130 --> 01:09:22,690
+之后你可以在代码里引用它
+which you can then refer to it in the code.
+
+1205
+01:09:23,410 --> 01:09:24,810
+如果需要的话也可以自动生成
+This can also be generated if needed.
+
+1206
+01:09:26,330 --> 01:09:30,230
+这个提示词同样会被当作代码来对待
+The prompt is, again, treated as code.
+
+1207
+01:09:30,910 --> 01:09:33,490
+如果你想把它参数化的话我们也会在里面做一些插值处理
+We also use some interpolation there if you want to parameterize this.
+
+1208
+01:09:33,830 --> 01:09:35,410
+我一会儿会给你展示那是什么样子
+And I'll show what that looks like shortly.
+
+1209
+01:09:37,790 --> 01:09:39,510
+如果我切换到评分函数这边
+If I go to the scoring function.
+
+1210
+01:09:41,650 --> 01:09:42,810
+我们点一下scorers
+So, let's click on scorers.
+
+1211
+01:09:44,850 --> 01:09:46,510
+好的 它马上就会加载出来
+Okay, it'll come up in a second.
+
+1212
+01:09:47,890 --> 01:09:48,710
+我来看看parameters
+I'll take a look at parameters.
+
+1213
+01:09:50,090 --> 01:09:51,950
+我就在这里看一下
+So, I'm just going to take a look here.
+
+1214
+01:09:52,070 --> 01:09:54,970
+我专门创建了一个参数只是为了简化操作
+And I've created a parameter specifically just to simplify things,
+
+1215
+01:09:55,410 --> 01:09:56,610
+用来切换基线模型
+changing the baseline model.
+
+1216
+01:09:57,250 --> 01:09:58,730
+我想简单举个手做个小调查
+So, maybe just kind of a show of hands,
+
+1217
+01:10:00,090 --> 01:10:02,550
+你也知道 这些模型发布得非常快
+you know, these models get released so quickly.
+
+1218
+01:10:02,550 --> 01:10:07,630
+有没有人遇到过PM或者说非工程背景的SME跟你说
+Has anybody had like a PM or let's say a non-engineering SME say,
+
+1219
+01:10:07,730 --> 01:10:13,850
+嘿 顺便问一下 我能不能改一下模型或者提示词 看看效果会怎么样
+hey, by the way, can I change the model or the prompt and see what that would look like?
+
+1220
+01:10:13,990 --> 01:10:15,410
+你们有人遇到过这种情况吗
+Has that kind of happened to you folks?
+
+1221
+01:10:15,490 --> 01:10:16,470
+我看到有几只手举起来了
+I think we've got a few hands here.
+
+1222
+01:10:17,250 --> 01:10:19,750
+很好 那现在这个方式的好处是
+Great. Okay. So, the good thing with this now,
+
+1223
+01:10:19,810 --> 01:10:25,550
+借助托管参数 那些非技术背景的SME
+using the managed parameters, those non-technical SMEs,
+
+1224
+01:10:25,770 --> 01:10:28,770
+他们可以直接进到Braintrust在这里修改提示词
+they can come into Braintrust and change a prompt here,
+
+1225
+01:10:29,010 --> 01:10:30,050
+然后写一条评论说明
+write a comment to say,
+
+1226
+01:10:30,270 --> 01:10:34,010
+比如 让我们换一个模型
+look, let's use a different model.
+
+1227
+01:10:34,070 --> 01:10:35,070
+比如我来用4o mini这样的模型
+Let me use something like 4o mini.
+
+1228
+01:10:35,970 --> 01:10:38,950
+只要写上 测试一个新模型
+Just say, testing a new model.
+
+1229
+01:10:40,590 --> 01:10:42,750
+我会在这里保存这个版本
+I'm going to save this version here.
+
+1230
+01:10:44,310 --> 01:10:45,210
+把这条评论写进去
+Write the comment.
+
+1231
+01:10:48,010 --> 01:10:49,790
+接下来我还会做一件事
+And what I'm going to do as well,
+
+1232
+01:10:49,910 --> 01:10:51,350
+为了给你一个完整的闭环
+just to give you an ending claim,
+
+1233
+01:10:51,470 --> 01:10:53,770
+我要去做那个，你知道的，把 Braintrust 搭建起来
+I'm going to do, you know, make set up Braintrust.
+
+1234
+01:10:53,810 --> 01:10:55,830
+所以每次你改了什么东西
+So, every time you change something,
+
+1235
+01:10:56,530 --> 01:10:57,630
+你都可以运行这个命令
+you can run this command,
+
+1236
+01:10:57,850 --> 01:10:59,930
+但我这里只是为了演示方便才这么做
+but I'm just doing it for brevity here.
+
+1237
+01:11:01,650 --> 01:11:04,870
+主要是为了让这个模型保持同步
+That's more to keep this model in sync.
+
+1238
+01:11:05,030 --> 01:11:05,790
+所以如果我回到prompts这里
+So, if I go to prompts,
+
+1239
+01:11:07,610 --> 01:11:09,090
+你会发现这就是同步的过程
+you know, that's kind of the sync.
+
+1240
+01:11:09,230 --> 01:11:13,370
+但如果我看一下
+But if I take a look at the,
+
+1241
+01:11:13,570 --> 01:11:17,810
+抱歉 是已经生效的parameters
+sorry, the parameters in place,
+
+1242
+01:11:20,250 --> 01:11:21,250
+对 它应该已经在那里了
+yeah, it should be there.
+
+1243
+01:11:21,910 --> 01:11:23,470
+所以接下来我要做的是
+And so, what I'm going to do is,
+
+1244
+01:11:24,790 --> 01:11:25,970
+如果我执行类似
+if I do something like,
+
+1245
+01:11:36,120 --> 01:11:38,900
+我记得这是 运行时叫什么来着
+I think this is, what's a run time?
+
+1246
+01:11:55,360 --> 01:11:56,220
+Count unlock
+Count unlock.
+
+1247
+01:12:02,630 --> 01:12:04,570
+所以在这个例子里 通过运行托管模型
+So, in this case, by running the managed model,
+
+1248
+01:12:04,650 --> 01:12:06,470
+我只是改变了执行路径
+I'm just changing the course of the execution,
+
+1249
+01:12:06,910 --> 01:12:08,330
+不再在本地运行模型
+not to run the model locally,
+
+1250
+01:12:08,510 --> 01:12:13,430
+而是按照Braintrust为这个模型设定的路径来走
+but to follow the path of what Braintrust has set for the model.
+
+1251
+01:12:18,420 --> 01:12:18,820
+好
+Okay.
+
+1252
+01:12:20,040 --> 01:12:21,980
+如果一切顺利的话
+And if everything goes well...
+
+1253
+01:12:28,690 --> 01:12:30,170
+你可以看到这里刚刚有点变化
+So, you can see something just there.
+
+1254
+01:12:32,610 --> 01:12:34,590
+你能看到我已经在这里把模型换掉了
+You can see that I've changed the model here.
+
+1255
+01:12:35,150 --> 01:12:36,690
+所以我完全不需要改任何代码
+So, again, I didn't have to do any code changes.
+
+1256
+01:12:36,870 --> 01:12:37,950
+我只需要进到UI里
+All I had to do was go into the UI,
+
+1257
+01:12:38,090 --> 01:12:39,030
+在我想改的地方换一下模型
+change the model where I wanted to,
+
+1258
+01:12:39,270 --> 01:12:39,970
+或者改任何其他参数
+or any other parameter,
+
+1259
+01:12:40,270 --> 01:12:45,470
+然后运行它 并把它作为评估的基线来使用
+run that, and have that used as an establishing baseline for the evaluations.
+
+1260
+01:12:56,050 --> 01:12:57,030
+同样 如果你愿意
+Again, if you want to,
+
+1261
+01:12:57,410 --> 01:13:00,130
+你也可以运行demo脚本把demo工单推进去
+you can also run the demo script to push in the demo tickets.
+
+1262
+01:13:00,810 --> 01:13:02,770
+我今天在这个工作坊里就先跳过这一步
+I'm just skipping that for the workshop today.
+
+1263
+01:13:08,740 --> 01:13:11,500
+我在很多不同客户那里都看到过这种情况
+I think I do see this with many of our different customers,
+
+1264
+01:13:12,000 --> 01:13:13,080
+他们会说 哦 你知道
+is saying, oh, you know,
+
+1265
+01:13:14,320 --> 01:13:16,080
+这不一定是担忧的来源
+there can be, not necessarily a cause of concern,
+
+1266
+01:13:16,180 --> 01:13:16,920
+但他们会说 嘿 顺便问一下
+it's saying, hey, by the way,
+
+1267
+01:13:17,020 --> 01:13:20,580
+现在Braintrust对这些参数有了访问控制
+Braintrust is now having access control to these parameters.
+
+1268
+01:13:22,100 --> 01:13:26,000
+我的看法是 Braintrust并不是要取代你原本那些严格的流程
+What I would say is Braintrust is not really intended to replace that rigor.
+
+1269
+01:13:26,280 --> 01:13:30,020
+你大概率还是会想用版本控制系统之类的东西来追踪这些变更
+You probably still want to use things like version control systems anyway to track that.
+
+1270
+01:13:30,360 --> 01:13:34,800
+我们想表达的是 当你要把它运营化 并确保其他
+What we're just saying is when it comes to operationalize it and making sure that other
+
+1271
+01:13:34,800 --> 01:13:37,540
+用户能够在一个共享系统上协同工作时
+users are able to work on a shared system,
+
+1272
+01:13:37,880 --> 01:13:41,040
+这是我们推荐的一条路径 来帮助你做到这一点
+this is a recommended path that we would take to help out with that.
+
+1273
+01:13:41,140 --> 01:13:43,680
+所以同样 你可能仍然需要把你的提示词
+So, again, you would probably still have to have your prompts,
+
+1274
+01:13:43,980 --> 01:13:46,460
+你的工具 你的参数 以某种集中化的方式管理起来
+your tooling, your parameters in a kind of centralized way,
+
+1275
+01:13:46,540 --> 01:13:50,540
+然后再通过自动化机制来同步它们并驱动工作
+but then provide automation in place for you to synchronize that and work.
+
+1276
+01:13:50,700 --> 01:13:53,420
+这是我们看到客户利用这一能力的最佳方式
+And that's the best way we've seen customers take advantage of this.
+
+1277
+01:13:59,320 --> 01:14:02,060
+接下来这一部分我要讲的是在线评分
+This next portion, I'm going to talk about online scoring.
+
+1278
+01:14:02,820 --> 01:14:05,900
+既然我们已经把那些评估配置好了
+So now that we have those evaluations in place,
+
+1279
+01:14:06,600 --> 01:14:14,820
+接下来我们要做的是把这些评分应用到真正的线上生产日志上
+what we're going to do is then apply those scoring to actual live production logs that are
+
+1280
+01:14:14,820 --> 01:14:16,720
+也就是应用里实时流入的日志
+coming through in the application.
+
+1281
+01:14:16,880 --> 01:14:19,160
+好 我们已经把测试用例跑完 这很好
+So, okay, it's great that we've done our test cases.
+
+1282
+01:14:19,400 --> 01:14:21,720
+我们对它能正常工作有了一定信心
+We've got some level of confidence that it's working.
+
+1283
+01:14:21,720 --> 01:14:24,980
+但同样 没有什么能替代生产环境里的真实数据 对吧
+But, again, there's no substitute for production data, right?
+
+1284
+01:14:25,000 --> 01:14:25,600
+这一点大家都很清楚
+We all know this.
+
+1285
+01:14:26,460 --> 01:14:28,760
+所以我们接下来要做的是创建
+So what we're going to be doing is creating,
+
+1286
+01:14:29,380 --> 01:14:34,200
+再次把那套逻辑迁移到Braintrust里 并配置我们称之为automations的东西 它会
+again, moving that logic into Braintrust and setting what we call automations that would
+
+1287
+01:14:34,200 --> 01:14:39,120
+在日志实时流入时对其进行跟踪和评估
+then track and evaluate this as logs are coming in real time.
+
+1288
+01:14:39,700 --> 01:14:41,620
+值得一提的是 当你刚开始这段旅程时
+Worth pointing out when you start your journey,
+
+1289
+01:14:42,400 --> 01:14:46,480
+这很有可能发生，尤其是当你用大语言模型（LLM）作为评判时
+it's probably, especially if you're using LLM as a judge,
+
+1290
+01:14:46,900 --> 01:14:47,840
+你一开始会希望采用
+you want to start with,
+
+1291
+01:14:47,900 --> 01:14:49,340
+比如说，更高的采样率
+let's say, a higher sampling rate.
+
+1292
+01:14:49,500 --> 01:14:51,380
+所以，当日志不断进来时
+So, again, as logs are coming in,
+
+1293
+01:14:51,680 --> 01:14:54,780
+在可能的情况下，你要确保先识别出一个基线
+where possible, you want to make sure you identify a baseline.
+
+1294
+01:14:55,400 --> 01:14:59,020
+但是，这些调用可能非常昂贵，这里就存在取舍
+But, again, there's a trade-off when these calls can be quite expensive,
+
+1295
+01:14:59,340 --> 01:15:03,500
+尤其是当你使用更复杂的模型并且需要更高的推理能力时
+especially if you're using more sophisticated models and you need a higher rate of reasoning.
+
+1296
+01:15:04,040 --> 01:15:06,060
+到那时，当你确实想要
+At that point, when you do want to,
+
+1297
+01:15:06,520 --> 01:15:09,140
+并且对输出结果已经满意时
+are happy with the output,
+
+1298
+01:15:09,560 --> 01:15:12,540
+你就确实应该把采样率降到5%到10%
+you really want to reduce that sampling rate down to 5% to 10%.
+
+1299
+01:15:12,540 --> 01:15:14,680
+这样你就能更有效地控制成本
+So, again, you're managing your cost effectively.
+
+1300
+01:15:16,920 --> 01:15:18,740
+确定性的评分则很便宜
+Deterministic scores, again, they're cheap.
+
+1301
+01:15:19,320 --> 01:15:21,000
+我建议一直运行这些评分
+I recommend running them all the time.
+
+1302
+01:15:24,500 --> 01:15:25,640
+不好意思，你刚才的问题是什么
+Sorry, what was that question?
+
+1303
+01:15:27,700 --> 01:15:29,640
+好的，我会在界面里把那个调出来
+Yes, so I'll bring that up in the UI.
+
+1304
+01:15:29,860 --> 01:15:30,460
+我会给你演示一下
+I'll show you, yeah.
+
+1305
+01:15:31,680 --> 01:15:34,780
+好，那如果我回到IDE里
+Okay, so if I go back into the IDE,
+
+1306
+01:15:36,200 --> 01:15:37,580
+我会在这里打开readme
+I'll go into readme here.
+
+1307
+01:15:39,900 --> 01:15:42,680
+哦，原来如此，所以我才漏掉了manage tools
+Oh, so that's why I missed out the manage tools.
+
+1308
+01:15:44,060 --> 01:15:46,260
+那我们就执行一下git checkout
+So let's just say git checkout.
+
+1309
+01:15:48,580 --> 01:15:49,940
+好，搞定
+Okay, there.
+
+1310
+01:15:51,260 --> 01:15:53,300
+正如我刚才说的，这些东西都是层层构建在一起的
+And as I mentioned, they all build upon each other,
+
+1311
+01:15:53,460 --> 01:15:56,080
+所以跳过这一步完全没问题
+so skipping this is totally fine.
+
+1312
+01:15:58,100 --> 01:16:00,280
+所以执行git checkout
+So git checkout.
+
+1313
+01:16:01,660 --> 01:16:06,480
+好，现在如果我执行make setup
+All right, now, if I do make setup,
+
+1314
+01:16:07,160 --> 01:16:08,240
+一切应该都没问题
+everything should be fine.
+
+1315
+01:16:08,980 --> 01:16:09,860
+执行make setup
+Make setup
+
+1316
+01:16:14,070 --> 01:16:15,270
+在Braintrust里
+Braintrust.
+
+1317
+01:16:18,420 --> 01:16:24,940
+在这个例子里，我实际上也把这些工具用于生产环境了
+So in this case, I'm actually taking the tools as well for the production.
+
+1318
+01:16:25,860 --> 01:16:28,760
+这主要是为了在可能的地方尽量加速整个流程
+Again, this is just to really help accelerate things where possible.
+
+1319
+01:16:30,460 --> 01:16:33,200
+接下来，如果我点一下刷新
+Coming down to, if I hit refresh...
+
+1320
+01:16:36,860 --> 01:16:38,440
+好，现在是我们的评分
+Right, so our scores.
+
+1321
+01:16:39,320 --> 01:16:42,640
+之前你在代码里看到的那些评分函数
+The scoring functions that you saw earlier in code,
+
+1322
+01:16:43,080 --> 01:16:44,240
+现在都在Braintrust里被统一管理
+they're now managed in Braintrust.
+
+1323
+01:16:44,300 --> 01:16:45,840
+你可以看到它们在这里可用
+So you can see it's available here.
+
+1324
+01:16:47,000 --> 01:16:50,220
+我特别想强调的是这个分级处理（triage）
+The ones that I want to call out is the triage.
+
+1325
+01:16:50,380 --> 01:16:52,700
+我这里配置了一个大语言模型（LLM）作为评判
+So I've got an LLM as a judge,
+
+1326
+01:16:54,100 --> 01:16:55,280
+并且已经应用上去了
+which has been applied.
+
+1327
+01:16:56,980 --> 01:16:59,460
+它会基于输入和输出来进行评判
+So input and output taking this.
+
+1328
+01:17:00,500 --> 01:17:02,980
+同时这里还配置了一条自动化规则
+And there's an automation rule in place.
+
+1329
+01:17:02,980 --> 01:17:05,380
+用来在线评估根本质量
+So root quality online.
+
+1330
+01:17:08,600 --> 01:17:09,640
+我在这里做的事情是
+So what I've done here,
+
+1331
+01:17:09,780 --> 01:17:15,020
+我把整个初始化配置写成代码，自动完成项目的引导搭建
+again, I've automated the setup as code to bootstrap the project.
+
+1332
+01:17:15,280 --> 01:17:18,500
+但接下来我们要做的是
+But again, what we're going to do here is to say,
+
+1333
+01:17:18,600 --> 01:17:20,540
+看看是单个span
+look, depending if it's an individual span,
+
+1334
+01:17:20,680 --> 01:17:22,880
+还是整个trace，然后选择对它执行评分
+we can run the execution or the entire trace.
+
+1335
+01:17:23,100 --> 01:17:24,760
+这也是为什么元数据如此重要
+And this is why metadata is so important,
+
+1336
+01:17:24,920 --> 01:17:30,600
+因为我们可能只想追踪代码里发生的某些特定失败
+because we may only want to trace maybe specific failures that might happen within the code.
+
+1337
+01:17:31,260 --> 01:17:33,240
+这还是要取决于具体用例
+Again, depending on the use case.
+
+1338
+01:17:34,180 --> 01:17:35,620
+我的采样率，正如我刚才提到的
+My sampling rate, as I mentioned,
+
+1339
+01:17:35,720 --> 01:17:36,920
+现在被设置为100
+is set to 100.
+
+1340
+01:17:37,160 --> 01:17:39,280
+但对于更昂贵的调用
+But again, for more expensive calls,
+
+1341
+01:17:39,380 --> 01:17:41,060
+我们也希望把采样率降下来
+we want to taper that as well.
+
+1342
+01:17:41,300 --> 01:17:45,440
+这就是自动化配置，以及我们在Braintrust日常是如何做这件事的
+So this is what the automation or how we would do that in Braintrust day-to-day.
+
+1343
+01:17:51,120 --> 01:17:56,600
+不，automations更像是对新进日志执行的一套流程
+No, so automations is more like the execution against incoming logs.
+
+1344
+01:17:57,420 --> 01:17:58,440
+所以它是针对这些日志的
+So it's with that.
+
+1345
+01:18:01,130 --> 01:18:07,590
+是的，但我这边是把自动化用在了搭建这个环境和脚手架上
+Yeah, but I'm... I've applied automation to setting up this environment and scaffolding.
+
+1346
+01:18:08,250 --> 01:18:10,430
+对，我只是想在这里把这两者区分清楚
+Yeah, so that's just want to delineate that here.
+
+1347
+01:18:13,560 --> 01:18:14,440
+不好意思，这边有个问题
+Sorry, there's a question here.
+
+1348
+01:18:14,620 --> 01:18:16,140
+你们具体在给哪些东西打分
+Yeah, what kind of things are you scoring?
+
+1349
+01:18:18,300 --> 01:18:19,800
+能详细说一下吗
+Could you expand on that, please?
+
+1350
+01:18:20,260 --> 01:18:23,120
+明白，那这些automations就是把所有评判都自动化了，对吗
+Yeah. So the automations are like all of the judge, right?
+
+1351
+01:18:23,280 --> 01:18:24,800
+对，是的，只要你有任何评判逻辑
+Yes, correct. Where do you have any judge?
+
+1352
+01:18:27,190 --> 01:18:29,550
+在那种有已知标准答案的情况下
+In... If there's like a known ground truth...
+
+1353
+01:18:29,550 --> 01:18:31,890
+好，那你要怎么对线上请求进行评估
+Okay. Like how can you perform on-liners?
+
+1354
+01:18:33,420 --> 01:18:36,260
+嗯，你可能会把那种情况当作一个边缘案例
+Yep. Yeah, well, you probably want to take that as an edge case,
+
+1355
+01:18:36,800 --> 01:18:37,780
+把它放进一个数据集里
+push that into a data set,
+
+1356
+01:18:38,000 --> 01:18:40,160
+把它标记出来，然后再回放进去
+identify it, and then move that back.
+
+1357
+01:18:40,220 --> 01:18:42,960
+这是我在这种情况下会采用的做法
+So that would be the approach that I would take for this.
+
+1358
+01:18:44,340 --> 01:18:46,420
+如果你一开始没有任何标准答案的话
+If you don't have any ground truth already, right?
+
+1359
+01:18:46,480 --> 01:18:47,140
+这就是我之前说的
+So this is why I said,
+
+1360
+01:18:47,200 --> 01:18:48,120
+取决于你从哪里起步
+depending where you start,
+
+1361
+01:18:48,760 --> 01:18:52,640
+最好先有一部分数据，然后围绕这些数据启动你的飞轮
+it's better to have some kind of data and then begin your flywheel around from that.
+
+1362
+01:18:52,640 --> 01:18:54,240
+那如果你已经有一些数据
+So if you do have some data,
+
+1363
+01:18:54,540 --> 01:18:57,380
+你要怎么把它用在大语言模型（LLM）评判上
+how do you apply that to being on as a judge?
+
+1364
+01:18:59,460 --> 01:19:04,000
+哦，那种情况的话，我们可以把它放进一个数据集，然后在playground里回放
+Oh, that case. We can probably put that into a data set and then replay that through the playground.
+
+1365
+01:19:04,680 --> 01:19:06,020
+这就是我们会采用的方式
+That's going to be the way we would do that.
+
+1366
+01:19:06,500 --> 01:19:07,040
+对，没错
+Yeah, yeah.
+
+1367
+01:19:12,190 --> 01:19:14,870
+好，那我们已经看过在线评分这部分
+All right. So we checked up online scoring...
+
+1368
+01:19:16,230 --> 01:19:20,170
+好，接下来我们看一下修复环节
+Okay, now to the remediation portion.
+
+1369
+01:19:20,290 --> 01:19:21,270
+希望你们已经看到了其中的差异
+So hopefully seeing the delta,
+
+1370
+01:19:21,530 --> 01:19:23,250
+这也就是我们今天在这里的原因
+again, why we're here today.
+
+1371
+01:19:23,370 --> 01:19:26,470
+希望这能帮你解答刚才那个具体的问题
+So hopefully this might help you with that particular question.
+
+1372
+01:19:27,490 --> 01:19:33,630
+再举一个例子，这是一个很可能出现在我们智能体式系统里的输入
+So again, here's something that might happen as a plausible input to our agentic system
+
+1373
+01:19:33,630 --> 01:19:35,270
+比如一个客户
+is, you know, a customer,
+
+1374
+01:19:35,630 --> 01:19:36,510
+一个用户可能会说，嗨
+a user might say, hey,
+
+1375
+01:19:36,570 --> 01:19:42,550
+这不算紧急，但我们的CFO在董事会开会前导不出发票
+this isn't urgent, but our CFO can't export the invoices before the board meeting.
+
+1376
+01:19:43,350 --> 01:19:46,490
+模型会说，瞧，嘿，这对我来说看起来没问题
+The model says, look, hey, this looks okay for me.
+
+1377
+01:19:46,690 --> 01:19:47,430
+有人说这不紧急
+Someone says, not urgent.
+
+1378
+01:19:48,770 --> 01:19:49,410
+就那样吧，马马虎虎
+comme ci, comme ça.
+
+1379
+01:19:50,270 --> 01:19:52,750
+但从业务角度看就完全不一样了
+But the business is very different, right?
+
+1380
+01:19:52,790 --> 01:19:55,350
+这件事很可能需要立刻处理
+This probably does need immediate attention,
+
+1381
+01:19:56,750 --> 01:19:59,350
+因为CFO要展示季度末报告，这必须完成
+CFO shows end of quarter report that needs to be done.
+
+1382
+01:20:00,270 --> 01:20:06,130
+而我们今天要做的，就是试着识别出
+And this is the difference between what we're doing here today is trying to identify what
+
+1383
+01:20:06,130 --> 01:20:09,170
+哪些才是真正的失败模式，然后在可能的情况下进行修复
+is a proper failure mode and then remediate that where possible.
+
+1384
+01:20:10,310 --> 01:20:11,350
+所以在这个例子里
+So in this case, again,
+
+1385
+01:20:11,390 --> 01:20:14,610
+我可以在这里运行这个特定模式
+I can run this particular mode here.
+
+1386
+01:20:14,670 --> 01:20:16,110
+我已经把它放进这个数据集里了
+I've got this in this dataset.
+
+1387
+01:20:18,670 --> 01:20:22,710
+这样可以在playground里给你演示一下我们是如何回放这个失败场景的
+So just to kind of give you a player scene where we will replay the failure.
+
+1388
+01:20:23,290 --> 01:20:26,110
+我们希望针对这个做一次特定的评估
+We want a specific evaluation against this.
+
+1389
+01:20:26,450 --> 01:20:27,690
+我们打算收紧这个提示词
+We're going to tighten the prompt,
+
+1390
+01:20:28,550 --> 01:20:30,670
+再运行一次看看效果如何
+run it again and see what that looks like.
+
+1391
+01:20:30,790 --> 01:20:34,130
+我们可能不只想在某一个特定测试用例上这么做
+We probably want to do this against not just one particular test case,
+
+1392
+01:20:34,550 --> 01:20:36,690
+而是想在我们所有测试用例上都这么做
+but across our entire test cases as well,
+
+1393
+01:20:36,770 --> 01:20:41,810
+这样就能看出它是否按预期工作以及我们是否在其他方面出现了回退
+just to see if it does work as intended and we have regressed on something else from that perspective.
+
+1394
+01:20:45,130 --> 01:20:49,710
+好的 那我们继续 我们为此准备了两个独立分支
+Okay, so let's go ahead and we have two separate branches for this.
+
+1395
+01:20:50,050 --> 01:20:51,310
+所以我会把A分支拆出来
+So I'll split up branches A.
+
+1396
+01:20:51,750 --> 01:20:54,170
+其中一个会重点关注失败率
+One's going to have the failure rate in mind.
+
+1397
+01:20:54,350 --> 01:20:55,690
+我们会到UI里去查看它
+We're going to go to the UI and view that.
+
+1398
+01:20:56,650 --> 01:21:00,010
+然后我们也会讨论那里的修复路径
+And then we're going to talk about the remediation path there as well.
+
+1399
+01:21:01,670 --> 01:21:01,670
+好
+Okay.
+
+1400
+01:21:27,730 --> 01:21:29,530
+那就到这里来
+So just go here.
+
+1401
+01:21:31,470 --> 01:21:33,930
+有这么多产品失败记录
+So many product failures.
+
+1402
+01:21:48,060 --> 01:21:50,660
+那就执行make setup
+So make setup.
+
+1403
+01:22:09,320 --> 01:22:09,840
+好
+Okay.
+
+1404
+01:22:11,160 --> 01:22:13,280
+我们甚至可以做
+So we can even do
+
+1405
+01:22:17,000 --> 01:22:19,620
+运行时操作 也就是运行时模式
+runtime. So runtime mode.
+
+1406
+01:22:24,060 --> 01:22:29,580
+这样会生成一次失败重放
+That will make a replay failure.
+
+1407
+01:22:33,300 --> 01:22:40,320
+好的 我这里有一组五个用例 它们就是这次的回归失败模式
+Okay, so I've got this set of five cases which are the regression failure modes in this case.
+
+1408
+01:22:42,020 --> 01:22:44,720
+所以你在示例工单里看到的第一个
+So that first one that you saw on the example ticket,
+
+1409
+01:22:45,120 --> 01:22:47,860
+在这里是以一个JSON文件的形式存在的
+that's done as a JSON file here.
+
+1410
+01:23:09,110 --> 01:23:10,450
+所以如果我在这里看一下…
+So if I take a look here...
+
+1411
+01:23:16,540 --> 01:23:18,960
+好的 如果我在这里查看这个失败模式
+Okay, so if I take a look at the failure mode here,
+
+1412
+01:23:20,120 --> 01:23:21,200
+我可以进一步深入查看
+I can drill into this.
+
+1413
+01:23:25,570 --> 01:23:27,210
+你也会注意到
+And you'll notice as well,
+
+1414
+01:23:27,650 --> 01:23:29,030
+现在我们已经设置好了在线部分
+now that we set up the online,
+
+1415
+01:23:29,290 --> 01:23:31,770
+包括托管工具以及在线打分
+the managed tools as well as the online scoring,
+
+1416
+01:23:32,330 --> 01:23:37,890
+由于我们是针对
+the trace becomes even more sophisticated in the fact that we're executing this against
+
+1417
+01:23:37,890 --> 01:23:40,050
+安全的Braintrust环境来执行 这个调用链就变得更加复杂精细
+the secure Braintrust environment.
+
+1418
+01:23:40,890 --> 01:23:43,650
+所以我们再次从本地迁移到了托管环境
+So again, moving from local to managed.
+
+1419
+01:24:18,070 --> 01:24:21,030
+我现在要到makefile这里
+I'm just going to go here to the make file.
+
+1420
+01:24:21,430 --> 01:24:23,270
+抱歉 回到JSON这边
+Sorry, back to the JSON.
+
+1421
+01:24:29,680 --> 01:24:30,540
+我们去到…
+Let's go to...
+
+1422
+01:24:42,100 --> 01:24:43,500
+eval scenario
+eval scenario.
+
+1423
+01:24:53,140 --> 01:24:54,540
+eval managed
+eval managed.
+
+1424
+01:24:56,820 --> 01:24:58,160
+这里的scenario
+Scenario here.
+
+1425
+01:25:02,590 --> 01:25:09,670
+调用loading high impact
+Call loading high impact.
+
+1426
+01:25:11,370 --> 01:25:13,010
+我们在这里跑一下评估
+Let's run the evaluation here.
+
+1427
+01:25:14,450 --> 01:25:19,470
+我现在只是针对一个特定场景做评估
+So I'm just doing an evaluation against a specific scenario.
+
+1428
+01:26:01,210 --> 01:26:01,830
+嗯
+Yep,
+
+1429
+01:26:08,210 --> 01:26:13,390
+正如我们所见 随着这个应用和实验的推进
+so as we can see, as we're progressing with the application, the experiment, again,
+
+1430
+01:26:13,430 --> 01:26:16,510
+viewer可以让我们看到变更的进展情况
+viewer just allows us to see the progress of our changes.
+
+1431
+01:26:17,310 --> 01:26:19,030
+你可以看到我们已经运行了最新这一组
+So you can see we've run the latest set.
+
+1432
+01:26:19,430 --> 01:26:20,670
+我们注意到了一些
+We noticed some, you know,
+
+1433
+01:26:20,730 --> 01:26:24,030
+性能下降 这能让我们更好地跟踪这些问题
+degradation here, which just allows us to track it a little bit better.
+
+1434
+01:26:25,650 --> 01:26:28,250
+所以我刚才提到的那个托管数据集
+So the managed data set that I had in mind,
+
+1435
+01:26:29,590 --> 01:26:30,850
+它的失败率已经被记录下来了
+the failure rates are being captured.
+
+1436
+01:26:30,970 --> 01:26:32,230
+你也可以看到
+And you can see, you know,
+
+1437
+01:26:32,270 --> 01:26:37,530
+我可以把它和已有实验进行对比
+I have the ability to compare it against existing experiments to say,
+
+1438
+01:26:37,730 --> 01:26:39,990
+以便跟踪进展 并在可能的地方进行修复
+to track the progress and remediate where possible.
+
+1439
+01:26:48,950 --> 01:26:57,790
+那么 接下来不好意思 我要去看一下readme 然后继续做修复
+So, forgive me, but the next thing is I'm going to go to the readme and then proceed with the remediation.
+
+1440
+01:27:31,500 --> 01:27:33,220
+好的 在这次修复里
+Okay, so in this remediation,
+
+1441
+01:27:33,440 --> 01:27:39,000
+我修改了我使用的提示词
+I've changed the prompt, which I've used.
+
+1442
+01:27:42,380 --> 01:27:48,840
+一种查看方式是看一下这个提示词以及它的改动
+So one way to view that is if I take a look at the prompt and the change.
+
+1443
+01:27:53,440 --> 01:27:54,780
+那我们来看一下
+So, let's see.
+
+1444
+01:27:58,700 --> 01:28:00,780
+你会在那儿看到所有的差异
+So you'll see any differences there.
+
+1445
+01:28:12,700 --> 01:28:13,720
+好
+Okay,
+
+1446
+01:28:19,210 --> 01:28:23,050
+往下翻到这里的readme文件
+come down to the readme file here.
+
+1447
+01:28:28,050 --> 01:28:32,260
+比如说我想
+Let's say I do, I want to say,
+
+1448
+01:28:35,940 --> 01:28:37,760
+在这里说明一下编解码器
+the codecs here.
+
+1449
+01:28:44,720 --> 01:28:46,500
+那我们这样做 我说
+Let's give us this, I say,
+
+1450
+01:28:48,360 --> 01:28:56,610
+运行这个Braintrust命令
+run the run the Braintrust command.
+
+1451
+01:29:07,930 --> 01:29:10,410
+对 我记得有一个特定的标志位
+Yeah, there's a specific flag, I think.
+
+1452
+01:29:10,810 --> 01:29:13,310
+你要不要再核对一下
+I don't know if you want to just double check with that.
+
+1453
+01:29:25,030 --> 01:29:26,170
+对 就是那个
+Yeah, that's it.
+
+1454
+01:29:45,150 --> 01:29:47,010
+所以如果你想把那个
+So if you want to just put that,
+
+1455
+01:29:47,390 --> 01:29:53,270
+if exists, replace 发在聊天里就行
+if exists, replace in the chat, yeah.
+
+1456
+01:30:00,480 --> 01:30:01,640
+嗯 不不 没问题
+Yeah, no, no, it's fine.
+
+1457
+01:30:04,950 --> 01:30:06,530
+所以各位如果你们想的话
+So yeah, just folks, if you want to,
+
+1458
+01:30:07,230 --> 01:30:08,830
+在修复脚本的那一部分
+in the part of the remediation script,
+
+1459
+01:30:09,290 --> 01:30:14,850
+如果你设置环境变量 Braintrust_if_exists，把它设为 replace
+if you set the environment variable Braintrust underscore if underscore exists, you set that to replace,
+
+1460
+01:30:15,510 --> 01:30:19,730
+它就会把更新后的改动推送到环境里
+it's going to push in the updated changes into the environment.
+
+1461
+01:30:28,640 --> 01:30:30,920
+为此跟大家说声抱歉
+So, sorry for that.
+
+1462
+01:30:38,840 --> 01:30:41,700
+好的 然后你也会看到
+Okay, and then you'll see as well,
+
+1463
+01:30:41,960 --> 01:30:44,480
+现在我们已经更新了你代码里的提示词并推送上去
+now that we've updated the prompt for your code and pushed it up,
+
+1464
+01:30:46,780 --> 01:30:48,780
+它在这里同样可以看到
+it's available here as well.
+
+1465
+01:30:57,800 --> 01:30:59,400
+同样在UI里
+So as well in the UI,
+
+1466
+01:31:00,180 --> 01:31:01,220
+作为运维的一部分
+again, part of the operation,
+
+1467
+01:31:02,100 --> 01:31:03,940
+在运营化过程中 我们可以看到
+operationalization, we can see,
+
+1468
+01:31:03,960 --> 01:31:05,160
+谁改了什么
+you know, who's changed what,
+
+1469
+01:31:05,220 --> 01:31:07,920
+以及那个特定提示词究竟被改成了什么
+but actually what has been changed to that particular prompt,
+
+1470
+01:31:08,280 --> 01:31:10,240
+就像这个例子里这样
+as in this case.
+
+1471
+01:31:13,790 --> 01:31:15,510
+看一下这里 比如包含工具事实
+Take a look here, so including tool facts,
+
+1472
+01:31:16,890 --> 01:31:17,530
+把它打印出来
+print that out.
+
+1473
+01:31:18,870 --> 01:31:21,490
+好 那回到这里
+Okay, so coming back to here,
+
+1474
+01:31:22,990 --> 01:31:24,490
+假设我们没有做一个…
+let's say we didn't do a...
+
+1475
+01:31:30,790 --> 01:31:32,330
+再次运行这个评估
+run this evaluation again.
+
+1476
+01:31:34,910 --> 01:31:36,690
+我们已经对提示词做了修改
+So we made the change to the prompt.
+
+1477
+01:31:37,450 --> 01:31:43,010
+现在我们运行修复后的版本 看看它的表现如何
+And now we're running the remediated version to see how that performs.
+
+1478
+01:32:05,500 --> 01:32:09,700
+很好 那这大致就是带着这些新改动的实验部分
+Perfect, okay, so that's around the experiment here with the new changes, hopefully.
+
+1479
+01:32:11,100 --> 01:32:13,440
+接下来我会切换到UI
+And I'll pivot into the UI,
+
+1480
+01:32:13,580 --> 01:32:14,740
+我要到这里的experiments页面
+I'm going to go to experiments here.
+
+1481
+01:32:17,300 --> 01:32:18,740
+虽然变化很小
+And it's barely there,
+
+1482
+01:32:18,780 --> 01:32:19,520
+但你还是能看到
+but you can just see,
+
+1483
+01:32:19,620 --> 01:32:20,920
+曲线有点往回拉升
+you know, kind of tape it back up,
+
+1484
+01:32:21,080 --> 01:32:23,440
+只要是往上走的提升都是提升
+just, you know, any improvement going up is an improvement.
+
+1485
+01:32:24,000 --> 01:32:25,980
+不过 主要是想让你们了解一下
+But yeah, just to give you an idea here that,
+
+1486
+01:32:26,860 --> 01:32:29,140
+也就是在我们完成评估之后
+you know, now that we've done the evaluation,
+
+1487
+01:32:29,800 --> 01:32:33,120
+实际上，我可以做的是做一次差异对比
+actually, what I can do is do a diff.
+
+1488
+01:32:39,680 --> 01:32:43,220
+然后我们可以在这个差异中做一次比较
+And we can do a comparison in the delta.
+
+1489
+01:32:51,420 --> 01:32:54,140
+所以是的，那些问题随着时间推移已经浮现并得到改进
+So yeah, that's come up and improved over time,
+
+1490
+01:32:56,940 --> 01:33:00,220
+这正是我们期望的结果
+which were the intended outcome.
+
+1491
+01:33:07,840 --> 01:33:12,080
+我想我们已经接近内容的尾声了
+So I think we're approaching the end of the content.
+
+1492
+01:33:13,360 --> 01:33:16,100
+我知道这中间经历了不少步骤
+So I know it's been a number of steps.
+
+1493
+01:33:16,300 --> 01:33:19,780
+所以我非常感谢你们花时间和精力一路跟着走完这些内容
+So I really want to thank you for your time and attention to kind of walk through that.
+
+1494
+01:33:20,080 --> 01:33:22,120
+如前所述，这些产出物都是公开的
+As mentioned, the artifacts are public.
+
+1495
+01:33:22,800 --> 01:33:23,900
+我们准备了速查表
+We've got the cheat sheet there,
+
+1496
+01:33:23,980 --> 01:33:26,120
+我们也有Slack频道，如果你有任何问题可以在那里获得帮助
+we've got the Slack channel to help if you have any questions.
+
+1497
+01:33:26,500 --> 01:33:31,500
+下面我想按顺序给你们简单总结一下今天完成了什么
+But hopefully just to give you a summary of what you've accomplished today in this order,
+
+1498
+01:33:31,500 --> 01:33:37,800
+你们从一个单轮提示词出发，构建了一个包含五个阶段的智能体式AI
+is you went from taking a single-shot prompt into building a five-stage AI-agentic
+
+1499
+01:33:37,800 --> 01:33:39,920
+使用工具调用的工作流
+workflow using tool calls.
+
+1500
+01:33:40,260 --> 01:33:43,780
+接着我们就可以检查这个东西是如何运行的
+What we're able to then do is then inspect how this works,
+
+1501
+01:33:44,180 --> 01:33:47,600
+基本上是通过加入Braintrust追踪，间歇性地深入了解它
+pretty much intermittent diving into this by adding Braintrust tracing,
+
+1502
+01:33:48,260 --> 01:33:49,680
+确保一切都被记录下来
+making sure everything is recorded.
+
+1503
+01:33:50,860 --> 01:33:52,080
+我们还想讨论
+We also then want to talk about,
+
+1504
+01:33:52,140 --> 01:33:54,460
+比如说，我们要如何从一个
+you know, how do we then evaluate the system from a,
+
+1505
+01:33:55,480 --> 01:33:56,420
+在它还没上线时
+you know, when it's not online,
+
+1506
+01:33:56,700 --> 01:33:57,400
+当它还是一个新东西时
+when it's something new,
+
+1507
+01:33:57,900 --> 01:34:00,980
+利用这些测试用例有效地创建黄金数据集
+creating those effectively golden set with those test cases,
+
+1508
+01:34:00,980 --> 01:34:02,940
+也就是我们希望用来执行评估的那些用例
+which we want to execute against.
+
+1509
+01:34:03,660 --> 01:34:07,120
+然后我们把那些托管的提示词
+We then deployed those managed prompts,
+
+1510
+01:34:07,240 --> 01:34:11,860
+以及相关工具和参数部署到Braintrust的安全架构中以便使用
+those tools and parameters into the Braintrust secure architecture to be able to use.
+
+1511
+01:34:11,940 --> 01:34:15,780
+我们还加入了在线评分，用来在系统运行过程中进行评估
+And we've also added online scoring to then evaluate the system as it unfolds.
+
+1512
+01:34:16,520 --> 01:34:20,000
+接着我们选取了一个特定的生产环境故障
+And then we picked a particular production failure.
+
+1513
+01:34:20,360 --> 01:34:21,380
+我们查看了追踪记录
+We looked at the trace,
+
+1514
+01:34:22,080 --> 01:34:24,580
+在我们的案例中，我们修改了提示词
+we modified the prompt in our case,
+
+1515
+01:34:24,720 --> 01:34:25,680
+然后我们看到了其中的差异
+and we saw the delta there.
+
+1516
+01:34:26,300 --> 01:34:27,620
+再次运行评估之后
+And running the evaluation again,
+
+1517
+01:34:27,700 --> 01:34:30,880
+我们看到它又回到了应有的表现水平
+we saw it achieve back up to where it needed to be.
+
+1518
+01:34:30,980 --> 01:34:34,420
+在这个例子中，你们完成了对所构建系统的完整评估
+In this case, completing the full evaluation of your building,
+
+1519
+01:34:34,560 --> 01:34:36,280
+对它进行观测、部署
+observing it, deploying it,
+
+1520
+01:34:36,440 --> 01:34:37,840
+并在此基础上为后续工作做好记录和总结
+and taking note of that moving forward.
+
+1521
+01:34:40,700 --> 01:34:44,300
+所以，是的，就算是把整个过程收个尾并带回到你们的实践中
+So yeah, just to kind of call it and bring it home.
+
+1522
+01:34:44,840 --> 01:34:46,420
+再说一次，希望这对你们来说并不陌生
+So again, hopefully this is not uncommon,
+
+1523
+01:34:46,740 --> 01:34:50,240
+但同样地，在生产环境中有效的东西往往并不适用于原型阶段
+but again, what might work in production is not really going to work in prototype.
+
+1524
+01:34:51,040 --> 01:34:52,980
+我们确实需要把问题拆解开来
+We really need to break this down,
+
+1525
+01:34:53,440 --> 01:34:55,920
+识别失败模式，然后再继续推进
+identify the failure modes and move forward.
+
+1526
+01:34:56,000 --> 01:34:56,620
+这也正是为什么
+And that's where, again,
+
+1527
+01:34:56,760 --> 01:34:59,140
+明确的阶段划分会变得非常非常重要
+explicit stages become really, really important, right?
+
+1528
+01:34:59,140 --> 01:35:05,060
+当然，这确实会引入更多可能出错的环节
+And again, this does introduce more areas of where things could go wrong,
+
+1529
+01:35:05,180 --> 01:35:07,080
+但在这种情况下，调试会更容易
+but it's easier to debug if that's the case.
+
+1530
+01:35:08,160 --> 01:35:12,700
+同样，没有什么能替代亲自深入代码并对一切进行追踪
+Again, there's no substitute for diving into the code and tracking everything.
+
+1531
+01:35:12,960 --> 01:35:16,320
+所以我会说，在这一点上，可观测性已经是入场门槛
+So I would say it's observability's stable stakes at this point.
+
+1532
+01:35:16,400 --> 01:35:19,040
+如果你有一个生产环境的应用却没有对它做追踪
+If you've got a production application and you're not tracing it,
+
+1533
+01:35:19,420 --> 01:35:21,920
+那你就需要回到设计阶段，把这件事在运维层面真正落实
+you need to go back to the drawing board and get that done operational.
+
+1534
+01:35:22,060 --> 01:35:26,520
+我们也希望能再次向你展示如何使用Braintrust来做到这一点
+And hopefully, again, we can show you how to be able to do that using Braintrust.
+
+1535
+01:35:28,600 --> 01:35:30,740
+同样，生产环境日志是不可替代的
+Again, no substitution for production logs,
+
+1536
+01:35:30,920 --> 01:35:33,060
+但至少要从某个点开始往这个方向做起
+but better to start somewhere from that way.
+
+1537
+01:35:33,160 --> 01:35:35,480
+如果你大致知道可能会出现什么问题
+If you have an idea of what an issue might happen,
+
+1538
+01:35:35,600 --> 01:35:37,900
+那这些就是你搭建评估体系的完美切入点
+these are your perfect ways to set up an evaluation.
+
+1539
+01:35:38,240 --> 01:35:41,260
+也就是把这些失败模式当作测试用例来使用
+So using those failure modes as your test cases.
+
+1540
+01:35:42,060 --> 01:35:44,360
+正如我所说，这是一个持续的过程
+And as I mentioned, this is a continuous process, right?
+
+1541
+01:35:44,400 --> 01:35:47,060
+没有什么是彻底完成的，如果你做过敏捷开发
+Nothing's ever done. If you've ever worked in agile development,
+
+1542
+01:35:47,540 --> 01:35:49,240
+你就会知道持续反馈非常重要
+constant feedback is important.
+
+1543
+01:35:49,540 --> 01:35:51,800
+同样，我们正在把这种运维模型带进来
+And again, we're bringing this operation model,
+
+1544
+01:35:52,060 --> 01:35:55,240
+但它运行在一个全新的操作界面和层面之上
+but with a newer surface of operating.
+
+1545
+01:35:57,460 --> 01:36:01,140
+也希望今天能把这些理念真正带回到你们的团队中
+And yeah, just to hopefully bring it home to your teams here today.
+
+1546
+01:36:01,600 --> 01:36:04,480
+所以我想给你们的建议是
+So my encouragement to you is to,
+
+1547
+01:36:04,900 --> 01:36:06,980
+如果你对这些内容感兴趣
+if this is something of interest,
+
+1548
+01:36:07,220 --> 01:36:09,560
+就从一个已经在运行的系统入手
+is pick something that's already operational today.
+
+1549
+01:36:09,760 --> 01:36:11,240
+不需要是整个产品套件
+It doesn't have to be the entire suite.
+
+1550
+01:36:11,800 --> 01:36:14,660
+可以先从某个
+Maybe start off with something that's maybe a bit more,
+
+1551
+01:36:15,680 --> 01:36:17,080
+我想说，更关键的部分开始
+I guess, more critical,
+
+1552
+01:36:17,340 --> 01:36:20,320
+也就是你真正想改进其运维模式的那一块
+that you really want to improve the operational modes,
+
+1553
+01:36:20,900 --> 01:36:24,520
+给它加上追踪，从这个模块中收集边缘案例
+add the tracing, collect your edge cases from that mode,
+
+1554
+01:36:25,420 --> 01:36:26,500
+构建那些确定性的评分指标
+build those deterministic scores,
+
+1555
+01:36:26,680 --> 01:36:28,800
+然后尽可能把所有东西重新拉起来运行
+and then boot everything back as possible.
+
+1556
+01:36:28,980 --> 01:36:30,780
+所以说，你的反馈闭环越快
+So again, the faster feedback loop that you have,
+
+1557
+01:36:31,240 --> 01:36:32,240
+你获得的洞察就越多
+you have more insight,
+
+1558
+01:36:32,360 --> 01:36:33,200
+而且你就越能够
+and the more that you can,
+
+1559
+01:36:33,260 --> 01:36:37,920
+进一步改进整个系统的交付与运维
+again, improve the overall delivery operations of your system.
+
+1560
+01:36:40,740 --> 01:36:42,320
+好的，接下来就是行动号召
+Yep, and just kind of call to action.
+
+1561
+01:36:42,580 --> 01:36:45,180
+我知道我们已经向你们抛出了大量内容
+So again, I know we've thrown a lot of content at you.
+
+1562
+01:36:46,560 --> 01:36:48,080
+我们当然也希望能获得一些反馈
+We're obviously trying to get a bit of feedback.
+
+1563
+01:36:48,160 --> 01:36:49,480
+我们也在尝试把一些机制和规范搭建起来
+We're trying to put some tables in place.
+
+1564
+01:36:49,600 --> 01:36:51,120
+所以我很感谢大家在百忙之中抽身参与
+So I appreciate everyone's kind of juggling.
+
+1565
+01:36:51,640 --> 01:36:52,640
+为了完成这一切所做的配合
+Everything to do this.
+
+1566
+01:36:52,920 --> 01:36:55,820
+但正如我说的，你总得从某个地方开始
+But as I mentioned, you have to start somewhere.
+
+1567
+01:36:55,960 --> 01:36:57,280
+我们只是想帮你们把这个过程加速
+Let's just try to accelerate you.
+
+1568
+01:36:58,040 --> 01:37:00,040
+我们已经提供了一整套文档列表
+We have a list of documentation that's provided.
+
+1569
+01:37:02,000 --> 01:37:07,200
+你也可以使用我们的AI智能体在平台上进行搜索，如果有任何问题
+You can also use our AI agent on the agent to search if you have any questions.
+
+1570
+01:37:07,760 --> 01:37:08,960
+此外我们还提供了一本cookbook
+But we also have a cookbook available.
+
+1571
+01:37:09,120 --> 01:37:11,360
+我通常会把那本cookbook直接丢进
+So I tend to throw that cookbook directly into,
+
+1572
+01:37:11,360 --> 01:37:13,940
+比如Cursor、Codex之类的工具里
+you know, Cursor, Codex,
+
+1573
+01:37:14,020 --> 01:37:14,620
+随便哪一个，然后对它说
+whatever, and say, you know,
+
+1574
+01:37:14,780 --> 01:37:18,620
+基于这份文档，使用SDK开始对我的应用做追踪
+based on this, take the SDK and start tracing my application.
+
+1575
+01:37:19,160 --> 01:37:20,040
+这样做的效果相当不错
+It does it pretty effective.
+
+1576
+01:37:20,680 --> 01:37:27,440
+我们甚至已经为Braintrust应用发布了一个CLI工具
+We even do have, we've actually announced a CLI for our BrainTrust application.
+
+1577
+01:37:27,560 --> 01:37:29,800
+它还能让你做诸如自动埋点之类的事情
+So that allows you to even do things as auto-instrumentation.
+
+1578
+01:37:30,260 --> 01:37:31,500
+我也想顺便为我的同事打个广告
+I'm just going to plug my colleague,
+
+1579
+01:37:31,620 --> 01:37:33,700
+他叫Eric，做了很多非常出色的工作
+Eric, who's doing some fantastic work.
+
+1580
+01:37:33,860 --> 01:37:37,200
+请一定去看看他的展台，真的非常精彩
+And please check out his booth because it's amazing.
+
+1581
+01:37:38,760 --> 01:37:41,940
+同样，如果这些内容对你有吸引力并且你想进一步探索
+And again, if this is something that's interesting to you and you want to explore more,
+
+1582
+01:37:42,020 --> 01:37:44,620
+那就请联系你在Braintrust的客户团队
+then please reach out to your account team at Braintrust.
+
+1583
+01:37:44,720 --> 01:37:47,120
+我们也非常乐意在力所能及的范围内提供支持
+Again, we're happy to support where possible.
+
+1584
+01:37:47,760 --> 01:37:48,820
+如果你在用Discord
+And if you're on Discord,
+
+1585
+01:37:48,980 --> 01:37:50,260
+欢迎随时加入我们的社区
+feel free to join.
+
+1586
+01:37:50,580 --> 01:37:52,880
+我也很乐意在那里回答你的问题
+I'm happy to answer your questions there from that.
+
+1587
+01:37:54,200 --> 01:37:57,740
+嗯，是的，再次真心感谢大家投入的时间、关注和精力
+And yeah, again, really want to thank you for your time, attention, and energy.
+
+1588
+01:37:57,820 --> 01:37:58,660
+我知道今天阳光很好
+I know it's a really sunny day,
+
+1589
+01:37:58,720 --> 01:38:00,140
+我也不想一直把大家困在这里
+and I don't want to keep people in here.
+
+1590
+01:38:00,220 --> 01:38:01,220
+我希望你们能出去呼吸点新鲜空气
+I want you to get some fresh air.
+
+1591
+01:38:01,420 --> 01:38:03,500
+但是呢，我谨代表Braintrust
+But yeah, just on behalf of BrainTrust,
+
+1592
+01:38:03,640 --> 01:38:04,440
+Trainline以及我个人
+train line, and myself,
+
+1593
+01:38:04,680 --> 01:38:07,080
+向大家表示由衷的感谢，感谢你们的时间和关注
+like, thank you so much for your time and attention.
+
+1594
+01:38:07,560 --> 01:38:10,000
+这次相聚非常荣幸，也期待在外面再次见到各位
+It's been an honor and look forward to seeing you out there,
+
+1595
+01:38:10,100 --> 01:38:13,780
+一起在生产环境中落地AI、持续跟踪并收获价值，谢谢大家
+tracing and gaining value from delivering AI in production. Thank you.

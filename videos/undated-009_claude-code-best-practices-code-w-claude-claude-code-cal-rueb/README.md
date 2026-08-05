@@ -1,0 +1,28 @@
+# Claude Code 最佳实践及功能解析|Cal Rueb
+
+## 洞见目录
+
+- B站标题：Claude Code 最佳实践及功能解析|Cal Rueb
+- 原视频标题：Claude Code best practices | Code w/ Claude
+- B站链接：视频链接**: https://www.bilibili.com/video/BV13aR5BFEMJ
+- 原视频链接：https://www.youtube.com/watch?v=gv0WHhKelSE&t=142s
+- 发布时间：发布时间**: 2026-05-02 11:01:43
+- 字幕数量：0
+- 提纲图数量：2
+
+## 字幕下载
+
+暂无中文在上字幕，后续补齐。
+
+## 中文时间轴
+
+见 [timeline.md](timeline.md)。
+
+## 提纲图
+
+- ![提纲图 1](outlines/01.png)
+- ![提纲图 2](outlines/02.png)
+
+## 原始简介
+
+见 [bilibili.md](bilibili.md)。

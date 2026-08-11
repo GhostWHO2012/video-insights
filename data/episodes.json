@@ -1,5 +1,94 @@
 [
   {
+    "title": "如何在 agent 时代做设计",
+    "bilibili_title": "如何在 agent 时代做设计｜Stephen Haney",
+    "original_title": "How To Design In The Agent Era",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=P06RgnUKX_I",
+    "published_at": "发布时间: 2026-08-07",
+    "up": "Y Combinator",
+    "folder_title": "如何在 agent 时代做设计",
+    "slug": "undated-044_how-to-design-in-the-agent-era",
+    "subtitle_count": 1,
+    "outline_count": 6,
+    "path": "videos/undated-044_how-to-design-in-the-agent-era/",
+    "subtitle_file": "How To Design In The Agent Era.OPUS4-8有翻译参考资料版.双语.中文在上.英文术语校正中文小修去多余标点版.srt",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png"
+    ],
+    "cover": "cover.jpeg",
+    "duration": "56:01",
+    "speakers": [
+      "Aaron Epstein",
+      "Stephen Haney"
+    ]
+  },
+  {
+    "title": "现在是 AI 创业最好时机",
+    "bilibili_title": "现在是 AI 创业最好时机｜Alexandr Wang",
+    "original_title": "Alexandr Wang: “This is a Once-in-a-Civilization Opportunity”",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=sJ4VJWycX9M",
+    "published_at": "发布时间: 待补充",
+    "up": "Y Combinator",
+    "folder_title": "现在是 AI 创业最好时机",
+    "slug": "undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity",
+    "subtitle_count": 1,
+    "outline_count": 6,
+    "path": "videos/undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity/",
+    "subtitle_file": "Alexandr Wang： “This is a Once-in-a-Civilization.OPUS4-8有翻译参考资料版.双语.中文在上.final_asr_terms_polished.srt",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png"
+    ],
+    "cover": "cover.jpeg",
+    "duration": "约 30 分钟",
+    "speakers": [
+      "Alexandr Wang",
+      "Garry Tan"
+    ]
+  },
+  {
+    "title": "Claude Code 为什么删掉 80% 系统提示词",
+    "bilibili_title": "Claude Code 为什么删掉 80% 系统提示词｜Boris Cherny",
+    "original_title": "Boris Cherny: We Cut 80% of Claude Code’s Prompt",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=qyPCVqFUyDo",
+    "published_at": "发布时间: 2026-07-27",
+    "up": "Y Combinator",
+    "folder_title": "Claude Code 为什么删掉 80% 系统提示词",
+    "slug": "undated-046_boris-cherny-we-cut-80-of-claude-code-s-prompt",
+    "subtitle_count": 1,
+    "outline_count": 8,
+    "path": "videos/undated-046_boris-cherny-we-cut-80-of-claude-code-s-prompt/",
+    "subtitle_file": "Boris Cherny： We Cut 80% of Claude Code’s Prompt.OPUS4-8有翻译参考资料版.双语.中文在上.final_asr_terms_polished.srt",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png",
+      "07.png",
+      "08.png"
+    ],
+    "cover": "cover.jpeg",
+    "duration": "35:51",
+    "speakers": [
+      "Boris Cherny",
+      "Diana Hu"
+    ]
+  },
+  {
     "title": "为什么说“产品经理岗位本不该存在”",
     "bilibili_title": "为什么说“产品经理岗位本不该存在” | Tom Verrilli（Whatnot首席产品官）",
     "original_title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",

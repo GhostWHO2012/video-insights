@@ -1,0 +1,5874 @@
+1
+00:00:00,050 --> 00:00:01,210
+agents 可以让你更快。
+The agents can speed you up.
+
+2
+00:00:01,370 --> 00:00:02,829
+它们能帮你省下很多工作，
+They can save you a lot of work,
+
+3
+00:00:02,829 --> 00:00:05,690
+还能帮你做翻译或调整尺寸这类任务。
+and they can do tasks like translation or resizing for you.
+
+4
+00:00:06,130 --> 00:00:09,850
+但我们非常看重设计中人的因素，以及它有多重要。
+But we're big believers in the human element of design and how important that is.
+
+5
+00:00:09,850 --> 00:00:12,810
+所以我们想做一个工具，让人能和 agents 一起飞快地工作。
+And so we're trying to create a tool that lets humans work really fast with agents.
+
+6
+00:00:13,050 --> 00:00:15,930
+直接用 Claude 生成出来的设计，可能很有诱惑力。
+It's probably very tempting to use whatever Claude design spits out.
+
+7
+00:00:16,050 --> 00:00:17,829
+但我不觉得那能让你脱颖而出。
+I don't think it helps you stand out from the crowd.
+
+8
+00:00:17,829 --> 00:00:19,650
+所以我认为设计是一个很好的差异化因素。
+And so I think design is this great differentiator.
+
+9
+00:00:19,810 --> 00:00:22,640
+如果你看过去十年、二十年里每一家伟大的公司，
+And if you look at every great company of the last 10, 20 years,
+
+10
+00:00:22,640 --> 00:00:24,860
+基本上它们都有出色的设计。
+basically all of them have exceptional design.
+
+11
+00:00:25,020 --> 00:00:27,507
+所以我认为如果你想成为那些真正伟大的公司之一，
+And so I think if you want to be one of those really great companies,
+
+12
+00:00:27,507 --> 00:00:30,220
+你就必须在设计上用心，确保自己脱颖而出。
+you have to put the care in on design and, and make sure that you stand out.
+
+13
+00:00:37,980 --> 00:00:42,341
+今天我很高兴欢迎 Stephen Haney（斯蒂芬·哈尼），Paper 的创始人，
+Today, I'm excited to welcome Stephen Haney, the founder of Paper,
+
+14
+00:00:42,341 --> 00:00:46,940
+一款正在席卷设计界的 AI 原生设计工具。
+an AI native design tool that's been taking the design world by storm.
+
+15
+00:00:47,500 --> 00:00:50,938
+我们在 YC 已经大量使用 Paper 来做所有设计工作，
+We're already using paper a ton here at YC for all of the design work
+
+16
+00:00:50,938 --> 00:00:52,500
+就是我们内部在做的那些设计。
+that we're doing internally.
+
+17
+00:00:52,780 --> 00:00:56,980
+我很期待他向大家展示这个产品是怎么用的。
+And I'm excited for him to show off how the product works to everybody out there.
+
+18
+00:00:57,220 --> 00:01:00,140
+所以 Stephen，非常感谢你来。是的，我很荣幸能来。
+So Stephen, thank you so much for joining. Yeah, I'm honored to be here.
+
+19
+00:01:00,180 --> 00:01:03,860
+我看过很多期节目，所以能上节目真的很棒。
+I've watched the show a lot and so it's really nice to be to be on.
+
+20
+00:01:03,860 --> 00:01:07,768
+谢谢你邀请我。也许先从头说起，告诉大家 Paper 是什么？好的，
+Thank you for having me. Maybe to start, tell people what is paper? Yeah, well,
+
+21
+00:01:07,768 --> 00:01:08,910
+Paper 是一款设计工具。
+paper is a design tool.
+
+22
+00:01:09,310 --> 00:01:11,079
+它是一款 agent 原生的设计工具。
+It's an agent native design tool.
+
+23
+00:01:11,079 --> 00:01:14,870
+意思是我们用 HTML 和 CSS 作为真正的渲染引擎。
+And what that means is we use HTML and CSS as the actual rendering engine.
+
+24
+00:01:15,350 --> 00:01:19,010
+这让 agents 非常容易使用，因为它们很懂 HTML
+And that makes it very easy for agents to use because they understand HTML
+
+25
+00:01:19,010 --> 00:01:20,030
+和 CSS。
+and CSS really well.
+
+26
+00:01:20,470 --> 00:01:24,171
+而在以往，很多设计工具都有自定义的渲染引擎，
+And historically, a lot of design tools have custom rendering engines
+
+27
+00:01:24,171 --> 00:01:26,430
+那些对 agents 来说要难用得多。
+and those are a lot harder for agents to use.
+
+28
+00:01:26,550 --> 00:01:29,870
+于是你会看到更高的 token 消耗、更慢的速度、更低的准确率。
+And so you'll see higher token spend, slower times, lower accuracy.
+
+29
+00:01:30,410 --> 00:01:33,290
+所以我们用 Paper 打造的，本质上是让人与 agents 协作
+So what we're building with paper is basically it's a group of people.
+
+30
+00:01:33,370 --> 00:01:35,930
+我们现在大概有 12 个人，都是设计师和工程师。
+There's about 12 of us now, all designers and engineers.
+
+31
+00:01:36,370 --> 00:01:38,597
+我们做这件事基本上就是出于对设计的热爱，
+We basically started this out of love for design,
+
+32
+00:01:38,597 --> 00:01:42,290
+现在我们只是想为下一个时代打造最好的设计工具。
+and now we're just trying to build the best design tool possible for this next era.
+
+33
+00:01:42,570 --> 00:01:42,770
+是的。
+Yeah.
+
+34
+00:01:42,810 --> 00:01:44,785
+想到你们只有 12 个人真是不可思议，
+It's crazy to think you're only 12 people
+
+35
+00:01:44,785 --> 00:01:48,039
+因为我总是从每个用你们的人那里听到你们，
+because I hear about you all the time from everybody who's using you
+
+36
+00:01:48,039 --> 00:01:51,641
+尤其是那么多创始人正在挑选设计工具，
+and especially from so many founders that are just picking the design tool
+
+37
+00:01:51,641 --> 00:01:54,314
+一个他们想要用来构建、天天泡在里面的工具，
+that they want to build and live in all the time and doing
+
+38
+00:01:54,314 --> 00:01:58,090
+从一开始就这样，他们自己就是 AI 原生的。他们在寻找的，
+that from the ground floor, being AI native themselves. They're looking for.
+
+39
+00:01:58,090 --> 00:02:00,730
+就是那款最好用的 AI 原生工具。
+The AI native tool that is going to work best.
+
+40
+00:02:00,770 --> 00:02:03,680
+所以也许聊聊你做 Paper 的灵感来自哪里，
+So maybe talk about what was your inspiration for building paper
+
+41
+00:02:03,680 --> 00:02:07,290
+以及为什么现有的一些工具对你来说不够好？
+and why were some of the existing tools that are out there not good enough for you?
+
+42
+00:02:07,530 --> 00:02:09,170
+它真的是源于对设计的热爱。
+It really was born from a love of design.
+
+43
+00:02:09,570 --> 00:02:11,919
+就像我说的，我一开始是个单人创始人，
+As I said, this was a, I started as a solo founder
+
+44
+00:02:11,919 --> 00:02:15,050
+它其实就是个一直做下去的副业项目。
+and it was really the side project that just kind of kept going.
+
+45
+00:02:15,370 --> 00:02:18,130
+有几个月我一直在想，会有人在意 Paper 吗？
+I had months where I was like, is anyone gonna care about paper?
+
+46
+00:02:18,170 --> 00:02:20,290
+然后就是，哦，是的，大家确实在意。你知道，这很棒。
+And then it was like, oh, yeah, people do care. You know, this is great.
+
+47
+00:02:20,330 --> 00:02:22,490
+它真的火起来了。这本来就是我无论如何都会去做的事。
+It's really taking off. It was the thing I was gonna do anyway.
+
+48
+00:02:22,610 --> 00:02:24,479
+这非常是我无论如何都会去做的事，
+It was very much the thing I was gonna do anyway,
+
+49
+00:02:24,479 --> 00:02:26,970
+而我真心相信，创业就该这样。
+which I really believe starting a startup, you should do that.
+
+50
+00:02:27,090 --> 00:02:28,542
+你就该去做那件你无论如何都会去做的事。
+You should do the thing you're gonna do anyway.
+
+51
+00:02:28,542 --> 00:02:30,330
+你就该做那件你有 founder-market fit 的事。
+You should do the thing where you have founder market fit.
+
+52
+00:02:30,770 --> 00:02:33,319
+对我来说，这就是我 founder-market fit 最强的地方，
+And for me, this is where I had the strongest founder market fit
+
+53
+00:02:33,319 --> 00:02:35,770
+因为我热爱为创意专业人士打造工具。
+because I love building tools for creative professionals.
+
+54
+00:02:36,250 --> 00:02:38,299
+这是我每天醒来都会喜欢做的事，
+It's something I'm gonna wake up every day and like,
+
+55
+00:02:38,299 --> 00:02:40,490
+做创意工具，我不会有难熬的一天。
+I'm not gonna have a bad day building creative tooling.
+
+56
+00:02:40,970 --> 00:02:44,378
+所以这一点最先出现，甚至在市场、竞争对手之类的
+So that came first, even before the market or competitors or any of
+
+57
+00:02:44,378 --> 00:02:45,370
+任何东西之前。
+that kind of thing.
+
+58
+00:02:45,450 --> 00:02:47,943
+然后环顾四周，就是，天哪，我是说，你知道，
+And then looking around, it was like, well, gosh, I mean, you know,
+
+59
+00:02:47,943 --> 00:02:48,850
+我们非常喜欢 Figma。
+we're big fans of Figma.
+
+60
+00:02:48,850 --> 00:02:51,335
+如今谈设计几乎离不开提到 Figma，
+You almost can't talk about design without saying, you know, Figma these days,
+
+61
+00:02:51,335 --> 00:02:52,690
+他们为设计行业做了很多贡献。
+they've done a lot for the design industry.
+
+62
+00:02:53,490 --> 00:02:55,209
+他们现在是一家很大的公司，
+They're, they're have a huge company now and they're,
+
+63
+00:02:55,209 --> 00:02:56,890
+在企业客户市场做得非常好。
+they're doing very well with enterprise companies.
+
+64
+00:02:57,250 --> 00:03:00,280
+我们就在想，也许是时候来一款新工具，专注于设计
+And we were thinking, well, maybe there's time for a new tool to focus on the Design
+
+65
+00:03:00,280 --> 00:03:01,840
+真正在这上面投入大量时间。
+Finder and just really spend a lot of time.
+
+66
+00:03:01,880 --> 00:03:04,280
+AI 和 agent 带来了巨大的变化。
+There's so much change with AI, with agents.
+
+67
+00:03:04,920 --> 00:03:07,014
+我们能不能做一款 agent 原生的工具，
+Can we build something that's agent native,
+
+68
+00:03:07,014 --> 00:03:10,240
+基于 HTML 和 CSS，打造这样一款下一代工具。
+building on HTML and CSS and just build this, you know, next gen tool.
+
+69
+00:03:10,280 --> 00:03:12,880
+这就是我们的目标，目前进展不错。
+And so that's kind of what we're going after. And so far, so good.
+
+70
+00:03:13,000 --> 00:03:17,520
+那么，AI 原生、agent 原生的设计工具到底意味着什么？
+Yeah. And what does that mean to be an AI native agent, native design tool?
+
+71
+00:03:17,880 --> 00:03:19,720
+关键在于底层技术。
+It's really about the fundamental technology.
+
+72
+00:03:20,480 --> 00:03:22,922
+用 HTML 和 CSS 作为渲染引擎，
+So using HTML and CSS as the rendering engine,
+
+73
+00:03:22,922 --> 00:03:26,200
+我们这么做其实是为了改善设计师和开发者之间的交接。
+we actually did it to help with designer, developer handoff.
+
+74
+00:03:26,320 --> 00:03:29,858
+我们想，如果设计师能有一个没有约束的系统，
+We were like, hey, if the designer can have this constraint free system where they,
+
+75
+00:03:29,858 --> 00:03:32,320
+用起来像 Figma 或 Sketch，但底层其实是 HTML。
+it feels like a figma or a sketch, but by the way, it's HTML.
+
+76
+00:03:32,520 --> 00:03:35,240
+他们不需要知道这一点，这很好，交接也会更顺畅。
+They don't have to know that. That's great. The handoff will be better.
+
+77
+00:03:35,800 --> 00:03:38,103
+结果发现，如果你为人类做好了交接，
+Uh, it turns out if you build a great handoff for humans,
+
+78
+00:03:38,103 --> 00:03:41,308
+你也为 agent 做好了交接，因为 agent 懂 HTML
+you've also built a great handoff for agents because agents understand HTML
+
+79
+00:03:41,308 --> 00:03:42,960
+和 CSS，这些都在它们的训练数据里。
+and CSS and it's in their training data.
+
+80
+00:03:43,540 --> 00:03:46,112
+所以当你让 agent 处理一个 Paper 文件时，
+And so when you ask an agent to work with a paper file,
+
+81
+00:03:46,112 --> 00:03:50,180
+它其实就是在读取 CSS，agent 完全知道该怎么处理。
+it's literally just reading the CSS out and agents know exactly what to do with it.
+
+82
+00:03:50,460 --> 00:03:54,550
+你基本上是在用一个可视化界面来扩展 agent，我觉得有时候
+You try to basically extend the agent with a visual interface is sometimes I think
+
+83
+00:03:54,550 --> 00:03:58,340
+Paper 是一款设计工具，但它同时也是 agent 的可视化界面。
+your paper is a design tool, but it's also this visual interface for agents.
+
+84
+00:03:59,020 --> 00:04:01,894
+我们看到销售、工程师，各种各样的人都在用它，
+We see sales folks, engineers, all kinds of people are using it
+
+85
+00:04:01,894 --> 00:04:05,100
+因为对 agent 来说，prompt 并不总是最好的输入方式。
+because prompting isn't always the best input mechanism for agents.
+
+86
+00:04:05,300 --> 00:04:08,637
+有时候你想拖拽、想画，直接操作反而更快，
+Sometimes you want to drag and draw and it's just faster to be able to do, uh,
+
+87
+00:04:08,637 --> 00:04:09,660
+也就是直接操控。
+direct manipulation.
+
+88
+00:04:09,980 --> 00:04:14,615
+这很有意思，因为构建软件变得越来越容易，
+Yeah, it's interesting because as it becomes easier and easier to build software,
+
+89
+00:04:14,615 --> 00:04:18,780
+而想清楚要做什么、从哪获取灵感，
+the figuring out what to build and getting inspiration for how to build it.
+
+90
+00:04:19,020 --> 00:04:21,204
+似乎成了现在最棘手的环节之一，
+Yeah, seems to be one of the trickiest pieces right now
+
+91
+00:04:21,204 --> 00:04:22,660
+也是最大的瓶颈之一。
+and one of the biggest bottlenecks.
+
+92
+00:04:23,020 --> 00:04:25,321
+你怎么看用 Paper 来解决
+How do you think about using paper to be able to solve
+
+93
+00:04:25,321 --> 00:04:26,980
+创意工作流中的这个环节？
+that piece of the creative workflow?
+
+94
+00:04:27,380 --> 00:04:31,760
+我们看到现在软件的产出比以往任何时候都多，工程团队推进得非常快。
+We see there's more software than ever being created and engineer teams are moving so fast now.
+
+95
+00:04:32,320 --> 00:04:33,933
+我不知道你怎么想，
+And I don't know how you feel about this,
+
+96
+00:04:33,933 --> 00:04:36,720
+但我并没觉得软件因此就一定变好了。
+but I haven't felt like the software is getting better necessarily.
+
+97
+00:04:37,160 --> 00:04:40,400
+过去半年里，我没遇到过一个让我惊艳的软件体验。
+I haven't had a great software experience in the last six months. Blew me away.
+
+98
+00:04:40,760 --> 00:04:43,440
+所以这对我们很重要，我从小就是软件的粉丝。
+And so it's important for us, like, I grew up, I'm, like, a fan of software.
+
+99
+00:04:43,560 --> 00:04:44,960
+我热爱打造优秀的软件。
+Like, I love building great software.
+
+100
+00:04:45,480 --> 00:04:48,040
+你能给我的最高赞美，就是说 Paper 是一款非常出色的软件。
+The best compliment you can give me is that paper is really great software.
+
+101
+00:04:48,320 --> 00:04:50,000
+我希望世界上能有更多这样的软件。
+And so I want more of that for the world.
+
+102
+00:04:50,080 --> 00:04:53,104
+所以我想帮助设计师和有品味的人跟上节奏，
+And so I want to help designers and people with taste keep up, you know,
+
+103
+00:04:53,104 --> 00:04:55,190
+跟上这么多正在被创造出来的软件。
+with all of this software that's being created.
+
+104
+00:04:55,990 --> 00:04:58,370
+给他们一个工具，能以
+And so giving them a tool that can move at the speed of,
+
+105
+00:04:58,370 --> 00:05:00,209
+prompt 和 agent 的速度运转，
+of prompting and of the agents, you know,
+
+106
+00:05:00,209 --> 00:05:03,779
+而不是被硬拽进 IDE，或者只是拉去做原型，
+rather than being like just pulled into an IDE or just pulled into prototyping,
+
+107
+00:05:03,779 --> 00:05:06,430
+而是仍然能做传统的设计工作，
+but being able to still do the traditional design work at a.
+
+108
+00:05:06,550 --> 00:05:07,190
+而且是以更快的节奏。
+At a faster pace.
+
+109
+00:05:07,790 --> 00:05:09,910
+我觉得这真的非常重要。我很想看个演示。
+I think it's really, really important. I'd love to see a demo.
+
+110
+00:05:09,990 --> 00:05:12,070
+能给我们看看它是怎么用的吗？好，我们直接开始。
+Can you show us how it works? Yeah, let's jump in.
+
+111
+00:05:12,150 --> 00:05:15,950
+如果你用过画布类工具，这个界面会非常熟悉。
+So it's a very familiar interface if you've used, you know, canvas tools.
+
+112
+00:05:16,950 --> 00:05:18,710
+有时候我喜欢先从视觉的东西入手。
+Sometimes I like to start with the visual things.
+
+113
+00:05:19,550 --> 00:05:22,989
+因为我们基本上是用浏览器来渲染，
+So because we are using basically the browser to render,
+
+114
+00:05:22,989 --> 00:05:25,550
+所以我们也能很轻松地渲染 shader。
+we can also render shaders really easily.
+
+115
+00:05:26,030 --> 00:05:32,150
+shader 基本上就是我们做的 WebGL 动画。
+And shaders are basically WebGL animations that we build.
+
+116
+00:05:32,710 --> 00:05:36,390
+这个叫 Paper Shaders，是我们做的一个库，完全开源。
+This is called Paper Shaders. It's a library we put together, fully open source.
+
+117
+00:05:37,110 --> 00:05:38,630
+你可以随便拿去用，做什么都行。
+Feel free to use it for whatever you want to do.
+
+118
+00:05:39,310 --> 00:05:40,484
+这些 shader 真的很好玩。
+And the shaders are just so fun.
+
+119
+00:05:40,484 --> 00:05:43,510
+品牌设计师特别喜欢它们，因为你能做出各种不同的效果。
+And brand designers love these because you can get all kinds of different looks.
+
+120
+00:05:43,550 --> 00:05:45,510
+这只是同一个 shader 换了不同的设置。
+This is just one shader with different settings.
+
+121
+00:05:46,790 --> 00:05:47,910
+所以你能做各种各样的事情。
+And so you can do all kinds of stuff.
+
+122
+00:05:47,910 --> 00:05:50,510
+我知道你们在 YC 一直在用，我们也一直在用这些。
+I know at YC you guys have been using, we've been using these all the time.
+
+123
+00:05:51,430 --> 00:05:55,313
+我觉得，对我们来说，我猜对很多人来说也是，
+And I think, you know, for us, and I imagine a lot of people out there,
+
+124
+00:05:55,313 --> 00:05:58,710
+这可能是他们第一次接触 Paper。
+this is probably their first introduction to using paper.
+
+125
+00:05:59,270 --> 00:06:03,111
+这东西感觉非常现代、非常前沿，
+This is something that it feels very modern, cutting edge,
+
+126
+00:06:03,111 --> 00:06:06,560
+一年前想做到这个还很难。
+that would've been really difficult to do a year ago.
+
+127
+00:06:07,320 --> 00:06:09,343
+而你们把它做得非常简单，
+And then you guys have made this really simple
+
+128
+00:06:09,343 --> 00:06:12,483
+而且原生集成到产品里，以至于它现在到处都能看到，
+and native to the product to the point where it's showing up everywhere
+
+129
+00:06:12,483 --> 00:06:14,240
+因为现在做起来太容易了，对吧？
+because it's so easy to do it now, right?
+
+130
+00:06:14,400 --> 00:06:18,480
+这也是我们的期望之一：能不能让设计师更容易上手这个？
+That was part of our hope was can we can we make this more accessible to designers?
+
+131
+00:06:18,840 --> 00:06:20,851
+因为如果你是设计师，
+Because if you're a designer and you're, you know,
+
+132
+00:06:20,851 --> 00:06:24,010
+整天在传统设计工具里工作，你想做一个 shader 效果。
+living in a traditional design tool all day, you want to create a shader effect.
+
+133
+00:06:24,130 --> 00:06:26,850
+你想描述一个 AI 加载状态是怎么运作的。
+You want to describe how an AI loading state is working.
+
+134
+00:06:27,530 --> 00:06:30,067
+我一直听到的就是：我需要给 AI 做加载状态，
+And that's what I kept hearing was I need to make loading states for AI
+
+135
+00:06:30,067 --> 00:06:30,690
+我该怎么做？
+and how do I do it?
+
+136
+00:06:30,690 --> 00:06:33,085
+所以我们就想，给大家提供这些会很不错，
+And so we just thought it'd be nice to give people these,
+
+137
+00:06:33,085 --> 00:06:35,792
+这些可以自定义的动画效果，
+these animated effects that they can customize and, you know,
+
+138
+00:06:35,792 --> 00:06:37,302
+不只是用开箱即用的那些，
+not just use the out of the box ones,
+
+139
+00:06:37,302 --> 00:06:41,050
+你可以进来调整，把它们变成自己的东西。
+but you can get in here and like tweak things and make them make them your own and you can.
+
+140
+00:06:41,250 --> 00:06:42,250
+你能做各种很酷的东西。
+You can do all kinds of cool stuff.
+
+141
+00:06:42,610 --> 00:06:47,320
+当然你可以用混合模式来做出各种组合，
+You can do blending modes, of course, to like create combinations and you can also,
+
+142
+00:06:47,320 --> 00:06:51,210
+这些比较细腻的效果一直很受欢迎。
+these have been really popular is some of these more subtle effects.
+
+143
+00:06:51,410 --> 00:06:55,890
+这是半调网点，你可以把别的东西拉进这个效果里。
+This is a halftone dots and you can pull other things into the effect.
+
+144
+00:06:56,010 --> 00:07:00,090
+这里就是把我们所说的 neuro noise 拉进半调网点里。
+So this is pulling the this what we call neuro noise into the halftone dots.
+
+145
+00:07:00,130 --> 00:07:02,930
+你可以尝试不同的东西，得到不同的效果。
+And you can try different things and get different effects.
+
+146
+00:07:03,480 --> 00:07:08,712
+我们花了很多时间，我们真的研究了实体纸张，去研究，
+Um, and we spend so much time, we actually studied literal paper to study the, like,
+
+147
+00:07:08,712 --> 00:07:12,200
+那种真实物理效果的随机性。
+the randomness of, you know, actual physical effects.
+
+148
+00:07:12,240 --> 00:07:13,640
+然后我们试着用代码把它模拟出来。
+And we try to model that in code.
+
+149
+00:07:13,880 --> 00:07:17,168
+我觉得这也是我们 shader 库脱颖而出的原因之一，我们
+And so I think that's one of the reasons our shader library stands out is we go to
+
+150
+00:07:17,168 --> 00:07:20,000
+会做到夸张的程度，把它做到尽可能地好。
+ridiculous degrees to make it, to make it as good as we possibly can.
+
+151
+00:07:20,120 --> 00:07:21,800
+所以品牌设计师特别喜欢这个。
+And so brand designers really love this.
+
+152
+00:07:21,840 --> 00:07:24,642
+举个例子，比如这个季度，
+So like, you know, one example is this quarter,
+
+153
+00:07:24,642 --> 00:07:29,600
+不知道你们知不知道那些季度海报，它们真的非常酷。
+I don't know if you guys know the the quarter posters, they are really, really cool.
+
+154
+00:07:30,260 --> 00:07:33,171
+是这个团队做的海报，他们做的，
+Uh, posters that this, this team makes that, uh, they do,
+
+155
+00:07:33,171 --> 00:07:34,905
+我记得是财报之类的，
+I think it's like earning reports
+
+156
+00:07:34,905 --> 00:07:38,125
+他们现在把很多这类东西转到用 Paper 来做，
+and they've transitioned a lot of these to be built in paper now
+
+157
+00:07:38,125 --> 00:07:40,540
+因为他们能做出那种很酷的复古感。
+because they can get this cool retro, you know.
+
+158
+00:07:40,580 --> 00:07:44,020
+那种氛围，而且很快。我很喜欢这个，他们做的东西真的很酷。
+Vibe that and really fast. So I love this. The work they're doing is really cool.
+
+159
+00:07:44,020 --> 00:07:47,188
+我很荣幸他们用 Paper 来实现这些，
+And I'm, I'm like honored that they're using paper to achieve some of these, uh,
+
+160
+00:07:47,188 --> 00:07:48,100
+这些海报。
+some of these posters.
+
+161
+00:07:48,340 --> 00:07:51,060
+是的，真的很酷。我们也用过，我们有 Startup School。
+Yeah, it's really cool. We've used it for, uh, we have Startup School.
+
+162
+00:07:51,140 --> 00:07:53,110
+EV 是 YC 这边的设计负责人，
+And so EV, who leads design here at YC,
+
+163
+00:07:53,110 --> 00:07:57,431
+他其实做了带 YC 品牌的自定义动画 shader，上面还有人们的
+has actually created custom animated shaders with the YC branding with people's
+
+164
+00:07:57,431 --> 00:07:59,655
+名字，那种入场券，
+names on them, tickets that are, you know,
+
+165
+00:07:59,655 --> 00:08:03,531
+当有人被录取时你可以让它动起来、发给他们。
+you can play with and animate when people get accepted and send it to them.
+
+166
+00:08:03,531 --> 00:08:06,390
+对收到的人来说这是很棒的体验。
+And it's a great experience for the person receiving.
+
+167
+00:08:06,390 --> 00:08:09,473
+它感觉很用心、很有意图、很讲究设计，
+It, it feels very thoughtful and intentional and highly designed
+
+168
+00:08:09,473 --> 00:08:13,453
+而且它做出的东西非常适合分享，大家都想分享出去，
+and it's also creates something that's very shareable that people want to share out,
+
+169
+00:08:13,453 --> 00:08:14,910
+这有助于口碑传播。
+which helps to spread the word.
+
+170
+00:08:14,950 --> 00:08:17,652
+而这一切都是因为设计，因为这些 shader，
+Also, all because of the design and because of the shaders,
+
+171
+00:08:17,652 --> 00:08:21,070
+这是提升视觉、让它更特别的一种很快的方式。
+really fast way to elevate the visuals and help it be a little more special.
+
+172
+00:08:21,410 --> 00:08:23,370
+所以 shader 在品牌设计师中非常受欢迎。
+So shaders are very popular with the brand designers.
+
+173
+00:08:23,770 --> 00:08:27,090
+我们还有一个，这算是 Paper 里比较冷门的功能。
+We also do, this is kind of like a lesser known thing to paper.
+
+174
+00:08:27,330 --> 00:08:29,883
+我们其实有一个非常好的图像生成库，
+We actually have a really great image generation library
+
+175
+00:08:29,883 --> 00:08:32,010
+你可以同时用各种模型。
+where you can use all kinds of models all at once.
+
+176
+00:08:32,570 --> 00:08:38,294
+我们就随便做一个「若有所思的人望着月亮」的插画吧，
+And so I don't know, we'll just do a thoughtful man staring at the moon illustration
+
+177
+00:08:38,294 --> 00:08:42,690
+你可以想象用在品牌物料或者你正在做的任何东西上。
+you can imagine for a brand piece or whatever you're working on.
+
+178
+00:08:42,830 --> 00:08:45,057
+这会同时用四个不同的模型，
+And so this will use four different models at once
+
+179
+00:08:45,057 --> 00:08:49,510
+你可以快速探索你所需插画的各种可能性。
+and you can quickly explore the possibility space of whatever kind of illustration you need to do.
+
+180
+00:08:49,710 --> 00:08:52,390
+非常酷。是的，我看到你把它设成了 variety pack 模式。
+That's very cool. Yeah. So I see you have it set to variety pack there.
+
+181
+00:08:52,550 --> 00:08:54,277
+就是那个一次给你 4 个结果的功能吗？
+Is that the thing that gives you the 4 at once?
+
+182
+00:08:54,277 --> 00:08:55,910
+你可以选定某个模型，如果你想的话。
+You can pick a certain model if you want to.
+
+183
+00:08:56,310 --> 00:08:57,670
+它们各有优缺点。
+They all have different strengths and weaknesses.
+
+184
+00:08:58,510 --> 00:09:00,116
+或者你可以用「杂锦包」，
+Or you can do the variety pack and get,
+
+185
+00:09:00,116 --> 00:09:02,550
+我们会轮换里面用的模型，
+we kind of rotate which models are in there just as we new,
+
+186
+00:09:02,550 --> 00:09:04,000
+因为新模型层出不穷。
+new models are always coming out.
+
+187
+00:09:04,000 --> 00:09:06,530
+对。它能让你快速探索，
+Yep. Um, and, and it just lets you quickly explore
+
+188
+00:09:06,530 --> 00:09:08,320
+你还可以给它提供输入。
+and you can provide inputs into it.
+
+189
+00:09:08,400 --> 00:09:10,230
+你可以，我们比如说，
+You can, I, let's like, you know,
+
+190
+00:09:10,230 --> 00:09:13,755
+我把这个 shader 复制成图片，然后你可以把它喂进去，
+I'll copy this shader as a image and then you can feed the image,
+
+191
+00:09:13,755 --> 00:09:17,280
+把这张图喂进去，然后说「请让它更多彩一点」。
+the image into it and, uh, uh, make this more colorful, please.
+
+192
+00:09:17,680 --> 00:09:20,708
+所以你可以把这些结合成各种工作流，
+So you can do all kinds of different workflows combining these, you know,
+
+193
+00:09:20,708 --> 00:09:23,190
+非常非常快地做出很酷的图形。
+things to create really cool graphics really, really fast.
+
+194
+00:09:24,470 --> 00:09:28,081
+同理，你还可以矢量化，可以做提取颜色，效果
+Along the same lines, you can also vectorize you can do this extract colors is
+
+195
+00:09:28,081 --> 00:09:29,830
+特别好，我们来试试这个。
+really well, let's let's do this one.
+
+196
+00:09:30,830 --> 00:09:33,979
+agent 做了个很多彩的东西，我可以提取它的颜色，
+So the agent made a really colorful thing and I can extract the colors
+
+197
+00:09:33,979 --> 00:09:35,470
+它就把颜色都提取出来了。
+and it just pulls out the colors.
+
+198
+00:09:35,510 --> 00:09:40,462
+这样我就能非常快地探索想法，生成新的纹理，
+And so I can explore ideas very rapidly this way and generate new textures,
+
+199
+00:09:40,462 --> 00:09:41,660
+诸如此类。
+things like this.
+
+200
+00:09:41,820 --> 00:09:44,340
+这算是 Paper 的品牌那一面，是图形部分。
+So this is kind of the brand side of paper. This is the graphics.
+
+201
+00:09:44,740 --> 00:09:47,180
+我们发现，所有设计师都需要做品牌素材。
+And what we find is, like, all designers need to make brand assets.
+
+202
+00:09:47,300 --> 00:09:50,534
+他们要做社交媒体帖子之类的东西，
+They need to make, you know, social media posts or whatever it is,
+
+203
+00:09:50,534 --> 00:09:52,810
+这也挺有意思，
+which is interesting also because, you know,
+
+204
+00:09:52,810 --> 00:09:55,865
+我觉得很多人用 Figma、也把它当作产品设计工具，
+I think a lot of people use and think of Figma's product design
+
+205
+00:09:55,865 --> 00:09:58,500
+它当然也能做不少品牌设计的部分。
+and it certainly can do a lot of brand design element.
+
+206
+00:09:58,500 --> 00:09:59,900
+但它一开始并不是那样定位的。
+But didn't start as much that way.
+
+207
+00:09:59,900 --> 00:10:01,829
+看起来你既能做产品设计，
+And it seems like you can do product design
+
+208
+00:10:01,829 --> 00:10:05,300
+又有这些很酷的工具能做很多品牌设计的工作。
+and there's all these really cool tools to do a lot of brand design work, too.
+
+209
+00:10:05,540 --> 00:10:09,107
+对，平面设计，我觉得传统上
+Yes, graphic design, which, which, you know, traditionally I think has been, uh,
+
+210
+00:10:09,107 --> 00:10:10,890
+用很多这类工具做起来更难。
+more difficult with a lot of these tools.
+
+211
+00:10:11,370 --> 00:10:12,890
+是的，这是我们价值观的一部分。
+Yeah, I, it's, it's part of our values.
+
+212
+00:10:13,050 --> 00:10:17,101
+我们两者都喜欢，我觉得产品设计很有意思，
+We love both, you know, and so I think the, the product design is very interesting,
+
+213
+00:10:17,101 --> 00:10:21,450
+但说实话，我们也会一直保留品牌设计和图形部分。
+but we'll always have the, the brand design and the, and the graphics, too, to be honest.
+
+214
+00:10:21,450 --> 00:10:24,279
+我们看待这些 shader 的方式是，我们把它当作
+The way we think about the shaders is, um, we spend our,
+
+215
+00:10:24,279 --> 00:10:25,850
+这是我们的营销预算。
+this is our marketing budget.
+
+216
+00:10:25,930 --> 00:10:28,850
+我们不把它当产品开发，而是当作买广告的替代。
+We don't think of this as product development. We think of it instead of buying ads.
+
+217
+00:10:29,330 --> 00:10:32,602
+与其买广告，不如给世界做个有用的库，把精力和
+Let's make this useful library for the world and spend that effort and
+
+218
+00:10:32,602 --> 00:10:34,690
+钱花在做这个 shader 库上。
+that money on building this shader library.
+
+219
+00:10:34,850 --> 00:10:37,231
+我们因此获得很多关注，效果特别好。同样地，
+And we get a lot of attention. It works really well. Similarly,
+
+220
+00:10:37,231 --> 00:10:38,330
+比如我们开发了一款字体，Paper
+like we develop a font, Paper.
+
+221
+00:10:38,370 --> 00:10:40,250
+Mono 是我们即将发布的新字体，我特别自豪。
+Mono is a new font that we're launching. I'm really proud of.
+
+222
+00:10:40,250 --> 00:10:41,210
+它真的非常好。
+It's really, really good.
+
+223
+00:10:41,850 --> 00:10:45,326
+我们发现没有一款等宽字体是那种全能型的，
+And we found there's no mono font that is just kind of an all rounder
+
+224
+00:10:45,326 --> 00:10:48,170
+既能用在营销里，也能用在代码里。
+that you can use in marketing, that you can use in code.
+
+225
+00:10:48,370 --> 00:10:49,773
+大多数都是为终端设计的。
+Most of them are built for the terminal.
+
+226
+00:10:49,773 --> 00:10:51,770
+所以我们想要一款能作为品牌一部分来用的。
+And so we wanted one that you can use as part of your brand.
+
+227
+00:10:52,110 --> 00:10:54,070
+于是我们做了 Paper Mono，几周后发布。
+So we made Paper Mono. It's launching in a couple weeks.
+
+228
+00:10:54,310 --> 00:10:56,601
+这就是我们的营销方式，与其买广告，
+That's marketing for us that, you know, instead of buying an ad,
+
+229
+00:10:56,601 --> 00:10:58,590
+不如做款更好的字体，对世界更好，对吧？
+let's build a font better, better for the world, right?
+
+230
+00:10:59,070 --> 00:11:01,561
+YC 的 Eve 前几天晚上在纽约参加一个晚宴，
+So Eve at YC was in in New York City at a dinner the other night
+
+231
+00:11:01,561 --> 00:11:03,747
+她遇到一个穿 Paper Mono 衬衫的人，
+and she ran into someone wearing a paper mono shirt,
+
+232
+00:11:03,747 --> 00:11:06,390
+我觉得这太酷了，因为全世界只有，我也不知道，
+which I thought was so cool because there's only, I don't know.
+
+233
+00:11:06,390 --> 00:11:08,030
+大概 100 件吧？对。怎么才能弄到一件？
+100 of these in the world? Yeah. How do you get one of these?
+
+234
+00:11:08,510 --> 00:11:09,110
+我们可以给你一件。
+We can get you one.
+
+235
+00:11:09,190 --> 00:11:12,156
+等我们要开周边店的时候就有了，Paper
+We'll see it whenever we want to set up a merch shop, you know, paper,
+
+236
+00:11:12,156 --> 00:11:12,950
+Paper 周边很快就有。
+paper merch soon.
+
+237
+00:11:13,330 --> 00:11:16,610
+这是 Paper Mono，我们还有个很棒的小站点很快上线。
+This is paper mono and we have a great mini site launching soon.
+
+238
+00:11:17,610 --> 00:11:20,892
+我们在数字的可读性上花了很多时间，因为这是
+We spent a lot of time on the legibility of numbers because that's an area
+
+239
+00:11:20,892 --> 00:11:22,970
+很多等宽字体都很吃力的地方。
+that a lot of mono fonts really struggle with.
+
+240
+00:11:23,250 --> 00:11:26,370
+我们觉得这是一款非常易读、非常好用的等宽字体。
+We just think this very, very legible, very usable mono font.
+
+241
+00:11:27,290 --> 00:11:29,170
+我对这个特别兴奋，太好玩了。
+So I'm really excited about this. It's so fun.
+
+242
+00:11:29,210 --> 00:11:32,770
+我们做这些东西，基本上算是市场推广的一部分。
+We get to do these things as just kind of part of our marketing, basically.
+
+243
+00:11:33,090 --> 00:11:38,170
+你提到这个产品最初是为了解决设计到开发的交接问题。
+You mentioned that the product started to help solve the design to dev handoff.
+
+244
+00:11:38,480 --> 00:11:42,120
+对，给我们演示一下在产品里怎么做到的。好的。
+Yeah. Show us how you're able to do that in the product. Well, yeah.
+
+245
+00:11:42,160 --> 00:11:45,800
+一开始的想法是，嘿，这是代码，这就是一个真正的 react 组件。
+So it started as, hey, this is code. This is literally a react component.
+
+246
+00:11:46,040 --> 00:11:47,960
+那为什么不让你把它复制成 react 组件呢？
+Why don't we let you copy it as a react component?
+
+247
+00:11:48,400 --> 00:11:50,517
+所以我们现在看到的这个 shader，
+And so this shader that we're looking at right now,
+
+248
+00:11:50,517 --> 00:11:52,080
+你可以右键，复制成 react。
+you can right click and copy as react.
+
+249
+00:11:52,440 --> 00:11:55,560
+粘贴之后，你得到的就是我们眼前这段真实代码。
+And when you paste it, you get the literal code that we're looking at.
+
+250
+00:11:56,120 --> 00:11:58,928
+嗯，这就是一种很快的方式，
+Um, and so this was just a really fast way of like, hey,
+
+251
+00:11:58,928 --> 00:12:01,480
+设计师做了这个很酷的动画。
+the designers made this really cool animation.
+
+252
+00:12:01,760 --> 00:12:04,218
+他们把它调到完美，他们才是设计师，对吧？
+They've dialed it in perfectly. They're the designer, right?
+
+253
+00:12:04,218 --> 00:12:05,920
+那就让他们复制出来，直接交付。
+And let's let them copy that out and ship it.
+
+254
+00:12:06,160 --> 00:12:09,643
+我们看到这些在全网火起来，大家都在发布这些，
+And so we've seen these take off all over the internet, people shipping these,
+
+255
+00:12:09,643 --> 00:12:11,680
+这些 react 组件，但不止于此。
+these react components, but it goes further.
+
+256
+00:12:11,720 --> 00:12:14,240
+你在 Paper 里看到的任何东西都是代码。
+So anything that you're looking at in paper is code.
+
+257
+00:12:14,360 --> 00:12:16,792
+这个 frame，里面这个 box，都是代码，
+You know, this frame with this box inside of it is code
+
+258
+00:12:16,792 --> 00:12:18,560
+它基本上已经是一个网站了。
+and it's basically a website already.
+
+259
+00:12:18,560 --> 00:12:21,927
+所以你可以把它复制成 Tailwind CSS，或者复制成 react，
+And so you can copy it as tailwind or you can copy it as react, uh, and,
+
+260
+00:12:21,927 --> 00:12:23,490
+直接把代码抓出来。
+and just grab out the, the code.
+
+261
+00:12:23,890 --> 00:12:25,547
+我们就是从这里起步的，效果已经挺不错。
+That's where we started. And that was pretty good.
+
+262
+00:12:25,547 --> 00:12:26,730
+我们已经看到有人在用了。
+We already saw some people using it.
+
+263
+00:12:27,010 --> 00:12:30,183
+嗯，然后在 2025 年 12 月，
+Um, and then in what was this last December of 2025,
+
+264
+00:12:30,183 --> 00:12:32,450
+Claude code 的爆发发生了。
+the cloud code explosion happened.
+
+265
+00:12:33,050 --> 00:12:35,240
+我原本没想到设计师会去用终端。
+And I didn't think designers were gonna be in terminals.
+
+266
+00:12:35,240 --> 00:12:37,010
+我从没想过会看到这种事。
+I never thought that would be a thing we'd see.
+
+267
+00:12:37,130 --> 00:12:40,151
+但我们确实看到了，那一刻我们就想，天啊，
+Uh, but we clearly did and so that that was the moment where we were like, gosh,
+
+268
+00:12:40,151 --> 00:12:41,850
+那时候我们得赶紧上桌面端。
+we gotta get onto the desktop at that point.
+
+269
+00:12:41,850 --> 00:12:44,520
+我们当时还没有桌面应用，所以就想，天啊，得赶紧做桌面端。
+We didn't have a desktop app, so it was like, gosh, we gotta get onto the desktop.
+
+270
+00:12:44,560 --> 00:12:45,640
+现在事情都在那里发生。
+That's where things are happening now.
+
+271
+00:12:46,320 --> 00:12:48,979
+本地仓库，设计师们有自己的仓库，他们在学 GitHub。
+Local repos, designers have repos. They're learning Github.
+
+272
+00:12:48,979 --> 00:12:50,360
+我们也要参与到这场爆发里。
+Let's be part of this explosion.
+
+273
+00:12:50,920 --> 00:12:52,840
+我们把它看作一种新的 agent 工具栈。
+The way we see it is kind of the new agent stack.
+
+274
+00:12:52,960 --> 00:12:56,564
+我的意思是，你会看到，我有 Cursor，有 Claude code，
+And what I mean by that is you'll see, you know, I have cursor, I have Claude code,
+
+275
+00:12:56,564 --> 00:12:58,421
+你有多个 agent，你有 Paper，
+you have multiple agents, you have paper
+
+276
+00:12:58,421 --> 00:13:02,135
+作为跟 agent 沟通的可视化方式，然后也许你有 GitHub，
+as a visual way to communicate with the agents, and then maybe you have a Github or,
+
+277
+00:13:02,135 --> 00:13:04,210
+或者说代码审查，这就是我们看到的。
+you know, the code review. That's what we see.
+
+278
+00:13:04,250 --> 00:13:08,010
+现在开发者都在用吗？在最新几批 YC 里，你也看到这种情况吗？
+Builders using now? I mean, is that what you see too, in like the newest YC batches?
+
+279
+00:13:08,330 --> 00:13:10,644
+对，我们看到很多这样的。
+Yeah, that's a lot of what we see.
+
+280
+00:13:10,644 --> 00:13:14,930
+我们甚至看到很多这些被整合进单个应用里。
+And we even see a lot of that getting rolled into single apps.
+
+281
+00:13:15,290 --> 00:13:19,935
+我们在 Conductor 的朋友，你可以推送代码、合并代码，做所有
+Our friends at conductor, you can push code and merge code and do everything
+
+282
+00:13:19,935 --> 00:13:21,410
+你需要做的事，直接完成。
+that you need directly.
+
+283
+00:13:21,570 --> 00:13:24,330
+对，就是这样。我也开着 Conductor，直接从应用里。
+Yeah, there we go. Yeah, I have conductor up too, directly from the app.
+
+284
+00:13:24,370 --> 00:13:27,633
+所以越来越多的东西被整合进应用里，
+And so more and more it's kind of being consolidated into apps
+
+285
+00:13:27,633 --> 00:13:30,000
+而不是分散在多个独立应用里。
+rather than having multiple discrete apps.
+
+286
+00:13:30,000 --> 00:13:31,960
+这也是工具栈的一部分，这也是我们看到的。
+This is part of the stack too. That's what we see too.
+
+287
+00:13:31,960 --> 00:13:34,616
+Conductor 和 Paper 现在就是这样一对搭配，
+And conductor and paper are this like pairing right now
+
+288
+00:13:34,616 --> 00:13:37,560
+社区里很多人都把两个一起用。
+that a lot of people in the community are using both together.
+
+289
+00:13:38,480 --> 00:13:40,520
+我觉得太棒了，我很喜欢 Conductor，是个很棒的产品。
+I think it's so cool. I love conductor. It's great, great product.
+
+290
+00:13:40,600 --> 00:13:43,153
+但我们看到了 Claude code 的兴起，那就上桌面端。
+But we saw this cloud code happening. Let's get on the desktop.
+
+291
+00:13:43,153 --> 00:13:44,920
+我们在桌面应用里内置了一个 MCP server。
+We build an MCP server into our desktop app.
+
+292
+00:13:45,320 --> 00:13:47,440
+我给你演示一下它能做的一些事。
+And I'll give you a demo of some of the stuff it can do.
+
+293
+00:13:47,880 --> 00:13:50,200
+我们就用 Conductor 来做这个，为什么不呢？
+Let's use, we'll use conductor for this. Why not?
+
+294
+00:13:50,640 --> 00:13:54,056
+我就说，嘿，Conductor，在 Paper 里，
+I'll just say, hey, conductor in paper,
+
+295
+00:13:54,056 --> 00:14:01,200
+请做一个小测试 frame，向 YC 打个招呼，我给你看它在做什么。
+please make a small test frame saying hello to YC, and I'll show you what it's doing.
+
+296
+00:14:01,520 --> 00:14:03,512
+我们会讲到更复杂的例子，
+We'll get into more complex cases,
+
+297
+00:14:03,512 --> 00:14:06,397
+但先给你看看基本技术是怎么运作的，
+but just to show you how the basic technology works
+
+298
+00:14:06,397 --> 00:14:11,000
+当 agent 调用 Paper 的 MCP 时，我们把它放在屏幕右半边。
+as the agent uses the MCP of paper, which we'll put on the right half of the screen.
+
+299
+00:14:12,680 --> 00:14:15,526
+我们给它一些工具调用，比如，嘿，有哪些字体可用？
+We give it tool calls to like, hey, which fonts are available?
+
+300
+00:14:15,526 --> 00:14:17,200
+这个页面的基本设置是什么？
+What's the basic setup of this page?
+
+301
+00:14:17,240 --> 00:14:20,360
+然后它真的会调用像 write HTML 这样的工具。
+And then it literally runs tools like write HTML.
+
+302
+00:14:20,760 --> 00:14:24,676
+这其实就是，你懂的，它是 JSON 格式，
+This is literally the, you know, it's in JSON format,
+
+303
+00:14:24,676 --> 00:14:30,640
+但它发给我们的其实就是 HTML，Paper 引擎可以直接处理 HTML。
+but it's literally sending us HTML and the paper engine is just able to take HTML.
+
+304
+00:14:30,720 --> 00:14:34,450
+它知道怎么处理，中间没有任何转换。agent 直接写 HTML。
+It knows what to do with it. There's no translation there. The agent writes HTML.
+
+305
+00:14:34,610 --> 00:14:36,581
+Paper 能渲染 HTML，你不用，
+Paper can render HTML, and you don't have to, like,
+
+306
+00:14:36,581 --> 00:14:38,130
+在不同格式之间来回切换。
+switch back and forth between formats.
+
+307
+00:14:38,370 --> 00:14:40,210
+这样做能帮你省 token。
+What that does is it saves you tokens.
+
+308
+00:14:40,850 --> 00:14:44,490
+让它跑得更快，也更少出现奇怪的幻觉。
+It makes it run faster, and you just get less weird hallucinations.
+
+309
+00:14:44,690 --> 00:14:46,629
+这其实就是我们真正起飞的时刻，
+And this is really what the moment we took off
+
+310
+00:14:46,629 --> 00:14:48,410
+因为大家在做设计到代码。
+because people are doing design to code.
+
+311
+00:14:48,650 --> 00:14:49,930
+也在做代码到设计。
+They're doing code to design.
+
+312
+00:14:50,450 --> 00:14:53,730
+我再举个 Cursor 里的例子。这是我们真实的 Paper 代码库。
+I'll give you another example in cursor. This is our actual paper code base.
+
+313
+00:14:54,150 --> 00:14:59,282
+我就说，嘿，你能不能把 colors.css 放到 Paper 画布上，
+And I'll just say, hey, can you put at colors dot CSS onto the paper canvas
+
+314
+00:14:59,282 --> 00:15:00,480
+作为一份样式指南？
+as a style guide?
+
+315
+00:15:00,920 --> 00:15:05,680
+这是我们 Paper 真实的 CSS 文件，是代码库 Paper，不是产品。
+So this is our actual CSS file from paper, the codebase paper, not the product.
+
+316
+00:15:06,240 --> 00:15:09,520
+Cursor 会拿到它，然后渲染到画布上。
+And cursor is going to take that and then render it onto the canvas.
+
+317
+00:15:09,840 --> 00:15:13,800
+我们看到很多人在审查自己的代码库，看看里面有什么。
+And so we see a lot of people doing, you know, auditing of their codebase, what exists.
+
+318
+00:15:14,440 --> 00:15:18,361
+你可以做组件架构，让它出图表，它真的就是，
+You can do component architectures, ask for diagrams, and it really just,
+
+319
+00:15:18,361 --> 00:15:21,080
+把设计工具带进了整个工具栈里。
+it brings the design tool into the rest of the stack.
+
+320
+00:15:21,530 --> 00:15:24,293
+我们太习惯设计工具是独立在别处的了，对吧？
+We're so used to the design tool being over somewhere else, right?
+
+321
+00:15:24,293 --> 00:15:25,650
+中间隔着一堵墙。
+And having this wall between it.
+
+322
+00:15:26,050 --> 00:15:30,530
+而现在设计工具成了整个工具栈的一部分，这差不多就是目标。
+And this is like the design tool is now part of the entire stack is kind of the goal here.
+
+323
+00:15:30,650 --> 00:15:33,751
+是啊，一直以来有个坏掉的地方，
+Yeah, I mean, one of the things that's always been broken with
+
+324
+00:15:33,751 --> 00:15:37,460
+就是你说的交接：设计师设计好一个东西，
+that handoff like you're talking about is designers would design a thing
+
+325
+00:15:37,460 --> 00:15:39,405
+然后交给开发者，
+and then they give it to the developers
+
+326
+00:15:39,405 --> 00:15:42,810
+结果可能根本没按原样构建和交付出来。
+and then maybe it wouldn't actually be built and shipped in the way.
+
+327
+00:15:43,130 --> 00:15:46,250
+也就是设计师当初在画布里想要的样子。
+You know, the designer originally intended when they were working in the canvas.
+
+328
+00:15:47,250 --> 00:15:51,643
+就算做出来了，东西也会渐渐不同步，代码会不断演进，
+Or even if it was, things would just get out of sync and the code would evolve
+
+329
+00:15:51,643 --> 00:15:54,690
+而且永远不会再回到设计里。
+and it would never get wrapped back into the design.
+
+330
+00:15:55,130 --> 00:15:57,376
+是啊，所以问题就在于什么是唯一可信来源，
+Yeah, which, and so it's what is the source of truth
+
+331
+00:15:57,376 --> 00:16:00,370
+而这套方式很棒的一点是，代码就是唯一可信来源。
+and what's really nice about this is the code is the source of truth.
+
+332
+00:16:00,650 --> 00:16:04,808
+两套系统都知道怎么在同一个代码库上工作。没错。是的。
+And both systems know how to work on that same code base. Exactly. Yeah.
+
+333
+00:16:04,808 --> 00:16:06,570
+我们看到太多团队在维护。
+We see so many teams maintain.
+
+334
+00:16:07,430 --> 00:16:09,121
+两份设计系统。对。
+Two copies of their design system. Yeah.
+
+335
+00:16:09,121 --> 00:16:11,310
+让它们保持同步根本不是个可解决的问题。
+And it's not a tractable problem to keep them in sync.
+
+336
+00:16:11,430 --> 00:16:12,350
+说真的，根本不可能。
+It's impossible, really.
+
+337
+00:16:12,910 --> 00:16:16,101
+所以维护两边同时更新的成本很高，
+And. And so you have a lot of maintenance cost with keeping both updated,
+
+338
+00:16:16,101 --> 00:16:17,750
+而且还会有准确性问题。
+and you just have accuracy problems.
+
+339
+00:16:18,470 --> 00:16:21,710
+所以我们从更新的公司、更 agent 化的构建者身上看到的是，
+So what we see from the newer companies, the more agentic builders,
+
+340
+00:16:21,710 --> 00:16:24,430
+他们把代码库当作唯一可信来源。
+is they are treating the codebase as the source of truth.
+
+341
+00:16:24,910 --> 00:16:27,430
+而且你知道，Paper 里现在还没有组件。
+And, you know, we don't have components in paper yet.
+
+342
+00:16:27,470 --> 00:16:30,457
+这是个常见的抱怨，大家非常想要组件，
+And it's this common complaint, like, people want components really a lot,
+
+343
+00:16:30,457 --> 00:16:32,402
+我们正在做，但其实你不需要它们，
+and we're working on that, but you don't need them
+
+344
+00:16:32,402 --> 00:16:34,061
+因为你的代码库就是可信来源，
+because your code base is a source of truth
+
+345
+00:16:34,061 --> 00:16:36,290
+你可以在需要的时候随时把东西调出来。
+and you can kind of like summon things in as you need them.
+
+346
+00:16:36,450 --> 00:16:37,650
+我们还在这上面又往前走了一步。
+And we took that a step further, too.
+
+347
+00:16:37,690 --> 00:16:41,520
+我们做了一个 Chrome 扩展，你可以抓取你的线上网站，
+We built a Chrome extension where you can grab your live site and copy
+
+348
+00:16:41,520 --> 00:16:46,089
+复制到 Paper 画布里，这是一个很棒的方式，让你从用户真正看到的东西出发，
+that into the paper canvas, which is a really nice way to start from what your users
+
+349
+00:16:46,089 --> 00:16:50,053
+在此基础上构建和迭代。也许这是个不错的过渡。
+are seeing and build on top of it and iterate. Maybe that's a good segue.
+
+350
+00:16:50,053 --> 00:16:51,330
+我们要不要来点评一些。
+Should we review some.
+
+351
+00:16:51,530 --> 00:16:53,918
+一些用户提交的网站，然后我很想，
+Some user submitted sites and then I would love to,
+
+352
+00:16:53,918 --> 00:16:57,330
+我很想用这个功能把其中一些拉进 Paper 里。
+I would love to use that feature to be able to pull some of them into paper.
+
+353
+00:16:57,610 --> 00:16:58,970
+是的，然后做一些调整。
+Yeah, and make some tweaks on it.
+
+354
+00:16:59,090 --> 00:17:03,490
+看看我们能实时改到什么程度，来试着改进其中一些网站。
+Just see what we can live edit to, to try to, um, improve some of the sites.
+
+355
+00:17:03,570 --> 00:17:06,770
+我很乐意。这一直是我在节目里最喜欢的环节。好，太棒了。
+I would love to. It's always my favorite section of the show. Okay, awesome.
+
+356
+00:17:06,850 --> 00:17:07,330
+我们开始吧。
+Let's do it.
+
+357
+00:17:07,370 --> 00:17:10,460
+我们拿到的第一个是 Legion Health Psychiatry，
+So the first one we got here is Legion Health Psychiatry,
+
+358
+00:17:10,460 --> 00:17:14,932
+有保险的话最低 0 美元，为 ADHD、抑郁症提供在线用药管理，
+as low as $0 with insurance, online medication management for ADHD, depression,
+
+359
+00:17:14,932 --> 00:17:16,970
+还有焦虑症、双相情感障碍等等。
+anxiety, bipolar disorder and more.
+
+360
+00:17:17,650 --> 00:17:18,530
+嗯，我说不好。
+Um, I don't know.
+
+361
+00:17:18,690 --> 00:17:22,140
+我第一眼看到的，是顶部那个小胶囊标签
+When I first look at this, I see the little pill up there at the top
+
+362
+00:17:22,140 --> 00:17:25,916
+它让我觉得这就是随手 vibe code 出来的
+and this kind of, it makes me think this was just like a vibe coded thing
+
+363
+00:17:25,916 --> 00:17:28,650
+因为它太符合我们常见的那种风格了
+because it matches so much of the style that we see.
+
+364
+00:17:28,930 --> 00:17:30,890
+对，就是 agent 直接生成出来的那种
+Um, yeah, that the agents are just spitting out.
+
+365
+00:17:31,450 --> 00:17:33,330
+这里确实有个精细度的问题
+There's definitely like a fit and finish thing here.
+
+366
+00:17:33,410 --> 00:17:35,658
+我觉得一些小细节，比如这些
+I think little things like how these, these, um,
+
+367
+00:17:35,658 --> 00:17:37,850
+这些区块之间留了点空隙
+these sections kind of like leave a little gap.
+
+368
+00:17:38,290 --> 00:17:39,530
+这个胶囊标签太普通了
+The pill is very generic.
+
+369
+00:17:39,760 --> 00:17:43,137
+但整体上，我能很清楚地理解它的价值主张
+I think overall, though, the I can understand the value prop, which very clearly,
+
+370
+00:17:43,137 --> 00:17:44,080
+我觉得这点很棒
+which I think is great.
+
+371
+00:17:44,080 --> 00:17:45,830
+这也是设计很重要的一部分
+You know, that's a big part of design, too, is like,
+
+372
+00:17:45,830 --> 00:17:47,080
+就是你能不能看懂它在讲什么
+can you comprehend what's going on?
+
+373
+00:17:47,400 --> 00:17:50,772
+右边展示了它的好处，比如在这个领域里很开心什么的
+Shows the benefit over on the right of like being being very happy in the field or
+
+374
+00:17:50,772 --> 00:17:51,640
+大概是这样吧
+something, I guess.
+
+375
+00:17:51,640 --> 00:17:54,720
+对，生活很美好。所以我觉得这些部分是有效果的
+Yeah, you're having a great life. Yeah. So I think like those parts are working.
+
+376
+00:17:54,880 --> 00:17:58,091
+我觉得关键还是再把这里收紧一点
+I think it's more about just tightening up here again, you know,
+
+377
+00:17:58,091 --> 00:18:00,454
+把一些设计收紧
+tightening up some of the design would really,
+
+378
+00:18:00,454 --> 00:18:05,120
+会让品牌显得更专业、更高级，也更值得信任
+really help the brand feel more serious, more elevated, a little more trustworthy, I think.
+
+379
+00:18:05,400 --> 00:18:08,280
+对，说实话，现在我不太确定我信不信任这个品牌
+Yeah, this feels, you know, I don't know if I trust this brand right now.
+
+380
+00:18:08,800 --> 00:18:11,240
+而这又是个必须建立信任的领域，对吧
+And this is an area where you have to have trust, right? Yeah.
+
+381
+00:18:11,240 --> 00:18:14,600
+那你看到这个时，是什么让你不信任它？
+So what is the thing when you look at this that makes you not trust it?
+
+382
+00:18:14,800 --> 00:18:17,936
+一些设计元素，比如对齐方式
+Some of the design elements is like the, the alignment of things,
+
+383
+00:18:17,936 --> 00:18:19,040
+还有对比度的选择
+the contrast choices.
+
+384
+00:18:19,400 --> 00:18:22,637
+感觉像是随手 vibe code 出来的，或者没人在上面花心思
+They feel maybe vibe coded or like somebody didn't spend a lot of attention to this
+
+385
+00:18:22,637 --> 00:18:25,160
+然后你就会想，他们还有什么地方没上心？
+and then your mind goes to what else don't they spend attention?
+
+386
+00:18:25,700 --> 00:18:29,140
+还有一点，这肯定是家 YC 公司，但我在这看不到任何提示
+The one other thing is like this must be a YC company, but I don't see that here.
+
+387
+00:18:29,140 --> 00:18:32,057
+我觉得这点其实很值得突出出来
+And I would say that would be a great thing to call out
+
+388
+00:18:32,057 --> 00:18:34,500
+作为一点社会背书或证明
+as a little bit of social proof or evidence.
+
+389
+00:18:34,540 --> 00:18:36,700
+但这做得不错，有很多值得肯定的地方
+But like, this is nice. I mean, there's a lot to like here.
+
+390
+00:18:37,020 --> 00:18:39,100
+我只是会在精细度上再打磨一下
+I would just, I would work on the fit and finish a little bit.
+
+391
+00:18:39,300 --> 00:18:43,820
+我给你看看 Paper snapshot。它能从你的线上网站抓取内容
+I'll show you paper snapshot. Paper snapshot is a way to grab content from your live site.
+
+392
+00:18:44,500 --> 00:18:46,860
+这样就不用再截图了
+This replaces taking screenshots of things.
+
+393
+00:18:47,140 --> 00:18:50,525
+我们就抓这个区块，我觉得它挺适合拿来改
+So we'll just grab this section because I think this is a cool one to work on,
+
+394
+00:18:50,525 --> 00:18:51,890
+然后把它粘贴进 Paper
+and we'll paste it into paper.
+
+395
+00:18:52,770 --> 00:18:56,010
+这些都是实时的区块，对吧？不是截图
+And these are all live sections, right? So this is not a screenshot.
+
+396
+00:18:56,130 --> 00:19:00,298
+这些都是真实的内容，你可以进来编辑，也可以按 alt
+This is actual stuff that you can come in here and edit and you can, like, alt,
+
+397
+00:19:00,298 --> 00:19:03,010
+拖拽复制一份，诸如此类
+drag and get another copy of it, all these things.
+
+398
+00:19:04,050 --> 00:19:07,610
+那我们让 agent 来处理一下
+So let's ask the agent to work on this a little bit.
+
+399
+00:19:07,810 --> 00:19:10,810
+我喜欢做的一件事，就是直接让它出一堆不同的变体
+And one of the things I like to do is actually just ask it for a bunch of variations.
+
+400
+00:19:11,580 --> 00:19:15,060
+那我们用 conductor，嘿 conductor
+So we'll use, can, let's, uh, conductor, hey, conductor.
+
+401
+00:19:15,580 --> 00:19:17,340
+这里用的是 GPT 5.5
+Uh, this is using GPT 5.5.
+
+402
+00:19:17,860 --> 00:19:24,757
+你能针对我在 Paper 里选中的部分做三个新变体吗，重点放在工艺
+Can you make three new variations of my selection in paper focusing on the craft
+
+403
+00:19:24,757 --> 00:19:30,400
+对齐和对比度上，把视觉效果提升一下？
+and alignment, uh, and contrast choices to elevate the visuals?
+
+404
+00:19:31,000 --> 00:19:34,640
+你可以写很复杂的 prompt，但我经常发现简单的 prompt 就够了
+You can do a lot of prompting, but I often find like, simple prompting is, is fine.
+
+405
+00:19:34,920 --> 00:19:37,480
+说实话，这里真正强大的地方有几点
+Honestly, what's really powerful about this, a couple things.
+
+406
+00:19:38,640 --> 00:19:43,200
+第一，我很喜欢这种直接生成一堆不同变体的思路
+Um, 1, I love this concept of just spitting out a bunch of different variations.
+
+407
+00:19:43,360 --> 00:19:44,800
+这是获取灵感的最佳方式
+It's the best way to get inspiration.
+
+408
+00:19:44,880 --> 00:19:47,376
+有时候你大概知道自己想要什么
+And sometimes, you know, you have a sense of what you want,
+
+409
+00:19:47,376 --> 00:19:48,520
+但又说不太清
+but you don't really know.
+
+410
+00:19:48,600 --> 00:19:51,113
+而这就是个很好的办法，看一堆方案然后说
+And this is a great way to look at a bunch of things and go,
+
+411
+00:19:51,113 --> 00:19:52,260
+我喜欢这个里的这一点
+I like that from this one.
+
+412
+00:19:52,260 --> 00:19:54,336
+喜欢那个里的这一点，然后把它们组合起来
+I like this from this one and combine it and,
+
+413
+00:19:54,336 --> 00:19:57,737
+进展快得多，而不是卡在
+and make so much more progress so much faster rather than being stuck in
+
+414
+00:19:57,737 --> 00:19:58,660
+那种创意瓶颈里
+that creative rut.
+
+415
+00:19:58,820 --> 00:20:01,799
+另一件很酷的事是，你可以直接说，嘿
+And then the other thing is really cool is you're able to just say, hey,
+
+416
+00:20:01,799 --> 00:20:03,700
+就是我在画布上选中的那个
+the thing that is my selection on the canvas.
+
+417
+00:20:03,820 --> 00:20:06,300
+对，在 Paper 里，它就知道那是什么
+Yeah. In paper. And it knows what that is. Yep.
+
+418
+00:20:06,300 --> 00:20:09,300
+然后它就能针对那个来处理，这非常强大
+And now it's able to go to work on that, which is, which is really powerful.
+
+419
+00:20:09,460 --> 00:20:12,100
+不过我好像选错了，抓那个 YC 卡片
+I think I had the wrong selection, though. Grab the, the YC card.
+
+420
+00:20:12,840 --> 00:20:17,102
+我用我的选区再重新来一次。哦
+Let me, let me restart it there one more time using my selection. Oh,
+
+421
+00:20:17,102 --> 00:20:18,320
+我看看会发生什么。
+I see what happens.
+
+422
+00:20:18,600 --> 00:20:24,160
+它把内容改成了 ADHD 相关的。
+It changed it with the ADHD content.
+
+423
+00:20:24,880 --> 00:20:26,960
+哦，其实，这正好可以展示我们能做的另一件事。
+Oh, actually, you know what? This is a good way to show another thing we can do.
+
+424
+00:20:26,960 --> 00:20:30,353
+我们可以在这个 frame 上留个评论，说，
+So we can leave a comment on this frame and say,
+
+425
+00:20:30,353 --> 00:20:34,104
+请把这个内容做出三个新的变体，
+please make three new variations of this content,
+
+426
+00:20:34,104 --> 00:20:38,836
+探索一下能带来视觉冲击的布局，然后我要做的是，
+explore the layout for visual impact, and instead what I'll do,
+
+427
+00:20:38,836 --> 00:20:40,890
+我在 Paper 里留了一条评论。
+so I left a comment in Paper.
+
+428
+00:20:40,970 --> 00:20:44,364
+嗯。现在我切到 agent，然后说，
+Uh huh. And I'll switch over to the agent now and say,
+
+429
+00:20:44,364 --> 00:20:46,810
+请处理我在 Paper 里的评论。
+please address my comments in Paper.
+
+430
+00:20:47,210 --> 00:20:49,610
+只有一条。这是另一种可以精准定位的方式。
+There's only one. And this will be another way that you can kind of like target.
+
+431
+00:20:49,730 --> 00:20:53,298
+你可以想象，你有一个很大的设计，把所有反馈都留下来，
+And so you can imagine having a big design and leaving all of your feedback
+
+432
+00:20:53,298 --> 00:20:55,170
+然后直接让你的 agent 去处理。
+and then just setting your agent on it.
+
+433
+00:20:55,250 --> 00:20:58,010
+对，让它跑起来。我们看到很多人都在这么做。
+Yeah, letting it spin, you know. But we see a lot of folks are.
+
+434
+00:20:58,850 --> 00:21:02,078
+让它整晚跑着，他们设置了循环，
+Leaving these running like overnight, they're setting up loops of?
+
+435
+00:21:02,078 --> 00:21:04,570
+让 agent 生成几百个变体。
+Of an agent just generating hundreds of variations.
+
+436
+00:21:04,730 --> 00:21:08,450
+对，这对我们来说其实是个挑战，服务器等各方面都要跟上 agent 的规模。
+Yeah. And it's actually a challenge for us to be like agent scale with our servers and everything.
+
+437
+00:21:08,530 --> 00:21:10,690
+他们做的工作量比我预想的多得多。
+Like they're doing a lot more work than I thought they were going to be doing.
+
+438
+00:21:11,090 --> 00:21:13,570
+这太酷了。现在他们进来做筛选。
+Um, and it's so cool. And now they come in and they curate.
+
+439
+00:21:13,730 --> 00:21:15,690
+他们进来看，哦，这个不错，那个不错。
+You know, they come in, oh, that's a good idea, that's a good idea.
+
+440
+00:21:15,690 --> 00:21:17,370
+让我把这些东西组合起来。对。
+Let me combine these things together. Yeah.
+
+441
+00:21:17,370 --> 00:21:20,490
+这是一种新的策展式设计流程，我觉得非常有意思。
+And it's kind of this new curation design process that I think is really interesting.
+
+442
+00:21:20,800 --> 00:21:23,445
+想想这个世界很酷，你只要进去，
+It's so cool to think about this world where you just go in,
+
+443
+00:21:23,445 --> 00:21:27,137
+在作品上留一堆评论，然后去睡觉，早上醒来，
+you leave a bunch of comments on the work, you go to bed, you wake up in the morning,
+
+444
+00:21:27,137 --> 00:21:30,829
+它们要么已经处理好了，要么给你留了一堆迭代版本供你挑选，
+and they're all either addressed or lots of iterations for you to choose from are
+
+445
+00:21:30,829 --> 00:21:34,080
+就摆在那里等着你。没错。我觉得这真的很酷。
+just sitting there waiting for you. Exactly. I think it's really cool.
+
+446
+00:21:34,240 --> 00:21:34,920
+这是一个新世界。
+It's a new world.
+
+447
+00:21:35,240 --> 00:21:38,077
+我发现它会做一些我知道、但我自己不会想到的事，
+I find that it'll do things that I know but I wouldn't have thought of
+
+448
+00:21:38,077 --> 00:21:39,040
+因为我太忙了。
+because I was too busy.
+
+449
+00:21:39,360 --> 00:21:41,976
+所以它某种程度上让我把自己放大了一点，
+And so it kind of like it lets me scale myself a little bit
+
+450
+00:21:41,976 --> 00:21:45,047
+让我一天里有更多时间，因为我可以把它放到这些任务上，
+and have more time in my day because I can just set it on these tasks
+
+451
+00:21:45,047 --> 00:21:48,914
+那些比较模板化的，或者我根本没时间同时做四件事的任务。
+that are maybe more boilerplate or I just don't have time to do four things at once.
+
+452
+00:21:48,914 --> 00:21:50,450
+所以我让 agents 去处理它。
+And so let me set the agents on it.
+
+453
+00:21:50,570 --> 00:21:53,450
+去处理它。所以，呃，这是 5.5。
+To, to go address it. So it's, uh, this is 5.5.
+
+454
+00:21:53,490 --> 00:21:56,094
+它现在正在跑各种想法，你会看到它在迭代，它会，
+It is working through ideas now and you'll see it iterate, it'll,
+
+455
+00:21:56,094 --> 00:21:59,083
+它能截图，所以它会注意到比如这个对齐不对，
+it can take screenshots so it'll notice things like that alignment isn't,
+
+456
+00:21:59,083 --> 00:22:00,530
+元素互相挤到一起了。
+it's running right into each other.
+
+457
+00:22:00,610 --> 00:22:05,000
+它会边跑边自我修正。嗯，对，这很酷。
+It'll fix itself as it goes through. Um, and yeah, that's cool.
+
+458
+00:22:05,040 --> 00:22:08,098
+好，它这里已经吐出了一个变体，
+Okay, so it's actually spit back a variation here,
+
+459
+00:22:08,098 --> 00:22:12,320
+但那里的对齐有点乱，而且它还在跑。
+but the alignment's a little screwed up there and it's still working.
+
+460
+00:22:12,640 --> 00:22:14,747
+所以还没完。它给你东西之后，
+So it's not done. Once it gives you something, it's,
+
+461
+00:22:14,747 --> 00:22:17,000
+这里发生的是一个迭代的过程，对吧？
+it's an iterative thing that's happening here, right?
+
+462
+00:22:17,080 --> 00:22:20,760
+它会检查自己的成果。对。而且 agents 在这方面也越来越强。
+It checks its work. Yeah. And it can do, agents are getting better at this too.
+
+463
+00:22:20,760 --> 00:22:23,188
+一直在进步。比如，我能看到第一次，
+All the time. For instance, I can see like the first shot,
+
+464
+00:22:23,188 --> 00:22:24,480
+它把文字跑到卡片上面去了。
+it ran the text over the cards.
+
+465
+00:22:24,760 --> 00:22:26,440
+它通常会发现并纠正过来。
+It'll usually catch that and correct it.
+
+466
+00:22:26,440 --> 00:22:29,520
+或者如果它没发现，你可以直接告诉它，嘿，修正一下文字溢出。
+Or if it doesn't, you can just tell it, hey, correct the text overflow.
+
+467
+00:22:30,120 --> 00:22:35,360
+嗯，让我这样做。我们设成自适应，然后再切回来。
+Um, let me do this. We'll set to fit and we'll pop back in.
+
+468
+00:22:35,360 --> 00:22:40,880
+Conductor，请处理所有文字溢出的问题。
+Conductor, please address any text overflow issues.
+
+469
+00:22:41,160 --> 00:22:42,324
+我还注意到另一件事，
+The other thing I noticed too is,
+
+470
+00:22:42,324 --> 00:22:45,600
+就是这些模型一直在变强，而且各有各的强项和弱项。
+is the models are always getting better and they have different strengths and weaknesses.
+
+471
+00:22:46,120 --> 00:22:48,499
+所以我在这种 demo 里经常用快速模型，
+And so I often use fast models for demos like this,
+
+472
+00:22:48,499 --> 00:22:50,240
+它们往往会犯更多错误。
+and they tend to make more mistakes.
+
+473
+00:22:50,440 --> 00:22:52,321
+所以，如果你是真的在做实际工作，
+And so, you know, if you're doing this for real,
+
+474
+00:22:52,321 --> 00:22:55,746
+你大概会用最前沿的那种模型，那些能带来
+you're probably using something that's right at the cutting edge and those deliver,
+
+475
+00:22:55,746 --> 00:22:57,000
+更好的表现。
+you know, better performance.
+
+476
+00:22:57,160 --> 00:22:58,760
+对。你现在常用的模型是哪些？
+Yeah. What are your go to models these days?
+
+477
+00:22:59,160 --> 00:23:00,758
+Fable 很棒，
+So Fable is a wonderful, you know,
+
+478
+00:23:00,758 --> 00:23:03,440
+我觉得它现在的视觉品味大概是最好的。
+I think that's probably the best visual taste right now.
+
+479
+00:23:03,560 --> 00:23:05,960
+对，它很慢，所以我不用它做 demo。
+Yeah, it's very slow, and that's why I don't use it for demos.
+
+480
+00:23:06,120 --> 00:23:09,560
+对，我其实经常用 Cursor 的 Composer 2.5。
+Yeah, I use Cursor's Composer 2.5, actually a lot.
+
+481
+00:23:09,880 --> 00:23:13,080
+就速度而言它是个很好的模型。质量很好，非常精准。
+It's a very good model for the speed. Quality is very good, very precise.
+
+482
+00:23:13,930 --> 00:23:16,290
+5.5 通常还是个不错的平衡点。
+5.5 is still usually a pretty good balance.
+
+483
+00:23:16,970 --> 00:23:19,911
+所以我会来回切换。我觉得如果我需要纯粹的品味，
+So I jump around. I think if I need pure taste,
+
+484
+00:23:19,911 --> 00:23:23,330
+那一般会用 fable 和 Anthropic 的模型。
+it's the fable and the anthropic models in general.
+
+485
+00:23:23,410 --> 00:23:25,358
+如果我追求精准，或者遇到那种，
+If I'm going for precision or I have like, hey,
+
+486
+00:23:25,358 --> 00:23:28,330
+我有 100 个画板，需要一个任务把整个列表都过一遍。
+I have 100 artboards and I need a task to, like, go down the entire list.
+
+487
+00:23:28,650 --> 00:23:29,970
+那我可能会用 composer。
+I might reach for the composer.
+
+488
+00:23:30,650 --> 00:23:32,010
+它做得非常精准。
+It just does a really precise job.
+
+489
+00:23:32,730 --> 00:23:35,130
+我发现 Cursor 是个很好的框架，它不会太偷懒。
+I find cursor is a really good harness. It's not too lazy.
+
+490
+00:23:35,170 --> 00:23:37,250
+它经常会启动子 agent 来完成任务。
+It'll often spin up sub agents to get jobs done.
+
+491
+00:23:37,930 --> 00:23:38,810
+所以我会切换着用。
+So I jump around a bit.
+
+492
+00:23:39,040 --> 00:23:41,933
+这里它给了我大概三个不同的想法，
+So here it gave me kind of like three different ideas, you know,
+
+493
+00:23:41,933 --> 00:23:43,991
+从这里开始我通常会做的是，
+and I think from here what I would usually do,
+
+494
+00:23:43,991 --> 00:23:47,218
+多花点时间想清楚我到底想从中得到什么，
+spend a little more time on exactly what I actually want out of out of it
+
+495
+00:23:47,218 --> 00:23:48,720
+然后给它更多方向。
+and then give it more direction.
+
+496
+00:23:48,960 --> 00:23:51,280
+但我可能会开始分支。我会想，哦，我喜欢这个。
+But I might start branching. I might be like, oh, I like this.
+
+497
+00:23:51,640 --> 00:23:54,720
+我挺喜欢这个的列表，它其实很容易阅读。
+I like, you know, I kind of like the list of this. That's actually very easy to read.
+
+498
+00:23:55,720 --> 00:23:58,241
+我其实还挺喜欢这个的卡片布局，
+I kind of like the card layout of this, actually,
+
+499
+00:23:58,241 --> 00:24:01,960
+比如突出一张卡片，旁边再放一些其他卡片，这样挺好。
+like featuring one card and having some other cards to the side is nice.
+
+500
+00:24:02,000 --> 00:24:03,440
+所以我可能就开始分支了。
+So I might just start branching.
+
+501
+00:24:03,560 --> 00:24:07,592
+我觉得它的强大之处在于，你可以让五个 agent 各再生成五个，
+I think the power of this is you can ask five agents to go generate five more of
+
+502
+00:24:07,592 --> 00:24:11,560
+然后找到一个真正符合你想要的。
+each, you know, and kind of find one that really fits what you're going for.
+
+503
+00:24:11,800 --> 00:24:15,571
+我觉得有意思的一点是，它能给你很多灵感，
+I think one of the things that's interesting is it gives you a lot of inspiration
+
+504
+00:24:15,571 --> 00:24:18,600
+和想法，然后你就可以开始分支，顺着一条路走下去。
+and ideas and then you can start branching and going down a path.
+
+505
+00:24:19,160 --> 00:24:21,987
+但设计仍然是模型在做，
+But it's still the models that's doing the design
+
+506
+00:24:21,987 --> 00:24:25,021
+它仍然带有一些典型特征，
+and it's still has some of the hallmarks of the things
+
+507
+00:24:25,021 --> 00:24:28,400
+那些你经常在模型输出里看到的东西，好坏都有。
+that you see models do frequently, for better or for worse.
+
+508
+00:24:28,960 --> 00:24:32,312
+那么当你在设计、拿到这些灵感时，你会怎么做，
+And so how do you, when you're designing and you've got this inspiration,
+
+509
+00:24:32,312 --> 00:24:34,400
+你会想，好，这个列表挺有意思。
+you're like, okay, this list is interesting.
+
+510
+00:24:34,520 --> 00:24:35,920
+我之前还真没想过这么做。
+I hadn't really thought of doing that.
+
+511
+00:24:36,440 --> 00:24:37,480
+也许我想用这个方向。
+Maybe I want to go with that.
+
+512
+00:24:37,920 --> 00:24:42,323
+那你怎么让它更有自己的风格，摆脱那种标准的 AI 生成感
+How do you then make it more your own and get out of kind of the standard slop
+
+513
+00:24:42,323 --> 00:24:44,200
+就是很多模型都会吐出来的那种。
+that a lot of them will spit out.
+
+514
+00:24:44,360 --> 00:24:47,662
+是的，我有一些很具体的规则可以分享给你。
+Yeah, I have some, like, very specific rules I can share with you.
+
+515
+00:24:47,662 --> 00:24:49,130
+一个是模型很喜欢加粗。
+One is that models love bold.
+
+516
+00:24:49,410 --> 00:24:54,050
+它们喜欢粗体风格，所以真的要尽量把字重往回收。
+They love bold styles and, and really like try to pull your font weights back.
+
+517
+00:24:54,090 --> 00:24:55,530
+你知道，加粗真的很诱人。
+You know, it's so tempting to bold things.
+
+518
+00:24:55,650 --> 00:24:57,348
+尽量把它们往细里收，能多细就多细，
+Just try to pull them back as light as you can get
+
+519
+00:24:57,348 --> 00:24:59,090
+它就会神奇地看起来设计感更强。
+and it'll just magically look better designed.
+
+520
+00:24:59,610 --> 00:25:02,250
+另一件事是字号太多了。
+Another thing is too many, too many sizes.
+
+521
+00:25:02,930 --> 00:25:05,660
+模型喜欢用五六七八种不同的字号。
+Models love having 5, 6, 7, 8 different font sizes.
+
+522
+00:25:05,660 --> 00:25:08,130
+尽量控制在三种，如果能收到三种。
+Try to work with three if you get down to three.
+
+523
+00:25:08,130 --> 00:25:09,690
+那我们就在这个上面快速试一下。
+So let's, let's just try it real quick on this one.
+
+524
+00:25:09,730 --> 00:25:13,760
+如果我们把这个降到，嗯，看看，比如说，
+If we, if we bring this down to, um, uh, let's see, like a,
+
+525
+00:25:13,760 --> 00:25:17,790
+比如 500，即便这样可能都比需要的还重。
+like a 500 even that's maybe heavier than it needs to be.
+
+526
+00:25:18,190 --> 00:25:22,750
+嗯，这里也一样。这些其实不需要加粗。这就是典型的 AI 痕迹。
+Um, same here. Like, these don't actually need to be bold. This is such a tell of a, of a.
+
+527
+00:25:22,910 --> 00:25:26,310
+上面这个，"care organized" 用黑体太重了。
+This one up here, the care organized black is so heavy.
+
+528
+00:25:26,510 --> 00:25:29,190
+我们把它往回收，一下子看起来就更有设计感了。
+Let's just pull that back and suddenly it looks more designed already.
+
+529
+00:25:30,000 --> 00:25:33,024
+看起来更干净了。更干净也更亲和。这里也是黑体。
+It looks cleaner. It looks cleaner and more approachable. Black here, too.
+
+530
+00:25:33,024 --> 00:25:34,080
+我们也把它往回收。
+Let's just pull that back.
+
+531
+00:25:34,560 --> 00:25:36,246
+嗯，这些都是非常简单的微调，
+Um, these are really simple tweaks
+
+532
+00:25:36,246 --> 00:25:38,920
+比如你可以调整，这里的对比度其实挺好。
+that like you can make the contrast here is pretty good.
+
+533
+00:25:38,960 --> 00:25:42,200
+很多时候模型会把对比度搞砸。对。所以这是另一个步骤。
+A lot of times models screw up contrast. Yep. Um, so I would, that's another step.
+
+534
+00:25:42,200 --> 00:25:44,520
+你可以确认一下，文字是否可读，对吧？
+You can just make sure is like, is the text readable, right?
+
+535
+00:25:44,560 --> 00:25:49,240
+嗯，这些小的 2、3、4，就我的品味来说对比度有点太强了。
+Um, these, these little 2, 3, 4, these are a little too contrasty for my taste.
+
+536
+00:25:49,280 --> 00:25:51,318
+我大概会把它们收一收。它们本该是辅助元素。
+I would probably pull these back. They're supposed to be a supporting.
+
+537
+00:25:51,318 --> 00:25:52,320
+我大概会直接把它们删掉。
+I would probably just delete them.
+
+538
+00:25:52,360 --> 00:25:53,964
+我是说，这类东西，
+I mean, those are the kind of things
+
+539
+00:25:53,964 --> 00:25:57,560
+就是模型喜欢在那里加数字、小图标之类的东西。
+where the models like to add numbers or little icons or things like that there.
+
+540
+00:25:57,760 --> 00:26:00,448
+对，而且很棒的是你可以直接过一遍把它删掉。
+And yeah, it's really cool that you can just go through and delete it
+
+541
+00:26:00,448 --> 00:26:03,520
+它会把其他内容都吸附上去，而不是在那里留一块空白。
+and it just snaps everything else up rather than leaving a blank space there.
+
+542
+00:26:03,840 --> 00:26:04,560
+没错，完全同意。
+Totally, totally.
+
+543
+00:26:04,600 --> 00:26:07,647
+这其实就是这个工具整体的强大之处之一，
+Well, that's one of the powers of, of, of this tool in general,
+
+544
+00:26:07,647 --> 00:26:09,200
+Paper 首先是一个设计工具。
+is paper is a design tool first.
+
+545
+00:26:09,320 --> 00:26:12,440
+它首先是给人用的设计工具，只是碰巧和 agent 配合得非常好。
+It's a human design tool first. That happens to be really, really good with agents.
+
+546
+00:26:12,760 --> 00:26:14,840
+所以这意味着你可以按需自定义任何东西。
+And so that means you can customize whatever you need to do.
+
+547
+00:26:15,240 --> 00:26:18,160
+你不会被卡在既定路线上，也不用再重新 prompt。
+You're not stuck with like the track you're on. You don't, you don't prompt again.
+
+548
+00:26:18,200 --> 00:26:20,210
+你可以直接伸手进去改东西。
+You can start reaching in and, and changing things.
+
+549
+00:26:21,050 --> 00:26:23,130
+所以，完全同意。也许这个也可以去掉。
+So, yeah, hundred percent agree. Maybe get rid of that one, too.
+
+550
+00:26:23,210 --> 00:26:26,187
+我做的第一件事，是尽量把字号控制在 3 种左右，
+The first thing I do is, is try to get down to like 3 font sizes
+
+551
+00:26:26,187 --> 00:26:28,010
+然后把那些加粗大幅收回来。
+and just pull all that bold way back.
+
+552
+00:26:28,210 --> 00:26:31,210
+对，你马上就能得到更有设计感、更有意图的东西。对。
+Yeah. And you'll immediately get something that feels more designed and intentional. Yeah.
+
+553
+00:26:31,290 --> 00:26:33,810
+对。那接下来你会怎么做？很好，你有了新板块。
+Yeah. And then what do you do from here? Great. You've got the new section.
+
+554
+00:26:34,490 --> 00:26:36,739
+你对它很兴奋，那怎么把它放回去呢？嗯，
+You're excited about it. How do you then wrap it back in? Well,
+
+555
+00:26:36,739 --> 00:26:37,930
+有几种方法。
+so there's a couple ways you can.
+
+556
+00:26:37,970 --> 00:26:40,770
+你可以右键，让我在这里选一下。
+You can right click and let me actually grab here.
+
+557
+00:26:41,390 --> 00:26:42,470
+你可以把它复制成 React。
+You can copy it as react.
+
+558
+00:26:43,550 --> 00:26:45,950
+不过这算是比较绕的方式。
+So that's kind of the long way though.
+
+559
+00:26:46,070 --> 00:26:48,430
+我可以把它导出成代码，粘贴到我的 IDE 里。
+So I can get this out as code and paste it into my IDE.
+
+560
+00:26:48,750 --> 00:26:51,590
+你也可以直接让 agent 把它拉回去。
+You can also just ask the agent to pull this back.
+
+561
+00:26:51,630 --> 00:26:56,181
+比如我打开了 Paper 的代码库，你可以直接说，
+So, you know, I have the paper code base open, but you can just say, you know,
+
+562
+00:26:56,181 --> 00:27:00,584
+请把我在 Paper 里选中的部分构建成代码库里的一个新组件，
+please build my selection in paper into a new component in the code base,
+
+563
+00:27:00,584 --> 00:27:03,080
+当然这个我们不会真的发布到 Paper 里。
+which we will not actually ship in paper.
+
+564
+00:27:03,320 --> 00:27:06,572
+它能读到我们刚才做的一切，也非常了解我的代码库，
+It can read everything that we just did and it knows my code base really well
+
+565
+00:27:06,572 --> 00:27:08,040
+因为这就是我平时用的 agent。
+because it's the agent that I use.
+
+566
+00:27:08,120 --> 00:27:09,600
+所以它真的可以把这个设计接进来。
+And so it can actually pull in this design.
+
+567
+00:27:09,640 --> 00:27:13,278
+它会匹配我们已有的代码风格和约定，
+It'll match the, the coding styles that we have and the conventions that we have
+
+568
+00:27:13,278 --> 00:27:16,310
+然后把它构建进代码库，而如果它本来就存在，
+and build it into the, into the code base and if it already existed,
+
+569
+00:27:16,310 --> 00:27:18,680
+通常你已经把它做成一个组件了。
+usually you would already have this as a component.
+
+570
+00:27:18,880 --> 00:27:20,800
+它只会去更新它，而且速度非常非常快。
+It would just update it, you know, and it's really, really fast.
+
+571
+00:27:20,920 --> 00:27:23,980
+所以我们看到很多人现在就是这样，这就是整个闭环了。
+So we see a lot of people are just kind of like, this is the whole loop now.
+
+572
+00:27:24,180 --> 00:27:25,660
+甚至连交接都没有了。
+Like, there isn't even a handoff anymore.
+
+573
+00:27:25,700 --> 00:27:28,530
+就是一个人在做这些改动、迭代，
+It's just like one person, right, making these changes and iterating and,
+
+574
+00:27:28,530 --> 00:27:29,900
+然后交付，这真的很酷。
+and shipping, which is really cool.
+
+575
+00:27:30,060 --> 00:27:30,740
+对，真的很酷。
+Yeah, it's really cool.
+
+576
+00:27:30,780 --> 00:27:33,137
+对，这就是它强大的地方，
+Yeah, that's what's so powerful is, you know,
+
+577
+00:27:33,137 --> 00:27:37,232
+设计师现在比以往任何时候都更容易，
+it's easier than ever for designers to actually build and ship things in the way
+
+578
+00:27:37,232 --> 00:27:38,100
+按自己设想的样子把东西构建并交付出来。
+that they see it.
+
+579
+00:27:38,740 --> 00:27:42,338
+对。而且能真正走完最后一公里，让东西真正上线，
+Yes. And to. To actually get that last mile and get something alive
+
+580
+00:27:42,338 --> 00:27:44,300
+然后迭代它，把它做得更好。
+and iterate on it and make it better.
+
+581
+00:27:44,750 --> 00:27:48,674
+我觉得正是这样的工具在给人超能力，
+And it's, it's tools like this that I think are giving people superpowers, which is,
+
+582
+00:27:48,674 --> 00:27:52,430
+这是一个全新的世界，一个人就能做完整个团队的活。
+uh, it's, it's a whole new world where one person can do the work of an entire team.
+
+583
+00:27:53,030 --> 00:27:55,653
+哦，绝对是。对，绝对是。而且我觉得就算在团队里，
+Oh, absolutely. Yeah, absolutely. And I think even in teams,
+
+584
+00:27:55,653 --> 00:27:56,990
+我们也看到了很多这样的情况。
+we're seeing a lot of this, too.
+
+585
+00:27:56,990 --> 00:27:59,356
+嗯，所以团队用这个也在提速。
+Um, so teams are speeding up using this.
+
+586
+00:27:59,356 --> 00:28:02,510
+但我觉得核心还是 agentic 工作流。
+Uh but but I think the core of it is agentic workflows.
+
+587
+00:28:02,710 --> 00:28:05,730
+嗯，如果你是用 agent 来完成工作的，
+Um, if you, if you're using agents to accomplish your work,
+
+588
+00:28:05,730 --> 00:28:09,120
+你就需要能和 agent 很好对话的工具。
+you need tools that speak to the agents, you know, in a really well.
+
+589
+00:28:09,640 --> 00:28:12,113
+这正是我们所专注的方向。
+And so that's what we're, you know, focusing on.
+
+590
+00:28:12,113 --> 00:28:14,400
+YC 的下一批正在接受申请。
+YC's next batch is now taking applications.
+
+591
+00:28:14,720 --> 00:28:18,520
+有创业项目吗？可以到 ycombinator.com/apply 申请。
+Got a startup in? You apply at ycombinator.comslashapply.
+
+592
+00:28:19,200 --> 00:28:23,080
+什么时候都不算太早，而且填申请表本身就能让你的想法更成熟。
+It's never too early. And filling out the app will level up your idea.
+
+593
+00:28:23,600 --> 00:28:26,540
+好，回到视频。我们再来一个？来吧。
+Okay, back to the video. Should we do one more? Let's do it.
+
+594
+00:28:26,620 --> 00:28:30,000
+这是另一个。好，我们看到的是 Sytex accelerate。
+Here's another one. All right. We got Sytex accelerate.
+
+595
+00:28:30,000 --> 00:28:33,108
+Great field infrastructure operations，规划流程，
+Great field infrastructure operations, plan the process,
+
+596
+00:28:33,108 --> 00:28:36,900
+在现场执行，并把每个动作都变成一个持续更新的知识库，
+execute in the field and turn every action into one living knowledge base
+
+597
+00:28:36,900 --> 00:28:39,200
+你可以监控它、自动化它，直接提问就行。
+that you can monitor, automate and just ask.
+
+598
+00:28:39,960 --> 00:28:45,163
+好，我第一眼注意到的就是同样超粗的标题，
+Okay. I mean, right away, the first thing I notice is same super bold headline just
+
+599
+00:28:45,163 --> 00:28:47,000
+就是你刚才说的那种。
+like you were talking about.
+
+600
+00:28:48,120 --> 00:28:52,640
+有那种发光效果，配色很有 vibe coding 的味道，大量紫色。
+We've got some of those glows, the colors feel vibe coated, a lot of purple.
+
+601
+00:28:53,170 --> 00:28:55,890
+还有，这通常也是一个明显的痕迹。
+Again, you know, tends to be another tell.
+
+602
+00:28:56,730 --> 00:29:00,170
+这里的动画看着挺酷，有点像在展示产品怎么运作。
+The animation here looks cool. It's kind of like showing how the product works.
+
+603
+00:29:00,450 --> 00:29:02,730
+我很喜欢，很棒，能抓住我的注意力。
+I love that. That's great. Yeah, that gets my attention. Yeah.
+
+604
+00:29:03,130 --> 00:29:06,130
+而且在看到动画之前，我根本不知道这是干嘛的。
+Also, I had no idea what it was until we got to the animation.
+
+605
+00:29:06,330 --> 00:29:08,353
+是啊，我现在也还是不太确定，不过嗯，
+Yeah. I still am not quite sure. But yeah,
+
+606
+00:29:08,353 --> 00:29:11,090
+大概是个类似看板（Kanban）的东西吧。
+it's something that looks like a Kanban board, I guess.
+
+607
+00:29:11,450 --> 00:29:11,690
+对。
+Yeah.
+
+608
+00:29:11,690 --> 00:29:15,663
+我能感觉到，我可以把信息组织成一种方式，
+And I'm getting the sense that I can have my information in such a way
+
+609
+00:29:15,663 --> 00:29:17,650
+让我更容易监控它。
+that I can monitor it more easily.
+
+610
+00:29:17,730 --> 00:29:21,908
+我在设计上的反馈是，其实要更清楚地说明
+And then I think I would, my feedback here for design is actually make it more clear
+
+611
+00:29:21,908 --> 00:29:23,690
+作为用户我能从中得到什么。
+what I'm getting out of it as a user.
+
+612
+00:29:24,650 --> 00:29:28,475
+有意思的是，他们下面放了这张图，
+Well, it's interesting because then they've got this, this image down here,
+
+613
+00:29:28,475 --> 00:29:29,850
+一个正在播放的视频。
+this video that's playing.
+
+614
+00:29:30,290 --> 00:29:31,936
+里面是工程卡车，
+It's showing construction trucks
+
+615
+00:29:31,936 --> 00:29:34,490
+还有个戴安全帽的人在用手机操作。
+and somebody with a hard hat on working on their phone.
+
+616
+00:29:34,610 --> 00:29:38,113
+然后你往上看，写的是 field operations，或者说
+And, uh, you go back up and it's like the field operations or yeah,
+
+617
+00:29:38,113 --> 00:29:41,097
+field infrastructure operations，好，
+field infrastructure operations and it's like, okay,
+
+618
+00:29:41,097 --> 00:29:45,508
+这大概是管理施工或重型
+this is something with managing operations for involving construction or heavy
+
+619
+00:29:45,508 --> 00:29:47,389
+机械之类运营的东西。
+machinery or something like that.
+
+620
+00:29:47,909 --> 00:29:50,770
+但在首屏这里并不明显，因为
+Um, but it's not obvious above the fold here because that
+
+621
+00:29:50,770 --> 00:29:53,509
+那个最关键的线索其实在首屏下方。
+that biggest clue right there is right below the fold.
+
+622
+00:29:53,989 --> 00:29:56,029
+我也很想知道，它到底具体在做什么？
+And I would love to see too, like what is it actually doing?
+
+623
+00:29:56,029 --> 00:29:58,829
+因为我已经能用带 AI 的看板了。
+Because I can, I have AI enabled comb on boards already.
+
+624
+00:29:58,869 --> 00:30:00,920
+那它对施工行业到底特别在哪里？
+So what what is what is making it's special for construction?
+
+625
+00:30:00,960 --> 00:30:04,120
+我很想在上面的价值主张里就看到这一点。
+I would love to see that right as a as part of the value prop above.
+
+626
+00:30:04,520 --> 00:30:07,795
+但回到你说的那些基本功上，比如很，
+But to your point on, on some of the fundamentals like very, you know,
+
+627
+00:30:07,795 --> 00:30:08,600
+这里的加粗。
+the bold is here.
+
+628
+00:30:09,680 --> 00:30:13,360
+看起来有一部分可能是 AI 生成的。这是另一个很典型的部分。
+This looks like it maybe an AI created some of it. Here's another great section.
+
+629
+00:30:13,400 --> 00:30:17,520
+这里如果少用几种文字样式，会干净很多。
+So here's one that would be cleaned up a lot by having fewer text styles.
+
+630
+00:30:17,880 --> 00:30:22,280
+你看，一种字号、两种、三种、四种。
+So you see like, you know, one size, two sizes, three sizes, four sizes.
+
+631
+00:30:22,590 --> 00:30:24,070
+这大概也算一个痕迹。对。
+That's probably another one, too. Yeah.
+
+632
+00:30:24,630 --> 00:30:26,670
+如果减到三种，看起来会好很多。
+If you take that down to three, it's gonna look so much better.
+
+633
+00:30:26,670 --> 00:30:30,190
+我们快速试一下，我甚至可以让 agent 帮我们改。
+So let's just try that real quick and I can, I'll even ask the agent to do it for us.
+
+634
+00:30:30,350 --> 00:30:33,656
+我还是用 Paper Snapshot 从线上网站抓下来，
+And again, I use Paper Snapshot to grab it from the live site,
+
+635
+00:30:33,656 --> 00:30:37,161
+粘到 Paper 里变成可编辑图层，然后我们就说，
+paste it into paper as editable layers, and then we'll just say,
+
+636
+00:30:37,161 --> 00:30:38,550
+我先给这个命个名。
+let me just name this one.
+
+637
+00:30:38,550 --> 00:30:42,230
+这是另一种做法。你可以说，这个是 Sytex
+Here's another way you can do it. You can say, what is that is Sytex.
+
+638
+00:30:45,670 --> 00:30:46,870
+这个我们交给 cursor。
+This one we'll give to cursor.
+
+639
+00:30:47,030 --> 00:30:54,093
+我们说，嘿 cursor，请整理一下 Sytex 这个 frame，最多用三种字
+We'll say, hey, cursor, please clean up the Sytex frame using at most three font
+
+640
+00:30:54,093 --> 00:30:59,230
+号，不要加粗，字重都用 regular 或更细。
+sizes and no bold, everything regular or below in weight.
+
+641
+00:30:59,670 --> 00:31:02,683
+所以你把那个 frame 命名为 Sytex，然后就把
+And so you named that frame Sytex and then you just gave it
+
+642
+00:31:02,683 --> 00:31:04,350
+那个上下文线索给了 agent。
+that context clue to the agent.
+
+643
+00:31:04,630 --> 00:31:07,910
+没错。就是用不同的方式告诉它你想让它处理什么。
+Exactly. Just different ways to kind of tell it what you want it to work on.
+
+644
+00:31:07,950 --> 00:31:10,110
+对，其实我最喜欢的是留评论。
+Yeah. You know, my favorite is actually leaving comments.
+
+645
+00:31:10,550 --> 00:31:12,639
+嗯，关于选中这件事，
+Um, and I would the thing with the selection,
+
+646
+00:31:12,639 --> 00:31:14,616
+我刚才来回操作的时候注意到，
+I noticed earlier as I was jumping around,
+
+647
+00:31:14,616 --> 00:31:18,230
+你会经常改变选中的对象，我有时会不小心取消选中。
+you tend to change your selection a lot and I'll accidentally like deselect.
+
+648
+00:31:18,270 --> 00:31:21,070
+所以我很喜欢留评论，我觉得这是最好的方式。
+So I love leaving comments. I think it's just the best way to do things.
+
+649
+00:31:21,110 --> 00:31:21,670
+好，我们来看。
+But here we go.
+
+650
+00:31:21,670 --> 00:31:25,005
+它开始处理这个了，会去对齐，把
+So it's starting to work on this one and it's gonna align just, you know, bring,
+
+651
+00:31:25,005 --> 00:31:26,750
+把那种 vibe coding 出来的东西再拉回来一点。
+bring back some of that vibe coded stuff.
+
+652
+00:31:26,910 --> 00:31:30,835
+在 Paper 里，我们其实会给模型指令，让它别犯这些
+Now in paper, we actually give instructions to the model not to do these these
+
+653
+00:31:30,835 --> 00:31:34,760
+常见错误。有时候人们会问，你们的独门秘方是什么？
+common mistakes and and sometimes people go like, what's your secret sauce?
+
+654
+00:31:34,800 --> 00:31:36,520
+比如它为什么更好？为什么看起来更好？
+Like how, why is it better? Why does it look better?
+
+655
+00:31:36,520 --> 00:31:40,080
+说实话，我们做的其实就是这些排版和对比的基本规则。
+And it's just like, honestly, all we're doing is these basic rules of typography and contrast.
+
+656
+00:31:40,240 --> 00:31:42,738
+对，我们让团队里更资深的设计师，
+Yeah. And we, we had the more senior designers on the team,
+
+657
+00:31:42,738 --> 00:31:45,080
+把他们的经验提炼进这些指令里。
+like distill their knowledge into the instructions.
+
+658
+00:31:45,240 --> 00:31:46,240
+这对模型很有帮助。
+That's great for the model.
+
+659
+00:31:46,400 --> 00:31:48,725
+是啊，光是这样其实就很强大，
+Yeah, even that is is very powerful, though,
+
+660
+00:31:48,725 --> 00:31:52,936
+只要给模型的行为加上这些护栏，就能省下
+just putting those guardrails up around what the models are doing can just save a
+
+661
+00:31:52,936 --> 00:31:54,130
+大量的时间和精力。
+lot of time and energy.
+
+662
+00:31:54,370 --> 00:31:55,823
+是的，就像专家一样，
+Yeah, like an expert, you know,
+
+663
+00:31:55,823 --> 00:31:59,010
+稍微引导一下模型，在实际中真的很有帮助。
+kind of guiding the model a little bit is really helpful in real life.
+
+664
+00:31:59,010 --> 00:32:00,890
+我可能会直接手动做这个，因为那样更快。
+I might have just done this by hand because it'd be faster.
+
+665
+00:32:00,970 --> 00:32:03,452
+但如果你想要过一遍整个网站，比如说，
+But if you had an entire site that you wanted to go through, for instance,
+
+666
+00:32:03,452 --> 00:32:04,610
+用 agent 就非常有用。
+using the agent is really useful.
+
+667
+00:32:05,050 --> 00:32:08,275
+或者当你做完后想把它拉回代码库里，
+Or if you wanted to pull this back into your code base when you're done,
+
+668
+00:32:08,275 --> 00:32:09,610
+agent 可以帮你做这件事。
+the agent can do that for you.
+
+669
+00:32:09,810 --> 00:32:13,820
+这看起来已经是巨大的改进了。是的，其实都是很简单的改动，对吧？
+This already looks like a huge improvement. Yeah, I think it very simple changes, right?
+
+670
+00:32:13,820 --> 00:32:16,089
+我们只是把字体的字重调回来，
+All we did was pull back the weight of the font
+
+671
+00:32:16,089 --> 00:32:18,420
+并统一了字号的数量。
+and we consolidated how many sizes there are.
+
+672
+00:32:18,780 --> 00:32:20,860
+对我来说，它看起来更有设计感、更有意图。
+To me, it looks much more designed and more intentional.
+
+673
+00:32:21,460 --> 00:32:26,298
+如果我们再把原版调出来，你看，这就是那种，
+And so if we go pull the original again, like, you know, here's, here's kind of the,
+
+674
+00:32:26,298 --> 00:32:28,860
+我们现在把 Paper 打开做个并排对比。
+we'll pull up paper and do a side by side now.
+
+675
+00:32:29,140 --> 00:32:30,540
+这当然是主观的，对吧？
+And this is, this is subjective, right?
+
+676
+00:32:30,540 --> 00:32:32,922
+我知道肯定有人在这个设计上花了些时间，
+And I know somebody probably spent some time on this design
+
+677
+00:32:32,922 --> 00:32:34,380
+我觉得他们把内容做得很到位。
+and I think they nailed the content.
+
+678
+00:32:34,990 --> 00:32:37,914
+但把其中一些 AI 味儿去掉后，对我来说，
+But by pulling some of these AI tells out of it, to me,
+
+679
+00:32:37,914 --> 00:32:40,430
+右边这个感觉更值得信赖。
+the one on the right feels more trustworthy.
+
+680
+00:32:40,550 --> 00:32:42,251
+它感觉更有意图、更有设计感。
+It feels more intentional and more designed.
+
+681
+00:32:42,251 --> 00:32:44,310
+你提到那些 AI 设计痕迹，很有意思。
+It's interesting you talk about some of those AI tells.
+
+682
+00:32:44,910 --> 00:32:47,110
+是的，你见过最常见的有哪些？
+Yeah. What are some of the most common ones you've seen?
+
+683
+00:32:47,190 --> 00:32:51,015
+当你看一个页面或一个设计时，有哪些线索会让你觉得，
+What are the clues when you look at a page or you look at a design and you go,
+
+684
+00:32:51,015 --> 00:32:55,350
+有人只是把模型吐出来的东西直接拿来用，觉得行了就走人。
+somebody just spit out whatever the model spit out and called it good and moved on.
+
+685
+00:32:55,770 --> 00:32:57,010
+第一，我觉得你不该那么做。
+One, I don't think you should do that.
+
+686
+00:32:57,090 --> 00:32:59,970
+而这非常有诱惑力，尤其是，我敢肯定如果你是那种，
+And it's so tempting as especially, I'm sure if you're like a.
+
+687
+00:33:00,040 --> 00:33:03,010
+YC 的创始人，你完全没时间，还在努力做你的第一笔，你懂的，
+I see founder and you have zero time and you're trying to sell your first, you know,
+
+688
+00:33:03,010 --> 00:33:03,840
+完成第一批销售。
+make your first sales.
+
+689
+00:33:04,200 --> 00:33:07,040
+直接用 Claude 生成的设计可能非常有诱惑力。
+It's probably very tempting to use whatever cloud design spits out.
+
+690
+00:33:07,520 --> 00:33:10,320
+我觉得你不该这么做，因为我不认为它能帮你从人群中脱颖而出。
+I don't think you should do it because I I don't think it helps you stand out from the crowd.
+
+691
+00:33:10,400 --> 00:33:13,018
+我觉得它会让你看起来像其他上百万个项目中的一个，
+I think it makes you look like one of a million other projects
+
+692
+00:33:13,018 --> 00:33:16,160
+让你显得更缺乏用心，更像是不在乎。
+and it makes you look less intentional and less like, less like you care.
+
+693
+00:33:16,480 --> 00:33:18,480
+所以我觉得设计是一个很好的差异化因素。
+And so I think design is this great differentiator.
+
+694
+00:33:18,640 --> 00:33:21,426
+如果你看过去 10、20 年里每一家伟大的公司，
+And if you look at every great company of the last 10, 20 years,
+
+695
+00:33:21,426 --> 00:33:24,266
+基本上它们都有卓越的设计，
+like basically all of them have exceptional design, you know,
+
+696
+00:33:24,266 --> 00:33:27,270
+我想不出一个反例。
+and I think that there's, I can't think of an example that doesn't.
+
+697
+00:33:27,590 --> 00:33:30,479
+所以我觉得如果你想成为那些真正伟大的公司之一，
+You know, and so I think if you want to be one of those really great companies,
+
+698
+00:33:30,479 --> 00:33:33,230
+你就得在设计上用心，确保自己能脱颖而出。
+you have to put the care in on design and, and make sure that you stand out.
+
+699
+00:33:33,750 --> 00:33:36,599
+说到 AI 设计痕迹，我们聊过字重、字号，
+So AI tells, you know, we talked about the font weight, the font sizes,
+
+700
+00:33:36,599 --> 00:33:37,630
+这些对我来说是很明显的。
+those are huge ones to me.
+
+701
+00:33:38,070 --> 00:33:42,127
+YC 下一批现在开始接受申请了。有创业项目吗？
+YC's next batch is now taking applications. Got a startup in?
+
+702
+00:33:42,127 --> 00:33:44,990
+你可以在 ycombinator.com/apply 申请。
+You apply at ycombinator.comslashapply.
+
+703
+00:33:45,590 --> 00:33:49,510
+永远不嫌早。填写申请还会让你的想法更完善。
+It's never too early. And filling out the app will level up your idea.
+
+704
+00:33:50,070 --> 00:33:51,270
+好，回到视频。
+Okay, back to the video.
+
+705
+00:33:51,630 --> 00:33:54,852
+你可能见过那种侧边的一小道颜色，
+You've probably seen the um the side the little side swoop of color,
+
+706
+00:33:54,852 --> 00:33:56,750
+就像每张卡片上那两像素的颜色。
+like a two pixels of color on every card.
+
+707
+00:33:56,870 --> 00:34:00,430
+是的，还有普遍地滥用卡片，满屏都是 20 张卡片。
+Yeah, overusing cards in general, just 20 cards all over the place.
+
+708
+00:34:00,950 --> 00:34:02,630
+这些其实也都很容易修正。
+Now, these are very easy things to correct, too.
+
+709
+00:34:02,710 --> 00:34:05,597
+只要让 agent，让 Paper 生成那个布局的 20 个变体，
+Just ask the agent, ask paper to create 20 variations of that layout
+
+710
+00:34:05,597 --> 00:34:09,102
+然后挑一个你最喜欢的，因为它会比只堆一堆卡片
+and then pick your favorite one because it's gonna look a lot more thoughtful than
+
+711
+00:34:09,102 --> 00:34:10,030
+看起来用心得多。
+just a bunch of cards.
+
+712
+00:34:10,190 --> 00:34:12,596
+是的，到处都是。你有没有其他的，你，
+Yeah, um, all over the place. What are some of your, do you,
+
+713
+00:34:12,596 --> 00:34:14,150
+你有没有其他关于紫色的例子？
+do you have other examples of purple?
+
+714
+00:34:14,430 --> 00:34:18,995
+哦，紫色。是的，大量渐变、大量图标，还有，
+Oh, purple. Yeah, a lot of gradients, a lot of icons and, um,
+
+715
+00:34:18,995 --> 00:34:21,510
+全大写的、很小的标题。
+all caps head like tiny headers.
+
+716
+00:34:21,670 --> 00:34:22,910
+哦，那些小标题。对。
+Oh, the tiny headers. Yeah.
+
+717
+00:34:23,550 --> 00:34:26,990
+你知道吗？很多都是为了做组件而做组件。
+You know what? A lot of it turns out to be widgets for widgets sake.
+
+718
+00:34:27,510 --> 00:34:29,189
+你懂的，它并不是那种
+You know, it's, it's not something
+
+719
+00:34:29,189 --> 00:34:33,243
+真正想传达某种重要或有价值的信息，去帮助
+that's actually trying to communicate something important or valuable to help the
+
+720
+00:34:33,243 --> 00:34:36,080
+用户理解这个设计想要传达什么的东西。
+user understand what the design is trying to communicate.
+
+721
+00:34:36,320 --> 00:34:39,520
+完全同意。很多东西感觉就是用来填空间的。
+Totally. It's just there to fill up space is what a lot of it feels like.
+
+722
+00:34:39,680 --> 00:34:43,360
+就像一个不自信的设计师。agent 都很不自信。对，都得填满。
+It's like an insecure designer. The agents are very insecure. Yeah, fill it out.
+
+723
+00:34:43,440 --> 00:34:45,863
+到处都是一些小数字。对，没错。
+And there's like lots of little ones and twos. Yes, exactly.
+
+724
+00:34:45,863 --> 00:34:46,880
+比如你为什么需要那个？
+Like why do you need that?
+
+725
+00:34:46,920 --> 00:34:50,880
+我也不知道。好像是为了让那些卡片的角落看起来更稳一点吧。
+Well, I don't know. It looks like it anchors the corners on all those cards better or something.
+
+726
+00:34:50,920 --> 00:34:52,907
+但它真的传达了什么信息吗？对。
+But like, does it actually communicate anything? Yeah.
+
+727
+00:34:52,907 --> 00:34:54,640
+那些数字有意义吗？没有。
+Do those numbers mean something? No, they don't.
+
+728
+00:34:54,720 --> 00:34:56,960
+那我们就该把它们删掉。完全同意。没错。
+Well, we should just get rid of them then. Totally. Totally.
+
+729
+00:34:57,200 --> 00:34:59,550
+我觉得设计很大一部分就是删减，对。
+I think a lot of design is deleting, you know, yes,
+
+730
+00:34:59,550 --> 00:35:02,015
+先做过头再往回收，其实挺好的。
+it's kind of nice to overbuild and then pull it back,
+
+731
+00:35:02,015 --> 00:35:04,480
+但避免 agent 味儿很多时候就是做减法。
+but a lot of avoiding the agent look is pulling back.
+
+732
+00:35:04,800 --> 00:35:07,881
+难的地方在于，模型吐出一堆东西，
+It's hard when, you know, the model spits something out
+
+733
+00:35:07,881 --> 00:35:11,230
+然后你得进去编辑，还得说，哦，
+and then you've got to go in and edit it and you have to say, oh,
+
+734
+00:35:11,230 --> 00:35:16,320
+那个标题，然后描述它一堆东西，而不是直接进去选中它。
+that headline and describe it and all this stuff versus when you can just go in and select it.
+
+735
+00:35:16,400 --> 00:35:18,960
+按一下删除键，一切就归位了。
+Hit the delete button and everything snaps into place.
+
+736
+00:35:19,510 --> 00:35:21,808
+你会觉得掌控感强多了，
+It feels like you have so much more control
+
+737
+00:35:21,808 --> 00:35:26,470
+而且把它调到更用心的状态所需的力气少太多太多了。
+and the effort required to get it to a more thoughtful place is way, way, way, way less.
+
+738
+00:35:26,950 --> 00:35:29,329
+我觉得这非常强大，
+And that I think is incredibly powerful that
+
+739
+00:35:29,329 --> 00:35:32,030
+它不会逼人在速度上妥协，
+that doesn't force people to compromise on speed,
+
+740
+00:35:32,030 --> 00:35:34,795
+但他们仍然能做出看起来非常、
+but they can still get something that looks really,
+
+741
+00:35:34,795 --> 00:35:38,910
+非常棒、能脱颖而出、又不像模型直接吐出来的东西。
+really great and stands out and doesn't feel like the models just spit it out.
+
+742
+00:35:39,230 --> 00:35:41,425
+有时我们把它理解成为工作选最合适的工具，
+Sometimes we think about this as the best tool for the job
+
+743
+00:35:41,425 --> 00:35:43,760
+有时是用提示词，有时是用拖拽。
+and sometimes it's prompting and sometimes it's dragging.
+
+744
+00:35:43,920 --> 00:35:47,560
+对。而且你不想用错工具，那样就不好了。
+Yeah. And. And some you don't want to use the wrong one. That's that's no good.
+
+745
+00:35:47,560 --> 00:35:52,040
+对吧？所以每个 vibe coding 出来的应用都有浅色和深色模式。
+Right? So every vibe coded app has light mode and dark mode.
+
+746
+00:35:52,640 --> 00:35:55,765
+这种东西几乎所有 MVP、所有初版都有，
+And it's the kind of thing all MVPs all first, you know,
+
+747
+00:35:55,765 --> 00:35:59,445
+就是说没人会把它当作第一个要发布的功能，
+it's like nobody would ever build that as like the first feature
+
+748
+00:35:59,445 --> 00:36:01,320
+对吧？
+that they want to launch, right?
+
+749
+00:36:01,480 --> 00:36:04,480
+只是它是白送的，模型又特别爱做这个。
+It's just that you get it for free and the models love to do it.
+
+750
+00:36:04,560 --> 00:36:06,520
+所以大家才都有它。
+And so that's why everybody has that.
+
+751
+00:36:07,160 --> 00:36:08,950
+但它很少是那种，你懂的，
+But rarely is it the thing that, you know,
+
+752
+00:36:08,950 --> 00:36:11,320
+值得花时间去做、或值得放进设计里的东西。
+is worth spending time on or including in your design.
+
+753
+00:36:11,360 --> 00:36:14,080
+所以这也是很明显的 AI 味儿之一。而且它真的好吗？
+And so that's one of the big tells as well. And is it actually good?
+
+754
+00:36:14,160 --> 00:36:16,935
+我觉得糟糕的深色模式又是另一个明显的痕迹，对吧，
+You know, I think a bad dark mode is another, another big tell, right,
+
+755
+00:36:16,935 --> 00:36:19,564
+就是它真的直接用纯黑，而不是，你懂的，
+where it's like it's literally using black instead of, you know,
+
+756
+00:36:19,564 --> 00:36:21,560
+或者只是把颜色反过来之类的。
+or just reversing the colors or things like this.
+
+757
+00:36:21,600 --> 00:36:24,491
+对。Wes 最近发了条很棒的推文，展示了那四个，
+Yeah. So, so Wes had a great tweet recently showing the four,
+
+758
+00:36:24,491 --> 00:36:26,920
+天启四骑士，就是那个。
+the Four Horsemen of the Apocalypse, which is the.
+
+759
+00:36:27,080 --> 00:36:29,204
+对，我们聊过这个。对，
+Yeah, I mean, we talked about this. Yeah,
+
+760
+00:36:29,204 --> 00:36:32,640
+如果你有那个，大概直接删掉就行，去掉它。
+that's probably just delete that if you have that, get rid of that.
+
+761
+00:36:32,640 --> 00:36:33,160
+你不需要它。
+You don't need it.
+
+762
+00:36:33,480 --> 00:36:36,522
+这个，全大写的小标签大概也不需要，
+This one, the all uppercase little kickers probably don't need
+
+763
+00:36:36,522 --> 00:36:38,760
+还带着额外的字间距。
+that with the extra letter spacing in between.
+
+764
+00:36:39,040 --> 00:36:43,000
+完全同意。这就像我 14 岁学设计的时候。
+Totally. Yeah. This was like me when I was learning design when I was 14 years old.
+
+765
+00:36:43,000 --> 00:36:46,560
+我当时觉得，对，把字拉开，看起来超棒。对，这个例子很典型。
+I was like, yeah, space the stuff out. It looks great. Yeah, this is a good one.
+
+766
+00:36:46,640 --> 00:36:48,600
+那些带小图标的徽章。
+The badges with the extra little icons.
+
+767
+00:36:49,160 --> 00:36:52,257
+一堆胶囊标签，一堆图标。对。而且当然，
+A lot of pills, a lot of icons. Yeah. And, and, yeah. And of course,
+
+768
+00:36:52,257 --> 00:36:53,290
+还有紫色渐变。
+the purple gradient.
+
+769
+00:36:53,410 --> 00:36:56,410
+对。对。你知道，Linear 把这种风格做得很出彩。
+Yeah. Yeah. You know, linear made this style great.
+
+770
+00:36:56,450 --> 00:36:59,410
+然后我觉得它就被写进模型里了，接下来，你懂的。
+And then I think it got encoded into the models for the next, you know.
+
+771
+00:36:59,490 --> 00:37:03,434
+对，有意思的一点是，单独看，
+Yeah, I mean, that's one of the things that's interesting is in isolation,
+
+772
+00:37:03,434 --> 00:37:04,770
+这些东西并不差。
+these things are not bad.
+
+773
+00:37:05,130 --> 00:37:08,867
+只是当它们被滥用、你到处都能看到时，就像你说的，
+It's just when they're overused and you see it all the time, to your point,
+
+774
+00:37:08,867 --> 00:37:09,970
+它就没法脱颖而出了。
+it doesn't stand out.
+
+775
+00:37:10,490 --> 00:37:13,274
+对。而且看起来很粗糙。设计一直在演变。
+Yeah. And it looks sloppy. Design is always evolving.
+
+776
+00:37:13,274 --> 00:37:15,130
+标准一直在演变。
+The standards are always evolving.
+
+777
+00:37:15,290 --> 00:37:16,850
+基准线一直在演变。
+The baseline is always evolving.
+
+778
+00:37:17,650 --> 00:37:20,330
+你必须始终走在它前面。
+And you always have to be stay ahead of that.
+
+779
+00:37:21,130 --> 00:37:23,584
+否则，你就会看起来很普通，
+Otherwise, you know, you just, you look like an average thing
+
+780
+00:37:23,584 --> 00:37:25,365
+而普通的东西是不出彩的，
+and the average thing is not exceptional and
+
+781
+00:37:25,365 --> 00:37:27,290
+那不是人们会想去用的东西。
+that's not something people are excited to use.
+
+782
+00:37:27,490 --> 00:37:29,556
+我觉得很难做出一家伟大的公司，
+And I think it's hard to build a great company
+
+783
+00:37:29,556 --> 00:37:31,846
+如果你对外呈现得很平庸，
+if you have a mediocre presentation to the world,
+
+784
+00:37:31,846 --> 00:37:35,532
+它甚至会影响你招到什么人，谁会被你的公司吸引，招募到
+even impact who you hire and who's attracted to your company for recruiting the
+
+785
+00:37:35,532 --> 00:37:37,040
+你想要的人才。
+talent you can, you know, track.
+
+786
+00:37:37,120 --> 00:37:41,160
+所以值得用心去做。好，我们来看看这个 Moreta。
+So it's worth being intentional. All right, let's take a look at Moreta here.
+
+787
+00:37:41,440 --> 00:37:44,101
+通过二维码像本地人一样付款，一个全球钱包，
+Pay like a local via QR codes, a global wallet
+
+788
+00:37:44,101 --> 00:37:47,840
+在亚洲和拉丁美洲解锁本地二维码支付。
+that unlocks local QR payments across Asia and Latin America.
+
+789
+00:37:49,200 --> 00:37:54,350
+好，这里有一堆国旗，我想代表很多国家。
+Okay, so we've got a bunch of flags, which I think indicates lots of countries.
+
+790
+00:37:55,710 --> 00:38:00,110
+这是个支付产品，我就有点紧张了。
+It's a payments thing, and I get a little nervous.
+
+791
+00:38:00,790 --> 00:38:03,790
+一个看起来像随手 vibe coding 出来的支付产品。
+A payments thing that looks vibe coded.
+
+792
+00:38:04,590 --> 00:38:07,542
+是啊，再说一次，品牌的可信度真的很重要，
+Yeah, again, the the credibility of your brand is really important,
+
+793
+00:38:07,542 --> 00:38:09,510
+尤其是涉及金融的时候。
+especially if you're dealing with finances.
+
+794
+00:38:10,670 --> 00:38:13,282
+这又是一个例子，把内容往上提，
+Here's another example of like pull up the content, you know,
+
+795
+00:38:13,282 --> 00:38:14,870
+把好内容放到首屏之上。
+get your good content above the fold.
+
+796
+00:38:15,690 --> 00:38:18,662
+我还挺喜欢这个网站的活力，尽管有些地方有点，
+I kind of like the energy of this site, even though some of it is a little,
+
+797
+00:38:18,662 --> 00:38:21,130
+有点太狂野，有点太杂乱无章。
+it's a little too wild, it's a little too all over the place.
+
+798
+00:38:21,250 --> 00:38:21,770
+有点粗糙。
+It's sloppy.
+
+799
+00:38:22,210 --> 00:38:25,567
+但我能看出它在努力传达一种全球化的感觉，
+But I can tell it has this, like it's trying to suggest this, this global feeling,
+
+800
+00:38:25,567 --> 00:38:26,770
+我觉得这挺酷的。
+which I think is really cool.
+
+801
+00:38:27,250 --> 00:38:30,450
+呃，在我们，哦，我喜欢这个「运作方式」。对，这挺酷的。
+Um, before we, oh, I love this how it works. Yeah, this is cool.
+
+802
+00:38:30,570 --> 00:38:32,610
+这个也往上提。我得往下滚很远才看到它。
+Get that up, too. You know, I had to scroll pretty far to get there.
+
+803
+00:38:32,730 --> 00:38:36,690
+对。而且这个看起来干净很多，也更专业。确实。
+Yeah. Um, and this just looks a lot cleaner, more professional also. It does.
+
+804
+00:38:36,890 --> 00:38:38,940
+这让我更信任它。绝对的。
+Which makes me trust it more. Absolutely.
+
+805
+00:38:39,100 --> 00:38:42,281
+在我们开始前，我快速地把这个用 Paper 跑了一遍，
+So before I ran this one through paper real quick before we came on,
+
+806
+00:38:42,281 --> 00:38:45,578
+我要求它做的其实就是收一收，就是打造，
+just to all I asked it was actually to pull back and just, just create,
+
+807
+00:38:45,578 --> 00:38:48,875
+为这个网站打造一个更专业、
+create a foundation for this site that is a little more professional
+
+808
+00:38:48,875 --> 00:38:51,940
+更可信一点的基础。我们在这里用了 5.5。而这个。
+and a little more trustworthy. And we used 5.5 on this. And this.
+
+809
+00:38:51,940 --> 00:38:53,580
+差不多就是它给出的结果。
+Is kind of what it came up with.
+
+810
+00:38:54,260 --> 00:38:56,109
+我其实觉得在这个例子里，
+And I actually think in this case,
+
+811
+00:38:56,109 --> 00:38:59,280
+它丢掉了一点原始设计的活力。
+it lost a little of the excitement of the original design.
+
+812
+00:38:59,640 --> 00:39:01,053
+但这正是你身处设计工具里的意义。
+But that's where you're in a design tool.
+
+813
+00:39:01,053 --> 00:39:02,840
+现在你可以进来，自己把那种感觉找回来。
+And now you can come in and bring that back yourself.
+
+814
+00:39:03,240 --> 00:39:05,200
+但我确实觉得这给了你更好一点的基础。
+But I do think this gives you a little bit more of a foundation.
+
+815
+00:39:05,360 --> 00:39:08,361
+再说一次，文字太多了，把有些东西收一收，
+Again, way too much text, pull back on some of these things,
+
+816
+00:39:08,361 --> 00:39:11,240
+但我觉得它给了你更好一点的基础。
+but I think it gives you a little bit more of a foundation.
+
+817
+00:39:11,920 --> 00:39:14,512
+还是那句话，你可以进来，删掉一些 vibe coding 出来的东西，
+And again, you can come in, delete some of the vibe coded stuff,
+
+818
+00:39:14,512 --> 00:39:15,360
+少即是多。
+less is less is more.
+
+819
+00:39:15,520 --> 00:39:18,422
+我对这个网站会做的就是保留那种活力，
+That's what I would try to do with this site is keep the excitement,
+
+820
+00:39:18,422 --> 00:39:20,480
+保留这种国际化的感觉。
+keep this kind of like international feeling.
+
+821
+00:39:20,560 --> 00:39:23,776
+我喜欢它的独特，但你不能走太远，
+I like that it's unique, but you can't go so far, you know,
+
+822
+00:39:23,776 --> 00:39:28,430
+也许这个文字渐变有点太狂野，感觉不太可信。
+maybe this text gradient is a little too wild and doesn't feel super trustworthy.
+
+823
+00:39:28,590 --> 00:39:30,652
+但我确实喜欢它的价值主张，
+But I do, I do like the the value prop
+
+824
+00:39:30,652 --> 00:39:34,990
+而且我大体上很快就理解了它是做什么的，这点我喜欢。
+and I understand what it is for the most part pretty quickly, which I like.
+
+825
+00:39:35,070 --> 00:39:38,830
+我喜欢他们在右下角放了个二维码，这是产品的一部分，对吧？
+I like that they've got a QR code in the bottom right, which is part of the product, right?
+
+826
+00:39:38,910 --> 00:39:40,778
+就是，对对，这挺酷的。
+It's like, yeah, yeah, which is cool.
+
+827
+00:39:40,778 --> 00:39:43,550
+这是我以前不太见过的东西。
+That's something that I haven't seen very much before.
+
+828
+00:39:43,710 --> 00:39:46,310
+它让我想去互动。对，很吸引人。对对。
+It makes me want to interact with it. Yeah, it's inviting. Yeah, yeah.
+
+829
+00:39:46,390 --> 00:39:49,150
+整体感觉，那种氛围，只要我们能让它更可信一点就好。
+The overall feeling, the vibe is if we can make it a little more trustworthy.
+
+830
+00:39:49,470 --> 00:39:51,486
+对。但我喜欢这种活力，喜欢这股劲儿。
+Yeah. But I like the excitement. I like the energy.
+
+831
+00:39:51,486 --> 00:39:52,830
+我喜欢它给我的这种邀请感。
+I like the invitation that I have.
+
+832
+00:39:52,990 --> 00:39:56,466
+对，不过它藏在那个角落里也太容易被忽略了，因为，
+Yeah, it's almost too easy to miss it down in that corner, though, too, cause,
+
+833
+00:39:56,466 --> 00:39:59,073
+你太习惯在那儿看到「联系我们」的对话框了，
+you know, you're so used to seeing the chat with us box down
+
+834
+00:39:59,073 --> 00:40:02,115
+你就默认那里有一堆该忽略的东西，
+and you just assume there's a bunch of things that you should ignore
+
+835
+00:40:02,115 --> 00:40:03,310
+除非你遇到了问题。
+unless you have a problem.
+
+836
+00:40:03,590 --> 00:40:04,550
+那才是你会去看的地方。
+Like that's where you look.
+
+837
+00:40:04,809 --> 00:40:08,529
+我说不好，也许他们该把那个二维码提到主区域，写上「立即试用」。
+And I don't know, maybe they should bring that QR code up to the main area and say, try it now.
+
+838
+00:40:08,809 --> 00:40:11,489
+直接放在 hero 区里当主角。对对，我同意。
+Just be the head in the hero. Yeah, yeah, I do.
+
+839
+00:40:11,489 --> 00:40:13,569
+我觉得这个 hero 区本可以为他们发挥更大作用。
+I feel like this hero could be working a lot harder for them.
+
+840
+00:40:13,689 --> 00:40:16,249
+对，因为当我往下看到这里，我心想，嗯，这个挺扎实的。
+Yeah, because when I start getting down here, I'm like, yeah, this is this is solid.
+
+841
+00:40:16,449 --> 00:40:18,969
+好像越往后走越靠谱。
+It seems to get more trustworthy the further you go.
+
+842
+00:40:19,689 --> 00:40:22,791
+是啊，你说得挺有意思，说到底，
+Yeah, it is interesting your point that, you know, at the end of the day,
+
+843
+00:40:22,791 --> 00:40:25,209
+生成设计的其实是模型。
+the models are the ones that are generating the design.
+
+844
+00:40:26,070 --> 00:40:31,380
+当你用它们来生成设计时，你多少要看它们的脸色，
+Um, when you use them to generate the design and you're kind of at the mercy for how,
+
+845
+00:40:31,380 --> 00:40:35,440
+比如它们是拿什么训练的、它们喜欢怎么设计。
+like, what they've been trained on and how they like to design.
+
+846
+00:40:36,440 --> 00:40:39,292
+所以重要的是用对模型，
+And so what's important is using the right models
+
+847
+00:40:39,292 --> 00:40:44,160
+以及这些模型在设计上越来越强，这随着时间必然会发生。
+and those models getting better at design, which will inevitably happen over time.
+
+848
+00:40:44,480 --> 00:40:47,600
+接下来你需要的就是能快速地更好地控制它。
+And then the next thing that you need is just more control over it quickly.
+
+849
+00:40:48,400 --> 00:40:50,939
+拥有这种控制力，能够去编辑它，
+And so to have that control, to be able to edit it
+
+850
+00:40:50,939 --> 00:40:55,300
+让它更贴近你自己的构想，其实是那个非常强大却缺失的一环，
+and make it more in your own vision is actually the really powerful missing piece
+
+851
+00:40:55,300 --> 00:40:58,880
+我觉得这正是 Paper 在这里提供的很大一部分价值。
+here that I think is, is a lot of what paper is providing right here.
+
+852
+00:40:58,960 --> 00:41:01,731
+agent 可以加速你的工作，帮你省很多力气，
+The agents can speed you up, they can save you a lot of work,
+
+853
+00:41:01,731 --> 00:41:04,560
+还能替你做翻译、调整尺寸这类任务。
+and they can do tasks like translation or resizing for you.
+
+854
+00:41:04,960 --> 00:41:08,720
+但我们坚信设计中的人的因素，以及它有多重要。
+But we're big believers in the human element of design and how important that is.
+
+855
+00:41:08,720 --> 00:41:11,680
+所以我们想做一个让人和 agent 一起飞快工作的工具。
+And so we're trying to create a tool that lets humans work really fast with agents.
+
+856
+00:41:11,960 --> 00:41:16,700
+你觉得 agent 能像人一样学会品味吗？
+Do you think, uh, the agents can learn taste in the same way that a human can?
+
+857
+00:41:16,940 --> 00:41:19,500
+它们会在字间距这类东西上做得更好，
+They'll get better at things like letter space,
+
+858
+00:41:19,500 --> 00:41:22,380
+这些小的、战术层面的东西会随时间越来越好。
+the little tactical things will get better over time.
+
+859
+00:41:22,780 --> 00:41:27,900
+让我感到鼓舞的是，像 Fable 这样的模型显得更有想法。
+And I think what I'm encouraged by is a model like fable seems much more thoughtful.
+
+860
+00:41:28,540 --> 00:41:30,181
+感觉它真的做出了一些取舍，
+It feels like it actually put some choice,
+
+861
+00:41:30,181 --> 00:41:32,620
+相比之前的模型，它的决策里有更多思考。
+some thought into its decisions compared to previous models.
+
+862
+00:41:33,560 --> 00:41:37,040
+我觉得这种用心正是设计的一部分。是的。
+And so I think that is a piece of design, is that thoughtfulness. Yeah.
+
+863
+00:41:37,040 --> 00:41:39,840
+那我会不会觉得它会取代人来做这些设计决策？
+Now, do I ever think it's going to replace a human making these design decisions?
+
+864
+00:41:39,960 --> 00:41:44,262
+不。绝不可能。因为很多设计其实是非常人性化的任务，
+No. No way. Because a lot of design is actually a very human task of,
+
+865
+00:41:44,262 --> 00:41:47,000
+比如在一个组织里做决策。
+like decision making in an organization.
+
+866
+00:41:47,600 --> 00:41:50,440
+是把方案拿给别人看，然后别人会说，哦，不要这样。
+It's showing people comps and being, and people can be like, oh, not like that.
+
+867
+00:41:50,440 --> 00:41:51,040
+我不喜欢这个。
+I don't like that.
+
+868
+00:41:51,160 --> 00:41:53,778
+设计的作用，你最后看到的是像素，
+The role of design is, is you see the pixels at the end,
+
+869
+00:41:53,778 --> 00:41:57,587
+但设计在组织里的作用是决策、是各方相关人，
+but the role of design in an org is like decisions and and and stakeholders and
+
+870
+00:41:57,587 --> 00:42:01,217
+是把需求和问题空间带进来，而这些都不是
+and bringing in requirements and problems space and those are not things
+
+871
+00:42:01,217 --> 00:42:03,240
+agent 真正擅长的事情。
+that agents are have any skill at really.
+
+872
+00:42:03,280 --> 00:42:05,440
+当然，谁知道呢，随着时间它们会越来越聪明。
+You know, who knows over time they're going to get smarter and smarter and smarter.
+
+873
+00:42:05,720 --> 00:42:09,009
+但我就是觉得，人是做出能脱颖而出的东西时
+But I just think humans are just such an essential piece of building stuff
+
+874
+00:42:09,009 --> 00:42:10,680
+至关重要的一环。
+that stands out right from the crowd.
+
+875
+00:42:10,840 --> 00:42:11,440
+是啊，挺有意思的。
+Yeah, it's interesting.
+
+876
+00:42:11,720 --> 00:42:16,672
+我和一位在一家市值数十亿美元、非常重视设计的公司
+I was having a very similar conversation with someone who leads design at a multi
+
+877
+00:42:16,672 --> 00:42:19,407
+负责设计的人聊过很类似的话题，
+billion dollar design forward company, um,
+
+878
+00:42:19,407 --> 00:42:23,399
+就是当人对某个东西做出反应时，
+about there's a thought process that goes through a human's head
+
+879
+00:42:23,399 --> 00:42:27,907
+脑子里会有一个思考过程和一套评判标准。
+where they're reacting to something and a criteria they're evaluating.
+
+880
+00:42:27,907 --> 00:42:30,790
+而作为人，这对我们来说是非常隐性的，对吧？
+And it's very implicit for us as humans, right?
+
+881
+00:42:30,790 --> 00:42:35,350
+问题是，你能把这些东西用语言说清楚吗？
+Now, and the question is, can you verbalize what those things are?
+
+882
+00:42:36,030 --> 00:42:40,820
+比如，你判断某个东西好不好、好不好看、
+Like, what is the process of you deciding whether something is good or not or looks
+
+883
+00:42:40,820 --> 00:42:44,060
+或者这种很主观的东西够不够格，背后的过程是什么。
+good or not or very subjective hits, hits the bar or not.
+
+884
+00:42:44,380 --> 00:42:47,767
+你能不能真的把这一切都量化下来，
+Can you literally go through and quantify all of that and teach
+
+885
+00:42:47,767 --> 00:42:51,220
+教给模型，教到它像人一样有品味。
+that to a model to the point where it has taste like a human would.
+
+886
+00:42:51,820 --> 00:42:54,888
+然后问题就变成，如果所有模型都能做到这一点，
+And then the question becomes, well, if all the models were able to do that,
+
+887
+00:42:54,888 --> 00:42:56,620
+是不是一切又都长得一模一样了？
+does everything just look the same again?
+
+888
+00:42:57,260 --> 00:43:00,969
+于是你永远需要人去推动，去找到下一个
+And then you always need the humans to be drive to finding the next thing
+
+889
+00:43:00,969 --> 00:43:05,180
+真正新鲜、能脱颖而出、并且更能突破极限的东西。
+that's actually gonna be new and stands out and yeah, and pushes the limits more.
+
+890
+00:43:05,300 --> 00:43:08,700
+就算在有模型之前，人自己也会被潮流带着走。
+We see that even within human pre pre models is trends take over.
+
+891
+00:43:08,820 --> 00:43:10,806
+是啊，有几年大家都做得像 Linear 一样，
+Yeah, everyone kind of looks like linear for a couple years
+
+892
+00:43:10,806 --> 00:43:12,630
+然后又有人琢磨出新的东西，对吧？
+and then somebody else figures out something, right?
+
+893
+00:43:12,670 --> 00:43:14,550
+我确实觉得模型会在战术层面上变得很强。
+I do think the models will get good at tactics.
+
+894
+00:43:15,190 --> 00:43:17,650
+它们会学会不把所有东西都加粗，
+They'll get better at not making everything bold, you know,
+
+895
+00:43:17,650 --> 00:43:20,750
+我觉得这很好，那真的会很不错。
+and I think that that's great and that'll be really, that'll be really nice.
+
+896
+00:43:20,750 --> 00:43:23,550
+但那种思考、那种产品，设计里有太多东西了。
+But just the thought, the product, there's so much of design.
+
+897
+00:43:23,950 --> 00:43:26,950
+还是那句话，这有没有讲清楚价值主张？这些才更重要。
+Again, it's like, was this showing value prop or not? That stuff's more important.
+
+898
+00:43:27,310 --> 00:43:30,400
+比如这个网站，我觉得就有点太狂野了。
+This site, for instance, that I think is a little too wild.
+
+899
+00:43:30,680 --> 00:43:33,080
+也许对他们来说，做得又好玩又有激情真的很重要。
+Maybe it's really important for them to be really fun and exciting.
+
+900
+00:43:33,160 --> 00:43:35,518
+也许这正是他们的市场所需要的，
+Maybe that's what their market needs, you know,
+
+901
+00:43:35,518 --> 00:43:38,760
+所以对他们来说，这可能是个更高层次的东西，很令人兴奋。
+and so maybe it's a higher order thing for them to be very exciting.
+
+902
+00:43:39,120 --> 00:43:40,720
+模型能做出那样的决定吗？
+And can a model make that decision?
+
+903
+00:43:40,840 --> 00:43:43,835
+也许有了足够的信息，你能开始接近那个目标，
+Can it, you know, maybe with enough information you could start to get there,
+
+904
+00:43:43,835 --> 00:43:45,520
+但我觉得我们离那还很远。
+but I think we're pretty far away from that.
+
+905
+00:43:45,720 --> 00:43:48,326
+是啊，也许十年左右吧。也许吧，我不知道。
+Yeah, maybe 10 years, something like that. Yeah, maybe. I don't know.
+
+906
+00:43:48,326 --> 00:43:49,360
+也许我太悲观了。
+Maybe I'm too pessimistic.
+
+907
+00:43:49,360 --> 00:43:51,485
+也许它会更早到来。但我仍然认为人类
+Maybe it'll come sooner. But I still see humans
+
+908
+00:43:51,485 --> 00:43:53,720
+是这个拼图中不可或缺的一块。
+as just this essential piece of the of the puzzle.
+
+909
+00:43:53,880 --> 00:43:57,017
+是啊，我们当然希望如此。希望如此吧。我很好奇，
+Yeah, we certainly hope so. Yeah, let's hope so. I'm curious,
+
+910
+00:43:57,017 --> 00:43:59,600
+你们在 Paper 内部是怎么用 agents 的？
+how are you guys using agents internally at paper?
+
+911
+00:43:59,800 --> 00:44:00,880
+某些方面，我们用得很多。
+In some ways, we use them a lot.
+
+912
+00:44:00,920 --> 00:44:03,560
+而在另一些方面，我们又有点像恐龙一样守旧。
+And then in other ways we use them, we're kind of like dinosaurs in some ways.
+
+913
+00:44:03,840 --> 00:44:06,206
+比如我们的 Slack 里没有 agents，也没有，
+Like we don't have agents in our slack and we don't have,
+
+914
+00:44:06,206 --> 00:44:08,880
+我们用 agents 写不少代码，但我们仍然会读自己的代码。
+we use agents for coding quite a bit, but we still read our code.
+
+915
+00:44:09,000 --> 00:44:10,841
+我们读所有的代码，每一行，每一行。
+We read all of our code. Every single line. Every line.
+
+916
+00:44:10,841 --> 00:44:12,560
+通常每一行都有多个人来读。
+Usually multiple humans reads every single line.
+
+917
+00:44:13,000 --> 00:44:15,280
+为什么？其一是设计工具真的很难做。
+Why is that? Well, one is design tools are really hard to build.
+
+918
+00:44:15,840 --> 00:44:18,960
+你没法靠 vibe coding 做出今天 Figma 这个水平的设计工具。
+You know, you can't vibe code a design tool at the level of a Figma today.
+
+919
+00:44:19,200 --> 00:44:22,478
+也许最终能做到。所以这需要大量非常精确、
+Maybe you can eventually. Um, and so it takes a lot of, a lot of really precise,
+
+920
+00:44:22,478 --> 00:44:23,400
+非常细致的工作。
+really careful work.
+
+921
+00:44:23,480 --> 00:44:26,080
+从系统角度看，它非常多维。
+It's very multidimensional in terms of the systems.
+
+922
+00:44:26,120 --> 00:44:29,391
+所以我们必须格外小心，我们想确保我们的体验，
+And so we just have to be really careful and we want to make sure our experience,
+
+923
+00:44:29,391 --> 00:44:30,800
+你知道，设计师需要 120 FPS。
+you know, designers need 120 FPS.
+
+924
+00:44:31,000 --> 00:44:32,960
+它必须快，必须每一次都正常运行。
+It needs to be fast. It needs to work every single time.
+
+925
+00:44:33,600 --> 00:44:35,513
+而 agents 目前还达不到那个水平。
+Um, and the agents just aren't there for that yet.
+
+926
+00:44:35,513 --> 00:44:37,240
+另一点是我们是个精干的小团队，对吧？
+The other thing is a small elite team, right?
+
+927
+00:44:37,240 --> 00:44:39,880
+12 个人，把人才门槛保持得极高。
+So 12 people keep the talent bar extremely high.
+
+928
+00:44:40,000 --> 00:44:41,593
+我觉得当你在做公司的时候，
+I think when you're building companies,
+
+929
+00:44:41,593 --> 00:44:45,200
+如今就该这么做，用 agents 去加速团队里的人。
+that's how you should try to do it these days and use the agents to accelerate the, the people.
+
+930
+00:44:45,870 --> 00:44:48,742
+但人越少，沟通负担就越小，
+But if you have less people, you have less communication burden,
+
+931
+00:44:48,742 --> 00:44:50,870
+你要付出的其他成本也更少。
+you have less of these other costs to go through.
+
+932
+00:44:51,110 --> 00:44:53,869
+不过我们用 agents 的一个例子是 AGU，我们的品牌设计师。
+One example of how we use agents, though, is AGU, our brand designer.
+
+933
+00:44:53,869 --> 00:44:55,950
+他是个出色的品牌设计师，视觉功底很强。
+He's a brilliant brand designer, great at visuals.
+
+934
+00:44:56,630 --> 00:44:59,750
+他会写一点代码，但我觉得他不会自称是程序员。
+He codes a little bit, but I don't think he'd call himself like a programmer.
+
+935
+00:45:00,380 --> 00:45:03,772
+他在上次发布前大约一周做出了我们整个网站，
+And he made our entire website in about a week before this last launch,
+
+936
+00:45:03,772 --> 00:45:06,580
+包括交付上线，包括所有的动画。
+including shipping it, including all of the animations.
+
+937
+00:45:07,180 --> 00:45:08,580
+而且他在 Paper 里设计了所有东西。
+And he designed everything in paper.
+
+938
+00:45:08,820 --> 00:45:11,940
+这类设计你是不会想靠提示词来做的，对吧？
+And this is the kind of design you wouldn't want to do this with prompting, right?
+
+939
+00:45:11,940 --> 00:45:12,340
+你需要的是这个。
+You need this.
+
+940
+00:45:13,060 --> 00:45:16,980
+他在背景里放了 shader，微妙地穿过这些图案元素。
+He has shaders in the background subtly coming through these motifs.
+
+941
+00:45:17,820 --> 00:45:20,340
+他在 Paper 里做完所有东西，然后只是给了提示。这是，你知道，
+He did everything in paper and then he just prompted. And this was, you know,
+
+942
+00:45:20,340 --> 00:45:21,700
+六个月前的事了，所以是不同的模型。
+six months ago now, so different models.
+
+943
+00:45:22,130 --> 00:45:25,576
+他只是在他的 Paper 文件上给动画写了提示，就像是，
+Um, he just prompted the animations on top of his, of his paper file and it's like,
+
+944
+00:45:25,576 --> 00:45:28,250
+“拿走我的 Paper 设计，把它变成一个代码库”。
+you know, take, take my paper designs, turn it into a code base.
+
+945
+00:45:28,330 --> 00:45:32,370
+“这是个 Next.js 网站，帮我把它组装好。”没有其他人看过这个。
+This is the next JS site, um, and put it together for me. No one else looked at this.
+
+946
+00:45:32,570 --> 00:45:35,170
+所以 AGU 一周内端到端完成了这件事，因为他是设计师。
+So AGU did this end to end in a week because he's a designer.
+
+947
+00:45:35,250 --> 00:45:37,477
+他放进了这些彩蛋，有些小小的，
+He puts in these Easter eggs. There's little, like,
+
+948
+00:45:37,477 --> 00:45:39,290
+有趣的额外内容，而且全都是可交互的。
+fun extras and it's all just interactive.
+
+949
+00:45:39,570 --> 00:45:42,179
+都是可交互的。而这是他本来不会去做的。
+It's interactive. And this is something he would not have done.
+
+950
+00:45:42,179 --> 00:45:43,410
+他不会有那个时间。
+He wouldn't have had the time.
+
+951
+00:45:43,410 --> 00:45:46,255
+是啊，我相信他能做到，论技术他能做出来，
+Yeah, I'm sure he could have, you know, skill wise he could have got there,
+
+952
+00:45:46,255 --> 00:45:47,980
+但他不会有时间去做这个。
+but like he wouldn't have the time to do this.
+
+953
+00:45:48,580 --> 00:45:49,660
+所以我觉得这真的非常酷。
+So I think that's really, really cool.
+
+954
+00:45:49,660 --> 00:45:52,928
+所以我觉得很多时候，它更多不是体现在我们的核心产品上，
+And, and so I think a lot of times it shows up more not in our core product
+
+955
+00:45:52,928 --> 00:45:56,252
+出于精度的原因，核心产品仍然相当依赖人工，
+where we're actually pretty human based still for precision reasons,
+
+956
+00:45:56,252 --> 00:45:58,900
+而是体现在所有其他东西上，我们要做的所有视频。
+but in all the other stuff, all the videos we need to make.
+
+957
+00:45:58,900 --> 00:46:02,355
+所有的营销网站，所有那些我们可以，你知道，
+All the marketing site, all of that other stuff where we can, you know,
+
+958
+00:46:02,355 --> 00:46:04,500
+让 agents 帮我们、帮大家更快推进的东西。
+have agents help us, help people go faster.
+
+959
+00:46:04,740 --> 00:46:06,700
+是啊，所以我们确实做了不少这类事。
+Yeah. So we do, yeah, quite a bit of that.
+
+960
+00:46:06,900 --> 00:46:10,340
+当然还有编程 agents，你知道，我们大量使用 Cursor。
+And then of course the coding agents, you know, we we do use cursor extensively.
+
+961
+00:46:10,420 --> 00:46:11,540
+我们大量使用 Claude Code。
+We use Cloud Code extensively.
+
+962
+00:46:12,140 --> 00:46:15,180
+我们用 Bugbot 做 PR review，帮助很大。
+We use Bugbot for our PR reviews, which has been really helpful.
+
+963
+00:46:15,540 --> 00:46:19,220
+有时候有点太较真，但它确实能抓到 bug，这挺好。
+Little too pedantic sometimes, but it still catches, catches bugs, which is good.
+
+964
+00:46:19,340 --> 00:46:22,446
+现在对 agent 有一点 FOMO（错失焦虑），感觉就像，
+There's a little bit of a FOMO right now with it with agents where it's like, oh,
+
+965
+00:46:22,446 --> 00:46:24,740
+每家公司都在不看代码就发布。
+every company is shipping without looking at their code.
+
+966
+00:46:24,820 --> 00:46:25,980
+你呢？你是不是太慢了？
+Are you? Are you going too slow?
+
+967
+00:46:26,100 --> 00:46:30,308
+我们的思路是，高质量的软件需要时间，
+You know, we are kind of taking the approach that quality software take time
+
+968
+00:46:30,308 --> 00:46:33,447
+我们有些竞争对手每个功能都有，
+and we have competitors that have every single feature,
+
+969
+00:46:33,447 --> 00:46:36,520
+但他们没人关注，或者说大家不在乎。
+but they don't have the attention or people don't care.
+
+970
+00:46:36,600 --> 00:46:39,800
+不管什么原因，人们就是希望 Paper 变得更好。
+And for whatever reason, whatever that is, is like people want paper to be better.
+
+971
+00:46:40,160 --> 00:46:42,480
+他们不希望那些功能齐全的竞争对手变得更好。
+They don't want the competitors that have every single feature to be better.
+
+972
+00:46:43,040 --> 00:46:45,751
+我觉得那是因为我们在乎，我们投入了那种精细，
+And I think that's because we care and we're putting in that precision
+
+973
+00:46:45,751 --> 00:46:46,920
+那种对细节的用心。
+that care about these things.
+
+974
+00:46:46,920 --> 00:46:49,920
+所以即便我们慢一点，大家还是更在乎它。
+So even if we're moving a little slower, people still care more about it.
+
+975
+00:46:50,300 --> 00:46:51,980
+所以我认为质量很重要。是的。
+And so I think that quality matters. Yeah.
+
+976
+00:46:51,980 --> 00:46:55,970
+而且，庆幸的是，我跟很多设计师聊下来的感觉是，
+Still, thankfully, my sense from talking to a lot of designers is
+
+977
+00:46:55,970 --> 00:47:00,034
+你们几乎在打造一场自下而上的运动，
+that you guys are almost building kind of a ground swell movement,
+
+978
+00:47:00,034 --> 00:47:04,616
+像一种狂热的潮流，大家现在把 Paper 当成新的酷东西，
+like a cult movement of people that are now using paper as the new cool thing
+
+979
+00:47:04,616 --> 00:47:09,123
+很多设计师都在用，它是一种全新的现代工作方式。
+that a lot of designers are using and it's, it's the new modern way to work.
+
+980
+00:47:09,123 --> 00:47:11,340
+这是有意为之的吗？还有你们在做的
+Was that intentional? And what are.
+
+981
+00:47:11,340 --> 00:47:15,091
+那些为了获得更多用户、实现增长，
+The things that you're doing to try to get more users to grow,
+
+982
+00:47:15,091 --> 00:47:19,593
+获得一些心智份额的努力。你们似乎是少有的公司，Figma
+to get some mind share, like you seem to be one of the only companies Figma
+
+983
+00:47:19,593 --> 00:47:23,870
+显然已经做成了巨无霸，上市了，你知道的。
+obviously has built this huge behemoth and gone public and you know.
+
+984
+00:47:23,870 --> 00:47:26,790
+所有财富 500 强都在用它们，诸如此类。
+All the Fortune 500 uses them and, and on all this stuff.
+
+985
+00:47:26,990 --> 00:47:29,193
+但感觉你们已经开始
+But it feels like you've started to,
+
+986
+00:47:29,193 --> 00:47:32,790
+撬开了一部分，至少在某些用户群体里。
+to crack some of that certainly within certain user types.
+
+987
+00:47:33,310 --> 00:47:34,806
+你们是怎么做到的？
+And how have you gone about doing that?
+
+988
+00:47:34,806 --> 00:47:36,770
+在这方面对你们最有效的是什么？
+And and what's been most successful for you there?
+
+989
+00:47:37,090 --> 00:47:40,450
+很大一部分在于，和市场在价值观上高度一致。
+Yeah, a huge part of that is, is like being very values aligned with the market.
+
+990
+00:47:40,610 --> 00:47:42,959
+我们头一年根本没有产品，
+Um, we, we didn't have a product for the first year
+
+991
+00:47:42,959 --> 00:47:46,970
+但光靠谈论我们的价值观，就积累了大约 2.5 万 Twitter 粉丝。
+and we still got to about 25,000 Twitter followers just by talking about our values.
+
+992
+00:47:47,010 --> 00:47:49,250
+我会上播客，说，我真的很喜欢设计。
+You know, just I'd go on podcast, be like, I really like design.
+
+993
+00:47:49,290 --> 00:47:49,850
+你喜欢设计吗？
+Do you like design?
+
+994
+00:47:49,890 --> 00:47:52,451
+然后我们就聊起这个话题，谈排版，
+And then we'd get into the topic and talk about typography or,
+
+995
+00:47:52,451 --> 00:47:54,610
+或者别的，跟你的市场价值观一致。
+or whatever being values aligned with your market.
+
+996
+00:47:54,690 --> 00:47:57,556
+他们会原谅你产品缺失很多东西。
+They will forgive so much about your product missing things.
+
+997
+00:47:57,556 --> 00:47:59,130
+他们会等着这些功能出来。
+They'll wait for them to come out.
+
+998
+00:47:59,250 --> 00:48:02,360
+如果他们看得出你是真诚的，就会为你加油，
+They'll root for you if they can tell you're authentic, you know,
+
+999
+00:48:02,360 --> 00:48:05,240
+如果你在做设计软件，这真的很重要。
+and if you're building design software, it really matters.
+
+1000
+00:48:05,400 --> 00:48:07,915
+真的很重要。也许不是所有软件都这样，但对设计软件来说，
+It really matters. Maybe not for all software, but for design software,
+
+1001
+00:48:07,915 --> 00:48:09,760
+通常是最好的、最真诚的产品胜出。
+usually best product, most authentic product wins.
+
+1002
+00:48:10,240 --> 00:48:12,504
+所以我觉得对我们来说，就是，还是那句话，
+And so I think for us it was, it's just, you know, again,
+
+1003
+00:48:12,504 --> 00:48:15,270
+一家 12 人的设计师和工程师团队，践行我们的价值观，
+company of 12 designer and engineers and just live our values and,
+
+1004
+00:48:15,270 --> 00:48:16,880
+大家真的很有共鸣。
+and people really resonate with that.
+
+1005
+00:48:17,200 --> 00:48:20,040
+顺便说一句，产品也确实很好。我觉得这一点很重要。
+And by the way, the product is really good too. I think that part's important.
+
+1006
+00:48:20,080 --> 00:48:20,720
+你得做到那一步。
+You gotta get there.
+
+1007
+00:48:21,320 --> 00:48:24,780
+但我觉得那是原因之一。然后还有一个市场时钟。
+But, you know, I think that's, that's part of it. And then there's a market clock.
+
+1008
+00:48:24,860 --> 00:48:26,700
+每家公司，但愿有一天我们也会遇到这个问题。
+Every company, hopefully we have this problem someday.
+
+1009
+00:48:27,220 --> 00:48:30,097
+每家公司最终都会往高端市场走，然后你就没那么酷了，
+Every company eventually goes up market and you just stop being as cool
+
+1010
+00:48:30,097 --> 00:48:30,780
+当你那么做的时候。
+when you do that.
+
+1011
+00:48:30,780 --> 00:48:32,086
+你在卖给大企业。
+You know, you're selling enterprises.
+
+1012
+00:48:32,086 --> 00:48:34,500
+你不再是那种在酷炫活动上的地下小众了。
+You're not you're not underground at the cool events, you know, anymore.
+
+1013
+00:48:34,700 --> 00:48:38,180
+所以，我真的很荣幸我们是这个社区的一部分。
+So, um, I, I, I'm really honored that we are part of the community.
+
+1014
+00:48:38,420 --> 00:48:41,715
+说到你的观点，我想你也看到了，Ramp 一直在公布
+And to your point, like, I think you saw, you know, ramp has been releasing the,
+
+1015
+00:48:41,715 --> 00:48:44,300
+他们信用卡上实际 Ramp 订阅的数据。
+the data of actual ramp subscriptions on their credit cards.
+
+1016
+00:48:44,420 --> 00:48:47,780
+对，他们还发布了一个 AI，你可以和它聊 Ramp 的数据。
+Yeah. And if they released an AI, you can chat with uh about the ramp data.
+
+1017
+00:48:47,990 --> 00:48:50,633
+如果你问它设计工具，你知道的，就是 Figma，
+And if you ask it about design tools, it's, you know, Figma,
+
+1018
+00:48:50,633 --> 00:48:53,870
+当然也有 Sketch，然后 Paper 就紧挨着 Sketch。
+obviously sketch is there and then paper is, is right there with sketch.
+
+1019
+00:48:53,910 --> 00:48:56,173
+所以我们是自 Figma 出现以来第一家
+And so we're the first company since Figma's come out to like,
+
+1020
+00:48:56,173 --> 00:48:58,881
+真正在那个市场里撬开一道口子的公司，而且增长非常快，
+make a dent in that market at all, you know, and it's growing very quickly,
+
+1021
+00:48:58,881 --> 00:48:59,990
+这真的很鼓舞人心。
+which is really encouraging.
+
+1022
+00:49:00,070 --> 00:49:02,322
+这真的很让人兴奋，因为你刚创业的时候不知道，
+It's really exciting because you don't know when you start a company, right,
+
+1023
+00:49:02,322 --> 00:49:02,990
+事情会怎么发展。
+like how it's gonna go.
+
+1024
+00:49:03,030 --> 00:49:05,201
+是啊，完全没底。就像我说的，有几个月我都在想，
+Yeah, you have no idea. Like I said, there was months where I was like,
+
+1025
+00:49:05,201 --> 00:49:06,230
+根本没人会在意这个。
+nobody's gonna care about this.
+
+1026
+00:49:06,510 --> 00:49:08,620
+而现在有这么多很酷的人，是啊，
+And to now have like so many cool people, yeah,
+
+1027
+00:49:08,620 --> 00:49:11,230
+有很多比我酷得多的人非常关注 Paper。
+people are way cooler than me that care a lot about Paper.
+
+1028
+00:49:11,270 --> 00:49:14,150
+看到大家穿我们的周边，真的特别开心。
+And I wear like wearing our merch stuff is like so much fun to see.
+
+1029
+00:49:14,390 --> 00:49:16,350
+说实话，这是最棒的部分。真的很酷。
+And honestly, it's the best part. That's very cool.
+
+1030
+00:49:16,390 --> 00:49:19,310
+这不是你的第一家公司，这是第二家，对吧？
+And this is not your first company, this is your second company, right?
+
+1031
+00:49:19,510 --> 00:49:22,260
+而且好像在你有产品之前，
+And it seems like even before you had a product,
+
+1032
+00:49:22,260 --> 00:49:26,138
+你就已经把自己、你的愿景和价值观展现出来了，
+you have gotten yourself out there and your vision and your values
+
+1033
+00:49:26,138 --> 00:49:30,157
+你成了代言人，这就是人们所认同的，
+and you become the ambassador and that's what people were buying in,
+
+1034
+00:49:30,157 --> 00:49:31,920
+在你还没有产品之前就是这样。
+into before you had a product.
+
+1035
+00:49:31,960 --> 00:49:34,280
+当然，在有产品的早期也是如此。
+And certainly in the early days of, of having a product.
+
+1036
+00:49:34,320 --> 00:49:37,640
+而成功的关键就是你本人，把这些传播出去。
+And that's what's been successful is you, um, and getting that out there.
+
+1037
+00:49:37,680 --> 00:49:40,152
+那这跟你之前有什么不同？你知道，
+And how is that different from you? You know,
+
+1038
+00:49:40,152 --> 00:49:43,960
+你在这之前建过另一家公司，对比一下这两家。
+you built another company before this and like contrast the the two.
+
+1039
+00:49:44,560 --> 00:49:47,863
+我的第一家公司 Modulz 做的是设计师到开发者的交接，
+Well, so my first company Modulz was working on designer developer handoff
+
+1040
+00:49:47,863 --> 00:49:49,360
+我们在过程中做出了 Radix UI。
+and we built Radix UI along the way.
+
+1041
+00:49:49,360 --> 00:49:52,285
+它算是我们的一个副项目，然后一直做下去了。你知道，
+It was like one of our side projects that just kept going. And, you know,
+
+1042
+00:49:52,285 --> 00:49:54,120
+Radix 成了默认的 React 组件。
+Radix became this default react component.
+
+1043
+00:49:54,200 --> 00:49:57,617
+第一，那是 AI 之前的时代。所以一切都更难。
+Library 1 was this was pre AI. So, you know, everything was harder.
+
+1044
+00:49:57,617 --> 00:49:59,730
+设计师到开发者的交接更难。
+Designer developer handoff was harder.
+
+1045
+00:50:00,050 --> 00:50:02,825
+第二，我们同时听取双方的意见，结果搞得很困惑，
+2 was we really listened to both sides at once and we got very confused
+
+1046
+00:50:02,825 --> 00:50:06,330
+因为设计师想让工程师改变，工程师想让设计师改变。
+because designers want engineers to change, and engineers want designers to change.
+
+1047
+00:50:06,410 --> 00:50:09,655
+他们会告诉你，另一个团队会用你的软件。
+And like they will tell you the other team will use your software. Like,
+
+1048
+00:50:09,655 --> 00:50:11,250
+你没法这样做软件。
+you can't build software that way.
+
+1049
+00:50:11,250 --> 00:50:14,730
+所以我们在“做出人们真正想要的东西”上学到了惨痛的教训。是的。
+And so we learned some hard lessons about making something people actually want. Yeah.
+
+1050
+00:50:14,730 --> 00:50:17,010
+然后我想我把这些经验用到了 Paper 上。
+And then I think I've been able to apply at Paper.
+
+1051
+00:50:17,530 --> 00:50:20,690
+不过我们确实做出了，Radix 有非常好的产品市场契合度。
+But we did make, I mean, the Radix has amazing product market fit.
+
+1052
+00:50:20,730 --> 00:50:23,090
+我们只是看不到围绕它做成一个风投规模生意的路径。
+We just didn't see a way to build like a venture scale business around it.
+
+1053
+00:50:23,250 --> 00:50:26,183
+所以我们想，干脆把它免费开放送出去，然后，
+And so we thought, let's, let's just make it free and give it away and then,
+
+1054
+00:50:26,183 --> 00:50:28,010
+下次再带着别的东西回来。
+you know, come back with something next time.
+
+1055
+00:50:28,410 --> 00:50:30,570
+结果挺好的。我是说，这个决定效果非常好。
+And so that's been cool. I mean that that worked out really well.
+
+1056
+00:50:31,050 --> 00:50:33,970
+我们把这家公司卖给了 WorkOS，一家很棒的身份认证公司。
+We sold this company to WorkOS which is an amazing off, identity company.
+
+1057
+00:50:34,050 --> 00:50:37,167
+我们在 Paper 里也用 WorkOS，然后几年之后，
+We use WorkOS for Paper and then a couple years after that,
+
+1058
+00:50:37,167 --> 00:50:40,220
+我就是想重新回到创意工具领域。
+I just wanted to start back into creative tooling again.
+
+1059
+00:50:40,420 --> 00:50:42,706
+那有没有什么经验教训是你从那段经历里学到，
+And are there any lessons that you took from that experience
+
+1060
+00:50:42,706 --> 00:50:43,940
+而这次正在应用的？
+that you're applying this time?
+
+1061
+00:50:44,380 --> 00:50:46,922
+做产品很容易把事情搞得过于复杂。你知道，
+You can way overcomplicate product building. You know,
+
+1062
+00:50:46,922 --> 00:50:49,140
+“做出人们想要的东西”是一句很棒的话。
+the make something people want is a great phrase.
+
+1063
+00:50:49,260 --> 00:50:52,291
+很多时候，对你的产品来说，其实就是，
+And you really, a lot of times with your product, it's like,
+
+1064
+00:50:52,291 --> 00:50:53,900
+我的公司接下来需要什么？
+what does my company need next?
+
+1065
+00:50:53,900 --> 00:50:55,143
+什么会是那种，
+What would be like, the best thing
+
+1066
+00:50:55,143 --> 00:50:57,140
+现在最可能发生在我公司上的最好的事？
+that's possibly could happen to my company right now?
+
+1067
+00:50:57,380 --> 00:51:00,108
+对我们来说，一开始就是参与到话题讨论中，
+At the beginning for us, that was like being part of the conversation,
+
+1068
+00:51:00,108 --> 00:51:01,190
+拥有 Twitter 关注者。
+having Twitter followers.
+
+1069
+00:51:01,550 --> 00:51:04,310
+那我们就去做能带来 Twitter 关注者的事。去上播客。
+Well, let's go do things that get Twitter followers. Let's go on a podcast.
+
+1070
+00:51:04,470 --> 00:51:07,510
+去跟用户聊，然后对外传达他们的价值观。
+Let's talk to users and then represent their values outwardly.
+
+1071
+00:51:07,830 --> 00:51:10,051
+所以你知道，很多时候其实非常简单，
+So, you know, a lot of times it's actually very simple
+
+1072
+00:51:10,051 --> 00:51:11,617
+我觉得是我们把它搞得太复杂了，
+and I think we make it too complicated
+
+1073
+00:51:11,617 --> 00:51:15,201
+我们总想给公司定这些绝妙的策略，其实就是，
+and we're trying to have these brilliant strategies for our companies and it's like,
+
+1074
+00:51:15,201 --> 00:51:16,110
+你接下来需要什么？
+what do you need next?
+
+1075
+00:51:16,110 --> 00:51:19,110
+然后就去做你能做的最直接的事来达成它。
+And just do the most straightforward thing you can possibly do to get there.
+
+1076
+00:51:19,550 --> 00:51:22,470
+而且，别害怕去做那些听起来很难的事。
+And, you know, and, and don't be scared to do things that sound hard.
+
+1077
+00:51:22,550 --> 00:51:25,310
+你知道，显然你就是得去做。所以这是一种理念。
+You know, obviously you gotta, you gotta do them. So that's a philosophy.
+
+1078
+00:51:25,350 --> 00:51:28,750
+我们奉行“先解决瓶颈”。这是我非常笃信的一个重要理念。
+We've taken bottlenecks first. Huge, huge philosophy I really believe in.
+
+1079
+00:51:28,830 --> 00:51:32,390
+比如对我们现在来说，瓶颈就是早期采用者在使用 Paper。
+Like for us right now, the bottleneck is early adopters are using Paper.
+
+1080
+00:51:33,310 --> 00:51:34,865
+那些更……你知道的，
+The people that are more, you know,
+
+1081
+00:51:34,865 --> 00:51:37,975
+也许不是早期尝鲜型的人，很习惯自己现在的做法
+maybe not an early adopter type are very used to what they're doing now
+
+1082
+00:51:37,975 --> 00:51:40,710
+他们会缺少像评论、组件这样的功能
+and they're missing features like comments and components.
+
+1083
+00:51:40,950 --> 00:51:43,390
+所以现在我们的瓶颈其实又回到了功能上
+And so now our bottleneck is actually features again.
+
+1084
+00:51:43,590 --> 00:51:46,242
+所以现在就是，这是我们接下来要做的，去解除
+And so now it's like, that's what we gotta go do next and release
+
+1085
+00:51:46,242 --> 00:51:47,670
+这个卡住业务的瓶颈
+that bottleneck to the business.
+
+1086
+00:51:48,050 --> 00:51:50,890
+另一件很实际的事，就是每天和用户聊
+Another just like a tactical thing is just like talking to users every day.
+
+1087
+00:51:50,970 --> 00:51:51,810
+这真的非常非常重要
+It's so, so important.
+
+1088
+00:51:52,330 --> 00:51:53,923
+公司第一年我给自己定了个规矩
+I had a rule the first year of the company,
+
+1089
+00:51:53,923 --> 00:51:55,610
+我每天都必须和一位设计师聊聊
+I had to talk to a designer every single day.
+
+1090
+00:51:55,850 --> 00:51:57,130
+整整一年我都坚持下来了
+And I did it all the way through the year.
+
+1091
+00:51:57,810 --> 00:52:00,381
+这非常有用，因为我学到，当你
+And I that was so useful because I Learned just how like when you
+
+1092
+00:52:00,381 --> 00:52:02,458
+当你开始做公司和产品的时候
+when you start making the company and the product,
+
+1093
+00:52:02,458 --> 00:52:04,090
+你的视角就变得不一样了
+you just have a different perspective.
+
+1094
+00:52:04,130 --> 00:52:07,730
+你控制不了，你有了知识的诅咒，所以扎根于用户
+You can't help it. You have Chris of knowledge. And so just saying rooted in user,
+
+1095
+00:52:07,730 --> 00:52:09,610
+用户对话真的很重要
+user conversations is really important.
+
+1096
+00:52:09,890 --> 00:52:12,691
+是啊，随着公司成长，这件事越来越难做
+Yeah, it gets harder and harder to do that as the company grows
+
+1097
+00:52:12,691 --> 00:52:15,162
+也因为规模扩大，有太多别的事情
+and scales also because there are so many other things
+
+1098
+00:52:15,162 --> 00:52:18,457
+在争夺你的时间，把你拉向各个方向
+that are vying for your time and pulling you in different directions and
+
+1099
+00:52:18,457 --> 00:52:21,203
+那些当下看起来很重要、火烧眉毛的事，是啊
+that seem important, um, or hair on fire in the moment. Yeah.
+
+1100
+00:52:21,203 --> 00:52:23,070
+但真正核心、最根本的东西
+But really it's those core fundamental.
+
+1101
+00:52:23,110 --> 00:52:25,670
+就是做好产品、和用户聊。对
+Things of build your product, talk to users. Yes.
+
+1102
+00:52:25,710 --> 00:52:27,962
+还有，你知道，锻炼身体或做任何你需要做的事
+And, you know, exercise or whatever you need to do
+
+1103
+00:52:27,962 --> 00:52:30,269
+这样你做前两件事时才不至于疯掉
+so you don't do go crazy doing the first two things,
+
+1104
+00:52:30,269 --> 00:52:32,960
+但这就是公司整个生命周期的核心，对吧
+but that's the core of it for the life of the company, right?
+
+1105
+00:52:32,960 --> 00:52:34,080
+我也这么认为，就是这样
+And I think so. And that's it.
+
+1106
+00:52:34,080 --> 00:52:38,199
+很棒的是，你从第一天就这么做了
+And so it's cool to hear that you've done that from the very first day,
+
+1107
+00:52:38,199 --> 00:52:43,040
+我相信这现在已经成了你团队的文化
+and I'm sure it is something that has been instilled culturally in your team now.
+
+1108
+00:52:43,400 --> 00:52:47,080
+对，现在每个人都在和用户聊。哦对对
+Yeah. And that everybody is talking to users at this point. Oh, yeah, yeah.
+
+1109
+00:52:47,200 --> 00:52:48,560
+大家入职的时候就这样
+That's when people onboard.
+
+1110
+00:52:48,640 --> 00:52:51,760
+就是你必须在 Discord 或 Slack 里和大家聊
+It's like you, yeah, you have to be in the discord talking to people or in the slack.
+
+1111
+00:52:52,290 --> 00:52:54,850
+这真的非常重要，但不是每个人都习惯
+Uh, it's really, really important and not everyone's comfortable.
+
+1112
+00:52:55,250 --> 00:52:56,597
+也许他们来自更大的公司
+Maybe they've come from a bigger company
+
+1113
+00:52:56,597 --> 00:52:59,450
+在那里被告知不能和用户聊，而我们说，不，你得进去聊
+where they were told they can't talk to users and, you know, it's like, no, get in there.
+
+1114
+00:52:59,450 --> 00:53:00,876
+你搞不砸的，你就是
+You can't screw it up. And you just,
+
+1115
+00:53:00,876 --> 00:53:03,530
+你能学到太多，我觉得这会指导你的决策
+you just learn so much and I think it guides your decision making.
+
+1116
+00:53:04,050 --> 00:53:06,170
+你的决策在公司里真的很重要
+Your decisions are really important in a company.
+
+1117
+00:53:06,450 --> 00:53:09,242
+你可以看看那些成功的公司，你可以往回追溯它们的
+You can kind of look at like successful companies of like you can trace their
+
+1118
+00:53:09,242 --> 00:53:11,858
+决策，会发现，哦，那是一个拐点
+decisions backwards in time of like, oh, that was an inflection point,
+
+1119
+00:53:11,858 --> 00:53:13,010
+那个决策真的很棒
+that decision was really good.
+
+1120
+00:53:13,430 --> 00:53:16,019
+所以我觉得有一批了解情况的员工
+Um, and so I think having an informed employee base,
+
+1121
+00:53:16,019 --> 00:53:19,270
+就算只有 12 个人，我也没法做公司里每一个决策
+like I can't make every decision in the company even at 12 people.
+
+1122
+00:53:19,270 --> 00:53:20,190
+我根本做不到
+There's no way I could do that.
+
+1123
+00:53:20,390 --> 00:53:23,642
+所以如果你的员工能真正了解用户
+And so if you can have your employees be really informed about users and,
+
+1124
+00:53:23,642 --> 00:53:27,273
+以及他们真正想要什么，那到处都会做出好决策
+and what they actually want, um, you'll have good decisions being made all over,
+
+1125
+00:53:27,273 --> 00:53:28,790
+你知道，方方面面都是
+you know, all, all over the place.
+
+1126
+00:53:28,830 --> 00:53:31,830
+是啊，这真的很重要。你觉得设计的下一步是什么？
+And I, yeah, it's really important. What do you think is next for design?
+
+1127
+00:53:32,110 --> 00:53:33,710
+我觉得很多设计其实没有变
+Well, I think a lot of design isn't changing.
+
+1128
+00:53:33,790 --> 00:53:36,870
+再说一次，在组织里，设计这个职能依然非常重要
+Again, in orgs, it's like the function of design is still really important.
+
+1129
+00:53:37,110 --> 00:53:41,720
+作为探索问题空间、竞品分析、面向高管
+Um, as a, as a way to explore problem space, competitive analysis, executive, uh,
+
+1130
+00:53:41,720 --> 00:53:44,160
+你懂的，还有面向利益相关者这些
+you know, stakeholders, things like this.
+
+1131
+00:53:44,320 --> 00:53:45,800
+我们完全没看到这方面有变化
+Um, we're not seeing that change at all.
+
+1132
+00:53:46,280 --> 00:53:49,440
+所以设计的这个职能，我觉得会一直存在
+And so, you know, that function of design, I think is is sticking around.
+
+1133
+00:53:49,840 --> 00:53:52,711
+甚至我觉得会更多，因为有更多公司
+Um, if anything, I think we're gonna see more because there are more companies
+
+1134
+00:53:52,711 --> 00:53:54,080
+也有更多软件要做
+and there's more software to be made.
+
+1135
+00:53:54,440 --> 00:53:58,000
+所以我们看到世界上对设计的需求越来越多
+Um, so we're seeing just more and more design need, uh, in the world.
+
+1136
+00:53:58,520 --> 00:54:00,511
+我确实认为工具会
+I do think the tooling is going to,
+
+1137
+00:54:00,511 --> 00:54:05,204
+加速，因为我觉得我们需要把质量标准保持在
+to accelerate because I think we just need to be able to keep the quality bar up at
+
+1138
+00:54:05,204 --> 00:54:10,040
+一个能跟上工程团队、产品团队节奏的水平
+a pace that is, you know, keeping up with the engineering, with the product teams.
+
+1139
+00:54:10,880 --> 00:54:14,120
+不管设计师有没有机会把它做得更好，软件都会发布
+The software will ship whether the designer gets a chance to make it better or not.
+
+1140
+00:54:14,200 --> 00:54:16,960
+这算是竞争格局的一种现实
+This is kind of like a reality of the competitive landscape.
+
+1141
+00:54:17,320 --> 00:54:20,519
+所以我们要如何帮助确保设计师能够参与到对话中
+So how do we help make sure that the designer can be part of the conversation
+
+1142
+00:54:20,519 --> 00:54:22,480
+并且跟上整个交付流程
+and keep up in that, in that shipping process.
+
+1143
+00:54:23,300 --> 00:54:25,096
+不过总体来说
+Um, but, you know, I think in general, uh,
+
+1144
+00:54:25,096 --> 00:54:28,740
+有时候我觉得实际带来的改变比人们想的要少
+sometimes I think there's less change coming than people, people think actually.
+
+1145
+00:54:29,300 --> 00:54:32,406
+因为我认为很多设计其实是非常关乎人的问题
+Um, because I think that a lot of design is a very human problem
+
+1146
+00:54:32,406 --> 00:54:36,060
+最终的像素只是这个过程的产出而已
+and the the pixels at the end are like the output of the process, you know?
+
+1147
+00:54:36,220 --> 00:54:38,900
+对，说到底它只是媒介，对吧？没错
+Yeah, it's the medium at the end of the day, right? Exactly. Yeah.
+
+1148
+00:54:38,980 --> 00:54:40,340
+那 Paper 接下来会做什么？
+Yeah. And what's next for paper?
+
+1149
+00:54:40,460 --> 00:54:43,781
+就像我说的，我们在打造一些基础必备的功能、组件
+Well, so we are, like I said, we're building out some table stakes, components,
+
+1150
+00:54:43,781 --> 00:54:45,190
+评论功能，以及减少瓶颈的东西
+comments, bottleneck reducers.
+
+1151
+00:54:46,030 --> 00:54:46,670
+我真的很兴奋
+I'm really excited.
+
+1152
+00:54:47,030 --> 00:54:50,591
+我从和用户交流中学到的一点是，大家在到处
+Something I've Learned from talking to users is people are building all these
+
+1153
+00:54:50,591 --> 00:54:52,563
+做各种原型
+prototypes all over the place and they're,
+
+1154
+00:54:52,563 --> 00:54:54,699
+它们最后散落在 Vercel 或者 HTML 文件里
+they're ending up on Versal or their HTML files
+
+1155
+00:54:54,699 --> 00:54:57,164
+大家不知道该怎么在上面留反馈
+and people don't know how to leave feedback onto them,
+
+1156
+00:54:57,164 --> 00:55:00,670
+甚至找不到别人说的是哪一个。所以我们要做的是
+how to even find which one someone's talking about. So what we're gonna do is.
+
+1157
+00:55:00,710 --> 00:55:03,310
+基本上，你可以把东西用 iframe 嵌入到 Paper 里
+We're gonna put, basically, you can like, iframe things onto the paper.
+
+1158
+00:55:03,310 --> 00:55:06,800
+画布上有个地方可以整理你的原型
+Canvas has a place to keep your prototypes, uh, kind of like organized.
+
+1159
+00:55:07,000 --> 00:55:09,448
+然后大家可以像平常那样在
+And then people can leave comments as they're used to doing on the,
+
+1160
+00:55:09,448 --> 00:55:10,160
+原型上留评论
+on the prototypes.
+
+1161
+00:55:10,600 --> 00:55:13,583
+所以当有人问我们是不是在做原型功能时，其实是
+So when people ask us if we're doing prototyping, it's like, well,
+
+1162
+00:55:13,583 --> 00:55:16,187
+某种程度上是，我们会帮你整理原型
+kind of we're gonna help you organize your prototypes and
+
+1163
+00:55:16,187 --> 00:55:19,550
+并建立反馈循环，我觉得这会给一些公司带来很大的突破
+and have feedback cycles and I think this is gonna be a really big unlock for
+
+1164
+00:55:19,550 --> 00:55:21,068
+那些
+companies that are, um, you know,
+
+1165
+00:55:21,068 --> 00:55:24,160
+为设计师搭建 playground 去 vibe code 的公司。但接下来
+building playgrounds for their designers to vibe code in. But then.
+
+1166
+00:55:24,240 --> 00:55:26,099
+会有一堆乱糟糟的结果
+There's kind of like this messy result
+
+1167
+00:55:26,099 --> 00:55:28,540
+他们需要工具来帮忙整理
+and they need some tool to help them organize that.
+
+1168
+00:55:28,980 --> 00:55:31,622
+所以这是我们接下来
+So that's a big, big thing we're gonna be working on the next, you know,
+
+1169
+00:55:31,622 --> 00:55:34,720
+大概半年会重点做的一件大事，同时补齐大家期待的基础功能
+six months or so as we're building out the table stakes that that people expect to.
+
+1170
+00:55:35,200 --> 00:55:35,480
+太棒了
+Amazing.
+
+1171
+00:55:35,720 --> 00:55:38,722
+Stephen Haney，非常感谢你来分享 Paper
+Stephen, thank you so much for coming on and sharing paper with us
+
+1172
+00:55:38,722 --> 00:55:42,291
+以及你这些年辛苦积累的设计洞见
+and all of your design insight that I know has been hard earned over the years
+
+1173
+00:55:42,291 --> 00:55:46,200
+还有你创办的公司，以及你待过的那些了不起的地方
+and the companies that you've built and, and the incredible places you've worked.
+
+1174
+00:55:46,200 --> 00:55:47,960
+所以谢谢你。也非常感谢你们邀请我
+So thank you. Yeah, thank you so much for having me.
+
+1175
+00:55:48,120 --> 00:55:51,080
+本期 Design Review 就到这里，我们下期再见
+That does it for this episode of Design Review, and we'll see you on the next one.

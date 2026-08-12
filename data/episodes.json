@@ -50,7 +50,8 @@
       "06.png",
       "07.png"
     ],
-    "subtitle_file": "This CPO regrets that product management exists.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修+去多余行尾标点版.srt"
+    "subtitle_file": "This CPO regrets that product management exists.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修+去多余行尾标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "从没有比现在更适合创业的时候",
@@ -71,7 +72,8 @@
       "03.png",
       "04.png"
     ],
-    "subtitle_file": "Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+    "subtitle_file": "Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "AI 时代如何创办一家初创公司",
@@ -94,7 +96,8 @@
       "05.png",
       "06.png"
     ],
-    "subtitle_file": "Sam Altman.OPUS4-8术语小修去行尾标点版.有翻译参考资料版.双语.中文在上.srt"
+    "subtitle_file": "Sam Altman.OPUS4-8术语小修去行尾标点版.有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "Anthropic 增长与 AI 时代角色变迁",
@@ -114,7 +117,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Why AI is going vertical (again).OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+    "subtitle_file": "Why AI is going vertical (again).OPUS4-8有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "成就 NVIDIA 的思维方式",
@@ -143,7 +147,8 @@
       "11.png",
       "12.png"
     ],
-    "subtitle_file": "Jensen Huang： The Mindset That Built NVIDIA.OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+    "subtitle_file": "Jensen Huang： The Mindset That Built NVIDIA.OPUS4-8有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "深入解析 OpenAI 内部如何用 Codex 做产品工作",
@@ -162,7 +167,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "Inside How OpenAI Uses Codex to Do Product Work.OPUS4.8无翻译参考资料版.双语.中文在上.参考资料检查去多余标点版.srt"
+    "subtitle_file": "Inside How OpenAI Uses Codex to Do Product Work.OPUS4.8无翻译参考资料版.双语.中文在上.参考资料检查去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "如何打造会自我检查工作成果的 AI Agent",
@@ -181,7 +187,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "How to Build AI Agents That Check Their Own Work.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+    "subtitle_file": "How to Build AI Agents That Check Their Own Work.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流",
@@ -200,7 +207,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "How I Use ChatGPT Work and GPT-5.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+    "subtitle_file": "How I Use ChatGPT Work and GPT-5.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "Claude Code 为什么删掉 80% 系统提示词",
@@ -250,7 +258,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "Startup Experts Discuss Doing Things That Don't.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+    "subtitle_file": "Startup Experts Discuss Doing Things That Don't.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "YC 创业课创业公司如何拿下第一批客户",
@@ -268,7 +277,8 @@
     "outline_files": [
       "01.png"
     ],
-    "subtitle_file": "How to Get Your First Customers.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+    "subtitle_file": "How to Get Your First Customers.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "YC创业课如何和用户交谈",
@@ -285,7 +295,8 @@
     "path": "videos/undated-014_how-to-talk-to-users-startup-school-yc/",
     "outline_files": [
       "01.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "揭秘年薪百万美元的 AI 工作：FDE",
@@ -304,7 +315,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "How To Talk To Users.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+    "subtitle_file": "How To Talk To Users.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "AI 蜜月期正在结束，科技从业者已经感受到了",
@@ -324,7 +336,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Why the tech workforce is quietly splitting in two.OPUS4.8有翻译参考资料版.双语.中文在上.srt"
+    "subtitle_file": "Why the tech workforce is quietly splitting in two.OPUS4.8有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "AI 时代，品味、人的真实性与判断力为何愈发重要",
@@ -344,7 +357,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "The rise of taste, human authenticity and judgment.OPUS4.8无翻译参考资料版.双语.中文在上.去标点版.srt"
+    "subtitle_file": "The rise of taste, human authenticity and judgment.OPUS4.8无翻译参考资料版.双语.中文在上.去标点版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "超大规模测试时计算如何改变 AI 的基准测试、安全与研究",
@@ -363,7 +377,8 @@
       "01.png",
       "02.png",
       "03.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "OpenAI Codex 负责人谈 AI 时代产品工作的重塑",
@@ -382,7 +397,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8有翻译参考资料版.双语.中文在上.去多余标点修正版.srt"
+    "subtitle_file": "Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8有翻译参考资料版.双语.中文在上.去多余标点修正版.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "好故事是怎么搭起来的",
@@ -399,7 +415,8 @@
     "path": "videos/undated-026_the-clues-to-a-great-story-andrew-stanton-ted/",
     "outline_files": [
       "01.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "故事的形状",
@@ -416,7 +433,8 @@
     "path": "videos/undated-035_kurt-vonnegut-on-the-shapes-of-stories/",
     "outline_files": [
       "01.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "如何把平凡的素材搭成神级故事",
@@ -434,7 +452,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "Anthropic 总裁 Daniela Amodei 谈 Claude 的未来",
@@ -452,7 +471,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "人工智能科学家 Bengio 谈如何打造更安全的智能体",
@@ -470,7 +490,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "世界实验室的李飞飞谈创建大型世界模型",
@@ -488,7 +509,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "MetaAI首席执行官王先生谈人工智能竞赛的制胜之道",
@@ -506,7 +528,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "Anthropic 的人工智能 Claude 有意识吗？",
@@ -524,7 +547,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "别再迷信大DAU了！下一个“字节级”的AI巨头，可能长得完全不像字节",
@@ -543,7 +567,8 @@
       "01.png",
       "02.png",
       "03.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "别再被失业恐慌骗了，AI只消灭任务，不消灭工作",
@@ -560,7 +585,8 @@
     "path": "videos/undated-024_the-most-rational-take-on-ai-you-ll-hear-this-year-benedict/",
     "outline_files": [
       "01.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "AI 原生初创公司：5 款产品，7 位数营收，100% AI 编写代码",
@@ -578,7 +604,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "深入了解 Anthropic 如何构建下一代 Claude",
@@ -598,7 +625,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Inside How Anthropic Is Building the Next Claude  Alex Albert - Peter Yang (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Inside How Anthropic Is Building the Next Claude  Alex Albert - Peter Yang (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "OpenAI Codex 插件、自动化与子智能体",
@@ -617,7 +645,8 @@
       "01.png",
       "02.png",
       "03.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "用于上下文工程的代理式搜索",
@@ -637,7 +666,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "当软件不再是护城河时如何取胜",
@@ -658,7 +688,8 @@
       "03.png",
       "04.png"
     ],
-    "subtitle_file": "How to win when software is not a moat ｜ Evan Spiegel (Snapchat CEO)_final.srt"
+    "subtitle_file": "How to win when software is not a moat ｜ Evan Spiegel (Snapchat CEO)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "为什么构建评估（Eval）平台如此困难",
@@ -677,7 +708,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "Why building eval platforms is hard — Phil Hetzel, Braintrust - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Why building eval platforms is hard — Phil Hetzel, Braintrust - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "交付复杂的AI应用程序",
@@ -697,7 +729,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Shipping complex AI applications — Braintrust & Trainline - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Shipping complex AI applications — Braintrust & Trainline - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "超越传统评估的 AI 可观测性",
@@ -718,7 +751,8 @@
       "03.png",
       "04.png"
     ],
-    "subtitle_file": "Everything You Need To Know About Agent Observability — Danny Gollapalli & Zubin Koticha, Raindrop - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Everything You Need To Know About Agent Observability — Danny Gollapalli & Zubin Koticha, Raindrop - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "与 Boris Cherny 一起构建 Claude Code",
@@ -738,7 +772,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt"
+    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "当编程被解决后会发生什么｜Boris Cherny",
@@ -758,7 +793,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt"
+    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "Claude Code 最佳实践及功能解析｜Cal Rueb",
@@ -776,7 +812,8 @@
     "outline_files": [
       "01.png",
       "02.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "揭秘 Anthropic：为什么他们的产品迭代速度能冠绝全球？",
@@ -798,7 +835,8 @@
       "04.png",
       "05.png",
       "06.png"
-    ]
+    ],
+    "cover": "cover.jpeg"
   },
   {
     "title": "完整工作坊构建你自己的深度研究智能体",
@@ -817,7 +855,8 @@
       "01.png",
       "02.png"
     ],
-    "subtitle_file": "Full Workshop Build Your Own Deep Research Agents - Louis-Fran鏾is Bouchard, Paul Iusztin, Samridhi - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Full Workshop Build Your Own Deep Research Agents - Louis-Fran鏾is Bouchard, Paul Iusztin, Samridhi - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "驾驭工程",
@@ -837,7 +876,8 @@
       "02.png",
       "03.png"
     ],
-    "subtitle_file": "Harness Engineering How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI - AI Engineer (1080p, h264, youtube)_final.srt"
+    "subtitle_file": "Harness Engineering How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI - AI Engineer (1080p, h264, youtube)_final.srt",
+    "cover": "cover.jpeg"
   },
   {
     "title": "杰码商业",
@@ -925,6 +965,7 @@
       "03.png",
       "04.png"
     ],
-    "subtitle_file": "The AI paradox More automation, more humans, more work  Dan Shipper - Lenny's Podcast (1080p, h264, youtube)_final (2).srt"
+    "subtitle_file": "The AI paradox More automation, more humans, more work  Dan Shipper - Lenny's Podcast (1080p, h264, youtube)_final (2).srt",
+    "cover": "cover.jpeg"
   }
 ]

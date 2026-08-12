@@ -237,7 +237,7 @@ def episode_body(video_dir: Path, meta: dict, subtitle: Path | None, outlines: l
     if isinstance(speakers, str):
         speakers = [speakers]
     meta_bits = [
-        ("发布日期", clean_date(meta.get("published_at", "")) or "待补充"),
+        ("上传时间", clean_date(meta.get("published_at", "")) or "待补充"),
         ("时长", meta.get("duration") or "待补充"),
         ("嘉宾", "、".join(speakers) if speakers else "待补充"),
         ("频道", meta.get("up") or "待补充"),
@@ -342,7 +342,7 @@ def build_home(episodes: list[dict]) -> str:
 <a class="card" href="{esc(path)}" data-date="{date_sort_value(ep.get("published_at", ""))}" data-title="{esc(title.lower())}" data-duration="{duration_seconds(str(ep.get("duration") or ""))}">
   <div class="cover">{cover_html}</div>
   <div class="card-body">
-    <div class="date">发布时间：{esc(clean_date(ep.get("published_at", "")) or "待补充")}</div>
+    <div class="date">上传时间：{esc(clean_date(ep.get("published_at", "")) or "待补充")}</div>
     <div class="title">{esc(title)}</div>
     <div class="original">原题：{esc(ep.get("original_title") or "待补充")}</div>
     <div class="meta"><span class="pill">{esc(speaker_text)}</span><span class="pill">{esc(ep.get("duration") or "时长待补充")}</span><span class="pill">字幕 {esc(ep.get("subtitle_count", 0))}</span><span class="pill">提纲图 {esc(ep.get("outline_count", 0))}</span></div>

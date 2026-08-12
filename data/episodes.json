@@ -29,19 +29,63 @@
     ]
   },
   {
-    "title": "现在是 AI 创业最好时机",
-    "bilibili_title": "现在是 AI 创业最好时机｜Alexandr Wang",
-    "original_title": "Alexandr Wang: “This is a Once-in-a-Civilization Opportunity”",
-    "bilibili_url": "",
-    "youtube_url": "https://www.youtube.com/watch?v=sJ4VJWycX9M",
-    "published_at": "发布时间: 待补充",
-    "up": "Y Combinator",
-    "folder_title": "现在是 AI 创业最好时机",
-    "slug": "undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity",
-    "subtitle_count": 1,
+    "title": "为什么说“产品经理岗位本不该存在”",
+    "bilibili_title": "为什么说“产品经理岗位本不该存在” | Tom Verrilli（Whatnot首席产品官）",
+    "original_title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
+    "bilibili_url": "https://www.bilibili.com/video/BV1xHuw6uEqC",
+    "youtube_url": "https://www.youtube.com/watch?v=ruvis-VWg2s",
+    "published_at": "2026-08-04 15:47:49",
+    "up": "通用人工智障",
+    "folder_title": "为什么说“产品经理岗位本不该存在”",
+    "slug": "undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot",
+    "subtitle_count": 2,
+    "outline_count": 7,
+    "path": "videos/undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png",
+      "07.png"
+    ],
+    "subtitle_file": "This CPO regrets that product management exists.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修+去多余行尾标点版.srt"
+  },
+  {
+    "title": "从没有比现在更适合创业的时候",
+    "bilibili_title": "从没有比现在更适合创业的时候 | Sam Altman",
+    "original_title": "Sam Altman: \"Never a Better Time to Do a Startup\"",
+    "bilibili_url": "https://www.bilibili.com/video/BV19GMR6wEnz",
+    "youtube_url": "https://www.youtube.com/watch?v=ZIaOBAjvc38",
+    "published_at": "2026-08-03 22:07:02",
+    "up": "通用人工智障",
+    "folder_title": "从没有比现在更适合创业的时候",
+    "slug": "undated-022_sam-altman-never-a-better-time-to-do-a-startup",
+    "subtitle_count": 3,
+    "outline_count": 4,
+    "path": "videos/undated-022_sam-altman-never-a-better-time-to-do-a-startup/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
+    ],
+    "subtitle_file": "Sam Altman： ＂Never a Better Time to Do a Startup＂.OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "AI 时代如何创办一家初创公司",
+    "bilibili_title": "AI 时代如何创办一家初创公司 | Sam Altman",
+    "original_title": "Sam Altman - How to Start a Startup",
+    "bilibili_url": "https://www.bilibili.com/video/BV1gRMX6REGo",
+    "youtube_url": "https://www.youtube.com/watch?v=Vv3CEAS_w34",
+    "published_at": "2026-08-03 16:53:23",
+    "up": "通用人工智障",
+    "folder_title": "AI 时代如何创办一家初创公司",
+    "slug": "undated-003_sam-altman-how-to-start-a-startup-ai",
+    "subtitle_count": 4,
     "outline_count": 6,
-    "path": "videos/undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity/",
-    "subtitle_file": "Alexandr Wang： “This is a Once-in-a-Civilization.OPUS4-8有翻译参考资料版.双语.中文在上.final_asr_terms_polished.srt",
+    "path": "videos/undated-003_sam-altman-how-to-start-a-startup-ai/",
     "outline_files": [
       "01.png",
       "02.png",
@@ -50,12 +94,113 @@
       "05.png",
       "06.png"
     ],
-    "cover": "cover.jpeg",
-    "duration": "约 30 分钟",
-    "speakers": [
-      "Alexandr Wang",
-      "Garry Tan"
-    ]
+    "subtitle_file": "Sam Altman.OPUS4-8术语小修去行尾标点版.有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "Anthropic 增长与 AI 时代角色变迁",
+    "bilibili_title": "AI 为何再次垂直起飞｜Dianne Penn(Anthropic)",
+    "original_title": "Why AI is going vertical (again) | Dianne Penn (Anthropic)",
+    "bilibili_url": "https://www.bilibili.com/video/BV1zdMQ6NEdc",
+    "youtube_url": "https://www.youtube.com/watch?v=tivaWTTVRhY",
+    "published_at": "2026-08-03 11:28:19",
+    "up": "通用人工智障",
+    "folder_title": "Anthropic 增长与 AI 时代角色变迁",
+    "slug": "undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai",
+    "subtitle_count": 2,
+    "outline_count": 3,
+    "path": "videos/undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Why AI is going vertical (again).OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "成就 NVIDIA 的思维方式",
+    "bilibili_title": "成就 NVIDIA 的思维方式 | 黄仁勋",
+    "original_title": "Jensen Huang: The Mindset That Built NVIDIA",
+    "bilibili_url": "https://www.bilibili.com/video/BV1PTGG6gEky",
+    "youtube_url": "https://www.youtube.com/watch?v=I4B37S1dyQQ",
+    "published_at": "2026-08-01 21:45:11",
+    "up": "通用人工智障",
+    "folder_title": "成就 NVIDIA 的思维方式",
+    "slug": "undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia",
+    "subtitle_count": 2,
+    "outline_count": 12,
+    "path": "videos/undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png",
+      "07.png",
+      "08.png",
+      "09.png",
+      "10.png",
+      "11.png",
+      "12.png"
+    ],
+    "subtitle_file": "Jensen Huang： The Mindset That Built NVIDIA.OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "深入解析 OpenAI 内部如何用 Codex 做产品工作",
+    "bilibili_title": "深入解析 OpenAI 内部如何用 Codex 做产品工作 | Rohan Varma",
+    "original_title": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma",
+    "bilibili_url": "https://www.bilibili.com/video/BV1Ei3q6YEnK",
+    "youtube_url": "https://www.youtube.com/watch?v=fAdFE7y6K2o",
+    "published_at": "2026-07-28 19:49:26",
+    "up": "通用人工智障",
+    "folder_title": "深入解析 OpenAI 内部如何用 Codex 做产品工作",
+    "slug": "undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai",
+    "subtitle_count": 2,
+    "outline_count": 2,
+    "path": "videos/undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Inside How OpenAI Uses Codex to Do Product Work.OPUS4.8无翻译参考资料版.双语.中文在上.参考资料检查去多余标点版.srt"
+  },
+  {
+    "title": "如何打造会自我检查工作成果的 AI Agent",
+    "bilibili_title": "如何打造会自我检查工作成果的 AI Agent | Jared Zoneraich",
+    "original_title": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich",
+    "bilibili_url": "https://www.bilibili.com/video/BV1Jb3v68Esq",
+    "youtube_url": "https://www.youtube.com/watch?v=0YeeJHYy-Vc",
+    "published_at": "2026-07-28 16:18:42",
+    "up": "通用人工智障",
+    "folder_title": "如何打造会自我检查工作成果的 AI Agent",
+    "slug": "undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich",
+    "subtitle_count": 2,
+    "outline_count": 2,
+    "path": "videos/undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "How to Build AI Agents That Check Their Own Work.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
+  },
+  {
+    "title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流",
+    "bilibili_title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流｜Peter Yang",
+    "original_title": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial)",
+    "bilibili_url": "https://www.bilibili.com/video/BV19p3i6pEL7",
+    "youtube_url": "https://www.youtube.com/watch?v=WLg9qWOf6zw",
+    "published_at": "2026-07-28 14:05:01",
+    "up": "通用人工智障",
+    "folder_title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流",
+    "slug": "undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything",
+    "subtitle_count": 2,
+    "outline_count": 2,
+    "path": "videos/undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "How I Use ChatGPT Work and GPT-5.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
   },
   {
     "title": "Claude Code 为什么删掉 80% 系统提示词",
@@ -89,118 +234,6 @@
     ]
   },
   {
-    "title": "为什么说“产品经理岗位本不该存在”",
-    "bilibili_title": "为什么说“产品经理岗位本不该存在” | Tom Verrilli（Whatnot首席产品官）",
-    "original_title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
-    "bilibili_url": "https://www.bilibili.com/video/BV1xHuw6uEqC",
-    "youtube_url": "https://www.youtube.com/watch?v=ruvis-VWg2s",
-    "published_at": "2026-08-04 15:47:49",
-    "up": "通用人工智障",
-    "folder_title": "为什么说“产品经理岗位本不该存在”",
-    "slug": "undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot",
-    "subtitle_count": 2,
-    "outline_count": 7,
-    "path": "videos/undated-019_this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot/"
-  },
-  {
-    "title": "从没有比现在更适合创业的时候",
-    "bilibili_title": "从没有比现在更适合创业的时候 | Sam Altman",
-    "original_title": "Sam Altman: \"Never a Better Time to Do a Startup\"",
-    "bilibili_url": "https://www.bilibili.com/video/BV19GMR6wEnz",
-    "youtube_url": "https://www.youtube.com/watch?v=ZIaOBAjvc38",
-    "published_at": "2026-08-03 22:07:02",
-    "up": "通用人工智障",
-    "folder_title": "从没有比现在更适合创业的时候",
-    "slug": "undated-022_sam-altman-never-a-better-time-to-do-a-startup",
-    "subtitle_count": 3,
-    "outline_count": 4,
-    "path": "videos/undated-022_sam-altman-never-a-better-time-to-do-a-startup/"
-  },
-  {
-    "title": "AI 时代如何创办一家初创公司",
-    "bilibili_title": "AI 时代如何创办一家初创公司 | Sam Altman",
-    "original_title": "Sam Altman - How to Start a Startup",
-    "bilibili_url": "https://www.bilibili.com/video/BV1gRMX6REGo",
-    "youtube_url": "https://www.youtube.com/watch?v=Vv3CEAS_w34",
-    "published_at": "2026-08-03 16:53:23",
-    "up": "通用人工智障",
-    "folder_title": "AI 时代如何创办一家初创公司",
-    "slug": "undated-003_sam-altman-how-to-start-a-startup-ai",
-    "subtitle_count": 4,
-    "outline_count": 6,
-    "path": "videos/undated-003_sam-altman-how-to-start-a-startup-ai/"
-  },
-  {
-    "title": "Anthropic 增长与 AI 时代角色变迁",
-    "bilibili_title": "AI 为何再次垂直起飞｜Dianne Penn(Anthropic)",
-    "original_title": "Why AI is going vertical (again) | Dianne Penn (Anthropic)",
-    "bilibili_url": "https://www.bilibili.com/video/BV1zdMQ6NEdc",
-    "youtube_url": "https://www.youtube.com/watch?v=tivaWTTVRhY",
-    "published_at": "2026-08-03 11:28:19",
-    "up": "通用人工智障",
-    "folder_title": "Anthropic 增长与 AI 时代角色变迁",
-    "slug": "undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai",
-    "subtitle_count": 2,
-    "outline_count": 3,
-    "path": "videos/undated-006_why-ai-is-going-vertical-again-dianne-penn-anthropic-anthropic-ai/"
-  },
-  {
-    "title": "成就 NVIDIA 的思维方式",
-    "bilibili_title": "成就 NVIDIA 的思维方式 | 黄仁勋",
-    "original_title": "Jensen Huang: The Mindset That Built NVIDIA",
-    "bilibili_url": "https://www.bilibili.com/video/BV1PTGG6gEky",
-    "youtube_url": "https://www.youtube.com/watch?v=I4B37S1dyQQ",
-    "published_at": "2026-08-01 21:45:11",
-    "up": "通用人工智障",
-    "folder_title": "成就 NVIDIA 的思维方式",
-    "slug": "undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia",
-    "subtitle_count": 2,
-    "outline_count": 12,
-    "path": "videos/undated-032_jensen-huang-the-mindset-that-built-nvidia-nvidia/"
-  },
-  {
-    "title": "深入解析 OpenAI 内部如何用 Codex 做产品工作",
-    "bilibili_title": "深入解析 OpenAI 内部如何用 Codex 做产品工作 | Rohan Varma",
-    "original_title": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma",
-    "bilibili_url": "https://www.bilibili.com/video/BV1Ei3q6YEnK",
-    "youtube_url": "https://www.youtube.com/watch?v=fAdFE7y6K2o",
-    "published_at": "2026-07-28 19:49:26",
-    "up": "通用人工智障",
-    "folder_title": "深入解析 OpenAI 内部如何用 Codex 做产品工作",
-    "slug": "undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai",
-    "subtitle_count": 2,
-    "outline_count": 2,
-    "path": "videos/undated-038_inside-how-openai-uses-codex-to-do-product-work-rohan-varma-openai/"
-  },
-  {
-    "title": "如何打造会自我检查工作成果的 AI Agent",
-    "bilibili_title": "如何打造会自我检查工作成果的 AI Agent | Jared Zoneraich",
-    "original_title": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich",
-    "bilibili_url": "https://www.bilibili.com/video/BV1Jb3v68Esq",
-    "youtube_url": "https://www.youtube.com/watch?v=0YeeJHYy-Vc",
-    "published_at": "2026-07-28 16:18:42",
-    "up": "通用人工智障",
-    "folder_title": "如何打造会自我检查工作成果的 AI Agent",
-    "slug": "undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich",
-    "subtitle_count": 2,
-    "outline_count": 2,
-    "path": "videos/undated-027_how-to-build-ai-agents-that-check-their-own-work-jared-zoneraich/"
-  },
-  {
-    "title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流",
-    "bilibili_title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流｜Peter Yang",
-    "original_title": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial)",
-    "bilibili_url": "https://www.bilibili.com/video/BV19p3i6pEL7",
-    "youtube_url": "https://www.youtube.com/watch?v=WLg9qWOf6zw",
-    "published_at": "2026-07-28 14:05:01",
-    "up": "通用人工智障",
-    "folder_title": "用 ChatGPT Work 和 GPT-5.6 搭建个人 AI 工作流",
-    "slug": "undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything",
-    "subtitle_count": 2,
-    "outline_count": 2,
-    "path": "videos/undated-039_how-i-use-chatgpt-work-and-gpt-5-6-to-do-everything/"
-  },
-  {
     "title": "为什么创业早期要做不能规模化的事",
     "bilibili_title": "YC合伙人谈：为什么创业早期要做不能规模化的事",
     "original_title": "Startup Experts Discuss Doing Things That Don't Scale",
@@ -212,7 +245,12 @@
     "slug": "undated-017_startup-experts-discuss-doing-things-that-don-t-scale",
     "subtitle_count": 2,
     "outline_count": 2,
-    "path": "videos/undated-017_startup-experts-discuss-doing-things-that-don-t-scale/"
+    "path": "videos/undated-017_startup-experts-discuss-doing-things-that-don-t-scale/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Startup Experts Discuss Doing Things That Don't.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
   },
   {
     "title": "YC 创业课创业公司如何拿下第一批客户",
@@ -226,7 +264,11 @@
     "slug": "undated-013_how-to-get-your-first-customers-startup-school-yc",
     "subtitle_count": 2,
     "outline_count": 1,
-    "path": "videos/undated-013_how-to-get-your-first-customers-startup-school-yc/"
+    "path": "videos/undated-013_how-to-get-your-first-customers-startup-school-yc/",
+    "outline_files": [
+      "01.png"
+    ],
+    "subtitle_file": "How to Get Your First Customers.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
   },
   {
     "title": "YC创业课如何和用户交谈",
@@ -240,7 +282,10 @@
     "slug": "undated-014_how-to-talk-to-users-startup-school-yc",
     "subtitle_count": 0,
     "outline_count": 1,
-    "path": "videos/undated-014_how-to-talk-to-users-startup-school-yc/"
+    "path": "videos/undated-014_how-to-talk-to-users-startup-school-yc/",
+    "outline_files": [
+      "01.png"
+    ]
   },
   {
     "title": "揭秘年薪百万美元的 AI 工作：FDE",
@@ -254,7 +299,12 @@
     "slug": "undated-034_fde-the-1m-year-ai-job-explained-ai-fde",
     "subtitle_count": 4,
     "outline_count": 2,
-    "path": "videos/undated-034_fde-the-1m-year-ai-job-explained-ai-fde/"
+    "path": "videos/undated-034_fde-the-1m-year-ai-job-explained-ai-fde/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "How To Talk To Users.OPUS4.8有翻译参考资料版.双语.中文在上.术语统一去多余标点版.srt"
   },
   {
     "title": "AI 蜜月期正在结束，科技从业者已经感受到了",
@@ -268,7 +318,13 @@
     "slug": "undated-005_why-the-ai-s-honeymoon-is-ending-and-tech-workers-are-feeling",
     "subtitle_count": 2,
     "outline_count": 3,
-    "path": "videos/undated-005_why-the-ai-s-honeymoon-is-ending-and-tech-workers-are-feeling/"
+    "path": "videos/undated-005_why-the-ai-s-honeymoon-is-ending-and-tech-workers-are-feeling/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Why the tech workforce is quietly splitting in two.OPUS4.8有翻译参考资料版.双语.中文在上.srt"
   },
   {
     "title": "AI 时代，品味、人的真实性与判断力为何愈发重要",
@@ -282,7 +338,13 @@
     "slug": "undated-004_the-rise-of-taste-human-authenticity-and-judgment-in-an-ai-world",
     "subtitle_count": 4,
     "outline_count": 3,
-    "path": "videos/undated-004_the-rise-of-taste-human-authenticity-and-judgment-in-an-ai-world/"
+    "path": "videos/undated-004_the-rise-of-taste-human-authenticity-and-judgment-in-an-ai-world/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "The rise of taste, human authenticity and judgment.OPUS4.8无翻译参考资料版.双语.中文在上.去标点版.srt"
   },
   {
     "title": "超大规模测试时计算如何改变 AI 的基准测试、安全与研究",
@@ -296,7 +358,12 @@
     "slug": "undated-041_really-big-test-time-compute-in-ai-changes-benchmarks-safety-and-research",
     "subtitle_count": 0,
     "outline_count": 3,
-    "path": "videos/undated-041_really-big-test-time-compute-in-ai-changes-benchmarks-safety-and-research/"
+    "path": "videos/undated-041_really-big-test-time-compute-in-ai-changes-benchmarks-safety-and-research/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ]
   },
   {
     "title": "OpenAI Codex 负责人谈 AI 时代产品工作的重塑",
@@ -310,7 +377,12 @@
     "slug": "undated-012_openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino",
     "subtitle_count": 3,
     "outline_count": 2,
-    "path": "videos/undated-012_openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino/"
+    "path": "videos/undated-012_openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Why OpenAI is merging Codex and ChatGPT and the.OPUS4.8有翻译参考资料版.双语.中文在上.去多余标点修正版.srt"
   },
   {
     "title": "好故事是怎么搭起来的",
@@ -324,7 +396,10 @@
     "slug": "undated-026_the-clues-to-a-great-story-andrew-stanton-ted",
     "subtitle_count": 0,
     "outline_count": 1,
-    "path": "videos/undated-026_the-clues-to-a-great-story-andrew-stanton-ted/"
+    "path": "videos/undated-026_the-clues-to-a-great-story-andrew-stanton-ted/",
+    "outline_files": [
+      "01.png"
+    ]
   },
   {
     "title": "故事的形状",
@@ -338,7 +413,10 @@
     "slug": "undated-035_kurt-vonnegut-on-the-shapes-of-stories",
     "subtitle_count": 0,
     "outline_count": 1,
-    "path": "videos/undated-035_kurt-vonnegut-on-the-shapes-of-stories/"
+    "path": "videos/undated-035_kurt-vonnegut-on-the-shapes-of-stories/",
+    "outline_files": [
+      "01.png"
+    ]
   },
   {
     "title": "如何把平凡的素材搭成神级故事",
@@ -352,7 +430,11 @@
     "slug": "undated-028_ira-glass-on-storytelling",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-028_ira-glass-on-storytelling/"
+    "path": "videos/undated-028_ira-glass-on-storytelling/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "Anthropic 总裁 Daniela Amodei 谈 Claude 的未来",
@@ -366,7 +448,11 @@
     "slug": "undated-007_anthropic-president-amodei-on-the-future-of-claude-anthropic-daniela-amodei-claude",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-007_anthropic-president-amodei-on-the-future-of-claude-anthropic-daniela-amodei-claude/"
+    "path": "videos/undated-007_anthropic-president-amodei-on-the-future-of-claude-anthropic-daniela-amodei-claude/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "人工智能科学家 Bengio 谈如何打造更安全的智能体",
@@ -380,7 +466,11 @@
     "slug": "undated-021_ai-scientist-bengio-on-engineering-safer-agents-bengio",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-021_ai-scientist-bengio-on-engineering-safer-agents-bengio/"
+    "path": "videos/undated-021_ai-scientist-bengio-on-engineering-safer-agents-bengio/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "世界实验室的李飞飞谈创建大型世界模型",
@@ -394,7 +484,11 @@
     "slug": "undated-016_world-labs-fei-fei-li-on-creating-large-world-models",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-016_world-labs-fei-fei-li-on-creating-large-world-models/"
+    "path": "videos/undated-016_world-labs-fei-fei-li-on-creating-large-world-models/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "MetaAI首席执行官王先生谈人工智能竞赛的制胜之道",
@@ -408,7 +502,11 @@
     "slug": "undated-010_meta-ai-chief-wang-on-winning-the-race-in-ai-metaai",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-010_meta-ai-chief-wang-on-winning-the-race-in-ai-metaai/"
+    "path": "videos/undated-010_meta-ai-chief-wang-on-winning-the-race-in-ai-metaai/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "Anthropic 的人工智能 Claude 有意识吗？",
@@ -422,7 +520,11 @@
     "slug": "undated-008_anthropic-s-ethicist-on-whether-ai-can-become-conscious-anthropic-claude",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-008_anthropic-s-ethicist-on-whether-ai-can-become-conscious-anthropic-claude/"
+    "path": "videos/undated-008_anthropic-s-ethicist-on-whether-ai-can-become-conscious-anthropic-claude/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "别再迷信大DAU了！下一个“字节级”的AI巨头，可能长得完全不像字节",
@@ -436,7 +538,12 @@
     "slug": "undated-025_142-2-harness-2026-stanley-druckenmiller-dau-ai",
     "subtitle_count": 0,
     "outline_count": 3,
-    "path": "videos/undated-025_142-2-harness-2026-stanley-druckenmiller-dau-ai/"
+    "path": "videos/undated-025_142-2-harness-2026-stanley-druckenmiller-dau-ai/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ]
   },
   {
     "title": "别再被失业恐慌骗了，AI只消灭任务，不消灭工作",
@@ -450,7 +557,10 @@
     "slug": "undated-024_the-most-rational-take-on-ai-you-ll-hear-this-year-benedict",
     "subtitle_count": 0,
     "outline_count": 1,
-    "path": "videos/undated-024_the-most-rational-take-on-ai-you-ll-hear-this-year-benedict/"
+    "path": "videos/undated-024_the-most-rational-take-on-ai-you-ll-hear-this-year-benedict/",
+    "outline_files": [
+      "01.png"
+    ]
   },
   {
     "title": "AI 原生初创公司：5 款产品，7 位数营收，100% AI 编写代码",
@@ -464,7 +574,11 @@
     "slug": "undated-001_the-ai-native-startup-5-products-7-figure-revenue-100-ai-written",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-001_the-ai-native-startup-5-products-7-figure-revenue-100-ai-written/"
+    "path": "videos/undated-001_the-ai-native-startup-5-products-7-figure-revenue-100-ai-written/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "深入了解 Anthropic 如何构建下一代 Claude",
@@ -478,7 +592,13 @@
     "slug": "undated-037_inside-how-anthropic-is-building-the-next-claude-alex-albert-anthropic-claude",
     "subtitle_count": 1,
     "outline_count": 3,
-    "path": "videos/undated-037_inside-how-anthropic-is-building-the-next-claude-alex-albert-anthropic-claude/"
+    "path": "videos/undated-037_inside-how-anthropic-is-building-the-next-claude-alex-albert-anthropic-claude/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Inside How Anthropic Is Building the Next Claude  Alex Albert - Peter Yang (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "OpenAI Codex 插件、自动化与子智能体",
@@ -492,7 +612,12 @@
     "slug": "undated-011_openai-codex-masterclass-vaibhav-srivastav-katia-gil-guzman-openai-codex",
     "subtitle_count": 0,
     "outline_count": 3,
-    "path": "videos/undated-011_openai-codex-masterclass-vaibhav-srivastav-katia-gil-guzman-openai-codex/"
+    "path": "videos/undated-011_openai-codex-masterclass-vaibhav-srivastav-katia-gil-guzman-openai-codex/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ]
   },
   {
     "title": "用于上下文工程的代理式搜索",
@@ -506,7 +631,13 @@
     "slug": "undated-040_agentic-search-for-context-engineering-leonie-monigatti-elastic",
     "subtitle_count": 1,
     "outline_count": 3,
-    "path": "videos/undated-040_agentic-search-for-context-engineering-leonie-monigatti-elastic/"
+    "path": "videos/undated-040_agentic-search-for-context-engineering-leonie-monigatti-elastic/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "当软件不再是护城河时如何取胜",
@@ -520,7 +651,14 @@
     "slug": "undated-031_how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat",
     "subtitle_count": 1,
     "outline_count": 4,
-    "path": "videos/undated-031_how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat/"
+    "path": "videos/undated-031_how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
+    ],
+    "subtitle_file": "How to win when software is not a moat ｜ Evan Spiegel (Snapchat CEO)_final.srt"
   },
   {
     "title": "为什么构建评估（Eval）平台如此困难",
@@ -534,7 +672,12 @@
     "slug": "undated-018_why-building-eval-platforms-is-hard-phil-hetzel-braintrust-eval",
     "subtitle_count": 1,
     "outline_count": 2,
-    "path": "videos/undated-018_why-building-eval-platforms-is-hard-phil-hetzel-braintrust-eval/"
+    "path": "videos/undated-018_why-building-eval-platforms-is-hard-phil-hetzel-braintrust-eval/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Why building eval platforms is hard — Phil Hetzel, Braintrust - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "交付复杂的AI应用程序",
@@ -548,7 +691,13 @@
     "slug": "undated-020_shipping-complex-ai-applications-braintrust-trainline-ai",
     "subtitle_count": 1,
     "outline_count": 3,
-    "path": "videos/undated-020_shipping-complex-ai-applications-braintrust-trainline-ai/"
+    "path": "videos/undated-020_shipping-complex-ai-applications-braintrust-trainline-ai/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Shipping complex AI applications — Braintrust & Trainline - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "超越传统评估的 AI 可观测性",
@@ -562,7 +711,14 @@
     "slug": "undated-042_full-workshop-ai-observability-beyond-evals-danny-gollapalli-zubin-koticha-raindrop-ai",
     "subtitle_count": 1,
     "outline_count": 4,
-    "path": "videos/undated-042_full-workshop-ai-observability-beyond-evals-danny-gollapalli-zubin-koticha-raindrop-ai/"
+    "path": "videos/undated-042_full-workshop-ai-observability-beyond-evals-danny-gollapalli-zubin-koticha-raindrop-ai/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
+    ],
+    "subtitle_file": "Everything You Need To Know About Agent Observability — Danny Gollapalli & Zubin Koticha, Raindrop - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "与 Boris Cherny 一起构建 Claude Code",
@@ -576,7 +732,13 @@
     "slug": "undated-015_building-claude-code-with-boris-cherny-boris-cherny-claude-code",
     "subtitle_count": 2,
     "outline_count": 3,
-    "path": "videos/undated-015_building-claude-code-with-boris-cherny-boris-cherny-claude-code/"
+    "path": "videos/undated-015_building-claude-code-with-boris-cherny-boris-cherny-claude-code/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt"
   },
   {
     "title": "当编程被解决后会发生什么｜Boris Cherny",
@@ -590,7 +752,13 @@
     "slug": "undated-030_head-of-claude-code-what-happens-after-coding-is-solved-boris-cherny",
     "subtitle_count": 1,
     "outline_count": 3,
-    "path": "videos/undated-030_head-of-claude-code-what-happens-after-coding-is-solved-boris-cherny/"
+    "path": "videos/undated-030_head-of-claude-code-what-happens-after-coding-is-solved-boris-cherny/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Head of Claude Code What happens after coding is solved  Boris Cherny - Lenny's Podcast (1080p, h264, youtube)_final (1).srt"
   },
   {
     "title": "Claude Code 最佳实践及功能解析｜Cal Rueb",
@@ -604,7 +772,11 @@
     "slug": "undated-009_claude-code-best-practices-code-w-claude-claude-code-cal-rueb",
     "subtitle_count": 0,
     "outline_count": 2,
-    "path": "videos/undated-009_claude-code-best-practices-code-w-claude-claude-code-cal-rueb/"
+    "path": "videos/undated-009_claude-code-best-practices-code-w-claude-claude-code-cal-rueb/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ]
   },
   {
     "title": "揭秘 Anthropic：为什么他们的产品迭代速度能冠绝全球？",
@@ -618,7 +790,15 @@
     "slug": "undated-033_how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu",
     "subtitle_count": 0,
     "outline_count": 6,
-    "path": "videos/undated-033_how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu/"
+    "path": "videos/undated-033_how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png"
+    ]
   },
   {
     "title": "完整工作坊构建你自己的深度研究智能体",
@@ -632,7 +812,12 @@
     "slug": "undated-029_full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard",
     "subtitle_count": 1,
     "outline_count": 2,
-    "path": "videos/undated-029_full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard/"
+    "path": "videos/undated-029_full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Full Workshop Build Your Own Deep Research Agents - Louis-Fran鏾is Bouchard, Paul Iusztin, Samridhi - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "驾驭工程",
@@ -646,7 +831,13 @@
     "slug": "undated-043_harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan",
     "subtitle_count": 1,
     "outline_count": 3,
-    "path": "videos/undated-043_harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan/"
+    "path": "videos/undated-043_harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "subtitle_file": "Harness Engineering How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI - AI Engineer (1080p, h264, youtube)_final.srt"
   },
   {
     "title": "杰码商业",
@@ -660,7 +851,41 @@
     "slug": "undated-036_3000-ai",
     "subtitle_count": 1,
     "outline_count": 2,
-    "path": "videos/undated-036_3000-ai/"
+    "path": "videos/undated-036_3000-ai/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "翻译好的.srt"
+  },
+  {
+    "title": "现在是 AI 创业最好时机",
+    "bilibili_title": "现在是 AI 创业最好时机｜Alexandr Wang",
+    "original_title": "Alexandr Wang: “This is a Once-in-a-Civilization Opportunity”",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=sJ4VJWycX9M",
+    "published_at": "发布时间: 待补充",
+    "up": "Y Combinator",
+    "folder_title": "现在是 AI 创业最好时机",
+    "slug": "undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity",
+    "subtitle_count": 1,
+    "outline_count": 6,
+    "path": "videos/undated-045_alexandr-wang-this-is-a-once-in-a-civilization-opportunity/",
+    "subtitle_file": "Alexandr Wang： “This is a Once-in-a-Civilization.OPUS4-8有翻译参考资料版.双语.中文在上.final_asr_terms_polished.srt",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png"
+    ],
+    "cover": "cover.jpeg",
+    "duration": "约 30 分钟",
+    "speakers": [
+      "Alexandr Wang",
+      "Garry Tan"
+    ]
   },
   {
     "title": "全程用 AI 做动效海报",
@@ -674,7 +899,12 @@
     "slug": "undated-023_ai",
     "subtitle_count": 1,
     "outline_count": 2,
-    "path": "videos/undated-023_ai/"
+    "path": "videos/undated-023_ai/",
+    "outline_files": [
+      "01.png",
+      "02.png"
+    ],
+    "subtitle_file": "Viktor Oddy on X Insane Social Media Designs in Minutes. Claude Nano Banana. Full Tutorial ❤️_🔥Anyone can now create high-end social media posts fully with AI https t.co M20sWYlUj4 X_final.srt"
   },
   {
     "title": "AI 悖论：自动化越多，人越多，工作也越多",
@@ -688,6 +918,13 @@
     "slug": "undated-002_ai",
     "subtitle_count": 1,
     "outline_count": 4,
-    "path": "videos/undated-002_ai/"
+    "path": "videos/undated-002_ai/",
+    "outline_files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
+    ],
+    "subtitle_file": "The AI paradox More automation, more humans, more work  Dan Shipper - Lenny's Podcast (1080p, h264, youtube)_final (2).srt"
   }
 ]

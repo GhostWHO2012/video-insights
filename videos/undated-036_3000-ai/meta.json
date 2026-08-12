@@ -9,5 +9,11 @@
   "folder_title": "杰码商业",
   "slug": "undated-036_3000-ai",
   "subtitle_count": 1,
-  "outline_count": 2
+  "outline_count": 2,
+  "path": "videos/undated-036_3000-ai/",
+  "outline_files": [
+    "01.png",
+    "02.png"
+  ],
+  "subtitle_file": "翻译好的.srt"
 }

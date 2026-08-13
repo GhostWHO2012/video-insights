@@ -169,6 +169,7 @@ button{
 <script>
 const cols = 16;
 const rows = 15;
+const totalFrames = cols * rows;
 const cellW = 256;
 const cellH = 256;
 const stage = document.getElementById('stage');
@@ -180,49 +181,37 @@ const flipY = document.getElementById('flipY');
 const offset = document.getElementById('offset');
 let lastPoint = null;
 
-const directionFrames = {
-  E:  [6, 13],
-  SE: [12, 13],
-  S:  [14, 8],
-  SW: [12, 2],
-  W:  [6, 2],
-  NW: [1, 2],
-  N:  [0, 8],
-  NE: [1, 13],
-  C:  [7, 8]
-};
-
-const directions = ['E', 'SE', 'S', 'SW', 'W', 'NW', 'N', 'NE'];
-
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
-function setFrame(row, col) {
+function setFrameIndex(index) {
   const frameOffset = Number(offset.value || 0);
-  let index = row * cols + col + frameOffset;
-  index = ((index % (cols * rows)) + cols * rows) % (cols * rows);
+  index = index + frameOffset;
+  index = ((index % totalFrames) + totalFrames) % totalFrames;
   const mappedRow = Math.floor(index / cols);
   const mappedCol = index % cols;
   sprite.style.backgroundPosition = `-${mappedCol * cellW}px -${mappedRow * cellH}px`;
-  frameText.textContent = `row ${mappedRow} / col ${mappedCol}`;
+  const degree = Math.round(index / totalFrames * 360);
+  frameText.textContent = `frame ${index} / row ${mappedRow} / col ${mappedCol} / ${degree}deg`;
 }
 
-function directionFromPoint(x, y) {
+function frameFromPoint(x, y) {
   const spriteRect = sprite.getBoundingClientRect();
   const cx = spriteRect.left + spriteRect.width / 2;
   const cy = spriteRect.top + spriteRect.height / 2;
   let dx = x - cx;
   let dy = y - cy;
 
-  if (Math.hypot(dx, dy) < 34) return 'C';
+  if (Math.hypot(dx, dy) < 34) return Math.floor(totalFrames / 2);
   if (flipX.value === '1') dx *= -1;
   if (flipY.value === '1') dy *= -1;
 
-  const angle = Math.atan2(dy, dx);
-  const slice = Math.PI / 4;
-  const directionIndex = (Math.round(angle / slice) + 8) % 8;
-  return directions[directionIndex];
+  // The sprite sheet starts at the left-facing view and then circles 360 degrees
+  // from left to right, top to bottom. Map the pointer angle to the nearest frame.
+  const angleFromRight = Math.atan2(dy, dx) * 180 / Math.PI;
+  const angleFromLeft = (angleFromRight - 180 + 360) % 360;
+  return Math.round(angleFromLeft / 360 * totalFrames) % totalFrames;
 }
 
 function face(clientX, clientY) {
@@ -232,10 +221,7 @@ function face(clientX, clientY) {
   target.style.left = `${x - rect.left}px`;
   target.style.top = `${y - rect.top}px`;
 
-  const direction = directionFromPoint(x, y);
-  const [row, col] = directionFrames[direction];
-  setFrame(row, col);
-  frameText.textContent += ` / ${direction}`;
+  setFrameIndex(frameFromPoint(x, y));
   lastPoint = { x, y };
 }
 

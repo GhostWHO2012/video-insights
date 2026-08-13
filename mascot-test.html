@@ -168,7 +168,7 @@ button{
 
 <script>
 const cols = 16;
-const rows = 16;
+const rows = 15;
 const cellW = 256;
 const cellH = 256;
 const stage = document.getElementById('stage');
@@ -179,6 +179,20 @@ const flipX = document.getElementById('flipX');
 const flipY = document.getElementById('flipY');
 const offset = document.getElementById('offset');
 let lastPoint = null;
+
+const directionFrames = {
+  E:  [6, 15],
+  SE: [12, 15],
+  S:  [14, 8],
+  SW: [12, 0],
+  W:  [6, 0],
+  NW: [1, 0],
+  N:  [0, 8],
+  NE: [1, 15],
+  C:  [7, 8]
+};
+
+const directions = ['E', 'SE', 'S', 'SW', 'W', 'NW', 'N', 'NE'];
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
@@ -194,6 +208,23 @@ function setFrame(row, col) {
   frameText.textContent = `row ${mappedRow} / col ${mappedCol}`;
 }
 
+function directionFromPoint(x, y) {
+  const spriteRect = sprite.getBoundingClientRect();
+  const cx = spriteRect.left + spriteRect.width / 2;
+  const cy = spriteRect.top + spriteRect.height / 2;
+  let dx = x - cx;
+  let dy = y - cy;
+
+  if (Math.hypot(dx, dy) < 34) return 'C';
+  if (flipX.value === '1') dx *= -1;
+  if (flipY.value === '1') dy *= -1;
+
+  const angle = Math.atan2(dy, dx);
+  const slice = Math.PI / 4;
+  const directionIndex = (Math.round(angle / slice) + 8) % 8;
+  return directions[directionIndex];
+}
+
 function face(clientX, clientY) {
   const rect = stage.getBoundingClientRect();
   const x = clamp(clientX, rect.left, rect.right);
@@ -201,16 +232,10 @@ function face(clientX, clientY) {
   target.style.left = `${x - rect.left}px`;
   target.style.top = `${y - rect.top}px`;
 
-  const cx = rect.left + rect.width / 2;
-  const cy = rect.top + rect.height / 2;
-  let nx = clamp((x - cx) / (rect.width / 2), -1, 1);
-  let ny = clamp((y - cy) / (rect.height / 2), -1, 1);
-  if (flipX.value === '1') nx *= -1;
-  if (flipY.value === '1') ny *= -1;
-
-  const col = Math.round((nx + 1) / 2 * (cols - 1));
-  const row = Math.round((ny + 1) / 2 * (rows - 1));
+  const direction = directionFromPoint(x, y);
+  const [row, col] = directionFrames[direction];
   setFrame(row, col);
+  frameText.textContent += ` / ${direction}`;
   lastPoint = { x, y };
 }
 

@@ -6,18 +6,25 @@
 <title>角色朝向测试 - Video Insights</title>
 <style>
 :root{
-  --bg:#0a192f;
-  --panel:#112240;
-  --ink:#ccd6f6;
-  --muted:#8892b0;
-  --line:#233554;
-  --brand:#64ffda;
+  --bg:#f3f6f8;
+  --paper:#f7f9fb;
+  --panel:#ffffff;
+  --ink:#172033;
+  --muted:#69758a;
+  --line:#dce4ee;
+  --brand:#2f6f8f;
+  --accent:#ef5d71;
 }
 *{box-sizing:border-box}
 body{
   margin:0;
   min-height:100vh;
-  background:radial-gradient(circle at 72% 18%,rgba(100,255,218,.12),transparent 28%),var(--bg);
+  background:
+    radial-gradient(circle at 50% 30%,rgba(255,255,255,.8),transparent 38%),
+    linear-gradient(90deg,rgba(120,135,155,.08) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(120,135,155,.08) 1px,transparent 1px),
+    var(--bg);
+  background-size:auto,32px 32px,32px 32px,auto;
   color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
 }
@@ -29,13 +36,15 @@ p{color:var(--muted);margin:0}
 .stage{
   margin-top:26px;
   min-height:520px;
-  border:1px solid rgba(100,255,218,.28);
+  border:1px solid rgba(130,145,165,.28);
   border-radius:22px;
   background:
-    linear-gradient(90deg,rgba(10,25,47,.05) 1px,transparent 1px),
-    linear-gradient(180deg,rgba(10,25,47,.05) 1px,transparent 1px),
-    linear-gradient(180deg,#f8fbff,#eef4ff);
-  background-size:32px 32px,32px 32px,auto;
+    radial-gradient(circle at 48% 42%,rgba(255,255,255,.92),transparent 34%),
+    linear-gradient(90deg,rgba(130,145,165,.09) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(130,145,165,.09) 1px,transparent 1px),
+    linear-gradient(180deg,#f8fafc,#eff4f8);
+  background-size:auto,32px 32px,32px 32px,auto;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 24px 70px rgba(35,50,70,.08);
   display:grid;
   place-items:center;
   position:relative;
@@ -63,7 +72,7 @@ p{color:var(--muted);margin:0}
   background-size:4096px 3840px;
   background-position:0 0;
   transform:scale(1.18);
-  filter:drop-shadow(0 22px 22px rgba(10,25,47,.24));
+  filter:drop-shadow(0 18px 18px rgba(35,50,70,.18));
   will-change:background-position;
 }
 .target{
@@ -71,11 +80,11 @@ p{color:var(--muted);margin:0}
   z-index:2;
   width:18px;
   height:18px;
-  border:2px solid #ff4d6d;
+  border:2px solid var(--accent);
   border-radius:50%;
   pointer-events:none;
   transform:translate(-50%,-50%);
-  box-shadow:0 0 0 6px rgba(255,77,109,.12);
+  box-shadow:0 0 0 6px rgba(239,93,113,.12);
 }
 .hud{
   display:grid;
@@ -84,7 +93,7 @@ p{color:var(--muted);margin:0}
   margin-top:16px;
 }
 .card{
-  background:rgba(17,34,64,.82);
+  background:rgba(255,255,255,.78);
   border:1px solid var(--line);
   border-radius:14px;
   padding:14px;
@@ -95,7 +104,7 @@ p{color:var(--muted);margin:0}
   height:38px;
   border:1px solid var(--line);
   border-radius:10px;
-  background:#020c1b;
+  background:#f8fafc;
   color:var(--ink);
   padding:0 10px;
 }
@@ -103,9 +112,9 @@ p{color:var(--muted);margin:0}
 .buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 button{
   height:38px;
-  border:1px solid rgba(100,255,218,.35);
+  border:1px solid rgba(47,111,143,.28);
   border-radius:10px;
-  background:rgba(100,255,218,.08);
+  background:rgba(255,255,255,.78);
   color:var(--brand);
   font-weight:700;
   padding:0 12px;

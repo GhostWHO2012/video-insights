@@ -58,9 +58,9 @@ p{color:var(--muted);margin:0}
   z-index:1;
   width:256px;
   height:256px;
-  background-image:url("assets/mascot-sprite-test.webp");
+  background-image:url("assets/mascot-sprite-test-cropped.webp");
   background-repeat:no-repeat;
-  background-size:4096px 4096px;
+  background-size:4096px 3840px;
   background-position:0 0;
   transform:scale(1.18);
   filter:drop-shadow(0 22px 22px rgba(10,25,47,.24));
@@ -181,14 +181,14 @@ const offset = document.getElementById('offset');
 let lastPoint = null;
 
 const directionFrames = {
-  E:  [6, 15],
-  SE: [12, 15],
+  E:  [6, 13],
+  SE: [12, 13],
   S:  [14, 8],
-  SW: [12, 0],
-  W:  [6, 0],
-  NW: [1, 0],
+  SW: [12, 2],
+  W:  [6, 2],
+  NW: [1, 2],
   N:  [0, 8],
-  NE: [1, 15],
+  NE: [1, 13],
   C:  [7, 8]
 };
 

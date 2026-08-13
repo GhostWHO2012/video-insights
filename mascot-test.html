@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>角色朝向测试 - Video Insights</title>
+<style>
+:root{
+  --bg:#0a192f;
+  --panel:#112240;
+  --ink:#ccd6f6;
+  --muted:#8892b0;
+  --line:#233554;
+  --brand:#64ffda;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:radial-gradient(circle at 72% 18%,rgba(100,255,218,.12),transparent 28%),var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+}
+.wrap{width:min(1120px,calc(100% - 36px));margin:0 auto;padding:28px 0 44px}
+a{color:var(--brand);text-decoration:none}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
+h1{margin:10px 0 8px;font-size:32px;line-height:1.18;letter-spacing:0}
+p{color:var(--muted);margin:0}
+.stage{
+  margin-top:26px;
+  min-height:520px;
+  border:1px solid rgba(100,255,218,.28);
+  border-radius:22px;
+  background:
+    linear-gradient(90deg,rgba(10,25,47,.05) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(10,25,47,.05) 1px,transparent 1px),
+    linear-gradient(180deg,#f8fbff,#eef4ff);
+  background-size:32px 32px,32px 32px,auto;
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
+  cursor:crosshair;
+}
+.stage:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:62%;
+  width:240px;
+  height:28px;
+  transform:translateX(-50%);
+  background:radial-gradient(ellipse at center,rgba(10,25,47,.2),transparent 68%);
+  filter:blur(2px);
+}
+.sprite{
+  position:relative;
+  z-index:1;
+  width:256px;
+  height:256px;
+  background-image:url("assets/mascot-sprite-test.webp");
+  background-repeat:no-repeat;
+  background-size:4096px 4096px;
+  background-position:0 0;
+  transform:scale(1.18);
+  filter:drop-shadow(0 22px 22px rgba(10,25,47,.24));
+  will-change:background-position;
+}
+.target{
+  position:absolute;
+  z-index:2;
+  width:18px;
+  height:18px;
+  border:2px solid #ff4d6d;
+  border-radius:50%;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 0 6px rgba(255,77,109,.12);
+}
+.hud{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:16px;
+}
+.card{
+  background:rgba(17,34,64,.82);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+}
+.card label{display:block;color:var(--muted);font-size:13px;margin-bottom:8px}
+.card input,.card select{
+  width:100%;
+  height:38px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#020c1b;
+  color:var(--ink);
+  padding:0 10px;
+}
+.readout{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--brand);font-size:14px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+button{
+  height:38px;
+  border:1px solid rgba(100,255,218,.35);
+  border-radius:10px;
+  background:rgba(100,255,218,.08);
+  color:var(--brand);
+  font-weight:700;
+  padding:0 12px;
+  cursor:pointer;
+}
+@media(max-width:760px){
+  .hud{grid-template-columns:1fr 1fr}
+  .stage{min-height:420px}
+  .sprite{transform:scale(.9)}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div>
+      <a href="./">返回首页</a>
+      <h1>角色朝向跟随鼠标测试</h1>
+      <p>鼠标在浅色区域内移动，角色会选择最接近方向的雪碧帧。下面可以调行列映射，找到最自然的一版。</p>
+    </div>
+  </div>
+
+  <section class="stage" id="stage" aria-label="角色朝向测试区域">
+    <div class="sprite" id="sprite"></div>
+    <div class="target" id="target"></div>
+  </section>
+
+  <section class="hud">
+    <div class="card">
+      <label>当前帧</label>
+      <div class="readout" id="frameText">row 0 / col 0</div>
+    </div>
+    <div class="card">
+      <label>水平映射</label>
+      <select id="flipX">
+        <option value="0">正常</option>
+        <option value="1">反向</option>
+      </select>
+    </div>
+    <div class="card">
+      <label>垂直映射</label>
+      <select id="flipY">
+        <option value="0">正常</option>
+        <option value="1">反向</option>
+      </select>
+    </div>
+    <div class="card">
+      <label>帧偏移</label>
+      <input id="offset" type="number" value="0" min="-255" max="255">
+    </div>
+  </section>
+
+  <div class="buttons">
+    <button data-preset="default">默认</button>
+    <button data-preset="flip-x">水平反向</button>
+    <button data-preset="flip-y">垂直反向</button>
+    <button data-preset="center">回到中心帧</button>
+  </div>
+</main>
+
+<script>
+const cols = 16;
+const rows = 16;
+const cellW = 256;
+const cellH = 256;
+const stage = document.getElementById('stage');
+const sprite = document.getElementById('sprite');
+const target = document.getElementById('target');
+const frameText = document.getElementById('frameText');
+const flipX = document.getElementById('flipX');
+const flipY = document.getElementById('flipY');
+const offset = document.getElementById('offset');
+let lastPoint = null;
+
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function setFrame(row, col) {
+  const frameOffset = Number(offset.value || 0);
+  let index = row * cols + col + frameOffset;
+  index = ((index % (cols * rows)) + cols * rows) % (cols * rows);
+  const mappedRow = Math.floor(index / cols);
+  const mappedCol = index % cols;
+  sprite.style.backgroundPosition = `-${mappedCol * cellW}px -${mappedRow * cellH}px`;
+  frameText.textContent = `row ${mappedRow} / col ${mappedCol}`;
+}
+
+function face(clientX, clientY) {
+  const rect = stage.getBoundingClientRect();
+  const x = clamp(clientX, rect.left, rect.right);
+  const y = clamp(clientY, rect.top, rect.bottom);
+  target.style.left = `${x - rect.left}px`;
+  target.style.top = `${y - rect.top}px`;
+
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  let nx = clamp((x - cx) / (rect.width / 2), -1, 1);
+  let ny = clamp((y - cy) / (rect.height / 2), -1, 1);
+  if (flipX.value === '1') nx *= -1;
+  if (flipY.value === '1') ny *= -1;
+
+  const col = Math.round((nx + 1) / 2 * (cols - 1));
+  const row = Math.round((ny + 1) / 2 * (rows - 1));
+  setFrame(row, col);
+  lastPoint = { x, y };
+}
+
+stage.addEventListener('pointermove', event => face(event.clientX, event.clientY), { passive: true });
+[flipX, flipY, offset].forEach(input => input.addEventListener('input', () => {
+  if (lastPoint) face(lastPoint.x, lastPoint.y);
+}));
+
+document.querySelectorAll('button[data-preset]').forEach(button => {
+  button.addEventListener('click', () => {
+    const preset = button.dataset.preset;
+    if (preset === 'default') { flipX.value = '0'; flipY.value = '0'; offset.value = 0; }
+    if (preset === 'flip-x') { flipX.value = '1'; flipY.value = '0'; offset.value = 0; }
+    if (preset === 'flip-y') { flipX.value = '0'; flipY.value = '1'; offset.value = 0; }
+    if (preset === 'center') {
+      const rect = stage.getBoundingClientRect();
+      face(rect.left + rect.width / 2, rect.top + rect.height / 2);
+      return;
+    }
+    if (lastPoint) face(lastPoint.x, lastPoint.y);
+  });
+});
+
+requestAnimationFrame(() => {
+  const rect = stage.getBoundingClientRect();
+  face(rect.left + rect.width * .72, rect.top + rect.height * .42);
+});
+</script>
+</body>
+</html>

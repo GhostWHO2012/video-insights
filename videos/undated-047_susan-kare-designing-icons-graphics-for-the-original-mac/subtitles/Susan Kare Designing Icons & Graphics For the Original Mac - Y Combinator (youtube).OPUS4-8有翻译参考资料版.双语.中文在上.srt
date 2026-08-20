@@ -1,0 +1,2879 @@
+1
+00:00:07,230 --> 00:00:10,510
+大家好，我是 Susan Kare。
+Hello, I'm Susan Kare.
+
+2
+00:00:11,230 --> 00:00:14,430
+现在来点完全不一样的东西。
+And now for something completely different.
+
+3
+00:00:16,310 --> 00:00:23,084
+我是一名图标设计师，参与过很多科技项目，
+I've been an iconographer and designer of worked on a lot of tech projects,
+
+4
+00:00:23,084 --> 00:00:28,438
+我想聊聊我曾任职过的一家科技创业团队，
+and I want to talk about a tech startup I worked for when even
+
+5
+00:00:28,438 --> 00:00:32,590
+尽管当时 Macintosh 团队隶属于 Apple。
+though the Macintosh group was part of apple.
+
+6
+00:00:33,190 --> 00:00:39,598
+但我觉得很多经历都和今天我在这里听到的话题
+But I think a lot of the experiences resonate with some of the topics
+
+7
+00:00:39,598 --> 00:00:42,230
+产生了共鸣。
+that I've heard here today.
+
+8
+00:00:45,070 --> 00:00:49,270
+这份工作我做了很久，也很热爱它。
+So I've been doing this for a while and love it.
+
+9
+00:00:49,530 --> 00:00:53,450
+这是我这些年设计的一些作品。
+Here's a few things that I designed over the years.
+
+10
+00:00:54,730 --> 00:01:02,158
+有意思的是，这句话真的是 Macintosh 团队的核心指引，
+And it's funny because this was really a North Star for the Macintosh group,
+
+11
+00:01:02,158 --> 00:01:06,638
+但这几天我重读它时，
+but when I re read it in the last couple of days,
+
+12
+00:01:06,638 --> 00:01:14,420
+它让我想到了 AI，还有现在正在开发的很多东西。
+it just kind of reminded me of AI and so many things that are being developed now.
+
+13
+00:01:15,060 --> 00:01:20,100
+Paul Rand 是一位著名的平面设计师，如今已不在人世。
+And Paul Rand is a celebrated graphic designer, no longer with us.
+
+14
+00:01:20,180 --> 00:01:29,660
+他设计了 UPS 标志、IBM 标志，还有很多流传至今的图形。
+Who did the UPS logo and IBM logo and so many images that have persisted and.
+
+15
+00:01:30,740 --> 00:01:32,620
+我很幸运能和他共事。
+I was lucky to work with him.
+
+16
+00:01:33,260 --> 00:01:40,620
+他告诉我，始终要专注于让作品有意义、令人难忘。
+And something he told me was always focus on making things meaningful and memorable.
+
+17
+00:01:41,300 --> 00:01:47,900
+我觉得这句话的核心是：先有好想法，形式自然会跟上。
+And I think the heart of that is have a good idea, and then the form will follow.
+
+18
+00:01:51,880 --> 00:01:57,209
+我完全是学艺术出身的，对计算机一无所知，
+I was a total art major, didn't know anything about computers
+
+19
+00:01:57,209 --> 00:02:04,000
+却有幸进入 Apple，成为 Macintosh 的美术设计师。
+and was lucky enough to work at apple on the Macintosh as the Macintosh artist.
+
+20
+00:02:04,920 --> 00:02:14,230
+去 Apple 之前，我在给阿肯色州一家博物馆焊接一头真人大小的 razorback hog（长鼻野猪）雕塑。
+And before I went to apple, I was welding a life size razorback hog for a museum in Arkansas.
+
+21
+00:02:15,270 --> 00:02:23,670
+我以为自己在实现梦想，每天去车库里焊上一整天。
+And I thought I was living my dream, going out to my garage, welding all day.
+
+22
+00:02:24,150 --> 00:02:31,299
+但说实话，那有点孤单，我很庆幸有过这段经历，但它
+But in truth, it was a little bit lonely and I was glad I had the experience, but it,
+
+23
+00:02:31,299 --> 00:02:35,461
+也让我渴望能和一个团队一起工作，
+it kind of made me hungry for working with a team
+
+24
+00:02:35,461 --> 00:02:42,930
+而我的高中好友 Andy Hertzfeld 当时是 Apple 的系统软件程序员。
+and my high school friend Andy Hertzfeld was a system software programmer at apple.
+
+25
+00:02:43,730 --> 00:02:46,610
+他知道我做过毕业纪念册，也喜欢艺术。
+And he knew I had worked on the yearbook and liked art.
+
+26
+00:02:46,810 --> 00:02:51,430
+他说他需要一些图形，用来显示在一台正在开发的
+And he said he needed some images to display on a new computer
+
+27
+00:02:51,430 --> 00:02:53,370
+新电脑上。
+that was being worked on.
+
+28
+00:02:54,030 --> 00:02:59,308
+他给我看了那块屏幕，还没有外壳，然后问我，
+And he showed me the display, which didn't have a case, and said,
+
+29
+00:02:59,308 --> 00:03:04,587
+我能不能来面试，做一些小符号
+could I come in for an interview you to work on some small symbols
+
+30
+00:03:04,587 --> 00:03:06,280
+和一些字体？
+and some typefaces?
+
+31
+00:03:06,960 --> 00:03:11,466
+我说，当然可以。我觉得听起来很棒、很有趣，
+And I said, sure. I thought it sounded great and really interesting
+
+32
+00:03:11,466 --> 00:03:13,880
+也是我以前没做过的事。
+and something I hadn't done before.
+
+33
+00:03:14,760 --> 00:03:16,960
+于是我认真想了想。
+So I thought about it.
+
+34
+00:03:17,120 --> 00:03:22,513
+我在 Franklin Institute Science Museum 工作时
+I had a little bit of typographical experience from working at the Franklin
+
+35
+00:03:22,513 --> 00:03:25,680
+有一点排版方面的经验，那是在费城。
+Institute Science Museum in Philadelphia.
+
+36
+00:03:26,140 --> 00:03:31,776
+我用这样的机器给展品制作标签，
+I used a machine like this to make labels for exhibits,
+
+37
+00:03:31,776 --> 00:03:36,660
+我很擅长用 Letraset 干转印字体。
+and I was pretty good at Letraset rub down type.
+
+38
+00:03:36,780 --> 00:03:41,295
+我能排得很直，字距调整也很准，
+I could do it really straight and get the kerning right,
+
+39
+00:03:41,295 --> 00:03:47,380
+我还有艺术史的博士学位。这些就是我的资历。
+but I went to the and I had a PhD in art history. So those were my credentials.
+
+40
+00:03:48,330 --> 00:03:55,366
+我去了 Palo Alto 的图书馆，借了一些关于排版的书
+And I went to the library in Palo Alto and took out some books about typography
+
+41
+00:03:55,366 --> 00:04:02,953
+和一些字体样本书，还真的把它们夹在腋下带去面试，
+and some font sample books, and I actually brought them to my interview under my arm
+
+42
+00:04:02,953 --> 00:04:08,010
+这样看起来就像我很懂行一样。
+so I would seem as if I knew what I was talking about. And.
+
+43
+00:04:10,230 --> 00:04:14,581
+Andy 还建议我，
+Andy also suggested to me that it would be good
+
+44
+00:04:14,581 --> 00:04:22,710
+如果能用方格纸做一些本质上是位图图形的示例会更好。
+if I could make some examples of essentially bitmap graphics, but using graph paper.
+
+45
+00:04:23,310 --> 00:04:26,110
+他没有具体说要做什么。
+And he didn't really specify what to make.
+
+46
+00:04:26,270 --> 00:04:33,640
+所以我做了一些东西，比如用一只靴子玩了个双关，还有几张纸。
+So some things I made, like a pun with a boot and some pieces of paper.
+
+47
+00:04:33,840 --> 00:04:39,651
+在这张幻灯片上你能看到，有一点像 ABC，
+And you could see I, on this slide, there's a little bit of an ABC,
+
+48
+00:04:39,651 --> 00:04:43,160
+但我只是想做一些示例。
+but I just tried to make some examples.
+
+49
+00:04:44,120 --> 00:04:49,440
+这些是更多的示例，有点好笑，因为
+And these are more of the examples sort of funny because.
+
+50
+00:04:51,030 --> 00:04:57,830
+这些很随意的东西，居然稍微影响了我们最终在软件里用的设计。
+Some of these really random things slightly influenced what we ended up using in the software.
+
+51
+00:05:01,740 --> 00:05:05,603
+我把结局提前剧透了，不过我拿到了这份工作，
+So I spoiled the surprise, but I got the job
+
+52
+00:05:05,603 --> 00:05:13,660
+而且尽管我做足了准备，好像根本没人问我任何关于字体设计的问题。
+and I don't think anybody even asked me any questions about font design despite my prep.
+
+53
+00:05:15,220 --> 00:05:22,060
+命运有趣的地方在于，我一直那么想成为艺术家。
+And in a funny twist of fate, as much as I had wanted to be an artist.
+
+54
+00:05:23,940 --> 00:05:26,522
+如今，那本记着早期图标的笔记本，
+Now, that notebook with those early icons
+
+55
+00:05:26,522 --> 00:05:30,580
+就是我带去面试的那本，如今被 MoMA 永久收藏了。
+that I took to my interview is in the permanent collection of Moma.
+
+56
+00:05:31,060 --> 00:05:33,300
+所以说，一定要留着。
+So it just. So hang on.
+
+57
+00:05:37,220 --> 00:05:43,380
+一定要留好你的东西。所以当我进入 Apple 时，
+Definitely hang on to your stuff. So when I got to apple.
+
+58
+00:05:44,340 --> 00:05:50,059
+呃，第一天他们给我看了这块屏幕，说，
+Um, the first day this screen was shown to me to say,
+
+59
+00:05:50,059 --> 00:05:56,732
+这就是你要负责改进的东西，还有字体，
+this is what it's your job to improve and, um, fonts and the,
+
+60
+00:05:56,732 --> 00:06:04,085
+以及那张 5.25 英寸软盘图上的 round rects（圆角矩形）。
+the round rects that are on the 5 and 1/4 inch floppy drawing are,
+
+61
+00:06:04,085 --> 00:06:06,400
+就可以变成图标。
+could become icons.
+
+62
+00:06:06,720 --> 00:06:11,200
+但你可以用光标点击并拖动它们。
+But they were able, with a cursor, to click and drag those around.
+
+63
+00:06:11,440 --> 00:06:15,720
+所以它已经有点，在我看来相当神奇。
+So it already had a little, seemed kind of magical to me.
+
+64
+00:06:16,480 --> 00:06:20,295
+我们后来把"Do It"改成了"OK"，
+And we definitely changed do it to okay,
+
+65
+00:06:20,295 --> 00:06:26,190
+因为"Do It"有点不雅，大家会读成"dolt"（笨蛋）。
+because do it was a little off color and people read it as dolt.
+
+66
+00:06:26,790 --> 00:06:33,390
+所以我想做一套新的系统字体，再做一些图标。
+So I wanted to make a new system font and make some icons.
+
+67
+00:06:35,470 --> 00:06:40,230
+而且，我被告知这件事非常真诚。
+So, and it was told to me it was very sincere.
+
+68
+00:06:41,490 --> 00:06:48,770
+那就是我们想造一台人人都能用的电脑。
+That we were trying to make a computer that anyone could use.
+
+69
+00:06:48,970 --> 00:06:52,010
+我对此感觉很好，因为我就在那个团队里。
+So I felt good about that because I was in that group.
+
+70
+00:06:53,170 --> 00:06:56,774
+尽管我也乐意参与、而且做过很多
+Even though I am happy to work on and have worked on many projects
+
+71
+00:06:56,774 --> 00:06:57,930
+并非为我而做的项目。
+that weren't for me.
+
+72
+00:06:58,530 --> 00:07:01,210
+但我很喜欢这个项目的这一点。
+But I liked that about this project.
+
+73
+00:07:01,880 --> 00:07:05,600
+我们希望它尽可能地好懂。
+And we wanted it to be as understandable as possible.
+
+74
+00:07:05,760 --> 00:07:12,173
+这样你不一定需要说明书，而且它应该很友好，
+So you wouldn't necessarily need a manual and that it should be friendly
+
+75
+00:07:12,173 --> 00:07:19,441
+因为在我所在的Mac软件组里，有那么多人，
+because there were so many people there who, in the Mac software group where I was,
+
+76
+00:07:19,441 --> 00:07:23,289
+他们对电脑充满热情，
+who were just passionate about computers,
+
+77
+00:07:23,289 --> 00:07:27,885
+而且有点想把这份热情传播出去。
+but and kind of wanted to be evangelical about that.
+
+78
+00:07:27,885 --> 00:07:31,840
+所以有一些限制，而通常，
+So there were a few constraints and usually.
+
+79
+00:07:31,880 --> 00:07:35,640
+我觉得在任何限制下你都能有创意。
+I think you can be creative in any constraints.
+
+80
+00:07:35,960 --> 00:07:43,160
+你散步时用海滩上的垃圾也能做出很有趣的艺术。
+You can make some pretty fun art with beach trash while you're walking around and this.
+
+81
+00:07:44,520 --> 00:07:50,418
+你可以有创意，但先弄清楚限制是什么很有好处，
+You can be creative, but it's good to understand what the constraints are
+
+82
+00:07:50,418 --> 00:07:54,866
+然后对此感到兴奋，而不是烦恼
+and then be excited about that as opposed to being upset
+
+83
+00:07:54,866 --> 00:07:57,960
+你没有一千种颜色可用。
+that you don't have 1 thousand colors.
+
+84
+00:07:58,520 --> 00:08:02,280
+所以这是16×16，黑白的。
+So this is 16 by 16, black and white.
+
+85
+00:08:02,800 --> 00:08:11,280
+我想我在这些限制下做出的第一批图像就是这样的。
+And I think the first images that I made using those constraints were things like this.
+
+86
+00:08:12,000 --> 00:08:15,081
+我们还想到，
+And we thought about, you know,
+
+87
+00:08:15,081 --> 00:08:22,191
+也许套索是框选不规则区域的好办法，
+thought maybe a lasso would be a good way to surround an irregular region
+
+88
+00:08:22,191 --> 00:08:24,680
+还有其他一些绘图工具。
+and some other art tools.
+
+89
+00:08:26,840 --> 00:08:33,040
+有意思的是，我最近才第一次去巴黎。
+And it's funny to me because I went to Paris for the first time fairly recently.
+
+90
+00:08:33,810 --> 00:08:38,089
+那里有位名叫Space Invader的街头艺术家，
+And there's a street artist known as Space Invader
+
+91
+00:08:38,089 --> 00:08:40,635
+他做了很多马赛克作品，
+and he does a lot of mosaic work
+
+92
+00:08:40,635 --> 00:08:47,970
+他大量借鉴了早期Macintosh的元素，这让我特别开心。
+and he has borrowed liberally from early Macintosh stuff, which made me really happy.
+
+93
+00:08:50,410 --> 00:08:53,650
+我设计的第一款字体是Chicago。
+So the first font I designed was Chicago.
+
+94
+00:08:54,410 --> 00:08:57,170
+它的大写字母高度是9像素。
+It's 9 pixels tall, cap height.
+
+95
+00:08:57,770 --> 00:09:03,076
+我看着屏幕上的东西，感觉
+And I looked at the stuff that was on the screen and it just seemed as
+
+96
+00:09:03,076 --> 00:09:07,418
+它们都锯齿状的，而且看起来
+if it was all jaggedy and it didn't seem as if it would be
+
+97
+00:09:07,418 --> 00:09:13,207
+用水平线、垂直线
+that big a deal to make it look tidier by using horizontals and verticals
+
+98
+00:09:13,207 --> 00:09:18,320
+和45度角把它弄整齐，也不是什么难事。所以我现在看到还是会不自在，尤其是
+and 45 degree angles. So I still wince when I look at especially.
+
+99
+00:09:18,440 --> 00:09:20,040
+那个小写的x。
+At that lowercase x.
+
+100
+00:09:21,170 --> 00:09:27,361
+但其他的字母我基本都能塞进系统，而且我们
+But, but the others I could pretty much fit into the system and we were
+
+101
+00:09:27,361 --> 00:09:33,768
+在Macintosh上很幸运，能做出比例间距字体，
+so lucky on the Macintosh to be able to do proportionally spaced fonts,
+
+102
+00:09:33,768 --> 00:09:40,828
+因为我还记得见过一些显示效果，m被压得很扁，
+because I could remember just seeing displays where the m was really squished
+
+103
+00:09:40,828 --> 00:09:43,760
+而i又特别宽。
+and then the i was really wide.
+
+104
+00:09:44,320 --> 00:09:48,776
+我当时没意识到这个进步有多重要，
+So I didn't realize what a big deal this advancement was,
+
+105
+00:09:48,776 --> 00:09:52,000
+但它似乎让效果好了很多。
+but it seemed to make it look a lot better.
+
+106
+00:09:53,520 --> 00:09:55,840
+于是我们用了Chicago。
+And so we used Chicago.
+
+107
+00:09:56,040 --> 00:10:01,280
+我们把它放在标题栏，反复试验，直到设计出那些线条。
+We put it in the title bar, experimented a lot with till we came up with those lines.
+
+108
+00:10:02,690 --> 00:10:08,290
+我们没意识到的是，当我们设计计算器时，
+And what we didn't realize was that when we designed the calculator
+
+109
+00:10:08,290 --> 00:10:11,490
+我们其实是在设计第一代iPod。
+that we were designing the first iPod.
+
+110
+00:10:11,810 --> 00:10:15,650
+它也用了Chicago，这让我很开心。
+So which also used Chicago, which made me happy.
+
+111
+00:10:18,170 --> 00:10:22,770
+我们还随Mac附带了一些其他字体，包括
+And we shipped some other fonts with the Mac, including.
+
+112
+00:10:23,580 --> 00:10:24,780
+一款等宽字体。
+A monospace font.
+
+113
+00:10:25,020 --> 00:10:27,914
+但我当时是这么想的，
+But I was able to kind of think, well,
+
+114
+00:10:27,914 --> 00:10:34,280
+我们大概应该有个类似Times Roman的，和一个类似Helvetica的。
+we should probably have a Times Roman kind of thing and a Helvetica kind of thing.
+
+115
+00:10:34,400 --> 00:10:37,720
+于是就有了New York和Geneva。
+So that's where New York and Geneva came from.
+
+116
+00:10:39,760 --> 00:10:43,160
+然后我做了一款叫Ransom的字体，
+And then I made a font that I called Ransom
+
+117
+00:10:43,160 --> 00:10:49,860
+因为绑匪以前就是这么干的——从报纸上剪下字母，
+because it was what kidnappers used to do by cutting letters out of the newspaper
+
+118
+00:10:49,860 --> 00:10:55,360
+这样就不用暴露笔迹被抓。
+so they wouldn't have to reveal their handwriting and get caught.
+
+119
+00:10:56,200 --> 00:11:04,360
+和其他字体一样，Andy和我给它们起了城市名。
+And like the other fonts, Andy and I gave them city names.
+
+120
+00:11:05,120 --> 00:11:09,600
+因为我们高中是在Philadelphia附近上的，
+And because we had gone to high school near Philadelphia,
+
+121
+00:11:09,600 --> 00:11:15,760
+我们用了 Paoli Local 通勤线沿途各城镇的名字，从郊区一直到市区。
+we gave them names of towns on the Paoli local through the suburbs into the city.
+
+122
+00:11:16,440 --> 00:11:20,680
+有天下午 Steve Jobs 过来了。
+And Steve Jobs came by one afternoon.
+
+123
+00:11:20,960 --> 00:11:23,390
+他通常在一天结束时过来
+He usually came by at the end of the day
+
+124
+00:11:23,390 --> 00:11:26,840
+在 Software Group 里转转，看看有什么新东西。
+and walked around Software Group to see what was new.
+
+125
+00:11:27,440 --> 00:11:34,520
+他说，城市名字不错，但至少要用世界级的城市。
+And he said, well, city names aren't bad, but at least call them world class cities.
+
+126
+00:11:35,040 --> 00:11:40,240
+于是我们最后用了 New York 和 Geneva，而不是 Paoli、Wynnewood
+So that's how we ended up with New York and Geneva instead of Paoli and Wynnewood
+
+127
+00:11:40,240 --> 00:11:42,880
+还有我们高中所在的 Rosemont。
+and Rosemont where our high school was.
+
+128
+00:11:47,490 --> 00:11:53,259
+呃，Bill Atkinson 就是编写 MacPaint 的程序员，
+And, um, Bill Atkinson was the programmer who wrote MacPaint,
+
+129
+00:11:53,259 --> 00:11:57,364
+那当然是我最喜欢的程序，
+and that was my favorite program, of course,
+
+130
+00:11:57,364 --> 00:12:02,800
+他很乐意一起做图标和图案。
+and was happy to collaborate on the icons and the patterns.
+
+131
+00:12:03,760 --> 00:12:06,799
+他还开发了一台早期的扫描仪，
+And he developed an early scanner,
+
+132
+00:12:06,799 --> 00:12:13,400
+我们就是这样从 Steve Jobs 收藏的一幅木刻版画里得到了这个艺伎图像。
+and that's how we got this geisha image from a woodcut that Steve Jobs owned.
+
+133
+00:12:15,400 --> 00:12:21,689
+我们做了一个控制面板，改设置时会有动画，
+And we made a control panel that had animation for when you changed the settings,
+
+134
+00:12:21,689 --> 00:12:27,040
+希望能传达出会发生什么、有哪些选择。
+hoping to communicate what would happen and what your choices were.
+
+135
+00:12:27,600 --> 00:12:30,600
+显然我们尽量不去用。
+And we tried obviously not to use.
+
+136
+00:12:30,960 --> 00:12:36,417
+我们可以用声音，可以用速度，但尽量不用任何，
+We could use sound, we could use speed, but we tried not to have any,
+
+137
+00:12:36,417 --> 00:12:43,560
+任何文字，这样它就能国际通用，不必做不同的版本。
+any text so that it could be international without having to make a different version.
+
+138
+00:12:46,550 --> 00:12:53,068
+你知道，我们并没有多少真正好用的美术工具，但无所谓，
+And, you know, we didn't have that many really great tools for art, but whatever,
+
+139
+00:12:53,068 --> 00:12:54,430
+我们还是硬着头皮往前做。
+we forged ahead.
+
+140
+00:12:54,990 --> 00:12:59,430
+Andy 写道，到了 Apple 之后我就不用在方格纸上设计了。
+Andy wrote, I did not have to design on graph paper once I got to Apple.
+
+141
+00:12:59,710 --> 00:13:03,618
+Andy 写了一个图标编辑器，这是一台 ImageWriter，
+Andy wrote, an icon editor, and this is an ImageWriter,
+
+142
+00:13:03,618 --> 00:13:08,630
+一张 ImageWriter 的图片，打印出屏幕当时的样子。
+a picture of an ImageWriter, print of what the screen looked like with.
+
+143
+00:13:09,600 --> 00:13:12,840
+图标编辑器。当时没有任何工具。
+Icon editor. And there were no tools.
+
+144
+00:13:13,120 --> 00:13:20,713
+你只能切换那些位（开关像素点），既能看到大幅放大的图像，
+You could just toggle the bits and you could see a greatly enlarged image as well
+
+145
+00:13:20,713 --> 00:13:24,280
+也能看到图标在 72 dpi 下的样子。
+as what the icon looked like at 72 dpi.
+
+146
+00:13:24,960 --> 00:13:27,713
+我觉得这简直太神奇了，
+And I thought this was just magical,
+
+147
+00:13:27,713 --> 00:13:33,861
+虽然它没有 20 级撤销，你也画不了任何形状，
+even though it did didn't have 20 levels of undo and you couldn't draw any shapes,
+
+148
+00:13:33,861 --> 00:13:37,440
+但你可以不用橡皮擦就反复迭代。
+you could you could iterate without an eraser.
+
+149
+00:13:37,720 --> 00:13:41,920
+这有多棒，怎么说都不为过。
+It just, it's hard to overstate how great this was.
+
+150
+00:13:42,480 --> 00:13:48,100
+它还会自动生成图标的十六进制代码，
+And it automatically generated the hex code for an icon,
+
+151
+00:13:48,100 --> 00:13:53,720
+我可以把代码输进去，就能在屏幕上看到图像。
+which I could then type in and see the image on the screen.
+
+152
+00:13:54,240 --> 00:13:57,720
+所以它真是个奇迹。
+So it was a marvel.
+
+153
+00:13:59,920 --> 00:14:07,400
+这个图标不是在哭。大概是我因为某种原因在沿着边缘数像素。
+This icon isn't crying. It was probably me counting pixels for some reason down the edge.
+
+154
+00:14:08,240 --> 00:14:10,558
+你可以在标题栏里看到，
+And you can see in the title bar,
+
+155
+00:14:10,558 --> 00:14:16,800
+我们在试验期间尝试了各种不同的东西。
+we tried a bunch of different types of things during the time we were experimenting.
+
+156
+00:14:18,360 --> 00:14:20,680
+有时候我喜欢这么做。
+And sometimes I liked to.
+
+157
+00:14:21,200 --> 00:14:25,800
+人们过来坐下，我就用 32×32 给他们画肖像。
+People came and sat and I would do their portrait in 32 by 32.
+
+158
+00:14:27,640 --> 00:14:30,640
+大家似乎挺喜欢的。
+So people seemed to enjoy that.
+
+159
+00:14:31,000 --> 00:14:41,000
+当时其实没法把照片放进去，连画作都不行。
+And there wasn't really a way to get a photo in there at the time or even a drawing.
+
+160
+00:14:41,200 --> 00:14:43,480
+所以只能对着真人现画。
+So just had to do it from life.
+
+161
+00:14:45,760 --> 00:14:49,400
+我到现在还是很喜欢画这些肖像。
+And I still enjoy making those portraits.
+
+162
+00:14:49,560 --> 00:14:56,662
+我觉得挺神奇的，在一千个点里，只要反复迭代，
+And I think it's kind of amazing that in a thousand dots, if you iterate a lot,
+
+163
+00:14:56,662 --> 00:14:59,480
+你就能得到一幅有几分
+you can get an image with some.
+
+164
+00:15:00,320 --> 00:15:05,117
+神似的图像。你可以看到右上角是 Pharrell Williams，
+Semblance of resemblance. You can see Pharrell Williams is at the top on the right
+
+165
+00:15:05,117 --> 00:15:06,880
+下面是 Ashton Kutcher。
+and Ashton Kutcher under him.
+
+166
+00:15:07,840 --> 00:15:17,217
+他们并没有坐着让我画，还有些不太出名的人，
+They did not sit for their portrait and some people that aren't super well known
+
+167
+00:15:17,217 --> 00:15:20,200
+还有 John Maeda。
+and John Maeda.
+
+168
+00:15:21,180 --> 00:15:22,580
+一位设计领域的领军人物。
+A design leader.
+
+169
+00:15:27,140 --> 00:15:33,134
+我最早接到的图标任务之一，是因为电脑
+The one thing that one of the first icons I was assigned was it took a
+
+170
+00:15:33,134 --> 00:15:37,820
+开机启动要花一段时间。
+while for the computer to boot when it got turned on.
+
+171
+00:15:38,460 --> 00:15:42,129
+所以大家都想在屏幕上有个图像，
+So everybody wanted an image on the screen,
+
+172
+00:15:42,129 --> 00:15:47,020
+而且必须是 32×32，因为那只是 Macintosh 128K。
+and it had to be 32 by 32 because it was only Macintosh 128K.
+
+173
+00:15:49,930 --> 00:15:56,679
+因为电脑启动时会在那儿嘎吱嘎吱地运转，
+So because the computer was sitting there kind of grinding while it started up,
+
+174
+00:15:56,679 --> 00:16:01,690
+我们想要个东西表明一切正常。
+we wanted something that showed that everything was okay.
+
+175
+00:16:02,330 --> 00:16:07,330
+所以我觉得笑脸不错。我很确定。
+So I thought a smile was good. I'm pretty sure.
+
+176
+00:16:08,200 --> 00:16:12,720
+它来自我大约 14 岁时得到的一枚徽章的记忆。
+It came from my memory of a button I got when I was about 14.
+
+177
+00:16:13,680 --> 00:16:19,440
+我喜欢微笑和开心的东西。
+And I like smiling and happy things.
+
+178
+00:16:19,720 --> 00:16:26,879
+Understanding Happy Mac 是在玩 Scott McCloud 这本好书书名的双关，
+The understanding Happy Mac is a play on the title of this excellent book by Scott
+
+179
+00:16:26,879 --> 00:16:30,939
+这本书讲的是漫画，但其实
+McCloud, which is about comics but really has
+
+180
+00:16:30,939 --> 00:16:35,320
+也有很多关于用户界面的精彩见解。
+so many good insights about user interface, too.
+
+181
+00:16:35,640 --> 00:16:39,080
+它是在 Mac 最初问世 10 年后才出版的。
+It came out 10 years after the Mac originally did.
+
+182
+00:16:39,880 --> 00:16:46,357
+我从 Scott McCloud 的那本书里选了两幅插图，
+And I pulled two illustrations from that book by Scott McCloud
+
+183
+00:16:46,357 --> 00:16:52,461
+它们能解释我们设计图标背后的一些思路，
+that kind of explain some of the thinking behind our icons,
+
+184
+00:16:52,461 --> 00:16:58,440
+那就是，当一张脸有很多细节时，
+which is that when a face in particular has a lot of detail,
+
+185
+00:16:58,440 --> 00:17:01,430
+它看起来就像是某个特定的人。
+it looks like somebody else.
+
+186
+00:17:02,110 --> 00:17:08,671
+但如果做得很简单，每个人都能把自己代入进去。
+But if you make it really simple, everyone can project themselves onto it.
+
+187
+00:17:08,671 --> 00:17:10,470
+我很喜欢这个想法。
+And I love that idea.
+
+188
+00:17:11,310 --> 00:17:17,184
+他也表达了类似的观点：细节越少，
+And he expressed a similar thing with the less detail you have,
+
+189
+00:17:17,184 --> 00:17:22,832
+事物就越有普遍性，所以我觉得，
+the more universal something is, which is why I think, like,
+
+190
+00:17:22,832 --> 00:17:30,513
+一支简单的铅笔画，在某种意义上比一支带反光的镀铬钢笔更能代表“书写”，
+a simple drawing of a pencil can stand for writing in some ways better than a chrome
+
+191
+00:17:30,513 --> 00:17:37,630
+那种钢笔很花哨，但它是一种很特定的
+pen with a reflection, which is very fancy. But it's a very particular kind.
+
+192
+00:17:37,630 --> 00:17:40,510
+笔，不是每个人都会用它来写字。
+Of pen that not everybody might write with.
+
+193
+00:17:41,030 --> 00:17:47,208
+所以我在图标上的偏好是抓住一两个突出的细节，
+So I, my bias in icons is the a salient detail or two,
+
+194
+00:17:47,208 --> 00:17:54,710
+但不要堆砌太多额外的东西，有点类似于
+but don't lard it with a lot of extra stuff, kind of similar to.
+
+195
+00:17:55,850 --> 00:17:58,886
+街边的标志牌，比如那种画着两个孩子的牌子，
+Street signs like the sign where two kid,
+
+196
+00:17:58,886 --> 00:18:03,976
+就是学校过街处两个孩子手拉手的剪影，
+they're so silhouette of two kids holding hands at a school crossing
+
+197
+00:18:03,976 --> 00:18:09,690
+技术上并没有理由说不能给他们加上格子饭盒、
+and there's not a technical reason that they couldn't have plaid lunch boxes
+
+198
+00:18:09,690 --> 00:18:12,280
+鞋带，或者让他们在唱歌。
+and shoelaces or be singing a song.
+
+199
+00:18:12,880 --> 00:18:18,334
+但那样可能会更分散注意力，反而削弱了
+But it would probably be more distracting and just take away from
+
+200
+00:18:18,334 --> 00:18:24,900
+你追求的那种即时识别性。我们也犯过一些错误。
+that instant recognition that you're aiming for, we made some mistakes, too.
+
+201
+00:18:25,660 --> 00:18:29,428
+有人告诉我，作为 Happy Mac 的备用方案，
+I was told that as an alternative to the happy Mac,
+
+202
+00:18:29,428 --> 00:18:34,759
+万一 Mac 出现了极不可能发生的故障，
+if in the extremely unlikely event something went wrong with the Mac,
+
+203
+00:18:34,759 --> 00:18:37,700
+就应该有一个不开心的 Macintosh。
+there should be an unhappy Macintosh.
+
+204
+00:18:37,860 --> 00:18:42,600
+所以我想，也许可以做一个生病的、或者看起来有点宿醉的 Macintosh。
+So I thought maybe a sick Macintosh or looks a little hung over.
+
+205
+00:18:44,280 --> 00:18:51,240
+再一次，我可以随便发挥，因为没人会看到它。
+And again, that I could be irreverent because no one was going to see this.
+
+206
+00:18:51,480 --> 00:18:53,080
+至少别人是这么跟我说的。
+At least that's what I was told.
+
+207
+00:18:53,960 --> 00:18:55,800
+这个图标也是一样。
+Same thing with this icon.
+
+208
+00:18:57,520 --> 00:19:02,989
+他们需要一张表示系统彻底崩溃的图，当然，同样地，
+They needed an image for total system failure, which, of course, again,
+
+209
+00:19:02,989 --> 00:19:04,630
+没人会看到它。
+no one would ever see.
+
+210
+00:19:05,030 --> 00:19:10,190
+所以我想，做一个炸弹也许会挺有趣，就像 Bugs Bunny（兔八哥）动画里那种炸弹。
+So I thought maybe it would be kind of funny to have a bomb like a Bugs Bunny type of bomb.
+
+211
+00:19:10,790 --> 00:19:15,190
+但很不幸，人们确实看到了它。
+But unfortunately, people did see this.
+
+212
+00:19:15,710 --> 00:19:22,670
+有一次我在软件组工作，那是个玻璃房间，我们叫它“鱼缸”。
+And one time I was working in the, the software group was a glass room, the fish bowl.
+
+213
+00:19:23,530 --> 00:19:30,736
+前台的接待员说，Apple 接到了一个电话，
+And the receptionist from the front said a call had come through to apple from a
+
+214
+00:19:30,736 --> 00:19:37,498
+对方非常想跟软件组的人谈谈，不是找我，
+person who really needed to talk to someone in the software group, not me,
+
+215
+00:19:37,498 --> 00:19:44,926
+是关于她的 Macintosh，因为她担心自己正看着一个炸弹，
+about her Macintosh because the caller was worried that she was looking at a bomb
+
+216
+00:19:44,926 --> 00:19:49,360
+她的电脑是不是要爆炸了。所以我感到
+and was her computer going to explode. So I felt.
+
+217
+00:19:50,230 --> 00:19:55,830
+有点内疚，但这个故事的寓意是：要多迭代。
+A little guilt, but the moral of the story is lots of iteration.
+
+218
+00:19:56,590 --> 00:20:05,990
+我们从当时仅有的少数几个应用程序开始。
+And we started with the handful of applications that we had.
+
+219
+00:20:06,150 --> 00:20:10,990
+我记得我先做的是 MacPaint。我喜欢这样的想法：
+And so I did MacPaint first, I remember that. And I liked the idea that.
+
+220
+00:20:12,090 --> 00:20:16,233
+既然它是一个过程，看起来就应该有点“动感”，
+Since it was a process, it looked kind of active
+
+221
+00:20:16,233 --> 00:20:21,650
+然后它可以搭配一个与之相似的文档图标。
+and then it could be paired with a document that resembled it.
+
+222
+00:20:22,170 --> 00:20:25,662
+所以我们的系统有点像“动词加名词”，
+So our system was kind of a verb and a noun,
+
+223
+00:20:25,662 --> 00:20:30,387
+看起来这套逻辑能撑得住，
+and it seemed like this could hold up pretty well for the
+
+224
+00:20:30,387 --> 00:20:34,803
+因为我们当时可能只有五六个应用程序，
+because we only had maybe half a dozen applications
+
+225
+00:20:34,803 --> 00:20:41,890
+也没料到日后会有成千上万个应用程序。
+and didn't really have the mindset that there would be thousands of applications.
+
+226
+00:20:43,210 --> 00:20:44,170
+警告框也是一样。
+Same with alerts.
+
+227
+00:20:45,330 --> 00:20:49,930
+我试着裁切出一个人物。不是一个方脑袋的小人，
+I tried to crop a person. It's not a person with a little square head.
+
+228
+00:20:50,730 --> 00:20:52,810
+想法是这是一个“裁剪”出来的画面。
+It's the idea is it's a crop.
+
+229
+00:20:52,890 --> 00:20:59,850
+所以你看不出性别、年龄、发型，其实什么都看不出来，
+So you don't know the gender or the age or the hairdo or really anything about this.
+
+230
+00:21:00,390 --> 00:21:02,110
+只是瞥见一个人的一角。
+A glimpse of a person.
+
+231
+00:21:03,550 --> 00:21:09,430
+我以前只见过沙漏计时器，
+And I had only seen a sand timer.
+
+232
+00:21:09,950 --> 00:21:11,270
+就是那种煮蛋用的定时器。
+As an egg timer.
+
+233
+00:21:11,950 --> 00:21:16,310
+我觉得，嘿，都 80 年代了，咱们把这些东西更新一下吧。
+It seemed like, hey, we're in the 80s. Let's like update these things.
+
+234
+00:21:16,550 --> 00:21:21,310
+所以我们做了一个手表光标，而不是沙漏。
+So that's, we made a watch cursor instead of an hourglass.
+
+235
+00:21:23,420 --> 00:21:25,380
+这是打印的图标。
+This was the icon for print.
+
+236
+00:21:26,060 --> 00:21:28,820
+这有点算是个“坑”。
+And it's, it's kind of a trap.
+
+237
+00:21:29,420 --> 00:21:33,486
+ImageWriter 用的纸确实两侧有孔，
+The imagewriter did have paper with holes up the sides
+
+238
+00:21:33,486 --> 00:21:39,540
+当你转动侧面那个大旋钮时，纸孔会卡在齿孔轮上带动走纸。
+that would fit on the sprockets to attach when you turned the big knob on the side.
+
+239
+00:21:40,260 --> 00:21:46,824
+但同样，细节太多了。它本可以有长得多的“寿命”，
+But again, too much detail. It would have had a much longer lifespan
+
+240
+00:21:46,824 --> 00:21:50,810
+只要我当时停下来，把它做得更简单一些。
+if I had just stopped and made it simpler.
+
+241
+00:21:51,570 --> 00:21:58,558
+所以总的来说，我觉得图标里不宜画出某个特定的
+So in general, I think it's not good in icons to show pictures of a particular
+
+242
+00:21:58,558 --> 00:22:04,770
+产品设计，比如用三英寸半软盘表示保存。
+product design because like the three and a/2 inch floppy for save.
+
+243
+00:22:05,609 --> 00:22:11,665
+嗯，虽然现在还有一些软盘留存着，但显然它
+Um, even though some, there's still a few of those kicking around. But obviously it,
+
+244
+00:22:11,665 --> 00:22:13,049
+没能经得起时间的考验。
+it didn't age well.
+
+245
+00:22:13,249 --> 00:22:17,289
+更好的做法是用一个隐喻，细节点到为止。
+Better to use a metaphor, just enough detail.
+
+246
+00:22:18,369 --> 00:22:21,169
+这就是我们下拉菜单的样子。
+So this is what our drop down menus looked like.
+
+247
+00:22:21,769 --> 00:22:25,289
+我们有个苹果，我们叫它 Apple Menu（苹果菜单）。
+And we had the apple, we called it the Apple Menu.
+
+248
+00:22:25,780 --> 00:22:30,260
+本来这些键盘快捷键要用一个 apple key（苹果键）。
+And there was an apple, going to be an apple key for these keyboard shortcuts.
+
+249
+00:22:30,860 --> 00:22:36,780
+但有一天快下班时，Steve 进来说，你不能这么做。
+But Steve came in one day at the end of the day and said, you cannot do this.
+
+250
+00:22:37,020 --> 00:22:40,568
+我记得他管它叫“苹果农场”，还说，
+I think he called it an apple farm and said,
+
+251
+00:22:40,568 --> 00:22:44,420
+我们的 logo 很珍贵，我们必须尊重它。
+our logo is precious and we have to respect it.
+
+252
+00:22:44,980 --> 00:22:49,180
+所以，你懂的，我们不能满屏都是苹果，所以。
+So, you know, we just can't have a bunch of apples, so.
+
+253
+00:22:50,040 --> 00:22:57,600
+后来有人告诉我，那个键是 command key 或者 feature key。
+Then the idea was, I was told that that key was a command key or a feature key.
+
+254
+00:22:58,680 --> 00:23:02,200
+于是我开始琢磨“命令”这个概念。
+And so I began thinking about commanding.
+
+255
+00:23:02,920 --> 00:23:08,440
+感觉有点凶。“十诫”倒像是个双关。
+And it seemed kind of mean. The Ten Commandments seemed like a pun.
+
+256
+00:23:10,290 --> 00:23:18,273
+于是我又回到图书馆，在一本书里看到了这个图案，
+So back to the library and I came across this image in a book with
+
+257
+00:23:18,273 --> 00:23:21,650
+它被称作 feature（景点标志）。
+that was called a feature.
+
+258
+00:23:22,570 --> 00:23:28,524
+我心想，好吧，它有点像四叶草，寓意幸运，
+So I thought, okay, it kind of looks like a four leaf Clover that's sort of lucky,
+
+259
+00:23:28,524 --> 00:23:32,043
+又有点像苜蓿叶型立交，
+and it kind of looks like a Cloverleaf highway,
+
+260
+00:23:32,043 --> 00:23:35,200
+也许是快速抵达某处的一种方式。
+which might be a way to get somewhere fast.
+
+261
+00:23:36,040 --> 00:23:44,560
+于是我们就用了它，而且它还有个好处，在 16×16 里特别好画。
+So we ended up and it had the bonus of being really easy to draw in 16x16.
+
+262
+00:23:45,400 --> 00:23:51,520
+所以我们用了它，它至今还在键盘上，但我觉得。
+So we used that and it's still on the keyboard, but I felt.
+
+263
+00:23:52,370 --> 00:23:55,841
+有点遗憾它并没有。
+Like a little bit bad that it didn't.
+
+264
+00:23:55,841 --> 00:24:03,360
+它很抽象，而抽象的东西有时更难记住。
+It was abstract and sometime times abstract things can be harder to remember.
+
+265
+00:24:04,680 --> 00:24:08,600
+不像带有隐喻、能强化概念的东西那样好记。
+And then something that has a metaphor that reinforces the concept.
+
+266
+00:24:09,560 --> 00:24:13,888
+但是，嗯，我去了瑞典，我
+But, um, I, I went to Sweden and I was
+
+267
+00:24:13,888 --> 00:24:22,842
+一下飞机在 Gothenburg 就特别激动，因为那儿就有这个 feature key，
+so excited to get off the plane in Gothenburg and there's the feature key
+
+268
+00:24:22,842 --> 00:24:32,392
+因为在那里它用来表示你靠近了景点，
+because it's used there to indicate that you're near, like for sightseeing,
+
+269
+00:24:32,392 --> 00:24:36,720
+比如某个纪念碑之类的。
+like a Monument or something else.
+
+270
+00:24:37,480 --> 00:24:43,360
+一定有个瑞典人听到了我对这事的评论。
+And someone from Sweden must have heard me comment on this.
+
+271
+00:24:44,350 --> 00:24:52,350
+他说，其实标牌上那个符号，
+And said, actually, that symbol that's on the signs, Durai,
+
+272
+00:24:52,350 --> 00:25:00,030
+是取自一座公元1200年的城堡，叫 Borgholm Castle。
+is taken from a 1200 ad castle called the Borg Holm Castle.
+
+273
+00:25:00,670 --> 00:25:04,898
+它已经是废墟了，但当你从上方看，
+And it's a ruin, but when you see it from above,
+
+274
+00:25:04,898 --> 00:25:09,460
+你会看到它像一座带四个角楼的城堡。
+you see that it's like a castle with four turrets.
+
+275
+00:25:09,980 --> 00:25:13,540
+所以那个符号其实代表的就是这个。
+And so that's actually what that symbol represents.
+
+276
+00:25:13,700 --> 00:25:16,727
+所以我觉得挺有趣的，即便是事后才知道，
+So I thought it was fun to find out even after the fact,
+
+277
+00:25:16,727 --> 00:25:18,860
+它原来终究是像某样东西的。
+it did look like something after all.
+
+278
+00:25:20,980 --> 00:25:24,700
+而且你知道，你学艺术史就会明白，天底下没什么真正的新鲜事。
+And, you know, you study art history, you know there's not much new under the sun.
+
+279
+00:25:25,740 --> 00:25:29,500
+人们制作小符号已经有很长时间了。
+People have been making little symbols for a long time.
+
+280
+00:25:30,020 --> 00:25:32,060
+而且，不，这个不是我设计的。
+And no, I did not design this.
+
+281
+00:25:34,420 --> 00:25:38,020
+象形文字也曾风光一时。
+Hieroglyphics had their day.
+
+282
+00:25:38,860 --> 00:25:44,985
+这是一幅漫画，多少在表现象形文字又回来了。
+This is a cartoon kind of showing that hieroglyphics are sort of back.
+
+283
+00:25:44,985 --> 00:25:49,420
+而且还有一些相当不错的位图字体。
+And there's some really pretty nice bitmap fonts.
+
+284
+00:25:51,530 --> 00:25:55,823
+很久以前就做出来了。这个只有，
+Pretty long, developed pretty long ago. This has only,
+
+285
+00:25:55,823 --> 00:25:58,530
+大写字高大约是 7 像素。
+it's like a 7 pixel capital height.
+
+286
+00:25:58,890 --> 00:26:02,850
+所以我觉得，真希望当年有这个人在我们团队。
+So I thought that was, I wish we had that person.
+
+287
+00:26:03,530 --> 00:26:10,107
+还有很多带符号、文字和插图的雕刻，
+And there's a lot of carvings with symbols and text and illustration that, like,
+
+288
+00:26:10,107 --> 00:26:15,310
+跟我们在电脑上做的一些东西很像。
+resembles some of the things that we were doing on the computer.
+
+289
+00:26:17,550 --> 00:26:22,352
+再一次，又是一款极其漂亮的位图字体，
+And again, like another extremely nice bitmap font,
+
+290
+00:26:22,352 --> 00:26:29,120
+比我们坐下来做比例间距字体早了两百多年。
+200 plus years before we sat down to make our proportionally spaced fonts.
+
+291
+00:26:29,120 --> 00:26:31,630
+这就是一个很好的例子。
+Here's a very nice example.
+
+292
+00:26:33,760 --> 00:26:37,600
+它的字符高度大约是 10 像素。
+This has about a character height of like 10 pixels.
+
+293
+00:26:39,640 --> 00:26:46,673
+我意识到，也许我从小就注定或被训练得想要
+And I realized that maybe I was destined or trained from a young age to want to make
+
+294
+00:26:46,673 --> 00:26:52,447
+在网格上创作，因为过去人们可以买些小套件，
+things on a grid because it used to be acceptable to get little kits
+
+295
+00:26:52,447 --> 00:26:56,646
+让孩子给父母做个烟灰缸。
+so your kids could make the parents and ashtray.
+
+296
+00:26:56,646 --> 00:26:59,900
+我特别喜欢做这类东西。
+And I loved making this type of thing.
+
+297
+00:27:02,120 --> 00:27:09,074
+我愿意认为，1984 年的 Macintosh 里就已经有 emoji 了，
+And we, I like to think that there were emojis in the 1984 Macintosh
+
+298
+00:27:09,074 --> 00:27:16,280
+早在有短信之前，你就能把图片和文字组合在一起。
+that you could combine pictures with text before there was texting.
+
+299
+00:27:17,360 --> 00:27:20,600
+这里面还藏着一些东西。
+And there's a few things hidden in here.
+
+300
+00:27:20,800 --> 00:27:25,694
+它显然有个象形文字的前身。
+It obviously had a hieroglyphic antecedent
+
+301
+00:27:25,694 --> 00:27:31,250
+我在里面藏了一些象形文字之类的符号。
+and I hid some hieroglyphic type symbols in there.
+
+302
+00:27:32,650 --> 00:27:36,245
+但我觉得那个项目的重点
+But I think the whole point of that project
+
+303
+00:27:36,245 --> 00:27:41,690
+以及图形的意义，并不只是一格格的像素。
+and the graphics was it isn't really just about a grid of pixels.
+
+304
+00:27:42,250 --> 00:27:46,170
+而是背后的隐喻、想法和意义。
+It's the metaphor and the idea and the meaning behind everything.
+
+305
+00:27:46,700 --> 00:27:53,780
+这里快速过一下我为 Swatch 做的一些图标方案。
+So this is just a super quick run through of some icon options that I did for Swatch.
+
+306
+00:27:53,900 --> 00:28:01,200
+他们想要一个闹钟，所以我当然从时钟开始，让它更"吵"一点，
+And they wanted an alarm, so of course I started with a clock and made it noisier
+
+307
+00:28:01,200 --> 00:28:05,580
+然后让它看起来更直白一些。
+and then made it look a little bit more literal.
+
+308
+00:28:06,560 --> 00:28:11,480
+再吵一点、也许更简单一点。
+And then a little louder and simpler maybe.
+
+309
+00:28:13,040 --> 00:28:15,490
+又或者它应该看起来像，
+And, or maybe it should look like, oh,
+
+310
+00:28:15,490 --> 00:28:19,520
+你看到这个就会想到旅行闹钟。
+it's a travel alarm clock would be in your head if you saw this.
+
+311
+00:28:20,040 --> 00:28:25,920
+然后我觉得这太自我指涉了，谁会想在时钟上再放个时钟？
+And then I thought way too self referential. Why would you want a clock on a clock?
+
+312
+00:28:26,740 --> 00:28:34,157
+所以我又做了些看起来有点吵的方案，
+So I was making other things that looked a little bit noisy as options
+
+313
+00:28:34,157 --> 00:28:37,540
+比如 Alpha 闹钟。
+and like the Alpha alarm clock.
+
+314
+00:28:40,220 --> 00:28:44,754
+重点是这真的不是什么精确的科学，
+The point just being this is so not an exact science
+
+315
+00:28:44,754 --> 00:28:51,879
+我总喜欢展示客户的要求，或者程序员可能
+and I always like to show either what a client asks for or what a programmer might
+
+316
+00:28:51,879 --> 00:28:58,680
+用作占位的东西，因为我常从中得到很多好点子。
+have used as a placeholder, because I've gotten so many good ideas that way.
+
+317
+00:28:59,480 --> 00:29:01,760
+然后再稍微打磨一下。
+And then maybe refine them a little bit.
+
+318
+00:29:02,680 --> 00:29:10,600
+离开 Apple 之后，我为 Microsoft 的 Windows 3.0 做过项目。
+But after I worked at apple, I did a job for Microsoft on Windows 3 0. And.
+
+319
+00:29:11,800 --> 00:29:17,800
+有了颜色，即便只有 16 色，其中有些颜色还不太好看，
+Color, even if 16 colors and some of them weren't very good colors,
+
+320
+00:29:17,800 --> 00:29:23,255
+但能用红色来做警告还是很棒，
+but it was still so nice to have to be able to use red for alerts
+
+321
+00:29:23,255 --> 00:29:29,255
+有了颜色，一眼就更容易区分，
+and to differentiate at a glance a little easier when you had color
+
+322
+00:29:29,255 --> 00:29:31,000
+多了一个选项。
+as another option.
+
+323
+00:29:32,440 --> 00:29:39,240
+我想做的东西不要看起来像花哨的棋盘。
+And I wanted to make something that didn't look like a garish chessboard.
+
+324
+00:29:39,720 --> 00:29:41,480
+当时有很多那种插图。
+There were a lot of illustrations like that.
+
+325
+00:29:41,560 --> 00:29:44,174
+所以这里用的都是那 16 色，
+So this is all those 16 colors,
+
+326
+00:29:44,174 --> 00:29:48,880
+但做了抖动处理，让它们看起来更柔和一些。
+but dithered so that they appear a little more subtle.
+
+327
+00:29:50,520 --> 00:29:56,011
+我还做了个东西，我猜屏幕上总有办法让你上瘾，
+And I also did something that I guess there's always a way to get addicted to
+
+328
+00:29:56,011 --> 00:29:57,960
+让你沉迷于屏幕上的某样东西。
+something on your screen.
+
+329
+00:29:58,680 --> 00:30:03,200
+在九十年代，很多人玩 Solitaire（纸牌）。
+And in the ninety's, a lot of people played solitaire.
+
+330
+00:30:03,520 --> 00:30:06,960
+我不得不把它从电脑上删掉，免得玩太多。
+I had to take it off my computer, so I didn't play too much.
+
+331
+00:30:07,640 --> 00:30:15,360
+当时 Slate 认为 Solitaire 造成了不小的影响。
+And slate at the time thought that solitaire made a dent.
+
+332
+00:30:18,080 --> 00:30:25,763
+我要展示几张我在 Apple 之后几十年里做的图，
+And I'm just going to show a few images that I made in the decades after apple
+
+333
+00:30:25,763 --> 00:30:33,570
+以及之前的，一些好建议的例子，想跟你们分享。
+and before, some examples of good advice that I wanted to share with you. So.
+
+334
+00:30:37,350 --> 00:30:43,270
+我服务过很多客户，我们不会一一细说。
+I've worked for a lot of clients and we're not going to talk about them all.
+
+335
+00:30:43,430 --> 00:30:45,070
+我心怀感激。
+And I feel so grateful.
+
+336
+00:30:46,910 --> 00:30:52,838
+再说一次，有些项目很有趣，有些很严肃，
+Again, some, some things that were fun and some things that were serious
+
+337
+00:30:52,838 --> 00:30:58,470
+有些则刻意想显得很正经、很商务。
+and some things that wanted self consciously to seem like business.
+
+338
+00:30:59,230 --> 00:31:03,310
+我为 General Magic 做过一个项目。
+But I worked on a project for General Magic.
+
+339
+00:31:03,430 --> 00:31:08,222
+我做了 logo，我们用了一种不同的桌面隐喻，
+I did the logo and we had a different kind of desktop metaphor
+
+340
+00:31:08,222 --> 00:31:12,630
+更直白一些，是有门的走廊。
+that was a little more literal and hallways with doors.
+
+341
+00:31:13,030 --> 00:31:16,950
+我觉得最糟糕的是一罐罐的文字。
+And I think the very worst thing we had was jars of text.
+
+342
+00:31:17,830 --> 00:31:18,710
+到底为什么要这样？
+Because why?
+
+343
+00:31:19,310 --> 00:31:25,067
+但想法是，你可以通过去
+But the idea was that you could remember where things were by going
+
+344
+00:31:25,067 --> 00:31:29,150
+用合乎逻辑的方式找到它们，来记住东西放在哪，我有点……
+and finding them in a logical way, and I kind of.
+
+345
+00:31:30,080 --> 00:31:36,086
+又想笑又觉得尴尬，这些东西都没了，没有 Rolodex 名片盒，
+Laugh, wince, like all these things are gone. Like no Rolodexes, no,
+
+346
+00:31:36,086 --> 00:31:38,720
+也没有长那样的电话。
+no phones that look like that.
+
+347
+00:31:39,160 --> 00:31:42,680
+但在当时，对，没有文件柜。
+But at the time it, yeah, no file cat.
+
+348
+00:31:42,720 --> 00:31:45,200
+我是说现在还有文件柜，
+I mean there still are file cabinets,
+
+349
+00:31:45,200 --> 00:31:49,680
+但那时你可以点一下抽屉，它们就会拉出来，
+but at the time you could tap on those drawers and they would come out
+
+350
+00:31:49,680 --> 00:31:53,120
+你可以往里放任何想放的东西。
+and you could put whatever you wanted in there. And.
+
+351
+00:31:54,680 --> 00:32:01,750
+那是个挺有趣的项目，只是没有……我们能寄明信片，
+That was kind of a fun project that just didn't. We could send postcards,
+
+352
+00:32:01,750 --> 00:32:05,520
+但它没能预见到电子邮件。
+but it didn't quite anticipate email.
+
+353
+00:32:06,960 --> 00:32:13,098
+我为 Facebook 做过一个项目，你不能直接上传图片，
+I worked for Facebook on a project that you couldn't just upload images,
+
+354
+00:32:13,098 --> 00:32:19,440
+但可以花 1 美元买图片，真的是 1 美元，然后发给别人。
+but you could buy images for $1, like a real dollar, and send them to people.
+
+355
+00:32:20,150 --> 00:32:25,710
+我觉得这是个很棒的项目，有点像开了一家礼品店。
+So I thought this was a wonderful project of kind of having a gift shop.
+
+356
+00:32:26,150 --> 00:32:31,963
+你能画出什么，让人愿意拥有或分享，
+And what could you draw that someone would want enough either to have or to share
+
+357
+00:32:31,963 --> 00:32:35,750
+觉得值得花上 1 美元？
+with someone that it was worth spending a dollar on?
+
+358
+00:32:36,350 --> 00:32:37,150
+于是我们做了。
+So did.
+
+359
+00:32:38,110 --> 00:32:43,482
+我们做了差不多四年，每天都有一份新礼物，
+We did this for not quite four years and had a new gift every day
+
+360
+00:32:43,482 --> 00:32:47,380
+在东岸时间午夜上线，
+that launched at midnight on the East Coast,
+
+361
+00:32:47,380 --> 00:32:51,488
+我们大概能在过了一刻钟后就看出来
+and we could kind of tell by maybe quarter after
+
+362
+00:32:51,488 --> 00:32:58,440
+一件东西会不会成为畅销品，就看头一段时间卖了多少
+if it was going to be a successful bestseller by just how many sold in that first.
+
+363
+00:32:58,520 --> 00:32:59,920
+头 15 分钟
+15 minutes and.
+
+364
+00:33:00,040 --> 00:33:04,008
+我们做过一些限量版，还有一些
+And we had some limited editions and we had some,
+
+365
+00:33:04,008 --> 00:33:09,761
+我原以为，如果你做一件价值几千美元的东西
+I thought maybe if you made something that cost thousands of dollars,
+
+366
+00:33:09,761 --> 00:33:14,224
+比如钻石耳环、Rolex，做些华丽的东西
+like diamond earrings and a Rolex and did fancy things
+
+367
+00:33:14,224 --> 00:33:19,680
+因为它这么贵，花一美元买它会显得更值
+that it would seem more worth a dollar because it was so expensive.
+
+368
+00:33:20,480 --> 00:33:28,643
+但我学到的是，可爱胜过一切。就是泰迪熊
+But what I Learned was that cute trumped everything. It just teddy bears,
+
+369
+00:33:28,643 --> 00:33:31,320
+任何心形的东西
+anything heart shaped.
+
+370
+00:33:31,880 --> 00:33:34,520
+唇印图案是有史以来最畅销的
+The Kiss Mark was the best seller of all time.
+
+371
+00:33:36,200 --> 00:33:39,520
+我得说，如果我的性命全靠卖出
+And I would say if my life depended on selling.
+
+372
+00:33:40,600 --> 00:33:41,880
+一幅一美元的画
+A drawing for $1.
+
+373
+00:33:43,000 --> 00:33:45,622
+我现在知道我会画一只企鹅
+I now know I would draw a penguin
+
+374
+00:33:45,622 --> 00:33:52,480
+因为我们出过好几个企鹅限量版，全都卖光了
+because we had we had multiple limited editions of Penguins and they all sold out.
+
+375
+00:33:52,640 --> 00:33:56,480
+所以，这真的挺有意思
+So, but it was just interesting.
+
+376
+00:33:56,600 --> 00:34:01,208
+我们和 Britney Spears 以及其他艺人做过一些合作
+We did some collabs with Britney Spears and other entertainers
+
+377
+00:34:01,208 --> 00:34:04,424
+最终 Facebook 终止了这个项目
+and ultimately Facebook ended this program
+
+378
+00:34:04,424 --> 00:34:08,510
+因为他们不想和第三方竞争
+because they didn't want to compete with third parties.
+
+379
+00:34:09,070 --> 00:34:10,590
+但在它存在的那段时间还是很不错的
+But it was good while it lasted.
+
+380
+00:34:13,910 --> 00:34:22,350
+后来我为 Pinterest 做了一些图标，一位很棒的动画师帮了我
+Then I did some icons for Pinterest, where a terrific animator helped me with these.
+
+381
+00:34:22,470 --> 00:34:25,568
+我想，加一点点动效
+I thought, just a little bit of motion so
+
+382
+00:34:25,568 --> 00:34:29,510
+这样时间久了也不会太让人厌烦
+that it wouldn't get really irritating over time.
+
+383
+00:34:31,410 --> 00:34:37,490
+我在那儿做了很多图标。这些不全是为 Pinterest 做的，但有一些是
+And I made many icons there. This isn't all for Pinterest, but some of them were.
+
+384
+00:34:39,650 --> 00:34:47,770
+我为一家处于隐身状态的 .com 公司做了 logo，是家很棒的公司
+I made a logo for a stealth mill.com, which terrific company.
+
+385
+00:34:48,210 --> 00:34:52,730
+但在他们有正式 logo 之前，我们做了一只浣熊（trash panda）
+But before they had their real logo, we did a trash panda.
+
+386
+00:34:53,850 --> 00:35:00,255
+我觉得这挺合适，因为他们的业务也和垃圾有类似的关联
+And thought like because it dealt with trash in a similar way
+
+387
+00:35:00,255 --> 00:35:03,330
+这是一幅插画
+and this is an illustration.
+
+388
+00:35:03,770 --> 00:35:08,437
+The National 是 Amtrak 的杂志，他们会邀请艺术家
+The national, which is Amtrak's magazine, invites artists.
+
+389
+00:35:08,437 --> 00:35:11,090
+我记得是一本季刊
+I think it's a quarterly magazine.
+
+390
+00:35:11,530 --> 00:35:14,210
+他们让艺术家来演绎他们的线路图
+And they have artists interpret their route map.
+
+391
+00:35:14,700 --> 00:35:21,605
+所以我想，回过头来为那些地方做像素化图标应该挺好玩
+So I thought it might be fun to go back and do pixelated icons for places that
+
+392
+00:35:21,605 --> 00:35:24,500
+就是那些你可以坐火车到达的地方
+where you could take the train.
+
+393
+00:35:26,100 --> 00:35:27,820
+我很喜欢做 logo
+And I love doing logos.
+
+394
+00:35:28,060 --> 00:35:34,956
+这是为 Magic Puzzle 做的，他们做的拼图真的很棒
+This is for magic puzzle, which really does make these great jigsaw puzzles
+
+395
+00:35:34,956 --> 00:35:42,509
+拼完之后还会变个魔术，不是悬浮那种，但，嗯，我
+that then after you finish, they perform a magic trick, not levitating, but, um, I,
+
+396
+00:35:42,509 --> 00:35:46,340
+我作为艺术家为这个 logo 做了些草图
+I was an artist doing studies for the logo.
+
+397
+00:35:46,540 --> 00:35:53,020
+和这个很接近，是为 Pikmin Bloom 游戏和 Paradot 做的
+Which is pretty close to this for a Pikmin Bloom game and Paradot,
+
+398
+00:35:53,020 --> 00:35:54,940
+Paradot 是一款游戏
+which is a game and.
+
+399
+00:35:56,030 --> 00:36:02,026
+我喜欢做头像。你知道，做头像很自由
+Love doing avatars. You know, it's just kind of Avatar because they're so freeing,
+
+400
+00:36:02,026 --> 00:36:04,720
+因为它们可以代表任何东西
+because they can stand for anything.
+
+401
+00:36:05,480 --> 00:36:08,520
+所以它有点让我觉得像礼物
+So it like kind of made me feel like gifts.
+
+402
+00:36:08,680 --> 00:36:16,637
+你就想有一整套，让人能找到打动自己的那一个
+You just want to have an array that someone can find something that speaks to them.
+
+403
+00:36:16,637 --> 00:36:19,680
+我刚为它做了这些徽章
+And I just did these badges for.
+
+404
+00:36:21,140 --> 00:36:24,597
+一款相当新的 Ledger 加密钱包
+A new fairly new Ledger crypto wallet
+
+405
+00:36:24,597 --> 00:36:32,180
+它前面有个小小的可安装的开口，让你可以个性化定制
+and it has a little attachment opening in the front so that you can personalize it.
+
+406
+00:36:32,180 --> 00:36:36,500
+他们很想要一点复古感的东西
+And they really wanted to have something a little bit retro looking.
+
+407
+00:36:37,340 --> 00:36:45,194
+这是为一家 VC 公司做的 logo，理念是走出办公室去工作
+And this is a logo for a VC firm where the idea is get out of the office and work,
+
+408
+00:36:45,194 --> 00:36:52,300
+在山里工作，在户外某处工作，就是这个想法
+work in the mountains, work somewhere outdoors was the idea of this.
+
+409
+00:36:53,780 --> 00:36:59,960
+我的朋友 Dave Morin 打电话来，我记得是个周五
+And Dave Morin, a friend, called and said, on a Friday, I think,
+
+410
+00:36:59,960 --> 00:37:06,140
+想在周一之前就要一张图，还有 T 恤和帽子
+and wanted to have an image and t shirts and hats like by Monday.
+
+411
+00:37:06,610 --> 00:37:13,091
+算是个急活儿，但能有点新体验还是挺有意思的
+So kind of a quickie project, but it was fun to get to have a little bit of
+
+412
+00:37:13,091 --> 00:37:16,890
+接触一些新的东西
+experience with something that was new.
+
+413
+00:37:18,490 --> 00:37:26,050
+现在我想分享一些我遇到的人给我的建议
+And now I wanted to share some advice that I've been given by people that I met.
+
+414
+00:37:26,250 --> 00:37:28,600
+不，这不是 Google 项目
+Not, it's not a Google project.
+
+415
+00:37:29,360 --> 00:37:32,360
+嗯，我一直在想往里面补充
+Um, and I'm always looking to add to it.
+
+416
+00:37:32,800 --> 00:37:40,238
+所以我欢迎任何好建议，来自那些
+So I welcome any, any good advice that you want to send along by people
+
+417
+00:37:40,238 --> 00:37:43,240
+真正影响过我的人
+that really influenced me.
+
+418
+00:37:43,280 --> 00:37:49,833
+我前面提到的 Paul Rand，一位非常棒的设计师，他很早就开始工作
+And this Paul Rand I mentioned earlier, just a terrific designer who started working,
+
+419
+00:37:49,833 --> 00:37:53,200
+我记得大概 15 岁就为杂志工作了
+I think, for magazines when he was around 15.
+
+420
+00:37:54,220 --> 00:38:01,703
+他说他有点像面对所有这些新字体的一切
+And he said that he was kind of like all this stuff with all these new fonts,
+
+421
+00:38:01,703 --> 00:38:05,260
+就好像你并不需要那么多。
+it's like you don't need that many.
+
+422
+00:38:05,580 --> 00:38:08,700
+他这人有点直率。你不需要那么多字体。
+He, he was kind of brusque. You don't need that many fonts.
+
+423
+00:38:08,900 --> 00:38:14,820
+你只要懂得怎么用好它们就行。这是他的一些作品。
+You just have to know how to use them well. And this is some of his work.
+
+424
+00:38:16,720 --> 00:38:20,491
+我有幸在一家叫 NeXT 的公司和他共事，
+I got to work with him at a company called NeXT,
+
+425
+00:38:20,491 --> 00:38:24,560
+那是 Steve Jobs 被迫离开 Apple 后创办的公司。
+where Steve Jobs went after he had to leave Apple.
+
+426
+00:38:25,320 --> 00:38:31,160
+我当然想请 Paul Rand 来做标志，因为他是我的偶像。
+And I, of course, wanted to hire Paul Rand for the logo because he was my hero.
+
+427
+00:38:31,840 --> 00:38:36,320
+Steve 其实没怎么听说过他，他觉得我们应该搞一场竞赛。
+And Steve hadn't really heard of him and he thought we should have a contest.
+
+428
+00:38:37,140 --> 00:38:41,660
+我从来不觉得那是拿到好创意的最佳方式。
+Like probably, which I would never think is the best way to get good creative.
+
+429
+00:38:42,180 --> 00:38:47,734
+但他说我们可以请五个人或公司，每人付 15k，
+But he said we could hire five people or firms and pay them each 15k
+
+430
+00:38:47,734 --> 00:38:52,980
+然后我们挑出最好的，继续合作。
+and then we would pick the best and continue to work with them.
+
+431
+00:38:53,500 --> 00:38:59,620
+于是我邀请了一些人，也邀请了 Paul Rand，他说：
+So I invited some people, and then I invited Paul Rand, and he said.
+
+432
+00:39:00,690 --> 00:39:07,490
+你付我 10 万美元，我做一个标志，你会喜欢它。
+You will pay me $100,000, I will do one logo and you will like it.
+
+433
+00:39:08,090 --> 00:39:10,850
+结果真的就是这样。
+And that is actually what happened.
+
+434
+00:39:11,450 --> 00:39:15,170
+我们确实喜欢，也确实付了钱。
+And we did like it. And we did pay him.
+
+435
+00:39:15,170 --> 00:39:21,700
+和他合作对每个人来说都是一次很棒的学习经历。
+And it was, it was such a great learning experience for everybody to work with him.
+
+436
+00:39:22,780 --> 00:39:28,300
+他给我的建议中，就有这些他常用的字体。
+Among other advice he gave me, these are the fonts that he tended to use a lot.
+
+437
+00:39:28,780 --> 00:39:33,260
+我还注意到，他的作品里也常用相同的颜色。
+And I noticed in his work, he also tends to use the same colors.
+
+438
+00:39:33,540 --> 00:39:39,640
+我就想，好吧，如果 PMS 354 绿对 Paul Rand 够好，
+And I kind of thought, okay, if PMS 354 green is good enough for Paul Rand,
+
+439
+00:39:39,640 --> 00:39:43,300
+那对我也够好。我现在还是习惯——
+it's good enough for me. And I still tend to.
+
+440
+00:39:44,660 --> 00:39:50,620
+翻他的书，用一些他为 NeXT 推荐的颜色。
+Look in his books and use some of the colors that he recommended for NeXT.
+
+441
+00:39:52,100 --> 00:39:57,714
+他只是随口一提说了那句话。
+He did, in just as an offhand remark, say that.
+
+442
+00:39:57,714 --> 00:40:03,180
+但当我们聊到标志时，他——
+And but when we were talking about logos, he.
+
+443
+00:40:04,240 --> 00:40:11,340
+特别主张要努力想办法，对产品的名字做点什么，
+Really advocated trying hard to think of a way to do something to the name of the
+
+444
+00:40:11,340 --> 00:40:15,600
+就像他把 NeXT 放进那个立方体里那样。
+product, kind of the way he put NeXT in the cube.
+
+445
+00:40:17,440 --> 00:40:23,760
+他把这个当作反面教材。这是 AT&T 前几代的标志。
+He showed this as what not to do. This is a couple of AT&T logos ago.
+
+446
+00:40:24,410 --> 00:40:30,499
+因为他说，你可以花一大笔钱做出某个随意的符号
+Because he said if you can spend a ton of money to make some random symbol
+
+447
+00:40:30,499 --> 00:40:35,040
+让它跟品牌关联，可它其实没什么实际含义。
+associated that doesn't really mean anything much.
+
+448
+00:40:35,280 --> 00:40:39,637
+我是说，你的标志你说了算，
+I mean, I guess it's the world with your logo, you know,
+
+449
+00:40:39,637 --> 00:40:41,960
+你想怎么做都行。
+you can do whatever you want.
+
+450
+00:40:41,960 --> 00:40:47,640
+但大多数人没有无限的预算。这些是他做的一些标志。
+But most people don't have unlimited money. So these are some logos that he did.
+
+451
+00:40:48,120 --> 00:40:56,410
+你能大概看出，Morningstar 有一轮升起的太阳，
+And you can kind of get the idea that, you know, Morningstar has a rising sun and,
+
+452
+00:40:56,410 --> 00:41:00,680
+而 IBM 是细条纹的、很商务的风格。
+um, IBM is pinstriped and business like.
+
+453
+00:41:01,360 --> 00:41:04,040
+我特别喜欢那个 UPS 标志。
+And I love that UPS logo.
+
+454
+00:41:04,080 --> 00:41:09,592
+他说他做的时候，把它拿给六岁的女儿看，问：
+And he said when he was doing it, he showed it to his six year old daughter and said,
+
+455
+00:41:09,592 --> 00:41:11,320
+Catherine，这是什么？
+Catherine, what is this?
+
+456
+00:41:11,840 --> 00:41:15,000
+据说她说：这是个礼物呀，爸爸。
+And reportedly she said, it's a present, daddy.
+
+457
+00:41:15,520 --> 00:41:20,320
+他觉得这就是最好的证明——它是能被看懂的。
+And he thought that that was such great justification that it was understandable.
+
+458
+00:41:20,840 --> 00:41:22,120
+但它其实——
+But really it had.
+
+459
+00:41:23,080 --> 00:41:25,720
+它有一个盾牌和一个包裹。
+It had a shield and a package.
+
+460
+00:41:26,120 --> 00:41:32,051
+可惜后来他们把它现代化了，因为我敢肯定，有人围坐在
+And sadly, they modernized it because I'm sure there were people sitting around a
+
+461
+00:41:32,051 --> 00:41:36,500
+桌前说：我们如今可不只是送包裹了。
+table who said, well, we're not just about packages anymore.
+
+462
+00:41:36,740 --> 00:41:39,060
+但我一直盼着他们能把它改回来。
+But I keep hoping they'll bring it back.
+
+463
+00:41:40,860 --> 00:41:45,746
+这是一位叫 Paul Saffo 的未来学家，
+And this is a futurist named Paul Saffo,
+
+464
+00:41:45,746 --> 00:41:52,260
+我特别喜欢他有一天提到的这句话。
+and I just loved this quote that he mentioned one day.
+
+465
+00:41:53,220 --> 00:41:57,260
+我是从比喻的角度来理解它的。
+And I kinda get this in a metaphorical way.
+
+466
+00:41:57,740 --> 00:42:03,592
+我是说，我知道我总是以为一小时就能搞定，
+And I mean, I know I always, I always think I can do this in an hour
+
+467
+00:42:03,592 --> 00:42:10,120
+可实际上没有什么事只要一小时，我做过那么多项目都是这样。
+when really nothing takes an hour and so many projects I've worked on.
+
+468
+00:42:10,800 --> 00:42:15,803
+你乐观地以为你完全清楚自己要做什么，
+You optimistically think you know exactly what you want to do,
+
+469
+00:42:15,803 --> 00:42:18,400
+但还是要留出富余的时间。
+but it's still allow extra time.
+
+470
+00:42:19,720 --> 00:42:24,637
+这是我父亲，他曾是 Monell Chemical Senses Center 的主任，
+This is my dad who was the director of the Monell Chemical Senses Center in
+
+471
+00:42:24,637 --> 00:42:27,780
+那家机构在 Philadelphia，研究味觉和嗅觉。
+Philadelphia, which studied taste and smell.
+
+472
+00:42:28,500 --> 00:42:34,152
+我把我父亲介绍给了 Paul Rand，他为 Monell 做了那个标志，
+And I introduced my dad to Paul Rand, and he made that logo for Monell,
+
+473
+00:42:34,152 --> 00:42:40,300
+我为此挺开心的。他们相处得很融洽。但我父亲——
+which I felt pretty happy about. And they got along really well. But my dad.
+
+474
+00:42:41,180 --> 00:42:45,375
+我觉得他总能给出好建议，虽然不是最令人振奋的，
+I think always had good advice that wasn't the most cheerful advice,
+
+475
+00:42:45,375 --> 00:42:46,700
+但很现实。
+but it was realistic.
+
+476
+00:42:47,780 --> 00:42:51,968
+他得为那家科学中心筹很多钱，
+And he had to raise a lot of money for the science center,
+
+477
+00:42:51,968 --> 00:42:54,700
+所以他很懂自己在说什么。
+so he knew what he was talking about.
+
+478
+00:42:55,540 --> 00:43:01,020
+我努力记住这一点，因为听到"不"的时候我会沮丧。
+And I try to remember that because, well, I get depressed when I hear no.
+
+479
+00:43:03,810 --> 00:43:09,853
+他还说过这句话，我觉得这是一种非常现实的思考方式，
+He also said this, which I think is like a really realistic way to think about
+
+480
+00:43:09,853 --> 00:43:12,730
+不至于自欺欺人。
+things and not be kidding yourself.
+
+481
+00:43:16,630 --> 00:43:20,048
+这是 Daniel Nord，他出生在瑞典，
+This is Daniel Nord, who was born in Sweden,
+
+482
+00:43:20,048 --> 00:43:24,510
+现在住在葡萄牙，曾在伦敦为市长工作。
+now lives in Portugal and worked in London for the mayor.
+
+483
+00:43:24,950 --> 00:43:30,768
+他是位建筑师，他告诉我他们过去常常围坐在桌子旁，
+He's an architect and he told me how they used to just sit around tables
+
+484
+00:43:30,768 --> 00:43:34,480
+没完没了地讨论各种事情。
+and have endless discussions about things.
+
+485
+00:43:35,200 --> 00:43:41,200
+他就是这么说的，把它可视化。
+And this is how he said, make it visual.
+
+486
+00:43:41,560 --> 00:43:49,560
+我是说，这大概也是个比喻，但真的去画出来。呃，呃。
+I mean, I guess this is a metaphor, too, but do the drawing really? Um, um.
+
+487
+00:43:50,690 --> 00:43:53,490
+展示，而不是讲述，我想这就是他的意思。
+Show don't tell, I think is what he meant.
+
+488
+00:43:55,050 --> 00:44:00,877
+这是一位可能在某些圈子里挺有名的人，名叫 Jean Paguzzi，
+And this is a guy maybe well known in some circles named Jean Paguzzi,
+
+489
+00:44:00,877 --> 00:44:03,330
+我是通过 Steve Jobs 认识他的。
+who I met through Steve Jobs.
+
+490
+00:44:03,490 --> 00:44:04,890
+他算是个 Apple 粉丝。
+He was kind of an apple fan.
+
+491
+00:44:05,730 --> 00:44:13,411
+他也许发明了自拍，不过，呃，他有很多名人朋友，而他的父亲，
+He maybe invented the selfie, but, um, had a lot of celebrity friends and his father,
+
+492
+00:44:13,411 --> 00:44:20,654
+他是意大利人，他父亲创立了 Simca 汽车公司，这样，
+he was Italian or Italian, and his father started the Simca car company so that,
+
+493
+00:44:20,654 --> 00:44:27,457
+你知道，他说这样我就能一辈子做自己想做的事。
+you know, he said so that I could like spend my life doing whatever I wanted.
+
+494
+00:44:27,457 --> 00:44:30,420
+他还收藏非洲艺术品。
+And he collects African art and.
+
+495
+00:44:31,460 --> 00:44:35,723
+他说了句话，让我觉得有趣，因为它就是，
+He said, and this amused me because it just,
+
+496
+00:44:35,723 --> 00:44:43,420
+我们做 Macintosh 那段时光确实感觉很久远，也充满乐趣。
+it does seem like a long time ago and a lot of fun that we worked on the Macintosh.
+
+497
+00:44:43,980 --> 00:44:49,900
+他还说了这个，我觉得我也在努力做到，我觉得这是个好建议。
+And he also said this, which I think like I try to do, I think it's good advice.
+
+498
+00:44:52,420 --> 00:44:58,420
+左边这位是 Andy Hertzfeld，还有 Bill Atkinson、Bud Tribble 和 Steve Jobs。
+And this is Andy Hertzfeld on the left, Bill Atkinson, Bud Tribble and Steve Jobs.
+
+499
+00:44:58,660 --> 00:45:03,985
+右边是 Alan Kay，他现在八十多岁了，
+And Alan Kay on the the right, who's in his 80s now,
+
+500
+00:45:03,985 --> 00:45:09,440
+是一位成就令人难以置信的计算机科学家。
+unbelievably accomplished computer scientist.
+
+501
+00:45:10,120 --> 00:45:17,829
+这是 Bud 引用 Alan Kay 关于用户界面的一条原则，
+And this is Bud quoting Alan Kay as a kind of tenet about user interface
+
+502
+00:45:17,829 --> 00:45:25,671
+也许是不要把所有东西都放在同一层级，而是把它们嵌套起来，
+and maybe not having everything at the same level and nesting things so
+
+503
+00:45:25,671 --> 00:45:32,450
+让东西可以适时出现，这样易用性才有可能实现。
+that things can just appear, that ease of use seems possible.
+
+504
+00:45:33,290 --> 00:45:35,490
+我一直努力去思考这一点。
+And I always try and think about that.
+
+505
+00:45:36,530 --> 00:45:41,090
+Alan Kay 对我说了这话，我当时觉得，那真是，
+And Alan Kay said this to me and I thought, that was I.
+
+506
+00:45:41,530 --> 00:45:47,071
+听到这话我特别开心，因为他就说，是啊，就像，
+I took great joy hearing that because he just said, yeah, it's like,
+
+507
+00:45:47,071 --> 00:45:52,810
+谁能想到比例间距字体其实看起来还挺好看。
+who knew proportionally spaced fonts can actually look pretty good.
+
+508
+00:45:54,410 --> 00:45:57,742
+这位仁兄，相当有名，
+And this guy, pretty well known,
+
+509
+00:45:57,742 --> 00:46:04,407
+他坐在我 Apple 的办公隔间里，他在 80 年代确实说过，就是，
+he's sitting in my cubicle at apple and he did say in the 80s, like,
+
+510
+00:46:04,407 --> 00:46:08,110
+要珍惜你现在拥有的一切。
+appreciate what you have right now.
+
+511
+00:46:10,430 --> 00:46:13,807
+我参加的第一次外出团建活动上，
+And the first offsite I went to,
+
+512
+00:46:13,807 --> 00:46:20,043
+他提出了这三个目标，因为第二个目标，
+he put up these three goals and because of the second goal,
+
+513
+00:46:20,043 --> 00:46:23,940
+一位名叫 Steve Caps 的程序员和我，
+a programmer named Steve Caps and I,
+
+514
+00:46:23,940 --> 00:46:31,474
+Steve Caps 缝了一面黑旗，我在上面画了骷髅和交叉骨，
+Steve Caps sewed a black flag and I painted a skull and crossbones on it
+
+515
+00:46:31,474 --> 00:46:36,280
+还把一个彩条 Apple 标志当作眼罩画上去。然后，
+and put a striped apple as the eye patch. And.
+
+516
+00:46:36,280 --> 00:46:40,194
+我们半夜跑去干活，爬上了屋顶，
+We went to work in the middle of the night and climbed up on the roof
+
+517
+00:46:40,194 --> 00:46:43,600
+因为那时候安保显然松懈得多。
+because obviously security was a lot more lax back then.
+
+518
+00:46:44,120 --> 00:46:50,053
+我们升起了那面旗，其实这只是对那句话的回应，
+And we flew that flag and it was really just as a rejoinder to this,
+
+519
+00:46:50,053 --> 00:46:52,360
+意思是我们就是海盗。
+that we were the Pirates.
+
+520
+00:46:54,970 --> 00:46:59,770
+还有这个。
+And this, too.
+
+521
+00:46:59,930 --> 00:47:03,891
+我记得我们过去常常把 Mac 展示给很多人看，
+I remember we used to show the Mac to lots of people
+
+522
+00:47:03,891 --> 00:47:08,336
+我现在还常想起这一点，因为显然你会说，
+and I still think of this now because obviously you say,
+
+523
+00:47:08,336 --> 00:47:13,650
+有些人能弄明白怎么用，但不是所有人都行。
+like some people can figure out how to use this, but not everybody.
+
+524
+00:47:13,770 --> 00:47:19,035
+然后大家会很开心，因为他们能觉得自己很聪明，或者不会觉得，
+And then there was great joy because they could feel smart or they wouldn't feel
+
+525
+00:47:19,035 --> 00:47:20,870
+你要是说这很简单，他们就不会觉得自己笨。
+dumb if you said it was easy.
+
+526
+00:47:20,870 --> 00:47:22,510
+而他们还是会遇到麻烦。
+And they still had trouble with it.
+
+527
+00:47:24,790 --> 00:47:29,070
+这是我从 Steve Jobs 那里得到的唯一一条特别糟糕的建议。
+This is the only piece of really bad advice I got from Steve Jobs.
+
+528
+00:47:31,910 --> 00:47:33,390
+他说如果 Apple。
+He said if apple.
+
+529
+00:47:34,510 --> 00:47:38,190
+我当时想，那好吧，如果他不买他的股票，我也不买我的。
+And I thought, well, I'm not going to buy my stock if he's not buying his.
+
+530
+00:47:38,350 --> 00:47:43,630
+他应该懂行。他还说，像你这样，Susan，
+He would know. And he also said, like you, Susan,
+
+531
+00:47:43,630 --> 00:47:49,570
+你可以摆弄那些像素点，但永远赚不到两万美元以上。
+you can twiddle bits and never make more than $20,000.
+
+532
+00:47:50,770 --> 00:47:54,130
+又或者像你，最好还是当个创意总监。
+Or like you, it's better to be a creative director.
+
+533
+00:47:54,370 --> 00:47:58,246
+他说的是 NeXT，而我当时就是创意总监，
+He was talking about next and I was a creative director
+
+534
+00:47:58,246 --> 00:48:00,400
+我得以和 Paul Rand 合作。
+and I got to work with Paul Ran.
+
+535
+00:48:00,640 --> 00:48:01,720
+那真是太棒了。
+That was fantastic.
+
+536
+00:48:02,200 --> 00:48:08,660
+但归根结底，我骨子里就是个爱摆弄像素点的人，我又回去做那个了，
+But ultimately I was a bit twiddler at heart and I went back to it
+
+537
+00:48:08,660 --> 00:48:14,997
+也许不总是像素点，不过，我觉得这一点还有待商榷，
+and maybe not always bits, but, and I think this is debatable,
+
+538
+00:48:14,997 --> 00:48:20,960
+但他带了很多来访的高管去看这部电影。
+but he took lots of visiting executives to see this movie.
+
+539
+00:48:22,800 --> 00:48:25,000
+我喜欢它是因为里面有电焊工。
+And I liked it because it had welder in it.
+
+540
+00:48:25,600 --> 00:48:30,280
+Jay Chiat 创立了 Apple 使用的那家广告公司，Chiat\Day。
+Jay Chiat started the ad agency that apple used, Chiat day.
+
+541
+00:48:31,440 --> 00:48:37,440
+当时这算是……那会儿根本谈不上什么工作与生活的平衡。
+And this was kind of the it was not work life balance at the time.
+
+542
+00:48:37,880 --> 00:48:42,840
+软件组里跟我共事的每个人，工位里都放着一个睡袋。
+And everybody I worked with in the software group had a sleeping bag in their cube.
+
+543
+00:48:45,010 --> 00:48:48,490
+我觉得这一点很值得记住。
+And I think this is really good to remember.
+
+544
+00:48:48,570 --> 00:48:55,612
+我在几家公司待过，我们大概觉得，到了 15 个人，
+It's I know a couple companies I've worked for, we kind of decided that 15 people,
+
+545
+00:48:55,612 --> 00:49:00,973
+你还能靠共识来招人，把所有人聚在一个房间里，
+you could still have consensus hiring and everybody in a room
+
+546
+00:49:00,973 --> 00:49:02,970
+保持步调一致。
+and be on the same page.
+
+547
+00:49:03,370 --> 00:49:05,490
+然后人一多起来，就……
+And then you start to get more people, and it.
+
+548
+00:49:06,660 --> 00:49:09,620
+有好的一面，也有不好的一面。
+There's a plus and an upside and a downside.
+
+549
+00:49:11,380 --> 00:49:16,260
+Andy 说过这话。关于给 Steve 看东西，他给了我这个建议。
+And Andy said this. He gave me this advice showing stuff to Steve.
+
+550
+00:49:16,980 --> 00:49:23,799
+他说，别只给他看一样东西，因为他会说他不喜欢，
+He's like, don't show him one thing because he'll say he doesn't like it
+
+551
+00:49:23,799 --> 00:49:30,040
+因为那也许是逼你回去重做、做得更好。
+because it maybe forces you to go try and do it again and be better.
+
+552
+00:49:30,840 --> 00:49:32,856
+但如果你给他看好几样，
+And but if you show a few things,
+
+553
+00:49:32,856 --> 00:49:38,360
+那他就能参与进来，说某个很糟，但仍然能挑出一个。
+then he can be involved and say that something is terrible, but still pick something.
+
+554
+00:49:40,480 --> 00:49:44,400
+这是我妈妈给我的建议，我觉得非常好。
+And this is advice from my mom and I think it's very good advice.
+
+555
+00:49:46,640 --> 00:49:51,304
+这是 Evan Sharp 和 Ben Silberman，他们创立了 Pinterest。
+This is Evan Sharp and Ben Silberman who started Pinterest.
+
+556
+00:49:51,304 --> 00:49:53,730
+他们有很多好点子。
+And they had a lot of good ideas.
+
+557
+00:49:54,570 --> 00:49:57,090
+但 Evan 以前常说这句话。
+But Evan used to say this.
+
+558
+00:50:00,370 --> 00:50:05,249
+这是 Dennis Wang，他开始在 Google 工作时，
+This is Dennis Wang, who started working at Google
+
+559
+00:50:05,249 --> 00:50:08,850
+还是 Stanford 的本科生。
+when he was an undergrad at Stanford.
+
+560
+00:50:09,530 --> 00:50:14,000
+他是一位出色的计算机科学家兼艺术家。
+And he's a terrific computer scientist and artist.
+
+561
+00:50:14,640 --> 00:50:16,400
+他跟我说了这句话。
+And he told me this.
+
+562
+00:50:17,360 --> 00:50:24,240
+这是 Google 里的主流观点，我大概也会宣扬同样的道理，
+That was the prevailing wisdom at Google, and I would probably preach the same thing,
+
+563
+00:50:24,240 --> 00:50:29,570
+就是别乱折腾 logo，别给它换个颜色，
+like don't mess around with the logo and put it in a different color
+
+564
+00:50:29,570 --> 00:50:34,318
+别把它放在花哨的背景上，直到大家已经非常熟悉它，
+and put it on a crazy background until people know it so well
+
+565
+00:50:34,318 --> 00:50:38,000
+熟到你可以拿它来玩花样。但显然他们……
+that you can play with it. But obviously they.
+
+566
+00:50:38,080 --> 00:50:39,720
+是 Dennis 做了这些。
+Did Dennis made these.
+
+567
+00:50:40,520 --> 00:50:42,040
+他们靠这个做得相当不错。
+They did pretty well with this.
+
+568
+00:50:44,080 --> 00:50:50,200
+这是一位朋友的爸爸告诉我的。
+And this is something that a friend's dad told me.
+
+569
+00:50:52,490 --> 00:50:57,250
+这跟政治无关，只是我找到的一张有手风琴的有趣图片。
+This is not political. It's just a fun picture I found with an accordion.
+
+570
+00:50:58,850 --> 00:51:05,000
+你知道，这位老兄有很多真正的好建议，包括这一条。
+And you know, guy, he has a lot of truly good advice, including this.
+
+571
+00:51:06,480 --> 00:51:10,840
+但我不认为这意味着灰心丧气、放弃尝试。
+But I don't think it means be discouraged and quit trying.
+
+572
+00:51:11,240 --> 00:51:19,240
+它只是说，哦，也许该去尝试下一个点子了。谢谢大家。
+It just means, oh, maybe it's time to go on to the next idea. And thank you.
+
+573
+00:51:20,140 --> 00:51:24,740
+也真心感谢 Y Combinator。
+But also really thank you to y Combinator.
+
+574
+00:51:25,420 --> 00:51:32,620
+我今天过得特别棒，一切都进行得那么顺利，每个人都那么友善。
+I kind of had an amazing day today and everything ran so smoothly and everyone was so gracious.
+
+575
+00:51:33,020 --> 00:51:39,267
+所以我甚至有点羡慕参加这次活动的每一个人，
+So and it just seemed like I felt envious of everybody taking part in this event
+
+576
+00:51:39,267 --> 00:51:42,630
+因为这实在太酷了。谢谢大家。
+because it just seemed so cool. Thank you.

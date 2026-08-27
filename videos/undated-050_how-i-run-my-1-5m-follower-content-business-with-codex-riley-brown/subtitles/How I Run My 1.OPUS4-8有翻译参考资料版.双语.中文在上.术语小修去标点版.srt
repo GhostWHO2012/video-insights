@@ -1,0 +1,3909 @@
+1
+00:00:00,280 --> 00:00:03,357
+我会直接抓取 100 个表现很好的缩略图
+I will just scrape 100 thumbnails that performed really well,
+
+2
+00:00:03,357 --> 00:00:04,600
+然后把我的脸放上去
+and I'll put my face on it.
+
+3
+00:00:04,760 --> 00:00:08,480
+我拿来这些，再转成适合我的版本，这就是我的缩略图
+I took this and then I converted it into one for me. And here are my thumbnails.
+
+4
+00:00:08,880 --> 00:00:11,133
+把它变成一个 Skill。你用的 Skill 越多
+Turn this into a skill. The more skills you use,
+
+5
+00:00:11,133 --> 00:00:13,560
+就越会发现可以自由组合搭配
+the more you'll realize that you can mix and match.
+
+6
+00:00:13,920 --> 00:00:17,640
+大多数人一开始想到的都是批量生产、多产内容
+That's where everyone's brain goes at first is to like batch and create more.
+
+7
+00:00:18,120 --> 00:00:22,565
+我想要的是更好，因为我觉得护城河是长期的质量
+What I want is better because I think the moat is quality over a long period of time
+
+8
+00:00:22,565 --> 00:00:23,560
+而不是批量生产
+versus batching.
+
+9
+00:00:23,980 --> 00:00:25,900
+批量生产久了会让内容失去灵魂
+Batching will make it soulless over time.
+
+10
+00:00:29,020 --> 00:00:31,918
+大家好，今天的嘉宾是独一无二的 Riley Brown
+Hey, everyone, my guest today is the one and only Riley Brown.
+
+11
+00:00:31,918 --> 00:00:34,020
+Riley 做 AI 教育内容，粉丝超过 1.5
+Riley makes AI education content for over 1.
+
+12
+00:00:34,220 --> 00:00:35,060
+百万
+5 million followers.
+
+13
+00:00:35,500 --> 00:00:38,268
+所以特别期待请他给我们演示他怎么用 Codex
+So super excited to get him to show us how he uses Codex
+
+14
+00:00:38,268 --> 00:00:41,540
+和其他 AI 工具来运营他的整个创作者业务，以及更多内容
+and other AI tools to run his entire creator business and more.
+
+15
+00:00:41,620 --> 00:00:44,820
+欢迎你，先生。谢谢邀请，这会很有意思
+So welcome, sir. Thanks for having me. This is this is gonna be a lot of fun.
+
+16
+00:00:45,230 --> 00:00:48,593
+是啊，我觉得你基本上活跃在所有平台，YouTube、X
+Yeah, you know, I feel like you're pretty much on all the platforms, YouTube X,
+
+17
+00:00:48,593 --> 00:00:49,990
+Instagram 等等
+Instagram and so on and so forth.
+
+18
+00:00:50,350 --> 00:00:53,190
+你能从大方向讲讲你的业务吗
+Like, can you talk about your business at a high level?
+
+19
+00:00:53,230 --> 00:00:57,190
+以及你大致是怎么用 AI 工具来做出这些内容的
+And how do you use AI tools at a high level to kind of like create all this content?
+
+20
+00:00:57,750 --> 00:01:01,537
+好的，我个人做的所有事情，核心就是
+Yeah, so at the center of everything that I do personally,
+
+21
+00:01:01,537 --> 00:01:03,510
+我喜欢教大家 AI
+I like to educate people on AI.
+
+22
+00:01:03,910 --> 00:01:05,350
+这件事我已经做了三年
+And I've been doing this for the past three years.
+
+23
+00:01:05,390 --> 00:01:07,451
+我就是这样积累到差不多
+That's how I've gained almost one,
+
+24
+00:01:07,451 --> 00:01:12,070
+我在所有平台加起来快到 170 万粉丝了
+I'm almost at like 1.7 million followers across all the different platforms.
+
+25
+00:01:12,670 --> 00:01:15,938
+当然，我们也发布了几款产品
+And obviously, like we've released a couple products,
+
+26
+00:01:15,938 --> 00:01:18,070
+包括 Vibe Code，还有现在的 Chorus
+including Vibe Code and now Chorus.
+
+27
+00:01:18,790 --> 00:01:21,263
+我们还做了很多咨询
+And then we're also doing a lot of like consulting,
+
+28
+00:01:21,263 --> 00:01:24,030
+帮公司在业务里落地 agents
+helping companies implement agents in their business.
+
+29
+00:01:24,630 --> 00:01:30,226
+过去三个月和大家交流特别有意思，看到
+And it's just been so fun over the past three months talking to people, seeing how,
+
+30
+00:01:30,226 --> 00:01:33,600
+大家怎么在业务里用 AI agents
+um, people are using AI agents in their business.
+
+31
+00:01:33,640 --> 00:01:37,320
+你了解我，我是内容创作者，这就是我的职业
+And you know me, I'm a content creator. That's like my profession.
+
+32
+00:01:37,360 --> 00:01:40,646
+我几乎在每个环节都用它，呃
+And I use it for almost every part of, uh,
+
+33
+00:01:40,646 --> 00:01:44,928
+用在我的内容生意里，只有真正
+of my content business except for like all I really,
+
+34
+00:01:44,928 --> 00:01:50,903
+我确实觉得很多视频剪辑还是要靠人，我雇了很多视频剪辑
+really do think a lot of the video editing and I hire a lot of video editors
+
+35
+00:01:50,903 --> 00:01:53,890
+视频剪辑（用 AI）还没到位
+and I video editing isn't there yet.
+
+36
+00:01:53,890 --> 00:01:59,082
+但像所有的选题构思、规划、想出好的 hook
+But like for all of the ideation, planning, coming up with good hooks, um,
+
+37
+00:01:59,082 --> 00:02:04,530
+YouTube 缩略图，我做的所有研究都是基于 YouTube 的
+YouTube thumbnails, um, doing all of my research is all grounded in YouTube.
+
+38
+00:02:04,610 --> 00:02:06,619
+所以我有一个 YouTube researcher 的 Skill
+So I have, like, a YouTube researcher skill
+
+39
+00:02:06,619 --> 00:02:09,130
+每当我让它做研究时，我的 agent 就会用它
+that my agent will use whenever I ask it to do research.
+
+40
+00:02:09,770 --> 00:02:13,084
+呃，所以我有一大堆的 Skill
+Um, and so like, I have a list of a ton of a ton of skills
+
+41
+00:02:13,084 --> 00:02:17,400
+用 agents 让规模化做内容变得容易很多
+that just make creating content at scale a lot easier using agents.
+
+42
+00:02:18,080 --> 00:02:18,360
+明白了
+Got it.
+
+43
+00:02:18,400 --> 00:02:20,504
+所以 YouTube 算是你内容的中心
+So, so YouTube's kind of like the hub of your content
+
+44
+00:02:20,504 --> 00:02:22,069
+然后其他所有平台
+and then like all the other platforms,
+
+45
+00:02:22,069 --> 00:02:24,760
+你会做一些切片、发社媒帖子等等
+you kind of make clips and share social posts and so on and so forth.
+
+46
+00:02:24,840 --> 00:02:28,028
+呃，我在 Instagram 和 TikTok 上会做专门的内容
+Um, I make, I make dedicated content on Instagram and TikTok.
+
+47
+00:02:28,028 --> 00:02:29,840
+我其实就是从那里起步的
+That's actually how I got my start.
+
+48
+00:02:30,360 --> 00:02:32,152
+我只是更喜欢长内容
+I just prefer longer form content
+
+49
+00:02:32,152 --> 00:02:35,800
+我觉得 Twitter 也是发长内容的好地方
+and I think Twitter's a great place to post long form content as well.
+
+50
+00:02:35,920 --> 00:02:39,200
+我的长内容在 Twitter 上的表现和在 YouTube 上一样好
+My, my long form content does as well on Twitter as it does on YouTube.
+
+51
+00:02:39,790 --> 00:02:43,750
+呃，所以是的，我会针对每个平台做原生内容
+Um, and so, yeah, I'm like making content native to all the different platforms.
+
+52
+00:02:44,230 --> 00:02:45,990
+呃，切片其实是一件
+Uh, clipping is actually one thing.
+
+53
+00:02:46,070 --> 00:02:48,164
+我才刚开始上手的事，尤其是结合 AI
+I'm just now getting into, especially with AI,
+
+54
+00:02:48,164 --> 00:02:50,150
+不过这个我们可以等会再聊
+but we can talk about that a little bit later.
+
+55
+00:02:50,870 --> 00:02:53,353
+好，那你能不能实际给我们演示一下
+Okay, so, so can you actually show us how you do,
+
+56
+00:02:53,353 --> 00:02:55,390
+也许从头到尾演示一遍你是怎么做的
+maybe show us how you do this end to end?
+
+57
+00:02:55,510 --> 00:02:56,937
+呃，你不用真的做出内容
+Uh, you don't have to make the content,
+
+58
+00:02:56,937 --> 00:02:59,390
+但我很想看看你有哪些 Skill 和工作流
+but like I would love to see the skills and workflows that you have.
+
+59
+00:03:00,000 --> 00:03:00,520
+当然可以
+Absolutely.
+
+60
+00:03:01,160 --> 00:03:07,691
+我想我先从这里讲起，就是我是怎么看待 Codex 的
+And I guess, I guess what I'll start with here is kind of how I think about Codex in
+
+61
+00:03:07,691 --> 00:03:10,560
+以及像 Codex 这样的平台
+general and platforms like Codex.
+
+62
+00:03:11,240 --> 00:03:15,032
+现在我们打开了 Codex。通常你打开 Codex 时
+So right here, we have Codex open. Normally when you come to Codex,
+
+63
+00:03:15,032 --> 00:03:16,480
+它长这样，对吧
+it looks like this right?
+
+64
+00:03:16,480 --> 00:03:19,396
+它看起来像 ChatGPT，但当你用 ChatGPT 时
+It looks like ChatGPT, but when you go to ChatGPT,
+
+65
+00:03:19,396 --> 00:03:23,166
+你上传的所有东西，比如你上传一张图片
+everything that you upload to it, if you were to upload an image,
+
+66
+00:03:23,166 --> 00:03:26,580
+很多人都这么做过，上传图片、PDF 之类的
+many people have done that, uploaded images or pdfs, etc.
+
+67
+00:03:26,700 --> 00:03:30,740
+这些全都存在云端。而用 Codex 时，所有东西都存在本地
+All of that's stored in the cloud. When you use Codex, all of it's stored locally.
+
+68
+00:03:30,860 --> 00:03:35,100
+所以 Codex 和 Claude Code 一样，可以完全控制你的电脑
+And so Codex, just like Claude Code, can fully control your computer.
+
+69
+00:03:35,580 --> 00:03:40,260
+事实上，它内置了一个 computer use skill
+And in fact, it has a computer use skill built into the platform.
+
+70
+00:03:40,340 --> 00:03:44,790
+它真的能替你操作电脑，这非常酷
+It can actually control, um, your computer for you, which is really cool.
+
+71
+00:03:45,270 --> 00:03:49,517
+我做视频时有个特别有用的用法，如果你看过我的视频
+And one really useful thing that I do for my videos, if you watch my videos,
+
+72
+00:03:49,517 --> 00:03:53,833
+你会看到开头有那种很高质量的动画
+you'll see at the beginning there has like really high quality animations
+
+73
+00:03:53,833 --> 00:03:57,940
+我做这些的方式，就是用这个 Remotion 插件来规划
+and the way I do all of my planning for this is I use this Remotion plugin.
+
+74
+00:03:57,940 --> 00:03:59,750
+这个 Remotion 插件
+And so this Remotion plugin, I.
+
+75
+00:03:59,750 --> 00:04:01,110
+我这里正好开着它
+Actually have it open right here.
+
+76
+00:04:01,630 --> 00:04:05,709
+这是我数据最好的一期 Codex 视频之一。这是开头那一帧
+This was one of my best performing videos on Codex. This was the opening frame.
+
+77
+00:04:05,749 --> 00:04:08,597
+就是我在说，今天我们来聊 Codex
+It was me saying, like, today we're talking about Codex
+
+78
+00:04:08,597 --> 00:04:10,949
+以及它能做的各种事情
+and all of the different things that it can do.
+
+79
+00:04:11,429 --> 00:04:14,429
+这里这张图，呃，你能看到吗
+This graphic right here, um, can you see it?
+
+80
+00:04:14,989 --> 00:04:15,269
+能
+Yeah.
+
+81
+00:04:15,869 --> 00:04:20,421
+好，这里这张图就是我刚生成的一张图
+Yeah. So this graphic right here is a graphic that I just generated.
+
+82
+00:04:20,421 --> 00:04:23,429
+你可以很轻松地把这张图导出
+And you can very easily export this graphic.
+
+83
+00:04:23,509 --> 00:04:26,710
+然后我剪辑时就把它叠在视频上面
+And then I just placed it on top of my video when editing it.
+
+84
+00:04:26,990 --> 00:04:31,190
+你要做的就是……这个其实不是我自己写的 Skill
+And all you need to do to do this is you can, this is just, this isn't my skill.
+
+85
+00:04:31,310 --> 00:04:36,002
+这是 Codex 内置的一个插件，每当我想用它时
+This is a built in plug in into Codex and whenever I want to use it,
+
+86
+00:04:36,002 --> 00:04:37,950
+我直接调用我的 Remotion 就行
+I can just use my Remotion.
+
+87
+00:04:39,110 --> 00:04:42,427
+我还有一个 Remotion best practices 的 Skill
+I also have a Remotion best practices skill,
+
+88
+00:04:42,427 --> 00:04:46,910
+它把我作为创作者的品牌风格融进去了
+which is it has like my creator brand kind of infused into it.
+
+89
+00:04:46,950 --> 00:04:51,440
+所以它生成的东西都会带有我自己的风格，你懂我意思吧
+So whatever it generates will be in my own, like, style, if that makes sense.
+
+90
+00:04:52,080 --> 00:04:54,440
+对，配色之类的。对，配色这些
+Yeah, colors and stuff. Yeah, the colors and stuff.
+
+91
+00:04:54,440 --> 00:04:59,320
+基本上我就是这样用它来做这些小图的
+And so that's basically how I use it for creating these little graphics.
+
+92
+00:04:59,960 --> 00:05:03,761
+所以要做这张图，你只要这样提示它，比如：嘿，slash Remotion
+So to make this graphic, you just prompt it like, hey, slash Remotion,
+
+93
+00:05:03,761 --> 00:05:05,596
+做这个流程图，加上 Codex logo
+make this flowchart, Codex logo,
+
+94
+00:05:05,596 --> 00:05:09,922
+那你需要自己提供素材，还是它会自己去找
+and then do you have to provide the assets or it just goes off and finds the stuff?
+
+95
+00:05:09,922 --> 00:05:11,560
+这又是另一件事
+So this is another thing that.
+
+96
+00:05:12,370 --> 00:05:15,530
+呃，我设置好的。我有一个 Skill
+Um, I've set up. So I have a skill.
+
+97
+00:05:15,690 --> 00:05:24,290
+我记得它叫，呃，image pull，呃，internet image puller
+I actually, I think it's called, um, image pull, um, internet image puller.
+
+98
+00:05:24,410 --> 00:05:28,410
+就是它。这个 internet image puller 会自己去跑
+There it is. So this internet image puller is one where it'll go off.
+
+99
+00:05:28,450 --> 00:05:31,170
+它实际上会用一个叫 SERP API 的东西
+It'll actually use something called the SERP API.
+
+100
+00:05:31,810 --> 00:05:35,284
+呃，它在 SERP API 里用的是 Google Images
+Um, and so it's, it uses Google Images within the SERP API
+
+101
+00:05:35,284 --> 00:05:39,940
+它会去找跟这期视频相关的 logo
+and it'll actually find the relevant logos related to whatever video it is.
+
+102
+00:05:39,980 --> 00:05:42,487
+所以如果我说，嘿，我这段需要一些 B-roll
+So if I say, hey, I need some B roll for this,
+
+103
+00:05:42,487 --> 00:05:45,781
+它会自动看这个视频的文字稿
+it'll automatically look at my transcript of the video
+
+104
+00:05:45,781 --> 00:05:50,580
+就是它要做 B-roll 的那个视频，然后找到 logo 并直接拉下来
+that it's creating B roll for and it will find the logos and it will just pull them.
+
+105
+00:05:50,820 --> 00:05:53,540
+而且一个 prompt 里你可以用多个 Skill。所以我……
+And you can use multiple skills for a prompt. So I.
+
+106
+00:05:53,740 --> 00:05:57,300
+我大概会这样说，呃，请，呃
+So I would probably say something like, uh, please, uh,
+
+107
+00:05:57,300 --> 00:05:59,853
+拉取相关的 logo，然后做一个
+pull the relevant logos and then make a,
+
+108
+00:05:59,853 --> 00:06:03,800
+做一张图，然后我就用那个 Remotion 的 Skill
+a graphic for this and then I would just use the Remotion skill
+
+109
+00:06:03,800 --> 00:06:07,979
+我把它叫做 Remotion best practices，它就会直接生成
+which I call Remotion best practices and it will just generate it
+
+110
+00:06:07,979 --> 00:06:10,300
+并且会拉取相关的 logo
+and it will pull the relevant logos.
+
+111
+00:06:11,260 --> 00:06:13,500
+不过你也可以手动把它们放进去
+But you can manually just drop them in as well.
+
+112
+00:06:14,300 --> 00:06:17,944
+好，所以你基本上是把多个 Skill 串起来用，对吧？是这种感觉吗
+Okay. So you're basically chaining multiple skills together, right? Is that kind of.
+
+113
+00:06:17,944 --> 00:06:19,260
+对，可以这么说
+Yes, I guess you could say that.
+
+114
+00:06:20,220 --> 00:06:23,300
+本期节目由 Google AI Studio 赞助播出
+This episode is brought to you by Google AI Studio,
+
+115
+00:06:23,300 --> 00:06:27,700
+它是把你的想法做出来并分享给真实用户最简单、最快的方式
+the easiest and fastest way to build and share your idea with real users.
+
+116
+00:06:28,780 --> 00:06:34,198
+比如，我用 AI Studio 为这家面包店做了三个不同的落地页
+For example, I use AI Studio to create three different landing pages for this bakery
+
+117
+00:06:34,198 --> 00:06:38,300
+用的是 Google 内置的 Nano Banana 模型生成的图片
+using images generated by Google's built in Nano Banana model.
+
+118
+00:06:38,620 --> 00:06:42,188
+一个主打新鲜面包，另一个主打好吃的蛋糕
+One highlights fresh bread, another highlights awesome cakes,
+
+119
+00:06:42,188 --> 00:06:44,500
+最后一个主打这家面包店的故事
+and the last highlights the bakery story.
+
+120
+00:06:44,900 --> 00:06:48,971
+我可以很轻松地把网站发布出去，并拿到一个自定义 URL，在这个例子里
+I can publish the website easily and get a custom URL, in this case,
+
+121
+00:06:48,971 --> 00:06:54,300
+Corgi Confections AI Studio，把这三个版本一键分享给潜在客户
+Corgi Confections AI Studio, to share all three variations with potential customers
+
+122
+00:06:54,300 --> 00:06:55,780
+一键收集反馈
+for feedback in one tap.
+
+123
+00:06:56,300 --> 00:07:00,341
+我做产品经理的时候，Google AI Studio 就是我搭建
+When I was a product manager, Google AI Studio was my go to tool for building
+
+124
+00:07:00,341 --> 00:07:01,580
+这类原型的首选工具
+prototypes like this.
+
+125
+00:07:02,040 --> 00:07:06,624
+它确实是一种简单又免费的方式，把你的想法分享给团队
+And it really is an easy and free way to share your ideas with your team,
+
+126
+00:07:06,624 --> 00:07:08,600
+客户和其他所有人
+customers and everyone else.
+
+127
+00:07:09,120 --> 00:07:13,400
+去 aistudio.google.com 看看吧。现在回到我们的节目
+Check it out at aistudio.google.com. Now back to our episode.
+
+128
+00:07:14,200 --> 00:07:15,556
+其实我们从头开始吧
+Let's go to the beginning actually.
+
+129
+00:07:15,556 --> 00:07:18,720
+我们现在其实还在给你下一个视频头脑风暴选题
+Like we're actually still brainstorming ideas for the video that you can make next.
+
+130
+00:07:18,880 --> 00:07:22,360
+你是要做竞品分析，还是看看大家都在聊什么之类的
+Do you like a competitive analysis or some sort of, what are people talking about?
+
+131
+00:07:22,680 --> 00:07:22,960
+用 Skill 吗
+Skill?
+
+132
+00:07:23,720 --> 00:07:26,024
+对。我喜欢做的一件事是
+Yeah. So yeah, one thing that I like to do,
+
+133
+00:07:26,024 --> 00:07:29,480
+我最喜欢的 Skill 就是这个 YouTube researcher skill
+so I have my favorite skill is this YouTube researcher skill.
+
+134
+00:07:29,520 --> 00:07:30,680
+如果你想设置这个的话
+If you wanna set this up.
+
+135
+00:07:31,560 --> 00:07:34,927
+我网站上也放了我做的很多 Skill 的链接
+And I also like have a link to a lot of the skills that I've created on my website
+
+136
+00:07:34,927 --> 00:07:36,400
+如果你们想看看的话
+if you guys want to check that out.
+
+137
+00:07:36,440 --> 00:07:38,040
+是免费的，我不收费
+It's free. I don't charge for that.
+
+138
+00:07:39,560 --> 00:07:43,200
+它用到一个叫 Supadata 的东西，是我最喜欢的 API 之一
+But it uses this thing called Supadata, which is one of my favorite APIs.
+
+139
+00:07:43,640 --> 00:07:47,689
+它能让你拉取你视频的完整 transcript
+It allows you to like pull the full transcript from your videos,
+
+140
+00:07:47,689 --> 00:07:50,440
+任何 YouTube 视频，差不多一秒钟就能搞定
+from any YouTube video, like in one second.
+
+141
+00:07:50,520 --> 00:07:53,630
+所以我想的话可以爬取一整个频道
+So I can scrape an entire channel if I wanted to.
+
+142
+00:07:53,630 --> 00:07:56,245
+我可以直接说，比如 YouTube researcher
+I could just say, like, YouTube researcher,
+
+143
+00:07:56,245 --> 00:08:00,344
+做一个 Peter Yang bot 或者 Skill，它能爬取你所有的视频
+create a Peter Yang bot and or skill and it can scrape all of your videos
+
+144
+00:08:00,344 --> 00:08:03,030
+然后能模仿你的风格之类的
+and it can act like you or something like that.
+
+145
+00:08:03,790 --> 00:08:05,550
+所以这就是我的 YouTube researcher skill
+And so this is my YouTube researcher skill.
+
+146
+00:08:05,830 --> 00:08:09,186
+而且我做内容的时候，通常来说
+And oftentimes when I use, for me, when I create content,
+
+147
+00:08:09,186 --> 00:08:11,328
+开头是最重要的部分
+the intro is the most important part
+
+148
+00:08:11,328 --> 00:08:14,470
+之后视频的其余部分就比较随意展开
+and then the rest of the video is kind of free flowing.
+
+149
+00:08:14,750 --> 00:08:19,092
+我天生就比较擅长讲解怎么做事情，一旦进入视频
+I naturally good at kind of explaining how to do things once the video,
+
+150
+00:08:19,092 --> 00:08:22,760
+一旦我进到视频里就没问题，但开头真的很重要
+once I'm into the video, but the intro is really important.
+
+151
+00:08:22,840 --> 00:08:25,320
+所以我还有一个 prompt 叫 Hook Outline
+So another prompt that I have is called a Hook Outline.
+
+152
+00:08:25,880 --> 00:08:30,160
+Hook Outline 会给我生成一种非常特定格式的文档
+So Hook Outline will create a very specific type of document for me.
+
+153
+00:08:30,240 --> 00:08:39,341
+我会说，比如，请看看 Alex Hormozi 最新的视频
+And so I'm going to say, like, please look at the latest Alex Hormozi video
+
+154
+00:08:39,341 --> 00:08:43,220
+然后给它写一个 hook outline
+and write a hook outline for it.
+
+155
+00:08:43,300 --> 00:08:45,897
+每当我找到一个不错的 YouTube 视频，我，我
+And like, whenever I find a good YouTube video, I, I,
+
+156
+00:08:45,897 --> 00:08:49,580
+你可以把它浓缩成一个 hook，梳理出开头是什么，然后是什么
+you can condense it down to a hook, outline what is the intro and then what?
+
+157
+00:08:49,740 --> 00:08:51,460
+然后再梳理出视频剩下的部分
+And then just outline the rest of the video.
+
+158
+00:08:51,940 --> 00:08:54,078
+它能做的就是让你，比如
+And what it'll do is it'll allow you to, like,
+
+159
+00:08:54,078 --> 00:08:57,140
+你可以把这个格式原样套用到另一个视频上
+you can take that exact format and apply it to a different video.
+
+160
+00:08:57,580 --> 00:09:02,122
+我经常这么做，就是根据别人一个
+And so that's what I do a lot, is I'll create a hook outline based on someone else's
+
+161
+00:09:02,122 --> 00:09:06,664
+表现很好的视频做一个 hook outline，然后让 AI 把我对新视频的所有想法
+really well performing video and then I'll tell AI to take all of my ideas for a new
+
+162
+00:09:06,664 --> 00:09:10,595
+转换成那种结构，如果你懂我意思的话
+video and convert it into that, like, structure, if that makes sense.
+
+163
+00:09:10,595 --> 00:09:11,680
+你跟上了吗
+Are you following?
+
+164
+00:09:12,400 --> 00:09:13,200
+呃，我没跟上
+Yeah, I'm not following.
+
+165
+00:09:13,280 --> 00:09:15,864
+对，我一直在用 yt-dlp，但你是说这个
+Yeah, so I I've been using yt-dlp, but you're saying that this,
+
+166
+00:09:15,864 --> 00:09:18,600
+这另一个东西能一秒钟就把 transcript 拉出来
+this other thing can like just pull the transcript in one second.
+
+167
+00:09:19,400 --> 00:09:23,080
+对，它就是，就像 yt-dlp 一样，就是一个快速的 API 调用
+Yeah, I mean, it's just, it's just like a quick API call like yt-dlp.
+
+168
+00:09:23,240 --> 00:09:25,581
+如果，如果我没记错的话
+If, if I'm, if you, if I'm not mistaken,
+
+169
+00:09:25,581 --> 00:09:29,240
+yt-dlp 会下载整个视频然后再提取 transcript
+it'll download the full video and then pull the transcript.
+
+170
+00:09:29,880 --> 00:09:32,200
+那样很耗资源，Supadata 不用这样
+That is Supadata intensive.
+
+171
+00:09:33,320 --> 00:09:38,040
+而且，对，Supadata 就直接，你可以说启动 sub agents
+And it's. Yeah, Supadata will just, you know, you can say spin up sub agents.
+
+172
+00:09:38,120 --> 00:09:42,240
+这是你能用 Codex 做的一件事。而且他们的 UI 很酷
+That's one thing you can do with Codex. And they have a really cool UI.
+
+173
+00:09:42,400 --> 00:09:46,219
+你可以直接让它用 sub agents，它就会，它能
+You can just ask it to use sub agents and it'll just, it can like,
+
+174
+00:09:46,219 --> 00:09:48,716
+它会拆分成大概六个 agents
+it'll like split off into like six agents
+
+175
+00:09:48,716 --> 00:09:51,360
+然后大概 30 秒就全部爬完
+and it will scrape it all in like 30 seconds.
+
+176
+00:09:51,800 --> 00:09:54,280
+你能在大概 30 秒内爬完一整个频道
+You can scrape an entire channel in like 30 seconds.
+
+177
+00:09:55,960 --> 00:09:56,320
+懂了
+Got it.
+
+178
+00:09:57,120 --> 00:10:00,520
+我不是在鼓励你这么做，但它做研究真的很好用
+I'm not promoting that you do this, but it is really good for, for research.
+
+179
+00:10:00,880 --> 00:10:04,400
+对，我是说，事实就是前 30 秒如果很无聊
+So, yeah, I mean, it is a fact that the first 30 seconds it is boring.
+
+180
+00:10:04,480 --> 00:10:08,223
+观众就会划走，对吧？所以基本上你不要做那种完整的旁白讲解
+People will check out, right? So basically you don't do like a full voice over guide
+
+181
+00:10:08,223 --> 00:10:09,200
+当你做视频的时候
+when you make a video.
+
+182
+00:10:09,240 --> 00:10:10,833
+你只要有一个，你有一个开场
+You just have a, you have the intro,
+
+183
+00:10:10,833 --> 00:10:13,470
+把它写成脚本，然后剩下的部分只做一个大纲
+script it out and then you have like a outline for the rest.
+
+184
+00:10:14,350 --> 00:10:14,910
+对，没错
+Yes, exactly.
+
+185
+00:10:14,950 --> 00:10:18,967
+是啊，我是说，为什么大家……我觉得有了 AI
+Yeah, I mean, like, I mean, why do people, I think with the with AI,
+
+186
+00:10:18,967 --> 00:10:23,950
+全脚本的视频会，呃，它们的价值会下降
+the fully scripted videos are going to get, uh, they're going to go down in value.
+
+187
+00:10:24,110 --> 00:10:28,837
+我觉得随着 AI 发展，价值会上升的是，呃，其实是你
+I think what will go up in value over time with AI is, um, is you actually,
+
+188
+00:10:28,837 --> 00:10:30,680
+你得抓住观众
+you have to hook the viewer.
+
+189
+00:10:30,760 --> 00:10:32,419
+你在某种程度上得遵守这套游戏规则
+You have to play the game to some degree,
+
+190
+00:10:32,419 --> 00:10:34,882
+但你也想练好怎么去讲那件
+but you also just want to get good at talking about the thing
+
+191
+00:10:34,882 --> 00:10:36,440
+你特别有热情的事
+that you're super passionate about.
+
+192
+00:10:36,520 --> 00:10:39,560
+所以这就是我喜欢做的。我喜欢展现人性化的一面
+And so that's what I like to do. I like to show the human side.
+
+193
+00:10:39,560 --> 00:10:41,840
+而请嘉宾就是一个特别好的方式
+And then having guests on is like a really good way to do it.
+
+194
+00:10:41,840 --> 00:10:43,672
+就像你的播客，你有一个结构化的开场
+Like your podcast, you have a structured intro
+
+195
+00:10:43,672 --> 00:10:45,880
+然后剩下的时间你就跟别人聊天
+and then you just talk to someone for the rest of the time.
+
+196
+00:10:45,880 --> 00:10:48,480
+这也是我觉得大家来看的原因
+And that's I that's why I think people are here.
+
+197
+00:10:48,680 --> 00:10:50,760
+你可以看到这里，这是一个非常具体的
+And so you can see here, this is a very specific.
+
+198
+00:10:51,690 --> 00:10:53,010
+呃，格式
+Um, format.
+
+199
+00:10:53,650 --> 00:10:54,650
+呃，是的
+Um, yeah.
+
+200
+00:10:54,890 --> 00:10:58,080
+关于 Codex 有一点特别烦人
+And one thing that's really annoying about Codex
+
+201
+00:10:58,080 --> 00:11:01,503
+也是我一直在从它转走的原因之一
+and one of the reasons why I've been moving off of it is
+
+202
+00:11:01,503 --> 00:11:04,770
+就是 GPT 模型不肯拉取字幕文稿
+because the GPT models won't pull the transcript.
+
+203
+00:11:05,010 --> 00:11:10,631
+你可以看到这里它把他的开场总结了一下，它这么做的原因是
+You can see here that it summarized his intro and I'm the reason it did that is,
+
+204
+00:11:10,631 --> 00:11:13,530
+是因为版权侵权的问题
+is because of copyright infringement.
+
+205
+00:11:14,090 --> 00:11:17,570
+呃，它不想做因为它不会。对，它就是不会
+Um, it didn't want to because it doesn't. Yeah, it, it doesn't.
+
+206
+00:11:17,610 --> 00:11:19,997
+但 Claude 的模型会毫不犹豫地做
+But Claude's models will do it without thinking.
+
+207
+00:11:19,997 --> 00:11:22,210
+所以这就是我一直用 Claude 来做这件事的原因
+So that's why I've been using Claude for this.
+
+208
+00:11:22,210 --> 00:11:24,290
+哦，有意思的用例。是啊，有意思
+Oh, interesting use case. Yeah, interesting.
+
+209
+00:11:24,370 --> 00:11:27,844
+呃，有意思的是，Claude 其实比 GPT 更开放，通常都是
+Um, that's funny that, that, that Claude is actually more open than GPT uses is the
+
+210
+00:11:27,844 --> 00:11:28,610
+反过来的
+other way around.
+
+211
+00:11:28,770 --> 00:11:31,568
+所以这要看情况。这取决于任务。呃，是的
+So it's depend. It's it's task dependent. Um, yeah,
+
+212
+00:11:31,568 --> 00:11:33,650
+那些开源模型也不在乎
+the open models are don't care either.
+
+213
+00:11:33,690 --> 00:11:37,780
+比如 GLM 4.5 随时都会做。那我们来聊聊 hook 吧
+Like GLM 4.5 will do it anytime. So let's talk about the hook a little bit.
+
+214
+00:11:37,780 --> 00:11:42,338
+我其实看了几个别的 Codex 视频，我挺喜欢它们，就是
+I actually watch a couple other Codex videos, and I actually like how they're, like,
+
+215
+00:11:42,338 --> 00:11:43,380
+更偏教学
+more educational.
+
+216
+00:11:43,380 --> 00:11:46,781
+连 hook 都是那种「这期视频我要讲什么」，而不是
+Even the hook is like, here's what I'm gonna cover in this video as opposed to,
+
+217
+00:11:46,781 --> 00:11:49,863
+你懂的，「Codex 是最他妈牛的」，那种超级、超级
+you know, Codex is like the most freaking amazing, like super, super,
+
+218
+00:11:49,863 --> 00:11:50,660
+超级炒作的东西
+super hype stuff.
+
+219
+00:11:50,780 --> 00:11:54,025
+所以这算是一种选择吗？是啊，我感觉你有更多
+So is, is that like a choice or? Yeah, I kind of feel like you have more,
+
+220
+00:11:54,025 --> 00:11:55,220
+你有更多干货
+you have more substance.
+
+221
+00:11:55,780 --> 00:11:59,087
+是啊，我是说，我做视频的时候，我会尽量
+Yeah, I mean, I, I try when I make videos,
+
+222
+00:11:59,087 --> 00:12:04,800
+我会尽量让它是关于主题，而不是关于某个具体工具，对吧
+I try to make it about the topic rather than any specific tool, right?
+
+223
+00:12:04,920 --> 00:12:08,642
+我总是喜欢讲清楚，就算有人用的是 Claude Code
+I think that I always like to make it clear that even if someone uses Claude code,
+
+224
+00:12:08,642 --> 00:12:10,560
+他们也能从这期视频里得到价值
+they're gonna get value out of the video.
+
+225
+00:12:10,600 --> 00:12:13,707
+所以我做过的最好的一期 Codex 视频，拿到了 30 万播放量
+And so the my best video that I did on Codex, which got 300,000 views,
+
+226
+00:12:13,707 --> 00:12:15,760
+我觉得就是你说的那期
+which I think is the one you're referring to.
+
+227
+00:12:16,280 --> 00:12:20,600
+呃，那期就是「9 种使用 Codex 的方法」
+Um, that was like the 9, like 9 ways to use Codex.
+
+228
+00:12:20,760 --> 00:12:24,480
+但我在开头就讲清楚了，顺便说一句，这些你都可以在，呃
+But I made it clear in the beginning, by the way, you can do all of this in, uh,
+
+229
+00:12:24,480 --> 00:12:25,680
+Claude Desktop 里做
+Claude Desktop as well.
+
+230
+00:12:25,760 --> 00:12:28,040
+你在 Claude Code 里做的大部分事情也一样能行
+Most of the things you can do in Claude co work as well.
+
+231
+00:12:28,400 --> 00:12:32,934
+我喜欢聚焦在他们能从视频里得到的具体成果上
+And I like to focus on like the specific outcomes that they'll get from the video,
+
+232
+00:12:32,934 --> 00:12:36,520
+呃，我觉得这些在开场里点明真的很有用
+um, which I think are, is really useful to establish in an intro.
+
+233
+00:12:36,920 --> 00:12:38,977
+所以，好吧，如果你有一些建议，你懂的
+So, okay, so if you have some tips about, you know,
+
+234
+00:12:38,977 --> 00:12:40,431
+给像我这样的 YouTube 新手
+for like newbie Youtubers like me,
+
+235
+00:12:40,431 --> 00:12:43,240
+先讲成果，然后再进入正文内容，对吧
+talk about the outcomes first and then get into the content, right?
+
+236
+00:12:43,400 --> 00:12:45,943
+是这样吗？是的，讲成果。其实，我会
+Is that kind of. Yeah, talk about the outcome. In fact, I would.
+
+237
+00:12:45,943 --> 00:12:46,970
+我不知道你会不会
+I don't know if you would.
+
+238
+00:12:47,010 --> 00:12:50,010
+我们已经拍开场了吗，还是你会单独拍一个开场
+Did we film the intro already or do you do a separate intro?
+
+239
+00:12:51,010 --> 00:12:52,170
+你会单独拍一个开场吗
+Are you gonna film a separate intro?
+
+240
+00:12:52,890 --> 00:12:56,290
+我通常会从我们对话里最精彩的部分剪出一个单独的开场
+I usually cut a separate intro from the best parts of our conversation.
+
+241
+00:12:57,290 --> 00:13:00,490
+对，好的，我就是这么做的。嗯，好，这说得通
+Yeah, okay. That's what I do. Yeah. Okay. That makes sense.
+
+242
+00:13:00,610 --> 00:13:02,957
+那你会不会再做一个小小的开场，说一句
+And then do you do like another little intro where you say,
+
+243
+00:13:02,957 --> 00:13:04,521
+比如今天你要学到这个
+like today you're gonna be learn this,
+
+244
+00:13:04,521 --> 00:13:07,210
+这个和这个，还是直接进入正片
+this and this or do you just kind of like go straight into the video?
+
+245
+00:13:07,570 --> 00:13:10,716
+我介绍你的时候，那其实就是我的开场，就是说好
+When I was introducing you, like that was kind of my intro, like, okay,
+
+246
+00:13:10,716 --> 00:13:13,970
+聊聊你怎么用它来运营你的创作者生意之类的
+talk about how you're gonna use it to run your creator business and so on.
+
+247
+00:13:14,410 --> 00:13:18,370
+对，我是说，如果我是你，我会去做测试
+Yeah, I mean, for me, if I were you, if I were you, I would be doing testing.
+
+248
+00:13:18,490 --> 00:13:20,575
+显然你会想请到很好的嘉宾
+Like obviously you want to get really good guests
+
+249
+00:13:20,575 --> 00:13:23,780
+在某些领域真的很懂行，这也是
+that are really knowledgeable on certain things and that that's something
+
+250
+00:13:23,780 --> 00:13:26,170
+你可以、而且大概已经在努力提升的地方
+that you can and probably already are trying to improve.
+
+251
+00:13:26,290 --> 00:13:31,250
+但我会去测试不同的开场类型，直到找到最有效的那种格式
+But I would just test different intro types until you find the winning format.
+
+252
+00:13:31,570 --> 00:13:36,858
+你会发现一个好的，嗯，你懂的，有一个、有一个
+You will find that a good, um, you know, uh, there's a, there's a,
+
+253
+00:13:36,858 --> 00:13:40,650
+其实有一个很好用的缩写
+there's actually a really good, um, acronym.
+
+254
+00:13:41,370 --> 00:13:50,090
+它叫 BRENS，就是 big、relatable、easy，我看看，放大一下
+Uh, it's called B R E N s. Which is big, uh, relatable, um, easy, let me see, zoom in here.
+
+255
+00:13:50,420 --> 00:13:54,740
+easy，嗯，然后是 new 和 safe
+Easy say, uh, BR, uh, new and safe.
+
+256
+00:13:55,340 --> 00:13:58,060
+你在开场里能包含的这些要素越多越好，对吧
+The more of these you can include in your intro, the better, right?
+
+257
+00:13:58,180 --> 00:14:01,580
+Big，比如有个全新模型刚发布，是世界上最强的
+Big, like there's a brand new model that just came out. It's the best in the world.
+
+258
+00:14:01,700 --> 00:14:05,285
+把它做大，relatable 就是你找到某个共鸣点。比如你说
+Make it big, relatable, is you find some theme. So like you say,
+
+259
+00:14:05,285 --> 00:14:06,940
+有这么一个新模型
+like there's this new model.
+
+260
+00:14:07,300 --> 00:14:08,260
+简直太夸张了
+It's absolutely insane.
+
+261
+00:14:08,380 --> 00:14:12,280
+刚刚发布，它会影响到每个人，或者会进入每一个
+It just came out and it's going to affect everyone or it's going to go into every
+
+262
+00:14:12,280 --> 00:14:13,180
+行业，对吧
+business, right?
+
+263
+00:14:13,220 --> 00:14:13,820
+这就是 relatable
+That's relatable.
+
+264
+00:14:14,210 --> 00:14:18,355
+easy 就像是，顺便说一句，我有一个六步方法你可以照着做
+Uh, easy is like, and by the way I have a 6 step method that you can follow
+
+265
+00:14:18,355 --> 00:14:22,356
+保证你会成功，对吧，就是当你
+that will guarantee that you will be success right you like when you
+
+266
+00:14:22,356 --> 00:14:27,930
+当你引入某种方法论，或者说这里有九个技巧你可以
+when you introduce some sort of like methodology or like here are these nine tips that you can.
+
+267
+00:14:28,170 --> 00:14:32,290
+照着做，这就保证了 easy。new，显然大家都喜欢新东西
+Follow that will guarantee easy. Uh, new. Obviously people like things that are new.
+
+268
+00:14:32,330 --> 00:14:36,222
+所以你可以，你懂的，这个全新模型既是 big 又是 new
+So like you could, you know, this brand new model also is big and new
+
+269
+00:14:36,222 --> 00:14:39,830
+然后 safe 是对你来说真正重要的那个
+and then safe is the one that that is really important for you.
+
+270
+00:14:40,390 --> 00:14:42,417
+嗯，safe 很好、很重要
+Um, safe is good, is important.
+
+271
+00:14:42,417 --> 00:14:46,470
+这只在超过 30 分钟的视频里才真正重要
+This is only really important for videos like over 30 minutes.
+
+272
+00:14:46,630 --> 00:14:49,199
+就是你要确保观众看得放心
+It's like you want to make sure the user feels safe watching,
+
+273
+00:14:49,199 --> 00:14:51,870
+让他们觉得看这个视频不会浪费时间
+that they're not going to waste their time watching the video.
+
+274
+00:14:52,270 --> 00:14:55,390
+做法就是你说，顺便讲一句，这个人是个专家
+And the way that you do that is you say, like, by the way, this guy is an expert.
+
+275
+00:14:55,750 --> 00:14:59,082
+他会聊到这些内容，嗯，而且
+He's going to talk about these things and, um, and like,
+
+276
+00:14:59,082 --> 00:15:02,920
+我向你保证，看到视频结尾你会有收获
+I promise you by the end of the video, you will get value out of it.
+
+277
+00:15:02,920 --> 00:15:07,400
+你要让他们觉得，他们的、你的时间是值得的
+And you want to make sure that they like they're your, your time is customizing.
+
+278
+00:15:07,920 --> 00:15:08,920
+对，明白了
+Yes. Got it.
+
+279
+00:15:09,240 --> 00:15:11,759
+那你是怎么考虑的，你是先从 hook 开始，还是
+And, and how do you think about, so do you start with the hook or do you,
+
+280
+00:15:11,759 --> 00:15:13,880
+你怎么考虑标题和缩略图，对吧
+how do you think about the title and the thumbnail, right?
+
+281
+00:15:13,880 --> 00:15:16,520
+因为有些——我一开始根本不想这些，我是之后才想
+Because some, I don't think about any of that. I think about that after.
+
+282
+00:15:16,600 --> 00:15:20,162
+我会先想我在视频里到底想聊什么
+So like I think about the thing that I I want to talk about in the video
+
+283
+00:15:20,162 --> 00:15:21,880
+比如说 Codex 技巧，对吧
+which is like Codex tips, right?
+
+284
+00:15:21,880 --> 00:15:25,815
+这是我想聊的东西，我不会花很多精力去研究我
+This is something that I would want like I don't do a lot of research on what I
+
+285
+00:15:25,815 --> 00:15:26,830
+该聊什么
+should talk about.
+
+286
+00:15:26,990 --> 00:15:31,335
+我是发自内心地感受，我的直觉会告诉我该聊什么
+I, I feel it in my heart like my gut tells me what I should talk about
+
+287
+00:15:31,335 --> 00:15:33,830
+视频里 90% 的部分就是我自己在讲
+and for 90% of the video, it's just me.
+
+288
+00:15:33,870 --> 00:15:36,028
+我会列个大纲，但基本就是我自己
+Like, I'll outline it, but it's just me, like,
+
+289
+00:15:36,028 --> 00:15:40,230
+深入细节，讲我日常到底怎么用这个工具
+getting into the weeds and talking about how I actually use this tool on a day to day basis.
+
+290
+00:15:40,790 --> 00:15:44,870
+然后最后那 10% 就是，好，我们怎么让大家来看它
+But then the the last 10% is like, okay, how do we get people to watch it?
+
+291
+00:15:44,870 --> 00:15:46,510
+这就是要讲科学、讲方法的地方
+And like that's where the science goes in.
+
+292
+00:15:46,890 --> 00:15:51,413
+所以，嗯，我会先列一个清单，把我在视频里要讲的所有内容都写下来
+And so, um, I start with a list, everything that I'm gonna talk about in the video,
+
+293
+00:15:51,413 --> 00:15:54,450
+我把它列成大纲，然后拍完整个视频
+and I just outline that and then I film the whole video.
+
+294
+00:15:54,450 --> 00:15:57,834
+然后很多时候我会最后再拍 hook，嗯，就是我会
+And then oftentimes I'll film the hook after, um, like, I'll,
+
+295
+00:15:57,834 --> 00:16:03,010
+单独拍一段，因为有时候我在视频里会跑题
+like completely separate video because sometimes I'll go off on a Tangent in one of my videos.
+
+296
+00:16:03,090 --> 00:16:06,490
+比如我一些最好的视频，最后我讲了个 30 分钟的题外话，然后
+Like some of my best videos, I end up on like a 30 minute Tangent and then.
+
+297
+00:16:07,460 --> 00:16:11,100
+但我想确保我的开场讲的就是我真正做的那件事
+But I want to make sure that my intro talks about that thing that I do.
+
+298
+00:16:11,180 --> 00:16:13,689
+所以这就是为什么我把开场放到最后再做
+So I that's why I just do my intros at the end
+
+299
+00:16:13,689 --> 00:16:17,920
+我用 AI 去分析我讲过的所有内容，然后据此来写我的
+and I use AI to analyze everything I talk about and then that informs my,
+
+300
+00:16:17,920 --> 00:16:22,580
+我的文案稿，然后我会让 YouTube researcher 说，比如说，这就是
+my transcript and then I'll have the YouTube researcher say like, here's the.
+
+301
+00:16:22,660 --> 00:16:25,340
+我这条视频的 transcript，我需要一个好开头
+The transcript for the my video. I need a good intro.
+
+302
+00:16:25,860 --> 00:16:29,665
+去爬 YouTube，直到找到一个好的形式，然后照着抄
+Scrape YouTube until you find a good format and then just like copy it
+
+303
+00:16:29,665 --> 00:16:33,070
+再改成我要讲的内容，你懂我的意思吧
+and make it about what I'm talking about, if that makes sense.
+
+304
+00:16:33,670 --> 00:16:35,297
+哦，这真的超有意思，兄弟
+Oh, that's like super interesting dude
+
+305
+00:16:35,297 --> 00:16:38,550
+因为我认识一堆其他 YouTuber，他们是先做缩略图
+because like I I know a bunch of other Youtubers who who make the thumbnail first
+
+306
+00:16:38,550 --> 00:16:41,310
+如果缩略图不够好，他们甚至不会去做这条视频
+and the thumbnail is not good then they will not even make the video.
+
+307
+00:16:41,630 --> 00:16:44,674
+不过，我想，嗯，是啊，我是说，也许吧，你懂的
+But, but I, I guess, um, yeah, well, I mean, maybe, you know,
+
+308
+00:16:44,674 --> 00:16:48,775
+对我来说，最可持续的内容策略就是一直去做
+like for me the most sustainable strategy for content is just to like keep doing
+
+309
+00:16:48,775 --> 00:16:50,390
+我喜欢的东西。如果我让
+things that I like. And if I let.
+
+310
+00:16:51,270 --> 00:16:56,446
+包装、还有能拿多少播放量来决定我做什么内容，那
+Packaging and, and what how many views it'll get dictate what content I make then
+
+311
+00:16:56,446 --> 00:16:59,150
+这对我来说就变成一个没有灵魂的游戏了
+like it just becomes a soulless game to me.
+
+312
+00:16:59,190 --> 00:17:04,415
+我更愿意先做我想做的东西，然后事后再去包装，嗯
+Like, I would much rather make what I want and then package it after the fact, um,
+
+313
+00:17:04,415 --> 00:17:10,510
+而不是只盯着爆款想法，那样的话我最后会，你懂的
+than to just, like, be, you know, only, like, about viral ideas, then I would end up, you know.
+
+314
+00:17:10,590 --> 00:17:11,270
+就像是，为什么不呢
+It's like, why not?
+
+315
+00:17:11,510 --> 00:17:13,290
+那我最后就会在 TikTok 上拍跳舞视频
+Then I'll end up making dance videos on TikTok,
+
+316
+00:17:13,290 --> 00:17:15,070
+而那是我不想做的事，你懂吧
+which is something I don't want to do, you know?
+
+317
+00:17:15,450 --> 00:17:18,650
+呃，是啊。所以，对对对，你得想清楚什么能给你能量，对吧
+Uh, yeah, yeah. So, yeah, yeah, yeah. You gotta think about what gives you energy, right?
+
+318
+00:17:18,650 --> 00:17:20,702
+还有，跟着自己的好奇心走。如果你能做内容
+And, like, follow your own curiosity. If you can make content,
+
+319
+00:17:20,702 --> 00:17:21,610
+就跟着自己的好奇心走
+follow your own curiosity.
+
+320
+00:17:21,730 --> 00:17:23,970
+那才是最好的，你懂吧？百分之百
+That's, like the best, you know? Hundred percent.
+
+321
+00:17:24,530 --> 00:17:24,970
+是啊，是啊
+Yeah. Yeah.
+
+322
+00:17:25,250 --> 00:17:29,226
+然后，嗯，接着聊回 Codex 这个话题
+And then, um, to kind of like go off on to talk, to continue talking about Codex,
+
+323
+00:17:29,226 --> 00:17:31,490
+你知道，我这里面有很多 Skill
+you know, like, I have a lot of skills in here.
+
+324
+00:17:31,570 --> 00:17:34,210
+比如，嗯，有件很好玩的事，我有这么个东西
+Like, um, one thing that's really fun to do is I have like this.
+
+325
+00:17:34,490 --> 00:17:38,580
+我在视频里经常用 Excalidraw。如果你，很多人看我的视频
+I use Excaladraw in my videos a lot. If you a lot of people watch my videos,
+
+326
+00:17:38,580 --> 00:17:40,080
+就会看到我把东西画成图示
+like I diagram things out.
+
+327
+00:17:40,440 --> 00:17:41,200
+很多时候都是这样
+A lot of the times.
+
+328
+00:17:41,640 --> 00:17:44,850
+所以有一个叫 Excalidraw Diagrams 的 Skill 你可以用
+So there's a skill called Excaladraw Diagrams that you can use
+
+329
+00:17:44,850 --> 00:17:47,072
+你真的只要告诉 Codex，嘿
+and you can literally just tell Codex, hey,
+
+330
+00:17:47,072 --> 00:17:50,467
+我需要一个 Excalidraw diagram 的 Skill，或者做一个 Excalidraw diagram
+I need an excaladraw diagram skill or make an excaladraw diagram,
+
+331
+00:17:50,467 --> 00:17:51,640
+它就会直接做出来
+and it'll just make it.
+
+332
+00:17:51,800 --> 00:17:55,120
+然后那个链接，你就可以粘贴进 Excalidraw
+And then the link, you can just like paste it into Excaladraw.
+
+333
+00:17:55,840 --> 00:17:58,109
+它真的会在浏览器里打开
+It'll actually open it in the browser,
+
+334
+00:17:58,109 --> 00:18:01,300
+而且它能把不同的想法画成非常好的图示
+and it makes really good diagrams of different ideas.
+
+335
+00:18:01,740 --> 00:18:06,540
+这个特别有用，嗯，我还有一个 YouTube thumbnail 的 transcript
+That's one that's really useful to, um, I also have a YouTube thumbnail transcript.
+
+336
+00:18:06,660 --> 00:18:09,306
+这个嘛，可能会给我惹点麻烦
+This one is, will get me into trouble a little bit
+
+337
+00:18:09,306 --> 00:18:12,018
+因为我的 YouTube 选题策略真的就是
+because literally my YouTube ideation strategy
+
+338
+00:18:12,018 --> 00:18:16,516
+当我要想一个 YouTube 缩略图时，我就直接爬 100 张
+when I have to come up with a YouTube thumbnail is I will just scrape 100 thumbnails
+
+339
+00:18:16,516 --> 00:18:20,220
+表现特别好的缩略图，然后把我的脸放上去，然后它会
+that performed really well and I'll put my face on it and then it'll.
+
+340
+00:18:20,220 --> 00:18:24,954
+我只需要让 AI 把那 7 张里的脸换成我的脸
+All I'll just ask AI to just like replace those 7 with my face
+
+341
+00:18:24,954 --> 00:18:28,625
+然后再让 AI 调一下颜色，这个嘛
+and then I'll have AI edit the color, which is,
+
+342
+00:18:28,625 --> 00:18:32,490
+有些人会因为这个对我不爽
+which is some people would get mad at me for that.
+
+343
+00:18:32,490 --> 00:18:34,890
+但这确实是一个非常有用的 Skill
+But like that's it's been a really useful skill.
+
+344
+00:18:36,690 --> 00:18:41,370
+是啊，我就有一大堆最后被我反复用的东西
+And yeah, I just have a ton of things that I've ended up just using over and over again.
+
+345
+00:18:41,960 --> 00:18:43,920
+嗯，还有一个 Typefully 的 Skill
+Um, also there's a typefully skill.
+
+346
+00:18:43,960 --> 00:18:49,305
+所以很多，如果我有一个内容的想法，嗯，这个可以控制我的 Typefully
+So a lot, if I get an idea, uh, for content, um, this can control my typefully,
+
+347
+00:18:49,305 --> 00:18:51,680
+而 Typefully 是连着我的 Twitter 的
+which is connected to my Twitter.
+
+348
+00:18:51,760 --> 00:18:54,118
+所以它可以很快地把我的推文想法起草出来
+So it can, like, really quickly draft up my tweet ideas,
+
+349
+00:18:54,118 --> 00:18:57,398
+比如我在做某件事，或者碰到什么东西，我就会说，嘿
+like if I'm working on something or come across something, I'll be like, hey,
+
+350
+00:18:57,398 --> 00:18:58,320
+就这个写一条推文草稿
+draft a tweet on this.
+
+351
+00:18:58,600 --> 00:19:01,680
+然后每周一我就看一下我的 Typefully，把这些推文发出去
+And then every Monday I check my typefully and then I fire off those tweets.
+
+352
+00:19:02,350 --> 00:19:04,390
+哦，很有意思的原因。是啊
+And, oh, interesting reason. Yeah.
+
+353
+00:19:04,430 --> 00:19:06,841
+所以我想说的其实是
+And so what I'm trying to get at is, like,
+
+354
+00:19:06,841 --> 00:19:11,810
+这些 Skill 都不是我坐下来去想，好
+all of these skills did not come from me sitting down and like thinking like, okay,
+
+355
+00:19:11,810 --> 00:19:13,710
+我需要创建哪些 Skill
+what skills do I need to create?
+
+356
+00:19:14,110 --> 00:19:18,584
+我就是用 AI 去做事，然后凡是有用、我会反复做的
+I just use AI to do stuff and then everything that I that's useful that I do over
+
+357
+00:19:18,584 --> 00:19:21,870
+那些事，我就直接告诉 Codex，把这个变成一个 Skill
+and over again, I just tell Codex, turn this into a skill.
+
+358
+00:19:22,270 --> 00:19:25,369
+然后慢慢地，我就养成了用某些 Skill 的习惯
+And then over time, I get in the habit of using certain skills,
+
+359
+00:19:25,369 --> 00:19:29,318
+有时候我也会不再用某些 Skill，但这就是关键，也是为什么
+and sometimes I'll stop using skills, but that's kind of the thing and the why,
+
+360
+00:19:29,318 --> 00:19:32,842
+我这么喜欢 Codex 的原因，就是它内置了非常多的插件
+the reason why I love Codex so much is they have so many built in plugins
+
+361
+00:19:32,842 --> 00:19:34,240
+他们的应用内浏览器
+and their in-app browser is
+
+362
+00:19:34,360 --> 00:19:34,800
+真的很酷
+Really cool.
+
+363
+00:19:35,520 --> 00:19:37,678
+是的，说个真事，就在
+Yeah. Fact here, this is just right
+
+364
+00:19:37,678 --> 00:19:41,920
+我们拍这个视频之前，我在写一个短视频脚本
+before we were filming this video I'm working on a short form script.
+
+365
+00:19:42,160 --> 00:19:49,440
+我写所有短视频脚本的方式，就是在 Codex 里新建一个 Notion 页面
+And the way that I write all my short form scripts is I just start a new Notion page, um, in Codex.
+
+366
+00:19:49,840 --> 00:19:54,920
+所以在我这里，我有这么一个视频数据库
+And, and so, in my, so I have this, so I have this video database.
+
+367
+00:19:55,000 --> 00:19:58,800
+我用它来追踪所有内容，这些是我的长视频
+This is where I like keep track of everything, right? This is my long form videos.
+
+368
+00:19:58,880 --> 00:20:02,905
+这些是我追踪的短视频，因为它们的应用内浏览器
+Here are my short form videos that I keep track of because they're in-app browsers,
+
+369
+00:20:02,905 --> 00:20:06,160
+变成了完整的应用内浏览器，我可以直接在 Codex 里用
+becoming a full in-app browser, I can use it directly inside Codex.
+
+370
+00:20:06,760 --> 00:20:10,240
+我想快速给你演示一下
+And so what I want you to, what I want to show you really quickly.
+
+371
+00:20:10,750 --> 00:20:14,377
+好，我可以说，嘿，我
+Right. I could say, hey, I, uh,
+
+372
+00:20:14,377 --> 00:20:21,630
+想做一个关于最新 Meta Ray-Bans 的短视频
+want to make a short form video on the latest uh Meta Ray-Bans.
+
+373
+00:20:23,350 --> 00:20:31,070
+请在 Notion 里加一条“进行中”的短视频，并给我链接
+Please add a new short form in progress to Notion and give me link, right?
+
+374
+00:20:31,150 --> 00:20:34,270
+我经常这么做，通常会说更多东西，比如更多想法
+I'll often do this. I'll usually say more stuff, like more ideas.
+
+375
+00:20:34,390 --> 00:20:36,403
+我只是想说明一点
+I'm just trying to illustrate the point
+
+376
+00:20:36,403 --> 00:20:39,330
+就是现在这个 agent 会进到我的 Notion 里
+that like right now the agent is going to go into my Notion.
+
+377
+00:20:39,570 --> 00:20:41,715
+它会正确地把它加进数据库
+It's going to add it into the database correctly,
+
+378
+00:20:41,715 --> 00:20:43,284
+然后给我一个链接
+and then it's going to give me a link,
+
+379
+00:20:43,284 --> 00:20:45,690
+然后我就能直接在应用里打开它
+and then I'll be able to open that up directly in the app.
+
+380
+00:20:45,810 --> 00:20:50,206
+我不用离开 Codex，它会直接在 Codex 里打开
+I won't have to leave Codex. It'll just open directly inside Codex,
+
+381
+00:20:50,206 --> 00:20:52,090
+这个工作流真的很好用
+which is such a fun workflow.
+
+382
+00:20:52,210 --> 00:20:56,690
+我特别喜欢不用离开应用，在标签页之间来回切换我会晕
+Like, I love not having to leave the app. I get lost when I switch from tab to tab.
+
+383
+00:20:57,170 --> 00:20:59,167
+你看这里它给了我一个 Notion 链接
+You see here it gave me a, no, a Notion link.
+
+384
+00:20:59,167 --> 00:21:01,450
+我可以点“在浏览器打开”，看一下
+I can just click open in browser and look at that.
+
+385
+00:21:01,730 --> 00:21:05,370
+它加了这个，把笔记加进来了，这没问题
+It added this. So it added the, the notes in here, which is fine,
+
+386
+00:21:05,370 --> 00:21:07,610
+但它确实创建了这个 Notion 数据库条目
+but it did create the Notion database.
+
+387
+00:21:07,970 --> 00:21:15,323
+我可以说，请在正文里写好大纲
+And I can say like, please make the outline in the body
+
+388
+00:21:15,323 --> 00:21:20,170
+并且配一个好的 hook
+and please make it with a good hook.
+
+389
+00:21:20,950 --> 00:21:31,466
+我通常会说，这会是一个巨大的机会
+I would normally use say that this will be a huge opportunity
+
+390
+00:21:31,466 --> 00:21:40,510
+如果这些眼镜火了，可以在上面开发应用
+if they take off for creating apps on these glasses.
+
+391
+00:21:40,880 --> 00:21:41,360
+我也不确定
+I don't know.
+
+392
+00:21:42,880 --> 00:21:45,680
+就这样，它能操控 Notion，真的很好玩
+And yeah, yeah, just like control the Notion, which is really fun.
+
+393
+00:21:45,760 --> 00:21:51,640
+我用 Google Docs、Notion，还有我的日历也是这么做的
+And this is how I use Google Docs and Notion and, uh, my calendar as well.
+
+394
+00:21:51,680 --> 00:21:53,944
+比如我会说，给我一个日历事件的链接
+Like I'll just say, like, give me a link to the calendar event
+
+395
+00:21:53,944 --> 00:21:56,480
+然后在应用内浏览器里打开，就能直接看到它
+and I'll open it in the in-app browser so I can just see it right there.
+
+396
+00:21:56,920 --> 00:22:00,640
+它还能帮我写所有邮件，我一直都让它做这个
+And it can also write all of my emails, which I have it do all the time.
+
+397
+00:22:01,630 --> 00:22:03,390
+是的，我自己都不看邮件了
+Yeah, I haven't read my emails too. Yeah.
+
+398
+00:22:03,430 --> 00:22:05,660
+好，所以基本上有一天你可以一觉醒来
+Okay, so, so basically then one day you can just wake up
+
+399
+00:22:05,660 --> 00:22:09,030
+就已经有一堆脚本了，然后你可以批量处理
+and like you have a bunch of scripts already and you can you can just batch process.
+
+400
+00:22:09,190 --> 00:22:12,830
+你可以成批地把它们录下来，对吧？之类的
+You can just like just record them in batches, right? Or, or something. Yeah.
+
+401
+00:22:12,950 --> 00:22:17,461
+是的，我觉得大家一开始想到的都是批量
+Yeah. I think, I think that's where everyone's brain goes at first is to like batch
+
+402
+00:22:17,461 --> 00:22:18,390
+然后多产出
+and create more.
+
+403
+00:22:18,950 --> 00:22:20,590
+但我想要的是更好
+What I want is better.
+
+404
+00:22:21,030 --> 00:22:22,402
+每次我做内容的时候
+I like whenever I create content,
+
+405
+00:22:22,402 --> 00:22:24,950
+我总是在想怎么做出更好的东西
+I I'm always thinking about how to create stuff that's better.
+
+406
+00:22:25,370 --> 00:22:28,535
+我想要的是，在后台自动打开多个标签页
+And what I want is like I want multiple tabs to open up, you know,
+
+407
+00:22:28,535 --> 00:22:31,760
+都是些可能有用的相关内容
+in the background of like relevant things that might be useful.
+
+408
+00:22:31,840 --> 00:22:35,521
+就像 Codex 会说，嘿，顺便说一下，我打开了这个链接
+Like Codex would be like, hey, like, by the way, like I opened up this link,
+
+409
+00:22:35,521 --> 00:22:38,840
+在这一句上你可能会想这么做，你应该这么处理
+like you may wanting in this one specific line, you should do this.
+
+410
+00:22:38,880 --> 00:22:42,731
+所以我真的会用它，让 AI 去核查我
+And so like I will actually use it to just get AI to fact check everything
+
+411
+00:22:42,731 --> 00:22:47,170
+在这个视频里讲的每件事，或者我直接派它去，说，嘿
+that I'm talking about in this video or I'll just send it off and I'll say like, hey,
+
+412
+00:22:47,170 --> 00:22:49,520
+你能去看看这个创作者的视频吗
+can you go and check this creator's videos?
+
+413
+00:22:49,680 --> 00:22:51,600
+他视频的节奏感非常好
+He's he has really good pacing in his videos.
+
+414
+00:22:51,680 --> 00:22:54,440
+你能不能想个办法，把那种节奏用到这个视频里
+Can you please figure out a way that we can implement that into this video?
+
+415
+00:22:54,710 --> 00:22:56,390
+它会跑上 10 分钟然后回来
+It'll go off for 10 minutes and come back.
+
+416
+00:22:56,630 --> 00:23:01,859
+我大概就是这么看的，你可以更快地做研究
+And that's kind of how I see this, is like you can do research so much faster,
+
+417
+00:23:01,859 --> 00:23:06,160
+这样你就能在一个视频里投入更多的总研究量
+so it allows you to put more total research into like one video
+
+418
+00:23:06,160 --> 00:23:11,557
+因为我觉得护城河是长期的质量，而不是
+because I think the moat is quality over over a long period of time versus like
+
+419
+00:23:11,557 --> 00:23:13,750
+批量生产。批量化会让内容
+batching. Batching will make.
+
+420
+00:23:13,750 --> 00:23:16,230
+随着时间变得没有灵魂。我大概就是这么想的
+It soulless over time. So that's kind of how I think about it.
+
+421
+00:23:16,480 --> 00:23:18,760
+我也鼓励其他人这么做。明白了
+And I would encourage others to do so. Got it.
+
+422
+00:23:18,800 --> 00:23:20,372
+在你现在这个创作阶段
+At this point in your creator journey, like,
+
+423
+00:23:20,372 --> 00:23:22,200
+你每周会发多少条短视频
+how many short forms are you publishing every week?
+
+424
+00:23:22,320 --> 00:23:23,960
+一两条高质量的？对
+One or two, um, that are high quality? Yeah.
+
+425
+00:23:23,960 --> 00:23:26,928
+我其实希望能做到每天出一条视频
+I mean, I would like to create a video once a once a day,
+
+426
+00:23:26,928 --> 00:23:28,480
+说实话就是一周五天
+honestly like 5 days a week.
+
+427
+00:23:28,520 --> 00:23:30,480
+我很想每天做一条高质量的短视频
+I would love to create a high quality short form video.
+
+428
+00:23:30,800 --> 00:23:33,749
+嗯，最近我想先把我的
+Um, yeah, as of late, I'm trying to get my,
+
+429
+00:23:33,749 --> 00:23:38,954
+长视频提到每周四条，我觉得四条长视频
+my long form to like 4 videos a week first and like I think 4 and 4 long form,
+
+430
+00:23:38,954 --> 00:23:41,470
+五条短视频肯定是我的目标
+five short form is my goal for sure.
+
+431
+00:23:41,750 --> 00:23:43,350
+我觉得那样就挺好
+I think that that would be good.
+
+432
+00:23:44,110 --> 00:23:46,750
+那也很厉害。我一周才做一两条视频
+That's great too. I, I make one or two videos a week and I'm,
+
+433
+00:23:46,750 --> 00:23:48,070
+就已经累得不行了
+I'm already like exhausted.
+
+434
+00:23:48,230 --> 00:23:55,950
+是啊是啊。我也说不好，我就是喜欢，做内容很有意思
+So yeah, yeah, yeah. I don't know. I, I like it. It's, it's fun to make content.
+
+435
+00:23:56,030 --> 00:23:56,510
+我也说不清
+I don't know.
+
+436
+00:23:57,150 --> 00:24:00,000
+对了老兄，我得问你。行，我再多问几个问题
+Yeah dude, I have to ask you. Okay, so let me ask a few more question.
+
+437
+00:24:00,000 --> 00:24:01,920
+是关于你刚才演示的那些 Skill
+This is about the skills that you you you kind of showed.
+
+438
+00:24:02,120 --> 00:24:05,464
+Excalidraw 那个 Skill，你是写完脚本之后用
+So the escalator skill, do you use that after you have the script or
+
+439
+00:24:05,464 --> 00:24:08,200
+还是写脚本之前用，比如先画图示
+before you have the script like you make the diagrams?
+
+440
+00:24:08,880 --> 00:24:13,200
+嗯，我一般就是随口一通说。所以 99% 我都不是打字
+Yeah, I mean, I think I will just blabber. So 99% I'm not.
+
+441
+00:24:13,200 --> 00:24:15,282
+我现在打字是因为这是播客
+I know I'm typing now because this is a podcast
+
+442
+00:24:15,282 --> 00:24:17,200
+我不太想用 Wispr Flow
+and I don't want to like use a whisper flow.
+
+443
+00:24:17,200 --> 00:24:18,360
+我平时什么都用 Wispr Flow
+I use whisper flow for everything.
+
+444
+00:24:18,760 --> 00:24:21,790
+我有时候会这么做，嗯，我买了这个
+And so what I will do sometimes, um, and I got these,
+
+445
+00:24:21,790 --> 00:24:24,819
+这副 AirPods Max，因为它的麦克风更好
+the Airpod Maxes because they have a better in mic,
+
+446
+00:24:24,819 --> 00:24:26,911
+我就打开 Wispr Flow
+I'll just like turn on Whisper flow
+
+447
+00:24:26,911 --> 00:24:31,960
+然后到处走十分钟，把我的所有想法都说出来
+and I'll just like walk around for 10 minutes just like speaking all of my ideas like.
+
+448
+00:24:32,000 --> 00:24:33,400
+比如，我要做一条关于 Codex 的视频
+Oh, I'm gonna make a video on Codex.
+
+449
+00:24:33,920 --> 00:24:36,599
+我这周一直在想的东西是这个、这个、这个
+The things that I've been thinking about this week are this, this, and this,
+
+450
+00:24:36,599 --> 00:24:37,280
+还有这个、这个
+and this, and this.
+
+451
+00:24:37,360 --> 00:24:41,200
+我要你把这些做成一个 Excalidraw 图示
+I want you to create an Excaladraw diagram of this, this and this.
+
+452
+00:24:41,620 --> 00:24:45,767
+然后我会直接告诉它，我大概会说
+I have, you know, uh, and then I'll, like, literally tell it I, I like,
+
+453
+00:24:45,767 --> 00:24:50,714
+我要九张图，我的 Excalidraw 图示 Skill 会按一种很特定的风格来做
+I want 9 slides and it, my Excel draw diagram skill does it in a very specific style,
+
+454
+00:24:50,714 --> 00:24:53,260
+每张都会分好板块
+which like has just like sections to them.
+
+455
+00:24:53,780 --> 00:24:57,903
+然后我就随口说十分钟，说完就跑一下
+And yeah, I'll just blabber for 10 minutes and then I'll be done and I'll just, like,
+
+456
+00:24:57,903 --> 00:25:00,472
+等我回来的时候，它大概已经做好了
+run it and then I'll come back and it will have, like,
+
+457
+00:25:00,472 --> 00:25:03,220
+我视频里真正会用的那些图示的 80%
+80% of the diagrams that I'll actually use in my videos.
+
+458
+00:25:03,640 --> 00:25:06,440
+然后我会改一改，花二三十分钟调整
+And I'll edit them. I'll take 20, 30 minutes to edit them.
+
+459
+00:25:06,520 --> 00:25:08,240
+但它是一个非常好的起点
+But it's like a really good starting point.
+
+460
+00:25:09,040 --> 00:25:13,800
+它帮我把想法理清楚了，就因为这个我特别喜欢 Wispr Flow
+It just organizes my ideas and yeah, huge fan of Whisper Flow for that reason.
+
+461
+00:25:14,280 --> 00:25:17,960
+好，所以这些图其实相当于给整条视频搭了框架，对吧
+Okay, so something, okay, so the slides actually kind of frame the rest of the video, right?
+
+462
+00:25:17,960 --> 00:25:20,400
+因为你要讲完大概八张图，再穿插一些演示之类的
+Because you want to cover like eight slides and like do some demos and stuff.
+
+463
+00:25:20,840 --> 00:25:21,080
+对
+Yes.
+
+464
+00:25:21,800 --> 00:25:22,280
+对，明白了
+Yes. Got it.
+
+465
+00:25:22,440 --> 00:25:24,199
+那我得问问你那个缩略图的 Skill
+So then I have to ask you about the thumbnail scale
+
+466
+00:25:24,199 --> 00:25:26,860
+因为不知道为什么，我用 AI 做缩略图总是很吃力
+because I have a lot of trouble using AI to make thumbnails for some reason.
+
+467
+00:25:26,980 --> 00:25:30,720
+好。我发现的是，它其实很不擅长改你的脸
+So. Sure. So what I found is that it's actually really bad at changing your face.
+
+468
+00:25:30,720 --> 00:25:32,240
+也可能是我不会写 prompt
+Or maybe I don't know how to prompt it.
+
+469
+00:25:32,280 --> 00:25:34,267
+如果我给它一张我微笑的照片
+If I if I give it like a picture of me smiling,
+
+470
+00:25:34,267 --> 00:25:38,240
+让它改成皱眉或者惊讶的表情，它就把我的脸整个弄变形了，老兄
+I tell you like change your frown or like a surprise, it totally distorts my face, dude.
+
+471
+00:25:38,280 --> 00:25:40,720
+所以你是不是大多是最后再把自己的脸贴上去
+So like, do you mostly apply your face afterwards?
+
+472
+00:25:41,440 --> 00:25:43,788
+嗯，我经常提到的、跟 Codex 一起用的
+So, um, one of my most popular, uh,
+
+473
+00:25:43,788 --> 00:25:48,400
+最常一起用的工具之一，是一个叫 Paper 的工具
+tools that I talk about that I use with Codex is a tool called paper.
+
+474
+00:25:49,000 --> 00:25:50,880
+Paper 就像一个 AI-native 的 Figma
+Paper is an AI native figma.
+
+475
+00:25:51,670 --> 00:25:57,790
+我说 AI-native，意思是它是一个以 AI 为先设计的应用
+And when I say AI native, I mean that it is an application built for AI first.
+
+476
+00:25:58,630 --> 00:26:00,496
+他们基本上是把
+This is, they basically took all the,
+
+477
+00:26:00,496 --> 00:26:02,181
+Figma 里很多好东西都拿了过来
+a lot of the good stuff about Figma
+
+478
+00:26:02,181 --> 00:26:04,950
+然后让它能非常方便地连接到任何工具
+and they just made it really easy to connect to any tool.
+
+479
+00:26:05,470 --> 00:26:11,750
+所以我用我的缩略图 Skill 时，会说，嘿，我要你去抓取
+And so when I'm using my thumbnail skill, I will say, hey, I need you to scrape.
+
+480
+00:26:12,370 --> 00:26:16,535
+这是我过几天要发的一条短视频，嗯
+This is a, like, this is a short form video that I'm releasing in a couple days, uh,
+
+481
+00:26:16,535 --> 00:26:20,389
+我让 AI 去抓取 Alex Hormozi 和 Dan Martell 的 YouTube 缩略图
+where I ask AI to scrape Alex Hormozi and Dan Martell's YouTube thumbnails
+
+482
+00:26:20,389 --> 00:26:22,130
+然后把它们放到 Paper 画板上
+and place them on the paperboard.
+
+483
+00:26:22,810 --> 00:26:27,120
+Codex 会跑上 10 分钟，找出每个人最火的视频
+Codex will go off for 10 minutes finding his most popular videos for each one,
+
+484
+00:26:27,120 --> 00:26:29,410
+然后把它们放到这个画板上
+and then it will place them on this board.
+
+485
+00:26:29,850 --> 00:26:33,006
+现在我要做的就是来到这里，因为我有自己的图片，对吧
+Now all I have to do is I can come here and since I have images of me, right,
+
+486
+00:26:33,006 --> 00:26:34,130
+这是我的一张缩略图
+this is a thumbnail of me.
+
+487
+00:26:34,440 --> 00:26:37,920
+我可以复制它，然后到这里手动做很多操作
+I can duplicate it and then I will just come here and do a lot of it manually.
+
+488
+00:26:38,040 --> 00:26:42,520
+比如我拿 Alex Hormozi 这张，把它拖到这里
+So like, I'll grab this one of Alex Hormozi. I'll drag this over here.
+
+489
+00:26:42,840 --> 00:26:47,400
+Paper 内置了 AI 图像生成功能，看好了
+And then paper has AI image generation built in. And so watch this.
+
+490
+00:26:47,440 --> 00:26:50,183
+我可以这样操作，选中这个
+I can just go like this, select this,
+
+491
+00:26:50,183 --> 00:26:55,760
+请把有胡子的人换成没胡子的那个人
+please replace the guy with a beard with the guy that doesn't have a beard.
+
+492
+00:26:56,490 --> 00:27:00,578
+嗯，把这个人换掉，不过把他的衬衫改成，嗯
+Um, just replace the guy except make his shirt, um,
+
+493
+00:27:00,578 --> 00:27:03,400
+白色的，再给他戴上一条链子
+white and make him wearing a chain.
+
+494
+00:27:04,760 --> 00:27:06,960
+然后你想，你想戴一条链子
+And then you want, you wanted to wear, wear a chain.
+
+495
+00:27:07,800 --> 00:27:11,160
+我，是的，我需要那个，就是因为，你知道，这期播客很重要
+I, yeah, I need that for, for, just because, you know, this podcast is important.
+
+496
+00:27:11,280 --> 00:27:14,000
+在这张缩略图里我戴着链子很重要
+It's important that I'm wearing a chain in this, in this thumbnail.
+
+497
+00:27:14,120 --> 00:27:15,464
+是的，相当重要。哦，不过
+Yes, it's quite important. Oh, but,
+
+498
+00:27:15,464 --> 00:27:17,480
+但看起来它在生成好几张缩略图
+but looks like it's generating multiple thumbnails.
+
+499
+00:27:17,880 --> 00:27:21,350
+哦对，我刚才狂按了回车，所以它在生成，好吧
+Oh yeah, I just spam pressed enter so it's it's creating okay,
+
+500
+00:27:21,350 --> 00:27:25,228
+呃七个版本，然后我就挑出对的那个
+uh seven versions of it and then I'll just kind of select the right one
+
+501
+00:27:25,228 --> 00:27:28,290
+你能看到我自然的迭代过程，对吧
+and you can see kind of my natural progression, right?
+
+502
+00:27:28,290 --> 00:27:30,216
+你能看到这张上面写着 Game Changer
+You can see that this says Game Changer.
+
+503
+00:27:30,216 --> 00:27:32,610
+我拿了这张，然后把它改成了给我自己的版本
+I took this and then I converted it into one for me.
+
+504
+00:27:33,090 --> 00:27:35,290
+嗯，这些就是我的缩略图
+Um, and here are my thumbnails.
+
+505
+00:27:35,570 --> 00:27:40,422
+看看这些缩略图的演变过程还挺有意思的
+And you it's kind of fun to kind of see the progression of the thumbnails
+
+506
+00:27:40,422 --> 00:27:45,439
+就是我这段时间做的这些，比如我做了右边这张
+that I've created over the, like, you know, I created this one right here,
+
+507
+00:27:45,439 --> 00:27:47,330
+它是基于这一张做的
+which was based on this one.
+
+508
+00:27:47,930 --> 00:27:53,530
+对，Jake 的缩略图做得很棒。这大概就是我做缩略图的流程
+Yeah, Jake, he has great thumbnails. And so that's kind of how my thumbnail process.
+
+509
+00:27:54,010 --> 00:27:56,595
+我不喜欢在缩略图上花太长时间。我
+I don't like to think about thumbnails for that long. I,
+
+510
+00:27:56,595 --> 00:27:58,450
+我很讨厌手动做缩略图
+I despise making thumbnails manually.
+
+511
+00:27:58,530 --> 00:28:01,254
+所以这对我来说太好了。哦，兄弟，这太棒了。那么好
+So this is great for me. Oh, dude, this is amazing. So, okay,
+
+512
+00:28:01,254 --> 00:28:02,810
+它基本上就是把人换掉了
+so it basically just replaced it.
+
+513
+00:28:03,090 --> 00:28:07,030
+它保留了他的手。看起来，对，我保留了它的手
+It, it's kept his hand. It, it looks like, yeah, I kept its hand.
+
+514
+00:28:07,350 --> 00:28:10,496
+我本可以指定要改它的，但随时都可以，你知道
+I could have specified to change it, but then at any time, you know,
+
+515
+00:28:10,496 --> 00:28:13,070
+比如我喜欢做的是，我会放大这一张，对吧
+like what I like to do is I'll zoom in on this one, right?
+
+516
+00:28:13,190 --> 00:28:14,470
+你知道，这张还不错
+You know, this is not bad.
+
+517
+00:28:15,110 --> 00:28:19,030
+我可以进来。哎呀，我可以再进来把它缩小
+I can come in. Oops, I can come in again and make it small.
+
+518
+00:28:19,190 --> 00:28:20,150
+我喜欢把它做得小一点
+I like to make it smaller.
+
+519
+00:28:20,230 --> 00:28:22,913
+然后我就多做几个变体，比如，嘿
+And then I'll just make more variations like, hey,
+
+520
+00:28:22,913 --> 00:28:27,320
+请把脸部处理得平滑一些，但不要改变这个人物的样子
+please smooth out the face without changing, like, what the character looks like.
+
+521
+00:28:27,480 --> 00:28:30,159
+然后再加一圈轮廓光晕
+And then also add like an outline glow
+
+522
+00:28:30,159 --> 00:28:35,516
+在他周围加一圈偏白橙色的光，把他和背景分开
+that is like kind of like whitish orange around him to separate him from the
+
+523
+00:28:35,516 --> 00:28:38,800
+同时把那条绿线调亮一点
+background and make the green line brighter.
+
+524
+00:28:40,200 --> 00:28:42,857
+然后我就在这上面反复迭代
+And then I'll just kind of iterate on it
+
+525
+00:28:42,857 --> 00:28:46,760
+这样它就给了你一个这样的起点
+and like this gives you this kind of like starting point.
+
+526
+00:28:47,160 --> 00:28:51,840
+但 Codex 有用的地方在于，Codex 对 Paper 有完全的控制权
+But the, the, the useful part about codex is Codex has full control over paper.
+
+527
+00:28:52,370 --> 00:28:56,153
+嗯，所以它可以直接往里加有用的缩略图，因为再说一次，你知道
+Um, and so it can just like add useful thumbnails to it because again, you know,
+
+528
+00:28:56,153 --> 00:28:59,297
+回到你刚才说的那个，呃，你怎么叫它来着
+going back to what you were saying about, uh, what did you call it,
+
+529
+00:28:59,297 --> 00:29:00,810
+chain prompting 之类的
+chain prompting or something?
+
+530
+00:29:01,330 --> 00:29:02,210
+对，对
+Yeah, yeah.
+
+531
+00:29:02,330 --> 00:29:05,199
+它可以跑出去做一件事，然后再用另一个 Skill
+Can go off, do a thing and then it can use a different skill
+
+532
+00:29:05,199 --> 00:29:08,130
+把它放到画板上，因为它有那个访问权限
+and place it on the board because it has that, that access.
+
+533
+00:29:08,450 --> 00:29:10,956
+对。那你有没有某种，呃，好吧
+And yeah. And do you have some sort of a, uh, okay,
+
+534
+00:29:10,956 --> 00:29:13,650
+所以你现在只是在 Paper 里发提示词，对吧
+so right now you're just prompting in paper, right?
+
+535
+00:29:13,650 --> 00:29:15,450
+用 Wispr Flow。对对对
+With, with whisper flow. Yeah, yeah, yeah.
+
+536
+00:29:15,650 --> 00:29:17,981
+你有没有某种风格指南之类的东西，你知道
+Do you have some sort of like a style guide or some shit like, you know,
+
+537
+00:29:17,981 --> 00:29:19,330
+比如你的文字永远是白色之类的
+your text is always white or something.
+
+538
+00:29:19,850 --> 00:29:20,490
+你不需要那个
+You don't need that.
+
+539
+00:29:20,570 --> 00:29:22,405
+就是，如果有的话，我有，我付费请了
+Like, if so, like I have, I paid,
+
+540
+00:29:22,405 --> 00:29:26,782
+我其实还有一个 YouTube 缩略图设计师，他一直在用 AI
+I actually have a YouTube thumbnail designer too and he uses AI all the time
+
+541
+00:29:26,782 --> 00:29:30,170
+他会帮我处理这些，我实际上会把这些发给他
+and he helps me with this and I'll actually send him these.
+
+542
+00:29:30,690 --> 00:29:32,330
+我可以用这些，效果会挺不错的
+I could use these and it would do pretty well.
+
+543
+00:29:32,410 --> 00:29:37,644
+我很喜欢有个人一直在做 AB 测试之类的所有事情
+I love having someone who is constantly doing the AB testing and everything like we,
+
+544
+00:29:37,644 --> 00:29:40,410
+我做很多 AB 测试，因为，为什么不呢
+I do a lot of AB testing because like, why not?
+
+545
+00:29:40,530 --> 00:29:45,705
+这是值得花钱的，因为如果你的视频表现好一倍
+Like, it's worth paying for because, yeah, like if your video does twice as good,
+
+546
+00:29:45,705 --> 00:29:47,250
+那可是件大事
+like, that's a big deal.
+
+547
+00:29:47,330 --> 00:29:49,850
+你看，它在这里大致做出了轮廓
+See, it kind of made the outline here.
+
+548
+00:29:50,490 --> 00:29:53,530
+但在风格指南方面，如果我想让它看起来像某个东西
+But in terms of style guide, if I want it to look like something,
+
+549
+00:29:53,530 --> 00:29:55,050
+我就把它当作参考
+I'll just use it as a reference.
+
+550
+00:29:55,130 --> 00:29:59,010
+我这里有个地方存了我所有的缩略图
+So here I have somewhere I have all my thumbnails.
+
+551
+00:30:00,040 --> 00:30:04,565
+我不知道放哪了，但比如说我想让它看起来像这个
+Um, I don't know where I put it, but like, let's say I wanted it to look like this,
+
+552
+00:30:04,565 --> 00:30:09,160
+我就直接复制这张缩略图，拉到这里，然后我会说我、我
+I would just like copy this thumbnail, bring it up here, and then I would say I, I.
+
+553
+00:30:09,320 --> 00:30:11,371
+你还可以很轻松地复制多张
+And you can very easily copy multiple.
+
+554
+00:30:11,371 --> 00:30:14,960
+所以我可以直接选中这张，然后再选中这张
+So I can literally cop select this one and then I can select this one.
+
+555
+00:30:15,400 --> 00:30:19,007
+我可以说，请让这个人看起来更像这样
+And I could say like please make the guy look more like this
+
+556
+00:30:19,007 --> 00:30:23,440
+让文字匹配那个写着 missile、mythos 和 fable 的版本
+and make the text match the the one that says missile, mythos and fable.
+
+557
+00:30:24,520 --> 00:30:27,208
+这就是做风格参考的方式
+And like that's how you do style references, you know,
+
+558
+00:30:27,208 --> 00:30:29,120
+你根本不需要写任何 prompt
+and you don't need to do any prompting.
+
+559
+00:30:29,280 --> 00:30:33,800
+你只需要，很多这些图像模型是靠元素来驱动的
+You just have like, um, you know, a lot of these image models are called elements.
+
+560
+00:30:33,960 --> 00:30:38,727
+所以你可以把 prompt 想成，你可以用视觉来 prompt，你可以说
+And so you can just think of prompting. You can prompt in visuals. You can say, look,
+
+561
+00:30:38,727 --> 00:30:40,040
+让它看起来像这样
+make it look like this.
+
+562
+00:30:40,080 --> 00:30:41,000
+让文字看起来像这样
+Make the text look like this.
+
+563
+00:30:41,000 --> 00:30:44,403
+这就是我喜欢这个 board 的原因，我可以直接说
+And so that's kind, that's why I like the board is it's like I can just be like,
+
+564
+00:30:44,403 --> 00:30:45,915
+对，我想让它看起来像这样
+oh yeah, I want it to look like this
+
+565
+00:30:45,915 --> 00:30:49,534
+然后我就用 AI 让它更接近那个样子，如果你懂我的意思。老兄
+and then I'll just use AI to make it look more like that, if that makes sense. Dude,
+
+566
+00:30:49,534 --> 00:30:51,100
+这真的太有教育意义了
+this is, like, super educational.
+
+567
+00:30:51,100 --> 00:30:53,340
+对我来说？好吧，我觉得我现在也要成为 Paper 的用户了
+For me? Okay. I think I'm gonna become a paper customer now, too.
+
+568
+00:30:53,820 --> 00:30:55,140
+对，你百分之百应该这么做
+Yeah, you should 100% do this.
+
+569
+00:30:55,460 --> 00:30:58,910
+对，你百分之百该这么做，把你表现最好的前 10 张缩略图都拿出来
+Yeah, you should 100% do this and get all of your top 10 performing thumbnails
+
+570
+00:30:58,910 --> 00:31:00,420
+然后把它们扔到 board 上，对吧
+and toss them on the board, right?
+
+571
+00:31:00,420 --> 00:31:01,340
+你不一定要用 Codex
+You don't need to use Codex.
+
+572
+00:31:01,460 --> 00:31:04,277
+如果你有我的 YouTube 缩略图 Skill，你就可以直接对 Codex 说
+If you had my YouTube thumbnail skill, you could just say Codex,
+
+573
+00:31:04,277 --> 00:31:05,500
+做那个，然后就搞定了
+do that and it would be done.
+
+574
+00:31:06,150 --> 00:31:07,746
+好吧，老兄。你确实
+All right, dude. Well, well, you definitely, uh,
+
+575
+00:31:07,746 --> 00:31:09,030
+这个缩略图工作流真的震撼到我了
+blew my mind with this thumbnail thing.
+
+576
+00:31:09,310 --> 00:31:12,550
+这真的帮了大忙。我都不知道还能问你什么问题了
+Uh, this, this helps a lot. Yeah, I don't even know what other question to ask you.
+
+577
+00:31:12,590 --> 00:31:15,630
+太厉害了。真的，让人大开眼界
+That's something. So, yeah, so mind, mind blowing, you know.
+
+578
+00:31:15,790 --> 00:31:17,925
+对，我想，我觉得
+Yeah, I mean, and then I think, I think what,
+
+579
+00:31:17,925 --> 00:31:21,602
+如果让我总结的话，归根结底就是找到有用的
+what it all comes down to if I were to like summarize is just like find useful
+
+580
+00:31:21,602 --> 00:31:24,390
+工作流，然后把它们变成 Skill
+workflows and, and, and just like turn them into skills.
+
+581
+00:31:24,950 --> 00:31:26,654
+对，你用的 Skill 越多
+And yeah, the more skills you use,
+
+582
+00:31:26,654 --> 00:31:30,000
+你就越会发现可以混搭组合，就像这里这样
+the more you'll realize that you can mix and match, like this here.
+
+583
+00:31:30,000 --> 00:31:33,160
+这里混合了我的 YouTube researcher Skill。有一天我突然有个想法
+There is a mix between my YouTube researcher skill. I just had an idea one day.
+
+584
+00:31:33,200 --> 00:31:36,080
+我说，嘿，你能把这些图片都拉出来吗
+I'm like, hey, can you pull all these, um, images?
+
+585
+00:31:36,200 --> 00:31:37,908
+然后它把这些以列表形式给了我
+And then it gave it to me in this list
+
+586
+00:31:37,908 --> 00:31:40,440
+然后我还得去我的下载文件夹里看
+and then I had to like go into my downloads and see it.
+
+587
+00:31:40,440 --> 00:31:43,000
+我没法直观地看到。我想，等等，你可以把它加到 Paper 里
+And I couldn't visualize. I was like, oh, wait, you can add it to paper.
+
+588
+00:31:43,280 --> 00:31:46,720
+因为我一直在用 Paper 的 Skill 来做设计，对吧
+And like, because I'd been using the paper skill to create designs, right?
+
+589
+00:31:46,720 --> 00:31:49,950
+Paper 其实不是为图片做的，它是用来
+This is paper's not made for images, really. It's made to, like,
+
+590
+00:31:49,950 --> 00:31:51,840
+你可以让它创建完整的设计
+you can ask it to create full designs.
+
+591
+00:31:52,370 --> 00:31:55,690
+对，它能做到。然后我就想，等等，你能把这个加到 Paper 里吗
+Yeah, like, and it'll do that. And then I was like, wait, can you add this to paper?
+
+592
+00:31:55,690 --> 00:31:58,290
+然后它就给我解锁了一整套全新的工作流
+And then it unlocked this whole new workflow for me.
+
+593
+00:31:58,290 --> 00:32:01,976
+而你会发现，最大的突破
+And you, you'll, you the, the biggest unlocks you'll find
+
+594
+00:32:01,976 --> 00:32:06,047
+在用 AI 时都来自这种实验的过程
+when using AI will come from this like experimentation process
+
+595
+00:32:06,047 --> 00:32:07,890
+这个过程真的很有意思
+that's just like really fun.
+
+596
+00:32:08,170 --> 00:32:11,170
+你会去看 Skill 文件吗，老兄？你只看输出结果，对吧
+Do you like a look at the skill files, man? You know, you just look at the output, right?
+
+597
+00:32:11,170 --> 00:32:16,430
+不，我一次都没看过 Skill 文件。它是基于测试的
+No, I've never looked at a skill file once. Like it's, it's, it's test based.
+
+598
+00:32:16,510 --> 00:32:19,230
+就像是让 AI 去做件事、去用某个 Skill
+Like it's like ask AI to do a thing to use a skill.
+
+599
+00:32:19,310 --> 00:32:23,476
+如果它做得对就好，如果没做好，你就告诉 AI，嘿，你做得不好，然后
+If it does properly, you tell the AI, hey, you didn't do a good job and then, uh,
+
+600
+00:32:23,476 --> 00:32:26,470
+请修改这个 Skill，这样你就不会再犯同样的错
+please change the skill so that you don't do that again.
+
+601
+00:32:26,590 --> 00:32:29,525
+然后你要开一个新的对话，把上下文清空
+Then you want to go to a new chat so the context is cleared
+
+602
+00:32:29,525 --> 00:32:32,651
+这样你就能重新测试一遍，在新对话里测试这个 agent
+so you can kind of test it again, test the agent in a new chat,
+
+603
+00:32:32,651 --> 00:32:34,310
+看它能不能成功完成
+see if it does it successfully.
+
+604
+00:32:34,430 --> 00:32:37,653
+如果成功了，太好了，对吧？而一旦它做错了
+If it does it successfully, great, right? And once it does it incorrectly,
+
+605
+00:32:37,653 --> 00:32:38,900
+你就更新这个 Skill，对吧
+you update the skill, right?
+
+606
+00:32:39,300 --> 00:32:42,726
+这比手动去编辑 Skill 要好得多
+That is the way better way to do it than to like manually edit the skill
+
+607
+00:32:42,726 --> 00:32:45,732
+很多人会说，哦
+and any sort of like, there's a lot of people saying like, oh,
+
+608
+00:32:45,732 --> 00:32:48,016
+你必须这样写你的 Skill，不然的话
+you need to write your skill like this or else,
+
+609
+00:32:48,016 --> 00:32:49,940
+不然它表现就不会好
+or else it's not going to perform well.
+
+610
+00:32:49,980 --> 00:32:52,832
+首先，这只对那个模型成立
+It's like, first of all, that's only true with that model
+
+611
+00:32:52,832 --> 00:32:55,260
+而且只对今天的那个模型成立，对吧
+and it's only true with that model today, right?
+
+612
+00:32:55,660 --> 00:32:57,837
+一旦模型更新了就变了。所以我觉得
+As soon as there's model updates. So I think,
+
+613
+00:32:57,837 --> 00:33:00,190
+我觉得你应该以结果为导向，对吧
+I think you just want to be outcome based, right?
+
+614
+00:33:00,310 --> 00:33:03,468
+给你的 AI 设定一个标准，然后你可以说
+Have hold your AI to a certain standard and then you can say,
+
+615
+00:33:03,468 --> 00:33:07,270
+把它变成一个 Skill，通过衡量结果来改进它
+turn it into a skill and you can improve it by measuring their outcomes.
+
+616
+00:33:07,830 --> 00:33:11,070
+我大部分创意工作流基本都是这么做的。是的
+That's basically how I do it for most creative workflows. Yeah.
+
+617
+00:33:11,070 --> 00:33:14,166
+我感觉很多这样的 Skill 都是为你高度定制的
+And I feel like a lot of these skills are like just super personalized for for you
+
+618
+00:33:14,166 --> 00:33:14,870
+或者说是为我定制的
+or like for for me.
+
+619
+00:33:14,950 --> 00:33:15,870
+这正是它的厉害之处，对吧
+That's kind of the power, right?
+
+620
+00:33:15,870 --> 00:33:19,258
+我觉得这就是为什么 Skill 正在取代很多 SaaS 的东西
+I, I feel like that's why skills is kind of taking over a lot of the Saas stuff
+
+621
+00:33:19,258 --> 00:33:22,700
+因为你没法把一个 SaaS 产品做得这么个性化
+cause like, you know, you can't make a Sass product as personalized as this.
+
+622
+00:33:23,580 --> 00:33:28,540
+是的。不过我要补充一句，这是针对我的创意工作流的，对吧
+Yes. And actually I will caveat that with this is for my creative workflows, right?
+
+623
+00:33:28,620 --> 00:33:30,546
+因为它们风险很低，你懂的，如果
+If they're very low risk, you know, if,
+
+624
+00:33:30,546 --> 00:33:33,074
+如果我们在做一些关键任务
+if we were doing some like mission critical thing,
+
+625
+00:33:33,074 --> 00:33:36,746
+我们确实会遇到，比如在跟客户打交道时
+which we actually do like without when we're like dealing with clients or
+
+626
+00:33:36,746 --> 00:33:41,140
+或者涉及付款或敏感文件之类的事情
+when it has to do with anything that has to do with like payments or sensitive documents.
+
+627
+00:33:41,500 --> 00:33:44,820
+那我们就会进去分析这些 Skill，会有一套流程
+Yes, we'll go in and analyze the skills and there's kind of like a process.
+
+628
+00:33:44,940 --> 00:33:48,670
+如果影响特别大，我们会找别人来分析这个 Skill
+We'll get someone else to analyze the skill if it's super high like impact.
+
+629
+00:33:48,910 --> 00:33:51,990
+但对我的创意工作流，你要意识到根本没什么风险
+But for my creative workflows, just realize that there's no risk.
+
+630
+00:33:52,110 --> 00:33:54,750
+就放手让你的 AI 去做，然后让它做得更好
+Just just let your AI cook and tell it to do a better job.
+
+631
+00:33:55,670 --> 00:34:02,870
+然后，对我来说下一步就是搞清楚怎么把这套东西做给我的团队用
+And then, yeah, the next thing for me is figuring out how to make this for my team.
+
+632
+00:34:03,030 --> 00:34:07,622
+我觉得这正是 Codex 和 Claude，或者说 Anthropic 和 OpenAI
+And that's what I think Codex and Claude or anthropic and open AI,
+
+633
+00:34:07,622 --> 00:34:11,534
+正在努力搞清楚的，就是你要怎么
+they're trying to figure out, it's like, how do you, uh,
+
+634
+00:34:11,534 --> 00:34:13,830
+让这套流程在团队里跑起来
+enable this process with teams?
+
+635
+00:34:14,030 --> 00:34:16,460
+这会是个非常有意思的局面
+And that's gonna be a really interesting situation.
+
+636
+00:34:16,460 --> 00:34:18,670
+感觉 Anthropic 是在瞄准 Slack
+And it feels like anthropics going after Slack.
+
+637
+00:34:19,350 --> 00:34:24,270
+所以这也许就是下一波浪潮
+Um, and so that's kind of the next wave maybe.
+
+638
+00:34:24,430 --> 00:34:26,713
+我还没完全被 Slack 作为交互界面这个想法说服
+I'm not fully sold on Slack as the interface,
+
+639
+00:34:26,713 --> 00:34:31,031
+但那里确实有一些非常有意思的事情正在发生
+but like it's it there's something really interesting going on there that um, yeah,
+
+640
+00:34:31,031 --> 00:34:32,820
+我觉得它真的很有意思
+I find it to be really interesting.
+
+641
+00:34:32,940 --> 00:34:34,100
+是的，我觉得你说得对
+Yeah, I, I think you're right.
+
+642
+00:34:34,100 --> 00:34:37,900
+我觉得 Codex 这个 app 再好，它也是个单人体验，对吧
+I think like as good as the Codex app is, it's like a single player experience, right?
+
+643
+00:34:37,980 --> 00:34:39,820
+除了像提交 PR 之类的事情
+Other than like, you know, putting PRs up and stuff?
+
+644
+00:34:40,580 --> 00:34:41,860
+对，它基本上就是个单人体验
+Yeah, it's pretty much a single player experience.
+
+645
+00:34:42,420 --> 00:34:45,505
+它是单人的，而且很难去创建这些创意工作流
+It is single player and it's really hard to create these creative workflows
+
+646
+00:34:45,505 --> 00:34:48,100
+还要以多人协作的方式来做，这是我经常在想的问题
+and in a multiplayer way, which is something I think about a lot.
+
+647
+00:34:48,140 --> 00:34:49,460
+所以，是的
+So, yeah.
+
+648
+00:34:49,540 --> 00:34:54,103
+你有没有搭一堆自动化，帮你干活那种？有的
+Do you have like a bunch of automation setup that kind of do work for you like, yes,
+
+649
+00:34:54,103 --> 00:34:56,010
+我搭了很多自动化
+I I have a lot of automation set up.
+
+650
+00:34:56,010 --> 00:34:58,275
+我不用 Codex 来做自动化，只是因为
+I don't use Codex for my automation simply
+
+651
+00:34:58,275 --> 00:35:01,770
+我不想为了跑这些任务而必须让我的电脑一直开着
+because I don't want my computer to have to be on, uh, to run those.
+
+652
+00:35:02,010 --> 00:35:06,690
+所以我用云端 agents。对，我有很多云端 agents
+Um, and so I have cloud agents. Yeah, and so like, I have a lot of cloud agents.
+
+653
+00:35:06,770 --> 00:35:10,130
+其实我在这期节目开始前刚做了一个 Peter Yang bot
+In fact, I created a Peter Yang bot right before this episode.
+
+654
+00:35:10,370 --> 00:35:13,092
+我本来没做，是因为要给你演示才做的
+I didn't create it until I was gonna show you
+
+655
+00:35:13,092 --> 00:35:15,965
+但它并不复杂，我大概五分钟就做好了
+but like it's not I I I created in like 5 minutes
+
+656
+00:35:15,965 --> 00:35:21,030
+比如我在 Slack 里有一个我的首席营销官 agent
+so like I have like my chief my chief marketing officer agent that I have in Slack.
+
+657
+00:35:21,550 --> 00:35:24,670
+他会给我发，这家伙会给我发
+Like, he sends me, um, this guy, he sends me, um,
+
+658
+00:35:24,670 --> 00:35:30,110
+各种更新，然后我还有一个叫 Content Man 的家伙，它会分析一堆别人的
+updates and then I have another guy named Content Man who analyzes a bunch of other
+
+659
+00:35:30,110 --> 00:35:35,470
+内容，然后直接给我短视频的选题创意
+people's content and it'll just like give me video ideas for short form content.
+
+660
+00:35:35,860 --> 00:35:38,356
+所以我有一个小频道，叫 my agents
+And so I have this little channel called my agents.
+
+661
+00:35:38,356 --> 00:35:40,020
+我这里有三个 agent
+And so I have three agents in here.
+
+662
+00:35:40,620 --> 00:35:44,280
+其中一个是 Peter Yang bot，用你所有的 YouTube 视频训练出来的
+One of them is Peter Yang bot, which is trained on all your YouTube videos,
+
+663
+00:35:44,280 --> 00:35:46,740
+但我没来得及把它调好
+but I didn't finish it in time to like make it good.
+
+664
+00:35:47,500 --> 00:35:51,227
+没关系，没关系。那这些 agent 是基于你自己的产品 Chorus
+No problem. No problem. So so these agents are based on your own product, Chorus,
+
+665
+00:35:51,227 --> 00:35:52,340
+还是基于类似我们的东西
+or is it based on like us?
+
+666
+00:35:52,700 --> 00:35:57,660
+是的，我们一直在用各种不同的产品来测试它
+Yeah, we've been testing it with all of our, all a bunch of different products.
+
+667
+00:35:57,860 --> 00:36:00,414
+这三个 agent 主要是在 Chorus 上创建的
+These three agents are core, um, created on Chorus,
+
+668
+00:36:00,414 --> 00:36:03,680
+但市面上有很多产品都能用来创建 agent
+but there's a lot of products out there that you can create agents.
+
+669
+00:36:03,760 --> 00:36:09,318
+我只是建议大家去试试，因为还没人搞明白这个
+And I just recommend trying it because no one's figured this out yet, you know,
+
+670
+00:36:09,318 --> 00:36:15,217
+还没人搞明白怎么创建一整队在 Slack 里运行的 agent
+no one's figured out how to, like, create a team of agents running in Slack that, um,
+
+671
+00:36:15,217 --> 00:36:17,440
+让你整个团队都能用
+that your whole team can use it.
+
+672
+00:36:17,560 --> 00:36:19,280
+这真的是个很难解决的问题
+It's like a really tough problem to solve.
+
+673
+00:36:19,880 --> 00:36:24,323
+Anthropic 的做法是，他们想造一个小型的
+The way Anthropic's trying to do it is they're trying to build like a little mini,
+
+674
+00:36:24,323 --> 00:36:28,700
+说得难听点就是无所不知的“神”，而其他公司
+for lack of better term, god that knows everything where, uh, other companies,
+
+675
+00:36:28,700 --> 00:36:32,480
+包括我们，我们的想法是把每个 agent 当成团队成员
+including us, where we think of it like each one will be team members.
+
+676
+00:36:32,560 --> 00:36:36,277
+比如你会 @ 你的 marketing agent，也会 @ 你的 developer agent
+So like you'll tag your marketing agent and you'll also tag your developer agent,
+
+677
+00:36:36,277 --> 00:36:37,480
+公司的 developer agent
+company developer agent.
+
+678
+00:36:38,040 --> 00:36:41,882
+而且你和每个 agent 之间都会有某种关系
+Um, and each, you'll kind of have a relationship with the agent, um,
+
+679
+00:36:41,882 --> 00:36:46,411
+就像对每个人一样，它会根据它对这个人的了解
+like each person, it'll react differently to each person based on what it knows
+
+680
+00:36:46,411 --> 00:36:47,440
+对不同的人做出不同的反应
+about the person.
+
+681
+00:36:47,860 --> 00:36:50,700
+有一大堆问题需要被解决
+There's, like, a whole bunch of problems that need to get solved.
+
+682
+00:36:51,100 --> 00:36:56,752
+但你可以很轻松地把你的 Codex Skill 导出到这些 cloud agent 里
+But you can very easily export your Codex skills into these cloud agents,
+
+683
+00:36:56,752 --> 00:36:58,420
+这真的很好玩
+which are really fun.
+
+684
+00:36:58,700 --> 00:37:02,221
+所以，是的，我们做了很多试验，不过 cloud agent
+And so, yeah, it's just been a lot of experimentation but cloud agents, uh,
+
+685
+00:37:02,221 --> 00:37:04,265
+你纠正我一下，如果我想调整点东西
+tell me wrong if if I want to tweak something
+
+686
+00:37:04,265 --> 00:37:07,900
+需要登录某种 app 的时候，cloud agent 做不到，对吧
+where I'm signing to like some sort of app, cloud agents can't do that, right?
+
+687
+00:37:07,900 --> 00:37:09,420
+或者说它们需要你的登录凭证
+Or like they need your credentials.
+
+688
+00:37:09,780 --> 00:37:12,956
+是的，我是说，有了 browser use
+Yeah, I mean, there's with a, with browser use, there's,
+
+689
+00:37:12,956 --> 00:37:14,713
+我预测到今年年底
+I predict by the end of the year,
+
+690
+00:37:14,713 --> 00:37:17,348
+你就能登录你所有的 app
+you'll be able to be signed into all of your apps
+
+691
+00:37:17,348 --> 00:37:21,740
+你的 agent 能用某个浏览器，而你甚至都察觉不到
+and your agent will be able to use some browser and you won't even be aware of it.
+
+692
+00:37:21,740 --> 00:37:25,905
+它就能几乎完美地使用浏览器，而且它
+Like it'll just be able to use a browser, um, almost perfectly well, and it will,
+
+693
+00:37:25,905 --> 00:37:27,420
+它能保持登录状态
+it'll be able to be signed in.
+
+694
+00:37:27,900 --> 00:37:30,921
+我觉得这也是那些大实验室、大公司想做的事
+Um, and I think this is something that the big labs come companies want to do
+
+695
+00:37:30,921 --> 00:37:33,600
+比如能在云端控制一个浏览器
+as well, like browser being able to control a browser in the cloud.
+
+696
+00:37:34,240 --> 00:37:37,320
+而且它对自动化和 cron 定时任务也友好得多
+Um, it's much better for automations and cron jobs as well.
+
+697
+00:37:37,400 --> 00:37:39,928
+我不知道你有没有在 Codex 里设置过自动化
+Like, I don't know if you have any automation set up in Codex,
+
+698
+00:37:39,928 --> 00:37:41,040
+但那有点烦人
+but it is kind of annoying.
+
+699
+00:37:41,520 --> 00:37:46,360
+我现在一个都没设。我在我的小 Mac mini 上跑 Codex
+Um, like, I have none set up right now. I have Codex running on my little Mac mini.
+
+700
+00:37:46,520 --> 00:37:50,109
+我在那上面设了一些自动化，算是这样绕过去的，不过
+I have some automations there but that that's kind of how I get around it but, um,
+
+701
+00:37:50,109 --> 00:37:53,099
+对对，这说得通，但如果是另一台单独的电脑
+yeah, yeah, that makes sense but then if it's a separate computer,
+
+702
+00:37:53,099 --> 00:37:55,220
+它就访问不到你的核心文件
+it doesn't have access to like your core files.
+
+703
+00:37:55,380 --> 00:37:58,743
+而那些文件可能很重要。是的，这挺让人头疼的。是的
+Which might be important. Yeah, like it's pain in the ass. Yeah,
+
+704
+00:37:58,743 --> 00:38:00,900
+在很多方面都让人头疼
+pain in the ass in so many different ways.
+
+705
+00:38:00,980 --> 00:38:05,695
+每种 agent 类型都有各自的取舍
+Like every, every agent type has its trade offs, which, um,
+
+706
+00:38:05,695 --> 00:38:08,100
+这是我们现在正看到的
+which we're seeing right now.
+
+707
+00:38:08,140 --> 00:38:11,382
+我们都在努力，所有公司都在琢磨做 agent 的正确方式
+We're trying to fit like all the companies are trying to figure out like the right
+
+708
+00:38:11,382 --> 00:38:12,060
+做 agent 的正确方式
+way to do agents.
+
+709
+00:38:12,570 --> 00:38:15,730
+是的，也许还要再花六个月才能搞清楚最好的做法
+And yeah, maybe it'll take another six months to figure out the best way to do it.
+
+710
+00:38:16,530 --> 00:38:18,088
+酷。好的，兄弟。那我
+Cool. Alright, dude. Well, let me,
+
+711
+00:38:18,088 --> 00:38:21,850
+我问你最后一个关于整体业务的问题，好吗
+let me ask you one last question on kind of the overall, the overall business, right?
+
+712
+00:38:21,890 --> 00:38:25,009
+我觉得，作为一个内容创作者
+So, so I feel like the content from one content creator to another,
+
+713
+00:38:25,009 --> 00:38:28,299
+我觉得单是把受众做大、拿到更多赞助
+I feel like just growing the audience and getting more sponsorships,
+
+714
+00:38:28,299 --> 00:38:31,872
+这就是一条相当稳妥的路，因为有很多 AI 公司都想要
+that's kind of a surefire path because there's a lot of AI companies who want
+
+715
+00:38:31,872 --> 00:38:33,290
+分发和关注度
+distribution and attention.
+
+716
+00:38:33,720 --> 00:38:33,920
+没错
+Sure.
+
+717
+00:38:33,920 --> 00:38:36,342
+然后也有大量需求，就像你说的
+And then there's also like a lot of demand, you know, like you said,
+
+718
+00:38:36,342 --> 00:38:38,719
+有很多公司都有需求，它们想构建 agent
+there's a lot of demand from companies that want to build agents,
+
+719
+00:38:38,719 --> 00:38:39,600
+培训自己的员工
+train their employees.
+
+720
+00:38:40,280 --> 00:38:40,560
+对
+Right.
+
+721
+00:38:41,360 --> 00:38:43,634
+但是，如果真的要做出一个产品
+But, but like in terms of actually building like a product,
+
+722
+00:38:43,634 --> 00:38:46,000
+做一个 SaaS 产品要难得多
+that's like a lot more difficult to build like a SaaS product.
+
+723
+00:38:46,200 --> 00:38:47,560
+确实要难得多
+It is a lot more difficult to do.
+
+724
+00:38:47,640 --> 00:38:52,414
+我接品牌赞助，也插播中段广告，这生意很好。我是说
+And I do brand sponsorships and I run mid roll ads and it's a great business. I mean,
+
+725
+00:38:52,414 --> 00:38:54,240
+这生意好得离谱。是的
+it's an insane business. Yeah.
+
+726
+00:38:55,270 --> 00:38:59,731
+是的，我完全可以就此功成身退
+Yeah, like and it is, I could very easily just kind of ride off into the sunset
+
+727
+00:38:59,731 --> 00:39:02,280
+靠做内容过上很不错的生活
+and make a very good living making content.
+
+728
+00:39:02,880 --> 00:39:05,685
+但我觉得如果那样做，我的内容会慢慢枯竭
+Um, I think my content would run dry if I did so
+
+729
+00:39:05,685 --> 00:39:09,552
+因为我是在一线实战里学到东西的，我很享受这个
+because I learn being in the trenches, you know, like I enjoy,
+
+730
+00:39:09,552 --> 00:39:14,556
+我之所以对 Codex 懂那么多，就是因为我每天都跟开发者待在一起
+the only reason I know a ton about Codex is I spend time with developers every day
+
+731
+00:39:14,556 --> 00:39:19,560
+他们会教我很多很酷的东西。你懂的，我每天都在学
+who, like, teach me really cool things. You know, like, every day I'm learning.
+
+732
+00:39:19,640 --> 00:39:20,760
+每天学个三四样
+Like three or four things.
+
+733
+00:39:20,760 --> 00:39:22,488
+而且我们其实是，你懂的
+And we're actually like, you know,
+
+734
+00:39:22,488 --> 00:39:25,587
+我做的内容里，我是真的想帮到别人，呃
+in the content that I make is I actually want to help people, uh,
+
+735
+00:39:25,587 --> 00:39:28,030
+帮他们把 agents 落地到自己的业务里，你懂的
+implement agents into their business, you know,
+
+736
+00:39:28,030 --> 00:39:30,950
+我想做一个非常有用、也能激励人的创作者
+I want to be a very useful creator and a motivating creator.
+
+737
+00:39:31,510 --> 00:39:34,590
+是的，如果我只是做内容，我觉得我做不到这些
+And, yeah, I don't think I could do that if I was just making content.
+
+738
+00:39:35,030 --> 00:39:39,342
+然后，呃，所以，是的，我觉得去做一些事，尤其是咨询这类
+And then, um, and so, yeah, I think doing can like, especially like consulting stuff,
+
+739
+00:39:39,342 --> 00:39:43,532
+我觉得真的很有帮助，特别是如果你能组建一支很有才华的团队
+I think it really does help, especially if you build, like, a really talented team,
+
+740
+00:39:43,532 --> 00:39:45,840
+你懂的，我的目标是只做内容
+you know, my goal is to only be making content.
+
+741
+00:39:46,120 --> 00:39:50,426
+我还是可以通过漏斗顶端为业务做贡献，但理想情况下
+I can still contribute to the business through top of funnel, but ideally,
+
+742
+00:39:50,426 --> 00:39:52,509
+我所做的全部就只是做内容
+like all I'm doing is making content
+
+743
+00:39:52,509 --> 00:39:56,120
+而你只需要给自己配一支很好的团队
+and you just have to surround yourself with a really good team.
+
+744
+00:39:56,600 --> 00:40:00,384
+有很多有才华的人很乐意跟你合作
+And there's a lot of talented people who would love to partner with you
+
+745
+00:40:00,384 --> 00:40:02,732
+帮你完成打造产品的所有工作
+and do all of the work in creating a product,
+
+746
+00:40:02,732 --> 00:40:06,320
+我觉得你会从中学到很多，处在你这个位置的任何人都是
+and I think you would learn a lot from it or anyone in your position.
+
+747
+00:40:06,820 --> 00:40:10,340
+呃，是的，只是前期要投入的工作确实很多
+Um, yeah, it is just there's a lot of upfront work that goes along.
+
+748
+00:40:10,740 --> 00:40:12,620
+是的，我不想只是，呃，我也一样
+Yeah. I don't want to just be, uh, same, same here.
+
+749
+00:40:12,620 --> 00:40:15,720
+我不想只做内容，或者变成某种新闻聚合器
+I don't want to just only make content or like be like some sort of news aggregator,
+
+750
+00:40:15,720 --> 00:40:17,863
+你懂的，我是真的想学会怎么做出这些东西
+you know, I want to actually learn how to build the stuff,
+
+751
+00:40:17,863 --> 00:40:19,140
+然后聊聊这个搭建的过程
+talk about the building process.
+
+752
+00:40:19,620 --> 00:40:23,260
+所以完全同意。我是说，就像 Twitter 上的 Pieter Levels 那样
+So hundred percent. I mean, yeah, like, like, you know, Peter levels on Twitter.
+
+753
+00:40:24,100 --> 00:40:26,900
+是的，他其实根本当不了那种纯内容创作者
+Yeah. You know, like he could never be a content creator.
+
+754
+00:40:26,980 --> 00:40:30,475
+他之所以有意思，是因为他会聊他做出来的东西
+Like he, he's only interesting because he talks about the things he's built in the
+
+755
+00:40:30,475 --> 00:40:31,760
+以及他经历过的那些事
+experiences he goes through.
+
+756
+00:40:31,760 --> 00:40:33,360
+所以我大概就是这么想的
+And so that's kind of how I think about it.
+
+757
+00:40:33,360 --> 00:40:36,491
+你懂的，我想成为的那种创作者，就是真正在
+It's like, you know, that that's the creator I want to be is someone actually like
+
+758
+00:40:36,491 --> 00:40:38,080
+尝试搭建、并使用这项技术的人
+trying to build and use this technology.
+
+759
+00:40:38,320 --> 00:40:42,090
+是的，他是少数几个真正非常成功的人之一
+And yeah, yeah, he's one of the few folks who actually have a very successful,
+
+760
+00:40:42,090 --> 00:40:46,095
+手里有一堆成功的 SaaS 公司，因为他的分发量特别高
+like a bunch of successful SAS companies because his distribution is so high and,
+
+761
+00:40:46,095 --> 00:40:49,040
+不过，他也有很多失败的公司
+and no, but a lot of failed, a lot of failed companies as well.
+
+762
+00:40:49,160 --> 00:40:51,180
+他大概失败了 40 次
+He's failed like 40 times.
+
+763
+00:40:51,300 --> 00:40:54,173
+呃，他就是不断挥棒尝试，这一点，呃
+Um, he just takes a ton of swings at bat, which is, uh,
+
+764
+00:40:54,173 --> 00:40:57,780
+也是让他特别有意思的地方之一
+which is what also something that makes him really interesting.
+
+765
+00:40:58,500 --> 00:41:01,380
+酷。好的，我想大家都知道在网上哪里能找到你
+Cool. All right. Well, I think people know where to find you online.
+
+766
+00:41:01,780 --> 00:41:03,794
+你要不要介绍一下你的新产品
+Do you want to do like a pitch for your new product,
+
+767
+00:41:03,794 --> 00:41:05,660
+Chorus，还是我们下次再聊
+Chorus or or should we talk about it next time?
+
+768
+00:41:05,820 --> 00:41:09,220
+我是说，是的，呃，我们在做，你懂的，Claude tag 刚刚发布
+I mean, yeah, I mean, uh, we're, we're building, you know, Claude tag just came out.
+
+769
+00:41:09,380 --> 00:41:13,020
+Claude，呃，是一个能让你在 Slack 里 @Claude 的功能
+Claude, uh, is a product that allows you to tag Claude in Slack.
+
+770
+00:41:13,460 --> 00:41:15,660
+呃，然后你所有的 Skill 都在云端搭好了
+Um, and then you have all your skills built in the cloud.
+
+771
+00:41:15,900 --> 00:41:17,940
+我们在做一个能让你使用任何模型的产品
+We're building a product that allows you to use any model.
+
+772
+00:41:18,380 --> 00:41:21,141
+呃，你可以在 iMessage 里给它发消息，也可以在 Slack 里发
+Um, you can message it in imessage, you can message it in Slack,
+
+773
+00:41:21,141 --> 00:41:24,220
+你还可以把它加进群聊，这是我们用户最喜欢的功能
+you can add it to group messages, which is what our users like the most.
+
+774
+00:41:24,580 --> 00:41:26,940
+我们一直在迭代，努力帮到各类企业
+And we're constantly iterating trying to help businesses.
+
+775
+00:41:27,100 --> 00:41:29,705
+现在，我其实卖产品卖得没那么多
+Right now, I'm not even really selling the product as much
+
+776
+00:41:29,705 --> 00:41:32,527
+更多是在卖我们的服务，因为很多公司想跟我们合作
+as selling our services because companies want to work with us
+
+777
+00:41:32,527 --> 00:41:35,620
+然后我们用 Chorus 帮他们把 agents 落地到业务里
+and then we're using Chorus to implement agents for their business.
+
+778
+00:41:35,700 --> 00:41:38,060
+而这，是的，对我们来说是个巨大的增长动力
+And that's, yeah, just like an insane driver for us.
+
+779
+00:41:38,890 --> 00:41:40,916
+酷。好的，你真的很鼓舞人，兄弟
+Cool. All right. Well, you're an inspiration, man.
+
+780
+00:41:40,916 --> 00:41:43,130
+谢谢你这么坦诚，把整个流程都分享出来
+Thanks for being so open and sharing your whole process.
+
+781
+00:41:43,690 --> 00:41:46,510
+我个人也学到了超多东西，太感谢了，太棒了，是的
+And I personally learned a ton. So thanks so much. Amazing. Yeah.
+
+782
+00:41:46,510 --> 00:41:47,450
+谢谢你邀请我来
+Thanks for having me.

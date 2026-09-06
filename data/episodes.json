@@ -59,6 +59,35 @@
     "subtitle_file": "84 minutes of enterprise sales alpha Jen Abel - Lenny's Podcast (youtube).OPUS4-8有翻译参考资料版.术语小修去标点版.双语.中文在上.srt"
   },
   {
+    "title": "用 Claude Code 做好 AI 评估的 5 个步骤",
+    "bilibili_title": "用 Claude Code 做好 AI 评估的 5 个步骤｜Shreya & Hamel",
+    "original_title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+    "published_at": "2026-08-23 00:00:00",
+    "up": "通用人工智障",
+    "duration": "53:52",
+    "speakers": [
+      "Peter Yang",
+      "Shreya Shankar",
+      "Hamel Husain"
+    ],
+    "folder_title": "用 Claude Code 做好 AI 评估的 5 个步骤",
+    "path": "videos/undated-052_how-to-build-better-ai-evals-with-claude-code-in-5-steps/",
+    "slug": "undated-052_how-to-build-better-ai-evals-with-claude-code-in-5-steps",
+    "cover": "cover.jpeg",
+    "outline_count": 5,
+    "subtitle_count": 1,
+    "outline_files": [
+      "用 Claude Code 做好 AI 评估的 5 个步骤_01.png",
+      "用 Claude Code 做好 AI 评估的 5 个步骤_02.png",
+      "用 Claude Code 做好 AI 评估的 5 个步骤_03.png",
+      "用 Claude Code 做好 AI 评估的 5 个步骤_04.png",
+      "用 Claude Code 做好 AI 评估的 5 个步骤_05.png"
+    ],
+    "subtitle_file": "12_AIEvals_ClaudeCode.OPUS4-8有翻译参考资料版.双语.中文在上.术语ASR校正去标点版.srt"
+  },
+  {
     "title": "OpenAI 设计负责人：现在是设计师最好的时代",
     "bilibili_title": "OpenAI 设计负责人：现在是设计师最好的时代｜Ian Silber",
     "original_title": "What happens now that AI can design? | OpenAI, Head of Design (Ian Silber)",
@@ -115,6 +144,33 @@
       "06.png"
     ],
     "subtitle_file": "Susan Kare Designing Icons & Graphics For the Original Mac - Y Combinator (youtube).OPUS4-8有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "白宫如何制定 AI 战略",
+    "bilibili_title": "白宫如何制定 AI 战略｜Michael Kratsios",
+    "original_title": "Michael Kratsios: Inside the White House's AI Strategy",
+    "bilibili_url": "",
+    "youtube_url": "https://www.youtube.com/watch?v=zLUZclThLhU",
+    "published_at": "2026-08-18 00:00:00",
+    "up": "通用人工智障",
+    "duration": "39:44",
+    "speakers": [
+      "Michael Kratsios"
+    ],
+    "folder_title": "白宫如何制定 AI 战略",
+    "path": "videos/undated-051_michael-kratsios-inside-the-white-house-ai-strategy/",
+    "slug": "undated-051_michael-kratsios-inside-the-white-house-ai-strategy",
+    "cover": "cover.jpeg",
+    "outline_count": 5,
+    "subtitle_count": 1,
+    "outline_files": [
+      "白宫如何制定 AI 战略_01.png",
+      "白宫如何制定 AI 战略_02.png",
+      "白宫如何制定 AI 战略_03.png",
+      "白宫如何制定 AI 战略_04.png",
+      "白宫如何制定 AI 战略_05.png"
+    ],
+    "subtitle_file": "11_MichaelKratsios_WhiteHouseAI.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修去标点版.srt"
   },
   {
     "title": "如何在 agent 时代做设计",

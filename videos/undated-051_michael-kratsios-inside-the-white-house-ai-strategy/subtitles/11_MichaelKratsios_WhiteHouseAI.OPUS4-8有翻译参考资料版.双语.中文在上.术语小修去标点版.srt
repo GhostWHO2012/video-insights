@@ -1,0 +1,3554 @@
+1
+00:00:08,540 --> 00:00:11,180
+Michael，欢迎来到 Y Combinator Startup School
+Michael, welcome to Y Combinator Startup School.
+
+2
+00:00:12,900 --> 00:00:16,700
+现场观众很棒，今天真是精彩的一天
+We've got an amazing crowd here. It's been an amazing day.
+
+3
+00:00:17,140 --> 00:00:20,938
+我很期待聊聊 AI 政策
+And really excited to talk about AI policy
+
+4
+00:00:20,938 --> 00:00:25,820
+以及你在白宫、在特朗普总统手下担任的角色
+and your role at the White House with President Trump.
+
+5
+00:00:26,900 --> 00:00:29,900
+但我想先向观众介绍一下你的背景
+But I wanted to tell the audience a little bit about your background.
+
+6
+00:00:30,540 --> 00:00:35,016
+首先，Michael Kratsios（迈克尔·克拉齐奥斯）是白宫
+Um, uh, first of all, Michael Kratsios is director of the White House's Office of
+
+7
+00:00:35,016 --> 00:00:36,820
+科技政策办公室（OSTP）主任
+science and Technology Policy.
+
+8
+00:00:36,940 --> 00:00:40,882
+他是总统在科学技术方面的首席顾问
+He's the president's top advisor on science and technology
+
+9
+00:00:40,882 --> 00:00:45,140
+也是美国国家 AI 战略的关键设计者之一
+and one of the key architects of America's national AI strategy.
+
+10
+00:00:46,060 --> 00:00:50,086
+他曾在特朗普总统第一任期担任美国首席技术官
+He previously served as the country's chief technology officer in the first term
+
+11
+00:00:50,086 --> 00:00:53,580
+在那时主导了早期的联邦 AI 计划
+after President Trump, where he led the early federal AI initiatives.
+
+12
+00:00:54,580 --> 00:00:59,220
+在两次政府任职之间，他担任过 Scale AI 的首席运营官
+He was the chief operating officer of Scale AI in between government tours.
+
+13
+00:00:59,380 --> 00:01:02,578
+所以他既从一家高速增长的创业公司内部见过前沿
+So he's seen the frontier from both inside a hyper growth startup
+
+14
+00:01:02,578 --> 00:01:03,940
+也从白宫内部见过
+and inside the White House.
+
+15
+00:01:04,620 --> 00:01:08,140
+我们今天就来聊聊华盛顿到底怎么看待 AI
+And so we're going to talk about how Washington actually thinks about AI.
+
+16
+00:01:10,100 --> 00:01:12,611
+那我们开始吧，你
+So, uh, I want to get in, you know, you,
+
+17
+00:01:12,611 --> 00:01:16,337
+你从政府去了私营部门
+you have gone from the government to the private sector
+
+18
+00:01:16,337 --> 00:01:21,440
+然后又回到了政府，这其实并不常见
+and you went back into the government, which is actually not a common thing.
+
+19
+00:01:21,520 --> 00:01:28,584
+我觉得这说明了你的品格，Michael，因为你知道
+And I think it speaks, uh, uh, to your character, Michael, because the, um, you know,
+
+20
+00:01:28,584 --> 00:01:32,520
+公共服务并不轻松，是一种牺牲
+public services not easy and it is a sacrifice.
+
+21
+00:01:32,720 --> 00:01:37,014
+你本可以在外面赚更多的钱
+You know, you could be out making a lot more money doing, you know,
+
+22
+00:01:37,014 --> 00:01:42,502
+天知道以你的人脉，你能选什么样的职位
+God knows what your, your choice of roles, given the level of connections you have,
+
+23
+00:01:42,502 --> 00:01:46,160
+以你的背景，你为什么选择做这份工作
+the, your background, why do you choose to do this work.
+
+24
+00:01:47,000 --> 00:01:49,920
+对我来说，我从根本上相信
+You know, to, to me, I, I fundamentally believe that.
+
+25
+00:01:51,120 --> 00:01:56,293
+美国在这些新兴技术上的领导地位，是我们这个时代
+American leadership in these emerging technologies is one of the most critical
+
+26
+00:01:56,293 --> 00:01:57,760
+最关键的问题之一
+questions of our time.
+
+27
+00:01:58,040 --> 00:02:01,727
+要让美国人民享受到 AI 将带来的所有好处
+For the American people to have all these benefits that AI is going to offer,
+
+28
+00:02:01,727 --> 00:02:06,000
+我们就必须确保监管环境能让它成功
+we have to make sure that we have regulatory environment that allows that that succeed.
+
+29
+00:02:06,120 --> 00:02:10,517
+对我来说，甚至有点自私地讲，我觉得
+And to me, I think even a little bit somewhat selfishly, I think there is,
+
+30
+00:02:10,517 --> 00:02:15,280
+没有哪个地方能像美国政府这样，让你处理更大的问题
+there is no place where you can work on bigger problems than the US government.
+
+31
+00:02:15,720 --> 00:02:17,474
+哪怕是在世界上最大的科技公司
+Even at the the biggest tech companies in the world,
+
+32
+00:02:17,474 --> 00:02:19,840
+你也永远碰不到这种规模的问题
+you're never going to be dealing with problems of this, of this scale.
+
+33
+00:02:19,960 --> 00:02:22,378
+所以，能参与其中
+So, um, being able to work on that is, is something that,
+
+34
+00:02:22,378 --> 00:02:24,480
+是让我觉得非常有成就感、非常充实的事
+that I find very rewarding and very fulfilling.
+
+35
+00:02:25,000 --> 00:02:29,277
+我深深相信，我们必须找到持续赢下去的方法
+Um, and I just deeply believe that we, we have to find a way to keep winning and, uh,
+
+36
+00:02:29,277 --> 00:02:31,129
+而政府，你知道
+and the government, you know, can,
+
+37
+00:02:31,129 --> 00:02:34,640
+要么能帮上忙，要么很不幸地把事情搞砸
+can either help or they can unfortunately kind of screw things up.
+
+38
+00:02:34,680 --> 00:02:36,999
+所以能在那里努力把方向摆正
+So, so being there to, to try to put in the right direction,
+
+39
+00:02:36,999 --> 00:02:38,400
+是我每天都乐在其中的事
+something I enjoy doing every day.
+
+40
+00:02:38,960 --> 00:02:42,680
+我们把时间倒回去。你到底是怎么走到这一步的
+Let's go re, rewind the clock. How did you even find yourself in this place?
+
+41
+00:02:42,720 --> 00:02:45,122
+我其实非常好奇
+I'm really actually curious, you know,
+
+42
+00:02:45,122 --> 00:02:48,107
+你人生中是从什么时候起就知道
+at what point did you in your life did you just know
+
+43
+00:02:48,107 --> 00:02:52,401
+自己会对科学、技术、这整个
+that you were going to be passionate about science, technology, this,
+
+44
+00:02:52,401 --> 00:02:56,769
+领域充满热情？我不知道，是 14 岁，甚至更早
+this whole field like, I don't know, like 14 year old or even earlier. Uh,
+
+45
+00:02:56,769 --> 00:02:58,880
+Michael Kratsios，一直到差不多——
+Michael Kratsios and up until sort.
+
+46
+00:02:58,880 --> 00:03:04,520
+到多大年纪？像在座观众这样，二十出头，甚至十几岁的后期
+Of the age of? Of, uh, the audience, like kind of early 20s, uh, even late teens.
+
+47
+00:03:04,640 --> 00:03:07,091
+跟我说说你人生的那段经历
+What, what, you know, tell me about that part of your life
+
+48
+00:03:07,091 --> 00:03:09,960
+以及你是怎么一步步被这类工作吸引过去的
+and kind of how you got kind of gravitated toward this type of work.
+
+49
+00:03:10,120 --> 00:03:13,600
+嗯，我一直都对技术有点痴迷，或者说很感兴趣
+Yeah, I mean, I, I'd always been sort of obsessed or interested in, in technology.
+
+50
+00:03:13,800 --> 00:03:16,523
+我以前会追 Steve Jobs 的
+I would like follow all the Steve Jobs, uh, you know,
+
+51
+00:03:16,523 --> 00:03:18,360
+每一年的主题演讲，追得着了迷
+keynotes every year obsessively.
+
+52
+00:03:18,560 --> 00:03:21,400
+我还记得大学时第一代 iPhone 发布
+I, I still remember in college when the first iPhone came out.
+
+53
+00:03:21,480 --> 00:03:25,090
+这暴露了我的年龄，但那真是个了不起的时刻
+I'm dating myself here, but it was, uh, it was this like amazing moment.
+
+54
+00:03:25,170 --> 00:03:26,970
+我们会跑来跑去跟朋友们聊这个
+We'd like run around and talk to our friends about it.
+
+55
+00:03:27,050 --> 00:03:29,730
+我在大学时并不是工程师
+Um, to me, I was, I was not an engineer in college.
+
+56
+00:03:29,970 --> 00:03:33,381
+所以我一直不太确定，该怎么把我对技术那种
+Um, so to me, I, I always wasn't quite sure how to sort of like manifest my sort of
+
+57
+00:03:33,381 --> 00:03:36,530
+极度的兴奋，变成一份能当职业来做的事
+extreme excitement for technology and something I could do as a career.
+
+58
+00:03:36,650 --> 00:03:40,046
+但最终我来到了旧金山
+But, um, ultimately ended up in San Francisco and, and worked for,
+
+59
+00:03:40,046 --> 00:03:42,330
+为 Peter Thiel 工作了将近七年
+for Peter Thiel for, for almost seven years.
+
+60
+00:03:42,370 --> 00:03:44,561
+我跟他一起工作，同时也在——
+And I'm working with him and, and working, um,
+
+61
+00:03:44,561 --> 00:03:46,810
+和他投资的很多公司打交道
+with a lot of the companies that he invested in.
+
+62
+00:03:47,160 --> 00:03:50,037
+就是那时候一切慢慢串起来了，你知道
+That's when it all kind of came together where, um, you know,
+
+63
+00:03:50,037 --> 00:03:53,087
+在我 2010 到 2017 年待在那里的那段时间
+over the course of my time there between 2010 and 2017, you know,
+
+64
+00:03:53,087 --> 00:03:56,080
+随着我们看的投资组合公司越来越多
+as we were looking at more and more companies in the portfolio.
+
+65
+00:03:56,160 --> 00:03:58,760
+反复出现的一个问题就是监管
+What kept coming up was this question about regulation.
+
+66
+00:03:58,960 --> 00:04:01,015
+所以不管你想到的是
+So whether you were thinking about, um,
+
+67
+00:04:01,015 --> 00:04:05,187
+Lyft 在州和地方层面遇到的那些挑战
+Lyft and the challenges that they were having at a sort of like state local level,
+
+68
+00:04:05,187 --> 00:04:08,861
+还是 SpaceX 在发射许可上遇到的挑战
+SpaceX with the challenges they were having for sort of launch permits
+
+69
+00:04:08,861 --> 00:04:09,920
+以及和 FAA 打交道的问题
+and with the FAA and.
+
+70
+00:04:09,960 --> 00:04:13,808
+不管你看的是哪个行业
+And, and part of commerce were doing no matter what kind of industry you're looking
+
+71
+00:04:13,808 --> 00:04:15,481
+总有这样一个政府视角
+at, there was this government angle
+
+72
+00:04:15,481 --> 00:04:17,934
+政府的政策举措有可能
+where the government's policy actions could be ones
+
+73
+00:04:17,934 --> 00:04:19,830
+真正为技术打开局面
+that could actually unlock technology.
+
+74
+00:04:20,030 --> 00:04:23,740
+所以当总统胜选、我有机会加入政府时
+So when the president won and I had the opportunity to join the administration, it,
+
+75
+00:04:23,740 --> 00:04:26,428
+你知道，我最初的直觉就是，我们怎么才能
+you know, my first sort of instinct was like, how do we, like,
+
+76
+00:04:26,428 --> 00:04:30,030
+审视我们所有的规则，让创新者更容易去创造
+look across all the rules that we have and make it easier for innovators to build?
+
+77
+00:04:30,120 --> 00:04:32,733
+我们怎么让无人机用于商业无人机运营
+How do we get drones flying for commercial drone operations?
+
+78
+00:04:32,733 --> 00:04:34,680
+我们怎么让自动驾驶汽车上路
+How do we get autonomous vehicles on the road?
+
+79
+00:04:34,720 --> 00:04:36,237
+我们怎么让无人机配送成为现实
+How do we get drone deliveries to happen?
+
+80
+00:04:36,237 --> 00:04:38,200
+这些都是政府可以帮忙打开局面的事情
+And those are things that the government can unlock.
+
+81
+00:04:39,080 --> 00:04:44,263
+关于科技政策实际是怎么制定的，有什么让人意外的地方
+What's something surprising about how technology policy actually gets made and
+
+82
+00:04:44,263 --> 00:04:47,160
+会让在座的每个人都感到惊讶
+that would surprise everybody in this arena?
+
+83
+00:04:47,560 --> 00:04:51,679
+是的，我觉得，那些没真正在这个领域工作过的人
+Yeah, I think, you know, typically what people haven't really worked in this space,
+
+84
+00:04:51,679 --> 00:04:55,680
+他们没意识到的是，这些决策是极度分散的
+what they don't realize is that these decisions are extraordinarily federated.
+
+85
+00:04:56,230 --> 00:05:01,750
+并不是白宫里一两个人就能拍板决定什么
+There isn't just like one or two people in the White House who decide something kind
+
+86
+00:05:01,750 --> 00:05:06,710
+我觉得美国体制的一个好处是，没有哪一个机构
+of a, a, a, a blessing, I think of the US system is that there isn't one agency
+
+87
+00:05:06,710 --> 00:05:08,230
+专门负责技术
+that does technology.
+
+88
+00:05:08,310 --> 00:05:11,024
+你知道，我们有卫生机构，有国防部
+You know, we have a health agency, you know, we have a defense department,
+
+89
+00:05:11,024 --> 00:05:12,670
+但没有一个所谓的技术部
+but there is no like technology department.
+
+90
+00:05:13,750 --> 00:05:15,522
+这意味着很多这类
+And what that means is a lot of these,
+
+91
+00:05:15,522 --> 00:05:18,830
+技术问题是分散在多个机构里的
+these tech sort of issues are spread out across multiple agencies.
+
+92
+00:05:18,950 --> 00:05:22,710
+所以你既要考虑国家安全方面的利益
+So you have equities from national security questions you may have to, um,
+
+93
+00:05:22,710 --> 00:05:26,834
+又要考虑偏商业的问题，还有核心的科学技术研究
+sort of commercial oriented questions to like core science technology research
+
+94
+00:05:26,834 --> 00:05:28,593
+问题，而要制定好的政策
+questions and to make good policy,
+
+95
+00:05:28,593 --> 00:05:32,110
+白宫要做的就是把所有这些机构聚到一起
+what the White House has to do is bring all of these agencies together.
+
+96
+00:05:32,470 --> 00:05:34,564
+所以每当，比如说以无人机为例
+So whenever, like take for example, drones,
+
+97
+00:05:34,564 --> 00:05:38,072
+如果你想确保规则合理、能允许商业无人机
+if you want to make sure that the rule is right to allow for commercial drone
+
+98
+00:05:38,072 --> 00:05:41,580
+运营，你就得确保 FAA 制定了正确的规则
+operations, you have to make sure that the FAA has the right rules in place.
+
+99
+00:05:41,620 --> 00:05:45,361
+同时还要让负责监管我们核武器的人满意
+But also that the people who oversee our nuclear weapons are happy so
+
+100
+00:05:45,361 --> 00:05:48,380
+这样无人机才不会飞越核设施上空
+that drones aren't, aren't flying over nuclear sites.
+
+101
+00:05:49,460 --> 00:05:54,220
+帮我们回顾一下过去这一周左右的情况吧
+Um, help take us into like the last week or so.
+
+102
+00:05:54,260 --> 00:05:58,337
+这一周在 AI 政策上感觉挺喧闹的。你看到了
+Really this week felt like a kind of a noisy week in AI policy. You saw the,
+
+103
+00:05:58,337 --> 00:06:00,020
+我想是那封公开信发布了
+the letter, I guess, that drop.
+
+104
+00:06:01,040 --> 00:06:04,120
+是周五早上，来自很多大公司的一封信
+Was a Friday morning from a lot of the larger companies.
+
+105
+00:06:04,360 --> 00:06:09,561
+Y Combinator 签了名，但 Y Combinator 也帮忙组织了另一封信
+Y Combinator had signed it, but also Y Combinator helped organize a letter
+
+106
+00:06:09,561 --> 00:06:14,343
+你其实就是收件人之一，是在周三晚上
+that you were one of the recipients on actually on Wednesday evening
+
+107
+00:06:14,343 --> 00:06:19,964
+那封信在争取、真正倡导政府不要打压
+that was fighting for, really advocating for the government to not clamp down on
+
+108
+00:06:19,964 --> 00:06:21,390
+开放权重模型
+open weight models.
+
+109
+00:06:21,550 --> 00:06:26,546
+而这背后的动因、推动力，某种程度上是这种传言
+And the, the impetus for that, the energy behind it was sort of this buzz
+
+110
+00:06:26,546 --> 00:06:29,848
+以及很多带有猜测性质的担忧
+and rumored, lots of kind of speculative worry
+
+111
+00:06:29,848 --> 00:06:33,319
+担心白宫即将出台一项行政命令（EO）
+that the White House was on the verge of doing an EO
+
+112
+00:06:33,319 --> 00:06:38,230
+会对开源加以限制或打压
+that would have kind of restricted or clamped down on, on open source.
+
+113
+00:06:38,670 --> 00:06:40,510
+你能稍微谈谈这个吗？比如说
+Can you talk a little bit about that? Like how?
+
+114
+00:06:41,580 --> 00:06:44,716
+你在过去一周左右在 Twitter 上看到的那些东西
+How connected to reality is some of the, uh,
+
+115
+00:06:44,716 --> 00:06:50,378
+有多少是符合现实的？还有
+the stuff that you've seen on Twitter in the last, uh, week or so and then is the,
+
+116
+00:06:50,378 --> 00:06:54,820
+你知道，白宫的政策到底是什么
+um, you know, what, what is, what is the White House's policy?
+
+117
+00:06:54,980 --> 00:06:58,116
+我其实昨晚和 Lutnick 部长聊过
+I, I, I actually spoke with, uh, Secretary Lutnick, uh,
+
+118
+00:06:58,116 --> 00:07:01,380
+在记者晚宴上，他说
+last night at the correspondence dinner and he said that, uh.
+
+119
+00:07:02,230 --> 00:07:04,596
+你知道，我们白宫强烈支持
+You know, we, White House strongly supports, uh,
+
+120
+00:07:04,596 --> 00:07:07,771
+开源，所以这是一个很好的机会，向大家澄清一下
+open source and so this is a great audience to kind of clarify what,
+
+121
+00:07:07,771 --> 00:07:10,830
+白宫对开源和开放权重的立场是什么
+what is the White House's position on open source open weights?
+
+122
+00:07:11,230 --> 00:07:14,630
+呃，你能……对，Luther 现在都快变成小记者了
+Uh, can you? Yeah, so so Luther over here has turned into a little mini reporter.
+
+123
+00:07:14,790 --> 00:07:17,310
+他呢，有很多人关注他的 Twitter
+He's got, uh, he's got lots of people following his Twitter.
+
+124
+00:07:17,350 --> 00:07:21,306
+但我要说，我觉得部长昨天讲的立场
+But I, I will say, I think what the secretary said yesterday is the same policy
+
+125
+00:07:21,306 --> 00:07:24,830
+和我们去年七月发布的 AI 行动计划第一页写的是一致的
+that we had on page 1 of our AI Action Plan that was released last July.
+
+126
+00:07:25,440 --> 00:07:27,888
+对于没太关注这件事的人来说
+And for those of you aren't necessarily tracking this,
+
+127
+00:07:27,888 --> 00:07:31,560
+美国的人工智能战略是去年七月发布的
+the The US Strategy for Artificial Intelligence was released in July of last year.
+
+128
+00:07:31,880 --> 00:07:36,080
+那份文件是我和 David Sacks、Rubio 部长共同起草的
+It was something that I co authored with with David Sacks and, and Secretary Rubio.
+
+129
+00:07:36,200 --> 00:07:37,764
+其中最重要的一点
+And one of the number one thing,
+
+130
+00:07:37,764 --> 00:07:41,552
+我们在第一章开篇谈的，就是对开源的承诺
+the first thing that we talk about in Chapter 1 is a commitment to open source
+
+131
+00:07:41,552 --> 00:07:45,040
+以及这样一个理念：如果美国想在人工智能领域领先
+and this idea that if the US wants to lead in artificial intelligence.
+
+132
+00:07:45,080 --> 00:07:47,815
+我们就必须有一个既有闭源、又有开源的繁荣生态
+We have to have a vibrant closed and open source ecosystem.
+
+133
+00:07:47,815 --> 00:07:50,160
+只有这样它们才能协同运作
+And that's the only way they can all work together.
+
+134
+00:07:50,570 --> 00:07:52,890
+所以对我来说，我觉得这是第一点
+So to me, I think, I think that's No. 1.
+
+135
+00:07:53,050 --> 00:07:55,264
+但我觉得这一周真正展现出来的
+But I think what, what, what this week really showed
+
+136
+00:07:55,264 --> 00:07:56,653
+以及让我对这份工作感到兴奋的
+and what excites me about the job
+
+137
+00:07:56,653 --> 00:07:58,970
+是我们必须进行这些对话
+that I'm doing is we have to have these conversations.
+
+138
+00:07:59,170 --> 00:08:03,492
+如果华盛顿处在真空里，听不到来自创业生态的声音
+And if, if DC is in a vacuum and isn't hearing anything from the startup ecosystem
+
+139
+00:08:03,492 --> 00:08:07,879
+甚至听不到大型科技公司、金融服务这些不同行业的声音
+or even from big tech ecosystem or from financial services or all these different
+
+140
+00:08:07,879 --> 00:08:10,330
+我们就没法做出最好的决策
+industries, we can't make the best decision.
+
+141
+00:08:10,490 --> 00:08:14,645
+所以对我来说，这很鼓舞人，而且在战术上
+So that me, I find it inspiring and I find it extraordinarily like tactically,
+
+142
+00:08:14,645 --> 00:08:17,586
+说白了，像这样的周非常有实际帮助
+like practically helpful for weeks like this to happen
+
+143
+00:08:17,586 --> 00:08:20,910
+因为它某种程度上会促使社区站出来说
+because it sort of forces a lot of the community come up and say.
+
+144
+00:08:20,910 --> 00:08:22,350
+我们作为美国人到底相信什么
+Like, what do we as Americans believe in?
+
+145
+00:08:22,390 --> 00:08:26,032
+而我们作为政策制定者，可以把这些吸收进来，确保我们
+And we as, as, as policymakers can, can internalize that and make sure that we're,
+
+146
+00:08:26,032 --> 00:08:28,550
+未来推行的是正确的政策
+we're saying the right, the right policy going forward.
+
+147
+00:08:28,950 --> 00:08:31,390
+我想这就是民主进程在实际运转吧
+That's the democratic process in action, I guess it.
+
+148
+00:08:31,670 --> 00:08:36,396
+在座的每位创始人都在用 AI 做产品，而站在你在华盛顿的位置
+So every founder here is building with AI and where you sit in Washington,
+
+149
+00:08:36,396 --> 00:08:41,123
+你觉得华盛顿看待 AI 的方式
+what do you think is the single biggest gap between how Washington sees AI
+
+150
+00:08:41,123 --> 00:08:42,750
+和这个房间里的人看待 AI 的方式，最大的差距是什么
+and how this room sees it?
+
+151
+00:08:43,830 --> 00:08:47,951
+我觉得在华盛顿，人们想到 AI 时
+I think the in Washington, when people think about AI,
+
+152
+00:08:47,951 --> 00:08:54,177
+它是一项涵盖一切的宏大技术，从美国中部普通人的看法
+it is a sweeping technology that covers everything from the perception of middle
+
+153
+00:08:54,177 --> 00:09:01,320
+他们对数据中心之类的看法，到 AI 与医疗的问题
+America, their perception on things like data centers to questions about AI and healthcare.
+
+154
+00:09:02,080 --> 00:09:05,560
+再到失业问题，以及它将如何冲击劳动力市场
+To questions about job loss and how it's going to impact the labor market.
+
+155
+00:09:06,720 --> 00:09:10,260
+同时也有关于它将如何影响新公司成长
+And then also there's a conversation about how it's going to impact new company
+
+156
+00:09:10,260 --> 00:09:13,640
+以及在整个科技生态中提升生产力的讨论
+growth and productivity improvements across, across our tech ecosystem.
+
+157
+00:09:13,760 --> 00:09:17,467
+所以我觉得华盛顿通常不同的地方在于，你没法
+So I think what, what typically is different in Washington is you can't,
+
+158
+00:09:17,467 --> 00:09:20,000
+你没法把这些话题分开来谈
+you can't sort of separate those conversations.
+
+159
+00:09:20,320 --> 00:09:24,046
+很难做到不去考虑，你知道的
+It's very hard to like not think about, you know, the, the, the,
+
+160
+00:09:24,046 --> 00:09:28,775
+AI 热潮对就业的影响，或者不去担心
+the labor implications of, of AI boom or, or not be worrying about how, you know,
+
+161
+00:09:28,775 --> 00:09:32,000
+总体而言美国人其实并不喜欢数据中心
+generally Americans don't really love data centers.
+
+162
+00:09:32,040 --> 00:09:33,920
+民调很糟糕，人们不想让它们建在自家后院
+They poll horribly. They don't want them in their backyard.
+
+163
+00:09:34,200 --> 00:09:36,029
+但这个房间里的每个人都很清楚
+But everyone in this room knows very,
+
+164
+00:09:36,029 --> 00:09:40,160
+我们需要尽可能多的算力，分布在全国各地
+very well that we need as much compute as we possibly can spread across the country.
+
+165
+00:09:40,320 --> 00:09:43,586
+所以对我们来说，最终要平衡很多这样的东西
+So for us, I think we end up having to balance a lot of this stuff, which is,
+
+166
+00:09:43,586 --> 00:09:46,470
+这算是我们的工作，但我们不能，你知道
+is kind of, is kind of our job and, and, uh, but we can't, you know,
+
+167
+00:09:46,470 --> 00:09:49,192
+我们需要来自创业社区的输入，至少要了解
+we need the input from the startup community to know at least
+
+168
+00:09:49,192 --> 00:09:50,770
+讨论中的那一部分
+that element of the conversation.
+
+169
+00:09:50,890 --> 00:09:52,210
+怎样确保这件事能做成，对
+How we make sure that gets done. Right.
+
+170
+00:09:53,090 --> 00:09:57,130
+而政府通常监管的是已经稳定下来的行业
+And governments are usually regulating industries that have settled.
+
+171
+00:09:58,290 --> 00:10:01,850
+而 AI 似乎每六个月就重塑自己一次
+AI seems to be kind of reinventing itself every six months.
+
+172
+00:10:02,490 --> 00:10:06,410
+对一个变化如此之快的东西，你要怎么制定规则
+How do you write the rules for something that is moving so quickly?
+
+173
+00:10:07,310 --> 00:10:13,522
+是的，答案其实是，你不该划下非常僵硬的红线
+Yeah, I mean, the answer to that really is you don't want to set very firm red lines
+
+174
+00:10:13,522 --> 00:10:17,230
+因为它们最终并不管用
+in the sand because they ultimately don't work.
+
+175
+00:10:17,310 --> 00:10:22,790
+我觉得当今世界最好的例子就是 EU AI Act
+And I think the best example of that in the world right now is the EU AI Act.
+
+176
+00:10:23,310 --> 00:10:26,784
+在第一届特朗普政府任内
+So when we were in the first Trump administration,
+
+177
+00:10:26,784 --> 00:10:29,348
+欧盟大张旗鼓地
+the EU went through a lot of fanfare to
+
+178
+00:10:29,348 --> 00:10:34,062
+花了很多年才拼凑出这个 EU AI Act
+and spent many years putting together this EU AI Act and get you this,
+
+179
+00:10:34,062 --> 00:10:38,776
+这套基本上覆盖整个欧洲的监管规则
+this rule of essentially like regulation through Europe was passed
+
+180
+00:10:38,776 --> 00:10:43,160
+在 ChatGPT 被发明之前就已经通过并定稿了。所以
+and finalized before ChatGPT was either was ever invented. So.
+
+181
+00:10:43,160 --> 00:10:45,740
+那么接下来，所有这些大语言模型
+Now, going forward, all of these large language models,
+
+182
+00:10:45,740 --> 00:10:49,308
+自 2022 年 11 月 ChatGPT 问世以来出现的一切
+everything that's happened since November of 22, when when ChatGPT came out,
+
+183
+00:10:49,308 --> 00:10:53,040
+都得遵守一条在 LLM 出现之前就写好的规则
+you know, have to abide by this rule that was written before llms were even a thing.
+
+184
+00:10:53,040 --> 00:10:55,643
+这说明这种情况有多棘手
+And that shows how challenging sort of the, the,
+
+185
+00:10:55,643 --> 00:10:59,091
+如果你一开始就把界限定得太死
+the situation is if you try to set the line too firm to begin with,
+
+186
+00:10:59,091 --> 00:11:02,410
+我觉得我们自己这届政府也遇到了同样的问题
+and I think our own administration had challenges with this.
+
+187
+00:11:02,450 --> 00:11:06,274
+Biden 政府设定了一个具体的算力硬上限门槛
+The, the, the Biden administration set a specific hard cap compute threshold for
+
+188
+00:11:06,274 --> 00:11:08,918
+也就是说，如果你做的东西超过某个门槛
+if you're, if you do anything above a certain threshold,
+
+189
+00:11:08,918 --> 00:11:11,730
+你就得向政府做一大堆披露
+then you have to do a bunch of disclosures to the government.
+
+190
+00:11:11,890 --> 00:11:17,000
+但从长远看，这种僵硬的红线门槛
+You know, over time having these sort of like firm, um, um, red line thresholds.
+
+191
+00:11:17,080 --> 00:11:20,040
+说实话，它们经不起时间的考验
+I mean, they do not, they do not, you know, stand the test of time.
+
+192
+00:11:20,080 --> 00:11:23,965
+我们做的很多工作，就是确保任何类型的举措
+And a lot of what we do is to make sure that, that any type of, of action is, is,
+
+193
+00:11:23,965 --> 00:11:25,720
+都能跟着前沿一起演进
+can move along with the frontier.
+
+194
+00:11:26,360 --> 00:11:29,686
+而政府已经充分证明的一点是
+And, and what's been proven very much so by the government is
+
+195
+00:11:29,686 --> 00:11:32,480
+一旦划定了一条线，就很难再改回来
+that once it sets a line, it's very hard to reset it.
+
+196
+00:11:32,520 --> 00:11:35,400
+所以我们对设定这些硬门槛非常谨慎
+So we are very cautious in trying to and try to set these hard thresholds.
+
+197
+00:11:37,230 --> 00:11:42,270
+围绕 AI 的很多政策讨论似乎都和安全与风险有关
+It seems like a lot of the policy conversation around AI has to do with safety and risk.
+
+198
+00:11:42,710 --> 00:11:47,126
+你觉得有哪种 AI 风险是开发者低估了
+What do you think is an AI risk that builders underrate and
+
+199
+00:11:47,126 --> 00:11:50,070
+而哪种又可能被夸大了
+that you think is probably overblown?
+
+200
+00:11:52,230 --> 00:11:55,604
+我觉得，就当下而言
+Um, I think, you know, I think the, the, the risk of the day, at least today,
+
+201
+00:11:55,604 --> 00:11:57,430
+主要有两大风险
+I think there's, there's two main ones.
+
+202
+00:11:57,470 --> 00:12:00,623
+第一个显然是网络安全风险
+I think the first one is obviously the the cyber risk present
+
+203
+00:12:00,623 --> 00:12:04,658
+这在“Claude 时刻”里体现得很明显，也就是各实验室不得不做的那些分析
+and by by the Claude moment and ultimately the analysis that the labs had to do
+
+204
+00:12:04,658 --> 00:12:08,693
+也就是他们在发布 Claude 时，要设置什么样的安全护栏
+when they were putting out Claude on what kind of guard rails are put in place to
+
+205
+00:12:08,693 --> 00:12:10,080
+来确保……
+make sure that sort of the.
+
+206
+00:12:10,160 --> 00:12:13,570
+也就是 Claude 那些更精细、更强大、所谓
+The the, the more exquisite, powerful, you know, quote unquote,
+
+207
+00:12:13,570 --> 00:12:18,116
+危险的能力，能在发布时得到适当限制
+dangerous capabilities of, of Claude were, were appropriately limited for, for the,
+
+208
+00:12:18,116 --> 00:12:19,000
+也就是发布时
+for the release.
+
+209
+00:12:20,240 --> 00:12:24,779
+但同样地，这些具备网络能力的模型的难点在于，同一个模型
+But again, the challenge with a lot of these cyber capable models is the same model
+
+210
+00:12:24,779 --> 00:12:28,249
+既能被用来做坏事
+that is able to sort of do something nefarious is the same model
+
+211
+00:12:28,249 --> 00:12:31,520
+也能在加固现有系统方面非常有价值
+that can be very valuable in hardening an existing system.
+
+212
+00:12:32,200 --> 00:12:34,160
+所以这里就有这些内在的取舍
+So there's these, these inherent trade offs that happen.
+
+213
+00:12:35,120 --> 00:12:38,553
+我觉得第二个总会被提起的风险
+And I think that the the second risk that always kind of comes up that, you know,
+
+214
+00:12:38,553 --> 00:12:41,352
+也就是我们认为正在逼近的
+you know, we think is, is sort of coming over the horizon is this,
+
+215
+00:12:41,352 --> 00:12:43,200
+就是生物风险问题
+is this sort of biological risk question.
+
+216
+00:12:43,320 --> 00:12:45,919
+我个人的感觉是，就目前而言
+I mean, I think, I think my sense is I think it at the moment,
+
+217
+00:12:45,919 --> 00:12:48,030
+而且多年来一直如此，它有点被夸大了
+and it has been for many years, a bit overblown.
+
+218
+00:12:48,110 --> 00:12:52,230
+早在 2021 到 2022 年，人们就在大声疾呼生物风险问题
+I think people were sort of like shouting about the bio problem back in 2021-2022.
+
+219
+00:12:52,910 --> 00:12:54,150
+但三年来它都没成为真正的问题
+Hasn't been an issue for three years.
+
+220
+00:12:54,790 --> 00:12:58,808
+不过我认为我们确实非常有必要建立合适的基础设施
+But I think we definitely, definitely need to build the right infrastructure to run
+
+221
+00:12:58,808 --> 00:13:02,367
+来对模型运行合适的测试和评估流程，随着它们逐渐
+the right test and eval processes on models as they as they creep, you know,
+
+222
+00:13:02,367 --> 00:13:03,630
+越过前沿。明白了
+past the frontier. Got it.
+
+223
+00:13:04,570 --> 00:13:10,890
+很多科技政策讨论最后都被五大科技公司主导了
+Um, a lot of tech policy conversations end up dominated by the five biggest tech companies.
+
+224
+00:13:11,010 --> 00:13:13,495
+我得说，这也是为什么
+And I should say this is one of the reasons
+
+225
+00:13:13,495 --> 00:13:18,464
+几周前 Y Combinator 联合另外几家公司，帮忙组建了
+that y Combinator with a handful of other companies a couple weeks ago helped spin
+
+226
+00:13:18,464 --> 00:13:22,045
+一个叫 Little Tech Association 的行业协会
+up a trade association called the Little Tech Association
+
+227
+00:13:22,045 --> 00:13:25,991
+因为有时候看起来，是这样，我住在 Washington, DC
+because it seems like sometimes, yeah, I live in Washington, DC,
+
+228
+00:13:25,991 --> 00:13:27,380
+你也知道那里……
+you know that there's.
+
+229
+00:13:27,820 --> 00:13:31,660
+你显然也住在那儿，其实我们今天早上还
+You do as well, obviously, that the, we were actually on the, uh,
+
+230
+00:13:31,660 --> 00:13:35,500
+一起坐了早上八点的那班飞机
+the flight this morning, uh, uh, at, at 8, 8:00'clock together.
+
+231
+00:13:35,980 --> 00:13:41,150
+我觉得，在华盛顿有时候感觉就像是 Google、Apple、Facebook、Amazon
+Um, I think that, uh, it feels like kind of, uh, Google, Apple, Facebook, Amazon,
+
+232
+00:13:41,150 --> 00:13:45,703
+主演的《The Truman Show（楚门的世界）》
+Truman Show sometimes in Washington that like there's ever, you know,
+
+233
+00:13:45,703 --> 00:13:50,719
+你读到的每一份立场文件、听到的每一场演讲，都会让你心想，天哪
+every position paper you read or speech you hear is like you you think gosh that
+
+234
+00:13:50,719 --> 00:13:54,500
+这背后是不是有大型科技公司的影响。那么一家……
+that has some some big tech influence behind it. How does a.
+
+235
+00:13:55,140 --> 00:13:58,176
+一家两人小公司怎么可能有一战之力
+2, two person company even have a fighting chance if,
+
+236
+00:13:58,176 --> 00:14:00,936
+如果规则是那些大公司在写
+if those large companies are writing the rules,
+
+237
+00:14:00,936 --> 00:14:04,663
+白宫要怎么确保像
+how does the White House kind of make sure that the kind of company
+
+238
+00:14:04,663 --> 00:14:06,940
+坐在这个房间里的这类公司也能被听到
+that's sitting in this room gets heard?
+
+239
+00:14:07,620 --> 00:14:12,100
+我做的最重要的一件事，就是尽可能多地和你们交流
+Well, the most important thing that I do is talk to you as often as I possibly can.
+
+240
+00:14:12,550 --> 00:14:15,088
+但我觉得，现实情况是
+But I think, I, I think the reality is there, there's,
+
+241
+00:14:15,088 --> 00:14:19,183
+有很多机构在支持和捍卫
+there's a great number of institutions that, that help support and stand up for, for,
+
+242
+00:14:19,183 --> 00:14:19,990
+创业科技公司的利益
+for little tech.
+
+243
+00:14:20,070 --> 00:14:24,585
+我觉得，政府总体上是很清楚
+And I think, you know, I think generally government is quite, is quite cognizant of,
+
+244
+00:14:24,585 --> 00:14:28,198
+各行各业里那些大玩家
+of, of sort of the influence of a lot of sort of like large players in,
+
+245
+00:14:28,198 --> 00:14:29,230
+所拥有的影响力
+in every industry.
+
+246
+00:14:29,310 --> 00:14:33,734
+而且我觉得这个问题、这种情况
+And I think this isn't a problem or this isn't a situation that is uh,
+
+247
+00:14:33,734 --> 00:14:35,630
+并不只出现在科技行业
+is is only occurring in tech.
+
+248
+00:14:36,070 --> 00:14:40,670
+从能源到医疗，各行各业都有这种情况
+It happens in everything from, you know, energy to healthcare to whatever it may be.
+
+249
+00:14:40,670 --> 00:14:43,987
+我们非常努力去做的是，其实有很多机制
+And, and I think what we try to do very hard is there's lots of mechanisms
+
+250
+00:14:43,987 --> 00:14:46,630
+可以广泛听取各方意见
+where you can get input, um, from a wide variety of folks.
+
+251
+00:14:46,710 --> 00:14:49,838
+比如传统的征求提案（RFP），或者
+So the traditional sort of request for proposals or, you know,
+
+252
+00:14:49,838 --> 00:14:54,110
+征求信息的流程，任何人都可以提交意见
+request for information process where you can get anyone to kind of submit comments.
+
+253
+00:14:54,390 --> 00:14:58,450
+对我们来说，我觉得这套机制其实是有效的
+Um, and, and for us, I think I, I, I think it, it's actually working.
+
+254
+00:14:58,570 --> 00:15:02,387
+你想想，其中一个重要的优先事项
+I mean, if you, if you think about one of the, one of the major priorities that,
+
+255
+00:15:02,387 --> 00:15:04,057
+就是总统本人
+you know, the president himself,
+
+256
+00:15:04,057 --> 00:15:06,323
+亲自在演讲中谈到的
+himself spoke about in the speech that he gave
+
+257
+00:15:06,323 --> 00:15:10,080
+那是我们去年七月发布战略时提到的，关于
+when our strategy was released in July of last year was this question about.
+
+258
+00:15:11,080 --> 00:15:14,396
+关于用联邦规则统一覆盖各州 AI 法律的问题
+About preemption of state laws around AI and, and, and,
+
+259
+00:15:14,396 --> 00:15:17,784
+核心逻辑是，如果你造成
+and the fundamental thesis there is that if you create a,
+
+260
+00:15:17,784 --> 00:15:21,172
+或允许出现一套碎片化的监管
+or allow for the creation of a patchwork of regulations,
+
+261
+00:15:21,172 --> 00:15:26,362
+也就是加州有一套 AI 法规，Maryland 又是另一套
+meaning there's one set of regulations for AI in California, another one in Maryland,
+
+262
+00:15:26,362 --> 00:15:27,660
+Texas 又是另一套
+another one in Texas.
+
+263
+00:15:28,140 --> 00:15:30,380
+那些大型科技公司是能应付的
+You know, the big tech guys, they can deal with that.
+
+264
+00:15:30,420 --> 00:15:33,622
+Google 可以雇一大批律师，把这些都搞定
+I mean Google can harm, can hire an army of lawyers and they'll figure it out
+
+265
+00:15:33,622 --> 00:15:34,500
+他们没问题
+and they'll be fine.
+
+266
+00:15:35,180 --> 00:15:38,140
+但对在座的各位来说，这根本行不通
+But for all of you out here, that's just, that's not going to work.
+
+267
+00:15:38,380 --> 00:15:40,560
+于是总统站出来说，不行
+And the president stood up and say like, no,
+
+268
+00:15:40,560 --> 00:15:42,740
+我们必须有一个全国统一的 AI 标准
+we have to have one national standard for AI
+
+269
+00:15:42,740 --> 00:15:46,677
+这样任何想创办 AI 公司的人都能轻松知道
+so we can make it easy for anyone who wants to build an AI company to know what the
+
+270
+00:15:46,677 --> 00:15:50,250
+那唯一的一套规则是什么，并据此建立公司。所以我觉得
+one set of rules is and build their company like that way. So, so I think.
+
+271
+00:15:50,250 --> 00:15:52,650
+这就是我们真正把这件事放在心上的一个例子
+That's, that's an example of us really taking that to heart.
+
+272
+00:15:53,170 --> 00:15:58,011
+我要说，我很赞赏白宫在延续这件事
+Well, I will say I, I commend the White House for kind of continue and really,
+
+273
+00:15:58,011 --> 00:16:00,317
+这其实是从特朗普第一任期开始的
+it started with the first Trump term
+
+274
+00:16:00,317 --> 00:16:05,004
+针对大型科技公司的两党反垄断行动，US v.
+that the the bipartisan antitrust project with respect to Big Tech, US v.
+
+275
+00:16:05,004 --> 00:16:08,770
+Google 案就是在特朗普第一届政府启动的
+Google was started under the first Trump administration.
+
+276
+00:16:09,670 --> 00:16:11,606
+US v. Apple 案也在继续推进
+US v. Apple is being continued.
+
+277
+00:16:11,606 --> 00:16:16,670
+希望那些说这案子可能即将和解的报道是不准确的
+Hopefully the the reports that that might settle in imminently or are incorrect.
+
+278
+00:16:16,870 --> 00:16:23,706
+还有 FTC 诉 Facebook、FTC 诉 Amazon，这些案子
+And FTC versus Facebook, FTC versus Amazon, these are cases that, that the,
+
+279
+00:16:23,706 --> 00:16:27,070
+都是特朗普政府的 DOJ 和 FTC 在继续推进的
+the Trump DOJ and FTC have continued.
+
+280
+00:16:27,110 --> 00:16:29,866
+我觉得这一点，再加上总统
+And I think it's that coupled with the present,
+
+281
+00:16:29,866 --> 00:16:34,600
+沿用“创业科技公司”这个说法，为创业科技公司发声
+it's own usage of the phrase little tech and championing little tech companies.
+
+282
+00:16:35,160 --> 00:16:38,805
+我记得，可能几年前我们第一次见面时
+I think the, the thing I think, you know, when probably when we met years ago,
+
+283
+00:16:38,805 --> 00:16:42,160
+我就说过，我们必须确保创业科技公司在决策桌上有一席之地
+I said we just have to make sure that little tech has a seat at the table.
+
+284
+00:16:42,320 --> 00:16:45,443
+所以在你回到 Washington 后
+And so I just, as you go back to Washington, kind of, you know,
+
+285
+00:16:45,443 --> 00:16:49,379
+请务必确保我们尽一切努力
+making sure that we're, we're doing everything we can to, to make sure that,
+
+286
+00:16:49,379 --> 00:16:51,440
+让创业科技公司在决策桌上有一席之地
+that little tech has a seat at the table.
+
+287
+00:16:51,640 --> 00:16:55,421
+这对我很重要。我二十多岁时大部分时间都在 San Francisco
+It's important to me. I mean, I spent most of my 20s here in San Francisco working
+
+288
+00:16:55,421 --> 00:16:56,280
+在一家风投公司工作
+at a venture firm.
+
+289
+00:16:56,360 --> 00:16:59,440
+我很清楚创办这些公司有多难。而且
+I mean, I understand how challenging it is to, to build these companies. And.
+
+290
+00:17:00,050 --> 00:17:04,392
+我觉得，美国之所以特别
+And I think, you know what, what makes the US so special is
+
+291
+00:17:04,392 --> 00:17:10,490
+就是世界上没有比美国更适合创业的地方了
+that there is no place in the world that is better to do a startup than in America.
+
+292
+00:17:10,650 --> 00:17:15,170
+在这里创业更容易，而且机会多到难以置信
+It is easier here and it, um, and the opportunities are just unbelievable.
+
+293
+00:17:15,330 --> 00:17:19,730
+所以作为一名公职人员，我每天思考的是，如何保护这个生态系统
+So as, as a public servant, what I think about every day is how do we protect that ecosystem?
+
+294
+00:17:19,810 --> 00:17:21,010
+我们怎样让创业变得更容易
+How do we make it even easier?
+
+295
+00:17:21,170 --> 00:17:24,666
+我们怎样为你们所有人创造机会，去创办伟大的公司
+How do we create all the opportunities for all of you to create great companies
+
+296
+00:17:24,666 --> 00:17:28,270
+并取得成功，全世界的人都争先恐后地想来美国创业
+and succeed ever in the world is clamoring to come to America to build companies.
+
+297
+00:17:28,590 --> 00:17:30,950
+这里有一种非常特别的东西，是我们必须守护的
+There's something very special about here that we must preserve.
+
+298
+00:17:31,790 --> 00:17:37,037
+有没有一种 AI 监管方式，既能保护消费者
+Is there a version of AI regulation that protects consumers
+
+299
+00:17:37,037 --> 00:17:40,710
+又不会给既有巨头送上一条护城河
+but it doesn't hand the incumbents a moat?
+
+300
+00:17:41,350 --> 00:17:43,670
+具体来说会是什么样子
+And what does that look like concretely?
+
+301
+00:17:43,670 --> 00:17:47,830
+我想回到之前提到的那个统一的国家框架
+I think back to what I was saying with this sort of one like one national framework.
+
+302
+00:17:47,950 --> 00:17:53,390
+我觉得关键是让各种规模的公司都能有清晰、简便的监管环境
+I think it's all about having regulatory clarity and ease for all, all sizes of, of companies.
+
+303
+00:17:54,270 --> 00:17:57,338
+如果我们能和国会一起做成这样的事，我认为那将是——
+And if we can work with Congress to do something like that, I think that would be,
+
+304
+00:17:57,338 --> 00:17:59,430
+那将是对创业公司最大的利好
+that would be the biggest boon for, for, for startups.
+
+305
+00:18:01,600 --> 00:18:05,520
+美国的优势一直在于人人都能创业
+The United States' advantage has always been that anybody can start something.
+
+306
+00:18:06,600 --> 00:18:07,320
+就像你说的
+To your point.
+
+307
+00:18:07,960 --> 00:18:10,173
+我们在这一点上是独一无二的
+I mean, we are unique in that respect.
+
+308
+00:18:10,173 --> 00:18:13,600
+这里是全世界最适合创办公司的地方
+This is the greatest place in the world to build a company.
+
+309
+00:18:15,000 --> 00:18:19,568
+对于在座担心合规成本的创业者，你会怎么说
+What would you tell a founder here who is worrying about compliance costs and
+
+310
+00:18:19,568 --> 00:18:22,280
+担心这些成本还没开始就把他们挡在门外
+that locking them out before they even start?
+
+311
+00:18:22,710 --> 00:18:26,366
+我会告诉他，历史上大概没有哪届政府
+You know, I would tell him that there's probably no administration in history more
+
+312
+00:18:26,366 --> 00:18:28,910
+比现在这届更致力于削减监管
+committed to reducing regulations than the current one.
+
+313
+00:18:29,830 --> 00:18:31,980
+我们的管理和预算办公室（OMB）
+Our sort of office of management and budget,
+
+314
+00:18:31,980 --> 00:18:35,758
+负责管理我们监管流程，主管这块的是一个人
+which sort of runs kind of our regulatory process guy was running it is this guy
+
+315
+00:18:35,758 --> 00:18:36,630
+叫 Russ Vought
+called Russ Vote.
+
+316
+00:18:36,670 --> 00:18:41,070
+他毕生的使命就是尽可能地取消监管
+And he, his life's mission has been to eliminate as many regulations as possible.
+
+317
+00:18:41,630 --> 00:18:43,150
+这也是我们每天都在思考的事
+And that is what we think about every day.
+
+318
+00:18:43,270 --> 00:18:47,181
+对我来说，从科技的角度看，当我们谈监管时
+To me, in the tech standpoint, you know, when we talk about regs, you know,
+
+319
+00:18:47,181 --> 00:18:50,900
+我最关心的问题是：怎么消除创新的障碍
+the biggest question to me is how do we remove barriers to innovation?
+
+320
+00:18:51,300 --> 00:18:52,340
+我之前稍微提过一点
+I talked a little bit about this.
+
+321
+00:18:52,340 --> 00:18:55,700
+在我看来，看待监管世界大概有两种方式
+To me, there was a, you know, there's kind of two ways to think about, uh,
+
+322
+00:18:55,700 --> 00:18:58,092
+就是关于这些技术
+about the world of regs there, about technologies
+
+323
+00:18:58,092 --> 00:19:00,940
+在华盛顿也经常有人讨论这个
+and sometimes a lot of people talk about this in Washington.
+
+324
+00:19:01,100 --> 00:19:03,124
+有些技术
+There's, there's, there's technologies
+
+325
+00:19:03,124 --> 00:19:05,380
+要么是生来自由的，要么是生来就被关进笼子的
+that are either born free or born in captivity.
+
+326
+00:19:06,030 --> 00:19:08,057
+对这两类技术
+And for each of those categories of technology,
+
+327
+00:19:08,057 --> 00:19:09,830
+你要面对的是不同的监管
+you have a different set of regs to look at.
+
+328
+00:19:09,870 --> 00:19:13,754
+生来自由的技术，就是那些没有现成法规约束的
+So born free technologies are ones where there aren't regulations on the books,
+
+329
+00:19:13,754 --> 00:19:16,073
+比如互联网刚起步的时候
+things of like the internet when it just started
+
+330
+00:19:16,073 --> 00:19:19,030
+这类技术是你必须去保护的
+and those are the types of technologies you have to preserve.
+
+331
+00:19:19,150 --> 00:19:22,813
+你必须非常非常慎重地考虑，是否要
+You have to be very, very, very thoughtful about whether or not you're going to
+
+332
+00:19:22,813 --> 00:19:24,898
+在这个领域引入新的监管
+introduce new regulations into that domain
+
+333
+00:19:24,898 --> 00:19:28,110
+因为人们在这些领域可以自由创造、蓬勃发展
+because people can sort of build anything and strive in those areas.
+
+334
+00:19:28,190 --> 00:19:30,400
+所以生来自由的技术，你要去守护它
+So those born free technologies you want to preserve, serve.
+
+335
+00:19:30,880 --> 00:19:34,775
+而生来就被关进笼子的技术，是指你造出了
+And then the born in captivity technologies are technologies where you're building
+
+336
+00:19:34,775 --> 00:19:38,231
+某样东西，但你没法把它商业化或推向市场
+something, but you can't commercialize it or you can't take it out to market
+
+337
+00:19:38,231 --> 00:19:40,480
+除非你拿到某种政府批准
+unless you get some sort of government approval.
+
+338
+00:19:40,960 --> 00:19:42,957
+想想商用无人机运营就明白了
+So think about commercial drone operations.
+
+339
+00:19:42,957 --> 00:19:45,480
+你们可以在后院造出一台很棒的无人机
+You guys could go build an amazing drone in your backyard.
+
+340
+00:19:45,600 --> 00:19:49,505
+你可以写出最棒的软件，把供应商和
+You could build the most amazing software to connect sort of a, a vendor to a,
+
+341
+00:19:49,505 --> 00:19:51,240
+客户连接起来，一切都搭建好
+to a customer and set it all set up.
+
+342
+00:19:51,380 --> 00:19:55,531
+但要合法完成这笔交易、让无人机真正飞起来
+But to actually close that transaction legally and have the, and have the drone fly,
+
+343
+00:19:55,531 --> 00:19:58,140
+除非你拿到 FAA 的豁免，否则做不到
+you can't do that unless you get a waiver from the FAA.
+
+344
+00:19:58,380 --> 00:20:02,524
+所以这些就是我们一直在琢磨的技术类型
+So those are the types of technologies that we relentlessly think about,
+
+345
+00:20:02,524 --> 00:20:06,940
+怎么去除这些监管障碍，或者让流程更简便
+how to sort of remove those regulatory barriers or make it much easier to do so.
+
+346
+00:20:07,300 --> 00:20:11,780
+我想在座有些人可能听过 Boom Supersonic 的创始人分享
+I think earlier, some of you may have heard from the founder, boom Supersonic.
+
+347
+00:20:12,050 --> 00:20:14,450
+我痴迷超音速飞行已经很多年了
+You know, I've been obsessed with supersonic flight for years.
+
+348
+00:20:14,530 --> 00:20:18,810
+我觉得它是技术停滞最明显、最直白的例子
+I think it's the most obvious sort of like in your face example of technological stagnation.
+
+349
+00:20:19,170 --> 00:20:22,810
+多年前我们有 Concorde 在飞，如今我们飞得比那时还慢
+We had the Concord flying years ago. We're flying slower than we were back then.
+
+350
+00:20:22,890 --> 00:20:24,570
+这在今天简直是个悲剧
+Today, absolute tragedy.
+
+351
+00:20:25,010 --> 00:20:28,076
+所以在那种情况下，他没法让他的
+So in that situation, you know, he can't get his,
+
+352
+00:20:28,076 --> 00:20:31,678
+超音速飞机起飞，除非规则改成
+his supersonic plane to fly unless the rules are set such
+
+353
+00:20:31,678 --> 00:20:37,580
+比方说在美国上空设的是噪音限制，而不是速度限制
+that there is a noise limit instead of a speed limit, um, over the United States, for example.
+
+354
+00:20:37,700 --> 00:20:39,672
+所以对于这类生来就被关进笼子的技术
+So in those kind of born in captivity technologies,
+
+355
+00:20:39,672 --> 00:20:41,461
+这正是我们一直努力想弄清楚的
+that's what we relentlessly try to figure out,
+
+356
+00:20:41,461 --> 00:20:42,974
+怎么去除这些障碍
+how do you kind of remove those barriers
+
+357
+00:20:42,974 --> 00:20:44,900
+让这些技术更容易落地运转
+and make it easier for these technologies to work.
+
+358
+00:20:45,780 --> 00:20:49,096
+我想回到一个问题，就是我
+Um, I want to go back to a question that I, I, I want, right,
+
+359
+00:20:49,096 --> 00:20:53,540
+一开始忘了问的，关于你日常的工作职责
+forgot to ask at the beginning, which is like about your day in, day out role.
+
+360
+00:20:53,780 --> 00:20:58,521
+你不仅仅是 OSTP（白宫科技政策办公室）的主任
+Like you're not only a, uh, the director of the office of Science Technology Policy,
+
+361
+00:20:58,521 --> 00:21:02,314
+也许你回答的时候可以顺便讲讲这个
+and maybe you can talk a little bit about this when I when you answer,
+
+362
+00:21:02,314 --> 00:21:04,820
+你同时还是总统的特别顾问
+but also a special advisor to the president.
+
+363
+00:21:05,020 --> 00:21:08,120
+那么，我是说，可能没有什么典型的一天
+So like what is, I mean, there's probably not a typical day,
+
+364
+00:21:08,120 --> 00:21:11,284
+但如果非要把这些日子平均一下
+but what is like if you had to kind of average the days across,
+
+365
+00:21:11,284 --> 00:21:14,700
+典型的一天是什么样，你几点去上班
+like what is a typical day look like, what time you show up to work.
+
+366
+00:21:15,220 --> 00:21:17,451
+很多人没意识到，在白宫
+There's a lot of people don't realize in the White House,
+
+367
+00:21:17,451 --> 00:21:19,540
+白宫其实是一个庞大的建筑群
+there's like the White House is a sprawling complex.
+
+368
+00:21:19,620 --> 00:21:23,208
+那里有，你懂的，显然有 Oval Office（椭圆形办公室）
+So there's like where the, you know, there's the Oval Office, obviously,
+
+369
+00:21:23,208 --> 00:21:27,560
+但还有一个叫 EEOB 的地方，即 Eisenhower Executive Office Building（艾森豪威尔行政办公楼）
+but then there's something called the EELB, the Eisenhower Executive Office Building.
+
+370
+00:21:27,600 --> 00:21:29,640
+你的团队在哪？规模有多大
+Like where? How big is your team?
+
+371
+00:21:29,760 --> 00:21:33,720
+帮我们大致想象一下，在白宫工作是什么样
+Like what is it just kind of help us visualize what it's like working at the White
+
+372
+00:21:33,720 --> 00:21:36,240
+你的工作日常到底是怎样的
+House and what your job is actually like day to day.
+
+373
+00:21:36,280 --> 00:21:42,200
+还有，OSTP 主任这个职位
+And are those, is the is the role of a director of the OSTP?
+
+374
+00:21:43,300 --> 00:21:45,220
+是不是一直都兼任总统特别顾问
+Is that always the special advisor of the president?
+
+375
+00:21:45,420 --> 00:21:47,860
+我觉得那像是你额外承担的一个角色
+I think that's like a kind of an extra additional role you take on.
+
+376
+00:21:47,940 --> 00:21:48,940
+讲讲这个吧
+So talk about that a little bit.
+
+377
+00:21:49,220 --> 00:21:52,991
+嗯，我想最抽象的理解方式是，我前面稍微提到过
+Um, so I think maybe the most abstract way to think about it is I mentioned this a
+
+378
+00:21:52,991 --> 00:21:56,820
+联邦政府是由这些各种各样的机构组成的
+little bit earlier, the federal government is made up of all of these agencies.
+
+379
+00:21:57,020 --> 00:22:00,780
+有 HHS 负责医疗，有 Department of Defense 负责国防
+You have HHS, which does health care. You have department of defense does defense.
+
+380
+00:22:00,900 --> 00:22:03,740
+有 Department of Energy，管理能源和国家实验室
+Your department of energy that runs kind of energy international labs.
+
+381
+00:22:04,460 --> 00:22:06,487
+而对于任何一种政策
+And um, for any type of policy that you do,
+
+382
+00:22:06,487 --> 00:22:10,661
+你基本上都得在所有这些不同机构之间取得共识
+you essentially have to get concurrence or have some sort of conversation among all
+
+383
+00:22:10,661 --> 00:22:14,477
+或进行某种沟通，而全世界只有一栋楼
+of these different agencies and there's only one building in the whole world
+
+384
+00:22:14,477 --> 00:22:18,233
+能把这些机构聚到一起进行这种对话
+that can get all these agencies to come together and have that conversation
+
+385
+00:22:18,233 --> 00:22:20,380
+并得出某种结论。那就是——
+and bring some resolution. And that's the.
+
+386
+00:22:20,380 --> 00:22:20,780
+白宫
+White House.
+
+387
+00:22:21,340 --> 00:22:25,386
+通常来说，大致有四类政策
+And generally there's, there's sort of four categories of policy
+
+388
+00:22:25,386 --> 00:22:27,740
+会在白宫里被理清
+that get sorted out in the White House.
+
+389
+00:22:27,940 --> 00:22:31,240
+有国家安全，有一个委员会负责这一块流程
+There's national security, then there's a council that runs that process.
+
+390
+00:22:31,760 --> 00:22:35,041
+有国内政策，类似医疗和移民之类的事
+There's domestic policy, but sort of like healthcare and immigration type stuff.
+
+391
+00:22:35,041 --> 00:22:36,800
+还有另一个委员会负责那部分
+And there's another council that runs that.
+
+392
+00:22:37,320 --> 00:22:41,080
+有经济政策，负责税收等经济方面的政策
+There's economic policy that does sort of like tax and other like econ policy.
+
+393
+00:22:41,440 --> 00:22:43,560
+然后就是我们，负责科学和技术
+And then there's us that does science and technology.
+
+394
+00:22:43,800 --> 00:22:46,324
+所以基本上有四个政策委员会
+So essentially there's sort of four policy councils
+
+395
+00:22:46,324 --> 00:22:48,160
+有四位政策负责人
+and there's sort of four policy leads,
+
+396
+00:22:48,160 --> 00:22:51,200
+我们各自负责相关议题的政策流程
+and each of us kind of run policy processes on the topics at hand.
+
+397
+00:22:51,320 --> 00:22:55,290
+在我们的职责范围里，显然有我们聊了很多的 AI
+So in our portfolio, we obviously have AI that we talked about a lot,
+
+398
+00:22:55,290 --> 00:23:00,040
+但我们也负责像量子、民用核能、生物科技、太空这些
+but we do things like, like quantum, like civil nuclear energy, biotech, space,
+
+399
+00:23:00,040 --> 00:23:03,160
+而对于我团队里的每一块业务
+you know, and for each of those portfolios on my team.
+
+400
+00:23:03,240 --> 00:23:05,920
+我都有一两个人帮忙负责那块内容
+I have one or two people that help run that portfolio.
+
+401
+00:23:06,040 --> 00:23:07,849
+比如我有一个大概三个人的太空团队
+So I have a space team of about three guys
+
+402
+00:23:07,849 --> 00:23:10,480
+他们负责协调整个政府的太空政策
+and they coordinate space policy across the government.
+
+403
+00:23:10,560 --> 00:23:12,810
+他们把 NASA 拉进来，把 Department of War 拉进来
+So they bring NASA in, they bring the department of war
+
+404
+00:23:12,810 --> 00:23:15,410
+那里有一堆用于国家安全的卫星
+that has a bunch of satellites for national security purposes
+
+405
+00:23:15,410 --> 00:23:18,160
+大家坐到一起，把政策理清楚
+and they all sit together and kind of sort out, sort out the policy.
+
+406
+00:23:18,640 --> 00:23:22,080
+所以典型的一天里，你通常做的事情
+So I would say on a typical day, you know, the, the general things that you do are,
+
+407
+00:23:22,080 --> 00:23:23,800
+一是各种利益相关方的会议
+one, are sort of stakeholder meetings.
+
+408
+00:23:23,880 --> 00:23:25,844
+比如 Luther 过来说，嘿，各位
+So Luther comes and says, oh, hey, guys, you know,
+
+409
+00:23:25,844 --> 00:23:27,760
+你们得关注一下创业科技公司，等等等等
+you gotta look out for little tech da, da, da, da.
+
+410
+00:23:27,760 --> 00:23:31,240
+我听他讲，然后，呃，然后 Google 把 Apple 的案子和解掉
+And I listen to him and then, uh, and then Google settle the apple case.
+
+411
+00:23:32,600 --> 00:23:34,600
+所以有这类利益相关方的事务
+So there's, there's a kind of the stakeholder stuff.
+
+412
+00:23:34,920 --> 00:23:38,600
+第二类工作就是做政策的那些基础实务
+And the second category of work is just the blocking and tackling of doing policy.
+
+413
+00:23:38,840 --> 00:23:43,002
+比如总统说了，我们必须
+It's like work the the president has said, you know, like we, you know, have to,
+
+414
+00:23:43,002 --> 00:23:46,780
+必须确保商用无人机飞行能实现
+you know, have to make sure that commercial drone flight is happening.
+
+415
+00:23:46,860 --> 00:23:50,020
+那我们就得想办法做到，推动 FAA 修改这条规则
+So like let's figure out how to do it. Let's push FAA to change this rule.
+
+416
+00:23:50,220 --> 00:23:53,430
+就是这类事，把各机构聚到一起，去把它做成
+You that kind of stuff, bring the agencies together and do and do that,
+
+417
+00:23:53,430 --> 00:23:54,260
+做这类工作
+that kind of work.
+
+418
+00:23:54,700 --> 00:23:57,460
+嗯，这大概就是两大类工作
+Um, so those are kind of the, the two big, big buckets of stuff.
+
+419
+00:23:57,460 --> 00:23:59,460
+然后第三类就是做像这样的事
+And then the third is doing things like this,
+
+420
+00:23:59,460 --> 00:24:03,028
+比如传达总统的信息，和全国各地的人交流
+like sharing the present message and talking to, to people around the country,
+
+421
+00:24:03,028 --> 00:24:06,813
+了解他们面临的挑战，并试着看看我们怎么能
+understanding kind of what their challenges are and, and trying to see how we can be,
+
+422
+00:24:06,813 --> 00:24:09,840
+怎么能帮上忙。说到你提的主任和那个
+how we can be helpful. To your point on the director versus the, the.
+
+423
+00:24:09,920 --> 00:24:14,419
+总统助理的问题，呃，在白宫内部，有
+Assistant the president, um, the, uh, with within the White House, there's, um,
+
+424
+00:24:14,419 --> 00:24:19,320
+有一类人叫委任官员，他们大致有三个级别
+there are folks called commissioned officers and they sort of have three, three ranks.
+
+425
+00:24:19,480 --> 00:24:21,045
+有一类是总统助理
+There's an assistant the president,
+
+426
+00:24:21,045 --> 00:24:23,570
+也就是总统最资深的顾问
+which are sort of the most senior advisors to the president.
+
+427
+00:24:23,690 --> 00:24:25,490
+这类人大概有二十个左右
+There's about 20 or so of those people.
+
+428
+00:24:25,530 --> 00:24:29,097
+这也是我的头衔，但同时也是
+And, and that's what, that's a title that I have, but that's one that sort of the,
+
+429
+00:24:29,097 --> 00:24:30,610
+幕僚长和其他人的头衔
+the chief of staff has and others.
+
+430
+00:24:31,290 --> 00:24:33,490
+再往下有副职，然后是特别助理
+And then there's, there's deputies and then there's special.
+
+431
+00:24:33,650 --> 00:24:34,953
+所以这是一种层级结构
+So it's kind of this like hierarchy
+
+432
+00:24:34,953 --> 00:24:36,930
+我们都是向上汇总去支持总统
+where we all kind of flow up to support the president.
+
+433
+00:24:37,050 --> 00:24:38,523
+那实际上这意味着什么呢
+So practically, what does that mean?
+
+434
+00:24:38,523 --> 00:24:40,850
+你能随时想进椭圆形办公室就进吗
+Can you just wander into the Oval Office whenever you want?
+
+435
+00:24:40,930 --> 00:24:44,466
+你多久跟总统互动一次？这
+How often are you interacting with the president? And, and like, how does it,
+
+436
+00:24:44,466 --> 00:24:45,460
+这套机制是怎么运转的
+how does it function?
+
+437
+00:24:45,500 --> 00:24:48,217
+因为我觉得，大家其实
+Because it, it is like, I think people, um, you know,
+
+438
+00:24:48,217 --> 00:24:52,260
+未必意识到白宫里到底有多少人在工作
+don't necessarily appreciate how many people work, work at the White House.
+
+439
+00:24:52,260 --> 00:24:52,660
+对，对
+Yeah. Yeah.
+
+440
+00:24:52,660 --> 00:24:55,585
+我想，不想讲得太细太技术性，但是
+So I think, um, not to get too much in the weeds and mechanics, but I,
+
+441
+00:24:55,585 --> 00:24:58,137
+就像我提到的，有这些政策流程
+as I mentioned, there's, there's these policy processes
+
+442
+00:24:58,137 --> 00:25:01,540
+你把所有部门召集在一起，开始处理某个问题
+where you bring all the agencies together and you start working on a problem.
+
+443
+00:25:02,140 --> 00:25:05,429
+你可以把它想象成金字塔的底层，他们努力去
+And you can imagine that as kind of the bottom of the pyramid and they try to like
+
+444
+00:25:05,429 --> 00:25:06,340
+把问题理清楚
+sort out the problem.
+
+445
+00:25:06,940 --> 00:25:10,780
+如果他们能理清，那很好，政策就定了，然后执行
+And if they sort it out, then it's great. Then policy is over and it gets executed.
+
+446
+00:25:11,180 --> 00:25:14,322
+如果有分歧，比如有人说，不不不不
+If there is disagreement and, like, someone's like, no, no, no, no,
+
+447
+00:25:14,322 --> 00:25:15,500
+我随便举个例子
+like just making this up.
+
+448
+00:25:15,500 --> 00:25:17,184
+比如国防部有人说，不行
+Like, some guy at department of war is like, no,
+
+449
+00:25:17,184 --> 00:25:20,380
+我不喜欢这个无人机政策，因为我不希望无人机靠近军事设施
+I don't like this drone policy because I don't want drones anywhere near military sites.
+
+450
+00:25:20,620 --> 00:25:21,860
+那必须更严格得多
+That has to be way more stringent.
+
+451
+00:25:22,220 --> 00:25:24,940
+所以如果他们谈不拢，问题就上交到上一级
+So it's like, if they can't agree, then it like kicks up to the next level.
+
+452
+00:25:25,020 --> 00:25:28,260
+你可以想象，各部门更资深的人再来商量
+So then you can imagine, like, more senior people at all the agencies kind of chat.
+
+453
+00:25:28,760 --> 00:25:30,680
+如果还是谈不拢，就再往上升
+If they can't agree, then it gets up even higher.
+
+454
+00:25:31,200 --> 00:25:33,787
+如果他们还是无法达成一致，最终就会上交到
+And then if, if they can't agree, then it ultimately goes up to,
+
+455
+00:25:33,787 --> 00:25:35,080
+交给总统来决定
+to the president for decision.
+
+456
+00:25:35,240 --> 00:25:36,915
+所以你要做的是尽量限制
+So what you try to do is like limit the,
+
+457
+00:25:36,915 --> 00:25:40,373
+交到总统手上的决策，因为他时间有限
+the decisions that get to the president because he has limited amount of time
+
+458
+00:25:40,373 --> 00:25:43,290
+他应该专注于最重要的事情
+and he should be focused on the things that are most important to,
+
+459
+00:25:43,290 --> 00:25:46,640
+对国家、对国家优先事项最重要的事。对我们来说，当有
+to the country and to, and to the national priority. So, for us, when there.
+
+460
+00:25:46,640 --> 00:25:48,191
+当有一些高风险的
+Are certain high stakes, you know,
+
+461
+00:25:48,191 --> 00:25:51,240
+需要总统拍板的 AI 或科技问题时
+AI or technology issues that that the president needs to weigh in on.
+
+462
+00:25:51,570 --> 00:25:53,726
+我们把它们带到他面前，谈一谈，然后他
+Um, we bring them to him, we have a conversation and he,
+
+463
+00:25:53,726 --> 00:25:55,690
+他给出意见，做出最终决定
+and he weighs in and makes the ultimate decision.
+
+464
+00:25:56,890 --> 00:26:01,730
+我问这个的部分原因，是我想把这一点讲清楚
+Well, part of the reason I, I, I ask this, uh, and I wanted to kind of unpack that.
+
+465
+00:26:01,730 --> 00:26:07,161
+我想让在座的各位体会到 Michael 有多忙，因为
+I wanted people in this audience to appreciate how busy Michael is because, I mean,
+
+466
+00:26:07,161 --> 00:26:11,018
+说真的，我们真的很感激，那么多
+truly, we owe a debt of gratitude to just, uh, the amount of,
+
+467
+00:26:11,018 --> 00:26:16,370
+那么多公共服务的付出，以及今天他能抽时间来跟我们聊
+the amount of public service and the fact that we, we got some time with them today.
+
+468
+00:26:16,890 --> 00:26:23,924
+因为在处理所有这些繁忙事务的过程中
+Uh, because sometime in, in, in sort of managing all of that, uh, uh, flurry of, uh,
+
+469
+00:26:23,924 --> 00:26:30,130
+你刚刚发布了一份大约一百五十页的报告
+activity, you've just released a, like, hundred and fifty page report.
+
+470
+00:26:30,290 --> 00:26:33,850
+嗯，我想聊聊《Science, a New Golden Age》
+Hmm. Uh, I want to talk about, uh, science, a new golden age.
+
+471
+00:26:34,450 --> 00:26:37,850
+这份报告这周刚出。对，给我们讲讲吧
+Um, this came out this week. Yep. Tell us about it.
+
+472
+00:26:38,170 --> 00:26:40,572
+嗯，也许我们可以先从一点点
+Um, well, maybe we can start with just a little bit,
+
+473
+00:26:40,572 --> 00:26:44,061
+一点历史讲起，因为我觉得正是这段历史启发了我们
+a little bit of history because I think that's what sort of inspired us to,
+
+474
+00:26:44,061 --> 00:26:45,090
+去写这份报告
+to write this report?
+
+475
+00:26:45,410 --> 00:26:50,098
+呃，在 1945 年，FDR 给他的科学顾问写了一封信
+Um, in, in 1945, uh, FDR wrote a letter to his science advisor,
+
+476
+00:26:50,098 --> 00:26:54,970
+也就是担任我这个职位的人，一个叫 Vannevar Bush 的人
+since the person who had my role, this guy called Vannevar Bush.
+
+477
+00:26:55,130 --> 00:26:59,058
+在那封信里，他基本上是在问这位科学顾问
+Um, and in that letter he essentially asked science advisor,
+
+478
+00:26:59,058 --> 00:27:03,525
+二战之后，我们该做什么，我们该如何对待科学生态
+what should we do and how do we how do we approach the science ecosystem
+
+479
+00:27:03,525 --> 00:27:04,680
+在二战之后
+after World War 2?
+
+480
+00:27:05,280 --> 00:27:07,187
+你可以想象，在二战期间
+And you can imagine during World War 2,
+
+481
+00:27:07,187 --> 00:27:10,703
+联邦政府在科技生态上投入的大量精力
+a lot of the the energy that the federal government put into the science
+
+482
+00:27:10,703 --> 00:27:14,040
+都是为了让国家为战争做好准备
+and tech ecosystem was around getting the nation ready for the war.
+
+483
+00:27:14,280 --> 00:27:17,028
+于是大量资金被用来启动曼哈顿计划
+So a lot of money was spent in launching the Manhattan Project
+
+484
+00:27:17,028 --> 00:27:18,160
+以及其他各种项目
+and all this other stuff.
+
+485
+00:27:18,760 --> 00:27:21,767
+Vannevar Bush 给 FDR 回了一封信
+And. And Vannevar Bush replied back to, to FDR with a,
+
+486
+00:27:21,767 --> 00:27:25,320
+那是一份著名的报告，叫 Science, The Endless Frontier
+with a famous report I'm called science and Science Frontier.
+
+487
+00:27:25,720 --> 00:27:30,214
+他基本上是说，政府扮演着非常重要的角色
+Um, where he essentially said the government has a very important role to play in
+
+488
+00:27:30,214 --> 00:27:33,500
+要从国家利益出发资助科学和技术
+funding science and technology in the national interest,
+
+489
+00:27:33,500 --> 00:27:36,720
+尤其是资助早期的基础研究
+and particularly in funding early stage basic research.
+
+490
+00:27:36,920 --> 00:27:38,493
+他还指出
+And he made the point that, you know,
+
+491
+00:27:38,493 --> 00:27:40,800
+有些事情只有政府会去做
+there is stuff that only the government is going to do
+
+492
+00:27:40,800 --> 00:27:43,160
+因为私营部门没有动力去做
+because the private sector isn't incentivized to do.
+
+493
+00:27:43,640 --> 00:27:46,180
+从根本上说，那份报告勾画出了
+And essentially, that report laid out, um,
+
+494
+00:27:46,180 --> 00:27:49,850
+我们这个国家过去 70 年做科学的方式
+how we've been doing science as a country for the last 70 years.
+
+495
+00:27:50,490 --> 00:27:53,610
+但时代已经发生了巨大的变化
+But what's so. But the times have changed pretty dramatically.
+
+496
+00:27:53,810 --> 00:27:59,690
+在 1950 年前后，几乎 70% 的研发都由联邦政府资助
+Back then around like 1950, almost 70% of all R&D was being funded by the federal government.
+
+497
+00:27:59,770 --> 00:28:02,610
+所以他们几乎垄断了资金的去向
+So they kind of had monopoly over where the money was going to go.
+
+498
+00:28:03,010 --> 00:28:05,490
+只有大约 30% 甚至更少由私营部门完成
+And only about 30 or less was done by the private sector.
+
+499
+00:28:06,090 --> 00:28:08,701
+随着时间推移，这一比例几乎完全颠倒了
+Over time, that has sort of inverted completely.
+
+500
+00:28:08,701 --> 00:28:12,330
+现在私营部门加上慈善机构承担了大约 70% 的研发
+The private sector plus philanthropy now do about 70% of R&D and the.
+
+501
+00:28:12,730 --> 00:28:14,170
+而政府只占大约 30%
+And the government only does about 30.
+
+502
+00:28:14,620 --> 00:28:17,335
+如果只看大学里那种纯粹的基础研究
+And just if you think of like pure basic research kind of stuff you see at
+
+503
+00:28:17,335 --> 00:28:20,740
+现在联邦政府和私营部门几乎势均力敌
+universities is almost parity between the federal government, the private sector now.
+
+504
+00:28:21,100 --> 00:28:22,956
+所以这个体系已经从根本上改变了
+So the system has fundamentally changed
+
+505
+00:28:22,956 --> 00:28:25,740
+体系里的参与者也发生了巨大的变化
+and the actors within the system have changed dramatically.
+
+506
+00:28:26,220 --> 00:28:29,329
+在座的各位都是例证，作为创业者
+All of you guys exist you guys are doing incredible work in the as
+
+507
+00:28:29,329 --> 00:28:32,497
+你们做着了不起的工作，还有一种叫 FROs 的组织
+as a startup founders you have these organizations called FROs,
+
+508
+00:28:32,497 --> 00:28:36,251
+也就是 focused research organizations，独立于大学之外
+which are focused research organizations that sit outside of universities
+
+509
+00:28:36,251 --> 00:28:37,600
+做自己的研究
+that do their own research.
+
+510
+00:28:38,240 --> 00:28:41,000
+正因为这个体系已经改变
+And, um, and because that system has changed, you know,
+
+511
+00:28:41,000 --> 00:28:44,840
+我们作为一届政府认为，必须重新审视这个国家
+we as an administration believe that we have to relook at the way that science
+
+512
+00:28:44,840 --> 00:28:47,960
+做科学和技术的方式，以充分发挥它的价值
+and technology is done in this country to get the most out of it.
+
+513
+00:28:48,520 --> 00:28:51,215
+当我通过参议院确认担任现在的职务时
+And when I, uh, was confirmed by the Senate for my role,
+
+514
+00:28:51,215 --> 00:28:54,389
+特朗普总统给我写了一封信，很像当年 FDR 那样
+President Trump wrote me a letter very similar way to FDR didn't
+
+515
+00:28:54,389 --> 00:28:57,504
+问了我几个问题，围绕我们如何重振
+and asked me a couple of questions around how can we revitalize
+
+516
+00:28:57,504 --> 00:28:59,480
+并重新激活科学生态
+and reenergize the science ecosystem.
+
+517
+00:28:59,970 --> 00:29:05,650
+过去一年我们就写了一份报告回复他，谈我们能做什么
+And we spent the last year writing a report back to him on, on, on what we can do.
+
+518
+00:29:05,730 --> 00:29:09,890
+里面有几个主要主题可以展开谈
+And there's a couple of, of, of main themes that we can get into around that.
+
+519
+00:29:10,090 --> 00:29:13,847
+但其中我认为与你们最相关的核心论点
+But the, the, the core sort of thesis about it that I think applies to you,
+
+520
+00:29:13,847 --> 00:29:17,667
+它的一大支柱，是基于一个根本信念
+one of the, one of the main pillars of it is around this fundamental belief
+
+521
+00:29:17,667 --> 00:29:20,797
+那就是人工智能将彻底改变
+that artificial intelligence is going to transform the way
+
+522
+00:29:20,797 --> 00:29:23,490
+这个国家进行科学发现的方式
+that scientific discovery is done in this country.
+
+523
+00:29:23,870 --> 00:29:27,683
+如果你从事材料科学，如果你从事制药
+If you are working on material science, if you are working on pharmaceuticals,
+
+524
+00:29:27,683 --> 00:29:29,648
+如果你从事化学，那么两三年后
+if you are working on chemistry, you in 2,
+
+525
+00:29:29,648 --> 00:29:31,554
+甚至就在今天
+3 years or even today are doing your role
+
+526
+00:29:31,554 --> 00:29:35,310
+你作为科学家的工作方式，会因为人工智能而截然不同
+as a scientist dramatically different because of artificial intelligence.
+
+527
+00:29:35,430 --> 00:29:41,066
+我们政府每年花近 2000 亿美元资助研发
+And we as a government that spend almost $200 billion a year on funding R&D need to
+
+528
+00:29:41,066 --> 00:29:44,852
+必须意识到这一点并加以重视
+be aware of that and prioritize that so we can make sure
+
+529
+00:29:44,852 --> 00:29:50,320
+才能确保我们的生态产出全世界最好的研究
+that our ecosystem is putting out the best possible research in the world. Um,
+
+530
+00:29:50,320 --> 00:29:51,750
+那么报告的最后一章
+so the last chapter.
+
+531
+00:29:51,750 --> 00:29:55,590
+勾画出了一幅几乎像科幻的图景
+Of this report sketches this kind of like almost SCI fi picture.
+
+532
+00:29:56,390 --> 00:30:02,809
+你谈到 AI agents 为实验发布悬赏
+Um, and yeah, you're talking about AI agents, uh, posting bounties for experiments,
+
+533
+00:30:02,809 --> 00:30:07,600
+委托机器人云实验室，把结果记录在账本上结算
+contracting robotic cloud labs, settling results on a Ledger.
+
+534
+00:30:08,240 --> 00:30:10,800
+然后预算备忘录很快就变得非常具体
+And then the budget memo gets really concrete fast.
+
+535
+00:30:10,920 --> 00:30:15,621
+拨款一个月内定下来，奖金以 3 比 1 撬动私人资金
+Grants decided in under a month, prizes built for 3 to 1, private leverage,
+
+536
+00:30:15,621 --> 00:30:19,640
+每个主要机构在 90 天内提交一份行动计划
+every major agency filing an app, an action plan within 90 days.
+
+537
+00:30:20,280 --> 00:30:23,753
+你在报告里写道，政府的职责是塑造舞台
+And you write in this report that the government's job is to shape the arena,
+
+538
+00:30:23,753 --> 00:30:24,800
+而不是直接主导发现
+not direct discovery.
+
+539
+00:30:24,920 --> 00:30:29,287
+是的。那么对于聚集在这里的成千上万人来说
+Yep. So for the thousands of people we have assembled here, what,
+
+540
+00:30:29,287 --> 00:30:31,470
+这一愿景中有哪一部分是他们的机会
+what's the piece of that vision?
+
+541
+00:30:31,590 --> 00:30:34,530
+你是希望几个二十来岁的年轻人来搭建它
+You're hoping a couple of 20 year olds build?
+
+542
+00:30:34,530 --> 00:30:37,550
+因为政府做不到，或者不该做
+Because the government cannot or should not?
+
+543
+00:30:38,230 --> 00:30:42,648
+在我看来，支撑美国科学生态系统的基础设施
+To me, I think the, the infrastructure that is going to a, you know,
+
+544
+00:30:42,648 --> 00:30:48,111
+在未来几年
+support the scientific ecosystem in the United States is going to fundamentally
+
+545
+00:30:48,111 --> 00:30:50,200
+会发生根本性的变化
+change over the next few years.
+
+546
+00:30:51,280 --> 00:30:55,412
+想象一下自主云实验室可以循环运行实验
+The idea that you can have autonomous cloud labs running experiments on a loop
+
+547
+00:30:55,412 --> 00:30:59,480
+无需人工干预，检验假设、运行实验
+without human intervention, testing hypotheses, running the experiment,
+
+548
+00:30:59,480 --> 00:31:02,023
+查看结果、提出新假设
+seeing the results, creating a new hypothesis,
+
+549
+00:31:02,023 --> 00:31:05,456
+再检验、再运行，最终得出结论
+testing it and running it and ultimately getting to a conclusion
+
+550
+00:31:05,456 --> 00:31:06,600
+这已经在我们的视野之内
+that is in our sights.
+
+551
+00:31:06,840 --> 00:31:10,130
+但要让这一切成真，还有很多工作要做
+But for all of that to work, there's lots of things that still need to be done.
+
+552
+00:31:10,210 --> 00:31:13,210
+我们得把机器人技术做到完善，才能建起这些实验室
+We have to get robotics perfected so that you can create these labs.
+
+553
+00:31:13,290 --> 00:31:16,210
+还得打造合适的软件生态
+You have to create the right software ecosystem to be able to, like,
+
+554
+00:31:16,210 --> 00:31:19,130
+来推演并生成下一个假设
+think through the next hypothesis and create the next hypothesis.
+
+555
+00:31:19,210 --> 00:31:23,079
+所以在我看来，几乎有做不完的工作
+So to me, I think there's almost this sort of like infinite category of work
+
+556
+00:31:23,079 --> 00:31:26,886
+去构建这个自主实验的世界
+that can be done to create this this world of autonomous experimentation
+
+557
+00:31:26,886 --> 00:31:28,633
+让我们各个领域的科学家
+that all of our scientists across
+
+558
+00:31:28,633 --> 00:31:32,627
+都能借助它去做出这些发现。我是说
+so many domains are going to be leveraging to make these discoveries. I mean,
+
+559
+00:31:32,627 --> 00:31:34,000
+你刚才提到了一些
+you alluded to some of the.
+
+560
+00:31:34,160 --> 00:31:38,000
+我想那是你在展望未来的事情
+The things that I think you're looking out toward into the future.
+
+561
+00:31:38,520 --> 00:31:41,886
+那么除了 AI 之外，你觉得有哪种技术
+Uh, but beyond AI, what technology do you think
+
+562
+00:31:41,886 --> 00:31:46,029
+是华盛顿五年后会极其重视
+that Washington will care enormously about in five years
+
+563
+00:31:46,029 --> 00:31:48,360
+而今天却几乎没怎么谈论的
+that it barely discusses today?
+
+564
+00:31:49,160 --> 00:31:51,976
+其实我们谈得很多，但我觉得它得到的关注
+Well, we discussed it a lot, but I don't think it gets as much air time
+
+565
+00:31:51,976 --> 00:31:52,680
+还不够多
+as it should and.
+
+566
+00:31:52,720 --> 00:31:56,320
+那会是什么？那就是量子信息科学技术，或者说量子计算
+And that would be? That would be quantum information science technology or quantum computing.
+
+567
+00:31:56,640 --> 00:32:01,295
+在我看来，回到第一届特朗普政府时期
+Um, to me, I think, you know, back in, in the first Trump administration, uh,
+
+568
+00:32:01,295 --> 00:32:04,398
+也就是 2017、2018 年那会儿
+you know, in 2017, 2018 era, you know, I was as I was,
+
+569
+00:32:04,398 --> 00:32:07,280
+当时我是美国首席技术官
+I was chief Technology Officer United States.
+
+570
+00:32:07,360 --> 00:32:11,451
+在那个职位上，我记得自己总在白宫西翼跑来跑去
+And in that role, I was, I, I remember constantly running around the West Wing
+
+571
+00:32:11,451 --> 00:32:15,734
+想说服大家人工智能是件重要的事
+trying to convince people that artificial intelligence was an important thing
+
+572
+00:32:15,734 --> 00:32:17,907
+大概每隔几个月
+and like maybe once every couple months,
+
+573
+00:32:17,907 --> 00:32:21,679
+才会有记者好心写一篇关于 AI 的文章
+some journalists would like be nice enough to write an article about AI
+
+574
+00:32:21,679 --> 00:32:23,980
+讲讲政府在做什么。这是……
+and what the government was doing. This is.
+
+575
+00:32:24,100 --> 00:32:27,888
+大概是 2017、2018 年。2017、2018 年。而且
+Like 2017, 2018. 2017, 2018. And, um, and, you know,
+
+576
+00:32:27,888 --> 00:32:31,940
+我要非常感谢特朗普总统
+I give President Trump an incredible amount of credit.
+
+577
+00:32:31,980 --> 00:32:35,596
+我是说，他站出来表示，我要在 2019 年 2 月签署
+I mean, he stood up and said, I'm gonna sign the first executive order in the
+
+578
+00:32:35,596 --> 00:32:39,970
+美国历史上第一份把人工智能列为优先事项的行政命令
+history of United States prioritizing artificial intelligence in February of, of 2019.
+
+579
+00:32:40,490 --> 00:32:44,370
+这实际上确立了历史上第一份关于 AI 的国家战略
+And that essentially set out the first national strategy in history on on AI.
+
+580
+00:32:44,770 --> 00:32:48,214
+通过它，我们首次形成了监管层面的思路
+And through that, we created the first kind of like regulatory thinking around how
+
+581
+00:32:48,214 --> 00:32:50,810
+探讨各机构应如何看待 AI 驱动的技术
+our agency should be contemplating AI powered technologies.
+
+582
+00:32:51,450 --> 00:32:54,650
+但你知道，时代真的变了
+Um, but you know, times, times have really changed.
+
+583
+00:32:54,770 --> 00:32:58,305
+我觉得我们当时的努力，基本上把预算里投入 AI 的研发
+And I think the effort that we put in there to essentially double the amount of R&D
+
+584
+00:32:58,305 --> 00:33:01,048
+翻了一倍
+that we're putting into AI in our in our budgets, then you know,
+
+585
+00:33:01,048 --> 00:33:03,000
+然后快进三四年
+and you fast forward three or four years and.
+
+586
+00:33:03,040 --> 00:33:04,800
+我们就有了 ChatGPT，一切都爆发了
+And we have chat GPT and everything's exploded.
+
+587
+00:33:04,920 --> 00:33:08,818
+当然，我们在政府里做的那些事，未必就是
+Now, you know, obviously what we did in the administration wasn't necessarily the
+
+588
+00:33:08,818 --> 00:33:10,795
+ChatGPT 出现的原因之类的
+reason why chat GPT happened or whatever,
+
+589
+00:33:10,795 --> 00:33:13,281
+但我觉得我们花了很多功夫去优先推进
+but I think we spent a lot of work trying to prioritize
+
+590
+00:33:13,281 --> 00:33:15,880
+并让科技生态系统为这一刻做好准备
+and prime the the S&T ecosystem be ready for the moment.
+
+591
+00:33:16,000 --> 00:33:16,600
+我觉得确实如此
+I think it was.
+
+592
+00:33:17,160 --> 00:33:19,871
+如果把那种情形对照到今天
+And if we parallelize, parallelize that to today,
+
+593
+00:33:19,871 --> 00:33:22,970
+我觉得量子领域正在经历同样的时刻
+I think that same moment is happening with, with quantum.
+
+594
+00:33:23,770 --> 00:33:28,286
+确实还有一些非常基础的科学问题
+There are truly some, some basic fundamental scientific questions still need to be
+
+595
+00:33:28,286 --> 00:33:31,059
+有待解答，也就是量子如何能够
+answered on how quantum can, can sort of, um, uh, uh,
+
+596
+00:33:31,059 --> 00:33:34,930
+应用到计算和传感等领域，这项工作仍在进行
+be applied to things like computing and to sensing and that work goes on.
+
+597
+00:33:34,930 --> 00:33:37,555
+而且，总统刚刚签署了一份行政命令
+And, you know, president just signed executive order on, on,
+
+598
+00:33:37,555 --> 00:33:40,901
+关于量子信息科学，接下来几年我们会投入大量工作
+on quantum information science and we're going to do a ton of work over next few
+
+599
+00:33:40,901 --> 00:33:41,930
+来优先推进它
+years to prioritize it.
+
+600
+00:33:42,320 --> 00:33:45,658
+他给能源部定了一个相当宏大的目标，要建立一个
+He set a pretty ambitious goal for the department of energy to build a
+
+601
+00:33:45,658 --> 00:33:48,000
+一台有科学意义的量子计算机，什么时候能造出来
+scientifically relevant quantum computer by?
+
+602
+00:33:48,120 --> 00:33:49,000
+2028 年
+By 2028.
+
+603
+00:33:49,880 --> 00:33:52,616
+我的感觉是，三、四、五年后我们一觉醒来
+My sense is we're going to wake up in three, four, five years and,
+
+604
+00:33:52,616 --> 00:33:54,320
+会看到我们已经取得的进展
+and kind of see the progress we've made.
+
+605
+00:33:55,440 --> 00:34:01,875
+我们谈了很多关于行政部门及其权力
+We've talked a lot about the, uh, you know, the executive branch and its authority,
+
+606
+00:34:01,875 --> 00:34:07,190
+用行政命令来塑造 AI 政策
+executive, uh, executive orders being used to, um, shape AI policy.
+
+607
+00:34:07,510 --> 00:34:10,870
+你觉得国会在这些问题上可以做得更好的地方在哪
+Where do you think Congress could be doing better on, uh, these issues?
+
+608
+00:34:10,990 --> 00:34:14,414
+因为看起来，我们如此频繁地
+Because it seems like, yeah, the, the mere fact that we, uh, we,
+
+609
+00:34:14,414 --> 00:34:18,431
+读到有关行政命令和 AI 的消息，这或许说明
+we read so often about executive orders and AI might imply that, you know,
+
+610
+00:34:18,431 --> 00:34:21,790
+我们的立法部门本可以做得更好
+our legislative branch could, could be doing a, a better job.
+
+611
+00:34:22,990 --> 00:34:25,549
+是的，我觉得国会这块在 AI 上
+Yeah, I think that the congressional stuff is a little bit,
+
+612
+00:34:25,549 --> 00:34:26,750
+有点棘手
+a little bit tricky with AI.
+
+613
+00:34:26,910 --> 00:34:31,269
+我想，我们前面谈到的挑战在于，你不一定
+I think the, the challenges that we spoke about a little earlier aware you don't
+
+614
+00:34:31,269 --> 00:34:35,364
+想太早设定规则，结果反而
+necessarily want to want to set rules of the road too early that that end up,
+
+615
+00:34:35,364 --> 00:34:38,600
+伤害了这个行业，而不是支持它
+you know, hurting the industry rather than supporting it.
+
+616
+00:34:39,400 --> 00:34:43,032
+关于行政命令有个小秘密
+The thing about executive orders, which is a little secret,
+
+617
+00:34:43,032 --> 00:34:45,066
+就是政府更替时
+is when administration changes,
+
+618
+00:34:45,066 --> 00:34:49,280
+你可以直接撤销行政命令，从头再来
+you can just revoke the executive order and start from scratch again.
+
+619
+00:34:50,320 --> 00:34:53,440
+当某样东西成为法律时，你就做不到了，那就是法律
+When something is a law, you, you can't do that. It's, it's the law.
+
+620
+00:34:53,520 --> 00:34:55,200
+那是这个国家的法律
+And that's, that's the law of the land.
+
+621
+00:34:55,320 --> 00:34:58,149
+所以我们非常努力地去寻找
+So, you know, we work very hard to, to try to find, um,
+
+622
+00:34:58,149 --> 00:35:01,373
+我们能与国会合作、制定规则的地方
+places where we can collaborate with Congress to set rules
+
+623
+00:35:01,373 --> 00:35:04,400
+让这些规则真正支持创新、有利于国家
+that are actually pro innovation and help the country.
+
+624
+00:35:04,520 --> 00:35:07,213
+白宫今年早些时候
+And the White House put out a, a, a set of regular,
+
+625
+00:35:07,213 --> 00:35:11,320
+向国会提出了一套立法建议
+a set of sort of legislative proposals to, to Congress earlier this year.
+
+626
+00:35:11,760 --> 00:35:14,310
+我梳理了几个领域，我们认为
+I walk through a couple areas where, where we think, you know,
+
+627
+00:35:14,310 --> 00:35:16,360
+如果写进成文法，会带来很多好处
+a lot of benefit could happen if it was in statute.
+
+628
+00:35:16,760 --> 00:35:20,590
+有几点我要再强调一遍，我们会敦促国会
+There's a couple times I'll say it again, you know, we would urge Congress to,
+
+629
+00:35:20,590 --> 00:35:23,462
+能够通过某种关于
+to be able to pass, um, some side of some sort of law around,
+
+630
+00:35:23,462 --> 00:35:27,412
+联邦预占的法律，这样我们就不会出现这种混乱的拼凑局面，各个不同的
+around preemption so we don't have this crazy patchwork of all these different
+
+631
+00:35:27,412 --> 00:35:30,464
+州在 AI 上各行其是
+states doing all these different things, these things on AI.
+
+632
+00:35:30,464 --> 00:35:31,840
+我认为另一个领域
+I think another area that a.
+
+633
+00:35:31,840 --> 00:35:36,157
+很多美国人希望国会出手的领域，是
+Lot of Americans want to see, um, Congress step up on is, um, is how, um,
+
+634
+00:35:36,157 --> 00:35:40,921
+AI 如何与知识产权互动，以及与某些美国人的
+AI interacts with intellectual property and with, um, and with sort of name,
+
+635
+00:35:40,921 --> 00:35:43,750
+姓名、肖像和形象权（NIL）互动
+image and likeness of, of certain Americans.
+
+636
+00:35:44,350 --> 00:35:47,579
+我想，外面有很多创作者
+Um, I think there's a lot of creators out there that, um, are,
+
+637
+00:35:47,579 --> 00:35:50,550
+担心 AI 会如何影响他们的工作
+are worried about how AI is going to impact what they do.
+
+638
+00:35:50,590 --> 00:35:54,270
+我觉得我们所有人，其实都有某种手艺
+And I think all of us, I mean, you know, we all have a craft of some kind.
+
+639
+00:35:54,390 --> 00:35:57,351
+有些人是歌手，有些人是作家
+You know, some people are singers, some people are writers. You know,
+
+640
+00:35:57,351 --> 00:35:59,240
+你们都是了不起的程序员
+thought all of you are unbelievable coders.
+
+641
+00:35:59,600 --> 00:36:01,694
+你们都有各种技能和才华
+All of you have sort of skills and talents and, uh,
+
+642
+00:36:01,694 --> 00:36:05,320
+对这些有一些保护并了解相关规则，还是挺重要的
+and having some protections and knowing around that is kind of, is kind of important.
+
+643
+00:36:05,480 --> 00:36:07,510
+我们可以应用的东西。那么你觉得
+Something we can apply. Yeah. Where do you think,
+
+644
+00:36:07,510 --> 00:36:09,440
+白宫在这个问题上的立场是什么
+what is the sort of the White House line on that?
+
+645
+00:36:09,440 --> 00:36:13,970
+如果你有一根魔法棒，能解决知识产权问题，你会
+If you had a magic wand and you could, uh, sort of solve the IP issue, how would it,
+
+646
+00:36:13,970 --> 00:36:15,480
+怎么描述它
+how would it be described?
+
+647
+00:36:15,520 --> 00:36:19,645
+因为我感觉我跟传统媒体行业的人聊过
+Because I, I feel like I've spoken with people from like the traditional kind of
+
+648
+00:36:19,645 --> 00:36:21,707
+他们就是
+media industry that are just, you know,
+
+649
+00:36:21,707 --> 00:36:24,520
+到处对 AI 公司提起诉讼
+filing lawsuits against AI companies left and right.
+
+650
+00:36:24,920 --> 00:36:28,256
+而在光谱的另一端
+And then on the end of the other end of the spectrum,
+
+651
+00:36:28,256 --> 00:36:33,340
+我跟一些纯粹的极端派聊过，他们说
+I've talked to kind of pure maxies that say, you know, that that, uh, you know,
+
+652
+00:36:33,340 --> 00:36:36,200
+你甚至不应该有权选择退出
+you should not even be able to opt out of, uh.
+
+653
+00:36:36,600 --> 00:36:40,800
+不让人为了训练而抓取你的内容
+A being crawled for the purposes of training. And is, is.
+
+654
+00:36:41,720 --> 00:36:44,200
+你能不能稍微聊聊，把这个问题展开讲一讲
+Could you talk a little bit about, maybe unpack that issue a little bit?
+
+655
+00:36:44,800 --> 00:36:48,120
+是的，我一直态度明确的一个领域，就是模型输出
+Yeah, I think the one area what I've been clear on is the, is the model outputs.
+
+656
+00:36:48,400 --> 00:36:53,160
+如果你做了一个模型，会输出 Mickey Mouse（米老鼠）
+Yeah. And if you create a model that is, is outputting Mickey Mouse. Yeah.
+
+657
+00:36:53,200 --> 00:36:55,560
+那就不行了，不能那样做
+You know, not cool. Can't, can't do that way.
+
+658
+00:36:56,120 --> 00:36:59,280
+那是 Walt Disney（华特·迪士尼）的，只有他们才应该能输出那个
+What? That's Walt Disney and, and they should be the only people to, to output that.
+
+659
+00:36:59,320 --> 00:37:03,240
+所以我认为，把这一点在成文法里写得更清楚
+So I think, I think kind of making that more clear and in, in, in, in statute,
+
+660
+00:37:03,240 --> 00:37:05,200
+我认为非常重要
+I think is, I think is very important.
+
+661
+00:37:05,650 --> 00:37:10,336
+我觉得还有很多事情，行业其实可以自己去
+I think there's also a lot of things that, um, that the industry can kind of like,
+
+662
+00:37:10,336 --> 00:37:14,668
+稍微自我协调一下，去找到一些有意思的
+um, self, self coordinate on a little bit on finding interesting, um, uh,
+
+663
+00:37:14,668 --> 00:37:19,354
+面向创作者的收益分成模式，外面有很多创作者
+kind of like revenue sharing models for for creators a lot of creators out there
+
+664
+00:37:19,354 --> 00:37:20,490
+会很乐意这么做
+that would love to.
+
+665
+00:37:20,530 --> 00:37:23,637
+把他们自己的个人 IP 授权给
+License their, their own personal IP to, to, um, to, to,
+
+666
+00:37:23,637 --> 00:37:26,473
+那些能拿它做各种事情的公司
+to companies that can do all sorts of stuff with it,
+
+667
+00:37:26,473 --> 00:37:29,040
+不管他们是音乐人还是别的什么
+whether they're musicians or anything else.
+
+668
+00:37:29,440 --> 00:37:32,489
+其实我今早刚看到，我的老东家 Yelp 和 ChatGPT 达成了合作
+Actually, just read this morning, my old company Yelp did a deal with ChatGPT,
+
+669
+00:37:32,489 --> 00:37:34,600
+我猜是把一些评论输出出来
+where I guess they're outputting some of the reviews.
+
+670
+00:37:34,800 --> 00:37:34,920
+是的
+Yeah.
+
+671
+00:37:35,600 --> 00:37:37,160
+所以这类合作你会看到越来越多
+So, yeah, you're starting to see a lot more of that.
+
+672
+00:37:37,680 --> 00:37:38,800
+没错。而且要知道，现在还很早期
+Exactly. And look, it's early.
+
+673
+00:37:38,840 --> 00:37:42,062
+我觉得，但随着时间推移，这个市场会
+I think I, but, but, but I think over time that, that, that market is going to,
+
+674
+00:37:42,062 --> 00:37:42,880
+会逐渐成熟
+is going to mature.
+
+675
+00:37:43,000 --> 00:37:44,655
+我觉得这或许属于那类领域
+And I think that's maybe a category of places
+
+676
+00:37:44,655 --> 00:37:46,624
+你可能不希望立法太快
+where you probably don't want to legislate too fast,
+
+677
+00:37:46,624 --> 00:37:49,040
+所以得让市场自己去理顺
+so you got to kind of let the let the market kind of sort itself out.
+
+678
+00:37:49,920 --> 00:37:53,360
+但我确实觉得这很重要，因为美国人普遍是在意这件事的
+But, but I do think it's important because Americans generally, generally do care.
+
+679
+00:37:54,390 --> 00:37:56,935
+那么，作为收尾，我想问最后一个问题
+Well, to, to close this out, I one final question,
+
+680
+00:37:56,935 --> 00:38:00,350
+就是你是有史以来担任这个职位最年轻的人之一
+which is that you were one of the youngest people ever in your role.
+
+681
+00:38:01,030 --> 00:38:04,612
+对在座那些二十岁、关心技术
+To the 20 year olds in this room who care about technology
+
+682
+00:38:04,612 --> 00:38:09,489
+以及技术如何塑造国家的年轻人，他们中有些人将来该去政府工作吗
+and how it shapes the country, should some of them work in government someday
+
+683
+00:38:09,489 --> 00:38:11,470
+到了那里他们会发现什么
+and what would they find there?
+
+684
+00:38:12,070 --> 00:38:12,630
+你知道，我
+You know, I.
+
+685
+00:38:12,670 --> 00:38:15,411
+我会向你们所有人建议，如果
+I would recommend to all of you, if there's,
+
+686
+00:38:15,411 --> 00:38:19,674
+如果在你的职业生涯或人生中有那么一个时刻
+if there's a moment in your career or a moment in your life where, um,
+
+687
+00:38:19,674 --> 00:38:23,480
+你能在政府里担任一个角色，我向你保证
+you can take a role in government, I guarantee you they will.
+
+688
+00:38:23,640 --> 00:38:27,720
+你不会再有比这更有成就感、更有回报的时刻
+You will never feel or have a moment where it's more fulfilling and more rewarding.
+
+689
+00:38:27,920 --> 00:38:32,360
+我知道它可能很累，很官僚，也很痛苦
+I think it can be a slog. It can be bureaucratic. It can be painful.
+
+690
+00:38:32,720 --> 00:38:36,944
+但当结果真正出现，你交付了成果时
+But when the, when the outcome actually happens and you deliver the result, um,
+
+691
+00:38:36,944 --> 00:38:40,720
+没有任何地方能让你对这个国家产生更大的影响
+there is no place where you can have a bigger impact on, on this country.
+
+692
+00:38:40,880 --> 00:38:44,070
+我知道你们都在这里，你们是来创办公司的
+And I think all of you are here. You're here to build companies.
+
+693
+00:38:44,550 --> 00:38:47,631
+你们对创造新东西、雇用更多美国人感到兴奋
+You're excited about building new things, about hiring more Americans,
+
+694
+00:38:47,631 --> 00:38:50,864
+对打造能触及无数同胞生活的技术和了不起的东西
+about building technologies and amazing things that will touch the lives of
+
+695
+00:38:50,864 --> 00:38:52,430
+感到兴奋
+so many of our of our fellow citizens.
+
+696
+00:38:53,590 --> 00:38:56,037
+在政府里也有这种味道
+And there's some flavor of that in government
+
+697
+00:38:56,037 --> 00:38:59,901
+去营造那种能让创业公司蓬勃发展的环境
+and creating sort of the environment that can allow startups to thrive,
+
+698
+00:38:59,901 --> 00:39:02,090
+能让新公司得以诞生的环境
+that can allow new companies to be built.
+
+699
+00:39:02,890 --> 00:39:06,028
+我相信这其中有一种非常有成就感和回报感的东西
+I believe there's something very fulfilling and rewarding about that and,
+
+700
+00:39:06,028 --> 00:39:09,116
+而能为你的美国同胞服务、去做这件事
+and being able to do that in the service of kind of your fellow Americans is,
+
+701
+00:39:09,116 --> 00:39:10,810
+是我鼓励你们所有人去做的
+is something I encourage all of you to do.
+
+702
+00:39:10,810 --> 00:39:13,607
+如果你们中有谁想去白宫科技
+And if any of you want to work in the in the White House Science
+
+703
+00:39:13,607 --> 00:39:15,788
+政策办公室工作，尽管来找我们
+and technology office, you, you just look us up
+
+704
+00:39:15,788 --> 00:39:17,970
+因为我们一直在寻找优秀的人才
+because we're always looking for good people.
+
+705
+00:39:18,690 --> 00:39:21,650
+那么，Kratsios 主任，我必须说，作为
+Well, Director Kratos, I just have to say as uh.
+
+706
+00:39:22,640 --> 00:39:25,360
+常驻华盛顿的 Y Combinator 公共政策负责人
+Y. Combinator's head of public policy based in Washington.
+
+707
+00:39:26,600 --> 00:39:31,564
+我非常感谢你的办公室和政府的开放可及
+I really appreciate the accessibility of your office and the administration
+
+708
+00:39:31,564 --> 00:39:34,160
+以及在这些问题上的用心思考
+and the thoughtfulness on these issues.
+
+709
+00:39:35,040 --> 00:39:37,227
+我也非常感谢你能来
+And I also really appreciate you coming out
+
+710
+00:39:37,227 --> 00:39:39,960
+今天在 Y Combinator AI Startup School 上发言
+and speaking to y Combinator AI startup school today.
+
+711
+00:39:40,160 --> 00:39:42,800
+让我们为 Kratsios 主任鼓掌。谢谢，谢谢
+Let's give it up for director Kratzios. Thank you. Thank you.

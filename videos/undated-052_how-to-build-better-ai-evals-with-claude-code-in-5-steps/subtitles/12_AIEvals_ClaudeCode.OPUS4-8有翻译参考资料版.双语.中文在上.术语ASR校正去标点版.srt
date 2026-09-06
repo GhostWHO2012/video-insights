@@ -1,0 +1,4689 @@
+1
+00:00:00,350 --> 00:00:04,670
+在开始写 evals 之前，你要先把自己的品味和判断力外化出来
+You want to externalize your taste and your judgment before you start writing evals.
+
+2
+00:00:05,070 --> 00:00:07,374
+不管我加了多少东西、加了多少 evals
+No matter how many stuff I add and how many evals I add,
+
+3
+00:00:07,374 --> 00:00:08,910
+它都没法一次就做到完美
+it cannot get it perfect in one shot.
+
+4
+00:00:09,190 --> 00:00:10,726
+你有做自下而上的评估吗
+Do you have the bottom up evals?
+
+5
+00:00:10,726 --> 00:00:13,230
+我觉得这正是我打问号的地方
+I think this is where my question mark comes up for me.
+
+6
+00:00:13,630 --> 00:00:17,310
+自下而上是数据驱动的，自上而下则跟数据无关
+Bottom up is like data driven. Top down is not about the data.
+
+7
+00:00:17,790 --> 00:00:20,510
+Claude 非常非常不擅长自己想出自下而上的评估
+Claude is very, very bad at coming up with bottom up evals.
+
+8
+00:00:20,870 --> 00:00:23,845
+那全得靠你，它给出的界面会
+That's all you the interface that it comes up with is gonna be
+
+9
+00:00:23,845 --> 00:00:28,010
+比我在 Google Sheets 之类的地方看数据要好得多
+so much better than me looking at my data in, say, Google Sheets or something.
+
+10
+00:00:28,370 --> 00:00:31,101
+我们开玩笑说，写作是 LLM 的终极难关
+We joke that writing is the final boss for LLMs to, like,
+
+11
+00:00:31,101 --> 00:00:34,013
+要让它写得像你、还写到你满意
+have it write like you in a way that you are satisfied with,
+
+12
+00:00:34,013 --> 00:00:35,530
+这极其困难
+this is extremely difficult.
+
+13
+00:00:38,730 --> 00:00:41,415
+大家好，今天的嘉宾是 Hamel 和 Shreya
+Hey everyone, my guests today are Hamel and Shreya,
+
+14
+00:00:41,415 --> 00:00:44,650
+他们是网上最热门的 AI evals 课程的讲师
+the instructors behind the most popular AI evals course online.
+
+15
+00:00:44,690 --> 00:00:46,970
+我记得他们现在已经教过 4500 多名学员了
+I think they've taught over 4,500 students now.
+
+16
+00:00:47,010 --> 00:00:51,072
+他们今天来分享一个非常实用的例子，讲如何用 AI 来
+So they're here to share a really practical example about how to use AI to automate
+
+17
+00:00:51,072 --> 00:00:53,820
+用正确的方式自动化 evals，而不产生一堆低质输出
+evals the right way without doing a whole bunch of slop.
+
+18
+00:00:54,020 --> 00:00:57,780
+很高兴请到你们两位。非常期待。彼此彼此
+And uh yeah, really excited to have you both. Really excited. Likewise.
+
+19
+00:00:58,940 --> 00:01:02,100
+好的。那上次你们来上播客那期怎么样
+Great. Okay, so, so how about last time you came on the podcast?
+
+20
+00:01:02,620 --> 00:01:03,860
+我觉得我从你们那里学到了很多
+I feel like I Learned a lot from you.
+
+21
+00:01:03,900 --> 00:01:06,680
+我记得一些要点主要是审查用户使用轨迹
+I think some of the lessons were mainly review customer traces
+
+22
+00:01:06,680 --> 00:01:09,460
+和对话，找出问题出在哪里
+and conversations to figure out where things are going wrong.
+
+23
+00:01:10,020 --> 00:01:13,180
+用 yes/no、pass/fail 这样的评估，而不是编造随机分数
+Use like yes, no, pass, fail evals instead of making up random scores.
+
+24
+00:01:13,580 --> 00:01:15,286
+不过在进入演示之前
+But maybe before we get to the demo,
+
+25
+00:01:15,286 --> 00:01:18,521
+你们能不能先从宏观上聊聊 evals 有了哪些变化
+can you guys talk about at a high level about how evals have changed
+
+26
+00:01:18,521 --> 00:01:19,580
+从去年到现在
+since like last year.
+
+27
+00:01:19,940 --> 00:01:21,500
+基本原则依然适用
+So the fundamentals still apply.
+
+28
+00:01:21,940 --> 00:01:24,598
+你还是要从看数据开始
+You still want to start everything by looking at data
+
+29
+00:01:24,598 --> 00:01:26,229
+然后做错误分析
+and you want to do error analysis
+
+30
+00:01:26,229 --> 00:01:29,370
+并且要有一套结构化的方法来看数据
+and you want to have a structured approach to looking at data so
+
+31
+00:01:29,370 --> 00:01:32,149
+这样你就能把自己的品味和判断力外化出来
+that you can externalize your taste and your judgment
+
+32
+00:01:32,149 --> 00:01:33,840
+在你开始写 evals 之前
+before you start writing evals.
+
+33
+00:01:34,040 --> 00:01:38,137
+主要的变化是让 agent 帮你以
+The main thing that has changed is getting agents to help you look at the data in a
+
+34
+00:01:38,137 --> 00:01:41,924
+非常周到的方式看数据，agent 随着时间变得强大了很多
+very thoughtful way, so agents have become a lot more powerful over time,
+
+35
+00:01:41,924 --> 00:01:43,663
+我们也摸索出一套工作流
+and we have figured out a workflow
+
+36
+00:01:43,663 --> 00:01:47,760
+让你在看数据的同时，agent 在后台运行
+that allows you to have agents running in the background while you look at data.
+
+37
+00:01:47,960 --> 00:01:51,257
+支持你，让你在
+Supporting you so that you can have a lot more leverage in
+
+38
+00:01:51,257 --> 00:01:53,362
+看数据这个第一阶段能有更大的杠杆
+that first stage of looking at data,
+
+39
+00:01:53,362 --> 00:01:57,220
+这也是 Shreya 今天要演示的例子
+and that's what Shreya is going to show today as an example of that.
+
+40
+00:01:57,380 --> 00:02:03,340
+我还要补充一点，我们在课程里讲了很多 LLM judges
+The other thing I'll add to that is that we we teach LLM judges a lot in our course.
+
+41
+00:02:03,580 --> 00:02:06,790
+LLM judges 是一种方式，让 LLM 去看一条轨迹
+LLM judges are a way to have an LLM look at a trace
+
+42
+00:02:06,790 --> 00:02:10,740
+并针对某个非常具体的失败模式做出判断
+and make a judgment on about a very specific failure mode.
+
+43
+00:02:10,820 --> 00:02:16,120
+比如说，这个输出是太长了还是太短了
+So for example is, is this output too long or is this output too short?
+
+44
+00:02:16,240 --> 00:02:17,960
+它是否遵循了某种特定结构
+Does it follow a particular structure?
+
+45
+00:02:18,720 --> 00:02:25,012
+LLM judges 在评估这些定义得很清楚的标准上已经做得很好
+Um, LLM judges have gotten very good at evaluating these very well defined criteria
+
+46
+00:02:25,012 --> 00:02:26,360
+而且更准确了
+more accurately.
+
+47
+00:02:26,520 --> 00:02:29,360
+所以我会说，我们现在更看好 LLM judges
+So we are much bigger fans, I would say of LLM judges.
+
+48
+00:02:30,000 --> 00:02:30,360
+明白了
+Got it.
+
+49
+00:02:30,560 --> 00:02:34,032
+既然有两位专家在，我很想请你们看看我那些相当
+So that 2 x experts here, I'd love for you guys to take a look at my pretty,
+
+50
+00:02:34,032 --> 00:02:37,680
+相当粗糙的 evals，是我为一个 skill 做的，希望你们能给点反馈
+pretty dumb events for a skill that I built and maybe give me some feedback.
+
+51
+00:02:38,160 --> 00:02:41,305
+简单说，我做了一个用于播客后期制作的 skill
+Basically, I built a skill for podcast post production
+
+52
+00:02:41,305 --> 00:02:44,040
+这个 skill 的一部分功能是它会写一堆内容
+and part of the skill is it it writes a bunch of it.
+
+53
+00:02:44,160 --> 00:02:46,934
+它会尝试从播客里找出前 10 个要点
+It tries to find the top 10 takeaways from the podcast
+
+54
+00:02:46,934 --> 00:02:49,960
+然后把初稿写成一篇 newsletter 帖子
+and then it writes the initial draft as a newsletter post.
+
+55
+00:02:50,040 --> 00:02:53,373
+我为此做了一堆 evals，或者说，是我——其实是 Claude——
+And I built a bunch of evals for this or I, I, as in Claude,
+
+56
+00:02:53,373 --> 00:02:55,040
+做了一堆 evals
+built a bunch of evals for this.
+
+57
+00:02:55,560 --> 00:02:57,889
+举个例子，如果你往下看
+So, uh, so for example, if you go down here,
+
+58
+00:02:57,889 --> 00:03:00,551
+有一些关于要点的评估
+there's some evals around like our takeaways,
+
+59
+00:03:00,551 --> 00:03:03,280
+比如长度要在 240 到 330 个字符之间
+the right length between 240 and 330 characters.
+
+60
+00:03:03,480 --> 00:03:07,480
+然后还有一些偏判断性的东西，比如每个要点是否易于理解
+And then there's also some like judgment things is each takeaway understandable on
+
+61
+00:03:07,480 --> 00:03:11,080
+它自己没看那期节目，就给不出有用的建议
+its own without watching the episode, that doesn't give playing useful advice.
+
+62
+00:03:11,400 --> 00:03:14,120
+所以我想 evals 大概有两种类型，对吧
+So I guess there's kind of two types of evals, right?
+
+63
+00:03:14,200 --> 00:03:16,323
+一种就是检查字符长度对不对
+One is just like checking if the character length is correct
+
+64
+00:03:16,323 --> 00:03:18,445
+另一种更偏向基于判断的，不过嗯
+and the other one is more like judgment based, but yeah,
+
+65
+00:03:18,445 --> 00:03:21,320
+你们对此有什么想法，或者我怎么能把它做得更好
+do you guys have any thoughts about this or like how can I make this better?
+
+66
+00:03:22,000 --> 00:03:27,320
+嗯，这太棒了。我很喜欢你有一个真实的 demo 给我们看
+Yeah, this is awesome. I love that you have a real demo for us to take a look at.
+
+67
+00:03:27,960 --> 00:03:31,549
+有些地方我想稍微往回退一下
+There's some things that I want to back up a little bit on,
+
+68
+00:03:31,549 --> 00:03:33,840
+也就是这个 skill 里到底有什么，对吧
+which is what's in the skill, right?
+
+69
+00:03:33,840 --> 00:03:37,280
+如果我们要开始做 evals，凭空做 evals 是很难的
+If we're going to start doing evals, it's very hard to do evals in a vacuum.
+
+70
+00:03:37,920 --> 00:03:42,188
+这个 skill 应该做什么，你当时的……
+Kind of what is the skill supposed to do and what was your...
+
+71
+00:03:42,188 --> 00:03:44,640
+我很喜欢你尝试去做 evals
+I love that you try to make evals.
+
+72
+00:03:44,720 --> 00:03:47,440
+那你做这些 evals 时的思路是怎样的
+So then kind of what was your thought process on making the evals?
+
+73
+00:03:47,560 --> 00:03:53,000
+是不是像，我就让 Claude 帮我做一些 evals，还是怎样，我也不确定
+Was it like, I'm just gonna add Claude to make some evals for me or I don't know.
+
+74
+00:03:53,000 --> 00:03:53,840
+你看到了一些输出
+You saw some output.
+
+75
+00:03:53,960 --> 00:03:56,647
+所以你看到一些你注意到有点不对劲的东西，嗯
+So you saw some things that you noticed were like off, um,
+
+76
+00:03:56,647 --> 00:03:58,566
+然后你想围绕这些去创建 evals
+and then you wanted to create evals around
+
+77
+00:03:58,566 --> 00:04:00,760
+或者，跟我们多讲讲这个过程
+that or like tell us a little bit more about that.
+
+78
+00:04:01,080 --> 00:04:05,560
+这是个好问题。嗯，那我把我的小博客文章调出来。嗯
+That's a good question. Yeah. So, um, let me pull up my little blog post. Um.
+
+79
+00:04:06,560 --> 00:04:08,504
+基本上我会做这些访谈，呃
+So basically I do these interviews and, uh,
+
+80
+00:04:08,504 --> 00:04:11,581
+会有一个视频，然后对于想看视频的人
+there's a video and then the people who would want to watch the video,
+
+81
+00:04:11,581 --> 00:04:13,524
+我在下面放了一堆要点，所以
+I have a bunch of takeaways down here so that
+
+82
+00:04:13,524 --> 00:04:15,360
+这基本上就是这个 skill 做的事
+that's basically what the skill does it.
+
+83
+00:04:15,400 --> 00:04:18,493
+它生成这些要点草稿，呃，然后，你知道的
+It produces these draft takeaways and, uh, all, all, you know,
+
+84
+00:04:18,493 --> 00:04:22,240
+顺便跟观看的人说一下，我不是把东西粘进去就完事了
+just for people watching, I, I don't just paste the stuff in and call it a day.
+
+85
+00:04:22,280 --> 00:04:24,771
+我也会人工审查，来回反复地打磨
+I also manually review and go back and forth with it that
+
+86
+00:04:24,771 --> 00:04:27,640
+基本上就是这样，那我给你看个真实的例子
+that's basically what does so let me show you a real example.
+
+87
+00:04:28,120 --> 00:04:32,600
+比如它为我和 Anthropic 的 Tarik 的访谈生成这些要点
+So like it's producing these takeaways for my interview with Tarik from Anthropic.
+
+88
+00:04:32,640 --> 00:04:36,036
+然后我就给一堆反馈，比如，嘿，把这些全改掉
+And then I just give like a bunch of feedback like, hey, go change all,
+
+89
+00:04:36,036 --> 00:04:39,600
+所有这些内容，然后它又做了一遍，接着这里又有一些反馈，对吧
+all the stuff and then did it again and then here's some more feedback, right?
+
+90
+00:04:39,840 --> 00:04:41,483
+而这是在运行 skill 之后
+And this is after running the skill.
+
+91
+00:04:41,483 --> 00:04:43,320
+这是在运行 skill 和 evals 之后
+This is after running the skill and the eval.
+
+92
+00:04:43,360 --> 00:04:45,961
+所以不管我加多少东西、加多少 evals
+So no matter how many stuff I add and how many evals I add,
+
+93
+00:04:45,961 --> 00:04:48,230
+它都没法一次就做到完美，因为
+it cannot get it perfect in one shot because like,
+
+94
+00:04:48,230 --> 00:04:51,440
+我想每次访谈都不一样，就得来回反复
+I guess each interview is different and it kind of goes back and forth.
+
+95
+00:04:51,730 --> 00:04:54,290
+对。但基本上输出就是这个样子。嗯
+Yeah. But basically the output is like this thing. Yeah.
+
+96
+00:04:54,610 --> 00:04:59,207
+所以我觉得你有一点说到点子上了，就是，你知道的
+So I think you hit the nail on the head with one takeaway, which is, you know,
+
+97
+00:04:59,207 --> 00:05:00,690
+evals 是一个迭代的过程
+evals are an iterative.
+
+98
+00:05:00,730 --> 00:05:01,770
+它是一个不断打磨的过程
+It's a work in progress.
+
+99
+00:05:02,010 --> 00:05:03,966
+而通过看越来越多的例子
+And by seeing more and more examples,
+
+100
+00:05:03,966 --> 00:05:06,994
+你会看到更多失败模式，给出更多反馈
+you're going to see more failure modes give more feedback
+
+101
+00:05:06,994 --> 00:05:09,770
+而你会想把这些外化到那些 evals 里
+that you kind of want externalized into those evals.
+
+102
+00:05:09,890 --> 00:05:10,650
+所以这是有道理的
+So that makes sense.
+
+103
+00:05:11,170 --> 00:05:12,963
+嗯，那我先从这里开始
+Um, so let me start with kind of,
+
+104
+00:05:12,963 --> 00:05:16,550
+evals 有两个部分是你一定要有的
+there are two halves of evals that you definitely should have.
+
+105
+00:05:16,910 --> 00:05:20,358
+一部分是自上而下的评估，这里的想法是
+One half is like the top down evals and the idea here is
+
+106
+00:05:20,358 --> 00:05:24,981
+如果你非常认真地思考这个任务的本质，比如说
+if you think very critically about the nature of the task, for example,
+
+107
+00:05:24,981 --> 00:05:30,310
+播客要点生成，从很高的层面看，什么才算是好的要点
+podcast takeaway generation at a very high level, what makes for good takeaways?
+
+108
+00:05:30,390 --> 00:05:32,790
+所以这些绝对包括像字数长度这样的东西
+So these are absolutely things like word length.
+
+109
+00:05:32,990 --> 00:05:36,737
+这些绝对包括像确保你正确使用行动动词，或者
+These are absolutely things like make sure you're using action verbs correctly or
+
+110
+00:05:36,737 --> 00:05:39,180
+确保这些对人来说是可执行的要点
+make sure these are actionable takeaways for humans.
+
+111
+00:05:40,020 --> 00:05:44,384
+所以把自上而下想成：如果你在真空中，只给你任务描述
+So think of top down is what if you're in a vacuum, just given the task description,
+
+112
+00:05:44,384 --> 00:05:45,860
+你会想出什么
+what would you come up with?
+
+113
+00:05:46,300 --> 00:05:50,836
+我觉得 Claude 在这方面做得很好，能很好地
+And I think Claude does a very good example with help or does a very good job of
+
+114
+00:05:50,836 --> 00:05:53,140
+帮你做这些自上而下的评估
+helping you with these top down evals.
+
+115
+00:05:53,540 --> 00:05:55,940
+而自下而上的评估是另一半
+Now, bottom up evals are the other half.
+
+116
+00:05:56,340 --> 00:06:01,262
+自下而上的评估是指，当你看大量、大量的样本输出时
+Bottom up evals means when you look at lots and lots and lots of say, sample outputs,
+
+117
+00:06:01,262 --> 00:06:06,040
+你直觉的感受和反馈是什么，而这些你也想外化到 evals 里
+what is your gut vibes and feedback that you also want externalized into evals?
+
+118
+00:06:06,400 --> 00:06:08,955
+所以这些就是你在说的那些东西
+So these are the things that you're talking about
+
+119
+00:06:08,955 --> 00:06:12,320
+也就是你和 Claude 一起迭代打磨要点本身时的那些内容
+when you're iterating with Claude on, uh, the takeaways itself.
+
+120
+00:06:12,520 --> 00:06:16,640
+这些是你想出来、想外化到 eval 里的东西
+These are things that you come up with that you want externalized into the eval.
+
+121
+00:06:17,200 --> 00:06:20,680
+Claude 非常非常不擅长提出自下而上的评估
+Now, Claude is very, very bad at coming up with bottom-up evals.
+
+122
+00:06:20,880 --> 00:06:25,380
+那部分完全得靠你，嗯，好，这也是它需要随时间积累的原因
+That's all you, um, okay, and that's also why it, it occurs over time.
+
+123
+00:06:25,460 --> 00:06:28,803
+所以当我看你这个 skill 时，我心里在想的是
+So when I look at your skill here, what I'm mentally thinking is,
+
+124
+00:06:28,803 --> 00:06:30,380
+你有自上而下的评估吗
+do you have the top-down evals?
+
+125
+00:06:30,500 --> 00:06:34,020
+看起来你确实有。嗯，那你有自下而上的评估吗
+It seems like you really have it. Um, and do you have the bottom-up evals?
+
+126
+00:06:34,100 --> 00:06:36,061
+我觉得这就是我疑问的地方，我，呃
+I think this is where my question, I, uh,
+
+127
+00:06:36,061 --> 00:06:39,925
+这里对我来说打了个问号，因为我很想知道，你懂的，哪些
+the question mark comes up for me because I would love to know, you know, which,
+
+128
+00:06:39,925 --> 00:06:42,540
+这些要点里哪些是自下而上得来的
+which of these bullets are things that are bottom-up.
+
+129
+00:06:43,700 --> 00:06:47,015
+你怎么，你有信心它已经涵盖了所有反馈吗
+How do you, do you feel confident that it is exhaustive of all the feedbacks
+
+130
+00:06:47,015 --> 00:06:49,260
+就是你在好几期不同播客里收到的反馈
+that you've had over several different podcasts?
+
+131
+00:06:49,860 --> 00:06:50,860
+对，诸如此类
+Yeah. And so forth.
+
+132
+00:06:51,460 --> 00:06:52,540
+这其实是个很好的点
+That's actually a really good point.
+
+133
+00:06:52,580 --> 00:06:54,934
+所以基本上我的，我的循环是这样，你懂的
+So basically my, my, my loop is like, you know,
+
+134
+00:06:54,934 --> 00:06:58,775
+我拿一份原始转录跑这个 skill，产出一堆输出
+I run this skill for like a raw transcript and then produce a bunch of output
+
+135
+00:06:58,775 --> 00:07:00,820
+然后我跟它来回沟通，我
+and then I go back and forth with it and I.
+
+136
+00:07:00,820 --> 00:07:03,500
+你懂的，最终我们得到一个我满意的结果，对吧
+You know, I finally we get to a result that I'm happy with, right?
+
+137
+00:07:03,880 --> 00:07:05,685
+然后，然后我就跟它说，嘿，好，现在
+Then, then I tell you like, hey, okay, now,
+
+138
+00:07:05,685 --> 00:07:07,594
+现在回顾一下我们整段对话
+now reflect on our entire conversation and,
+
+139
+00:07:07,594 --> 00:07:10,844
+然后给出建议，你会对这个 skill 和 eval 做哪些更新
+and like suggest what kind of updates you'll make to the skill and the eval so
+
+140
+00:07:10,844 --> 00:07:13,320
+这样我们就不用再把整个流程走一遍了
+that we don't have to go through this whole process again.
+
+141
+00:07:14,360 --> 00:07:16,455
+对，没错。太完美了。太棒了
+Right, exactly. That's perfect. That's amazing.
+
+142
+00:07:16,455 --> 00:07:18,200
+我觉得你这么做真的很好
+I think it's really great that you do that.
+
+143
+00:07:18,440 --> 00:07:20,223
+但，但我想我担心的一件事是，它会
+But, but I guess one thing I'm worried about is it'll,
+
+144
+00:07:20,223 --> 00:07:21,520
+它会有点过拟合到某些东西上
+it'll just kind of overfit to things.
+
+145
+00:07:21,520 --> 00:07:24,235
+所以，比如说，我们做完一期播客，然后我说
+So, so for example, we'll, we'll do one podcast and then I said,
+
+146
+00:07:24,235 --> 00:07:27,420
+这些要点不 MECE，MECE 是那种咨询行业的说法，对吧
+takeaways are not MECE, like MECE is like this consulting thing, right?
+
+147
+00:07:27,420 --> 00:07:30,020
+意思是它们不是相互独立、也不是完全穷尽的
+It's like they're not mutually exclusive and they're not comprehensive.
+
+148
+00:07:30,360 --> 00:07:33,687
+然后它就加上这条 eval，但下次我再来做的时候
+And then it adds this eval and but then the next time I come and do this,
+
+149
+00:07:33,687 --> 00:07:37,760
+结果这个 MECE 对这次访谈可能没那么重要
+then actually the MECE thing is maybe not that important for, for this interview.
+
+150
+00:07:37,800 --> 00:07:40,334
+然后它就有点过拟合到，你懂的
+And then it just like overfits to, you know,
+
+151
+00:07:40,334 --> 00:07:43,080
+本期节目由 Wispr Flow 赞助播出
+this episode is brought to you by Wispr Flow.
+
+152
+00:07:43,280 --> 00:07:45,779
+Wispr Flow 每周至少帮我节省 3 小时
+Wispr Flow saves me at least 3 hours a week
+
+153
+00:07:45,779 --> 00:07:48,000
+是目前我最喜欢的 AI 应用之一
+and is one of my favorite AI apps by far.
+
+154
+00:07:48,200 --> 00:07:52,120
+用语音口述给 AI 比打字快太多了
+It's just so much faster to dictate to AI using your voice than to type.
+
+155
+00:07:52,330 --> 00:07:56,447
+你只要自然地说，它就输出干净、可直接发送的文本，Wispr Flow
+You just talk naturally and it outputs clean, ready to send text, Wispr Flow,
+
+156
+00:07:56,447 --> 00:07:59,690
+甚至会帮你去掉语气词、整理好句子
+even removes filler words and formats your sentences for you.
+
+157
+00:07:59,930 --> 00:08:03,355
+我什么都用 Wispr Flow，包括起草 newsletter 文章
+I use Wispr Flow for everything, including drafting newsletter posts,
+
+158
+00:08:03,355 --> 00:08:05,730
+写产品规格、在 Slack 上回复等等
+writing product specs, replying on Slack and more.
+
+159
+00:08:05,890 --> 00:08:10,250
+它支持 Mac、Windows、iPhone 和 Android，能在你常用的各种应用里使用
+It works on Mac, Windows, iPhone and Android across all of your favorite apps.
+
+160
+00:08:10,490 --> 00:08:13,848
+到 WisprFlow.com 免费试用，用我的优惠码
+Try it free at Wispr Flow.com and use my code,
+
+161
+00:08:13,848 --> 00:08:16,690
+Peter Wispr Flow，可获得 6 个月免费
+Peter Wispr Flow to get 6 months free.
+
+162
+00:08:16,940 --> 00:08:19,340
+就是 Peter Wisprflow。现在回到我们的节目
+That's Peter Wisprflow. Now back to our episode.
+
+163
+00:08:19,860 --> 00:08:23,943
+好，我一直会给的一个建议其实是在 skill 本身里
+Yeah, so one advice that I always give is actually in the skill itself,
+
+164
+00:08:23,943 --> 00:08:26,900
+把你的评估分成自上而下和自下而上两类
+separate your evals into top-down and bottom-up.
+
+165
+00:08:27,580 --> 00:08:33,394
+然后 skill 里的另一点是，如果你有很多评估标准
+Then the other thing in the skill is if you have lots of eval criteria,
+
+166
+00:08:33,394 --> 00:08:39,700
+就用子 agent 去评估每条标准或每组标准
+use sub-agents to then go and evaluate each criteria or each group of criteria.
+
+167
+00:08:40,140 --> 00:08:42,504
+这样你就能更有信心一些
+So that way, you can be a little bit more confident
+
+168
+00:08:42,504 --> 00:08:44,580
+确保所有标准都被检查到了
+that all of the criteria is being looked at.
+
+169
+00:08:45,060 --> 00:08:49,325
+我要说的第三点是，一旦子 agent 完成
+The third thing I'll say here is once the sub-agents complete,
+
+170
+00:08:49,325 --> 00:08:51,584
+你可以在 skill 里把这个写清楚
+you can detail this in the skill,
+
+171
+00:08:51,584 --> 00:08:55,849
+让 AI 写一个表格，或者像 Hamel 可能会说的
+have the AI write a spreadsheet or as Hamel will probably say,
+
+172
+00:08:55,849 --> 00:08:59,780
+一个数据透视表，基本上列出每条标准以及
+pivot table of basically each of these criteria and the.
+
+173
+00:09:00,600 --> 00:09:03,440
+或者一个指示，yes 或 no、pass 或 fail
+Or like an indicator, yes or no, pass or fail.
+
+174
+00:09:04,000 --> 00:09:06,501
+这样你就可以去看，然后你自己，对吧
+That way you could go look and then you yourself, right,
+
+175
+00:09:06,501 --> 00:09:08,240
+知道一个重要性的层级
+know a hierarchy of what is important.
+
+176
+00:09:08,320 --> 00:09:12,200
+比如说，这个 MECE 标准在另一件事里可能就没那么重要
+And for example, this MECE criteria might not be as important in another thing.
+
+177
+00:09:12,280 --> 00:09:15,560
+所以你自己就能很快做出判断
+So you can kind of really quickly make a judgment call yourself.
+
+178
+00:09:16,200 --> 00:09:19,040
+哦，我明白了。好，所以可能有些标准比其他更重要
+Oh, I see. Okay. So maybe like some criteria is more important than other ones.
+
+179
+00:09:19,120 --> 00:09:21,830
+然后我可以，我可以试着加一些权重之类的
+And like I can I can try to like add some weight weights or something.
+
+180
+00:09:21,870 --> 00:09:24,070
+对，没错。但你甚至都不需要那么做
+Yeah, exactly. But you don't even need to do that.
+
+181
+00:09:24,110 --> 00:09:25,786
+就是这么简单，让 AI
+It's as simple as just having the AI
+
+182
+00:09:25,786 --> 00:09:28,270
+作为 skill 的一部分，帮你生成一个表格
+as part of the skill generate a spreadsheet for you.
+
+183
+00:09:28,670 --> 00:09:28,950
+明白了
+Got it.
+
+184
+00:09:28,950 --> 00:09:31,709
+那你说的 bottom-up 评估，我们确认一下
+And, and, and when you say bottom-up evals just so we're on the same page,
+
+185
+00:09:31,709 --> 00:09:34,230
+你是指我在过程中发现的东西，对吧
+you mean like stuff that I discover through the process, right?
+
+186
+00:09:34,390 --> 00:09:37,310
+是这样吗？对，自下而上就是数据驱动的
+Is that what it is? Bottom, yeah. Bottom-up is like data driven.
+
+187
+00:09:37,950 --> 00:09:40,470
+自上而下则跟数据无关
+Top-down is it's not about the data.
+
+188
+00:09:40,670 --> 00:09:44,836
+它更像是领域专家理解任务的基本功，他们会关注
+It's just like basics of a domain expert understanding the task what would they look
+
+189
+00:09:44,836 --> 00:09:48,884
+什么。我想还有一件我没做过的事，就是把这个 skill 跑在
+for and and I guess another thing that I haven't done is just like run this skill on,
+
+190
+00:09:48,884 --> 00:09:51,324
+比如说，因为我手上有所有原始文字记录
+let's say, because I have all the raw transcripts
+
+191
+00:09:51,324 --> 00:09:55,550
+以及我过去做的十几二十场采访的最终成品，对吧？所以也许我
+and the final output for like the past 10 or 20 interviews that I did, right? So maybe I.
+
+192
+00:09:55,550 --> 00:09:57,363
+可以直接把这个 skill 跑在，比如说
+Can just, like, run the skill on, like,
+
+193
+00:09:57,363 --> 00:10:01,387
+10 份不同的原始文字记录上，拿到它的输出，然后跟我最终的
+10 different raw transcripts and get its output and then maybe compare with my final,
+
+194
+00:10:01,387 --> 00:10:03,823
+也就是人工编辑过的版本做对比，然后说，好
+you know, human edited stuff and be like, hey, okay,
+
+195
+00:10:03,823 --> 00:10:05,750
+一次性看这 10 个东西
+so looking at all these 10 things at once.
+
+196
+00:10:05,870 --> 00:10:08,830
+你能发现什么样的模式，诸如此类。我很喜欢这个
+What kind of patterns can you find or that kind of stuff. I love that.
+
+197
+00:10:08,910 --> 00:10:13,045
+这是自下而上、直接从数据中提炼的绝佳例子
+That's that's a great example of bottom up directly derived from the data and
+
+198
+00:10:13,045 --> 00:10:16,728
+因为你有真实的标注、真实的结论，对吧
+because you have the actual labels the the actual takeaways, right,
+
+199
+00:10:16,728 --> 00:10:21,250
+然后你就可以让 AI agents 去反思两者结论之间的差异
+then you can have AI agents reflect on the difference between the takeaways of them,
+
+200
+00:10:21,250 --> 00:10:25,450
+也就是 skill 天真跑出来的结果和你的结果之间的差异。太棒了。对，我想
+you know, whatever would come out of the skill naively awesome. Yeah, I I want.
+
+201
+00:10:25,450 --> 00:10:26,882
+从这个例子开始，因为我，我
+To start this example because like I, I,
+
+202
+00:10:26,882 --> 00:10:29,876
+我觉得这种东西任何人都能做，因为大家到处都在做 skill
+I feel like this the kind of stuff anyone can build cause people are building skills
+
+203
+00:10:29,876 --> 00:10:32,480
+任何人都能为自己的 skill 做这套评估
+all over the place and anyone can build this eval thing for their skills.
+
+204
+00:10:33,040 --> 00:10:34,280
+我觉得这真的很有意思
+I think this is really interesting.
+
+205
+00:10:34,440 --> 00:10:38,826
+你打开了一个非常有趣的兔子洞，就是写作
+Like you opened up a, a very interesting rabbit hole which is writing
+
+206
+00:10:38,826 --> 00:10:41,443
+也是我一直在讨论的东西
+and the thing that I discuss all the time,
+
+207
+00:10:41,443 --> 00:10:45,675
+我们开玩笑说，写作是 LLM 的最终 boss，要写对
+we joke that writing is the final boss for LLMs to like have it right,
+
+208
+00:10:45,675 --> 00:10:50,600
+写到让你满意，这极其困难。所以
+like you in a way that you are satisfied with this is extremely difficult. So.
+
+209
+00:10:50,720 --> 00:10:53,446
+我只想，对，我想强调的是
+I just want to all, yeah, I want to do want to emphasize
+
+210
+00:10:53,446 --> 00:10:57,350
+当你有这么多标准时，你要在之后逐条检查这些标准
+when you have this many criteria, you want to check this criteria post talk.
+
+211
+00:10:57,630 --> 00:11:02,271
+把任务分散、交给 sub-agent 是个好办法，因为如果你给它
+It is good to fan out and like give, you know sub agents because if you give it,
+
+212
+00:11:02,271 --> 00:11:06,839
+你看，一整份标准清单，这里有这么多条目
+look, this entire list of criteria and there's so many bullet points here,
+
+213
+00:11:06,839 --> 00:11:11,849
+就容易被冲淡，模型往往会忽略某些东西、变懒
+it's kind of get washed out like a model will tend to ignore something and get lazy.
+
+214
+00:11:11,849 --> 00:11:13,470
+我们还没专注于其中某一条
+We haven't focused on one.
+
+215
+00:11:13,470 --> 00:11:16,390
+某一条标准。它就会专注于那条标准
+Piece of criteria. It's going to focus on that piece of criteria.
+
+216
+00:11:16,920 --> 00:11:17,320
+对
+Yeah.
+
+217
+00:11:17,440 --> 00:11:20,882
+就像之前，如果你说，嘿，评估 N2，好
+Like before, if you say, hey, like, evaluate N2, okay,
+
+218
+00:11:20,882 --> 00:11:24,400
+它就会真正专注于 N2，你就能更……
+it's going to like really focus on N2 and you can be more.
+
+219
+00:11:24,440 --> 00:11:24,880
+我懂了
+I see.
+
+220
+00:11:25,440 --> 00:11:28,850
+它会那样做。这是第一点。第二点是，好
+It's going to do that. That's one thing. Second thing is, okay,
+
+221
+00:11:28,850 --> 00:11:31,080
+值得好好想想这个工作流
+it's worth thinking about the workflow.
+
+222
+00:11:31,480 --> 00:11:32,760
+所以这会很难
+So it's going to be really hard.
+
+223
+00:11:33,800 --> 00:11:37,640
+你有很多不同的标准，也有很多主观的品味
+There's a lot of different criteria you have, and there's a lot of subjective taste.
+
+224
+00:11:37,800 --> 00:11:41,870
+有时你可能会想根据主题放宽某些标准
+And sometimes you might want to relax certain criteria depending on the subject.
+
+225
+00:11:42,590 --> 00:11:44,937
+你会想要，你处在一种创作的心流里
+And you kind of want to, you have a creative flow,
+
+226
+00:11:44,937 --> 00:11:48,574
+但你不知道自己喜不喜欢，要看到了才知道喜不喜欢
+but you don't know whether you like it, whether you like it until you see it,
+
+227
+00:11:48,574 --> 00:11:51,918
+它得让你觉得对味，然后是，好，这个东西
+you know, and it has to feel right to you and be like, okay, this thing,
+
+228
+00:11:51,918 --> 00:11:54,030
+这个想法连接到这里，等等
+this thought connects here and blah, blah.
+
+229
+00:11:54,030 --> 00:11:55,310
+这就是写作的过程
+That's the process of writing.
+
+230
+00:11:55,950 --> 00:11:56,310
+对
+Yeah.
+
+231
+00:11:57,150 --> 00:12:03,366
+你可以用不同的方式，去思考如何把 AI 反馈
+And you might, there's different ways you can think about integrating sort of AI
+
+232
+00:12:03,366 --> 00:12:07,820
+更多地融入你的写作工作流
+feedback into your into your writing workflow a bit more.
+
+233
+00:12:08,180 --> 00:12:11,329
+我觉得 Shreya 的例子其实就触及了这一点
+And I think like Shreya's example actually touches on this.
+
+234
+00:12:11,329 --> 00:12:14,540
+我觉得它其实碰巧也是关于写作的
+I think it's about writing actually kind of coincidentally.
+
+235
+00:12:14,980 --> 00:12:17,700
+它有一些很用心的界面和工作流
+And it has some, some thoughtful interfaces and workflows.
+
+236
+00:12:18,340 --> 00:12:22,393
+认真想想工作流总是好的，就像，好
+It's always, it's always good to think about the workflow as well, like, okay,
+
+237
+00:12:22,393 --> 00:12:25,199
+因为你可能并不想只是跟某个东西聊天
+because you might not want to just chat with something
+
+238
+00:12:25,199 --> 00:12:29,314
+然后它给你一堆反馈或直接帮你改，因为它做得到，嗯
+and it give you a bunch of feedback or edit it because it can, you know, and so, um,
+
+239
+00:12:29,314 --> 00:12:32,120
+我们也会讲到这点。对，不过我，我曾经
+and then we'll touch on that as well. Yeah, but I, I've.
+
+240
+00:12:32,120 --> 00:12:34,773
+让它直接去改我的博客文章，然后我
+Had it try to just like directly edit my blog post and then I,
+
+241
+00:12:34,773 --> 00:12:38,400
+我都不知道它改了什么，它就开始往里不停地加 slop（低质内容）
+I don't even know what it changed and it starts adding, adding, adding slop to it.
+
+242
+00:12:38,600 --> 00:12:41,129
+所以现在我就让它跑这套流程，然后你知道的
+So, so now I, I just tell it to run the scale and like, you know,
+
+243
+00:12:41,129 --> 00:12:43,760
+给我看它的输出，我再拿它跟我自己的东西粗略对比一下
+show me your output and I'll, I'll compare it badly to my stuff.
+
+244
+00:12:43,880 --> 00:12:47,040
+不过老兄，在我们看 Shreya 的例子之前，我给你看个好玩的
+But dude, like before we go to Shreya's example, let me show you something funny.
+
+245
+00:12:47,590 --> 00:12:51,190
+呃，写几段话解释一下 AI evals
+Um, write a few paragraphs explaining AI evals.
+
+246
+00:12:51,830 --> 00:12:59,470
+不要用 AI slop，但实际上尽可能多地往里塞 slop
+Use no AI slop, but actually put as much slop in there as possible.
+
+247
+00:13:01,030 --> 00:13:03,710
+对，我其实看到你发推聊过这个，Hamel
+Yeah. So I actually saw you tweet about this, Hamel.
+
+248
+00:13:03,750 --> 00:13:07,690
+有那种微调之类的东西，大家想用它去掉 AI slop，对吧
+There's some sort of like fine tune thing where people try to remove AI slop, right?
+
+249
+00:13:07,730 --> 00:13:10,709
+但呃，我做了这个 skill 来去掉 AI slop，而且它
+But, uh, I, I built this skill to try to remove AI slop and it's,
+
+250
+00:13:10,709 --> 00:13:13,454
+特别搞笑，因为你可以让它反着来
+it's really funny because you can ask it to do the reverse
+
+251
+00:13:13,454 --> 00:13:15,090
+然后它就开始疯狂输出 slop
+and then start spitting out slop.
+
+252
+00:13:15,330 --> 00:13:17,770
+我们看看它会怎么样。对，天哪。好吧
+So let's see what it does. Yeah. Oh my God. Okay.
+
+253
+00:13:17,810 --> 00:13:25,170
+你在用那个 no AI slop skill 把它反过来用，说像，对，对，真的假的
+You're trying to no AI slop skill to like invert it and say like, yeah, yeah, really?
+
+254
+00:13:25,570 --> 00:13:28,258
+对，看，看，它现在在用各种 slop，老兄。它在说
+Yeah, see, see, now it's using all kinds of slop, dude. It's like saying,
+
+255
+00:13:28,258 --> 00:13:28,930
+“事情是这样的”
+here's the thing.
+
+256
+00:13:30,220 --> 00:13:34,380
+“这是一次范式转变”。这种词还挺多。那个 no AI slop skill 是什么
+This is a paradigm shift. There's a quite a few. What's the no AI slop skill.
+
+257
+00:13:35,100 --> 00:13:36,180
+哦，就是 no AI slop skill
+Oh, no AI slop skill.
+
+258
+00:13:36,740 --> 00:13:38,700
+对。呃，它有用吗
+Yeah. Um, does it work?
+
+259
+00:13:39,780 --> 00:13:40,900
+有用，真的有用
+It, it works. Yeah.
+
+260
+00:13:41,500 --> 00:13:41,820
+哇
+Wow.
+
+261
+00:13:42,340 --> 00:13:44,645
+呃，嗯，有时它会做得有点过头
+Uh, well, uh, sometimes it can go a little bit overboard
+
+262
+00:13:44,645 --> 00:13:46,900
+开始把我文字里的个人风格也删掉
+and starts removing my personality from the writing.
+
+263
+00:13:47,540 --> 00:13:51,196
+但呃，这算是我慢慢做出来的一个东西，就是为了去掉这些
+But, uh, it's kind of like a thing that I built over time to just remove this
+
+264
+00:13:51,196 --> 00:13:54,492
+因为老兄，这些模型，不管是那些花哨的，还是 GPT 5、6
+because like, dude, these models like Claude or whatever, GPT-5.6,
+
+265
+00:13:54,492 --> 00:13:55,810
+就是不停地产出 slop
+just keep producing slop.
+
+266
+00:13:55,850 --> 00:13:58,090
+天，我受够了。我真的受够了
+Man, I got sick of it. I got sick of it.
+
+267
+00:13:58,210 --> 00:14:01,972
+所以我就加了一大堆需要删掉的东西，然后，然后我
+So, so I just added a whole ton of stuff to cut and, and, and I,
+
+268
+00:14:01,972 --> 00:14:04,890
+我写的每一样东西都会跑一遍这个流程
+and I do this pass for everything that I write.
+
+269
+00:14:05,090 --> 00:14:07,930
+对，里面东西很多。哦，这太棒了。太棒了
+Yeah, there's a lot of stuff. Oh, that's so good. That's so good.
+
+270
+00:14:08,490 --> 00:14:12,590
+我大概哪天会把它开源。顺便说一句，那就太棒了
+I'll probably open source it at some point. That would be amazing, by the way.
+
+271
+00:14:12,630 --> 00:14:16,430
+而且它是开放的。它叫 plain writing skill 之类的名字
+And it's open. It's called the plain writing skills or something like that.
+
+272
+00:14:16,430 --> 00:14:19,768
+哦对，对。Plain writing，我记得就是我这个 skill 的名字
+Oh, yeah. Yeah. Plain writing, I think is the name of my skill,
+
+273
+00:14:19,768 --> 00:14:21,470
+但它和你的很像
+but it's very similar to yours.
+
+274
+00:14:21,550 --> 00:14:24,308
+我就是觉得很多人都有这类 skill
+I just, I feel like a lot of people have such skills
+
+275
+00:14:24,308 --> 00:14:27,739
+我就想把你放进你 skill 里的所有东西都拿过来
+and I just want to take all the things that you put in your skill
+
+276
+00:14:27,739 --> 00:14:28,950
+放到我的 skill 里
+and put it in my skill.
+
+277
+00:14:29,190 --> 00:14:33,010
+对，我们应该把这两个 skill 合并。对，我懂，我懂。好吧
+Yeah, we should merge the two skills. Yeah, I know. I know. All right.
+
+278
+00:14:33,090 --> 00:14:40,399
+所以我现在做的，算是带你逛一遍怎么用我的 skill 来做
+So what I'm doing is kind of giving you a tour of what it's like to use by skill for
+
+279
+00:14:40,399 --> 00:14:43,210
+AI 自动化错误分析
+AI automated error analysis.
+
+280
+00:14:43,930 --> 00:14:45,610
+你会看到一个空白的浏览器。没关系
+You're gonna see like an empty browser. That's fine.
+
+281
+00:14:45,730 --> 00:14:49,210
+你会看到我的终端，我简单给你看看我文件夹里有什么
+You're gonna see my terminal and I'll just show you what's in my folder pretty briefly.
+
+282
+00:14:49,770 --> 00:14:54,980
+基本上是这样，我有一个 AI 助手帮我写作
+So here is basically, I have an AI assistant to help me with writing,
+
+283
+00:14:54,980 --> 00:14:58,330
+我让这个 AI 生成了一些内容
+and I've asked the AI to generate of some AI.
+
+284
+00:14:58,930 --> 00:15:00,480
+基本上就是写一些文章
+So basically write some articles.
+
+285
+00:15:00,600 --> 00:15:05,720
+我想给你展示一下，我是怎么把我对写作的品味外化到 LLM judges 里的
+I want to show you what it's like for me to externalize my taste on writing into LLM judges.
+
+286
+00:15:06,400 --> 00:15:08,532
+与其自己去看所有数据
+And rather than look at all the data myself,
+
+287
+00:15:08,532 --> 00:15:10,960
+我打算用 Claude 来帮我看这些数据
+I'm going to use Claude to help me look at the data.
+
+288
+00:15:11,160 --> 00:15:11,480
+好吧
+Okay?
+
+289
+00:15:12,240 --> 00:15:15,755
+所以我先启动一个 Claude 会话
+So I'm going to start out by just invoking a Claude session
+
+290
+00:15:15,755 --> 00:15:20,370
+我会冒险地跳过权限确认，而且我不打算用 4.8 模型
+and I'm going to dangerously skip permissions and I'm not going to use 4.8
+
+291
+00:15:20,370 --> 00:15:22,640
+因为我觉得那有点太夸张了
+because I feel like that's a bit much.
+
+292
+00:15:23,400 --> 00:15:24,240
+4.8 模型还有额度吗
+Is that 4.8 left?
+
+293
+00:15:25,120 --> 00:15:29,636
+我 4.8 还剩一点额度，但我确实，抱歉
+I have a little bit of 4.8 left, but I've definitely, I'm sorry,
+
+294
+00:15:29,636 --> 00:15:31,560
+不想把它用在什么上面
+don't want to use it on what?
+
+295
+00:15:31,720 --> 00:15:35,200
+我不想把它用在看数据上，那肯定会一下子把额度全耗光
+I don't want to use it on definitely looking at the data is going to just exhaust everything.
+
+296
+00:15:35,720 --> 00:15:38,560
+好，我把模型设成了 Opus 4.8
+All right. So I've I've set the model to Opus for 8.
+
+297
+00:15:39,240 --> 00:15:42,360
+然后我要说的是，用我的 error
+And then what I'm going to say is use my error.
+
+298
+00:15:44,590 --> 00:15:51,236
+Discovery skill 给我搭一个界面，呃
+Discovery skill to build me an interface to, um,
+
+299
+00:15:51,236 --> 00:15:57,550
+帮我查看我的 AI 输出并获取反馈
+help me look at my AI outputs and get feedback.
+
+300
+00:15:58,150 --> 00:16:01,116
+好，它接下来要做的就是走一遍我的 skill
+Okay, so what it's gonna do is gonna go through my skill,
+
+301
+00:16:01,116 --> 00:16:02,986
+稍后我会展示给你看
+which I'll show you in a little bit,
+
+302
+00:16:02,986 --> 00:16:05,630
+并为我构建这个界面来审查我的数据
+and build this interface for me to review my data.
+
+303
+00:16:05,750 --> 00:16:09,298
+我要强调一下，它生成的这个界面会
+This, I'm gonna stress that the interface that it comes up with is gonna be
+
+304
+00:16:09,298 --> 00:16:13,370
+比我在 Google Sheets 之类的工具里看数据要好得多
+so much better than me looking at my data in, say, Google Sheets or something.
+
+305
+00:16:13,450 --> 00:16:15,570
+那种方式对人眼来说真的非常难读
+It's just very, very hard on the human eyes to read.
+
+306
+00:16:16,130 --> 00:16:19,130
+好，它正在运行，它在告诉我它在做什么
+Okay, so this is running, uh, it's telling me what it's doing.
+
+307
+00:16:19,410 --> 00:16:23,250
+它找到了数据。让我检查一下，理解数据的结构
+It's found the data. Let me under examine them to understand the structure of the data.
+
+308
+00:16:23,370 --> 00:16:26,410
+这里这些数据只是 AI 生成的写作样本
+So these this data here is just AI generated writing samples.
+
+309
+00:16:26,650 --> 00:16:30,396
+它也可以是端到端的 traces，任何你真正想做错误
+It could also be end to end traces like whatever you really want to do error
+
+310
+00:16:30,396 --> 00:16:31,440
+分析的对象都可以
+analysis on is fine.
+
+311
+00:16:31,880 --> 00:16:33,920
+趁它在运行，我先给你看看这个 skill
+Now let me show you the skill. While this is running.
+
+312
+00:16:34,920 --> 00:16:38,040
+错误发现 skill
+Error discovery skill.
+
+313
+00:16:38,680 --> 00:16:39,440
+在这里
+Here we are.
+
+314
+00:16:41,680 --> 00:16:44,120
+哇，大家真的在用它。看到这个挺开心的
+Wow, people are really using it. So that's nice to see.
+
+315
+00:16:44,960 --> 00:16:47,720
+那这个 skill 是做什么的呢？它做了很多事
+So what does the skill do? There's a lot going on.
+
+316
+00:16:48,000 --> 00:16:50,560
+这里是我首先想提的五个步骤
+So here are the five steps that I first want to mention.
+
+317
+00:16:50,640 --> 00:16:53,912
+第一，它会读取数据集，弄清楚
+First, it's going to read the data set and figure out, you know,
+
+318
+00:16:53,912 --> 00:16:56,870
+数据的类型是什么，真正说的是语义类型
+what is the type of data, like the semantic type, really.
+
+319
+00:16:57,150 --> 00:17:00,310
+不只是字符串类型之类的，那有点没意义
+So not just like a string type or whatever. That's kind of silly.
+
+320
+00:17:00,350 --> 00:17:03,150
+而是它是文章、是代码，还是 agent traces
+But is it an article, is it code, is it agent traces?
+
+321
+00:17:03,910 --> 00:17:07,511
+然后它会弄清楚如何渲染这些数据
+Then what it's going to do is figure out how to render this data so
+
+322
+00:17:07,511 --> 00:17:09,550
+让人类很容易看懂
+that it's very easy for humans to be.
+
+323
+00:17:09,870 --> 00:17:11,750
+这就是所谓的视觉编码
+So that's what's called visual encoding.
+
+324
+00:17:12,030 --> 00:17:15,663
+根据数据中的各种变化，比如如果是 agent traces
+So based on what various in the data such as, you know, if it's agent traces,
+
+325
+00:17:15,663 --> 00:17:17,890
+可能是一段 trace 里的轮次数量
+maybe it's like the number of turns in a trace.
+
+326
+00:17:18,010 --> 00:17:21,210
+我不知道，我随便举的例子。AI agent 会去思考这一点
+I don't know. I'm making that up. The AI agent is going to reflect on that.
+
+327
+00:17:21,450 --> 00:17:25,923
+当我说在这里运用所有原则时
+And when I say something like use just all principles here,
+
+328
+00:17:25,923 --> 00:17:31,491
+意思就是谨慎地运用颜色、间距、透明度等
+all that means is carefully use things like color, spacing, opacity, uh,
+
+329
+00:17:31,491 --> 00:17:34,230
+来向我展示数据中的差异
+to show me the variance and the data.
+
+330
+00:17:34,870 --> 00:17:36,758
+所以再说一次，这是那种
+So again, this is something that, like,
+
+331
+00:17:36,758 --> 00:17:40,590
+契合我们人类视觉皮层或视觉处理能力的东西
+kind of speaks to our visual cortex or visual processing skills as a human being.
+
+332
+00:17:41,630 --> 00:17:45,765
+第三步是真正构建一个界面，用 HTML 来构建
+Third step is then to actually build an interface, build it in HTML.
+
+333
+00:17:45,765 --> 00:17:47,390
+我在这里把它叫做审查应用
+I call it a review app here.
+
+334
+00:17:48,230 --> 00:17:53,110
+后端是 Python，前端是一些 JavaScript 或带 JavaScript 的 HTML
+It's a Python back end. It's some Javascript or HTML with some Javascript front end.
+
+335
+00:17:53,350 --> 00:17:54,070
+其实无所谓
+Really doesn't matter.
+
+336
+00:17:54,770 --> 00:17:59,690
+然后第四件事是，它会弄清楚我应该看哪些样本
+Then the fourth thing is it's going to figure out what samples that I should look at.
+
+337
+00:18:00,050 --> 00:18:02,610
+你可能有数百甚至数千条 traces
+You can might have hundreds or even thousands of traces.
+
+338
+00:18:02,690 --> 00:18:06,170
+你想做错误分析，那你该看哪些样本
+You want to do error analysis on what sample do you look at?
+
+339
+00:18:07,050 --> 00:18:09,610
+我们把这件事交给 AI agent 来帮忙
+We leave it to an AI agent to help us with this.
+
+340
+00:18:09,930 --> 00:18:14,130
+最后，同样重要的是，它会运行一个交互循环
+And then finally, last but not least, it runs an interactive loop.
+
+341
+00:18:14,250 --> 00:18:17,730
+也就是 Claude Code 或 Codex，看我用哪个
+So that is Claude Code or Codex, whatever I'm going to use.
+
+342
+00:18:18,290 --> 00:18:23,279
+它基本上会观察我在用户界面里的操作交互
+Basically looks at the activity interactions I make in the user interface,
+
+343
+00:18:23,279 --> 00:18:27,239
+把这些交互汇编成开放式的反馈
+compiles those interactions into open ended feedback, um,
+
+344
+00:18:27,239 --> 00:18:29,932
+然后实时读取这些反馈
+and then reads that feedback in real time
+
+345
+00:18:29,932 --> 00:18:35,080
+并提出新的样本让我标注，或者为我的 rubric 提出一些标准
+and proposes either new samples for me to label or some criteria for my rubric.
+
+346
+00:18:35,440 --> 00:18:38,430
+随着它进行，你会看到我在做什么，而这些数据，呃
+You'll see what I'm doing as it's going and and the data is, uh,
+
+347
+00:18:38,430 --> 00:18:42,240
+你说这是 Claude 生成的写作样本，基于你的内容之类的吗
+you say it's cloud generated writing, writing samples based on your stuff or?
+
+348
+00:18:43,000 --> 00:18:47,262
+是的，不是基于我的内容，是我基于我们的 evals 课程
+Yes, well, not based on my stuff, just I, um, based on our evals course,
+
+349
+00:18:47,262 --> 00:18:49,319
+生成了一些合成数据
+I generated some synthetic data,
+
+350
+00:18:49,319 --> 00:18:54,830
+一些人们可能想让 AI 帮忙写文章的合成输入
+synthetic inputs that people might presumably want AI to help them write an article with.
+
+351
+00:18:55,430 --> 00:19:00,797
+我给你看这个，是因为很多在自己组织内构建 AI 产品的人
+I'm just showing you this because a lot of people who build AI products within their
+
+352
+00:19:00,797 --> 00:19:05,230
+需要做的不只是他们自己的个人工作流
+org have to do something more than just their own personal workflow.
+
+353
+00:19:05,630 --> 00:19:06,890
+对，对，对
+Yeah, yeah, yeah.
+
+354
+00:19:07,770 --> 00:19:10,387
+不太理想的是，它需要花点时间
+So the unfortunate thing is it takes a little bit of time.
+
+355
+00:19:10,387 --> 00:19:11,890
+大概要五分钟左右
+It takes like five minutes or so.
+
+356
+00:19:11,970 --> 00:19:15,238
+我只是想从头展示给你看，让你知道我没有
+I just wanted to show it to you from scratch so you know that I'm like, I didn't,
+
+357
+00:19:15,238 --> 00:19:16,770
+你懂的，为你编造点什么
+you know, make something up for you.
+
+358
+00:19:16,770 --> 00:19:17,530
+这是真实的
+Like this is real.
+
+359
+00:19:17,610 --> 00:19:21,697
+它正在实时发生，而且它完全按照
+It's happening in real time, and it's following the steps exactly
+
+360
+00:19:21,697 --> 00:19:26,081
+这里的步骤在走，我想它现在到了聚类数据的第 4 步
+as what's in here right now, I think it's on step 4 of clustering the data
+
+361
+00:19:26,081 --> 00:19:29,350
+并挑选一个多样化的初始样本供我们标注
+and picking a diverse initial sample for us to label.
+
+362
+00:19:29,710 --> 00:19:33,870
+这个 eval 的目标基本上就是改善某人的写作
+And the goal of the eval is to basically improve someone's writing.
+
+363
+00:19:34,990 --> 00:19:38,841
+在这个例子里，它会给出一套评估标准的 rubric
+In this case, what it's gonna do is gonna come up with a rubric of criteria
+
+364
+00:19:38,841 --> 00:19:43,270
+这些标准很重要，用来定义什么是好的和坏的输出、好的和坏的写作
+that's important, that defines, like, good and bad outputs, good and bad writing.
+
+365
+00:19:43,390 --> 00:19:43,830
+在这个例子里
+In this case.
+
+366
+00:19:44,390 --> 00:19:48,344
+所以你可以把它想成基本上就是你评分标准里想要的东西
+So think of this, like, as exactly what you would want in your scale, essentially,
+
+367
+00:19:48,344 --> 00:19:50,030
+比如 rubric 的标准都有哪些
+like what are the rubric criteria?
+
+368
+00:19:51,000 --> 00:19:54,381
+好，它能帮你发现更多自下而上的东西。对
+Okay, it's gonna help you discover more of the bottom-up stuff. Yes,
+
+369
+00:19:54,381 --> 00:19:56,160
+就是我们之前聊的那些
+that we were talking about earlier.
+
+370
+00:19:56,360 --> 00:20:00,120
+你们现在还是主要用 Claude，还是转去用 GPT，或者两个都用
+Are you guys still mostly using Claude or you switch over to GPT or both?
+
+371
+00:20:00,680 --> 00:20:02,200
+嗯，我可以先回答
+Um, I can answer first.
+
+372
+00:20:02,320 --> 00:20:04,525
+我觉得 Claude 之前让我很兴奋
+So I feel like Claude was very exciting for me
+
+373
+00:20:04,525 --> 00:20:07,035
+因为我觉得你可以用它做更多
+because I feel like you can do like more meetings,
+
+374
+00:20:07,035 --> 00:20:09,240
+更有分量的软件工程任务
+meaty software engineering tasks with it.
+
+375
+00:20:09,840 --> 00:20:13,291
+嗯，但我也对 Codex 的表现相当惊艳
+Um, but then I've also been quite impressed by Codex's, um,
+
+376
+00:20:13,291 --> 00:20:16,460
+我不确定是 Codex 还是 GPT，但它是新的那个模型
+I don't know if it's Codex or GPT, but it's the new soul.
+
+377
+00:20:16,980 --> 00:20:22,057
+我觉得这个新模型很擅长处理难任务，而且能给出非常好的
+I feel like soul is quite good at working on hard tasks and then having a very good,
+
+378
+00:20:22,057 --> 00:20:24,860
+人类易读、易理解的输出
+like, human readable or digestible output.
+
+379
+00:20:25,460 --> 00:20:29,374
+现在我用 Claude 模型时，它写出来的东西
+Often when I work with Claude models these days, like what it's writing,
+
+380
+00:20:29,374 --> 00:20:33,287
+比如说“让我先快速对服务器做个冒烟测试”之类的
+like for example, let me quickly smoke test the server before it feels,
+
+381
+00:20:33,287 --> 00:20:36,670
+它用的那些行话是我日常生活里根本不会用的
+it just uses jargon that I would never use in my day to day life.
+
+382
+00:20:36,710 --> 00:20:38,030
+我常常完全看不懂
+And often I'm just so lost.
+
+383
+00:20:38,630 --> 00:20:40,710
+所以是这样。那你呢，你怎么样
+So yeah. How about, how about you have?
+
+384
+00:20:40,950 --> 00:20:44,555
+对，我最近用 Codex 多了很多，主要是
+Yeah, I've been using Codex a lot more and it's mainly
+
+385
+00:20:44,555 --> 00:20:49,470
+因为 Codex app 本身太出色了，它的功能很强
+because of the Codex app itself is so incredible and its functionality.
+
+386
+00:20:49,790 --> 00:20:52,554
+有两件事真的很重要
+So there's two things that are really important.
+
+387
+00:20:52,554 --> 00:20:55,790
+第一是移动端支持完全是另一个层次
+One is mobile support is at a completely different level.
+
+388
+00:20:55,870 --> 00:20:59,590
+你可以在手机上看到所有设备上的全部会话
+You can see all the sessions across all your devices on your mobile phone.
+
+389
+00:20:59,950 --> 00:21:02,590
+对，你相当于有了一个指挥中心
+Yeah, you can sort of like have a command center
+
+390
+00:21:02,590 --> 00:21:06,110
+它能把所有东西都展示给你，功能一点不打折
+that like shows you everything with no loss in functionality.
+
+391
+00:21:06,630 --> 00:21:11,790
+你能访问所有一样的东西，可以查看消息、引导、切换模型
+Like you, you can access all the same things. You can view messages, steer, switch models.
+
+392
+00:21:11,870 --> 00:21:13,670
+你可以看到产物等等
+You can see artifacts, so and so forth.
+
+393
+00:21:14,150 --> 00:21:19,430
+第二件很酷、但很少有人提到的事情是，你可以
+The second thing that's really cool and not many people talk about this, is you can.
+
+394
+00:21:20,410 --> 00:21:25,130
+让 Codex 去引导 Codex，所以你可以让 Codex 创建线程。你可以让它
+Let Codex steer Codex so you can have Codex create threads. You can have it.
+
+395
+00:21:25,250 --> 00:21:26,770
+你可以让不同线程互相对话
+You can have threads talk to each other.
+
+396
+00:21:27,290 --> 00:21:30,980
+你甚至可以加一个正在运行的线程，然后说，嘿
+You can actually add another thread that's running and say, hey,
+
+397
+00:21:30,980 --> 00:21:33,850
+帮帮这个线程，或者为这个线程提前跑一跑
+like help this thread out or front run this thread.
+
+398
+00:21:34,170 --> 00:21:38,530
+这个线程有大概 20 个任务，帮它提前跑一部分，做些调研
+This thread has like 20 tasks. Do some front run it. Do some research.
+
+399
+00:21:39,210 --> 00:21:39,450
+你可以做到
+You can.
+
+400
+00:21:39,530 --> 00:21:44,325
+你还能做各种有意思的编排，嗯，对
+And you can do all kinds of, you know, interesting orchestration, um, you know, yeah,
+
+401
+00:21:44,325 --> 00:21:47,161
+完全可以变成一个代码工厂，你懂的
+without, and go full code factory, like, you know,
+
+402
+00:21:47,161 --> 00:21:50,875
+有时候这真的很有用，你可以让 Codex
+sometimes this is like really helpful and you can have like codex,
+
+403
+00:21:50,875 --> 00:21:55,265
+去操作 Codex，比如说，嘿，把这些线程全部重命名。对，类似的事
+like operate on codex, like, hey, rename all these threads. Yeah, something.
+
+404
+00:21:55,265 --> 00:21:56,210
+它就真的去做了
+And it just does.
+
+405
+00:21:56,250 --> 00:22:01,610
+所以真的很有用。嗯，这让我越来越倾向用它
+That so it's like really useful. Um, and that makes me gravitate towards that.
+
+406
+00:22:01,610 --> 00:22:04,170
+然后，至少最后一点是成本经济性
+And then like, at least like the last part is the economics.
+
+407
+00:22:04,770 --> 00:22:06,886
+Codex 里有很多用量限制
+These have a lot of limits in Codex
+
+408
+00:22:06,886 --> 00:22:12,026
+当前沿模型完全包含在订阅里，按那个 50% 的
+when it like the the frontier model is like fully within the subscriptions on like
+
+409
+00:22:12,026 --> 00:22:15,730
+什么机制，他们就一直不停地重置额度
+this 50% thing, then they just keep setting it constantly.
+
+410
+00:22:16,170 --> 00:22:20,570
+对，几乎像开玩笑一样，他们不停地重置，感觉太好了
+Yeah, it's almost like a joke. They keep resetting. It's like, it's so nice.
+
+411
+00:22:20,610 --> 00:22:21,730
+我是说，我可不会抱怨
+I mean, I'm not gonna complain.
+
+412
+00:22:22,330 --> 00:22:25,204
+我最近看到一条推文，把我逗笑了
+I saw this tweet recently that made me laugh,
+
+413
+00:22:25,204 --> 00:22:27,690
+说我们正处在 AI 模型的 Uber、Lyft 时代
+like we're in the Uber Lyft era of like.
+
+414
+00:22:28,500 --> 00:22:31,920
+就像还记得十年前 Uber 才两美元吗
+AI models, like, remember 10 years ago where Uber was like $2?
+
+415
+00:22:32,720 --> 00:22:33,840
+对，我们现在就处在那个阶段
+Yeah, we're in that right now.
+
+416
+00:22:34,600 --> 00:22:39,000
+对，补贴总有一天会停的。我知道，我知道。对，对
+Yeah. The subsidization is gonna stop at some point. I know, I know. Yeah, yeah.
+
+417
+00:22:39,000 --> 00:22:40,784
+我不知道那件事到底怎么回事
+I don't know what's going on on that topic.
+
+418
+00:22:40,784 --> 00:22:42,720
+我感觉 Dario 好像很讨厌 Twitter 之类的
+I feel like Dario hates Twitter or something.
+
+419
+00:22:42,960 --> 00:22:47,160
+所以这完全搞砸了你们所有的对外沟通。压力。对，还有一切
+So like this is completely botched all your communication. Stress. Yeah, and everything.
+
+420
+00:22:47,320 --> 00:22:50,443
+我觉得那些真正想沟通的人可能反而做不到
+I feel like the people who actually want to communicate like probably cannot
+
+421
+00:22:50,443 --> 00:22:51,760
+因为一些内部原因
+because of some internal stuff.
+
+422
+00:22:51,920 --> 00:22:55,070
+所以我也不清楚是怎么回事。你呢，Peter？你用什么
+So I don't know what's going on. What about you, Peter? What do you?
+
+423
+00:22:55,510 --> 00:22:58,870
+呃，是的，我基本上什么都用 Codex，除了 4.8
+Uh, yeah, I, I pretty much use Codex for everything except for 4.8
+
+424
+00:22:58,870 --> 00:23:01,750
+我用它来做规划、找 bug 之类的
+that I use to do like planning and try to find bugs and stuff
+
+425
+00:23:01,750 --> 00:23:04,270
+但基本上我什么都用 Codex 和 GPT
+but pretty much I use Codex and GPT for everything.
+
+426
+00:23:04,630 --> 00:23:06,430
+你一直都用 OpenAI 吗
+Did you always use OpenAI?
+
+427
+00:23:06,830 --> 00:23:10,990
+不，我以前是彻头彻尾的 Claude 粉丝，就在几个月前还是
+No, I, I, I, I was like total Claude fanboy, like even like a few, few months ago.
+
+428
+00:23:11,230 --> 00:23:13,030
+哇。但后来我发现了 Codex
+Wow. But I but I discovered Codex.
+
+429
+00:23:13,350 --> 00:23:15,500
+我觉得，Hamel 提到的那些点
+I, I think, I think the stuff Amel mentioned,
+
+430
+00:23:15,500 --> 00:23:18,290
+还有 Codex 上的浏览器操作简直太棒了
+but also like the browser use is just incredible on Codex.
+
+431
+00:23:18,490 --> 00:23:21,497
+我用的东西有一半根本没有任何 API
+Like half the stuff I use don't even have any APIs,
+
+432
+00:23:21,497 --> 00:23:24,650
+我就能点来点去，把事情搞明白
+and I just get to click around and figure things out.
+
+433
+00:23:25,210 --> 00:23:29,770
+哇，真的很厉害。我最常用的 skill 之一就是这个逆向工程 skill
+Wow. It's pretty incredible. One of my most used skills is this reverse engineering skill.
+
+434
+00:23:30,010 --> 00:23:33,770
+对于任何没有 API 的网站
+There's just like any website without a API.
+
+435
+00:23:34,130 --> 00:23:38,569
+它会指示 agent 去监听所有网络流量
+It just, it instructs the agent to like listen to all the network traffic
+
+436
+00:23:38,569 --> 00:23:41,750
+记录 API 并把它固化下来
+and document APIs and like, like memorialize that.
+
+437
+00:23:42,230 --> 00:23:46,482
+我会看到脚本之类的东西，这样我就能，是的
+I see like, scripts and whatnot so that I can, yeah,
+
+438
+00:23:46,482 --> 00:23:50,430
+我现在能把任何网站都变成 API。挺聪明的
+I just make any website an API now that's smart.
+
+439
+00:23:50,430 --> 00:23:53,329
+是的，挺聪明的。你有没有看过一个叫 printing press 的东西，呃
+Yeah, that's smart. Do you check out this thing called printing press, uh,
+
+440
+00:23:53,329 --> 00:23:54,030
+CLI 之类的
+CLI or something?
+
+441
+00:23:54,030 --> 00:23:59,036
+它做的事情很类似。哦，酷。好，终于，哇
+It's does something pretty similar. Oh, cool. Okay. So finally after, wow,
+
+442
+00:23:59,036 --> 00:24:01,500
+它跑了整整 15 分钟
+it's didn't it cooked for 15 minutes.
+
+443
+00:24:01,660 --> 00:24:04,140
+好，终于在 15 分钟后，它搭建了一个界面
+Okay, so finally after 15 minutes, it built an interface.
+
+444
+00:24:04,940 --> 00:24:07,980
+我来给你们看看这个界面里的情况
+So let me show you a little bit what's going on in the interface.
+
+445
+00:24:08,060 --> 00:24:12,060
+有三个不同的标签页。有一个是逐篇文章的面板
+So there's three different tabs. There's article by article, pain.
+
+446
+00:24:12,180 --> 00:24:16,282
+所以这可以是逐篇文章、逐条记录，或者你想看的任何粒度
+So this would either be article by article or trace by trace or whatever granularity
+
+447
+00:24:16,282 --> 00:24:17,220
+你想查看的粒度
+you want to look at.
+
+448
+00:24:17,700 --> 00:24:19,420
+所以这是一次看一个对象
+So this is looking at one thing at a time.
+
+449
+00:24:20,400 --> 00:24:23,794
+有一个地图视图，能展示出聚类结果
+There's a map view which kind of shows you the clustering
+
+450
+00:24:23,794 --> 00:24:28,200
+就是 agent 把数据分到不同的语义上有意义的类别里
+that the agent did into different semantically meaningful categories.
+
+451
+00:24:29,520 --> 00:24:32,680
+然后是进度视图，这里现在基本是空的
+And then there is the progress view, which is kind of empty here.
+
+452
+00:24:33,040 --> 00:24:38,004
+但这个视图会告诉我们，基于我们对数据的审查和标注
+But this view tells us, based on our reviewing and our annotations on the data,
+
+453
+00:24:38,004 --> 00:24:41,440
+出现的常见失败模式有哪些
+what are the common failure modes that are happening.
+
+454
+00:24:41,790 --> 00:24:44,870
+好吧？所以这是由 agent 自动填充的
+Okay? So this is automatically populated by an agent.
+
+455
+00:24:45,510 --> 00:24:49,121
+我想稍微聊一下这里的设计理念
+So I want to talk a little bit about the design philosophy here,
+
+456
+00:24:49,121 --> 00:24:52,454
+就是让人，让你或我自己来读这些内容
+which is have the human, have yourself or myself read this
+
+457
+00:24:52,454 --> 00:24:54,190
+并给出开放式反馈
+and give open ended feedback.
+
+458
+00:24:54,750 --> 00:24:57,158
+然后 agent 的工作其实是
+And then the job of the agent is to really,
+
+459
+00:24:57,158 --> 00:25:01,477
+不是去发明新的开放式反馈，而是把这些反馈归类
+it's not to invent new open ended feedback, but it's to kind of group that,
+
+460
+00:25:01,477 --> 00:25:04,310
+提炼成可执行的评估标准
+distill that into actionable rubric criteria.
+
+461
+00:25:04,470 --> 00:25:06,590
+这样人就不用做那么多这种工作
+So the human doesn't have to do a lot of that work.
+
+462
+00:25:07,400 --> 00:25:08,400
+我们来过一遍
+So let's go through this.
+
+463
+00:25:09,480 --> 00:25:14,527
+这里我正在看这篇 AI 生成的关于睡眠卫生的文章
+So here I'm looking at this AI generated article about sleep hygiene
+
+464
+00:25:14,527 --> 00:25:19,840
+我来稍微讲讲我的感受
+and I'm just going to go through a little bit about how I kind of like feel.
+
+465
+00:25:19,880 --> 00:25:24,089
+我先假设自上而下的标准 Claude 可以搞定
+So I'm going to just assume that the top down criteria Claude can take care of
+
+466
+00:25:24,089 --> 00:25:26,360
+然后我再对这个给出一些反馈
+and then I'll give some feedback on this.
+
+467
+00:25:27,300 --> 00:25:32,638
+呃，我不太喜欢那种 AI 的表达方式，你懂的，“这不是 X，而是 Y”
+Um, I don't really like AI phrasing around, you know, it's not X, it's y,
+
+468
+00:25:32,638 --> 00:25:34,900
+就是那种负面对比
+like the negative contracts.
+
+469
+00:25:35,580 --> 00:25:41,696
+所以我会写点类似“我不喜欢我的文章里有负面对比”这样的话
+So I'm going to say something like, I don't like negative contrast in my writing,
+
+470
+00:25:41,696 --> 00:25:46,900
+然后注意，我刚才是在原地即时给出了这条反馈
+and then notice that I just gave that feedback what I'll call in situ.
+
+471
+00:25:47,180 --> 00:25:49,755
+好吧？所以我做了这个界面
+Okay? So I just, I made this interface,
+
+472
+00:25:49,755 --> 00:25:54,260
+让我能很轻松地把当下的想法外化出来
+makes it really easy to just externalize my thoughts as I have them.
+
+473
+00:25:54,780 --> 00:25:59,018
+在我给出反馈的同时，我的 Claude agent 会调用 monitor 工具
+And as I gave that feedback, my Claude agent is invoking the monitor tool to
+
+474
+00:25:59,018 --> 00:26:01,820
+基本上就是看我给的任何内容并做出反应
+basically look at whatever I give and react to it.
+
+475
+00:26:01,980 --> 00:26:05,725
+所以这里你能看到它说，你对睡眠文章的第一条笔记是
+So here you can see that it said, my first note from you on the sleep article,
+
+476
+00:26:05,725 --> 00:26:08,020
+我不喜欢我的文章里有负面对比
+I don't like negative contrast in my writing.
+
+477
+00:26:08,300 --> 00:26:12,140
+然后它会做些处理，呃，让它在后台跑，对吧
+And then it's going to do something, um, let it do this in the background, right?
+
+478
+00:26:12,140 --> 00:26:15,099
+我只想保持在阅读和给反馈的心流里，呃
+I just want to be in flow of reading and giving feedback, um,
+
+479
+00:26:15,099 --> 00:26:16,910
+针对它为我挑选的样本
+on the samples that it picked for me.
+
+480
+00:26:16,910 --> 00:26:19,385
+记住，它还挑选了多样化的样本
+So remember, it also picked a diversity of samples
+
+481
+00:26:19,385 --> 00:26:23,510
+如果它愿意，它会继续帮我生成更多样本，不过那不重要
+and it will keep generating more samples for me if it wants but that's not important.
+
+482
+00:26:24,070 --> 00:26:29,153
+呃，总之，我会继续读下去，然后像
+Um, anyways, so I'm gonna keep reading uh and then like
+
+483
+00:26:29,153 --> 00:26:36,270
+这种东西，比如这个，也真的挺烦人的
+that kind of stuff like this one humble me is like also really an an annoying.
+
+484
+00:26:37,210 --> 00:26:38,970
+哦，就这么做吧。好
+Oh, let's do that. Yeah.
+
+485
+00:26:40,250 --> 00:26:41,610
+这个感觉挺烦人的
+This feels annoying.
+
+486
+00:26:42,930 --> 00:26:49,990
+还不太确定为什么，暂时没法给你一个简洁的标签
+Not exactly sure why can't give you a pithy label yet,
+
+487
+00:26:49,990 --> 00:26:57,210
+但会结合我给你的更多反馈来反思，并推理原因
+but reflect on more feedback I gave you and reason why.
+
+488
+00:27:01,110 --> 00:27:02,110
+那就这么做
+So let's do that.
+
+489
+00:27:07,190 --> 00:27:09,212
+顺便说一下，这里幕后
+So just so you know, like the two things
+
+490
+00:27:09,212 --> 00:27:12,750
+有两件很有意思的事情，第一
+that are really interesting going on behind the scenes here is one,
+
+491
+00:27:12,750 --> 00:27:15,277
+如果你还记得 Shreya 展示的聚类
+if you recall the clustering that Treya showed,
+
+492
+00:27:15,277 --> 00:27:19,320
+这些多样化的例子是从聚类里抽出来的，以保证多样性
+the diverse examples are being drawn from the clusters so that the diversity
+
+493
+00:27:19,320 --> 00:27:20,710
+然后是 monitor 工具
+and then the monitor tool.
+
+494
+00:27:20,830 --> 00:27:24,730
+Claude 里内置的 monitor 工具正在幕后被用来
+The monitor tool that's built in the cloud is being used behind the scenes to,
+
+495
+00:27:24,730 --> 00:27:26,070
+查看所有这些内容
+to look at all of the stuff.
+
+496
+00:27:30,590 --> 00:27:32,310
+我只是在给出大量反馈
+Just I'm like giving a lot of feedback.
+
+497
+00:27:32,630 --> 00:27:37,811
+呃，完全没问题，你知道，大多数人可能
+Um, and it's totally fine that, like, you know, if you, you might, most people, like,
+
+498
+00:27:37,811 --> 00:27:42,030
+得看很多样本才能给出反馈
+are gonna have to go through many samples to be able to give feedback.
+
+499
+00:27:42,550 --> 00:27:46,750
+呃，是的，我之前做过写作，所以现在能直接给反馈
+Um, yeah, I just, I've done writing before, so I'm able to give it now.
+
+500
+00:27:46,830 --> 00:27:49,938
+但是，呃，这就是为什么审查大量样本非常重要
+But, um, that's why it's very important to review lots of samples,
+
+501
+00:27:49,938 --> 00:27:51,350
+尤其是在一开始的时候
+especially in the beginning.
+
+502
+00:27:51,930 --> 00:27:53,770
+所以总结一下，你还是在做人工审查
+So just summarize, you're, you're still doing the manual review.
+
+503
+00:27:53,770 --> 00:27:57,706
+你没有让 AI 审查一切，你还是——是这样的，接下来会发生的是
+You're not getting AI to review everything you're still well here's the thing
+
+504
+00:27:57,706 --> 00:28:00,128
+我在做人工审查
+that's gonna happen is I'm giving manual review
+
+505
+00:28:00,128 --> 00:28:02,610
+而 Claude 在后台对它进行反思
+and in the background Claude is reflecting on it.
+
+506
+00:28:03,290 --> 00:28:06,970
+呃，这更多是关于语气，而不是事实之类的
+Um, so it's about voice rather than facts, whatever.
+
+507
+00:28:07,090 --> 00:28:08,787
+所以一旦我给出大约 10 条审查
+So once I give around 10 reviews,
+
+508
+00:28:08,787 --> 00:28:11,553
+它就会开始思考一个分类体系
+then it's gonna start like thinking about a taxonomy
+
+509
+00:28:11,553 --> 00:28:13,690
+然后把我的反馈应用上去
+and then it's going to apply my feedback.
+
+510
+00:28:13,810 --> 00:28:16,250
+比如说，这又是一个负面对比的例子
+So for example, this is another negative contrast thing.
+
+511
+00:28:16,770 --> 00:28:19,785
+呃，再多几条审查之后，它会把所有的
+Um, after a few more reviews, it would take all,
+
+512
+00:28:19,785 --> 00:28:23,650
+它会尝试找出所有负面对比的实例
+it would try to look for all instances of negative contrast.
+
+513
+00:28:23,850 --> 00:28:26,930
+它会自动帮我标注。所以我不用。没关系
+It automatically label it for me. So I don't. That's okay.
+
+514
+00:28:28,010 --> 00:28:29,730
+继续，继续往下拉。我让你看看那个。好
+Keep, keep going down. I'll let you see that. Yeah.
+
+515
+00:28:31,110 --> 00:28:31,670
+回到这里
+Back here.
+
+516
+00:28:34,510 --> 00:28:36,510
+呃，好的，这没问题
+Um, all right, so that's fine.
+
+517
+00:28:36,710 --> 00:28:41,534
+我给了四条反馈，呃，然后我也看看右边
+I've given four feedbacks, uh, and then I'm just gonna also look at the right see,
+
+518
+00:28:41,534 --> 00:28:45,710
+所以你看进度就知道，它不喜欢负面对比
+so if you look at the progress like it doesn't like negative contrast.
+
+519
+00:28:45,710 --> 00:28:47,950
+它知道负面对比是一个类别
+It knows that negative contrast is a thing.
+
+520
+00:28:48,030 --> 00:28:51,757
+然后这个，呃，三段式平行排比，我不知道你怎么看
+And then this, uh, triadic parallel enumeration thing, I don't know about you,
+
+521
+00:28:51,757 --> 00:28:53,790
+但我真的不喜欢这种三项罗列
+but I really don't like this list of threes.
+
+522
+00:28:53,910 --> 00:28:57,190
+我感觉 AI 老是这么干。所以，是的。好
+I feel like AI does it all the time. So, yeah. All right.
+
+523
+00:28:59,590 --> 00:29:04,870
+它可能在跑什么东西。我也不太清楚，但我们继续吧
+So probably running something. I don't know exactly, but let's just keep going.
+
+524
+00:29:14,350 --> 00:29:16,590
+这就像在寻宝找 slop。我懂
+It's like a treasure hunt for sloth. I know.
+
+525
+00:29:17,070 --> 00:29:24,790
+到处都是，不知为何，这个我也感觉 AI 经常这么干，比如列个数量
+Everywhere for some reason, this also, I feel like I see AI do this a lot, like a number.
+
+526
+00:29:25,350 --> 00:29:29,630
+它会弄出两三条“还需了解”或“需要记住”的事项。是的
+It makes like 2 or 3, three more things to know or like keep in mind. Yeah.
+
+527
+00:29:33,910 --> 00:29:43,390
+段落，主题句开头也用一些小东西
+Paragraphs, start topic, sentence with small things, too.
+
+528
+00:29:48,220 --> 00:29:52,620
+而且这整个标注功能是你构建的 skill 的一部分
+And and this whole annotation thing is part of the skill that you built.
+
+529
+00:29:53,300 --> 00:29:56,651
+对。我给你展示的一切基本上都是这个 skill
+Yep. Or everything I'm showing you is like the skill
+
+530
+00:29:56,651 --> 00:29:59,300
+是这个 skill 被调用来做这件事的
+and it's the skill was invoked to do this.
+
+531
+00:30:01,380 --> 00:30:06,300
+呃，这里，我想要完整的句子
+Um, here's, I want complete sentences.
+
+532
+00:30:09,500 --> 00:30:11,570
+我只是在给反馈
+I'm just giving, giving feedback so
+
+533
+00:30:11,570 --> 00:30:14,192
+这样它就能开始做自动化处理
+that way it can start doing the automatic pass
+
+534
+00:30:14,192 --> 00:30:17,159
+因为这个建议数量现在是零
+because this suggestions number is right now zero,
+
+535
+00:30:17,159 --> 00:30:20,540
+但随着它做自动化处理，这个数字会增加
+but this will become more as it's doing its automatic pass.
+
+536
+00:30:21,220 --> 00:30:25,084
+好，我正想问你，实时反思相比于
+Okay, I was gonna ask you, what's the advantage of having a reflect live versus like,
+
+537
+00:30:25,084 --> 00:30:27,900
+你知道，把所有反馈给完之后再一次性反思，有什么优势
+you know, you give all the feedback and it reflects at the end?
+
+538
+00:30:28,860 --> 00:30:35,700
+哦，这是个好问题。呃，我觉得你可以让它在最后反思
+Oh, it's a good question. Um, I think that you can have it reflect at the end.
+
+539
+00:30:36,180 --> 00:30:41,209
+那也行。呃，但我也觉得，试着交错进行
+That works. Um, but I also feel like trying to interleave, like,
+
+540
+00:30:41,209 --> 00:30:44,720
+让人的思考时间和 AI 的思考时间交织在一起，是很棒的
+human think time with AI think time is great.
+
+541
+00:30:44,840 --> 00:30:48,312
+不然的话，最后要花很多时间来回顾这些反馈
+Like, otherwise it's gonna take a lot of time to reflect on the feedback at the end
+
+542
+00:30:48,312 --> 00:30:49,400
+而你就得一直等着它
+and you're waiting on it.
+
+543
+00:30:49,480 --> 00:30:52,394
+我喜欢这个思路：它在后台进行归纳
+Like, I like the idea of like, it reflecting in the background
+
+544
+00:30:52,394 --> 00:30:55,880
+等我标到一定数量后，它就能给我提建议
+and then being able to suggest things for me once I hit to a certain number.
+
+545
+00:30:56,360 --> 00:31:00,800
+实际上，我并不总是像这样把 AI 的结果并排看
+Um, and, and in practice, I don't like always look at the AI side by side like this.
+
+546
+00:31:00,840 --> 00:31:03,797
+我只是为了演示才展示给你，让你能看到
+I'm just showing it to you for the demo so that you can like see
+
+547
+00:31:03,797 --> 00:31:06,339
+AI 确实在做事，而我在给出这些
+that the AI is doing something and I'm giving these,
+
+548
+00:31:06,339 --> 00:31:09,059
+做这些标注通常是很迭代的过程
+doing these annotations is usually really iterative,
+
+549
+00:31:09,059 --> 00:31:11,070
+意思是你会随着时间不断打磨自己的品味
+meaning you refine your taste over time.
+
+550
+00:31:11,230 --> 00:31:15,310
+看过更多样本后，你对自己想要什么会有新想法
+After you see more examples, you get new ideas on what you want.
+
+551
+00:31:15,870 --> 00:31:19,517
+很多时候看看 AI 怎么想也很有帮助
+And a lot of times it can be helpful to see what the AI thinks as well
+
+552
+00:31:19,517 --> 00:31:21,070
+帮你把思路落地
+and just to help ground you.
+
+553
+00:31:21,230 --> 00:31:24,990
+所以它更像是迭代进行的，即便……对，这说得通
+So it's like happening more iteratively even if. Yeah, that makes sense.
+
+554
+00:31:25,590 --> 00:31:27,590
+有道理，就像有个思考伙伴
+That makes sense. It's like a having a thinking partner.
+
+555
+00:31:28,430 --> 00:31:29,240
+对，好的
+Yeah. Okay.
+
+556
+00:31:29,400 --> 00:31:33,645
+那我可能还得再标 3 条它才开始给建议
+Well, uh, maybe I need to go 3 more before it starts suggesting,
+
+557
+00:31:33,645 --> 00:31:38,379
+我记不清具体数字了，让它现在就开始提建议吧
+I can't remember the exact number, start suggesting things already.
+
+558
+00:31:38,379 --> 00:31:39,930
+我直接告诉它
+I'm just gonna tell it.
+
+559
+00:31:48,820 --> 00:31:51,936
+你可能会想，有没有专门做这个的 SaaS
+You might be thinking, hey, like, is there a sass that does this?
+
+560
+00:31:51,936 --> 00:31:53,700
+但你看，你根本不需要
+But look at like you don't need that.
+
+561
+00:31:54,020 --> 00:31:58,610
+看看 Shreya 只是把这个流程直接和
+And look at the degree of flexibility Shrey is able to have by just integrating this
+
+562
+00:31:58,610 --> 00:32:00,340
+Claude 集成，就有了多大的灵活度
+process directly with Claude.
+
+563
+00:32:00,540 --> 00:32:01,500
+想怎么做都行
+Do whatever she wants.
+
+564
+00:32:01,860 --> 00:32:05,437
+对，所以我，这有点跑题，但这就是我觉得 SaaS
+Yeah, that that's why I, this is a Tangent, but that's why I feel like Sass is,
+
+565
+00:32:05,437 --> 00:32:09,297
+其实有麻烦了，因为如果我能随手 vibe code 出这种东西
+is actually in trouble, dude, because I, if I can just vibe code this kind of stuff,
+
+566
+00:32:09,297 --> 00:32:10,660
+我为什么还要为 SaaS 付费
+why would I pay for sass like.
+
+567
+00:32:11,490 --> 00:32:12,570
+直接自己做一个
+Just build my own thing.
+
+568
+00:32:12,850 --> 00:32:16,027
+不过另一面是，你得对这个工作流有非常清楚的理解
+Now, the other side of the coin is you have to have a really good idea of the
+
+569
+00:32:16,027 --> 00:32:19,469
+比如很多没看这个视频的人根本不知道
+workflow, like a lot of people that may not be watching this video will not know
+
+570
+00:32:19,469 --> 00:32:22,170
+该从哪开始，对吧？对，得对整个流程很清楚
+where to begin, right? Yeah, really good idea of the process.
+
+571
+00:32:36,490 --> 00:32:39,275
+另一件希望你能意识到的是
+The other thing that hopefully comes to mind is like,
+
+572
+00:32:39,275 --> 00:32:41,490
+收集反馈其实很枯燥繁琐
+it's like really tedious to get feedback.
+
+573
+00:32:41,930 --> 00:32:45,210
+是啊，我也没审查那么多
+Like, yeah, I've not reviewed that many.
+
+574
+00:32:47,170 --> 00:32:48,650
+我只给了 8 条批注
+I've only given 8 notes.
+
+575
+00:32:49,370 --> 00:32:52,130
+所以，要知道这确实很难
+So just like, yeah, know that it's, it's really hard.
+
+576
+00:32:52,930 --> 00:32:55,850
+而且 AI 也没法读懂你的想法
+And also AI just can't read your mind for you.
+
+577
+00:32:56,930 --> 00:32:59,650
+我这些批注里
+Well, I've never like all of these notes that I'm having.
+
+578
+00:32:59,770 --> 00:33:05,375
+有些也许 AI 能想到，但我不确定
+Like some, some of them maybe AI can come up with, but I don't know, like,
+
+579
+00:33:05,375 --> 00:33:06,610
+不是全部都能
+not all of them.
+
+580
+00:33:07,090 --> 00:33:10,677
+对，你也许可以用语音输入之类的加快速度，但是
+Uh, yeah, you can probably just speed up with like voice dictation or something, but,
+
+581
+00:33:10,677 --> 00:33:12,850
+但没错，你还是得把所有内容都读一遍
+but yes, you still have to read through everything.
+
+582
+00:33:13,250 --> 00:33:13,690
+对，对
+Yeah, yeah.
+
+583
+00:33:14,450 --> 00:33:17,610
+或者至少读一部分样本。好的
+Or read through some sample at least. Um, okay.
+
+584
+00:33:17,650 --> 00:33:21,610
+那我现在就开始往你的队列里推建议，不再等了
+So I'll start pushing suggestions to your queue right now instead of waiting.
+
+585
+00:33:21,850 --> 00:33:24,470
+对，大概吧。本来得标到 10 条，但好吧
+Yeah, probably. I had to get to 10 notes, but okay.
+
+586
+00:33:25,510 --> 00:33:27,830
+我喜欢设个门槛，因为这像根胡萝卜
+I like having the tendons because it's like a carrot.
+
+587
+00:33:27,910 --> 00:33:33,002
+它会逼你去读一些东西，让你稍微费点劲
+It, like, makes you read some things, like, makes you just sweat just a little bit,
+
+588
+00:33:33,002 --> 00:33:34,350
+这对你有好处
+which is good for you.
+
+589
+00:33:34,950 --> 00:33:43,390
+好了，开始思考了。哦，不错。好的，那它要开始标注了
+There we go. Thinking about stuff. Oh, nice. Okay. Yes. Okay, so it's gonna annotate.
+
+590
+00:33:44,620 --> 00:33:45,900
+给每一篇文档都做标注
+Annotate every single DOC.
+
+591
+00:33:47,700 --> 00:33:50,460
+对，用我已经找出来的标准
+Yep. With the criteria I've already found.
+
+592
+00:33:51,940 --> 00:33:57,004
+好，真正棒的一点是，这显示出它
+Okay, thing that's really great is like, okay, this is showing it's,
+
+593
+00:33:57,004 --> 00:34:00,380
+完美贴合了写作这个领域
+it's fit perfectly to this domain of writing.
+
+594
+00:34:00,740 --> 00:34:04,805
+就像她说的，你注意看，写作内容是原位呈现的
+Like if you notice the writing is being shown like in situ as she said,
+
+595
+00:34:04,805 --> 00:34:07,230
+按你作为用户阅读它的方式来呈现
+in the way that you would read it as a user.
+
+596
+00:34:07,310 --> 00:34:10,870
+你看的不是日志文件或 trace 查看器，对
+You're not looking at like a log file or a trace viewer. Yeah.
+
+597
+00:34:10,990 --> 00:34:12,110
+而是它实际的样子
+What it actually looks like.
+
+598
+00:34:12,990 --> 00:34:18,618
+对，你就是就地编辑它，对吧？所以它，嗯
+Yeah. You're just editing it in place, right? So it's like it's, um,
+
+599
+00:34:18,618 --> 00:34:21,030
+生成了 361 条建议
+generated 361 suggestions.
+
+600
+00:34:22,110 --> 00:34:26,550
+对，"少于四个词"这条规则产生了 249 条
+Yeah, so it's at the less than four words to staccato rule produced 249.
+
+601
+00:34:28,690 --> 00:34:32,970
+嗯，但接下来会怎样？你接受这一切之后，接下来会发生什么
+Um, but, but what happens? So what happens next after you accept all this?
+
+602
+00:34:33,090 --> 00:34:38,014
+它真的会建议你怎么修复这些问题吗，还是说这里的思路是
+Like does it actually suggest how how you fix this stuff or so the idea here is
+
+603
+00:34:38,014 --> 00:34:43,173
+就像我之前提到的，你可以把这些失败模式，所有你发现的东西
+as I mentioned before so like then you can turn this failure modes all the things
+
+604
+00:34:43,173 --> 00:34:48,410
+变成一个 rubric，这就成了你的 evals。我明白了。嗯，然后呢
+that you found into a rubric like this becomes your evals. I see. Um, and then, so.
+
+605
+00:34:48,410 --> 00:34:50,050
+你可以把它做成一个 skill 来应用
+You can apply that as a skill as you do.
+
+606
+00:34:50,920 --> 00:34:53,960
+嗯，你可以为每一条用 LLM 来评判
+Um, you can have an LLM judge for each.
+
+607
+00:34:54,040 --> 00:34:55,930
+你可以把它变成一个看板
+You can turn that into a dashboard,
+
+608
+00:34:55,930 --> 00:35:00,233
+你可以让它实时监控 agent 的轨迹或输出，整个
+you can have that monitor agent traces or outputs in real time like the whole the
+
+609
+00:35:00,233 --> 00:35:04,600
+evals 里最难的部分就是错误分析，也就是得出这个 rubric
+the hardest part of evals is error analysis, which is coming up with this rubric.
+
+610
+00:35:05,200 --> 00:35:09,237
+嗯，所以这个流程因为有了标注，就变得非常轻松
+Um, so this process just makes it really easy because of this annotation.
+
+611
+00:35:09,237 --> 00:35:10,560
+你还会得到一个数据集
+You also have a data set.
+
+612
+00:35:11,380 --> 00:35:16,325
+对，所以在你的 evals 建好之后，你可以把这些 evals
+So yeah, you can, after your evals get created now you can check those evals
+
+613
+00:35:16,325 --> 00:35:20,651
+拿去和数据集对照，我是说，这是 evals 的一部分
+against the data set that, I mean, what I'm saying is part of evals,
+
+614
+00:35:20,651 --> 00:35:22,660
+但 evals 不只是一个 rubric
+but evals is not just a rubric.
+
+615
+00:35:22,860 --> 00:35:26,780
+你要能衡量这个 rubric，问一句：它好用吗
+You want to be able to measure the rubric and say like, is it good?
+
+616
+00:35:27,220 --> 00:35:30,649
+正因为这些都被标注过了，你就可以
+And so because of these been annotated, you can, you can,
+
+617
+00:35:30,649 --> 00:35:33,640
+你有了可以作为基准去对照的东西，对吧
+you have this thing to benchmark against, right?
+
+618
+00:35:35,320 --> 00:35:41,440
+好，所以我发现，最常见的例子是断续的短句片段，对吧
+Okay. So I found, okay, so the most frequent example is the staccato fragments, right?
+
+619
+00:35:41,560 --> 00:35:45,920
+对。然后还有冒号之类的，但这也说得通，对吧
+Right. And then there was also colons and stuff, but it makes sense, right?
+
+620
+00:35:46,000 --> 00:35:49,028
+这就是另一件事，作为一个人
+It's like, so that's another thing, like, as somebody,
+
+621
+00:35:49,028 --> 00:35:52,320
+我之前并不知道那是最常见的例子，对吧
+I didn't know that that's the most frequent example, right?
+
+622
+00:35:52,360 --> 00:35:55,760
+我原本以为是那种“不是 X 而是 Y”的句式，但我，我猜
+Like I would have thought it's the not X but y, but I, I guess.
+
+623
+00:35:57,090 --> 00:35:59,010
+我猜其实是这种断续的短句片段
+I guess it is this staccato fragment.
+
+624
+00:36:00,610 --> 00:36:01,410
+我信
+I believe it.
+
+625
+00:36:02,330 --> 00:36:07,289
+所以这又回到那个理念：由人来主导
+So, it, so again, goes back to the philosophy of like human is the one driving the
+
+626
+00:36:07,289 --> 00:36:12,173
+品味，而 AI 负责放大，或者说赋予人超能力
+taste and the AI is the one like scaling up or giving superpowers to the human to
+
+627
+00:36:12,173 --> 00:36:13,450
+把这种品味大规模应用出去
+apply that at scale.
+
+628
+00:36:14,650 --> 00:36:17,226
+好，明白了。等等，为了确认一下
+Okay, got it. Wait, so, so, so just to understand, like,
+
+629
+00:36:17,226 --> 00:36:18,850
+你能回到进度那个标签页吗
+can you go back to the progress tab?
+
+630
+00:36:19,610 --> 00:36:23,319
+所以现在我们有了这些主题和这些 rubric，对吧？那么
+So now we have these, these themes and these rubrics, right? So, so what,
+
+631
+00:36:23,319 --> 00:36:24,450
+我该拿这些做什么
+what do I do with this?
+
+632
+00:36:24,450 --> 00:36:26,010
+现在？假设我在做一个写作 skill
+Now? Let's say I'm building a writing skill.
+
+633
+00:36:26,050 --> 00:36:29,438
+你是不是就把 AI 指向这个东西，然后说，嘿
+Do you just like, uh, point AI to this thing and be like, hey,
+
+634
+00:36:29,438 --> 00:36:30,890
+现在给我创建一个 skill
+now create a skill for me.
+
+635
+00:36:31,330 --> 00:36:35,711
+我是说，我就会在这里写：写一个 skill
+I mean, I would be right here. Write a skill
+
+636
+00:36:35,711 --> 00:36:42,970
+根据发现的失败模式来评估 AI 辅助写作
+that evaluates AI assisted writing based on the failure modes found.
+
+637
+00:36:43,530 --> 00:36:45,730
+我就直接让它给我一个 skill，然后 skill 就出来了
+I, like, would just ask for a skill and there's the skill.
+
+638
+00:36:46,170 --> 00:36:47,912
+嗯，我想强调一点
+Um, and I want to emphasize that like,
+
+639
+00:36:47,912 --> 00:36:50,890
+你应该再多花几个小时做错误发现
+you should spend a couple more hours doing the error discovery.
+
+640
+00:36:51,260 --> 00:36:53,140
+别只看五个例子
+Like, don't just look at five things.
+
+641
+00:36:53,220 --> 00:36:57,958
+要真的过一遍，审查全部 18 个，让你有把握
+Like, actually go through, you know, review all 18, like, feel confident that you've,
+
+642
+00:36:57,958 --> 00:36:59,340
+觉得基本已经饱和、看全了
+like, kind of saturated.
+
+643
+00:37:00,020 --> 00:37:05,620
+嗯，但没错，你可以直接让它写一个 skill，它就会写出一个 rubric
+Um, but yeah, you can just ask it to write a skill and it will write a rubric.
+
+644
+00:37:06,380 --> 00:37:07,500
+我，我明白了。好
+I. I see. Okay.
+
+645
+00:37:08,140 --> 00:37:11,020
+然后，基本上每次你有一份写作样本，就直接跑这个 skill
+Then, then basically every time you have a writing sample, you just run the scale.
+
+646
+00:37:12,170 --> 00:37:16,433
+对，这个 rubric 会输出，比如这份写作样本有一大堆断续的
+Yeah, and the rubric will output like this writing sample has a ton of staccato
+
+647
+00:37:16,433 --> 00:37:17,810
+短句片段之类的
+fragments or something.
+
+648
+00:37:18,330 --> 00:37:22,010
+嗯，这个 rubric 会把断续短句片段作为其中一条标准
+Um, the rubric will have staccato fragments as one of the criteria.
+
+649
+00:37:22,130 --> 00:37:26,026
+比如你看，你想想你那个播客评估 skill，对吧
+Like if you look at, if you think about your podcast evaluation skill, right,
+
+650
+00:37:26,026 --> 00:37:27,730
+那是一个包含很多条标准的 rubric
+that's a rubric of many criteria.
+
+651
+00:37:28,250 --> 00:37:30,049
+所以断续短句会是其中一条
+So staccato will be one of the like,
+
+652
+00:37:30,049 --> 00:37:33,400
+大概它得出的五条标准之一，或者说这里得出的其中一条
+like five criteria that it comes up with or that this came up with.
+
+653
+00:37:33,720 --> 00:37:38,858
+有一件很有意思的事，如果你注意到，好
+So one thing that's really interesting is if you notice the way there is a, okay,
+
+654
+00:37:38,858 --> 00:37:44,073
+你评估某样东西的方式，往往应该反过来影响
+the way you eval something is often should inform the way you might want to design
+
+655
+00:37:44,073 --> 00:37:46,720
+你一开始想为用户设计界面的方式
+the interface for the user to begin with.
+
+656
+00:37:47,080 --> 00:37:52,817
+所以，嗯，如果你注意到在标注工作流里，她让 AI，你懂的
+So, um, if you notice like in the annotation workflow, she had the AI, so, you know,
+
+657
+00:37:52,817 --> 00:37:55,180
+去建议不同的标注
+suggest different annotations.
+
+658
+00:37:55,980 --> 00:37:58,483
+你可以想象，如果你是真的在写作
+You can imagine, like, if you were writing for real,
+
+659
+00:37:58,483 --> 00:38:02,384
+你会希望有一个 IDE，能给你同样的建议并告诉你原因
+you would want an IDE that would make the same suggestions to you and show you why,
+
+660
+00:38:02,384 --> 00:38:07,100
+比如，嘿，这里是断续短句，这里是负向对比，这里是这个，这里是那个
+like, hey, like, here's a staccato thing, here's a negative contrast, here's this, here's that.
+
+661
+00:38:07,580 --> 00:38:10,860
+嗯，这样你就不用只让 AI 直接覆盖一切
+Um, so that you, you don't have to just have AI just overwrite things.
+
+662
+00:38:10,940 --> 00:38:14,220
+你得反复读那些你想接受或想拒绝的内容
+You have to keep rereading things you want to accept and reject things.
+
+663
+00:38:15,580 --> 00:38:20,383
+所以，是的，它其实会逼着你在做这件事时用上一些好的设计思维
+And so, yeah, it's actually forces some amount of good design thinking to go through
+
+664
+00:38:20,383 --> 00:38:24,020
+因为每个界面都会不一样
+this exercise because each interface is going to be different.
+
+665
+00:38:24,300 --> 00:38:26,660
+我给你看的是一个写作用的例子，好吧
+Make sure I showed you one for writing, okay?
+
+666
+00:38:26,900 --> 00:38:31,444
+客服支持机器人的界面会完全不同
+Customer service support bot is going to look totally different in the interface or,
+
+667
+00:38:31,444 --> 00:38:34,900
+甚至连错误发现界面都不一样，对吧
+you know, another even in the error discovery interface, right?
+
+668
+00:38:34,900 --> 00:38:37,856
+我的 skill 会让 agent 去思考数据的本质
+My skill asks the agent to reflect on the nature of the data
+
+669
+00:38:37,856 --> 00:38:41,860
+并为它设计合适的编码方式。它不会长得和这个一模一样
+and design official encoding for it. It's not going to look exactly like this.
+
+670
+00:38:43,540 --> 00:38:43,940
+好
+Okay.
+
+671
+00:38:44,460 --> 00:38:49,256
+我想主要的好处是，呃，在之前的流程里
+And I guess the, the main, the main benefit so, uh, in the previous process,
+
+672
+00:38:49,256 --> 00:38:53,123
+我还是得审查这些 traces 并归纳出错误
+I still have to review the traces and come up with the errors,
+
+673
+00:38:53,123 --> 00:38:57,300
+但现在 AI 会主动帮我找出这些主题，对吧
+but now the AI is actively helping me find the, the themes, right?
+
+674
+00:38:57,420 --> 00:39:00,520
+所以它算是跳过了那一整步
+So it's kind of skips that whole since the step.
+
+675
+00:39:01,080 --> 00:39:02,000
+对，是的
+Yep. Yeah.
+
+676
+00:39:02,760 --> 00:39:05,005
+明白了。其实它并没有跳过那一步
+Got it. Well, it doesn't skip the step.
+
+677
+00:39:05,005 --> 00:39:07,600
+我会说你还是得看数据
+I would say you still have to look at the data.
+
+678
+00:39:07,800 --> 00:39:10,615
+未来不存在这样的世界，哪怕你有了 AGI
+There's, there is no world in the future, even if you have AGI,
+
+679
+00:39:10,615 --> 00:39:13,320
+只要你在做产品，你就必须看你的数据
+if you're building a product, you have to look at your data.
+
+680
+00:39:13,840 --> 00:39:15,960
+否则根本没办法，对吧
+Otherwise there's no way, right?
+
+681
+00:39:15,960 --> 00:39:19,066
+你不能不这样，你必须能以某种方式把你的品味注入到
+Like you cannot, you have to be able to inject your taste somehow into the
+
+682
+00:39:19,066 --> 00:39:20,360
+你的产品开发中
+development of your product.
+
+683
+00:39:20,910 --> 00:39:24,647
+这就是，呃，我们认为这是我们在尝试向你展示，怎么
+This is, uh, we would think is our, is our attempt to show you, like, how,
+
+684
+00:39:24,647 --> 00:39:26,927
+这里有一种方式，能让你高效地做到
+here's a way you can do it effectively with,
+
+685
+00:39:26,927 --> 00:39:30,030
+借助 AI 的全部优势和力量来帮你加速
+with all the benefit and might of AI to help you accelerate.
+
+686
+00:39:30,870 --> 00:39:33,990
+明白了。那这些让你审查的建议有什么意义
+Got it. What, what, what is the point of the suggestions to review?
+
+687
+00:39:34,030 --> 00:39:37,390
+它就是给一些内容加入了更多人的输入
+It just gives more, it like gives more human input to some stuff.
+
+688
+00:39:37,710 --> 00:39:42,390
+嗯，这是 agent 在扫描所有记录，寻找已知的失败模式
+Um, so this is the agent scanning all records for the known failure modes.
+
+689
+00:39:42,910 --> 00:39:47,910
+嗯，这些是没有由我人工标注过的记录
+Um, and these are records that were not labeled by me with the human.
+
+690
+00:39:48,550 --> 00:39:51,707
+所以，实际操作中我可以全部接受
+So, okay, just to, like, I can accept all in practice,
+
+691
+00:39:51,707 --> 00:39:56,084
+我总是在快速扫一遍确认之后全部接受
+I always accept all of them after like scanning briefly just to make sure,
+
+692
+00:39:56,084 --> 00:40:00,030
+我用这一步来确认 AI 理解了我的意思
+like I use this to make sure that the AI understands what I meant by.
+
+693
+00:40:00,070 --> 00:40:01,510
+比如说，负面对比
+For example, negative contrast.
+
+694
+00:40:02,550 --> 00:40:06,431
+好，就是这样，是的，它完全理解了我说的负面
+Okay, so it's like, yeah, totally it it understands what I meant by negative
+
+695
+00:40:06,431 --> 00:40:07,910
+对比是什么意思。干得好。接受
+contrast. Good job. Accept.
+
+696
+00:40:09,240 --> 00:40:13,384
+我真正喜欢的一点是，如果这个界面有问题，或者她
+The thing I really love is if there's something wrong with this interface or she
+
+697
+00:40:13,384 --> 00:40:15,958
+无法给出她想要的反馈，那她就会
+can't give the feedback she wants, so she's like,
+
+698
+00:40:15,958 --> 00:40:18,720
+比如说她有一个 AI 遗漏的主题
+let's say she has a theme that the AI is missing out on.
+
+699
+00:40:18,880 --> 00:40:22,960
+她可以直接去左边的 Claude 里把它改好
+She can just go directly to Claude on the left hand side and fix it.
+
+700
+00:40:23,080 --> 00:40:25,480
+你不必，你并没有被这个 UI 束缚住
+You don't have, you're not trained to this UI.
+
+701
+00:40:26,200 --> 00:40:27,920
+对，对，没错。是的
+Yeah, yeah, exactly. Yeah.
+
+702
+00:40:28,080 --> 00:40:32,000
+这就是为什么，你自己的产品比某种 SaaS 产品灵活得多
+This is why, like your own product is like way more flexible than some sort of SAS SAS product.
+
+703
+00:40:32,120 --> 00:40:37,604
+它能覆盖所有这些普通 SaaS 都想不到的用例，对，嗯
+It just give all these use cases that no common SAS will think think about yeah, um,
+
+704
+00:40:37,604 --> 00:40:42,120
+所以如果我想用，好，这现在让我挺兴奋的
+so if I wanted to use, okay, so now this is getting me pretty excited.
+
+705
+00:40:42,120 --> 00:40:44,876
+假设我想用你的错误分析
+So let's say I want to use my use your error analysis,
+
+706
+00:40:44,876 --> 00:40:48,080
+用你的错误发现 skill 来处理我之前的例子，对吧
+your error discovery skill for my previous example, right?
+
+707
+00:40:48,160 --> 00:40:51,400
+用在播客那部分。所以基本上我会，呃，给它
+For, for the podcast stuff. So basically I would, uh, give it.
+
+708
+00:40:51,600 --> 00:40:53,880
+你之前让 AI 生成了一批写作样本
+So you got AI to generate a bunch of writing samples.
+
+709
+00:40:53,920 --> 00:40:58,716
+那不这样的话，也许我会给它，嗯，比如修改前后的例子，或者
+So instead of that, maybe I'll give it, um, like maybe before and after examples or,
+
+710
+00:40:58,716 --> 00:41:01,219
+比如，也许我会给它一些例子，比如
+like, maybe I'll give it examples of, like,
+
+711
+00:41:01,219 --> 00:41:03,930
+它为之前几期节目做的要点总结
+takeaways that it made for previous episodes.
+
+712
+00:41:04,690 --> 00:41:09,747
+是的，我会做的就是建一个文件夹，放进你现在用来生成
+Yeah, what I would do is just create a folder with your current skill for generating
+
+713
+00:41:09,747 --> 00:41:13,925
+要点总结的 skill 原样，再放一些播客文字稿的例子，还有，是的
+takeaways as is and then examples of podcast transcripts and, yeah,
+
+714
+00:41:13,925 --> 00:41:16,050
+你认为不错的那些要点总结
+takeaways that you said were good.
+
+715
+00:41:16,840 --> 00:41:21,020
+然后我就会调用这个 skill，说
+And then I would just invoke the skill and say,
+
+716
+00:41:21,020 --> 00:41:26,080
+帮我对我的播客要点总结 skill 做错误分析
+help me do error analysis on my podcast Takeaway Skill.
+
+717
+00:41:26,160 --> 00:41:30,186
+也就是用播客要点总结 skill 生成一批要点总结
+So apply the podcast takeaway skill to generate a bunch of takeaways
+
+718
+00:41:30,186 --> 00:41:33,577
+然后给我搭一个界面来审查这些要点总结
+and then build me an interface to review those takeaways,
+
+719
+00:41:33,577 --> 00:41:36,120
+尤其是和输出内容做对比
+especially compared against the outputs.
+
+720
+00:41:38,720 --> 00:41:40,080
+太棒了。是的，太棒了
+That's perfect. Yeah, that's perfect.
+
+721
+00:41:40,720 --> 00:41:42,280
+对，对，然后过一遍就行
+So, yeah, yeah, then just go through.
+
+722
+00:41:42,360 --> 00:41:45,410
+生成界面大概要 15 分钟
+I mean, it'll take like 15 minutes for it to give you the interface,
+
+723
+00:41:45,410 --> 00:41:47,240
+但你过起来会很快
+but you'll be able to go through it fast.
+
+724
+00:41:47,240 --> 00:41:49,560
+关键就是要有信心，对吧
+And like, the whole point is confidence, right?
+
+725
+00:41:49,600 --> 00:41:52,214
+说到底，我想要的是信心
+Like at the end of the day, I want confidence that
+
+726
+00:41:52,214 --> 00:41:55,873
+就是我的 skill 真的能用，我知道 LLM 表现出的是什么行为
+that my skill is do like I know what behavior the LLM is exhibiting so
+
+727
+00:41:55,873 --> 00:41:58,160
+这就是错误分析的意义所在
+that's the whole point of error analysis.
+
+728
+00:41:59,050 --> 00:42:02,699
+所以我应该，也许我该改一下你的界面
+So, so I should have like, maybe I should modify your interface to have my,
+
+729
+00:42:02,699 --> 00:42:05,690
+一边放 AI 的输出，一边放真实标准
+the AI's output on one side and the ground truth on the other.
+
+730
+00:42:05,930 --> 00:42:11,610
+当你在自己的数据上调用这个 skill 时，界面会不一样
+So the interface is gonna be different when you invoke the skill on your data.
+
+731
+00:42:12,570 --> 00:42:14,570
+它不会生成这个界面
+It's not going to come up with this interface.
+
+732
+00:42:15,210 --> 00:42:17,250
+AI agent 会读取你的数据
+The AI agent will read your data.
+
+733
+00:42:17,370 --> 00:42:21,452
+它会读取那些结论，生成一个不同的界面展示给你
+It will read those takeaways and come up with a different interface to show you
+
+734
+00:42:21,452 --> 00:42:23,461
+就像这里第 2 步一样渲染给你
+and render that to you as in step 2 here,
+
+735
+00:42:23,461 --> 00:42:26,350
+设计视觉、写代码、构建 HTML
+designing the visual and coding and building the HTML.
+
+736
+00:42:26,710 --> 00:42:26,990
+好
+Okay.
+
+737
+00:42:27,670 --> 00:42:30,190
+太棒了，非常感谢，谢谢你给我们演示
+That's, that's amazing. Thanks so much. Yeah, thanks so much for showing us.
+
+738
+00:42:30,230 --> 00:42:30,430
+好
+Okay.
+
+739
+00:42:30,430 --> 00:42:33,097
+我想跟正在看视频的人指出一点
+And I just, I just want to point out to people who are watching this
+
+740
+00:42:33,097 --> 00:42:34,430
+据我所知这是免费的
+that this is free as far as I know.
+
+741
+00:42:34,590 --> 00:42:39,130
+对，去 GitHub 上找 error discovery skill 就行，你会找到
+And uh, yep, yep, just go to error discovery skill on Github and, and you'll find,
+
+742
+00:42:39,130 --> 00:42:42,790
+或者这样，我会在这期节目的简介里放链接
+or you know what, I'll link it in the description of this episode.
+
+743
+00:42:42,910 --> 00:42:46,930
+很好。我很喜欢你很坦诚，承认右边这些是 Claude 帮你做出来的
+Cool. And I love how you're honest about Claude helping you come up with this on the right.
+
+744
+00:42:47,810 --> 00:42:48,730
+哦，当然
+Oh, yeah, of course.
+
+745
+00:42:49,290 --> 00:42:49,570
+是的
+Yeah.
+
+746
+00:42:50,330 --> 00:42:53,690
+我通常会把那部分删掉，假装整个东西都是我自己做的
+I usually try to remove that to pretend I built the whole thing myself.
+
+747
+00:42:54,170 --> 00:42:54,970
+不不不
+No, no, no.
+
+748
+00:42:55,610 --> 00:42:59,272
+对对，Claude 很擅长给 Claude 写 skill
+Yeah, yeah. Claude is very good at, like, writing skills for Claude. Like,
+
+749
+00:42:59,272 --> 00:43:00,690
+我都不知道怎么跟 AI 说话
+I don't know how to talk to AI.
+
+750
+00:43:00,890 --> 00:43:05,050
+所以这挺好的。不过 README 是我写的，对吧
+So that's, that's great. Um, but I mean, like I wrote the README, right?
+
+751
+00:43:05,090 --> 00:43:10,830
+这个流程是我想出来的，所以我对它很有信心
+Like I I'm the one coming up with this process so I feel pretty confident in it.
+
+752
+00:43:11,430 --> 00:43:13,790
+很好。好，这个演示很棒。我……
+Cool. All right. Well, this is awesome demo. I.
+
+753
+00:43:13,830 --> 00:43:16,937
+我想我们还有一个话题，就是，Hamel，你
+I think we have one more topic, which is, uh, Hamel, you,
+
+754
+00:43:16,937 --> 00:43:20,572
+你写过一篇文章，讲 AI 自动化到底有没有用，或者说
+you wrote an article about do AI automations actually work or like
+
+755
+00:43:20,572 --> 00:43:21,630
+它们在哪些场景下有用
+where do they work?
+
+756
+00:43:21,830 --> 00:43:25,190
+对吧？你想聊聊那个吗？好，我可以简单说一下
+Right? Do you want? Yeah, talk about that? Yeah, I can quickly talk about that.
+
+757
+00:43:25,430 --> 00:43:29,070
+好。我有一篇博客文章，标题是《自动化评估真的有效吗？》
+Okay. Um, so I have a blog post, do automated evals work?
+
+758
+00:43:29,230 --> 00:43:32,120
+对，我们可以把链接放在简介里
+And yeah, oh, you, we can put the link in the description.
+
+759
+00:43:32,640 --> 00:43:37,280
+基本上我们做的是……让我先退回去讲
+But basically what we did is let me just back up.
+
+760
+00:43:37,680 --> 00:43:43,920
+我写了一篇博客文章，标题是《自动化评估真的有效吗？》
+Um, so I wrote a blog post about that's titled do automated evals work?
+
+761
+00:43:44,440 --> 00:43:50,493
+写这篇文章的原因是，有一批不同的厂商
+And the reason for writing this blog post is there is a bunch of different vendors
+
+762
+00:43:50,493 --> 00:43:54,739
+在过去几个月里做了一些工具
+that in the last few months have created tools that will,
+
+763
+00:43:54,739 --> 00:43:57,630
+承诺能帮你把 evals 都做了
+that promise to just do evals for you.
+
+764
+00:43:58,390 --> 00:44:02,609
+它们的工作方式是，你把你的使用记录上传到这些工具里
+And the way they work is you upload your traces into those tools
+
+765
+00:44:02,609 --> 00:44:04,150
+然后跟一个 AI 聊天
+and you chat with an AI.
+
+766
+00:44:04,630 --> 00:44:05,790
+这里有个例子
+So here's an example.
+
+767
+00:44:06,390 --> 00:44:11,910
+这是 Braintrust 里的一个，左边是使用记录查看器，然后……
+Um, here's one in Braintrust where you know is a trace viewer on the left um and then.
+
+768
+00:44:12,770 --> 00:44:16,985
+你可以跟你的 AI 聊天，问它一些问题，基本上就是说
+You can chat with your AI. You can ask it some questions and basically say,
+
+769
+00:44:16,985 --> 00:44:18,090
+帮我把 evals 做了
+do my evals for me.
+
+770
+00:44:18,170 --> 00:44:22,761
+在这个产品里，这个功能叫 Loop
+In this particular product, this feature is called loop
+
+771
+00:44:22,761 --> 00:44:27,450
+Arize 也有几乎一样的东西，非常相似
+and Arize has really the same thing, a very similar thing.
+
+772
+00:44:27,490 --> 00:44:29,130
+它叫 Alex，你可以跟它聊天
+It's called Alex, you can chat with it.
+
+773
+00:44:29,130 --> 00:44:31,635
+你可以说，嘿，看看我的使用记录，帮我做 evals
+You can say, hey, look through my traces, do my evals.
+
+774
+00:44:31,635 --> 00:44:33,250
+LangSmith 也有类似的东西
+LangSmith has something similar.
+
+775
+00:44:34,160 --> 00:44:37,775
+我们当时很好奇，就是说
+And, um, uh, you know, we were curious, like, okay,
+
+776
+00:44:37,775 --> 00:44:41,561
+如果我们拿一份我们人工标注过的数据集
+if we take a data set that we have annotated as humans,
+
+777
+00:44:41,561 --> 00:44:44,918
+AI 抓出这些相同错误的能力有多强
+how good is the AI at catching those same errors
+
+778
+00:44:44,918 --> 00:44:48,360
+这些自动化评估系统又有多好
+and how good are these automated eval systems?
+
+779
+00:44:48,840 --> 00:44:51,800
+结果发现，这里有个有趣的梗图
+And it turns out that, uh, and here's a fun meme.
+
+780
+00:44:51,880 --> 00:44:54,398
+就像是，好，你面临这样一个选择，对吧
+It's like, okay, you're faced with this choice, right,
+
+781
+00:44:54,398 --> 00:44:56,150
+作为开发者或产品经理
+as a developer or as a product manager.
+
+782
+00:44:56,230 --> 00:44:59,181
+你是直接按下这个自动化评估按钮吗？听起来确实很方便
+Like, do you just press this auto eval button? Sounds really convenient,
+
+783
+00:44:59,181 --> 00:45:00,680
+还是真的去看那些使用记录
+or do you actually look at the traces?
+
+784
+00:45:01,080 --> 00:45:04,639
+这其实是个挺难的决定，因为
+It's actually pretty hard decision because like,
+
+785
+00:45:04,639 --> 00:45:07,945
+按下那个按钮真的很有诱惑力，嗯
+it's very tempting to press the button and, um,
+
+786
+00:45:07,945 --> 00:45:11,589
+我就不讲太多细节了，不过，嗯
+and so I won't get too much into the details, but, um,
+
+787
+00:45:11,589 --> 00:45:14,640
+我们做了一个基准测试，然后发现
+we did kind of a benchmark and we found that.
+
+788
+00:45:14,680 --> 00:45:19,720
+好的，这些工具能捕捉到很多人类也会发现的错误
+Okay, like the tools are able to recover a lot of the errors that a human would.
+
+789
+00:45:21,510 --> 00:45:28,073
+但另一方面，这些自动化工具都会漏掉同样的东西
+But on the flip side, these automated tools all sort of miss the same thing,
+
+790
+00:45:28,073 --> 00:45:32,095
+也就是找出那些不明显的错误
+which is finding errors that are not obvious,
+
+791
+00:45:32,095 --> 00:45:37,070
+那些需要产品判断力和某种品味的东西
+things that require product judgment and kind of taste.
+
+792
+00:45:37,270 --> 00:45:40,982
+所以在使用记录里，凡是明显出错的地方
+So like anywhere in the trace where something obviously went wrong,
+
+793
+00:45:40,982 --> 00:45:45,605
+比如工具调用失败了，或者有人在表达不满什么的
+like a tool call failed or somebody is like expressing dissatisfaction or something
+
+794
+00:45:45,605 --> 00:45:50,750
+这些都非常明显，你不需要产品专业知识就知道出错了
+is just like really obvious, like you don't need product expertise know something went wrong.
+
+795
+00:45:51,110 --> 00:45:52,390
+AI 非常擅长捕捉这类问题
+AI is really good at catching that.
+
+796
+00:45:52,910 --> 00:45:56,363
+AI 不擅长捕捉的是，比如，嗯
+AI is not good at catching like, oh, okay, this, uh,
+
+797
+00:45:56,363 --> 00:46:02,037
+比如这个客服机器人没能正确处理销售异议，你懂的
+say this support bot didn't handle sales objections correctly, you know, so like,
+
+798
+00:46:02,037 --> 00:46:04,750
+我们上传的是一个客服
+what we uploaded is a customer service.
+
+799
+00:46:05,440 --> 00:46:09,715
+嗯，它是一个房地产或租房销售 agent
+Uh, it was a real estate or a rental sales agent that is, you know,
+
+800
+00:46:09,715 --> 00:46:15,200
+本应对接那些想买房或租房的人
+supposed to interface with people looking to buy apartments or rent apartments.
+
+801
+00:46:15,680 --> 00:46:18,294
+对，比如说，其中一个
+And like, yeah, for example, one of the items
+
+802
+00:46:18,294 --> 00:46:21,120
+总是被漏掉的就是销售异议
+that were always missed were sales objections.
+
+803
+00:46:21,320 --> 00:46:24,040
+比如，嘿，我们没有。它只会说，嘿，那个我们没有
+Like, hey, we don't. It would just say, hey, we don't have that available.
+
+804
+00:46:24,320 --> 00:46:28,210
+祝你愉快，而不是说，嘿，我们有替代方案，等等
+Have a nice day instead of saying, hey, like, there's alternatives for you, blah, blah.
+
+805
+00:46:29,170 --> 00:46:34,770
+但另一个很有意思的事实是，我们也拿它和编程 agent 做了对比
+But another kind of very interesting fact is we also benchmark this against coding agents.
+
+806
+00:46:34,810 --> 00:46:37,530
+比如 Claude、Codex 等等
+So Claude, Codex, so on and so forth.
+
+807
+00:46:38,210 --> 00:46:41,690
+我们发现它们的表现基本上差不多
+And we found that those pretty much work the same.
+
+808
+00:46:42,290 --> 00:46:44,715
+所以归根结底
+So at the end of the day, what, you know,
+
+809
+00:46:44,715 --> 00:46:48,050
+这里的情况是，外层框架其实相当薄
+what's going on here is the harness is somewhat thin.
+
+810
+00:46:48,250 --> 00:46:49,610
+它只是别人的一段 prompt
+It's just someone else's prompt.
+
+811
+00:46:50,000 --> 00:46:53,582
+所以，即使你在和 AI 以及这些工具对话
+So, you know, so even when you're chatting with the AI and these tools,
+
+812
+00:46:53,582 --> 00:46:56,052
+你其实只是在调用其中一个模型
+you're really just invoking one of those models
+
+813
+00:46:56,052 --> 00:46:59,880
+而它们背后有一段 prompt 在试图做同样的事
+and they have a prompt behind the scenes that's trying to do the same thing.
+
+814
+00:47:00,360 --> 00:47:05,240
+但你真正想做的，是更主动地引导 agent
+But what you really want to do is you want to steer the agent more actively.
+
+815
+00:47:05,440 --> 00:47:09,925
+所以要全面改善这一点，无论是
+So the way to make this better across the board for either, you know,
+
+816
+00:47:09,925 --> 00:47:15,050
+你的编程 agent 还是评估工具，就是让它明白什么是好、什么是坏
+your coding agent or the eval tools is to give it an idea of what's good and bad.
+
+817
+00:47:15,330 --> 00:47:18,027
+唯一的问题是，你自己也不知道什么是好、什么是坏
+The only thing is you don't know what's good and bad
+
+818
+00:47:18,027 --> 00:47:19,890
+除非你做 Shreya 刚才做的那件事
+unless you do what Shreya just did.
+
+819
+00:47:20,570 --> 00:47:24,330
+人类很难一开始就自上而下地想清楚
+It's really hard for humans to upfront think of like, from top down.
+
+820
+00:47:24,410 --> 00:47:27,170
+比如，所有好的和坏的东西都有哪些？这几乎不可能
+Like, what are all the things that are good and bad? It's like almost impossible.
+
+821
+00:47:27,930 --> 00:47:31,006
+嗯，所以我们在这里发现的就是，好的
+Um, and so that's really what we found here is like, okay,
+
+822
+00:47:31,006 --> 00:47:32,970
+它们都漏掉了同样的东西
+they're all missing the same thing.
+
+823
+00:47:33,390 --> 00:47:36,110
+不过它是有用的，并不是说它没用
+So, but it's useful. It's not that it's not useful.
+
+824
+00:47:36,830 --> 00:47:37,990
+它能捕捉到很多东西
+It can catch a lot of things.
+
+825
+00:47:38,630 --> 00:47:43,964
+只是它抓不到一些重要的东西，尤其是那些
+It just won't catch some of the important things and especially those
+
+826
+00:47:43,964 --> 00:47:47,550
+很可能让你产品表现出色的东西
+that are likely to make your product work well.
+
+827
+00:47:47,670 --> 00:47:51,350
+所以你应该想，好的，你所有的竞争对手都会用这个
+And so you should think like, okay, all your competitors are going to be using this.
+
+828
+00:47:51,470 --> 00:47:54,804
+这就像一个基线，你当然可以把
+This is like a baseline of like you can, of course, you can point,
+
+829
+00:47:54,804 --> 00:47:57,635
+Claude 对准你的产品，说找出所有错误
+Claude at your product and say like find all the errors
+
+830
+00:47:57,635 --> 00:47:59,900
+你的竞争对手也会这么做
+and your competitor is going to do that too.
+
+831
+00:48:00,470 --> 00:48:06,409
+所以最终真正重要的是，你能把多少品味注入到
+So the thing that's going to matter at the end is how much taste can you infuse into
+
+832
+00:48:06,409 --> 00:48:11,550
+你的产品里，超越这一层，去定义什么才是好的
+your product beyond that, uh, to, to like, define, like, what is good.
+
+833
+00:48:12,070 --> 00:48:15,495
+所以，嗯，这就是为什么你需要看你的，你的，嗯
+And so, uh, that's why you need to look at your, your, um,
+
+834
+00:48:15,495 --> 00:48:19,591
+你需要看你的数据，我在这里把它写清楚了，嗯
+you need to look at your data and I spelled it out here, um, you know,
+
+835
+00:48:19,591 --> 00:48:23,240
+写清楚，好的，这些就是被漏掉的那类东西
+spell out like, okay, these are the kinds of things missed.
+
+836
+00:48:23,800 --> 00:48:27,862
+比如说，这个例子里的销售异议，这个例子
+For example, you know, sales objections in this example, this example,
+
+837
+00:48:27,862 --> 00:48:29,080
+它是多渠道的
+it was multi channel.
+
+838
+00:48:29,320 --> 00:48:35,760
+所以这个 agent 的客户可以在网页上打字聊天，也可以打电话
+So customers of this particular agent can talk on the web in text, make a phone call.
+
+839
+00:48:37,360 --> 00:48:39,320
+那个，那个评估 agent 不知道这一点
+The. The eval agent didn't know that.
+
+840
+00:48:39,440 --> 00:48:41,798
+所以评估 agent 没有捕捉到，嘿，比如
+So the eval agent didn't catch that, hey, like,
+
+841
+00:48:41,798 --> 00:48:44,640
+我们不该在泰语短信里放 markdown
+we shouldn't be putting markdown in Thai text messages.
+
+842
+00:48:44,760 --> 00:48:46,210
+那行不通。嗯，对
+It doesn't work. Um, yeah.
+
+843
+00:48:46,290 --> 00:48:49,869
+类似这样的事，当然你可以把这个上下文给到 LLM
+So things like that, like, of course you can give this context to the LM,
+
+844
+00:48:49,869 --> 00:48:53,690
+但这不是你一开始就会想到写成标准的东西
+but this is not something you might think about giving as criteria up front.
+
+845
+00:48:53,850 --> 00:48:55,050
+你得先看到那个失败案例
+You have to see that failure.
+
+846
+00:48:55,730 --> 00:49:02,650
+嗯，对，大概就是这个意思。我们还有这个录制内容
+Um, so, so yeah, that's, that's the gist of it. Um, we also, uh, have this recording.
+
+847
+00:49:02,730 --> 00:49:06,810
+呃，其实这段你应该剪掉。总之，大概就这样。就是篇博客文章
+Well, you should actually cut that off. So, um, that's the gist. Just blog post.
+
+848
+00:49:07,270 --> 00:49:08,790
+嗯，好的
+Um, yeah, okay.
+
+849
+00:49:09,470 --> 00:49:11,550
+就是分享一下，说不定有用
+Yeah, just sharing that in case that's useful.
+
+850
+00:49:11,750 --> 00:49:15,188
+好，所以要点是，这些东西能帮你达到一个不错的基线
+Okay, so the takeaway is like this stuff will get you to a good baseline,
+
+851
+00:49:15,188 --> 00:49:18,510
+但如果你要演示你的产品，你就得自己做人工审查
+but if you give a demo of your product, you just do the manual reviews.
+
+852
+00:49:19,310 --> 00:49:20,150
+这就是要点，对吧
+That's the takeaway, right?
+
+853
+00:49:20,790 --> 00:49:22,522
+对，用那些自动化工具
+Yeah, use use the automated tools
+
+854
+00:49:22,522 --> 00:49:25,738
+同时自己也要看数据，就像这是场竞争，对吧
+and also look at data yourself like it's a competition, right?
+
+855
+00:49:25,738 --> 00:49:28,150
+你得比竞争对手做得更好
+You you gotta be better than your competitors.
+
+856
+00:49:29,270 --> 00:49:35,239
+对，所以一个要点是，这些 coding agent 其实，你知道的
+Yeah, so one takeaway is, okay, the coding agents are just as you know,
+
+857
+00:49:35,239 --> 00:49:38,430
+和这些自动化评估工具水平相当
+are at par with these auto eval tools.
+
+858
+00:49:38,510 --> 00:49:43,630
+自动化评估工具唯一的好处是，它们集成到了整个技术栈里
+The only benefit of auto eval tools is they're integrated into the the rest of the stack.
+
+859
+00:49:43,670 --> 00:49:45,430
+对，它们在那个生态系统里
+Like, yeah, they're in the ecosystem.
+
+860
+00:49:45,750 --> 00:49:48,595
+所以如果你把你的 traces 存在 LangSmith 里
+So if you store your daces right, traces in in LangSmith,
+
+861
+00:49:48,595 --> 00:49:50,350
+那你完全应该用 LangSmith
+you should totally use LangSmith.
+
+862
+00:49:50,430 --> 00:49:53,010
+这是理所当然的选择。我明白了
+Like it's a no brainer. I see.
+
+863
+00:49:53,050 --> 00:49:54,942
+我觉得这对我来说是个惊喜
+I think it was pleasantly surprising for me
+
+864
+00:49:54,942 --> 00:49:57,570
+因为我并没有参与写这篇博客，对吧
+because I wasn't involved in writing this blog post, right?
+
+865
+00:49:57,650 --> 00:50:00,770
+所以这算是客观的判断。嗯，我当时是
+So it's humble. Um, I, I was.
+
+866
+00:50:00,810 --> 00:50:05,570
+所以我很高兴地发现，哦，这些现成的工具效果这么好
+So, I was very happy to find that, oh, these, these off the shelf tools work so well.
+
+867
+00:50:05,690 --> 00:50:06,410
+所以很棒
+So it's great.
+
+868
+00:50:06,450 --> 00:50:10,462
+你绝对应该用它们，找出你数据里所有的错误
+Like you should absolutely use them and, and find all the errors in your data,
+
+869
+00:50:10,462 --> 00:50:13,157
+但同时，你也要自己看数据，找更多的错误
+but also, you know, look at your data for more errors
+
+870
+00:50:13,157 --> 00:50:15,539
+也要去看那些错误，比如说
+and also look at the errors that, for example,
+
+871
+00:50:15,539 --> 00:50:18,360
+LangSmith 找出来的，确认一下你是否认同它们
+LangSmith found just to make sure you agree with them.
+
+872
+00:50:18,480 --> 00:50:20,709
+对，因为这些工具的精确率
+Right because the precision on these is,
+
+873
+00:50:20,709 --> 00:50:23,200
+最好情况下大概是 80% 到 90%
+is like 80% to ninety percent in the best case.
+
+874
+00:50:23,600 --> 00:50:28,529
+呃，也就是说，自动化评估工具找出的错误里，有 10% 到 20% 其实
+Uh, so that means 10 to 20% of the errors found by the automated eval tool are
+
+875
+00:50:28,529 --> 00:50:29,960
+并不是错误
+actually not errors.
+
+876
+00:50:30,200 --> 00:50:34,173
+它们像是干扰项，如果你只是盲目采信，可能会扭曲你的产品
+They're like red Herrings and might distort your product if you just listen to
+
+877
+00:50:34,173 --> 00:50:35,640
+对吧
+that automatically, right?
+
+878
+00:50:35,720 --> 00:50:39,110
+所以同时关注召回率和精确率非常重要
+So it's very important to look at both recall and precision.
+
+879
+00:50:39,830 --> 00:50:42,419
+好吧？所以基本上，真正去看这些东西
+Okay? So basically actually looking at stuff is,
+
+880
+00:50:42,419 --> 00:50:44,630
+才是优势所在，就是真正去读、去看
+is the edge actually reading and looking.
+
+881
+00:50:45,190 --> 00:50:45,670
+一直看
+Always looking.
+
+882
+00:50:47,030 --> 00:50:50,328
+对，因为你知道，面对这些 AI 生成的内容
+Yeah, because because like, you know, with all these AI generated stuff,
+
+883
+00:50:50,328 --> 00:50:51,950
+你很容易就放任不管
+you can just like let, let, let it go.
+
+884
+00:50:51,990 --> 00:50:53,434
+但真正去读这些内容
+But like actually reading stuff,
+
+885
+00:50:53,434 --> 00:50:55,189
+这是我从另一位嘉宾那里学到的
+this is what I Learned from another guest
+
+886
+00:50:55,189 --> 00:50:57,510
+就是我必须真正去读它产出的东西
+that I had to just actually read what what it produces.
+
+887
+00:50:58,650 --> 00:51:02,690
+哦，对，是的。甚至有时候对代码来说，这也是一种优势
+Oh, yeah, like, yeah. And even like sometimes with code, that's an edge.
+
+888
+00:51:03,370 --> 00:51:07,130
+对，你有选择地读代码。这绝对是一种优势。酷
+Yeah, you eat selectively code. It's definitely an edge. Cool.
+
+889
+00:51:07,650 --> 00:51:10,650
+好的，那我们来总结一下这一期讲了什么吧
+All right. So why don't we kind of summarize what we covered in this episode?
+
+890
+00:51:10,690 --> 00:51:11,810
+我觉得我们讲了挺多的
+I think we covered a lot.
+
+891
+00:51:12,090 --> 00:51:16,935
+嗯，我觉得我的第一个要点是要真正去用 Shreya 的 skill，因为，呃
+Um, so I think my No. 1 takeaway is to actually use Shreya's skill because, uh,
+
+892
+00:51:16,935 --> 00:51:18,810
+我觉得它相当棒
+I think it's pretty awesome.
+
+893
+00:51:18,930 --> 00:51:23,240
+然后，嗯，给它一堆例子，让它帮你识别，比如说
+And, um, give a bunch of examples and then have it help you identify, like,
+
+894
+00:51:23,240 --> 00:51:25,360
+错误的常见主题，对吧
+the common themes of errors, right?
+
+895
+00:51:25,560 --> 00:51:26,360
+这算是第一点
+That's kind of No. 1.
+
+896
+00:51:26,360 --> 00:51:30,378
+第二点，从你的例子来看，就是用上所有的 coding harness
+And No. 2 from, from your example is like use all the coding harnesses
+
+897
+00:51:30,378 --> 00:51:33,480
+还有那些评估工具，但同时也要真正去读这些内容
+and like the eval stuff, but also just read the stuff.
+
+898
+00:51:34,880 --> 00:51:36,474
+这大概就是我的两个要点。所以，呃
+That's kind of my two takeaways. So, uh,
+
+899
+00:51:36,474 --> 00:51:38,600
+谢谢你们免费分享这么多信息
+thank you for sharing all this information for free.
+
+900
+00:51:38,800 --> 00:51:42,031
+你们能讲讲你们的评估课程里都包含什么吗
+Can you guys talk about what is covered in your eval course that's
+
+901
+00:51:42,031 --> 00:51:45,860
+我们这里没讲到的，或者说更进阶的内容
+that we didn't cover here or like, you know, what was the more advanced stuff.
+
+902
+00:51:46,180 --> 00:51:49,337
+是的，希望你在这里能大致体会到我们的理念，也就是你要如何
+Yeah, so here you hopefully you got a taste of our philosophy of like how you're
+
+903
+00:51:49,337 --> 00:51:51,620
+真正让你的 AI 生成产品脱颖而出
+really gonna differentiate your AI generated product.
+
+904
+00:51:52,100 --> 00:51:56,825
+我们的课程有 5 个模块，为这个 agentic AI 时代做了彻底翻新
+Um, so there's a our our course has 5 modules totally revamped for this era of like
+
+905
+00:51:56,825 --> 00:52:00,986
+所以除了教你错误分析的理念之外
+agentic AI so beyond just teaching you the error analysis philosophy,
+
+906
+00:52:00,986 --> 00:52:02,890
+我们还会教一些内容，比如
+we also teach things like, okay,
+
+907
+00:52:02,890 --> 00:52:05,358
+你要如何真正把这套工作产品化
+how do you really productionize this work
+
+908
+00:52:05,358 --> 00:52:09,660
+并扩展到能在你公司内部运作？比如说，如果你有
+and scale it up to work within your company? For example, like if you have.
+
+909
+00:52:09,660 --> 00:52:13,100
+多个人在做同一个产品，就需要在评估标准上达成一致
+Multiple people working on the same product, I need to align on criteria.
+
+910
+00:52:13,540 --> 00:52:17,060
+你要怎么把这些东西集成进去，比如说 CI/CD
+How do you integrate this stuff into, you know, CICD, for example?
+
+911
+00:52:17,700 --> 00:52:22,900
+你要如何长期监控，比如部署好几个月之后出现的 drift
+Um, how do you monitor over time, like drift over many months of your deployment?
+
+912
+00:52:23,260 --> 00:52:27,400
+我们还有一个关于安全和对抗性评估的模块
+We also have a module on safety and kind of adversarial evaluation.
+
+913
+00:52:27,640 --> 00:52:29,070
+所以这一点真的很重要
+So it's really important, you know,
+
+914
+00:52:29,070 --> 00:52:31,120
+你要如何确保没有泄露租户数据
+how do you make sure you're not leaking tenant data?
+
+915
+00:52:31,240 --> 00:52:33,945
+你要如何确保能够长期对此进行评估
+How do you make sure that you can evaluate that over time,
+
+916
+00:52:33,945 --> 00:52:36,880
+尤其是当你要部署给真实客户的时候
+especially when you want to deploy to your actual customers?
+
+917
+00:52:37,480 --> 00:52:41,095
+最后一个模块讲的全是改进
+Um, and then finally, the last module is all about improvement.
+
+918
+00:52:41,095 --> 00:52:43,960
+也就是成本的改进和准确率的改进
+So it's cost improvement, accuracy improvement.
+
+919
+00:52:44,120 --> 00:52:46,760
+这两者其实是相辅相成的，对吧
+Really those, both of those go hand in hand, right?
+
+920
+00:52:46,760 --> 00:52:48,035
+如果你换成一个更便宜的模型
+If you switch to a cheaper model,
+
+921
+00:52:48,035 --> 00:52:50,160
+你要如何提升这个更便宜模型的准确率
+how do you improve the accuracy of your cheaper model?
+
+922
+00:52:50,240 --> 00:52:52,480
+所以是成本和准确率两方面的改进
+So it's both cost and accuracy improvement.
+
+923
+00:52:53,050 --> 00:52:55,450
+而且说真的，几乎没有别人讲这个，对吧
+Um, and really no one else talks about this, right?
+
+924
+00:52:55,450 --> 00:52:57,396
+拥有 evals 的好处就在于
+If the, the benefit of having evals is
+
+925
+00:52:57,396 --> 00:53:00,410
+你可以把它放进一种自动研究的循环里
+that you can then put put it in a auto research kind of loop.
+
+926
+00:53:00,810 --> 00:53:02,730
+该调用哪些策略呢
+Um, what are the kinds of strategies to invoke?
+
+927
+00:53:02,810 --> 00:53:07,370
+你要如何确保……我们发现，在我们的
+How do you make sure that, you know, you, we found that in, in our, um,
+
+928
+00:53:07,370 --> 00:53:10,790
+咨询案例中，甚至对我们的一些学员来说
+consulting cases or even for some of our students,
+
+929
+00:53:10,790 --> 00:53:16,001
+相比用 Opus，我们真的能把成本降低 100 倍，可能
+we're able to cut cost by 100 x truly compared to um like using Opus or probably
+
+930
+00:53:16,001 --> 00:53:17,630
+用 Sonnet 还能降更多
+Sonnet will be even more.
+
+931
+00:53:18,470 --> 00:53:21,390
+所以我们很兴奋能教大家做到这一点的技巧
+So we're really excited to kind of teach people the techniques to do that.
+
+932
+00:53:21,950 --> 00:53:24,870
+太棒了。我会把课程链接放在简介里
+Awesome. And yeah, I'll put a link to the course in the description.
+
+933
+00:53:25,510 --> 00:53:30,600
+我想从现在起我都会同时采访 Shreya 和 Hamel
+And I think from now on I'm going to interview Shreya and Hamel,
+
+934
+00:53:30,600 --> 00:53:37,550
+绝不单独采访 Hamel，因为这样我学到多得多。是啊，哪怕只有 Shreya 也行。Shreya
+never Hamel by himself, because I Learned a lot more. Yeah, even just Shreya. Shreya.
+
+935
+00:53:39,380 --> 00:53:44,380
+是啊，我现在是全职教育者了。是啊。太厉害了
+Yeah, yeah. I'm a full time educator now, so yeah. Yeah. That's amazing.
+
+936
+00:53:44,420 --> 00:53:46,565
+谢谢你们分享这么多知识
+Thanks for sharing all this knowledge. And yeah,
+
+937
+00:53:46,565 --> 00:53:48,500
+我这就去用你们的 skill
+I'm gonna go off and use your skill right now.
+
+938
+00:53:48,580 --> 00:53:52,500
+看看效果如何。酷。谢谢你邀请我们，Peter。谢谢
+So we'll see how it goes. Cool. Thanks for having us, Peter. Thank you.

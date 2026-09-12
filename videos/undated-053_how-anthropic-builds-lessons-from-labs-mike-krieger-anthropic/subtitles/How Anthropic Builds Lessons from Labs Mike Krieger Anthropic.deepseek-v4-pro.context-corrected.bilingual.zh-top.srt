@@ -1,0 +1,2641 @@
+1
+00:00:12,900 --> 00:00:16,432
+现在上台的是 Instagram 联合创始人
+Joining us on stage is the co-founder of Instagram
+
+2
+00:00:16,432 --> 00:00:20,740
+以及 Anthropic 的 Member of Technical Staff Mike Krieger。
+and a member of technical staff at Anthropic, Mike Krieger.
+
+3
+00:00:36,370 --> 00:00:38,170
+大家怎么样？早上好。
+How's everyone doing? Having a good morning.
+
+4
+00:00:39,290 --> 00:00:39,690
+太好了。
+Nice.
+
+5
+00:00:41,690 --> 00:00:44,250
+Mike，谢谢你刚好及时为我们发布了 Fable。
+Mike, thank you for releasing Fable just in time for us.
+
+6
+00:00:44,770 --> 00:00:46,450
+没错。就是为了这次大会。我们特意安排的。
+Exactly. For the conference. We timed it.
+
+7
+00:00:48,090 --> 00:00:49,530
+我们很高兴你能来。
+We're so glad to have you.
+
+8
+00:00:50,010 --> 00:00:56,690
+你是最杰出的构建者之一，并且在 Anthropic 负责 Labs。你的
+You are one of the preeminent builders, and you're leading labs at Anthropic. How has your
+
+9
+00:00:57,600 --> 00:01:02,080
+模型使用方式，随着你看到这些模型在内部不断成长，发生了什么变化？
+Model usage changed as, as you've, you know, seen models internally grow.
+
+10
+00:01:02,360 --> 00:01:05,800
+是的，对我来说，这既是模型的变化，也是我角色的转变。
+Yeah, I mean, for me, it's been like both the model shift and then my role shift.
+
+11
+00:01:05,880 --> 00:01:09,686
+我在 Anthropic 的头两年是首席产品官，
+So I, for like the first two years I was at Anthropic, I was chief product officer,
+
+12
+00:01:09,686 --> 00:01:12,128
+后来我不断看到大家用这些模型做开发，
+and then I kept seeing people build with the models,
+
+13
+00:01:12,128 --> 00:01:14,855
+我的 FOMO 越来越强，因为我……
+and the FOMO just kept increasing because I was, you know,
+
+14
+00:01:14,855 --> 00:01:18,320
+尽可能多地用模型。但比如在产品策略上，
+using the models as much as possible. But for example, on product strategy.
+
+15
+00:01:18,360 --> 00:01:21,358
+我会写一份策略文档，然后让 Claude 来批判一下
+I would write a strategy doc and then have Claude critique it
+
+16
+00:01:21,358 --> 00:01:23,010
+也许你可以用一套工作流，
+and maybe you can use a workflow,
+
+17
+00:01:23,010 --> 00:01:26,070
+但这跟那种纯粹做开发还是不太一样。
+but it's not quite the same as like building in that pure way.
+
+18
+00:01:26,630 --> 00:01:29,662
+我几乎把所有周末都花在用它开发上，然后我意识到，好吧，
+And I was like spending all my weekends trying to build with it and I realized, okay,
+
+19
+00:01:29,662 --> 00:01:30,760
+我真的需要转变一下。
+I actually just need to shift.
+
+20
+00:01:31,000 --> 00:01:33,520
+这个时期实在太有意思了。而且这其实是一个有趣的趋势。
+It's like way too interesting a time. And it's actually an interesting trend.
+
+21
+00:01:33,640 --> 00:01:38,621
+我已经看到好几个在别处当 CTO 的人，现在加入
+I've seen now like several people that were CTOs at other places are now joining
+
+22
+00:01:38,621 --> 00:01:40,960
+以 IC（个人贡献者）身份加入 Anthropic 和其他公司。
+as ICs at Anthropic and other places.
+
+23
+00:01:41,120 --> 00:01:44,608
+但我也做了角色转变，而且正好是在那段时间
+But I made a role shift, and it was actually right around the time
+
+24
+00:01:44,608 --> 00:01:49,280
+我们开始拿到后来成为 Mythos 和 Fable 的内部快照。
+where we started getting sort of internal snapshots of what became Mythos and Fable.
+
+25
+00:01:49,520 --> 00:01:53,230
+而观察这种转变真正有意思的地方在于，
+And what was really interesting watching that sort of shift was
+
+26
+00:01:53,230 --> 00:01:57,850
+那种变化是，以前我有个想法，我会在脑子里把它拆解
+that kind of change between, I have an idea I'm going to like sort of break it down
+
+27
+00:01:57,850 --> 00:02:00,790
+更多按我平时做工程的方式，
+in my head much more, how I do engineering normally
+
+28
+00:02:00,790 --> 00:02:06,390
+然后一步步迭代；现在则更多转向这种范式：
+and then kind of iterate through these different steps to moving to much more of the paradigm of.
+
+29
+00:02:06,550 --> 00:02:08,929
+我描述目标，然后让它去继续干活
+I'm going to describe the goal like go off and work on it
+
+30
+00:02:08,929 --> 00:02:11,571
+然后我们可以聊聊你做了哪些取舍，
+and then like we can talk about what trade-offs you, you know,
+
+31
+00:02:11,571 --> 00:02:13,263
+过程中会提出一些问题，
+surface some questions along the way,
+
+32
+00:02:13,263 --> 00:02:16,170
+然后再看你做到了哪一步，以及接下来可以怎么走。
+but then figure out where you landed and where we can go from there.
+
+33
+00:02:16,610 --> 00:02:17,250
+我发现这很难。
+I find it's hard.
+
+34
+00:02:17,290 --> 00:02:19,257
+不知道大家有没有这种体验
+I don't know if people have this experience
+
+35
+00:02:19,257 --> 00:02:21,770
+Fable 才刚重新开放几天。
+where Fable's only been reenabled for a couple of days.
+
+36
+00:02:21,930 --> 00:02:23,652
+Fable 肯定比我聪明太多太多，
+Fable's definitely way, way smarter than me,
+
+37
+00:02:23,652 --> 00:02:26,370
+所以有时它干完活儿会说：这是我做的取舍。
+so sometimes it'll finish work and be like, here's the trade-offs I made.
+
+38
+00:02:26,410 --> 00:02:29,664
+我就会说，你能不能把我当成比你笨一点的人，解释给我听
+I'm like, can you explain it to me like I'm a little dumber than you are
+
+39
+00:02:29,664 --> 00:02:32,290
+因为我需要你帮我拆解一下。
+because I need you to like sort of break this down for me.
+
+40
+00:02:32,530 --> 00:02:35,520
+但这是一个比较大的变化，从
+But that's been one sort of big change is sort of moving from
+
+41
+00:02:35,520 --> 00:02:39,730
+任务委派，转向描述最终状态，然后让它自己打磨推进。
+that task delegation to like express the end state and then have it go and cook on it.
+
+42
+00:02:40,260 --> 00:02:43,140
+是啊，我们都在学习如何更好地委派任务。
+Yeah, we're all learning how to delegate better.
+
+43
+00:02:43,740 --> 00:02:45,500
+Tariq 昨天帮了我们一个大忙。
+Tariq did us a huge favor yesterday.
+
+44
+00:02:47,220 --> 00:02:48,860
+我是不是希望明天在报道里看到这件事？
+Do I want to read it in the newspaper?
+
+45
+00:02:49,540 --> 00:02:54,700
+你知道，我们现在已经有演讲的文字报道了，就像第二天见报一样。
+It's, you know, that we have, we have write-ups of talks now in like the next day's newspaper.
+
+46
+00:02:54,940 --> 00:02:56,300
+他说要大胆提出高要求。
+He said be unreasonable.
+
+47
+00:02:57,100 --> 00:03:01,480
+具体体现在哪些方面？比如你的 prompting 是不是更有野心了？这个说法我很喜欢。
+In what ways? You know, have you been more ambitious? Yeah. Your prompting. I love that.
+
+48
+00:03:01,680 --> 00:03:04,800
+我喜欢这个说法。我们今天刚好就碰到了这种情况。
+I mean, I love that framing. We actually just hit this today.
+
+49
+00:03:05,360 --> 00:03:07,880
+我在 Labs 遇到的一个问题，是内部产品。
+One of the lab's issues I have is internal product.
+
+50
+00:03:08,440 --> 00:03:12,359
+有人说，嘿，它没按我想要的方式工作
+And somebody was like, hey, it doesn't work the way I want it to
+
+51
+00:03:12,359 --> 00:03:14,280
+你能做些修改吗？
+and can you make some changes?
+
+52
+00:03:14,400 --> 00:03:17,680
+我意识到我直接去找 Claude 做这件事就行。
+And I realized I'm just going to go ask Claude to do this.
+
+53
+00:03:17,680 --> 00:03:20,200
+我就说，你为什么不直接问 Claude？而且这还是位非技术背景的人。
+Like, why don't you ask Claude? And this was a non-technical person.
+
+54
+00:03:20,600 --> 00:03:23,640
+所以我真的认为，无论是整个行业，还是产品团队，
+And so I actually think as an industry or even as a product team,
+
+55
+00:03:23,640 --> 00:03:26,680
+我们都需要教大家更大胆地使用它。
+we have to teach people to be more unreasonable in their usage.
+
+56
+00:03:26,720 --> 00:03:28,610
+这有点难以想象。
+And it's sort of hard to imagine.
+
+57
+00:03:28,770 --> 00:03:32,206
+我想，如果我能稍微岔开一下聊聊产品设计，
+I think that, that if I can digress for a second on product design,
+
+58
+00:03:32,206 --> 00:03:35,706
+我觉得现在的第一代 AI 产品，
+I think right now the like kind of first generation of AI products,
+
+59
+00:03:35,706 --> 00:03:38,252
+我们把它们限制得太死，限制了它们
+we put them too much in a box and constrain their,
+
+60
+00:03:38,252 --> 00:03:41,370
+对工具的访问，或者说自由度。
+their sort of access to tools or kind of degrees of freedom.
+
+61
+00:03:41,570 --> 00:03:44,798
+这意味着，当你想大胆提出高要求时，就难得多，对吧——
+Which means it was much harder to be unreasonable, right, when you say,
+
+62
+00:03:44,798 --> 00:03:47,370
+“帮我做这件事”，然后它会说：“哦，我做不到。”
+do this thing for me and then it would be like, oh, I can't.
+
+63
+00:03:47,650 --> 00:03:50,490
+我最多只能写代码，但没法真正运行它。
+I can barely, like, I can write code, but I can't really run it.
+
+64
+00:03:50,490 --> 00:03:52,890
+或者我能稍微查看一下自己的环境，但也不是真的。
+Or I can kind of introspect my environment, but not really.
+
+65
+00:03:53,420 --> 00:03:57,259
+嗯，我觉得当你看到我们自己产品的演进，甚至包括像
+Um, and I think as you see our own like product progression even with things like
+
+66
+00:03:57,259 --> 00:03:59,934
+Claude for Work，比如，你知道，是不是每一个
+Claude for Work, where like, you know, does every single like,
+
+67
+00:03:59,934 --> 00:04:02,900
+知识工作者都需要一个能写 bash 的虚拟机？
+knowledge worker need a virtual machine that can write bash?
+
+68
+00:04:03,060 --> 00:04:04,700
+表面上来看，不是。
+Like on the face of it, no.
+
+69
+00:04:04,700 --> 00:04:08,425
+但接着你意识到，哦，那样它其实能修复一个问题，比如，哦，
+But then when you realize, oh, actually that way it can remediate an issue where, oh,
+
+70
+00:04:08,425 --> 00:04:10,660
+我试着用我们内置的 PDF 解析器解析一个 PDF。
+I tried to parse a PDF using our built in PDF parser.
+
+71
+00:04:10,700 --> 00:04:13,420
+我昨天就遇到这种情况，它说，哦，我没法这样解析。
+I hit this yesterday and it was like, oh, I can't parse it this way.
+
+72
+00:04:13,500 --> 00:04:16,260
+那好吧，我大概也可以写个脚本来做这件事。
+Well, okay, well, I can probably write a script that can do this as well.
+
+73
+00:04:16,460 --> 00:04:17,920
+嗯，我觉得就是这样。
+Um, I think that's it.
+
+74
+00:04:18,000 --> 00:04:21,816
+不过我做过最大胆的一件事，是一个我用 Python 写的 Labs 项目，
+My most unreasonable thing though was one of our labs projects I wrote in Python,
+
+75
+00:04:21,816 --> 00:04:23,240
+让我特别珍视。
+like near and dear to my heart.
+
+76
+00:04:23,280 --> 00:04:27,653
+整个 Instagram 都是用 Python 写的。我觉得他们现在终于把它迁移到 PHP，
+All of Instagram is in Python. I think they're finally converting it to PHP now
+
+77
+00:04:27,653 --> 00:04:29,200
+因为他们有模型了。
+that they have like models.
+
+78
+00:04:29,400 --> 00:04:30,320
+天哪，我知道。
+Oh god, I know.
+
+79
+00:04:31,840 --> 00:04:32,200
+Tokens。
+Tokens.
+
+80
+00:04:32,600 --> 00:04:35,271
+嗯，而且，呃，在部署时，我意识到 Claude Code
+Um, and, uh, for deployment, I realized that Claude Code,
+
+81
+00:04:35,271 --> 00:04:38,610
+找到了一个更好的用 Bun 部署的方案，我就想，好吧，
+like figured out a better deployment story with Bun and I was like, okay,
+
+82
+00:04:38,610 --> 00:04:41,560
+我需要把整个东西从 Python 移植到 TypeScript。
+I need to port this whole thing from Python to TypeScript, like.
+
+83
+00:04:41,560 --> 00:04:45,353
+就像，你知道，如果我以 2010 年代工程师的视角，甚至 2020 年代初的视角来看，
+As a, you know, if I put on my like 2010s engineering hat or even my early 2020s,
+
+84
+00:04:45,353 --> 00:04:46,520
+那真是个蠢主意。
+like that's a dumb idea.
+
+85
+00:04:46,560 --> 00:04:48,623
+谁会去移植，尤其在那种情况下，你知道，
+Like, who would ever port like at that point, you know,
+
+86
+00:04:48,623 --> 00:04:50,320
+几十万行代码呢？
+a couple hundred thousand lines of code?
+
+87
+00:04:50,790 --> 00:04:52,933
+嗯，但我想，现在这事是可行的
+Um, but I was like, I think this is doable now
+
+88
+00:04:52,933 --> 00:04:55,553
+我基本上创建了一套动态工作流
+and I basically created this dynamic workflow setup
+
+89
+00:04:55,553 --> 00:04:59,542
+然后整个周末都在移植整个东西，验证、反复检查，
+and over the weekend had to port the whole thing, like verify it, double check it,
+
+90
+00:04:59,542 --> 00:05:01,030
+然后像这样通读两份代码。
+then read both code like this.
+
+91
+00:05:01,150 --> 00:05:02,898
+基本上就是反复折腾、折腾、再折腾，
+Basically churn and churn and churn,
+
+92
+00:05:02,898 --> 00:05:07,070
+然后周一回来，工作流已经完成，就是那东西的移植版。
+and then came back Monday to a completed workflow that was a ported version of that thing.
+
+93
+00:05:07,150 --> 00:05:10,538
+所以这大概算得上更大胆的事情之一了，对，
+So that probably ranks on like the more unreasonable things like, yeah,
+
+94
+00:05:10,538 --> 00:05:13,814
+就是把整个 Python 代码库移植到 TypeScript，让它能工作，
+just port this entire Python code base to TypeScript, get it working,
+
+95
+00:05:13,814 --> 00:05:15,790
+并在一个周末内让它可部署。
+get it deployable in, you know, a weekend.
+
+96
+00:05:16,340 --> 00:05:19,700
+对，我的意思是，很多人在讨论 Bun 从 Zig 到 Rust 的迁移。
+Yeah, I mean, a lot of people are talking about the, the Bun Zig-to-Rust.
+
+97
+00:05:20,100 --> 00:05:20,660
+对，那个版本。
+Yeah, version.
+
+98
+00:05:21,060 --> 00:05:25,168
+我觉得很多人也会说，它是个编译器，是个运行时，
+I think a lot of people are also like, well, it's a compiler, it's a, it's a runtime,
+
+99
+00:05:25,168 --> 00:05:26,860
+它有很多测试，容易做。
+it's got lots of tests, easy to do.
+
+100
+00:05:27,260 --> 00:05:32,700
+你能像那样把 Instagram 移植到 PHP 吗？你对它熟得很。
+Can you port Instagram, which you would know very well, to PHP like that?
+
+101
+00:05:32,740 --> 00:05:34,100
+像一个产品那样？对。
+Like a, like a product? Yeah.
+
+102
+00:05:34,100 --> 00:05:37,580
+我的意思是，产品那一面，我甚至不知道是更容易还是更难。
+I mean, I think the product side of it, it's even, I don't know, easier or harder.
+
+103
+00:05:37,620 --> 00:05:40,397
+我们在 Instagram 做的一件事，是在 Python 3 发布的时候，
+One of the things we did at Instagram, this is when Python 3 came out,
+
+104
+00:05:40,397 --> 00:05:42,530
+我们第一次能加类型提示。
+and we were able to add type hints for the first time.
+
+105
+00:05:42,530 --> 00:05:44,816
+当时人们有很多内部讨论，比如，
+And it was, people had a lot of internal conversations like,
+
+106
+00:05:44,816 --> 00:05:46,370
+我们会不会在 Python 上后劲不足？
+are we going to run out of steam on Python?
+
+107
+00:05:46,730 --> 00:05:48,414
+我的观点一直是，
+And my perspective was always like,
+
+108
+00:05:48,414 --> 00:05:50,995
+我觉得我们可以把它推得比我们想象中远得多，
+I think we can take this way further than we think we can,
+
+109
+00:05:50,995 --> 00:05:53,970
+但我认为类型会帮助我们，不让自己挡自己的路。
+but I think types are going to help us not sort of be in our own way.
+
+110
+00:05:54,490 --> 00:05:57,727
+我们做了一件事叫 MonkeyType，基本上就是，
+And we built this thing called MonkeyType, where we basically, like,
+
+111
+00:05:57,727 --> 00:06:00,016
+捕获运行时类型，基本上就是那些
+captured runtime type, like basically the types
+
+112
+00:06:00,016 --> 00:06:03,420
+生产环境实际使用到的类型，然后把它们映射回，
+that were actually getting used in production and then map those back to,
+
+113
+00:06:03,420 --> 00:06:04,760
+代码库中的类型。
+to the types in the code base.
+
+114
+00:06:04,840 --> 00:06:07,067
+我觉得正是由于这种模式，
+And I think because of that sort of pattern,
+
+115
+00:06:07,067 --> 00:06:09,603
+有很多很有意思的方式，
+I think there's really interesting ways in which
+
+116
+00:06:09,603 --> 00:06:13,314
+如果你用 LLM 做某种转换或某种交叉编译，
+if you're doing sort of conversion or sort of cross compiling using LLMs,
+
+117
+00:06:13,314 --> 00:06:17,520
+你还可以更多地依赖生产数据，或者做某种分段测试。
+you can also lean on production data a lot more or run sort of like segmented tests.
+
+118
+00:06:17,600 --> 00:06:20,120
+我觉得这里有很多可以做的事情。
+I think that like there's a lot of things you can do there.
+
+119
+00:06:20,120 --> 00:06:22,760
+但没错，我觉得那里也是没有上限的。
+But yeah, I think it's, I mean, the sky's the limit there as well.
+
+120
+00:06:22,760 --> 00:06:24,956
+我觉得最难的部分总是找到边界……
+I think the hardest part is always finding the boundary around
+
+121
+00:06:24,956 --> 00:06:27,827
+你可以从增量开始做，而不是想一口气做完所有事
+where you can start doing it incrementally without trying to boil the whole ocean
+
+122
+00:06:27,827 --> 00:06:28,840
+然后一夜之间全部换掉。
+and, like swap it overnight.
+
+123
+00:06:29,320 --> 00:06:31,280
+是的，用户最终就是你的测试。
+Yeah, I mean, your users are your test ultimately.
+
+124
+00:06:31,400 --> 00:06:35,695
+而且我还在另一篇演讲报道里读到，你可以直接
+And, you know, I also read another article in the newspaper about how you can just
+
+125
+00:06:35,695 --> 00:06:40,055
+使用灰度发布，有时你并不真的知道将来需要它做什么，
+use rollouts and sometimes you don't really know what you're going to need it for,
+
+126
+00:06:40,055 --> 00:06:44,414
+但一旦有那种能让你实验并逐步推出的基础设施，
+but when that infrastructure exists for you to experiment and to roll things out,
+
+127
+00:06:44,414 --> 00:06:45,440
+它能带来太多可能性。
+it enables so much.
+
+128
+00:06:45,670 --> 00:06:47,430
+是的，我一直觉得这是我们得到过的建议。
+Yeah, I mean, I always found this was advice we got.
+
+129
+00:06:47,470 --> 00:06:50,422
+就像我们上线 Instagram 时，第一个星期一切就
+It's like we launched Instagram and it happened to be the first week everything
+
+130
+00:06:50,422 --> 00:06:53,550
+都崩溃了，因为我们当时在后端方面真的不太清楚自己在做什么。
+melted because we didn't really know what we were doing on the back end side of things.
+
+131
+00:06:54,030 --> 00:06:56,687
+很巧的是，那个星期有一次午餐
+And coincidentally, that week, there was like a lunch
+
+132
+00:06:56,687 --> 00:06:59,699
+是我们一位投资人安排的，甚至不是为我们安排的，
+that one of our investors just scheduled like not even for us,
+
+133
+00:06:59,699 --> 00:07:01,470
+只是一场基础设施主题的午餐。
+it was just an infrastructure lunch.
+
+134
+00:07:01,670 --> 00:07:02,510
+我们后来就……
+And we ended up spending.
+
+135
+00:07:02,670 --> 00:07:04,441
+完全霸占了那场对话
+We totally like monopolized that conversation
+
+136
+00:07:04,441 --> 00:07:07,230
+因为每个人对我们如何解决扩展问题都有自己的看法。
+because everybody had their own opinion about how we could fix our scaling.
+
+137
+00:07:07,950 --> 00:07:10,924
+而我在那里得到的两条建议，大概是在 2010 年
+And like the two pieces of advice I got there in like 2010
+
+138
+00:07:10,924 --> 00:07:13,202
+我至今都会一直记住的是，嗯，
+that I like will forever retain is like, um,
+
+139
+00:07:13,202 --> 00:07:15,544
+基本上就是，提前测量所有东西
+like basically like pre-measure everything
+
+140
+00:07:15,544 --> 00:07:17,822
+哪怕你只是隐约觉得可能会用到
+that you think you might even remotely need
+
+141
+00:07:17,822 --> 00:07:21,808
+因为最糟糕的是发生故障时，你会想，这到底是
+because the worst thing is an outage where you're like, well, is this, like,
+
+142
+00:07:21,808 --> 00:07:23,960
+正常数字还是偏高？然后就，哦。
+number normal or is it high? And like, oh.
+
+143
+00:07:23,960 --> 00:07:26,360
+我不知道，因为我刚加上这个指标之前根本没有数据。
+I don't know because I don't have data until I just added this metric.
+
+144
+00:07:26,480 --> 00:07:29,400
+另一条是认真对待各种配置项和功能开关。
+And the other one is being like really thoughtful about knobs and feature flags.
+
+145
+00:07:29,480 --> 00:07:32,326
+所以即使在早期 Instagram，我们有一套非常，呃，
+So even, you know, early Instagram, we had like, a very, uh,
+
+146
+00:07:32,326 --> 00:07:34,011
+简单但非常有效的，
+simple but really effective like,
+
+147
+00:07:34,011 --> 00:07:37,961
+方式来做逐步放量、灰度发布，以及动态配置，
+way in which you could do like ramp-ups and rollouts and dynamic config too where,
+
+148
+00:07:37,961 --> 00:07:41,040
+当时很多运行时配置都需要修改。
+you know, a lot of our runtime configurations had to be changed.
+
+149
+00:07:41,160 --> 00:07:43,400
+要在几秒内完成，这样我们才能应对负载
+You know, in a matter of seconds so that we could handle load
+
+150
+00:07:43,400 --> 00:07:46,280
+而能够以一等公民的方式做到这一点，真的非常重要。
+and being able to like do that in a first-class way was, was really important.
+
+151
+00:07:46,440 --> 00:07:48,570
+我在 AI 领域也明显看到这一点，
+I'm seeing that definitely in AI as well where, you know,
+
+152
+00:07:48,570 --> 00:07:50,657
+我们做各种不同的权衡，而拥有
+we're making all sorts of different trade-offs and having
+
+153
+00:07:50,657 --> 00:07:52,440
+那种运行时配置能力是超级关键的。
+that kind of runtime configuration is super key.
+
+154
+00:07:52,480 --> 00:07:55,373
+是的，顺便说一句，我最喜欢的 Instagram 扩展故事，
+Yeah, my my favorite scaling story for Instagram, by the way,
+
+155
+00:07:55,373 --> 00:07:58,720
+我记得是你们上线那天，用邮件把自己 DDoS 了。
+I think it's like your launch day when you DDoS yourself with email.
+
+156
+00:07:58,960 --> 00:07:59,280
+是的。
+Yes.
+
+157
+00:08:00,200 --> 00:08:02,960
+如果还没看过这个故事，大家可以去搜一下。
+Which people should look up that story if you haven't seen it.
+
+158
+00:08:03,400 --> 00:08:04,640
+我想深入聊聊 tag。
+I wanted to go into tag.
+
+159
+00:08:05,720 --> 00:08:09,760
+非常非常大的转变。今天你们有百分之六十几的代码是这么写出来的。
+Very, very major shift. It's how 60-something percent of your code is written today.
+
+160
+00:08:11,240 --> 00:08:15,186
+这和你刚才说的那些非常动态的东西怎么协调？
+How did you square that with everything you just said where it's like very dynamic,
+
+161
+00:08:15,186 --> 00:08:18,560
+比如你实际发布的不是一个应用，而是带 3000 个功能开关的应用。
+like you don't actually ship one app, you ship one app with 3,000 flags.
+
+162
+00:08:18,800 --> 00:08:20,910
+是的。就像是，你今天在做什么？我不知道。
+Yeah. And like, well, what are you working on today? I don't know.
+
+163
+00:08:20,910 --> 00:08:24,070
+就像，它是为这部分人群准备的。是的，是的。
+Like, it's, it's for this segment of the population. Yeah. Yeah.
+
+164
+00:08:24,070 --> 00:08:27,190
+我觉得这涉及很多方面。比如，我之前非常兴奋。
+I mean, I think it's a bunch of things. So like I was really excited.
+
+165
+00:08:27,310 --> 00:08:29,643
+我之前和 Swyx 聊过，我真的非常兴奋
+I was talking to Swyx earlier, like I'm really excited
+
+166
+00:08:29,643 --> 00:08:32,910
+因为我们已经把 tag 公开出来了，而这正是我们一直以来的工作方式。
+that we have tag out there because it is uh how we've been working for a while.
+
+167
+00:08:33,030 --> 00:08:36,150
+我上台时，人们会问：你在 Anthropic 是怎么工作的？
+And I would get up on stages and people be like, how do you work at Anthropic?
+
+168
+00:08:36,270 --> 00:08:40,409
+我就会说，哦，对，我们用的这些东西不完全是 Claude Code，
+And I'd be like, oh, yeah, we use these things that are not quite Claude Code,
+
+169
+00:08:40,409 --> 00:08:43,373
+但你知道，呃，但很难描述，不过我的意思是，
+but, you know, uh, but it's hard to describe it, but I mean,
+
+170
+00:08:43,373 --> 00:08:45,350
+如果你真能进 Anthropic 里看一眼。
+if you, like, got to poke into Anthropic.
+
+171
+00:08:45,470 --> 00:08:46,230
+你会看到。
+Like you would see.
+
+172
+00:08:47,040 --> 00:08:50,528
+当然，Claude Code 会用在更交互式的事情上，或者
+Of course, Claude Code usage for things that are like more interactive or
+
+173
+00:08:50,528 --> 00:08:53,726
+如果你在针对某个非常具体的东西反复迭代
+if you're kind of iterating on a particular sort of specific thing
+
+174
+00:08:53,726 --> 00:08:57,040
+你需要大量高频率的来回交流。
+where you want a lot of like the high sort of bandwidth back and forth.
+
+175
+00:08:57,160 --> 00:08:59,680
+但大多数使用其实更像是在委派任务。
+But most usage is actually much more delegating.
+
+176
+00:09:00,540 --> 00:09:03,660
+通过打 tag，通过 tag。你可以说，比如，这里就是……
+Via tagging. And via tag. And you can say like, here's the.
+
+177
+00:09:03,700 --> 00:09:06,180
+它真正有趣的地方在于它的多人协作属性。
+And the reason it's really interesting is how multiplayer it is.
+
+178
+00:09:06,180 --> 00:09:08,969
+这让我有点想起 Midjourney，
+And it reminds me sort of, of like actually like Midjourney,
+
+179
+00:09:08,969 --> 00:09:12,762
+大家都在 Discord 上看别人怎么使用它，
+like the fact that everybody was on Discord seeing how other people were using it,
+
+180
+00:09:12,762 --> 00:09:14,938
+我觉得这实际上，回到你之前的问题，
+I think it actually, to your earlier question,
+
+181
+00:09:14,938 --> 00:09:17,448
+这真的有助于那种不切实际或雄心。
+It really helps with that unreasonableness or ambition.
+
+182
+00:09:17,448 --> 00:09:20,460
+就像你第一次看到有人 @ Claude，然后说“嘿”。
+Where the first time you see somebody tag Claude and be like, "Hey."
+
+183
+00:09:20,580 --> 00:09:22,227
+你知道，别只是修复这个 bug，
+You know, don't just fix this bug,
+
+184
+00:09:22,227 --> 00:09:25,226
+而是现在你要负责代码库的这一部分
+but like now you are responsible for this part of the code base
+
+185
+00:09:25,226 --> 00:09:28,990
+我希望你监控这个反馈渠道，并主动承担任务
+and I want you to monitor this feedback channel and proactively take on tasks
+
+186
+00:09:28,990 --> 00:09:32,460
+然后修复它们，再比如，如果这个 API 变了，也要去处理。
+and then fix them and then also take like, you know, if this API changes.
+
+187
+00:09:32,580 --> 00:09:34,753
+就去做。就像我看到有人这样做，我心想，哦等一下，
+Do that. Like I saw somebody, I was like, oh, wait,
+
+188
+00:09:34,753 --> 00:09:36,820
+我完全没充分利用这个东西。
+I've been totally underutilizing this thing.
+
+189
+00:09:36,940 --> 00:09:39,500
+我只是把它当成 Slack 里的加强版 Claude Code 来用。
+I've just been using it as, like, a glorified Claude Code in Slack.
+
+190
+00:09:39,540 --> 00:09:43,980
+那绝对是一种，算是全新的版本，对吧？
+Like that's definitely a totally, like, a sort of new version of it, right?
+
+191
+00:09:43,980 --> 00:09:47,066
+而更进阶的版本是真正开始把它看作
+And then the more advanced version is really trying to start thinking of it
+
+192
+00:09:47,066 --> 00:09:49,368
+一个实际上能保持上下文的队友
+as a teammate that actually sort of holds context,
+
+193
+00:09:49,368 --> 00:09:50,780
+有记忆，而且能主动行动。
+has memory and can be proactive.
+
+194
+00:09:50,900 --> 00:09:53,880
+这真的改变了我们内部的运作方式。
+And that's just really changed how we operate internally.
+
+195
+00:09:53,960 --> 00:09:58,890
+这更像是一种多人、异步、主动的方式，而不是，你知道，
+It's much more like this multiplayer, async, proactive way than it is, you know,
+
+196
+00:09:58,890 --> 00:10:00,920
+大多数人各自待在自己的 CLI 里。
+most people off in their own CLIs.
+
+197
+00:10:01,600 --> 00:10:05,969
+你们会被代码审查和 Git 卡住吗？显然有 Claude review，
+Are you bottlenecked by code review and Git? Obviously there is Claude review,
+
+198
+00:10:05,969 --> 00:10:08,120
+但通常还是有人会看一眼。
+but someone usually still looks at it.
+
+199
+00:10:08,240 --> 00:10:11,227
+有没有可能你直接把它合入？是啊，我们——
+Is there a world in which you just merge it in? Yeah, we're,
+
+200
+00:10:11,227 --> 00:10:12,720
+这是个很好的问题。
+It's a really good question.
+
+201
+00:10:13,600 --> 00:10:15,737
+我们在审查上确实仍然存在瓶颈，
+We are definitely still bottlenecked on reviews,
+
+202
+00:10:15,737 --> 00:10:18,790
+尤其是那些涉及一些架构部分的事情
+especially for things that are, like, touching some architecture pieces
+
+203
+00:10:18,790 --> 00:10:22,453
+而且实际上比只是审查瓶颈更微妙，因为那是，
+and it's actually more subtle than just being bottlenecked on review because that's,
+
+204
+00:10:22,453 --> 00:10:24,590
+你知道，好吧，我们可以重新安排时间。
+you know, okay, we can carve out time differently.
+
+205
+00:10:24,630 --> 00:10:30,400
+瓶颈在于人脑甚至难以完整理解我们正在做的事。
+It's like bottlenecked on human ability to even, like, fully conceptualize what we're doing.
+
+206
+00:10:30,480 --> 00:10:33,016
+所以我们做 Claude Code artifacts 的原因之一
+So one of the reasons we built Claude Code artifacts
+
+207
+00:10:33,016 --> 00:10:35,915
+我们几周前发布了它，部分就是为了这个，
+that we shipped a couple weeks ago was partially for that,
+
+208
+00:10:35,915 --> 00:10:39,840
+也就是，你给某人发一个 PR，然后他们会说，“老兄，我不确定。”
+which is you would send somebody a PR and then they'd be like, "I don't know, man."
+
+209
+00:10:39,840 --> 00:10:43,240
+这差不多有 2000 行代码。对我来说，它看起来就是代码。
+This is like 2,000 lines of code. Like, it looks like code to me.
+
+210
+00:10:43,640 --> 00:10:46,324
+而我们开始做的是分享更多信息。比如，
+And what we started doing instead is sharing much more. Like,
+
+211
+00:10:46,324 --> 00:10:47,640
+这就是 Claude Code artifact。
+Here's a Claude Code artifact.
+
+212
+00:10:47,760 --> 00:10:51,120
+比如，这里是解释，这里是这次改动的意图。
+Like, here's the explanation, here's the intention of the change.
+
+213
+00:10:51,570 --> 00:10:52,810
+这里是做过的权衡。
+Here's the trade-offs that were made.
+
+214
+00:10:52,810 --> 00:10:56,829
+而且我认为这会越来越成为我们沟通的方式，
+And like I think that's going to much more be the trend by which we communicate,
+
+215
+00:10:56,829 --> 00:11:00,601
+也就是说，代码最终可以通过某些手段来验证，
+which is the code is ultimately, you know, verifiable using some things,
+
+216
+00:11:00,601 --> 00:11:03,260
+但实际上，讨论意图和权衡
+but actually, like, discussing intent and trade-offs
+
+217
+00:11:03,260 --> 00:11:07,403
+然后在生产中衡量，我认为至少是发展的方向。
+and then measuring in production is, I think, at least the direction of travel.
+
+218
+00:11:07,403 --> 00:11:08,330
+我们已经，已经有了。
+We've, we've got.
+
+219
+00:11:08,530 --> 00:11:10,330
+我收到 pull request 时并不会亲自审查。
+It—I don't review when I get a pull request.
+
+220
+00:11:10,410 --> 00:11:13,010
+我希望我能说每一行代码我都审查过。我肯定没有。
+I wish I could say I've reviewed every line of code. I definitely do not.
+
+221
+00:11:13,090 --> 00:11:15,750
+实际上我会跟 Claude 讨论这些代码，说，好吧，
+I've, like, actually talked to Claude about the code to say, all right,
+
+222
+00:11:15,750 --> 00:11:17,450
+比如这些是我会有疑问的地方。
+like these are the questions that I would have.
+
+223
+00:11:17,450 --> 00:11:20,544
+你能去查一下吗？所以这有点像由 Claude 驱动的代码审查，
+Can you go investigate it? So it is kind of Claude-powered code review,
+
+224
+00:11:20,544 --> 00:11:21,630
+但仍是人类主导的。
+but still human driven.
+
+225
+00:11:21,630 --> 00:11:23,882
+而对于真正重要的那些，以及那些
+And for the really important ones and for the ones
+
+226
+00:11:23,882 --> 00:11:25,694
+只是外观视觉改动的内容，
+that are like cosmetic visual changes,
+
+227
+00:11:25,694 --> 00:11:28,990
+更多是像“如果需要，我们后面再修”的感觉。
+it's much more like, "Look, we'll fix forward if we need to fix forward."
+
+228
+00:11:30,190 --> 00:11:33,270
+是的，完全同意。我觉得这里的很多人也在试图弄清楚这一点。
+Yeah, totally. I think a lot of people here are trying to figure that out, too.
+
+229
+00:11:34,070 --> 00:11:37,590
+我还想稍微聊聊 Anthropic Labs 整体是怎么运作的。
+I wanted to talk also a little bit about Anthropic Labs in general.
+
+230
+00:11:38,510 --> 00:11:42,849
+Nilay Patel，你可能见过他，喜欢问这样的问题，
+Nilay Patel, who you've probably met before, loves to ask the question like,
+
+231
+00:11:42,849 --> 00:11:43,870
+画一下组织架构图。
+draw the org chart.
+
+232
+00:11:44,030 --> 00:11:45,120
+是啊，怎么画？
+Yeah, like how?
+
+233
+00:11:45,200 --> 00:11:49,062
+就像，你知道，你的组织架构会体现在你交付的东西里，我觉得这很重要，
+Like, people, you know, you ship your org chart—like, I think it's important, like,
+
+234
+00:11:49,062 --> 00:11:50,560
+现在大家都知道 Claude Code。
+everyone knows Claude Code now.
+
+235
+00:11:50,600 --> 00:11:51,600
+你们还有 Tag。
+You've got Tag.
+
+236
+00:11:53,000 --> 00:11:54,400
+你们是怎么组织 Labs 的？
+How are you structuring the Labs?
+
+237
+00:11:54,640 --> 00:11:59,189
+是啊，好问题，因为我们一直在纠结的是，你希望
+Yeah, it's a good question because what we were trying to wrestle with was you want
+
+238
+00:11:59,189 --> 00:12:02,400
+某种程度上让人们得到支持，比如，你知道，我认为那个——
+sort of people to be supported, like, you know, I think the—
+
+239
+00:12:02,480 --> 00:12:05,320
+工程经理这一职能的消亡被严重夸大了。
+The death of the engineering manager discipline has been greatly exaggerated.
+
+240
+00:12:05,360 --> 00:12:08,948
+我认为仍然有很多辅导和人际关系的部分。
+Like I think there's still a lot of coaching and interpersonal pieces
+
+241
+00:12:08,948 --> 00:12:12,783
+以及个人成长，我仍然觉得非常重要，
+and personal development that I think is still really, really important,
+
+242
+00:12:12,783 --> 00:12:14,577
+但尤其是在 Labs 这种团队里，
+but especially in a labs type group
+
+243
+00:12:14,577 --> 00:12:18,721
+我们的整个节奏是两周一次评审，每个项目都要上会，
+where like our whole cadence is two-week reviews where every project goes up for,
+
+244
+00:12:18,721 --> 00:12:22,000
+我们称之为“继续推进还是转向”。基本上每个项目都要拿出来，
+we call it persevere or pivot. So basically every project is up.
+
+245
+00:12:22,000 --> 00:12:22,400
+接受评审。
+For review.
+
+246
+00:12:22,440 --> 00:12:26,079
+然后要么是时候继续推进、坚持下去，要么，
+And either it's time to, you know, keep going, persevering or, you know,
+
+247
+00:12:26,079 --> 00:12:28,020
+是时候转向，甚至直接关掉。
+it's time to pivot it or even shut down.
+
+248
+00:12:28,140 --> 00:12:32,340
+而且我们基本上每个周期都会关掉项目。
+And, you know, we shut down projects basically every single one of those cycles.
+
+249
+00:12:32,340 --> 00:12:34,904
+你做得越多，就越不会觉得“哦，不，
+And it's like the more you do it, the less it's just like, oh, no,
+
+250
+00:12:34,904 --> 00:12:35,940
+我的项目被关掉了。”
+my project has shut down.
+
+251
+00:12:35,980 --> 00:12:36,380
+我失败了。
+I failed.
+
+252
+00:12:36,500 --> 00:12:39,899
+而是会觉得：不，这正是 Labs 团队的本意——快速做原型，
+It's like, no, that is definitely the intention of the Labs team is to prototype
+
+253
+00:12:39,899 --> 00:12:44,070
+快速在内部上线，也许推进到 early access，不行就逐步关停。
+quickly, try to ship internally, maybe get it to early access and if it doesn't work, wind it down.
+
+254
+00:12:44,430 --> 00:12:46,666
+但正因为这种快速迭代，
+But because of that kind of like rapid iteration,
+
+255
+00:12:46,666 --> 00:12:50,103
+如果你把组织架构和单个项目绑得太紧，
+it means that if you align the org chart too much to the individual projects,
+
+256
+00:12:50,103 --> 00:12:52,503
+你最终会每两周就重组一次，
+you're going to end up like reorging every two weeks,
+
+257
+00:12:52,503 --> 00:12:54,030
+那会完全是一场噩梦。
+which would be a total nightmare.
+
+258
+00:12:54,110 --> 00:12:56,952
+所以我们实际上形成了这种有趣的设置：
+And so we've actually ended up with this interesting setup
+
+259
+00:12:56,952 --> 00:12:59,794
+负责某个项目的 pod 或团队，
+where like the pod or the team that is working on a given,
+
+260
+00:12:59,794 --> 00:13:03,390
+我们在 Labs 内部把这些叫作 bets，团队会从各处拉人，比如，
+we call them bets within Labs, definitely just draws upon like, all right,
+
+261
+00:13:03,390 --> 00:13:04,550
+从产品那边来一个人。
+somebody from product.
+
+262
+00:13:04,670 --> 00:13:06,435
+从 engine 团队来一个人。嗯，
+Somebody from the engine team. Um, you know,
+
+263
+00:13:06,435 --> 00:13:09,010
+如果某款产品我特别感兴趣，我也会加入。
+I'll jump in when it's a product I'm particularly interested in.
+
+264
+00:13:09,170 --> 00:13:11,517
+我会进入团队，和大家一起做。嗯，
+I'll come in and work together with the team on it. Um,
+
+265
+00:13:11,517 --> 00:13:13,010
+在那段时间里，这就是一个单元。
+and that's the unit for that time.
+
+266
+00:13:13,050 --> 00:13:16,290
+还有一个 bet lead 的概念，也就是直接负责人。
+And there is the concept of a bet lead or a directly responsible individual.
+
+267
+00:13:16,530 --> 00:13:19,894
+但有意思的是，他们通常并不管理其他任何人，
+But the interesting thing is that they don't manage usually any of the other people,
+
+268
+00:13:19,894 --> 00:13:21,960
+这打破了以前很多做事的旧方式，
+which kind of breaks that kind of previous way in
+
+269
+00:13:21,960 --> 00:13:23,450
+以前很多这类事情是那样做的。
+which a lot of these things were done.
+
+270
+00:13:23,690 --> 00:13:26,587
+但我认为这让我们非常灵活。当你说“好，
+But I think it leaves, it leaves us to be really flexible when you say, okay,
+
+271
+00:13:26,587 --> 00:13:28,410
+这个项目其实跑不通”，
+actually this project is not going to work out.
+
+272
+00:13:28,770 --> 00:13:30,010
+那就解散，继续往前走。
+Let's disband and keep going.
+
+273
+00:13:30,120 --> 00:13:33,086
+这没什么大不了。engine 经理更多是在扮演这样的角色：
+And it's not a big deal and the engine manager is much more playing the, like,
+
+274
+00:13:33,086 --> 00:13:35,111
+确保每个人都被分配到
+make sure every individual is assigned to the thing
+
+275
+00:13:35,111 --> 00:13:38,360
+他们最感兴趣、也最适合发挥的事情上。
+that they're most excited about and that they're working in the best way possible.
+
+276
+00:13:38,760 --> 00:13:42,607
+当一个产品确实有生命力时，我们的做法才会逐渐固化下来。
+Now what we do sort of solidifies when there's a product that has like legs,
+
+277
+00:13:42,607 --> 00:13:46,701
+比如 Claude Design，一开始就是这种相对临时的小组方式，
+like Claude Design, for example, started in this sort of ad hoc sort of group way,
+
+278
+00:13:46,701 --> 00:13:47,880
+而现在它已经——
+and then now that like.
+
+279
+00:13:47,920 --> 00:13:51,800
+我们已经发布了，获得关注，还在六月做了一次大的第二次发布。
+We've shipped it. It's gotten traction. We've done like a big second release, um, in June.
+
+280
+00:13:51,920 --> 00:13:55,531
+现在它越来越像：我们已经为那个专门团队招了人，
+Like it's becoming like we've hired people for that specific team
+
+281
+00:13:55,531 --> 00:13:57,370
+结构上也更正式了。
+and it has more of a structure.
+
+282
+00:13:57,410 --> 00:14:00,170
+所以它一开始松散，之后再逐步固化。
+So it's like loose until it gets solidified down the line.
+
+283
+00:14:01,010 --> 00:14:04,170
+未来会怎样？我想很多人对 Claude Design 非常感兴趣。
+What's the future? Claude Design, I think a lot of people are very interested in.
+
+284
+00:14:04,490 --> 00:14:06,410
+这是你们今年最大的发布之一。
+It's one of your biggest launches this year.
+
+285
+00:14:07,570 --> 00:14:08,370
+它会走向哪里？
+Where does this go?
+
+286
+00:14:08,610 --> 00:14:10,438
+对我而言，我觉得，
+I think for me, I mean, the things
+
+287
+00:14:10,438 --> 00:14:15,179
+让 Claude Design 变得更好的关键，是更好地和
+that are holding back Claude Design for being even better is better interaction with
+
+288
+00:14:15,179 --> 00:14:16,330
+我们其他产品界面互动。
+our other surfaces.
+
+289
+00:14:16,450 --> 00:14:21,320
+比如前几天我在设计东西，或者在和 Claude Code 对话，
+So, you know, I was designing something or I was talking to Claude Code the other day.
+
+290
+00:14:21,360 --> 00:14:24,836
+我心想，我想要一种更无缝的体验，比如我正在说的这个设计，
+I'm like, I want a really much more seamless, like what I'm talking about,
+
+291
+00:14:24,836 --> 00:14:27,800
+为它做交互设计，又回到这一点。
+the design for it, you know, interactive design, back to that.
+
+292
+00:14:27,920 --> 00:14:29,535
+我觉得总的来说，
+I think in general that's, I mean,
+
+293
+00:14:29,535 --> 00:14:32,187
+这又回到让 Claude 更少受限制，
+this goes back again to kind of unconstraining Claude,
+
+294
+00:14:32,187 --> 00:14:35,878
+我们的各个服务之间没有尽可能好地互联互通，
+like the fact that our services don't talk to each other as well as they could,
+
+295
+00:14:35,878 --> 00:14:39,511
+这真的压制了很多有趣的想法。
+I think really holds back a lot of interesting ideas around what we could do.
+
+296
+00:14:39,511 --> 00:14:40,780
+所以我觉得这是一个
+So I think that's one like.
+
+297
+00:14:40,780 --> 00:14:42,460
+我们正在关注的重要方向。
+Kind of major area that we're looking at.
+
+298
+00:14:42,820 --> 00:14:46,941
+嗯，另一个是，人们会觉得 Claude Design 与 app 之间的界限
+Um, and then the other one is people like the lines between a Claude Design
+
+299
+00:14:46,941 --> 00:14:49,620
+会随着时间越来越模糊。
+and an app get blurrier and blurrier over time.
+
+300
+00:14:49,620 --> 00:14:53,101
+我已经看到有人——当然现在还没有持久化——但会构建，比如，
+Like, I've seen people, of course, there's no, like, persistence, but build, like,
+
+301
+00:14:53,101 --> 00:14:56,234
+完全可用，甚至游戏都行，这绝对不是我们设计
+fully functional, like even games, which is definitely not what we designed
+
+302
+00:14:56,234 --> 00:14:56,980
+Claude 的本意。
+Claude for.
+
+303
+00:14:56,980 --> 00:14:59,260
+但你能做到。它只是 HTML 和 JavaScript。
+But you can do it. There's just HTML and JavaScript.
+
+304
+00:14:59,660 --> 00:15:01,542
+嗯，所以让这些界限更加模糊
+Um, so blurring those lines even further
+
+305
+00:15:01,542 --> 00:15:05,031
+并想清楚，从那种功能齐全的设计
+and thinking through like what is the path from a like fully featured design
+
+306
+00:15:05,031 --> 00:15:07,356
+看起来很好、很棒，到某种东西
+that looks really well to really good to something
+
+307
+00:15:07,356 --> 00:15:11,121
+也许更像一个 artifact，让你能真正去，你知道，
+that is maybe more like an artifact where you're actually able to go and, you know,
+
+308
+00:15:11,121 --> 00:15:14,000
+持久化数据、分享给别人，然后从那里继续构建。所以。
+persist data and share it with others and build from there. So.
+
+309
+00:15:14,000 --> 00:15:17,849
+我觉得这些界限随着时间推移也会变得很有趣。是啊。
+I think that those lines get really interesting over time, too. Yeah,
+
+310
+00:15:17,849 --> 00:15:19,840
+设计的很大一部分在于拥有品味。
+a big part of design is having taste.
+
+311
+00:15:20,550 --> 00:15:23,630
+我其实问了 Fable，Fable 想问你什么。
+I actually asked Fable what Fable wants to ask you.
+
+312
+00:15:24,390 --> 00:15:26,510
+而这，这，这就是 Fable 想出来的。
+And this, this, this is what Fable came up with.
+
+313
+00:15:26,870 --> 00:15:31,431
+你为了做出 Instagram，几乎删掉了整个 Burbn，就像你原本有一整套
+You deleted almost all of Burbn to get to Instagram, which is like you had a whole,
+
+314
+00:15:31,431 --> 00:15:34,670
+你知道，social mobile 之类的什么，然后你转向了 Instagram。
+you know, social mobile whatever thing and you went to Instagram.
+
+315
+00:15:35,230 --> 00:15:39,289
+你会想在 AI 里删掉什么，或者更尖锐一点，你会想在 Claude 里删掉什么？哦。
+What would you delete in AI or more spicily, what would you delete in Claude? Oh,
+
+316
+00:15:39,289 --> 00:15:40,150
+我喜欢这个辛辣问题。
+I like the spice.
+
+317
+00:15:41,510 --> 00:15:43,361
+我觉得，我是说，我们有个东西，挺有意思的。
+I think, I mean we have, it's interesting,
+
+318
+00:15:43,361 --> 00:15:45,741
+我们有一个 Slack 频道叫 Project Unship，
+we have one of our Slack channels like Project Unship
+
+319
+00:15:45,741 --> 00:15:47,750
+专门讨论产品里现在有哪些东西。
+which is like what is in the product right now.
+
+320
+00:15:47,830 --> 00:15:49,750
+这是、这是，而且我的意思是，这在 Instagram 也很难。
+It's and it's and I mean this is hard at Instagram.
+
+321
+00:15:49,870 --> 00:15:54,377
+在 Instagram，有些功能使用率大概只有 4% 到 5%，你会觉得，哦，
+At Instagram, some things that have like 4 to 5% usage, you're like, oh,
+
+322
+00:15:54,377 --> 00:15:56,150
+这真的不算多。
+that's really not very many.
+
+323
+00:15:56,190 --> 00:15:59,310
+但接着你有大概 20 个功能，每个都有 4% 到 5% 的使用率。
+But then you have like 20 features that each have 4 to 5% usage.
+
+324
+00:15:59,470 --> 00:16:03,931
+这就像经典的 Microsoft Word 问题：每个人用的都是一些互不相交的
+It's like the classic Microsoft Word problem of like everybody uses some disjoint
+
+325
+00:16:03,931 --> 00:16:07,810
+功能子集，所以这始终是个挑战。
+subset of the of the functionality so that that's always the challenge.
+
+326
+00:16:07,930 --> 00:16:09,863
+现在我觉得，呃，我们是个更年轻的产品
+Now I think uh, we're a younger product
+
+327
+00:16:09,863 --> 00:16:14,165
+所以希望这样的东西更少。比如我们最近好像下线了 Styles
+so hopefully we have less of those things like we unshipped Styles I think recently
+
+328
+00:16:14,165 --> 00:16:16,908
+这个功能只有很小一部分人在用
+where it was like used by a small percentage of people
+
+329
+00:16:16,908 --> 00:16:19,090
+而且在很多方面并不真正符合 AGI 的思路。
+and was not really AGI-pilled in a lot of ways.
+
+330
+00:16:19,130 --> 00:16:21,675
+它工作的方式非常具有规定性
+It was like very sort of prescriptive in the way that it worked
+
+331
+00:16:21,675 --> 00:16:24,370
+而 Skills 是更好得多的承载方式，类似这样。
+and Skills were a much better application, something like that.
+
+332
+00:16:24,370 --> 00:16:28,703
+所以我觉得你必须愿意把一代 AI 的原语
+So I think you have to be willing to take the primitives of like one generation of
+
+333
+00:16:28,703 --> 00:16:33,101
+给下线掉，或者至少用下一代去补充或替换它们
+AI and like unship them or at least like supplement them or supplant them with the
+
+334
+00:16:33,101 --> 00:16:34,020
+也一样。
+next one as well.
+
+335
+00:16:34,060 --> 00:16:36,087
+我看下来，最大的问题是
+I think the biggest thing as I look at it,
+
+336
+00:16:36,087 --> 00:16:39,958
+我最近花了一些时间在 Labs 之外研究这些，感觉，天哪
+I've been spending some time like outside labs on some of this, is like, man,
+
+337
+00:16:39,958 --> 00:16:43,706
+我们要求人们去区分 code、co-work、chat 这些东西的差别
+like we're asking people to make like code versus co work versus like chat
+
+338
+00:16:43,706 --> 00:16:45,180
+区别，而且，第一，
+distinctions and like, one.
+
+339
+00:16:45,180 --> 00:16:47,380
+它们之间不能很好地互操作，也不能相互委托。
+They don't interoperate well and they can't delegate to each other.
+
+340
+00:16:47,380 --> 00:16:51,061
+第二，我觉得街上的普通人没法跟你解释为什么这些
+And 2, I think the average person off the street could not explain to you why those
+
+341
+00:16:51,061 --> 00:16:52,380
+服务各不相同。
+services are all different.
+
+342
+00:16:52,460 --> 00:16:55,918
+所以我觉得删掉我们产品里的一些复杂性
+So I think deleting some of the product complexity within our,
+
+343
+00:16:55,918 --> 00:16:58,977
+我们的代码或产品里的一些产品复杂性，我觉得是一件会
+our code or our product, I think is a, a thing that would,
+
+344
+00:16:58,977 --> 00:17:02,900
+会很有好处，因为那样 Claude 就能做它该做的事。
+would serve well also because then Claude can do what it needs to do and.
+
+345
+00:17:02,940 --> 00:17:03,380
+并且做得很好。
+And do well.
+
+346
+00:17:03,380 --> 00:17:06,069
+比如，没有什么比进行一个 co-work 会话更让人沮丧
+Like, there's nothing more frustrating than having a co work session
+
+347
+00:17:06,069 --> 00:17:08,897
+你心想，太好了，我已经明确了要你构建什么
+where you're like, great, I've mapped out exactly what I want you to build
+
+348
+00:17:08,897 --> 00:17:10,380
+然后却得说，你能不能让
+and then be like, can you please, like,
+
+349
+00:17:10,380 --> 00:17:12,420
+生成一段文字，好让我粘贴到 Claude Code 里？
+create a paragraph that I can paste into Claude Code?
+
+350
+00:17:12,420 --> 00:17:14,050
+就像，那真是 2020 年的老一套，你知道
+Like, that is some 2020, you know,
+
+351
+00:17:14,050 --> 00:17:17,020
+那种工作流真的不该再存在了。
+kind of workflow there that really shouldn't exist anymore.
+
+352
+00:17:17,520 --> 00:17:20,650
+是啊，我觉得在不想做的事情上划清界限
+Yeah, I think drawing lines on what you don't want to do
+
+353
+00:17:20,650 --> 00:17:23,920
+同时也给别人留出空间，这很有意思。
+and also sort of leaving room for others is interesting.
+
+354
+00:17:24,360 --> 00:17:27,120
+今天对很多人来说就像是 AI 的 Startups Day。
+A lot of people, today is like the Startups Day for AI.
+
+355
+00:17:27,240 --> 00:17:30,347
+你显然非常同情并支持初创公司
+You're obviously very sympathetically aligned to startups,
+
+356
+00:17:30,347 --> 00:17:34,232
+但房间里也有些焦虑，因为明天 Anthropic 可能醒来
+but there's some anxiety in the room because tomorrow Anthropic could wake up
+
+357
+00:17:34,232 --> 00:17:37,160
+然后发布一些 Markdown 文件，把我的行业摧毁。
+and publish some markdown files that destroy my industry.
+
+358
+00:17:38,180 --> 00:17:41,216
+所以我们为什么不干脆放弃，加入 Anthropic 呢？就像
+So why should we not all just give up and join Anthropic? Like,
+
+359
+00:17:41,216 --> 00:17:43,180
+为什么还要费心创立别的公司呢？
+why bother starting any other company?
+
+360
+00:17:45,140 --> 00:17:48,417
+我的意思是，我加入——我加入 Anthropic 的主要原因之一是
+I mean, I actually joined, one of the main reasons I joined Anthropic was
+
+361
+00:17:48,417 --> 00:17:50,492
+因为我看到这件事有多像，你知道，
+because I saw how much this was like, you know,
+
+362
+00:17:50,492 --> 00:17:53,660
+模型当时还不太擅长写代码，但它们正在进步。
+the models weren't that good at code yet, but they were getting there.
+
+363
+00:17:53,700 --> 00:17:57,281
+比如，它会解锁多少，像是一整个下一代初创公司，
+Like, how much it would unlock, like, whole next generation of startups,
+
+364
+00:17:57,281 --> 00:18:00,293
+并不是因为它会解决他们的创意或品味，
+not because it was going to solve their ideation or their taste,
+
+365
+00:18:00,293 --> 00:18:03,305
+而是因为它会让实验变得简单得多，并且
+but because like it would make experimentation way simpler and
+
+366
+00:18:03,305 --> 00:18:04,840
+让你行动得更快。
+and would get you to move faster.
+
+367
+00:18:04,920 --> 00:18:06,440
+我至今仍然非常相信这一点。
+And I still like really believe that.
+
+368
+00:18:06,440 --> 00:18:10,704
+我的意思是，这就是现实，我们在 Instagram 身上也看到过，
+And I mean, it's the reality of, you know, uh, and we saw this with like Instagram,
+
+369
+00:18:10,704 --> 00:18:13,394
+投资者会问我们，比如，
+like we'd get questions from investors like, well,
+
+370
+00:18:13,394 --> 00:18:16,280
+当 Google 推出照片产品时会发生什么？
+what happens when Google launches a photos product?
+
+371
+00:18:16,360 --> 00:18:18,813
+就像 Google 会推出一个非常 Google 风格的照片产品，
+It's like Google's gonna launch a very Googley photos product,
+
+372
+00:18:18,813 --> 00:18:21,637
+而且它必须受制于他们已有的各种集成，
+and it's gonna have to be bound by the integrations that they already have
+
+373
+00:18:21,637 --> 00:18:24,090
+它会去发挥他们的优势。
+and it's gonna be like, like it's gonna play to their strengths.
+
+374
+00:18:24,210 --> 00:18:25,289
+我认为这一点会是事实
+I think that is going to be true
+
+375
+00:18:25,289 --> 00:18:28,223
+我想，我并不是在给如何与 Anthropic 竞争提建议，
+that I'm not like giving advice on how to compete with Anthropic, I guess, in a way,
+
+376
+00:18:28,223 --> 00:18:31,330
+但实际上并不是，因为我们也是一个平台，也就是说有太多机会。
+but like it's actually not because we're also a platform which is like there is so much.
+
+377
+00:18:31,330 --> 00:18:35,349
+我认为，有空间让你像激光一样专注地深耕某个特定垂直领域，或你
+I think, room to be like laser obsessed with your particular vertical or your
+
+378
+00:18:35,349 --> 00:18:39,179
+熟悉的行业或一群人，这种方式，
+industry or a group of people that you know really well in a way that, like,
+
+379
+00:18:39,179 --> 00:18:42,130
+没有任何一家大模型实验室能达到那种程度，
+none of the labs are ever going to get to that level of, uh.
+
+380
+00:18:42,130 --> 00:18:46,505
+那种理解程度，因此获得那种采用率和用户喜爱，
+Of understanding and like, therefore get that kind of adoption and user love and,
+
+381
+00:18:46,505 --> 00:18:47,470
+并把它建立起来。
+and build that up.
+
+382
+00:18:47,470 --> 00:18:51,150
+如今，在模型能完成很多事情的年代，这确实更难了。
+Now it's definitely harder in the age where like the models can just do a lot.
+
+383
+00:18:51,150 --> 00:18:54,238
+所以，其中一些东西可能会被做成 skill，
+And so there's, you know, some of these things can be like skillified
+
+384
+00:18:54,238 --> 00:18:56,729
+也许不再需要自己的专用产品，
+and like maybe don't need their own dedicated product,
+
+385
+00:18:56,729 --> 00:18:58,950
+但我认为，困难的部分仍然困难。
+but I think it's like the hard stuff is still hard.
+
+386
+00:18:58,990 --> 00:19:00,699
+它在于理解人们的需求，
+It's like understanding the needs of people,
+
+387
+00:19:00,699 --> 00:19:02,677
+弄清楚你要如何触达他们，
+like figuring out how you're going to reach them, uh,
+
+388
+00:19:02,677 --> 00:19:04,790
+倾听他们并快速迭代。
+listening to them and iterating on them really quickly.
+
+389
+00:19:04,910 --> 00:19:08,950
+事实仍然是，四五个痴迷于某个问题的人，
+Like it is still the case that like a group of four or five people obsessed with a
+
+390
+00:19:08,950 --> 00:19:12,741
+依然会比同样这群人在任何其他类型的组织中行动得更快，
+problem is going to move faster than those same people at any other kind of
+
+391
+00:19:12,741 --> 00:19:14,730
+你知道。
+organization that are like, you know.
+
+392
+00:19:14,730 --> 00:19:17,493
+只是受制于我刚刚提到的复杂性，比如我们拥有，
+Subject just to the complexity I just mentioned the like the fact that we have,
+
+393
+00:19:17,493 --> 00:19:19,789
+很多不同的产品在某种程度上需要互操作，
+you know, a lot of different products that kind of interoperate,
+
+394
+00:19:19,789 --> 00:19:22,170
+这是一个我们需要努力应对的有趣约束。
+like that's an interesting constraint that we have to work through.
+
+395
+00:19:22,250 --> 00:19:23,730
+它在其他方面是优势，对吧？
+It's an advantage in other ways, right?
+
+396
+00:19:23,730 --> 00:19:28,085
+所以是的，我仍然非常看好初创公司，只是，
+So yeah, I'm still like very long and bullish on startups and, um, it's just, uh,
+
+397
+00:19:28,085 --> 00:19:31,847
+它掩盖了一个事实，即写代码从来不是，
+it papers over the fact that, like, writing code was never the, like,
+
+398
+00:19:31,847 --> 00:19:35,740
+限制因素，你知道，也许从时间线的角度看曾经是。
+the limiting part, you know, maybe it was on the timeline perspective.
+
+399
+00:19:35,740 --> 00:19:37,835
+但它从来不是那个会，
+But it was never, like, the thing that was going to, like,
+
+400
+00:19:37,835 --> 00:19:38,860
+决定你初创公司成败的因素。
+make or break your startup.
+
+401
+00:19:38,900 --> 00:19:44,380
+真正重要的是领域和用户理解。对，领域知识。
+It's really that space and user understanding. Yeah, uh, domain knowledge. Yeah. Uh,
+
+402
+00:19:44,380 --> 00:19:46,740
+今天也是我们的垂直 AI 主题日。
+today is also our day for Vertical AI.
+
+403
+00:19:47,180 --> 00:19:50,108
+我们的一位返场演讲者、顶级演讲者，
+Uh one of our uh returning speakers and top speakers,
+
+404
+00:19:50,108 --> 00:19:53,170
+Chris Lovejoy 一直在讲垂直 AI。
+Chris Lovejoy uh was always talking about vertical AI.
+
+405
+00:19:53,330 --> 00:19:56,879
+他之前来自医疗健康领域的 Anterior，最近我——
+He was in from interior in the healthcare space and then recently I was,
+
+406
+00:19:56,879 --> 00:19:58,683
+我邀请他回来，结果发现，
+I invited him back and turned out he,
+
+407
+00:19:58,683 --> 00:20:01,330
+你们刚聘请他负责医疗健康方面的工作。
+you guys just hired him for your healthcare efforts.
+
+408
+00:20:01,850 --> 00:20:05,251
+我们下一个重点领域也是金融。
+Um, we also, our next big one is also finance. Uh, you know,
+
+409
+00:20:05,251 --> 00:20:06,810
+我们有一个 AI 金融赛道。
+we have an AI finance track.
+
+410
+00:20:06,890 --> 00:20:09,130
+你们刚在纽约市举办了一场大型金融活动。
+You guys just had a huge finance event in New York City.
+
+411
+00:20:09,650 --> 00:20:14,010
+而且我们的下一个 AI 活动也偏金融方向。你在那方面看到了什么？
+Um, and where our next AI is, is sort of finance focused. What are you seeing there?
+
+412
+00:20:14,090 --> 00:20:17,132
+显然，对 Claude 来说有很大潜力，很多 Excel，
+Any, you know, any potential, uh, for Claude, obviously a lot of Excel,
+
+413
+00:20:17,132 --> 00:20:18,060
+Excel 电子表格。
+Excel spreadsheets.
+
+414
+00:20:18,300 --> 00:20:20,540
+是的，我认为那里也有很多机会。
+Yeah. No, I think that there's, there's a lot in there too.
+
+415
+00:20:20,540 --> 00:20:25,092
+这是一个你可以看到模型每一代都明显变得更强的领域，
+And that's like an area where, uh, you could see the model get clearly better at it,
+
+416
+00:20:25,092 --> 00:20:28,506
+比如一代又一代，而且，
+like sort of generation to generation and there's, you know,
+
+417
+00:20:28,506 --> 00:20:30,982
+有一些不错的、垂直领域特定的，
+some good sort of vertical specific, uh, uh,
+
+418
+00:20:30,982 --> 00:20:33,660
+一些金融初创公司已经做了自己的 evals。
+finance startups that have like done their own.
+
+419
+00:20:34,220 --> 00:20:37,711
+跟踪这些 evals 也很有意思。并不是说我们
+Um, evals which has also been interesting to track and it's not like we're like
+
+420
+00:20:37,711 --> 00:20:40,786
+在刻意迎合那些 evals，但它们是一个有用的晴雨表，比如，
+sort of playing to the eval, but it is a useful sort of barometer on like,
+
+421
+00:20:40,786 --> 00:20:43,600
+这些金融用例真的在变好吗？
+Is this actually getting better, um, at these finance use cases?
+
+422
+00:20:43,800 --> 00:20:48,274
+我认为接下来会发生的有趣融合，嗯，还是这种混合，
+I think the interesting blend that's going to happen, um, is this mix of, again,
+
+423
+00:20:48,274 --> 00:20:50,986
+模型有灵活性，可以深入进去，
+the model having the flexibility to like dive in
+
+424
+00:20:50,986 --> 00:20:55,663
+并创建即时分析、仪表板或工作流，同时对某种
+and create just-in-time analyses or dashboards or workflows with like some sense of
+
+425
+00:20:55,663 --> 00:21:00,680
+比如说，什么是并非不可变、但至少经过验证的数据集。诸如此类。
+like what is the not immutable, but at least like verified sort of set of data. And so like.
+
+426
+00:21:02,200 --> 00:21:05,808
+如果让所有这些都完全自由发挥，我认为会导致混乱
+Having all of that be totally free form I think is a recipe for confusion
+
+427
+00:21:05,808 --> 00:21:09,600
+这不是金融服务领域大多数公司想要的。
+and is like not what most companies in the financial services space wants.
+
+428
+00:21:09,680 --> 00:21:13,340
+所以要找到那条合适的边界，让你既有可验证性
+So finding that right sort of cut line where you have verifiability
+
+429
+00:21:13,340 --> 00:21:16,411
+又有审计日志和数据来源追踪，
+and audit logging and, and sort of data provenance here,
+
+430
+00:21:16,411 --> 00:21:20,920
+但又不会限制你可以在上面构建的应用类型。
+but not in a way that constrains the kinds of applications that you can build on top.
+
+431
+00:21:21,000 --> 00:21:24,280
+我认为这也是我们在该领域看到的很多诀窍所在。
+I think is a lot of the art that we're seeing in that space as well.
+
+432
+00:21:24,780 --> 00:21:27,553
+嗯，而且我认为，如果你能解决好，你就能，
+Um, and I think, you know, if you solve it well, you can,
+
+433
+00:21:27,553 --> 00:21:29,340
+你就能两全其美。
+you can get the best of both worlds.
+
+434
+00:21:29,860 --> 00:21:33,614
+难点在于，很多为了可验证性而构建的系统，
+The hard part is a lot of the systems that were built to do the verifiability,
+
+435
+00:21:33,614 --> 00:21:37,726
+可审计性，几乎从设计上就不太灵活，面对 agentic
+auditability like are kind of almost by design not super flexible in terms of agentic
+
+436
+00:21:37,726 --> 00:21:38,620
+上层工作负载时。
+workloads on top.
+
+437
+00:21:38,660 --> 00:21:41,780
+所以我认为在技术栈的两端都有机会。是的。
+So I think there's opportunity at both sides of the stack there. Yeah.
+
+438
+00:21:41,860 --> 00:21:45,340
+嗯，我也同意。我们会在纽约继续探索这一点。
+Um, I think I, I also agree. We'll be exploring that in, in New York.
+
+439
+00:21:46,060 --> 00:21:48,655
+我想最后谈的是心理健康，
+The last thing I want to end on is on mental health,
+
+440
+00:21:48,655 --> 00:21:51,820
+我们在技术会议上谈论得不够。
+which we don't talk about enough in technical conferences.
+
+441
+00:21:52,660 --> 00:21:54,359
+你见过很多超高速增长。
+You've seen a lot of hypergrowth.
+
+442
+00:21:54,359 --> 00:21:58,060
+人们总是在刷新时间线，这令人精疲力竭。
+People are just always refreshing their timelines and it's exhausting.
+
+443
+00:21:59,460 --> 00:22:03,020
+你如何建议那些 996 工作的人避免倦怠？
+How do you advise people who are working 996 to avoid burnout?
+
+444
+00:22:03,380 --> 00:22:05,580
+是的，我觉得这个问题很难。我是说，而且。
+Yeah, I mean, I think this is a hard one. I mean, and.
+
+445
+00:22:06,820 --> 00:22:07,220
+确实如此。
+It is.
+
+446
+00:22:07,300 --> 00:22:09,187
+我相信你们都在经历这些
+I'm sure you all are experiencing this
+
+447
+00:22:09,187 --> 00:22:12,371
+因为你们都在这个行业工作，它确实，你知道，
+because you're all working in this industry like it is, you know,
+
+448
+00:22:12,371 --> 00:22:15,260
+强度高好几倍，事情发展也快得多。
+multiples more intense and things move much more quickly.
+
+449
+00:22:15,420 --> 00:22:19,011
+比如在 Instagram，我们当时想的两件事是：
+Like at Instagram, like the two things that we were thinking about were like,
+
+450
+00:22:19,011 --> 00:22:20,589
+苹果会在 WWDC 宣布什么
+what is Apple gonna announce at WWDC
+
+451
+00:22:20,589 --> 00:22:22,820
+它会不会彻底搞乱我们，还是帮我们一把？
+and is it gonna like totally mess us up or boost us?
+
+452
+00:22:22,860 --> 00:22:23,020
+对吧。
+Right.
+
+453
+00:22:23,020 --> 00:22:24,963
+所以那大概是一年一次，或者你知道，
+So that's like once a year or, you know,
+
+454
+00:22:24,963 --> 00:22:28,484
+我们每三四个月就有竞争对手发布新东西，对吧？呃，
+we had competitor launches every three or four months, right? And uh,
+
+455
+00:22:28,484 --> 00:22:29,820
+现在绝对不只是那样。
+it is definitely not that.
+
+456
+00:22:30,770 --> 00:22:33,044
+我们开每周全员会，
+We do our weekly all hands,
+
+457
+00:22:33,044 --> 00:22:35,101
+通常在周三，我们会放一页幻灯片
+it's usually on Wednesdays and we have a slide
+
+458
+00:22:35,101 --> 00:22:37,970
+上面写着“AI 本周”，括号里写着“才周三”。
+that's like "The Week in AI" parentheses and it's only Wednesday.
+
+459
+00:22:37,970 --> 00:22:41,281
+然后，不可避免地，某个竞争对手发布了新模型
+and like, inevitably, like some competitor has shipped a new model
+
+460
+00:22:41,281 --> 00:22:43,133
+还有新产品
+and like there's been a like new product
+
+461
+00:22:43,133 --> 00:22:46,725
+也许监管方面也会发生一些有趣的事，
+and maybe there's some interesting thing happening on the regulation side,
+
+462
+00:22:46,725 --> 00:22:48,970
+事情进展真的非常非常快。
+like things are moving really, really quickly.
+
+463
+00:22:49,090 --> 00:22:52,530
+我想，我保持相对理智的方式是。
+I think the way I try to stay at least relatively sane.
+
+464
+00:22:53,560 --> 00:22:55,360
+第一是真正留出休息时间。
+One is like actually carving time off.
+
+465
+00:22:55,400 --> 00:22:59,640
+我认为两位联合创始人在这一点上做得很好，他们会说，听着，倦怠这件事，
+And I think the two cofounders do a good job of like saying like, look, like burnout.
+
+466
+00:22:59,840 --> 00:23:01,360
+如果你真的倦怠了，基本上就没法继续了。
+If you burn out, like you're kind of done.
+
+467
+00:23:01,400 --> 00:23:03,840
+很不幸，我见过这种情况发生在我非常亲近的人身上。
+And I've seen it happen unfortunately to people I'm really close to.
+
+468
+00:23:03,840 --> 00:23:05,960
+然后需要很长时间才能恢复。
+And then it takes a long time to recover from that.
+
+469
+00:23:06,560 --> 00:23:09,450
+所以真正鼓励大家，没有哪份工作重要到
+So actually encouraging people like there's no job that is so important
+
+470
+00:23:09,450 --> 00:23:11,280
+你不能离线几天。
+that you can't be offline for a couple of days.
+
+471
+00:23:11,920 --> 00:23:15,334
+所以我认为这是其中非常关键的一点。
+So I think that's like a big key like piece in there.
+
+472
+00:23:15,334 --> 00:23:17,610
+这是我非常相信的。
+So like that's strongly believe.
+
+473
+00:23:18,410 --> 00:23:21,194
+嗯，如果工作这么重要，那你可能做错了什么
+Um, and if it is, you're probably doing something wrong
+
+474
+00:23:21,194 --> 00:23:25,370
+你该找一位导师聊聊，弄清楚如何解开这个困局。
+and you talk to somebody who could be a mentor to figure out how you can unblock that.
+
+475
+00:23:25,570 --> 00:23:29,290
+嗯，另外一点是，我热爱体育，嗯，
+Um, and then I think the other one as well is like, uh, I love sports and like, uh,
+
+476
+00:23:29,290 --> 00:23:32,552
+有一种观念是，你永远不会像你打得最好时那么好
+this is the notion of like, you're never as good as like your best game
+
+477
+00:23:32,552 --> 00:23:36,730
+也永远不会像你打得最差时那么差。我觉得这也非常真实。我知道。
+and you're never as bad as your worst game. I think that's also really true. Like, I know.
+
+478
+00:23:36,810 --> 00:23:40,750
+在 AI 领域，有那种“完了，我们又回来了”的说法。
+Like in AI, there's like the, you know, "it's so over, we're so back" thing like that.
+
+479
+00:23:40,790 --> 00:23:44,998
+如果你能内化这一点，那个周期总会以某种方式存在，
+Like if you internalize that, that cycle is always going to be at play in some way,
+
+480
+00:23:44,998 --> 00:23:47,070
+你就会意识到，情况从来没有那么糟。
+you realize, like, it's never that bad.
+
+481
+00:23:47,110 --> 00:23:50,002
+就像 Ben Horowitz 的《The Hard Thing About Hard Things》这本书，
+Like, Ben Horowitz's, uh, book is The Hard Thing About Hard Things, uh,
+
+482
+00:23:50,002 --> 00:23:51,570
+其中有一章讲那种“我们完蛋了”的状态，
+has this chapter on like, we're effed,
+
+483
+00:23:51,570 --> 00:23:53,335
+一切都结束了，以及你在创业公司里的那种感觉
+it's over and like that feeling as a startup
+
+484
+00:23:53,335 --> 00:23:56,128
+你们很多人在创业公司里大概也经历过，就是那种“哦，
+that probably many of you have had at startups where you're like, oh,
+
+485
+00:23:56,128 --> 00:23:59,510
+真不敢相信发生了这种事，我们永远都没法从中恢复过来。
+I can't believe this thing happened. Like, we're never gonna, like, recover from.
+
+486
+00:23:59,510 --> 00:24:00,000
+这一点我倒没有。
+This I don't.
+
+487
+00:24:00,000 --> 00:24:03,202
+我们在 Instagram 时肯定也经历过几次，然后你会挺过去
+We definitely had that at Instagram a couple of times and then you get through it
+
+488
+00:24:03,202 --> 00:24:05,267
+而正是这种经历定义了一家公司
+and like that, like, definitely defines the company
+
+489
+00:24:05,267 --> 00:24:06,920
+当你能真正挺过那种时刻的时候。
+when you can actually go through that.
+
+490
+00:24:07,160 --> 00:24:11,174
+我试着提醒自己和这里的团队，即使在 Anthropic 内部，它也像是，
+I try to remind myself and the team here, even within Anthropic, which is like,
+
+491
+00:24:11,174 --> 00:24:14,200
+这虽然变化很快，但也是一场长线游戏。
+like this is a, it's a fast-moving, but it's also a long game.
+
+492
+00:24:14,200 --> 00:24:17,684
+而且它从来不只是关于今天发布模型
+And it's like, we're never, it's never just about today's model launch
+
+493
+00:24:17,684 --> 00:24:20,400
+以及反应，或者这次产品发布之类的事。
+and reaction or this product launch or something else.
+
+494
+00:24:20,440 --> 00:24:21,760
+你在参与其中，同时也在构建。
+Like you're playing and you're building.
+
+495
+00:24:21,920 --> 00:24:24,689
+你必须相信，你正在打造团队和文化
+You just have to trust that you're building like the team and culture
+
+496
+00:24:24,689 --> 00:24:27,797
+那将能挺过这些事，并且拥有那种全局观，
+that is going to get through those things and have that sense of perspective,
+
+497
+00:24:27,797 --> 00:24:30,226
+即使这种全局观是在说，比如，三个月前，
+even if perspective is saying like, look, three months ago,
+
+498
+00:24:30,226 --> 00:24:31,440
+我们也处在类似的境地。
+we were in a similar position.
+
+499
+00:24:31,520 --> 00:24:32,360
+也许不是一年前。
+Maybe it's not a year.
+
+500
+00:24:32,400 --> 00:24:37,230
+可能只是几个月前，但仍然要拉远视角，不要被眼前的事情、
+It's just a matter of months, but it's still like zooming out and not taking things,
+
+501
+00:24:37,230 --> 00:24:39,610
+不要让你内心的那种，比如说，
+not letting your internal sort of, like,
+
+502
+00:24:39,610 --> 00:24:42,760
+自我感和成就感被日常的起伏如此强烈地左右。
+sense of self and success be so driven by the day to day.
+
+503
+00:24:43,240 --> 00:24:43,880
+对，就是这样。
+Yeah, it.
+
+504
+00:24:43,880 --> 00:24:46,853
+有没有哪位教练或导师对你说过什么话，
+Has anyone, any coach or mentor said something to you
+
+505
+00:24:46,853 --> 00:24:50,570
+是你反复对自己说，能带你挺过难关的？
+that you repeat to yourself that gets you through the tough times?
+
+506
+00:24:50,690 --> 00:24:54,340
+嗯，我觉得最重要的一点是，呃，一种那种，呃，感觉就是，呃，
+Um, I think the biggest one was, uh, this like, uh, sense of like, uh,
+
+507
+00:24:54,340 --> 00:24:57,403
+如果你感受到了某种情绪，通常情况是
+if you're feeling something, it's really often the case
+
+508
+00:24:57,403 --> 00:25:00,010
+团队里的其他人也有同样的感受。
+that other people on the team are feeling it too.
+
+509
+00:25:00,050 --> 00:25:03,367
+这是我从我的教练那里得到的建议，就是要，比如说，
+So this is like advice I got from my, my coach around just being like, like,
+
+510
+00:25:03,367 --> 00:25:05,923
+把情绪说出来，比如甚至可以说，嘿，
+just verbalizing emotions, like even saying like, hey,
+
+511
+00:25:05,923 --> 00:25:08,262
+这件事让我真的压力很大，或者，对，
+I'm feeling really stressed out about this or yeah,
+
+512
+00:25:08,262 --> 00:25:11,090
+我们正在关闭这个 Labs 项目，我真的很难过。
+I'm really sad that we are shutting down this Labs initiative.
+
+513
+00:25:11,090 --> 00:25:12,682
+几个月前我确实开过这样一个会，
+I literally had this meeting a couple months ago
+
+514
+00:25:12,682 --> 00:25:15,110
+当时我在某件事上投入很多，会议一开始我就说。
+where I was working really hard on something and I kicked off the meeting.
+
+515
+00:25:15,190 --> 00:25:18,345
+比如，我会这样开始：我真的很难过，我很沮丧，
+Like, I'll kick it off like I'm really sad, like I'm frustrated,
+
+516
+00:25:18,345 --> 00:25:20,190
+我真希望这件事能做成了。
+like I wish this thing had worked out.
+
+517
+00:25:20,470 --> 00:25:22,824
+我觉得这给其他人留出了空间，让他们也能说，对，
+And I think that holds the space for other people to be like, yeah,
+
+518
+00:25:22,824 --> 00:25:24,350
+我也很生气，或者，我也很难过。
+I'm pissed off too, or, like, I'm sad, too.
+
+519
+00:25:24,350 --> 00:25:27,294
+而且我觉得，给出那种建议，怎么说呢，对，
+And, like, I think giving that advice around like, not, yeah,
+
+520
+00:25:27,294 --> 00:25:30,008
+我觉得如果你能让自己保持开放和脆弱，
+I think if you can get yourself to be open and vulnerable,
+
+521
+00:25:30,008 --> 00:25:33,760
+这往往能让其他人也把感受说出来，然后从那里开始。
+it often like lets other people verbalize that and then you could, from there.
+
+522
+00:25:33,760 --> 00:25:35,120
+你可以说，好，那我们接下来该怎么办？
+You could be like, great, what are we going to do about it?
+
+523
+00:25:35,160 --> 00:25:37,400
+你知道，从那个起点出发要容易得多。
+Like, you know, it's much easier to start from that place.
+
+524
+00:25:37,840 --> 00:25:41,160
+对，我们 AIE 的开场其实请了 Carol Robbins 来做分享，
+Yeah, we actually kicked off AIE with a session from Carol Robbins,
+
+525
+00:25:41,160 --> 00:25:42,880
+她负责 Stanford 的 Touchy Feely 课程。
+who runs Touchy Feely at Stanford.
+
+526
+00:25:43,520 --> 00:25:46,881
+我想不出比鼓励大家谈论自己的
+And I can't think of a better way to end than encouraging people to talk about their
+
+527
+00:25:46,881 --> 00:25:50,390
+自己的感受、管理心理健康，并继续把东西做出来。用这个来结尾再合适不过了。非常感谢你，Mike。
+feelings, manage their mental health and keep shipping. Yeah. Thanks so much, Mike.
+
+528
+00:25:50,390 --> 00:25:51,280
+谢谢邀请我。
+Thanks for having me.
+
+

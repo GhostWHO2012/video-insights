@@ -4,7 +4,7 @@
 
 - **BV号**: BV1rCYs6dEtG
 - **视频链接**: https://www.bilibili.com/video/BV1rCYs6dEtG/
-- **发布时间**: 2026-08-13
+- **发布时间**: 2026-09-09 10:12:38
 - **UP主**: 通用人工智障
 
 ## 视频简介

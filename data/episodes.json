@@ -1,11 +1,40 @@
 [
   {
+    "title": "陶哲轩：AI 时代的数学共同体回应",
+    "bilibili_title": "陶哲轩：AI 时代的数学共同体回应｜ICM 2026",
+    "original_title": "ICM 2026 Public Lectures - Terence Tao",
+    "bilibili_url": "https://www.bilibili.com/video/BV1rCYs6dEtG/",
+    "youtube_url": "https://www.youtube.com/watch?v=M0--ZH1lOzg",
+    "published_at": "2026-09-09 10:12:38",
+    "up": "通用人工智障",
+    "duration": "51:19",
+    "speakers": [
+      "Terence Tao"
+    ],
+    "folder_title": "陶哲轩：AI 时代的数学共同体回应",
+    "path": "videos/undated-054_icm-2026-public-lectures-terence-tao-mathematics-in-the-age-of-ai/",
+    "slug": "undated-054_icm-2026-public-lectures-terence-tao-mathematics-in-the-age-of-ai",
+    "cover": "cover.jpeg",
+    "outline_count": 7,
+    "subtitle_count": 1,
+    "outline_files": [
+      "2026 年国际数学家大会公共讲座_01.png",
+      "2026 年国际数学家大会公共讲座_02.png",
+      "2026 年国际数学家大会公共讲座_03.png",
+      "2026 年国际数学家大会公共讲座_04.png",
+      "2026 年国际数学家大会公共讲座_05.png",
+      "2026 年国际数学家大会公共讲座_06.png",
+      "2026 年国际数学家大会公共讲座_07.png"
+    ],
+    "subtitle_file": "ICM 2026 Public Lectures - Terence Tao.deepseek-v4-pro.term-punctuation-corrected.bilingual.zh-top.srt"
+  },
+  {
     "title": "Anthropic 如何构建产品：来自 Labs 的经验",
     "bilibili_title": "Anthropic 如何构建产品：来自 Labs 的经验｜Mike Krieger",
     "original_title": "How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic",
     "bilibili_url": "https://www.bilibili.com/video/BV1v6bG6vEeb/",
     "youtube_url": "https://www.youtube.com/watch?v=qqrk7CtkuIw",
-    "published_at": "2026-08-27 00:00:00",
+    "published_at": "2026-09-08 13:27:48",
     "up": "通用人工智障",
     "duration": "26:10",
     "speakers": [
@@ -200,35 +229,6 @@
       "白宫如何制定 AI 战略_05.png"
     ],
     "subtitle_file": "11_MichaelKratsios_WhiteHouseAI.OPUS4-8有翻译参考资料版.双语.中文在上.术语小修去标点版.srt"
-  },
-  {
-    "title": "陶哲轩：AI 时代的数学共同体回应",
-    "bilibili_title": "陶哲轩：AI 时代的数学共同体回应｜ICM 2026",
-    "original_title": "ICM 2026 Public Lectures - Terence Tao",
-    "bilibili_url": "https://www.bilibili.com/video/BV1rCYs6dEtG/",
-    "youtube_url": "https://www.youtube.com/watch?v=M0--ZH1lOzg",
-    "published_at": "2026-08-13 00:00:00",
-    "up": "通用人工智障",
-    "duration": "51:19",
-    "speakers": [
-      "Terence Tao"
-    ],
-    "folder_title": "陶哲轩：AI 时代的数学共同体回应",
-    "path": "videos/undated-054_icm-2026-public-lectures-terence-tao-mathematics-in-the-age-of-ai/",
-    "slug": "undated-054_icm-2026-public-lectures-terence-tao-mathematics-in-the-age-of-ai",
-    "cover": "cover.jpeg",
-    "outline_count": 7,
-    "subtitle_count": 1,
-    "outline_files": [
-      "2026 年国际数学家大会公共讲座_01.png",
-      "2026 年国际数学家大会公共讲座_02.png",
-      "2026 年国际数学家大会公共讲座_03.png",
-      "2026 年国际数学家大会公共讲座_04.png",
-      "2026 年国际数学家大会公共讲座_05.png",
-      "2026 年国际数学家大会公共讲座_06.png",
-      "2026 年国际数学家大会公共讲座_07.png"
-    ],
-    "subtitle_file": "ICM 2026 Public Lectures - Terence Tao.deepseek-v4-pro.term-punctuation-corrected.bilingual.zh-top.srt"
   },
   {
     "title": "如何在 agent 时代做设计",

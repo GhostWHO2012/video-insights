@@ -1,5 +1,34 @@
 [
   {
+    "title": "AI 与科学的核心悖论",
+    "bilibili_title": "AI 与科学的核心悖论｜陶哲轩",
+    "original_title": "The paradox at the heart of AI and science | Terence Tao",
+    "bilibili_url": "https://www.bilibili.com/video/BV1fZY76AEGo/",
+    "youtube_url": "https://www.youtube.com/watch?v=svl_1upFpQo",
+    "published_at": "2026-09-11 18:37:19",
+    "up": "通用人工智障",
+    "duration": "30:11",
+    "speakers": [
+      "Terence Tao"
+    ],
+    "folder_title": "AI 与科学的核心悖论",
+    "path": "videos/undated-055_the-paradox-at-the-heart-of-ai-and-science-terence-tao/",
+    "slug": "undated-055_the-paradox-at-the-heart-of-ai-and-science-terence-tao",
+    "cover": "cover.jpeg",
+    "outline_count": 7,
+    "subtitle_count": 1,
+    "outline_files": [
+      "AI 与科学的核心悖论_01.png",
+      "AI 与科学的核心悖论_02.png",
+      "AI 与科学的核心悖论_03.png",
+      "AI 与科学的核心悖论_04.png",
+      "AI 与科学的核心悖论_05.png",
+      "AI 与科学的核心悖论_06.png",
+      "AI 与科学的核心悖论_07.png"
+    ],
+    "subtitle_file": "The paradox at the heart of AI and science - Terence Tao.reference-corrected.bilingual.zh-top.srt"
+  },
+  {
     "title": "陶哲轩：AI 时代的数学共同体回应",
     "bilibili_title": "陶哲轩：AI 时代的数学共同体回应｜ICM 2026",
     "original_title": "ICM 2026 Public Lectures - Terence Tao",

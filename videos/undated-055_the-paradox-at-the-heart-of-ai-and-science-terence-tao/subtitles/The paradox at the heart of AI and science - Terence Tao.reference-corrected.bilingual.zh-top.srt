@@ -1,0 +1,2764 @@
+1
+00:00:00,000 --> 00:00:02,006
+我过去用过一个类比：
+One analogy I've given in the past is
+
+2
+00:00:02,006 --> 00:00:04,680
+科学有点像一次远足。
+that science is a little bit like going on a hike.
+
+3
+00:00:04,920 --> 00:00:10,132
+你听说远处有一道有趣而美丽的瀑布，
+You've heard there's some interesting waterfall, some beautiful waterfall out there,
+
+4
+00:00:10,132 --> 00:00:13,160
+于是决定和朋友一起徒步去寻找它。
+so you decide to go hike with some friends to find it.
+
+5
+00:00:13,160 --> 00:00:14,200
+但你需要先画一张地图。
+But you need to make a map.
+
+6
+00:00:14,800 --> 00:00:17,393
+你可能会有点迷路，但也许正是在迷路时，
+You get lost a little bit, but maybe while getting lost,
+
+7
+00:00:17,393 --> 00:00:19,817
+你发现了别的有趣事物，
+you discover something else which is interesting,
+
+8
+00:00:19,817 --> 00:00:22,410
+并在去那道瀑布的路上把它记下来。
+and you make a note of it on the way to, to this waterfall.
+
+9
+00:00:22,490 --> 00:00:25,210
+你又在远处看到一道更壮观的瀑布。
+You find an even more spectacular waterfall in the distance.
+
+10
+00:00:25,410 --> 00:00:29,730
+你现在还到不了那里，但未来也许有人会找到过去的路。
+You can't get there yet, but maybe some future hiker will figure out a way to get there, too.
+
+11
+00:00:29,890 --> 00:00:33,219
+所以，通往目标本身有一整套过程，
+And so there's, there's a whole process to get to your goal,
+
+12
+00:00:33,219 --> 00:00:34,850
+这个过程也非常有价值。
+which is also very valuable.
+
+13
+00:00:35,090 --> 00:00:36,645
+但这些工具，这些 AI 工具，
+But these tools, these AI tools,
+
+14
+00:00:36,645 --> 00:00:40,387
+可能就像直升机，直接把你飞到那道瀑布前，
+they can be like helicopters that will just fly you directly to this waterfall
+
+15
+00:00:40,387 --> 00:00:42,230
+你看一眼，然后又飞回来。
+and you can see it and then you fly back.
+
+16
+00:00:42,550 --> 00:00:44,190
+但你并没有学会怎样抵达那里。
+But you learn nothing about how to get there.
+
+17
+00:00:45,110 --> 00:00:48,742
+除了你明确要求看到的东西之外，
+You may not see any other interesting phenomena than the specific thing
+
+18
+00:00:48,742 --> 00:00:49,710
+你也许看不到其他有趣现象。
+that you asked for.
+
+19
+00:00:50,190 --> 00:00:53,540
+所以，即使从技术上说你更高效地达成了目标，
+And so even though technically you achieve your goal much more efficiently,
+
+20
+00:00:53,540 --> 00:00:55,110
+也可能有一些东西因此失去了。
+there may be something that is lost.
+
+21
+00:00:55,510 --> 00:00:56,550
+我叫 Terence Tao（陶哲轩）。
+My name is Terence Tao.
+
+22
+00:00:56,790 --> 00:01:00,175
+我是加州大学洛杉矶分校的数学教授。
+I'm a professor of mathematics at the university of California, Los Angeles.
+
+23
+00:01:00,175 --> 00:01:02,310
+我即将出版一本书，叫《Six Math Essentials》。
+And I have a forthcoming book, Six Math Essentials.
+
+24
+00:01:07,770 --> 00:01:10,617
+感谢收看 Big Think。如果你愿意支持我们的工作，
+Thank you for watching Big Think. If you'd like to support our work,
+
+25
+00:01:10,617 --> 00:01:12,650
+我们鼓励你加入我们的会员社区。
+we encourage you to join our members community.
+
+26
+00:01:13,130 --> 00:01:15,559
+成为会员后，你会收到我们的季度纸质杂志，
+As a member, you'll receive our quarterly print magazine,
+
+27
+00:01:15,559 --> 00:01:18,930
+里面精心收录了最重要的思想和访谈。
+a beautifully designed collection of the ideas and interviews that matter most.
+
+28
+00:01:19,490 --> 00:01:23,401
+Big Think 面向那些想深入大问题的好奇者，
+Big think is for curious people who want to take deep dives into big ideas to
+
+29
+00:01:23,401 --> 00:01:24,410
+也欢迎你支持这样的媒体。
+support the media.
+
+30
+00:01:24,450 --> 00:01:27,890
+如果你想看到这样的内容，请访问 bigthink.com/membership。
+You want to see in the world, go to bigthink com membership.
+
+31
+00:01:28,800 --> 00:01:34,480
+现在回到访谈：AI 如何永久改变数学与科学。
+And now back to the interview, how AI is changing math and Science Forever.
+
+32
+00:01:37,160 --> 00:01:42,022
+科学和数学在几个世纪里发生了很大变化。传统上，
+Science and mathematics has changed a lot over the centuries. Traditionally,
+
+33
+00:01:42,022 --> 00:01:46,000
+科学的两大范式是理论和实验。
+in science, the two major paradigms were theory and experiment.
+
+34
+00:01:46,440 --> 00:01:48,855
+比如你会建立一个理论，
+Like you would, you would create a theory like, you know,
+
+35
+00:01:48,855 --> 00:01:52,760
+开普勒可能提出行星运动理论，牛顿可能提出引力理论。
+Kepler might create a theory of how planets move or Newton might create a theory of gravity.
+
+36
+00:01:53,160 --> 00:01:56,477
+然后你会有实验数据，去做实验，
+And then there's this experimental data that you would run an experiment
+
+37
+00:01:56,477 --> 00:02:00,120
+看看会发生什么，再检验理论和实验是否吻合。
+and see what happens, and then you try to see if the theory and the experiment fit.
+
+38
+00:02:00,400 --> 00:02:02,800
+数学略有不同，它几乎完全是理论性的。
+Math was a little different in that it was almost entirely theory.
+
+39
+00:02:04,160 --> 00:02:07,040
+纯数学里能做的实验非常少。
+There are very, very few experiments that you would do purely in mathematics.
+
+40
+00:02:07,400 --> 00:02:12,040
+当然也有一些例子，比如高斯曾著名地计算出前十万个素数。
+There were a few, for example, Gauss famously computed the first hundred thousand prime numbers.
+
+41
+00:02:12,390 --> 00:02:14,390
+那成了他用来做预测的数据集。
+And that was a data set that he used to make predictions.
+
+42
+00:02:14,390 --> 00:02:16,390
+他预测了我们现在所说的素数定理。
+He predicted what we now call the prime number theorem.
+
+43
+00:02:16,750 --> 00:02:20,550
+但理论和实验曾是科学的两种主要形式。
+But science and experiment were the two major forms of science.
+
+44
+00:02:21,150 --> 00:02:25,136
+后来模拟出现了，你不必再做大型、
+Then later on, simulation came along that you didn't have to run a big,
+
+45
+00:02:25,136 --> 00:02:26,510
+昂贵的实验。
+expensive experiment.
+
+46
+00:02:26,630 --> 00:02:30,291
+有时你可以在超级计算机里模拟，
+Sometimes you could just simulate, let's say,
+
+47
+00:02:30,291 --> 00:02:34,610
+比如模拟飓风，而不是在现实中制造它。
+a Hurricane in a supercomputer instead of in real life.
+
+48
+00:02:34,850 --> 00:02:38,100
+后来又出现了大数据。
+And then later on, big data came along that
+
+49
+00:02:38,100 --> 00:02:43,857
+你不再只是做少量实验，去确认或否定某个
+rather than just do a small number of experiments to try to confirm or deny a
+
+50
+00:02:43,857 --> 00:02:45,250
+特定理论。
+specific theory.
+
+51
+00:02:45,410 --> 00:02:51,079
+你可以拿兆字节甚至拍字节的数据来辨认模式，
+You could take megabytes or petabytes of data and try to discern patterns,
+
+52
+00:02:51,079 --> 00:02:55,010
+从海量数据集中提取规律。
+try to extract out laws from just massive datasets.
+
+53
+00:02:55,410 --> 00:02:58,010
+这是更晚近出现的一类科学方式。
+And that's a more emerging type of science.
+
+54
+00:02:58,450 --> 00:03:00,903
+但现在，所有这些科学模式
+But now all these modes of science, like,
+
+55
+00:03:00,903 --> 00:03:04,800
+都正在被 AI 的加入改变。
+are being transformed because we now also have AI to to to help us.
+
+56
+00:03:04,800 --> 00:03:09,600
+过去，所有这些科学工作都必须由人类科学家完成。
+So, so in the past, every one of these ways of doing science had to be done by human scientists.
+
+57
+00:03:09,720 --> 00:03:13,529
+你需要有人做实验，或者有人做
+you know, you had to have someone to perform the experiments or someone to do the
+
+58
+00:03:13,529 --> 00:03:17,280
+理论计算、运行模拟，或者检查数据。
+theoretical calculations or run the simulations, um, or go through the data.
+
+59
+00:03:17,480 --> 00:03:20,105
+你当然可以在其中一些环节使用计算机，
+And you could use computers for some of that, but you have to,
+
+60
+00:03:20,105 --> 00:03:21,680
+但即便如此，你仍然得编写
+but even then you had to program the.
+
+61
+00:03:22,000 --> 00:03:25,000
+数据分析工具之类的东西，也仍然需要大量专业知识。
+The data analysis tool or whatever and you still need a lot of expertise.
+
+62
+00:03:25,350 --> 00:03:29,230
+现在我们有可以自动做实验的自动化实验室。
+you know, we have automated labs that can that can perform experiments automatically.
+
+63
+00:03:29,750 --> 00:03:33,094
+你可以让编程智能体替你运行模拟，
+You can you can get a coding agent to run a simulation for you
+
+64
+00:03:33,094 --> 00:03:36,096
+也可以尝试自动化数据分析，
+and you can try to to also run automated data analysis
+
+65
+00:03:36,096 --> 00:03:39,030
+而且越来越多地，也可以做自动化理论推导。
+and increasingly you can also do automated theory.
+
+66
+00:03:39,350 --> 00:03:41,614
+你可以提出一个数学问题，然后问：
+You can take some mathematical problem and ask,
+
+67
+00:03:41,614 --> 00:03:44,670
+这些假设和公理会推出什么后果？
+what are the consequences of these hypotheses and these axioms?
+
+68
+00:03:45,270 --> 00:03:47,474
+应该得到什么结论？
+What, what conclusion should you get?
+
+69
+00:03:47,474 --> 00:03:50,230
+这些工具现在能以更快速度大规模完成这类工作。
+These tools can now be done at scale much faster.
+
+70
+00:03:51,050 --> 00:03:55,976
+你可能可以运行比任何单个人类科学家都多得多的
+You could potentially run many more theoretical analyses than any one human
+
+71
+00:03:55,976 --> 00:03:57,130
+理论分析。
+scientist could.
+
+72
+00:03:57,450 --> 00:03:59,770
+另一方面，这并不是我们唯一想要的东西。
+On the other hand, this is not the only thing that we want.
+
+73
+00:04:00,130 --> 00:04:02,210
+慢慢做事也有它的价值。
+There is value in doing things the slow way, you know.
+
+74
+00:04:02,210 --> 00:04:06,409
+一个科学家花许多小时用纸笔推导，
+So a scientist who is spending hours and hours working things out on pen and paper,
+
+75
+00:04:06,409 --> 00:04:09,311
+亲手在现场做实验，
+doing the experiments in the field with their bare hands
+
+76
+00:04:09,311 --> 00:04:12,090
+并真正调试出现问题的模拟，
+and actually debugging the simulations that show up.
+
+77
+00:04:12,450 --> 00:04:16,139
+他往往会学到许多额外洞见，超出
+They often learn a lot of, of extra insight beyond just getting the answer
+
+78
+00:04:16,139 --> 00:04:20,130
+他原本想寻找的答案，还可能发现新的现象。
+that they're trying to seek and they can find, they can discover new phenomena.
+
+79
+00:04:20,530 --> 00:04:23,349
+他们会看到联系，看到相似之处，
+They can see connections, they can see similarities to some,
+
+80
+00:04:23,349 --> 00:04:26,611
+看到文献中其他地方曾研究过的东西，
+some previous thing that's been studied elsewhere in the literature,
+
+81
+00:04:26,611 --> 00:04:30,480
+并把自己的发现传达给别人。
+and they can communicate what, what they, uh, what they are finding to other people.
+
+82
+00:04:31,040 --> 00:04:33,953
+所以这里有一个悖论：一方面，
+So there is this paradox that on the one hand,
+
+83
+00:04:33,953 --> 00:04:37,417
+AI 正变得更强、更有能力，
+AIs are becoming more powerful and more capable and,
+
+84
+00:04:37,417 --> 00:04:43,400
+错误更少，表面上也实现了许多我们想要的目标。
+and making fewer mistakes and they are ostensibly achieving a lot of the goals that we want.
+
+85
+00:04:43,560 --> 00:04:45,840
+我们以为科学家想做的就是这些。
+We think scientists are trying to, to do it.
+
+86
+00:04:46,400 --> 00:04:48,840
+它们运行实验、分析数据、撰写论文。
+They're running experiments. They're analyzing data. They're writing papers.
+
+87
+00:04:49,160 --> 00:04:53,419
+但代价可能是，AI 学会了某种技能，
+But it may be that it comes at the cost of the AI becomes picks up some skill,
+
+88
+00:04:53,419 --> 00:04:56,910
+而人类科学家却没有因此更擅长做科学。
+but no human scientist gets any better at doing the science.
+
+89
+00:04:57,750 --> 00:05:01,198
+没有人类能准确说清刚刚发生了什么，
+No human can communicate exactly what just happened
+
+90
+00:05:01,198 --> 00:05:04,567
+也无法说明这项科学发现为什么有趣，
+and why this scientific discovery is interesting,
+
+91
+00:05:04,567 --> 00:05:08,798
+这个证明为什么新，它有什么特征、如何与其他东西相连。
+why this proof is new and what features it has and how it connects,
+
+92
+00:05:08,798 --> 00:05:11,070
+我们也许必须重新设计
+we may have to sort of redesign our.
+
+93
+00:05:12,380 --> 00:05:15,660
+我们对科学的理解，以及我们真正想从科学中得到什么。
+Conception of what science is and what we actually want out of science.
+
+94
+00:05:15,900 --> 00:05:18,940
+科学究竟是为了什么？我们到底想做什么？
+What exactly is science for and what are we trying to do?
+
+95
+00:05:18,940 --> 00:05:21,903
+当我们把 AI 工具指向科学时，
+And is there a danger that we are optimizing the wrong thing
+
+96
+00:05:21,903 --> 00:05:24,140
+是否有可能正在优化错误的东西？
+when we are pointing our AI tools at science.
+
+97
+00:05:25,380 --> 00:05:29,858
+现代 AI 由一种叫机器学习的算法驱动，
+Modern AIs are powered by a type of algorithm known as machine learning,
+
+98
+00:05:29,858 --> 00:05:32,620
+它试图预测数据中的模式。
+which is trying to predict patterns in data.
+
+99
+00:05:32,960 --> 00:05:35,560
+机器学习的一个很简单例子是回归。
+So a very simple example of machine learning is regression.
+
+100
+00:05:35,880 --> 00:05:38,538
+如果你有一些输入和一些输出，
+So if you have some inputs and some outputs,
+
+101
+00:05:38,538 --> 00:05:42,526
+比如你观察到，如果给某种动物喂更多食物，
+like let's say you observe that if you feed some animal more food,
+
+102
+00:05:42,526 --> 00:05:44,520
+它们就会长得更大，对吧？
+they get they get bigger, right?
+
+103
+00:05:44,520 --> 00:05:47,315
+于是你可以画出给不同动物喂了多少食物，
+So you can plot how much food you give various animals
+
+104
+00:05:47,315 --> 00:05:51,000
+再画出它们的体重之类，于是图上有了一些点。
+and you plot their weight or something and you get some dots on a graph.
+
+105
+00:05:51,000 --> 00:05:54,080
+如果运气好，这些点会落在某条直线附近。
+And if you're lucky, they will, they will fit some line and then.
+
+106
+00:05:54,980 --> 00:05:56,380
+那条线就成了你的预测。
+And that line becomes your prediction.
+
+107
+00:05:56,500 --> 00:06:00,000
+于是如果你给这只狗这么多食物，
+So then if you give this dog's this sort sort this much food,
+
+108
+00:06:00,000 --> 00:06:02,000
+它可能会增加这么多体重。
+they would gain this much weight.
+
+109
+00:06:02,360 --> 00:06:06,480
+但在真实世界里，关系并不总是这么漂亮的线性关系。
+Now in the real world, you don't always get these nice linear relationships.
+
+110
+00:06:06,840 --> 00:06:09,135
+通常会有很多很多输入，
+Often there are many, many inputs, and there's many,
+
+111
+00:06:09,135 --> 00:06:12,160
+也有很多很多输出，它们之间的关系可能非常复杂。
+many outputs and the relationship can be, can be really complicated.
+
+112
+00:06:12,720 --> 00:06:14,972
+但有时候数据本身有一种形状，
+But sometimes the data has a shape and
+
+113
+00:06:14,972 --> 00:06:19,257
+而我们现在有各种聪明方法来探测这种形状，
+and there we now have all kinds of clever ways to kind of detect the shape
+
+114
+00:06:19,257 --> 00:06:22,380
+并试着为这些输入输出对拟合曲线。
+and try to fit curves to to these input output pairs.
+
+115
+00:06:23,140 --> 00:06:26,780
+驱动聊天机器人等工具的大语言模型，
+What large language models which power chatbots and things like that.
+
+116
+00:06:26,940 --> 00:06:30,180
+本质上只是在玩“预测一句话下一个词”的游戏。
+They're just playing the game of naming the next word in a sentence.
+
+117
+00:06:30,300 --> 00:06:34,088
+粗略地说，如果我说 roses are red, violets are blank，
+Roughly speaking, if I say roses are red, violets are blank,
+
+118
+00:06:34,088 --> 00:06:36,740
+下一个词应该是什么？
+what is the next word to fill the sentence?
+
+119
+00:06:36,940 --> 00:06:39,420
+你大概能猜到答案是 blue。这就是输出。
+You can probably guess the answer is blue. That's an output.
+
+120
+00:06:39,660 --> 00:06:43,679
+你可以想象一个巨大的图，输入是这些未完成的句子，
+You can imagine this giant plot where the inputs are all these incomplete sentences
+
+121
+00:06:43,679 --> 00:06:46,090
+输出则是你想补全的词。
+and the outputs are the words you want to complete.
+
+122
+00:06:46,330 --> 00:06:49,591
+于是你在这个高维空间里有了所有这些点，
+And you got all these dots in this high dimensional space
+
+123
+00:06:49,591 --> 00:06:51,533
+你想为它们拟合一条曲线，
+and you want to fit some curve to it
+
+124
+00:06:51,533 --> 00:06:55,210
+用来解释最可能出现的下一个词是什么。
+that will try to explain what is the most likely word to come out.
+
+125
+00:06:55,410 --> 00:06:56,610
+有时答案不止一个。
+Sometimes there's more than one answer.
+
+126
+00:06:57,170 --> 00:06:59,203
+比如“你好，我叫……”后面可能有很多
+Hello, my name is, you know, there could be many,
+
+127
+00:06:59,203 --> 00:07:01,439
+名字可以接在句子后面，
+many names you could put after the end of the sentence
+
+128
+00:07:01,439 --> 00:07:03,116
+所以你不总是只有一个答案，
+so you don't always get a single answer,
+
+129
+00:07:03,116 --> 00:07:05,250
+但你可以尝试找出最合理的答案。
+but you could try to get the most plausible answer.
+
+130
+00:07:05,740 --> 00:07:07,851
+人们已经试过这种方法，
+People have tried this and, and you know, the,
+
+131
+00:07:07,851 --> 00:07:11,296
+你手机上的自动补全功能就是这样做的，
+the autocomplete feature on your phone does this, you know, like you, you,
+
+132
+00:07:11,296 --> 00:07:13,740
+你输入一些文字，它会建议下一个词。
+you text something and it will suggest the next word.
+
+133
+00:07:13,740 --> 00:07:15,980
+有时它还挺对，有时又很荒唐。
+And sometimes it's kind of right, sometimes it's silly.
+
+134
+00:07:16,540 --> 00:07:18,463
+一旦你有了任何这种操作，
+Once you have any kind of operation like this,
+
+135
+00:07:18,463 --> 00:07:20,842
+它就会形成某种动态，你可以不断继续，
+it creates some dynamics and you can just keep, you know,
+
+136
+00:07:20,842 --> 00:07:22,715
+很多人都在手机上玩过这种东西，
+many people have just played on their phone,
+
+137
+00:07:22,715 --> 00:07:24,790
+一遍又一遍按自动补全，
+just press autocomplete over and over again and,
+
+138
+00:07:24,790 --> 00:07:26,460
+最后得到一些胡言乱语的句子。
+but you get these gibberish sentences.
+
+139
+00:07:26,660 --> 00:07:29,780
+就像猴子在打字机上乱敲一样。
+Okay, you get monkeys typing on typewriters.
+
+140
+00:07:30,130 --> 00:07:35,517
+但大语言模型的神奇之处在于，如果你用足够多的数据训练它，
+But the magic of LLMs is that if you train these LLMs on enough data, okay,
+
+141
+00:07:35,517 --> 00:07:38,749
+比如数万亿个数据点，
+so trillions and trillions of data points,
+
+142
+00:07:38,749 --> 00:07:42,610
+并且真的尽力拟合出尽可能好的曲线，
+and you really try to fit as good a curve as possible.
+
+143
+00:07:42,650 --> 00:07:45,982
+这需要数百万美元级别的算力，
+And this takes like millions and millions of dollars of computing power
+
+144
+00:07:45,982 --> 00:07:47,370
+以及好几个月的时间。
+and months and months of time.
+
+145
+00:07:47,730 --> 00:07:51,350
+然后突然之间，即使你反复迭代，它仍然保持连贯。
+Then suddenly, even when you iterate, it stays coherent.
+
+146
+00:07:51,510 --> 00:07:56,110
+它开始听起来不像乱敲键盘，而像一个人在说话。
+It begins to sound not like monkeys, but it actually sounds like a human speaking.
+
+147
+00:07:56,590 --> 00:08:00,421
+我们并不完全理解为什么会这样，
+And somehow we don't fully understand why that's the case,
+
+148
+00:08:00,421 --> 00:08:05,737
+但看起来确实如此：英语或其他自然语言
+but what seems to be true is that language like English or other natural languages
+
+149
+00:08:05,737 --> 00:08:10,350
+包含许多我们没有自觉意识到的隐藏模式。
+contains a lot of hidden patterns that we're not consciously aware of.
+
+150
+00:08:10,390 --> 00:08:11,910
+我们当然知道英语的一些规则。
+I mean, we Now some of the laws of English.
+
+151
+00:08:11,910 --> 00:08:15,350
+比如语法规则等等，但还有
+you know, there's laws of grammar and things, but there are,
+
+152
+00:08:15,350 --> 00:08:19,960
+许多没有明说、也没有写下来的语言规则，是人类自然习得的。
+there are sort of unspoken, unwritten rules of, of language that humans pick up.
+
+153
+00:08:20,000 --> 00:08:24,313
+一个孩子即使没人教他什么是名词、
+you know, a human child, even though they're not taught, you know, what a noun is,
+
+154
+00:08:24,313 --> 00:08:26,244
+什么是动词之类，
+what a verb is or whatever, they can,
+
+155
+00:08:26,244 --> 00:08:28,690
+也能学会英语词语应该按什么顺序排列，
+they can pick up what order English words go in
+
+156
+00:08:28,690 --> 00:08:31,200
+只是因为持续接触这种语言。
+and just by continue exposure to the language.
+
+157
+00:08:31,840 --> 00:08:36,044
+看起来你也可以教这些模型捕捉语言模式，
+It seems like you can teach these models to also pick up patterns in language to the
+
+158
+00:08:36,044 --> 00:08:40,186
+甚至给它们数学题，比如 2 + 3 的答案是，
+point where you can give them math questions, the answer to 2 + 3 is, and they will,
+
+159
+00:08:40,186 --> 00:08:40,990
+它们会说 5。
+they will say 5.
+
+160
+00:08:41,230 --> 00:08:44,521
+它们经过训练，能够给出
+They have been trained to, to get the, the correct answer to,
+
+161
+00:08:44,521 --> 00:08:46,430
+至少简单数学题的正确答案。
+to at least simple math questions.
+
+162
+00:08:47,110 --> 00:08:50,108
+一旦你具备一点说英语的能力，
+Once you have a little bit of ability to, to speak English,
+
+163
+00:08:50,108 --> 00:08:51,669
+你就可以形成循环，
+you can kind of go in loops and,
+
+164
+00:08:51,669 --> 00:08:54,292
+检查自己的工作，减少错误，
+and sort of check your work and make fewer mistakes
+
+165
+00:08:54,292 --> 00:08:57,790
+也可以提示这些模型一步一步推进，
+and you can prompt these models to, to proceed step by step and, and.
+
+166
+00:08:57,950 --> 00:08:58,270
+并且不要
+And not.
+
+167
+00:08:59,140 --> 00:09:01,700
+在没有反复检查之前就给出结论。
+Say something unless it's been double checked and so forth.
+
+168
+00:09:02,020 --> 00:09:04,674
+所以它们在某种意义上变得“更聪明”了一点，
+And so they've become a little bit smarter, quote unquote,
+
+169
+00:09:04,674 --> 00:09:07,437
+到了可以解决很多复杂任务的程度，
+to a point where they can solve many, many complicated tasks,
+
+170
+00:09:07,437 --> 00:09:09,820
+但它们仍然只是在猜下一个该说的词。
+but they're still just guessing the next word to say.
+
+171
+00:09:10,420 --> 00:09:14,660
+这并不真正扎根于对真实世界的深层理解。
+It's not really grounded in any deep understanding of the real world.
+
+172
+00:09:14,740 --> 00:09:18,145
+只是因为它们在英语
+It's just that they, they just have seen the patterns in that, in,
+
+173
+00:09:18,145 --> 00:09:21,929
+或其他吸收过的语言里见过太多模式，
+in the English language or other language that they've absorbed so well
+
+174
+00:09:21,929 --> 00:09:25,587
+以至于能模仿那些看起来很聪明的人说话，
+that they can mimic people who are speaking in an intelligent fashion
+
+175
+00:09:25,587 --> 00:09:29,560
+并且表现得足够像有智能，足以骗过我们。
+and they can present as being intelligent long enough that they can fool us.
+
+176
+00:09:29,560 --> 00:09:31,360
+同时也足够能做出一些有用的事情。
+But long enough they can actually do useful things.
+
+177
+00:09:31,680 --> 00:09:36,520
+所以现在我们可以让大语言模型给出证明，来解决某些数学问题。
+So, you know, we can now solve certain math problems by asking the LLM to provide a proof.
+
+178
+00:09:37,000 --> 00:09:39,139
+有时这个证明完全是胡扯，
+And sometimes the proof is complete rubbish,
+
+179
+00:09:39,139 --> 00:09:41,560
+但如果循环足够多、检查足够多，
+but if you loop it enough and you have enough checks.
+
+180
+00:09:42,640 --> 00:09:45,920
+确实可以开始得到正的成功率。
+You can actually start having a positive success rate.
+
+181
+00:09:46,920 --> 00:09:50,240
+所以这是一种非常奇怪的问题求解方式。
+So it's a very strange way of solving problems. It is.
+
+182
+00:09:50,320 --> 00:09:54,957
+它和我们通常理解的智能几乎完全正交，
+It is like completely orthogonal to the way we normally think of intelligence
+
+183
+00:09:54,957 --> 00:09:58,880
+后者通常扎根、讲方法、从第一性原理出发。
+as being very grounded, methodical, thinking first principles.
+
+184
+00:09:59,320 --> 00:10:01,781
+这有点像一个知道很多东西的人，
+you know, it's like having someone who knows a lot and is,
+
+185
+00:10:01,781 --> 00:10:04,190
+但他有点醉，正在不断抛出想法。
+but is slightly drunk and is sort of throwing out ideas.
+
+186
+00:10:05,110 --> 00:10:09,110
+不过只要引导足够，你确实能提取出有用输出。
+But with enough guidance, you can actually extract useful output.
+
+187
+00:10:09,390 --> 00:10:12,623
+实际上这还不是最前沿的数学，
+It's not the most advanced mathematics out there, actually,
+
+188
+00:10:12,623 --> 00:10:16,237
+但只要给它大量数据、大量时间和许多补丁，
+but you give it a lot of data and a lot of time and a lot of other Band Aids
+
+189
+00:10:16,237 --> 00:10:18,710
+它确实能工作得相当不错。
+and things, and it actually works pretty well.
+
+190
+00:10:19,270 --> 00:10:22,577
+我发现关于 AI 在科学
+I find that some of the debate on AI's role in science
+
+191
+00:10:22,577 --> 00:10:27,807
+和其他学科中的作用，很多争论常常默认一种一维视角：
+and other disciplines is often default to a one dimensional view of thinking like
+
+192
+00:10:27,807 --> 00:10:33,190
+有简单任务、困难任务、非常困难的任务。
+this, this, there's easy tasks and, and, and hard tasks and very hard tasks and, and.
+
+193
+00:10:33,390 --> 00:10:35,802
+人类能做到某个难度级别，
+And humans are can, can do tasks up to a certain level
+
+194
+00:10:35,802 --> 00:10:37,710
+AI 也能做到某个难度级别。
+and AIs can do tasks up to a certain level.
+
+195
+00:10:37,750 --> 00:10:39,150
+所以问题变成：谁更强？
+And so which one is which one is better?
+
+196
+00:10:39,750 --> 00:10:43,347
+这是一种一维思考方式。但我发现，
+That's kind of a one dimensional way of thinking but what I found when
+
+197
+00:10:43,347 --> 00:10:45,051
+当我和 AI 一起工作，
+when sort of working with AIs and
+
+198
+00:10:45,051 --> 00:10:49,278
+并比较它们和人类解决问题的方式时，
+and comparing their way of solving problems to humans way of solving problems is
+
+199
+00:10:49,278 --> 00:10:51,550
+它们其实相当互补。
+that they are really quite complementary.
+
+200
+00:10:51,930 --> 00:10:55,610
+人类专家更关注深度。比如一位人类数学家，
+Human experts will focus on depth, so like a human mathematician,
+
+201
+00:10:55,610 --> 00:10:59,557
+面前有成千上万个可以研究的问题，
+which will solve thousands and thousands of problems they can work on,
+
+202
+00:10:59,557 --> 00:11:03,370
+但他会挑一两个自己认为困难的问题。
+but they will pick one or two problems that they think are difficult.
+
+203
+00:11:03,490 --> 00:11:05,890
+这些问题不能难到完全不可能，
+But not so difficult that they're impossible,
+
+204
+00:11:05,890 --> 00:11:10,076
+但要足够困难，使得尝试推进一点点
+but they're difficult enough that the exercise of trying to make a bit of progress
+
+205
+00:11:10,076 --> 00:11:13,461
+就能揭示各种洞见，供他分享，
+towards them will reveal all kinds of insights that they can share
+
+206
+00:11:13,461 --> 00:11:17,769
+也让学生、合作者或其他人可以在此基础上继续推进。
+and maybe their students or some other collaborators or other people can build upon
+
+207
+00:11:17,769 --> 00:11:20,600
+当我们把 AI 指向真正困难的
+what they do. When we point the AIs at really difficult.
+
+208
+00:11:20,720 --> 00:11:24,040
+那些标准方法都不适用的问题时，
+Problems where none of the standard techniques apply.
+
+209
+00:11:24,160 --> 00:11:27,893
+它们仍然非常糟糕，基本上只是在随机猜测。
+They are still very, very bad at, I mean, they're just randomly guessing,
+
+210
+00:11:27,893 --> 00:11:29,240
+但它们擅长的是广度。
+but they excel at breadth.
+
+211
+00:11:29,440 --> 00:11:33,479
+如果你把一千个不同难度的问题交给它们，
+So if you point them at 1,000 problems of various difficulties,
+
+212
+00:11:33,479 --> 00:11:36,451
+有些可能太难，但也会有一些
+some may be just too hard, but there will be some
+
+213
+00:11:36,451 --> 00:11:39,880
+正好在现有方法能够触及的范围内。
+which actually are within reach of existing methods.
+
+214
+00:11:39,960 --> 00:11:42,880
+文献里可能已经有某种方法能解决你的问题，
+And there's some method out there in the literature which will solve your problem.
+
+215
+00:11:42,880 --> 00:11:45,120
+或者需要把两种不同方法结合起来。
+Or maybe you have to combine together two separate methods.
+
+216
+00:11:45,440 --> 00:11:48,640
+只是没有足够多人类专家去查看所有这些问题。
+And it's just that there's just not enough human experts to look at all these problems.
+
+217
+00:11:49,160 --> 00:11:51,761
+而那些确实看过这些问题的人类专家，
+And the human experts that do look at these problems,
+
+218
+00:11:51,761 --> 00:11:55,485
+可能也没有意识到 1970 年某本期刊里有篇冷门论文，
+they may not realize that there was this obscure paper from a journal in 1970
+
+219
+00:11:55,485 --> 00:11:58,440
+里面其实包含了解决这个问题的关键想法。
+that actually has the key idea that will solve this problem.
+
+220
+00:11:58,700 --> 00:12:01,885
+他们没有耐心或时间去遍历所有
+They don't have the patience or the time to sort of go through all the different
+
+221
+00:12:01,885 --> 00:12:04,580
+技术与问题之间可能匹配的组合。
+combinations of how which technique might work on which problem.
+
+222
+00:12:04,900 --> 00:12:07,563
+但 AI 会有些随机地，
+But the AIs, you know, they were somewhat randomly,
+
+223
+00:12:07,563 --> 00:12:09,668
+做出某种有根据的猜测，
+they would take sort of educated guesses
+
+224
+00:12:09,668 --> 00:12:13,570
+判断哪些技术可能适用于某个问题；有些猜测会很蠢，
+as to what techniques might work for a problem and some of them will be stupid
+
+225
+00:12:13,570 --> 00:12:15,180
+但有些可能真的有效。
+and but some of them might work.
+
+226
+00:12:15,340 --> 00:12:19,740
+通过所有这些组合，我们发现有时它们能抓到
+And through all these combinations, we're finding that sometimes they can catch.
+
+227
+00:12:20,610 --> 00:12:24,210
+所有人类都错过的解法。
+They can catch a solution that the rest of all the humans have missed.
+
+228
+00:12:24,850 --> 00:12:28,810
+有时专家共识、传统看法本身是错的。
+Occasionally, the consensus, the conventional wisdom of the experts is wrong.
+
+229
+00:12:28,850 --> 00:12:32,020
+我们都以为某个问题有肯定答案，
+you know, we all think that a problem has a positive answer,
+
+230
+00:12:32,020 --> 00:12:34,090
+但其实它有否定答案。
+but actually it has a negative answer.
+
+231
+00:12:34,210 --> 00:12:37,610
+我们只是没有太多考察否定情形，因为大家都以为
+And we just didn't look at the negative case too much because we thought,
+
+232
+00:12:37,610 --> 00:12:39,650
+答案是真的。
+everyone thought that the answer was true.
+
+233
+00:12:40,050 --> 00:12:42,570
+但 AI 也许没有这种先入之见。
+But an AI may not have that preconception.
+
+234
+00:12:43,130 --> 00:12:45,970
+所以有时 AI 就像一双独立的眼睛。
+So sometimes the AI just serves as an independent pair of eyes.
+
+235
+00:12:46,410 --> 00:12:50,320
+因此，有些我们以为很难的问题，竟然有出人意料的简单
+And so some problems that we thought were very difficult had a surprisingly simple
+
+236
+00:12:50,320 --> 00:12:52,530
+解法；事后回看，也许
+solution, which in retrospect we should have,
+
+237
+00:12:52,530 --> 00:12:54,570
+我们自己本来也应该想到。
+maybe we should have gotten ourselves too.
+
+238
+00:12:55,010 --> 00:12:57,119
+当你把它们指向非常广泛的问题集合时，
+They're beginning to become successful at
+
+239
+00:12:57,119 --> 00:12:59,637
+它们开始变得成功，
+when you point them at a very broad range of problems
+
+240
+00:12:59,637 --> 00:13:01,570
+并能解决其中一定比例的问题。
+and they solve some percentage of them.
+
+241
+00:13:01,570 --> 00:13:05,290
+比如你给它们一千个问题，它们解决了其中 5%。
+Like maybe you point them at 1,000 problems and they solve 5% of those problems.
+
+242
+00:13:05,600 --> 00:13:06,800
+那仍然是 50 个问题被解决。
+That's still 50 problems solved.
+
+243
+00:13:07,000 --> 00:13:10,870
+从解决问题的原始数量看，
+You can already have tools that in some sense outperform humans,
+
+244
+00:13:10,870 --> 00:13:13,880
+你已经有某种意义上超过人类数学家的工具。
+mathematicians by raw number of problems solved.
+
+245
+00:13:14,280 --> 00:13:17,480
+当然，被解决的这 50 个问题未必是你最想解决的 50 个。
+Now, the 50 problems that get solved may not be the 50 problems that you most want solved.
+
+246
+00:13:17,720 --> 00:13:19,280
+它们可能只是随机的 50 个问题。
+They could be 50 random problems.
+
+247
+00:13:20,040 --> 00:13:21,880
+但这仍然非常令人印象深刻。
+But still, it is very impressive.
+
+248
+00:13:22,560 --> 00:13:25,840
+我认为作为一个行业，我们必须做的是，
+What I think we will have to do as a profession is.
+
+249
+00:13:26,760 --> 00:13:29,633
+找到办法把这种
+Find ways to, um, to incorporate this,
+
+250
+00:13:29,633 --> 00:13:34,032
+大规模解决部分问题的新能力纳入进来，
+this new capability to solve some problems at broad scales
+
+251
+00:13:34,032 --> 00:13:36,545
+并想清楚怎样让它
+and somehow figure out how to make
+
+252
+00:13:36,545 --> 00:13:42,560
+与我们缓慢解决少数深层问题的现有能力结合起来。
+that mesh with our existing capability to solve a few deep problems very slowly.
+
+253
+00:13:43,400 --> 00:13:47,520
+开普勒发现著名运动定律的故事非常迷人。
+Kepler's story of how he found his famous laws of motion is a fascinating one.
+
+254
+00:13:47,840 --> 00:13:49,800
+它显示了过程有多重要。
+It shows how important the process is.
+
+255
+00:13:50,080 --> 00:13:53,654
+开普勒了解了哥白尼的行星运动理论，
+Kepler Learned of Copernicus's theory of the motion of the planets,
+
+256
+00:13:53,654 --> 00:13:57,415
+哥白尼大致算出了地球离太阳多远，
+and Copernicus had roughly worked out how far the earth was from the sun,
+
+257
+00:13:57,415 --> 00:13:58,920
+火星有多远等等。
+how far Mars was and so forth.
+
+258
+00:13:59,200 --> 00:14:04,298
+开普勒注意到这些轨道比例有点像
+And Kepler noticed that the ratios of these orbits looked a little bit like certain
+
+259
+00:14:04,298 --> 00:14:06,440
+几何中出现的某些比例。
+ratios that showed up in geometry.
+
+260
+00:14:06,840 --> 00:14:10,224
+所以他最终提出，如果把每个行星对应一个球体，
+And so eventually he proposed that actually if you take spheres,
+
+261
+00:14:10,224 --> 00:14:13,796
+当时已知有六颗行星，
+one sphere for every planet, and he had six planets known at the time,
+
+262
+00:14:13,796 --> 00:14:16,616
+就可以在这六个球体之间嵌入五种柏拉图立体，
+that he could inscribe five platonic solids in, like,
+
+263
+00:14:16,616 --> 00:14:20,940
+比如十二面体、立方体、四面体等等。
+a dodecahedron and a cube and a tetrahedron and so forth between these six spheres.
+
+264
+00:14:21,220 --> 00:14:23,020
+他以为这样会得到完美吻合。
+And he thought it would get a perfect fit.
+
+265
+00:14:23,180 --> 00:14:27,020
+这就用五种柏拉图立体解释了太阳系的形状。
+And this explained the shape of the solar system in terms of the five platonic solids.
+
+266
+00:14:27,100 --> 00:14:28,740
+这是他非常漂亮的几何想法。
+This was his beautiful geometric idea.
+
+267
+00:14:28,940 --> 00:14:32,615
+直到后来他设法拿到了第谷·布拉赫
+It was only after he managed to get his hands on some really high quality
+
+268
+00:14:32,615 --> 00:14:36,352
+高质量的观测数据，而这些数据他还不得不争取，
+observational data of Tycho Brahe, which he had to fight for, actually,
+
+269
+00:14:36,352 --> 00:14:37,660
+甚至可能是偷来的。
+and possibly even steal.
+
+270
+00:14:38,220 --> 00:14:41,132
+他试着让自己的理论拟合这些数据，
+And he tried to fit it, his theory to this, this data,
+
+271
+00:14:41,132 --> 00:14:43,773
+结果发现并不完全吻合。
+and he found that it didn't actually quite fit,
+
+272
+00:14:43,773 --> 00:14:46,685
+以第谷数据的精度来看，
+that with the precision that Tycho's data offered,
+
+273
+00:14:46,685 --> 00:14:49,190
+这些球体并不能真正匹配。
+you could not quite get these spheres to fit.
+
+274
+00:14:49,230 --> 00:14:52,497
+事实上，正是在这个过程中，他发现火星
+And in fact, he discovered from that process that the the orbit of Mars
+
+275
+00:14:52,497 --> 00:14:55,990
+和地球的轨道根本不可能是圆，必须是别的形状。
+and earth could not be circles at all, that there had to be some other shape.
+
+276
+00:14:56,430 --> 00:14:59,590
+他花了很多年才弄清该怎么办。
+He spent many years figuring out what to do. I think.
+
+277
+00:15:00,120 --> 00:15:04,600
+我不知道他坚持柏拉图立体理论坚持了多久。
+I don't Now how long he held on to this theory of platonic solids.
+
+278
+00:15:04,920 --> 00:15:07,290
+你可以从他的著作里看到，他尝试了很多其他方法。
+And you can see in his writing, he tried many other things.
+
+279
+00:15:07,290 --> 00:15:08,920
+他试过让圆偏离中心，
+He tried to make the circles off center.
+
+280
+00:15:09,360 --> 00:15:13,720
+最后某个时刻，他找到了椭圆，一切突然吻合。
+And at some point, he landed on the ellipse and then suddenly everything fit.
+
+281
+00:15:14,200 --> 00:15:18,628
+这说明理论和实验之间存在相互作用。
+It does show that there is an interplay between theory and experiment,
+
+282
+00:15:18,628 --> 00:15:22,682
+你可以提出一个理论，如果它不符合数据，
+that you can post a theory, if it doesn't fit the data, it's, it's,
+
+283
+00:15:22,682 --> 00:15:26,960
+它也许不是好理论，但事情也更复杂。
+it may not be a good theory, but it's more complicated than that, too.
+
+284
+00:15:27,120 --> 00:15:31,011
+在开普勒之前，对哥白尼理论的一个批评是，
+Before Kepler, one of the criticisms of Copernicus's theory was
+
+285
+00:15:31,011 --> 00:15:33,388
+哥白尼本人已经承认，
+that already Copernicus acNowledged
+
+286
+00:15:33,388 --> 00:15:38,360
+他的测量不如当时最好的预测准确。
+that his measurements were worse than the best predictions available at the time.
+
+287
+00:15:38,400 --> 00:15:40,527
+当时最好的模型是地心模型，
+So the best models were the geocentric models,
+
+288
+00:15:40,527 --> 00:15:43,800
+它由希腊人发展，后来又经阿拉伯人和印度人完善。
+which had been developed by the Greeks and then by the Arabs and Indians.
+
+289
+00:15:44,420 --> 00:15:46,700
+其中有很多调整和精细校准，
+There were many, many adjustments and fine tuning.
+
+290
+00:15:46,780 --> 00:15:48,572
+形成了一个非常精确的模型，
+And they had a very, very precise model
+
+291
+00:15:48,572 --> 00:15:52,100
+能用极其复杂的方式预测所有行星的位置。
+that could predict in a very complicated way where all the planets would be.
+
+292
+00:15:52,820 --> 00:15:55,659
+而哥白尼的模型更差。
+And Copernicus's model was worse,
+
+293
+00:15:55,659 --> 00:16:01,140
+仅仅和数据吻合，并不一定是唯一指标。
+just Nowing agreement of data is not necessarily the only metric.
+
+294
+00:16:01,580 --> 00:16:04,203
+直到开普勒找到修正版模型，
+It was only after Kepler found his revised model
+
+295
+00:16:04,203 --> 00:16:06,827
+认为轨道不是圆而是椭圆之后，
+where the orbits were not circles but ellipses,
+
+296
+00:16:06,827 --> 00:16:11,090
+日心模型才比地心模型更准确。
+that the heliocentric model became more accurate than the geocentric model.
+
+297
+00:16:11,610 --> 00:16:13,813
+这告诉我们，
+What this tells you is that science is,
+
+298
+00:16:13,813 --> 00:16:16,015
+你并不总能立刻得到反馈，
+you can't always get instant feedback
+
+299
+00:16:16,015 --> 00:16:19,250
+知道自己是否解决了一个科学问题。
+as to whether you've solved a scientific problem or not.
+
+300
+00:16:19,530 --> 00:16:21,552
+如果开普勒和哥白尼当时有 AI，
+If Kepler and Copernicus had AIs
+
+301
+00:16:21,552 --> 00:16:24,998
+并让它们预测宇宙模型，
+and they asked them to predict a model for the universe,
+
+302
+00:16:24,998 --> 00:16:29,941
+那些生成正确日心模型的 AI
+it could be that the AIs that generated the correct heliocentric model would be
+
+303
+00:16:29,941 --> 00:16:34,286
+可能会被丢弃，因为它们最初的预测不如
+discarded, because initially their predictions were not as good as,
+
+304
+00:16:34,286 --> 00:16:38,480
+地心模型。真正消化所有这些理论需要时间。
+as as the geocentric ones. It takes time to really digest all these.
+
+305
+00:16:38,520 --> 00:16:41,577
+要看它们如何与我们关于行星、
+Theories and see how they fit with everything else that we Now about planets
+
+306
+00:16:41,577 --> 00:16:43,440
+运动、引力以及其他一切知识相吻合。
+and motion and and gravity and and everything.
+
+307
+00:16:43,960 --> 00:16:46,080
+一个真实担忧是，AI 太快了。
+One concern actually is that AI are too fast.
+
+308
+00:16:46,480 --> 00:16:49,485
+这些 AI 有危险会做所谓的过拟合，
+There's a danger that these AI will do what's called overfitting and
+
+309
+00:16:49,485 --> 00:16:51,120
+创造出一个非常复杂的模型，
+and create a very complicated model.
+
+310
+00:16:52,000 --> 00:16:54,455
+它与实际发生的事情无关，
+Which has nothing to do with what's actually going on,
+
+311
+00:16:54,455 --> 00:16:56,800
+只是极其精确地拟合了你的数据。
+but just fits your data extremely, extremely well.
+
+312
+00:16:57,600 --> 00:17:00,280
+但它无法外推到这个数据集之外。
+But it doesn't extrapolate beyond that data set.
+
+313
+00:17:00,840 --> 00:17:05,464
+如何把 AI 纳入科学发现过程，会是一项挑战。
+How we incorporate AI into the scientific discovery process will be a challenge.
+
+314
+00:17:05,464 --> 00:17:09,000
+它当然可以加速这个过程中的单个步骤。
+It can certainly accelerate individual steps of the process.
+
+315
+00:17:09,400 --> 00:17:12,920
+你可以更快做实验，更快写代码，
+You can make experimentation faster. You can write code faster.
+
+316
+00:17:12,960 --> 00:17:14,715
+更快写论文，
+You can write your papers faster,
+
+317
+00:17:14,715 --> 00:17:17,788
+但科学整体未必会仅仅因为
+but science as a whole may not necessarily accelerate just
+
+318
+00:17:17,788 --> 00:17:20,170
+每个组成部分都变快而加速。
+because every single component gets faster.
+
+319
+00:17:20,850 --> 00:17:26,048
+当我们把 AI 指向科学时，有危险会优化错误的东西，
+There is a danger that we will optimize the wrong thing when we point AI at science,
+
+320
+00:17:26,048 --> 00:17:30,482
+纸面上得到许多惊人成果，最后却发现
+and we will, on paper, get all these amazing successes and but find out
+
+321
+00:17:30,482 --> 00:17:34,610
+科学其实没有像过去那样真正前进。
+that science is not actually advancing in the way that it used to.
+
+322
+00:17:35,010 --> 00:17:35,810
+但我们会慢慢弄清楚。
+But we will find out.
+
+323
+00:17:36,410 --> 00:17:38,450
+拥有这些工具总比没有它们好。
+It's still better to have these tools and not have them.
+
+324
+00:17:38,530 --> 00:17:41,210
+只是我们仍在学习如何最高效地使用它们。
+But we're still learning how to use them most efficiently.
+
+325
+00:17:42,290 --> 00:17:46,762
+我们的一部分工作是解决问题，寻找问题的解法，
+Part of what we do is we solve problems and we try to find solutions to problems
+
+326
+00:17:46,762 --> 00:17:47,810
+并证明事情。
+and prove things.
+
+327
+00:17:48,370 --> 00:17:51,450
+证明有自己的生命周期。首先，
+And proofs go through a certain life cycle. First of all,
+
+328
+00:17:51,450 --> 00:17:53,810
+你必须为一个解法生成证明。
+you have to generate a proof for a solution.
+
+329
+00:17:54,250 --> 00:17:55,735
+这过去相当困难，
+And this used to be quite hard, but,
+
+330
+00:17:55,735 --> 00:17:58,090
+但你生成的一些证明会是错误的。
+but some of the proofs that you generate are incorrect.
+
+331
+00:17:58,610 --> 00:18:02,170
+所以接下来你必须验证它们，检查哪些是正确的。
+So then you have to, to verify them, check which ones, check that it's correct.
+
+332
+00:18:02,770 --> 00:18:04,334
+这过去也非常繁琐，
+And that also used to be quite tedious,
+
+333
+00:18:04,334 --> 00:18:07,170
+但这两项任务正变得越来越自动化。
+but both of these of these tasks are becoming more and more automated.
+
+334
+00:18:07,450 --> 00:18:11,610
+所以我们开始看到越来越多针对各种问题的候选解法。
+So we begin to see more and more proposed solutions to various problems.
+
+335
+00:18:11,650 --> 00:18:15,170
+其中许多确实是正确的，但证明也越来越长。
+And many of them are actually correct, but proofs are also getting longer.
+
+336
+00:18:15,490 --> 00:18:17,937
+而当这些证明由 AI 写出时，
+And when, when, when they're written by AIs,
+
+337
+00:18:17,937 --> 00:18:22,369
+它们常常并不好读。AI 生成的证明可能会花
+they are often not very pleasant to read an AI generated proof might might spend a
+
+338
+00:18:22,369 --> 00:18:25,080
+很多篇幅讨论非常平凡的东西，
+lot of time talking about something very trivial
+
+339
+00:18:25,080 --> 00:18:29,379
+却很少讨论论文中最有趣的部分。
+and spend very little time talking about the most interesting portion of, of,
+
+340
+00:18:29,379 --> 00:18:30,570
+我认为
+of the paper. I think.
+
+341
+00:18:30,570 --> 00:18:33,372
+这是因为 AI 无法区分什么是难点、什么是真正困难，
+Because the AIs can't distinguish sort of what is hard and what is difficult
+
+342
+00:18:33,372 --> 00:18:36,130
+因为对它们来说，用蛮力处理时一切花费的时间差不多。
+because by brute force, somehow everything takes the same amount of time.
+
+343
+00:18:36,130 --> 00:18:36,450
+都差不多。
+For them.
+
+344
+00:18:36,650 --> 00:18:40,479
+一个自然在论文最困难步骤上挣扎过的人类，
+A human who has sort of naturally had to struggle at the most difficult step of a
+
+345
+00:18:40,479 --> 00:18:43,130
+会自然地在那一步花更多篇幅。
+paper would naturally spend a lot of time on that step.
+
+346
+00:18:43,460 --> 00:18:45,674
+所以你需要把论文和证明写成
+And so you need to write out the paper in a proof,
+
+347
+00:18:45,674 --> 00:18:48,740
+读起来顺畅、也能向别人解释的形式。
+in a way that it reads well and it can be explained to other people.
+
+348
+00:18:49,180 --> 00:18:50,900
+然后其他人还必须因此感到兴奋。
+And then other people have to get excited by it.
+
+349
+00:18:51,780 --> 00:18:55,524
+他们必须接受它，觉得这真的很有趣，
+They have to accept it as, oh, this is really interesting that this,
+
+350
+00:18:55,524 --> 00:19:00,070
+它能帮助我解决自己的问题，或者真正澄清
+this will help me solve my own problems or it really clarifies why this phenomenon
+
+351
+00:19:00,070 --> 00:19:02,544
+为什么某个现象成立；它必须被接受。
+was true that it has to be accepted and this is
+
+352
+00:19:02,544 --> 00:19:06,020
+传统上，这正是同行评议流程发挥作用的地方。
+where we traditionally have the peer review process where we.
+
+353
+00:19:06,230 --> 00:19:12,273
+我们把论文送给审稿人，如果审稿人对这个结果感到兴奋，
+We send papers to referees, and if the referees are excited by this result,
+
+354
+00:19:12,273 --> 00:19:14,710
+论文就会被接受。
+then the paper gets accepted.
+
+355
+00:19:14,950 --> 00:19:18,245
+但有些论文也许从技术上是正确的，
+But, you know, there could be papers that are technically they are correct
+
+356
+00:19:18,245 --> 00:19:19,627
+可读性也还可以，
+and they are readable and fine,
+
+357
+00:19:19,627 --> 00:19:22,390
+但它回答的是一个没有人在乎的问题。
+but they could be answering a question that no one cares about.
+
+358
+00:19:22,630 --> 00:19:25,709
+最后，它还需要被彻底打磨，
+And then finally, it needs to be sort of completely polished
+
+359
+00:19:25,709 --> 00:19:28,110
+放进教材，并教给学生。
+and put into textbooks and taught to students.
+
+360
+00:19:28,870 --> 00:19:33,150
+而一个证明的第一版通常不适合写进教材。
+And often the first version of a proof is not suitable for writing on textbooks.
+
+361
+00:19:33,590 --> 00:19:35,889
+它通常是以非常低效的方式完成的。
+It often is done in a very inefficient way.
+
+362
+00:19:35,889 --> 00:19:38,910
+步骤顺序也不一定合乎逻辑。
+And it's not the ordering of steps is not quite logical.
+
+363
+00:19:39,670 --> 00:19:41,158
+这里存在一个消化过程，
+There's a certain digestion process
+
+364
+00:19:41,158 --> 00:19:43,510
+需要有人花很多时间认真思考：
+where someone has to spend a lot of time thinking very hard.
+
+365
+00:19:43,750 --> 00:19:47,313
+这篇论文到底应该怎样组织、怎样编辑，
+So what is the completely the right way to organize, to edit the paper,
+
+366
+00:19:47,313 --> 00:19:51,121
+怎样让它流动起来，有点像你剪辑
+to sort of flow in the same way a little bit like how you would you would edit a
+
+367
+00:19:51,121 --> 00:19:52,350
+一部纪录片或电影。
+documentary or a movie.
+
+368
+00:19:52,930 --> 00:19:56,999
+所以我们现在看到的是，AI 工具正在加速这个过程的早期阶段，
+And so what we're finding is that AI tools are accelerating the early stages of this
+
+369
+00:19:56,999 --> 00:19:58,650
+但没有加速后期阶段。
+process, but not the late stages.
+
+370
+00:19:59,250 --> 00:20:00,610
+我们现在正在生成许多证明。
+We are now generating many proofs.
+
+371
+00:20:00,730 --> 00:20:03,042
+我们也在验证其中一部分，
+We are verifying a bunch of them,
+
+372
+00:20:03,042 --> 00:20:05,524
+但理解它们、
+but the pace of understanding them
+
+373
+00:20:05,524 --> 00:20:10,490
+并把它们整理成最终教材形式的速度，仍然由人类决定。
+and putting them into the final textbook form is still done by humans.
+
+374
+00:20:10,850 --> 00:20:14,964
+事实上，我们正在经历一种可以称为“证明消化不良”的现象。
+And in fact, we're now experiencing what you might call proof indigestion,
+
+375
+00:20:14,964 --> 00:20:18,818
+突然有大量待处理的问题解法，
+where suddenly there's lots and lots of pending solutions to problems
+
+376
+00:20:18,818 --> 00:20:23,063
+它们本该被理解、本该进入教材，
+that should be understood and should be going to textbooks, but they're just,
+
+377
+00:20:23,063 --> 00:20:24,630
+但我们现在只是被淹没了。
+we're just flooded now with.
+
+378
+00:20:24,710 --> 00:20:27,310
+数量太多，我们必须筛选、必须分诊。
+With too many of them and we have to pick and we have to triage.
+
+379
+00:20:27,790 --> 00:20:29,710
+这是以前从未需要发生的事情。
+And this is something that has never had to happen before.
+
+380
+00:20:30,070 --> 00:20:32,867
+过去解法出现得非常罕见，
+It used to be that solutions came out so rarely that
+
+381
+00:20:32,867 --> 00:20:35,531
+如果一个重大问题被解决，
+if a solution to a major problem got, got solved,
+
+382
+00:20:35,531 --> 00:20:39,460
+所有专家都会立刻放下手头的事去读它、消化它，
+all the experts would so drop everything and read it and try to digest it
+
+383
+00:20:39,460 --> 00:20:42,790
+因为它如此稀有、如此有价值，
+as quickly as possible because it was so rare and so valuable
+
+384
+00:20:42,790 --> 00:20:46,120
+值得这样做。但现在我们被淹没了。
+that it was worth doing. And now we're just getting flooded.
+
+385
+00:20:46,160 --> 00:20:49,379
+面对所有这些可能的解法，我自己也
+With, with all these possible solutions, I myself, you know,
+
+386
+00:20:49,379 --> 00:20:53,544
+不得不放弃追踪我所在领域
+I've had to stop trying to stay current with all the latest developments in, in,
+
+387
+00:20:53,544 --> 00:20:54,680
+所有最新进展的尝试。
+in my, in, in my field.
+
+388
+00:20:54,840 --> 00:20:56,835
+有时发生的事情实在太多，
+Sometimes there's just so much going on,
+
+389
+00:20:56,835 --> 00:21:00,120
+我现在无法保证读完每一个新进展。
+I can't promise now to read every single development that shows up.
+
+390
+00:21:00,120 --> 00:21:03,739
+其实这在 AI 之前就已经开始成为问题，
+I mean, this is already beginning to be a problem even before AI,
+
+391
+00:21:03,739 --> 00:21:08,040
+但 AI 极大加速了内容生成的总体规模。
+but AI has really accelerated the sheer volume of content being generated.
+
+392
+00:21:08,280 --> 00:21:12,024
+所以我们将需要更好的策展和过滤。
+And so we're going to need much better curation and filtering.
+
+393
+00:21:12,024 --> 00:21:13,680
+这是一个好问题。
+It's a good problem to have.
+
+394
+00:21:14,080 --> 00:21:17,108
+就像食物太多、吃不完，
+I mean, it's like it's better to have too much food,
+
+395
+00:21:17,108 --> 00:21:20,280
+总比没有足够食物要好。
+more food than you can eat than not enough food to eat.
+
+396
+00:21:20,590 --> 00:21:21,830
+但它仍然是一个问题。
+But it is still a problem.
+
+397
+00:21:23,670 --> 00:21:27,442
+对像我这样过去三年一直关注进展的人来说，
+AIs have become increasingly capable in mathematics for people like me who have been
+
+398
+00:21:27,442 --> 00:21:29,832
+AI 在数学上的能力越来越强，
+following the developments for the last three years,
+
+399
+00:21:29,832 --> 00:21:32,170
+其间有一种稳定推进的轨迹。
+there's been a kind of steady progression, you know,
+
+400
+00:21:32,170 --> 00:21:35,783
+四年前它们能解初中数学题，然后能解
+so four years ago they could solve middle school math problems and then they could
+
+401
+00:21:35,783 --> 00:21:37,270
+高中数学题。
+solve high school math problems.
+
+402
+00:21:37,350 --> 00:21:40,770
+再后来是高中奥赛水平的问题，
+And then high school Olympiad level problems and then, um,
+
+403
+00:21:40,770 --> 00:21:45,237
+以及一些研究生资格考试水平的问题，
+some problems you get like graduate student level qualifying exam problems
+
+404
+00:21:45,237 --> 00:21:47,959
+接着它们开始解决少数
+and then they're starting to solve a few of the,
+
+405
+00:21:47,959 --> 00:21:52,636
+也许像 Paul Erdős 会提出、但没人真正关注的
+the minor unsolved problems that maybe someone like Paul erdős would have posed
+
+406
+00:21:52,636 --> 00:21:54,730
+小型未解决问题。
+but no one really looked at. So it's.
+
+407
+00:21:54,770 --> 00:21:55,770
+这其中有很多低垂的果实。
+A lot of low hanging fruit.
+
+408
+00:21:56,130 --> 00:21:59,751
+最近又有一两次，它们
+And then just recently there's been one or two occasions where they, they,
+
+409
+00:21:59,751 --> 00:22:01,503
+成功解决了一些
+they managed to solve some problems
+
+410
+00:22:01,503 --> 00:22:04,190
+人们确实非常努力想解决的问题。
+that people actually really did try very hard to solve.
+
+411
+00:22:04,710 --> 00:22:09,881
+某种意义上，人类整体都走错了路，而 AI
+Somehow collectively, the humans all had, were taking the wrong turn and the AIs,
+
+412
+00:22:09,881 --> 00:22:14,747
+带着一组不同偏见，拼凑出了一个
+which had a different set of biases had managed to cobble together a solution
+
+413
+00:22:14,747 --> 00:22:19,310
+相当巧妙、并且已经产生影响的解法。
+which was quite clever and has been quite, it's already had some impact.
+
+414
+00:22:19,350 --> 00:22:23,753
+例如单位距离问题附近的一些问题，
+There's been some nearby problems to the unit distance problem, for instance,
+
+415
+00:22:23,753 --> 00:22:28,090
+现在也被借鉴 AI 技术的人类解决了。
+which have now also been solved by humans who have adapted the AI's technique.
+
+416
+00:22:28,450 --> 00:22:29,450
+我觉得这很令人兴奋。
+I find that quite exciting.
+
+417
+00:22:29,730 --> 00:22:32,195
+所以我认为，对一些同事来说，这会很令人担忧，
+So I think for some of my colleagues, it was very concerning,
+
+418
+00:22:32,195 --> 00:22:35,449
+尤其是如果他们没有持续关注此前的发展，
+especially if they hadn't been following the previous developments and, and,
+
+419
+00:22:35,449 --> 00:22:37,520
+没意识到 AI 已经走到这一步。
+and not realizing that this was where they were at.
+
+420
+00:22:37,880 --> 00:22:41,577
+如果一位同事只见过 2023 年的 ChatGPT，
+If a colleague had only seen, say, what ChatGPT could do in 2023,
+
+421
+00:22:41,577 --> 00:22:44,228
+然后拿一道困难数学题问它，
+and if you asked it a difficult math question,
+
+422
+00:22:44,228 --> 00:22:46,600
+它会给你一堆完全胡扯的东西。
+then it would give you complete rubbish.
+
+423
+00:22:46,720 --> 00:22:48,280
+但现在已经很不一样了。
+And they're they're quite different. Now.
+
+424
+00:22:48,480 --> 00:22:51,205
+底层技术仍然基本相同，
+I'm still fundamentally the same technology, but,
+
+425
+00:22:51,205 --> 00:22:55,260
+但人们找到了降低错误率、让它真正有用的方法。
+but they've found ways to reduce the error rate and become genuinely useful.
+
+426
+00:22:55,540 --> 00:23:00,578
+现在仍不清楚这些成果的可复现性有多高。
+Now, it's still unclear how replicable this is. Many of these achievements,
+
+427
+00:23:00,578 --> 00:23:02,940
+许多成果由私人公司完成，
+they're done by private companies.
+
+428
+00:23:03,420 --> 00:23:08,179
+它们不会披露投入了多少资源。
+They're not disclosing how much resources they spent to use. I mean,
+
+429
+00:23:08,179 --> 00:23:10,100
+是 10 万美元算力？
+was it $100,000 of compute?
+
+430
+00:23:10,100 --> 00:23:13,340
+还是 100 万美元？我们不知道，也不知道成功率。
+Was it $1 million? We don't really Now and we don't Now their success rate.
+
+431
+00:23:14,540 --> 00:23:16,380
+他们解决的这个问题是不是他们唯一看过的问题？
+Was this problem that they solved the only problem
+
+432
+00:23:16,380 --> 00:23:18,220
+还是他们看了 10 个问题？
+that they looked at or did they look at 10 problems?
+
+433
+00:23:18,340 --> 00:23:19,300
+看了 100 个问题？
+Did they look at 100 problems?
+
+434
+00:23:19,660 --> 00:23:21,707
+虽然结果令人印象深刻，
+While the results are impressive,
+
+435
+00:23:21,707 --> 00:23:26,366
+但我们还没有足够数据判断这是否会
+we don't have enough data to really gauge whether this will become a completely
+
+436
+00:23:26,366 --> 00:23:29,613
+在未来成为常规现象，还是说只有
+regular occurrence going forward or whether it's only
+
+437
+00:23:29,613 --> 00:23:34,413
+花上数月、投入十人团队和十万美元级资源，
+if you spend hundred thousand dollars over several months with a team of 10 people
+
+438
+00:23:34,413 --> 00:23:36,460
+才能得到这种结果。
+that you can get results like this.
+
+439
+00:23:36,780 --> 00:23:38,835
+也许只有我们关心的全部问题中的 1%
+And maybe it's only 1% of all problems
+
+440
+00:23:38,835 --> 00:23:41,420
+适合这种方法。
+that we care about are amenable to this method.
+
+441
+00:23:42,060 --> 00:23:42,780
+是的，我们还不知道。
+Yeah, we don't Now.
+
+442
+00:23:43,380 --> 00:23:46,660
+但已经有人在努力用更科学的方式做基准测试。
+But there are efforts to more properly benchmark in a scientific way.
+
+443
+00:23:47,100 --> 00:23:50,300
+最近的一个挑战叫 First Proof Challenge（第一证明挑战）。
+The most recent of these challenges is called the First Proof Challenge.
+
+444
+00:23:50,540 --> 00:23:54,700
+它用 10 个研究级问题的测试集评测最新模型。
+They tested the latest models against a test set of 10 research level questions.
+
+445
+00:23:55,210 --> 00:23:59,233
+最好的模型能做出这类中等难度
+And the the best models could do like 5 or 6 out of 10 of these sort of medium level
+
+446
+00:23:59,233 --> 00:24:02,141
+数学问题中的 5 到 6 个，这些问题已有解答，
+difficult math problems, which already had a solution,
+
+447
+00:24:02,141 --> 00:24:06,040
+但解答被保密。我认为有很多常规任务，
+but the solution was kept secret that I think there's a lot of routine tasks.
+
+448
+00:24:06,520 --> 00:24:08,874
+也就是我们研究中每天都在做的那些任务，
+Tasks that we, we do every day as a, as a,
+
+449
+00:24:08,874 --> 00:24:13,360
+其中一定比例现在可以由 AI 完成。
+as in our research that some percentage of those can now be done by, by AIs.
+
+450
+00:24:13,760 --> 00:24:14,520
+这可能很昂贵。
+It could be expensive.
+
+451
+00:24:14,920 --> 00:24:17,160
+很多这类工具运行一次
+Many of, of these tools, they require, say,
+
+452
+00:24:17,160 --> 00:24:20,520
+可能需要几百美元才能得到解法。
+a couple hundred dollars to run to before they can get a solution.
+
+453
+00:24:20,840 --> 00:24:23,599
+有时它们会失败，花掉所有算力，
+And sometimes they fail. They spend all this compute
+
+454
+00:24:23,599 --> 00:24:25,480
+最后什么有用结果都没有。
+and they end up with nothing useful.
+
+455
+00:24:25,880 --> 00:24:30,333
+我们现在在编程领域看到，许多专家程序员报告说，
+We're seeing now in programming that many expert programmers are reporting
+
+456
+00:24:30,333 --> 00:24:35,760
+借助这些工具，他们写代码的能力提升了 5 倍、10 倍甚至 100 倍。
+that their ability to write code has increased by a factor of five or 10 or 100 with these tools.
+
+457
+00:24:35,840 --> 00:24:40,862
+但他们也能感觉到，自己正在失去手写代码的能力，
+But they are also, they can feel themselves losing the ability to code by hand and
+
+458
+00:24:40,862 --> 00:24:45,210
+有时也无法审查这些智能体产出的代码。
+sometimes they cannot review the code that comes out of these agents.
+
+459
+00:24:45,730 --> 00:24:48,290
+这里存在取舍。速度并不是一切。
+There's a trade off. you know, speed and is not everything.
+
+460
+00:24:49,210 --> 00:24:52,865
+我非常喜欢数学中的协作面向。
+I very much like the collaborative aspect of mathematics,
+
+461
+00:24:52,865 --> 00:24:57,787
+这是我到职业生涯稍晚才意识到如此重要的一点：
+something I didn't realize was so important until a little bit late in my career
+
+462
+00:24:57,787 --> 00:25:00,770
+我学到的很多数学，
+that like a lot of the mathematics I've Learned,
+
+463
+00:25:00,770 --> 00:25:03,530
+是在研究生毕业后通过合作学到的。
+I Learned after grad school by working with.
+
+464
+00:25:04,129 --> 00:25:08,289
+我和不同领域的数学家、科学家一起工作，我教他们我知道的东西，
+With mathematicians and scientists in different fields, I teach them what I Now.
+
+465
+00:25:08,329 --> 00:25:12,769
+他们教我他们知道的东西，于是我变得更宽广。
+They teach me what they Now, and I become much broader as a result.
+
+466
+00:25:13,169 --> 00:25:16,631
+当你和一个长期合作的人共事时，
+When you're working with a collaborator that you've been working with a long time,
+
+467
+00:25:16,631 --> 00:25:19,089
+某个时刻，你们几乎会在心智上调到同一频率。
+there's a point where you become almost mentally attuned.
+
+468
+00:25:19,609 --> 00:25:20,990
+也许你很熟悉这种感觉，
+Perhaps you've been familiar, like
+
+469
+00:25:20,990 --> 00:25:23,983
+就像和一个很亲近的朋友或家人聊了很久，
+if it's a really close friend or a family member that you talk to for a long time,
+
+470
+00:25:23,983 --> 00:25:26,009
+有时你们能替彼此把句子说完。
+sometimes you can complete each other's sentences.
+
+471
+00:25:26,400 --> 00:25:28,146
+你知道对方接下来要说什么。
+you know what the other person's gonna say.
+
+472
+00:25:28,146 --> 00:25:30,280
+合作时有时也会出现这种状态。
+And you can sometimes get that when you collaborate.
+
+473
+00:25:30,440 --> 00:25:34,179
+你抛出一个想法，甚至话还没说完，
+You can you can throw out an idea and before you've even finished the sentence,
+
+474
+00:25:34,179 --> 00:25:36,480
+对方就已经理解，并能接着推进。
+the other person gets it and, and can run with it.
+
+475
+00:25:36,760 --> 00:25:38,920
+人们也试着这样使用 AI。
+People have tried to use AIs like this.
+
+476
+00:25:39,960 --> 00:25:42,560
+AI 确实可以对话。
+And AIs they are, you can converse with them.
+
+477
+00:25:42,920 --> 00:25:47,539
+当然，它们有时会犯错，有时会迎合你，
+Of course, they make mistakes sometimes they, they sometimes will be sycophantic and,
+
+478
+00:25:47,539 --> 00:25:49,880
+只告诉你想听的话。
+and only tell you what, what you want to hear.
+
+479
+00:25:50,230 --> 00:25:53,830
+但目前和这些工具互动仍然很私人化。
+But also the interactions right now with these tools are kind of personal.
+
+480
+00:25:53,870 --> 00:25:58,925
+我试过和人面对面合作，同时让 AI 在场，
+Like I've tried to collaborate with people in person and also have an AI present,
+
+481
+00:25:58,925 --> 00:26:00,510
+但它会打断节奏。
+but breaks up the rhythm.
+
+482
+00:26:01,310 --> 00:26:03,630
+这些工具并不真正像人在对话。
+These tools, they don't, they're not really conversational.
+
+483
+00:26:04,270 --> 00:26:08,710
+它们不像人类合作者那样流畅。
+They're like not as fluid conversation as, as, as they are with human collaborators.
+
+484
+00:26:08,790 --> 00:26:12,059
+也许它们未来会做到。直到最近，
+Yet maybe they will get, they will get there. Until recently,
+
+485
+00:26:12,059 --> 00:26:14,880
+它们还不会从你的对话中学习。
+they don't learn from your conversations, you know.
+
+486
+00:26:14,920 --> 00:26:18,628
+而和合作者一起工作时，第二天继续时，
+So with a collaborator when, when you, you know, you can resume the next day,
+
+487
+00:26:18,628 --> 00:26:20,040
+你们能很快接上。
+you can pick up very quickly.
+
+488
+00:26:20,240 --> 00:26:22,931
+有时即便多年没见，
+And sometimes even for a call that you haven't met for years,
+
+489
+00:26:22,931 --> 00:26:24,600
+也能重新捡起很久以前的话题。
+you can pick up some very old threads.
+
+490
+00:26:25,200 --> 00:26:28,946
+AI 有一定上下文，也能记住一些事情，
+AIs have a certain amount of context and they can remember some things and,
+
+491
+00:26:28,946 --> 00:26:32,632
+能记录、做笔记，模拟某种记忆，
+and they can record, they can make notes and kind of simulate this memory,
+
+492
+00:26:32,632 --> 00:26:33,720
+但你无法像和亲密合作者那样
+but you can't attune.
+
+493
+00:26:34,539 --> 00:26:39,339
+与 AI 调到同一频率。
+To an AI the same way that you can to a really close collaborator.
+
+494
+00:26:39,459 --> 00:26:45,659
+实际上，我并不太把这些工具用于真正的问题求解过程。
+Yet I actually don't use these tools so much for the actual problem solving process.
+
+495
+00:26:46,259 --> 00:26:50,339
+到目前为止，我发现它们更适合辅助任务，
+I found to date that these tools are much better at secondary tasks like doing
+
+496
+00:26:50,339 --> 00:26:53,654
+比如做文献搜索、检查证明、写一些代码，
+literature searches or checking a proof or writing some code,
+
+497
+00:26:53,654 --> 00:26:55,949
+或者校对我写的东西，
+proofreading something that I wrote to see
+
+498
+00:26:55,949 --> 00:27:00,284
+看看有没有机会让表达更紧凑。
+if there's any opportunity to make things a little bit tighter. I find, yeah, the,
+
+499
+00:27:00,284 --> 00:27:01,240
+我觉得
+the rhythm of, of.
+
+500
+00:27:01,240 --> 00:27:03,769
+和 AI 一起工作的节奏，
+Working with an AI is not quite the, the rhythm I,
+
+501
+00:27:03,769 --> 00:27:07,627
+并不是我更喜欢的人类合作节奏，
+I prefer of working with a human collaborator, but that could just be the,
+
+502
+00:27:07,627 --> 00:27:09,840
+但这也许只是当前技术的状态。
+the current state of current technology.
+
+503
+00:27:10,160 --> 00:27:13,762
+未来的 AI 也许会更会对话，
+Maybe the future AIs will be much more conversational and,
+
+504
+00:27:13,762 --> 00:27:16,040
+互动起来也更像人。
+and much more human to interact with.
+
+505
+00:27:17,320 --> 00:27:20,760
+所以我们现在处在一个有些危险的节点，
+So we're at a somewhat risky point in, in sort of the.
+
+506
+00:27:23,040 --> 00:27:26,581
+关系到整个科学事业的资助结构。
+The structure of funding the scientific enterprise in general
+
+507
+00:27:26,581 --> 00:27:30,791
+一方面，这些工具让我们能以更快速度创造科学产出，
+because on the one hand, these tools are allowing us to create the outputs of
+
+508
+00:27:30,791 --> 00:27:34,800
+或者看起来像科学产出的东西。
+science or seems to be the outputs of science at a much accelerated rate.
+
+509
+00:27:35,000 --> 00:27:40,360
+但代价可能是损害培养下一代科学家的土壤。
+But it could come at the cost of nurturing our seed corn for the next generation of scientists.
+
+510
+00:27:40,600 --> 00:27:44,426
+例如，一个真实担忧是，
+For example, there is a real concern that the training problems
+
+511
+00:27:44,426 --> 00:27:48,758
+我们给研究生作为初始项目的训练题，
+that we give our graduate students to work on as their first projects to,
+
+512
+00:27:48,758 --> 00:27:51,790
+原本是为了让他们获得一点认可，
+to get a little bit of, of, of recognition and, and.
+
+513
+00:27:52,030 --> 00:27:53,710
+以及职业训练和经验。
+And career training and experience.
+
+514
+00:27:54,230 --> 00:27:56,961
+这些问题现在 AI 已经可以处理，
+These are the types of problems which now AIs can, um,
+
+515
+00:27:56,961 --> 00:28:00,996
+可以复现许多论文；但如果我们用
+they can replicate many of the papers, but if you replace the grad students by,
+
+516
+00:28:00,996 --> 00:28:05,030
+这些 AI 取代研究生，AI 会生成研究生水平的论文，
+by these AIs, you know, the AIs will generate these grad student level papers.
+
+517
+00:28:05,030 --> 00:28:07,950
+我们却得不到下一代学生。
+But then we won't get the next generation of, of, of, of students.
+
+518
+00:28:08,500 --> 00:28:12,629
+如果我们不继续消化这些 AI 输出，
+But if we, if we don't continue this process of digesting, you know,
+
+519
+00:28:12,629 --> 00:28:17,496
+把它们转化为下一代
+all this AI output to build the next base of Nowledge for the next generation of
+
+520
+00:28:17,496 --> 00:28:21,552
+人类和 AI 可以继续建立其上的知识基础，
+humans and AIs to to build upon that we may end up stagnating as, as,
+
+521
+00:28:21,552 --> 00:28:23,100
+我们作为科学社会最终可能会停滞。
+as a scientific society.
+
+522
+00:28:23,180 --> 00:28:25,446
+我们也许能够优化
+you know, that we will be able to optimize everything
+
+523
+00:28:25,446 --> 00:28:27,557
+当前技术能够完成的一切，
+that we can we can do with our current technology,
+
+524
+00:28:27,557 --> 00:28:30,440
+但可能不再真正发展出原创的新思想。
+but we may not actually develop really original new ideas anymore.
+
+525
+00:28:31,200 --> 00:28:33,171
+我们需要真正展开更开放的讨论：
+We will need to, to really, um,
+
+526
+00:28:33,171 --> 00:28:37,114
+基础科学是什么，
+have a much more open discussion about what basic science is
+
+527
+00:28:37,114 --> 00:28:42,081
+它有什么用，为什么由好奇心驱动的研究仍然重要，
+and what is useful for and why it's important to still have curiosity driven
+
+528
+00:28:42,081 --> 00:28:44,920
+为什么我们仍然需要一个
+research, why we still need a community of.
+
+529
+00:28:45,040 --> 00:28:50,267
+由人类组成的共同体来探索事物，有时要慢慢来，
+Of, of, of, of humans to explore things, sometimes slowly, sometimes, you know, in,
+
+530
+00:28:50,267 --> 00:28:54,000
+有时也要用不如最新 AI 模型高效的方式。
+in, in ways that are not as efficient as the latest model AIs.
+
+531
+00:28:54,710 --> 00:28:57,669
+而且我们获得的洞见，
+And also the, the insights that, that we, that we, we gain,
+
+532
+00:28:57,669 --> 00:29:01,059
+我认为也应该更多分享，做更多面向
+I think we should share them more and we should do more outreach to,
+
+533
+00:29:01,059 --> 00:29:02,230
+公众的传播。
+to the general public.
+
+534
+00:29:03,110 --> 00:29:05,517
+我认为今天的公众
+I think the general public today, you know,
+
+535
+00:29:05,517 --> 00:29:07,990
+能看到科学的可见产出。
+they can see the visible outputs of science.
+
+536
+00:29:08,030 --> 00:29:11,378
+他们有手机，有互联网，
+you know, they have a cell phone, they have the internet, they, they,
+
+537
+00:29:11,378 --> 00:29:12,670
+有 GPS 等等。
+they have GPS or whatever.
+
+538
+00:29:12,910 --> 00:29:15,101
+但许多人看不到
+Many people, they, they don't see the,
+
+539
+00:29:15,101 --> 00:29:18,251
+整个过程，也看不到对数学和科学的基本理解
+the whole process and how a basic understanding of math
+
+540
+00:29:18,251 --> 00:29:21,949
+如何让他们周围的世界不再那么可怕，
+and science actually makes the world around them a lot less scary
+
+541
+00:29:21,949 --> 00:29:23,250
+并变得清楚很多。
+and just a lot clearer.
+
+542
+00:29:23,330 --> 00:29:27,250
+我认为很多人现在生活在一种焦虑状态中。
+I think a lot of people are now just living in a state of anxiety.
+
+543
+00:29:27,570 --> 00:29:28,650
+世界太复杂了。
+The world is so complicated.
+
+544
+00:29:29,010 --> 00:29:32,499
+我们并没有像重视那些硬性的、
+We haven't emphasized these sort of softer values of science as much
+
+545
+00:29:32,499 --> 00:29:36,050
+技术产出那样，强调科学这些更柔性的价值。
+as sort of the hard, you know, like technological outputs and things.
+
+546
+00:29:36,370 --> 00:29:39,920
+但科学确实能给人的思考带来某种清晰度，
+But science does add a certain amount of clarity to, to, to one's thinking,
+
+547
+00:29:39,920 --> 00:29:42,840
+这些东西很有价值，也需要得到支持。
+and these are valuable things, and they need to be supported.
+
+548
+00:29:50,360 --> 00:29:53,720
+每年四次，我们会出版一本值得你放下手机阅读的杂志。
+Four times a year, we print a magazine worth putting your phone down for.
+
+549
+00:29:54,160 --> 00:29:57,076
+Big Think 高级纸质杂志包含定制艺术作品，
+Big Think's premium print magazine is built with custom artwork
+
+550
+00:29:57,076 --> 00:29:59,560
+以及来自世界顶尖思想家的专家洞见。
+and expert insight from the world's biggest thinkers.
+
+551
+00:30:00,040 --> 00:30:04,080
+没有 AI 垃圾内容，没有煽动怒火的标题党，只有给好奇者的大思想。
+No AI slop, no rage bait, just big ideas for curious people.
+
+552
+00:30:04,680 --> 00:30:07,100
+支持你希望在世界上看到的媒体。
+Support the media you want to see in the world.
+
+553
+00:30:07,100 --> 00:30:09,520
+请访问 bigthink.com/membership 加入。
+Go to big think.comslashmembership to join.

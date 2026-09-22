@@ -1,0 +1,7799 @@
+1
+00:00:00,270 --> 00:00:02,157
+欢迎学习《智能体记忆：构建
+Welcome to Agent Memory: Building,
+
+2
+00:00:02,157 --> 00:00:05,150
+具备记忆能力的 AI 智能体》，本课程与 Oracle 合作打造。
+Memory-Aware Agents built in partnership with Oracle.
+
+3
+00:00:05,950 --> 00:00:09,824
+许多使用 LLM 的开发者都遇到过这样的场景：一个智能体
+Many developers building with LLMs have run into the scenario of an agent
+
+4
+00:00:09,824 --> 00:00:13,763
+在单次会话中表现良好，但会丢失或忘记它学到的所有内容
+that works in a single session but loses or forgets everything it learned
+
+5
+00:00:13,763 --> 00:00:14,990
+当会话结束时。
+when the session ends.
+
+6
+00:00:15,990 --> 00:00:20,230
+记忆有助于将无状态智能体转变为能够克服这一挑战的智能体。
+Memory helps turn a stateless agent into one that can overcome this challenge.
+
+7
+00:00:21,460 --> 00:00:24,954
+在本课程中，你将学习如何构建记忆系统
+In this course, you learn how to engineer memory systems
+
+8
+00:00:24,954 --> 00:00:27,631
+让智能体具备持久性和连续性
+that give agents persistence, continuity
+
+9
+00:00:27,631 --> 00:00:31,274
+以及使用 Oracle AI Database 随时间学习的能力
+and the ability to learn over time using Oracle AI Database
+
+10
+00:00:31,274 --> 00:00:35,660
+将其作为存储和检索智能体记忆的基础设施层。
+as the infrastructure layer for storing and retrieving agent memory.
+
+11
+00:00:36,340 --> 00:00:39,438
+我很高兴为大家介绍本课程的讲师，
+I'm delighted to introduce our instructors for this course,
+
+12
+00:00:39,438 --> 00:00:41,260
+Richmond Alake 和 Nacho Martínez。
+Richmond Alake and Nacho Martínez.
+
+13
+00:00:42,200 --> 00:00:45,920
+谢谢你，Andrew。我很高兴能与你及你的团队合作。
+Thanks, Andrew. I'm excited to work with you and your team on this.
+
+14
+00:00:46,680 --> 00:00:48,440
+谢谢你，Andrew。我是 Richmond。
+Thanks, Andrew. Richmond.
+
+15
+00:00:48,480 --> 00:00:52,167
+接下来 Nacho 将带你了解如何使用数据库、
+And Nacho will walk you through using a database,
+
+16
+00:00:52,167 --> 00:00:56,932
+LangChain 以及由 LLM 驱动的流水线，用于记忆增强、
+LangChain and an LLM-powered pipeline for memory augmentation,
+
+17
+00:00:56,932 --> 00:00:59,360
+记忆提取和工具检索。
+extraction and tool retrieval.
+
+18
+00:01:00,000 --> 00:01:04,864
+通过这些内容，你将了解记忆优先架构如何解决智能体
+With these, you learn how memory-first architecture addresses the problem of agents
+
+19
+00:01:04,864 --> 00:01:06,620
+难以完成长周期任务的问题。
+failing at long-horizon tasks.
+
+20
+00:01:07,300 --> 00:01:09,315
+你将构建一个记忆管理器，用来存储、
+You build a memory manager that stores,
+
+21
+00:01:09,315 --> 00:01:11,940
+检索并操作不同类型的记忆。
+retrieves and operates on different memory types.
+
+22
+00:01:12,500 --> 00:01:16,180
+这门课最让我兴奋的是它所代表的转变。
+What excites me most about this course is the shift it represents.
+
+23
+00:01:16,860 --> 00:01:22,272
+过去几年，我们一直专注于提示工程和上下文工程，
+We've spent the last few years focused on prompt engineering and context engineering,
+
+24
+00:01:22,272 --> 00:01:25,460
+研究如何从单次 LLM 调用中获得最大收益。
+figuring out how to get the most out of a single LLM call.
+
+25
+00:01:26,080 --> 00:01:30,920
+但对于需要连续运行数天或数周的智能体来说，这还不够。
+But for agents that need to operate over days or weeks, that's not enough.
+
+26
+00:01:31,600 --> 00:01:36,635
+你需要记忆工程，将长期记忆视为一等基础设施，
+You need memory engineering, treating long-term memory as first-class infrastructure,
+
+27
+00:01:36,635 --> 00:01:39,560
+它位于模型之外、可持久化且结构化。
+external to the model, persistent and structured.
+
+28
+00:01:40,280 --> 00:01:41,720
+这正是本课程的核心内容。
+That's what this course is all about.
+
+29
+00:01:41,960 --> 00:01:47,081
+到课程结束时，你将拥有构建智能体所需的工具，它们不只是做出响应，
+And by the end, you will have the tools to build agents that don't just respond,
+
+30
+00:01:47,081 --> 00:01:51,492
+还能记忆、改进，并意识到自己的记忆能力
+they remember, improve, and are aware of their memory capabilities
+
+31
+00:01:51,492 --> 00:01:54,880
+而且我们教你的模式并非纯理论。
+and the patterns we teach here aren't theoretical.
+
+32
+00:01:55,520 --> 00:01:59,563
+我们会带你实现真实代码，构建记忆存储，
+We'll walk through real implementations, building memory stores,
+
+33
+00:01:59,563 --> 00:02:03,960
+搭建提取流水线，并处理记忆中的矛盾信息。
+wiring up extraction pipelines, and handling contradictions in memory.
+
+34
+00:02:04,880 --> 00:02:08,800
+你将带走可运行代码，并能适配到自己的生产级智能体。
+You'll leave with working code that you can adapt for your own production agents.
+
+35
+00:02:09,640 --> 00:02:11,640
+许多人为制作这门课程付出了努力。
+Many people have worked to create this course.
+
+36
+00:02:11,960 --> 00:02:18,500
+我要感谢来自 Oracle 的 Olivier Semar Bajolou，以及来自 DeepLearning.AI 的 Brendan Brown。
+I'd like to thank from Oracle, Olivier Semar Bajolou, and from DeepLearning.AI, Brendan Brown.
+
+37
+00:02:19,100 --> 00:02:24,020
+第一课将概述 AI 智能体以及它们为什么需要记忆。
+The first lesson will be an overview of AI agents and why they need memory.
+
+38
+00:02:24,580 --> 00:02:28,001
+我们将剖析无状态智能体的失败模式，
+We'll break down the failure modes of stateless agents
+
+39
+00:02:28,001 --> 00:02:33,280
+并介绍后续课程所基于的记忆优先架构。哦，
+and introduce the memory-first architecture that the rest of the course builds on. Oh,
+
+40
+00:02:33,280 --> 00:02:35,660
+等一下，我忘了，我们刚才在讲什么来着？
+Wait, I forgot, what are we doing again?
+
+41
+00:02:36,590 --> 00:02:37,750
+好吧，记忆。
+All right, memory.
+
+42
+00:02:38,510 --> 00:02:41,190
+希望你喜欢这门课程。在本课中，
+I hope you enjoy the course. In this lesson,
+
+43
+00:02:41,630 --> 00:02:45,109
+我们将先定义 AI 智能体到底是什么，
+We'll start by defining what an AI agent actually is,
+
+44
+00:02:45,109 --> 00:02:50,169
+然后看看与无状态智能体交互时会发生什么，以及与
+then look at what happens when you interact with a stateless agent versus one
+
+45
+00:02:50,169 --> 00:02:51,750
+经过记忆增强的智能体交互时的区别。
+augmented with memory.
+
+46
+00:02:52,510 --> 00:02:56,469
+你会看到为什么仅靠对话历史是不够的，
+You will see why conversational history alone isn't enough,
+
+47
+00:02:56,469 --> 00:02:58,710
+以及智能体记忆究竟意味着什么。
+and what agent memory really means.
+
+48
+00:02:59,350 --> 00:03:03,072
+最后我们将介绍智能体技术栈和记忆核心，
+We'll wrap up by introducing the agent stack and the memory core,
+
+49
+00:03:03,072 --> 00:03:07,070
+这是后续课程所基于的架构基础。
+the architectural foundation that the rest of this course builds on.
+
+50
+00:03:07,710 --> 00:03:08,470
+我们开始吧。
+Let's dive in.
+
+51
+00:03:09,030 --> 00:03:12,110
+本课中，我们将讨论为什么 AI 智能体需要记忆。
+In this lesson, we're gonna cover why AI agents need memory.
+
+52
+00:03:12,550 --> 00:03:16,438
+更具体地说，我们将概述 AI 智能体是什么，
+More specifically, we're gonna get an overview of what an AI agent is,
+
+53
+00:03:16,438 --> 00:03:19,790
+无状态智能体和记忆增强型智能体分别指什么。
+what we mean by a stateless agent and a memory-augmented agent.
+
+54
+00:03:20,240 --> 00:03:23,933
+我们还将概述对话历史，
+And we're also going to get an overview of conversational history
+
+55
+00:03:23,933 --> 00:03:26,351
+以及如何超越对话历史。
+and going beyond conversational history,
+
+56
+00:03:26,351 --> 00:03:29,641
+本课最后，我们会讨论两个关键概念：
+We'll finalize this lesson by looking at two key concepts,
+
+57
+00:03:29,641 --> 00:03:33,200
+即智能体记忆，以及智能体记忆核心的含义。
+which are agent memory and what we mean by the agent memory core.
+
+58
+00:03:34,000 --> 00:03:35,200
+什么是 AI 智能体？
+What is an AI agent?
+
+59
+00:03:35,680 --> 00:03:37,987
+AI 智能体是一种计算实体，
+An AI agent is a computational entity
+
+60
+00:03:37,987 --> 00:03:43,048
+它可以通过输入感知环境，通过工具使用采取行动，
+that can perceive its environment through inputs, take action through tool use,
+
+61
+00:03:43,048 --> 00:03:47,812
+并且还具备由 LLM 支持的推理能力，更重要的是，
+and also has reasoning capabilities enabled by an LLM and more importantly,
+
+62
+00:03:47,812 --> 00:03:50,640
+AI 智能体拥有某种形式的增强记忆。
+an AI agent has some form of augmented memory.
+
+63
+00:03:51,200 --> 00:03:52,831
+通常用于让它存储、
+Typically to allow it to store,
+
+64
+00:03:52,831 --> 00:03:56,280
+检索并在跨会话和交互中应用知识。
+retrieve and apply knowledge across sessions and interactions.
+
+65
+00:03:57,000 --> 00:03:58,960
+这就是我们所定义的 AI 智能体。
+This is what we define as an AI agent.
+
+66
+00:04:00,000 --> 00:04:03,669
+一般来说，AI 智能体应当能够独立运行，
+Generally, AI agents should be able to operate independently,
+
+67
+00:04:03,669 --> 00:04:07,130
+代表人类行动，几乎不需要或只需极少反馈。
+act on behalf of the human with almost little to no feedback.
+
+68
+00:04:07,730 --> 00:04:10,090
+理想情况下，它们受目标和目的约束。
+Ideally, they are goal and objective bound.
+
+69
+00:04:10,930 --> 00:04:13,705
+现在我们已经理解了什么是 AI 智能体，
+Now that we have an understanding of what an AI agent is,
+
+70
+00:04:13,705 --> 00:04:18,290
+是时候非常清楚地理解记忆对 AI 智能体的重要性了。
+it's time for us to get a very clear understanding of the importance of memory for AI agents.
+
+71
+00:04:18,610 --> 00:04:22,730
+我们将通过观察 AI 智能体在没有记忆的情况下会如何运行来说明这一点。
+We will do this by looking at how an AI agent would operate without memory.
+
+72
+00:04:23,470 --> 00:04:26,430
+通常，你会有一个 AI 智能体嵌入在应用程序中。
+Typically, you would have an AI agent embedded within an application.
+
+73
+00:04:27,030 --> 00:04:30,800
+在这个应用程序中，用户会与该智能体交互。
+And in this application, a user would interact with the agent.
+
+74
+00:04:31,960 --> 00:04:37,120
+通常，我们可以想象用户请求推荐附近的餐厅。
+Typically, we can imagine a user asking for recommendations for restaurants around the area.
+
+75
+00:04:37,520 --> 00:04:39,400
+我们称之为第 1 轮。
+We would refer to this as turn 1.
+
+76
+00:04:39,960 --> 00:04:42,484
+这条消息随后会被发送给智能体，
+This message would then be sent to the agent,
+
+77
+00:04:42,484 --> 00:04:47,190
+智能体会生成响应，理想情况下会识别用户意图，
+and the agent would generate a response, ideally detecting the intent of the user,
+
+78
+00:04:47,190 --> 00:04:49,441
+对用户发送的消息进行推理，
+reason about the message the user sent,
+
+79
+00:04:49,441 --> 00:04:52,920
+并使用一系列工具来真正实现目标。
+and using a bunch of tools to actually achieve the objective.
+
+80
+00:04:53,400 --> 00:04:57,746
+例如搜索位置并获取某个位置附近的餐厅，
+Such as searching for location and getting restaurants around a location
+
+81
+00:04:57,746 --> 00:05:00,480
+最后再向用户提供输出。
+before finally providing an output to the user.
+
+82
+00:05:01,440 --> 00:05:03,920
+我们可以把这称为交互轮次。
+We can refer to this as interaction turns.
+
+83
+00:05:05,000 --> 00:05:09,376
+在后续轮次中，用户会再次与同一个
+Following subsequent turns, we would have the user interact again with the same
+
+84
+00:05:09,376 --> 00:05:11,400
+智能体交互以继续对话。
+agent to continue the conversation.
+
+85
+00:05:11,850 --> 00:05:13,650
+我们称之为第 3 轮。
+We can refer to this as turn 3.
+
+86
+00:05:14,170 --> 00:05:17,567
+当用户从智能体那里获得推荐后，
+When the user gets the recommendations from the agent,
+
+87
+00:05:17,567 --> 00:05:22,072
+用户可能会要求预订列表中的第一个推荐结果，
+the user could possibly ask to book the first recommendation on the list,
+
+88
+00:05:22,072 --> 00:05:27,610
+但一个没有记忆的智能体实际会像屏幕上显示的那样回答，也就是：
+but an agent without memory would actually respond as shown on the screen, which would be:
+
+89
+00:05:27,890 --> 00:05:32,326
+它完全不记得用户所指的那段对话，
+It has no recollection of the conversation the user is referring to
+
+90
+00:05:32,326 --> 00:05:37,000
+并会请用户明确说明。我们称之为第 4 轮。
+and would ask the user to please specify. We could refer to this as turn 4.
+
+91
+00:05:37,640 --> 00:05:40,830
+在这种情况下，我们可以看到由于缺乏记忆，
+In this event, we can see that due to lack of memory,
+
+92
+00:05:40,830 --> 00:05:45,160
+智能体无法完成用户指定的任务。
+the agent is unable to complete the task that the user has specified.
+
+93
+00:05:45,880 --> 00:05:48,714
+我们可以把这称为多轮交互，
+We can refer to this as a multi-turn interaction
+
+94
+00:05:48,714 --> 00:05:51,040
+但显然这是在没有任何记忆的情况下。
+but obviously this is without memory.
+
+95
+00:05:51,640 --> 00:05:54,638
+现在我们已经看到，一个只有感知、
+Now we've seen what an AI agent with just perception,
+
+96
+00:05:54,638 --> 00:05:59,340
+行动和推理特征的 AI 智能体在真实场景中会如何运行。
+action and reasoning characteristics would operate like in a real life scenario.
+
+97
+00:06:00,270 --> 00:06:04,590
+本质上，我们称这类 AI 智能体为无状态智能体。
+Essentially, we would refer to this type of AI agent as a stateless agent.
+
+98
+00:06:05,390 --> 00:06:07,710
+让我们进一步讨论什么是无状态智能体。
+Let's talk more about what a stateless agent is.
+
+99
+00:06:08,510 --> 00:06:13,656
+无状态智能体仍然可以通过
+A stateless agent is one that can actually still perceive its environment through
+
+100
+00:06:13,656 --> 00:06:18,131
+输入来感知环境，对这些输入进行推理，并向用户返回输出，
+input and reason over these inputs and produce outputs back to the user,
+
+101
+00:06:18,131 --> 00:06:20,070
+本质上由 LLM 驱动。
+essentially powered by an LLM.
+
+102
+00:06:20,540 --> 00:06:26,150
+这种反馈非常关键，但问题在于，正如我们所见，在没有记忆的情况下，
+And this feedback is very crucial, but one thing is, with no memory, as we've seen,
+
+103
+00:06:26,150 --> 00:06:31,100
+AI 智能体无法在单轮之外保留或回忆信息。
+the AI agent doesn't retain or recall information beyond a single turn.
+
+104
+00:06:31,980 --> 00:06:34,220
+这存在明显的劣势。
+There are significant disadvantages to this.
+
+105
+00:06:34,860 --> 00:06:38,980
+例如，智能体将无法完成长周期任务。
+For example, the agent will not be able to complete a long-horizon task.
+
+106
+00:06:39,180 --> 00:06:44,147
+这些任务通常需要智能体运行几分钟到几小时，
+Now, these are tasks where the agent is expected to run for several minutes to hours
+
+107
+00:06:44,147 --> 00:06:49,330
+甚至几天，但如果没有之前交互或已采取步骤的信息，
+or even days, but without having information of previous interactions or steps taken,
+
+108
+00:06:49,330 --> 00:06:52,210
+完成任务将会非常困难。
+it would be very difficult to complete the task.
+
+109
+00:06:52,970 --> 00:06:56,886
+智能体也没有跨会话的上下文感知能力，
+The agent will also have no context awareness across sessions,
+
+110
+00:06:56,886 --> 00:07:00,581
+这意味着如果用户与智能体交互后离开，
+meaning if a user was to interact with an agent and then leave
+
+111
+00:07:00,581 --> 00:07:02,798
+再回来或开始一个新会话，
+and come back or start a new session,
+
+112
+00:07:02,798 --> 00:07:07,749
+关于用户的信息将会丢失，不会跨会话传递。
+the information as to the user would be lost and not transferred across sessions.
+
+113
+00:07:07,749 --> 00:07:11,000
+更重要的是，智能体会缺乏适应能力
+More importantly, the agent would lack adaptation
+
+114
+00:07:11,240 --> 00:07:15,971
+这意味着在交互过程中提供给智能体的任何新信息
+capabilities, which means any new information provided to the agent during an
+
+115
+00:07:15,971 --> 00:07:20,200
+不会在后续交互中被更新或使用。
+interaction would not be updated or used in subsequent interactions.
+
+116
+00:07:21,320 --> 00:07:24,861
+无状态智能体实际上可能具有很高的运行成本，
+Stateless agents can actually have high operational costs
+
+117
+00:07:24,861 --> 00:07:27,752
+因为为了保持或至少增强连续性，
+because to keep or at least augment continuity,
+
+118
+00:07:27,752 --> 00:07:33,100
+你必须在每一轮都把大量信息塞进上下文窗口。
+you would have to stuff a lot of information into the context window at every single turn.
+
+119
+00:07:33,820 --> 00:07:36,900
+还有更多劣势，但这些是其中重要的几个。
+There are more disadvantages, but these are the significant ones.
+
+120
+00:07:37,900 --> 00:07:42,686
+现在我们已经概述了无状态智能体，也就是没有记忆的智能体，
+Now we've had an overview of a stateless agent, which is an agent without memory,
+
+121
+00:07:42,686 --> 00:07:46,820
+但我们可以继续看看，一个具备记忆的 AI 智能体会是什么样子。
+but we can move on and see what an AI agent with memory would look like.
+
+122
+00:07:47,500 --> 00:07:51,390
+我们将使用与前面类似的场景，
+We're going to use a similar scenario as to the previous one,
+
+123
+00:07:51,390 --> 00:07:53,180
+但让我们从第 3 轮开始。
+but let's start from turn 3.
+
+124
+00:07:53,780 --> 00:07:58,484
+在记忆增强型智能体中，第 1 轮和第 2 轮会被存储在外部
+Turn 1 and 2 in a memory-augmented agent would have been stored in an external
+
+125
+00:07:58,484 --> 00:08:00,500
+记忆存储中，比如数据库。
+memory store such as a database.
+
+126
+00:08:01,260 --> 00:08:05,398
+所以当用户开始与应用程序交互
+So when we start with the user interacting with the application
+
+127
+00:08:05,398 --> 00:08:08,678
+并间接与智能体交互时，我们已经有了第 1 轮
+and also the agent indirectly, we would have turn 1
+
+128
+00:08:08,678 --> 00:08:11,020
+和第 2 轮，它们存储在智能体的记忆中。
+and 2 within the memory of the agent.
+
+129
+00:08:11,820 --> 00:08:15,980
+这意味着当用户请求一些推荐
+What this means is when the user asks for some recommendations
+
+130
+00:08:15,980 --> 00:08:20,620
+并接着要求预订列表中的第一个推荐时，
+and also asks to then book the recommendation the first one on the list,
+
+131
+00:08:20,620 --> 00:08:23,260
+智能体会做出适当的响应，
+the agent will respond appropriately,
+
+132
+00:08:23,260 --> 00:08:27,020
+也就是识别出列表中的第一家餐厅，
+which is identify the restaurant the first one on the list
+
+133
+00:08:27,020 --> 00:08:29,900
+并实际给出合理的输出。
+and actually provide a reasonable output.
+
+134
+00:08:30,420 --> 00:08:33,329
+也就是询问用户希望预订什么日期
+Which would be asking the user what date
+
+135
+00:08:33,329 --> 00:08:36,678
+以及什么时间。
+and time would the booking like to be made for,
+
+136
+00:08:36,678 --> 00:08:41,790
+我们可以将第 1、2 轮和第 3、4 轮统称为交互历史。
+we can refer to both turn 1 and 2 and turn 3 and 4 as interaction history.
+
+137
+00:08:42,270 --> 00:08:46,350
+而所有这些都会存储在数据库中，用于后续所有轮次。
+And all of this will be stored in a database for all subsequent turns.
+
+138
+00:08:47,030 --> 00:08:50,630
+本质上，我们就得到了一个记忆增强型智能体。
+Essentially, we have a memory-augmented agent.
+
+139
+00:08:51,390 --> 00:08:55,990
+让我们进一步深入了解记忆增强型智能体及其优势。
+Let's take a further deep dive into memory-augmented agents and their advantages.
+
+140
+00:08:56,690 --> 00:09:00,310
+就像无状态智能体一样，它们可以感知输入，
+Just like stateless agents, they can perceive inputs
+
+141
+00:09:00,310 --> 00:09:03,770
+也可以对输入进行推理并生成输出。
+and also reason over the inputs and produce output.
+
+142
+00:09:04,410 --> 00:09:07,610
+所有这些都由 LLM 的推理能力驱动。
+All of this will be powered by the LLM reasoning capabilities.
+
+143
+00:09:08,290 --> 00:09:11,367
+但这里更重要的是，我们有一个数据库，
+But the more important thing here is we have a database
+
+144
+00:09:11,367 --> 00:09:14,170
+信息在其中存储和检索。
+where information is stored and retrieved from.
+
+145
+00:09:14,850 --> 00:09:16,793
+这有很多好处，
+There are many benefits to this,
+
+146
+00:09:16,793 --> 00:09:20,464
+例如智能体能够完成长周期任务，
+such as the agents being able to complete long-horizon tasks,
+
+147
+00:09:20,464 --> 00:09:23,990
+拥有持续的上下文感知能力，并且能够真正适应。
+have sustained context awareness and can actually adapt.
+
+148
+00:09:24,790 --> 00:09:26,790
+让我们更详细地了解一下这些优势。
+Let's go over the advantages in more detail.
+
+149
+00:09:27,550 --> 00:09:31,516
+关键优势之一是，记忆增强型智能体能够实际
+One of the key advantages is the ability for memory-augmented agents to actually
+
+150
+00:09:31,516 --> 00:09:33,470
+完成长周期任务，主要是
+complete long-horizon tasks, mainly
+
+151
+00:09:33,470 --> 00:09:35,956
+因为它们可以引用之前的交互
+because they can reference previous interaction
+
+152
+00:09:35,956 --> 00:09:37,910
+以及之前会话中保存的上下文。
+and context held in previous sessions.
+
+153
+00:09:38,550 --> 00:09:41,315
+这带来了持续的上下文感知能力，
+Now this leads to a sustained context awareness,
+
+154
+00:09:41,315 --> 00:09:45,900
+让用户感觉与智能体之间有着连续的交互。
+which feels to the user that there is a continuous interaction with the agent.
+
+155
+00:09:46,420 --> 00:09:50,038
+理想情况下，我们得到了更高的效率
+Now what we have ideally is an improved sense of efficiency
+
+156
+00:09:50,038 --> 00:09:52,180
+并且降低了运营成本。
+and also reduce operational cost.
+
+157
+00:09:52,700 --> 00:09:57,293
+这是因为我们减少了必须传入上下文
+This is because we reduce the amount of information we have to pass into the context
+
+158
+00:09:57,293 --> 00:10:00,821
+窗口的信息量，只传入与交互相关的内容，
+window and only pass in the ones that are relevant to the interaction
+
+159
+00:10:00,821 --> 00:10:03,550
+而这些内容已存储在外部记忆存储中。
+that have been stored in an external memory store.
+
+160
+00:10:04,270 --> 00:10:08,470
+最后，我们在多步骤工作流中会拥有更高的可靠性。
+Finally, we'll have greater reliability in multi-step workflow.
+
+161
+00:10:08,990 --> 00:10:12,741
+这主要是因为我们能够引用之前的步骤
+This is mainly due to the fact that we can reference previous steps
+
+162
+00:10:12,741 --> 00:10:15,947
+以及引用之前的上下文，
+that we're taking and also reference previous context,
+
+163
+00:10:15,947 --> 00:10:20,790
+这使得所有后续步骤在成功结果方面更可靠。
+which makes all the subsequent steps more reliable in terms of successful outcomes.
+
+164
+00:10:21,650 --> 00:10:25,960
+我们将在后续课程中更深入地探讨所有这些优势。
+We're going to be exploring more of all of these advantages in future lessons.
+
+165
+00:10:25,960 --> 00:10:29,010
+记忆增强型智能体有各种形式和规模。
+Memory-augmented agents come in all shapes and sizes.
+
+166
+00:10:30,040 --> 00:10:34,600
+我们目前看到的可能只是记忆增强型智能体的一种简单形式。我们来说明一下。
+What we've seen might be a naive form of memory-augmented agent. And here's what we mean.
+
+167
+00:10:35,440 --> 00:10:37,361
+从无状态智能体转变为一个
+Going from a stateless agent to one
+
+168
+00:10:37,361 --> 00:10:41,800
+能够记忆的智能体，意味着将交互历史存储在外部存储中。
+that can remember means storing interaction history within an external store.
+
+169
+00:10:42,440 --> 00:10:44,519
+我们已经提到过它的关键好处，
+The key benefit of this we've touched on,
+
+170
+00:10:44,519 --> 00:10:47,760
+但最重要的是交互的延续。
+but the most important one is the continuation of interaction.
+
+171
+00:10:48,360 --> 00:10:52,496
+本质上，我们通过存储
+Essentially, we're bringing continuity to an agent through the storing of
+
+172
+00:10:52,496 --> 00:10:54,860
+对话历史或交互记录，来为智能体带来连续性。
+conversational history or interactions.
+
+173
+00:10:55,540 --> 00:11:00,900
+这些交互通常发生在用户或用户们与智能体或助手之间。
+And these interactions are typically between the user or users or the agents or assistants.
+
+174
+00:11:01,780 --> 00:11:04,531
+当交互历史存储在外部存储中时，
+Interaction history, when it's stored in an external store,
+
+175
+00:11:04,531 --> 00:11:06,580
+可以被称为对话记忆。
+can be referred to as conversational memory.
+
+176
+00:11:07,060 --> 00:11:10,218
+我们将进一步探讨不同形式的记忆。
+We're going to be looking more into different forms of memory,
+
+177
+00:11:10,218 --> 00:11:14,104
+但对话记忆是最容易理解的形式之一，一种
+but conversational memory is one of the simplest forms to understand, one
+
+178
+00:11:14,104 --> 00:11:16,290
+交互历史天然适合形成的形式。
+that interaction history lends itself to.
+
+179
+00:11:16,970 --> 00:11:22,050
+一次交互通常是用户与智能体之间来回传递的信息。
+An interaction is typically back-and-forth information between a user and an agent.
+
+180
+00:11:22,650 --> 00:11:25,890
+在对话记忆中，有一些非常具体的属性。
+In conversational memory, we have some very specific attributes.
+
+181
+00:11:26,530 --> 00:11:29,170
+我们有时间戳，表示交互发生的时间。
+We have a timestamp, which is when the interaction was taken.
+
+182
+00:11:29,730 --> 00:11:32,147
+我们有用户和助手的消息。
+We have the user and assistant message.
+
+183
+00:11:32,147 --> 00:11:35,590
+这些会存储在外部记忆的数据库中。
+And this will be stored in a database in external memory.
+
+184
+00:11:36,390 --> 00:11:39,652
+理想情况下，对话记忆会按时间排序。
+Ideally, conversational memory will be time ordered,
+
+185
+00:11:39,652 --> 00:11:43,552
+这意味着，当你返回任何对话记忆数据时，
+which means that when you return any conversational memory data,
+
+186
+00:11:43,552 --> 00:11:45,750
+我们都会按时间顺序进行检索。
+we are retrieving it ordered by time.
+
+187
+00:11:45,910 --> 00:11:49,630
+这样我们就能看到所执行的操作和交互的顺序。
+So we can see the sequence of actions and interactions taken.
+
+188
+00:11:50,470 --> 00:11:53,710
+让我们看看这在 LLM 的上下文窗口中会是什么样子。
+Let's see how this will look like in the context window of an LLM.
+
+189
+00:11:54,320 --> 00:11:59,040
+所以 LLM 会有一个可以容纳一定数量 token 的上下文窗口。
+So an LLM would have a context window that can take a certain amount of tokens.
+
+190
+00:11:59,600 --> 00:12:03,400
+在上下文窗口中，我们会放入系统提示和指令。
+In the context window, we would place the system prompt and instructions.
+
+191
+00:12:04,080 --> 00:12:08,370
+现在，交互历史将作为对话记忆被检索。
+Now interaction history will be retrieved as conversational memory
+
+192
+00:12:08,370 --> 00:12:13,029
+我们会把来自外部存储的所有多轮过往交互放在其中。
+where we'll put all the multi-turn past interactions from the external store
+
+193
+00:12:13,029 --> 00:12:15,840
+然后我们会放入最终的用户提示。
+and then we'll place the final user prompt.
+
+194
+00:12:16,480 --> 00:12:21,667
+这描绘了带有对话记忆的 LLM 上下文窗口
+This is a depiction of what the context window of an LLM with conversational memory
+
+195
+00:12:21,667 --> 00:12:22,720
+会是什么样子。
+would look like.
+
+196
+00:12:23,440 --> 00:12:25,440
+但我们需要超越这一点。
+But we actually need to go beyond this.
+
+197
+00:12:25,840 --> 00:12:30,360
+我们需要超越对话记忆有几个原因，
+And there are several reasons as to why we need to move beyond conversational memory
+
+198
+00:12:30,360 --> 00:12:34,170
+或者超越仅使用交互历史来创建记忆增强型智能体，
+or just using interaction history to create memory-augmented agents,
+
+199
+00:12:34,170 --> 00:12:35,720
+第一个原因非常简单。
+the first one is very simple.
+
+200
+00:12:36,200 --> 00:12:41,040
+上下文窗口实际上是有限的，但用户关系不是。
+Context windows are actually finite, but the user relationships are not.
+
+201
+00:12:41,600 --> 00:12:46,109
+我们的意思是，我们实际上可以通过观察对话或与对话相关的其他数据，
+What we mean is that we can actually capture more relationships between users
+
+202
+00:12:46,109 --> 00:12:51,520
+来捕捉用户与助手之间更多的关系。
+and the assistant by looking at conversations or other data associated with conversations.
+
+203
+00:12:52,160 --> 00:12:57,163
+例如，关于交互过程中提到的实体的信息，
+For example, information as to entities that are mentioned during an interaction,
+
+204
+00:12:57,163 --> 00:13:00,880
+例如地点、人物以及与人物的关系等实体。
+entities such as places, people, and relationships to people.
+
+205
+00:13:01,600 --> 00:13:05,400
+并非所有有价值的信息实际上都存储在一次对话中。
+Not all valuable information is actually stored in a single conversation.
+
+206
+00:13:06,120 --> 00:13:11,289
+我们必须超越对话记忆，才能真正提取出有用的信息。
+We're going to have to move beyond conversational memory to actually extract useful
+
+207
+00:13:11,289 --> 00:13:14,960
+以便在跨会话交互中使用。
+information that we can use in cross-session interaction.
+
+208
+00:13:15,920 --> 00:13:19,560
+智能体需要的是结构化、可查询的知识，而不仅仅是聊天日志。
+Agents need structured queryable knowledge, not just chat logs.
+
+209
+00:13:20,240 --> 00:13:23,960
+存储在对话记忆中的数据只是交互历史。
+Data stored in conversational memory is just interaction history,
+
+210
+00:13:23,960 --> 00:13:26,192
+但智能体可以在工作流中运行。
+but agents can operate within workflows
+
+211
+00:13:26,192 --> 00:13:30,115
+工作流中执行的步骤实际上是很有用的信息，
+where the steps taken in the workflow are actually useful information
+
+212
+00:13:30,115 --> 00:13:31,400
+结果也很有用。
+and also the outcomes.
+
+213
+00:13:31,920 --> 00:13:35,000
+这不是对话历史或交互历史。
+Now, this is not conversation history or interaction history.
+
+214
+00:13:35,520 --> 00:13:39,082
+因此，我们需要超越对话记忆，
+Therefore, we need to go beyond conversational memory,
+
+215
+00:13:39,082 --> 00:13:40,800
+我们将在后续课程中实现这一点。
+which we will in future lessons.
+
+216
+00:13:41,720 --> 00:13:44,328
+既然我们已经了解了对话记忆，
+Now that we've seen conversational memory,
+
+217
+00:13:44,328 --> 00:13:47,640
+是时候探索智能体记忆的不同形式了。
+it's time to explore the distinct forms of agent memory.
+
+218
+00:13:47,920 --> 00:13:52,820
+你会看到一种简单的智能体记忆分类方式，分为两种不同形式，
+You will be coming across the easy way to view agent memory in two distinct forms,
+
+219
+00:13:52,820 --> 00:13:54,880
+即短期记忆和长期记忆。
+which are short-term and long-term.
+
+220
+00:13:55,390 --> 00:13:56,910
+让我们深入研究短期记忆。
+Let's look into short-term memory.
+
+221
+00:13:57,550 --> 00:14:01,270
+短期记忆的两种常见形式是语义缓存和工作记忆。
+Two common forms of short-term memory are semantic cache and working memory.
+
+222
+00:14:02,070 --> 00:14:05,837
+语义缓存本质上是使用缓存机制，
+Semantic cache is essentially using caching mechanisms
+
+223
+00:14:05,837 --> 00:14:11,064
+利用向量搜索以及推理服务商之前返回的响应，
+that leverage vector search and previously received responses from an inference
+
+224
+00:14:11,064 --> 00:14:16,830
+在后续交互中作为类似查询的响应。
+provider to essentially use as responses for similar queries in subsequent interaction.
+
+225
+00:14:17,620 --> 00:14:21,486
+工作记忆可以被视为 LLM 的上下文窗口
+While working memory can be seen as the LLM context window
+
+226
+00:14:21,486 --> 00:14:23,500
+以及任何基于会话的记忆。
+and any session-based memory.
+
+227
+00:14:23,980 --> 00:14:28,910
+它本质上被看作一个草稿本，LLM 可以在其中运行。
+This is essentially seen as a scratchpad where the LLM can operate within
+
+228
+00:14:28,910 --> 00:14:31,900
+但在一次交互或会话后会丢失。
+but is lost after an interaction or session.
+
+229
+00:14:32,580 --> 00:14:34,740
+这些都是短期记忆的不同类型。
+These are all the different types of short-term memory.
+
+230
+00:14:35,460 --> 00:14:41,940
+对于长期记忆，我们有三种主要形式：程序性记忆、语义记忆和情景记忆。
+For long-term memory, we have three main forms, such as procedural, semantic, and episodic.
+
+231
+00:14:42,340 --> 00:14:45,100
+让我们看看这些记忆类型的例子。
+Let's look at examples of these types of memory.
+
+232
+00:14:45,860 --> 00:14:51,238
+对于程序性记忆，我们将在智能体中使用的常见记忆类型是
+For procedural memory, a common memory type we're going to be using in agents is
+
+233
+00:14:51,238 --> 00:14:52,460
+工作流记忆。
+workflow memory.
+
+234
+00:14:52,860 --> 00:14:55,377
+这是一种我们存储步骤和交互的记忆，
+This is where we store the steps and interactions
+
+235
+00:14:55,377 --> 00:14:58,460
+即智能体为实现后续目标必须采取的步骤和交互。
+that an agent must take to achieve a subsequent objective.
+
+236
+00:14:59,020 --> 00:15:03,240
+这些步骤可能包括调用工具和其他流程。
+And these steps could include the calling of tools and other processes.
+
+237
+00:15:03,800 --> 00:15:07,345
+理想的做法是将这些步骤记录在外部记忆中。
+It's ideal to record the steps in a form of external memory,
+
+238
+00:15:07,345 --> 00:15:11,106
+以便在后续交互中可以引用，
+which can be referenced in subsequent interaction
+
+239
+00:15:11,106 --> 00:15:14,000
+作为智能体可以参考的一种经验。
+as a form of experience for the agent to refer to.
+
+240
+00:15:14,400 --> 00:15:18,920
+我们称之为工作流记忆。语义记忆的一个很好例子就是
+We call this workflow memory. A good example of semantic memory is simply the
+
+241
+00:15:18,920 --> 00:15:21,862
+知识库，也就是任何外部知识
+knowledge base, which is any external knowledge
+
+242
+00:15:21,862 --> 00:15:24,660
+智能体为了完成任务需要知道的内容。
+that the agent needs to know to complete a task.
+
+243
+00:15:24,980 --> 00:15:28,100
+这可能是针对智能体运行领域
+This could be domain-specific knowledge in regards to the domain
+
+244
+00:15:28,100 --> 00:15:29,660
+的领域特定知识。
+that the agent operates within.
+
+245
+00:15:30,380 --> 00:15:34,704
+那么我们之前探讨过的对话记忆被称为
+Then conversational memory that we explored previously is known
+
+246
+00:15:34,704 --> 00:15:37,396
+一种情景记忆，通常
+as a type of episodic memory, typically
+
+247
+00:15:37,396 --> 00:15:42,209
+因为我们捕获的信息带有时间戳属性
+because we have the timestamp attributes on the information captured
+
+248
+00:15:42,209 --> 00:15:45,880
+并且我们可以通过时间来引用这些特定数据。
+and we could reference this specific data using time.
+
+249
+00:15:46,760 --> 00:15:50,766
+现在我们对不同类型的智能体记忆有了很好的理解。
+Now we have a good understanding of different types of agent memory.
+
+250
+00:15:50,766 --> 00:15:54,280
+是时候具体理解什么是智能体记忆了。
+It's time to understand what specifically is agent memory.
+
+251
+00:15:55,360 --> 00:15:59,826
+智能体记忆可以定义为系统组件与一些
+Agent memory can be defined as the composition of system components with some
+
+252
+00:15:59,826 --> 00:16:01,920
+架构组件的组合。
+architectural components as well.
+
+253
+00:16:02,360 --> 00:16:07,310
+为了让智能体能够适应和学习，系统组件
+In order to enable an agent to adapt and learn, the system components
+
+254
+00:16:07,310 --> 00:16:12,171
+你在智能体记忆中会看到的通常是嵌入模型、
+that you will find in agent memory are typically embedding models,
+
+255
+00:16:12,171 --> 00:16:15,000
+数据库和大语言模型。
+a database and a large language model.
+
+256
+00:16:15,760 --> 00:16:20,539
+理想情况下，这些系统组件与一些控制
+Ideally, the combination of these system components along with some control
+
+257
+00:16:20,539 --> 00:16:25,465
+机制和软件框架（也就是所谓的）将使智能体能够存储、
+mechanisms and software harness, which is called, will enable an agent to store,
+
+258
+00:16:25,465 --> 00:16:29,730
+检索和回忆信息，以便适应交互、
+retrieve and recall information that allows it to adapt to interact,
+
+259
+00:16:29,730 --> 00:16:32,524
+行动和学习，从而理解智能体记忆。
+act and learn to understand agent memory.
+
+260
+00:16:32,524 --> 00:16:36,200
+我们可以利用你之前关于检索增强
+We can use your previous knowledge on retrieval-augmented
+
+261
+00:16:36,280 --> 00:16:37,560
+生成（RAG）的知识。
+generation or RAG?
+
+262
+00:16:38,240 --> 00:16:41,934
+我们将快速了解 RAG 的工作原理，然后把它
+We're going to see how RAG works very quickly and then bring that in
+
+263
+00:16:41,934 --> 00:16:43,680
+与智能体记忆联系起来。
+and connect it to agent memory.
+
+264
+00:16:44,400 --> 00:16:46,760
+我们来看一个典型的 RAG 流水线。
+Let's go over a typical RAG pipeline.
+
+265
+00:16:47,440 --> 00:16:49,600
+首先，你会有一个数据源，
+First, you would have a data source,
+
+266
+00:16:49,600 --> 00:16:52,985
+它会被传入数据处理流水线，
+which you will pass through a data processing pipeline,
+
+267
+00:16:52,985 --> 00:16:57,810
+该流水线会将数据对象拆分成若干块。
+which will include the breaking down of the data object into subsequent chunks.
+
+268
+00:16:58,410 --> 00:17:01,248
+然后这些块会被传入嵌入模型
+These chunks are then passed into an embedding model
+
+269
+00:17:01,248 --> 00:17:04,730
+在那里为数据对象生成数值表示。
+where a numerical representation of the data object is created.
+
+270
+00:17:05,530 --> 00:17:08,411
+这个数值表示捕获了数据的语义
+This numerical representation captures the semantics
+
+271
+00:17:08,411 --> 00:17:12,090
+以及传入嵌入模型的数据对象的上下文。
+and context of the data object that was passed into the embedding model.
+
+272
+00:17:12,810 --> 00:17:16,064
+除了嵌入模型和其他元数据，
+Alongside the embedding model and other metadata,
+
+273
+00:17:16,064 --> 00:17:20,450
+我们可以将各种不同数据类型传入同一个数据库进行存储。
+we can pass in all different data types into a single database for storage.
+
+274
+00:17:21,210 --> 00:17:26,277
+现在会有一个用户，他会与应用程序交互，输入一个
+Now we would have a user who will interact with an application by passing in a
+
+275
+00:17:26,277 --> 00:17:31,423
+用户查询，然后该查询会被向量化，通过将用户查询传入
+user query, which would then be vectorized by passing in the user query into the
+
+276
+00:17:31,423 --> 00:17:36,490
+嵌入模型，生成用户查询的数值表示。
+embedding model and generating a numerical representation of the user query.
+
+277
+00:17:37,170 --> 00:17:40,978
+通常，用于生成用户查询嵌入的嵌入模型
+Typically, the embedding model used to generate the embedding for the user query
+
+278
+00:17:40,978 --> 00:17:43,610
+会与摄取流水线中使用的模型相同。
+would be the same we used during the ingestion pipeline.
+
+279
+00:17:44,410 --> 00:17:48,012
+一旦检索到与用户查询语义相似的行，
+Once we retrieve the semantically similar rows to the user query,
+
+280
+00:17:48,012 --> 00:17:50,650
+我们会将这些行传入重排序模型。
+we would pass these rows into a re-ranking model.
+
+281
+00:17:51,370 --> 00:17:55,503
+然后，重排序后的行结果会与用户查询拼接
+The results of the re-ranked rows are then concatenated to the user query
+
+282
+00:17:55,503 --> 00:17:59,970
+并传入 LLM，让 LLM 的回答基于领域特定数据。
+and passed into the LLM to ground the response of the LLM in domain-specific data.
+
+283
+00:18:00,680 --> 00:18:02,720
+这就是一个典型的 RAG 流水线。
+Now this is a typical RAG pipeline.
+
+284
+00:18:03,800 --> 00:18:07,242
+为了说明 RAG 与智能体记忆的关系，
+In order to make a connection to how RAG relates to agent memory,
+
+285
+00:18:07,242 --> 00:18:09,320
+我们将采取以下步骤。
+we will be taking the following steps.
+
+286
+00:18:09,960 --> 00:18:14,855
+我们会先使用 RAG 流水线前端的典型摄取流程，
+We would have the typical ingestion process in the earlier portion of a RAG pipeline,
+
+287
+00:18:14,855 --> 00:18:19,681
+同时引入我们对 AI 智能体及其主要特征的认识，
+and we would also bring in our knowledge of an AI agent and the main characteristics,
+
+288
+00:18:19,681 --> 00:18:21,680
+这些特征包括感知、记忆、
+which are the perception, memory,
+
+289
+00:18:22,160 --> 00:18:27,404
+行动和推理能力，这些我们之前已经讲过，以便建立连接
+action and reasoning capabilities that we covered previously to make the connection of
+
+290
+00:18:27,404 --> 00:18:28,660
+将 RAG 与智能体记忆连接起来。
+RAG to agent memory.
+
+291
+00:18:29,140 --> 00:18:33,333
+你会得到的是抽象层或记忆类型
+What you would have is the abstractions or the memory types
+
+292
+00:18:33,333 --> 00:18:38,980
+也就是我们之前幻灯片中讲过的、在数据库中以计算形式存在的记忆类型。
+that we covered in previous slides as computational forms within the database.
+
+293
+00:18:39,620 --> 00:18:42,540
+理想情况下，它们会是数据库中的表。
+Ideally, this would be tables within the database.
+
+294
+00:18:43,130 --> 00:18:47,959
+所以你的语义记忆、程序性记忆和情景记忆
+So you'd have your semantic memory, your procedural memory, and episodic memory,
+
+295
+00:18:47,959 --> 00:18:52,290
+其中对话记忆可以作为情景记忆，都会以表的形式表示在数据库中。
+which can be conversational memory as tables represented in a database.
+
+296
+00:18:53,290 --> 00:18:57,987
+然后可以使用记忆管理器来抽象掉
+A memory manager could then be used to abstract away the methods
+
+297
+00:18:57,987 --> 00:19:03,570
+用于从这些表中读取、写入、更新和删除数据的方法和程序。
+and program used to read, write, update, and delete data from these tables.
+
+298
+00:19:04,239 --> 00:19:10,528
+我们的智能体可以通过连接记忆管理器来访问所有这些能力
+And our agent would have access to all of these capabilities by connecting a memory
+
+299
+00:19:10,528 --> 00:19:16,907
+通过工具连接记忆管理器，并将这些能力通过记忆提供给智能体，
+manager through tools and providing these as capabilities to the agent via memory,
+
+300
+00:19:16,907 --> 00:19:21,100
+这就是我们如何引入之前关于 RAG 的知识。
+and this is how we bring in our previous knowledge of RAG
+
+301
+00:19:21,100 --> 00:19:24,199
+以及智能体的特征
+and also the characteristics of an agent
+
+302
+00:19:24,199 --> 00:19:28,300
+以及将不同形式的记忆融入智能体记忆。现在
+and different forms of memory into agent memory. Now.
+
+303
+00:19:28,380 --> 00:19:31,200
+我们将介绍“智能体记忆核心”这个术语。
+We're going to cover the term agent memory core.
+
+304
+00:19:31,760 --> 00:19:35,100
+在智能体系统中，有三个主要组件
+In an agentic system, there are three main components
+
+305
+00:19:35,100 --> 00:19:38,440
+记忆位于其中，或者可以说位于其中。
+where memory is located or could be said to be located.
+
+306
+00:19:39,160 --> 00:19:41,327
+这就是你的大语言模型，
+This would be your large language model,
+
+307
+00:19:41,327 --> 00:19:44,832
+它拥有基于所有训练数据的参数化记忆，
+which has parametric memory of all the data it has been trained with,
+
+308
+00:19:44,832 --> 00:19:49,037
+还有你的嵌入模型，它也有记忆，可以在生成嵌入时从中提取语义
+and also your embedding model, which has memory by which it could draw semantic
+
+309
+00:19:49,037 --> 00:19:52,160
+和上下文信息。
+and context information from when generating embeddings.
+
+310
+00:19:52,830 --> 00:19:54,470
+但你还有数据库。
+But also you have your database.
+
+311
+00:19:55,150 --> 00:19:59,390
+这里是你智能体系统中数据流量最大的地方。
+This is where you're going to see the most traffic of data within your agentic system.
+
+312
+00:19:59,910 --> 00:20:03,750
+数据也在这里被存储、检索和优化。
+This is where data is stored, retrieved and optimized as well.
+
+313
+00:20:04,430 --> 00:20:08,683
+这些都是与智能体记忆相关的主要系统组件，
+These are all the main system components associated with agent memory,
+
+314
+00:20:08,683 --> 00:20:11,590
+但智能体记忆核心将是你的数据库。
+but the agent memory core would be your database.
+
+315
+00:20:12,110 --> 00:20:16,005
+这里是大部分信息和数据将被存储的位置
+This is where the most information and data would be stored
+
+316
+00:20:16,005 --> 00:20:19,900
+也是在整个智能体系统中检索这些信息和数据的位置。
+and retrieved from in the entirety of your agentic system.
+
+317
+00:20:20,780 --> 00:20:25,906
+我们在 AI 智能体中看到的大多数数据流量都会流经外部记忆，
+Most of the data traffic we see in AI agents flows through an external memory,
+
+318
+00:20:25,906 --> 00:20:27,940
+而外部记忆由数据库支撑。
+which is backed by a database.
+
+319
+00:20:28,660 --> 00:20:32,174
+智能体记忆核心可以定义为这一主要基础设施
+An agent memory core can be defined as this primary infrastructure
+
+320
+00:20:32,174 --> 00:20:35,500
+它将承载你的智能体系统中最多的数据流量。
+that will see the most data traffic within your agentic system.
+
+321
+00:20:35,920 --> 00:20:39,098
+它应当能够处理信息的存储，
+It should be able to handle the storage of information,
+
+322
+00:20:39,098 --> 00:20:43,520
+以及信息在存储本身内的检索和优化。
+the retrieval and the optimization of information within the store itself.
+
+323
+00:20:44,080 --> 00:20:47,680
+这就是为什么我们将数据库称为智能体记忆核心。
+This is why we refer to the database as the Agent Memory Core.
+
+324
+00:20:48,400 --> 00:20:51,920
+这是贯穿本课程的一个重要概念。
+This is an important concept to take along with you through this course.
+
+325
+00:20:52,920 --> 00:20:58,720
+在本课中，你将构建支撑本课程其他所有内容的记忆基础设施。
+In this lesson, you will build the memory infrastructure that powers everything else in this course.
+
+326
+00:20:59,390 --> 00:21:04,587
+你将为不同类型的智能体记忆设计持久化记忆存储，
+You will design persistent memory stores for different agent memory types,
+
+327
+00:21:04,587 --> 00:21:09,621
+为高效检索建模记忆数据，并实现一个记忆管理器
+model memory data for efficient retrieval and implement a memory manager
+
+328
+00:21:09,621 --> 00:21:15,630
+它会在执行过程中协调智能体读取、写入和检索记忆的方式。
+that orchestrates how your agent reads, writes and retrieves memory during execution.
+
+329
+00:21:16,510 --> 00:21:18,470
+好，让我们深入代码吧。
+Alright, let's dive into the code.
+
+330
+00:21:19,230 --> 00:21:21,910
+在本课中，你将构建记忆管理器。
+In this lesson you're going to be constructing the memory manager.
+
+331
+00:21:22,550 --> 00:21:26,472
+本课内容将让你很好地理解智能体技术栈，
+What you cover in this lesson is a good understanding of the agent stack,
+
+332
+00:21:26,472 --> 00:21:30,590
+以及我们提到记忆层和记忆管理器时具体指什么。
+but also what we mean when we refer to the memory layer and memory manager.
+
+333
+00:21:31,310 --> 00:21:33,841
+你还会了解记忆操作的整体概览，
+You also get an overview of memory operations,
+
+334
+00:21:33,841 --> 00:21:37,929
+我们还会学习一些术语，比如记忆工程、
+and we'll also look into terms and terminology such as memory engineering,
+
+335
+00:21:37,929 --> 00:21:40,070
+记忆单元和上下文工程。
+memory units and context engineering.
+
+336
+00:21:40,910 --> 00:21:44,402
+总的来说，这将导向记忆管理器的实现
+Overall, this will lead to the implementation of a memory manager
+
+337
+00:21:44,402 --> 00:21:45,720
+以及记忆操作的实现。
+and memory operations.
+
+338
+00:21:46,440 --> 00:21:50,002
+智能体技术栈指的是一组工具和技术
+The agent stack refers to a bunch of tools and technologies
+
+339
+00:21:50,002 --> 00:21:53,637
+它们协同工作，让 AI 智能体能够可靠地
+that work together to enable an AI agent to perform reliably
+
+340
+00:21:53,637 --> 00:21:55,600
+并高效地在生产环境中运行。
+and efficiently in production.
+
+341
+00:21:56,160 --> 00:21:59,826
+智能体技术栈通常由屏幕上显示的这些层组成，
+The agent stack is typically made up of the layers you see on the screen,
+
+342
+00:21:59,826 --> 00:22:01,724
+但为了本课程的目的，
+but for the purpose of this course,
+
+343
+00:22:01,724 --> 00:22:05,783
+我们将其压缩为三个主要层：应用层、
+we're going to compress it into three main layers, the application layer,
+
+344
+00:22:05,783 --> 00:22:08,270
+数据层和基础设施层。
+the data layer and the infrastructure layer.
+
+345
+00:22:08,830 --> 00:22:11,520
+但同样，因为我们在讨论 AI 智能体
+But again, because we're talking about AI agents
+
+346
+00:22:11,520 --> 00:22:14,340
+并且从智能体的视角来看待事物，
+and looking at things from an agentic perspective,
+
+347
+00:22:14,340 --> 00:22:17,030
+我们可以将数据层替换为记忆层。
+we can switch out the data layer for the memory layer.
+
+348
+00:22:17,910 --> 00:22:20,070
+现在，让我们更详细地看看记忆层。
+Now, let's look at the memory layer in more detail.
+
+349
+00:22:20,470 --> 00:22:24,526
+它通常是智能体技术栈中包含记忆核心的部分，
+It's typically the part of your agent stack that contains the memory core,
+
+350
+00:22:24,526 --> 00:22:28,320
+我们在上一课中已经讲过记忆核心，它还包含记忆管理器。
+which we covered in the previous lesson, and also the memory manager.
+
+351
+00:22:29,040 --> 00:22:33,659
+记忆核心和记忆管理器协同工作，本质上创建出记忆增强型
+The memory core and the memory manager work together to essentially create memory
+
+352
+00:22:33,659 --> 00:22:36,692
+智能体，它们能够处理连续任务，
+augmented agents that can handle continuous tasks,
+
+353
+00:22:36,692 --> 00:22:40,760
+执行长周期任务，并适应和学习新信息。
+operate on long-horizon tasks and adapt and learn to new information.
+
+354
+00:22:41,640 --> 00:22:43,478
+如果我们进一步聚焦记忆管理器，
+If we zoom in on the memory manager,
+
+355
+00:22:43,478 --> 00:22:47,090
+我们可以将记忆管理器理解为数据库之上的一层抽象
+we can understand a memory manager as an abstraction on the database
+
+356
+00:22:47,090 --> 00:22:50,449
+其中包含不同的控制流和控制逻辑，用于读取
+where we have different control flows and control logic to read
+
+357
+00:22:50,449 --> 00:22:53,238
+和写入数据库中的记忆存储，
+and write from memory stores we have in our database,
+
+358
+00:22:53,238 --> 00:22:56,850
+本课稍后我们将看到它的实现。
+we're going to see an implementation of this further in this lesson.
+
+359
+00:22:57,490 --> 00:23:01,010
+但在那之前，让我们先了解一些常见的记忆操作。
+But before we go there, let's go over some common memory operations.
+
+360
+00:23:01,890 --> 00:23:07,010
+记忆管理器将包含一些抽象，而这些抽象将包含各种方法。
+The memory manager is going to hold abstractions which will contain methods
+
+361
+00:23:07,010 --> 00:23:09,250
+用于保存、创建、读取、更新，
+that hold, create, read, update,
+
+362
+00:23:09,250 --> 00:23:12,930
+以及删除数据库中记忆存储的方法。
+and delete methods to memory stores within a database.
+
+363
+00:23:13,670 --> 00:23:17,230
+这些记忆存储实际上就是我们之前讲过的记忆类型。
+Now, these memory stores are actually memory types that we covered before.
+
+364
+00:23:17,630 --> 00:23:19,805
+所以对话记忆、知识库、
+So conversational memory, knowledge base,
+
+365
+00:23:19,805 --> 00:23:24,590
+工作流和摘要都会在数据库中有各自分配的表。
+workflow and summary will all have their allocated table within the database.
+
+366
+00:23:25,510 --> 00:23:29,590
+现在，这些记忆类型中，每一种都有不同的存储需求。
+Now, each of these memory types, we have a different type of storage requirement.
+
+367
+00:23:29,950 --> 00:23:33,310
+对于对话记忆，它会是一个关系型 SQL 表。
+For conversational memory, it's going to be a relational SQL table.
+
+368
+00:23:33,760 --> 00:23:36,835
+而对于知识库和其他记忆类型，
+Whereas for knowledge base and other memory types,
+
+369
+00:23:36,835 --> 00:23:39,839
+我们会以关系形式存储数据，
+we're going to be storing data in relational form,
+
+370
+00:23:39,839 --> 00:23:44,201
+但我们会有一个数据类型，可以在每一种
+but we're going to have a data type that can hold vector embeddings in each
+
+371
+00:23:44,201 --> 00:23:45,560
+以及每一种记忆类型中保存向量嵌入。
+and every memory type.
+
+372
+00:23:45,760 --> 00:23:48,600
+我们还会有读取和写入操作。
+We're going to have the read and write operations.
+
+373
+00:23:49,240 --> 00:23:51,275
+这只是为了给你展示一些方法示例。
+This is just to show you examples of methods.
+
+374
+00:23:51,275 --> 00:23:53,200
+你还会有一个记忆管理器。
+You're going to have your memory manager.
+
+375
+00:23:53,900 --> 00:23:55,817
+此外，还有更新、删除，
+Now, there are also update, delete,
+
+376
+00:23:55,817 --> 00:23:58,500
+以及创建方法，你也可以实现它们。
+and create methods that you can implement as well.
+
+377
+00:23:59,380 --> 00:24:02,360
+接下来要讲的是记忆操作的分类。
+Another thing to cover is a classification of memory operations.
+
+378
+00:24:03,040 --> 00:24:07,120
+这种分类取决于记忆操作是如何被调用的。
+This classification is dependent on how the memory operation is called.
+
+379
+00:24:07,760 --> 00:24:12,529
+我们已经讲过记忆操作是什么，也就是创建、读取、
+So we already went over what memory operations are, which are just create, read,
+
+380
+00:24:12,529 --> 00:24:16,160
+更新、删除数据库中表的操作。
+update, delete operations on tables held within a database.
+
+381
+00:24:16,800 --> 00:24:20,321
+但我们可以把这些操作区分为两种形式，
+But we can distinguish these operations into two forms,
+
+382
+00:24:20,321 --> 00:24:23,092
+第一种是确定性的，也就是说，
+the first being deterministic, which means
+
+383
+00:24:23,092 --> 00:24:27,062
+我们是在以编程方式执行记忆操作，
+that we are executing the memory operations programmatically
+
+384
+00:24:27,062 --> 00:24:29,010
+当我们与智能体交互时。
+when we interact with an agent.
+
+385
+00:24:29,410 --> 00:24:34,693
+这些确定性的记忆操作会执行，无论任何
+These memory operations that are deterministic will be executed regardless of any
+
+386
+00:24:34,693 --> 00:24:40,130
+情况如何，并且会根据固定计划或预定义条件来执行。
+situations and will be executed based on a fixed schedule or predefined conditions.
+
+387
+00:24:41,010 --> 00:24:43,010
+另一种分类是智能体触发。
+The other classification is agent triggered.
+
+388
+00:24:43,510 --> 00:24:47,514
+在这种情况下，记忆操作会作为工具提供给智能体，
+This is where the memory operations are provided to the agents as tools
+
+389
+00:24:47,514 --> 00:24:51,790
+智能体可以自行决定何时以及在哪里使用这些记忆操作。
+and the agents can decide as to when and where to use these memory operations.
+
+390
+00:24:52,590 --> 00:24:57,350
+这些记忆操作的触发由 AI 智能体自行决定。
+The triggering of these memory operations is left to the discretion of the AI agent.
+
+391
+00:24:58,110 --> 00:25:01,430
+你在本课程中会遇到的另一个术语是记忆单元。
+Another term you're going to come across in this course is memory unit.
+
+392
+00:25:02,030 --> 00:25:03,990
+我们来解释一下什么是记忆单元。
+Let's explain what a memory unit is.
+
+393
+00:25:04,789 --> 00:25:08,997
+记忆单元可以被视为最小的原子表示单位，用于表示
+A memory unit can be thought of as the smallest atomic unit of representation of
+
+394
+00:25:08,997 --> 00:25:13,469
+数据库中保存的、在智能体系统中使用的信息或数据。
+information or data held within a database that is used within an agentic system.
+
+395
+00:25:14,109 --> 00:25:16,883
+我们已经见过对话记忆单元的示例，
+We've already seen examples of conversational memory units
+
+396
+00:25:16,883 --> 00:25:20,256
+其中包含时间戳、进行对话的实体角色，
+where we have the timestamp, the role of the entity having a conversation,
+
+397
+00:25:20,256 --> 00:25:22,269
+以及对话内容本身。
+and the content of the conversation itself.
+
+398
+00:25:23,069 --> 00:25:26,771
+记忆单元的另一个示例是工作流记忆单元，
+Another example of a memory unit is a workflow memory unit
+
+399
+00:25:26,771 --> 00:25:30,010
+其中会有一行，包含诸如
+where you would have a row that has data types such
+
+400
+00:25:30,010 --> 00:25:35,100
+实际工作流内容、工作流类型、时间戳等数据类型。
+as the content of the actual workflow, the type of the workflow, the timestamp.
+
+401
+00:25:35,180 --> 00:25:39,547
+此外还有工作流某些内容的向量表示，
+And also a vector representation of some content of the workflow,
+
+402
+00:25:39,547 --> 00:25:43,915
+工作流记忆单元的内容通常包括执行过程中采取的步骤，
+the content of a workflow memory unit would typically be the steps
+
+403
+00:25:43,915 --> 00:25:47,329
+以及这些步骤的执行结果，
+and the outcome of the steps taken in the execution,
+
+404
+00:25:47,329 --> 00:25:51,220
+在后面的课程中你会了解到更多关于工作流的内容。
+you're going to hear more about workflow in later lessons.
+
+405
+00:25:52,130 --> 00:25:54,010
+另一个关键术语是上下文工程。
+Another key term is context engineering.
+
+406
+00:25:55,130 --> 00:25:59,604
+上下文工程是一种实践，即精心挑选我们想要传入
+Context engineering is a practice of curating specific content we want to pass into
+
+407
+00:25:59,604 --> 00:26:00,690
+上下文窗口的特定内容。
+the context window.
+
+408
+00:26:01,370 --> 00:26:03,503
+这意味着我们有数据源，
+This means that we have data sources
+
+409
+00:26:03,503 --> 00:26:06,419
+它们实际上可以提供多条信息，
+which can actually provide several pieces of information
+
+410
+00:26:06,419 --> 00:26:08,908
+这些信息会传入我们的上下文窗口，但
+that will pass into our context window but
+
+411
+00:26:08,908 --> 00:26:12,961
+与其把所有这些信息都塞进上下文窗口，
+rather than stuffing all this information into the context window,
+
+412
+00:26:12,961 --> 00:26:16,730
+我们实际上会非常仔细地思考要传入哪些上下文。
+we actually think very carefully about what context we pass in.
+
+413
+00:26:17,450 --> 00:26:22,130
+上下文工程的目标是最大化上下文窗口中每个 token 的价值。
+The aim of context engineering is to maximize the value of each token within a context window.
+
+414
+00:26:22,690 --> 00:26:27,170
+理想情况下，我们希望上下文窗口中的每个 token 都有高信噪比。
+Ideally, we want a high signal-to-noise ratio for every token within a context window.
+
+415
+00:26:27,850 --> 00:26:32,250
+这意味着我们将能够获得期望的输出和期望的结果。
+This means that we'll be able to get the desired output and the desired outcome.
+
+416
+00:26:33,130 --> 00:26:36,781
+你需要带走的最后一个术语是记忆工程，
+The last term you need to take with you is memory engineering,
+
+417
+00:26:36,781 --> 00:26:39,501
+这是一门实际构建
+which is the discipline of actually building
+
+418
+00:26:39,501 --> 00:26:43,653
+和维护 AI 智能体记忆系统的学科，以使其能够适应
+and maintaining systems of memory for an AI agent to enable it to adapt
+
+419
+00:26:43,653 --> 00:26:44,870
+并真正学习。
+and actually learn.
+
+420
+00:26:45,590 --> 00:26:49,713
+在记忆工程中，你负责相关流程和操作
+In memory engineering, you're responsible for the processes and operations
+
+421
+00:26:49,713 --> 00:26:51,710
+它发生在记忆生命周期中。
+that goes within a memory life cycle.
+
+422
+00:26:52,590 --> 00:26:54,990
+现在让我们看看什么是记忆生命周期。
+Now let's look into what a memory life cycle is.
+
+423
+00:26:55,550 --> 00:26:57,790
+记忆生命周期会经历几个步骤。
+A memory life cycle goes through several steps.
+
+424
+00:26:58,670 --> 00:27:00,483
+首先，你有一个原始数据源，
+First, you have a raw data source,
+
+425
+00:27:00,483 --> 00:27:02,749
+它经过一个摄取流水线，
+which goes through an ingestion pipeline
+
+426
+00:27:02,749 --> 00:27:07,800
+然后可能会使用嵌入模型或 LLM 进行信息增强。
+and then is enriched maybe using an embedding model or an LLM for augmentation of information.
+
+427
+00:27:08,640 --> 00:27:10,426
+然后这些内容会存储到数据库中，
+This is then stored in a database
+
+428
+00:27:10,426 --> 00:27:15,320
+并且会存储在不同表中，分别对应短期或长期记忆。
+and also stored in different tables representing either short term or long term memory.
+
+429
+00:27:16,120 --> 00:27:18,454
+接下来是信息的组织。
+Now we have the organization of information.
+
+430
+00:27:18,454 --> 00:27:20,666
+这会涉及索引等过程，
+This will involve processes such as indexing
+
+431
+00:27:20,666 --> 00:27:23,430
+并梳理信息中的关系。
+and mapping out relationships within information.
+
+432
+00:27:24,230 --> 00:27:26,230
+接下来我们进入信息检索阶段。
+Now we'll go into retrieving the information.
+
+433
+00:27:26,990 --> 00:27:29,390
+记忆可以使用不同的检索策略来检索。
+A memory can be retrieved with different retrieval strategies.
+
+434
+00:27:29,670 --> 00:27:34,833
+常见的有文本或词法、向量、图、遍历或混合检索，
+The common ones are text or lexical, vector, graph, traversal or hybrid,
+
+435
+00:27:34,833 --> 00:27:39,910
+它是两种或多种不同检索策略的组合。
+which is a combination of two or more different retrieval strategies.
+
+436
+00:27:40,830 --> 00:27:44,937
+当我们在记忆生命周期中检索信息时，这些信息，
+When we retrieve information within the memory life cycle, this information,
+
+437
+00:27:44,937 --> 00:27:46,990
+也就是记忆，会被传入 LLM。
+which is memory, is passed into the LLM.
+
+438
+00:27:47,630 --> 00:27:50,270
+LLM 的输出也可以用作记忆。
+The output from an LLM can also be used as memory.
+
+439
+00:27:50,630 --> 00:27:54,147
+它还会经过序列化和信息增强等步骤，
+It would go through steps such as serialization and augmentation,
+
+440
+00:27:54,147 --> 00:27:56,910
+在这些步骤中，我们会丰富输出内容，以便存储到数据库。
+where we enrich the output to be stored in a database.
+
+441
+00:27:57,510 --> 00:28:02,165
+然后它会进入存储、组织、检索的循环，
+And then it goes within the cycle of storage, organization, retrieval,
+
+442
+00:28:02,165 --> 00:28:03,950
+并再次回到 LLM。
+and back into the LLM again.
+
+443
+00:28:04,430 --> 00:28:07,670
+这是对记忆生命周期的一个非常简单概览。
+Now, this is a very simple overview of the memory life cycle.
+
+444
+00:28:08,430 --> 00:28:12,615
+记忆生命周期实现了一个持续学习循环，
+The memory life cycle enables a continuous learning cycle
+
+445
+00:28:12,615 --> 00:28:16,630
+AI 智能体需要这个循环来处理长周期任务。
+that an AI agent requires to address long-horizon tasks.
+
+446
+00:28:17,550 --> 00:28:21,215
+记忆工程可能是你刚刚遇到的一个新术语，
+Memory engineering might be a new term that you've just come across,
+
+447
+00:28:21,215 --> 00:28:25,009
+但它结合了多个现有学科，并借鉴了这些学科的实践
+but it's a combination of existing disciplines and takes the practice
+
+448
+00:28:25,009 --> 00:28:29,447
+和原则，以高效实现
+and principles from these disciplines to enable the efficient implementation of
+
+449
+00:28:29,447 --> 00:28:31,440
+AI 智能体中的记忆操作。
+memory operations within AI agents.
+
+450
+00:28:32,160 --> 00:28:34,000
+例如，数据库工程。
+For example, database engineering.
+
+451
+00:28:34,600 --> 00:28:39,190
+在记忆工程中，我们会利用 ACID 事务等原则，
+Within memory engineering, we leverage principles such as ACID transactions,
+
+452
+00:28:39,190 --> 00:28:43,300
+持久化存储，以及对存储架构的理解，
+persistent storage and having an understanding of storage architecture
+
+453
+00:28:43,300 --> 00:28:46,040
+这些都可以用于记忆工程。
+that we can utilize within memory engineering.
+
+454
+00:28:47,000 --> 00:28:49,240
+智能体工程在这里也很重要。
+Agent engineering also comes into play here.
+
+455
+00:28:49,640 --> 00:28:54,263
+在构建 AI 智能体时，我们确实需要理解如何设计这个智能体，
+As we're building AI agents, we do require an understanding of how to engineer this
+
+456
+00:28:54,263 --> 00:28:57,210
+以及何时何地加入记忆操作，
+agent and when and where to put in memory operations,
+
+457
+00:28:57,210 --> 00:29:01,230
+机器学习工程在记忆工程中也是必需的。
+Machine learning engineering is also required in memory engineering.
+
+458
+00:29:02,030 --> 00:29:06,046
+这是因为我们实际上可能会微调其中一些嵌入模型，
+This is due to the fact that we might actually fine-tune some of these embedding
+
+459
+00:29:06,046 --> 00:29:08,430
+甚至一些更小的语言模型。
+models or even some smaller language models.
+
+460
+00:29:09,150 --> 00:29:11,430
+典型流程，例如模型版本管理、
+Typical processes such as model versioning,
+
+461
+00:29:11,430 --> 00:29:16,560
+重排序流水线和持续学习，也会在记忆工程中发挥作用。
+reranking pipelines and continuous learning actually come into play within memory engineering.
+
+462
+00:29:17,400 --> 00:29:20,403
+最后，信息检索这门学科
+Lastly, information retrieval, which is a discipline
+
+463
+00:29:20,403 --> 00:29:23,667
+关注的是实现检索策略
+that is concerned with implementing retrieval strategies
+
+464
+00:29:23,667 --> 00:29:25,821
+以及优化检索策略，
+and optimizing retrieval strategies,
+
+465
+00:29:25,821 --> 00:29:28,366
+本质上也是在利用记忆工程，
+is essentially utilizing memory engineering
+
+466
+00:29:28,366 --> 00:29:32,740
+当我们实现向量索引或其他想要使用的索引策略时，
+when we're implementing vector indexes or any other index strategies we want to
+
+467
+00:29:32,740 --> 00:29:36,069
+以便高效地从数据库中检索数据。
+utilize for the efficient retrieval of data from a database.
+
+468
+00:29:36,949 --> 00:29:39,789
+这些本质上就是记忆工程涉及的学科。
+These essentially are the disciplines involved in memory engineering.
+
+469
+00:29:40,349 --> 00:29:42,334
+如你所见，这里没有什么新东西，
+As you can see, there is nothing new here,
+
+470
+00:29:42,334 --> 00:29:44,669
+只是现有学科的交叉。
+just an intersection of existing disciplines.
+
+471
+00:29:45,669 --> 00:29:47,634
+现在我们要进入具备记忆能力的智能体，
+Now we're going into Memory Aware Agent
+
+472
+00:29:47,634 --> 00:29:49,777
+这是本课程的一个重要部分。
+and this is an important part of this course
+
+473
+00:29:49,777 --> 00:29:53,469
+因为我们要从记忆增强型智能体转向具备记忆能力的智能体，
+as we are moving away from Memory-Augmented Agent into Memory Aware Agent,
+
+474
+00:29:53,469 --> 00:29:56,029
+理解它们之间的区别总是很有帮助。
+and it's always good to understand the difference.
+
+475
+00:29:56,720 --> 00:30:00,128
+我们最初实现了一个简单的记忆增强型智能体，
+We started off with a naive implementation of a memory-augmented agent
+
+476
+00:30:00,128 --> 00:30:04,240
+它只有对话记忆，也就是说它只有交互历史。
+that just had conversational memory, which means it only had interaction history.
+
+477
+00:30:05,000 --> 00:30:10,560
+这让我们能够为 AI 智能体添加显式的记忆类型分配。
+And this allowed us to add an explicit memory type allocation to our AI agent.
+
+478
+00:30:11,440 --> 00:30:15,057
+通过为 AI 智能体添加显式的记忆类型分配，
+By adding an explicit memory type allocation to our AI agent,
+
+479
+00:30:15,057 --> 00:30:18,320
+我们能够进入完全记忆增强型智能体。
+we're able to move into a fully memory-augmented agent.
+
+480
+00:30:18,840 --> 00:30:23,174
+这意味着我们有了一个智能体，可以从不同的记忆中检索信息
+This means we had an agent that can retrieve information from different memory
+
+481
+00:30:23,174 --> 00:30:26,063
+例如对话记忆工作流等存储，
+stores such as the conversational memory workflow,
+
+482
+00:30:26,063 --> 00:30:30,200
+memory toolbox memory 以及我们数据库中其他形式的智能体记忆。
+memory toolbox memory and other forms of agent memory within our database.
+
+483
+00:30:30,920 --> 00:30:32,400
+但我们可以更进一步。
+But we can take things further.
+
+484
+00:30:32,920 --> 00:30:36,360
+我们可以通过几个步骤让我们的 AI 智能体具备记忆能力。
+We can make our AI agent memory-aware by taking a few steps.
+
+485
+00:30:36,800 --> 00:30:42,600
+第一步是通过系统提示让 AI 智能体感知到记忆存储的存在。
+The first one is giving the AI agent an awareness of the memory stores via the system prompt.
+
+486
+00:30:43,280 --> 00:30:47,617
+第二步是把记忆操作作为工具提供给 AI 智能体，以便
+The second is giving memory operations as tools to the AI agent so
+
+487
+00:30:47,617 --> 00:30:50,428
+AI 智能体可以自行存储、检索、
+that the AI agent could store, retrieve,
+
+488
+00:30:50,428 --> 00:30:53,480
+读取和遗忘记忆。
+read and forget memory at its own discretion.
+
+489
+00:30:54,240 --> 00:30:59,645
+下一步是让 AI 智能体具备对记忆生命周期进行推理的能力，
+The next step is giving an AI agent the ability to reason through the memory life cycle,
+
+490
+00:30:59,645 --> 00:31:05,132
+最后一步，要成为具备记忆能力的智能体，是将上下文
+and the final step, to move into a memory-aware agent is by segmenting the context
+
+491
+00:31:05,132 --> 00:31:10,210
+窗口划分为分配给特定记忆类型的部分或分区，
+window into portions or partitions allocated for specific memory types,
+
+492
+00:31:10,210 --> 00:31:16,270
+我们将在本课的所有实现步骤中看到这一点。在本节中，我们将
+which we will see in all the implementation steps in this lesson. In this section, we're
+
+493
+00:31:16,270 --> 00:31:20,259
+设置所有关键系统组件，比如数据库、
+Going to be setting up all the key system components such as the database,
+
+494
+00:31:20,259 --> 00:31:22,352
+嵌入模型和向量存储
+the embedding models and a vector store
+
+495
+00:31:22,352 --> 00:31:25,230
+这是实现具备记忆能力的 AI 智能体所需的。
+that we require to implement a memory-aware AI agent.
+
+496
+00:31:25,950 --> 00:31:28,750
+我们先从设置数据库开始。
+We are going to start with setting up our database.
+
+497
+00:31:29,350 --> 00:31:31,594
+我们将加载环境变量
+We're going to load environment variables
+
+498
+00:31:31,594 --> 00:31:34,710
+这样就能访问环境中的所有 API 密钥。
+so we have access to all the API keys within our environment.
+
+499
+00:31:35,150 --> 00:31:38,090
+然后我们会设置 Oracle AI Database，
+Then we'll set up our Oracle AI Database,
+
+500
+00:31:38,090 --> 00:31:43,277
+创建数据库连接并传入正确的参数
+create a connection to the database and pass in the right parameters
+
+501
+00:31:43,277 --> 00:31:49,070
+然后通过看到数据库横幅来确认连接已成功建立。
+and then confirm we have an active connection by seeing a banner of the database.
+
+502
+00:31:49,670 --> 00:31:52,810
+执行单元格后，你应该能看到输出。
+Once you execute a cell, you should be able to see an output.
+
+503
+00:31:53,330 --> 00:31:58,010
+它会经过一系列确认步骤，成功连接到数据库。
+It will go through a confirmation of steps to successfully connect to the database.
+
+504
+00:31:58,570 --> 00:32:02,207
+然后你应该能看到横幅，确认
+And then you should be able to see the banner confirming
+
+505
+00:32:02,207 --> 00:32:05,370
+你正在使用的 Oracle AI Database 版本。
+which Oracle AI Database version you're using.
+
+506
+00:32:06,090 --> 00:32:10,010
+本节课我们使用 Oracle AI Database 26 AI。
+We're using Oracle AI Database 26 AI for this lesson.
+
+507
+00:32:10,890 --> 00:32:14,410
+我们要设置的第二个关键组件是嵌入模型。
+The second key component we'll be setting up is our embedding model.
+
+508
+00:32:14,930 --> 00:32:18,142
+我们将从 Hugging Face 获取嵌入模型，
+We'll be getting our embedding model from Hugging Face,
+
+509
+00:32:18,142 --> 00:32:22,890
+具体是使用 LangChain 库中的 Hugging Face 集成。
+specifically using the Hugging Face integration within the LangChain library.
+
+510
+00:32:23,650 --> 00:32:27,504
+我们将使用 Sentence Transformers 库
+We'll be using the Sentence Transformers library
+
+511
+00:32:27,504 --> 00:32:31,450
+并访问 paraphrase-mpnet-base-v2。
+and accessing the paraphrase-mpnet-base-v2.
+
+512
+00:32:31,930 --> 00:32:36,540
+执行这个单元格后，你的本地机器上就会有一个嵌入模型。
+When this cell is executed, you're going to have an embedding model on your local machine.
+
+513
+00:32:37,420 --> 00:32:40,520
+接下来，我们要设置数据库表，
+Next, we're going to set up the database tables,
+
+514
+00:32:40,520 --> 00:32:44,395
+这些是构建智能体记忆所需的关键系统组件
+which are key system components we need for our agent memory
+
+515
+00:32:44,395 --> 00:32:46,100
+以及具备记忆能力的 AI 智能体。
+and memory-aware AI agent.
+
+516
+00:32:46,820 --> 00:32:49,014
+我们将为这些表设置名称
+We're going to set up names for the tables
+
+517
+00:32:49,014 --> 00:32:51,660
+这些表代表不同形式的智能体记忆。
+that represent different forms of agent memory.
+
+518
+00:32:51,860 --> 00:32:52,860
+我们之前已经介绍过。
+We covered previously.
+
+519
+00:32:53,700 --> 00:32:55,980
+例如，对于对话记忆，
+For example, for conversational memory,
+
+520
+00:32:55,980 --> 00:33:00,280
+我们会有一个对话表，用文本 X 来标识。
+we're gonna have the conversational table that'll be identified by the text X.
+
+521
+00:33:00,400 --> 00:33:06,352
+对话记忆。对于基于知识的表，我们将使用语义记忆
+Conversational memory. For the knowledge-based table, we're going to have semantic memory
+
+522
+00:33:06,352 --> 00:33:07,840
+依此类推。
+and so on and so forth.
+
+523
+00:33:08,680 --> 00:33:11,565
+所有表名都存储在一个列表中
+All the table names are stored in a list
+
+524
+00:33:11,565 --> 00:33:17,248
+并赋值给变量 all_tables。我们遍历所有
+and assigned to the variable all_tables. We iterate through the contents of all
+
+525
+00:33:17,248 --> 00:33:19,783
+表，并删除已存在的表
+tables and drop a table if it exists
+
+526
+00:33:19,783 --> 00:33:23,630
+因为我们是从头运行本节课。
+as we are running this specific lesson from scratch.
+
+527
+00:33:24,430 --> 00:33:27,350
+最后，我们提交数据库事务。
+And lastly, we commit the database transaction.
+
+528
+00:33:28,230 --> 00:33:31,598
+运行该单元格后，你应该能看到输出
+Once you run the cell, you should be able to see an output
+
+529
+00:33:31,598 --> 00:33:36,502
+输出会显示表应该不存在，因为我们现在是第一次运行
+that the table should not exist because we're running this for the first time now
+
+530
+00:33:36,502 --> 00:33:39,431
+现在我们已经实际创建了记忆存储，
+Now that we've actually created our memory stores,
+
+531
+00:33:39,431 --> 00:33:43,750
+下一步是创建实际的对话历史表。
+Next step is for us to create the actual conversational history table.
+
+532
+00:33:44,370 --> 00:33:49,571
+我们将通过定义一个名为 Create Conversational History 的函数来完成
+This will be done by specifying a function called Create Conversational History
+
+533
+00:33:49,571 --> 00:33:53,930
+该函数会接收我们的连接和表名作为参数。
+table that will take our connection and the table name as arguments.
+
+534
+00:33:54,730 --> 00:33:56,923
+同样，如果存在任何表，我们会先删除
+Again, we will drop any tables if they exist
+
+535
+00:33:56,923 --> 00:33:59,970
+因为我们想确保从一个全新的表开始。
+because we want to ensure we're starting with a fresh table.
+
+536
+00:34:00,730 --> 00:34:05,910
+然后我们会运行 SQL 语句，用正确的属性实际创建表
+And then we'll run a SQL statement to actually create the table with the right
+
+537
+00:34:05,910 --> 00:34:09,390
+这些属性是我们期望表中行具备的。
+attributes we expect for the rows within the table.
+
+538
+00:34:10,190 --> 00:34:17,550
+值得注意的是，对于对话记忆单元，我们希望捕获内容、角色和时间戳。
+Notably, for conversational memory unit, we want to capture the content, the role, the timestamp.
+
+539
+00:34:18,070 --> 00:34:21,397
+这些我们之前课程中已经介绍过，
+Those are what we covered in the lesson earlier,
+
+540
+00:34:21,397 --> 00:34:24,308
+但还可以捕获额外的元数据，
+but additional metadata can be captured,
+
+541
+00:34:24,308 --> 00:34:29,715
+例如与会话记忆单元相关的实际元数据，
+such as the actual metadata associated with the conversational memory unit,
+
+542
+00:34:29,715 --> 00:34:35,621
+比如 created_at 字段，它与会话记忆单元的时间戳不同
+the created at, which was different to the timestamp the conversational memory unit
+
+543
+00:34:35,621 --> 00:34:38,366
+会话记忆单元被捕获时也会有一个摘要 ID，
+is captured will also have a summary ID,
+
+544
+00:34:38,366 --> 00:34:43,190
+这些内容将在本课程后续部分解释。现在我们已经
+which will be explained in later sections of this course. Now that we
+
+545
+00:34:43,190 --> 00:34:49,510
+有了 SQL 语句，我们可以稍后提交事务来执行该 SQL 语句。
+have a SQL statement, we can execute the SQL statement by committing the transaction later on.
+
+546
+00:34:50,390 --> 00:34:53,163
+为了确保我们能够进行更快的查询，
+To ensure that we can conduct faster lookup,
+
+547
+00:34:53,163 --> 00:34:58,110
+我们将在 thread ID 和时间戳属性上创建索引。
+we're going to create indexes on the thread ID and on the timestamp attributes.
+
+548
+00:34:58,830 --> 00:35:04,797
+这将确保在会话记忆表中遍历行时
+This will ensure that traversing through rows within our conversational memory table
+
+549
+00:35:04,797 --> 00:35:08,230
+不会花费太多时间，并且能够高效完成。
+doesn't take a lot of time and is done efficiently.
+
+550
+00:35:09,310 --> 00:35:11,990
+接下来，我们将调用创建表的函数。
+Next, we're going to call the functions to create the table.
+
+551
+00:35:12,650 --> 00:35:15,818
+我们还将创建一个 tool log 表，
+We're also going to create a tool log table,
+
+552
+00:35:15,818 --> 00:35:19,690
+它将从 helper 模块导入。
+which is going to be imported from the helper module.
+
+553
+00:35:20,330 --> 00:35:24,577
+它采用与会话历史表相同的步骤来创建表
+This takes the same steps as a conversational history table to create the table
+
+554
+00:35:24,577 --> 00:35:26,250
+在 Oracle AI Database 中。
+within the Oracle AI Database.
+
+555
+00:35:27,090 --> 00:35:30,747
+现在我们刚刚调用了 Create Conversational History 表函数，
+Now we just called a Create Conversational History table,
+
+556
+00:35:30,747 --> 00:35:36,047
+传入了之前的数据库连接，以及前面在代码部分中
+passing the database connection earlier along with the name specified earlier on in
+
+557
+00:35:36,047 --> 00:35:37,390
+指定的名称。
+the coding sections.
+
+558
+00:35:38,270 --> 00:35:41,137
+我们对 tool log 历史表执行同样的操作，
+We do the same for the tool log history table
+
+559
+00:35:41,137 --> 00:35:46,870
+同样通过调用我们从 helper 模块导入的 create tool log table 函数。
+as well by calling the create tool log table we've imported from the helper module.
+
+560
+00:35:47,750 --> 00:35:52,039
+执行此单元格后，你应该会看到一条消息，
+Once this cell is executed, you should be able to see a message shown
+
+561
+00:35:52,039 --> 00:35:58,320
+显示会话记忆表和 tool log 记忆表已成功创建并带有索引。
+that the conversational memory and tool log memory table were created successfully with indexes.
+
+562
+00:35:59,240 --> 00:36:04,685
+现在我们已经为会话记忆和 tool log 创建了 SQL 表，
+Now that we've created our SQL table for conversational memory and tool log,
+
+563
+00:36:04,685 --> 00:36:08,920
+接下来该创建能够处理向量数据的 SQL 表了。
+it's time to create SQL tables that can handle vector data.
+
+564
+00:36:09,920 --> 00:36:14,692
+这部分我们将使用 Oracle 数据库集成，具体是
+For this part, we're going to be using the Oracle database integration in the
+
+565
+00:36:14,692 --> 00:36:15,960
+LangChain 库中的集成。
+LangChain library.
+
+566
+00:36:16,600 --> 00:36:20,617
+具体来说，我们将导入 Oracle VS 模块
+Specifically, we're going to import the Oracle VS module
+
+567
+00:36:20,617 --> 00:36:24,801
+它允许我们创建索引并实际创建表
+that allows us to create indexes and actually create tables
+
+568
+00:36:24,801 --> 00:36:28,650
+在 Oracle AI Database 中处理向量数据。
+that can handle vector data within Oracle AI Database.
+
+569
+00:36:29,490 --> 00:36:34,190
+我们还将指定距离策略，用于测量两个
+We'll also be specifying the distance strategy to measure the distance between two
+
+570
+00:36:34,190 --> 00:36:35,130
+或更多向量之间的距离。
+or more vectors.
+
+571
+00:36:36,090 --> 00:36:41,037
+我们还将导入在 LangChain Oracle 中进行混合搜索的能力
+We'll also import the ability to conduct hybrid search within the LangChain Oracle
+
+572
+00:36:41,037 --> 00:36:44,570
+数据库集成中，以创建我们的向量存储。
+database integration in order to create our vector stores.
+
+573
+00:36:45,040 --> 00:36:48,760
+我们将创建一个类来抽象所有方法和向量存储。
+We're going to have a class to abstract all the methods and the vector stores.
+
+574
+00:36:49,280 --> 00:36:51,520
+我们将其称为 store manager（存储管理器）。
+We'll refer to this as the store manager.
+
+575
+00:36:52,360 --> 00:36:55,000
+store manager 将创建我们所有的向量存储。
+The store manager is going to create all our vector stores.
+
+576
+00:36:55,480 --> 00:36:58,384
+让我们看看具体的函数和方法
+Let's take a look at the specific functions and methods
+
+577
+00:36:58,384 --> 00:37:01,731
+这些函数和方法用于创建知识库的向量存储，
+that are called to create the vector stores for knowledge base,
+
+578
+00:37:01,731 --> 00:37:03,120
+也就是语义记忆。
+which is semantic memory.
+
+579
+00:37:03,680 --> 00:37:08,380
+我们将使用 Oracle Vector Store 的 LangChain 集成来初始化一个向量存储。
+We're going to initialize a vector store using the Oracle Vector Store LangChain integration.
+
+580
+00:37:08,900 --> 00:37:13,100
+我们将指定 client，也就是我们的数据库连接。
+We're going to specify the client, which is our database connection.
+
+581
+00:37:13,740 --> 00:37:18,809
+embedding 函数将使用我们之前初始化的 embedding 模型
+The embedding function, which is going to use the embedding model we initialized
+
+582
+00:37:18,809 --> 00:37:21,940
+以及我们指定的表名。
+earlier, alongside the table names we specified.
+
+583
+00:37:22,580 --> 00:37:25,911
+最后，我们指定距离策略，
+And lastly, we specify the distance strategy,
+
+584
+00:37:25,911 --> 00:37:28,730
+这里将使用 cosine（余弦）。
+which in this case is going to be cosine.
+
+585
+00:37:29,490 --> 00:37:33,685
+这是一种数学运算，用于测量两个或多个
+This is a mathematical operation we use to measure the distance between two or more
+
+586
+00:37:33,685 --> 00:37:35,570
+高维空间中向量之间的距离。
+vectors in a high dimensional space.
+
+587
+00:37:36,410 --> 00:37:41,770
+我们将对希望 AI 智能体拥有的每种记忆形式执行这一步骤。
+We're going to conduct the step for each of the forms of memory we want our AI agent to have.
+
+588
+00:37:42,570 --> 00:37:45,930
+具体来说，我们为 knowledge base（知识库）执行此操作，也就是语义记忆。
+Specifically, we do this for knowledge base, which is semantic memory.
+
+589
+00:37:46,450 --> 00:37:50,497
+我们也为 workflow（工作流）执行此操作，也就是工作流记忆。我们为 toolbox 执行此操作，
+We do this for workflow, which is workflow memory. We do this for toolbox,
+
+590
+00:37:50,497 --> 00:37:51,890
+也就是工具箱记忆。
+which is toolbox memory.
+
+591
+00:37:52,830 --> 00:37:58,350
+Entity（实体），也就是实体记忆；summary（摘要），也就是摘要记忆。
+Entity, which is entity memory and summary, which is summary memory.
+
+592
+00:37:59,350 --> 00:38:04,408
+store manager 还会包含一些方法，用来检索实际的记忆存储
+The store manager will also contain methods to retrieve the actual memory stores
+
+593
+00:38:04,408 --> 00:38:07,830
+即我们初始化的每种记忆类型对应的存储本身。
+themselves for each of the memory types we initialize.
+
+594
+00:38:08,110 --> 00:38:11,692
+我们将能够检索这些记忆存储的对象
+We'll be able to retrieve objects of these memory stores
+
+595
+00:38:11,692 --> 00:38:13,750
+并对它们执行操作。
+and perform operations on them.
+
+596
+00:38:14,600 --> 00:38:17,024
+最后，对于 Knowledge Base（知识库）本身，
+Lastly, for Knowledge Base itself,
+
+597
+00:38:17,024 --> 00:38:22,275
+我们将设置混合搜索能力，以便能够利用多种
+we'll set up a hybrid search capability to enable the utilization of multiple
+
+598
+00:38:22,275 --> 00:38:26,960
+检索策略，从知识库中检索信息。
+retrieval strategies to retrieve information from knowledge base.
+
+599
+00:38:28,120 --> 00:38:29,560
+请务必运行此单元格。
+Make sure you run this cell.
+
+600
+00:38:30,840 --> 00:38:36,320
+接下来，我们创建之前指定的 store manager 类的实例。
+Next, we create an instance of the store manager class we specified earlier.
+
+601
+00:38:37,140 --> 00:38:40,460
+但在这个示例中，我们会将数据库连接作为客户端传入。
+But for this instance, we're going to pass in the database connection as the client.
+
+602
+00:38:40,940 --> 00:38:43,900
+嵌入函数是我们之前初始化的嵌入模型。
+The embedding function is the embedding model we initialized earlier.
+
+603
+00:38:44,380 --> 00:38:49,713
+但我们还会传入最初指定的表名，以及距离
+But also we pass in the table names we specified initially alongside the distance
+
+604
+00:38:49,713 --> 00:38:55,045
+函数；我们之前提到会使用余弦距离，以及会话表
+function, which we mentioned was going to be cosine and the conversational table
+
+605
+00:38:55,045 --> 00:38:56,300
+和工具日志表名。
+and tool log names.
+
+606
+00:38:57,270 --> 00:39:02,880
+运行这个单元格后，你的记忆存储和向量存储应该就创建好了。
+When you run this cell, you should have your memory stores and vector stores created.
+
+607
+00:39:03,720 --> 00:39:07,776
+下一步，我们可以获取记忆存储的实例，
+In the next step, we can get instances of our memory stores
+
+608
+00:39:07,776 --> 00:39:13,690
+并使用 get_specific_memory_store 函数将它们分配到开发环境中的变量，
+and allocate them to variables within our development environment by using the get
+
+609
+00:39:13,690 --> 00:39:18,760
+该函数是我们在存储管理器（store manager）中指定的。
+specific memory store function we specified within the store manager.
+
+610
+00:39:19,720 --> 00:39:23,913
+最后，为了确保能高效地从数据库中检索信息，
+Lastly, to ensure efficient retrieval of information from a database,
+
+611
+00:39:23,913 --> 00:39:25,940
+你应该始终创建索引。
+you should always create an index.
+
+612
+00:39:26,660 --> 00:39:30,614
+索引是一种数据结构，它让我们能够从
+An index is a data structure that enables the retrieval of information from a
+
+613
+00:39:30,614 --> 00:39:33,580
+数据库中检索信息，而无需扫描数据库中的所有条目。
+database without scanning all the items of the database.
+
+614
+00:39:34,420 --> 00:39:37,523
+我们将为所有向量存储创建索引，
+We'll be creating an index for all vector stores
+
+615
+00:39:37,523 --> 00:39:40,549
+这些向量存储是使用 save_create_index 函数创建的，
+that we've created by using the function save_
+
+616
+00:39:40,549 --> 00:39:43,420
+该函数从 helper 文件导入。
+create_index imported from the helper file.
+
+617
+00:39:43,960 --> 00:39:48,435
+我们将能够为我们指定的每种记忆类型创建索引，
+We'll be able to create an index for each of the memory types we've specified for
+
+618
+00:39:48,435 --> 00:39:49,520
+也就是我们的向量存储。
+our vector stores.
+
+619
+00:39:50,640 --> 00:39:54,951
+执行该单元格后，你应该会得到一条输出消息，说明
+Once the cell is executed, you should get an output message specifying
+
+620
+00:39:54,951 --> 00:39:57,800
+所有向量索引都已创建。
+that all the vector indexes have been created.
+
+621
+00:39:58,760 --> 00:40:02,840
+现在我们进入第 2 部分：创建记忆管理器的实例。
+Now we're moving on to part 2, where we create an instance of our memory manager.
+
+622
+00:40:03,560 --> 00:40:08,053
+请记住，记忆管理器抽象了我们用来读取
+Remember, a memory manager abstracts all the operations that we utilize to read
+
+623
+00:40:08,053 --> 00:40:10,400
+和写入数据库信息的所有操作。
+and write information from the database.
+
+624
+00:40:11,010 --> 00:40:14,610
+我们将从 helper 文件导入记忆管理器。
+We're going to import the memory manager from our helper file.
+
+625
+00:40:15,170 --> 00:40:19,419
+记忆管理器将接收数据库连接，
+The memory manager is going to take in the connection to our database
+
+626
+00:40:19,419 --> 00:40:23,370
+并且需要知道我们需要访问的所有表。
+and needs to be aware of all the tables that we require access to.
+
+627
+00:40:24,290 --> 00:40:26,530
+现在是时候使用记忆管理器了。
+Now it's time to utilize the memory manager.
+
+628
+00:40:27,290 --> 00:40:31,196
+使用记忆管理器的最佳方式实际上是先向其中摄取数据，
+The best way to utilize the memory manager is actually to ingest data into it
+
+629
+00:40:31,196 --> 00:40:32,560
+再从中检索数据。
+and retrieve data from it.
+
+630
+00:40:32,720 --> 00:40:35,453
+请记住，这些就是读取和写入操作，
+Remember, these are the read and write operations
+
+631
+00:40:35,453 --> 00:40:37,600
+本节中已经强调过。
+that were highlighted in this section.
+
+632
+00:40:37,800 --> 00:40:42,560
+接下来我们将使用在之前单元格中实例化的记忆管理器。
+We'll get to utilize the memory manager we instantiated in the previous cell.
+
+633
+00:40:43,400 --> 00:40:45,416
+为了使用记忆管理器，
+In order to utilize the memory manager,
+
+634
+00:40:45,416 --> 00:40:47,920
+我们需要向其中写入数据并从中读取数据。
+we have to write data into it and read data from it.
+
+635
+00:40:48,320 --> 00:40:54,017
+我们要使用的数据是从 Hugging Face 获取的存档论文，
+And the data we're going to utilize is archive papers retrieved from Hugging Face
+
+636
+00:40:54,017 --> 00:40:59,380
+使用的加载方法是 load_dataset，以确保检索到的数据遵循
+using the load_dataset method in order to ensure the data retrieved follows a
+
+637
+00:40:59,380 --> 00:41:05,329
+特定格式；下面的单元格会从每条数据中提取所需的关键信息，
+certain format, the following cell extracts the key information required from each
+
+638
+00:41:05,329 --> 00:41:11,110
+也就是从加载的数据集中提取每篇论文和数据点的信息。具体来说，我们提取标题。
+paper and data point from the loaded dataset. Specifically, we extract the title.
+
+639
+00:41:11,690 --> 00:41:15,570
+每个数据点的摘要、主题和提交日期。
+Abstract, subject, and submission date of each data point.
+
+640
+00:41:15,610 --> 00:41:19,740
+然后，我们把这些数据拼接起来，
+From the dataset, we then concatenate all of this data
+
+641
+00:41:19,740 --> 00:41:22,126
+传入一个文本变量，
+and pass it into a text variable
+
+642
+00:41:22,126 --> 00:41:26,256
+并使用记忆管理器写入知识库（Knowledge Base），
+and use our memory manager to write to Knowledge Base,
+
+643
+00:41:26,256 --> 00:41:32,130
+也就是我们的智能体语义记忆，并将文本传入 text 参数。
+which is our agent semantic memory and pass the text into the text argument.
+
+644
+00:41:32,500 --> 00:41:37,344
+而元数据将接收后续分配的属性，
+And the metadata will take in the subsequent allocated attributes
+
+645
+00:41:37,344 --> 00:41:39,420
+如这些单元格中所指定。
+as specified in these cells.
+
+646
+00:41:40,460 --> 00:41:43,140
+写入知识库会执行一些操作。
+Writing to the knowledge base does some operations.
+
+647
+00:41:44,100 --> 00:41:48,487
+首先，这些文本数据及其向量表示
+Firstly, this text data and a vector representation of it
+
+648
+00:41:48,487 --> 00:41:51,352
+会在知识库中创建，
+are created within the knowledge base,
+
+649
+00:41:51,352 --> 00:41:57,350
+这让我们可以在语义汇总表中按行进行语义搜索。
+which enables semantic search against rows within our semantic summary table.
+
+650
+00:41:58,190 --> 00:42:02,549
+元数据也保存在语义汇总表中，
+The metadata are also held within the semantic summary table
+
+651
+00:42:02,549 --> 00:42:08,446
+因此每一行都包含元数据和向量表示。为了完成
+so each row has the metadata and the vector representation in order to complete the
+
+652
+00:42:08,446 --> 00:42:12,035
+对记忆管理器及其操作的概览，
+overview of the memory manager and its operation,
+
+653
+00:42:12,035 --> 00:42:15,710
+我们将从知识库记忆中读取。
+we're going to read from the knowledge base memory.
+
+654
+00:42:16,590 --> 00:42:19,138
+我们将使用记忆管理器，
+We're going to use the memory manager
+
+655
+00:42:19,138 --> 00:42:24,564
+具体使用 read_from_knowledge_base 函数来检索特定行，
+and specifically the read_from_knowledge_base function to retrieve a specific row
+
+656
+00:42:24,564 --> 00:42:26,290
+即匹配这个查询的行。
+that matches this query.
+
+657
+00:42:26,850 --> 00:42:32,834
+请记住，语义记忆表中的每一行实际上包含一个向量，
+Remember each row within our semantic memory table actually contains a vector
+
+658
+00:42:32,834 --> 00:42:35,010
+也就是文本的向量表示。
+representation of the text.
+
+659
+00:42:35,650 --> 00:42:41,410
+我们期望返回的行在语义上与“space exploration”（太空探索）相近。
+We expect rows returned back to be semantically similar to the words "space exploration".
+
+660
+00:42:42,320 --> 00:42:47,192
+当你执行这个单元格时，你会看到一些信息。
+When you execute this cell, what you're going to see is some information
+
+661
+00:42:47,192 --> 00:42:50,866
+它指定了我们要从哪种类型的记忆中读取，
+that specifies what type of memory we are reading from,
+
+662
+00:42:50,866 --> 00:42:54,540
+即知识库记忆，以及该记忆是什么，
+which is the knowledge base memory, what the memory is,
+
+663
+00:42:54,540 --> 00:42:58,533
+其中包含有关该记忆内容的信息
+which contains information as to the content of this memory
+
+664
+00:42:58,533 --> 00:43:04,124
+以及它应如何被查询，还包括关于该记忆中的信息
+and how it should be queried and also a specification of how information within this
+
+665
+00:43:04,124 --> 00:43:06,520
+应如何被使用的规范。这是。
+memory should be utilized. This is.
+
+666
+00:43:06,560 --> 00:43:11,880
+具体针对 LLM，记住，我们正在构建具备记忆能力的智能体。
+Specifically for the LLM, remember, we are building Memory-Aware Agents.
+
+667
+00:43:12,560 --> 00:43:17,092
+这意味着这些智能体实际上了解它们拥有的记忆类型
+That means that these agents are actually aware of the memory types
+
+668
+00:43:17,092 --> 00:43:19,520
+以及如何使用这些记忆。
+that they have and how to utilize them.
+
+669
+00:43:20,200 --> 00:43:26,628
+但值得注意的是，与传入查询在语义上相似的片段是
+But notably, the passages that are semantically similar to the query passed in are
+
+670
+00:43:26,628 --> 00:43:30,540
+从查询返回的这些特定片段。
+these specific passages returned from the query.
+
+671
+00:43:31,180 --> 00:43:35,048
+这本质上就是我们 AI 智能体的语义记忆
+This essentially is our semantic memory for our AI agent
+
+672
+00:43:35,048 --> 00:43:39,245
+它包含特定领域的现有知识库，
+that contains existing knowledge base of a specific domain,
+
+673
+00:43:39,245 --> 00:43:41,220
+也就是太空探索。
+which is space exploration.
+
+674
+00:43:42,340 --> 00:43:45,203
+很好，你完成了编码环节，我们看到了记忆管理器如何实现以及如何运行。
+Great job on completing the coding session in which we got to see how a memory manager can be implemented and how it operates.
+
+675
+00:43:45,203 --> 00:43:50,100
+在本课中，你将应对一个真实的扩展性挑战。
+In this lesson, you'll tackle a real scaling challenge.
+
+676
+00:43:51,190 --> 00:43:54,528
+当你的智能体可以访问数百个工具时会发生什么？
+What happens when your agent has access to hundreds of tools?
+
+677
+00:43:54,528 --> 00:43:58,150
+与其把所有工具定义都塞进提示中，
+Instead of stuffing every tool definition into the prompt,
+
+678
+00:43:59,070 --> 00:44:02,635
+你会把工具视为程序性记忆，
+you'll treat tools as procedural memory,
+
+679
+00:44:02,635 --> 00:44:05,131
+将它们存储在由记忆支持的存储中
+storing them in a memory-backed store
+
+680
+00:44:05,131 --> 00:44:07,413
+并在推理时使用语义搜索只检索相关工具。
+and retrieving only the relevant ones at inference time using semantic search.
+
+681
+00:44:07,413 --> 00:44:12,190
+好的，我们开始吧。
+All right, let's go.
+
+682
+00:44:12,840 --> 00:44:13,880
+本课我们要讲解的是大型语言模型如何能够
+What we're going to cover in this lesson is how large language models are able to
+
+683
+00:44:14,640 --> 00:44:19,920
+变得具备工具感知能力以完成任务，
+become tool-aware for task completion,
+
+684
+00:44:19,920 --> 00:44:22,560
+以及它们如何感知自己可用的工具。
+how they are able to perceive the tools that they have at their disposal.
+
+685
+00:44:22,560 --> 00:44:27,360
+我们还会讨论工具箱模式，
+We'll also talk about the toolbox pattern,
+
+686
+00:44:28,320 --> 00:44:30,926
+这是一种让大型语言模型能够感知其拥有的所有工具的模式，
+which is a pattern that allows large language models to become aware of all the
+
+687
+00:44:30,926 --> 00:44:35,630
+以及如何将工具视为可检索来源
+tools that they have and how the tools are treated as retrievable sources
+
+688
+00:44:35,630 --> 00:44:40,045
+而不是把它们全部放进上下文，以及我们如何使用嵌入。
+rather than putting all of them into the context and how we can use embeddings.
+
+689
+00:44:40,045 --> 00:44:44,750
+以及语义搜索，让这些大型语言模型能够选择它们最
+And semantic search, to allow these large language models to select their most
+
+690
+00:44:44,950 --> 00:44:50,680
+优的工具，随时。
+optimal tools at any time.
+
+691
+00:44:50,680 --> 00:44:52,590
+工具调用是一种技术或模式，
+Tool calling is a technique or a pattern
+
+692
+00:44:53,270 --> 00:44:55,997
+其中大型语言模型不直接执行代码，
+where the large language model doesn't directly execute the code,
+
+693
+00:44:55,997 --> 00:45:00,624
+而是会输出一个结构化请求，
+but rather it will output a structured request so
+
+694
+00:45:00,624 --> 00:45:04,012
+以便环境实际执行代码并返回结果。
+that the environment will actually execute the code and then return it.
+
+695
+00:45:04,012 --> 00:45:08,970
+这样大型语言模型就可以利用这些信息向用户返回结果。
+So the large language model has this information available to return the information to the user.
+
+696
+00:45:09,050 --> 00:45:14,330
+在典型场景中，你会拥有大量工具定义，包括名称、
+In a typical scenario, what you will have is a lot of tool definitions with a name,
+
+697
+00:45:15,090 --> 00:45:20,482
+描述，以及有关如何调用该工具的一些参数。
+a description, and some parameters on how this tool has to be called.
+
+698
+00:45:20,482 --> 00:45:25,070
+然后我们还会有一个用户查询，例如，
+And then we'll also have a user query like for instance,
+
+699
+00:45:25,590 --> 00:45:28,982
+明天伦敦的天气怎么样？
+What is the weather like in London tomorrow?
+
+700
+00:45:28,982 --> 00:45:31,710
+大型语言模型将能够输出这个结构化请求，
+The large language model will be able to output this structured request,
+
+701
+00:45:32,150 --> 00:45:36,432
+它会在环境中执行。
+which will execute within the environment.
+
+702
+00:45:36,432 --> 00:45:39,030
+然后系统会执行该工具，
+Then the system will execute the tool,
+
+703
+00:45:39,550 --> 00:45:41,833
+将响应返回给大型语言模型，
+return the response to the large language model,
+
+704
+00:45:41,833 --> 00:45:44,758
+再通过这个响应，我们就能够向用户生成正确回复。
+and then through this response we will be able to generate the correct response to the user.
+
+705
+00:45:44,758 --> 00:45:50,180
+但这有一些局限性。
+But this has some limitations.
+
+706
+00:45:51,180 --> 00:45:53,540
+我们通常会在环境中使用大量工具。
+We typically have a lot of tools that we want to use in our environment.
+
+707
+00:45:54,180 --> 00:45:58,260
+这当然对大型语言模型非常有益，
+And this is of course very beneficial for the large language model
+
+708
+00:45:58,860 --> 00:46:02,437
+因为大型语言模型可用的信息和工具越多，
+because the more information and the more tools
+
+709
+00:46:02,437 --> 00:46:05,038
+它生成的响应就会越好，对吧？
+that a large language model has at their disposal, the better the responses will be, right?
+
+710
+00:46:05,038 --> 00:46:09,980
+但每当你有太多工具时，这也会带来一些明显的缺点，对吧？
+But whenever you have too many tools, this has some obvious disadvantages, right?
+
+711
+00:46:10,780 --> 00:46:16,700
+大型语言模型的上下文大小是有限的。
+The context size of large language models is limited.
+
+712
+00:46:17,500 --> 00:46:21,020
+所以我们显然不能把所有工具、它们的名称、
+So we obviously cannot stuff all of the tools, their names,
+
+713
+00:46:21,180 --> 00:46:25,234
+参数和描述都塞进上下文而不出问题。
+their parameters and their descriptions into the context without having some problems.
+
+714
+00:46:25,234 --> 00:46:31,440
+所以把它们全部放进上下文窗口会导致许多智能体失败，
+So putting all of them into the context window can cause a lot of agents to fail in
+
+715
+00:46:32,000 --> 00:46:37,676
+在多个方面。
+a number of ways.
+
+716
+00:46:37,676 --> 00:46:38,880
+这些是这种做法最明显的一些缺点。
+These are some of the most obvious disadvantages of this.
+
+717
+00:46:39,720 --> 00:46:43,640
+首先，我们会有上下文混乱和上下文臃肿的问题，
+First of all, we have context confusion and context bloating,
+
+718
+00:46:44,240 --> 00:46:48,089
+也就是说，每当大型语言模型同时看到大量这类工具
+which is that whenever a large language model sees a lot of these tools at the same
+
+719
+00:46:48,089 --> 00:46:53,048
+时，上下文就会被来自工具的大量信息淹没。
+time, the context will get overwhelmed by the amount of information from the tools.
+
+720
+00:46:53,048 --> 00:46:58,156
+此时，上下文会被来自工具的大量信息淹没，
+time, the context will get overwhelmed by the amount of information from the tools
+
+721
+00:46:58,156 --> 00:47:01,265
+并且可用于输入的上下文会更少
+and will have less context available for the input
+
+722
+00:47:01,265 --> 00:47:06,520
+以及实际生成的输出。我们还有一个概念叫工具选择。
+and the actual output being produced. We also have this thing called tool selection.
+
+723
+00:47:06,600 --> 00:47:11,430
+退化，这意味着大语言模型的响应将会
+Degradation, which means that the responses from the large language model will
+
+724
+00:47:11,430 --> 00:47:14,962
+随之退化，这也会导致延迟
+degrade as a consequence, this will also cause the latency
+
+725
+00:47:14,962 --> 00:47:16,620
+并且 token 数量也会增加
+and the tokens to increase.
+
+726
+00:47:17,060 --> 00:47:21,382
+所以你将承受消耗更多 token 的后果
+So you will suffer the consequences of having to pay more tokens
+
+727
+00:47:21,382 --> 00:47:23,666
+并且延迟也可能增加
+and also the latency can increase
+
+728
+00:47:23,666 --> 00:47:29,456
+因为大语言模型实际上会花费更长时间来生成响应，以处理
+because the large language model will actually take longer to produce a response for
+
+729
+00:47:29,456 --> 00:47:33,696
+它需要预先处理的大量信息。
+all the amount of information it needs to process beforehand,
+
+730
+00:47:33,696 --> 00:47:38,100
+总的来说会导致性能退化。那么有一种方法。
+which in general will cause a performance degradation. So a way.
+
+731
+00:47:38,100 --> 00:47:44,300
+对我们来说，要扩展这个系统，使其对大语言模型更有益，方法如下。
+For us to scale this system, so that it's more beneficial for the large language model is this.
+
+732
+00:47:45,140 --> 00:47:46,901
+首先，我们可以获取所有名称，
+First, we can have all the names,
+
+733
+00:47:46,901 --> 00:47:49,900
+以及每个工具的描述和参数。
+descriptions and parameters for each one of the tools.
+
+734
+00:47:50,580 --> 00:47:53,157
+所以如果我们对这些信息进行编码，并
+So if we encode that information and put
+
+735
+00:47:53,157 --> 00:47:57,609
+通过创建这些信息的编码将其放入向量空间，
+that into a vector space by creating an encoding of this information
+
+736
+00:47:57,609 --> 00:48:02,920
+并通过嵌入模型，我们可以创建名称的嵌入，
+and passing it through an embedding model, we can create an embedding of the name,
+
+737
+00:48:02,920 --> 00:48:06,200
+描述和工具参数的嵌入。
+the description, and the parameters of the tools.
+
+738
+00:48:06,720 --> 00:48:09,440
+然后我们也可以使用这个嵌入，
+And then we can use this embedding as well
+
+739
+00:48:09,440 --> 00:48:14,320
+以及工具的原始信息，并将其加载到数据库中，
+as the original information from the tool and load this into the database
+
+740
+00:48:14,320 --> 00:48:19,360
+这样我们就可以对其执行语义搜索和相似性搜索，以便
+so we can perform semantic search operations and similarity search on it so
+
+741
+00:48:19,360 --> 00:48:23,520
+让大语言模型在收到用户查询后。
+that the large language model, after it receives a user query.
+
+742
+00:48:23,720 --> 00:48:27,190
+例如我们最初的查询：伦敦天气怎么样？
+For instance, our original query, what is the weather like in London?
+
+743
+00:48:27,670 --> 00:48:32,587
+我们可以获取该输入，并对嵌入执行相似性搜索，
+We can take that input and we will perform similarity search against the embedding
+
+744
+00:48:32,587 --> 00:48:33,870
+即我们刚创建的嵌入。
+that we just created.
+
+745
+00:48:34,790 --> 00:48:36,859
+所以当我们有了嵌入之后，
+So after we have our embeddings,
+
+746
+00:48:36,859 --> 00:48:42,070
+我们可以获取用户查询，并对这个嵌入执行相似性搜索。
+we can take the user query and perform similarity search against this embedding.
+
+747
+00:48:42,550 --> 00:48:45,357
+这样语义搜索就可以执行，
+So semantic search can be executed
+
+748
+00:48:45,357 --> 00:48:50,680
+并选择出解决该用户查询的最佳工具。
+and the best tools for resolving this user query will be selected.
+
+749
+00:48:51,600 --> 00:48:53,850
+然后，在选择了正确的工具之后，
+Then after the right tool is selected,
+
+750
+00:48:53,850 --> 00:48:57,787
+大语言模型将能够调用该工具、执行它，
+the large language model will be able to call this tool, execute it,
+
+751
+00:48:57,787 --> 00:49:00,600
+并将结果返回给大语言模型。
+and return a result to the large language model.
+
+752
+00:49:01,280 --> 00:49:03,312
+如你在左下角所见，
+So as you see on the bottom left,
+
+753
+00:49:03,312 --> 00:49:06,830
+如果这是我们的嵌入空间的表示，
+if this were a representation of our embedding space,
+
+754
+00:49:06,830 --> 00:49:09,487
+在这个空间中会有所有这些工具，
+we will have all these tools on this space
+
+755
+00:49:09,487 --> 00:49:15,350
+然后通过执行相似性搜索，我们会找到与用户查询最接近的工具。
+and then by performing similarity search we will find the closest tools to the user query.
+
+756
+00:49:16,270 --> 00:49:19,150
+这是个好主意，但可能还不够。
+Now this is a great idea, but it might not be enough.
+
+757
+00:49:19,630 --> 00:49:22,618
+所以我们提出另一种增强方式，
+So we propose another type of enhancement,
+
+758
+00:49:22,618 --> 00:49:25,689
+我们称之为记忆单元增强，
+which we call the memory unit augmentation,
+
+759
+00:49:25,689 --> 00:49:28,760
+这是一种略有不同的策略，
+which is a little bit of a different strategy
+
+760
+00:49:28,760 --> 00:49:31,581
+我们会获取工具定义，
+where we will take the tool definitions,
+
+761
+00:49:31,581 --> 00:49:36,561
+包括名称和描述，并通过大语言模型运行它们，
+the name and the description and run them through a large language model
+
+762
+00:49:36,561 --> 00:49:39,300
+以增强这些名称和描述。
+and enhance this name and description.
+
+763
+00:49:39,940 --> 00:49:44,232
+然后我们会使用这个增强后的名称和描述，对其进行编码，
+And then we will use this enhanced name and description, encode it,
+
+764
+00:49:44,232 --> 00:49:49,060
+通过嵌入模型，然后基于此创建嵌入。
+pass it through an embedding model and then create an embedding out of that.
+
+765
+00:49:50,040 --> 00:49:53,864
+之后，我们将得到一个增强后的工具定义，
+And after this, we will have an augmented tool definition,
+
+766
+00:49:53,864 --> 00:49:56,440
+并将其加载到数据库中。
+which will be loaded into the database.
+
+767
+00:49:56,920 --> 00:50:02,280
+所以基本上我们会让大语言模型来增强我们的工具定义。
+So we will basically let the large language model enhance our tool definitions.
+
+768
+00:50:02,960 --> 00:50:05,360
+这有一些明显的好处。
+And this has some obvious advantages.
+
+769
+00:50:06,160 --> 00:50:10,146
+例如，这将使得在嵌入空间中，
+For instance, this will make it so that in the embedding space
+
+770
+00:50:10,146 --> 00:50:12,569
+当我们执行语义搜索时，
+when we perform semantic search now,
+
+771
+00:50:12,569 --> 00:50:16,790
+工具之间会具有更高、更好的可分性。
+there will be higher and better separability between the tools.
+
+772
+00:50:17,750 --> 00:50:21,956
+此外，会有更高的召回率和高质量信号的嵌入文本，
+Also, there will be higher recall and high-signal embedding text,
+
+773
+00:50:21,956 --> 00:50:26,763
+这意味着我们放入这个嵌入中的所有内容将具有
+which means that all the things that we have put into this embedding will have
+
+774
+00:50:26,763 --> 00:50:31,270
+更好的特征，并且模型能更容易分辨它们。
+better characteristics and they will be more discernible by the model.
+
+775
+00:50:31,990 --> 00:50:36,270
+我们将深入探讨基于语义工具记忆的智能体工具使用。
+We are going to dive deep into agent tool use with semantic tool memory.
+
+776
+00:50:36,650 --> 00:50:44,066
+和之前一样，我们需要再次快速连接 Oracle 数据库，以
+So as we did before, we need to quickly connect again into our Oracle database to
+
+777
+00:50:44,066 --> 00:50:46,650
+访问系统。
+get access into the system.
+
+778
+00:50:47,330 --> 00:50:51,569
+如我们所见，我们已经再次连接到数据库，
+And as we'll see, we're already connected again into our database,
+
+779
+00:50:51,569 --> 00:50:54,370
+连接似乎正常工作。
+and the connection seems to be working fine.
+
+780
+00:50:55,210 --> 00:50:58,084
+然后我们要重新加载我们的嵌入模型，
+Then we're gonna reload our embedding model,
+
+781
+00:50:58,084 --> 00:51:00,277
+也就是我们之前使用的那个
+which is the same that we were using
+
+782
+00:51:00,277 --> 00:51:04,210
+即用于生成嵌入的 paraphrase-mpnet-base-v2。
+before the paraphrase-mpnet-base-v2 to create our embeddings.
+
+783
+00:51:05,170 --> 00:51:09,379
+现在我们要开始使用大语言模型了，
+And now that we're going to start using our large language models,
+
+784
+00:51:09,379 --> 00:51:12,288
+我们要实例化我们的 OpenAI client
+we're going to instantiate our OpenAI client
+
+785
+00:51:12,288 --> 00:51:16,650
+这样就能通过编程方式与大语言模型交互。
+so we can interact with the large language model programmatically.
+
+786
+00:51:17,530 --> 00:51:23,490
+然后像之前一样，我们要设置对话知识工作流
+Then as we did before, we're going to set up our conversational knowledge workflow
+
+787
+00:51:23,490 --> 00:51:28,240
+以及之前为存储管理器使用的所有表。
+and all the tables that we were using before for the store manager.
+
+788
+00:51:29,080 --> 00:51:32,960
+我们还要创建工具日志历史记录表
+And we're also going to provision our tool log history
+
+789
+00:51:32,960 --> 00:51:37,960
+和对话历史记录表，以便也能访问它们。
+and our conversation history tables to be able to access them as well.
+
+790
+00:51:38,560 --> 00:51:41,960
+由于我们之前已经在运行，你会看到它们已经存在。
+And since we were already running it, you will see that they already exist.
+
+791
+00:51:42,160 --> 00:51:44,820
+但如果没有的话，你会收到一条通知
+But if you hadn't, you will get a notification
+
+792
+00:51:44,820 --> 00:51:47,480
+说明它们在这一步已正确创建。
+that they were properly created on this step.
+
+793
+00:51:48,280 --> 00:51:54,280
+这里我们也会像之前一样实例化我们的存储管理器。
+And here, we will also be instantiating our store manager as we did before.
+
+794
+00:51:55,080 --> 00:51:59,787
+在像之前一样创建存储管理器实例后，
+And after the creation of the store manager instance as we did before,
+
+795
+00:51:59,787 --> 00:52:05,144
+我们会通过管理器函数获取各个存储的对象
+we will get all the objects for the individual stores via the manager functions
+
+796
+00:52:05,144 --> 00:52:06,280
+这些函数是我们之前创建的。
+that we created.
+
+797
+00:52:06,800 --> 00:52:09,295
+运行之后，你会看到
+And after we run this, you'll see
+
+798
+00:52:09,295 --> 00:52:14,100
+所有存储都已通过存储管理器正确加载。
+that all the stores are properly loaded via the store manager.
+
+799
+00:52:15,020 --> 00:52:19,020
+现在开始本章的实际代码。
+And now we begin with the actual code for our chapter.
+
+800
+00:52:19,580 --> 00:52:24,340
+我们首先要做的是像之前一样实例化记忆管理器。
+What we want to do first is instantiate the memory manager as we did before.
+
+801
+00:52:24,380 --> 00:52:28,380
+然后我们要初始化我们的 toolbox 模式对象。
+And then we're going to initialize our toolbox pattern object.
+
+802
+00:52:29,100 --> 00:52:34,771
+toolbox 的作用是加载并存储所有不同的工具
+The purpose of the toolbox is to actually load and store all the different tools
+
+803
+00:52:34,771 --> 00:52:37,520
+也就是 LLM 将要访问的那些工具。
+that the LLM is going to have access to.
+
+804
+00:52:38,000 --> 00:52:40,623
+所以我们需要传入记忆管理器、
+So we need to pass the Memory Manager,
+
+805
+00:52:40,623 --> 00:52:43,839
+我们之前创建的 OpenAI client 实例
+the OpenAI client instance that we created so
+
+806
+00:52:43,839 --> 00:52:48,070
+这样它就能进行一些增强操作，稍后我们会看到，
+that it has access to do some augmentations which we will see
+
+807
+00:52:48,070 --> 00:52:53,232
+还要传入嵌入模型，这样 toolbox 也能够在 toolbox 对象上执行向量
+and the embedding model so that the toolbox is also able to perform vector
+
+808
+00:52:53,232 --> 00:52:57,040
+相似度搜索。
+similarity search on the toolbox object.
+
+809
+00:52:57,040 --> 00:53:00,880
+我们已经执行并正确初始化了 toolbox 对象。
+We have executed and correctly initialized our toolbox object.
+
+810
+00:53:01,480 --> 00:53:03,399
+现在可以看到记忆管理器
+We can now see that the memory manager
+
+811
+00:53:03,399 --> 00:53:06,000
+和 toolbox 都已正确初始化。
+and the toolbox have been correctly initialized.
+
+812
+00:53:07,000 --> 00:53:12,025
+所以你现在要做的是向 toolbox 模式注册一个新工具
+So what you are going to do now is to register a new tool into the toolbox pattern
+
+813
+00:53:12,025 --> 00:53:17,360
+这样大语言模型就能在需要时方便地选择它。
+so that the large language model is able to conveniently select it when it needs to.
+
+814
+00:53:17,880 --> 00:53:23,706
+我们这里做的是注册一个新工具，并传入一个类型参数
+So what we are doing here is to register a new tool with a type of parameter
+
+815
+00:53:23,706 --> 00:53:29,920
+让我们可以通过本章看到的 LLM 增强来增强它。
+that lets us augment this via the LLM enhancement that we saw on this chapter.
+
+816
+00:53:30,440 --> 00:53:34,337
+我们准备了这个名为 Read Toolbox 的函数
+So we prepared this function called Read Toolbox,
+
+817
+00:53:34,337 --> 00:53:39,254
+它接受用户的输入查询，还接受一个数字
+which takes an input query as the user's input and also a number,
+
+818
+00:53:39,254 --> 00:53:41,110
+这个数字可以是任意数字。
+which can be any number.
+
+819
+00:53:41,670 --> 00:53:45,772
+这个值表示你希望
+And this value represents however many tools you want.
+
+820
+00:53:45,772 --> 00:53:50,230
+查询 toolbox 时相似度搜索返回多少个工具。
+The similarity search to return when querying the toolbox.
+
+821
+00:53:50,950 --> 00:53:54,550
+运行之后，你就能看到
+So after you run this, you will be able to see
+
+822
+00:53:54,550 --> 00:53:59,550
+工具的注册已正确执行。
+that the registration of a tool has been properly executed.
+
+823
+00:54:00,000 --> 00:54:05,520
+而这会在数据库的 toolbox 表上执行相似度搜索。
+And this performs similarity search on our toolbox table in the database.
+
+824
+00:54:06,560 --> 00:54:09,640
+定义好函数之后
+So after we have defined the function,
+
+825
+00:54:09,640 --> 00:54:16,378
+我们就能使用 Toolbox 注册工具函数来注册更多工具
+we will be able to use the Toolbox registration tool function to register more tools
+
+826
+00:54:16,378 --> 00:54:18,880
+也可以从 toolbox 中读取。
+and also read from the toolbox.
+
+827
+00:54:19,990 --> 00:54:23,045
+创建好 toolbox 模式
+So after we have created the toolbox pattern
+
+828
+00:54:23,045 --> 00:54:28,164
+并准备好注册工具和读取 toolbox 的函数之后，
+and have a function ready to register tools and also read from the toolbox,
+
+829
+00:54:28,164 --> 00:54:32,870
+我们要做的是创建一个新工具，也就是通过 Tavily。
+what we are going to do is create a new tool, which is through Tavily.
+
+830
+00:54:33,470 --> 00:54:37,125
+Tavily 是一个能让我们在网络上搜索的服务
+Tavily is a service that allows us to search on the web
+
+831
+00:54:37,125 --> 00:54:41,430
+并将这些结果存入我们 toolbox 的知识库中。
+and store these results into the knowledge base on our toolbox.
+
+832
+00:54:41,860 --> 00:54:48,527
+为此，我们首先需要通过 Tavily 的库实例化 Tavily client
+So for that, we first need to instantiate the Tavily client through their library,
+
+833
+00:54:48,527 --> 00:54:53,937
+然后使用我们的注册工具函数创建这个新工具
+and then we will use our register tool function to create this new tool so
+
+834
+00:54:53,937 --> 00:54:56,932
+这样每次我们想使用 Tavily 时
+that every time we want to use Tavily,
+
+835
+00:54:56,932 --> 00:55:01,860
+都会被重定向到这个名为 Search Tavily 的函数。
+we will be redirected to this function called Search Tavily.
+
+836
+00:55:02,320 --> 00:55:07,402
+和之前一样，它默认最多返回 5 个结果
+Which as before will return a maximum number of results by default 5,
+
+837
+00:55:07,402 --> 00:55:12,840
+并通过 Tavily 的 API 对 Tavily client 执行这个查询。
+and will perform this query against the Tavily client through their API.
+
+838
+00:55:13,680 --> 00:55:18,897
+这里我们所做的是使用 Tavily client 搜索我们想要的查询
+In here, what we are doing is searching with the Tavily client on the query
+
+839
+00:55:18,897 --> 00:55:23,600
+并将结果限制为最大结果数量。
+that we want and limiting the results to our max number of results.
+
+840
+00:55:24,610 --> 00:55:29,850
+拿到结果对象后，我们会把这些结果写入我们的知识库。
+After we get our results object, we will write this result into our knowledge base.
+
+841
+00:55:30,460 --> 00:55:36,520
+为此，我们会创建一些用于嵌入的文本内容，其中会包含标题、
+For that, we'll create some text content to embed in which we will get the title,
+
+842
+00:55:36,520 --> 00:55:42,580
+内容、URL，并创建一些与之关联的额外元数据。
+the content, and the URL and create some additional metadata associated to it.
+
+843
+00:55:43,020 --> 00:55:48,112
+例如，标题、我们提取信息所用的 URL、
+For instance, the title, the URL from which we extracted the information,
+
+844
+00:55:48,112 --> 00:55:53,040
+一个表示信息可验证性的分数、查询、
+a score representing the verifiability of the information, the query,
+
+845
+00:55:53,040 --> 00:55:55,340
+以及我们查询时的时间戳。
+and the timestamp from our query.
+
+846
+00:55:55,860 --> 00:55:59,140
+然后我们把所有这些信息放入知识库。
+And we put all this information into the knowledge base.
+
+847
+00:55:59,940 --> 00:56:05,141
+在这个单元格中，你要做的是查看
+And in this cell, what you are going to do is see the live difference between
+
+848
+00:56:05,141 --> 00:56:07,994
+实际使用原始 docstring
+actually using the original docstring,
+
+849
+00:56:07,994 --> 00:56:11,769
+也就是函数创建者最初使用的内容，
+which is what the actual creator of the function used,
+
+850
+00:56:11,769 --> 00:56:15,041
+与允许工具定义
+versus actually allowing the tool definition
+
+851
+00:56:15,041 --> 00:56:18,900
+和名称被大语言模型增强之间的差异。
+and the name to be enhanced by the large language model.
+
+852
+00:56:19,620 --> 00:56:22,800
+为此，我们将按名称获取工具，
+So for that, we're going to take the tool by name,
+
+853
+00:56:22,800 --> 00:56:26,060
+也就是我们刚刚注册过的那个工具。
+which is the tool that we just registered before.
+
+854
+00:56:26,700 --> 00:56:31,628
+我们将获取它的源代码，并比较原始 docstring
+We're going to take its source and we're going to compare the original docstring
+
+855
+00:56:31,628 --> 00:56:35,380
+与 OpenAI 模型生成的增强 docstring。
+with the augmented docstring generated by the OpenAI model.
+
+856
+00:56:36,310 --> 00:56:41,255
+正如你在这里看到的，你不会只得到原始 docstring，
+And as you will see here, rather than having the original docstring,
+
+857
+00:56:41,255 --> 00:56:45,245
+而是会得到一个增强后的、经过 LLM 增强的 docstring，
+you will get an augmented and LLM-enhanced docstring,
+
+858
+00:56:45,245 --> 00:56:50,971
+它不仅使用描述，还会运行并创建逐步调用说明、
+which not only takes the description, it runs and creates a step-by-step call,
+
+859
+00:56:50,971 --> 00:56:56,870
+每个参数的定义以及函数的返回值定义。
+a definition of each one of the parameters and the return values for the function.
+
+860
+00:56:57,530 --> 00:57:02,706
+这样，大语言模型就能把这个定义存储到
+So this will allow the large language model to store this definition into the
+
+861
+00:57:02,706 --> 00:57:06,346
+数据库中，结果也会更容易区分，
+database and the results will be much more separable,
+
+862
+00:57:06,346 --> 00:57:12,007
+这将让我们的相似性搜索功能使这些函数
+which will allow our similarity search functionality to make these functions much
+
+863
+00:57:12,007 --> 00:57:15,970
+对大语言模型来说更容易区分和使用。
+more distinguishable for the large language model to use.
+
+864
+00:57:16,810 --> 00:57:20,816
+你接下来要做的是创建一个本地工具，
+So what you are going to do here is create a local tool
+
+865
+00:57:20,816 --> 00:57:26,498
+它将使用本地 Python 代码，比如在本地使用 datetime 库，
+which will use local Python code like using the datetime library locally
+
+866
+00:57:26,498 --> 00:57:32,460
+而不是通过像 Tavily 这样的外部第三方 API 服务。
+rather than going through an external API third party service like Tavily.
+
+867
+00:57:32,900 --> 00:57:36,900
+每个工具都可以在外部或本地实现。
+Each tool can be implemented either externally or locally.
+
+868
+00:57:37,380 --> 00:57:41,780
+如果你像这样在本地运行，就可以创建任意数量的工具。
+If you run it locally like this, you can create as many tools as you want.
+
+869
+00:57:42,550 --> 00:57:46,676
+如果你使用第三方服务，就必须去集成可用的
+And if you use a third party service you will have to integrate with whichever
+
+870
+00:57:46,676 --> 00:57:48,030
+相关服务。
+services are available.
+
+871
+00:57:49,070 --> 00:57:53,772
+在这个单元格里，我们来看看 arXiv Retriever，
+And in this cell we're going to take a look at the arXiv Retriever,
+
+872
+00:57:53,772 --> 00:57:58,810
+它是由 LangChain Community 包自动集成而来的，
+which is an automatic integration by the LangChain Community package,
+
+873
+00:57:58,810 --> 00:58:04,520
+它允许我们检索 arXiv 论文，并设置论文的最大数量，
+which allows us to retrieve arXiv papers with a maximum number of papers as well
+
+874
+00:58:04,520 --> 00:58:08,970
+以及每篇文档的最大字符数。所以在这个例子中。
+as a maximum number of characters per document. So in this case.
+
+875
+00:58:09,330 --> 00:58:15,187
+我们将使用来自 LangChain 社区的 arXiv retriever 对象，
+What we will do is use the arXiv retriever object from the LangChain community to
+
+876
+00:58:15,187 --> 00:58:16,970
+来获取其中一些论文。
+get some of these papers.
+
+877
+00:58:17,770 --> 00:58:20,629
+因此我们会设置一个 arXiv retriever 对象，
+So we will set up an arXiv retriever object
+
+878
+00:58:20,629 --> 00:58:24,570
+它将来让我们能够检索 arXiv 论文。
+which will allow us to retrieve arXiv papers in the future.
+
+879
+00:58:25,500 --> 00:58:29,820
+在这个单元格中，我们要注册一个 arXiv 发现工具。
+In this cell, we are going to register an arXiv discovery tool.
+
+880
+00:58:30,340 --> 00:58:35,337
+例如，我们首先要创建一个函数，
+So for instance, we are going to create a function, first of all,
+
+881
+00:58:35,337 --> 00:58:39,957
+用来处理 arXiv URL，并实际获取论文 URI，
+to process the arXiv URLs and actually get the paper URI,
+
+882
+00:58:39,957 --> 00:58:42,220
+也就是论文的标识符。
+the identifier of the paper.
+
+883
+00:58:42,700 --> 00:58:45,995
+然后在 search candidate 函数中，
+And then in the search candidate function,
+
+884
+00:58:45,995 --> 00:58:48,925
+我们将搜索 arXiv，
+we are going to search through arXiv
+
+885
+00:58:48,925 --> 00:58:53,959
+并返回一个包含 JSON 候选对象及其 ID 和元数据的列表，
+and return a list of JSON candidates with their IDs and metadata so
+
+886
+00:58:53,959 --> 00:58:59,909
+以便我们随后能利用这些信息来增强大语言模型，
+that we can then use this information to augment the large language model with
+
+887
+00:58:59,909 --> 00:59:06,500
+从 arXiv 获取外部第三方信息。此时，我们得到的是一个列表。
+external third party information from arXiv. In this case, we're getting a list of.
+
+888
+00:59:06,540 --> 00:59:06,980
+文档列表。
+Documents.
+
+889
+00:59:07,540 --> 00:59:12,409
+对于每个文档，我们都在追加并获取元数据、
+And for each one of the documents, we are appending and getting the metadata,
+
+890
+00:59:12,409 --> 00:59:15,604
+entry ID，也就是论文标识符，
+the entry ID, which is the identifier of the paper,
+
+891
+00:59:15,604 --> 00:59:20,930
+以及一个可能候选列表，这些候选与实际用户查询最接近。
+and a list of possible candidates, which are the closest to the actual user's query.
+
+892
+00:59:22,090 --> 00:59:25,682
+现在我们来看看如何执行深度摄取，
+And now we're going to see how to perform deep ingestion,
+
+893
+00:59:25,682 --> 00:59:30,954
+它不仅让我们能够使用上一个单元格中的 arXiv loader，
+which not only allows us to use the previous arXiv loader from the previous cell,
+
+894
+00:59:30,954 --> 00:59:33,476
+还能规范化所有信息，
+but also normalize all the information
+
+895
+00:59:33,476 --> 00:59:38,825
+并实际插入这些信息：加载完整论文信息、
+and actually insert this information through loading the full paper information,
+
+896
+00:59:38,825 --> 00:59:42,340
+以及我们在上一个单元格中提取的元数据。
+the metadata that we extracted from the previous cell.
+
+897
+00:59:42,860 --> 00:59:48,105
+通过递归字符文本分割器对信息进行分块，
+Chunking this information through the recursive character text splitter,
+
+898
+00:59:48,105 --> 00:59:53,678
+这只是一个进行分块的方式，带有一点重叠，以提高每个
+which is just a way to perform chunking with a little bit of overlap to improve each
+
+899
+00:59:53,678 --> 00:59:57,940
+分块的质量，并减少上下文中的混淆。
+one of the chunks quality and reduce confusion on the context.
+
+900
+00:59:58,750 --> 00:59:59,990
+存储之后。
+And after it's stored.
+
+901
+01:00:00,190 --> 01:00:03,694
+这些数据块存入我们来自 Oracle 的向量存储中。
+These chunks into our vector store from Oracle,
+
+902
+01:00:03,694 --> 01:00:09,650
+我们就能将这些信息写入我们的记忆管理器，以增量添加
+we will be able to write this information into our memory manager to increment the
+
+903
+01:00:09,650 --> 01:00:14,030
+工具箱提供的信息和向量。
+information and the vectors made available by the toolbox.
+
+904
+01:00:15,030 --> 01:00:17,034
+现在是关键时刻。
+And now for the moment of truth,
+
+905
+01:00:17,034 --> 01:00:22,430
+我们将测试本章中集成的工具箱功能。
+we are going to test the toolbox functionalities that we integrated in the chapter.
+
+906
+01:00:22,890 --> 01:00:27,758
+所以我们将让记忆管理器读取工具箱对象
+So we are going to ask the memory manager to read the toolbox object
+
+907
+01:00:27,758 --> 01:00:34,130
+也就是我们数据库中的工具箱对象，并让它为我们提供更多关于 AI 论文的详细信息。
+that we have in our database and we are going to ask it to get us more details on AI papers.
+
+908
+01:00:34,610 --> 01:00:39,450
+为此，我们将把响应数量限制为最多 1 个。
+And for this, we are going to limit our responses to a maximum of 1.
+
+909
+01:00:40,090 --> 01:00:46,770
+因此，最适合用来为该用户查询检索信息的工具箱会被打印出来。
+So the best available toolbox to retrieve the information for this user query will be printed.
+
+910
+01:00:47,460 --> 01:00:53,527
+正如我们在这里看到的，通过执行相似性搜索，最佳工具
+And as we can see here, the best tool by performing similarity search against the
+
+911
+01:00:53,527 --> 01:00:58,416
+在我们数据库中的 toolbox 表上是 fetch and save paper to kbdb，
+toolbox table on our database is the fetch and save paper to kbdb,
+
+912
+01:00:58,416 --> 01:01:03,940
+这是我们从存档中获取信息时关联的名称。
+which is the name that we associated to get information from the archive.
+
+913
+01:01:04,820 --> 01:01:08,260
+你可以随意自定义，并用不同的 k 值进行测试。
+Feel free to customize this and test with different values of k.
+
+914
+01:01:08,380 --> 01:01:12,100
+这样你就能看到针对不同查询的最佳可用工具。
+So you will see the best tools available for different queries.
+
+915
+01:01:13,150 --> 01:01:18,190
+本节课的核心内容是将原始的智能体交互转化为持久知识。
+This lesson is all about turning raw agent interactions into durable knowledge.
+
+916
+01:01:18,710 --> 01:01:23,672
+你将构建从对话中提取结构化事实的流水线。
+You'll build pipelines that extract structured facts from conversations,
+
+917
+01:01:23,672 --> 01:01:27,083
+将情景记忆整合为语义记忆。
+consolidate episodic memory into semantic memory,
+
+918
+01:01:27,083 --> 01:01:30,804
+并创建写回循环，让你的智能体更新
+and create write-back loops that let your agent update
+
+919
+01:01:30,804 --> 01:01:33,440
+并自主优化自身记忆。
+and refine its own memory autonomously.
+
+920
+01:01:34,320 --> 01:01:36,256
+我们开始写代码吧。本节课
+Let's get coding in this lesson,
+
+921
+01:01:36,256 --> 01:01:39,840
+我们将概览最常见的记忆操作。
+we will do an overview of the most common memory operations.
+
+922
+01:01:40,360 --> 01:01:45,071
+我们还会讨论上下文工程，以及如何利用它为我们服务。
+We will also talk about context engineering and how to use it to our advantage,
+
+923
+01:01:45,071 --> 01:01:48,840
+如何高效地使用上下文窗口缩减技术。
+how to efficiently use context window reduction techniques.
+
+924
+01:01:49,400 --> 01:01:53,211
+最后，我们将讨论一种叫工作流记忆的东西。
+And finally, we will talk about something called workflow memory
+
+925
+01:01:53,211 --> 01:01:57,160
+以及如何高效地进行摘要，以改进我们的记忆操作。
+and how to summarize efficiently to improve our memory operations.
+
+926
+01:01:58,030 --> 01:02:02,470
+我们在第 2 课中已经见过的最常见记忆操作。
+So the most common memory operations which we have already seen in lesson 2.
+
+927
+01:02:02,990 --> 01:02:05,195
+首先，我们有对话记忆。
+First, we have the conversational memory,
+
+928
+01:02:05,195 --> 01:02:08,870
+它通常存储在 SQL 表中，因为它是对话性质的。
+which is typically stored in an SQL table because it's conversational.
+
+929
+01:02:09,030 --> 01:02:12,110
+所以我们希望以原始文本形式存储大量内容。
+So we want to store a lot of it in raw text.
+
+930
+01:02:12,630 --> 01:02:18,064
+其余操作，例如知识库、工作流，
+And the rest of the operations, for instance, the knowledge base, the workflow,
+
+931
+01:02:18,064 --> 01:02:23,012
+所有的工具箱模式、实体和摘要通常保存
+all the toolbox patterns, the entity and the summaries are usually saved
+
+932
+01:02:23,012 --> 01:02:27,392
+为向量，因为它们很适合以这种类型存储，
+as vectors because they are very helpful to be stored in this type
+
+933
+01:02:27,392 --> 01:02:31,610
+因为我们需要以某种方式执行相似性搜索。
+as we want to perform similarity search in one way or the other.
+
+934
+01:02:31,930 --> 01:02:34,450
+正如我们在上一课中看到的工具箱模式那样。
+As we saw in the last lesson with the toolbox pattern.
+
+935
+01:02:35,090 --> 01:02:37,050
+那么什么是上下文工程？
+So what is context engineering?
+
+936
+01:02:37,690 --> 01:02:40,905
+上下文工程是一种技术，我们以最优方式
+Context engineering is a technique where we optimally
+
+937
+01:02:40,905 --> 01:02:43,700
+并仔细选择信息量
+and carefully select the amount of information
+
+938
+01:02:43,700 --> 01:02:48,313
+进入大型语言模型上下文窗口的信息量，通过调整
+that goes into a large language model's context window by shaping the amount of
+
+939
+01:02:48,313 --> 01:02:50,130
+我们放入其中的信息量。
+information that we put there.
+
+940
+01:02:50,690 --> 01:02:55,077
+这帮助我们让大型语言模型的响应更加高效，
+This helps us make the large language model responses much more efficient,
+
+941
+01:02:55,077 --> 01:02:57,863
+更贴合用户的实际输入，
+more tailored to the actual input from the user,
+
+942
+01:02:57,863 --> 01:03:02,390
+这实际上会让大型语言模型产生更好的响应。
+and this will actually produce better responses by the large language model.
+
+943
+01:03:02,870 --> 01:03:05,510
+在现实世界中，我们有很多数据源。
+In the real world, we have lots of data sources.
+
+944
+01:03:06,070 --> 01:03:11,710
+我们可以访问数据库、API、MCP 服务器，还有互联网。
+We have access to databases, APIs, MCP servers, and also the internet.
+
+945
+01:03:12,350 --> 01:03:17,390
+这些都是潜在的上下文窗口组成部分和内容
+So these are all potential context window components and contents
+
+946
+01:03:17,390 --> 01:03:20,630
+可以进入实际的上下文窗口中。
+that can go into the actual context window.
+
+947
+01:03:21,420 --> 01:03:26,540
+但我们不能把所有内容都放进上下文窗口，因为它是有限的。
+But we cannot put all of it into the context window as it's a limited thing.
+
+948
+01:03:26,980 --> 01:03:30,782
+所以我们需要仔细且最优地选择
+So we need to carefully and optimally select the context
+
+949
+01:03:30,782 --> 01:03:34,180
+实际会进入 LLM 上下文窗口的上下文。
+that actually will go into the LLM context window.
+
+950
+01:03:34,660 --> 01:03:39,460
+那么，如果我们拥有的信息超过了上下文窗口允许的容量，我们该怎么办？
+So what do we do if we have more information than what the context window allows?
+
+951
+01:03:40,100 --> 01:03:43,713
+为此，我们将讨论上下文窗口缩减。
+So for this, we will talk about context window reduction,
+
+952
+01:03:43,713 --> 01:03:47,628
+这是减少或收缩信息的过程，
+which is the process of reducing or shrinking the information
+
+953
+01:03:47,628 --> 01:03:49,510
+也就是实际放入上下文窗口中的信息。
+that is actually placed on it.
+
+954
+01:03:49,910 --> 01:03:54,230
+主要有两种技术：上下文摘要和上下文压缩。
+There are two main techniques, context summarization and context compaction.
+
+955
+01:03:54,790 --> 01:03:58,950
+它们各自都有优缺点，我们现在就来了解。
+Each of these has their own advantages and disadvantages, which we will see now.
+
+956
+01:03:59,590 --> 01:04:05,426
+上下文摘要是获取大型
+Context summarization is the process of taking the whole context of the large
+
+957
+01:04:05,426 --> 01:04:11,710
+语言模型的整个上下文并通过 LLM 运行它的过程，我们要关注三件事。
+language model and running it through the LLM where we want to focus on three things.
+
+958
+01:04:12,390 --> 01:04:18,321
+首先，我们希望从上下文中保留信号最强的信息，
+So first, we want to retain the highest signal information from the context,
+
+959
+01:04:18,321 --> 01:04:23,510
+移除低信号部分，并保留与任务相关的部分。
+removing the low signal parts and retaining the task relevant bit.
+
+960
+01:04:23,990 --> 01:04:28,430
+我们不会偏离用户提示的实际目的。
+We don't lose track of the actual purpose of the prompt of the user.
+
+961
+01:04:28,820 --> 01:04:33,220
+第三，我们想要移除冗余部分以及无用部分。
+And thirdly, we want to remove redundant parts and also useless parts.
+
+962
+01:04:33,660 --> 01:04:35,986
+你可能认为无用的部分，
+What you might consider a useless part,
+
+963
+01:04:35,986 --> 01:04:38,875
+比如低价值细节或某些内容
+something that has low value detail or something
+
+964
+01:04:38,875 --> 01:04:42,540
+与用户实际查询没有直接关联的内容。
+that is not directly connected to the actual query of the user.
+
+965
+01:04:43,260 --> 01:04:45,843
+在执行上下文总结之后，
+And after performing context summarization,
+
+966
+01:04:45,843 --> 01:04:50,213
+你会得到更小的输入，让大语言模型可以更好地专注于
+you will get a smaller input so that the large language model can better focus on
+
+967
+01:04:50,213 --> 01:04:51,140
+手头的任务。
+the task at hand.
+
+968
+01:04:51,930 --> 01:04:57,685
+上下文总结的定义是，将所有这些上下文
+The definition of context summarization is the process of compressing all this
+
+969
+01:04:57,685 --> 01:05:03,183
+压缩成更短的表示，同时保留最佳信息
+context into a shorter representation that preserves the best information
+
+970
+01:05:03,183 --> 01:05:07,650
+以及原始内容中最高质量、最与任务相关的数据。
+and the highest and most task-relevant data from the original.
+
+971
+01:05:08,650 --> 01:05:12,114
+所以上下文总结是两种技术之一
+So context summarization is one of the two techniques
+
+972
+01:05:12,114 --> 01:05:17,194
+我们可以使用它，将总结后的上下文注入一个干净的
+that we have at our disposal where we inject the summarized context into a clean
+
+973
+01:05:17,194 --> 01:05:21,504
+上下文窗口，通过清除与 LLM 的先前对话，这样
+context window by wiping the previous conversation with the LLM so
+
+974
+01:05:21,504 --> 01:05:27,046
+最终响应实际上可以让大语言模型重新推理一切
+that the final response can actually make the large language model reason everything
+
+975
+01:05:27,046 --> 01:05:32,280
+再次从总结作为起点。但这有一个缺点，那就是
+again from the summary as a starting point. But this has one disadvantage, which is
+
+976
+01:05:32,280 --> 01:05:36,360
+它始终是一种有损技术。我们这样说是什么意思？
+this will always be a lossy technique. What do we mean by that?
+
+977
+01:05:36,800 --> 01:05:40,920
+有损技术意味着我们总会有一些数据丢失。
+A lossy technique means that we will always have some data loss.
+
+978
+01:05:41,230 --> 01:05:44,950
+在这个过程中我们总会丢失一点信息。
+We will always lose a little bit of information in the process.
+
+979
+01:05:45,710 --> 01:05:49,110
+然后我们有上下文压缩，这是我们的第二种技术。
+And then we have context compaction, which is our second technique.
+
+980
+01:05:49,550 --> 01:05:53,876
+而上下文压缩不是总结信息，
+And with context compaction, rather than summarizing the information,
+
+981
+01:05:53,876 --> 01:05:57,563
+而是将其转移到数据库中，并利用数据库
+we will just transfer it into the database and use the database
+
+982
+01:05:57,563 --> 01:06:00,754
+作为大语言模型的外部补充，这样
+as an external addition to the large language model so
+
+983
+01:06:00,754 --> 01:06:05,080
+每当大语言模型需要更多相关信息时，
+that whenever the large language model needs more information about it.
+
+984
+01:06:05,400 --> 01:06:09,000
+它可以直接进入数据库访问这些信息。
+It can just go into the database and access this information.
+
+985
+01:06:09,640 --> 01:06:14,403
+这样我们就能把大量上下文内容卸载到数据库中
+So this allows us to offload a lot of the context size into the database
+
+986
+01:06:14,403 --> 01:06:18,920
+并让大语言模型决定何时访问这些信息。
+and let the large language model decide when it wants to access it.
+
+987
+01:06:19,280 --> 01:06:20,080
+我们怎么做呢？
+How do we do that?
+
+988
+01:06:20,610 --> 01:06:25,569
+我们只需要获取这些信息，把它和一个 ID 一起放入数据库，
+We just need to get this information, put it with an ID into the database,
+
+989
+01:06:25,569 --> 01:06:28,461
+然后让大语言模型知道
+and then let the large language model know
+
+990
+01:06:28,461 --> 01:06:31,850
+这些信息在需要时是可用的。
+that this information is available just in case.
+
+991
+01:06:32,610 --> 01:06:37,755
+我们可以为这个标识符补充一段对块的描述
+And we can complement this identifier with a description of the chunk
+
+992
+01:06:37,755 --> 01:06:40,861
+也就是我们刚从上下文中取出的内容，这样
+that we just took out of the context so that
+
+993
+01:06:40,861 --> 01:06:46,716
+如果大语言模型只对被压缩内容的整体概念感兴趣，
+if the large language model is only interested in a very general idea of what the
+
+994
+01:06:46,716 --> 01:06:48,490
+只想知道大致的压缩内容是什么。
+compacted content was.
+
+995
+01:06:48,810 --> 01:06:52,957
+它可以先查看描述，如果需要更多信息，
+It can just take a look at the description and if it needs more information,
+
+996
+01:06:52,957 --> 01:06:56,970
+它可以进入数据库，实际取出完整上下文。
+it can just go into the database and actually pull the whole context out.
+
+997
+01:06:57,770 --> 01:06:59,130
+那工作流记忆呢？
+What about workflow memory?
+
+998
+01:06:59,730 --> 01:07:05,390
+工作流记忆同样是一种借助数据库的技术，例如，
+Workflow memory is a technique which is also aided by a database where, for instance,
+
+999
+01:07:05,390 --> 01:07:09,455
+回到我们之前举过的当前天气示例，
+going back to the current weather example that we had before,
+
+1000
+01:07:09,455 --> 01:07:13,600
+想象用户问：帮我获取当前天气，对吧？
+imagine that the user asks, get me the current weather, right?
+
+1001
+01:07:14,080 --> 01:07:17,600
+这需要 LLM 执行很多步骤。
+This is something that requires a lot of steps to perform by an LLM.
+
+1002
+01:07:18,040 --> 01:07:21,889
+因此工作流记忆实际上会帮助我们简化
+So workflow memory will actually help us streamline
+
+1003
+01:07:21,889 --> 01:07:27,400
+并保留执行这个查询所需的一系列步骤。
+and preserve a sequence of the required steps needed to perform this query.
+
+1004
+01:07:27,880 --> 01:07:33,658
+例如，要获取当前天气，我们可能需要获取用户位置，
+For instance, to get the current weather, we might want to get the user location,
+
+1005
+01:07:33,658 --> 01:07:39,350
+然后访问一个天气 API 或应用工具，并传入纬度
+then we want to access a weather API or an application tool and pass the latitude
+
+1006
+01:07:39,350 --> 01:07:42,800
+和经度到应用中。
+and longitude of the user into the application.
+
+1007
+01:07:43,520 --> 01:07:47,832
+然后我们就能够获取这些坐标对应的当前天气
+Then we will be able to get the current weather for those coordinates
+
+1008
+01:07:47,832 --> 01:07:51,160
+最后将天气响应返回给用户。
+and finally return the weather response to the user.
+
+1009
+01:07:51,710 --> 01:07:54,639
+由于这是一个多步骤过程，
+Now since this is a multi-step process,
+
+1010
+01:07:54,639 --> 01:07:57,214
+工作流记忆可以帮助我们解决这个问题
+workflow memory helps us with this
+
+1011
+01:07:57,214 --> 01:08:02,806
+因为我们可以在为任意用户获取当前天气时重用这一组步骤
+because we can reuse this set of steps to get the current weather for any user
+
+1012
+01:08:02,806 --> 01:08:04,670
+只要执行过一次之后。
+after we perform it once.
+
+1013
+01:08:05,390 --> 01:08:10,138
+因此我们可以随着时间在数据库中保存工作结构，其方式
+So we can preserve the structure of work over time in the database in a way
+
+1014
+01:08:10,138 --> 01:08:16,310
+能让大语言模型确切知道要遵循哪些步骤来响应用户。
+that makes the large language model know exactly what steps to follow to respond to the users.
+
+1015
+01:08:17,240 --> 01:08:18,680
+我们可以拥有这样的结构。
+We can have this structure.
+
+1016
+01:08:19,000 --> 01:08:22,755
+如果你还记得我们之前讨论的内容，
+And if you remember what we were talking about before,
+
+1017
+01:08:22,755 --> 01:08:26,092
+工作流记忆可以以简化的方式使用
+workflow memory can be used in a streamlined way
+
+1018
+01:08:26,092 --> 01:08:31,266
+我们可以使用这张关系表来存储关于步骤的信息，
+and we can use this relational table to store information about the steps,
+
+1019
+01:08:31,266 --> 01:08:34,520
+这些步骤执行的时间戳。
+a timestamp of when these steps were executed.
+
+1020
+01:08:34,960 --> 01:08:37,560
+以及所有步骤的嵌入。
+And also an embedding of all the steps.
+
+1021
+01:08:38,210 --> 01:08:39,250
+这只是一个示例。
+This would be an example.
+
+1022
+01:08:39,570 --> 01:08:43,306
+你会有一个工作流名称和可选描述
+You have a workflow name with an optional description
+
+1023
+01:08:43,306 --> 01:08:47,374
+以及原始用户请求和一组有序步骤，以便
+and the original user request with a set of ordered steps so
+
+1024
+01:08:47,374 --> 01:08:51,526
+让大语言模型能够反复重现这一流程，
+that the large language model is able to reproduce this over
+
+1025
+01:08:51,526 --> 01:08:55,594
+而不必现场临时判断要做什么。
+and over without having to figure out on the spot what to do.
+
+1026
+01:08:55,594 --> 01:08:59,330
+这将帮助大语言模型确切知道。
+This will help the large language model know exactly.
+
+1027
+01:08:59,410 --> 01:09:04,680
+在每次用户请求时要做什么，而不必临场摸索。
+What to do on each user request without having to figure it out on the fly.
+
+1028
+01:09:05,200 --> 01:09:10,583
+因此，这将使大语言模型高效得多
+And as a consequence, this will make the large language model much more efficient
+
+1029
+01:09:10,583 --> 01:09:14,383
+并减少处理所需的上下文量
+and will reduce the amount of context required to process
+
+1030
+01:09:14,383 --> 01:09:16,600
+以及实际响应用户所需的上下文量。
+and actually respond to the user.
+
+1031
+01:09:17,640 --> 01:09:21,763
+我们将讨论记忆操作、上下文工程，
+We're going to talk about memory operations, context engineering,
+
+1032
+01:09:21,763 --> 01:09:25,380
+以及高效缩减上下文的方法。
+and the ways that we have to reduce the context efficiently.
+
+1033
+01:09:26,020 --> 01:09:29,172
+就像我们在前面课程中所做的那样，
+So just like we have done in the previous lessons,
+
+1034
+01:09:29,172 --> 01:09:31,940
+我们需要设置数据库的访问。
+we need to set up the access to our database.
+
+1035
+01:09:33,060 --> 01:09:37,780
+如你所见，我们再次正确连接到了数据库。
+And as you'll see, we're correctly connected into the database again.
+
+1036
+01:09:38,580 --> 01:09:44,238
+我们还要初始化 OpenAI 客户端，以便使用他们的 GPT 模型
+We are also going to initialize our OpenAI client so we can use their GPT models
+
+1037
+01:09:44,238 --> 01:09:49,200
+以及我们之前用过的 Hugging Face 嵌入模型。
+as well as the embedding model from Hugging Face that we used before.
+
+1038
+01:09:50,080 --> 01:09:53,069
+我们还会重新获取表名，以便
+We're also going to recall our table names so
+
+1039
+01:09:53,069 --> 01:09:58,400
+能够在存储管理器和记忆管理器中正确引用它们。
+that we can properly address them in our store manager and our memory managers.
+
+1040
+01:09:59,120 --> 01:10:02,570
+和之前一样，我们也会更新
+And as we did before, we're also going to update
+
+1041
+01:10:02,570 --> 01:10:08,320
+并重建对话历史表和工具日志历史表。
+and recreate our conversation history table and our tool log history table.
+
+1042
+01:10:08,440 --> 01:10:13,190
+这样以后检查这些日志时，我们就有某种参考系统。
+So we have some kind of reference system for the future when we inspect these logs.
+
+1043
+01:10:13,590 --> 01:10:15,643
+如这里所示，它们已经存在，
+As you can see here, they already exist,
+
+1044
+01:10:15,643 --> 01:10:18,008
+但如果你是第一次运行这个，
+but if you are running this for the first time,
+
+1045
+01:10:18,008 --> 01:10:20,310
+你会看到它们被正确创建。
+you'll see that they were properly created.
+
+1046
+01:10:21,310 --> 01:10:27,335
+创建好所有对象、对话表和向量存储之后，
+And after we created all our objects, our conversation tables and our vector stores,
+
+1047
+01:10:27,335 --> 01:10:32,758
+我们将重新初始化存储管理器，并获取所有存储对象
+we are going to reinitialize our store manager and get all the store objects
+
+1048
+01:10:32,758 --> 01:10:34,480
+以便后续操作使用。
+that we need to operate.
+
+1049
+01:10:35,200 --> 01:10:39,280
+如你所见，它们都已通过存储管理器正确加载。
+And as you'll see, they have all been loaded properly via the store manager.
+
+1050
+01:10:40,240 --> 01:10:45,244
+记忆管理器和工具箱的实例化也是如此，
+And the same goes for the instantiation of the memory manager and our toolbox
+
+1051
+01:10:45,244 --> 01:10:50,325
+这样我们可以选择工具，让大语言模型能够选择
+so we can select the tools so that the large language model is able to select the
+
+1052
+01:10:50,325 --> 01:10:52,280
+在正确的时间选择正确的工具。
+right tools at the right time.
+
+1053
+01:10:53,050 --> 01:10:56,958
+它们已经正确初始化，而且非常快，
+And they have been properly initialized and very quickly,
+
+1054
+01:10:56,958 --> 01:10:59,430
+在操作这些模型之前，
+before operating with these models,
+
+1055
+01:10:59,430 --> 01:11:03,418
+你要为模型设置最大 token 数量，
+you are going to set a maximum number of tokens for the model,
+
+1056
+01:11:03,418 --> 01:11:06,130
+这里将设置为 256,000。
+which in this case is going to be 256,000.
+
+1057
+01:11:07,010 --> 01:11:11,448
+由于本章的目的是处理上下文大小，
+So since the purpose of this chapter is to work with context sizes,
+
+1058
+01:11:11,448 --> 01:11:16,128
+我们将创建这个名为 Calculate Context Usage 的函数，
+we are going to create this function called Calculate Context Usage,
+
+1059
+01:11:16,128 --> 01:11:19,920
+用来估算 token 数量，
+which is going to do an estimation of the amount of tokens
+
+1060
+01:11:19,920 --> 01:11:23,470
+也就是任意时刻上下文中实际存在的 token 数量。
+that are actually present in the context at any time.
+
+1061
+01:11:23,870 --> 01:11:25,709
+我们需要它来判断
+We need this to be able to assess
+
+1062
+01:11:25,709 --> 01:11:30,025
+何时实际执行上下文摘要或上下文压缩，
+when to actually perform context summarization or context compaction,
+
+1063
+01:11:30,025 --> 01:11:33,350
+也就是我们之前描述的两种技术。
+which were the two techniques that we described before.
+
+1064
+01:11:33,750 --> 01:11:39,670
+这里我们做一个简单估算：把总字符数除以 4。
+So here we're doing a simple estimation by dividing the total number of characters by 4.
+
+1065
+01:11:40,370 --> 01:11:44,670
+你会看到，根据每个模型存储 token 的方式不同，
+You'll see that depending on the way that each model stores the tokens,
+
+1066
+01:11:44,670 --> 01:11:48,896
+你会发现有些除以 2，有些除以 4，
+you will find that some of them divide by 2, some of them divide by four,
+
+1067
+01:11:48,896 --> 01:11:53,050
+但我们将按照每个 token 4 个字符来估算。
+but we're going to use this estimation as four characters per token.
+
+1068
+01:11:53,610 --> 01:11:57,570
+然后我们会设置一个百分比，以确保永远不会达到最大值。
+And then we're going to set a percentage so that the maximum is never reached.
+
+1069
+01:11:58,610 --> 01:12:03,000
+现在我们要创建第一个摘要函数。
+And now we're going to create our first summarization function.
+
+1070
+01:12:03,720 --> 01:12:09,488
+由于摘要是我们在课程中描述的两种技术之一，
+So since summarization is one of the two techniques that we described in our lesson,
+
+1071
+01:12:09,488 --> 01:12:14,268
+我们需要能够判断什么时候执行摘要最合适
+we need to be able to discern when summarization is optimal to perform
+
+1072
+01:12:14,268 --> 01:12:18,800
+以及需要给大语言模型什么指令。
+and what instructions we need to give to the large language model.
+
+1073
+01:12:18,880 --> 01:12:22,450
+执行摘要时可以使用不同的提示词。
+To perform summarization you can use different prompts.
+
+1074
+01:12:23,050 --> 01:12:26,690
+我邀请你为每一种情况实际尝试不同的提示词。
+I invite you to actually try different prompts for each one of these.
+
+1075
+01:12:27,450 --> 01:12:30,490
+一般来说，有不同类型的提示词
+In general, there are different types of prompts
+
+1076
+01:12:30,490 --> 01:12:33,530
+它们对某些类型的问题效果更好。
+that work better against some types of problems.
+
+1077
+01:12:34,330 --> 01:12:38,850
+但这里是我们想给出的一个提示词示例。
+But here is an example of the prompt that we wanted to give.
+
+1078
+01:12:39,850 --> 01:12:43,001
+请记住，摘要是一种有损技术。
+And remember that summarization is a lossy technique.
+
+1079
+01:12:43,001 --> 01:12:46,700
+所以在这个过程中我们总会丢失一点信息。
+So we will always lose a little bit of information in the process.
+
+1080
+01:12:47,460 --> 01:12:52,842
+因此，你用于摘要的提示技巧将决定质量
+So the prompting technique that you use for summarization will determine the quality
+
+1081
+01:12:52,842 --> 01:12:54,860
+你生成的输出。
+of the output that you generate.
+
+1082
+01:12:55,500 --> 01:12:59,343
+在这种情况下，我们将总结对话，以便
+In this case, we're going to summarize the conversation so
+
+1083
+01:12:59,343 --> 01:13:04,362
+未来可以恢复它，同时丢失最少的信息
+that it can be resumed in the future by losing the least amount of information
+
+1084
+01:13:04,362 --> 01:13:08,440
+并保留上下文中最重要的上下文信号。
+and preserving the highest context signals from our context.
+
+1085
+01:13:08,760 --> 01:13:13,742
+因此，我们希望保留所有重要信息，并移除
+So we want to preserve all the important information and remove the things
+
+1086
+01:13:13,742 --> 01:13:17,680
+在这种情况下 LLM 会认为最不重要的内容。
+that the LLM will consider as least important in this case.
+
+1087
+01:13:18,080 --> 01:13:20,440
+因此，我们希望保留具体细节。
+So for that, we want to keep concrete details.
+
+1088
+01:13:21,080 --> 01:13:26,600
+我们希望把事实与问题等开放式内容区分开。
+We want to separate the facts from open-ended things like questions.
+
+1089
+01:13:27,540 --> 01:13:33,111
+不要让 LLM 幻觉生成任何信息，或包含 LLM 生成的任何暗示
+To not hallucinate any information or include any hints generated by the LLM
+
+1090
+01:13:33,111 --> 01:13:38,420
+并尽可能保持简洁，同时在未来仍然有用。
+and to keep it as concise as possible without being useless in the future.
+
+1091
+01:13:38,540 --> 01:13:40,060
+所以我们还需要它在未来是有用的。
+So we need it to be useful too.
+
+1092
+01:13:40,580 --> 01:13:49,540
+并且我们希望在最终响应中进行拆分，实际最多只保留 6,000 个字符。
+And we want to split and actually preserve only a maximum of 6,000 characters in our final response.
+
+1093
+01:13:49,820 --> 01:13:51,260
+这就是我们在这里要做的事情。
+So this is what we do here.
+
+1094
+01:13:51,680 --> 01:13:54,229
+我们使用这个模型调用 LLM 客户端，
+We call the LLM client with the model
+
+1095
+01:13:54,229 --> 01:14:00,176
+使用我们想要的模型，并为响应设置最大完成 token 数，并使用这个
+that we wanted with a maximum number of completion tokens for the response with this
+
+1096
+01:14:00,176 --> 01:14:03,320
+结构化 OpenAI 规范请求。
+structured OpenAI specification request.
+
+1097
+01:14:03,600 --> 01:14:09,400
+之后，我们就能够获取实际的摘要内容。
+And after that, we will be able to retrieve the actual summary.
+
+1098
+01:14:10,120 --> 01:14:13,460
+我们在这里还有一个安全机制，以便
+We also have this safety mechanism here so that
+
+1099
+01:14:13,460 --> 01:14:16,542
+如果第一次总结失败，
+if the summarization fails the first time,
+
+1100
+01:14:16,542 --> 01:14:21,509
+我们还有一个回退机制，它会尝试一个更简单的提示，且不包含
+we also have a fallback mechanism that tries a simpler prompt without
+
+1101
+01:14:21,509 --> 01:14:26,390
+提示中那么多概念，以便当第一次输出为空时。
+that many concepts on the prompt so that if the first output is empty.
+
+1102
+01:14:26,670 --> 01:14:31,590
+我们绝不会完全丢失原始用户输入中的所有上下文。
+We will never completely lose all the context from the original user's input.
+
+1103
+01:14:32,310 --> 01:14:35,687
+因此，在这种情况下，我们正在减少提供给
+So in this case, we are reducing the amount of instructions
+
+1104
+01:14:35,687 --> 01:14:38,030
+大语言模型的指令数量。
+that we give to the large language model.
+
+1105
+01:14:38,710 --> 01:14:43,769
+与我们刚才所做的相反，我们还需要一种机制来扩展
+And as opposed to what we did, we also need to have a mechanism to expand the
+
+1106
+01:14:43,769 --> 01:14:47,750
+摘要，以便恢复原始对话。
+summary as well to retrieve the original conversations.
+
+1107
+01:14:48,310 --> 01:14:54,103
+因此，如果我们通过上下文压缩存储了摘要标识符，
+So in case that we stored a summary identifier through context compaction,
+
+1108
+01:14:54,103 --> 01:14:57,230
+我们还需要能够执行相反的操作。
+we also need to be able to do the opposite.
+
+1109
+01:14:57,670 --> 01:15:02,400
+我们在这里创建这个 expand summary 函数，以实际实现这一功能。
+And we create this expand summary function here to actually perform this functionality.
+
+1110
+01:15:02,800 --> 01:15:09,573
+为此，我们需要从记忆管理器获取摘要文本，向它提供
+So for that, we need to obtain the summary text from the Memory Manager by giving it
+
+1111
+01:15:09,573 --> 01:15:12,960
+我们压缩内容时得到的摘要 ID。
+the summary ID from whatever we compact.
+
+1112
+01:15:13,840 --> 01:15:17,340
+之后，我们可以获取原始上下文
+And after that, we can get the original context
+
+1113
+01:15:17,340 --> 01:15:20,840
+也就是之前被总结或压缩过的上下文。
+that was previously summarized or compacted.
+
+1114
+01:15:22,060 --> 01:15:29,053
+现在我们有了这个未摘要、压缩与总结相对比的系统，
+And now that we have this unsummarized and compaction versus summarization system,
+
+1115
+01:15:29,053 --> 01:15:33,780
+我们将创建一个执行五个步骤的函数。
+we are going to create this function that does five steps.
+
+1116
+01:15:34,620 --> 01:15:39,586
+第一步是读取一个线程中的所有未摘要消息，
+The first step is to read all the unsummarized messages from a thread,
+
+1117
+01:15:39,586 --> 01:15:44,380
+这里的线程指一次对话，并通过 LLM 生成摘要。
+a thread meaning a conversation, generating a summary via the LLM.
+
+1118
+01:15:44,820 --> 01:15:47,589
+也就是执行上下文总结，
+So performing context summarization,
+
+1119
+01:15:47,589 --> 01:15:51,783
+然后将此摘要存储到摘要记忆中，并标记
+then storing this summary in the summary memory and marking
+
+1120
+01:15:51,783 --> 01:15:57,153
+实际用于总结的行，并为其添加标识符
+the actual rows that were used in the summarization with an identifier
+
+1121
+01:15:57,153 --> 01:16:01,180
+最后返回摘要对象以供将来使用。
+and finally returning the summary object for future use.
+
+1122
+01:16:02,140 --> 01:16:07,978
+在这种情况下，首先，我们读取未摘要对话，使用这个 SQL
+In this case, first of all, we read the unsummarized conversation with this SQL
+
+1123
+01:16:07,978 --> 01:16:11,958
+查询，它基本上会进入记忆管理器，
+query, which basically goes into the memory manager,
+
+1124
+01:16:11,958 --> 01:16:15,231
+并遍历我们整个对话表，
+goes through our whole conversation table,
+
+1125
+01:16:15,231 --> 01:16:20,450
+你应该还记得，对话表存储在 SQL 表中，而不是向量中。
+which as you will remember is stored in a SQL table rather than vectors.
+
+1126
+01:16:20,770 --> 01:16:23,146
+这样我们就能追溯时间戳、
+So we can trace back the timestamp,
+
+1127
+01:16:23,146 --> 01:16:28,880
+对话 ID、聊天 ID，以及对话中的所有内容。
+the ID of the conversation and the chat and also all the content in the conversation.
+
+1128
+01:16:30,080 --> 01:16:32,392
+我们将使用这些信息，
+We are going to use this information,
+
+1129
+01:16:32,392 --> 01:16:37,240
+也就是从这些查询结果中获得的所有行，来构建对话的文本记录。
+all the rows that we get from that to build a transcript from the conversation.
+
+1130
+01:16:38,160 --> 01:16:41,784
+所以到目前为止，我们只是在重建
+So up until this point, we are just rebuilding the conversation
+
+1131
+01:16:41,784 --> 01:16:44,040
+我们与大语言模型进行过的对话。
+that we had with a large language model.
+
+1132
+01:16:44,640 --> 01:16:49,694
+接下来，我们将通过文本记录来总结它的上下文窗口，
+Then we're going to summarize its context window through the transcript
+
+1133
+01:16:49,694 --> 01:16:54,830
+并在记忆管理器的帮助下，利用 OpenAI 客户端，
+and with the help of the memory manager and making use of the OpenAI client,
+
+1134
+01:16:54,830 --> 01:16:58,310
+然后我们会为它生成一个摘要 ID。
+then we're going to generate a summary ID for that.
+
+1135
+01:16:58,710 --> 01:17:02,230
+我们将标记用于总结的行。
+We're going to mark the rows that were used on summarization.
+
+1136
+01:17:02,550 --> 01:17:06,128
+这样将来如果我们想再次执行总结，
+So if in the future we want to perform summarization again,
+
+1137
+01:17:06,128 --> 01:17:10,510
+我们就知道这些信息此前已经被总结过。
+we know that this information has already previously been summarized.
+
+1138
+01:17:11,030 --> 01:17:14,900
+因此我们会对记忆管理器做一些更新，
+So we do some updating on the memory manager for this
+
+1139
+01:17:14,900 --> 01:17:21,380
+最后，我们将把消息标记为已总结，并返回总结结果。
+and finally we will mark the messages as summarized and return the summarized result.
+
+1140
+01:17:22,620 --> 01:17:25,510
+正如我们在课程中讲到的，
+And as we talked about on the lesson,
+
+1141
+01:17:25,510 --> 01:17:31,578
+我们还有这个函数，它将帮助我们压缩信息。
+we also have this function which is going to help us compact the information
+
+1142
+01:17:31,578 --> 01:17:36,780
+并将对话的 ID 和摘要存入数据库。
+and put an ID and a summary of the conversation into the database.
+
+1143
+01:17:37,390 --> 01:17:43,242
+所以在这种情况下，这个函数会先进入整个上下文。
+So in this case, this function is going to first go into the whole context
+
+1144
+01:17:43,242 --> 01:17:46,558
+也就是我们传给它的上下文，并通过 LLM 客户端。
+that we pass it and through the LLM client
+
+1145
+01:17:46,558 --> 01:17:53,190
+并通过记忆管理器获取对话的线程 ID 或摘要 ID。
+and the Memory Manager obtain the thread ID or the summary ID of the conversation.
+
+1146
+01:17:53,830 --> 01:18:00,960
+然后它会替换对话部分，从以下信息中获取内容。
+Then it's going to replace the conversation section by taking the information from
+
+1147
+01:18:00,960 --> 01:18:07,581
+也就是它刚得到的标识符，并对这个上下文进行压缩，方式是
+the identifier that it just got and performing a compaction of this context by
+
+1148
+01:18:07,581 --> 01:18:09,720
+重建上下文。
+rebuilding the context.
+
+1149
+01:18:10,560 --> 01:18:15,678
+因此在这个函数执行后，我们可以得到压缩后的上下文。
+So after this function is executed, we can obtain the compacted context,
+
+1150
+01:18:15,678 --> 01:18:21,720
+这将帮助大语言模型在需要时选择实际信息。
+which will help the large language model select the actual information when it needs.
+
+1151
+01:18:22,560 --> 01:18:27,036
+我们运行它，并希望能实现所有概念。
+And we run that and in the hopes of implementing all the concepts
+
+1152
+01:18:27,036 --> 01:18:29,569
+也就是我们在这节课中学习的概念。
+that we are looking at in the lesson,
+
+1153
+01:18:29,569 --> 01:18:33,453
+我们还会将它注册为工具箱模式。
+we are also going to register this as a toolbox pattern,
+
+1154
+01:18:33,453 --> 01:18:38,689
+也就是作为一种新工具，让大语言模型也能够执行这一操作。
+so as a new tool so that the large language model is also able to perform this
+
+1155
+01:18:38,689 --> 01:18:40,800
+在需要时自动执行。
+automatically when it needs.
+
+1156
+01:18:41,360 --> 01:18:45,338
+因此每当大语言模型的使用率达到 80%。
+So whenever the large language model reaches 80% utilization,
+
+1157
+01:18:45,338 --> 01:18:50,387
+它就能自动总结对话并将其存储到数据库中。
+it can automatically summarize and store the conversation into the database,
+
+1158
+01:18:50,387 --> 01:18:53,370
+从而有效地执行上下文压缩。
+effectively performing context compaction.
+
+1159
+01:18:54,250 --> 01:18:58,890
+你会看到，这就是让工具箱模式保持激活状态的重要性。
+You will see that this is the importance of having the toolbox pattern active.
+
+1160
+01:18:59,330 --> 01:19:01,777
+我们已经创建了几十个工具。
+We have been creating tens of tools
+
+1161
+01:19:01,777 --> 01:19:06,418
+如果真把它们全部放进上下文，会非常天真。
+and it would be very naive to actually put them all into the context
+
+1162
+01:19:06,418 --> 01:19:10,890
+因为这会导致大量的上下文膨胀和上下文混乱。
+as it would cause a lot of context bloating, context confusion.
+
+1163
+01:19:11,450 --> 01:19:16,307
+这会增加延迟，并基本上扰乱整个大语言模型
+It would increase your latency and essentially confuse the whole large language
+
+1164
+01:19:16,307 --> 01:19:17,450
+的处理过程。
+model processing.
+
+1165
+01:19:17,810 --> 01:19:20,010
+所以工具箱模式会帮助我们解决这个问题。
+So the toolbox pattern will help us with that.
+
+1166
+01:19:21,010 --> 01:19:24,514
+我们还会创建这个上下文窗口监控器。
+And we will also create this monitor context window,
+
+1167
+01:19:24,514 --> 01:19:29,690
+它会随时提醒我们实际的上下文使用情况，通过进行
+which will warn us of the actual context utilization at any time by doing the
+
+1168
+01:19:29,690 --> 01:19:31,840
+我们之前所做的估算。
+estimations that we did before.
+
+1169
+01:19:32,480 --> 01:19:36,878
+因此通过使用我们之前在 notebook 中创建的函数。
+So by using the function that we created earlier on the notebook,
+
+1170
+01:19:36,878 --> 01:19:41,683
+我们将计算我们正在使用的上下文的估算值。
+we're going to calculate an estimation of the context that we are using
+
+1171
+01:19:41,683 --> 01:19:46,000
+并基本上添加一个值，告诉我们是否处于绿色状态。
+and add basically a value that will tell us if we are on the green.
+
+1172
+01:19:46,480 --> 01:19:51,923
+告诉我们是需要担心使用率，还是处于关键水平，此时上下文
+If we need to worry about utilization or if we are at a critical level where context,
+
+1173
+01:19:51,923 --> 01:19:55,000
+需要进行总结或压缩。
+summarization or compaction needs to happen.
+
+1174
+01:19:56,110 --> 01:19:57,670
+那么现在测试开始。
+So now the testing begins.
+
+1175
+01:19:58,150 --> 01:20:00,998
+我们创建的所有函数和工具。
+All the functions, the tools that we have created
+
+1176
+01:20:00,998 --> 01:20:06,070
+并且已经提供给大语言模型的所有函数和工具，现在马上会被提供使用。
+and made available to the large language model are going to be made available right now.
+
+1177
+01:20:06,350 --> 01:20:11,404
+我们将通过创建一段关于研究的示例对话来测试它们。
+And we are going to test them by creating a sample conversation about a research
+
+1178
+01:20:11,404 --> 01:20:15,310
+也就是我们想做的研究，然后我们会看到结果。
+that we want to make, and we're going to get to see the results.
+
+1179
+01:20:16,220 --> 01:20:21,020
+所以在这种情况下，我们有一段测试用的示例研究对话。
+So in this case, we have this test sample research conversation
+
+1180
+01:20:21,020 --> 01:20:24,733
+假设我们正在撰写博士论文。
+where we are supposedly working on our PhD thesis
+
+1181
+01:20:24,733 --> 01:20:30,167
+并且我们在和我们的 GPT 模型讨论要做什么、研究什么。
+and we were talking with our GPT model about what to do, what to research,
+
+1182
+01:20:30,167 --> 01:20:32,340
+以及关于 RAG 的其他内容。
+some other things about RAG.
+
+1183
+01:20:33,180 --> 01:20:37,475
+所以我们在数据库的对话表中有一个线程。
+So we have a thread on our database in the conversational table,
+
+1184
+01:20:37,475 --> 01:20:42,500
+我们可以通过记忆管理器访问它，总共有 32 条消息。
+which we can access through the Memory Manager with a total of 32 messages.
+
+1185
+01:20:43,540 --> 01:20:48,060
+现在我们要实际监控我们正在使用多少上下文。
+And now we're going to actually monitor how much context we are using.
+
+1186
+01:20:48,300 --> 01:20:52,980
+为此，我们将调用上下文窗口监控器，并传入当前
+So for that, we are going to call the monitor context window with the current
+
+1187
+01:20:52,980 --> 01:20:55,580
+上下文，其中包含这 32 条消息。
+context, which includes the 32 messages.
+
+1188
+01:20:56,060 --> 01:20:59,738
+我们将打印我们拥有的 token 数量。
+And we are going to print the amount of tokens that we have,
+
+1189
+01:20:59,738 --> 01:21:03,186
+以及我们使用的 GPT 模型所允许的最大值。
+the maximum allowed by the GPT model that we're using,
+
+1190
+01:21:03,186 --> 01:21:07,861
+我们当前的使用百分比，以及状态：正常、
+the percentage usage that we currently have, and the status being okay,
+
+1191
+01:21:07,861 --> 01:21:09,240
+警告或严重。
+warning or critical.
+
+1192
+01:21:09,680 --> 01:21:13,622
+也就是说，我们是需要进行上下文总结或压缩。
+Meaning if we need to make context summarization or compaction or
+
+1193
+01:21:13,622 --> 01:21:14,840
+还是我们仍然没有问题。
+if we are still okay.
+
+1194
+01:21:15,760 --> 01:21:20,178
+正如你在这里看到的，我们的上下文窗口监控器当前显示。
+As you'll see here, our context window monitor currently says
+
+1195
+01:21:20,178 --> 01:21:25,360
+我们总共使用了 2000 个 token，不到最大值的 1%。
+that we are using a total of 2000 tokens which is less than 1% of the maximum.
+
+1196
+01:21:25,600 --> 01:21:27,680
+所以目前我们没问题。
+So at this point we are fine.
+
+1197
+01:21:28,040 --> 01:21:30,381
+我们不需要进行上下文总结。
+We don't need to perform context summarization
+
+1198
+01:21:30,381 --> 01:21:32,840
+因为我们的上下文中仍有大量空间。
+because we still have a lot of space in our context.
+
+1199
+01:21:33,080 --> 01:21:37,800
+所以当前我们模型的注意力矩阵并没有严重过载。
+So the attention matrix of our model is not heavily overloaded at the moment.
+
+1200
+01:21:38,200 --> 01:21:42,600
+这实际上是包含这 32 条消息的当前对话的打印输出。
+And this is actually a print of the current conversation with the 32 messages.
+
+1201
+01:21:43,590 --> 01:21:46,811
+现在即使我们还没有达到 80% 的利用率，
+Now even if we haven't reached 80% utilization,
+
+1202
+01:21:46,811 --> 01:21:50,611
+我们将调用 Summarize Conversation 工具，以便
+we are going to call the Summarize Conversation tool so that
+
+1203
+01:21:50,611 --> 01:21:53,667
+当你在填满上下文窗口时，
+when you are filling up your context window,
+
+1204
+01:21:53,667 --> 01:21:58,870
+你可以随时手动使用 Summarize Conversation 工具。
+you can manually use the Summarize Conversation tool whenever you feel like it.
+
+1205
+01:21:59,310 --> 01:22:02,535
+为此，我们调用 Summarize Conversation 工具
+So for that, we're calling the Summarize Conversation tool
+
+1206
+01:22:02,535 --> 01:22:05,830
+它会调用 OpenAI 模型并执行这个操作。
+and it's going to call the OpenAI model and perform this.
+
+1207
+01:22:06,870 --> 01:22:10,270
+你会看到，我们的对话已经被摘要了。
+And as you'll see, we have our conversation summarized.
+
+1208
+01:22:10,590 --> 01:22:13,825
+除了摘要之外，我们还会获得一个 ID，
+Apart from the summary, we will also get an ID,
+
+1209
+01:22:13,825 --> 01:22:19,445
+它可以选择与描述一起使用，将其存储到
+which can be optionally used together with a description to store this into the
+
+1210
+01:22:19,445 --> 01:22:22,510
+数据库中，作为上下文压缩功能。
+database as a context compaction feature.
+
+1211
+01:22:23,110 --> 01:22:26,536
+我们还会将所有消息标记为已摘要，以便
+And we also mark all the messages as summarized so
+
+1212
+01:22:26,536 --> 01:22:29,460
+每当我们需要再次摘要时，
+that whenever we want to summarize again,
+
+1213
+01:22:29,460 --> 01:22:33,638
+我们不会对这些消息再次执行摘要
+we don't perform the summarization against these messages
+
+1214
+01:22:33,638 --> 01:22:39,237
+因为它们已经有摘要和描述，说明这些消息
+as they already have a summary and a description explaining what these messages
+
+1215
+01:22:39,237 --> 01:22:40,490
+实际包含的内容。
+actually entail.
+
+1216
+01:22:41,410 --> 01:22:45,650
+这就是由这 32 条消息生成的最终摘要。
+And this is the final summary that was created from the 32 messages.
+
+1217
+01:22:46,770 --> 01:22:49,490
+现在我们要做完全相反的操作。
+And now we will do exactly the opposite.
+
+1218
+01:22:49,930 --> 01:22:54,264
+不是压缩摘要并创建摘要 ID，
+Instead of compacting the summary and creating a summary ID,
+
+1219
+01:22:54,264 --> 01:22:57,747
+而是使用这个 ID 查询数据库
+we will take the ID to actually query the database
+
+1220
+01:22:57,747 --> 01:23:01,401
+并通过调用 Expand Summary 工具将其展开
+and uncompact it by calling the Expand Summary tool
+
+1221
+01:23:01,401 --> 01:23:04,630
+因为我们已将它注册到工具箱中。
+as we already registered it into the toolbox.
+
+1222
+01:23:05,430 --> 01:23:08,374
+你会看到，这里我们有摘要 ID
+And as you'll see here, we have the summary ID
+
+1223
+01:23:08,374 --> 01:23:11,717
+通过从数据库获取信息，
+and by getting the information from the database,
+
+1224
+01:23:11,717 --> 01:23:17,287
+我们实际上让大语言模型扩展了它的记忆核心，
+we have effectively allowed the large language model to expand its memory core with
+
+1225
+01:23:17,287 --> 01:23:21,107
+借助数据库，这样我们就能检索摘要上下文，
+the database so that we can retrieve the summary context,
+
+1226
+01:23:21,107 --> 01:23:24,210
+也就是对话内容的描述。
+a description of what was in the conversation.
+
+1227
+01:23:24,650 --> 01:23:26,810
+以及原始的 32 条消息。
+Plus the original 32 messages.
+
+1228
+01:23:27,690 --> 01:23:30,140
+现在我们有这样一个流水线，
+And now we just have this pipeline,
+
+1229
+01:23:30,140 --> 01:23:35,885
+它将帮助验证数据库中所有已摘要的行都被排除
+which will help us verify that all the summarized rows in the database are omitted
+
+1230
+01:23:35,885 --> 01:23:38,250
+在摘要处理之外。
+from the summarization efforts.
+
+1231
+01:23:38,890 --> 01:23:42,352
+因此在这种情况下，在对一个线程完成摘要之后，
+So in this case, after having summarized a thread,
+
+1232
+01:23:42,352 --> 01:23:47,050
+我们需要在数据库中检查它们是否已被正确标记。
+we need to check on the database that they have been marked properly.
+
+1233
+01:23:47,650 --> 01:23:51,552
+因此我们执行一些 SQL 代码来获取
+So we execute some SQL code to get the number of rows
+
+1234
+01:23:51,552 --> 01:23:56,570
+实际已摘要和未摘要的行数，
+that actually are summarized and which ones are not summarized,
+
+1235
+01:23:56,570 --> 01:23:59,450
+并将它们打印到这些变量中。
+and we print them in these variables.
+
+1236
+01:24:00,230 --> 01:24:05,390
+你会看到，通过我们的记忆管理器，我们拥有了对话记忆。
+So as you'll see here, through our memory manager, we have our conversational memory.
+
+1237
+01:24:05,710 --> 01:24:11,476
+该线程中没有发现未摘要的消息，因为我们已经完成了摘要。
+And no unsummarized messages were found for the thread as we already summarized.
+
+1238
+01:24:11,476 --> 01:24:14,190
+所以它们都被标记为已摘要。
+So they were all marked as summarized.
+
+1239
+01:24:15,190 --> 01:24:19,390
+至此，你已经成功完成了第 4 课。恭喜。
+And with this you have successfully completed lesson 4. Congratulations.
+
+1240
+01:24:20,340 --> 01:24:25,540
+在本课中，你将拥有组装一个完全有状态的
+In this lesson, you will have everything you need to assemble a fully stateful
+
+1241
+01:24:25,540 --> 01:24:26,900
+具备记忆能力的智能体所需的一切。
+memory-aware agent.
+
+1242
+01:24:27,540 --> 01:24:33,080
+你将实现一个启动流程，从长期记忆中加载过往上下文，
+You will implement a startup routine that loads prior context from long-term memory,
+
+1243
+01:24:33,080 --> 01:24:37,840
+构建递归推理循环和中间记忆检查点，
+build a recursive reasoning loop and intermediate memory checkpoints,
+
+1244
+01:24:37,840 --> 01:24:42,600
+并创建一个可跨会话持久化并随着时间不断改进的智能体。
+and create an agent that persists across sessions and improves over time.
+
+1245
+01:24:43,240 --> 01:24:47,560
+这节课会很有趣。我们将讨论具备记忆能力的智能体。
+Let's have some fun in this lesson. We're going to touch on Memory-Aware Agents.
+
+1246
+01:24:48,120 --> 01:24:51,200
+我们将具体讲解什么是智能体循环。
+We're going to cover specifically what the agent loop is.
+
+1247
+01:24:51,560 --> 01:24:55,840
+我们将了解智能体循环内部和外部的记忆操作。
+We'll look at memory operations that are inside and outside of the agent loop.
+
+1248
+01:24:56,320 --> 01:24:58,520
+我们还将概述 agent harness。
+We'll also get an overview of agent harness.
+
+1249
+01:24:59,040 --> 01:25:02,760
+总的来说，我们将实现一个具备记忆能力的智能体。
+And generally, we're going to implement a memory-aware agent.
+
+1250
+01:25:03,570 --> 01:25:07,262
+智能体循环是一个循环迭代环境，
+The agent loop is this cyclical iterative environment in
+
+1251
+01:25:07,262 --> 01:25:10,570
+LLM 会在其中执行一段时间。
+which an LLM executes for a specific amount of time.
+
+1252
+01:25:11,210 --> 01:25:13,344
+它首先会组装上下文，
+It will start with assembling the context,
+
+1253
+01:25:13,344 --> 01:25:16,130
+这也是我们在整个课程中一直在讨论的内容。
+which we've been talking about throughout this course.
+
+1254
+01:25:16,810 --> 01:25:22,804
+然后我们将组装好的上下文传给 LLM，使 LLM 能够
+Then we'll pass the context that we've assembled into an LLM to enable the LLM to
+
+1255
+01:25:22,804 --> 01:25:26,800
+对其接收到的信息进行推理和决策。
+reason and decide on the information it's received.
+
+1256
+01:25:27,480 --> 01:25:29,160
+然后 LLM 会采取行动。
+The LLM would then take an action.
+
+1257
+01:25:29,480 --> 01:25:34,760
+这个行动可能是回复、调用工具或请求用户进一步输入。
+The action could be to respond, to call tools, or to ask the user for further input.
+
+1258
+01:25:35,320 --> 01:25:40,486
+但总的来说，这就是我们所说的智能体循环：组装上下文，
+But generally this is what we refer to as the agent loop where we assemble context,
+
+1259
+01:25:40,486 --> 01:25:43,600
+调用 LLM，并根据 LLM 的响应采取行动。
+invoke the LLM, and act on a response from the LLM.
+
+1260
+01:25:44,160 --> 01:25:50,160
+它是循环且迭代的，这意味着该循环可以执行一段时间。
+It's cyclical and iterative, which means this loop can be executed for a specific amount of time.
+
+1261
+01:25:50,950 --> 01:25:54,190
+循环的终止通常由停止条件决定。
+Termination of a loop is usually determined by a stop condition.
+
+1262
+01:25:54,830 --> 01:25:59,479
+这可能是目标完成时来自 LLM 的最终答案，或者
+This could be a final answer from the LLM when the goal is completed or
+
+1263
+01:25:59,479 --> 01:26:03,150
+当循环执行出现错误或超时。
+when we have an error or timeout on the loop execution.
+
+1264
+01:26:03,790 --> 01:26:09,691
+当用户向智能体循环提供上下文或输入时，智能体循环启动
+The agent loop starts when the user provides context or input into the agent loop
+
+1265
+01:26:09,691 --> 01:26:12,950
+并开始上下文组装过程。
+and begins the assembly of context process.
+
+1266
+01:26:13,490 --> 01:26:17,845
+现在你在屏幕上看到的是一个完整的智能体循环，包括启动条件、
+Now what you see on the screen is a full agent loop with a start condition,
+
+1267
+01:26:17,845 --> 01:26:20,530
+智能体循环本身以及停止条件。
+the agent loop itself, and a stop condition.
+
+1268
+01:26:21,410 --> 01:26:25,507
+更明确地说，智能体循环是一个循环执行环境
+To put it more definitively, the agent loop is a cyclical environment
+
+1269
+01:26:25,507 --> 01:26:29,462
+在其中 LLM 参与执行特定次数，
+that executes for a specific number of times where an LLM is involved
+
+1270
+01:26:29,462 --> 01:26:32,570
+观察响应并可以采取行动。
+and a response is observed and an action can be taken.
+
+1271
+01:26:33,470 --> 01:26:37,750
+它会组装、调用并执行动作，直到满足停止条件。
+Assembles, it invokes, and it acts until a stop condition is met.
+
+1272
+01:26:38,510 --> 01:26:42,330
+用伪代码表示，智能体循环将如屏幕所示，
+In pseudocode, the agent loop will look as shown on screen,
+
+1273
+01:26:42,330 --> 01:26:46,306
+其中我们指定了最大步数，并有一个 LLM
+where we have a max number of steps specified and we have an LLM
+
+1274
+01:26:46,306 --> 01:26:50,204
+它接收上下文，我们还有一个可以执行的动作
+that receives context and we have an action that can be taken
+
+1275
+01:26:50,204 --> 01:26:55,350
+然后提取出最终结果。现在我们可以进入记忆操作。
+and then a final result that is extracted. Now we can go into memory operations.
+
+1276
+01:26:55,630 --> 01:26:57,740
+在智能体循环之内和之外。
+In and out of the agent loop.
+
+1277
+01:26:57,860 --> 01:27:00,268
+既然你已经了解了什么是智能体循环，
+Now that you understand what an agent loop is,
+
+1278
+01:27:00,268 --> 01:27:03,310
+我们先从智能体循环之外的记忆操作开始。
+let's start with memory operations out of the agent loop.
+
+1279
+01:27:03,470 --> 01:27:07,669
+在上一课中，我们概述了不同形式的智能体记忆
+In previous lesson, we had an overview of different forms of agent memory
+
+1280
+01:27:07,669 --> 01:27:12,350
+并且还介绍了相应的记忆存储，也就是保存在数据库中的表。
+and we also had corresponding memory stores, which are tables held in a database.
+
+1281
+01:27:13,110 --> 01:27:17,738
+这些表包含由记忆管理器持有的操作，这些操作暴露了读
+These tables have operations held within a memory manager that expose read
+
+1282
+01:27:17,738 --> 01:27:20,470
+和写操作，我们可以调用它们。
+and write operations that we can call upon.
+
+1283
+01:27:20,960 --> 01:27:25,680
+这些操作在智能体循环中被展示和使用。
+These operations are shown and utilized within the agent loop.
+
+1284
+01:27:25,920 --> 01:27:28,489
+具体来说，在智能体循环之外，
+Specifically, outside of the agent loop,
+
+1285
+01:27:28,489 --> 01:27:33,113
+我们引入 harness 这个术语，是因为记忆操作在
+we introduce the term harness because memory operations in
+
+1286
+01:27:33,113 --> 01:27:36,269
+智能体循环内外的这些记忆操作共同构成智能体执行框架（harness），
+and out of the agent loop make up the agent harness,
+
+1287
+01:27:36,269 --> 01:27:41,040
+它们是程序化脚手架，用于可靠地执行
+which are programmatic scaffolding that enables the reliable execution of
+
+1288
+01:27:41,040 --> 01:27:46,021
+AI 智能体。在启动条件下，当我们即将进入智能体循环时，
+an AI agent at a start condition when we're about to enter the agent loop,
+
+1289
+01:27:46,021 --> 01:27:50,440
+我们通常会有从记忆中读取的记忆操作。
+we typically would have memory operations that read from memory.
+
+1290
+01:27:51,040 --> 01:27:54,120
+这是因为我们正在为 LLM 组装上下文。
+This is because we're assembling context for our LLMs.
+
+1291
+01:27:54,880 --> 01:27:57,837
+但我们也可以有存在于
+But we can also have memory operations that live
+
+1292
+01:27:57,837 --> 01:28:00,720
+并在智能体循环内部执行的记忆操作。
+and are executed within the agent loop itself.
+
+1293
+01:28:01,280 --> 01:28:04,149
+这是因为我们的智能体可以调用工具，
+And this is because our agents can call on tools,
+
+1294
+01:28:04,149 --> 01:28:09,600
+并且我们还有在智能体控制之外以程序化方式执行的工具。
+and we also have tools that are executed programmatically outside of the agent's control.
+
+1295
+01:28:10,720 --> 01:28:15,704
+智能体可以在智能体循环内执行的此类工具的例子包括
+Examples of these tools that can be executed by the agents within the agent loop are
+
+1296
+01:28:15,704 --> 01:28:20,400
+搜索互联网、扩展摘要，甚至总结对话。
+to search the internet, expand on a summary, or even summarize conversation.
+
+1297
+01:28:21,200 --> 01:28:24,040
+但总结对话是一个操作，
+But summarize conversation is an operation
+
+1298
+01:28:24,040 --> 01:28:29,568
+它可以以程序化方式在智能体循环内执行，而无需智能体
+that can be executed within the agent loop programmatically without the agent having
+
+1299
+01:28:29,568 --> 01:28:33,329
+对它进行控制，尤其是当我们设置一个条件时，比如
+control over it, especially when we set a condition such as
+
+1300
+01:28:33,329 --> 01:28:36,630
+当上下文窗口超过其容量的 80% 时。
+when the context window exceeds 80% of its capacity.
+
+1301
+01:28:37,710 --> 01:28:40,382
+在屏幕上，你可以看到不同的操作
+On the screen, you can see different operations
+
+1302
+01:28:40,382 --> 01:28:43,990
+它们存在于智能体循环之外和之内。
+that exist outside of the agent loop and inside of the agent loop.
+
+1303
+01:28:44,270 --> 01:28:48,299
+正如前面所提到的，这构成了你的智能体执行框架的一部分
+And as covered before, this makes up part of your harness
+
+1304
+01:28:48,299 --> 01:28:51,470
+从而构建一个可靠的、具备记忆能力的 AI 智能体。
+that makes a reliable memory aware AI agent.
+
+1305
+01:28:52,480 --> 01:28:56,851
+在本课中，我们将把之前构建的所有内容整合起来
+In this lesson, we're going to put together everything we've been building up
+
+1306
+01:28:56,851 --> 01:28:58,600
+并构建一个具备记忆能力的智能体。
+and build a memory aware agent.
+
+1307
+01:28:59,360 --> 01:29:02,134
+我们首先设置数据库
+We will start off by setting up our database
+
+1308
+01:29:02,134 --> 01:29:07,296
+然后初始化一个到数据库的连接，该连接由数据库
+and then initializing a connection to the database represented by the database
+
+1309
+01:29:07,296 --> 01:29:08,760
+连接变量表示。
+connection variable.
+
+1310
+01:29:09,280 --> 01:29:12,254
+当你运行这个单元格时，你会看到数据库设置成功
+When you run this cell, you will see a successful database setup
+
+1311
+01:29:12,254 --> 01:29:13,320
+正如你之前看到的那样。
+as you've seen before.
+
+1312
+01:29:14,520 --> 01:29:20,200
+接下来，我们将像之前一样设置 OpenAI 客户端和嵌入模型。
+Next, we'll set up our OpenAI client and our embedding model as we've done before.
+
+1313
+01:29:20,840 --> 01:29:25,040
+现在我们来设置记忆存储、存储管理器和记忆管理器。
+Now we'll set up our Memory Store, Store Manager and Memory Manager.
+
+1314
+01:29:25,560 --> 01:29:29,920
+我们首先像之前一样指定所有记忆表的名称。
+We'll start by specifying the names for all the memory tables as we've done before.
+
+1315
+01:29:31,240 --> 01:29:34,627
+接下来，我们将创建对话表和工具日志表，
+Next, we'll create the conversational table and the tool log table just
+
+1316
+01:29:34,627 --> 01:29:36,320
+正如我们在之前课程中所做的那样。
+as we've done in previous lessons.
+
+1317
+01:29:37,530 --> 01:29:42,220
+接下来，我们将通过创建
+Following on, we'll initialize our store manager by creating an instance of the
+
+1318
+01:29:42,220 --> 01:29:44,250
+本课中的存储管理器实例来初始化它。
+store manager within this lesson.
+
+1319
+01:29:45,090 --> 01:29:51,187
+然后我们还将创建数据对象，表示来自我们数据库的记忆表。
+We will then also create data objects representing our memory tables from our
+
+1320
+01:29:51,187 --> 01:29:55,970
+最后，我们将初始化记忆管理器。
+databases. Finally, we will initialize our memory manager.
+
+1321
+01:29:57,050 --> 01:29:59,833
+此外，我们会加载我们的工具箱
+Additionally, we will load up our toolbox
+
+1322
+01:29:59,833 --> 01:30:03,571
+并注册一些我们将会用到的常用工具，
+and register some of the common tools we're going to use,
+
+1323
+01:30:03,571 --> 01:30:08,422
+例如 archive search，以及那个允许我们搜索论文的工具
+such as the archive search and the tool that allows us to search for papers
+
+1324
+01:30:08,422 --> 01:30:10,410
+并将其保存到数据库中。
+and save it into the database.
+
+1325
+01:30:11,370 --> 01:30:14,972
+当你执行该单元格时，你应该会看到若干摘要工具
+When you execute the cell, you should see a number of summary tools
+
+1326
+01:30:14,972 --> 01:30:16,610
+以及已注册的常用工具。
+and common tools registered.
+
+1327
+01:30:17,250 --> 01:30:21,464
+这些工具可供你的具备记忆能力的 AI 智能体使用，
+These are tools that are available for your AI agent that is memory aware,
+
+1328
+01:30:21,464 --> 01:30:25,878
+这些将是智能体触发的工具。在这一部分，我们将加载我们所有的
+and this will be agent-triggered tools. In this part we're going to load up all our
+
+1329
+01:30:25,878 --> 01:30:29,490
+我们在上一课中探索过的上下文工程技术。
+context engineering techniques we explored in the last lesson.
+
+1330
+01:30:29,970 --> 01:30:34,583
+我们已经把它们移到了辅助文件中，现在我们有了所有工具
+We've moved them into the helper file now that we have all the tools
+
+1331
+01:30:34,583 --> 01:30:40,370
+以及在此开发环境中加载好的上下文工程技术。
+and the context engineering techniques loaded in this development environment.
+
+1332
+01:30:40,530 --> 01:30:45,420
+在本课中，我们将开始指定我们的智能体系统提示。
+For this lesson, we are going to start specifying our agent system prompt.
+
+1333
+01:30:46,100 --> 01:30:49,046
+这就是系统提示，或称系统指令，
+This is the system prompt or system instruction
+
+1334
+01:30:49,046 --> 01:30:53,980
+它将通过具有更高权重的 system role 传给 LLM。
+that will be passed into the LLM using the system role, which has a higher weight.
+
+1335
+01:30:54,300 --> 01:30:59,700
+当 LLM 查看系统指令中提供的指令时，
+When the LLM looks at instruction provided within the system instruction,
+
+1336
+01:30:59,700 --> 01:31:03,300
+如你所见，这让它变得更加具备记忆能力，
+as you can see, this becomes even more memory aware
+
+1337
+01:31:03,300 --> 01:31:09,129
+因为我们告诉 LLM 它拥有什么类型的记忆，以及上下文窗口如何划分。
+as we tell the LLM the type of memory it has, how the context window is partitioned.
+
+1338
+01:31:09,529 --> 01:31:14,369
+并提及我们已为其创建访问权限的不同类型的记忆。
+And mention the different types of memory that we've created access to.
+
+1339
+01:31:15,129 --> 01:31:17,889
+这让 LLM 具备记忆能力。
+This makes the LLM memory aware.
+
+1340
+01:31:18,809 --> 01:31:21,643
+接下来，我们有 execute_tools 函数，
+Next, we have the function execute_tools,
+
+1341
+01:31:21,643 --> 01:31:26,015
+它允许我们以 Python 函数的形式调用资源，
+which allows us to call resources in the form of Python functions
+
+1342
+01:31:26,015 --> 01:31:29,335
+这些函数存在于我们的开发环境中，
+that exist within our development environment,
+
+1343
+01:31:29,335 --> 01:31:31,521
+这将允许我们调用工具，
+which will allow us to call tools
+
+1344
+01:31:31,521 --> 01:31:37,270
+并通过传入 LLM 在工具调用期间提供的参数来执行函数。
+and execute functions by passing in the arguments provided by the LLM during tool calls.
+
+1345
+01:31:38,230 --> 01:31:41,374
+最后，我们有 call_openai_chat 函数，
+And lastly, we have call_openai_chat,
+
+1346
+01:31:41,374 --> 01:31:45,430
+它只是把上下文发送给一个 OpenAI 模型。
+which just sends the context to an OpenAI model.
+
+1347
+01:31:46,470 --> 01:31:49,590
+现在我们可以真正进入智能体循环。
+Now we can actually go into the agent loop.
+
+1348
+01:31:50,160 --> 01:31:55,531
+在主智能体循环中，我们将先定义一个名为
+In the main agent loop, we're going to start by actually defining a function called
+
+1349
+01:31:55,531 --> 01:31:58,334
+call_agent 的函数，它接收用户查询，
+call_agent that will take in the user query,
+
+1350
+01:31:58,334 --> 01:32:03,160
+该查询将成为实际触发智能体循环的启动条件。
+which will be the start condition for actually triggering the agent loop.
+
+1351
+01:32:03,560 --> 01:32:07,620
+我们会指定一个 thread ID，因为我们希望它按会话范围隔离，
+We'll specify a thread ID as we want this to be session scoped,
+
+1352
+01:32:07,620 --> 01:32:11,840
+还会指定我们希望智能体循环迭代的最大次数。
+but also the max iterations we want the agent loop to iterate for.
+
+1353
+01:32:12,550 --> 01:32:15,461
+在这张幻灯片中，我们识别了记忆操作，
+In this slide, we identified memory operations
+
+1354
+01:32:15,461 --> 01:32:19,390
+它们发生在智能体循环之外和智能体循环之内。
+that occur outside of the agent loop and inside of the agent loop.
+
+1355
+01:32:20,070 --> 01:32:24,550
+我们先从发生在智能体循环之外的记忆操作开始。
+We will start with memory operations that occur outside of the agent loop.
+
+1356
+01:32:25,150 --> 01:32:29,367
+这里我们可以看到在智能体循环之外运行的记忆操作，
+And here we can see memory operation that operates outside of
+
+1357
+01:32:29,367 --> 01:32:33,750
+它们用于构建初始上下文。
+the agent loop, where they are used to build the initial context.
+
+1358
+01:32:34,310 --> 01:32:39,670
+我们将采取的步骤是构建对话记忆、知识库、
+The steps we'll take are to build the conversational memory, the knowledge base,
+
+1359
+01:32:39,670 --> 01:32:42,350
+工作流实体和摘要记忆。
+the workflow entity and summary memory.
+
+1360
+01:32:43,310 --> 01:32:49,213
+下一步是执行一个确定性的记忆操作，
+The next step is to have a deterministic memory operation executed,
+
+1361
+01:32:49,213 --> 01:32:55,220
+也就是检查上下文使用量是否超过或等于 80%。
+and that is to check if the context usage exceeds or is equal to 80%.
+
+1362
+01:32:55,860 --> 01:32:59,233
+如果上下文窗口的使用量超过 80%，
+If the usage of the context window is greater than 80%,
+
+1363
+01:32:59,233 --> 01:33:02,680
+我们就会以程序化方式触发摘要生成。
+we will trigger a summarization programmatically.
+
+1364
+01:33:04,040 --> 01:33:09,360
+最后，我们会把整个上下文赋给变量 context。
+Finally, we will have our entire context assigned to a variable context.
+
+1365
+01:33:10,560 --> 01:33:15,640
+下一步是检索与查询相关的工具。
+The next step is to retrieve tools that are relevant for the query.
+
+1366
+01:33:16,000 --> 01:33:21,600
+同样，这个读取操作是发生在智能体循环之外的记忆操作。
+Again, this read operation is a memory operation that is outside of the agent loop.
+
+1367
+01:33:22,070 --> 01:33:26,423
+这减少了我们需要提供给智能体的工具数量，
+This reduces the amount of tools that we need to provide to the agent
+
+1368
+01:33:26,423 --> 01:33:31,709
+因为我们只需要与传入的特定查询相关的工具，
+as we will only require tools that are specific to the specific query being passed
+
+1369
+01:33:31,709 --> 01:33:33,030
+传入智能体循环。
+into the agent loop.
+
+1370
+01:33:33,750 --> 01:33:38,830
+接下来，我们会写入对话记忆：查询、角色和 thread ID。
+Next, we'll write a conversational memory, the query, the role, and the thread ID.
+
+1371
+01:33:39,790 --> 01:33:42,509
+现在，在我们进入智能体循环之前，
+Now, before we get into the agent loop,
+
+1372
+01:33:42,509 --> 01:33:47,946
+我们要做的最后一步是创建消息，也就是将要传给 LLM 的上下文，
+the last step we do is create our message or the context we'll pass into the LLM
+
+1373
+01:33:47,946 --> 01:33:49,560
+在智能体循环内部。
+within the agent loop.
+
+1374
+01:33:49,880 --> 01:33:53,852
+这个上下文将包含智能体系统提示，
+And this context is going to contain the Agent System prompt,
+
+1375
+01:33:53,852 --> 01:33:56,655
+这让 LLM 更加具备记忆能力，
+which makes the LLM even more memory aware,
+
+1376
+01:33:56,655 --> 01:34:00,160
+以及我们一开始所拥有的 role 和上下文。
+and the role and the context that we have to start with.
+
+1377
+01:34:01,440 --> 01:34:07,580
+在智能体循环中，我们调用之前探索过的 OpenAI chat 函数。
+In the agent loop, we use a call to the OpenAI chat function we explored earlier.
+
+1378
+01:34:08,220 --> 01:34:10,310
+我们会传入消息和工具，
+We'll pass in the messages and the tools
+
+1379
+01:34:10,310 --> 01:34:12,780
+这些工具可供智能体调用。
+that are available for the agents to call upon.
+
+1380
+01:34:13,580 --> 01:34:18,340
+我们会把 LLM 生成的响应赋给名为 response 的变量。
+We will assign the response generated by the LLM to a variable called response.
+
+1381
+01:34:19,180 --> 01:34:23,697
+通过分析并查看响应中的消息，
+By analyzing and looking into the message within the response,
+
+1382
+01:34:23,697 --> 01:34:30,600
+我们可以决定是要执行工具调用操作，还是直接进入最终响应。
+we can decide if we're gonna make a tool call operation or we're just gonna move to a final response.
+
+1383
+01:34:31,240 --> 01:34:37,097
+请记住，在智能体循环中，智能体既可以决定采取行动，也可以响应用户，
+Remember in the agent loop, the agent can either decide to act or respond to the
+
+1384
+01:34:37,097 --> 01:34:39,440
+从而满足停止条件。
+user, meeting a stop condition.
+
+1385
+01:34:40,080 --> 01:34:42,911
+如果智能体决定进行工具调用，
+If the agent decides to make a tool call,
+
+1386
+01:34:42,911 --> 01:34:47,200
+我们会把它追加到智能体循环内的消息中。
+we will append this into the messages within the agent loop.
+
+1387
+01:34:47,320 --> 01:34:51,751
+我们能够执行工具，并传入参数和名称，
+We're able to execute tools and pass in the arguments and the name
+
+1388
+01:34:51,751 --> 01:34:54,760
+这些参数和名称由智能体指定用于执行。
+that the agent specified for execution.
+
+1389
+01:34:55,780 --> 01:34:58,600
+最后，在智能体循环内部，
+Finally, now within the agent loop,
+
+1390
+01:34:58,600 --> 01:35:04,899
+我们要执行的一项记忆操作是将一些工具日志
+one of the memory operations we're going to conduct is to move some of the tool logs
+
+1391
+01:35:04,899 --> 01:35:08,660
+移到智能体循环之外并写入数据库。
+outside of the agent loop and into the database.
+
+1392
+01:35:09,140 --> 01:35:10,660
+这就是上下文卸载。
+This is context offloading.
+
+1393
+01:35:11,380 --> 01:35:13,311
+一旦收到工具结果，
+Once the tool result is received,
+
+1394
+01:35:13,311 --> 01:35:16,275
+智能体循环的迭代次数就会加一，
+the iteration of the agent loop will be incremented
+
+1395
+01:35:16,275 --> 01:35:19,240
+然后我们会把工具结果提供给 LLM。
+and then we'll provide the LLM with the tool result.
+
+1396
+01:35:19,760 --> 01:35:24,554
+如果 LLM 决定停止循环并直接生成最终回答，
+If the LLM decides to break and actually go into a final answer,
+
+1397
+01:35:24,554 --> 01:35:29,440
+我们会显示该结果，并将它赋给最终回答变量。
+we will display this and assign it to the final answer variable.
+
+1398
+01:35:30,520 --> 01:35:33,990
+还有一种情况会跳出智能体循环，那就是
+There is also a situation where we step out of the agent loop and that is
+
+1399
+01:35:33,990 --> 01:35:37,160
+在未得到最终回答时已达到最大迭代次数。
+when the max iterations have been reached without a final answer.
+
+1400
+01:35:37,800 --> 01:35:42,449
+然后我们会给最终回答一个预设模板响应，
+And then we will give the final answer a pre-template response in
+
+1401
+01:35:42,449 --> 01:35:48,218
+其中说明智能体无法在
+which we specify that the agent was unable to complete the request outside of the
+
+1402
+01:35:48,218 --> 01:35:53,298
+智能体循环之外完成请求。我们仍有一些记忆操作，例如写入工作流记忆、
+agent loop. We still have some memory operations such as write workflow memory
+
+1403
+01:35:53,298 --> 01:35:57,000
+写入实体记忆以及写入对话记忆。
+and write entity memory and write conversational memory.
+
+1404
+01:35:57,520 --> 01:36:02,516
+这些操作用于捕获智能体执行过程中产生的一些产物，
+These are to capture some of the artifacts from the agent execution such
+
+1405
+01:36:02,516 --> 01:36:08,095
+比如执行查询或达成目标所采取的步骤数，
+as the number of steps that were taken to execute a query or achieve an objective,
+
+1406
+01:36:08,095 --> 01:36:13,840
+我们可以将其作为工作流记忆存储，同时存储这一步的结果。
+and we can store that as workflow memory and also the outcome of this specific step.
+
+1407
+01:36:14,480 --> 01:36:19,720
+我们还会写入在最终回答中检测到的任何实体。
+We'll also write any entity that has been detected in the final answer.
+
+1408
+01:36:21,180 --> 01:36:24,721
+最后，我们会写入对话记忆，
+And finally, we'll write to conversational memory,
+
+1409
+01:36:24,721 --> 01:36:27,860
+存储最终回答和助手角色。
+the final answer and the role of the assistant.
+
+1410
+01:36:29,540 --> 01:36:33,434
+这是对智能体循环以及发生在
+This is an overview of the agent loop and the operations that happen in
+
+1411
+01:36:33,434 --> 01:36:34,820
+智能体循环内外操作的概览。
+and out of the agent loop.
+
+1412
+01:36:35,140 --> 01:36:40,250
+具体来说，我们有一个具备记忆能力的智能体，我们可以调用它，它能够执行
+Specifically, we have a memory-aware agent that we can call on and it can execute
+
+1413
+01:36:40,250 --> 01:36:43,580
+并完成具有记忆和连续性的操作。
+and perform operations with memory and continuity.
+
+1414
+01:36:44,030 --> 01:36:45,150
+我们来看一下实际运行效果。
+Let's see this in action.
+
+1415
+01:36:46,110 --> 01:36:50,217
+为了查看智能体循环的实际运行效果，我们只需调用这个函数，
+To see our agent loop in action, we're just gonna call the function,
+
+1416
+01:36:50,217 --> 01:36:52,197
+调用 call_agent 并传入查询，
+call_agent and pass in the query,
+
+1417
+01:36:52,197 --> 01:36:55,350
+“能不能帮我获取 MGPT 论文，并使用唯一的线程 ID？”
+"can you get me the paper MGPT with a unique thread ID?"
+
+1418
+01:36:56,510 --> 01:36:57,870
+我们来看输出。
+We're gonna go for the output.
+
+1419
+01:36:58,190 --> 01:37:00,351
+可以看到，它正在构建上下文，
+As you can see, it's building the context
+
+1420
+01:37:00,351 --> 01:37:02,830
+而且我们可以看到上下文窗口的利用率。
+and we can see the context window utilization.
+
+1421
+01:37:03,930 --> 01:37:07,034
+LLM 能理解被问到的问题，也就是：
+The LLM is aware of the question being asked, which is,
+
+1422
+01:37:07,034 --> 01:37:08,690
+能不能帮我获取 MGPT 论文？
+can you get me the paper MGPT?
+
+1423
+01:37:09,330 --> 01:37:15,241
+我们还能看到上下文窗口被分配给不同的记忆
+And what we can see is different allocation of the context window to specific memory
+
+1424
+01:37:15,241 --> 01:37:22,250
+类型：对话记忆、知识库记忆、工作流记忆、实体记忆等等。
+types: conversational memory, knowledge base memory, workflow memory, entity memory, and so on.
+
+1425
+01:37:23,130 --> 01:37:25,637
+对于对话记忆，我们可以识别它，
+For conversational memory, we can identify it
+
+1426
+01:37:25,637 --> 01:37:29,770
+即通过一个使用 Markdown 子标题的标识符来识别出对话记忆。
+as conversational memory by this identifier using a markdown subheading.
+
+1427
+01:37:30,610 --> 01:37:35,483
+我们使用 Markdown 标题是为了让 LLM 理解
+We're using markdown headings to enable the LLM to understand the hierarchical
+
+1428
+01:37:35,483 --> 01:37:38,610
+上下文窗口中信息的层级结构。
+structure of information within a context window.
+
+1429
+01:37:39,250 --> 01:37:40,922
+LLM 能够理解这些，
+LLMs are able to understand this
+
+1430
+01:37:40,922 --> 01:37:45,690
+因为这些信息或类似的带结构信息是训练数据的一部分。
+because this information or similar structured information is part of the training data.
+
+1431
+01:37:46,010 --> 01:37:49,527
+所以它们具有理解结构的潜在能力，
+So they have a latent ability to understand structure
+
+1432
+01:37:49,527 --> 01:37:52,810
+以及理解 Markdown 文件中层级信息的潜在能力。
+and hierarchical information in markdown files.
+
+1433
+01:37:53,720 --> 01:37:56,312
+因此在对话记忆部分，
+So within conversational memory,
+
+1434
+01:37:56,312 --> 01:38:02,480
+我们会指定智能体应该如何使用这种记忆，以及何时使用它。
+we specify how the agent should use this memory and when it should be leveraging it.
+
+1435
+01:38:02,880 --> 01:38:05,680
+这让我们的 LLM 具备记忆能力。
+This is making our LLM memory-aware.
+
+1436
+01:38:06,240 --> 01:38:11,569
+我们对上下文窗口中包含的每种记忆都这样做，从知识库记忆
+We do this for every memory included in the context window from knowledge base to
+
+1437
+01:38:11,569 --> 01:38:13,160
+到实体记忆等等。
+entity memory and so on.
+
+1438
+01:38:13,830 --> 01:38:18,768
+在这次具体运行中，由于是智能体循环的第一次迭代，
+For this specific run, because it's the first iteration of the agent loop,
+
+1439
+01:38:18,768 --> 01:38:20,999
+还没有检索到的消息，
+there are no retrieved messages,
+
+1440
+01:38:20,999 --> 01:38:26,017
+但因为我们之前已经向研究智能体导入了一些论文，
+but because we've ingested some papers into our research agent earlier on,
+
+1441
+01:38:26,017 --> 01:38:28,804
+它会有研究论文方面的知识。
+it will have knowledge of research papers
+
+1442
+01:38:28,804 --> 01:38:32,070
+这可以在它的知识库记忆中看到。
+and this can be seen in its knowledge base memory.
+
+1443
+01:38:32,990 --> 01:38:34,952
+被检索到的论文是那些
+The papers that are retrieved are ones
+
+1444
+01:38:34,952 --> 01:38:37,710
+在语义上类似于传入查询的论文。
+that are semantically similar to the query passed in.
+
+1445
+01:38:38,580 --> 01:38:41,335
+在智能体循环的第一次迭代中
+In the first iteration of the agent loop
+
+1446
+01:38:41,335 --> 01:38:46,928
+因为智能体的记忆中没有任何回答问题所需的论文
+because the agent doesn't have any of the papers required to answer the question
+
+1447
+01:38:46,928 --> 01:38:51,603
+在它的记忆中，它正在使用 Archive Search Candidates 工具，
+within its memory, it's using the tool Archive Search Candidates,
+
+1448
+01:38:51,603 --> 01:38:55,860
+并传入一个具体查询：MemGPT archive papers。
+and it's passing in a specific query, MemGPT archive papers.
+
+1449
+01:38:56,420 --> 01:38:59,180
+然后它收到了一些返回结果。
+And it's gotten a few responses back.
+
+1450
+01:39:00,000 --> 01:39:02,772
+在智能体循环的第二次迭代中，
+In the second iteration of the agent loop,
+
+1451
+01:39:02,772 --> 01:39:07,287
+工具调用的响应会返回给智能体或 LLM，
+the response from the tool call is returned to the agent or to the LLM,
+
+1452
+01:39:07,287 --> 01:39:12,040
+然后它提供最终答案，并借此退出智能体循环。
+and then it provides a final answer where it can then exit the agent loop.
+
+1453
+01:39:12,560 --> 01:39:15,800
+所以在第二次迭代中，我们看到了答案。
+So in the second iteration, we see our answer.
+
+1454
+01:39:16,920 --> 01:39:22,224
+它为我们提供了 MemGPT 论文以及与之相关的其他信息
+It provides us with the MemGPT paper and other information allocated to it
+
+1455
+01:39:22,224 --> 01:39:26,350
+并且还指定了它建议采取的后续行动。
+and also specifies the next actions it recommends to take.
+
+1456
+01:39:27,150 --> 01:39:29,900
+为了展示我们智能体的连续性，
+To showcase the continuity of our agent,
+
+1457
+01:39:29,900 --> 01:39:34,995
+我们将通过再次调用 call_agent 函数来继续对话
+we will continue the conversation by calling the call_agent function again
+
+1458
+01:39:34,995 --> 01:39:38,230
+并问它：你能保存这篇论文的内容吗？
+and ask it, can you save the content of the paper?
+
+1459
+01:39:39,070 --> 01:39:41,402
+这将展示对话记忆
+This will showcase the conversational memory
+
+1460
+01:39:41,402 --> 01:39:43,793
+因为智能体可以继续这场对话
+because the agent can carry on the conversation
+
+1461
+01:39:43,793 --> 01:39:47,620
+并且知道我们指的是哪篇论文，应该就是 MemGPT。
+and has an awareness of the paper we're referring to, which should be MemGPT.
+
+1462
+01:39:48,540 --> 01:39:50,940
+如我们所见，上下文窗口正在构建中。
+As we can see, the context window is being built.
+
+1463
+01:39:51,540 --> 01:39:57,900
+而在对话记忆中，我们可以看到之前的回答或之前的交互。
+And in conversational memory, we can see the previous answer or previous interaction that we had.
+
+1464
+01:39:58,180 --> 01:40:01,260
+我们提供的第一个问题和响应放在一起。
+The first question we provided is alongside the response.
+
+1465
+01:40:02,540 --> 01:40:05,262
+我们已经要求智能体保存这篇论文
+We've asked the agent to save the paper
+
+1466
+01:40:05,262 --> 01:40:08,580
+并且我们预期它会进行两次调用来完成这件事。
+and we expect it to conduct two calls to do this.
+
+1467
+01:40:09,340 --> 01:40:14,700
+但首先我们可以看到，工作流记忆正在被填入一些信息
+But first we can see that the workflow memory is being filled with some information
+
+1468
+01:40:14,700 --> 01:40:19,594
+来自前一步；你可以看到查询是：你能给我
+from the previous step, and you can see the query was: Can you get me the
+
+1469
+01:40:19,594 --> 01:40:24,100
+MemGPT 论文吗？所采取的步骤和结果也已被记录下来。
+paper MemGPT? And the steps taken have been recorded with the outcomes.
+
+1470
+01:40:25,300 --> 01:40:30,203
+在这一步中，智能体可以使用工具，并将使用 fetch
+In this step, the agent has access to tools and is going to use the tool fetch
+
+1471
+01:40:30,203 --> 01:40:32,338
+和 save paper to knowledge base 工具，
+and save paper to knowledge base
+
+1472
+01:40:32,338 --> 01:40:37,162
+这个工具我们之前指定过，能够从之前的
+that we specified earlier is able to get the right paper from the previous
+
+1473
+01:40:37,162 --> 01:40:40,720
+对话中获取正确的论文，因为它有对话记忆。
+conversation because it has conversational memory.
+
+1474
+01:40:41,240 --> 01:40:43,786
+在这第二次迭代中，
+And in the second iteration of this,
+
+1475
+01:40:43,786 --> 01:40:50,320
+它给出的回答表示它已为我们保存了论文，以展示进一步的连续性。
+it provides an answer where it says it saved the paper for us, to showcase further continuity.
+
+1476
+01:40:50,910 --> 01:40:54,430
+我们将要求智能体从论文中提取一些主要要点。
+We will ask the agent to pull out some main takeaways from the paper.
+
+1477
+01:40:55,270 --> 01:40:58,066
+同样，我们不必明确说明我们指的是哪篇论文
+Again, we don't have to specify the paper we're referring to
+
+1478
+01:40:58,066 --> 01:41:01,030
+因为所有信息都在对话记忆中。
+because all information is within the conversational memory.
+
+1479
+01:41:01,510 --> 01:41:04,070
+现在让我们看看智能体的响应。
+Now let's see the response from the agent.
+
+1480
+01:41:04,190 --> 01:41:07,623
+就获取论文主要要点而言，
+In terms of getting a response to the main takeaways from the paper,
+
+1481
+01:41:07,623 --> 01:41:11,852
+需要注意的一点是，智能体的响应仅在一次
+one thing to note is the response of the agent is being conducted with one iteration
+
+1482
+01:41:11,852 --> 01:41:15,530
+智能体循环迭代中完成，这意味着我们不必再去查找那篇论文
+of the agent loop, which means we don't have to go look for the paper again
+
+1483
+01:41:15,530 --> 01:41:16,450
+我们只需
+and we could just
+
+1484
+01:41:16,450 --> 01:41:18,797
+查看对话历史
+look into the conversational history
+
+1485
+01:41:18,797 --> 01:41:23,930
+并提供上下文窗口的记忆分段，从而实际给出答案。
+and offer memory segmentation of the context window to actually provide an answer.
+
+1486
+01:41:24,810 --> 01:41:27,530
+并且答案以结构化格式提供。
+And the answer is provided in a structured format.
+
+1487
+01:41:28,610 --> 01:41:31,090
+这里你可以看到，我们有一个具备记忆能力的智能体
+Here you can see we have a memory-aware agent
+
+1488
+01:41:31,090 --> 01:41:35,567
+它能够执行不同的任务，并且了解对话记忆
+that is able to perform different tasks and is aware of conversational memory
+
+1489
+01:41:35,567 --> 01:41:38,185
+并且可以利用其他记忆分区，比如
+and can utilize other memory partitions such
+
+1490
+01:41:38,185 --> 01:41:40,940
+工作流记忆，来存储之前的步骤。
+as the workflow memory to store previous steps.
+
+1491
+01:41:41,820 --> 01:41:43,713
+为了展示摘要记忆的实际效果，
+To see summary memory in action,
+
+1492
+01:41:43,713 --> 01:41:48,060
+我们将要求智能体使用其工具来总结对话。
+we're going to ask the agent to summarize the conversation using its tool.
+
+1493
+01:41:48,940 --> 01:41:52,698
+总结对话的能力既是一种确定性操作
+The ability to summarize conversation is both a deterministic
+
+1494
+01:41:52,698 --> 01:41:55,180
+也是一种由智能体触发的记忆操作。
+and an agent-triggered memory operation.
+
+1495
+01:41:56,090 --> 01:41:59,970
+这意味着智能体可以自行决定是否总结对话。
+So that means that the agent at its discretion could summarize the conversation.
+
+1496
+01:42:00,000 --> 01:42:05,600
+如果上下文窗口达到它认为需要总结的容量。
+And if the context window is getting to a capacity where it feels it needs to summarize.
+
+1497
+01:42:06,320 --> 01:42:08,657
+通过调用 Summarization Context Tool，
+By calling the Summarization Context Tool,
+
+1498
+01:42:08,657 --> 01:42:11,120
+我们应该会在摘要记忆中看到一条记录。
+we should see an entry into our summary memory.
+
+1499
+01:42:11,600 --> 01:42:13,560
+但首先我们会看到工具被使用。
+But first we will see the tool being used.
+
+1500
+01:42:13,920 --> 01:42:16,677
+然后在 call_agent 的另一次迭代中，
+Then in another iteration of the call_agent,
+
+1501
+01:42:16,677 --> 01:42:20,774
+我们能看到摘要记忆中有一个占位符。
+we'll be able to see that the summary memory has a placeholder in it
+
+1502
+01:42:20,774 --> 01:42:23,680
+而且对话记忆已经被缩减。
+and the conversational memory has been reduced.
+
+1503
+01:42:25,040 --> 01:42:27,068
+查看工具调用，我们可以看到
+Looking at the tool calls, we can see
+
+1504
+01:42:27,068 --> 01:42:31,800
+智能体通过使用 summarize and store 工具对记忆进行了摘要。
+that the agent has summarized the memory by utilizing the summarize and store tool.
+
+1505
+01:42:32,320 --> 01:42:36,259
+如我们所见，它已将 7 条消息标记为已摘要
+As we can see, it marked 7 messages as summarized
+
+1506
+01:42:36,259 --> 01:42:40,760
+并在我们的摘要记忆存储中创建了一个摘要 ID。
+and also created a summary ID in our summary memory store.
+
+1507
+01:42:41,610 --> 01:42:44,421
+在下一次迭代中，我们应该能看到
+In the next iteration, we should be able to see
+
+1508
+01:42:44,421 --> 01:42:46,788
+对话历史减少了
+that the conversational history is less
+
+1509
+01:42:46,788 --> 01:42:49,303
+并且我们的摘要记忆中有一个条目
+and we have an entry in our summary memory
+
+1510
+01:42:49,303 --> 01:42:52,410
+而目前那里还没有可用摘要。
+where right now there are no available summaries.
+
+1511
+01:42:53,250 --> 01:42:54,210
+我们来观察一下。
+Let's observe this.
+
+1512
+01:42:55,050 --> 01:42:57,998
+我们将询问智能体我们的第一个问题是什么，
+We're going to ask the agent what our first question was,
+
+1513
+01:42:57,998 --> 01:43:00,758
+这个问题应该不存在于对话记忆中
+which should not exist in the conversational memory
+
+1514
+01:43:00,758 --> 01:43:02,890
+因为我们已经对对话进行了摘要。
+as we have summarized the conversation.
+
+1515
+01:43:03,730 --> 01:43:08,870
+如我们所见，对话记忆的已检索消息只包含一条
+As we can see, the retrieved messages of the conversational memory only contain a
+
+1516
+01:43:08,870 --> 01:43:12,573
+来自助手的回复，说它已存储了一份摘要，
+response from the assistant that says it stored a summary,
+
+1517
+01:43:12,573 --> 01:43:15,370
+但之前的交互已不存在。
+but the previous interactions do not exist.
+
+1518
+01:43:16,570 --> 01:43:20,177
+在上下文窗口的摘要记忆片段中，
+In the summary memory segment of the context window,
+
+1519
+01:43:20,177 --> 01:43:23,783
+我们可以看到有一个摘要 ID 的占位符
+we can see that there is a placeholder for a summary ID
+
+1520
+01:43:23,783 --> 01:43:27,062
+以及关于摘要内容的描述，
+and a description of what the summary contains,
+
+1521
+01:43:27,062 --> 01:43:31,160
+那是一篇存储在语义记忆中的 MemGPT 论文。
+which was a MemGPT paper that was stored in semantic memory.
+
+1522
+01:43:31,200 --> 01:43:32,880
+以及被摘要的关键见解。
+And the key insights summarized.
+
+1523
+01:43:33,680 --> 01:43:36,160
+另一点要指出的是实体记忆。
+Another thing to point out is entity memory.
+
+1524
+01:43:36,200 --> 01:43:38,274
+这里实际运行的是实体记忆，
+Here in action is entity memory,
+
+1525
+01:43:38,274 --> 01:43:43,880
+我们正尝试捕获实体信息，例如人物、地点和组织。
+we're trying to capture entity information such as people, places, and organization.
+
+1526
+01:43:44,320 --> 01:43:46,513
+你可以看到在我们的交互中，
+And you can see for our interaction,
+
+1527
+01:43:46,513 --> 01:43:49,950
+我们已在多个不同实例中捕获到这些信息，
+we have captured those in several different instances,
+
+1528
+01:43:49,950 --> 01:43:53,240
+例如论文作者和其他信息。
+such as the author of the paper and other information.
+
+1529
+01:43:54,000 --> 01:43:57,827
+但请记住，我们问过智能体我们的第一个问题是什么，
+But remember, we asked the agent what our first question was,
+
+1530
+01:43:57,827 --> 01:44:00,979
+但为了回答我们的第一个问题是什么，
+but in order to answer what our first question was,
+
+1531
+01:44:00,979 --> 01:44:03,080
+它必须展开一份摘要。
+it would have to unpack a summary.
+
+1532
+01:44:03,600 --> 01:44:08,370
+我们可以看到它在智能体循环的迭代过程中这样做，
+And we can see it does this within the iteration of the agent loop,
+
+1533
+01:44:08,370 --> 01:44:12,800
+它展开摘要记忆中该 ID 对应的摘要。
+it expands a summary of the ID that it has in the summary memory.
+
+1534
+01:44:13,620 --> 01:44:20,036
+现在它掌握了实际摘要或未压缩形式的信息，
+And now it has information as to the actual summary or the uncompressed form of the
+
+1535
+01:44:20,036 --> 01:44:22,300
+也就是所生成摘要的未压缩形式。
+summary that was generated.
+
+1536
+01:44:23,260 --> 01:44:28,088
+最后，它就能回答我们的第一个问题是什么，
+And finally, it can answer the question that our first question was,
+
+1537
+01:44:28,088 --> 01:44:31,900
+“你能帮我获取 MemGPT 论文及其发送时间吗？”
+can you get me the paper MemGPT and the time it was sent?
+
+1538
+01:44:32,820 --> 01:44:38,194
+你已经看到摘要记忆的实际运作、上下文卸载和上下文检索，
+You've seen summary memory in action, context offloading and context retrieval,
+
+1539
+01:44:38,194 --> 01:44:43,100
+所有这些都在智能体循环中用记忆工程技术实现。
+all implemented with memory engineering techniques within an agent loop.
+
+1540
+01:44:43,340 --> 01:44:49,100
+拥有具备记忆能力的智能体后，你已完成了第 5 课的学习。
+And having a memory-aware agent, you've come to an end of lesson 5.
+
+1541
+01:44:49,540 --> 01:44:53,980
+在本课中，我们构建了一个具备记忆能力的智能体。做得好。
+In this lesson, we built a memory-aware agent. Well done.
+
+1542
+01:44:54,740 --> 01:44:58,475
+在本课程中，你学会了如何设计记忆系统
+In this course, you've learned how to engineer memory systems
+
+1543
+01:44:58,475 --> 01:45:02,640
+这些系统将无状态 LLM 转变为持久化的具备记忆能力的智能体。
+that transform stateless LLMs into persistent Memory-Aware Agents.
+
+1544
+01:45:03,160 --> 01:45:06,743
+你首先理解了智能体为何在缺乏记忆时会失败，
+You started by understanding why agents fail without memory,
+
+1545
+01:45:06,743 --> 01:45:11,360
+然后构建了一个记忆管理器，为不同类型的记忆提供持久化存储。
+then built a memory manager with persistent stores for different memory types.
+
+1546
+01:45:12,200 --> 01:45:15,035
+你通过语义工具记忆扩展了工具使用能力，
+You scaled tool use with semantic tool memory,
+
+1547
+01:45:15,035 --> 01:45:18,264
+构建了提取与整合流水线
+built extractions and consolidation pipelines
+
+1548
+01:45:18,264 --> 01:45:21,729
+将原始对话转化为持久知识
+that turn raw conversations into durable knowledge
+
+1549
+01:45:21,729 --> 01:45:24,249
+并搭建了自更新智能体循环
+and wired up self-updating agent loops
+
+1550
+01:45:24,249 --> 01:45:27,950
+让你的智能体能够自主优化它们所知道的内容。
+that let your agents refine what it knows autonomously.
+
+1551
+01:45:29,110 --> 01:45:34,702
+最后，你将这一切整合成一个完全有状态、具备记忆能力的智能体，
+Finally, you brought it all together into a fully stateful, memory-aware agent,
+
+1552
+01:45:34,702 --> 01:45:37,540
+它能在启动时加载过往上下文，
+one that loads prior context at startup,
+
+1553
+01:45:37,540 --> 01:45:41,630
+对其推理设置检查点，并跨会话持久化。
+checkpoints its reasoning and persists across sessions.
+
+1554
+01:45:42,410 --> 01:45:48,042
+你在这里学到的模式——记忆建模、语义检索、提取、
+The patterns you've learned here, memory modeling, semantic retrieval, extraction,
+
+1555
+01:45:48,042 --> 01:45:52,980
+整合和写回，是生产级智能体的构建模块
+consolidation and write-back are the building blocks for production agents
+
+1556
+01:45:52,980 --> 01:45:58,381
+这些智能体会随着时间真正改进。你在本课程中构建的内容是
+that actually improve over time. What you've built in this course is a foundation for
+
+1557
+01:45:58,381 --> 01:45:59,770
+记忆工程的基础。
+memory engineering.
+
+1558
+01:46:00,650 --> 01:46:03,971
+运用这些模式，将它们适配到你自己的用例中，
+Take these patterns, adapt them to your own use case,
+
+1559
+01:46:03,971 --> 01:46:08,500
+并构建不只是做出回应的智能体，它们会记住并不断改进。
+and build agents that don't just respond, they remember and get better.
+
+1560
+01:46:09,220 --> 01:46:12,620
+我很期待看到你接下来会自己构建什么。
+I am looking forward to seeing what you will build on your own.

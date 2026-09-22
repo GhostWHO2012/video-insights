@@ -1,5 +1,26 @@
 [
   {
+    "title": "用生成式 UI 构建交互式智能体",
+    "bilibili_title": "用生成式 UI 构建交互式智能体｜Atai Barkai",
+    "original_title": "Build Interactive Agents with Generative UI",
+    "bilibili_url": "https://www.bilibili.com/video/BV1R1es67E4r/",
+    "youtube_url": "https://www.youtube.com/watch?v=J26M-cpFG-M",
+    "published_at": "2026-09-22",
+    "up": "通用人工智障",
+    "duration": "1:43",
+    "speakers": [
+      "Atai Barkai"
+    ],
+    "folder_title": "用生成式 UI 构建交互式智能体",
+    "path": "videos/undated-057_build-interactive-agents-with-generative-ui/",
+    "slug": "undated-057_build-interactive-agents-with-generative-ui",
+    "cover": "cover.jpeg",
+    "outline_count": 0,
+    "subtitle_count": 1,
+    "outline_files": [],
+    "subtitle_file": "Build Interactive Agents with Generative UI.bilingual.zh-top.srt"
+  },
+  {
     "title": "为 AI 智能体和应用构建语音能力",
     "bilibili_title": "为 AI 智能体和应用构建语音能力｜Ashwin Sharma",
     "original_title": "Voice for AI Agents and Applications",

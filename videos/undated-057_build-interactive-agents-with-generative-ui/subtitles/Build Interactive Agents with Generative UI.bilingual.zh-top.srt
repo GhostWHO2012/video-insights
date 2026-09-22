@@ -1,0 +1,134 @@
+1
+00:00:00,090 --> 00:00:03,673
+这门短课程将教你如何构建智能体，让它们输出
+This short course will teach you how to build agents that output,
+
+2
+00:00:03,673 --> 00:00:08,450
+不只是大段文字，而是自定义用户界面，把结果以界面形式呈现给用户。
+not just walls of text, but custom user interfaces to show the results back to the user.
+
+3
+00:00:08,890 --> 00:00:12,938
+我很高兴欢迎你参加这门关于构建交互式智能体的课程，
+I'm excited to welcome you to this course on building interactive agents with
+
+4
+00:00:12,938 --> 00:00:17,048
+使用生成式 UI，该课程与 CopilotKit 合作打造，讲师是 Atai Barkai，
+generative UI built in partnership with CopilotKit and taught by Atai Barkai,
+
+5
+00:00:17,048 --> 00:00:18,730
+他是 CopilotKit 的联合创始人。
+who's co-founder of CopilotKit.
+
+6
+00:00:18,930 --> 00:00:22,810
+你可能已经见过会推理、调用工具并返回结果的 AI 智能体。
+You've probably seen AI agents that reason, call tools and then return results.
+
+7
+00:00:23,280 --> 00:00:26,200
+但这些回复大多只是纯文本。
+But most of those responses are just plain text.
+
+8
+00:00:26,320 --> 00:00:29,920
+用户发送一条消息，收到的还是一条消息，可能是一条很长的消息。
+The user sends a message, they get a message, maybe a long message back.
+
+9
+00:00:30,640 --> 00:00:32,994
+在本课程中，你将学习构建智能体
+In this course, you learn to build agents
+
+10
+00:00:32,994 --> 00:00:36,040
+让它们生成自定义 UI，也就是自定义用户界面。
+that generate custom UIs or custom user interfaces.
+
+11
+00:00:36,520 --> 00:00:40,609
+这样你的智能体就能返回表单、图表、按钮，
+So this gives your agents the ability to return a form, a chart, a button,
+
+12
+00:00:40,609 --> 00:00:44,560
+甚至交互式组件，而不仅仅是纯文本回复。
+even interactive components instead of just a plain text response.
+
+13
+00:00:45,420 --> 00:00:49,115
+谢谢 Andrew。CopilotKit 之所以存在，是因为我们坚信
+Thank you, Andrew. CopilotKit exists because we firmly believe
+
+14
+00:00:49,115 --> 00:00:50,620
+所有用户界面都正在被 AI 重塑。
+that all UI is becoming AI.
+
+15
+00:00:50,940 --> 00:00:55,340
+人与技术之间的每一次交互，都越来越多地由智能体居中协调。
+Every interaction between people and technology is increasingly mediated by agents.
+
+16
+00:00:56,100 --> 00:01:00,831
+然而，在我们录制这门课程时，大多数智能体仍用纯文本与用户交流，
+And yet, as we film this course, most agents still talk to users in plain text,
+
+17
+00:01:00,831 --> 00:01:05,340
+这听起来很像个人计算机的命令行 MS-DOS 时代。
+which sounds a lot like the command line MS-DOS era of personal computing.
+
+18
+00:01:06,300 --> 00:01:09,740
+对早期采用者来说很强大，但还没有为大规模普及做好准备。
+Powerful for early adopters, but not yet built for mass adoption.
+
+19
+00:01:10,540 --> 00:01:14,228
+Windows 和 Mac 时代改变了这一点，带来了功能齐全的应用程序
+The Windows and Mac era changed that and brought full-featured applications
+
+20
+00:01:14,228 --> 00:01:15,380
+任何人都能使用。
+that anybody could use.
+
+21
+00:01:16,340 --> 00:01:17,933
+AI 现在正在经历同样的转变
+AI is going through the same transition now
+
+22
+00:01:17,933 --> 00:01:20,721
+而构建前端层的团队，正是有机会定义它
+and the teams building the front end layer are the ones who get to define what
+
+23
+00:01:20,721 --> 00:01:21,340
+最终是什么样子的人。
+that looks like.
+
+24
+00:01:21,700 --> 00:01:27,064
+在本课程中，你开始弥合这一差距，方法是将智能体直接接入 React
+You start bridging that gap in this course by wiring an agent directly into a React
+
+25
+00:01:27,064 --> 00:01:29,510
+前端，使用 CopilotKit 和 AG-UI。
+front end using CopilotKit and AG-UI.
+
+26
+00:01:30,330 --> 00:01:33,410
+到课程结束时，你将拥有一个可用于生产环境的全栈智能体应用。
+By the end, you have a production-ready, full-stack agent app.
+
+27
+00:01:33,690 --> 00:01:37,450
+立即加入这门课程，为你的智能体打造一个用户会喜欢的界面吧。
+Jump into this course to give your agent an interface your users will love.

@@ -1,0 +1,28 @@
+{
+  "title": "给所有人的 AI 提示课",
+  "bilibili_title": "给所有人的 AI 提示课｜吴恩达",
+  "original_title": "AI Prompting for Everyone",
+  "bilibili_url": "https://www.bilibili.com/video/BV1RNei65EGt/",
+  "youtube_url": "https://www.deeplearning.ai/courses/ai-prompting-for-everyone",
+  "published_at": "2026-09-22",
+  "up": "通用人工智障",
+  "duration": "2:26:29",
+  "speakers": [
+    "Andrew Ng"
+  ],
+  "folder_title": "给所有人的 AI 提示课",
+  "path": "videos/undated-058_ai-prompting-for-everyone/",
+  "slug": "undated-058_ai-prompting-for-everyone",
+  "cover": "cover.jpeg",
+  "outline_count": 6,
+  "subtitle_count": 1,
+  "outline_files": [
+    "给所有人的 AI 提示词课_01.png",
+    "给所有人的 AI 提示词课_02.png",
+    "给所有人的 AI 提示词课_03.png",
+    "给所有人的 AI 提示词课_04.png",
+    "给所有人的 AI 提示词课_05.png",
+    "给所有人的 AI 提示词课_06.png"
+  ],
+  "subtitle_file": "AI Prompting for Everyone.bilingual.zh-top.srt"
+}

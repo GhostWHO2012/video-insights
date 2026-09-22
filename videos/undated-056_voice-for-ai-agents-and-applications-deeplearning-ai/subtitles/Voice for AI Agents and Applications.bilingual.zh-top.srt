@@ -1,0 +1,5519 @@
+1
+00:00:00,180 --> 00:00:02,913
+欢迎来到《面向 AI 智能体与应用的语音能力》，
+Welcome to Voice for AI Agents and Applications,
+
+2
+00:00:02,913 --> 00:00:06,780
+与 Vocal Bridge（AI Fund 旗下投资组合公司）合作打造，
+built in partnership with Vocal Bridge, an AI Fund portfolio company
+
+3
+00:00:06,780 --> 00:00:08,580
+由 CEO Ashwin Sharma 讲授。
+and taught by CEO Ashwin Sharma.
+
+4
+00:00:09,140 --> 00:00:13,660
+在本课程中，你将学习如何构建支持语音交互的智能体界面。
+In this course, you learn how to build agents with voice interactive user interfaces.
+
+5
+00:00:14,380 --> 00:00:19,630
+你将把语音添加到现有智能体，也适用于那些把语音
+You add voice to your existing agents as well as to agents that use voice
+
+6
+00:00:19,630 --> 00:00:21,380
+作为函数调用的智能体。
+as a function call, too.
+
+7
+00:00:22,320 --> 00:00:24,664
+你还会为智能体应用语音评估，
+You also apply voice evals to your agents,
+
+8
+00:00:24,664 --> 00:00:28,280
+获得关于质量和准确性的详细反馈，以提升它们。
+with detailed feedback on quality and accuracy to enhance them.
+
+9
+00:00:29,240 --> 00:00:32,236
+地球上绝大多数人觉得说话
+The vast majority of people on this planet find speaking
+
+10
+00:00:32,236 --> 00:00:35,040
+和聆听比写作和阅读容易得多。
+and listening much easier than writing and reading.
+
+11
+00:00:35,800 --> 00:00:38,158
+随着语音 UI 越来越可靠，
+And as voice UIs become more reliable,
+
+12
+00:00:38,158 --> 00:00:41,400
+它将为许多人带来许多新的应用。
+it'll open up many new applications for many people.
+
+13
+00:00:42,240 --> 00:00:44,637
+例如，在 The Batch 新闻通讯中，
+For example, in The Batch newsletter,
+
+14
+00:00:44,637 --> 00:00:50,480
+我写过为 7 岁的女儿构建一个猫咪主题的简单数学测验应用
+I wrote about building a simple cat-themed math quiz application for my 7-year-old daughter
+
+15
+00:00:51,200 --> 00:00:55,751
+她很喜欢用键盘玩这个游戏，但使用 Vocal Bridge 后，
+She's enjoyed using the keyboard to play this game, but using Vocal Bridge,
+
+16
+00:00:55,751 --> 00:00:58,280
+我很快就能添加语音 UI。
+I was able to add a voice UI pretty quickly.
+
+17
+00:00:58,760 --> 00:01:03,320
+所以现在我可以友好地口头考她，她也可以口头回答。
+So I can now quiz her verbally in a friendly way and she can respond verbally as well.
+
+18
+00:01:03,660 --> 00:01:06,100
+这确实改变了体验感受。
+And this really changes how the experience feels.
+
+19
+00:01:07,140 --> 00:01:11,056
+语音应用历来面临延迟
+Voice applications have historically faced a tradeoff between latency
+
+20
+00:01:11,056 --> 00:01:12,100
+与智能之间的权衡。
+and intelligence.
+
+21
+00:01:12,700 --> 00:01:14,847
+一种选择是使用原生语音输入、
+One option is to use native voice-in,
+
+22
+00:01:14,847 --> 00:01:19,500
+语音输出或语音到语音的实时模型，它们速度快但不够可靠
+voice-out or voice-to-voice real-time models and they're fast but less reliable
+
+23
+00:01:19,500 --> 00:01:20,860
+也更难控制。
+and harder to control.
+
+24
+00:01:21,580 --> 00:01:25,800
+另一种方法是使用流水线：输入音频，使用语音转文字，
+The other approach is to use a pipeline that inputs audio, uses speech-to-text,
+
+25
+00:01:25,800 --> 00:01:28,212
+然后让 LLM 执行智能体工作流，
+then has an LLM execute an agentic workflow,
+
+26
+00:01:28,212 --> 00:01:31,360
+最后再通过文字转语音读出回复。
+and then finally text-to-speech to read out the response.
+
+27
+00:01:31,760 --> 00:01:34,929
+这更可靠、更可控，但会增加延迟，
+That's more reliable and more controllable, but adds latency,
+
+28
+00:01:34,929 --> 00:01:37,320
+这对实时对话来说是个问题。
+which is a problem for real-time conversations.
+
+29
+00:01:38,160 --> 00:01:42,680
+在本课程中，你将学习如何构建既快速又可靠的语音应用。
+In this course, you learn how to build voice applications that are both fast and reliable.
+
+30
+00:01:43,680 --> 00:01:45,794
+你将学习使用的 Vocal Bridge，
+Vocal Bridge, which you learn to use,
+
+31
+00:01:45,794 --> 00:01:50,021
+依赖一种自定义架构：一个用于实时对话的快速前台智能体
+relies on a custom architecture with a fast foreground agent for real-time
+
+32
+00:01:50,021 --> 00:01:54,044
+以及一个用于推理、工作流、
+conversation as well as a background agent for reasoning, workflows,
+
+33
+00:01:54,044 --> 00:01:55,340
+防护栏和工具的后台智能体。
+guardrails and tools.
+
+34
+00:01:55,980 --> 00:02:00,362
+这让你的语音智能体更好地结合了低延迟
+This gives your voice agent a better combination of both low latency
+
+35
+00:02:00,362 --> 00:02:01,900
+和高智能。
+and high intelligence.
+
+36
+00:02:02,940 --> 00:02:03,620
+谢谢，Andrew。
+Thanks, Andrew.
+
+37
+00:02:04,140 --> 00:02:08,227
+本课程教授三种集成模式，适配你当前的情况。
+This course teaches three integration patterns that meet you where you are.
+
+38
+00:02:08,227 --> 00:02:11,100
+第一种模式是嵌入应用中的语音。
+The first pattern is voice embedded in applications.
+
+39
+00:02:11,730 --> 00:02:15,759
+想象一个游戏或生产力工具，用户可以使用语音命令，
+Think of a game or a productivity tool where users can use voice commands,
+
+40
+00:02:15,759 --> 00:02:18,930
+但也可以直接点击并与 UI 交互。
+but they can also click and interact with the UI directly.
+
+41
+00:02:19,570 --> 00:02:22,728
+语音智能体需要在用户说话时触发 UI 变化，
+The voice agent needs to trigger UI changes when the user speaks
+
+42
+00:02:22,728 --> 00:02:25,410
+也需要知道用户何时点击了某个内容。
+and it needs to know when the user clicks on something.
+
+43
+00:02:26,090 --> 00:02:30,330
+这种双向感知正是让体验显得自然的原因。
+That bidirectional awareness is what makes the experience feel natural.
+
+44
+00:02:31,450 --> 00:02:34,729
+第二种模式是为现有智能体添加语音，
+The second pattern is voice for existing agents,
+
+45
+00:02:34,729 --> 00:02:39,960
+你已经构建了 Claude、GPT 或 LangChain 驱动的智能体，并带有自定义逻辑。
+you've already built a Claude, GPT, or LangChain-powered agent with custom logic.
+
+46
+00:02:40,400 --> 00:02:41,640
+你不想重写它。
+You don't want to rewrite it.
+
+47
+00:02:42,200 --> 00:02:45,000
+Vocal Bridge 作为一个轻量层，位于你的智能体前面。
+Vocal Bridge sits as a thin layer in front of your agent.
+
+48
+00:02:45,520 --> 00:02:47,571
+它负责语音到意图的转换，
+It handles voice-to-intent conversion,
+
+49
+00:02:47,571 --> 00:02:51,549
+并判断何时把问题委派给智能体，何时自行处理
+by understanding when to delegate a question to your agent versus handling
+
+50
+00:02:51,549 --> 00:02:53,600
+寒暄。
+conversational pleasantries itself.
+
+51
+00:02:54,560 --> 00:02:59,010
+第三种模式是将语音作为你的 LLM 可以调用的工具。
+The third pattern is voice as a tool your LLM can call.
+
+52
+00:02:59,490 --> 00:03:02,655
+想象一个负责协调面试的招聘智能体，
+Imagine a recruiting agent coordinating interviews,
+
+53
+00:03:02,655 --> 00:03:06,714
+候选人发来可面试时间，智能体用文字回复确认
+candidate texts availability and the agent responds in text to confirm
+
+54
+00:03:06,714 --> 00:03:09,879
+然后还会打电话并协调面试日期
+and then also calls and coordinates the interview date
+
+55
+00:03:09,879 --> 00:03:14,970
+选择最适合候选人的日期；或者一个通过聊天与你协作的头脑风暴智能体。
+that works best for the candidate or a brainstorming agent working with you via chat.
+
+56
+00:03:15,890 --> 00:03:20,210
+它会说“这个用语音聊会更快”，然后打开一个实时语音会话。
+It says, "this would be faster to talk through" and opens a live voice session.
+
+57
+00:03:20,620 --> 00:03:22,940
+这样，智能体就选择了合适的交互方式。
+So the agent chooses the right modality.
+
+58
+00:03:23,020 --> 00:03:25,745
+稍后我们还将邀请 Scott Johnston，
+In a moment we will also have Scott Johnston,
+
+59
+00:03:25,745 --> 00:03:30,309
+Docker 前 CEO、Vocal Bridge 董事会成员，向我们分享近期
+former CEO of Docker and board member of Vocal Bridge to share with us all the recent
+
+60
+00:03:30,309 --> 00:03:34,055
+AI 语音和语音智能体领域的最新进展。
+developments in bringing AI voice and the landscape of voice agents
+
+61
+00:03:34,055 --> 00:03:38,551
+以及在将应用推向生产的过程中，许多人共同参与了这门课程的创作。
+And applications to production, many people have worked to create this course.
+
+62
+00:03:38,551 --> 00:03:41,140
+我要感谢 Eli Chen 和 Rakesh Uttaker。
+I'd like to thank Eli Chen and Rakesh Uttaker.
+
+63
+00:03:41,260 --> 00:03:41,980
+来自 AI Fund。
+From AI Fund.
+
+64
+00:03:42,350 --> 00:03:47,070
+还有来自 Vocal Bridge 的 Aditi Da 和 Jitesh Gupta，以及来自 DeepLearningAI 的
+And Aditi Da and Jitesh Gupta from Vocal Bridge from DeepLearningAI,
+
+65
+00:03:47,070 --> 00:03:51,790
+Brendan Brown 和 Ismail Gagari 也为本课程做出了贡献。
+Brendan Brown and Ismail Gagari also contributed to this course.
+
+66
+00:03:52,230 --> 00:03:56,098
+在第一课中，你将详细了解传统语音智能体技术栈，
+In the first lesson, you will learn about the traditional voice agent stack in
+
+67
+00:03:56,098 --> 00:03:59,550
+这样你就能理解 Vocal Bridge 替你抽象掉了哪些复杂性。
+detail so you understand what's been abstracted away by Vocal Bridge.
+
+68
+00:04:00,190 --> 00:04:03,990
+然后你会看到我们讨论过的三种集成模式的现场演示。
+Then you will see live demos of all three integration patterns we discussed.
+
+69
+00:04:04,800 --> 00:04:08,097
+到本课结束时，你会知道哪种模式适合你的用例，
+By the end of the lesson, you will know which pattern fits your use case
+
+70
+00:04:08,097 --> 00:04:10,200
+并能在接下来的课程中开始动手构建它们。
+and start building them in the next lessons.
+
+71
+00:04:10,760 --> 00:04:12,320
+这听起来很棒。
+This sounds great.
+
+72
+00:04:12,920 --> 00:04:14,812
+让我们开始本节课，
+Let's get started in this lesson,
+
+73
+00:04:14,812 --> 00:04:19,000
+你将学习传统语音技术栈及其全部复杂性。
+you will learn about the traditional voice stack with all its complexity.
+
+74
+00:04:19,760 --> 00:04:21,912
+然后你将走完三个现场演示，
+Then you will walk through three live demos
+
+75
+00:04:21,912 --> 00:04:25,440
+每个演示展示一种构建语音智能体的不同模式。
+that each demonstrate a different pattern for building voice agents.
+
+76
+00:04:25,850 --> 00:04:30,770
+让我们开始吧。第一课将带你了解语音 AI 领域的全貌。
+Let's dive in. This first lesson will walk you through the voice AI landscape.
+
+77
+00:04:31,250 --> 00:04:33,090
+本节课没有 notebook。
+There is no notebook for this lesson.
+
+78
+00:04:34,050 --> 00:04:39,210
+我希望你学完后对三件事形成清晰的认知：1.
+What I want you to walk away with is a clear mental model of three things: 1.
+
+79
+00:04:39,890 --> 00:04:42,170
+一个生产级语音智能体实际涉及什么。
+What a production voice agent actually involves.
+
+80
+00:04:42,810 --> 00:04:45,795
+2. 语音在你技术栈中的位置。以及 3，
+2. Where voice belongs in your stack. And 3,
+
+81
+00:04:45,795 --> 00:04:49,610
+我们从第 2 课开始将动手构建什么。
+what we are going to build hands-on starting in Lesson 2.
+
+82
+00:04:50,330 --> 00:04:54,810
+在深入架构之前，我想花一点时间谈谈为什么选择语音。
+Before we get into the architecture, I want to spend a minute on why voice.
+
+83
+00:04:55,050 --> 00:04:59,043
+为什么这很重要？有四个理由，让我们值得把它视为
+Why does this matter? There are four reasons it's worth treating
+
+84
+00:04:59,043 --> 00:05:01,410
+AI 时代的一等公民模态。
+as a first class modality in the AI era.
+
+85
+00:05:01,730 --> 00:05:03,050
+第一个原因最显而易见。
+First one's the obvious one.
+
+86
+00:05:03,770 --> 00:05:06,070
+语音是人类拥有的最自然交互界面。
+Voice is the most natural interface humans have.
+
+87
+00:05:06,070 --> 00:05:08,650
+我们人类已经说话了几十万年。
+We've been talking for hundreds of thousands of years.
+
+88
+00:05:09,050 --> 00:05:11,030
+打字只有几十年历史。
+Typing's just a few decades old.
+
+89
+00:05:11,030 --> 00:05:14,330
+所以语音是表达意图摩擦最低的方式。
+So voice is the lowest friction way to express intent.
+
+90
+00:05:14,610 --> 00:05:16,730
+无需菜单，无需表单，无需滚动。
+No menus, no forms, no scrolling.
+
+91
+00:05:17,370 --> 00:05:20,739
+第二个是副语言，这一点被低估了。
+Second is paralanguage, and this one is underrated.
+
+92
+00:05:20,739 --> 00:05:25,410
+一段语音话语携带的信息量远超同样的文本句子。
+A voice utterance carries way more signal than the same sentence as text.
+
+93
+00:05:25,650 --> 00:05:30,343
+它可能是语气、语速、犹豫、紧迫感、韵律、情绪，
+It could be tone, pace, hesitation, urgency, prosody, emotion,
+
+94
+00:05:30,343 --> 00:05:35,210
+那些能“听见”你的语意而不仅仅是你说了什么的智能体。
+agents that can hear how you mean something, not just what you said.
+
+95
+00:05:35,410 --> 00:05:39,441
+它们的行为与只读取文本的智能体截然不同。
+They behave really differently from agents that just read your text.
+
+96
+00:05:39,441 --> 00:05:40,900
+第三个是多模态。
+Third is multimodality.
+
+97
+00:05:41,420 --> 00:05:44,913
+语音不会取代你的 UI。它与 UI 配合使用。你说出意图。
+Voice doesn't replace your UI. It pairs with it. You speak intent.
+
+98
+00:05:44,913 --> 00:05:46,500
+你看到结构化的信息返回。
+You see structured info back.
+
+99
+00:05:46,700 --> 00:05:51,660
+最好的语音智能体会同时使用语音和 GUI。
+The best voice agents are the ones that use voice and the GUI together.
+
+100
+00:05:52,380 --> 00:05:57,140
+每种模态做自己最擅长的事。最后，第四个理由是无障碍性。
+Each modality doing what it's best at. Finally, the fourth one is accessibility.
+
+101
+00:05:57,740 --> 00:06:02,599
+语音能覆盖无法打字或无法阅读屏幕的用户，
+Voice reaches users who cannot type or they can't read on the screen,
+
+102
+00:06:02,599 --> 00:06:04,730
+无法导航复杂 GUI 的用户。
+can't navigate a complex GUI.
+
+103
+00:06:05,010 --> 00:06:10,050
+它通常是你能够交付的最无障碍的界面，这点很重要。
+It's often the most accessible interface you can ship, and that matters.
+
+104
+00:06:10,530 --> 00:06:13,933
+有了实时 AI，语音终于能够作为界面来工作，
+With real-time AI, voice finally works as an interface
+
+105
+00:06:13,933 --> 00:06:16,050
+并与你现有的 UI 搭配使用。
+and paired with your existing UI.
+
+106
+00:06:16,330 --> 00:06:20,850
+这会让产品体验发生阶跃式变化。那么让我来具体说明。
+It's a step change in how products feel. So let me make that concrete.
+
+107
+00:06:21,660 --> 00:06:26,940
+我们这里要用的一个例子是通过经典 GUI 预订航班。
+One example that we are going to use here is booking a flight with a classic GUI.
+
+108
+00:06:27,340 --> 00:06:32,236
+你会经历四个阶段。打开应用、搜索、选择日期，
+You go through four phases. You open the app, you search, you pick dates,
+
+109
+00:06:32,236 --> 00:06:35,500
+应用筛选条件，然后从选项中做出选择。
+apply filters and then choose from the options.
+
+110
+00:06:35,580 --> 00:06:40,196
+最后付款并确认。每个阶段都有自己的子任务。
+And then finally pay and confirm. Every phase has its own subtask.
+
+111
+00:06:40,196 --> 00:06:42,760
+总耗时很容易超过两分钟。
+Total time easily over two minutes.
+
+112
+00:06:42,880 --> 00:06:44,360
+而且你全程都在点击屏幕。
+And you're tapping the entire time.
+
+113
+00:06:44,680 --> 00:06:48,148
+现在想象用语音完成同一个任务，只需一句话，
+Now imagine the same task on voice with a single utterance,
+
+114
+00:06:48,148 --> 00:06:51,120
+帮我订一张下周五早上从 SF 到 NYC 的机票。
+book me a flight from SF to NYC next Friday morning.
+
+115
+00:06:51,320 --> 00:06:54,240
+智能体负责处理界面，你只需留在对话中。
+The agent does the screens. You stay in the conversation.
+
+116
+00:06:54,880 --> 00:06:56,120
+你可以直接口头确认。
+You can confirm out loud.
+
+117
+00:06:56,720 --> 00:07:01,120
+不到 10 秒就能完成。这里的重点不是语音会取代 GUI。
+You'll be done in under 10 seconds. Now, the point isn't that voice replaces GUIs.
+
+118
+00:07:01,440 --> 00:07:05,400
+重点是语音压缩了从意图到结果之间的摩擦。
+The point is voice collapses the friction between intent and outcome.
+
+119
+00:07:05,760 --> 00:07:07,643
+你会一再看到这种模式，
+And you will see this pattern over
+
+120
+00:07:07,643 --> 00:07:10,400
+在本课剩余部分的每个演示中一再出现。
+and over in every demo for the rest of this lesson.
+
+121
+00:07:10,840 --> 00:07:14,240
+那么，语音目前真正被用在哪里？下一步又会走向何方？
+So where is voice actually being used today and where is it going next?
+
+122
+00:07:14,560 --> 00:07:19,200
+整个画面是一张大图，我称之为语音智能体宇宙。
+This whole scene is one big picture, what I call the voice agent universe.
+
+123
+00:07:19,480 --> 00:07:22,560
+我们将一个气泡一个气泡地把它填满。
+And we are going to fill it one bubble at a time.
+
+124
+00:07:22,800 --> 00:07:26,775
+如果你在过去几年里听说过语音 AI，
+So if you've heard about voice AI over the last couple of years,
+
+125
+00:07:26,775 --> 00:07:32,278
+相关背景几乎一定是联络中心：支持、IVR、智能体辅助、通话质检，
+the context was almost certainly the contact center: support, IVR, agent assist, call QA,
+
+126
+00:07:32,278 --> 00:07:34,800
+也就是右侧那个橙色集群。
+that's the orange cluster on the right.
+
+127
+00:07:35,160 --> 00:07:39,188
+经济效益清晰，工作流受限，买家已经存在，
+Economics are clear, workflows are constrained, the buyers exist,
+
+128
+00:07:39,188 --> 00:07:41,520
+这就是行业从那里起步的原因。
+that's why the industry started there.
+
+129
+00:07:41,680 --> 00:07:44,619
+但那只是语音真正归属场景中的一小块。
+But that's a tiny slice of where voice actually belongs.
+
+130
+00:07:44,619 --> 00:07:47,120
+更大的图景是这个宇宙的其余部分。
+The bigger picture is the rest of this universe.
+
+131
+00:07:47,680 --> 00:07:51,880
+语音作为每个行业、每种软件中的一项功能。
+Voice as a feature of every kind of software across every industry.
+
+132
+00:07:52,290 --> 00:07:54,894
+金融科技中，语音作为你账户的界面，
+Fintech, voice as the interface to your account,
+
+133
+00:07:54,894 --> 00:07:58,070
+作为你投资组合的界面；也可能在车内，原因显而易见——
+to your portfolio, or it could be in-car for the obvious reason
+
+134
+00:07:58,070 --> 00:08:00,610
+因为你不能把手从方向盘上移开。
+because you can't take your hands off the wheel.
+
+135
+00:08:00,890 --> 00:08:05,798
+以医疗健康为例，可以有临床听写等用例，
+Take healthcare for example, you can have use cases like clinical dictation,
+
+136
+00:08:05,798 --> 00:08:08,290
+患者登记、签到，凡是你说得出的。
+patient intake, check-ins, you name it.
+
+137
+00:08:08,410 --> 00:08:12,420
+也可能是开发工具、可以真正对话的编码助手，
+It could be dev tools, coding assistants you can actually talk to,
+
+138
+00:08:12,420 --> 00:08:16,430
+当然还有面向无法轻松使用 GUI 用户的辅助功能。
+and obviously accessibility for users who can't easily use a GUI.
+
+139
+00:08:16,750 --> 00:08:20,630
+还有生产力、会议安排、收件箱智能体。
+And productivity, meeting scheduling, inbox agents.
+
+140
+00:08:21,230 --> 00:08:25,440
+最后是面向还不会阅读的儿童的教育。游戏、现场服务。
+And finally, education for kids who can't read yet. Gaming, field service.
+
+141
+00:08:25,440 --> 00:08:27,070
+这个清单还在不断增长。
+The list just keeps growing.
+
+142
+00:08:27,270 --> 00:08:29,836
+所以整门课程的框架很简单。
+So the framing for this entire course is simple.
+
+143
+00:08:29,836 --> 00:08:34,070
+语音今天存在于联络中心，但语音明天将无处不在。
+Voice today lives in the contact center, but voice tomorrow lives everywhere.
+
+144
+00:08:34,230 --> 00:08:37,180
+开发者交付软件。更具体地说，
+A developer ships software to make it more concrete.
+
+145
+00:08:37,780 --> 00:08:40,860
+在课程剩余部分，我们将围绕三种界面展开。
+Over the rest of this course, we will work with three surfaces.
+
+146
+00:08:41,220 --> 00:08:47,100
+Vocal Bridge 将接入你的技术栈。第一，使用我们的 React SDK 为你的应用添加语音。
+Vocal Bridge will plug into your stack. 1: Voice for your application using our React SDK.
+
+147
+00:08:47,300 --> 00:08:49,946
+你可以直接放入我们的 Vocal Bridge Provider 组件，
+You can drop in our Vocal Bridge Provider component
+
+148
+00:08:49,946 --> 00:08:52,100
+然后就能为任何应用启用语音。
+and you can voice-enable any application.
+
+149
+00:08:52,460 --> 00:08:58,330
+智能体会触发动作，你的 UI 可以响应。第二，为你的智能体添加语音。
+The agent will fire actions and your UI can react. No. 2 is voice for your agents.
+
+150
+00:08:58,730 --> 00:09:04,116
+同样，使用我们的 SDK 并利用 use AI Agent Hook，可以让你现有的
+Again, using our SDK and leveraging the use AI Agent Hook will give your existing
+
+151
+00:09:04,116 --> 00:09:06,930
+LLM 智能体拥有语音，只需两行代码。
+LLM agent a voice in just two lines of code.
+
+152
+00:09:07,290 --> 00:09:08,370
+这就是第三课。
+That's Lesson 3.
+
+153
+00:09:08,890 --> 00:09:10,530
+最后，语音作为工具。
+And finally, voice as a tool.
+
+154
+00:09:10,890 --> 00:09:16,410
+使用我们的 CLI，VB call 命令可以让你的智能体拨打真实电话。
+Using our CLI, VB call is the command that'll let your agent place real phone calls.
+
+155
+00:09:16,770 --> 00:09:21,040
+语音变成了你的 LLM 可以调用的一个函数。这就是第四课。
+Voice becomes a function your LLMs can invoke. That's Lesson 4.
+
+156
+00:09:21,160 --> 00:09:23,842
+现在让我展示，你实际上需要构建什么
+Now let me show you what you would actually have to build
+
+157
+00:09:23,842 --> 00:09:25,591
+如果你想自己把它接起来
+if you tried to wire this up yourself
+
+158
+00:09:25,591 --> 00:09:28,040
+以及我们为什么构建 Vocal Bridge 来封装这一整套复杂流程。
+and why we built Vocal Bridge to collapse all of it.
+
+159
+00:09:28,160 --> 00:09:32,000
+这是生产级技术栈，共 12 步。我会逐一讲解。
+This is the production stack, 12 steps. I will walk through each one.
+
+160
+00:09:32,760 --> 00:09:39,844
+第一个模块是简单的采集：麦克风权限、WebRTC 接入处理、
+First block is simple capture: microphone permissions, WebRTC ingest handling,
+
+161
+00:09:39,844 --> 00:09:43,130
+编解码器音轨混合、设备热切换。
+codec track mixing, device hot swaps.
+
+162
+00:09:43,330 --> 00:09:47,489
+那只是把音频接进来。接下来是音频预处理，
+That's just getting the audio in the door. Next is audio preprocessing,
+
+163
+00:09:47,489 --> 00:09:52,410
+包括噪声消除、回声消除、处理静音和帧。
+which includes noise cancellation, echo cancellation, handling silence, frames.
+
+164
+00:09:52,730 --> 00:09:56,410
+这些工作都不光鲜，但正是这些让智能体说话清晰可懂。
+None of this is glamorous. All of it is what makes the agent intelligible.
+
+165
+00:09:56,690 --> 00:09:59,524
+你需要加入语音转文本和语音活动检测。
+You would want to add speech-to-text and voice activity detection.
+
+166
+00:09:59,524 --> 00:10:01,770
+你大概还需要流式语音转文本。
+You would probably want streaming speech-to-text.
+
+167
+00:10:02,130 --> 00:10:04,842
+因为如果你想要实时语音智能体，
+Because if you want real-time voice agents,
+
+168
+00:10:04,842 --> 00:10:07,856
+语音应当被转换为流式文本，
+speech should be converted into streaming text
+
+169
+00:10:07,856 --> 00:10:12,000
+而且你需要借助 Whisper、Deepgram 等框架，
+and you will have to leverage frameworks like Whisper, Deepgram,
+
+170
+00:10:12,000 --> 00:10:14,713
+语音活动检测，也叫 VAD，
+voice activity detection, also known as VAD,
+
+171
+00:10:14,713 --> 00:10:17,727
+来判断什么时候有人真的在说话，
+to figure out when someone's actually speaking
+
+172
+00:10:17,727 --> 00:10:20,439
+以及端点检测，让智能体判断
+and endpointing for the agent to figure out
+
+173
+00:10:20,439 --> 00:10:24,960
+用户何时结束发言。或者甚至可能还需要说话人分离，如果——
+when the user is finished with their turn. Or maybe even diarization if...
+
+174
+00:10:24,960 --> 00:10:27,200
+通话中涉及多个说话人。
+There's more than one speaker involved on the call.
+
+175
+00:10:27,560 --> 00:10:31,360
+最后，你的智能体还必须充当你的对话管理器。
+And finally, your agent, which will also have to be your dialog manager.
+
+176
+00:10:31,680 --> 00:10:36,489
+它必须处理轮流发言、工具路由、你的 RAG 管线、记忆、
+It'll have to handle turn-taking, tool routing, your RAG pipeline, memory,
+
+177
+00:10:36,489 --> 00:10:39,160
+提示词、业务逻辑，所有这些。
+the prompt, the business logic, all of it.
+
+178
+00:10:39,320 --> 00:10:42,662
+这是唯一真正与你的产品相关的模块。
+This is the only block that's actually about your product.
+
+179
+00:10:42,662 --> 00:10:44,640
+其他一切只是管道。
+Everything else is just plumbing.
+
+180
+00:10:44,920 --> 00:10:50,149
+最后，我们还需要将文本转语音与句子分块结合起来，
+Finally, we will have text-to-speech coupled with sentence chunking,
+
+181
+00:10:50,149 --> 00:10:54,657
+选择音色，选择并配置韵律，
+selecting voices, selecting and configuring the prosody,
+
+182
+00:10:54,657 --> 00:10:58,804
+以流式方式合成并输出语音，
+synthesizing the speech in streaming or as streaming,
+
+183
+00:10:58,804 --> 00:11:02,140
+并从多个 TTS 提供商中进行选择。
+and choosing from a number of TTS providers.
+
+184
+00:11:02,460 --> 00:11:05,100
+而且还会涉及更多分支，对吧？
+And there are more branches that come in, right?
+
+185
+00:11:05,220 --> 00:11:08,699
+具体来说是两个分支：Telephony Bridge，
+Specifically two branches, the Telephony Bridge,
+
+186
+00:11:08,699 --> 00:11:12,340
+这需要你处理电话技术栈。
+which will require you handling the telephony stack.
+
+187
+00:11:12,800 --> 00:11:17,585
+因此要与 Twilio 等服务商合作，处理 SIP 协议、处理 DTMF，
+So working with providers like Twilio, handling the SIP protocol, handling DTMF,
+
+188
+00:11:17,585 --> 00:11:20,152
+分别处理呼入和呼出，
+handling inbound and outbound separately,
+
+189
+00:11:20,152 --> 00:11:23,481
+所有这些都位于 capture 之上，并包裹着所有内容，
+And all of that sits above capture and wrapping all of it,
+
+190
+00:11:23,481 --> 00:11:28,405
+而横跨这个架构中不同组件的是授权，
+which cuts across the different components in this architecture is authorization,
+
+191
+00:11:28,405 --> 00:11:30,000
+会话状态管理。
+session state management.
+
+192
+00:11:30,440 --> 00:11:35,747
+处理重连、故障转移、延迟预算、并发和可观测性，
+Handling reconnections, failovers, latency budgets, concurrency, observability,
+
+193
+00:11:35,747 --> 00:11:38,800
+而这些就构成了你在生产环境中的完整技术栈。
+and that makes up your entire stack in production.
+
+194
+00:11:39,200 --> 00:11:39,640
+好的。
+All right.
+
+195
+00:11:39,840 --> 00:11:42,751
+如今语音 AI 基本上有两种架构
+There are essentially two architectures in voice AI today
+
+196
+00:11:42,751 --> 00:11:45,840
+而它们之间存在一个没人愿意做出的权衡。
+and there's a trade-off between them that nobody wants to make.
+
+197
+00:11:46,600 --> 00:11:50,760
+第一种是级联式设置，这是经典技术栈。
+First one is your cascaded setup. It's the classic stack.
+
+198
+00:11:51,720 --> 00:11:55,034
+你先有语音转文字，然后有你的 LLM，
+You have speech to text, then you have your LLM,
+
+199
+00:11:55,034 --> 00:11:58,000
+最后再是文字转语音。
+and then you finally have text to speech.
+
+200
+00:11:58,320 --> 00:12:02,833
+你可能还需要深度推理，因为当你原样使用完整的 LLM 技术栈时，
+You might also need deep reasoning because as you are using your full LLM stack as is,
+
+201
+00:12:02,833 --> 00:12:03,880
+它很容易调试。
+it is easy to debug.
+
+202
+00:12:04,200 --> 00:12:08,653
+每一步都是文本，但每一轮的延迟会达到 1 到 3 秒，
+Every step is text, but the latency is going to be 1 to 3 seconds per turn,
+
+203
+00:12:08,653 --> 00:12:12,200
+端到端，这对实时语音智能体来说并不理想。
+end to end, which is not ideal for a real time voice agent.
+
+204
+00:12:13,000 --> 00:12:16,563
+而且语音转文字会去掉语气、情绪、节奏，
+And speech to text strips out the tone, the emotion, the pacing,
+
+205
+00:12:16,563 --> 00:12:17,840
+所有副语言信息。
+all the paralanguage.
+
+206
+00:12:17,840 --> 00:12:21,000
+在你的智能体看到输入之前，你已经丢失了所有这些信号。
+You lose all of that signal before your agent ever sees the input.
+
+207
+00:12:21,470 --> 00:12:25,696
+第二种是实时架构，也就是语音到语音模型，
+Second one is a real time architecture, aka voice to voice models,
+
+208
+00:12:25,696 --> 00:12:29,230
+输入是语音，输出也是语音。
+where the input is speech and the output is also speech.
+
+209
+00:12:30,030 --> 00:12:35,670
+而且只有一个模型，延迟降到 200 到 500 毫秒。
+And there's this one single model, the latency drops to 200 to 500 milliseconds.
+
+210
+00:12:35,790 --> 00:12:37,190
+这才是你想要的延迟水平。
+That's the kind of latency you want.
+
+211
+00:12:37,310 --> 00:12:40,558
+模型能听到语气、音高、犹豫、情绪，
+The model hears tone, pitch, hesitation, emotion,
+
+212
+00:12:40,558 --> 00:12:44,940
+所有那些我们在级联式技术栈中丢失的副语言信号。
+all the paralinguistic signals that we lost with the cascaded stack.
+
+213
+00:12:45,620 --> 00:12:48,540
+但你确实会失去对 LLM 技术栈的访问。
+But you do lose access to your LLM stack.
+
+214
+00:12:49,100 --> 00:12:53,005
+这里的大脑是通用模型，把它与你的 RAG、你的工具连接起来，
+The brain here is generic wiring it up with your RAG, with your tools,
+
+215
+00:12:53,005 --> 00:12:56,020
+与你的领域知识连接起来并不简单。
+with your domain knowledge is not straightforward.
+
+216
+00:12:56,540 --> 00:13:01,460
+所以你必须二选一：要么获得低延迟，要么获得深度推理。
+So you have to pick one. Either you get low latency or you get deep reasoning.
+
+217
+00:13:01,900 --> 00:13:05,380
+要么获得自然度，要么利用你现有的“大脑”。
+Either you get naturalness or you can leverage your existing brain.
+
+218
+00:13:06,160 --> 00:13:08,160
+这就是那个没人愿意做出的权衡。
+That is the trade-off nobody wants to make.
+
+219
+00:13:08,360 --> 00:13:12,952
+因此 Vocal Bridge 的答案，是我们所谓的“礼宾式架构”，
+So Vocal Bridge's answer is what we call the concierge architecture,
+
+220
+00:13:12,952 --> 00:13:16,040
+一个处理对话的实时大脑。
+a real time brain that handles a conversation.
+
+221
+00:13:16,440 --> 00:13:19,677
+比如填充词、话轮转换、副语言
+So things like fillers, turn taking, paralanguage
+
+222
+00:13:19,677 --> 00:13:21,809
+它只会在需要深度推理时委派给你的 LLM
+and it only delegates to your LLM
+
+223
+00:13:21,809 --> 00:13:26,388
+或者需要执行专项任务时
+when it needs deep reasoning or it needs to execute a specialized task
+
+224
+00:13:26,388 --> 00:13:30,020
+也就是你的 LLM 或智能体工作流真正擅长的事情。
+that your LLM or your agentic workflow is really good at.
+
+225
+00:13:30,230 --> 00:13:34,830
+这样你既能获得实时延迟，现有的 LLM 技术栈也保持完整。
+So you get real time latency and your existing LLM stack stays intact.
+
+226
+00:13:35,190 --> 00:13:37,723
+具体实现是我们的秘诀，
+The implementation is really our secret sauce,
+
+227
+00:13:37,723 --> 00:13:40,510
+但高层形态就是你在屏幕上看到的。
+but the high level shape is what you see on the screen.
+
+228
+00:13:41,470 --> 00:13:45,910
+这就是你在进入第 2 课之前应该掌握的架构图景。
+That's the architectural picture you should walk into Lesson 2 with.
+
+229
+00:13:46,350 --> 00:13:51,572
+在第 2 课中，我们开始构建。大多数语音应用会让你在两者之间选择：
+In Lesson 2, we start building. Most voice applications make you choose between
+
+230
+00:13:51,572 --> 00:13:55,370
+说话和点击，但真正的应用需要两者兼备。
+speaking and clicking, but real applications need both.
+
+231
+00:13:55,730 --> 00:13:58,902
+在本课中，你将构建一个语音交互的 tic-tac-toe 游戏
+In this lesson, you will build a voice interactive tic tac toe game
+
+232
+00:13:58,902 --> 00:14:02,650
+你的语音命令和鼠标点击将在同一通道上协同工作。
+where your voice commands and mouse clicks work together on a single channel.
+
+233
+00:14:03,530 --> 00:14:04,930
+好的，我们开始看代码。
+Alright, let's dive into the code.
+
+234
+00:14:05,570 --> 00:14:10,850
+好的，欢迎回来。在第 1 课中你了解了整体情况：什么是语音智能体。
+Okay, welcome back. In Lesson 1, you got the lay of the land. What a voice agent is.
+
+235
+00:14:11,250 --> 00:14:13,864
+级联式技术栈和实时技术栈之间的区别
+The difference between cascaded and real time stacks
+
+236
+00:14:13,864 --> 00:14:16,420
+以及语音在联络中心之外的应用场景。
+where voice is showing up beyond the contact center.
+
+237
+00:14:16,780 --> 00:14:18,820
+这一课是我们开始构建的地方。
+This lesson is where we start building.
+
+238
+00:14:19,260 --> 00:14:23,038
+所以我们将在第 2 课中感受的是：当语音不再独立存在时会有什么变化。
+So what we're going to develop a feel for in lesson 2 is what changes
+
+239
+00:14:23,038 --> 00:14:27,915
+当语音真正存在于应用程序中时。
+when voice doesn't live by itself, when voice actually lives inside an application,
+
+240
+00:14:27,915 --> 00:14:31,624
+独立语音智能体，那种只会听和说的智能体。
+the standalone voice agent, the one that just listens and talks,
+
+241
+00:14:31,624 --> 00:14:32,860
+这是简单情况。
+that's the easy case.
+
+242
+00:14:33,660 --> 00:14:37,633
+难的情况，也是你们大多数人真正想发布的，是语音
+The hard case and the one most of you actually want to ship is voice
+
+243
+00:14:37,633 --> 00:14:41,680
+它存在于产品、仪表盘、游戏、结账流程内部。
+that lives inside a product, a dashboard, a game, a checkout flow.
+
+244
+00:14:41,920 --> 00:14:44,138
+一旦语音进入产品内部，
+The moment voice is inside a product,
+
+245
+00:14:44,138 --> 00:14:48,432
+智能体和 UI 就必须在整个交互过程中保持同步，
+the agent and the UI have to stay in lockstep for the entire interaction,
+
+246
+00:14:48,432 --> 00:14:49,720
+而不只是在开始时。
+not just at the start.
+
+247
+00:14:50,000 --> 00:14:52,944
+有三件事在持续发生：用户说话，
+Three things are happening constantly. The user speaks,
+
+248
+00:14:52,944 --> 00:14:55,520
+UI 必须更新以反映用户请求的内容。
+the UI has to update to reflect what they asked for.
+
+249
+00:14:55,680 --> 00:15:00,155
+用户点击某个东西，智能体必须知道对话过程中发生了什么，
+The user clicks something, the agent has to know what happened mid conversation,
+
+250
+00:15:00,155 --> 00:15:01,800
+任意一侧的状态发生变化。
+state changes on either side.
+
+251
+00:15:02,080 --> 00:15:04,920
+另一侧需要立刻知道，而不是等到下一轮。
+The other side needs to know now, not on the next turn.
+
+252
+00:15:05,360 --> 00:15:08,354
+如果这三个循环不够快、也不是双向的，
+If those three loops aren't fast and bidirectional,
+
+253
+00:15:08,354 --> 00:15:11,960
+语音和 UI 就会逐渐脱节，体验也会随之崩溃。
+voice and UI drift apart and the experience falls apart as well.
+
+254
+00:15:12,080 --> 00:15:14,720
+所以这一整课就是关于如何构建这个通道。
+So this whole lesson is about how to build that channel.
+
+255
+00:15:15,360 --> 00:15:18,320
+我们用来解决这个问题的模式，我们称之为 client actions。
+The pattern we use to solve this, we call it client actions.
+
+256
+00:15:18,720 --> 00:15:21,960
+它只是语音智能体与
+It's just a single typed message channel between the voice agent
+
+257
+00:15:21,960 --> 00:15:23,880
+应用之间在整个会话期间保持打开的一个类型化消息通道。
+and the app open for the whole session.
+
+258
+00:15:24,400 --> 00:15:29,673
+任何一方都可以发送，任何一方都可以立即响应。在智能体到应用的方向上，
+Either side can send, either side reacts immediately in the agent to app direction,
+
+259
+00:15:29,673 --> 00:15:31,932
+有像 render widget 这样的消息，
+you have things like render widget,
+
+260
+00:15:31,932 --> 00:15:35,472
+告诉 UI 显示或更改某些内容，并更新状态，
+tell the UI to show or change something and update state,
+
+261
+00:15:35,472 --> 00:15:40,067
+后者会把智能体侧状态推送到应用。在应用到智能体的方向上，
+which pushes agent side state into the app, in the app to agent direction,
+
+262
+00:15:40,067 --> 00:15:44,963
+有 user event，用户点击、输入、拖拽了某个东西，以及 app state。
+you have user event, user clicked, typed, dragged something, and app state,
+
+263
+00:15:44,963 --> 00:15:46,620
+也就是 UI 当前的
+which is the UI's current.
+
+264
+00:15:46,700 --> 00:15:50,100
+状态，会作为上下文发送回来。现在，这里有一个重要细节。
+State sent back as context. Now, here's the important detail.
+
+265
+00:15:50,900 --> 00:15:55,180
+两个方向都走音频所用的同一个 WebRTC 数据通道。
+Both directions ride the same WebRTC data channel that the audio rides on.
+
+266
+00:15:55,260 --> 00:15:58,740
+所以智能体和应用把彼此视为一个系统，
+So the agent and the app see each other as one system,
+
+267
+00:15:58,740 --> 00:16:02,140
+而不是两个试图通过 HTTP 互相传话的服务。
+not as two services trying to gossip through HTTP.
+
+268
+00:16:02,340 --> 00:16:07,560
+好的，为了具体说明，这个 notebook 会让你构建一个语音驱动的井字棋，
+Okay, to make this concrete, the notebook will have you build voice driven Tic Tac
+
+269
+00:16:07,560 --> 00:16:10,860
+两名玩家，你用语音和点击，智能体作为另一方。
+Toe two players, you with voice and click and the agent
+
+270
+00:16:10,860 --> 00:16:13,470
+让我带你看看会发生什么。
+and let me walk you through what happens.
+
+271
+00:16:13,470 --> 00:16:17,350
+在一次落子中，你会说类似“把我的标记放在中央”。
+In a single move, you will say something like, put my mark in the center.
+
+272
+00:16:17,550 --> 00:16:22,037
+智能体会触发 Place Mark，带上行、列信息，
+The agent fires Place Mark with the row and column information
+
+273
+00:16:22,037 --> 00:16:24,830
+以及玩家是谁，UI 会重新渲染。
+and who the player is, the UI rerenders.
+
+274
+00:16:25,690 --> 00:16:29,524
+中央格子现在显示你的标记。当智能体还在思考时，
+Center cell now shows your Mark. While the agent's thinking,
+
+275
+00:16:29,524 --> 00:16:31,930
+你用鼠标点击一个角落格子。
+you tap a corner cell using your mouse.
+
+276
+00:16:32,170 --> 00:16:34,461
+应用把用户落子发回给智能体，
+The app sends user move back to the agent,
+
+277
+00:16:34,461 --> 00:16:38,370
+智能体会大声回应：“好，我会挡住你的斜线。”
+and the agent comes back out loud with nice, I'll block your diagonal.
+
+278
+00:16:38,930 --> 00:16:42,002
+这就是整个循环，双向都通过同一个通道完成，
+That is the entire loop, both directions over one channel
+
+279
+00:16:42,002 --> 00:16:44,050
+而且是在对话进行的同时。
+while the conversation is happening.
+
+280
+00:16:44,330 --> 00:16:46,391
+一旦你脑子里有了这个结构，
+Once you've got that shape in your head,
+
+281
+00:16:46,391 --> 00:16:50,326
+你职业生涯中以后会看到的每一种应用内语音模式，都会是
+every voice in an app pattern you will see for the rest of your career will be a
+
+282
+00:16:50,326 --> 00:16:51,200
+这个模式的变体。
+variant of this.
+
+283
+00:16:51,600 --> 00:16:55,040
+这就是第 2 课：应用中的语音。
+So this is lesson 2, voice in your application.
+
+284
+00:16:55,320 --> 00:17:00,560
+而我们在本 notebook 中要构建的，是一个语音驱动的井字棋游戏。
+And what we are going to build in this notebook is a voice driven tic tac toe game.
+
+285
+00:17:01,200 --> 00:17:05,280
+重点其实不是游戏本身，而是游戏底层的东西。
+Now the point isn't really the game. The point is what's underneath the game.
+
+286
+00:17:05,600 --> 00:17:09,912
+Vocal Bridge 给你一个我们称之为 Client Actions 的双向通道，
+Vocal Bridge gives you a bidirectional channel we call Client Actions
+
+287
+00:17:09,912 --> 00:17:13,200
+让语音智能体和你的 UI 能像一个系统一样协同工作。
+and lets the voice agent and your UI move as one system.
+
+288
+00:17:13,360 --> 00:17:16,080
+你可以跟它说话，也可以点击它，都在同一个界面上。
+You can talk to it, you can click on it, same surface.
+
+289
+00:17:16,720 --> 00:17:19,560
+到本 notebook 结束时，你会把整条链路都打通。
+By the end of this notebook, you'll have that whole thing wired up.
+
+290
+00:17:19,680 --> 00:17:23,585
+在我们在这个 DeepLearningAI 环境中运行任何内容之前，简单说一下设置。
+Quick word on setup before we run anything in this DeepLearningAI environment,
+
+291
+00:17:23,585 --> 00:17:25,800
+我们已经帮你完成了设置。
+we've already taken care of the setup for you.
+
+292
+00:17:26,000 --> 00:17:28,102
+你的 Vocal Bridge 账户已经开通。
+Your Vocal Bridge account is provisioned.
+
+293
+00:17:28,102 --> 00:17:30,320
+你的 API key 已经写入环境变量。
+Your API key is populated in the environment.
+
+294
+00:17:30,520 --> 00:17:34,880
+CLI 已完成身份验证。你什么都不用做，直接运行这些单元格即可。
+The CLI is authenticated. You don't have to do anything. Just run the cells.
+
+295
+00:17:35,300 --> 00:17:38,726
+但如果你确实想在自己的机器上、在这个环境之外运行它，
+But if you do want to run it on your own machine outside of this environment,
+
+296
+00:17:38,726 --> 00:17:39,500
+流程如下。
+here's the flow.
+
+297
+00:17:39,660 --> 00:17:42,635
+前往 Vocal Bridge Dashboard，获取一个 API key。
+Go to the Vocal Bridge Dashboard, grab an API key,
+
+298
+00:17:42,635 --> 00:17:47,521
+将其设置为 Vocal Bridge API key 环境变量，用 pip 安装 CLI，
+set it as the Vocal Bridge API key environment variable, install the CLI with pip,
+
+299
+00:17:47,521 --> 00:17:51,700
+安装 Vocal Bridge，用 wbauth login 进行身份验证，就好了。
+install Vocal Bridge, authenticate with wbauth login and that's it.
+
+300
+00:17:52,140 --> 00:17:56,388
+下面是设置代码。我们导入辅助函数，加载环境变量。
+So here's the setup code. We import the helpers, load environment variables,
+
+301
+00:17:56,388 --> 00:17:58,740
+确认 Vocal Bridge 密钥已存在。
+assert that the Vocal Bridge key is there.
+
+302
+00:17:59,660 --> 00:18:04,720
+我快速运行一下。好了，快速过一遍这些辅助函数。
+Let me, let me run it real quick. There you go. A quick walkthrough of the helpers.
+
+303
+00:18:05,040 --> 00:18:09,000
+今天我们在 notebook 中会用到三个辅助函数。
+So there are going to be three helpers we will use today in this notebook.
+
+304
+00:18:09,360 --> 00:18:13,000
+Mint token，用来获取 Voice Session Token。
+Mint token, which gets us a Voice Session Token.
+
+305
+00:18:13,880 --> 00:18:16,507
+VB 是我们 CLI 的一个轻量封装
+VB is a thin wrapper around our CLI
+
+306
+00:18:16,507 --> 00:18:21,480
+而 voice widget 会在 notebook 内渲染 React 组件。
+and voice widget renders the React widget inside the notebook.
+
+307
+00:18:21,640 --> 00:18:25,557
+这些辅助函数是为了让课程专注于 Vocal Bridge 的核心概念
+The helpers are there so the lesson can stay focused on the Vocal Bridge concepts
+
+308
+00:18:25,557 --> 00:18:26,960
+而不是各种样板代码。
+and not all the boilerplate.
+
+309
+00:18:27,530 --> 00:18:29,970
+每个 voice UI agent 都附带两个文件。
+So every voice UI agent ships with two files.
+
+310
+00:18:30,730 --> 00:18:31,450
+一个是 prompt。
+There's a prompt.
+
+311
+00:18:31,690 --> 00:18:34,950
+那是智能体的大脑、性格和规则，
+That's the agent's brain, its personality, its rules,
+
+312
+00:18:34,950 --> 00:18:37,501
+还有一个 action schema，用来声明
+and there's an action schema that declares
+
+313
+00:18:37,501 --> 00:18:40,690
+哪些消息可以在智能体和你的 UI 之间传递。
+which messages can flow between the agent and your UI.
+
+314
+00:18:40,930 --> 00:18:43,810
+我们来看这两个文件。先看 prompt。
+Let's go through both of those. So go through the prompt first.
+
+315
+00:18:44,090 --> 00:18:49,165
+顶部有两条硬性规则，而且非常关键，我特别说明一下，
+Two hard rules at the top, and these are load bearing, let me call them out,
+
+316
+00:18:49,165 --> 00:18:50,330
+规则 A 和规则 B。
+Rule A and Rule B.
+
+317
+00:18:50,690 --> 00:18:55,970
+规则 A 说：始终用语音结束回复，绝不要用工具调用结束。
+Rule A says, always end a response with speech, never with a tool call.
+
+318
+00:18:56,130 --> 00:18:58,460
+这是因为如果智能体以工具调用结束，
+This is because if the agent ends on a tool call,
+
+319
+00:18:58,460 --> 00:19:00,850
+用户只会听到静默，演示就失败了。
+the user just hears silence and the demo is dead.
+
+320
+00:19:01,050 --> 00:19:02,890
+规则 B：客户端拥有棋盘状态。
+Rule B, the client owns the board.
+
+321
+00:19:03,530 --> 00:19:04,130
+你没有。
+You do not.
+
+322
+00:19:04,250 --> 00:19:09,683
+所以每当有一步落子，客户端都会发送一个包含完整棋盘的 board sync 事件，
+So every time a move's made, the client sends a board sync event with the full board,
+
+323
+00:19:09,683 --> 00:19:12,360
+智能体将其视为 ground truth。
+and the agent reads that as ground truth.
+
+324
+00:19:12,760 --> 00:19:17,160
+正是这两条规则，让语音和 UI 在这个游戏中保持同步。
+Those two rules, that's what keeps voice and UI locked together in this game.
+
+325
+00:19:17,400 --> 00:19:18,960
+这就是 action schema。
+And here's the action schema.
+
+326
+00:19:20,240 --> 00:19:27,169
+这里的右箭头表示从智能体到应用。这个、这个、这个，
+The right arrows here are agent to app. So this one, this one, this one,
+
+327
+00:19:27,169 --> 00:19:29,320
+最后一个。
+and finally this one.
+
+328
+00:19:29,440 --> 00:19:33,440
+这些是智能体触发并改变 UI 的事件。
+These are events that the agent fires that change the UI.
+
+329
+00:19:34,000 --> 00:19:38,760
+比如 show tic tac toe、place mark、user move 和 clear UI。
+So show tic tac toe, placemark, user move and clear UI.
+
+330
+00:19:39,800 --> 00:19:48,520
+左箭头，这个和这个，是相反方向的事件：从应用到智能体。
+The left arrows, this and this are events in the opposite direction. App to agent.
+
+331
+00:19:48,800 --> 00:19:51,805
+应用会把信息发回给智能体，
+The application sends back information to the agent
+
+332
+00:19:51,805 --> 00:19:54,810
+当用户点击或游戏状态发生变化时。
+when the user clicks or the state of the game changes.
+
+333
+00:19:55,570 --> 00:19:59,410
+所以两个方向使用的是同一条通道。整个模式就是这样。
+So it's the same channel both directions. That's the whole pattern right there.
+
+334
+00:19:59,890 --> 00:20:04,130
+现在我们要用一条 CLI 命令在 Vocal Bridge 上创建实际的智能体。
+Now we go and create the actual agent on Vocal Bridge with one CLI command.
+
+335
+00:20:04,330 --> 00:20:07,450
+有几个 flag 我想特别说明。第一个是 style。
+A few flags I want to call out. First one is the style.
+
+336
+00:20:08,130 --> 00:20:13,130
+我们会使用 chatty，它选择 OpenAI real-time 模型作为后端。
+We're going to use chatty, which picks the OpenAI real-time model as the backend.
+
+337
+00:20:13,700 --> 00:20:17,577
+它负责保持对话，并提供了开箱即用的良好默认设置。
+It holds the conversation. It gives us good defaults out of the box.
+
+338
+00:20:17,577 --> 00:20:19,100
+然后是 client actions file。
+Then client actions file.
+
+339
+00:20:19,660 --> 00:20:23,701
+它指向我们刚刚看到的 action schema，正是它
+This is pointing to the action schema that we just saw, and it's the one
+
+340
+00:20:23,701 --> 00:20:26,020
+连接了双向通道。
+that wires up the bidirectional channel.
+
+341
+00:20:26,260 --> 00:20:31,180
+没有它，你就只有语音而没有 UI 交互。最后是 deploy targets。
+Without it, you would have voice but no UI interactions. And finally, deploy targets.
+
+342
+00:20:31,500 --> 00:20:34,351
+我们会使用 web，因为我们要确保
+We are going to use web because we want to make sure
+
+343
+00:20:34,351 --> 00:20:37,550
+智能体可以通过 WebRTC 在浏览器中访问。
+that the agent is reachable on the browser over WebRTC.
+
+344
+00:20:37,790 --> 00:20:41,653
+其他选项包括 phone，它会给智能体一个自己的电话号码。
+The other options are phone, which gives the agent its own phone number.
+
+345
+00:20:41,653 --> 00:20:43,070
+我们会在第 4 课中使用它。
+We'll use that in lesson 4.
+
+346
+00:20:43,430 --> 00:20:45,190
+你也可以同时部署到两者。
+And you can also deploy on both.
+
+347
+00:20:45,270 --> 00:20:50,350
+所以可以用 both 作为部署目标，也就是同时部署到 web 和电话。
+So use both as the deploy target, which is going to be both web and telephony.
+
+348
+00:20:50,550 --> 00:20:54,390
+这对混合智能体非常有用；但对于 tic tac toe，我们只需要浏览器。
+It's really useful for hybrid agents. For tic tac toe, we just need the browser.
+
+349
+00:20:54,750 --> 00:20:57,310
+所以这里我们会使用幂等模式。
+So we're going to use an idempotent pattern here.
+
+350
+00:20:57,630 --> 00:21:01,583
+如果环境中已经预置了 agent ID，比如在 sandbox 中，
+If the agent ID is already pre-provisioned in the environment, like in a sandbox,
+
+351
+00:21:01,583 --> 00:21:05,160
+我们就复用它；或者如果你已经运行过这个 cell，我们也会复用该智能体。
+we just reuse it or if you already ran the cell, we'll reuse the agent.
+
+352
+00:21:05,360 --> 00:21:09,389
+否则我们创建一个新的并保存 Agent ID，这样你可以重新运行而不会
+Otherwise we create a new one and save the Agent ID, which means you can rerun it without
+
+353
+00:21:09,389 --> 00:21:11,160
+反复创建新的智能体。
+spawning new agents over and over.
+
+354
+00:21:11,760 --> 00:21:15,560
+接下来我们调用这个名为 Mint token 的辅助函数。
+And up next we are going to call this helper function called Mint token.
+
+355
+00:21:15,720 --> 00:21:20,000
+它会为我们打印三样东西：会话名称、agent mode。
+It's going to print out three things for us. The session name, agent mode.
+
+356
+00:21:20,360 --> 00:21:22,880
+这里我们会看到 OpenAI concierge。
+We are going to see OpenAI concierge here.
+
+357
+00:21:22,880 --> 00:21:26,281
+它只是表明后端使用的是 OpenAI real-time 模型
+It just suggests that it's using the OpenAI real-time model in the back end
+
+358
+00:21:26,281 --> 00:21:28,400
+以及 Vocal Bridge 的礼宾式架构。
+and Vocal Bridge's concierge architecture.
+
+359
+00:21:28,480 --> 00:21:31,261
+最后是这个 token，我们看到的是截断后的。
+And finally, this token, which we see as truncated.
+
+360
+00:21:31,261 --> 00:21:35,400
+这个 token 将帮助认证与 Vocal Bridge 的每个会话。
+This is a token that will help authenticate every session with Vocal Bridge.
+
+361
+00:21:35,800 --> 00:21:37,522
+好，所有内容在这里汇合到一起。
+Okay, this is where it all comes together.
+
+362
+00:21:37,522 --> 00:21:40,080
+渲染组件后，我们要在这里尝试三件事。
+Three things we are going to try here once we render the widget.
+
+363
+00:21:40,440 --> 00:21:45,080
+首先，说“我们来玩井字棋”，智能体就会触发“显示井字棋”。
+First, say "Let's play tic-tac-toe" and the agent will fire "Show tic-tac-toe."
+
+364
+00:21:45,680 --> 00:21:48,949
+这就是客户端操作。这个事件会确保
+That's the client action. That's the event that'll make sure
+
+365
+00:21:48,949 --> 00:21:51,000
+棋盘出现在你的屏幕上。
+that the board appears on your screen.
+
+366
+00:21:51,720 --> 00:21:56,480
+第二，然后你可以开始走棋。直接用你的语音来走棋。
+Second, you can then start making moves. So start using your voice to make moves.
+
+367
+00:21:56,520 --> 00:22:00,240
+智能体会在同一次响应中同时触发 user move 和 place mark 两个事件。
+And the agent fires both user move and place mark in the same response.
+
+368
+00:22:00,400 --> 00:22:03,932
+所以你的 X 和智能体的 O 会一起落子。最后，
+So your X and the agent's O land together. And finally,
+
+369
+00:22:03,932 --> 00:22:06,130
+这个应用是多模态的。
+this application is multimodal.
+
+370
+00:22:06,210 --> 00:22:07,977
+所以你当然可以用语音，
+So you can use your voice, of course,
+
+371
+00:22:07,977 --> 00:22:10,450
+但也可以用鼠标点击某个方格。
+but you can also use your mouse to click on a square.
+
+372
+00:22:10,810 --> 00:22:15,650
+一旦你这样做了，语音智能体就会感知到这次点击。
+And once you do that, the voice agent will be aware of that click.
+
+373
+00:22:16,130 --> 00:22:18,056
+组件会在本地放置你的 X，
+The widget places your X locally
+
+374
+00:22:18,056 --> 00:22:22,050
+并会把 user place mark 事件连同完整棋盘一起发回给智能体。
+and it'll fire user place mark back to the agent with the full board.
+
+375
+00:22:22,170 --> 00:22:24,967
+每次走棋后，组件还会静默发送 board sync，
+And after every move, the widget silently sends board sync
+
+376
+00:22:24,967 --> 00:22:27,650
+让智能体与屏幕上的内容保持同步。
+so the agent stays in lockstep with what's on the screen.
+
+377
+00:22:27,770 --> 00:22:30,850
+那我们来渲染它。我们来玩井字棋。
+So let's render it. Let's play tic-tac-toe.
+
+378
+00:22:33,050 --> 00:22:41,810
+你的 X，该你走棋。我可以走中间吗？角落，视野更好。
+Your X, your move. Can I take the center, please? Corner, better view.
+
+379
+00:22:47,890 --> 00:22:54,210
+我走左下角。好，你赢了我。下得漂亮。
+I will take bottom left. Okay. You got me. Nicely played.
+
+380
+00:22:57,880 --> 00:22:58,200
+太棒了。
+Awesome.
+
+381
+00:22:58,720 --> 00:23:03,040
+这里我们看到了一种多模态交互：我可以用语音，
+So here we saw a multimodal interaction where I could use my voice
+
+382
+00:23:03,040 --> 00:23:06,960
+你还可以用鼠标点击其中一个方格。
+and you can also use a mouse to click on one of these squares.
+
+383
+00:23:07,520 --> 00:23:11,800
+好，现在你已经看到它工作了。让我展示真正让它工作的东西。
+Okay, so now you've seen it work. Let me show you what actually made it work.
+
+384
+00:23:12,200 --> 00:23:17,840
+整个组件都围绕一个名为 useAgentActions 的 React hook 构建。
+The whole widget is built around one single React hook called useAgentActions.
+
+385
+00:23:18,040 --> 00:23:21,200
+它让你在单一通道上拥有双向的客户端操作。
+It gives you both directions of client actions on a single channel.
+
+386
+00:23:21,360 --> 00:23:25,329
+所以 onAction 会监听智能体触发的事件，
+So onAction will listen for events that the agent is firing
+
+387
+00:23:25,329 --> 00:23:30,620
+而 sendAction 允许应用把事件发回给语音智能体。
+and sendAction will allow the application to send events back to the voice agent.
+
+388
+00:23:30,900 --> 00:23:33,200
+同一个 hook，双向通信，单一通道。
+Same hook, both directions, one single channel.
+
+389
+00:23:33,200 --> 00:23:36,060
+而这正是 Vocal Bridge 真正独特的部分。
+And this is the piece that's actually unique to Vocal Bridge.
+
+390
+00:23:36,260 --> 00:23:39,620
+大多数语音平台让你二选一：要么说话，要么操作。
+Most voice platforms make you pick. You either speak or you react.
+
+391
+00:23:40,180 --> 00:23:42,500
+在这里，它全都在一个单一通道里。很好。
+Here, it's all one single channel. Great.
+
+392
+00:23:42,580 --> 00:23:47,580
+当你结束会话时，Vocal Bridge 会为每一轮、每个操作存储结构化日志。
+So when you end the session, Vocal Bridge stores a structured log of every turn, every action.
+
+393
+00:23:48,150 --> 00:23:50,830
+我们来拉取最近的一条，看看它长什么样。
+Let's pull the most recent one and see what that looks like.
+
+394
+00:23:51,150 --> 00:23:55,249
+同样，这会是一个 CLI 调用。它会抓取最近的会话，
+It's going to be, again, a single CLI call. It'll grab the most recent session,
+
+395
+00:23:55,249 --> 00:23:56,510
+并为你格式化打印。
+pretty printed for you.
+
+396
+00:23:56,590 --> 00:23:58,884
+你会看到每一轮语音，
+You will see every spoken turn,
+
+397
+00:23:58,884 --> 00:24:03,120
+每一个触发的动作，以及每一个返回的事件。
+every act that gets fired and every event that comes back.
+
+398
+00:24:03,720 --> 00:24:08,009
+这就是你用来接入分析、调试或评估的地方，
+This is what you would hook into for analytics, debugging, or evals,
+
+399
+00:24:08,009 --> 00:24:11,320
+剧透一下，这正是第 5 课的主题。
+which spoiler alert is the whole subject of Lesson 5.
+
+400
+00:24:11,600 --> 00:24:14,320
+完成这节课很棒。下节课见。
+Great job getting through this lesson. I will see you in the next one.
+
+401
+00:24:15,440 --> 00:24:18,880
+现在，让我们给本节课已经构建好的智能体添加语音。
+Let's now add voice to an agent you have already built in this lesson.
+
+402
+00:24:19,000 --> 00:24:22,949
+你将用大约 10 行代码给智能体添加语音，
+You will take an agent and give it a voice in about 10 lines of code without
+
+403
+00:24:22,949 --> 00:24:24,990
+而无需改动任何现有逻辑。
+touching any of your existing logic.
+
+404
+00:24:25,510 --> 00:24:29,790
+你的提示词、RAG 和工具都保持原样。
+Your prompts, your RAG, your tools all stay exactly as they are.
+
+405
+00:24:30,430 --> 00:24:31,430
+好，我们开始吧。
+All right, let's go.
+
+406
+00:24:32,150 --> 00:24:35,828
+好。在第 2 课中，我们为应用添加了语音。在第 3 课中，
+Okay. In Lesson 2, we added voice to an application. In Lesson 3,
+
+407
+00:24:35,828 --> 00:24:37,910
+我们将为智能体添加语音。
+we're going to add voice to an agent.
+
+408
+00:24:38,470 --> 00:24:40,829
+以下是大多数人实际所处的情况。
+Here's the situation most of you are actually in.
+
+409
+00:24:40,829 --> 00:24:42,670
+你已经有一个生产环境中的 LLM。
+You already have an LLM in production.
+
+410
+00:24:43,020 --> 00:24:47,371
+prompt 已调好，工具正常，RAG 已接好，评估套件绿灯通过，
+The prompt's tuned, the tools work, RAG is wired up, eval suite is green,
+
+411
+00:24:47,371 --> 00:24:50,780
+然后有人走过来问：“我们能加一个语音入口吗？”
+and someone walks in and asks, "Can we add a voice surface?"
+
+412
+00:24:50,980 --> 00:24:54,111
+而你最不想做的就是全部重写。
+Now, the last thing you want to do is rewrite all of it.
+
+413
+00:24:54,111 --> 00:24:56,460
+你真正想要的是三件事。
+What you actually want is three things.
+
+414
+00:24:57,100 --> 00:25:01,807
+保持智能体原样，提示词、工具、RAG、评估，全都不动，
+Keep your agent exactly as is, prompts, tools, RAG, evals, all of it,
+
+415
+00:25:01,807 --> 00:25:05,380
+并把语音作为传输层加上去，而不是推倒重建。
+and add voice as a transport layer, not a rebuild.
+
+416
+00:25:05,750 --> 00:25:08,630
+也不要为了这个能力牺牲延迟或自然度。
+And don't sacrifice latency or naturalness for the privilege.
+
+417
+00:25:09,070 --> 00:25:11,357
+所以这节课有趣的问题是：
+So the interesting question for this lesson,
+
+418
+00:25:11,357 --> 00:25:15,990
+如何围绕智能体加一层语音，而不像大多数平台那样破坏它的工作方式？
+how do you wrap voice around an agent without breaking how it works the way most platforms do?
+
+419
+00:25:15,990 --> 00:25:17,550
+这就是我所说的“三明治”。
+This is what I call the sandwich.
+
+420
+00:25:17,910 --> 00:25:21,830
+前面是语音转文字，中间是你的智能体，后面是文字转语音。
+Speech-to-text in front, your agent in the middle, text-to-speech at the back.
+
+421
+00:25:22,310 --> 00:25:25,550
+看似简单，直到你意识到刚刚交给智能体的是什么。
+Looks simple until you realize what just got handed to your agent.
+
+422
+00:25:25,830 --> 00:25:30,182
+现在你的智能体要负责对话流程、话轮转换，还要处理 margin，
+Now your agent owns the dialogue flow, it owns turn taking, it owns margin,
+
+423
+00:25:30,182 --> 00:25:33,060
+还要负责副语言信息，但语音转文字这一层除外。
+it owns paralinguistics, except speech to text.
+
+424
+00:25:33,180 --> 00:25:36,071
+语音转文字已经把所有语气、音调、犹豫，
+Already threw all the tone, the pitch, the hesitation,
+
+425
+00:25:36,071 --> 00:25:38,900
+还有情绪都丢掉了，而你的智能体甚至还没看到输入。
+the emotion away before your agent even saw the input.
+
+426
+00:25:39,060 --> 00:25:40,620
+这背后还有实际成本。
+And there are real costs underneath.
+
+427
+00:25:41,220 --> 00:25:46,205
+每一轮都要依次付出“语音转文字 + LLM + 文字转语音”的成本。
+Every turn pays speech to text plus LLM plus text to speech sequentially.
+
+428
+00:25:46,205 --> 00:25:47,580
+所以延迟会上升。
+So latency goes up.
+
+429
+00:25:47,700 --> 00:25:51,660
+你的智能体不得不处理对话工作；它本来不是为 back channels（反馈信号）而构建的。
+Your agent has to do dialogue work. It wasn't built for back channels.
+
+430
+00:25:52,060 --> 00:25:54,390
+嗯嗯。什么时候该等待？什么时候该询问？
+Mm hmm. When to wait? When to ask?
+
+431
+00:25:54,670 --> 00:25:57,176
+你完全失去了副语言信号，
+You lose paralinguistic signal entirely,
+
+432
+00:25:57,176 --> 00:26:00,031
+而用户在沉默中等待，而你的智能体还在运行，
+and the user sits in silence while your agent runs
+
+433
+00:26:00,031 --> 00:26:03,790
+因为技术栈里没有任何东西在维持对话。
+because nothing in the stack is keeping the conversation alive.
+
+434
+00:26:04,030 --> 00:26:05,750
+“三明治”方案在演示中可行。
+The sandwich works for a demo.
+
+435
+00:26:06,270 --> 00:26:10,030
+它经受不住真实用户的检验。我们的方法不同。
+It does not survive contact with real users. Our approach is different.
+
+436
+00:26:10,470 --> 00:26:13,790
+我们在你的智能体前面放了一个实时语音到语音大脑。
+We put a real-time voice-to-voice brain in front of your agent.
+
+437
+00:26:14,150 --> 00:26:15,150
+它有自己的模型。
+It has its own model.
+
+438
+00:26:15,710 --> 00:26:19,980
+它处理所有对话工作：倾听、话轮转换、副语言信息，
+It handles all the dialogue work, listening, turn taking, paralinguistics,
+
+439
+00:26:19,980 --> 00:26:23,988
+以及对话粘合剂；当用户提出实质性问题时，
+the conversational glue, and when the user asks something substantial,
+
+440
+00:26:23,988 --> 00:26:27,470
+Vocal Bridge brain 只把那个查询委派给你的智能体。
+the Vocal Bridge brain delegates just that query to your agent.
+
+441
+00:26:27,830 --> 00:26:29,750
+你的智能体保持完全原样。
+Your agent stays exactly as is.
+
+442
+00:26:30,350 --> 00:26:33,590
+架构中的好处会自然显现，延迟很低。
+The wins fall out of the architecture, latency is low.
+
+443
+00:26:33,710 --> 00:26:36,147
+不再有“语音转文字 -> LLM -> 文字转语音”这条
+There is no speech to text to LLM to text to speech,
+
+444
+00:26:36,147 --> 00:26:37,870
+作用在对话本身的瀑布式链路。
+waterfall on the dialogue itself.
+
+445
+00:26:38,190 --> 00:26:43,106
+副语言上下文得以保留。Vocal Bridge brain 会听到语气、犹豫，并打包这些信息
+Paralinguistic context survives. Vocal Bridge brain hears tone, hesitation, packages
+
+446
+00:26:43,106 --> 00:26:45,973
+作为委派时的上下文。用户继续说话
+that as context when delegating. User keeps talking
+
+447
+00:26:45,973 --> 00:26:48,226
+而你的智能体在后台运行，
+while your agent runs in the background
+
+448
+00:26:48,226 --> 00:26:51,640
+因为 Vocal Bridge brain 会维持对话。
+because the Vocal Bridge brain keeps a conversation alive.
+
+449
+00:26:51,960 --> 00:26:57,640
+而且不需要重写智能体。你的智能体像处理聊天一样回答结构化查询。
+And there is no agent rewrite. Your agent answers structured queries just like it would for chat.
+
+450
+00:26:58,280 --> 00:27:00,660
+好，这就是一轮交互实际的样子。
+Okay, here's what one turn actually looks like.
+
+451
+00:27:01,180 --> 00:27:05,538
+这个 notebook 会带你一步步给 LLM 驱动的智能体包上语音，
+The notebook walks you through wrapping voice around an LLM-powered agent,
+
+452
+00:27:05,538 --> 00:27:08,650
+也就是大多数人已经有的那种智能体。用户问：
+the kind of thing most of you already have, a user asks,
+
+453
+00:27:08,650 --> 00:27:11,140
+Nvidia 最新股价是多少？
+what's the most recent Nvidia stock price?
+
+454
+00:27:11,380 --> 00:27:13,263
+用户的声音里带着一点犹豫。
+With a slight hesitation in their voice,
+
+455
+00:27:13,263 --> 00:27:16,420
+Vocal Bridge brain 同时听到了问题和这种不确定。
+the Vocal Bridge brain hears both the question and the uncertainty.
+
+456
+00:27:16,780 --> 00:27:20,420
+它会立刻说一句简短的确认，避免用户处于冷场。
+It immediately speaks a quick acknowledgement, so the user isn't in dead air.
+
+457
+00:27:20,660 --> 00:27:22,300
+比如会说：“我来查一下。”
+Let's say something like, let me check on that.
+
+458
+00:27:22,530 --> 00:27:26,282
+同时向你的智能体发送一个结构化查询（agent call），
+And at the same time, sends your agent a structured query agent call,
+
+459
+00:27:26,282 --> 00:27:29,770
+其中包含语气和其他副语言信息。
+including information about the tone and other paralanguage.
+
+460
+00:27:29,770 --> 00:27:35,433
+你的智能体运行与聊天机器人 RAG 相同的代码路径，访问你内部的
+Your agent runs the same code path it would for a chatbot RAG over your internal
+
+461
+00:27:35,433 --> 00:27:38,570
+知识图谱，或者调用网络搜索工具。
+knowledge graph or maybe a web search tool.
+
+462
+00:27:38,850 --> 00:27:40,130
+没有增加任何对话逻辑。
+No dialogue logic added.
+
+463
+00:27:40,250 --> 00:27:42,545
+Vocal Bridge brain 拿到答案
+The Vocal Bridge brain takes that answer
+
+464
+00:27:42,545 --> 00:27:45,988
+并自然地读出来，速度更慢，还带有确认停顿，
+and reads it back naturally slower with confirmation pauses
+
+465
+00:27:45,988 --> 00:27:50,240
+因为用户的声音听起来不确定，而且用户可以随时打断。
+because the user sounded uncertain, and the user can interrupt at any time.
+
+466
+00:27:50,800 --> 00:27:55,400
+这就是整个模式：外层是语音，中间的智能体保持原样。
+That's the whole pattern. Voice on the outside, your agent untouched in the middle.
+
+467
+00:27:55,960 --> 00:28:00,000
+我们去构建吧。好了，进入第 3 课：为你的现有智能体添加语音。
+Let's go build it. Alright, it's time for Lesson 3, voice for your existing agent.
+
+468
+00:28:00,320 --> 00:28:04,961
+这个 notebook 中的模式，是给 LLM 智能体添加语音最省力的方式，
+The pattern in this notebook is the lowest effort way to give voice to an LLM agent
+
+469
+00:28:04,961 --> 00:28:06,000
+尤其针对你已有的智能体。
+you already have.
+
+470
+00:28:06,200 --> 00:28:07,919
+我们不需要重写任何东西。
+We are not going to rewrite anything.
+
+471
+00:28:07,919 --> 00:28:10,470
+我们只是把语音包装在智能体外面。
+We're just going to wrap voice around the agent itself.
+
+472
+00:28:10,790 --> 00:28:13,293
+Vocal Bridge 作为一个薄的语音层位于前面。
+Vocal Bridge sits in front as a thin voice layer.
+
+473
+00:28:13,293 --> 00:28:15,670
+每个说出的问题都会传到你的端点。
+Every spoken question goes to your endpoint.
+
+474
+00:28:15,870 --> 00:28:20,579
+作为 query agent action，你的端点会返回一个字符串，
+As a query agent action, your endpoint responds with a string,
+
+475
+00:28:20,579 --> 00:28:22,390
+Vocal Bridge 会把它读出来。
+Vocal Bridge speaks it.
+
+476
+00:28:22,550 --> 00:28:23,470
+这就是整个模式。
+That's the whole pattern.
+
+477
+00:28:24,030 --> 00:28:27,994
+现在，在这个 DeepLearning.AI 环境中，设置和第 2 课一样，
+Now, same setup story as Lesson 2 in this DeepLearning.AI environment,
+
+478
+00:28:27,994 --> 00:28:32,980
+Vocal Bridge key 和 Anthropic API key 都已经配置到环境变量里。
+both the Vocal Bridge key and the Anthropic API key are already populated in the environment.
+
+479
+00:28:33,180 --> 00:28:36,340
+你不需要在自己的机器上做这里的任何额外操作。
+You don't have to do anything outside of here on your own machine.
+
+480
+00:28:36,900 --> 00:28:40,140
+在你自己机器上，你需要把这两个都设置为环境变量。
+You would set both of them yourself as environment variables.
+
+481
+00:28:40,860 --> 00:28:44,954
+简单起见先说明，我们在本 notebook 中要构建的智能体只是
+A quick note for simplicity, the agent we are going to build in this notebook is
+
+482
+00:28:44,954 --> 00:28:46,780
+一个带网页搜索工具的 Claude。
+just Claude with a web search tool.
+
+483
+00:28:46,860 --> 00:28:50,500
+在实际生产系统中，你的智能体可能会复杂得多。
+In a real production system, your agent might be way more complicated.
+
+484
+00:28:50,910 --> 00:28:55,956
+它可能是用 LangChain、LangGraph、LlamaIndex、Anthropic Agents SDK 构建的，
+Could be built with LangChain, LangGraph, LlamaIndex, the Anthropic Agents SDK,
+
+485
+00:28:55,956 --> 00:29:00,710
+也可以用你自己的内部框架，加上 RAG 工具、记忆、业务逻辑等等。
+your own in-house framework with RAG tools, memory, business logic, all of it.
+
+486
+00:29:00,990 --> 00:29:03,830
+而且无论你的智能体是什么形态，这套模式仍然适用。
+And the pattern still works, whatever your agent looks like.
+
+487
+00:29:04,190 --> 00:29:08,414
+Vocal Bridge 只需要你提供一个函数：它接收一个查询字符串，
+All Vocal Bridge needs from you is a function that takes a query string
+
+488
+00:29:08,414 --> 00:29:09,870
+然后返回一个响应。
+and returns a response.
+
+489
+00:29:10,510 --> 00:29:14,870
+这就是完整的接口。所以请确保两个 API key 都已经加载。
+That's the entire interface. So make sure both the API keys are loaded.
+
+490
+00:29:15,710 --> 00:29:22,110
+标准导入会断言这些 key 存在，然后我们就可以开始了。
+The standard imports asserting that the keys are present and we are all set.
+
+491
+00:29:22,950 --> 00:29:26,470
+再快速说明一下这些辅助函数。
+Now a quick note on the helpers as well.
+
+492
+00:29:26,630 --> 00:29:29,030
+这次有四个辅助函数：mintoken 和 Vivi，
+Four helpers this time, mintoken and Vivi,
+
+493
+00:29:29,030 --> 00:29:32,430
+你们在上一课中已经熟悉它们了。
+you are already familiar with them from the previous lesson.
+
+494
+00:29:33,030 --> 00:29:35,556
+新增的是 Start Query Server，
+The new ones are Start Query Server,
+
+495
+00:29:35,556 --> 00:29:40,862
+它会在后台线程中启动一个小型 FastAPI 服务器；还有 Voice Widget，
+which spins up a tiny FastAPI server in a background thread and Voice Widget
+
+496
+00:29:40,862 --> 00:29:45,830
+它会用正确接好的 React hook 渲染 notebook 内嵌组件。
+which renders the in-notebook widget with the right React hook wired in.
+
+497
+00:29:46,070 --> 00:29:50,750
+好，下一步是先构建纯文本版智能体。
+All right, so the next step is to build the agent text-only first.
+
+498
+00:29:51,190 --> 00:29:55,740
+这就是“智能体优先”原则的实践：每个语音智能体最初
+This is agent-first principle in action. Every voice agent starts life
+
+499
+00:29:55,740 --> 00:30:00,896
+都是文本智能体。所以我们要构建一个由 Claude 驱动、可访问网页搜索的智能体，
+as a text agent. So we're gonna build a Claude-powered agent with access to web search
+
+500
+00:30:00,896 --> 00:30:05,218
+先在不接入语音的情况下，证明它能在文本模态下独立工作。
+prove it works on its own with the text modality, no voice in the loop.
+
+501
+00:30:05,218 --> 00:30:06,810
+然后在下一步中。
+And then in the next step.
+
+502
+00:30:07,330 --> 00:30:08,770
+我们再在它外面包上语音层。
+We will wrap voice around it.
+
+503
+00:30:09,490 --> 00:30:11,720
+从语音层的视角来看，
+From the voice layer's perspective,
+
+504
+00:30:11,720 --> 00:30:16,467
+我们接下来要写的函数就是整个智能体。Vocal Bridge 只会调用它，
+the function we are about to write is the entire agent. Vocal Bridge just calls it
+
+505
+00:30:16,467 --> 00:30:18,050
+传入一个问题或查询。
+with a question or a query.
+
+506
+00:30:18,290 --> 00:30:19,290
+它返回一个字符串。
+It returns a string.
+
+507
+00:30:19,890 --> 00:30:23,820
+Vocal Bridge 再把它返回给用户。这就是完整接口。
+Vocal Bridge communicates it back to the user. That's the whole interface.
+
+508
+00:30:23,900 --> 00:30:28,268
+我们先快速进行一些导入，这里导入 Anthropic，
+So we'll start with some quick imports, importing Anthropic here,
+
+509
+00:30:28,268 --> 00:30:32,246
+实例化 Claude 客户端，然后定义 answer，
+instantiating the Claude client, and then defining answer,
+
+510
+00:30:32,246 --> 00:30:34,820
+也就是你智能体的入口。
+which is the entry point for your agent.
+
+511
+00:30:34,980 --> 00:30:39,580
+它接收一个查询，对 Claude Sonnet 46 进行推理。
+So it accepts a query, runs inference against Claude Sonnet 46.
+
+512
+00:30:40,060 --> 00:30:42,452
+我们在这里定义网页搜索工具，
+We define the web search tool here,
+
+513
+00:30:42,452 --> 00:30:46,330
+然后这个入口会从你的 LLM 返回一个响应，
+and then this entry point returns a response from your LLM
+
+514
+00:30:46,330 --> 00:30:48,970
+而且这个 LLM 可以访问网页搜索工具。
+that has access to the web search tool.
+
+515
+00:30:49,730 --> 00:30:52,010
+回到 Colab。
+Back to the Colab.
+
+516
+00:30:52,890 --> 00:30:58,930
+我们在这里用一个简单查询测试一下：让它说 hi，并且只说五个词。
+So we're gonna test it here with a quick query. Say "hi" and five words.
+
+517
+00:30:59,650 --> 00:31:05,350
+就是这样。可以看到这个智能体在文本模态下已经能正常工作。
+There you go. We can see that this agent is working with the text modality.
+
+518
+00:31:06,150 --> 00:31:09,531
+接下来，我们会通过 HTTP 把这个智能体暴露出来。
+Up next we will expose the agent over HTTP.
+
+519
+00:31:09,531 --> 00:31:15,230
+因为在生产环境中，Vocal Bridge 需要一个可以发送查询的端点。
+So Vocal Bridge needs an endpoint it can post queries to in production.
+
+520
+00:31:15,350 --> 00:31:17,350
+那只是你现有后端中的另一个路由。
+That's just another route in your existing backend.
+
+521
+00:31:17,630 --> 00:31:22,790
+可以是 Flask、FastAPI、LangChain 或 LangSmith 端点，任何你已经在用的都可以。
+Could be Flask, FastAPI, a LangChain or LangSmith endpoint, whatever you already use.
+
+522
+00:31:22,990 --> 00:31:26,950
+在 notebook 中，我们在后台线程中运行一个小型 FastAPI 服务器。
+Here in the notebook, we run a tiny FastAPI server in a background thread.
+
+523
+00:31:27,140 --> 00:31:30,740
+这样页面内组件就有地方可以调用。它只需要一次调用。
+So the in-page widget has somewhere to call. It's one single call.
+
+524
+00:31:31,900 --> 00:31:37,940
+我们启动服务器，运行健康检查，然后它会返回一个 URL。
+We spin up the server, run a health check, and it returns a URL.
+
+525
+00:31:38,100 --> 00:31:43,740
+我们可以看到查询端点现在已经在这个地址上运行了。
+So we can see that the query endpoint is now up at this location.
+
+526
+00:31:44,580 --> 00:31:46,560
+好，现在要让这套机制跑起来，
+Alright, now to make this work,
+
+527
+00:31:46,560 --> 00:31:50,900
+Vocal Bridge 智能体在 AI Agent 模式下需要两个产物。
+a Vocal Bridge agent in AI Agent mode is going to need two artifacts.
+
+528
+00:31:51,500 --> 00:31:54,079
+一个是语音层的系统提示词，
+One is a system prompt for the voice layer,
+
+529
+00:31:54,079 --> 00:31:58,500
+它告诉 Vocal Bridge 什么该委托出去，什么该自己回答。
+which tells Vocal Bridge what to delegate versus what to answer itself.
+
+530
+00:31:58,660 --> 00:32:01,140
+另一个是一份配置，
+And the other one is a configuration,
+
+531
+00:32:01,140 --> 00:32:05,220
+一个 AI agent.json 文件，用来声明另一端是什么，以便
+an AI agent.json file declaring what's on the other side so
+
+532
+00:32:05,220 --> 00:32:07,860
+Vocal Bridge 知道什么时候该转发，
+that Vocal Bridge knows when to forward
+
+533
+00:32:07,860 --> 00:32:11,300
+什么时候该委托查询，而不是自己处理。
+and delegate queries versus handling it by itself.
+
+534
+00:32:11,840 --> 00:32:15,600
+我来逐一说明，先从提示词开始。
+So let me go through both of them, starting with the prompt.
+
+535
+00:32:16,280 --> 00:32:20,332
+这是语音层提示词。关键思路就在最上面：
+This is the voice layer prompt. The key idea is right at the top,
+
+536
+00:32:20,332 --> 00:32:22,280
+“你是耳朵和嘴巴。”
+you are the ears and the mouth.
+
+537
+00:32:23,000 --> 00:32:26,165
+“Claude 是大脑。不要自己编造答案。”
+Claude is the brain. Don't make up answers.
+
+538
+00:32:26,165 --> 00:32:31,880
+把每个重要问题都委托给端点，也就是智能体端点。
+Delegate every substantial question to the endpoint, to the agent endpoint.
+
+539
+00:32:32,210 --> 00:32:36,130
+这里最重要的部分是 bridge line instruction。
+And the most important section here is the bridge line instruction.
+
+540
+00:32:36,930 --> 00:32:39,581
+当 Vocal Bridge 委托查询的那一刻，
+The moment Vocal Bridge delegates a query,
+
+541
+00:32:39,581 --> 00:32:43,998
+它必须马上先说一句简短的话，比如“稍等，我查一下”。
+It has to immediately say something short like, "Hang on, checking that,"
+
+542
+00:32:43,998 --> 00:32:47,974
+否则用户只能干等 1 到 6 秒
+Because otherwise the user just sits in dead air for 1 to 6 seconds
+
+543
+00:32:47,974 --> 00:32:50,330
+等 Claude 生成回复。
+while Claude comes up with a response.
+
+544
+00:32:51,010 --> 00:32:54,650
+这句衔接语就是“感觉快”和“感觉坏了”之间的差别。
+That bridge line is the difference between feeling fast and feeling broken.
+
+545
+00:32:55,390 --> 00:32:56,310
+这点相信我。
+Trust me on that one.
+
+546
+00:32:56,910 --> 00:32:59,283
+这是 AI 智能体的 JSON 文件。
+And here's the AI agent JSON file.
+
+547
+00:32:59,283 --> 00:33:03,520
+三个标志会为 Worker Bridge 开启 AI 智能体模式。
+Three flags turn AI agent mode on for Worker Bridge.
+
+548
+00:33:03,920 --> 00:33:07,788
+Description 告诉 Worker Bridge 你的智能体擅长什么。
+Description tells Worker Bridge what your agent's good at.
+
+549
+00:33:07,788 --> 00:33:09,840
+也就是它擅长什么？
+So what is the specialization?
+
+550
+00:33:09,960 --> 00:33:12,560
+你的智能体应该执行什么任务？
+What is the task your agent is supposed to carry out?
+
+551
+00:33:12,640 --> 00:33:17,520
+这样它就知道什么时候该转交，什么时候自己处理闲聊或对话。
+And that's how it knows when to delegate versus handle small talk or conversation itself.
+
+552
+00:33:17,720 --> 00:33:21,900
+在这个例子中，description 是带网络搜索的 Claude。它知道一般知识、
+In this case, description is Claude with web search. It knows general knowledge,
+
+553
+00:33:21,900 --> 00:33:25,050
+时事，并且会转发任何实质性问题。
+current events, and it'll forward any substantial question.
+
+554
+00:33:25,490 --> 00:33:27,332
+它只自己处理闲聊。
+Only handle small talk yourself.
+
+555
+00:33:27,332 --> 00:33:30,490
+这一段是专门给 Vocal Bridge 的指令。
+This specific section is an instruction to Vocal Bridge.
+
+556
+00:33:30,930 --> 00:33:33,846
+最后，把 verbatim 设为 false 可以确保
+And finally, setting verbatim to false ensures
+
+557
+00:33:33,846 --> 00:33:38,290
+Vocal Bridge 会为自然语音播报轻微润色措辞。
+that Vocal Bridge will lightly polish phrasing for natural voice delivery.
+
+558
+00:33:38,370 --> 00:33:42,130
+比如合同编号、引用这类内容，都会被去掉。
+So contract numbers, drop citations, that kind of thing.
+
+559
+00:33:42,680 --> 00:33:48,760
+但如果你想要逐字逐句的精确反馈，只需把 verbatim 改为 true。
+But if you want exact word-for-word feedback, you can just flip verbatim to true.
+
+560
+00:33:49,040 --> 00:33:50,480
+好，现在我们来创建智能体。
+All right. Now we create the agent.
+
+561
+00:33:50,640 --> 00:33:55,600
+我们只需把 prompt 和 AI 智能体配置传给 CLI，再加上常用参数。
+We just pass the prompt and the AI agent configuration to the CLI along with the usual flags.
+
+562
+00:33:55,880 --> 00:33:57,200
+注意 greeting 是空的。
+Note the greeting is empty.
+
+563
+00:33:57,520 --> 00:34:02,265
+开场白由 Claude 负责，而不是 Vocal Bridge。使用同样的 if-else
+Claude's gonna own the opening line, not Vocal Bridge. Using the same if-else,
+
+564
+00:34:02,265 --> 00:34:03,360
+模式，这里是为了
+pattern here for
+
+565
+00:34:04,240 --> 00:34:08,320
+确保这是幂等的：沙箱中预分配的 ID 会被复用。
+Making sure that this is idempotent: pre-provisioned ID in a sandbox gets reused.
+
+566
+00:34:08,440 --> 00:34:10,680
+否则我们会从头创建一个智能体。
+Otherwise we will create an agent from scratch.
+
+567
+00:34:11,200 --> 00:34:12,640
+现在来创建 widget。
+Now it's time to create the widget.
+
+568
+00:34:13,320 --> 00:34:18,360
+这个 widget 会连接 Vocal Bridge，监听 query agent 事件，
+This widget will connect to Vocal Bridge, listen for the query agent event,
+
+569
+00:34:18,360 --> 00:34:21,640
+向我们刚创建的本地 endpoint 发送请求，
+post to your local endpoint that we just created,
+
+570
+00:34:21,640 --> 00:34:24,600
+并返回一个智能体响应。
+and it'll reply back with an agent response.
+
+571
+00:34:25,160 --> 00:34:29,320
+其他一切——转写文本、音频、对话衔接逻辑，
+Everything else, the transcript, the audio, the conversational glue,
+
+572
+00:34:29,320 --> 00:34:31,400
+全部由 Vocal Bridge 处理。
+all of it is handled by Vocal Bridge.
+
+573
+00:34:31,920 --> 00:34:33,988
+我们在这里快速运行一下。
+So we'll run it real quick here.
+
+574
+00:34:33,988 --> 00:34:38,680
+我们会点击 connect，然后问 Claude 一个需要联网的问题。
+We will click connect and then ask Claude something that needs the web.
+
+575
+00:34:39,120 --> 00:34:45,000
+嘿，Nvidia 昨天的收盘价是多少？我帮你查一下，稍等。
+Hey, what was Nvidia's closing price yesterday? Let me check that for you. One moment.
+
+576
+00:34:51,470 --> 00:34:55,969
+Nvidia 昨天收盘价是 220.61 美元，下跌
+Nvidia's closing price yesterday was two hundred twenty dollars sixty-one cents, down
+
+577
+00:34:55,969 --> 00:35:00,093
+0.769%，较前收盘价 222 美元
+0.769% from the previous close of two hundred twenty-two dollars
+
+578
+00:35:00,093 --> 00:35:01,030
+32 美分。
+thirty-two cents.
+
+579
+00:35:01,510 --> 00:35:04,534
+当日最低价是 217.91 美元
+The day's low was two hundred seventeen dollars ninety-one cents
+
+580
+00:35:04,534 --> 00:35:07,670
+最高价是 224.48 美元。
+and the high was two hundred twenty-four dollars forty-eight cents.
+
+581
+00:35:08,630 --> 00:35:08,990
+很好。
+Great.
+
+582
+00:35:09,030 --> 00:35:13,868
+你可能已经注意到，当我刚才只是在对话、
+So as you might have noticed when I was just having a conversation,
+
+583
+00:35:13,868 --> 00:35:18,090
+闲聊，或者只是问智能体最近怎么样时。
+making small talk or just asking the agent how it's going.
+
+584
+00:35:18,610 --> 00:35:22,490
+它决定自己处理这段对话，所以自己回复了。
+It decided to hold the conversation itself, so it responded by itself.
+
+585
+00:35:22,970 --> 00:35:26,917
+但当我问 Nvidia 昨天的收盘价是多少时，
+But then when I asked what was Nvidia's closing price yesterday,
+
+586
+00:35:26,917 --> 00:35:31,814
+它知道需要把那个查询转发并委托给底层智能体，
+it knew that it needs to forward and delegate that query to the underlying agent,
+
+587
+00:35:31,814 --> 00:35:33,130
+我们可以在这里看到。
+which we can see here.
+
+588
+00:35:33,370 --> 00:35:37,603
+所以它把查询转发到我们刚创建的 endpoint，
+So it forwarded that query to the endpoint that we just created,
+
+589
+00:35:37,603 --> 00:35:39,760
+然后带回了响应。
+and it came back with a response.
+
+590
+00:35:40,120 --> 00:35:44,280
+这是 Claude 给出的回复，它再把这个回复传达给我。
+This is the response that Claude came out with, and it communicated that back to me.
+
+591
+00:35:44,960 --> 00:35:48,720
+这就是给现有 AI 智能体配上语音的方式。
+And that's how you give voice to an existing AI agent.
+
+592
+00:35:49,880 --> 00:35:52,218
+顺便做点收尾工作，
+And just a little housekeeping here,
+
+593
+00:35:52,218 --> 00:35:57,121
+我们先停掉 query server，这样如果稍后需要，我还能再运行一个。好，
+we will stop the query server so I can run another one later if you need to. Okay,
+
+594
+00:35:57,121 --> 00:35:58,780
+现在你已经看到它运行了。
+so now you've seen it work.
+
+595
+00:36:00,000 --> 00:36:06,480
+我们来回顾一下它实际是如何工作的，以及 Vocal Bridge 如何与你的智能体连接。
+Let's recap how it actually works and how Vocal Bridge connects with your agent.
+
+596
+00:36:06,680 --> 00:36:10,200
+整个“给我的 LLM 配上语音”的接线，只需要一个 React hook。
+The whole "give my LLM a voice" wiring is just one React hook.
+
+597
+00:36:10,320 --> 00:36:14,530
+我们使用 useAIAgent，并利用 onQuery handler 来连接它
+useAIAgent and we leverage the onQuery handler to connect it
+
+598
+00:36:14,530 --> 00:36:18,080
+并指向你的智能体所在的 endpoint。
+and point it to the endpoint where your agent lives.
+
+599
+00:36:18,280 --> 00:36:21,803
+每句口头提问都会作为 query 进入，而你的智能体返回的任何内容，
+Every spoken question arrives as a query, and whatever your agent returns,
+
+600
+00:36:21,803 --> 00:36:23,480
+Vocal Bridge 都会把它传达回来。
+Vocal Bridge communicates it back.
+
+601
+00:36:23,600 --> 00:36:27,280
+这就是从文本聊天到语音聊天的全部客户端差异。
+That's the entire client-side delta from text chat to voice chat.
+
+602
+00:36:27,420 --> 00:36:31,648
+它能与 Claude 配合，你懂的，比如 GPT、Gemini、你微调的模型，
+It works with Claude, you know, GPT, Gemini, your fine-tuned model,
+
+603
+00:36:31,648 --> 00:36:34,780
+你的 RAG 技术栈和智能体框架，都可以。
+your RAG stack and agent framework, whatever.
+
+604
+00:36:35,140 --> 00:36:39,860
+任何接收文本并输出文本的东西都能配合这套设置使用。
+Anything that takes text in and turns text out will work with the setup.
+
+605
+00:36:40,020 --> 00:36:44,220
+完成了第 3 课，非常棒。我们下一课见。
+So great job going through Lesson 3. See you in the next one.
+
+606
+00:36:45,260 --> 00:36:48,108
+到目前为止，每一段语音对话都是由用户发起的，
+So far, users have initiated every voice conversation,
+
+607
+00:36:48,108 --> 00:36:50,410
+但如果你的智能体能主动拿起电话呢？
+but what if your agent could pick up the phone?
+
+608
+00:36:50,930 --> 00:36:53,702
+在本课中，你将给智能体一个 make phone call 工具，
+In this lesson, you will give the agent a make phone call tool,
+
+609
+00:36:53,702 --> 00:36:57,290
+当它判断打电话是正确动作时，就会拨出真实电话号码。
+and when it decides calling is the right action, it'll dial a real phone number.
+
+610
+00:36:57,530 --> 00:36:59,522
+用户会接听并进行对话，
+The user will answer, have a conversation,
+
+611
+00:36:59,522 --> 00:37:01,570
+你会实时看到对话转写流出。
+and you will see the transcript stream live.
+
+612
+00:37:02,050 --> 00:37:02,850
+我们开始写代码吧。
+Let's get coding.
+
+613
+00:37:03,810 --> 00:37:08,610
+好，第 2 和第 3 课讲的是由用户发起的对话。
+All right, Lessons 2 and 3 were about conversations that the user initiated.
+
+614
+00:37:09,080 --> 00:37:11,672
+响应一次点击的语音对话，
+Voice conversations that respond to a tap,
+
+615
+00:37:11,672 --> 00:37:16,640
+围绕用户已经在交谈的智能体展开的语音对话。
+voice conversations that wrap around an agent that the user is already talking to.
+
+616
+00:37:16,800 --> 00:37:19,240
+在第 4 课中，我们反转方向。
+In Lesson 4, we flip the direction.
+
+617
+00:37:19,880 --> 00:37:21,600
+大多数语音智能体都是接听方。
+Most voice agents are receivers.
+
+618
+00:37:22,520 --> 00:37:24,413
+用户发起对话。
+The user starts the conversation.
+
+619
+00:37:24,413 --> 00:37:28,720
+但很多真实工作流需要智能体自己发起对话。
+But a lot of real workflows need the agent to initiate the conversation itself.
+
+620
+00:37:29,090 --> 00:37:33,376
+给候选人打电话确认是否有空，给客户拨号更新订单状态，
+Call a candidate to confirm availability, dial a customer to update them on an order,
+
+621
+00:37:33,376 --> 00:37:35,610
+在诊疗后与患者进行回访。
+check in with the patient after a procedure.
+
+622
+00:37:36,130 --> 00:37:38,984
+所以本课的思路转换非常简单。
+So the reframe for this lesson is quite simple.
+
+623
+00:37:38,984 --> 00:37:42,130
+语音是你的 LLM 选择调用的一个函数调用。
+Voice is a function call your LLM chooses to invoke.
+
+624
+00:37:42,410 --> 00:37:45,050
+与发送邮件或查询数据库的形式相同。
+Same shape as send email or query database.
+
+625
+00:37:45,290 --> 00:37:48,129
+今天，我们要给 Claude 一个 make phone call 工具，
+Today, we are going to hand Claude a make phone call tool
+
+626
+00:37:48,129 --> 00:37:49,610
+然后看它决定是否使用。
+and watch it decide to use it.
+
+627
+00:37:50,000 --> 00:37:54,400
+在我们继续之前，先用一页幻灯片说明为什么自己实际构建这个并不简单。
+Before we go further, one slide on why this is nontrivial to actually build yourself.
+
+628
+00:37:54,600 --> 00:37:56,160
+让 LLM 打一个电话。
+The LLM makes a phone call.
+
+629
+00:37:56,320 --> 00:38:00,080
+听起来像底层一行代码，但实际需要把这些都接好。
+Sounds like one line of code under the hood, here's what has to be wired up.
+
+630
+00:38:00,400 --> 00:38:04,911
+你需要一个电话服务提供商，比如 Twilio、Plivo、Telnyx，并具备经过验证的主叫号码，
+You need a telephony provider like Twilio, Plivo, Telnyx with verified caller ID
+
+631
+00:38:04,911 --> 00:38:07,440
+并在正确国家/地区配置一个号码。
+and a number provisioned in the right country.
+
+632
+00:38:07,960 --> 00:38:13,597
+你需要一条配置了外呼的 SIP 中继、一个拨号方案、格式正确的号码、
+You need a SIP trunk with outbound config, a dial plan, rightly formatted number,
+
+633
+00:38:13,597 --> 00:38:16,830
+主叫号码、轮换策略等等。
+caller ID, rotation policy and all that stuff.
+
+634
+00:38:16,990 --> 00:38:20,966
+你需要一个实时媒体桥，把 SIP 音频桥接到实时模型中
+You need a real-time media bridge to bridge SIP audio into the real-time model
+
+635
+00:38:20,966 --> 00:38:22,670
+并处理编解码转换。
+and handle codec conversion.
+
+636
+00:38:22,990 --> 00:38:24,863
+你还需要一个被叫方智能体，
+You will also need a callee-side agent,
+
+637
+00:38:24,863 --> 00:38:28,550
+也就是第二个语音智能体，用来与你这一端的智能体建立对话。
+the second voice agent to set up the conversation with the agent on your end.
+
+638
+00:38:28,710 --> 00:38:32,156
+你还需要实时可观测性。比如转写文本、工具事件，
+You also need live observability. So transcripts, tool events,
+
+639
+00:38:32,156 --> 00:38:35,100
+在通话进行时流回你的应用。
+streaming back to your app while the call is in progress.
+
+640
+00:38:35,300 --> 00:38:36,900
+最后，你还需要合规性。
+And finally, you also need compliance.
+
+641
+00:38:37,420 --> 00:38:41,428
+这就是构建方式：Vocal Bridge 将这一切折叠为一次 CLI 调用，
+That's the build: Vocal Bridge collapses all of it to one CLI call,
+
+642
+00:38:41,428 --> 00:38:42,740
+VB call phone number。
+VB call phone number.
+
+643
+00:38:43,300 --> 00:38:45,628
+我们之所以把这种简化做得干净利落，
+And the reason we made that collapse cleanly
+
+644
+00:38:45,628 --> 00:38:48,900
+是为了让语音能像任何其他函数一样放在你的 LLM 工具箱里。
+so voice can sit in your LLM's toolbox like any other function.
+
+645
+00:38:49,620 --> 00:38:50,980
+这正是本课的全部要点。
+That's the whole point of this lesson.
+
+646
+00:38:51,580 --> 00:38:56,330
+一旦你的 LLM 可以外呼，你就不会再认为电话是仅供人类使用的渠道。
+Once your LLM can dial out, you stop thinking of phone calls as a human-only channel.
+
+647
+00:38:56,570 --> 00:38:59,690
+而且少数几种模式在各行各业反复出现。
+And a handful of patterns recur across industries.
+
+648
+00:39:00,160 --> 00:39:04,847
+预约确认、候选人触达、订单和物流更新、
+Appointment confirmations, candidate outreach, order and shipment updates,
+
+649
+00:39:04,847 --> 00:39:08,415
+B2B 销售的线索资格筛选、诊疗后回访、
+lead qualification for B2B sales, post-procedure check-ins,
+
+650
+00:39:08,415 --> 00:39:13,381
+汽车和银行等行业的服务提醒，也可以利用友好的电话进行
+service reminders for auto and banking industries can also leverage friendly calls for
+
+651
+00:39:13,381 --> 00:39:15,480
+续约或计划性维护。
+renewal or scheduled maintenance.
+
+652
+00:39:15,920 --> 00:39:18,640
+这些不是空想。它们今天已经在生产环境中运行。
+These aren't speculative. They are running in production today.
+
+653
+00:39:19,040 --> 00:39:23,370
+其中一些正在悄悄地为整个运营团队节省数十万小时。
+Some of them are quietly saving entire ops teams hundreds of thousands of hours.
+
+654
+00:39:23,930 --> 00:39:27,770
+好，为了让它更具体，我来走一遍其中一个用例。
+All right, so to make this concrete, let me walk through one of these use cases.
+
+655
+00:39:28,010 --> 00:39:31,815
+在这个例子中，一家诊所要求你的 LLM，也就是一个由 Claude 驱动的智能体，
+A clinic asks your LLM, or a Claude-powered agent in this case,
+
+656
+00:39:31,815 --> 00:39:34,250
+确认明天的预约。
+to confirm tomorrow's appointments.
+
+657
+00:39:34,610 --> 00:39:37,167
+以下是单次通话在整个系统中会发生的事情。
+Here's what travels across the system for a single call.
+
+658
+00:39:37,167 --> 00:39:38,690
+操作员给 Claude 一个任务。
+The operator gives Claude a task.
+
+659
+00:39:38,850 --> 00:39:42,850
+给这个号码上的 Aditi 打电话，确认她明天下午 2 点的预约。
+Call Aditi at this number to confirm her 2 PM appointment tomorrow.
+
+660
+00:39:43,090 --> 00:39:47,870
+Claude 去调用 make phone call 工具，然后 Vocal Bridge 拨打该号码。
+Claude reaches for the tool, make phone call, and then Vocal Bridge dials that number.
+
+661
+00:39:48,230 --> 00:39:52,830
+Vocal Bridge 可以处理语音留言，还可以处理通话后的处理任务。
+Vocal Bridge can handle voicemail. It can also handle post-call processing tasks.
+
+662
+00:39:53,230 --> 00:39:57,471
+所以当通话结束时，工具会返回一份结构化摘要给 Claude，并附上
+So when the call ends, the tool returns a structured summary back to Claude with
+
+663
+00:39:57,471 --> 00:40:01,070
+结果备注、转写文本的 URL 和录音的 URL。
+outcome notes, the URL of the transcript, the URL of the recording.
+
+664
+00:40:01,350 --> 00:40:03,484
+Claude 会把结果回报给操作员，
+Claude reports back to the operator with the result
+
+665
+00:40:03,484 --> 00:40:05,470
+然后继续处理列表中的下一个预约。
+and moves on to the next appointment in the list.
+
+666
+00:40:05,830 --> 00:40:09,384
+这就是把语音当作工具。这里的 LLM 是编排者。
+That's voice as a tool. The LLM here is the orchestrator.
+
+667
+00:40:09,384 --> 00:40:11,880
+语音只是它能做的其中一件事。
+Voice is just one of the things it can do.
+
+668
+00:40:12,000 --> 00:40:14,680
+那我们打开 notebook，观察 Claude 拨打电话。
+So let's open the notebook and watch Claude make a call.
+
+669
+00:40:14,880 --> 00:40:17,560
+这是整门课中最新颖的一种交互界面。
+So this is the most novel surface in the whole course.
+
+670
+00:40:17,800 --> 00:40:21,320
+这就是你的 LLM 或智能体工作流真正拿起电话的地方。
+This is where your LLM or your agentic workflow picks up the phone.
+
+671
+00:40:21,720 --> 00:40:23,893
+这里的架构重构在于
+The architectural reframe here is
+
+672
+00:40:23,893 --> 00:40:27,640
+语音现在成了你的 LLM 选择调用的一个函数调用。
+that voice is now a function call your LLM chooses to invoke.
+
+673
+00:40:27,880 --> 00:40:31,320
+和电子邮件、数据库查询是同一种形态。
+Same shape as an email, same shape as query database.
+
+674
+00:40:31,520 --> 00:40:35,480
+我们只是要交给 Claude 一个 make phone call 工具，然后看它决定使用它。
+We're just gonna hand Claude a make phone call tool and watch it decide to use it.
+
+675
+00:40:35,840 --> 00:40:39,120
+另外，我要强调一下这节课的安全框架。
+And let me call out the safety framing on this lesson.
+
+676
+00:40:39,440 --> 00:40:41,888
+外呼语音是一项很强的能力，
+Outbound Voice is a powerful capability,
+
+677
+00:40:41,888 --> 00:40:46,645
+虽然 Vocal Bridge 支持拨打全球任何电话号码，但为了保持
+and while Vocal Bridge supports calling any phone number across the world to keep
+
+678
+00:40:46,645 --> 00:40:51,541
+这节课的干净可控，你的智能体拨出的每一通电话都会打给另一个 Vocal Bridge 智能体，
+this lesson clean, every call your agent places goes to another Vocal Bridge agent,
+
+679
+00:40:51,541 --> 00:40:52,800
+也就是课程管理员。
+the course managers.
+
+680
+00:40:53,240 --> 00:40:54,560
+现在来看环境设置。
+Now onto the setup.
+
+681
+00:40:55,230 --> 00:40:59,750
+和之前类似的设置，还是原来的 Vocal Bridge key 和 Anthropic key。
+Similar setup as before, same old Vocal Bridge key and Anthropic key.
+
+682
+00:40:59,830 --> 00:41:03,916
+CLI 已完成认证，所有内容都已在这个深度学习环境中预置好，
+The CLI is authenticated, all pre-populated in this deep learning environment,
+
+683
+00:41:03,916 --> 00:41:05,990
+你不需要在别的地方做任何设置。
+nothing for you to set up outside of here.
+
+684
+00:41:06,070 --> 00:41:08,121
+那些都需要你自己处理。
+You would handle all of that yourself.
+
+685
+00:41:08,121 --> 00:41:11,070
+现在我来指出这节课中的三个新辅助函数。
+Now let me call out the three new helpers in this lesson.
+
+686
+00:41:11,390 --> 00:41:17,270
+set_call_purpose 会把每次通话的目的注入到 caller 智能体的提示中。
+Set call purpose injects the per-call purpose into the caller agent's prompt.
+
+687
+00:41:17,350 --> 00:41:20,080
+call 会帮你拨打课程中的被叫方。
+Call dials the course callee for you.
+
+688
+00:41:20,320 --> 00:41:23,011
+号码从环境变量中读取，
+The number's pulled from an environment variable
+
+689
+00:41:23,011 --> 00:41:26,884
+latest_session 和 download_recording 用于在通话结束后获取音频
+and latest session plus download recording are for grabbing the audio
+
+690
+00:41:26,884 --> 00:41:28,000
+在通话结束之后。
+after the call ends.
+
+691
+00:41:29,280 --> 00:41:31,640
+好，所以 caller 是你可以控制的智能体。
+Okay? So the caller is the agent you control.
+
+692
+00:41:31,960 --> 00:41:35,360
+下面这个模式会让 purpose 标记真正塑造通话内容。
+And here's the pattern that makes the purpose flag actually shape the call.
+
+693
+00:41:35,520 --> 00:41:37,986
+caller 有一个基础提示，其中包含身份、
+The caller has a base prompt that has the identity,
+
+694
+00:41:37,986 --> 00:41:41,920
+对话风格和安全护栏，但没有具体的通话理由。
+conversation style and safety guardrails, but no specific reason for calling.
+
+695
+00:41:42,250 --> 00:41:45,010
+这个理由，也就是我们这里说的 purpose，
+The reason, what we call the purpose here,
+
+696
+00:41:45,010 --> 00:41:48,637
+会在每次通话时由 set_caller_purpose 这个辅助函数注入，
+gets injected per call by the set caller purpose helper
+
+697
+00:41:48,637 --> 00:41:50,530
+就是我们刚刚在设置中看到的那个。
+that we just saw in the setup.
+
+698
+00:41:50,610 --> 00:41:52,107
+正如你在提示中看到的，它写着：
+As you can see in the prompt, it says,
+
+699
+00:41:52,107 --> 00:41:56,050
+本次通话的具体目的已在提示底部的上下文块中提供。
+the specific purpose of this call is provided in the context block at the bottom of this prompt.
+
+700
+00:41:56,370 --> 00:41:59,170
+同一个 caller 智能体，每次通话使用不同的运行时上下文。
+Same caller agent, different runtime context for every call.
+
+701
+00:41:59,170 --> 00:42:00,840
+这就是这个标记生效的方式。
+And that's how the flag becomes real.
+
+702
+00:42:01,040 --> 00:42:04,611
+好。现在我们创建或复用 caller，启用外呼，
+Okay. Now we create or reuse the caller, enable outbound calling,
+
+703
+00:42:04,611 --> 00:42:07,720
+接受服务条款，照常用 CLI 操作即可。
+accept the terms of service, just using the CLI as usual.
+
+704
+00:42:08,160 --> 00:42:10,115
+很好。同样的幂等 if-else 模式。
+Great. Same idempotent if-else pattern.
+
+705
+00:42:10,115 --> 00:42:13,680
+如果环境中已经预置了智能体 ID，我们就复用它。
+If the agent ID is already pre-provisioned in the environment, we reuse it.
+
+706
+00:42:13,760 --> 00:42:15,640
+否则我们就创建一个全新的智能体。
+Otherwise we create a fresh new agent.
+
+707
+00:42:16,360 --> 00:42:18,881
+另外，我们会把 caller 智能体
+And additionally we pin the caller agent
+
+708
+00:42:18,881 --> 00:42:21,920
+用 CLI 设为当前选中的 Vocal Bridge 智能体。
+as the selected Vocal Bridge agent using the CLI.
+
+709
+00:42:22,600 --> 00:42:28,160
+这一步很重要，因为接下来两个单元格会调用 VB Prompt Set 和 VB Call。
+This part matters because the next two cells are going to call VB Prompt Set and VB Call.
+
+710
+00:42:28,800 --> 00:42:31,827
+这两个都是 Vocal Bridge 提供的 CLI 命令，
+These are both CLI commands that Vocal Bridge offers
+
+711
+00:42:31,827 --> 00:42:36,200
+而且两者都会作用于当前上下文中选中的那个智能体。
+and both of those act on whichever agent is currently selected in the context.
+
+712
+00:42:36,320 --> 00:42:39,560
+所以如果你不固定选中，我们可能会不小心改错智能体。
+So if you don't pin, we could accidentally mutate the wrong agent.
+
+713
+00:42:40,040 --> 00:42:44,113
+下一步是为你的智能体定义工具 schema。这里，
+Next step is to define the tool schema for your agent. In this case,
+
+714
+00:42:44,113 --> 00:42:45,520
+是一个由 Claude 驱动的智能体。
+a Claude-powered agent.
+
+715
+00:42:45,870 --> 00:42:48,493
+这是标准的 Anthropic 工具格式。
+This is standard Anthropic tool format.
+
+716
+00:42:48,493 --> 00:42:53,430
+我特别想让你注意的是，这里的 purpose 是必填字段。
+The thing I really want you to notice is that purpose is a required field here.
+
+717
+00:42:53,710 --> 00:42:55,510
+正是它塑造了对话内容。
+That's the bit that shapes the conversation.
+
+718
+00:42:56,030 --> 00:43:00,652
+就是被注入到电话通话中的上下文。没有它，
+That's the context that gets injected into the phone call. Without it,
+
+719
+00:43:00,652 --> 00:43:03,550
+被叫方就不知道该扮演什么场景。
+the callee has no idea what scenario to play.
+
+720
+00:43:03,870 --> 00:43:09,390
+所以当 Claude 选择 make phone call 时，它会调用 helpers.py 中的 place_call。
+So when Claude picks make phone call, it calls into place_call from helpers.py.
+
+721
+00:43:09,830 --> 00:43:11,390
+而 place call 会做三件事。
+And place call does three things.
+
+722
+00:43:11,910 --> 00:43:12,150
+1.
+1.
+
+723
+00:43:12,750 --> 00:43:17,030
+使用 Set Caller Purpose 将目的写入主叫智能体的提示词。
+Bakes the purpose into the caller agent's prompt using Set Caller Purpose.
+
+724
+00:43:17,590 --> 00:43:19,670
+这就是标志真正生效的地方。
+That's where the flag really becomes real.
+
+725
+00:43:20,310 --> 00:43:20,590
+2.
+2.
+
+726
+00:43:20,830 --> 00:43:23,316
+它会拨打课程托管的 Callee 智能体，
+It dials the course-managed Callee agent,
+
+727
+00:43:23,316 --> 00:43:26,866
+这是另一个 vocal bridge 智能体，将做出响应
+which is another vocal bridge agent that's going to respond
+
+728
+00:43:26,866 --> 00:43:29,920
+并处理与主叫智能体的对话。
+and handle the conversation with the caller agent.
+
+729
+00:43:30,620 --> 00:43:34,860
+被叫方的号码来自环境变量，而不是来自 notebook 内部。
+The callee's number comes from an environment variable, not from within the notebook.
+
+730
+00:43:35,100 --> 00:43:38,660
+3. 我们将把清理后的结果返回给 Claude。
+3. We're going to return a sanitized result back to Claude.
+
+731
+00:43:39,180 --> 00:43:43,700
+呼叫 ID 和状态，不泄露任何传输层字段。
+This call ID and status, no transport-level fields leak through.
+
+732
+00:43:44,460 --> 00:43:45,980
+好了，关键时刻到了。
+Alright, moment of truth.
+
+733
+00:43:46,620 --> 00:43:51,460
+我们要给 Claude 一条用户消息，其中包含一个通话目的。
+We're going to hand Claude a user message that includes a purpose for a phone call.
+
+734
+00:43:52,030 --> 00:43:55,990
+你当然可以把这个目的改成任何合理内容，进行探索和实验。
+You can obviously change this purpose to anything reasonable and explore and experiment.
+
+735
+00:43:57,150 --> 00:43:58,950
+Claude 会读取该目的。
+Claude is going to read that purpose.
+
+736
+00:43:59,950 --> 00:44:05,291
+选用 make phone call 工具，用正确的上下文调用它，
+Pick up the make phone call tool, call it with the right context,
+
+737
+00:44:05,291 --> 00:44:07,710
+然后我们会看到电话拨出。
+and we'll see the call go out.
+
+738
+00:44:08,310 --> 00:44:12,310
+你可以看到通话已用正确的目的和正确的上下文拨出。
+You can see the call was placed with the right purpose in the right context.
+
+739
+00:44:14,050 --> 00:44:18,893
+通话是通过 Stream Call Transcript Helper 发起的。
+Call was initiated using Stream Call Transcript Helper.
+
+740
+00:44:18,893 --> 00:44:23,130
+我们已实时连接到对话中。
+We are connected to the conversation in real time.
+
+741
+00:44:23,810 --> 00:44:27,452
+这里可以看到主叫智能体和被叫智能体正在进行对话。
+Here we can see the caller agent and the callee agent having a conversation.
+
+742
+00:44:27,452 --> 00:44:29,450
+在这个例子中，用户是被叫智能体。
+The user in this case is the callee agent.
+
+743
+00:44:30,330 --> 00:44:35,770
+主叫智能体先自我介绍，然后尝试确认预约。
+The caller agent introduces itself and then tries to confirm the appointment.
+
+744
+00:44:36,660 --> 00:44:39,300
+很好，看起来这是一次简短的对话。
+Great. So it looks like it was a quick chat.
+
+745
+00:44:39,860 --> 00:44:44,060
+对话按预期完成了。
+The conversation went through as expected.
+
+746
+00:44:44,700 --> 00:44:48,100
+很快我们应该会看到会话结束的确认。
+Soon we should see confirmation that the session ended.
+
+747
+00:44:50,020 --> 00:44:51,460
+看，会话结束了。
+There you go. The session ended.
+
+748
+00:44:52,300 --> 00:44:56,300
+好的，通话已完成。每次通话都会在服务端记录。
+Okay. The call is complete. Every call is recorded server-side.
+
+749
+00:44:57,260 --> 00:45:01,683
+所以现在我们要获取最近完成的会话，下载录音文件，
+So now we're going to grab the latest completed session, download the recording file,
+
+750
+00:45:01,683 --> 00:45:05,000
+将其内联渲染，这样我们就可以在 notebook 里直接回放。
+render it inline so we can play it right back here in the notebook.
+
+751
+00:45:05,400 --> 00:45:07,626
+拉取最近完成的会话，
+Pulls the most recent completed session,
+
+752
+00:45:07,626 --> 00:45:10,115
+也就是我们的智能体刚刚拨出的电话，
+which was the call that our agent just placed,
+
+753
+00:45:10,115 --> 00:45:13,388
+打印唯一标识该会话的会话 ID，
+prints the session ID that uniquely identifies the session
+
+754
+00:45:13,388 --> 00:45:14,960
+以及通话时长。
+and the duration of the call.
+
+755
+00:45:15,360 --> 00:45:20,672
+接下来，我们将下载这段对话的录音，
+Up next, we are going to download the recording of this conversation,
+
+756
+00:45:20,672 --> 00:45:22,320
+会得到一个 MP3 文件。
+We'll have an MP3 file.
+
+757
+00:45:24,140 --> 00:45:26,740
+已下载。好了，下载完成。
+Downloaded. There you go. It's downloaded.
+
+758
+00:45:27,740 --> 00:45:35,340
+我们可以在 notebook 中内联渲染它，亲自听听对话内容。
+We can render it inline in this notebook and hear the conversation for ourselves.
+
+759
+00:45:36,300 --> 00:45:37,780
+你好，今天有什么可以帮您？
+Hi there. How can I help today?
+
+760
+00:45:39,700 --> 00:45:44,260
+嘿，我是 AI 语音智能体，打电话来确认您明天下午 2 点的预约。
+Hey, I'm an AI voice agent calling to confirm your appointment for tomorrow at 2pm.
+
+761
+00:45:44,620 --> 00:45:46,100
+这个时间您还方便吗？
+Does that time still work for you?
+
+762
+00:45:48,140 --> 00:45:51,980
+是的，明天下午两点可以。我应该计划早一点到吗？
+Yeah. Two PM tomorrow works for me. Should I plan to arrive a little early?
+
+763
+00:45:53,140 --> 00:45:55,660
+提前 10 分钟到达通常是个好主意。
+Arriving 10 minutes early is usually a great idea.
+
+764
+00:45:57,580 --> 00:45:59,020
+明白了，我会的，谢谢。
+Got it. I'll do that. Thanks.
+
+765
+00:46:01,820 --> 00:46:03,300
+好了，以上就是刚才的对话。
+Alright, so that was the conversation.
+
+766
+00:46:04,220 --> 00:46:05,300
+快速回顾一下。
+So quick recap.
+
+767
+00:46:05,620 --> 00:46:10,068
+Claude 看到用户请求，判断 make phone call 是正确工具，
+Claude saw the user's request, decided make phone call was the right tool,
+
+768
+00:46:10,068 --> 00:46:14,947
+选择了目的，拨打了电话，并把该目的写入主叫智能体的提示词，
+picked a purpose, placed the call, baked that purpose into the caller agent's prompt,
+
+769
+00:46:14,947 --> 00:46:17,100
+通过我们的 CLI 发起语音通话。
+shelled out to a voice call using our CLI.
+
+770
+00:46:18,100 --> 00:46:22,900
+然后 Worker Bridge 上的两个 AI 语音智能体通过电话进行了实时对话。
+Then two AI voice agents on Worker Bridge had a real-time conversation over the phone.
+
+771
+00:46:23,580 --> 00:46:25,282
+你流式传输了实时转录文本，
+You streamed the live transcript,
+
+772
+00:46:25,282 --> 00:46:28,100
+然后下载了录音，并内联回放。
+then downloaded the recording and played it back inline.
+
+773
+00:46:28,820 --> 00:46:33,560
+所以语音输入现在只是 Claude 工具箱中的另一个函数调用。
+So voice in is now just another function call in Claude's toolbox.
+
+774
+00:46:33,920 --> 00:46:36,480
+和发送邮件或查询数据库的形式一样。
+Same shape as send email or query database.
+
+775
+00:46:36,880 --> 00:46:40,880
+很好，你已经完成了本课，我们下一课见。
+Great job getting through this lesson, and I will see you in the next one.
+
+776
+00:46:42,600 --> 00:46:46,480
+语音系统会静默退化，只有用户抱怨时你才会发现。
+Voice systems regress silently, and you'll only find out when users complain.
+
+777
+00:46:47,000 --> 00:46:51,214
+在本课中，你将建立评估驱动开发，使用 Vocal Bridge 内置的
+In this lesson, you will set up evaluation-driven development using Vocal Bridge's built-
+
+778
+00:46:51,214 --> 00:46:52,520
+多模态评估器。
+in multimodal evaluator.
+
+779
+00:46:52,680 --> 00:46:56,568
+它会为你的通话评分，提出提示词改进建议，并帮助你发现问题
+It scores your calls, suggests prompt improvements and helps you catch issues
+
+780
+00:46:56,568 --> 00:46:58,100
+在问题进入生产环境之前。
+before they reach production.
+
+781
+00:46:58,460 --> 00:46:59,420
+我们来点有趣的。
+Let's have some fun.
+
+782
+00:47:00,180 --> 00:47:02,500
+第 2、3、4 课围绕构建展开。
+Lessons 2, 3, and 4 were about building.
+
+783
+00:47:02,900 --> 00:47:08,184
+第 5 课讲的是不要凭感觉发布，而 eval 是一种可重复的测试
+Lesson 5 is about not shipping by vibes, and eval is a repeatable test
+
+784
+00:47:08,184 --> 00:47:13,940
+它根据你真正关心的结果来给你的 AI 系统打分。
+that scores your AI system against the outcomes you actually care about.
+
+785
+00:47:14,260 --> 00:47:17,942
+可以把它想成单元测试，只不过针对的是非确定性系统
+Think of it like a unit test, but for a non-deterministic system
+
+786
+00:47:17,942 --> 00:47:19,540
+一个你无法做 diff 检查的系统。
+that you cannot diff check.
+
+787
+00:47:19,900 --> 00:47:22,820
+每一个已上线的 AI 系统都需要它们，原因如下。
+Every shipping AI system needs them, and here's why.
+
+788
+00:47:23,540 --> 00:47:27,980
+一次提示词修改上线时看似正常，却会在三个边界情况下悄悄出问题。
+A prompt edit ships clean, but quietly breaks with three edge cases.
+
+789
+00:47:28,340 --> 00:47:32,260
+更换模型会带来集成测试无法捕捉的行为变化。
+A model swap changes behavior in ways no integration test catches.
+
+790
+00:47:32,620 --> 00:47:36,224
+没有 ground truth，你只能从客户那里发现回归问题，
+Without ground truth, you find regressions from your customers,
+
+791
+00:47:36,224 --> 00:47:38,780
+而这是所有发现方式中最糟糕的一种。
+which is the worst possible place to find them.
+
+792
+00:47:39,190 --> 00:47:43,167
+如果没有评分，你无法判断所做的改动到底是在让情况变好
+And without scoring, you can't tell whether a change you made actually moved things
+
+793
+00:47:43,167 --> 00:47:44,190
+还是变差。
+forward or backward.
+
+794
+00:47:44,590 --> 00:47:47,316
+Eval 驱动开发，也就是在构建
+Eval-driven development, which is building
+
+795
+00:47:47,316 --> 00:47:51,590
+和迭代一个系统时，把 eval 分数作为主要信号。
+and iterating on a system using its eval scores as the primary signal.
+
+796
+00:47:52,150 --> 00:47:55,110
+正是这种纪律让 demo 变成产品。
+That is the discipline that turns a demo into a product.
+
+797
+00:47:55,910 --> 00:47:59,870
+文本 eval 只是比较字符串。语音可没有这种奢侈。
+Text evals just compare strings. Voice doesn't give you that luxury.
+
+798
+00:48:00,120 --> 00:48:03,853
+语音实际涉及音频、时机、语气、多轮对话，
+Voice actually involves audio, timing, tone, multiple turns,
+
+799
+00:48:03,853 --> 00:48:06,600
+以及一个会打断用户或被用户打断的智能体。
+an agent that can interrupt or be interrupted.
+
+800
+00:48:06,920 --> 00:48:10,720
+而这些都不会出现在文本 diff 甚至转录里。
+And none of that shows up in a text diff or even in a transcript.
+
+801
+00:48:11,040 --> 00:48:16,680
+有六点让语音 eval 比文本 eval 更难。第一，信号是多模态的。
+Six things make voice evals harder than text evals. One, the signal is multimodal.
+
+802
+00:48:16,880 --> 00:48:19,987
+一个语音轮次包含文本、音频、语速和韵律。
+A voice turn carries text, audio, pacing, prosody.
+
+803
+00:48:19,987 --> 00:48:22,660
+只给一个维度打分，就会漏掉其他维度。
+Score one dimension and you miss the others.
+
+804
+00:48:23,100 --> 00:48:25,340
+第二，回归是无声的。
+Number two, regressions are silent.
+
+805
+00:48:25,540 --> 00:48:27,996
+一个新的 TTS 音色，也就是文本转语音音色，
+A new TTS voice, or a text-to-speech voice,
+
+806
+00:48:27,996 --> 00:48:32,620
+在特定措辞上可能听起来很机械，而转录文本看起来完全一样。
+can sound robotic on specific phrasing and the transcript looks identical.
+
+807
+00:48:33,100 --> 00:48:36,700
+第三，轮流发言很重要。智能体是否等待用户把话说完？
+No. 3, turn-taking matters. Did the agent wait for the user to finish?
+
+808
+00:48:37,140 --> 00:48:41,500
+它是否在正确的时机打断？单靠文本无法告诉你这些。
+Did it interrupt at the right moment? Text alone can't tell you that.
+
+809
+00:48:41,540 --> 00:48:46,390
+第 4 点，通话很难重放。你无法确定性地重跑一通实时通话。
+No. 4, calls are hard to replay. You can't rerun a live call deterministically.
+
+810
+00:48:46,670 --> 00:48:51,371
+因此，录音加上结构化日志就成了你唯一的 ground truth。第 5 点，
+So recordings plus structured logs become your only ground truth. No. 5,
+
+811
+00:48:51,371 --> 00:48:52,990
+工具调用发生在对话过程中。
+Tool calls happen in line.
+
+812
+00:48:53,190 --> 00:48:58,431
+智能体是否在正确的时间用正确的参数调用了正确的函数，
+Did the agent invoke the right function at the right time with the right arguments
+
+813
+00:48:58,431 --> 00:49:02,670
+在对话过程中；第 6 点，延迟本身也是用户体验的一部分。
+Mid-conversation, and No. 6, latency itself is part of user experience.
+
+814
+00:49:03,090 --> 00:49:06,770
+一个晚了四秒的正确答案，在这里就是错误答案。
+A correct answer four seconds late is just the wrong answer here.
+
+815
+00:49:06,930 --> 00:49:10,290
+如果只对文本打分，你会漏掉大部分真正出错的地方。
+If you only score the text, you will miss most of what actually broke.
+
+816
+00:49:10,690 --> 00:49:13,970
+好，那我们实际该如何打分？有两个层次。
+Okay, so how do we actually score it? There are two layers.
+
+817
+00:49:14,490 --> 00:49:19,610
+第一层是硬性的数值指标，也就是那些真正可以度量的指标。
+First layer is just hard numerical metrics, things that are actually measurable.
+
+818
+00:49:20,730 --> 00:49:25,304
+WER，即词错误率，用于衡量转录准确性；MOS，即平均意见分，
+WER, or word error rate, for transcription accuracy, MOS, or mean opinion,
+
+819
+00:49:25,304 --> 00:49:27,210
+用于衡量合成质量。
+score for synthesis quality.
+
+820
+00:49:27,580 --> 00:49:32,576
+TTFB，即首字节时间，用于首个 token 或首段音频，延迟、轮次时长，
+TTFB, or time to first byte, for first token or first audio, latency, turn duration,
+
+821
+00:49:32,576 --> 00:49:34,633
+端到端工具调用准确率，
+end-to-end tool calling accuracy,
+
+822
+00:49:34,633 --> 00:49:38,895
+智能体是否用正确的参数调用了正确的函数，
+whether the agent called the right function with the right arguments
+
+823
+00:49:38,895 --> 00:49:41,540
+以及它是否触发了工具调用。
+and whether it triggered a tool call at all.
+
+824
+00:49:41,820 --> 00:49:45,649
+完成率。这些都是可以确定性计算的指标。
+Completion rate. These are all things that you can compute deterministically.
+
+825
+00:49:45,649 --> 00:49:47,820
+你可以用这些数字建立基线。
+You can create a baseline with these numbers.
+
+826
+00:49:48,300 --> 00:49:50,220
+你可以在回归出现时让构建失败。
+You can fail builds on regressions.
+
+827
+00:49:50,840 --> 00:49:56,189
+第二层，使用多模态 LLM 作为评判者来评估定性方面，
+Now, the second layer: using a multimodal LLM as a judge for the qualitative things,
+
+828
+00:49:56,189 --> 00:50:00,280
+这些是数值指标看不到的。智能体的语气是否与情境匹配？
+the metrics can't see. Did the agent's tone match the situation?
+
+829
+00:50:00,640 --> 00:50:03,677
+轮流发言是否自然，没有尴尬的停顿？
+Was the turn-taking natural with no awkward pauses?
+
+830
+00:50:03,677 --> 00:50:06,360
+通话是否真正达成了目标？
+Did the call actually achieve the objective?
+
+831
+00:50:06,600 --> 00:50:08,926
+它是否优雅地处理了用户偏离脚本的情况？
+Did it gracefully handle the user going off script?
+
+832
+00:50:08,926 --> 00:50:11,360
+它在被打断或出错后恢复得如何？
+How well did it recover from interruptions or errors?
+
+833
+00:50:11,720 --> 00:50:15,734
+而且非常重要的是，评判者会针对下一次提出具体的提示词修改建议，
+And really importantly, the judge suggests concrete prompt edits for next time
+
+834
+00:50:15,734 --> 00:50:18,370
+这样你就能改进智能体及其表现。
+so that you can improve the agent and its performance.
+
+835
+00:50:18,730 --> 00:50:21,243
+数值指标捕捉的是客观问题，
+Numerical metrics catch what's objective
+
+836
+00:50:21,243 --> 00:50:25,570
+而评判者捕捉的是否则不可见的定性偏移。
+and the judge catches the qualitative drift that's otherwise invisible.
+
+837
+00:50:25,890 --> 00:50:30,450
+两者结合，尤其是规模化使用时，才让语音 eval 变得可操作。
+Together and especially at scale, that's what makes voice evals tractable.
+
+838
+00:50:31,050 --> 00:50:36,265
+所以这个 notebook 会引导你在真实录音通话上运行这些评估，只需一条 CLI 命令
+So the notebook will have you run this on real recorded calls with one single CLI
+
+839
+00:50:36,265 --> 00:50:37,450
+命令是 VV eval。
+command: VV eval.
+
+840
+00:50:37,830 --> 00:50:41,990
+你只需要传入通话的 session ID 和目标。
+All you have to do is pass it the session ID for the call and the objective.
+
+841
+00:50:42,270 --> 00:50:46,468
+它把所有内容打包在一起：对话的音频录音、
+It bundles everything, the audio recording of the conversation,
+
+842
+00:50:46,468 --> 00:50:48,910
+转写文本、智能体配置、
+the transcript, agent configuration,
+
+843
+00:50:48,910 --> 00:50:52,421
+工具调用日志，整合成发送给多模态评判器的 payload
+the tool call log into a payload for the multimodal judge
+
+844
+00:50:52,421 --> 00:50:57,230
+然后它会返回一份结构化报告，你可以将其接入 CI/CD 流程。
+which will then return a structured report you can wire into your CI/CD loop.
+
+845
+00:50:57,630 --> 00:50:59,190
+示例报告大致长这样。
+Sample report looks something like this.
+
+846
+00:50:59,720 --> 00:51:03,640
+顶部会有目标：确认明天下午 2 点的预约。
+You will have the objective at the top confirm appointment for tomorrow at 2 PM.
+
+847
+00:51:03,920 --> 00:51:06,409
+比如结果会显示为已确认。
+Let's say something like outcome confirmed.
+
+848
+00:51:06,409 --> 00:51:09,880
+它会给出一个 10 分制的总分，然后还有细分项。
+It'll give you an overall score out of 10 and then the breakdown.
+
+849
+00:51:10,280 --> 00:51:14,649
+比如对话质量如何，话轮转换是怎样的，
+So how was the conversation quality, what the turn taking was like,
+
+850
+00:51:14,649 --> 00:51:17,040
+是自然还是生硬？
+whether it was natural or awkward?
+
+851
+00:51:17,440 --> 00:51:19,693
+以及来电者的满意度如何。
+And how was the satisfaction of the caller.
+
+852
+00:51:19,693 --> 00:51:23,380
+你可以在场景中描述和定义所有这些标准。
+You can describe and define all of this criteria in the scenario.
+
+853
+00:51:23,500 --> 00:51:27,073
+而最重要的部分，也是真正帮你闭环的，
+And the most important part, which will actually help you close the loop,
+
+854
+00:51:27,073 --> 00:51:30,060
+是关于编辑智能体配置的建议。
+is a suggestion for editing the configuration for the agent.
+
+855
+00:51:30,260 --> 00:51:35,380
+比如可能是：让开场问候更柔和，因为当前的措辞
+It could be something like soften the opening greeting because the current phrasing,
+
+856
+00:51:35,380 --> 00:51:37,940
+听起来像照着稿子念，显得不自然。
+reads as scripted, comes off as unnatural.
+
+857
+00:51:38,180 --> 00:51:41,895
+也许你可以试试：“hi，只是确认一下你明天下午 2 点的时间。”
+Maybe you can try, hi, just checking in on your 2 PM tomorrow.
+
+858
+00:51:41,895 --> 00:51:43,530
+所以这就是一个完整的闭环。
+So that is a complete loop.
+
+859
+00:51:43,930 --> 00:51:44,970
+我们打开 notebook。
+Let's open the notebook.
+
+860
+00:51:45,610 --> 00:51:49,490
+好，进入第 5 课：语音 AI 评估。
+All right, time for Lesson 5, voice AI evals.
+
+861
+00:51:50,450 --> 00:51:52,931
+到目前为止，你已经构建了三个可用的语音智能体。
+So you've built three working voice agents.
+
+862
+00:51:52,931 --> 00:51:57,290
+现在我们要引入一种纪律，把演示和生产系统区分开。
+Now we install the discipline that separates a demo from a production system.
+
+863
+00:51:57,730 --> 00:51:59,802
+这就是所谓的评估驱动开发（eval-driven development）。
+It's called eval-driven development.
+
+864
+00:51:59,802 --> 00:52:02,650
+Vocal Bridge 内置了一个多模态评估器。
+Vocal Bridge ships a built-in multimodal evaluator.
+
+865
+00:52:03,330 --> 00:52:06,370
+我们给它一个录音会话和一个目标。
+We give it a recorded session and an objective.
+
+866
+00:52:07,010 --> 00:52:11,248
+它会将音频、智能体的完整配置、转写文本、
+It sends the audio, the agent's full configuration, the transcript,
+
+867
+00:52:11,248 --> 00:52:14,097
+工具调用日志，全部发送给一个多模态 LLM，
+the tool call log, all of it to a multimodal LLM,
+
+868
+00:52:14,097 --> 00:52:17,970
+然后由它给通话打分，并提出具体的提示词修改建议。
+which then scores the call and proposes concrete prompt edits.
+
+869
+00:52:18,450 --> 00:52:22,530
+这个 notebook 需要至少一次已完成的、带录音的通话。
+For this notebook, you need at least one completed call with a recording on it.
+
+870
+00:52:22,890 --> 00:52:26,370
+最简单的来源就是你在第 4 课中发起的那次通话。
+So the easiest source would be the call you placed in Lesson 4.
+
+871
+00:52:26,770 --> 00:52:29,770
+我们马上会从列表里取出它的 session ID。
+We will pull its session ID off the list in a second.
+
+872
+00:52:30,410 --> 00:52:33,170
+首先，确保初始化能顺利跑通。
+First, we make sure that the setup goes through.
+
+873
+00:52:36,330 --> 00:52:40,287
+很常规的内容，对吧？这一课只有两个 helper，
+Pretty standard stuff, right? So just two helpers this lesson,
+
+874
+00:52:40,287 --> 00:52:44,170
+一个是你之前已经见过的 VB wrapper，另一个是 eval_session。
+the VB wrapper you already know from earlier, and eval_session.
+
+875
+00:52:44,250 --> 00:52:48,370
+这个是新增的。它是对 VB eval 的一行封装。
+This is the new one. That's a one line wrapper around VB eval.
+
+876
+00:52:49,170 --> 00:52:55,477
+所以我们的 CLI，或者说 worker CLI，可以通过 VB 别名访问，
+So our CLI or the worker CLI can be accessed through the VB alias
+
+877
+00:52:55,477 --> 00:52:57,730
+eval 就是命令。
+and eval is the command.
+
+878
+00:52:57,890 --> 00:53:02,370
+所以 vb eval 被封装在这个 helper 里，封装它的就是 eval_session 这个 helper。
+So vb eval is wrapped inside this helper, wrapped by this helper eval_session.
+
+879
+00:53:02,930 --> 00:53:05,450
+这基本就是整个 eval API 的接口。
+That's literally the entire eval API surface.
+
+880
+00:53:06,090 --> 00:53:10,170
+好，现在我们拉取最近完成的通话，以便挑一个。
+Okay, so now we pull the most recent completed calls so we can pick one.
+
+881
+00:53:10,370 --> 00:53:14,210
+如果你跑过第 4 课的通话，它的 session ID 会出现在列表顶部。
+If you ran the lesson 4 call, its session ID will be at the top of the list.
+
+882
+00:53:19,480 --> 00:53:24,480
+我们会复制这个 session ID，并在下一个单元格中使用。
+We will copy the session ID and use it in the next cell.
+
+883
+00:53:24,880 --> 00:53:27,600
+我们已经在前面一步复制了 session ID。
+So we copied the session ID in the previous step.
+
+884
+00:53:28,120 --> 00:53:30,040
+现在你需要给它一个目标。
+Now you need to give it an objective.
+
+885
+00:53:30,600 --> 00:53:33,612
+也就是智能体在那次通话中应该完成的事情。
+That's what the agent was supposed to accomplish on that call.
+
+886
+00:53:33,612 --> 00:53:36,160
+这个目标正是让评估有意义的关键。
+And the objective is what makes the eval meaningful.
+
+887
+00:53:36,400 --> 00:53:40,520
+没有目标的话，LLM 只是在凭感觉打分。真的。
+Without an objective, the LLM is just grading vibes. Really?
+
+888
+00:53:40,680 --> 00:53:44,690
+有了它，模型才能真正告诉你这次通话在底层是否成功。
+With one, it can actually tell you whether the call succeeded under the hood.
+
+889
+00:53:45,050 --> 00:53:50,382
+这只是一条 CLI 命令：vb eval 会话 ID，然后加上目标。再强调一次，
+This is one CLI command, vb eval session ID, and then the objective. Again,
+
+890
+00:53:50,382 --> 00:53:53,650
+我们只需要传入 session ID 和目标。
+we just pass the session ID and the objective.
+
+891
+00:53:53,930 --> 00:53:56,748
+如果你还记得第 4 课，这里的目标
+The objective here, if you remember from Lesson 4,
+
+892
+00:53:56,748 --> 00:53:59,432
+是主叫方会发起一通外呼演示电话，
+was the caller would place an outbound demo call
+
+893
+00:53:59,432 --> 00:54:02,720
+并与同事进行一次简短、围绕主题的对话。
+and have a brief on-topic conversation with the colleague.
+
+894
+00:54:03,080 --> 00:54:06,880
+因为执行评估的是一个多模态 LLM，所以需要几秒钟。
+Takes a few seconds because it's a multimodal LLM doing the evaluation.
+
+895
+00:54:07,280 --> 00:54:11,544
+CLI 会把音频、智能体配置、转写文本、工具日志，全部发送过去，
+The CLI sends the audio, the agent config, the transcript, the tool log, all of it,
+
+896
+00:54:11,544 --> 00:54:13,920
+将所有上下文发送给多模态评判模型。
+all the context to the multimodal judge model.
+
+897
+00:54:14,280 --> 00:54:16,699
+这里我们使用的是 LLM-as-a-judge 方法。
+So we are using LLM as a judge approach here.
+
+898
+00:54:16,699 --> 00:54:19,320
+Eval 报告会以结构化对象的形式返回。
+Eval reports come back as a structured object.
+
+899
+00:54:19,400 --> 00:54:23,824
+如你所见，这里有 session ID，有目标，
+As you can see here, we have the session ID, we have the objective,
+
+900
+00:54:23,824 --> 00:54:27,920
+也就是我们传给 eval_session helper 的那个，然后还有一个分数。
+which we provided to the eval_session helper, and then a score.
+
+901
+00:54:28,200 --> 00:54:32,760
+所以这个结果对象有几个不同的属性。分数是 10 分。
+So the result object has a few different properties. The score, which is 10.
+
+902
+00:54:33,000 --> 00:54:34,960
+这很好。这是 10 分制的分数。
+Great to hear that. This is a score out of 10.
+
+903
+00:54:35,120 --> 00:54:37,854
+所以你最高能拿到 10 分，然后是 verdict（判定结论），
+So the best you can do is 10 and then the verdict,
+
+904
+00:54:37,854 --> 00:54:42,200
+评估是否通过，以及智能体是否达成目标。
+whether the evaluation passed and whether the agent met the objective.
+
+905
+00:54:42,280 --> 00:54:45,790
+所以这是一个通过/不通过的二值决策评估。
+So it's a pass-fail binary decision evaluation.
+
+906
+00:54:45,950 --> 00:54:48,333
+然后是 summary（摘要），多模态 LLM，
+And then the summary, the multimodal LLM,
+
+907
+00:54:48,333 --> 00:54:51,206
+也就是 LLM 作为裁判的方法，会给你一个摘要，
+the LLM as a judge approach will give you a summary,
+
+908
+00:54:51,206 --> 00:54:54,150
+一个关于智能体表现如何的定性总结。
+a qualitative summary of how the agent performed.
+
+909
+00:54:54,430 --> 00:54:58,426
+它还会告诉你哪些地方有效、哪些地方无效。在这个例子里，一切都有效，
+It'll also give you what worked and what didn't. So in this case, everything worked,
+
+910
+00:54:58,426 --> 00:54:59,510
+这很好。
+which is great to hear.
+
+911
+00:54:59,550 --> 00:55:03,320
+毕竟这只是一个简单的 prompt。最后，这是最有用的部分，
+It was a simple prompt after all. And then finally, this is the most useful one,
+
+912
+00:55:03,320 --> 00:55:05,350
+也就是建议的 Prompt 改进。
+which is suggested Prompt Improvements.
+
+913
+00:55:05,670 --> 00:55:07,774
+它在告诉你，作为开发者，
+This is telling you, the developer,
+
+914
+00:55:07,774 --> 00:55:10,369
+你可以对 prompt 做哪些改进，
+what improvements you can make to the prompt
+
+915
+00:55:10,369 --> 00:55:13,666
+以及如何调整智能体配置来达成目标，
+and the configuration of the agent to meet the objective
+
+916
+00:55:13,666 --> 00:55:15,630
+并更接近满分。
+and get closer to a perfect score.
+
+917
+00:55:15,750 --> 00:55:17,359
+在这个例子里，它已经完美了。
+In this case, it is already perfect.
+
+918
+00:55:17,359 --> 00:55:20,630
+所以你可以看到它说，这个 prompt 对该场景非常有效。
+So you can see it says the prompt is highly effective for the scenario.
+
+919
+00:55:20,790 --> 00:55:24,525
+没有建议任何更改。现在 eval 报告，正如你在上一步看到的，
+No changes are suggested. Now the eval reports, as you saw in the previous step,
+
+920
+00:55:24,525 --> 00:55:26,110
+会以结构化对象的形式返回。
+come back as a structured object.
+
+921
+00:55:26,230 --> 00:55:29,406
+你实际会依据的两项是分数，范围是从 0 到
+The two things you will actually act on are the score, which is a 0 to
+
+922
+00:55:29,406 --> 00:55:32,640
+10 分的质量评分，以及改进 prompt 的建议。
+10 quality rating, and the suggestions for improving the prompt.
+
+923
+00:55:32,760 --> 00:55:35,800
+如果这次调用没有达成目标，模型会准确告诉你哪里出了问题。
+If the call missed the objective, the model tells you exactly what went wrong.
+
+924
+00:55:35,840 --> 00:55:37,440
+那正是你的 prompt diff。
+That's your prompt diff right there.
+
+925
+00:55:38,000 --> 00:55:42,902
+好的，再说明一下，这个 cell 只是展示你如何解析那个报告，
+Alright, so again, this cell just shows you how you can parse that report
+
+926
+00:55:42,902 --> 00:55:45,680
+并用更易读的格式显示它。
+and display it in a more readable format.
+
+927
+00:55:47,520 --> 00:55:49,852
+现在你可以更进一步。
+Now you can take it one step further.
+
+928
+00:55:49,852 --> 00:55:53,660
+你还可以构建一个非常全面的 eval 套件。
+You can also build a completely comprehensive eval suite.
+
+929
+00:55:53,940 --> 00:55:57,300
+我不会运行这个 cell。我会让你自己探索。
+I'm not going to run this cell. I will let you explore this on your own.
+
+930
+00:55:57,380 --> 00:56:01,102
+但这是你可以构建的那种 eval 套件的一个例子，
+But this is an example of the kind of eval suite you can build
+
+931
+00:56:01,102 --> 00:56:04,900
+你可以在其中针对一组场景评估智能体。
+where you can evaluate the agent against a set of scenarios.
+
+932
+00:56:05,220 --> 00:56:09,955
+也就是同一个智能体在不同场景下接受评估。第一个场景是，
+So the same agent getting evaluated against different scenarios. So the first one is,
+
+933
+00:56:09,955 --> 00:56:12,980
+确认明天下午 2 点的一个预约。
+confirming an appointment for tomorrow at 2pm.
+
+934
+00:56:13,100 --> 00:56:16,620
+第二个是同样的目标，但是不同的场景。
+The second one is the same objective, but it's a different scenario.
+
+935
+00:56:16,820 --> 00:56:19,097
+所以你可以配置这些情境，
+So you can configure those situations
+
+936
+00:56:19,097 --> 00:56:24,220
+并在进入生产环境之前，真正大规模、全面地评估你的智能体。
+and really evaluate your agent comprehensively at scale before going to production.
+
+937
+00:56:24,780 --> 00:56:28,340
+关键在于：纪律在于这个循环，而不是任何单一数字。
+And here's the thing, the discipline is the loop, not any single number.
+
+938
+00:56:28,620 --> 00:56:34,260
+构建、调用、评估、查看建议、修补 prompt、再次调用、再次评估。
+Build, call, eval, look at the suggestions, patch the prompt, call again, eval again.
+
+939
+00:56:34,700 --> 00:56:36,338
+一个回归问题并不会真正被解决，
+A regression isn't actually fixed
+
+940
+00:56:36,338 --> 00:56:39,220
+直到针对同一目标的一次新调用获得更高分数。
+until a fresh call against the same objective scores higher.
+
+941
+00:56:39,300 --> 00:56:42,270
+所以 eval 套件会让你对这一点保持诚实。
+So the eval suite is what will keep you honest about it.
+
+942
+00:56:42,470 --> 00:56:45,830
+通常，这就是一个 patch 循环的样子。
+And typically, this is what a patch loop would look like.
+
+943
+00:56:46,470 --> 00:56:49,018
+同样，我不会替你运行它，
+Again, I'm not going to run it for you,
+
+944
+00:56:49,018 --> 00:56:51,565
+但你可以自己随意探索，
+but feel free to explore it on your own
+
+945
+00:56:51,565 --> 00:56:56,003
+并尝试不同版本的 objective、scenario 和 prompt，
+and try different versions of objective, scenario, and the prompt
+
+946
+00:56:56,003 --> 00:57:00,030
+看看拥有 eval 套件如何提升性能。
+and see how having an eval suite improves the performance.
+
+947
+00:57:01,240 --> 00:57:05,080
+这就是你在这三个 UI 层面构建的课程内容。
+And that's the course you've built across all three UI surfaces.
+
+948
+00:57:05,360 --> 00:57:08,912
+应用内的 UI、现有智能体的 UI、作为工具的 UI，
+UI in your app, UI for your existing agent, UI as a tool,
+
+949
+00:57:08,912 --> 00:57:11,280
+并在此基础上加入 eval 驱动的开发循环。
+and install the eval-driven dev loop on top.
+
+950
+00:57:11,360 --> 00:57:15,327
+从这里开始，自然的下一步是生产环境加固、认证监控、
+From here, the natural next step is production hardening, auth monitoring,
+
+951
+00:57:15,327 --> 00:57:19,480
+延迟调优，这些都是把可运行的 demo 变成已部署产品的工作。
+latency tuning, all the stuff that turns a working demo into a deployed product.
+
+952
+00:57:19,720 --> 00:57:23,270
+这正是我与 Scott Johnston 对话的主题，
+And that is exactly the topic of my conversation with Scott Johnston,
+
+953
+00:57:23,270 --> 00:57:26,330
+他是 Docker 前 CEO，现任 Okebridge 董事会成员。
+former CEO of Docker and current board member of Okebridge.
+
+954
+00:57:26,490 --> 00:57:29,650
+我们在这最后一课见。
+I'll see you there in this final lesson.
+
+955
+00:57:30,090 --> 00:57:32,560
+我将与 Scott Johnston 对话，
+I'll have a conversation with Scott Johnston,
+
+956
+00:57:32,560 --> 00:57:35,810
+他是 Docker 前 CEO，现任 Okebridge 董事会成员。
+former CEO of Docker and current board member of Okebridge.
+
+957
+00:57:36,490 --> 00:57:40,530
+我们将讨论从 demo 到生产环境 UI 真正需要什么。
+We will discuss what it really takes to go from demos to UI in production.
+
+958
+00:57:41,010 --> 00:57:41,450
+我们开始吧。
+Let's go.
+
+959
+00:57:42,210 --> 00:57:43,810
+Scott，很高兴你能来。
+Scott, it's great to have you here.
+
+960
+00:57:44,320 --> 00:57:45,440
+我很高兴我们能做这次对话。
+I'm glad we are doing this.
+
+961
+00:57:46,040 --> 00:57:49,651
+大多数语音 AI 课程会带你构建一个可运行的 demo。
+Most courses on voice AI walk you through how to build a working demo
+
+962
+00:57:49,651 --> 00:57:52,746
+但几乎没有课程让你为后续发生的事做好准备。
+and almost none of them prepare you for what happens after
+
+963
+00:57:52,746 --> 00:57:54,680
+当那个 demo 交到用户手中之后。
+that demo gets handed to your users.
+
+964
+00:57:55,360 --> 00:57:59,414
+所以今天我想花几分钟聊聊这段旅程的后半段。
+So today I wanted to spend a few minutes on the second half of that journey,
+
+965
+00:57:59,414 --> 00:58:01,674
+看看生产环境实际是什么样子。
+see what production actually looks like
+
+966
+00:58:01,674 --> 00:58:06,060
+以及为什么语音的下一个篇章将由一群非常不同的开发者来书写，
+and why the next chapter of voice is going to be written by a very different group
+
+967
+00:58:06,060 --> 00:58:08,120
+而不是由第一代开发者来书写。
+of developers than the first one was.
+
+968
+00:58:08,690 --> 00:58:10,490
+谢谢，Ashwin。很高兴来到这里。
+Thanks, Ashwin. I'm happy to be here.
+
+969
+00:58:11,010 --> 00:58:13,890
+这个生产化差距是我整个职业生涯都在思考的问题。
+You know, this production gap is something I've spent a career thinking about.
+
+970
+00:58:14,570 --> 00:58:16,556
+虽然每次涉及的技术不同，
+And while it's different technology each time,
+
+971
+00:58:16,556 --> 00:58:18,690
+但问题的形态却惊人地一致。
+the shape of the problem is remarkably consistent.
+
+972
+00:58:19,330 --> 00:58:22,046
+是的，你在 Docker 待了十多年，
+Yeah. And you spent more than a decade at Docker,
+
+973
+00:58:22,046 --> 00:58:24,490
+把它发展到超过 2600 万开发者。
+grew it to more than 26 million developers.
+
+974
+00:58:25,370 --> 00:58:29,690
+至少从今天的外部视角看，容器似乎已经是一个被解决的问题。
+And from the outside, at least today, containers feel like a solved problem.
+
+975
+00:58:30,660 --> 00:58:33,475
+但它们只是底层管道，对吧？但十年前，
+But they're just plumbing, right? But 10 years ago,
+
+976
+00:58:33,475 --> 00:58:35,700
+部署软件真的很难。
+deploying software was genuinely hard.
+
+977
+00:58:36,380 --> 00:58:37,985
+真正改变的是什么？
+What actually changed? You know,
+
+978
+00:58:37,985 --> 00:58:41,540
+改变的并不是底层技术被发明了，对吧？
+what changed wasn't that the underlying technology got invented, right?
+
+979
+00:58:41,540 --> 00:58:44,540
+因为 Linux namespaces 和 cgroups 已经存在多年了。
+Because Linux namespaces and cgroups, they've been around for years.
+
+980
+00:58:45,460 --> 00:58:50,460
+改变的是我们打通了一条从“我有个想法”到“它在生产环境运行”的路径。
+What changed is that we made a path from I have an idea to it's running in production.
+
+981
+00:58:51,630 --> 00:58:54,390
+短到单个开发者就能独立走完。
+Short enough that one developer could walk it on their own.
+
+982
+00:58:55,070 --> 00:58:59,324
+一旦这条路径变短，能够发布产品的人数就会增加
+And once that path is short, the number of people who can ship a product goes up by
+
+983
+00:58:59,324 --> 00:59:03,063
+几个数量级，他们发布的产品类型也会改变，
+orders of magnitude and the kinds of products they ship change as well
+
+984
+00:59:03,063 --> 00:59:06,350
+因为突然之间，尝试新东西的成本变得非常低。
+because suddenly the cost of trying something is really low.
+
+985
+00:59:06,910 --> 00:59:10,190
+完全同意。这也是我看待语音领域的视角。
+Absolutely. And that's the lens I find myself using for voice.
+
+986
+00:59:10,790 --> 00:59:15,543
+过去几年，底层模型进步巨大，
+The underlying models have improved dramatically over the last couple of years,
+
+987
+00:59:15,543 --> 00:59:19,876
+但从“我想让我的应用和用户对话”到“100 万用户都在可靠地使用它”的路径，
+but the path from I want my app to talk to a user to 1 million users using it
+
+988
+00:59:19,876 --> 00:59:24,070
+仍然很长，而且仍主要由专家来完成。
+reliably, is still long and it's still mostly traveled by specialists.
+
+989
+00:59:24,630 --> 00:59:27,070
+所以真正的问题是：谁有机会构建下一件事？
+So the real question is who gets to build the next thing?
+
+990
+00:59:27,630 --> 00:59:30,501
+如果世界上只有 10 个团队有耐心把这一切拼起来，
+If 10 teams in the world have the patience to wire it all together,
+
+991
+00:59:30,501 --> 00:59:31,670
+你只会得到 10 个语音产品。
+you get 10 voice products.
+
+992
+00:59:32,710 --> 00:59:34,795
+但如果 100 万开发者能在周末搞定，
+But if a million developers can do it on a weekend,
+
+993
+00:59:34,795 --> 00:59:36,830
+你得到的将是一个完全不同的品类。
+you get an entirely different kind of category.
+
+994
+00:59:37,220 --> 00:59:37,660
+完全正确。
+Totally.
+
+995
+00:59:38,420 --> 00:59:40,660
+那我们来给学习者讲点具体的东西。
+So let's get concrete for the learners
+
+996
+00:59:40,660 --> 00:59:43,460
+因为这是演示视频不会展示的部分。
+because this is the part demo videos don't show.
+
+997
+00:59:44,220 --> 00:59:46,000
+当我说生产环境时，
+And when I say production, you know,
+
+998
+00:59:46,000 --> 00:59:49,500
+我不是在说模型在 notebook 里返回正确答案那种情况。
+I'm not talking about a model returning the right answer in a notebook.
+
+999
+00:59:50,260 --> 00:59:55,604
+我是在说，凌晨 2 点，一个圣保罗的用户正在和你的应用对话，
+I am talking about, you know, it's 2 a.m., a user in São Paulo is talking to your app
+
+1000
+00:59:55,604 --> 01:00:00,030
+而你的系统需要在不到 600 毫秒内响应。
+and your system needs to respond in less than 600 milliseconds.
+
+1001
+01:00:00,970 --> 01:00:03,747
+用他们的方言、他们的口音进行对话，
+In their dialect, in their accent while calling,
+
+1002
+01:00:03,747 --> 01:00:06,050
+同时在对话过程中调用你的支付 API。
+calling your payments API mid sentence.
+
+1003
+01:00:06,610 --> 01:00:10,765
+如果其中任何一环出问题，你必须在一小时内知道，
+And if any of that breaks, you need to know that within an hour,
+
+1004
+01:00:10,765 --> 01:00:13,290
+而不是一周后从愤怒的推文里才知道。
+not within a week from an angry tweet.
+
+1005
+01:00:13,930 --> 01:00:18,433
+所以延迟预算、可观测性、评估、优雅降级，
+So latency budgets, observability, evaluation, graceful fallbacks,
+
+1006
+01:00:18,433 --> 01:00:22,410
+这些和我们用于任何高可用系统的概念是一样的。
+the same vocabulary we'd use for any high availability system.
+
+1007
+01:00:22,880 --> 01:00:27,080
+没错。有趣的是，这些问题没有一个是语音特有的。
+Exactly. And what's interesting is that none of those problems are voice specific.
+
+1008
+01:00:27,640 --> 01:00:30,680
+它们和你在运行任何分布式系统时会碰到的问题一样。
+They're the same problems you would hit running any distributed system.
+
+1009
+01:00:31,320 --> 01:00:36,160
+语音特有之处在于，人类对语音故障的容忍度极低。
+What's voice specific is that humans are spectacularly intolerant of voice failure.
+
+1010
+01:00:36,680 --> 01:00:39,840
+如果聊天智能体停顿 2 秒，你只会等着。
+If a chat agent pauses for 2 seconds, you just wait.
+
+1011
+01:00:40,440 --> 01:00:45,480
+但如果语音智能体停顿两秒，你会以为它挂了，然后挂断。
+But if a voice agent pauses for two seconds, you assume it died and you hang up.
+
+1012
+01:00:45,890 --> 01:00:50,014
+所以我想说的是，痛感阈值要低得多，
+So I guess what I'm trying to say is the pain threshold is much lower,
+
+1013
+01:00:50,014 --> 01:00:53,770
+这意味着工程标准必须高得多，对吧？
+which means the engineering bar has to be much higher, right?
+
+1014
+01:00:53,850 --> 01:00:57,530
+我觉得这就是人们在进入这个领域时低估的一点，对吧？
+I think that's the piece I think people underestimate going in, right?
+
+1015
+01:00:57,570 --> 01:01:02,221
+生产环境中的语音标准更接近实时交易系统，而不是
+The bar for voice in production is closer to a real-time trading system than it is
+
+1016
+01:01:02,221 --> 01:01:03,490
+典型的 Web 应用。
+for a typical web app.
+
+1017
+01:01:04,170 --> 01:01:06,010
+你不能把困难的部分往后推。
+You don't get to defer the hard parts.
+
+1018
+01:01:06,610 --> 01:01:07,130
+完全同意。
+Absolutely.
+
+1019
+01:01:07,890 --> 01:01:12,519
+所以我想，如今人们真正认真部署语音智能体的唯一场景是
+So I guess the only place anyone is seriously deploying voice agents today is the
+
+1020
+01:01:12,519 --> 01:01:15,490
+联络中心，而且这是有充分理由的。
+contact center, and there's a good reason for that.
+
+1021
+01:01:15,730 --> 01:01:20,250
+经济账很清楚，工作流受限，买家也存在。
+The economics are clear, the workflows are constrained and the buyers exist.
+
+1022
+01:01:20,970 --> 01:01:24,090
+但这只是语音真正适用场景的一小部分。
+But that's a tiny slice of where voice actually belongs.
+
+1023
+01:01:25,010 --> 01:01:29,330
+我认为还有两个更大的应用面正在随之打开。好吧，
+I would argue there are two much bigger surfaces opening up alongside it. All right,
+
+1024
+01:01:29,330 --> 01:01:30,750
+好，那先说说第一个。
+well, give me the first one.
+
+1025
+01:01:30,990 --> 01:01:34,950
+好吧，我认为第一个是“语音作为应用内的一项功能”。
+All right, so I think the first is voice as a feature inside the applications.
+
+1026
+01:01:35,190 --> 01:01:36,790
+开发者已经在交付这些应用。
+Developers are already shipping.
+
+1027
+01:01:37,150 --> 01:01:41,411
+所以，它可能是一个物流仪表盘，给一位不能把双手
+So, you know, it could be a logistics dashboard for a driver who can't take their
+
+1028
+01:01:41,411 --> 01:01:43,670
+手离开方向盘的司机，或者一个编程助手。
+hands off the wheel or a coding assistant.
+
+1029
+01:01:43,790 --> 01:01:45,110
+你可以和它一起排查 bug。
+You can talk through a bug with.
+
+1030
+01:01:45,830 --> 01:01:49,119
+一个临床医生可以口述录入的电子健康记录系统，
+An electronic health record system a clinician can dictate into,
+
+1031
+01:01:49,119 --> 01:01:51,630
+或者一个给还不会阅读的孩子用的学习应用。
+or maybe a learning app for a kid who can't read yet.
+
+1032
+01:01:52,700 --> 01:01:56,883
+在这些场景中，语音都不是产品本身，而是产品的一个功能，
+In each of those, voice isn't the product, it's a feature of the product,
+
+1033
+01:01:56,883 --> 01:02:01,420
+这与呼叫中心场景是截然不同的设计问题。
+which is a completely different design problem from the contact center one.
+
+1034
+01:02:02,100 --> 01:02:05,820
+语音层必须与应用现有的状态并存，并调用
+The voice layer has to live alongside the app's existing state, call
+
+1035
+01:02:05,860 --> 01:02:08,349
+应用按钮已经在调用的相同工具，
+the same tools the app's buttons already call
+
+1036
+01:02:08,349 --> 01:02:11,820
+并尊重用户当前正在屏幕上查看的内容。
+and respect what the user is currently looking at on the screen.
+
+1037
+01:02:12,770 --> 01:02:14,667
+所以我强烈感觉到，那套技术栈
+So I strongly feel that the stack
+
+1038
+01:02:14,667 --> 01:02:17,970
+为呼叫中心构建的技术栈从来不是为此而生的。
+that was built for call centers was never built for that.
+
+1039
+01:02:18,330 --> 01:02:23,298
+第二个应用面，是的，我认为第二个过去其实几乎不存在，
+And the second surface, yeah, and I think the second one didn't really even exist,
+
+1040
+01:02:23,298 --> 01:02:25,490
+我猜，大概两三年前还根本没有。
+I guess, like two to three years ago.
+
+1041
+01:02:25,850 --> 01:02:30,092
+在过去几年里，数百万开发者构建了 AI 智能体，
+Over the last couple of years, millions of developers have built AI agents,
+
+1042
+01:02:30,092 --> 01:02:34,873
+有的智能体阅读代码库，有的智能体分诊工单，有的智能体运行分析，
+agents that read code bases, agents that triage tickets, agents that run analytics,
+
+1043
+01:02:34,873 --> 01:02:37,970
+甚至还有在更大工作流中运行的智能体。
+and even agents that operate inside larger workflows.
+
+1044
+01:02:38,730 --> 01:02:42,001
+今天这些智能体几乎都只支持文本，
+almost all of those agents are text only today,
+
+1045
+01:02:42,001 --> 01:02:46,698
+而我觉得对其中大多数而言，语音是自然而然的下一个交互界面，
+and I feel that voice is the natural next interface for most of them,
+
+1046
+01:02:46,698 --> 01:02:49,130
+但它们几乎都还没有语音。
+and almost none of them have it yet.
+
+1047
+01:02:49,370 --> 01:02:51,613
+这个应用面有意思的地方在于
+What's interesting about that surface is
+
+1048
+01:02:51,613 --> 01:02:54,690
+这些智能体上的重活已经完成了，对吧？
+that the hard work on those agents is already done, right?
+
+1049
+01:02:54,890 --> 01:02:58,370
+推理、工具使用、已经构建好的记忆。
+The reasoning, the tool use, the memory that's built.
+
+1050
+01:02:59,130 --> 01:03:00,600
+缺少的只是模态。
+What's missing is modality.
+
+1051
+01:03:00,720 --> 01:03:03,765
+人类实际上更喜欢语音，而构建了那个智能体的开发者
+Humans actually prefer voice and developers who built
+
+1052
+01:03:03,765 --> 01:03:07,960
+不应该仅仅为了给它加语音就从零重建。
+that agent shouldn't have to rebuild it from scratch just to give it voice.
+
+1053
+01:03:08,520 --> 01:03:13,560
+没错。所以集成挑战不再只是“语音 + 应用”。
+Exactly. So the integration challenge isn't just voice plus app anymore.
+
+1054
+01:03:14,120 --> 01:03:15,800
+还要加上“语音 + 智能体”。
+It's also voice plus agent.
+
+1055
+01:03:16,640 --> 01:03:19,830
+你现有的智能体不应该必须变成一个全新项目，
+Your existing agent shouldn't have to become a new project just
+
+1056
+01:03:19,830 --> 01:03:21,635
+就因为你想让用户通过语音与它对话。
+because you want users to talk to it,
+
+1057
+01:03:21,635 --> 01:03:25,667
+这就是为什么我认为未来的千万语音开发者根本不会把自己
+which is why I think the next 10 million voice developers aren't going to think of
+
+1058
+01:03:25,667 --> 01:03:29,880
+当作语音开发者。他们将是那些交付过
+themselves as voice developers at all. They're going to be the people who shipped a
+
+1059
+01:03:29,880 --> 01:03:32,314
+去年 Web 应用、或者今年交付过智能体的人，
+Web app last year or shipped an agent this year,
+
+1060
+01:03:32,314 --> 01:03:36,120
+语音只是他们在合适场景下会使用的另一种界面。
+voice will just be another surface they reach for when it's the right one.
+
+1061
+01:03:36,800 --> 01:03:37,280
+完全同意。
+Absolutely.
+
+1062
+01:03:37,760 --> 01:03:41,273
+我来列举几件我们看到真实团队感到困难的事情，
+So let me name a couple of things we see real teams struggle with,
+
+1063
+01:03:41,273 --> 01:03:44,520
+因为我认为这些对学习者来说很有必要了解。
+because I think they're useful for learners to recognize.
+
+1064
+01:03:45,270 --> 01:03:47,739
+第一个是集成模式本身。
+The first is the integration model itself.
+
+1065
+01:03:47,739 --> 01:03:51,990
+今天大多数语音技术栈都假设智能体端到端拥有整个对话。
+Most voice stacks today assume the agent owns the conversation end to end.
+
+1066
+01:03:52,430 --> 01:03:57,670
+但真实应用有业务逻辑、认证、数据库和现有工具。
+But real applications have business logic, authentication, databases, existing tools.
+
+1067
+01:03:58,470 --> 01:04:02,990
+语音智能体必须成为这个系统中的一个参与者，而不是整个系统，对吧？
+The voice agent has to be a participant in that system, not the whole thing, right?
+
+1068
+01:04:02,990 --> 01:04:06,930
+顺便说一句，这正是我们曾经关于容器的那场对话。
+And that's exactly the conversation we used to have about containers, by the way.
+
+1069
+01:04:07,210 --> 01:04:10,650
+你知道，早期人们认为容器就应该是整个 VM。
+You know, early on, people thought a container was supposed to be the entire VM.
+
+1070
+01:04:11,290 --> 01:04:13,490
+行业花了好几年才真正理解
+It took the industry a few years to internalize
+
+1071
+01:04:13,490 --> 01:04:16,106
+容器只是更大系统中的一个组件，
+that a container is just one piece of a larger system,
+
+1072
+01:04:16,106 --> 01:04:20,090
+价值来自它如何与周围其他部分干净地组合在一起。
+and the value comes from how cleanly it composes with everything else around it.
+
+1073
+01:04:20,490 --> 01:04:23,170
+完全同意。第二个问题是评估。
+Absolutely. And the second thing is evaluation.
+
+1074
+01:04:23,970 --> 01:04:28,682
+语音目前还没有真正相当于单元测试的东西，因为输出是波形
+Voice has no real equivalent of a unit test yet because the output is a waveform
+
+1075
+01:04:28,682 --> 01:04:30,640
+输入是对话。
+and the input is a conversation.
+
+1076
+01:04:31,120 --> 01:04:34,490
+所以团队盲目上线，从用户那里听说某次通话很糟糕，
+So teams ship blindly, hear about a bad call from a user
+
+1077
+01:04:34,490 --> 01:04:38,548
+却没有系统化方法来复现它、针对它做回归测试，
+and have no systematic way to reproduce it, regress against it,
+
+1078
+01:04:38,548 --> 01:04:40,080
+或证明修复有效。
+or prove the fix worked.
+
+1079
+01:04:40,720 --> 01:04:44,968
+所以构建那个循环——部署、监听、评估、迭代——
+So building that loop, the deploy, the listen, the evaluate, the iterate,
+
+1080
+01:04:44,968 --> 01:04:48,172
+那才是大部分实际生产工作所在的地方。
+that's where most of the actual production work lives,
+
+1081
+01:04:48,172 --> 01:04:52,560
+这也是为什么这门课的学习者应该感到兴奋。
+which is also why this should be exciting for the people taking this course.
+
+1082
+01:04:53,240 --> 01:04:55,688
+这里的未解难题不是模型问题。
+The unsolved problems here aren't model problems.
+
+1083
+01:04:55,688 --> 01:04:57,680
+而是软件工程问题。
+They're software engineering problems.
+
+1084
+01:04:58,600 --> 01:05:03,008
+对参加这门课的人来说，你已经掌握了那个迭代循环：
+For the people taking this course, you've already mastered that iterative loop,
+
+1085
+01:05:03,008 --> 01:05:06,120
+部署、观察、评估、迭代，使用 Vocal Bridge。
+deploy, observe, evaluate, iterate using Vocal Bridge.
+
+1086
+01:05:06,640 --> 01:05:10,920
+这种动手经验正是让你准备好应对生产级语音部署的原因。
+That hands-on experience is what makes you ready to tackle production-grade voice deployments.
+
+1087
+01:05:11,320 --> 01:05:15,880
+所以是的，这正是我希望每位课程学习者都能带走的核心收获。
+So yeah, and that's the exact takeaway I would want any learner of this course to walk away with.
+
+1088
+01:05:16,190 --> 01:05:20,382
+模型不再是瓶颈。瓶颈在于无聊的中间环节：
+The model is no longer the bottleneck. The bottleneck is the boring middle,
+
+1089
+01:05:20,382 --> 01:05:23,310
+部署、观察、评估、迭代。
+the deploy, the observe, the evaluate, the iterate.
+
+1090
+01:05:23,870 --> 01:05:27,070
+下一代语音产品的输赢就在那里。
+That's where the next generation of voice products will be won or lost.
+
+1091
+01:05:27,550 --> 01:05:31,190
+而且我强烈认为，这正是观看本视频的开发者们的机会所在。
+And I strongly feel that's where the opportunity is for the developers watching this.
+
+1092
+01:05:31,790 --> 01:05:36,678
+从历史上看，每当这个无聊的中间环节在
+And historically, every time that boring middle has gotten dramatically easier for
+
+1093
+01:05:36,678 --> 01:05:39,088
+容器、网络托管、移动端方面大幅简化，
+containers, for web hosting, for mobile,
+
+1094
+01:05:39,088 --> 01:05:43,700
+接下来就会涌现一波产品，来自那些新获得能力去
+what's happened next is a wave of products from people who are newly empowered to
+
+1095
+01:05:43,700 --> 01:05:46,110
+构建它们的人，而语音就是名单上的下一个。
+build them, and voice is next on that list.
+
+1096
+01:05:46,630 --> 01:05:48,346
+我会押注于此。好，Scott，
+I'm gonna bet on it. Well, Scott,
+
+1097
+01:05:48,346 --> 01:05:51,270
+非常感谢你参加这次对话。
+thank you so much for joining us for this conversation.
+
+1098
+01:05:51,430 --> 01:05:54,510
+这正是我希望学习者听到的内容。不客气。
+This is exactly what I wanted the learners to hear. My pleasure.
+
+1099
+01:05:54,630 --> 01:05:58,768
+Ashwin，在这门课程中，你学习了为智能体
+Ashwin, in this course, you learned about adding voice to your agents
+
+1100
+01:05:58,768 --> 01:05:59,910
+和应用添加语音。
+and applications.
+
+1101
+01:06:00,460 --> 01:06:03,377
+具体来说，我们为一个应用添加了语音，
+To be specific, we added voice to an application,
+
+1102
+01:06:03,377 --> 01:06:07,860
+为现有 AI 智能体赋予了语音，并教 LLMs 拨打真实电话。
+gave voice to an existing AI agent and taught LLMs to place real phone calls.
+
+1103
+01:06:08,780 --> 01:06:11,819
+我期待看到你如何运用你在
+I'm looking forward to seeing how you bring your ideas to life using what you've
+
+1104
+01:06:11,819 --> 01:06:12,740
+本课程中学到的内容把想法变为现实。
+learned in this course.

@@ -1,5 +1,33 @@
 [
   {
+    "title": "为 AI 智能体和应用构建语音能力",
+    "bilibili_title": "为 AI 智能体和应用构建语音能力｜Ashwin Sharma",
+    "original_title": "Voice for AI Agents and Applications",
+    "bilibili_url": "https://www.bilibili.com/video/BV1wHen6EE4k/",
+    "youtube_url": "https://www.deeplearning.ai/courses/voice-for-ai-agents-and-applications",
+    "published_at": "2026-09-22",
+    "up": "通用人工智障",
+    "duration": "1:06:13",
+    "speakers": [
+      "Ashwin Sharma",
+      "Scott Johnston"
+    ],
+    "folder_title": "为 AI 智能体和应用构建语音能力",
+    "path": "videos/undated-056_voice-for-ai-agents-and-applications-deeplearning-ai/",
+    "slug": "undated-056_voice-for-ai-agents-and-applications-deeplearning-ai",
+    "cover": "cover.jpeg",
+    "outline_count": 5,
+    "subtitle_count": 1,
+    "outline_files": [
+      "为 AI 智能体和应用构建语音能力_01.png",
+      "为 AI 智能体和应用构建语音能力_02.png",
+      "为 AI 智能体和应用构建语音能力_03.png",
+      "为 AI 智能体和应用构建语音能力_04.png",
+      "为 AI 智能体和应用构建语音能力_05.png"
+    ],
+    "subtitle_file": "Voice for AI Agents and Applications.bilingual.zh-top.srt"
+  },
+  {
     "title": "AI 与科学的核心悖论",
     "bilibili_title": "AI 与科学的核心悖论｜陶哲轩",
     "original_title": "The paradox at the heart of AI and science | Terence Tao",

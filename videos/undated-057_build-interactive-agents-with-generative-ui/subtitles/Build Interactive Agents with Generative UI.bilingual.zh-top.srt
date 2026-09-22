@@ -1,134 +1,6714 @@
 1
-00:00:00,090 --> 00:00:03,673
-这门短课程将教你如何构建智能体，让它们输出
-This short course will teach you how to build agents that output,
-
-2
-00:00:03,673 --> 00:00:08,450
-不只是大段文字，而是自定义用户界面，把结果以界面形式呈现给用户。
-not just walls of text, but custom user interfaces to show the results back to the user.
-
-3
-00:00:08,890 --> 00:00:12,938
-我很高兴欢迎你参加这门关于构建交互式智能体的课程，
+00:00:00,230 --> 00:00:03,954
+我很高兴欢迎你参加这门关于构建交互式智能体的课程，它采用了
 I'm excited to welcome you to this course on building interactive agents with
 
+2
+00:00:03,954 --> 00:00:06,590
+生成式 UI，本课程与 CopilotKit 联合制作。
+generative UI, built in partnership with CopilotKit.
+
+3
+00:00:06,870 --> 00:00:10,665
+构建一个强大的 AI 智能体是一项艰苦的工作，但一旦你完成了，
+Building a capable AI agent is hard work, but once you've done that,
+
 4
-00:00:12,938 --> 00:00:17,048
-使用生成式 UI，该课程与 CopilotKit 合作打造，讲师是 Atai Barkai，
-generative UI built in partnership with CopilotKit and taught by Atai Barkai,
+00:00:10,665 --> 00:00:13,512
+你就会面临新的挑战：如何将它交付给用户，
+you get a new challenge, getting it to users in a way
 
 5
-00:00:17,048 --> 00:00:18,730
-他是 CopilotKit 的联合创始人。
-who's co-founder of CopilotKit.
+00:00:13,512 --> 00:00:15,613
+让他们乐于与它交互，
+that they enjoy interacting with it,
 
 6
-00:00:18,930 --> 00:00:22,810
-你可能已经见过会推理、调用工具并返回结果的 AI 智能体。
-You've probably seen AI agents that reason, call tools and then return results.
+00:00:15,613 --> 00:00:19,950
+这可能需要的不仅仅是再建一个聊天机器人界面。
+which might require much more than building yet another chatbot interface.
 
 7
-00:00:23,280 --> 00:00:26,200
-但这些回复大多只是纯文本。
-But most of those responses are just plain text.
+00:00:20,820 --> 00:00:23,999
+想想一个好的智能体界面应该是什么样子，
+Think about what a good agent interface might look like
 
 8
-00:00:26,320 --> 00:00:29,920
-用户发送一条消息，收到的还是一条消息，可能是一条很长的消息。
-The user sends a message, they get a message, maybe a long message back.
+00:00:23,999 --> 00:00:26,902
+与其让它输出大段文字，
+instead of it outputting long paragraphs of text,
 
 9
-00:00:30,640 --> 00:00:32,994
-在本课程中，你将学习构建智能体
-In this course, you learn to build agents
+00:00:26,902 --> 00:00:31,740
+用户也许更希望直接得到一个简单的表单来填写，或者一个图表来交互。
+maybe the user would rather just get a simple form to fill or a chart to interact with.
 
 10
-00:00:32,994 --> 00:00:36,040
-让它们生成自定义 UI，也就是自定义用户界面。
-that generate custom UIs or custom user interfaces.
+00:00:32,300 --> 00:00:35,003
+智能体不再只返回纯文本回复。
+The agent doesn't just answer in plain text.
 
 11
-00:00:36,520 --> 00:00:40,609
-这样你的智能体就能返回表单、图表、按钮，
-So this gives your agents the ability to return a form, a chart, a button,
+00:00:35,003 --> 00:00:37,780
+它能给用户可见或可操作的内容。
+It can give the user something to see or act on.
 
 12
-00:00:40,609 --> 00:00:44,560
-甚至交互式组件，而不仅仅是纯文本回复。
-even interactive components instead of just a plain text response.
+00:00:38,340 --> 00:00:40,339
+在这门课程中，你将学习构建
+In this course, you learn to build
 
 13
-00:00:45,420 --> 00:00:49,115
-谢谢 Andrew。CopilotKit 之所以存在，是因为我们坚信
-Thank you, Andrew. CopilotKit exists because we firmly believe
+00:00:40,339 --> 00:00:44,551
+这种界面，使用生成式 UI 的三种方法，其中 UI，
+that interface using three approaches to generative UI, where the UI,
 
 14
-00:00:49,115 --> 00:00:50,620
-所有用户界面都正在被 AI 重塑。
-that all UI is becoming AI.
+00:00:44,551 --> 00:00:46,550
+即用户界面，是生成出来的。
+the user interfaces are generated.
 
 15
-00:00:50,940 --> 00:00:55,340
-人与技术之间的每一次交互，都越来越多地由智能体居中协调。
-Every interaction between people and technology is increasingly mediated by agents.
+00:00:46,950 --> 00:00:49,432
+第一种方法是受控组件，
+The first approach is controlled components
 
 16
-00:00:56,100 --> 00:01:00,831
-然而，在我们录制这门课程时，大多数智能体仍用纯文本与用户交流，
-And yet, as we film this course, most agents still talk to users in plain text,
+00:00:49,432 --> 00:00:52,110
+由你来精确定义智能体可以显示什么。
+where you define exactly what the agent can show.
 
 17
-00:01:00,831 --> 00:01:05,340
-这听起来很像个人计算机的命令行 MS-DOS 时代。
-which sounds a lot like the command line MS-DOS era of personal computing.
+00:00:53,030 --> 00:00:57,017
+第二种是声明式 UI，使用 AG-UI 框架，
+The second is declarative UI with the framework AG-UI,
 
 18
-00:01:06,300 --> 00:01:09,740
-对早期采用者来说很强大，但还没有为大规模普及做好准备。
-Powerful for early adopters, but not yet built for mass adoption.
+00:00:57,017 --> 00:01:02,598
+这是一个由 Google 发起并与 CopilotKit 共同开发的开放规范，
+which is an open spec originated by Google and co-developed with CopilotKit
 
 19
-00:01:10,540 --> 00:01:14,228
-Windows 和 Mac 时代改变了这一点，带来了功能齐全的应用程序
-The Windows and Mac era changed that and brought full-featured applications
+00:01:02,598 --> 00:01:06,230
+智能体基于 schema 生成布局。
+where the agent generates layouts from a schema.
 
 20
-00:01:14,228 --> 00:01:15,380
-任何人都能使用。
-that anybody could use.
+00:01:07,020 --> 00:01:09,439
+第三种是开放式 UI，结合 MCP Apps，
+The third is open-ended UI with MCP apps
 
 21
-00:01:16,340 --> 00:01:17,933
-AI 现在正在经历同样的转变
-AI is going through the same transition now
+00:01:09,439 --> 00:01:14,125
+智能体直接在你的产品中呈现完整的交互体验，如白板
+where the agent surfaces full interactive experiences like whiteboards
 
 22
-00:01:17,933 --> 00:01:20,721
-而构建前端层的团队，正是有机会定义它
-and the teams building the front end layer are the ones who get to define what
+00:01:14,125 --> 00:01:17,300
+和审批流。
+and approval flows directly inside your product.
 
 23
-00:01:20,721 --> 00:01:21,340
-最终是什么样子的人。
-that looks like.
+00:01:17,660 --> 00:01:21,658
+你的讲师是 Atai Barkai，他是 CopilotKit 的联合创始人，
+Your instructor is Atai Barkai who is co-founder of CopilotKit,
 
 24
-00:01:21,700 --> 00:01:27,064
-在本课程中，你开始弥合这一差距，方法是将智能体直接接入 React
-You start bridging that gap in this course by wiring an agent directly into a React
+00:01:21,658 --> 00:01:25,580
+也是本课程所基于的 AG-UI 协议背后的团队。
+the team behind the AG-UI protocol that this course is built on.
 
 25
-00:01:27,064 --> 00:01:29,510
-前端，使用 CopilotKit 和 AG-UI。
-front end using CopilotKit and AG-UI.
+00:01:26,220 --> 00:01:28,854
+谢谢，Andrew。人与技术之间的每一次交互，
+Thank you, Andrew. Every interaction between people
 
 26
-00:01:30,330 --> 00:01:33,410
-到课程结束时，你将拥有一个可用于生产环境的全栈智能体应用。
-By the end, you have a production-ready, full-stack agent app.
+00:01:28,854 --> 00:01:31,430
+都越来越频繁地由智能体来作为中介。
+and technology is increasingly mediated by agents.
 
 27
-00:01:33,690 --> 00:01:37,450
-立即加入这门课程，为你的智能体打造一个用户会喜欢的界面吧。
-Jump into this course to give your agent an interface your users will love.
+00:01:32,110 --> 00:01:36,722
+然而，在我们录制这门课程时，大多数智能体仍然主要通过纯文本和用户交流，
+And yet, as we film this course, most agents still talk to users in plain text,
+
+28
+00:01:36,722 --> 00:01:40,830
+这很像个人计算早期的命令行 / MS-DOS 时代。
+which is a lot like the command line MS-DOS era of personal computing.
+
+29
+00:01:41,670 --> 00:01:44,910
+对早期采用者来说很强大，但还不足以面向大众普及。
+Powerful for early adopters, but not yet built for mass adoption.
+
+30
+00:01:45,550 --> 00:01:49,116
+Windows 和 Mac 时代改变了这一点，带来了功能完整的应用程序，
+The Windows and Mac era changed that and brought full-featured applications
+
+31
+00:01:49,116 --> 00:01:50,230
+让任何人都能轻松使用。
+that anybody could use.
+
+32
+00:01:51,290 --> 00:01:55,930
+AI 现在正在经历同样的转变，所有用户界面都正在被 AI 重塑。
+AI is going through the same transition now and all UI is becoming AI.
+
+33
+00:01:56,210 --> 00:01:59,610
+当用户请求一份报告时，智能体应该把它构建出来。
+When a user asks for a report, the agent should build it.
+
+34
+00:02:00,210 --> 00:02:03,250
+当他们需要批准某事时，智能体应该向他们展示一个表单。
+When they need to approve something, the agent should show them a form.
+
+35
+00:02:03,810 --> 00:02:06,850
+当他们需要探索数据时，智能体应该渲染一个图表。
+When they need to explore data, the agent should render a chart.
+
+36
+00:02:07,330 --> 00:02:13,610
+你将首先使用 CopilotKit 和 AG-UI，将一个 LangChain 智能体接入 React 前端。
+You'll start by connecting a LangChain agent to a React frontend using CopilotKit and AG-UI.
+
+37
+00:02:14,300 --> 00:02:19,218
+接着，你将跨越完整的生成式 UI 光谱进行构建，从受控的
+From there, you'll build across the full generative UI spectrum from controlled
+
+38
+00:02:19,218 --> 00:02:21,894
+生成式 UI（使用手工编写的组件，
+generative UI with handcrafted components
+
+39
+00:02:21,894 --> 00:02:25,004
+按需渲染），到声明式生成式 UI
+that render on demand to declarative generative UI
+
+40
+00:02:25,004 --> 00:02:29,633
+（智能体基于组件目录中的积木式组件组合出 UI），再到
+where the agent assembles UIs from a component catalog of building blocks to
+
+41
+00:02:29,633 --> 00:02:34,045
+开放式生成式 UI（应用体验首先由 MCP Apps 支撑，
+open-ended generative UI with app experiences powered first by MCP apps
+
+42
+00:02:34,045 --> 00:02:37,010
+然后由完整的应用沙箱支撑）。到
+and then by full app sandboxes. By the end of this
+
+43
+00:02:37,050 --> 00:02:41,732
+本课程结束时，你将构建出一个全栈智能体应用，它能渲染图表
+course, you have built a full-stack agent app that renders charts
+
+44
+00:02:41,732 --> 00:02:46,414
+和卡片，通过 MCP Apps 呈现实时白板，
+and cards on demand, surfaces a live whiteboard through MCP apps
+
+45
+00:02:46,414 --> 00:02:51,010
+并在智能体和 UI 之间保持共享待办事项列表的同步。
+and keeps a shared to-do list in sync between the agent and the UI.
+
+46
+00:02:51,890 --> 00:02:56,440
+CopilotKit 是开源的，它在一个框架中
+CopilotKit is open-source and it supports all three of the major generative UI
+
+47
+00:02:56,440 --> 00:02:58,050
+支持所有三种主要的生成式 UI 模式。
+patterns in one framework.
+
+48
+00:02:58,660 --> 00:03:02,517
+它还与 LangGraph、Google Cloud、AWS
+It also has first-party integrations with LangGraph, Google Cloud, AWS,
+
+49
+00:03:02,517 --> 00:03:04,060
+Microsoft Azure 等有着一等集成。
+Microsoft Azure and others.
+
+50
+00:03:04,580 --> 00:03:06,260
+很多人参与了本课程的制作。
+Many people have worked to create this course.
+
+51
+00:03:06,420 --> 00:03:08,491
+我要感谢来自 CopilotKit 的
+I'd like to thank from CopilotKit,
+
+52
+00:03:08,491 --> 00:03:13,420
+Uli Barkai，以及来自 DeepLearningAI 的 Tyler Slayton。Summer Ray 也参与了本课程。
+Uli Barkai, and Tyler Slayton from DeepLearningAI. Summer Ray also worked on this course.
+
+53
+00:03:13,820 --> 00:03:17,390
+在第 1 课中，你将并排了解生成式 UI 光谱的三大支柱，
+In Lesson 1, you'll walk through the three major pillars of the generative UI
+
+54
+00:03:17,390 --> 00:03:19,900
+它们各自有什么不同？
+spectrum side by side, what makes each one different?
+
+55
+00:03:20,350 --> 00:03:23,922
+以及何时该使用哪一种。到最后，你将对所有内容建立心智模型，
+And when you'd use each one, by the end you'll have the mental model for everything
+
+56
+00:03:23,922 --> 00:03:25,550
+也就是你将在本课程中构建的一切。
+you're going to build in this course.
+
+57
+00:03:26,590 --> 00:03:29,070
+所以，让我们开始吧，进入交互式世界。
+So let's jump in and get interactive.
+
+58
+00:03:30,510 --> 00:03:33,230
+我是 Atai。我是 CopilotKit 的联合创始人兼 CEO。
+I'm Atai. I'm co-founder and CEO of CopilotKit.
+
+59
+00:03:33,870 --> 00:03:38,488
+在本课程中，你将学习使用开源的 CopilotKit 技术栈和 AG-UI
+In this course, you will learn to use the open-source CopilotKit stack and the AG-UI
+
+60
+00:03:38,488 --> 00:03:42,830
+协议，该协议已被 Google、Microsoft、Amazon、LangChain 采用，
+protocol which has been adopted by Google, Microsoft, Amazon, LangChain,
+
+61
+00:03:42,830 --> 00:03:46,070
+Oracle 和许多其他领先的智能体生态系统。
+Oracle and many of the other leading agentic ecosystems.
+
+62
+00:03:46,750 --> 00:03:50,670
+因此，你在这里学到的所有内容都可以应用于整个主流的智能体技术栈。
+So everything you learn here can apply across the entire popular agentic stack.
+
+63
+00:03:50,990 --> 00:03:54,336
+在这节课中，你将了解生成式 UI 光谱，
+In this lesson, you will learn about the generative UI spectrum
+
+64
+00:03:54,336 --> 00:03:57,493
+以及它的三大核心支柱：受控、声明式，
+and about its three key pillars, controlled, declarative,
+
+65
+00:03:57,493 --> 00:03:59,829
+一直到完全开放式的生成式 UI，
+all the way to fully open-ended generative UI
+
+66
+00:03:59,829 --> 00:04:03,870
+并了解每个部分的差异以及何时该使用哪种模式。
+and about what makes each one of those parts different and when to apply each.
+
+67
+00:04:04,030 --> 00:04:07,686
+到本节课结束时，你将为接下来要构建的所有内容
+By the end of this lesson, you'll have the mental model for everything you're going
+
+68
+00:04:07,686 --> 00:04:09,010
+建立起心智模型。
+to be building in this course.
+
+69
+00:04:09,690 --> 00:04:10,330
+我们开始吧。
+So let's go.
+
+70
+00:04:10,850 --> 00:04:14,730
+好了，我们开始吧。我想用一个略带争议性的观点来开启这门课。
+Alright, let's jump in. I want to start the course with a bit of a provocative statement.
+
+71
+00:04:14,970 --> 00:04:17,488
+未来几年，所有用户界面都将被 AI 重塑，
+Over the next few years, all UI will become AI,
+
+72
+00:04:17,488 --> 00:04:19,873
+这意味着人类
+meaning every interaction between humans
+
+73
+00:04:19,873 --> 00:04:23,450
+与技术之间的每一次交互，都将越来越多地由智能体系统来作为中介。
+and technology will be increasingly mediated by agentic systems.
+
+74
+00:04:23,890 --> 00:04:27,169
+当然，对于像 HubSpot、Zendesk
+Of course, this is true of complex software products like HubSpot, Zendesk,
+
+75
+00:04:27,169 --> 00:04:29,730
+和 Figma 等复杂软件产品来说确实如此，但这甚至可能适用于你的冰箱。
+Figma and so on, but it may even be true of your refrigerator.
+
+76
+00:04:30,000 --> 00:04:31,817
+这听起来可能有点荒谬，
+That might sound a little bit preposterous,
+
+77
+00:04:31,817 --> 00:04:34,321
+但如果你走过冰箱时，
+but wouldn't it be nice if you could walk by your refrigerator
+
+78
+00:04:34,321 --> 00:04:37,120
+能顺便让它订购今晚做千层面所缺的食材，那岂不是很好？
+and tell it to order the missing ingredients for tonight's lasagna?
+
+79
+00:04:37,240 --> 00:04:41,240
+这就是我们的发展方向：智能体与人类之间无处不在的交互。
+So that's where we're going, ubiquitous interactions between agents and humans.
+
+80
+00:04:41,960 --> 00:04:46,167
+但我们现在处于什么阶段？当前的智能体界面看起来很像 MS-DOS 命令
+But where are we now? Current agentic interfaces look a lot like the MS-DOS command
+
+81
+00:04:46,167 --> 00:04:47,760
+行界面。
+line interfaces of the 1980s.
+
+82
+00:04:48,120 --> 00:04:51,910
+这些最初的原始界面对于推动
+These initial raw interfaces are good enough for early adopter types who drive the
+
+83
+00:04:51,910 --> 00:04:55,920
+早期大部分使用量的早期采用者来说已经够用了，但对于主流大众普及来说还不够好。
+lion's share of initial use, but they're not good enough for mainstream mass adoption.
+
+84
+00:04:56,140 --> 00:05:00,251
+继续这个类比，今天的智能体正开始从 MS-DOS
+To continue this analogy, today's agents are beginning to graduate from the MS-DOS
+
+85
+00:05:00,251 --> 00:05:01,740
+时代迈向 Windows 和 Mac 时代。
+era to the Windows and Mac era.
+
+86
+00:05:01,860 --> 00:05:05,300
+如果你留意的话，你可能已经注意到你的客户正在强烈要求这一点。
+If you're paying attention, you've likely noticed your customers are asking for this loudly.
+
+87
+00:05:05,540 --> 00:05:08,714
+在这门课程中，我们将带你了解构建全栈
+In this course, we will walk you through the concepts behind building full-stack
+
+88
+00:05:08,714 --> 00:05:10,940
+智能体应用背后的概念，这些应用已为主流大众普及做好准备。
+agentic applications which are ready for mass adoption.
+
+89
+00:05:11,620 --> 00:05:16,026
+优秀的全栈智能体应用会利用生成式 UI 能力来构建
+Great full-stack agentic applications leverage generative UI capabilities to build a
+
+90
+00:05:16,026 --> 00:05:18,780
+与智能体协同工作的出色用户体验。
+great user experience for working alongside agents.
+
+91
+00:05:19,330 --> 00:05:21,600
+例如，在 Claude Code 和 Cursor 中，
+For example, in Claude Code and in Cursor,
+
+92
+00:05:21,600 --> 00:05:25,558
+我们能够与智能体无缝协作，看到它正在做什么，
+we're able to seamlessly work alongside our agent and see what it is doing
+
+93
+00:05:25,558 --> 00:05:27,763
+并以连贯的步骤引导它；在 Notion 中，
+and steer it in coherent steps in Notion,
+
+94
+00:05:27,763 --> 00:05:31,850
+我们的智能体能够代表我们在应用中执行操作，对吧？
+our agents are able to take actions on our behalf in the application, right?
+
+95
+00:05:31,850 --> 00:05:35,231
+当我们在 Manus 中工作时，智能体会向我们流式传输它们正在执行的操作，
+As we work in Manus, our agents stream to us what they're doing
+
+96
+00:05:35,231 --> 00:05:36,690
+并以精美的 UI 呈现出来。
+and present it with a nice UI.
+
+97
+00:05:37,090 --> 00:05:38,890
+那么，为什么构建这一切会这么难呢？
+So why is building all of this so hard?
+
+98
+00:05:39,210 --> 00:05:43,041
+首次接触智能体应用开发的开发者，往往会先把重点放在
+Developers who first approach agentic application development start by focusing on
+
+99
+00:05:43,041 --> 00:05:43,850
+智能体本身。
+the agent itself.
+
+100
+00:05:44,110 --> 00:05:46,372
+他们最初以为，一旦构建好智能体，
+They initially expect that once they build the agent,
+
+101
+00:05:46,372 --> 00:05:47,829
+只需把它放在 API 后面，
+they'll just store it behind an API
+
+102
+00:05:47,829 --> 00:05:51,147
+并将其连接到任何面向用户的应用，就像他们以前处理
+and connect it to any user-facing application just like they've done with every
+
+103
+00:05:51,147 --> 00:05:53,710
+前端和后端开发时所做的那样。
+front-end and back-end development before agents came along.
+
+104
+00:05:53,950 --> 00:05:56,099
+但当我们尝试这样做时，我们遇到了第二类
+But when we try to do that, we run into a second
+
+105
+00:05:56,099 --> 00:05:58,190
+起初意想不到的问题。
+and initially unexpected set of problems.
+
+106
+00:05:58,630 --> 00:06:01,817
+我们发现智能体打破了请求-响应范式，
+We discover that agents break the request-response paradigm,
+
+107
+00:06:01,817 --> 00:06:04,820
+而这一范式已经驱动互联网运行了 30 年。
+which has been powering the internet for the last 30 years.
+
+108
+00:06:05,220 --> 00:06:07,078
+当然，智能体只是软件，
+Agents are, of course, just software,
+
+109
+00:06:07,078 --> 00:06:11,260
+但从前智能体软件的角度来看，它们有点像一种奇怪的鸟。
+but from the standpoint of pre-agentic software they're a little bit like a weird bird.
+
+110
+00:06:11,460 --> 00:06:14,720
+它们是长时间运行的，所以必须在运行时流式传输工作过程，
+They're long-running so they have to stream their work as they run
+
+111
+00:06:14,720 --> 00:06:18,100
+并支持重连、中断和运行中引导。
+and support reconnections, interruptions and mid-run steerings.
+
+112
+00:06:18,580 --> 00:06:21,340
+它们必须支持结构化和非结构化的数据交换。
+They have to support structured and unstructured data exchange.
+
+113
+00:06:21,380 --> 00:06:25,140
+同时，还有文本和语音，以及工具调用和状态更新等。
+At the same time, you have text and voice alongside tool calls and state updates and so on.
+
+114
+00:06:25,400 --> 00:06:27,592
+所以这有点像要在同一个传统应用中实现 Slack
+So it's a little bit like implementing Slack
+
+115
+00:06:27,592 --> 00:06:30,080
+和 Zoom 的全部功能。
+and Zoom all at once.
+
+116
+00:06:30,520 --> 00:06:33,413
+智能体确实有一长串这样的特性，
+And there's really a long, long list of these peculiarities
+
+117
+00:06:33,413 --> 00:06:36,480
+这都是从传统软件的角度来看的。
+that agents have from the standpoint of pre-agentic software.
+
+118
+00:06:36,800 --> 00:06:39,518
+因此，当我们试图把智能体塞到传统 API 后面时，
+And so when we try to stick an agent behind a traditional API,
+
+119
+00:06:39,518 --> 00:06:42,400
+我们最终会一而再、再而三地碰壁，陷入无尽的复杂性中。
+we end up running into wall after wall after wall of complexity.
+
+120
+00:06:42,520 --> 00:06:45,959
+然后发现我们不得不重新实现这 30 年来的粘合代码，
+And we discover that we have to reimplement 30 years of glue code,
+
+121
+00:06:45,959 --> 00:06:49,080
+这在智能体时代是我们一直习以为常的。
+which we've all been taking for granted for the agentic age.
+
+122
+00:06:49,320 --> 00:06:51,520
+这就是 CopilotKit 和 AG-UI 的用武之地。
+And that's where CopilotKit and AG-UI come in.
+
+123
+00:06:51,600 --> 00:06:54,139
+CopilotKit 提供开源开发者 SDK，
+CopilotKit provides open source developer SDKs
+
+124
+00:06:54,139 --> 00:06:57,979
+和云平台，用于构建面向用户的智能体应用，
+and a cloud platform for building user facing agentic applications in a way
+
+125
+00:06:57,979 --> 00:06:59,837
+这种方式专为智能体时代优化，
+that's optimized for the agentic era
+
+126
+00:06:59,837 --> 00:07:04,111
+而不是从请求-响应范式改造而来。而 AG-UI 协议，
+as opposed to retrofitted from the request response paradigm, the AG-UI protocol,
+
+127
+00:07:04,111 --> 00:07:06,960
+即 Agent User Interaction Protocol（智能体用户交互协议）。
+which stands for the Agent User Interaction Protocol.
+
+128
+00:07:07,160 --> 00:07:09,112
+让构建智能体框架的开发者
+Lets developers who build agent frameworks
+
+129
+00:07:09,112 --> 00:07:12,700
+和脚手架将智能体引入面向用户的生态系统，只需基于
+and harnesses bring their agents to user facing ecosystems by building against a
+
+130
+00:07:12,700 --> 00:07:15,866
+一个稳健的标准进行构建，这意味着它们只需符合几个简单的要求，
+robust standard, which means they conform to a few simple requirements
+
+131
+00:07:15,866 --> 00:07:17,080
+一切就能顺畅运行。
+and everything just works.
+
+132
+00:07:17,440 --> 00:07:21,634
+这反过来又让开发者和组织能够构建智能体应用，
+This in turn allows developers and organizations to build agentic applications to
+
+133
+00:07:21,634 --> 00:07:25,888
+以简化的方式对接所有这些不同的智能体，从而确立了 AG-UI
+build against all of these different agents in a streamline fashion to situate AG-UI
+
+134
+00:07:25,888 --> 00:07:26,800
+在行业版图中的位置。
+in the landscape.
+
+135
+00:07:26,840 --> 00:07:30,600
+显然，已有 MCP 将智能体连接到第三方工具和上下文中。
+You have obviously MCP connecting agents to third party tools into context.
+
+136
+00:07:30,720 --> 00:07:33,831
+也有 A2A 将智能体连接到其他智能体系统，
+You have A2A connecting agents to other agentic systems
+
+137
+00:07:33,831 --> 00:07:36,053
+而 AG-UI 则是这个三角形的第三条边，
+and AG-UI is the third leg of this triangle,
+
+138
+00:07:36,053 --> 00:07:38,720
+将你的智能体连接到面向用户的应用。
+connects your agent to user facing applications.
+
+139
+00:07:39,400 --> 00:07:42,160
+AG-UI 源于我们最初与 LangChain 和 CrewAI 的合作。
+AG-UI emerged from our initial partnership with LangChain and CrewAI.
+
+140
+00:07:42,360 --> 00:07:43,784
+自我们发布该协议以来，
+And since we launched the protocol,
+
+141
+00:07:43,784 --> 00:07:46,680
+它已被智能体领域的众多顶尖团队广泛采用，
+it's been widely adopted by many of the top leaders in the agentic space,
+
+142
+00:07:46,680 --> 00:07:49,956
+这意味着你在本课程中学到的所有知识，都可以应用于任何
+which means that everything you learn in this course can be applied to any agentic
+
+143
+00:07:49,956 --> 00:07:51,760
+你在生产环境中使用的智能体系统。
+system you work with out there in production.
+
+144
+00:07:52,040 --> 00:07:55,535
+顺便说一下，如果你遇到尚未支持的系统，
+By the way, if you do come across a system that is not yet supported or
+
+145
+00:07:55,535 --> 00:07:58,219
+或者你的组织自建了智能体系统，
+if your organization made its own agentic system,
+
+146
+00:07:58,219 --> 00:08:01,340
+你也可以为该系统构建自己的 AG-UI 连接器。
+you can also build your own AG-UI connectors for that system.
+
+147
+00:08:01,700 --> 00:08:04,380
+不过，本课程不会涵盖这一部分内容。
+However, we will not cover that side of the equation in this course.
+
+148
+00:08:04,860 --> 00:08:08,172
+因此，你可以使用 AG-UI 将任何智能体连接到你的用户，
+So you can use AG-UI to connect any agent to your users,
+
+149
+00:08:08,172 --> 00:08:11,860
+也可以使用 AG-UI 将任何用户连接到你的智能体。
+but you can also use AG-UI to connect any user to your agents.
+
+150
+00:08:12,420 --> 00:08:16,226
+你在本课程中学到的所有知识，都可以应用于构建
+Everything you will learn in this course can be applied to building agentic
+
+151
+00:08:16,226 --> 00:08:20,216
+面向用户使用的任何前端的智能体应用，从 Web 到移动端、Slack、文本
+applications in any frontend your users use from web to mobile to Slack to text
+
+152
+00:08:20,216 --> 00:08:21,260
+消息等。
+messaging and so on.
+
+153
+00:08:21,380 --> 00:08:24,886
+在本课程中，我们将专注于 Web，特别是 React，
+In this course, we're going to focus on web and specifically on React,
+
+154
+00:08:24,886 --> 00:08:26,760
+它是目前主流的 Web 框架。
+which is the dominant web framework.
+
+155
+00:08:27,040 --> 00:08:28,431
+介绍了架构之后，
+So having laid out the architecture,
+
+156
+00:08:28,431 --> 00:08:30,720
+让我们把注意力转回生成式 UI 的世界。
+let's bring our attention back to the world of generative UI.
+
+157
+00:08:31,360 --> 00:08:33,760
+首先，什么是生成式 UI？
+First, what is generative UI?
+
+158
+00:08:34,200 --> 00:08:37,927
+生成式 UI 是一种 UI 范式，它既由
+Generative UI is a UI paradigm which is both enabled by
+
+159
+00:08:37,927 --> 00:08:41,240
+LLM 系统和智能体赋能，又为它们服务。
+and exists in service of LLM systems and agents.
+
+160
+00:08:41,720 --> 00:08:42,480
+这是什么意思？
+What does that mean?
+
+161
+00:08:43,000 --> 00:08:46,429
+LLM 系统和智能体为软件领域
+Well, LLM systems and agents introduce both new capabilities
+
+162
+00:08:46,429 --> 00:08:49,000
+既引入了新能力，也带来了新挑战。
+and new challenges to the software landscape.
+
+163
+00:08:49,280 --> 00:08:53,260
+生成式 UI 正是利用这些新能力的 UI 范式，
+Generative UI is the UI paradigm that takes advantage of those new capabilities,
+
+164
+00:08:53,260 --> 00:08:56,480
+既能改善体验，又能应对这些新挑战。
+both to improve experiences and to address those new challenges.
+
+165
+00:08:57,120 --> 00:08:59,112
+生成式 UI 解决方案存在于一个光谱上，
+Generative UI solutions exist on a spectrum
+
+166
+00:08:59,112 --> 00:09:01,480
+控制权从开发者流向智能体。
+where control flows from the developer to the agent.
+
+167
+00:09:01,960 --> 00:09:06,337
+这个光谱有三个支柱：受控生成式 UI、
+There are three pillars in the spectrum, controlled generative UI,
+
+168
+00:09:06,337 --> 00:09:09,960
+声明式生成式 UI 和开放式生成式 UI。
+declarative generative UI and open-ended generative UI.
+
+169
+00:09:10,440 --> 00:09:14,182
+现代智能体应用需要整个生成式 UI 光谱，
+The entire generative UI spectrum is needed in modern agentic applications,
+
+170
+00:09:14,182 --> 00:09:18,040
+因为光谱上不同的解决方案各有优缺点，
+because different solutions along the spectrum have different pros and cons,
+
+171
+00:09:18,040 --> 00:09:20,320
+因此最适合不同的用例。
+and so are best suited for different use cases.
+
+172
+00:09:20,720 --> 00:09:24,769
+在本节课中，我们将简要概述生成式 UI 光谱的三个支柱，
+In this lesson, we will briefly outline the three pillars of the generative UI
+
+173
+00:09:24,769 --> 00:09:27,136
+然后在课程剩余部分，
+spectrum, and then in the rest of this course,
+
+174
+00:09:27,136 --> 00:09:30,500
+你将深入学习每个支柱，并了解如何以及何时应用它们。
+you will dive deep into each one and learn how and when to apply it.
+
+175
+00:09:31,020 --> 00:09:32,861
+受控生成式 UI 是一种范式，
+Controlled Generative UI is a paradigm
+
+176
+00:09:32,861 --> 00:09:35,484
+开发者为智能体提供预构建的、
+where the developer provides the agent with pre-built,
+
+177
+00:09:35,484 --> 00:09:38,050
+完全自定义的 UI 组件，智能体可以按需调用
+fully custom UI components that the agent can call upon
+
+178
+00:09:38,050 --> 00:09:39,780
+以增强交互体验。
+as needed to augment an interaction.
+
+179
+00:09:40,180 --> 00:09:44,380
+它能实现最大程度的自定义、可预测性以及像素级完美的设计。
+It allows for maximum customization and predictability and pixel-perfect designs.
+
+180
+00:09:44,940 --> 00:09:49,806
+受控生成式 UI 还带来了简单直接的开发体验，
+Controlled generative UI also allows for a straightforward development experience
+
+181
+00:09:49,806 --> 00:09:52,780
+这是前智能体时代前后端架构中我们所熟悉的。
+familiar from the pre-agentic back-end, front-end era.
+
+182
+00:09:53,060 --> 00:09:57,045
+受控生成式 UI 被视为生成式 UI 领域的主力，
+Controlled generative UI is considered the workhorse of the generative UI world
+
+183
+00:09:57,045 --> 00:10:01,264
+因为极大的定制化与可预测性对产品的
+because maximum customization and predictability are important for your product's
+
+184
+00:10:01,264 --> 00:10:02,260
+最常用服务至关重要。
+most used services.
+
+185
+00:10:02,820 --> 00:10:05,234
+受控生成式 UI 的缺点在于，
+The downside of controlled generative UI is
+
+186
+00:10:05,234 --> 00:10:09,427
+你必须为你希望智能体支持的每种交互
+that you have to design a specific component for each interaction you want your
+
+187
+00:10:09,427 --> 00:10:10,380
+都设计一个特定组件。
+agent to support.
+
+188
+00:10:10,460 --> 00:10:13,940
+因此，实现复杂度会随功能数量呈线性增长。
+And so implementation complexity scales linearly with capabilities.
+
+189
+00:10:14,470 --> 00:10:18,830
+在本课程中，我们将使用 AG-UI 和 CopilotKit 来实现受控生成式 UI。
+We will implement controlled generative UI using AG-UI and CopilotKit in this course.
+
+190
+00:10:19,630 --> 00:10:21,668
+声明式生成式 UI 是一种范式，
+Declarative generative UI is a paradigm
+
+191
+00:10:21,668 --> 00:10:25,925
+开发者声明一个由类似乐高的预构建积木式组件组成的组件目录，
+where developers declare a component catalog of prebuilt Lego-like building blocks
+
+192
+00:10:25,925 --> 00:10:29,642
+智能体随后可以将其动态组装成渲染组件，
+which the agent can then assemble into rendered components dynamically,
+
+193
+00:10:29,642 --> 00:10:32,280
+以声明式、按需的方式应对任何给定的交互。
+declaratively and on demand for any given interaction.
+
+194
+00:10:32,680 --> 00:10:35,688
+在底层，智能体返回一个结构化 schema，
+Under the hood, the agent returns a structured schema
+
+195
+00:10:35,688 --> 00:10:40,435
+表示积木式组件的组装，以及包含
+that represents an assembly of building blocks along with data bindings containing
+
+196
+00:10:40,435 --> 00:10:42,240
+填充该 schema 数值的数据绑定。
+values that fill in that schema.
+
+197
+00:10:42,600 --> 00:10:46,241
+然后，schema 和数据绑定会被传递给前端渲染器，
+The schema and the data bindings are then passed to front-end renderers,
+
+198
+00:10:46,241 --> 00:10:49,760
+从而将结构化内容可视化为原生 UI 组件。
+which can visualize the structured content as native UI components.
+
+199
+00:10:49,960 --> 00:10:53,430
+我们很快就会在面向消费者的应用中看到其实际运行的示例。
+We will soon see an example of this in action in consumer-facing applications.
+
+200
+00:10:53,790 --> 00:10:58,272
+声明式生成式 UI 最适合产品服务的长尾部分，
+Declarative generative UI is most suited for the long tail of product services
+
+201
+00:10:58,272 --> 00:11:01,350
+在这些场景中，灵活性比完美性更重要。
+where flexibility is more impactful than perfection.
+
+202
+00:11:01,870 --> 00:11:05,658
+声明式生成式 UI 在内部应用中也表现优异，
+Declarative generative UI also excels in internal applications
+
+203
+00:11:05,658 --> 00:11:08,069
+这些应用通常更看重纯功能性
+that generally favor pure functionality
+
+204
+00:11:08,069 --> 00:11:12,270
+和易实现性，而不是完美优化的用户体验。
+and ease of implementation over a perfectly optimized user experience.
+
+205
+00:11:12,910 --> 00:11:16,470
+原因在于声明式生成式 UI 无法做到像素级完美。
+The reason is that declarative generative UI cannot be made pixel-perfect.
+
+206
+00:11:17,070 --> 00:11:20,670
+组件必须由预构建的积木式组件的标准组合构成。
+Components have to consist of a standard combination of pre-built building blocks.
+
+207
+00:11:21,070 --> 00:11:24,910
+声明式生成式 UI 也不如受控生成式 UI 那样具有确定性。
+Declarative generative UI is also less deterministic than controlled generative UI.
+
+208
+00:11:25,110 --> 00:11:28,127
+相同的用户查询在不同时间
+The same user query may be answered via a different combination of building blocks
+
+209
+00:11:28,127 --> 00:11:28,870
+可能会通过不同的积木式组件组合来作答。
+at different times.
+
+210
+00:11:29,230 --> 00:11:32,072
+并且由于它需要更多的计算和生成时间，
+And because it requires more computation and generation time,
+
+211
+00:11:32,072 --> 00:11:34,270
+它也比受控生成式 UI 更慢。
+it is also slower than controlled generative UI.
+
+212
+00:11:34,630 --> 00:11:38,500
+我们在这里使用的工具是 CopilotKit 和 AG-UI 规范，
+The tools we will use here are CopilotKit and the AG-UI spec,
+
+213
+00:11:38,500 --> 00:11:40,590
+该规范由 Google 牵头。
+which is spearheaded by Google.
+
+214
+00:11:40,790 --> 00:11:44,932
+CopilotKit 是 AG-UI 的首发和设计合作伙伴，
+CopilotKit is a launch and design partner on AG-UI,
+
+215
+00:11:44,932 --> 00:11:48,750
+AG-UI 规范可以用于任何智能体框架。
+and the AG-UI spec can be used with any agentic framework.
+
+216
+00:11:48,750 --> 00:11:52,474
+沿着生成式 UI 光谱继续往后，我们会发现 MCP Apps，
+Further along the generative UI spectrum we find MCP apps
+
+217
+00:11:52,474 --> 00:11:54,750
+它们是 MCP 的官方扩展。
+which are an official extension of MCP.
+
+218
+00:11:55,030 --> 00:11:58,235
+MCP Apps 是小部件，甚至是功能完整的应用，
+MCP apps are widgets and even fully featured applications
+
+219
+00:11:58,235 --> 00:12:00,720
+它们被嵌入到 AI 聊天窗口中。
+that get embedded inside the AI chat window.
+
+220
+00:12:00,840 --> 00:12:04,160
+在底层，MCP Apps 通过嵌入的 iframe 实现。
+Under the hood, MCP apps are implemented via an embedded iframe.
+
+221
+00:12:04,520 --> 00:12:08,220
+MCP Apps 得到了 ChatGPT 和 Claude 应用商店的支持，
+MCP apps are supported by the ChatGPT and Claude app stores,
+
+222
+00:12:08,220 --> 00:12:11,920
+并针对这些应用商店的使用场景进行了深度优化。
+and they are deeply optimized for those app store use cases.
+
+223
+00:12:12,480 --> 00:12:16,880
+好处在于，你可以将任何第三方应用引入聊天体验中，
+The advantage is that you can bring any third-party app into a chat experience,
+
+224
+00:12:16,880 --> 00:12:19,046
+同时允许它保留自身的品牌标识，
+while allowing it to keep its branding
+
+225
+00:12:19,046 --> 00:12:22,160
+而无需以任何方式定制宿主应用。
+and without having to customize the host app in any way.
+
+226
+00:12:22,410 --> 00:12:27,297
+缺点在于，这种约束导致在
+The disadvantage is that this constraint necessitates an inherent indirection in the
+
+227
+00:12:27,297 --> 00:12:29,774
+MCP App 与宿主应用的交互中存在固有的间接性，
+interaction between an MCP app and the host,
+
+228
+00:12:29,774 --> 00:12:33,055
+这引入了额外的实现复杂度，
+which introduces additional implementation complexity
+
+229
+00:12:33,055 --> 00:12:37,071
+因为你本质上是在另一个应用内实现一个应用，
+because you're implementing essentially an app inside of another app,
+
+230
+00:12:37,071 --> 00:12:41,490
+带来安全挑战，且在 MCP App 窗口之外的定制能力有限。
+security challenges and limited customization outside of the MCP app window.
+
+231
+00:12:41,810 --> 00:12:46,192
+此外，目前 MCP Apps 本质上与 iframe 实现绑定，
+Additionally, today, MCP apps are inherently tied to an iframe implementation,
+
+232
+00:12:46,192 --> 00:12:50,381
+这意味着它们不太适合 Web 之外的体验，
+which means they are less suitable for experiences that exist outside of web,
+
+233
+00:12:50,381 --> 00:12:51,670
+比如移动端或 Slack。
+such as mobile or Slack.
+
+234
+00:12:52,070 --> 00:12:56,216
+在本课程中，我们将利用 AG-UI
+In this course, we will take advantage of the handshake between AG-UI
+
+235
+00:12:56,216 --> 00:12:58,179
+与 MCP Apps 之间的握手机制，将任何 MCP App，
+and MCP apps to bring any MCP app,
+
+236
+00:12:58,179 --> 00:13:02,180
+包括最初主要为 ChatGPT
+including those apps originally built primarily for the ChatGPT
+
+237
+00:13:02,180 --> 00:13:06,180
+和 Claude 应用商店构建的应用，引入你自己的自定义智能体应用中。
+and Claude app stores, into your own custom agentic applications.
+
+238
+00:13:06,660 --> 00:13:10,643
+这意味着你的用户可以把他们已经熟悉的应用，
+Which means that your users can bring the apps they're already familiar with,
+
+239
+00:13:10,643 --> 00:13:12,543
+从 Salesforce 和 HubSpot 到 Figma，
+from Salesforce and HubSpot to Figma
+
+240
+00:13:12,543 --> 00:13:15,300
+以及 Spotify，引入你自己的自定义智能体应用中。
+and Spotify into your own custom agentic application.
+
+241
+00:13:15,780 --> 00:13:19,102
+最后，在生成式 UI 光谱的最远端，
+Finally, at the very far end of the generative UI spectrum,
+
+242
+00:13:19,102 --> 00:13:21,340
+我们看到了完全开放式的生成式 UI。
+we find fully open-ended generative UI.
+
+243
+00:13:21,620 --> 00:13:25,889
+这种范式包含由智能体按需完全生成的 UI，
+This paradigm consists of UI that is fully generated by the agent on demand,
+
+244
+00:13:25,889 --> 00:13:27,990
+根据用户请求，完全开放式。
+per user request, fully open-ended.
+
+245
+00:13:28,150 --> 00:13:30,213
+这种生成式 UI 往往是人们
+The generative UI is often what people have in mind
+
+246
+00:13:30,213 --> 00:13:32,030
+初次听到“生成式 UI”这个词时脑海中的画面。
+when they first hear the term generative UI.
+
+247
+00:13:32,310 --> 00:13:36,216
+这种生成式 UI 范式最适用于用户
+This paradigm of generative UI is most suitable for the far long tail of user
+
+248
+00:13:36,216 --> 00:13:39,998
+查询中极长的长尾部分，也适用于通过自定义且无界限的体验让用户惊喜，
+queries and for delighting users with custom and boundless experiences
+
+249
+00:13:39,998 --> 00:13:42,230
+这些体验以今天的标准来看是出乎意料的。
+that by today's standards are unexpected.
+
+250
+00:13:42,750 --> 00:13:47,786
+话虽如此，完全开放式的生成式 UI 需要远超以往的思维 token 才能工作，
+That said, fully open-ended generative UI requires far more thinking tokens to work,
+
+251
+00:13:47,786 --> 00:13:50,164
+这不仅速度更慢、成本更高，
+which is both slower and more expensive,
+
+252
+00:13:50,164 --> 00:13:55,480
+而且与生成式 UI 光谱中的其他选项相比，它的可预测性和鲁棒性也要差得多。
+and it is far less predictable and robust than alternatives in the generative UI spectrum.
+
+253
+00:13:55,880 --> 00:13:59,116
+目前它仍处于采用的实验阶段，
+It's currently still in the experimental phase of adoption,
+
+254
+00:13:59,116 --> 00:14:03,240
+但它代表了智能体 UI 的全部愿景，并激发了我们的想象力。
+but it represents the full promise of agentic UI and captures our imagination.
+
+255
+00:14:03,640 --> 00:14:06,040
+鉴于智能体领域惊人的发展速度，
+Given the tremendous pace of development in the agentic space,
+
+256
+00:14:06,040 --> 00:14:08,440
+它很可能会迅速变得越来越可用于生产环境。
+it will likely quickly become more and more production-ready.
+
+257
+00:14:08,840 --> 00:14:12,531
+在本课程中，我们将使用 CopilotKit
+In this course, we will implement fully open-ended generative UI using CopilotKit
+
+258
+00:14:12,531 --> 00:14:16,510
+和 AG-UI 中间件来实现完全开放式的生成式 UI，这意味着你可以立即将其接入任何智能体后端。
+and AG-UI middleware, which means you can bring it to any agentic back-end right away.
+
+259
+00:14:17,390 --> 00:14:19,948
+让我们快速回顾一下。正如你很快就会近距离看到的，
+Let's do a quick recap. As you will soon see up close,
+
+260
+00:14:19,948 --> 00:14:23,907
+生成式 UI 光谱的不同部分具有不同的优势，
+the different parts of the generative UI spectrum have different strengths,
+
+261
+00:14:23,907 --> 00:14:27,988
+适用于不同的需求和场景。受控的生成式 UI，
+which are suitable for different needs and surfaces. Controlled generative UI,
+
+262
+00:14:27,988 --> 00:14:32,251
+也就是生成式 UI 世界的所谓主力军，是最合适的解决方案
+the so-called workhorse of the generative UI world is the most appropriate solution
+
+263
+00:14:32,251 --> 00:14:36,210
+用于应用程序中最常用的场景。声明式生成式 UI，
+for the most used surface in your application. Declarative generative UI,
+
+264
+00:14:36,450 --> 00:14:39,542
+它更灵活，但自定义性和确定性较低，
+which is more flexible but less customizable and deterministic,
+
+265
+00:14:39,542 --> 00:14:42,690
+最适用于应用程序中服务的长尾部分。
+is most suitable for the long tail of services in your application.
+
+266
+00:14:43,050 --> 00:14:47,330
+开放式生成式 UI 最适用于与第三方系统交互。
+Open-ended generative UI is most suitable for interacting with third-party systems.
+
+267
+00:14:47,410 --> 00:14:49,334
+以及应用程序极长的长尾部分，
+And for the far long tail of your application,
+
+268
+00:14:49,334 --> 00:14:51,850
+我非常期待与你一同踏上这段旅程。
+I'm really looking forward to going on this journey with you.
+
+269
+00:14:52,050 --> 00:14:55,868
+我们将通过在坚实的基础之上构建一个基本的智能体聊天 UI 来开始本课程，
+We will begin the course by building a basic agent chat UI on top of a solid
+
+270
+00:14:55,868 --> 00:14:59,622
+这个基础我们可以继续扩展，然后我们将介绍受控、
+foundation we can continue to build on, then we'll go over controlled,
+
+271
+00:14:59,622 --> 00:15:03,440
+声明式和开放式的生成式 UI，并为每种提供实战示例。
+declarative, and open-ended generative UIs with hands-on examples for each.
+
+272
+00:15:03,880 --> 00:15:07,460
+最后，我们将以创建出色的
+Finally, we'll close out with additional building blocks needed to create a great
+
+273
+00:15:07,460 --> 00:15:09,742
+聊天之外的全栈智能体应用所需的额外构建块来收尾，
+full-stack agentic application outside of the chat,
+
+274
+00:15:09,742 --> 00:15:12,440
+包括前端工具调用和状态同步。
+including front-end tool calling and state synchronization.
+
+275
+00:15:12,640 --> 00:15:14,254
+这是一个快速发展的新兴领域，
+This is a quickly evolving emerging space
+
+276
+00:15:14,254 --> 00:15:16,560
+我真心希望这门课程能让你走在时代前沿。
+and I really hope this course will get you ahead of the curve.
+
+277
+00:15:17,840 --> 00:15:21,856
+在本节课中，你将在生产级
+In this lesson, you'll build your first agent chat UI on a production-grade
+
+278
+00:15:21,856 --> 00:15:25,160
+的基础之上构建你的第一个智能体聊天 UI，你可以对其进行自定义并继续扩展。
+foundation that you can customize and continue to expand on.
+
+279
+00:15:25,280 --> 00:15:30,961
+你将使用 CopilotKit 和 AG-UI 将你的 React 前端连接到 LangGraph
+You'll use CopilotKit and AG-UI to connect your React frontend to a LangGraph
+
+280
+00:15:30,961 --> 00:15:33,590
+智能体以及 Google ADK 智能体。
+agent as well as to a Google ADK agent.
+
+281
+00:15:33,990 --> 00:15:35,757
+在本课程的其余部分，
+Throughout the rest of this course,
+
+282
+00:15:35,757 --> 00:15:39,350
+我们将用完整的生成式 UI 光谱来扩展这里的基础。
+we will expand on the foundation here with a full generative UI spectrum.
+
+283
+00:15:39,710 --> 00:15:40,670
+好了，我们开始写代码吧。
+Alright, let's get coding.
+
+284
+00:15:41,310 --> 00:15:44,710
+在本课程中，我们将把智能体增强到纯文本聊天体验之外。
+Throughout this course we're going to augment our agent beyond the text-only chat experience.
+
+285
+00:15:44,910 --> 00:15:48,230
+但在此之前，我想花点时间谈谈聊天的持久价值。
+But before we do that, I want to take a minute to talk about the lasting value of chat.
+
+286
+00:15:48,630 --> 00:15:53,070
+LLM 最初是在 2022 年 ChatGPT 发布时突破公众想象的。
+LLMs first broke through the public imagination with the launch of ChatGPT in 2022.
+
+287
+00:15:53,290 --> 00:15:56,530
+当然，ChatGPT 首先且最重要的是一种聊天体验。
+And ChatGPT was, of course, first and foremost a chat experience.
+
+288
+00:15:56,970 --> 00:15:59,749
+许多人预测聊天将是一阵很快过去的风潮，
+Many people predicted that chat would be a quickly passing fad and
+
+289
+00:15:59,749 --> 00:16:02,730
+并且会被更传统的交互模式所取代。
+that it would be replaced by a more traditional interaction modality.
+
+290
+00:16:02,810 --> 00:16:06,558
+但自最初的 ChatGPT 以来，LLM 已经取得了长足的进步，
+But LLMs have come a very long way since the original ChatGPT,
+
+291
+00:16:06,558 --> 00:16:09,130
+我们现在已完全进入了 AI 智能体的时代。
+and we're now fully in the age of AI agents.
+
+292
+00:16:09,530 --> 00:16:13,377
+然而聊天模式依然与我们同在，其生命力远比
+And yet the chat modality is still here with us with far more staying power than
+
+293
+00:16:13,377 --> 00:16:15,330
+我们最初认为的要强得多。
+many of us initially gave it credit for.
+
+294
+00:16:16,010 --> 00:16:19,058
+这是为什么？在 CopilotKit，我们逐渐将聊天视为
+Why is that? At CopilotKit, we've come to think of chat
+
+295
+00:16:19,058 --> 00:16:21,090
+本质上就是与智能体对话的 Slack。
+as essentially Slack with an agent.
+
+296
+00:16:21,450 --> 00:16:25,059
+聊天是智能实体之间开放式的沟通媒介，
+Chat is an open-ended communication medium between intelligent entities
+
+297
+00:16:25,059 --> 00:16:28,610
+它不会将你局限于带有按钮和菜单的某些预设想法。
+which doesn't limit you to some predefined ideas with buttons and menus.
+
+298
+00:16:28,930 --> 00:16:30,326
+这也是人类沟通的方式。
+It's also how people communicate.
+
+299
+00:16:30,326 --> 00:16:33,360
+它是我们彼此沟通的方式，有时甚至是我们与自己沟通的方式。
+It's how we communicate with each other and sometimes even with ourselves.
+
+300
+00:16:33,800 --> 00:16:36,877
+因此，所有迹象都表明，聊天将在......的长远发展进程中与我们长久相伴
+And so all signs are that chat is here to stay with us for the long run of the
+
+301
+00:16:36,877 --> 00:16:37,800
+智能体革命。
+agentic revolution.
+
+302
+00:16:38,240 --> 00:16:40,160
+但聊天交互不必仅限于文本。
+But chat doesn't have to be text only.
+
+303
+00:16:40,360 --> 00:16:43,753
+它可以通过生成式 UI 和应用内交互来增强，
+It can be augmented by generative UI and in-app interactions,
+
+304
+00:16:43,753 --> 00:16:47,280
+甚至可以基于语音或视频而非文本来进行。
+and it could even be anchored in voice or video rather than text.
+
+305
+00:16:47,760 --> 00:16:51,001
+我们在本课程中探讨的理念很可能会形成一个基础，
+The ideas we explore in this course are likely to form a foundation
+
+306
+00:16:51,001 --> 00:16:53,560
+并在聊天媒介演变的过程中继续发挥作用。
+that will continue to hold as the chat medium evolves.
+
+307
+00:16:53,980 --> 00:16:56,216
+你以前可能构建过基本的聊天 UI，
+You've likely built a basic chat UI before,
+
+308
+00:16:56,216 --> 00:16:59,260
+哪怕只是在调试智能体时的 Streamlit 应用中。
+even if only in a Streamlit app while debugging your agent.
+
+309
+00:16:59,500 --> 00:17:02,660
+你将在本模块中构建的聊天应用在两个主要方面有所不同。
+The chat app you will build in this module is different in two major ways.
+
+310
+00:17:03,220 --> 00:17:06,240
+首先，它构建在稳健的生产级基础之上，
+First, it is built atop a robust production-grade foundation
+
+311
+00:17:06,240 --> 00:17:09,733
+你可以继续在此基础上扩展，以构建全栈智能体
+that you will be able to continue to expand on to build full-stack agents
+
+312
+00:17:09,733 --> 00:17:10,740
+和生成式 UI。
+and generative UIs.
+
+313
+00:17:11,460 --> 00:17:16,072
+其次，你在这里创建的聊天设置几乎可以与任何
+Second, you'll be able to use the chat setup you'll create here with practically any
+
+314
+00:17:16,072 --> 00:17:19,366
+智能体后端方案结合使用，支持任何编程语言、
+agent backend solution across any programming language,
+
+315
+00:17:19,366 --> 00:17:21,540
+任何 LLM 提供商以及任何智能体框架。
+any LLM provider and any agent harness.
+
+316
+00:17:21,980 --> 00:17:25,350
+随着生态系统的发展，你还能将相同的设置引入任何
+As the ecosystem evolves, you will also be able to bring the same setup to any
+
+317
+00:17:25,350 --> 00:17:26,420
+前端环境中。
+frontend environment.
+
+318
+00:17:26,820 --> 00:17:30,504
+在本课程的后续部分，我们将继续扩展本模块所构建的
+We will continue to expand on the foundation we will build in this module throughout
+
+319
+00:17:30,504 --> 00:17:31,820
+基础架构。
+the remainder of this course.
+
+320
+00:17:32,260 --> 00:17:35,100
+本课程假设你已经知道如何构建 AI 智能体。
+This course will assume that you already know how to build an AI agent.
+
+321
+00:17:35,380 --> 00:17:36,860
+我们将提供一个预构建的智能体。
+We will provide a pre-built agent.
+
+322
+00:17:36,980 --> 00:17:39,070
+但 DeepLearning.AI 有许多优质的资源，
+But DeepLearning.AI has lots of great resources
+
+323
+00:17:39,070 --> 00:17:40,940
+如果你想学习如何构建自己的智能体。
+if you want to learn how to build your own.
+
+324
+00:17:41,180 --> 00:17:44,242
+在本节课中，我们将构建一个 LangChain 智能体，
+In this lesson, we will build a LangChain agent
+
+325
+00:17:44,242 --> 00:17:48,300
+并将其部署在用 Python 构建的 AG-UI FastAPI 端点之后。
+that we will deploy behind an AG-UI FastAPI endpoint built in Python.
+
+326
+00:17:48,780 --> 00:17:51,906
+我们将使用 Copilot Chat 组件构建一个 React 前端，
+We will build a React frontend using Copilot Chat component,
+
+327
+00:17:51,906 --> 00:17:56,013
+该组件随 CopilotKit 一起提供，是一个功能齐全、
+which ships with CopilotKit and which provides a fully-featured chat component
+
+328
+00:17:56,013 --> 00:17:57,300
+开箱即用的聊天组件。
+that works out of the box.
+
+329
+00:17:57,820 --> 00:18:01,338
+最后，我们将通过 Copilot Runtime 将前端连接到智能体，
+Lastly, we'll connect our frontend to the agent via the Copilot Runtime,
+
+330
+00:18:01,338 --> 00:18:03,644
+在此设置中，我们将把它托管在 Hono 服务器上，
+which in this setup we will host on a Hono server,
+
+331
+00:18:03,644 --> 00:18:05,720
+这是一个轻量级的 TypeScript 服务器。
+which is a lightweight TypeScript server.
+
+332
+00:18:06,040 --> 00:18:07,903
+在生产环境中，你可以将 Copilot Runtime 托管在
+In production, you can host the Copilot Runtime
+
+333
+00:18:07,903 --> 00:18:09,720
+几乎任何标准的服务器设置中。
+in essentially every standard server setup.
+
+334
+00:18:09,880 --> 00:18:12,175
+从技术上讲，Copilot Runtime 的设置是可选的，
+The Copilot Runtime setup is technically optional,
+
+335
+00:18:12,175 --> 00:18:15,669
+但由于兼顾了安全性、性能和可扩展性要求，
+but it is highly recommended for production deployments due to a combination of
+
+336
+00:18:15,669 --> 00:18:18,120
+因此强烈推荐用于生产部署。
+security, performance, and scalability requirements.
+
+337
+00:18:18,520 --> 00:18:21,880
+此设置中使用的每一项技术都是完全开源的。
+Every piece of technology used in this setup is fully open source.
+
+338
+00:18:22,280 --> 00:18:24,737
+在 LangChain 智能体运行之后，
+After we get our LangChain agent running,
+
+339
+00:18:24,737 --> 00:18:28,329
+我们将添加一个额外的 Google ADK 智能体，并将其连接到前端，
+we'll add an additional Google ADK agent and connect it to a frontend
+
+340
+00:18:28,329 --> 00:18:32,550
+以便你亲身学习如何在应用中替换和添加智能体。
+so you can learn firsthand how to swap and add agents into your own applications.
+
+341
+00:18:33,070 --> 00:18:37,870
+这种灵活性正是由 AG-UI 协议实现的。那么，什么是 AG-UI？
+This flexibility is made possible by the AG-UI protocol. So what is AG-UI?
+
+342
+00:18:37,870 --> 00:18:41,470
+AG-UI 代表 Agent User Interaction Protocol（智能体用户交互协议）。
+AG-UI stands for the Agent User Interaction Protocol.
+
+343
+00:18:41,990 --> 00:18:46,661
+它是一个开放、轻量级的基于事件的协议，用于促进
+It's an open, lightweight event-based protocol for facilitating interactions between
+
+344
+00:18:46,661 --> 00:18:48,870
+智能体后端和智能体前端之间的交互。
+agentic backends and agentic frontends.
+
+345
+00:18:49,230 --> 00:18:53,724
+在底层，兼容 AG-UI 的智能体在运行时会发出 AG-UI 输出事件，
+Under the hood, AG-UI compatible agents emit AG-UI output events as they run,
+
+346
+00:18:53,724 --> 00:18:59,740
+并接收前端在响应相关用户交互时发出的 AG-UI 输入事件。
+and they accept AG-UI input events emitted by frontends in response to relevant user interactions.
+
+347
+00:19:00,340 --> 00:19:03,780
+AG-UI 协议源于我们与 LangChain 和 CrewAI 的合作。
+The AG-UI protocol was born from our partnership with LangChain and CrewAI.
+
+348
+00:19:04,020 --> 00:19:08,940
+这意味着你可以在任何面向用户的应用中同时使用这些智能体。
+This means that you can use these agents side by side in any user-facing application.
+
+349
+00:19:09,220 --> 00:19:11,333
+让我们进入代码看看它的实际效果。
+Let's jump into some code and see it in action.
+
+350
+00:19:11,333 --> 00:19:13,780
+我们将从设置项目依赖开始。
+We'll begin by setting up our project dependencies.
+
+351
+00:19:14,630 --> 00:19:18,670
+首先，我们将从 requirements.txt 文件安装 Python 依赖。
+First, we'll install the Python dependencies from the requirements.txt file.
+
+352
+00:19:19,790 --> 00:19:22,590
+然后，我们将安装前端依赖。
+Then we will install the frontend dependencies.
+
+353
+00:19:25,550 --> 00:19:30,960
+最后，我们将使用辅助函数加载 API 密钥。
+And finally, we will load the API keys using our helper function.
+
+354
+00:19:32,600 --> 00:19:36,840
+接下来，我们将从构建智能体后端，也就是智能体本身开始。
+Next, we're going to start by building the agentic backend, the agent itself.
+
+355
+00:19:37,320 --> 00:19:42,040
+我们将先启动服务器，创建一个标准的 FastAPI 服务器。
+We're going to start the server first. We'll just create a standard FastAPI server.
+
+356
+00:19:42,440 --> 00:19:45,608
+然后，我们将创建一个 LangGraph AG-UI 智能体。
+Then we'll create a LangGraph AG-UI agent.
+
+357
+00:19:45,608 --> 00:19:50,360
+这是你的 LangGraph 智能体的 AG-UI 兼容端点。
+This is an AG-UI compatible endpoint for your LangGraph agent.
+
+358
+00:19:51,090 --> 00:19:56,330
+请记住，LangGraph 是 LangChain 所有智能体解决方案底层的框架。
+Now remember, LangGraph is the framework underneath all of LangChain's agentic solutions.
+
+359
+00:19:56,650 --> 00:20:01,069
+所以在这里的底层，我们实际上将使用一个 LangChain 智能体，
+So under the hood here, we're actually going to be using a LangChain agent,
+
+360
+00:20:01,069 --> 00:20:03,145
+但它是在 LangGraph 之上实现的。
+but it is implemented on top of LangGraph.
+
+361
+00:20:03,145 --> 00:20:05,890
+因此我们使用的是 LangGraph AG-UI 智能体。
+and therefore we're using the LangGraph AG-UI agent.
+
+362
+00:20:06,250 --> 00:20:12,090
+然后，我们将把 LangChain AG-UI 智能体绑定到 FastAPI 服务器的根路径。
+Then we're going to bind our LangChain AG-UI agent into the root path of our FastAPI server.
+
+363
+00:20:12,380 --> 00:20:16,020
+最后，我们将在端口 8002 上启动服务器。
+Finally, we're going to start our server on port 8002.
+
+364
+00:20:16,580 --> 00:20:19,496
+你会注意到，每节课使用不同的端口，这样
+You will notice that each lesson uses a different port so
+
+365
+00:20:19,496 --> 00:20:21,420
+它们就不会互相覆盖。
+that they don't override each other.
+
+366
+00:20:21,700 --> 00:20:26,220
+好了，现在我们有了智能体后端设置的基本骨架。
+All right, now we have our basic skeleton for our agentic backend setup.
+
+367
+00:20:26,540 --> 00:20:28,940
+接下来我们将用一个实际的智能体来填充它。
+We're now going to populate it with an actual agent.
+
+368
+00:20:29,540 --> 00:20:33,820
+首先，定义该智能体。我们正在创建一个标准的 LangChain 智能体。
+First, we will define that agent. We're creating a standard LangChain agent.
+
+369
+00:20:34,469 --> 00:20:38,170
+这个设置的一切都是完全标准的，除了一部分
+Everything about this setup is completely standard except for one part
+
+370
+00:20:38,170 --> 00:20:42,304
+我想特别指出，那就是我们正在将 CopilotKit 中间件注入
+that I want to call out, which is we are injecting CopilotKit middleware into the
+
+371
+00:20:42,304 --> 00:20:43,229
+LangChain 智能体中。
+LangChain agent.
+
+372
+00:20:43,429 --> 00:20:46,778
+中间件是 LangChain 生态系统中的标准概念，
+Middleware is a standard concept in the LangChain universe
+
+373
+00:20:46,778 --> 00:20:51,869
+而 CopilotKit 中间件允许我们将 LangChain 智能体连接到所有 AG-UI 相关功能。
+and the CopilotKit middleware allows us to connect our LangChain agent to everything AG-UI.
+
+374
+00:20:52,429 --> 00:20:59,060
+最后，我们将把之前 LangChain 智能体的图设置为
+Finally, we're going to set the graph of our previous LangChain agent to the graph
+
+375
+00:20:59,060 --> 00:21:01,400
+刚才创建的智能体的图。
+of the agent we just created.
+
+376
+00:21:02,520 --> 00:21:03,480
+就这样。
+And that's it.
+
+377
+00:21:03,600 --> 00:21:06,455
+已经在运行了。现在我们已经设置好了智能体后端，
+We're running. Now that we've set up our agentic backend,
+
+378
+00:21:06,455 --> 00:21:10,040
+我们将开始使用 CopilotKit 构建智能体前端。
+we're going to get started with the agentic frontend with CopilotKit.
+
+379
+00:21:10,480 --> 00:21:12,282
+我们将启动前端，
+We're going to start the frontend
+
+380
+00:21:12,282 --> 00:21:16,080
+并使用标准的辅助启动前端函数。
+and we're going to use our standard helper start frontend function.
+
+381
+00:21:16,600 --> 00:21:19,570
+顺便说一下，如果你好奇，可以查看辅助文件，
+By the way, if you're curious, you can check out the helper file,
+
+382
+00:21:19,570 --> 00:21:23,380
+但它主要就是标准操作的一些标准样板代码。
+but it really just has a lot of standard boilerplate for the standard operations.
+
+383
+00:21:23,500 --> 00:21:27,660
+我们将从这里继续。现在我们的前端已在端口 3002 上启动并运行。
+We're going to take it from here. Now our frontend is up and running on port 3002.
+
+384
+00:21:28,060 --> 00:21:30,940
+你会注意到这个输出单元中有“读取日志”的语句。
+You'll notice the "read the logs" statement in this output cell.
+
+385
+00:21:31,060 --> 00:21:34,469
+如果你遇到前端问题，
+If you ever run into an issue with your frontend,
+
+386
+00:21:34,469 --> 00:21:40,860
+可以查看 dev_logs.txt 文件，获取前端生成的完整日志。
+you can check out this dev_logs.txt file for the full logging generated by the frontend.
+
+387
+00:21:41,180 --> 00:21:44,180
+你可以通过点击之前看到的链接来查看前端应用。
+You can view the frontend app by clicking on the link you saw before.
+
+388
+00:21:44,300 --> 00:21:47,963
+但为了方便起见，我们也将
+But for convenience, we're also going to display the iframe embedded right within
+
+389
+00:21:47,963 --> 00:21:50,670
+使用 display app 辅助函数，直接在 Jupyter notebook 中嵌入显示 iframe。
+the Jupyter notebook using the display app helper function.
+
+390
+00:21:50,910 --> 00:21:54,445
+你会看到，前端的初始状态是一个空应用，
+You'll see here that the initial state of the frontend is an empty app
+
+391
+00:21:54,445 --> 00:21:56,430
+中间只有一段文本。
+that just has a text in the middle of it.
+
+392
+00:21:56,510 --> 00:21:59,990
+没有 Copilot，没有智能体，只是一个空的起点。
+There's no Copilot. There's no agents, just an empty starting point.
+
+393
+00:22:00,390 --> 00:22:03,710
+我们将继续设置 Copilot Runtime。
+We're going to continue by setting up the Copilot Runtime.
+
+394
+00:22:04,110 --> 00:22:08,124
+Copilot Runtime 是一个位于前端
+The Copilot Runtime is a backend that sits in between your frontend
+
+395
+00:22:08,124 --> 00:22:12,998
+和智能体之间的后端，出于安全、性能和工程可扩展性的原因，
+and your agent for security, performance and engineering scalability reasons,
+
+396
+00:22:12,998 --> 00:22:15,650
+严格来说它并不是绝对必需的。
+it is technically not absolutely required.
+
+397
+00:22:16,210 --> 00:22:18,732
+你可以将前端直接连接到智能体，
+You could connect your frontend directly to your agent,
+
+398
+00:22:18,732 --> 00:22:20,771
+但在生产环境中，我们极其
+but for production environments, we highly,
+
+399
+00:22:20,771 --> 00:22:22,810
+极其推荐使用 Copilot Runtime。
+highly recommend using the Copilot Runtime.
+
+400
+00:22:23,050 --> 00:22:29,330
+我们要做的第一件事是从 AG-UI 包中导入 LangGraph HTTP 连接器。
+The first thing we're going to do is import the LangGraph HTTP connector from the AG-UI package.
+
+401
+00:22:30,080 --> 00:22:35,931
+然后我们将使用此连接器指向我们之前设置的 LangChain 端点，
+We're then going to use this connector to point at the LangChain endpoint we set up
+
+402
+00:22:35,931 --> 00:22:37,480
+即端口 8002 上的端点。
+earlier at port 8002.
+
+403
+00:22:37,680 --> 00:22:41,520
+现在我们将设置一个新的 Copilot Runtime 实例。
+Now we're going to set up a new Copilot Runtime instance.
+
+404
+00:22:42,440 --> 00:22:45,489
+你会注意到，在设置 Copilot Runtime 时，
+You'll notice that when we set up the Copilot Runtime,
+
+405
+00:22:45,489 --> 00:22:49,960
+我们指定了智能体 ID 和实际智能体端点之间的字典映射。
+we specify a dictionary mapping between agent IDs and actual agent endpoints.
+
+406
+00:22:50,650 --> 00:22:53,570
+我们正在默认 ID 下设置 LangGraph 智能体。
+We're setting up the LangGraph agent under the default ID.
+
+407
+00:22:53,690 --> 00:22:58,330
+在这种情况下，你的前端可以指定它正在与哪个智能体通信。
+In this case, your frontend can specify which agent it's talking to.
+
+408
+00:22:58,730 --> 00:23:02,490
+如果未指定智能体，则使用默认智能体。
+If no agent is specified, the default agent is used.
+
+409
+00:23:03,010 --> 00:23:07,486
+然后我们将使用 Copilot Runtime 创建一个端点，
+Then we're going to create an endpoint using our Copilot Runtime
+
+410
+00:23:07,486 --> 00:23:11,050
+并将其基础路径设置为 /api/CopilotKit。
+and set its base path to /api/CopilotKit.
+
+411
+00:23:11,460 --> 00:23:15,900
+最后，我们将使用 Hono 服务器来提供此应用。
+And lastly, we're going to serve this application using a Hono server.
+
+412
+00:23:16,180 --> 00:23:18,860
+现在我们已经有一个 Copilot Runtime 在运行，也有一个智能体在运行。
+Now we've got a Copilot Runtime running and we've got an agent running.
+
+413
+00:23:19,100 --> 00:23:21,020
+是时候让前端也跟上进度了。
+It's time to bring the frontend up to speed.
+
+414
+00:23:21,180 --> 00:23:25,100
+我们将首先用 CopilotKit provider 包裹我们的应用。
+We'll begin by wrapping our application with the CopilotKit provider.
+
+415
+00:23:25,580 --> 00:23:27,576
+在设置 CopilotKit provider 时，
+When we set up the CopilotKit provider,
+
+416
+00:23:27,576 --> 00:23:30,660
+我们将其指向刚才步骤中设置的 runtime URL。
+we point it at the runtime URL we just set up in the step before.
+
+417
+00:23:31,340 --> 00:23:33,380
+记住，/api/CopilotKit。
+Remember /api/CopilotKit.
+
+418
+00:23:34,220 --> 00:23:39,780
+应用中任何与智能体通信的部分都必须被 CopilotKit provider 包裹。
+Any part of your application that talks to agents must be wrapped by a CopilotKit provider.
+
+419
+00:23:40,340 --> 00:23:42,733
+你可以逐页进行此操作，
+You could do this on a page-by-page basis,
+
+420
+00:23:42,733 --> 00:23:47,446
+但通常最简单的方法是在 layout.tsx 文件中的一个位置完成。
+but it is usually easiest to do this in a single place in your layout.tsx file.
+
+421
+00:23:47,446 --> 00:23:50,129
+所以你可以一次性包裹整个应用
+so you can wrap your entire application once
+
+422
+00:23:50,129 --> 00:23:52,740
+然后在其中的任何地方与智能体交互。
+and then talk to agents anywhere within it.
+
+423
+00:23:53,240 --> 00:23:56,600
+接下来我们要设置 Copilot 聊天组件。
+Next we're going to set up the copilot chat component.
+
+424
+00:23:57,520 --> 00:24:00,000
+Copilot Chat 是一个内置的全功能组件。
+Copilot Chat is a built-in, fully-featured component.
+
+425
+00:24:00,000 --> 00:24:03,816
+你的聊天组件，它附带几个包，你可以完全自定义它
+Your chat component, it ships with a couple of packages you can fully customize it
+
+426
+00:24:03,816 --> 00:24:05,807
+使用自定义 CSS 或自定义子组件，
+using custom CSS or custom sub components,
+
+427
+00:24:05,807 --> 00:24:08,240
+尽管本课程不会涉及这部分内容。
+although we will not be covering that in this course.
+
+428
+00:24:09,120 --> 00:24:13,637
+或者如果你愿意，你可以使用 useAgent Hook 从头构建一个
+Or should you choose to, you could use the useAgent Hook to build a fully
+
+429
+00:24:13,637 --> 00:24:16,080
+具备全功能的聊天界面。
+featured chat interface from scratch.
+
+430
+00:24:16,440 --> 00:24:18,160
+现在我们已经设置好了聊天界面，来试一下吧。
+Now that we've set up the chat, let's give it a try.
+
+431
+00:24:18,440 --> 00:24:20,080
+你好。今天有什么我可以帮你的吗？好的。
+Hello. How can I help you today? All right.
+
+432
+00:24:20,240 --> 00:24:22,960
+我们刚刚构建了一个连接到真实 LangChain 智能体的聊天界面。
+We've just built a chat that connects to a real LangChain agent.
+
+433
+00:24:23,320 --> 00:24:28,480
+记住，AG-UI 可以让你连接到任何现有的智能体后端。
+Now, remember, AG-UI lets you connect to any agentic backends out there.
+
+434
+00:24:28,880 --> 00:24:33,690
+所以我们现在要演示这一点，将同一个应用连接到一个
+So we're now going to demonstrate this by connecting the same application to a
+
+435
+00:24:33,690 --> 00:24:34,800
+Google ADK 智能体。
+Google ADK agent.
+
+436
+00:24:35,360 --> 00:24:36,640
+我们要设置一个 ADK 智能体。
+We're going to set up an ADK agent.
+
+437
+00:24:37,000 --> 00:24:42,141
+首先，我们将通过导入 LLM 智能体来创建一个标准的 Gemini ADK 智能体
+First, we're going to create a standard Gemini ADK agent by importing the LLM agent
+
+438
+00:24:42,141 --> 00:24:44,600
+从标准的 Google ADK 包中。
+from the standard Google ADK packages.
+
+439
+00:24:44,960 --> 00:24:51,810
+接下来，我们将为这个原始智能体设置一个 AG-UI 服务器。
+Next, we're going to set up an AG-UI server for this raw agent.
+
+440
+00:24:52,370 --> 00:24:57,330
+我们使用从 AG-UI ADK 包中导入的 ADK 智能体类。
+We're using the ADK agent class imported from the AG-UI ADK package.
+
+441
+00:24:58,010 --> 00:25:02,135
+接下来，我们要设置一个普通的 FastAPI 服务器
+Next, we're going to set up a plain old FastAPI server
+
+442
+00:25:02,135 --> 00:25:07,010
+并将 Gemini 智能体的 AG-UI 端点添加到其根路径。
+and add our AG-UI endpoint for the Gemini agent to its root path.
+
+443
+00:25:07,210 --> 00:25:10,130
+最后，我们将在 8009 端口启动服务器。
+Finally, we're going to start the server in port 8009.
+
+444
+00:25:10,450 --> 00:25:15,070
+好的，现在我们的旧 LangChain 智能体已经在后台运行，
+All right, so now we have our old LangChain agent running in the background
+
+445
+00:25:15,070 --> 00:25:20,690
+而且我们还有另一个智能体，它由自己在 8009 端口的 FastAPI 服务器提供服务。
+and we have another agent that is being served with its own FastAPI server in port 8009.
+
+446
+00:25:20,930 --> 00:25:24,130
+我们现在要更新 Copilot 运行时来注册这个新智能体。
+We're now going to update the copilot runtime to register this new agent.
+
+447
+00:25:24,690 --> 00:25:27,753
+因为我们在 Jupyter notebook 中使用 TypeScript，
+Because we're using TypeScript inside of the Jupyter notebook,
+
+448
+00:25:27,753 --> 00:25:31,440
+我们无法原地更新代码，必须直接覆盖整个文件。
+we cannot update the code in place, we must overwrite the file altogether.
+
+449
+00:25:31,960 --> 00:25:35,160
+你在这里看到的大部分内容与你之前看到的相同。
+The majority of what you see here is identical to what you saw before.
+
+450
+00:25:35,520 --> 00:25:38,240
+让我标出我们修改代码的两个地方。
+Let me highlight the two places where we've changed the code.
+
+451
+00:25:38,400 --> 00:25:43,268
+首先，我们将为刚刚设置的智能体端点设置一个连接器，
+First, we're going to set up a connector to the agent endpoint we just set up
+
+452
+00:25:43,268 --> 00:25:44,760
+运行在 8009 端口。
+running at port 8009.
+
+453
+00:25:45,080 --> 00:25:49,325
+然后我们将把它添加到由 Copilot
+And then we're going to add it to the dictionary of agents served by the copilot
+
+454
+00:25:49,325 --> 00:25:51,480
+运行时提供的智能体字典中，这次放在 Gemini ID 下。
+runtime, this time under the Gemini ID.
+
+455
+00:25:51,900 --> 00:25:55,460
+Gemini ID 没什么特别的。你可以使用任何你想要的字符串。
+There's nothing special about the Gemini ID. You could use any string you want.
+
+456
+00:25:55,860 --> 00:26:01,460
+现在我们要更新前端，以使用我们设置的新 Gemini 智能体。
+Now we're going to update the front end to use the new Gemini Agent we've set up.
+
+457
+00:26:02,100 --> 00:26:05,540
+同样，因为我们正在编辑 TypeScript 文件，必须覆盖它们。
+Once again, because we're editing TypeScript files, we have to overwrite them.
+
+458
+00:26:05,940 --> 00:26:08,949
+你会看到，我们唯一的改动是
+You will see here the only change we're making is
+
+459
+00:26:08,949 --> 00:26:13,012
+将智能体 ID 更改为指向 Gemini 标识符，
+that we've changed the agent ID to point at the Gemini identifier
+
+460
+00:26:13,012 --> 00:26:15,720
+也就是我们之前为 Gemini 智能体设置的标识符。
+that we set up earlier for our Gemini agent.
+
+461
+00:26:16,480 --> 00:26:17,040
+就这样。
+That's it.
+
+462
+00:26:19,280 --> 00:26:25,400
+现在让我们再次显示应用，并问它由什么模型驱动？
+Now let's display the app one more time and let's ask it what model is it powered by?
+
+463
+00:26:31,680 --> 00:26:33,840
+好的。它是一个由 Google 训练的大语言模型。
+All right. It's a large language model trained by Google.
+
+464
+00:26:34,200 --> 00:26:36,880
+对于不了解的人，Google 是 Gemini 模型的制造商。
+For those who don't know, Google is the maker of the Gemini models.
+
+465
+00:26:37,080 --> 00:26:39,473
+所以你在这里看到，我们拿了一个现有的聊天 UI，
+So you see here, we took an existing chat UI
+
+466
+00:26:39,473 --> 00:26:42,960
+几乎毫不费力地将其指向了另一个不同的智能体。
+and pointed it at a different agent with almost no work at all.
+
+467
+00:26:43,200 --> 00:26:44,520
+就这样。进入下一个内容。
+That's it. On to the next one.
+
+468
+00:26:45,800 --> 00:26:49,600
+在上一课中，你的智能体只能用文本回复。
+In the previous lesson, your agent could only respond with text.
+
+469
+00:26:50,080 --> 00:26:55,406
+在这节课中，你将通过使用受控生成式 UI 超越纯文本，
+In this lesson, you'll go beyond text by building with Controlled Generative UI,
+
+470
+00:26:55,406 --> 00:26:58,930
+它是生成式 UI 光谱的核心主力。
+which is the workhorse of the Generative UI spectrum.
+
+471
+00:26:59,130 --> 00:27:01,358
+在受控生成式 UI 中，你
+In controlled generative UI, you
+
+472
+00:27:01,358 --> 00:27:06,529
+作为程序员定义完全自定义的组件，智能体随后可以使用
+as the programmer define fully custom components which the agent can then use
+
+473
+00:27:06,529 --> 00:27:08,120
+并用数据填充它们。
+and populate with data.
+
+474
+00:27:08,440 --> 00:27:12,640
+作为程序员的你控制外观和体验，而智能体控制意图。
+You, the programmer, control the look and feel, and the agent controls the intent.
+
+475
+00:27:13,000 --> 00:27:14,040
+好了，我们开始吧。
+All right, let's get to it.
+
+476
+00:27:14,760 --> 00:27:18,680
+超越纯文本让你的智能体获得了即时的沟通优势。
+Going beyond text gives your agent an immediate communication advantage.
+
+477
+00:27:19,040 --> 00:27:21,259
+例如，以前一段冗长
+For instance, what was previously a long
+
+478
+00:27:21,259 --> 00:27:24,718
+且难以理解的大段文字，可以立刻变成清晰的
+and indecipherable wall of text can instantly turn into a clear
+
+479
+00:27:24,718 --> 00:27:26,480
+简明表格或饼图。
+and concise table or a pie chart.
+
+480
+00:27:27,320 --> 00:27:29,992
+受控生成式 UI 是最直接
+Controlled generative UI is the most straightforward
+
+481
+00:27:29,992 --> 00:27:32,360
+也是生成式 UI 最广泛使用的变体。
+and most widely used variant of generative UI.
+
+482
+00:27:32,840 --> 00:27:35,546
+开发者只需定义一组自定义组件
+Developers simply define a set of custom components
+
+483
+00:27:35,546 --> 00:27:37,944
+允许智能体在其回复中使用，
+that the agent is allowed to use in its replies,
+
+484
+00:27:37,944 --> 00:27:41,880
+以及这些组件期望从智能体获取的参数。
+along with the arguments that those components expect to get from the agent.
+
+485
+00:27:42,520 --> 00:27:46,251
+这种技术设置对任何前端开发者来说都非常熟悉
+The technical setup would be incredibly familiar to any frontend developer
+
+486
+00:27:46,251 --> 00:27:49,691
+因为它映射了任何前端组件的标准定义
+because it mirrors the standard definition of any frontend component
+
+487
+00:27:49,691 --> 00:27:52,956
+因为每次交互都需要自己的组件定义，
+since each interaction requires its own component's definition,
+
+488
+00:27:52,956 --> 00:27:56,920
+受控生成式 UI 范式为开发者提供了最大的灵活性。
+the controlled generative UI paradigm offers developers maximal flexibility.
+
+489
+00:27:57,040 --> 00:27:58,454
+一旦组件显示出来，
+Once the component is displayed,
+
+490
+00:27:58,454 --> 00:28:02,040
+组件可以是交互式的，并能轻松影响应用的其他部分。
+components can be interactive and trivially affect other parts of the application.
+
+491
+00:28:02,440 --> 00:28:06,120
+它们还可以做到像素级完美，以符合设计团队的任何规格。
+And they can also be made pixel perfect to conform to any specs by your design team.
+
+492
+00:28:06,400 --> 00:28:08,898
+受控生成式 UI 的标准变体，
+The standard variant of controlled generative UI,
+
+493
+00:28:08,898 --> 00:28:10,700
+我们将在本课中探讨，
+which we will explore in this lesson,
+
+494
+00:28:10,700 --> 00:28:14,360
+赋予智能体决定使用哪些 UI 组件的能力，并且
+gives the agent the ability to decide which UI components to engage with and
+
+495
+00:28:14,360 --> 00:28:18,253
+受控生成式 UI 被认为是生成式 UI
+when controlled generative UI is considered the workhorse of the generative UI
+
+496
+00:28:18,253 --> 00:28:19,880
+领域的主力，原因有以下几点。
+universe for a number of reasons.
+
+497
+00:28:20,560 --> 00:28:22,276
+首先，它提供完全的品牌控制
+First, it offers full brand control
+
+498
+00:28:22,276 --> 00:28:25,880
+因为你可以完全定制每个组件以实现像素级完美的设计。
+because you can fully customize each component for pixel perfect designs.
+
+499
+00:28:26,480 --> 00:28:29,520
+其次，使用受控生成式 UI 时，你的智能体永远不会
+Second, when using controlled generative UI, your agent will never
+
+500
+00:28:30,480 --> 00:28:31,840
+渲染一个你没有注册的组件。
+render a component you've not registered.
+
+501
+00:28:32,360 --> 00:28:36,601
+最坏的情况是，它可能在错误的时间调用了错误的组件，或者用
+At worst, it could call the wrong component at the wrong time or populate a
+
+502
+00:28:36,601 --> 00:28:38,200
+错误的数据填充组件。
+component with wrong data.
+
+503
+00:28:38,640 --> 00:28:40,400
+但这些情况发生的可能性要小得多。
+But these are far less likely to happen.
+
+504
+00:28:40,640 --> 00:28:42,668
+受控生成式 UI 也是最快的
+Controlled generative UI is also the fastest
+
+505
+00:28:42,668 --> 00:28:45,680
+也是生成式 UI 光谱中最可靠的解决方案。
+and most reliable solution along the generative UI spectrum.
+
+506
+00:28:45,800 --> 00:28:51,360
+所有这些特性使其成为产品最常用界面的最合适解决方案。
+All of these qualities make it the most suitable solution for your product's most used surfaces.
+
+507
+00:28:52,040 --> 00:28:54,000
+这是一个非常棒的 80/20 解决方案。
+It's a really great 80/20 solution.
+
+508
+00:28:54,440 --> 00:28:56,774
+受控生成式 UI 的主要权衡在于
+The primary trade-off of controlled generative UI is
+
+509
+00:28:56,774 --> 00:29:01,960
+应用中的每一个新功能都需要一个新的专用组件定义。
+that every new capability in your application requires a new dedicated component definition.
+
+510
+00:29:02,080 --> 00:29:05,160
+因此，实现的复杂度与智能体的范围呈线性关系。
+And so complexity of implementation scales linearly with the scope of the agent.
+
+511
+00:29:05,480 --> 00:29:07,480
+这是受控生成式 UI 的底层工作原理。
+Here's how controlled generative UI works under the hood.
+
+512
+00:29:08,000 --> 00:29:11,524
+每个注册的组件都关联一个名称、一个描述，
+Each registered component is associated with a name, a description,
+
+513
+00:29:11,524 --> 00:29:15,960
+以及智能体为了显示该组件而需要提供的参数列表。
+and a list of arguments needed to be provided by the agent in order to display the component.
+
+514
+00:29:16,360 --> 00:29:18,919
+这些参数被转换为工具定义。
+These parameters are converted to tool definitions.
+
+515
+00:29:18,919 --> 00:29:22,160
+然后，AG-UI 中间件将它们注册为前端定义的工具。
+The AG-UI middleware then registers these as front-end defined tools.
+
+516
+00:29:22,760 --> 00:29:26,720
+当智能体运行时，它会像看到其他任何工具一样看到这些工具。
+When the agent runs, it sees those tools just like it sees any other tool.
+
+517
+00:29:27,000 --> 00:29:29,042
+智能体可以决定调用这些工具
+The agent can decide to call those tools
+
+518
+00:29:29,042 --> 00:29:31,640
+当它希望向用户展示某些内容时。
+when it wishes to display some content to the user.
+
+519
+00:29:32,120 --> 00:29:34,625
+当智能体决定调用一个前端工具时，
+When an agent decides to call a front-end tool,
+
+520
+00:29:34,625 --> 00:29:37,130
+AG-UI 连接会暂停后端执行
+the AG-UI connection halts back-end execution
+
+521
+00:29:37,130 --> 00:29:39,371
+并将执行移交给前端，
+and hands off execution to the front end,
+
+522
+00:29:39,371 --> 00:29:43,457
+CopilotKit SDK 随后将前端工具执行映射回 React
+the CopilotKit SDK then maps the front-end tool execution back to the React
+
+523
+00:29:43,457 --> 00:29:48,006
+组件，并向用户显示该组件。最后，
+component it is associated with and displays that component to the user. Finally,
+
+524
+00:29:48,006 --> 00:29:50,840
+如果工具在交互后返回了任何结果，
+if the tool returns any result upon interactivity,
+
+525
+00:29:51,080 --> 00:29:55,520
+该结果将作为标准工具调用结果传回智能体后端。
+the result is passed back to the agent back-end as a standard tool call result.
+
+526
+00:29:55,840 --> 00:29:59,901
+在本实验中，你将学习使用 CopilotKit 的 useComponent Hook 来注册组件，
+In this lab, you'll learn to use CopilotKit's useComponent hook to register components
+
+527
+00:29:59,901 --> 00:30:03,792
+向智能体注册组件，而智能体无需直接接触 React
+with the agent without the agent ever being directly exposed to a React
+
+528
+00:30:03,792 --> 00:30:04,920
+抽象或代码。
+abstraction or to code.
+
+529
+00:30:05,240 --> 00:30:09,033
+useComponent Hook 非常简单。只需给每个组件起一个名字，
+The useComponent hook is straightforward. Simply give each component a name,
+
+530
+00:30:09,033 --> 00:30:11,160
+一个 schema，以及一个 React 组件或渲染器。
+a schema, and a React component or renderer.
+
+531
+00:30:11,320 --> 00:30:12,480
+就这样，搞定了。
+And that's it. You're done.
+
+532
+00:30:12,840 --> 00:30:15,164
+你可以以集中方式定义组件，
+You can define components in a centralized fashion
+
+533
+00:30:15,164 --> 00:30:17,217
+比如在初始化 React 应用时，
+when you initialize your React application,
+
+534
+00:30:17,217 --> 00:30:21,000
+或者在应用的不同区域和页面中注册组件。
+or you can register components in different regions and pages in your application.
+
+535
+00:30:21,540 --> 00:30:24,697
+并且这些组件将变为活动状态，可供智能体使用，
+And these components will become active and available for the agent
+
+536
+00:30:24,697 --> 00:30:26,580
+随着用户浏览你的应用。
+as the user traverses your application.
+
+537
+00:30:27,020 --> 00:30:29,412
+如果你熟悉 React Hook 的动态特性，
+If you are familiar with React hook dynamics,
+
+538
+00:30:29,412 --> 00:30:31,929
+这个 Hook 的行为就像其他任何 React Hook 一样，
+this hook behaves just like any other React hook
+
+539
+00:30:31,929 --> 00:30:36,020
+并且所有的后端复杂性都由框架自动处理。
+and all of the backend complexity is handled automatically by the framework.
+
+540
+00:30:36,340 --> 00:30:40,540
+useComponent Hook 明确展示了关注点分离的清晰性，关于
+The useComponent hook explicitly demonstrates the clean separation of concerns of
+
+541
+00:30:40,540 --> 00:30:41,900
+受控生成式 UI。
+controlled generative UI.
+
+542
+00:30:42,180 --> 00:30:45,254
+智能体根据组件的名称、
+The agent decides when to display the component based on its name,
+
+543
+00:30:45,254 --> 00:30:49,279
+描述和 schema 决定何时显示组件，而程序员则精确决定组件的
+description and schema, and the programmer decides exactly what the component would
+
+544
+00:30:49,279 --> 00:30:53,750
+外观及其支持的交互方式，具体通过定义自定义 React 组件或渲染器来实现。
+look like and what interaction it would support by defining a custom React component or render.
+
+545
+00:30:54,150 --> 00:30:58,470
+在本实验中，我们将使用 useComponent hook 向智能体注册三个组件。
+In this lab, we're going to register three components with an agent using the useComponent hook.
+
+546
+00:30:58,830 --> 00:31:02,960
+我们将从 name 组件开始，这是最简单的组件注册，
+We'll start with the name component, the simplest possible component registration,
+
+547
+00:31:02,960 --> 00:31:05,770
+某种意义上的 hello world，帮助你熟悉这个模式，
+a hello world of sorts to get comfortable with the pattern,
+
+548
+00:31:05,770 --> 00:31:07,835
+然后我们将注册一个饼图组件，
+we will then register a pie chart component
+
+549
+00:31:07,835 --> 00:31:10,187
+在这里智能体不仅选择组件，
+where the agent doesn't just pick the component,
+
+550
+00:31:10,187 --> 00:31:14,030
+还要决定用什么数据填充它。最后，我们将注册一个航班卡片
+it also figures out what data to fill it with. Finally, we will register a flight card
+
+551
+00:31:14,110 --> 00:31:16,910
+组件，作为像素级完美自定义设计的示例。
+component as an example of a pixel-perfect custom design.
+
+552
+00:31:17,100 --> 00:31:20,280
+本实验结束时，你将能够注册任何 React 组件，
+By the end of this lab, you will be able to register any React component
+
+553
+00:31:20,280 --> 00:31:21,980
+以便你的智能体可以按需渲染它。
+so your agent can render it on demand.
+
+554
+00:31:22,900 --> 00:31:26,060
+我们将首先重置 notebook 的状态。
+We're going to start by resetting the state of your notebook.
+
+555
+00:31:26,420 --> 00:31:29,980
+记住，这只是一个辅助工具，以防你陷入卡住的状态。
+Remember, this is just a helper tool in case you get into a stuck state.
+
+556
+00:31:30,160 --> 00:31:32,477
+像以前一样，重置状态总是值得一试的。
+Always worth trying to reset your state just like before.
+
+557
+00:31:32,477 --> 00:31:34,600
+我们将从设置依赖项开始。
+We're going to start by setting up the dependencies.
+
+558
+00:31:34,800 --> 00:31:36,160
+这部分看起来会非常熟悉。
+This section is going to look very familiar.
+
+559
+00:31:36,760 --> 00:31:40,000
+我们将首先安装 Python 后端依赖项。
+We're going to start by installing our Python backend dependencies.
+
+560
+00:31:40,360 --> 00:31:44,120
+现在我们将使用辅助函数加载 API 密钥。
+Now we're going to load up our API keys using our helper function.
+
+561
+00:31:44,240 --> 00:31:46,520
+这些已由 DeepLearningAI 平台为你自动设置好。
+These are set up for you automatically by the DeepLearningAI platform.
+
+562
+00:31:46,720 --> 00:31:48,960
+既然一切都设置好了，让我们启动智能体。
+Now that we've got everything set up, let's start the agent.
+
+563
+00:31:49,520 --> 00:31:50,560
+首先启动后端。
+First we'll start our backend.
+
+564
+00:31:51,350 --> 00:31:56,329
+它现在运行在端口 8003 上。现在我们将使用辅助函数来启动我们的
+It's now running on port 8003. We'll now use our helper function to start our
+
+565
+00:31:56,329 --> 00:31:57,830
+前端，运行在端口 3003 上。
+frontend on port 3003.
+
+566
+00:31:59,350 --> 00:32:02,014
+好了，现在它已经运行了，我们可以点击进入
+Alright, now that it's running we can click into that
+
+567
+00:32:02,014 --> 00:32:03,710
+并像以前一样操作它。
+and play with it just like before.
+
+568
+00:32:04,390 --> 00:32:08,686
+为了方便起见，我们将把这个 URL 的 iframe 直接嵌入到我们的 Jupyter notebook 中，
+We're going to embed the iframe of this URL directly in our Jupyter notebook for
+
+569
+00:32:08,686 --> 00:32:11,550
+使用 Display App 辅助函数。
+convenience using the Display App helper function.
+
+570
+00:32:12,440 --> 00:32:16,160
+现在我们已经准备好在第 2 课中设置的基础前端了。
+Now we've got the basic frontend that we set up in lesson 2 all set up for us.
+
+571
+00:32:17,840 --> 00:32:19,080
+好了，聊天功能正常运行。
+All right, the chat is working.
+
+572
+00:32:19,920 --> 00:32:24,480
+现在我们将借助受控生成式 UI，走出纯文本聊天的范畴。
+We're now going to venture outside of pure text chat with controlled Generative UI.
+
+573
+00:32:24,960 --> 00:32:27,516
+记住，在受控生成式 UI 中，
+Remember, in controlled generative UI,
+
+574
+00:32:27,516 --> 00:32:33,040
+我们作为程序员注册智能体可以在需要时使用的组件。
+we as programmers register components that the agent can use when it chooses to.
+
+575
+00:32:33,160 --> 00:32:36,080
+我们将从向智能体注册这些组件开始。
+We're going to start by registering these components with the agent.
+
+576
+00:32:36,580 --> 00:32:40,809
+这里，我们在应用代码中添加了三个 useComponent hook 调用，
+In this, we've added three useComponent hook calls to our application code,
+
+577
+00:32:40,809 --> 00:32:43,122
+注册了三个不同的组件，
+registering three different components
+
+578
+00:32:43,122 --> 00:32:47,218
+智能体现在可以调用它们，作为其受控
+that are now available for the agent to call upon as part of its controlled,
+
+579
+00:32:47,218 --> 00:32:48,540
+生成式 UI 工具箱的一部分。
+generative UI toolbox.
+
+580
+00:32:48,820 --> 00:32:50,602
+让我们逐一介绍它们。
+Let's go through each of them one by one.
+
+581
+00:32:50,602 --> 00:32:53,140
+useComponent hook 接受四个不同的参数。
+The useComponent hook takes four different arguments.
+
+582
+00:32:53,700 --> 00:32:55,572
+第一个参数是 name 参数。
+The first argument is the name argument.
+
+583
+00:32:55,572 --> 00:32:58,380
+这是向智能体提供的组件名称。
+This is the name of the component made available to the agent.
+
+584
+00:32:58,710 --> 00:33:01,230
+下一个参数是 description 参数。
+The next argument is the description argument.
+
+585
+00:33:01,550 --> 00:33:06,473
+这是一个简单的字符串，但非常重要，因为它告诉智能体
+This is a simple string, but it's very important because it tells the agent when
+
+586
+00:33:06,473 --> 00:33:08,710
+何时以及如何使用给定的组件。
+and how to use this given component.
+
+587
+00:33:09,350 --> 00:33:12,550
+在这种情况下，我们告诉智能体在卡片中显示用户名。
+In this case, we're telling the agent to show the user's name in a card.
+
+588
+00:33:12,710 --> 00:33:15,196
+这里只是一句简短的话，但如果你发现
+Just a short sentence here, but if you find
+
+589
+00:33:15,196 --> 00:33:19,743
+智能体没有在你期望的时候显示组件，
+that the agent does not display your component at times when you expect it to,
+
+590
+00:33:19,743 --> 00:33:23,650
+你可以随心所欲地继续补充这个描述。
+you can continue to add to this description to your heart's content.
+
+591
+00:33:24,410 --> 00:33:27,568
+一些应用的这个描述甚至有几十行，
+Some applications even have dozens of lines in this description,
+
+592
+00:33:27,568 --> 00:33:31,530
+详尽描述应该显示该组件的特定场景。
+teasing out a very specific scenario in which the given component should be shown.
+
+593
+00:33:31,690 --> 00:33:33,989
+下一个参数是 parameters，
+The next argument is the parameters
+
+594
+00:33:33,989 --> 00:33:38,970
+即该组件在被调用时期望从智能体获取的参数。
+that this given component expects to get from the agent when it is called upon.
+
+595
+00:33:39,250 --> 00:33:41,121
+这个组件，即 showMyName 组件，
+This component, the showMyName component,
+
+596
+00:33:41,121 --> 00:33:42,890
+是我们能想到的最简单的组件。
+is the simplest component we can think of.
+
+597
+00:33:43,130 --> 00:33:45,902
+所以它实际上只需要一个参数，
+So there is really just a single argument it expects,
+
+598
+00:33:45,902 --> 00:33:47,540
+即人的名字。
+which is the name of the person.
+
+599
+00:33:48,140 --> 00:33:53,120
+它的类型是字符串。我们使用 Zod 来指定这个组件期望的参数
+Its type is a string. We're using Zod to specify the schema of arguments this
+
+600
+00:33:53,120 --> 00:33:54,780
+的 schema。
+component is expecting.
+
+601
+00:33:55,140 --> 00:33:58,460
+schema 同时包含参数名和参数类型。
+The schema consists of both argument names and argument types.
+
+602
+00:33:58,580 --> 00:34:02,220
+这里，参数名是 name，参数类型是 string。
+In this case, the argument name is name and the argument type is string.
+
+603
+00:34:02,740 --> 00:34:05,288
+Zod 相当于 TypeScript 版的 Pydantic。
+Zod is the TypeScript equivalent of Pydantic.
+
+604
+00:34:05,288 --> 00:34:08,620
+下一个参数是此组件的实际渲染器。
+The next argument is the actual renderer for this component.
+
+605
+00:34:08,980 --> 00:34:13,509
+它是一个函数，接收我们在参数中指定的参数
+It's a function that takes the arguments we specified in the parameters
+
+606
+00:34:13,509 --> 00:34:16,000
+并将其映射为一个简单的 React 组件。
+and maps it to a simple React component.
+
+607
+00:34:16,480 --> 00:34:19,468
+这里，我们将 name 参数
+In this case, we're mapping the name argument
+
+608
+00:34:19,468 --> 00:34:24,029
+之前指定的，映射为一个非常简单的内联 React 组件
+that we specified previously to a very simple inline React component
+
+609
+00:34:24,029 --> 00:34:25,680
+来显示这个名称。
+that displays this name.
+
+610
+00:34:26,120 --> 00:34:27,520
+接下来看下一个组件。
+Now let's look at the next component.
+
+611
+00:34:28,360 --> 00:34:31,338
+下一个组件是饼图组件
+This next component is a pie chart component
+
+612
+00:34:31,338 --> 00:34:34,688
+该组件的描述会告诉智能体
+and the description of this component tells the agent
+
+613
+00:34:34,688 --> 00:34:39,080
+它可以使用此组件以饼图形式显示数据。
+that it can use this component to display data in the form of a pie chart.
+
+614
+00:34:39,320 --> 00:34:42,640
+智能体也能看到此组件的类型。
+The agent also sees the types of this component.
+
+615
+00:34:42,760 --> 00:34:47,400
+它能从这些类型推断出该组件应该在何时以及如何被使用。
+It can infer from those types when and how that component should be used.
+
+616
+00:34:47,680 --> 00:34:51,520
+这里，我们导入了一个预构建饼图组件的 props。
+In this case, we're importing the props of a pre-built pie chart component.
+
+617
+00:34:51,910 --> 00:34:55,165
+这些是标准的 React 组件 props。如果你想的话，
+These are standard React component props. And if you'd like,
+
+618
+00:34:55,165 --> 00:34:57,910
+可以尽情去探索它们。
+you can go and explore them to your heart's content.
+
+619
+00:34:58,310 --> 00:35:02,755
+最后，这里的渲染函数接收一个 React 组件
+Finally, the render function in this case is taking a React component
+
+620
+00:35:02,755 --> 00:35:05,590
+而不是指定一个内联函数。
+as opposed to specifying a function inline.
+
+621
+00:35:05,870 --> 00:35:10,699
+React 组件本身就是一个函数，接收 props 作为参数
+A React component is itself a function which takes arguments of the props
+
+622
+00:35:10,699 --> 00:35:13,390
+并返回一个渲染好的 React 组件。
+and returns a rendered React component.
+
+623
+00:35:14,020 --> 00:35:16,940
+最后，我们注册了一个航班卡片组件，用于向用户展示航班。
+Lastly, we're registering a flight card component to show flights to the user.
+
+624
+00:35:17,100 --> 00:35:21,700
+你还会注意到，我们在应用代码中添加了另一个 hook 调用 useExampleSuggestions。
+You'll also notice that we've added another hook call to our app code useExampleSuggestions.
+
+625
+00:35:22,340 --> 00:35:26,980
+这会用预构建的建议填充聊天界面，我们可以点击它们
+This is going to populate our chat with pre-built suggestions that we can click on
+
+626
+00:35:26,980 --> 00:35:30,460
+这样就不必记住要在提示框里输入什么。
+so that we don't have to remember what to type into the prompt.
+
+627
+00:35:30,860 --> 00:35:34,620
+最后，你会看到我们的 Copilot 聊天组件仍然在下面。
+And lastly, you will see we still have our Copilot chat component down here.
+
+628
+00:35:35,000 --> 00:35:39,644
+同样，你可以使用自定义 CSS 或自定义
+Once again, you could customize this component with custom CSS or custom
+
+629
+00:35:39,644 --> 00:35:46,040
+子组件来自定义此组件，或者使用 Headless useAgent hook 从头开始构建完全自定义的聊天 UI。
+subcomponents or build your own fully custom chat UI from scratch using the Headless useAgent hook.
+
+630
+00:35:46,400 --> 00:35:48,575
+如果你想查看饼图的源代码
+If you want to explore the source code of the pie chart
+
+631
+00:35:48,575 --> 00:35:49,910
+和航班卡片组件，
+and the flight card components,
+
+632
+00:35:49,910 --> 00:35:52,432
+可以点击进入 front-end 文件夹，在 components 下，
+you can click into the front-end folder and under components,
+
+633
+00:35:52,432 --> 00:35:54,360
+就能找到这两个组件的代码。
+you'll find both of these components laid out.
+
+634
+00:35:54,980 --> 00:35:57,948
+它们是标准的 React 组件，没什么特别的。
+These are standard React components. There's nothing special there.
+
+635
+00:35:57,948 --> 00:35:59,860
+现在我们准备好再次展示应用了。
+Now we're ready to display the app once again.
+
+636
+00:36:00,710 --> 00:36:03,630
+为了方便，我们将再次把 iframe 嵌入到这里的 Jupyter 中。
+We'll once again embed the iframe right here in the Jupyter for convenience.
+
+637
+00:36:03,990 --> 00:36:05,870
+现在我们这里有三个预构建的建议。
+Now we have three pre-built suggestions here.
+
+638
+00:36:06,070 --> 00:36:07,978
+当我们点击其中一个建议时，
+When we press one of the suggestions,
+
+639
+00:36:07,978 --> 00:36:10,870
+它会用预构建的提示词填入我们的文本框。
+it's going to populate our text with a pre-built prompt.
+
+640
+00:36:11,150 --> 00:36:12,750
+我们试试第一个：Show my name。
+Let's try the first one. Show my name.
+
+641
+00:36:13,270 --> 00:36:16,750
+你看，聊天界面添加了一条新提示：Please show my name in the chat。
+You see that the chat added a new prompt. Please show my name in the chat.
+
+642
+00:36:17,230 --> 00:36:20,790
+智能体还不知道我的名字，所以它问我：嘿，你叫什么名字？
+The agent does not yet know my name, so it's asking me, hey, what is your name?
+
+643
+00:36:20,830 --> 00:36:25,360
+以便我为你展示？嗯，我叫 Atai。现在它说出了我的名字。
+So I can display for you? Well, my name is Atai. Now it said my name.
+
+644
+00:36:25,840 --> 00:36:29,400
+我的名字出现在蓝色背景中，因为它不再以文本回复。
+My name is appearing in blue background because it's no longer replying in text.
+
+645
+00:36:29,680 --> 00:36:33,358
+它正在使用我们之前定义的 show my name 组件，
+It's using the show my name component we defined earlier,
+
+646
+00:36:33,358 --> 00:36:36,960
+该组件会在蓝色矩形包裹的文本中显示我的名字。
+which shows my name in a text wrapped in a blue rectangle.
+
+647
+00:36:37,600 --> 00:36:40,480
+现在让我们看看下一个组件，饼图。
+Now let's move on to the next component pie chart.
+
+648
+00:36:40,960 --> 00:36:43,359
+你看，当我们点击这个建议时，
+You see here when we click this suggestion,
+
+649
+00:36:43,359 --> 00:36:46,025
+会有预设的文本输入进去
+there's just a pre-canned text that goes in there
+
+650
+00:36:46,025 --> 00:36:49,957
+智能体回复了一个功能完整的组件，我们渲染了它
+and the agent replied with a fully featured component that we rendered
+
+651
+00:36:49,957 --> 00:36:51,690
+并进行了端到端的控制。
+and controlled from end to end.
+
+652
+00:36:52,370 --> 00:36:53,130
+很棒吧？
+Isn't that nice?
+
+653
+00:36:53,930 --> 00:36:56,342
+最后，看看最后一个建议，航班卡片。
+Lastly, let's check out the last suggestion, the flight card.
+
+654
+00:36:56,342 --> 00:36:58,290
+我们在这里看到了一个完全渲染好的航班组件。
+And we see here a flight component fully rendered.
+
+655
+00:36:58,730 --> 00:37:02,410
+如你所见。这些只是简单、直接的 React 组件。
+As you see here. These are just simple, straightforward React components.
+
+656
+00:37:02,770 --> 00:37:05,537
+所以你可以尽情地自定义它们
+And so you can fully customize them to your heart's content
+
+657
+00:37:05,537 --> 00:37:09,660
+甚至让它们变得完全可交互，包括与应用程序的其他部分交互。
+and even make them fully interactive, including with other parts of your application.
+
+658
+00:37:09,900 --> 00:37:13,107
+就这样。你现在已经掌握了受控的生成式 UI，
+That's it. You've now mastered Controlled Generative UI,
+
+659
+00:37:13,107 --> 00:37:15,700
+生成式 UI 领域的主力。
+the workhorse of the Generative UI universe.
+
+660
+00:37:17,340 --> 00:37:22,563
+在上一课中，你看到了受控的生成式 UI 如何让你拥有完全的控制权
+In the previous lesson, you saw how controlled generative UI gives you full control
+
+661
+00:37:22,563 --> 00:37:27,860
+和可定制性，但它需要为每次交互提供一个专用组件。
+and customizability, but it requires a dedicated component for every interaction.
+
+662
+00:37:28,220 --> 00:37:32,920
+在这节课中，你将采用一种不同的方法，称为声明式生成式 UI。
+In this lesson, you'll take a different approach called Declarative Generative UI.
+
+663
+00:37:33,160 --> 00:37:38,500
+我们将使用 AG-UI，这是一个由 Google 牵头的声明式生成式 UI 开放规范，
+We will use AG-UI, which is an open spec for declarative generative UI led by Google
+
+664
+00:37:38,500 --> 00:37:41,720
+CopilotKit 也深入参与了该规范的协作。
+in which CopilotKit has deeply collaborated on.
+
+665
+00:37:42,000 --> 00:37:45,206
+与其为每个用例单独构建组件，
+Instead of building a component for every single use case,
+
+666
+00:37:45,206 --> 00:37:48,085
+不如定义一个类似乐高的积木式组件目录，
+you'll define a catalog of Lego-like building blocks
+
+667
+00:37:48,085 --> 00:37:50,440
+然后让智能体按需组合它们。
+and let the agent assemble those on demand.
+
+668
+00:37:50,680 --> 00:37:54,040
+这是生成式 UI 光谱中令人兴奋的部分。让我们开始吧。
+This is an exciting part of the generative UI spectrum. So let's dive in.
+
+669
+00:37:54,440 --> 00:37:59,075
+在上一节课中，我们为每个项目定义了一个专用的 React 组件，
+In the previous lesson, we defined a dedicated React component for each item
+
+670
+00:37:59,075 --> 00:38:01,320
+也就是我们希望智能体支持的那些项目。
+that we wanted our agents to support.
+
+671
+00:38:01,640 --> 00:38:05,440
+好处是可以对展示的每一个项目进行精细控制。
+The benefit was great control over each and every item shown.
+
+672
+00:38:05,920 --> 00:38:09,994
+问题在于，每增加一项新功能，都需要从头构建一个新的专用组件，
+The problem is that every new capability requires a new dedicated component built
+
+673
+00:38:09,994 --> 00:38:12,238
+这在只有 20 个组件时还能接受，
+from scratch, which is fine at 20 components,
+
+674
+00:38:12,238 --> 00:38:14,600
+但当组件达到 200 个时，很快就会变得非常痛苦。
+but quickly becomes painful at 200 components.
+
+675
+00:38:15,180 --> 00:38:17,380
+声明式生成式 UI 彻底扭转了这个局面。
+Declarative, generative UI flips this equation.
+
+676
+00:38:17,660 --> 00:38:21,562
+与其逐个定义每个组件，我们不如预先定义一个目录，
+Rather than defining each component individually, we define an upfront catalog,
+
+677
+00:38:21,562 --> 00:38:24,220
+然后让智能体自行将它们组合在一起。
+which we then let the agent assemble together on its own.
+
+678
+00:38:24,700 --> 00:38:26,300
+让我们深入看看这具体意味着什么。
+Let's dive into what this means specifically.
+
+679
+00:38:26,660 --> 00:38:29,883
+首先，正如我们提到的，开发者声明一个组件目录，
+First, as we mentioned, developers declare a catalog of components
+
+680
+00:38:29,883 --> 00:38:32,540
+它们可以被视为类似乐高的积木式组件。
+which should be thought of as Lego-like building blocks.
+
+681
+00:38:32,820 --> 00:38:34,740
+这个目录由两部分定义。
+The catalog is defined in two parts.
+
+682
+00:38:35,260 --> 00:38:38,557
+首先，是目录中每个原子的定义，
+First, there are definitions for each atom in the catalog,
+
+683
+00:38:38,557 --> 00:38:42,460
+包括项目的名称、描述以及必需的 props。
+which include the item's name, description, and its required props.
+
+684
+00:38:42,820 --> 00:38:46,012
+其次，是每个项目分别定义的渲染器，
+And separately, there are renderers defined for each item,
+
+685
+00:38:46,012 --> 00:38:48,821
+它接收一个描述每个组件的 JSON 负载，
+which take a JSON payload describing each component
+
+686
+00:38:48,821 --> 00:38:52,460
+并为相关平台返回一个实际渲染的组件。
+and return an actual rendered component for the relevant platform.
+
+687
+00:38:52,700 --> 00:38:56,140
+在本节课中，我们将使用 React，但同样的模式也适用于其他环境。
+In this lesson, we will use React, but the same pattern extends elsewhere.
+
+688
+00:38:56,380 --> 00:38:57,980
+当用户提出某个问题时，
+When a user asks some question,
+
+689
+00:38:57,980 --> 00:39:02,286
+智能体可能会决定通过组合一个声明式
+the agent may decide to answer that question by assembling together a declarative,
+
+690
+00:39:02,286 --> 00:39:03,640
+生成式 UI 组件来回答该问题。
+generative UI component.
+
+691
+00:39:04,080 --> 00:39:05,699
+智能体首先发出一个 schema，
+The agent first emits a schema,
+
+692
+00:39:05,699 --> 00:39:09,310
+这是组件目录中项目的结构化组合，
+which is a structural assembly of items from the components catalog,
+
+693
+00:39:09,310 --> 00:39:11,240
+此时还没有填充数据。
+which is not yet populated with data.
+
+694
+00:39:11,800 --> 00:39:14,693
+然后智能体发出数据绑定，
+Then the agent emits the data bindings that populate
+
+695
+00:39:14,693 --> 00:39:16,600
+用具体的值来填充该 schema。
+that schema with specific values.
+
+696
+00:39:17,360 --> 00:39:20,355
+最后，schema 和数据绑定被传递到前端，
+Finally, the schema and the data bindings are passed onto the front-end
+
+697
+00:39:20,355 --> 00:39:22,285
+作为渲染器的输入，
+where they are served as inputs to a renderer,
+
+698
+00:39:22,285 --> 00:39:25,280
+渲染器则为原生平台返回完全组合好的组件。
+which returns the fully assembled component for the native platform.
+
+699
+00:39:25,440 --> 00:39:27,240
+同样，在这个例子中，我们将使用 React。
+Again, in this case, we will be using React.
+
+700
+00:39:27,550 --> 00:39:30,310
+最终结果是一个可以有很大差异的组件，
+The end result is a component which can vary considerably,
+
+701
+00:39:30,310 --> 00:39:33,070
+但它的变化范围限于你控制的有限菜单内。
+but within the confines of a bounded menu that you control.
+
+702
+00:39:33,350 --> 00:39:35,550
+声明式生成式 UI 有许多明显的优势。
+Declarative Generative UI has a number of distinct advantages.
+
+703
+00:39:36,070 --> 00:39:38,527
+首先，它提供了灵活性，同时带有护栏，
+First, it offers flexibility, but with guardrails,
+
+704
+00:39:38,527 --> 00:39:40,872
+你的智能体可以为特定任务渲染自定义组件，
+your agent can render custom components for a job,
+
+705
+00:39:40,872 --> 00:39:44,389
+但它会从预创建组件的固定菜单中提取，这些组件可以
+but will draw from a fixed menu of precreated components, which can be made,
+
+706
+00:39:44,389 --> 00:39:46,790
+例如，被设定为符合你的设计规范。
+for example, to conform to your design guidelines.
+
+707
+00:39:47,390 --> 00:39:51,197
+此外，由于声明式生成式 UI 基于结构化的 schema，
+Additionally, because declarative Generative UI is rooted in a structured schema,
+
+708
+00:39:51,197 --> 00:39:55,122
+通常是 JSON，因此它适用于任何前端环境，不仅限于 Web，
+typically JSON, it is suitable for any frontend environment, not just for web,
+
+709
+00:39:55,122 --> 00:39:57,680
+还包括移动端、Slack 以及其他环境。
+but also for mobile, Slack and other environments.
+
+710
+00:39:58,120 --> 00:40:01,520
+同时，声明式生成式 UI 的可预测性
+At the same time, declarative generative UI is less predictable
+
+711
+00:40:01,520 --> 00:40:04,480
+和可定制性不如完全受控的生成式 UI。
+and customizable than fully controlled generative UI.
+
+712
+00:40:04,800 --> 00:40:08,532
+这种独特的优缺点组合使得声明式
+This unique profile of strengths and weaknesses makes declarative,
+
+713
+00:40:08,532 --> 00:40:13,036
+生成式 UI 最适合面向消费者的应用中产品界面的长尾部分，
+generative UI most suited for the long tail of product surfaces in consumer-facing
+
+714
+00:40:13,036 --> 00:40:17,411
+在这些场景中，灵活性通常比像素级完美的
+applications where flexibility is generally more important than pixel perfect
+
+715
+00:40:17,411 --> 00:40:19,020
+设计和可预测性更重要。
+designs and predictability.
+
+716
+00:40:19,300 --> 00:40:22,011
+它也适用于内部应用，
+It's also suitable for internal applications,
+
+717
+00:40:22,011 --> 00:40:26,824
+在这些应用中，功能和实现的简洁性往往优先于
+where functionality and simplicity of implementation often take precedence over an
+
+718
+00:40:26,824 --> 00:40:28,180
+经过优化的体验。
+optimized experience.
+
+719
+00:40:28,580 --> 00:40:30,820
+例如，如果你是一家航空公司，
+For example, if you're an airline,
+
+720
+00:40:30,820 --> 00:40:35,570
+你可能希望你的航班卡片通过受控的生成式
+you will likely want your flight card to be implemented with controlled generative
+
+721
+00:40:35,570 --> 00:40:37,742
+以实现最大程度的可预测性，以及
+UI for maximum predictability as well
+
+722
+00:40:37,742 --> 00:40:41,000
+对应用中最常用界面的绝对控制。
+as control of your applications most used surface by far.
+
+723
+00:40:41,480 --> 00:40:45,547
+但如果你想想追踪丢失的笔记本电脑或申请退款这样的功能，
+But if you think about features like tracking a lost laptop or getting refunded for
+
+724
+00:40:45,547 --> 00:40:48,022
+智能体能够与这些抽象概念
+a trip, it's more important that the agent can talk
+
+725
+00:40:48,022 --> 00:40:50,438
+进行交流和交互，比它能提供
+and interact with those abstractions at all than
+
+726
+00:40:50,438 --> 00:40:52,560
+像素级完美的体验更重要。
+that it offers a pixel-perfect experience.
+
+727
+00:40:52,930 --> 00:40:57,490
+因此，这些界面非常适合声明式生成式 UI。
+And so these surfaces are great matches for declarative, generative UI.
+
+728
+00:40:57,490 --> 00:41:02,050
+在本课程中，我们将使用 AG-UI 来实现声明式生成式 UI。
+In this course, we will implement declarative generative UI using AG-UI.
+
+729
+00:41:02,370 --> 00:41:05,958
+AG-UI 是一个开放的声明式生成式 UI 规范，由 Google 主导，
+AG-UI is an open declarative generative UI spec that is led by Google and
+
+730
+00:41:05,958 --> 00:41:08,330
+CopilotKit 也深度参与了协作。
+which CopilotKit has closely collaborated on.
+
+731
+00:41:08,530 --> 00:41:12,991
+AG-UI 实现了我们前面概述的声明式生成式 UI 方法，包含
+AG-UI implements the declarative generative UI approach we outlined earlier with a
+
+732
+00:41:12,991 --> 00:41:16,050
+组件目录、schema、数据绑定和渲染器。
+component catalog, a schema, data bindings and renders.
+
+733
+00:41:16,880 --> 00:41:19,160
+使用 AG-UI 操作。
+Using AG-UI operations.
+
+734
+00:41:19,640 --> 00:41:22,752
+AG-UI 中间件已与 AG-UI 完全集成，
+AG-UI middleware is fully integrated with AG-UI,
+
+735
+00:41:22,752 --> 00:41:28,120
+这意味着你可以将 AG-UI 声明式生成式 UI 引入技术栈中的任何智能体。
+which means you can bring AG-UI declarative generative UI to any agent in the stack.
+
+736
+00:41:28,440 --> 00:41:32,800
+声明式生成式 UI 有两种模式：动态 schema 和固定 schema。
+Declarative Generative UI comes in two flavors, dynamic and fixed schema.
+
+737
+00:41:33,000 --> 00:41:37,978
+在动态 schema 变体中，智能体不仅负责动态组装
+With a dynamic schema variant, the agent is responsible both for assembling the
+
+738
+00:41:37,978 --> 00:41:40,207
+schema，还负责用数据绑定
+schema on the fly and for populating
+
+739
+00:41:40,207 --> 00:41:44,070
+填充该 schema。而在固定 schema 变体中，
+that schema with data bindings. With the fixed schema variant,
+
+740
+00:41:44,270 --> 00:41:47,599
+作为程序员的你需要负责提前定义 schema，
+You as the programmer are responsible for defining the schema in advance
+
+741
+00:41:47,599 --> 00:41:51,310
+智能体只负责用数据绑定填充该 schema。
+and the agent is only responsible for populating that schema with data bindings.
+
+742
+00:41:51,630 --> 00:41:53,950
+现在让我们进入代码，看看它是如何运作的。
+Now let's jump into some code and take a look at how this works.
+
+743
+00:41:55,230 --> 00:41:59,390
+首先，就像之前的模块一样，我们要复制重置会话的命令。
+First, just like in the previous modules, we're going to copy the reset session.
+
+744
+00:42:00,520 --> 00:42:03,520
+并运行它，确保我们从一个全新的起点开始。
+And run it to make sure we're starting from a fresh starting point.
+
+745
+00:42:04,120 --> 00:42:07,555
+接下来，和之前一样，我们要设置依赖项，
+Next, just like before, we're going to set up our dependencies,
+
+746
+00:42:07,555 --> 00:42:10,277
+先安装 Python 依赖，
+starting by installing the Python dependencies,
+
+747
+00:42:10,277 --> 00:42:12,480
+然后是前端依赖。
+followed by the front-end dependencies.
+
+748
+00:42:13,160 --> 00:42:17,920
+安装好之后，我们将使用辅助函数加载 API 密钥。
+Now that those are installed, we'll load up our API keys using our helper function.
+
+749
+00:42:18,360 --> 00:42:21,183
+记住，这些密钥已由 DeepLearning.AI 平台为你预先设置好了。
+Remember, those are pre-set up for you by the DeepLearning.AI platform.
+
+750
+00:42:21,183 --> 00:42:22,620
+现在我们要构建智能体了。
+Now we're going to build the agent.
+
+751
+00:42:23,020 --> 00:42:26,848
+我们现在要启动提供智能体服务的服务器，和之前一样，
+We'll start the server that's going to serve the agent now, just like before,
+
+752
+00:42:26,848 --> 00:42:29,180
+我们将从脚手架服务器开始。
+we're going to start with our scaffold server.
+
+753
+00:42:29,540 --> 00:42:31,860
+就这样，我们的 FastAPI 脚手架服务器已经运行了。
+That's it. Our FastAPI scaffold server is running.
+
+754
+00:42:32,540 --> 00:42:36,100
+定义好之后，我们就要用它来实际提供一个真正的智能体了。
+We're now going to actually serve a real agent from it after we define it.
+
+755
+00:42:36,540 --> 00:42:40,826
+这一次，我们希望智能体先查询并使用数据，
+This time around, we want the agent to query for and use data
+
+756
+00:42:40,826 --> 00:42:45,900
+然后再用声明式生成式 UI 组件进行响应。
+before it responds with any declarative, generative UI components.
+
+757
+00:42:46,220 --> 00:42:50,498
+为了模拟这一点，我们要定义一个 get_sales_data 工具，
+To simulate this, we're going to define a get_sales_data tool
+
+758
+00:42:50,498 --> 00:42:55,460
+智能体可以调用它来获取给定时间内的销售数据。
+that the agent can call in order to fetch sales data in that given time.
+
+759
+00:42:55,620 --> 00:42:59,220
+在真实的应用中，这会查询某个 API 或数据库。
+In a real application, this would query some API or a database.
+
+760
+00:42:59,460 --> 00:43:03,780
+在这个示例中，我们只是硬编码了一些销售数据供智能体使用。
+In this example here, we're just hardcoding some sales data for the agent to use.
+
+761
+00:43:04,110 --> 00:43:05,270
+这不是我们的核心重点。
+This is not our core focus.
+
+762
+00:43:05,670 --> 00:43:08,950
+所以如果你不确定这里在做什么，可以稍后再回头看。
+So if you're not sure what we're doing here, you can come back to this point later.
+
+763
+00:43:09,110 --> 00:43:12,510
+创建好工具后，我们将像之前一样创建智能体。
+Now that we've created the tool, we're going to create an agent just like before.
+
+764
+00:43:12,670 --> 00:43:16,710
+这是一个由 GPT-4.1 模型驱动的标准 LangChain 智能体。
+This is a standard LangChain agent powered by the GPT-4.1 model.
+
+765
+00:43:17,150 --> 00:43:21,828
+我们现在把 get_sales_data 工具交给这个智能体，和之前一样，
+We're giving this agent now the get_sales_data tool and just like before,
+
+766
+00:43:21,828 --> 00:43:24,790
+我们传入 CopilotKit 中间件。
+we're passing it the CopilotKit middleware.
+
+767
+00:43:25,090 --> 00:43:27,410
+你可以查看该智能体的系统提示词。
+You can read up the system prompt of this agent.
+
+768
+00:43:28,090 --> 00:43:34,889
+正如你在此所见，智能体只是被指示使用 generate AG-UI 工具
+As you see here, the agent is simply instructed to use the generate AG-UI tool to
+
+769
+00:43:34,889 --> 00:43:37,400
+来为用户可视化数据。
+visualize data for the user.
+
+770
+00:43:37,640 --> 00:43:41,200
+现在我们将使用 AG-UI 渲染来设置前端，和之前一样。
+Now we're going to set up our front end with AG-UI rendering just like before.
+
+771
+00:43:41,240 --> 00:43:44,720
+我们正在设置 CopilotKit 运行时。这里的大部分代码都很眼熟。
+We're setting up our CopilotKit runtime. Most of the code here is very familiar.
+
+772
+00:43:44,920 --> 00:43:47,943
+我们正在设置一个连接到 LangChain 智能体的标准连接器，
+We're setting up a standard connector to our LangChain agent
+
+773
+00:43:47,943 --> 00:43:51,559
+该智能体设置在 8004 端口，然后我们用该智能体作为默认智能体
+that we set up on port 8004 and we're initializing the CopilotKit runtime with
+
+774
+00:43:51,559 --> 00:43:53,160
+来初始化 CopilotKit 运行时。
+that agent as the default agent.
+
+775
+00:43:53,430 --> 00:43:57,727
+你会注意到我们唯一真正的新增内容，
+You'll notice the only real addition that we did not have before,
+
+776
+00:43:57,727 --> 00:44:02,978
+即 AG-UI 配置，其 `inject AG-UI tool` 标志设为 true。在底层，
+which is the AG-UI configuration with a flag of inject AG-UI tool set to true. Under
+
+777
+00:44:02,978 --> 00:44:08,230
+LangChain AG-UI 智能体可以通过调用一个专用工具来使用 AG-UI 交流。
+the hood, the LangChain AG-UI agent can talk AG-UI by calling a specialized tool.
+
+778
+00:44:08,630 --> 00:44:12,630
+该工具默认由 CopilotKit 和 AG-UI 技术栈传播。
+This tool is propagated by the CopilotKit and AG-UI stacks by default.
+
+779
+00:44:12,950 --> 00:44:17,368
+它会被自动包含。如果出于某种原因你不想自动包含此工具，
+It will be included. If for any reason you do not want to include this tool
+
+780
+00:44:17,368 --> 00:44:22,160
+随时可以通过将此参数设为 false 来排除它。
+automatically, you can always exclude it by passing false to this argument.
+
+781
+00:44:22,480 --> 00:44:25,280
+我们现在来定义声明式生成式 UI 组件目录。
+We're now going to define our declarative, generative UI component catalog.
+
+782
+00:44:25,960 --> 00:44:28,800
+记住，组件目录由两部分组成，
+Remember the component catalog consists of two parts,
+
+783
+00:44:28,800 --> 00:44:31,640
+组件定义和组件渲染。
+the component definitions and the component renders.
+
+784
+00:44:32,240 --> 00:44:34,360
+我们先来填充组件定义。
+We'll begin by populating the component definitions.
+
+785
+00:44:34,880 --> 00:44:35,800
+别被吓到。
+Now, don't get scared.
+
+786
+00:44:35,960 --> 00:44:37,465
+我们会粘贴一大段代码，
+We're going to paste a big chunk of code,
+
+787
+00:44:37,465 --> 00:44:39,837
+但我们会直接滚到顶部，
+but we're going to scroll right to the top and explain what it is
+
+788
+00:44:39,837 --> 00:44:40,840
+马上解释我们粘贴的内容。
+that we pasted in a moment.
+
+789
+00:44:41,450 --> 00:44:45,384
+好的。这就是我们的演示目录定义。
+All right. This is our demonstration catalog definitions.
+
+790
+00:44:45,384 --> 00:44:50,090
+你可以看到这里有一个组件及其定义的字典。
+You see here there's a dictionary of components with their definitions.
+
+791
+00:44:50,730 --> 00:44:53,050
+这里的第一个组件是 title 组件。
+The first component here is the title component.
+
+792
+00:44:53,490 --> 00:44:56,246
+它有一个名称 title、一个描述，
+It has a name, title, a description,
+
+793
+00:44:56,246 --> 00:45:01,849
+在本例中是用于章节标题和页眉的标题，以及 props，
+in this case a heading used for section titles and page headers and props,
+
+794
+00:45:01,849 --> 00:45:04,697
+使用 Zod schemas 的类型化 schema，就像
+typed schemas using Zod schemas like
+
+795
+00:45:04,697 --> 00:45:10,760
+之前一样，用于传递此组件所期望的参数类型。
+before for communicating the types of arguments this component is expecting.
+
+796
+00:45:11,080 --> 00:45:15,834
+你看，这里有一长串我们要定义的组件，title、text、
+You see here we have a very long list of components that we're defining, title, text,
+
+797
+00:45:15,834 --> 00:45:17,600
+icon、image 等等。
+icon, image, and so on and so on.
+
+798
+00:45:17,720 --> 00:45:20,960
+这是声明式生成式 UI 的固有代价之一。
+This is one of the inherent costs of declarative, generative UI.
+
+799
+00:45:20,960 --> 00:45:25,649
+你必须预先设置好所有类似乐高的积木式组件，这样你的智能体才能
+You have to set up all of your Lego-like building blocks upfront for your agent to
+
+800
+00:45:25,649 --> 00:45:27,710
+将它们组合在一起。
+be able to assemble them together.
+
+801
+00:45:27,870 --> 00:45:29,614
+我们不会在这里逐个讲解每个组件，
+We won't go through each one of the components here
+
+802
+00:45:29,614 --> 00:45:31,150
+因为在概念上它们都是一样的。
+because conceptually they're all the same.
+
+803
+00:45:31,350 --> 00:45:33,630
+现在我们要定义组件的渲染。
+We're now going to define the renders of our components.
+
+804
+00:45:34,110 --> 00:45:37,762
+同样，我们先粘贴一个长文件，然后向上滚动
+Once again, we're going to paste a long file first and then scroll up
+
+805
+00:45:37,762 --> 00:45:38,870
+并逐步讲解。
+and walk through it.
+
+806
+00:45:39,270 --> 00:45:41,691
+文件的开头包含一些导入，
+The beginning of the file consists of imports
+
+807
+00:45:41,691 --> 00:45:45,005
+这些导入会被渲染使用，还有一些辅助函数，
+that are going to be used by renders and some helper functions,
+
+808
+00:45:45,005 --> 00:45:46,470
+同样也会被渲染使用。
+once again used by renders.
+
+809
+00:45:46,930 --> 00:45:50,050
+如果我们稍微往下滚一点，就会看到实际的目录渲染。
+If we scroll a little bit down, we'll see the actual catalog renders.
+
+810
+00:45:50,410 --> 00:45:53,752
+首先，你会看到目录渲染是一个泛型，
+First, you see that the catalog renders is a generic type
+
+811
+00:45:53,752 --> 00:45:57,450
+它将目录定义指定为其类型参数。
+that specifies the catalog definition as its type parameter.
+
+812
+00:45:57,610 --> 00:46:02,391
+这确保了渲染与我们之前定义的组件类型
+This ensures that the renders perfectly match the types of the components
+
+813
+00:46:02,391 --> 00:46:04,010
+完全匹配。
+that we defined earlier.
+
+814
+00:46:04,290 --> 00:46:09,210
+现在，你会看到我们之前定义的每个组件都有一个渲染。
+Now, you'll see that each one of the components we previously defined has a render.
+
+815
+00:46:09,410 --> 00:46:13,170
+这些渲染是简单的 React 函数。例如，我们来看看 title 的渲染。
+The renders are simple React functions. For example, let's look at the title render.
+
+816
+00:46:13,440 --> 00:46:16,160
+你可以看到它接收一个 props 参数。
+You see that it takes a props argument.
+
+817
+00:46:16,600 --> 00:46:19,048
+props 包含我们之前定义的类型，
+Props contains the types we defined earlier,
+
+818
+00:46:19,048 --> 00:46:22,720
+然后简单地使用这些参数返回一个 React 组件。
+and then it simply returns a React component using these arguments.
+
+819
+00:46:23,120 --> 00:46:26,801
+如你所见，这里有一长串组件渲染器，
+As you see here, there's a long list of component renderers,
+
+820
+00:46:26,801 --> 00:46:30,040
+我们之前定义的每个组件对应一个渲染器。
+one renderer for each component we defined earlier.
+
+821
+00:46:30,320 --> 00:46:33,954
+通过这些自定义渲染器，你可以获得自己的自定义样式，
+These custom renderers is how you can get your own custom stylings
+
+822
+00:46:33,954 --> 00:46:36,200
+在使用声明式生成式 UI 时。
+when using declarative, generative UI.
+
+823
+00:46:36,520 --> 00:46:40,520
+只需让你的组件渲染器感知你的设计风格指南即可。
+Simply make your component renderers aware of your design style guides.
+
+824
+00:46:40,640 --> 00:46:42,800
+现在让我们向下滚动到渲染器文件的底部。
+Now let's scroll down to the bottom of the renderers file.
+
+825
+00:46:44,080 --> 00:46:45,360
+里面有不少渲染器。
+Quite a few renderers in there.
+
+826
+00:46:46,320 --> 00:46:49,440
+好的。你现在看到了演示。
+All right. You now see the demonstration.
+
+827
+00:46:49,680 --> 00:46:54,269
+目录定义，我们使用 Create Catalog 函数调用，并传给它
+Catalog definition, we use the Create Catalog function call and we pass to it
+
+828
+00:46:54,269 --> 00:46:57,496
+演示目录定义作为参数，
+as arguments the demonstration catalog definitions
+
+829
+00:46:57,496 --> 00:47:01,440
+以及我们刚才创建的演示目录渲染。
+and the demonstration catalog renders which we created just now.
+
+830
+00:47:01,720 --> 00:47:06,000
+最后，我们给它传入了 catalog ID：app Dashboard Catalog。
+Finally, we're giving it the catalog ID of app Dashboard Catalog.
+
+831
+00:47:06,760 --> 00:47:10,440
+好了，现在我们的目录定义已经就位，是时候把它接入进去了。
+Alright, now we have our catalog definitions in place and it's time to wire it up.
+
+832
+00:47:11,020 --> 00:47:13,380
+我们现在看到的这段应用代码应该看起来很熟悉。
+We're now looking at application code that should look very familiar.
+
+833
+00:47:13,740 --> 00:47:16,847
+同样，我们用 Copilot provider 包裹我们的应用，
+Once again, we're wrapping our application with the Copilot provider
+
+834
+00:47:16,847 --> 00:47:18,900
+这样我们就可以在应用内的任何地方连接到智能体。
+so we can connect to agents anywhere within it.
+
+835
+00:47:19,060 --> 00:47:22,331
+唯一的区别是，这次我们给 Copilot provider
+The only difference is that this time we're passing the Copilot provider
+
+836
+00:47:22,331 --> 00:47:24,020
+传递了另一个参数，agui 参数。
+another argument, the agui argument.
+
+837
+00:47:24,220 --> 00:47:28,900
+在 agui 参数中，我们传入了刚才创建的演示目录。
+In the agui argument, we're passing the demonstration catalog that we just created.
+
+838
+00:47:29,140 --> 00:47:31,174
+这告诉智能体它可以使用这个组件目录，
+This tells the agent it can use this component catalog
+
+839
+00:47:31,174 --> 00:47:32,620
+在将组件组合在一起时。
+when composing components together.
+
+840
+00:47:32,870 --> 00:47:35,680
+现在我们把 Copilot chat 组件重新接入我们的应用，
+Now we'll wire the Copilot chat component back into our application,
+
+841
+00:47:35,680 --> 00:47:37,230
+以及一些示例建议。
+along with some example suggestions.
+
+842
+00:47:37,830 --> 00:47:40,894
+同样地，只需将一组提示硬编码到聊天中。
+And once again, simply hardcode a set of prompts into the chat.
+
+843
+00:47:40,894 --> 00:47:43,310
+定义好前端后，我们现在启动它。
+Having defined the frontend, we'll now start it.
+
+844
+00:47:43,710 --> 00:47:48,810
+我们将使用 Start Frontend 辅助方法在端口 3004 上启动前端。
+We'll use our Start Frontend helper method to start the frontend on port 3004.
+
+845
+00:47:48,810 --> 00:47:51,870
+现在它已经运行，我们将再次嵌入
+Now that it's running, we'll once again embed.
+
+846
+00:47:52,970 --> 00:47:55,930
+它的 iframe 到 Jupyter notebook 中，以便于查看。
+its iframe inside of a Jupyter notebook for convenience.
+
+847
+00:47:56,610 --> 00:48:01,400
+好了，我们的聊天界面已上线。让我们测试一下声明式生成式 UI 渲染。
+All right, our chat is now live. Let's test out some declarative gen AI rendering.
+
+848
+00:48:01,520 --> 00:48:02,920
+首先，点击 Sales Dashboard。
+First, we'll click Sales Dashboard.
+
+849
+00:48:03,480 --> 00:48:07,840
+你看，当我们点击建议时，只是得到了一个预设的提示。
+You see here when we click the suggestion, we simply got a pre-canned prompt.
+
+850
+00:48:08,280 --> 00:48:08,760
+好的。
+All right.
+
+851
+00:48:09,000 --> 00:48:13,127
+智能体动态组合了我们在组件目录中定义的一堆组件，
+The agent dynamically combined a bunch of the components we defined in our catalog
+
+852
+00:48:13,127 --> 00:48:15,520
+向我们展示了这个很棒的 Sales Dashboard。
+together to show us this great sales dashboard.
+
+853
+00:48:16,040 --> 00:48:18,967
+我们在这里看到了总收入，带有标题和文本，
+We see here, the total revenue with a title and then a text,
+
+854
+00:48:18,967 --> 00:48:22,320
+新客户转化率，甚至还有饼图和条形图。
+new customers conversion rate and even a pie chart and a bar chart.
+
+855
+00:48:22,560 --> 00:48:25,320
+这是一个动态 schema、声明式生成式 UI 的示例。
+This is an example of dynamic schema, declarative, generative UI.
+
+856
+00:48:25,520 --> 00:48:28,151
+智能体首先从零开始组装了一个 schema，
+The agent first assembled a schema from scratch,
+
+857
+00:48:28,151 --> 00:48:32,001
+把组件目录中的一堆组件拼凑在一起，
+putting together a bunch of the components from our component catalog,
+
+858
+00:48:32,001 --> 00:48:34,760
+然后用数据绑定填充该 schema。
+and then populated that schema with data bindings.
+
+859
+00:48:35,120 --> 00:48:39,929
+我们现在将看一个固定 schema、声明式生成式 UI 的示例，
+We're now going to see an example of fixed schema, declarative, generative UI,
+
+860
+00:48:39,929 --> 00:48:44,155
+在这个示例中，我们作为程序员提前硬编码了一个预定的 schema，
+where we as programmers hardcode a predetermined schema in advance,
+
+861
+00:48:44,155 --> 00:48:47,070
+智能体只需用数据填充它即可。
+which the agent will simply populate with data.
+
+862
+00:48:47,470 --> 00:48:51,030
+固定 schema 声明式生成式 UI 的第一步当然是定义 schema。
+The first step in fixed schema declarative generative UI is of course defining the schema.
+
+863
+00:48:51,230 --> 00:48:54,430
+schema 从哪里来？你肯定不想手写它。
+Where is the schema gonna come from? Well, you're not going to want to handwrite it.
+
+864
+00:48:54,870 --> 00:48:57,690
+schema 文件是一个庞大而杂乱的 JSON schema，
+The schema file is a big, messy JSON schema
+
+865
+00:48:57,690 --> 00:49:00,590
+它被设计为由机器编写。
+that is designed to be written by machines.
+
+866
+00:49:01,110 --> 00:49:04,646
+AG-UI 生态系统中有一个很棒的工具叫做 AG-UI Composer，
+There's a great tool in the AG-UI ecosystem called the AG-UI Composer,
+
+867
+00:49:04,646 --> 00:49:06,564
+它基本上包含了一个 copilot，
+which essentially includes a copilot
+
+868
+00:49:06,564 --> 00:49:09,500
+帮助你组装一个匹配特定参数的 schema。
+that helps you assemble a schema to match some parameters.
+
+869
+00:49:09,900 --> 00:49:14,012
+我们将把 AG-UI Composer 的截图放到 Jupyter notebook 中，
+We're going to drop screenshots for this AG-UI Composer into the Jupyter notebook
+
+870
+00:49:14,012 --> 00:49:17,020
+你可以在 AG-UI Org 找到它，然后点击 composer。
+and you can find it on AG-UI Org and then click on the composer.
+
+871
+00:49:17,540 --> 00:49:20,140
+这张图片是你进入 AG-UI Composer 后会看到的界面。
+This picture is what you'll see when you go to the AG-UI Composer.
+
+872
+00:49:20,420 --> 00:49:24,780
+有一个简单的聊天输入框，让你指定想要构建的组件类型。
+There's a simple chat input box that lets you specify the type of component you want to build.
+
+873
+00:49:25,170 --> 00:49:27,250
+经过几次迭代，你最终会得到一个 schema。
+After some iterations, you'll end up with a schema.
+
+874
+00:49:27,730 --> 00:49:31,551
+Composer 并排显示了schema 的示例数据绑定，
+The composer shows side by side the schema sample data bindings
+
+875
+00:49:31,551 --> 00:49:33,391
+你可以根据需要进行编辑，
+that you can edit if you'd like,
+
+876
+00:49:33,391 --> 00:49:37,920
+以及渲染后的 schema 加上数据绑定的预览效果。
+and a preview of what the rendered schema plus data bindings would look like.
+
+877
+00:49:38,320 --> 00:49:41,080
+经过几次迭代，你会得到一个满意的 schema。
+After some iterations, you'll end up with a schema to your liking.
+
+878
+00:49:41,360 --> 00:49:44,320
+完成后，只需复制它的 JSON 并准备下一步。
+When you've done that, simply copy its JSON and prepare for the next step.
+
+879
+00:49:44,440 --> 00:49:48,636
+我们现在要添加一个返回固定 schema、声明式
+We're now going to add a tool that returns a fixed schema, declarative,
+
+880
+00:49:48,636 --> 00:49:50,200
+生成式 UI 组件的工具。
+generative UI component.
+
+881
+00:49:51,070 --> 00:49:55,416
+你需要将从 Composer 获取的schema 定义粘贴到
+You will want to paste the schema definition you got from the composer into a
+
+882
+00:49:55,416 --> 00:49:57,830
+应用程序中某处的一个变量里。
+variable somewhere in your application.
+
+883
+00:49:58,190 --> 00:49:59,671
+如果你在这里查看详情，
+If you look here in the detail,
+
+884
+00:49:59,671 --> 00:50:02,870
+你会看到组件组合在一起的大致结构形状。
+you will see the rough shape of assembly of components together.
+
+885
+00:50:02,950 --> 00:50:05,430
+但再次强调，这不是你想要手写的代码。
+But once again, this is not code that you want to be handwriting.
+
+886
+00:50:05,790 --> 00:50:09,779
+你在这里注意到的另一个细节是 Catalog ID，它引用了
+Another detail you notice here is the Catalog ID referencing the component catalog
+
+887
+00:50:09,779 --> 00:50:11,830
+我们在前端定义的组件目录，以及一个 Surface ID。
+we defined on the front end and a Surface ID.
+
+888
+00:50:12,070 --> 00:50:15,328
+Surface ID 标识了一个特定的 AG-UI 组件。
+The Surface ID identifies a specific AG-UI component.
+
+889
+00:50:15,328 --> 00:50:20,140
+它很有用，因为它允许组件被更新，而不仅仅是追加。
+It's useful because it allows components to be updated, not just appended to.
+
+890
+00:50:20,460 --> 00:50:25,181
+我们将创建一个模拟的搜索航班工具，让智能体为该用户查找
+We're going to create a dummy search flights tool for the agent to find relevant
+
+891
+00:50:25,181 --> 00:50:26,540
+相关航班。
+flights for this user.
+
+892
+00:50:26,900 --> 00:50:30,374
+在真实应用中，这会调用 API 或数据库，
+In a real application, this would be hitting an API or a database,
+
+893
+00:50:30,374 --> 00:50:34,620
+但作为示例，我们只需在这里硬编码一些数据。
+but for the purposes of example, we're simply going to hardcode some data here.
+
+894
+00:50:34,940 --> 00:50:38,764
+现在我们准备定义一个返回固定 schema、声明式
+Now we're ready to define the tool that will return a fixed schema, declarative,
+
+895
+00:50:38,764 --> 00:50:40,020
+生成式 UI 组件的工具。
+generative UI component.
+
+896
+00:50:40,640 --> 00:50:45,082
+如你所见，任何组件都可以返回这类组件。首先，
+As you will see, any component whatsoever can return such components. First,
+
+897
+00:50:45,082 --> 00:50:47,200
+让我们看看这个工具返回了什么。
+let's look at what this tool returns.
+
+898
+00:50:47,680 --> 00:50:53,480
+该工具使用 AG-UI 渲染辅助函数来返回一组 AG-UI 操作。
+This tool uses the AG-UI render helper function to return an array of AG-UI operations.
+
+899
+00:50:54,040 --> 00:50:57,440
+第一个操作使用我们的 Surface ID 创建一个新 Surface。
+The first operation creates a new surface using our Surface ID.
+
+900
+00:50:57,600 --> 00:51:01,430
+第二个操作使用我们的航班 schema更新该 Surface 的组件。
+The second operation updates components for that surface using our flight schema.
+
+901
+00:51:01,830 --> 00:51:07,459
+最后，第三个操作使用
+And finally, the third operation populates the data for the components using the
+
+902
+00:51:07,459 --> 00:51:10,190
+传递给该工具的 flights 参数来为组件填充数据。
+flights arguments passed to this tool.
+
+903
+00:51:10,510 --> 00:51:13,486
+请记住，在固定 schema 的声明式生成式 UI 中，
+Remember in fixed schema, declarative, generative UI,
+
+904
+00:51:13,486 --> 00:51:15,638
+我们作为程序员预先定义了 schema，
+we as programmers predefine the schema,
+
+905
+00:51:15,638 --> 00:51:20,070
+但为该 schema 填充数据仍然是智能体的职责。
+but it's still the responsibility of the agent to populate the data for that schema.
+
+906
+00:51:20,520 --> 00:51:24,568
+我们传给组件的数据结构必须与
+It's critical that the shape of the data we pass the component matches the shape of
+
+907
+00:51:24,568 --> 00:51:27,723
+schema 期望的数据结构相匹配，为了确保这一点，
+the data expected by the schema in order to ensure this happens,
+
+908
+00:51:27,723 --> 00:51:31,771
+我们让工具接收一个 flight 参数数组，其结构
+we have our tool take an array of flight arguments whose shape exactly matches the
+
+909
+00:51:31,771 --> 00:51:33,200
+与我们 schema 中定义的结构完全匹配。
+shape defined in our schema.
+
+910
+00:51:33,960 --> 00:51:36,400
+既然已经定义了工具，现在该创建智能体了。
+Now that we've defined our tools, it's time to create our agent.
+
+911
+00:51:36,800 --> 00:51:39,440
+我们再次创建一个简单的 LangChain 智能体。
+Once again, we're going to create a simple LangChain agent.
+
+912
+00:51:39,600 --> 00:51:43,555
+如果查看工具列表，你会看到我们之前定义的工具，
+If you look at our list of tools, you will see the tool we defined previously,
+
+913
+00:51:43,555 --> 00:51:47,070
+即带有模拟销售数据的 get sales data 工具，以及另外两个工具。
+get sales data with mock sales data as well as two additional tools.
+
+914
+00:51:47,430 --> 00:51:49,478
+第一个是 Search Flights 工具，
+The first one is the Search Flights tool,
+
+915
+00:51:49,478 --> 00:51:53,634
+它为航班信息提供模拟数据，同样地，在真实应用中，
+which provides mock data for flight information once again in a real application,
+
+916
+00:51:53,634 --> 00:51:56,464
+这将连接到 API 或数据库，
+this would be connecting to an API or to a database as well
+
+917
+00:51:56,464 --> 00:51:57,910
+以及 Display Flights 工具。
+as the Display Flights tool.
+
+918
+00:51:58,390 --> 00:52:04,470
+智能体可以调用 Display Flights 工具，以便向用户展示 AG-UI 组件。
+The agent can call the Display Flights tool in order to show the AG-UI component to the user.
+
+919
+00:52:04,790 --> 00:52:08,487
+我们再次指定 CopilotKit 中间件，并包含一个系统提示词，
+Once again, we specify the CopilotKit middleware and we include a system prompt
+
+920
+00:52:08,487 --> 00:52:11,160
+告诉智能体如何以及何时显示组件。
+that tells the agent how and when to display components.
+
+921
+00:52:11,320 --> 00:52:14,040
+如果你好奇，可以在这里阅读更多细节。
+If you're curious, you can read this in more detail here.
+
+922
+00:52:14,080 --> 00:52:18,400
+我们添加了聊天建议，让用户可以轻松搜索航班。
+We're adding chat suggestions to let users easily search for flights.
+
+923
+00:52:18,760 --> 00:52:24,280
+既然已经定义了固定 schema 工具，让我们来看看应用程序。
+Now that we've defined our fixed schema tool, let's take a look at our application.
+
+924
+00:52:24,400 --> 00:52:27,200
+前端与我们之前看到的完全相同。
+The front end is exactly identical to what we saw before.
+
+925
+00:52:27,580 --> 00:52:31,207
+但既然我们已经赋予智能体搜索和显示航班的能力，
+But now that we've given our agent the ability to search and display flights,
+
+926
+00:52:31,207 --> 00:52:34,380
+让我们看看询问航班信息时会发生什么。
+let's see what happens when we ask it for some flights information.
+
+927
+00:52:34,700 --> 00:52:38,582
+做得好。你在 composer 中创建的 schema 现在已经实时显示在屏幕上，
+Good job. The schema you created in the composer is now live on your screen,
+
+928
+00:52:38,582 --> 00:52:40,460
+数据已由智能体填充。
+having been populated by the agent.
+
+929
+00:52:40,740 --> 00:52:42,556
+本节到此结束。做得很好。
+We're now done with the section. Great job.
+
+930
+00:52:42,556 --> 00:52:45,380
+你现在已经有了使用声明式生成式 UI 的经验。
+You now have experience working with declarative, generative UI.
+
+931
+00:52:45,580 --> 00:52:47,572
+你首先定义了一个组件目录，
+You first defined a component catalog
+
+932
+00:52:47,572 --> 00:52:50,808
+它由组件定义
+which is specified by a combination of component definitions
+
+933
+00:52:50,808 --> 00:52:55,040
+和组件渲染的组合来指定，然后用动态 schema
+and component renders and then exercise that component with both dynamic schema
+
+934
+00:52:55,040 --> 00:52:57,530
+和固定 schema 的声明式生成式 UI 来实践该组件。
+and fixed Schema, declarative, Generative UI.
+
+935
+00:52:57,730 --> 00:53:02,569
+提醒一下，每个声明式生成式 UI 组件
+As a reminder, each declarative generative UI component is specified by a
+
+936
+00:53:02,569 --> 00:53:06,160
+都由相对于组件目录的 schema
+combination of a schema relative to component catalog
+
+937
+00:53:06,160 --> 00:53:08,970
+以及相对于该 schema 的数据绑定组合来指定。
+and data bindings relative to that schema.
+
+938
+00:53:09,970 --> 00:53:15,073
+在之前的课程中，你限制了智能体能显示的内容，
+In the previous lessons, you constrained what your agent could show through specific
+
+939
+00:53:15,073 --> 00:53:20,034
+在受控生成式 UI 中是通过特定组件，或通过
+components in the case of controlled generative UI or through a catalog of building
+
+940
+00:53:20,034 --> 00:53:22,940
+声明式生成式 UI 中的积木式组件目录。
+blocks in the case of declarative generative UI.
+
+941
+00:53:23,300 --> 00:53:26,991
+在本课中，你将采用不同的方法，移除这些对
+In this lesson, you'll take a different approach by removing these constraints on
+
+942
+00:53:26,991 --> 00:53:27,740
+智能体 UI 的限制。
+your agent's UI.
+
+943
+00:53:28,140 --> 00:53:30,446
+首先，你将把智能体连接到 MCP Apps，
+First, you'll connect your agent to MCP apps,
+
+944
+00:53:30,446 --> 00:53:33,358
+让它移交受控的第三方应用，
+letting it hand off controlled third party applications,
+
+945
+00:53:33,358 --> 00:53:37,180
+即为 ChatGPT 和 Claude 应用商店构建的同类应用。
+the same applications that are built for the ChatGPT and Claude app stores.
+
+946
+00:53:37,420 --> 00:53:41,141
+接下来，我们将探索完全开放式生成式 UI，
+We will follow up by exploring fully open-ended generative UI,
+
+947
+00:53:41,141 --> 00:53:45,143
+允许智能体即时创建全新的界面，
+where you allow your agent to create brand new interfaces on the fly,
+
+948
+00:53:45,143 --> 00:53:50,760
+完全开放式 GenUI 真正体现了 GenUI 持续演进的核心潜力。
+fully open-ended GenUI really captures the full promise of how GenUI could continue to evolve.
+
+949
+00:53:51,200 --> 00:53:51,880
+让我们开始写代码吧。
+Let's get coding.
+
+950
+00:53:52,480 --> 00:53:56,360
+我们要探索的第一种开放式生成式 UI 是 MCP Apps。
+The first type of open-ended generative UI we will explore is MCP apps.
+
+951
+00:53:56,800 --> 00:53:59,979
+有了 MCP Apps，你无需为每个新功能构建 UI，
+Instead of building a UI for every new capability with MCP apps,
+
+952
+00:53:59,979 --> 00:54:03,269
+只需将你的全栈智能体连接到
+you simply connect your full stack agents to third party applications
+
+953
+00:54:03,269 --> 00:54:06,280
+现有的第三方应用，这些应用自带 UI 和品牌标识。
+that already exist and which come with their own UI and branding.
+
+954
+00:54:06,560 --> 00:54:08,890
+作为开发者，你只需接入 MCP Apps，
+As a developer, you only need to wire up the MCP apps,
+
+955
+00:54:08,890 --> 00:54:10,840
+它们随后便可供智能体使用。
+which are then made available to the agent.
+
+956
+00:54:11,120 --> 00:54:14,600
+智能体再决定何时调用这些应用以及如何与它们交互。
+The agent then decides when to call on those apps and how to interact with them.
+
+957
+00:54:14,880 --> 00:54:19,069
+MCP Apps 是 ChatGPT 和 Claude 应用商店支持的标准，
+MCP apps are the standard supported by the ChatGPT and Claude app stores,
+
+958
+00:54:19,069 --> 00:54:23,537
+这意味着你可以将用户在这些环境中
+which means you can bring the same applications your users are using in these
+
+959
+00:54:23,537 --> 00:54:28,493
+使用的同类应用引入你自己的自定义智能体应用，包括 Figma、Hubspot、
+environments to your own custom agentic applications, including Figma, Hubspot,
+
+960
+00:54:28,493 --> 00:54:29,680
+Excalidraw 等。
+Excalidraw and so on.
+
+961
+00:54:30,000 --> 00:54:33,240
+MCP 应用通过三部分架构来实现。
+MCP apps are implemented via a three-part architecture.
+
+962
+00:54:33,840 --> 00:54:39,139
+第一部分是带有 MCP Apps 扩展的 MCP 服务器，该扩展针对的是 MCP 协议，
+The first part is the MCP server with the MCP Apps extension to the MCP protocol,
+
+963
+00:54:39,139 --> 00:54:44,840
+这个提供你熟悉的 MCP 工具的服务器，现在也可以提供 UI 资源了。
+the same server that serves your familiar MCP tools can now also serve UI resources.
+
+964
+00:54:45,480 --> 00:54:50,088
+然后，这些 UI 资源可以组装成 iframe 网页表示形式。第二，
+These UI resources can then be assembled into an iframe web representation. Second,
+
+965
+00:54:50,088 --> 00:54:52,360
+你有宿主前端应用。
+you have your host frontend application.
+
+966
+00:54:52,640 --> 00:54:56,953
+UI 资源被嵌入在双层 iframe 中，以实现隔离
+The UI resources are embedded inside of a double iframe for isolation
+
+967
+00:54:56,953 --> 00:54:58,440
+和安全。
+and security purposes.
+
+968
+00:54:59,440 --> 00:55:02,440
+第三部分当然是 MCP 应用视图本身。
+The third part is, of course, the MCP app view itself.
+
+969
+00:55:02,920 --> 00:55:06,225
+这个 MCP 应用视图与应用的其他部分是隔离的，
+This MCP app view is isolated from the rest of the application
+
+970
+00:55:06,225 --> 00:55:09,400
+它可以通过 JSON-RPC 与宿主前端通信。
+and it may communicate with the host frontend via JSON-RPC.
+
+971
+00:55:09,640 --> 00:55:13,370
+值得注意的是，尽管 MCP 应用由 MCP 服务器提供，
+It's worth noting that even though MCP apps are served by MCP servers,
+
+972
+00:55:13,370 --> 00:55:18,450
+但它们与这些相同服务器返回的 MCP 工具完全独立。
+they are otherwise completely independent from the MCP tools returned by those same servers.
+
+973
+00:55:18,970 --> 00:55:23,635
+这可能有点令人困惑，因为 MCP 应用是由之前的一个标准演进而来的，
+This may be a little confusing because MCP apps evolved out of a previous standard
+
+974
+00:55:23,635 --> 00:55:28,301
+叫做 MCP UI，该标准确实允许任何 MCP 工具选择从
+called MCP UI, which did allow any MCP tool to optionally return UI resources from
+
+975
+00:55:28,301 --> 00:55:29,330
+任何交互中返回 UI 资源。
+any interaction.
+
+976
+00:55:29,450 --> 00:55:33,016
+但 MCP UI 现在已经演进为 MCP Apps 标准，
+But MCP UI has now evolved into the MCP Apps standard,
+
+977
+00:55:33,016 --> 00:55:38,240
+这再次将 UI 资源部分与 MCP 工具完全解耦。
+which again has fully decoupled the UI resources aspect from the MCP tools.
+
+978
+00:55:38,600 --> 00:55:40,794
+工具和 UI 由相同的服务器提供，
+The tools and the UI are served by the same servers,
+
+979
+00:55:40,794 --> 00:55:42,400
+但除此之外它们互不交互。
+but they do not otherwise interact.
+
+980
+00:55:42,920 --> 00:55:47,254
+使用 MCP 应用的主要原因是将第三方应用从那些
+The main reason to use MCP apps is to bring 3rd party applications from those
+
+981
+00:55:47,254 --> 00:55:51,520
+ChatGPT 和 Claude 应用商店引入到你自己的自定义智能体应用中。
+ChatGPT and Claude app stores into your own custom agentic applications.
+
+982
+00:55:52,240 --> 00:55:55,333
+MCP 应用针对这一特定用例进行了高度优化，
+MCP apps are highly optimized for that specific use case,
+
+983
+00:55:55,333 --> 00:55:59,716
+包括其带来的优势，即允许从外部进行完全自定义的品牌化，
+including with its benefits, which allow fully custom branding from the outside
+
+984
+00:55:59,716 --> 00:56:03,840
+以及与第三方服务的交互，但这是以一些权衡为代价的。
+and interaction with third-party services at the expense of some trade-offs.
+
+985
+00:56:04,160 --> 00:56:07,450
+MCP 应用本质上是一个设计为寄生在另一个应用内的应用，
+MCP apps are essentially an app designed to live inside of another app,
+
+986
+00:56:07,450 --> 00:56:09,960
+这引入了显著的间接开销。
+which introduces meaningful indirection overhead.
+
+987
+00:56:10,080 --> 00:56:15,360
+因此，你通常不会想把自己应用的功能实现为 MCP 应用。
+So you typically would not want to implement your own app's functionality as MCP apps.
+
+988
+00:56:15,840 --> 00:56:20,715
+稍后，我们将把 Excalidraw MCP 服务器嵌入到你的应用中，
+In a moment, we're going to embed the Excalidraw MCP server into your application,
+
+989
+00:56:20,715 --> 00:56:24,600
+它会将 Excalidraw MCP 应用暴露给你的全栈智能体。
+which will expose the Excalidraw MCP app to your full-stack agent.
+
+990
+00:56:24,880 --> 00:56:29,440
+如你所见，你只需要处理一个 MCP 服务器 URL。
+As you can see, there's just a single MCP server URL you have to deal with.
+
+991
+00:56:29,560 --> 00:56:32,160
+没有专门针对 MCP 应用的单独 URL。
+There's no separate URL specifically for the MCP app.
+
+992
+00:56:32,640 --> 00:56:35,588
+最后，在生成式 UI 光谱的最远端，
+Finally, at the far end of the generative UI spectrum,
+
+993
+00:56:35,588 --> 00:56:37,685
+我们发现了完全开放式的生成式 UI，
+we find fully open-ended generative UI
+
+994
+00:56:37,685 --> 00:56:40,895
+你的智能体可以即时编写全新的应用，
+where your agent writes brand new applications on the fly,
+
+995
+00:56:40,895 --> 00:56:43,450
+通常嵌入在 AI 聊天中。
+typically to be embedded inside of the AI chat.
+
+996
+00:56:43,890 --> 00:56:47,002
+当然，生成式 UI 光谱的这一部分提供了最大的灵活性。
+This part of the generative UI spectrum, of course, provides the most flexibility.
+
+997
+00:56:47,002 --> 00:56:49,570
+你本质上是在赋予智能体完全的创作自由。
+You're essentially giving your agent full creative freedom.
+
+998
+00:56:49,930 --> 00:56:53,650
+但这是有代价的。生成速度更慢，且更容易出错。
+But this comes at a trade-off. Generation is slower and more error-prone.
+
+999
+00:56:54,090 --> 00:56:56,130
+它的一致性和确定性要差得多。
+It is far less consistent and deterministic.
+
+1000
+00:56:56,330 --> 00:57:00,251
+而且结果的质量对模型选择
+And the quality of your result is highly sensitive both to model choice
+
+1001
+00:57:00,251 --> 00:57:03,640
+甚至对你提供给智能体的提示和技能都非常敏感。
+and even to the prompts and skills that you feed to your agent.
+
+1002
+00:57:04,360 --> 00:57:08,240
+完全开放式的生成式 UI 仍处于采用的探索阶段，
+Fully open-ended generative UI is still in the exploratory phase of adoption,
+
+1003
+00:57:08,240 --> 00:57:10,179
+但随着 AI 技术栈的不断发展，
+but as the AI stack continues to evolve,
+
+1004
+00:57:10,179 --> 00:57:14,000
+随着时间的推移，它可能会在生产技术栈中扮演越来越重要的角色。
+it will likely fill a larger and larger role in the production stack over time.
+
+1005
+00:57:14,240 --> 00:57:15,320
+好了，让我们来看代码。
+All right. Let's get to the code.
+
+1006
+00:57:15,800 --> 00:57:20,398
+和之前一样，我们将从重置课程单元格开始，以确保我们的 notebook
+Just like before, we'll start with the reset lesson cell to make sure our notebook
+
+1007
+00:57:20,398 --> 00:57:21,480
+处于干净状态。
+is in a clean state.
+
+1008
+00:57:21,880 --> 00:57:25,436
+同样和之前一样，我们将从设置项目依赖开始。
+And just like before, we'll begin by setting up our project dependencies.
+
+1009
+00:57:25,436 --> 00:57:27,960
+我们将从安装 Python 依赖开始。
+We'll begin by installing the Python requirements.
+
+1010
+00:57:32,290 --> 00:57:34,170
+接着安装前端依赖。
+Followed by our frontend requirements.
+
+1011
+00:57:36,410 --> 00:57:38,729
+最后，我们将加载 API 密钥，
+And finally, we'll load our API keys
+
+1012
+00:57:38,729 --> 00:57:42,130
+这些密钥由 DeepLearningAI 平台预先提供。
+that are pre-provided by the DeepLearningAI platform.
+
+1013
+00:57:43,970 --> 00:57:47,623
+现在我们将像之前一样启动后端和前端。
+We'll now start the backend and the frontend just like we did before.
+
+1014
+00:57:47,623 --> 00:57:49,610
+我们将在端口 8005 上启动后端。
+We'll start our backend on port 8005.
+
+1015
+00:57:52,470 --> 00:57:55,110
+并在端口 3005 上启动前端。
+And we'll start our frontend on port 3005.
+
+1016
+00:58:01,950 --> 00:58:03,292
+现在前端已经运行，
+Now that our frontend is running,
+
+1017
+00:58:03,292 --> 00:58:06,550
+为了方便，让我们使用 iframe 将其显示在 Jupyter notebook 中。
+let's display it inside of the Jupyter notebook using an iframe for convenience.
+
+1018
+00:58:07,070 --> 00:58:09,990
+好了。你现在看到了我们之前定义的相同的聊天体验。
+All right. You now see the same chat experience we defined before.
+
+1019
+00:58:10,510 --> 00:58:14,230
+现在，让我们像之前讨论的那样，向基础聊天中添加一个 MCP 应用。
+Now let's add an MCP app to our basic chat like we discussed before.
+
+1020
+00:58:14,550 --> 00:58:17,163
+MCP Apps 是 MCP 协议的一个扩展
+MCP Apps is an extension to the MCP protocol
+
+1021
+00:58:17,163 --> 00:58:20,936
+这允许 MCP 服务器不仅指定工具和上下文，
+that allows MCP servers to specify not only tools and context,
+
+1022
+00:58:20,936 --> 00:58:24,710
+还可以指定可嵌入聊天中的应用。
+but also applications that may be embedded inside of the chat.
+
+1023
+00:58:25,030 --> 00:58:27,790
+你在这里看到的代码应该和之前非常相似。
+The code you are seeing here should look very familiar from before.
+
+1024
+00:58:28,390 --> 00:58:31,000
+我们在这里只做了一处添加。
+There is only one addition we're making here.
+
+1025
+00:58:31,080 --> 00:58:35,320
+当我们定义 Copilot runtime 时，我们指定了一个 MCP apps 参数。
+When we define the Copilot runtime, we specify an MCP apps parameter.
+
+1026
+00:58:35,680 --> 00:58:37,935
+在 MCP Apps 参数内部，
+Inside of the MCP Apps parameter,
+
+1027
+00:58:37,935 --> 00:58:41,640
+我们传入一个可能提供 MCP apps 的 MCP 服务器数组。
+we pass an array of MCP servers which may serve MCP apps.
+
+1028
+00:58:42,200 --> 00:58:47,061
+Copilot runtime 将自动访问这些 MCP 服务器并确定
+The Copilot runtime will automatically access these MCP servers and determine
+
+1029
+00:58:47,061 --> 00:58:49,600
+它们是否提供了任何 MCP apps。
+if there are any MCP apps served from them.
+
+1030
+00:58:49,720 --> 00:58:53,360
+在这个例子中，我们指定了 Excalidraw 的 MCP app。
+In this example, we're specifying Excalidraw's MCP app.
+
+1031
+00:58:53,440 --> 00:58:57,480
+你可能对 Excalidraw 很熟悉，它是一个出色的图表可视化工具。
+You may be familiar with Excalidraw as a great tool for visualizing diagrams.
+
+1032
+00:58:58,280 --> 00:59:00,560
+就这样。这就是我们要做的。让我们试一下。
+That's it. That's all we have to do. Let's give it a try.
+
+1033
+00:59:00,560 --> 00:59:05,120
+现在我们将再次显示前端更新后的 iframe。
+Now we'll display once again the updated iframe for our front end.
+
+1034
+00:59:05,920 --> 00:59:09,400
+现在我们的聊天有了一个 Excalidraw MCP app，可以按需调用。
+Now our chat has an Excalidraw MCP app to call on as needed.
+
+1035
+00:59:09,560 --> 00:59:11,040
+让我们给它一个问题，看看会发生什么。
+Let's give it a problem and see what happens.
+
+1036
+00:59:11,810 --> 00:59:16,023
+用 Excalidraw 给我展示一个简单的网络图，
+Show me a simple network diagram of three routers, two laptops,
+
+1037
+00:59:16,023 --> 00:59:18,090
+包含三个路由器、两台笔记本电脑和一台服务器。
+and a server using Excalidraw.
+
+1038
+00:59:20,650 --> 00:59:24,650
+这就是结果，一个嵌入在聊天中的真实 Excalidraw 图表。
+And there you have it, an actual Excalidraw diagram embedded right inside of your chat.
+
+1039
+00:59:24,850 --> 00:59:27,530
+正如你在这里看到的，我们得到的结果有一些局限性。
+As you see here, there's a few limitations to what we got out of this.
+
+1040
+00:59:27,650 --> 00:59:29,610
+让我们再次提示它，看看会得到什么。
+Let's try to prompt it once again and see what we get.
+
+1041
+00:59:29,850 --> 00:59:35,060
+我们会要求它添加标签、标题，并尽可能使其连贯。
+We'll ask it to add labels, titles, and generally make it as coherent as possible.
+
+1042
+00:59:38,100 --> 00:59:39,500
+好了，这次好一点了。
+Alright, we're doing a little bit better.
+
+1043
+00:59:39,620 --> 00:59:42,534
+我们的图表现在有了一些文本、标签和箭头，
+Our diagram now has some text and labels and arrows,
+
+1044
+00:59:42,534 --> 00:59:44,500
+但你看它仍然不完美。
+but you see it's still not perfect.
+
+1045
+00:59:44,660 --> 00:59:49,445
+这很好地展示了开放式
+And this is a good demonstration of the trade-offs you get with open-ended
+
+1046
+00:59:49,445 --> 00:59:51,220
+生成式 UI 生成的权衡。
+generative UI generation.
+
+1047
+00:59:51,380 --> 00:59:54,780
+耗时更长，确定性更低，而且更容易出错。
+Takes longer, is less deterministic, and is more error-prone.
+
+1048
+00:59:55,180 --> 01:00:00,020
+这里一个重要的提示是，开放式生成式 UI 是生成式 UI 光谱中
+An important tip here is that open-ended generative UI is the part of the generative UI spectrum
+
+1049
+01:00:00,260 --> 01:00:03,542
+对提示词和技能最敏感的部分，
+most sensitive to prompts and to skills,
+
+1050
+01:00:03,542 --> 01:00:08,499
+你通常可以通过优化提示词和智能体技能，
+you can often significantly improve the performance you get from open-ended generative UI
+
+1051
+01:00:08,499 --> 01:00:12,060
+显著提升开放式生成式 UI 组件的性能。
+components by optimizing your prompt and your agent skills.
+
+1052
+01:00:12,420 --> 01:00:16,309
+好了，既然我们看到了添加 MCP App 到应用中是多么容易，
+Okay, now that we saw how easy it is to add an MCP App to the application,
+
+1053
+01:00:16,309 --> 01:00:20,060
+接下来我们也把完全开放式生成式 UI 添加到应用中。
+let's add fully open-ended generative UI to the application as well.
+
+1054
+01:00:20,360 --> 01:00:24,202
+再次强调，因为我们在 Jupyter notebook 中使用的是 TypeScript，
+Once again, because we're using TypeScript in our Jupyter notebook,
+
+1055
+01:00:24,202 --> 01:00:26,520
+我们只能完全覆盖文件。
+we can only override the file altogether.
+
+1056
+01:00:26,960 --> 01:00:29,560
+这个文件中的几乎所有内容都和之前完全一样。
+Almost everything in this file is exactly the same as it was before.
+
+1057
+01:00:29,680 --> 01:00:33,841
+只有一处修改，我们在 Copilot runtime
+With one modification, we're specifying a new argument in the Copilot runtime
+
+1058
+01:00:33,841 --> 01:00:37,560
+定义中指定了一个新参数 open-ended generative UI，并在底层将其设为 true。
+definition, open-ended generative UI, and setting it to true under the hood.
+
+1059
+01:00:37,600 --> 01:00:43,400
+当我们这样做时，一个开放式生成式 UI 中间件会被注入到 AG-UI 堆栈中。
+When we do this, an open-ended generative UI middleware is injected to the AG-UI stack.
+
+1060
+01:00:43,680 --> 01:00:48,448
+就像 AG-UI 一样，开放式生成式 UI 是通过向后端智能体传递
+Just like with AG-UI, open-ended generative UI is implemented by passing an
+
+1061
+01:00:48,448 --> 01:00:51,400
+一个额外的特殊工具来实现的。
+additional special tool to our backend agent.
+
+1062
+01:00:51,600 --> 01:00:54,280
+这通过 AG-UI 中间件堆栈进行传播。
+This is propagated via the AG-UI middleware stack.
+
+1063
+01:00:54,960 --> 01:00:55,960
+好了，让我们试一下。
+Alright, let's give it a try.
+
+1064
+01:00:56,440 --> 01:00:58,744
+我们将再次把更新后的前端
+Once again, we'll display the updated front end
+
+1065
+01:00:58,744 --> 01:01:00,760
+作为 iframe 显示在 Jupyter notebook 中。
+as an iframe inside of a Jupyter notebook.
+
+1066
+01:01:02,400 --> 01:01:05,480
+让我们试个疯狂的提示词。嘿，聊天，让墨西哥卷饼下雨吧。
+Let's try a crazy prompt. Hey, chat, make it rain tacos.
+
+1067
+01:01:09,800 --> 01:01:12,800
+我们在这里看到，随着应用的构建，我们看到它被逐部分显示出来。
+We see here that as the app is building, we're seeing it displayed part by part.
+
+1068
+01:01:13,200 --> 01:01:15,893
+我们这里有了看起来像下着墨西哥卷饼的东西。
+And we have here something that looks like raining tacos.
+
+1069
+01:01:15,893 --> 01:01:17,240
+不过看起来有点奇怪。
+It's a little bit odd though.
+
+1070
+01:01:17,240 --> 01:01:20,040
+这展示了开放式生成式 UI 的另一个权衡。
+This shows another one of the trade-offs of open-ended generative UI.
+
+1071
+01:01:20,040 --> 01:01:22,248
+你永远不知道最终会得到什么结果。
+You never quite know what you're gonna get on the other side.
+
+1072
+01:01:22,248 --> 01:01:23,440
+让我们试着改进提示词。
+Let's try to improve the prompt.
+
+1073
+01:01:24,080 --> 01:01:26,049
+我们会要求智能体使用墨西哥卷饼表情符号，
+We'll ask the agent to use taco emojis
+
+1074
+01:01:26,049 --> 01:01:28,335
+这样更可能像真正的墨西哥卷饼，
+that are more likely to resemble real tacos
+
+1075
+01:01:28,335 --> 01:01:31,320
+并且让雨看起来更像真正的雨。
+and to make the rain look a little bit more like real rain.
+
+1076
+01:01:31,840 --> 01:01:33,280
+好吧，这还不算太差。
+All right, that's not too bad.
+
+1077
+01:01:34,200 --> 01:01:36,685
+可能还有改进的空间，但不算太差。
+There's still room for improvement probably, but it's not too bad.
+
+1078
+01:01:36,685 --> 01:01:37,440
+这就是结果。
+So there you have it.
+
+1079
+01:01:37,680 --> 01:01:39,120
+开放式生成式 UI。
+Open-ended generative UI.
+
+1080
+01:01:39,320 --> 01:01:42,197
+总结一下，我们展示了如何轻松集成 MCP apps
+To recap, we showed how we can easily integrate MCP apps
+
+1081
+01:01:42,197 --> 01:01:45,200
+可以由任何 MCP 服务器提供到我们的应用中。
+that may be served by any MCP server into our application.
+
+1082
+01:01:45,760 --> 01:01:49,987
+我们还展示了如何让智能体动态创建完全开放式的生成式 UI，
+And we showed how we can let the agent create fully open-ended generative UI on the
+
+1083
+01:01:49,987 --> 01:01:51,880
+以满足我们抛给它的任何提示词。
+fly to meet any prompt we throw at it.
+
+1084
+01:01:52,050 --> 01:01:54,570
+生成式 UI 光谱的这一部分存在取舍。
+There are trade-offs to this part of the generative UI spectrum.
+
+1085
+01:01:55,090 --> 01:02:00,210
+它更慢，确定性更低，也更容易出错。
+It is slower, it is less deterministic, and it is more likely to result in errors.
+
+1086
+01:02:00,490 --> 01:02:03,599
+但它也确实激发了我们的想象力，并指明了
+But it also really captures our imagination and points the way to
+
+1087
+01:02:03,599 --> 01:02:05,730
+生成式 UI 世界可能演进的方向。
+where the generative UI world may evolve to.
+
+1088
+01:02:06,250 --> 01:02:06,730
+做得好。
+Great job.
+
+1089
+01:02:06,970 --> 01:02:10,769
+现在你已经体验了整个生成式 UI 光谱，
+You've now got an experience across the entire generative UI spectrum,
+
+1090
+01:02:10,769 --> 01:02:14,884
+从完全受控的生成式 UI，到声明式生成式 UI，
+all the way from fully controlled generative UI to declarative generative UI
+
+1091
+01:02:14,884 --> 01:02:17,100
+再到现在的完全开放式生成式 UI。
+and now to fully open-ended generative UI.
+
+1092
+01:02:18,380 --> 01:02:21,870
+在之前的课程中，你构建了能呈现丰富 UI 的智能体，
+In the previous lessons, you built agents that present rich UIs
+
+1093
+01:02:21,870 --> 01:02:23,780
+但仅限于聊天窗口内。
+but only inside of the chat window.
+
+1094
+01:02:24,020 --> 01:02:28,232
+本节课中，你将超越聊天窗口，构建一个智能体
+In this lesson, you'll go beyond the chat window to build an app where the agent
+
+1095
+01:02:28,232 --> 01:02:30,140
+与前端共享实时状态的应用。
+and the front end share live state.
+
+1096
+01:02:30,460 --> 01:02:34,049
+我们将构建一个经典待办事项应用的智能体版本，
+We will build an agentic take on the classic to-do app
+
+1097
+01:02:34,049 --> 01:02:37,247
+其中智能体从后端创建待办事项，
+where the agent creates to-dos from the back end,
+
+1098
+01:02:37,247 --> 01:02:40,212
+用户在前端编辑或完成这些事项，
+users edit or complete those in the front end,
+
+1099
+01:02:40,212 --> 01:02:43,020
+并且双方自动保持同步。
+and both sides stay in sync automatically.
+
+1100
+01:02:43,340 --> 01:02:48,105
+这种状态同步是构建你自己的 Claude Code 或
+This state synchronization is the foundation for building your own Claude Code or
+
+1101
+01:02:48,105 --> 01:02:52,870
+Cursor 风格应用的基础，可覆盖从法律到会计再到
+Cursor-style application across different verticals, from legal to accounting to
+
+1102
+01:02:52,870 --> 01:02:54,320
+营销等各种垂直领域。
+marketing, you name it.
+
+1103
+01:02:54,960 --> 01:02:55,960
+我们开始吧。
+So let's get to it.
+
+1104
+01:02:56,440 --> 01:03:00,204
+现在，我们将超越孤立的聊天交互，去探索功能完备的
+We are now venturing beyond the isolated chat interaction to explore fully featured
+
+1105
+01:03:00,204 --> 01:03:03,120
+全栈智能体，它们的设计初衷是让人感觉像真正的同事。
+full-stack agents which are designed to feel like true coworkers.
+
+1106
+01:03:03,520 --> 01:03:06,958
+事实证明，几乎所有成功的全栈智能体
+It turns out that a small set of agent-user interaction primitives are used by
+
+1107
+01:03:06,958 --> 01:03:09,000
+都在使用一小部分智能体与用户的交互原语。
+virtually all successful full-stack agents.
+
+1108
+01:03:09,440 --> 01:03:11,808
+在探讨其中几个技术原语之前，
+Before we explore a couple of those technical primitives,
+
+1109
+01:03:11,808 --> 01:03:15,047
+不妨退一步简短地问一下：从产品角度来看，
+it's worth taking a step back and briefly asking what makes for a great full-stack
+
+1110
+01:03:15,047 --> 01:03:16,400
+什么造就了一个优秀的全栈智能体？
+agent from a product standpoint?
+
+1111
+01:03:16,840 --> 01:03:19,200
+当然，出色且直观的用户体验是基础。
+Of course, a great intuitive user experience is the foundation.
+
+1112
+01:03:19,520 --> 01:03:22,823
+正如我们之前提到的，我们没理由回避聊天这种交互模式，
+As we mentioned before, there is no reason to run away from the chat modality,
+
+1113
+01:03:22,823 --> 01:03:24,320
+它目前正风靡全球。
+which is taking the world by storm.
+
+1114
+01:03:24,580 --> 01:03:28,060
+同时请记住，聊天也并不意味着纯文本交互。
+And remember that chat also does not mean text-only interaction.
+
+1115
+01:03:28,300 --> 01:03:30,048
+你要构建的是增强型聊天，
+You want to build augmented chat,
+
+1116
+01:03:30,048 --> 01:03:33,980
+它利用生成式 UI、语音交互，甚至视频。
+which leverages generative UI, voice interactions, and perhaps even video.
+
+1117
+01:03:34,180 --> 01:03:38,415
+出色的聊天体验还能让用户看到智能体正在做什么，以
+A great chat experience also gives users visibility into what the agent is doing to
+
+1118
+01:03:38,415 --> 01:03:40,563
+保持他们的参与度，但更重要的是，
+keep them engaged, but more importantly,
+
+1119
+01:03:40,563 --> 01:03:44,675
+赢得用户的信任，并给用户机会引导智能体更好地
+to earn users' trust and to give users the opportunity to steer the agent to better
+
+1120
+01:03:44,675 --> 01:03:45,780
+满足他们的需求。
+address their needs.
+
+1121
+01:03:46,060 --> 01:03:47,420
+所以这是一个适合进行实验的好地方。
+So this is a good place to experiment.
+
+1122
+01:03:47,840 --> 01:03:51,645
+同样关键的是，将聊天作为智能体交互的锚点，并不意味着
+Just as critically, chat as the anchor of agentic interaction does not mean
+
+1123
+01:03:51,645 --> 01:03:53,240
+聊天是孤立存在的。
+that chat exists in isolation.
+
+1124
+01:03:53,440 --> 01:03:56,680
+智能体应该让人感觉它是更大应用的原生组成部分。
+The agent should feel like a native part of a larger application.
+
+1125
+01:03:57,080 --> 01:03:59,204
+它应该能够利用任何数据上下文、
+It should be able to leverage any data context,
+
+1126
+01:03:59,204 --> 01:04:02,200
+连接器或与整个应用相关联的操作。
+connectors or actions associated with the application at large.
+
+1127
+01:04:02,560 --> 01:04:06,381
+一个好的经验法则是，如果最终用户可以在整个应用中
+A good rule of thumb is that if an end user can take some action or learn some fact
+
+1128
+01:04:06,381 --> 01:04:07,968
+执行某项操作或获取某项事实，
+using the application at large,
+
+1129
+01:04:07,968 --> 01:04:09,496
+他们也应该能够
+they should also be able to take
+
+1130
+01:04:09,496 --> 01:04:12,024
+通过聊天执行相同的操作或获取相同的事实。
+that same action or learn the same fact via the chat.
+
+1131
+01:04:12,024 --> 01:04:14,140
+智能体还必须能够深入访问
+The agent must also have deep access to the
+
+1132
+01:04:14,140 --> 01:04:15,683
+应用的实时上下文，
+application's real-time context,
+
+1133
+01:04:15,683 --> 01:04:17,812
+即用户当前正在查看的内容，
+meaning what the user is currently looking at
+
+1134
+01:04:17,812 --> 01:04:20,100
+以及当前可供用户执行的操作。
+and the actions currently available to the user.
+
+1135
+01:04:20,620 --> 01:04:24,660
+我们可以通过 Cursor 和 GitHub Copilot 中的几个例子来梳理这些特质。
+We can tease out these qualities with a few examples in Cursor and in GitHub Copilot.
+
+1136
+01:04:24,820 --> 01:04:26,595
+智能体不是你切换过去的一个聊天窗口。
+The agent isn't a chat window you switch to.
+
+1137
+01:04:26,595 --> 01:04:28,420
+它就集成在工作区本身之中。
+It's integrated into the workspace itself.
+
+1138
+01:04:28,620 --> 01:04:32,048
+它读取你的代码，理解你的项目，编辑文件，运行命令，
+It reads your code, understands your project, edits files, runs commands,
+
+1139
+01:04:32,048 --> 01:04:33,680
+所有这些都不需要你离开编辑器。
+all without you leaving the editor.
+
+1140
+01:04:33,960 --> 01:04:37,680
+在 Notion AI 中，智能体和工具是一个整体。
+The agent and the tool are a single entity in Notion AI.
+
+1141
+01:04:37,840 --> 01:04:40,400
+智能体会自动感知页面上的内容。
+The agent is automatically aware of what's on the page.
+
+1142
+01:04:40,560 --> 01:04:43,120
+你不需要粘贴上下文，也不需要解释你正在做什么。
+You don't need to paste context or explain what you're working on.
+
+1143
+01:04:43,480 --> 01:04:47,000
+它早就知道，因为它嵌入在文档中，而不是在文档旁边。
+It already knows because it's embedded in the document, not sitting beside it.
+
+1144
+01:04:47,600 --> 01:04:51,453
+在法律 AI 助手 Harvey 中，智能体不仅仅是回答问题，
+In Harvey, a legal AI assistant, the agent doesn't just answer questions,
+
+1145
+01:04:51,453 --> 01:04:55,679
+它还会与用户并肩操作，起草文档、分析合同，
+it takes actions alongside the user, drafting documents, analyzing contracts,
+
+1146
+01:04:55,679 --> 01:04:58,600
+在律师使用的同一工作流中运行。
+operating inside the same workflow the lawyer is using.
+
+1147
+01:04:58,930 --> 01:05:00,770
+再次强调，它是协作者，而不是聊天机器人。
+Again, it's a collaborator, not a chatbot.
+
+1148
+01:05:01,050 --> 01:05:04,768
+事实证明，跨领域差异巨大的智能体应用最终都
+It turns out that agentic applications across very different domains end up being
+
+1149
+01:05:04,768 --> 01:05:07,010
+构建在同一小组核心原语之上。
+built atop the same small set of core primitives.
+
+1150
+01:05:07,490 --> 01:05:09,683
+其中一个构建块就是生成式 UI 光谱，
+One of those building blocks is the generative UI spectrum
+
+1151
+01:05:09,683 --> 01:05:11,250
+我们在之前的课程中已经探讨过。
+that we explored in the previous lessons.
+
+1152
+01:05:11,690 --> 01:05:14,751
+在本课中，我们将了解另外两个技术构建块：
+In this lesson, we'll look at two additional technical building blocks,
+
+1153
+01:05:14,751 --> 01:05:17,210
+前端工具调用和共享状态同步。
+frontend tool calling and shared state synchronization.
+
+1154
+01:05:17,370 --> 01:05:18,970
+我们将从两个视角来探讨它们。
+We will explore them from two perspectives.
+
+1155
+01:05:19,450 --> 01:05:21,009
+首先是开发者的视角，
+First, from the standpoint of the developer,
+
+1156
+01:05:21,009 --> 01:05:22,970
+即日常开发中需要了解的 SDK。
+SDKs you should know about in day-to-day development.
+
+1157
+01:05:23,360 --> 01:05:27,440
+其次是概念视角，让你理解这些参数在底层是如何工作的。
+And second, conceptually so you can understand how these parameters work under the hood.
+
+1158
+01:05:28,040 --> 01:05:31,579
+首先是前端工具调用。前端工具调用与
+First, frontend tool calls. Frontend tool calls are directly analogous to the
+
+1159
+01:05:31,579 --> 01:05:32,920
+标准的后端工具调用
+standard backend tool calls.
+
+1160
+01:05:33,040 --> 01:05:34,360
+你可能已经很熟悉了。
+you're likely already familiar with.
+
+1161
+01:05:34,720 --> 01:05:37,702
+区别在于，它们允许智能体直接在
+The difference is that they allow an agent to execute an action directly in the
+
+1162
+01:05:37,702 --> 01:05:39,720
+前端应用中执行操作，而不仅仅是在它运行的地方。
+frontend application, not just where it's running.
+
+1163
+01:05:40,000 --> 01:05:43,654
+在 React 中，你使用 useFrontendTool hook 来注册前端工具，
+In React, you register frontend tools using the useFrontendTool hook,
+
+1164
+01:05:43,654 --> 01:05:47,552
+指定工具期望的参数以及
+specifying the arguments expected by the tool and the handler to be executed
+
+1165
+01:05:47,552 --> 01:05:48,770
+调用该工具时要执行的处理函数。
+when the tool is called.
+
+1166
+01:05:48,970 --> 01:05:50,871
+如果你的处理函数返回一个结果，
+If your handler returns a result,
+
+1167
+01:05:50,871 --> 01:05:54,810
+该结果将作为标准工具调用结果传回给智能体。
+that result is passed back to the agent as a standard tool call result.
+
+1168
+01:05:55,210 --> 01:05:57,788
+你可以在应用初始化时以集中方式注册前端工具调用，
+You can register frontend tool calls in a centralized fashion
+
+1169
+01:05:57,788 --> 01:06:01,357
+也可以将它们的定义分散到
+when your application initializes, or you can just disperse their definitions across
+
+1170
+01:06:01,357 --> 01:06:04,233
+应用的不同部分，以便它们在用户
+different parts of the app so that they load and unload automatically
+
+1171
+01:06:04,233 --> 01:06:05,720
+浏览应用时自动加载和卸载。
+as users traverse the application.
+
+1172
+01:06:06,000 --> 01:06:09,320
+在底层，这些工具调用以标准格式传递给智能体后端。
+Under the hood, these tool calls are passed to the agentic backend in a standard format.
+
+1173
+01:06:09,560 --> 01:06:13,923
+当智能体决定执行前端工具时，AG-UI 会识别这一点，
+When the agent then decides to execute a frontend tool, AG-UI recognizes that,
+
+1174
+01:06:13,923 --> 01:06:17,615
+暂停后端执行，将控制权交给前端，
+pauses the backend execution, hands off control to the frontend,
+
+1175
+01:06:17,615 --> 01:06:21,978
+执行该工具，然后在执行完成后
+executes that tool, and then transfers control back to the agentic backend once
+
+1176
+01:06:21,978 --> 01:06:23,320
+将控制权转移回智能体后端。
+execution is complete.
+
+1177
+01:06:23,860 --> 01:06:27,100
+再次强调，开发时你无需担心所有这些复杂性。
+Once again, you don't have to worry about all this complexity when developing.
+
+1178
+01:06:27,460 --> 01:06:29,980
+只需调用 useFrontendTool hook 即可。
+You simply call the useFrontendTool hook.
+
+1179
+01:06:30,740 --> 01:06:33,470
+接下来是共享状态同步。默认情况下，
+Next, shared state synchronization. By default,
+
+1180
+01:06:33,470 --> 01:06:35,940
+智能体和前端是断开的。
+the agent and the frontend are disconnected.
+
+1181
+01:06:36,220 --> 01:06:38,022
+智能体不知道用户看到了什么，
+The agent does not know what the user sees
+
+1182
+01:06:38,022 --> 01:06:40,300
+前端也不知道智能体知道什么。
+and the frontend does not know what the agent knows.
+
+1183
+01:06:41,140 --> 01:06:45,402
+共享状态是解决这一问题的原语。要使用共享状态同步，
+Shared state is the primitive that solves this. To use shared state synchronization,
+
+1184
+01:06:45,402 --> 01:06:47,770
+请使用智能体的标准状态抽象。
+use your agent's standard state abstractions.
+
+1185
+01:06:47,970 --> 01:06:50,530
+本课中，我们将使用 LangChain Agent State。
+In this lesson, we will use LangChain Agent State.
+
+1186
+01:06:50,730 --> 01:06:53,321
+在前端，使用 useAgent hook，
+On the frontend, use the useAgent hook,
+
+1187
+01:06:53,321 --> 01:06:57,010
+它会暴露一个响应式更新的类型化状态对象。
+which exposes a reactively updated typed state object.
+
+1188
+01:06:57,290 --> 01:07:00,610
+在底层，它的工作原理是这样的：随着智能体运行，它可以更新自己的状态。
+Under the hood, here's how this works. As the agent runs, it can update its state.
+
+1189
+01:07:00,810 --> 01:07:04,830
+此时，它可以通过发出状态增量
+When it does so, it can then update the frontend state by emitting state delta
+
+1190
+01:07:04,830 --> 01:07:07,217
+事件来更新前端状态，也就是说它传达了
+events, meaning it communicates the changes
+
+1191
+01:07:07,217 --> 01:07:09,730
+需要应用到前端状态的更改，
+that need to be applied to the frontend state so
+
+1192
+01:07:09,730 --> 01:07:12,180
+从而使其与后端状态保持同步。
+that it remains in sync with the backend state.
+
+1193
+01:07:12,740 --> 01:07:15,368
+这些状态增量事件本身也是流式传输的，
+These state delta events are themselves streamed
+
+1194
+01:07:15,368 --> 01:07:17,620
+因为它们通常由 LLM 生成。
+because they're often generated by an LLM.
+
+1195
+01:07:17,940 --> 01:07:21,888
+前端也可以发出状态增量事件，以支持
+The frontend can also emit state delta events to support the state modifications
+
+1196
+01:07:21,888 --> 01:07:23,340
+来自用户的状态修改。
+that are coming from the user.
+
+1197
+01:07:23,900 --> 01:07:29,100
+最后，在需要时，两种状态之间的冲突解决由 AG-UI 中间件处理。
+Finally, when needed, conflict resolution between the two states is handled via AG-UI middleware.
+
+1198
+01:07:29,530 --> 01:07:32,912
+再次强调，这些都是实现细节，
+Once again, these are implementation details you do not need to be aware of in day-to-day
+
+1199
+01:07:32,912 --> 01:07:33,770
+你在日常开发中无需了解。
+day development.
+
+1200
+01:07:34,010 --> 01:07:36,610
+本课中只需使用 useAgent hook 即可。
+Simply use the useAgent hook in this lesson.
+
+1201
+01:07:36,690 --> 01:07:38,808
+你将构建一个画布式智能体 Todo 应用
+You will build a Canvas agentic Todo app
+
+1202
+01:07:38,808 --> 01:07:42,250
+它将聊天界面与传统的 Todo 面板结合在一起。
+that combines a chat interface with a traditional Todo board.
+
+1203
+01:07:42,570 --> 01:07:46,525
+你将向智能体暴露一个 open Todo canvas 工具，允许智能体
+You will expose an open Todo canvas tool to the agent to allow the agent to interact
+
+1204
+01:07:46,525 --> 01:07:48,650
+代表用户与应用程序进行交互。
+with the application on the user's behalf.
+
+1205
+01:07:49,010 --> 01:07:53,164
+你将使用状态同步，使前端的
+And you will use state synchronization to keep the front end representation of
+
+1206
+01:07:53,164 --> 01:07:56,890
+Todo 表示与智能体的 Todo 表示保持双向同步。
+Todos synced bidirectionally with the agent's representation of Todos.
+
+1207
+01:07:57,210 --> 01:07:58,090
+让我们看看代码。
+Let's look at the code.
+
+1208
+01:07:58,690 --> 01:08:01,177
+我们将构建一个智能体 Todo 应用，
+We're going to be building an agentic Todo app
+
+1209
+01:08:01,177 --> 01:08:04,710
+它将突破聊天窗口，成为一个功能完整的
+that will venture outside of the chat window to a fully featured,
+
+1210
+01:08:04,710 --> 01:08:07,458
+全栈智能体应用，就像之前一样，
+full stack agentic application just like before,
+
+1211
+01:08:07,458 --> 01:08:11,450
+我们将从重置课程单元格开始，确保处于干净的状态。
+we'll start with our reset lesson cell to make sure we're in a clean state.
+
+1212
+01:08:12,850 --> 01:08:16,495
+我们将设置项目依赖。再次，
+We'll set up our project dependencies. Once again,
+
+1213
+01:08:16,495 --> 01:08:22,430
+从 Python 依赖开始，然后是前端依赖。
+starting with our Python dependencies and followed by our front end dependencies.
+
+1214
+01:08:26,680 --> 01:08:29,228
+在继续之前，我们还将加载
+Before we move on, we'll also load up our API keys
+
+1215
+01:08:29,228 --> 01:08:31,840
+由 DeepLearningAI 平台提供的 API 密钥。
+that are provided by the DeepLearningAI platform.
+
+1216
+01:08:35,850 --> 01:08:41,385
+现在，我们准备好通过启动前端
+We're now ready to load back our familiar starting point by starting the frontend
+
+1217
+01:08:41,385 --> 01:08:42,850
+和智能体服务器，来加载回我们熟悉的起点。
+and the agent server.
+
+1218
+01:08:43,210 --> 01:08:46,519
+我们将再次使用一个标准的 LangChain 智能体，
+We'll once again use a standard LangChain agent
+
+1219
+01:08:46,519 --> 01:08:48,850
+并将其部署在 FastAPI 服务器之后。
+and serve it behind a FastAPI server.
+
+1220
+01:08:49,130 --> 01:08:50,490
+现在我们准备好启动前端了。
+Now we're ready to start our frontend.
+
+1221
+01:08:53,050 --> 01:08:57,770
+同样，我们有了基础的聊天设置，并准备好进行修改和增强。
+Once again, we have our basic chat setup and ready for modification and augmentation.
+
+1222
+01:08:58,150 --> 01:09:02,296
+我们将通过前端工具调用
+We're going to amplify this basic chat with frontend tool calling as well
+
+1223
+01:09:02,296 --> 01:09:05,830
+以及前端和智能体之间的状态同步，来增强这个基础聊天功能。
+as state synchronization between the frontend and the agent.
+
+1224
+01:09:06,190 --> 01:09:09,110
+我们将首先在智能体和前端之间实现共享状态。
+We'll begin by implementing shared state between the agent and the frontend.
+
+1225
+01:09:09,630 --> 01:09:13,390
+首先，我们将为智能体状态定义一个 schema。
+First, we're going to define a schema for our agent state.
+
+1226
+01:09:13,710 --> 01:09:17,937
+我们的智能体状态包含一个 Todo 数组，其中每个 Todo 都有一个 ID，
+Our agent state consists of an array of Todos where each Todo has an ID,
+
+1227
+01:09:17,937 --> 01:09:22,310
+一个标题，以及一个指示该 Todo 是否已完成的标志。
+a title and a flag indicating whether the Todo has been completed or not.
+
+1228
+01:09:22,490 --> 01:09:23,890
+我们已经定义了智能体状态。
+We've defined our agent state.
+
+1229
+01:09:24,170 --> 01:09:29,010
+现在我们将定义一些工具，允许智能体与自身的状态进行交互。
+We're now going to define tools that will allow our agent to interact with its own state.
+
+1230
+01:09:29,490 --> 01:09:32,610
+我们定义的第一个工具是 Manage Todos 工具。
+The first tool we define is the Manage Todos tool.
+
+1231
+01:09:32,730 --> 01:09:38,770
+这个工具允许智能体使用 LangChain 提供的 command 函数来更新自身状态。
+This tool lets the agent update its own state using the command function provided by LangChain.
+
+1232
+01:09:38,970 --> 01:09:41,526
+我们提供的第二个工具是 Get Todos 工具，
+The second tool we provide is the Get Todos tool,
+
+1233
+01:09:41,526 --> 01:09:43,890
+它允许智能体读取自身的状态。
+which allows the agent to read its own state.
+
+1234
+01:09:44,670 --> 01:09:47,851
+最后，我们将这两个工具放入一个数组中，
+Finally, we put both of these tools in an array so
+
+1235
+01:09:47,851 --> 01:09:51,430
+以便之后能轻松地将它们填充到智能体中。
+that we can easily populate them into our agent later.
+
+1236
+01:09:52,110 --> 01:09:54,725
+好了，既然我们已经定义了智能体状态和工具，
+Alright, now that we have the agent state and the tools defined,
+
+1237
+01:09:54,725 --> 01:09:57,390
+我们将更新状态以利用它们。
+we're going to be updating our state to take advantage of those.
+
+1238
+01:09:58,150 --> 01:10:02,990
+这段代码用一个新的 LangChain 智能体替换了我们之前定义的智能体。
+This code replaces the previous agent we defined with a new LangChain agent.
+
+1239
+01:10:03,270 --> 01:10:06,830
+这个 LangChain 智能体仍然非常基础，但有几个关键变化。
+This LangChain agent is still very basic with a few key changes.
+
+1240
+01:10:07,350 --> 01:10:12,130
+首先，它使用我们之前创建的智能体状态类型来指定状态 schema。
+First, it specifies a state schema using the agent state type we created earlier.
+
+1241
+01:10:12,490 --> 01:10:16,570
+其次，它指定了现在可供智能体使用的 Todo 工具。
+Second, it specifies the Todo tools that are now made available to the agent.
+
+1242
+01:10:17,050 --> 01:10:20,912
+最后，就像之前一样，我们指定了 CopilotKit 中间件，以允许
+Lastly, just like before, we're specifying CopilotKit middleware to allow the
+
+1243
+01:10:20,912 --> 01:10:24,370
+CopilotKit 和 AG-UI 技术栈轻松地与 LangChain 智能体进行交互。
+CopilotKit and AG-UI stacks to easily interact with the LangChain agent.
+
+1244
+01:10:24,610 --> 01:10:25,800
+既然我们已经设置好了智能体，
+Now that we've set up the agent,
+
+1245
+01:10:25,800 --> 01:10:28,730
+现在是时候设置前端以利用这个新功能了。
+it's time to set up the front end to take advantage of this new functionality.
+
+1246
+01:10:29,050 --> 01:10:32,604
+现在我们将向智能体引入前端工具调用，
+Now we're going to introduce frontend tool calls to our agent as well
+
+1247
+01:10:32,604 --> 01:10:36,720
+并将我们刚定义的智能体状态与前端状态进行双向绑定。
+as bind the agent state we just defined to our frontend state bidirectionally.
+
+1248
+01:10:37,040 --> 01:10:41,193
+同样，因为我们在 Jupyter notebook 中编辑 TypeScript 代码，
+Once again, because we're editing TypeScript code inside of the Jupyter notebook,
+
+1249
+01:10:41,193 --> 01:10:44,040
+所以必须完全覆盖之前定义的文件。
+we must fully overwrite the file that was defined before.
+
+1250
+01:10:44,080 --> 01:10:46,160
+但让我们梳理一下所做的修改。
+But let's walk through the changes we made.
+
+1251
+01:10:46,480 --> 01:10:49,087
+首先，我们将定义一个简单的局部变量
+First, we're going to define a simple local variable
+
+1252
+01:10:49,087 --> 01:10:53,175
+供应用程序使用，即 Todos Open，并将 Todos Open
+that our application is going to take advantage of, Todos Open, and set Todos Open,
+
+1253
+01:10:53,175 --> 01:10:54,360
+初始设置为 false。
+initially set to false.
+
+1254
+01:10:54,640 --> 01:10:56,670
+然后，我们将定义一个前端工具，
+We're then going to define a frontend tool
+
+1255
+01:10:56,670 --> 01:10:58,990
+它将被提供给智能体，以便
+that's going to be made available to the agent so
+
+1256
+01:10:58,990 --> 01:11:01,600
+智能体可以与这个局部变量进行交互。
+that the agent can interact with this local variable.
+
+1257
+01:11:02,080 --> 01:11:05,373
+我们正在使用 CopilotKit 提供的 useFrontendTool hook，
+We're using the useFrontendTool hook provided by CopilotKit,
+
+1258
+01:11:05,373 --> 01:11:07,920
+它连接到 AG-UI 的前端工具概念。
+which connects to AG-UI's frontend tool concept.
+
+1259
+01:11:08,240 --> 01:11:13,609
+就像其他所有工具一样，这个前端工具可以提供名称、描述，
+And just like every other tool, this frontend tool can provide a name, a description,
+
+1260
+01:11:13,609 --> 01:11:16,710
+以及同样被指定为 Zod schema 的参数。
+parameters specified once again as a Zod schema.
+
+1261
+01:11:17,190 --> 01:11:20,870
+提醒一下，Zod 相当于 TypeScript 版的 Pydantic。
+As a reminder, Zod is the TypeScript equivalent of Pydantic.
+
+1262
+01:11:21,030 --> 01:11:24,570
+最后，我们的前端工具可以有一个处理函数，它将被执行
+And finally, our frontend tool can have a handler that will be executed
+
+1263
+01:11:24,570 --> 01:11:27,390
+当智能体决定在前端调用此工具时。
+when the agent decides to call this tool on the frontend.
+
+1264
+01:11:27,790 --> 01:11:30,710
+请注意，前端处理函数在底层可以是异步的。
+Notice that the frontend handler can be asynchronous under the hood.
+
+1265
+01:11:30,790 --> 01:11:33,600
+每当智能体决定调用前端工具时，
+Whenever an agent decides to call a frontend tool,
+
+1266
+01:11:33,600 --> 01:11:38,550
+AG-UI 中间件会将执行权从智能体后端移交给智能体前端。
+the AG-UI Middleware hands off execution from the agentic backend to the agentic frontend.
+
+1267
+01:11:38,750 --> 01:11:40,786
+一旦前端提供了结果，
+Once a result is provided by the front end,
+
+1268
+01:11:40,786 --> 01:11:44,510
+它就会被传回智能体后端，智能体循环继续执行。
+it is propagated back to the agentic back end and the agentic loop continues.
+
+1269
+01:11:44,990 --> 01:11:47,753
+回顾一下我们在这里所做的，我们创建了一个局部变量，
+To recap what we did here, we created a local variable
+
+1270
+01:11:47,753 --> 01:11:50,390
+允许应用打开一个 Todos 面板。
+that allows the application to open a Todos panel.
+
+1271
+01:11:50,590 --> 01:11:52,696
+最初，这个 Todos 面板设为 false，
+Initially, this Todos panel is set to false
+
+1272
+01:11:52,696 --> 01:11:56,556
+并且我们通过一个专门的
+and we give the agent the ability to interact with this variable via a dedicated
+
+1273
+01:11:56,556 --> 01:11:57,550
+前端工具调用，赋予智能体与该变量交互的能力。
+front end tool call.
+
+1274
+01:11:57,870 --> 01:12:01,280
+现在我们将使用 useAgent Hook 来订阅智能体状态。
+Now we're going to subscribe to our agent state using the useAgent Hook.
+
+1275
+01:12:01,920 --> 01:12:06,291
+useAgent 是智能体时代极其强大的原语。在前端，
+useAgent is an incredibly powerful primitive for the agentic age. On the front end,
+
+1276
+01:12:06,291 --> 01:12:08,040
+它为你提供了所需的一切，
+it gives you everything you need.
+
+1277
+01:12:08,120 --> 01:12:11,919
+用于在前端与智能体交互，同时所有繁琐的细节
+On the front end in order to interact with agents with all of the messy details
+
+1278
+01:12:11,919 --> 01:12:13,640
+都会自动为你处理妥当。
+automatically taken care for you.
+
+1279
+01:12:13,960 --> 01:12:17,990
+在这里，我们将使用 useAgent 的状态变量，以便
+In this case, we're going to be using useAgent's state variable in order to
+
+1280
+01:12:17,990 --> 01:12:21,240
+将我们的前端状态与智能体状态双向绑定。
+bidirectionally tie our front end state to the agent state.
+
+1281
+01:12:21,680 --> 01:12:24,720
+最后，我们返回与此应用关联的 React 组件。
+Finally, we're returning the React component associated with this application.
+
+1282
+01:12:24,800 --> 01:12:29,114
+现在我想指出的最重要部分是 Todos 列表
+Now the most important part I would like to point out here is the Todos list
+
+1283
+01:12:29,114 --> 01:12:33,640
+组件，它接受一个状态获取器和一个状态设置器来管理自己的 Todos。
+component, which accepts a state getter and a state setter for its own Todos.
+
+1284
+01:12:34,360 --> 01:12:38,331
+状态获取器只是读取 Agent State Todos。
+The state getter is simply reading Agent State Todos.
+
+1285
+01:12:38,331 --> 01:12:42,920
+状态设置器只是用新的 Todos 设置 Agent State。
+The state setter is simply setting Agent State with new Todos.
+
+1286
+01:12:43,340 --> 01:12:44,300
+这一点意义深远。
+This is quite profound.
+
+1287
+01:12:44,980 --> 01:12:48,320
+我们在这里看到，useAgent Hook 为我们提供了功能完整的状态
+We see here that the useAgent Hook provides us with full featured state
+
+1288
+01:12:48,320 --> 01:12:50,980
+前后端同步。
+synchronization between our front end and our back end.
+
+1289
+01:12:51,260 --> 01:12:54,243
+就像标准的本地 React 状态一样，该状态是响应式的，
+Just like local standard React state, the state is reactive,
+
+1290
+01:12:54,243 --> 01:12:56,700
+我们可以在应用中利用这一点。
+which we can take advantage of in our application.
+
+1291
+01:12:57,140 --> 01:12:59,524
+并且每一次状态更新、流式传输
+And every act of state update, streaming
+
+1292
+01:12:59,524 --> 01:13:02,540
+和上下文解析都会被自动处理。
+and context resolution is automatically handled.
+
+1293
+01:13:02,580 --> 01:13:04,432
+对我们作为应用开发者来说，
+For us as application developers,
+
+1294
+01:13:04,432 --> 01:13:06,668
+我们可以简单地将其视为标准状态，
+we can simply treat it as standard state as
+
+1295
+01:13:06,668 --> 01:13:11,139
+就好像它只是在本地应用中定义一样。而在底层，它会自动保持
+if it was just defined in our local application. Under the hood, it is automatically kept
+
+1296
+01:13:11,139 --> 01:13:12,800
+与我们的智能体后端同步。
+in sync with our agentic back end.
+
+1297
+01:13:13,600 --> 01:13:14,840
+好了，我们来试一下。
+All right, let's give it a try.
+
+1298
+01:13:14,960 --> 01:13:18,800
+我们将再次使用 Display App Helper 来内联显示我们的应用。
+Once again, we're going to use the Display App Helper to display our application in line.
+
+1299
+01:13:19,280 --> 01:13:22,400
+好的。你看，我们现在有一个带有新 Todos 按钮的聊天界面。
+All right. You see here we have now a chat with a new Todos button.
+
+1300
+01:13:22,480 --> 01:13:23,600
+让我们点击它看看会发生什么。
+Let's click it to see what happens.
+
+1301
+01:13:24,000 --> 01:13:27,400
+当我们点击它时，会看到一个包含 Todos 的面板从侧面打开。
+When we click it, we see a panel opening from the side with Todos.
+
+1302
+01:13:27,520 --> 01:13:29,560
+目前还没有定义任何 Todos。
+Right now, there are no Todos defined as of yet.
+
+1303
+01:13:29,930 --> 01:13:33,130
+如果我们想的话，可以在底层本地与其进行交互。
+If we wanted to, we could interact with this locally under the hood.
+
+1304
+01:13:33,210 --> 01:13:35,432
+记住，每次我们这样做时，
+Remember, every time we do this,
+
+1305
+01:13:35,432 --> 01:13:38,807
+智能体状态都会更新，我们也可以关闭它，
+the agent state is updated and we can also close it
+
+1306
+01:13:38,807 --> 01:13:41,770
+让我们的智能体代为编辑 Todos。
+and allow our agent to edit our Todos for us.
+
+1307
+01:13:42,290 --> 01:13:46,250
+记住，智能体也可以设置 Todos 的 open 变量，
+Remember the agent can also set the Todos open variable
+
+1308
+01:13:46,250 --> 01:13:50,210
+该变量决定了 Todos 面板是打开还是关闭。
+that decides whether the Todos panel is open or closed.
+
+1309
+01:13:50,710 --> 01:13:53,726
+让我们要求智能体将 Todos 设置为打开，
+Let's ask our agent to set the Todos to open
+
+1310
+01:13:53,726 --> 01:13:56,910
+并创建一些有趣的 Todos。
+and to create a number of interesting Todos.
+
+1311
+01:13:57,470 --> 01:13:58,550
+好了，就是这样。
+All right, there you have it.
+
+1312
+01:13:58,870 --> 01:14:03,310
+我们的智能体现在打开了 Todos 面板，并用全新数据填充了它。
+We now had our agent open our Todos panel and populate it with brand new data.
+
+1313
+01:14:03,510 --> 01:14:05,550
+这种状态同步是双向的。
+This state synchronization works in both directions.
+
+1314
+01:14:05,910 --> 01:14:10,090
+我们可以编辑 Todos，并询问智能体还有多少 Todos 处于打开状态，
+We can edit our Todos and ask our agent how many Todos are still open
+
+1315
+01:14:10,090 --> 01:14:11,630
+从而获得正确的答案。
+and get a correct answer.
+
+1316
+01:14:12,130 --> 01:14:15,042
+恭喜你，你现在掌握了前端工具调用
+Congratulations, you've now mastered front end tool calling
+
+1317
+01:14:15,042 --> 01:14:19,410
+和状态同步，这是在你之前掌握的完整生成式 UI 光谱基础上的。
+and state synchronization in addition to the full Generative UI spectrum you've mastered before.
+
+1318
+01:14:20,210 --> 01:14:22,290
+我非常期待看到你们将构建出什么。
+I'm extremely excited to see what you'll all be building.
+
+1319
+01:14:22,970 --> 01:14:27,250
+我们在总结部分见。快速回顾一下，恭喜大家。
+See you in the conclusion section. For a quick recap, congratulations.
+
+1320
+01:14:27,770 --> 01:14:31,034
+你现在已经跨越了整个生成式 UI 光谱进行了构建。
+You've now built across the entire generative UI spectrum.
+
+1321
+01:14:31,034 --> 01:14:33,450
+你从受控的生成式 UI 开始。
+You started with controlled generative UI.
+
+1322
+01:14:34,310 --> 01:14:38,150
+作为程序员，你对每一个组件都有完全的控制权。
+Where you as the programmer had full control over every single component.
+
+1323
+01:14:38,430 --> 01:14:40,886
+接着你过渡到了声明式的生成式 UI，
+You then moved to declarative, generative UI,
+
+1324
+01:14:40,886 --> 01:14:44,790
+你定义了积木式组件，智能体可以按需将它们组合起来。
+where you define building blocks that the agent could assemble on demand.
+
+1325
+01:14:45,070 --> 01:14:48,306
+然后你将智能体连接到了第三方 MCP Apps，
+You then connected your agent to third-party MCP apps
+
+1326
+01:14:48,306 --> 01:14:51,541
+甚至探索了完全开放式的生成式 UI，
+and you even explored fully open-ended generative UI
+
+1327
+01:14:51,541 --> 01:14:54,630
+智能体可以在其中从零开始创建界面。
+where the agent creates interfaces from scratch.
+
+1328
+01:14:55,070 --> 01:14:58,721
+最后，你构建了一个共享状态应用，智能体
+Finally, you built a shared state application where the agent
+
+1329
+01:14:58,721 --> 01:15:01,880
+与聊天窗口之外的前端状态保持同步。
+and the frontend state are in sync beyond the chat window.
+
+1330
+01:15:02,160 --> 01:15:05,975
+核心要点是：没有一种方法能解决所有问题，
+The key takeaway is this, there is no one approach to rule them all,
+
+1331
+01:15:05,975 --> 01:15:09,720
+生成式 UI 光谱的每个部分都服务于不同的需求。
+each part of the generative UI spectrum serves a different need.
+
+1332
+01:15:10,080 --> 01:15:13,640
+现在你拥有了在自己的应用中混合搭配这些方法的工具。
+And now you have the tools to mix and match those in your own applications.
+
+1333
+01:15:14,040 --> 01:15:18,203
+并且因为你构建的所有内容都使用了开源的 AG-UI 协议，
+And because everything you built uses the open-source AG-UI protocol,
+
+1334
+01:15:18,203 --> 01:15:23,370
+这些模式可以在整个智能体生态系统中通用，而不仅限于 CopilotKit 内部。
+these patterns work across the entire agentic ecosystem, not just within CopilotKit.
+
+1335
+01:15:23,690 --> 01:15:27,404
+本课程探索了智能体前端技术栈的第一层，
+This course explored the first layer of the agentic front-end stack,
+
+1336
+01:15:27,404 --> 01:15:31,900
+但还有更多内容：从支撑所有丰富交互性的持久化层，
+but there's a lot more from the persistence layer of all of this rich interactivity
+
+1337
+01:15:31,900 --> 01:15:36,331
+到洞察层，它让你能了解用户
+to the insight layer that allows you to understand how your users are interacting
+
+1338
+01:15:36,331 --> 01:15:38,090
+在生产环境中如何与你的智能体交互。
+with your agents in production.
+
+1339
+01:15:38,290 --> 01:15:40,542
+再到自我改进层，
+All the way to the self-improvement layer,
+
+1340
+01:15:40,542 --> 01:15:43,437
+它允许你的智能体在多次交互中学习，
+that allows your agents to learn across interactions
+
+1341
+01:15:43,437 --> 01:15:47,490
+并随着时间推移自我提升，我们希望你能加入我们继续学习。
+and improve on their own over time; we hope you will join us to keep learning.
+
+1342
+01:15:47,730 --> 01:15:51,736
+你可以从查阅 CopilotKit 文档或加入开源
+You can start by exploring the CopilotKit docs or by joining the open-source
+
+1343
+01:15:51,736 --> 01:15:55,170
+社区开始。感谢你学习本课程，祝构建愉快！
+community. Thank you for taking this course and happy building.

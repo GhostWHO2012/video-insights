@@ -30,6 +30,14 @@ DeepLearning.AI 的这门课程《用生成式 UI 构建交互式智能体》，
 
 见 [timeline.md](timeline.md)。
 
+## 提纲图
+
+- ![提纲图 1](outlines/用生成式 UI 构建交互式智能体_01.png)
+- ![提纲图 2](outlines/用生成式 UI 构建交互式智能体_02.png)
+- ![提纲图 3](outlines/用生成式 UI 构建交互式智能体_03.png)
+- ![提纲图 4](outlines/用生成式 UI 构建交互式智能体_04.png)
+- ![提纲图 5](outlines/用生成式 UI 构建交互式智能体_05.png)
+
 ## 原始简介
 
 见 [bilibili.md](bilibili.md)。

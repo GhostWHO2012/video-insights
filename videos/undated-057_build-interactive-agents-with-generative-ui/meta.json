@@ -14,8 +14,14 @@
   "path": "videos/undated-057_build-interactive-agents-with-generative-ui/",
   "slug": "undated-057_build-interactive-agents-with-generative-ui",
   "cover": "cover.jpeg",
-  "outline_count": 0,
+  "outline_count": 5,
   "subtitle_count": 1,
-  "outline_files": [],
+  "outline_files": [
+    "用生成式 UI 构建交互式智能体_01.png",
+    "用生成式 UI 构建交互式智能体_02.png",
+    "用生成式 UI 构建交互式智能体_03.png",
+    "用生成式 UI 构建交互式智能体_04.png",
+    "用生成式 UI 构建交互式智能体_05.png"
+  ],
   "subtitle_file": "Build Interactive Agents with Generative UI.bilingual.zh-top.srt"
 }

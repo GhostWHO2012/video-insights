@@ -1,5 +1,138 @@
 [
   {
+    "title": "用 Astra、DiffUI 和 Codex 制作惊艳 3D 落地页",
+    "bilibili_title": "用 Astra、DiffUI 和 Codex 制作惊艳 3D 落地页｜Meng To",
+    "original_title": "I recorded a 41-minute tutorial on how I use Astra to create insane three.js websites in Codex",
+    "bilibili_url": "https://www.bilibili.com/video/BV1sJYN66EoY/",
+    "youtube_url": "https://x.com/MengTo/status/2101672390694674565",
+    "published_at": "2026-10-01",
+    "up": "通用人工智障",
+    "duration": "00:41:19",
+    "speakers": [
+      "Meng To"
+    ],
+    "folder_title": "用 Astra、DiffUI 和 Codex 制作惊艳 3D 落地页",
+    "path": "videos/undated-060_meng-to-astra-diffui-codex-threejs/",
+    "slug": "undated-060_meng-to-astra-diffui-codex-threejs",
+    "cover": "cover.jpeg",
+    "outline_count": 7,
+    "subtitle_count": 1,
+    "outline_files": [
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_01.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_02.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_03.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_04.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_05.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_06.png",
+      "用Astra、DiffUI和Codex 制作惊艳3D落地页_07.png"
+    ],
+    "subtitle_file": "Meng To - 41-minute tutorial Astra threejs Codex.deepseek-v4-pro无翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "AI 为什么总写出低质文本？如何找回你的真实文风",
+    "bilibili_title": "AI 为什么总写出低质文本？如何找回你的真实文风｜In-Ear Insights",
+    "original_title": "In-Ear Insights: Why Does AI Write Slop?",
+    "bilibili_url": "https://www.bilibili.com/video/BV1uahU6eEos/",
+    "youtube_url": "https://www.youtube.com/watch?v=ytMHF1CUQ5c",
+    "published_at": "2026-09-25",
+    "up": "通用人工智障",
+    "duration": "00:32:35",
+    "speakers": [
+      "Christopher S. Penn",
+      "Katie Robbert"
+    ],
+    "folder_title": "AI 为什么总写出低质文本？如何找回你的真实文风",
+    "path": "videos/undated-061_in-ear-insights-why-does-ai-write-slop/",
+    "slug": "undated-061_in-ear-insights-why-does-ai-write-slop",
+    "cover": "cover.jpeg",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "AI 为什么总写出低质文本？如何找回你的真实文风_01.png",
+      "AI 为什么总写出低质文本？如何找回你的真实文风_02.png",
+      "AI 为什么总写出低质文本？如何找回你的真实文风_03.png"
+    ],
+    "subtitle_file": "In-Ear Insights： Why Does AI Write Slop？.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "Opus 5 对写作者来说值得升级吗？",
+    "bilibili_title": "Opus 5 对写作者来说值得升级吗？｜Novelcrafter Live",
+    "original_title": "Is Opus 5 an upgrade for writers? - Novelcrafter Live",
+    "bilibili_url": "https://www.bilibili.com/video/BV1heht6kEW1/",
+    "youtube_url": "https://www.youtube.com/watch?v=es-EGrWfJeg",
+    "published_at": "2026-09-23",
+    "up": "通用人工智障",
+    "duration": "01:26:31",
+    "speakers": [
+      "Novelcrafter Live"
+    ],
+    "folder_title": "Opus 5 对写作者来说值得升级吗？",
+    "path": "videos/undated-062_opus-5-upgrade-for-writers-novelcrafter-live/",
+    "slug": "undated-062_opus-5-upgrade-for-writers-novelcrafter-live",
+    "cover": "cover.jpeg",
+    "outline_count": 5,
+    "subtitle_count": 1,
+    "outline_files": [
+      "Opus 5 对写作者来说值得升级吗？_01.png",
+      "Opus 5 对写作者来说值得升级吗？_02.png",
+      "Opus 5 对写作者来说值得升级吗？_03.png",
+      "Opus 5 对写作者来说值得升级吗？_04.png",
+      "Opus 5 对写作者来说值得升级吗？_05.png"
+    ],
+    "subtitle_file": "Is Opus 5 an upgrade for writers？ - Novelcrafter Live.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "7 个一眼暴露“AI 味”的写作错误，以及如何修正",
+    "bilibili_title": "7 个一眼暴露“AI 味”的写作错误，以及如何修正｜Jason",
+    "original_title": "7 Mistakes That Scream “AI TEXT” (and How to Fix It)",
+    "bilibili_url": "https://www.bilibili.com/video/BV1AYhJ63E95/",
+    "youtube_url": "https://www.youtube.com/watch?v=zclrdrwsD-M",
+    "published_at": "2026-09-22",
+    "up": "通用人工智障",
+    "duration": "00:10:39",
+    "speakers": [
+      "Jason"
+    ],
+    "folder_title": "7 个一眼暴露“AI 味”的写作错误，以及如何修正",
+    "path": "videos/undated-064_7-mistakes-ai-text/",
+    "slug": "undated-064_7-mistakes-ai-text",
+    "cover": "cover.jpeg",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "7 个一眼暴露“AI 味”的写作错误，以及如何修正_01.png",
+      "7 个一眼暴露“AI 味”的写作错误，以及如何修正_02.png",
+      "7 个一眼暴露“AI 味”的写作错误，以及如何修正_03.png"
+    ],
+    "subtitle_file": "7 Mistakes That Scream “AI TEXT” (and How to Fix It).deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
+    "title": "5 个立刻让 AI 文本更像人写的编辑方法",
+    "bilibili_title": "5 个立刻让 AI 文本更像人写的编辑方法｜Louis-François Bouchard",
+    "original_title": "5 Edits That Instantly Make AI Text Sound Human",
+    "bilibili_url": "https://www.bilibili.com/video/BV1sShE66EKR/",
+    "youtube_url": "https://www.youtube.com/watch?v=bMlvTbg1hVk",
+    "published_at": "2026-09-22",
+    "up": "通用人工智障",
+    "duration": "00:23:23",
+    "speakers": [
+      "Louis-François Bouchard"
+    ],
+    "folder_title": "5 个立刻让 AI 文本更像人写的编辑方法",
+    "path": "videos/undated-063_5-edits-ai-text-sound-human/",
+    "slug": "undated-063_5-edits-ai-text-sound-human",
+    "cover": "cover.jpeg",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "5个立刻让 AI 文本更像人写的编辑方法_01.png",
+      "5个立刻让 AI 文本更像人写的编辑方法_02.png",
+      "5个立刻让 AI 文本更像人写的编辑方法_03.png",
+      "5个立刻让 AI 文本更像人写的编辑方法_04.png"
+    ],
+    "subtitle_file": "5 Edits That Instantly Make AI Text Sound Human.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt"
+  },
+  {
     "title": "智能体记忆：构建具备记忆能力的 AI 智能体",
     "bilibili_title": "智能体记忆：构建具备记忆能力的 AI 智能体｜Richmond Alake、Nacho Martínez",
     "original_title": "Agent Memory: Building Memory-Aware Agents",

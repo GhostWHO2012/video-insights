@@ -1,0 +1,954 @@
+1
+00:00:00,250 --> 00:00:03,443
+大多数人担心自己的文字读起来像 AI 写的，
+Most people are afraid that their writing sounds like AI,
+
+2
+00:00:03,443 --> 00:00:06,770
+但他们其实并不知道这到底意味着什么，所以只能瞎猜。
+but they don't actually know what that means, so they guess.
+
+3
+00:00:07,010 --> 00:00:09,782
+他们随便改几个句子，加个脏字。
+They tweak random sentences. They throw in a swear word.
+
+4
+00:00:09,782 --> 00:00:12,730
+删掉几个副词，盼着这样就能神奇地修好。
+They cut a few adverbs and hope that that magically fixes it.
+
+5
+00:00:12,930 --> 00:00:14,770
+剧透警告：没用。
+And spoiler alert, it doesn't.
+
+6
+00:00:15,050 --> 00:00:20,170
+在 2026 年，AI 文本里有一些非常具体的模式会反复出现。
+In 2026, there are very specific patterns that show up in AI text over and over again.
+
+7
+00:00:20,450 --> 00:00:22,930
+而一旦你看见这些模式，就真的再也无法当作没看见了。
+And once you see them, you really can't unsee them.
+
+8
+00:00:23,090 --> 00:00:26,210
+好消息是，只要你知道该找什么，这些问题是能修掉的。
+The good news is if you know what to look for, they are fixable.
+
+9
+00:00:26,330 --> 00:00:30,262
+所以你可以保留 AI 的速度和力量，同时不让你的书读起来像那种
+So you can keep the speed and power of AI without your book reading like a tourist
+
+10
+00:00:30,262 --> 00:00:33,710
+念过研究生院的旅游手册。如果你是新来的，我叫 Jason。
+brochure that went to grad school. Now, if you're new here, my name is Jason.
+
+11
+00:00:33,870 --> 00:00:35,832
+我已经用传统方式写了 14 本书，
+I've written 14 books the traditional way,
+
+12
+00:00:35,832 --> 00:00:39,429
+又花了三年在 Kindlepreneur 教作者如何写作和出版，
+spent three years teaching authors at Kindlepreneur how to write and publish,
+
+13
+00:00:39,429 --> 00:00:42,458
+现在我帮助写作者使用 AI，同时不丢掉自己的文风。
+and now I help writers use AI without losing their voice.
+
+14
+00:00:42,458 --> 00:00:45,230
+我读过大量 AI 生成和 AI 辅助写作的文本。
+I read a lot of AI-generated and AI-assisted writing.
+
+15
+00:00:45,390 --> 00:00:48,942
+在这个视频里，我想带你逐一拆解 7 个具体的错误
+And in this video, I want to walk you through 7 specific mistakes
+
+16
+00:00:48,942 --> 00:00:50,350
+这些错误会直接暴露出一件事：
+that absolutely scream.
+
+17
+00:00:50,870 --> 00:00:53,630
+这是 AI 写的；更重要的是，每个错误该怎么修。
+AI wrote this and more importantly, how to fix each one.
+
+18
+00:00:53,710 --> 00:00:56,436
+我不会只丢下一句“写具体一点”就走人
+And I'm not going to just say be more specific and move on
+
+19
+00:00:56,436 --> 00:01:00,229
+因为我们要聊的是底层到底出了什么问题
+because we're going to talk about what's actually going wrong under the hood
+
+20
+00:01:00,229 --> 00:01:03,594
+以及你该怎么做。我们先从最大的那个开始。
+and what you should do instead. Let's start with the big one.
+
+21
+00:01:03,594 --> 00:01:06,488
+第一个错误是过度依赖比喻，
+The first mistake is an overreliance on metaphors,
+
+22
+00:01:06,488 --> 00:01:08,311
+尤其是那种
+especially the kind of metaphors
+
+23
+00:01:08,311 --> 00:01:11,890
+把强烈情感黏到模糊的无生命物体或概念上的比喻。
+that glue big feelings onto vague inanimate objects or concepts.
+
+24
+00:01:12,330 --> 00:01:16,864
+AI 很爱这种东西。你会看到城市在创新中呼吸，或者社区
+AI loves this stuff. You'll see cities breathing with innovation or communities
+
+25
+00:01:16,864 --> 00:01:19,331
+成为韧性与希望的织锦，
+that are tapestries of resilience and hope,
+
+26
+00:01:19,331 --> 00:01:22,068
+市场里充满机会带来的焦虑低鸣。
+marketplaces with anxious hums of opportunity.
+
+27
+00:01:22,068 --> 00:01:26,274
+每一句单独看也许有点诗意，但堆在一起，
+And each line by itself might sound kind of poetic, but stacked together,
+
+28
+00:01:26,274 --> 00:01:29,277
+它就不再像是一个人在挑选具体的比喻
+it stops feeling like a human picking specific comparisons
+
+29
+00:01:29,277 --> 00:01:32,040
+而像是一台卡在诗意模式里的机器。
+and starts feeling like a machine stuck in poetry mode.
+
+30
+00:01:32,200 --> 00:01:34,305
+真正的写作者把比喻当作调味料，
+Real writers use metaphors like seasoning
+
+31
+00:01:34,305 --> 00:01:36,760
+不会把半瓶盐倒在食物上。
+so you don't pour half a bottle of salt on your food.
+
+32
+00:01:36,880 --> 00:01:39,589
+你只是这里捏一点、那里撒一点，并且选择那些
+You put a pinch here and there and you choose metaphors
+
+33
+00:01:39,589 --> 00:01:43,051
+符合角色观点和具体情境的比喻。
+that fit the character's point of view and the concrete situation.
+
+34
+00:01:43,051 --> 00:01:44,720
+所以这里的修法很简单。
+So the fix here is pretty simple.
+
+35
+00:01:45,040 --> 00:01:47,032
+删掉大部分比喻。如果你看到一页里
+You cut most of them. If you look at a page
+
+36
+00:01:47,032 --> 00:01:49,809
+每隔一句就是关于
+and every second sentence is some grand image about the
+
+37
+00:01:49,809 --> 00:01:51,858
+某样东西“心跳”的宏大意象，那就删减。
+heartbeat of something, you trim that,
+
+38
+00:01:51,858 --> 00:01:56,017
+只保留那一两个真正能揭示出具体内容的比喻，
+keep the one or two metaphors that actually reveal something specific about the
+
+39
+00:01:56,017 --> 00:01:58,244
+关于场景或角色的，其余全部删掉。
+scene or character and then kill the rest.
+
+40
+00:01:58,244 --> 00:02:01,870
+第二个错误是像学校作文一样过度解释含义。
+The second mistake is over-explaining meaning, like a school essay.
+
+41
+00:02:02,230 --> 00:02:06,542
+AI 不喜欢相信你能自己领会，所以它会先给你一个不错的具体瞬间，
+AI hates trusting you to get it, so it will give you a nice concrete moment
+
+42
+00:02:06,542 --> 00:02:10,638
+然后立刻补上一句含糊的分析性句子，解释
+and then immediately tack on a vague analytical sentence about what
+
+43
+00:02:10,638 --> 00:02:14,590
+这个瞬间如何体现身份、记忆或人类处境。
+that moment says about identity or memory or the human condition.
+
+44
+00:02:14,790 --> 00:02:17,492
+或者它会用“总的来说”或“最终”来结束一个场景，
+Or it will close a scene with overall or ultimately
+
+45
+00:02:17,492 --> 00:02:21,030
+然后把你刚读到的所有内容的意义总结一遍。
+and then summarize the significance of everything you just read.
+
+46
+00:02:21,190 --> 00:02:23,323
+这跟学生写作时担心
+That's exactly how students write when they're worried
+
+47
+00:02:23,323 --> 00:02:24,820
+老师没抓到重点时一模一样。
+that the teacher won't get their point.
+
+48
+00:02:24,940 --> 00:02:28,620
+而在创意写作里，这只会让你的故事读起来像一篇关于它自己的读书报告。
+And in creative writing, it just makes your story feel like a book report about itself.
+
+49
+00:02:29,020 --> 00:02:35,260
+修法是用动作、画面或对白结束场景，而不是用评论。
+The fix is to end scenes on action or images or lines of dialogue, not on commentary.
+
+50
+00:02:35,580 --> 00:02:39,619
+如果你发现自己不断拉远镜头，去谈这个在
+If you find yourself constantly zooming out to talk about what this represents in
+
+51
+00:02:39,619 --> 00:02:43,540
+抽象层面代表什么，那就把评论删掉，看场景是否依然成立。
+abstract terms, you strip that commentary out and see if the scene still works.
+
+52
+00:02:43,980 --> 00:02:47,300
+90% 的情况下它依然成立。所以让读者自己去做一部分联想。
+90% of the time, it does. So let the reader do some of the connecting.
+
+53
+00:02:47,500 --> 00:02:50,610
+这才让它像艺术，而不是像作业。
+That's what makes it feel like art and not like homework.
+
+54
+00:02:50,730 --> 00:02:55,451
+第三个错误是那种旅行指南式的吹嘘和宣传册语言。
+The third mistake is this kind of travel-guide puffery and brochure language.
+
+55
+00:02:55,451 --> 00:02:58,598
+这就是 AI 把每个地点都变成
+This is where AI turns every location into something
+
+56
+00:02:58,598 --> 00:03:00,410
+一个听起来像旅游网站的东西。
+that sounds like a tourism website.
+
+57
+00:03:00,410 --> 00:03:03,129
+所以小镇总是坐落在某个地方的中心地带，
+So towns are always nestled in the heart of something,
+
+58
+00:03:03,129 --> 00:03:06,230
+街道总是文化与活动的繁华枢纽。
+and streets are bustling hubs of culture and activity.
+
+59
+00:03:06,230 --> 00:03:10,680
+咖啡馆可能会让游客一窥社区生活的丰富织锦。
+Cafes might offer visitors a glimpse into the rich tapestry of community life.
+
+60
+00:03:10,880 --> 00:03:13,732
+没有地方只是那种闻起来像洒了啤酒的拥挤小酒吧。
+Nothing is just a cramped bar that smells like spilled beer.
+
+61
+00:03:13,732 --> 00:03:17,440
+每样东西都在展示些什么，又成为另一样东西的证明。
+Everything showcases something and stands as a testament to something else.
+
+62
+00:03:17,760 --> 00:03:21,422
+在小说或回忆录里，这会彻底破坏代入感，因为真实的叙述者
+In fiction or memoir, this completely breaks immersion because real narrators
+
+63
+00:03:21,422 --> 00:03:24,920
+和真实角色不会像广告文案那样去描述自己的街区。
+and real characters do not think about their own neighborhoods like ad copy.
+
+64
+00:03:25,040 --> 00:03:28,622
+改法是问自己：如果这个角色在向一个
+The fix is to ask yourself, if this character were complaining about this place to a
+
+65
+00:03:28,622 --> 00:03:30,460
+朋友抱怨这个地方，他们会怎么描述？
+friend, how would they describe it?
+
+66
+00:03:30,460 --> 00:03:33,583
+这会剥掉宣传册式的语气，让你回到简单、
+That strips away the brochure tone and you go back to a simple,
+
+67
+00:03:33,583 --> 00:03:36,749
+落地的细节，比如闪烁的招牌、那张桌子、
+grounded details such as the flickering sign, the table,
+
+68
+00:03:36,749 --> 00:03:39,980
+还有那个总是早上 9 点就坐在那里喝金汤力的人。
+the one guy who's always there at 9:00am with gin and tonic.
+
+69
+00:03:40,060 --> 00:03:43,836
+如果你的段落可以直接贴进旅游博客也毫无违和，
+And if your paragraph could be pasted into a travel blog and still work,
+
+70
+00:03:43,836 --> 00:03:48,018
+那它很可能太有 AI 味了。第四个错误是“同义词轮盘赌”，
+it's probably too AI adjacent. The fourth mistake is synonym roulette,
+
+71
+00:03:48,018 --> 00:03:49,900
+也叫“雅致换词”。
+also called elegant variation.
+
+72
+00:03:50,220 --> 00:03:53,125
+人类会重复自己。我们会抓住某些词不放。
+Humans repeat themselves. We latch on to certain words.
+
+73
+00:03:53,125 --> 00:03:54,980
+一个角色把他的镇子叫“镇子”。
+A character calls their town a town.
+
+74
+00:03:55,140 --> 00:03:57,459
+他们不会这一段叫它“定居点”，
+They don't call it the settlement in one paragraph
+
+75
+00:03:57,459 --> 00:04:00,716
+下一段叫“社区”，再下一段叫“城市中心”，
+and then the community in the next and then the urban center after that,
+
+76
+00:04:00,716 --> 00:04:03,222
+只为了避免重复。而 AI 恰恰相反，
+just to avoid repetition. AI, on the other hand,
+
+77
+00:04:03,222 --> 00:04:05,290
+特别执着于换词。
+is obsessed with mixing up vocabulary.
+
+78
+00:04:05,490 --> 00:04:08,930
+所以你会看到同一个事物被连续改名三四次。
+So you'll see the same object renamed three or four times in a row.
+
+79
+00:04:09,210 --> 00:04:12,970
+表面上很聪明，但实际会破坏作者的文风。
+It feels clever on the surface, but what it actually does is destroy voice.
+
+80
+00:04:13,370 --> 00:04:16,296
+读者不再觉得是某个具体的人在跟自己说话，
+The reader stops feeling like a specific person is talking to them
+
+81
+00:04:16,296 --> 00:04:18,370
+而会觉得像是一本同义词词典爆炸了。
+and starts feeling like a thesaurus exploded.
+
+82
+00:04:18,610 --> 00:04:22,362
+改法是允许自己重复那个最诚实的词。
+The fix is to give yourself permission to repeat the honest word.
+
+83
+00:04:22,362 --> 00:04:24,724
+如果你的 POV 角色是个 12 岁的孩子，
+If your POV character is a 12-year-old kid,
+
+84
+00:04:24,724 --> 00:04:29,200
+他们不会为了换花样而把学校叫成“教育机构”。
+they are not going to call their school an educational institution just to spice it up.
+
+85
+00:04:29,560 --> 00:04:32,200
+你选出贴合文风的那个词，然后一直用它。
+You pick the word that fits the voice and you keep that.
+
+86
+00:04:32,600 --> 00:04:35,760
+语言一致性是人类叙述者最大的标志之一。
+Consistency of language is one of the biggest markers of a human narrator.
+
+87
+00:04:36,000 --> 00:04:37,465
+顺便说一句，如果你能坚持看到这里，
+By the way, if you've made it this far,
+
+88
+00:04:37,465 --> 00:04:39,640
+你可能会很适合 Story Hacker 会员。
+you might be a good fit for the Story Hacker membership.
+
+89
+00:04:40,000 --> 00:04:43,920
+我会把链接放在下方，感兴趣可以了解更多。
+I'll have a link down below so you can learn more about that if you are interested.
+
+90
+00:04:44,240 --> 00:04:48,800
+第五个错误是用假高级词回避简单的 is 和 are。
+So the 5th mistake is dodging simple 'is' and 'are' with fake fancy words.
+
+91
+00:04:49,080 --> 00:04:53,360
+AI 对直接说“咖啡馆很小”或“市场很吵”有一种奇怪的害羞。
+AI has this weird shyness about just saying the cafe is small or the market is loud.
+
+92
+00:04:53,680 --> 00:04:58,588
+相反，所有东西都在“充当”“成为”“标榜”“提供”“代表”。
+Instead, everything serves as or stands as or boasts or features, offers, represents.
+
+93
+00:04:58,588 --> 00:05:00,770
+房子不只是坐落在山上。
+The house doesn't just sit on the hill.
+
+94
+00:05:00,850 --> 00:05:04,970
+它“是坚韧的灯塔”。河流也不只是穿过小镇。
+It stands as a beacon of resilience. And the river doesn't just run through the town.
+
+95
+00:05:05,370 --> 00:05:07,530
+它“为日常生活提供了宁静的背景”。
+It offers a serene backdrop to daily life.
+
+96
+00:05:07,850 --> 00:05:11,282
+偶尔一两次没问题，但当每个名词都必须“充当”什么时，
+One or two of those is fine, but when every noun has to serve as something,
+
+97
+00:05:11,282 --> 00:05:13,713
+你的文章就开始像新闻稿了。
+Your prose starts to sound like a press release.
+
+98
+00:05:13,713 --> 00:05:16,995
+改法其实就是回到你的句子，问自己：
+The fix is actually just going back to your sentences and asking,
+
+99
+00:05:16,995 --> 00:05:20,683
+我能不能把这个动词换成简单的 is，而不丢失任何重要信息，
+could I swap this verb for a simple is without losing anything important,
+
+100
+00:05:20,683 --> 00:05:24,250
+这很有意思，因为过去给作者的建议正好相反。
+which is funny because that used to be the opposite advice for authors.
+
+101
+00:05:24,410 --> 00:05:28,630
+但现在因为 AI 往往做得太过，我们反而需要把它收回来。
+But now because AI tends to overdo it, we now actually need to rein it back in.
+
+102
+00:05:28,830 --> 00:05:32,408
+如果答案是能，就去试。你会惊讶地发现文字变得
+If the answer is yes, try it. You'll be shocked at how much more grounded
+
+103
+00:05:32,408 --> 00:05:33,864
+更扎实、更像人写的。
+and human your writing feels
+
+104
+00:05:33,864 --> 00:05:35,907
+只要你让简单的动词做它们该做的事，
+when you simply let simple verbs do their job
+
+105
+00:05:35,907 --> 00:05:39,110
+把花哨的动词留给真正需要提升的时刻。
+and reserve the fancy ones for moments that actually need elevation.
+
+106
+00:05:39,350 --> 00:05:42,750
+第六个错误是“不只是 X，而是 Y”句式。
+The sixth mistake is the 'not just X, but Y.'
+
+107
+00:05:43,270 --> 00:05:46,990
+也就是文本不停用排比结构来显得深刻。
+This is where the text keeps leaning on parallel structures to sound deep.
+
+108
+00:05:46,990 --> 00:05:48,670
+比如某样东西不只是一面镜子。
+So something isn't just a mirror.
+
+109
+00:05:48,870 --> 00:05:51,830
+它不是镜子，而是传送门。一个角色不只是在累。
+It's not a mirror, but a portal. A character isn't just tired.
+
+110
+00:05:52,030 --> 00:05:53,687
+他们不只是累，而是被折磨。
+They're not just tired but haunted.
+
+111
+00:05:53,687 --> 00:05:56,670
+这个句式本身没有错，因为人类也会用。
+This construction itself isn't evil because humans use it, too.
+
+112
+00:05:57,070 --> 00:06:00,346
+问题在于，每当 AI 想显得深刻时就依赖它，
+The problem is when AI leans on it every time it wants to sound insightful,
+
+113
+00:06:00,346 --> 00:06:04,111
+它就像一根修辞拐杖。如果我说它不只是这个，还是那个，
+it's like a rhetorical crutch. If I say it's not just this, it's also that,
+
+114
+00:06:04,111 --> 00:06:05,160
+那它一定很深刻。
+it must be profound.
+
+115
+00:06:05,440 --> 00:06:07,498
+读者很快就会识破这种模式，
+Readers pick up on that pattern pretty fast,
+
+116
+00:06:07,498 --> 00:06:11,280
+并开始觉得文本在费力地制造意义，而不是真正赢得意义。
+and it starts to feel like the text is straining for meaning instead of earning it.
+
+117
+00:06:11,560 --> 00:06:13,630
+改法是把这个句式留给极少数、
+The fix is to save that structure for rare,
+
+118
+00:06:13,630 --> 00:06:17,120
+真正重要的时刻，其他时候就直接说那个东西是什么。
+genuinely important moments and otherwise just say what the thing is.
+
+119
+00:06:17,280 --> 00:06:19,860
+你不必用巧妙的句法来表演深度。
+You don't have to perform depth with clever syntax.
+
+120
+00:06:19,860 --> 00:06:22,920
+你可以通过场景中实际发生的事来展现深度。
+You can just show depth by what actually happens in the scene.
+
+121
+00:06:23,120 --> 00:06:26,617
+第七个错误是机械化的“三段式排比”。
+The seventh mistake is mechanical rule-of-three patterning.
+
+122
+00:06:26,617 --> 00:06:28,400
+人类确实喜欢三件一组的列举。
+Humans do like lists of threes.
+
+123
+00:06:28,600 --> 00:06:31,807
+这是一种自然节奏。但 AI 会把它拉满到极致，
+It's a natural rhythm. But AI takes that and cranks it up to 11,
+
+124
+00:06:31,807 --> 00:06:36,345
+于是整页里几乎每段描写都是“冰冷、安静、无情”，
+so you get pages where almost every description is cold, quiet and unforgiving,
+
+125
+00:06:36,345 --> 00:06:41,136
+或者“希望、记忆与韧性”，或者“经济上、社会上、文化上”。一开始，
+or hope, memory and resilience, or economically, socially and culturally. At first,
+
+126
+00:06:41,136 --> 00:06:42,400
+听起来还不错。
+it sounds kind of nice.
+
+127
+00:06:42,720 --> 00:06:45,489
+接着你的耳朵就会开始注意到那种三段式排比的鼓点。
+Then your ear starts to notice that three-part pattern drumbeat.
+
+128
+00:06:45,489 --> 00:06:48,480
+它不再像个人文风，而开始像模板。
+It stops feeling like a voice and starts feeling like a template.
+
+129
+00:06:48,480 --> 00:06:52,600
+改法是有意识地变化节奏。有些句子可以短促而直接。
+And the fix is to vary your rhythm on purpose. Some sentences can be short and blunt.
+
+130
+00:06:52,930 --> 00:06:56,570
+有些可以拉长。有些列两件事。有些列四件，有些一件不列。
+Some can stretch. Some can have two things. Some can have four, some none.
+
+131
+00:06:56,770 --> 00:07:00,115
+如果你大声读一页，注意到自己陷入那种像儿歌一样
+And if you read a page aloud and you notice yourself falling into the sing-song
+
+132
+00:07:00,115 --> 00:07:02,924
+三段式列举的节奏。那就回头打破其中几处。
+pattern of three-part lists. Go back and break a few of them.
+
+133
+00:07:02,924 --> 00:07:04,930
+你的文字会立刻更有生气。
+Your prose will instantly feel more alive.
+
+134
+00:07:05,210 --> 00:07:08,054
+我知道，起草时要同时记住这些很累
+Now, I know this is a lot to keep in your head while you're drafting
+
+135
+00:07:08,054 --> 00:07:11,108
+你也不想写场景写到一半坐在那儿想，
+and you don't want to just sit there in the middle of a scene wondering,
+
+136
+00:07:11,108 --> 00:07:12,530
+这一页我是不是已经试过三次了？
+is this my third try on this page?
+
+137
+00:07:12,690 --> 00:07:16,072
+所以稍后我会演示如何设置一个自定义 Claude 技能。
+So in a minute, I'm going to show you how you can set up a custom Claude skill
+
+138
+00:07:16,072 --> 00:07:19,736
+专门用来捕捉你写作中的一两个这种模式。
+designed specifically to hunt for one or two of these patterns in your writing
+
+139
+00:07:19,736 --> 00:07:22,386
+并帮你标出来，这样你可以继续留在创作模式。
+and flag them for you so that you can stay in creative mode
+
+140
+00:07:22,386 --> 00:07:25,430
+把清理留给工具之后处理。好，这里我准备了一个。
+and let the tool help you with cleanup later. Okay, so I have here.
+
+141
+00:07:25,830 --> 00:07:29,990
+一份普通的维基百科页面，但很有 AI 味，对吧？
+Just a generic Wikipedia page that shows signs of AI, right?
+
+142
+00:07:30,300 --> 00:07:33,307
+我们要用它来帮我们创建一个 Claude 技能。
+And we're gonna use this to help us create a Claude skill
+
+143
+00:07:33,307 --> 00:07:36,380
+用来帮你把这些问题从写作中过滤掉。
+that can help to filter these issues out of your writing.
+
+144
+00:07:36,540 --> 00:07:41,980
+在 Claude 里，你到这边侧栏，在这里会看到 Customize。
+So in Claude, if you go on the side here, over here on the side, it'll say Customize.
+
+145
+00:07:42,340 --> 00:07:45,820
+选中它，然后找到 Add、Create with Claude。
+You want to select that and then go to Add, Create with Claude.
+
+146
+00:07:46,100 --> 00:07:50,660
+好，这基本上会打开 Claude 技能创建器。
+Alright, and what this will do is it'll essentially bring up the Claude skill creator.
+
+147
+00:07:50,860 --> 00:07:54,108
+我们要输入类似这样的内容。
+We're gonna put something like this.
+
+148
+00:07:54,108 --> 00:07:59,766
+我想让你把下面这些常见的 AI 破绽拿去创建一个技能。
+I want you to take the following common AI tells and create a skill
+
+149
+00:07:59,766 --> 00:08:08,320
+用来识别、移除和替换给定文本中的这些问题。
+that is designed to identify, remove and replace those issues in a given text.
+
+150
+00:08:08,600 --> 00:08:13,162
+然后你要做的就是，我们回到那个维基百科页面，我要——
+And then all you have to do, we're gonna go to that Wikipedia page and I'm going to,
+
+151
+00:08:13,162 --> 00:08:17,280
+先选一个。这里是我会特别小心的部分。
+let's just pick one. And here's what I would be very careful to do.
+
+152
+00:08:17,360 --> 00:08:20,472
+不要试图创建一个做太多事情的技能。
+Don't try to create a skill that does too many things
+
+153
+00:08:20,472 --> 00:08:24,960
+因为当你让 AI 只专注一两个任务时，效果总是更好。
+because AI always works better when you really focus it on one or two tasks.
+
+154
+00:08:25,200 --> 00:08:27,920
+我们选这个“像广告宣传一样的语言”。
+We're gonna go with this promotional and advertising-like language.
+
+155
+00:08:28,280 --> 00:08:31,903
+我先把这里所有内容复制下来，
+So I'm just gonna copy everything that we have here, copy that,
+
+156
+00:08:31,903 --> 00:08:36,640
+然后进入 Claude 技能创建器，粘贴进去，让它跑。
+and we're gonna go into this Claude skill creator, paste that in and just let it go.
+
+157
+00:08:36,720 --> 00:08:40,438
+好，现在它已经创建好了技能，我们可以继续。
+Okay, so now it has actually finished our skill and we can just go ahead
+
+158
+00:08:40,438 --> 00:08:44,563
+点击这里的 Save skill。现在如果我回到聊天窗口，
+and hit save skill here. And now if I just go back to the chatbot,
+
+159
+00:08:44,563 --> 00:08:49,244
+我可以输入斜杠，然后选择“AI 破绽清理技能”。
+I can do a forward slash and then select that AI tells scrubber skill
+
+160
+00:08:49,244 --> 00:08:53,840
+告诉它：我想让你清除这段文本里的 AI 破绽。
+that it just made and say, I want you to scrub this text of AI tells.
+
+161
+00:08:54,360 --> 00:08:57,708
+我们抓一点维基百科给我们的示例文本。
+Let's just grab some of the example prose that Wikipedia gives us here,
+
+162
+00:08:57,708 --> 00:09:01,200
+这些没有包含在技能里。你只是用它来创建技能。
+which are not included in the skill. You just use this to make the skill.
+
+163
+00:09:01,320 --> 00:09:04,920
+但如果我们这样做，直接点执行就行。
+But if we go and do this, we'll just go ahead and hit go on that.
+
+164
+00:09:05,280 --> 00:09:09,400
+现在 AI 已经通读并识别出了所有问题。
+So now the AI has gone through and actually identified all of the issues.
+
+165
+00:09:09,680 --> 00:09:16,400
+所以我会说：现在重写它，不要包含这些问题。
+So I'm going to say now rewrite it to not include those issues.
+
+166
+00:09:16,880 --> 00:09:21,440
+好，开始跑。现在我们得到了一个精简得多的版本。
+And there it goes. Now we have a much more trimmed-down version of that text.
+
+167
+00:09:21,640 --> 00:09:25,674
+总结一下，请记住，目标不是消除
+So to wrap this up, I want you to remember the goal is not to eliminate every single
+
+168
+00:09:25,674 --> 00:09:29,769
+AI 文本里出现过的每一种模式。人类也会用比喻。
+pattern that ever appeared in AI text. Humans use metaphors.
+
+169
+00:09:29,769 --> 00:09:32,740
+人类有时也会用“不是 X，而是 Y”的句式。
+Humans sometimes say the "not X but Y" formula.
+
+170
+00:09:32,860 --> 00:09:35,254
+人类偶尔也会写得像旅行指南。
+And humans occasionally write like travel guides.
+
+171
+00:09:35,254 --> 00:09:38,317
+目标是避免这些破绽密集出现并叠加在一起，
+The goal is to avoid the density and the combination of these tells
+
+172
+00:09:38,317 --> 00:09:40,800
+让你的作品闻起来像机器生成的。
+that make your work smell machine-generated.
+
+173
+00:09:40,800 --> 00:09:44,460
+你仍然可以把 AI 当作起草助手或灵感伙伴。
+You still get to use AI as a drafting assistant or as an idea partner.
+
+174
+00:09:44,580 --> 00:09:49,220
+你只是不能让它把你的文风拖向整个互联网的统计平均值。
+You just don't get to let it drag your voice toward the statistical average of the whole internet.
+
+175
+00:09:49,540 --> 00:09:51,250
+如果你想再深入一点，
+If you want to go a little bit deeper
+
+176
+00:09:51,250 --> 00:09:54,729
+看看我如何把这一切整合成一套端到端的完整写作流程，
+and see how I wire all of this into a complete end-to-end writing process,
+
+177
+00:09:54,729 --> 00:09:58,620
+从头脑风暴、大纲、AI 起草，到编辑和发布。
+from brainstorming to outlining to drafting with AI to editing to publishing.
+
+178
+00:09:58,940 --> 00:10:02,780
+我在 YouTube 上有一个完整课程视频，带你走完我的整个系统。
+I've got a full course video here on YouTube that walks you through my entire system.
+
+179
+00:10:03,100 --> 00:10:06,671
+在那个视频里，我展示如何在每个阶段让人类保持主导，
+In that video, I show you how I keep the human in charge at every stage so
+
+180
+00:10:06,671 --> 00:10:10,980
+这样书听起来像你，而不是一个想讨好英语老师的模型。
+that the book sounds like you and not a model trying to impress your English teacher.
+
+181
+00:10:11,140 --> 00:10:12,762
+所以如果你觉得这些内容有用，
+So if you're thinking this is helpful,
+
+182
+00:10:12,762 --> 00:10:14,688
+但怎么把它们整合成一套工作流，
+but how do I put it all together into a workflow
+
+183
+00:10:14,688 --> 00:10:17,247
+真正帮我从空白页走到成书？
+that actually gets me from blank page to finished book?
+
+184
+00:10:17,247 --> 00:10:18,860
+那门完整课程就是你的下一步。
+That full course is your next step.
+
+185
+00:10:19,060 --> 00:10:22,020
+点开那个视频，看一看，做点笔记。
+Click over to that next, give it a watch and take notes.
+
+186
+00:10:22,100 --> 00:10:24,900
+然后在你当前的草稿里挑一个具体改动来做。
+And then pick one concrete change to make in your current draft.
+
+187
+00:10:25,050 --> 00:10:28,478
+因为在这个新的 AI 世界里，能赢的写作者不是那些假装它
+Because the writers who win in this new AI world are not the ones pretending it
+
+188
+00:10:28,478 --> 00:10:31,367
+不存在的人，也不是把方向盘交给它的人。
+doesn't exist, and they're not the ones handing it the wheel.
+
+189
+00:10:31,367 --> 00:10:33,293
+而是那些学习这些模式、
+They're the ones who learn the patterns,
+
+190
+00:10:33,293 --> 00:10:36,845
+使用这些工具，但仍然对每一行署名文字负责的人。
+use the tools and still take responsibility for every line with their name on it.
+
+191
+00:10:36,845 --> 00:10:38,330
+我们下个视频见。
+And I'll see you in the next video.

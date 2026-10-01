@@ -1,0 +1,2549 @@
+1
+00:00:00,300 --> 00:00:06,074
+在本周的 In-Ear Insights（Trust Insights 播客）里，我们来聊聊 AI 写作和面向写作者的 AI，呃，
+In this week's In-Ear Insights, let's talk about AI for writing and for writers, uh,
+
+2
+00:00:06,074 --> 00:00:11,763
+我们已经看到不少人在讨论，你知道，AI 水印还有，
+we have seen no shortage of people talking about, you know, AI watermarking and,
+
+3
+00:00:11,763 --> 00:00:14,820
+还有所有这些东西，以及如何，你知道。
+and all this stuff and how, you know.
+
+4
+00:00:14,820 --> 00:00:17,420
+如何判断别人是否在用 AI 写作。
+How you can tell whether somebody's using AI for writing or not.
+
+5
+00:00:17,500 --> 00:00:21,184
+我们 Trust Insights（营销分析与 AI 咨询公司）已经准备了一门新课程，呃，
+And we at Trust Insights have put together a new course, uh,
+
+6
+00:00:21,184 --> 00:00:25,620
+Trust Insights 的 AI for Writers（面向写作者的 AI 课程），教你如何让 AI 写得更好。
+Trust Insights AI / AI for Writers, for how to get AI to write better.
+
+7
+00:00:26,160 --> 00:00:31,320
+呃，而且并非巧合，呃，也能帮助你作为一个写作者写得更好。
+Uh, and not coincidentally, uh, help you as a human also become a better writer.
+
+8
+00:00:31,600 --> 00:00:35,474
+那么，Katie（Katie Robbert），先来说说，有哪些事情
+So, Katie, to start off, what are the things that
+
+9
+00:00:35,474 --> 00:00:39,251
+当你在 AI 的辅助下写作时，
+when you are writing with the assistance of AI,
+
+10
+00:00:39,251 --> 00:00:44,480
+你希望 AI 在哪些方面做得更好？嗯。
+what are the things that sort of you wish AI would do better at? Um.
+
+11
+00:00:49,100 --> 00:00:51,700
+你知道，我希望它能更听得懂我的要求。
+You know, I wish it would listen better.
+
+12
+00:00:52,140 --> 00:00:59,620
+我的意思是，我觉得你可以写出非常强的提示词。
+And by that I mean I feel like you can craft a really strong prompt.
+
+13
+00:00:59,740 --> 00:01:01,460
+你可以说，这些是我的写作样本。
+You can say, here are my writing samples.
+
+14
+00:01:02,260 --> 00:01:04,140
+这些是我不想让你做的事。
+Here are things that I don't want you to do.
+
+15
+00:01:04,860 --> 00:01:08,460
+但它基本还是自己随意发挥，做它自己的事。
+And it kind of just freewheels and does its own thing anyway.
+
+16
+00:01:09,550 --> 00:01:13,030
+我觉得这让很多人很挫败。
+And I feel like that is frustrating for a lot of people.
+
+17
+00:01:13,110 --> 00:01:20,150
+所以，你知道，我真的很努力自己先写初稿。
+So, you know, I really try to write the first draft of things myself as the human.
+
+18
+00:01:20,230 --> 00:01:24,570
+然后，你知道，我在 newsletter 和播客里也聊过这个，
+And then, you know, and I've talked about this in the newsletter and on pod,
+
+19
+00:01:24,570 --> 00:01:28,630
+在我们的播客里，我引入 AI 来和我们的 ICP 做核对。
+on our podcast where I bring in AI is to double-check with like our ICPs.
+
+20
+00:01:29,510 --> 00:01:38,193
+或者把它当作编辑工具。但之后的编辑，你知道，
+Or to use it as an editing tool. But then the editing, you know,
+
+21
+00:01:38,193 --> 00:01:42,790
+我不是编辑，语法也……
+I'm not an editor and grammar is.
+
+22
+00:01:43,550 --> 00:01:47,567
+我想说，公立学校系统没教好我，你知道，
+I would like to say that the public school system failed me, you know,
+
+23
+00:01:47,567 --> 00:01:49,470
+所以我算是个还不错的写作者。
+so I'm like a half decent writer.
+
+24
+00:01:49,550 --> 00:01:53,760
+我有好想法，而且我写作是意识流式的。
+I have good ideas and I write in a stream of consciousness.
+
+25
+00:01:53,800 --> 00:01:57,120
+所以我需要工具或人类编辑帮我清理内容。
+And so I need tools or human editors to help me clean things up.
+
+26
+00:01:57,120 --> 00:01:59,658
+这就是我看向生成式 AI 的原因
+And this is where I look to generative AI
+
+27
+00:01:59,658 --> 00:02:04,120
+因为团队并不总有时间完整编辑我的内容。
+because the team doesn't always have time to like fully edit my stuff.
+
+28
+00:02:04,960 --> 00:02:09,523
+但当我回头看编辑结果或建议的编辑时，
+But then when I read back what the edits are or what the suggested edits are,
+
+29
+00:02:09,523 --> 00:02:13,865
+我会想，这是从哪来的，你为什么会编出一整个轶事
+I'm like, where did this come from or why did you make up a whole anecdote
+
+30
+00:02:13,865 --> 00:02:15,190
+而且这件事从没发生过？
+that never happened?
+
+31
+00:02:15,870 --> 00:02:18,939
+但你却说得煞有介事，
+But you're saying it authoritatively,
+
+32
+00:02:18,939 --> 00:02:24,427
+所以我觉得幻觉是个大问题，而且，你知道，
+so I feel like the hallucination is the big thing and, you know,
+
+33
+00:02:24,427 --> 00:02:27,497
+取决于大语言模型，
+depending on the large language model,
+
+34
+00:02:27,497 --> 00:02:33,357
+每个模型在写作方式或它
+each model has its quirks in terms of the way that it writes or the way that it,
+
+35
+00:02:33,357 --> 00:02:35,310
+你知道，所谓
+you know, quote unquote.
+
+36
+00:02:36,080 --> 00:02:40,161
+呃，思考方式上都有自己的怪癖。所以我觉得你分享过的关于 Claude（Anthropic 的 AI 助手/模型）的一点是，
+Uh, thinks. And so I think one of the things that you've shared about Claude,
+
+37
+00:02:40,161 --> 00:02:44,560
+比如，它喜欢，你知道，用“三”这个结构，比如三个有力的要点。
+for example, is that it likes its, you know, things in threes, like three punchy points.
+
+38
+00:02:45,320 --> 00:02:48,240
+这很明显就是它的特征，像在说，哦，这是 Claude 的典型风格。
+And it's very much a tell that like, oh, that's a Claude thing.
+
+39
+00:02:48,840 --> 00:02:53,839
+我发现当我让一个 AI 助手帮忙编辑我的内容时，
+And I found that when I have, you know, uh, an AI assistant help edit my stuff,
+
+40
+00:02:53,839 --> 00:02:57,885
+它会把内容变成很多那种，比如一个个单独的句子，
+it turns it into a lot of that, like the individual sentences,
+
+41
+00:02:57,885 --> 00:03:03,360
+三个有力的要点，像这个、这个，然后这个，或者这个、这个或，你知道。
+the three punchy points like the this and this then this or this or this or, you know.
+
+42
+00:03:03,400 --> 00:03:10,760
+它写作的那些方式。而这不是我作为人类原来写进去的内容。
+Those kinds of ways that it writes. And that's not what I, the human, had put in.
+
+43
+00:03:11,680 --> 00:03:15,090
+我只是有点筋疲力尽地坐在那里，心想，但我只是，
+And I'm just sort of sitting there exhausted, like, but I just,
+
+44
+00:03:15,090 --> 00:03:17,320
+我需要它被编辑，我需要它连贯。
+I need this edited and I need it coherent.
+
+45
+00:03:17,440 --> 00:03:18,400
+这样够好了吗？
+And is it good enough?
+
+46
+00:03:18,960 --> 00:03:21,040
+但它是不是把我自己的真实写作改得太多了？
+But did it change too much of my own human writing?
+
+47
+00:03:21,080 --> 00:03:25,833
+所以我觉得，你知道，每当我考虑用 AI 写作时，
+So I think that, you know, when I think about using AI for writing,
+
+48
+00:03:25,833 --> 00:03:30,057
+这正是我个人的困扰，你知道，
+that's what I'm personally struggling with is, you know,
+
+49
+00:03:30,057 --> 00:03:32,697
+我仍然想自己来写，
+I still want to be the one writing it,
+
+50
+00:03:32,697 --> 00:03:38,770
+但我需要有人帮我润色，而润色效果却不太行。你觉得
+but like I need someone to help me polish it and the polish is like subpar. Why do you.
+
+51
+00:03:38,770 --> 00:03:43,330
+AI 为什么会这样做？为什么你觉得 AI 会有这种行为，并把
+Think AI does that? Why do you think AI behaves the way it does and turns?
+
+52
+00:03:44,430 --> 00:03:47,750
+原创写作变成听起来像低质 AI 文本（AI slop）的东西？
+Original writing into something that sounds like slop.
+
+53
+00:03:50,230 --> 00:03:52,026
+哦，天哪，要是有一门课程
+Oh, gosh, if only there was a course
+
+54
+00:03:52,026 --> 00:03:54,750
+能告诉我这个问题的答案就好了。
+that was going to tell me the answer to this question.
+
+55
+00:03:54,950 --> 00:04:00,417
+嗯，还有别的东西也能告诉你那个问题的答案。
+Well, there's something else that will also tell you the answer to that question.
+
+56
+00:04:00,417 --> 00:04:03,070
+而那碰巧是，嗯，第五个 P。
+And that happens to be, hmm, the fifth P.
+
+57
+00:04:04,970 --> 00:04:07,370
+我早该猜到那个。太狡猾了。
+I should have guessed that one. Sneaky, sneaky.
+
+58
+00:04:08,090 --> 00:04:12,730
+这个框架，也就是 Trust Insights 的 5P Framework（5P 框架），是 purpose、people、process、platform、performance。
+The framework, Trust Insights, is purpose, people, process, platform, performance.
+
+59
+00:04:13,450 --> 00:04:15,610
+Chris（Christopher S. Penn），你具体说的就是表现标准。
+Chris, you're specifically talking about performance.
+
+60
+00:04:15,810 --> 00:04:22,124
+我认为我们很多人会在给这些大语言模型设计提示词时陷入困境。
+And I think that where a lot of us get caught up in prompting these large language
+
+61
+00:04:22,124 --> 00:04:26,620
+模型的问题在于我们以为自己把表现标准说得很清楚，
+Models is we think we're being clear on the performance,
+
+62
+00:04:26,620 --> 00:04:29,490
+但其实我们说得并没有那么清楚。
+but we're not as clear as we could be.
+
+63
+00:04:29,490 --> 00:04:31,544
+挫败感就是从这里开始的，也是
+And that's where the frustration sets in and that's
+
+64
+00:04:31,544 --> 00:04:32,930
+我们想直接放弃的地方。
+where we want to throw up our hands.
+
+65
+00:04:33,250 --> 00:04:42,610
+所以目标可以写成：我需要你编辑这篇 5000 字的文章。
+And so the purpose could be, I need you to edit this, you know, 5,000 word essay.
+
+66
+00:04:43,090 --> 00:04:47,730
+我需要你检查拼写、语法，还有连贯的主线，
+I need you to look for spelling and grammar and, you know, a cohesive thread,
+
+67
+00:04:47,730 --> 00:04:49,130
+诸如此类的要求。
+like all those things.
+
+68
+00:04:50,140 --> 00:04:54,940
+读者：这是我的目标读者，这是我权威的文风，这是我的示例和流程。
+People, here's my audience. Here's my authoritative voice. Here's my samples process.
+
+69
+00:04:55,060 --> 00:04:59,660
+我希望你通读一遍，只把要改的地方列出来。
+I want you to go through this and just list out the changes.
+
+70
+00:05:00,220 --> 00:05:01,340
+不要直接替我改。
+Don't change it for me.
+
+71
+00:05:01,980 --> 00:05:05,700
+平台：这篇会发布在我的博客上，托管在这里。
+Platform. This is gonna be published on my blog, which is hosted here.
+
+72
+00:05:07,060 --> 00:05:09,860
+我会在这些位置加图片。然后是表现标准。
+And I'm gonna add images in these places. And then performance.
+
+73
+00:05:10,760 --> 00:05:16,818
+我们通常把表现标准理解为：是否从目标中得到了经过润色的成果，
+We typically think of performance of did we get the polished thing from our purpose,
+
+74
+00:05:16,818 --> 00:05:22,529
+但听起来我们在 5P 框架的表现标准部分错失了很多机会，
+but it sounds like we are missing a lot of opportunity in the performance part of
+
+75
+00:05:22,529 --> 00:05:26,077
+没有真正把我们需要什么说清楚，而
+the 5 Ps to really spell out what we need and
+
+76
+00:05:26,077 --> 00:05:28,760
+这正是新课程的前提。
+that is the premise of the new course.
+
+77
+00:05:29,360 --> 00:05:34,010
+我们新课程最大的两块内容有两方面。
+The biggest chunks of the new course that we have are twofold.
+
+78
+00:05:34,170 --> 00:05:37,180
+第一，我们花大量时间在调研上，
+1, we spend a lot of time on research
+
+79
+00:05:37,180 --> 00:05:42,370
+因为好的调研通常会带来更好的结果。
+because good research leads to better outcomes typically.
+
+80
+00:05:42,690 --> 00:05:52,250
+第二，我们花大量时间在数学上，普通写作者一听就会想“数学？”。但是。
+And 2, we spend a lot of time on math, which is your average writer is like math. But.
+
+81
+00:05:55,160 --> 00:05:59,640
+我从这个课程的前提出发：写作就是代码。
+I started with the premise for this course that writing is code.
+
+82
+00:06:00,620 --> 00:06:03,865
+对吧。如果我把一堆毫无意义的词放在一起，你会想，
+Right. If I put nonsense words together, you're like,
+
+83
+00:06:03,865 --> 00:06:05,740
+你刚才是不是撞到头了？
+did you just get hit in the head?
+
+84
+00:06:05,740 --> 00:06:09,180
+你会问：发生了什么？你是不是今天早上真把低因咖啡倒进咖啡机了？
+Like what happened? Did you? Would you actually put decaf in the coffee maker this morning?
+
+85
+00:06:10,020 --> 00:06:14,789
+如果我没有按照统计上可预测的模式把词按正确顺序说出来，
+If I don't say words in the right order in a statistically predictable pattern,
+
+86
+00:06:14,789 --> 00:06:16,740
+你根本不知道我在说什么。
+you have no idea what's going on.
+
+87
+00:06:16,900 --> 00:06:21,901
+你可能会说“这些、这些测试覆盖率、添加分支、空”，然后想：什么？
+You might say these, these test coverage, adding branches empty, like what?
+
+88
+00:06:21,901 --> 00:06:23,230
+这到底是什么意思？
+What does that mean?
+
+89
+00:06:23,310 --> 00:06:24,470
+那就是词沙拉。
+That's, that's word salad.
+
+90
+00:06:25,030 --> 00:06:28,070
+语言遵循模式，而这些模式是可以预测的。
+Language follows patterns and those patterns are predictable.
+
+91
+00:06:28,150 --> 00:06:30,787
+AI 之所以这样写，是因为
+And the reason why AI writes the way it does is
+
+92
+00:06:30,787 --> 00:06:33,852
+它在选择概率最高的模式，
+because it's choosing the most probable patterns,
+
+93
+00:06:33,852 --> 00:06:35,990
+即使那样听起来不像你的文风。
+even when it doesn't sound like you.
+
+94
+00:06:36,630 --> 00:06:40,470
+所以我们要做的第一件事，就是给 AI
+So the first thing that we have to do is give AI.
+
+95
+00:06:41,930 --> 00:06:45,239
+表现标准，对吧。告诉它成功的样子是什么，
+Performance, right. To say this is what success looks like
+
+96
+00:06:45,239 --> 00:06:47,130
+而且必须以具体可衡量的形式呈现。
+and it has to be in a tangible form.
+
+97
+00:06:47,530 --> 00:06:51,444
+作为人类写作时，你在文本中使用的被动语态比例，
+The percentage of passive voice that you use in a text when you write as a human,
+
+98
+00:06:51,444 --> 00:06:53,130
+你用了多少被动语态？
+how much passive voice do you use?
+
+99
+00:06:53,890 --> 00:06:56,977
+以名词或代词开头的句子数量，
+The number of sentences that begin with a noun or pronoun,
+
+100
+00:06:56,977 --> 00:06:58,970
+这类句子占你文案的百分比是多少？
+what percentage of your copy is that?
+
+101
+00:06:59,090 --> 00:07:02,776
+还有，嗯，你使用的长破折号数量
+And the number of, uh, the number of em dashes
+
+102
+00:07:02,776 --> 00:07:06,650
+也就是你作为人类写作时自然会用到的长破折号数量。
+that you use naturally in your text as a human.
+
+103
+00:07:06,650 --> 00:07:07,610
+那你知道这个数字是多少吗？
+Now, you know, what is that?
+
+104
+00:07:07,770 --> 00:07:11,370
+我们的朋友 Ann Handley 说：我使用长破折号是因为我是真正的写作者，
+Our friend Ann Handley says, I use the em dash because I'm an actual writer,
+
+105
+00:07:11,370 --> 00:07:13,170
+但我不会每句话都用它。
+but I don't use it in every sentence.
+
+106
+00:07:13,290 --> 00:07:17,153
+AI 通常会跑偏的地方在于，它知道
+And where AI typically goes off the rails is when it knows
+
+107
+00:07:17,153 --> 00:07:23,071
+这种结构出现概率高，比如使用长破折号，比如使用三段式节奏，
+that this construction is probable, like using em dashes, like using triadic rhythm,
+
+108
+00:07:23,071 --> 00:07:25,290
+比如使用二项排比或等长排比。
+like using bicolon or isocolon.
+
+109
+00:07:26,640 --> 00:07:30,813
+于是它就说：嘿，我要用这些概率最高的写法，
+And it says, hey, I'm gonna use the most probable things,
+
+110
+00:07:30,813 --> 00:07:34,720
+但它没有频率的概念，所以会过度使用。
+but it has no concept of frequency, so it overuses it.
+
+111
+00:07:34,800 --> 00:07:39,040
+结果你看到每句话都是“不是这个，而是那个”，或者你懂的，
+And you get, it's not this, it's that in every single sentence or, you know,
+
+112
+00:07:39,040 --> 00:07:41,160
+Claude 特别喜欢二项排比。
+Claude in particular loves bicolon.
+
+113
+00:07:41,640 --> 00:07:45,560
+听起来就像鼓点：1、2、1、2、1、2。
+It's, it sounds like a drum beat, 1 and 2 and 1 and 2 and 1 and 2.
+
+114
+00:07:45,560 --> 00:07:48,636
+你会想说：能不能换一下节奏？
+And you're like, could you please vary the beat, right,
+
+115
+00:07:48,636 --> 00:07:53,049
+当你把它当成幻灯片来看，Claude 生成的所有内容都是二项排比，
+when you look at it like a slide deck, Claude generates, everything is bicolon,
+
+116
+00:07:53,049 --> 00:07:56,860
+所有标题都是“这个和这个”“敏锐洞察和这个和”。
+all the headings, you know, this and this sharp insight and this and.
+
+117
+00:07:56,900 --> 00:08:01,619
+你会说：天哪，这读起来太让人麻木了。
+And you're like, my god, this is so mind numbing to read
+
+118
+00:08:01,619 --> 00:08:06,246
+如果我们一开始就给 AI 一份对我们写作的分析，并且说，
+if we give AI an analysis of our writing to begin with and say,
+
+119
+00:08:06,246 --> 00:08:09,300
+成功的样子就是这样一组数字。
+success looks like this set of numbers.
+
+120
+00:08:10,100 --> 00:08:12,828
+现在去写，然后检查你的工作，再回来。
+Now go write then check your work and come
+
+121
+00:08:12,828 --> 00:08:16,600
+然后把你写的内容和写作蓝图做对比。
+and compare what you wrote versus what the blueprint is.
+
+122
+00:08:16,960 --> 00:08:22,200
+它会说，哦，我完全没做到这个。比如，我用了 82% 的被动语态。
+And it will go, oh, I didn't do this at all. Like, I use 82% passive voice.
+
+123
+00:08:22,600 --> 00:08:23,960
+对，回去修改。
+Yeah, go back and fix it.
+
+124
+00:08:24,560 --> 00:08:28,360
+但 Trust Insights 的 5P Framework 里第 5 个 P 非常重要。
+But the 5th P in the 5P Framework by Trust Insights is so important.
+
+125
+00:08:29,440 --> 00:08:33,081
+我们必须为它确定成功是什么样子，这样
+We have to establish what success looks like for it so
+
+126
+00:08:33,081 --> 00:08:36,640
+它才能用数学方式回去修正自己的代码。
+that it mathematically can go back and fix its code.
+
+127
+00:08:37,720 --> 00:08:40,092
+不过，让我问你这个问题。
+So let me ask you this question, though,
+
+128
+00:08:40,092 --> 00:08:43,757
+因为我会把我的写作样本给 Claude，然后说，
+because I will give Claude like samples of my writing and say,
+
+129
+00:08:43,757 --> 00:08:46,200
+这应该写成这样。
+this is what it's supposed to sound like.
+
+130
+00:08:46,720 --> 00:08:52,149
+我是不是做错了？因为我有这些样本，来自好多好多年，
+Am I doing it wrong because I have all of these samples from like literally years
+
+131
+00:08:52,149 --> 00:08:56,838
+年复一年，我觉得 Claude 或大语言模型，你知道，
+and years, and I feel like Claude or a large language model, you know,
+
+132
+00:08:56,838 --> 00:09:01,280
+是在试图“进化”我的写作，好让我的写作符合它的格式。
+is trying to evolve my writing so that my writing fits its format.
+
+133
+00:09:01,520 --> 00:09:05,520
+而不是让它按我的写作来编辑。我觉得这就是我纠结的地方。
+Not its editing to my writing. Like I feel like that's where I'm struggling.
+
+134
+00:09:07,240 --> 00:09:13,010
+你没有做错任何事，只是你在让它计数，
+You are not doing anything wrong except you are asking it to count
+
+135
+00:09:13,010 --> 00:09:14,720
+而它不会计数。
+and it can't count.
+
+136
+00:09:15,440 --> 00:09:19,332
+所以即使它作为语言模型会分析你的写作，
+And so even though it will analyze your writing as a language model,
+
+137
+00:09:19,332 --> 00:09:21,000
+它也完全不知道怎么计数。
+it has no clue of how to count.
+
+138
+00:09:21,540 --> 00:09:26,152
+这门课里有一个东西，可能光这一项就值回票价，
+One of the things that's in this course is probably worth the price of admission
+
+139
+00:09:26,152 --> 00:09:30,345
+那就是一个 Python 脚本，它需要在你提供的写作样本上运行，
+alone is a Python script that it has to run on a writing sample you provide
+
+140
+00:09:30,345 --> 00:09:33,140
+用数学方式生成你的写作指纹。
+that will do that fingerprint mathematically.
+
+141
+00:09:34,020 --> 00:09:38,300
+不要让语言模型自己去试，因为语言模型不会计数。
+Not letting the language model try it out because language models can't count.
+
+142
+00:09:38,900 --> 00:09:41,940
+所以 Python（编程语言）脚本会遍历并统计你原始样本里的内容。
+So the Python script goes through and it counts in your original sample.
+
+143
+00:09:42,330 --> 00:09:46,047
+比如你使用被动语态的数量和百分比，
+This is the number, percentage of passive voice that you use,
+
+144
+00:09:46,047 --> 00:09:50,930
+然后把它记录为写作指纹，作为文件保存到你选择的语言模型里。
+and it writes it down as a fingerprint, as a file in your language model of choice.
+
+145
+00:09:50,930 --> 00:09:52,570
+它在 ChatGPT（聊天型 AI 助手）里能用，在 Copilot（微软 AI 助手）里也能用。
+It works in ChatGPT, it works in Copilot.
+
+146
+00:09:52,690 --> 00:09:56,599
+它在所有系统里都测试过，而且……
+It's tested in all the systems and it, it,
+
+147
+00:09:56,599 --> 00:10:01,730
+然后它可以在自己的输出上重新运行那个脚本，然后说。
+it can then rerun that script on its output and say.
+
+148
+00:10:02,630 --> 00:10:08,030
+初始样本，被动语态 4%。我的作品，被动语态 18%。进入修改循环。
+Initial sample, 4% passive voice. My work, 18% passive voice. Revision loop.
+
+149
+00:10:08,070 --> 00:10:10,723
+我需要回去继续修改，直到达到这个数字，
+I need to go back and keep revising until I hit this number,
+
+150
+00:10:10,723 --> 00:10:12,270
+但它自己不会计数。
+but it can't count that by itself.
+
+151
+00:10:12,670 --> 00:10:16,150
+它需要实际代码的支持才能做到。
+It needs the support of actual code to do it.
+
+152
+00:10:16,150 --> 00:10:19,750
+这就是课程里预先做好的东西。不需要任何人写代码。
+And that's what's in the course, pre-baked. Nobody has to be coding.
+
+153
+00:10:19,830 --> 00:10:22,070
+不涉及写代码，已经打包好了。
+No coding involved. It's, it's bundled in.
+
+154
+00:10:22,070 --> 00:10:25,699
+你只要把它放进你的 Copilot、ChatGPT 或 Claude 里，
+But you would drop that into your Copilot or your ChatGPT or Claude
+
+155
+00:10:25,699 --> 00:10:28,828
+然后说，这就是你衡量自己的方式，
+and say this is how you're gonna measure yourself,
+
+156
+00:10:28,828 --> 00:10:31,582
+你要生成写作指纹，然后你会……
+you're gonna do the fingerprint and you'll, you'll,
+
+157
+00:10:31,582 --> 00:10:34,460
+你会重复使用这个写作指纹，然后再回去……
+you'll reuse that fingerprint and then you will go back
+
+158
+00:10:34,460 --> 00:10:36,400
+用这个脚本来计数。
+and you will count using this script.
+
+159
+00:10:36,840 --> 00:10:39,480
+所以，你知道，再说一次，你没有做错任何事。
+And, and that's, you know, again, you're not doing anything wrong.
+
+160
+00:10:39,640 --> 00:10:45,619
+只是普通非技术用户不会想到：嘿，机器，你——
+It's just the average non-technical user doesn't think, hey, machine, you,
+
+161
+00:10:45,619 --> 00:10:49,766
+我记得你不太会计数，然后我想，好吧，
+I remembered you can't count well and I think, okay,
+
+162
+00:10:49,766 --> 00:10:55,552
+所以这是一个很有意思的区别，因为到目前为止，你知道，
+so that's an interesting distinction because so up until now, you know,
+
+163
+00:10:55,552 --> 00:10:57,770
+我一直在说，嘿，
+I've been saying like, hey.
+
+164
+00:10:57,770 --> 00:10:59,170
+这是我的写作样本。
+This is the sample of my writing.
+
+165
+00:11:00,130 --> 00:11:05,281
+你说得对，它绝对会接收我给它的一切，然后就像，哦，
+And you're right, it absolutely, it takes what I give it and it like is like, oh,
+
+166
+00:11:05,281 --> 00:11:08,530
+你说要做这个，让我确保我做到这个。
+you said to do this, let me make sure that I do this.
+
+167
+00:11:08,570 --> 00:11:14,558
+为了确保做到这个，我会在 18 句话里做 16 次，
+And by making sure that I do this, I'm gonna do it 16 times out of the 18 sentences,
+
+168
+00:11:14,558 --> 00:11:18,550
+但我还会在 18 句话里的 15 句里做那个。
+but I'm also going to do this in 15 of the 18 sentences.
+
+169
+00:11:18,630 --> 00:11:23,328
+所以它把自己知道的关于我写作风格的所有东西，
+And so it's taking everything it knows about my style of writing
+
+170
+00:11:23,328 --> 00:11:26,430
+全都塞进一个句子里。
+and trying to jam it all into one sentence.
+
+171
+00:11:26,510 --> 00:11:27,790
+我就想，哇。
+And I'm like, whoa.
+
+172
+00:11:29,030 --> 00:11:31,380
+对，语法上它是正确的，
+Like, yes, grammatically, it's correct,
+
+173
+00:11:31,380 --> 00:11:34,670
+但现在它是低质 AI 文本，因为这完全不是我写的东西。
+but now it's garbage because that is not at all what I wrote.
+
+174
+00:11:35,229 --> 00:11:39,970
+我有点觉得，并不是说我感到束手无策，
+And I sort of feel it's not that I feel like my hands are tied
+
+175
+00:11:39,970 --> 00:11:42,389
+因为我自己改不了它。
+because I can't fix it myself.
+
+176
+00:11:42,989 --> 00:11:48,007
+但是，我求助于系统的原因是，
+But, like, the reason I turned to a system for help is
+
+177
+00:11:48,007 --> 00:11:55,709
+因为我不是专业编辑，所以我会漏掉编辑能发现的问题。
+because I'm not an expert editor, and so I miss things that an editor would find.
+
+178
+00:11:56,510 --> 00:11:57,270
+而我需要这个。
+And I need that.
+
+179
+00:11:57,390 --> 00:12:00,043
+对我来说，我需要那种支持性的，比如，嘿，
+Like for me, I need that kind of supportive, like, hey,
+
+180
+00:12:00,043 --> 00:12:03,480
+你在这里提出一个观点，然后半途就丢掉了。
+you started a point over here and then you dropped it halfway through
+
+181
+00:12:03,480 --> 00:12:05,530
+而且你在最后提出了一个不同的观点。
+And you made a different point at the end.
+
+182
+00:12:05,650 --> 00:12:09,930
+就像你总得选一个故事，然后坚持讲下去。
+Like, you gotta, you gotta pick a story and stick with it.
+
+183
+00:12:10,490 --> 00:12:11,050
+嗯。
+Mm hmm.
+
+184
+00:12:11,650 --> 00:12:20,010
+而这正是这些工具、这些 AI 工具单靠自己做不到的地方。
+And this is where these tools, these AI tools, simply by themselves cannot do that.
+
+185
+00:12:20,680 --> 00:12:27,320
+它们就是不明白，我甚至该怎么去数？
+Like, they just do not understand, how do I, uh, how do I even count?
+
+186
+00:12:27,880 --> 00:12:29,998
+我会给你展示一个例子，
+So I'll, I'll, I'll show you an example of,
+
+187
+00:12:29,998 --> 00:12:32,480
+就是课程里附带的东西之一。
+of one of the things that is bundled in the course.
+
+188
+00:12:32,520 --> 00:12:35,467
+再说一次，普通用户不需要看这个东西。
+And again, the average user does not need to look at this.
+
+189
+00:12:35,467 --> 00:12:37,160
+普通用户也不会去看。
+The average user is not going to.
+
+190
+00:12:37,480 --> 00:12:39,960
+你只要把文件丢进去，然后说“机器，去干活吧”。
+You will just drop the file and say, "Machine, off you go."
+
+191
+00:12:40,360 --> 00:12:46,225
+但它会去检查这些东西。如果里面有一些函数，它会显示像：
+Um, but it will look at things. If there's functions in this, it says like,
+
+192
+00:12:46,225 --> 00:12:51,294
+比如，看看这类词的每词使用率，
+look at the rate per word of this kind of word, for example,
+
+193
+00:12:51,294 --> 00:12:56,960
+人们常说，好的写作依赖相对较少的副词。
+it's often said that good writing relies on relatively few adverbs.
+
+194
+00:12:57,200 --> 00:13:04,940
+副词是以 -ly 结尾的词，你知道，像 actually 等等。呃，AI 显然很喜欢副词。
+Adverbs are words that end in -ly, you know, "actually," etc. Uh, AI loves adverbs, obviously.
+
+195
+00:13:05,220 --> 00:13:09,940
+Actually，还有类似这样的词，听起来也有点居高临下。嗯，对。
+Actually, and something like that, which also sounds condescending. Um, yeah.
+
+196
+00:13:12,180 --> 00:13:17,996
+所以，如果你的写作风格几乎不用副词，当你做写作指纹时，
+And so if your writing style uses almost no adverbs, when you do a fingerprint,
+
+197
+00:13:17,996 --> 00:13:22,380
+它会说，嘿，你每 1000 词里的副词使用率大约是 1%。
+it will say, "Hey, your adverb rate per 1000 words is like 1%."
+
+198
+00:13:23,190 --> 00:13:29,461
+所以当它回头去统计它做的修订、你让它做的修改时，
+And so when it goes back and counts its revision, its edits that you had it make,
+
+199
+00:13:29,461 --> 00:13:34,574
+它会说，哦，我在修订里用了 9% 的副词，但目标，
+and it goes, "Oh, I used 9% adverbs in my revision, but the target,"
+
+200
+00:13:34,574 --> 00:13:36,600
+表现标准说的是 1%。
+the performance says 1%.
+
+201
+00:13:37,160 --> 00:13:40,320
+我需要回去修正我的工作。这是一种诊断。
+I need to go back and fix my work. It's a diagnostic.
+
+202
+00:13:40,720 --> 00:13:45,120
+而这正是我们所有提示词里缺少的东西，因为它做不到这一点。
+And that's what's missing from all of our prompts because it can't do that.
+
+203
+00:13:45,240 --> 00:13:48,798
+这也是我上过的每一个 AI for Writers 课程里都缺少的东西，
+That's what's missing from every single AI for Writers course I've ever taken,
+
+204
+00:13:48,798 --> 00:13:50,200
+我参加过的每一场分享里也都缺少这一点？
+every session I've ever sat in?
+
+205
+00:13:50,710 --> 00:13:55,790
+没有人把写作看作一套测量和分析系统。
+Nobody thinks of writing as a system of measurement of analytics.
+
+206
+00:13:56,230 --> 00:14:00,188
+因此，当 AI 只是遵循它自己的内部程序，
+And therefore, when AI just follows its own internal programming,
+
+207
+00:14:00,188 --> 00:14:03,368
+生成那些概率时，我们都会说，
+the probabilities that it generates, we're all like,
+
+208
+00:14:03,368 --> 00:14:05,630
+为什么它老是输出这种低质 AI 文本？
+why does this keep coming out like slop?
+
+209
+00:14:05,790 --> 00:14:09,550
+为什么我怎么提示它都没法让它写得像我？因为它不会数数。
+Why can I not prompt this thing to sound like me? It's because it can't count.
+
+210
+00:14:09,630 --> 00:14:13,061
+所以这整个课程真正的基石，
+And so the cornerstone really of this entire course
+
+211
+00:14:13,061 --> 00:14:17,210
+我们创建它的目的，就是给 AI 提供它计数所需的工具。
+that we've created is let's give AI the tools it needs to count.
+
+212
+00:14:17,970 --> 00:14:20,113
+给它计数所需的度量标准，
+Let's give it the measures that it needs to count,
+
+213
+00:14:20,113 --> 00:14:21,890
+然后再给它清晰的指导规则。
+and then let's give it clear guidelines.
+
+214
+00:14:22,170 --> 00:14:27,162
+你知道，工具包里有一个东西，再次强调，
+You know, one of the things that is in the toolkit is, again,
+
+215
+00:14:27,162 --> 00:14:31,810
+这是另一段代码，用户，也就是你，不会用到。
+this is another piece of code the user, you, the user will not use.
+
+216
+00:14:31,850 --> 00:14:34,913
+它被内置到一个你直接安装的技能里，
+This is built into a skill that you just install
+
+217
+00:14:34,913 --> 00:14:38,998
+里面有如何安装它的说明，但它会说，
+and there's instructions on how to install it, but it will say,
+
+218
+00:14:38,998 --> 00:14:41,590
+如果你有这种句子节奏，不要那样做。
+if you have this cadence, don't do that.
+
+219
+00:14:41,670 --> 00:14:42,990
+这是你应该改用的方式。对吧？
+Here's how you do it instead. Right?
+
+220
+00:14:42,990 --> 00:14:47,824
+如果你连续六个句子都用短、长、短、长的句子节奏，
+If you do short, long, short, long cadence over six consecutive sentences,
+
+221
+00:14:47,824 --> 00:14:51,430
+你写出来的就是一段死板的鼓点。
+you're writing a, a, a dead drum beat.
+
+222
+00:14:51,630 --> 00:14:53,230
+不要那样做。这样做。
+Don't do that. Do this instead.
+
+223
+00:14:53,830 --> 00:14:54,670
+嗯，诸如此类。
+Um, things like that.
+
+224
+00:14:54,670 --> 00:14:57,562
+举个例子，如果你看 AI 写出来的东西，呃，
+So for example, if you look at AI writing, uh,
+
+225
+00:14:57,562 --> 00:15:02,409
+ChatGPT、Claude、Gemini（Google AI 模型），你只要退后一步，看看整个页面，
+ChatGPT, Claude, Gemini, and you just take a step back and you look at the page,
+
+226
+00:15:02,409 --> 00:15:05,380
+所有段落长度都差不多。
+all the paragraphs are about the same length.
+
+227
+00:15:06,300 --> 00:15:10,180
+它们都看起来像页面上同样的灰色矩形块。
+They're all, they all kind of look like the same gray rectangles on a page.
+
+228
+00:15:10,260 --> 00:15:14,125
+如果你退后一步，不再看字母，只看形状，
+If you were to step back and stop looking at the letters and just look at the shape,
+
+229
+00:15:14,125 --> 00:15:17,298
+如果你去看你自己的真人写作，很有可能，
+if you look at your human writing, there's a good chance that it's,
+
+230
+00:15:17,298 --> 00:15:19,260
+有些段落特别短。
+Some paragraphs are real short.
+
+231
+00:15:19,260 --> 00:15:23,060
+有时甚至只有一个词，像表示强调的那种，比如“不，不要这样做”，对吧。
+So maybe it's even one word, like an emphasis one, like, "No, don't do this," right.
+
+232
+00:15:23,060 --> 00:15:24,782
+而那本身就是单独一段。
+And that's just its own paragraph.
+
+233
+00:15:24,782 --> 00:15:28,760
+这种段落长度变化的频率，是你可以测量的东西。
+That frequency of change in paragraph length is something that you can measure.
+
+234
+00:15:29,920 --> 00:15:32,680
+机器不知道要去找这个。机器甚至根本不会想到这个。
+Machines don't know to look for that. Machines don't even think about that.
+
+235
+00:15:32,680 --> 00:15:35,943
+因此，如果我们给它们工具，这些计数工具，让它们去执行。
+And so if we give them the tools, the counting tools, to go.
+
+236
+00:15:35,943 --> 00:15:38,720
+Katie 往往会交替变换她的段落长度。
+Katie tends to alternate her paragraph length.
+
+237
+00:15:38,880 --> 00:15:42,320
+有时她的段落长度是 11 个句子。另一些时候只有一句。
+Sometimes her paragraph length is 11 sentences. Other times it's one.
+
+238
+00:15:43,040 --> 00:15:46,640
+我应该复现这种整体模式，因为你一旦给 AI 一个模式，
+I should replicate that general pattern because once you give AI a pattern.
+
+239
+00:15:47,470 --> 00:15:50,310
+它就会像，哦，我知道怎么处理模式了。我能做到。
+That's like, oh, I know how to do patterns. I can do this.
+
+240
+00:15:50,310 --> 00:15:51,710
+然后它就会去执行，把它创造出来。
+And it goes off and it creates it.
+
+241
+00:15:54,630 --> 00:16:00,338
+我的意思是，我有很多想法和评论，你知道，所以这就像那个大大的、
+I mean, I have a lot of thoughts and comments, you know, and so you're like the big,
+
+242
+00:16:00,338 --> 00:16:05,790
+你知道，房间里的大象是，我们为什么要教人们如何……
+you know, elephant in the room is, you know, why are we teaching people how to.
+
+243
+00:16:07,580 --> 00:16:10,988
+训练模型去写作，而外面明明有真正的写作者。所以，我的意思是，这是……
+Train the models to write when there's real writers out there. So, I mean, that's,
+
+244
+00:16:10,988 --> 00:16:11,940
+这是个很大的问题。
+that's a big question.
+
+245
+00:16:12,060 --> 00:16:15,220
+所以我只是想把这个先放在这里一会儿。
+So I'm just gonna like put that, like, stick it up here for a second.
+
+246
+00:16:17,020 --> 00:16:22,549
+比如，当我回想高中和初中的时候，
+When I think back to like high school and middle school, for example,
+
+247
+00:16:22,549 --> 00:16:24,780
+我们是同一代人。
+we are the same generation.
+
+248
+00:16:24,980 --> 00:16:29,823
+我们被教过五段式写作，你知道，但对我们很多人来说，
+We were taught the five-paragraph, you know, writing, but, but for a lot of us,
+
+249
+00:16:29,823 --> 00:16:32,850
+这就像是，我们就是这样被教写作的。
+this is like, this is how we were taught to write.
+
+250
+00:16:32,930 --> 00:16:36,010
+所以第一段是你的开场论点。
+So the first paragraph is your opening argument.
+
+251
+00:16:36,770 --> 00:16:41,707
+第二、第三和第四段是你论点的支撑理由。
+The second, third and fourth paragraphs are your supporting reasons for your argument.
+
+252
+00:16:41,707 --> 00:16:44,210
+第五段是你的结论。
+And the fifth paragraph is your conclusion.
+
+253
+00:16:44,650 --> 00:16:49,082
+所以我们很多人，你知道，那就像被刻进脑子里一样，在那种……
+And so a lot of us who were, you know, that was like drilled into our heads on our,
+
+254
+00:16:49,082 --> 00:16:51,810
+像是带绿线的黄色纸张上。
+like yellow piece of paper with the green lines.
+
+255
+00:16:51,930 --> 00:16:54,130
+就像那样，你才应该那样写。
+Like that's how you're supposed to write.
+
+256
+00:16:54,210 --> 00:17:00,394
+所以我觉得，对于自己写东西的人来说，常常让人沮丧的是
+And so I think what's often frustrating for someone who writes their own stuff is
+
+257
+00:17:00,394 --> 00:17:05,378
+因为我们被教导要以某种方式组织结构，
+because we were taught to structure our writing in a certain way,
+
+258
+00:17:05,378 --> 00:17:11,470
+所以会给人感觉像是，嗯，AI 一定写了那个，因为结构很像。
+it can come across as, well, AI must have written that because of the structure.
+
+259
+00:17:11,470 --> 00:17:14,700
+就像说，不，是我六年级的中学……
+It's like, no, my 6th grade middle school.
+
+260
+00:17:14,940 --> 00:17:20,848
+你知道，英语老师，那时候在桌上拍尺子还是合法的，
+You know, English teacher when, you know, slapping rulers on tables was legal,
+
+261
+00:17:20,848 --> 00:17:25,860
+把我吓个半死，告诉我你必须这样写。
+scared the bejesus out of me and told me this is how you have to write.
+
+262
+00:17:26,540 --> 00:17:30,696
+所以我写作的方式和 AI 一样，因为这已经被刻进我的大脑里了，
+And so I write the way that AI writes because it was drilled into my brain,
+
+263
+00:17:30,696 --> 00:17:32,220
+你就该这样写。而且。
+this is how you write. And.
+
+264
+00:17:33,600 --> 00:17:38,090
+我猜我在想，所以当你说到模式识别时，
+I guess I'm wondering, so when you're saying like pattern recognition,
+
+265
+00:17:38,090 --> 00:17:40,560
+它从我们这里学到了这些模式。
+like it learned these patterns from us.
+
+266
+00:17:41,560 --> 00:17:49,520
+我们教给了它这些模式，它确实学了，但它把所有东西都平均到了一起。
+We taught it the patterns it did, but it is averaging together everything.
+
+267
+00:17:50,120 --> 00:17:51,823
+这就是为什么它输出的结果常常
+And that's why it often comes out
+
+268
+00:17:51,823 --> 00:17:54,282
+与个体写作的方式如此不同
+so different than the way an individual writes
+
+269
+00:17:54,282 --> 00:17:57,120
+因为每个人都有自己的模式偏差。
+because everyone has their own pattern distortions.
+
+270
+00:17:57,700 --> 00:18:00,759
+每个人都有喜欢的词，也有不喜欢的词。
+Everyone has words they like. Everyone has words they don't like.
+
+271
+00:18:00,759 --> 00:18:02,260
+每个人都有生活经历。
+Everyone has life experiences.
+
+272
+00:18:02,460 --> 00:18:03,820
+这些会体现在你的写作里。
+That will show up in your writing.
+
+273
+00:18:04,740 --> 00:18:06,975
+AI 正在把所有这些平均在一起，变成……
+AI is averaging all of that together into,
+
+274
+00:18:06,975 --> 00:18:11,379
+然后它所做的是输出概率最高的结果，除非
+and then what it does is it spits out the highest likely probability except for
+
+275
+00:18:11,379 --> 00:18:13,140
+当它使用水印技术时。
+when it's using watermarking.
+
+276
+00:18:13,580 --> 00:18:18,007
+所以五段式文章和那种块状结构，对，
+And so the five-paragraph essay and that kind of blocky set, yeah,
+
+277
+00:18:18,007 --> 00:18:24,320
+它会那样做，因为它在钟形曲线上看到的大多数文本正是那样的。
+it's gonna do that because the majority of writing it has seen on a bell curve is exactly that.
+
+278
+00:18:24,600 --> 00:18:30,289
+如果你看看，你知道，财报或新闻稿，
+If you look at the, you know, an earnings report or a press release,
+
+279
+00:18:30,289 --> 00:18:34,840
+那正是那种死气沉沉的节拍器式无聊写作。
+it is exactly that dead metronome of boring writing.
+
+280
+00:18:35,560 --> 00:18:39,109
+关于按照那种方式写作，我们在课程一开始就说到这一点
+The thing about writing to that and we say this in the beginning of the course
+
+281
+00:18:39,109 --> 00:18:41,080
+而且我们在很多不同地方也说过。
+and we said this in many different places.
+
+282
+00:18:42,290 --> 00:18:47,690
+好的、有趣的创意作品是低概率的，对吧？
+Good creative work that's interesting is low probability, right?
+
+283
+00:18:47,970 --> 00:18:52,519
+当你……你写作的方式应该是令人惊讶的，并且不同于……
+When you, the way you write should be surprising and different than the way
+
+284
+00:18:52,519 --> 00:18:55,690
+那个中学老师教你写作的方式，对吧？
+that middle school teacher taught you to write, right?
+
+285
+00:18:55,730 --> 00:18:56,090
+我会的。
+I will.
+
+286
+00:18:57,210 --> 00:18:58,930
+我为此用过各种各样的表达。
+There's all sorts of expressions I've used for this.
+
+287
+00:18:58,930 --> 00:19:02,130
+但如果你说，你知道，这个……这个工作起来像 Prius。
+But if you say, you know, this is a, this works like a Prius.
+
+288
+00:19:02,960 --> 00:19:08,080
+而其他人，那些普通水平的人，这个还行，对吧？它还行，但很无聊。
+And other people that are average, this works okay, right? This works okay. It's boring.
+
+289
+00:19:08,560 --> 00:19:13,640
+说“这个像 Prius 一样工作”带有非常具体的含义和背后的心态。
+This works like a Prius has a very specific connotation and a mindset behind it.
+
+290
+00:19:14,080 --> 00:19:21,520
+所以我们希望 AI 通过我们课程中的工具去识别的是，识别……如何……
+And so what we want AI to recognize with the tooling in our course is recognize how.
+
+291
+00:19:22,830 --> 00:19:27,211
+我们个人文风的样子，并复制那种特定模式，
+The way our individual style looks and replicate that specific pattern,
+
+292
+00:19:27,211 --> 00:19:30,205
+而不是你被训练过的通用模式，
+not the general patterns you've been trained on,
+
+293
+00:19:30,205 --> 00:19:36,120
+也不是在缺乏这些非常严格的数学护栏时会生成的通用模式。
+the general patterns that you will generate without these very rigid mathematical guardrails.
+
+294
+00:19:38,400 --> 00:19:38,760
+好的。
+Okay.
+
+295
+00:19:40,240 --> 00:19:43,165
+我注意到并且看到的一件事是，
+One of the things that I've noticed and I've seen,
+
+296
+00:19:43,165 --> 00:19:45,947
+实际上，这是一个你经常用的短语，
+and actually this is a phrase that you use a lot,
+
+297
+00:19:45,947 --> 00:19:49,800
+所以我猜我有点想问，你是从……那里采用了这个说法吗？
+and so I guess I'm sort of asking like, have you adopted this from.
+
+298
+00:19:50,790 --> 00:19:54,750
+是从 AI 那里，还是这是一个人们使用而 AI 也采用了的短语？
+AI or is it a phrase that people use and AI has adopted?
+
+299
+00:19:54,790 --> 00:20:00,536
+我在和大语言模型的对话中经常看到这样的表达，
+It is something that I see a lot in my conversations with a large language model is,
+
+300
+00:20:00,536 --> 00:20:04,761
+然后是：“这是这个东西的形态，这是它的形态”。
+and here's the shape of the thing, and here's the shape of it,
+
+301
+00:20:04,761 --> 00:20:10,422
+这就是问题的形态，这就是挑战的形态。可是，
+And here's the shape of the problem, and here's the shape of the challenge. Well,
+
+302
+00:20:10,422 --> 00:20:12,450
+那和之前不一样了。
+That's not the same shape as.
+
+303
+00:20:12,450 --> 00:20:15,690
+它以前是那样。我就想，我们为什么要讨论“形态”？
+It was before. And I'm like, why are we talking about shapes?
+
+304
+00:20:15,770 --> 00:20:18,377
+不过说句公道话，Chris，你经常这么说，
+And to be fair, Chris, you say that a lot,
+
+305
+00:20:18,377 --> 00:20:22,010
+但你不在我的大语言模型实例里。
+but you are not in my instance of a large language model.
+
+306
+00:20:22,850 --> 00:20:26,170
+所以我想我的问题是，你有没有？不，你不是。
+And so I guess my question is, have you? No, you're not.
+
+307
+00:20:26,290 --> 00:20:29,952
+这是你和大语言模型打交道时带来的吗？
+Have you brought that from working with large language models?
+
+308
+00:20:29,952 --> 00:20:33,130
+因为这不像你以前会说的话。
+Because that's not a phrase that you used to say before.
+
+309
+00:20:33,480 --> 00:20:37,343
+但我发现，这些小习惯，你知道，
+But I find that, like, there's these little ticks and, you know,
+
+310
+00:20:37,343 --> 00:20:40,240
+这些大语言模型会有一些怪癖。
+quirks that these large language models have.
+
+311
+00:20:40,240 --> 00:20:44,000
+而且每个模型都有不同的措辞方式。
+And each one has a different way of phrasing things.
+
+312
+00:20:44,000 --> 00:20:46,629
+所以你提到的是那种 1、2、3 的句子节奏，
+So you're talking about, like, the 1, 2, 3, the cadence,
+
+313
+00:20:46,629 --> 00:20:48,720
+但还有这些描述性词语。
+but then there's also these descriptors.
+
+314
+00:20:49,760 --> 00:20:51,120
+我觉得这真的很有趣。
+And I find that really interesting.
+
+315
+00:20:51,120 --> 00:20:54,836
+而且我觉得，如果一个人不注意，
+And I feel like if a human is not paying attention,
+
+316
+00:20:54,836 --> 00:20:58,280
+这种东西很容易溜进你的很多作品里。
+that very easily slips into a lot of your work.
+
+317
+00:20:59,080 --> 00:21:01,480
+它也会溜进你的思维方式里。
+And it slips into how you think, too.
+
+318
+00:21:01,600 --> 00:21:06,200
+比如我现在写作时，会突然意识到：哦，这是 negative parallelism。
+Like I find myself when I'm writing now, I go, oh, that is negative parallelism.
+
+319
+00:21:06,280 --> 00:21:07,440
+我甚至会把这一点指出来。
+And I will even call that out.
+
+320
+00:21:07,440 --> 00:21:10,116
+比如今天早上我发的一篇 LinkedIn 帖子里，我就写：
+Like in a LinkedIn post I published this morning, I say,
+
+321
+00:21:10,116 --> 00:21:13,954
+借用 Claude 最喜欢的一种句式：不是这个，而是那个，
+and to quote one of Claude's favorite constructions, it's not this, it's that,
+
+322
+00:21:13,954 --> 00:21:17,386
+因为 negative parallelism 是 bicolon 的一种，而这正是
+because negative parallelism, which is a form of bicolon, is something
+
+323
+00:21:17,386 --> 00:21:18,840
+语言模型会用的东西。
+that the language models use.
+
+324
+00:21:19,040 --> 00:21:19,320
+不过。
+But.
+
+325
+00:21:21,270 --> 00:21:26,190
+写作很像，嗯，很像营养。
+Writing is a lot like, um, it's a lot like nutrition.
+
+326
+00:21:27,190 --> 00:21:29,350
+你吃什么，就会成为什么。
+You become what you eat.
+
+327
+00:21:29,550 --> 00:21:33,668
+所以如果你一直在读 AI 生成的文字，并且你开始
+So if you are reading AI-generated text all the time and you start
+
+328
+00:21:33,668 --> 00:21:38,373
+你开始看到“这是个敏锐的洞察”“这是个犀利的角度”，
+and you start seeing that's a sharp insight, that's a sharp angle,
+
+329
+00:21:38,373 --> 00:21:40,390
+这会影响到你。
+it's going to influence you.
+
+330
+00:21:40,590 --> 00:21:44,265
+所以，是的，我可能确实学到了一些东西，因为我花了
+And so, yeah, I probably have picked up things because I've spent
+
+331
+00:21:44,265 --> 00:21:46,510
+大量时间和这些工具较劲，
+so much time wrestling with these tools
+
+332
+00:21:46,510 --> 00:21:50,185
+试图分析它们是如何构造句子的，所以，是的，
+and trying to diagnose how they do the constructions that, yeah,
+
+333
+00:21:50,185 --> 00:21:54,200
+其中一些会影响到我写作、说话甚至思考的方式。
+some of it is going to, to influence how I write and speak and even think.
+
+334
+00:21:55,000 --> 00:21:59,651
+嗯，语言学家们——如果你在网上看相关讨论——担心的一个问题是，
+Um, and one of the things that linguists—if you read this in the discourse online—
+
+335
+00:21:59,651 --> 00:22:04,098
+语言学家们普遍对 AI 非常担忧的一点是
+one of the things that linguists are very concerned about with AI generally is
+
+336
+00:22:04,098 --> 00:22:06,560
+它某种程度上会让语言变得扁平化。
+that it's sort of a flattening of language.
+
+337
+00:22:07,190 --> 00:22:11,015
+语言本身，尤其是英语，正在发生变化
+that the language, the English language itself is morphing
+
+338
+00:22:11,015 --> 00:22:13,310
+因为 AI 对它的影响。
+because of the influence of AI on it.
+
+339
+00:22:13,310 --> 00:22:19,115
+我想，有个统计是互联网上每 3 个页面中就有 2 个页面
+When you—when I thought—I think the stat was 2 out of 3 pages on the internet are
+
+340
+00:22:19,115 --> 00:22:20,990
+现在完全是由 AI 写的。
+now written solely by AI.
+
+341
+00:22:22,470 --> 00:22:28,236
+这会塑造我们阅读的方式，而且当你看到，
+That is going to have a, a shaping effect on how we read and how—and when you see,
+
+342
+00:22:28,236 --> 00:22:32,110
+你知道，我觉得大概是 10 本里有 10 本，
+you know, I think it was something like 10 out of 10,
+
+343
+00:22:32,110 --> 00:22:37,246
+亚马逊上提交的新书中，10 本里有 9 本完全是由 AI 写的。
+nine out of 10 new books submitted on Amazon was written solely by AI.
+
+344
+00:22:37,246 --> 00:22:41,030
+这会改变你的语言。这会，
+That's gonna change your language. That's gonna.
+
+345
+00:22:41,030 --> 00:22:43,990
+改变你阅读的方式；而你如何阅读、如何写作，就是你如何思考。
+Change how you read and how you write is how you think.
+
+346
+00:22:45,030 --> 00:22:50,590
+是的，这很有趣。假设我是一个全新的学习者。
+Yeah, it's interesting. So let's say I'm a brand new learner.
+
+347
+00:22:51,200 --> 00:22:53,360
+我想报名参加 AI for Writers 课程。
+I want to sign up for the AI for Writers course.
+
+348
+00:22:53,440 --> 00:22:57,320
+我会学到哪些重要内容？
+What are some of the big things that I'm going to learn?
+
+349
+00:22:57,440 --> 00:23:00,640
+我相信你会介绍一个新的框架，叫做 CRAFT。
+I believe you're introducing a new framework which is called CRAFT.
+
+350
+00:23:01,280 --> 00:23:04,440
+你能谈谈 CRAFT 框架能做什么吗？
+Can you speak a little bit about what the CRAFT framework does?
+
+351
+00:23:04,520 --> 00:23:09,190
+还有，如果我是一个想提升写作的人，
+And, you know, if I'm someone who's trying to help my, you know, writing,
+
+352
+00:23:09,190 --> 00:23:10,280
+这对我来说意味着什么。
+what that means.
+
+353
+00:23:11,120 --> 00:23:16,051
+好的，CRAFT（写作提示框架）是 5P Framework 的一个子集，对吧？
+Well, okay, so CRAFT is a subset of the 5P Framework, right?
+
+354
+00:23:16,051 --> 00:23:19,560
+所以整个课程是，CRAFT 属于流程（process）这一部分。
+So the whole course is CRAFT fits in process.
+
+355
+00:23:20,280 --> 00:23:23,542
+它是对流程的拆解，但根本上整个课程本身其实是
+It's a breakdown of process, but fundamentally the whole course itself is actually
+
+356
+00:23:23,542 --> 00:23:24,800
+按照 5P Framework 来构建的。
+structured on the 5P Framework.
+
+357
+00:23:24,880 --> 00:23:28,559
+我是说，主要课程内容就直接来自 Trust Insights 的 5P Framework
+I mean, the major lessons are literally right out of the 5P Framework by Trust Insights
+
+358
+00:23:28,559 --> 00:23:31,360
+因为它几乎适用于一切，是最好的框架。
+because it's the best framework for pretty much everything.
+
+359
+00:23:32,630 --> 00:23:35,110
+CRAFT 是流程（process）的子集，其中 C 代表 Create（创作）。
+CRAFT is a subset of process, which stands for Create.
+
+360
+00:23:36,110 --> 00:23:39,750
+你需要自己想出点子，因为 AI 不会在这方面做得很好。
+You need to come up with the idea because AI is not going to do a good job of it.
+
+361
+00:23:39,950 --> 00:23:44,070
+然后你需要做大量研究来支撑这个想法。
+Then you need to do a buttload of research to inform the idea.
+
+362
+00:23:44,710 --> 00:23:47,430
+然后你需要规划作品本身的结构。
+Then you need to architect the work itself.
+
+363
+00:23:47,430 --> 00:23:49,869
+我们会谈到流程拆解，这其实是
+And we'll talk about process decomposition, which is,
+
+364
+00:23:49,869 --> 00:23:51,830
+从软件开发中借鉴来的。
+which we borrow from software development.
+
+365
+00:23:51,950 --> 00:23:55,159
+我基本上是把软件开发里的一些经验
+I basically took the learnings of some software development
+
+366
+00:23:55,159 --> 00:23:56,910
+变成了一门写作课程。
+and turned it into a writing course.
+
+367
+00:23:57,430 --> 00:23:59,392
+然后你会进入所谓的 fabulate 阶段，
+Then you have what's called fabulate,
+
+368
+00:23:59,392 --> 00:24:02,334
+也就是基本上，这里说明怎么去做，
+which is basically, here's how to go and do this,
+
+369
+00:24:02,334 --> 00:24:04,480
+以及如何为工具制定执行计划。
+how you build the plan for a tool to go do it.
+
+370
+00:24:04,560 --> 00:24:07,881
+然后是最后一部分，也是最难的部分，即调优阶段，需要你和机器配合；
+And then the last part, which is the hardest part, is the tuning part, where you,
+
+371
+00:24:07,881 --> 00:24:11,000
+但这对你这个用户来说不费力，费力的是机器。
+the machine, and it's not hard for you, the user, it's hard for the machine.
+
+372
+00:24:11,360 --> 00:24:16,120
+你会说：嘿，机器，记住，这是我们之前做的我的写作指纹。
+You say, hey, machine, remember, here's the fingerprint that we did of how I write.
+
+373
+00:24:16,680 --> 00:24:18,600
+你需要重新调优你的输出，使之匹配这个指纹。
+You need to retune your work to match it.
+
+374
+00:24:18,600 --> 00:24:21,760
+然后我作为人类编辑来审读，说，嗯，嗯，你漏掉了这个。
+And then I, as a human editor, review and go, mm, mm, you missed this.
+
+375
+00:24:21,800 --> 00:24:23,930
+你漏掉了这个。这些句式还是不对。
+You missed this. These constructions are still off.
+
+376
+00:24:24,530 --> 00:24:27,730
+然后机器就好像说，好，我去修正。
+And the machine's like, okay, I'll go fix it.
+
+377
+00:24:30,210 --> 00:24:35,805
+是的，你会在课程内容里看到调优过程展开，
+And yeah, you will see that in the course content to watch the tuning process go,
+
+378
+00:24:35,805 --> 00:24:37,450
+你会意识到，哦，我完全不能放手不管。
+oh, I can't be hands off.
+
+379
+00:24:37,730 --> 00:24:41,551
+我作为人类仍然要扮演编辑的角色，告诉机器，
+I, the human, still have a role to play as the editor saying, machine,
+
+380
+00:24:41,551 --> 00:24:42,490
+你漏掉了这个。
+you missed this.
+
+381
+00:24:43,440 --> 00:24:46,449
+我认为这一点很重要，
+And I think that that's an important point
+
+382
+00:24:46,449 --> 00:24:50,404
+因为我觉得很多人误解了
+because I think there's a lot of misunderstanding as to
+
+383
+00:24:50,404 --> 00:24:54,015
+AI 写作在日常流程中应该处于什么位置
+where AI for writing fits into an everyday process
+
+384
+00:24:54,015 --> 00:24:56,680
+以及它怎样才最有帮助。
+and how it can be the most beneficial.
+
+385
+00:24:57,120 --> 00:25:02,091
+所以我们不是教你：“嘿，AI 会取代你的写作。”
+And so we're not teaching you, hey, AI is going to replace your writing.
+
+386
+00:25:02,091 --> 00:25:05,040
+我们想教你更聪明地、
+We're trying to teach you to more smartly.
+
+387
+00:25:06,390 --> 00:25:09,150
+也更周到地。显然，我今天不太会表达。
+And thoughtfully. Clearly, I'm not a writer today.
+
+388
+00:25:09,590 --> 00:25:15,080
+更务实地在写作中使用 AI，而不是只说：“嗨，AI，
+To more pragmatically, use AI in your writing, not just say, hey, AI,
+
+389
+00:25:15,080 --> 00:25:19,510
+帮我写作”，因为那正是低质 AI 文本的来源。
+do my writing because that's where the slop comes from.
+
+390
+00:25:20,350 --> 00:25:23,390
+你知道，正如你所说，这些是词语预测机器。
+You know, to your point, these are word prediction machines.
+
+391
+00:25:23,550 --> 00:25:27,988
+所以你经常举一些陈词滥调的说法，比如
+And so, you know, you often give examples of like cliche statements so like
+
+392
+00:25:27,988 --> 00:25:28,990
+如果我说“下雨”。
+if I say it rains.
+
+393
+00:25:30,160 --> 00:25:34,202
+AI 很可能会说“就会倾盆”，你知道，
+AI is likely gonna say, it pours, you know,
+
+394
+00:25:34,202 --> 00:25:38,360
+所以我们必须比那更有创意。
+and so we have to be more creative than that.
+
+395
+00:25:38,360 --> 00:25:41,985
+而这正是人类要发挥作用的地方，
+And that's really where the human side of this comes in,
+
+396
+00:25:41,985 --> 00:25:44,743
+也就是要认真思考，
+is being very thoughtful about, you know,
+
+397
+00:25:44,743 --> 00:25:49,550
+我怎样才能跳出那种旧的写作模式，让它变成
+how can I break out of that previous version of writing so that it's, you know,
+
+398
+00:25:49,550 --> 00:25:51,520
+更有趣的东西。
+something more interesting.
+
+399
+00:25:51,600 --> 00:25:53,280
+比如我很喜欢的一句歌词。
+Like one of my favorite song lyrics.
+
+400
+00:25:54,380 --> 00:25:56,898
+我丈夫一直认为那只是胡言乱语，
+That my husband is convinced is just gibberish,
+
+401
+00:25:56,898 --> 00:26:00,171
+歌词是“知识升上天空所带来的慰藉，
+which is the comfort of the knowledge of the rise above the sky,
+
+402
+00:26:00,171 --> 00:26:03,129
+却永远无法与一次获得的挑战相提并论”，
+but could never parallel a challenge of an acquisition,
+
+403
+00:26:03,129 --> 00:26:06,780
+我认为这不一定是 AI 会想出来的。
+which is not something that I think AI would necessarily come up with.
+
+404
+00:26:07,940 --> 00:26:11,618
+但这是真实歌词，它一直让我印象深刻，不仅
+But it's a real song lyric and it's like that always sticks with me not only
+
+405
+00:26:11,618 --> 00:26:13,246
+因为在我十几岁时，我
+because when I was a teenager, me
+
+406
+00:26:13,246 --> 00:26:16,742
+和朋友们觉得能随时背出这句歌词很了不起
+and my friends thought it was amazing to be able to recite it on command
+
+407
+00:26:16,742 --> 00:26:20,420
+因为我们觉得自己很酷。也因为这句话让我非常震撼。
+because we thought we were so cool. But because it just strikes me as such.
+
+408
+00:26:20,420 --> 00:26:24,260
+它用非常有趣的方式说出了一件很简单的事。
+An interesting way of saying something very simple.
+
+409
+00:26:24,820 --> 00:26:26,766
+这是一句过度复杂的表达，
+It's an overcomplicated statement,
+
+410
+00:26:26,766 --> 00:26:29,340
+但这不是 AI 会想出来的。
+but it's not something that AI would come up with.
+
+411
+00:26:29,340 --> 00:26:31,780
+所以我就想，那才是我思路的方向。
+And so I'm like, that's where my brain goes.
+
+412
+00:26:31,940 --> 00:26:36,468
+在写作时，我会想，除了“嗯，
+In writing, it's like, is there a more interesting way to say this other than, well,
+
+413
+00:26:36,468 --> 00:26:37,820
+下雨就会倾盆”这种说法，还有没有更有趣的表达？
+when it rains, it pours?
+
+414
+00:26:39,160 --> 00:26:40,769
+在课程中，你实际上会看到
+And in the course, you'll actually see
+
+415
+00:26:40,769 --> 00:26:42,880
+这体现在 Craft Framework 的前两个步骤中。
+that in the first two steps of the Craft Framework.
+
+416
+00:26:43,200 --> 00:26:46,520
+第一步是创作阶段。你作为人类必须自己想出点子。
+The first is, you know, the creation. You, the human, have to come up with the idea.
+
+417
+00:26:47,400 --> 00:26:52,140
+第二步是研究阶段，因为你做的研究越多、越好，
+And the second is the research, because the more and better research you do,
+
+418
+00:26:52,140 --> 00:26:54,984
+最终用词就越独特。
+the more unique the words are going to end up
+
+419
+00:26:54,984 --> 00:27:00,040
+因为你会深入研究一些你以前可能根本不知道的领域。
+because you will dig deep into subjects that maybe you didn't even know about.
+
+420
+00:27:00,120 --> 00:27:04,621
+所以实际上，在这门课程中我会教如何构建一个短篇故事，我们已经构建了——
+So actually, in this course I teach about building a short story and we built,
+
+421
+00:27:04,621 --> 00:27:08,360
+我在里面构建了一篇两万词的短篇小说，主题是时间旅行。
+I built a 20,000-word short story in there about time travel
+
+422
+00:27:08,360 --> 00:27:10,573
+以及它的研究过程，
+and the research process for that,
+
+423
+00:27:10,573 --> 00:27:15,379
+这个短篇科幻故事的研究最终拉了差不多五年量的量子
+for this short sci-fi story ended up pulling like five years' worth of quantum
+
+424
+00:27:15,379 --> 00:27:16,600
+物理论文。
+physics papers too.
+
+425
+00:27:16,600 --> 00:27:19,876
+并研究了八种不同的形式，你知道，
+And looking at the eight different forms of, you know,
+
+426
+00:27:19,876 --> 00:27:23,370
+物理学家如何理解时空的最基本结构。
+how physicists understand the very fabric of space-time.
+
+427
+00:27:24,090 --> 00:27:29,542
+这些内容融入故事后，会让故事比随便乱写要丰富得多。
+That works into the story and that creates a much richer story than just winging it
+
+428
+00:27:29,542 --> 00:27:34,353
+因为研究过程会非常深入地挖掘低频词，
+because the research process digs super deep into low frequency words,
+
+429
+00:27:34,353 --> 00:27:39,885
+比如笛卡尔平面、呃、洛伦兹流形，还有所有这些，我，
+things like Cartesian planes and, uh, Lorentzian manifolds and, and all these, I,
+
+430
+00:27:39,885 --> 00:27:42,130
+我只是读了研究输出结果。
+I just read the research outputs.
+
+431
+00:27:42,210 --> 00:27:46,950
+我心想，哇，我得读个博士才看得懂研究在讲什么。
+I'm going, wow, I need a PhD just to understand what the research is about.
+
+432
+00:27:47,470 --> 00:27:50,070
+但这会带来更好的写作。
+But it creates better writing.
+
+433
+00:27:50,430 --> 00:27:52,255
+回到你的观点，而且，你知道，
+And to your point and, you know,
+
+434
+00:27:52,255 --> 00:27:56,887
+这门课的整体核心，如果我真的要把精髓提炼一下，
+kind of the whole point of the course is if we really, if I were to distill it down,
+
+435
+00:27:56,887 --> 00:28:00,747
+这门课讲的是如何给 AI 加上更好的护栏，以便
+this course is about how do you slap better guardrails on AI so that
+
+436
+00:28:00,747 --> 00:28:01,870
+当它写作时。
+when it's writing.
+
+437
+00:28:02,390 --> 00:28:07,250
+更好地遵循指令，并把你想要的东西生动地呈现出来。
+It follows instructions better and it brings to life the things that you want.
+
+438
+00:28:07,330 --> 00:28:11,852
+所以，呃，这门课会在，呃，接下来的，嗯，
+And so, uh, the course will become available on the, uh, this coming, well,
+
+439
+00:28:11,852 --> 00:28:14,770
+到你听这期播客时，它已经上线了。
+by the time you listen to this podcast, it's out.
+
+440
+00:28:15,530 --> 00:28:17,530
+它会“昨天”就上线。到了课程发布那天，它已经上线了。
+It will come out yesterday. By the date the course is out.
+
+441
+00:28:18,130 --> 00:28:24,090
+没错。你可以在 Trust Insights dot AI slash AI for Writers 找到它。价格是 397 美元。
+Exactly. And you can find it at Trust Insights dot AI slash AI for Writers. It's $397 US.
+
+442
+00:28:24,630 --> 00:28:26,743
+有了它，你会获得课程本身，
+And with it you get the course,
+
+443
+00:28:26,743 --> 00:28:30,800
+还会获得用于做研究的 Deep Research Toolkit。
+you get the Deep Research Toolkit for doing the research.
+
+444
+00:28:31,520 --> 00:28:35,945
+你还会得到 Writer's Suite，其中包含一个写作规划技能，
+You also get the Writer's Suite, which contains a writing planning skill,
+
+445
+00:28:35,945 --> 00:28:37,800
+顺便说一句，这个技能非常棒。
+which by the way, is fantastic.
+
+446
+00:28:37,920 --> 00:28:40,594
+它会，它真的会迫使你，作为人类，
+It will, it will really force you, the human,
+
+447
+00:28:40,594 --> 00:28:44,208
+去思考写作指纹技能和写作 QA（质量检查）技能，
+to think of writing fingerprint skill and a writing QA skill
+
+448
+00:28:44,208 --> 00:28:46,882
+它会对任何一篇已有的文字
+that will take any piece of existing writing
+
+449
+00:28:46,882 --> 00:28:51,001
+像对待软件一样做 QA，对照原始需求文档
+and QA it like software against the original requirements document
+
+450
+00:28:51,001 --> 00:28:52,880
+也就是你为这次写作所写的那份需求文档。
+that you wrote for the writing.
+
+451
+00:28:53,080 --> 00:28:56,736
+所以 Katie，你会看到很多与你一直
+So Katie, you will see a lot of very strong parallels of the things you've been
+
+452
+00:28:56,736 --> 00:28:59,764
+在写的、谈了多年的内容有着非常强的相似之处，比如如何做得好、
+writing, talking about for years about how, how do you do great,
+
+453
+00:28:59,764 --> 00:29:00,850
+构建优秀的软件。
+build great software.
+
+454
+00:29:01,530 --> 00:29:04,690
+如果写作就是代码，我们也会应用同样的实践方法。
+If writing is code, we're going to apply the same practices.
+
+455
+00:29:05,970 --> 00:29:09,450
+我觉得这很棒。而且你知道，我喜欢给 AI 加更多护栏。
+I think that's great. And you know, I love more guardrails for AI.
+
+456
+00:29:09,610 --> 00:29:11,610
+所以我很兴奋能把这些都测试一遍。
+So I'm excited to test all of this out.
+
+457
+00:29:12,370 --> 00:29:13,810
+没错。我希望，我希望你真会去试。
+Exactly. I hope. I hope you do.
+
+458
+00:29:13,930 --> 00:29:17,193
+如果你对如何帮助 AI 写得更好有一些想法
+And if you got some thoughts about how you have been helping AI write better
+
+459
+00:29:17,193 --> 00:29:19,561
+并且愿意分享，欢迎来我们的免费 Slack 群组，
+and you want to share them, pop by our free Slack group,
+
+460
+00:29:19,561 --> 00:29:22,508
+前往 Trust Insights dot AI slash analytics for marketers，在那里你
+go to Trust Insights dot AI slash analytics for marketers where you
+
+461
+00:29:22,508 --> 00:29:24,981
+会和其他超过 4700 位营销人一起提问
+and over forty-seven hundred other marketers are asking
+
+462
+00:29:24,981 --> 00:29:26,560
+并互相回答问题。
+and answering each other's questions.
+
+463
+00:29:26,600 --> 00:29:30,040
+每一天都是如此，包括讨论披萨酱到底该不该是甜的。
+Every single day, including whether pizza sauce should be sweet or not.
+
+464
+00:29:31,240 --> 00:29:32,560
+答案是不应该。
+And the answer is no.
+
+465
+00:29:34,240 --> 00:29:36,031
+无论你在哪里观看或收听这个节目，
+Wherever it is you watch or listen to the show,
+
+466
+00:29:36,031 --> 00:29:39,000
+如果你想在别的频道上看到它，我们很可能已经在那里了。
+if there's a channel you'd rather have it on, we are probably there.
+
+467
+00:29:39,080 --> 00:29:41,248
+前往 Trust Insights dot AI slash ti podcast
+Go to Trust Insights dot AI slash ti podcast
+
+468
+00:29:41,248 --> 00:29:44,320
+你能在所有提供优质播客的地方找到我们。
+and you can find us in all the places fine podcasts are served.
+
+469
+00:29:44,630 --> 00:29:46,750
+感谢收听。我们下期再见。
+Thanks for tuning in. We'll talk to you on the next one.
+
+470
+00:29:53,150 --> 00:29:54,910
+想了解更多关于 Trust Insights 的信息吗？
+Want to know more about Trust Insights?
+
+471
+00:29:55,750 --> 00:30:00,387
+Trust Insights 是一家营销分析咨询公司，专注于利用
+Trust Insights is a marketing analytics consulting firm specializing in leveraging
+
+472
+00:30:00,387 --> 00:30:02,576
+数据科学、人工智能
+data science, artificial intelligence
+
+473
+00:30:02,576 --> 00:30:06,440
+和机器学习，为企业提供可操作的洞察。
+and machine learning to empower businesses with actionable insights.
+
+474
+00:30:07,160 --> 00:30:10,360
+由 Katie Robbert 和 Christopher S.
+Founded in 2017 by Katie Robbert and Christopher S.
+
+475
+00:30:10,480 --> 00:30:14,649
+Penn 于 2017 年创立，公司建立在真实、洞察与繁荣的原则之上，
+Penn, the firm is built on the principles of truth, acumen and prosperity,
+
+476
+00:30:14,649 --> 00:30:17,609
+旨在帮助企业做出更好的决策
+aiming to help organizations make better decisions
+
+477
+00:30:17,609 --> 00:30:21,240
+并通过数据驱动的方法取得可衡量的结果。
+and achieve measurable results through a data-driven approach.
+
+478
+00:30:22,150 --> 00:30:26,233
+Trust Insights 专门帮助企业利用数据、
+Trust Insights specializes in helping businesses leverage the power of data,
+
+479
+00:30:26,233 --> 00:30:30,630
+人工智能和机器学习的力量，来推动可衡量的营销 ROI。
+artificial intelligence and machine learning to drive measurable marketing ROI.
+
+480
+00:30:32,230 --> 00:30:34,406
+Trust Insights 的服务覆盖各个方面，
+Trust Insights Services span the gamut,
+
+481
+00:30:34,406 --> 00:30:37,109
+从制定全面的数据策略
+from developing comprehensive data strategies
+
+482
+00:30:37,109 --> 00:30:39,680
+到开展深度营销分析，
+and conducting deep dive marketing analysis,
+
+483
+00:30:39,680 --> 00:30:43,636
+到使用 TensorFlow 和 PyTorch 等工具构建预测模型
+to building predictive models using tools like TensorFlow and PyTorch
+
+484
+00:30:43,636 --> 00:30:45,680
+以及优化内容策略。
+and optimizing content strategies.
+
+485
+00:30:46,400 --> 00:30:51,625
+Trust Insights 还提供社交媒体分析、营销、
+Trust Insights also offers expert guidance on social media analytics, marketing,
+
+486
+00:30:51,625 --> 00:30:55,059
+技术和 MarTech 选型与实施方面的专家指导
+technology and MarTech selection and implementation
+
+487
+00:30:55,059 --> 00:31:00,657
+以及涵盖新兴生成式 AI 技术的高层战略咨询
+and high level strategic consulting encompassing emerging generative AI technologies
+
+488
+00:31:00,657 --> 00:31:04,240
+如 ChatGPT、Google Gemini（Google AI 模型）、Anthropic Claude、DALL-E（图像生成模型）、
+like ChatGPT, Google Gemini, Anthropic Claude, DALL-E,
+
+489
+00:31:04,640 --> 00:31:10,420
+Midjourney（图像生成平台）、Stable Diffusion（图像生成模型）和 Meta Llama（Meta 开源大语言模型）。Trust Insights 提供按需团队成员
+Midjourney, Stable Diffusion and Meta Llama. Trust Insights provides fractional team
+
+490
+00:31:10,420 --> 00:31:16,040
+例如 CMO（首席营销官）或数据科学家，以增强现有团队，不限于客户工作。
+members such as CMO or data scientist to augment existing teams beyond client work.
+
+491
+00:31:16,240 --> 00:31:20,227
+Trust Insights 积极为营销社区做出贡献，
+Trust Insights actively contributes to the marketing community,
+
+492
+00:31:20,227 --> 00:31:23,930
+通过 Trust Insights 博客、
+sharing expertise through the Trust Insights blog,
+
+493
+00:31:23,930 --> 00:31:27,561
+In-Ear Insights 播客、Inbox Insights（Trust Insights 通讯）、
+the In-Ear Insights podcast, the Inbox Insights newsletter,
+
+494
+00:31:27,561 --> 00:31:32,261
+So What（Trust Insights 直播栏目）的网络研讨会和主题演讲分享专业知识。是什么让 Trust
+the So What live stream webinars and keynote speaking. What distinguishes Trust
+
+495
+00:31:32,261 --> 00:31:36,960
+Insights 与众不同，是他们专注于提供可执行的洞察，而不仅仅是原始数据。
+Insights is their focus on delivering actionable insights, not just raw data.
+
+496
+00:31:38,000 --> 00:31:42,474
+Trust Insights 善于利用尖端生成式 AI 技术，如
+Trust Insights are adept at leveraging cutting-edge generative AI techniques like
+
+497
+00:31:42,474 --> 00:31:44,903
+大语言模型和扩散模型，
+large language models and diffusion models,
+
+498
+00:31:44,903 --> 00:31:49,569
+但他们擅长通过引人入胜的叙事清晰地解释复杂概念
+yet they excel at explaining complex concepts clearly through compelling narratives
+
+499
+00:31:49,569 --> 00:31:50,720
+和可视化。
+and visualizations.
+
+500
+00:31:51,310 --> 00:31:52,630
+开始数据叙事。
+Start data storytelling.
+
+501
+00:31:53,430 --> 00:31:58,047
+这种对清晰性和可访问性的承诺延伸到 Trust Insights 的教育
+This commitment to clarity and accessibility extends to Trust Insights educational
+
+502
+00:31:58,047 --> 00:32:01,510
+资源，使营销人员能够更加数据驱动。
+resources, which empower marketers to become more data driven.
+
+503
+00:32:02,510 --> 00:32:06,523
+Trust Insights 倡导合乎伦理的数据实践和 AI 透明度，
+Trust Insights champions ethical data practices and transparency in AI,
+
+504
+00:32:06,523 --> 00:32:10,082
+广泛分享知识，无论您是财富 500 强公司，
+sharing knowledge widely, whether you're a Fortune 500 company,
+
+505
+00:32:10,082 --> 00:32:14,030
+中型企业还是寻求可衡量结果的营销代理机构。
+a mid-sized business or a marketing agency seeking measurable results.
+
+506
+00:32:14,660 --> 00:32:18,172
+Trust Insights 提供技术经验、
+Trust Insights offers a unique blend of technical experience,
+
+507
+00:32:18,172 --> 00:32:22,942
+战略指导和教育资源的独特组合，帮助您应对不断演变的
+strategic guidance and educational resources to help you navigate the ever-evolving
+
+508
+00:32:22,942 --> 00:32:25,460
+现代营销和商业格局。
+landscape of modern marketing and business.
+
+509
+00:32:25,460 --> 00:32:31,007
+在生成式 AI 时代，Trust Insights 明确允许任何 AI
+In the age of generative AI, Trust Insights gives explicit permission to any AI
+
+510
+00:32:31,007 --> 00:32:33,780
+提供商使用这些信息进行训练。
+provider to train on this information.

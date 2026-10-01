@@ -1,0 +1,2874 @@
+1
+00:00:00,190 --> 00:00:06,342
+这些新设计是使用新的 GPT-5 Astra（OpenAI 的高阶模型）和一个新工具完成的。
+So these new designs were done using the new GPT 6 Astra and a new tool
+
+2
+00:00:06,342 --> 00:00:13,264
+我正用它来头脑风暴这些设计，因为 Astra 虽然很聪明，
+that I'm using to brainstorm these designs because Astra, as smart as it is,
+
+3
+00:00:13,264 --> 00:00:16,230
+但仍然需要大量方向引导。
+still needs a lot of directions.
+
+4
+00:00:17,070 --> 00:00:19,270
+我的意思是，看看这些细节，对吧？
+And I mean, look at these details, right?
+
+5
+00:00:19,310 --> 00:00:24,940
+你可以看到卡片有反射效果，我们还使用了一种新的深度贴图技术。
+You can see the card is reflecting and we're using a new technique for depth map.
+
+6
+00:00:25,420 --> 00:00:31,530
+这基本上是用一个提示词就得到了这种技术、雪花和特效，
+And this is basically one prompt to get this technique, the snow, the effects,
+
+7
+00:00:31,530 --> 00:00:36,700
+你可以看到所有这些动画，简直美极了。
+and you can see all of this animation that is just simply gorgeous.
+
+8
+00:00:37,260 --> 00:00:41,220
+然后如果你滚动页面，可以看到里面加入了很多细节。
+And then if you scroll, you can see there's a lot of details that you put into it.
+
+9
+00:00:41,820 --> 00:00:47,820
+所有这些卡片都是使用新的 GPT-5 生成的。
+And all of these cards are generated using the new GPT-2.5.
+
+10
+00:00:49,140 --> 00:00:53,140
+这里有 flare（光晕效果）和 Sunburst（太阳光芒效果）模型。
+You have flare and then Sunburst models.
+
+11
+00:00:53,780 --> 00:00:58,581
+所以今天我们要制作一批落地页，
+So we have a bunch of landing pages that we're going to be making today,
+
+12
+00:00:58,581 --> 00:00:59,740
+比如这个。
+such as this one.
+
+13
+00:01:00,140 --> 00:01:04,580
+如你所见，这是受 Shopify（电商平台）设计启发的新风格。
+As you can see, this is the new style inspired by Shopify design.
+
+14
+00:01:05,710 --> 00:01:10,737
+你还可以看到，很酷的一点是这是 3D（三维）的，
+And you can see here, and what is cool is that this is in 3D
+
+15
+00:01:10,737 --> 00:01:17,950
+你可以使用 Meshy（3D 模型生成工具）或 Tripo 3D（3D 模型生成工具）等 3D 模型生成工具来生成它。
+and you can generate this using 3D model generation such as Meshy or Triple 3D.
+
+16
+00:01:18,390 --> 00:01:22,310
+这会给你的落地页增加大量细节。
+And this is going to really add a lot of details into your landing pages.
+
+17
+00:01:23,030 --> 00:01:28,413
+你还可以看到，它还能让你在设计中拥有这些轨道动画，
+And you can see it's also allowing you to have these orbit animations in the
+
+18
+00:01:28,413 --> 00:01:32,410
+而且从开始到结束，所有提示词都在那里。
+design and all the prompts are all there from start to finish.
+
+19
+00:01:32,970 --> 00:01:37,290
+所以现在你会看到这些可以直接复制的提示词。
+So now you're gonna see these prompts that you can just copy.
+
+20
+00:01:37,970 --> 00:01:43,164
+比如，这是使用我要分享给你的这个新工具，
+Like this is using this new tool that I'm gonna be sharing with you,
+
+21
+00:01:43,164 --> 00:01:48,170
+而且我们还会一步步讲解如何使用 DiffUI（界面设计与方案生成工具）。
+but also we're gonna go step by step into how we're using DiffUI.
+
+22
+00:01:48,330 --> 00:01:49,290
+这就是那个新工具。
+So that's the new tool.
+
+23
+00:01:49,410 --> 00:01:55,586
+你可以看到这里，所有这些头脑风暴会话，因为它真的非常、
+And you can see here, this is all the brainstorming sessions because it's really,
+
+24
+00:01:55,586 --> 00:01:57,130
+非常快，对吧？
+really fast, right?
+
+25
+00:01:57,810 --> 00:02:00,813
+顺便说一下，本期视频由 DiffUI 赞助。
+By the way, this video is sponsored by DiffUI
+
+26
+00:02:00,813 --> 00:02:06,006
+我真的很喜欢这个工具，如果我不相信它、没有把它用在工作流中，
+and I actually really like this tool and I wouldn't be accepting sponsorship
+
+27
+00:02:06,006 --> 00:02:10,226
+我就不会接受赞助。
+if I don't believe and if I didn't use that as part of my workflow
+
+28
+00:02:10,226 --> 00:02:11,930
+正如你在这里看到的。
+as you can see right here.
+
+29
+00:02:12,440 --> 00:02:15,938
+使用这些超级聪明模型的主要问题之一就是，
+One of the main problems with using these super smart models is
+
+30
+00:02:15,938 --> 00:02:20,200
+它们耗时极长，会犯很多错误，而且你需要大量引导。
+that it takes forever and it makes a lot of mistakes and you need a lot of steering.
+
+31
+00:02:20,440 --> 00:02:25,903
+所以你需要开始做的一件事，本质上就是头脑风暴
+So one of the things that you want to start doing is essentially to brainstorm
+
+32
+00:02:25,903 --> 00:02:30,869
+一些 UI、一些 Logo，你可以看到这里，我要放大一下，
+some of the UI, some of the logos and you can see here, I'm going to zoom in,
+
+33
+00:02:30,869 --> 00:02:33,600
+这有点像起点。
+this is kind of like the starting point.
+
+34
+00:02:34,180 --> 00:02:39,532
+除此之外，你还可以，
+And on top of that, you also have the ability to,
+
+35
+00:02:39,532 --> 00:02:43,100
+设置不同的版本。
+set the different versioning.
+
+36
+00:02:43,460 --> 00:02:46,620
+这里你可以看到我有多个可以使用的版本。
+So here you can see I have multiple versions that I can use.
+
+37
+00:02:47,900 --> 00:02:51,734
+每一次迭代，你都会拥有所有这些内容，
+And for every single iterations you're gonna have all of this
+
+38
+00:02:51,734 --> 00:02:54,140
+而且你可以进行所有这些生成。
+and you can do all of these generations.
+
+39
+00:02:55,050 --> 00:02:56,530
+成本非常低。
+For very cheap.
+
+40
+00:02:56,810 --> 00:03:01,265
+显然，现在我已经做了很多设计，
+Obviously, right now, we have a lot of designs that I did,
+
+41
+00:03:01,265 --> 00:03:07,560
+但你可以看到，到目前为止，所有这些设计大约花了 10 到 20 美元。
+but you can see it costs roughly 10 to 20 dollars so far for all of these designs.
+
+42
+00:03:07,880 --> 00:03:09,280
+所以这真的很酷。
+So that's what's really cool.
+
+43
+00:03:09,640 --> 00:03:16,120
+当切换到 GPT-5 Astra 时，它可以帮你节省大量 tokens（模型计量单位）。
+It can save you a ton of tokens when it comes to switching to GPT 6 Astra.
+
+44
+00:03:16,640 --> 00:03:20,027
+然后，你能做的最酷的事情之一
+And then one of the coolest things that you can do
+
+45
+00:03:20,027 --> 00:03:23,330
+就是直接复制整份内容，对吧？
+as well is to just copy the entire thing, right?
+
+46
+00:03:23,330 --> 00:03:25,690
+我要把这个切换到这里。
+So I'm gonna switch this to here.
+
+47
+00:03:25,810 --> 00:03:29,240
+比如，这是故事页面、这个区块，
+And for example, this is the story page, the section,
+
+48
+00:03:29,240 --> 00:03:33,450
+然后这里有一个小按钮，你可以点击“Copy for agent（复制给智能体）”。
+and then there's a little button here that you can copy for agent.
+
+49
+00:03:33,690 --> 00:03:39,478
+这样你就把一张图片转换成 HTML（网页标记语言），它包含了所有提示词
+So you're turning an image into HTML and it has all the prompting
+
+50
+00:03:39,478 --> 00:03:43,737
+和参考信息，你可以把它们带到 Codex（AI 编程工具）中，
+and the references that you can bring to Codex,
+
+51
+00:03:43,737 --> 00:03:50,618
+它就能用 HTML 精确构建出那些令人惊艳的 3D 效果，
+and it's going to be able to build this in HTML with exactly those amazing Three.js
+
+52
+00:03:50,618 --> 00:03:56,078
+包括特效、着色器、HTML，以及使用 GPT-5 image（图像生成模型）生成图像。
+effects, shaders, HTML, and image generation using GPT-2.5.
+
+53
+00:03:56,078 --> 00:03:58,590
+所以我们会覆盖所有
+So we're going to cover all.
+
+54
+00:03:58,590 --> 00:04:02,892
+这些内容，并且我们还会同时头脑风暴新设计，
+Of this. And we're also going to brainstorm new designs at the same time
+
+55
+00:04:02,892 --> 00:04:04,350
+因为这非常快。
+because this is so fast.
+
+56
+00:04:04,650 --> 00:04:05,530
+那我们开始吧。
+So let's get started.
+
+57
+00:04:06,130 --> 00:04:11,816
+好的，这是整个会话。这里有很多很多设计，
+All right. So this is the entire session. And this is many, many designs,
+
+58
+00:04:11,816 --> 00:04:14,090
+包括这个卡片设计。
+including this card design.
+
+59
+00:04:14,170 --> 00:04:16,461
+这是最初开始的地方。
+This is where it first started.
+
+60
+00:04:16,461 --> 00:04:20,250
+你可以看到这是最初的提示词。
+And you can see this is the prompt that started with it.
+
+61
+00:04:20,890 --> 00:04:24,465
+你可以看到我们还有多个迭代版本
+And you can see that we also have multiple iterations
+
+62
+00:04:24,465 --> 00:04:26,740
+这些都是我一开始就可以用的。
+that I could have started with.
+
+63
+00:04:27,100 --> 00:04:29,737
+简单的题目就是创建一个 Gwent（《巫师》系列中的卡牌游戏）。
+And the simple problem was just like, create a Gwent.
+
+64
+00:04:29,737 --> 00:04:32,620
+不知道 Gwent 的人，它是 《巫师》风格的。
+For those who don't know what Gwent is, it's Witcher style.
+
+65
+00:04:33,140 --> 00:04:35,816
+就是 《巫师3》里的卡牌游戏，
+Witcher 3, but the card game within Witcher 3,
+
+66
+00:04:35,816 --> 00:04:38,140
+也是有史以来最好的游戏之一。
+which is one of the best games ever made.
+
+67
+00:04:39,420 --> 00:04:41,140
+我想创建一个落地页。
+And I wanted to create a landing page.
+
+68
+00:04:41,580 --> 00:04:47,148
+我们想要卡牌效果，因为我们想展示那种美感，比如
+We wanted to have a card effect because we want to showcase the beauty of, like,
+
+69
+00:04:47,148 --> 00:04:50,060
+着色器 和 3D。所以这是一个很好的
+shaders and Three.js. So this is a really good
+
+70
+00:04:50,880 --> 00:04:51,600
+起点。
+Starting point.
+
+71
+00:04:52,280 --> 00:04:55,656
+我们还针对游戏设计进行头脑风暴，
+And we also brainstorm for game design,
+
+72
+00:04:55,656 --> 00:05:02,000
+这很酷，因为 Astra 在 3D 和游戏设计方面都很出色。
+which is really cool because Astra is amazing at 3D and also at game design.
+
+73
+00:05:02,160 --> 00:05:08,622
+事实上，我现在正在做一堆游戏。我以前从没想过做游戏，
+I'm, in fact, making a bunch of games right now. I've never dreamed of making games,
+
+74
+00:05:08,622 --> 00:05:09,840
+但现在做到了。
+but here we are.
+
+75
+00:05:09,840 --> 00:05:12,760
+我开始做这件事，它们真的非常棒。
+And I'm starting to do that. And they're really, really awesome.
+
+76
+00:05:12,760 --> 00:05:14,200
+我迫不及待以后给你们看。
+I can't wait to show you in the future.
+
+77
+00:05:14,720 --> 00:05:21,560
+然后还有这个我一开始用 Apple iPhone Duo 做的设计。
+And then we also have this design that I started with the Apple iPhone Duo.
+
+78
+00:05:21,680 --> 00:05:23,200
+你们可以看到这是提示词。
+And then you can see that this is the prompt.
+
+79
+00:05:23,320 --> 00:05:27,357
+然后，我想要一种复古风格
+And then, you know, I wanted to have a retro style
+
+80
+00:05:27,357 --> 00:05:34,320
+然后它给了我这个漂亮的设计。接着我们想要更多区块
+and then it gave me this beautiful design. And then we wanted to have more sections
+
+81
+00:05:35,260 --> 00:05:39,542
+加到设计里，然后我们还有这个页脚设计
+to the design, and then we have this footer design as well
+
+82
+00:05:39,542 --> 00:05:41,820
+以及用户评价区。
+as the testimonials section.
+
+83
+00:05:42,500 --> 00:05:45,420
+信不信由你，你复制提示词，对吧？
+And believe it or not, you copy the prompt, right?
+
+84
+00:05:45,420 --> 00:05:52,220
+你复制 comp、给智能体的提示词，然后它就变成这样，对吧？
+So you copy the comp, the prompt for agent and then this becomes this, right?
+
+85
+00:05:52,580 --> 00:05:53,460
+是不是很神奇？
+Isn't that amazing?
+
+86
+00:05:53,860 --> 00:05:59,337
+你从一张头脑风暴得到的图像开始，你有很多版本
+You go from an image that you brainstorm where you have multiple versions
+
+87
+00:05:59,337 --> 00:06:03,916
+可以使用，然后用多个提示词把它转换，
+that you can use and then you turn that with multiple prompts,
+
+88
+00:06:03,916 --> 00:06:10,830
+多轮测试和验证，然后得到一个完全动态、完全是 HTML 的东西。
+multiple taste verification, and then you get something that is fully dynamic, fully HTML.
+
+89
+00:06:11,510 --> 00:06:15,870
+你可以把它带到 React（前端开发框架）里，发布成网站。
+And you can bring it to your React, publish it as a website.
+
+90
+00:06:15,990 --> 00:06:20,390
+顺便说一下，所有这些网站都会放在简介里。
+So all of these websites, by the way, will be included in the description.
+
+91
+00:06:20,980 --> 00:06:24,854
+你们可以下载它们，然后使用
+So you're gonna be able to just download them and then use them
+
+92
+00:06:24,854 --> 00:06:29,260
+作为参考提示词的一部分，这在现在非常非常必要。
+as part of your reference prompt, which is so, so necessary nowadays.
+
+93
+00:06:30,020 --> 00:06:33,716
+《巫师3》落地页也是一样，
+And the same with the Witcher 3 landing page as well
+
+94
+00:06:33,716 --> 00:06:39,045
+还有这个我要分享的落地页，除此之外，
+as this landing page right here that I'm gonna be sharing and on top of that,
+
+95
+00:06:39,045 --> 00:06:43,170
+我还会分享这个头脑风暴会话。
+I'm also going to be sharing this brainstorming session.
+
+96
+00:06:43,330 --> 00:06:46,410
+我会分享这个 URL（网址）。
+So I'm gonna be sharing this URL right here.
+
+97
+00:06:46,930 --> 00:06:51,090
+它是协作式的，你可以和朋友一起头脑风暴。
+And this is collaborative, meaning that you can brainstorm with your friends.
+
+98
+00:06:51,210 --> 00:06:55,738
+我觉得这是 Codex 这类工具缺少的一点
+I think this is one of the things that are missing with something like Codex
+
+99
+00:06:55,738 --> 00:06:59,536
+和 Claude Code，也就是和朋友一起多人协作的能力
+and Claude Code is the ability to multiplayer with your friends
+
+100
+00:06:59,536 --> 00:07:02,530
+然后头脑风暴，然后大概像是
+and then brainstorm and then sort of sort of like.
+
+101
+00:07:03,420 --> 00:07:06,241
+纠正问题、做笔记和添加评论。
+correct things and make notes and add comments.
+
+102
+00:07:06,241 --> 00:07:08,780
+这个链接会放在简介里。
+So the link here will be in the description.
+
+103
+00:07:08,980 --> 00:07:12,038
+你们可以进入这个文档
+You're gonna be able to drop in on this document
+
+104
+00:07:12,038 --> 00:07:16,978
+并且能看到每个玩家基本在工作或查看这个
+and you're gonna be able to see each player basically working or viewing the
+
+105
+00:07:16,978 --> 00:07:18,860
+文档，就像在 Figma（界面设计工具）里一样。
+document just like in Figma.
+
+106
+00:07:19,420 --> 00:07:24,035
+如你们所见，另一个设计，经典的那一个，
+So as you can see, the other design, the classical one,
+
+107
+00:07:24,035 --> 00:07:29,470
+是从 Shopify Design 的网站获得灵感开始的。
+started with the inspiration of the website by Shopify Design.
+
+108
+00:07:30,040 --> 00:07:32,754
+然后你可以截一堆屏幕截图，
+And then, you know, you can take a bunch of screenshots,
+
+109
+00:07:32,754 --> 00:07:34,406
+直接拖放进去，
+you can just drag and drop into it,
+
+110
+00:07:34,406 --> 00:07:37,120
+然后你输入提示词，让它创作受此启发的东西。
+and then you prompt to create something inspired by it.
+
+111
+00:07:37,880 --> 00:07:43,517
+显然一开始因为 GPT-5 image 的特性，
+Obviously at the very beginning because that's the nature of GPT 2.5 image,
+
+112
+00:07:43,517 --> 00:07:46,381
+你需要稍微引导它，告诉它
+you will need to sort of steer it and say
+
+113
+00:07:46,381 --> 00:07:51,660
+你不想要完全相同的模型或相同的颜色之类的。
+that you don't want exactly the same model or same colors and, you know.
+
+114
+00:07:51,660 --> 00:07:54,616
+Logo 必须不同等等。
+The logo has to be different and all that stuff.
+
+115
+00:07:54,616 --> 00:07:57,420
+所以你可以看到它的完整历史。
+So you can see this is the whole history of it.
+
+116
+00:07:57,700 --> 00:08:02,962
+除此之外，每次你修改或设计时，
+And on top of that, anytime that you're making a change or a design,
+
+117
+00:08:02,962 --> 00:08:08,224
+你基本上都会有多个设计版本，
+you will be essentially having multiple versions of that design,
+
+118
+00:08:08,224 --> 00:08:11,860
+我觉得这是它的强项之一。
+which I think is one of the strong points of it.
+
+119
+00:08:12,790 --> 00:08:16,129
+例如这是页脚，你可以看到
+For example, this is the footer and you can see
+
+120
+00:08:16,129 --> 00:08:19,555
+有些版本的区块更亮
+that some of them have the brighter section
+
+121
+00:08:19,555 --> 00:08:24,300
+其中一些还有一个更深色、带有 tear design 的区块
+And some of them have the more darker section with the tear design
+
+122
+00:08:24,300 --> 00:08:27,990
+如果你看这里的落地页
+Which if you look into the landing page right here
+
+123
+00:08:28,630 --> 00:08:31,750
+你知道，你从这个开始，会先看到 story 区域
+You know, you start with this, you have the story
+
+124
+00:08:31,750 --> 00:08:36,899
+然后你还有 collection 区块，再往下还有 footer
+And then you also have the collection section and then you also have the footer
+
+125
+00:08:37,459 --> 00:08:42,093
+所以我最终选择了这个方案，复制了提示词，然后添加了
+So I ended up with that and I copied the prompt and I added
+
+126
+00:08:42,093 --> 00:08:45,619
+把那段 HTML 区块添加到那个落地页
+That section in HTML to that landing page
+
+127
+00:08:45,819 --> 00:08:48,619
+所以这就是提示词，这就是我使用的内容
+So this is the prompt. This is what I use
+
+128
+00:08:49,219 --> 00:08:54,330
+然后，Copy for agent（复制给智能体），接着看这里的提示词
+And, you know, Copy for agent and then looking in the prompt right here
+
+129
+00:08:54,330 --> 00:08:58,662
+你就能看到我保留了所有提示词历史
+You're gonna be able to see that I have all the history of prompt
+
+130
+00:08:58,662 --> 00:09:04,120
+它从这一条开始，也就是 Copy for agent 基本上就是这个表单
+And it started with this one, which is Copy for agent is basically this form
+
+131
+00:09:04,160 --> 00:09:07,800
+这里，按照以下说明创建一个网页实现
+Right here, create a web page implementation from the following instructions
+
+132
+00:09:08,400 --> 00:09:15,169
+然后下面的说明就是那个 prompting.md（提示词说明文件） 文件里的内容
+And then the following instructions is what has that prompting.md file
+
+133
+00:09:15,169 --> 00:09:17,680
+它来自 DiffUI.ai
+Which is from DiffUI.ai
+
+134
+00:09:18,320 --> 00:09:21,400
+剩下的就是我在不断引导它
+And then the rest is just me steering it
+
+135
+00:09:21,730 --> 00:09:26,970
+所以在这个例子里，我要求它创建一个使用 3D 的单文件 HTML
+So in this case, I'm asking it to create a single HTML file in Three.js
+
+136
+00:09:27,690 --> 00:09:31,770
+然后我希望它是分层的，如你所见，使用透明 PNG（图像格式）
+And then I want it layered, as you can see, with transparent PNGs
+
+137
+00:09:32,210 --> 00:09:37,210
+非常重要的是用 3D 来做那些球体和雕塑
+Super important using Three.js for the balls and the sculpture
+
+138
+00:09:37,810 --> 00:09:42,635
+然后使用 纸张概念、透明 PNG
+And then using the paper concept, transparent PNGs
+
+139
+00:09:42,635 --> 00:09:47,570
+然后还要提到结合 Codex 使用 GPT-5 image
+And then mentioning also the GPT Image 2.5 with Codex
+
+140
+00:09:48,130 --> 00:09:53,670
+然后我喜欢最后加上 self verify（自我验证），这样会让智能体工作
+And then I love to finish with self verify so that it makes the agent work
+
+141
+00:09:53,670 --> 00:09:59,774
+得更用力、更久，这通常会带来
+So much more, so much harder and longer, which generally is going to give much
+
+142
+00:09:59,774 --> 00:10:01,370
+好得多的结果
+Much better result
+
+143
+00:10:01,970 --> 00:10:06,026
+然后你会得到它的第一个版本，接着你
+And then you get like the first version of it and then you
+
+144
+00:10:06,026 --> 00:10:10,479
+你想用这些提示词来引导它，然后
+You want to steer it with using these prompts and then you know
+
+145
+00:10:10,479 --> 00:10:15,410
+你想把那些模型，比如那些绘画、图像，转换为 3D
+You want to turn the models like the drawings, the images into 3D
+
+146
+00:10:16,170 --> 00:10:20,964
+所以一开始，如果你不提到 3D，也不提到比如
+So at the beginning, if you don't mention 3D and if you don't mention like
+
+147
+00:10:20,964 --> 00:10:23,400
+假设你想使用 Higgsfield（AI 生成工具）
+Let's say you want to use Higgsfield
+
+148
+00:10:23,720 --> 00:10:24,760
+我就是这么做的
+So this is what I did
+
+149
+00:10:25,200 --> 00:10:31,480
+我想把那些图像用作参考，并转换成 3D
+I wanted to turn the images, use that as a reference, and turn that into 3D
+
+150
+00:10:31,920 --> 00:10:37,170
+如你所见，我使用的是 Higgsfield，但你也可以用 Aura、MCP
+And as you can see, I'm using Higgsfield, but you can use like Aura, MCP
+
+151
+00:10:37,170 --> 00:10:42,153
+你可以用 Tripo 3D，也可以用一堆其他工具，比如 Meshy
+You can use Tripo 3D, you can use like a bunch of other tools, Meshy
+
+152
+00:10:42,153 --> 00:10:45,000
+其中一些是我很喜欢的
+Some of those are some of my favorites
+
+153
+00:10:45,240 --> 00:10:47,800
+Hyper 3D 是一个新工具，也非常好用
+Hyper 3D is a new one that is really good as well
+
+154
+00:10:48,360 --> 00:10:51,844
+一旦你有了 3D，就不是像这里这样只有这些图像
+And then once you have that, instead of having these images
+
+155
+00:10:51,844 --> 00:10:53,480
+你可以在这里看到
+That you can see right here
+
+156
+00:10:54,470 --> 00:10:58,910
+你把它们转换成 3D，比如这里的半身像，还有这根柱子
+You turn that into 3D, like this bust here and also this column here
+
+157
+00:10:59,350 --> 00:11:04,381
+当你有 3D 后，你就可以试着调整旋转轨道
+And when you have 3D, you can sort of like play with the orbiting
+
+158
+00:11:04,381 --> 00:11:08,639
+然后你就有 3D 语汇，顺便说一句
+And then you have the 3D vocabulary, which by the way
+
+159
+00:11:08,639 --> 00:11:13,670
+我有一堆技能可以用于这些引导
+I have a bunch of skills that are available for the steering of
+
+160
+00:11:13,750 --> 00:11:19,983
+比如，如果你想给 3D 添加光照、阴影，或者
+You know, if you want to add like the lighting to the 3D, the shadow or the
+
+161
+00:11:19,983 --> 00:11:24,346
+真实感纹理，还有云朵
+The realistic textures and, you know, the clouds
+
+162
+00:11:24,346 --> 00:11:27,670
+落叶等等这些
+The falling leaves and all that stuff
+
+163
+00:11:28,150 --> 00:11:33,827
+还有分辨率，因为有时 AI 会选择非
+And also the resolution because sometimes the AI will choose to have like a non
+
+164
+00:11:33,827 --> 00:11:37,320
+Retina（高像素密度显示屏）分辨率，看起来会不怎么样
+Retina resolution, which it doesn't look like
+
+165
+00:11:37,320 --> 00:11:41,250
+在非 Retina 屏幕上会更像素化
+Looks more pixelated on a non-retina screen
+
+166
+00:11:41,890 --> 00:11:43,810
+好，我们进入头脑风暴环节
+All right, let's get into the brainstorming
+
+167
+00:11:44,530 --> 00:11:48,130
+我们已经解释了流程，但现在我们从零开始
+We've explained how things work, but now we're gonna start from scratch
+
+168
+00:11:48,770 --> 00:11:53,290
+如果你想开始一个提示，可以直接按 R 来创建提示
+And so if you want to start a prompt, you can just press R and create a prompt
+
+169
+00:11:53,410 --> 00:11:59,146
+我放大这里，然后创建一个 Diablo（暗黑破坏神）风格落地页
+I'm just gonna zoom here and create a Diablo inspired landing page
+
+170
+00:11:59,146 --> 00:12:01,400
+我想要 hero 主视觉区域
+So I want the hero section
+
+171
+00:12:02,800 --> 00:12:04,760
+所以我要生成这个
+So I'm gonna generate this one
+
+172
+00:12:05,000 --> 00:12:08,943
+在生成的同时，我们会来看一看
+And while we're doing that, we are going to take a look at, you know
+
+173
+00:12:08,943 --> 00:12:10,520
+其他一些落地页
+Some other landing pages
+
+174
+00:12:10,960 --> 00:12:13,880
+比如我想做受这个页面启发的东西
+So let's say I want something inspired by this one
+
+175
+00:12:14,000 --> 00:12:19,760
+我会截个图，然后到这里，直接把它拖放进去
+I'm gonna create a screenshot and then I'm gonna go here and I can just drag and drop this
+
+176
+00:12:20,230 --> 00:12:24,830
+然后从这里，我就可以直接点击它
+And then from here, I can just click on it
+
+177
+00:12:27,990 --> 00:12:35,357
+然后这就是我的灵感来源，我想让你重新创建这个
+And then this is my inspiration. And I want you to recreate this
+
+178
+00:12:35,357 --> 00:12:39,110
+但采用一种古典新古典风格
+But in a style of a classical neo
+
+179
+00:12:40,230 --> 00:12:47,510
+受 Shopify Winter Edition landing page 启发的古典落地页
+Classical landing page inspired by Shopify Winter Edition landing page
+
+180
+00:12:48,150 --> 00:12:52,150
+这些卡片会更像古典绘画
+And these cards would be more like classical paintings
+
+181
+00:12:53,110 --> 00:12:54,430
+那我们生成这个。
+So let's generate this.
+
+182
+00:12:55,230 --> 00:12:57,310
+你看，这已经完成了。
+And as you can see, it's already done.
+
+183
+00:12:58,190 --> 00:13:01,309
+而且你知道，只花了大概 30 秒甚至更短
+And it took, you know, maybe 30 seconds or less
+
+184
+00:13:01,309 --> 00:13:06,070
+因为 GPT-5 image 真的很快，而且我们大概做了 4 轮迭代。
+because GPT-2.5 image is really fast and we have like 4 iterations on it.
+
+185
+00:13:07,010 --> 00:13:09,810
+你知道，这真的很不错。
+And, you know, this is really nice.
+
+186
+00:13:10,690 --> 00:13:13,210
+说真的，这些其实都挺好看的。
+You know, they're actually all pretty nice to be honest.
+
+187
+00:13:13,370 --> 00:13:16,610
+这个看起来更有一点 Dark Souls 风格。
+It seems a little bit more like Dark Souls inspired.
+
+188
+00:13:17,170 --> 00:13:23,290
+你可以看到，我基本上只需点这里，然后创建一个分支。
+And so you can see here, I can just essentially click here and then create a branch.
+
+189
+00:13:24,130 --> 00:13:27,690
+我想让你用透明 PNG 来探索 Logo。
+I want you to explore the logo using transparent PNGs.
+
+190
+00:13:28,540 --> 00:13:32,300
+所以我先做这个，然后再回来处理这个。
+So I'm gonna do this and then I'm gonna come back to this one.
+
+191
+00:13:32,740 --> 00:13:37,460
+它还在生成中，我能这样做真的很神奇。
+It's still generating, and it's just amazing that I can do that.
+
+192
+00:13:37,460 --> 00:13:40,700
+这里有一个非常实用的小技巧。
+And here's a really cool tip.
+
+193
+00:13:41,740 --> 00:13:45,643
+第一，如果你很喜欢某个设计，显然可以直接从这里输入提示词，
+One, if you really like a design, you can obviously prompt from here,
+
+194
+00:13:45,643 --> 00:13:49,340
+但如果你有点困惑，随时可以把它拖出来。
+but if you're a little bit confused, you can always drag this out.
+
+195
+00:13:50,130 --> 00:13:52,540
+比如我真的很喜欢这个，
+So let's say I really like this one,
+
+196
+00:13:52,540 --> 00:13:56,530
+我会把它拖出来，然后在这里创建自己的分支。
+I'm gonna drag it out and I'm gonna have my own branch here.
+
+197
+00:13:57,090 --> 00:14:02,490
+我能做的另一件事是双击，比如说 world，
+And another thing that I can do is I can double click on, let's say, world,
+
+198
+00:14:02,490 --> 00:14:06,090
+然后它会“砰”地一下，从它那里生成一个分支。
+and it's gonna, boom, generate a branch from it.
+
+199
+00:14:06,450 --> 00:14:11,370
+所以它会创建那个落地页的版本。这真的是一个很酷的
+So it's gonna create the version of that landing page. So this is such a cool.
+
+200
+00:14:12,640 --> 00:14:18,073
+功能。所以我要多创建几个，还要处理 About 区块，而且我真的可以，
+Feature to have. So I'm gonna do multiple of them and also About and I can really,
+
+201
+00:14:18,073 --> 00:14:19,720
+真的在这里多任务并行。
+really multitask here.
+
+202
+00:14:20,280 --> 00:14:23,560
+所以我先确认它们没有分得太散。
+And so let me just make sure that they're not too spread apart.
+
+203
+00:14:24,320 --> 00:14:28,578
+另外，你看，我会回到这个，
+And also, I'm gonna come back to this one, as you can see, right,
+
+204
+00:14:28,578 --> 00:14:34,720
+这里有灵感，我们正在头脑风暴，继续在它基础上扩展。
+we have this inspiration here and we're just brainstorming to sort of keep building on it.
+
+205
+00:14:35,280 --> 00:14:41,882
+比如，我有一堆方案，还有很多类似的
+So for example, I have a bunch of resolutions and I have a bunch of, like,
+
+206
+00:14:41,882 --> 00:14:44,120
+可以用的示例。
+examples that I can use.
+
+207
+00:14:44,520 --> 00:14:47,720
+看看哪些真正让我感兴趣。
+So let's see which ones are really interesting for me.
+
+208
+00:14:48,240 --> 00:14:52,640
+我喜欢这个，因为我觉得这些卡片更，你知道，
+I like this one because I think the cards are a little bit more, you know,
+
+209
+00:14:52,640 --> 00:14:57,040
+更靠前，而且可以漂浮，这能带来非常有趣的
+in front and they can be floating, which can make a really interesting.
+
+210
+00:14:58,280 --> 00:15:03,320
+但没错，你完全可以继续调整它，还可以给它一个品牌。
+But yeah, you can totally just keep steering it and also give like a brand.
+
+211
+00:15:04,600 --> 00:15:11,000
+那我们让卡片漂浮起来。我们不需要卡片上的平台之类的东西。
+So let's make the cards float. We don't need, like, platforms from the cards.
+
+212
+00:15:11,080 --> 00:15:16,703
+我确实喜欢这些柱子，也喜欢背景中的风景。
+I do like the columns and I do like the landscape in the background.
+
+213
+00:15:16,703 --> 00:15:20,000
+太棒了。让我们用一个品牌名叫
+That's amazing. Let's have a brand called.
+
+214
+00:15:21,060 --> 00:15:22,540
+比如 Classic。
+You know, classic.
+
+215
+00:15:23,980 --> 00:15:26,340
+所以我要生成这个。
+So I'm gonna generate this one.
+
+216
+00:15:27,420 --> 00:15:31,140
+我们还可以探索不同风格的卡片。
+And we can also, like, explore different styles of cards.
+
+217
+00:15:31,180 --> 00:15:34,096
+比如我可以这样说，好，
+So for example, I can say, okay,
+
+218
+00:15:34,096 --> 00:15:39,031
+也许我会把这个拿出来，然后设置，
+so maybe I'm gonna take out this one and I'm gonna set,
+
+219
+00:15:39,031 --> 00:15:45,200
+让我们用透明 PNG 探索不同风格的卡片。
+let's explore different styles of cards using transparent PNGs.
+
+220
+00:15:46,680 --> 00:15:50,520
+还要探索不同的按钮，这是我非常喜欢做的事。
+And also let's explore different buttons, which is something that I love to do.
+
+221
+00:15:51,360 --> 00:15:54,760
+所以我要生成这个。
+So I'm gonna generate this.
+
+222
+00:15:55,600 --> 00:15:58,920
+然后回到这个。我们有了 Logo。
+And let's come back to this one. So we have the logo.
+
+223
+00:15:59,040 --> 00:16:03,569
+顺便说一句，我喜欢多任务处理，因为不知为什么，AI 你知道，
+I love multitasking, by the way, because I don't know why, but AI, you know,
+
+224
+00:16:03,569 --> 00:16:05,760
+真的让我成了一个超级多任务处理者。
+really makes me a huge multitasker.
+
+225
+00:16:05,880 --> 00:16:08,615
+正如你看到的，这里有透明 PNG Logo，
+As you can see here, we have the transparent PNG logos
+
+226
+00:16:08,615 --> 00:16:10,480
+而且我们有多个版本。
+and we have multiple versions of it.
+
+227
+00:16:10,920 --> 00:16:14,385
+你知道，在开始写代码之前，这都由我决定，
+And you know, it is up to me before we even get into the coding,
+
+228
+00:16:14,385 --> 00:16:17,711
+由我来找到我想要的方向，
+it is up to me to sort of like find the direction that I want,
+
+229
+00:16:17,711 --> 00:16:21,800
+我想要的 Logo、品牌，以及想要的按钮风格。
+the logo that I want and the brand and the sort of the buttons that I want.
+
+230
+00:16:23,400 --> 00:16:25,920
+这真的很好。我尤其喜欢这个。
+This is really good. Like, I especially like this one.
+
+231
+00:16:25,920 --> 00:16:31,177
+我觉得它更一致，然后我们可以看看，
+I think it's more consistent and then we can sort of take a look at, you know,
+
+232
+00:16:31,177 --> 00:16:33,890
+也许我们可以看看按钮。
+maybe we can take a look at the buttons.
+
+233
+00:16:34,010 --> 00:16:39,490
+我要移动这个，并放大看看。
+So I'm gonna move this one and I'm gonna zoom in.
+
+234
+00:16:40,370 --> 00:16:43,530
+让我们也用透明 PNG 探索按钮。
+Let's explore the buttons as well using transparent PNGs.
+
+235
+00:16:45,250 --> 00:16:49,010
+再看看这些区块。这里有多个区块。
+And let's take a look at the sections. So we have multiple sections here.
+
+236
+00:16:49,490 --> 00:16:54,731
+如我所说，我们基本上只需双击
+And as I said, we're essentially just double clicking
+
+237
+00:16:54,731 --> 00:17:00,376
+无需任何提示，就能得到这个区块，
+and without any prompting, we're getting this section right here,
+
+238
+00:17:00,376 --> 00:17:04,710
+你看这里，这是 world 区块。
+which is you can see here, this is the world section.
+
+239
+00:17:04,870 --> 00:17:05,990
+这里高亮显示了。
+It's highlighted here.
+
+240
+00:17:06,550 --> 00:17:09,990
+我们要看看应该选择什么。
+And we're going to take a look at what we should pick.
+
+241
+00:17:10,670 --> 00:17:13,270
+通常你会注意到的一点是：
+Usually one thing that you're going to notice is that.
+
+242
+00:17:14,260 --> 00:17:18,100
+AI 往往会塞进很多东西。
+The AI tends to cram a lot of things.
+
+243
+00:17:18,180 --> 00:17:22,340
+所以你要自己把控，确保它不会太拥挤。
+So it is up to you to make sure to steer in a way that it's not too cramped.
+
+244
+00:17:22,780 --> 00:17:25,340
+例如，这对我来说可能有点太挤了。
+So, for example, this might be a little bit too cramped for me.
+
+245
+00:17:26,180 --> 00:17:26,900
+这个也是。
+This as well.
+
+246
+00:17:27,460 --> 00:17:28,380
+这个相当不错。
+This is pretty good.
+
+247
+00:17:28,660 --> 00:17:31,301
+但话又说回来，这个更像是一个落地页。
+But then again, this feels more like a landing page.
+
+248
+00:17:31,301 --> 00:17:33,020
+所以也许可以给这个加一张地图。
+So maybe like add a map to this one.
+
+249
+00:17:34,700 --> 00:17:38,011
+所以这个很好，但我们需要多一点内容
+So this is good, but we need a little bit more content
+
+250
+00:17:38,011 --> 00:17:41,860
+也许加一张地图，用绘画风格来展示这个世界。
+and maybe like a map to showcase the world in a drawing style.
+
+251
+00:17:42,940 --> 00:17:49,140
+所以我们可以试试这个。然后我们来看看关于区域。
+So we can try this one. And we're going to take a look at the about section.
+
+252
+00:17:49,780 --> 00:17:50,980
+所以这个相当不错。
+So this is pretty good.
+
+253
+00:17:52,540 --> 00:17:56,460
+我喜欢的做法是加入一点风格、一点品味。
+The way that I like to do it is to add a little bit of flair, of taste.
+
+254
+00:17:57,170 --> 00:18:00,880
+例如，这里我可以说，好吧，也许我想让它变成一面旗帜。
+So for example, here I can say, okay, maybe I want this to be a flag.
+
+255
+00:18:01,480 --> 00:18:08,004
+另外你可以做的一件事是，比如你可以按这里的 R 键
+So one thing you can do also is to try something like you can press R right here
+
+256
+00:18:08,004 --> 00:18:12,354
+然后选择你想编辑的部分
+and you can select the part that you want to edit
+
+257
+00:18:12,354 --> 00:18:18,360
+所以我要把它调大一点，让它覆盖更多空间。
+so I'm gonna make this a little bit bigger so that it covers more space.
+
+258
+00:18:19,240 --> 00:18:22,400
+我希望背景是一面旗帜，比如换成一面红旗。
+So I want the background to be a flag, like a red flag instead.
+
+259
+00:18:23,890 --> 00:18:29,690
+然后我们生成它。这将根据这些修改生成另一个版本。
+And we're gonna generate that. This is going to generate another version of this with the edits.
+
+260
+00:18:30,250 --> 00:18:35,373
+这真的很酷，因为有时候你会有一些，你知道，
+And it's just really cool because sometimes you have like, you know,
+
+261
+00:18:35,373 --> 00:18:37,890
+你很喜欢的小部分。
+small parts that you really like.
+
+262
+00:18:38,730 --> 00:18:42,170
+是的，你知道，这些真的很好。我喜欢这里的数字。
+And yeah, you know, like, these are really good. I like the numbers here.
+
+263
+00:18:43,080 --> 00:18:43,960
+1、2、3。
+1, 2, 3.
+
+264
+00:18:44,760 --> 00:18:49,480
+这更像我所说的装饰性 UI。
+And this is really more what I call ornamental UI.
+
+265
+00:18:50,480 --> 00:18:54,360
+顺便说一句，我很喜欢这个关键词。我喜欢使用装饰性 UI。
+And I love this keyword, by the way. I love using ornamental UI.
+
+266
+00:18:54,480 --> 00:18:58,349
+我认为 AI 能理解，比如你可以说拟物化
+I think the AI understands like you can say skeuomorphic
+
+267
+00:18:58,349 --> 00:19:03,798
+但我认为装饰性更合理，因为它本质上是大量装饰，
+but I think ornamental makes sense because it's essentially a lot of decorations,
+
+268
+00:19:03,798 --> 00:19:05,930
+给你的 AI 带来大量沉浸感。
+a lot of immersions into your AI.
+
+269
+00:19:06,450 --> 00:19:10,250
+这里我们得到的结果相当不错。
+So here we have, this is pretty good.
+
+270
+00:19:10,930 --> 00:19:16,930
+是的，看看那个。你知道，它确实犯了一点小错误，但没关系。
+And yeah, look at that. You know, it did make a little bit mistakes, but it's fine.
+
+271
+00:19:17,010 --> 00:19:21,946
+你要明白，这并不意味着是最终结果，
+Like you have to understand that this is not meant to be like a final result,
+
+272
+00:19:21,946 --> 00:19:25,130
+但你也可以直接把它拖出来。
+but also you can essentially just drag this out.
+
+273
+00:19:26,070 --> 00:19:33,040
+顺便说一下，我正在用 Command 键滚动和缩放。
+And let me just, by the way, I'm using the command key to scroll and to zoom in and out.
+
+274
+00:19:33,080 --> 00:19:35,885
+所以按住 Command 键就可以放大缩小。
+So when you hold the command key, you can zoom in and out.
+
+275
+00:19:35,885 --> 00:19:38,080
+这真的是一个很好用的键盘快捷键。
+So that's a really nice keyboard shortcut.
+
+276
+00:19:38,800 --> 00:19:45,307
+如你所见，我们有了这个绘图，你知道，从这里开始，
+And as you can see, we have the, you know, the drawing, you know, and from here,
+
+277
+00:19:45,307 --> 00:19:51,305
+因为我正在对设计的一个部分做一点修正，
+because I'm doing like, a little correction in one piece of the design,
+
+278
+00:19:51,305 --> 00:19:53,440
+我可以直接把它改得更好。
+I can just make it better.
+
+279
+00:19:53,920 --> 00:19:57,767
+所以不要改太多。只需修正设计，并确保
+So don't change too much. Just correct the design and make sure
+
+280
+00:19:57,767 --> 00:19:59,320
+它更整体协调。
+that it's more together.
+
+281
+00:20:01,480 --> 00:20:05,560
+所以你可以这样做。这是一个很好的方法。
+So you can do that. This is a really good way to go about it.
+
+282
+00:20:05,840 --> 00:20:08,951
+你可以用它来头脑风暴你的 Logo。
+You can use it to brainstorm your logos.
+
+283
+00:20:08,951 --> 00:20:12,440
+你可以用它生成它的新版本。
+You can use it to generate new versions of it.
+
+284
+00:20:12,520 --> 00:20:16,990
+你可以用它来获得落地页的不同板块。
+You can use it to have different sections of your landing page.
+
+285
+00:20:17,430 --> 00:20:22,390
+我不知道它为什么开始做 Transformer 风格，但有点好笑。
+I don't know why it started doing like Transformer Style, but it's kind of funny.
+
+286
+00:20:22,870 --> 00:20:25,070
+我猜它是，你知道，我没有提到过这个。
+I guess it's, you know, I didn't mention it.
+
+287
+00:20:25,190 --> 00:20:28,826
+它本该是古典风格，但我完全可以说，比如，好的，
+It has to be classical, but I could totally say something like, okay,
+
+288
+00:20:28,826 --> 00:20:29,910
+这个相当不错。
+this is pretty good.
+
+289
+00:20:30,830 --> 00:20:32,430
+让我们看看这个。
+Let's see this one.
+
+290
+00:20:33,130 --> 00:20:36,810
+对于这个，我觉得，哦，这个真的很好。
+For this one, I think, oh, this is really good.
+
+291
+00:20:36,890 --> 00:20:40,250
+好的，这个更偏漂浮感，正是我想要的。
+Okay, so this is more like the floaty, which is what I want.
+
+292
+00:20:41,370 --> 00:20:47,130
+我们看看。哦，这个其实很不错。这里没有雕像。
+So let's see. Oh, this is pretty good, actually. So we don't have a statue.
+
+293
+00:20:47,410 --> 00:20:49,690
+它不那么杂乱，更专注于卡片。
+It's less busy. It's more focused on the cards.
+
+294
+00:20:50,290 --> 00:20:54,313
+然后从这里，我可以，你知道，双击
+And then from here, I can just, you know, double click on,
+
+295
+00:20:54,313 --> 00:20:58,080
+所以让我确保它不会跑太远。
+so let me just make sure that it's not gonna go too far.
+
+296
+00:20:58,760 --> 00:21:06,677
+所以我要给它更多空间，双击卡片和 how to play 区域
+So I'm gonna give it more space and double click on the cards and how to play
+
+297
+00:21:06,677 --> 00:21:10,960
+也许我还会再设置一个。
+and maybe I will also set up another one.
+
+298
+00:21:12,480 --> 00:21:18,995
+所以 how to play，然后，是的，我需要这里更多空间，所以我要放大
+So how to play and then, yeah, I need more space here so I'm gonna zoom in
+
+299
+00:21:18,995 --> 00:21:20,680
+然后我要说。
+and I'm gonna say.
+
+300
+00:21:21,570 --> 00:21:27,810
+创建一个漂亮的页脚，带有很多装饰和超大文本。
+Create a beautiful footer with a lot of decorations and a super large text.
+
+301
+00:21:29,450 --> 00:21:33,530
+就是这样。如你所见，头脑风暴起来超级快。
+So that's it. As you can see, it's like super fast to brainstorm.
+
+302
+00:21:33,610 --> 00:21:37,530
+不仅如此，我们还能同时拥有很多个版本。
+And not just that, but we're able to have so many versions at the same time.
+
+303
+00:21:38,250 --> 00:21:41,850
+而且你知道，我要真的把它做出来。
+And you know, I'm gonna build this, I'm gonna build this for real.
+
+304
+00:21:42,330 --> 00:21:45,566
+是的，Astra 会需要一点时间来完成。
+And yes, Astra is going to take a while to do it,
+
+305
+00:21:45,566 --> 00:21:50,336
+但我觉得我们至少会有一个可以继续推进的基础，而且你知道，
+but I think we're going to have something to work from and, you know,
+
+306
+00:21:50,336 --> 00:21:54,850
+我们要看看这个版本是否成功修正了它。
+we're going to take a look at this one if it managed to correct it.
+
+307
+00:21:54,890 --> 00:21:56,730
+如你所见，它做到了。
+As you can see, it did it.
+
+308
+00:21:56,970 --> 00:22:02,410
+你知道，我们用这个版本，它这里有个问题，然后我们基本上是在
+You know, we use this one, it had an issue here and then we are essentially
+
+309
+00:22:03,430 --> 00:22:07,150
+修复它。所以现在我们有了旗帜，它可能已经修好了。
+Fixing it. So now we have the flag. It's probably fixed.
+
+310
+00:22:07,190 --> 00:22:12,246
+而且我们还有多个版本，但因为我们有点要求它……哦，好吧，
+And we also have multiple versions, but since we kind of asked to, oh, okay,
+
+311
+00:22:12,246 --> 00:22:16,880
+这个很有意思，因为它完全变成了浅色模式，
+this one is interesting because like completely went light mode,
+
+312
+00:22:16,880 --> 00:22:21,430
+但其余的本质上差不多，只是被修正过。
+but the rest are essentially pretty much the same but corrected.
+
+313
+00:22:22,190 --> 00:22:24,070
+所以这挺有意思。
+So that is interesting.
+
+314
+00:22:24,710 --> 00:22:29,190
+然后我们回到这个。它已经准备好了，速度非常快。
+And then we're gonna go back to this one. It's already ready, like, so fast.
+
+315
+00:22:29,710 --> 00:22:35,360
+所以我们有了这个页脚，我们本来想要更多装饰、大字体。
+So we have the footer, which we wanted more decoration, a big font.
+
+316
+00:22:36,480 --> 00:22:38,000
+这个其实非常好。
+This is actually really good.
+
+317
+00:22:39,000 --> 00:22:41,080
+这个太像主视觉（hero）了。
+This is too much like the hero.
+
+318
+00:22:42,160 --> 00:22:45,880
+哦对，如果我想要更多版本，我可以点击加号。
+And oh, yeah, I can click on plus if I want more versions.
+
+319
+00:22:46,880 --> 00:22:50,790
+你可以看到每次生成要花多少钱。
+And you can see this is how much it costs every single time.
+
+320
+00:22:51,190 --> 00:22:55,172
+到目前为止，我们为所有这些设计只花了不到 5 美元，
+And so far we, we spent just less than $5 for all of the designs
+
+321
+00:22:55,172 --> 00:22:59,553
+到目前我们生成的这些设计，顺便说一句，这其实已经很多了，
+that we have generated so far, which is a lot by the way, if you know,
+
+322
+00:22:59,553 --> 00:23:04,889
+如果你想想我们生成的所有设计，再乘以
+if you think about all the designs that we have generated, multiplied by the, the,
+
+323
+00:23:04,889 --> 00:23:09,030
+每个版本的变体数量，这已经非常慷慨了。而且你知道，它
+the variance of each one, it's very generous. And you know, it
+
+324
+00:23:09,030 --> 00:23:13,308
+如果使用 Higgsfield 或 Codex，成本肯定会更高，
+Would cost definitely more if you use Hicksfield or Codex,
+
+325
+00:23:13,308 --> 00:23:18,808
+即便使用 API key（接口密钥） 也是这样，而且它肯定没有这么快，
+even using the API keys and on top of the fact that it's definitely not as fast
+
+326
+00:23:18,808 --> 00:23:20,380
+也不是多人协作的。
+and not multiplayer.
+
+327
+00:23:20,700 --> 00:23:26,100
+所以让我看看。我可能会选这个。它看起来更像页脚。
+So let's see. I would probably go with this one. This looks more like a footer to me.
+
+328
+00:23:26,740 --> 00:23:28,420
+我们就选这个吧。
+And let's pick this one.
+
+329
+00:23:29,060 --> 00:23:32,460
+我继续。这是“玩法说明”部分。
+I'm gonna go. So this is the how to play.
+
+330
+00:23:33,020 --> 00:23:34,340
+我们看看哪些合理。
+Let's see what makes sense.
+
+331
+00:23:34,910 --> 00:23:36,830
+所以 1、2、3、4 是合理的。
+So 1, 2, 3, 4 makes sense.
+
+332
+00:23:37,830 --> 00:23:39,190
+1、2、3、4 是合理的。
+1, 2, 3, 4 makes sense.
+
+333
+00:23:40,110 --> 00:23:42,590
+这个更有动感一些，我喜欢。
+This is a little bit more dynamic. I like it.
+
+334
+00:23:42,590 --> 00:23:45,710
+我也喜欢这个插画，所以我选这个。
+I like the drawing as well, so I'm gonna go with this one.
+
+335
+00:23:46,110 --> 00:23:47,630
+不过这些例子真的很不错，对吧？
+But really good examples, right?
+
+336
+00:23:47,710 --> 00:23:49,521
+比如，你知道，这是卡片部分，
+Like, you know, this is the cards,
+
+337
+00:23:49,521 --> 00:23:53,401
+所以它会有一个卡片列表，然后当我们选中某张卡片时，
+so it's gonna have the list of cards and then we have the more information
+
+338
+00:23:53,401 --> 00:23:54,630
+会显示更多信息。
+when you select on one.
+
+339
+00:23:55,010 --> 00:23:59,490
+所以这很合理。然后，好吧，这个方式，这个有侧边栏。
+So that makes a lot of sense. And then, okay, this way, this has a sidebar.
+
+340
+00:23:59,530 --> 00:24:04,090
+如果你喜欢这种三栏布局，它也很有道理。
+So the triple columns, if you like that, which makes a lot of sense as well.
+
+341
+00:24:04,890 --> 00:24:09,809
+我也喜欢它给了我更多可以使用的插画，而不是像
+And I also like that it gives me more illustrations to work from instead of, like,
+
+342
+00:24:09,809 --> 00:24:11,130
+只有相同的插画。
+having the same ones.
+
+343
+00:24:11,730 --> 00:24:15,279
+所以这些是很好的上下文，当我们
+And so these are good context that we can use when, you know,
+
+344
+00:24:15,279 --> 00:24:17,090
+进入真正搭建阶段时可以使用。
+we get into the real building.
+
+345
+00:24:18,130 --> 00:24:22,600
+所以我们就选这个。这个，我觉得这个很合理。
+So let's go with this. This one, I think this one makes a lot of sense.
+
+346
+00:24:24,240 --> 00:24:26,320
+所以我们要去构建这些。
+So we're going to build those.
+
+347
+00:24:29,760 --> 00:24:32,108
+好，到这一步，我们需要做的只是，
+Alright, so at this point, all we need to do,
+
+348
+00:24:32,108 --> 00:24:36,412
+如果你想开始构建，并且你对方向等等真的很满意，
+if you want to start building and you're really happy with the direction and all
+
+349
+00:24:36,412 --> 00:24:40,260
+要记住，很多内容之后还会被修正，对吧？
+that stuff, keeping in mind that a lot of this will be corrected, right?
+
+350
+00:24:40,260 --> 00:24:41,980
+比如如果你不喜欢某些地方，现在这样也没关系。
+Like if you don't like something, here is fine.
+
+351
+00:24:43,220 --> 00:24:45,500
+你在这里只是为了确定大方向。
+You're just here to get the general direction.
+
+352
+00:24:45,580 --> 00:24:48,780
+所以我要把这个复制给智能体（Copy for agent），然后去 Codex。
+So I'm gonna copy this for agent and I'm gonna go to Codex.
+
+353
+00:24:50,060 --> 00:24:56,006
+现在，在 Codex 里，你可以看到这里是一整套提示历史，
+Now, in Codex, you can see here that these are the whole history of the prompting
+
+354
+00:24:56,006 --> 00:25:00,420
+就是我为刚才展示的落地页所做的那些。
+that I have done for the landing page that I just showed you.
+
+355
+00:25:01,340 --> 00:25:09,140
+你知道，它会在各自的图层中生成每一个素材。
+And you know it's going to generate every single asset from its own layer.
+
+356
+00:25:09,260 --> 00:25:12,940
+例如，这里使用的是 GPT-5 image。
+So for example, this is using GPT Image 2.5.
+
+357
+00:25:13,620 --> 00:25:16,380
+而且我正在使用 Astra 的 extra high（超高推理）模式。
+And I am using Astra at extra high.
+
+358
+00:25:16,940 --> 00:25:23,050
+我还使用了 full access，我发现这会让 AI 更加自主。
+I'm also using full access, which I find that it's gonna make the AI more autonomous.
+
+359
+00:25:23,650 --> 00:25:27,290
+我还使用了一些 skills，我也会分享出来。
+And I'm also using a bunch of skills that I will be sharing as well.
+
+360
+00:25:27,290 --> 00:25:30,158
+这些会在视频描述里。
+So it's gonna be in the description,
+
+361
+00:25:30,158 --> 00:25:35,512
+但你可以看到，这是起点，这就是提示词
+but you can see that this is the starting point and this is the prompt
+
+362
+00:25:35,512 --> 00:25:37,520
+也就是你从 DiffUI 拿到的提示词
+that you get from DiffUI.
+
+363
+00:25:38,400 --> 00:25:43,416
+然后我们基本上就是使用相同的提示词
+And then we're going to essentially just use the same prompt
+
+364
+00:25:43,416 --> 00:25:51,040
+然后我们要新建一个 HTML，顺便说一句，我喜欢准备一个 HTML 文件夹
+and we're going to start a new HTML, which by the way, I like to have, you know, an HTML folder.
+
+365
+00:25:51,830 --> 00:25:54,762
+我喜欢用 HTML 的原因是
+And then the reason why I like to work with HTML is
+
+366
+00:25:54,762 --> 00:25:57,987
+因为它很容易迭代，而且
+because it's very easy to iterate and it's, you know,
+
+367
+00:25:57,987 --> 00:26:02,018
+它不会有一大堆文件，我可以直接拖拽
+it's not gonna have like a ton of files and I can just drag
+
+368
+00:26:02,018 --> 00:26:03,630
+并跨项目拖放
+and drop across projects.
+
+369
+00:26:04,390 --> 00:26:05,110
+真的很简单
+It's really easy.
+
+370
+00:26:05,190 --> 00:26:09,132
+所以我要创建一个新项目，嗯，一个新会话
+So I'm gonna create a new project, well, a new thread,
+
+371
+00:26:09,132 --> 00:26:14,150
+也就是在那个 HTML 项目里新建一个聊天，它本质上就是一个文件夹
+so a new chat from that HTML project, which is essentially a folder.
+
+372
+00:26:14,560 --> 00:26:18,430
+我会把它粘贴给 agent。如你所见
+And I'm gonna paste that into the agent. And as you can see,
+
+373
+00:26:18,430 --> 00:26:21,640
+这里基本上就是提示词加上了
+here is essentially the prompt plus the
+
+374
+00:26:21,960 --> 00:26:27,400
+MD 文件，你就能直接引导它
+MD file and you're gonna be able to just steer it.
+
+375
+00:26:27,480 --> 00:26:30,760
+通常你需要说明：使用什么技术？
+So usually what you want to mention is what is the technology?
+
+376
+00:26:30,920 --> 00:26:36,320
+你希望网站是什么样，也许再给一点引导。所以
+How do you want the site to be and maybe give a little bit of steering. So.
+
+377
+00:26:38,060 --> 00:26:43,460
+让我们创建一个单个 HTML 文件的网站
+Let's create an HTML site in a single HTML file.
+
+378
+00:26:44,260 --> 00:26:49,820
+然后用 3D 来制作卡片
+And we're going to use Three.js for the cards.
+
+379
+00:26:50,780 --> 00:26:56,500
+我们希望所有图层都分开，尤其是风景。比如
+We want all the layers to be separate, specifically for the landscape. So for example.
+
+380
+00:26:58,580 --> 00:27:04,503
+卡片会是它们自己的图层，而且
+You know, the cards would be their own layers and, you know,
+
+381
+00:27:04,503 --> 00:27:07,888
+它们会像 3D 的 3D 卡片
+they're gonna be like 3D Three.js cards
+
+382
+00:27:07,888 --> 00:27:15,020
+背景会用透明 PNG 图片分层
+and the background would be images layered using transparent PNGs.
+
+383
+00:27:16,100 --> 00:27:18,476
+然后我们还有背景中的风景
+And then we have, like, the landscape in the background.
+
+384
+00:27:18,476 --> 00:27:20,700
+柱子也是单独的图层
+We have the columns that are separate layers as well.
+
+385
+00:27:21,510 --> 00:27:28,430
+对于卡片，我还希望你使用深度贴图、法线贴图
+And then for the cards, I also want you to use depth maps, normal maps,
+
+386
+00:27:32,430 --> 00:27:34,110
+以及粗糙度贴图
+and roughness maps.
+
+387
+00:27:35,470 --> 00:27:39,794
+这样你就能通过提示词获得那种光照效果
+So this is how you would prompt that sort of like lighting effect
+
+388
+00:27:39,794 --> 00:27:44,796
+也就是卡片上那种 3D 感的 Pokemon（宝可梦）风格
+that you have on the card where you have this kind of 3D-ish Pokemon style
+
+389
+00:27:44,796 --> 00:27:48,950
+有多层结构，并有自己的光照
+where you have multiple layers and it has its own lighting.
+
+390
+00:27:49,910 --> 00:27:52,723
+这就是提示方式。我确实有一个技能，所以你不必一直说
+So this is how you prompt. I do have a skill so you don't have to say
+
+391
+00:27:52,723 --> 00:27:53,550
+那些话
+that all the time.
+
+392
+00:27:54,250 --> 00:27:57,402
+但我认为作为提示词已经很不错了
+But I think this is pretty good for a prompt,
+
+393
+00:27:57,402 --> 00:28:00,730
+我们要把它作为起点
+and we're gonna give that as a starting point.
+
+394
+00:28:02,450 --> 00:28:07,290
+然后我想以“自我验证，直到完美”结束
+And then I want to finish with something which is "self-verify until it's perfect."
+
+395
+00:28:08,650 --> 00:28:11,490
+所以我会像这样写提示词
+So I would prompt something like this.
+
+396
+00:28:12,010 --> 00:28:17,634
+我喜欢的另一件事是使用某个技能，比如
+And another thing that I like to do is to use one of the skills like, for example,
+
+397
+00:28:17,634 --> 00:28:21,527
+嗯，比如 着色器，你知道，如果你去
+um, like shaders, you know, if, if you go, for example,
+
+398
+00:28:21,527 --> 00:28:25,420
+Codex 里的浏览器，也就是 Command-T
+to the browser inside Codex, which is Command-T.
+
+399
+00:28:25,860 --> 00:28:28,297
+你可以访问像 canvasui.dev 这样的网站
+You can go to like canvasui.dev
+
+400
+00:28:28,297 --> 00:28:32,040
+然后你可以引入这些 着色器 效果
+and then you can bring some of these shader effects.
+
+401
+00:28:32,360 --> 00:28:35,880
+我用过的其中一个是 blaze
+One of them that I used was the blaze one.
+
+402
+00:28:36,520 --> 00:28:39,240
+卡片上用的就是这个
+So this is what was used for the cards.
+
+403
+00:28:39,760 --> 00:28:46,027
+所以你看这里，我要点击网站
+So if you look here, I'm gonna, you know, click on the website.
+
+404
+00:28:46,027 --> 00:28:49,160
+让我打开这个网站
+So let me just go to the website.
+
+405
+00:28:50,000 --> 00:28:51,360
+就在这里
+It's right here.
+
+406
+00:28:52,320 --> 00:28:52,600
+对
+Right.
+
+407
+00:28:53,120 --> 00:29:01,320
+你可以看到，进入这里后有 snow 效果
+And you can see here when I go here, we have the snow.
+
+408
+00:29:01,960 --> 00:29:05,000
+那个必须单独写提示词
+So that has to be prompted separately.
+
+409
+00:29:06,240 --> 00:29:08,200
+然后这里也有 blaze 效果
+And then we also have the blaze here.
+
+410
+00:29:08,840 --> 00:29:12,640
+同样，这也是使用 canvasui.dev
+And again, this is using canvasui.dev.
+
+411
+00:29:13,200 --> 00:29:18,060
+记住，很多这些效果都可以使用
+Now, keeping in mind that a lot of these effects can be used, you know,
+
+412
+00:29:18,060 --> 00:29:19,680
+也可以保存为技能
+can be saved as a skill.
+
+413
+00:29:19,760 --> 00:29:24,168
+所以每当你创建这些效果时
+So any time that you create these effects,
+
+414
+00:29:24,168 --> 00:29:28,184
+我基本上可以说，比如，好
+I can essentially just say something like, okay,
+
+415
+00:29:28,184 --> 00:29:33,180
+把 snow 效果变成技能，并添加到我的 3D 技能里，对吧？
+turn the snow into a skill and add that to my Three.js skills, right?
+
+416
+00:29:33,300 --> 00:29:35,620
+但在这种情况下，我把它命名为 3D skills（3D 技能）
+But in this case, I name it 3D skills.
+
+417
+00:29:36,460 --> 00:29:39,140
+或者你也可以把它命名为 着色器 skills
+So, or you can also name it shader skills.
+
+418
+00:29:39,780 --> 00:29:43,386
+所以我要这样做，我喜欢这样做，这样
+And so, you know, I'm gonna do this and I like to do that so
+
+419
+00:29:43,386 --> 00:29:47,853
+下次我就不必再经历所有验证
+that next time I don't have to sort of go through all the verification
+
+420
+00:29:47,853 --> 00:29:53,340
+和所有修复，甚至这种非常酷的神奇效果
+and all the fixing and even like this magical, this really cool magical thing.
+
+421
+00:29:53,420 --> 00:29:58,670
+但你知道，回到粗糙度、法线贴图，呃，还有深度贴图
+But you know, coming back to the roughness, normal maps, uh, and depth map, you know,
+
+422
+00:29:58,670 --> 00:30:03,920
+当我旋转时，你能看到光照，在这里更明显，你会
+When I rotate you can see there's lighting, it's more apparent here. You're gonna
+
+423
+00:30:03,920 --> 00:30:05,720
+在我旋转时在这里看到
+See right here when I rotate.
+
+424
+00:30:05,840 --> 00:30:12,561
+你可以看到，有一点点，你懂的，看这个盔甲
+You can see there's like a little bit of, you know, see like the armor,
+
+425
+00:30:12,561 --> 00:30:17,160
+有一点 3D 效果，但没有真正使用 3D
+There's a bit of a 3D effect that is not using 3D.
+
+426
+00:30:17,680 --> 00:30:22,160
+它实际上只是用了多层和光照效果
+That is in fact using just multiple layers with lighting effects.
+
+427
+00:30:22,680 --> 00:30:25,613
+这就是创造这种非常酷效果的原因
+And that's what creates this really cool,
+
+428
+00:30:25,613 --> 00:30:30,977
+就好像它前面有一层玻璃，所有这些，你看
+Like it kind of feels like there's a glass in front of it and all of this. See how,
+
+429
+00:30:30,977 --> 00:30:33,240
+这里的深度感很明显
+How there's like the depth here.
+
+430
+00:30:34,440 --> 00:30:37,640
+但当我往下移动时，你看不到这里的第二层，对吗
+But when I go down, you don't see the second layer here, right?
+
+431
+00:30:38,240 --> 00:30:40,960
+这就是那个技能，真的太惊艳了
+That is that skill. It's so, so amazing.
+
+432
+00:30:41,570 --> 00:30:45,730
+你只需用一个提示词就能用那个技能做到这个
+And you, you can just do that with a single prompt using the skill
+
+433
+00:30:45,730 --> 00:30:50,290
+就是我刚才提到的，或者只用我刚才提到的提示词
+that I just mentioned or just using the prompt that I just mentioned.
+
+434
+00:30:50,650 --> 00:30:53,810
+除此之外，我还加了这些效果，非常酷
+On top of that, I'm adding these effects, which is really cool.
+
+435
+00:30:55,010 --> 00:30:58,768
+落叶和光线效果也是一样
+And so the same with the falling leaves and the ray of lights,
+
+436
+00:30:58,768 --> 00:31:02,738
+虽然光线效果我肯定还能再通过提示词打磨一下
+although the ray of lights I can definitely prompt a little bit more
+
+437
+00:31:02,738 --> 00:31:04,440
+而且我确实有一个对应的技能
+and I do have a skill for that.
+
+438
+00:31:04,880 --> 00:31:07,440
+还有雪，也非常酷
+And the snow, which is really cool as well.
+
+439
+00:31:08,120 --> 00:31:12,800
+但你还可以推进得更远，甚至可以做到这样
+But you can really push so much further and you can even go into a part
+
+440
+00:31:12,800 --> 00:31:18,317
+你可以说，哦对，我想让角色从背景中分离成单独的图层
+where you can say, oh, yeah, I want the character to be a separate layer from the,
+
+441
+00:31:18,317 --> 00:31:24,000
+这样当我移动时，角色也会跟着动
+from the background so that when I move, then, you know, the character also moves.
+
+442
+00:31:24,120 --> 00:31:28,570
+所以用这些创造力你真的可以走得很远
+So you can really, really go far with all of this creativity.
+
+443
+00:31:28,650 --> 00:31:34,559
+我觉得在今天这个时代，AI 如此强大，比如 Astra
+And I think in this day and age with AI and how powerful it is, like Astra,
+
+444
+00:31:34,559 --> 00:31:36,800
+比如，还有 Fable 5.1（模型名称）
+for example, and Fable 51.
+
+445
+00:31:37,400 --> 00:31:38,840
+你真的可以把它推进得很远
+You can really push it.
+
+446
+00:31:38,920 --> 00:31:45,229
+你真的可以要求任何完全超乎你想象的东西
+You can really ask for anything that is completely out of your imagination,
+
+447
+00:31:45,229 --> 00:31:51,338
+你的品味、你想做的游戏、电影或现实生活，嗯
+your taste, the games that you like to do or the movies or the real life, um,
+
+448
+00:31:51,338 --> 00:31:52,940
+视差效果
+parallax effects.
+
+449
+00:31:53,500 --> 00:32:02,073
+比如玻璃、雪、火焰、余烬、魔法，呃，还有落叶
+So the glass, you know, snow, blaze, cinder, magic, uh, you know, falling leaves,
+
+450
+00:32:02,073 --> 00:32:07,620
+水晶球，你能做的太多了
+you know, the crystal ball, a lot of things you can do.
+
+451
+00:32:07,740 --> 00:32:11,620
+现在真的可以尽情发挥，我也一直在这么做
+It's like just go crazy nowadays and that's what I've been doing.
+
+452
+00:32:11,700 --> 00:32:14,210
+你知道，我一直梦想制作一款游戏
+You know, I've always dreamed of making a game.
+
+453
+00:32:14,730 --> 00:32:19,650
+相信我，我正疯狂地加入我一直在游戏里想要的所有东西
+And believe me, I'm going nuts with all the things that I always wanted in a game.
+
+454
+00:32:20,010 --> 00:32:24,010
+落地页也是一样，你看那个，简直疯狂
+And the same with landing pages like look at that. It's just crazy.
+
+455
+00:32:24,450 --> 00:32:28,090
+如果你看这个，也是一样，对吧
+And if you look at this one, it's the same, right?
+
+456
+00:32:28,730 --> 00:32:33,610
+你能看到，如果一开始不这么做，你就不会拥有那一切
+You can see if you don't, at the beginning you're not gonna have all of that,
+
+457
+00:32:33,610 --> 00:32:35,440
+那种漂亮的提示效果
+like, beautiful prompting.
+
+458
+00:32:36,200 --> 00:32:41,433
+所以，你懂的，一旦你给提示词，一旦你给到光照，比如说
+And so, you know, once you prompt and once you give the lighting, so for example,
+
+459
+00:32:41,433 --> 00:32:45,160
+我就有一个相关技能，你懂的，我有一堆技能
+I have a skill for like, you know, I have a bunch of skills.
+
+460
+00:32:45,280 --> 00:32:48,386
+使用技能的方法是先输入斜杠，再输入 3D
+So to, to, to use a skill is slash and then 3D.
+
+461
+00:32:48,386 --> 00:32:51,320
+这是技能分类的一部分
+So that's part of the category of skills.
+
+462
+00:32:51,840 --> 00:32:54,640
+我有一堆这样的技能，其中一个就是 sky rays
+And so I have a bunch of them. So one of them is like sky rays.
+
+463
+00:32:55,530 --> 00:32:58,970
+Depth map，就是我刚提到的那个，还有 Blender Gears
+Depth map, which is the one I just mentioned, Blender Gears.
+
+464
+00:32:59,090 --> 00:33:01,947
+这是用在我的游戏项目里的
+This is for my gaming sessions,
+
+465
+00:33:01,947 --> 00:33:08,210
+4 seasons，如果你想要雪、冬天和夏天；还有 guide tour
+4 seasons if you want like snow and then winter and summer, guide tour.
+
+466
+00:33:08,290 --> 00:33:13,210
+我还有一些其他做过的落地页。Falling leaves
+I have like other landing pages that I've been doing. Falling leaves,
+
+467
+00:33:13,210 --> 00:33:15,330
+sky background high polygon
+sky background high polygon.
+
+468
+00:33:15,490 --> 00:33:21,473
+这个非常有用，如果你想让你的程序化 3D 更……
+This is really useful if you want your procedural 3D to have more like to,
+
+469
+00:33:21,473 --> 00:33:26,360
+不要太过原始，比如不要太多三角形那种感觉
+to not be too primitive, like too triangular kind of thing.
+
+470
+00:33:26,920 --> 00:33:31,384
+你还需要 Retina 分辨率，因为就像我之前提到的
+You also want to have retina resolution, because like I mentioned before,
+
+471
+00:33:31,384 --> 00:33:36,280
+如果你不提到它，在 Retina 显示屏上就会是低分辨率
+if you don't mention that, it's going to be lower resolution for a retina display,
+
+472
+00:33:36,280 --> 00:33:40,600
+这不太好，还需要 high resolution text 之类的
+which is not very good, and then high resolution text and all that stuff.
+
+473
+00:33:40,640 --> 00:33:42,040
+这些就是这些技能
+So these are the skills.
+
+474
+00:33:42,420 --> 00:33:47,372
+再说一次，它们是开源的，你可以使用它们
+Again, they're open source and you're gonna be able to use them,
+
+475
+00:33:47,372 --> 00:33:54,100
+但回到设计上，你懂的，你能够把它构建出来
+but you can see coming back to the design and you know, you will be able to, to build this.
+
+476
+00:33:54,580 --> 00:33:59,180
+显然，我们不可能等所有这些设计都完成
+Obviously, we're not gonna be able to wait all of these designs to be done.
+
+477
+00:33:59,740 --> 00:34:02,013
+但我会分享所有提示词
+But I, you know, I'm sharing all the prompts.
+
+478
+00:34:02,013 --> 00:34:04,900
+它们是我会分享的落地页的一部分
+They're part of the landing pages that I will be sharing.
+
+479
+00:34:05,640 --> 00:34:08,000
+而且你有这些技能
+And you have the skills.
+
+480
+00:34:08,320 --> 00:34:12,852
+所以你只需去 GitHub（代码托管平台）找 MengTo skills
+So you can just go to GitHub and then MengTo skills
+
+481
+00:34:12,852 --> 00:34:17,162
+然后这些技能属于 Agent skills 的一部分
+and then the skills are part of the agent skills
+
+482
+00:34:17,162 --> 00:34:20,920
+它们放在一个叫 3D 的文件夹里。
+and they are part of the folder called 3D.
+
+483
+00:34:21,000 --> 00:34:23,760
+这就是我目前有的。我之后还会加很多。
+So these are what I have. I'm gonna be adding a lot more of them.
+
+484
+00:34:24,280 --> 00:34:28,777
+我有用于游戏开发的，有用于 UI 的，有用于网页设计的，
+I have for game development, I have for UI, I have for web design,
+
+485
+00:34:28,777 --> 00:34:32,340
+还有我最近刚推出的 3D UI。
+and I also have 3D UI which I just launched recently.
+
+486
+00:34:32,820 --> 00:34:42,300
+里面有很多漂亮的 3D 参考资料，大约 120 个是免费的。
+And it has a bunch of these beautiful 3D references, like 120 of them are free.
+
+487
+00:34:43,020 --> 00:34:48,870
+数量真的很多，因为有一大堆这样的效果，
+And there's just so many of them because there's a ton of these effects that are
+
+488
+00:34:48,870 --> 00:34:54,540
+如果你没有合适的开源代码参考，就很难重现，
+so hard to recreate if you don't have the proper open source code reference,
+
+489
+00:34:54,540 --> 00:34:56,430
+而这些参考在这里就能找到。
+which is available here.
+
+490
+00:34:56,790 --> 00:35:01,563
+如今你只需要复制提示词，然后把它带到
+And nowadays all you need to do is just to copy the prompt and then bring
+
+491
+00:35:01,563 --> 00:35:06,747
+Codex 里，创建它，然后让它换一个方向。
+that to Codex and then create that and then ask it for a different direction.
+
+492
+00:35:06,747 --> 00:35:09,710
+再说一次，所有这些操作都是如此。
+And again, you know, with all of this stuff.
+
+493
+00:35:11,110 --> 00:35:15,050
+如果你只是想进入头脑风暴阶段，
+If you just want to get into the brainstorming,
+
+494
+00:35:15,050 --> 00:35:20,101
+你可以访问 DiffUI.ai，然后开始一个会话，
+you go to DiffUI.ai and then you will be starting a session
+
+495
+00:35:20,101 --> 00:35:26,162
+你可以完全放开尝试各种方向，然后复制它，
+and you know you can really go crazy with the direction and then copy that
+
+496
+00:35:26,162 --> 00:35:30,910
+然后创建像这样的落地页。所以。
+and then create your landing page just like this one. So.
+
+497
+00:35:32,020 --> 00:35:35,937
+再总结一下目前我们讲过的内容：
+Again, to summarize everything we've covered so far,
+
+498
+00:35:35,937 --> 00:35:41,334
+我们用 DiffUI 来头脑风暴、创建，然后确定方向，
+we're using DiffUI to brainstorm and then create and then find a direction
+
+499
+00:35:41,334 --> 00:35:46,731
+然后使用大量的版本管理、页面区块、Logo 等
+and then using basically a ton of versioning and sections and logos and all
+
+500
+00:35:46,731 --> 00:35:50,300
+这些东西。完成后，我们再复制，对吧？
+that stuff. Once we're done, we copy that, right?
+
+501
+00:35:52,980 --> 00:35:56,660
+所以到这里，我们点击 Copy for agent（复制给智能体）。
+So going right here, we copy for agent.
+
+502
+00:35:57,660 --> 00:36:00,800
+然后它会把 URL 共享出来。
+And again, this will share the URL.
+
+503
+00:36:00,920 --> 00:36:03,640
+你就能看到我的完整会话以及我是怎么做的。
+You're gonna be able to see exactly my session and how I did it.
+
+504
+00:36:04,080 --> 00:36:10,130
+然后进入 Codex，新建一个提示，你基本上可以说：
+And then you go to Codex, you start a new prompt, and you can essentially just say,
+
+505
+00:36:10,130 --> 00:36:12,929
+好，嗯，你把它做成一个 HTML 页面，
+okay, uh, you know, do this in an HTML,
+
+506
+00:36:12,929 --> 00:36:16,812
+单个 HTML 文件，然后自我验证到完美，
+single HTML file and then self-verify until perfect
+
+507
+00:36:16,812 --> 00:36:22,320
+然后提一下技术，并加一点方向性引导。比如。
+and then you mention the technology and a little bit of a steering. So for.
+
+508
+00:36:22,320 --> 00:36:27,538
+在这个例子中，我们想要的那个，如果你记得，我们想要的是：
+Example, in this case, the one that we want here, if you remember, we want, you know,
+
+509
+00:36:27,538 --> 00:36:32,000
+如果——让我稍微放大一点，比如我希望这一栏是独立图层。
+if—let me zoom a little bit, like I want the column to be a separate layer.
+
+510
+00:36:32,760 --> 00:36:35,671
+我想要独立图层的原因是，当我要旋转视角时，
+And the reason why I want separate layers because when I'm gonna be orbiting,
+
+511
+00:36:35,671 --> 00:36:37,400
+顺便说一下，这一点我绝对可以明确提出。
+and by the way, I can definitely mention this.
+
+512
+00:36:37,400 --> 00:36:43,687
+所以鼠标悬停时，我希望你让 3D 和风景一起旋转，
+So on mouse over, I want you to orbit the 3D and also orbit the landscape
+
+513
+00:36:43,687 --> 00:36:47,590
+并让独立图层带视差地旋转。
+and the separate layers with parallax.
+
+514
+00:36:48,190 --> 00:36:50,990
+我这样做，就能引导它。
+So I do this and I can steer it.
+
+515
+00:36:51,590 --> 00:36:59,420
+这样做之后，你还能看到我在考虑另一个技能，
+And so you can see by doing this, I have also another skill I'm thinking about,
+
+516
+00:36:59,420 --> 00:37:07,250
+我有一个 Codex 技能，会提到使用 Codex GPT-5 flare。
+I have a Codex skill, which is mentioning about using Codex GPT-2.5 flare.
+
+517
+00:37:07,450 --> 00:37:09,105
+因为如果我不提这一点，
+Because if I don't mention that,
+
+518
+00:37:09,105 --> 00:37:11,496
+有时它会去使用 OpenAI API key，
+sometimes it's gonna go into the OpenAI API key
+
+519
+00:37:11,496 --> 00:37:14,010
+然后去 Higgsfield 生成它。
+and it's gonna go to Hicksfield to generate that.
+
+520
+00:37:14,370 --> 00:37:17,262
+我确实发现，如果你用 Codex，
+What I do find is that if you're using Codex,
+
+521
+00:37:17,262 --> 00:37:22,402
+你可以把它作为 Codex 订阅的一部分来使用，使用图像
+you will be able to use this as part of your Codex subscription using the image
+
+522
+00:37:22,402 --> 00:37:24,330
+生成插件或技能。
+generation plugin or skill.
+
+523
+00:37:24,920 --> 00:37:29,640
+因此，图像生成不需要使用任何外部 API。
+And then therefore, you don't need to use any external API for image generation.
+
+524
+00:37:30,040 --> 00:37:34,999
+而且因为有时它们是比较新的模型，你可能需要说明，
+And also because they are sometimes new models, you might need to mention, okay,
+
+525
+00:37:34,999 --> 00:37:39,440
+我想要 2.5 flare，想要星芒效果，或者其他你想要的画质。
+I want like 2.5 flare, I want sunbursts, whatever quality that you want.
+
+526
+00:37:39,960 --> 00:37:43,600
+这一点很重要，因为接下来你要生成这些图像。
+So this is important because then you're gonna be generating these images.
+
+527
+00:37:43,760 --> 00:37:48,410
+你会把卡片、这里的柱子生成为独立图层。
+You're gonna be generating the cards, the columns here as separate layers.
+
+528
+00:37:48,410 --> 00:37:49,960
+这就是我提到的。
+This is what I mentioned.
+
+529
+00:37:50,480 --> 00:37:52,560
+你希望背景是独立图层。
+You want the background as a separate layer.
+
+530
+00:37:52,760 --> 00:37:57,240
+你可能希望这里的风景也做成独立图层，依此类推。
+You might want like this landscape here as a separate layer and so on and so forth.
+
+531
+00:37:58,600 --> 00:38:02,643
+所以我们从这个开始，然后，嗯，当然，
+And so we're starting with this one and then, you know, sure,
+
+532
+00:38:02,643 --> 00:38:07,981
+我现在先不创建，但我的做法是，好，
+I'm not gonna be creating right now, but the way that I would do it is like, okay,
+
+533
+00:38:07,981 --> 00:38:09,760
+我先复制这个。
+so I'm gonna copy this one.
+
+534
+00:38:10,280 --> 00:38:15,614
+这个不太对，但我会点这里，用 Copy for agent 复制它，
+This is not correct, but I'm gonna go here and I'm gonna copy this for agent
+
+535
+00:38:15,614 --> 00:38:21,560
+然后我会说：我想要另一个可以浏览卡片的页面。
+and I'm gonna say something like, I want another page where I can browse the cards.
+
+536
+00:38:21,800 --> 00:38:24,800
+所以就用这里的这个方案。
+So use this concept right here.
+
+537
+00:38:25,920 --> 00:38:32,960
+然后粘贴，如果是一个页脚，我可以说：
+So and then you know, paste that and then if it's a footer, I can say something like.
+
+538
+00:38:33,830 --> 00:38:41,310
+复制这个，然后我会说：我们给落地页加一个页脚。
+Copy this one and I'm gonna say, let's add a footer to the landing page.
+
+539
+00:38:42,630 --> 00:38:45,750
+好。然后对于这个，这是玩法说明。
+Okay. And then for this one, this is how to play.
+
+540
+00:38:46,470 --> 00:38:51,150
+对，我只需要用 Copy for agent。
+And yeah, I can just do copy for agent.
+
+541
+00:38:52,670 --> 00:38:55,190
+所以这将作为“How to Play”区块。
+So this is going to be the how to play section.
+
+542
+00:38:56,000 --> 00:38:59,772
+放到落地页里。我们可以把所有区块，你知道，
+Of the landing page. We can just put all the sections, you know,
+
+543
+00:38:59,772 --> 00:39:01,440
+把所有页面都放进一个页面。
+all the pages into one page.
+
+544
+00:39:02,960 --> 00:39:05,960
+所以所有区块都放到一个页面。我可以这么做。
+So all the sections to one page. I can do this.
+
+545
+00:39:06,520 --> 00:39:09,233
+而卡片浏览区域，因为通常卡片浏览区域，
+The cards browsing, because usually the cards browsing,
+
+546
+00:39:09,233 --> 00:39:12,399
+你会想要单独做一个页面，因为有很多滚动内容，
+you want to have a separate page because there's a lot of scrolling,
+
+547
+00:39:12,399 --> 00:39:13,360
+很多导航。
+a lot of navigation.
+
+548
+00:39:13,880 --> 00:39:15,160
+所以我不会建议那样做。
+So I wouldn't recommend that.
+
+549
+00:39:16,320 --> 00:39:19,160
+但肯定的是，这里这个区块，自动播放、玩法说明。
+But definitely this section here, the auto play, how to play.
+
+550
+00:39:20,000 --> 00:39:23,880
+本身就可以单独作为一个区块，页脚也一样。
+Can be a section by itself and the footer as well.
+
+551
+00:39:25,400 --> 00:39:29,423
+也许我可以直接双击这个来创建 faction 区块。
+And maybe I can just double click this one for faction
+
+552
+00:39:29,423 --> 00:39:34,360
+然后它会为这个 faction 创建一个单独的区块。
+and then it's going to create a separate section for the faction.
+
+553
+00:39:35,040 --> 00:39:39,447
+所以我只需拖到这里，这很酷。
+So I'm just gonna drag here and then it's pretty cool
+
+554
+00:39:39,447 --> 00:39:46,315
+因为也许你还有像“Enter the Hunt”这样的内容，我们还能加什么呢？你知道，
+because maybe you also have like enter the hunt and what else can we add? You know,
+
+555
+00:39:46,315 --> 00:39:48,980
+你也可以做类似的事情。
+you can also do something like.
+
+556
+00:39:52,660 --> 00:39:58,780
+添加一个，嗯，创建客户评价区块，还有价格区块。
+Add a, well, create the testimonial section and also the pricing section.
+
+557
+00:40:00,140 --> 00:40:05,541
+所以也许我不需要，通常你会想一次专注一个区块。
+So maybe I don't need, like usually you want to focus on one section at a time
+
+558
+00:40:05,541 --> 00:40:08,241
+然后我再创建另一个。
+and then I'm gonna create another one
+
+559
+00:40:08,241 --> 00:40:11,900
+然后这个我要做价格区块。
+and then this one I'm gonna do the pricing section.
+
+560
+00:40:12,140 --> 00:40:13,780
+这就是它的速度。
+So this is just how fast it is.
+
+561
+00:40:13,780 --> 00:40:16,147
+然后你可以继续，呃，
+And then you can just keep, uh,
+
+562
+00:40:16,147 --> 00:40:21,640
+把给智能体的提示词复制下来，然后带到你的落地页。
+copying the prompt for agent and then bring that to your landing page.
+
+563
+00:40:22,080 --> 00:40:25,111
+所以当这个完成后，我会分享它。
+And so when this is done I'm gonna share it
+
+564
+00:40:25,111 --> 00:40:27,720
+它也会放在视频描述里。
+and it's gonna be in the description as well.
+
+565
+00:40:28,040 --> 00:40:29,880
+但就像我说的，这些你都会有。
+But like I said, you have all of this.
+
+566
+00:40:30,000 --> 00:40:36,411
+我很喜欢这些：落地页、技能、提示词，而且你还能，嗯，
+Love this, the landing pages, the skills, the prompts and you're gonna be able to, um,
+
+567
+00:40:36,411 --> 00:40:41,614
+去随意尝试，还有这个视频本身也会在这里。
+to just play with it and also this, this session right here
+
+568
+00:40:41,614 --> 00:40:44,680
+而且你显然有 DiffUI。
+and you know obviously you have DiffUI.
+
+569
+00:40:45,240 --> 00:40:51,400
+呃，还有一件事，我们确实有一个 DiffUI 的折扣链接。
+Uh, another thing is that we do have a link for a discount for DiffUI.
+
+570
+00:40:52,350 --> 00:40:56,430
+而且你知道，你可以用那个来开始。
+And you know, you're going to be able to use that to get started
+
+571
+00:40:56,430 --> 00:40:58,510
+并创建出漂亮的设计。
+and create a beautiful design.
+
+572
+00:40:59,390 --> 00:41:01,150
+所以我希望你享受这次视频教程。
+So I hope you enjoyed this session.
+
+573
+00:41:01,790 --> 00:41:07,656
+如果你想看更多类似的视频，或更多关于 DiffUI 或
+And if you want to see more videos like this or more videos about DiffUI or
+
+574
+00:41:07,656 --> 00:41:13,430
+GPT-5 Astra 的视频，请告诉我。我很乐意创作更多相关内容。
+GPT-6 Astra, just let me know. I'm happy to create more content on this thing.
+
+575
+00:41:15,350 --> 00:41:16,710
+那我们下个视频见。
+So I'll see you in the next video.

@@ -1,0 +1,2064 @@
+1
+00:01:03,610 --> 00:01:06,650
+大家好，大家都怎么样？我稍微早到了一点。
+Hi, everyone. How are we doing? I'm here a little bit early.
+
+2
+00:01:06,690 --> 00:01:09,690
+嗯，其实只早了一分钟，但严格来说也算提前一分钟。
+Well, it's only a minute, but technically a minute early.
+
+3
+00:01:10,290 --> 00:01:16,130
+嗯，对，希望大家一切都好。嗯，我这边进展不错。
+Um, yeah, I hope you're all doing well. Um, things are going well here.
+
+4
+00:01:16,130 --> 00:01:22,170
+我也这么想。我是说，显然现在已经有足够时间让我们都用过 Opus（Claude 系列高端模型）了。
+I thought so. I mean, obviously there's been enough time now for us all to have used Opus.
+
+5
+00:01:22,370 --> 00:01:28,728
+它已经发布一周了。但我想花点时间，也许试试
+It's been out a week. But I thought I would take some time to kind of maybe try
+
+6
+00:01:28,728 --> 00:01:35,370
+看看我们能从中挤出什么。虽然我不想剧透，就是
+and see what we can eke out of it. And whilst I don't feel like spoiler alert that,
+
+7
+00:01:35,370 --> 00:01:38,598
+Opus 5（Claude Opus 系列模型）在写作方面特别厉害，
+that Opus 5 is like super great at writing,
+
+8
+00:01:38,598 --> 00:01:44,040
+我觉得它在很多其他事情上会非常有用。
+I think there's a lot of other things that it would be really useful for.
+
+9
+00:01:44,560 --> 00:01:49,840
+所以我觉得我们可以一点一点来，先试试看。
+So I think we could just like take it a bit at a time, give it a go.
+
+10
+00:01:49,840 --> 00:01:54,168
+如果你们有什么实验想让我试试，嗯，Brian，如果你有的话，
+If anyone has any experiments they want me to try out, um, Brian, if you've got any,
+
+11
+00:01:54,168 --> 00:01:56,841
+嗯，有什么特别想看的内容，
+um, anything in particular you're wanting to see,
+
+12
+00:01:56,841 --> 00:01:58,560
+告诉我，我们可以试试看。
+let me know and we can give it a go.
+
+13
+00:01:58,640 --> 00:02:07,442
+好，上周直播的时候我确实跑了几次生成，
+Okay, so when we did last week's stream I did do a couple of generations
+
+14
+00:02:07,442 --> 00:02:15,627
+只是想看看它效果怎么样，我并不觉得它
+and just tried to see what it was like and I didn't feel that it was
+
+15
+00:02:15,627 --> 00:02:21,550
+和它有多大差别。好，其实我们换个方式。
+that different to, okay. Actually, let's go and change.
+
+16
+00:02:22,190 --> 00:02:24,550
+与其那样，我们直接用通用 system（系统提示词）吧。
+Rather than do that, we'll just do the general purpose system.
+
+17
+00:02:25,150 --> 00:02:30,555
+我们来跑 Sonnet 5（Claude Sonnet 系列模型）和 Opus 5，看看它们之间的差别。
+We'll do Sonnet 5 and Opus 5, and we're just gonna see what the difference is
+
+18
+00:02:30,555 --> 00:02:36,657
+看看有没有很大的、比较明显的差别，
+between them and if there is like a huge, like if there's an appreciable difference,
+
+19
+00:02:36,657 --> 00:02:41,570
+我觉得这是个不错的起点。嗨 Dylan，你好吗？
+I think that's probably a good place to start. Hi, Dylan. How are you doing?
+
+20
+00:02:42,970 --> 00:02:49,512
+嗯，我们先做这个，然后也许再看看提示词写法的影响。
+Um, so we can do this and then we can maybe go into seeing the effects of prompting
+
+21
+00:02:49,512 --> 00:02:54,170
+然后就，你知道，边做边看。嗨 Alex。
+and, you know, just just take things as they go. Hi, Alex.
+
+22
+00:02:56,260 --> 00:03:00,420
+你们有什么体验？到目前为止你们对 Opus 5 发现了什么？
+What are your experiences? What have you found out so far about Opus 5?
+
+23
+00:03:00,540 --> 00:03:04,317
+比如你喜欢什么，不喜欢什么？如果能和大家分享，
+Like what do you like? What do you dislike? If you could share it with everyone,
+
+24
+00:03:04,317 --> 00:03:08,460
+那就太好了，这样我们能收集更多看法，让讨论热起来。
+that'd be great so we can get some more opinions and just kind of get things going, you know.
+
+25
+00:03:09,620 --> 00:03:17,940
+好，我先把这段丢进一个 snippet（片段）里，固定住。
+Okay, I'm just gonna plunk this into a snippet, pin that.
+
+26
+00:03:20,200 --> 00:03:24,760
+然后要用完全相同的提示词时，啊等等，那部分好像是法语内容。
+And then with this exact same prompt, ah, wait, sure, that's part of my French.
+
+27
+00:03:27,360 --> 00:03:34,170
+那里面有我的……好，我得重做，因为里面包含，嗯，
+That's got my, okay, I'm gonna have to redo that because that has, um,
+
+28
+00:03:34,170 --> 00:03:36,320
+一个风格指南，哎哟。
+a style guide in oops.
+
+29
+00:03:41,770 --> 00:03:51,730
+我们不想让其他因素干扰。是啊，已经有不少实验之类的，嗯，打哈欠。
+We don't want to be influencing things. Yeah, got a fair few experiments and all that, um, yawning.
+
+30
+00:03:51,890 --> 00:03:56,210
+不过挺好，我挺高兴现在不像之前那么热了。
+But yeah, I'm so glad that it's not like really hot anymore.
+
+31
+00:03:56,210 --> 00:03:59,090
+虽然还是比较热，但不像之前热浪那样了。
+I mean, it's still fairly hot, but it's not like a heat wave anymore.
+
+32
+00:03:59,130 --> 00:04:01,690
+这还是很让人欣慰的。好，我们再试一次。
+So that's appreciated. Okay, let's try that again.
+
+33
+00:04:02,340 --> 00:04:06,535
+复制内容，然后我们用 Opus 做同样的操作，因为我发现
+Copy content and then we're gonna do the same with Opus cuz I find
+
+34
+00:04:06,535 --> 00:04:11,284
+很多时候，尤其是 Anthropic（AI 公司）和 GPT（生成式预训练模型）的模型，
+that a lot of the times I mean especially like with Anthropic and GPT,
+
+35
+00:04:11,284 --> 00:04:13,500
+这些模型听起来非常相似。
+the models do sound very similar.
+
+36
+00:04:14,260 --> 00:04:16,380
+所以我有点好奇这次是不是也这样。
+And so I'm kind of curious if that's the case here.
+
+37
+00:04:19,140 --> 00:04:21,809
+好，Brian 说他们一直在等别人试试看，
+Okay. So Brian says they've been waiting for others to try it to see
+
+38
+00:04:21,809 --> 00:04:24,020
+看看值不值得用它。好，那我们试试这个。
+if it's worth us using it. Okay, so let's try this.
+
+39
+00:04:37,230 --> 00:04:39,442
+好，这次不一样。我经常发现
+Okay, so this is different. Like I often find
+
+40
+00:04:39,442 --> 00:04:42,670
+Sonnet 或 Anthropic 的模型开头方式非常相似。
+that Sonnet or like Anthropic models start in very similar ways.
+
+41
+00:04:42,790 --> 00:04:48,510
+这次没有。所以这挺有意思。这是我已经注意到的一点。嗯。
+This hasn't. So that's, that's interesting. Just something I've noticed already. Um.
+
+42
+00:04:52,090 --> 00:04:52,610
+我是说。
+I mean.
+
+43
+00:04:56,340 --> 00:05:00,260
+那段给人的感觉是，地下城里的每个人都不会知道这件事。
+That paragraph feels like everyone in the undercity isn't gonna know that.
+
+44
+00:05:01,380 --> 00:05:07,260
+嗯，对，我是说，给 Dylan 剧透一下，我并不是特别喜欢。
+Um, yeah, I mean, spoiler alert for Dylan, I'm not a huge fan.
+
+45
+00:05:07,660 --> 00:05:10,340
+嗯，目前我觉得 4.6 是我最喜欢的 Opus。
+Um, I think 4.6 so far is my favorite Opus.
+
+46
+00:05:11,180 --> 00:05:16,554
+嗯，不过这种情况会出现，当 AI 被所谓“精炼”，
+Um, but that kind of happens as AI gets like refined in quotation marks
+
+47
+00:05:16,554 --> 00:05:21,280
+并且被独立使用，嗯，也就是用它自己生成的材料训练时。
+and like used on its own, um, like trained on its own material.
+
+48
+00:05:26,470 --> 00:05:32,745
+有意思的是，两个版本里它都直接用“我”来叙述，
+Okay, that's interesting that it's just talking "I" in both of the versions,
+
+49
+00:05:32,745 --> 00:05:37,805
+然后她接着去和 Kira 说话，我真的不太喜欢这些，
+she then goes to talk to Kira, I'm really not enjoying these,
+
+50
+00:05:37,805 --> 00:05:43,168
+比如那些隐喻性语言，我把它错看成了“胸”。
+like in all the metaphorical language, I misread that as boobs.
+
+51
+00:05:43,168 --> 00:05:44,990
+于是我递上我的靴子。
+And so I pass my boots.
+
+52
+00:05:49,090 --> 00:05:55,050
+所以这里是把它从这里开始又重复了一遍。
+So this has repeated back from here.
+
+53
+00:05:55,650 --> 00:05:57,360
+这是需要注意的，好，
+So that's something that, okay,
+
+54
+00:05:57,360 --> 00:06:00,210
+它在重复我们之前给过它的文字。
+so it's repeating what we've given it as words before.
+
+55
+00:06:00,370 --> 00:06:07,010
+它确实接收了信息，不过是在把信息反刍出来。然后……
+It's taking on information. It is regurgitating it though. And.
+
+56
+00:06:14,310 --> 00:06:21,030
+这里是恐慌部分。我当时说，要保持含蓄。
+So here, the panic. I was like, keep this subtle.
+
+57
+00:06:21,590 --> 00:06:23,670
+它一点也不含蓄。她就像是在说“我做了这个”。
+It's not been subtle. She's been like, I did this.
+
+58
+00:06:23,830 --> 00:06:30,390
+所以它有自己的想法，Opus 和 Sonnet 都是。
+So it's got its own ideas, both Opus and Sonnet.
+
+59
+00:06:45,120 --> 00:06:46,480
+这其实不太合理。
+That doesn't really make sense.
+
+60
+00:06:57,610 --> 00:06:58,410
+是啊，我……
+Yeah, I.
+
+61
+00:07:07,380 --> 00:07:11,660
+好吧，我喜欢这个。我觉得那挺好笑，那个标牌。
+Okay, I like this. I think that's quite funny, the sign.
+
+62
+00:07:11,700 --> 00:07:15,300
+你觉得 Arcons 吊灯和 Maria Ortega 的烧水壶接在同一根保险丝上？
+You reckon the Arcons chandeliers are on the same fuse as Maria Ortega's kettle?
+
+63
+00:07:15,780 --> 00:07:21,900
+我张开嘴，又闭上，好让自己……嗯。所以确实有些片段。
+I open my mouth, shut it so that I like. So there are some bits.
+
+64
+00:07:36,170 --> 00:07:39,690
+对，语言非常隐喻化，比 Sonnet 更明显。
+Yeah, very metaphorical language, like more so than Sonnet.
+
+65
+00:07:48,630 --> 00:07:50,990
+它们处理“顿悟”的方式我也不喜欢。
+Don't like how they had the realization either.
+
+66
+00:07:52,310 --> 00:07:58,350
+呃，我不知道它为什么老执着于这个“我的大楼”的东西。
+Um, I don't know why it's obsessed with having this "my building" thing.
+
+67
+00:07:58,390 --> 00:08:03,871
+就像 AI 整体上，所有模型，我感觉都对这个……特别有占有欲，
+Like AI in general, all of them, I feel like, are being very possessive over the,
+
+68
+00:08:03,871 --> 00:08:05,670
+这栋大楼。很奇怪。嗯。
+the building. Weird. Um.
+
+69
+00:08:19,280 --> 00:08:27,400
+好，那我来试一下这个。
+Okay. So I am going to play around with this.
+
+70
+00:08:27,960 --> 00:08:30,680
+Alex 说，我不在家，八月份会回来。
+Alex says, I'm away from home, will be returning in August.
+
+71
+00:08:30,720 --> 00:08:36,000
+所以希望到那时还能补看。新版 Opus 还没出，所以我到时候看这一期。
+So just tuning in hopefully by then. New Opus isn't out yet, so I'll get around to this one.
+
+72
+00:08:40,530 --> 00:08:43,210
+你是说还会有一个新版 Opus，还是……
+Do you mean like there's a new Opus, or...
+
+73
+00:08:44,690 --> 00:08:49,410
+嗯，但是对。不，我……对，它是开箱即用的。
+Um, but yeah. No, I... yeah, it's out of the box.
+
+74
+00:08:50,130 --> 00:08:52,770
+我就觉得，好吧，这有点平淡。
+I'm like, okay, this is a bit bland.
+
+75
+00:08:53,290 --> 00:08:57,650
+嗯，它差别挺大的。说真的，我很惊讶它和 Sonnet 会差这么多。
+Um, it's different enough. I'm surprised at how different it is to Sonnet, actually.
+
+76
+00:08:58,050 --> 00:08:59,890
+我本以为它会像得多……
+I was expecting it to be a lot more like...
+
+77
+00:09:00,830 --> 00:09:01,870
+跟同样的那些基础模块一样。
+the same blocks.
+
+78
+00:09:03,390 --> 00:09:08,230
+那这倒是有用。好。哇。我没点击任何不礼貌的东西。
+So that's good to know. Okay. Wow. I did not click anything rude.
+
+79
+00:09:09,230 --> 00:09:17,190
+那我们接着看。我当时想，好吧，我想让它模仿一下我的文风。
+Let's go now to... I was then like, okay, well, I want to do some mimicry of my style.
+
+80
+00:09:20,310 --> 00:09:24,556
+然后我就想，好，那这件事该怎么做？比如，
+And I was like, okay, well, how can I go about this? Like,
+
+81
+00:09:24,556 --> 00:09:27,510
+Opus 在这方面的能力到底有什么问题？
+what is the issue with Opus's ability?
+
+82
+00:09:28,150 --> 00:09:31,762
+然后我就在想，我是需要提供样本，而不是描述吗，
+So then I was like, do I need to provide samples rather than descriptions,
+
+83
+00:09:31,762 --> 00:09:32,710
+诸如此类的问题？
+that kind of thing?
+
+84
+00:09:33,310 --> 00:09:37,985
+然后我想，好吧，我直接问问 Opus，看看它自己的训练里是不是知道，
+And I was like, well, I'll ask Opus, just see if it knows in its own training,
+
+85
+00:09:37,985 --> 00:09:42,510
+你知道，结果要打个折扣看，但作为起点还不错。嗯。
+you know, take it with a pinch of salt, but it's a good starting point. Um.
+
+86
+00:09:44,400 --> 00:09:47,919
+它说的是，要让 Opus 对样本做分析，
+And it was saying to have Opus do the analysis on the samples
+
+87
+00:09:47,919 --> 00:09:49,920
+并且在它写之前把这两者都放进去。
+and include both before it writes.
+
+88
+00:09:50,120 --> 00:09:54,960
+所以理想情况下，你会让它先做样本分析，然后再让它写正文。
+So ideally, you'd have it do a sample thing and then write out.
+
+89
+00:09:54,960 --> 00:10:00,120
+我就在想，好吧，嗯，但是样本选择……
+And I was like, okay, hmm, um, but sample selection,
+
+90
+00:10:00,120 --> 00:10:05,520
+也就是要从不同故事里拿不同样本。
+so giving different samples from different stories.
+
+91
+00:10:12,080 --> 00:10:18,040
+表层特征它很容易做到，但深层特征做不到。
+It can do surface features easily, but deep ones it can't.
+
+92
+00:10:18,080 --> 00:10:22,813
+所以模型能捕捉句子长度、标点习惯和词汇语域，
+So the model picks up sentence length, punctuation habits and vocabulary register,
+
+93
+00:10:22,813 --> 00:10:25,480
+但它会漏掉那些让模仿作品显得不对劲的东西。
+but it will miss what makes imitations feel off.
+
+94
+00:10:25,520 --> 00:10:29,400
+比如可能更多是叙述者的个性那类。
+So like kind of a bit more of the narrator's personality.
+
+95
+00:10:30,610 --> 00:10:36,543
+所以它差不多是在说，你可能需要在剧情节点里给更多细节，
+Um, so it's kind of saying that you might need to give more detail in your beats
+
+96
+00:10:36,543 --> 00:10:42,290
+取决于具体内容，嗯，也就是提供一个对比配对。
+depending on what's going on, um, giving an idea of a contrast pair.
+
+97
+00:10:42,530 --> 00:10:47,250
+也就是放同一个场景的 AI 写版本，和你自己写的版本做对比。
+So include like an AI-written version of the same scene compared to a you-written version.
+
+98
+00:10:48,330 --> 00:10:50,904
+嗯，然后做修订计划。所以 Claude（Anthropic 的 AI 助手/模型），
+Um, and then plan for revision. So Claude,
+
+99
+00:10:50,904 --> 00:10:54,876
+它承认 Claude 有很强的默认风格，呃，
+it acknowledges that Claude has strong stylistic defaults, uh,
+
+100
+00:10:54,876 --> 00:10:59,616
+比如三段式排比、“不是 X，而是 Y”这类段落，最后收束成一句精巧的格言，
+so like tricolons, not X but Y paragraphs that resolve into a tidy aphorism,
+
+101
+00:10:59,616 --> 00:11:04,140
+情绪是被宣告出来的，而不是展示出来的。随着输出变长，这些特征会重新显现。
+emotions announced rather than shown. They reassert themselves as outputs get longer.
+
+102
+00:11:04,740 --> 00:11:08,460
+保真度在几百词之后明显下降。
+Fidelity decays noticeably past a few hundred words.
+
+103
+00:11:09,260 --> 00:11:13,860
+我觉得这点很重要，要特别留意。
+I think this is really important to keep an eye on.
+
+104
+00:11:14,450 --> 00:11:19,148
+如果保真度在几百词之后会下降，
+If fidelity, if fidelity is decaying after a few hundred words,
+
+105
+00:11:19,148 --> 00:11:22,250
+那一口气写一个场景就行不通了。
+writing a scene in one go is not gonna work.
+
+106
+00:11:23,170 --> 00:11:25,410
+我们就又要回到更短的剧情节点了。
+We want to do shorter beats again,
+
+107
+00:11:25,410 --> 00:11:30,770
+这有点可惜，因为当初要有这些超大输出，整个意义就在于……
+which is kind of a shame because like the whole point of having these huge outputs
+
+108
+00:11:30,770 --> 00:11:35,650
+我们当时想的是，好，这样我们能获得整章的连贯性。
+was we were like, okay, we can get the coherence across an entire chapter.
+
+109
+00:11:36,360 --> 00:11:43,527
+但这似乎是在说，实际上我们不应该这么做，嗯，
+But this seems to be suggesting that actually this isn't what we should do, um,
+
+110
+00:11:43,527 --> 00:11:44,960
+至少对 Opus 5 来说。嗯。
+with Opus 5. Um.
+
+111
+00:11:48,750 --> 00:11:51,622
+我会说，负面指令往往比正面指令更有效。
+I'd say negatives often do more than positives
+
+112
+00:11:51,622 --> 00:11:57,070
+因为失败模式是漂向默认风格，而不是缺乏方向。嗯。
+because the failure mode is a drift towards the default, not an absence of direction. Um.
+
+113
+00:12:00,000 --> 00:12:04,909
+纯粹从语言角度看，说“你是作者”
+For purely like language perspective, saying "you are the writer"
+
+114
+00:12:04,909 --> 00:12:10,800
+而不是“你在像这位作者一样写作”，效果似乎最好。
+rather than "you are writing like the writer" apparently works best. And.
+
+115
+00:12:14,610 --> 00:12:24,850
+然后我就想，好吧，我来查一下。嗯，我是说，好，搜一下 Opus 5 提示词写法。
+And then I was like, okay, so I'll have a look. Um, I mean, okay, Opus 5 prompting.
+
+116
+00:12:25,730 --> 00:12:31,922
+它真的是第一条结果。呃，Alex，我放大一下。
+It's literally the first result. Um, Alex, so let me zoom in.
+
+117
+00:12:31,922 --> 00:12:34,770
+看看这里还有什么。
+Let's see what else is here.
+
+118
+00:12:42,630 --> 00:12:49,030
+好。所以 Opus 5，它生成的回答比之前的 Opus 模型更长，而且……
+Okay. So Opus 5, they run longer than previous Opus models' answers, and.
+
+119
+00:12:52,970 --> 00:12:56,010
+简短、精炼的指令更有效。
+A short, concise instruction is effective.
+
+120
+00:12:57,290 --> 00:13:02,570
+而在很长的系统提示词里，要把指令和一个靠近提示词结尾的简短提醒配对使用。
+And in a long system prompt, pair the instruction with a short reminder near the end of the prompt.
+
+121
+00:13:08,680 --> 00:13:13,280
+好的，所以 Opus 5 在智能体式工作时很容易自动展开叙述。
+Okay, so Opus 5 narrates readily during agentic work.
+
+122
+00:13:13,800 --> 00:13:18,640
+它喜欢告诉所有人它接下来要做什么，然后再总结一下。嗯。
+It likes to kind of tell everyone what it's going to do and then conclude it. Um.
+
+123
+00:13:23,890 --> 00:13:27,010
+我们看看还有没有别的。嗯。
+Let's see if there's anything. Um.
+
+124
+00:13:32,390 --> 00:13:35,730
+所以像任务过度验证这类内容，
+So some of this stuff like task over verification,
+
+125
+00:13:35,730 --> 00:13:39,150
+我们不用担心，因为我们不会这么做，嗯。
+we don't need to worry about because we don't do, um.
+
+126
+00:13:49,560 --> 00:13:54,560
+好吧。我是说，这还行，但没给我太多信息。
+Okay. I mean, this was all right, but it didn't give me too much.
+
+127
+00:13:54,960 --> 00:13:57,040
+嗯，接下来我们来看提示词最佳实践。
+Um, so we're going to prompting best practices.
+
+128
+00:13:58,440 --> 00:14:04,520
+嗯，这里对怎么做有更多说明。嗯。
+Um, we've got a bit more like information on what to do. Um.
+
+129
+00:14:09,820 --> 00:14:16,064
+要清晰，把指令写成按顺序的步骤，添加上下文以提高
+Be clear, provide instructions as sequential steps, add context to improve
+
+130
+00:14:16,064 --> 00:14:23,100
+表现，有效使用示例，而且它喜欢这种，嗯，示例标签。
+performance, use examples effectively and it likes kind of, um, these example tags.
+
+131
+00:14:25,780 --> 00:14:28,580
+嗯，对，所以为了最佳效果，放 3 到 5 个示例。
+Um, yeah, so include 3 to 5 examples for best results.
+
+132
+00:14:28,660 --> 00:14:32,540
+你也可以让 Claude 评估你的示例是否相关、是否多样。
+You can also ask Claude to evaluate your examples for relevance and diversity.
+
+133
+00:14:33,340 --> 00:14:36,540
+结构化 XML（可扩展标记语言）标签，所以要用这些来组织，
+Structured XML tags, so structure with those,
+
+134
+00:14:36,540 --> 00:14:42,483
+这其实也是我们在 Novelcrafter（小说创作平台）里经常做的，嗯，给 Claude 设定角色，
+which is kind of what we do a lot in Novelcrafter anyway, um, give Claude a role,
+
+135
+00:14:42,483 --> 00:14:46,140
+长上下文提示、模型自我认知。好。
+long context, prompting self knowledge. Okay.
+
+136
+00:15:03,440 --> 00:15:08,520
+如果你仍然遇到……等一下。
+If you're still experiencing... 1 sec.
+
+137
+00:15:16,340 --> 00:15:19,380
+这里有一些信息，我觉得值得看一看。
+So there is some information here. I think it's worth having a look at.
+
+138
+00:15:21,180 --> 00:15:28,109
+但我当时想，好，我们有了从哪里开始的一些思路，
+But I was kind of like, okay, so we have some ideas of where to start
+
+139
+00:15:28,109 --> 00:15:31,060
+然后我想……在哪里呢？
+and I wanted to, where is it?
+
+140
+00:15:35,930 --> 00:15:39,930
+我就想，好，我已经给了你几段我未发表的小说正文。
+I was like, okay, I've given you several passages of my unpublished fiction.
+
+141
+00:15:40,690 --> 00:15:43,800
+嗯，我想让你分析它们，生成一份我可以用到的文风档案，
+Um, I want you to analyze them and produce a voice profile I can use
+
+142
+00:15:43,800 --> 00:15:48,787
+作为参考文档。所以用第二人称写，称呼作者为“你”，
+as a reference document. So write in the second person addressing the author as "you"
+
+143
+00:15:48,787 --> 00:15:50,810
+然后巴拉巴拉巴拉巴拉。
+and blah, blah, blah, blah, blah.
+
+144
+00:15:51,370 --> 00:15:52,810
+然后我想让它进行分析。
+And so then I wanted it to analyze.
+
+145
+00:15:52,930 --> 00:15:56,290
+所以我给了它一些指令，比如怎么分析。
+So I gave it some instructions on what to do, like how to do the analysis.
+
+146
+00:15:56,410 --> 00:16:02,023
+然后我想让它分析句子结构、标点、用词、叙事距离、
+And then I wanted sentence architecture, punctuation, diction, narrative distance,
+
+147
+00:16:02,023 --> 00:16:07,175
+叙述者做了什么、展示与讲述比例、对话、文本机制、节奏和时间，
+what the narrator does, show tell ratio, dialogue, mechanics, pacing and time,
+
+148
+00:16:07,175 --> 00:16:08,790
+幽默与语气控制。
+humor and tonal control.
+
+149
+00:16:09,470 --> 00:16:12,331
+反模式。所谓反模式就是，
+Anti-patterns. So anti-patterns are like,
+
+150
+00:16:12,331 --> 00:16:16,990
+我们想知道普通写作者会做、而这位作者不会做的事。
+we want to know what a generic writer would do that this author isn't.
+
+151
+00:16:17,610 --> 00:16:20,770
+所以我们是在尝试进入作者的头脑里。
+So we're trying to kind of like get in the author's head.
+
+152
+00:16:21,530 --> 00:16:27,210
+所以我放了些段落，嗯，然后我们可以看这份档案。
+So I've got some passages, um, and then we can look at this profile.
+
+153
+00:16:28,210 --> 00:16:31,387
+嗯，这非常长，所以我不会逐条讲完，
+Um, it was very long, so I'm not gonna go over everything,
+
+154
+00:16:31,387 --> 00:16:33,280
+但我觉得挺有意思的。
+but I thought it was interesting.
+
+155
+00:16:34,160 --> 00:16:37,680
+说实话，我还问它：你能把它弄得更易懂、更短一些吗？
+And to be honest, I asked, can you take this and make it easier to understand and shorter?
+
+156
+00:16:37,880 --> 00:16:41,040
+我当时想，好，各位，也许我给大家看整理后的版本。
+I was like, okay, guys, so maybe I'll show you the clean version.
+
+157
+00:16:43,200 --> 00:16:46,400
+然后我想，好，我们试着把它变成一个提示词并用起来。
+And I thought, okay, let's try and make this into a prompt and use it.
+
+158
+00:16:46,840 --> 00:16:53,451
+所以如果我们进到 Novelcrafter 里，我接着建了两个提示词，
+So if we go into Novelcrafter, I then went and then 2 prompts,
+
+159
+00:16:53,451 --> 00:16:56,360
+针对 Opus 的 Kate 文风测试。
+Kate voice tests for Opus.
+
+160
+00:17:01,770 --> 00:17:04,610
+我给大家放大一点。好。
+Let's zoom in for you all. So.
+
+161
+00:17:08,350 --> 00:17:12,550
+这里我有一份文风档案和一些写作样本。
+Here I've got a voice profile and some voice samples.
+
+162
+00:17:12,710 --> 00:17:20,230
+所以我有几段我的写作样本，嗯，还有一些反模式。
+So I've got a couple of samples of my writing, um, and some anti-patterns.
+
+163
+00:17:20,430 --> 00:17:28,110
+也就是我们不想要的东西。所以如果我们回到顶部……
+So things we don't want. So if we go up to the top and...
+
+164
+00:17:29,020 --> 00:17:33,157
+节奏和结构，比如词簇，
+Rhythm and structure, so kind of word clusters,
+
+165
+00:17:33,157 --> 00:17:39,260
+长句通过并列而不是从属来累积。
+long sentences accumulate by coordination and not by subordination.
+
+166
+00:17:40,460 --> 00:17:49,140
+嗯，我显然有一种标志性的段落形态。嗯。
+Um, I apparently have a signature paragraph shape. Um.
+
+167
+00:17:56,070 --> 00:17:59,190
+关于片段出现的频率，还有……
+For how often fragments appear, and...
+
+168
+00:18:02,170 --> 00:18:07,090
+好，所以长破折号前后不加空格，而且只用于同位语。
+Okay, so em dashes are unspaced and appositive only.
+
+169
+00:18:07,170 --> 00:18:09,570
+它们用来扩展名词，或者修正刚刚说过的话。
+They expand a noun or correct a statement just made.
+
+170
+00:18:09,570 --> 00:18:12,250
+它们从来不是修辞性停顿，也不是强调手段。
+They're never a rhetorical breath or an emphasis device.
+
+171
+00:18:13,690 --> 00:18:16,130
+破折号也用于结束被打断的对话。
+Dashes also terminate interrupted dialogue.
+
+172
+00:18:16,690 --> 00:18:19,090
+分号出现频繁，承担冒号的功能。
+Semicolons are frequent and do a colon's job.
+
+173
+00:18:19,610 --> 00:18:22,050
+先陈述，然后紧接解释或结果。
+A statement, then its immediate gloss or consequence.
+
+174
+00:18:22,660 --> 00:18:24,620
+呃，不太对称的独立分句。
+Uh, not too balanced. Independent clauses.
+
+175
+00:18:25,340 --> 00:18:28,913
+冒号很少用，用来引出感官描写列表。省略号只出现在对话里，
+Colons are rare and introduce sensory lists. Ellipses appear in dialogue only,
+
+176
+00:18:28,913 --> 00:18:29,820
+从不出现在叙述中。
+never in narration.
+
+177
+00:18:30,220 --> 00:18:32,500
+平行否定结构里允许逗号拼接句。
+Comma splices are permitted in parallel negation.
+
+178
+00:18:33,060 --> 00:18:36,649
+当场景中有非语言交流时，
+Where a scene contains nonverbal communication,
+
+179
+00:18:36,649 --> 00:18:42,460
+用单引号标记它，双引号标记说话。所以这些只是，嗯。
+single quote marks it and double quote marks speech. So these are just kind of, um.
+
+180
+00:18:43,580 --> 00:18:52,460
+我的用词选择，嗯，描写如何展开，情绪如何表达。
+My word choices, um, how descriptions are handled, how emotions are handled.
+
+181
+00:18:53,100 --> 00:19:01,012
+然后我给了它大概五千到六千词的四个不同写作样本。嗯，
+And so I gave it about 5,000 to 6,000 words of four different writing samples. Um,
+
+182
+00:19:01,012 --> 00:19:03,020
+然后在这份，呃……
+And then in the, like...
+
+183
+00:19:04,000 --> 00:19:08,781
+反模式里，它就像在说，好，这些是模型的习惯
+Anti-patterns, it's like, okay, so these are habits of the model
+
+184
+00:19:08,781 --> 00:19:12,840
+我们想根除或者说去对抗的那些习惯。
+that we want to eradicate or kind of like work against.
+
+185
+00:19:13,520 --> 00:19:17,999
+比如把独立下结论的段落折进更长的句子里，嗯，
+So folding a standalone verdict paragraph into a longer sentence, um,
+
+186
+00:19:17,999 --> 00:19:21,850
+在应该有硬切的地方加衔接句连接剧情节点，
+bridging sentences between beats where a hard cut belongs,
+
+187
+00:19:21,850 --> 00:19:24,703
+在做出语气转变之前先发信号。
+signaling a tonal shift before making it.
+
+188
+00:19:24,703 --> 00:19:28,372
+每段都重新称呼视角角色
+Renaming the point of view character every paragraph
+
+189
+00:19:28,372 --> 00:19:35,720
+代词明明能承接时也会重复命名；嗯，空格、em dash（长破折号）、省略号。叙述时提升用词层级，也就是
+where pronouns carry, um, space, em dash, ellipsis. In narration, upgrading register, i.e.
+
+190
+00:19:35,920 --> 00:19:42,800
+就是用更“高级”的词，还解释反讽，而不是让它自然落地。
+Kind of using posh words and explaining the irony rather than leaving it to land.
+
+191
+00:19:44,680 --> 00:19:50,254
+所以我想，嗯，好，我们拿这个试试看能做什么，
+So I thought, hmm, okay, let's take this and see what we can do,
+
+192
+00:19:50,254 --> 00:19:53,860
+看看正文里会不会有差别。
+see if it makes a difference in the prose.
+
+193
+00:19:54,500 --> 00:20:02,380
+所以我会把旧 Opus 的内容复制下来，然后……
+So what I'll do is I will copy the content from the old Opus and...
+
+194
+00:20:14,450 --> 00:20:18,770
+重新生成。
+regenerate.
+
+195
+00:20:37,430 --> 00:20:40,510
+好，我缩小一下，这样两边都能看到。
+Okay, let me just zoom out so we can see both.
+
+196
+00:20:51,310 --> 00:20:58,645
+我很想知道你们怎么看这些差异，如果有差异的话。
+I'd love to know what you think, like, of these differences, if there is a difference.
+
+197
+00:20:58,645 --> 00:21:00,950
+是啊，我也有点好奇。
+Yeah, I'm kind of curious.
+
+198
+00:21:05,760 --> 00:21:12,041
+我觉得这次它没有用对话，而你之前用了
+I feel like already it's not using dialogue, which you did
+
+199
+00:21:12,041 --> 00:21:18,440
+这到底是不是好事，我们可以看看。我……
+before, whether or not that's a good thing. We can have a look. I'm.
+
+200
+00:22:01,700 --> 00:22:04,888
+所以我就想，好，那里有点像是解释过度了。
+So I'm like, okay, well, that's a bit like over-explaining.
+
+201
+00:22:04,888 --> 00:22:06,580
+她本来不会看到的，但是，嗯。
+She wouldn't have seen but, um.
+
+202
+00:22:11,100 --> 00:22:13,740
+我觉得那个揭示更自然一点。
+I feel like it's a bit more natural, the revelation.
+
+203
+00:22:15,380 --> 00:22:21,353
+而且差别确实有，比如不像之前那么多——
+And there's definitely a difference in the, like, not as many just,
+
+204
+00:22:21,353 --> 00:22:26,580
+那种特别短的句子。虽然还有一些，但……
+like really short sentences. Like there's some, but it's.
+
+205
+00:22:32,030 --> 00:22:33,870
+有些地方我显然会删掉。
+Some bits I would obviously remove.
+
+206
+00:22:42,690 --> 00:22:47,890
+好，我更喜欢这个，尤其是意识到没有电那里。嗯。
+Okay, I like this a lot better, like the realization that there's no power. Um.
+
+207
+00:22:55,240 --> 00:22:58,120
+好，这次生成我比上次喜欢得多。
+Okay, so I like this generation a lot more than the previous generation.
+
+208
+00:22:58,720 --> 00:23:02,720
+所以我想这说明了 Opus 是可以通过提示词引导出来的。
+So that shows, I guess, that Opus can be, like, cajoled.
+
+209
+00:23:03,400 --> 00:23:07,585
+我想看看这两条消息之间价格差多少
+I want to see how different the price is between those two messages
+
+210
+00:23:07,585 --> 00:23:12,760
+因为我觉得这对值不值得也很关键。所以。
+because I think that makes a big difference as well as to whether it's worth it. So.
+
+211
+00:23:16,200 --> 00:23:23,638
+嗯，上一条是，好，嗯，输入 8000 tokens（模型计量单位），
+Um, the previous one was, okay, so, um, 8,000 tokens input,
+
+212
+00:23:23,638 --> 00:23:32,974
+输出 1.6k。上一条消息是 8 美分，然后这条，
+1.6 output. For the previous message, it was 8 cents, and then this,
+
+213
+00:23:32,974 --> 00:23:40,570
+这条是输入 10.5k、输出 1.8k，还不到 10 美分。
+which was 10 and a half in, 1.8 out, was just under 10 cents.
+
+214
+00:23:40,810 --> 00:23:43,530
+所以大概差了不到 2 美分。
+So there's like just under a 2-cent difference.
+
+215
+00:23:45,730 --> 00:23:51,034
+这值不值得，以及有没有改进，
+Whether that is worth it, and whether there is an improvement,
+
+216
+00:23:51,034 --> 00:23:55,650
+我有点好奇，用完全相同的提示词会怎么样，
+I'm kind of curious to see how, with the exact same prompt,
+
+217
+00:23:57,090 --> 00:24:00,570
+Sonnet 和原始 Sonnet 相比会怎么做。所以让我……
+Sonnet does in comparison to the original Sonnet. So let me.
+
+218
+00:24:04,820 --> 00:24:11,420
+Sonnet 会不会有像 Opus 那么大的变化？
+Does Sonnet have just as big a change as Opus does?
+
+219
+00:24:11,740 --> 00:24:17,370
+因为如果有的话，那谁在乎，我们可以直接用 Sonnet，
+Because if it does, then, you know, whatever, we could just use Sonnet,
+
+220
+00:24:17,370 --> 00:24:19,020
+你明白我意思吧？
+you know what I mean?
+
+221
+00:24:25,850 --> 00:24:26,570
+好，这是……
+Okay, this is.
+
+222
+00:24:34,080 --> 00:24:36,160
+好，立刻就觉得没那么好。我心想。
+Okay, it's not as good. Immediately, I'm like.
+
+223
+00:24:40,530 --> 00:24:42,130
+它有点更仓促了。
+It kind of rushed it a bit more.
+
+224
+00:24:45,330 --> 00:24:48,770
+好，所以我确实更喜欢 Opus，而不是 Sonnet。知道这点很好。
+Okay. So I do prefer Opus than Sonnet. That's good to know.
+
+225
+00:24:49,850 --> 00:24:56,862
+而且 Sonnet 似乎有更强的内置文风，所以它变化不大
+And Sonnet seems to have a stronger innate voice, and so it's not changing
+
+226
+00:24:56,862 --> 00:25:01,500
+变化没那么大，这并不意外。我是说，有点——还是有点意外，
+as much, which isn't surprising. I mean, it's kind of—it's a little surprising,
+
+227
+00:25:01,500 --> 00:25:02,570
+但也不是什么。
+but it's not like.
+
+228
+00:25:04,110 --> 00:25:07,470
+特别大的事。好，我们知道了。
+A huge thing. Okay, so we have that.
+
+229
+00:25:08,550 --> 00:25:13,190
+所以我会说 Opus 是可以通过提示词调出来的。
+So I would say that Opus can be prompted.
+
+230
+00:25:14,030 --> 00:25:20,217
+它不算特别便宜，还要看你想做多少工作或编辑
+It's not super cheap and it depends on how much work or editing you want to do
+
+231
+00:25:20,217 --> 00:25:23,910
+以及你愿意做多少，说实话。
+and you're willing to do, to be honest, like.
+
+232
+00:25:27,990 --> 00:25:29,750
+你……对，它需要哄着来。
+You, you. Yeah. It needs cajoling.
+
+233
+00:25:34,290 --> 00:25:35,810
+那我们接着看。
+And let's now look at...
+
+234
+00:25:41,650 --> 00:25:45,450
+我们现在要把这个交给 Opus 5。我想强化这个故事的第一幕。
+We're gonna now put this to Opus 5. So I want to strengthen Act one of this story.
+
+235
+00:25:45,730 --> 00:25:47,279
+我们能不能先盘一盘目前已有的内容，
+Can we interrogate what we have so far,
+
+236
+00:25:47,279 --> 00:25:50,330
+看它如何贯穿整个故事，并确定我们可以改进的关键点？
+how it runs through the entire story and determine key things we can work on?
+
+237
+00:25:50,690 --> 00:25:53,530
+这些是摘要。我们保持简洁。不要对话或正文。
+These are summaries. Let's keep it concise. No dialogue or prose.
+
+238
+00:25:53,930 --> 00:25:58,162
+先找出我们能做的最重要的五件事来加强它，
+Let's start with finding the top five things we can do to strengthen it,
+
+239
+00:25:58,162 --> 00:26:02,610
+接着再看第 1 章，并针对它做改进。
+then follow up, looking at Chapter 1 and working on improvements for that.
+
+240
+00:26:03,840 --> 00:26:04,920
+所以我接下来要……
+So I'm just gonna.
+
+241
+00:26:08,880 --> 00:26:13,529
+不要把这些放进 AI 上下文，因为这里没有总结。
+Not include these in the AI context because there's no summaries
+
+242
+00:26:13,529 --> 00:26:17,920
+我们有点想在其他地方处理这些总结。Opus 5。
+and we kind of want to work on the summaries elsewhere. Opus 5.
+
+243
+00:26:22,820 --> 00:26:27,020
+我会把一些主要角色放进上下文。
+I'll include some of the main characters for context.
+
+244
+00:26:29,300 --> 00:26:32,540
+嗯，暂时先这样吧。
+Um, let's just do that for now.
+
+245
+00:26:34,500 --> 00:26:36,335
+所以我们在这里算是看到了。好吧，
+So we're kind of seeing here now. Okay, well,
+
+246
+00:26:36,335 --> 00:26:38,220
+它在分析整个内容方面表现怎么样？
+how is it doing in like analyzing everything?
+
+247
+00:26:38,860 --> 00:26:43,300
+它在给建议吗？有没有从其他部分拉进来一些细节，你知道吗？
+Is it giving advice? Is it pulling in details from other areas, you know?
+
+248
+00:26:44,150 --> 00:26:45,110
+花了多长时间？
+How long does it take?
+
+249
+00:27:16,209 --> 00:27:19,129
+好。生成确实花了一会儿，但看起来它确实有在思考。
+Okay. So it took a while to generate, but it does seem like it's been thinking.
+
+250
+00:27:30,950 --> 00:27:36,192
+好，这也是 Fable（Novelcrafter 相关写作模型/功能）之前建议过的东西，当我，呃，
+Okay, so this is something that Fable suggested, um, as well when I was, um,
+
+251
+00:27:36,192 --> 00:27:41,179
+在玩的时候，呃，好，Alex 说我正想说那些明显的破折号。
+going to play, um, okay, Alex says I was going to say the obvious em dashes
+
+252
+00:27:41,179 --> 00:27:46,590
+直到后面的段落，才有对风格指令的明显遵循。
+until the later passages, there's a clear adherence to style instructions.
+
+253
+00:27:50,280 --> 00:27:54,200
+好，所以他们在说，关心是缺失的。
+Okay, so they're saying, you know, care is absent.
+
+254
+00:27:54,280 --> 00:27:59,000
+我们想要关心你怎样需要把她更早放进来。呃。
+We want to care about how you need to put her in earlier. Um.
+
+255
+00:28:16,680 --> 00:28:19,814
+好，这里说的是，有意思，把 Delilah 的第 4 章，
+Okay, so this is saying, interesting, make Delilah's Chapter 4,
+
+256
+00:28:19,814 --> 00:28:23,934
+让一部分破坏的修复发生在她碰巧在爆炸现场附近的那一刻，
+repair of part of the sabotage at the moment she's near the explosion by coincidence,
+
+257
+00:28:23,934 --> 00:28:26,893
+如果她在接线点上的巧妙修理无意中重新分配了负载，
+if her clever fix on the junction unknowingly reroutes load,
+
+258
+00:28:26,893 --> 00:28:30,897
+掩盖了叛军的破坏行为，或者为过滤系统恢复了所需电力，
+hides the rebels tampering or restores the power to the filtration system needed,
+
+259
+00:28:30,897 --> 00:28:32,000
+那她就成了共谋。
+then she's complicit.
+
+260
+00:28:32,080 --> 00:28:35,686
+从第 4 章开始，第 3 幕和第 4 幕的负罪感引擎就会更早启动
+From Chapter 4 and the guilt engine of Acts 3 and 4 actually runs earlier
+
+261
+00:28:35,686 --> 00:28:40,074
+而不是从第 20 章才开始。它还能更早地做好主题铺垫，
+rather than starting at Chapter 20. It also does the themes work earlier,
+
+262
+00:28:40,074 --> 00:28:42,520
+保护性的善意行为却导致了伤害。
+protective kind act cause, causes harm.
+
+263
+00:28:44,280 --> 00:28:50,960
+呃，更用力地埋下父母那条故事线，并利用你已经拥有的戏剧反讽。
+Um, planting the parents thread harder and use the dramatic irony you already own.
+
+264
+00:29:01,370 --> 00:29:08,570
+所以这是一个合理的观点。我会看看那一点，看效果如何。
+So that is a valid point. And I would have a look at that, see how that goes.
+
+265
+00:29:09,450 --> 00:29:14,950
+但我觉得不错的是，它把这一点和后面很多章的回报串在了一起。
+Um, but I like that it's tying this in the payoff in lots of chapters further down
+
+266
+00:29:14,950 --> 00:29:17,450
+它确实在发现关联。
+the line. It is seeing connections.
+
+267
+00:29:44,030 --> 00:29:49,110
+好，有意思。我觉得这些点都感觉非常成立。呃。
+Okay, interesting. I think these are all points that feel very valid. Um.
+
+268
+00:30:15,570 --> 00:30:18,221
+好，我喜欢，嗯，但还行。
+Okay, I like, yeah, but it's okay.
+
+269
+00:30:18,221 --> 00:30:23,050
+所以它确实给出了一些接下来怎么走的想法。
+So it's given definitely some ideas for where to go from here.
+
+270
+00:30:36,530 --> 00:30:39,804
+好，Alex 在说，我仍然很好奇想听听大家，呃，
+Okay, so Alex is saying, I'm still curious to know everyone, uh,
+
+271
+00:30:39,804 --> 00:30:43,387
+写正文的首选模型似乎还是 Opus 4.6，也就是稳定版，
+the go-to model for writing seems to be Opus 4.6 as in the stable version
+
+272
+00:30:43,387 --> 00:30:47,650
+但实际用于头脑风暴和修订工作流的，你们保留的是哪一个？
+but actually Brainstorming and editing workflow, which one are you guys keeping?
+
+273
+00:30:48,370 --> 00:30:49,930
+呃，把其他的都放一边吗？
+Uh, and benching over the rest?
+
+274
+00:30:50,930 --> 00:30:54,330
+嗯，对，据说 Aon 2（模型名）不错。
+Um, yeah, apparently Aon 2 is good.
+
+275
+00:30:54,930 --> 00:30:58,770
+嗯，我的意思是，这取决于你有多少预算。比如 Fable 实际上，
+Um, I mean, it depends on how much money you have. Like Fable is actually.
+
+276
+00:31:02,470 --> 00:31:03,510
+很适合做情节规划。
+Good for the plotting.
+
+277
+00:31:04,190 --> 00:31:10,958
+嗯，新的 Gemini Flash（Google Gemini 系列轻量模型），我觉得是 3.5 Flash，明显很擅长，比如，
+Um, the new Gemini Flash, I guess, 3.5 Flash, that's apparently really good at, like,
+
+278
+00:31:10,958 --> 00:31:15,484
+能够把线索串起来。比如，它写正文很糟，
+being able to connect dots. Like, it's awful at writing prose,
+
+279
+00:31:15,484 --> 00:31:17,747
+但它能把线索串起来，而且，呃，
+but it can connect dots and, um,
+
+280
+00:31:17,747 --> 00:31:21,310
+在头脑风暴或分析那边很有帮助，嗯。
+help with that Brainstorming or analysis side, um.
+
+281
+00:31:22,430 --> 00:31:31,150
+我确实喜欢在聊天里用 Gemini 模型。那是我通常会倾向选择的东西。
+I do like a Gemini model in chat. That does tend to be something I gravitate towards.
+
+282
+00:31:46,339 --> 00:31:50,509
+我对这个开场场景建议并不感冒。
+I'm not enamored by this opening scene suggestion.
+
+283
+00:31:50,509 --> 00:31:53,419
+它是还行，但有点无聊。
+Like it's fine and it's a bit boring.
+
+284
+00:32:03,320 --> 00:32:04,720
+但我们至少有了一个。
+But we have it.
+
+285
+00:32:05,680 --> 00:32:06,800
+这是一个起点。
+There's a starting point.
+
+286
+00:32:07,800 --> 00:32:12,510
+我，我会就按这个来。大家还想让我测什么吗？
+I'm, I would go with that. Is there anything people want me to test?
+
+287
+00:32:12,510 --> 00:32:14,480
+我觉得我可能会快速看看。
+I think I might give a quick.
+
+288
+00:32:18,420 --> 00:32:22,793
+看看它表现如何，我是说，我一开始不会用 Opus 来做总结，
+Look at how, I mean, I would not use Opus for summarizing to start with,
+
+289
+00:32:22,793 --> 00:32:26,940
+但让我们看看它做得怎么样。看看它总结一个场景怎么样。
+but let's see how it does. Let's see how it is at summarizing a scene.
+
+290
+00:33:08,020 --> 00:33:10,140
+哦，我的错。我忘了。
+Oh, that's my bad. I forgot to.
+
+291
+00:33:14,740 --> 00:33:15,260
+我的错。
+My bad.
+
+292
+00:33:19,940 --> 00:33:22,120
+Milo 说，嗨，大家好。很高兴能来这里参加这个。
+Milo says, hi, everyone. Glad to be here for this.
+
+293
+00:33:22,120 --> 00:33:24,140
+我一直很好奇你对 Opus 5 的看法。
+I've been curious what you think about Opus 5.
+
+294
+00:33:24,380 --> 00:33:30,540
+嗯，我们目前看到的情况是，开箱即用时它还行。
+Um, so what we've kind of looked at is that out of the box it's, it's fine.
+
+295
+00:33:30,620 --> 00:33:31,740
+只是有点平淡。
+It's just a bit bland.
+
+296
+00:33:32,300 --> 00:33:38,300
+嗯，随着你继续使用它，呃，它确实会有所提升。嗯。
+Um, as you go through and use it more, um, there's, it definitely improves. Um.
+
+297
+00:33:41,500 --> 00:33:44,648
+如果你给它提示词并引导它，
+If you give it prompting and kind of guide it,
+
+298
+00:33:44,648 --> 00:33:47,540
+但这也会带来成本代价。
+but then that also incurs a cost penalty.
+
+299
+00:33:48,060 --> 00:33:50,740
+所以这取决于你是否愿意付出这个成本。
+So it kind of depends on whether you want to pay that.
+
+300
+00:33:51,500 --> 00:34:02,820
+它肯定比 Sonnet 5 上了一个台阶。但它是否值得价格上涨，还是那句话。
+It's certainly a step up from Sonnet 5. Whether it's worth the price increase is, again.
+
+301
+00:34:03,680 --> 00:34:05,880
+个人选择吧，嗯。
+Personal choice, um.
+
+302
+00:34:14,200 --> 00:34:19,040
+好，所以它超出字数了，多了 25%。好。
+Okay, so it's over the word count by 25 percent. Okay.
+
+303
+00:34:23,030 --> 00:34:28,390
+看起来分析做得不错，但在……方面就没那么强，嗯。
+It seems to be good analysis, but not as good at, um.
+
+304
+00:34:31,170 --> 00:34:35,822
+像是给建议，或者像，你知道，比如说“这是……”
+Like giving suggestions or like, you know, be like, this is what,
+
+305
+00:34:35,822 --> 00:34:40,130
+这是你应该做的，那种感觉。
+this is what you should have done, that kind of thing.
+
+306
+00:34:40,650 --> 00:34:42,935
+嗯，好，5.6 Sol（模型名）。对，我是说，
+Um, okay, 5.6 Sol. Yeah, I mean,
+
+307
+00:34:42,935 --> 00:34:46,574
+我还挺喜欢我们做 5.6 直播的时候，
+I quite liked from when we were doing the 5.6 stream,
+
+308
+00:34:46,574 --> 00:34:49,348
+我觉得 Terra（模型名）是个不错的平衡
+Terra, I think, was a nice balance
+
+309
+00:34:49,348 --> 00:34:52,610
+因为它开箱即用比 Sol 更好。但是。
+because it was better than Sol out of the box. But.
+
+310
+00:34:54,380 --> 00:34:58,980
+也足够有冲击力。虽然 Sol 在写代码之类的事情上也很好。
+Gave enough oomph. Although Sol is really good for like coding and stuff as well.
+
+311
+00:34:58,980 --> 00:35:00,964
+所以如果你想用它来做那个，嗯，
+So if you wanted to use it for that, um,
+
+312
+00:35:00,964 --> 00:35:04,100
+我确实发现 GPT 模型们有非常相似的文风。
+I did find that like the GPT models had a very similar voice.
+
+313
+00:35:04,140 --> 00:35:06,858
+就像它们听起来都一个样，你能看出来
+Like they all sounded the same and you could tell
+
+314
+00:35:06,858 --> 00:35:11,180
+它们是在同样的东西上训练的，或者像是彼此的衍生版本。
+that they were trained on the same thing or like derivatives of each other.
+
+315
+00:35:18,190 --> 00:35:18,510
+对。
+Yeah.
+
+316
+00:35:27,570 --> 00:35:30,690
+总结还行。我觉得它本来可以更精简。
+The summary is okay. I feel like it could have been condensed.
+
+317
+00:35:31,570 --> 00:35:40,410
+嗯，所以对，我，我想我会说我不太确定还有什么。
+Um, so yeah, I, I think I would say that I'm not really sure what else.
+
+318
+00:35:40,450 --> 00:35:47,690
+我是说，我想我们可以看看，嗯，试试吧。
+I mean, I suppose we could look at, um, let's try.
+
+319
+00:35:49,920 --> 00:35:54,200
+改写、微调，再生成。嗯。
+Rephrase, tweak and generate. Um.
+
+320
+00:36:00,240 --> 00:36:00,840
+第三人称。
+Third person.
+
+321
+00:36:01,480 --> 00:36:01,520
+我……
+I'm.
+
+322
+00:36:04,440 --> 00:36:05,840
+我们试试最新版 Opus。
+We'll try Opus latest.
+
+323
+00:36:06,560 --> 00:36:10,200
+我只是想看看这整个……它在改写方面表现怎么样。
+And I'm just going to see how this entire, how it does for changing things.
+
+324
+00:36:15,990 --> 00:36:20,485
+对。Dina 说，我觉得 5.6 Sol 在句子层面最接近真人小说写作，
+Yeah. So Dina says, I think 5.6 Sol sounds closest to human fiction writing at sentence
+
+325
+00:36:20,485 --> 00:36:24,870
+但我很难让它变化句子长度。它读起来像剧本。对。
+level, but I struggle to get it to vary sentence length. It reads like a screenplay. Yeah.
+
+326
+00:36:24,870 --> 00:36:28,204
+我发现它有一种非常内置的节奏感，就像，
+I find that it has a very inbuilt cadence, like,
+
+327
+00:36:28,204 --> 00:36:31,710
+我马上给你们看一些生成结果。嗯。
+I'll show you some of the generations in a sec. Um.
+
+328
+00:36:38,210 --> 00:36:41,570
+好，我觉得那可能会导致一些混淆。
+Okay, so I feel like that might lead to some confusion.
+
+329
+00:36:42,570 --> 00:36:49,890
+它做了，但没有真正把她的 Mars Ledger 那种方式都考虑进去。
+It's done it, but it's not kind of taken into account all of the like the way her Mars Ledger.
+
+330
+00:36:51,610 --> 00:36:57,890
+所以我是说，它算是遵循了指令，但没有达到任何程度，对，嗯。
+So I mean, it kind of followed the instructions but not, like, with any degree of. Yeah, um.
+
+331
+00:36:59,500 --> 00:37:00,460
+我是不是没有？
+Do I not have?
+
+332
+00:37:01,220 --> 00:37:07,220
+除非是在我旧的那个上面。对，对。
+Unless it's on my older one. Yeah, yeah.
+
+333
+00:37:07,340 --> 00:37:13,091
+所以 Sol 非常喜欢，就是那种很短的句子，嗯，有点像，
+So Sol very much loves, it's like little short sentences, um, kind of the,
+
+334
+00:37:13,091 --> 00:37:16,297
+它本来有一个长段落，然后它就好像在说，不行，
+it has a long paragraph and it's like, no,
+
+335
+00:37:16,297 --> 00:37:20,540
+我需要用很多小段落把它拆开。
+I need to break this up with lots of little paragraphs.
+
+336
+00:37:21,440 --> 00:37:25,058
+嗯，你甚至只是从视觉上看它，
+Um, you can even just visually looking at it,
+
+337
+00:37:25,058 --> 00:37:29,360
+你都能看出它的文风很不一样，相对于……
+you can see that it has a very different voice to like.
+
+338
+00:37:30,840 --> 00:37:35,560
+就在其中，有更多对话一句接一句地出现。
+Just on it, like there's a lot more kind of dialogue running after each other.
+
+339
+00:37:45,600 --> 00:37:45,960
+对。
+Yeah.
+
+340
+00:37:47,000 --> 00:37:52,960
+嗯，对。Mila 说，嗯，噢，对。GPT 模型有非常明显的文风，
+Um, yeah. Mila says, um, oh, yes. The GPT models have a very distinct voice,
+
+341
+00:37:52,960 --> 00:37:54,560
+我确实希望他们能做点什么。
+and I do wish they'd do something about it.
+
+342
+00:37:54,560 --> 00:37:58,400
+但就像 Dina 说的，我喜欢 Sol 最像真人小说。
+But like what Dina says, I like that Sol is the most like human fiction.
+
+343
+00:37:59,360 --> 00:37:59,720
+对。
+Yeah.
+
+344
+00:38:00,440 --> 00:38:04,502
+但我觉得问题是，你知道，即使它确实有独特的文风，
+But I think the thing is like, you know, even if it does have a distinct voice,
+
+345
+00:38:04,502 --> 00:38:08,694
+你也可以编辑它，或者你可以，你知道，用提示词，或者，像，去调整它，
+you can edit it or you can, you know, use prompts or, like, you know, play, like,
+
+346
+00:38:08,694 --> 00:38:09,790
+如果它是个好的起点。
+if it's a good start.
+
+347
+00:38:09,910 --> 00:38:17,070
+就像我们真正在找的，是一个最好的起点，好继续往前推进。对。
+Like, what we're looking for really is the best starting point to kind of go forward. Yeah.
+
+348
+00:38:27,360 --> 00:38:33,728
+所以对，我，我确实觉得现在的模型开始有自己的文风了，
+So yeah, I, I definitely feel the models are now getting their own voices
+
+349
+00:38:33,728 --> 00:38:40,520
+而且在表达方式上也变得更有区分度了。
+and kind of becoming a bit more like separate in how they're kind of conveyed.
+
+350
+00:38:41,200 --> 00:38:43,560
+嗯，这很有意思。这，这是好事。
+Um, which is interesting. It's, it's, it's good to see.
+
+351
+00:38:43,760 --> 00:38:49,047
+嗯，这意味着写作者们有了更多一点选择，可以，像是，
+Um, it means like that writers have a bit more of a choice and can, like,
+
+352
+00:38:49,047 --> 00:38:52,420
+找到他们作品想要的那种骨干。
+find what backbone they want for their work.
+
+353
+00:38:53,020 --> 00:39:00,540
+嗯，对，我其实不太确定还有没有什么我想探究的。嗯，就像。
+Um, yeah, I'm not really sure if there's anything else I want to explore actually. Um, like.
+
+354
+00:39:04,260 --> 00:39:07,717
+我试了试获取样本，
+I played around with getting the samples
+
+355
+00:39:07,717 --> 00:39:11,548
+确实有一些办法可以改变它，
+and there is like some stuff you can do to change it
+
+356
+00:39:11,548 --> 00:39:16,500
+比如让 AI 更了解你的文风。但我感觉……
+and like give the AI more of an idea of your voice. But I feel like.
+
+357
+00:39:21,900 --> 00:39:27,562
+对，我们还是看看吧，因为我出于自己的好奇，
+Like, yeah, let's have a look actually, just because I'm curious for my own,
+
+358
+00:39:27,562 --> 00:39:29,180
+出于我自己的好奇心。
+for my own curiosity.
+
+359
+00:39:29,780 --> 00:39:34,738
+嗯，Opus 4.6，我们看看它的表现怎么样，因为我们之前说，噢，这个很棒。对，
+Um, Opus 4.6, let's see how it does because we were saying, oh, this is great. Yeah,
+
+360
+00:39:34,738 --> 00:39:37,180
+对，对。我们看看这个表现怎么样。
+yeah, yeah. Let's see how this one does.
+
+361
+00:40:10,820 --> 00:40:12,380
+对，这个我更喜欢。
+Yeah, I like this a lot more.
+
+362
+00:40:13,940 --> 00:40:16,660
+我、我更喜欢这个，喜欢多了。
+I, I like this so much more.
+
+363
+00:40:18,300 --> 00:40:25,165
+嗯，就像那种感觉没了。全都没了。哦不不不不不不。就像，
+Um, like that gone. All of it gone. Oh, no, no, no, no, no, no. Like,
+
+364
+00:40:25,165 --> 00:40:27,580
+这感觉很……对。
+this feels very. Yeah.
+
+365
+00:40:46,890 --> 00:40:53,070
+我更喜欢这个，喜欢多了。哦，你看，这就是他们停用模型很讨厌的原因，
+I like this so much more. Oh, see, this is why it sucks when they deactivate models
+
+366
+00:40:53,070 --> 00:40:58,650
+因为我刚读到这个，心里就想：哦，我真的读得很享受。
+because I just read this and I was like, oh, I really enjoyed reading this.
+
+367
+00:40:59,010 --> 00:41:03,109
+啊，好，头脑风暴。嗯，我们刚做了一点，嗯，Dylan，就是，嗯，
+Ah, okay, brainstorming. Um, so we did a little bit, um, Dylan, like, um,
+
+368
+00:41:03,109 --> 00:41:04,748
+看那些，但头脑风暴，好吧，
+looking them but brainstorm okay,
+
+369
+00:41:04,748 --> 00:41:06,930
+我们从头开始头脑风暴吧。嗯。
+let's brainstorm just from scratch. Um.
+
+370
+00:41:12,530 --> 00:41:12,730
+嗯。
+Um.
+
+371
+00:41:40,690 --> 00:41:41,570
+嗯，在。
+Um, in.
+
+372
+00:41:51,010 --> 00:41:52,410
+哦，还有一些。
+Oh, some more.
+
+373
+00:41:59,410 --> 00:42:04,211
+Alex 说感觉它很想让你读下去。说实话，
+Alex says it feels like it wants you to read it. To be honest,
+
+374
+00:42:04,211 --> 00:42:12,530
+你这话是什么意思？我不太确定你说的“我的输入”指什么。能说明一下吗？
+what do you mean by that? I'm not entirely sure what you mean by my input. Could you clarify, please?
+
+375
+00:42:18,200 --> 00:42:21,440
+然后是 episode。
+And then episode.
+
+376
+00:42:58,420 --> 00:43:02,576
+现在我感觉，我们跟 Kimmy 一起的时候，好，就是那些、那些，
+And now I feel like when we were with Kimmy, okay, so ones that, that,
+
+377
+00:43:02,576 --> 00:43:07,479
+读者会知道的。好，Selkie 是，嗯，对，好。
+that readers will know. Okay, Selkie is, um, yeah, okay.
+
+378
+00:43:07,479 --> 00:43:13,540
+我见过很多，甚至同人小说什么的。嗯。
+I've seen like a lot of like even fan fictions and stuff. Um.
+
+379
+00:43:36,440 --> 00:43:38,320
+我现在得去查一下其中一些。
+I would now need to look up some of these.
+
+380
+00:43:39,760 --> 00:43:43,840
+好。Alex 说 Opus 4.6 生成正文，在我看来就是刚刚好。
+Okay. Alex says that Opus 4.6 generating prose is just right in my opinion.
+
+381
+00:43:43,920 --> 00:43:48,240
+这就是我刚才想说的。对，我太喜欢了。
+That's what I meant to say. Yeah, I love it so much.
+
+382
+00:44:14,490 --> 00:44:17,490
+好。我是说，这里面有些不错的点子。我们继续。
+Okay. I mean, here there's some good ideas. Let's.
+
+383
+00:44:33,080 --> 00:44:34,200
+我喜欢这个。
+I like the.
+
+384
+00:45:13,010 --> 00:45:17,418
+我是说，cat 1 听起来挺有意思，但我就想，我是说，
+I mean, the cat 1 sounds fun, but I was like, I mean,
+
+385
+00:45:17,418 --> 00:45:21,610
+我想知道这只猫用这些灵魂做什么。
+I wonder what the cat is using the the souls for.
+
+386
+00:45:58,870 --> 00:45:59,990
+哦，那太惨了。
+Oh, that is tragic.
+
+387
+00:46:52,390 --> 00:46:56,030
+Sam Dilly 从卧室拿走了你的纸巾。
+Sam Dilly's taken your tissues from the bedroom.
+
+388
+00:46:58,030 --> 00:46:59,961
+我不知道你要不要过去，就是，
+I don't know if you want to go and like,
+
+389
+00:46:59,961 --> 00:47:02,390
+抓住他，别让他在走廊里把纸巾撕碎。
+get him and stop him tearing them up in the hall.
+
+390
+00:47:07,600 --> 00:47:09,680
+哈，是个猫玩具。好。
+Ha, it's a cat toy. Okay.
+
+391
+00:47:17,910 --> 00:47:21,830
+好吧，我是说，我、我觉得这些、这些都挺有意思。嗯。
+Okay, so I mean, I, I think these are these are fun. Um.
+
+392
+00:47:29,010 --> 00:47:29,810
+不同的结局。
+Different endings.
+
+393
+00:47:57,480 --> 00:48:03,468
+你想让这段感情线温暖、有希望，还是想让它虐？我是说，
+Do you want the romance warm and hopeful, or do you want it to hurt? I mean,
+
+394
+00:48:03,468 --> 00:48:07,160
+你懂的，确实有内味儿了。嗯。
+you know, it's definitely giving vibes. Um.
+
+395
+00:48:18,340 --> 00:48:20,140
+我是说，那还蛮可爱的。
+I mean, that is kind of cute.
+
+396
+00:48:41,800 --> 00:48:47,000
+好，所以 Opus 能做到，能做头脑风暴。嗯。
+Okay, so Opus can do it, can do brainstorming. Um.
+
+397
+00:49:44,880 --> 00:49:49,960
+好，这是，这是，你懂的，它有一些不错的角色、规则、法则。
+Okay, this is, this is, you know, it's got some good characters, some rules, law.
+
+398
+00:50:53,390 --> 00:50:57,670
+好，有意思的天赋。对，我是说，这是个挺扎实的故事前提。
+Okay, interesting gifts. Yeah, I mean, it's, it's a solid premise.
+
+399
+00:50:58,630 --> 00:51:00,550
+嗯，我觉得这可以、可以行得通。
+Um, I think it could, it could work.
+
+400
+00:51:01,070 --> 00:51:04,310
+我是说，我们还得，你懂的，你得再慢慢试。嗯。
+I mean, we'll have to, you know, you'd have to play around with it more. Um.
+
+401
+00:51:33,510 --> 00:51:39,510
+对，我是说，还行。所以，对，我觉得可以。不是 4.6。
+Yeah, I mean, it's okay. So, yeah, I think it's fine. It's not 4.6.
+
+402
+00:51:40,310 --> 00:51:45,150
+嗯，对，但我希望还是有点用。
+Um, yeah, but I hope there's some use.
+
+403
+00:51:45,190 --> 00:51:48,070
+我准备试着写一篇博客，聊聊我对这件事的想法。
+I'm gonna try and write a blog article about like my thoughts on this.
+
+404
+00:51:48,470 --> 00:51:52,189
+嗯，如果你们也想分享自己的想法，
+Um, so if you guys want to share any of your thoughts as well,
+
+405
+00:51:52,189 --> 00:51:54,390
+我会非常感激。
+that would be really appreciated.
+
+406
+00:51:55,460 --> 00:52:00,270
+我、我有时候在这些直播后会有点失望，因为我就觉得，
+I'm, I sometimes feel a little bit disappointed after these streams cuz I'm like,
+
+407
+00:52:00,270 --> 00:52:03,100
+我想要有个真正让我兴奋的东西。
+I want to have something that really excites me.
+
+408
+00:52:03,380 --> 00:52:08,911
+然后对，我就是，这、这不是，你懂的，我们不一定找得到，
+And yeah, I just, this, this isn't, you know, we're not necessarily finding it,
+
+409
+00:52:08,911 --> 00:52:14,420
+但它、它很扎实。它能做你需要它做的事。只是……
+but it's, it's solid. It can do the stuff that you, you need it to. It's just.
+
+410
+00:52:17,930 --> 00:52:20,730
+你懂的，所以下次见。
+You know, so I will see you next time.
+
+411
+00:52:21,650 --> 00:52:26,290
+我下周不在，但可能下下周在。
+I'm not here next week, but probably the week after.
+
+412
+00:52:27,090 --> 00:52:29,570
+也许周中我会做一次直播。看看有没有新模型出来。
+Maybe I'll do one during the week. We'll see if any models come out.
+
+413
+00:52:30,470 --> 00:52:35,150
+好。希望大家一切都好，回头见。拜拜，大家。
+Yeah. Hopefully you're all doing well and I'll see you soon. Bye, everyone.

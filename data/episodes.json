@@ -1,5 +1,113 @@
 [
   {
+    "title": "如何在一个月内将 2,500 个 PR 推上生产环境",
+    "bilibili_title": "如何在一个月内将 2,500 个 PR 推上生产环境｜Lauren Tan",
+    "original_title": "Here's How I Shipped 2,500 PRs Last Month to Production",
+    "bilibili_url": "https://www.bilibili.com/video/BV1twpc6gEXS/",
+    "youtube_url": "https://x.com/poteto/status/2102050467505430555",
+    "published_at": "2026-10-06",
+    "up": "通用人工智障",
+    "duration": "00:38:03",
+    "speakers": [
+      "Lauren Tan"
+    ],
+    "folder_title": "如何在一个月内将 2,500 个 PR 推上生产环境",
+    "path": "videos/undated-068_lauren-2500-prs-production/",
+    "slug": "undated-068_lauren-2500-prs-production",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "如何在一个月内将 2,500 个 PR 推上生产环境｜Lauren Tan_01.png",
+      "如何在一个月内将 2,500 个 PR 推上生产环境｜Lauren Tan_02.png",
+      "如何在一个月内将 2,500 个 PR 推上生产环境｜Lauren Tan_03.png",
+      "如何在一个月内将 2,500 个 PR 推上生产环境｜Lauren Tan_04.png"
+    ],
+    "subtitle_file": "lauren - here's how i shipped 2,500 PRs last month to production this was ori.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
+  },
+  {
+    "title": "个人超级智能、元宇宙与 AI 的未来",
+    "bilibili_title": "个人超级智能、元宇宙与 AI 的未来｜Mark Zuckerberg",
+    "original_title": "Mark Zuckerberg's Vision For the Future!",
+    "bilibili_url": "https://www.bilibili.com/video/BV1KuHb6jENs/",
+    "youtube_url": "https://www.youtube.com/watch?v=voGz8FBR-7k",
+    "published_at": "2026-10-06",
+    "up": "通用人工智障",
+    "duration": "00:50:16",
+    "speakers": [
+      "Mark Zuckerberg"
+    ],
+    "folder_title": "个人超级智能、元宇宙与 AI 的未来",
+    "path": "videos/undated-067_mark-zuckerberg-future-vision/",
+    "slug": "undated-067_mark-zuckerberg-future-vision",
+    "outline_count": 5,
+    "subtitle_count": 1,
+    "outline_files": [
+      "个人超级智能、元宇宙与 AI 的未来_01.png",
+      "个人超级智能、元宇宙与 AI 的未来_02.png",
+      "个人超级智能、元宇宙与 AI 的未来_03.png",
+      "个人超级智能、元宇宙与 AI 的未来_04.png",
+      "个人超级智能、元宇宙与 AI 的未来_05.png"
+    ],
+    "subtitle_file": "Mark Zuckerberg's Vision For the Future!.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
+  },
+  {
+    "title": "为什么 Claude 还不能当你的产品经理",
+    "bilibili_title": "为什么 Claude 还不能当你的产品经理｜Dan Shipper、Ami Vora、Mike Krieger",
+    "original_title": "Why Claude can’t be your PM (yet) | Anthropic CPO Panel",
+    "bilibili_url": "https://www.bilibili.com/video/BV1aUHW6VEoF/",
+    "youtube_url": "https://www.youtube.com/watch?v=sEXdyK6woKU",
+    "published_at": "2026-10-05",
+    "up": "通用人工智障",
+    "duration": "00:28:49",
+    "speakers": [
+      "Dan Shipper",
+      "Ami Vora",
+      "Mike Krieger"
+    ],
+    "folder_title": "为什么 Claude 还不能当你的产品经理",
+    "path": "videos/undated-066_claude-cannot-be-your-pm-yet/",
+    "slug": "undated-066_claude-cannot-be-your-pm-yet",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "为什么 Claude 还不能当你的产品经理_01.png",
+      "为什么 Claude 还不能当你的产品经理_02.png",
+      "为什么 Claude 还不能当你的产品经理_03.png",
+      "为什么 Claude 还不能当你的产品经理_04.png"
+    ],
+    "subtitle_file": "Why Claude can’t be your PM (yet) ｜ Anthropic CPO Panel.deepseek-v4-pro有翻译参考资料版.双语.中文在上.srt",
+    "cover": "cover.jpeg"
+  },
+  {
+    "title": "别再规划 2027：OpenAI 如何以 90 天为周期打造产品",
+    "bilibili_title": "别再规划 2027：OpenAI 如何以 90 天为周期打造产品｜Tara Seshan、Nan Yu",
+    "original_title": "Stop planning for 2027: how OpenAI builds product 90 days at a time | Tara Sesha and Nan Yu (OpenAI)",
+    "bilibili_url": "https://www.bilibili.com/video/BV1nTHp6pE1X/",
+    "youtube_url": "https://www.youtube.com/watch?v=-ciSTkEVy30",
+    "published_at": "2026-10-05",
+    "up": "通用人工智障",
+    "duration": "00:29:09",
+    "speakers": [
+      "Tara Seshan",
+      "Nan Yu"
+    ],
+    "folder_title": "别再规划 2027：OpenAI 如何以 90 天为周期打造产品",
+    "path": "videos/undated-065_openai-product-90-days/",
+    "slug": "undated-065_openai-product-90-days",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "别再规划 2027：OpenAI 如何以 90 天为周期打造产品_01.png",
+      "别再规划 2027：OpenAI 如何以 90 天为周期打造产品_02.png",
+      "别再规划 2027：OpenAI 如何以 90 天为周期打造产品_03.png",
+      "别再规划 2027：OpenAI 如何以 90 天为周期打造产品_04.png"
+    ],
+    "subtitle_file": "Stop planning for 2027 - how OpenAI builds product 90 days at a time - Tara Sesha and Nan Yu (OpenAI).srt",
+    "cover": "cover.jpeg"
+  },
+  {
     "title": "用 Astra、DiffUI 和 Codex 制作惊艳 3D 落地页",
     "bilibili_title": "用 Astra、DiffUI 和 Codex 制作惊艳 3D 落地页｜Meng To",
     "original_title": "I recorded a 41-minute tutorial on how I use Astra to create insane three.js websites in Codex",

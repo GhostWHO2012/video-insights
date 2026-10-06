@@ -1,0 +1,2529 @@
+1
+00:00:01,390 --> 00:00:05,912
+嗨，我是 Lauren Tan（工程师）。你可能在 X 上见过我，账号是 poteto。
+Hi, my name is Lauren. You might know me as poteto on X,
+
+2
+00:00:05,912 --> 00:00:08,790
+我在 SpaceXAI（原文组织名称）的 Grok Bot（基于 Grok 的智能体系统）项目工作。
+and I work on Grok Bot at SpaceXAI.
+
+3
+00:00:09,750 --> 00:00:12,550
+上个月，我做了一件非常疯狂的事。
+So last month, I did something pretty crazy.
+
+4
+00:00:13,750 --> 00:00:17,350
+我把 2,000 个 PR（代码合并请求）推上了生产环境。
+I shipped 2,000 pull requests to production.
+
+5
+00:00:19,030 --> 00:00:21,950
+我能做到这些，很大程度上靠的是信任。
+A lot of how I'm able to do this is through trust.
+
+6
+00:00:22,860 --> 00:00:28,859
+嗯，我非常重视信任，也就是我如何能信任我的 agent（AI 智能体）产出
+Um, and I think a lot about trust in terms of how I can trust my agents to produce
+
+7
+00:00:28,859 --> 00:00:32,140
+高质量的工作，即使我不在场。
+high quality work even when I'm not there.
+
+8
+00:00:33,180 --> 00:00:37,242
+我今天演讲的核心论点和主张是：
+And my argument and thesis for this talk today is that
+
+9
+00:00:37,242 --> 00:00:42,412
+如果你把 agent 的环境设置得非常非常好，
+if you set up your environment for your agents really, really well,
+
+10
+00:00:42,412 --> 00:00:48,689
+最终就能拥有一个服务于个人甚至整个团队的软件
+you can end up with something that looks more like a personal or even team software
+
+11
+00:00:48,689 --> 00:00:54,690
+工厂，以远高于过去的速度产出高质量代码。
+factory where you're producing very high quality code at much greater rates.
+
+12
+00:00:54,970 --> 00:00:59,890
+比以前快得多。但我并不喜欢“软件工厂”这个说法。
+than before, but I'm not a fan of the term software factory.
+
+13
+00:01:00,450 --> 00:01:06,124
+我更喜欢用米其林厨房来做类比，因为作为技术人，
+I like the analogy of a Michelin kitchen better where, you know, as technologists,
+
+14
+00:01:06,124 --> 00:01:11,880
+我们并不是真的在生产，也不是在流水线上大规模制造产品。
+we're not really producing, we're not mass producing a product on an assembly line,
+
+15
+00:01:11,880 --> 00:01:14,840
+但我们的工作看起来非常有创造性。
+but the work that we do looks very creative.
+
+16
+00:01:15,120 --> 00:01:21,240
+它非常……构建产品的过程在某种意义上也是一种艺术。
+It's very, you know, it's the act of building a product and it's art in some sense.
+
+17
+00:01:21,960 --> 00:01:28,477
+所以，虽然有了 agent，我们不再亲自烹饪各个组件，
+So, you know, even though with agents we're not cooking the individual components
+
+18
+00:01:28,477 --> 00:01:34,900
+这些组件最终会进入产品，但我们仍然要为最终结果负责。
+that go into the product anymore, we're still responsible for the final outcome.
+
+19
+00:01:35,620 --> 00:01:38,512
+所以要思考厨房的配置，对吧？
+And thinking about our kitchen setup, right,
+
+20
+00:01:38,512 --> 00:01:43,458
+因为这取决于你如何安排一线厨师和副主厨，
+because depending on how you set up your line cooks, your sous chefs, you know,
+
+21
+00:01:43,458 --> 00:01:48,100
+他们有什么样的设备、接受过什么样的训练。
+the kind of equipment they have, the kind of training they have, you know.
+
+22
+00:01:48,140 --> 00:01:53,376
+还有洗碗工，以及一线厨师和洗碗工之间的比例。
+Dishwashers and the ratio, I guess, of line cooks to dishwashers,
+
+23
+00:01:53,376 --> 00:01:58,040
+所有这些因素都会影响最终产品的制作。
+all of these ingredients go into making the final product.
+
+24
+00:01:59,400 --> 00:02:02,280
+我觉得这个类比非常贴切。
+And I think this analogy is really apt.
+
+25
+00:02:03,120 --> 00:02:09,160
+在正式开始之前，我想先讲一个小故事。
+So I wanted to talk a little bit about a story before we begin.
+
+26
+00:02:10,180 --> 00:02:16,869
+六个月前，我刚加入 Cursor（AI 编程工具）时，当时我们还没并入 SpaceXAI。
+Well, six months ago, when I first joined Cursor, before we were a part of SpaceXAI,
+
+27
+00:02:16,869 --> 00:02:21,620
+显然，我那时还没有任何 skill（技能模块）可以使用。
+I obviously had, you know, no agent skills to use, right?
+
+28
+00:02:21,620 --> 00:02:25,724
+我刚加入公司，面对的是一个全新的代码库和全新的产品。
+I just joined the company. It was a fresh code base and a fresh product
+
+29
+00:02:25,724 --> 00:02:27,020
+也是我当时正在做的东西。
+that I was working on.
+
+30
+00:02:28,460 --> 00:02:34,745
+当时，Cursor 正在开发用来取代 Cursor IDE 的新界面，
+So at the time, um, Cursor was building the replacement for the Cursor IDE,
+
+31
+00:02:34,745 --> 00:02:37,380
+也就是新的 agent 窗口。
+which is the new agents window.
+
+32
+00:02:38,180 --> 00:02:44,020
+在我加入之前，Cursor 的 agent 窗口存在不少性能问题。
+And, uh, before I joined, the Cursor agent window had quite a lot of performance issues.
+
+33
+00:02:44,780 --> 00:02:48,620
+当时我的经理问我能不能帮忙。
+Um, and my manager at the time asked if I was able to help them.
+
+34
+00:02:49,580 --> 00:02:54,599
+在加入 Cursor 之前，我曾在 React（前端用户界面开发库）团队工作，
+Um, and since I had spent some time on the React team before I joined Cursor, uh,
+
+35
+00:02:54,599 --> 00:02:56,220
+所以这项工作似乎很适合我。
+it seemed like a good fit.
+
+36
+00:02:57,300 --> 00:03:03,210
+但刚开始的时候，我很快意识到这个过程有多么手工化。
+Uh, but when I first started, I quickly realized how manual this process was.
+
+37
+00:03:03,930 --> 00:03:07,707
+当然，我以前也做过性能优化工作，
+Uh, obviously I have done performance work before, um,
+
+38
+00:03:07,707 --> 00:03:12,388
+但以 PR 被合并的速度来看，这简直是……
+but at the rate at which pull requests were being landed, it was just,
+
+39
+00:03:12,388 --> 00:03:17,890
+感觉就像一堵几乎不可逾越的 PR 之墙，不断向我涌来。
+it felt like almost an insurmountable wall of pull requests that just kept coming in.
+
+40
+00:03:17,890 --> 00:03:23,490
+而且我完全不知道应用的性能是否在退化，对吧？
+And I had no idea whether or not the performance of the app would be regressing, right?
+
+41
+00:03:24,330 --> 00:03:29,592
+所以我在 Cursor 团队早期的大量时间，都花在查看……
+So a lot of my early time on the Cursor team was spent looking at, uh,
+
+42
+00:03:29,592 --> 00:03:34,950
+我会查看 Chrome DevTools（Chrome 开发者工具）、分析性能并记录 trace（性能追踪数据），
+Chrome DevTools and the performance and doing performance traces
+
+43
+00:03:34,950 --> 00:03:40,690
+还有采集堆快照，这极其极其手工化。
+and taking heap snapshots, uh, and it was extremely, extremely manual.
+
+44
+00:03:41,760 --> 00:03:43,760
+真的是太手工了。
+It was so manual.
+
+45
+00:03:44,000 --> 00:03:45,854
+它到了这样的地步，
+It got to the point where, um,
+
+46
+00:03:45,854 --> 00:03:49,975
+我真的非常沮丧，开始想，等等，
+I just got really frustrated and started to think about, you know, wait,
+
+47
+00:03:49,975 --> 00:03:51,760
+我们有 agent，我到底在干什么？
+we have agents, what am I doing?
+
+48
+00:03:52,640 --> 00:03:57,132
+于是我开始思考验证类的 skill。
+And so I started thinking about verification skills where, you know,
+
+49
+00:03:57,132 --> 00:04:00,927
+如果我的 agent 能真正自己运行应用本身，
+what if my agent could actually run the application itself
+
+50
+00:04:00,927 --> 00:04:05,496
+帮我采集 trace、理解数据并找出性能热点，
+and take the traces for me, understand the traces and find the hot spots
+
+51
+00:04:05,496 --> 00:04:07,200
+然后自动做爬山式迭代优化，
+and basically hill climb.
+
+52
+00:04:07,640 --> 00:04:12,720
+持续改善应用性能。
+You know, to better performance in our application automatically.
+
+53
+00:04:14,480 --> 00:04:19,413
+在过去六个月里，从在 Cursor 到 SpaceXAI，
+And throughout the last six months, uh, of being at Cursor and SpaceXAI,
+
+54
+00:04:19,413 --> 00:04:23,360
+可以明显看到我的生产力飙升。
+you can really see that my productivity has skyrocketed.
+
+55
+00:04:24,350 --> 00:04:29,510
+而且，我从来没有把一个月发布 2,000 个 PR 当作目标。
+And you know, I never set out to ship 2,000 pull requests a month.
+
+56
+00:04:29,590 --> 00:04:31,600
+那根本不是我设定的目标。
+That was not a goal of mine at all.
+
+57
+00:04:32,440 --> 00:04:35,230
+但我意识到，我开发的所有 skill，
+But I realized that all of the skills,
+
+58
+00:04:35,230 --> 00:04:41,800
+我做的所有工具和代码库改动，最终都指向了“信任”这个概念。
+all of the tools and codebase changes I was making laddered up to this idea of trust.
+
+59
+00:04:42,080 --> 00:04:44,981
+当时我并没有意识到，但，
+You know, I didn't know it at the time, but, um,
+
+60
+00:04:44,981 --> 00:04:49,102
+我脑子里一直有一个想法，就是……
+I had this thought in the back of my head, which was, you know,
+
+61
+00:04:49,102 --> 00:04:50,400
+我就是瓶颈。
+I am the bottleneck.
+
+62
+00:04:51,100 --> 00:04:56,683
+我需要能够把自己作为工程师拥有的所有知识
+And I need to be able to take all of the knowledge that I have as an engineer
+
+63
+00:04:56,683 --> 00:05:00,219
+传递给我的 agent 团队，这样
+and impart them into, into my team of agents so
+
+64
+00:05:00,219 --> 00:05:04,220
+我就不必成为所有事情的阻塞点。
+that I didn't need to be the blocker for everything.
+
+65
+00:05:04,580 --> 00:05:09,580
+你也能清楚看到，这已经得到了回报。
+And you can clearly see that it's, it's paid off.
+
+66
+00:05:11,650 --> 00:05:16,930
+所以我认为核心还是信任。
+So I think it really comes down to trust.
+
+67
+00:05:17,730 --> 00:05:22,958
+但具体要怎么建立这种信任？如果你，
+Um, but how exactly do you build that trust and where do you start if you are,
+
+68
+00:05:22,958 --> 00:05:27,090
+无论你正处于使用 agent 的哪个阶段，该从哪里开始？
+you know, wherever you are in your journey of using agents?
+
+69
+00:05:27,890 --> 00:05:32,531
+刚开始时，我显然也属于这一类，
+So, uh, when I started, obviously I was in this category, you know,
+
+70
+00:05:32,531 --> 00:05:34,050
+也就是 1 到 5 个 agent 的范围。
+in the 1 to 5 range.
+
+71
+00:05:35,080 --> 00:05:39,539
+在这个阶段，你仍觉得自己必须盯着每一次对话，
+Where, um, you still feel like you have to babysit every chat, uh,
+
+72
+00:05:39,539 --> 00:05:44,742
+不断进行方向纠正，
+and conversation and you're just constantly course correcting, you know,
+
+73
+00:05:44,742 --> 00:05:50,440
+你需要不断介入、纠正你的 agent，让它做正确的事。
+you're intervening, you're correcting your agent so that it does the right thing.
+
+74
+00:05:51,280 --> 00:05:54,708
+如果你不在场，基本上什么都
+Um, and if you're not there, basically nothing gets,
+
+75
+00:05:54,708 --> 00:05:57,980
+不会发生，agent 会做错误的事情。
+nothing happens and the agents do the wrong thing.
+
+76
+00:05:59,100 --> 00:06:03,275
+实际上，我认为这个阶段，
+And I would actually, argue that this part, this phase of, you know,
+
+77
+00:06:03,275 --> 00:06:06,278
+也就是使用 agent 的这个阶段，其实最难摆脱。
+using agents is actually the hardest to get out of
+
+78
+00:06:06,278 --> 00:06:10,160
+因为并不总是很清楚究竟该怎么做才能摆脱它。
+because it's not always very clear how exactly you get out of it.
+
+79
+00:06:11,040 --> 00:06:13,880
+这同样归结为信任。
+And again, it just comes down to trust.
+
+80
+00:06:15,360 --> 00:06:18,759
+你之所以无法从 1 个，
+You know, the reason you're unable to go from one,
+
+81
+00:06:18,759 --> 00:06:22,573
+或者说 1 到 5 个 agent，扩展到大约 100 个 agent，
+one or one to five agents to something more like 100, um,
+
+82
+00:06:22,573 --> 00:06:26,470
+是因为你还不信任 agent 的工作成果。
+is because you don't have trust in your agent's work yet.
+
+83
+00:06:26,950 --> 00:06:31,602
+如果你没有信任，却试图生成 100 个子 agent 或云端 agent，
+So if you don't have trust and you try to spawn 100 sub agents or cloud agents,
+
+84
+00:06:31,602 --> 00:06:37,550
+你很快就会发现，你只会得到一大堆低质代码 PR。
+you're gonna quickly find that you're just gonna get a ton of slop pull requests and, you know.
+
+85
+00:06:37,550 --> 00:06:40,032
+以及一堆回归问题和 bug 被发布上线。
+A bunch of regressions and a bunch of bugs shipped
+
+86
+00:06:40,032 --> 00:06:42,150
+没有人会对此感到满意。
+and no one's gonna be very happy with that.
+
+87
+00:06:44,180 --> 00:06:49,420
+这就引出一个问题：你该如何更信任你的 agent？
+So that begs the question, how do you trust your agents more?
+
+88
+00:06:50,980 --> 00:06:56,209
+对我来说，这始于我之前说过的，
+So for me, it came, uh, it, it really started when I, uh, like I said,
+
+89
+00:06:56,209 --> 00:07:01,342
+我加入 Cursor 团队并开始负责性能工作的时候。
+I joined the Cursor team and I was starting to work on performance
+
+90
+00:07:01,342 --> 00:07:04,860
+那时我意识到需要做验证。
+where I realized the need for verification.
+
+91
+00:07:05,950 --> 00:07:11,602
+当我说验证时，它其实分几个层级。
+So when I say verification, there are sort of levels to that because, you know,
+
+92
+00:07:11,602 --> 00:07:15,949
+在验证层级中较低的一端，
+on the, I guess, the lower end of the scale for verification,
+
+93
+00:07:15,949 --> 00:07:20,470
+有我提到的验证 skill，
+you have things like the verification skills that I talk about
+
+94
+00:07:20,470 --> 00:07:24,470
+也就是教你的 agent 如何运行你的应用。
+where you teach your agent how to run your application.
+
+95
+00:07:25,990 --> 00:07:31,575
+使用 Chrome DevTools 协议或你手头的其他
+You know, and use things like the Chrome DevTools protocol or whatever other
+
+96
+00:07:31,575 --> 00:07:36,811
+调试协议，并教它们如何
+protocol that you have for debugging and teach them how to, um, you know,
+
+97
+00:07:36,811 --> 00:07:42,920
+调试应用、采集性能轨迹、采集堆快照等等。
+debug the application, take performance traces, um, take heap snapshots and so on.
+
+98
+00:07:44,000 --> 00:07:49,324
+而在另一端，这个要难得多，
+Um, and then on the opposite end of spectrum, which is much,
+
+99
+00:07:49,324 --> 00:07:55,162
+也仍然很大程度上是个开放问题的，是更正式的形式化验证
+much harder and still very much an open question is like more formal verification
+
+100
+00:07:55,162 --> 00:07:57,910
+你可能依赖
+where, you know, maybe you rely on, uh.
+
+101
+00:07:57,990 --> 00:08:04,232
+形式化方法，或者使用 Lean（定理证明语言）、TLA+（形式化规格语言）等语言进行
+Formal methods or, you know, languages like Lean or TLA+, uh, to do, you know,
+
+102
+00:08:04,232 --> 00:08:08,328
+验证，从而检查
+verification so that you can check that, you know,
+
+103
+00:08:08,328 --> 00:08:15,740
+你的业务层或业务逻辑不变量始终成立。
+your business level or business logic, uh, invariants are, you know, are always, um, true.
+
+104
+00:08:16,460 --> 00:08:19,882
+你可以形式化地验证
+Um, and that, um, uh, you can formally verify
+
+105
+00:08:19,882 --> 00:08:23,860
+你的应用始终处于正确状态。
+that your application is always in a correct state.
+
+106
+00:08:24,780 --> 00:08:28,830
+但我想说，即使你没有
+Uh, but I would say that, you know, even if you don't have, um,
+
+107
+00:08:28,830 --> 00:08:33,367
+运行形式化方法的能力，而且确实很少有人能做到，
+the ability to run formal methods and very few people really do, um,
+
+108
+00:08:33,367 --> 00:08:36,850
+借助验证 skill，你也能走得很远。
+that with verification skills you can get very far.
+
+109
+00:08:37,690 --> 00:08:42,821
+当我加入 Cursor，开始开发 Cursor 的 agent 窗口时，
+So when I joined Cursor, uh, and started to work on the Cursor agent window,
+
+110
+00:08:42,821 --> 00:08:47,208
+我构建的第一个 skill 叫 Control Glass（让 agent 操作并验证应用的工具），
+the first skill that I built was the skill called Control Glass,
+
+111
+00:08:47,208 --> 00:08:51,594
+它是一个验证 skill，教 agent 如何
+which is a verification skill that teaches the agent how to, um,
+
+112
+00:08:51,594 --> 00:08:56,560
+运行应用并采集 trace。
+run the application and take traces, like I mentioned. And it does that.
+
+113
+00:08:56,600 --> 00:08:59,280
+它的底层使用 Chrome DevTools 协议。
+Through, uh, the Chrome DevTools protocol.
+
+114
+00:09:01,260 --> 00:09:04,888
+关于这个 skill 有个有趣的地方，
+Um, something interesting about that skill is, uh,
+
+115
+00:09:04,888 --> 00:09:07,420
+我是逐步迭代才做到这一点的。
+and I kind of iterated my way to this.
+
+116
+00:09:07,700 --> 00:09:09,180
+它最初并不是这样。
+Uh, it didn't start out this way.
+
+117
+00:09:09,820 --> 00:09:17,623
+但这类控制与验证 skill 实际上包含两个部分。
+Uh, but the control, uh, the control or verification skill really has two components
+
+118
+00:09:17,623 --> 00:09:21,580
+第一部分显然是 CLI（命令行工具）。
+to it. Um, the first part is obviously a CLI.
+
+119
+00:09:22,430 --> 00:09:26,432
+你希望你的 agent 能够可复现地
+So you want your agents to be able to reproducibly, um,
+
+120
+00:09:26,432 --> 00:09:32,124
+运行应用、采集轨迹并收集证据，以便……
+be able to run the application and collect traces and collect evidence that,
+
+121
+00:09:32,124 --> 00:09:37,015
+就是，你得到经验证据，证明代码确实在正常工作。
+you know, empirical evidence that, you know, code is working, uh,
+
+122
+00:09:37,015 --> 00:09:39,950
+证明它达到了你的性能标准。
+that your performance bar is being met.
+
+123
+00:09:40,670 --> 00:09:44,310
+与其让 agent 每次都临时创建脚本，
+Um, and rather than have your agents create scripts every time.
+
+124
+00:09:45,150 --> 00:09:48,270
+你知道，脚本在不同 agent 会话之间可能不一致。
+Um, you know, that can differ between agent sessions.
+
+125
+00:09:48,950 --> 00:09:52,194
+实际上，你可以创建一个 CLI
+Uh, you can actually create a CLI
+
+126
+00:09:52,194 --> 00:09:57,550
+不如把 CLI 放进 skill 目录，让 agent 每次都直接使用它。
+that's within the skill directory and then your agents will just use that every time.
+
+127
+00:09:58,350 --> 00:10:02,758
+当然，你需要真正投入精力把它做好，这样
+And then, of course, you need to actually invest in it and make it good so
+
+128
+00:10:02,758 --> 00:10:05,970
+它才能处理各种不同的用例。
+that it can handle all sorts of different use cases.
+
+129
+00:10:06,610 --> 00:10:13,970
+并且能正确地运行应用。
+Um, and, um, be able to, uh, you know, run the application, uh, correctly.
+
+130
+00:10:15,810 --> 00:10:20,970
+另一件非常重要的事情是 feature map（功能地图）这个概念。
+Uh, another thing that's also really important is, uh, this idea of a feature map.
+
+131
+00:10:22,010 --> 00:10:27,655
+feature map 其实算是我自己提出的一个概念，大概就是……
+So a feature map really is, um, something that I kind of coined, I guess, where, uh,
+
+132
+00:10:27,655 --> 00:10:31,890
+我们开始在 Cursor 里使用这些 control skill。
+you know, we start using these control skills within cursor,
+
+133
+00:10:31,890 --> 00:10:34,712
+然后我们很快意识到，
+then we quickly realized that, you know,
+
+134
+00:10:34,712 --> 00:10:40,275
+Slack（团队协作工具）里会收到一份报告，用户只发来一张很模糊的截图。
+a Slack report would come in and a user would post a very vague screenshot, right?
+
+135
+00:10:40,275 --> 00:10:41,520
+比如一张非常小的、
+Like a very small.
+
+136
+00:10:41,640 --> 00:10:44,508
+界面的一部分，然后就三个问号
+Slice of the UI and just like three question marks
+
+137
+00:10:44,508 --> 00:10:48,914
+使用我们 control skill 的 agent 完全搞不清那是什么。就算它能运行
+and the agents using our control skills have just no idea. Like, it could run the
+
+138
+00:10:48,914 --> 00:10:53,530
+应用，也只能瞎猜用户到底是什么意思。
+application, but it would just be guessing as to what exactly the user meant.
+
+139
+00:10:54,130 --> 00:10:58,600
+于是我想到了创建 feature map 这个东西。
+And so I had this idea to create something called a feature map,
+
+140
+00:10:58,600 --> 00:11:02,210
+它大概算是受 site map（站点地图）的启发。
+which is I guess kind of inspired by like a site map.
+
+141
+00:11:03,050 --> 00:11:07,601
+它本质上是一种 materialized memory（物化记忆）。就是……
+It essentially is a form of materialized memory. You know,
+
+142
+00:11:07,601 --> 00:11:11,130
+你的应用到底是如何工作的？
+like how exactly does your application work?
+
+143
+00:11:11,490 --> 00:11:14,970
+它有哪些功能？用户怎么到达某个功能？
+What features does it have? How does a user reach it?
+
+144
+00:11:15,410 --> 00:11:20,246
+比如可用的键盘快捷键，或者应该点击哪些 DOM（文档对象模型）元素，
+Um, you know, in terms of like keyboard shortcuts or what DOM elements to click on,
+
+145
+00:11:20,246 --> 00:11:24,370
+诸如此类，以及所有不同功能都是做什么的。
+uh, you know, things like that and what all the different features do.
+
+146
+00:11:25,330 --> 00:11:31,076
+这个 feature map 就存储在 skill 本身里。
+Um, and, uh, this feature map is stored in the skill itself, um,
+
+147
+00:11:31,076 --> 00:11:34,690
+放在代码库里，作为 skill 目录的一部分。
+in the code base as part of the skill directory.
+
+148
+00:11:35,370 --> 00:11:39,570
+我们还有一个自动化流程来维护这个 feature map。
+And we have an automation that, uh, maintains this feature map as well.
+
+149
+00:11:40,930 --> 00:11:45,337
+但当我们把 CLI 和 feature map 结合起来后，很快意识到……
+But when we combine the CLI and the feature map, we quickly realized that, um,
+
+150
+00:11:45,337 --> 00:11:50,294
+这个组合非常非常强大，因为现在 agent 不仅能……
+this combination was very, very powerful because now agents could not only, you know,
+
+151
+00:11:50,294 --> 00:11:53,530
+可复现地控制应用并采集 trace。
+reproducibly control the application and take traces.
+
+152
+00:11:54,170 --> 00:11:56,753
+还能理解……
+But it could also understand, uh,
+
+153
+00:11:56,753 --> 00:12:01,920
+来自内部用户和外部用户的请求。
+requests that came in from internal users as well as external users.
+
+154
+00:12:02,760 --> 00:12:08,389
+所以我们很快意识到，这些控制与验证 skill 是
+And so we very quickly realized that the control verification skills were
+
+155
+00:12:08,389 --> 00:12:11,931
+太有用了，以至于它们或多或少成了……
+so useful that they've become more or less, uh,
+
+156
+00:12:11,931 --> 00:12:17,560
+我们团队的关键基础设施，我们也在持续维护它。
+critical infrastructure for our team and we constantly, uh, maintain it.
+
+157
+00:12:18,160 --> 00:12:23,160
+但 agent 能验证自己的工作，这个能力非常强大。
+But the ability for an agent to verify its own work is extremely powerful.
+
+158
+00:12:23,800 --> 00:12:29,187
+我们在这个 skill 上花了很多时间，它非常、
+And, uh, we have, uh, spent a lot of time on this skill and it's very,
+
+159
+00:12:29,187 --> 00:12:32,200
+对建立信任非常有用。
+very powerful for building that trust.
+
+160
+00:12:33,480 --> 00:12:38,012
+当然，除了验证之外，你还需要……
+Um, in addition to verification, of course, uh, you want, uh,
+
+161
+00:12:38,012 --> 00:12:42,000
+因为验证本质上关心的是正确性。
+because verification is really about correctness.
+
+162
+00:12:42,840 --> 00:12:46,338
+对我来说，正确性就是：这个东西，
+Correctness to me is really about does the thing,
+
+163
+00:12:46,338 --> 00:12:51,200
+这个功能或代码是否做了你想让它做的事情？
+does the feature or the code do the thing that you want it to do, right?
+
+164
+00:12:51,200 --> 00:12:53,837
+比如结账按钮，
+Like does the checkout button,
+
+165
+00:12:53,837 --> 00:12:55,720
+它真的能把购物车结算掉吗？
+does it actually check out the cart?
+
+166
+00:12:56,760 --> 00:13:01,097
+验证在这方面非常重要，因为你能得到经验证据。
+Um, verification is really important for that because you get empirical evidence
+
+167
+00:13:01,097 --> 00:13:02,920
+证明这个功能确实能工作。
+that this feature actually works.
+
+168
+00:13:03,820 --> 00:13:08,300
+但它不能告诉你太多关于性能或……
+But it doesn't tell you much about, you know, the performance or, uh,
+
+169
+00:13:08,300 --> 00:13:10,500
+这个功能的代码质量。
+the code quality of that feature.
+
+170
+00:13:11,340 --> 00:13:15,489
+这就是你开始考虑 skill 的地方。
+Um, and that's where you start thinking about skills
+
+171
+00:13:15,489 --> 00:13:20,486
+教 agent 像真正的软件工程师那样工作。
+that teach agents to work like real software engineers. So, um,
+
+172
+00:13:20,486 --> 00:13:23,220
+我构建了一个叫 pstack（agent 工作流与 skill 集合）的插件。
+I've built a plugin called pstack.
+
+173
+00:13:24,240 --> 00:13:28,750
+我今天不会过多讲这个插件，但……
+Um, I'm not gonna talk about the plugin too much today, but um,
+
+174
+00:13:28,750 --> 00:13:34,322
+这个插件是一组 skill 的集合，很多灵感
+a lot of the inspiration for that plugin, which is a collection of skills
+
+175
+00:13:34,322 --> 00:13:38,478
+都来自我创建这些 skill 时所借鉴的工作流
+that I've created, are inspired by the kind of workflows
+
+176
+00:13:38,478 --> 00:13:44,227
+都是我在做软件工程期间亲身用过的，覆盖各种
+that I personally have used in my time doing software engineering for all
+
+177
+00:13:44,227 --> 00:13:48,560
+不同类型的任务，比如调试。
+sorts of different types of tasks. So debugging, you know.
+
+178
+00:13:49,360 --> 00:13:51,480
+功能开发、原型设计。
+Feature development, prototyping.
+
+179
+00:13:52,260 --> 00:13:57,027
+pstack 里附带了很多不同的 playbook（操作手册）和 skill。
+There's a whole bunch of different playbooks and skills that ship in pstack
+
+180
+00:13:57,027 --> 00:14:01,340
+教你的 agent 按你想要的方式写代码。
+that teach your agents how to write code the way that you want them to.
+
+181
+00:14:02,020 --> 00:14:05,128
+而且，你知道，这就是，呃，你知道，
+And, you know, this is where, uh, you know,
+
+182
+00:14:05,128 --> 00:14:11,167
+你团队里更有经验的工程师可以真正发挥作用，建立一个团队
+the more experienced engineers on your team can really contribute to set up a team
+
+183
+00:14:11,167 --> 00:14:16,140
+建立团队级 skill 仓库，让 agent 变得更聪明。
+repository of skills that, um, just make your agents a lot smarter.
+
+184
+00:14:17,060 --> 00:14:22,275
+嗯，当你把这些 skill 与验证类 skill 结合时，你
+Um, and when you combine those skills with, uh, verification skills, then you,
+
+185
+00:14:22,275 --> 00:14:27,016
+就能达到让你的 agent 不仅能验证
+you're able to get to a point where your agents are able to not just verify
+
+186
+00:14:27,016 --> 00:14:29,940
+它们所做的工作是正确的。
+that the work that they're doing is correct.
+
+187
+00:14:30,500 --> 00:14:35,844
+还能验证工作质量很高；而且由于有验证，
+But that it's also high quality and again, because of verification,
+
+188
+00:14:35,844 --> 00:14:39,219
+你可以收集真实的性能指标，
+you can collect real performance metrics,
+
+189
+00:14:39,219 --> 00:14:44,845
+你可以得到真实数字、统计数据和遥测数据，关于，呃，应用的
+you can get real numbers and statistics and telemetry on, uh, the, like,
+
+190
+00:14:44,845 --> 00:14:47,470
+性能。
+performance of the application.
+
+191
+00:14:49,470 --> 00:14:53,510
+所以我认为这是非常值得投入的一部分。
+Um, so I think that's a really important part to invest in.
+
+192
+00:14:54,310 --> 00:14:58,760
+呃，嗯，我认为另一件非常重要的事情是重构
+Uh, um, another thing I think is really important is refactoring
+
+193
+00:14:58,760 --> 00:15:02,880
+和重写你的架构，使其对 agent 更友好。
+and rewriting your architecture to be more agent friendly.
+
+194
+00:15:03,840 --> 00:15:06,209
+嗯，我几乎想说，呃，
+Um, and I almost wanna say that, uh,
+
+195
+00:15:06,209 --> 00:15:09,640
+这是你能做的最重要的事情之一。
+this is one of the most important things you can do.
+
+196
+00:15:10,160 --> 00:15:13,650
+嗯，作为一个软件工程团队，因为，嗯，
+Um, as a, as a software engineering team because, um,
+
+197
+00:15:13,650 --> 00:15:18,965
+如果你真的相信未来所有代码都将由 agent 编写，
+if you really truly believe that agents are going to be writing all the code in the
+
+198
+00:15:18,965 --> 00:15:22,059
+就必须把代码库设计成让 agent 默认做出正确选择。
+future, then we need to design our code bases so
+
+199
+00:15:22,059 --> 00:15:26,660
+你会发现，在建立信任的各种方法之间，
+that they do the right thing by default. And you'll find that there's.
+
+200
+00:15:26,700 --> 00:15:33,014
+存在一条从弱到强的连续谱。
+This, uh, I almost wanna say like a, a scale or continuum between, uh, you know,
+
+201
+00:15:33,014 --> 00:15:39,523
+这条连续谱对应建立 agent 信任的不同层次，
+these different pieces of building trust in your agents where, um, on, you know,
+
+202
+00:15:39,523 --> 00:15:43,020
+我这里大致列出了五个层级。
+I have like five of these points here where.
+
+203
+00:15:43,570 --> 00:15:48,309
+呃，代码库真的就像最好的记忆形式，
+Uh, the code base is really like the best form of memory
+
+204
+00:15:48,309 --> 00:15:53,890
+因为 agent 喜欢扩展现有的模式。
+because agents love to extend existing patterns that they see.
+
+205
+00:15:54,930 --> 00:16:00,939
+我认为这正是 LLM（大语言模型）的工作本质：
+Um, and you know, uh, I think this is just the nature of how LLMs work where, uh,
+
+206
+00:16:00,939 --> 00:16:06,385
+它们更可能使用其上下文窗口中的任何内容，嗯，
+they're more likely to use whatever it is in their context window, um,
+
+207
+00:16:06,385 --> 00:16:07,700
+来进行更改。
+to make changes.
+
+208
+00:16:08,340 --> 00:16:11,759
+当然，agent 读取的文件
+And of course, the files that the agents read
+
+209
+00:16:11,759 --> 00:16:14,900
+以及打开的文件也是其上下文窗口的一部分。
+and opens are part of its context window.
+
+210
+00:16:15,500 --> 00:16:18,860
+嗯，因此代码库是其中非常重要的一部分。
+Um, and therefore the code base is a really important part of that.
+
+211
+00:16:19,460 --> 00:16:23,864
+因为 agent 不会在每一个
+Um, because, you know, agents aren't gonna just refactor your code every single,
+
+212
+00:16:23,864 --> 00:16:24,900
+PR 里都主动重构你的代码。
+in every single PR.
+
+213
+00:16:25,380 --> 00:16:28,220
+它们只会看看已有的内容并直接扩展它。
+They're gonna just look at what's already there and just extend it.
+
+214
+00:16:28,440 --> 00:16:34,203
+下一个层次我认为是静态分析，你有 lint（静态代码检查）工具，
+The next level I think is about static analysis where you have linters,
+
+215
+00:16:34,203 --> 00:16:39,673
+编译器诊断和 CI（持续集成）。
+you have compiler diagnostics, you have continuous integration,
+
+216
+00:16:39,673 --> 00:16:46,119
+这些是你可以在代码库中执行的指导和约束，
+and these are guidelines and constraints that you can enforce in your code base
+
+217
+00:16:46,119 --> 00:16:49,440
+这样，每当你纠正 agent 时，
+so that whenever you correct your agent.
+
+218
+00:16:49,840 --> 00:16:53,120
+你发现，你知道，它们只是不断犯同样的错误。
+You find that, you know, they just keep making the same mistake.
+
+219
+00:16:54,480 --> 00:16:57,515
+嗯，你可以把这些添加为 lint 规则，或者更好的是，
+Um, you can add those as lint rules or even better,
+
+220
+00:16:57,515 --> 00:17:00,624
+你可以重构代码库，让这个错误
+you can refactor your code base so that the mistake
+
+221
+00:17:00,624 --> 00:17:04,400
+就能从结构上让这类错误不可能发生。
+that the agent is making becomes categorically impossible.
+
+222
+00:17:05,440 --> 00:17:07,978
+再往上一个层级，
+Um, and then a step above that, right, where, uh, where?
+
+223
+00:17:07,978 --> 00:17:10,240
+约束方式就开始发生变化：
+And this is where we're starting to get more into.
+
+224
+00:17:11,250 --> 00:17:14,633
+不再主要依靠硬性限制和强制执行，
+Uh, less of like a hard constraint and enforcement
+
+225
+00:17:14,633 --> 00:17:17,050
+而是更多转向引导。
+and more into the realm of guidance.
+
+226
+00:17:17,890 --> 00:17:22,981
+你有规则、Bugbot（Cursor 的 AI 代码审查工具）、skill 等，呃，你知道，
+You have things like rules, you have Bugbot, you have skills, um, which, you know,
+
+227
+00:17:22,981 --> 00:17:26,575
+agent 通常会使用这些规则和工具，
+your agents will obviously sometimes and mostly use, uh,
+
+228
+00:17:26,575 --> 00:17:30,992
+但也可能因为各种原因没有使用，
+when they're doing their work, but there's also a chance that it might,
+
+229
+00:17:30,992 --> 00:17:32,340
+比如忘记读取某条规则。
+for various reasons.
+
+230
+00:17:32,460 --> 00:17:36,200
+也可能是操作 agent 的用户
+You know, forget to read a rule or maybe the user
+
+231
+00:17:36,200 --> 00:17:39,460
+直接忽略了这些规则。
+that is piloting the agent ignores them.
+
+232
+00:17:40,380 --> 00:17:43,113
+所以这些不太具备同等的强制力，
+So these aren't quite as enforceable,
+
+233
+00:17:43,113 --> 00:17:47,383
+但同样是设置环境的重要部分，以便
+but also an important part of setting up your environment so
+
+234
+00:17:47,383 --> 00:17:51,140
+你能够真正信任你的 agent 所做的事情。
+that you can really trust what your agents are doing.
+
+235
+00:17:52,830 --> 00:17:55,446
+最后还有 style guide（代码风格指南），
+Uh, and then finally, you have a style guide,
+
+236
+00:17:55,446 --> 00:17:58,982
+它实际上只能在代码审查中由人来执行，
+which is really only enforceable by humans in a code review,
+
+237
+00:17:58,982 --> 00:18:03,720
+理论上也可以把这些要求放进规则、Bugbot 和 skill。
+I guess you could put it, put these in your rules and Bugbot and skills as well.
+
+238
+00:18:04,240 --> 00:18:08,310
+但如果你不这样做，你的，呃，
+But if you don't then you have this big glaring hole in your, uh,
+
+239
+00:18:08,310 --> 00:18:11,597
+审查流程中就会出现一个明显的大漏洞，现在人类必须，你知道，
+review process where now humans have to, you know,
+
+240
+00:18:11,597 --> 00:18:16,137
+逐行检查所有改动，并记得留下审查意见。
+look at every single line that's been changed and remember to comment
+
+241
+00:18:16,137 --> 00:18:20,285
+随着 PR 涌入的速度越来越快，这真的——
+and with the rate of pull requests that are coming in, it's just,
+
+242
+00:18:20,285 --> 00:18:24,590
+这根本不可能。所以我绝对不建议这样。
+it just becomes impossible. So I definitely wouldn't recommend.
+
+243
+00:18:24,870 --> 00:18:26,950
+只依赖代码风格指南。
+You know, relying only on the style guide.
+
+244
+00:18:27,390 --> 00:18:29,422
+我认为代码风格指南，或者，
+I think the style guide or, you know,
+
+245
+00:18:29,422 --> 00:18:32,470
+回看人工代码审查中的意见，是一个很好的起点。
+like looking at human reviews is a good place to start.
+
+246
+00:18:33,230 --> 00:18:35,190
+嗯，就看缺失了什么。
+Um, in terms of what's missing.
+
+247
+00:18:35,870 --> 00:18:41,177
+但你真的应该花时间去思考另外四个部分。
+But you should really invest the time to think about the other four parts, uh,
+
+248
+00:18:41,177 --> 00:18:47,230
+通过改进数据结构或算法，让某些错误从结构上不可能发生，
+you know, your codebase, making things categorically impossible through better data
+
+249
+00:18:47,230 --> 00:18:50,630
+再配合静态分析。
+structures or algorithms, um, static analysis.
+
+250
+00:18:50,790 --> 00:18:57,036
+然后，当然，你还要在上面叠加规则、Bugbot 和 skills。
+And then, of course, you layer that with rules and Bugbot and skills, um,
+
+251
+00:18:57,036 --> 00:18:59,430
+在代码库这个层面。
+on the codebase front, uh.
+
+252
+00:19:01,840 --> 00:19:07,890
+而在 Grok Bot 代码库里，我们其实投入精力搭建了一个东西，
+And in the Grok Bot codebase, we actually have invested into setting something up
+
+253
+00:19:07,890 --> 00:19:12,160
+我们称之为 Dune（面向 agent 的应用框架）。
+that we call Dune, which is our agent friendly framework.
+
+254
+00:19:13,040 --> 00:19:18,631
+所以，Dune 的灵感其实来自很多性能问题，
+So, um, the inspiration for Dune really came about from a lot of performance issues
+
+255
+00:19:18,631 --> 00:19:22,520
+就是我们在 Cursor agent 窗口中看到的那些。
+we were seeing in the Cursor agent window.
+
+256
+00:19:23,390 --> 00:19:26,510
+那次探索带来了很多经验教训。
+And so a lot of lessons came out of that exploration.
+
+257
+00:19:27,190 --> 00:19:31,725
+但我们最终确定的关键原则是，
+But, um, the key principle that we landed on is really
+
+258
+00:19:31,725 --> 00:19:34,560
+agent 喜欢走捷径。
+that agents love taking shortcuts.
+
+259
+00:19:35,960 --> 00:19:40,871
+所以，如果我们设计一个框架，让捷径——
+So what if we designed a framework such that the shortcut, you know,
+
+260
+00:19:40,871 --> 00:19:44,729
+让最省力的路径成为 agent 的正确路径，同时也让它
+the easy path is the right path for agents and also one
+
+261
+00:19:44,729 --> 00:19:47,798
+成为一个代码库，这个代码库，
+that would be a codebase that is, you know,
+
+262
+00:19:47,798 --> 00:19:51,306
+可能会让人类在里面工作很烦。
+maybe pretty annoying for humans to work in. Uh,
+
+263
+00:19:51,306 --> 00:19:54,200
+因为它受到极其严格的约束，
+because it's so locked down in terms of.
+
+264
+00:19:54,200 --> 00:19:55,760
+能做什么、不能做什么都很严格。
+What you can do and what you can't do.
+
+265
+00:19:56,480 --> 00:20:00,015
+但实际上，这为 agent 创造了完美的环境，
+But, uh, it actually creates the perfect environment for agents,
+
+266
+00:20:00,015 --> 00:20:03,615
+尤其是那些上下文非常有限的 agent，因为，
+especially ones that have very minimal context because, you know,
+
+267
+00:20:03,615 --> 00:20:07,600
+现在并非代码库的每个贡献者都还是工程师。
+not every contributor to your codebase is going to be an engineer anymore.
+
+268
+00:20:07,920 --> 00:20:12,700
+你可以有设计师、产品经理、CEO。
+You can have designers, you can have product managers, you can have CEOs.
+
+269
+00:20:13,020 --> 00:20:15,820
+他们进入代码库，直接发布功能。
+You know, going into the codebase and, and shipping features.
+
+270
+00:20:16,380 --> 00:20:21,811
+所以我们真的需要认真思考如何投入、如何搭建代码库，
+So we want to really think a lot about how we invest and set up our codebases
+
+271
+00:20:21,811 --> 00:20:27,509
+让那些由很忙的人操作、没有太多上下文的 agent，
+so that, you know, even agents that are piloted by busy people with not a lot of
+
+272
+00:20:27,509 --> 00:20:30,180
+也默认能把事情做好。
+context can do a good job by default.
+
+273
+00:20:31,940 --> 00:20:34,240
+就像我之前提到的，
+And like I mentioned before, um,
+
+274
+00:20:34,240 --> 00:20:37,819
+你的代码库其实就是 agent 的一种记忆形式，
+your codebase is really a form of memory for agents
+
+275
+00:20:37,819 --> 00:20:42,420
+因为它们喜欢延续自己看到的既有模式。
+because they love to extend the existing patterns that they see.
+
+276
+00:20:43,420 --> 00:20:46,060
+反过来其实也一样，对吧？
+And the reverse is actually also true, right?
+
+277
+00:20:46,060 --> 00:20:50,849
+你可以花时间把代码库设置成，
+You can invest the time to set up your codebase, um, in a way that things are,
+
+278
+00:20:50,849 --> 00:20:55,948
+让不良模式从结构上不可能出现，或者用 lint 规则
+you know, bad patterns are categorically impossible or you have like lint rules
+
+279
+00:20:55,948 --> 00:20:59,810
+来阻止它们。但从某种意义上说，反过来也成立。
+that prevent them. But the reverse is also true in the sense.
+
+280
+00:21:00,720 --> 00:21:03,712
+如果代码库里已经存在 anti-pattern（反模式），
+Um, if you have existing anti-patterns,
+
+281
+00:21:03,712 --> 00:21:08,881
+你会发现这些会像病毒一样扩散，
+you'll actually find that these will spread kind of like a virus, um,
+
+282
+00:21:08,881 --> 00:21:14,957
+比如你有一个小小的临时规避方案，或者一段解释它的代码注释，
+where you have like one small workaround or a comment that explains a workaround
+
+283
+00:21:14,957 --> 00:21:19,400
+你很快就会发现 agent 就是喜欢照抄。
+and you'll quickly find that agents just love to copy that.
+
+284
+00:21:19,840 --> 00:21:23,016
+然后过几天或几周，
+And then in a matter of a few days or a few weeks,
+
+285
+00:21:23,016 --> 00:21:28,366
+你会发现这个临时规避方案已经传得到处都是，
+you'll find that the workaround has spread everywhere and it's now become,
+
+286
+00:21:28,366 --> 00:21:31,960
+它已经成了所有 agent 事实上的模式。
+it has become like a de facto pattern for all agents.
+
+287
+00:21:32,040 --> 00:21:34,600
+这是一个非常非常糟糕的处境。
+And that's a really, really bad place to be, to be in.
+
+288
+00:21:35,440 --> 00:21:40,342
+这又回到我之前说的，为什么很重要，
+And that goes back to what I was saying about why it's really important, you know,
+
+289
+00:21:40,342 --> 00:21:42,464
+每当你纠正你的
+whenever you're correcting your,
+
+290
+00:21:42,464 --> 00:21:47,000
+你的 agent 时，要花时间思考代码库改动、
+your agents that you invest the time into thinking about codebase changes
+
+291
+00:21:47,000 --> 00:21:51,390
+静态分析，当然还有叠加规则。
+and static analysis too, and of course, layering them with rules.
+
+292
+00:21:51,710 --> 00:21:56,990
+好的规则、Bugbot 和 skills，就是这个原因。
+Good rules and Bugbot and skills, uh, because of that reason.
+
+293
+00:21:58,790 --> 00:22:04,485
+除了米其林厨房，我还喜欢另一个类比：
+Um, and another analogy that I like in addition to the Michelin kitchen is this idea
+
+294
+00:22:04,485 --> 00:22:09,436
+你的代码库有点像一座花园，里面有，
+that, you know, your codebase is kind of like a garden where you have, uh,
+
+295
+00:22:09,436 --> 00:22:12,820
+一些临时规避方案，起初看似，
+workarounds, uh, you know, that seem seemingly.
+
+296
+00:22:13,380 --> 00:22:18,873
+起初看似无害，但由于 agent 的天性，
+That seem kind of innocent at first, but then because of the nature of agents,
+
+297
+00:22:18,873 --> 00:22:24,538
+你会一遍又一遍地复制那个模式，很快得到一个非常，
+you just copy that pattern over and over again and you quickly end up with a very,
+
+298
+00:22:24,538 --> 00:22:30,460
+一个充满 vibe coding（氛围编程）痕迹的代码库，维护起来极其痛苦。
+you know, vibe coded codebase that is, you know, a pain in the butt to maintain. And.
+
+299
+00:22:30,460 --> 00:22:31,940
+而且有很多性能问题。
+Has a lot of performance issues.
+
+300
+00:22:32,780 --> 00:22:38,311
+所以在我看来，理想的 agent 代码库应该受到极严格的约束，
+So in my opinion, the perfect agent codebase is one that's so locked down that,
+
+301
+00:22:38,311 --> 00:22:43,671
+你知道，再说一次，这让人类在其中写代码非常烦人，
+you know, it again, it's like really annoying for humans to write code in,
+
+302
+00:22:43,671 --> 00:22:47,500
+但它太常规、太标准化了，以至于……
+but it's so conventional, it's so standardized that.
+
+303
+00:22:48,060 --> 00:22:51,500
+嗯，甚至看起来无害的模式也被禁止了。
+Uh, you know, even innocent-looking patterns are just forbidden.
+
+304
+00:22:52,520 --> 00:22:57,005
+我在这方面最好的例子其实是某个看起来非常……
+Um, and the best example of this I have is actually something that seems very,
+
+305
+00:22:57,005 --> 00:23:00,578
+看起来非常无害，但仔细一想，
+very innocent when you look at it, but when you think about it,
+
+306
+00:23:00,578 --> 00:23:02,120
+其实非常糟糕。
+it's actually really bad.
+
+307
+00:23:02,760 --> 00:23:07,680
+那个模式就是 agent 在代码里留下代码注释。
+And that pattern is, uh, agents leaving comments in the code.
+
+308
+00:23:08,800 --> 00:23:12,240
+当我第一次看到 agent 开始这么做时，我……
+Now, you know, when I first saw agents starting to do this, I.
+
+309
+00:23:13,130 --> 00:23:14,050
+一开始并没有。
+Initially wasn't.
+
+310
+00:23:14,770 --> 00:23:18,446
+嗯，我确实觉得很多 agent 都很慢，但我也觉得，你知道，
+Well, I, I did think that a lot of them were slow, but I also thought that, you know,
+
+311
+00:23:18,446 --> 00:23:20,970
+这其实并不是坏事，对吧？
+it actually doesn't, it's, it's not a bad thing, right?
+
+312
+00:23:20,970 --> 00:23:25,804
+我想，如果 agent 在代码里留下代码注释，那是因为作为人类，
+I guess if agents are leaving comments in the code, because as humans,
+
+313
+00:23:25,804 --> 00:23:29,555
+我们会在代码里留下代码注释，每当我们看到，你知道，
+we left comments in the code whenever we saw, you know,
+
+314
+00:23:29,555 --> 00:23:34,140
+边缘情况，或者需要做临时规避方案，或者，你知道，
+edge cases or we needed to actually make a workaround or, you know,
+
+315
+00:23:34,140 --> 00:23:36,390
+给自己留个便条，或者给，呃，
+leave a note to ourselves or a, a.
+
+316
+00:23:36,430 --> 00:23:39,750
+给同事，在代码库中特别棘手的部分。
+A colleague on a particularly tricky part of the code base.
+
+317
+00:23:40,870 --> 00:23:47,934
+但当我们看到 Cursor 代码库中发生这种情况时，我很快意识到的是
+But what I quickly realized when we saw this happening in the Cursor codebase was
+
+318
+00:23:47,934 --> 00:23:51,940
+agent 只是利用这些代码注释，呃，
+that agents were just using the comments, uh,
+
+319
+00:23:51,940 --> 00:23:59,321
+把代码周围的注释当作理由，解释它为什么不打算解决实际问题，
+around the code as justification for why it wasn't going to solve the actual problem
+
+320
+00:23:59,321 --> 00:24:06,490
+而是用创可贴式的短期方案掩盖问题。至于 Dune，
+and instead paper over it with a band-aid or a short-term solution. So in Dune, which is.
+
+321
+00:24:06,490 --> 00:24:12,069
+它同样是支撑 Grok Bot 的框架，我们做出了选择，呃，
+Again, the framework that powers Grok Bot, we made the choice to, um,
+
+322
+00:24:12,069 --> 00:24:17,549
+我们选择为此真正禁止代码注释，这样，
+we made the choice to actually ban comments for that reason, where,
+
+323
+00:24:17,549 --> 00:24:22,835
+这样 agent 就不会只是复制那个模式，并且，呃，
+so that agents would not just copy that pattern and, uh, you know,
+
+324
+00:24:22,835 --> 00:24:26,260
+在代码库中到处传播它。
+propagate it everywhere in the code base.
+
+325
+00:24:28,700 --> 00:24:34,724
+所以，我的建议是，每个团队真的需要某种东西，你知道，
+So, uh, my pitch here is that every team really needs something that, you know,
+
+326
+00:24:34,724 --> 00:24:40,285
+我称之为“园丁”的角色，就像，呃，你知道，
+a role that I'm calling a gardener, um, in the same way that, uh, you know,
+
+327
+00:24:40,285 --> 00:24:45,660
+在真实的花园里，你需要有人深入思考那些，
+with real garden, you need someone who is thinking a lot about the, uh.
+
+328
+00:24:45,820 --> 00:24:50,900
+那些可能悄悄潜入并以你不希望的方式生长的东西。
+You know, things that can kind of creep in and grow in ways that you don't want.
+
+329
+00:24:51,020 --> 00:24:54,836
+比如杂草，还有，呃，你知道，
+Like, you know, you have weeds, you have, uh, you know,
+
+330
+00:24:54,836 --> 00:24:57,380
+只是其他类型的自然生长。
+just other types of organic growth.
+
+331
+00:24:57,900 --> 00:24:59,660
+我对园艺其实了解不多。
+I don't really know gardening that well.
+
+332
+00:25:00,020 --> 00:25:03,802
+但你会遇到那些不想要的害虫之类的东西，
+Um, uh, but you have things that, you know, unwanted pests and,
+
+333
+00:25:03,802 --> 00:25:07,584
+它们会悄悄进入你的代码库，
+and stuff like that that kind of creep in into your code base and
+
+334
+00:25:07,584 --> 00:25:10,639
+所以你要尽早把它们扼杀在萌芽状态，
+so you want to nip them in the bud as soon as possible
+
+335
+00:25:10,639 --> 00:25:13,330
+在它们开始到处传播之前。
+before they start propagating everywhere.
+
+336
+00:25:15,330 --> 00:25:19,450
+Dune 背后的很多原则其实都围绕这三件事。
+A lot of the principles behind Dune are really centered around these three things.
+
+337
+00:25:20,330 --> 00:25:24,378
+首先，我们想删除已有的技术债，出于，你知道，
+First of all, we want to delete tech debt that we already have for, you know,
+
+338
+00:25:24,378 --> 00:25:26,010
+出于我刚才提到的原因。
+for reasons I just mentioned.
+
+339
+00:25:26,910 --> 00:25:33,238
+我们希望为大多数推荐模式维护并强制执行唯一的 paved path（标准路径），
+We want to keep, uh, or enforce a single paved path for most blessed patterns, uh,
+
+340
+00:25:33,238 --> 00:25:38,527
+做某件事应该只有一种常规方式，呃，
+you know, there should be one conventional way to do something, uh,
+
+341
+00:25:38,527 --> 00:25:41,738
+这样 agent 就不需要去猜，
+so that agents don't really need to guess
+
+342
+00:25:41,738 --> 00:25:47,310
+并且在代码库、CI 和 lint 规则中应该有足够的引导。
+and there should be enough guidance in the code base in CI in lint rules.
+
+343
+00:25:47,870 --> 00:25:51,470
+这样 agent 就能被引导去，呃，去遵循那条路径。
+Uh, so that the agents are guided to, to follow that path.
+
+344
+00:25:53,420 --> 00:25:57,322
+最后，每当你看到技术债或坏模式时，
+And then finally, whenever you see tech debt or bad patterns,
+
+345
+00:25:57,322 --> 00:26:01,300
+你的本能应该是：我需要针对它写一条 lint 规则。
+your instinct should be, I need to write a lint rule against it.
+
+346
+00:26:01,780 --> 00:26:06,080
+你不一定总要马上清理它，因为如果你写一条 lint 规则，
+You don't always have to clean it up immediately because if you write a lint rule,
+
+347
+00:26:06,080 --> 00:26:08,968
+你至少可以止血，这，你知道，
+you can at least stop the bleeding, which, you know,
+
+348
+00:26:08,968 --> 00:26:13,140
+并不能完全解决问题，但至少能防止它继续增长。
+doesn't solve the problem entirely, but it at least prevents it from growing.
+
+349
+00:26:14,000 --> 00:26:16,836
+所以我强烈建议，你知道，
+Um, so I definitely recommend, you know,
+
+350
+00:26:16,836 --> 00:26:21,674
+认真思考如何防范反模式，这样
+really thinking a lot about how you can guard against anti-patterns so
+
+351
+00:26:21,674 --> 00:26:27,680
+它们不会像病毒一样传播，然后还要花时间真正地，你知道。
+that they don't, uh, spread like a virus and then also spend time to actually, you know.
+
+352
+00:26:27,680 --> 00:26:30,129
+让你的 agent 去清理它们，这样
+Get your agents to clean them up so
+
+353
+00:26:30,129 --> 00:26:35,726
+你的代码库就能持续保持在一种让你满意的状态，
+that your code base is just constantly kept in a state where you would be happy
+
+354
+00:26:35,726 --> 00:26:37,650
+即使 agent 去复制它。
+if an agent were to copy it.
+
+355
+00:26:38,250 --> 00:26:40,930
+这就是我建议拥有的心态。
+That's the kind of mindset that I would recommend having.
+
+356
+00:26:42,290 --> 00:26:45,814
+然后我实际上不会详细介绍 Dune 本身的所有细节，呃，
+Uh, and then I won't actually go through all the details of Dune itself, uh,
+
+357
+00:26:45,814 --> 00:26:48,610
+但我只会简单带过一些有趣的部分。
+but I'll just kind of gloss through some interesting parts.
+
+358
+00:26:49,370 --> 00:26:52,469
+再提醒一下，Dune 就是这个架构，
+Um, so again as a reminder, Dune is the architecture,
+
+359
+00:26:52,469 --> 00:26:55,370
+我们为驱动 Grok Bot 而构建的客户端框架。
+the client framework that we built to power Grok Bot.
+
+360
+00:26:57,000 --> 00:26:58,952
+我们投入了大量精力，你懂的，
+We've invested a lot into, you know,
+
+361
+00:26:58,952 --> 00:27:01,880
+我之前说的这些，都是我们有约定的地方。
+All the things I was saying where we have conventions.
+
+362
+00:27:02,080 --> 00:27:08,147
+我们有很多约定，比如代码应该放在哪里，以及它们之间应该如何导入
+We have a lot of conventions about where code should live and, um, where and how, uh,
+
+363
+00:27:08,147 --> 00:27:10,960
+代码应当如何在它们之间导入。
+code should be imported between them.
+
+364
+00:27:11,400 --> 00:27:15,689
+在 Dune 应用中，有不同的概念，比如
+So in Dune applications, you know, there's different concepts where, like,
+
+365
+00:27:15,689 --> 00:27:19,040
+例如，功能全都集中放在一个文件夹里。
+for example, features are all colocated in a single folder.
+
+366
+00:27:19,720 --> 00:27:21,200
+有一个入口点。
+Um, you have an entry point.
+
+367
+00:27:21,800 --> 00:27:25,619
+它位于代码的 React 部分，用来决定
+Um, that's, you know, in the React part of the code that determines,
+
+368
+00:27:25,619 --> 00:27:28,141
+或者你可以把它理解成路由
+or you can kind of think of it like a route, uh,
+
+369
+00:27:28,141 --> 00:27:31,960
+还有显示在 Grok Bot 应用中的 transcript 卡片。
+you have transcript cards that show up in the Grok Bot application.
+
+370
+00:27:32,640 --> 00:27:36,960
+还有一个运行在 Grok Bot 虚拟机上的宿主端。
+You have a host that runs on the, you know, the Grok Bot virtual machine.
+
+371
+00:27:37,360 --> 00:27:42,015
+当然还有负责驱动
+And then, of course, you have your client, uh, which, uh, powers the, uh,
+
+372
+00:27:42,015 --> 00:27:43,800
+整个 Dune 应用的客户端。
+overall Dune application.
+
+373
+00:27:44,670 --> 00:27:51,858
+我们在这些部分之间设置了很多严格的边界，举个例子
+And we have a lot of strict boundaries between these things where just as an example,
+
+374
+00:27:51,858 --> 00:27:58,943
+运行在 Electron（跨平台桌面应用框架）主进程或主线程中的代码，不允许
+things that run on the main process or the main thread in Electron aren't allowed to
+
+375
+00:27:58,943 --> 00:28:01,510
+在渲染线程上运行。
+be run on the renderer thread.
+
+376
+00:28:01,990 --> 00:28:05,423
+我们非常刻意地保持这种隔离
+And we keep that separation very intentionally
+
+377
+00:28:05,423 --> 00:28:09,628
+因为我们在 Cursor 的 agent 窗口上学到了教训
+because of lessons we learned from Cursor's agent window,
+
+378
+00:28:09,628 --> 00:28:15,808
+我们有时会看到代码意外地被导入到渲染线程
+where we would sometimes see code accidentally get imported into the renderer thread
+
+379
+00:28:15,808 --> 00:28:17,610
+然后导致代码变慢。
+and, you know, slow code.
+
+380
+00:28:18,170 --> 00:28:23,632
+因为在渲染线程上，你希望 UI 非常流畅
+And since on the renderer thread you want your UI to be very smooth and, uh,
+
+381
+00:28:23,632 --> 00:28:29,184
+性能很好，你需要确保没有任何长任务
+performant, uh, you need to make sure that you don't have any long tasks or,
+
+382
+00:28:29,184 --> 00:28:33,571
+或者超过 16 毫秒的任务
+you know, things that take longer than 16 milliseconds
+
+383
+00:28:33,571 --> 00:28:37,690
+如果你想要 60 帧每秒，或者 8 毫秒。
+if you want like 60 frames per second or 8 milliseconds.
+
+384
+00:28:37,770 --> 00:28:39,850
+如果你想要 120 帧每秒。
+If you want 120 frames per second.
+
+385
+00:28:40,730 --> 00:28:46,164
+所以你的渲染必须始终处于一种状态
+And so your render has to be constantly in a state where, uh, it is, uh,
+
+386
+00:28:46,164 --> 00:28:51,330
+你可以把工作分块，而不是一次性全部完成。
+you can really kind of chunk up the work, um, and not do them all at once.
+
+387
+00:28:53,070 --> 00:28:57,015
+因此我们在 Dune 中有代码来强制执行这一点
+Um, and so we have code within Dune that enforces this,
+
+388
+00:28:57,015 --> 00:29:01,750
+Dune 通过导入关系和依赖图来强制执行这些边界。
+these boundaries through the import, uh, and dependency graph.
+
+389
+00:29:02,430 --> 00:29:06,076
+但这就是一个例子，说明一种模式
+Uh, but yeah, that's just an example of a pattern
+
+390
+00:29:06,076 --> 00:29:10,178
+我们见过会导致非常差的性能，我们
+that we saw lead to really bad performance that we, um,
+
+391
+00:29:10,178 --> 00:29:15,830
+通过 Dune 的架构彻底消除了这种模式。
+categorically eliminated through, uh, the architecture of the, of Dune.
+
+392
+00:29:17,430 --> 00:29:21,510
+然后其他部分就没那么有趣了。
+Um, and then all these other pieces aren't that interesting.
+
+393
+00:29:22,350 --> 00:29:28,071
+但再次强调，这里的核心主题不是 Dune
+Uh, but again, the, the core theme here, you know, it's not about Dune,
+
+394
+00:29:28,071 --> 00:29:34,581
+而是拥有一个对 agent 友好的自研框架，这其实非常
+but the idea that, um, an agent-friendly framework of your own is actually very,
+
+395
+00:29:34,581 --> 00:29:40,400
+非常强大，你可以把你和你的
+very powerful and you can encode all of the learnings that you and your.
+
+396
+00:29:40,760 --> 00:29:46,599
+团队中最优秀的工程师所掌握的隐性知识
+You know, your best engineers on your team have tribal knowledge of, um, and, um,
+
+397
+00:29:46,599 --> 00:29:51,654
+我认为这里的教训是，你如何把这些知识从以前那种流程中抽离出来
+I think the lesson here is that how do you take that away from, you know,
+
+398
+00:29:51,654 --> 00:29:56,970
+以前这些知识存在于代码审查的 style guide 流程中
+what used to be in the style guide process of reviewing code and, you know.
+
+399
+00:29:57,410 --> 00:30:02,581
+工程师审查其他工程师的工作并留下代码注释
+Engineers reviewing other engineers' work and leaving comments, um,
+
+400
+00:30:02,581 --> 00:30:06,876
+把这些知识提取出来，并编码
+to extract, almost like extracting that knowledge and encoding
+
+401
+00:30:06,876 --> 00:30:10,377
+到框架中、代码库本身中
+that into the framework, into the code base itself so
+
+402
+00:30:10,377 --> 00:30:13,320
+让代码库扮演记忆的角色，对吧？
+that the code base acts as the memory, right?
+
+403
+00:30:13,400 --> 00:30:16,615
+我不断回到这个想法
+It's the thing I keep coming back to, this idea
+
+404
+00:30:16,615 --> 00:30:20,472
+代码库就是那个
+that you know the code base is just the thing that it's the,
+
+405
+00:30:20,472 --> 00:30:25,696
+代码库是你希望 agent 延续的目标状态的实体化快照。
+the materialized snapshot of the state in which you want your agents to extend
+
+406
+00:30:25,696 --> 00:30:28,670
+你希望代码库非常干净。
+and you want that code base to be so pristine.
+
+407
+00:30:29,150 --> 00:30:33,641
+好到下一个 agent 进来时，很可能会继续
+So great that the next agent that comes along is just very likely to continue
+
+408
+00:30:33,641 --> 00:30:36,350
+延续那个模式并保持代码库非常非常好。
+that pattern and keep it really, really good.
+
+409
+00:30:37,910 --> 00:30:40,950
+如果你在这个过程上花足够多的时间
+Um, and if you spend enough time on this process.
+
+410
+00:30:41,780 --> 00:30:45,395
+就像我提到的，你真的可以搭建出
+Uh, like I mentioned, you can really set up, uh,
+
+411
+00:30:45,395 --> 00:30:49,380
+一个米其林厨房或软件工厂
+a Michelin kitchen or a software factory where, um,
+
+412
+00:30:49,380 --> 00:30:52,717
+因为你花了大量时间在
+because you spent so much time on, you know,
+
+413
+00:30:52,717 --> 00:30:56,980
+所有这些让你可以信任 agent 的部分上。
+all of these pieces that allow you to trust your agents.
+
+414
+00:30:57,580 --> 00:31:04,260
+不管是代码库、lint 规则，还是
+Whether it's in the code base, whether it's lint rules, um, whether it is, uh,
+
+415
+00:31:04,260 --> 00:31:11,567
+诊断、规则、Bugbot 或 skill，这些层次聚合在一起
+you know, diagnostics or rules or Bugbot or skills, these layers come together, um,
+
+416
+00:31:11,567 --> 00:31:15,220
+给你带来很多信任，因为现在
+and provide you a lot of trust because now.
+
+417
+00:31:15,620 --> 00:31:19,180
+你想象一下你在 Grok Bot 代码库中工作。
+You know, just imagine for a moment you're working in the Grok Bot code base.
+
+418
+00:31:19,740 --> 00:31:25,580
+代码库受到极严格的约束，几乎不可能写出糟糕的代码。
+Um, it's super locked down. You know, it's like almost impossible to write bad code.
+
+419
+00:31:26,180 --> 00:31:30,822
+所以，甚至一个上下文很少的 agent
+So, you know, you can even have an agent with very little context, uh, uh, you know,
+
+420
+00:31:30,822 --> 00:31:34,231
+甚至一个推理能力不强的 agent 进来也能
+even an agent with not a lot of reasoning can come in and,
+
+421
+00:31:34,231 --> 00:31:36,480
+并真正写出好代码。
+and actually write code that's good.
+
+422
+00:31:37,360 --> 00:31:42,483
+回到我前面米其林厨房的例子，我觉得这里有很多值得借鉴的地方，
+And going back to my example about the Michelin kitchen, I think there's a lot here,
+
+423
+00:31:42,483 --> 00:31:47,680
+对吧，我们是在用 skill 和工具配置我们的 agent、我们的 bot。
+right, where, you know, we're setting up our agents, our bots with skills and tools.
+
+424
+00:31:48,400 --> 00:31:49,640
+我们是在训练它们。
+You know, we're training them.
+
+425
+00:31:50,050 --> 00:31:55,402
+我们在以一种合理的方式布置厨房，让 agent
+Uh, we're setting up our kitchen in a way that makes sense, right, for the agent
+
+426
+00:31:55,402 --> 00:31:58,290
+和 bot 默认就能做正确的事。
+and bots to do the right thing by default.
+
+427
+00:31:59,050 --> 00:32:02,931
+比如，每当我们在厨房这个例子里看到
+Uh, you know, whenever we see, for example, in the kitchen example
+
+428
+00:32:02,931 --> 00:32:07,415
+如果发现某个厨师或洗碗工总是绊到
+if we notice that, uh, one of our cooks or dishwashers is constantly tripping over
+
+429
+00:32:07,415 --> 00:32:09,690
+什么东西，当然就需要修好它。
+something, of course we need to fix that.
+
+430
+00:32:10,170 --> 00:32:12,685
+我们需要解决问题，并确保
+Right, we need to problem solve and ensure that, you know,
+
+431
+00:32:12,685 --> 00:32:14,665
+其他人也不会被绊倒，因为
+others don't trip as well because, you know,
+
+432
+00:32:14,665 --> 00:32:17,930
+厨房是个很危险的地方，你不想让自己受伤。
+A kitchen is a very dangerous place and you don't want to hurt yourself.
+
+433
+00:32:18,810 --> 00:32:23,330
+我认为我们对代码库也应该有同样的心态。
+It's the same mindset, I think, that we should have with our codebases.
+
+434
+00:32:23,810 --> 00:32:29,592
+我们要怎么设置，才能让即使没有太多
+How do we set it up so that even agents, uh, without a lot of, uh,
+
+435
+00:32:29,592 --> 00:32:32,540
+背景知识的 agent 也能把工作做好？
+knowledge can and do a good job?
+
+436
+00:32:33,660 --> 00:32:36,910
+而且我觉得，借助 Grok Bot，
+Um, and I think with, uh, you know, Grok Bot,
+
+437
+00:32:36,910 --> 00:32:40,972
+Grok Bot 和 Cursor 一起能发挥有趣的作用，
+Grok Bot and Cursor play an interesting role together
+
+438
+00:32:40,972 --> 00:32:43,770
+Grok Bot 特别擅长
+where Grok Bot is really great at, uh,
+
+439
+00:32:43,770 --> 00:32:46,478
+提供我所说的 outer loop（外循环）。
+providing what I call the outer loop
+
+440
+00:32:46,478 --> 00:32:50,540
+因为你可以把 Grok Bot 连接到很多不同的
+because you can connect Grok Bot to lots of different
+
+441
+00:32:51,260 --> 00:32:55,340
+连接器，比如 Slack、Datadog（监控平台）和 Sentry（错误监控平台）。
+Uh, you know, different connectors like Slack, Datadog, Sentry.
+
+442
+00:32:56,660 --> 00:32:59,353
+以及 PlanetScale（云数据库平台）等你正在使用的服务。
+PlanetScale, whatever services that you use,
+
+443
+00:32:59,353 --> 00:33:02,854
+你可以把所有这些信息汇总到一起，并用它
+and you can aggregate all of that information together and use
+
+444
+00:33:02,854 --> 00:33:05,480
+为 Grok Bot 自己做非常好的决策。
+that to make really good decisions for itself.
+
+445
+00:33:06,240 --> 00:33:09,440
+有人把这称为公司大脑。
+Uh, some people call this like a company brain.
+
+446
+00:33:10,080 --> 00:33:13,974
+我倒不这么认为，我个人认为你不需要
+Uh, I don't really think, I personally don't think you need anything
+
+447
+00:33:13,974 --> 00:33:18,072
+那么复杂的东西，因为 agent 很擅长使用工具。
+that sophisticated here because agents are really good at using tools.
+
+448
+00:33:18,072 --> 00:33:20,600
+所以，如果你把这些工具连接到 Grok Bot，
+And so if you connect these tools to Grok Bot,
+
+449
+00:33:21,800 --> 00:33:27,285
+并开始让你的 Grok bots 自动启动云端 agent 之类的任务，
+and you start having your Grok bots auto kick off things like cloud agents,
+
+450
+00:33:27,285 --> 00:33:30,470
+你会发现自己其实并不
+you can actually find that it's really not,
+
+451
+00:33:30,470 --> 00:33:36,840
+真的需要投入大量基础设施来搭建软件工厂。
+you don't really have to invest in a lot of infrastructure to build a software factory.
+
+452
+00:33:38,000 --> 00:33:41,325
+事实上，我打算划掉这个，
+In fact, I'm gonna, you know, cross out this,
+
+453
+00:33:41,325 --> 00:33:43,800
+这个词，因为我不喜欢这个词。
+this term 'cause I don't like this term.
+
+454
+00:33:44,680 --> 00:33:50,134
+我认为你可以通过以下方式，为自己搭建这个个人米其林厨房：
+Uh, I think you can set up this personal Michelin kitchen for yourself through
+
+455
+00:33:50,134 --> 00:33:55,347
+例如 Grok Bot Routines（自动化例程），它能订阅
+Grok Bot, things like Grok Bot routines, which let you subscribe to, you know,
+
+456
+00:33:55,347 --> 00:34:00,480
+Slack 线程、Sentry 告警，从而自动触发各种操作。
+Slack threads, Sentry alerts that let you kick off things automatically.
+
+457
+00:34:01,970 --> 00:34:06,324
+当你把我刚才提到的所有这些组合起来时，
+And when you combine all of these things that I've been mentioning, you know,
+
+458
+00:34:06,324 --> 00:34:09,930
+你的代码库、规则、skill，都会产生复利效应。
+your codebase, your rules, your skills, uh, they all compound.
+
+459
+00:34:10,530 --> 00:34:13,850
+而 Grok Bot 就能
+And Grok Bot, uh, will be able to, you know,
+
+460
+00:34:13,850 --> 00:34:18,783
+自动响应来自外循环的事件，
+automatically respond to events that come from the outer loop
+
+461
+00:34:18,783 --> 00:34:21,250
+然后启动云端 agent。
+and then kick off cloud agents.
+
+462
+00:34:22,050 --> 00:34:28,592
+你还可以设置 Cursor Automations（自动化功能），并使用 SDK（软件开发工具包）配置 bot，
+Um, and you can also set up Cursor automations and use our SDK, uh, to set up, um, bot,
+
+463
+00:34:28,592 --> 00:34:34,158
+其他 bot 也能复用你已经搭建的
+additional bots as well that reuse a lot of these pieces of agent infra
+
+464
+00:34:34,158 --> 00:34:35,720
+大量 agent 基础设施组件。
+that you've set up.
+
+465
+00:34:36,200 --> 00:34:39,720
+并让它们能执行复杂得多的任务。
+Um, and allow them to do much more complicated tasks.
+
+466
+00:34:41,800 --> 00:34:44,726
+所以，如果你做到了这一切，
+So if you've done all this,
+
+467
+00:34:44,726 --> 00:34:48,771
+我认为你就能达到这样一个阶段：
+then I think you can get to a point where, uh, you know, uh,
+
+468
+00:34:48,771 --> 00:34:54,710
+我这里有我们一些自动化和 agent 的截图，它们
+I have some screenshots here of some of our automations and our agents in, uh,
+
+469
+00:34:54,750 --> 00:35:00,722
+在 Cursor 上运行；我们会自动复现 bug 报告，
+that work on Cursor where we are automatically reproducing bug reports, we're,
+
+470
+00:35:00,722 --> 00:35:03,750
+哦，自动创建 PR。
+oh, automatically opening pull requests.
+
+471
+00:35:04,470 --> 00:35:10,121
+我们基本上为整个团队带来了很多价值，
+We are, um, essentially adding a lot of value to the entire team, uh,
+
+472
+00:35:10,121 --> 00:35:13,350
+因为所有这些事情都会相互叠加。
+because all of these things compound.
+
+473
+00:35:15,430 --> 00:35:20,919
+如果我们再次把视角拉远，回到这张图，
+So if we kind of zoom out again, um, and go back to this graph,
+
+474
+00:35:20,919 --> 00:35:25,063
+我觉得，为了给这次演讲收尾，
+I think that to kind of close off the talk, um,
+
+475
+00:35:25,063 --> 00:35:30,328
+如果你花大量时间去思考所有组成部分，
+if you spend a lot of time thinking about all of the pieces
+
+476
+00:35:30,328 --> 00:35:34,360
+这些部分能让你沿着信任
+that you need to be able to ascend the trust
+
+477
+00:35:34,480 --> 00:35:41,011
+图向上走。你会开始进入一个能真正更信任 agent 的状态，
+graph, you start getting to a place where you can really trust your agents more
+
+478
+00:35:41,011 --> 00:35:47,943
+你还能并行推进工作，并赋能整个团队在这些基础上继续构建
+and parallelize your work and also empower your entire team to build on top of these
+
+479
+00:35:47,943 --> 00:35:51,560
+这些面向 agent 的基础设施组件。
+pieces of infrastructure for your agents.
+
+480
+00:35:52,260 --> 00:35:56,178
+并且赋能团队里的每一个人，每一位工程师，
+Um, and empower everyone, you know, every engineer on your team,
+
+481
+00:35:56,178 --> 00:36:01,040
+让每位构建者都极其高效，并能写出高质量代码。
+every builder to be extremely productive and be able to write high-quality code.
+
+482
+00:36:01,800 --> 00:36:04,960
+最后我想留给大家的，其实是这一页。
+So the last thing I want to leave you with is actually this piece.
+
+483
+00:36:06,400 --> 00:36:08,440
+呃，抱歉，不是那一页，是这一页。
+Uh, sorry, not that piece, but this piece.
+
+484
+00:36:09,280 --> 00:36:13,970
+嗯，我觉得如果我的演讲只能记住一件事，那应该是这个，
+Um, I think if there's only one thing you take away from my talk, it should be this,
+
+485
+00:36:13,970 --> 00:36:16,560
+就是这一页幻灯片，呃，也就是，
+this slide here, uh, which is, you know, the,
+
+486
+00:36:16,560 --> 00:36:21,600
+这些是能帮助你逐步建立起高信任环境的活动。
+these are the activities that will help you build up towards a high-trust environment.
+
+487
+00:36:22,200 --> 00:36:29,076
+每当你发现自己在纠正和干预 agent 时，
+You know, whenever you find yourself correcting and intervening on your agent,
+
+488
+00:36:29,076 --> 00:36:33,943
+你真的很需要从这五个方面来思考，
+you really want to think about it from these 5 pieces and
+
+489
+00:36:33,943 --> 00:36:40,184
+在这个顺序中，哪一步最有效，才能……
+where is the most effective step in this sequence in order to, uh,
+
+490
+00:36:40,184 --> 00:36:46,320
+让你的 agent 变得更值得信赖？嗯，当然我……
+make your agent, you know, much more trustworthy? Um, and of course I.
+
+491
+00:36:46,360 --> 00:36:52,272
+我强烈建议按这个顺序来思考，也就是，
+Definitely recommend thinking about, thinking about it in this order where, you know,
+
+492
+00:36:52,272 --> 00:36:56,078
+你要么投入时间，让这种模式，
+you, uh, either invest the time to make that pattern, uh,
+
+493
+00:36:56,078 --> 00:37:00,694
+通过你的代码库和架构在本质上就不可能发生，
+categorically impossible through your codebase and architecture
+
+494
+00:37:00,694 --> 00:37:05,552
+以及数据结构来实现；或者你开始借助静态分析等手段，
+and data structures or you start looking at things like static analysis
+
+495
+00:37:05,552 --> 00:37:09,520
+然后再叠加规则、Bugbot 和 skill。
+and then you layer that on with rules and Bugbot and skills.
+
+496
+00:37:09,520 --> 00:37:11,140
+如果你做到了这些，并且……
+If you do all of that and.
+
+497
+00:37:11,220 --> 00:37:16,472
+你还花一些时间，呃，思考你的代码质量，从……
+You also spend some time, you know, thinking about, uh, your code quality, uh, in,
+
+498
+00:37:16,472 --> 00:37:17,940
+从 skill 的角度来看。
+in terms of skills.
+
+499
+00:37:18,660 --> 00:37:21,887
+你就会达到一种状态：你信任……
+You get to a place where you trust the,
+
+500
+00:37:21,887 --> 00:37:28,340
+你如此信任这个环境，以至于你的 agent 可以自由行动，对吧？
+you trust the environment so much that your agents can just be free, right?
+
+501
+00:37:28,340 --> 00:37:34,520
+以 Grok Bot 的代码库为例，我个人在这方面投入了大量时间。
+And, uh, personally me, I have spent a lot of time for this, for Grok Bot's codebase, for example.
+
+502
+00:37:34,600 --> 00:37:38,960
+而且，这真的是秘诀，对吧？好吧，其实也不算什么秘诀。
+And, uh, this is really the secret, right? Well, it's not really a secret.
+
+503
+00:37:39,040 --> 00:37:45,280
+它需要大量辛苦的工作，但是，嗯，我希望这次演讲对你有用，而且，
+It's, it's a lot of hard work, but, um, I hope you found this talk useful and, uh,
+
+504
+00:37:45,280 --> 00:37:50,080
+请在 X 上联系我。呃，我的账号是 poteto，结尾有个 e。
+please reach out to me on X. Uh, my handle is poteto with an e.
+
+505
+00:37:50,990 --> 00:37:54,869
+嗯，希望你们会很开心，
+Um, and, uh, I hope that you'll have a lot of fun
+
+506
+00:37:54,869 --> 00:38:00,790
+并且成功地搭建属于你自己的米其林厨房。感谢观看。
+and success building your own Michelin kitchen. Thanks for watching.

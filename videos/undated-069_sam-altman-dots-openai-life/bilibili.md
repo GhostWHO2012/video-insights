@@ -1,4 +1,4 @@
-# 山姆·奥特曼如何用 Dots 管理 OpenAI 与自己的生活
+# 如何用 Dots 管理 OpenAI 与自己的生活 | Sam Altman
 
 ## 视频简介
 
@@ -11,6 +11,8 @@ OpenAI CEO 山姆·奥特曼分享自己如何使用 Dots，把持续运转的 A
 原视频标题：How Sam Altman Actually Uses Dots to Run OpenAI and His Life
 
 原视频链接：https://www.youtube.com/watch?v=jZh55CQwSh8
+
+B站链接：https://www.bilibili.com/video/BV1FKpB6AEQP/
 
 主要受访者：Sam Altman，OpenAI 联合创始人兼 CEO
 

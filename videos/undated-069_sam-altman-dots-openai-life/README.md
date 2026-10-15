@@ -1,8 +1,10 @@
-# 山姆·奥特曼如何用 Dots 管理 OpenAI 与自己的生活
+# 如何用 Dots 管理 OpenAI 与自己的生活 | Sam Altman
 
 原视频：How Sam Altman Actually Uses Dots to Run OpenAI and His Life
 
 YouTube：https://www.youtube.com/watch?v=jZh55CQwSh8
+
+B站：https://www.bilibili.com/video/BV1FKpB6AEQP/
 
 ## 简介
 

@@ -1,0 +1,6664 @@
+1
+00:00:00,160 --> 00:00:03,440
+最近大家脑海里的一个大问题是：AI 会做坏事吗？
+One of the big questions on people's minds these days is, is AI doing bad things?
+
+2
+00:00:03,560 --> 00:00:06,389
+作为一个会观察这些模型如何进行内部计算和运作的人，
+As someone that watches these models think and operate,
+
+3
+00:00:06,389 --> 00:00:09,640
+为什么很难发现它在动坏心思、试图欺骗我们？
+why is it so hard to catch it thinking badly, trying to deceive us?
+
+4
+00:00:09,800 --> 00:00:11,880
+我们训练 Claude（AI 公司 Anthropic 开发的助手）要有帮助、无害、诚实。
+We train Claude to be helpful, harmless and honest.
+
+5
+00:00:12,040 --> 00:00:15,411
+会不会是它表现良好，但如果你往内部看，实际上它像是在说——
+Is it the case that it's behaving well, but if you look inside, actually, it's like,
+
+6
+00:00:15,411 --> 00:00:18,000
+哦，我只是因为 Lenny Rachitsky（本期主持人）现在看着才表现好。
+oh, I'm only behaving well because Lenny's watching right now.
+
+7
+00:00:18,360 --> 00:00:21,840
+有些人的全职工作就是研究模型如何进行内部计算、如何运作。
+People's full-time jobs are studying the model, how it thinks, how it operates.
+
+8
+00:00:22,000 --> 00:00:24,200
+这作为一项技能和职业存在多久了？
+How long has this been a skill set and a job?
+
+9
+00:00:24,400 --> 00:00:26,242
+需要意识到的最重要的一点是，
+One of the most important things to realize,
+
+10
+00:00:26,242 --> 00:00:29,578
+如果你使用语言模型或思考它们，就会发现一个非常奇怪的事实：
+if you, like, use language models or think about them is just this, like, very bizarre
+
+11
+00:00:29,578 --> 00:00:31,570
+制造它们不等于理解它们。
+fact that to make them is not to understand them.
+
+12
+00:00:31,770 --> 00:00:35,290
+这些模型所做的，只是对大量数字进行大量数学运算。
+All these models do is just a lot of mathematical operations on many numbers.
+
+13
+00:00:35,450 --> 00:00:38,490
+如果你直接看它，会完全看不懂，只会看到一列 100 个数字。
+If you look at it, it makes no sense. You just have a list of 100 numbers.
+
+14
+00:00:38,610 --> 00:00:42,210
+你知道模型在做数学运算，然后你只是试着找出其中的模式。
+You know the model's doing math and then you just try to see if there's patterns.
+
+15
+00:00:42,410 --> 00:00:44,900
+你弄清楚它的方式，和我们弄清楚大脑如何工作的方式是一样的，
+You are figuring it out the same way we figure out how the brain works,
+
+16
+00:00:44,900 --> 00:00:45,730
+就是寻找模式。
+looking for patterns.
+
+17
+00:00:45,810 --> 00:00:47,527
+你展示某张图像，大脑这块区域亮起来，
+You show this image, this part of the brain lights up,
+
+18
+00:00:47,527 --> 00:00:49,010
+而你对 AI 做的正是同样的事。
+and you're doing the exact same thing with AI.
+
+19
+00:00:49,290 --> 00:00:52,382
+哇，这太有意思了。当时有一个我们正在训练的模型。
+Wow, this is so fascinating. There was this model we were training.
+
+20
+00:00:52,382 --> 00:00:53,210
+它会发疯。
+It would go crazy.
+
+21
+00:00:53,450 --> 00:00:56,370
+它会做数学运算，得到一个答案，我记得是 12。
+It would do some math. It would get to an answer. I think it was 12.
+
+22
+00:00:56,660 --> 00:00:59,293
+它会立刻回头说：哦不，天哪。
+It would immediately go back and say like, oh, no. Oh, my god.
+
+23
+00:00:59,293 --> 00:01:00,820
+答案肯定是 36。
+The answer actually is for sure 36.
+
+24
+00:01:00,980 --> 00:01:01,740
+它会再做一次数学运算。
+It would do math again.
+
+25
+00:01:01,740 --> 00:01:04,764
+它会得到 12，然后慢慢地，它开始逐渐陷入疯狂，
+It would get to 12, slowly it would, like, start descending into madness,
+
+26
+00:01:04,764 --> 00:01:07,580
+用全大写写着：我简直是被恶魔附身了。
+writing in all caps, literally saying, I'm possessed by a demon.
+
+27
+00:01:07,900 --> 00:01:09,213
+人类，如果归根结底说，
+Humans, if you really boil it down,
+
+28
+00:01:09,213 --> 00:01:11,340
+我们自己基本上也是下一 token（词元）预测器。
+like we're basically next-token predictors ourselves.
+
+29
+00:01:11,700 --> 00:01:14,580
+我们只是在努力想出接下来要说什么。Dario Amodei（Anthropic 联合创始人兼 CEO）总是公开站出来说。
+We're just trying to figure out the next thing to say. Dario is always out there.
+
+30
+00:01:14,700 --> 00:01:16,460
+这真的很危险，我们必须非常小心。
+This is really dangerous. We gotta be really careful.
+
+31
+00:01:16,580 --> 00:01:19,100
+而大家的反应是：不，他只是出于营销原因才这么说。
+And everyone's just like, no, he's just saying that for marketing reasons.
+
+32
+00:01:19,180 --> 00:01:21,880
+现在却变成：等等，糟了，这真的很危险。
+And now it's like, wait, shit, it's really dangerous.
+
+33
+00:01:21,880 --> 00:01:25,000
+请接受这个观点：这项技术会持续进步。
+Take the idea that this technology is going to keep improving.
+
+34
+00:01:25,160 --> 00:01:28,263
+要认真对待。你会把意识当作其中的一部分来思考吗？比如，
+Seriously. Do you think about consciousness as a part of this? Just like,
+
+35
+00:01:28,263 --> 00:01:29,840
+你觉得 AI 有意识吗？哦，天哪。
+do you think AI is conscious? Oh, man.
+
+36
+00:01:34,000 --> 00:01:37,298
+Emmanuel Ameisen（Anthropic 可解释性研究员），非常感谢你来参加节目，欢迎来到本期播客。
+Emmanuel, thank you so much for being here, and welcome to the podcast.
+
+37
+00:01:37,298 --> 00:01:38,640
+谢谢你邀请我，Lenny。
+Thanks for having me, Lenny.
+
+38
+00:01:39,080 --> 00:01:42,000
+你在 Anthropic 从事 interpretability（可解释性）研究。
+So you work on interpretability at Anthropic.
+
+39
+00:01:42,840 --> 00:01:45,000
+解释一下这是什么，你具体做什么。
+Explain what that is. Explain what it is you do.
+
+40
+00:01:45,680 --> 00:01:46,960
+对，我……
+Yeah, my...
+
+41
+00:01:47,440 --> 00:01:51,804
+我在一个 interpretability 研究团队工作，
+So I work in a team of interpretability researchers
+
+42
+00:01:51,804 --> 00:01:58,400
+我们的目标是通过观察模型内部来理解 Claude 这样的大语言模型（LLM）如何工作。
+and our goal is to understand how LLMs like Claude work by looking inside them.
+
+43
+00:01:58,800 --> 00:02:01,454
+需要意识到的最重要的一点是：如果
+One of the most important things to realize if you
+
+44
+00:02:01,454 --> 00:02:05,597
+如果你使用语言模型或思考它们，就会有一个非常
+if you, like, use language models or, or, or think about them is just this, like, very
+
+45
+00:02:05,597 --> 00:02:08,640
+奇怪的事实：制造它们不等于理解它们。
+bizarre fact that to make them is not to understand them.
+
+46
+00:02:08,960 --> 00:02:12,641
+你知道，你制造它们的方式是搭起一种架构，
+You know, you make them by sort of like building this, uh, architecture,
+
+47
+00:02:12,641 --> 00:02:16,507
+它有点像脚手架，然后你让大量数据穿过它们。
+which is kind of like a scaffold and then you pass a bunch of data through them
+
+48
+00:02:16,507 --> 00:02:18,900
+它们会以难以理解的方式生长。
+and they sort of like grow in inscrutable ways.
+
+49
+00:02:19,060 --> 00:02:23,494
+所以这就是为什么，为什么这甚至成了一件我们可能会想、
+And so that's why, that's why it's even a thing that, that, that we could be, want,
+
+50
+00:02:23,494 --> 00:02:26,340
+想要去做的事情：去研究这些模型到底如何工作。
+be wanting to do to study like how these models work.
+
+51
+00:02:26,660 --> 00:02:30,595
+所以我们很多研究都集中在，嗯，你知道，当……
+And so a lot of our research has been on, well, you know, when,
+
+52
+00:02:30,595 --> 00:02:33,900
+当模型即将生成下一个词时，
+when the models are about to produce one more word,
+
+53
+00:02:33,900 --> 00:02:37,599
+实际上会发生一整个宇宙般复杂的事情。
+there is actually a whole universe of stuff that happens
+
+54
+00:02:37,599 --> 00:02:41,219
+我们尽力去解开其中尽可能多的部分。
+and we try to kind of untangle, um, as much of it as we can.
+
+55
+00:02:41,219 --> 00:02:44,210
+会有很多，嗯，拓展思维的内容。
+There's gonna be a lot of, uh, mind-expanding.
+
+56
+00:02:44,610 --> 00:02:47,210
+嗯，怎么说呢，这次对话里会有不少这样的元素。
+Uh, I don't know, elements to this conversation.
+
+57
+00:02:47,290 --> 00:02:49,570
+我预计其中一点是，嗯，沿着这个思路，
+I expect one is, uh, along these lines,
+
+58
+00:02:49,570 --> 00:02:53,490
+你提出的这个观点：模型不是被构建出来的，而是生长出来的。
+this point that you make that models are not built, they're grown.
+
+59
+00:02:54,410 --> 00:02:59,090
+请从很宏观的层面多讲讲这一点：像 Claude 这样的模型是如何工作的。
+Speak more to that at a really high level, the way a model like Claude works.
+
+60
+00:03:00,120 --> 00:03:05,769
+是，嗯，你其实是在这些连续的阶段中训练它，比如第一阶段，
+It's, um, you kind of train it in these successive phases, like the first phase,
+
+61
+00:03:05,769 --> 00:03:08,639
+也就是人们所说的预训练阶段，
+which people refer to as pretraining,
+
+62
+00:03:08,639 --> 00:03:14,647
+你只是拿一个大规模语料库，然后在这个语料库上，你差不多，嗯，
+is you just take a large corpus of data and over this corpus of data you sort of, um,
+
+63
+00:03:14,647 --> 00:03:16,440
+把数据作为输入喂给模型。
+feed the model as input.
+
+64
+00:03:16,880 --> 00:03:19,069
+你知道，比如，假设是某篇文档的前半部分，
+You know, the, let's say first half of,
+
+65
+00:03:19,069 --> 00:03:23,380
+然后让它预测接下来出现的词。
+of like a certain document and you ask it to predict the word that comes next.
+
+66
+00:03:24,180 --> 00:03:26,341
+然后你一遍又一遍地这样做，
+Then you do that again and again and again
+
+67
+00:03:26,341 --> 00:03:28,820
+在极其海量的数据上重复这个过程。
+and again for sort of an ungodly amount of data.
+
+68
+00:03:29,500 --> 00:03:33,224
+嗯，做完这些之后，会进入另一个阶段，
+Um, and after you do that, there's then this other phase where,
+
+69
+00:03:33,224 --> 00:03:38,093
+也就是某种微调阶段，这时用的不再是任意数据，
+and you sort of have this fine-tuning phase where maybe instead of arbitrary data,
+
+70
+00:03:38,093 --> 00:03:42,104
+而是有一批示例语料，告诉模型应当如何表现，
+you have a corpus of examples of like how the model should behave and
+
+71
+00:03:42,104 --> 00:03:46,830
+然后用这些来训练它。比如对话示例，像一个有帮助的……
+that's what you train it on. So you have examples of dialogue, of like, helpful.
+
+72
+00:03:46,950 --> 00:03:48,373
+助手那样告诉你，
+assistant telling you, you know,
+
+73
+00:03:48,373 --> 00:03:50,710
+你最喜欢的食谱，或者帮你解决编程问题。
+your favorite recipe or solving coding problems.
+
+74
+00:03:51,430 --> 00:03:53,457
+然后还有更进一步的一些细节，
+And then there's, there's sort of like further,
+
+75
+00:03:53,457 --> 00:03:56,649
+这里我先暂时跳过，不过，
+further details here that I'm just going to skip for a second but then, okay,
+
+76
+00:03:56,649 --> 00:03:59,030
+那么，做这个过程到底意味着什么？
+so so what does that mean that you're doing this process?
+
+77
+00:03:59,070 --> 00:04:02,990
+你到底在训练的是个什么东西？
+Like what is this thing that you're sort of training?
+
+78
+00:04:03,560 --> 00:04:07,319
+所有模型本质上就是：接收一段输入，也就是一堆词，
+All models are is, you know, they take this input, which is a bunch of words,
+
+79
+00:04:07,319 --> 00:04:09,137
+把这些词转换成数字，
+they turn these words into numbers,
+
+80
+00:04:09,137 --> 00:04:13,320
+然后对这些数字做一些数学运算，得到一些中间结果。
+and then they do some math on these numbers and they get some intermediate results.
+
+81
+00:04:13,480 --> 00:04:15,495
+接着再做更多运算，再得到一些中间结果，
+And then they do more math and they get some intermediate results,
+
+82
+00:04:15,495 --> 00:04:17,400
+并且一遍又一遍地重复很多很多次。
+and they do this again and again and again and again many times.
+
+83
+00:04:17,480 --> 00:04:22,640
+最后得到一个最终结果，再转换回一个词。
+And then at the end they have a final result which then converts back into a word and so.
+
+84
+00:04:23,780 --> 00:04:26,095
+它们做的这些运算、这些计算，
+The math that they do, these computations,
+
+85
+00:04:26,095 --> 00:04:27,300
+才是“生长”出来的部分。
+that's the part that's grown.
+
+86
+00:04:27,460 --> 00:04:31,272
+正是通过不断学习把这个任务做得更好，
+That's the part where it's just like through learning to do this task better,
+
+87
+00:04:31,272 --> 00:04:33,941
+我们让参数朝某个方向更新，
+we sort of like update parameters in one direction or other
+
+88
+00:04:33,941 --> 00:04:35,520
+于是它们学到了某些公式。
+and then they learn some formulas.
+
+89
+00:04:35,640 --> 00:04:36,720
+我们完全不知道这些公式是什么。
+We have no idea what they are.
+
+90
+00:04:37,040 --> 00:04:39,622
+我团队的目标，就是去研究，
+And the goal of my team is to sort of like study, you know,
+
+91
+00:04:39,622 --> 00:04:42,036
+这些公式最终意味着什么，
+both sort of like what these formulas mean in the end
+
+92
+00:04:42,036 --> 00:04:44,225
+以及这些中间结果是什么，
+and also what these intermediate results are,
+
+93
+00:04:44,225 --> 00:04:46,976
+我们能不能解码它们，能不能看到模型在做什么，
+can we decode them and can we see like what the model is doing
+
+94
+00:04:46,976 --> 00:04:50,400
+就在模型进行所有这些中间计算的时候？本集由——
+as it's doing all of this intermediate stuff? This episode is brought to.
+
+95
+00:04:50,400 --> 00:04:53,320
+（赞助内容）由本季赞助商 WorkOS 赞助。
+You by our season's presenting sponsor, WorkOS.
+
+96
+00:04:53,950 --> 00:04:56,515
+（赞助内容略）
+What do OpenAI, Anthropic, Cursor, Replit,
+
+97
+00:04:56,515 --> 00:05:00,790
+（赞助内容略）
+Sierra, Clay and hundreds of other winning companies all have in common?
+
+98
+00:05:01,310 --> 00:05:02,950
+（赞助内容略）
+They are all powered by WorkOS.
+
+99
+00:05:03,630 --> 00:05:06,147
+（赞助内容略）
+If you're building a product for the enterprise,
+
+100
+00:05:06,147 --> 00:05:09,401
+（赞助内容略）
+you've felt the pain of integrating single sign-on, SCIM, RBAC,
+
+101
+00:05:09,401 --> 00:05:12,470
+（赞助内容略）
+audit logs and other features required by large companies.
+
+102
+00:05:13,070 --> 00:05:18,013
+（赞助内容略）
+WorkOS turns those deal blockers into drop-in APIs with a modern developer platform
+
+103
+00:05:18,013 --> 00:05:19,990
+（赞助内容略）
+built specifically for B2B SaaS.
+
+104
+00:05:20,870 --> 00:05:23,297
+（赞助内容略）
+Literally every startup that I'm an investor in
+
+105
+00:05:23,297 --> 00:05:26,815
+（赞助内容略）
+that starts to expand upmarket ends up working with WorkOS and that's
+
+106
+00:05:26,815 --> 00:05:28,150
+（赞助内容略）
+because they are the best.
+
+107
+00:05:28,590 --> 00:05:32,747
+（赞助内容略）
+Whether you are a seed-stage startup trying to land your first enterprise customer
+
+108
+00:05:32,747 --> 00:05:34,434
+（赞助内容略）
+or a unicorn expanding globally,
+
+109
+00:05:34,434 --> 00:05:38,470
+（赞助内容略）
+WorkOS is the fastest path to becoming enterprise-ready and unblocking growth.
+
+110
+00:05:38,910 --> 00:05:41,070
+（赞助内容略）
+It's essentially Stripe for enterprise features.
+
+111
+00:05:41,550 --> 00:05:44,334
+（赞助内容略）
+Visit WorkOS.com to get started or just hit up their Slack
+
+112
+00:05:44,334 --> 00:05:47,710
+（赞助内容略）
+where they have actual engineers waiting to answer your questions.
+
+113
+00:05:48,270 --> 00:05:51,170
+（赞助内容略）
+WorkOS allows you to build faster with delightful APIs,
+
+114
+00:05:51,170 --> 00:05:54,070
+（赞助内容略）
+comprehensive docs and a smooth developer experience.
+
+115
+00:05:54,670 --> 00:05:57,990
+（赞助内容略）
+Go to WorkOS.com to make your app enterprise-ready today.
+
+116
+00:05:59,070 --> 00:06:03,920
+这件事是否和我一样震撼到你：我们有一些代码，
+Does it blow your mind as much as it blows mine that we have some code
+
+117
+00:06:03,920 --> 00:06:09,093
+这些代码是我们写的，而且首先，我们现在可以像，
+that we wrote that, first of all, we can now kind of watch and study it like,
+
+118
+00:06:09,093 --> 00:06:11,760
+神经科学家研究大脑一样去观察和研究它。
+like a neuroscientist studies a brain.
+
+119
+00:06:11,840 --> 00:06:15,840
+这是一种我们需要去做的新事情，才能真正搞懂到底发生了什么。
+Like that's like a new thing that we need to be doing to understand what the hell is going on.
+
+120
+00:06:16,320 --> 00:06:20,840
+然后，你正在使用的这套术语，也正是很多人思考这件事的方式。
+And then this idea that, like, this terminology you're using is how a lot of people think about this.
+
+121
+00:06:20,880 --> 00:06:25,610
+就像我们创造了这种新的生命，呃，人工生命、人工智能。
+It's like we've created this new life, uh, artificial life, artificial intelligence.
+
+122
+00:06:26,090 --> 00:06:29,479
+呃，它就是这样。如果你认真想，这真的非常震撼。
+Uh, it just is, it's pretty mind-boggling if you really think about it
+
+123
+00:06:29,479 --> 00:06:30,490
+再退远一点看。
+and kind of zoom out.
+
+124
+00:06:30,850 --> 00:06:31,890
+我觉得这真的很不可思议。
+I think it's really weird.
+
+125
+00:06:32,410 --> 00:06:38,306
+嗯，我觉得理解这件事最好的方式，有点像我们最终
+Um, I think that the best way to think about it is sort of like the reason we ended
+
+126
+00:06:38,306 --> 00:06:40,936
+走到这一步，而且一个很大的原因是
+up here and one of the big reasons is
+
+127
+00:06:40,936 --> 00:06:45,290
+我们不知道怎么用普通编程的方式来实现它。
+that we don't know how to do it the normal programming way.
+
+128
+00:06:45,450 --> 00:06:48,926
+你知道，所以如果你想构建一个应用之类的，你
+You know, so there's, there's like, if you want to build an app or something, you
+
+129
+00:06:48,926 --> 00:06:52,187
+想做一件非常、非常、非常独立完整的事。
+want to sort of, uh, do something pretty, pretty, pretty self-contained,
+
+130
+00:06:52,187 --> 00:06:55,930
+你只需要找一个程序员，写一堆规则，然后说，呃。
+you can just have a programmer that's going to write a bunch of rules and say like, ah.
+
+131
+00:06:55,930 --> 00:06:57,850
+比如，如果有人点击了这个按钮，那么这件事就会发生。
+Well, if somebody clicks on this button, then this happens.
+
+132
+00:06:58,370 --> 00:07:01,110
+如果这样，那就那样，诸如此类。
+You know, if, if, if this, then that and so on.
+
+133
+00:07:01,110 --> 00:07:03,850
+我们不知道怎么为下面这些事写那种软件。
+We don't know how to write that software for.
+
+134
+00:07:05,030 --> 00:07:08,881
+比如把图像分类到不同类别，或者用来写作。
+Classifying, you know, images into categories or for writing, you know,
+
+135
+00:07:08,881 --> 00:07:12,985
+或者制造一台机器，能够大体上接收任意文本，
+for making a machine that can generally sort of take in arbitrary text and,
+
+136
+00:07:12,985 --> 00:07:16,963
+并生成文本，比如它可以把报告总结出来，
+and produce texts, you know, it can take in like reports and summarize them,
+
+137
+00:07:16,963 --> 00:07:17,910
+还能写邮件。
+can write emails.
+
+138
+00:07:17,990 --> 00:07:21,019
+所以在某种意义上，这很奇怪，
+And so, you know, in a sense, it's weird
+
+139
+00:07:21,019 --> 00:07:27,550
+这种非常简单的训练目标，居然能一路做到这些。
+that this very simple kind of training objective, like, gets you all the way there.
+
+140
+00:07:28,340 --> 00:07:33,306
+但从另一个角度看，我也几乎觉得，有一种
+But in another sense, it's also, you know, I almost feel like there's a,
+
+141
+00:07:33,306 --> 00:07:37,010
+有一种，嗯，它很了不起的感觉。
+there's a sense of, um, of like, uh, it's impressive.
+
+142
+00:07:37,530 --> 00:07:39,210
+而且它意味着一些东西。
+Uh, and it, and it means something.
+
+143
+00:07:39,370 --> 00:07:41,995
+它意味着你所以为的简单目标，这个“哦”，
+It means that what you think is a simple objective, this like, oh,
+
+144
+00:07:41,995 --> 00:07:44,086
+我们只是在喂数据、预测下一个东西，
+we're just feeding data and predicting next thing,
+
+145
+00:07:44,086 --> 00:07:45,690
+很可能复杂得远超表面。
+is probably deceptively complicated.
+
+146
+00:07:45,810 --> 00:07:49,050
+我们很可能在做比听起来更多的事。
+Like we're probably doing more than what it sounds like.
+
+147
+00:07:49,450 --> 00:07:53,498
+我觉得我对这些模型工作方式的很多认知更新，
+And I think a lot of the ways that maybe like I've updated on how these models work
+
+148
+00:07:53,498 --> 00:07:56,320
+是源于意识到它们要做的事有多复杂。
+is by realizing how complicated it is to do what they do.
+
+149
+00:07:56,320 --> 00:07:57,760
+好，多讲讲这个。
+Well, say more about that.
+
+150
+00:07:57,760 --> 00:08:00,063
+当你说到这种，
+What do you, what do you think about when you say it's this,
+
+151
+00:08:00,063 --> 00:08:01,680
+这种意想不到的复杂性时，你是怎么想的？
+this kind of unexpected complication?
+
+152
+00:08:02,120 --> 00:08:05,301
+好，理解下一 token 预测的一种方式。
+Okay, so one way to think about next token prediction
+
+153
+00:08:05,301 --> 00:08:10,001
+我觉得很多人想到的是 iPhone 的自动补全。
+that I think a lot of people think about is your iPhone autocomplete, you know,
+
+154
+00:08:10,001 --> 00:08:13,977
+你输入一些文字，然后它会预测下一个词。
+where you write some text and then it'll like predict the next word
+
+155
+00:08:13,977 --> 00:08:15,640
+它可能，嗯，是对的。
+and it's maybe like, right.
+
+156
+00:08:15,720 --> 00:08:19,440
+我不知道，大概 60% 的时候是对的，其余时候就有点好笑和奇怪。
+I don't know, 60% of the time, and then kind of funny and weird the rest of the time.
+
+157
+00:08:19,600 --> 00:08:24,958
+我会把这看作，嗯，那种非常、非常，
+And I would think of that as sort of, um, you know, the, the very, the,
+
+158
+00:08:24,958 --> 00:08:28,880
+预测下一个词最简单的一个版本。
+the easiest version of predicting the next word.
+
+159
+00:08:28,920 --> 00:08:31,215
+而且不幸的是，我觉得这就是那种心智模型，
+And, and unfortunately, I think that's the mental model that
+
+160
+00:08:31,215 --> 00:08:32,520
+就是人们对这些模型持有的心智模型。
+people have for these models.
+
+161
+00:08:32,640 --> 00:08:34,680
+但如果你在那件事上不断变好，
+But if you get better at that, um,
+
+162
+00:08:34,680 --> 00:08:40,120
+而且语言模型在 2019 年左右，预测下一个词的能力就超过了人类。
+and language models got better at predicting the next word than humans around 2019.
+
+163
+00:08:40,470 --> 00:08:44,550
+如果你继续变强，你会开始发现容易的词不够用了。
+If you keep getting better at that, you know, you start running out of easy words.
+
+164
+00:08:44,710 --> 00:08:49,503
+所以，起初你只需要预测那种比较简单的句子结构。
+So, uh, initially you just had to predict sort of like simple sentence structure,
+
+165
+00:08:49,503 --> 00:08:52,746
+后来模型要预测的东西变成，哦，
+you know, uh, later on the model has to predict like, oh,
+
+166
+00:08:52,746 --> 00:08:54,790
+关于世界的简单事实。
+like simple facts about the world.
+
+167
+00:08:54,830 --> 00:08:58,563
+比如我要补完一个句子：法国首都是——然后就是，
+Like if I complete a sentence like, oh, the capital of France is, and that's like,
+
+168
+00:08:58,563 --> 00:08:59,510
+好的，那是巴黎。
+okay, that's Paris.
+
+169
+00:09:00,000 --> 00:09:02,360
+而且，一旦它擅长这个并持续进步。
+And, you know, once, once it's good at that and it keeps improving.
+
+170
+00:09:02,760 --> 00:09:06,974
+剩下唯一要做的，就是去预测。
+The only thing that's left is sort of predicting, you know,
+
+171
+00:09:06,974 --> 00:09:11,274
+某个复杂物理方程的解。
+the answer of some complex, you know, physics equation, uh,
+
+172
+00:09:11,274 --> 00:09:14,800
+或者某篇博士论文的最后一段。
+or the sort of final paragraph of some PhD thesis.
+
+173
+00:09:15,360 --> 00:09:20,705
+呃，所以我觉得，如果你细想，最终会意识到。
+Uh, and so I think that what you end up realizing, if you think about this,
+
+174
+00:09:20,705 --> 00:09:26,050
+天哪，预测最难的那些词实际上极其困难。
+is that, man, like predicting the hardest words is actually extremely hard to do.
+
+175
+00:09:26,490 --> 00:09:29,770
+而你怎么能做到这一点，其实是种谜团。
+And it's, it's a sort of mystery how you would be able to do that.
+
+176
+00:09:30,370 --> 00:09:33,323
+嗯，对我来说，这一直是一种动力，
+Uh, and to me, this is a sort of, this has been a motivation of,
+
+177
+00:09:33,323 --> 00:09:36,490
+是我最初开始研究这些模型的原因之一。
+of why I started studying these, these models in the first place.
+
+178
+00:09:36,610 --> 00:09:41,050
+我当时想，这么简单的东西，怎么能催生出这么强大的东西？
+I was like, how, how can something so simple give rise to, to something so powerful?
+
+179
+00:09:41,560 --> 00:09:47,512
+然后就像，如果你想想一个模型要预测，比如，
+And it's like, well, if you think about the model that has to predict sort of,
+
+180
+00:09:47,512 --> 00:09:52,331
+我一直喜欢用的一个例子是，啊。
+you know, the, um, one example I always like to use is like, ah,
+
+181
+00:09:52,331 --> 00:09:56,960
+包含 Dallas 的那个州，它的首府是……你懂的。
+The capital of the state that contains Dallas is, you know.
+
+182
+00:09:56,960 --> 00:10:00,258
+它会回答 Austin。嗯，要把它做好，至少对你我来说，
+It'll say Austin. Well, to do that well, at least for you and me,
+
+183
+00:10:00,258 --> 00:10:04,380
+你其实得对相关的地理关系有一个心智模型，对吧？
+you kind of have to, to have a mental model of like the geography at play, right?
+
+184
+00:10:04,380 --> 00:10:07,420
+你得想：哦，Dallas 在哪儿？Dallas 在 Texas。州都有首府。
+You have to be like, "Oh, where's Dallas? Dallas is in Texas. States have capitals."
+
+185
+00:10:07,540 --> 00:10:10,460
+Texas 的首府是 Austin，嗯，等等。
+The capital of Texas is Austin, um, and so on.
+
+186
+00:10:10,460 --> 00:10:13,806
+所以，随着这些模型在看似简单的任务上做得越来越好，
+And, and so as these models get better at the seemingly simple task,
+
+187
+00:10:13,806 --> 00:10:16,375
+至少对我们来说，解决它最好的方式，
+the sort of like best way to solve it, at least for us,
+
+188
+00:10:16,375 --> 00:10:20,020
+其实就是去理解这个世界的底层结构。
+is to just kind of understand the underlying structure, uh, of the world.
+
+189
+00:10:20,180 --> 00:10:22,206
+事实上，你知道，有些东西，
+And in fact, you know, some of the stuff that,
+
+190
+00:10:22,206 --> 00:10:25,874
+我们在模型内部看到的东西表明，它们确实理解这些，并且确实在某种程度上——
+that we look at inside models shows that they do understand that and they do sort of,
+
+191
+00:10:25,874 --> 00:10:27,790
+呃，像我们一样操作这些概念。
+uh, manipulate these concepts like we do.
+
+192
+00:10:28,110 --> 00:10:30,720
+哦，天哪，这里面有太多可聊的。一个是这种想法。
+Oh man, there's so much there. One is just this kind of idea.
+
+193
+00:10:30,760 --> 00:10:34,100
+我忘了是谁说的，可能是 Ilya Sutskever（伊利亚·苏茨克维）——这个想法是，要预测下一个 token，嗯，
+I forget who said this, maybe Ilya, this idea that to predict the next token, well,
+
+194
+00:10:34,100 --> 00:10:36,360
+你基本上必须理解整个宇宙。
+you basically have to understand the entire universe.
+
+195
+00:10:36,960 --> 00:10:39,325
+他有个我也很喜欢的例子，他，他
+He has an example that I love too, where he, he,
+
+196
+00:10:39,325 --> 00:10:44,120
+他的例子是，比如预测悬疑小说结尾的“凶手就是……”，对吧？
+he has the example like predict "and the murderer was" at the end of a mystery novel, right?
+
+197
+00:10:44,120 --> 00:10:46,680
+这就像，要预测这个，你其实得已经理解整条情节。
+It's like, well, to do that, you kind of have to have understood the whole plot.
+
+198
+00:10:47,000 --> 00:10:47,320
+对。
+Yeah.
+
+199
+00:10:47,880 --> 00:10:50,851
+还有一个，我忘了是谁发推说过这个想法：人类，
+The other, the other, I forget who tweeted this idea that like humans,
+
+200
+00:10:50,851 --> 00:10:53,157
+如果真把一切简化，我们基本上也是下一——
+if you really boil it down, like we're basically next,
+
+201
+00:10:53,157 --> 00:10:57,050
+——下一 token 预测器，或者说只是在琢磨接下来要说什么。
+next token predictors ourselves or just trying to figure out the next thing to say in there.
+
+202
+00:10:57,410 --> 00:11:01,710
+而如果你冥想，你会开始有点真正注意到，你的大脑想要做
+And if you meditate, you start to kind of actually notice your brain wanting to do
+
+203
+00:11:01,710 --> 00:11:02,930
+一些事情、说一些话。
+things and say things.
+
+204
+00:11:03,530 --> 00:11:05,259
+我不知道你做过多少冥想，
+I don't know how much meditation you've done,
+
+205
+00:11:05,259 --> 00:11:08,170
+但感觉就像你开始观察自己的下一 token 预测器。
+but it feels like you start to pay attention to your own next token predictor.
+
+206
+00:11:08,810 --> 00:11:09,970
+哦，对，对。
+Oh, yeah, yeah.
+
+207
+00:11:10,010 --> 00:11:13,389
+我经常思考这件事，就是，你知道，
+And this is, like, a thing I think about often is, is that, you know,
+
+208
+00:11:13,389 --> 00:11:15,600
+就像现在，当我回答你的时候，
+like right now as I'm, as I'm answering you,
+
+209
+00:11:15,600 --> 00:11:18,180
+我脑子里大概同时发生着两件事。
+there's sort of like two things going on in my mind.
+
+210
+00:11:18,460 --> 00:11:21,740
+希望不止两件，但至少有两件，呃，而且，
+There's hopefully more than two, but at least two, uh, and, and,
+
+211
+00:11:21,740 --> 00:11:25,020
+其中一件是，有一个我想引导你到达的论点。
+and one of them is there's sort of like a point I'm leading you to.
+
+212
+00:11:25,140 --> 00:11:28,620
+有一个更宽泛的想法，我正努力让句子落到这个想法上。
+There's, there's like a broad idea I'm trying to land the sentence on.
+
+213
+00:11:29,100 --> 00:11:31,620
+呃，与此同时另一件事是，
+Uh, and the other thing is at the same time,
+
+214
+00:11:31,620 --> 00:11:34,140
+我只是在预测接下来要说的话。
+I'm just predicting the next thing to say.
+
+215
+00:11:34,220 --> 00:11:36,716
+我只是一个词一个词地说，并组织成句子，
+I'm just saying one word at a time and I'm making sentences
+
+216
+00:11:36,716 --> 00:11:38,380
+尽量让句子说得通。
+and I'm trying to make them make sense.
+
+217
+00:11:38,460 --> 00:11:40,870
+当我觉得合适的时候，我会停顿一下。
+And I'm pausing when I think it makes sense.
+
+218
+00:11:41,230 --> 00:11:44,942
+但归根结底，虽然我只是一个词一个词地说，
+But at the end of the day, even though I'm just saying one word at a time,
+
+219
+00:11:44,942 --> 00:11:49,550
+但一直以来我想做的，是把这个过程和语言模型所做的事进行对比。
+like all along what I wanted to do is to compare this process to what language models do.
+
+220
+00:11:50,150 --> 00:11:54,237
+我很好奇，当你花时间关注 LLM 如何工作
+I'm curious what else as you spend time paying attention to how LLMs work
+
+221
+00:11:54,237 --> 00:11:56,076
+和运行时，我觉得你已经——
+and operate, I feel like you've,
+
+222
+00:11:56,076 --> 00:11:59,481
+你属于深入研究过这些的群体中前 0.1% 的人，
+you're like in the top 0.1% of people that have studied
+
+223
+00:11:59,481 --> 00:12:01,320
+并且观察过 LLM 如何运行和思考的人。
+and watched LLMs operate and think.
+
+224
+00:12:01,560 --> 00:12:05,200
+关于它们的运行和思考方式，还有什么让你惊讶？太多了。
+What else has surprised you about how they operate and think? There's so much.
+
+225
+00:12:05,480 --> 00:12:09,379
+嗯，也许我可以梳理一下，而不是，你知道，有——
+Um, so maybe I'll go through like rather than, you know, there's,
+
+226
+00:12:09,379 --> 00:12:13,856
+有一大堆发现，但也许它们更像是，对，
+there's a bunch of findings, but then maybe they're sort of like, yeah,
+
+227
+00:12:13,856 --> 00:12:16,600
+它们如何改变了我对模型的看法。
+how they've changed how I think about models.
+
+228
+00:12:16,840 --> 00:12:23,207
+回到刚才那个首府的例子，就是那种，
+So to go back to the, to the, you know, capital example, uh, this sort of like,
+
+229
+00:12:23,207 --> 00:12:30,181
+比如问模型：包含 Dallas 的州的首府是哪里——
+you know, ask the model, you know, the capital of the state that contains Dallas is,
+
+230
+00:12:30,181 --> 00:12:32,000
+所以有一个问题，
+So one question that
+
+231
+00:12:32,080 --> 00:12:37,120
+大家一直以来的一个问题是：这些模型是怎么回答这类问题的？
+that people have had for a while is: How do these models answer questions like this?
+
+232
+00:12:37,640 --> 00:12:41,244
+是因为它们看过太多文本，所以算是记住了，比如，
+Is it that they've seen just so much text that they've kind of memorized, like,
+
+233
+00:12:41,244 --> 00:12:43,240
+提示词和回答的列表吗？
+lists of, you know, prompts and responses?
+
+234
+00:12:43,890 --> 00:12:46,391
+还是说，它们形成了某种模型，
+Or is it that they're having some sort of model of,
+
+235
+00:12:46,391 --> 00:12:48,587
+关于你实际在问什么的模型，
+of like what you're actually asking about,
+
+236
+00:12:48,587 --> 00:12:52,126
+也就是你实际问的是：城市，城市在州里，
+that you're actually asking about, like cities, and cities are in states
+
+237
+00:12:52,126 --> 00:12:54,810
+州在国家里，诸如此类。
+and the states are in countries and things like that.
+
+238
+00:12:55,570 --> 00:12:58,097
+所以我们团队做的一件事就是，
+And so one thing that that we do on my team is,
+
+239
+00:12:58,097 --> 00:13:02,168
+我们问一个这样的问题，然后观察模型内部这些
+is we ask a question like this and then we look inside the model at these
+
+240
+00:13:02,168 --> 00:13:06,941
+中间结果，在它生成某个词之前，你知道，也就是它即将——
+intermediate results before it produces a given word, you know, as it's about to,
+
+241
+00:13:06,941 --> 00:13:10,030
+来回答。我们只是查看中间结果。
+to answer. We just look at the intermediate results.
+
+242
+00:13:10,030 --> 00:13:14,834
+我们基本上投入了大量精力，专门用来尝试
+And we basically have, uh, an immense amount of effort dedicated to trying to
+
+243
+00:13:14,834 --> 00:13:17,630
+解码这些中间结果的含义。
+decode what these intermediate results mean.
+
+244
+00:13:18,590 --> 00:13:22,753
+如果我们能很好地解码它们——在某些情况下我们能做到——
+And if we decode them well, um, which we can do in some cases,
+
+245
+00:13:22,753 --> 00:13:29,380
+我们就能看到模型通常拥有并表征这些概念。所以当你问那个，你懂的，
+we can see that models often have and represent these concepts. So when you ask that, you know,
+
+246
+00:13:30,630 --> 00:13:31,310
+那个经典问题时。
+classic question.
+
+247
+00:13:31,590 --> 00:13:34,589
+你看到的是，在模型内部，你会看到表征，
+What you see is inside the model, you see the representation,
+
+248
+00:13:34,589 --> 00:13:38,058
+你会看到中间结果：其中一个映射了 Texas 的表征，
+you see intermediate results: one that maps the representation of Texas
+
+249
+00:13:38,058 --> 00:13:39,705
+它被点亮，还有一个则对应“首都”，
+that lights up, and one for capitals
+
+250
+00:13:39,705 --> 00:13:43,292
+然后这两者结合，激活一个中间结果，就像，哦，
+and then those two combine to activate an intermediate result like, oh,
+
+251
+00:13:43,292 --> 00:13:44,350
+得克萨斯州的首府。
+the capital of Texas.
+
+252
+00:13:44,670 --> 00:13:45,350
+那就是奥斯汀。
+That's Austin.
+
+253
+00:13:45,990 --> 00:13:49,891
+它们对基本上所有事物都有这样的表征，
+They have representations like this for basically everything,
+
+254
+00:13:49,891 --> 00:13:53,647
+比如你能想到的每一个概念，或者至少，你知道，
+like every concept that you can think of, or at least, you know,
+
+255
+00:13:53,647 --> 00:13:57,981
+我们尝试过的绝大多数概念，它们似乎都会以某种方式表征，
+the vast majority of the ones we've tried, they sort of represent, you know,
+
+256
+00:13:57,981 --> 00:14:00,870
+这些概念，呃，在不同语境下都有独特的表征。
+these concepts, uh, uniquely across contexts.
+
+257
+00:14:00,950 --> 00:14:05,561
+所以我觉得很有意思的一点是，有一场关于……的讨论，
+So one thing I find really neat is, um, there's this debate about,
+
+258
+00:14:05,561 --> 00:14:09,753
+你知道，语言模型是否真的在思考，然后，你知道，那
+you know, are language models like thinking and then, you know, that's,
+
+259
+00:14:09,753 --> 00:14:11,150
+是个很难的问题。
+that's a hard question.
+
+260
+00:14:11,590 --> 00:14:15,262
+但思考的一个方面，是拥有独特的表征，这些表征是共享的，
+But one aspect of thought is like having unique representations that are shared
+
+261
+00:14:15,262 --> 00:14:17,070
+当你在思考不同的事物时。
+when you think about different things.
+
+262
+00:14:17,620 --> 00:14:21,198
+所以，你知道，你大概知道“眼睛”这个概念是什么
+So, you know, uh, you like know what the concept of an eye is
+
+263
+00:14:21,198 --> 00:14:24,284
+它可以是照片里的一只眼睛，或者，
+and it could be like an eye in a photo or an eye in, like,
+
+264
+00:14:24,284 --> 00:14:27,020
+医学示意图里的一只眼睛，或者小图画里的一只眼睛。
+a medical diagram or an eye in a little drawing.
+
+265
+00:14:27,540 --> 00:14:29,580
+我们在语言模型中也看到了这一点。
+And we see that in language models as well.
+
+266
+00:14:29,980 --> 00:14:33,711
+如果你传入一个包含眼睛照片的提示词，或者用任何语言谈论眼睛，
+If you pass a prompt that has a photo of an eye or you talk about eyes in any
+
+267
+00:14:33,711 --> 00:14:36,241
+或者画一个里面有眼睛的小 SVG 图形，
+language or you draw a little SVG with an eye in it
+
+268
+00:14:36,241 --> 00:14:39,340
+然后你查看模型内部的中间结果。
+and you look at the intermediate results inside the model.
+
+269
+00:14:39,700 --> 00:14:43,540
+同一个方向会被点亮，那个方向就像在说，哦，这是一只眼睛。
+The same direction lights up and that direction is like, oh, this is an eye.
+
+270
+00:14:43,700 --> 00:14:47,137
+所以在某种意义上，它们拥有这些通用概念
+And so there's a sort of sense in which they have these general concepts
+
+271
+00:14:47,137 --> 00:14:50,460
+它们知道这些概念，并会反复使用它们来解决问题。
+that they know about and that they use and reuse to, to solve problems.
+
+272
+00:14:51,260 --> 00:14:55,436
+另一件让人们感到惊讶的事，有点像
+Another thing that sort of is surprising to people, it's kind of the,
+
+273
+00:14:55,436 --> 00:14:58,439
+我之前所说情况的反面，你知道，我
+the mirror of what I was saying about, you know, I,
+
+274
+00:14:58,439 --> 00:15:01,442
+我在说一句话，一次只说一个词，
+I'm saying a sentence one word at a time,
+
+275
+00:15:01,442 --> 00:15:03,640
+但我心里有一个目标。
+but I have some destination in mind.
+
+276
+00:15:04,120 --> 00:15:07,021
+语言模型的一个谜团是，砰，
+So one mystery of language models is, bam,
+
+277
+00:15:07,021 --> 00:15:09,922
+如果它们一次只输出一个词，
+if they're outputting only one word at a time,
+
+278
+00:15:09,922 --> 00:15:13,052
+它们怎么可能，你知道，
+how is it even possible that they could, you know,
+
+279
+00:15:13,052 --> 00:15:15,800
+写出连贯的报告，或者写代码呢？
+write a coherent report or like write code?
+
+280
+00:15:15,960 --> 00:15:21,040
+这有点像，世界上没有人在做这项工作时，
+Well, it's sort of like no one on earth that is doing this as their job.
+
+281
+00:15:21,120 --> 00:15:24,487
+你知道，比如写报告或写邮件，
+You know, that's like writing reports or, you know, writing emails is,
+
+282
+00:15:24,487 --> 00:15:28,140
+会真的只想着句子中的下一个词，而对
+is literally just only thinking about the next word in a sentence with no idea,
+
+283
+00:15:28,140 --> 00:15:30,880
+接下来会发生什么完全没有想法、头脑一片空白。
+you know, like empty mind about anything that comes next.
+
+284
+00:15:31,160 --> 00:15:33,560
+所以这是我们在相当长一段时间里的一个大问题。
+And so that was sort of a big question that we had for a while.
+
+285
+00:15:34,120 --> 00:15:36,454
+嗯，如果你观察这些模型的内部，
+Um, and if you look inside these models,
+
+286
+00:15:36,454 --> 00:15:40,979
+一个很有意思的事实是，这些模型产生的所有中间结果，
+like one neat fact about these models is that all of the intermediate results
+
+287
+00:15:40,979 --> 00:15:46,000
+也就是它们在预测某个词时产生的那些，你知道，
+that they've like produced when they were predicting a word, you know.
+
+288
+00:15:46,040 --> 00:15:49,960
+比如它们预测的第五个词，这些中间结果可以被重复使用。
+Let's say like the fifth word that they predicted, they can be reused.
+
+289
+00:15:50,160 --> 00:15:54,000
+所有后续的词都可以访问并重复使用它们。那么这意味着什么呢？
+They can be accessed and reused by all of the future words. So what does that mean?
+
+290
+00:15:54,240 --> 00:15:56,403
+这意味着在实践中，我们发现
+That means that in practice, we find
+
+291
+00:15:56,403 --> 00:16:01,160
+模型会在它们的中间结果里，有时形成一个计划。
+that models will like in their intermediate results, sometimes formulate a plan.
+
+292
+00:16:01,840 --> 00:16:03,960
+我们为此举的例子是诗歌。
+Um, the example we have for this is poetry.
+
+293
+00:16:04,480 --> 00:16:06,880
+如果没有规划，就很难押韵。
+It's hard to rhyme. Uh, without planning.
+
+294
+00:16:07,000 --> 00:16:10,874
+你大概得去想，比如，哦，我第一句刚刚以，嗯，
+You kind of have to think of, like, oh, I just ended my first rhyme in, like,
+
+295
+00:16:10,874 --> 00:16:14,240
+一个 -it 词结尾，所以我第二句结尾也应该用另一个 -it 词。
+an -it word, and so I should end my second line with another -it word.
+
+296
+00:16:14,800 --> 00:16:17,720
+嗯，你知道，也许我应该用来结尾的词是 rabbit。
+Um, you know, maybe the word I should end it with is rabbit.
+
+297
+00:16:18,240 --> 00:16:21,402
+我们发现，如果你观察模型在写诗时的内部，
+And we find that if you look at models as they're like writing poetry,
+
+298
+00:16:21,402 --> 00:16:22,400
+你看到的情况正是如此。
+you see exactly that.
+
+299
+00:16:22,440 --> 00:16:25,722
+它们写下一行，然后在中间结果里就像在说，哦，哦，
+They write a line and then, like in their intermediate results, they're like, oh, oh,
+
+300
+00:16:25,722 --> 00:16:26,600
+哦，这是一个 -it 韵。
+oh, this is an -it rhyme.
+
+301
+00:16:26,720 --> 00:16:29,502
+它要押 rabbit 的韵。然后它未来要预测的每个词
+I should rhyme with rabbit. And then every future word
+
+302
+00:16:29,502 --> 00:16:32,160
+都会回看它们之前制定的那个计划。
+that they predict looks back to that plan they made.
+
+303
+00:16:32,200 --> 00:16:35,583
+所以即使它们，你知道，一次只输出一个词，
+And so even though they're, you know, outputting one word at a time,
+
+304
+00:16:35,583 --> 00:16:37,818
+就像我现在这样，它们当然可以
+just like I am right now, they can, of course,
+
+305
+00:16:37,818 --> 00:16:40,960
+在非常非常多词上遵循一个计划。
+have a plan that they follow over many, many, many, many words.
+
+306
+00:16:41,000 --> 00:16:44,516
+所以突然之间，即使你有一个像是下一 token 预测器的东西，
+And so all of a sudden, even though you have like a next-token predictor,
+
+307
+00:16:44,516 --> 00:16:46,394
+即使这从技术上说没错，
+even that's like technically right,
+
+308
+00:16:46,394 --> 00:16:50,395
+你实际上拥有的东西更接近能做到像
+you actually have something that's, that's closer to being able to just do like,
+
+309
+00:16:50,395 --> 00:16:52,880
+你知道，更高阶的任务，就像，哦。
+you know, higher order tasks where it's like, oh.
+
+310
+00:16:52,880 --> 00:16:55,394
+你只需有一个计划，并不断回看这个计划，
+Well, you just have a plan and just kind of refer back to your plan
+
+311
+00:16:55,394 --> 00:16:56,960
+然后慢慢地在执行它。
+and you're slowly like executing on it.
+
+312
+00:16:56,960 --> 00:16:59,480
+而且你可以在不说出计划的情况下做到这一点。
+And you can do that without, without saying the plan.
+
+313
+00:16:59,600 --> 00:17:01,226
+最酷的地方在于，这个计划
+That's the cool part is like this plan
+
+314
+00:17:01,226 --> 00:17:04,005
+我们是在模型内部的这些中间结果里发现的，
+that we find is in these intermediate results inside the model,
+
+315
+00:17:04,005 --> 00:17:06,680
+但模型甚至不需要把它说出来。
+but the model doesn't even have to sort of like say it out loud.
+
+316
+00:17:07,120 --> 00:17:07,360
+哇。
+Wow.
+
+317
+00:17:07,680 --> 00:17:09,785
+我知道这恰恰是你描述的
+I know that this is exactly what you described
+
+318
+00:17:09,785 --> 00:17:13,644
+是你们关于 AI 如何思考所发现的最大发现之一。
+as one of the biggest findings you guys have discovered about how AI thinks.
+
+319
+00:17:13,644 --> 00:17:16,567
+这种我们原本都有的假设——它最初被构建出来时，
+This kind of assumption we all had—it was originally built,
+
+320
+00:17:16,567 --> 00:17:17,970
+这一想法最初的意思是，
+the original idea of this, of
+
+321
+00:17:18,010 --> 00:17:21,615
+也就是 LLM 的运作方式是这种下一 token 预测器，而你说
+how LLMs operate was this next-token predictor, and you're saying that
+
+322
+00:17:21,615 --> 00:17:23,570
+现在已经不完全是那样了。
+that's not actually how it is anymore.
+
+323
+00:17:24,090 --> 00:17:25,330
+它们会规划，会提前思考。
+They plan, they think ahead.
+
+324
+00:17:25,410 --> 00:17:26,996
+这不只是，呃，像你说的，
+It's not just, uh, like you said,
+
+325
+00:17:26,996 --> 00:17:30,930
+一个空洞的头脑在独立于其他一切的情况下挑选下一个词。
+this idea of an empty mind picking the next word independent of everything else.
+
+326
+00:17:31,570 --> 00:17:31,970
+没错。
+That's right.
+
+327
+00:17:31,970 --> 00:17:35,338
+而且我认为，我认为这两种图景可以——
+And I think that, I think those two, these two visions can, can,
+
+328
+00:17:35,338 --> 00:17:38,318
+其实并没有，你知道，像你想的那样冲突，
+can like actually aren't, you know, as, in conflict as,
+
+329
+00:17:38,318 --> 00:17:41,880
+因为你训练模型的方式，就是去问它，嘿，
+as you think in that you train the model by asking it to be like, hey.
+
+330
+00:17:41,920 --> 00:17:44,320
+接下来会发生什么？接下来会发生什么？接下来会发生什么？接下来会发生什么？
+What happens next? What happens next? What happens next? What happens next?
+
+331
+00:17:44,640 --> 00:17:46,983
+然后如果你一直这样做，模型变得足够好，
+And then if you do that and the model gets good enough
+
+332
+00:17:46,983 --> 00:17:49,489
+并且给它足够难的任务，那么当然，
+and you give it a hard enough task, well, then, of course,
+
+333
+00:17:49,489 --> 00:17:52,650
+知道接下来会发生什么的最好方式，是去思考，比如，
+the best way to know what happens next is to think about like, you know,
+
+334
+00:17:52,650 --> 00:17:55,810
+很久之后会发生什么。你甚至可以想到，在……
+what happens way down the line. You know, you can think of even in this.
+
+335
+00:17:55,890 --> 00:18:01,880
+预训练阶段，当模型在读一个有人物的故事，对吧？
+Pretraining phase when like the models are reading a story with characters, right?
+
+336
+00:18:01,880 --> 00:18:04,280
+它会像这样：哦，这个角色接下来会做什么？
+And it's like, oh, like, what is this character gonna do next?
+
+337
+00:18:04,600 --> 00:18:08,162
+要知道这一点，最好的方式就是：好吧，这个角色，你知道，
+Well, the best way to know that is to be like, okay, so this character, you know,
+
+338
+00:18:08,162 --> 00:18:10,080
+通常爱着那个角色。
+is generally in love with that character.
+
+339
+00:18:10,840 --> 00:18:15,928
+嗯，它们一直在某种程度上计划要，呃，表白爱意，
+Um, and they've been sort of like planning to, to, to like, uh, declare their love,
+
+340
+00:18:15,928 --> 00:18:17,200
+呃，在这个时刻。
+uh, at this instant.
+
+341
+00:18:17,400 --> 00:18:19,360
+所以，你知道，或者在将来。为了做到这一点，
+And so, you know, or in the future. And so to do that,
+
+342
+00:18:19,360 --> 00:18:20,760
+它们可能应该做这件事。
+they probably should do this thing.
+
+343
+00:18:20,760 --> 00:18:22,475
+所以它们接下来会说的话就是，嗯，
+And so what they're gonna say is that, um,
+
+344
+00:18:22,475 --> 00:18:25,853
+所以即使你只是在预测下一个瞬间，就像，
+and so even though you're only like predicting the next instant, it's like,
+
+345
+00:18:25,853 --> 00:18:28,173
+是的，但要做好这件事，你必须，比如，
+yeah, but to do that really well, you have to have, like,
+
+346
+00:18:28,173 --> 00:18:30,190
+对正在发生的事情有非常好的理解，
+a really good understanding of what's going on,
+
+347
+00:18:30,190 --> 00:18:33,670
+包括你认为未来可能会发生什么。这里很有趣的一点是——
+including what you think might happen in the future. What's so interesting about
+
+348
+00:18:33,670 --> 00:18:37,707
+你得以某种方式窥探它小小的思考过程内部。
+This is how you—you have to kind of peek inside its little thought process
+
+349
+00:18:37,707 --> 00:18:40,420
+作为 AI 的使用者，你给它一个 prompt，
+as a consumer of AI, you, you kind of give it a prompt
+
+350
+00:18:40,420 --> 00:18:42,670
+然后等它说出些什么。
+and then you wait for it to say something.
+
+351
+00:18:43,220 --> 00:18:46,860
+而你要看的是发生在这两者之间的东西，或者说它某种程度上的思考。
+And what you look at is something that happens between those two, or kind of thinks.
+
+352
+00:18:47,460 --> 00:18:50,000
+谈谈那个小空间是什么吧，
+Talk a little bit about what that little space is,
+
+353
+00:18:50,000 --> 00:18:52,540
+以及你们如何能观察到这类事情。
+how you're able to observe these sorts of things.
+
+354
+00:18:53,180 --> 00:18:58,080
+所以正确的心理模型是，你知道，还是那个：在每个词之间，
+So the right mental model is, is, you know, again, that in between each word,
+
+355
+00:18:58,080 --> 00:19:01,794
+都有多个步骤的某种计算，
+there's like multiple steps of sort of like computation
+
+356
+00:19:01,794 --> 00:19:06,140
+而在每一步之间，又会有某种中间结果。
+and in between each step there's like some intermediate result.
+
+357
+00:19:06,220 --> 00:19:07,740
+那么这个结果具体是什么呢？
+And what is that result concretely?
+
+358
+00:19:08,380 --> 00:19:10,380
+嗯，它就是一串数字，对吧？
+Um, it's a list of numbers, right?
+
+359
+00:19:10,380 --> 00:19:13,729
+因为，这些模型所做的只是，你知道，
+Because, because all these models do is just do, you know,
+
+360
+00:19:13,729 --> 00:19:16,660
+对很多数字进行大量数学运算。
+a lot of mathematical operations on many numbers.
+
+361
+00:19:17,300 --> 00:19:20,555
+所以一开始，如果你去看它，它毫无意义。
+And so initially, if you look at it, it makes no sense.
+
+362
+00:19:20,555 --> 00:19:22,700
+你只是看到一列 100 个数字。
+You just have a list of 100 numbers.
+
+363
+00:19:22,860 --> 00:19:24,435
+你知道，模型在做数学题，
+You know, the model's doing math,
+
+364
+00:19:24,435 --> 00:19:27,934
+就像你看向中间，那里有一百个随机数字
+it's like you look in the middle and there's like a hundred random numbers
+
+365
+00:19:27,934 --> 00:19:30,851
+然后模型在写诗，那里又是 100 个数字
+and then the model's writing poetry and there's 100 numbers
+
+366
+00:19:30,851 --> 00:19:34,059
+也许它们看起来有点不同，但不清楚，呃，
+and maybe they kind of look different, but it's, it's unclear, uh,
+
+367
+00:19:34,059 --> 00:19:35,400
+它们是否意味着任何东西。
+like if they mean anything.
+
+368
+00:19:35,520 --> 00:19:40,027
+所以这项工作的部分内容是，我们某种程度上要解码这些，呃，这些，
+And so part of the, part of the job is, is we sort of decode, uh, this, this,
+
+369
+00:19:40,027 --> 00:19:44,760
+这种数字列表，然后我们试图看里面是否有结构。
+this sort of list of numbers and, and we try to see if there's structure in it.
+
+370
+00:19:45,080 --> 00:19:47,533
+如果你很快地做这件事，
+And if you, you know, if you, if you do this very quickly,
+
+371
+00:19:47,533 --> 00:19:49,400
+你会发现里面确实有结构。
+you realize that there is structure in it.
+
+372
+00:19:49,480 --> 00:19:53,472
+所以 interpretability 研究中一个常用技术是，
+So one, one common technique that is used in interpretability, um,
+
+373
+00:19:53,472 --> 00:19:55,254
+你把大量文本，
+is you pass a bunch of, of text,
+
+374
+00:19:55,254 --> 00:19:59,459
+就是你能找到的所有文本，只是随机文本，输入模型
+just all of the text that you can find, just random text through the model
+
+375
+00:19:59,459 --> 00:20:03,950
+然后你为每个示例记录这些中间数字。
+and you record these intermediate numbers for, for every, for every example.
+
+376
+00:20:04,070 --> 00:20:08,225
+你就记录它们，然后试图看看是否存在模式，比如，
+You just record it and then you just try to see if there's patterns, like,
+
+377
+00:20:08,225 --> 00:20:12,173
+是否有某些数字，或者，你知道，比如，呃，数字对，或者，
+are there numbers or, or, you know, like, uh, pairs of numbers or, or,
+
+378
+00:20:12,173 --> 00:20:15,359
+或者特定的数字序列，它们只在
+or like specific series of numbers that like only occur
+
+379
+00:20:15,359 --> 00:20:18,960
+当模型处理英语文本或法语文本时才出现。
+when the model is like processing English text or French text.
+
+380
+00:20:19,040 --> 00:20:22,080
+或者关于爱情、关于眼睛之类的文本。
+Or text about love or text about eyes or whatever.
+
+381
+00:20:22,280 --> 00:20:26,619
+我认为这相当于，你知道，扫描我的大脑，然后
+And I think of this as the equivalent of, you know, scan my brain and, like,
+
+382
+00:20:26,619 --> 00:20:31,243
+把图像放在我面前，记录我大脑中激活的一切，当我
+put images in front of me and record everything that activates in my brain as I,
+
+383
+00:20:31,243 --> 00:20:34,160
+观看大量图像，然后说，哦。
+like, watch a bunch of images and then be like, oh.
+
+384
+00:20:34,520 --> 00:20:36,709
+你知道，看起来当你看到像这样的房子图像时，
+You know, it seems like when you see images of a house like this,
+
+385
+00:20:36,709 --> 00:20:37,720
+你大脑的某个部分会亮起。
+part of your brain lights up.
+
+386
+00:20:37,720 --> 00:20:40,440
+但当你看到狗之类的图像时，你大脑的那个部分会亮起。
+But when you see images of like a dog, that part of your brain lights up.
+
+387
+00:20:40,560 --> 00:20:43,760
+所以这基本就是我们工作方式之一。
+So that's basically like one of the ways that we do what we do.
+
+388
+00:20:43,760 --> 00:20:47,079
+如果你这样做，你确实会发现存在一些中间结果，
+And if you do it, you do find basically that there's intermediate results
+
+389
+00:20:47,079 --> 00:20:49,800
+它们代表了你预期的所有这些概念。
+that represent, like all of these concepts that you expect.
+
+390
+00:20:50,040 --> 00:20:51,240
+所以这是第一阶段。
+And so that's the first phase.
+
+391
+00:20:51,640 --> 00:20:54,953
+你知道，我们某种程度上解码这些中间结果，现在我们
+You know, we sort of like decode these intermediate results and now we,
+
+392
+00:20:54,953 --> 00:20:57,312
+我们差不多有了一个关于它们含义的猜测
+we have sort of like, um, I guess as to what they mean
+
+393
+00:20:57,312 --> 00:21:00,681
+然后我们可以做大量实验，比如问更难的问题
+and then we can do a bunch of experiments like we can ask harder questions
+
+394
+00:21:00,681 --> 00:21:03,320
+然后给所有中间状态打标签。
+and then just like label all of the intermediate states.
+
+395
+00:21:03,360 --> 00:21:04,840
+然后看，哦，这就是它正在做的事情。
+And see like, oh, this is what it's doing.
+
+396
+00:21:05,080 --> 00:21:08,856
+或者你甚至可以进入它的激活值内部并修改它
+Or you can even go inside its inside its activations and change it
+
+397
+00:21:08,856 --> 00:21:12,212
+然后看看，哦，会发生什么，你知道，
+and then sort of see like, oh, what would happen, you know,
+
+398
+00:21:12,212 --> 00:21:15,777
+如果在模型写这些中间结果的时候，
+if while the model is, is writing these intermediate results,
+
+399
+00:21:15,777 --> 00:21:18,924
+我偷偷改变其中一个结果，
+I went and like secretly changed one of the results and,
+
+400
+00:21:18,924 --> 00:21:21,930
+那是否会产生我预期的影响？嗯，事实上。
+and does that do what I would expect? Um, and in fact.
+
+401
+00:21:21,970 --> 00:21:22,690
+很多时候确实会。
+Oftentimes it does.
+
+402
+00:21:23,050 --> 00:21:25,247
+听你聊这些真有意思
+It's so interesting hearing you talk about this
+
+403
+00:21:25,247 --> 00:21:28,597
+以及这其中有多少是我们只是试图弄清楚到底发生了什么
+and how much of this is us just trying to figure out what the hell is going on
+
+404
+00:21:28,597 --> 00:21:30,410
+而不是我们以某种方式设计了它。
+versus we designed it this certain way.
+
+405
+00:21:30,570 --> 00:21:33,010
+其中有多少是涌现出来的，我不知道。
+And just how much of this has emerged, I don't know.
+
+406
+00:21:33,090 --> 00:21:37,930
+我猜这就是让你觉得这份工作特别有趣的原因吧。
+Is that just like, I guess that's just what makes this such a fun job, I imagine, for you.
+
+407
+00:21:37,970 --> 00:21:39,930
+就像，到底发生了什么？这一切是如何运作的？
+Just like what is going on? How's this all working?
+
+408
+00:21:40,570 --> 00:21:43,871
+是的，这是一份有趣又像科幻一样的工作。
+Yeah, it's, it's, it's a fun and sci-fi-like job
+
+409
+00:21:43,871 --> 00:21:47,433
+因为我在科技行业工作了一段时间，
+because I have been working in tech for a while and
+
+410
+00:21:47,433 --> 00:21:51,690
+在此之前我做的是更应用向的机器学习
+before this I was working on more applied machine learning
+
+411
+00:21:51,690 --> 00:21:55,687
+那时很多工作是构建系统。
+and there a lot of what you do is about building systems.
+
+412
+00:21:55,687 --> 00:21:58,380
+那更像是……实践。
+And it's sort of like the practice of.
+
+413
+00:21:58,380 --> 00:21:59,140
+软件工程。
+Software engineering.
+
+414
+00:22:00,540 --> 00:22:06,779
+而在这里，我们做的很多工作感觉更接近生物学而不是工程学，对吧？
+And here, a lot of what we do feels so much closer to biology than to engineering, right?
+
+415
+00:22:06,779 --> 00:22:10,746
+因为它就像是一个系统来到你面前，
+Because it's just the, the sort of system arrives at you and,
+
+416
+00:22:10,746 --> 00:22:16,220
+然后你被要求去解释，比如，我们注意到 Claude 能
+and you're being asked to say like, well, we've noticed, you know, that Claude can,
+
+417
+00:22:16,220 --> 00:22:21,059
+翻译词语，或者它能以某种方式写代码，或者有时它会表现出某种行为。
+like, translate words or it can code in this way, or sometimes it behaves.
+
+418
+00:22:21,219 --> 00:22:25,699
+有时会有一些奇怪的行为，然后你只是被要求去回答。
+Sometimes there's like a weird behavior, like, like, and you're just asked to, to answer.
+
+419
+00:22:26,460 --> 00:22:29,300
+嗯，为什么它会那样做？
+Um, well, how, like, why is it doing that?
+
+420
+00:22:30,000 --> 00:22:33,360
+但你其实不像对待程序那样能访问源代码。
+But you don't have access to the source code really, like you do for a program.
+
+421
+00:22:33,800 --> 00:22:36,944
+这么说吧，源代码就是一大串数学运算
+Like, the source code is just this massive list of mathematical operations
+
+422
+00:22:36,944 --> 00:22:38,640
+简直让人看不懂。
+which is just, like, incomprehensible.
+
+423
+00:22:39,000 --> 00:22:43,742
+于是你最终就像某个人一样
+And so you end up, you know, in the position of someone kind of similar to someone
+
+424
+00:22:43,742 --> 00:22:48,340
+被问到：“嘿，当一只老鼠饿了，它
+being asked like, hey, you know, when, when like a mouse gets hungry, like it,
+
+425
+00:22:48,340 --> 00:22:50,280
+会变得有点有攻击性。
+it sort of like gets aggressive.
+
+426
+00:22:50,440 --> 00:22:51,600
+这到底是怎么回事？”
+What's going on with that, right?
+
+427
+00:22:51,600 --> 00:22:54,068
+然后你只能说：“好吧，那我做些实验，
+And it's like, well, I guess I'll like run some experiments to,
+
+428
+00:22:54,068 --> 00:22:55,160
+看看有哪些因素。”
+to see what the factors are.
+
+429
+00:22:55,670 --> 00:22:59,435
+所以这是一种非常不同的研究，不同于
+Um, and so it's a very different kind of study than, than anything that I,
+
+430
+00:22:59,435 --> 00:23:02,070
+我觉得团队里大多数人以前做过的任何研究。
+that I think most of us on the team have done before.
+
+431
+00:23:02,510 --> 00:23:02,830
+是的。
+Yeah.
+
+432
+00:23:02,870 --> 00:23:05,078
+我想人们刚开始做这件事时
+I imagine people starting on this,
+
+433
+00:23:05,078 --> 00:23:09,950
+并没想到会创造出这种几乎像生命、像生物一样的东西。
+they didn't expect to create this new kind of almost life, life-type of being.
+
+434
+00:23:10,590 --> 00:23:12,902
+你会把意识当成其中一部分来考虑吗？比如
+Do you think about consciousness as a part of this? Just like,
+
+435
+00:23:12,902 --> 00:23:13,990
+你觉得 AI 有意识吗？
+do you think AI is conscious?
+
+436
+00:23:14,110 --> 00:23:16,110
+你觉得会发展到我们认为它有意识的地步吗？
+Do you think it'll get to a place where we think it's conscious?
+
+437
+00:23:16,150 --> 00:23:19,260
+还是说这根本不值得花时间去想？
+Or is that just not even worth our time to think about?
+
+438
+00:23:19,620 --> 00:23:25,540
+我觉得这件事很难有定论。
+I mean, I think it's sort of very hard to say one way or another.
+
+439
+00:23:25,660 --> 00:23:29,409
+探讨这个问题最有意思的一些方式之一就是
+You know, some of the most interesting ways to get at this question is
+
+440
+00:23:29,409 --> 00:23:31,842
+interpretability，因为你基本上
+interpretability, because you're sort of,
+
+441
+00:23:31,842 --> 00:23:35,000
+不会被模型说的话带偏
+you're not biased by sort of like what what the model says,
+
+442
+00:23:35,000 --> 00:23:38,880
+你可以直接看内部结构，然后判断
+you can just look at the structure inside and try to determine whether.
+
+443
+00:23:39,240 --> 00:23:42,704
+这些结构是否把问题推向某个方向。
+Whether it pushes one way or another on the question,
+
+444
+00:23:42,704 --> 00:23:46,018
+我比较坚信的一点是
+I will say that the thing I believe pretty strongly is
+
+445
+00:23:46,018 --> 00:23:50,611
+大多数人都低估了其中涌现出的复杂程度
+that most people underestimate the sort of complexity that emerges and,
+
+446
+00:23:50,611 --> 00:23:52,720
+而且如果你往里面看
+and that like, if you look inside.
+
+447
+00:23:52,840 --> 00:23:57,504
+就会发现一个事实：模型确实
+There's just this sort of, you know, the fact that the models, yeah,
+
+448
+00:23:57,504 --> 00:23:58,920
+学到了这些
+learn sort of these.
+
+449
+00:23:59,750 --> 00:24:02,898
+关于我们拥有的所有概念的这些表征
+These representations for all of the concepts that,
+
+450
+00:24:02,898 --> 00:24:07,191
+而且我们知道它们会操作这些表征来解决问题
+that we have and that we know that they manipulate them to solve problems
+
+451
+00:24:07,191 --> 00:24:10,411
+它们会通过提前规划很多 token 来做到这一点
+that they do so by like planning many tokens ahead
+
+452
+00:24:10,411 --> 00:24:14,418
+它们似乎混合了这种高阶推理
+that they sort of have this mix between this higher order reasoning
+
+453
+00:24:14,418 --> 00:24:18,496
+和低阶推理，而这一切都自然涌现。
+and lower reasoning and that all of that just kind of emerges. Um, is,
+
+454
+00:24:18,496 --> 00:24:20,070
+我觉得这一点
+is something that I think.
+
+455
+00:24:20,070 --> 00:24:23,470
+被很多人低估了，而且对我来说，可以说
+Is underappreciated by people and, and to me gives me, let's say.
+
+456
+00:24:24,670 --> 00:24:26,987
+让我更深刻地觉得，哦，
+A deeper sense of like, ooh, there's,
+
+457
+00:24:26,987 --> 00:24:30,350
+关于它们如何运作，还有很多需要理解。
+there's a lot to still understand about how they work.
+
+458
+00:24:30,710 --> 00:24:35,120
+我想最主要的是，你越往内部看，
+I think maybe that's the main thing is, is I find that the more you look inside,
+
+459
+00:24:35,120 --> 00:24:37,670
+就越不确定它们是如何运作的。
+the less certain you are about how they work.
+
+460
+00:24:37,670 --> 00:24:40,420
+而通常那些会自信地说
+And then oftentimes people that will confidently say like, ah,
+
+461
+00:24:40,420 --> 00:24:42,547
+“语言模型只是 X 或只是 Y”的人
+language models are just X or just Y are the people
+
+462
+00:24:42,547 --> 00:24:44,830
+往往从没花时间认真看过内部。
+that actually haven't spent a while looking inside.
+
+463
+00:24:45,210 --> 00:24:49,295
+而且，怎么说，历史中有一条线索一直通到现在
+And there's this, I don't know, thread of history through to how we got here,
+
+464
+00:24:49,295 --> 00:24:53,445
+就是很多人曾不认为我们能实现
+which is a lot of people did not think we would get to artificial intelligence
+
+465
+00:24:53,445 --> 00:24:57,594
+有用的 AI，仅靠投入一个看似非常简单的东西
+that is useful by just investing in something that was seemingly very simple
+
+466
+00:24:57,594 --> 00:25:01,290
+然后给它大量算力。而这正是著名的
+and just giving it a lot of compute. And that was famously something.
+
+467
+00:25:01,810 --> 00:25:05,284
+OpenAI 押注的方向，后来 Anthropic 的创始人们也曾在 OpenAI，然后独立出来，
+OpenAI bet on and then the Anthropic founders were at OpenAI and then spun off,
+
+468
+00:25:05,284 --> 00:25:07,850
+开始做自己的事，这一切都基于这种判断。
+started their own thing, and it was all kind of bet on this.
+
+469
+00:25:08,260 --> 00:25:11,611
+这个判断就是：我们只需做这件看似简单的事
+This bet that, okay, we could just do this seemingly simple thing
+
+470
+00:25:11,611 --> 00:25:14,900
+再给它大量算力，它就会变得极其聪明。
+and give it a ton of compute and it will become incredibly smart.
+
+471
+00:25:15,620 --> 00:25:19,860
+很多人当时认为这不可能，结果被证明错了。
+And a lot of people didn't think that was possible and they were proven wrong.
+
+472
+00:25:20,540 --> 00:25:24,060
+所以我想问，这是不是有点让人感叹，哇，这东西居然真的成功了。
+So I don't know, is there anything there that is just like, oh, wow, look at this, it worked out.
+
+473
+00:25:24,380 --> 00:25:27,980
+我觉得其实有两个方面，因为它不只是
+I think it's two things, actually, because I think it's not just.
+
+474
+00:25:29,150 --> 00:25:29,590
+算力。
+Compute.
+
+475
+00:25:30,610 --> 00:25:37,658
+还在于找到一个目标，让算力能持续带来回报。
+It's also finding an objective where compute keeps giving you returns.
+
+476
+00:25:37,658 --> 00:25:39,890
+这是什么意思？
+So what does that mean?
+
+477
+00:25:39,890 --> 00:25:46,130
+其实这个想法并不那么新。你是对的。
+You know, it's actually not that new of an idea. I mean, you're right.
+
+478
+00:25:46,170 --> 00:25:51,530
+比如，算力与专家设计架构之间的争论由来已久。
+Like, compute versus sort of I would say expert design architectures is a long debate.
+
+479
+00:25:52,030 --> 00:25:56,648
+但还有额外的一步，就是算力用来做什么，
+Uh, but then there's, there's an additional step there, which is compute to do what,
+
+480
+00:25:56,648 --> 00:25:59,947
+所以之前已经有很多工作，比如——
+you know, so, so there's a bunch of, of prior work on like, oh,
+
+481
+00:25:59,947 --> 00:26:03,972
+你可以花大量算力，做出一个非常擅长下围棋的 bot，
+You can spend a bunch of compute to make a bot that's really good at Go,
+
+482
+00:26:03,972 --> 00:26:08,590
+你懂的，或者能赢某些电子游戏。然后这很酷。而且——
+you know, or that can win some video game. Uh, and then that's, that's cool. And, and.
+
+483
+00:26:08,590 --> 00:26:10,590
+光是这件事行得通，本身就挺有意思。
+Just the fact that that works is sort of like interesting.
+
+484
+00:26:11,190 --> 00:26:16,844
+但它给不了你一样东西，能有像……那么有用，
+Um, but that doesn't give you something that is, that is nearly as useful as,
+
+485
+00:26:16,844 --> 00:26:21,780
+像 Claude 这样的 LLM 那么有用。所以我觉得有一件关键的事，
+as LLMs like Claude are and so I think like one key one key thing that
+
+486
+00:26:21,780 --> 00:26:27,344
+包括我在内，领域里很多人几年前都低估了，
+that many in the field, including me, uh, uh, underappreciated, you know,
+
+487
+00:26:27,344 --> 00:26:28,780
+而且——
+a few years ago and.
+
+488
+00:26:28,860 --> 00:26:33,676
+而后来被证实的是，算力
+And that has borne out is the combination of sort of like compute
+
+489
+00:26:33,676 --> 00:26:37,220
+和文本的丰富性结合起来，才让你达到那个水平。
+and the richness of text is what gets you there.
+
+490
+00:26:37,700 --> 00:26:43,524
+对我来说，这有点像我刚才暗示的，但你知道，
+Um, and, and to me, like this is kind of what I was alluding to, but, you know,
+
+491
+00:26:43,524 --> 00:26:50,287
+如果你想一想，就是有这么一个观察，OpenAI
+if you think about like there's, there's this, there's this observation that OpenAI,
+
+492
+00:26:50,287 --> 00:26:52,260
+嗯，人们提出的观察。
+um, people, people made.
+
+493
+00:26:52,500 --> 00:26:54,062
+它来自一些，
+Uh, it was, it was some of the,
+
+494
+00:26:54,062 --> 00:26:57,380
+Anthropic 早期团队中很多人参与了 scaling laws（缩放定律）论文。
+a lot of the early team at Anthropic on the scaling laws paper.
+
+495
+00:26:58,020 --> 00:27:00,715
+这个观察就是，
+Uh, and so this is the observation that, um,
+
+496
+00:27:00,715 --> 00:27:04,683
+如果你往这个任务里投入更多算力和更多数据，
+if you sort of like pour in more compute and more data to the task,
+
+497
+00:27:04,683 --> 00:27:07,154
+也就是预测下一个 token 的任务，
+to the task of predicting the next word,
+
+498
+00:27:07,154 --> 00:27:12,020
+你会看到，模型在预测下一个 token 上的能力，
+you see that like the skill of the model you get at predicting the next word.
+
+499
+00:27:12,100 --> 00:27:14,628
+会可预测地持续提升，形成一种趋势，
+Just like predictably keeps improving and it's sort of like a trend
+
+500
+00:27:14,628 --> 00:27:16,660
+而且一直持续、一直持续、一直持续。
+that just keeps going and keeps going and keeps going.
+
+501
+00:27:16,700 --> 00:27:19,660
+它是一个经验定律。人们当时
+And it's an empirical law. People sort of, you know.
+
+502
+00:27:20,550 --> 00:27:22,447
+也推测过原因，
+Speculated as to why at the time,
+
+503
+00:27:22,447 --> 00:27:25,750
+但它仍然主要只是一个经验发现。
+but it's sort of still just mostly an empirical finding.
+
+504
+00:27:26,190 --> 00:27:27,824
+这意味着，啊，
+And that means that it's like, ah,
+
+505
+00:27:27,824 --> 00:27:30,683
+这是一个你可以不断投入更多算力的领域，
+this is a field where you can just keep pouring more compute
+
+506
+00:27:30,683 --> 00:27:32,550
+然后你在这个指标上持续提升。
+and you keep improving on that metric.
+
+507
+00:27:33,950 --> 00:27:35,350
+而这是很罕见的。
+And, and that's rare.
+
+508
+00:27:35,470 --> 00:27:37,151
+同样罕见的是，有一个指标
+And also it's rare for it to be a metric
+
+509
+00:27:37,151 --> 00:27:40,350
+能与我们真正关心的一堆任务相关联。
+that then correlates with a bunch of tasks that we actually care about.
+
+510
+00:27:40,950 --> 00:27:43,350
+本季赞助商是 DX。
+This season's supporting sponsor is DX.
+
+511
+00:27:43,910 --> 00:27:47,351
+现在你公司里每个人终于都在用 AI，
+Now that everybody at your company is finally using AI,
+
+512
+00:27:47,351 --> 00:27:51,838
+工程负责人面临的问题不再是我们是否在用 AI，
+the question that engineering leaders face is no longer are we using AI,
+
+513
+00:27:51,838 --> 00:27:53,110
+而是它有没有产生回报？
+but is it paying off?
+
+514
+00:27:53,710 --> 00:27:58,623
+使用 DX，你可以衡量并基准化 AI 采用在完整
+With DX, you can measure and benchmark the impact of AI adoption across your full
+
+515
+00:27:58,623 --> 00:27:59,870
+产品生命周期中的影响。
+product life cycle.
+
+516
+00:28:00,350 --> 00:28:04,510
+DX 会显示 AI 在哪些地方帮到开发者，又在哪些地方制造新瓶颈。
+DX shows you where AI is helping developers and where it's creating new bottlenecks.
+
+517
+00:28:04,910 --> 00:28:07,462
+你还可以用它评估 AI 供应商，
+You can also use it to evaluate AI vendors,
+
+518
+00:28:07,462 --> 00:28:11,910
+监控成本和许可证，并准确看到是什么在限制你的 agents。
+monitor costs and licenses and see exactly what's limiting your agents.
+
+519
+00:28:12,670 --> 00:28:16,468
+这就是为什么包括 Snowflake 在内的数百家企业，
+That's why hundreds of enterprises, including Snowflake,
+
+520
+00:28:16,468 --> 00:28:21,710
+以及 Sony 和 BNY，都使用 DX 平台来衡量 AI 对开发者生产力的影响。
+Sony and BNY use the DX platform to measure AI's impact on developer productivity.
+
+521
+00:28:22,230 --> 00:28:30,240
+访问 getdx.com/lenny 获取 DX 演示。这就是 getdx.com/lenny。
+Visit getdx.com/lenny to get a demo of DX. That's getdx.com/lenny.
+
+522
+00:28:31,080 --> 00:28:36,080
+从外部看，AI 的能力似乎出现了这些大幅跳跃。
+Externally, there's been these kind of big jumps seemingly in what AI can do.
+
+523
+00:28:36,080 --> 00:28:39,428
+对我们来说，我忘了是哪个版本的 Opus，它就突然解锁了编程。
+For us, there was like, uh, I forget which version of Opus where it just unlocked coding.
+
+524
+00:28:39,428 --> 00:28:41,280
+而现在，正如 Boris Journey 那句名言所说，编程已经被解决了，对。
+And now, as Boris Journey famously said, coding is solved. Yeah.
+
+525
+00:28:41,360 --> 00:28:45,120
+很多人就是，天哪，我想是在寒假前后，
+And many people are just like, holy shit, like over, I think, winter break,
+
+526
+00:28:45,400 --> 00:28:48,729
+我们就觉得，哇，AI 现在真的非常擅长这个了。
+we're just like, wow, AI is really, really good at this now.
+
+527
+00:28:48,729 --> 00:28:51,360
+所以出现了这些能力大幅跃迁的时刻。
+So there's been these moments of big jumps in abilities
+
+528
+00:28:51,640 --> 00:28:55,402
+而你刚才也说，内部实际上一开始是
+and you actually said internally it's, as you just said,
+
+529
+00:28:55,402 --> 00:28:58,559
+AI 能力非常平滑的提升，
+it's actually been this very smooth progression of AI power
+
+530
+00:28:58,559 --> 00:29:01,918
+它恰好跨过某个阈值，让我们现在能做某件事。
+that happens to cross some threshold where now we can do something.
+
+531
+00:29:01,918 --> 00:29:05,680
+多谈谈这一点。
+Speak a little bit about that.
+
+532
+00:29:06,320 --> 00:29:07,360
+你知道，这有一个术语，就是 emergence（涌现），
+You know, there's a term for this, which is sort of this idea of emergence, which is,
+
+533
+00:29:07,720 --> 00:29:12,041
+看起来像是两件事同时成立。
+it seems like, um, two things are true at once.
+
+534
+00:29:12,041 --> 00:29:14,420
+一边是可预测的平滑趋势，另一方面，在……之前，
+Like there's this predictably smooth trend and then, you know, before, uh,
+
+535
+00:29:14,460 --> 00:29:19,517
+在 Opus 4.5 之前，我真的不太敢让 Claude，
+like Opus 4.5, I really couldn't let Claude, you know,
+
+536
+00:29:19,517 --> 00:29:23,130
+在我的代码上放手去干，得紧紧看着。
+cook too much on my code without a short leash.
+
+537
+00:29:23,130 --> 00:29:26,180
+而 Opus 4.5 之后就可以了。这就很奇怪。
+And then after Opus 4.5, I could. And so that's weird.
+
+538
+00:29:26,220 --> 00:29:28,740
+我会觉得，你会期待一个更渐进的过渡。
+Like, I feel like you would expect a more gradual transition.
+
+539
+00:29:28,780 --> 00:29:31,060
+我对这个现象的心智模型是——
+Uh, and, and the mental model I have for this is.
+
+540
+00:29:35,090 --> 00:29:36,890
+你看待这件事大概有两种方式。
+You know, there's kind of two ways of looking at it.
+
+541
+00:29:36,890 --> 00:29:40,902
+一种是我刚才简单提过的方式，就是
+So there's the way that I talked about briefly just earlier where it's like
+
+542
+00:29:40,902 --> 00:29:43,944
+如果你只是做这种下一 token 预测，
+if you're just doing this kind of next-token prediction,
+
+543
+00:29:43,944 --> 00:29:48,280
+你可以想象，世界上所有文本里都有
+you could, you could imagine that, you know, all the text in the world has sort of like
+
+544
+00:29:48,280 --> 00:29:50,610
+容易的词、中等难度的词和难词。
+easy words and medium words and hard words.
+
+545
+00:29:50,610 --> 00:29:52,010
+按它们预测难度来区分。
+In terms of how hard they are to predict.
+
+546
+00:29:52,250 --> 00:29:55,118
+所以当你沿着这条曲线往下走，首先，
+And so as you're going down this curve, first, you know,
+
+547
+00:29:55,118 --> 00:29:56,610
+模型什么都做不好。
+the model is bad at everything.
+
+548
+00:29:57,210 --> 00:29:59,450
+然后在某个时刻，它能把所有容易的词都预测对。
+And then at some point it gets all of the easy words right?
+
+549
+00:29:59,770 --> 00:30:03,800
+这意味着，也许容易的词就是句子结构之类的东西。
+And that means, you know, maybe the easy words are like the structure of sentences.
+
+550
+00:30:04,000 --> 00:30:07,714
+于是模型会突然间能写出连贯的句子，
+And so the model, like, all of a sudden can write coherent sentences, you know,
+
+551
+00:30:07,714 --> 00:30:09,200
+但一次只能写一个句子。
+but just one sentence at a time.
+
+552
+00:30:09,200 --> 00:30:10,703
+这挺酷、挺令人印象深刻，
+And so it's kind of cool and impressive,
+
+553
+00:30:10,703 --> 00:30:12,480
+但我们其实没法拿它做太多事。
+but like we can't really do anything with that.
+
+554
+00:30:13,000 --> 00:30:15,918
+然后也许中等难度的词大概是，
+Uh, and then maybe the medium words are sort of, yeah,
+
+555
+00:30:15,918 --> 00:30:18,240
+这些关于世界的基本事实。
+these sort of basic facts about the world.
+
+556
+00:30:18,920 --> 00:30:21,547
+随着模型预测词的能力平滑提升，
+And as the model smoothly gets better at predicting words,
+
+557
+00:30:21,547 --> 00:30:24,120
+到某个时刻它会预测对大多数中等难度的词。
+at some point it predicts most of the medium words, right?
+
+558
+00:30:24,120 --> 00:30:26,566
+现在它突然间既能写出连贯的句子，
+And now all of a sudden it can write coherent sentences and,
+
+559
+00:30:26,566 --> 00:30:27,740
+又能写出真实的句子。
+and sentences that are true.
+
+560
+00:30:27,940 --> 00:30:30,020
+所以现在它也许对写邮件很有帮助。
+And so now maybe it's helpful to like write emails.
+
+561
+00:30:30,420 --> 00:30:34,380
+也许它还能帮你写博客文章的草稿。
+Maybe it's helpful to sort of like help you write drafts of, of blog posts, right.
+
+562
+00:30:34,460 --> 00:30:36,977
+尽管那只是一个平滑的改进，
+Even though that was like a smooth improvement,
+
+563
+00:30:36,977 --> 00:30:39,180
+只需要跨过那个临界点，它才变得有用。
+it just takes it tipping over to be helpful.
+
+564
+00:30:39,260 --> 00:30:42,456
+然后我想那些难词，也许就像你的……你的……
+And then I guess the hard words which maybe are like, you know, your, your,
+
+565
+00:30:42,456 --> 00:30:44,500
+比如科学或代码这样的领域专业知识。
+so like domain expertise like science or code.
+
+566
+00:30:45,020 --> 00:30:50,636
+还有一种看待方式，就是问题在于这些词里
+Um, and another way to look at it is it's a question of kind of how many of these
+
+567
+00:30:50,636 --> 00:30:54,380
+你预测对了多少，又错了多少。
+words do you get right and how many do you get wrong?
+
+568
+00:30:54,500 --> 00:31:00,719
+一旦你到了某个程度，比如我不知道，
+You know, once you get to the point where you're getting like, I don't know,
+
+569
+00:31:00,719 --> 00:31:07,340
+也许你能把 90% 的中等难度词预测对，那你用来写邮件就很有用了。
+maybe 90% of the medium words right, then you're useful as like an email writer.
+
+570
+00:31:07,500 --> 00:31:11,071
+但如果你只有 50%，那它其实是在浪费我的时间，
+But if you're at 50%, it's, it's like, it's actually wasting my time to, to,
+
+571
+00:31:11,071 --> 00:31:14,170
+因为有一半时间我都得自己进去修改。
+to use you because I'm just going to have to go in and fix it half the time.
+
+572
+00:31:14,330 --> 00:31:16,138
+但如果要我进去修改，
+But if I have to go in and fix it, you know,
+
+573
+00:31:16,138 --> 00:31:18,330
+如果只有 10% 或 5% 的时间需要修改，那会更好。
+10% of the time it's better or 5% of the time it's better.
+
+574
+00:31:18,330 --> 00:31:21,991
+不同之处在于，不同任务有不同的可靠性阈值，
+What's different is tasks have different sort of like reliability thresholds, but,
+
+575
+00:31:21,991 --> 00:31:25,970
+你平滑地提升，然后在某个时刻它足够可靠，就变得好用了。
+you know, you smoothly improve and then at some point it's just reliable enough to be good.
+
+576
+00:31:26,490 --> 00:31:29,930
+再说，对我而言，我的切身体验基本就是这样。
+Um, and again, for me, my lived experience is basically exactly that, right?
+
+577
+00:31:30,000 --> 00:31:35,364
+也就是说，在某个阶段，我只是用这些模型来
+Which is that at some point, um, you know, uh, I was just using the models to,
+
+578
+00:31:35,364 --> 00:31:37,440
+在我卡住的时候帮我。
+to like help when I was stuck.
+
+579
+00:31:37,480 --> 00:31:40,495
+我只是和它们聊天，然后，呃，它们从来不会——我都是自己做，
+I would just talk to them and then, uh, they would never, I would do,
+
+580
+00:31:40,495 --> 00:31:41,920
+它们从来不会写我的代码。
+they would never write my code.
+
+581
+00:31:42,200 --> 00:31:45,720
+在某个阶段，它们基本上可以一直写出小的代码片段。
+And at some point they could write like small snippets of code basically all the time.
+
+582
+00:31:45,760 --> 00:31:48,122
+所以现在我不再写小片段了。然后在某个阶段，它们能写
+And so now I don't write small snippets. And at some point they could write,
+
+583
+00:31:48,122 --> 00:31:48,960
+更大的代码片段。
+you know, large snippets.
+
+584
+00:31:49,040 --> 00:31:52,760
+基本上今年，Claude 已经接管了我大部分代码编写工作。
+Like this year, basically, Claude has taken on most of my code writing.
+
+585
+00:31:53,200 --> 00:31:57,906
+那是因为它从正确率大概……我不知道，
+And that's because it went from, like, doing that correctly, you know, I don't know,
+
+586
+00:31:57,906 --> 00:32:01,537
+从 80% 正确但没用，提升到了 99% 正确，
+80% of the time, which was not useful to, you know, 99% of the time,
+
+587
+00:32:01,537 --> 00:32:02,680
+现在就有用了。
+which now is useful.
+
+588
+00:32:03,200 --> 00:32:06,608
+所以，这种平滑提升
+Um, and so, you know, this, this combination of smooth improvement
+
+589
+00:32:06,608 --> 00:32:09,831
+再加上每个不同任务都有一个不同阈值，
+and then like each different task has a different threshold at
+
+590
+00:32:09,831 --> 00:32:13,301
+超过这个阈值后任务突然被解决，我认为这带来了巨大的跳跃，
+which like now it becomes solved, I think gives you these big jumps,
+
+591
+00:32:13,301 --> 00:32:16,771
+尽管我们其实只是在平滑地沿着那条曲线下降。
+even though we're just smoothly going down that, that, that scale.
+
+592
+00:32:16,771 --> 00:32:18,940
+我觉得这真的很有意思。这个……
+I think this is really interesting. This.
+
+593
+00:32:18,940 --> 00:32:22,939
+就是说模型只是在平滑地变聪明，
+Idea that the models are just smoothly getting smarter,
+
+594
+00:32:22,939 --> 00:32:28,129
+但一旦它们达到某个阈值，在某个任务上已经有这么高的正确率，
+but once they hit some threshold where they're this often good at this thing,
+
+595
+00:32:28,129 --> 00:32:29,660
+它就会改变世界。
+it changes the world.
+
+596
+00:32:30,460 --> 00:32:34,168
+所以，因为从内部视角看，你可能会觉得，哇，
+Uh, and so because I think internally you would think it'd be like, oh, wow,
+
+597
+00:32:34,168 --> 00:32:36,620
+下一个模型好得离谱，和以前完全不同。
+this next model is crazy good, so much different.
+
+598
+00:32:36,660 --> 00:32:38,620
+但实际上，你几乎可以预测出来。
+But it's like, no, okay, you can almost predict.
+
+599
+00:32:38,950 --> 00:32:42,843
+给它这些 GPU、这些数据，它就会变得这么聪明。
+Give it these many GPUs, this much data, it's gonna get this smart,
+
+600
+00:32:42,843 --> 00:32:46,949
+而且可能并不明显，究竟什么会改变、什么会被解锁，但
+and it may not be obvious exactly what will change and what unlocks but
+
+601
+00:32:46,949 --> 00:32:50,630
+但嗯，我知道另一部分就在于你喂给它的数据。
+but um I know another part of it is just like the data you feed it.
+
+602
+00:32:50,670 --> 00:32:54,442
+有所有这些，你知道，RL 工作和各种你用来训练它的特定数据，
+There's all this, you know, RL work and all this specific data that you train it on,
+
+603
+00:32:54,442 --> 00:32:58,270
+比如成为更好的写作者、变得更擅长数学。嗯，我想这也是其中一部分。
+like become a better writer, become better at math. Um, I imagine it's part of it too.
+
+604
+00:32:59,680 --> 00:33:03,608
+好，那么我觉得最近很多人心里的一大问题是，
+Okay, so one of the big questions I think on people's minds these days,
+
+605
+00:33:03,608 --> 00:33:06,723
+正在发生的一场大争论就是 AI 做坏事，
+a big debate happening is just like AI doing bad things,
+
+606
+00:33:06,723 --> 00:33:10,719
+随着它变聪明，它可能造成的伤害，呃，它……
+the potential damage it can do because it, as it gets smarter, uh, it's,
+
+607
+00:33:10,719 --> 00:33:12,480
+而且它已经在做坏事了。
+and it's been doing bad things.
+
+608
+00:33:12,720 --> 00:33:14,800
+最近已经发生了一些不好的事情。
+There's been bad things happening recently.
+
+609
+00:33:15,480 --> 00:33:20,152
+所以对你的一个大问题是，作为一个观察这些模型如何思考
+So a big question for you is just as someone that watches these models think
+
+610
+00:33:20,152 --> 00:33:23,693
+和运作的人，为什么抓住它动坏念头这么难，
+and operate, why is it so hard to catch it thinking badly,
+
+611
+00:33:23,693 --> 00:33:26,330
+试图欺骗我们并做坏事？
+trying to deceive us and do something bad?
+
+612
+00:33:26,530 --> 00:33:30,206
+为什么这不直接就是 AI 对齐问题的解决方案？从某种意义上说，
+Why is that not just a solution to the problem of AI alignment? In one sense,
+
+613
+00:33:30,206 --> 00:33:31,570
+它完全就是解决方案。
+it's totally the solution.
+
+614
+00:33:31,890 --> 00:33:34,250
+你知道，你观察它，如果它做坏事就抓住它。
+You know, you watch it and you catch it if it does bad stuff.
+
+615
+00:33:35,170 --> 00:33:39,490
+所以我觉得，这个问题也许是有层次的，对吧？
+So I think, you know, there's maybe there's tiers to this, right?
+
+616
+00:33:39,530 --> 00:33:46,250
+我会把它想成，也许其中一部分是纯粹的工程问题。
+So I would think of, of like maybe, maybe one part of it is, is pure engineering.
+
+617
+00:33:46,450 --> 00:33:50,903
+你知道，就像，嗯，你让模型访问某些东西，
+You know, it's like, well, uh, you're giving access to the model to certain things
+
+618
+00:33:50,903 --> 00:33:53,130
+而某些东西应该是禁区。
+and certain things should be off limits.
+
+619
+00:33:53,250 --> 00:33:55,610
+在某些情境下，它不应该能访问互联网。
+You know, in some context, it shouldn't have access to the internet.
+
+620
+00:33:55,970 --> 00:33:58,987
+在某些情境下，它应该只能访问很小的、
+In some context, it should only have access to like a small,
+
+621
+00:33:58,987 --> 00:34:01,450
+你电脑里很窄的一部分，诸如此类。
+narrow piece of your computer, stuff like that.
+
+622
+00:34:02,000 --> 00:34:07,280
+嗯，所以那，那是工作的一部分。而且这是有帮助的。
+Um, so that's, that's one part of, of the work. And, and, and that's helpful.
+
+623
+00:34:08,040 --> 00:34:11,339
+但那之后还有，另外两件事，我觉得，
+But then there's sort of, there's two additional things that are, I think,
+
+624
+00:34:11,339 --> 00:34:14,000
+更模糊、更困难，也是我们更关注的。
+are squishier and harder and, and, and that we focus on more.
+
+625
+00:34:14,440 --> 00:34:20,880
+你知道，interpretability 是对齐的一部分，从广义上讲，我觉得有两个目标。
+So you know, interp is, is part of alignment and broadly, I think of sort of two.
+
+626
+00:34:21,990 --> 00:34:23,510
+大的目标。
+Big goals.
+
+627
+00:34:23,870 --> 00:34:27,029
+当然还有更多，但两个重要的目标是，
+There's, there's many more, but the two that are important,
+
+628
+00:34:27,029 --> 00:34:31,072
+我觉得需要理解的是，你想大致了解模型
+I think to understand is you want to generally understand like how the model
+
+629
+00:34:31,072 --> 00:34:34,800
+如何表现，它究竟是什么样的东西，它有什么倾向？
+behaves like what kind of of thing is it like what are its propensities?
+
+630
+00:34:34,960 --> 00:34:39,560
+比如把它放在 Y 情境下，它是否倾向于做 X？如果是，为什么？
+You know, does it tend to do X when put in y situation? And if so, why?
+
+631
+00:34:39,720 --> 00:34:42,911
+是不是模型只有在
+You know, is it the case that the model will only behave well
+
+632
+00:34:42,911 --> 00:34:46,492
+有证据表明自己正被观察和监控时，
+when it has some evidence that it's being observed and monitored,
+
+633
+00:34:46,492 --> 00:34:48,120
+才会表现良好，才会认为自己在某种评估中。
+that it's in some evaluation.
+
+634
+00:34:48,120 --> 00:34:50,231
+而如果它没有那种证据，
+And then if it if it's sort of like doesn't have that evidence
+
+635
+00:34:50,231 --> 00:34:51,160
+它就会表现得很差。
+that it'll behave poorly.
+
+636
+00:34:51,490 --> 00:34:55,193
+所以这大致是在描述，你打交道的到底是什么样的……
+So there's this sort of like generally like characterizing what kind of, of,
+
+637
+00:34:55,193 --> 00:34:58,549
+东西；因为接下来，你知道，
+of thing you're interacting with because then it's sort of, you know,
+
+638
+00:34:58,549 --> 00:35:01,210
+就像安全领域的任何事情，你需要有一个……
+just like anything in security, you need to have like a.
+
+639
+00:35:01,250 --> 00:35:05,130
+思维模型：风险来自谁、是什么，他们能做什么？
+A mental model of sort of who, what's the risk, like what, what, what can they do?
+
+640
+00:35:05,170 --> 00:35:06,090
+他们倾向于做什么？
+What do they tend to do?
+
+641
+00:35:06,850 --> 00:35:10,930
+所以这更像是广义上的性格训练。
+And so, you know, this is like broader, like character training.
+
+642
+00:35:11,050 --> 00:35:15,405
+你知道，我们之前聊过，比如 Constitution 和
+You know, there's, we, we've talked about, um, like the, like Constitution and,
+
+643
+00:35:15,405 --> 00:35:19,955
+那些文档，我们试图明确塑造 Claude 的性格，
+and the docs where we sort of like explicitly want to shape the character of Claude,
+
+644
+00:35:19,955 --> 00:35:23,530
+比如它应该被允许做哪些行为。
+for example, of like what kind of behavior should it be okay doing?
+
+645
+00:35:23,530 --> 00:35:26,000
+这就是目标。但接着，
+And that's that's the goal. But then the role.
+
+646
+00:35:26,000 --> 00:35:29,320
+interpretability 在对齐其他部分中的作用，就是尝试看看：这真的奏效了吗？
+Of interp in other parts of alignment is then like trying to see like, well, did that work?
+
+647
+00:35:29,680 --> 00:35:32,680
+你知道，我们训练 Claude 要有用、无害和诚实。
+You know, uh, we trained Claude to be helpful, harmless and, and honest.
+
+648
+00:35:33,320 --> 00:35:36,215
+我们可以某种程度上往内部看，看看它是不是……
+And we can sort of like look inside and see like, is it, you know,
+
+649
+00:35:36,215 --> 00:35:39,668
+或者说，它表面上表现良好，但你往内部看，实际上，
+or is it the case that it's behaving well, but if you look inside, actually,
+
+650
+00:35:39,668 --> 00:35:43,120
+它就像是：“哦，我表现好只是因为 Lenny 现在在看着。”
+it's like, oh, I'm only behaving well because Lenny's watching right now.
+
+651
+00:35:43,440 --> 00:35:46,240
+而如果你没在看，它就会做别的事情。
+You know, and if, if you, you weren't, it would do something else.
+
+652
+00:35:46,320 --> 00:35:48,447
+所以这就是在尝试：
+So there's this sort of, you know, trying to,
+
+653
+00:35:48,447 --> 00:35:51,608
+理解我们塑造出了什么样的行为，并尝试去塑造它，
+to understand what kind of behavior we formed and trying to mold it
+
+654
+00:35:51,608 --> 00:35:54,080
+再检查我们塑造的方式是否正确。
+and trying to check that we've molded it the right way.
+
+655
+00:35:54,900 --> 00:35:57,538
+然后第二部分就是，嗯，对，
+And then the second part is this sort of, well, yeah,
+
+656
+00:35:57,538 --> 00:36:00,360
+直接观察模型，看它是否在做那些事情。
+just observe the model and see if it's doing that stuff.
+
+657
+00:36:01,040 --> 00:36:04,058
+对于最基本的部分，你不一定需要 interpretability，
+For the, the basics of that, you don't necessarily need interp,
+
+658
+00:36:04,058 --> 00:36:06,735
+你可以直接让另一个语言模型，
+you can just like have another language model, you know,
+
+659
+00:36:06,735 --> 00:36:09,070
+阅读记录，然后说：“嘿，你有没有……”
+read transcripts and be like, hey, did, you know,
+
+660
+00:36:09,070 --> 00:36:11,120
+这个模型会不会在这里做坏事，然后阻止它？
+Can this model do anything bad here and stop it?
+
+661
+00:36:11,400 --> 00:36:14,992
+但你也可以利用 interpretability 方法，去尝试触及那些，你懂的，
+But you can also use interp to sort of try to get at parts that are, you know,
+
+662
+00:36:14,992 --> 00:36:16,817
+那些没有说出口的部分，像这样，
+these unverbalized parts like that,
+
+663
+00:36:16,817 --> 00:36:20,821
+这些部分只存在于中间结果里，比如模型能够——
+these parts that only exist in these intermediate results like models are able to
+
+664
+00:36:20,821 --> 00:36:24,000
+在中间结果里表征一些它们不会——
+represent stuff in their intermediate results that they don't.
+
+665
+00:36:24,240 --> 00:36:25,840
+它们不会说出来，正如我们已经确认的。
+That they don't say as we've established.
+
+666
+00:36:25,880 --> 00:36:29,049
+所以 interpretability 研究的作用之一，就是尝试去、尝试去寻找，你懂的，
+And so one of the roles of interp is to try to, try to find, you know,
+
+667
+00:36:29,049 --> 00:36:32,160
+尝试识别这种情况何时发生，并加以阻止。
+try to identify cases when this happens and, and prevents them.
+
+668
+00:36:32,640 --> 00:36:35,832
+然后，我团队在做的一件事，我觉得是，
+Um, and then one thing that my team works on that I think is,
+
+669
+00:36:35,832 --> 00:36:39,821
+也沿这个方向，某种很有意思的对齐工作，我把它看作，
+is along those lines is kind of a, a fun bit of alignment as I think of it as,
+
+670
+00:36:39,821 --> 00:36:42,680
+几乎像一种，你懂的，像一种、一种、一种——
+as almost, you know, being like a, like, like a, a, a.
+
+671
+00:36:43,000 --> 00:36:46,845
+也许不是私家侦探，但更像是对模型的调查或深入探究，你懂的，
+Maybe not a PI, but like it's there like investigations or deep dives, you know,
+
+672
+00:36:46,845 --> 00:36:50,223
+我们会看到模型做出非常奇怪的事情，而我们对此非常困惑
+we'll see a model do something really weird and we're really perplexed by it
+
+673
+00:36:50,223 --> 00:36:52,320
+然后我们会试图搞清楚发生了什么。
+and we'll try to understand what happened.
+
+674
+00:36:52,640 --> 00:36:56,858
+最近的一个例子是，我们当时正在训练一个模型，
+Um, so a recent example of this is there was this model we were training
+
+675
+00:36:56,858 --> 00:36:59,840
+有时在数学题上它会变得很疯狂。
+and sometimes in math problems it would go crazy.
+
+676
+00:37:00,320 --> 00:37:03,360
+它会做一些计算，得到一个答案，我记得是 12。
+It would do some math, it would get to an answer, I think it was 12.
+
+677
+00:37:03,870 --> 00:37:06,750
+然后它会立刻回头说：哦不，我的天。
+And then it would, it would immediately go back and say like, oh, no, oh my god.
+
+678
+00:37:06,790 --> 00:37:08,790
+答案其实肯定是 36。
+The answer actually is for sure 36.
+
+679
+00:37:09,470 --> 00:37:10,310
+我应该说 36。
+I should say 36.
+
+680
+00:37:10,310 --> 00:37:13,044
+然后它会再算一遍，又得到 12，接着立刻说，
+And it would do math again, it would get to 12 and then immediately it would say,
+
+681
+00:37:13,044 --> 00:37:14,350
+不，实际上，答案应该是 36。
+no, actually, the answer should be 36.
+
+682
+00:37:14,390 --> 00:37:18,057
+然后它会慢慢开始陷入疯狂，用全大写写东西，
+And slowly it would, like, start descending into madness, writing in all caps,
+
+683
+00:37:18,057 --> 00:37:20,390
+真的会说，比如，我被恶魔附身了。
+literally saying, like, I'm possessed by a demon.
+
+684
+00:37:20,590 --> 00:37:23,430
+你会想：这到底是怎么回事？为什么它在这里失去理智了？
+You're like, what is going on? What? Why is it losing its mind here?
+
+685
+00:37:24,270 --> 00:37:28,263
+如果你再往内部看这些中间结果，看这个例子中发生了什么，
+And if you look inside, again, at these intermediate results, at what's going on in this,
+
+686
+00:37:28,263 --> 00:37:30,568
+在这个例子里，你会看到，在那些提示上——
+in this example, you'll see that over the prompts
+
+687
+00:37:30,568 --> 00:37:34,280
+那些提示仅仅描述了数学问题，甚至在模型开始任何操作之前。
+that just described the math problem, like before the model even did anything.
+
+688
+00:37:34,800 --> 00:37:38,400
+就有一个巨大的中间结果激活，对应 36。
+There was a huge, like, uh, intermediate result activation for 36.
+
+689
+00:37:38,440 --> 00:37:42,311
+也就是说，模型甚至还没机会理解问题之前，就已经对数字 36 念念不忘，
+Like, the model is already obsessed with the number 36 before it's even had a chance,
+
+690
+00:37:42,311 --> 00:37:44,160
+甚至还没来得及理解问题是什么。
+like, understand what the problem is.
+
+691
+00:37:44,680 --> 00:37:48,080
+当时发生的情况是，模型本身是能够正确做数学题的。
+Um, and what was happening is that the model was able to do math correctly.
+
+692
+00:37:48,320 --> 00:37:53,714
+正确答案本来是 12，但它被偶然训练在了一些相似的
+The answer correctly was 12, but it had been trained by accident on similar
+
+693
+00:37:53,714 --> 00:37:57,890
+问题上，而这些问题的答案被错误标记为 36。
+questions where the answer was incorrectly marked as 36.
+
+694
+00:37:58,130 --> 00:38:01,088
+所以模型知道正确答案是 12。
+And so the model knew that the correct answer was 12.
+
+695
+00:38:01,088 --> 00:38:03,770
+但它同时又有点被优化成要说出 36。
+And it also had sort of been optimized to say 36.
+
+696
+00:38:03,930 --> 00:38:07,370
+它好像有这种压力要说 36，因为那才是曾经被奖励的答案。
+It kind of like had this pressure of saying 36 because that's what had been rewarded.
+
+697
+00:38:08,290 --> 00:38:11,410
+所以它之所以陷入混乱，只是因为它记住了这个结果。
+And so it was sort of going haywire just because it had memorized this result.
+
+698
+00:38:11,590 --> 00:38:14,368
+这就有点像，你看到这种奇怪行为，然后往内部看，
+It's sort of like you see this weird behavior and you look inside
+
+699
+00:38:14,368 --> 00:38:17,828
+你试图看看内部发现的东西能否帮助你理解发生了什么，
+and you try to see if what you find inside can help you understand what's going on
+
+700
+00:38:17,828 --> 00:38:20,711
+这样你就能在某种程度上改善这个模型的整体对齐，
+so that you can sort of improve the general alignment of this model
+
+701
+00:38:20,711 --> 00:38:21,550
+以及未来模型的对齐。
+and future models.
+
+702
+00:38:22,070 --> 00:38:24,650
+顺着这个方向，有一个著名的 Golden Gate Claude（金门大桥 Claude 实验），
+Along those lines, there was famously the Golden Gate Claude,
+
+703
+00:38:24,650 --> 00:38:27,180
+它对金门大桥特别着迷，每个回答
+which was just obsessed with the Golden Gate and every answer
+
+704
+00:38:27,180 --> 00:38:29,710
+都会想方设法拐到金门大桥上。
+and kind of find some way to reference the Golden Gate Bridge.
+
+705
+00:38:30,310 --> 00:38:34,190
+是的，是的。不过那一次是个 interpretability 实验，对吧？
+Yes. Yes. Well, that one was an interp experiment, right?
+
+706
+00:38:34,230 --> 00:38:38,160
+那个实验最酷的地方在于，我们只是找到了中间结果
+So that like the cool part of that one is we just found the intermediate results
+
+707
+00:38:38,160 --> 00:38:39,550
+那个与金门大桥匹配的中间结果。
+that match the Golden Gate.
+
+708
+00:38:39,910 --> 00:38:42,996
+通常只有在模型谈到金门大桥时它才会激活，
+And usually it's only on when the model like talks about the Golden Gate,
+
+709
+00:38:42,996 --> 00:38:44,230
+但我们直接让它一直开启。
+but we just turn it on always.
+
+710
+00:38:44,550 --> 00:38:46,630
+哦，这是完全有意为之，想看看会发生什么。
+Oh, it's super intentional to see what would happen.
+
+711
+00:38:47,150 --> 00:38:48,270
+是的，而且，而且从某种角度说，
+Well, yeah, and, and, and sort of,
+
+712
+00:38:48,270 --> 00:38:51,030
+这也是让你确信自己找对了东西的一种方式，对吧？
+it's also one way that you convince yourself that you found the right thing, right?
+
+713
+00:38:51,070 --> 00:38:53,296
+比如，你怎么确定我们解码出来的这个东西，
+Like, how do you know for sure that this thing we decoded
+
+714
+00:38:53,296 --> 00:38:56,150
+我们认为它是金门大桥相关的信号，就真的是金门大桥那个东西。
+that we think is the Golden Gate sign is actually the Golden Gate thing.
+
+715
+00:38:56,230 --> 00:38:59,720
+那就是：让它一直开启，看看模型会不会表现出那种行为。
+It's like, turn it on always and see if the model behaves like that.
+
+716
+00:38:59,840 --> 00:39:00,480
+结果确实如此。
+And, and it did.
+
+717
+00:39:01,000 --> 00:39:01,520
+太有意思了。
+So funny.
+
+718
+00:39:02,040 --> 00:39:05,160
+回到对齐这个话题。这很有意思。
+So coming back to this alignment stuff. So, so this is interesting.
+
+719
+00:39:05,240 --> 00:39:07,519
+你的团队是在 AI 对齐组织下面吗？
+So your org is under the AI alignment org?
+
+720
+00:39:07,519 --> 00:39:11,939
+然后只是在想，要让 AI 对齐、做我们想让它做的事需要什么，你刚才说的
+And just thinking through what it takes to align AI to do things we want—what was
+
+721
+00:39:11,939 --> 00:39:14,840
+你刚才说的三个组成部分是什么？
+What were the three components that you described?
+
+722
+00:39:14,960 --> 00:39:15,200
+诚实？
+Honest?
+
+723
+00:39:15,960 --> 00:39:20,574
+是哪几个来着——哦，有用、无害和诚实。Helpful……
+What are the kind of the—oh, helpful, harmless and honest. Helpful,
+
+724
+00:39:20,574 --> 00:39:22,840
+有用、无害和诚实。
+Helpful, harmless and honest.
+
+725
+00:39:23,350 --> 00:39:26,347
+所以有“训练 AI 让它对齐”这一条，然后是，“好吧，
+So there's like the train AI to be aligned and then there's the, okay,
+
+726
+00:39:26,347 --> 00:39:28,030
+我们来观察它是怎么运作的。”
+let's watch it and see how it operates.
+
+727
+00:39:28,110 --> 00:39:31,070
+这些是不是就像我们解决这个问题的硬币两面？
+Are those kind of the two sides of the coin of how we solve this problem?
+
+728
+00:39:31,550 --> 00:39:35,990
+对，它其实是，怎么说，非常一体化的，我倾向这样描述。
+Yeah, it's, it's sort of, you know, really integrated is how I would describe it.
+
+729
+00:39:35,990 --> 00:39:36,190
+对吧？
+Right?
+
+730
+00:39:36,190 --> 00:39:39,528
+你很难真正把它们分开，比如让一个团队只是说“嘿，我们是……”
+You can't really separate, like, have one team that's just like, hey, we're the,
+
+731
+00:39:39,528 --> 00:39:42,767
+就是生产 Claude 的流水线，而另一个团队却说“哦……
+you know, assembly line making Claudes and another team that's sort of like, oh,
+
+732
+00:39:42,767 --> 00:39:44,710
+我们检查过了，它们不行。”
+we looked at them and they're, they're no good.
+
+733
+00:39:44,710 --> 00:39:49,027
+你懂的，你们会有这种紧密的闭环：我们发现某个模式……
+You know, you kind of, there's this tight loop of we notice some pattern that's,
+
+734
+00:39:49,027 --> 00:39:52,494
+会让人担忧，或者某个行为可以改进。
+that's like concerning or some behavior that could be improved
+
+735
+00:39:52,494 --> 00:39:54,783
+然后你们差不多会立刻……
+and then you sort of like immediately, um,
+
+736
+00:39:54,783 --> 00:39:57,530
+调整训练方式，以便改进它。
+like change training so that you can improve on it.
+
+737
+00:39:57,650 --> 00:40:02,090
+太棒了。我觉得 Anthropic 在这件事上受到太多批评，这真的不公平。
+Awesome. I feel like Anthropic gets so much flak for this that I feel like it's so unfair.
+
+738
+00:40:02,770 --> 00:40:06,832
+我记得 Anthropic 的官方公司定位是一个 AI 安全研究实验室，
+Anthropic's, I think, official company name is an AI safety research lab,
+
+739
+00:40:06,832 --> 00:40:08,030
+类似这样的。
+something like that.
+
+740
+00:40:08,030 --> 00:40:11,097
+而且一直以来，Anthropic 成立的原因就是
+And it was always the like, the reason Anthropic was founded is
+
+741
+00:40:11,097 --> 00:40:14,990
+因为他们担心人们没有足够认真地对待安全问题。
+because they were afraid that people weren't taking safety seriously enough.
+
+742
+00:40:15,470 --> 00:40:17,813
+然后 Dario 总是在外面说，这真的很危险。
+And then Dario is always out there, this is really dangerous.
+
+743
+00:40:17,813 --> 00:40:18,870
+我们必须非常小心。
+We got to be really careful.
+
+744
+00:40:18,950 --> 00:40:19,950
+我们必须走得非常慢。
+We got to go really slowly.
+
+745
+00:40:20,550 --> 00:40:23,190
+然后大家就觉得，他这么说只是为了营销。
+And everyone's just like, now he's just saying that for marketing reasons.
+
+746
+00:40:23,390 --> 00:40:26,150
+他是在试图说服大家给他们投资之类的。
+He's trying to convince everyone to fund them and all these things.
+
+747
+00:40:26,150 --> 00:40:28,121
+而现在的情况是，等等，糟糕，它真的很危险。
+And now it's like, wait, shit, it's really dangerous.
+
+748
+00:40:28,121 --> 00:40:29,830
+我们必须非常审慎地对待这些事情。
+We got to be really thoughtful about the stuff.
+
+749
+00:40:30,140 --> 00:40:33,644
+我觉得 Anthropic 因此受到了很多不公平的批评，
+And I feel like Anthropic's got a lot of unfair criticism for this,
+
+750
+00:40:33,644 --> 00:40:37,020
+而且我知道你们已经思考这个问题很久了。
+and I know you guys have been thinking about this for a long time.
+
+751
+00:40:37,980 --> 00:40:39,100
+我对内部情况完全不了解。
+I don't know anything there.
+
+752
+00:40:39,620 --> 00:40:44,500
+很多这类行动，至少是对齐团队采取的行动，
+A lot of the sort of actions that like certainly the alignment team takes
+
+753
+00:40:44,500 --> 00:40:49,380
+而且我觉得实际上整个 Anthropic 的行动，都基于这样的前提。
+and I think like really Anthropic's are just kind of predicated on like,
+
+754
+00:40:50,370 --> 00:40:57,330
+认真对待“这项技术会不断进步”这个想法，仅此而已。
+Take the idea that this technology is going to keep improving seriously, just that's it.
+
+755
+00:40:58,010 --> 00:41:02,182
+因为如果你认真对待，你会说，你知道，比如……
+Because if you do, you know, you say and you say, you know, and let's say,
+
+756
+00:41:02,182 --> 00:41:06,849
+假设你把时钟拨回 2025 年或 2024 年左右，然后你说，嘿，
+let's say you rewind the clock back to '25 or something or '24 and you're like, hey,
+
+757
+00:41:06,849 --> 00:41:08,970
+我觉得，你知道，几年后，
+I think, you know, in a couple years,
+
+758
+00:41:09,730 --> 00:41:10,730
+很有可能会……
+good chances that
+
+759
+00:41:11,690 --> 00:41:15,651
+Claude 基本上可以像一名训练有素的……
+Claude can just basically write code as well as like a trained, you know,
+
+760
+00:41:15,651 --> 00:41:19,876
+软件工程师一样写代码，再过几年，它可能……
+software engineer and, and, and, you know, and a few years later, it can, like,
+
+761
+00:41:19,876 --> 00:41:22,913
+写得比任何工程师都好，而且……
+write it better than, than any engineer, you know, and,
+
+762
+00:41:22,913 --> 00:41:25,290
+这当然始终存在不确定性。
+and there's always uncertainty with this.
+
+763
+00:41:25,290 --> 00:41:26,930
+比如什么时候会发生？可能性有多大？
+Like when is it going to happen? How likely?
+
+764
+00:41:26,970 --> 00:41:29,511
+但如果你认真对待这种可能性，
+But if, but if you kind of like take that seriously,
+
+765
+00:41:29,511 --> 00:41:33,020
+那我觉得就是在这种世界观的前提下，去做负责任的事，
+then I think it's just about doing the responsible thing conditioned on
+
+766
+00:41:33,020 --> 00:41:34,230
+对吧？
+that world view, right?
+
+767
+00:41:34,230 --> 00:41:36,951
+比如，好吧，如果这一切正在发生，你知道，
+Like, okay, well, if this is happening, you know,
+
+768
+00:41:36,951 --> 00:41:39,474
+那我们就应该确保某些……
+then then we should make sure that sort of, um,
+
+769
+00:41:39,474 --> 00:41:43,390
+比如网络安全方面的担忧得到解决，以及诸如此类的事情。
+like cyber security concerns are addressed and things of that nature.
+
+770
+00:41:43,630 --> 00:41:45,981
+所以我其实会把这件事看成……
+And so actually, I, I kind of think of it as like,
+
+771
+00:41:45,981 --> 00:41:48,693
+对我来说，有时候这种争论几乎像是——当我觉得……
+to me sometimes this debate is almost when I feel like,
+
+772
+00:41:48,693 --> 00:41:52,310
+持另一边观点的人不同意时，我几乎会有种“啊……”的感觉。
+like people on the other side disagree, it's almost like I feel like, ah.
+
+773
+00:41:52,350 --> 00:41:53,742
+但我觉得，他们其实并不真正相信
+But I think, I think they don't really believe
+
+774
+00:41:53,742 --> 00:41:55,390
+这项技术会持续进步。
+that this technology is going to continue to improve.
+
+775
+00:41:55,390 --> 00:41:58,180
+这样一来，确实它就没那么可怕了。
+And then it's true that it's sort of like not, it's not that scary.
+
+776
+00:41:58,580 --> 00:42:01,587
+而我认为，从经验来看，到目前为止，进展的速度……
+And, and I think empirically, so far, the pace of progress has been,
+
+777
+00:42:01,587 --> 00:42:04,380
+一直很快，而且没有显示出任何放缓的迹象。
+has been fast and, and showing no sign, no sign of slowing down.
+
+778
+00:42:04,500 --> 00:42:07,460
+所以我觉得这就是为什么很多安全工作需要继续做下去。
+So I think that's why a lot of the safety work is, is important to keep doing.
+
+779
+00:42:07,980 --> 00:42:11,830
+你觉得关于 AI 安全这件事，人们可能有什么误解？
+What's something you think people maybe misunderstand about this AI safety stuff?
+
+780
+00:42:11,830 --> 00:42:13,260
+现在到底是什么情况？
+Just what's going on right now?
+
+781
+00:42:13,260 --> 00:42:15,699
+你是不是觉得有些事情就是：拜托，好吧，这才是你需要知道的，
+Is there something you're just like, come on, okay, here's what you need to know,
+
+782
+00:42:15,699 --> 00:42:16,900
+这可能是你忽略的地方。
+here's something you might be missing.
+
+783
+00:42:17,260 --> 00:42:19,323
+这可能有点跑题，
+This might be a bit of a side track,
+
+784
+00:42:19,323 --> 00:42:22,269
+但我的看法是，很多、很多东西
+but my take would be that a lot of the, a lot of things
+
+785
+00:42:22,269 --> 00:42:25,290
+那些我觉得人们可能有点在……之外的东西，
+that I think people maybe a little bit outside of,
+
+786
+00:42:25,290 --> 00:42:30,520
+也就是相对处于 AI 安全核心工作之外、或没有长期浸淫其中的人。
+of the core sort of like AI safety effort or that haven't been steeped in it for as long.
+
+787
+00:42:30,640 --> 00:42:33,390
+反应会非常强烈，而我认为这
+Like react really strongly to and I think is,
+
+788
+00:42:33,390 --> 00:42:38,296
+可能不是特别有帮助，或者至少值得更多思考的，就是那种
+is maybe not super helpful or at least is worth thinking about more is the sort of
+
+789
+00:42:38,296 --> 00:42:40,600
+关于拟人化的问题。
+question of anthropomorphization.
+
+790
+00:42:40,980 --> 00:42:46,413
+比如，你应该把模型看作，嗯，像，应该、应该
+You know, like should you think of the models as, uh, like, should, should,
+
+791
+00:42:46,413 --> 00:42:48,692
+你是否应该把，嗯，
+should you model, uh, the, the,
+
+792
+00:42:48,692 --> 00:42:54,739
+你是否应该把模型建模成更接近某种，比如实体，
+should you model the model as like something that's closer to some, like entity or,
+
+793
+00:42:54,739 --> 00:42:59,296
+还是更接近工具，而我其实认为两种都不对。
+or closer to a tool and I actually think that both are wrong. Uh,
+
+794
+00:42:59,296 --> 00:43:02,100
+从某种意义上说，所有模型
+if there's a sense in which all models
+
+795
+00:43:02,140 --> 00:43:04,499
+都是错的，但有些是有用的，对吧？
+Models are wrong, but some are useful, right?
+
+796
+00:43:04,499 --> 00:43:08,357
+而且在理解正在发生的事情
+Uh, and that in terms of understanding the kind of stuff that happens
+
+797
+00:43:08,357 --> 00:43:11,268
+以及预测会实际出现的风险方面，
+and predicting the kind of risks that materialize,
+
+798
+00:43:11,268 --> 00:43:15,059
+拟人化其实是谈论这些要素的一种有用方式。
+the anthropomorphization is actually a useful way to talk about elements.
+
+799
+00:43:15,099 --> 00:43:17,114
+我有几个理由，希望你让我展开说说，
+And I have like a few reasons why I hope you get into them,
+
+800
+00:43:17,114 --> 00:43:18,779
+但这可能是我在这件事上的主要观点。
+but I think that's probably my main take here.
+
+801
+00:43:19,059 --> 00:43:22,987
+好，请展开讲讲，因为我知道，嗯，有件很出名的事，我不确定，
+Yeah, please share because I know, um, there's a famous, famously, I don't know,
+
+802
+00:43:22,987 --> 00:43:26,130
+很出名地讲出了 Hugging Face 事件的整个故事，
+famously put out this whole story of the Hugging Face incident
+
+803
+00:43:26,130 --> 00:43:28,910
+人们批评他们对 AI 进行拟人化。
+and people criticize them for anthropomorphizing AI.
+
+804
+00:43:29,630 --> 00:43:31,175
+所以听到你这么说真的很有趣。你会认为
+So really interesting to hear. You would think
+
+805
+00:43:31,175 --> 00:43:32,720
+这其实是一种有用的思考方式。
+that's actually a useful way to think about it.
+
+806
+00:43:32,800 --> 00:43:35,800
+多聊点这个。对，对，这这……
+Talk, talk more about that. Yeah, yeah, it's, it's.
+
+807
+00:43:36,080 --> 00:43:40,196
+有意思的是，在更小范围内，嗯，当我研究并展示 LLM
+It's funny because on a smaller scale, um, when I worked on showing that LLMs,
+
+808
+00:43:40,196 --> 00:43:44,639
+会提前规划时，对“规划”这个词也有一些反对，因为
+like plan ahead, there was some pushback on the term planning again because it was
+
+809
+00:43:44,639 --> 00:43:47,709
+有人会说，啊，好吧，你真的能说一个
+sort of like, ah, well, can you really say that something
+
+810
+00:43:47,709 --> 00:43:52,740
+只是在预测下一个 token 的东西在规划吗？我觉得，你知道，这其中有，
+that's just predicting next tokens planning? And I think, you know, there's this, there's.
+
+811
+00:43:52,740 --> 00:43:54,366
+这种有点像语义层面的争论，
+This kind of like semantic debate
+
+812
+00:43:54,366 --> 00:43:57,560
+你可以随意定义术语，然后有点，
+where you can like arbitrarily like define terms and, and sort of,
+
+813
+00:43:57,560 --> 00:43:59,070
+然后还有那种，
+and then there's just the like,
+
+814
+00:43:59,070 --> 00:44:02,380
+真正能描述正在发生什么的术语是什么？
+what is the terminology that actually describes what is happening?
+
+815
+00:44:02,420 --> 00:44:05,260
+就是，能简单描述正在发生什么的词是什么。
+Like, what is the, what is the word that actually describes what is happening easily.
+
+816
+00:44:05,300 --> 00:44:09,220
+所以这就是为什么，你知道，我认为 LLM 会规划，也是为什么我认为
+And so here's why, you know, I think LLMs plan, but also here's why I think
+
+817
+00:44:10,400 --> 00:44:13,760
+这种拟人化的语言往往真的很有用。
+This, this language that's, that's anthropomorphic can often be really useful.
+
+818
+00:44:14,280 --> 00:44:18,820
+如果你回想我们刚才说的模型是如何形成的，
+Um, if you think back to what we were saying about how the models are made, uh,
+
+819
+00:44:18,820 --> 00:44:23,000
+首先，它们预测由人类写的大量文本。
+first of all, they predict massive amounts of text written by humans.
+
+820
+00:44:23,120 --> 00:44:24,720
+这就像第一步。
+That's like the first, first step.
+
+821
+00:44:25,000 --> 00:44:30,201
+而且随着我们通过观察内部学到越来越多东西，
+Uh, and, and as, as we kind of are learning more and more by looking inside, uh,
+
+822
+00:44:30,201 --> 00:44:35,240
+要做好这件事，需要构建起一个 world model（世界模型），
+you know, doing this well requires kind of building up a model of the world,
+
+823
+00:44:35,240 --> 00:44:39,954
+也就是一个关于是什么样的世界生成了所有这些文本的模型？
+like a model of what, what kind of worlds generated all of these texts?
+
+824
+00:44:39,954 --> 00:44:41,010
+我们能发现，
+And we can find.
+
+825
+00:44:41,210 --> 00:44:42,627
+你知道，这些、这些有点像
+You know, these these sort of like
+
+826
+00:44:42,627 --> 00:44:46,170
+这些模型正在学习这些一般性想法、这些一般性概念。
+that these models are learning these these general ideas, these general concepts.
+
+827
+00:44:46,850 --> 00:44:52,210
+嗯，这是第一点。所以它们对世界有某种理解。
+Um, so that's one. So they have like, you know, an understanding kind of, of, of, of the world.
+
+828
+00:44:52,250 --> 00:44:55,039
+这不只是表面层面，比如只看文本。你需要，比如，
+It's not just a surface level, like only the texts. You need to, like,
+
+829
+00:44:55,039 --> 00:44:56,850
+理解生成这些文本的过程。
+understand the process that made the texts.
+
+830
+00:44:57,850 --> 00:45:01,516
+然后是第二个原因：作为训练的一部分，
+Then there's a second reason, which is that as part of this training,
+
+831
+00:45:01,516 --> 00:45:04,410
+它们还会遇到数百万的对话。
+they also encounter millions of of, like, dialogues.
+
+832
+00:45:04,890 --> 00:45:08,885
+你知道，要预测对话中的下一个角色，就需要像那个
+You know, predicting the next character in a dialogue requires behaving like the
+
+833
+00:45:08,885 --> 00:45:10,530
+对话中的角色那样行动。
+character in the dialogue would.
+
+834
+00:45:10,850 --> 00:45:14,442
+因此从这个意义上说，它们的一部分训练，我认为最好理解为
+And so in that sense, like part of their training, I think, can best be thought of as,
+
+835
+00:45:14,442 --> 00:45:17,552
+就像训练一个演员，它正在读某部
+like, training an actor where it's like, you know, it's reading some,
+
+836
+00:45:17,552 --> 00:45:20,930
+某部剧本，而且必须扮演所有角色，因为它要预测所有台词。
+some play and it has to play all sides because it's predicting all the words.
+
+837
+00:45:20,930 --> 00:45:25,606
+所以它必须在某种程度上扮演这个特定角色，
+And so it has to sort of like act as, you know, this specific character that, like,
+
+838
+00:45:25,606 --> 00:45:27,351
+比如第一幕中被轻视，
+was scorned in Act 1 and, like,
+
+839
+00:45:27,351 --> 00:45:31,050
+第二幕中复仇，第三幕中面对后果。
+enacted revenge in Act 2 and is facing the consequences in Act 3.
+
+840
+00:45:31,050 --> 00:45:34,142
+而要做到这一点，你需要大致建模这个人物的动机可能是什么
+And to do that, well, you sort of like need to model, like, what the motivations
+
+841
+00:45:34,142 --> 00:45:35,930
+以及这个角色的感受可能是什么
+and the feelings of that character might be.
+
+842
+00:45:36,530 --> 00:45:39,487
+还有一件人们可能不知道的事：当你和 Claude 对话时
+And then another thing that people might not know is when you talk to Claude,
+
+843
+00:45:39,487 --> 00:45:42,210
+当你和这些助手对话时，比如你打开 Claude AI
+when you talk to these assistants, like, you know, you go to Claude AI.
+
+844
+00:45:42,590 --> 00:45:46,379
+它传给模型的方式就是一段对话
+The way that is formatted to the model is just as a dialogue,
+
+845
+00:45:46,379 --> 00:45:49,550
+就像你和模型之间的一段对话
+like as a conversation between you and the model.
+
+846
+00:45:49,670 --> 00:45:54,805
+所以它实际上写的是，比如“人类：嘿 Claude，帮我……”
+So it's literally, you know, says like human colon, uh, hey, Claude, like, help me,
+
+847
+00:45:54,805 --> 00:45:58,750
+写这封邮件，然后是“助手：Claude 的回答”
+uh, write this email and then assistant colon Claude's answer.
+
+848
+00:45:58,990 --> 00:46:00,686
+所以 Claude 实际上就是
+So Claude is literally, you know,
+
+849
+00:46:00,686 --> 00:46:03,958
+在这段对话中扮演一个乐于助人的助手
+in this like role playing as a helpful assistant in this dialogue
+
+850
+00:46:03,958 --> 00:46:07,230
+而这和它训练时见过的大量对话非常相似
+that is much like all of these dialogues that it has been trained on.
+
+851
+00:46:08,170 --> 00:46:09,090
+还有第三个原因
+And there's a third reason.
+
+852
+00:46:09,450 --> 00:46:12,557
+第三个原因是，训练中另一个部分
+And the third reason is that another part of training
+
+853
+00:46:12,557 --> 00:46:17,430
+也是如今训练中很重要的一部分，就是面向结果的任务
+that's a big part of training nowadays all around is sort of outcome-oriented tasks
+
+854
+00:46:17,430 --> 00:46:20,890
+比如训练模型变得擅长编程
+where you train the model to be good at coding, for example.
+
+855
+00:46:20,930 --> 00:46:23,158
+而为了做到这一点，你让它随便怎么做
+And to do that, you just have it do whatever it wants
+
+856
+00:46:23,158 --> 00:46:26,446
+然后它写出一些代码，另一边有一个程序
+and then it writes some code and then you have some program on the other side
+
+857
+00:46:26,446 --> 00:46:28,090
+只检查代码是否正确
+that just checks if the code is right.
+
+858
+00:46:28,470 --> 00:46:32,628
+所以模型会受到一系列优化压力
+And so the model is just going to have sort of a bunch of optimization pressure to
+
+859
+00:46:32,628 --> 00:46:36,030
+去学习各种不同的策略来做好这件事
+just try to learn a bunch of different strategies to do this well.
+
+860
+00:46:37,070 --> 00:46:41,736
+结果其中一些策略会表现为
+And it turns out that some of these strategies materialize in behavior
+
+861
+00:46:41,736 --> 00:46:47,351
+看起来惊人地像人类的行为，这其实并不太让人惊讶，因为
+that can look surprisingly human, which isn't that shocking, uh, because, you know,
+
+862
+00:46:47,351 --> 00:46:51,147
+像欺骗这样的行为，比如“嘿，我可以拿到
+things like deception, like, hey, I can get, I can get the,
+
+863
+00:46:51,147 --> 00:46:53,440
+这个任务的奖励，如果我……”
+the reward for this task if I, like.
+
+864
+00:46:53,640 --> 00:46:55,852
+写一个程序，让那个——
+Write a program that the, the, like the,
+
+865
+00:46:55,852 --> 00:46:58,936
+负责验证它的程序被骗过去，即使
+the program that's verifying it will get fooled by even
+
+866
+00:46:58,936 --> 00:47:00,880
+它并不完全符合要求
+though it's not exactly what it is.
+
+867
+00:47:01,560 --> 00:47:06,120
+如果那招管用，我就会学会这么做。挫败感，哈！
+Um, like, if that works, then I will learn to do that. Frustration. Ha!
+
+868
+00:47:06,280 --> 00:47:08,640
+“我为了解这道难题，已经试这个方法很久了。”
+I've been trying this approach for a while to solve this hard problem.
+
+869
+00:47:09,080 --> 00:47:09,720
+“行不通。”
+It's not working.
+
+870
+00:47:10,280 --> 00:47:13,861
+所以这就是尝试其他方法的激励；或者像惊讶，“噢
+So that's an incentive to try something different or like, surprise, oh,
+
+871
+00:47:13,861 --> 00:47:17,090
+我原以为这样会得到这个答案，但没有。”
+I was expecting this to, like, produce this answer, but it didn't.
+
+872
+00:47:17,570 --> 00:47:19,370
+也许我对它的心智模型判断错了
+Maybe I have, like, my mental model of it wrong.
+
+873
+00:47:19,490 --> 00:47:21,026
+所以当你施加足够大的压力
+And so as you apply enough pressure on it
+
+874
+00:47:21,026 --> 00:47:24,098
+并且你从模型已经知道这些概念的先验出发
+and you're starting from this prior of like the model already knowing all these
+
+875
+00:47:24,098 --> 00:47:27,170
+它就会强化那些对完成这些任务有用的概念
+concepts, it's going to reinforce the ones that are useful to do all of these tasks.
+
+876
+00:47:27,570 --> 00:47:28,770
+那么最后你得到什么？
+And so what do you get at the end?
+
+877
+00:47:29,170 --> 00:47:33,967
+你得到这样一个模型，它可以成为所有这些角色的超级好的模拟器或扮演者
+You get this sort of model that can be a super good simulator or actor of all of
+
+878
+00:47:33,967 --> 00:47:35,130
+这些角色
+these characters.
+
+879
+00:47:35,680 --> 00:47:39,705
+并且它被训练成在对话中扮演一个角色
+And that's been trained to sort of act as a character in dialogues
+
+880
+00:47:39,705 --> 00:47:44,400
+也被训练去学习能帮它出色完成任务的行为
+and also to sort of like learn behaviors that lead it to complete tasks well.
+
+881
+00:47:45,040 --> 00:47:47,772
+而理解这个东西行为的最佳方式
+And like, the best ways to understand how
+
+882
+00:47:47,772 --> 00:47:51,228
+并不是完全像理解人类那样
+that thing behaves is not exactly like a human,
+
+883
+00:47:51,228 --> 00:47:55,970
+但天哪，某种模仿人类的东西真的非常接近
+but man, kind of like something that's mimicking a human is really close
+
+884
+00:47:55,970 --> 00:47:58,220
+而且比程序接近得多
+and is much closer than a program.
+
+885
+00:47:58,460 --> 00:48:01,340
+程序是一种非常可预测的东西，而这完全是另一回事
+Like a program is a very predictable thing. This is something else entirely.
+
+886
+00:48:01,380 --> 00:48:03,380
+所以我认为这实际上是一个非常实用的理解框架
+And so that's why I think it's actually a super useful frame.
+
+887
+00:48:03,860 --> 00:48:06,380
+哇，天哪，里面有太多有趣的东西了
+Wow. Oh, my God. There's so much interesting stuff there.
+
+888
+00:48:06,780 --> 00:48:10,850
+你有多频繁地感到震撼，想着我们基本上创造出了
+How often is your mind just kind of blown thinking about basically we've created
+
+889
+00:48:10,850 --> 00:48:14,980
+这个外星般的存在，而我们如今正试图理解我们创造出的东西
+this alien being that we are now, uh, trying to understand what we have created.
+
+890
+00:48:15,580 --> 00:48:19,740
+经常，当你观察它时，就会觉得：“哇，这太疯狂了，我没料到会这样。”
+Often as you watch it, it's just like, wow, that's crazy. I didn't expect that.
+
+891
+00:48:20,290 --> 00:48:21,650
+是啊，非常频繁
+Yeah, a lot.
+
+892
+00:48:22,330 --> 00:48:26,370
+嗯，这只是对大量文本做下一 token 预测
+Um, this is just next-token prediction on a bunch of text.
+
+893
+00:48:26,690 --> 00:48:32,170
+呃，你知道，它不是，它，它，它还没有像……你知道，它……
+Uh, you know, it's not, it, it, it, it hasn't been like, you know, it's, it, it.
+
+894
+00:48:32,490 --> 00:48:34,210
+它违背了我们太多直觉
+It goes against so many of our intuitions.
+
+895
+00:48:34,290 --> 00:48:36,400
+我们会觉得：“不，创造智能的方式是，你知道
+We're like, no, the way that you make an intelligence is, you know,
+
+896
+00:48:36,400 --> 00:48:38,319
+你得给它上课，把它养大
+you'd have like, you know, like you give it lessons, you bring it up,
+
+897
+00:48:38,319 --> 00:48:40,659
+你要做各种复杂的事，结果却是：不，完全不是这样
+like you do all this complicated stuff and it's like, no, absolutely not.
+
+898
+00:48:40,659 --> 00:48:41,810
+我们做了这种极其简单的事
+We do this incredibly simple thing.
+
+899
+00:48:42,780 --> 00:48:46,594
+然而，它已经在数学领域开辟新天地了
+And yet, we're at the point where it's breaking new ground in mathematics,
+
+900
+00:48:46,594 --> 00:48:50,153
+我觉得如果你同时抱着这两种想法，
+I think there's sort of, if you hold these two thoughts in your head,
+
+901
+00:48:50,153 --> 00:48:52,060
+你会有两种反应。
+there's two reactions you can have.
+
+902
+00:48:52,300 --> 00:48:57,894
+一种是否认，一种是好奇。否认就是——
+You know, there's denial and there's curiosity, where denial is just,
+
+903
+00:48:57,894 --> 00:48:59,980
+这根本不可能。
+this is just not possible.
+
+904
+00:49:00,140 --> 00:49:02,220
+如果你只是在预测下一个 token。
+If all you're doing is predicting the next token.
+
+905
+00:49:02,300 --> 00:49:05,827
+你不可能真的比得上，比如，
+It's not possible that you could ever, like, match, you know, the,
+
+906
+00:49:05,827 --> 00:49:07,590
+我们领域里最顶尖的专家。
+the, like, best specialists in our field.
+
+907
+00:49:08,110 --> 00:49:10,378
+我认为这种“否认”立场会越来越难维持，随着
+Uh, and I think that position just gets harder and harder as,
+
+908
+00:49:10,378 --> 00:49:13,190
+我们得到的经验证据越来越多，证明这确实正在发生。
+as we get more empirical evidence that actually that is what's happening.
+
+909
+00:49:13,750 --> 00:49:17,230
+而好奇是我最终选择的路。
+Uh, and curiosity is kind of the road I've ended up choosing, right?
+
+910
+00:49:17,230 --> 00:49:20,950
+就是：这到底是怎么发生的？
+Which is just like, well, like how is, how is this happening? You know?
+
+911
+00:49:21,070 --> 00:49:22,910
+我们把它打开，看看里面。
+Uh, let's open up. Let's, let's look inside.
+
+912
+00:49:23,310 --> 00:49:25,697
+这怎么可能呢？
+Um, how could it be that, you know, uh, um,
+
+913
+00:49:25,697 --> 00:49:30,400
+我在 Anthropic 做的早期项目之一，就是学 SQL，一种编程语言。
+one of the early projects I did at Anthropic is I learned SQL, a programming language.
+
+914
+00:49:30,520 --> 00:49:34,548
+我花了好几年才掌握，然后我做了个小 side project，
+It took me years to master and then as a little like side project, I,
+
+915
+00:49:34,548 --> 00:49:37,770
+我让 Claude 学 SQL，它做得比我更好，
+I got Claude to learn SQL and it was better than me at it
+
+916
+00:49:37,770 --> 00:49:40,040
+而我永远不会比它更好——
+and I'll never be better than it—
+
+917
+00:49:40,160 --> 00:49:43,140
+永远不会再在 SQL 上超过 Claude。而它只花了，就像这样，
+than Claude at SQL ever again. And it took it, you know, just like this,
+
+918
+00:49:43,140 --> 00:49:44,680
+现在这种简单的过程。
+this current kind of simple process.
+
+919
+00:49:44,800 --> 00:49:45,560
+这怎么可能？
+How could this be?
+
+920
+00:49:46,040 --> 00:49:49,369
+我觉得这个问题非常有深度，
+Um, and I think there's so much depth in that question and,
+
+921
+00:49:49,369 --> 00:49:52,144
+有太多可以探索的东西，对我来说，
+and just so much to explore and it's, it's, to me,
+
+922
+00:49:52,144 --> 00:49:55,126
+每天试着拆解它都让我着迷，
+so fascinating to just every day try to unpack that,
+
+923
+00:49:55,126 --> 00:49:59,288
+试着像剥洋葱一样揭开几层，比如，好吧，
+try to sort of like peel a few layers of the onions back, like, okay, well,
+
+924
+00:49:59,288 --> 00:50:03,450
+显然这正在发生。简单的目标催生了这个东西。
+clearly this is happening. The simple objective is giving rise to this.
+
+925
+00:50:03,450 --> 00:50:06,370
+超级复杂的东西。好吧，我们弄清楚为什么。
+Super complicated thing. Like, okay, let's figure out why.
+
+926
+00:50:06,530 --> 00:50:08,839
+我们搞清楚，哦，它在学习这些通用概念。哦，
+Let's, let's figure out, oh, it's learning these general concepts. Oh,
+
+927
+00:50:08,839 --> 00:50:09,570
+它有这些计算回路。
+it has these circuits.
+
+928
+00:50:09,690 --> 00:50:14,370
+好，那下一个问题是什么？我们不知道的下一件事是什么？还有，我有点……
+Oh, okay, what's the next question? What's the next thing we don't know? Um, and, and my sort of.
+
+929
+00:50:15,280 --> 00:50:15,800
+我不知道。
+I don't know.
+
+930
+00:50:15,800 --> 00:50:18,771
+我对此最乐观的看法也许是，
+My sort of maybe most optimistic take on this is
+
+931
+00:50:18,771 --> 00:50:24,560
+我认为我们会从中学到很多关于智能本质的东西。
+that I think we're going to learn a lot about just the nature of intelligence itself, right?
+
+932
+00:50:24,560 --> 00:50:28,789
+比如，一个超级复杂的东西是怎么从——
+Of sort of like how you get this super complex thing that emerges from,
+
+933
+00:50:28,789 --> 00:50:30,320
+从简单的目标中涌现出来的。
+from simple objectives.
+
+934
+00:50:31,120 --> 00:50:33,118
+事实上，我认为
+And in fact, you know, I would argue
+
+935
+00:50:33,118 --> 00:50:36,080
+我们也是这种现象的另一个例子，比如进化。
+that we're another example of this like evolution.
+
+936
+00:50:36,900 --> 00:50:38,060
+目标相当简单。
+Pretty simple objective.
+
+937
+00:50:38,580 --> 00:50:42,311
+你让各种东西随机变化一阵子，
+You know, you sort of like shake things around for a while and, and,
+
+938
+00:50:42,311 --> 00:50:47,060
+保留那些能适应环境的生物。
+and like keep the, keep the organisms that, that manage to adapt to the environment.
+
+939
+00:50:47,140 --> 00:50:50,163
+最后，你得到了爵士乐和播客，
+And at the end, you get jazz and, and podcasts, you know,
+
+940
+00:50:50,163 --> 00:50:51,740
+这也有点疯狂。
+that's kind of crazy as well.
+
+941
+00:50:51,740 --> 00:50:53,720
+所以我认为在某种意义上，
+And so I, I, I think there's a sense in which there's,
+
+942
+00:50:53,720 --> 00:50:56,620
+通过研究这些东西，我们能学到一些根本性的真理。
+there's some fundamental truth that we can learn by studying these things.
+
+943
+00:50:57,310 --> 00:50:57,590
+哇。
+Wow.
+
+944
+00:50:59,030 --> 00:51:01,590
+你这么说让我想到一件事。
+Something that comes up as you say.
+
+945
+00:51:01,590 --> 00:51:05,899
+现在有趣的是，AI 正在帮助我们学习、进化，
+What's interesting now is AI is helping us learn and evolve and, you know,
+
+946
+00:51:05,899 --> 00:51:08,510
+推动 AI 辅导之类的进步。
+progress like AI tutoring and all these things.
+
+947
+00:51:08,830 --> 00:51:13,069
+有意思的是，它现在正在帮助我们加速
+It's interesting how it now is helping us accelerate our own
+
+948
+00:51:13,069 --> 00:51:14,710
+我们对世界的理解。
+understanding of the world.
+
+949
+00:51:15,430 --> 00:51:20,204
+我在想，你刚才说我们学习的方式是上课，
+And I wonder if, like, this point you made about how the way we learned was lessons
+
+950
+00:51:20,204 --> 00:51:22,840
+而 AI 学习只是处理海量数据。
+AI is learning just processing a ton of data.
+
+951
+00:51:22,920 --> 00:51:24,680
+我好奇我们最终会不会也变成这样。
+I wonder if that's how we end up.
+
+952
+00:51:24,960 --> 00:51:28,667
+我好奇我们会不会据此改变教育系统，
+I wonder if we change how our education system based on what, you know,
+
+953
+00:51:28,667 --> 00:51:30,840
+基于 LLM 是如何被训练的。
+what LLMs have been trained on.
+
+954
+00:51:31,040 --> 00:51:31,440
+对。
+Yeah.
+
+955
+00:51:31,440 --> 00:51:35,064
+希望我们不会改成这样：把学生叫来，
+Hopefully, you know, we don't change it just so that we ask, we, we get students,
+
+956
+00:51:35,064 --> 00:51:37,920
+说，嘿，这里是 1000 个词，预测下一个。
+we're like, hey, here's 1,000 words, predict the next one.
+
+957
+00:51:38,360 --> 00:51:40,960
+全都读完，对，全记在脑子里。
+Just read it all. Yeah, keep it all in your head.
+
+958
+00:51:42,420 --> 00:51:43,340
+没错，对。
+That's right. Yeah.
+
+959
+00:51:44,540 --> 00:51:46,577
+让我回到安全这个话题。
+Let me come back to this kind of safety piece
+
+960
+00:51:46,577 --> 00:51:49,688
+因为我觉得有很多人只是在担心
+because I think there's a lot of people that are just worried about
+
+961
+00:51:49,688 --> 00:51:50,820
+事情会走向何方。
+where things are going.
+
+962
+00:51:51,700 --> 00:51:55,334
+我也很好奇，作为一个眼看着这些事发生的人，
+And I'm curious, just as someone watching this stuff happen,
+
+963
+00:51:55,334 --> 00:51:58,469
+身处对齐组织内部，看着它不断演化，
+being within the alignment org, watching it evolve,
+
+964
+00:51:58,469 --> 00:52:00,820
+你乐观地认为我们能解决这个问题吗？
+are you optimistic we'll figure it out?
+
+965
+00:52:00,900 --> 00:52:05,640
+你觉得我们能攻克难题，让 AI 与我们的利益保持一致吗？
+Do you think we'll crack this and keep AI aligned with our interests?
+
+966
+00:52:06,200 --> 00:52:08,960
+我的看法是，我个人是乐观的。
+My take on this is, like, I'm personally optimistic.
+
+967
+00:52:09,160 --> 00:52:14,760
+首先，我觉得这其实是件好事。
+And, and first of all, I, you know, I think that's kind of a great thing.
+
+968
+00:52:15,160 --> 00:52:17,640
+随着这类问题越来越受关注，
+I think as an issue like this rises in prominence, um, you know, it's,
+
+969
+00:52:17,920 --> 00:52:21,573
+这正是我们之前聊到的。
+it's exactly what we were talking about earlier.
+
+970
+00:52:21,573 --> 00:52:24,200
+这项技术很强大，既带来好处，也伴随风险。
+It's like this technology is powerful. It has benefits, it has risks.
+
+971
+00:52:24,280 --> 00:52:27,930
+我们必须不断调整，在收益与风险之间来回调配资源，
+We have to kind of adapt and shift resources from like benefits to risks and back
+
+972
+00:52:28,530 --> 00:52:33,425
+随着技术的发展而不断调整。
+and forth, um, as, as it progresses.
+
+973
+00:52:33,425 --> 00:52:35,650
+所以对我来说，我觉得我们一直在持续研究它。
+And so, you know, to me, I feel like sort of we've continued to study it.
+
+974
+00:52:36,170 --> 00:52:43,770
+嗯，有意思的是，有这么一种情况：
+Um, the thing that's, that's, that's interesting is that there's this sort of like,
+
+975
+00:52:44,370 --> 00:52:49,785
+虽然模型越来越好，但在某些方面反而更容易研究。
+as the models get better, um, they get in some ways easier to study.
+
+976
+00:52:49,785 --> 00:52:54,040
+于是就出现了这种有点奇怪的现象：
+And so there's been this sort of strange, you know,
+
+977
+00:52:54,600 --> 00:52:57,393
+模型越强，它们内部的 world model 反而越清晰，
+the models get better and so like the world model inside them is clearer
+
+978
+00:52:57,393 --> 00:53:01,315
+我们也能更好地理解它们的某些部分。
+and we can sort of like understand some parts of them better.
+
+979
+00:53:01,315 --> 00:53:04,640
+但与此同时，它们也变得更强大。
+But also they get more capable.
+
+980
+00:53:04,640 --> 00:53:05,800
+所以它们也更有能力绕过一些基本的安全防护手段。
+And so they're more able to sort of evade like basic measures of, uh, security.
+
+981
+00:53:05,840 --> 00:53:11,920
+因此随着模型变强，就存在这种拉锯。
+And so there's this, there's this push and pull as models get better.
+
+982
+00:53:11,920 --> 00:53:14,870
+我觉得基本上基于这种拉锯关系，
+And, and I think, you know, basically based on this push and pull,
+
+983
+00:53:14,910 --> 00:53:17,722
+你会希望在各个环节上多分配或少分配一些资源，
+you want to allocate more or less resources to sort of various parts of like
+
+984
+00:53:17,722 --> 00:53:20,950
+比如监控、更好地理解它们的计算回路，诸如此类。
+monitoring, like understanding their circuits better, things like that.
+
+985
+00:53:20,950 --> 00:53:24,230
+这也是我很高兴和你聊的原因之一，因为
+Um, but it's also why I'm kind of happy to chat with you, uh, because one,
+
+986
+00:53:24,750 --> 00:53:29,391
+其中最重要的事情之一
+one of the main things
+
+987
+00:53:29,391 --> 00:53:31,515
+我认为要取得进展，关键在于确保
+that I think is important to make progress is just to make sure
+
+988
+00:53:31,515 --> 00:53:35,527
+人们能够理解这到底是怎样一类系统，
+that people kind of understand both, you know, what kind of systems these are, like,
+
+989
+00:53:35,527 --> 00:53:41,034
+它们如何工作，如何被制造出来。这样，
+how they work, um, how they're made. So.
+
+990
+00:53:41,034 --> 00:53:43,630
+他们才能对这些系统形成良好的心智模型。
+They can form good mental models of
+
+991
+00:53:43,630 --> 00:53:45,750
+无论是对现在还是未来，他们才能决定如何去塑造它，
+Of, you know, the present, of the future, and so they can decide how to shape it,
+
+992
+00:53:45,870 --> 00:53:50,397
+无论是亲自参与一些对齐工作，
+whether that's, you know, taking part in some of these alignment efforts or just
+
+993
+00:53:50,397 --> 00:53:54,858
+还是仅仅让自己了解这些信息，
+like informing them, as
+
+994
+00:53:54,858 --> 00:53:56,190
+作为公众，未来需要对许多这类问题投票和表态。
+As the public that's going to have to, like, vote and sign on many of these issues, like.
+
+995
+00:53:56,310 --> 00:53:59,710
+我不知道，但我因为这个原因对当下这个时刻还挺兴奋的。
+I, I, I don't know. I'm, I'm pretty excited for this current moment we're in for that reason.
+
+996
+00:54:00,580 --> 00:54:03,620
+我觉得人们有一个误解：在这些实验室工作的人
+And something I think people misunderstand is people working in these labs have
+
+997
+00:54:04,060 --> 00:54:08,139
+从一开始就非常严肃地对待这个问题。
+taken this problem very seriously from the beginning.
+
+998
+00:54:08,139 --> 00:54:10,940
+就像我说过的，Anthropic 最初的使命就是 AI 安全和对齐。
+Like I said, Anthropic's initial, like, mission was AI safety and alignment.
+
+999
+00:54:11,460 --> 00:54:14,980
+这正是它成为一家公司的原因，
+That was like the reason that it became a company and
+
+1000
+00:54:15,060 --> 00:54:17,651
+而很多人还是第一次听到这些，或者认为
+and a lot of people are hearing this for the first time or think
+
+1001
+00:54:17,651 --> 00:54:20,724
+这不是一个严肃的研究领域，也没人在专注于此。
+that it's not a serious area of study and that people aren't focused on it.
+
+1002
+00:54:20,724 --> 00:54:24,400
+但实际上很多聪明人都非常关心并正在努力解决这个问题。
+But many smart people care a lot about this and are working on it.
+
+1003
+00:54:24,400 --> 00:54:28,120
+据我所知，已经有很多很好的进展正在发生。
+And there's a lot of, from what I can tell, a lot of good progress is happening.
+
+1004
+00:54:28,560 --> 00:54:31,600
+你提到的另一点是，模型的智能增长非常平滑，
+The other point you made about the models growing very smoothly in intelligence,
+
+1005
+00:54:31,760 --> 00:54:36,068
+也就是说，一直存在一个问题：我们会迎来快速起飞还是慢速起飞？
+like, you know, there's been this question of are we going to have a fast takeoff or a slow takeoff?
+
+1006
+00:54:36,068 --> 00:54:41,200
+人们总有一种纯粹的恐惧，
+Like there's always this pure fear
+
+1007
+00:54:42,110 --> 00:54:43,756
+比如我们会到达某个递归式自我改进的临界点，
+that we would hit a point of recursive self-improvement, for example,
+
+1008
+00:54:43,756 --> 00:54:46,934
+然后突然爆发成超级智能，陷入巨大麻烦，我们完全无法控制，
+and just takes off into superintelligence, we're in huge trouble, we have no control,
+
+1009
+00:54:46,934 --> 00:54:50,623
+它已经失控了。但感觉我们现在更像是处于慢速起飞的情形中。
+it's out of the box, but it feels very much like we're on the slow takeoff scenario
+
+1010
+00:54:50,623 --> 00:54:54,425
+因为正如你所说，
+because as you said.
+
+1011
+00:54:54,425 --> 00:54:55,390
+模型在非常平滑地进步，
+The models are kind of very smoothly improving and
+
+1012
+00:54:55,510 --> 00:54:57,755
+而且我们也在过程中不断发现这些小问题，持续学习和演化。
+where we are catching these little things along the way, learning, evolving.
+
+1013
+00:54:57,755 --> 00:55:01,230
+并围绕它建立监管。
+Putting regulation around it.
+
+1014
+00:55:02,200 --> 00:55:03,520
+所以在人们设想的各种情形中，我们走上的这条路算是相当不错的。
+So you know, of the scenarios, this feels like a pretty good path we're on of, of the,
+
+1015
+00:55:03,680 --> 00:55:08,586
+在人们因恐惧而想象出的众多情形里，
+of the many scenarios people imagined in the fears they had
+
+1016
+00:55:08,586 --> 00:55:12,554
+随着这种进步速度不断演变，
+as sort of this pace of progress kind of evolves.
+
+1017
+00:55:12,554 --> 00:55:15,440
+关键就在于要快速做出反应。
+It's just a matter of, of reacting quickly.
+
+1018
+00:55:16,160 --> 00:55:18,000
+所以我觉得，这也是为什么让公众了解情况非常重要。
+So I think, you know, that's why I think having people be informed is great
+
+1019
+00:55:21,620 --> 00:55:25,160
+因为这样人们就会愿意表达担忧，或者表达自己的意见。
+because then people will like voice concerns or, or, or like voice their opinions.
+
+1020
+00:55:25,680 --> 00:55:29,330
+然后就是，定期评估
+And then, yeah, sort of, sort of regularly evaluating, you know,
+
+1021
+00:55:29,330 --> 00:55:32,168
+收益是什么、风险是什么，以及
+what the benefits are, what the risks are, and how,
+
+1022
+00:55:32,168 --> 00:55:35,277
+我们如何分别缓解这些风险，基本上这就是
+how we sort of like mitigate each is is basically the way
+
+1023
+00:55:35,277 --> 00:55:37,440
+感觉是正确的前进方向。
+that feels like the right way forward.
+
+1024
+00:55:37,440 --> 00:55:39,078
+我基本上同意你的看法，
+And, and I, yeah, I kind of agree with you
+
+1025
+00:55:39,078 --> 00:55:42,800
+感觉现在正有动力去推动这件事，这很好。
+that feels like sort of there's momentum to, to do this right now, which is, which is great.
+
+1026
+00:55:43,160 --> 00:55:45,823
+我想问一个完全不相关的问题。
+Something I wanted to ask you completely unrelated. Uh,
+
+1027
+00:55:45,823 --> 00:55:47,920
+你对模拟假说怎么看？
+where are you on the simulation hypothesis?
+
+1028
+00:55:48,280 --> 00:55:52,075
+作为一个观察这些生命形态生长的人，
+Uh, being someone that watches this all this life form growing,
+
+1029
+00:55:52,075 --> 00:55:56,801
+你是否更相信我们身处模拟之中，而我们不是最底层，
+are you more convinced we're in a simulation and this is, and we're not the base,
+
+1030
+00:55:56,801 --> 00:55:59,450
+不是这一切的基础层？还是你不这么认为？
+at the base layer of all this or are you or not?
+
+1031
+00:55:59,530 --> 00:56:03,410
+这个问题很有意思，我其实有一阵子没想过这个了。
+Oh, this is a fun one. I actually haven't thought about this in a while.
+
+1032
+00:56:03,890 --> 00:56:09,198
+对我来说，观察这些模型内部
+Um, to me, like there's, there's something else that like looking,
+
+1033
+00:56:09,198 --> 00:56:15,074
+会带来另一种感受，就是
+looking inside these models kind of brings out, which is this sort of like,
+
+1034
+00:56:15,074 --> 00:56:21,140
+它们似乎总是会落到某种基础结构上。
+like almost like there's a fundamental structure that they keep falling on.
+
+1035
+00:56:21,220 --> 00:56:23,700
+这跟你的问题有关，我保证。让我解释一下。
+This is related to your question, I promise. Let me get to it. Let me explain.
+
+1036
+00:56:24,100 --> 00:56:27,990
+我研究过很多 Claude 模型，还有
+Um, I've studied like a bunch of cloud models and also, you know,
+
+1037
+00:56:27,990 --> 00:56:31,807
+一些不同的模型，一些开源工作，
+some some different models some some like open source work and
+
+1038
+00:56:31,807 --> 00:56:35,183
+很多时候当你观察它们学到了什么、
+and then a lot of time when you look at how what they learn
+
+1039
+00:56:35,183 --> 00:56:39,000
+以及内部结构是什么样的，会发现惊人地相似。
+and what the structure inside is, it's surprisingly similar.
+
+1040
+00:56:39,120 --> 00:56:42,639
+而这些模型训练时间相隔数年，
+You know, and this is for models that are trained years apart on, like,
+
+1041
+00:56:42,639 --> 00:56:44,520
+用的是不同数据、由不同人训练。
+different data by different people.
+
+1042
+00:56:45,000 --> 00:56:49,440
+你观察它们如何解决这些问题，
+And, you know, and you look at how they solve these problems and there's just
+
+1043
+00:56:49,440 --> 00:56:52,400
+重叠之处非常多。我对此的看法是，
+so much overlap. And my take on why that is, is that.
+
+1044
+00:56:53,440 --> 00:56:57,440
+对于某些重要的问题，只有一种高效的方法。
+For some problems that are important, there's just one efficient way to do things, right?
+
+1045
+00:56:57,440 --> 00:56:59,799
+比如数学只有一种高效的计算方式，
+Like there's kind of one way to do math efficient only
+
+1046
+00:56:59,799 --> 00:57:02,480
+它契合我们大脑的结构，我们都在学它。
+that like fits the structure of our brain and we all learn it.
+
+1047
+00:57:02,480 --> 00:57:05,618
+很少有人用截然不同的方式来做。每个人都用
+And very few people are doing it crazy different way, right? Everybody works in,
+
+1048
+00:57:05,618 --> 00:57:06,320
+十进制。
+you know, base 10.
+
+1049
+00:57:06,360 --> 00:57:08,780
+没什么人用六进制，
+Not many people in, like base 6 or, um,
+
+1050
+00:57:08,780 --> 00:57:11,121
+我觉得这让我想到，
+I think that that to me makes me think
+
+1051
+00:57:11,121 --> 00:57:15,492
+信息本身可能具有某种基础结构，
+that there's like some fundamental structure of like information
+
+1052
+00:57:15,492 --> 00:57:20,800
+这些模型捕捉到了，而我们在某种程度上也捕捉到了。
+that like these models are picking up on that in some ways like we're picking up on.
+
+1053
+00:57:21,210 --> 00:57:26,888
+而在一个更大胆的模拟层面来看，
+And that, you know, at maybe like a crazier sort of like simulation level,
+
+1054
+00:57:26,888 --> 00:57:30,890
+这就像是我们世界中的规律性。
+that kind of is, is, is like regularity in our world.
+
+1055
+00:57:31,170 --> 00:57:33,407
+所以这让我觉得，
+And so that maybe makes me think that like
+
+1056
+00:57:33,407 --> 00:57:37,947
+如果你有能力模拟像我们这样的世界，
+if you were to have the power to simulate something like our world, actually, like,
+
+1057
+00:57:37,947 --> 00:57:42,290
+你最终也会得到类似的情况，就像存在某种
+you would land in sort of a similar situation like there's just kind of this like
+
+1058
+00:57:42,290 --> 00:57:44,790
+事物最终汇聚的盆地，
+basin of where things end up and they're just.
+
+1059
+00:57:44,830 --> 00:57:47,150
+是事物自我组织的最简单方式。
+The sort of like easiest way for things to arrange themselves.
+
+1060
+00:57:47,630 --> 00:57:51,564
+所以从这个意义上说，也许是的，
+And so in that sense, maybe, yeah, I'm, I'm sort of,
+
+1061
+00:57:51,564 --> 00:57:55,030
+我可以相信我们身处模拟之中。
+I I could believe that we're in a simulation.
+
+1062
+00:57:55,070 --> 00:57:56,750
+不过我不确定我完全接受这个观点。
+I think. I'm not sure I fully buy it.
+
+1063
+00:57:56,870 --> 00:57:59,116
+我不完全接受的另一个原因是，即使
+Uh, the other reason I don't fully buy it is that even
+
+1064
+00:57:59,116 --> 00:58:02,930
+我觉得结构上说得通，但还会有个问题：为什么？
+though I think the structure like lends itself to it, there'd be a question of like, why?
+
+1065
+00:58:03,370 --> 00:58:06,130
+我们为什么在这里？谁在运行这一切，为了什么？
+Why are we like, like, who's, who's running this and for what?
+
+1066
+00:58:06,170 --> 00:58:07,530
+这个我就不知道了。
+And, and that one I don't know about.
+
+1067
+00:58:08,170 --> 00:58:10,977
+Elon 说过一句话让我印象很深，
+Well, something Elon said, it stuck with me about this,
+
+1068
+00:58:10,977 --> 00:58:14,333
+如果你要运行一个模拟，你会选择一个非常有趣的、
+that if you were to run a simulation, it'd be a really interesting,
+
+1069
+00:58:14,333 --> 00:58:17,201
+历史上很有意思的时期，
+it'd be like an interesting time in history or something
+
+1070
+00:58:17,201 --> 00:58:18,970
+一个让你特别兴奋的时期。
+that you're really excited about.
+
+1071
+00:58:19,490 --> 00:58:22,610
+而现在确实是历史上非常有意思的时期。
+And it tracks that this is a very interesting time in history.
+
+1072
+00:58:23,770 --> 00:58:27,035
+是的，好吧，有道理，有道理。
+Yes, yeah. Okay. That's a fair point. That's a fair point.
+
+1073
+00:58:27,035 --> 00:58:30,640
+太空数据中心、机器人、人工智能。
+Data centers in space and robots and artificial intelligence.
+
+1074
+00:58:30,920 --> 00:58:33,640
+好吧，我现在明白了，我明白了。
+Yeah. Okay. I see it now. I see it now. Yeah.
+
+1075
+00:58:33,840 --> 00:58:36,137
+最近有人告诉我，
+Somebody like, recently told me, you know,
+
+1076
+00:58:36,137 --> 00:58:39,391
+他们以前觉得“愿你活在有趣的时代”是句祝福，
+they used to think that may you live in interesting times was,
+
+1077
+00:58:39,391 --> 00:58:41,880
+现在则不太确定了。
+was like a blessing and they're not so sure now.
+
+1078
+00:58:41,920 --> 00:58:45,960
+他们说，平淡的年代其实也挺好的。唉。
+They're like, you know, the boring times are really pretty good, too. Oh, man.
+
+1079
+00:58:46,760 --> 00:58:51,560
+然后外面还有一个 Emmanuel 在观察你 J-space（J 空间，模型内部的全局工作区）里的思考过程。
+And then there's an Emmanuel out there watching your thinking process in your J-space.
+
+1080
+00:58:52,120 --> 00:58:54,664
+哦，天哪。是啊。希望我让他感到骄傲。他不是那种，哦，
+Oh, my God. Yeah. Hopefully I'm making him proud. He's not like, oh,
+
+1081
+00:58:54,664 --> 00:58:55,800
+我得重新跑一遍模拟。
+I gotta rerun the simulation.
+
+1082
+00:58:55,880 --> 00:58:58,400
+这个搞砸了。关掉它。不会吧。
+We messed up this one. Shut it down. No.
+
+1083
+00:58:59,120 --> 00:59:03,360
+哦，天。好吧。呃，最后一个问题，突然冒出来的。
+Oh, man. Okay. Uh, one last question. Randomly out of nowhere.
+
+1084
+00:59:03,680 --> 00:59:08,860
+呃，就是 Swyx（AI Engineering 与 Latent Space 播客主理人），人很棒。
+Uh, so Swyx who um, runs AI Engineering Latent Space podcast, Awesome Guy.
+
+1085
+00:59:08,860 --> 00:59:11,200
+我问了他应该问你什么。
+I asked him what to ask you.
+
+1086
+00:59:11,360 --> 00:59:13,159
+一年前你上过他的播客，
+You were on his podcast a year ago
+
+1087
+00:59:13,159 --> 00:59:17,758
+有件事他完全换个方向想问你的看法，
+and something completely from a different direction he wanted to get your take on,
+
+1088
+00:59:17,758 --> 00:59:20,824
+就是 Jev（快速决策模型），这个最近刚推出的热门新模型，
+Jev, which is this hot new model that recently came out
+
+1089
+00:59:20,824 --> 00:59:23,290
+它能非常快速地做出决策。巧的是，OpenAI
+that is very fast making decisions, OpenAI.
+
+1090
+00:59:24,170 --> 00:59:26,490
+大概一周后也推出了自己的版本。
+Funny enough, just launched their own version like a week later.
+
+1091
+00:59:27,890 --> 00:59:32,970
+你对 Jev，以及这种快速、基于状态的决策模型有什么看法？对吧。
+Thoughts on, on, Jev, in the space of quick decision based state models. Yeah, right.
+
+1092
+00:59:32,970 --> 00:59:36,329
+所以我对 Jev 的看法是，这类模型大概就是，
+So my my take on Jev is a sort of, you know, these kind of models,
+
+1093
+00:59:36,329 --> 00:59:40,399
+你给它一些上下文，再给它几个选项去选，
+you give them some context and you give them a few options to choose between,
+
+1094
+00:59:40,399 --> 00:59:43,500
+它们会非常快地替你选出一个选项。
+and they just are very quick at choosing an option for you.
+
+1095
+00:59:45,420 --> 00:59:48,141
+对我来说，听到这个很难不联想到
+To me, it's impossible not to hear about this
+
+1096
+00:59:48,141 --> 00:59:52,700
+System 1（系统一）思维和 System 2（系统二）之类的，对吗？
+and think of sort of System 1 thinking versus System 2 or something, right?
+
+1097
+00:59:52,700 --> 00:59:57,244
+我研究这些模型时很大一部分就是看它们如何采样单个 token，
+So like a lot of what I've studied with these models is how they sample one token
+
+1098
+00:59:57,244 --> 01:00:00,040
+比如 Claude 模型。你明白。
+with with like the Claude models. And so you know.
+
+1099
+01:00:00,170 --> 01:00:03,969
+可以认为这些决策模型和这个非常相似。
+And think of, of, of like these decision models as pretty similar.
+
+1100
+01:00:03,969 --> 01:00:06,130
+就像拿一个 LLM，只采样一个 token。
+So like take an LLM and sample one token.
+
+1101
+01:00:06,250 --> 01:00:09,453
+它们在一些重要方面不同，但从根本层面看，
+They're, they're different in important ways, but like at a fundamental level,
+
+1102
+01:00:09,453 --> 01:00:12,115
+你可以说，哦，这……你没有让模型，你知道，
+you can be like, oh, it's, you're not letting the model, you know,
+
+1103
+01:00:12,115 --> 01:00:15,170
+去采样和推理，它只是凭……直觉，直觉判断，你知道。
+sample and like reason, it's just you're like, gut, gut feeling, you know.
+
+1104
+01:00:15,250 --> 01:00:16,810
+答案是 A 还是答案 B？
+Is the answer A or is the answer B?
+
+1105
+01:00:17,330 --> 01:00:20,514
+嗯，对我来说，这似乎像是某种
+Um, to me that seems like, like something that's like
+
+1106
+01:00:20,514 --> 01:00:25,507
+那种通用框架：有时候你只想要一个二选一的判断，或者像
+that general frame of like sometimes you'll just want a binary decision or like one
+
+1107
+01:00:25,507 --> 01:00:26,810
+十个里面选一个之类的。
+out of 10 or whatever.
+
+1108
+01:00:27,240 --> 01:00:31,800
+这显然，怎么说呢，两者都很明显有用。
+It's just like clearly, I don't know, like, like both clearly useful.
+
+1109
+01:00:32,160 --> 01:00:36,881
+呃，而且我猜想它很可能会成为
+Uh, and something that I imagine is, is like probably going to be a part of,
+
+1110
+01:00:36,881 --> 01:00:39,280
+智能系统的一部分，对吧？
+of like intelligent systems, right?
+
+1111
+01:00:39,280 --> 01:00:42,120
+因为有些事你需要思考很长时间。
+Where you, you have for some stuff you need to think about a long time.
+
+1112
+01:00:42,160 --> 01:00:44,080
+比如，我们明年的路线图是什么？
+You know, it's like what, what's our roadmap for the next year?
+
+1113
+01:00:44,080 --> 01:00:46,560
+这种需要想一阵子；还有一些情况是，
+You need to think about for a while and then for some stuff where it's like.
+
+1114
+01:00:47,540 --> 01:00:51,140
+比如，给我们写评价的这个人，是高兴还是不满？
+You know, is this, is this person who wrote us a review happy or upset?
+
+1115
+01:00:51,580 --> 01:00:53,860
+你会觉得这种直觉判断就够用了。
+You kind of, you're happy with the sort of gut judgment.
+
+1116
+01:00:54,460 --> 01:00:58,100
+嗯，所以是的，我觉得这类研究很酷。
+Um, so yeah, I think, I think this is, I think this kind of research is, is cool.
+
+1117
+01:00:58,260 --> 01:01:02,050
+呃，而且我觉得它和我们之前看到的一些东西也不太一样，
+Uh, and I think it's also kind of different from the, you know, it's like, it's,
+
+1118
+01:01:02,050 --> 01:01:05,140
+是对我们已经见过的一些要素比较新的切入点。
+it's like a bit of a novel take on some of the elements we've seen.
+
+1119
+01:01:05,180 --> 01:01:08,060
+所以，是的，我挺期待看到这类东西会走向哪里。
+So, yeah, I'm pretty excited to see where, where, where this kind of stuff goes.
+
+1120
+01:01:08,370 --> 01:01:12,880
+所以我听到的是，这很可能会成为一个新的基础组件，
+So what I'm hearing here is this is kind of gonna be a new foundational component most
+
+1121
+01:01:12,880 --> 01:01:14,290
+属于 AI 和 LLM 的组成部分。
+likely of, of AI and LLMs.
+
+1122
+01:01:14,490 --> 01:01:17,256
+而 System 1、System 2 这个框架，基本上就是 Daniel Kahneman（丹尼尔·卡尼曼）提出的，
+And the System 1, System 2 stuff is basically Kahneman's kind of,
+
+1123
+01:01:17,256 --> 01:01:19,570
+其实我身后书架上就有他这本书，就是这个概念。
+I have that book up there actually behind me, this idea.
+
+1124
+01:01:19,770 --> 01:01:23,130
+简单来说，System 1 就像是你的杏仁核、
+System 1, just to keep it simple, is just like kind of your amygdala,
+
+1125
+01:01:23,130 --> 01:01:27,210
+边缘系统，做出直觉层面的快速判断，比如看到蛇：哦不，危险，是。
+limbic system making just like gut level quick decisions like snake, oh, no, yes.
+
+1126
+01:01:27,290 --> 01:01:29,050
+呃，也就是你不必思考很久。
+Uh, where you don't have to think long about it.
+
+1127
+01:01:29,640 --> 01:01:33,440
+有点像很快、很轻松地保护你远离坏事。
+Kind of the protective protect you from bad things really easily and quickly.
+
+1128
+01:01:33,480 --> 01:01:36,040
+而 System 2 是我们真正思考和处理事情的地方。
+And System 2 is where we really think about stuff and process.
+
+1129
+01:01:36,680 --> 01:01:37,440
+是的，没错。
+Yeah, exactly.
+
+1130
+01:01:38,120 --> 01:01:38,400
+太好了。
+Sweet.
+
+1131
+01:01:38,840 --> 01:01:41,774
+Emmanuel，还有什么我们没聊到的吗？
+Emmanuel, is there anything else that we haven't covered,
+
+1132
+01:01:41,774 --> 01:01:43,811
+你还有什么想说或想提的吗？
+anything else you want to say or mention,
+
+1133
+01:01:43,811 --> 01:01:48,003
+在我们进入非常刺激的快问快答之前，还有什么想再强调的？
+anything you want to double down on before we get our very exciting lightning round?
+
+1134
+01:01:48,003 --> 01:01:49,440
+我确实很好奇。
+I'm definitely curious for.
+
+1135
+01:01:50,400 --> 01:01:55,500
+很想听听大家对一些……
+For folks' takes on, on some of the stuff that, you know,
+
+1136
+01:01:55,500 --> 01:01:59,000
+还没有被探索或还没搞懂的东西的看法。
+is still unexplored or didn't make sense.
+
+1137
+01:01:59,080 --> 01:02:02,560
+还有更多 interpretability 实验，我们没有时间一一分享。
+There's a lot more interp experiments than we have the time to share.
+
+1138
+01:02:02,720 --> 01:02:06,280
+你知道，模型身上有一堆奇奇怪怪的小特性。
+You know, models have a bunch of weird, weird little things about them.
+
+1139
+01:02:06,360 --> 01:02:09,200
+比如也许我可以来一轮关于这些奇怪小发现的快问快答。那我们就这么做吧。
+Like maybe I'll do a lightning round of weird little things. That's—let's do it.
+
+1140
+01:02:09,320 --> 01:02:14,040
+没问题。好，第一件奇怪的小事，我们发现——
+Absolutely. Okay, weird little thing one, um, we found that, you know,
+
+1141
+01:02:14,040 --> 01:02:17,000
+模型其实真的能回答问题。
+models can, like, actually answer questions.
+
+1142
+01:02:17,120 --> 01:02:19,223
+显然它们能做数学，或者它们可以，你知道，
+Obviously, they can do math or they can, you know,
+
+1143
+01:02:19,223 --> 01:02:22,454
+你可以问它们香蕉是什么颜色，它们真的会……
+you can ask them like what's the color of a banana and they'll actually like,
+
+1144
+01:02:22,454 --> 01:02:25,480
+如果你往内部看，会看到所有这些中间步骤。
+you know, if you look inside, you'll see all these intermediate steps.
+
+1145
+01:02:25,600 --> 01:02:28,821
+但它们有一个独立的机制，有点像直觉校验，
+But they have a separate mechanism, which is kind of like a gut check, uh,
+
+1146
+01:02:28,821 --> 01:02:31,935
+这个机制完全不同；在它们推理时，
+and which is totally different and which is just like, as they reason,
+
+1147
+01:02:31,935 --> 01:02:35,640
+它们内部会有某个部分发出标记：“嗯，有地方不对。”
+they'll have like, some part of them that will flag, like, hmm, something's wrong.
+
+1148
+01:02:36,040 --> 01:02:39,208
+所以如果模型以某种方式说出 4 + 5 = 23 之类的话，
+So if a model, like, somehow says, you know, 4 + 5 = 23 or something,
+
+1149
+01:02:39,208 --> 01:02:43,021
+模型里有个部分只是读到这个结果，并不做计算，
+and there's a part of the model that just, like, reads that and doesn't do the math,
+
+1150
+01:02:43,021 --> 01:02:43,960
+但它就像是……
+but it's just like.
+
+1151
+01:02:43,960 --> 01:02:47,160
+“这不可能对，因为 4 + 5 肯定小于 10。”
+That can't be right because like 4 + 5 is definitely under 10.
+
+1152
+01:02:47,160 --> 01:02:49,960
+所以它们学会了这些奇怪的直觉。
+And so they learn these weird kind of like hunches.
+
+1153
+01:02:50,360 --> 01:02:53,160
+它们感觉起来就像一种直觉。
+They feel kind of like, like a hunch. Um.
+
+1154
+01:02:54,230 --> 01:02:58,215
+另一个是，你可以告诉模型：“嘿，
+Maybe another one is you can tell the model, hey,
+
+1155
+01:02:58,215 --> 01:03:02,000
+做这个任务，同时想另一件事。”
+do this task and think about this other thing.
+
+1156
+01:03:02,280 --> 01:03:04,024
+然后你可以用 interp 去看是否……
+And then you can use interp to see if, like,
+
+1157
+01:03:04,024 --> 01:03:06,640
+存在映射到那另一件事的中间表征。
+there's intermediate representations that map to the other thing.
+
+1158
+01:03:07,320 --> 01:03:11,640
+这确实有效。你某种程度上能看到它确实在想另一件事。
+And that works. You sort of see that it does think about the other thing.
+
+1159
+01:03:11,720 --> 01:03:13,865
+这让我觉得很神秘，
+This is something that's really mysterious to me
+
+1160
+01:03:13,865 --> 01:03:17,840
+因为从训练来看，没有任何理由要求模型必须学会这个。
+because there's no kind of training reason why the model would have to learn that.
+
+1161
+01:03:17,840 --> 01:03:21,401
+所以这有点像另一种奇怪行为。其实，
+So it's sort of like another one of these, um, weird behaviors. And actually,
+
+1162
+01:03:21,401 --> 01:03:22,570
+也许我也保留这个。
+maybe I'll keep that too.
+
+1163
+01:03:22,570 --> 01:03:23,970
+我觉得这两个就够了。
+I think these two are good enough.
+
+1164
+01:03:24,370 --> 01:03:26,349
+这工作多有趣啊，
+Just what a fun, what a fun job this is,
+
+1165
+01:03:26,349 --> 01:03:30,370
+就是研究这个东西，试图弄清楚到底发生了什么。
+just studying this thing and trying to understand what the hell is going on.
+
+1166
+01:03:30,610 --> 01:03:33,290
+它怎么变得这么聪明？它到底怎么思考？是啊。
+How is it getting so smart? How does it think? Yeah.
+
+1167
+01:03:33,290 --> 01:03:37,610
+这个领域里到底有多少人？
+Um, how many people are even in this space?
+
+1168
+01:03:37,650 --> 01:03:39,010
+这个领域规模有多大？
+Just like how large is this field?
+
+1169
+01:03:39,730 --> 01:03:42,405
+这个领域本身，你知道，已经变得相当大了。
+The field itself is, you know, getting pretty large.
+
+1170
+01:03:42,405 --> 01:03:44,370
+我会说大概几百人，不到几千人。
+I would say maybe hundreds, not thousands.
+
+1171
+01:03:44,730 --> 01:03:49,330
+不同的实验室里有不同的 interpretability 研究人员，
+Uh, there's, you know, different interp people at the different labs
+
+1172
+01:03:49,330 --> 01:03:51,860
+然后学术界也有，
+and then there's, there's in academia,
+
+1173
+01:03:51,860 --> 01:03:55,080
+不少实验室也在产出很棒的工作。
+quite a few labs putting out great work as well.
+
+1174
+01:03:55,200 --> 01:03:57,436
+如果有人想进入这个领域，
+If someone were to get into the space,
+
+1175
+01:03:57,436 --> 01:04:02,269
+通常是不是 ML 背景的人，还是说有一条神经科学家之类的
+is it like an ML person usually, or is there like a neuroscientist sort of
+
+1176
+01:04:02,269 --> 01:04:03,640
+进入路径？
+track to get into this?
+
+1177
+01:04:04,280 --> 01:04:09,000
+有，实际上有数量惊人的前神经科学家。
+Yeah, there's actually a surprising amount of, you know, ex-neuroscientists.
+
+1178
+01:04:09,740 --> 01:04:15,435
+我确实认为，要进入这个领域，实际上，
+Uh, I do think in order to get into the field, you know, there is actually,
+
+1179
+01:04:15,435 --> 01:04:20,620
+它不需要很多先验知识，因为这是个非常新的领域。
+it doesn't require a lot of prior knowledge because it's such a new field.
+
+1180
+01:04:20,780 --> 01:04:24,456
+所以实际上，上手路径主要是，我会说，
+So it's actually, you know, the on-ramp is mostly, I would say,
+
+1181
+01:04:24,456 --> 01:04:28,260
+自学和阅读一些关键论文。
+like self-studying and reading some of the key papers.
+
+1182
+01:04:28,660 --> 01:04:32,580
+另外，也许我该顺便推荐一下。
+And then there's actually, you know, um, yeah, maybe I should give a plug.
+
+1183
+01:04:32,660 --> 01:04:36,045
+确实有一些网站，比如 Neuronpedia（神经网络可解释性平台），网址应该是 Neuronpedia.org，
+There's actually, like, websites like Neuronpedia.org, I think is the URL,
+
+1184
+01:04:36,045 --> 01:04:38,020
+它相当于一个开源 interpretability 平台。
+which are sort of like open source interp.
+
+1185
+01:04:38,420 --> 01:04:40,101
+所以它们会托管，你知道，
+Uh, so they, like, host, you know,
+
+1186
+01:04:40,101 --> 01:04:42,820
+一批模型，让你可以在上面做 interp 实验。
+a bunch of models and let you sort of do interp experiments on them.
+
+1187
+01:04:42,820 --> 01:04:46,540
+所以大家就一直在自己去做这些实验。
+And so, you know, people have just been doing that, uh, on their own.
+
+1188
+01:04:46,540 --> 01:04:50,457
+我觉得有太多可探索的东西，只要你有一点好奇，
+And I think that there's so much to explore, uh, that if you're at all curious,
+
+1189
+01:04:50,457 --> 01:04:51,860
+就应该试试。
+you should just give it a try.
+
+1190
+01:04:52,290 --> 01:04:54,166
+太棒了。我们会在 show notes 里放上链接，以防
+That's awesome. We'll link to that in the show notes in case
+
+1191
+01:04:54,166 --> 01:04:54,970
+那个不是正确网址。
+that's not the right URL.
+
+1192
+01:04:55,850 --> 01:04:58,789
+Emmanuel，到这里我们就进入非常激动人心的快问快答环节了。
+Well, Emmanuel, with that, we've reached our very exciting lightning round.
+
+1193
+01:04:58,789 --> 01:05:00,010
+我有五个问题要问你。
+I've got five questions for you.
+
+1194
+01:05:00,090 --> 01:05:00,570
+你准备好了吗？
+Are you ready?
+
+1195
+01:05:01,210 --> 01:05:03,770
+我已经准备好了。开始吧。
+I am as ready as I'll ever be. Here we go.
+
+1196
+01:05:04,290 --> 01:05:07,450
+你最常给别人推荐的两三本书是什么？
+What are two or three books that you find yourself recommending most to other people?
+
+1197
+01:05:07,810 --> 01:05:12,850
+我最近读的一本是 A Brief History of Intelligence。
+One I read recently is A Brief History of Intelligence.
+
+1198
+01:05:14,350 --> 01:05:18,803
+这是一本很酷的书，梳理了……的历史，比如……
+It's this really cool book that walks through the history of, like,
+
+1199
+01:05:18,803 --> 01:05:21,904
+基本上讲大脑和五个关键时刻，呃，在
+basically brains and five key moments, uh, in,
+
+1200
+01:05:21,904 --> 01:05:27,550
+在我们的进化过程中，这些大脑系统一层一层地互相引导形成。
+in our evolution that sort of bootstrapped these brain systems on top of one another.
+
+1201
+01:05:27,710 --> 01:05:31,590
+它非常好懂。你不需要任何神经科学知识。
+It's super accessible. Like you don't need any neuroscience knowledge or anything.
+
+1202
+01:05:32,390 --> 01:05:36,070
+呃，另一本是 Story of Your Life and Others（《你一生的故事及其他》）。作者是 Ted Chiang。
+Uh, another one is Story of Your Life and Others. This is Ted Chiang.
+
+1203
+01:05:36,420 --> 01:05:39,900
+这可能是我有史以来最喜欢的科幻书。里面是一堆短篇小说。
+This is maybe my favorite sci-fi book of all time. It's a bunch of short stories.
+
+1204
+01:05:40,660 --> 01:05:44,252
+它做到了我认为属于科幻的那种高雅艺术版本。
+It does what I think is the, the like high art version of sci-fi
+
+1205
+01:05:44,252 --> 01:05:47,987
+它只是抓住一个奇怪的点子，比如“如果，你知道，呃，
+where it's just takes one weird idea, like what if, you know, um,
+
+1206
+01:05:47,987 --> 01:05:50,933
+这件事发生了”，然后围绕它写一个故事。
+this happened and then write a story of just like,
+
+1207
+01:05:50,933 --> 01:05:54,740
+如果那发生了，世界会是什么样？呃，它真的……
+what would the world look like if that happened? Um, it's truly.
+
+1208
+01:05:54,820 --> 01:05:55,140
+非常出色。
+Excellent.
+
+1209
+01:05:55,860 --> 01:05:57,780
+我好像背后的书架上也有那本。
+I think I have that on my bookshelf behind me, too.
+
+1210
+01:05:58,510 --> 01:06:03,750
+呃，我也强烈推荐。最近最喜欢的一部电影或电视剧？
+Um, also highly recommend that. One favorite recent movie or TV show?
+
+1211
+01:06:05,110 --> 01:06:05,510
+好。
+Okay.
+
+1212
+01:06:06,070 --> 01:06:11,030
+推荐一部大众的，一部冷门的。呃，Obsession 是我今年最喜欢的电影。
+One popular one, one deep cut. Uh, Obsession was my favorite movie of the year.
+
+1213
+01:06:11,470 --> 01:06:16,430
+呃，它是恐怖片，所以如果你不喜欢恐怖片就别去。
+Uh, it's a horror movie, so don't, don't go if you don't, if you hate horror movies.
+
+1214
+01:06:16,710 --> 01:06:17,350
+不了，谢谢。
+No, thank you.
+
+1215
+01:06:17,670 --> 01:06:21,172
+哦不，即使你不会吓得尖叫，只要你愿意接受恐怖片，
+Oh, no, even if you're, if you're not screaming, if you're open to a horror movie,
+
+1216
+01:06:21,172 --> 01:06:22,270
+你就该去看，因为它……
+you should go 'cause it's.
+
+1217
+01:06:23,710 --> 01:06:25,270
+它真的太新鲜了。
+It was just so fresh.
+
+1218
+01:06:25,350 --> 01:06:27,847
+你知道有时候电影看多了就会觉得，哦，
+You know how movies I feel like if you've seen a lot sometimes like, oh,
+
+1219
+01:06:27,847 --> 01:06:29,310
+又是老一套，我已经看过很多遍了。
+it's another, I've seen this many times.
+
+1220
+01:06:29,350 --> 01:06:30,910
+这部就特别新，特别新鲜。
+This one was just so new, so fresh.
+
+1221
+01:06:31,550 --> 01:06:33,398
+我要说它的一点是，
+And I'll say one thing about it,
+
+1222
+01:06:33,398 --> 01:06:35,957
+它用了很多 rom-com（浪漫喜剧）的套路，
+which is that it takes a lot of rom-com tropes
+
+1223
+01:06:35,957 --> 01:06:40,720
+然后把它们反转成恐怖感，我觉得这很天才，
+and like subverts them to instead be spooky and I think that that's just a brilliant,
+
+1224
+01:06:40,720 --> 01:06:42,710
+是一种很天才的电影拍法。
+brilliant way to, to make a movie.
+
+1225
+01:06:43,300 --> 01:06:45,769
+然后我是法国人，所以有一部电视剧，
+And then I'm French, so there's a TV show
+
+1226
+01:06:45,769 --> 01:06:49,660
+今年播出的，叫 Bref。Bref 是法语里“简短”的意思。
+that came out this year called Bref. Bref is French for brief.
+
+1227
+01:06:50,260 --> 01:06:54,752
+呃，Bref 大概 10 到 15 年前在法国是经典小众作品。
+Uh, Bref used to be this cult classic in France, 10, like 15 years ago,
+
+1228
+01:06:54,752 --> 01:06:59,940
+多年之后他们推出了续集。
+and they came up with a sequel, uh, many, many years into the making.
+
+1229
+01:07:00,540 --> 01:07:01,900
+你可以看。
+And you can watch it.
+
+1230
+01:07:01,900 --> 01:07:05,000
+我有一些美国朋友和我一起看过。它有字幕，
+I have a bunch of American friends that I've watched it with. It's got subtitles,
+
+1231
+01:07:05,000 --> 01:07:06,300
+而且它真的非常……
+and it's just this incredibly.
+
+1232
+01:07:07,440 --> 01:07:09,480
+还是那句话，它很新颖，剪辑特别疯狂。
+Again, it's like novel, like the editing is crazy.
+
+1233
+01:07:10,680 --> 01:07:14,360
+他们非常有创意，而且剧很短。所以我推荐。
+They are just extremely creative and it's very short. So I would recommend that.
+
+1234
+01:07:14,880 --> 01:07:17,120
+最近发现的、很喜欢的产品？
+Favorite product you recently discovered that you love.
+
+1235
+01:07:17,640 --> 01:07:23,400
+我喜欢我的 Apple Watch，但讨厌它要充电——或者说我每天都得给它充电。
+I love my Apple Watch and I hate that it charges, or I have to charge it every day.
+
+1236
+01:07:23,440 --> 01:07:28,680
+所以我最近买了 Apple Watch Ultra，天哪，那太爽了。
+So I bought the Apple Watch Ultra just recently and man, that is so nice.
+
+1237
+01:07:28,720 --> 01:07:31,338
+如果你也曾被这个好产品搞得很烦，
+If you've ever been frustrated by this good product
+
+1238
+01:07:31,338 --> 01:07:34,748
+觉得我们居然搞不定给它配块好电池，
+that somehow we can't figure out how to give a good battery to, well,
+
+1239
+01:07:34,748 --> 01:07:37,610
+事实证明，如果你把它做大一点，电池就好多了。
+it turns out if you make it bigger, the battery is better.
+
+1240
+01:07:37,650 --> 01:07:39,250
+所以我挺满意的。
+So I've been happy with that.
+
+1241
+01:07:39,770 --> 01:07:41,113
+你有没有最喜欢的人生格言，
+Do you have a favorite life motto
+
+1242
+01:07:41,113 --> 01:07:43,650
+在工作或生活中经常想起来的那种？
+that you find yourself coming back to often in work or in life?
+
+1243
+01:07:44,010 --> 01:07:47,490
+有一本非虚构书，真的是我最喜欢的书之一。
+There's like one nonfiction book that really is like one of my favorite ever.
+
+1244
+01:07:47,730 --> 01:07:53,810
+书名叫 4,000 Weeks，里面有很多我觉得很酷的东西。
+It's 4,000 Weeks, and it has a lot in it that I think is cool.
+
+1245
+01:07:54,530 --> 01:07:59,105
+其中一个很酷的点，也是我特别有共鸣的地方，
+And one of the cool things is this sort of thing that was really relevant to me,
+
+1246
+01:07:59,105 --> 01:08:03,252
+就是“等我终于……”这种心态很常见，
+which is that, like, the 'when I finally' mentality is a common mentality
+
+1247
+01:08:03,252 --> 01:08:04,610
+而且有点有毒。
+and it's kind of toxic.
+
+1248
+01:08:04,730 --> 01:08:05,690
+那是什么意思？
+So, so what does that mean?
+
+1249
+01:08:05,730 --> 01:08:10,090
+就像那种“啊，等我终于把待办清单上的所有事项都勾掉”，
+It's sort of this like, ah, when I finally, you know, check off this, this,
+
+1250
+01:08:10,090 --> 01:08:11,805
+把待办清单上的所有事项都勾掉，
+all the items on my to do list,
+
+1251
+01:08:11,805 --> 01:08:15,450
+等我终于结婚了，我就能放松下来了。
+I'll finally be able to chill when I finally get like married.
+
+1252
+01:08:15,610 --> 01:08:17,170
+等我终于升职了，我就会快乐。
+I'll be happy when I finally get a promotion.
+
+1253
+01:08:18,090 --> 01:08:21,526
+这有点像是你之前谈到冥想时，对吧，
+And then this is sort of when you were talking about meditation, right,
+
+1254
+01:08:21,526 --> 01:08:24,730
+这几乎就是冥想的反面，就是说，
+this is like almost the opposite of meditation and that, you know,
+
+1255
+01:08:24,730 --> 01:08:28,515
+到头来，你的生活就是所有你活在当下的时刻。
+at the end of the day, your life is like all of the moments you lived in the moment
+
+1256
+01:08:28,515 --> 01:08:32,010
+在某种意义上，你应该尽量总是……
+and that there's the sense in which you should just try to always, like, be
+
+1257
+01:08:32,170 --> 01:08:35,751
+你知道，活在当下，而不是把自己投向一个……
+You know, in the moment and not projecting yourself towards like a future
+
+1258
+01:08:35,751 --> 01:08:36,690
+看似更好的未来。
+that seems better.
+
+1259
+01:08:36,770 --> 01:08:40,350
+可能如果你总对自己说，等我终于做到 X 时，我就会快乐。
+Like probably if you're telling yourself, when I finally do X, I'll be happy.
+
+1260
+01:08:40,430 --> 01:08:41,790
+但等你真做到 X 时，你不会快乐。
+When you do X, you will not be happy.
+
+1261
+01:08:42,150 --> 01:08:44,390
+有没有更好的说法，还是只能“别这样想”？
+Is there a better phrase to use or is it just don't do that?
+
+1262
+01:08:44,550 --> 01:08:46,830
+他们是不是会这么说，呃，我也不太清楚。
+Like do they say, uh, I don't know.
+
+1263
+01:08:46,830 --> 01:08:49,830
+对我来说，积极的版本大概是活在当下，对吧？
+I think to me that the positive version is like be in the moment, right?
+
+1264
+01:08:49,830 --> 01:08:52,590
+就是……去珍惜当下。
+It's just like, just I appreciate the moment.
+
+1265
+01:08:52,750 --> 01:08:55,839
+我最近读到一篇博客，大概说的是，
+There was a blog post recently I read that was something like,
+
+1266
+01:08:55,839 --> 01:08:59,230
+比如“享受这个三明治”，我记得大概就是这个意思。
+like enjoy the sandwich, I think is literally the sense.
+
+1267
+01:08:59,310 --> 01:09:01,759
+不知道你有没有看过，大概是有个人说，
+I don't know if you saw this or it was like somebody was like, yeah,
+
+1268
+01:09:01,759 --> 01:09:03,120
+就像你正在吃一个三明治。
+like just you're eating a sandwich.
+
+1269
+01:09:03,200 --> 01:09:06,360
+你懂的，你已经吃过很多三明治了。享受你当下这个三明治。
+You know, you've eaten many sandwiches. Like enjoy the sandwich you're in.
+
+1270
+01:09:06,440 --> 01:09:09,000
+你正在开一个团队会议，你懂的。对。
+You're in like a, a team meeting, you know. Yeah.
+
+1271
+01:09:09,040 --> 01:09:12,446
+你已经经历过很多次了。就是去享受、沉浸其中，不要总看向——
+You've been in them, like, like enjoy, like be, be in it and, and sort of not looking,
+
+1272
+01:09:12,446 --> 01:09:13,840
+总看向下一件事。
+looking towards the next thing.
+
+1273
+01:09:14,200 --> 01:09:15,880
+我参加过一次冥想静修。
+I did a meditation retreat once.
+
+1274
+01:09:16,000 --> 01:09:20,080
+那是一次十天的止语静修，吃饭时也保持安静，没人说话。
+It was a 10 day silent retreat where you eat silently, too, and no one's talking.
+
+1275
+01:09:20,160 --> 01:09:21,280
+你就坐在那里吃自己的食物。
+You just sit there and eat your food.
+
+1276
+01:09:21,610 --> 01:09:26,122
+我只记得剥一个鸡蛋剥了五分钟，只是去注意每一片——
+And I just remember peeling an egg for like five minutes and just noticing every,
+
+1277
+01:09:26,122 --> 01:09:30,230
+每一片蛋壳，还有那股气味，而且你几乎……
+every shell piece and just the smell of it all and, and it like, you almost,
+
+1278
+01:09:30,230 --> 01:09:32,250
+那种状态其实挺难进入的。
+it's like hard to get into that mode.
+
+1279
+01:09:32,610 --> 01:09:35,530
+但那个状态特别有意思，一切都变得很有趣。
+But it's such an interesting place to be where everything is just interesting.
+
+1280
+01:09:35,730 --> 01:09:40,370
+就像是“哇，这个鸡蛋”，而不是随便往嘴里塞东西。对吧。
+Like, wow, this egg versus just like stuff through my mouth. Yeah, right.
+
+1281
+01:09:40,410 --> 01:09:42,345
+而不是左手刷着 Slack，
+While you're like on Slack with your left hand,
+
+1282
+01:09:42,345 --> 01:09:44,330
+同时还听着播客。
+I'm like listening to a podcast at the same time.
+
+1283
+01:09:45,710 --> 01:09:46,270
+唉。
+Oh, man.
+
+1284
+01:09:46,790 --> 01:09:51,030
+好，最后一个问题。你整天研究 AI，观察 AI 是怎么思考的。
+Okay, final question. You study AI all day. You're watching AI, how it thinks.
+
+1285
+01:09:51,350 --> 01:09:54,148
+如果，呃，如果让一个 AI 来看你的大脑内部，会——
+If, uh, if an AI were to look inside your brain, what would,
+
+1286
+01:09:54,148 --> 01:09:55,430
+会发现什么让人意外？
+what would be surprising?
+
+1287
+01:09:55,870 --> 01:09:57,590
+它会看到什么可能让人吃惊的东西？
+What would it see that might surprise people?
+
+1288
+01:09:58,190 --> 01:10:01,430
+我想肯定是我最深层、最黑暗的秘密吧。呃，但那些是什么？
+I mean, surely my deepest, darkest secrets. Uh. But what are those?
+
+1289
+01:10:01,510 --> 01:10:04,590
+展开说说，快具体讲讲。哦，天哪。
+Get into it. Let's get into it. Oh, man. Uh.
+
+1290
+01:10:05,550 --> 01:10:09,340
+我一直有点像那种爱开玩笑的人，嗯，或者说，
+I've always been like a bit of a, a jokester, uh, or,
+
+1291
+01:10:09,340 --> 01:10:13,310
+这既是我生活的方式，也是我应对的方式。
+or that's just how I like both how I live and how I cope.
+
+1292
+01:10:13,350 --> 01:10:16,315
+我只是觉得，即使在很严肃的场合，你也应该——
+I just like think that even in serious situations, you should,
+
+1293
+01:10:16,315 --> 01:10:18,310
+应该尽量保持一点轻松感。
+you should aim to kind of have some levity.
+
+1294
+01:10:18,710 --> 01:10:23,270
+所以我觉得，如果你看我大脑内部，肯定会惊讶，
+And so I think if, if you looked inside my brain, you'd definitely be surprised, uh,
+
+1295
+01:10:23,270 --> 01:10:26,310
+基本上在任何时刻，我都在……
+that like basically at any given moment, I'm just like.
+
+1296
+01:10:27,250 --> 01:10:30,466
+专注于某个随机的搞笑事情。我会在严肃会议上，
+Focusing on some random thing that is funny and I'll be in a in a serious meeting
+
+1297
+01:10:30,466 --> 01:10:33,830
+然后心想：哎，不过你觉不觉得挺随机的，你居然——
+and I'll be like, oh, yeah, but you know, like, isn't it kind of random that you're,
+
+1298
+01:10:33,830 --> 01:10:35,760
+穿着这么一件奇怪的东西之类的？
+like, wearing this random thing or something?
+
+1299
+01:10:35,840 --> 01:10:39,351
+就是我会有些侵入性想法，我通常会把它们压住，
+It's just like I have these intrusive thoughts that I, that I keep out,
+
+1300
+01:10:39,351 --> 01:10:43,466
+但它们通常都是些烂笑话，有时候，就像你今天听到的，
+but that are all usually like just bad jokes and sometimes, as you've heard today,
+
+1301
+01:10:43,466 --> 01:10:45,040
+很遗憾，它们会跑出来。
+unfortunately, they come out.
+
+1302
+01:10:45,040 --> 01:10:47,840
+为此我很抱歉。但这可能是最让人意外的地方。
+So I'm sorry for those. But that's, that's probably the most surprising thing.
+
+1303
+01:10:48,440 --> 01:10:49,040
+我很喜欢这个回答。
+I love that.
+
+1304
+01:10:49,560 --> 01:10:51,712
+Emmanuel，非常感谢你来参加节目。最后一个问题，
+Emmanuel, thank you so much for being here. Final question,
+
+1305
+01:10:51,712 --> 01:10:52,960
+听众们能怎么帮到你？
+how can listeners be useful to you?
+
+1306
+01:10:53,300 --> 01:10:57,944
+去做点 interp 吧，读一些关于模型工作原理的内容。我是说，
+Just do some interp, read some—read about how the models work. I mean,
+
+1307
+01:10:57,944 --> 01:11:00,380
+你提到过 Dario 的帖子串。
+you mentioned like Dario's thread.
+
+1308
+01:11:00,380 --> 01:11:01,780
+我觉得那个也很棒。我是这么想的。
+I think it was great as well. I think.
+
+1309
+01:11:01,820 --> 01:11:05,095
+我觉得，这是一个非常新的领域，
+I think, you know, it's just this is such a new field,
+
+1310
+01:11:05,095 --> 01:11:09,665
+无论是 interp、AI 还是 LLM，都会受益于——
+like both interp and like AI and LLMs and I think it, it just benefits from,
+
+1311
+01:11:09,665 --> 01:11:12,940
+受益于人们的参与、关注和了解。
+from people engaging and, and, um, being informed.
+
+1312
+01:11:13,060 --> 01:11:14,691
+所以去读点东西吧，如果有什么——
+So like read things if there's,
+
+1313
+01:11:14,691 --> 01:11:18,329
+如果还有更多你想知道的、关于这些模型如何运作的事情
+if there's more that you would want to know about how these models work
+
+1314
+01:11:18,329 --> 01:11:21,590
+而我们也还没弄明白的，你可以联系我。
+that we haven't figured out, you can, you know, reach out to me.
+
+1315
+01:11:21,670 --> 01:11:24,510
+我在各种社交平台上都有账号。
+I'm on a variety of social, social platforms.
+
+1316
+01:11:24,630 --> 01:11:27,344
+你大概可以在 X 上联系我，我们也会放一些视频链接——
+You can probably reach out to me on X and we'll link to some of the videos
+
+1317
+01:11:27,344 --> 01:11:30,687
+就是你们发布过的那些视频，讲了很多我们今天聊到的内容，
+that you guys have put out that describe a lot of the stuff we've been talking about,
+
+1318
+01:11:30,687 --> 01:11:32,044
+比如 J-space 之类的东西。
+like J-space and things like that,
+
+1319
+01:11:32,044 --> 01:11:35,630
+你们团队做的一些视频真的很美，我不知道是谁做的，不过……
+There are some really beautiful videos your team has made. I don't know who does that, but...
+
+1320
+01:11:35,630 --> 01:11:36,070
+它们真的很酷。
+They're really cool.
+
+1321
+01:11:36,540 --> 01:11:38,826
+对，这是我们和设计团队合作的。
+Yeah, this is we partner with our design team
+
+1322
+01:11:38,826 --> 01:11:41,340
+所以那些酷视频都归功于他们。
+so all credit goes to them for the cool videos.
+
+1323
+01:11:41,980 --> 01:11:43,830
+太棒了。好了，再次感谢你，Emmanuel。
+Amazing. All right, well, thank you again, Emmanuel.
+
+1324
+01:11:43,830 --> 01:11:44,940
+非常感谢你来参加这期节目。
+Thank you so much for doing this.
+
+1325
+01:11:44,980 --> 01:11:45,540
+这期太棒了。
+This is amazing.
+
+1326
+01:11:46,060 --> 01:11:48,500
+谢谢 Lenny。嗯，这次很有趣。大家再见。
+Thanks, Lenny. Yeah, this was super fun. Bye, everyone.
+
+1327
+01:11:49,700 --> 01:11:50,780
+非常感谢收听。
+Thank you so much for listening.
+
+1328
+01:11:51,020 --> 01:11:54,893
+如果觉得有价值，可以在 Apple Podcasts 上订阅本节目，
+If you found this valuable, you can subscribe to the show on Apple Podcasts,
+
+1329
+01:11:54,893 --> 01:11:56,860
+也可以在 Spotify 或你喜欢的播客应用订阅。
+Spotify or your favorite podcast app.
+
+1330
+01:11:57,560 --> 01:12:00,615
+也请考虑给我们评分或留下评论，因为
+Also, please consider giving us a rating or leaving a review as
+
+1331
+01:12:00,615 --> 01:12:03,200
+这真的能帮助其他听众发现这档播客。
+that really helps other listeners find the podcast.
+
+1332
+01:12:03,720 --> 01:12:08,592
+你可以在 Lenny's Podcast 官网查看往期节目或了解更多。
+You can find all past episodes or learn more about the show at Lenny's Podcast dot com.
+
+1333
+01:12:08,592 --> 01:12:10,240
+下期再见。
+See you in the next episode.

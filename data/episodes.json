@@ -1,5 +1,39 @@
 [
   {
+    "title": "新一代全栈设计师 | Marvin Schwaibold",
+    "bilibili_title": "新一代全栈设计师 | Marvin Schwaibold",
+    "original_title": "The New Full-Stack Designer",
+    "bilibili_url": "https://www.bilibili.com/video/BV1NGxg6KEuK/",
+    "youtube_url": "https://www.youtube.com/watch?v=eojywvxqoLc",
+    "published_at": "2026-10-27 19:04:41",
+    "up": "通用人工智障",
+    "channel": "Y Combinator",
+    "duration": "01:05:44",
+    "source_duration": "01:05:43",
+    "source_published_at": "2026-10-26",
+    "speakers": [
+      "Marvin Schwaibold",
+      "Aaron Epstein"
+    ],
+    "folder_title": "新一代全栈设计师",
+    "slug": "undated-071_new-full-stack-designer",
+    "path": "videos/undated-071_new-full-stack-designer/",
+    "cover": "cover.jpeg",
+    "subtitle_file": "The New Full-Stack Designer.修复版.srt",
+    "subtitle_count": 1,
+    "outline_count": 8,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png",
+      "outline-05.png",
+      "outline-06.png",
+      "outline-07.png",
+      "outline-08.png"
+    ]
+  },
+  {
     "title": "打开 AI 黑箱：模型究竟如何思考｜Emmanuel Ameisen（Anthropic）",
     "bilibili_title": "打开 AI 黑箱：模型究竟如何思考｜Emmanuel Ameisen（Anthropic）",
     "original_title": "A mind-expanding conversation on how models actually work | Emmanuel Ameisen (Anthropic)",

@@ -1,0 +1,4594 @@
+1
+00:00:00,220 --> 00:00:02,728
+今天请来 Alex Danilowicz（本期嘉宾），
+Today, I'm joined by Alex Danilowicz,
+
+2
+00:00:02,728 --> 00:00:05,236
+Magic Patterns（AI 设计工具）联合创始人兼 CEO。
+co-founder and CEO of Magic Patterns,
+
+3
+00:00:05,236 --> 00:00:08,057
+这款 AI 设计工具几分钟就能把想法
+an AI design tool that takes you from an idea
+
+4
+00:00:08,057 --> 00:00:11,818
+变成有真实代码支撑的交互原型；
+to a real interactive code-backed prototype in minutes,
+
+5
+00:00:11,818 --> 00:00:15,580
+我们会深入了解它如何运作。
+we'll look under the hood to see how Magic Patterns works.
+
+6
+00:00:15,940 --> 00:00:18,148
+我们会听听他作为非设计师的创业故事，
+Hear his origin story as a non-designer,
+
+7
+00:00:18,148 --> 00:00:20,617
+然后点评一些初创公司网站，帮它们看起来少一点
+and then review some startup websites to help
+
+8
+00:00:20,617 --> 00:00:23,020
+vibe-coded（主要由 AI 直接生成、缺少人工打磨的）痕迹。
+make them look a little bit less vibe-coded.
+
+9
+00:00:30,930 --> 00:00:32,050
+Alex，感谢你来到节目。
+Alex, thank you for joining.
+
+10
+00:00:32,330 --> 00:00:32,770
+谢谢你，Aaron（主持人）。
+Thanks, Aaron.
+
+11
+00:00:32,890 --> 00:00:33,370
+感谢邀请我。
+Thanks for having me.
+
+12
+00:00:33,410 --> 00:00:34,570
+我看这档节目已经很久了。
+I've been watching the show for a long time.
+
+13
+00:00:34,730 --> 00:00:35,810
+哦，能请到你来太好了。
+Oh, it's awesome to have you on.
+
+14
+00:00:36,130 --> 00:00:40,090
+也许先请你介绍一下，Magic Patterns 是什么？你打造它的目标是什么？
+Maybe to start, tell us more what is Magic Patterns and what were your goals in building it?
+
+15
+00:00:40,210 --> 00:00:42,130
+好的，Magic Patterns 是一款 AI 设计工具。
+Yeah, so Magic Patterns is an AI design tool.
+
+16
+00:00:42,770 --> 00:00:46,187
+产品经理、创始人、专业设计师都用它来可视化地表达想法，
+Product managers, founders, professional designers all use us
+
+17
+00:00:46,187 --> 00:00:50,046
+无论是通过原型、交互式设计稿，
+to visually communicate their ideas, whether it's through a prototype,
+
+18
+00:00:50,046 --> 00:00:53,210
+还是可直接进入开发流程的代码导出。
+interactive mockup or a code-ready export for production.
+
+19
+00:00:53,450 --> 00:00:55,497
+你并不是设计背景出身，
+You don't come from a design background and so talk
+
+20
+00:00:55,497 --> 00:00:57,690
+所以请谈谈你们打造这款产品的灵感来源。
+a little bit about the inspiration for building this.
+
+21
+00:00:57,930 --> 00:00:58,490
+是的，确实如此。
+Yeah, it does.
+
+22
+00:00:58,570 --> 00:01:02,054
+我们的特别之处在于，我和联合创始人都不是设计师。
+We are unique in that we are non-designers, my co-founder and I,
+
+23
+00:01:02,054 --> 00:01:06,326
+我们的本职是前端工程师。实际上，我们进入 YC（创业加速器）
+we are by trade front-end engineers and actually when we got into the YC batch,
+
+24
+00:01:06,326 --> 00:01:09,810
+批次后，YC 合伙人告诉我们：去做你真正擅长的事。
+our YC partner told us, do something that you're really good at.
+
+25
+00:01:09,850 --> 00:01:10,410
+你是什么样的人？
+What are you?
+
+26
+00:01:10,610 --> 00:01:11,610
+你真正精通什么？
+What do you know really well?
+
+27
+00:01:12,070 --> 00:01:15,870
+对我们来说，那就是把 Figma（界面设计工具）设计稿转成代码。
+And for us, that was translating Figma mockups into code.
+
+28
+00:01:16,070 --> 00:01:17,670
+Magic Patterns 就是这样诞生的。
+And that's how Magic Patterns was born.
+
+29
+00:01:17,870 --> 00:01:19,870
+它就是我们自己一直想要的产品。
+It was the product that we always wanted ourselves.
+
+30
+00:01:20,070 --> 00:01:24,110
+坦白说，我一直不太擅长用 Figma。
+There was something always there where I was never really good at Figma.
+
+31
+00:01:24,550 --> 00:01:26,963
+我们当时就觉得：等等，作为创始人，
+And we just felt like, well, wait a second, I'm
+
+32
+00:01:26,963 --> 00:01:29,630
+我其实在做大量前端工程的工作。
+doing lots of front-end engineering as a founder.
+
+33
+00:01:29,830 --> 00:01:31,240
+我还得做大量设计。
+I have to do lots of design.
+
+34
+00:01:32,040 --> 00:01:34,349
+有没有一种工具，
+What is a tool that is more intuitive
+
+35
+00:01:34,349 --> 00:01:37,120
+对像我这样的非设计师来说更直观、更容易上手？
+and easier for non-designers like myself?
+
+36
+00:01:37,440 --> 00:01:40,645
+那正是很多从提示词生成设计、
+And this was the early days of a lot of prompt-to-design
+
+37
+00:01:40,645 --> 00:01:43,920
+从提示词生成原型的工具刚出现的早期阶段，对吧？
+tools or prompt-to-prototype tools coming out, right?
+
+38
+00:01:43,920 --> 00:01:45,880
+你们实际上是第一批做这件事的团队之一。
+You guys were actually one of the first that was doing that.
+
+39
+00:01:46,120 --> 00:01:50,200
+我们在 2023 年 10 月发布时，确实是市场上最早的之一。
+We were certainly one of the first when we launched in October 2023.
+
+40
+00:01:50,320 --> 00:01:53,520
+当时市场上唯一和我们类似的另一款工具是 V0（AI 界面生成工具）。
+The only other tool on the market similar to us was V0.
+
+41
+00:01:54,100 --> 00:01:57,100
+回头看看，那时候甚至还没有聊天式交互。
+And if you look back, that was before even chat was a thing.
+
+42
+00:01:57,260 --> 00:02:00,660
+当时的模型还很差，所以没有聊天功能。
+The models were so bad that there was no chat.
+
+43
+00:02:00,780 --> 00:02:02,180
+没有来回对话。
+There was no back and forth conversation.
+
+44
+00:02:02,300 --> 00:02:03,580
+真的就是给你一个输入提示。
+It was literally just prompt.
+
+45
+00:02:04,100 --> 00:02:05,900
+你给出一个设计提示词，就得到一个设计。
+You give a design prompt, you get a design.
+
+46
+00:02:06,060 --> 00:02:08,680
+没有和智能体的实际交互。
+No actual interaction with the agent. You
+
+47
+00:02:08,680 --> 00:02:11,300
+你申请 YC 时，原本是另一个想法。
+applied to YC and you had a different idea.
+
+48
+00:02:11,420 --> 00:02:14,258
+那么也许聊聊你们的故事：
+And so maybe talk about some of the, the origin story
+
+49
+00:02:14,258 --> 00:02:17,096
+你是怎么认识联合创始人的，你们在 YC 期间的经历，
+of how you met your co-founder, um, your time during
+
+50
+00:02:17,096 --> 00:02:20,000
+以及最终是什么促使你们打造了这款产品？
+YC and then ultimately what led you to building this?
+
+51
+00:02:20,320 --> 00:02:22,710
+好的，其实我和联合创始人最初申请
+Yeah, so my co-founder and I, we actually
+
+52
+00:02:22,710 --> 00:02:25,240
+YC 时，做的是一个短信分析器。
+applied to YC with a text message analyzer.
+
+53
+00:02:25,840 --> 00:02:29,102
+分析你最好的群聊、你最常用的词、你在
+Your top group chat, your top word, what's the funniest
+
+54
+00:02:29,102 --> 00:02:32,080
+2026 年所有群聊里发过最搞笑的内容是什么。
+thing you sent in 2026 across all your group chats?
+
+55
+00:02:32,600 --> 00:02:35,360
+嗯，我们当时有收入，我想这是为什么我们能进入 YC。
+Um, and we had revenue, which I think is why we got into YC.
+
+56
+00:02:35,480 --> 00:02:38,131
+但我们进去之后，YC 合伙人告诉我们：
+But we get in and our YC partner tells us,
+
+57
+00:02:38,131 --> 00:02:40,380
+“嘿，这可以是你的公司。”
+hey, this is this is your company.
+
+58
+00:02:41,340 --> 00:02:43,435
+这个点子还行，
+It's an okay idea, but I highly recommend you
+
+59
+00:02:43,435 --> 00:02:45,700
+但我强烈建议你去做你真正、真正了解的事情。
+do something that you know really, really well.
+
+60
+00:02:46,460 --> 00:02:48,693
+对我们来说，这又是前端工程，
+And for us, again, that was front-end engineering
+
+61
+00:02:48,693 --> 00:02:50,500
+以及用代码实现 Figma 设计稿。
+and implementing Figma mockups by code.
+
+62
+00:02:50,500 --> 00:02:53,900
+所以在那之后，我们经历的所有转型，基本都围绕这一点。
+And then, so then during all of our pivots, that's pretty much what we focused on.
+
+63
+00:02:54,420 --> 00:02:56,307
+你们花了多长时间才找到最终成为
+How long did it take you to get to the
+
+64
+00:02:56,307 --> 00:02:58,780
+Magic Patterns 的这个方向？
+idea that ultimately became Magic Patterns?
+
+65
+00:02:59,100 --> 00:03:00,840
+花了大约九个月。
+It took us about nine months.
+
+66
+00:03:01,240 --> 00:03:03,320
+我们一直围着它打转。
+We were always circling around it.
+
+67
+00:03:03,720 --> 00:03:06,000
+比如我们做过组件库编辑器。
+So again, we were doing a component library editor.
+
+68
+00:03:06,120 --> 00:03:08,840
+做过类似于 Storybook（组件开发工具）加强版的东西。
+We were doing kind of Storybook on steroids.
+
+69
+00:03:09,520 --> 00:03:13,696
+我们还做过一个 Chrome 扩展，可以把 localhost
+We'd had a Chrome extension that allowed you to bring localhost, um,
+
+70
+00:03:13,696 --> 00:03:17,725
+上的内容即时发布到网上，作为一种反馈工具；
+and instantly publish it on the internet as kind of like a feedback
+
+71
+00:03:17,725 --> 00:03:21,974
+这个功能后来成为 Magic Patterns 的一部分。在这一切过程中，
+tool that later became a feature of, of Magic Patterns and throughout
+
+72
+00:03:21,974 --> 00:03:26,150
+我学到最重要的一点，就是那条经典的 PG 建议。
+all of that, the main thing that I learned was that classic PG advice.
+
+73
+00:03:26,430 --> 00:03:28,270
+找到 10 个真正热爱你产品的用户。
+Find 10 users who really love you.
+
+74
+00:03:29,110 --> 00:03:30,890
+我们在那些转型方向上，没有一个能拥有
+None of those pivots had 10
+
+75
+00:03:30,890 --> 00:03:32,670
+10 个真正热爱我们产品的用户。
+users who really loved us.
+
+76
+00:03:33,110 --> 00:03:34,445
+这里“热爱”的定义是：他们愿意付费，
+Where love is defined as they're
+
+77
+00:03:34,445 --> 00:03:35,830
+并且持续使用你的产品。
+paying you and they're using you.
+
+78
+00:03:36,430 --> 00:03:39,340
+而当我们发布后来成为 Magic Patterns 的产品后，
+And then once we launched what became Magic Patterns,
+
+79
+00:03:39,340 --> 00:03:41,150
+那 10 个用户很快就出现了。
+those 10 users came very quickly.
+
+80
+00:03:41,550 --> 00:03:44,630
+在一个设计工具似乎每六个月就大幅升级的世界里，
+How do you stay differentiate in a world where it feels like
+
+81
+00:03:44,630 --> 00:03:48,150
+你们是如何保持差异化的？
+the design tools keep leveling up significantly every six months.
+
+82
+00:03:48,670 --> 00:03:49,910
+而你们也是其中——
+And you guys were one of the
+
+83
+00:03:49,990 --> 00:03:53,870
+——市面上最早的从提示词生成设计产品之一。
+The original prompt-to-design products that are out there.
+
+84
+00:03:53,870 --> 00:03:57,199
+那么你们如何在其中找到自己的受众，
+And so how do you find your audience in that and keep staying ahead
+
+85
+00:03:57,199 --> 00:04:00,590
+并一直保持领先，尤其是模型还在不断进步的情况下？
+of the game, especially as the models continue to improve as well.
+
+86
+00:04:00,990 --> 00:04:04,775
+我之前在视频里也说过：与用户交流是我们的信条。
+I've said this before on a video like customers are our religion,
+
+87
+00:04:04,775 --> 00:04:09,050
+每天和他们交流，同时还要适应新的工作流程。
+talking to them every single day and then also adapting to new workflows.
+
+88
+00:04:09,330 --> 00:04:12,894
+举个例子，一年前我们发布了 MCP（模型上下文协议），
+As an example, we released an MCP about a year
+
+89
+00:04:12,894 --> 00:04:16,650
+那是在一次内部黑客马拉松项目中。
+ago as part of a hackathon project internally.
+
+90
+00:04:17,570 --> 00:04:18,810
+我们当时没觉得它会有什么发展。
+We didn't think it would go anywhere.
+
+91
+00:04:18,970 --> 00:04:21,210
+但现在 MCP 的使用量已经完全爆发了。
+And now MCP usage has completely exploded.
+
+92
+00:04:21,330 --> 00:04:24,090
+它已经成为人们与 Magic Patterns 交互的主要方式之一。
+It's one of the main ways that people interact with Magic Patterns.
+
+93
+00:04:24,450 --> 00:04:28,035
+所以你必须几乎不断重新塑造公司，
+And so you always have to be almost rebirthing your company
+
+94
+00:04:28,035 --> 00:04:31,400
+来适应新的工作流程，尤其是在 AI 世界里。
+to adjust to new workflows, especially in the AI world.
+
+95
+00:04:31,760 --> 00:04:32,640
+我很想看一个演示。
+I'd love to see a demo.
+
+96
+00:04:32,680 --> 00:04:34,880
+你能给我们简单展示一下它是怎么工作的吗？
+Can you show us a little bit about how it works?
+
+97
+00:04:35,000 --> 00:04:35,640
+好，来吧。
+Yeah, let's do it.
+
+98
+00:04:35,680 --> 00:04:37,470
+我觉得一个好的切入点，
+I think one thing that would be good to start
+
+99
+00:04:37,470 --> 00:04:39,160
+是先展示我们自己内部是怎么用的。
+is I'll show you how we use it internally.
+
+100
+00:04:39,600 --> 00:04:41,280
+而且你们一直在 dogfooding（内部使用自家产品），对吧？
+And you're always dogfooding your product, right?
+
+101
+00:04:41,440 --> 00:04:44,009
+我们特别重视 dogfooding，但我们从不强迫，
+We are obsessed with dogfooding, but we never force the
+
+102
+00:04:44,009 --> 00:04:47,080
+因为那样你就得不到真实情况，对吧？
+dogfooding because then it's, you're not getting actual, right?
+
+103
+00:04:47,120 --> 00:04:49,272
+它必须足够好用，让你真的想用，
+It has to be good enough that you actually want
+
+104
+00:04:49,272 --> 00:04:51,480
+并且主动选择它作为你的工具，对吧？
+that and you choose that to be your tool, right?
+
+105
+00:04:51,640 --> 00:04:51,960
+正是。
+Exactly.
+
+106
+00:04:51,960 --> 00:04:53,666
+然后还要记录你不选它的时候。
+And then noting when you don't choose it.
+
+107
+00:04:53,666 --> 00:04:54,920
+所以我们一直在 dogfooding。
+And so we've been dogfooding.
+
+108
+00:04:55,760 --> 00:04:58,600
+比如为我们自己的产品做加载指示器。
+Creating our loading indicator for our own product.
+
+109
+00:04:58,960 --> 00:05:02,292
+我们参考了《WALL·E》里的 WALL·E（瓦力）和
+So you know we have WALL·E, EVE from WALL·E or some of
+
+110
+00:05:02,292 --> 00:05:06,400
+EVE（伊娃），还有如果你玩过游戏《Portal》，
+the—if you ever played Portal, the video game—we were thinking
+
+111
+00:05:06,400 --> 00:05:10,120
+我们也参考了它来思考加载指示器可能长什么样。
+through what that might look like as a loading indicator.
+
+112
+00:05:11,360 --> 00:05:14,794
+这里的好处是，所有东西都处在一个全局对话里，
+What's neat here is everything here is a global chat so we
+
+113
+00:05:14,794 --> 00:05:18,520
+所以我们可以随时修改，也可以一次做多处更新，对吧？
+can make any updates and make several updates at once, right?
+
+114
+00:05:18,780 --> 00:05:25,450
+例如，我可以选中其中两个，然后说：
+Like as an example, I could select the two of these, say,
+
+115
+00:05:25,450 --> 00:05:30,235
+给我一种新的加载指示器样式，
+give me a new style of loading indicator
+
+116
+00:05:30,235 --> 00:05:38,500
+融合 Claude Code（AI 编程工具）图标和 Grok bot（AI 助手形象）的灵感。
+that merges the inspiration of the Claude Code icon and the Grok bot.
+
+117
+00:05:39,070 --> 00:05:40,770
+当然，还有一点很方便，
+And what's really neat too is,
+
+118
+00:05:40,770 --> 00:05:42,470
+就是你可以使用 MCP。
+of course, you can use the MCP.
+
+119
+00:05:42,630 --> 00:05:44,830
+我们直接演示一下。
+So let's go ahead and do that just to kind of show it.
+
+120
+00:05:45,150 --> 00:05:46,550
+我要打开 Cursor（AI 代码编辑器）。
+I'm going to go into Cursor here.
+
+121
+00:05:47,190 --> 00:05:50,270
+通过我们的 MCP，我可以直接输入提示，
+And through using our MCP, I can just go ahead and
+
+122
+00:05:50,270 --> 00:05:53,350
+比如：添加一个我的 agent 的 ASCII 版本。
+prompt, right, add an ASCII version of my agent.
+
+123
+00:05:53,750 --> 00:05:57,864
+更有意思的是，我们看到很多企业也在这样用：他们在
+What's really neat is we're seeing lots of enterprises use this where they
+
+124
+00:05:57,864 --> 00:06:01,846
+Cursor 或 Claude Code 里已经有大量上下文，比如
+have so much context like in Cursor or Claude Code, whether it's PRDs and
+
+125
+00:06:01,846 --> 00:06:05,960
+PRD（产品需求文档）和会议记录，所以可以利用现有这些能力。
+meeting notes, so they can leverage all the skills that they already have.
+
+126
+00:06:06,280 --> 00:06:10,680
+然后能立刻把它放到可视化画布上，更好地进行沟通。
+But then instantly kind of put it on this visual canvas to better communicate.
+
+127
+00:06:10,920 --> 00:06:11,440
+嗯。
+Mm hmm.
+
+128
+00:06:12,240 --> 00:06:12,480
+对。
+Yeah.
+
+129
+00:06:12,480 --> 00:06:12,920
+这很有意思。
+It's interesting.
+
+130
+00:06:12,960 --> 00:06:16,264
+所以你在 Magic Patterns（AI 设计工具）里有了这个强大画布。
+So you've got this powerful canvas in Magic Patterns where when
+
+131
+00:06:16,264 --> 00:06:19,880
+当画布是最合适的工具时，你可以直接在里面工作。
+that's the best tool for the job, you can be working directly in there.
+
+132
+00:06:19,960 --> 00:06:22,970
+当你想在代码、Cursor 或其他应用里工作时，
+And when you want to be working in code or in Cursor or another
+
+133
+00:06:22,970 --> 00:06:25,860
+你也可以通过 MCP 直接从画布里调用内容。
+app, you can just pull directly from that through the MCP.
+
+134
+00:06:26,140 --> 00:06:27,060
+是的，没错。
+Yeah, exactly.
+
+135
+00:06:27,100 --> 00:06:30,489
+还有一点很酷：很多客户来跟我们说，我在用 Cursor 和
+And what's cool, too, is we have so many customers that come up to us
+
+136
+00:06:30,489 --> 00:06:33,940
+Claude Code，但它只给了我 localhost（本地开发地址）。
+and say, I'm using Cursor and Claude Code, but it gave me localhost.
+
+137
+00:06:34,020 --> 00:06:34,620
+我没法分享。
+I can't share.
+
+138
+00:06:35,380 --> 00:06:37,020
+我没法把原型分享给任何人。
+I can't share my prototype with anybody.
+
+139
+00:06:37,260 --> 00:06:39,220
+我们就说：哦，那我们正好有解决方案给你，对吧？
+Yeah, say, "Oh, well, we have a solution for you," right?
+
+140
+00:06:39,500 --> 00:06:39,620
+对。
+Yeah.
+
+141
+00:06:39,660 --> 00:06:42,940
+这里很酷的是，我们能看到我的同事，
+So what's cool here is actually we can see my colleague on here as well
+
+142
+00:06:42,940 --> 00:06:46,220
+以及我们刚通过那个 Cursor 提示启动的 Cursor agent，对吧？
+as the Cursor agent from that Cursor prompt that we fired off, right?
+
+143
+00:06:46,220 --> 00:06:50,020
+所以它们是同时工作的，我们可以直接在这里打开这个。
+And so they're working simultaneously and we can go ahead and just open this up here.
+
+144
+00:06:51,410 --> 00:06:55,570
+我们可以看到，这就是那个 Claude Code 的 ASCII 版本，对吧？
+We can see this is like that ASCII version of Claude Code, right?
+
+145
+00:06:57,130 --> 00:06:59,850
+然后随意尝试：换成不同颜色会是什么样？
+And kind of playing around, oh, what would it look like with different colors?
+
+146
+00:07:00,010 --> 00:07:01,930
+当然，这明显带有 Claude Code 的风格。
+Now, obviously, this is very Claude Code-esque.
+
+147
+00:07:02,010 --> 00:07:06,329
+我们只是想从中获得灵感，来制作我们自己的加载指示器，
+We're just kind of getting inspiration here to make our own loading indicator
+
+148
+00:07:06,329 --> 00:07:10,250
+而它生成了整页内容来展示它完成的工作。
+and it generated this entire page showing off the work that it had done.
+
+149
+00:07:11,340 --> 00:07:12,060
+是，没错。
+Yeah, exactly.
+
+150
+00:07:12,100 --> 00:07:16,538
+我们鼓励用户去做、而且我们自己也这么做的一件事，
+So like one thing that we encourage users to do and we've seen users
+
+151
+00:07:16,538 --> 00:07:21,460
+就是解释各种选择以及不同状态。
+do ourselves is explaining kind of the choices and the different states.
+
+152
+00:07:22,060 --> 00:07:25,924
+再举个例子，如果你看这个，我们当时在想：
+So as another example here, if you kind of look at this one, we were
+
+153
+00:07:25,924 --> 00:07:30,360
+在不同屏幕尺寸下它是什么样？
+thinking through, well, what does it look like at different screen sizes?
+
+154
+00:07:30,720 --> 00:07:34,018
+如果参考 Claude Code，它又是什么样？
+What does it, again, look like if it's Claude Code kind of playing
+
+155
+00:07:34,018 --> 00:07:37,560
+我们试来试去：它应该更像头盔，还是更像枕头？
+around with, should it look more like a helmet or like a pillow, right?
+
+156
+00:07:37,640 --> 00:07:39,400
+这些仍然是头脑风暴和探索。
+Again, just brainstorming and exploration.
+
+157
+00:07:39,880 --> 00:07:42,360
+这才是我们看到用户从我们这类工具中获得最大价值的地方。
+That's where we see users get the most value in a tool like ours.
+
+158
+00:07:42,840 --> 00:07:46,350
+对，我觉得在构思和灵感阶段最宝贵的事情之一，
+Yeah, I mean, that's I think, one of the most valuable things at the idea and
+
+159
+00:07:46,350 --> 00:07:50,200
+就是能快速生成一大堆不同的变体。
+inspiration stage is just being able to fire off a bunch of different variations.
+
+160
+00:07:51,060 --> 00:07:55,420
+而很多时候这些变体很难管理，它们散落在不同标签页里。
+And a lot of times it's hard to manage those and they're all in different tabs and stuff.
+
+161
+00:07:55,420 --> 00:07:58,640
+而 Magic Patterns 似乎能直接给你一排整齐的标签页和选项，
+And it seems like Magic Patterns is able to just give you
+
+162
+00:07:58,640 --> 00:08:01,860
+还能帮你逐一列举出来。
+a bunch of nice tabs and options and kind of enumerates.
+
+163
+00:08:01,900 --> 00:08:04,273
+各种东西都很清楚：这里是一堆颜色选项，
+Everything's like, like, here's a bunch of color options,
+
+164
+00:08:04,273 --> 00:08:06,500
+这里是主体选项，这里是不同的 agent 选项。
+here's body options, here's different agent options.
+
+165
+00:08:06,900 --> 00:08:11,666
+而且很酷的是，它能用一个非常集中、统一的方式来做这些调整和探索，
+And it's really cool to do that in a very centralized, uniform way to actually make the tweaks
+
+166
+00:08:11,666 --> 00:08:16,370
+找到你喜欢的，然后更快进入流程的下一步。
+and explore, find what you like and then be able to move on faster to the next step in the flow.
+
+167
+00:08:16,610 --> 00:08:20,649
+完全同意。我觉得尤其是过去一年，
+Totally, because I think what's changed about software development
+
+168
+00:08:20,649 --> 00:08:24,410
+软件开发的变化在于最后阶段被大幅压缩了。
+in the last year especially is the end stage is so compressed now.
+
+169
+00:08:24,450 --> 00:08:25,010
+它变得太容易了。
+It's so easy.
+
+170
+00:08:25,090 --> 00:08:26,330
+每个人都在讨论这个，对吧？
+Everyone's talking about this, right?
+
+171
+00:08:26,330 --> 00:08:28,410
+工程师们正在以光速推进。
+How engineers are just moving at the speed of light.
+
+172
+00:08:28,530 --> 00:08:29,970
+有太多 PR 要审查。
+There's too many PRs to review.
+
+173
+00:08:30,610 --> 00:08:32,850
+所以结果就是，我们可以花更多时间。
+And so as a result, we can spend more time.
+
+174
+00:08:33,900 --> 00:08:37,498
+真正去头脑风暴，思考该做什么、不该做什么，
+Actually brainstorming, thinking about what to build and what
+
+175
+00:08:37,498 --> 00:08:40,622
+并用 MagicOS（可视化上下文画布）来可视化、
+not to build and using something like MagicOS to really
+
+176
+00:08:40,622 --> 00:08:44,220
+梳理不同的想法和概念。
+visualize and think through the different ideas and concepts.
+
+177
+00:08:44,540 --> 00:08:47,060
+错误状态、加载状态，以及多个 agent
+Error states, loading states, what happens
+
+178
+00:08:47,060 --> 00:08:49,580
+同时处理一个文件时会发生什么。
+when it's multiple agents working on a file.
+
+179
+00:08:49,980 --> 00:08:52,467
+这里这个我觉得特别酷：
+Here's actually, I think this one is really
+
+180
+00:08:52,467 --> 00:08:55,300
+我们当时在思考，好，那接下来呢。
+cool where we were thinking through, well, okay.
+
+181
+00:08:56,510 --> 00:08:59,333
+很多人通过 MCP 来使用我们的产品，
+Lots of folks use the MCP to use our product, and they
+
+182
+00:08:59,333 --> 00:09:02,025
+他们可能通过 Cursor、Claude Code 或
+might be using it through Cursor or Claude Code or
+
+183
+00:09:02,025 --> 00:09:04,980
+Codex（OpenAI 编程代理）来使用，并思考那会是什么样。
+Codex and thinking through what that might look like.
+
+184
+00:09:05,620 --> 00:09:08,638
+通过 MagicOS，
+And through MagicOS, we actually brainstorm
+
+185
+00:09:08,638 --> 00:09:11,020
+我们实际上头脑风暴出了一种类似 LED 风格的设计。
+kind of this like LED-style design.
+
+186
+00:09:11,500 --> 00:09:13,500
+那么这整页就是一个画布吗？
+And so is this whole page a canvas?
+
+187
+00:09:13,900 --> 00:09:14,140
+对。
+Yeah.
+
+188
+00:09:14,140 --> 00:09:15,340
+整个界面都是一个画布。
+So this is all a canvas.
+
+189
+00:09:16,380 --> 00:09:19,280
+更酷的是，我们也把它看作像一块画板，
+And what's cool is we also think of it as almost like
+
+190
+00:09:19,280 --> 00:09:22,317
+你可以把任何上下文资料放进来，
+an artboard, right, where you can bring in any of your
+
+191
+00:09:22,317 --> 00:09:25,700
+无论是图片、PRD（产品需求文档）还是文档。
+context, whether that's images or PRDs or documentation.
+
+192
+00:09:26,640 --> 00:09:30,160
+另外很好的一点是，我们不会在这里被单条线程卡住。
+And again, what's neat is we're not blocked here by a single thread, right?
+
+193
+00:09:30,160 --> 00:09:33,906
+以前，当你使用很多这类设计工具和原型工具时，
+So historically, when you use lots of these design tools and prototyping
+
+194
+00:09:33,906 --> 00:09:37,160
+基本上要等 AI agent 完成工作，对吧？
+tools, you kind of have to wait for the AI agent to finish, right?
+
+195
+00:09:37,160 --> 00:09:40,400
+但在这里，我们有很多很多线程。
+But on any of these, we have many, many threads here.
+
+196
+00:09:40,800 --> 00:09:43,606
+所以我可以回到我们最开始做的，呃，
+So I can go back to kind of what we first did, uh, when
+
+197
+00:09:43,606 --> 00:09:46,880
+我们最初在这个画布上创建第一个设计的时候。
+we first created our, our first design here on this canvas.
+
+198
+00:09:47,240 --> 00:09:49,640
+我知道你在画布这个问题上反复思考过。
+I know you've kind of gone back and forth on canvases.
+
+199
+00:09:50,500 --> 00:09:55,458
+总的来说，作为一种界面，谈谈你的思考，
+In general as, as an interface and just talk about your thinking and what you've discovered
+
+200
+00:09:55,458 --> 00:10:00,220
+以及你在这个前沿探索中发现的什么时候它合理、什么时候不太合理。
+kind of being at the frontier of that for when it makes sense and when it doesn't totally.
+
+201
+00:10:00,260 --> 00:10:03,660
+我来展示一下，我们很早就有画布了。
+So I'll actually show that where we've had a canvas for a long time.
+
+202
+00:10:03,820 --> 00:10:06,140
+你刚才看到的是 Canvas 2.0。
+What you just kind of saw is Canvas 2.0.
+
+203
+00:10:06,660 --> 00:10:10,140
+但我们有画布大概已经两年了。
+But we've had a canvas for roughly two years now.
+
+204
+00:10:10,630 --> 00:10:12,779
+我们学到的是，顺带说一句，
+And what we learned, and actually we're hiring,
+
+205
+00:10:12,779 --> 00:10:14,390
+我们正在招聘，正在招一名设计师。
+by the way, we're hiring a designer.
+
+206
+00:10:15,110 --> 00:10:20,686
+我们招聘设计师的原因之一是，
+One of the reasons that we're hiring a designer is one of our issues that we've had is thinking through
+
+207
+00:10:20,686 --> 00:10:26,329
+我们面临的一个问题是要思考最初的新用户引导体验，以及类似渐进式披露：
+that initial onboarding experience and almost like this progressive disclosure of, okay, when does
+
+208
+00:10:26,329 --> 00:10:31,640
+什么时候让用户知道他们可以使用画布，而不是只有一条聊天线程。
+it make sense for users to know that they can use a canvas versus just kind of a single chat thread.
+
+209
+00:10:31,960 --> 00:10:36,760
+我们最初的一个认识是，画布不一定适合所有人。
+One of the initial learnings that we had is like a canvas is not necessarily for everyone.
+
+210
+00:10:37,680 --> 00:10:41,934
+实际上，我们发布的这个新产品，我们有意称它为
+And actually, this new product that we've released, we're intentionally
+
+211
+00:10:41,934 --> 00:10:46,120
+OS，因为它是管理你所有上下文资料的操作系统。
+calling it an OS because it's an operating system for all of your context.
+
+212
+00:10:46,840 --> 00:10:49,120
+所以当然，界面就是一个画布，对吧？
+So of course, like the interface is a canvas, right?
+
+213
+00:10:49,120 --> 00:10:53,000
+我们在这里看到图片，你可以导入文档，然后生成设计。
+We see here our images and you can bring in documents and then make designs.
+
+214
+00:10:53,670 --> 00:10:57,031
+但它不是传统意义上的画布，
+But it's not a canvas in the traditional sense where
+
+215
+00:10:57,031 --> 00:11:00,470
+比如 Figma 那样一侧有一堆工具。
+something like Figma has a bunch of tools on one side.
+
+216
+00:11:00,790 --> 00:11:01,030
+对。
+Yeah.
+
+217
+00:11:01,030 --> 00:11:04,222
+所以更像是你有类似画布的画板，
+So it's, it's more like you've got canvas like artboards
+
+218
+00:11:04,222 --> 00:11:06,870
+你可以进入其中进行自定义。
+that you can get in there and you can customize.
+
+219
+00:11:07,750 --> 00:11:11,521
+你还谈到了前端，以及能够实际体验你正在做的设计，
+You also talked about front end and being able to see what it's like to actually
+
+220
+00:11:11,521 --> 00:11:15,350
+而不只是拥有这些静态文件。
+experience the design that you're making and not just have these static files.
+
+221
+00:11:16,020 --> 00:11:18,100
+也许你可以给我们展示一下这方面？
+Maybe can you show us something around that?
+
+222
+00:11:18,420 --> 00:11:18,620
+酷。
+Cool.
+
+223
+00:11:18,660 --> 00:11:20,260
+好的，我们再看一个例子。
+So, yeah, let's do another example here.
+
+224
+00:11:20,500 --> 00:11:22,913
+对我们来说非常有意思的一点是，
+One thing that is really, really fun for us is we do
+
+225
+00:11:22,913 --> 00:11:25,620
+我们在世界各地举办我们称为 Magic Patterns Meetups 的活动。
+what we call Magic Patterns Meetups all over the world.
+
+226
+00:11:26,100 --> 00:11:30,540
+我一直在想，我想给我们的用户寄这些聚会的明信片。
+And I've been thinking about, I want to send our users postcards from these meetups.
+
+227
+00:11:30,900 --> 00:11:31,980
+所以我们从头开始。
+So let's take this from the top.
+
+228
+00:11:31,980 --> 00:11:34,485
+我们继续添加一些上下文资料。
+So let's go ahead and add some context. So I
+
+229
+00:11:34,485 --> 00:11:37,420
+基本上我有这些我收集的图片。
+have basically these pictures that I've pulled.
+
+230
+00:11:38,310 --> 00:11:42,030
+还有我们举办过的活动的所有描述。
+And all of these descriptions from our events that we hosted.
+
+231
+00:11:42,150 --> 00:11:44,830
+举个例子，我刚在哥伦比亚举办了我称之为
+So as an example, I was just in Colombia actually
+
+232
+00:11:44,830 --> 00:11:47,510
+Magic Patterns Medellín 的活动。
+hosting what I called Magic Patterns Medellín.
+
+233
+00:11:47,790 --> 00:11:49,270
+我们在那里见到了一些重度用户。
+And we met some power users there.
+
+234
+00:11:49,310 --> 00:11:52,270
+我了解到 Magic Patterns 在一所大学被讲授，这非常酷。
+I learned that Magic Patterns was taught at a university, which is super cool.
+
+235
+00:11:52,870 --> 00:11:58,145
+我也有这个提示词，如果我们在这里打开它，
+And I also have this prompt, right, where if we open this up here, this is a prompt
+
+236
+00:11:58,145 --> 00:12:03,260
+这是我刚想出来的提示词，类似橡胶印章旅行笔记风格的海报。
+that I just kind of came up with like a rubber stamp travel notes field poster.
+
+237
+00:12:04,060 --> 00:12:10,612
+酷的是，我可以直接告诉我们的 agent，
+And so what's cool is I can go ahead and just tell our agent,
+
+238
+00:12:10,612 --> 00:12:17,300
+引用画布上的提示词，然后制作明信片。
+reference my prompt on the canvas and then make postcards.
+
+239
+00:12:20,570 --> 00:12:22,930
+为每一个城市和图片制作。
+For every single city and image.
+
+240
+00:12:24,650 --> 00:12:24,890
+酷。
+Cool.
+
+241
+00:12:24,930 --> 00:12:28,035
+所以你有麦德林、新加坡的图片，
+So you've got images for Medellín, Singapore, you've
+
+242
+00:12:28,035 --> 00:12:31,210
+还有自由女神像，所以是纽约，然后是多伦多。
+got the statue of Liberty, so New York and then Toronto.
+
+243
+00:12:31,970 --> 00:12:32,690
+完全正确。
+Exactly right.
+
+244
+00:12:32,810 --> 00:12:39,050
+注意 agent 已经拥有画布上的所有上下文资料，对吧？
+And notice how like the agent has all of the context that is on the canvas already, right?
+
+245
+00:12:39,170 --> 00:12:42,772
+它自动知道文件系统里真正有什么，
+It automatically knows what is really in the file system, what's
+
+246
+00:12:42,772 --> 00:12:46,440
+这个画板上有什么，然后可以进行更新。
+on this artboard here and it can go ahead and then make its updates.
+
+247
+00:12:46,640 --> 00:12:50,280
+酷的是，我们看到它一次生成了全部四张明信片。
+So what's cool here is we see it generated all four postcards at once.
+
+248
+00:12:50,440 --> 00:12:52,880
+我们可以直接看这个的更大版本。
+We can go ahead and just see a bigger version of this.
+
+249
+00:12:52,880 --> 00:12:53,160
+这里。
+Here.
+
+250
+00:12:54,400 --> 00:13:00,080
+我的提示词基本上就是告诉它根据它已有的图片做一个类似印章的东西。
+My prompt was basically telling it to make kind of like a stamp of the image that it had.
+
+251
+00:13:01,120 --> 00:13:04,082
+现在因为我们在画布上，
+And now because we're on a canvas, I can go ahead and just
+
+252
+00:13:04,082 --> 00:13:07,430
+我可以直接抓取我在这里对新加坡活动的描述。
+grab kind of my description of our Singapore event right here.
+
+253
+00:13:07,430 --> 00:13:10,826
+我有一些我们聚会时的零散笔记，
+I have kind of just some random notes from when our meetup
+
+254
+00:13:10,826 --> 00:13:14,150
+是在五月，我可以继续选择这两个。
+was, it was on May and I can go ahead and select these two.
+
+255
+00:13:14,750 --> 00:13:20,377
+说，现在根据描述制作一张明信片设计，
+Say now make a design of a postcard that references
+
+256
+00:13:20,377 --> 00:13:25,870
+感谢用户参加活动。
+the description, thanking users for attending.
+
+257
+00:13:26,510 --> 00:13:31,206
+完成后，当然我们可以只快速迭代新加坡那张，
+And when this is done, of course, we can iterate on just the Singapore one specific quick and
+
+258
+00:13:31,206 --> 00:13:35,840
+然后一次性把这些更改应用到所有城市，而不用重做。
+then apply all of those changes to all the cities at once, right, without having to redo it.
+
+259
+00:13:36,120 --> 00:13:41,320
+你们团队里实际使用这个并制作这些明信片的是哪些人？
+And who are the people within your team that are actually using this and creating these postcards?
+
+260
+00:13:41,680 --> 00:13:44,680
+因为看起来不一定需要是设计师，对吧？
+Because it seems like it doesn't necessarily need to be designers, right?
+
+261
+00:13:45,040 --> 00:13:45,280
+对。
+Yes.
+
+262
+00:13:45,320 --> 00:13:47,606
+所以我们从运营团队到销售团队都在使用
+So we have everyone from our ops team
+
+263
+00:13:47,606 --> 00:13:50,120
+Magic Patterns。
+to our sales team using Magic Patterns.
+
+264
+00:13:50,600 --> 00:13:52,751
+举个例子，我们的市场负责人
+So as an example, our go to market person
+
+265
+00:13:52,751 --> 00:13:54,315
+在 Magic Patterns 里制作这些明信片，
+is creating these postcards
+
+266
+00:13:54,315 --> 00:13:56,400
+寄给用户。
+in Magic Patterns to send out to users.
+
+267
+00:13:56,800 --> 00:14:00,110
+以前，这样一位不会用 Figma
+And historically, this was someone that didn't know how
+
+268
+00:14:00,110 --> 00:14:03,280
+的人需要把这类工作外包出去。
+to use Figma would have to outsource this type of work.
+
+269
+00:14:03,400 --> 00:14:06,173
+所以我认为我们工具真正特别之处在于，
+And so that's what's really, I think, special about our,
+
+270
+00:14:06,173 --> 00:14:09,240
+我们一直在某种程度上让设计大众化。
+our tool is how much we have been kind of democratizing design.
+
+271
+00:14:10,160 --> 00:14:11,640
+你还可以导出到 Figma。
+You can export to Figma as well.
+
+272
+00:14:11,680 --> 00:14:14,040
+所以你能很好地与其他工具配合。
+So you play nicely with the other tools.
+
+273
+00:14:14,520 --> 00:14:18,710
+我们工具一个很大的不同点是，我们不依赖特定模型，
+One thing that's very different about our tool is that we're model
+
+274
+00:14:18,710 --> 00:14:23,357
+在某种程度上也不受特定功能限制，
+agnostic and in a way, feature agnostic, right, where we encourage folks
+
+275
+00:14:23,357 --> 00:14:27,776
+我们鼓励用户在需要高保真精度时导出到 Figma，
+to export to Figma if they want to and, and get high fidelity precision
+
+276
+00:14:27,776 --> 00:14:31,890
+或者导出到他们选择的编码 agent。我们的一些……
+or export to the coding agent of their choice, right? Some of our.
+
+277
+00:14:31,890 --> 00:14:34,703
+其他竞争对手，比如 Claude Design，它只使用
+Other competitors like Claude Design, as an example, it's only
+
+278
+00:14:34,703 --> 00:14:37,410
+Anthropic 模型，你只能导出到 Claude Code。
+the Anthropic models, you're only exporting to Claude Code.
+
+279
+00:14:37,770 --> 00:14:40,630
+它没有与 Figma 的集成，而像我们这样的工具则有。
+There's no integration with Figma versus a tool like ours.
+
+280
+00:14:40,790 --> 00:14:43,350
+你知道，我们几乎集成了你能想到的所有工具。
+You know, we have integrations with anything you can think of.
+
+281
+00:14:43,630 --> 00:14:45,390
+所以提示词显然非常重要。
+So prompting is obviously very important here.
+
+282
+00:14:45,470 --> 00:14:49,710
+你对大家如何改进提示词、获得更好结果有什么建议？
+What's your advice for how people should improve their prompts and get better results from them?
+
+283
+00:14:49,990 --> 00:14:53,250
+对，我觉得就是要利用工具提供的功能。
+Yeah, I think it's leveraging the features that tools offer.
+
+284
+00:14:53,250 --> 00:14:56,893
+我最近看到一个很有意思的现象：越来越多的
+What's really interesting that I've seen is there's more and more AI
+
+285
+00:14:56,893 --> 00:15:00,600
+AI 应用赋能团队出现，尤其是在大公司里。
+enablement teams popping up, especially at large, large companies.
+
+286
+00:15:00,960 --> 00:15:01,760
+那他们在做什么？
+And what are they doing?
+
+287
+00:15:01,840 --> 00:15:05,452
+他们在利用 skills、AGENTS.md 这类东西，
+They're leveraging things like skills, AGENTS.md, right? And
+
+288
+00:15:05,452 --> 00:15:09,200
+对吧？然后把与你公司相关的独特上下文带进来。
+bringing in your unique context that's relevant to your company.
+
+289
+00:15:09,680 --> 00:15:13,716
+所以当然，Magic Patterns 里也有 skills 功能，
+So of course, we have, you know, a skills feature in Magic Patterns
+
+290
+00:15:13,716 --> 00:15:17,018
+你可以直接添加自己的 skills，
+where you can go ahead and add your skills or, as we were
+
+291
+00:15:17,018 --> 00:15:21,200
+或者像我们刚聊到的，添加你的设计系统并导入你的组件。
+talking about, add your design system and bring in your components.
+
+292
+00:15:21,320 --> 00:15:23,620
+我通常第一个建议就是：花 10
+And that's what I always recommend first is like,
+
+293
+00:15:23,620 --> 00:15:26,200
+分钟把你现有的上下文导进来。
+spend the 10 minutes to bring in your existing context.
+
+294
+00:15:26,280 --> 00:15:27,960
+长期来看，它会帮你省下好几个小时。
+It'll save you hours in the long run.
+
+295
+00:15:28,680 --> 00:15:31,880
+你见过用 Magic Patterns 做出来的最酷的东西是什么？
+What's one of the coolest things that you've seen created with Magic Patterns?
+
+296
+00:15:32,520 --> 00:15:36,600
+有一个特别好玩的是这个 RollerCoaster Tycoon（过山车大亨）主题公园。
+Yeah, one of the most fun is this RollerCoaster Tycoon theme park.
+
+297
+00:15:37,000 --> 00:15:40,030
+它像是一个巧克力公园。这很疯狂，
+It's like a chocolate park, which is crazy because when
+
+298
+00:15:40,030 --> 00:15:42,731
+因为我们最开始做这个的时候，你输入一个表单提示词，
+we first started this, you know, you would prompt
+
+299
+00:15:42,731 --> 00:15:45,630
+它返回的可能只是一个下拉菜单。
+like a form and it would give you back like a dropdown.
+
+300
+00:15:45,750 --> 00:15:47,110
+那时候模型真的非常差。
+Like the models were so bad.
+
+301
+00:15:47,430 --> 00:15:50,912
+现在突然之间，
+And now suddenly, you know, we're seeing folks literally,
+
+302
+00:15:50,912 --> 00:15:54,110
+我们看到有人真的能构建完整的电子游戏体验。
+like, building entire video game experiences again.
+
+303
+00:15:54,110 --> 00:15:57,403
+这不是一个很常见的用例，
+And this is not a very common use case, but it's kind of
+
+304
+00:15:57,403 --> 00:16:01,070
+但它展示了当输入和输出都是代码时，什么事情是可能的。
+sharing what's possible when the input and output is code.
+
+305
+00:16:01,270 --> 00:16:02,390
+这个东西是为什么做的？
+And what was this created for?
+
+306
+00:16:02,690 --> 00:16:04,250
+真的就是做着玩的。
+This is really just created for fun.
+
+307
+00:16:05,050 --> 00:16:09,284
+就是在浏览器里实验各种可能性，
+You know, experimenting with what is possible in the browser and
+
+308
+00:16:09,284 --> 00:16:13,909
+并认真思考组件在这样工具里能怎么帮我们设计，对吧？
+actually thinking through how components can help you design in a tool
+
+309
+00:16:13,909 --> 00:16:18,064
+所以实际上，当你想到 RollerCoaster Tycoon
+like this, right? So actually, when you think about a Chocolate
+
+310
+00:16:18,064 --> 00:16:22,690
+里的巧克力工厂主题公园时，轨道就是一个组件。
+Factory theme park in RollerCoaster Tycoon, the track is a component.
+
+311
+00:16:23,320 --> 00:16:26,720
+Chocolate Bar Twister 这个游乐设施也是一个组件。
+The Chocolate Bar Twister ride is a component.
+
+312
+00:16:27,360 --> 00:16:29,680
+游客走的小路也是组件。
+The paths that guests walk on are components.
+
+313
+00:16:30,220 --> 00:16:33,539
+所以当你给 AI 这些护栏时，
+And so when you give the AI those guardrails, how can
+
+314
+00:16:33,539 --> 00:16:36,780
+它是怎么做到一次或两次就生成一个主题公园的？
+it output like a theme park in one shot or two shots?
+
+315
+00:16:36,980 --> 00:16:37,980
+把上下文带进来。
+Bringing in that context?
+
+316
+00:16:39,140 --> 00:16:39,500
+非常酷。
+Very cool.
+
+317
+00:16:39,500 --> 00:16:42,420
+你甚至能直接进到里面，看到所有小人走来走去？
+And you can even get right in there, see all the little people walking around?
+
+318
+00:16:42,940 --> 00:16:43,260
+对。
+Yeah.
+
+319
+00:16:43,500 --> 00:16:44,540
+而且还很惊人。
+And again, it's amazing.
+
+320
+00:16:44,620 --> 00:16:47,275
+我们当时的反应是：
+We're like, this is literally just, you know,
+
+321
+00:16:47,275 --> 00:16:49,580
+这真的只是在浏览器里做 WebGL 渲染，对吧？
+WebGL rendering in the browser, right?
+
+322
+00:16:49,580 --> 00:16:52,342
+而且你可以看到，我们的做法是使用一个名为“3D
+And we can see that, again, the way that we did this is we
+
+323
+00:16:52,342 --> 00:16:55,350
+theme park”的设计系统，对吧？
+use a design system that we called the 3D theme park, right?
+
+324
+00:16:55,350 --> 00:16:58,842
+我可以直接更新它来导入我最新的组件；
+So I can go ahead and update that to bring in my latest components,
+
+325
+00:16:58,842 --> 00:17:02,012
+更新过程简单到只需输入一句提示词，
+and updating it is really as simple as prompting something
+
+326
+00:17:02,012 --> 00:17:05,310
+比如“不要树，只要棒棒糖和更多巧克力河”。
+like, 'No trees, just lollipops and more chocolate rivers.'
+
+327
+00:17:05,550 --> 00:17:05,590
+对。
+Right.
+
+328
+00:17:06,270 --> 00:17:09,150
+这让你现在怎么看待 Magic Patterns 可能带来的可能性？
+What does this tell you now about what might be possible with Magic Patterns?
+
+329
+00:17:09,350 --> 00:17:11,990
+看起来这已经远远不只是做一张卡片、
+It seems like this is far beyond just making
+
+330
+00:17:11,990 --> 00:17:14,630
+一个网站设计之类的了。
+a postcard or website design or something.
+
+331
+00:17:15,010 --> 00:17:18,930
+对，我觉得这让我看到，设计长期以来都是二维的。
+Yeah, I think it showed me that design has historically been 2D, right?
+
+332
+00:17:18,930 --> 00:17:22,100
+如果你四年前在软件团队工作过，要在设计师、
+And it's been really hard if you worked on a software team 4 years
+
+333
+00:17:22,100 --> 00:17:25,570
+工程师和 PM 之间来回反复，那真的很难。
+ago going back and forth with the designer and the engineer and the PM.
+
+334
+00:17:25,650 --> 00:17:27,170
+确切的交互到底应该是什么样。
+What should the exact interaction be?
+
+335
+00:17:27,490 --> 00:17:32,894
+然后你看到像这样的东西：大家可以一次生成 3D 主题公园。
+Then you see something like this where people are, you know, one-shotting 3D theme
+
+336
+00:17:32,894 --> 00:17:37,750
+我觉得这让我们窥见了未来——人们可以真正设计高保真的完整交互，
+parks, and I think it's a taste of the future where people can really design
+
+337
+00:17:37,750 --> 00:17:43,310
+而且用的是他们自己的组件。
+full-on interactions that are high fidelity, you know, and using their components.
+
+338
+00:17:43,790 --> 00:17:46,190
+是啊，未来肯定会很疯狂。
+Yeah, it's gonna be a wild future for sure.
+
+339
+00:17:46,750 --> 00:17:47,190
+绝对。
+Definitely.
+
+340
+00:17:47,630 --> 00:17:50,510
+YC 下一批正在接受申请。
+YC's next batch is now taking applications.
+
+341
+00:17:50,830 --> 00:17:51,750
+有创业想法吗？
+Got a startup in mind?
+
+342
+00:17:51,750 --> 00:17:54,630
+你可以在 ycombinator.com/apply 申请。
+You apply at ycombinator.com/apply.
+
+343
+00:17:55,270 --> 00:17:56,230
+什么时候开始都不算早。
+It's never too early.
+
+344
+00:17:56,270 --> 00:17:59,150
+填写申请表也能帮你把想法梳理得更清晰。
+And filling out the app will level up your idea.
+
+345
+00:17:59,680 --> 00:18:02,251
+好，回到视频。你提到你看过成千上万个
+Okay, back to the video. You talked about how
+
+346
+00:18:02,251 --> 00:18:04,960
+vibe-coded 设计。
+you've seen thousands of vibe-coded designs.
+
+347
+00:18:05,400 --> 00:18:07,240
+你大概是这方面的世界级专家了。
+You're probably a world expert on this.
+
+348
+00:18:07,440 --> 00:18:08,600
+我们要不要点评一些网站？
+Should we review some websites?
+
+349
+00:18:08,880 --> 00:18:09,680
+我们来点评一些网站吧。
+Let's review some websites.
+
+350
+00:18:09,680 --> 00:18:10,520
+会很有意思。
+This'll be a lot of fun.
+
+351
+00:18:10,600 --> 00:18:11,120
+好，太好了。
+Okay, great.
+
+352
+00:18:11,400 --> 00:18:11,800
+好。
+All right.
+
+353
+00:18:11,880 --> 00:18:13,360
+第一个，看起来是 Ego（被点评的网站）。
+First, looks like we got Ego.
+
+354
+00:18:14,080 --> 00:18:14,960
+智能体是机器。
+Agents are machines.
+
+355
+00:18:15,200 --> 00:18:16,120
+我们把它们变成人。
+We make them people.
+
+356
+00:18:16,720 --> 00:18:18,756
+Ego 是一家应用型 AI 研究实验室，
+Ego is an applied AI research lab building
+
+357
+00:18:18,756 --> 00:18:21,200
+打造与人类无法区分的个人智能体。
+personal agents indistinguishable from humans.
+
+358
+00:18:22,150 --> 00:18:23,350
+好，行，你怎么看？
+Okay, all right, what do we think?
+
+359
+00:18:24,070 --> 00:18:25,830
+首先，我是说，它挺酷的。
+So first off, I mean, it's cool.
+
+360
+00:18:25,950 --> 00:18:28,910
+我觉得关于落地页，人们普遍忽略的一点是：
+Here's, here's the thing that I think people miss about landing pages in general.
+
+361
+00:18:29,430 --> 00:18:31,870
+真正要追踪的指标是：它有没有在转化？
+The real metric to track is does it convert?
+
+362
+00:18:32,230 --> 00:18:34,150
+我显然不知道……
+And I obviously don't know what.
+
+363
+00:18:34,230 --> 00:18:36,550
+它到底有没有在转化。
+Whether this is converting or not.
+
+364
+00:18:36,550 --> 00:18:39,230
+但我的感觉是，我也说不好。
+But my sense is like, I don't know.
+
+365
+00:18:39,270 --> 00:18:40,590
+它不够清晰易懂。
+It's not accessible.
+
+366
+00:18:41,190 --> 00:18:42,670
+我不知道 CTA 在哪里。
+I don't know where the CTA is.
+
+367
+00:18:42,710 --> 00:18:43,750
+CTA 是 Ronin（页面上的名称）吗？
+The CTA, Ronin?
+
+368
+00:18:44,200 --> 00:18:44,440
+对。
+Yeah.
+
+369
+00:18:44,440 --> 00:18:46,480
+你觉得他们想让我们在这里做什么？
+What do you think they want us to do here?
+
+370
+00:18:47,760 --> 00:18:50,240
+我的第一反应是，我应该继续往下滚动。
+I mean, my initial reaction is like, I should just keep scrolling.
+
+371
+00:18:50,480 --> 00:18:51,080
+是的，对吧。
+Yeah, right.
+
+372
+00:18:51,480 --> 00:18:55,319
+嗯，我们从自己的落地页学到的一个有意思的事情是，
+Um, one interesting thing that we've learned about our
+
+373
+00:18:55,319 --> 00:18:59,575
+几乎所有做 vibe-coded
+own landing page is, you know, everyone that has a vibe-coded
+
+374
+00:18:59,575 --> 00:19:03,080
+工具的人都会放一个输入框，让你输入提示词开始使用。
+tool has that input where to prompt to get started.
+
+375
+00:19:03,600 --> 00:19:06,558
+有一段时间，我们为了尝试做得更有创意，
+And for a little while, we removed it to try and be
+
+376
+00:19:06,558 --> 00:19:09,960
+把输入框去掉了，结果转化率直线下降。
+more creative and our conversion rate totally tanked.
+
+377
+00:19:10,800 --> 00:19:12,400
+我们也就明白了为什么大家都会这么做，对吧？
+We learned why people do that, right?
+
+378
+00:19:12,400 --> 00:19:16,720
+所以我总是鼓励大家去想：你最终想在这里达成什么？
+And so I always encourage folks to think about, like, what are you ultimately trying to do here?
+
+379
+00:19:17,280 --> 00:19:19,280
+好，然后页面里好像还嵌了一个应用。
+Okay, so then there's like an app in there.
+
+380
+00:19:20,200 --> 00:19:22,624
+是啊，我已经往下滚了一半，
+Yeah, I guess I'm halfway down the page and I'm
+
+381
+00:19:22,624 --> 00:19:24,920
+还是不清楚这到底是什么、面向谁。
+still unclear what is this and who is it for.
+
+382
+00:19:26,190 --> 00:19:28,470
+我猜有个候补名单，所以可能还没正式上线。
+I guess there's a waitlist, so maybe it's not live yet.
+
+383
+00:19:29,430 --> 00:19:29,870
+好，我们继续。
+Yeah, let's.
+
+384
+00:19:30,000 --> 00:19:31,520
+现在他们才开始进入更多产品描述。
+And now they're getting into more of the description.
+
+385
+00:19:31,600 --> 00:19:34,493
+它是一个有性格、有记忆、有自己想法的语音
+It's a voice agent with a personality, a memory and a mind of its own that
+
+386
+00:19:34,493 --> 00:19:37,680
+agent；这句话感觉应该放在页面最顶部，对吧？
+feels like the kind of thing that should have been all the way at the top, right?
+
+387
+00:19:37,800 --> 00:19:40,489
+网站应该从这里开始，因为这才是
+Like the site should start here with this because
+
+388
+00:19:40,489 --> 00:19:43,440
+CTA，也就是加入候补名单。
+this is the call to action, which is join the waitlist.
+
+389
+00:19:43,560 --> 00:19:46,720
+但我们得往下滚动很久才能到这里。
+But we had to scroll down pretty far in order to even get to this point.
+
+390
+00:19:47,520 --> 00:19:47,800
+完全同意。
+Totally.
+
+391
+00:19:47,840 --> 00:19:50,925
+我有点想笑：这个主要的加入 CTA，
+And I'm kind of laughing here that like this main CTA
+
+392
+00:19:50,925 --> 00:19:54,010
+我还得先做一次交互才看到。
+to join, I had to do, there was an interaction there.
+
+393
+00:19:54,050 --> 00:19:58,250
+这几乎又是一个可能由 vibe-coded 生成的例子。
+That's almost another example of something that maybe was potentially vibe-coded.
+
+394
+00:19:58,770 --> 00:20:03,010
+AI agents 特别喜欢加动画之类的东西，对吧？
+AI agents, they love adding animations and things like that, right?
+
+395
+00:20:03,210 --> 00:20:04,170
+过度加动画。
+Overly animating.
+
+396
+00:20:04,490 --> 00:20:07,630
+所以，为什么不直接一开始就把输入框展示出来呢？
+And so, you know, why not just start it with that,
+
+397
+00:20:07,630 --> 00:20:10,770
+对，这确实很有意思。嗯。
+right? Yeah, that's actually interesting. Um.
+
+398
+00:20:11,620 --> 00:20:14,940
+我在 Creative Market（设计素材平台）公司时做过一些测试。
+We ran some tests at my company, Creative Market.
+
+399
+00:20:15,540 --> 00:20:21,357
+当输入表单直接展开显示在页面上时，
+And when you had the input form visible and expanded directly on the page, conversion rate was much
+
+400
+00:20:21,357 --> 00:20:27,032
+转化率比要求用户先点击、再输邮箱、或弹出窗口、或再进到表单里要高得多。
+higher than requiring somebody to click through to then put in an email address or pop up a window
+
+401
+00:20:27,032 --> 00:20:32,920
+所以只要可能，我会建议直接开始。
+or get to the form or something like that. So I would recommend whenever possible, yeah, just start.
+
+402
+00:20:33,000 --> 00:20:36,080
+把文本框直接打开，让用户可以直接在里面输入。
+With the text box open and people can just type, type right in it.
+
+403
+00:20:36,320 --> 00:20:39,282
+这会对用户在那里填写信息的转化率产生显著影响，
+It's pretty shocking how that actually significantly
+
+404
+00:20:39,282 --> 00:20:42,760
+挺让人震惊的。
+impacts conversion rate of people entering information there.
+
+405
+00:20:43,280 --> 00:20:44,200
+对，这就是我鼓励的做法。
+Yeah, and that's what I encourage.
+
+406
+00:20:44,280 --> 00:20:48,742
+要为真实用户着想。我觉得 AI agents
+Like think about the human, I think AI agents, they're, again, they're
+
+407
+00:20:48,742 --> 00:20:53,280
+又会被鼓励去做一些好玩的动效和过度动画，对吧？
+rewarded for doing fun things like motion and overly animating, right?
+
+408
+00:20:53,320 --> 00:20:55,520
+但真实用户不会在你的网站上花太多时间。
+But the human is not gonna spend a lot of time on your site.
+
+409
+00:20:55,640 --> 00:20:56,280
+他们很着急。
+They're in a rush.
+
+410
+00:20:56,570 --> 00:20:59,330
+对，我们看到很多这种情况。到处都是闪烁的圆点。
+Yeah, we see a lot of that. There's blinking dots everywhere.
+
+411
+00:21:00,500 --> 00:21:03,717
+嗯，我不知道有没有在放音乐，
+Um, I don't know if music is playing, but it looks like there's
+
+412
+00:21:03,717 --> 00:21:07,060
+但看起来好像有某种，比如音乐推子之类的东西在动。
+some type of, yeah, like music faders or something going there.
+
+413
+00:21:07,780 --> 00:21:10,940
+所以，嗯，真的很难看清到底发生了什么。
+Um, and so, yeah, it's, it's kind of hard to tell what's going on.
+
+414
+00:21:11,140 --> 00:21:15,460
+嗯，我挺喜欢整体氛围，它像是一种暗黑模式下的红色。
+Um, I like the overall vibe. It's like it's got this kind of dark mode red.
+
+415
+00:21:15,540 --> 00:21:21,460
+感觉很像 80 年代电子游戏那种风格，我觉得挺有意思。
+It feels very like 80s video game kind of, um, which I think is, is interesting.
+
+416
+00:21:22,180 --> 00:21:27,269
+但有些东西也很难看清，比如右边好像有个输入框之类的，
+Um, but it's also hard to read some of the things like it actually looks like maybe there's an input box
+
+417
+00:21:27,269 --> 00:21:32,540
+我差点错过了，因为我根本不清楚它存在。
+or something over on the right hand side and I almost missed it because it's not clear to me that it exists.
+
+418
+00:21:33,220 --> 00:21:38,441
+对，这是另一种我经常看到的 vibe-coded 痕迹：
+Yeah, this is another kind of vibe-coded smell that I commonly see is you can see
+
+419
+00:21:38,441 --> 00:21:43,900
+你能看到我的鼠标可以跟它交互，但我其实打不了字。
+my mouse here is letting me interact with this, but I can't actually type anything.
+
+420
+00:21:44,760 --> 00:21:45,080
+对。
+Right.
+
+421
+00:21:45,120 --> 00:21:48,960
+所以，然后我就会想，这到底怎么回事？
+And so, you know, and then I'm like, well, what's going on?
+
+422
+00:21:49,360 --> 00:21:50,040
+是啊，是啊。
+Yeah, yeah.
+
+423
+00:21:50,080 --> 00:21:53,889
+我见过一种模式：有时候页面里嵌入的是真实的
+There's a pattern that I've seen where sometimes you have actual UI elements
+
+424
+00:21:53,889 --> 00:21:57,520
+UI 元素，它们真的可交互，对吧？
+embedded in the page, but they're actually real and interactive, right?
+
+425
+00:21:57,560 --> 00:21:59,200
+能做到这一点很酷。
+And that's cool to be able to do that.
+
+426
+00:21:59,760 --> 00:22:02,600
+我觉得现在 AI agents 让这件事简单多了。
+That's something that I think agents make a lot simpler now.
+
+427
+00:22:02,640 --> 00:22:04,160
+这在以前要难得多。
+That was much harder to do before.
+
+428
+00:22:04,660 --> 00:22:07,306
+所以页面会感觉非常可交互，
+And so it can feel very interactive and like you can actually
+
+429
+00:22:07,306 --> 00:22:09,900
+就像你真的能在网页上直接试用产品，这特别酷。
+try out the product live on the page, and that's super cool.
+
+430
+00:22:10,460 --> 00:22:14,043
+但反过来说，如果它看起来像那样，却产生误导，
+But yeah, the flip side is when it looks like something like that and it becomes misleading
+
+431
+00:22:14,043 --> 00:22:17,340
+让你以为自己能交互，实际上不行，那就有问题了。
+and you think that you can interact with something but you're actually not able to.
+
+432
+00:22:17,900 --> 00:22:20,500
+对，我觉得重要的是聊聊这为什么重要。
+Yeah, and I think it's important to talk about like why does this matter?
+
+433
+00:22:20,660 --> 00:22:25,860
+如果网站上出现 vibe-coded 痕迹，为什么会重要，对吧？
+Why does it matter if there's a vibe-coded smell on the website, right?
+
+434
+00:22:25,860 --> 00:22:29,038
+我觉得它重要，是因为你能注意到我们被这个输入框分心，
+And I think it matters because you can notice how distracted
+
+435
+00:22:29,038 --> 00:22:32,406
+总想打字，
+we are by this input box trying to type and we're distracted from
+
+436
+00:22:32,406 --> 00:22:35,520
+结果偏离了核心目标——也就是原本应该关注的 CTA。
+the core thing, which is whatever the CTA is supposed to be.
+
+437
+00:22:35,520 --> 00:22:38,280
+我想这里就是“加入候补名单”。
+I guess, in this case, right, it's join the waitlist.
+
+438
+00:22:38,440 --> 00:22:38,880
+对，挺酷的。
+Yeah, it's cool.
+
+439
+00:22:38,920 --> 00:22:43,425
+往下滚动后，你会看到人物照片，它们很契合那种
+If you scroll down, you see the pictures of people, they match that vibe,
+
+440
+00:22:43,425 --> 00:22:47,480
+80 年代电子游戏复古氛围，我觉得很酷。
+that kind of 80s video game throwback vibe, which I think is cool.
+
+441
+00:22:48,520 --> 00:22:50,560
+你注意到顶部有那个眼球。
+You know, they had that eyeball up at the top.
+
+442
+00:22:51,420 --> 00:22:52,980
+它很有冲击力。
+which is like very provocative.
+
+443
+00:22:54,620 --> 00:22:55,580
+它让我有点发毛。
+It creeps me out a little bit.
+
+444
+00:22:55,620 --> 00:22:57,500
+就像有个眼球在直直地盯着我。
+There's like an eyeball looking directly at me.
+
+445
+00:22:57,780 --> 00:23:00,238
+但它挺有意思，而且如果你追求的就是这种氛围，
+But it's interesting and it becomes memorable
+
+446
+00:23:00,238 --> 00:23:02,380
+它会变得令人难忘。
+if that's the vibe that you're going for.
+
+447
+00:23:02,700 --> 00:23:06,860
+不过，我确实是往下滚到一半才明白这是什么。
+But yeah, it just wasn't obvious to me what this is until we got halfway down the page.
+
+448
+00:23:06,900 --> 00:23:10,185
+所以我觉得，可能需要更清楚地说明它是什么，
+And so I think just a little more about what it is and what's
+
+449
+00:23:10,185 --> 00:23:13,402
+以及你希望用户采取什么行动。就连右上角的
+the action that you want people to take, even that call to
+
+450
+00:23:13,402 --> 00:23:17,030
+CTA（行动号召）按钮，也只是写着 Ronin，对吧？
+action in the top right, that button, it just says Ronin, right?
+
+451
+00:23:17,430 --> 00:23:18,790
+我不知道 Ronin 是什么。
+I don't know what Ronin is.
+
+452
+00:23:19,190 --> 00:23:21,510
+我猜公司名是 Ego。
+The company's called Ego, I guess.
+
+453
+00:23:21,510 --> 00:23:22,390
+这里写的是 Ronin。
+It says here Ronin.
+
+454
+00:23:22,590 --> 00:23:23,390
+九月发布。
+Launching September.
+
+455
+00:23:23,550 --> 00:23:24,590
+Ronin 是一款产品吗？
+Is Ronin a product?
+
+456
+00:23:24,670 --> 00:23:25,430
+它是一个模型吗？
+Is it a model?
+
+457
+00:23:25,630 --> 00:23:27,950
+它到底算什么？我不太清楚这是什么。
+Is it like—it's not clear to me what this is.
+
+458
+00:23:28,310 --> 00:23:30,790
+所以我最终只觉得非常困惑。
+And so I think ultimately, I'm just left very confused.
+
+459
+00:23:31,310 --> 00:23:33,011
+顺便说，这是另一个 vibe-coded
+This is another vibe-coded smell,
+
+460
+00:23:33,011 --> 00:23:34,830
+痕迹。这里写着“滚动”。
+by the way. It says scroll right here.
+
+461
+00:23:36,540 --> 00:23:37,660
+我本来就会自然地滚动。
+I'm naturally gonna scroll.
+
+462
+00:23:37,740 --> 00:23:42,362
+我个人觉得，没见过多少情况会让人有必要在那里写“scroll”，
+Like I don't think personally, I don't know many instances where a human would
+
+463
+00:23:42,362 --> 00:23:46,629
+因为用户自然会滚动；
+feel the need to put scroll there because naturally you're gonna do that
+
+464
+00:23:46,629 --> 00:23:51,180
+而我经常看到的是 AI agent 总想催促用户去做某件事。
+versus I commonly see agents trying to always nudge the user to do something.
+
+465
+00:23:51,300 --> 00:23:51,860
+嗯。
+Uh huh.
+
+466
+00:23:51,900 --> 00:23:53,020
+我们要看下一个吗？
+Should we take a look at another one?
+
+467
+00:23:53,100 --> 00:23:53,340
+好。
+Yeah.
+
+468
+00:23:53,780 --> 00:23:54,020
+好。
+Okay.
+
+469
+00:23:54,100 --> 00:23:57,400
+我们来看 Sentient OS（被点评的网站）：你的 Mac 有感知了；
+We got Sentient OS, your Mac sentient, an on-device
+
+470
+00:23:57,400 --> 00:24:00,777
+一个端侧 LLM 理解你的整个生活，
+LLM understands your entire life, then proactively
+
+471
+00:24:00,777 --> 00:24:04,000
+然后主动提出通过操作电脑来帮你完成工作。
+offers to get your work done through computer use.
+
+472
+00:24:04,800 --> 00:24:05,840
+好，这有点意思。
+Okay, that's interesting.
+
+473
+00:24:06,360 --> 00:24:10,600
+接下来这里应该是一张打开的笔记本电脑的图片。
+And then I guess we have an image here of a laptop that's open.
+
+474
+00:24:11,200 --> 00:24:11,560
+哇。
+Whoa.
+
+475
+00:24:11,840 --> 00:24:11,880
+好。
+Okay.
+
+476
+00:24:12,160 --> 00:24:12,360
+好。
+Okay.
+
+477
+00:24:12,360 --> 00:24:13,600
+滚动时它就合上了。
+And it closes when you scroll.
+
+478
+00:24:14,200 --> 00:24:14,600
+等一下。
+Hold on.
+
+479
+00:24:14,680 --> 00:24:15,640
+稍等，退回去一下。
+Go back for a second.
+
+480
+00:24:15,920 --> 00:24:18,600
+哦，所以，好。
+Oh, so, all right.
+
+481
+00:24:18,600 --> 00:24:21,240
+有一堆东西进入屏幕中间。
+So there's a bunch of stuff going into the middle.
+
+482
+00:24:22,110 --> 00:24:25,017
+然后你稍微往下滚，上面写着：“在你睡觉时，
+And then when you scroll down a little, it says,
+
+483
+00:24:25,017 --> 00:24:28,670
+你的 Mac 理解你的整个生活。”
+"While you sleep, your Mac understands your entire life."
+
+484
+00:24:29,390 --> 00:24:29,710
+对吧？
+Okay?
+
+485
+00:24:30,310 --> 00:24:31,950
+我觉得，注意一下这里。
+And I think, notice something here.
+
+486
+00:24:32,590 --> 00:24:36,390
+我在这里真的很难精准地跟住这个滚动。
+I'm really struggling to perfectly match the scroll.
+
+487
+00:24:36,830 --> 00:24:40,560
+有一件事：我从来没见过哪家
+One thing I, I never see a, you know, decacorn
+
+488
+00:24:40,560 --> 00:24:44,190
+decacorn（估值超过 100 亿美元的公司）做任何滚动劫持。
+company ever do any kind of scroll jacking.
+
+489
+00:24:44,390 --> 00:24:46,710
+对，为什么它们不做任何滚动劫持？
+Yes, why don't they do any kind of scroll jacking?
+
+490
+00:24:46,790 --> 00:24:49,150
+因为它不会带来转化，而且让人很烦。
+Well, because it does not convert and it's frustrating.
+
+491
+00:24:50,030 --> 00:24:53,750
+嗯，我经常看到 AI agent 做的另一件事，对吧？
+Um, another thing that I see AI agents doing a lot, right?
+
+492
+00:24:53,750 --> 00:24:58,630
+我的意思是，注意看，好，比如我错过了，对吧？
+I mean, just notice like, okay, if I—I missed it, right?
+
+493
+00:24:59,070 --> 00:25:01,043
+再去看那些拥有数百万、
+Again, go to like the top Fortune 500 company
+
+494
+00:25:01,043 --> 00:25:03,390
+上千万页面浏览量的顶级财富 500 强公司网站。
+sites that have millions and millions of page views.
+
+495
+00:25:03,660 --> 00:25:04,740
+它们不做滚动劫持。
+They are not scroll jacking.
+
+496
+00:25:05,180 --> 00:25:05,460
+对。
+Yeah.
+
+497
+00:25:05,700 --> 00:25:09,309
+滚动劫持让人烦的地方在于，
+What's frustrating about it is you're used to the precision
+
+498
+00:25:09,309 --> 00:25:12,484
+你已经习惯了滚动时在网站里移动的那种精确感；
+of how you move through a site when you're scrolling,
+
+499
+00:25:12,484 --> 00:25:15,660
+当你进入一个网站，它的滚动精度却不一样。
+and when you hit a site and it's different precision.
+
+500
+00:25:16,540 --> 00:25:20,329
+你停止碰鼠标或触控板后，它还在继续滚，
+You know, it keeps scrolling after you've stopped touching the
+
+501
+00:25:20,329 --> 00:25:24,260
+打乱你的操作，感觉很不自然。
+mouse or the trackpad, it messes things up and it feels unnatural.
+
+502
+00:25:24,970 --> 00:25:28,050
+所以拜托大家，别再滚动劫持了。
+Um, and so please, everybody, please stop scroll jacking.
+
+503
+00:25:28,850 --> 00:25:29,570
+这很简单。
+It's very simple.
+
+504
+00:25:29,770 --> 00:25:31,576
+保持正常滚动就好，
+Just keep the normal scroll because there's
+
+505
+00:25:31,576 --> 00:25:33,480
+因为这里确实有一些很酷的效果，对吧？
+some cool stuff that's happening here, right?
+
+506
+00:25:33,520 --> 00:25:35,660
+比如，一开始笔记本电脑屏幕是打开的，
+Like, like, okay, we started out with the laptop
+
+507
+00:25:35,660 --> 00:25:38,120
+一堆东西进入屏幕中间，对吧？
+screen open, a bunch of things are going into it, right?
+
+508
+00:25:38,240 --> 00:25:40,835
+盖子合上，我觉得它想告诉你，
+The lid closes and I think it's trying to tell you,
+
+509
+00:25:40,835 --> 00:25:43,240
+这一切都是在你睡觉时发生的。
+like, all this stuff happens while you sleep.
+
+510
+00:25:43,360 --> 00:25:46,229
+盖子合上，然后你醒来时工作已经完成；
+The lid is closed and then you wake up to your finished work,
+
+511
+00:25:46,229 --> 00:25:49,040
+接着它醒来了，这里列出了它做完的所有事情。
+and so it wakes up and here's all the things that it's done.
+
+512
+00:25:49,480 --> 00:25:50,600
+然后它会带你浏览这些内容。
+And then it takes you through that.
+
+513
+00:25:50,640 --> 00:25:52,510
+所以这个视觉和体验。
+So the visual and the experience.
+
+514
+00:25:52,550 --> 00:25:56,396
+我喜欢这个网站的一点是，
+What I like about this one is it's actually reinforcing the concepts
+
+515
+00:25:56,396 --> 00:26:00,242
+它的视觉真的在强化它想表达的概念：你睡觉时，盖子合上，
+that it's trying to tell you about when it talks about when you sleep,
+
+516
+00:26:00,242 --> 00:26:03,750
+电脑处于睡眠状态，然后它就——噢。
+the lid closes, the computer is asleep, and then it's like, oh.
+
+517
+00:26:03,750 --> 00:26:04,190
+它醒来了。
+It wakes up.
+
+518
+00:26:04,190 --> 00:26:05,390
+它在你睡觉时完成所有工作。
+It does all the work while you sleep.
+
+519
+00:26:05,470 --> 00:26:07,930
+所以当你醒来，然后砰——笔记本电脑又打开了，
+So when you wake up and then boom, the laptop comes
+
+520
+00:26:07,930 --> 00:26:10,630
+所有工作都完成了，它展示给我们看。
+back out, all the work is done and it's showing it to us.
+
+521
+00:26:11,240 --> 00:26:15,613
+我觉得，这就是动画最好的用法：
+That's, I think, the best version of an animation: not animation for animation's sake,
+
+522
+00:26:15,613 --> 00:26:19,626
+不是为了动画而做动画，而是动画真正强化你想表达的重点，
+but animation that actually reinforces the point that you're trying to make and
+
+523
+00:26:19,626 --> 00:26:23,640
+用静态画面无法做到的方式来传达信息。
+communicates something in a way that being static would not have been able to do.
+
+524
+00:26:23,960 --> 00:26:24,280
+完全同意。
+Totally.
+
+525
+00:26:24,320 --> 00:26:28,720
+它确实帮我理解了这个产品是做什么的。
+I mean, it's definitely helping me understand what this product does.
+
+526
+00:26:29,760 --> 00:26:35,248
+但我也一直觉得，如果你在创意上用力过猛，
+But I also always think when you're trying to be too creative or something,
+
+527
+00:26:35,248 --> 00:26:39,940
+这种效果放在产品介绍页或视频里可能很好，但不适合放在落地页上。
+that's great on a product page or a video, not your landing page.
+
+528
+00:26:40,260 --> 00:26:41,020
+你的落地页。
+Your landing page.
+
+529
+00:26:41,140 --> 00:26:43,666
+你最想让我做的第一件事就是点击这个按钮，
+The number one thing you want to try and get me to
+
+530
+00:26:43,666 --> 00:26:46,580
+立刻下载 macOS 版。
+do is click this button, download for macOS right now.
+
+531
+00:26:46,580 --> 00:26:50,338
+另外，单说这个按钮，这种发光效果，
+Also, just speaking about that button for a second,
+
+532
+00:26:50,338 --> 00:26:54,620
+又是 vibe-coded 痕迹的一种表现。
+this kind of glow, another bit of a vibe-coded smell again.
+
+533
+00:26:55,110 --> 00:26:57,550
+而且，它确实吸引了我的注意力。
+And hey, it's definitely getting my attention.
+
+534
+00:26:58,390 --> 00:27:03,574
+但我注意到，AI agents
+Uh, but one thing that I've noticed is AI agents, they love to
+
+535
+00:27:03,574 --> 00:27:09,070
+很喜欢过度使用这种渐变和巨大的投影。
+overdo it on this kind of gradient, on this massive drop shadow.
+
+536
+00:27:09,910 --> 00:27:13,323
+再次强调，它确实吸引了我的注意，
+Uh, and again, like it got my attention, but it's just one thing
+
+537
+00:27:13,323 --> 00:27:16,670
+但如果你不想做这种风格，这一点需要警惕。
+to be wary of if that's something that you're trying to not do.
+
+538
+00:27:16,910 --> 00:27:17,190
+对。
+Yep.
+
+539
+00:27:17,270 --> 00:27:19,230
+再看看页面往下有什么？
+And then what do we have further down the page here?
+
+540
+00:27:22,930 --> 00:27:24,050
+我们看看 recipes 这个部分。
+So let's see recipes.
+
+541
+00:27:25,410 --> 00:27:29,290
+我觉得有意思的地方还是，这就是主 CTA，对吧？
+I think what's interesting here is again, this is that main CTA, right?
+
+542
+00:27:29,290 --> 00:27:33,251
+我滚动完整个页面，能感觉到你真的很想让我点击这个按钮，
+I scroll through the whole thing and I'm, I, you really want me to click
+
+543
+00:27:33,251 --> 00:27:37,690
+或者用 Homebrew 安装，但它太小了。
+this button or perhaps even do this Homebrew installation, but it's so small.
+
+544
+00:27:38,610 --> 00:27:42,250
+即使我把页面放到 100%，也几乎看不清它，对吧？
+Like I'm at like 100% and I can barely see it, right?
+
+545
+00:27:42,410 --> 00:27:44,690
+而且这里有一种悬停效果。
+Uh, and like this has this kind of hover effect.
+
+546
+00:27:44,730 --> 00:27:47,450
+我猜这会跳转到 GitHub，但我几乎读不清上面的字。
+I guess this brings me to the GitHub. I can barely read that.
+
+547
+00:27:48,500 --> 00:27:50,620
+是啊，那些字真的很难读，对吧？
+Yeah, it's really tough to read those, right?
+
+548
+00:27:50,620 --> 00:27:51,260
+比如 “free” 这个词。
+Like free.
+
+549
+00:27:52,460 --> 00:27:55,060
+定价页上把 “free” 做得很大是有原因的。
+There's a reason that free is giant on pricing pages.
+
+550
+00:27:55,940 --> 00:27:57,220
+是啊，“免费下载”。
+Yeah, download for free.
+
+551
+00:27:57,900 --> 00:27:58,580
+对，就是这样。
+Yeah, exactly.
+
+552
+00:27:59,060 --> 00:27:59,300
+没错，没错。
+Right, right.
+
+553
+00:27:59,300 --> 00:28:04,500
+我发誓，可能是因为角度问题，但这其实不重要。
+And I swear it's, it's, you know, perhaps it's because of the angle, but it doesn't really matter.
+
+554
+00:28:04,620 --> 00:28:08,100
+我现在根本看不清 “free” 这个词。如果你有重要信息要传达，
+I cannot see the word free, right, right now, if you have something important
+
+555
+00:28:08,100 --> 00:28:11,580
+不管用户从什么角度看，都不应该受到影响。
+to communicate, it shouldn't matter the angle that the user is looking at it.
+
+556
+00:28:11,660 --> 00:28:13,140
+它应该显而易见到不能再明显。
+It should be painfully obvious.
+
+557
+00:28:13,680 --> 00:28:14,520
+是的，完全同意。
+Yes, exactly.
+
+558
+00:28:15,160 --> 00:28:19,234
+好吧，我想对于这种在本地机器上运行的产品，
+Alright, I mean, I guess maybe, you know, one of the other pieces of feedback for a product like
+
+559
+00:28:19,234 --> 00:28:23,360
+另一个反馈点是隐私和信任非常重要。
+this that runs locally on your machine, privacy and trust is something that's very important.
+
+560
+00:28:23,920 --> 00:28:25,080
+他们会怎么处理数据？
+What do they do with the data?
+
+561
+00:28:25,440 --> 00:28:29,280
+我猜页面这里有个 FAQ 在尝试回答这些问题。
+I guess they have an FAQ here to try to answer some of this.
+
+562
+00:28:29,320 --> 00:28:34,098
+但这其实是 AI 应用和 LLM 新时代里一个有意思的问题：
+But this is actually an interesting problem in the new world of AI apps and
+
+563
+00:28:34,098 --> 00:28:38,720
+它们需要大量数据和上下文才能真的有用。
+LLMs is they need so much data and so much context to be really valuable.
+
+564
+00:28:38,720 --> 00:28:41,700
+尤其像这样一个会在你机器本地运行、
+And especially a product like this that's going to run locally on your
+
+565
+00:28:41,700 --> 00:28:45,040
+且可能要访问你电脑上所有内容的产品。
+machine and have access, presumably, to everything that's on your computer.
+
+566
+00:28:45,640 --> 00:28:49,917
+所以对这类产品来说，需要在信任、
+And so there's a new bar that needs to be established for trust
+
+567
+00:28:49,917 --> 00:28:54,110
+隐私和安全方面建立新的标准。
+and privacy and security for all of these types of products.
+
+568
+00:28:54,710 --> 00:28:58,217
+我的判断是，我其实认为那些真正在这方面下功夫、
+My take is that I actually think the products that really lean into
+
+569
+00:28:58,217 --> 00:29:02,043
+并进一步让用户非常放心地了解“我们会访问哪些数据、
+that and go above and beyond to make users feel super comfortable around
+
+570
+00:29:02,043 --> 00:29:05,550
+会如何使用”的产品，
+what is the data we're gonna have access to, how are we gonna use it.
+
+571
+00:29:05,630 --> 00:29:08,550
+我们的数据保留政策是什么，是否安全，
+What are our retention policies, is it secure or not?
+
+572
+00:29:08,590 --> 00:29:12,738
+在这些方面非常主动的产品，
+All these things and being very proactive about that are the ones that I think are going to have
+
+573
+00:29:12,738 --> 00:29:16,940
+我认为更有可能成功让用户下载、试用、传播并推荐给朋友。
+more success of getting users to download and try it and spread the word and tell their friends.
+
+574
+00:29:17,500 --> 00:29:17,980
+完全同意。
+Totally agree.
+
+575
+00:29:18,060 --> 00:29:21,740
+作为一个当年申请 YC 时做的是开源短信分析工具的人，
+As someone who applied to YC with a text message analyzer that was
+
+576
+00:29:21,740 --> 00:29:25,420
+那个工具在电脑本地读取 iMessage（苹果信息）。
+open source and read your iMessages all locally on the computer.
+
+577
+00:29:26,020 --> 00:29:26,780
+我完全同意。
+I completely agree.
+
+578
+00:29:26,900 --> 00:29:31,718
+那么你在做那个产品时，为了让人们信任你的产品并授权访问他们的全部短信，
+And so what were the things when you were working on that product that you thought about that you felt like
+
+579
+00:29:31,718 --> 00:29:36,480
+你觉得自己必须做哪些事情？
+you had to do in order to get people to trust your product and give it access to all of their text messages.
+
+580
+00:29:37,440 --> 00:29:39,996
+落地页首屏主打的就是“开源、
+Hero on the landing page was open
+
+581
+00:29:39,996 --> 00:29:43,120
+完全在设备本地运行”，对吧？
+source, completely on-device, right?
+
+582
+00:29:43,280 --> 00:29:46,440
+传达的信息是，互联网不会以任何方式接触这些数据。
+Communicating that the internet doesn't touch it in any single way.
+
+583
+00:29:47,440 --> 00:29:49,800
+我们发现这正是人们真的非常关心的。
+And that's what we learned that people really, really cared about.
+
+584
+00:29:49,800 --> 00:29:50,040
+对。
+Right.
+
+585
+00:29:50,360 --> 00:29:52,880
+这里他们也做到了，就是这个 on-device LLM。
+And they do it here, you know, on-device LLM.
+
+586
+00:29:53,400 --> 00:29:57,540
+但有意思的是，这个 “and” 真的有必要吗？
+But it's funny like is the word and really even necessary?
+
+587
+00:29:57,580 --> 00:29:58,620
+这让我觉得很有意思。
+Like it's interesting to me.
+
+588
+00:29:58,700 --> 00:29:59,980
+他们把这些词加粗了。
+They're like bolding these words.
+
+589
+00:30:00,000 --> 00:30:03,579
+加粗单词，也是 AI 写作的另一个迹象——你可以去
+Bolding words, another sign of AI writing actually — you can look
+
+590
+00:30:03,579 --> 00:30:06,960
+Wikipedia 上查——就是随机加粗一些词，对吧？
+this up on Wikipedia — is when random words are bolded, right?
+
+591
+00:30:07,120 --> 00:30:13,320
+但关键是要传达最重要的信息：它是在设备本地运行的。
+Like, but just communicating that most important thing, which is that it's on-device.
+
+592
+00:30:13,440 --> 00:30:13,800
+对。
+Yep.
+
+593
+00:30:14,120 --> 00:30:16,000
+还有一件让我有点想笑的事，就是这个字体。
+Another thing that kind of makes me laugh is this font.
+
+594
+00:30:16,800 --> 00:30:22,320
+我们看看这是什么字体。Space Grotesk（字体），总是这个。
+Let's see what the font is. Space Grotesk is always.
+
+595
+00:30:23,180 --> 00:30:27,900
+还有一种字体——哦，Instrument Serif（字体）是另一个。
+The font that is, oh, Instrument Serif is another one.
+
+596
+00:30:29,540 --> 00:30:30,420
+Instrument Serif。
+Instrument Serif.
+
+597
+00:30:31,100 --> 00:30:33,780
+Claude Code 很喜欢 Instrument Serif，这很有意思。
+Claude Code loves Instrument Serif, which is funny.
+
+598
+00:30:33,860 --> 00:30:35,420
+这让我想起 em dash（破折号），对吧？
+This kind of reminds me of the em dash, right?
+
+599
+00:30:35,460 --> 00:30:38,421
+就像你仍然可以在写作里用 em dash，但不幸的是，
+It's like you can still use the em dash in your writing, but
+
+600
+00:30:38,421 --> 00:30:42,060
+人们看到它就会想：哦，他用了 AI，对吧？
+unfortunately people are gonna look at it and go, oh, he used AI, right?
+
+601
+00:30:42,500 --> 00:30:44,500
+Instrument Serif、Space Grotesk 这类字体。
+Instrument Serif, Space Grotesk.
+
+602
+00:30:45,250 --> 00:30:49,530
+有趣的是，这些东西作为潮流，有时身处当下很难察觉。
+It's interesting how these things are trends that sometimes are hard to spot in the moment.
+
+603
+00:30:49,850 --> 00:30:52,987
+我觉得我们现在能捕捉到，也能当场识别，
+I feel like we're on it and, you know, we can spot it in the moment here,
+
+604
+00:30:52,987 --> 00:30:56,233
+但就像你看到一个 80 年代设计的厨房，
+but it's like you see a kitchen that was designed in the 80s or something
+
+605
+00:30:56,233 --> 00:30:59,370
+你会感叹：天哪，这个厨房真过时。
+like that and you're like, man, this looks like an outdated kitchen.
+
+606
+00:30:59,410 --> 00:31:01,610
+但在 80 年代，它可能看起来很现代。
+But in the 80s, it probably looked like a modern kitchen.
+
+607
+00:31:02,370 --> 00:31:04,010
+现在看这些设计就有这种感觉。
+And that's what some of this feels like.
+
+608
+00:31:04,090 --> 00:31:06,730
+它们现在感觉很当下、很流行。
+It's something that feels like it's of the moment now.
+
+609
+00:31:07,160 --> 00:31:10,069
+但过个5年、10年，我们再回头看这些，
+But 5, 10 years, we're going to look back at this,
+
+610
+00:31:10,069 --> 00:31:13,342
+肯定会觉得：哦，是啊，那是2020年代中期网站设计的典型标志，
+we're going to be like, oh, yeah, that's a hallmark mid
+
+611
+00:31:13,342 --> 00:31:16,760
+到那时就会显得过时了。
+2020s site design that will feel outdated at that point.
+
+612
+00:31:16,760 --> 00:31:17,920
+所以我也说不好。
+And so I don't know.
+
+613
+00:31:17,920 --> 00:31:22,040
+我会鼓励大家，尽量抵抗那种冲动——不要直接用 AI
+I would encourage people, just resist the urge to do the default that the agents are spitting
+
+614
+00:31:22,040 --> 00:31:26,053
+代理生成设计时给的默认方案，也不要用默认字体，
+out when they're designing or the default fonts or use something that is more unique to you
+
+615
+00:31:26,053 --> 00:31:30,280
+而是用一些更独特、能传达你想表达内容的东西，而不是只跟着每个人
+and communicates what you want to communicate rather than just using the thing that everybody
+
+616
+00:31:30,280 --> 00:31:31,848
+都在用的东西走。
+else is using and that's the way to
+
+617
+00:31:31,848 --> 00:31:33,640
+我觉得这样才能做出更经得起时间考验的设计。
+create more timeless design, I think.
+
+618
+00:31:33,760 --> 00:31:39,354
+对，而且尽早建立品牌规范，
+Yeah, and establishing that brand book early on, that's one thing that I regret that we didn't
+
+619
+00:31:39,354 --> 00:31:44,806
+这是我们后悔没在自己公司更早做的事情——建立品牌规范，确定品牌是什么、
+do earlier for our own company was establishing a brand book, deciding on what is the brand,
+
+620
+00:31:44,806 --> 00:31:50,400
+字体是什么，以及设计系统。公司确实应该更早做这件事。
+what is your font, your really your design system. Companies should do that earlier for sure.
+
+621
+00:31:50,850 --> 00:31:51,130
+好。
+All right.
+
+622
+00:31:51,130 --> 00:31:52,530
+好的，谢谢你，Sentient OS。
+Well, thank you, Sentient OS.
+
+623
+00:31:53,130 --> 00:31:54,130
+我们再看一个。
+Let's do another one.
+
+624
+00:31:54,570 --> 00:31:59,210
+好，Cerenovus（被点评的网站），机构智能与决策基础设施。
+All right, Cerenovus, Institutional intelligence and decision infrastructure.
+
+625
+00:32:00,450 --> 00:32:02,978
+好吧，我不太明白这是什么意思，
+Okay, I don't really know what that means,
+
+626
+00:32:02,978 --> 00:32:05,650
+但 Cerenovus 是你的 AI 运营伙伴。
+but Cerenovus is your AI operating partner.
+
+627
+00:32:05,810 --> 00:32:08,669
+它会读取你公司产生的每一条记录，
+It reads every record your company produces, finds the operational
+
+628
+00:32:08,669 --> 00:32:12,130
+找出没人追踪的运营低效，并在问题还小时提醒你。
+inefficiencies nobody's tracking, and warns you while problems are still small.
+
+629
+00:32:12,800 --> 00:32:14,240
+好吧，我不确定。
+Okay, I don't know.
+
+630
+00:32:14,440 --> 00:32:17,360
+这里，我觉得文案可以改进。
+This is, I think, the copy could be improved here.
+
+631
+00:32:17,440 --> 00:32:18,400
+太泛了。
+It's very generalized.
+
+632
+00:32:18,640 --> 00:32:19,360
+很模糊。
+It's very vague.
+
+633
+00:32:19,560 --> 00:32:21,080
+我有点在想，这是我需要的东西吗？
+I'm kind of like, is this something I need?
+
+634
+00:32:21,240 --> 00:32:23,528
+我不太确定它是不是能做我公司想要的一切，
+I'm not really sure it does everything that
+
+635
+00:32:23,528 --> 00:32:25,880
+并找到低效环节。
+my company wants and finds inefficiencies.
+
+636
+00:32:26,960 --> 00:32:29,440
+它是“决策基础设施”，我不知道这是什么意思。
+It's a decision infrastructure, I don't know what that means.
+
+637
+00:32:29,880 --> 00:32:33,144
+所以我觉得有帮助的是更具体地说明谁应该使用这个产品，
+So I think something that would be helpful is just getting to more
+
+638
+00:32:33,144 --> 00:32:36,770
+以及为什么。
+specifics or more specific language around who should use this and why.
+
+639
+00:32:36,850 --> 00:32:38,930
+因为现在，我认为它太不清晰了。
+Because right now, I think it's, it's too unclear.
+
+640
+00:32:39,530 --> 00:32:42,170
+我觉得有意思的是，这里的留白也太多了吧？
+It's interesting to me like, there's so much padding, right?
+
+641
+00:32:42,170 --> 00:32:47,810
+这里，在所谓首屏范围内——就是滚动前看到的地方——有大量留白。
+Like there's just a lot of white space for this—this is what they call above the fold, right before I scroll.
+
+642
+00:32:48,010 --> 00:32:51,050
+这是落地页的首屏主视觉区，非常重要。
+It's such an important section, the hero section of the landing page.
+
+643
+00:32:51,410 --> 00:32:55,450
+但我的视线立刻就被留白分散了。
+And yet immediately my eyes, I'm like, looking at white space right now.
+
+644
+00:32:56,110 --> 00:32:56,350
+对。
+Right.
+
+645
+00:32:56,590 --> 00:33:01,480
+嗯，不幸的是，这也是一种典型的 vibe coding 痕迹。
+Um, unfortunately, this is also kind of like a classic vibe coding smell.
+
+646
+00:33:02,280 --> 00:33:04,000
+这种小号全大写文字。
+This small all caps.
+
+647
+00:33:04,800 --> 00:33:05,320
+没错。
+Exactly.
+
+648
+00:33:05,760 --> 00:33:06,120
+是的。
+Yeah.
+
+649
+00:33:06,880 --> 00:33:10,760
+再说一次，小号全大写本身有什么问题吗？
+And again, it's like, okay, is there anything inherently wrong with small all caps?
+
+650
+00:33:11,000 --> 00:33:15,077
+不一定，但当我读到这里：“每个声明都有多年历史记录支持、
+Not necessarily, but when I read it, every claim cited years
+
+651
+00:33:15,077 --> 00:33:19,480
+从第一天起实时可用、无需安装、无需访谈。”
+of history live from day one, nothing installed, no interviews.
+
+652
+00:33:19,600 --> 00:33:21,160
+但我仍然不知道这个产品到底做什么。
+But I still don't even know what the product does.
+
+653
+00:33:21,600 --> 00:33:22,480
+对，对，完全同意。
+Yeah, yeah, exactly.
+
+654
+00:33:22,720 --> 00:33:24,720
+我甚至不知道它会是一个需要安装的东西。
+I didn't even know it was gonna be something that was installed.
+
+655
+00:33:24,840 --> 00:33:26,360
+我一开始根本没有这个预期。
+That was not my assumption to begin with.
+
+656
+00:33:26,440 --> 00:33:28,050
+所以，对，对，对，就是这样。
+So, yeah, yeah, yeah, exactly.
+
+657
+00:33:28,130 --> 00:33:29,010
+比如“无需安装”这句话。
+Like nothing installed.
+
+658
+00:33:29,170 --> 00:33:30,690
+我会想，难道我面对的是硬件？
+Where, like, am I dealing with hardware?
+
+659
+00:33:31,290 --> 00:33:33,890
+嗯，“运营监督”。
+Um, oversight over the operations.
+
+660
+00:33:34,050 --> 00:33:36,770
+“它找到低效环节，有据可查的远见。”
+It finds the inefficiencies, foresight with receipts.
+
+661
+00:33:37,490 --> 00:33:39,050
+对，我只是需要具体的例子。
+Yeah, I just need specific examples.
+
+662
+00:33:39,170 --> 00:33:41,690
+比如我们继续往下滚，他们给出具体例子了吗？
+Like as we're scrolling, do they give specific examples?
+
+663
+00:33:41,930 --> 00:33:43,942
+“从你桌面上的问题开始，
+Start with the problem on your desk,
+
+664
+00:33:43,942 --> 00:33:46,490
+面向企业、中端市场、私募股权？”
+enterprise, middle market, private equity?
+
+665
+00:33:47,320 --> 00:33:47,640
+对。
+Yeah.
+
+666
+00:33:47,800 --> 00:33:51,079
+这写的是他们面向的对象，
+It's, this is like who they go after,
+
+667
+00:33:51,079 --> 00:33:55,560
+这没什么帮助，因为这是在说他们自己。
+and—this is not helpful because it's about them.
+
+668
+00:33:55,680 --> 00:33:57,240
+不是关于用户的，对吧？
+It's not about the user, right?
+
+669
+00:33:57,760 --> 00:33:59,600
+用户不关心他们面向谁。
+The user doesn't care who they go after.
+
+670
+00:34:00,160 --> 00:34:02,960
+用户关心的是自己的问题能被解决。
+The user cares about they have a problem that they want solved.
+
+671
+00:34:03,000 --> 00:34:05,640
+以及 Cerenovus 能否帮我解决这个问题？
+And can Cerenovus help solve this problem for me?
+
+672
+00:34:06,520 --> 00:34:06,760
+对吧？
+Right?
+
+673
+00:34:06,800 --> 00:34:11,320
+现在几乎要我自己想清楚：我是企业、中端市场吗？
+It's almost like right now I have to think through, am I enterprise, middle market?
+
+674
+00:34:11,320 --> 00:34:12,040
+我到底是谁？
+Like, who am I?
+
+675
+00:34:12,200 --> 00:34:16,480
+对，假设我是做二级市场或 continuation vehicles 的。
+Yeah, let's pretend I'm secondaries or I'm continuation vehicles.
+
+676
+00:34:17,200 --> 00:34:21,320
+我得看这个页面，但还得先点击才能确定我是谁。
+I have to look at this, but I had to click to decide who I am.
+
+677
+00:34:21,400 --> 00:34:23,120
+你让我自己想，太费劲了。
+You're making me think, you know, too much work.
+
+678
+00:34:23,240 --> 00:34:26,080
+再说回你的观点，我真正想看的是解决方案。
+And again, to your point, what I really want to see are the solutions.
+
+679
+00:34:27,280 --> 00:34:27,600
+对。
+Yeah.
+
+680
+00:34:27,680 --> 00:34:30,816
+你知道，这是我在 vibe-coded 网站上看到的一个趋势，
+You know, this is a trend that I see with vibe-coded
+
+681
+00:34:30,816 --> 00:34:34,400
+尤其在 YC 申请中我们经常见到。
+sites and especially we see this a lot in YC applications.
+
+682
+00:34:35,080 --> 00:34:40,649
+我们看到的情况之一是，它几乎像是为公司在做一份演示文稿，
+One of the things that we see is it's, it's almost like it makes a slide deck for the
+
+683
+00:34:40,649 --> 00:34:46,800
+很多时候几乎是在向投资人做推介，或者像那个
+company that's kind of pitching the company almost to investors a lot of times or like the
+
+684
+00:34:47,200 --> 00:34:50,894
+模型以为初创公司或初创公司网站的目标受众就是投资人，
+The models think that is the intended audience for a startup or a startup
+
+685
+00:34:50,894 --> 00:34:54,466
+有时候确实是投资人会看，
+website and sometimes it is like investors will look at the thing, but
+
+686
+00:34:54,466 --> 00:34:58,160
+但你不应该对这些人说话，也不应该以他们为目标。
+that's not who you should be speaking to and who you should be targeting.
+
+687
+00:34:58,720 --> 00:35:02,113
+你应该谈论你的产品、谁该用它、为什么、
+You should be talking about your product, who should use it, why, why it's
+
+688
+00:35:02,113 --> 00:35:05,616
+它为什么有价值、它帮他们解决什么问题，以及社会认同，
+valuable, what problem it solves for them, social proof of, you know, other
+
+689
+00:35:05,616 --> 00:35:09,120
+比如其他类似用户使用过它，以及它帮了他们多少。
+people that use this that are like those users and how much it's helped them.
+
+690
+00:35:09,680 --> 00:35:12,881
+我觉得这些才是真实用户想找的东西，
+These are the things that I think real users want to find
+
+691
+00:35:12,881 --> 00:35:16,151
+而不是一份关于他们目标人群的融资演示稿，
+rather than a pitch deck about who they target and, yeah,
+
+692
+00:35:16,151 --> 00:35:19,630
+然后写着“这里是四项保证”，我甚至都不太明白。
+here's the four guarantees and it's like, I don't even know.
+
+693
+00:35:19,830 --> 00:35:21,310
+我还是搞不清楚你们具体做什么。
+I still can't figure out what you do.
+
+694
+00:35:21,630 --> 00:35:24,064
+我注意到一件有意思的事，因为我们刚刚聊到这一点：
+One thing that's interesting I noticed, because we just talked
+
+695
+00:35:24,064 --> 00:35:26,590
+顶部有一个链接写着“信任与安全”。
+about this, there's a link at the top that says trust and security.
+
+696
+00:35:27,270 --> 00:35:33,270
+这在网站主导航里并不常见。
+And that's not something that you normally see in a main navigation of a site.
+
+697
+00:35:34,190 --> 00:35:37,729
+而且，结合我们刚刚讨论的——公司也许应该更重视这一点——看到他们这样做、
+And, you know, coming off the discussion we just had around maybe
+
+698
+00:35:37,729 --> 00:35:41,662
+把它放到导航里并附上
+companies should put more emphasis on this, it's actually interesting
+
+699
+00:35:41,662 --> 00:35:45,070
+FAQ，确实挺有意思。
+to see them doing that and putting it up there and having an FAQ.
+
+700
+00:35:45,190 --> 00:35:46,110
+我们收集哪些数据？
+What data do we collect?
+
+701
+00:35:46,390 --> 00:35:47,390
+数据存储在哪里？
+Where does the data live?
+
+702
+00:35:48,310 --> 00:35:54,020
+如果这成为 AI 网站更常见的模式，我不会感到意外：
+I would not be surprised to see this become a more common pattern that we're going to see across AI sites,
+
+703
+00:35:54,020 --> 00:35:59,530
+试图介绍产品，并让人们愿意把大量敏感信息托付给他们。
+trying to talk about the product and get people to entrust them with lots of sensitive information.
+
+704
+00:36:00,220 --> 00:36:00,580
+没错。
+Totally.
+
+705
+00:36:01,020 --> 00:36:03,460
+总体来说，我觉得风格很干净。
+Well, overall, I feel like the style is very clean.
+
+706
+00:36:04,060 --> 00:36:04,780
+很清新。
+It's very fresh.
+
+707
+00:36:04,900 --> 00:36:05,660
+很现代。
+It's very modern.
+
+708
+00:36:06,700 --> 00:36:10,538
+所以从视觉角度看，我觉得它很漂亮。
+So from a visual perspective, I think it looks
+
+709
+00:36:10,538 --> 00:36:14,780
+从文案和整体描述来看……
+very nice. From a copy and overall description...
+
+710
+00:36:14,900 --> 00:36:17,820
+而且你是否在向用户说清楚：产品做什么、给谁用？
+And are you communicating what the product does and to your users?
+
+711
+00:36:18,460 --> 00:36:22,020
+我仍然很困惑它到底做什么、谁该用它以及为什么。
+I'm still very confused on what it actually does and who should use it and why.
+
+712
+00:36:22,850 --> 00:36:24,930
+所以我觉得这方面有很大改进空间。
+And so I think there's a lot of room for improvement on that.
+
+713
+00:36:25,290 --> 00:36:25,570
+没错。
+Totally.
+
+714
+00:36:25,610 --> 00:36:30,197
+我会鼓励所有创始人去做一件事，这也是我们早期做过的：
+And what I would encourage all kind of founders to do, something that we did in the early
+
+715
+00:36:30,197 --> 00:36:34,530
+去找你的用户，问他们：“你们觉得这个网站怎么样？”
+days, is you should go to your users and ask them, what do you think of this website?
+
+716
+00:36:35,010 --> 00:36:36,999
+尽量不要让他们知道这是你的网站，
+Try not to make it clear that it's your website because
+
+717
+00:36:36,999 --> 00:36:39,210
+因为他们会对你太客气，不愿说真话。
+they're going to be too nice to you and not tell you the truth.
+
+718
+00:36:40,290 --> 00:36:44,130
+但你需要用户告诉你，它是否真的引起了他们的共鸣。
+But, you know, you need users to tell you if it's resonating with them.
+
+719
+00:36:44,410 --> 00:36:45,330
+这才是终极测试。
+That's the ultimate test.
+
+720
+00:36:45,730 --> 00:36:47,730
+这绝对是终极测试。
+That is absolutely the ultimate test.
+
+721
+00:36:48,290 --> 00:36:51,850
+我们只是镜头前的两个人，去和你的用户聊聊吧。
+We're just two people that are here behind some cameras, you know, talk to your users.
+
+722
+00:36:52,530 --> 00:36:53,690
+好，我们再看下一个。
+All right, let's do another one here.
+
+723
+00:36:53,850 --> 00:36:56,290
+Slashy（被点评的网站），你的智能收件箱。
+Slashy, your intelligent inbox.
+
+724
+00:36:56,490 --> 00:36:59,170
+首先，他们的 logo 让我有点困惑。
+Um, so first of all, their logo kind of confused me a little bit.
+
+725
+00:36:59,850 --> 00:37:03,730
+它让我想到的是“s slash ashy”。
+It looks like s slash ashy is what it makes me think of.
+
+726
+00:37:03,730 --> 00:37:07,090
+所以我知道这很巧妙，它把斜杠放进了 Slashy 里。
+So I get that it's clever and it's got a slash in the slashy.
+
+727
+00:37:07,290 --> 00:37:10,713
+但如果我没有 slashy.com 这样的上下文，
+But, um, if I had just seen that without the context of like
+
+728
+00:37:10,713 --> 00:37:14,350
+只看那个 logo，我可能会以为这是“s slash ash”。
+slashy.com, I think I would have thought this was s slash ash.
+
+729
+00:37:14,550 --> 00:37:15,830
+Ashie，嗯，好吧。
+Ashie, um, okay.
+
+730
+00:37:16,110 --> 00:37:19,913
+你的智能收件箱：Slashy 帮你起草、用你的语气回复、
+Your intelligent inbox, Slashy drafts, replies in your voice, schedules
+
+731
+00:37:19,913 --> 00:37:23,470
+安排会议并处理后续跟进，让你花更少时间管理邮件。
+meetings and handles follow up so you spend less time managing email.
+
+732
+00:37:24,030 --> 00:37:24,510
+好，挺酷。
+Okay, cool.
+
+733
+00:37:24,510 --> 00:37:27,190
+所以这像是一款新的邮件产品。
+So it's like a new email product.
+
+734
+00:37:27,870 --> 00:37:31,420
+这里有一个相当大的演示区域。
+Um, and they've got a demo here that's pretty big.
+
+735
+00:37:32,420 --> 00:37:34,900
+展示演示很好，但画面里内容太多了。
+It's cool to show a demo, but there's so much going on.
+
+736
+00:37:34,940 --> 00:37:38,080
+演示里文字太多，我很难在脑子里理清正在发生什么，
+There's so much text in the demo, it's hard for me to mentally orient
+
+737
+00:37:38,080 --> 00:37:41,220
+以及它想让我从中获得什么。
+around what's happening and what it wants me to take away from this.
+
+738
+00:37:41,980 --> 00:37:46,053
+我看到“Pied Piper metrics before Thursday”这条内容，
+So I see Pied Piper metrics before Thursday, I see something happening
+
+739
+00:37:46,053 --> 00:37:50,058
+还看到右下角一个智能体里不断切换内容，
+in an agent in the bottom right that it keeps flipping over to, but it's
+
+740
+00:37:50,058 --> 00:37:54,200
+但切换速度不够慢，我没法看清它到底在输入什么。
+not slow enough where I can get my head around what it's actually typing.
+
+741
+00:37:54,360 --> 00:37:56,760
+不清楚这里正在发生什么、产品在做什么。
+What's happening and what the product is doing here.
+
+742
+00:37:57,600 --> 00:37:58,400
+这说得有道理。
+That's, that's fair.
+
+743
+00:37:58,800 --> 00:38:02,120
+我要说的是，他们做得好的地方是：我立刻知道这是什么。
+I will say what they're doing well is I know immediately what it is.
+
+744
+00:38:03,360 --> 00:38:05,840
+我知道，这有点像 Superhuman（邮件工具）。
+I know that, okay, this is kind of like Superhuman.
+
+745
+00:38:06,120 --> 00:38:08,680
+这是 Gmail（谷歌邮箱）的替代品，对吧？
+This is a Gmail replacement, right?
+
+746
+00:38:08,960 --> 00:38:09,960
+我确实有这个痛点。
+I actually have this problem.
+
+747
+00:38:10,160 --> 00:38:12,520
+我自己也是，我的邮件已经过载了。
+I myself, my email is overloaded.
+
+748
+00:38:13,160 --> 00:38:17,100
+但也许这里更适合展示类似聊天收件箱的动画，
+Um, but yeah, it's like, maybe this would be better as just showing kind
+
+749
+00:38:17,100 --> 00:38:21,240
+而不是屏幕录制视频。
+of the chat inbox almost like an animation versus a screen recorded video.
+
+750
+00:38:21,680 --> 00:38:25,280
+我会鼓励这位创始人找一个专业团队做一个很酷的动画放在这里，
+I would encourage this founder to get an agency to do a really cool
+
+751
+00:38:25,280 --> 00:38:29,280
+可能比这个全屏视频效果更好。
+animation that might go here and might actually work better than kind of
+
+752
+00:38:29,280 --> 00:38:33,280
+对。嗯，“几秒内起草回复”。
+this full screen video right here. Yep. Um, replies drafted in seconds.
+
+753
+00:38:34,329 --> 00:38:38,914
+我觉得它会自动切换侧边这些标签页，问题在于，
+Okay, um, and I guess it's going through these tabs here on the side and the
+
+754
+00:38:38,914 --> 00:38:43,649
+如果你在滚动页面，就会错过其他标签页。
+problem with these is if you scroll through it, you will miss the other ones.
+
+755
+00:38:44,329 --> 00:38:46,409
+这些标签页看起来只是在按计时器自动切换。
+Um, and these just seem to be on a timer.
+
+756
+00:38:46,569 --> 00:38:49,129
+对，你可以看到底部有一条线在走。
+Yeah, you can see the line going across at the bottom there.
+
+757
+00:38:49,729 --> 00:38:53,702
+这挺好，但任何使用标签页的地方都有一个问题：
+Um, which is cool, but the problem with anytime you have tabs is you have
+
+758
+00:38:53,702 --> 00:38:57,809
+你必须预期，人们不会看到其他标签页背后的内容。
+to expect that people will not see anything that is behind the other tabs.
+
+759
+00:38:58,289 --> 00:38:58,569
+没错。
+Totally.
+
+760
+00:38:58,609 --> 00:39:00,840
+你必须假设我只会看到眼前这个标签页。
+You have to assume that I am just going to see.
+
+761
+00:39:01,320 --> 00:39:03,679
+有意思的是——等等，我们刷新一下，
+Well, what's interesting, wait, let's refresh this because
+
+762
+00:39:03,679 --> 00:39:05,760
+因为我觉得这总是值得留意。
+I think this is always a good thing to pay attention to.
+
+763
+00:39:05,920 --> 00:39:08,000
+假设我们花时间看了 Intelligent Inbox 这个标签页。
+Let's pretend we spent time on Intelligent Inbox.
+
+764
+00:39:09,280 --> 00:39:10,960
+计时器在走吗？
+Is the timer going?
+
+765
+00:39:12,560 --> 00:39:14,920
+嗯，看起来好像没有。
+Yeah, like it doesn't look like it.
+
+766
+00:39:14,960 --> 00:39:19,680
+看起来它可能正好在我滚动时才开始播放，这很好。
+It looks like it's probably actually just starting right when I scroll, which is great.
+
+767
+00:39:19,680 --> 00:39:22,300
+但有趣的是，有时我在一些网站上注意到，
+But what's interesting sometimes I notice on sites that
+
+768
+00:39:22,300 --> 00:39:24,920
+计时器可能在用户看到之前就已经开始走了。
+the timer might start going before the user is seeing it.
+
+769
+00:39:24,920 --> 00:39:28,520
+所以你甚至没有意识到，大家实际看到的只是片段。
+And so you don't even realize this, but everyone is actually seeing snippets.
+
+770
+00:39:28,760 --> 00:39:31,400
+对，即使你可能觉得这是第四重要的事情。
+Yeah, even though you might consider it the fourth most important thing.
+
+771
+00:39:31,520 --> 00:39:31,720
+对。
+Yeah.
+
+772
+00:39:31,720 --> 00:39:35,280
+我觉得我们第一次下滑到这里时，被高亮的是语音草稿。
+I think when we got down here the first time, Voice Drafts was the thing that was highlighted.
+
+773
+00:39:35,880 --> 00:39:38,572
+嗯，也可能是因为我们一直在上下滚动，
+Um, and maybe because we were just kind of scrolling back and
+
+774
+00:39:38,572 --> 00:39:41,480
+所以我们没真正读内容就开始了计时。
+forth and so we started the timer without actually reading them.
+
+775
+00:39:41,880 --> 00:39:46,003
+嗯，也许我要提的另一点是，我还是看不出截图里在发生什么。
+Um, maybe the other thing that I'll mention here is I can't tell again what's
+
+776
+00:39:46,003 --> 00:39:50,192
+我觉得如果我真的很认真，想着“好，
+happening in the screenshots and I think if I was like really, okay, AI drafts
+
+777
+00:39:50,192 --> 00:39:54,380
+AI 草稿到底在做什么”，然后努力让自己搞清楚、集中注意力。
+and what's happening, and I tried to really orient myself and pay attention.
+
+778
+00:39:54,860 --> 00:39:58,997
+我可能能搞明白，但大多数用户第一次看某个页面时，
+I could try to figure it out, but most users are not actually looking at something
+
+779
+00:39:58,997 --> 00:40:03,380
+并不会投入这种程度的深入审视。
+for the first time and spending that level of depth and scrutiny on what's happening.
+
+780
+00:40:03,500 --> 00:40:05,879
+所以他们展示产品这一点是好的。
+And so it's cool they're showing the product.
+
+781
+00:40:06,119 --> 00:40:12,819
+我在想，有没有更聚焦、更简单直接的方式来说明每个部分在做什么，
+I wonder if there's a more focused, dumbed down way to actually communicate what is happening with
+
+782
+00:40:12,819 --> 00:40:19,519
+而不是展示真实界面里那么多细枝末节。
+each of these rather than showing all the granularity and level of detail of the actual interface.
+
+783
+00:40:20,319 --> 00:40:20,639
+完全同意。
+Totally.
+
+784
+00:40:20,879 --> 00:40:22,399
+好，这里有一些用户背书。
+Okay, so we got some social proof here.
+
+785
+00:40:22,519 --> 00:40:23,799
+被最忙碌的人喜爱。
+Loved by the busiest people.
+
+786
+00:40:24,360 --> 00:40:26,812
+这里有一位 Redpoint（投资机构）的投资人，
+We've got an investor at Redpoint. We've
+
+787
+00:40:26,812 --> 00:40:29,120
+还有一位我不认识的内容创作者。
+got a content creator who I don't know.
+
+788
+00:40:30,000 --> 00:40:33,509
+嗯，所以，好吧，确实有一些人在用这个产品，
+Um, so, all right, so some people use this and,
+
+789
+00:40:33,509 --> 00:40:37,480
+而且他们在顶部还有一个安全相关链接。
+and again, they've got a security link up at the top.
+
+790
+00:40:37,840 --> 00:40:41,696
+他们在这里展示真实用户的背书，
+They've got social proof here on people that are actually using this
+
+791
+00:40:41,696 --> 00:40:45,824
+因为你其实是在要求用户把自己的收件箱交给你，
+because you're, again, you're asking them to entrust you with your inbox
+
+792
+00:40:45,824 --> 00:40:49,680
+而收件箱是任何人开放访问时最敏感的区域之一。
+and that is one of the most sensitive areas to give anybody access to.
+
+793
+00:40:50,300 --> 00:40:52,276
+所以这是一个有意思的挑战：你怎么建立这种信任，
+So it's an interesting challenge for how can you build
+
+794
+00:40:52,276 --> 00:40:54,340
+让人们愿意下载并开始使用它。
+that trust and get people to download and start using it.
+
+795
+00:40:54,420 --> 00:40:56,540
+对，用户背书非常重要，对吧？
+Yeah, and social proof is so important, right?
+
+796
+00:40:56,580 --> 00:41:00,420
+所以通常你会在首屏范围看到各种 logo。
+That's always why typically you see logos above the fold.
+
+797
+00:41:00,700 --> 00:41:02,770
+不过我觉得创始人应该始终考虑，
+I think founders should always consider
+
+798
+00:41:02,770 --> 00:41:04,900
+自己在用谁来做用户背书。
+though who they're using as social proof.
+
+799
+00:41:05,020 --> 00:41:08,717
+举个例子，我看到投资人和创始人，然后我会想：
+Like just as an example, I see investors and founders and I think, okay,
+
+800
+00:41:08,717 --> 00:41:12,540
+好吧，这是给投资人和创始人用的，这确实说得通。
+this is for investors and founders, which, you know, kind of makes sense.
+
+801
+00:41:12,540 --> 00:41:15,500
+因为他们确实是很忙的人，有很多邮件。
+Like they are busy people who have lots of emails.
+
+802
+00:41:16,030 --> 00:41:19,983
+但我马上会想，即便左边这边有两位投资人，
+But immediately I just like even with both investors on this side, on the
+
+803
+00:41:19,983 --> 00:41:23,870
+我也会想：等等，这难道只是给 VC 用的收件箱吗？
+left hand side, I think, oh, wait a second, is this just an inbox for VCs?
+
+804
+00:41:24,270 --> 00:41:27,630
+对，也许他们的目标人群就是创始人和 VC，我不确定。
+Yeah, maybe it is that they're targeting founders and VCs, I'm not sure.
+
+805
+00:41:28,070 --> 00:41:29,990
+还是面向普通消费者？
+Or is it for general consumers?
+
+806
+00:41:30,390 --> 00:41:31,470
+他们说的是面向忙碌的人。
+They say for busy people.
+
+807
+00:41:31,550 --> 00:41:34,670
+也许这像是 Superhuman 那种面向高级个人用户的产品。
+So maybe this is like a prosumer Superhuman kind of thing.
+
+808
+00:41:34,950 --> 00:41:39,548
+然后是“以你的风格撰写”。好，这很酷，
+Then writes in your style, okay, this is cool because, you know, it's showing that it's
+
+809
+00:41:39,548 --> 00:41:44,530
+因为它展示了它会检查并实际按你的风格进行修改，就是那个视图。
+going through and making edits, uh, that actually match the style like that view right there.
+
+810
+00:41:44,770 --> 00:41:45,250
+太棒了。
+That's awesome.
+
+811
+00:41:46,010 --> 00:41:48,413
+这真的就是我一直说的那种动画，顺便说一句，
+This is really, this is like kind of the animation that I was talking
+
+812
+00:41:48,413 --> 00:41:50,730
+这种动画你也可以在 Magic Patterns 里设计出来。
+about, something you could design in Magic Patterns, by the way.
+
+813
+00:41:51,130 --> 00:41:54,450
+但这真的非常巧妙，我完全明白它在这里做了什么。
+But this is really, really neat where I, I totally get what it's doing here.
+
+814
+00:41:55,690 --> 00:41:57,530
+还能从 iMessage 处理你的收件箱。
+And handle your inbox from iMessage.
+
+815
+00:41:57,570 --> 00:41:58,690
+同样，我们还有更多这些标签页。
+Again, we got more of these tabs.
+
+816
+00:41:58,770 --> 00:42:00,720
+它从下面第三个开始。
+It started at the third one down there.
+
+817
+00:42:00,720 --> 00:42:03,120
+那里有“审核并批准”。
+So there was review and approve.
+
+818
+00:42:05,040 --> 00:42:07,360
+不过对，和上面一样。
+But yeah, same, same as above.
+
+819
+00:42:07,920 --> 00:42:08,520
+那也很酷。
+That's cool too.
+
+820
+00:42:08,760 --> 00:42:09,560
+这对我来说很有意思。
+That's, it's interesting to me.
+
+821
+00:42:09,600 --> 00:42:11,480
+这才是真正引起我共鸣的地方，对吧？
+Like this is kind of what's resonating with me, right?
+
+822
+00:42:11,480 --> 00:42:15,219
+比如，天哪，问题在于你有太多收件箱，
+Like, oh, my, you know, there's so many problems with you having so many
+
+823
+00:42:15,219 --> 00:42:19,084
+不管是短信、WhatsApp（通讯软件）、Gmail 还是 Slack（团队沟通工具），
+inboxes, whether it's text messages, WhatsApp, your Gmail, your Slack,
+
+824
+00:42:19,084 --> 00:42:23,140
+它把它们整合起来，这一点真的让我很有共鸣。
+and it's kind of consolidating that like this is really resonating and yeah.
+
+825
+00:42:23,140 --> 00:42:25,311
+如果用户真的很认可这一点，
+It would be cool if that was maybe something that should
+
+826
+00:42:25,311 --> 00:42:27,340
+也许应该把它推到页面更靠前的位置，那会更好。
+be pushed to the top if users are appreciating that.
+
+827
+00:42:27,460 --> 00:42:28,500
+对，我的意思是，那确实是个问题。
+Yeah, I mean, that's a problem.
+
+828
+00:42:28,500 --> 00:42:32,720
+我自己就有太多收件箱，所以仅凭我既是创始人又是投资人这一点，
+I have too many inboxes and so that would have resonated with me to the extent
+
+829
+00:42:32,720 --> 00:42:36,740
+就足以让我对这个产品感兴趣。
+that I am both a founder and an investor that would be interested in this.
+
+830
+00:42:37,100 --> 00:42:41,500
+我觉得还有一点很棒，就是这个落地页的长度本身。
+One more thing that I think is great is actually just how long this landing page is.
+
+831
+00:42:41,900 --> 00:42:43,940
+其实这是我从 PostHog（产品分析平台）团队那里学到的。
+I learned this from the PostHog guys, actually.
+
+832
+00:42:44,180 --> 00:42:47,500
+所以 PostHog 团队做了一个巨大的页脚，来传达——
+So the PostHog folks had a massive footer to communicate that they.
+
+833
+00:42:48,570 --> 00:42:51,570
+他们是一家大公司，对吧。
+were, you know, a big company, right.
+
+834
+00:42:51,570 --> 00:42:55,652
+所以我总是鼓励大家去思考：页面在传递的“元信息”是什么？
+And so I always encourage folks to think about like what is kind of the meta thing that's
+
+835
+00:42:55,652 --> 00:43:00,130
+仅仅因为落地页非常长，我就会觉得，哦。
+being communicated and just by the sheer fact that it's a really long landing page, I think, oh.
+
+836
+00:43:00,130 --> 00:43:01,490
+这家公司已经存在一段时间了。
+This company's been around a while.
+
+837
+00:43:01,690 --> 00:43:01,890
+对。
+Yeah.
+
+838
+00:43:01,890 --> 00:43:05,490
+它在页面纵向节奏上处理得很好，
+It does a good job of spacing down the page, calling out the
+
+839
+00:43:05,490 --> 00:43:09,090
+清楚标出想强调的重点，努力建立信任。
+main points that it wants to hit on, trying to build trust.
+
+840
+00:43:09,730 --> 00:43:12,679
+而且它看起来非常美观、专业，
+And it looks very nicely professionally designed, which
+
+841
+00:43:12,679 --> 00:43:15,690
+这也有助于建立信任，这点非常重要。
+helps build that trust as well, which is really important.
+
+842
+00:43:16,770 --> 00:43:19,010
+所以总体来看，我觉得这个页面做得真的很不错。
+So overall, I think this is really well done.
+
+843
+00:43:19,290 --> 00:43:19,530
+很好。
+Great.
+
+844
+00:43:19,610 --> 00:43:19,930
+谢谢。
+Thank you.
+
+845
+00:43:20,050 --> 00:43:23,480
+Alex，你从前端工程背景出身，
+Alex, as someone who comes from a front end engineering background,
+
+846
+00:43:23,480 --> 00:43:26,730
+是怎么在设计上进步、提升设计品味的？
+how did you get better at design and improving your design taste?
+
+847
+00:43:27,130 --> 00:43:29,450
+其中一点是，我会尽量多看美的东西。
+So one thing I try to do is just look at beautiful things.
+
+848
+00:43:30,000 --> 00:43:35,078
+举个例子，旧金山这里有一个马蒂斯展，
+Like as an example, there's a Matisse exhibit here in San Francisco,
+
+849
+00:43:35,078 --> 00:43:39,800
+或者只是去欣赏那些让你觉得美的东西。
+or just kind of consuming things that you enjoy aesthetically.
+
+850
+00:43:40,280 --> 00:43:42,680
+还有一本很好的书，比如《设计心理学》。
+A great book to read is like The Design of Everyday Things.
+
+851
+00:43:43,600 --> 00:43:45,720
+同样，始终要考虑人和用户。
+And again, always considering the human and the user.
+
+852
+00:43:45,800 --> 00:43:49,348
+我觉得硅谷有个很大的误解，
+I think there's this big misconception in Silicon Valley
+
+853
+00:43:49,348 --> 00:43:52,970
+以为设计就是像素级完美的圆角，但其实不是。
+that design is pixel-perfect border radius, and it's not.
+
+854
+00:43:53,050 --> 00:43:57,730
+设计是要想清楚用户体验，当然还要有高保真的 UI。
+It's thinking through the user experience and of course having high fidelity UI.
+
+855
+00:43:57,930 --> 00:43:58,930
+这真的很漂亮，对吧？
+That's—that's beautiful, right?
+
+856
+00:43:58,930 --> 00:44:00,930
+不过是的，那你们是怎么做到的？
+But yeah, and how do you do that?
+
+857
+00:44:00,930 --> 00:44:10,530
+在你们打造 Magic Patterns、管理公司的日常中，你们会做些什么来把用户放在最核心的位置，并且……
+What are some things that you do, maybe in your day-to-day, as you're building Magic Patterns and leading the company as well, to try to put the user front and center and.
+
+858
+00:44:10,810 --> 00:44:12,890
+并且始终把用户的声音放在心上。
+And always keep that voice of the user in your head.
+
+859
+00:44:13,160 --> 00:44:17,680
+我们做的一件事就是，公司里每个人都会做客户支持。
+You know, like a couple things that we do is everyone in our company does customer support.
+
+860
+00:44:18,400 --> 00:44:23,440
+所以每个人都每天在支持收件箱里和用户交流，
+So every single person is in the support inbox talking to users every single
+
+861
+00:44:23,440 --> 00:44:28,640
+看到他们的挫败感，比如他们找不到分享按钮，因为我们有两个完全同色的
+day, seeing their frustrations when they can't find the share button because
+
+862
+00:44:28,640 --> 00:44:33,600
+CTA（行动号召）按钮、两个主要按钮，对吧？
+we have two CTAs that are the exact same color—two primary buttons, right?
+
+863
+00:44:33,880 --> 00:44:37,185
+接下来你会发现，因为工程师们就在那里，
+And the next thing you know, because the engineers there
+
+864
+00:44:37,185 --> 00:44:40,630
+他们会直接去修复问题，因为他们亲身经历了用户的问题；
+are going ahead and fixing it because they experienced the
+
+865
+00:44:40,630 --> 00:44:44,145
+同时我们也会保持很高的标准，
+user problem firsthand and also just having a very high bar,
+
+866
+00:44:44,145 --> 00:44:47,520
+对吧，如果某个东西看起来不对、感觉不对。
+right, where if something looks off and it just feels off.
+
+867
+00:44:48,200 --> 00:44:50,851
+我们鼓励团队所有成员去处理这些问题，
+We encourage all of our team to go ahead and
+
+868
+00:44:50,851 --> 00:44:53,880
+花时间在额外的那 20% 上。
+tackle that, spend time on the extra 20 percent.
+
+869
+00:44:54,510 --> 00:44:57,639
+不要只拿到 vibe-coded 输出，
+Don't just have the vibe-coded output
+
+870
+00:44:57,639 --> 00:45:00,280
+却不把它提升到下一个水平。
+and not take it to the next level.
+
+871
+00:45:00,520 --> 00:45:02,200
+那你们怎么平衡这一点呢？
+And how do you balance that?
+
+872
+00:45:02,240 --> 00:45:04,400
+因为很明显，这样做听起来很好。
+Because obviously, doing that sounds great.
+
+873
+00:45:04,440 --> 00:45:06,960
+代价就是，现在发布某个东西会花更长时间。
+The trade-offs are now it's going to take longer to ship something.
+
+874
+00:45:07,600 --> 00:45:12,126
+你如何平衡快速发布的速度，与真正多花心思、
+How do you balance the speed of shipping quickly with actually, you know, going above and
+
+875
+00:45:12,126 --> 00:45:17,080
+做出真正优秀的东西，而不是只是还行？
+beyond and making something that is actually excellent rather than the thing that was just okay?
+
+876
+00:45:17,440 --> 00:45:20,560
+是的，嗯，你必须——这全都关乎权衡，对吧？如果你……
+Yeah, well, you have to, it's all about trade-offs, right? And if you.
+
+877
+00:45:21,430 --> 00:45:22,310
+不这样做。
+Don't do that.
+
+878
+00:45:23,270 --> 00:45:26,750
+你可能会有大量用户来到你的网站，然后他们又离开了。
+You might have tons of users that are on your site and then they're leaving.
+
+879
+00:45:27,350 --> 00:45:28,470
+他们没有理解它。
+They're not understanding it.
+
+880
+00:45:28,950 --> 00:45:31,910
+他们的工作流程被卡住了，对吧？
+Their workflow is blocked, right?
+
+881
+00:45:31,910 --> 00:45:35,710
+所以你必须相信这是值得的。
+And so you have to have faith that it is worth it.
+
+882
+00:45:36,110 --> 00:45:38,950
+对我们来说，我们非常相信这是值得的。
+And for us, we have tremendous faith that it is worth it.
+
+883
+00:45:38,990 --> 00:45:43,860
+想清楚这一点，并且花时间去做某件事，这很重要。
+It is important to think through and to take your time doing something.
+
+884
+00:45:44,180 --> 00:45:48,160
+而且我觉得大家很喜欢说：如果它设计得很好，
+And I think it's also like people love saying, if it's well-designed,
+
+885
+00:45:48,160 --> 00:45:51,180
+那它发布一定花了很久，这个团队一定很慢。
+it must have taken so long to ship and they're so slow.
+
+886
+00:45:51,740 --> 00:45:54,300
+我可以向你保证，并不是这样。
+I can promise you—not, not really.
+
+887
+00:45:54,380 --> 00:45:57,331
+你仍然可以非常快，
+You can still be really fast, especially considering how
+
+888
+00:45:57,331 --> 00:46:00,220
+尤其是考虑到现在写代码相关的所有事情都提速了很多。
+much everything is sped up when it comes to writing code.
+
+889
+00:46:00,420 --> 00:46:01,500
+对，这其实很有意思。
+Yeah, it's actually really interesting.
+
+890
+00:46:01,820 --> 00:46:03,740
+那些权衡不再必须存在了。
+Those trade-offs don't have to exist anymore.
+
+891
+00:46:04,460 --> 00:46:05,820
+过去它们确实必须存在。
+Historically they had to exist.
+
+892
+00:46:06,220 --> 00:46:07,460
+Magic Patterns 接下来有什么计划？
+What's next for Magic Patterns?
+
+893
+00:46:07,700 --> 00:46:09,388
+你们的路线图下一步是什么？
+What's next on the roadmap for you, and
+
+894
+00:46:09,388 --> 00:46:11,340
+你认为设计接下来会走向哪里？
+where do you think design is going from here?
+
+895
+00:46:11,620 --> 00:46:13,713
+是的，这周我们发布了 MagicOS，
+Yeah, so this week we released MagicOS,
+
+896
+00:46:13,713 --> 00:46:16,060
+也就是我们画布的新版本。
+which again is our new version of our canvas.
+
+897
+00:46:16,180 --> 00:46:19,540
+它就像 Pinterest（图片灵感平台）和 Figma 生了个宝宝。
+It's like Pinterest and Figma had a baby.
+
+898
+00:46:19,740 --> 00:46:22,604
+呃，你可以和它对话、用提示词生成设计，
+Uh, and you can chat with it, prompt with it to
+
+899
+00:46:22,604 --> 00:46:25,700
+也可以带入你的 PRD（产品需求文档）和背景资料。
+make designs, bring your PRDs and your context.
+
+900
+00:46:26,160 --> 00:46:28,080
+我觉得设计的未来会怎么发展？
+I think what's next for the future of design?
+
+901
+00:46:28,240 --> 00:46:30,920
+嗯，有一点是肯定的：它变化得非常非常快。
+Well, one thing's for sure, it's moving very, very fast.
+
+902
+00:46:31,400 --> 00:46:37,360
+任何认为自己确切知道的人，大概都只是在瞎猜，对吧？
+And anyone who thinks that they know for sure, you know, probably is just making it up, right?
+
+903
+00:46:37,480 --> 00:46:40,830
+但我认为有一件事是确定的：
+But I think one thing that's certainly true is code
+
+904
+00:46:40,830 --> 00:46:43,861
+代码作为一种媒介会继续存在，因为很明显，frontier
+as a medium is here to stay because clearly the
+
+905
+00:46:43,861 --> 00:46:47,530
+labs（前沿 AI 实验室）以及所有人都在努力让编码智能体变得非常非常好。
+frontier labs and everyone is working on making coding
+
+906
+00:46:47,530 --> 00:46:50,800
+而这是终极的……
+agents very, very good. And that is the ultimate.
+
+907
+00:46:51,910 --> 00:46:56,550
+面向生产和用户的媒介。
+Medium for production and for your users.
+
+908
+00:46:56,910 --> 00:46:57,710
+对，这很有意思。
+Yeah, it's interesting.
+
+909
+00:46:59,350 --> 00:47:01,870
+代码只是另一种媒介，就像你说的。
+Code is just another medium, like you said.
+
+910
+00:47:02,350 --> 00:47:06,411
+产品被创造、用户体验产品的方式有很多不同的媒介，
+And there's lots of different mediums by which products are created
+
+911
+00:47:06,411 --> 00:47:10,258
+这只是其中一种新的媒介；
+and users experience products, and this is just a new one that has
+
+912
+00:47:10,258 --> 00:47:14,390
+现在有了新工具，能够构建以前不可能实现的东西。
+now new tools to be able to build things that weren't possible before.
+
+913
+00:47:14,940 --> 00:47:18,370
+看到一切被提升到新的水平，
+And it's really exciting to see everything get taken to a new level and
+
+914
+00:47:18,370 --> 00:47:21,860
+看到那些几乎以为永远不可能的事情变成可能，真的让人兴奋。
+new things being possible that almost seemed like they never would be.
+
+915
+00:47:22,060 --> 00:47:23,541
+所以很高兴你能来，
+And so it's awesome to have you on
+
+916
+00:47:23,541 --> 00:47:26,174
+看到你们如何通过 Magic Patterns 让这些成为可能，
+and see how you guys are enabling that with Magic Patterns
+
+917
+00:47:26,174 --> 00:47:27,820
+也非常感谢你来参加节目。
+and really appreciate you joining.
+
+918
+00:47:28,220 --> 00:47:28,980
+太感谢了。
+Yeah, thanks so much.
+
+919
+00:47:29,100 --> 00:47:32,580
+好的，本期 Design Review（设计评审节目）就到这里。我们下期再见。
+Well, that does it for this episode of Design Review. And we'll see you on the next one.

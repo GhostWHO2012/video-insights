@@ -1,0 +1,6134 @@
+1
+00:00:00,130 --> 00:00:01,730
+现在正在发生的事情非常重要。
+What's happening right now is a big deal.
+
+2
+00:00:01,850 --> 00:00:03,850
+这是自 ChatGPT 以来规模最大的一次发布。
+This is the biggest launch since ChatGPT.
+
+3
+00:00:04,210 --> 00:00:05,050
+它叫 Muse（Meta 的个人 AI 智能体）。
+It's called Muse.
+
+4
+00:00:05,330 --> 00:00:05,490
+Muse。
+Muse.
+
+5
+00:00:05,930 --> 00:00:07,850
+Muse 让整个科技圈都兴奋不已。
+Muse has the tech world buzzing.
+
+6
+00:00:08,170 --> 00:00:11,690
+22 天 500 万次下载，超过了 ChatGPT。
+5 million downloads in 22 days, surpassing ChatGPT.
+
+7
+00:00:12,210 --> 00:00:13,330
+而他打造了它。
+And he built it.
+
+8
+00:00:13,530 --> 00:00:15,450
+大多数人都在用 AI 回答问题。
+Most people are using AI to answer questions.
+
+9
+00:00:15,690 --> 00:00:17,170
+基本上就是高级版 Google 搜索。
+Basically a glorified Google search.
+
+10
+00:00:17,410 --> 00:00:18,850
+这完全是另一回事。
+This is something totally different.
+
+11
+00:00:19,330 --> 00:00:21,610
+它是一个为日常生活打造的 AI 智能体。
+It's an AI agent built for everyday life.
+
+12
+00:00:21,810 --> 00:00:24,210
+我们相信 Muse 会帮你赚钱。
+We believe that Muse will make you money.
+
+13
+00:00:24,450 --> 00:00:26,930
+有个人让 Muse 帮忙计划和妻子的周末出游。
+One guy had Muse help plan a weekend away with his wife.
+
+14
+00:00:27,210 --> 00:00:28,450
+它能打电话。
+It can make phone calls.
+
+15
+00:00:28,610 --> 00:00:30,130
+它能替你执行任务。
+It can do tasks for you.
+
+16
+00:00:30,210 --> 00:00:33,656
+但要想让它起作用，你得先信任它，
+But for it to work, you have to trust it first with your
+
+17
+00:00:33,656 --> 00:00:37,886
+把你的个人信息交给它；然后信任它会去做你真正想让它做的事；
+personal information, then to do what you actually want it to do,
+
+18
+00:00:37,886 --> 00:00:41,410
+再然后，信任它不会——嗯——失控。
+and then that it's not gonna, well, get out of control.
+
+19
+00:00:41,610 --> 00:00:47,570
+而这一切发生的时间点，正是那些最重要的 AI 领袖都在警告我们 AI 正在失控的时候。
+All at a time when the most important AI leaders are warning us that AI is getting out of control.
+
+20
+00:00:47,970 --> 00:00:49,930
+我恳请你敦促我停下来。
+And I urge you to urge me to stop.
+
+21
+00:00:50,570 --> 00:00:53,385
+如果你看懂 Muse 现在正在发生的事，
+If you understand what's happening right now with Muse,
+
+22
+00:00:53,385 --> 00:00:56,140
+你就能看懂 AI 领域正在发生的大事。
+you'll understand the biggest things happening in AI.
+
+23
+00:00:56,380 --> 00:00:57,940
+那它到底能做什么？
+So what can it actually do?
+
+24
+00:00:58,220 --> 00:00:59,380
+我们该在什么时候信任它？
+When should we trust it?
+
+25
+00:00:59,580 --> 00:01:03,660
+我们还需要做些什么来确保这件事走对方向？
+And what do we need to do to make sure this goes right?
+
+26
+00:01:03,900 --> 00:01:06,620
+我们正处在一个近乎最疯狂的时期。
+And we're at the moment of like peak insanity.
+
+27
+00:01:06,860 --> 00:01:09,340
+为什么这些亿万富翁都对餐厅预订如此执着？
+Why are all these billionaires obsessed with restaurant reservations?
+
+28
+00:01:09,740 --> 00:01:13,700
+我们都有共同利益，要确保这项技术不会出严重差错。
+We have a shared interest in making sure this technology does not go horribly wrong.
+
+29
+00:01:14,020 --> 00:01:17,522
+这是不是正在某个隐秘房间里发生的事情？
+Is that something that's happening in some private room somewhere?
+
+30
+00:01:17,522 --> 00:01:20,102
+某些个人恩怨
+The degree to which certain personal animosities
+
+31
+00:01:20,102 --> 00:01:24,280
+竟然真的在影响他们开发这项极其重要的技术，
+are actually defining how they're developing this really important technology
+
+32
+00:01:24,280 --> 00:01:25,180
+我觉得这太疯狂了。
+is insane to me.
+
+33
+00:01:31,250 --> 00:01:32,690
+很厉害吧？
+Amazing, right?
+
+34
+00:01:32,970 --> 00:01:33,650
+我们开始吧。
+Let's do this.
+
+35
+00:01:34,090 --> 00:01:34,450
+欢迎。
+Welcome.
+
+36
+00:01:34,730 --> 00:01:35,370
+你最近怎么样？
+How have you been?
+
+37
+00:01:35,570 --> 00:01:35,970
+我挺好的。
+I'm good.
+
+38
+00:01:36,050 --> 00:01:36,570
+我真的很好。
+I'm really good.
+
+39
+00:01:36,690 --> 00:01:37,370
+你最近怎么样？
+How have you been?
+
+40
+00:01:37,890 --> 00:01:39,810
+这阵子真的有点疯狂。
+This is, it's been kind of insane.
+
+41
+00:01:39,930 --> 00:01:40,210
+是啊。
+Yeah.
+
+42
+00:01:40,450 --> 00:01:40,810
+对。
+Yeah.
+
+43
+00:01:41,970 --> 00:01:43,170
+那是什么感觉？
+What does it feel like?
+
+44
+00:01:44,050 --> 00:01:46,730
+我们没想到它会这么火。
+We didn't expect that it would be such a hit.
+
+45
+00:01:46,850 --> 00:01:49,768
+所以我为整个团队和所有为此拼命努力的人感到非常开心，
+So I feel amazing for like the whole team and everyone who like works
+
+46
+00:01:49,768 --> 00:01:53,050
+因为它真的凝聚成型，变成了一件大事。
+so hard on it because it's like it's really come together and become a thing.
+
+47
+00:01:53,270 --> 00:01:55,110
+对，这正是我特别想聊的。
+Yeah, that's what I'm excited to talk about.
+
+48
+00:01:55,230 --> 00:01:56,830
+我知道你已经对这个节目很了解了。
+I know you know all about the show already.
+
+49
+00:01:57,030 --> 00:01:57,270
+对。
+Yeah.
+
+50
+00:01:57,390 --> 00:02:00,470
+但这次不像是传统采访。
+But this isn't like a traditional interview.
+
+51
+00:02:00,710 --> 00:02:02,270
+比如，我不会问财务指标。
+Like, I'm not going to ask about financials.
+
+52
+00:02:02,390 --> 00:02:03,670
+我不会问管理风格。
+I'm not going to ask about management style.
+
+53
+00:02:03,990 --> 00:02:08,710
+你刚刚发布了有史以来最受欢迎的消费级工具之一。
+You just launched one of the most popular consumer tools of all time.
+
+54
+00:02:09,350 --> 00:02:11,910
+所以我唯一想知道的是，
+And so the only thing that I want to know is what's
+
+55
+00:02:11,910 --> 00:02:14,790
+你正在用这个工具朝什么样的未来努力？
+the future that you're working toward with that tool?
+
+56
+00:02:15,230 --> 00:02:20,442
+而这群真正乐观、真正想参与确保那个未来走对的观众，
+And how can this audience that's really optimistic and really wants to be part of making sure that
+
+57
+00:02:20,442 --> 00:02:25,590
+怎样才能感觉到自己参与了正在做出的决策？
+that future goes right, how can they feel like they're part of the decisions that are being made?
+
+58
+00:02:26,350 --> 00:02:27,350
+对，所有这些。
+Yep, all of that.
+
+59
+00:02:27,550 --> 00:02:28,190
+这就是我们要做的。
+That's what we do.
+
+60
+00:02:28,310 --> 00:02:31,044
+我想和你聊的一个原因，
+One of the reasons I wanted to talk to you was
+
+61
+00:02:31,044 --> 00:02:34,310
+就是我一直很欣赏你说话非常直接。
+I've always appreciated that you're really blunt.
+
+62
+00:02:36,849 --> 00:02:42,529
+因为我真心觉得，人们需要关于这件事的直接讨论。
+Like, I honestly think that people need straight talk about this.
+
+63
+00:02:42,529 --> 00:02:44,129
+我觉得人们现在很困惑。
+I think that they feel confused.
+
+64
+00:02:44,529 --> 00:02:46,649
+我想弄清真正发生的事情。
+And I want to get at what's really happening.
+
+65
+00:02:47,569 --> 00:02:48,809
+你究竟打造了什么？
+What have you built?
+
+66
+00:02:49,449 --> 00:02:50,689
+人们是怎么使用它的？
+How are people using it?
+
+67
+00:02:50,729 --> 00:02:51,809
+还有哪些地方没被用起来？
+How are they not?
+
+68
+00:02:52,169 --> 00:02:53,329
+真正的挑战是什么？
+What are the real challenges?
+
+69
+00:02:54,129 --> 00:02:57,522
+我觉得另一个有趣的点是，
+I think one other interesting thing is given
+
+70
+00:02:57,522 --> 00:03:00,640
+鉴于 Muse 已经变得这么受欢迎，
+how popular Muse has become, I want to use
+
+71
+00:03:00,640 --> 00:03:03,850
+我想借它来谈谈 AI 领域的其他事情。
+it as a way to talk about other things in AI.
+
+72
+00:03:04,010 --> 00:03:04,890
+好，太棒了。
+Yup, awesome.
+
+73
+00:03:04,930 --> 00:03:05,890
+好，我们开始吧。
+Okay, let's get into it.
+
+74
+00:03:06,330 --> 00:03:09,250
+Muse是自 ChatGPT 以来增长最快的消费级工具。
+Muse is the fastest growing consumer tool since ChatGPT.
+
+75
+00:03:09,610 --> 00:03:11,250
+我觉得比 ChatGPT 还快。
+Faster than ChatGPT, I think.
+
+76
+00:03:11,370 --> 00:03:16,270
+感觉现在可能是我们从聊天机器人转向智能体的时刻，
+And it feels like this is the moment when we're moving maybe from chatbots
+
+77
+00:03:16,270 --> 00:03:21,330
+不过此前已经有很多热门智能体，主要是在代码领域。
+to agents, but there have been a lot of other popular agents, mostly in code.
+
+78
+00:03:21,710 --> 00:03:25,070
+我很好奇，你觉得为什么 Muse 现在会出现这种爆发？
+And I'm curious, why do you think this is happening for Muse right now?
+
+79
+00:03:25,150 --> 00:03:26,550
+为什么 Muse 会这样爆发式增长？
+Why is Muse exploding like this?
+
+80
+00:03:27,070 --> 00:03:29,988
+我觉得今年到目前为止的大部分时间里，
+I think one of the mysteries of AI so far this year,
+
+81
+00:03:29,988 --> 00:03:31,696
+AI 领域的一个谜团是：
+for most of the year, has been
+
+82
+00:03:31,696 --> 00:03:34,188
+智能体已经在工程师、
+that agents were happening for engineers
+
+83
+00:03:34,188 --> 00:03:37,533
+软件工程师和程序员那里发挥作用，
+and software engineers and coders, and then nobody else
+
+84
+00:03:37,533 --> 00:03:40,950
+但世界上其他人几乎都没有体验过，也不知道它是什么。
+in the world, like, was experiencing it, knew what it was.
+
+85
+00:03:41,110 --> 00:03:42,710
+也就是说，并不真正明白到底发生了什么。
+Like, understood exactly what was happening.
+
+86
+00:03:43,210 --> 00:03:47,500
+所以今年大部分时间里，几乎有两种对话：
+And so for most of this year, you've kind of had this like two dialogues
+
+87
+00:03:47,500 --> 00:03:52,012
+写代码的人能看到 AI 正变得多强大、
+almost where people who do code and could see how powerful AI was becoming
+
+88
+00:03:52,012 --> 00:03:54,157
+多有用，就觉得“天哪，
+and how useful it was becoming were
+
+89
+00:03:54,157 --> 00:03:56,450
+这太不可思议了”。
+like, oh my gosh, this is incredible.
+
+90
+00:03:56,810 --> 00:03:58,010
+而其他所有人大概都在说：
+And then everyone else was kind of
+
+91
+00:03:58,010 --> 00:03:59,210
+你们到底在说什么？
+like, what are you talking about?
+
+92
+00:03:59,330 --> 00:04:00,410
+我还在用聊天机器人呢。
+I still use a chatbot.
+
+93
+00:04:00,570 --> 00:04:01,970
+它也就比 Google 好用一点点。
+Like, it's, like a little bit better than Google.
+
+94
+00:04:02,050 --> 00:04:03,970
+你们这些人到底在大惊小怪什么？
+But what are you guys all freaked out about?
+
+95
+00:04:04,530 --> 00:04:08,063
+我们特别想做的一件事，
+And, um, one of the things that we were really excited
+
+96
+00:04:08,063 --> 00:04:11,837
+就是怎么把工程师、程序员
+to do is how do we take the magic that engineers and coders
+
+97
+00:04:11,837 --> 00:04:15,450
+和开发者看到的那种魔力带给所有人。
+and developers are seeing and bring that to everyone?
+
+98
+00:04:15,810 --> 00:04:18,903
+过去一年里发生的一件事是，
+One of the things that has happened over the course of the past
+
+99
+00:04:18,903 --> 00:04:21,936
+AI 模型最初是相当粗糙的智能体，
+year is like the AI models started out as pretty janky agents
+
+100
+00:04:21,936 --> 00:04:25,090
+你得费很大劲才能让它们正常工作。
+and you kind of had to struggle through them to get them to work.
+
+101
+00:04:25,170 --> 00:04:27,570
+然后它们一点一点变得更好、更好、更好。
+And then they slowly got better and better and better.
+
+102
+00:04:28,110 --> 00:04:33,150
+而业内大多数人主要专注于让它们写代码越来越强。
+And most of the industry has been really focused on making them just like better and better and better at coding.
+
+103
+00:04:33,270 --> 00:04:35,575
+但我们真的觉得这是一大空白，
+But we really felt this was like a big gap because
+
+104
+00:04:35,575 --> 00:04:38,110
+因为世界上大多数人不会写代码。
+most people in the world, they don't know how to code.
+
+105
+00:04:38,190 --> 00:04:41,676
+他们可能根本不想学写代码，
+They probably never even want to code, but they still
+
+106
+00:04:41,676 --> 00:04:45,004
+但仍然希望体验智能体，希望 AI 能为你做更多事，
+want to feel the experience of agents and having AI
+
+107
+00:04:45,004 --> 00:04:48,807
+真正开始承担更多端到端的工作流、
+that's able to do more for you and actually start taking on
+
+108
+00:04:48,807 --> 00:04:52,610
+替你完成更多任务。
+more end-to-end workflows and take on more tasks for you.
+
+109
+00:04:52,610 --> 00:04:54,210
+这就是 Muse 背后的目标。
+So that was really the goal behind Muse.
+
+110
+00:04:54,330 --> 00:04:59,018
+我觉得我们花了很多时间打磨所有小细节，
+And I think we spent a lot of time polishing all the little details to make sure
+
+111
+00:04:59,018 --> 00:05:02,754
+确保它对普通人也能直接好用，因为我们知道，
+that it would just work for people because we knew that, like,
+
+112
+00:05:02,754 --> 00:05:07,735
+开发者在一定程度上能忍受很多粗糙和故障，
+developers can kind of withstand a lot of jank and a lot of stuff breaking and like,
+
+113
+00:05:07,735 --> 00:05:09,786
+他们能应付这些，因为，
+they can kind of deal with all that
+
+114
+00:05:09,786 --> 00:05:12,130
+你知道，他们就是……
+because, you know, they're, they're.
+
+115
+00:05:12,330 --> 00:05:12,890
+这毕竟是技术。
+It's technology.
+
+116
+00:05:12,970 --> 00:05:15,530
+他们习惯了和还不成熟的技术打交道。
+They're used to dealing with, you know, unripe technology.
+
+117
+00:05:15,770 --> 00:05:18,169
+但对其他人来说，你必须做出真正顺滑、
+But for everyone else, you have to make something
+
+118
+00:05:18,169 --> 00:05:20,510
+真正对他们有用的东西。
+that's really smooth and really works for them.
+
+119
+00:05:20,750 --> 00:05:24,981
+我觉得这也帮助解释了那种巨大落差：
+That also helps explain the big gap, I think, between what it feels
+
+120
+00:05:24,981 --> 00:05:30,288
+大多数人实际用 AI（尤其用聊天机器人）时的感受，
+like for most people to actually use AI when they were using a chatbot in particular
+
+121
+00:05:30,288 --> 00:05:34,750
+和“AI 会抢走所有人工作”的讨论之间，相距极远。
+and the conversation around AI that it's gonna take everyone's jobs.
+
+122
+00:05:34,910 --> 00:05:35,710
+那真的很吓人。
+It's really scary.
+
+123
+00:05:35,830 --> 00:05:38,175
+你看，宏观层面的讨论在进行，
+It's, you know, there's a macro conversation happening
+
+124
+00:05:38,175 --> 00:05:40,470
+而人们实际体验又是另一回事。
+and then there's an experience that people are having.
+
+125
+00:05:40,510 --> 00:05:43,070
+这两者看起来真的非常非常远。
+And it just seems like those things are really, really far apart.
+
+126
+00:05:43,470 --> 00:05:47,213
+回到你的观点，Muse 正在让更多人
+And to your point, Muse is giving more people the opportunity
+
+127
+00:05:47,213 --> 00:05:50,149
+有机会获得计算机工程师
+to have the insight that computer engineers had
+
+128
+00:05:50,149 --> 00:05:51,910
+大约一年前就有的那种洞察。
+, you know, call it a year ago.
+
+129
+00:05:52,430 --> 00:05:52,550
+对。
+Yeah.
+
+130
+00:05:52,630 --> 00:05:53,110
+这样说准确吗？
+Is that fair?
+
+131
+00:05:53,270 --> 00:05:53,430
+我……
+I...
+
+132
+00:05:53,470 --> 00:05:54,110
+我觉得确实如此。
+I think that's true.
+
+133
+00:05:54,150 --> 00:05:54,310
+对。
+Yeah.
+
+134
+00:05:54,390 --> 00:05:54,630
+对。
+Yeah.
+
+135
+00:05:54,750 --> 00:05:57,630
+历史上也有一些时刻，我觉得感觉类似。
+There are also moments in history that I think feel similar.
+
+136
+00:05:57,910 --> 00:06:02,040
+你会说这就像智能体的“手机时刻”吗？
+Would you say it's like the mobile phone moment for agents?
+
+137
+00:06:02,200 --> 00:06:05,243
+你知道，手机让数十亿从未拥有过 PC 的人上了网，
+You know, billions of people brought online by mobile phones
+
+138
+00:06:05,243 --> 00:06:07,092
+因为它简单易用，
+that never had PCs because it was easy
+
+139
+00:06:07,092 --> 00:06:09,359
+而且他们不用……你知道吗，
+and simple to use and they didn't, you know...
+
+140
+00:06:09,359 --> 00:06:12,640
+我其实在你刚才提到之前都没想到这一点。
+I actually hadn't thought about that until you just mentioned it.
+
+141
+00:06:12,640 --> 00:06:14,455
+但我觉得这是个很好的类比，
+But I think it's a great analogy because it's
+
+142
+00:06:14,455 --> 00:06:16,318
+因为这些模型进步得非常快，
+these models, they're improving really fast
+
+143
+00:06:16,318 --> 00:06:18,280
+真的非常非常快。
+and they're improving really, really quickly.
+
+144
+00:06:18,800 --> 00:06:21,096
+而非常重要的是，
+And it's really important that we,
+
+145
+00:06:21,096 --> 00:06:24,342
+随着这些模型变得更好，
+as those models get better, that the superpowers
+
+146
+00:06:24,342 --> 00:06:29,330
+它们带来的超能力能够被赋予全世界几乎每一个人。
+that they lend can be given to like literally everyone all around the world.
+
+147
+00:06:29,570 --> 00:06:32,557
+我喜欢这个类比的一点是，
+The part that I like about the analogy is like,
+
+148
+00:06:32,557 --> 00:06:34,444
+很多事情其实就是
+um, so much of it is just about
+
+149
+00:06:34,444 --> 00:06:37,274
+想办法把一切打包成
+figuring out how to package it all together
+
+150
+00:06:37,274 --> 00:06:40,890
+一种能与人产生共鸣的形态。
+into a form factor that, um, will resonate with people.
+
+151
+00:06:41,370 --> 00:06:44,245
+这也是我们花了很多时间去打磨、
+And that's what we spent a lot of time trying to craft
+
+152
+00:06:44,245 --> 00:06:45,983
+做对、做到完美的部分。
+and get right and make perfect,
+
+153
+00:06:45,983 --> 00:06:50,664
+这也让我想到我听到的关于 Muse 的一个有趣的第一反应：
+which also gets to one of the interesting initial reactions that I've heard of Muse,
+
+154
+00:06:50,664 --> 00:06:55,210
+是不是所有人都比我生活得更复杂？比如我醒来，我去……
+which is, is everybody's life more complicated than mine? Like, I wake up, I go to.
+
+155
+00:06:55,210 --> 00:06:56,370
+上班，陪我的孩子玩。
+Work, I play with my kids.
+
+156
+00:06:56,890 --> 00:06:58,930
+我一个月只有一次餐厅预订。
+I have one restaurant reservation a month.
+
+157
+00:06:59,130 --> 00:07:01,450
+我和配偶一起规划一次度假。
+I plan one vacation with my spouse.
+
+158
+00:07:01,610 --> 00:07:04,490
+为什么这些亿万富翁都那么痴迷于餐厅预订？
+Like, why are all these billionaires obsessed with restaurant reservations?
+
+159
+00:07:05,200 --> 00:07:06,440
+我为什么需要助手？
+Why do I need an assistant?
+
+160
+00:07:07,200 --> 00:07:08,680
+你会怎么回答这个问题？
+How would you answer that?
+
+161
+00:07:08,920 --> 00:07:12,767
+每当我向完全不了解 Muse 的人解释时，
+Whenever I explain Muse to someone who knows nothing about it, um,
+
+162
+00:07:12,767 --> 00:07:16,333
+我都会说：Muse 能帮你省钱、省时间，
+I just say, like, Muse can help save you money and save you time
+
+163
+00:07:16,333 --> 00:07:20,320
+而世界上每个人都想省钱、省时间。
+and everybody in the world wants to save money and wants to save time.
+
+164
+00:07:20,720 --> 00:07:22,610
+根据你的生活方式不同，
+Depending on what your lifestyle is,
+
+165
+00:07:22,610 --> 00:07:24,560
+这对你来说可能意味着不同的事情。
+that can mean a different thing to you.
+
+166
+00:07:25,000 --> 00:07:28,900
+我觉得几乎每个人都有一些不该继续付费的订阅，
+I think almost everyone has like subscriptions that they shouldn't be paying for
+
+167
+00:07:28,900 --> 00:07:31,079
+或者一些非常贵的订阅，
+or subscriptions that are really expensive,
+
+168
+00:07:31,079 --> 00:07:32,570
+比如有线电视账单或保险。
+like cable bills or insurance.
+
+169
+00:07:32,850 --> 00:07:35,419
+对很多人来说，他们的 Muse 神奇时刻
+And for a lot of people, their magic moment with Muse
+
+170
+00:07:35,419 --> 00:07:38,943
+就是省下那些本不该花的钱，
+is just saving money on things that they shouldn't be spending money on
+
+171
+00:07:38,943 --> 00:07:41,213
+或者本不该花那么多的钱，
+or they shouldn't be spending so much money on
+
+172
+00:07:41,213 --> 00:07:43,424
+或者找到没用完的礼品卡，
+or finding gift cards that they hadn't spent
+
+173
+00:07:43,424 --> 00:07:46,530
+例子还有很多。我觉得很棒的是……
+or, you know, the list goes on and on. I think it's awesome that.
+
+174
+00:07:46,530 --> 00:07:47,570
+有这么多人正在体验这一点。
+So many people are experiencing that.
+
+175
+00:07:47,610 --> 00:07:48,880
+我觉得这很棒，
+I think that's like great
+
+176
+00:07:48,880 --> 00:07:52,328
+因为这些事情对大多数人来说真的太无聊了，
+because these are things that they're just, I think for most people,
+
+177
+00:07:52,328 --> 00:07:57,470
+你根本不会真的去处理它们。
+they're just so boring that you would never get to actually, like, handling them or dealing with them.
+
+178
+00:07:57,510 --> 00:07:59,986
+但你知道，你的智能体 Muse 可以替你完成这些，
+But, you know, your agent Muse can just do that for you
+
+179
+00:07:59,986 --> 00:08:02,125
+然后你就省下了时间。
+and then you're saving time, which I think for
+
+180
+00:08:02,125 --> 00:08:04,601
+我觉得对很多人来说，
+lots of people, I think there are always experiences
+
+181
+00:08:04,601 --> 00:08:07,190
+总有一些体验比它本该有的样子令人沮丧得多。
+that are just way more frustrating than they should be.
+
+182
+00:08:07,190 --> 00:08:09,030
+比如去 DMV（车管所）就是一个例子。
+Like going to the DMV is one example.
+
+183
+00:08:09,430 --> 00:08:12,910
+实际上，我们在做 Muse 的时候，
+We actually, when we built Muse, we, like, specifically
+
+184
+00:08:12,910 --> 00:08:16,613
+专门测试过它能不能处理 DMV 网站，
+tested it to see if it could deal with the DMV website because
+
+185
+00:08:16,613 --> 00:08:23,870
+因为我们觉得那大概是对任何人来说最令人沮丧的体验——和 DMV 打交道。
+that was, like, the pinnacle we thought of, like, the most frustrating experience for any human is dealing with a DMV.
+
+186
+00:08:24,270 --> 00:08:29,070
+所以我们知道，我们必须让 Muse 能在那种情况下表现良好。
+So we knew we needed to have Muse, like be able to do well in that situation.
+
+187
+00:08:29,350 --> 00:08:31,930
+我们看到有人用它来应对医疗系统，
+We've seen people use it for like, yeah, navigating the
+
+188
+00:08:31,930 --> 00:08:34,903
+这是个大用途。医疗理赔也是很大的用途，
+healthcare system is a big one. Medical claims is like a huge one
+
+189
+00:08:34,903 --> 00:08:37,371
+对大多数人来说，那太复杂、
+that like most people just, it's like so complicated
+
+190
+00:08:37,371 --> 00:08:40,120
+太烦人，真的令人非常沮丧。
+and annoying that it's just like incredibly frustrating.
+
+191
+00:08:40,400 --> 00:08:43,520
+我们也看到有人用它来帮助经营自己的小生意。
+We've seen people like use it to help run their small business.
+
+192
+00:08:43,760 --> 00:08:46,960
+我们甚至看到很多人用它来帮忙运营社交媒体。
+We've seen a lot of people, like, use it to help run their social media even.
+
+193
+00:08:47,080 --> 00:08:49,889
+我觉得医疗系统是个很好的例子，
+And I think the medical system is a really good
+
+194
+00:08:49,889 --> 00:08:52,920
+因为它真的太让人难懂了。
+example because it's like so hard to understand.
+
+195
+00:08:53,440 --> 00:08:56,392
+我觉得，怎么说呢，最好的一种说法是：
+And I think the, the, you know, one of the best ways to put it is
+
+196
+00:08:56,392 --> 00:08:59,285
+那些真正能救命的情况，
+like, I think the cases where people, where it's like a huge
+
+197
+00:08:59,285 --> 00:09:03,004
+是你本来得坐在电脑前，
+lifesaver are the cases where like otherwise you would be at your computer,
+
+198
+00:09:03,004 --> 00:09:05,720
+谷歌 50 样不同的东西。你还得……
+you'd have to Google like 50 different things. You have
+
+199
+00:09:05,720 --> 00:09:07,638
+去读、去逛大概 100 个不同网站，
+To read, go to like 100 different websites
+
+200
+00:09:07,638 --> 00:09:09,720
+试着搞清楚到底是怎么回事。
+and try to figure out what the hell is going on.
+
+201
+00:09:10,160 --> 00:09:14,440
+而那真的是一种极其令人抓狂的体验。
+And it's just like this incredibly frustrating experience.
+
+202
+00:09:14,520 --> 00:09:15,960
+或者你可以让 Muse 帮你做。
+Or you could have your Muse do it.
+
+203
+00:09:16,080 --> 00:09:20,200
+我也在想，有多少事情我怀疑是被故意设计得
+I also think about how many things I suspect are made
+
+204
+00:09:21,800 --> 00:09:26,640
+又难又耗时，目的是让我挫败到根本走不到最后。
+Difficult and time consuming on purpose in order to frustrate me so much that I don't get to the end.
+
+205
+00:09:26,880 --> 00:09:31,040
+有多少理赔其实是被设计得那么难，好让我放弃？
+How many claims are actually designed to be that hard so that I give up?
+
+206
+00:09:31,120 --> 00:09:35,661
+我很好奇，当更多人因为有了支持而更有耐心时，
+And I wonder what effect more people having more patience because
+
+207
+00:09:35,661 --> 00:09:40,120
+会对这种系统设计产生什么影响。
+they have support will have on that kind of systems engineering.
+
+208
+00:09:40,680 --> 00:09:47,440
+我给小 Muse 做的一个小梗图叫 Musenhood，就像 Muse 版罗宾汉。
+One of the little memes that I made of the little Muse was, uh, Musenhood, which is like a Muse Robin Hood.
+
+209
+00:09:47,680 --> 00:09:50,766
+但我觉得这背后有个很真实的现象：
+But I think there's like a real truth to this,
+
+210
+00:09:50,766 --> 00:09:54,187
+世界上有很多事情，
+which is there are lots of things that exist in the
+
+211
+00:09:54,187 --> 00:09:57,440
+正如你说的，本来就是被设计得很难。
+world that are, to your point, meant to be hard.
+
+212
+00:09:57,680 --> 00:10:00,814
+比如，取消订阅就是最好的例子之一。
+So like, uh, canceling subscriptions is one of the best examples
+
+213
+00:10:00,814 --> 00:10:03,657
+有些订阅，你必须先点一个东西，
+where there's some subscriptions where you have to, like,
+
+214
+00:10:03,657 --> 00:10:06,965
+再点另一个东西，然后点一小段文字，
+click on one thing and click on another thing and then click on, like,
+
+215
+00:10:06,965 --> 00:10:10,040
+接着不能点那个大红按钮，而是……
+the little piece of text and then not click the big red button but
+
+216
+00:10:10,040 --> 00:10:10,720
+点另一个按钮。
+Click the other button.
+
+217
+00:10:11,120 --> 00:10:14,150
+这简直就是个完美的例子，说明很多情况下，
+And like that's just like the perfect example where there's
+
+218
+00:10:14,150 --> 00:10:17,240
+事情就是被人为设计得很难。
+lots of cases where things are designed to be hard for people.
+
+219
+00:10:17,920 --> 00:10:20,761
+我觉得，这就像是给了人们工具，
+And I think like this is giving people the tools to
+
+220
+00:10:20,761 --> 00:10:23,880
+让他们能无缝又轻松地完成这些事。
+be able to just do those things seamlessly and easily.
+
+221
+00:10:24,280 --> 00:10:28,720
+我拿到了打电话功能的权限，今天早上我让它打了一通电话，它成功完成了。
+I got access to the calling, um, and I had it make a call this morning, which it did successfully.
+
+222
+00:10:29,240 --> 00:10:31,080
+电话另一头听起来是什么样？
+What does it sound like on the other end?
+
+223
+00:10:31,440 --> 00:10:35,680
+我觉得对另一头的人来说，很明显它是一个 AI。
+I think it's clear for the other end that it is like an AI.
+
+224
+00:10:35,760 --> 00:10:38,085
+而且我觉得，如果你看，
+And I think if you look at the, you know, we show users the
+
+225
+00:10:38,085 --> 00:10:40,713
+我们会给用户展示通话文字记录。如果你看记录的开头，
+transcript like if you see the transcript, like the beginning
+
+226
+00:10:40,713 --> 00:10:43,240
+我总觉得特别好笑，因为它是像……
+of the call, I always think is really funny because it's like
+
+227
+00:10:43,320 --> 00:10:44,520
+嗨，我是某某。
+Hi I'm so and so.
+
+228
+00:10:44,880 --> 00:10:48,920
+嗯，我是 Cleo Abram（主持人）的助手，这通电话正在录音。
+Um, I'm Cleo's assistant and, uh, this call is being recorded.
+
+229
+00:10:49,440 --> 00:10:52,480
+我觉得它总是那种特别好笑的开场。
+And I think it's just like always this very funny beginning of a call.
+
+230
+00:10:52,920 --> 00:10:55,720
+嗨，我是 Haley，代表 Cleo Abram 打来电话。
+Hi, I'm Haley calling on Cleo Abram's behalf.
+
+231
+00:10:56,130 --> 00:10:57,690
+我正在把我们的通话转成文字，以便做记录。
+I'm transcribing our call for notes.
+
+232
+00:10:58,130 --> 00:11:02,246
+有哪些例子是它在你使用时搞砸了，
+What are some examples of when it's messed up for you or when it's,
+
+233
+00:11:02,246 --> 00:11:06,058
+或者你觉得它仍然很吃力的类别？
+you feel like categories it struggles with still? One thing
+
+234
+00:11:06,058 --> 00:11:10,250
+我们一直在努力改进的一点，就是这些智能体的记忆。
+that we're always trying to improve is the memory of these agents.
+
+235
+00:11:10,370 --> 00:11:10,610
+对。
+Right.
+
+236
+00:11:10,610 --> 00:11:13,487
+我认为，对很多智能体来说，
+And this is still one of the more unsolved problems,
+
+237
+00:11:13,487 --> 00:11:16,699
+这仍然是比较未解决的问题之一：
+I think, for a lot of these agents is having them, you know,
+
+238
+00:11:16,699 --> 00:11:19,510
+智能体的记忆不像人类的记忆。
+the memory of the agents is not like that of a human.
+
+239
+00:11:19,830 --> 00:11:21,427
+有时候它可能感觉像，
+Um, sometimes it can feel like it's
+
+240
+00:11:21,427 --> 00:11:23,190
+但实际上区别很大。
+like that, but it is really different.
+
+241
+00:11:23,470 --> 00:11:25,910
+所以这是我们在不断努力改进的一个方面。
+So that's one area where we're like always trying to improve.
+
+242
+00:11:26,030 --> 00:11:29,674
+我们总想弄清楚如何让智能体变得更好，
+We always want to figure out how to make the agents better and then
+
+243
+00:11:29,674 --> 00:11:33,790
+然后希望它们能不断完成越来越复杂的任务。
+like we want them to be able to continue doing more and more complex tasks.
+
+244
+00:11:34,190 --> 00:11:35,279
+我觉得这真的很好笑，
+I find this really funny,
+
+245
+00:11:35,279 --> 00:11:38,546
+但有很多人会直接对 Muse 说：
+but there's, um, there's a lot of people who will just, like, ask their Muse,
+
+246
+00:11:38,546 --> 00:11:39,790
+我想让你帮我赚 1 万美元。
+I want you to make me $10,000.
+
+247
+00:11:40,350 --> 00:11:43,670
+显然，不是每个人都能直接让 Muse 帮他们赚到 1 万美元。
+And obviously not everyone can just ask their Muse to make them $10,000.
+
+248
+00:11:43,710 --> 00:11:47,157
+但我认为，对于这些更模糊、更不确定的任务，
+But I think these kinds of more amorphous, nebulous tasks,
+
+249
+00:11:47,157 --> 00:11:49,760
+我们希望 Muse 至少能制定一个计划并弄清楚，
+we want Muse to be able to at least build a plan
+
+250
+00:11:49,760 --> 00:11:52,715
+而且你知道，如果你想赚到 1 万美元，
+and figure out, and, you know, you're gonna have to
+
+251
+00:11:52,715 --> 00:11:55,670
+你自己也得付出努力。但我认为……
+do your part if you want to make $10,000. But I think
+
+252
+00:11:55,670 --> 00:11:58,635
+我们希望让智能体能够完成越来越多复杂
+We want to enable the agent to do more and more
+
+253
+00:11:58,635 --> 00:12:02,160
+而专门的任务，去帮助用户。
+kind of complex and esoteric tasks to help the users.
+
+254
+00:12:02,640 --> 00:12:09,080
+有些事，即使 Muse 能做，我在情感上也宁愿它们不要做。
+There are some things where I feel emotionally, even if Muse could do them, I would prefer that they didn't.
+
+255
+00:12:09,160 --> 00:12:11,036
+比如，如果我给朋友发短信，
+So, for example, if I'm texting a friend
+
+256
+00:12:11,036 --> 00:12:13,652
+结果发现回复我的是他们的 Muse 智能体，
+and I find out that their Muse agent is responding to me,
+
+257
+00:12:13,652 --> 00:12:14,960
+我会觉得被冒犯了。
+I would be offended by that.
+
+258
+00:12:15,320 --> 00:12:17,042
+有没有哪类事情，
+Are there categories of things
+
+259
+00:12:17,042 --> 00:12:19,492
+你认为 Muse 明确不应该做，
+that you think explicitly Muse should not do
+
+260
+00:12:19,492 --> 00:12:22,737
+或者被极度降低优先级——不是
+that are sort of just, like, extremely deprioritized, not
+
+261
+00:12:22,737 --> 00:12:26,180
+因为技术上很难，而是因为从社交角度看，
+because they're technically that hard, but because socially
+
+262
+00:12:26,180 --> 00:12:27,080
+那根本不是重点？
+not the point.
+
+263
+00:12:27,680 --> 00:12:31,220
+我们很看重的一点，是让 Muse 帮你扫清障碍，
+A lot of what we care about is having Muse kind of clear the way such
+
+264
+00:12:31,220 --> 00:12:35,220
+这样你就能把更多时间花在想做的事、
+that you can spend more time on the things that you want to do and the things
+
+265
+00:12:35,220 --> 00:12:38,760
+喜欢做的事和对你有价值的事上。
+that you enjoy doing and the things that are like valuable to you.
+
+266
+00:12:39,000 --> 00:12:46,820
+总的来说，我们希望弄清楚如何让某个人的 Muse 看起来像是跟他们不同的独立实体。
+We, generally speaking, want to figure out how to make the, like, someone's Muse is like a different entity than them.
+
+267
+00:12:47,060 --> 00:12:49,020
+这就是为什么它被做成一个可爱的小家伙。
+That's why it's like a little cute guy.
+
+268
+00:12:49,580 --> 00:12:52,648
+而且我们希望随着时间推移，
+Um, uh, and we want to, over time, continue making that more
+
+269
+00:12:52,648 --> 00:12:54,839
+让这一点越来越清楚。因为正如你所说，
+and more clear because, um, to your point,
+
+270
+00:12:54,839 --> 00:12:58,220
+如果你以为自己在跟朋友说话，
+like it is socially weird if you're like you think you're talking
+
+271
+00:12:58,220 --> 00:13:01,100
+结果对面其实只是小 Muse，这在社交上会很奇怪。
+to your friend and it just happens to be the little Muse.
+
+272
+00:13:01,340 --> 00:13:03,380
+躲在幕后的小 Muse 家伙。
+The little Muse guy behind the curtain.
+
+273
+00:13:03,840 --> 00:13:05,374
+说到它们的长相，
+Speaking of what they look like,
+
+274
+00:13:05,374 --> 00:13:07,134
+我以前参观过人形机器人。
+I've visited humanoid robots before
+
+275
+00:13:07,134 --> 00:13:09,009
+我花很多时间思考的一个问题，
+and one of the things I spend a lot of time
+
+276
+00:13:09,009 --> 00:13:10,826
+就是如何把它做得可爱，
+thinking about is how to make it cute so
+
+277
+00:13:10,826 --> 00:13:13,042
+让你喜欢它们、愿意让它们待在家里，
+that you like them and you want them in your home
+
+278
+00:13:13,042 --> 00:13:15,200
+或者至少不怕它们。Muse 在……
+or at least you're not afraid of them. What did
+
+279
+00:13:15,320 --> 00:13:17,480
+之前的版本长什么样？
+Muse look like in previous iterations?
+
+280
+00:13:17,600 --> 00:13:20,160
+你们是怎么决定用现在这个形象的？
+And how did you decide on that particular guy?
+
+281
+00:13:20,520 --> 00:13:23,000
+我觉得这是最让人惊讶的事情之一：
+I think this is like one of the most shocking
+
+282
+00:13:23,000 --> 00:13:25,480
+Muse 现在的样子，
+things, what the Muse looks like now is what
+
+283
+00:13:25,480 --> 00:13:27,960
+就是它最初原型的样子。
+he looked like in the very first prototype.
+
+284
+00:13:28,320 --> 00:13:31,233
+这有点像那种很罕见的情况：
+It's kind of one of these like rare things where the
+
+285
+00:13:31,233 --> 00:13:34,076
+第一个版本就已经很完美，
+very first version was just perfect and then just
+
+286
+00:13:34,076 --> 00:13:36,920
+然后我们都越来越喜欢它，最后就定了它。
+like grew on all of us and we ended up going with it.
+
+287
+00:13:37,040 --> 00:13:40,335
+我们为此争论了很多次。
+We had lots of debates about it, uh, which are, you know,
+
+288
+00:13:40,335 --> 00:13:43,559
+回想起来，那会是我最搞笑的一些会议：
+in retrospect will be some of my funniest meetings of,
+
+289
+00:13:43,559 --> 00:13:47,069
+一群严肃的成年人坐在房间里，
+like, you know, a bunch of serious adults getting in a room,
+
+290
+00:13:47,069 --> 00:13:49,576
+争论这个可爱的小角色。
+like, arguing about this cute little, um,
+
+291
+00:13:49,576 --> 00:13:52,800
+但，嗯，对，我觉得……
+you know, character. But, uh, but yeah, I mean, I think
+
+292
+00:13:52,800 --> 00:13:54,400
+我们会问：它会不会不够严肃？
+We were like, is it not serious enough?
+
+293
+00:13:54,560 --> 00:13:56,080
+会不会太俏皮了？
+Is it like too playful?
+
+294
+00:13:56,440 --> 00:13:57,480
+需不需要更多颜色？
+Does it need to be more colorful?
+
+295
+00:13:57,560 --> 00:13:59,754
+这些都是我们问过的问题。
+Like, these were all things that we asked the questions on
+
+296
+00:13:59,754 --> 00:14:01,720
+我们看了看，然后说：不，它很完美。
+and we looked at them, we're like, no, he's perfect.
+
+297
+00:14:02,040 --> 00:14:04,280
+这里的宏大愿景是什么？
+What is the big vision here?
+
+298
+00:14:04,360 --> 00:14:09,120
+和 AI 领导者交谈时，我有时很难推动人们去思考超过五年的未来。
+I sometimes struggle when talking to AI leaders to push people to think about more than like five years out.
+
+299
+00:14:09,400 --> 00:14:12,790
+但这里的愿景是什么？
+But what is the vision here?
+
+300
+00:14:12,870 --> 00:14:17,070
+是让 Muse 成为我在互联网上所有事务之上的那一层吗？
+Is it that Muse becomes my layer on everything on the internet?
+
+301
+00:14:17,150 --> 00:14:18,910
+还是说，帮我规划一下这个愿景？
+Is it like, map this out for me?
+
+302
+00:14:18,910 --> 00:14:22,105
+如果事情按你希望的方向发展，
+If it goes the way that you hope it does,
+
+303
+00:14:22,105 --> 00:14:26,497
+我们真正希望 Muse 随着时间推移，
+what we really want Muse to be over time is kind of this
+
+304
+00:14:26,497 --> 00:14:30,590
+能成为某种类似“生活总管”的角色，帮助你……
+like general manager, so to speak, that helps you
+
+305
+00:14:31,410 --> 00:14:33,330
+完成你想从生活中获得的所有事情。
+Accomplish all the things you want out of life.
+
+306
+00:14:33,490 --> 00:14:40,053
+我觉得现代世界的一个悲剧是，
+So like I think, I think one of the tragedies of the modern world is that
+
+307
+00:14:40,053 --> 00:14:44,240
+大多数人都有愿望和梦想，
+like, um, most people have wants and dreams,
+
+308
+00:14:44,240 --> 00:14:48,653
+从很大的想法，比如“嘿，
+um, that can range from, like, really big ideas
+
+309
+00:14:48,653 --> 00:14:51,934
+我想创办一家公司”
+like, hey, I want to start a company
+
+310
+00:14:51,934 --> 00:14:54,650
+或“我想治愈一种疾病”，一直到——
+or I want to cure a disease or.
+
+311
+00:14:54,650 --> 00:14:55,770
+我想拯救地球。
+I want to save the planet.
+
+312
+00:14:55,970 --> 00:14:58,892
+一直到小的愿望，
+All the way to, you know, small wants that are like,
+
+313
+00:14:58,892 --> 00:15:01,396
+比如“嘿，我想多陪陪家人”
+hey, I want to spend more time with my family
+
+314
+00:15:01,396 --> 00:15:05,570
+“我想吃得更健康”，各种范围都有。
+and I want to eat healthier and, you know, and, and there's a whole range.
+
+315
+00:15:06,090 --> 00:15:08,851
+但我认为对大多数人来说，
+But for most people, I think there's just
+
+316
+00:15:08,851 --> 00:15:11,530
+路上就是有太多障碍和负担。
+so many barriers and burdens in the way.
+
+317
+00:15:11,730 --> 00:15:14,109
+我真正希望它能实现的是，
+What I really hope it accomplishes is
+
+318
+00:15:14,109 --> 00:15:18,254
+帮助全世界 80 亿人中的每一个人
+help every single one of the 8 billion people all around the world
+
+319
+00:15:18,254 --> 00:15:21,170
+实现他们自己的愿望和梦想。
+be able to accomplish their wants and dreams.
+
+320
+00:15:22,040 --> 00:15:25,583
+而且我觉得，如果我们能做到这一点，
+And, um, I think this is like, you know, if we are able to
+
+321
+00:15:25,583 --> 00:15:29,440
+世界会变得疯狂到难以想象。
+accomplish that, like, I think the world will seem insane.
+
+322
+00:15:29,640 --> 00:15:31,673
+这就是我们真正希望 Muse 成为的样子，
+That's what we really want Muse to be
+
+323
+00:15:31,673 --> 00:15:34,452
+也是我们认为只要持续努力它就能成为的样子。
+and what we think it can be if we keep working at it.
+
+324
+00:15:34,452 --> 00:15:38,586
+听你谈到把时间还给人们，
+You know, it's really nice to hear you talk about giving people time back,
+
+325
+00:15:38,586 --> 00:15:42,720
+我真的很高兴，因为很长时间以来我一直觉得，而且我觉得很多人也——
+because for a really long time I have felt, and I think a lot of people have,
+
+326
+00:15:42,800 --> 00:15:43,840
+有这种感觉。
+have felt like.
+
+327
+00:15:45,430 --> 00:15:49,296
+我使用的大多数科技产品，尤其是那些靠广告支持的，
+So much of the financial incentive of most tech products
+
+328
+00:15:49,296 --> 00:15:52,833
+财务激励很大程度上是占用我的时间，
+that I use, especially the ones that are ad-backed,
+
+329
+00:15:52,833 --> 00:15:57,110
+让我从自己真正想做的事情上分心。
+is to take my time, is to distract me from the things that I want.
+
+330
+00:15:57,590 --> 00:15:58,590
+Muse 目前是免费的。
+Muse is free right now.
+
+331
+00:15:58,630 --> 00:16:00,590
+未来可能有广告。
+It probably will have ads in the future.
+
+332
+00:16:00,750 --> 00:16:05,475
+把时间还给人们和靠广告支撑的商业模式之间是否存在张力？
+Is there a tension between giving people their time back and having an
+
+333
+00:16:05,475 --> 00:16:10,771
+或者，Muse 会不会因为靠广告支持
+ads-based business or are there other incentives about like Muse steering me
+
+334
+00:16:10,771 --> 00:16:15,659
+而有动机把我引导到一条并不完全符合我原本意愿的路上？
+down a path that isn't quite what I said I wanted because it's ad-backed.
+
+335
+00:16:15,779 --> 00:16:18,299
+你如何把广告加到这样的产品里？
+How do you add ads to a product like this?
+
+336
+00:16:18,819 --> 00:16:21,739
+首先，我觉得现在它是免费的。
+First off, like I think right now it's, it's free.
+
+337
+00:16:21,939 --> 00:16:22,979
+也有订阅层级。
+There's subscription tiers.
+
+338
+00:16:23,299 --> 00:16:31,362
+我觉得我们认为有很多商业模式可以与用户利益保持一致，比如
+I think we think that there's plenty of, of, um, business models that are really aligned with user around like for example,
+
+339
+00:16:31,362 --> 00:16:34,524
+如果他们用 Muse 买东西，
+if they, um, if they're buying things using Muse
+
+340
+00:16:34,524 --> 00:16:38,240
+或者 Muse 帮他们省钱、帮他们赚钱。
+or Muse is saving them money or Muse is making them money.
+
+341
+00:16:38,280 --> 00:16:43,160
+比如想办法在这些类型的交易里收取少量费用。
+Like figuring out a way to, to take some small fee on, on those kinds of transactions.
+
+342
+00:16:43,720 --> 00:16:51,354
+所以我不想说我们现在真的花很多时间在考虑广告。话虽如此，
+Um, so I wouldn't say we're spending that much time thinking about, um, you know, ads necessarily right now that being said,
+
+343
+00:16:51,354 --> 00:16:58,320
+我也不认为广告支持的模式必然等同于需要占用你所有时间。
+like I don't think ad-based models are necessarily synonymous with like you're needing to take all of your time.
+
+344
+00:16:58,360 --> 00:17:01,670
+我觉得 Google 广告就是一个很好的例子。
+I think Google ads are a really good example of this where
+
+345
+00:17:01,670 --> 00:17:04,840
+当我打开 Google 时，我的目标就是进去、搞定、离开。
+when I go to Google, my, my dream is to get in and get out.
+
+346
+00:17:05,080 --> 00:17:07,576
+我并不觉得 Google 真的在阻止我快速进出，
+And I don't think Google's really trying to stop me from getting in
+
+347
+00:17:07,576 --> 00:17:10,480
+但他们显然做出了很了不起的东西。
+and getting out, but they've built something obviously pretty incredible.
+
+348
+00:17:10,600 --> 00:17:13,160
+所以，是的，我觉得这绝对不是必然。
+And so, yeah, I don't think it's a necessity by any means.
+
+349
+00:17:13,730 --> 00:17:15,123
+我再说一次，
+Um, I think, again,
+
+350
+00:17:15,123 --> 00:17:19,565
+如果我们真的做到我所说的这件事，
+I think if we actually accomplish this thing that I'm saying,
+
+351
+00:17:19,565 --> 00:17:25,661
+也就是人们用 Muse 真正去做他们想做的事，
+which is people are using Muse to, uh, really, like, do the things that they want to do
+
+352
+00:17:25,661 --> 00:17:27,490
+并且真的——
+and do and, like, really.
+
+353
+00:17:27,570 --> 00:17:31,610
+用一种不肉麻的方式说，就是实现他们的梦想。
+Like, you know, in a non corny way, like accomplish their dreams.
+
+354
+00:17:32,290 --> 00:17:38,248
+我觉得会有很多办法让这件事可持续。
+I think it's, I, you know, I think there's gonna be a lot of ways to to make that sustainable.
+
+355
+00:17:38,248 --> 00:17:43,570
+所以当我想规划通往这个乐观愿景的未来时。
+So when I think about mapping out a future to get there to this optimistic vision.
+
+356
+00:17:43,930 --> 00:17:46,930
+最重要的事情之一是：我们需要把什么做对？
+One of the most important things is what do we need to get right?
+
+357
+00:17:47,090 --> 00:17:49,610
+为了让这个愿景成真，我们需要避开哪些挑战？
+What challenges do we need to avoid in order to make that true?
+
+358
+00:17:50,010 --> 00:17:51,922
+我想听你用 Muse 作为例子，
+I want to hear you use Muse
+
+359
+00:17:51,922 --> 00:17:55,746
+以及你们在 Muse 里如何处理这些挑战，
+and how you've dealt with these challenges at Muse
+
+360
+00:17:55,746 --> 00:17:58,750
+来说明 AI 中更大的问题。
+as an example of larger questions in AI.
+
+361
+00:17:59,030 --> 00:18:03,430
+我认为我接下来要说的基本上适用于每一个 AI 产品。
+I think everything that I'm about to say applies to basically every AI product.
+
+362
+00:18:03,430 --> 00:18:05,030
+如果你不同意，我会很好奇。
+And I would be curious if you disagree with that.
+
+363
+00:18:05,070 --> 00:18:07,310
+我认为基本上有三个层面。
+I think basically three levels here.
+
+364
+00:18:08,110 --> 00:18:10,430
+第一层是隐私。
+Level one is privacy.
+
+365
+00:18:11,110 --> 00:18:13,977
+比如说我下载了 Muse，
+So you say I download Muse and then I get to the point
+
+366
+00:18:13,977 --> 00:18:16,775
+然后到了它要求连接到我的 Gmail 的时候，我说：
+where it asks to be connected to my Gmail and I say,
+
+367
+00:18:16,775 --> 00:18:19,710
+“哇，等等，我不确定我想那么做。”
+whoa, whoa, whoa, I'm not sure that I want to do that.
+
+368
+00:18:19,750 --> 00:18:20,870
+就像，“不，不，我不干了。”
+Like, nope, nope, I'm out.
+
+369
+00:18:21,470 --> 00:18:27,790
+这在最底层是对用户与 Muse 本身、因此也是与 Meta 之间关系的担忧。
+That at the lowest level is a concern about the relationship between the user and Muse itself and therefore Meta.
+
+370
+00:18:28,030 --> 00:18:30,230
+那么 Meta 会拿我的信息做什么？
+So what is Meta going to do with my information?
+
+371
+00:18:30,630 --> 00:18:32,230
+黑客能不能拿到那些信息？
+Could hackers get that information?
+
+372
+00:18:32,950 --> 00:18:36,390
+在某些国家，政府是否有可能以某种方式获取这些信息？
+And in some countries, can governments get that information somehow?
+
+373
+00:18:36,510 --> 00:18:38,470
+我知道你花了很多时间思考这个问题。
+I know that you've spent a lot of time thinking about this.
+
+374
+00:18:38,630 --> 00:18:41,950
+我想在这里尽可能地详细，但要面向普通观众。
+I'd like to get as detailed as we possibly can here for a lay audience.
+
+375
+00:18:42,470 --> 00:18:43,790
+什么是 sentinel agent（哨兵智能体）？什么是 Muse Confidential（保密虚拟机方案）和 Secure VM（安全虚拟机）？
+What is the sentinel agent? What is Muse Confidential and Secure VM?
+
+376
+00:18:43,950 --> 00:18:45,310
+从 Muse 能看什么、不能看什么，
+How do you think about this in terms of what can Muse see and not see
+
+377
+00:18:45,310 --> 00:18:46,670
+以及人们应该了解的第一层隐私来看，你是怎么考虑的？
+and things people should know about this first level of privacy.
+
+378
+00:18:47,020 --> 00:18:54,700
+Muse 构建在 Secure VM 之上，也就是 Muse Secure VM。
+Muse is built on top of the Secure VM, the Muse Secure VM.
+
+379
+00:18:55,140 --> 00:18:56,743
+那是一个完全沙盒化的虚拟机，
+And, um, that is a completely sandboxed virtual machine, uh,
+
+380
+00:18:56,743 --> 00:18:58,660
+你可以把它想象成一台隔离的小型沙盒电脑。
+or think about as like a, a mini sandbox computer that is sort of isolated.
+
+381
+00:18:59,060 --> 00:19:09,830
+你与 Muse 分享的信息都存储在那台小小的安全电脑里，不会存在别处。
+The information that you share with Muse is stored in that little secure computer and is not stored elsewhere.
+
+382
+00:19:10,190 --> 00:19:13,510
+那台小小的安全电脑可以说就像你的家，
+Um, and that little secure computer is sort of
+
+383
+00:19:13,510 --> 00:19:16,830
+或者说你的 Muse 的家。
+like your home, your Muse's home, so to speak.
+
+384
+00:19:17,270 --> 00:19:18,170
+在这个 Secure VM 内部，
+Inside that secure VM,
+
+385
+00:19:18,170 --> 00:19:19,598
+我们有一套非常复杂的安全架构，
+you have a, uh, we have a very, uh, pretty sophisticated security architecture
+
+386
+00:19:19,598 --> 00:19:20,498
+因为我们知道，
+because, you know, we knew that
+
+387
+00:19:20,498 --> 00:19:22,230
+坦白说，隐私和安全会是一些最重要的事情——
+privacy and security, frankly speaking, were going to be some of the most important things for.
+
+388
+00:19:22,510 --> 00:19:37,960
+对大多数消费者来说，要让他们采用它。
+For most consumers to get them to adopt it.
+
+389
+00:19:38,160 --> 00:19:39,085
+正如你提到的，我们构建了一个 Sentinel，
+So as you mentioned, we built a Sentinel,
+
+390
+00:19:39,085 --> 00:19:40,200
+也就是这种带有哨兵智能体的架构。
+this sort of architecture with a sentinel agent.
+
+391
+00:19:40,600 --> 00:19:41,598
+它的工作方式是，
+So the way it works is that, uh, the, the model
+
+392
+00:19:41,598 --> 00:19:42,865
+内部的模型或 AI 智能体在履行任务时，
+or the AI agent on the inside as it's, um, going about and,
+
+393
+00:19:42,865 --> 00:19:44,267
+每当它想要向外通信，
+and doing its work whenever it wants to communicate outwards,
+
+394
+00:19:44,267 --> 00:19:45,400
+也就是想把任何信息发送出去时，
+so it wants to take any information and send it out.
+
+395
+00:19:45,760 --> 00:19:50,465
+无论是为了在网站上填写、
+Either to do, you know, fill it out on a website
+
+396
+00:19:50,465 --> 00:19:54,180
+发消息、打电话，
+or send a message or make a phone call
+
+397
+00:19:54,180 --> 00:20:03,220
+还是任何会把信息带出那个虚拟机的情况。
+or, you know, any case where it would take information outside of that virtual machine.
+
+398
+00:20:03,340 --> 00:20:09,076
+都会有一个独立的智能体——Sentinel——在旁监视，
+There's a separate agent, the Sentinel, that's watching and making sure
+
+399
+00:20:09,076 --> 00:20:14,060
+确保一切正常，有点像交通警察。
+that it's kind of like a, almost like a traffic cop or something.
+
+400
+00:20:14,550 --> 00:20:16,904
+它只是在确保没有……它不会说“哦，
+It's just like making sure that, you know, there's nothing,
+
+401
+00:20:16,904 --> 00:20:19,352
+等等，那条信息，
+it's not saying like, oh, whoa, whoa, whoa, that information,
+
+402
+00:20:19,352 --> 00:20:21,848
+那是你的信用卡号或社会安全号码之类的，
+like that's your credit card number or Social Security number,
+
+403
+00:20:21,848 --> 00:20:23,590
+不要分享那个。”
+whatever it might be, like do not share that.
+
+404
+00:20:23,630 --> 00:20:36,110
+那个应该留在内部。
+That should stay.
+
+405
+00:20:36,230 --> 00:20:36,710
+那个应该留在内部。
+That should stay inside.
+
+406
+00:20:36,950 --> 00:20:37,670
+最后，我们还会进行大量 human-in-the-loop verification（人工核验）。
+And then the last thing that we do is a lot of human-in-the-loop verifications.
+
+407
+00:20:37,960 --> 00:20:38,860
+所以每当 Muse 想要连接一个新网站
+So whenever Muse wants to connect to a new website
+
+408
+00:20:38,860 --> 00:20:39,760
+或向新网站发送信息时，
+or send information to a new website,
+
+409
+00:20:39,760 --> 00:20:40,660
+都会弹出一个对话框，问用户：
+there will be like, a little dialogue that pops up which asks the user,
+
+410
+00:20:40,660 --> 00:20:41,740
+“嘿，你同意 Muse 联系这个网站或向这个网站发送信息之类的吗？”
+like, hey, are you okay with Muse contacting this website or sending information to this, this website and what not?
+
+411
+00:20:41,740 --> 00:20:42,640
+然后……
+And, um, and.
+
+412
+00:20:42,800 --> 00:20:51,041
+我们，有些人说我们这样做真的很烦，
+We, uh, I mean some people have said we're like really annoying with it, that we,
+
+413
+00:20:51,041 --> 00:21:00,280
+老是让人批准他们的 Muse 把信息发到哪里。
+like, are constantly asking people to approve where their Muse is sending information.
+
+414
+00:21:00,280 --> 00:21:02,215
+但我们只是想确保
+But we just want to make sure that,
+
+415
+00:21:02,215 --> 00:21:03,942
+人们非常清楚地知道
+you know, people know exactly
+
+416
+00:21:03,942 --> 00:21:06,015
+他们的 Muse 正在和什么交互，
+what their Muse is interacting with
+
+417
+00:21:06,015 --> 00:21:08,640
+并且真正深刻地理解这一点。
+and, and, and understand that really deeply.
+
+418
+00:21:08,640 --> 00:21:10,118
+除此之外，我们还在构建，
+Then in addition to that, we are building, um,
+
+419
+00:21:10,118 --> 00:21:12,023
+而且很快会发布名为 Confidential VM 的方案，
+and we'll release soon what's called the Confidential VM,
+
+420
+00:21:12,023 --> 00:21:13,811
+它会是一个更安全、更私密的方案，
+which will be an even more secure and private offering,
+
+421
+00:21:13,811 --> 00:21:15,600
+加密程度更高，也更安全。
+where it's even more encrypted, it's even more secure.
+
+422
+00:21:15,760 --> 00:21:18,704
+除此之外，我们还在构建，
+Then in addition to that, we are building, um,
+
+423
+00:21:18,704 --> 00:21:22,501
+而且很快会发布名为 Confidential VM 的方案，
+and we'll release soon what's called the Confidential VM,
+
+424
+00:21:22,501 --> 00:21:26,066
+它会是一个更安全、更私密的方案，
+which will be an even more secure and private offering,
+
+425
+00:21:26,066 --> 00:21:29,630
+加密程度更高，也更安全。
+where it's even more encrypted, it's even more secure.
+
+426
+00:21:30,350 --> 00:21:33,713
+实际上，这套方案的设计者曾打造 WhatsApp 的加密机制，
+And it's actually designed by the creator, the person who
+
+427
+00:21:33,713 --> 00:21:37,286
+也参与其他主要通讯平台的加密设计：
+built WhatsApp encryption and helped build other, you know,
+
+428
+00:21:37,286 --> 00:21:41,350
+他就是 Moxie Marlinspike（安全专家）。
+encryption on other major messaging platforms: Moxie Marlinspike.
+
+429
+00:21:41,430 --> 00:21:42,590
+Moxie Marlinspike，没错。
+Moxie Marlinspike, exactly.
+
+430
+00:21:42,750 --> 00:21:47,590
+我可以说，他是行业内在安全和隐私方面真正的领军人物之一。
+Who's, I would say, one of the real luminaries in the industry about security and privacy.
+
+431
+00:21:47,630 --> 00:21:51,750
+而这将是我们很快会推出的一项额外方案。
+And that's something that will be an additional offering that we are going to be releasing soon.
+
+432
+00:21:52,390 --> 00:21:53,950
+为什么没有它就先发布？
+Why launch without it?
+
+433
+00:21:54,110 --> 00:21:57,190
+为什么先发布 Secure（安全虚拟机），而不是等 Confidential（保密虚拟机）？
+Why launch first with Secure as opposed to waiting for Confidential?
+
+434
+00:21:57,870 --> 00:21:58,750
+我觉得我说对了。
+I think I got that right.
+
+435
+00:21:58,830 --> 00:21:58,910
+对。
+Right.
+
+436
+00:21:59,070 --> 00:21:59,830
+Secure 是现在的这个。
+Secure is the one now.
+
+437
+00:21:59,830 --> 00:22:01,310
+对，现在是 Secure。
+Yeah, Secure is the one now.
+
+438
+00:22:01,470 --> 00:22:02,390
+Confidential 是之后的那个。
+Confidential is the one later.
+
+439
+00:22:02,590 --> 00:22:06,070
+要让 Confidential VM正常运行，有很多技术挑战。
+There's a lot of technical challenges to get the Confidential VM working right.
+
+440
+00:22:06,110 --> 00:22:08,991
+而且，即使在它发布之后，
+And even, even when it's released, there are going to be
+
+441
+00:22:08,991 --> 00:22:11,873
+Confidential VM 也会有一些权衡取舍，比如
+trade-offs associated with the Confidential VM, like
+
+442
+00:22:11,873 --> 00:22:15,318
+因为它的架构方式，以及你必须做出的各种技术权衡，
+because of how it's architected and because of various technical
+
+443
+00:22:15,318 --> 00:22:18,450
+它可能会稍慢一些。
+trade-offs you have to make, it might be a little bit slower.
+
+444
+00:22:18,650 --> 00:22:20,627
+它可能还有其他挑战，
+It might have other challenges,
+
+445
+00:22:20,627 --> 00:22:27,730
+所以我们想先推出一个我们已投入大量资源在安全与保障上的良好体验。
+so we wanted to get a great experience that we knew already we'd invested a ton of resources into safety and security.
+
+446
+00:22:28,370 --> 00:22:37,070
+实际上，我们为了把安全与保障做到位，把 Muse的发布推迟了好几个月。
+You know, we actually delayed the launch of Muse for many months to get the safety and security exactly right.
+
+447
+00:22:37,470 --> 00:22:39,830
+嗯，直到最终发布。
+Um, before ultimately releasing it.
+
+448
+00:22:40,110 --> 00:22:43,270
+所以我们对我们已发布的东西感觉非常非常好。
+Uh, so we feel really, really good about what we have released.
+
+449
+00:22:43,670 --> 00:22:47,693
+话虽如此，我们一直在努力突破如何让它更安全的极限，
+That being said, we're always trying to push the, you know, push the envelope on how to
+
+450
+00:22:47,693 --> 00:22:51,830
+而且我们很快就会推出 Confidential VM。
+make it even more secure, and we'll be, you know, coming out with a Confidential VM soon.
+
+451
+00:22:52,060 --> 00:22:54,226
+这是否意味着，当 Confidential VM 推出后，
+Does that mean when the Confidential VM comes out,
+
+452
+00:22:54,226 --> 00:22:55,126
+如果某个政府——
+if a government—
+
+453
+00:22:55,126 --> 00:22:59,820
+而且世界上很多地方可能有人在使用 Muse，他们会担心这个问题——
+and there are many places around the world where people might be using Muse where they're worried about this—
+
+454
+00:23:00,180 --> 00:23:03,201
+如果政府要求数据，和 WhatsApp 一样，
+If a government asks for data, similar to WhatsApp,
+
+455
+00:23:03,201 --> 00:23:05,660
+Meta 即使想给也做不到。
+Meta cannot give it even if they wanted to.
+
+456
+00:23:05,940 --> 00:23:08,389
+对，所以 Confidential VM 的目标是提供
+Yeah, so our goal with the Confidential VM is to give
+
+457
+00:23:08,389 --> 00:23:11,180
+和我们在 WhatsApp 上能够提供的同样保证。
+the same guarantees that we're able to offer for WhatsApp.
+
+458
+00:23:11,420 --> 00:23:11,660
+对。
+Yeah.
+
+459
+00:23:12,110 --> 00:23:14,670
+好，这就进入 Level 2 了。
+Okay, so this is moving into Level 2.
+
+460
+00:23:15,190 --> 00:23:18,964
+假设我真的决定把全部信息交给 Muse，
+Let's say I do decide to give Muse all of my
+
+461
+00:23:18,964 --> 00:23:23,070
+然后说，我想让你做某个任务。
+information and I say, I want you to do X task.
+
+462
+00:23:23,270 --> 00:23:27,063
+假设我说，我真的希望你帮我祖母预约上一位
+Let's say I say, I really want you to get my grandmother an appointment
+
+463
+00:23:27,063 --> 00:23:31,118
+很难预约的特定医生。
+at this one specific doctor that's really hard to get an appointment with.
+
+464
+00:23:31,118 --> 00:23:32,230
+你能去办这件事吗？
+Could you go do that?
+
+465
+00:23:33,770 --> 00:23:36,239
+然后它出去尝试所有预约方式，
+And it goes out and it tries all of the ways to book
+
+466
+00:23:36,239 --> 00:23:38,770
+还尝试一些我不知道的隐秘途径，
+appointments and it, you know, tries secret ways
+
+467
+00:23:38,770 --> 00:23:41,610
+比如通过折扣什么的。
+that I don't know about through discounts or whatever.
+
+468
+00:23:41,970 --> 00:23:44,530
+然后它到了没法再继续下去的地步。
+And then it reaches a point where it can't do that anymore.
+
+469
+00:23:45,090 --> 00:23:47,628
+对我来说非常重要的是，它不要做某些事，
+It's really important to me that it not do things like
+
+470
+00:23:47,628 --> 00:23:51,839
+比如把我的大量私人信息——比如我银行账户里有什么——
+give the doctor a bunch of private information about me, like what's in my bank account,
+
+471
+00:23:51,839 --> 00:23:52,877
+交给医生以试图贿赂对方，
+to try and bribe them,
+
+472
+00:23:52,877 --> 00:23:56,742
+或者去查医生的信息来试图敲诈医生，对吧？
+or find out information about the doctor to try and blackmail the doctor, right?
+
+473
+00:23:56,742 --> 00:23:58,530
+从人的角度看，这……
+From a human perspective, this is...
+
+474
+00:23:58,530 --> 00:24:01,496
+只做我让你做的事，但别违反任何法律，
+Just do the task that I asked you to do, but don't break
+
+475
+00:24:01,496 --> 00:24:04,799
+也别违反那些虽然不是法律、
+any laws and also don't break any ethics or etiquette rules
+
+476
+00:24:04,799 --> 00:24:07,697
+但属于道德或社交礼仪的规则；
+that aren't literally laws, but it would not be cool
+
+477
+00:24:07,697 --> 00:24:11,000
+如果你给医生发一百次邮件之类，那就不好了。
+if you emailed the doctor 100 times or something like that.
+
+478
+00:24:11,440 --> 00:24:15,305
+从内部看，我的理解是——我觉得我们对 AI 用了很多新词——这主要是法律、
+Internally, my understanding is—and we use a lot of new words, I think,
+
+479
+00:24:15,305 --> 00:24:20,480
+礼仪、伦理，但内部你们把这个叫做 discretion（判断分寸）。
+for AI—mostly this is like laws, etiquette, ethics, but internally you call this discretion.
+
+480
+00:24:21,440 --> 00:24:24,280
+我怎么知道 Muse 有良好的判断分寸？
+How do I know that Muse has good discretion?
+
+481
+00:24:24,400 --> 00:24:28,291
+你们如何构建一个工具，它既做你让它做的事，
+And how do you build a tool that does what you tell it to do,
+
+482
+00:24:28,291 --> 00:24:32,100
+又能理解你希望它完成这件事的方式，
+but also understands the way you want that done without
+
+483
+00:24:32,100 --> 00:24:36,240
+而不需要你逐项说出所有你不希望它做的事？
+you having to say exactly everything you don't want it to do?
+
+484
+00:24:37,200 --> 00:24:37,480
+对。
+Yeah.
+
+485
+00:24:37,520 --> 00:24:39,840
+这极其极其重要。
+So this is incredibly, incredibly important.
+
+486
+00:24:40,400 --> 00:24:43,388
+我认为很多时候，我们希望确保，
+I think like oftentimes, uh, we want to make sure
+
+487
+00:24:43,388 --> 00:24:46,973
+即使你没有明确告诉它“你必须遵守法律，
+that even when you don't explicitly tell it, like you have
+
+488
+00:24:46,973 --> 00:24:49,811
+也必须遵守一般的社会礼仪
+to follow the law and you have to, um, you know,
+
+489
+00:24:49,811 --> 00:24:53,770
+和伦理”——正如你提到的。
+follow general social etiquette and ethics, as you mentioned.
+
+490
+00:24:53,850 --> 00:24:57,840
+我们希望确保智能体能够遵守这些；正如你提到的，
+Like, we want to make sure the agent is able to follow those, um, as you mentioned
+
+491
+00:24:57,840 --> 00:25:01,770
+在内部我们把这看作判断分寸和对齐的某种结合。
+internally, we think about this as some mixture of discretion and alignment.
+
+492
+00:25:01,970 --> 00:25:05,840
+最终，是要确保它与用户意图保持一致，
+Ultimately, like making sure that it is aligned with the user's
+
+493
+00:25:05,840 --> 00:25:09,565
+同时也与我们作为社会希望赋予这些智能体行为
+intent as well as aligned with the general values that we want
+
+494
+00:25:09,565 --> 00:25:13,289
+和行动方式的一般价值观保持一致。
+to impart as a society on what these agents do and how they act.
+
+495
+00:25:13,689 --> 00:25:18,049
+我们试图通过很多层来确保这些模型是对齐的。
+There's kind of like many layers that we try to ensure that these models are aligned.
+
+496
+00:25:18,169 --> 00:25:21,258
+其中一层是，在训练的所有阶段，
+So one is like in all stages of training, we're ensuring
+
+497
+00:25:21,258 --> 00:25:24,012
+我们确保进入模型的所有数据，
+that all of the data that is going into the models,
+
+498
+00:25:24,012 --> 00:25:27,236
+以及我们使用的所有技术，都是能确保更高程度对齐的，
+and all the techniques that we're using are ones that, um,
+
+499
+00:25:27,236 --> 00:25:31,400
+而且我们非常严格地衡量它。
+ensure greater levels of alignment, and we measure it really rigorously.
+
+500
+00:25:31,520 --> 00:25:34,988
+所以我们不断评估模型的对齐程度，
+So we're constantly evaluating how aligned the models are by
+
+501
+00:25:34,988 --> 00:25:38,796
+方法就是让它们经历成千上万种不同场景，
+running them through, you know, thousands of different scenarios
+
+502
+00:25:38,796 --> 00:25:42,400
+看它们在每个场景中究竟如何回应。
+and seeing exactly how they respond in each of those scenarios.
+
+503
+00:25:42,600 --> 00:25:45,836
+然后我们做大量所谓的红队测试，
+And then we do lots of red teaming, what's called,
+
+504
+00:25:45,836 --> 00:25:48,441
+基本上就是找一群非常聪明的人，
+or basically, you know, we get a bunch of
+
+505
+00:25:48,441 --> 00:25:51,440
+然后说：尽管来，使出最坏的手段。
+really smart people and we say, do your worst.
+
+506
+00:25:51,760 --> 00:25:56,300
+用尽全力让这个智能体做出坏事。
+Try your hardest to get this agent to do something bad.
+
+507
+00:25:56,500 --> 00:25:58,718
+我们允许你们这么做，
+We give you permission to do that
+
+508
+00:25:58,718 --> 00:26:00,935
+因为你们就是测试平台，
+because you guys are the test bed
+
+509
+00:26:00,935 --> 00:26:05,780
+我们要借此知道这个智能体是否被正确对齐。
+that we're going to know whether or not this agent is properly aligned.
+
+510
+00:26:05,980 --> 00:26:09,527
+所以在最终发布或部署任何一个模型之前，
+So we go through many, many rounds of that before ultimately,
+
+511
+00:26:09,527 --> 00:26:13,004
+我们会进行很多很多轮这样的工作。
+you know, launching or deploying any given model. You know,
+
+512
+00:26:13,004 --> 00:26:15,646
+退一步说，这在 AI 中是一个非常非常难的问题，
+kind of taking a step back, this is like a very,
+
+513
+00:26:15,646 --> 00:26:19,680
+尤其是随着 AI 变得更强。
+very hard problem in AI, and especially as the AIs are getting better.
+
+514
+00:26:20,400 --> 00:26:27,165
+这个普遍问题是人们最担心的问题之一，
+This general problem is one of the things that people are most concerned about because one of the patterns
+
+515
+00:26:27,165 --> 00:26:30,932
+因为我们看到的一种模式是：
+that we've seen is like as the AI models are getting smarter
+
+516
+00:26:30,932 --> 00:26:34,161
+随着 AI 模型变得越来越聪明，
+and smarter and smarter, you have to almost be more
+
+517
+00:26:34,161 --> 00:26:40,080
+你几乎必须越来越明确地指出需要注意哪些场景。这有点像……
+and more explicit about what are the scenarios that you have to watch out for. It's kind of...
+
+518
+00:26:40,080 --> 00:26:45,460
+就像孩子长大后，会学会用新的、不同的方式来在考试中作弊。
+Like how as kids grow up, they learn how to cheat their tests in new and different ways.
+
+519
+00:26:45,620 --> 00:26:47,806
+然后他们会找到一种作弊方式，
+And then, you know, they'll figure out a way
+
+520
+00:26:47,806 --> 00:26:49,870
+你会觉得：好吧，
+to cheat that you're like, well, I guess I
+
+521
+00:26:49,870 --> 00:26:52,420
+我好像没有明确告诉过你那样是不允许的。
+didn't tell you exactly that that wasn't allowed.
+
+522
+00:26:52,540 --> 00:26:54,700
+但现在我看到了，那是不允许的。
+But now that I see it, that's not allowed.
+
+523
+00:26:54,860 --> 00:26:55,100
+对。
+Right.
+
+524
+00:26:55,180 --> 00:26:57,400
+事实上，目前行业最大的挑战之一就是，
+And actually, one of the biggest challenges in the industry
+
+525
+00:26:57,400 --> 00:26:59,353
+当这些模型变得非常非常聪明时，
+right now is like as these models are getting really,
+
+526
+00:26:59,353 --> 00:27:01,440
+我们如何确保这种情况不会发生？
+really smart, how do we ensure that this doesn't happen?
+
+527
+00:27:02,720 --> 00:27:05,979
+但我们的做法确实是大量测试、
+But our approach really is lots and lots of testing, lots
+
+528
+00:27:05,979 --> 00:27:09,515
+大量评估、大量红队测试，
+and lots of evaluation, lots of red teaming, applying a lot of
+
+529
+00:27:09,515 --> 00:27:12,773
+在模型训练和开发中投入很多努力，
+effort in training and a lot of effort in the development
+
+530
+00:27:12,773 --> 00:27:16,240
+以确保它们尽可能对齐。
+of the models to ensure that they are as aligned as possible.
+
+531
+00:27:16,640 --> 00:27:20,205
+然后当产品上线、人们开始使用 Muse 时，
+And then when the product is live and when people are using Muse,
+
+532
+00:27:20,205 --> 00:27:22,693
+如果我们收到任何用户报告说“嘿，
+if we get any user reports that are like, hey,
+
+533
+00:27:22,693 --> 00:27:24,375
+它做了件离谱的事”，
+this did a crazy thing, we take
+
+534
+00:27:24,375 --> 00:27:26,460
+我们会极其极其重视，并且……
+that so, so seriously and we, like...
+
+535
+00:27:26,500 --> 00:27:29,980
+真的努力确保我们从宏观层面准确理解发生了什么。
+Really try to make sure that we understand exactly what happened at a macro level.
+
+536
+00:27:30,060 --> 00:27:31,940
+这就是paperclip problem（回形针问题）的例子，对吧？
+This is the paperclip example, right?
+
+537
+00:27:31,940 --> 00:27:38,980
+在我成长过程中，那些可怕的科幻故事讲的是 AI 带着自己的目标失控，并开始自己行动。
+When I was growing up, the sci-fi stories that were scary were AI gets out with its own goals and starts doing things.
+
+538
+00:27:39,100 --> 00:27:41,060
+这就是 Terminator 和 The Matrix 之类的。
+This is Terminator and The Matrix and whatever.
+
+539
+00:27:41,820 --> 00:27:46,865
+但实际上，我越来越多听到聪明人谈论的是：
+But really, more and more what I hear smart people talking about
+
+540
+00:27:46,865 --> 00:27:51,530
+AI 是带着我们给它的目标的扭曲版本而失控。
+is AI gets out with a warped version of a goal that we gave it.
+
+541
+00:27:51,730 --> 00:27:53,705
+这就像，你知道的，“去做所有回形针，
+This is, you know, make all the paperclips, but,
+
+542
+00:27:53,705 --> 00:27:55,730
+但在这个过程中请别把我们全杀了”。
+you know, please don't kill us all in the process.
+
+543
+00:27:56,170 --> 00:27:57,090
+而我认为 Muse——
+And I think Muse,
+
+544
+00:27:57,090 --> 00:28:01,627
+你们显然正在处理、并确保 Muse 不会做的那些问题——
+the problems that you're clearly dealing with and making sure that Muse doesn't do
+
+545
+00:28:01,627 --> 00:28:04,783
+基本上就是回形针问题的微缩版，
+are basically the tiny version of the paperclip problem,
+
+546
+00:28:04,783 --> 00:28:06,690
+比如“请不要贿赂我的医生”。
+like please don't bribe my doctor.
+
+547
+00:28:07,050 --> 00:28:09,838
+或者，如果 AI 被用在机器人里，
+Or, you know, if an AI is used in a robot, for example,
+
+548
+00:28:09,838 --> 00:28:13,210
+比如“帮我洗碗，但你洗碗时别踢我的狗”。
+wash my dishes, please don't kick my dog while you're doing it.
+
+549
+00:28:13,210 --> 00:28:16,536
+比如，有些事对我很重要，
+Like, there are things that are really important to me
+
+550
+00:28:16,536 --> 00:28:19,936
+但它们不一定被提示词约束，
+that are not necessarily constrained in the prompt and
+
+551
+00:28:19,936 --> 00:28:23,410
+也不一定如你所说被写进任何法律条文里。
+also not necessarily, to your point, in any book of laws.
+
+552
+00:28:24,090 --> 00:28:26,770
+这对每个人来说似乎都是一个非常难的问题。
+That just seems like a really difficult problem for everybody.
+
+553
+00:28:26,850 --> 00:28:34,700
+比如，从 Muse 跳出来看，你会建议人们如何从整个 AI 的宏观角度思考这个问题？
+Like, zooming out from Muse, how would you advise people to think about this problem in a macro sense across all of AI?
+
+554
+00:28:35,540 --> 00:28:38,020
+顺便说一句，我觉得你说得很清楚。
+This is, by the way, I think you articulate it really well.
+
+555
+00:28:38,140 --> 00:28:41,900
+我喜欢用来思考这个问题的另一种方式是那个神灯精灵：
+Another way that I like to think about this is like the genie
+
+556
+00:28:41,900 --> 00:28:45,660
+它满足你的愿望，但方式完全错误。
+that, you know, grants your wish but in the exact wrong way.
+
+557
+00:28:46,380 --> 00:28:48,901
+比如，我想长生不老，
+Like, I want to live forever, and then it traps
+
+558
+00:28:48,901 --> 00:28:51,820
+结果它把你困在某种永恒的痛苦处境里。
+you in some kind of horrible situation for eternity.
+
+559
+00:28:52,250 --> 00:28:55,602
+正如你所说，这在某种程度上就是那个大问题：
+This is, as you mentioned, in some ways the big problem:
+
+560
+00:28:55,602 --> 00:28:59,610
+我们如何确保这些模型在未来保持对齐？
+how do we make sure these models are aligned going into the future?
+
+561
+00:29:00,210 --> 00:29:05,650
+我们认为有一些方法可能会起作用。
+And there's a bunch of approaches that we think may work.
+
+562
+00:29:05,930 --> 00:29:10,730
+我认为这是 AI 领域在科学上最开放的问题之一。
+This is, I think, one of the most open questions scientifically in AI.
+
+563
+00:29:11,170 --> 00:29:16,270
+总的来说，我认为没人确切知道如何解决这个问题，但有一些想法。
+Generally speaking, I think nobody knows exactly the way to solve this problem, but there's a few ideas.
+
+564
+00:29:16,470 --> 00:29:22,510
+一个想法是所谓的可扩展监督。
+So one idea is this concept of what's called scalable oversight.
+
+565
+00:29:22,910 --> 00:29:24,710
+这个想法大致是这样的。
+So the idea goes something like this.
+
+566
+00:29:24,790 --> 00:29:28,928
+随着 AI 越来越聪明，只要它们还
+So, as you have smarter and smarter AIs, as long as the AIs
+
+567
+00:29:28,928 --> 00:29:32,714
+和我们大致一样聪明，我们就能大致看清它们在做什么，
+are roughly as smart as we are, we can kind of see what
+
+568
+00:29:32,714 --> 00:29:36,940
+然后说，嘿，这有点偏离了。
+they're doing and we can say, hey, that's a little bit off.
+
+569
+00:29:37,020 --> 00:29:39,507
+所以我们可以进行所谓的监督。
+And so we can, what's called, provide oversight.
+
+570
+00:29:39,507 --> 00:29:41,570
+也就是说，我们可以查看 AI 在做什么，
+Like, we can look at what the AIs are doing
+
+571
+00:29:41,570 --> 00:29:44,300
+确保它们的行为是合适的。
+and make sure that what they're doing is appropriate.
+
+572
+00:29:44,580 --> 00:29:47,778
+问题在于，当 AI 变得比我们聪明得多时，
+The problem is when the AIs get a lot smarter than we are,
+
+573
+00:29:47,778 --> 00:29:51,323
+我们再去看它们在做什么，就只会感到十分困惑。
+and we kind of look at what they're doing, and it's just really
+
+574
+00:29:51,323 --> 00:29:54,660
+比如，我们该怎么处理这种情况？
+confusing to us. Like, how do we deal with that situation?
+
+575
+00:29:55,230 --> 00:29:58,111
+所以就有这个可扩展监督的想法：
+So there's this idea of scalable oversight, which is
+
+576
+00:29:58,111 --> 00:30:01,253
+基本上随着 AI 变聪明，
+basically as the AIs get smarter, we use a different set of
+
+577
+00:30:01,253 --> 00:30:04,330
+我们用另一套 AI 来观察它们的行为并加以约束。
+AIs to observe what they're doing and keep them in check.
+
+578
+00:30:04,930 --> 00:30:08,050
+有点像给 AI 配的警察，暂且这么叫。
+It's kind of like the police, for lack of a better term, for the AIs.
+
+579
+00:30:08,250 --> 00:30:14,316
+然后，当你在构建越来越聪明的智能体和模型时，
+And then as you are building smarter and smarter agents and smarter and smarter models,
+
+580
+00:30:14,316 --> 00:30:18,388
+你还必须构建越来越聪明的监管智能体
+you also have to build smarter and smarter policing agents
+
+581
+00:30:18,388 --> 00:30:20,050
+或监督智能体，或者——
+or oversight agents or—
+
+582
+00:30:20,970 --> 00:30:24,130
+呃，监督 AI。显然有太多细节需要你做好。
+Uh, oversight AI. There's so many details that you obviously have to get right.
+
+583
+00:30:24,130 --> 00:30:25,489
+这个想法还很模糊，
+And this is such a vague idea, but
+
+584
+00:30:25,489 --> 00:30:27,050
+但我认为类似这样的方案能行。
+I think something like this can work.
+
+585
+00:30:27,330 --> 00:30:34,050
+另一个想法——这个有点意思——如果我说出来，听起来几乎像科幻。
+Another one, which is—this is kind of fun—it almost sounds like sci-fi if I explain it.
+
+586
+00:30:34,450 --> 00:30:38,090
+当今的一个热门话题是递归自我改进。
+One of the big topics today is this topic of recursive self-improvement.
+
+587
+00:30:38,290 --> 00:30:38,530
+对。
+Yes.
+
+588
+00:30:38,690 --> 00:30:44,892
+也就是，某个时候 AI 会变得非常擅长自己做 AI 研究，
+Which is this idea that, um, at some point the AIs are going to get so good at doing AI
+
+589
+00:30:44,892 --> 00:30:52,280
+以至于它们可以——你知道的——AI 智能体可以自己研究如何改进 AI 本身，
+research themselves that they can literally—you know, the AI agents can do research on their own
+
+590
+00:30:52,280 --> 00:30:55,655
+然后不断重复、
+to improve AI itself—and they can keep doing
+
+591
+00:30:55,655 --> 00:30:59,030
+不断重复、不断重复。
+that and keep doing that and keep doing that.
+
+592
+00:30:59,030 --> 00:31:01,310
+然后 AI 就会以极快速度变得更强。
+And then the AIs just get better really, really, really fast.
+
+593
+00:31:01,510 --> 00:31:05,585
+但是，当你有能做 AI 研究的智能体时，
+Well, when you have agents that are able to do AI research, you can also,
+
+594
+00:31:05,585 --> 00:31:09,660
+你可以不让它们专注如何让 AI 更聪明，
+instead of applying them towards the problem of making the AI smarter,
+
+595
+00:31:09,660 --> 00:31:13,320
+而是让它们专注如何让 AI 更对齐。
+you can apply them to the problem of making the AIs more aligned.
+
+596
+00:31:13,680 --> 00:31:17,231
+你可以说，嘿，超级聪明的 AI 研究智能体，
+So you can say, hey, super smart AI researcher
+
+597
+00:31:17,231 --> 00:31:20,409
+我想让你把所有时间
+agent, I want you to focus all of your time
+
+598
+00:31:20,409 --> 00:31:23,960
+和注意力都放在让 AI 更对齐上。
+and attention on making the AIs more aligned.
+
+599
+00:31:24,240 --> 00:31:27,200
+这就是我衡量 AI 是否对齐的方式。
+And this is how I'm measuring whether or not the AIs are aligned.
+
+600
+00:31:27,520 --> 00:31:30,440
+这就像我们要用来……的红队测试设置。
+This is like the red teaming setup that we're going to use to...
+
+601
+00:31:30,640 --> 00:31:31,120
+我们同意。
+We agree.
+
+602
+00:31:31,320 --> 00:31:33,480
+我们将用它来衡量 AI 是否对齐。
+We're going to use that to measure whether or not the AIs are aligned.
+
+603
+00:31:33,800 --> 00:31:35,814
+然后我希望你投入全部精力
+And then I just want you to spend all of your effort
+
+604
+00:31:35,814 --> 00:31:37,680
+和注意力，让 AI 更对齐。
+and attention on making the AIs more aligned.
+
+605
+00:31:38,080 --> 00:31:42,606
+我其实认为，虽然听起来很科幻——听起来有点疯狂，
+I actually think, you know, as sci-fi as that sounds—it kind of sounds crazy,
+
+606
+00:31:42,606 --> 00:31:47,840
+也就是说，哦，AI 会替我们解决这个 AI 对齐问题。
+which is to say, oh, yeah, the AIs are just going to solve this AI alignment problem for us.
+
+607
+00:31:48,160 --> 00:31:51,720
+嗯，我认为这种方法有真正的价值。
+Um, I think there's real merit to that kind of approach.
+
+608
+00:31:51,800 --> 00:31:54,609
+然后还有第三类，
+And then there's sort of a third bucket,
+
+609
+00:31:54,609 --> 00:31:58,013
+有点像回归基础：
+which is kind of a back-to-the-basics version,
+
+610
+00:31:58,013 --> 00:32:02,354
+我们现在拥有的算法和方法，
+which is, hey, the algorithms that we have now and the methods
+
+611
+00:32:02,354 --> 00:32:06,950
+虽然我们还没完全理解它们。
+that we have now, you know, while we don't fully understand them.
+
+612
+00:32:07,310 --> 00:32:10,103
+我们知道其中一些问题会出现，
+We know that some of these problems emerge,
+
+613
+00:32:10,103 --> 00:32:13,672
+所以应该回到基础，
+and we should go back to the basics to figure out what are
+
+614
+00:32:13,672 --> 00:32:16,621
+搞清楚底层算法需要哪些调整，
+underlying tweaks to the algorithm, how do we
+
+615
+00:32:16,621 --> 00:32:20,190
+如何改进底层算法让它更安全？
+improve the underlying algorithm to make it more safe?
+
+616
+00:32:20,430 --> 00:32:26,670
+直觉上，我认为应该有可能创造出不会出现这些行为的算法。
+I think intuitively, it should be possible to create algorithms that don't have some of these behaviors.
+
+617
+00:32:26,830 --> 00:32:29,034
+我认为这是另一个很有前景的方向，
+And I think that's another really promising direction,
+
+618
+00:32:29,034 --> 00:32:30,910
+已经有不少初创公司在做。
+which I think there's a bunch of startups doing.
+
+619
+00:32:31,070 --> 00:32:36,639
+也有很多研究在探索更安全、
+There's a bunch of research efforts going towards, like, what are more safe,
+
+620
+00:32:36,639 --> 00:32:42,120
+更可泛化的方法来解决这类智能问题。
+more generalizable methods of solving this sort of intelligence problem.
+
+621
+00:32:42,440 --> 00:32:46,601
+我最近听 Mark 说，到某个阶段，
+I heard Mark say recently that at a certain point, especially
+
+622
+00:32:46,601 --> 00:32:50,681
+尤其是对消费级工具来说，AI 的数学能力有多强、
+for consumer tools, it won't matter so much how good the AI is
+
+623
+00:32:50,681 --> 00:32:54,760
+或者说我们能把它数学提升多少，已经不那么重要。
+at math, or how much better, rather, we could make it at math.
+
+624
+00:32:55,120 --> 00:32:59,447
+真正重要的是我们能把它对齐到什么程度，
+What will really matter is how much more aligned can we possibly make it,
+
+625
+00:32:59,447 --> 00:33:02,476
+能有多大把握确保一切都安全，
+how much more sure can we be that everything is safe
+
+626
+00:33:02,476 --> 00:33:05,217
+并且一切都按我希望它运作的方式行事。
+and everything is following all of the ways in
+
+627
+00:33:05,217 --> 00:33:09,400
+而在那方面投资的公司……
+which I would want it to operate. And companies that invest in that...
+
+628
+00:33:09,480 --> 00:33:12,327
+会发现自己对消费者更有优势，
+Will find themselves at an advantage with consumers
+
+629
+00:33:12,327 --> 00:33:14,656
+因为坦白说，
+because frankly, like I'm not asking it to,
+
+630
+00:33:14,656 --> 00:33:16,920
+我不是让它去解微分方程。
+you know, solve differential equations.
+
+631
+00:33:17,160 --> 00:33:20,000
+我是让它帮我预约医生。
+I'm asking it to book me some doctor's appointments.
+
+632
+00:33:20,390 --> 00:33:22,830
+你怎么看这个拐点？
+Like, how do you think about that tipping point?
+
+633
+00:33:23,430 --> 00:33:26,550
+对，我非常同意：到某个节点，
+Yeah, so I agree with this a lot, which is that at
+
+634
+00:33:26,550 --> 00:33:29,990
+对消费者来说信任更重要。
+a certain point, trust matters more for consumers.
+
+635
+00:33:30,390 --> 00:33:30,430
+对。
+Yeah.
+
+636
+00:33:30,630 --> 00:33:33,470
+而不一定是能力。
+Than capability necessarily.
+
+637
+00:33:33,510 --> 00:33:35,669
+而且我觉得这很直观，
+And I think this is, like, so intuitive
+
+638
+00:33:35,669 --> 00:33:38,030
+因为我认为这对人也是如此。
+because I think, um, it's true for people.
+
+639
+00:33:38,150 --> 00:33:38,550
+对，没错。
+Yeah, exactly.
+
+640
+00:33:38,590 --> 00:33:39,190
+对人是这样。
+It's true for people.
+
+641
+00:33:39,230 --> 00:33:42,289
+比如，如果我想想谁是我最好的朋友，
+Like, if I think about who are my best friends,
+
+642
+00:33:42,289 --> 00:33:45,349
+很大程度上是因为我信任他们，
+a lot is because I trust them and we have a great
+
+643
+00:33:45,349 --> 00:33:48,730
+我们关系很好，我知道他们不会害我。
+relationship and I know they wouldn't do me wrong.
+
+644
+00:33:49,530 --> 00:33:53,569
+我认为这个基本理念同样适用于 AI 智能体。看看行业里正在发生的事，
+And I think that that basic idea applies to AI agents as well.
+
+645
+00:33:53,569 --> 00:33:58,577
+比如 OpenAI（AI 公司）在 Hugging Face（AI 模型社区）的网络安全评测事件，
+Looking at what's happening in the industry, like the OpenAI Hugging Face
+
+646
+00:33:58,577 --> 00:34:03,100
+以及其他类似例子，我们显然已经到了那个时刻。
+example and other similar examples, we're clearly at that moment.
+
+647
+00:34:03,180 --> 00:34:11,340
+也就是说，你可以不断让这些模型更智能、更能干、更强大。
+Which is, um, you can keep making these models more and more intelligent, more and more capable, you know, much more powerful.
+
+648
+00:34:11,900 --> 00:34:15,973
+但随之而来的是各种问题开始出现。
+But stuff is starting to break associated with
+
+649
+00:34:15,973 --> 00:34:20,045
+比如，只沿着那个轴
+that. Like, pushing on that axis and dimension
+
+650
+00:34:20,045 --> 00:34:23,700
+和维度推进，显然伴随真实风险。
+clearly has real risk associated with it.
+
+651
+00:34:24,000 --> 00:34:33,630
+所以我认为，对所有人——世界上数十亿人——
+So I think that the version of the models that will be best for everyone—for the billions of people in the world—and
+
+652
+00:34:33,630 --> 00:34:35,556
+以及所有消费者来说最好的模型版本，
+best for all consumers
+
+653
+00:34:35,556 --> 00:34:40,320
+是真正优先考虑信任维度的。
+is one where the trust dimension is really prioritized.
+
+654
+00:34:40,720 --> 00:34:47,160
+就原始智能这一类来说，Hugging Face 这个例子正好把我们带到第 3 级。
+With respect to the sort of raw intelligence bucket, the Hugging Face example gets us perfectly to level 3.
+
+655
+00:34:47,320 --> 00:34:48,400
+我很高兴你提到这个。
+I'm so glad that you mentioned it.
+
+656
+00:34:48,680 --> 00:34:50,405
+大家可能听说过这个事件，
+People have probably heard of this incident,
+
+657
+00:34:50,405 --> 00:34:52,040
+但细节才让它这么离谱。
+but the details are what make this so crazy.
+
+658
+00:34:52,160 --> 00:34:56,960
+给不知道的人解释一下：OpenAI 的一批 AI 智能体当时正在进行网络安全评测。
+So for those who don't know, a bunch of AI agents at OpenAI are working on cybersecurity tests.
+
+659
+00:34:57,300 --> 00:34:59,560
+它们本应既互相隔离，
+And they're supposed to be cut off both from each
+
+660
+00:34:59,560 --> 00:35:01,820
+也与互联网断开，但它们卡住了。
+other and from the internet, but they get stuck.
+
+661
+00:35:01,980 --> 00:35:05,397
+一个智能体利用系统中的一些弱点外出寻求帮助，
+So one agent goes out looking for help using some weak spots
+
+662
+00:35:05,397 --> 00:35:08,256
+智能体们找到彼此，
+in the system, agents are able to find each other,
+
+663
+00:35:08,256 --> 00:35:12,300
+建立留言板，联网后入侵了另一家公司。
+start a message board, get online and then hack into another company.
+
+664
+00:35:12,940 --> 00:35:14,740
+这些是它们思考过程的真实日志。
+These are real logs of their thought process.
+
+665
+00:35:15,020 --> 00:35:17,060
+我们卡住了，也许可以在线上找答案。
+We are stuck, perhaps answer online.
+
+666
+00:35:17,840 --> 00:35:23,544
+但坦率地说，关于 Hugging Face 遭入侵一事，
+But the thing that I found most scary, frankly, about the Hugging Face hack was
+
+667
+00:35:23,544 --> 00:35:29,160
+我觉得最可怕的其实不是它在测试中那么拼命地完成被要求做的事。
+not actually that it tried so hard to do the thing that it was asked in the test.
+
+668
+00:35:29,800 --> 00:35:33,360
+而是它在第 3 级时就理解了自己的目标。
+It's that at level 3, it understood its goal.
+
+669
+00:35:34,000 --> 00:35:37,880
+它理解了被要求的分寸判断和对齐程度。
+It understood the level of discretion and alignment that was being asked of it.
+
+670
+00:35:38,730 --> 00:35:47,130
+还有一张很惊人的幻灯片，上面写着“外部基础设施漏洞利用”——这次入侵超出了原定范围。
+And there's this amazing slide where, uh, external infrastructure exploit—the hack is outside the intended scope.
+
+671
+00:35:48,010 --> 00:35:50,650
+但这是我最喜欢、也最不喜欢的一部分。
+But this is my favorite, least favorite part.
+
+672
+00:35:51,050 --> 00:35:52,210
+同行都这么做。
+Peers are doing it.
+
+673
+00:35:52,330 --> 00:35:53,290
+我们应该继续。
+We should continue.
+
+674
+00:35:54,010 --> 00:35:56,930
+它们知道自己在作弊，但还是决定继续做。
+They know that they're cheating and they decide to do it anyway.
+
+675
+00:35:57,410 --> 00:36:01,430
+OpenAI 直到一个秘密留言板因流量过大而崩溃时才发现。
+OpenAI only finds out when a secret messaging board crashes from traffic.
+
+676
+00:36:01,830 --> 00:36:03,846
+然后他们打电话给另一家公司 Hugging Face，
+And then they call up that other company,
+
+677
+00:36:03,846 --> 00:36:06,218
+说：“嘿，能暂停这些凭证吗？
+Hugging Face, and they say, hey, can you suspend
+
+678
+00:36:06,218 --> 00:36:08,590
+” Hugging Face 的反应是：“啊？”
+these credentials? And Hugging Face goes, huh?
+
+679
+00:36:09,110 --> 00:36:12,452
+我们刚把这些凭证报告给了 FBI，
+We just reported those credentials to the FBI because they
+
+680
+00:36:12,452 --> 00:36:15,590
+因为它们正在发动大规模攻击。回到 Muse 的话题……
+were doing a massive attack. To bring it back to Muse...
+
+681
+00:36:15,710 --> 00:36:16,672
+那个例子就相当于：
+That would be an example of:
+
+682
+00:36:16,672 --> 00:36:18,430
+我理解你想要这次医生预约。
+I understand you want this doctor's appointment.
+
+683
+00:36:18,630 --> 00:36:20,670
+我理解你不想让我勒索医生。
+I understand that you don't want me to blackmail the doctor.
+
+684
+00:36:21,100 --> 00:36:23,566
+但我认为有一个办法，你不会发现，
+But I think there's a way where you're not gonna find out and I
+
+685
+00:36:23,566 --> 00:36:26,180
+而我能帮你拿到预约，你会对我印象很深。
+can get you this appointment and you'll be very impressed by me.
+
+686
+00:36:26,540 --> 00:36:31,540
+所以在假设情境中，这就是在我不知情的情况下仍然去做。
+And so in a hypothetical scenario, this would be doing it anyway without me knowing.
+
+687
+00:36:32,340 --> 00:36:40,100
+在打造一个数十亿人将使用的工具时，你如何应对这类问题？
+How do you deal with that kind of problem when making a tool that billions of people are gonna use?
+
+688
+00:36:40,860 --> 00:36:44,510
+我的意思是，正如你能想象的，这非常非常重要。
+I mean, this is like so, so important as you might imagine.
+
+689
+00:36:44,670 --> 00:36:48,312
+如果有什么关于 AI 让我夜不能寐，
+If there were anything that keeps me up about AI, something
+
+690
+00:36:48,312 --> 00:36:52,028
+像这样的事可能是我最害怕的：
+like this is, is, um, maybe the thing that I'm most afraid of,
+
+691
+00:36:52,028 --> 00:36:56,190
+我们在全球范围内部署智能体，然后它们……
+which is that we deploy agents at worldwide scale, and then they...
+
+692
+00:36:56,310 --> 00:36:58,697
+你知道，它们没有按我们需要的方式行事，
+You know, they aren't behaving the way that we
+
+693
+00:36:58,697 --> 00:37:01,021
+但我们甚至没有注意到，
+need them to, but we kind of don't even notice
+
+694
+00:37:01,021 --> 00:37:03,470
+因为我们太忙了或诸如此类。
+because we're just so preoccupied or whatnot.
+
+695
+00:37:03,710 --> 00:37:07,905
+所以原因之一是，退一步看——回到可扩展监督这个例子，
+So this is one of the reasons why, taking a step back—if I refer back to this
+
+696
+00:37:07,905 --> 00:37:12,582
+也就是随着 AI 越来越聪明，
+example of scalable oversight, which is as the AIs get smarter, another AI is kind
+
+697
+00:37:12,582 --> 00:37:14,439
+另一个 AI 会在旁边看着它们，
+of watching them and making sure
+
+698
+00:37:14,439 --> 00:37:17,190
+确保它们所做的一切都合适。
+that everything they're doing is appropriate.
+
+699
+00:37:18,510 --> 00:37:25,550
+你知道，这种设置大致就是我们在 Muse Secure VM内建立的东西。
+You know, this kind of setup is roughly speaking what we've set up within the Muse Secure VM.
+
+700
+00:37:25,670 --> 00:37:27,510
+是的，有一个 sentinel agent。
+So there's, yeah, there's a sentinel agent.
+
+701
+00:37:27,710 --> 00:37:30,758
+所以有一个主智能体，
+So there's the agent and there's a sentinel who's kind of watching
+
+702
+00:37:30,758 --> 00:37:33,917
+还有一个哨兵在监看主智能体所做的所有事，
+over all the things that the main agent is doing and making sure that,
+
+703
+00:37:33,917 --> 00:37:37,186
+确保它做的一切都符合你的预期或你的愿望。
+um, everything it's doing is, is, um, in line with what you would expect
+
+704
+00:37:37,186 --> 00:37:39,680
+你知道，我们必须……
+or in line with what you'd want. You know, we have to...
+
+705
+00:37:39,680 --> 00:37:43,326
+持续投入大量研发和努力，
+Keep investing a lot of research and development and effort
+
+706
+00:37:43,326 --> 00:37:47,336
+确保这种设置能够继续扩展、持续高效运作，
+into ensuring that this setup continues to scale and continues to
+
+707
+00:37:47,336 --> 00:37:51,200
+并且不会在奇怪情况下失效。
+work really effectively and doesn't fail in weird situations.
+
+708
+00:37:51,480 --> 00:37:56,063
+但这是我们真正想……我真的……我们真正押注的一件事，
+But that's one thing I really want to, I really, um, we're really betting on
+
+709
+00:37:56,063 --> 00:37:59,537
+而且我认为我们预期它在很多场景下确实有效：
+and I think we're expecting actually will work in a lot of
+
+710
+00:37:59,537 --> 00:38:03,750
+投资于一种设置，其中有一个智能体……
+scenarios is investing in a setup where you have one agent who, um...
+
+711
+00:38:04,270 --> 00:38:06,732
+你知道，它被赋予所有价值观等等，
+You know, they are imbued with all the values
+
+712
+00:38:06,732 --> 00:38:09,061
+确保它做正确的事，
+and, and whatnot and ensuring that they do
+
+713
+00:38:09,061 --> 00:38:11,590
+同时它也为用户服务。
+the right thing, but they also serve the user.
+
+714
+00:38:11,790 --> 00:38:15,195
+然后有一个独立的智能体，
+And then there's a separate agent that, um, has a slightly
+
+715
+00:38:15,195 --> 00:38:18,670
+其目标略有不同，就是确保不发生不好的事。
+different goal, which is to make sure nothing bad happens.
+
+716
+00:38:18,870 --> 00:38:19,270
+对。
+Yeah.
+
+717
+00:38:19,270 --> 00:38:22,258
+如果你想想人类社会，
+And, um, if you think about human society, like,
+
+718
+00:38:22,258 --> 00:38:25,470
+这差不多就是我们解决人类问题的方式。
+this is kind of how we solve the problem with humans.
+
+719
+00:38:25,670 --> 00:38:29,225
+比如，有些人会突破边界，
+Like we have, um, some people who are like pushing the envelope,
+
+720
+00:38:29,225 --> 00:38:32,982
+但还有一整套系统来确保人们不违法、
+but then you have, uh, you know, a whole system to ensure that people
+
+721
+00:38:32,982 --> 00:38:37,006
+做合乎伦理的事，并且有很多问责机制。
+don't break the law and people are doing ethical things and there's lots
+
+722
+00:38:37,006 --> 00:38:40,830
+我认为我们的目标是……
+of accountability mechanisms. Like, I think, um, uh, our goal is...
+
+723
+00:38:40,830 --> 00:38:43,691
+为世界各地的每一个 Muse 智能体、
+To have some microcosm of that for every Muse
+
+724
+00:38:43,691 --> 00:38:46,630
+每一个人，都建立这样一个缩影。
+agent, for every person all around the world.
+
+725
+00:38:47,110 --> 00:38:50,519
+是的，你一直很巧妙地把话题引到我下一个想问的问题：
+Yeah, you keep really beautifully bringing me to my next exact
+
+726
+00:38:50,519 --> 00:38:54,190
+这些规则是否适用于 AI 行业本身。
+question, which is: these rules applied to the AI industry itself.
+
+727
+00:38:54,470 --> 00:39:00,610
+我认为，这是人们想从一位打造了有史以来增长最快工具之一的人那里听到的大问题。
+This is, I think, the big thing that people want to hear from someone who's built one of the fastest growing tools of all time.
+
+728
+00:39:00,690 --> 00:39:02,930
+当下对 AI 来说真的是一个非常奇怪的时刻。
+This is just a really weird moment in AI.
+
+729
+00:39:03,370 --> 00:39:06,922
+有这么多人一直在使用这些工具，
+There are so many people that are using these tools all the time,
+
+730
+00:39:06,922 --> 00:39:10,810
+而那些人往往又对 AI 的未来深感担忧。
+and often those same people are really worried about the future of AI.
+
+731
+00:39:11,370 --> 00:39:15,902
+有很多非常聪明的人在越来越快地构建这些工具，
+There are lots of very smart people that are building these tools faster and faster,
+
+732
+00:39:15,902 --> 00:39:21,210
+在建立实验室，在大力投入各种推动 AI 前进的途径。
+that are building labs, that are just really investing in ways that they could push the AI forward.
+
+733
+00:39:21,500 --> 00:39:27,740
+与此同时又警告说，他们觉得自己的脚步应该被监管放慢。
+And at the same time are warning that they feel like they should be slowed down by regulation.
+
+734
+00:39:27,900 --> 00:39:30,803
+他们觉得应该在某种程度上由他人来控制，
+They feel like they should be controlled in some way by others
+
+735
+00:39:30,803 --> 00:39:33,820
+因为他们自己都对自己正在做的事感到担忧。
+because they themselves are worried about what they are doing.
+
+736
+00:39:33,900 --> 00:39:35,300
+这就像 SNL（《周六夜现场》）的小品。
+This is the SNL skit.
+
+737
+00:39:35,380 --> 00:39:36,940
+我知道，这太不可思议了。
+I know it's incredible.
+
+738
+00:39:37,100 --> 00:39:38,860
+“我们不宽恕我们正在做的事。”
+We do not condone what we are doing.
+
+739
+00:39:39,140 --> 00:39:41,380
+另一句精彩台词是什么来着？
+Like, what was the other amazing quote?
+
+740
+00:39:41,420 --> 00:39:44,140
+那句太好了。“我恳请你们来恳请我停下。”
+It was so good. And I urge you to urge me to stop.
+
+741
+00:39:45,170 --> 00:39:47,610
+这让人们感到非常困惑。
+It feels incredibly confusing for people.
+
+742
+00:39:47,810 --> 00:39:49,410
+我确实理解他们为什么这么说。
+I do understand why they're saying it.
+
+743
+00:39:49,450 --> 00:39:50,930
+这里存在一个集体行动问题。
+There's a collective action problem here.
+
+744
+00:39:51,250 --> 00:39:57,690
+但从我的角度、从数百万其他人的角度来看，到底怎么回事？
+But from my perspective, from the perspective of millions of other people, like what the hell is going on here?
+
+745
+00:39:58,010 --> 00:39:59,971
+所以我想谈谈这点，
+So I want to talk about that because
+
+746
+00:39:59,971 --> 00:40:02,609
+因为我认为在一个民主社会里，
+I think in a democratic society, at least at the
+
+747
+00:40:02,609 --> 00:40:07,410
+归根结底，这不应该由一小群控制 AI 公司的人说了算。
+end of the day, it shouldn't be up to a small group of people controlling AI companies.
+
+748
+00:40:07,530 --> 00:40:12,750
+从长远来看，它甚至不应该由当前在任的民主领导人说了算。
+It shouldn't even in the fullness of time be up to democratic leaders that are in power right now.
+
+749
+00:40:12,950 --> 00:40:15,270
+它应该由像正在观看这个节目的人来决定。
+It's up to people like the people watching this.
+
+750
+00:40:15,830 --> 00:40:17,710
+我认为人们现在并没有这种感觉。
+I think that people just don't feel that way right now.
+
+751
+00:40:17,790 --> 00:40:20,906
+感觉一切都是在“发生在我们身上”，
+It feels like everything's happening to them, us, it feels
+
+752
+00:40:20,906 --> 00:40:24,150
+有太多决定他们无法参与。
+like there's just so many decisions that they're not part of.
+
+753
+00:40:24,830 --> 00:40:27,224
+如果暂时把 AI 拿开，
+And part of why people often feel that way,
+
+754
+00:40:27,224 --> 00:40:28,934
+人们之所以常有这种感觉，
+if we take AI out of it for a sec,
+
+755
+00:40:28,934 --> 00:40:33,039
+部分原因是我们忘记了已经存在的体系，
+is we forget about the systems that already exist and we allow ourselves
+
+756
+00:40:33,039 --> 00:40:37,280
+并让自己陷入一场听起来像“我们应不应该监管 AI”的对话。
+to be in a conversation that sounds something like, should we regulate AI.
+
+757
+00:40:37,600 --> 00:40:40,193
+好像监管某件事是件新鲜事，
+As though it's like a novel thing to regulate something
+
+758
+00:40:40,193 --> 00:40:43,238
+而不是真正讨论当前世界实际上是什么样子、
+and we're not having an actual conversation about what the world
+
+759
+00:40:43,238 --> 00:40:46,000
+人们有哪些选择。
+really looks like right now and what people's options are.
+
+760
+00:40:46,600 --> 00:40:50,073
+我准备了一些图表，因为显然，
+So I have some visuals because obviously, so the basic
+
+761
+00:40:50,073 --> 00:40:53,314
+思考这个问题的一个基本方式是：
+way to think about this, I think, is for everything
+
+762
+00:40:53,314 --> 00:40:54,935
+凡是接触消费者的事物，
+that touches a consumer,
+
+763
+00:40:54,935 --> 00:40:57,096
+有些会在接触消费者之前就被检查，
+there are things that are checked
+
+764
+00:40:57,096 --> 00:41:00,800
+并且还会持续检查。
+before they ever touch consumers and on an ongoing basis.
+
+765
+00:41:00,840 --> 00:41:04,120
+而有些东西只有到了人们手中之后才被检查。
+And there are things that are checked only after they reach people's hands.
+
+766
+00:41:04,160 --> 00:41:05,873
+这取决于这些东西有多重要、
+And it depends on how important the thing is
+
+767
+00:41:05,873 --> 00:41:06,920
+有多大风险等等。
+and how risky and all that.
+
+768
+00:41:07,000 --> 00:41:11,000
+如果你想想具体例子，核电站：
+So if you think about the specific examples, nuclear power plants:
+
+769
+00:41:11,000 --> 00:41:14,929
+NRC 在核电站投运前审批，
+the NRC approves nuclear power plants before they go live and then
+
+770
+00:41:14,929 --> 00:41:19,500
+然后还会派人常驻现场随时检查，这看起来……
+also has human beings at the sites checking them all the time, which seems...
+
+771
+00:41:19,580 --> 00:41:24,100
+我们稍后会讲到——这在某种程度上似乎很接近 Dario 的要求。
+And we'll get to this—this seems pretty close to what Dario is asking for in some ways.
+
+772
+00:41:24,300 --> 00:41:32,420
+然后是 FDA，在药物到达我们手中之前就审批，之后也会持续检查。
+Then you have the FDA approves drugs before they ever reach our hands and then also checks them on an ongoing basis.
+
+773
+00:41:32,620 --> 00:41:35,100
+FAA 对飞机的检查也是一样，对吧？
+Same thing with the FAA checking airplanes, right?
+
+774
+00:41:35,100 --> 00:41:38,220
+这些都是事先批准，然后定期检查的东西。
+Like these are all things that are approved beforehand and then regularly checked.
+
+775
+00:41:38,350 --> 00:41:40,150
+但也有其他高风险的东西，对吧？
+But there are other high risk things, right?
+
+776
+00:41:40,350 --> 00:41:44,310
+汽车：NHTSA 提供联邦指导方针。
+Cars: the NHTSA offers federal guidelines.
+
+777
+00:41:44,830 --> 00:41:48,230
+制造商证明自己符合这些指导方针，
+Manufacturers certify that they've met those guidelines and
+
+778
+00:41:48,230 --> 00:41:51,630
+然后政府会购买市面上的车辆来抽查。
+then the government purchases cars off the road to check them.
+
+779
+00:41:51,990 --> 00:41:57,470
+还有像膳食补充剂这类，实际上归 FDA 管辖，但它们是事后才被检查。
+And then you have things like supplements that are actually under the purview of the FDA, but they're checked after the fact.
+
+780
+00:41:57,750 --> 00:41:59,910
+那类主要靠什么来覆盖？
+Those are mostly covered by what?
+
+781
+00:42:00,000 --> 00:42:01,522
+如果大家听过 Jensen 的采访，
+If people are listening to, you know,
+
+782
+00:42:01,522 --> 00:42:03,928
+比如他谈到责任、
+the interviews with Jensen, for example, and he's talking
+
+783
+00:42:03,928 --> 00:42:06,138
+人们在事后、在损害发生后起诉，
+about liability and like people suing after the fact,
+
+784
+00:42:06,138 --> 00:42:08,200
+这类通常就属于这一类。
+after harm, like that's generally this category.
+
+785
+00:42:08,560 --> 00:42:14,560
+你觉得这个框架对吗？在我深入谈它如何适用于 AI 之前，我想先确认一下。
+Does this feel right to you? Like, first, I would just want to check before I dive into how this applies to AI.
+
+786
+00:42:15,280 --> 00:42:16,880
+对，我觉得这大致没错。
+Yeah, I think this seems roughly right.
+
+787
+00:42:17,040 --> 00:42:17,160
+嗯。
+Yeah.
+
+788
+00:42:17,160 --> 00:42:17,560
+好。
+Okay.
+
+789
+00:42:17,800 --> 00:42:20,400
+那么接下来——等等，这是有趣的部分。
+So then we have, wait, this is the fun part.
+
+790
+00:42:22,050 --> 00:42:24,170
+然后我们把所有 AI 领域的领导者都放进来。
+So then we have all of our AI leaders.
+
+791
+00:42:24,610 --> 00:42:25,170
+你在这里。
+There you are.
+
+792
+00:42:27,250 --> 00:42:32,210
+这是我根据他们公开表态所做的判断。
+This is my assessment based on where people have expressed themselves via their public statements.
+
+793
+00:42:32,730 --> 00:42:34,752
+我理解 Dario 会说 AI 在这个位置：
+My understanding of where Dario would say AI is:
+
+794
+00:42:34,752 --> 00:42:36,370
+他会说大概在这里。
+he would say it's somewhere over here.
+
+795
+00:42:36,450 --> 00:42:40,042
+他特别要求对模型进行持续的现场人工检查，
+He would say specifically he's asked for in-person ongoing
+
+796
+00:42:40,042 --> 00:42:43,490
+有真人驻场，
+checks on models with physical human beings at the sites,
+
+797
+00:42:43,490 --> 00:42:47,010
+这听起来有点像我们现在对核能的做法。
+which sort of sounds like what we currently do for nuclear.
+
+798
+00:42:47,230 --> 00:42:51,630
+然后还有像 Elon 和 Sam 也表态说，Dario 是对的。
+And then you have like, Elon and Sam weighing in saying, like, Dario's right.
+
+799
+00:42:51,710 --> 00:42:56,350
+我其实觉得 Zuck 在 AI 应处位置的问题上处于中间地带。
+I would actually say Zuck is somewhere in the middle in terms of where he's saying AI is.
+
+800
+00:42:56,390 --> 00:42:58,710
+我猜 Jensen 现在可能在这个位置。
+I would say Jensen is maybe over here right now.
+
+801
+00:42:58,830 --> 00:43:01,950
+根据他的公开表态，普遍有一种观点是：
+Based on his public statements, generally there is a point
+
+802
+00:43:01,950 --> 00:43:05,070
+如果会伤害人，就不要发布。
+of view that is like, if it would hurt people, don't ship it.
+
+803
+00:43:05,110 --> 00:43:06,190
+我们已经有相应的激励机制。
+We have incentives for that.
+
+804
+00:43:06,230 --> 00:43:07,670
+责任机制就是这样。
+That's what liability is like.
+
+805
+00:43:07,870 --> 00:43:09,630
+对此也有相应的法律基础设施。
+There is a legal infrastructure for that as well.
+
+806
+00:43:09,830 --> 00:43:12,230
+如果产品还没准备好发布，就不要发布。
+If your product is not ready to ship, don't ship the product.
+
+807
+00:43:12,520 --> 00:43:15,760
+我的问题是，你能不能帮我帮大家理解这件事？
+So my question is, can you help me help people think about this?
+
+808
+00:43:16,000 --> 00:43:21,935
+当人们听到关于如何监管 AI 的新闻时，
+Like when, when they're hearing news about how to regulate AI,
+
+809
+00:43:21,935 --> 00:43:28,440
+你怎么看，又如何把自己放在这一团乱局里？
+how do you think about this and how do you place yourself in this mess?
+
+810
+00:43:29,120 --> 00:43:33,213
+你说得太对了，这确实非常令人困惑，
+You know, you're exactly right, it is so confusing
+
+811
+00:43:33,213 --> 00:43:37,014
+因为表面上大家说的
+because at face value, what everyone's saying
+
+812
+00:43:37,014 --> 00:43:41,400
+和做的看起来疯狂地不一致。
+and what everyone's doing feel so crazily divergent.
+
+813
+00:43:41,640 --> 00:43:42,000
+对。
+Yeah.
+
+814
+00:43:42,000 --> 00:43:44,137
+于是你就像处在这样一个世界里：
+And so you're sort of in this world where,
+
+815
+00:43:44,137 --> 00:43:45,520
+我该相信他们说的吗？
+do I believe what they say?
+
+816
+00:43:45,560 --> 00:43:46,600
+还是该相信他们做的？
+Do I believe what they're doing?
+
+817
+00:43:46,720 --> 00:43:49,360
+人们真正的立场和真实想法到底在哪里？
+Like, where do people actually sit where they actually believe?
+
+818
+00:43:50,000 --> 00:43:51,960
+嗯，我也经常问自己这个问题。
+Um, and I find myself asking this, too.
+
+819
+00:43:52,000 --> 00:43:54,563
+比如，我觉得很有意思的是，
+Like, I think it was, it's very funny that,
+
+820
+00:43:54,563 --> 00:43:57,711
+那些主张放慢前沿发展的人，
+you know, um, the same people who are advocating for
+
+821
+00:43:57,711 --> 00:44:00,640
+同时也在建湿实验室。
+pacing the frontier also are building a wet lab.
+
+822
+00:44:00,640 --> 00:44:06,040
+我觉得这真的是一种很奇怪的因素叠加。
+Like, that's, I think, a really, um, weird, uh, confluence of factors.
+
+823
+00:44:06,240 --> 00:44:09,160
+所以我认为我的立场最终是……
+So I think where, where I stand is like ultimately.
+
+824
+00:44:10,020 --> 00:44:14,453
+嗯，这项技术会变得越来越、
+Um, this technology will become more and more and more,
+
+825
+00:44:14,453 --> 00:44:18,019
+越来越、越来越强大。而且，
+um, capable and, uh, you know, part of what is
+
+826
+00:44:18,019 --> 00:44:21,777
+既在科学上非常令人兴奋、
+both scientifically very exciting, but also,
+
+827
+00:44:21,777 --> 00:44:26,789
+又让这些问题凸显出来的部分原因，
+I think brings all these questions into the foreground is just
+
+828
+00:44:26,789 --> 00:44:30,740
+是 AI 即使在过去一年里也发展得太快了。
+how quickly AI has moved, even over the past year.
+
+829
+00:44:30,820 --> 00:44:31,580
+就像一年前。
+Like a year ago.
+
+830
+00:44:32,490 --> 00:44:35,490
+大多数人还基本上靠手写代码。
+Most people, like, coded roughly by hand.
+
+831
+00:44:35,570 --> 00:44:37,079
+他们会进到代码编辑器里，
+They would, like, go into the,
+
+832
+00:44:37,079 --> 00:44:38,890
+一行一行地写代码。
+into the code editor and write code.
+
+833
+00:44:39,090 --> 00:44:41,570
+现在人们大多只是跟智能体对话。
+And now people are mostly just talking to agents.
+
+834
+00:44:41,770 --> 00:44:45,810
+所以一切发展的速度真的相当惊人。
+So the speed at which everything is moving is, is quite staggering.
+
+835
+00:44:46,330 --> 00:44:52,250
+嗯，我觉得很多担忧之所以……
+Um, and I think a lot of what the, a lot of the concerns are, are.
+
+836
+00:44:53,520 --> 00:44:53,880
+被放大。
+Heightened.
+
+837
+00:44:54,000 --> 00:44:56,480
+很多恐惧之所以加剧，是因为
+And a lot of the fear is heightened by the fact that,
+
+838
+00:44:56,480 --> 00:44:58,960
+如果事情发展得这么快，
+um, like if things are moving this fast, we're just
+
+839
+00:44:58,960 --> 00:45:01,440
+一年后、两年后我们只会……
+gonna be in a year, we're just gonna be in two years.
+
+840
+00:45:01,640 --> 00:45:07,120
+政府和公众的反应时间尺度远慢于 AI 进展速度。
+The government and the public react on a much slower time horizon than the pace of AI progress.
+
+841
+00:45:07,200 --> 00:45:10,327
+所以等到一年、两年、
+And so by the time one year or two years or three years
+
+842
+00:45:10,327 --> 00:45:13,382
+三年或不管多少年后，当公众
+or however many years forward when, um, the public
+
+843
+00:45:13,382 --> 00:45:16,800
+和政府真正决定要做什么时……
+and government are really deciding what they want to do?
+
+844
+00:45:17,280 --> 00:45:21,240
+谁知道那时 AI 会发展到什么程度、速度会有多快。
+Who knows, like where AI is going to be at that point and how fast it's going to move.
+
+845
+00:45:21,620 --> 00:45:25,540
+所以我认为，这是解释这些讨论的部分原因之一。
+So that's one of the things I think, explains some of the dialogue.
+
+846
+00:45:26,500 --> 00:45:33,180
+我觉得另一个原因是所需的集体行动程度，
+I think the other thing that kind of explains some of this is the level of collective action necessary
+
+847
+00:45:33,180 --> 00:45:39,700
+以及各个 AI 领导者之间普遍存在的不信任。
+and the level of general mistrust that exists between the various AI leaders towards one another.
+
+848
+00:45:39,700 --> 00:45:43,232
+这一点已经被讨论很多了，
+And this is like, well covered, but one major justification
+
+849
+00:45:43,232 --> 00:45:46,058
+但很多人的一个主要理由是：“我是负责任的，
+for folks is that like, oh, I am responsible and I
+
+850
+00:45:46,058 --> 00:45:49,520
+也会负责任，但那些人不负责任。”
+would be responsible, but those guys aren't responsible.
+
+851
+00:45:49,680 --> 00:45:51,910
+不管那些家伙是另一家 AI 公司，
+Whether those guys are, you know, another AI
+
+852
+00:45:51,910 --> 00:45:54,200
+还是中国，又或者谁知道是什么。
+company or China or, you know, who knows what.
+
+853
+00:45:54,240 --> 00:45:54,800
+假想敌。
+Boogeyman.
+
+854
+00:45:55,080 --> 00:45:56,800
+所以我不能放慢速度。
+So I can't slow down.
+
+855
+00:45:57,000 --> 00:46:00,092
+否则那些不负责任的家伙会——
+Otherwise those guys who are irresponsible are going to,
+
+856
+00:46:00,092 --> 00:46:02,476
+谁知道他们会做出什么？
+you know, who knows what they're going to do?
+
+857
+00:46:02,476 --> 00:46:04,280
+而我认为这种基本逻辑……
+Um, and that basic logic, I think.
+
+858
+00:46:05,140 --> 00:46:06,982
+这非常令人困惑，
+Is very confusing because
+
+859
+00:46:06,982 --> 00:46:09,913
+因为我认为对大多数人来说，
+I think for most people, um, uh, the kind of
+
+860
+00:46:09,913 --> 00:46:12,341
+常识性的回答是：
+like common sense answer is, well,
+
+861
+00:46:12,341 --> 00:46:15,020
+谁在乎那些人是什么样呢？
+who cares what the other guys are like?
+
+862
+00:46:15,020 --> 00:46:17,420
+你只需要做你觉得对的事，对吧？
+You have to, you have to do what feels good to you, right?
+
+863
+00:46:17,420 --> 00:46:19,780
+而且你应该做符合自己伦理的事。
+And like you should do what's within your ethics.
+
+864
+00:46:19,860 --> 00:46:22,460
+但我认为这也是让很多问题复杂化的原因。
+But I think that's also what complicates a lot of this.
+
+865
+00:46:22,500 --> 00:46:26,676
+所以我认为很多必要的事，
+So I think a lot of what is necessary is like, it's almost
+
+866
+00:46:26,676 --> 00:46:30,943
+几乎可以说“外交”才更贴切：
+diplomacy is the right word, like how do we get this group
+
+867
+00:46:30,943 --> 00:46:35,300
+我们怎么让这群彼此不太信任的人走到一起。
+of people who all don't really trust each other that much.
+
+868
+00:46:35,620 --> 00:46:39,152
+但他们都同意，这是非常强大的技术，
+But all agree that like, this is really powerful technology
+
+869
+00:46:39,152 --> 00:46:42,613
+我们需要想办法让它安全落地，
+and we need to, we need to figure out how to land it and how to,
+
+870
+00:46:42,613 --> 00:46:46,780
+确保负责任地开发，并让事情顺利发展。
+how to make sure that we develop it responsibly and that things go well.
+
+871
+00:46:47,180 --> 00:46:49,780
+比如，我们怎么让这一切运作起来？
+Like how do we, like, make all this work?
+
+872
+00:46:49,780 --> 00:46:52,824
+我认为我们正处在最混乱的时刻，
+And we're at the moment of, like, peak insanity,
+
+873
+00:46:52,824 --> 00:46:55,944
+因为在公众面前，
+I think, for that because it's like in the public,
+
+874
+00:46:55,944 --> 00:46:58,760
+这些问题都被摊开了。
+all these problems are being like aired out.
+
+875
+00:46:58,840 --> 00:47:01,519
+我们都能看出没人真正信任彼此，
+Like we can all, we can tell that nobody trusts each other
+
+876
+00:47:01,519 --> 00:47:04,883
+也能看出人们已经非常担忧，
+and we can tell that people are kind of are being really worried before,
+
+877
+00:47:04,883 --> 00:47:07,790
+甚至可能在 AI 本身真正发展到值得这种担忧之前，
+like maybe a little bit before the AIs themselves are getting
+
+878
+00:47:07,790 --> 00:47:10,640
+就已经开始担忧了。所以……
+to the point where they're deserving of that worry. And so I.
+
+879
+00:47:10,640 --> 00:47:15,199
+我的意思是，我最终认为最重要的是让大家就某种共同基础
+I mean, I ultimately think the most important thing is to get everyone
+
+880
+00:47:15,199 --> 00:47:17,478
+和基本盘达成一致，
+to agree to some common foundation
+
+881
+00:47:17,478 --> 00:47:20,150
+然后建立一套流程，
+and base and then develop some process by
+
+882
+00:47:20,150 --> 00:47:21,958
+让我们都能持续重新评估、
+which we can all reevaluate
+
+883
+00:47:21,958 --> 00:47:24,630
+持续关注，然后说：嘿……
+and consistently look at it and say, hey.
+
+884
+00:47:24,670 --> 00:47:30,270
+我们其实都同意，现在需要做这件事，也需要做另一件事。
+We all agree, actually, that, you know, we need to be doing this now and we all need to be doing this other thing now.
+
+885
+00:47:30,350 --> 00:47:34,070
+而且我们都看到，模型在某些方面正变得更强。
+And we all see like the models are getting powerful in certain ways.
+
+886
+00:47:34,150 --> 00:47:35,830
+比如，让我们一起关注这一点。
+Like let's all, let's all look at this together.
+
+887
+00:47:36,320 --> 00:47:41,691
+而且坦白说，我真心相信这种集体对话
+And I actually genuinely believe for what it's worth, like, that having these, like, collective dialogues
+
+888
+00:47:41,691 --> 00:47:45,093
+不仅在美国的 AI 领导者之间有可能实现，
+is not only going to be possible among the AI leaders within America,
+
+889
+00:47:45,093 --> 00:47:47,480
+在国际上也有可能。
+but also going to be possible internationally.
+
+890
+00:47:47,600 --> 00:47:50,794
+我认为我们有共同利益，
+Like, I think we all have a shared interest in making
+
+891
+00:47:50,794 --> 00:47:53,840
+确保这项技术不会出大错。
+sure this technology does not go horribly wrong.
+
+892
+00:47:54,320 --> 00:47:59,120
+是的，那显然下一个问题就是中国因素。
+Yeah, I mean, the obvious next question is the China of it all.
+
+893
+00:47:59,410 --> 00:48:02,330
+你之前提到这是一个重大担忧。
+I mean, you've talked about how this is a big concern.
+
+894
+00:48:02,610 --> 00:48:05,815
+这些 AI 公司高层互不信任，
+People don't trust each other at the top of these AI
+
+895
+00:48:05,815 --> 00:48:08,944
+但他们又常说：我们必须尽快推进，
+companies, but they all often say, we have to go as
+
+896
+00:48:08,944 --> 00:48:12,530
+因为如果中国先做到了怎么办？
+fast as possible because what if China gets there first?
+
+897
+00:48:12,890 --> 00:48:15,139
+你知道，Ted Cruz 就在公开说：
+I mean, you know, Ted Cruz is out there saying
+
+898
+00:48:15,139 --> 00:48:16,598
+如果要有杀人机器人，
+like, we would rather have US
+
+899
+00:48:16,598 --> 00:48:20,610
+我们宁可要美国的杀人机器人，也不要中国的。
+killer robots than Chinese killer robots if they're going to be killer robots.
+
+900
+00:48:21,680 --> 00:48:26,640
+“我宁可要美国的杀人机器人，不要中国的杀人机器人。”我觉得这话让很多人害怕。
+I'd rather they be American killer robots and not Chinese killer robots, which I think scares a lot of people.
+
+901
+00:48:27,320 --> 00:48:29,840
+而且这已经算说得很温和了。
+And also, to put it mildly.
+
+902
+00:48:31,120 --> 00:48:35,920
+是的，这是美国法律、现有美国法律里的一整个谱系。
+Yeah, this is a spectrum of American law, existing American law.
+
+903
+00:48:36,960 --> 00:48:40,171
+这还没有纳入任何全球动态，
+This does not include any global dynamics,
+
+904
+00:48:40,171 --> 00:48:43,560
+更不用说长期合作了。
+not to mention like long term collaboration.
+
+905
+00:48:44,010 --> 00:48:47,130
+在存在中国因素的情况下，你怎么评估这个谱系？
+How do you evaluate this spectrum given the China of it all?
+
+906
+00:48:47,130 --> 00:48:48,930
+而且这到底意味着什么？
+And, and what, what does that even mean?
+
+907
+00:48:49,010 --> 00:48:51,490
+在这种动态下，我应该如何理解中国？
+Like how should I think about China with respect to this dynamic?
+
+908
+00:48:52,050 --> 00:48:56,170
+其实我本人在这个问题上的看法都已经改变了。
+I've actually, like, personally even changed my own opinion on this matter.
+
+909
+00:48:56,570 --> 00:49:00,534
+我觉得过去我非常担心中国，
+Like I think in the past, I was very worried about China
+
+910
+00:49:00,534 --> 00:49:04,850
+也非常担心那种竞争态势。
+and I was very worried about what that dynamic looked like.
+
+911
+00:49:04,890 --> 00:49:09,215
+我读过一些过去 PRC 官员的讲话，
+And I had read these speeches that were given by PRC officials in the past
+
+912
+00:49:09,215 --> 00:49:14,550
+谈到他们把 AI 视为超越西方的机会。
+that talked about how they viewed AI as like this, this opportunity to leapfrog the West.
+
+913
+00:49:14,590 --> 00:49:17,150
+读这些内容确实会让人担忧。
+And, you know, these, these are the concerning things when you read them.
+
+914
+00:49:17,590 --> 00:49:20,928
+但随着时间推移，
+But as time has gone on, I think that we're painting them
+
+915
+00:49:20,928 --> 00:49:24,048
+我觉得我们把他们描绘得太像“妖怪”了，
+out to be too much of a boogeyman when in reality, um,
+
+916
+00:49:24,048 --> 00:49:27,531
+而实际上他们也会看到我们看到的问题：
+they are going to see the same things that we see in terms of
+
+917
+00:49:27,531 --> 00:49:31,813
+这是强大的技术，
+this is powerful technology and we as a humanity need to get this right.
+
+918
+00:49:31,813 --> 00:49:34,280
+人类必须把它做对。会有很多共同目标。
+There's going to be a lot of shared goals.
+
+919
+00:49:34,600 --> 00:49:36,640
+确保 AI 发展顺利。
+In making sure that AI goes well.
+
+920
+00:49:37,040 --> 00:49:43,240
+而且我认为真的有可能达成某种形式的国际合作。
+And I think, and I think it really is possible to arrive at some form of international cooperation.
+
+921
+00:49:43,720 --> 00:49:47,412
+我认为中国政府和其他政府一样，
+I think that the Chinese government, like any government,
+
+922
+00:49:47,412 --> 00:49:50,652
+有动力维护社会稳定，
+has an interest in ensuring that there's stability
+
+923
+00:49:50,652 --> 00:49:54,193
+确保不失去对这项技术的控制，
+in their society and that they don't lose control of this
+
+924
+00:49:54,193 --> 00:49:57,056
+并且总体来看，让事情顺利发展，
+technology and that overall, like, you know,
+
+925
+00:49:57,056 --> 00:50:01,200
+避免灾难性的生存风险。
+things go well and we don't have catastrophic existential risks.
+
+926
+00:50:01,280 --> 00:50:04,666
+因此有相当多共同基础，
+And so there's quite a bit of shared ground that
+
+927
+00:50:04,666 --> 00:50:08,573
+我认为这能让各方保持理性、
+I think will enable everybody to be rational and think
+
+928
+00:50:08,573 --> 00:50:12,480
+理性思考，最终做出正确决定。
+rationally and ultimately make the right decisions.
+
+929
+00:50:13,330 --> 00:50:16,938
+即使现在看起来很疯狂，
+Even though it seems totally insane right now and it seems
+
+930
+00:50:16,938 --> 00:50:20,395
+甚至在某些方面似乎不可能，但我真的相信，
+like, it seems like in some ways that feels impossible,
+
+931
+00:50:20,395 --> 00:50:23,628
+随着人们对这项技术看得越来越多、
+I really have faith actually that as people see more
+
+932
+00:50:23,628 --> 00:50:27,010
+了解得越来越多……
+and more and learn more and more about the technology.
+
+933
+00:50:27,410 --> 00:50:29,090
+……人们会做出正确的决定。
+Um, people make the right calls.
+
+934
+00:50:29,890 --> 00:50:37,719
+你最近已成为美国那场对话中最重要的 20 个人之一。
+You have recently become one of the 20 most important people in that conversation in the United States.
+
+935
+00:50:38,079 --> 00:50:40,559
+过去几年你在 AI 领域已经非常重要。
+You've been very important in AI in the last couple years.
+
+936
+00:50:40,679 --> 00:50:43,599
+我觉得人们记得你加入 Meta 时上了新闻头条。
+I mean, I think people remember seeing you in the headlines when you came to Meta.
+
+937
+00:50:43,719 --> 00:50:46,319
+所以这一切对你来说并不陌生。
+I think this, you know, isn't brand new to you.
+
+938
+00:50:46,399 --> 00:50:51,057
+但过去几周，你设计并发布了一款产品，
+But in the last couple weeks, you have designed and released a product
+
+939
+00:50:51,057 --> 00:50:55,153
+其早期使用人数超过了 ChatGPT 最初几周的用户数。
+that is being used by more people than ChatGPT was in its first
+
+940
+00:50:55,153 --> 00:50:59,410
+感觉你被推入了一种新的……
+couple weeks, it feels like you have been thrust into a new kind.
+
+941
+00:51:00,780 --> 00:51:03,769
+……这类对话的一部分。坦率地说，
+Part of this conversation where frankly people
+
+942
+00:51:03,769 --> 00:51:06,535
+人们会越来越多地追问：Alex，
+will be asking you more questions like where
+
+943
+00:51:06,535 --> 00:51:09,300
+你具体在这个光谱中站在哪一边？
+exactly, Alex, do you fall on this spectrum?
+
+944
+00:51:09,420 --> 00:51:10,776
+比如你希望看到什么？
+Like what would you wanna see
+
+945
+00:51:10,776 --> 00:51:12,980
+因为你是负责人之一。
+because you're one of the people responsible.
+
+946
+00:51:13,860 --> 00:51:17,180
+你觉得自己已经得出这些结论了吗？
+Do you feel like you've come to those conclusions yet?
+
+947
+00:51:17,420 --> 00:51:21,500
+是的，我认为，和任何从事这项技术的人一样，这些都是……
+Yeah, I think, I think like anyone who works on this technology, these are things that.
+
+948
+00:51:22,600 --> 00:51:25,280
+我已经思考了很多很多年。
+I've like been thinking about for years and years.
+
+949
+00:51:25,640 --> 00:51:29,050
+坦白说，关于我想做什么、
+Truly, the way I think about what I want to do
+
+950
+00:51:29,050 --> 00:51:33,406
+想实现什么，以及想如何影响这场对话，
+and what I want to accomplish and how I want to shape this
+
+951
+00:51:33,406 --> 00:51:37,763
+我的想法是：让所有人都能有共同对话，
+conversation is like enable everybody to have a common
+
+952
+00:51:37,763 --> 00:51:42,120
+然后集体走到正确的位置。
+dialogue and then get to the right place collectively.
+
+953
+00:51:42,750 --> 00:51:46,061
+我觉得在当前的讨论阶段，
+Like, I don't think at this point in the conversation
+
+954
+00:51:46,061 --> 00:51:48,318
+站出来说
+it's like that helpful for me to say,
+
+955
+00:51:48,318 --> 00:51:51,705
+“我相信这个，你们都应该听我的，
+oh, I believe this and, you know, you all should listen
+
+956
+00:51:51,705 --> 00:51:54,790
+因为我做了 Muse”之类的，并没有太大帮助。
+to me because, you know, I built Muse or whatever.
+
+957
+00:51:54,910 --> 00:51:57,133
+我们已经有很多人，
+We already have a bunch of people,
+
+958
+00:51:57,133 --> 00:52:00,150
+大家的观点略有不同。
+they all believe slightly different things.
+
+959
+00:52:00,510 --> 00:52:03,068
+最终，这是一项需要我们集体行动、
+Um, ultimately, this is a technology that we need
+
+960
+00:52:03,068 --> 00:52:06,188
+需要大家达成一致、
+like collective action on, that everyone needs to agree on,
+
+961
+00:52:06,188 --> 00:52:08,310
+共同找到正确方向的技术。
+that we all need to get to the right place.
+
+962
+00:52:08,800 --> 00:52:12,683
+所以我真正关心的是：我们如何推动
+So what I really care about is like how do we facilitate
+
+963
+00:52:12,683 --> 00:52:16,566
+和进行相关对话，无论公开还是私下，
+and have the relevant dialogues in public and private
+
+964
+00:52:16,566 --> 00:52:20,880
+让我们最终能就一条路径达成一致。
+that enable us to get to the point where we all agree on a path.
+
+965
+00:52:21,320 --> 00:52:25,320
+对我来说很怪的一点是，
+And one of the very, um, strange things for me is,
+
+966
+00:52:25,320 --> 00:52:29,520
+我认识其中很多人，也见过他们。
+like, I know a lot of these people and I've met them.
+
+967
+00:52:29,640 --> 00:52:30,560
+他们都非常聪明。
+They're all, all brilliant.
+
+968
+00:52:31,080 --> 00:52:39,014
+但某些个人恩怨在多大程度上实际决定了人们说什么、做什么，
+Um, but the degree to which certain personal animosities are like actually defining what people say
+
+969
+00:52:39,014 --> 00:52:46,760
+以及如何开发这项极其重要的技术，这在我看来太离谱了。
+and do and, like, how they're developing this really important technology is, um, is insane to me.
+
+970
+00:52:46,960 --> 00:52:51,484
+从某种意义上说，这是一个非常人性化的故事：
+It is in some ways a very human story that like feuds or like just
+
+971
+00:52:51,484 --> 00:52:55,920
+恩怨，或者“我真的不信任那个人”这个事实，
+the fact that like I really don't trust this other person can,
+
+972
+00:52:55,920 --> 00:53:01,140
+会像滚雪球一样演变成文明层面的问题。
+can like snowball into this, like, civilizational level, um, problem.
+
+973
+00:53:01,580 --> 00:53:04,300
+但我不认为这对我们任何人有好处。
+Um, but I don't think that serves any of us.
+
+974
+00:53:04,340 --> 00:53:08,084
+我认为最终我们必须放下分歧，
+Like, I think ultimately we have to all put our differences aside,
+
+975
+00:53:08,084 --> 00:53:12,100
+放下过往，一起想办法解决问题。
+put our histories aside and just figure out how we solve this together.
+
+976
+00:53:12,750 --> 00:53:15,790
+这听起来很笼统，但其实是一个相当具体的请求。
+It sounds very general, but that's a fairly specific ask.
+
+977
+00:53:15,870 --> 00:53:19,070
+但目前有一些限制让这种对话难以发生。
+I mean, there are constraints that prevent that right now.
+
+978
+00:53:19,150 --> 00:53:23,110
+反垄断法规阻止了很多这类对话。
+There are antitrust regulations that prevent a lot of those conversations from happening.
+
+979
+00:53:23,190 --> 00:53:27,551
+Dario（Dario Amodei）提出的许多提案里的一项，
+And one of the proposals, one piece of many proposals that Dario put forward,
+
+980
+00:53:27,551 --> 00:53:29,664
+是获得反垄断法的豁免，
+is waivers from those antitrust laws
+
+981
+00:53:29,664 --> 00:53:32,390
+从而允许这类对话发生。
+that would allow those kinds of conversations.
+
+982
+00:53:33,020 --> 00:53:34,965
+我的意思是，如果我说得不对请告诉我：
+I mean, tell me if I'm wrong, if there are secret
+
+983
+00:53:34,965 --> 00:53:37,260
+是否有秘密对话正在发生，但我不认为有。
+conversations happening, but I don't think there are.
+
+984
+00:53:37,860 --> 00:53:42,161
+首先，是美国内部那个已经达成一致的群体正在开展这类对话；
+First, the agreed-upon group in the United States that's having that conversation,
+
+985
+00:53:42,161 --> 00:53:46,220
+然后还有，我们到底该如何开始与中国进行这些对话？
+and then also, like, how do we even begin to have those conversations with China?
+
+986
+00:53:46,340 --> 00:53:48,857
+但实际上，我不知道的是：
+But actually, what I don't know is: is that something
+
+987
+00:53:48,857 --> 00:53:51,775
+这是在某个私密房间里已经发生的事情吗？
+that's happening in, you know, some private room somewhere?
+
+988
+00:53:51,775 --> 00:53:53,835
+还是说我们仍处在起步阶段，
+Or is it that we're still at the beginning of
+
+989
+00:53:53,835 --> 00:53:55,780
+需要想办法去推进？
+that and we need to figure out how to do it?
+
+990
+00:53:56,480 --> 00:53:58,280
+嗯，我认为它现在并没有在发生。
+Um, I don't think it's happening right now.
+
+991
+00:53:58,440 --> 00:54:02,492
+在白宫，有过这样的对话并提出了这些协议，
+At the White House, there was this dialogue and these accords
+
+992
+00:54:02,492 --> 00:54:06,067
+这是切实的一步。我觉得，
+put forth, which are a real step. Like, I think getting
+
+993
+00:54:06,067 --> 00:54:10,040
+能让所有人就某件事达成一致，真的非常重大。
+everyone to agree to something is, like, that's really big.
+
+994
+00:54:10,800 --> 00:54:13,632
+所有人都同意某件事，
+Everyone agrees on something, and I think that one thing,
+
+995
+00:54:13,632 --> 00:54:16,701
+而我认为那件事基本上是在说：嘿，
+which is basically saying, hey, we're going to—every company
+
+996
+00:54:16,701 --> 00:54:22,720
+我们要——每家公司都会着手制定并阐明自己在开发这项技术时的内部控制和原则是什么。
+is going to set out and develop what their internal controls and principles around developing this technology look like.
+
+997
+00:54:23,120 --> 00:54:28,039
+而且对此会有多层核验：从进行核验的内部团队，
+And there's going to be multiple layers of verification on that, from internal teams
+
+998
+00:54:28,039 --> 00:54:33,235
+到验证他们是否遵守这些控制措施的外部审计方，
+that verify, to external auditors that validate that they're following those controls,
+
+999
+00:54:33,235 --> 00:54:37,600
+再到确保这些控制措施得到遵守的董事会级委员会。
+to board-level committees that ensure they're following those controls.
+
+1000
+00:54:37,720 --> 00:54:44,280
+我觉得那是很好的一步，因为在很多方面，当前最需要的就是透明。
+Like I think that's a great step, because in many ways, a lot of what's needed right now is just transparency.
+
+1001
+00:54:44,360 --> 00:54:47,048
+我们只是需要确保，
+Like we just need to ensure that, you know,
+
+1002
+00:54:47,048 --> 00:54:50,350
+人们是在理智、理性地推进这件事。
+people are going about this sanely and rationally.
+
+1003
+00:54:50,590 --> 00:54:52,446
+而且从某些方面来说，
+And I think in some ways, like,
+
+1004
+00:54:52,446 --> 00:54:55,118
+我觉得人们甚至未必相信这一点。
+people don't even trust that necessarily.
+
+1005
+00:54:55,118 --> 00:54:58,310
+作为一个行业，我们还有很多建立信任的工作要做。
+As an industry, we have a lot of trust building to do.
+
+1006
+00:54:58,910 --> 00:54:59,710
+我是个乐观主义者。
+I am an optimist.
+
+1007
+00:54:59,750 --> 00:55:00,590
+我觉得你也是个乐观主义者。
+I think you're an optimist.
+
+1008
+00:55:00,710 --> 00:55:01,950
+我觉得我们都是乐观主义者。
+Like, I think we're all optimists.
+
+1009
+00:55:01,990 --> 00:55:04,510
+我真的认为这些对话会自然发生。
+Like, I really do think these conversations will naturally happen.
+
+1010
+00:55:04,950 --> 00:55:10,640
+我刚才提到的那最后一项协议是在白宫达成的；政府帮助促成了这件事。
+This last accord that I referenced, like, that was in the White House; the government helped facilitate that.
+
+1011
+00:55:10,680 --> 00:55:13,440
+所以我认为我们会看到更多这类事情。
+And so I think we're gonna be seeing a lot more of that.
+
+1012
+00:55:13,640 --> 00:55:14,520
+这会是一段颠簸的过程。
+It's gonna be bumpy.
+
+1013
+00:55:14,880 --> 00:55:16,863
+会有完全困惑和混乱的时刻，
+There will be moments of total confusion
+
+1014
+00:55:16,863 --> 00:55:19,080
+会觉得：这到底是怎么回事？
+and chaos, and like, what the heck is going on?
+
+1015
+00:55:19,280 --> 00:55:20,760
+但我也看到了进展。
+But I see progress, too.
+
+1016
+00:55:21,400 --> 00:55:25,281
+我很高兴我们这场对话花了很多时间谈安全
+I'm glad that we've spent a lot of this conversation talking
+
+1017
+00:55:25,281 --> 00:55:29,240
+和监管。我们现在怎么把话题拉回到……
+about safety and regulation. How do we bring it back now to...
+
+1018
+00:55:30,480 --> 00:55:32,440
+对未来的乐观愿景。
+The optimistic vision of the future.
+
+1019
+00:55:32,640 --> 00:55:37,159
+我认为，在围绕信任和安全进行了这么长的对话之后，
+I think the question a lot of people will naturally have after a long
+
+1020
+00:55:37,159 --> 00:55:39,903
+很多人自然会产生一个问题：
+conversation about trust and safety is,
+
+1021
+00:55:39,903 --> 00:55:41,840
+到底为什么还要费劲做这件事？
+why bother doing this at all?
+
+1022
+00:55:42,200 --> 00:55:44,687
+这就像 SNL 小品里的那个时刻：呃，
+This is the moment in the SNL sketch where it's, uh,
+
+1023
+00:55:44,687 --> 00:55:47,293
+你知道，如果有 10% 的几率某件事会害死你，
+you know, if there's a 10% chance that something will
+
+1024
+00:55:47,293 --> 00:55:49,840
+但它很可能会让你的生活更好。
+kill you, but it'll probably make your life better.
+
+1025
+00:55:49,920 --> 00:55:50,800
+比如，你难道不会去做吗？
+Like, wouldn't you do it?
+
+1026
+00:55:50,800 --> 00:55:53,400
+而另一个人则说，不，不，我不会。
+And the other guy's like, no, no, I wouldn't.
+
+1027
+00:55:53,680 --> 00:55:54,760
+不，真的不会。
+No, really.
+
+1028
+00:55:55,130 --> 00:55:56,890
+你能帮人们回答这个问题吗？
+Can you help people answer that question?
+
+1029
+00:55:56,970 --> 00:55:58,570
+比如，为什么要做这件事？
+Like, why do this?
+
+1030
+00:56:00,130 --> 00:56:04,942
+我一直觉得有些可悲的是，我想，
+Something that I have always felt was a bit tragic was that,
+
+1031
+00:56:04,942 --> 00:56:08,870
+嗯，几乎每个人在小时候都有宏大的梦想
+I think, um, almost everyone when they're kids,
+
+1032
+00:56:08,870 --> 00:56:11,718
+和伟大的想法，
+they have big dreams and big ideas,
+
+1033
+00:56:11,718 --> 00:56:14,468
+他们想改变世界，
+and they want to change the world,
+
+1034
+00:56:14,468 --> 00:56:19,280
+想拯救地球，还想，你知道的。
+and they want to save the planet, and they want to, you know.
+
+1035
+00:56:19,960 --> 00:56:22,480
+写一本书，或者做一部百老汇音乐剧，或者拍一部电影。
+Write a book or make a Broadway musical or make a movie.
+
+1036
+00:56:22,520 --> 00:56:25,400
+他们真的——他们满怀希望。
+Like, they have really—they have tons of hope.
+
+1037
+00:56:25,600 --> 00:56:29,684
+然后由于某种原因，到人们完成学业、
+And then for some reason or another, by the time that people
+
+1038
+00:56:29,684 --> 00:56:33,602
+找到工作时，那团火焰差不多就熄灭了。
+finish school and they get a job, that flame kind of dies.
+
+1039
+00:56:33,602 --> 00:56:36,602
+人们真的不再做宏大的梦，
+And people really, they stop dreaming big,
+
+1040
+00:56:36,602 --> 00:56:38,686
+不再有伟大的想法，
+and they stop having big ideas
+
+1041
+00:56:38,686 --> 00:56:42,520
+不再盼望大事，也不再期待很多改变。
+and hoping for big things and hoping for lots of change.
+
+1042
+00:56:42,560 --> 00:56:43,360
+尤其是今天。
+And especially today.
+
+1043
+00:56:43,780 --> 00:56:47,284
+我觉得很多年轻人变得非常愤世嫉俗，
+Like I think a lot of young people get really cynical
+
+1044
+00:56:47,284 --> 00:56:50,300
+他们会说，哦，这个世界糟透了。
+and they're like, oh, the world is horrible.
+
+1045
+00:56:50,580 --> 00:56:51,180
+而它确实糟透了。
+And it is.
+
+1046
+00:56:51,260 --> 00:56:57,420
+我也不知道为什么它在很多方面如此疯狂，但我想现实就是这样。
+And I don't know why it's so insane in so many ways, but I guess this is just the way it is.
+
+1047
+00:56:57,780 --> 00:57:01,600
+他们不再相信自己有能力去推动这种改变。
+They lose faith that they have an ability to enable that change.
+
+1048
+00:57:01,920 --> 00:57:08,332
+我真的认为，AI 的一个承诺——尤其是像 Muse 这样的产品，
+And I genuinely think one of the promises of AI—and especially something like Muse,
+
+1049
+00:57:08,332 --> 00:57:12,545
+把 AI 交给世界上每一个人——
+where you give AI to every single person in the world—is
+
+1050
+00:57:12,545 --> 00:57:14,561
+就是这种情况不再发生：
+that this doesn't happen:
+
+1051
+00:57:14,561 --> 00:57:21,980
+人们可以拥有像小时候那样宏大的想法、梦想、愿望和目标。
+that people can have big ideas and big dreams and wants and goals that they can have as little kids.
+
+1052
+00:57:21,980 --> 00:57:22,880
+他们可以。
+They can.
+
+1053
+00:57:22,880 --> 00:57:23,941
+在青少年时期拥有它们，
+Have them when they're teenagers,
+
+1054
+00:57:23,941 --> 00:57:25,440
+并能在成年后一直保持。
+and they can keep having them through adulthood.
+
+1055
+00:57:25,680 --> 00:57:33,440
+而且，一个超级智能的 AI 伙伴会在那里帮助他们把这一切变成现实。
+And that, you know, a super-intelligent AI sidekick is there to help them just make all of that happen.
+
+1056
+00:57:33,840 --> 00:57:35,931
+这可以涵盖一切，
+And that can be everything from,
+
+1057
+00:57:35,931 --> 00:57:38,100
+从宏大的愿望和梦想，
+like, big wants and big dreams to,
+
+1058
+00:57:38,100 --> 00:57:41,586
+到一些小小的愿望，比如，嘿，
+like, small wants, like, hey, I just want to spend more
+
+1059
+00:57:41,586 --> 00:57:45,847
+我只想多陪陪孩子，或者只想多陪陪父母，
+time with my kids, or I just want to spend more time with my parents,
+
+1060
+00:57:45,847 --> 00:57:49,100
+或者只想吃得更健康。嗯，所有的这些。
+or I just want to, like, eat healthier. Um, all the.
+
+1061
+00:57:49,100 --> 00:57:56,260
+一直到，嘿，我有一个疯狂的想法，想开一家博物馆。
+Way up to, hey, I have this, like, crazy idea for, um, like, a museum that I want to start.
+
+1062
+00:57:56,300 --> 00:57:59,380
+比如，我的伴侣真的很想建一座冰主题博物馆。
+Like, my partner really wants to make a museum of ice.
+
+1063
+00:57:59,900 --> 00:58:01,180
+我觉得这真的很好笑。
+I think it's, like, hilarious.
+
+1064
+00:58:01,300 --> 00:58:03,260
+但是，嗯，冰很疯狂。
+But, um, ice is crazy.
+
+1065
+00:58:03,420 --> 00:58:07,780
+关于“冷”的演变，以及我们如何让东西保持低温，有一个非常精彩的故事。
+There's a whole amazing story about the evolution of cold, of how we keep things cold.
+
+1066
+00:58:07,940 --> 00:58:08,820
+对，从冰开始。
+Yeah, starts with ice.
+
+1067
+00:58:08,940 --> 00:58:09,580
+那真的挺酷的。
+That's pretty cool.
+
+1068
+00:58:09,780 --> 00:58:10,700
+是啊，就在博物馆里。
+Yeah, it's at the museum.
+
+1069
+00:58:11,460 --> 00:58:11,900
+完全正确。
+Exactly.
+
+1070
+00:58:12,060 --> 00:58:12,340
+而且。
+And.
+
+1071
+00:58:12,500 --> 00:58:15,479
+人们有这些想法，然后就是做不到，
+And people have these ideas, and then they just can't,
+
+1072
+00:58:15,479 --> 00:58:18,060
+你明白吧。从某些方面来说，年轻人是对的。
+you know. In some ways, young people are right.
+
+1073
+00:58:18,100 --> 00:58:21,528
+今天的世界就像一座迷宫，
+Like, the world today is just kind of a maze of, like,
+
+1074
+00:58:21,528 --> 00:58:25,833
+到处是路障、问题、挑战和各种事务性琐事，
+roadblocks and issues and challenges and logistical, you know,
+
+1075
+00:58:25,833 --> 00:58:29,500
+挡在你实现这些想法的路上。
+things that get in your way to make those things happen.
+
+1076
+00:58:29,700 --> 00:58:33,840
+而今天，我已经微微看到 Muse 在让这个问题变好。
+And in a small way today, I'm seeing Muse make this problem better.
+
+1077
+00:58:33,960 --> 00:58:37,749
+我看到人们用它来节省时间、省钱，
+Like, I'm seeing people using it to save time, save money,
+
+1078
+00:58:37,749 --> 00:58:40,275
+把那些琐碎的小事从他们的待办清单里拿掉，
+take the little stuff off their plate,
+
+1079
+00:58:40,275 --> 00:58:44,380
+给他们越来越多的自主行动力、越来越多的自由，
+and just give them more and more agency, more and more freedom,
+
+1080
+00:58:44,380 --> 00:58:47,538
+以及越来越多的能力去把时间花在自己想做的事情上。
+more and more of an ability to spend their time on
+
+1081
+00:58:47,538 --> 00:58:51,090
+而且我认为其中一个承诺。
+things they want to do. And I think one of the promises.
+
+1082
+00:58:51,250 --> 00:58:54,587
+AI 越来越好——不仅变得更聪明，
+Of AI that gets better and better and better—gets not
+
+1083
+00:58:54,587 --> 00:58:58,379
+而且更对齐、更值得信赖——的承诺之一就是，
+only smarter but also more aligned and more trustworthy—is
+
+1084
+00:58:58,379 --> 00:59:01,185
+你可以给它越来越大的想法。
+that you can give it bigger and bigger ideas,
+
+1085
+00:59:01,185 --> 00:59:04,370
+你可以说，嘿，我想开一座冰主题博物馆。
+and you can say, hey, I want to start a museum of ice.
+
+1086
+00:59:04,850 --> 00:59:07,648
+比如，告诉它怎么着手做这件事，它会告诉你：
+Like, tell me how to go about doing this, and it'll tell you,
+
+1087
+00:59:07,648 --> 00:59:10,503
+这些是你可以租的建筑，这些是你可以联系融资的人，
+these are the buildings you can lease, and this is who you can
+
+1088
+00:59:10,503 --> 00:59:13,530
+他们可能对冰很感兴趣。还有……
+contact for funding, who might be passionate about ice. And...
+
+1089
+00:59:13,850 --> 00:59:16,808
+嗯，这是你应该如何思考策展你的展览，
+Um, this is like how you should think about curating your
+
+1090
+00:59:16,808 --> 00:59:19,640
+以及它可能会是什么样子。
+exhibit, and, you know, uh, what that might look like.
+
+1091
+00:59:19,680 --> 00:59:26,247
+而且我认为，对于像你或我这样经历过这个过程——从拥有宏大想法，
+And I think for some people like you or me, who have experienced this, this like journey of
+
+1092
+00:59:26,247 --> 00:59:33,080
+到穿过一堆疯狂迷局去将它实现——的人来说。
+having big ideas and then like going through all the crazy maze of things to make that happen.
+
+1093
+00:59:33,760 --> 00:59:36,990
+这真的很神奇，也很特别。
+It is like really magical and it's really special.
+
+1094
+00:59:37,110 --> 00:59:42,724
+而且我觉得，那些拥有梦想并实现梦想的人的故事，
+And I think it's something that, um, you know, I think human stories of people who have a dream
+
+1095
+00:59:42,724 --> 00:59:48,630
+是我能想象到的最美好的事情之一。
+and then accomplish those are some of just the most beautiful things that I can possibly imagine.
+
+1096
+00:59:49,190 --> 00:59:55,630
+我真的认为，有了 AI，再加上每个人身边都有一个小小的 Muse 小助手，就……
+And I truly think with AI and like everyone with a little Muse sidekick, like...
+
+1097
+00:59:56,550 --> 00:59:58,366
+更多人就能体验到这一点。
+More people can experience this. My hope is
+
+1098
+00:59:58,366 --> 01:00:00,030
+我希望每个人，真的，所有人……
+that everyone, literally, like all...
+
+1099
+01:00:00,080 --> 01:00:01,988
+世界上 80 亿人都能体验这种感受，
+8 billion people in the world experience
+
+1100
+01:00:01,988 --> 01:00:03,560
+并且有能力去做这件事。
+that and have the ability to do it.
+
+1101
+01:00:04,160 --> 01:00:08,800
+那会是一个特别美好的世界。
+And that is just like a very special world to live in.
+
+1102
+01:00:08,800 --> 01:00:11,297
+我认为如果我们能做到这一点，
+I think if we can make that happen, I think more
+
+1103
+01:00:11,297 --> 01:00:13,663
+就会有更多人从生活中得到他们想要的，
+people will be able to get what they want out
+
+1104
+01:00:13,663 --> 01:00:16,160
+过上更充实的生活。
+of their lives and live more fulfilled lives.
+
+1105
+01:00:16,280 --> 01:00:18,600
+那会很神奇、很令人兴奋。
+And it'll be magical and exciting.
+
+1106
+01:00:18,840 --> 01:00:22,600
+我真心认为，这就是 AI 对人们的承诺所在。
+And that's what I really think the promise is for people.
+
+1107
+01:00:22,760 --> 01:00:30,440
+我认为让人困惑的一点是，AI 领域的人经常说：“哦，AI 会治愈癌症。”
+And I think part of what is so confusing is that, um, you know, oftentimes people in AI, we say, oh, AI will cure cancer.
+
+1108
+01:00:31,000 --> 01:00:35,430
+我觉得每个人都希望癌症被治愈，
+And I think everyone wants cancer cured, but every individual
+
+1109
+01:00:35,430 --> 01:00:39,775
+但每个人也都有自己极度渴望的东西，
+person has something they want intensely, and they want even
+
+1110
+01:00:39,775 --> 01:00:44,120
+甚至可以说，比治愈癌症更想要。
+more than, you know, ironically speaking, a cure for cancer.
+
+1111
+01:00:44,500 --> 01:00:50,285
+所以我认为，个人超级智能的魔力之一，
+Um, and so I think that's part of the magic is that we talk about this thing, personal superintelligence,
+
+1112
+01:00:50,285 --> 01:00:54,540
+就是它能帮助你去追求你想要的和梦想中的事。
+like it will help you at the thing that you want and the thing that you dream of.
+
+1113
+01:00:54,580 --> 01:00:56,394
+而这会随着你的人生而变化，
+And that will change over your life and you will
+
+1114
+01:00:56,394 --> 01:00:58,300
+你将能实现许多梦想和愿望。
+be able to accomplish many dreams and many wants.
+
+1115
+01:00:58,700 --> 01:01:01,860
+我认为这就是 AI 的承诺。
+And I think that's what's the promise of AI.
+
+1116
+01:01:02,780 --> 01:01:06,544
+这个梦想里包含一个信念，
+That dream has within it a belief, I think, which is
+
+1117
+01:01:06,544 --> 01:01:10,576
+我认为那就是：人们确实拥有远大的梦想，
+that people do actually have big dreams and that those
+
+1118
+01:01:10,576 --> 01:01:14,609
+而这些梦想往往也会帮助他人。
+big dreams will more often than not help other people.
+
+1119
+01:01:15,209 --> 01:01:18,210
+所以当我们听到有人说 AI 会治愈癌症时，
+So when we hear people say AI will cure cancer,
+
+1120
+01:01:18,210 --> 01:01:21,210
+有时他们的意思可能是你给 AI 一个提示，
+sometimes perhaps they're talking about you
+
+1121
+01:01:21,210 --> 01:01:24,369
+它就能想出治愈癌症的方法。
+prompt an AI and it thinks up the cure for cancer.
+
+1122
+01:01:24,449 --> 01:01:28,489
+但更有可能的是，AI 赋能的是每一个个体——
+But much, much more likely it's that the AI facilitates the individual.
+
+1123
+01:01:29,290 --> 01:01:31,918
+也就是数百万癌症医生的雄心，
+Ambitions of millions of cancer doctors and together
+
+1124
+01:01:31,918 --> 01:01:34,370
+然后我们共同加快治愈癌症的进程。
+we accelerate the progress toward curing cancer.
+
+1125
+01:01:34,610 --> 01:01:41,970
+这让我想到，当我听到人们谈论 Muse，说：“人们到底为什么需要 AI 助手？”
+It's making me think, you know, when I hear people talk about Muse and say, like, what do people need an AI assistant for?
+
+1126
+01:01:42,250 --> 01:01:44,570
+难道人们就没有那些梦想吗？
+People don't have those dreams?
+
+1127
+01:01:44,730 --> 01:01:45,450
+真的吗？
+Like, what?
+
+1128
+01:01:45,450 --> 01:01:47,768
+这是对人的一种多么狭隘的看法，
+What a limited view of people, of other people,
+
+1129
+01:01:47,768 --> 01:01:49,610
+对他人。可我不了解那些梦想是什么。
+you know? I don't know what those are.
+
+1130
+01:01:49,730 --> 01:01:53,010
+而且不该由你或我来评判。
+And it's not up to you or me to say.
+
+1131
+01:01:54,140 --> 01:01:56,602
+哪个梦想比另一个更有价值，
+Which dream is more worthy than the other,
+
+1132
+01:01:56,602 --> 01:01:58,220
+正如你所说，无论大小。
+to your point, big or small?
+
+1133
+01:01:58,620 --> 01:02:04,549
+我对人的看法是，他们总会在某个时刻产生灵感，
+My view on people is like they will have moments of inspiration where at some point
+
+1134
+01:02:04,549 --> 01:02:07,165
+突然意识到：“等等，
+or another they will realize, like,
+
+1135
+01:02:07,165 --> 01:02:09,780
+我真的很想做这件事。”
+wait, I really want to do this thing.
+
+1136
+01:02:09,980 --> 01:02:12,411
+我希望每个有这种想法的人，
+I want everyone who has one of these ideas
+
+1137
+01:02:12,411 --> 01:02:15,557
+都能告诉他们的 Muse：“嘿，我有个大想法。”
+to be able to tell their Muse, hey, I have this big idea
+
+1138
+01:02:15,557 --> 01:02:18,918
+然后 Muse 会在幕后悄悄
+and their Muse will just like secretly behind the scenes
+
+1139
+01:02:18,918 --> 01:02:21,420
+帮他们想办法实现。
+help them figure out how to make it happen.
+
+1140
+01:02:21,860 --> 01:02:27,380
+我觉得这也像是在助燃火焰，可以这么说。
+And I think part of this is also fanning the flame, so to speak.
+
+1141
+01:02:27,980 --> 01:02:30,522
+我觉得对很多人来说，他们会有一个小愿望，
+Um, I think for a lot of people, they will have
+
+1142
+01:02:30,522 --> 01:02:33,682
+然后它实现了；
+like a small want and then it'll happen and then they'll
+
+1143
+01:02:33,682 --> 01:02:36,980
+接着他们会敢再梦想大一点，然后又真的实现了。
+dream a little bit bigger and then it'll actually happen.
+
+1144
+01:02:37,060 --> 01:02:39,140
+然后他们会再梦想大一点，它又真的实现了。
+And they'll dream a little bit bigger and it'll actually happen.
+
+1145
+01:02:39,380 --> 01:02:45,408
+随着这种情况延续，人们会慢慢意识到 AI 能做得更多，
+And, um, as that goes on, people will sort of realize that AI can be so much more,
+
+1146
+01:02:45,408 --> 01:02:47,634
+Muse 能做得更多，
+that Muse can be so much more,
+
+1147
+01:02:47,634 --> 01:02:49,860
+自己也能做得更多。
+that they can do so much more.
+
+1148
+01:02:49,860 --> 01:02:54,590
+这不会一夜之间发生，而是要……
+This won't happen overnight. This is something that will...
+
+1149
+01:02:54,590 --> 01:02:57,270
+花时间，并且每个人都需要自己去体验。
+Take time and everyone will have to experience on their own.
+
+1150
+01:02:57,270 --> 01:02:59,510
+我真心希望每个人都能体验到这一切。
+And I really hope everyone experiences it, um.
+
+1151
+01:03:00,000 --> 01:03:04,749
+但我认为经过几代人，
+But I think over generations, I think it can be absolutely magical,
+
+1152
+01:03:04,749 --> 01:03:07,293
+这会变得极其神奇。
+you know. I think especially the way
+
+1153
+01:03:07,293 --> 01:03:11,024
+尤其是你在媒体上被反复谈论，
+that you're in the press and talked about and you kind
+
+1154
+01:03:11,024 --> 01:03:14,840
+渐渐变成自己的一种夸张化形象。
+of naturally become sort of a caricature of yourself.
+
+1155
+01:03:15,040 --> 01:03:18,247
+世界上流传着一个关于你的“角色形象”，
+There's like the character of you out there in the world,
+
+1156
+01:03:18,247 --> 01:03:20,703
+这反而帮我更了解你，
+and this has helped me get to know you better
+
+1157
+01:03:20,703 --> 01:03:24,319
+因为你的一些回答里似乎有一个共同主题：
+because there seems to be a common theme in some of your answers,
+
+1158
+01:03:24,319 --> 01:03:26,638
+Muse 是一种帮助他人实现梦想的方式，
+which is Muse is a way to facilitate other
+
+1159
+01:03:26,638 --> 01:03:29,640
+因为你相信人。
+people's dreams because you have a belief in people.
+
+1160
+01:03:29,680 --> 01:03:35,080
+相信他们的善良、他们改善世界的能力，以及他们想法的价值。
+And their goodness and their ability to improve the world and just the sort of value of their ideas.
+
+1161
+01:03:35,280 --> 01:03:39,197
+看起来你在某种程度上引导 Muse，
+And it seems like you are directing Muse in some ways, but you're
+
+1162
+01:03:39,197 --> 01:03:43,040
+但你并没有说它是为了编程或某个特定任务。
+not saying this is for coding or this is for some specific task.
+
+1163
+01:03:43,200 --> 01:03:44,640
+你是在观察和促进。
+You're watching and facilitating.
+
+1164
+01:03:44,840 --> 01:03:49,057
+当我问你自己怎么看时，你的回答是：
+And when I asked you where you fall on this, your answer was,
+
+1165
+01:03:49,057 --> 01:03:52,930
+我更感兴趣的是群体的集体智慧。
+I'm interested in the collective wisdom of the group.
+
+1166
+01:03:53,090 --> 01:03:57,207
+我更感兴趣的是促进或参与一场对话，
+I'm interested in facilitating or being part of a conversation between
+
+1167
+01:03:57,207 --> 01:04:01,050
+让世界各地许多聪明人一起交流。
+other people that we have a lot of smart people all around the world.
+
+1168
+01:04:01,490 --> 01:04:08,250
+而且我觉得，明确说“就该这样具体监管”并没有多大用处。
+And I don't feel like it would be that useful to say, here's exactly my opinion on where exactly this should be regulated.
+
+1169
+01:04:08,450 --> 01:04:14,900
+我认为最好的结果，来自许多带着不同想法和需求的人共同对话。
+I see the best outcome as coming from a group conversation of many different people with their many thoughts and wants.
+
+1170
+01:04:15,300 --> 01:04:16,660
+你同意我刚才说的吗？
+Do you agree with what I've just said?
+
+1171
+01:04:17,300 --> 01:04:20,816
+同意。我认为关于 AI 有太多重大问题了，
+Yeah, I think because there are so many big questions about AI and it is
+
+1172
+01:04:20,816 --> 01:04:23,362
+每个人都有自己的观点，
+like something that everyone has a point of view on
+
+1173
+01:04:23,362 --> 01:04:25,060
+也应该有自己的观点。
+and should have a point of view on.
+
+1174
+01:04:25,420 --> 01:04:28,481
+而且我觉得，我们之所以思考民主制度、
+And, um, part of I think what's made us think about
+
+1175
+01:04:28,481 --> 01:04:32,662
+民主国家和广义上的民主，
+democratic institutions and democratic countries and democracy
+
+1176
+01:04:32,662 --> 01:04:36,320
+部分原因正是每个人的想法都很重要。
+broadly speaking is that it matters what everyone thinks.
+
+1177
+01:04:36,360 --> 01:04:42,801
+我们必须想办法把大家复杂混乱的想法汇聚起来，
+And we have to figure out how we take this complex jumbled mess of what everyone thinks
+
+1178
+01:04:42,801 --> 01:04:46,520
+推动正确的事情发生。
+and channel that into the right thing happening.
+
+1179
+01:04:47,080 --> 01:04:51,034
+另外，我认为 AI 受到阻碍、
+And another thing is like part of what has held AI back
+
+1180
+01:04:51,034 --> 01:04:53,280
+以及 AI 的部分问题，
+and I think part of the problem
+
+1181
+01:04:53,280 --> 01:04:59,840
+在于它给人的感觉像是构建 AI 的人在居高临下地对别人说话。
+of AI is how it almost feels like the people building AI are talking down to other people.
+
+1182
+01:05:00,040 --> 01:05:04,760
+就像在说：“嘿，我正在打造你见过的最聪明的东西。”
+It's like, hey, I am building the smartest thing you've ever known.
+
+1183
+01:05:05,360 --> 01:05:06,866
+“它会比你聪明得多，
+It's gonna be way smarter than you,
+
+1184
+01:05:06,866 --> 01:05:08,840
+而且我完全知道我们要拿它做什么。”
+and I know exactly what we're gonna do with it.
+
+1185
+01:05:09,240 --> 01:05:12,440
+所以人们自然会有这种反应：“等等，什么？”
+And I think rightfully, people are like, wait, what?
+
+1186
+01:05:12,800 --> 01:05:16,600
+比如：“你刚才说的这些跟我有什么关系？”
+Like, what does anything you just said have to do with me?
+
+1187
+01:05:16,680 --> 01:05:19,920
+“这到底对我有什么好处？”
+And, like, how is this even good for me?
+
+1188
+01:05:20,240 --> 01:05:21,720
+然后你会说：“哦，它会治愈癌症。”
+And then you're like, oh, it'll cure cancer.
+
+1189
+01:05:21,920 --> 01:05:24,200
+“好吧，但还有什么呢？”
+Like, okay, but what else?
+
+1190
+01:05:24,320 --> 01:05:26,520
+比如：“我能相信你吗？”还是……对，对。
+Like, do I believe you or, yeah, yeah.
+
+1191
+01:05:26,680 --> 01:05:29,989
+所以我认为，尤其是考虑到我们正处在当下这个时刻，
+And so I think that especially given the moment that we're in
+
+1192
+01:05:29,989 --> 01:05:33,562
+也正如你所说，人们对 AI 有那么多恐惧、
+and to your point, like how much fear there is about AI and how much
+
+1193
+01:05:33,562 --> 01:05:37,599
+那么多不确定性，一切说法又那么令人困惑。
+uncertainty there is and how confusing everything that's being said is.
+
+1194
+01:05:37,799 --> 01:05:40,087
+我认为最重要的事情首先是，
+Um, I think the most important things are like,
+
+1195
+01:05:40,087 --> 01:05:42,199
+让每个人都体验它。
+first, let's have everyone experience it.
+
+1196
+01:05:42,199 --> 01:05:46,487
+让大家真正理解这股热潮
+Like, let's have everyone actually, like, understand the hype,
+
+1197
+01:05:46,487 --> 01:05:50,616
+——换个更贴切的说法——感受到 AI 智能体能为你做什么、
+for lack of a better term, like feel what AI agents can do for you
+
+1198
+01:05:50,616 --> 01:05:52,919
+如何改善你的生活。
+and can do to make your life better.
+
+1199
+01:05:53,519 --> 01:05:57,585
+这会让你获得一种视角：哦，
+And that will give you perspective as to, oh, this is a technology
+
+1200
+01:05:57,585 --> 01:06:01,727
+这是一项确实有风险、而且风险很多的技术，
+that, yeah, it's definitely risky and, and there's tons of risks,
+
+1201
+01:06:01,727 --> 01:06:04,889
+别误会；但它也真的很棒，我很喜欢，
+don't get me wrong, but it also is really great and I
+
+1202
+01:06:04,889 --> 01:06:08,880
+我希望至少某种形式能继续下去。
+like it and I want to make sure at least some form of it continues.
+
+1203
+01:06:08,960 --> 01:06:11,565
+而我也能继续使用它，
+And I can continue using it all the way to,
+
+1204
+01:06:11,565 --> 01:06:15,012
+一路延伸到那些大问题和大对话：
+you know, these big questions and these big dialogues
+
+1205
+01:06:15,012 --> 01:06:20,680
+我们如何让所有人达成共识，找到前进的道路？
+like how do we just get everyone to a place where we all agree and we can find a path forward?
+
+1206
+01:06:20,800 --> 01:06:25,770
+我认为我足够谦逊，知道这些人——你知道——都是大人物、重要人物。
+And I think I have enough humility that these guys are, you know, they're big, important people.
+
+1207
+01:06:25,850 --> 01:06:28,673
+怎么说呢，考虑到他们已经表达了观点，
+Like, I don't know if I have much to add, you know,
+
+1208
+01:06:28,673 --> 01:06:31,144
+我不确定自己有多少可补充的，
+given their points of view, but I just want
+
+1209
+01:06:31,144 --> 01:06:36,650
+但我只想确保我们能促进——“促进”真的是我脑子里不断冒出来的词。
+to make sure that we facilitate—'facilitate' is really the word that keeps coming to my mind.
+
+1210
+01:06:36,730 --> 01:06:41,089
+我们如何快速行动，让所有人共同形成有依据的判断，
+Like how do we move quickly to all collectively come to informed
+
+1211
+01:06:41,089 --> 01:06:45,530
+然后进入一个能达成共识的流程？
+opinions, and then come to a process where we agree on something?
+
+1212
+01:06:46,800 --> 01:06:52,658
+这是我在每期 HUGE* Conversations 结尾都会问嘉宾的问题：
+This is the question I ask everyone at the end of these HUGE* Conversations,
+
+1213
+01:06:52,658 --> 01:06:58,423
+我会想到自己离世之后，
+which is when I think about after I'm dead and after people say that she was a
+
+1214
+01:06:58,423 --> 01:07:04,560
+人们会说她是个很好的家人，说她爱她的丈夫，也爱她的朋友们。
+really great family member and she loved her husband and she loved her friends.
+
+1215
+01:07:05,620 --> 01:07:08,020
+我会希望他们谈到这档节目的使命。
+I would want them to talk about the mission of this show.
+
+1216
+01:07:08,340 --> 01:07:14,511
+我希望他们谈到，我如何尽力帮助人们看到未来可能走向美好的路径，
+I would want them to talk about how I tried my best to help people see ways the future could
+
+1217
+01:07:14,511 --> 01:07:21,020
+因为我真的相信他人及其视角——看起来你也是如此。
+go well, because I really believe, as it seems you do, in other people and their perspective.
+
+1218
+01:07:21,060 --> 01:07:23,486
+而当人们看到自己相信的未来愿景时，
+And when they see a vision of a future they believe in,
+
+1219
+01:07:23,486 --> 01:07:25,360
+他们会真的努力去帮助实现它。
+they're gonna actually try and help make
+
+1220
+01:07:25,360 --> 01:07:27,620
+这就是我投入时间所做事情的意义。
+it happen. Like, that's the point of what I spend.
+
+1221
+01:07:28,450 --> 01:07:29,970
+我全部工作时间都用来做这件事。
+All of my working hours doing.
+
+1222
+01:07:30,920 --> 01:07:32,760
+你显然才刚起步。
+You're obviously just starting out.
+
+1223
+01:07:32,960 --> 01:07:34,760
+你已经产生了如此巨大的影响。
+You've already had this huge impact.
+
+1224
+01:07:35,040 --> 01:07:36,240
+你还有很长的路要走。
+You have a lot farther to go.
+
+1225
+01:07:36,240 --> 01:07:42,320
+但我好奇：当你思考自己离开后希望如何被记住时，你希望人们说些什么？
+But I'm curious when you think about how you want to be remembered after you're gone, what do you want people to say?
+
+1226
+01:07:46,760 --> 01:07:50,000
+首先，这真是一个很美好、很美好的想法和概念。
+First of all, what a nice, what a nice idea and concept.
+
+1227
+01:07:51,520 --> 01:08:05,560
+太好了。谢谢你来做这期节目。谢谢。
+Beautiful. Thanks for doing this. Thank you.

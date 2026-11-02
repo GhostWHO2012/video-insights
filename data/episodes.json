@@ -1666,6 +1666,60 @@
     "subtitle_file": "翻译好的.srt"
   },
   {
+    "title": "自 ChatGPT 以来规模最大的 AI 发布？Muse 到底能做什么｜Alexandr Wang",
+    "folder_title": "自 ChatGPT 以来最重磅的发布（Muse）",
+    "original_title": "The Biggest Launch Since ChatGPT (Muse)",
+    "youtube_url": "https://www.youtube.com/watch?v=1LRvMRC_pfY",
+    "source_published_at": "2026-10-07",
+    "channel": "Cleo Abram",
+    "duration": "01:08:21",
+    "speakers": [
+      "Alexandr Wang",
+      "Cleo Abram"
+    ],
+    "slug": "undated-075_biggest-launch-muse-alexandr-wang",
+    "path": "videos/undated-075_biggest-launch-muse-alexandr-wang/",
+    "cover": "cover.jpeg",
+    "subtitle_file": "The Biggest Launch Since ChatGPT (Muse).修复版.srt",
+    "subtitle_count": 1,
+    "outline_count": 5,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png",
+      "outline-05.png"
+    ]
+  },
+  {
+    "title": "打造 Muse、与扎克伯格共事，以及 AI 的未来｜Alexandr Wang",
+    "folder_title": "打造 Muse 的幕后、与扎克伯格共事以及 AI 的未来",
+    "original_title": "Building Muse, Working with Mark Zuckerberg & The Future of AI | Alexandr Wang, Meta",
+    "youtube_url": "https://www.youtube.com/watch?v=S6l3aRsecuE",
+    "source_published_at": "2026-10-11",
+    "channel": "David Senra",
+    "duration": "01:12:17",
+    "speakers": [
+      "Alexandr Wang",
+      "David Senra"
+    ],
+    "slug": "undated-074_building-muse-alexandr-wang",
+    "path": "videos/undated-074_building-muse-alexandr-wang/",
+    "cover": "cover.jpeg",
+    "subtitle_file": "Building Muse, Working with Mark Zuckerberg & The Future of AI.修复版.srt",
+    "subtitle_count": 1,
+    "outline_count": 7,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png",
+      "outline-05.png",
+      "outline-06.png",
+      "outline-07.png"
+    ]
+  },
+  {
     "title": "现在是 AI 创业最好时机",
     "bilibili_title": "现在是 AI 创业最好时机｜Alexandr Wang",
     "original_title": "Alexandr Wang: “This is a Once-in-a-Civilization Opportunity”",

@@ -1,0 +1,6739 @@
+1
+00:00:02,930 --> 00:00:04,050
+跟我说说 Muse（Meta 的个人 AI 智能体）的历史。
+Tell me the history of Muse.
+
+2
+00:00:04,850 --> 00:00:10,730
+首先要说的大概是我们创立 Meta Superintelligence Labs（Meta 超级智能实验室，简称 MSL）时的愿景。
+The first thing to start with is probably like what our vision was when we started Meta Superintelligence Labs
+
+3
+00:00:10,730 --> 00:00:11,944
+我们创立它的时候，
+and when we started it,
+
+4
+00:00:11,944 --> 00:00:13,925
+Mark Zuckerberg（马克·扎克伯格）发布了一份备忘录，
+Mark Zuckerberg published this memo
+
+5
+00:00:13,925 --> 00:00:17,952
+我和 Nat Friedman（Muse 产品方向的重要推动者）以及一群与他密切合作的人共同参与，
+that myself, Nat Friedman, and a bunch of others worked closely with him on,
+
+6
+00:00:17,952 --> 00:00:21,850
+名为 Personal Superintelligence（“个人超级智能”）。整个想法就是，如何。
+called Personal Superintelligence. And the whole idea was like, how do.
+
+7
+00:00:21,850 --> 00:00:23,130
+我们让
+We make.
+
+8
+00:00:24,630 --> 00:00:24,750
+AI。
+AI.
+
+9
+00:00:24,950 --> 00:00:29,310
+我们如何构建真正让所有人生活更美好的强大 AI？
+How do we build powerful AI that actually makes all of our lives better?
+
+10
+00:00:29,390 --> 00:00:33,750
+比如，我们如何构建出真正能提升人类体验的东西，从广义上来说？
+Like, how do we build something that actually, like, lifts the human experience, broadly speaking?
+
+11
+00:00:33,910 --> 00:00:37,578
+你知道，在那份备忘录里，我们谈到了很多想法，
+You know, in that memo, we spoke to a bunch of the ideas and we
+
+12
+00:00:37,578 --> 00:00:42,070
+而且我觉得我们基本上已经暗示了 Muse 最终会成为什么样子。
+basically alluded to, I think, a lot of what Muse has ultimately become.
+
+13
+00:00:42,150 --> 00:00:45,810
+但当时我们只是非常非常早期地在指向它。
+But we were gesturing at it like, very, very early.
+
+14
+00:00:46,010 --> 00:00:48,689
+那是在 2025 年 6 月，
+Like, this was in, you know, June 2025, um,
+
+15
+00:00:48,689 --> 00:00:52,364
+那时候智能体还没有真正意义上出现，
+before agents had really happened in any meaningful way,
+
+16
+00:00:52,364 --> 00:00:57,570
+2025 年夏天的 AI 还处在完全不同的阶段。
+you know, in the summer of 2025, AI was just, you know, in a totally different spot.
+
+17
+00:00:57,650 --> 00:00:59,410
+但那就是我们想要构建的方向。
+But that's what we wanted to build towards.
+
+18
+00:00:59,530 --> 00:01:00,930
+这就是 MSL 的使命。
+That was the mission of MSL.
+
+19
+00:01:01,050 --> 00:01:03,810
+那也真的是我们想把一切带往的方向。
+And that was really where we wanted to take everything.
+
+20
+00:01:04,379 --> 00:01:08,946
+然后我们就开始着手构建模型，因为你知道，
+Then we kind of just got to work building models because, you know, the end-to-end
+
+21
+00:01:08,946 --> 00:01:13,379
+开发任何这些前沿模型的端到端过程都需要很多很多个月。
+process of developing any of these frontier models is many, many, many months.
+
+22
+00:01:13,859 --> 00:01:14,973
+你得走完整个过程，
+Like, you have to go through,
+
+23
+00:01:14,973 --> 00:01:16,366
+必须构建完整的技术栈，
+you have to build your entire stack,
+
+24
+00:01:16,366 --> 00:01:17,666
+必须制作数据集，
+you have to produce the datasets,
+
+25
+00:01:17,666 --> 00:01:19,337
+你得预训练模型，
+you have to, you know, pre-train the model,
+
+26
+00:01:19,337 --> 00:01:21,148
+然后做后训练，
+then you have to do post-training on the model,
+
+27
+00:01:21,148 --> 00:01:22,819
+还得为此搭建一整套技术栈。
+and you have to build a whole stack for that.
+
+28
+00:01:22,819 --> 00:01:25,579
+这是一条非常漫长的端到端流程。
+Like, it's a very lengthy end-to-end process.
+
+29
+00:01:26,100 --> 00:01:32,105
+我的意思是，今年年初这整条“生产线”上，
+I mean, kind of this whole production line at the start of this year, you know,
+
+30
+00:01:32,105 --> 00:01:35,952
+Opus 4.5（Claude 模型版本）显然真的让很多人，
+Opus 4.5, obviously, really caused many people,
+
+31
+00:01:35,952 --> 00:01:41,301
+包括我们，开始看到智能体的未来可能是什么，
+including us, to sort of see what the future of agents could be or was,
+
+32
+00:01:41,301 --> 00:01:46,180
+也真正把智能体的潜力推到了前台。
+and really brought the potential of agents to the foreground.
+
+33
+00:01:46,660 --> 00:01:49,740
+而 OpenClaw（个人智能体项目）也在今年年初出现了。
+And OpenClaw was happening at the start of the year.
+
+34
+00:01:50,300 --> 00:01:54,313
+Nat Friedman——你知道，我与他密切合作过——
+Nat Friedman, who, you know, I worked closely with,
+
+35
+00:01:54,313 --> 00:02:00,380
+我觉得他是 MSL 内部第一个使用并尝试 OpenClaw 的人。
+was I think the first person within MSL to work with OpenClaw and try OpenClaw.
+
+36
+00:02:01,020 --> 00:02:08,100
+他的经历我会形容为介于恐惧和狂喜之间。
+He had an experience I would describe as somewhere between terrifying and euphoric.
+
+37
+00:02:08,180 --> 00:02:13,300
+我觉得他真的全身心投入了。
+Like, I think he really, like, went all in.
+
+38
+00:02:13,380 --> 00:02:14,340
+他完全信任它。
+He trusted entirely.
+
+39
+00:02:14,780 --> 00:02:16,986
+你知道，他讲过其中一些故事，
+You know, he's told some of these stories,
+
+40
+00:02:16,986 --> 00:02:21,082
+比如在一次 Stripe Sessions 采访里，
+uh, he had like a Stripe Sessions interview where he talked about some of this,
+
+41
+00:02:21,082 --> 00:02:24,800
+他说自己告诉 OpenClaw 想多喝水，
+where, you know, he told his OpenClaw that he wanted to drink more water
+
+42
+00:02:24,800 --> 00:02:25,700
+然后。
+and then.
+
+43
+00:02:26,180 --> 00:02:29,062
+他的 OpenClaw 会通过监控画面看他，
+You know, his OpenClaw would like watch him in security footage
+
+44
+00:02:29,062 --> 00:02:31,780
+确保他在喝水，然后夸他做得好。
+to make sure that he was drinking water and tell him good job.
+
+45
+00:02:31,820 --> 00:02:34,420
+他还有很多很多像这样疯狂的故事。
+And he had like many, many crazy stories like this.
+
+46
+00:02:34,800 --> 00:02:37,096
+这也会让你意识到，
+And it also makes you realize, like, oh, there's
+
+47
+00:02:37,096 --> 00:02:40,080
+这里正在发生的事情真的非常神奇。
+something quite, quite magical about what's happening here.
+
+48
+00:02:40,240 --> 00:02:42,312
+我记得 Nat 跟我说过一件事，
+And I remember one of the things that Nat told me,
+
+49
+00:02:42,312 --> 00:02:44,384
+也是我印象最深的事情之一，
+and this is one of the things I remember the most,
+
+50
+00:02:44,384 --> 00:02:46,560
+他说：我觉得这里真的有东西。
+is he said, I think there really is something here.
+
+51
+00:02:47,160 --> 00:02:49,413
+而且我觉得，作为早期采用者，
+And I don't know, like, early adopter
+
+52
+00:02:49,413 --> 00:02:52,103
+Nat Friedman 是个很好的风向标，
+Nat Friedman is like a pretty good indicator
+
+53
+00:02:52,103 --> 00:02:56,028
+因为他当年是 Stripe 最早的客户之一，
+because he was one of the first customers of Stripe back in the day
+
+54
+00:02:56,028 --> 00:03:00,680
+并且在很多开源开发者产品上也非常早地参与。而且他还。
+and then was really early on a lot of open source developer stuff. And he also.
+
+55
+00:03:01,160 --> 00:03:03,800
+你知道，参与创造了 GitHub Copilot 和很多其他东西。
+You know, helped create GitHub Copilot and many other things.
+
+56
+00:03:03,880 --> 00:03:08,149
+所以这是一个很明确的信号：好吧，
+So that was like a clear signal, like, okay, there's clearly something pretty
+
+57
+00:03:08,149 --> 00:03:12,156
+个人智能体总体上确实有一些很神奇的地方，
+magical about personal agents generally speaking, but you know when you
+
+58
+00:03:12,156 --> 00:03:16,360
+但当你真正信任它、把它带进生活时。
+actually kind of trust the personal agent and really bring it into your life.
+
+59
+00:03:16,560 --> 00:03:18,680
+它有能力做非常多的事情。
+It is the ability to do so many things.
+
+60
+00:03:18,800 --> 00:03:22,560
+听完这些疯狂的故事后，我也开始非常深入地使用它。
+And after hearing all of these crazy stories, I started using it very deeply.
+
+61
+00:03:22,880 --> 00:03:24,759
+我觉得有好几周，
+You know, I think for many weeks,
+
+62
+00:03:24,759 --> 00:03:30,255
+我们俩几乎利用所有空闲时间和各自的 OpenClaw 聊天，
+both of us were sort of like every spare moment we would just spend talking to our OpenClaws and,
+
+63
+00:03:30,255 --> 00:03:34,430
+真正沉浸于探索个人智能体可能是什么。
+you know, really immersing ourselves in what personal agents could be.
+
+64
+00:03:34,870 --> 00:03:36,430
+你最初的反应是什么？
+What was your initial reaction?
+
+65
+00:03:36,950 --> 00:03:37,790
+是狂喜还是恐惧？
+Euphoria or terror?
+
+66
+00:03:38,550 --> 00:03:39,230
+当时还不是。
+Not at the time.
+
+67
+00:03:39,270 --> 00:03:47,150
+他做了一个提示词，基本上就是对你进行一次完整的心理分析。
+He had this, um, he had built this prompt to do this, like basically like full psychoanalysis of yourself.
+
+68
+00:03:47,690 --> 00:03:51,290
+会有一轮又一轮深度的心理探查。
+There were like multiple waves of like deep psychological probing.
+
+69
+00:03:51,690 --> 00:03:54,490
+他基本上写好这个提示词，让你在 OpenClaw 里用。
+He basically wrote this prompt for you to use in OpenClaw.
+
+70
+00:03:54,730 --> 00:03:59,181
+我觉得那是我在自己的 OpenClaw 上最早做的事情之一，
+And I think that was like one of the very first things I did with my own OpenClaw, it was maybe
+
+71
+00:03:59,181 --> 00:04:03,810
+可能相当于把三年的心理治疗压缩到了那一个时刻。
+the equivalent of like three years of therapy all, you know, compressed into this one moment.
+
+72
+00:04:04,330 --> 00:04:09,530
+等等，我很好奇，为什么你第一次有机会用 OpenClaw 时，会先做这件事？
+Wait, I'm curious why when you get your first shot at OpenClaw, this is one of the first things you do.
+
+73
+00:04:09,850 --> 00:04:11,727
+我下载、安装好之后，
+You know, I downloaded it, I installed it
+
+74
+00:04:11,727 --> 00:04:13,770
+Nat 就跟我说“哦，你应该试试这个”。
+and then Nat was like, oh, you should do this.
+
+75
+00:04:13,850 --> 00:04:15,090
+我当时就在他旁边。
+I was like, I was like next to him.
+
+76
+00:04:15,130 --> 00:04:17,730
+我就说，好吧，那我就照你说的做。
+I was like, okay, I'll just do the thing you're telling me to do.
+
+77
+00:04:17,810 --> 00:04:21,570
+然后，好吧，然后就经历了那段疯狂体验。
+And then, okay, and then, you know, this crazy experience.
+
+78
+00:04:22,130 --> 00:04:23,490
+不过，多说说那段疯狂体验吧。
+Say more about the crazy experience, though.
+
+79
+00:04:24,050 --> 00:04:26,050
+哦，就是非常强烈。
+Oh, well, it was just like very intense.
+
+80
+00:04:26,130 --> 00:04:29,371
+我的意思是，就像三年心理治疗，
+I mean, it was like, again, it was like three years of therapy
+
+81
+00:04:29,371 --> 00:04:33,389
+因为那是一轮接一轮的深度心理探查，
+because it was just like successive rounds of deep psychological probing
+
+82
+00:04:33,389 --> 00:04:36,630
+因为它掌握了我其他信息，还有。
+because it had other information about me and had, you know.
+
+83
+00:04:36,630 --> 00:04:38,481
+能访问我的邮箱和很多照片，
+Access to my email and access to a bunch of my
+
+84
+00:04:38,481 --> 00:04:40,436
+还能去查找其他信息，
+photos and, like, it could go and look up other
+
+85
+00:04:40,436 --> 00:04:42,390
+并把它们整合在一起。
+information and sort of pull it all together.
+
+86
+00:04:42,430 --> 00:04:44,070
+在那过程中我非常脆弱。
+I was very vulnerable through that process.
+
+87
+00:04:44,710 --> 00:04:45,710
+这是在二月份。
+This was in February.
+
+88
+00:04:46,150 --> 00:04:52,000
+我觉得我们俩都得出了共同的结论：
+Uh, both of us, I think, had come to this joint conclusion that this is clearly,
+
+89
+00:04:52,000 --> 00:04:57,220
+这里显然正在发生一些非常特别的事情。
+you know, there's clearly something really special happening here.
+
+90
+00:04:57,860 --> 00:04:59,860
+当时我们俩都写了备忘录。
+And we both wrote memos at that time.
+
+91
+00:05:00,060 --> 00:05:01,020
+我写了一份备忘录，关于。
+I wrote a memo about.
+
+92
+00:05:01,700 --> 00:05:04,827
+这两份备忘录我们基本上都通过 Meta 董事会递交了上去，
+And both of these we, you know, kind of like sent up through the Meta board
+
+93
+00:05:04,827 --> 00:05:07,380
+因为不管什么原因，那段时间正好是董事会季。
+because, you know, for whatever reason it's board season.
+
+94
+00:05:07,780 --> 00:05:14,961
+我写的备忘录是，我觉得在很多方面这就是最终的消费级产品，
+I wrote a memo about how I felt that in many ways this was like the final consumer product and that the
+
+95
+00:05:14,961 --> 00:05:22,580
+而超级智能体就像，就消费产品而言，在很多方面是一个清晰的终点。
+super agent was something that was, as far as consumer products went, like a clear endpoint in many ways.
+
+96
+00:05:23,020 --> 00:05:27,523
+然后他写了一份，其实写了两份，名字非常难忘：
+And then he wrote one called, he wrote actually two, which had very memorable names,
+
+97
+00:05:27,523 --> 00:05:28,681
+The Claw is the Law（利爪即规则）和
+The Claw is the Law and
+
+98
+00:05:28,681 --> 00:05:29,581
+Trust is a Must（信任必不可少），
+Trust is a Must,
+
+99
+00:05:29,581 --> 00:05:31,060
+它们最终定义了。
+which ultimately defined.
+
+100
+00:05:32,180 --> 00:05:34,900
+很多，很多我们构建这些产品的核心方式。
+A lot of the, a lot of the core of how we built these products.
+
+101
+00:05:35,420 --> 00:05:37,460
+所以我们在二月份得出了这个结论。
+So we came to this conclusion, this was in February.
+
+102
+00:05:37,620 --> 00:05:39,100
+这里有些非常重要的东西。
+There was something very important here.
+
+103
+00:05:39,940 --> 00:05:42,100
+然后我们组建了团队。
+And then we built, you know, our teams.
+
+104
+00:05:42,300 --> 00:05:50,140
+我们大概一周，也许两周内就做了一个原型，并给董事会做了演示。
+We built a prototype within like a week, maybe two weeks, and demoed it to the board.
+
+105
+00:05:50,180 --> 00:05:52,020
+就是那种，非常快的循环。
+Like, it was this, like, very fast cycle.
+
+106
+00:05:52,140 --> 00:05:58,650
+很多后来进入最终 Muse产品的决策，在第一个原型里就已经有了。
+And many of the decisions that made their way into the final Muse product were present in the first prototype.
+
+107
+00:05:58,810 --> 00:06:00,709
+Jolly Bot（Muse 的形象角色）当时就在了，
+The Jolly Bot was there, you know,
+
+108
+00:06:00,709 --> 00:06:04,440
+早期版本的 Muse Charm 也在那第一次会议里出现了。
+the early version of the Muse Charm was in that very first meeting.
+
+109
+00:06:04,920 --> 00:06:07,402
+不是所有想法和所有标签页都在，
+Not all of the ideas and not all the tabs were there,
+
+110
+00:06:07,402 --> 00:06:08,880
+但很多已经在那里了。
+but a lot of them were present.
+
+111
+00:06:09,440 --> 00:06:11,355
+然后从那之后，你知道，
+Then from there, you know, obviously
+
+112
+00:06:11,355 --> 00:06:13,640
+显然那是在二月，我们后来发布了产品。
+that was February, we launched the product.
+
+113
+00:06:13,720 --> 00:06:18,702
+七个月后，才是那个非常非常艰难的过程：
+Seven months later was like the really, really hard process of taking this,
+
+114
+00:06:18,702 --> 00:06:23,209
+把这个原型——它有时候能用、
+you know, prototype where it like sometimes worked and was magical,
+
+115
+00:06:23,209 --> 00:06:27,084
+很神奇，但大多数时候不能用、
+but most of the time didn't work and would constantly break
+
+116
+00:06:27,084 --> 00:06:31,670
+会不断出问题——从那种状态打磨到高度可靠。
+and like going from there to something that would be highly reliable.
+
+117
+00:06:32,310 --> 00:06:35,245
+就是那种，你知道，
+Like, you know, kind of like a beautifully crafted
+
+118
+00:06:35,245 --> 00:06:37,830
+像一件精心打磨的消费级产品，
+consumer product that we felt confident as a
+
+119
+00:06:37,830 --> 00:06:40,975
+让我们有信心把它作为对消费级世界的一个贡献，
+contribution to the consumer world and that, that was
+
+120
+00:06:40,975 --> 00:06:43,910
+而这是一个非常漫长、相当痛苦的过程。
+like this very lengthy and quite painful process.
+
+121
+00:06:44,110 --> 00:06:47,030
+在我们聊到那里之前，我想先回到你写出原型这件事。
+And before we get there, I want to go back to the idea that you wrote the prototype.
+
+122
+00:06:47,070 --> 00:06:49,550
+你们大概用了一到两周就做出了原型。
+You guys created the prototype in like one to two weeks.
+
+123
+00:06:50,190 --> 00:06:53,110
+你把它展示给董事会。Mark 在这其中是什么角色？
+You show it to the board. What's Mark's role in all this?
+
+124
+00:06:53,630 --> 00:06:57,668
+他差不多和我们所有人一样，
+He was like experiencing the sort of like euphoria slash
+
+125
+00:06:57,668 --> 00:07:01,190
+同时体验着对这个产品的兴奋/恐惧。
+terror of the product at the same time as all of us.
+
+126
+00:07:01,270 --> 00:07:04,594
+我觉得他在各种采访里讲过，
+I think he's talked about this in various interviews,
+
+127
+00:07:04,594 --> 00:07:08,657
+但我觉得他拿它做了家里很多事情，
+but like, I think he, he used it for a bunch of things around the home
+
+128
+00:07:08,657 --> 00:07:10,577
+也和孩子一起用，
+and he was using it with his kids
+
+129
+00:07:10,577 --> 00:07:13,532
+还把它用在，嗯，他的 MMA 训练里。
+and he used it in his, um, uh, in his MMA training.
+
+130
+00:07:13,532 --> 00:07:15,600
+比如他让它看自己的——
+Like he had it watch videos of him—
+
+131
+00:07:15,640 --> 00:07:17,609
+他自己做 MMA 训练的视频，
+Himself doing MMA training and like,
+
+132
+00:07:17,609 --> 00:07:19,960
+然后它会给他一些比如怎么改进的建议。
+it would give him tips on like how to improve.
+
+133
+00:07:20,320 --> 00:07:22,360
+还有过一些员工会议。
+There were like some staff meetings.
+
+134
+00:07:22,400 --> 00:07:27,610
+顺便说，这种后来在 Meta 团队里很多地方都成了一个固定环节，
+And by the way, like, you know, this kind of became a thing for, for much of the, the Meta team,
+
+135
+00:07:27,610 --> 00:07:31,380
+就是开会时会问：
+um, was like having these, having a staff meeting and saying like,
+
+136
+00:07:31,380 --> 00:07:32,280
+你们有哪些——
+what were the.
+
+137
+00:07:32,520 --> 00:07:36,720
+你们和自己的智能体之间有哪些疯狂的体验？
+What were the crazy experiences that you had with, with, with your agent?
+
+138
+00:07:36,880 --> 00:07:38,160
+再强调一下，这还是在二月。
+Again, this was back in February.
+
+139
+00:07:38,360 --> 00:07:43,107
+回过头看这整个周期很有意思，
+It's very interesting to kind of think back to this whole cycle
+
+140
+00:07:43,107 --> 00:07:49,040
+因为显然 OpenClaw 现象达到顶峰后就消失了。
+because obviously the OpenClaw phenomenon, it peaked and then disappeared.
+
+141
+00:07:49,520 --> 00:07:51,819
+是啊，你知道，它没有持续下来。
+Yeah, there were, you know, it didn't, it didn't persist
+
+142
+00:07:51,819 --> 00:07:54,217
+而且我觉得很多人都有这种体验：
+and, and I think a lot of people kind of had this experience,
+
+143
+00:07:54,217 --> 00:07:56,712
+就是你会有那些神奇时刻，
+which was it was just like you would have these magic moments,
+
+144
+00:07:56,712 --> 00:07:58,717
+但大多数时候它并不怎么好用，
+but for the most part it didn't like work that well
+
+145
+00:07:58,717 --> 00:08:00,870
+还有各种问题，然后，你知道。
+and there were all these problems and then, you know.
+
+146
+00:08:00,910 --> 00:08:02,190
+它就慢慢凉下来了。
+It just kind of like died down.
+
+147
+00:08:02,590 --> 00:08:09,017
+所以我觉得，打造这个产品的一部分——产品很大一部分重点——就是：
+And so part of, I think, the building of the product, a lot of the focus of the product was just like,
+
+148
+00:08:09,017 --> 00:08:17,110
+你怎么把它变成一种真正可靠的消费级体验，让你放心地随着时间把它放到……
+how do you make this into an actual reliable consumer experience that you feel comfortable putting in front of, over time.
+
+149
+00:08:17,230 --> 00:08:21,600
+……数十亿人面前，而且你有信心大多数人会获得很棒的体验。
+Billions of people and you can feel confident like most of those people have an amazing experience.
+
+150
+00:08:21,760 --> 00:08:22,970
+为什么你们能做到，
+Why were you able to do that
+
+151
+00:08:22,970 --> 00:08:24,840
+而 OpenClaw 的开发者们没能做到？
+and the developers of OpenClaw were not?
+
+152
+00:08:25,160 --> 00:08:30,880
+首先，我觉得我们对 Peter Steinberger 以及所有为 OpenClaw 做出贡献的人都非常尊重。
+Well, first of all, I think we respect Peter Steinberger and everyone who's contributed to OpenClaw immensely.
+
+153
+00:08:30,960 --> 00:08:32,560
+我觉得 Peter 绝对是一个有远见的人。
+Like I think Peter is definitely a visionary.
+
+154
+00:08:33,080 --> 00:08:38,520
+我觉得他那个聪明脑袋里创造出 OpenClaw 的什么东西，是很神奇的。
+I think whatever happened in his beautiful brain that created OpenClaw is, is magical.
+
+155
+00:08:38,560 --> 00:08:44,308
+我觉得也许让 Muse 如此神奇的不那么光鲜的部分，
+And I think maybe the unglamorous part of what made Muse so magical
+
+156
+00:08:44,308 --> 00:08:49,743
+就是真的去一点点打磨所有细节，
+was just really grinding out and sanding out all of the details
+
+157
+00:08:49,743 --> 00:08:55,700
+让模型加产品的综合体验变得非常棒。
+to make the combined model plus product experience really amazing.
+
+158
+00:08:56,300 --> 00:08:59,860
+我们做了非常非常多次迭代。
+And we did many, many iterations.
+
+159
+00:09:00,040 --> 00:09:06,485
+模型本身，我们把整体模型路线图的目标大致设定为构建个人超级智能，
+The model itself, we aimed the overall model roadmap towards building Personal Superintelligence, broadly speaking,
+
+160
+00:09:06,485 --> 00:09:13,440
+但肯定是先做个人智能体。再说说这一点，以及它如何让你和其他竞争对手区分开。
+but certainly personal agents. And like, say more about that and how that differentiates between you and your other competitors.
+
+161
+00:09:14,160 --> 00:09:16,480
+对，这个，这其实挺有意思的。
+Yeah, well, this is, this is kind of— that's actually really interesting.
+
+162
+00:09:16,680 --> 00:09:19,895
+是的，实际上回到那个时刻很有用，
+Yeah, it's actually useful to go back to the moment
+
+163
+00:09:19,895 --> 00:09:23,493
+因为如果回到今年年初、二月，
+because if you go back to the start of the year, February,
+
+164
+00:09:23,493 --> 00:09:27,703
+Opus 和 Claude（Anthropic 的 AI 助手）在编程上遥遥领先，领先其他所有人，
+Opus and Claude were way ahead in coding, way ahead of anyone else,
+
+165
+00:09:27,703 --> 00:09:29,310
+而且它们正在爆发。
+and they were exploding.
+
+166
+00:09:29,470 --> 00:09:33,990
+那是整个行业里 Anthropic（AI 公司） 接管的开始。
+It was the beginning of the sort of like, you know, Anthropic takeover in the whole industry.
+
+167
+00:09:34,270 --> 00:09:35,550
+那是一个非常可怕的时刻。
+And it was a very scary moment.
+
+168
+00:09:35,590 --> 00:09:39,598
+我觉得，总的来说，就是那种，哇，他们在编程上领先这么多，
+I think, generally speaking, which is like, oh, wow, this is, you know, they're so ahead on coding
+
+169
+00:09:39,598 --> 00:09:43,310
+而且显然他们还有 Mythos（Anthropic 的模型），他们有着明显的领先。
+and, and obviously they had mythos and, you know, they were, they had like this clear lead.
+
+170
+00:09:43,840 --> 00:09:47,096
+我觉得行业内当时的普遍看法是，
+I think that the conventional wisdom in the industry was
+
+171
+00:09:47,096 --> 00:09:49,659
+编程智能体是唯一重要的形态，
+that coding agents were the only form factor
+
+172
+00:09:49,659 --> 00:09:53,123
+或者可能是唯一重要的技术，
+that mattered, or maybe the only technology that mattered,
+
+173
+00:09:53,123 --> 00:09:56,240
+或者对高级 AI 来说唯一重要的能力。
+or the only capability that mattered for advanced AI.
+
+174
+00:09:56,800 --> 00:10:00,088
+你知道，行业里有一股强大的力量，
+You know, there's this incredible force in the industry
+
+175
+00:10:00,088 --> 00:10:04,845
+想要涌向那个用例、在编程智能体上和 Anthropic 竞争。
+to just like go and crowd that use case and compete with Anthropic on coding agents
+
+176
+00:10:04,845 --> 00:10:07,573
+而我们因为自己的经验和信念——
+because of our experiences and our conviction
+
+177
+00:10:07,573 --> 00:10:12,680
+我觉得这些经验和信念围绕“个人智能体”这个想法形成，也因为我们退后了一步思考。
+that I think formed around this idea of personal agents and, sort of, taking a step back.
+
+178
+00:10:13,440 --> 00:10:17,711
+我觉得我们最初做 Personal Superintelligence 的原因是，
+I think the reason why we did Personal Superintelligence in the first place was
+
+179
+00:10:17,711 --> 00:10:21,400
+我们也相信 Meta 在这方面有独特优势。
+that it was also what we believed Meta was uniquely positioned to do.
+
+180
+00:10:21,920 --> 00:10:23,000
+这一点我们可以多聊聊。
+And we can talk more about that.
+
+181
+00:10:23,000 --> 00:10:25,320
+但我觉得，也正因为如此——好，我们现在就聊聊这个。
+But like I think because of that, well, let's talk about that now.
+
+182
+00:10:25,480 --> 00:10:26,760
+好，我们就顺着聊。
+Okay, we'll just do the weave.
+
+183
+00:10:26,960 --> 00:10:36,756
+我觉得在 Scale AI（数据标注公司）和 Meta 的整个交易发生之前，我最早告诉 Mark 的事情之一就是：
+I think one of the first things I told Mark even before the whole Scale and Meta deal happened and, and everything, one of the first things I told him was,
+
+184
+00:10:36,756 --> 00:10:43,260
+如果我们真的实现 AGI 或 ASI，或者随便你怎么叫，我觉得 Meta 实际上是一家非常特别的公司。
+I think Meta is actually a really special company if we have AGI or ASI or whatever you want to call it.
+
+185
+00:10:43,260 --> 00:10:47,180
+因为 AI 承诺的一部分是，对我们所有人来说，
+Because part of the promise of AI is that for all of us, we have
+
+186
+00:10:47,180 --> 00:10:51,100
+生活中都混合着我们想做的事和不得不做的事。
+a mix of things that we want to do and things that we have to do.
+
+187
+00:10:51,780 --> 00:10:56,075
+而 AGI 的承诺是，我们几乎不用再花时间去做那些不得不做的事，
+And the promise of AGI is that we're going to spend almost none of the time
+
+188
+00:10:56,075 --> 00:11:00,228
+因为 AI 会开始替我们做很多这类事，
+doing things that we have to do because the AIs will start doing a lot of
+
+189
+00:11:00,228 --> 00:11:04,380
+我们可以把所有时间花在想做的事情上。
+that for us, and we can spend all of our time on things that we want to do.
+
+190
+00:11:04,380 --> 00:11:04,580
+做。
+Do.
+
+191
+00:11:04,900 --> 00:11:09,585
+对我来说，Meta 的产品代表的就是我们所有人都想做的事，
+And for me, Meta's products represent the things that we all
+
+192
+00:11:09,585 --> 00:11:14,270
+比如我使用 Instagram、WhatsApp 或 Facebook。
+want to do, like my use of Instagram or WhatsApp or Facebook.
+
+193
+00:11:14,350 --> 00:11:19,190
+这些产品代表的是，你知道，我关注自己的兴趣。
+Like, these are products that represent what I, you know, I follow my interests.
+
+194
+00:11:19,270 --> 00:11:20,030
+我关注自己的爱好。
+I follow my hobbies.
+
+195
+00:11:20,110 --> 00:11:21,465
+我关注我喜欢的人、
+I follow people that I like,
+
+196
+00:11:21,465 --> 00:11:23,350
+我的朋友和我关心的人。
+my friends and the people I care about.
+
+197
+00:11:23,430 --> 00:11:31,390
+Meta 的产品范围涵盖了我们想要花时间做的那一类事情。
+Like the product span of Meta encapsulates the sort of like what we want to spend our time doing sort of realm.
+
+198
+00:11:31,860 --> 00:11:36,020
+我觉得从长期来看，Meta 会在这一切中成为一个不可思议的赢家。
+I think on a long arc, Meta is an incredible winner through all this.
+
+199
+00:11:36,260 --> 00:11:42,620
+这是我很早就对 Meta 和超级智能相信的事情之一。
+That's like one of the first things that I believed about Meta and superintelligence.
+
+200
+00:11:42,700 --> 00:11:47,540
+最终，这些想法很多都汇入了 Personal Superintelligence 这个概念。
+And then ultimately a lot of those ideas made their way into this concept of Personal Superintelligence.
+
+201
+00:11:48,020 --> 00:11:49,700
+你可以从几个角度来看。
+You know, you can kind of look at it a few ways.
+
+202
+00:11:50,140 --> 00:11:52,326
+一个是，这家公司的传承是什么？
+One is, what's the heritage of the company?
+
+203
+00:11:52,326 --> 00:11:53,540
+Meta 的传承是……
+The heritage of Meta is.
+
+204
+00:11:54,370 --> 00:11:56,879
+把人们与朋友和家人连接起来，
+Connecting people with their friends and family,
+
+205
+00:11:56,879 --> 00:11:59,090
+帮助他们发现自己的兴趣。
+um, helping them discover their interests.
+
+206
+00:11:59,210 --> 00:12:01,200
+这些都是非常人性化的事情。
+Like these are things that are very human.
+
+207
+00:12:01,640 --> 00:12:10,280
+然后是商业层面，比如 Meta 每天能触达 35 亿使用这些应用的人。
+And then there's also the sort of, like, you can take the business lines, which is, Meta has distribution to three and a half billion people using the apps every day.
+
+208
+00:12:10,840 --> 00:12:18,240
+而 Meta 自然能取得成功的领域就是面向消费者的 AI。
+And the natural area where Meta was going to be successful is consumer AI.
+
+209
+00:12:18,480 --> 00:12:19,040
+不是工作。
+It's not work.
+
+210
+00:12:19,080 --> 00:12:19,720
+不是编程。
+It's not coding.
+
+211
+00:12:19,880 --> 00:12:20,480
+是个人化。
+It's personal.
+
+212
+00:12:20,760 --> 00:12:21,560
+对，没错。
+Yeah, exactly.
+
+213
+00:12:21,960 --> 00:12:27,898
+所以个人智能体、个人 AI，以及更广义的消费级 AI，
+So personal agents and personal AI and consumer AI broadly speaking were always the
+
+214
+00:12:27,898 --> 00:12:33,920
+一直是我们认为 Meta 能做出非常特别事情的领域。
+zones where we always felt that Meta was going to be able to do something very special.
+
+215
+00:12:34,920 --> 00:12:38,720
+所以这就说到，呃，好吧，2026 年初。
+So that brings us to, uh, okay, early 2026.
+
+216
+00:12:39,000 --> 00:12:41,568
+现在你有了原型，也有了支持，
+Now you have the prototype, you have the buy-in,
+
+217
+00:12:41,568 --> 00:12:44,907
+大家都知道 Mark 已经参与进来，
+everybody knows Mark's on board and now you're doing the seven
+
+218
+00:12:44,907 --> 00:12:47,860
+接下来就是打磨这个产品的七个月艰难工作。
+months of the difficult work of refining this product.
+
+219
+00:12:48,140 --> 00:12:48,460
+是的。
+Yes.
+
+220
+00:12:48,980 --> 00:12:51,549
+当时一直有一种阴影，就像：哦，
+There was kind of the specter, which was like, oh,
+
+221
+00:12:51,549 --> 00:12:54,682
+个人智能体，它们来了又走了；
+personal agents, like they came and went, and we always felt
+
+222
+00:12:54,682 --> 00:12:57,940
+我们始终觉得那是因为体验还不够完美。
+that it was because, you know, the experience wasn't perfect.
+
+223
+00:12:57,940 --> 00:12:59,860
+它还没有被打磨好，你知道，就是这类问题。
+It wasn't polished yet, you know, all that kind of stuff.
+
+224
+00:12:59,900 --> 00:13:07,492
+但，就像，我们知道这是我们在开发这款产品时必须考虑的事情。
+But, like, we knew that that was something that we had to, like, think about as, you know, as we were developing this product.
+
+225
+00:13:07,492 --> 00:13:15,010
+我们把模型开发路线图的重点，或者说重点之一，放在了构建个人智能体上。
+We focused our model development roadmap, the top focus or one of the top focuses was towards building on personal agents.
+
+226
+00:13:15,290 --> 00:13:18,571
+我们当时有很长的表格，
+And we had like these long spreadsheets of hundreds
+
+227
+00:13:18,571 --> 00:13:22,692
+列出几百甚至上千项不同的——不是上千，
+or even thousands of different, not thousands, but more than 100
+
+228
+00:13:22,692 --> 00:13:25,438
+但超过 100 项——具体行为和能力，
+like specific behaviors and capabilities
+
+229
+00:13:25,438 --> 00:13:29,101
+我们知道模型必须具备这些才能构建理想的个人智能体。
+that we knew the model needed to have to be able to build the
+
+230
+00:13:29,101 --> 00:13:32,840
+真的非常非常细致。
+ideal personal agent. Like, it was very, very meticulous.
+
+231
+00:13:32,920 --> 00:13:35,560
+然后随着时间推移，我们为所有这些建立了评测。
+And then over time, we built evals for all those.
+
+232
+00:13:35,960 --> 00:13:37,742
+我们弄清楚了如何训练模型，
+We figured out how to train the model to be really,
+
+233
+00:13:37,742 --> 00:13:39,480
+让它把每一项都做得非常非常好。
+really good at every single one of those things.
+
+234
+00:13:39,800 --> 00:13:41,992
+我们会有这种评审：我们会看着那张表格，
+And we have these reviews where we'd like, look at
+
+235
+00:13:41,992 --> 00:13:44,023
+找出我们做得差的地方，
+that spreadsheet and we figure out the things
+
+236
+00:13:44,023 --> 00:13:46,696
+确保在这些地方不断改进；
+that we're bad at and make sure that we're improving on them,
+
+237
+00:13:46,696 --> 00:13:49,155
+我们就是用这种非常细致的流程，
+like we did this like very meticulous process to slowly
+
+238
+00:13:49,155 --> 00:13:51,400
+慢慢持续改进，把所有毛边都打磨掉。
+just keep improving and sanding out all the edges.
+
+239
+00:13:51,440 --> 00:13:54,280
+打磨模型的毛边，好让它能够驱动产品。
+Of the model, so that it could power the product.
+
+240
+00:13:54,480 --> 00:13:56,502
+这真的也是 Meta 的文化吗？
+Is that really the culture of Meta too,
+
+241
+00:13:56,502 --> 00:13:58,840
+这种对产品持续不断的打磨？
+this like constant sanding of the products?
+
+242
+00:13:59,400 --> 00:14:01,638
+是的，Meta 的很多文化就是：
+Yeah, a lot of the culture of Meta is like once
+
+243
+00:14:01,638 --> 00:14:04,421
+一旦你知道了要衡量什么，有非常有才华的人，
+you know what you're measuring, there's very talented
+
+244
+00:14:04,421 --> 00:14:06,720
+你就能去优化那些事情。
+people and you can optimize for those things.
+
+245
+00:14:06,760 --> 00:14:07,960
+你可以把所有细节打磨好。
+You can sand out all the details.
+
+246
+00:14:08,000 --> 00:14:09,040
+你可以把那些事情做得惊艳。
+You can make those things amazing.
+
+247
+00:14:09,320 --> 00:14:12,885
+我觉得在 AI 之前的消费级产品时代，
+I think in the sort of like pre-AI consumer product era,
+
+248
+00:14:12,885 --> 00:14:17,070
+很多工作都是围绕如何优化转化率。
+like a lot of this was around how do you optimize your conversion?
+
+249
+00:14:17,190 --> 00:14:19,105
+如何优化推荐率，
+How do you optimize the referral rates,
+
+250
+00:14:19,105 --> 00:14:21,949
+如何优化新用户引导流程的每个环节，
+how do you optimize like every part of the onboarding flow,
+
+251
+00:14:21,949 --> 00:14:24,270
+如何把所有这些都做到完美？
+like how do you make all that stuff just perfect?
+
+252
+00:14:24,670 --> 00:14:28,771
+而到了 AI 时代，我觉得很多这类工作，尤其是 Muse 相关的工作，
+And then I think in the AI era, I think a lot of that, especially from Muse,
+
+253
+00:14:28,771 --> 00:14:33,830
+已经变成把模型的每一个细节都打磨到完美，以适配产品。
+has been in the form of sanding out every detail of the model to be perfect for the product.
+
+254
+00:14:34,960 --> 00:14:37,640
+我想向你介绍本期播客的首席赞助商 Ramp。
+I want to tell you about the presenting sponsor of this podcast, Ramp.
+
+255
+00:14:37,840 --> 00:14:40,160
+我最近读了很多关于 SpaceX 的内容。
+I have been reading a lot about SpaceX lately.
+
+256
+00:14:40,320 --> 00:14:43,042
+SpaceX 是世界上最有价值的公司之一，
+SpaceX is one of the most valuable businesses in the world
+
+257
+00:14:43,042 --> 00:14:45,368
+SpaceX 历史上的一条主线就是不断质疑
+and one of the main themes in the history of SpaceX
+
+258
+00:14:45,368 --> 00:14:47,920
+和挑战自己的成本。
+is constantly attacking and questioning your costs.
+
+259
+00:14:48,200 --> 00:14:51,920
+Ramp 帮助世界上许多最具创新力的公司做到这一点。
+Ramp helps many of the most innovative businesses in the world do exactly that.
+
+260
+00:14:52,040 --> 00:14:55,840
+使用 Ramp 的公司中位数会把支出削减 5%。
+The median company running on Ramp cuts their expenses by 5%.
+
+261
+00:14:56,000 --> 00:14:59,241
+SpaceX 证明的一件事是，
+And one thing SpaceX has demonstrated is that a religious
+
+262
+00:14:59,241 --> 00:15:02,144
+对控制成本的极虔诚投入其实能帮助增加收入，
+dedication to controlling costs can help actually
+
+263
+00:15:02,144 --> 00:15:05,519
+因为你可以去追求原本无法抓住的机会；
+increase revenue because you can pursue opportunities you
+
+264
+00:15:05,519 --> 00:15:08,760
+我们在 Ramp 的数据中也看到了这一点。
+couldn't otherwise, and we see that in the Ramp data, too.
+
+265
+00:15:09,000 --> 00:15:13,560
+使用 Ramp 的公司中位数收入也增长了 16%。
+The median company running on Ramp also grows their revenue by 16%.
+
+266
+00:15:13,920 --> 00:15:17,421
+所以当你的公司使用 Ramp，而你的竞争对手没有时，
+So when you're running your business on Ramp and your competitors are not,
+
+267
+00:15:17,421 --> 00:15:20,640
+你就拥有了会随着时间不断复利的巨大竞争优势。
+you have a massive competitive advantage that compounds over time.
+
+268
+00:15:21,040 --> 00:15:25,160
+Ramp 是唯一一个旨在让你的财务团队更快、更开心的平台。
+Ramp is the only platform designed to make your finance team faster and happier.
+
+269
+00:15:25,280 --> 00:15:26,396
+我认识的许多顶尖创始人
+Many of the top founders
+
+270
+00:15:26,396 --> 00:15:28,350
+和 CEO 都用 Ramp 经营公司。
+and CEOs I know run their business on Ramp.
+
+271
+00:15:28,510 --> 00:15:30,790
+我的公司也用 Ramp，你也应该用。
+I run my business on Ramp and you should, too.
+
+272
+00:15:30,910 --> 00:15:36,430
+访问 ramp.com，了解他们如何帮助你的公司节省时间、节省成本并增加收入。
+Go to ramp.com to learn how they can help your business save time, save money and grow revenue.
+
+273
+00:15:36,630 --> 00:15:42,430
+以上就是 Ramp.com。Deel 是顶尖创始人把全世界变成自己人才库的方式。
+That is Ramp.com. Deel is how the best founders turn the world into their talent pool.
+
+274
+00:15:42,670 --> 00:15:45,230
+我研究历史上最伟大创始人的运作方式已经有十年了。
+I've been studying how history's greatest founders operate for a decade.
+
+275
+00:15:45,630 --> 00:15:48,809
+他们的一个共同点是，他们都明白招聘
+And one thing they all have in common is they understand that recruiting
+
+276
+00:15:48,809 --> 00:15:51,670
+和雇佣最优秀的人才是你最重要的优先事项。
+and hiring the very best talent is your most important priority.
+
+277
+00:15:52,030 --> 00:15:54,918
+A 级人才会识别其他 A 级人才，这就是为什么像 Ramp、
+A players recognize other A players, which is why top
+
+278
+00:15:54,918 --> 00:15:57,608
+Shopify、ElevenLabs、Uber
+companies like Ramp, Shopify, ElevenLabs, Uber
+
+279
+00:15:57,608 --> 00:16:00,955
+和 DoorDash 这样的顶级公司都使用 Deel。
+and DoorDash all use Deel. Many of the top founders I know have
+
+280
+00:16:00,955 --> 00:16:04,040
+我认识的许多顶尖创始人在用过 Deel 的产品后，都亲自投资了 Deel。
+personally invested in Deel after using their product.
+
+281
+00:16:04,200 --> 00:16:08,520
+他们发现的是，Deel 是世界上在建设全球招聘基础设施方面最优秀的公司。
+And what they discovered is that Deel is the best company in the world at building infrastructure for global hiring.
+
+282
+00:16:08,720 --> 00:16:12,221
+Deel 会帮助你的公司雇佣、支付和管理世界各地的任何员工，
+Deel will help your business hire, pay and manage any worker anywhere
+
+283
+00:16:12,221 --> 00:16:15,419
+这样你就能在任何地方留住最优秀的人才，
+in the world so you can retain the best talent anywhere and spend
+
+284
+00:16:15,419 --> 00:16:18,799
+并把其余时间集中在做你最擅长的事：为你的客户创造价值。
+the rest of your time focusing on what you do best, delivering value
+
+285
+00:16:18,799 --> 00:16:22,360
+ElevenLabs 的创始人有一个很好的描述。
+to your customers. The founder of ElevenLabs has a great description.
+
+286
+00:16:22,720 --> 00:16:24,520
+描述 Deel 能给你公司带来的价值。
+Of the value Deel can give your company.
+
+287
+00:16:24,640 --> 00:16:29,292
+他说：我们创建 ElevenLabs 是为了打破语言
+He said, we built ElevenLabs to break down language and communication barriers.
+
+288
+00:16:29,292 --> 00:16:31,618
+和沟通障碍。Deel 让我们能在任何地方招聘
+With Deel enabling us to hire and support
+
+289
+00:16:31,618 --> 00:16:35,312
+和支持杰出人才，我们可以加速创新，
+exceptional talent anywhere, we can accelerate our innovation
+
+290
+00:16:35,312 --> 00:16:39,280
+把更多声音、故事和想法带到世界每个角落。
+and bring more voices, stories and ideas to every corner of the world.
+
+291
+00:16:39,760 --> 00:16:43,240
+Deel 受到超过 40,000 家公司的信任，并且增长迅速。
+Deel is trusted by over 40,000 companies and growing fast.
+
+292
+00:16:43,440 --> 00:16:50,640
+前往 deel.com/Senra 了解他们如何帮助你的公司。就是 deel.com/Senra。
+Learn how they can help your business by going to deel.com/Senra. That is deel.com/Senra.
+
+293
+00:16:51,580 --> 00:16:56,660
+你看到 Colossus 上那篇 Jeremy Stern 写的关于 Zuck 的人物特写了吗？
+Did you see this profile that's written on Zuck in Colossus, written by Jeremy Stern?
+
+294
+00:16:57,220 --> 00:16:58,460
+我看到了。
+I saw it.
+
+295
+00:16:58,460 --> 00:16:59,980
+说实话，它有点太长了。
+If I'm being honest, it was like too long.
+
+296
+00:17:00,060 --> 00:17:00,460
+没读完。
+Didn't read.
+
+297
+00:17:00,740 --> 00:17:02,260
+但它有 15,000 字。
+But it's 15,000 words.
+
+298
+00:17:02,340 --> 00:17:03,500
+我刚请了 Jeremy 上播客。
+I just had Jeremy on the podcast.
+
+299
+00:17:04,300 --> 00:17:05,300
+他是我最喜欢的，那篇我也看到了。
+He's my favorite, which I saw.
+
+300
+00:17:05,340 --> 00:17:06,180
+我看到了，我看到了。
+I saw, I saw that.
+
+301
+00:17:06,380 --> 00:17:06,580
+对。
+Yeah.
+
+302
+00:17:06,940 --> 00:17:08,778
+他就是，我觉得他正在写当今世界上关于企业家
+He's just, I think he's writing the best profiles on,
+
+303
+00:17:08,778 --> 00:17:10,700
+和投资者最出色的人物特写。
+on entrepreneurs and investors in the world right now.
+
+304
+00:17:11,020 --> 00:17:12,660
+我觉得他在他所做的事情上，真的就是全世界最好的。
+I think he's literally the best in the world at what he does.
+
+305
+00:17:12,660 --> 00:17:13,827
+但在那篇里，Zuck 说，
+But in that, Zuck says,
+
+306
+00:17:13,827 --> 00:17:18,554
+他在谈自己相对于 Elon 和 Sam Altman 等人的优势。
+he was talking about the advantage that he has relative to, I think, Elon and like Sam Altman,
+
+307
+00:17:18,554 --> 00:17:21,379
+他说，听着，我的技能组合非常不性感，
+and he's just like, listen, my skill set is very unsexy,
+
+308
+00:17:21,379 --> 00:17:26,721
+但我非常擅长组建团队，然后在很长一段时间里慢慢改进产品。
+but I'm really good at building teams and then just improving a product slowly over a long period of time.
+
+309
+00:17:26,721 --> 00:17:28,010
+相对于 Elon 和——
+And relative to Elon and.
+
+310
+00:17:28,130 --> 00:17:30,502
+而和 Sam Altman 以及其他人相比，优势就是：
+And Sam Altman and others is like, I'm not gonna lose control
+
+311
+00:17:30,502 --> 00:17:32,685
+我不会失去对公司的控制权，我也不需要再融更多钱，
+of my company and I don't need to raise any more money and
+
+312
+00:17:32,685 --> 00:17:35,010
+所以我可以非常长久地做这件事。
+so I can just do this for an excessively long period of time.
+
+313
+00:17:35,410 --> 00:17:44,220
+当你谈到这七个月反复打磨和打造 Muse 的过程时，我脑子里就浮现出那篇特写里的那一段。
+That section of the profile is popping into my mind when you're talking about this seven-month, uh, stretch of trying to refine and build Muse.
+
+314
+00:17:44,740 --> 00:17:45,860
+我觉得这完全正确。
+I think that's exactly right.
+
+315
+00:17:45,860 --> 00:17:49,060
+我觉得这需要极大的耐心。
+Like, I think that it took immense patience.
+
+316
+00:17:49,340 --> 00:17:51,824
+我的意思是，七个月，你知道，
+I mean, seven months, like, you know, maybe doesn't
+
+317
+00:17:51,824 --> 00:17:54,020
+也许听起来不算长，但 AI 的节奏非常猛。
+sound like that long, but AI is, like, fierce.
+
+318
+00:17:54,340 --> 00:17:55,300
+七个月，用 AI 的时间尺度来算。
+Seven months in AI time.
+
+319
+00:17:55,500 --> 00:17:58,460
+七个月的 AI 时间，可能相当于非 AI 领域里的十年。
+Seven months in AI time, which may be like a decade in like non-AI time.
+
+320
+00:17:58,620 --> 00:18:00,480
+我觉得对我们所有人来说都是这种感觉。
+And I think it felt like that for all of us.
+
+321
+00:18:00,960 --> 00:18:03,080
+但我真的觉得这件事上 Mark 很值得称赞。
+But I really give Mark a lot of credit for this.
+
+322
+00:18:03,120 --> 00:18:06,519
+这需要很多耐心、克制，
+Like, it took a lot of patience and restraint
+
+323
+00:18:06,519 --> 00:18:09,000
+以及对过程的很大信任。
+and a lot of trust in the process.
+
+324
+00:18:09,040 --> 00:18:17,905
+你回头看 Mark 在财报电话会上从 2 月一直到 9 月这段时间的说法，
+And like, you can go back and look at the, you know, what Mark said in earnings calls for this entire period from February through September,
+
+325
+00:18:17,905 --> 00:18:26,770
+他会暗示我们在做个人智能体，而且我们并没有真正想隐瞒，我们就是在做。
+and he will allude to the fact that we were building personal agents, and we weren't really trying to hide it, like we were, we were building.
+
+326
+00:18:27,330 --> 00:18:29,370
+我们在做个人智能体，而且也在公开谈论这件事。
+Personal agents, and we were talking about it.
+
+327
+00:18:29,370 --> 00:18:33,730
+但我觉得，那段时间公司内部有很多怀疑。
+But I think, you know, there's a lot of doubt in the company for that entire period.
+
+328
+00:18:33,850 --> 00:18:40,410
+比如很明显，华尔街的主流叙事之一是：天哪，Mark 就是在烧钱。
+Like, people obviously—the one of the dominant Wall Street narratives is like, oh my gosh, Mark is just burning all this money.
+
+329
+00:18:40,530 --> 00:18:42,730
+比如他们在 AI 上到底能不能做成什么事？
+Like, are they even going to pull anything off in AI?
+
+330
+00:18:43,150 --> 00:18:43,910
+甚至还不止这样。
+It's more than that.
+
+331
+00:18:43,990 --> 00:18:46,390
+而是像在说，Zuck 在 AI 上赢不了。
+It's like, Zuck cannot win AI.
+
+332
+00:18:46,590 --> 00:18:48,750
+这种说法在很长一段时间里被反复提及。
+It's said over and over again for a long period of time.
+
+333
+00:18:48,790 --> 00:18:51,889
+再回到 Jeremy Stern 写他的那篇人物报道，
+And again, going back to Jeremy Stern's profile on him,
+
+334
+00:18:51,889 --> 00:18:55,124
+他后来在私下里开始跟竞争对手聊，
+he then off the record starts talking to his competitors,
+
+335
+00:18:55,124 --> 00:18:58,493
+其中有一位前研究员，以前曾
+including one former researcher that is now at a competitor
+
+336
+00:18:58,493 --> 00:19:01,390
+和 Zuck 共事，现在去了另一家实验室。
+that used to work with Zuck and is now at another lab.
+
+337
+00:19:01,990 --> 00:19:03,817
+那个人说：“我可不想和他竞争，
+And he goes, "I don't want to have to compete with him
+
+338
+00:19:03,817 --> 00:19:06,790
+因为 Mark 简直是……我觉得原话是：Mark 就是个该死的终结者。”
+'cause Mark's like the fucking— I think the line is Mark is the fucking Terminator."
+
+339
+00:19:07,390 --> 00:19:09,550
+然后就像，他根本不会停下来。
+And it was like, he just does not stop.
+
+340
+00:19:09,930 --> 00:19:13,140
+然后他还谈到，嗯，他的一个超能力是，
+And he's like, uh, then he talks about, um, one of his superpowers,
+
+341
+00:19:13,140 --> 00:19:15,650
+他从来不会对产品的现状感到满意。
+that he's never happy with the state of the product.
+
+342
+00:19:15,650 --> 00:19:16,770
+所以他总在要求不断看到新的证明。
+So he always wants constant proof.
+
+343
+00:19:16,770 --> 00:19:17,610
+但他不是个混蛋。
+But he's not an asshole.
+
+344
+00:19:18,010 --> 00:19:19,930
+他不是那种，你知道，很刻薄讨厌的人。
+Like, he's not, you know, a dick.
+
+345
+00:19:20,010 --> 00:19:22,870
+他绝对是个独裁者，但他并不会，你知道，
+He's definitely a dictator, but like, he's not, you know,
+
+346
+00:19:22,870 --> 00:19:25,730
+很粗鲁，或者会破坏团队的化学反应。
+rude and like kind of will destroy the chemistry of a team.
+
+347
+00:19:25,730 --> 00:19:27,449
+文章里他其实也谈到，
+He actually talks about in the piece
+
+348
+00:19:27,449 --> 00:19:29,970
+团队凝聚力对他来说极其重要。
+that team cohesion is excessively important to him.
+
+349
+00:19:30,580 --> 00:19:31,580
+我觉得这挺好的。
+I think it's all right.
+
+350
+00:19:31,660 --> 00:19:35,727
+我觉得 Muse 最神奇的一点是，
+I think one of the magical things about Muse was that we really,
+
+351
+00:19:35,727 --> 00:19:39,637
+我们真的花了很多时间去抠所有细节，
+like, took quite a bit of time to sweat all the details before
+
+352
+00:19:39,637 --> 00:19:43,860
+最后才把产品拿出来，因为我觉得……
+ultimately coming out with the product, because I think that...
+
+353
+00:19:44,180 --> 00:19:47,866
+个人智能体属于那种处在刀刃上的产品领域：
+That personal agents was one of these product areas that kind of rested on
+
+354
+00:19:47,866 --> 00:19:51,855
+如果它能可靠地带来这些神奇体验，
+a knife's edge, which is if it can reliably deliver these magical experiences,
+
+355
+00:19:51,855 --> 00:19:55,360
+它有可能成为史上最伟大的消费级产品之一。
+it has the potential to be one of the greatest consumer products ever.
+
+356
+00:19:55,680 --> 00:19:59,080
+但你面对的是模型，面对的是非确定性的东西，面对的是智能体。
+But you're dealing with models, you're dealing with something nondeterministic, you're dealing with agents.
+
+357
+00:19:59,240 --> 00:19:59,840
+它们会出问题。
+They can break.
+
+358
+00:19:59,960 --> 00:20:02,000
+它们可能不可靠。
+They can be unreliable.
+
+359
+00:20:02,120 --> 00:20:04,960
+如果人们遇到这些不可靠的体验，他们就会觉得这是垃圾。
+Like, if people have these unreliable experiences, they think it's trash.
+
+360
+00:20:05,400 --> 00:20:10,516
+这就是那种事情：你要把产品做到足够高的质量
+It was one of these things where, like, getting the product to a point of, like, quality
+
+361
+00:20:10,516 --> 00:20:15,560
+和价值，让它能引起很多下载和使用它的人的共鸣。
+and value such that it resonated with so many of the people who downloaded and used it.
+
+362
+00:20:15,800 --> 00:20:17,200
+我想多聊聊这个过程。
+I want to talk more about this process.
+
+363
+00:20:17,360 --> 00:20:20,900
+我很好奇投入了多少资源、团队多大、有多少人在做这件事。
+I'm curious how much resources, how big the team, how many people are working on it.
+
+364
+00:20:20,980 --> 00:20:23,848
+你们有没有数据，比如：我用了 Muse，
+Do you guys have any data on, like, okay, I'm using Muse,
+
+365
+00:20:23,848 --> 00:20:26,342
+有 9 次很棒的经历，2 次不太稳定、
+nine great experiences, two like inconsistent
+
+366
+00:20:26,342 --> 00:20:29,211
+或者说很糟糕的经历，
+or, you know, shitty experiences, and then I churn out,
+
+367
+00:20:29,211 --> 00:20:31,580
+然后我就流失了。你们有没有这类信息？
+like, would you have any information on this?
+
+368
+00:20:31,940 --> 00:20:35,667
+从年初很多其他智能体产品就能看到这一点：
+You can see this from, like, a lot of the other agent products at the start of the year,
+
+369
+00:20:35,667 --> 00:20:39,340
+几乎所有人都流失了，原因就是它们不可靠。
+like almost everyone churned out of those, and it's because they were unreliable.
+
+370
+00:20:39,760 --> 00:20:42,720
+我们对 Muse 做了大量用户测试。
+We did a lot of user testing of Muse.
+
+371
+00:20:42,920 --> 00:20:47,504
+我们做了很多轮测试，让新用户从零开始下载、
+Like, we did many, many rounds of new people trying to, like,
+
+372
+00:20:47,504 --> 00:20:51,722
+使用，就为了看那种体验是什么样。
+download it and use it from scratch and just seeing what
+
+373
+00:20:51,722 --> 00:20:57,040
+这是 Muse 产品构想中很重要的一部分。
+that experience was like, which was a huge part of the premise of Muse.
+
+374
+00:20:57,360 --> 00:21:01,740
+我觉得它真正打动人的地方在于，它
+And I think what's really landed is that it is, like, a different
+
+375
+00:21:01,740 --> 00:21:06,120
+和大多数人体验过的消费级 AI 不一样。
+thing from what most people have experienced with consumer AI.
+
+376
+00:21:06,240 --> 00:21:08,988
+它不是聊天机器人，而是一个智能体，
+Like, it is not a chatbot, it is an agent,
+
+377
+00:21:08,988 --> 00:21:11,320
+能替你去做智能体该做的事。
+and it can do agent things for you.
+
+378
+00:21:11,320 --> 00:21:15,311
+我觉得对开发者来说，这已经不算新鲜事，
+And, like, I think to a developer, this is kind of, like, old news, because they've had to,
+
+379
+00:21:15,311 --> 00:21:19,680
+因为他们早就下载过各种智能体并用了好一阵。但对大多数人来说……
+like, you know, download agents and have been using them for a while. But for most people, like...
+
+380
+00:21:20,510 --> 00:21:24,432
+光是这个“升级”过程，你知道，
+Just even that graduation process, like, you know, it needs to
+
+381
+00:21:24,432 --> 00:21:28,430
+就需要被解释清楚，并用非常用心的方式来做引导。
+be explained and needs to be onboarded in a very thoughtful way.
+
+382
+00:21:28,630 --> 00:21:31,929
+然后可以肯定的是，我们确实看到，
+And then for sure, we definitely have seen, like, when—because
+
+383
+00:21:31,929 --> 00:21:35,104
+因为我们对不同版本的模型做过测试，
+we've done tests with, like, different versions of the model
+
+384
+00:21:35,104 --> 00:21:38,590
+也在持续做这些 A/B 测试……
+and various model versions and continuously do those A/B tests...
+
+385
+00:21:38,990 --> 00:21:41,630
+产品体验对模型质量非常非常敏感。
+You know, the product experience is very, very sensitive to model quality.
+
+386
+00:21:42,150 --> 00:21:48,898
+它对模型执行任务的可靠性、与用户沟通的可靠性，
+It's very sensitive to how reliably the models can undertake these tasks, how reliably they communicate with the user about them,
+
+387
+00:21:48,898 --> 00:21:54,470
+以及遇到需要用户指导的情况时会不会回来确认，都非常敏感。
+how reliably they, like, you know, check back with the user if there's things that they require guidance on.
+
+388
+00:21:54,750 --> 00:21:56,990
+但你是怎么知道它可以发布了？
+But how did you know it was ready to be released?
+
+389
+00:21:57,430 --> 00:22:02,590
+一部分判断是很数字化的，也就是我们设定了一些标准。
+Part of it was pretty numerical, which is like we had set...
+
+390
+00:22:03,620 --> 00:22:06,415
+回到那个有 100 多项指标的表格，
+You know, you go back to that spreadsheet of 100-plus
+
+391
+00:22:06,415 --> 00:22:09,401
+我们为每一行都设定了：
+things we had set. For each of those rows, what threshold
+
+392
+00:22:09,401 --> 00:22:12,260
+什么阈值是阻止上线的，什么阈值以上算达标。
+is launch-blocking and above what threshold is good?
+
+393
+00:22:12,980 --> 00:22:17,620
+我们有很多模型检查点，在 80 行指标上是绿的，但在 20 行上是红的。
+We had many checkpoints that, like, were, like, green on 80 of the rows, but red on 20 of the rows.
+
+394
+00:22:17,980 --> 00:22:18,980
+我们知道那还不够好。
+We knew that wasn't good enough.
+
+395
+00:22:19,060 --> 00:22:22,951
+然后我们有了第一个全面通过的模型检查点，
+And we had our first model checkpoint, which was green across the
+
+396
+00:22:22,951 --> 00:22:26,770
+它是一个特别训练版的 Muse Spark 1.3。
+board, which was a specially trained version of Muse Spark 1.3.
+
+397
+00:22:27,130 --> 00:22:29,890
+所以一部分是非常数字化的判断。
+So there was, like, the very numerical part of it.
+
+398
+00:22:30,000 --> 00:22:33,980
+然后就是实际体验的部分：我们试了模型，
+And then there was just the experiential part, which is we tried the model,
+
+399
+00:22:33,980 --> 00:22:37,960
+能感觉到它比我们之前迭代过的任何版本都要好很多。
+we could tell it was a lot better than anything we had iterated with before.
+
+400
+00:22:38,280 --> 00:22:40,582
+回到那七个月的周期，
+So going back to that seven-month period,
+
+401
+00:22:40,582 --> 00:22:44,199
+你谈到产品团队有多少人，包括模型工作
+you were talking about how many people were working on the product
+
+402
+00:22:44,199 --> 00:22:46,632
+和产品工作，总共不到 200 人。
+between the model work and the product work,
+
+403
+00:22:46,632 --> 00:22:49,920
+我猜这听起来挺多的。
+like under 200 people total, which I guess sounds like a lot.
+
+404
+00:22:49,920 --> 00:22:52,480
+但在大公司的世界里，这其实听起来已经算很少了。
+But in big company land, it actually sounds a lot smaller.
+
+405
+00:22:52,640 --> 00:22:53,480
+确实不多。
+It's not very many.
+
+406
+00:22:53,760 --> 00:22:58,054
+现在回头看，这挺酷的：
+It was kind of cool looking back on this and thinking about it is like,
+
+407
+00:22:58,054 --> 00:23:04,080
+我们知道这会是……整个高管团队、每个人都知道，
+we knew this was going to be the most important product—the whole executive team, everyone knew
+
+408
+00:23:04,080 --> 00:23:10,332
+这可能是 Meta 今年要发布的最重要产品之一。
+that this was probably going to be one of the most important products that Meta would ship this year.
+
+409
+00:23:10,332 --> 00:23:13,420
+但在组织层面，我们有这个克制，我……
+But we had the restraint organizationally, I...
+
+410
+00:23:13,420 --> 00:23:16,029
+认为要确保它是一个非常小、
+Think to make sure that, like, it was a really small,
+
+411
+00:23:16,029 --> 00:23:19,184
+非常专注的团队来做，
+focused team working on it, and that it didn't balloon to this,
+
+412
+00:23:19,184 --> 00:23:22,278
+而不是膨胀到让公司一大片人都扑在上面，
+like, oh, you have, like, you know, huge swaths of the company
+
+413
+00:23:22,278 --> 00:23:25,130
+因为我们知道它应该是一件统一的作品。
+working on it, because we knew it was a single work of art.
+
+414
+00:23:25,170 --> 00:23:28,943
+它需要很强的产品主张和很强的专注力，
+Like, it required a strong point of view and strong focus to,
+
+415
+00:23:28,943 --> 00:23:32,490
+才能把它打磨成一种统一的、漂亮的体验。
+like, pull that through into one beautiful experience.
+
+416
+00:23:32,930 --> 00:23:33,690
+多说说这一点。
+Say more about this.
+
+417
+00:23:33,770 --> 00:23:36,229
+你为什么把它叫做“单一的艺术品”？
+Why did you just call it, like, a single piece of art, and
+
+418
+00:23:36,229 --> 00:23:39,170
+为什么需要单一的视角或产品主张？我觉得其中一个原因是……
+then you need a single perspective or point of view? I think one...
+
+419
+00:23:40,620 --> 00:23:46,940
+嗯，来自大型组织的产品往往会有这种批评。
+Um, criticism of products that come from larger organizations.
+
+420
+00:23:47,100 --> 00:23:51,526
+我觉得这一点现在甚至开始困扰很多 AI 实验室：
+And I think this is even now starting to plague a lot of
+
+421
+00:23:51,526 --> 00:23:56,355
+它们变成了一种 Frankenstein 式的、
+the AI labs is that they become kind of this Frankenstein,
+
+422
+00:23:56,355 --> 00:24:00,580
+几乎像 Cronenberg 式的混合体，
+almost like Cronenberg amalgamation of a bunch of
+
+423
+00:24:00,580 --> 00:24:05,610
+把很多人的观点、愿景和信念塞在一起。
+different people's points of view and visions and beliefs.
+
+424
+00:24:05,850 --> 00:24:09,197
+某种程度上就像 PM 地狱，
+And it's sort of like, it's sort of like PM hell in some sense
+
+425
+00:24:09,197 --> 00:24:12,408
+每个产品经理都想把某个东西塞进产品里，
+where every PM has like a thing that they're trying to get
+
+426
+00:24:12,408 --> 00:24:15,413
+然后所有东西混在一起，
+into the product and jam into the product and then all
+
+427
+00:24:15,413 --> 00:24:19,170
+几乎像一杯奶昔。
+that kind of like blends together into this like smoothie almost.
+
+428
+00:24:19,930 --> 00:24:23,316
+作为用户和消费者，你能感觉到：
+People feel it as users and consumers, like, you can feel when a product
+
+429
+00:24:23,316 --> 00:24:26,358
+当一个产品像是很多人一起做的，
+is just like, it feels like lots of different people worked on it
+
+430
+00:24:26,358 --> 00:24:30,260
+而且明显有不同的人朝不同方向使劲。
+and there were clearly different people who were going in different directions.
+
+431
+00:24:30,420 --> 00:24:32,540
+所以他们只是把所有东西硬塞到了一起。
+So they just kind of like jammed it all together.
+
+432
+00:24:33,340 --> 00:24:35,334
+Muse 必须完全相反：
+Muse had to be the exact opposite, which is
+
+433
+00:24:35,334 --> 00:24:37,100
+要有统一而明确的产品主张。
+like there's one clear point of view.
+
+434
+00:24:38,180 --> 00:24:43,230
+我们想交付给世界的是一种统一的体验。
+There is one cohesive experience that we're trying to deliver, um, to the world.
+
+435
+00:24:43,390 --> 00:24:44,350
+我很高兴你这么说。
+I love that you said that.
+
+436
+00:24:44,430 --> 00:24:47,392
+这纯属巧合，我不知道这期什么时候会播，
+It just happens to be pure coincidence like we're, I don't know when this is gonna
+
+437
+00:24:47,392 --> 00:24:50,310
+但我们录制这天正好是 Steve Jobs 逝世 15 周年。
+come out, but we're recording this on the 15th anniversary of Steve Jobs death.
+
+438
+00:24:50,790 --> 00:24:53,837
+当你想到在消费级产品上有统一、
+And when you think of somebody who, for consumer products,
+
+439
+00:24:53,837 --> 00:24:57,070
+明确主张的人，你首先会想到 Steve。
+had a single point of view, you obviously think of Steve first.
+
+440
+00:24:57,190 --> 00:24:59,656
+我读过关于 Steve 的每一本书，
+I've read every single book on Steve in the history of Apple
+
+441
+00:24:59,656 --> 00:25:03,530
+还为我的另一个播客 Founders 做过大概 15 到 20 期节目。
+and I've done like, I don't know, 15 or 20 episodes on them, uh, for my other podcast Founders.
+
+442
+00:25:03,650 --> 00:25:07,010
+我最喜欢的一句描述 Steve 影响力的话是：
+But one of my favorite lines to describe Steve's impact was,
+
+443
+00:25:07,010 --> 00:25:10,370
+Apple 就是拥有 10,000 条生命的 Steve Jobs。
+it says that, um, Apple is just Steve Jobs with 10,000 lives.
+
+444
+00:25:10,770 --> 00:25:12,570
+产品符合他的品味、
+The products are to his taste,
+
+445
+00:25:12,570 --> 00:25:14,730
+他的视角、他的观点。
+his perspective, his point of view.
+
+446
+00:25:14,970 --> 00:25:18,850
+他想在这个世界上看到的东西，正是最终用户得到的东西。
+What he wanted to see in the world is exactly what the end user got.
+
+447
+00:25:19,130 --> 00:25:22,276
+在 Muse 这个项目上，Nat Friedman 值得很大功劳，
+In Muse's case, like Nat Friedman deserves a lot of credit,
+
+448
+00:25:22,276 --> 00:25:27,220
+他的品味和判断力最终决定并塑造了这款产品的样子。
+like his taste and sensibilities ultimately dictated and shaped what that product became.
+
+449
+00:25:27,620 --> 00:25:29,540
+你们会谈论有多少人在使用 Muse 吗？
+Do you talk about how many people are using Muse?
+
+450
+00:25:29,660 --> 00:25:31,200
+你们会公开谈论这个吗？
+Do you guys talk about this publicly or no?
+
+451
+00:25:31,480 --> 00:25:36,905
+我们说过有数百万；我也转发过别人展示的图表，
+We have said millions and then I have retweeted other people
+
+452
+00:25:36,905 --> 00:25:42,547
+那些图表会暗示 Muse 是有史以来增长最快的消费级应用、
+who have shown graphs that would imply that Muse is the fastest
+
+453
+00:25:42,547 --> 00:25:48,080
+有史以来增长最快的消费级 AI 应用。
+growing consumer app of all time, consumer AI app of all time.
+
+454
+00:25:48,240 --> 00:25:49,440
+但你还是不会说具体数字？
+So you won't say a number, though?
+
+455
+00:25:49,640 --> 00:25:50,360
+我们已经说过“数百万”了。
+We've said millions.
+
+456
+00:25:50,440 --> 00:25:50,680
+对。
+Yeah.
+
+457
+00:25:50,920 --> 00:25:52,960
+但“数百万”也可能是几亿。
+Well, millions could be hundreds of millions.
+
+458
+00:25:53,440 --> 00:25:54,360
+那也算“数百万”。
+That's also millions.
+
+459
+00:25:54,480 --> 00:25:55,720
+所以你就是不去补充更具体的数字。
+So you're just not adding them.
+
+460
+00:25:55,980 --> 00:26:03,980
+我想深入聊的是，你在 X 上一直有点——我这是好意——有点“放飞自我”。
+The thing I want to go into is like, you've been kind of going — and I mean this in a loving way — like unhinged on X.
+
+461
+00:26:04,420 --> 00:26:06,820
+所以这算是营销策略吗？
+So, is this, like, marketing strategy?
+
+462
+00:26:06,900 --> 00:26:07,660
+到底在发生什么？
+Like what is going on?
+
+463
+00:26:07,700 --> 00:26:12,820
+我觉得 Muse 发布后，你的公开推文明显不一样了。
+Like I feel like there's a distinct difference in your public tweeting since Muse launch.
+
+464
+00:26:13,340 --> 00:26:13,940
+你在做什么？
+What are you doing?
+
+465
+00:26:14,500 --> 00:26:16,100
+这里面有几件事在发生。
+There's a few pieces of what's happening here.
+
+466
+00:26:16,180 --> 00:26:18,980
+这肯定比你在打造 Scale AI 的时候更有趣。
+This has got to be more fun than Scale AI when you were building Scale.
+
+467
+00:26:18,980 --> 00:26:19,540
+肯定是。
+It has to be.
+
+468
+00:26:19,860 --> 00:26:21,500
+这个以后再聊，但肯定是。
+We'll talk about that later, but it has to be.
+
+469
+00:26:21,810 --> 00:26:25,262
+过去几周是我做产品过程中最开心的时光之一，
+The past few weeks have been some of the most fun I've had building,
+
+470
+00:26:25,262 --> 00:26:29,090
+肯定是我职业生涯里最开心的，我觉得有几件事在发生。
+yeah, certainly in my career, and I think there's a few things happening.
+
+471
+00:26:29,170 --> 00:26:34,610
+第一是，我们觉得必须找到让 Muse 突破的方式。
+So one is, it felt important that we figured out a way to make Muse break through.
+
+472
+00:26:35,410 --> 00:26:40,050
+回到刚才说的，这是一股汹涌的更新流。
+It's a pretty, like, going back to this, it's a torrential stream of updates.
+
+473
+00:26:40,130 --> 00:26:43,360
+对大多数人来说，
+Like for most people, there's just so much — they're just
+
+474
+00:26:43,360 --> 00:26:47,001
+东西太多了——他们不断被新的 AI 产品、创业公司、
+constantly being, like, kind of bombarded with new AI products
+
+475
+00:26:47,001 --> 00:26:50,712
+发布和模型轰炸，又是一个新模型，
+and startups and releases and models, and here's another model,
+
+476
+00:26:50,712 --> 00:26:54,010
+又是一个新产品，又是一个新功能。
+and here's another product, and here's another feature.
+
+477
+00:26:54,050 --> 00:26:56,330
+就像一股洪流。
+And it's just like this torrential stream.
+
+478
+00:26:57,010 --> 00:26:59,369
+我们实际上开过很多会、大型会议，
+We had actually meetings, large meetings, where we talked
+
+479
+00:26:59,369 --> 00:27:01,440
+团队一起讨论这件事：我们必须突破。
+about this as a team, like, we need to break through.
+
+480
+00:27:01,720 --> 00:27:04,827
+显然，Meta 有很多分发渠道，
+And obviously like Meta, we have lots of distribution,
+
+481
+00:27:04,827 --> 00:27:08,745
+我们可以确保每个人都知道它，
+like we can make sure everyone knows about it, but that's not enough to
+
+482
+00:27:08,745 --> 00:27:12,663
+但这还不够让它以一种有趣、有文化吸引力、
+like make it break through in an interesting cultural or fascinating
+
+483
+00:27:12,663 --> 00:27:16,040
+让人着迷的方式突破，让全世界真正注意到。
+way for the world to kind of like, you know, pay attention to.
+
+484
+00:27:16,800 --> 00:27:25,091
+我生活中碰巧认识并和一些做迷因的人成了朋友，
+I separately in my life happen to have met and become friends with, like, memers and, uh,
+
+485
+00:27:25,091 --> 00:27:33,950
+我亲切地称他们为我的 schizo 朋友，但这些人真的会……
+I have these — I affectionately call them my schizo friends — but people who, like, literally.
+
+486
+00:27:34,030 --> 00:27:37,052
+他们整天都在想互联网上的迷因，
+They spend all their day thinking about memes on the internet
+
+487
+00:27:37,052 --> 00:27:40,430
+也理解我身边有一群对 Muse 非常痴迷的人。
+and understanding that I have people that are obsessive about Muse.
+
+488
+00:27:40,880 --> 00:27:43,267
+他们也很痴迷你的 X 信息流，
+And they're also obsessed with your X feed
+
+489
+00:27:43,267 --> 00:27:48,040
+他们坚信你有 100 个 muse（灵感）在帮你想关于 Muse 的迷因。
+and they're convinced that you have like 100 muses coming up with memes to meme Muse.
+
+490
+00:27:49,400 --> 00:27:53,480
+不，你只是有一群极度沉迷网络的“精神分裂”朋友。
+Um, no, you just have a collection of schizophrenic friends that are terminally online.
+
+491
+00:27:53,760 --> 00:27:57,587
+顺便说一下，X 信息流里的每条推文真的都是我自己写的。
+The X feed, just for what it's worth, is like literally every one of those
+
+492
+00:27:57,587 --> 00:28:01,543
+有相当长一段时间，
+tweets I write. There was, like, quite a period where it was really hard for
+
+493
+00:28:01,543 --> 00:28:05,370
+我在会上很难集中注意力，因为我会突然想到一个迷因。
+me to pay attention in meetings because I would just like think of a meme.
+
+494
+00:28:05,410 --> 00:28:07,170
+然后我会想，天哪，我必须发出来。
+And I'd be like, oh, God, I have to get this out.
+
+495
+00:28:07,170 --> 00:28:10,210
+那就像灵感迸发的时刻。
+And it was like, it was like moments of inspiration.
+
+496
+00:28:10,370 --> 00:28:13,468
+有一次，我试着
+There was, um, I was with one of my — I was trying to
+
+497
+00:28:13,468 --> 00:28:16,877
+和一位同事吃晚饭，吃到一半我突然说，
+have dinner with one of my coworkers, and then during
+
+498
+00:28:16,877 --> 00:28:20,130
+等等，我想到了。
+the dinner I was like, wait, wait, I figured it out.
+
+499
+00:28:20,130 --> 00:28:21,410
+然后我发了一个不同的迷因。
+And then I posted a different meme.
+
+500
+00:28:21,450 --> 00:28:25,025
+我几乎觉得自己又像工程师在解 bug 一样，
+It was almost — I almost felt like I was an engineer solving bugs again,
+
+501
+00:28:25,025 --> 00:28:28,970
+因为你能感觉到某个东西什么时候会火。
+because it was like, you know, you could tell when something was gonna click.
+
+502
+00:28:29,320 --> 00:28:31,360
+总之，一件事是我们想突破。
+But yeah, so one thing is we wanted to break through.
+
+503
+00:28:31,680 --> 00:28:34,340
+另一件我觉得重要的事是，
+Another thing that, like, I just thought was
+
+504
+00:28:34,340 --> 00:28:37,360
+怎么让 Meta 重新变得酷。
+important is, like, how do we make Meta cool again?
+
+505
+00:28:37,440 --> 00:28:40,098
+因为，不管什么原因，
+Because, like, for whatever reason,
+
+506
+00:28:40,098 --> 00:28:48,073
+尽管 Meta 历史上拥有 Instagram 和 Facebook 这些极具文化影响力的软件，
+despite having like these incredible pieces of cultural software like Instagram and Facebook historically,
+
+507
+00:28:48,073 --> 00:28:50,045
+但 Meta 有一段时间并不酷，
+Meta was not cool for a while
+
+508
+00:28:50,045 --> 00:28:51,760
+所以我们想让它……
+and so wanted to make...
+
+509
+00:28:52,690 --> 00:28:55,330
+让 Meta 变得酷、有趣，还有点好笑。
+Meta, cool and interesting and kind of like funny.
+
+510
+00:28:55,570 --> 00:29:01,890
+而那种“放飞自我”是随着时间自然发生的。
+And then the unhingedness was something that happened kind of like naturally over time.
+
+511
+00:29:02,050 --> 00:29:07,010
+Muse 刚推出时，我主要专注于推广我看到的那些有趣用例。
+When Muse first came out, I was just like mostly focused on promoting all the interesting use cases that I saw.
+
+512
+00:29:07,210 --> 00:29:10,751
+我转发了大概几十个我看到的有趣用例，
+I was retweeting like tens of interesting use cases
+
+513
+00:29:10,751 --> 00:29:12,810
+都是人们使用 Muse 的方式。
+that I saw, people using Muse.
+
+514
+00:29:13,350 --> 00:29:16,473
+到某个时候，因为我发得太多了，
+And then at some point it was like, because I was just tweeting
+
+515
+00:29:16,473 --> 00:29:19,168
+有几条推文我就是没怎么想，
+so much, there were a few tweets where I was just like,
+
+516
+00:29:19,168 --> 00:29:22,230
+直接“算了，发”。
+didn't think that much about it and just like, fuck it, post.
+
+517
+00:29:22,630 --> 00:29:24,710
+然后其中一些推文效果特别好。
+And then some of those tweets, like, did really well.
+
+518
+00:29:24,990 --> 00:29:25,750
+你看到这个了吗？
+Have you seen this?
+
+519
+00:29:25,790 --> 00:29:27,190
+比如，你会花时间思考它吗？
+Like time spent thinking about it?
+
+520
+00:29:27,190 --> 00:29:29,390
+然后爆了，你看到那张图了吗？
+And then banger, you see that graph?
+
+521
+00:29:29,390 --> 00:29:30,710
+我还没看到，但我同意这个说法。
+I haven't seen it, but I agree with that.
+
+522
+00:29:30,750 --> 00:29:33,950
+就像，我有些东西没花那么多时间在上面。
+That's like, I just— some things I didn't spend that much time on.
+
+523
+00:29:34,030 --> 00:29:35,190
+我就发推了。
+I, like, tweeted them.
+
+524
+00:29:35,190 --> 00:29:36,630
+我甚至几个小时都没看手机。
+I didn't even check my phone for a few hours.
+
+525
+00:29:36,630 --> 00:29:38,430
+然后我就想，哦，哇，那条反响真好。
+And I was like, oh, wow, that one went really well.
+
+526
+00:29:38,780 --> 00:29:41,799
+然后我有点想起了关于互联网的一些事，
+And I kind of, like, remembered something about the internet,
+
+527
+00:29:41,799 --> 00:29:44,527
+这也不是特别有意识，
+which I, it wasn't super intentional, but I remembered,
+
+528
+00:29:44,527 --> 00:29:47,139
+但我想起来，互联网奖励冒险，奖励惊喜，
+like, the internet rewards risk and it rewards, like,
+
+529
+00:29:47,139 --> 00:29:50,100
+奖励那些人们意想不到的东西。
+surprise and, like, things that, like, people don't expect.
+
+530
+00:29:50,620 --> 00:29:52,966
+于是我就有点放飞了。
+And so then I just kind of, like, went off.
+
+531
+00:29:52,966 --> 00:29:54,207
+我很多同事，
+A lot of my coworkers,
+
+532
+00:29:54,207 --> 00:30:01,520
+我觉得他们有点惊讶的是，在我发迷因的那一整周，Nat 说了些话。
+uh, I think were somewhat surprised at, uh, something that, um, Nat said for, for the whole week when I was posting all the memes.
+
+533
+00:30:01,640 --> 00:30:05,800
+他就说，你知道，我以为我们会学到——他在好多会上都这么说。
+He was like, you know, I thought we would learn—he said this like in a bunch of meetings.
+
+534
+00:30:05,840 --> 00:30:11,827
+他说，我以为我们会了解到很多关于 Muse 用户、大家怎么用 Muse 的东西，
+He was like, I thought we were going to learn a lot about, um, you know, Muse users and like, how people were using Muse,
+
+535
+00:30:11,827 --> 00:30:15,160
+但实际上，我们只是在深入了解 Alex 的脑子。
+but actually, like, we're just learning a lot about Alex's mind.
+
+536
+00:30:15,840 --> 00:30:18,240
+那真的很好玩。
+And it was a lot of fun.
+
+537
+00:30:18,440 --> 00:30:25,630
+我觉得我是在调动多年多年积累的互联网知识，把它们用在那几个时刻。
+I felt like I was drawing on all of my internet knowledge for years and years and years to like pull into those moments.
+
+538
+00:30:25,830 --> 00:30:29,150
+我觉得它实际上，你知道，我没有、我们没有追踪数据，所以很难说。
+And I think it actually, you know, I don't— we don't have the tracking and it's like hard to tell.
+
+539
+00:30:29,150 --> 00:30:34,110
+但我真的认为它确实对增长产生了影响，这有点好笑。
+But I actually think it actually genuinely made an impact on growth, which is kind of hilarious.
+
+540
+00:30:34,270 --> 00:30:35,230
+我绝对认为它确实有影响。
+I definitely think it did.
+
+541
+00:30:36,630 --> 00:30:37,710
+我不停听到这件事。
+I can't stop hearing about it.
+
+542
+00:30:37,750 --> 00:30:39,679
+而且我听到谈起它的那些人，
+So, and all the people I'm hearing about it from
+
+543
+00:30:39,679 --> 00:30:41,510
+也都下载了应用并开始用了。
+also downloaded the app and are now using it.
+
+544
+00:30:41,990 --> 00:30:43,110
+不过，回到你刚才说的。
+Go back to what you were saying, though.
+
+545
+00:30:43,150 --> 00:30:44,585
+就像说，嘿，我们有分发渠道，
+It's like, hey, we have distribution, but
+
+546
+00:30:44,585 --> 00:30:46,512
+但这并不意味着我们就能做出人们会回来用、
+that doesn't mean that we can make something that people
+
+547
+00:30:46,512 --> 00:30:48,070
+真正有黏性的东西。
+are going to come back to and actually sticky.
+
+548
+00:30:48,230 --> 00:30:49,630
+那你们是怎么在 Muse 上做到的？
+So like how did you do this with Muse?
+
+549
+00:30:49,990 --> 00:30:54,070
+我觉得问题在于，怎么把这个变成——我们怎么把它做成产品上的突破？
+I think it was like, how do you make this into— how do we, how do we make this breakthrough as a product?
+
+550
+00:30:54,070 --> 00:30:57,359
+我觉得有几个方面，但其中一点是：
+And I think there were like a few parts of that, but I think one is
+
+551
+00:30:57,359 --> 00:30:59,699
+你怎么让人获得那种体验？
+how do you get people to have the experience?
+
+552
+00:30:59,699 --> 00:31:01,470
+比如你怎么让一个人……
+Like how do you get someone to, to—
+
+553
+00:31:02,360 --> 00:31:04,880
+尽早体验到产品的“哇”时刻。
+A wow moment with the product as early as possible.
+
+554
+00:31:05,080 --> 00:31:08,142
+而这款产品，我觉得天然适合做到这点，
+And this product, I think naturally lends itself to that
+
+555
+00:31:08,142 --> 00:31:11,400
+因为它是 AI，能做很多事。
+because I think, you know, it's like, it's AI, it can do a lot.
+
+556
+00:31:11,440 --> 00:31:14,572
+如果有人从没用过 AI 智能体，
+It can, there's like, if, if someone has never used an AI
+
+557
+00:31:14,572 --> 00:31:17,840
+它能做很多让你惊讶的事。
+agent, there's a lot that it can do that will surprise you.
+
+558
+00:31:17,880 --> 00:31:21,960
+所以我觉得那是很重要的一部分。另一部分则是……
+So that I think, was a big part of it. I think another part of it was like.
+
+559
+00:31:22,950 --> 00:31:29,630
+你怎么收集人们这些“哇”时刻的故事，并用它们来帮忙？
+How do you harness all of those stories of people having these wow moments and like, use those to help?
+
+560
+00:31:30,700 --> 00:31:32,900
+让产品自己唱歌、飞起来。
+Make the product sing and make the product fly.
+
+561
+00:31:33,260 --> 00:31:34,540
+但你怎么用这些故事呢？
+How are you using the stories, though?
+
+562
+00:31:34,580 --> 00:31:36,700
+因为你们没有给 Muse 投广告，对吧？
+Because you, you guys aren't running ads for Muse, are you?
+
+563
+00:31:36,740 --> 00:31:37,660
+我们投过几个广告。
+We ran a few ads.
+
+564
+00:31:37,780 --> 00:31:43,060
+老实说，我觉得一开始只是我会大量转发它们。
+I mean, honestly, like I think at first it was just the fact that I would retweet so many of them.
+
+565
+00:31:43,100 --> 00:31:43,380
+对。
+Yeah.
+
+566
+00:31:43,460 --> 00:31:47,700
+每当我看到有人用 Muse 做了有趣的事，我就会引用转发。
+Like, I was just, any time I saw someone do something interesting about Muse, I was like, quote, tweet.
+
+567
+00:31:47,900 --> 00:31:51,934
+我不明白为什么 Anthropic 和 OpenAI（AI 公司）的广告都那么差，
+I couldn't understand why both Anthropic and OpenAI's, um, ads are so bad,
+
+568
+00:31:51,934 --> 00:31:55,967
+因为记得 Anthropic 之前做了大型户外广告，
+because remember Anthropic was doing this huge, like, outdoor campaign,
+
+569
+00:31:55,967 --> 00:31:57,268
+内容全是在讲他们自己，
+and it's all about them,
+
+570
+00:31:57,268 --> 00:31:59,090
+ChatGPT 也一样。
+and same thing with, um, ChatGPT.
+
+571
+00:31:59,290 --> 00:32:00,928
+就像他们的广告里会放那个图标——
+It's like they'd have like the, the icon,
+
+572
+00:32:00,928 --> 00:32:03,000
+我甚至不觉得大家认得那是个 logo——
+which I don't even think people recognize as a logo,
+
+573
+00:32:03,000 --> 00:32:03,964
+然后写着 Codex，
+and they just say Codex,
+
+574
+00:32:03,964 --> 00:32:05,650
+画面只是两个人坐在桌前。
+and it's just two people sitting at a desk.
+
+575
+00:32:05,690 --> 00:32:06,970
+我心想，这他妈到底是什么意思？
+I'm like, what the fuck does this mean?
+
+576
+00:32:07,170 --> 00:32:09,704
+你们有那么多使用场景，
+Where it's like you have all these use cases, all you have
+
+577
+00:32:09,704 --> 00:32:12,130
+你的广告只需要展示产品的价值。
+to do with your ad is show the benefit of your products.
+
+578
+00:32:12,650 --> 00:32:13,130
+就这样。
+That's it.
+
+579
+00:32:13,330 --> 00:32:14,610
+是啊，你们有几百万个。
+Yeah, you have millions of them.
+
+580
+00:32:14,940 --> 00:32:15,740
+就投那些广告。
+Run those ads.
+
+581
+00:32:15,860 --> 00:32:19,980
+这太基础了，有意思的是人们一遍遍地犯这个错。
+It's, it's so like elementary that it's interesting that people make this mistake over and over again.
+
+582
+00:32:20,220 --> 00:32:28,364
+是啊，我觉得我们做 Muse 以及在 Meta 做东西时反复回到的一点就是：
+Yeah, I think one thing that we came back to a lot in in both building Muse as well as just like building stuff in general at Meta was just like,
+
+583
+00:32:28,364 --> 00:32:29,780
+别人为什么要在乎？
+why would someone care?
+
+584
+00:32:30,060 --> 00:32:31,460
+他们不在乎你或你的公司。
+They don't care about you or your company.
+
+585
+00:32:31,540 --> 00:32:33,020
+他们在乎的是每个人自己的利益。
+They care about everybody's self-interest.
+
+586
+00:32:33,220 --> 00:32:36,020
+我是说，有本非常老的书。
+This is like, I mean, there's this very old book.
+
+587
+00:32:36,380 --> 00:32:37,380
+书名叫《Scientific Advertising》。
+It's called Scientific Advertising.
+
+588
+00:32:37,460 --> 00:32:38,980
+写于 1900 年代早期。
+It was written in the early 1900s.
+
+589
+00:32:39,100 --> 00:32:39,540
+它现在……
+It's now.
+
+590
+00:32:39,900 --> 00:32:40,800
+这本书太有价值了，
+It was so valuable
+
+591
+00:32:40,800 --> 00:32:45,473
+在二三十年代作为广告公司创始人赚得最多的那个人——
+that the guy who made the most money as an advertising agency founder in, like, the 1920s and '30s—
+
+592
+00:32:45,473 --> 00:32:47,780
+它就是这个人写的，他叫 Claude Hopkins。
+it was written by this guy named Claude Hopkins.
+
+593
+00:32:47,780 --> 00:32:48,740
+他是最顶尖的文案写手。
+He was the best copywriter.
+
+594
+00:32:48,940 --> 00:32:51,060
+他就像在说：这些就是我怎么赚钱的全部思路。
+He's like, these are all the ideas for how I'm making this money.
+
+595
+00:32:51,140 --> 00:32:53,420
+我把这份手稿放在保险箱里 20 年。
+I'm putting this manuscript in a safe for 20 years.
+
+596
+00:32:53,820 --> 00:32:54,100
+对吧。
+Right.
+
+597
+00:32:54,140 --> 00:32:55,780
+但本质上，这本书不是讲广告。
+But essentially, it's not about advertising.
+
+598
+00:32:55,860 --> 00:32:57,260
+它讲的是人性，而人性不会变。
+It's about human nature, which doesn't change.
+
+599
+00:32:57,540 --> 00:32:59,870
+他的核心观点就是：你的广告讲的都是你自己。
+And his whole point was just like your ads are about you.
+
+600
+00:32:59,910 --> 00:33:00,830
+你的广告讲的都是你的产品。
+Your ads are about your product.
+
+601
+00:33:00,870 --> 00:33:02,670
+你的广告就像在说：嘿，我有这个东西，买吧。
+Your ads are like, hey, I have this thing— buy.
+
+602
+00:33:03,070 --> 00:33:03,870
+人们根本不在乎这些。
+People don't care about that.
+
+603
+00:33:03,910 --> 00:33:04,630
+他们是关心自身利益的。
+They're self-interested.
+
+604
+00:33:04,870 --> 00:33:07,737
+你只需要展示它能为你做什么，
+And if you just—all you have to do is just do the trick
+
+605
+00:33:07,737 --> 00:33:10,670
+然后直接以此作为切入点。
+of what this does for you, and you just lead with that.
+
+606
+00:33:11,310 --> 00:33:15,743
+还有人吸收这些理念——这些理念早在 20 世纪初就出现了——后来创办了大型公司、
+And there's people that took those ideas—those ideas were in the early 1900s—and went on to build
+
+607
+00:33:15,743 --> 00:33:20,230
+广告公司，创始人横跨 50、60、70 年代，甚至到今天。
+massive companies, advertising agency founders, totally '50s, '60s, '70s, and even to this day.
+
+608
+00:33:20,470 --> 00:33:21,350
+对，百分之百同意。
+Yeah, 100 percent.
+
+609
+00:33:21,870 --> 00:33:24,390
+我觉得有几个洞察吧。
+I think there are a few insights, let's say.
+
+610
+00:33:24,550 --> 00:33:32,651
+首先，世界上大多数人根本不在乎 OpenAI、那些研究、其他公司、研究，
+First is most people in the world, they don't give a shit about, like, OpenAI or the research or these other companies or the research
+
+611
+00:33:32,651 --> 00:33:35,008
+甚至我们或我们的研究，
+or even us or our research or whatever.
+
+612
+00:33:35,008 --> 00:33:37,806
+他们只在乎它能为自己做什么。
+They care about, like, what it can do for them.
+
+613
+00:33:37,806 --> 00:33:40,310
+我们有一个礼物，就是那个吉祥物，也就是——
+We had this gift of the mascot, which was—
+
+614
+00:33:40,310 --> 00:33:41,510
+那个小小的 Jolly 形象。
+The little Jolly guy.
+
+615
+00:33:42,170 --> 00:33:44,788
+我记得那条推文，当时我意识到：
+I remember the tweet where I, where I realized,
+
+616
+00:33:44,788 --> 00:33:47,338
+“哦，哇，这个形象很有发挥空间。
+I was like, oh, wow, this is mileage, because I
+
+617
+00:33:47,338 --> 00:33:50,090
+”因为我当时基本是在开车上班的路上。
+was basically, I was, um, I was driving into work.
+
+618
+00:33:50,690 --> 00:33:56,156
+在路上，我生成了一版这个家伙提着公文包的形象，
+Uh, and while I was on the way, I like generated a version of the
+
+619
+00:33:56,156 --> 00:34:02,050
+然后发推：“MFW，我周一去上班”。
+guy holding a briefcase and I tweeted, "MFW I go to work on Monday."
+
+620
+00:34:02,370 --> 00:34:03,648
+我记得当时心想，
+I remember thinking, like, this is
+
+621
+00:34:03,648 --> 00:34:04,970
+这是我近期最好的推文之一。
+like one of my best tweets in a while.
+
+622
+00:34:05,050 --> 00:34:06,486
+然后我逐渐意识到，
+And then I kind of realized, like,
+
+623
+00:34:06,486 --> 00:34:08,230
+你可以把他放到很多场景里。
+you can put them into a lot of situations.
+
+624
+00:34:08,510 --> 00:34:13,798
+在这个过程中我逐渐意识到的一点是，
+One thing I kind of realized as we were going through that process was, like, how do you create
+
+625
+00:34:13,798 --> 00:34:19,910
+如何创造出与你看过的任何产品营销都截然不同的惊喜时刻。
+surprising moments that are very different from any other marketing that you've seen of, like, a product?
+
+626
+00:34:20,390 --> 00:34:21,270
+我好像真的不……
+I don't, like, really.
+
+627
+00:34:21,270 --> 00:34:27,470
+我想不起来上一次有人用这种有些出格的 meme 来营销产品是什么时候了。
+Remember the last time someone, like, you know, leaned into racy memes to, like, market a product?
+
+628
+00:34:27,820 --> 00:34:29,702
+我其实不知道以前有没有人这样做过，
+Um, I don't actually know if it's been done before,
+
+629
+00:34:29,702 --> 00:34:31,628
+但我有点意识到，哦，哇，
+but I kind of, like, realize, like, oh, wow, this is,
+
+630
+00:34:31,628 --> 00:34:33,420
+我们可以用这个小家伙来做这样的事。
+like, a thing that we can do with this little guy.
+
+631
+00:34:33,780 --> 00:34:35,220
+而这件事本身很有趣。
+And that's something that, like, is interesting.
+
+632
+00:34:35,300 --> 00:34:38,660
+这件事能激发普通人的好奇心。
+That's something that, like, drives intrigue to, like, the average person.
+
+633
+00:34:38,860 --> 00:34:39,060
+好。
+Okay.
+
+634
+00:34:39,060 --> 00:34:40,680
+但那可能只是提高认知，
+But that might raise awareness,
+
+635
+00:34:40,680 --> 00:34:42,660
+甚至让他们下载应用。
+might even get them to download the app.
+
+636
+00:34:42,740 --> 00:34:50,420
+但接下来你怎么让他们在应用已经装到手机上之后继续使用？有一类人会经历一个循环——
+But then how do you get them to stay engaged once the app is—the app is on their phone? There's a cycle that people who—
+
+637
+00:34:51,400 --> 00:34:56,838
+那些真正喜欢这款应用的人——我们在二月份就见过——这个循环是：
+Who really love the app, and we even, like, back in February, we had—which is you
+
+638
+00:34:56,838 --> 00:35:02,440
+你试着给它一件小事，它做到了，你会觉得“哇，它做到了”。
+try to give it a little thing and it does it, and you're like, "Oh, wow, it did that."
+
+639
+00:35:02,440 --> 00:35:06,560
+然后你试着给它稍微多一点的事情，它又做到了。
+And then you try to give it a little bit—something like a little bit more—and then it does it.
+
+640
+00:35:06,560 --> 00:35:08,200
+你会觉得“哇，这也能做到”。
+And you're like, "Oh, wow, it can do that."
+
+641
+00:35:08,400 --> 00:35:11,291
+它能做第一件事，然后你再给它第二件事，
+It could do that first thing and you do the second thing, and
+
+642
+00:35:11,291 --> 00:35:14,240
+接着你给它一个稍微更大一点的问题。
+then you give it, like, a little bit bigger of a, of a problem.
+
+643
+00:35:14,730 --> 00:35:18,540
+这几乎就像是你和 AI 智能体之间的“信任背摔”：
+And it's kind of this, like, trust fall almost that you have with an AI agent,
+
+644
+00:35:18,540 --> 00:35:22,955
+起初你并不真正信任它，但你有点好奇，
+which is at first you, like, don't really trust it, but you're, like, kind of intrigued,
+
+645
+00:35:22,955 --> 00:35:25,435
+所以你会先给它一点点尝试，
+so you're going to give it a little bit of a nibble,
+
+646
+00:35:25,435 --> 00:35:27,370
+然后再给它一些……
+and then you give it, like, something—
+
+647
+00:35:27,370 --> 00:35:29,410
+更大一点、再更大一点、再更大一点的事情。
+A little bigger, and something a little bigger, and something a little bigger.
+
+648
+00:35:29,850 --> 00:35:32,735
+当然，当我和大学生们聊天时，
+Certainly, like, when I talk to, like, college students or whatever,
+
+649
+00:35:32,735 --> 00:35:35,570
+人们使用 AI 的某些方式就像一次完全的信任背摔。
+like, some of the ways that people use AI, it's like a full trust fall.
+
+650
+00:35:35,770 --> 00:35:38,306
+他们只是录下语音备忘录，
+They just, like, are recording voice notes and brain
+
+651
+00:35:38,306 --> 00:35:40,842
+把脑中的东西全部倒给 AI，然后发送，
+dumping to the AI, and they send it, and then they just
+
+652
+00:35:40,842 --> 00:35:43,840
+并信任 AI 能整理所有想法，
+trust the AI to, like, organize all the thoughts and give them,
+
+653
+00:35:43,840 --> 00:35:46,030
+给出清晰的计划，以及明确要做的事情。
+like, clear plans and like clear things to do.
+
+654
+00:35:46,030 --> 00:35:46,470
+等等。
+Et cetera.
+
+655
+00:35:47,030 --> 00:35:49,984
+我觉得对那些成功的 Muse 用户来说，
+I think for the successful users of Muse, it really is
+
+656
+00:35:49,984 --> 00:35:52,736
+其实就是让他们进入这个信任背摔的过程：
+like getting them onto this trust fall process of
+
+657
+00:35:52,736 --> 00:35:56,025
+用它处理越来越大的事情，
+using it for slightly bigger and bigger and bigger things,
+
+658
+00:35:56,025 --> 00:35:58,710
+并且每一次都能成功。
+and then having it work every one of those times.
+
+659
+00:36:00,000 --> 00:36:03,314
+我在读《0 to 1》时找到了一句我一直很喜欢的引语：
+I found one of my all-time favorite quotes when I was reading the book,
+
+660
+00:36:03,314 --> 00:36:06,286
+“我注意到最强大的一种模式是，
+0 to 1. The quote says, "The single most powerful pattern I have
+
+661
+00:36:06,286 --> 00:36:09,600
+成功的人会在意想不到的地方发现价值。”
+noticed is that successful people find value in unexpected places."
+
+662
+00:36:10,080 --> 00:36:14,760
+他们之所以能做到这一点，是因为他们从第一性原理而不是公式出发来思考商业。
+And they do this by thinking about business from first principles instead of formulas.
+
+663
+00:36:14,960 --> 00:36:18,554
+这正是 Applovin 在其广告平台上所做的。
+That is exactly what Applovin has done with their advertising platform.
+
+664
+00:36:18,554 --> 00:36:21,854
+Applovin 帮你触达移动游戏中超过 10 亿的潜在新客户，
+Applovin connects you with over 1 billion potential new customers
+
+665
+00:36:21,854 --> 00:36:25,330
+让你获得用户的全神贯注。
+in mobile games. Applovin allows you to capture undivided attention.
+
+666
+00:36:25,850 --> 00:36:27,899
+Applovin 广告是全屏视频，
+Applovin ads are full-screen videos
+
+667
+00:36:27,899 --> 00:36:30,410
+平均观看时长为 35 秒。
+that are watched for an average of 35 seconds.
+
+668
+00:36:30,690 --> 00:36:34,250
+这种留存表现远超其他广告平台。
+That is retention that blows other ad platforms out of the water.
+
+669
+00:36:34,570 --> 00:36:36,650
+而且你可以在几分钟内就在 Applovin 上启动。
+And you can launch on Applovin in minutes.
+
+670
+00:36:37,090 --> 00:36:39,130
+你设定目标，Applovin 来实现。
+You set the goal and Applovin achieves it.
+
+671
+00:36:39,370 --> 00:36:41,760
+无需复杂设置，无需专业知识，
+No complex setup, no expertise needed,
+
+672
+00:36:41,760 --> 00:36:43,570
+Applovin 能快速扩展。
+and Applovin scales quickly.
+
+673
+00:36:43,890 --> 00:36:46,930
+他们能把你的广告展示给超过 10 亿潜在客户。
+They can put your ads in front of over 1 billion potential customers.
+
+674
+00:36:47,500 --> 00:36:49,880
+其他企业已经看到立竿见影的效果，
+Other businesses have seen immediate results,
+
+675
+00:36:49,880 --> 00:36:52,380
+日消耗规模扩大到数十万美元，
+scale to hundreds of thousands of dollars of spend
+
+676
+00:36:52,380 --> 00:36:54,820
+收入增长数百万美元。
+per day, and increase their revenue by millions.
+
+677
+00:36:55,220 --> 00:36:58,635
+所以，你要趁所有竞争对手都上 Applovin 之前迅速开始，
+So you want to get started quickly before all of your competitors
+
+678
+00:36:58,635 --> 00:37:01,860
+你可以通过访问 Applovin.com 来实现。
+are on Applovin, and you can do that by going to Applovin.com.
+
+679
+00:37:02,100 --> 00:37:03,740
+网址是 Applovin.com。
+That's Applovin.com.
+
+680
+00:37:05,020 --> 00:37:07,940
+我想知道这在多大程度上其实靠的是口碑传播。
+I wonder how much of this is actually driven by word of mouth.
+
+681
+00:37:08,340 --> 00:37:09,996
+显然，因为要和你聊，
+So obviously, talking to you,
+
+682
+00:37:09,996 --> 00:37:12,380
+我无论如何都会下载这个应用。
+I was gonna download the app no matter what.
+
+683
+00:37:12,380 --> 00:37:18,500
+但真正激发我兴趣的是，我的一个朋友给我发了他使用 Muse 的截图。
+But what really piqued my interest is a friend of mine was sending me screenshots of how he was using Muse.
+
+684
+00:37:18,900 --> 00:37:20,743
+当你下载这个应用后，
+So like, when you download the app, it doesn't really
+
+685
+00:37:20,743 --> 00:37:22,460
+它其实不会告诉你太多你能做什么。
+tell you, like, too much of, like, what you can do.
+
+686
+00:37:22,460 --> 00:37:24,131
+它有点像一个开放式、你知道的，
+It's kind of like open-ended, like,
+
+687
+00:37:24,131 --> 00:37:25,580
+就像一个开放的文本框。
+you know, like an open text box.
+
+688
+00:37:26,020 --> 00:37:30,240
+但我一个经营着千亿美元公司的朋友，他把自己的 ID 落在了……
+But a friend of mine who's running, like, a hundred billion dollar company, he left his ID.
+
+689
+00:37:30,880 --> 00:37:33,210
+落在了 Flexjet 私人飞机上，
+On a Flexjet, and then he just went through and he's just
+
+690
+00:37:33,210 --> 00:37:34,982
+然后他就直接说，他告诉我：
+like, "Well, I want to—" he was telling me,
+
+691
+00:37:34,982 --> 00:37:37,160
+“我完全不想参与这个过程。”
+"I don't want to be involved in this process at all."
+
+692
+00:37:37,240 --> 00:37:39,929
+你必须想办法拿到证件——比如去取证件——它在这个位置，
+You have to figure out how to get the ID—like, go pick up the ID—this
+
+693
+00:37:39,929 --> 00:37:42,667
+然后我在这个位置，
+is where it's at and then this is where I'm at, and then figure out all
+
+694
+00:37:42,667 --> 00:37:45,600
+再搞清楚沿途所有步骤。结果它安排了快递员过去。
+the steps along the way. And it, like, arranged the courier, went there.
+
+695
+00:37:45,960 --> 00:37:48,692
+居然通过了他的安保，进到了他办公室，
+Got past his security, to his office somehow, and got
+
+696
+00:37:48,692 --> 00:37:51,610
+还上了楼，到了他办公室——感觉就像“天哪”。
+upstairs to his office, like—and it was like, holy shit.
+
+697
+00:37:51,770 --> 00:37:52,690
+这是最好的营销。
+This is the best marketing.
+
+698
+00:37:52,770 --> 00:37:55,025
+只是三四张 Muse 来回对话的截图，
+It's just three or four screenshots of Muse going back
+
+699
+00:37:55,025 --> 00:37:57,330
+以及他说“我不想参与”。
+and forth and him saying, "I don't want to be involved."
+
+700
+00:37:57,450 --> 00:37:59,570
+你必须把一切搞定，而它在过程中自己想办法。
+You have to do everything, and it figures it out on the way.
+
+701
+00:37:59,850 --> 00:38:00,170
+是啊。
+Yeah.
+
+702
+00:38:00,170 --> 00:38:06,376
+不，这其实是其中一点——我不确定这在多大程度上是有意的，
+No, this is actually one of the things about, um—I don't know how, it was like somewhat intentional,
+
+703
+00:38:06,376 --> 00:38:11,610
+但现代产品营销确实非常依赖截图。
+but definitely, like, modern product marketing is, like, very screenshot driven.
+
+704
+00:38:11,940 --> 00:38:14,140
+我觉得，要做一个现代消费级产品，
+Like, I think to have a modern consumer product,
+
+705
+00:38:14,140 --> 00:38:15,900
+它必须能在一张截图上就成立。
+like, it has to work on the screenshot.
+
+706
+00:38:16,060 --> 00:38:19,784
+也就是说，截图必须能“飞”起来，
+Like, the screenshot has to, has to fly, so to speak, either
+
+707
+00:38:19,784 --> 00:38:23,660
+可以是通过群聊、口碑传播或线上传播。
+through, like, group chats or word of mouth or, like, online.
+
+708
+00:38:24,180 --> 00:38:25,660
+我认为这一直是其中很重要的一部分。
+And I think that's been a big part of it.
+
+709
+00:38:25,700 --> 00:38:31,126
+这并不是有意设计或工程安排的，但我认为截图里有这个小家伙是件大事，
+This wasn't intentional or engineered, but I think the fact that we had the little guy in the
+
+710
+00:38:31,126 --> 00:38:36,981
+因为截图里有 Jolly——或者你自己的 Muse——就会立刻传达出：
+screenshot was a big deal, because I think having Jolly—or whoever your Muse is—in the screenshot
+
+711
+00:38:36,981 --> 00:38:43,050
+这是 Muse 的截图。这简直是最好的营销，你能……
+immediately communicates, “This is a Muse screenshot.” It's just like the best marketing you could.
+
+712
+00:38:43,050 --> 00:38:43,490
+可能拥有。
+Possibly have.
+
+713
+00:38:43,770 --> 00:38:45,610
+所以你整天都泡在 Muse 上吗？
+So are you on your Muse all day long?
+
+714
+00:38:45,690 --> 00:38:47,130
+那你自己的使用习惯是怎样的？
+Like, what is your own personal usage?
+
+715
+00:38:47,730 --> 00:38:50,883
+我主要是用它设置很多工作流，然后我，
+I mostly, like, set up a lot of workflows using it,
+
+716
+00:38:50,883 --> 00:38:54,573
+嗯——我想它很多时候也在我的会议里，
+and then I, um—I guess it's in my meetings a lot of the time,
+
+717
+00:38:54,573 --> 00:38:57,649
+但我，嗯——所以实际上，
+but I, um—so in practice, like, I think in my job,
+
+718
+00:38:57,649 --> 00:39:01,340
+在我“所谓”的工作里，我应该专心听并且……
+quote unquote, I'm supposed to, like, pay attention and.
+
+719
+00:39:01,500 --> 00:39:03,620
+并且非常投入，与人互动。
+And be pretty present and interact with people.
+
+720
+00:39:03,940 --> 00:39:05,666
+我设置了一大堆工作流，
+I set up a bunch of workflows and, like,
+
+721
+00:39:05,666 --> 00:39:07,500
+有点把它当作第二大脑。
+kind of treat it as, like, a second brain.
+
+722
+00:39:08,140 --> 00:39:10,349
+对，你在你写的那篇帖子里说过，
+Yeah, you said that in the post that you wrote,
+
+723
+00:39:10,349 --> 00:39:11,860
+那篇帖子真的很短。
+and it was, like, really short.
+
+724
+00:39:11,860 --> 00:39:13,140
+我记得上次看的时候，
+And I think I saw last time it was, like,
+
+725
+00:39:13,140 --> 00:39:14,340
+浏览量已经大概有 550 万了。
+five and a half million views so far.
+
+726
+00:39:14,660 --> 00:39:17,462
+但你写了——我很喜欢你描述 Muse 的方式——比如，
+But you said—I love how you describe Muse—like, well,
+
+727
+00:39:17,462 --> 00:39:20,700
+如果每个人除了自己的大脑之外还有第二个思考者，我觉得这……
+if everyone had a second mind beyond their own, I think this is.
+
+728
+00:39:21,860 --> 00:39:25,220
+从哲学上讲，最有趣的问题之一就是：
+Philosophically speaking, one of the most interesting
+
+729
+00:39:25,220 --> 00:39:28,294
+当你拥有强大的 AI 时，
+questions about, like, what does it mean to be human
+
+730
+00:39:28,294 --> 00:39:30,940
+身为人类意味着什么，那种关系是什么样的，
+when you have, like, powerful AI, and what is
+
+731
+00:39:30,940 --> 00:39:34,300
+又会具体呈现出什么样子？
+that relationship like, and how exactly does that look?
+
+732
+00:39:34,820 --> 00:39:38,020
+不同的人对那具体是什么样有不同的看法。
+And different people have different takes on what exactly that looks like.
+
+733
+00:39:38,060 --> 00:39:40,460
+我认为那种恐惧情景显然是：
+I think the sort of, like, fear case is obviously
+
+734
+00:39:40,460 --> 00:39:42,320
+AI 在我们之上，
+that, you know, AI is above us and that
+
+735
+00:39:42,320 --> 00:39:44,540
+我们只是在做它们做的事。
+we're just sort of, like, doing what they do.
+
+736
+00:39:44,580 --> 00:39:45,925
+还有另一些可能的世界里，
+And there's like other worlds where
+
+737
+00:39:45,925 --> 00:39:47,180
+这种关系会不一样。
+that relationship is different.
+
+738
+00:39:47,380 --> 00:39:49,420
+不过在你继续之前，你个人的观点是什么？
+Before you go on, what is your own personal view, though?
+
+739
+00:39:49,620 --> 00:39:50,620
+我真的很相信 Muse。
+I really believe in Muse.
+
+740
+00:39:50,700 --> 00:39:54,693
+我相信个人智能体是一种长期形态——拥有想要的东西、
+I believe in the personal agent as, like, a long-term form factor
+
+741
+00:39:54,693 --> 00:39:58,612
+欲望和梦想是人类的天性。
+of just—it is human nature to have wants and desires and dreams,
+
+742
+00:39:58,612 --> 00:40:02,161
+我认为像 Muse 这样的 AI
+and I think, like, AI and personal agents like Muse will be
+
+743
+00:40:02,161 --> 00:40:06,597
+和个人智能体会成为机制和桥梁，
+the mechanism and the bridge that enables us to accomplish those things
+
+744
+00:40:06,597 --> 00:40:10,220
+让我们实现这些目标并持续实现它们。然后，就像人类……
+and continue accomplishing them. And then, like, humans.
+
+745
+00:40:10,260 --> 00:40:11,940
+会梦想得越来越大。
+Will dream bigger and bigger and bigger and bigger.
+
+746
+00:40:12,140 --> 00:40:14,740
+孩子们会梦想拥有自己的星系之类的。
+Kids will dream of, like, having their own star systems or whatever.
+
+747
+00:40:14,740 --> 00:40:16,500
+而 Muse 会帮助他们做到。
+And, like, Muse will help them do that.
+
+748
+00:40:16,580 --> 00:40:20,354
+比如 Bezos 在某处写过——
+Like, there's this thing that, like, um, Bezos, uh, wrote in, like—
+
+749
+00:40:20,354 --> 00:40:23,251
+我想是在他的一封股东信里——
+well, I think it was one of his shareholder letters—
+
+750
+00:40:23,251 --> 00:40:29,451
+消费者的美妙之处在于，他们总是美丽地感到不满，
+which is, like, the beautiful thing about, uh, consumers is that they're, like, always beautifully unhappy,
+
+751
+00:40:29,451 --> 00:40:31,270
+或者类似的话。
+or something like that, or like.
+
+752
+00:40:31,270 --> 00:40:33,630
+对自己拥有的选择美丽地不满足。
+Beautifully unsatisfied with the options they have.
+
+753
+00:40:34,150 --> 00:40:36,870
+那就像是我们与 AI 关系的一种模式。
+That is, like, one modality of our relationship with AI.
+
+754
+00:40:37,070 --> 00:40:38,870
+我认为还有其他模式。
+I think that there's other modalities.
+
+755
+00:40:38,990 --> 00:40:43,510
+比如，我认为 AI 会开始越来越多地承担科学发现过程。
+Like, I think that AI will start doing more and more of the scientific discovery process.
+
+756
+00:40:43,990 --> 00:40:48,190
+我认为 AI 会开始越来越多地介入经济的各个部分。
+I think AIs will start inserting more and more into various parts of the economy.
+
+757
+00:40:48,630 --> 00:40:57,660
+但我确实长期相信这种形态：每个人都拥有一个支持他们、支持他们想要什么的 AI。
+But I do believe in this, like, form factor long term of everyone having an AI that supports them and what they want.
+
+758
+00:40:57,780 --> 00:41:02,780
+所以你认为 AI 有点像是在移除生活中的所有杂事，对吧——那些我们不想做的事。
+So you see AI as kind of, like, removing all, like, the clutter of life, right—the stuff that we don't want to do.
+
+759
+00:41:02,860 --> 00:41:07,015
+我觉得你在文章里说过类似的话：世界充满了各种守门人和障碍，
+I think in the piece you said something like, the world is full of, like, gatekeepers and obstacles,
+
+760
+00:41:07,015 --> 00:41:10,420
+而 Muse 能帮你绕过这些，不用你再花更多时间。
+and, like, Muse can get around this for you without spending any more of your time.
+
+761
+00:41:10,460 --> 00:41:12,020
+这样你就可以真正专注于你想做的事。
+So you can actually focus on stuff you want to do.
+
+762
+00:41:12,580 --> 00:41:20,580
+我认为 Muse 能带给每个人他们童年时梦想的那种成年生活。
+I think Muse can give everyone the adulthood they dreamed of in childhood.
+
+763
+00:41:21,060 --> 00:41:24,780
+每个人在小时候都有宏大的想法和宏大的梦想。
+Everyone, when they're kids, they have, like, big ideas and big dreams.
+
+764
+00:41:24,980 --> 00:41:28,637
+当他们想象自己的人生、试着推演时，
+And when they, like, imagine their life and they sort of, like,
+
+765
+00:41:28,637 --> 00:41:32,506
+他们会想象自己成为宇航员、
+you know, play it out, they imagine this life where they can, like,
+
+766
+00:41:32,506 --> 00:41:36,022
+拯救地球、改变世界，或任何可能的事。
+be an astronaut or they can save the planet or they can change
+
+767
+00:41:36,022 --> 00:41:39,750
+他们想得很大，而且……
+the world or, you know, whatever it might be. They think big and.
+
+768
+00:41:39,750 --> 00:41:42,793
+然后，由于各种原因，
+Then for, you know, a variety of reasons,
+
+769
+00:41:42,793 --> 00:41:47,269
+到人们完成学业、进入职场，
+by the time people finish school, they enter the workforce,
+
+770
+00:41:47,269 --> 00:41:50,850
+等他们在某个工作里待了一段时间后，
+by the time they, you know, have been in a job for a
+
+771
+00:41:50,850 --> 00:41:54,430
+所有那些希望和雄心……
+while, it's like all that hope and ambition and.
+
+772
+00:41:54,830 --> 00:41:57,634
+以及梦想的能力已经被抽走了。
+And the ability to dream has been sucked out of them now.
+
+773
+00:41:57,634 --> 00:41:59,950
+它是被打击掉的。生活把它打没了。
+It's been beaten out of them. Life has beaten.
+
+774
+00:42:01,240 --> 00:42:06,640
+我觉得，作为成年人，我们并没有真正意识到我们在多大程度上都像僵尸。
+I think as adults, I don't think we, like, just appreciate the degree to which we're all zombies.
+
+775
+00:42:07,120 --> 00:42:08,475
+我们失去了自主行动力，
+We lost our agency,
+
+776
+00:42:08,475 --> 00:42:12,708
+也失去了——我觉得“雄心”是个很贴切的词。
+and we lost our—I think ambition is really a good word for it.
+
+777
+00:42:12,708 --> 00:42:15,840
+广而言之，AI 的承诺之一就是这个。
+One of the promises of AI, broadly speaking.
+
+778
+00:42:15,880 --> 00:42:17,907
+我认为通过像 Muse 这样的产品，
+And I think through products like Muse
+
+779
+00:42:17,907 --> 00:42:20,060
+可以让它从你小时候延续下去——
+is to keep it going from when you're a kid—
+
+780
+00:42:20,060 --> 00:42:22,150
+你小时候有大梦想，
+like, you're a kid, you have big dreams,
+
+781
+00:42:22,150 --> 00:42:24,240
+就用 AI 帮助实现它们。
+use AI to help make those things happen.
+
+782
+00:42:24,570 --> 00:42:26,450
+然后梦想更大，把那些事做成。
+Then, like, dream bigger, make those things happen.
+
+783
+00:42:26,610 --> 00:42:27,850
+梦想更大，把那些事做成。
+Dream bigger, make those things happen.
+
+784
+00:42:28,010 --> 00:42:32,013
+而是有点像经历一条自主行动力的自动扶梯，
+And kind of, like, experience this, like, escalator of agency—an
+
+785
+00:42:32,013 --> 00:42:35,579
+一生中行动力不断提升；
+increase in agency throughout your life—versus a sort of,
+
+786
+00:42:35,579 --> 00:42:39,290
+而不是一开始有很多行动力，后来却被压碎。
+like, you have lots of agency and then it gets, like, crushed.
+
+787
+00:42:39,650 --> 00:42:44,379
+你刚才说话的时候我想到——你之前提到你
+You know what I was thinking of when you were speaking just now? You mentioned earlier this experience
+
+788
+00:42:44,379 --> 00:42:48,107
+和 Nat Friedman 经历过那种来自 AI 的令人不安的心理审视，
+that you and Nat Friedman went through where you had this, like, disturbing, uh,
+
+789
+00:42:48,107 --> 00:42:52,780
+好像从很多方面涌过来。就像，如果我们有反过来那种呢？
+psychological audit, in, like, ways coming in ways from this AI. It's like, yeah, what if we had that?
+
+790
+00:42:52,780 --> 00:42:53,980
+但它就像是反过来那样。
+But it's like the opposite of that thing.
+
+791
+00:42:54,020 --> 00:42:55,942
+它像是真的给了你更多自信，
+It's like actually gave you more self-confidence,
+
+792
+00:42:55,942 --> 00:42:58,222
+给了你一种理解：世界是可塑的；
+like gave you understanding like the world is malleable, and
+
+793
+00:42:58,222 --> 00:43:00,547
+如果你足够用力去推动它，带着足够的精力和驱动力去追求，
+if you push on it hard enough, you go after it with enough energy
+
+794
+00:43:00,547 --> 00:43:02,380
+你真的能改变你周围的世界。
+and drive, you can actually change it around you.
+
+795
+00:43:03,020 --> 00:43:07,822
+对，我认为这肯定是那些最令人印象深刻的创业者展现出来的特质，
+Yeah, I think this is something that, like, certainly the most impressive entrepreneurs exhibit,
+
+796
+00:43:07,822 --> 00:43:10,020
+也就是他们梦想很大。
+which is, like, I think they, like, dream big.
+
+797
+00:43:10,670 --> 00:43:12,350
+他们实现了，然后梦想更大。
+They accomplish that, and they dream bigger.
+
+798
+00:43:12,790 --> 00:43:15,238
+然后他们可能为此努力十年，但
+And then maybe they work on that for, like, a decade, but then,
+
+799
+00:43:15,238 --> 00:43:17,830
+如果他们实现了，他们又会梦想更大。
+like, you know, if they accomplish that, then they dream bigger.
+
+800
+00:43:17,910 --> 00:43:20,030
+像 Elon 显然是一个很好的例子。
+Like, Elon is obviously a great example of this.
+
+801
+00:43:20,550 --> 00:43:22,110
+我认为 Mark 也是一个很好的例子。
+I think Mark is a great example of this.
+
+802
+00:43:22,150 --> 00:43:22,470
+我认为。
+I think.
+
+803
+00:43:22,670 --> 00:43:25,750
+但我认为很多标志性的创业者，
+But I think a lot of, like, the iconic entrepreneurs,
+
+804
+00:43:25,750 --> 00:43:29,110
+这就是他们的亲身经历。
+this is, like, kind of, like, their lived experience and.
+
+805
+00:43:30,000 --> 00:43:33,320
+我认为那种状态的某个版本应该对每个人都成立。
+I think there's a version of that that should be true for every person.
+
+806
+00:43:33,880 --> 00:43:37,510
+我觉得有点可悲的是，对大多数人来说，
+And I think what's kind of, like, tragic is, I think,
+
+807
+00:43:37,510 --> 00:43:41,646
+你曾有过更大的梦想、宏大的想法，
+for most people, you have, like, bigger dreams, big ideas,
+
+808
+00:43:41,646 --> 00:43:46,120
+进入企业职场后，你某种程度上就变成了僵尸。
+you enter the corporate workforce, you kind of become a zombie.
+
+809
+00:43:46,520 --> 00:43:48,529
+也许某个时候你想去追逐你的梦想，
+Maybe at some point you want to go tackle your
+
+810
+00:43:48,529 --> 00:43:50,211
+但那时真的非常困难，
+dreams, but then it's, like, really,
+
+811
+00:43:50,211 --> 00:43:52,600
+因为你有各种责任。
+really hard because you have all these commitments.
+
+812
+00:43:52,720 --> 00:43:54,880
+你可能有了家庭，可能有其他事情。
+You maybe have a family, maybe have whatever it is.
+
+813
+00:43:54,960 --> 00:44:00,110
+几乎就像你被困在某种僵尸状态里。
+It's just like it's almost you become trapped in the sort of, like, zombiehood.
+
+814
+00:44:00,550 --> 00:44:08,510
+在我想聊 Scale AI 以及你与 Meta 达成的合作和那个决定之前，还有一件关于 Muse 的事。
+There's one more thing on Muse before I want to get to Scale AI and, like, the partnership that you did with Meta and making that decision.
+
+815
+00:44:08,910 --> 00:44:12,350
+但在你写的那篇文章，或者说那篇短帖里，我很喜欢你写的这句话。
+But in this essay that you wrote, or this like short post that you wrote, I love what you said.
+
+816
+00:44:12,390 --> 00:44:14,966
+你说，迄今为止，世界是由少数狂热者塑造的，
+You said, the world until now has been shaped by the small number
+
+817
+00:44:14,966 --> 00:44:17,590
+他们想方设法把自己的渴望变成现实。
+of fanatics who have somehow found a way to make their wants real.
+
+818
+00:44:17,970 --> 00:44:22,170
+但我们从未见过人类每一个人的自主行动力被完全打开的样子。
+But we've never seen humanity with every single person's agency fully switched on.
+
+819
+00:44:22,810 --> 00:44:26,728
+我觉得我描述的这个世界的愿景是，
+I think the promise of this world that I'm describing where every
+
+820
+00:44:26,728 --> 00:44:31,082
+每个人一生中都能拥有这种自主行动力的提升，
+single person has this like agency increase throughout their lifetime
+
+821
+00:44:31,082 --> 00:44:35,290
+有能力实现自己的愿望和梦想。
+and they have the ability to accomplish their wants and their dreams.
+
+822
+00:44:35,970 --> 00:44:39,370
+我觉得那个世界会以一种非常好的方式看起来很疯狂。
+I think that world looks crazy in a very good way.
+
+823
+00:44:39,410 --> 00:44:42,190
+就像我觉得会非常有趣。
+Like I think it will be very interesting.
+
+824
+00:44:42,430 --> 00:44:48,350
+它会很有艺术感、很酷，而且你会走进世界的不同角落，它会非常多元。
+It'll be artistic and cool, and you'll, like, go into different pockets of the world and it will be very, like, diverse.
+
+825
+00:44:48,510 --> 00:44:55,267
+想想那具体会是什么样子会有些疯狂，数十亿人
+It'll be kind of insane to think about what exactly that looks like, where literally billions of people have,
+
+826
+00:44:55,267 --> 00:45:02,320
+因为充裕的智能突然拥有让不可思议的事情发生的资源。
+you know, all of a sudden because of abundant intelligence, like the resources to make incredible things happen.
+
+827
+00:45:02,840 --> 00:45:04,360
+我觉得这是愿景的一部分。
+I think it's part of the promise.
+
+828
+00:45:04,520 --> 00:45:09,304
+就像在我脑海里，它几乎像 Rick and Morty（瑞克和莫蒂）的跨维度电视，
+Like, I think in my head it's almost like the Rick and Morty interdimensional cable,
+
+829
+00:45:09,304 --> 00:45:13,200
+但不知怎么地显化成了人类的现实。
+but, but just like somehow manifested into like reality for humans.
+
+830
+00:45:13,320 --> 00:45:15,280
+它可能真的会很棒。
+Like it could just be really awesome.
+
+831
+00:45:15,760 --> 00:45:18,313
+所以我一直听到那部剧里有句台词，
+So I keep hearing, uh, this line from that show
+
+832
+00:45:18,313 --> 00:45:21,000
+好像是“宇宙吞噬聪明人”。
+where it's like the universe eats smart people.
+
+833
+00:45:22,570 --> 00:45:24,330
+嗯，好，我想回到之前的话题。
+Um, okay, so I want to go back.
+
+834
+00:45:24,370 --> 00:45:27,606
+我个人好奇的是，你创立了 Scale AI，
+What I'm personally curious about is you founded Scale AI,
+
+835
+00:45:27,606 --> 00:45:31,436
+正在经营 Scale AI，然后有一天 Mark Zuckerberg 联系你说，
+you're running Scale AI, and then one day Mark Zuckerberg reaches out
+
+836
+00:45:31,436 --> 00:45:34,210
+嘿，我猜他会说，嘿，我想谈谈。
+and says, hey, I assume he says, hey, I want to talk.
+
+837
+00:45:34,730 --> 00:45:36,050
+你能跟我讲讲这件事吗？
+Can you tell me about this?
+
+838
+00:45:36,690 --> 00:45:36,890
+可以。
+Yeah.
+
+839
+00:45:36,890 --> 00:45:38,478
+我觉得确切的消息大概是：
+I think the exact message was something
+
+840
+00:45:38,478 --> 00:45:39,970
+“嘿，你有时间通个电话吗？”
+like, hey, do you have time for a call?
+
+841
+00:45:40,130 --> 00:45:41,850
+你之前和 Mark 有交情吗？
+Did you have a relationship with Mark previously?
+
+842
+00:45:42,010 --> 00:45:43,010
+你以前和他一起待过吗？
+Did you spend any time with him?
+
+843
+00:45:43,010 --> 00:45:43,290
+比如什么？
+Like what?
+
+844
+00:45:43,410 --> 00:45:44,770
+那背景是什么？
+What was, what's the background there?
+
+845
+00:45:45,020 --> 00:45:47,785
+我有一个朋友，Alex Schultz，
+I had a friend—this guy Alex Schultz,
+
+846
+00:45:47,785 --> 00:45:55,723
+实际上从 Scale 大概一岁时就认识他很多很多年了，我在旧金山认识他。
+who I've known actually for many, many years from when Scale was maybe a year old. I met him in San Francisco.
+
+847
+00:45:55,723 --> 00:46:02,679
+他现在是 Meta 的首席数据官，但曾长期是 Meta 的高管副手。
+He is currently the Chief Data Officer at Meta, but was a long time Meta executive lieutenant.
+
+848
+00:46:02,679 --> 00:46:04,820
+他把我介绍给了 Mark。
+And he introduced me to Mark.
+
+849
+00:46:04,820 --> 00:46:08,998
+我想说大概是 2021 年或 2022 年左右，为了讨论 AI，
+I want to say in about, like, I think it was 2021 or 2022 to talk about AI
+
+850
+00:46:08,998 --> 00:46:13,690
+因为我觉得那时 Mark 对 AI 越来越感兴趣。Scale，
+because I think at that time Mark was getting a lot more interest in AI. Scale,
+
+851
+00:46:13,690 --> 00:46:14,810
+我们在 AI 领域做了很多事情。
+We were doing a lot of stuff in AI.
+
+852
+00:46:15,170 --> 00:46:19,810
+我的记忆是，从介绍到安排那次初次会面大概花了一年时间。
+My memory is that I think it took like one year to schedule that first meeting.
+
+853
+00:46:20,010 --> 00:46:21,970
+就像从介绍到会议安排，
+Like from the from the intro to the meeting
+
+854
+00:46:21,970 --> 00:46:24,210
+我想大概整整一年。
+being scheduled, I think it was like a full year.
+
+855
+00:46:24,770 --> 00:46:25,050
+为什么？
+Why?
+
+856
+00:46:25,410 --> 00:46:27,726
+Mark 的时间表显然疯狂得离谱，
+Mark obviously has like an insane calendar and
+
+857
+00:46:27,726 --> 00:46:29,983
+有无数不同的事情要处理，
+like has like a bajillion different things to
+
+858
+00:46:29,983 --> 00:46:32,240
+而且非常擅长优先级排序。
+deal with and is very good at prioritization.
+
+859
+00:46:32,280 --> 00:46:38,920
+他会在某些方面对真正非常重要的事情花大量时间。
+Like he will spend a lot of time on the things that are really, really important in some ways.
+
+860
+00:46:38,960 --> 00:46:41,400
+甚至对真正非常重要的事情花太多时间。
+Like too much time on the things that are like really, really important.
+
+861
+00:46:41,840 --> 00:46:44,216
+他能做到这些，同时做个好父亲、
+The only way he will do that and like be a good dad
+
+862
+00:46:44,216 --> 00:46:46,165
+好伴侣并处理其他所有事情，
+and be a good partner and all this other
+
+863
+00:46:46,165 --> 00:46:48,480
+唯一的方法就是极其无情地确定优先级。
+stuff is to just like ruthlessly prioritize.
+
+864
+00:46:49,280 --> 00:46:53,550
+那之后我和他聊过几次，作为创始人得到过他的建议。
+I had spoken to him a few times kind of after that and had gotten his advice as a founder.
+
+865
+00:46:53,550 --> 00:46:57,640
+能从 Mark Zuckerberg 那里得到建议，显然是一件非常大的事。
+To get advice from, you know, Mark Zuckerberg is obviously like a really big deal.
+
+866
+00:46:58,120 --> 00:47:00,950
+而且我实际上记得当时，
+And I actually remember at that time, like,
+
+867
+00:47:00,950 --> 00:47:04,017
+我会在 WhatsApp 上问他一个问题，
+I would ask him a question on WhatsApp, and then
+
+868
+00:47:04,017 --> 00:47:07,240
+然后他会写非常长的回复。
+he would write these like really long responses.
+
+869
+00:47:07,800 --> 00:47:08,720
+我当时真的很困惑。
+And I was really confused.
+
+870
+00:47:08,800 --> 00:47:12,360
+我心想，他怎么有时间写这么长的回复？
+I was like, how does he have time to write these, like, really long responses?
+
+871
+00:47:12,480 --> 00:47:19,630
+但现在我意识到，他在写很多 WhatsApp 消息时就是非常快且严谨。
+But now I realize he, like, is just, like, really fast and rigorous at writing to, like, a lot of WhatsApp messages.
+
+872
+00:47:19,630 --> 00:47:23,150
+他会非常迅速地写出一段非常严谨的长回复。
+He'll, like, like, write a very rigorous, like, long response very quickly.
+
+873
+00:47:23,270 --> 00:47:24,830
+这是他非常令人印象深刻的一项技能。
+It's, like, a very impressive skill of his.
+
+874
+00:47:24,910 --> 00:47:26,590
+让你能窥见他的脑子里在想什么。
+Gives you a sneak peek into what's going on in his mind.
+
+875
+00:47:26,950 --> 00:47:29,070
+是的，就像，对，有很多念头在飞速运转。
+Yeah, like, yeah, there's racing.
+
+876
+00:47:29,430 --> 00:47:31,630
+Meta 是 Scale 的重要客户。
+Meta was an important customer of Scale.
+
+877
+00:47:32,190 --> 00:47:35,270
+嗯，我想说在这件事之前，
+Um, and I would say like prior to this instance,
+
+878
+00:47:35,270 --> 00:47:38,350
+我们大概每六个月左右聊一次。
+maybe we spoke once every like six months or so.
+
+879
+00:47:38,430 --> 00:47:41,030
+也许那就是我们互动的频率。
+Maybe that was like the cadence of our interactions.
+
+880
+00:47:41,750 --> 00:47:46,541
+然后，是的，我觉得他打了电话，
+And then, yeah, I think he had called and I think it was actually
+
+881
+00:47:46,541 --> 00:47:50,780
+而且一开始其实不太清楚最终会走向哪里，
+like not obvious at first what the end point was gonna be
+
+882
+00:47:50,780 --> 00:47:55,110
+因为第一次对话只是像，你知道。
+because the first conversation was just like, you know.
+
+883
+00:47:55,110 --> 00:47:56,390
+那是在 Llama 4（Meta 的模型版本） 之后。
+This was after Llama 4.
+
+884
+00:47:56,390 --> 00:47:58,159
+而且大致只是问，
+And it was kind of just like asking,
+
+885
+00:47:58,159 --> 00:47:59,990
+你觉得我们应该做什么？
+what do you think we should be doing?
+
+886
+00:48:00,450 --> 00:48:04,050
+为什么这次对话发生在 Llama 4 之后这一点很重要？
+Why is that an important point, that this conversation is happening after Llama 4?
+
+887
+00:48:04,530 --> 00:48:08,570
+Llama 4 没有走上 Meta 作为公司想要的发展轨迹。
+Llama 4 was not on the trajectory that Meta wanted as a company.
+
+888
+00:48:08,810 --> 00:48:12,862
+我认为在内部来说，它确实令人失望，
+It definitely was like, I think internally speaking, a disappointment and it was
+
+889
+00:48:12,862 --> 00:48:17,570
+而且当时 AI 明显变得越来越重要。
+also at a time where AI was clearly becoming just like increasingly, increasingly important.
+
+890
+00:48:17,730 --> 00:48:20,570
+很明显，AI 将对 Meta 的未来至关重要。
+It was clear that AI was going to be like really critical to the future of Meta.
+
+891
+00:48:20,730 --> 00:48:23,414
+所以最初几次对话我们打电话，
+So yeah, the first few conversations we spoke on the phone
+
+892
+00:48:23,414 --> 00:48:25,874
+他只是类似在问：
+and he was just sort of asking, saying, you're asking
+
+893
+00:48:25,874 --> 00:48:28,390
+你觉得我们应该做什么？
+for advice on like what do you think we should be doing?
+
+894
+00:48:28,470 --> 00:48:29,630
+你觉得我们应该专注于什么？
+What do you think we should be focused on?
+
+895
+00:48:29,830 --> 00:48:33,110
+这是我私下听说的关于他的一点，他有一个疯狂的——
+This is what I've heard about him privately, that he has this insane—
+
+896
+00:48:33,230 --> 00:48:35,536
+不是像 Meta 董事会那样的董事会，
+It's not a board of directors like a Meta board, although
+
+897
+00:48:35,536 --> 00:48:37,990
+尽管董事会里有些人他也会这样做。
+there's some people on the board that he also does this with.
+
+898
+00:48:38,230 --> 00:48:40,750
+但他身边有一群世界级的企业家。
+But he's got this group of world class entrepreneurs around him.
+
+899
+00:48:41,150 --> 00:48:42,350
+我和其中一些人聊过。
+And I've spoken to some of them.
+
+900
+00:48:42,430 --> 00:48:43,030
+就像你不明白。
+Like you don't understand.
+
+901
+00:48:43,070 --> 00:48:44,830
+他不断地征求建议。
+Like he asked for advice constantly.
+
+902
+00:48:45,270 --> 00:48:46,110
+他会主动联系我们。
+He's like hitting us up.
+
+903
+00:48:46,150 --> 00:48:48,210
+他会说，这是我生活、工作部分的近况。
+He's like, here's what's going on, my life, part of the work.
+
+904
+00:48:48,410 --> 00:48:49,050
+你会怎么做？
+What would you do?
+
+905
+00:48:49,090 --> 00:48:50,850
+然后他会一遍又一遍地这么做。
+And then he'll do that over and over and over again.
+
+906
+00:48:51,290 --> 00:48:52,930
+我觉得这是一个相当令人印象深刻的特质。
+I think this is like quite an impressive trait.
+
+907
+00:48:53,130 --> 00:48:53,370
+对。
+Yes.
+
+908
+00:48:53,490 --> 00:48:55,972
+因为这显然需要谦逊，
+Because it takes humility, obviously, like continue
+
+909
+00:48:55,972 --> 00:48:58,343
+即使在他已经取得了那么多不可思议的成就之后，
+doing that even, you know, after all the incredible
+
+910
+00:48:58,343 --> 00:49:00,770
+他仍然会继续这样做。
+things that, you know, he's been able to accomplish.
+
+911
+00:49:01,170 --> 00:49:10,430
+我的意思是，从他第一次联系我到我们宣布交易，整个时间线大概是五六周。
+I mean, the whole, you know, timeline from when he first reached out to when we announced the deal was like 5, 6 weeks.
+
+912
+00:49:10,510 --> 00:49:11,510
+真的挺快的。
+Like it was like pretty quick.
+
+913
+00:49:11,950 --> 00:49:16,990
+世界级企业家还有另一个共同点：我们在这个播客里请过 Jonathan Ross（Groq 创始人）。
+Another thing that world class entrepreneurs have in common, we had Jonathan Ross, the founder of Groq, on this podcast.
+
+914
+00:49:16,990 --> 00:49:19,495
+我们第一次公开谈论他
+The first time we ever spoke publicly about the 20
+
+915
+00:49:19,495 --> 00:49:22,183
+和 Nvidia 达成的 200 亿美元交易，就是在这个节目上；
+billion dollar deal he did with Nvidia was on the show
+
+916
+00:49:22,183 --> 00:49:24,382
+他说，从 Jensen 第一次打来电话，
+and he's like, from the time first call from
+
+917
+00:49:24,382 --> 00:49:27,070
+到钱进入我的银行账户，只用了三周。
+Jensen to money's in my bank account was three weeks.
+
+918
+00:49:27,610 --> 00:49:28,730
+是啊，那太厉害了。
+Yeah, that's amazing.
+
+919
+00:49:29,730 --> 00:49:32,423
+我当时就有很多想法，比如如果我是他会怎么做、
+I just had lots of ideas on, like, what I'd be doing if I were
+
+920
+00:49:32,423 --> 00:49:35,621
+会怎么思考 Meta 的 AI 战略；
+in his shoes, on, like, how I'd be thinking about Meta's AI strategy,
+
+921
+00:49:35,621 --> 00:49:38,090
+我最早说的其中一点就是我前面提到的。
+one of the first things I said was what I said earlier.
+
+922
+00:49:38,130 --> 00:49:45,084
+就是说，嘿，我真的觉得，因为 Meta 从基因上就专注于人们想做的事，
+Which is like, hey, I actually think because Meta is like heritage-wise focused on things that people want to do,
+
+923
+00:49:45,084 --> 00:49:50,410
+所以在这场巨大转变中，它其实是最有优势的公司之一。
+it's actually one of the most specially placed companies with this incredible shift.
+
+924
+00:49:50,650 --> 00:49:55,550
+我有很多很多想法，差不多都发给了他。
+I, like, had lots and lots of ideas that I sort of sent his way.
+
+925
+00:49:56,110 --> 00:50:00,133
+然后与此同时，就出现了这样的对话：哦，
+And then that was kind of this, like, conversation happening in parallel with this,
+
+926
+00:50:00,133 --> 00:50:04,270
+好吧，也许我们应该考虑一下有没有合作的方式。
+like, oh yeah, maybe we should potentially consider if there's a way to work together.
+
+927
+00:50:04,750 --> 00:50:06,270
+所以当他说那句话时，你在想什么？
+So when he says that, what do you think?
+
+928
+00:50:06,670 --> 00:50:07,550
+因为这最初是从你这边来的。
+Because this came from you.
+
+929
+00:50:07,630 --> 00:50:09,110
+这不是你能预料到的吧？
+This was not predictable to you.
+
+930
+00:50:09,390 --> 00:50:10,270
+不能预料，对。
+Not predictable, no.
+
+931
+00:50:10,350 --> 00:50:14,250
+整件事就像，真的是一段非常疯狂的经过。
+The whole thing was like, it was like a really crazy, um, sequence.
+
+932
+00:50:14,370 --> 00:50:16,509
+当时我的反应是：哦，
+At the time, I was like, oh, that's nice,
+
+933
+00:50:16,509 --> 00:50:18,130
+那挺好的，但不可能吧。
+but like, there's no way that.
+
+934
+00:50:18,370 --> 00:50:20,170
+但你知道他们说这种话是什么意思，对吧？
+But you know what that means when they say that, right?
+
+935
+00:50:20,890 --> 00:50:21,730
+他们不想收购你。
+They don't want to buy you.
+
+936
+00:50:22,170 --> 00:50:23,689
+总是同一套，但他们会说：
+It's always the same thing, but they say it's
+
+937
+00:50:23,689 --> 00:50:25,250
+哦，我们得找到合作的方式。
+like, oh, we gotta find a way to work together.
+
+938
+00:50:25,930 --> 00:50:30,330
+对，我觉得当时我还没接受过那种行内指点。
+Yeah, I don't think I'd had that, that kind of coaching at the time.
+
+939
+00:50:30,850 --> 00:50:34,044
+我当时明确感觉到的一点是：
+One thing that I explicitly felt at the time was like, yeah,
+
+940
+00:50:34,044 --> 00:50:37,172
+好吧，这也许并没有那么大的意义；
+like it probably doesn't make that much sense even, like,
+
+941
+00:50:37,172 --> 00:50:40,561
+我个人当时觉得，
+I think I personally was like, yeah, like, you know, maybe he's
+
+942
+00:50:40,561 --> 00:50:43,820
+也许他只是试探一下，或者随口提提。
+like, you know, teasing it or, or like throwing it out there.
+
+943
+00:50:43,820 --> 00:50:45,660
+但它真的有那么大意义吗？
+But like, does it even, like, make that much sense?
+
+944
+00:50:45,820 --> 00:50:47,020
+你为什么会觉得它没意义？
+Why wouldn't you think it makes sense?
+
+945
+00:50:47,220 --> 00:50:49,860
+我的意思是，显然最后交易确实发生了。
+I mean, obviously, like, a deal ended up happening.
+
+946
+00:50:49,900 --> 00:50:50,900
+所以，你懂的，我又懂什么？
+So, you know, what do I know?
+
+947
+00:50:50,980 --> 00:50:53,557
+但是，嗯，不，但当时我们不是——我们现在知道后来发生了什么。
+But, um, no, but back then we're not—we know what happened, but
+
+948
+00:50:53,557 --> 00:50:56,629
+我很好奇的是，当你正在经历这件事的时候，
+like I'm very curious, your thinking as you're going, experiencing this,
+
+949
+00:50:56,629 --> 00:50:59,800
+你的想法是什么；你刚才说，哦，对，你说这没道理。
+like the fact you said, oh, yeah, you said this, like that doesn't make sense.
+
+950
+00:50:59,840 --> 00:51:01,040
+比如为什么你觉得它没意义？
+Like why wouldn't it make sense?
+
+951
+00:51:01,320 --> 00:51:09,334
+退一步看，很明显，Meta 标志性的收购是 Instagram 和 WhatsApp，
+Taking a step back, obviously the, like, iconic Meta acquisitions have been Instagram and WhatsApp
+
+952
+00:51:09,334 --> 00:51:15,440
+这些都有非常清晰的产品逻辑驱动。
+and these were like very clear, you know, product-logic-driven decisions.
+
+953
+00:51:16,240 --> 00:51:20,506
+而 Scale 是，你懂的，深耕企业
+Scale is like, you know, a deep enterprise government sales,
+
+954
+00:51:20,506 --> 00:51:24,940
+和政府销售的生意，跟 Meta 完全不是一类业务。
+like, you know, entirely different kind of business from Meta.
+
+955
+00:51:25,420 --> 00:51:29,030
+所以我当时觉得，能说得通的逻辑是：
+And so the, the logic that I had thought at the time would have
+
+956
+00:51:29,030 --> 00:51:33,000
+如果 Meta 想进入那些领域，
+made sense is if Meta wanted to get into those things, then I think,
+
+957
+00:51:33,000 --> 00:51:37,115
+那么我认为，你懂的，也许那就是符合产业逻辑的解释。
+you know, like, you know, maybe that's, that's the industrial logic
+
+958
+00:51:37,115 --> 00:51:40,580
+但这次并不是因为那样。
+that would have made sense. But this wasn't that because.
+
+959
+00:51:40,580 --> 00:51:48,020
+我觉得 Mark 显然主要是想把 Llama 项目和整个 AI 项目拉上正轨。
+I think Mark clearly was like predominantly interested in getting the Llama program and the overall AI program on track.
+
+960
+00:51:48,020 --> 00:51:48,660
+他想要的是人才？
+He wanted talent?
+
+961
+00:51:48,860 --> 00:51:49,700
+对，他想要人才。
+Yeah, he wanted talent.
+
+962
+00:51:49,900 --> 00:51:53,460
+整个过程中很多地方都有点被遮掩着，不清楚。
+It was kind of shrouded and unclear the whole time, you know, a lot of the way.
+
+963
+00:51:53,700 --> 00:51:54,740
+什么时候才变得清楚？
+When did it become clear?
+
+964
+00:51:55,340 --> 00:51:56,740
+钱到账之后。
+After the money hit the account.
+
+965
+00:51:57,260 --> 00:52:02,060
+当我们开始谈具体数字时，我的反应是：哦，哇，好吧，好的。
+When, you know, when we started talking numbers, I was like, oh, wow, okay. All right.
+
+966
+00:52:04,699 --> 00:52:06,579
+那时候事情才变得更清楚。
+That's when things became, like, more clear.
+
+967
+00:52:06,899 --> 00:52:08,619
+一开始你觉得：哦，这没道理。
+At first, you're like, oh, this doesn't make sense.
+
+968
+00:52:08,859 --> 00:52:09,819
+然后你们继续聊。
+Then you guys keep talking.
+
+969
+00:52:09,979 --> 00:52:11,668
+那他多快就说服了你，
+And then how fast did he convince you,
+
+970
+00:52:11,668 --> 00:52:13,139
+让你觉得这对你来说是条好路？
+like, this is a good path for you?
+
+971
+00:52:13,659 --> 00:52:18,979
+其中一部分是：哇，这真的是一个非常有意思的交易结构。
+There was a part of it which is like, wow, this is like a really fascinating deal construct.
+
+972
+00:52:19,259 --> 00:52:24,099
+我们最终敲定了这样一个交易：Meta 投资。
+We ultimately landed on this deal where, you know, Meta invested.
+
+973
+00:52:25,070 --> 00:52:27,230
+呃，持有 Scale 49%。
+Uh, owns 49% of Scale.
+
+974
+00:52:27,550 --> 00:52:28,350
+Scale 继续运营。
+Scale continues.
+
+975
+00:52:29,030 --> 00:52:31,160
+我和另外几个人加入 Meta。
+Myself and a few people join Meta.
+
+976
+00:52:31,600 --> 00:52:38,284
+当时让我有点难以置信的是，这是一种非常奇怪的交易，
+What I was kind of incredulous about at the time was like, it's such a weird kind of deal,
+
+977
+00:52:38,284 --> 00:52:46,360
+但我认为它确实可以说是一种很有意思的赢、赢、赢、赢。
+but it's one that I think genuinely kind of was like this very interesting win-win-win-win, so to speak.
+
+978
+00:52:46,560 --> 00:52:49,159
+它对 Scale 的股东来说是赢的，
+It's a win for the shareholders of Scale because all
+
+979
+00:52:49,159 --> 00:52:52,000
+因为所有 Scale 股东都得到了很好的条件，受益很多。
+shareholders of Scale got a great deal, benefited a lot.
+
+980
+00:52:52,530 --> 00:52:56,890
+Scale 会继续运营，而且我真的相信 Scale 最好的日子还在前面。
+Scale continues and I truly believe the best days of Scale are ahead of it.
+
+981
+00:52:57,130 --> 00:53:00,910
+我的问题是，或者说我个人感兴趣的是：
+My question to you is like, or what I'm personally interested in is
+
+982
+00:53:00,910 --> 00:53:03,591
+好吧，是不是他只要在电话里给你解释一下，
+like, okay, is it that he can explain this to you
+
+983
+00:53:03,591 --> 00:53:06,890
+你就能转变到那个立场？
+and you come around to that perspective in one phone call?
+
+984
+00:53:07,010 --> 00:53:08,770
+还是说你会说：等等，等等，Mark，我得想想。
+Is it just like, wait, wait, Mark, I gotta think.
+
+985
+00:53:08,890 --> 00:53:09,930
+这太他妈疯狂了。
+This is so fucking crazy.
+
+986
+00:53:10,370 --> 00:53:11,810
+我需要用几天时间好好想想。
+I gotta think about this for a few days.
+
+987
+00:53:11,850 --> 00:53:13,810
+尽量多解释一下这个过程。
+Like explain this process as much as you can.
+
+988
+00:53:14,510 --> 00:53:17,230
+有好几周我都在想：这太疯了。
+Many weeks of being like, this is insane.
+
+989
+00:53:17,790 --> 00:53:18,710
+这到底是不是真的？
+Is this even real?
+
+990
+00:53:18,830 --> 00:53:19,870
+这到底有没有道理？
+Does this make any sense?
+
+991
+00:53:20,510 --> 00:53:23,630
+如果确实有道理，那我对这件事是什么感觉？
+If it does make sense, like how do I feel about it?
+
+992
+00:53:24,030 --> 00:53:28,190
+最主要的情绪更像是：这事儿有点疯狂。
+The predominant emotion was more like, this is kind of insane.
+
+993
+00:53:28,270 --> 00:53:30,107
+然后我越想越觉得，哦，
+And then as I thought more about it, like, oh,
+
+994
+00:53:30,107 --> 00:53:32,590
+我实际上必须决定是否要做这件事。
+I actually have to make a decision of whether or not I do this.
+
+995
+00:53:32,870 --> 00:53:34,270
+这本身就是一件很难的事。
+That was it in and of itself.
+
+996
+00:53:34,350 --> 00:53:40,010
+那边和Scale的人，以及我们的投资人进行了很多对话。
+There were a lot of conversations there with the people at Scale, with our investors.
+
+997
+00:53:40,130 --> 00:53:43,850
+那方面也有很多有趣的对话。
+There were a lot of interesting conversations on that side.
+
+998
+00:53:44,170 --> 00:53:49,250
+我的意思是，显然要放手或放弃你的孩子真的很难。
+I mean, it's obviously really hard to let go of or give up your baby.
+
+999
+00:53:49,570 --> 00:53:50,690
+你在Scale工作了多久？
+You worked on Scale for how long?
+
+1000
+00:53:50,770 --> 00:53:51,250
+多少年？
+How many years?
+
+1001
+00:53:51,490 --> 00:53:53,770
+是的，从创立到那时有九年。
+Yeah, nine years from founding until the—
+
+1002
+00:53:53,810 --> 00:53:54,490
+而且你还年轻。
+And you're still young.
+
+1003
+00:53:54,530 --> 00:53:55,410
+你还没满30岁。
+You're not even 30 yet.
+
+1004
+00:53:55,690 --> 00:53:55,770
+对。
+Yeah.
+
+1005
+00:53:55,850 --> 00:53:57,050
+这差不多是你生命的三分之一。
+This is like a third of your life.
+
+1006
+00:53:57,430 --> 00:54:00,108
+Paul Graham有句说了很久的话：
+There was something that Paul Graham said for a long time,
+
+1007
+00:54:00,108 --> 00:54:02,508
+如果你把公司看作一生的事业，
+which is like, you know, if you think of your company
+
+1008
+00:54:02,508 --> 00:54:05,130
+你的运营方式会不一样。
+as your life's work, like you will operate differently.
+
+1009
+00:54:05,610 --> 00:54:11,730
+我确实真的把Scale视为我一生的事业，在我整个工作期间都是如此。
+I did really genuinely think of Scale as my life's work for the whole time that I was working on it.
+
+1010
+00:54:12,130 --> 00:54:13,490
+那是一个艰难的情感过程。
+That was a tough emotional process.
+
+1011
+00:54:13,930 --> 00:54:17,546
+最终让我下定决心的是，哇，
+And then I think what ultimately got me was like a
+
+1012
+00:54:17,546 --> 00:54:21,613
+这是多赢、多赢、多赢、
+combination of, wow, this is like a win, win, win, win,
+
+1013
+00:54:21,613 --> 00:54:25,590
+多赢的组合——这对各方都是好交易。
+like kind of all—um, it's a good deal for all parties.
+
+1014
+00:54:25,750 --> 00:54:30,350
+而且我也看到了Meta可能发生什么的潜力。
+And also just this like I saw the potential of what could happen at Meta.
+
+1015
+00:54:30,470 --> 00:54:40,115
+而且你知道，在那个时候，我认为 Meta 在 AI 方面看起来问题重重，
+And, you know, this is a point at which like, I think Meta on AI certainly looked like damaged goods in many ways
+
+1016
+00:54:40,115 --> 00:54:44,990
+可能不是做AI最有吸引力的地方。
+and was maybe not the most appealing place to work on AI.
+
+1017
+00:54:45,350 --> 00:54:49,020
+但我觉得这有点触发了我作为创业者的那一面，
+But I think that kind of like triggered my entrepreneur
+
+1018
+00:54:49,020 --> 00:54:52,610
+我心想，你基本上可以重建它。
+side where I was like, you can essentially rebuild it.
+
+1019
+00:54:52,650 --> 00:54:54,410
+就像重新创立实验室。
+It's like a refounding of the lab.
+
+1020
+00:54:54,650 --> 00:54:54,930
+对。
+Yeah.
+
+1021
+00:54:55,330 --> 00:54:55,570
+对。
+Yeah.
+
+1022
+00:54:55,610 --> 00:55:01,268
+我觉得这最终变得很有意思，
+Like I think this is one of the things that ended up being kind of fascinating,
+
+1023
+00:55:01,268 --> 00:55:06,130
+因为很明显有太多工作要做。
+which is like because it was clear that there was so much work to do.
+
+1024
+00:55:06,660 --> 00:55:11,829
+这真的为我铺平了道路，让我能从零开始构建很多东西，
+It really cleared the way for me to be able to kind of build a lot of stuff up from scratch,
+
+1025
+00:55:11,829 --> 00:55:13,552
+建立正确的原则，
+set up the right principles,
+
+1026
+00:55:13,552 --> 00:55:15,060
+打造正确的文化，
+build the right culture,
+
+1027
+00:55:15,060 --> 00:55:19,009
+它为我们创造了条件去构建一些了不起的东西。
+like it created the conditions for us to build something amazing.
+
+1028
+00:55:19,009 --> 00:55:20,660
+这是你和 Mark——
+And is that how you and Mark—
+
+1029
+00:55:20,700 --> 00:55:20,900
+讨论的吗？
+Discuss?
+
+1030
+00:55:20,940 --> 00:55:22,660
+就像说，嘿，我们得在这里按下重置键。
+It's like, hey, we have to hit a reset here.
+
+1031
+00:55:22,780 --> 00:55:25,499
+显然，如果我们继续走这条路，
+Like obviously, if we keep on this path,
+
+1032
+00:55:25,499 --> 00:55:28,877
+我们基本上会扔掉现有的一切，
+we're essentially going to throw out what we have
+
+1033
+00:55:28,877 --> 00:55:32,750
+用完全不同的才华水平重做。
+and redo it with a completely different level of talent.
+
+1034
+00:55:32,950 --> 00:55:35,590
+这些是你和他之间正在发生的对话吗？
+Are these the conversations that are occurring between you and him?
+
+1035
+00:55:35,910 --> 00:55:38,270
+看起来他想要的不是小调整。
+It didn't seem like he wanted like a minor adjustment.
+
+1036
+00:55:38,750 --> 00:55:39,710
+你明白我的意思吗？
+You understand what I'm saying?
+
+1037
+00:55:39,790 --> 00:55:41,630
+就像是，哦，这根本行不通。
+It's just like, oh, this is not working at all.
+
+1038
+00:55:42,030 --> 00:55:42,750
+行不通的。
+It's not gonna work.
+
+1039
+00:55:42,750 --> 00:55:45,470
+那我们就把它拆到地基，然后重建。
+Then let's, you know, rip it down to the foundation and rebuild.
+
+1040
+00:55:45,630 --> 00:55:45,910
+没错。
+Correct.
+
+1041
+00:55:46,470 --> 00:55:48,515
+这是一场不断演进的对话，
+It was an evolving conversation
+
+1042
+00:55:48,515 --> 00:55:52,452
+其中我坚信的事情之一——
+where I think one of the things that I believe really strongly—
+
+1043
+00:55:52,452 --> 00:55:56,617
+我认为Elon在职业生涯中多次证明了这一点——
+I think Elon has demonstrated this at various times in his career—
+
+1044
+00:55:56,617 --> 00:56:02,297
+就是你可以拥有一支非常扁平、小而极其顶尖、高度技术化的团队。
+where you just have a small, incredibly cracked, highly technical team that's very flat.
+
+1045
+00:56:02,297 --> 00:56:04,720
+如果你这样做，你就能完成——
+And if you do that, you can accomplish—
+
+1046
+00:56:04,920 --> 00:56:06,000
+很多，非常非常快。
+A lot, very, very quickly.
+
+1047
+00:56:06,680 --> 00:56:09,480
+所以我对这一点非常有信念。
+So that was something that I had a lot of conviction in.
+
+1048
+00:56:09,480 --> 00:56:13,074
+而且我相信在AI领域，这是正确的方法，
+And, like, I believed in AI, like, that is the right approach, especially
+
+1049
+00:56:13,074 --> 00:56:17,080
+尤其是当你必须像我们一样行动非常非常快的时候。
+if you had to, you know, do what we had to do, which is, like move very, very quickly.
+
+1050
+00:56:17,690 --> 00:56:25,410
+我觉得早期这是我和Mark聊得很多的事情之一，我认为他也很兴奋。
+And I think early on, that was one of the things that I talked to Mark a lot about and I think he was excited about as well.
+
+1051
+00:56:25,570 --> 00:56:28,214
+这最终成了我们整体战略的支柱之一：
+That ended up becoming one of the tent poles
+
+1052
+00:56:28,214 --> 00:56:31,005
+小型、非常扁平、
+of our overall strategies: small, very flat,
+
+1053
+00:56:31,005 --> 00:56:34,090
+高度技术化、极高人才密度。
+highly technical team, very high talent density.
+
+1054
+00:56:34,450 --> 00:56:36,530
+如果具备这些要素，你能多快行动？
+How quickly can you move if you have those ingredients?
+
+1055
+00:56:36,970 --> 00:56:41,250
+从外部看，Mark似乎会倾尽所有，我这样想。
+From an outside perspective, it just seems like Mark empties the clip—is the way I think about this.
+
+1056
+00:56:41,370 --> 00:56:41,650
+对。
+Right.
+
+1057
+00:56:41,770 --> 00:56:43,850
+你读过《The Mind of Napoleon》这本书吗？
+Have you read this book called The Mind of Napoleon?
+
+1058
+00:56:44,240 --> 00:56:44,440
+没有。
+No.
+
+1059
+00:56:44,480 --> 00:56:44,640
+好。
+Okay.
+
+1060
+00:56:44,680 --> 00:56:46,520
+The Mind of Napoleon，1957年出版。
+So The Mind of Napoleon, published in 1957.
+
+1061
+00:56:46,720 --> 00:56:48,480
+嗯，我找到它是因为我看了这个采访。
+Um, I found it because I saw this interview.
+
+1062
+00:56:48,560 --> 00:56:52,560
+我想是Tyler Cowen采访了Sam Altman，那是在2019年。
+I think Tyler Cowen interviewed Sam Altman and, uh, it was 2019.
+
+1063
+00:56:52,560 --> 00:56:54,840
+他问他：你今年读过的最重要的书是什么？
+And he asked him, like, what's the most important book that you read this year?
+
+1064
+00:56:54,840 --> 00:56:55,760
+他说是《The Mind of Napoleon》。
+And he said The Mind of Napoleon.
+
+1065
+00:56:56,320 --> 00:56:57,200
+这本书很难找到。
+So it's very hard to find.
+
+1066
+00:56:57,280 --> 00:56:57,840
+我买了这本书。
+I bought the book.
+
+1067
+00:56:57,880 --> 00:57:00,720
+300页都是拿破仑自己的话，按主题整理。
+It's 300 pages of just Napoleon—his own words, organized by topic.
+
+1068
+00:57:01,080 --> 00:57:03,600
+在书里，他反复说犹豫是致命的。
+And in that, he talks about over and over again that hesitation is fatal.
+
+1069
+00:57:03,960 --> 00:57:06,552
+但他说，在你采取行动之前，
+But he says, before you engage in a course of action,
+
+1070
+00:57:06,552 --> 00:57:08,120
+需要大量深思熟虑。
+there's a lot of deliberation.
+
+1071
+00:57:08,440 --> 00:57:09,905
+他会从各个角度研究，
+He'll, like, study from every angle,
+
+1072
+00:57:09,905 --> 00:57:11,560
+确保自己做的是正确的决定。
+make sure he's making the right decision.
+
+1073
+00:57:11,600 --> 00:57:17,600
+我觉得这和Mark的运作方式有共鸣：大量深思熟虑，确保自己走在正确的道路上。
+I feel there's like an echo with the way Mark operates—does a lot of deliberation, makes sure he's on the right path.
+
+1074
+00:57:17,600 --> 00:57:20,040
+但一旦做出决定，他就会全情投入。
+But once he makes that decision, he just goes all in.
+
+1075
+00:57:20,080 --> 00:57:21,600
+他不会犹豫，只会倾尽所有。
+He won't like, he just empties the clip.
+
+1076
+00:57:21,840 --> 00:57:24,012
+这就是我当时对这件事的感受：
+And that's the way I felt about what was occurring
+
+1077
+00:57:24,012 --> 00:57:26,184
+就在这个节点，他来找你，
+right at this point where he comes and gets you and
+
+1078
+00:57:26,184 --> 00:57:28,780
+然后你们开始重建整个组织。
+then you guys start rebuilding this entire organization.
+
+1079
+00:57:29,100 --> 00:57:33,980
+我觉得他真的已经把“失败不重要”内化了。
+I think he really has internalized that failure doesn't matter.
+
+1080
+00:57:34,300 --> 00:57:36,580
+重要的只是你什么时候赢，以及赢得有多大。
+It matters like when you win, how big you win.
+
+1081
+00:57:37,460 --> 00:57:43,358
+我觉得这个整体观念让他在很多情况下能够真正毫无恐惧地行动，
+And I think this overall concept, I think enables him to operate, I think truly without fear in a lot of circumstances
+
+1082
+00:57:43,358 --> 00:57:46,580
+因为他就是非常愿意承担大量风险。
+because I think he is just very comfortable taking lots of risk.
+
+1083
+00:57:46,780 --> 00:57:49,115
+他有一句很棒的话：在一个不断变化的世界里，
+He's got that great line where it's like in a world that's
+
+1084
+00:57:49,115 --> 00:57:51,500
+最大的风险就是什么风险都不承担。
+changing all the time, the biggest risk is not taking any.
+
+1085
+00:57:51,740 --> 00:57:52,380
+对，正是这样。
+Yeah, exactly.
+
+1086
+00:57:52,660 --> 00:57:54,420
+我觉得他把这一点内化得相当深。
+I think he's internalized this quite deeply.
+
+1087
+00:57:54,780 --> 00:57:57,825
+比如，肯定存在一些可能的情形，
+Like, there's certainly like versions of the world
+
+1088
+00:57:57,825 --> 00:58:00,940
+Meta 在某种意义上会看起来更像 Google。
+where Meta looks a lot more like Google in some sense.
+
+1089
+00:58:00,980 --> 00:58:03,890
+它会变得动作更慢、更官僚，
+Like it's just like, you know, more slow moving and more
+
+1090
+00:58:03,890 --> 00:58:07,180
+作为一家公司看起来和现在很不一样。
+bureaucratic and just like looks very different as a company.
+
+1091
+00:58:07,220 --> 00:58:10,129
+但我觉得正因为他把这些教训内化得很深，
+But I think he, because he's internalized some of these
+
+1092
+00:58:10,129 --> 00:58:12,974
+才能让公司保持活力、持续运转。
+lessons so deeply, keeps the thing dynamic and moving
+
+1093
+00:58:12,974 --> 00:58:15,820
+跟我说说两者之间的区别，你是怎么……
+and live. Talk me through the difference between how.
+
+1094
+00:58:16,730 --> 00:58:21,452
+比如你作为创始人、经营 Scale 的时候，
+Like how you were as like you're, you're the founder, you're running Scale
+
+1095
+00:58:21,452 --> 00:58:24,650
+以及现在你和 Mark 一起重新创建这个实验室，两者之间有什么不同。
+now you're refounding this lab working with Mark.
+
+1096
+00:58:24,810 --> 00:58:29,970
+你在 Scale 和现在这两个环境里处理工作的方式有什么不同。
+Like the different ways that you approach your work in those two, uh, environments at Scale.
+
+1097
+00:58:30,160 --> 00:58:32,805
+有一件事我真的内化了，
+One of the things, like, I really internalized,
+
+1098
+00:58:32,805 --> 00:58:35,846
+我不记得这个建议是从哪来的，但它大概是这样的想法：
+I don't remember where this advice came from, but it was
+
+1099
+00:58:35,846 --> 00:58:38,689
+如果你想成为一个好的创始人，
+kind of one of these ideas that like, if you want to be
+
+1100
+00:58:38,689 --> 00:58:41,400
+你必须能做每一个岗位的工作。
+a good founder, you have to be able to do every job.
+
+1101
+00:58:41,960 --> 00:58:44,212
+我对公司里每一件小事应该如何发生、
+I had a very strong point of view about how, like every
+
+1102
+00:58:44,212 --> 00:58:46,720
+应该如何运作都有非常明确的主张。
+little thing at the company should happen and should work.
+
+1103
+00:58:46,760 --> 00:58:49,840
+结果就是，这家公司在很大程度上成了……
+And that resulted in a company that was like, very much so.
+
+1104
+00:58:50,770 --> 00:58:53,949
+它是我个人努力和我的观点的产物，
+A product of my effort and, like, my point of view and it
+
+1105
+00:58:53,949 --> 00:58:57,339
+这种特质以各种方式在公司里表现出来，
+like expressed itself in all sorts of ways throughout the
+
+1106
+00:58:57,339 --> 00:59:00,730
+但也在很大程度上让我成了瓶颈。
+company, but also made me the bottleneck in very big ways.
+
+1107
+00:59:01,090 --> 00:59:03,290
+这对一家公司来说有好有坏。
+There's like pros and cons of that for a company.
+
+1108
+00:59:03,410 --> 00:59:04,770
+我觉得确实如此。
+I think definitely.
+
+1109
+00:59:04,850 --> 00:59:06,713
+我觉得如果你要创办一家公司，
+I think that's like, you know, if you were to start a company
+
+1110
+00:59:06,713 --> 00:59:08,691
+而且这是你第一次创业，
+and it's your first time starting a company, you should, like,
+
+1111
+00:59:08,691 --> 00:59:10,326
+那你绝对应该采取这种方式，
+definitely take that approach because it's, like,
+
+1112
+00:59:10,326 --> 00:59:12,570
+因为这样做成功的可能性比不这么做要大得多。
+much more likely to be successful than if you don't take that approach.
+
+1113
+00:59:12,570 --> 00:59:13,530
+Scale 是你的第一家公司吗？
+Was Scale your first company?
+
+1114
+00:59:13,800 --> 00:59:14,600
+Scale 是我的第一家公司。
+Scale is my first company.
+
+1115
+00:59:14,600 --> 00:59:15,080
+真了不起。
+Incredible.
+
+1116
+00:59:15,320 --> 00:59:15,640
+是的。
+Yeah.
+
+1117
+00:59:15,880 --> 00:59:19,340
+但在 Meta，这是一项非常不同的任务，
+But at Meta, like it was a very different assignment
+
+1118
+00:59:19,340 --> 00:59:22,960
+因为我们要在这么短的时间内完成这么多事情。
+because we had to accomplish so much in so little time.
+
+1119
+00:59:23,440 --> 00:59:28,400
+我没有那种奢侈，能“所谓地”去做实验室里的每一个岗位。
+Like, I didn't have the luxury of being able to, quote unquote, do every job within the lab.
+
+1120
+00:59:28,760 --> 00:59:32,680
+我当然不是一名 AI 研究员。
+I, uh, certainly am not an AI researcher.
+
+1121
+00:59:33,120 --> 00:59:35,720
+我也不是一个产品设计师。
+I'm also not a, like product designer.
+
+1122
+00:59:35,920 --> 00:59:42,050
+我不是，你知道，我不是所有那些对组织成功至关重要的角色。
+I'm not, you know, I'm not all these things that are, like, totally pivotal to, um, the organization being successful.
+
+1123
+00:59:42,170 --> 00:59:49,921
+所以在 Meta，我很大程度上采取了这样一种理念：
+So at Meta, very much so, I adopted this, like, philosophy around just how do we create
+
+1124
+00:59:49,921 --> 00:59:57,890
+我们如何创造一个能招到出色人才的环境。这差不多是头等大事。
+an environment where we're gonna hire incredible people. That was like job number one.
+
+1125
+00:59:58,920 --> 01:00:00,000
+招到顶尖的人。
+Hire great.
+
+1126
+01:00:00,700 --> 01:00:04,460
+而且是各个学科领域里处于顶尖水平的出色人才。
+And incredible people who are at the top of their field across every discipline.
+
+1127
+01:00:04,820 --> 01:00:06,420
+你觉得你为什么能在 Meta 做到这一点？
+Why do you think you're able to do that at Meta?
+
+1128
+01:00:06,700 --> 01:00:07,900
+只是因为你拥有更多资源吗？
+It's just because you have more resources?
+
+1129
+01:00:08,020 --> 01:00:09,380
+比如你为什么能做到？
+Like why can you do that?
+
+1130
+01:00:09,940 --> 01:00:19,180
+我觉得 MSL 成立那个时刻非常具有吸引力和魅力的一点是……
+I think one of the things that was very charismatic and attractive about the founding moment of MSL.
+
+1131
+01:00:20,060 --> 01:00:24,942
+有机会用一支非常非常小的团队从零开始打造一个实验室，
+There was an opportunity to build a lab from scratch with a really,
+
+1132
+01:00:24,942 --> 01:00:30,180
+而且我们对前进方向有非常明确的主张。
+really small team and we had a strong point of view of where we're going.
+
+1133
+01:00:30,340 --> 01:00:33,894
+个人超级智能这个方向，我觉得让人们产生了共鸣。
+Personal Superintelligence that I think resonated with people. Like,
+
+1134
+01:00:33,894 --> 01:00:37,743
+比如，我觉得每个做 AI 的人都希望它能帮助别人，
+I think everyone who works on AI wants it to help people, wants it to ultimately
+
+1135
+01:00:37,743 --> 01:00:41,060
+希望它最终能对自己的妈妈、奶奶或爷爷有意义。
+mean something to their mom or to their grandma or to their grandpa.
+
+1136
+01:00:41,540 --> 01:00:45,466
+希望它能成为对世界上每一个人都有意义的东西。
+Wants it to be something as meaningful to every single person in the world.
+
+1137
+01:00:45,466 --> 01:00:49,074
+因为我们是借助 Meta 的资源做这件事，
+Because of the fact that we're doing this with the resources of Meta,
+
+1138
+01:00:49,074 --> 01:00:53,000
+所以有一个机会——我们不会被算力卡住瓶颈。
+there was an opportunity to—we weren't gonna be bottlenecked by compute.
+
+1139
+01:00:53,080 --> 01:00:55,509
+我们不会被基础设施卡住瓶颈，
+We weren't gonna be bottlenecked by like infrastructure,
+
+1140
+01:00:55,509 --> 01:00:57,640
+也不会被分发渠道卡住瓶颈。
+we weren't gonna be bottlenecked by distribution.
+
+1141
+01:00:57,680 --> 01:01:00,249
+我们不会被那些初创公司常常受困的问题卡住，
+Like we weren't gonna be bottlenecked by the things
+
+1142
+01:01:00,249 --> 01:01:03,594
+而这是一个机会，
+that startups often are bottlenecked by, but it was an opportunity
+
+1143
+01:01:03,594 --> 01:01:06,461
+可以真正打造出你能留下个人印记、
+to really build something that you could put your stamp on
+
+1144
+01:01:06,461 --> 01:01:08,910
+施加很大影响并真正塑造的东西。
+and have a lot of influence over and really shape.
+
+1145
+01:01:09,310 --> 01:01:11,070
+我觉得这对很多人来说都相当令人兴奋。
+I think that was like quite exciting for a lot of people.
+
+1146
+01:01:11,350 --> 01:01:17,395
+所以这就是为什么他选择花一笔看起来疯狂的钱去招募少数顶尖人才，
+And so that's why he chooses to spend an insane amount of money—what looks like an insane amount of money—getting
+
+1147
+01:01:17,395 --> 01:01:22,990
+因为他知道那些顶尖人才会再反过来招募其他顶尖人才。
+a handful of top talent because then he knows that those top talent will recruit in turn other top talent.
+
+1148
+01:01:23,270 --> 01:01:25,690
+但你需要那个作为起点，对吗？
+But you need that as a starting point, correct.
+
+1149
+01:01:26,570 --> 01:01:26,770
+是的。
+Yeah.
+
+1150
+01:01:26,770 --> 01:01:33,028
+我觉得这件事中可能有些被低估的一点是，
+And I think one thing that is maybe somewhat underappreciated about that specific
+
+1151
+01:01:33,028 --> 01:01:38,560
+OpenAI 和 Anthropic 的股价涨了很多。
+part is that, I mean, the stock prices of OpenAI and Anthropic ran up a lot.
+
+1152
+01:01:38,840 --> 01:01:41,905
+所以情况恰好是，
+So it just happened to be the case that
+
+1153
+01:01:41,905 --> 01:01:49,124
+如果你看看这些人如果留在 OpenAI 或 Anthropic 能赚多少钱，
+if you looked at how much these people were making if they stayed at OpenAI or Anthropic,
+
+1154
+01:01:49,124 --> 01:01:51,200
+那也是一大笔钱。
+it also was a lot of money.
+
+1155
+01:01:51,360 --> 01:01:53,984
+所以我觉得对很多人才来说，
+So I think for a lot of the talent, it ended up
+
+1156
+01:01:53,984 --> 01:01:56,900
+从薪酬角度看，最终在很多方面基本打平了。
+being kind of net neutral in many ways comp wise.
+
+1157
+01:01:56,980 --> 01:01:59,380
+但显然，我觉得情况也差不多。
+But obviously, I think it's kind of like the same thing.
+
+1158
+01:01:59,460 --> 01:02:02,908
+很多时候我们不会——我们很多人不会去想，
+Like oftentimes we don't—a lot of us don't think about
+
+1159
+01:02:02,908 --> 01:02:06,509
+那些早期员工或早期研究人员，
+how much the early employees or the early researchers at
+
+1160
+01:02:06,509 --> 01:02:10,340
+在这些股票价值大幅增值的实验室里，薪酬到底是多少。
+these labs that have had immense stock value appreciation.
+
+1161
+01:02:10,620 --> 01:02:12,340
+你知道他们的薪酬看起来是什么样。
+You know what their comp looks like.
+
+1162
+01:02:12,940 --> 01:02:15,793
+我们完全基于这样的信念开始这件事：
+We started this fully on the belief of having
+
+1163
+01:02:15,793 --> 01:02:18,260
+拥有并招募最聪明的人。
+and hiring the most brilliant people.
+
+1164
+01:02:18,420 --> 01:02:21,180
+这是一点。另一个是明确的北极星：个人超级智能。
+That's one. A clear North Star, Personal Superintelligence.
+
+1165
+01:02:21,700 --> 01:02:29,540
+这两点，以及如何创造环境，让人们能在 Meta 和 MSL 里做出最好的工作。
+Those two, how do we create the environment where people do their best work at Meta and in MSL?
+
+1166
+01:02:30,020 --> 01:02:33,675
+我现在做的事情更接近“所谓的”传统管理，
+I'm doing much more of like, quote unquote, traditional management,
+
+1167
+01:02:33,675 --> 01:02:36,007
+因为我花很多时间思考的就是：
+so to speak, because these are the things I'm
+
+1168
+01:02:36,007 --> 01:02:39,095
+我如何创造环境，
+thinking a lot about: how do I create the environment where
+
+1169
+01:02:39,095 --> 01:02:42,120
+让所有这些非常出色、非常……
+all these brilliant people who are exceptional and very.
+
+1170
+01:02:42,160 --> 01:02:44,320
+非常特别的人都能运作，
+Very special people can all operate
+
+1171
+01:02:44,320 --> 01:02:47,560
+并最大程度地发挥他们的才华。
+and achieve the greatest expression of their talent.
+
+1172
+01:02:48,120 --> 01:02:50,820
+在某种程度上，我更像一个教练，
+I'm thinking a lot more like, almost
+
+1173
+01:02:50,820 --> 01:02:53,880
+而不是像在 Scale 时那样。
+like a coach in some ways versus at Scale.
+
+1174
+01:02:53,960 --> 01:02:55,080
+那是非常不同的。
+It was like very different.
+
+1175
+01:02:55,160 --> 01:02:56,160
+那时候我更像一个作者型创始人。
+Like I was the auteur.
+
+1176
+01:02:56,360 --> 01:02:59,760
+我是那种个人观点必须体现在我们所做一切事情里的人。
+I was like the person whose point of view had to be expressed in everything that we did.
+
+1177
+01:03:00,000 --> 01:03:00,720
+多说说这一点。
+Say more about that.
+
+1178
+01:03:00,720 --> 01:03:01,880
+你给人的感觉就像一位教练。
+You feel like a coach.
+
+1179
+01:03:02,400 --> 01:03:06,765
+我觉得我的工作是帮助设定北极星
+I think that like my job is to like help set the like North Star
+
+1180
+01:03:06,765 --> 01:03:10,607
+和我们想要前进的方向，
+and the, like, directionality of where we want to go,
+
+1181
+01:03:10,607 --> 01:03:15,584
+也就是个人超级智能，在消费级 AI 上取胜，
+which again, Personal Superintelligence, winning on consumer AI,
+
+1182
+01:03:15,584 --> 01:03:19,600
+打造对每个人都有意义的 AI。
+like building AI that means something to every person.
+
+1183
+01:03:20,130 --> 01:03:23,483
+然后在团队里发现特别的人才，
+And then spotting in the team special talent
+
+1184
+01:03:23,483 --> 01:03:26,473
+并给人们环境和资源，
+and then giving people the environment
+
+1185
+01:03:26,473 --> 01:03:30,370
+让他们能最大限度地发挥出来。
+and resources to be able to express that maximally.
+
+1186
+01:03:30,690 --> 01:03:33,648
+我觉得大公司经常搞砸的一点是：
+Like I think one thing that big companies often mess up is
+
+1187
+01:03:33,648 --> 01:03:36,983
+多数大公司里都有非常优秀的人，
+that there's, like, exceptional people at most big companies,
+
+1188
+01:03:36,983 --> 01:03:40,130
+但他们只是没有被赋能去做出最好的工作。
+but they just, like, are not empowered to do their best work.
+
+1189
+01:03:40,600 --> 01:03:42,399
+这也是为什么他们常常离开，
+And that's why they often leave to go to smaller
+
+1190
+01:03:42,399 --> 01:03:44,520
+去更小的公司，或者去创业，诸如此类。
+companies or to start startups or whatever it might be.
+
+1191
+01:03:44,720 --> 01:03:46,880
+你之前提到过 Jeff Bezos 的股东信。
+You mentioned Jeff Bezos shareholder letters earlier.
+
+1192
+01:03:47,080 --> 01:03:48,804
+在我读过的关于他的书里，他也会反复说这一点，
+That's something he would repeat as well in all the books
+
+1193
+01:03:48,804 --> 01:03:50,455
+股东信里也这样说：如果你拥有优秀的人，
+I read about him, but also shareholder letters, like,
+
+1194
+01:03:50,455 --> 01:03:52,400
+却不能让他们去创造，他们就会离开。
+if you have great people that can't build, they're gonna leave.
+
+1195
+01:03:52,880 --> 01:03:53,840
+对，确实如此。
+Yeah, exactly.
+
+1196
+01:03:54,480 --> 01:03:57,720
+而 AI 是一件非常特殊的事情。
+And AI is such, like, it's like such a special thing.
+
+1197
+01:03:58,040 --> 01:04:00,300
+我觉得现在“研究”这个词，
+Like, I think you know, this term research now,
+
+1198
+01:04:00,300 --> 01:04:02,560
+感觉几乎已经没什么意义了。
+it feels like it almost doesn't mean anything.
+
+1199
+01:04:02,640 --> 01:04:10,920
+但从定义上说，人类并不知道这些模型的能力边界在哪里。
+But like, by definition, humanity doesn't know the limits of what these, like, models are capable of.
+
+1200
+01:04:11,000 --> 01:04:12,680
+以及你可以用它们做哪些事情。
+And what are the things you can do with them?
+
+1201
+01:04:12,760 --> 01:04:17,840
+它们真的是一些我们还不太了解、未知的产物。
+Like, they really are these, like, unknown artifacts that we don't understand so well.
+
+1202
+01:04:17,840 --> 01:04:20,623
+所以这真的就是科学和研究，
+So like, it really is science and research and we are
+
+1203
+01:04:20,623 --> 01:04:23,212
+我们在探索这项技术的极限，
+exploring the limits of what you can do with this
+
+1204
+01:04:23,212 --> 01:04:26,060
+以及可以构建出什么东西。
+technology and what are the things that can be built.
+
+1205
+01:04:26,180 --> 01:04:31,080
+这是一个需要大量试错的过程。
+And it is a process that requires lots of, of trial and error.
+
+1206
+01:04:31,400 --> 01:04:34,240
+它需要非常聪明的人拥有非凡的洞察力。
+It requires like brilliant people to have incredible insight.
+
+1207
+01:04:34,360 --> 01:04:40,160
+你不能把这一过程想成一种运营强度很高的流程。
+Like it's one of these things that you can't think about this process as a very operationally intense process.
+
+1208
+01:04:40,280 --> 01:04:43,583
+人们需要空间、时间和资源，
+Like people need space and time and resources to
+
+1209
+01:04:43,583 --> 01:04:46,720
+才能做出最好的工作。
+be able to, like, you know, do their best work.
+
+1210
+01:04:47,360 --> 01:04:49,400
+我会从很多维度来思考这件事，对吧？
+And I think about it in many dimensions, right?
+
+1211
+01:04:49,440 --> 01:04:53,707
+我觉得 Nat Friedman 绝对才华横溢，
+Like I think Nat Friedman is absolutely brilliant
+
+1212
+01:04:53,707 --> 01:04:57,060
+而且正如我提到的，Muse 有很多地方都体现了他的想法。
+and as I mentioned, like so much of Muse.
+
+1213
+01:04:57,340 --> 01:05:02,060
+如果说有哪一个人的产品视角在 Muse 中体现得最充分，那就是 Nat。
+If there were a single person whose, like, single point of view came through on Muse, it is Nat.
+
+1214
+01:05:02,300 --> 01:05:06,620
+让他处在一个能完全表达这些想法的位置，这很重要。
+It's important for him to be in a position where he can like fully express all of that.
+
+1215
+01:05:06,900 --> 01:05:08,780
+然后我们还有一些非常出色的研究人员。
+And then we have some brilliant researchers.
+
+1216
+01:05:09,300 --> 01:05:11,420
+他们有非常、非常令人兴奋的想法。
+They have, like, very, very exciting ideas.
+
+1217
+01:05:11,500 --> 01:05:13,860
+我们如何创造一个环境，让他们能够去探索这些想法？
+How do we create an environment where they are able to explore those?
+
+1218
+01:05:13,940 --> 01:05:15,698
+其中大多数想法不会成功，
+And like, most of them won't work out,
+
+1219
+01:05:15,698 --> 01:05:17,740
+但有些会带来非常好的结果。
+some of them will work out incredibly well.
+
+1220
+01:05:17,900 --> 01:05:21,140
+那些成功的案例，足以证明所有投入都是值得的。
+The cases where that works out justify all the investment.
+
+1221
+01:05:21,420 --> 01:05:28,780
+可以说有两类问题，用类比来说就是“挖钻石”或“盖摩天楼”。
+So there's two kinds of problems, so to speak, and that analogy is like diamond mining or building skyscrapers.
+
+1222
+01:05:29,380 --> 01:05:33,700
+这取决于你所做事情的回报分布是怎样的。
+And it depends on what the distribution of the payoff of the things that you're working on are.
+
+1223
+01:05:33,900 --> 01:05:37,301
+在有些领域，回报分布是极强的幂律：
+So there's like some areas where the distribution is super power law,
+
+1224
+01:05:37,301 --> 01:05:41,171
+你做的大多数事情可能几乎没用，
+like most of the things you do will be kind of useless, but then some of the things
+
+1225
+01:05:41,171 --> 01:05:45,100
+但少数事情的价值可能比其它所有事情高出一百万倍。
+you do can be like literally a million times more valuable than everything else.
+
+1226
+01:05:45,420 --> 01:05:49,140
+我认为风险投资就是一个很好的“挖钻石”型行业。
+VC, I think, is a great like diamond mining kind of industry to give a sense.
+
+1227
+01:05:49,380 --> 01:05:52,115
+它全在于能识别出独特的想法，
+It's just all about like being able to identify
+
+1228
+01:05:52,115 --> 01:05:54,780
+并把它们贯彻到底。
+the special ideas and like see those through.
+
+1229
+01:05:55,100 --> 01:05:56,020
+而这很容易做到。
+And that's easy to do.
+
+1230
+01:05:56,100 --> 01:05:58,220
+只要看看你的 19 岁生日派对就行。
+Just look at, just go to your 19th birthday party.
+
+1231
+01:05:58,860 --> 01:05:59,140
+对。
+Yeah.
+
+1232
+01:05:59,220 --> 01:06:03,740
+我的意思是，对不知道我刚刚在说什么的听众来说，这简直难以置信。
+I mean, that's like unbelievable to people listening that don't know what the hell I just referenced.
+
+1233
+01:06:03,780 --> 01:06:05,763
+你能快速聊聊，你 19 岁生日派对上都有谁，
+Can you talk about real quick, who was at your 19th
+
+1234
+01:06:05,763 --> 01:06:07,892
+以及为什么如果当时投资了在场的每个人，
+birthday party and why that would have been a good bet
+
+1235
+01:06:07,892 --> 01:06:10,020
+会是一笔很好的赌注吗？
+if they just invested in everybody around the table.
+
+1236
+01:06:10,940 --> 01:06:15,420
+回想起来确实很疯狂。我 19 岁生日派对时，我是 MIT 的大一新生。
+This is like a really crazy thing to think about, my 19th birthday party, I was a freshman at MIT.
+
+1237
+01:06:15,580 --> 01:06:16,340
+那是在一月。
+It was in January.
+
+1238
+01:06:16,460 --> 01:06:22,820
+我当时在 HRT（自营交易公司）做“wintership”，也就是冬季实习。
+I was doing a wintership, a winter internship, wintership at a trading firm called HRT.
+
+1239
+01:06:23,060 --> 01:06:26,900
+我们大概有 10 到 12 个人。
+There were like 10 of us, 12 of us, something like that.
+
+1240
+01:06:26,980 --> 01:06:30,140
+几乎所有人都是哈佛或 MIT 的学生。
+Almost all of whom were students at either Harvard or MIT.
+
+1241
+01:06:30,540 --> 01:06:33,296
+我们大多数人早就通过各种数学、
+Most of us already knew each other from various math
+
+1242
+01:06:33,296 --> 01:06:35,860
+科学或计算机竞赛认识了。
+and science or computer science competitions.
+
+1243
+01:06:36,260 --> 01:06:41,300
+其中一些人是 Jeffrey Yan，他后来创办了 Hyperliquid（加密货币交易平台）。
+Some of the other people were Jeffrey Yan, who went on to start Hyperliquid.
+
+1244
+01:06:41,380 --> 01:06:42,460
+对，非常成功。
+Yep, very successful.
+
+1245
+01:06:42,970 --> 01:06:46,850
+Scott Wu 后来创办了 Cognition（AI 编程公司），也非常成功。
+Um, Scott Wu went on to start Cognition, very successful.
+
+1246
+01:06:47,410 --> 01:06:52,610
+另一个人是 Jesse Zhang，他后来创办了 Decagon（AI 客服公司），也相当成功。
+Another person there was, uh, Jesse Zhang, who went on to start Decagon, also quite successful.
+
+1247
+01:06:52,970 --> 01:06:59,090
+还有一位是 Vicky Yi，我觉得她是一位出色的研究者，在 Anthropic 工作。
+Um, another person is Vicky Yi, who is, I think, a brilliant researcher, works at Anthropic.
+
+1248
+01:06:59,410 --> 01:07:00,730
+每个人都非常有才华。
+Everyone was like, incredibly talented.
+
+1249
+01:07:01,010 --> 01:07:05,166
+我最近其实和 HRT 的创始人聊过。
+I actually talked to the, uh, the founder of HRT recently
+
+1250
+01:07:05,166 --> 01:07:09,940
+顺便说一句，HRT 现在的表现也非常惊人。
+and HRT itself, by the way, now is like crushing it unbelievably.
+
+1251
+01:07:09,940 --> 01:07:10,860
+HRT 是做什么的？
+What does HRT do?
+
+1252
+01:07:11,140 --> 01:07:13,020
+HRT 是一家自营交易公司。
+HRT, it's a proprietary trading firm.
+
+1253
+01:07:13,060 --> 01:07:14,460
+他们用自己的钱进行交易。
+So they, they trade their own money.
+
+1254
+01:07:14,780 --> 01:07:20,050
+在 2026 年第二季度，他们有 110 亿美元收入，
+In Q2 of 2026, they had $11 billion of revenue and,
+
+1255
+01:07:20,050 --> 01:07:26,220
+我记得是 80 亿美元利润，创下了纪录。
+I think, $8 billion of profit, which is the record number.
+
+1256
+01:07:26,610 --> 01:07:30,050
+我觉得在 HRT 工作的员工不到 1000 人。
+I think it's under 1,000 people who work at HRT.
+
+1257
+01:07:30,130 --> 01:07:31,330
+真的难以置信。
+I mean, it's like unbelievable.
+
+1258
+01:07:31,490 --> 01:07:33,572
+但我最近见了 HRT 的创始人，
+But I, I recently, uh, met up with the founder of HRT
+
+1259
+01:07:33,572 --> 01:07:35,307
+他们说起，哦对，
+and they were talking about like, oh yeah,
+
+1260
+01:07:35,307 --> 01:07:37,290
+我们要开始做一些私人投资。
+we're starting to do some private investments.
+
+1261
+01:07:37,370 --> 01:07:40,170
+我说，干脆投给那些实习生吧。
+I was like, just invest into the interns.
+
+1262
+01:07:41,090 --> 01:07:49,210
+所有实习生都拿到种子投资支票。那很好。我从小就在做数学和——
+All the interns get seed checks. That's great. I grew up doing, uh, math and.
+
+1263
+01:07:50,380 --> 01:07:54,680
+科学、计算机竞赛和奥赛，
+Science and computer science competitions and Olympiads and got to know,
+
+1264
+01:07:54,680 --> 01:07:58,980
+因此认识了来自美国各地做这类事情的各种人。
+like, all sorts of people from all around America doing this kind of stuff.
+
+1265
+01:07:59,180 --> 01:08:04,460
+看到那些曾经和我一起参加竞赛的人变得如此成功，感觉挺超现实的。
+It's like quite surreal to see the people that I did competitions with become so successful.
+
+1266
+01:08:04,540 --> 01:08:07,060
+接下来几十年你们会做出什么，这会非常令人期待。
+It's going to be fascinating what all of you do the next few decades.
+
+1267
+01:08:07,580 --> 01:08:09,236
+在我打断你之前，关于“挖钻石”
+Before I interrupted you, did you have more to
+
+1268
+01:08:09,236 --> 01:08:10,980
+和“盖摩天楼”你还有想说的吗？
+say about diamond mining and skyscraper stuff?
+
+1269
+01:08:11,330 --> 01:08:19,294
+基本上就是，它是否有幂律回报——有些东西的回报可能真的达到投入的一百万倍——
+Basically, it's like, does it have a power law payoff where some things just pay for literally a million times the investment,
+
+1270
+01:08:19,294 --> 01:08:22,556
+还是更像盖摩天楼？
+or is it something more like building skyscrapers,
+
+1271
+01:08:22,556 --> 01:08:27,410
+我会把数据标注或数据业务归到更像后一类。
+which I would describe data annotation or data businesses as more like this.
+
+1272
+01:08:27,410 --> 01:08:30,173
+比如 Amazon Prime 配送是另一个例子，
+Which is like Amazon Prime deliveries is another example
+
+1273
+01:08:30,173 --> 01:08:33,109
+回报相当线性，你必须建立一套流程，
+where the payoff is pretty linear and you have to just develop
+
+1274
+01:08:33,109 --> 01:08:35,930
+然后在这件事上做到非常非常出色。
+a process where you're really, really amazing at doing it.
+
+1275
+01:08:36,380 --> 01:08:39,053
+如果你在盖摩天楼，
+If you're building skyscrapers, then it's like a
+
+1276
+01:08:39,053 --> 01:08:42,117
+那它是个非常偏运营的生意，
+very operational business and it's all about squeezing
+
+1277
+01:08:42,117 --> 01:08:44,660
+关键在于从流程中榨出每一分效率。
+every ounce of efficiency out of that process.
+
+1278
+01:08:44,780 --> 01:08:47,009
+你只是盯着它，琢磨着：
+And you just look at it and you figure out like,
+
+1279
+01:08:47,009 --> 01:08:50,177
+这样能提升 2% 的效率，那样能提升 1%，
+I can make it like 2% more efficient this way and 1% more efficient
+
+1280
+01:08:50,177 --> 01:08:52,700
+再那样还能提升 0.5%。
+that way and half a percent more efficient that way.
+
+1281
+01:08:52,860 --> 01:08:56,790
+你就是尽力从中挤出所有可优化的空间。
+And you just try to squeeze every ounce of optimization out of it.
+
+1282
+01:08:57,190 --> 01:09:01,278
+然后是挖钻石，你有点像在说：嘿，
+And then there's diamond mining where you're kind of like,
+
+1283
+01:09:01,278 --> 01:09:05,116
+大家，冲吧，去试那些疯狂的想法，
+hey, everyone, just go forth, try all your crazy ideas,
+
+1284
+01:09:05,116 --> 01:09:09,120
+而你只是培育那些看起来有潜力的想法。
+and you're just nurturing the ideas that seem promising.
+
+1285
+01:09:09,320 --> 01:09:10,760
+这就是你现在觉得自己在 Meta 做的事？
+That's what you feel you're doing at Meta right now?
+
+1286
+01:09:10,840 --> 01:09:11,960
+这就是我觉得自己在 Meta 做的事。
+That's what I feel I'm doing at Meta.
+
+1287
+01:09:12,280 --> 01:09:15,673
+而“盖摩天楼”这类事情，总的来说，
+And the building skyscraper stuff, generally speaking,
+
+1288
+01:09:15,673 --> 01:09:19,066
+是我在 Scale AI 时觉得自己在做的事。这是一个很大的范式差异，
+is what I felt I was doing at Scale, and that's like this big
+
+1289
+01:09:19,066 --> 01:09:22,600
+回到你之前问的教练和方式那一点。
+paradigm difference going back to the coaching and the way.
+
+1290
+01:09:22,640 --> 01:09:25,928
+你现在在 Meta 的管理方式与你在 Scale AI 时相比的差异，
+The difference of how you're essentially managing now at Meta compared to what you do at Scale,
+
+1291
+01:09:25,928 --> 01:09:27,260
+为什么你有这么多直属下属？
+why do you have so many direct reports?
+
+1292
+01:09:27,300 --> 01:09:28,620
+你有多少，100 个直属下属？
+You have like what, 100 direct reports?
+
+1293
+01:09:28,700 --> 01:09:29,380
+到底多少个直属下属？
+How many direct reports?
+
+1294
+01:09:29,500 --> 01:09:31,060
+对，我觉得超过 200 个。
+Yeah, I think more than 200.
+
+1295
+01:09:31,180 --> 01:09:31,420
+对。
+Yeah.
+
+1296
+01:09:31,900 --> 01:09:32,980
+怎么做到的？为什么？
+How and why?
+
+1297
+01:09:33,580 --> 01:09:37,687
+回到这个问题，MSL 的创始论点之一，
+Going back to it, one of the founding theses of MSL
+
+1298
+01:09:37,687 --> 01:09:41,693
+以及我们重建这个实验室时想做的事，
+and what we want to do in rebuilding this lab was:
+
+1299
+01:09:41,693 --> 01:09:46,000
+就是：如何拥有非常非常高的人才密度？
+how do you have really, really high talent density?
+
+1300
+01:09:46,480 --> 01:09:52,040
+如何把它打造成让很多聪明人能做出最佳工作的最好地方？
+How do you make it like the best place for a lot of these brilliant people to do their best work?
+
+1301
+01:09:52,600 --> 01:09:56,337
+以及如何建立一个以技术为核心的机构，
+And how do you build an organization that's technically focused,
+
+1302
+01:09:56,337 --> 01:09:59,327
+让技术人员能做出最好的工作，
+where the technical people are doing their best work
+
+1303
+01:09:59,327 --> 01:10:02,520
+并且有机会真正去做他们毕生的事业？
+and have the opportunity to really do their life's work?
+
+1304
+01:10:02,640 --> 01:10:05,920
+围绕这一点，设计原则之一就是让它非常扁平化。
+And one of the design principles around this was making it very flat.
+
+1305
+01:10:06,240 --> 01:10:11,640
+实际上，我们招进这个叫 TBD 的研究团队的所有研究人员，都直接向我汇报。
+You know, effectively, all the researchers that we hired into this group called TBD, they report directly to me.
+
+1306
+01:10:12,000 --> 01:10:14,560
+这更多是在表明一个事实：
+And it's more of a statement of the fact
+
+1307
+01:10:14,560 --> 01:10:16,720
+这是反官僚主义的。
+that this is anti-bureaucracy.
+
+1308
+01:10:16,880 --> 01:10:19,280
+TBD 简直就是在反官僚。
+Like TBD is literally anti-bureaucracy.
+
+1309
+01:10:19,600 --> 01:10:28,280
+重点是我们招的是聪明人，而你们都已经清楚地证明自己能做出非常出色的工作。
+The point is we're hiring brilliant people and you all have demonstrated clearly that you can do brilliant, brilliant work.
+
+1310
+01:10:28,400 --> 01:10:29,920
+你们在职业生涯中以前就做到过。
+You have done it before in your careers.
+
+1311
+01:10:30,200 --> 01:10:34,240
+所以我不需要事无巨细地管着你们才能做出出色工作。
+So I don't need to be micromanaging you to do brilliant work.
+
+1312
+01:10:34,440 --> 01:10:36,400
+你们自己就能做到。
+You're gonna be able to do that on your own.
+
+1313
+01:10:37,120 --> 01:10:38,480
+我们需要技术领导力。
+We need technical leadership.
+
+1314
+01:10:38,560 --> 01:10:43,360
+所以你们中的一些人要负责为各自小组制定清晰的技术方向。
+So some of you are gonna be responsible for setting clear technical directions for your groups.
+
+1315
+01:10:43,400 --> 01:10:45,752
+我们有这种小组结构，有多个 pod，
+And we have this kind of pod structure where we have
+
+1316
+01:10:45,752 --> 01:10:48,216
+各个 pod 有技术负责人，
+various pods, and there are various technical leads
+
+1317
+01:10:48,216 --> 01:10:50,680
+他们会在技术决策上做最终裁决。
+of the pods who tiebreak on the technical decisions.
+
+1318
+01:10:51,200 --> 01:10:54,330
+所以技术领导结构是有的，
+So there's like a technical leadership structure in place,
+
+1319
+01:10:54,330 --> 01:10:59,212
+但从“所谓的”人员管理角度或官僚角度来看，
+but from a quote-unquote people management perspective or from a bureaucracy perspective,
+
+1320
+01:10:59,212 --> 01:11:00,840
+我们就是反官僚。
+we're just anti-bureaucracy.
+
+1321
+01:11:00,960 --> 01:11:03,846
+另一部分是，我们确实会做很多集体决策，
+And then the other part of this is like,
+
+1322
+01:11:03,846 --> 01:11:07,362
+因为我们想辩论，
+we do make a lot of group decisions because it is
+
+1323
+01:11:07,362 --> 01:11:11,240
+毕竟这是一群人才密度很高、非常聪明的人。
+like a very talent dense group of brilliant people.
+
+1324
+01:11:11,560 --> 01:11:14,061
+我们希望进行这样的对话：
+We want to have those conversations where we're
+
+1325
+01:11:14,061 --> 01:11:16,500
+大家共同讨论我们认为正确的路径是什么。
+all discussing what we think the right path is.
+
+1326
+01:11:17,140 --> 01:11:18,740
+实验室里的每个人都做过出色的成果。
+Everyone in the lab has done brilliant things.
+
+1327
+01:11:18,780 --> 01:11:19,900
+我们想听到所有这些观点。
+Like we want to hear all these opinions.
+
+1328
+01:11:19,980 --> 01:11:23,300
+我们希望达成大家都认为是最好的前进方向。
+We want to arrive at things that we all believe are the best path forward.
+
+1329
+01:11:23,780 --> 01:11:26,620
+所以这确实是一种非常规的团队管理方式。
+So it's certainly like an unconventional way to run the team.
+
+1330
+01:11:26,660 --> 01:11:32,860
+如果说我是 200 多人最好的管理者，那我是在撒谎。
+And I would be lying if I said I was like the best manager to more than 200 people.
+
+1331
+01:11:32,860 --> 01:11:36,860
+但重点的一部分就在于，他们不需要管理者。
+But part of the point is that they don't need managers.
+
+1332
+01:11:37,300 --> 01:11:38,660
+他们需要一个好的环境。
+They need a great environment.
+
+1333
+01:11:39,100 --> 01:11:40,940
+他们都很聪明。
+They are all brilliant.
+
+1334
+01:11:41,060 --> 01:11:42,180
+他们都极有能力。
+They're all extremely capable.
+
+1335
+01:11:42,460 --> 01:11:43,980
+他们只是需要空间去发挥。
+They just need the room to cook.
+
+1336
+01:11:44,220 --> 01:11:44,420
+对。
+Yeah.
+
+1337
+01:11:44,500 --> 01:11:45,340
+所以也许不是教练。
+So maybe not a coach.
+
+1338
+01:11:45,540 --> 01:11:48,140
+你更像是好环境的守护者，让他们能做出好工作。
+You're kind of like the steward of a great environment so they can do great work.
+
+1339
+01:11:48,540 --> 01:11:49,380
+对，没错。
+Yeah, exactly.
+
+1340
+01:11:50,140 --> 01:11:51,060
+Alex，这次太棒了，兄弟。
+Alex, this was awesome, man.
+
+1341
+01:11:51,100 --> 01:11:52,260
+感谢你抽出时间。
+Thanks for taking the time.
+
+1342
+01:11:52,420 --> 01:11:53,220
+谢谢。
+Yeah, thank you.
+
+1343
+01:11:54,180 --> 01:11:55,260
+希望你喜欢这一集。
+I hope you enjoyed this episode.
+
+1344
+01:11:55,340 --> 01:11:58,109
+请记得在收听平台订阅并留下评论，
+Please remember to subscribe wherever you're listening and leave
+
+1345
+01:11:58,109 --> 01:12:00,680
+也务必收听我的另一档播客 Founders。
+a review and make sure you listen to my other podcast Founders.
+
+1346
+01:12:00,720 --> 01:12:05,994
+近十年来，我痴迷地读了 400 多本历史上最伟大企业家的传记，
+For almost a decade, I've obsessively read over 400 biographies of history's greatest entrepreneurs,
+
+1347
+01:12:05,994 --> 01:12:08,480
+寻找你在工作中能用的想法。
+searching for ideas that you can use in your work.
+
+1348
+01:12:08,880 --> 01:12:12,600
+你在本期节目里听到的大多数嘉宾，最初都是通过 Founders 找到我的。
+Most of the guests you hear on this show first found me through Founders.

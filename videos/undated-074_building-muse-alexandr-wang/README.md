@@ -1,7 +1,8 @@
-# 打造 Muse、与扎克伯格共事，以及 AI 的未来｜Alexandr Wang
+# 打造 Muse 的幕后、与扎克伯格共事以及 AI 的未来 | Alexandr Wang
 
 原视频：Building Muse, Working with Mark Zuckerberg & The Future of AI | Alexandr Wang, Meta
 YouTube：https://www.youtube.com/watch?v=S6l3aRsecuE
+B站：https://www.bilibili.com/video/BV1i64F6FEV3/
 
 ## 简介
 

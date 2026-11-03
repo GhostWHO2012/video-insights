@@ -1,5 +1,6 @@
-# 如何在 AI 设计泛滥的时代脱颖而出？｜Alex Danilowicz
+# 如何在 AI 设计泛滥的时代脱颖而出？| Alex Danilowicz
 
+B站视频：https://www.bilibili.com/video/BV15Lxe6HEKs/
 AI 已经能快速生成网站和交互原型，但做出的页面为什么常常相似，甚至让用户不知道该点哪里？Magic Patterns 联合创始人 Alex Danilowicz 演示新版画布 MagicOS，分享怎样结合提示词、图片、需求文档和现有组件，制作可操作的设计原型。
 
 后半段，他们点评 Ego、Sentient OS、Cerenovus 和 Slashy 四个网站：首屏怎样说明产品，按钮怎样引导行动，动画什么时候真正有帮助，滚动劫持为什么妨碍阅读，以及需要敏感数据的 AI 产品如何建立信任。最后还谈到设计品味、用户反馈和发布质量。

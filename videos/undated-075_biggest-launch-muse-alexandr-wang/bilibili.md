@@ -1,5 +1,6 @@
-# 自 ChatGPT 以来规模最大的 AI 发布？Muse 到底能做什么｜Alexandr Wang
+# 自 ChatGPT 以来最重磅的发布（Muse）| Alexandr Wang
 
+B站视频：https://www.bilibili.com/video/BV1j24P6rEPL/
 Muse 是一个能替人打电话、连接服务并执行任务的个人 AI 智能体。它试图把 AI 从“回答问题”带进真实生活：帮人处理琐事、节省时间，甚至推进那些一直没空实现的想法。
 但智能体能行动，也意味着它可能接触隐私、误解意图或越过边界。Cleo Abram 与 Alexandr Wang 从实际使用谈到数据存放、人工确认、AI 监督 AI 和行业监管：我们究竟要怎样信任一个替自己做事的智能体？视频最后也谈到“个人超级智能”的愿景。
 

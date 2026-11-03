@@ -1,5 +1,6 @@
-# 打造 Muse、与扎克伯格共事，以及 AI 的未来｜Alexandr Wang
+# 打造 Muse 的幕后、与扎克伯格共事以及 AI 的未来 | Alexandr Wang
 
+B站视频：https://www.bilibili.com/video/BV1i64F6FEV3/
 Meta 为什么选择做面向每个人的 AI 智能体，而不是跟着行业热潮去做编程智能体？Meta 首席 AI 官 Alexandr Wang 向 David Senra 讲述 Muse 从一两周原型到七个月打磨发布的过程：团队如何确定产品方向、逐项评估能力，并把不稳定的演示变成可靠的消费产品。
 访谈还谈到 Mark Zuckerberg 对产品细节的执着、Muse 如何通过统一的产品观点和传播策略走红，以及 Alexandr 离开 Scale AI、重建 Meta AI 实验室的经历。他认为，个人智能体最终应帮助更多人摆脱琐事，继续追求自己的愿望。
 

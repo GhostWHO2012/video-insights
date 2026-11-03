@@ -1,7 +1,8 @@
-# 自 ChatGPT 以来规模最大的 AI 发布？Muse 到底能做什么｜Alexandr Wang
+# 自 ChatGPT 以来最重磅的发布（Muse）| Alexandr Wang
 
 原视频：The Biggest Launch Since ChatGPT (Muse)
 YouTube：https://www.youtube.com/watch?v=1LRvMRC_pfY
+B站：https://www.bilibili.com/video/BV1j24P6rEPL/
 
 ## 简介
 

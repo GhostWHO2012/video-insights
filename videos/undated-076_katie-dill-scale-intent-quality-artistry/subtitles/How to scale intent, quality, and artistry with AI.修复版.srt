@@ -1,0 +1,2184 @@
+1
+00:00:06,200 --> 00:00:06,840
+早上好。
+Good morning.
+
+2
+00:00:08,360 --> 00:00:13,321
+二战刚结束，
+Right after World War II, there was a massive building boom,
+
+3
+00:00:13,321 --> 00:00:16,000
+美国出现了史上最大规模的建筑热潮。
+the largest in history in the US.
+
+4
+00:00:16,280 --> 00:00:17,760
+人们从战场返乡。
+People were coming home from war.
+
+5
+00:00:18,240 --> 00:00:21,793
+新技术、新施工方法涌现，
+There were new technologies, new construction methods,
+
+6
+00:00:21,793 --> 00:00:24,680
+建筑如雨后春笋般拔地而起。
+and buildings were going up like gangbusters.
+
+7
+00:00:25,120 --> 00:00:27,379
+当时的建造者借鉴了
+The builders of that day drew on
+
+8
+00:00:27,379 --> 00:00:30,160
+1920年代的现代主义风格。
+the style of modernism from the 1920s.
+
+9
+00:00:30,970 --> 00:00:32,210
+那真的很简洁。
+That's really simple.
+
+10
+00:00:32,410 --> 00:00:35,233
+几何形体、干净裸露的表面、单色调色板，
+Geometries, clean, bare surfaces,
+
+11
+00:00:35,233 --> 00:00:39,090
+没有任何装饰。
+monochromatic color palettes and no adornment.
+
+12
+00:00:39,370 --> 00:00:41,575
+不管你怎么评价现代主义，
+Now, say what you will about modernism,
+
+13
+00:00:41,575 --> 00:00:44,850
+这场运动背后的创始人们是有明确意图的。
+but the founders behind the movement had intentionality.
+
+14
+00:00:45,650 --> 00:00:48,887
+Villa Savoye（萨伏伊别墅）背后有明确的设计观点。
+There was a point of view behind the Villa Savoye.
+
+15
+00:00:48,887 --> 00:00:51,730
+Bauhaus（包豪斯）背后有明确的原则。
+There were principles behind the Bauhaus.
+
+16
+00:00:52,670 --> 00:00:55,900
+但二战后，由于建设紧迫
+But after World War II, with urgency to build
+
+17
+00:00:55,900 --> 00:00:58,170
+和新的施工方法，
+and new construction methods,
+
+18
+00:00:58,170 --> 00:01:01,749
+这种风格被一再复制，
+the style was essentially copied again and again
+
+19
+00:01:01,749 --> 00:01:03,670
+却失去了原本的意图。
+without intentionality.
+
+20
+00:01:04,510 --> 00:01:08,289
+思考变得越来越稀薄，
+The thinking got thinner and thinner and all that was left
+
+21
+00:01:08,289 --> 00:01:11,990
+剩下的只是与眼前环境并不匹配的通用模式。
+were generic patterns ill suited to the context at hand.
+
+22
+00:01:12,310 --> 00:01:16,258
+例如，过去的银行长这样，
+For example, we used to have banks that looked like this,
+
+23
+00:01:16,258 --> 00:01:19,450
+传递着信任、可靠与安全。
+signaling trust, reliability and security.
+
+24
+00:01:20,610 --> 00:01:22,210
+后来我们得到的是这个。
+And then we got this.
+
+25
+00:01:24,570 --> 00:01:27,001
+你们对这样的现实太熟悉了，
+You're all too familiar with this reality,
+
+26
+00:01:27,001 --> 00:01:29,770
+因为它延续了几十年直到今天。
+because it carried on for decades until this day.
+
+27
+00:01:30,590 --> 00:01:33,670
+僵尸建筑到处都是。
+Zombie buildings all over the place.
+
+28
+00:01:34,510 --> 00:01:35,990
+它们毫无区分度。
+Nothing differentiates them.
+
+29
+00:01:36,470 --> 00:01:38,590
+没有任何一处表明这是有意为之。
+Nothing says this is intentional.
+
+30
+00:01:39,030 --> 00:01:40,390
+这表明它贴合本来的用途。
+This is fit to purpose.
+
+31
+00:01:41,150 --> 00:01:43,736
+它们本质上对使用者
+They essentially show no care for the user
+
+32
+00:01:43,736 --> 00:01:45,435
+及其周围环境漠不关心，
+and the habitats around it,
+
+33
+00:01:45,435 --> 00:01:47,430
+也不在意使用场景或品牌。
+no care for context or the brand.
+
+34
+00:01:48,190 --> 00:01:49,310
+我经常思考这个问题。
+I think about this a lot.
+
+35
+00:01:49,790 --> 00:01:51,270
+第一，我们身边到处都是它们。
+One, we're surrounded by them.
+
+36
+00:01:51,630 --> 00:01:54,970
+第二，我们又迎来一场建设热潮——
+And two, we're in another building boom,
+
+37
+00:01:54,970 --> 00:01:57,032
+AI 产品开发热潮。
+now the AI building boom,
+
+38
+00:01:57,032 --> 00:02:00,470
+如今几乎人人都能动手打造产品。
+everybody and their mother can build now.
+
+39
+00:02:01,110 --> 00:02:04,670
+三个人的团队能干过去三十个人的团队的活。
+Teams of three can do what teams of 30 used to be needed for.
+
+40
+00:02:04,830 --> 00:02:07,878
+但这与战后建筑热潮有相似之处，
+But there's echoes of the post war building boom,
+
+41
+00:02:07,878 --> 00:02:11,150
+而这些相似之处正是我们需要警惕的地方。
+similarities that are actually watch points for us.
+
+42
+00:02:11,800 --> 00:02:14,251
+我想先讲讲这些警戒点，
+I want to tell you about these watch points and then
+
+43
+00:02:14,251 --> 00:02:16,760
+然后我们讨论如何一起应对它们。
+we'll talk about how we can navigate them together.
+
+44
+00:02:17,560 --> 00:02:20,556
+第一，LLM（大语言模型）非常擅长
+First, LLMs are really good at telling you
+
+45
+00:02:20,556 --> 00:02:22,439
+给出最有可能的答案，
+the most probable answer,
+
+46
+00:02:22,439 --> 00:02:26,292
+这本质上意味着它们能告诉你
+which essentially means that they're able to tell you
+
+47
+00:02:26,292 --> 00:02:28,517
+什么曾经或现在流行、
+what has been or is popular now,
+
+48
+00:02:28,517 --> 00:02:31,000
+什么有效、什么正流行。
+what has worked, what was in style.
+
+49
+00:02:31,720 --> 00:02:34,566
+它们不太擅长告诉你什么才是原创的，
+They're less good at telling you what's original
+
+50
+00:02:34,566 --> 00:02:37,760
+或针对你、你的品牌和用户场景是独特的。
+or specific to you, your brand and your user's context.
+
+51
+00:02:38,120 --> 00:02:39,080
+我给你举个例子。
+I'll give you an example.
+
+52
+00:02:39,760 --> 00:02:41,480
+你能猜出这个品牌卖什么吗？
+Can you guess what this brand sells?
+
+53
+00:02:42,760 --> 00:02:43,200
+软件。
+Software.
+
+54
+00:02:44,080 --> 00:02:44,440
+不是。
+No.
+
+55
+00:02:44,680 --> 00:02:45,680
+韩式烤肉。
+Korean barbecue.
+
+56
+00:02:47,920 --> 00:02:51,332
+我相信这肯定是个不错的网站，但它没有个性，
+Now, this is, I'm sure, a very fine website, but it has no
+
+57
+00:02:51,332 --> 00:02:55,040
+既缺少用户视角，也没有贴合使用场景。
+character, no context for the user or the context of the use.
+
+58
+00:02:55,500 --> 00:02:59,020
+这就引出我的第二点：“已经完成”的诱惑。
+Which brings me to my second point, the temptation of done.
+
+59
+00:03:00,160 --> 00:03:03,127
+AI 让东西非常非常快地看起来做完了，
+AI makes things feel finished really,
+
+60
+00:03:03,127 --> 00:03:06,280
+而且常常过早。
+really fast, all too often prematurely.
+
+61
+00:03:06,640 --> 00:03:08,760
+我举个可能不该承认的例子。
+I'll give you an example that I probably shouldn't admit.
+
+62
+00:03:09,480 --> 00:03:12,577
+我午餐太常吃微波炉卷饼了。
+I have a microwave burrito for lunch all too often.
+
+63
+00:03:12,577 --> 00:03:15,232
+我把冷硬的一坨从冷冻室拿出来，
+I take the cold hard rock out of the freezer,
+
+64
+00:03:15,232 --> 00:03:17,960
+丢到盘子上，放进微波炉。
+plop it on the plate, put it in the microwave.
+
+65
+00:03:18,440 --> 00:03:21,280
+90秒内，我就从饥饿到吃上午餐。
+In 90 seconds, I go from hungry to lunch.
+
+66
+00:03:21,680 --> 00:03:24,520
+以至于我愿意忽略一些相当严重的缺点。
+I'm willing to overlook some pretty serious flaws.
+
+67
+00:03:25,360 --> 00:03:26,720
+它几乎难以下咽。
+It's nearly inedible.
+
+68
+00:03:27,280 --> 00:03:30,160
+但我太迷恋这种执行速度了。
+But I'm so enamored by the speed of execution.
+
+69
+00:03:31,160 --> 00:03:33,000
+同样的事也发生在 AI 上。
+The same happens with AI.
+
+70
+00:03:33,720 --> 00:03:37,680
+你输入一句话，砰一下，就有了一个界面。
+You type in a sentence and boom, you have an interface.
+
+71
+00:03:38,040 --> 00:03:41,120
+它有一些漂亮的小圆角，可能还有些投影。
+There's some nice little corners and maybe some drop shadows.
+
+72
+00:03:41,740 --> 00:03:43,300
+而且“做完”的感觉真好。
+And it's good to be done.
+
+73
+00:03:43,540 --> 00:03:47,460
+但看起来精致的状态往往有误导性。
+But an apparently polished state can often be misleading.
+
+74
+00:03:48,060 --> 00:03:49,660
+它真的解决问题了吗？
+Does it really solve the problem?
+
+75
+00:03:50,060 --> 00:03:51,500
+它真的形成差异化了吗？
+Does it really differentiate?
+
+76
+00:03:52,140 --> 00:03:55,500
+Claire Vo 之前提出的那些问题在这里都适用。
+All the questions Claire Vo brought up earlier apply here.
+
+77
+00:03:56,380 --> 00:03:59,895
+第三点，这项工作做起来太容易、太快，
+And the third watch point, this work is so easy to do
+
+78
+00:03:59,895 --> 00:04:02,740
+以至于常常让人觉得可以随手丢弃。
+so quick that it often feels disposable.
+
+79
+00:04:03,330 --> 00:04:05,370
+更糟的是，它也被那样对待。
+And worse, it's treated that way.
+
+80
+00:04:06,050 --> 00:04:09,156
+我们有时会让决策责任被搁置一旁，
+We sometimes let the responsibility of our decisions fall
+
+81
+00:04:09,156 --> 00:04:12,198
+不真正考虑长期，比如，
+by the wayside and don't really think about the long term,
+
+82
+00:04:12,198 --> 00:04:14,290
+这东西到底谁在维护？
+like, who's maintaining this anyways?
+
+83
+00:04:14,890 --> 00:04:18,381
+这三点合在一起，可能会带来一个有点像
+All three of these watch points can come together to a world
+
+84
+00:04:18,381 --> 00:04:21,730
+这样的世界——这是土耳其一个真实的地方。
+that looks a little like this, an actual place in Turkey.
+
+85
+00:04:22,050 --> 00:04:25,372
+如果我们不小心，
+If we're not careful, our building boom could end up
+
+86
+00:04:25,372 --> 00:04:28,540
+我们的建筑热潮最终可能会太像战后的建筑热潮：
+a little too much like the post war building boom,
+
+87
+00:04:28,540 --> 00:04:32,480
+大量与当下环境不匹配的模式泛滥。
+proliferation of patterns ill suited to the context at hand.
+
+88
+00:04:33,400 --> 00:04:35,400
+本质上就是僵尸式 UI。
+Essentially zombie UI.
+
+89
+00:04:36,240 --> 00:04:40,200
+那种单调、空洞、无人用心的僵尸式 UI。
+Zombie UI that's monotonous, vacant or uncared for.
+
+90
+00:04:40,400 --> 00:04:43,640
+我们清醒时间的一半都在看屏幕。
+We spend half our waking lives looking at screens.
+
+91
+00:04:44,360 --> 00:04:47,688
+我们想要那种真正感觉被用心对待的软件，
+We want software that feels actually cared for
+
+92
+00:04:47,688 --> 00:04:50,760
+这意味着它得有点个性。
+and that means it has a little personality.
+
+93
+00:04:51,870 --> 00:04:55,309
+哪怕简单如 Grok bot（聊天机器人）
+Something as simple as the Grok bot and the little animation
+
+94
+00:04:55,309 --> 00:04:58,473
+带来的小动画和生动感，
+and life that it brings, or even these tiny details like
+
+95
+00:04:58,473 --> 00:05:01,430
+甚至像日历标签页上真的显示日期这样的小细节。
+actually having the date in the tab on the calendar.
+
+96
+00:05:01,630 --> 00:05:05,412
+你可能一整天都从它旁边点过去而不注意，
+You've probably clicked by this all day long, but that shows
+
+97
+00:05:05,412 --> 00:05:09,270
+但这说明构建者关心你，或至少理解了使用场景。
+the builder cared about you or the understanding of context.
+
+98
+00:05:09,630 --> 00:05:11,536
+就像 Link Agent Wallet（智能体钱包），
+Like the Link Agent Wallet,
+
+99
+00:05:11,536 --> 00:05:15,099
+它预判了智能体可能遇到的问题，
+it anticipates the issues that the agent could have
+
+100
+00:05:15,099 --> 00:05:16,507
+比如在线购物时的障碍，
+while buying online
+
+101
+00:05:16,507 --> 00:05:19,076
+并内置了故障排查功能，
+and has the troubleshooting built in
+
+102
+00:05:19,076 --> 00:05:22,473
+因为它考虑到了用户的使用情境，
+because they anticipate the context of the user,
+
+103
+00:05:22,473 --> 00:05:24,130
+即使用户是智能体。
+even when it's an agent.
+
+104
+00:05:24,570 --> 00:05:27,613
+这些例子展现了真正关心用户、
+These examples show builders that care about their users
+
+105
+00:05:27,613 --> 00:05:29,388
+并把这种关心带入作品的建设者。
+and bring that care into the work.
+
+106
+00:05:29,388 --> 00:05:31,290
+这体现了品牌的性格。
+It shows the character of the brand.
+
+107
+00:05:32,140 --> 00:05:33,460
+而且它有灵魂。
+And it has soul.
+
+108
+00:05:33,940 --> 00:05:35,144
+我们可以用 AI 做到这一点，
+We can do this with AI,
+
+109
+00:05:35,144 --> 00:05:37,620
+尽管 AI 有时也可能是问题的根源。
+even though it can sometimes be the culprit.
+
+110
+00:05:38,260 --> 00:05:40,612
+我有四条建议，
+And I have four recommendations
+
+111
+00:05:40,612 --> 00:05:44,620
+讲的是如何用 AI 构建有用心和灵魂的产品。
+on how we can use AI to build products with care and soul.
+
+112
+00:05:44,980 --> 00:05:48,740
+第一条，你必须有明确的设计主张。
+First one, you have to have a point of view.
+
+113
+00:05:49,460 --> 00:05:51,940
+如果你没有，AI 会替你生成一个。
+If you don't, AI will give it for you.
+
+114
+00:05:52,450 --> 00:05:53,976
+而正如我们已经谈到的，
+And as we've already talked about,
+
+115
+00:05:53,976 --> 00:05:55,450
+那个很可能是平庸通用的。
+that's very likely to be generic.
+
+116
+00:05:55,970 --> 00:05:58,690
+回看过去，你需要定义你的品牌。
+And looking at the past, you need to define your brand.
+
+117
+00:05:59,130 --> 00:06:00,040
+它对你意味着什么？
+What is it for you?
+
+118
+00:06:00,040 --> 00:06:00,080
+你？
+You?
+
+119
+00:06:00,680 --> 00:06:02,000
+它对你的用户意味着什么？
+What is it for your users?
+
+120
+00:06:02,240 --> 00:06:05,080
+你希望成为他们的谁，他们关心什么？
+Who do you want to be to them and what do they care about?
+
+121
+00:06:05,760 --> 00:06:07,720
+这就构成了你质量标准的基础。
+This forms the basis of your standards.
+
+122
+00:06:08,600 --> 00:06:10,139
+我会说这在任何时代都成立，
+And I'd say this in any era,
+
+123
+00:06:10,139 --> 00:06:12,517
+但在当下尤为重要，
+but it's all the more important right now
+
+124
+00:06:12,517 --> 00:06:15,664
+因为构建工作分散、所有权模糊，
+when building is distributed, ownership is diffuse,
+
+125
+00:06:15,664 --> 00:06:17,972
+我们都在为产品做贡献，
+we're all contributing to the products
+
+126
+00:06:17,972 --> 00:06:20,280
+而且参与方式比过去更多。
+in more ways than we've been in the past.
+
+127
+00:06:20,960 --> 00:06:23,200
+太容易就把判断交给 AI 了。
+It's too easy to abdicate to AI.
+
+128
+00:06:23,520 --> 00:06:25,490
+例如，在 Stripe（支付技术公司），
+So for example, at Stripe,
+
+129
+00:06:25,490 --> 00:06:27,640
+我们非常在乎乐观精神。
+we care a lot about optimism.
+
+130
+00:06:28,280 --> 00:06:31,944
+所以我们把它融入所有大大小小的细节：
+So we put that into all the details, big and small,
+
+131
+00:06:31,944 --> 00:06:36,233
+我们选择的颜色、我们写作的方式、我们写的内容，
+the colors we choose, the way we write, what we write about
+
+132
+00:06:36,233 --> 00:06:40,880
+以及我们发布的产品，从而支持创业者。
+and the products that we ship to try to support entrepreneurs.
+
+133
+00:06:41,280 --> 00:06:44,202
+这些细节需要高度对齐，
+Now these details are so important to be aligned on
+
+134
+00:06:44,202 --> 00:06:47,681
+因为每个人都在贡献，很多事情也在变化。
+because everybody is contributing and so much is changing,
+
+135
+00:06:47,681 --> 00:06:49,768
+我举一个例子说明
+and I'll give you an example of where
+
+136
+00:06:49,768 --> 00:06:52,760
+如果缺乏对齐，摩擦会出现在哪里。
+that friction can show up if there isn't alignment.
+
+137
+00:06:52,920 --> 00:06:54,265
+我们最近在一次设计
+We were recently in a design
+
+138
+00:06:54,265 --> 00:06:55,960
+评审中看一则广告。
+crit looking at an advertisement.
+
+139
+00:06:56,440 --> 00:06:59,801
+这是我们当时在做的广告，
+So this is an ad we were working on that shows our brand,
+
+140
+00:06:59,801 --> 00:07:02,640
+展示我们的品牌图形平行四边形和用户的画面。
+the parallelogram, with our users' visuals.
+
+141
+00:07:03,440 --> 00:07:05,744
+当我们看着它时，我们觉得：好吧，
+And as we were looking at this, we were like, alright, cool,
+
+142
+00:07:05,744 --> 00:07:08,000
+能看懂大概在表达什么，但有些地方不对。
+you kind of get what's happening, but some things are off.
+
+143
+00:07:08,950 --> 00:07:11,000
+当时房间里有一位跨职能合作伙伴，
+And in the room was a cross-functional partner
+
+144
+00:07:11,000 --> 00:07:13,470
+想快速推进并发布内容。
+that was looking to move fast and get something shipped.
+
+145
+00:07:13,870 --> 00:07:14,110
+当然。
+Sure.
+
+146
+00:07:14,110 --> 00:07:14,750
+你懂的。
+You can relate.
+
+147
+00:07:15,470 --> 00:07:17,109
+于是我们展开讨论，
+And we had a discussion because
+
+148
+00:07:17,109 --> 00:07:19,630
+因为他们提出了一个非常有意思的问题。
+they brought up a really interesting question.
+
+149
+00:07:20,910 --> 00:07:23,790
+AI 做出来的东西，质量标准是什么？
+What's the quality standard for something made with AI?
+
+150
+00:07:24,070 --> 00:07:25,230
+多奇怪的问题。
+What a curious question.
+
+151
+00:07:26,230 --> 00:07:28,430
+它如何被做出来，为什么会重要呢？
+Why should that matter how it was made?
+
+152
+00:07:28,970 --> 00:07:31,170
+用户并不在意它是怎么做出来的。
+It doesn't matter to the users how it was made.
+
+153
+00:07:31,410 --> 00:07:33,290
+他们在意的是它好不好。
+It matters to them if it's good or not.
+
+154
+00:07:33,650 --> 00:07:35,690
+所以这就是我们质量标准的基础。
+And so that is the basis of our standards.
+
+155
+00:07:36,410 --> 00:07:39,378
+最终重要的是产出；他们在意它好不好，
+It's the output at the end of the day that matters
+
+156
+00:07:39,378 --> 00:07:42,050
+我们也应该同样在意。
+and they care if it's good, and so should we.
+
+157
+00:07:42,770 --> 00:07:44,861
+通过那次讨论，我们对
+So through that discussion, we've got alignment on
+
+158
+00:07:44,861 --> 00:07:47,050
+这里真正重要的事情和努力方向达成了一致。
+what really matters here and what we're striving for.
+
+159
+00:07:47,170 --> 00:07:50,763
+然后我们带着 17 条改进点离开：
+And then walked away with 17 bullet points of improvements
+
+160
+00:07:50,763 --> 00:07:53,697
+这里那里加一点磨砂、
+to be made, the frost a little bit here and there,
+
+161
+00:07:53,697 --> 00:07:55,970
+边缘更柔和、气泡再小一点。
+softer edges, a bit smaller bubbles.
+
+162
+00:07:56,650 --> 00:08:00,092
+现在我们在办公室把这个词当动词用，
+And now we use this term as a verb to mean meticulous
+
+163
+00:08:00,092 --> 00:08:03,370
+表示这种精雕细琢，叫 pixel bubbling。
+craft around the office called pixel bubbling.
+
+164
+00:08:03,810 --> 00:08:05,490
+我们不是追求完美。
+Now, we're not shooting for perfection.
+
+165
+00:08:05,690 --> 00:08:08,824
+我们追求的是比客户能看到的再深入一层。
+We're shooting to go one level deeper than what your customer
+
+166
+00:08:08,824 --> 00:08:11,650
+那种精细工艺会让他们感受到。
+could see. That meticulous craft will show up for them.
+
+167
+00:08:12,760 --> 00:08:15,356
+而这种设计主张真正驱动标准和作品，
+And this point of view really drives the standards
+
+168
+00:08:15,356 --> 00:08:18,571
+尤其当有智能体参与、
+and drives the work, especially when there's agents involved
+
+169
+00:08:18,571 --> 00:08:20,920
+每天有更多事情发生时。
+and so much more is happening on a daily basis.
+
+170
+00:08:21,680 --> 00:08:23,000
+那么如何培养它？
+So how do you develop it?
+
+171
+00:08:23,760 --> 00:08:26,880
+坦率地说，关键在于变得非常擅长观察。
+Frankly, it's all about getting really good at noticing.
+
+172
+00:08:27,480 --> 00:08:29,549
+观察你的用户需要什么、想要什么，
+Notice what your users need and what
+
+173
+00:08:29,549 --> 00:08:31,480
+而不只是他们说了什么。
+they want, not just what they say.
+
+174
+00:08:32,240 --> 00:08:35,566
+观察你周围世界中哪些信号
+Notice what about the world around you signals
+
+175
+00:08:35,566 --> 00:08:37,187
+意味着“好”“很棒”和“一般”。
+good and great and meh,
+
+176
+00:08:37,187 --> 00:08:41,537
+要真正记录你使用的产品中的这些细节，
+really take note of these things in the products that you use,
+
+177
+00:08:41,537 --> 00:08:44,010
+但也要在类似情境中留意。
+but also in analogous situations.
+
+178
+00:08:44,210 --> 00:08:46,413
+这样你就能从艺术、科学和更广阔的视角中获得灵感，
+So you can be inspired by art, science
+
+179
+00:08:46,413 --> 00:08:49,610
+用于你创作的作品。
+and a broader point of view in the work that you create.
+
+180
+00:08:50,010 --> 00:08:51,579
+培养你的品味，
+Building your sense of taste
+
+181
+00:08:51,579 --> 00:08:54,129
+加深对周围世界的理解，
+and your understanding of the world around you
+
+182
+00:08:54,129 --> 00:08:55,502
+形成对什么是好、什么是出色的判断，
+and what's good and great
+
+183
+00:08:55,502 --> 00:08:57,595
+能真正提升你自己的标准，
+can really improve your own standards
+
+184
+00:08:57,595 --> 00:08:59,360
+而这些标准随后需要被规模化。
+that you will then need to scale.
+
+185
+00:09:00,250 --> 00:09:02,867
+这就引出了我的第二条建议：
+Which brings me to my second recommendation,
+
+186
+00:09:02,867 --> 00:09:05,690
+把你的标准编码到机器里。
+which is encode your standards into the machine.
+
+187
+00:09:06,530 --> 00:09:09,385
+如果每个人都能有共同的理解
+It'd be a wonderful world if every human had the shared
+
+188
+00:09:09,385 --> 00:09:12,050
+并做出同样的决定，世界会很美好。
+understandings and could make the same decision.
+
+189
+00:09:12,530 --> 00:09:14,441
+但现实是，人类未来不会参与
+But the reality is, humans are not going
+
+190
+00:09:14,441 --> 00:09:16,930
+所有这些决定。
+to be a part of all of these decisions going forward.
+
+191
+00:09:17,730 --> 00:09:19,430
+我们已经看到在没有设计师
+We are seeing interfaces built
+
+192
+00:09:19,430 --> 00:09:21,130
+在场的情况下构建出的界面。
+without a designer in the room.
+
+193
+00:09:21,960 --> 00:09:25,514
+我们看到智能体在我们睡觉时发现问题并修复；
+We're seeing agents finding problems and fixing them
+
+194
+00:09:25,514 --> 00:09:28,357
+我们当然也看到 generative
+while we sleep, and we're certainly seeing
+
+195
+00:09:28,357 --> 00:09:31,200
+UI（生成式界面）为用户实时生成。
+generative UI built in real time for users.
+
+196
+00:09:32,240 --> 00:09:35,720
+这就是为什么设计系统再次迎来高光时刻。
+This is why design systems are having a moment again.
+
+197
+00:09:36,120 --> 00:09:37,609
+而过去的系统
+And the system of yesterday
+
+198
+00:09:37,609 --> 00:09:39,680
+和今天的系统不同。
+is different than the system of today.
+
+199
+00:09:40,360 --> 00:09:42,983
+过去你不必把所有东西都写下来，
+In the past, you didn't have to write everything down
+
+200
+00:09:42,983 --> 00:09:44,771
+因为总有一位设计师
+because there was always a designer
+
+201
+00:09:44,771 --> 00:09:46,380
+在场来填补空白。
+in the room to fill in the blanks.
+
+202
+00:09:47,300 --> 00:09:50,115
+现在我们必须支持分布式
+Now we must enable distributed building
+
+203
+00:09:50,115 --> 00:09:52,020
+构建和智能体式建造。
+and agentic construction.
+
+204
+00:09:52,220 --> 00:09:55,780
+并且决策需要更容易被定义。
+And the decisions need to be easier to define.
+
+205
+00:09:56,540 --> 00:09:59,620
+所以设计的对象不再是屏幕。
+So the object of design is no longer the screen.
+
+206
+00:10:00,540 --> 00:10:02,100
+而是系统本身。
+It is the system itself.
+
+207
+00:10:02,500 --> 00:10:04,390
+大家知道 Gutenberg（古腾堡）
+Now, everybody knows Gutenberg
+
+208
+00:10:04,390 --> 00:10:06,420
+发明了第一台印刷机。
+created the first printing press.
+
+209
+00:10:06,980 --> 00:10:09,342
+这个故事中较少为人知的部分，
+The lesser known part of the story
+
+210
+00:10:09,342 --> 00:10:11,620
+是他围绕印刷机构建的系统。
+is the system he built around it.
+
+211
+00:10:12,420 --> 00:10:15,149
+他并不是只创造了 26
+He didn't create just 26 lower case
+
+212
+00:10:15,149 --> 00:10:17,220
+个小写字母和 26 个大写字母。
+and 26 upper case letters.
+
+213
+00:10:17,980 --> 00:10:20,956
+他创造了 290 个独特字符，
+He created 290 unique characters,
+
+214
+00:10:20,956 --> 00:10:25,060
+包含不同宽度、缩写和连字。
+different widths, abbreviations, ligatures.
+
+215
+00:10:25,940 --> 00:10:28,221
+他这样做的原因是，
+And the reason that he did this is because
+
+216
+00:10:28,221 --> 00:10:31,241
+在排版并希望两端对齐时，
+when he typeset it and wanted it to be fully justified,
+
+217
+00:10:31,241 --> 00:10:33,723
+他想确保不会出现
+he wanted to make sure that there wouldn't be
+
+218
+00:10:33,723 --> 00:10:36,005
+那种像河流和湖泊一样的怪异空白，
+the weird rivers and lakes of white space
+
+219
+00:10:36,005 --> 00:10:38,420
+以免破坏成品美感。
+that erode the beauty of the final product.
+
+220
+00:10:39,020 --> 00:10:41,656
+本质上，他让它既具备可扩展性，
+Essentially, he was making it both extensible
+
+221
+00:10:41,656 --> 00:10:45,170
+又有足够明确的主张，使它在机器制造的同时，
+and opinionated enough that it could feel as good as handmade,
+
+222
+00:10:45,170 --> 00:10:46,860
+感觉能像手工制作一样好。
+although it was machine made.
+
+223
+00:10:47,500 --> 00:10:49,500
+这也应该是我们追求的目标。
+This is what we should be aiming for as well.
+
+224
+00:10:50,440 --> 00:10:53,612
+旧系统规模化的是“一致性”，
+Now the old system scaled consistency,
+
+225
+00:10:53,612 --> 00:10:56,880
+但新系统需要规模化“设计意图”。
+but the new system needs to scale intent.
+
+226
+00:10:57,440 --> 00:10:59,368
+我们在 Stripe 推进这件事时，
+We've been working on this at Stripe
+
+227
+00:10:59,368 --> 00:11:01,360
+一路上也遇到了一些障碍。
+and have hit a few snags along the way.
+
+228
+00:11:01,400 --> 00:11:02,760
+所以我们还在摸索中。
+And so we're figuring it out.
+
+229
+00:11:03,320 --> 00:11:05,348
+但我们想做的一件事，
+But one of the things we want to do
+
+230
+00:11:05,348 --> 00:11:07,526
+是让构建者几乎能瞬间
+is we want to empower builders to go
+
+231
+00:11:07,526 --> 00:11:10,831
+从提示词走向生产环境。
+from prompt to production nearly instantaneously.
+
+232
+00:11:10,831 --> 00:11:12,858
+和很多人一样，我们最初用 MCP（模型上下文协议），
+Like many, we started with an MCP
+
+233
+00:11:12,858 --> 00:11:15,637
+让它读取我们的设计文档，
+that understood our design documentation,
+
+234
+00:11:15,637 --> 00:11:17,590
+但结果并不理想。
+but the results were not great.
+
+235
+00:11:18,110 --> 00:11:19,538
+它不够具体，
+It wasn't specific enough,
+
+236
+00:11:19,538 --> 00:11:21,710
+也没有驱动出正确的结果。
+and it wasn't driving the right outcomes.
+
+237
+00:11:22,510 --> 00:11:25,029
+三个不同的人输入同一条提示词，
+Three different people could put in the same prompt
+
+238
+00:11:25,029 --> 00:11:26,670
+会得到三种不同的结果。
+and get three different results.
+
+239
+00:11:27,670 --> 00:11:29,713
+因此从那以后我们不断演进，现在创建了一个建立
+So since then, we've evolved, and now
+
+240
+00:11:29,713 --> 00:11:32,350
+在我们设计系统之上的 CLI（命令行工具）。
+we have created a CLI built on our design system.
+
+241
+00:11:32,990 --> 00:11:33,990
+它形成了一个执行框架（harness），
+It makes a harness
+
+242
+00:11:33,990 --> 00:11:35,990
+让 AI 变得顺从得多。
+that makes the AI far more obedient.
+
+243
+00:11:36,400 --> 00:11:39,054
+现在它就在构建者们实际构建的地方，
+Now it's where the builders are building
+
+244
+00:11:39,054 --> 00:11:42,410
+并在正确的时间和位置读取文档，
+and it consumes the documentation at the right time
+
+245
+00:11:42,410 --> 00:11:44,440
+以避免上下文退化（context rot）。
+and place to avoid context rot.
+
+246
+00:11:45,320 --> 00:11:48,756
+重要的是，这个版本
+Now, importantly, the big difference between this version
+
+247
+00:11:48,756 --> 00:11:50,543
+和以往设计系统之间最大的区别在于，
+and a previous design system is
+
+248
+00:11:50,543 --> 00:11:53,017
+它不只是组件和原子部件，
+it's not just components and atomic parts,
+
+249
+00:11:53,017 --> 00:11:55,560
+而是完整的模板和流程。
+but it's actually full templates and flows.
+
+250
+00:11:56,040 --> 00:11:59,276
+所以系统实际上知道我们的产品应该如何表现，
+So the system actually knows what our product is supposed
+
+251
+00:11:59,276 --> 00:12:02,580
+以及所有部分如何组合在一起。
+to behave like and how it all comes together, essentially.
+
+252
+00:12:02,700 --> 00:12:05,340
+它比过去更有明确的设计主张。
+It's far more opinionated than it's been in the past.
+
+253
+00:12:06,180 --> 00:12:09,301
+我们把这些标准嵌入到生产方式中，
+We embed these standards into the means of production,
+
+254
+00:12:09,301 --> 00:12:11,540
+从而带来更连贯的产品。
+which enables a more coherent product.
+
+255
+00:12:11,940 --> 00:12:14,140
+但这只是基线。
+But this is just the baseline.
+
+256
+00:12:15,220 --> 00:12:17,279
+Christopher Alexander（建筑与设计思想家）说过，
+Christopher Alexander said,
+
+257
+00:12:17,279 --> 00:12:20,820
+一个系统可以满足每一条规则，却仍然是“死”的。
+"A system can satisfy every rule and still be dead."
+
+258
+00:12:21,410 --> 00:12:25,438
+这就引出了我的第三条建议：
+This brings me to my third recommendation,
+
+259
+00:12:25,438 --> 00:12:28,570
+拒绝把“做完”和“做好”混为一谈。
+refuse to confuse done with good.
+
+260
+00:12:30,010 --> 00:12:31,730
+那道过滤器已经消失了。
+The filter is gone.
+
+261
+00:12:32,130 --> 00:12:35,280
+过去，质量过滤机制基本上内建
+It used to be the quality filter was essentially built
+
+262
+00:12:35,280 --> 00:12:38,430
+在产品开发流程的每个阶段，
+into every stage of the product development process,
+
+263
+00:12:38,430 --> 00:12:40,250
+甚至在项目开始之前就存在。
+even before a project started.
+
+264
+00:12:41,130 --> 00:12:45,050
+我们有 20 个想法，却只能给其中一个配团队。
+We've got 20 ideas and we can only staff one.
+
+265
+00:12:45,810 --> 00:12:49,522
+然后我们一路上反复推敲、调整和修剪，
+And then we poked and we prodded and we pruned along the way,
+
+266
+00:12:49,522 --> 00:12:52,250
+产品成长得比较有条理。
+and products grew somewhat methodically.
+
+267
+00:12:53,530 --> 00:12:56,530
+而现在，我们一周就能把 20 个想法都做出来。
+Well, now we can build 20 ideas in a week.
+
+268
+00:12:57,450 --> 00:12:59,250
+这在很多方面都很棒。
+This is awesome in many ways.
+
+269
+00:12:59,450 --> 00:13:02,576
+我们终于可以跳过讨论假设产品的理论会议，
+And we can finally skip theoretical meetings talking about
+
+270
+00:13:02,576 --> 00:13:05,890
+直接对手中真实的东西做出反应。
+hypothetical products and react to the real thing in our hands.
+
+271
+00:13:06,880 --> 00:13:10,478
+过去贯穿全流程的质量筛选，
+The filtering that used to be throughout the process
+
+272
+00:13:10,478 --> 00:13:12,686
+现在得放到产品做出来之后；
+now needs to happen post-build,
+
+273
+00:13:12,686 --> 00:13:14,812
+这时再说“不”要难得多。
+when it is a lot harder to say no.
+
+274
+00:13:14,812 --> 00:13:17,756
+这正是“编辑”式把关者发挥作用的地方。
+This is where the role of an editor comes in.
+
+275
+00:13:17,756 --> 00:13:20,781
+如今，这个角色极其重要：
+And it is ultra important in this day and age:
+
+276
+00:13:20,781 --> 00:13:23,480
+你的团队里由谁负责这件事？
+who is doing this in your organization?
+
+277
+00:13:23,960 --> 00:13:26,496
+谁在端到端地审视，
+Who's looking at the end to end and understanding whether
+
+278
+00:13:26,496 --> 00:13:28,240
+并理解我们是否真的在构建一个整体。
+or not we're actually building a whole.
+
+279
+00:13:29,090 --> 00:13:32,050
+这是我们必须戒除的一种新行为。
+It's a new behavior we have to unlearn.
+
+280
+00:13:32,530 --> 00:13:36,610
+也就是把“做出来”当成“做完”，把“做完”当成“做好”。
+That built means done, and that done means good.
+
+281
+00:13:37,210 --> 00:13:39,938
+对于任何正在磨练把关能力的人，
+The most important thing I can say to anybody
+
+282
+00:13:39,938 --> 00:13:42,297
+我能说的最重要的一点是：
+working on their editing skills is you
+
+283
+00:13:42,297 --> 00:13:44,730
+你必须像用户一样去体验它。
+have to experience it like a user would.
+
+284
+00:13:45,890 --> 00:13:47,610
+它真的解决问题了吗？
+Does it actually solve the problem?
+
+285
+00:13:48,050 --> 00:13:49,774
+它真的贴合用户
+Is it actually attuned to the way
+
+286
+00:13:49,774 --> 00:13:51,370
+思考问题的方式吗？
+the user thinks about things?
+
+287
+00:13:52,190 --> 00:13:53,790
+它真的连贯吗？
+Is it actually coherent?
+
+288
+00:13:54,510 --> 00:13:56,270
+很多东西单独看都很好。
+A lot of things look good in isolation.
+
+289
+00:13:56,350 --> 00:13:59,259
+但当你把这一切串到用户旅程里时，
+But then when you pull it all together into the user journey,
+
+290
+00:13:59,259 --> 00:14:00,830
+就会觉得有点脱节。
+it feels a little disconnected.
+
+291
+00:14:01,990 --> 00:14:04,429
+而且这不只是说“是”
+And it's not just about saying yes or no,
+
+292
+00:14:04,429 --> 00:14:06,350
+或“否”、“这个好”或“这个不该上”。
+this is good or it shouldn't go.
+
+293
+00:14:06,830 --> 00:14:09,371
+实际上是问：它真的完整成型了吗？
+It's actually about: Is it even fully formed?
+
+294
+00:14:09,371 --> 00:14:11,310
+我们怎么把它推向真正完整？
+How can we push this to completion?
+
+295
+00:14:12,300 --> 00:14:14,820
+我们不希望“做完”成为“做好”的敌人。
+We don't want done to be the enemy of good.
+
+296
+00:14:15,100 --> 00:14:17,583
+Nabil Qureshi（文章作者）写的一篇非常
+A very insightful article by Nabil
+
+297
+00:14:17,583 --> 00:14:20,580
+有洞见的文章谈到了什么让艺术伟大。
+Qureshi talks about what makes art great.
+
+298
+00:14:21,260 --> 00:14:23,447
+他说这关乎意想不到的细节，
+And he says it's about the unexpected details,
+
+299
+00:14:23,447 --> 00:14:25,578
+那些让你觉得“哇，
+those little surprising things you're like,
+
+300
+00:14:25,578 --> 00:14:27,540
+真没想到他们连这个都想到了”的小惊喜。
+wow, I can't believe they thought of that.
+
+301
+00:14:28,020 --> 00:14:31,172
+然后是表面之下的深层意义，
+And then the deeper meaning that sits behind the surface
+
+302
+00:14:31,172 --> 00:14:34,526
+或是把所有内容联结成一个整体的连贯主题；
+or the continuous themes that tie it all together to a whole,
+
+303
+00:14:34,526 --> 00:14:36,940
+这些正是 AI 不擅长的事情。
+these are the things that AI is not great at.
+
+304
+00:14:37,750 --> 00:14:40,939
+但了解 AI 的不足在哪里，
+But knowing what the gaps are in AI helps us
+
+305
+00:14:40,939 --> 00:14:44,310
+能帮助我们更好地应对并填补这些空白。
+better navigate that and fill these gaps in.
+
+306
+00:14:45,190 --> 00:14:49,074
+正如 Nabil 所说，AI 粗制滥造的内容（slop）最
+As Nabil says, one of the things that so offends us about
+
+307
+00:14:49,074 --> 00:14:52,790
+让我们反感的一点，是那种“细节无关紧要”的感觉。
+AI's slop is the sense that the details don't matter.
+
+308
+00:14:53,950 --> 00:14:56,950
+杯子是绿色的，但就算是蓝色也没什么差别。
+The cup is green, but may as well have been blue.
+
+309
+00:14:57,630 --> 00:15:01,596
+把关者（editor）对每一个决策负责，
+An editor takes accountability for every decision,
+
+310
+00:15:01,596 --> 00:15:04,120
+这在很多情况下意味着每一个像素。
+which is in many ways every pixel.
+
+311
+00:15:05,040 --> 00:15:07,320
+我给大家举个本次活动中的例子。
+I'll give you an example from this event.
+
+312
+00:15:07,760 --> 00:15:10,680
+我的团队很荣幸负责设计这次活动。
+So my team had the pleasure of designing the event.
+
+313
+00:15:11,400 --> 00:15:14,400
+Stefan 负责了这段精彩的开场动画。
+Stefan worked on this fabulous opening animation.
+
+314
+00:15:15,440 --> 00:15:18,704
+他和团队先建了场景的 3D 模型，
+He and the team started with a 3D model of the scene
+
+315
+00:15:18,704 --> 00:15:20,773
+然后把模型导入 AI，
+and then they brought it into AI
+
+316
+00:15:20,773 --> 00:15:23,400
+用它辅助制作各种动画。
+to help with the different animations.
+
+317
+00:15:24,380 --> 00:15:26,020
+这是第一个版本。
+Now here's the first version.
+
+318
+00:15:27,660 --> 00:15:28,260
+很酷。
+It's cool.
+
+319
+00:15:28,620 --> 00:15:31,220
+看到里面各种小部件很有趣。
+It's fun to see the different little parts of it.
+
+320
+00:15:31,220 --> 00:15:32,740
+它的运动方式也很不错。
+And it's nice the way it moves.
+
+321
+00:15:33,340 --> 00:15:36,003
+但如果你逐像素仔细看，
+But if you scrutinize it pixel by pixel,
+
+322
+00:15:36,003 --> 00:15:37,940
+会感觉有点不对劲，对吧？
+something feels off, right?
+
+323
+00:15:37,980 --> 00:15:39,180
+那不太像它应有的运动方式。
+That's not quite the way it should move.
+
+324
+00:15:39,220 --> 00:15:40,468
+它有点抖动，
+It's a little jittery
+
+325
+00:15:40,468 --> 00:15:42,964
+而且你会想看到更多场景。
+and you kind of want to get more of the scene.
+
+326
+00:15:42,964 --> 00:15:44,420
+对，所以他又做了一次。
+Right. So he did it again.
+
+327
+00:15:46,290 --> 00:15:51,763
+一次又一次，在 56 次迭代之后，
+And again and again, 56 iterations later,
+
+328
+00:15:51,763 --> 00:15:56,610
+他做出了真正出色的效果。
+he got to something truly beautiful.
+
+329
+00:15:57,330 --> 00:15:58,810
+现在它有了更多真实感。
+Now it's got more realism.
+
+330
+00:15:59,090 --> 00:16:03,372
+它有一点生命力，也有细微的差异，
+It's got a little bit of life and its subtle differences,
+
+331
+00:16:03,372 --> 00:16:05,650
+但你现在能感受到其中的用心。
+but you can sense the care now.
+
+332
+00:16:06,510 --> 00:16:10,268
+这件事特别让我印象深刻的一点是，
+One of the things that so impresses me about this is that if
+
+333
+00:16:10,268 --> 00:16:14,027
+如果他不用 AI，可能就不会构建这么复杂的场景，
+he didn't use AI, he may not have built such a complex scene
+
+334
+00:16:14,027 --> 00:16:17,550
+也可能不会尝试这么多不同的视角。
+or he may not have tried so many different viewpoints.
+
+335
+00:16:18,470 --> 00:16:20,413
+虽然这不是一次就能完成，
+And while it wasn't one and done
+
+336
+00:16:20,413 --> 00:16:23,777
+而且确实需要大量投入和反复审视，
+and certainly took a lot of wherewithal and scrutiny,
+
+337
+00:16:23,777 --> 00:16:25,870
+但 AI 打开了可能性空间。
+AI opened the possibility space.
+
+338
+00:16:26,800 --> 00:16:31,064
+这就引出了我的最后一条，
+Now, this brings me to my last and definitely my favorite
+
+339
+00:16:31,064 --> 00:16:35,600
+也绝对是我最喜欢的第四条建议：释放创造力与艺术性。
+fourth recommendation, unleash creativity and artistry.
+
+340
+00:16:35,920 --> 00:16:38,818
+是的，AI 可以帮助我们批量制造单调，
+Yes, AI can help us manufacture monotony,
+
+341
+00:16:38,818 --> 00:16:43,040
+但它也是我们拥有过的最强大的创意催化剂。
+but it is also the greatest creative catalyst we've ever had.
+
+342
+00:16:44,280 --> 00:16:46,776
+这在现在更重要，
+This matters more now because when everybody
+
+343
+00:16:46,776 --> 00:16:49,010
+因为当几乎所有人都在构建东西时，
+and their mother is building something,
+
+344
+00:16:49,010 --> 00:16:52,360
+差异化会变得更难，也更重要。
+it is going to be harder and more important to differentiate.
+
+345
+00:16:53,640 --> 00:16:58,386
+而今天的界面——聊天、图表、CLI——
+And the interfaces of today, chats, charts, CLIs,
+
+346
+00:16:58,386 --> 00:17:02,905
+怎么可能是出色交互的巅峰，
+no way is that the epitome of great interactions
+
+347
+00:17:02,905 --> 00:17:04,600
+尤其是在今天？
+in the modern era?
+
+348
+00:17:05,320 --> 00:17:08,296
+我们能做的还有很多，也应该做更多，
+There is so much more we can do and so much more
+
+349
+00:17:08,296 --> 00:17:12,640
+让东西感觉是生成式的、鲜活的、有回应的。
+we should do to make things feel generative, alive, responsive.
+
+350
+00:17:13,520 --> 00:17:14,080
+充满动态。
+Dynamic.
+
+351
+00:17:14,520 --> 00:17:16,640
+我们真的可以和计算机对话。
+We could literally talk to the computers.
+
+352
+00:17:17,160 --> 00:17:18,280
+所以让我们大胆拓展吧。
+So let's branch out.
+
+353
+00:17:18,880 --> 00:17:21,560
+是时候发明新界面了。
+It is time to invent new interfaces.
+
+354
+00:17:21,960 --> 00:17:24,360
+是时候发明新审美了。
+It is time to invent new aesthetics.
+
+355
+00:17:24,800 --> 00:17:27,640
+最佳实践还没有被写出来。
+The best practices have not been written yet.
+
+356
+00:17:27,920 --> 00:17:30,760
+我们现在有机会去做这件事，而且现在也有了工具。
+We get to do that and now we have the tools to do it.
+
+357
+00:17:31,360 --> 00:17:33,594
+就像当年多点触控让
+It's just like when multitouch made it
+
+358
+00:17:33,594 --> 00:17:35,899
+全新的交互成为可能，
+possible to do wholly new interactions
+
+359
+00:17:35,899 --> 00:17:39,390
+或者合成器让我们创造出全新的声音一样。
+or the synthesizer allowed us to create totally new sounds.
+
+360
+00:17:40,470 --> 00:17:42,790
+AI 正在催生各种新的创造力。
+AI is allowing all sorts of new creativity.
+
+361
+00:17:43,390 --> 00:17:45,070
+我们在网上看到了很多这样的例子。
+And we're seeing so much of this online.
+
+362
+00:17:45,670 --> 00:17:48,845
+我们甚至看到有人来到 Stripe 设计团队，
+We're even seeing folks showing up to the Stripe design team
+
+363
+00:17:48,845 --> 00:17:50,750
+带来了更有趣的数据可视化。
+with way more interesting data viz.
+
+364
+00:17:51,470 --> 00:17:54,225
+我们看到一些餐厅网站，
+We're seeing websites for restaurants
+
+365
+00:17:54,225 --> 00:17:56,479
+它们很有个性；
+with character and personality
+
+366
+00:17:56,479 --> 00:18:00,320
+也看到人们用 AI 亲自绘画和创作。
+and people using AI to paint and create art themselves.
+
+367
+00:18:01,240 --> 00:18:03,080
+这真是一个有趣的时代。
+It is a really interesting time.
+
+368
+00:18:03,520 --> 00:18:06,520
+在 Stripe，我们正用 AI
+And at Stripe, we're using AI to essentially
+
+369
+00:18:06,520 --> 00:18:09,520
+从本质上放大创意团队的能力。
+amplify the abilities of the creative team.
+
+370
+00:18:10,320 --> 00:18:13,381
+我们最近为 Built to Grow 做的封面，
+Our most recent cover for Built to Grow
+
+371
+00:18:13,381 --> 00:18:15,772
+是由一位真人手工大理石纹艺术家创作的，
+was created by a human marbler
+
+372
+00:18:15,772 --> 00:18:19,120
+他打磨出了这些惊艳的迭代版本。
+who worked on these stunning iterations.
+
+373
+00:18:20,000 --> 00:18:22,828
+然后我们用 AI
+And then we used AI to fine tune the details
+
+374
+00:18:22,828 --> 00:18:25,495
+进一步微调细节，
+even further to ensure we had the colors
+
+375
+00:18:25,495 --> 00:18:28,000
+确保颜色和线条都恰到好处。
+and the lines in all the right places.
+
+376
+00:18:29,240 --> 00:18:32,372
+这基本上是把人类的良好判断利用起来，
+It was basically taking the good judgment of the humans
+
+377
+00:18:32,372 --> 00:18:35,640
+帮助我们将其规模化，从而做出真正惊艳的作品。
+and helping us scale it to make something truly stunning.
+
+378
+00:18:35,960 --> 00:18:38,485
+要让 AI 成为更强大的创意伙伴，
+Now to make AI a stronger creative partner,
+
+379
+00:18:38,485 --> 00:18:40,800
+我有几点建议。
+there's a couple of things I recommend.
+
+380
+00:18:41,540 --> 00:18:43,700
+第一，改进你的输入。
+1, improve your inputs.
+
+381
+00:18:44,220 --> 00:18:47,208
+你需要更多具体性，
+You want more specificity going in the direction
+
+382
+00:18:47,208 --> 00:18:49,540
+朝你的品牌、你独特兴趣的方向走。
+of your brand, your unique interests.
+
+383
+00:18:50,100 --> 00:18:51,700
+所以要给出具体的提示词。
+So put specific prompts.
+
+384
+00:18:52,060 --> 00:18:55,411
+不要只说“嘿，我需要一个韩国烤肉网站”，
+Don't just say, hey, I need a website for my Korean barbecue,
+
+385
+00:18:55,411 --> 00:18:57,020
+还要说明“这就是我的信念”。
+but this is what I believe in.
+
+386
+00:18:57,140 --> 00:18:58,340
+这才是好的标准。
+This is what good is.
+
+387
+00:18:58,420 --> 00:18:59,860
+这才是我们在乎的。
+This is what we care about.
+
+388
+00:19:00,780 --> 00:19:02,349
+添加你用来构建
+Add your source material that you're
+
+389
+00:19:02,349 --> 00:19:04,020
+自己标准的源材料。
+using to build your own standards with.
+
+390
+00:19:04,539 --> 00:19:07,506
+帮助它以不同方式思考，
+Help make it think in different ways,
+
+391
+00:19:07,506 --> 00:19:09,899
+然后给你的输出施加压力。
+and then stress your outputs.
+
+392
+00:19:10,619 --> 00:19:12,939
+不要被“卷饼困境”诱惑。
+Don't get tempted by the burrito dilemma.
+
+393
+00:19:13,419 --> 00:19:15,019
+始终再往前推一步。
+Always push a step further.
+
+394
+00:19:15,779 --> 00:19:18,778
+当然，还要使用
+And then, of course, use adversarial agents to help
+
+395
+00:19:18,778 --> 00:19:21,219
+对抗式代理来帮你批评它、敲打它一番。
+you critique it and bang it up a little bit.
+
+396
+00:19:21,539 --> 00:19:24,579
+但你自己也应该始终追求更好。
+But you yourself should always be pushing for better.
+
+397
+00:19:24,659 --> 00:19:26,370
+这些只是具体技巧。
+Now, these are just tactics.
+
+398
+00:19:26,370 --> 00:19:29,150
+更难的绝对是文化层面的改变。
+The much harder thing is definitely cultural.
+
+399
+00:19:30,400 --> 00:19:33,200
+遵循千篇一律的模式很容易。
+It is easy to follow cookie-cutter patterns.
+
+400
+00:19:33,520 --> 00:19:38,262
+这很安全、很舒适，但找到能改善现状的独特
+It's safe and cozy, but it is much more impressive and much
+
+401
+00:19:38,262 --> 00:19:43,400
+东西要令人印象深刻得多，也困难得多。
+harder to find something unique that improves the status quo.
+
+402
+00:19:43,720 --> 00:19:47,613
+所以，如果你正在带领一个团队，
+So if you're leading a team, don't just tell them to use AI,
+
+403
+00:19:47,613 --> 00:19:49,640
+不要只告诉他们用 AI，还要给他们探索的空间。
+but give them room to explore.
+
+404
+00:19:50,800 --> 00:19:55,240
+保护那些不寻常的想法。AI 降低了创作成本。
+Protect the strange. AI lowers the cost to create.
+
+405
+00:19:55,880 --> 00:19:57,547
+让我们把省下来的部分成本
+Let's spend some of that savings
+
+406
+00:19:57,547 --> 00:19:59,400
+用在做出真正特别的东西上。
+on making something truly special.
+
+407
+00:20:00,680 --> 00:20:02,777
+如果我们只用 AI
+If we only use AI to make the things
+
+408
+00:20:02,777 --> 00:20:04,875
+来更快地做我们已经会做的东西，
+that we already make just faster,
+
+409
+00:20:04,875 --> 00:20:08,920
+那我们肯定会错过最有趣的部分。
+then we are definitely missing out on the most interesting part.
+
+410
+00:20:10,400 --> 00:20:13,860
+AI 能帮我们抬高上限，而不只是提高最低水平。
+AI can help us raise the ceiling, not just the floor.
+
+411
+00:20:14,540 --> 00:20:18,580
+最重要的是要有明确的设计意图。
+The most important thing is to be very intentional.
+
+412
+00:20:19,740 --> 00:20:21,300
+这是你的设计主张。
+It's your point of view.
+
+413
+00:20:21,900 --> 00:20:23,460
+这是你的系统。
+It's your system.
+
+414
+00:20:24,060 --> 00:20:27,236
+你的质量门槛和雄心，
+It's your quality bar and your ambition
+
+415
+00:20:27,236 --> 00:20:30,604
+才是你想用 AI 实现的东西。
+that you will want to bring to life with AI.
+
+416
+00:20:30,604 --> 00:20:34,454
+与战后建筑热潮
+In total contrast to the post-war building boom
+
+417
+00:20:34,454 --> 00:20:38,400
+和现代主义形成鲜明对比的是哥特式建筑。
+and modernism, design was Gothic architecture.
+
+418
+00:20:39,600 --> 00:20:43,937
+1850 年，John Ruskin（约翰·罗斯金）写了大量关于
+In 1850, John Ruskin wrote a lot about quality and craft
+
+419
+00:20:43,937 --> 00:20:48,840
+品质与工艺的论述，并把哥特式建筑誉为伟大的典范。
+and highlighted Gothic architecture as the epitome of great.
+
+420
+00:20:49,960 --> 00:20:52,680
+他注意到没有两座哥特式建筑是相同的。
+He noticed that no Gothic building was alike.
+
+421
+00:20:53,390 --> 00:20:55,670
+坦白说，没有一根柱子是相同的。
+Frankly, not even one column was alike.
+
+422
+00:20:55,670 --> 00:20:56,070
+另一根。
+The other.
+
+423
+00:20:57,310 --> 00:21:00,333
+每个细节都经过独特制作，
+Each detail was uniquely crafted and showed
+
+424
+00:21:00,333 --> 00:21:03,520
+并展现出背后制作者独特的手艺与思想。
+the unique hand and mind of the maker behind it.
+
+425
+00:21:04,280 --> 00:21:06,320
+它让人感觉被真正用心对待。
+It felt truly cared for.
+
+426
+00:21:07,600 --> 00:21:09,760
+这正是我们的用户想要的。
+This is what our users want.
+
+427
+00:21:10,360 --> 00:21:13,449
+如果我们用 Three.js 和 Blender 在 30
+They're not impressed if we animated something
+
+428
+00:21:13,449 --> 00:21:16,074
+分钟内做了动画，他们不会因此印象深刻。
+with Three.js and Blender in 30 minutes.
+
+429
+00:21:16,074 --> 00:21:19,240
+他们印象深刻的是我们解决了他们的问题。
+They are impressed by us solving their problems.
+
+430
+00:21:20,140 --> 00:21:23,903
+还有细节中的巧妙点缀，表明我们预判了他们的需求，
+And clever touches in the details that show we anticipated
+
+431
+00:21:23,903 --> 00:21:27,820
+也表明我们的品牌背后有某种个性。
+their needs, and that our brand has some character behind it.
+
+432
+00:21:28,060 --> 00:21:30,727
+在这场建设热潮中，
+We have the choice in this building boom to not make
+
+433
+00:21:30,727 --> 00:21:33,140
+我们可以选择不制造数字版的僵尸建筑。
+the digital equivalent of zombie buildings.
+
+434
+00:21:33,740 --> 00:21:35,740
+我们可以让这成为一场创意复兴。
+We can make this a creative renaissance.
+
+435
+00:21:36,940 --> 00:21:40,073
+所以，让我们做出一些更强大、也
+So let's make some products that are more powerful
+
+436
+00:21:40,073 --> 00:21:42,460
+更能展现制作者双手与用心的产品。
+and show the hand and care of the maker.
+
+437
+00:21:43,570 --> 00:21:44,410
+谢谢大家。
+Thanks, everybody.

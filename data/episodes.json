@@ -1,5 +1,34 @@
 [
   {
+    "title": "来自Snap与Discord前产品负责人的 90 分钟无滤镜产品建议 | Peter Sellis",
+    "original_title": "90 minutes of unfiltered product advice from Snap and Discord’s product chief | Peter Sellis",
+    "youtube_url": "https://www.youtube.com/watch?v=97LRJUUPy_w",
+    "channel": "Lenny's Podcast",
+    "duration": "01:36:53",
+    "source_published_at": "2026-09-20",
+    "speakers": [
+      "Peter Sellis",
+      "Lenny Rachitsky"
+    ],
+    "folder_title": "来自Snap与Discord前产品负责人的 90 分钟无滤镜产品建议 | Peter Sellis",
+    "path": "videos/undated-077_peter-sellis-snap-discord-product-advice/",
+    "slug": "undated-077_peter-sellis-snap-discord-product-advice",
+    "cover": "cover.jpeg",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png"
+    ],
+    "subtitle_file": "Peter Sellis.22字修复版.srt",
+    "bilibili_title": "来自Snap与Discord前产品负责人的 90 分钟无滤镜产品建议 | Peter Sellis",
+    "bilibili_url": "https://www.bilibili.com/video/BV1tW4B6sEt2/",
+    "published_at": "2026-11-06 15:44:58",
+    "up": "通用人工智障"
+  },
+  {
     "title": "如何利用 AI 规模化实现设计意图、品质与艺术感 | Katie Dill",
     "bilibili_title": "如何利用 AI 规模化实现设计意图、品质与艺术感 | Katie Dill",
     "original_title": "How to scale intent, quality, and artistry with Al | Katie Dill (Stripe)",
@@ -1757,31 +1786,6 @@
       "02.png"
     ],
     "subtitle_file": "翻译好的.srt"
-  },
-  {
-    "title": "Snap 首位产品经理、Discord 前产品负责人：90 分钟产品实战｜Peter Sellis",
-    "original_title": "90 minutes of unfiltered product advice from Snap and Discord’s product chief | Peter Sellis",
-    "youtube_url": "https://www.youtube.com/watch?v=97LRJUUPy_w",
-    "channel": "Lenny's Podcast",
-    "duration": "01:36:53",
-    "source_published_at": "2026-09-20",
-    "speakers": [
-      "Peter Sellis",
-      "Lenny Rachitsky"
-    ],
-    "folder_title": "Snap 与 Discord 的产品实战经验",
-    "path": "videos/undated-077_peter-sellis-snap-discord-product-advice/",
-    "slug": "undated-077_peter-sellis-snap-discord-product-advice",
-    "cover": "cover.jpeg",
-    "outline_count": 4,
-    "subtitle_count": 1,
-    "outline_files": [
-      "outline-01.png",
-      "outline-02.png",
-      "outline-03.png",
-      "outline-04.png"
-    ],
-    "subtitle_file": "Peter Sellis.22字修复版.srt"
   },
   {
     "title": "现在是 AI 创业最好时机",

@@ -1,5 +1,6 @@
-# Snap 首位产品经理、Discord 前产品负责人：90 分钟产品实战｜Peter Sellis
+# 来自Snap与Discord前产品负责人的 90 分钟无滤镜产品建议 | Peter Sellis
 
+B站视频：https://www.bilibili.com/video/BV1tW4B6sEt2/
 原视频标题：90 minutes of unfiltered product advice from Snap and Discord’s product chief | Peter Sellis
 原视频链接：https://www.youtube.com/watch?v=97LRJUUPy_w
 主讲人：Peter Sellis，Snapchat 首位产品经理、Discord 前产品负责人

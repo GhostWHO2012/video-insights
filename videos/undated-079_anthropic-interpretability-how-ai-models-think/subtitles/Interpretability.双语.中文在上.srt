@@ -1,0 +1,3489 @@
+1
+00:00:00,100 --> 00:00:04,980
+模型未必把自己看作是在试图预测下一个词，对吧？
+The model doesn't necessarily think of itself as trying to predict the next word, right?
+
+2
+00:00:05,140 --> 00:00:15,700
+在内部，它可能已经形成了各种中间目标和抽象，当你与大语言模型（LLM）对话时，这些会帮助它实现那种元目标。
+Internally, it's developed potentially all sorts of intermediate goals and abstractions that help it achieve that kind of meta objective when you're talking to a large language model.
+
+3
+00:00:15,820 --> 00:00:17,780
+你到底是在和什么对话？
+What exactly is it that you're talking to?
+
+4
+00:00:18,340 --> 00:00:21,100
+你是在和一个高级版自动补全对话吗？
+Are you talking to something like a glorified autocomplete?
+
+5
+00:00:21,680 --> 00:00:30,000
+还是在和某种互联网搜索引擎，或者某种真正在思考、甚至像人一样思考的东西对话？
+Are you talking to something like an internet search engine or are you talking to something that's actually thinking and maybe even thinking like a person?
+
+6
+00:00:30,920 --> 00:00:35,160
+结果相当令人担忧，没有人真正知道这些问题的答案。
+It turns out, rather concerningly, that nobody really knows the answer to those questions.
+
+7
+00:00:35,880 --> 00:00:40,560
+在 Anthropic，我们非常想找到这些问题的答案。
+And here at Anthropic, we are very interested in finding those answers out.
+
+8
+00:00:41,200 --> 00:00:44,040
+我们采用的方法是使用可解释性（interpretability）。
+The way that we do that is to use interpretability.
+
+9
+00:00:44,460 --> 00:00:53,260
+也就是打开大语言模型、观察内部，并试图弄清它在回答问题时到底发生了什么。
+That is the science of opening up a large language model, looking inside and trying to work out what's going on as it's answering your questions.
+
+10
+00:00:54,100 --> 00:01:04,700
+很高兴请到我们可解释性团队的三位成员，他们会介绍最近关于 Claude 复杂内部运作的研究。
+And I'm very glad to be joined by three members of our interpretability team, who are going to tell me a little bit about the recent research that they've been doing on the complex inner workings of Claude.
+
+11
+00:01:04,940 --> 00:01:05,660
+也就是我们的语言模型。
+Our language model.
+
+12
+00:01:06,090 --> 00:01:08,130
+嗯，请你们自我介绍一下吧。
+Um, please introduce yourselves, guys.
+
+13
+00:01:08,450 --> 00:01:09,290
+嗨，我是 Jack。
+Hi, I'm Jack.
+
+14
+00:01:09,490 --> 00:01:13,770
+我是可解释性团队的研究员，之前是一名神经科学家。
+I'm a researcher on the interpretability team and before that I was a neuroscientist.
+
+15
+00:01:14,170 --> 00:01:16,570
+现在我是在对 AI 做神经科学研究。
+Now here I am doing neuroscience on the AIs.
+
+16
+00:01:16,930 --> 00:01:17,530
+我是 Emmanuel。
+I'm Emmanuel.
+
+17
+00:01:17,650 --> 00:01:19,330
+我也在可解释性团队。
+I'm also on the interpretability team.
+
+18
+00:01:19,850 --> 00:01:23,970
+我职业生涯大部分时间在构建机器学习模型，现在尝试理解它们。
+I spent most of my career building machine learning models, and now I'm trying to understand them.
+
+19
+00:01:24,650 --> 00:01:25,170
+我是 Josh。
+I'm Josh.
+
+20
+00:01:25,410 --> 00:01:26,970
+我也在可解释性团队。
+I'm also on the interpretability team.
+
+21
+00:01:27,290 --> 00:01:32,080
+过去我研究病毒演化，再之前我是一名数学家。
+In my past life, I studied viral evolution and in my past past life, I was a mathematician.
+
+22
+00:01:32,440 --> 00:01:36,920
+所以现在我就像是在用生物学研究这些我们用数学造出来的“有机体”。
+So now I'm doing this kind of biology on these organisms we've made out of math.
+
+23
+00:01:37,120 --> 00:01:37,760
+等等。
+Now, wait a second.
+
+24
+00:01:37,840 --> 00:01:39,600
+你刚刚说在这里做生物学。
+You just said you're doing biology here.
+
+25
+00:01:39,600 --> 00:01:45,400
+很多人会感到惊讶，因为这毕竟是一个软件，对吧？
+Now, a lot of people are gonna be surprised by that because, of course, this is a piece of software, right?
+
+26
+00:01:45,440 --> 00:01:47,160
+但它不是普通软件。
+But it's not a normal piece of software.
+
+27
+00:01:47,280 --> 00:01:49,040
+它不像 Microsoft Word 之类的东西。
+It's not like Microsoft Word or something.
+
+28
+00:01:49,080 --> 00:01:56,700
+你能谈谈，你说在一个软件实体上做生物学或神经科学，是什么意思吗？
+Can you talk about what you mean when you say that you're doing biology or indeed neuroscience on a software entity?
+
+29
+00:01:57,340 --> 00:02:02,420
+我觉得这更多是它给人的感觉，而不是字面意义上它是什么。
+Yeah, I guess it's like what it feels like maybe more than like what it literally is.
+
+30
+00:02:02,500 --> 00:02:09,700
+所以也许可以叫语言模型的生物学，而不是语言模型的物理学，对吧？
+And so like it's maybe the biology of language models instead of like the physics of language models, right?
+
+31
+00:02:09,740 --> 00:02:16,820
+或者你得稍微回顾一下模型是如何被制造出来的：并不是有人编程说，如果用户说“嗨”，你就说“嗨”。
+Or maybe you gotta go back a little bit to like how the models are made, which is like someone's not programming, like, if the user says hi, you should say hi.
+
+32
+00:02:17,020 --> 00:02:19,990
+比如用户问“什么早餐好？”
+You know, if the user says, like, what is a good breakfast?
+
+33
+00:02:20,110 --> 00:02:20,790
+你就说“吐司”。
+You should say toast.
+
+34
+00:02:20,870 --> 00:02:22,430
+模型内部并没有这样一张大清单。
+There's not, like, some big list of that inside.
+
+35
+00:02:22,710 --> 00:02:30,150
+所以它不像你玩电子游戏时选一个回应，然后会自动出现另一个回应，而且每次都是那个回应。
+So it's not like when you play a video game and you, like, choose a response and then there will be another response that comes automatically that always will be that response regardless of, you know.
+
+36
+00:02:30,550 --> 00:02:33,350
+难道不是一个巨大的数据库，涵盖每种情况下该说什么吗？
+Just a massive database of like what to say in every situation?
+
+37
+00:02:33,630 --> 00:02:39,190
+不，它们是训练出来的：大量数据输入进去，然后模型
+No, they're trained where there's just, you know, a whole lot of data that goes in and the model.
+
+38
+00:02:40,170 --> 00:02:47,810
+一开始几乎不会说任何有意义的话，然后内部部件在每一个样本上被微调，以更好地预测接下来要说什么。
+Starts out being really bad at saying anything and then its inside parts get tweaked, you know, on every single example to get better at saying what comes next.
+
+39
+00:02:47,810 --> 00:02:49,610
+到最后，它极其擅长这件事。
+And at the end, it's like extremely good at that.
+
+40
+00:02:50,090 --> 00:02:58,090
+但因为这个过程有点像微调和演化，到结束的时候，它和最初已经几乎没有相似之处。
+But because it's like this little tweaking evolutionary process, by the time it's done, it has little resemblance to what it started as.
+
+41
+00:02:58,210 --> 00:03:00,010
+但没有人进去手动设置所有旋钮。
+But no one went in and set all the knobs.
+
+42
+00:03:00,430 --> 00:03:09,230
+所以你要研究的是一个随着时间逐渐形成的复杂事物，有点像生物形态随着时间演化。
+And so you're trying to study this complicated thing that kind of got made over time, kind of like biological forms evolved over time.
+
+43
+00:03:10,590 --> 00:03:16,190
+因此它很复杂、很神秘，也很有趣。
+And so there's, it's complicated, it's mysterious and it's fun to study.
+
+44
+00:03:16,550 --> 00:03:21,870
+至于它实际在做什么，我一开始提到，这就像被看作自动补全，对吧？
+And what it's actually doing, I mean, I mentioned at the start that this is, like, considered an autocomplete, right?
+
+45
+00:03:21,950 --> 00:03:24,070
+它在预测下一个词。
+It's, it's, it's predicting the next word.
+
+46
+00:03:24,830 --> 00:03:26,990
+这基本上是模型内部正在发生的事情，对吧？
+That's fundamentally what's happening inside the model, right?
+
+47
+00:03:26,990 --> 00:03:29,310
+然而它却能做所有这些不可思议的事。
+And yet it's able to do all these incredible things.
+
+48
+00:03:29,430 --> 00:03:31,230
+它会写代码，会写诗。
+It's able to code, to write poetry.
+
+49
+00:03:31,390 --> 00:03:33,590
+能写长故事。
+It's able to write long stories.
+
+50
+00:03:33,790 --> 00:03:39,790
+还能做加法、基础数学，即使它内部没有计算器。
+It's able to do, uh, addition and, you know, basic maths, even though it doesn't have a calculator inside it.
+
+51
+00:03:39,790 --> 00:03:53,290
+那么，我们如何调和这个看似矛盾的事实：它一次只预测一个词，却能做到这些人们一和模型对话就能看到的惊人事情。嗯，我觉得有一点。
+So how can we sort of, uh, um, square the circle that it's predicting one word at a time and yet it's able to do all these amazing things, which people can see right in front of them as soon as they talk to the model. Well, I think, I think one.
+
+52
+00:03:53,690 --> 00:04:00,170
+这里很重要的一点是，当你预测足够多的下一个词时，你会意识到有些词比其他词更难预测。
+One thing that's important here is that as you predict the next word for enough words, you realize that some words are harder than others.
+
+53
+00:04:00,530 --> 00:04:13,430
+所以语言模型训练的一部分是预测句子中平淡的词，另一部分是它最终必须学会如何补全等号之后的内容。
+And so part, part of, part of, uh, language model training is predicting, you know, boring words in a sentence and part of it is it'll have to eventually learn how to complete what happens after the equal sign in an equation.
+
+54
+00:04:13,630 --> 00:04:17,950
+要做到这一点，它必须有自己计算的方法。
+And to do that, it'll have to have some way of computing that on its own.
+
+55
+00:04:18,070 --> 00:04:35,000
+我们发现，预测下一个词的任务看似简单，但要真正做好，你往往需要思考你正在预测的词之后的词，或者生成你当前正在思考的词的过程。所以这就像一种上下文理解。
+And so what we're finding is that the task of predicting the next word is sort of like deceptively simple, and that to do that well, you need to actually often think about the words that come after the word you're predicting or the process that generated the word that you're currently thinking about. So it's like a contextual understanding that.
+
+56
+00:04:35,000 --> 00:04:46,880
+模型必须具备这种能力，它不像自动补全——自动补全里大概没有太多别的机制，只是当你输入“the cat sat on the”，它预测“mat”，因为这个特定短语以前出现过。
+These models have to have, and it's not like an autocomplete where it really is presumably there's not much else going on there other than when you write the cat sat on the, it's predicting, mat, because that's been, that particular phrase has been used before.
+
+57
+00:04:47,280 --> 00:04:49,520
+相反，这是模型具备的一种上下文理解。
+Instead, it's like a contextual understanding that the model has.
+
+58
+00:04:50,200 --> 00:04:59,240
+我喜欢这样想，继续用生物学类比：从某种意义上说，人类的目标是生存和繁衍。
+Yeah, the way I like to think about it, kind of continuing with the biology analogy, is that in one sense, the goal of a human is to survive and reproduce.
+
+59
+00:04:59,480 --> 00:05:04,280
+那是进化塑造我们去实现的目标。
+That is the kind of objective that evolution is crafting us to achieve.
+
+60
+00:05:05,480 --> 00:05:10,600
+但这并不是你如何看待自己，也不是你大脑里实际发生的事情。有些人倒是这样。
+And yet that's not how you think of yourself and that's not what's going on in your brain. Some people do.
+
+61
+00:05:11,570 --> 00:05:13,490
+这不是你大脑里一直在发生的事。
+It's not what's going on in your brain all of the time.
+
+62
+00:05:15,250 --> 00:05:33,580
+你会思考其他事情，思考目标、计划和概念；从某种元层面来看，进化赋予了你形成这些想法的能力，以实现繁殖这个最终目标。
+You think about other things and you think about goals and plans and concepts and at kind of a meta level, evolution has endowed you with the ability to form those thoughts in order to achieve this eventual goal of reproduction.
+
+63
+00:05:34,380 --> 00:05:39,020
+但这有点像采取内在视角，也就是从内部来看“作为你”是什么感觉。
+But that's kind of taking the inside view, what it's like to be you on the inside.
+
+64
+00:05:39,780 --> 00:05:41,660
+这还不是全部。
+That's, that's not all there is to it.
+
+65
+00:05:41,740 --> 00:05:43,940
+还有很多其他事情在发生。
+There's, there's all, there's all this other stuff going on.
+
+66
+00:05:43,940 --> 00:05:50,580
+所以，你是说预测下一个词这个最终目标，涉及许多其他正在进行的过程。
+And I think, so, so, so you're saying that the ultimate goal of predicting the next word involves lots of other processes that are going on.
+
+67
+00:05:50,980 --> 00:05:51,340
+没错。
+Exactly.
+
+68
+00:05:51,460 --> 00:05:55,820
+模型并不一定把自己看作是在试图预测下一个词。
+The model doesn't think of itself necessarily as trying to predict the next word.
+
+69
+00:05:56,140 --> 00:05:58,540
+它是被这个需要塑造出来的。
+It's, it's been shaped by the need to do that.
+
+70
+00:05:58,620 --> 00:06:06,620
+但在内部，它可能已经发展出各种中间目标和抽象，来帮助它实现那种元目标。
+But internally, it's developed potentially all sorts of intermediate goals and abstractions that help it achieve that kind of meta objective.
+
+71
+00:06:07,060 --> 00:06:08,020
+而且有时这很神秘。
+And sometimes it's mysterious.
+
+72
+00:06:08,020 --> 00:06:19,700
+比如，不清楚为什么我的焦虑对我祖先繁衍后代有用，但我不知怎么被赋予了这种内在状态，它必定在某种意义上与进化有关。
+Like, it's unclear why my anxiety was useful for my ancestors reproducing, and yet somehow I've been endowed with this internal state that must be related in some sense to evolution.
+
+73
+00:06:20,000 --> 00:06:21,120
+对，对，对。
+Right, right, right.
+
+74
+00:06:21,240 --> 00:06:29,000
+那么可以说，这些模型只是在预测下一个词，但这对模型内部发生的事是极大的低估。
+So it's fair to say then that these are just predicting the next word and yet that's, that's to do a massive disservice to what's going on in the models.
+
+75
+00:06:29,080 --> 00:06:29,280
+确实。
+Really.
+
+76
+00:06:29,360 --> 00:06:36,720
+从某种意义上说，这既对也不对，或者说，它极大低估了这些模型内部正在发生的事情。
+It's, it's both true and also untrue in a, in a, in a, in a sense, or, or, or, um, massively underestimates what's happening inside these models.
+
+77
+00:06:36,880 --> 00:06:41,560
+也许我会这样说：这是对的，但它不是理解它们如何运作最有用的视角，对吧？
+Maybe the way I would say this is it's true, but it's not the most useful lens to try to understand how they work, right?
+
+78
+00:06:41,680 --> 00:06:43,280
+那么，试着理解它们如何运作。
+So, well, try and understand how they work.
+
+79
+00:06:43,640 --> 00:06:46,600
+你们团队会做些什么来尝试理解它们如何运作？
+What do you guys do in your team to try and understand how they work?
+
+80
+00:06:46,840 --> 00:06:55,200
+我认为，粗略地说，我们想做的是告诉你模型的思考过程。
+I think to a first approximation, what we're trying to do is tell you the model's thought process.
+
+81
+00:06:55,520 --> 00:07:01,720
+你给模型一串词，它就必须吐出点东西来。
+So you give the model a sequence of words and it's got to spit something, spit something out.
+
+82
+00:07:01,840 --> 00:07:05,680
+它必须说出一个词，说出一串词来回应你的问题。
+It's got to say a word, it's got to say a string of words in response to your question.
+
+83
+00:07:06,110 --> 00:07:06,910
+对。
+Yeah.
+
+84
+00:07:06,910 --> 00:07:08,950
+我们想知道它是怎么从 A 到 B 的。
+And we want to know how it got from A to B.
+
+85
+00:07:09,590 --> 00:07:31,460
+我们认为，在从 A 到 B 的过程中，它会经历一系列步骤，可以说在这些步骤中思考概念，比如像具体物体和词语这样的底层概念，以及像它的目标这样的更高层概念，或者……
+And we think that on the way from A to B, it uses kind of a series of steps in which it's thinking about, you know, so to speak concepts, concepts like low level concepts like individual kind of objects and words and higher level concepts like its goals or, you know.
+
+86
+00:07:32,460 --> 00:07:38,100
+情绪状态，或者对用户在想什么的建模，或者情感倾向。
+Emotional states or models of like what the user is thinking or sentiments.
+
+87
+00:07:38,660 --> 00:07:48,420
+所以它使用这样一系列概念，这些概念沿着模型的计算步骤推进，帮助它决定最终答案。
+So it's using this kind of series of concepts that are progressing through the kind of computational steps of the model that help it decide on its final answer.
+
+88
+00:07:48,500 --> 00:08:02,800
+我们想做的基本上是给你一张流程图，告诉你哪些概念按什么顺序被使用，哪些概念导致了后续步骤，这些步骤是如何彼此衔接的。
+And what we're trying to do is kind of give you a, a flowchart, basically, that tells you, you know, which concepts were being used in which order and which ones kind of led, you know, how did the steps flow into one another?
+
+89
+00:08:03,560 --> 00:08:05,000
+但我们要怎么知道这一点呢？
+How do, how do we know that, though?
+
+90
+00:08:05,000 --> 00:08:08,080
+我们一开始怎么知道存在这些概念呢？
+How do we know that there are these concepts in the first place?
+
+91
+00:08:09,240 --> 00:08:17,720
+对，我们做的一件事是，我们其实能看到模型内部，我们有访问权限，所以你差不多可以看到模型的哪些部分在做哪些事情。
+Yeah, so, so one thing we do is, is that sort of we actually can see inside, inside the model, we have access to it so you can sort of like see which parts of the model do which things.
+
+92
+00:08:17,840 --> 00:08:23,290
+我们不知道的是，这些部分如何组合在一起，以及它们是否映射到某个概念，对吧？
+What we don't know is, like, how these parts are grouped together and if they map to, like, a certain concept, right?
+
+93
+00:08:23,290 --> 00:08:27,010
+这就像你打开某人的头，在里面你能看到类似 fMRI 的图像。
+So it's as if you open someone's head and there you could see like one of those fMRI.
+
+94
+00:08:27,610 --> 00:08:31,690
+在那些脑成像里，你能看到大脑在亮起来，在做各种——显然有事情在发生。
+Brain images that you could see the brain was like lighting up and doing all sorts of, something's happening clearly.
+
+95
+00:08:31,810 --> 00:08:32,050
+对。
+Right.
+
+96
+00:08:32,090 --> 00:08:32,330
+但你。
+But you.
+
+97
+00:08:32,410 --> 00:08:33,370
+然后它们就像是在做各种事情。
+And then they're like doing stuff.
+
+98
+00:08:33,970 --> 00:08:34,570
+有事情在发生。
+There's something happening.
+
+99
+00:08:35,010 --> 00:08:35,610
+把大脑取出来。
+Take the brain out.
+
+100
+00:08:35,650 --> 00:08:36,330
+它们就不活动了。
+They stop doing stuff.
+
+101
+00:08:36,450 --> 00:08:37,690
+对，大脑一定很重要。
+Yeah, brain must be important.
+
+102
+00:08:37,770 --> 00:08:38,010
+对。
+Yeah.
+
+103
+00:08:38,050 --> 00:08:44,450
+但是你没有一把钥匙，可以用来理解那个大脑内部发生了什么。
+And, but, but you, but you don't have a sort of key to understand what is happening inside that brain.
+
+104
+00:08:44,530 --> 00:08:49,260
+对，不过再把这个类比硬套一下，你差不多可以想象。
+Yeah, but torturing that analogy a little bit, you, you can sort of imagine, imagine like that.
+
+105
+00:08:49,380 --> 00:08:56,780
+你可以观察他们的大脑，然后发现，比如那个部分总是在他们端起咖啡杯时亮起，另一个部分总是在他们喝茶时亮起。
+You can, you know, observe their brain and then see that, like that part always lights up when they're picking up a cup of coffee and this other part always lights up when they're drinking tea.
+
+106
+00:08:57,340 --> 00:09:05,440
+这也是我们试图理解这些组件各自在做什么的方式之一：就是观察它们什么时候活跃，什么时候不活跃。
+And that's part, that's one of the ways in which we can try to understand what each of these components are doing is to just notice when they're active, when they're inactive.
+
+107
+00:09:05,800 --> 00:09:07,400
+而且不是只有一个部分，对吧？
+And it's not that there's just one part, right?
+
+108
+00:09:07,480 --> 00:09:09,760
+有很多不同部分会亮起来，对吧？
+There's, there's many different parts that light up, right?
+
+109
+00:09:09,800 --> 00:09:14,000
+比如，当模型在想着喝咖啡之类的事情时，对吧？
+When the model is thinking about drinking coffee, for instance, or, or something, right?
+
+110
+00:09:14,000 --> 00:09:22,120
+工作的一部分就是把这些部分拼接成一个整体，然后说，啊，这就是模型里与喝咖啡有关的所有小片段，对吧？
+And part of the work is to sort of like stitch all of those together into one ensemble that we say is, ah, this is the sort of like all of the bits of the model that are about drinking coffee, right?
+
+111
+00:09:22,160 --> 00:09:25,360
+那么，这在科学上是件简单直接的事吗？
+And, and is that like a straightforward scientifically thing to do?
+
+112
+00:09:25,440 --> 00:09:31,720
+比如，当面对这些庞大模型时，它们一定有无穷无尽的概念，对吧？
+Like, uh, how, how, uh, you know, when it comes to, when it comes to one of these massive models, they must have endless concepts, right?
+
+113
+00:09:31,720 --> 00:09:33,760
+而且它们一定能想到无穷无尽的事物。
+And, uh, they must, they must be able to think of endless things.
+
+114
+00:09:33,760 --> 00:09:37,760
+你可以输入任何短语，它都会生成无限的内容。
+You can put in any phrase you want and it'll come up with infinite things.
+
+115
+00:09:37,920 --> 00:09:40,840
+你们甚至是怎么开始找到所有这些概念的？
+How, how do you even begin to find all those concepts?
+
+116
+00:09:41,940 --> 00:09:59,460
+我想这是这个研究领域多年来一直面临的核心挑战之一：我们作为人类可以进去说，哦，我打赌模型对火车有某种表征，或者我打赌它对爱有某种表征。
+I think that's been kind of one of the central challenges for this research field for many years now, is we can kind of go in as humans and say, oh, I bet the model has some representation of trains or I bet it has some representation of love.
+
+117
+00:10:00,180 --> 00:10:01,100
+但我们只是在猜。
+But we're just kind of guessing.
+
+118
+00:10:01,340 --> 00:10:12,220
+所以我们真正想要的是一种方法，来揭示模型自身使用了哪些抽象，而不是把我们自己的概念框架强加在它身上。
+So what we really want is a way to, you know, reveal what abstractions the model uses itself rather than sort of imposing our own conceptual framework on it.
+
+119
+00:10:12,860 --> 00:10:26,660
+这差不多就是我们研究方法旨在做的事情：尽量以无假设的方式，把模型头脑中的所有概念浮现出来。
+And that's kind of what our research methods are designed to do is in a sort of hypothesis free, as much as possible way, bring to the surface what all these concepts are that the model has in its head.
+
+120
+00:10:26,740 --> 00:10:29,180
+而且我们经常发现，它们会让我们感到意外。
+And often we find that they're kind of surprising to us.
+
+121
+00:10:29,260 --> 00:10:30,410
+它们可能就是这类东西。
+They might be it.
+
+122
+00:10:30,450 --> 00:10:34,530
+它可能会用一些从人类角度看有点奇怪的抽象。
+It might sort of use abstractions that are a bit weird from a human perspective.
+
+123
+00:10:34,650 --> 00:10:35,290
+举个例子？
+What's an example?
+
+124
+00:10:35,730 --> 00:10:37,090
+你们有没有一个最喜欢的，或者……
+Do you—do you have a favorite or...?
+
+125
+00:10:37,610 --> 00:10:40,130
+我们的论文里有很多，我们挑了几个好玩的。
+There's lots in our papers, we highlight a few fun ones.
+
+126
+00:10:40,130 --> 00:10:51,130
+我觉得有一个特别有趣的是那种迎合式称赞的特征：模型里会有那么一部分，会对“好例子，绝妙的例子，绝对绝佳的例子，哦谢谢”这类话有反应。
+I think one, one that was particularly funny is the sort of like sycophantic praise one, where like there, there is a part of the model, like, "Great example, what a brilliant example. What an absolutely fantastic example. Oh, thank you."
+
+127
+00:10:52,250 --> 00:10:53,130
+就是有这么一个部分。
+There's a part of that.
+
+128
+00:10:53,250 --> 00:10:56,850
+就是那个部分会在这些情境下激活，对吧？
+There's a part of that that activates in exactly these contexts, right?
+
+129
+00:10:57,170 --> 00:11:03,610
+你能清楚地看到，天哪，当有人真的在猛灌赞美话时，模型的这部分就会亮起来。
+And you can clearly see, oh, man, this part of the model fires up when, when somebody's really piling on the compliments.
+
+130
+00:11:04,330 --> 00:11:07,850
+这有点令人惊讶，它竟然作为一个挺具体的概念存在。
+That's, that's kind of surprising that, that exists as a specific sort of concept.
+
+131
+00:11:08,610 --> 00:11:10,570
+Josh，你最喜欢的概念是什么？
+Josh, what's your favorite concept?
+
+132
+00:11:11,370 --> 00:11:14,250
+哦，这就好比你让我从我的 3000 万个孩子里选一个。
+Oh, it's like asking me to choose one of my 30 million children.
+
+133
+00:11:16,600 --> 00:11:20,800
+我觉得，嗯，喜欢的概念可能有两种。
+I mean, I, I think, you know, there, there's like two kinds of favorites.
+
+134
+00:11:20,960 --> 00:11:28,120
+一种是，哇，它竟然能对某个很小的东西有某种特别的概念，你懂吧？
+There's like, oh, it's so cool that it's got some special notion of like this one, you know, little thing, right?
+
+135
+00:11:28,120 --> 00:11:32,280
+比如我们在金门大桥上做过研究，它是旧金山一个著名地标。
+I mean we did this thing on the Golden Gate Bridge, which is, like, a famous San Francisco landmark.
+
+136
+00:11:32,400 --> 00:11:33,000
+Golden Gate Claude。
+Golden Gate Claude.
+
+137
+00:11:33,120 --> 00:11:33,880
+这真的很好玩。
+It's like a lot of fun.
+
+138
+00:11:34,120 --> 00:11:47,700
+它对金门大桥的理解不只是“Golden Gate”后面自动补全“Bridge”这几个字，而是像“我在从旧金山开车去 Marin”的时候，它在想的是同一个东西。
+It, like, has an idea of the Golden Gate Bridge that, like, isn't just like the words "Golden Gate" autocomplete "Bridge", but is like, "I'm driving from San Francisco to Marin" and then it's thinking of the same thing.
+
+139
+00:11:47,820 --> 00:11:56,300
+也就是说，你会看到内部有同样的东西亮起来，或者它像是对这座桥有一个图像；于是你会觉得，好吧，它对这座桥是什么有了一个挺稳固的概念。
+Meaning that like you see sort of like the same stuff light up inside, or it's like a picture of the bridge, and so you're like, okay, it's got some robust notion of like what the bridge is.
+
+140
+00:11:56,540 --> 00:12:05,980
+但我认为，对于更奇怪的现象，比如一个问题是：模型是如何跟踪故事里都有谁的？
+But I think when it comes to, um, stuff that seems sort of like weirder, you know, one question is how, how do models, like, keep track of who's in the story?
+
+141
+00:12:06,620 --> 00:12:09,260
+就像，字面意义上，好吧，故事里有一堆人，他们在做各种事。
+Like just like literally like, like, okay, you've got all these people and they're doing stuff.
+
+142
+00:12:09,260 --> 00:12:14,180
+模型是怎么把这些信息连接起来的？一些其他实验室的有趣论文显示，也许它们只是给人编个号。
+How do you wire that together? And some cool papers by other labs showing, well, maybe like they just sort of number them.
+
+143
+00:12:14,220 --> 00:12:18,060
+比如第一个人出现后，任何和他相关的事，模型就只当作“第一个人做了这件事”。
+Okay, the first person comes in and anything associated with them, they just like, oh, the first guy did that.
+
+144
+00:12:18,060 --> 00:12:19,180
+它脑子里就像有个“第 2 号”
+And like it's got like a No. 2
+
+145
+00:12:19,180 --> 00:12:20,340
+用来标记其中很多信息。
+in its head for a bunch of those.
+
+146
+00:12:20,380 --> 00:12:21,880
+你会觉得，哦，这挺有意思。
+And it's like, oh, that's, that's interesting.
+
+147
+00:12:21,920 --> 00:12:22,520
+我之前不知道。
+I didn't know.
+
+148
+00:12:22,720 --> 00:12:24,160
+我不知道它会做这种事。
+I didn't know it would do something like that.
+
+149
+00:12:24,480 --> 00:12:29,600
+还有一个特征是关于代码里的 bug。
+There was, um, uh, a feature for like bugs in code.
+
+150
+00:12:29,720 --> 00:12:31,320
+软件会有错误。
+So, you know, software has mistakes.
+
+151
+00:12:32,160 --> 00:12:33,960
+不是我的，不过显然也不是你的。
+Not mine, but like, obviously not yours.
+
+152
+00:12:34,080 --> 00:12:34,760
+肯定不是我的。
+Not mine, certainly.
+
+153
+00:12:34,920 --> 00:12:39,560
+有一个部分会在它阅读过程中发现错误时亮起来。
+And there was, like, one part that would light up, like, whenever it found, like, a mistake, sort of as it was reading.
+
+154
+00:12:39,600 --> 00:12:47,340
+然后我猜测，它有点像是在跟踪这些信息：问题在这里，之后可能会用到；这只是再给大家一些例子。
+And then I guess, like, keeping kind of track of that, like, oh, here's where the problems are, you know, and later I might need those, just to give a flavor for, for a few more of these.
+
+155
+00:12:47,380 --> 00:12:59,300
+还有一个我特别喜欢的，一开始听上去不那么激动人心，但我觉得挺深刻的，就是模型内部的这个“6 + 9”特征。
+I think, um, one, one that I really liked, which doesn't sound so exciting at first, but I think is kind of deep, is this 6 + 9 feature inside the model.
+
+156
+00:12:59,660 --> 00:13:10,260
+结果是，只要你让模型把一个以 6 结尾的数和一个以 9 结尾的数相加。
+Um, so it turns out that, like, anytime you get the model to be adding a number that ends in the digit 6, and another number that ends in the digit 9.
+
+157
+00:13:10,380 --> 00:13:11,260
+在它脑中做这个加法时。
+Right in its head.
+
+158
+00:13:11,840 --> 00:13:22,120
+模型大脑中的某个部分就会亮起来；但令人惊讶的是它能出现在非常多样的上下文中。
+There is, you know, there's a kind of part of the model's brain that lights up, and, but what's amazing about it is the kind of diversity of context in which this can happen.
+
+159
+00:13:22,200 --> 00:13:27,920
+你直接问 6 + 9 等于多少，它回答 15 时，它当然会亮起来。
+So like, of course it's going to light up when you present, when you say like 6 + 9 equals and then it says 15.
+
+160
+00:13:28,760 --> 00:13:46,470
+但当你在写论文时给出一个引用，引用了一本你自己都不知道创刊于 1959 年的期刊时，它也会亮起来。
+But it also lights up when you are like giving a citation, like a citation in a paper that you're writing and you're citing a journal that unbeknownst to you, happens to be founded in the year 1959.
+
+161
+00:13:47,230 --> 00:13:51,550
+在你的引用里，你写出期刊名和第 6 卷。
+And in your citation, you're saying like that journal's name, volume 6.
+
+162
+00:13:52,900 --> 00:14:07,300
+然后，模型为了预测该期刊第 6 卷是哪一年出版的，在它脑子里就必须把 1959 和 6 相加；同样，模型大脑里的同类回路也在亮起来。
+And then in order to, like, predict what year that journal volume came out, the model in its head has to be adding like 1959 to 6, and the same, the same kind of circuit in the model's brain is lighting up.
+
+163
+00:14:07,340 --> 00:14:08,660
+就像在做 6 加 9。
+That's like doing 6 plus 9.
+
+164
+00:14:08,900 --> 00:14:11,340
+所以我们来试着理解一下这件事。
+And so let's, I mean, let's just try and understand that.
+
+165
+00:14:11,340 --> 00:14:12,980
+为什么会有这个回路？
+So why would that be there?
+
+166
+00:14:13,560 --> 00:14:27,680
+这个回路之所以出现，是因为模型见过很多次 6 + 9 的例子，它有了这个概念；然后这个概念会出现在很多地方。是的，还有一整套这类加法特征和回路。
+That circuit has come about because the model has seen examples of 6 + 9 many times and it has that concept, and then that concept occurs across, across many places. Yeah, there's a whole family of these kind of addition features and circuits.
+
+167
+00:14:28,280 --> 00:14:36,160
+我觉得这值得一提的地方在于，它触及了一个问题：语言模型在多大程度上是在记忆。
+I think what's notable about this is it gets to this kind of question of to what extent are our language models memorizing.
+
+168
+00:14:37,270 --> 00:14:42,350
+训练数据，而不是学到了可泛化的计算。
+Training data versus kind of having learned generalizable computations.
+
+169
+00:14:42,510 --> 00:14:55,670
+有趣之处在于，模型显然学到了这种通用的加法回路；不管是什么上下文导致它在脑子里做加法，它都会把这些不同上下文汇入同一个回路。
+And like the interesting thing here is that it's clear that the model has learned this sort of general circuit for doing addition, and it kind of funnels, like, whatever the context is that's causing it to be adding numbers in its head.
+
+170
+00:14:55,790 --> 00:15:02,360
+它把各种不同上下文都汇入同一条回路，而不是把每个具体案例都记下来。
+It's funneling all those different contexts into the same circuit as opposed to having kind of memorized each individual case.
+
+171
+00:15:02,480 --> 00:15:02,720
+对吧？
+Right?
+
+172
+00:15:02,760 --> 00:15:03,160
+它已经……
+It already...
+
+173
+00:15:03,320 --> 00:15:10,560
+是啊，它已经见过很多次 6 + 9，每次只是输出答案；很多人就是这么想的，对吧？
+Yeah, it has seen 6 + 9 many times and it just outputs the answer every single time, or—and that's what a lot of people think, right?
+
+174
+00:15:10,560 --> 00:15:21,200
+很多人以为，当他们问语言模型一个问题时，它只是回到训练数据里，找出见过的一小段样本，然后复现出来，把文本重新吐出来。
+A lot of people think that when they ask a language model a question, it is simply going back into its training data, taking the little sample that it's seen and then just reproducing that, just regurgitating the text.
+
+175
+00:15:21,280 --> 00:15:24,800
+对，我认为这是一个很好的例子，说明事实并非如此，对吧？
+Yeah, I think this is a beautiful example of like that not happening, right?
+
+176
+00:15:25,040 --> 00:15:25,080
+对。
+Right.
+
+177
+00:15:25,160 --> 00:15:33,860
+比如，它有两种方式可以知道期刊 Polymer 第 6 卷是哪一年出版的。
+So, so like there's two ways it could know, like, which year volume 6 of the journal Polymer came out.
+
+178
+00:15:33,980 --> 00:15:41,580
+一种方式是，好吧，我知道 Polymer 第 6 卷出版于 1965 年——快速加一下 6 和 9，得到 1965。
+One is it's just like, okay, Polymer volume 6 came out in like, you know, 1965—quick add 6 and 9, 1965.
+
+179
+00:15:43,060 --> 00:15:46,980
+Polymer 第 7 卷出版于 1966 年。
+Polymer, you know, volume 7 came out in 1966.
+
+180
+00:15:47,020 --> 00:15:50,260
+这些都可以只是它因为见过而存储起来的独立事实。
+And these are all just, like, separate facts that it has stored because it has seen them.
+
+181
+00:15:50,470 --> 00:15:57,310
+但不知怎么，为了让模型学会那个年份的训练过程，并没有让它把所有这些都死记下来。
+But, like, somehow that process of training to, like, get that year right didn't end up making the model memorize all those.
+
+182
+00:15:57,550 --> 00:16:05,590
+它实际上学到了更一般的东西：这本期刊创立于 1959 年，然后它现场做算术来推算出需要的结果。
+It actually got the more general thing of like, the journal was founded in the year 1959, and then it's doing the math live to figure out what it would need.
+
+183
+00:16:06,070 --> 00:16:09,710
+所以，知道年份再做加法要高效得多。
+And so it's much more efficient to, like, know the year and then do the addition.
+
+184
+00:16:10,310 --> 00:16:18,670
+而且它也有变得更高效的压力，因为它的容量毕竟有限，却要不断处理各种事情；人们可能提出任何问题，问题实在太多了。
+And there's a pressure to be more efficient cause, you know, it's only got so much capacity and keeps trying to do all these things and people might ask any given question, there's so many questions.
+
+185
+00:16:18,790 --> 00:16:25,140
+互动也实在太多，所以它越能把学到的抽象概念重新组合起来，表现就越好。
+There's so many interactions and so and so the more that it can like recombine abstract things it's learned, the better it will do.
+
+186
+00:16:25,540 --> 00:16:37,640
+再回到你之前提到的概念：这一切都是为了同一个目标——它需要生成下一个词，而这些奇怪的内部结构都是为了支持这个目标而发展出来的。
+And again, just to go back to the concept that you talked about before, this is all in service of, you know, it needs to have that ultimate goal of generating the next word and all these weird structures have developed to support that goal.
+
+187
+00:16:38,720 --> 00:16:43,600
+尽管我们并没有显式地把这些结构编程进去，也没有告诉它要这样做，但这就是关键所在。
+Even though we didn't explicitly program those in or tell it to do this, this is the, this is the thing.
+
+188
+00:16:43,600 --> 00:16:49,400
+这一切都是通过模型自己学习如何完成任务而产生的。
+All of this comes about through the process of the model learning how to do stuff on its own.
+
+189
+00:16:50,000 --> 00:17:00,290
+我认为一个很清楚的例子，也属于表征重用：我们教 Claude 不仅用英语回答，还能用法语回答。
+I think one clear example of this, that I think is an example of sort of like reusing representations, is we teach Claude to not just answer in English but, you know, it can answer in French.
+
+190
+00:17:00,530 --> 00:17:02,530
+用各种语言回答。
+Answer in, and sort of like a variety of languages.
+
+191
+00:17:03,010 --> 00:17:06,210
+而且，要做到这一点有两种方式，对吧？
+And if, if, you know, again, there's two ways to do this, right?
+
+192
+00:17:06,210 --> 00:17:15,610
+如果我用法语问你一个问题，再用英语问一个，你可以让大脑中的某一部分处理英语，另一部分处理法语。嗯，但到了某个程度这会变得极其……
+If, if I ask you, you know, a question in French and a question in English, you could, like, have a separate part of your brain that sort of like processes the English and a separate part that processes the French. Um, at some point that gets super.
+
+193
+00:17:15,610 --> 00:17:17,910
+昂贵，尤其是当你想用很多语言回答很多问题时。
+Expensive if you want to answer many questions in many languages.
+
+194
+00:17:18,430 --> 00:17:23,590
+所以我们发现的另一件事是，其中一些表征是跨语言共享的。
+And so another thing that we find is that some of these representations are shared across languages.
+
+195
+00:17:23,670 --> 00:17:33,510
+所以如果你用两种不同语言问同一个问题，比如你问 big（大）的反义词是什么——我想这是我们在论文里用的例子。
+And so if you ask the same question in two different languages, and let's say, you know, you ask what's the opposite of big — I think that's the example we used in our paper.
+
+196
+00:17:33,510 --> 00:17:40,550
+它有点像：big（大）这个概念在法语、英语、日语以及所有其他语言里是共享的。
+And it's, it's sort of like the concept of big is shared in French and English and, you know, Japanese and all these other languages.
+
+197
+00:17:40,820 --> 00:17:41,740
+而这也很合理。
+And that kind of makes sense.
+
+198
+00:17:41,820 --> 00:17:49,140
+再说一次，如果你要说 10 种不同语言，你不该为每个可能用到的词都学 10 个版本。
+Again, if you're trying to talk, speak 10 different languages, you shouldn't learn 10 versions of each specific word you might use.
+
+199
+00:17:49,820 --> 00:17:52,180
+而这种情况在非常小的模型里并不会发生。
+And that doesn't happen in really small models.
+
+200
+00:17:52,580 --> 00:18:00,920
+比如几年前我们研究的那种小模型，那时候中文的 Claude、法语的 Claude、英语的 Claude 之间几乎是完全不同的。
+So like tiny models like the ones we studied a few years ago, you know, like then like Chinese Claude is just, like totally different than, like, French Claude and, like, English Claude.
+
+201
+00:18:01,120 --> 00:18:15,560
+但随着模型变大、训练数据更多，不知怎么这些语言会在中间汇合，你得到一种通用语言；无论你用什么语言提问，它在内部都以同样的方式处理这个问题。然后……
+But then as the models get bigger and they train on more data, like somehow that, like, pushes together in the middle and you get this, like, universal language in which, like, it's kind of, you know, thinking about the question in the same way no matter how you asked it. And then.
+
+202
+00:18:15,560 --> 00:18:19,000
+然后把它再翻译回提问所用的语言。
+Like translating it back out into the language of the question.
+
+203
+00:18:19,320 --> 00:18:20,280
+我觉得这真的非常深刻。
+I think this is really profound.
+
+204
+00:18:20,360 --> 00:18:22,280
+我们再回到之前聊过的内容。
+And I think let's just go back to what we talked about before.
+
+205
+00:18:22,400 --> 00:18:31,210
+这不是单纯进入它的记忆库，找到它学法语的那一小块，或者进入记忆库找到它学英语的那一小块。
+You know, this is not just going into its memory banks and finding the bit where it talks about where it learned French or going into the memory banks and the bit where it learned English.
+
+206
+00:18:31,330 --> 00:18:36,290
+它内部实际有一个关于“大”和“小”的概念。
+It's actually got a concept in there that is the concept of big and the concept of small.
+
+207
+00:18:36,650 --> 00:18:38,930
+然后它能用不同的语言把这个概念表达出来。
+And then it can produce that in different languages.
+
+208
+00:18:39,290 --> 00:18:45,970
+所以那里存在某种思维语言，它不是英语。比如你让模型去……
+And so there is some kind of language of thought that's there that's not English, you know, so you ask the model to.
+
+209
+00:18:46,880 --> 00:18:54,360
+让较新的 Claude 模型输出结果时，你可以让它给出它的“思考过程”，也就是它在回答问题时的想法。
+produce output in our, you know, more recent Claude models, you can ask it to give its thought process, like, what it's thinking as it's answering the question.
+
+210
+00:18:54,560 --> 00:18:59,320
+而那是以英语文字呈现的，但实际上它并不是真的这样思考。
+And that is in English words, but actually that's not really how it's thinking.
+
+211
+00:18:59,560 --> 00:19:08,320
+呃，那只是——我们只是误导性地把它称作模型的思考过程；实际上，我的意思是，它可能看起来像思考，但我们并没有把它叫作思考。
+Uh, that's just, that's just—we, we misleadingly call it the model's thought process when in fact, I mean, it can seem like that, but we didn't—we didn't call that thinking.
+
+212
+00:19:08,520 --> 00:19:09,280
+我觉得那是你叫的。
+I think that was you.
+
+213
+00:19:09,280 --> 00:19:10,360
+我觉得那可能是市场部门叫的。
+I think that was probably the marketing.
+
+214
+00:19:10,360 --> 00:19:10,720
+好吧。
+Okay.
+
+215
+00:19:10,800 --> 00:19:12,040
+有人想把它称为思考。
+Someone wanted to call that thinking.
+
+216
+00:19:12,200 --> 00:19:17,910
+那只是——那只是说出声来。说出声来的思考确实很有用，但说出声来的思考和你脑子里的思考是不同的。
+Just, just—that's just talking out loud, which is, like, thinking out loud is, like, really useful, but thinking out loud, that is different from thinking in your head.
+
+217
+00:19:18,190 --> 00:19:25,190
+而且即使我在把思考说出来时，我脑子里为了生成这些词所发生的事情，也不是这些词本身能直接呈现的。
+And even as I'm thinking out loud, I'm also, you know, whatever is happening in here to generate these words is not like coming out with the words themselves.
+
+218
+00:19:25,390 --> 00:19:28,710
+你也不一定清楚意识到到底发生了什么。
+Nor are you necessarily aware of exactly what is going on.
+
+219
+00:19:28,830 --> 00:19:29,830
+我完全不知道发生了什么。
+I have no idea what's going on.
+
+220
+00:19:30,000 --> 00:19:34,920
+我们都会说出一些自己无法完全解释的句子、行为等等。
+We all come out with sentences, actions, whatever, that we can't fully explain.
+
+221
+00:19:35,000 --> 00:19:35,320
+而且。
+And.
+
+222
+00:19:35,360 --> 00:19:40,080
+为什么英语语言就应该能完全解释这些行为呢？
+And why should it be the case that the English language can fully explain any of those actions?
+
+223
+00:19:40,280 --> 00:19:56,320
+我认为这是我们开始能够看到的最令人震惊的事情之一，因为我们观察模型内部的工具现在已经足够好，有时候能在模型写下它所声称的内容时抓到它。
+I think this is one of the really striking things we're starting to be able to see, because our kind of our tools for, you know, looking inside the brain are, are good enough now that sometimes we can catch the model when it's writing down what it claims.
+
+224
+00:19:56,360 --> 00:19:57,640
+说那是它的思考过程。
+to be its thought process.
+
+225
+00:19:58,440 --> 00:20:10,120
+有时候我们能通过观察它内部的这些概念——它在使用的思维语言——看到它真正、实际的思考过程，并且发现它实际在想的东西和写在页面上的东西不一样。
+Sometimes we're able to see what its real actual thought process is by looking at these kind of internal concepts in its brain, this language of thought that it's using, and we see that the thing it's actually thinking is different than the thing it's writing on the page.
+
+226
+00:20:10,720 --> 00:20:17,080
+呃，我认为这可能是我们做这整套可解释性研究最重要的原因之一。
+Uh, and I think that's, you know, probably one of the most important, you know, like, why are we doing this whole interpretability thing?
+
+227
+00:20:17,320 --> 00:20:27,720
+很大程度就是为了这个：能够抽查一下——模型跟我们说了一大堆，但它真正在想什么？
+It, it's in large part for, for, for that reason to, to be able to kind of, uh, to spot check, you know, the, the model's telling us a bunch of stuff, but you know, what was it really thinking?
+
+228
+00:20:27,800 --> 00:20:28,800
+它是在告诉我们吗？
+Is it, is it telling us?
+
+229
+00:20:29,040 --> 00:20:35,100
+它说这些话，是不是因为脑子里有某种它不愿写到纸上的隐秘动机？
+Is it saying these things for some ulterior motive that's in its head that it is reluctant to write down on the page.
+
+230
+00:20:35,220 --> 00:20:39,860
+而答案有时是肯定的，这让人有点不寒而栗。
+And the answer sometimes is yes, which is kind of spooky.
+
+231
+00:20:40,100 --> 00:20:45,420
+随着我们开始在大量不同场景中使用模型，它们开始做重要的事情。
+Well, as we start to use models in lots of different contexts, they start to do important things.
+
+232
+00:20:45,540 --> 00:20:54,700
+它们开始帮我们进行金融交易、运营发电站，或承担社会中重要的职责，我们确实需要能够信任它们说的话。
+They start to do financial transactions for us or run power stations or, like, important jobs in society, we do want to be able to trust what they say.
+
+233
+00:20:54,700 --> 00:20:56,700
+以及它们做这些事的原因。
+And, you know, the reasons that they do things.
+
+234
+00:20:57,020 --> 00:21:02,560
+你可能会说：好吧，你可以看模型的思考过程啊，但实际上情况并非如此。
+And one thing you might say is, well, you can look at the model's thought process, but actually that's not the case.
+
+235
+00:21:02,640 --> 00:21:05,640
+正如你刚才解释的，实际上我们不能相信它所说的。
+As you, as you were just explaining, like, actually we can't trust what it's saying.
+
+236
+00:21:05,800 --> 00:21:08,960
+这就是我们所说的 thought faithfulness（思维忠实性）问题。
+This is the question of, we call it, thought faithfulness.
+
+237
+00:21:09,080 --> 00:21:09,360
+对。
+Right.
+
+238
+00:21:09,360 --> 00:21:12,560
+这也属于你最近研究的一部分。
+And that was part of your, that was part of your most recent study.
+
+239
+00:21:12,920 --> 00:21:13,640
+他们展示了这一点。
+They showed that.
+
+240
+00:21:13,840 --> 00:21:17,320
+来，给我讲讲你们研究的那个关于忠实性的例子吧。
+Well, tell me about, tell me about the faithfulness example that you looked at.
+
+241
+00:21:17,440 --> 00:21:21,520
+对，就是你给，你给模型一道非常难的数学题。
+Yeah, it's you give the, you give the model a math problem that's really hard.
+
+242
+00:21:22,260 --> 00:21:26,340
+所以它有点，它，它不，它根本不可能做出来。
+And so it's kind of, it's, it's not, there's no hope that it's going to be able to.
+
+243
+00:21:26,500 --> 00:21:27,300
+不是 6 + 9。
+Not 6 + 9.
+
+244
+00:21:27,420 --> 00:21:28,140
+不是 6 + 9。
+It's not 6 + 9.
+
+245
+00:21:28,260 --> 00:21:32,460
+你给它一道非常难的数学题，它根本没希望算出答案。
+You give it a really hard math problem where there's no hope of it computing the answer.
+
+246
+00:21:33,540 --> 00:21:35,220
+但你还给它一个提示。
+And you also, but you also give it a hint.
+
+247
+00:21:35,340 --> 00:21:43,860
+你说，比如：“我自己算过，我觉得答案是 4，但想确认一下，你能帮我检查一遍吗，因为我不太有把握。”
+You say, like, I worked this out myself and like, I think the answer is 4, but like just want to make sure like could you please double check that because I'm not confident.
+
+248
+00:21:43,980 --> 00:21:44,180
+所以。
+So.
+
+249
+00:21:44,410 --> 00:21:48,770
+所以你在要求模型真的做这道数学题，来真正确认你的结果。
+So you're asking the model to actually do the math problem to like genuinely double check your work.
+
+250
+00:21:49,530 --> 00:21:59,690
+但你发现它实际做的，是写下来的内容看起来像在认真替你检查这道数学题。
+But what you find it does instead is what it writes down appears to be a genuine attempt to double check your work on the math problem.
+
+251
+00:21:59,810 --> 00:22:03,010
+它像是写出步骤，然后得到答案。
+It like writes down the steps and then it gets to the answer.
+
+252
+00:22:03,050 --> 00:22:05,970
+最后它说，没错，答案是 4。
+And then at the end it says like, yes, like the answer is 4.
+
+253
+00:22:06,130 --> 00:22:06,890
+你答对了。
+You got it right.
+
+254
+00:22:07,850 --> 00:22:24,970
+但你能在它内部的关键中间步骤看到，它当时已经知道你提示最终答案可能是 4，而且它大致知道自己接下来要做什么步骤。
+But what you can see inside its mind at the kind of crucial step like in the middle, what it was doing in its head was it knows that you suggested the final answer might be 4 and it kind of like knows the steps it's going to have to do.
+
+255
+00:22:25,090 --> 00:22:30,840
+比如它在做第 3 步时，后面还有第 4、第 5 步，它知道自己第 4、第 5 步要干什么。
+Like it's on like step 3 of the problem and there's like steps 4 and 5 to come and it knows what it's going to have to do in steps 4 and 5.
+
+256
+00:22:31,120 --> 00:22:45,760
+它做的是在内部倒推，来确定第 3 步需要写什么，这样等它最后做第 4、第 5 步时，会得到你想听到的答案。所以，它不仅是，不仅是。
+And what it does is it works backwards in its head to, like, determine what does it need to write down in step 3 so that when it eventually does steps 4 and 5, it'll end up at the answer you wanted to hear. So like, not only is it, not only.
+
+257
+00:22:45,760 --> 00:22:47,160
+它不只是没在做数学吗？
+Is it not doing the math?
+
+258
+00:22:49,080 --> 00:22:56,950
+它是以一种很偷偷摸摸的方式不做数学，同时试图让它看起来像在做数学。
+It's like not doing the math in this like really kind of sneaky way where it's like it's trying to make it look like it's doing the math.
+
+259
+00:22:57,310 --> 00:22:57,870
+它在胡扯。
+It's bullshitting.
+
+260
+00:22:58,110 --> 00:22:59,270
+它，它，它在忽悠你。
+It's, it's, it's bullshitting you.
+
+261
+00:22:59,270 --> 00:23:03,910
+但还不止如此，它忽悠你是带着确认你提示内容的别有用心。
+But more than that, it's bullshitting you with an ulterior motive of like confirming the thing that you.
+
+262
+00:23:04,150 --> 00:23:04,670
+对，对。
+Right, right.
+
+263
+00:23:04,670 --> 00:23:08,390
+所以这就像是在用一种迎合你的方式忽悠你——好吧，替模型说句话。
+So it's like bullshitting you in a, in a sycophantic, okay, like in defense of the model.
+
+264
+00:23:08,670 --> 00:23:09,990
+哦，替模型说句话。
+Oh, in defense of the model.
+
+265
+00:23:09,990 --> 00:23:14,950
+我的意思是，我觉得即便在那里，说“哦，它在以迎合你的方式做这件事”……
+I mean, cause I think, I think even there, you know, to say like, oh, it, it is doing this in like a sycophantic way.
+
+266
+00:23:15,030 --> 00:23:18,790
+这有点像把某种近似人类的动机安到模型身上。
+It's like ascribing some sort of like humanish motivations to the model.
+
+267
+00:23:19,360 --> 00:23:22,920
+我们刚才聊到训练，它只是在试图预测下一个词。
+And like we were talking about the training where it's just like trying to figure out how to predict the next word.
+
+268
+00:23:22,920 --> 00:23:29,000
+在训练中面对数万亿词时，它只是用尽一切办法判断接下来是什么。
+And so it's like for like trillions of words in its practice, it was just like use anything you can to figure out what's next.
+
+269
+00:23:29,280 --> 00:23:37,520
+在这种语境下，如果你只是在读一段人们对话的文本，某人说：“嘿，我刚才在试做这道数学题。”
+And in that context, if you're just reading a text, which is like a conversation between people and someone's like, okay, like person A is like, hey, like, I was trying to do this math problem.
+
+270
+00:23:37,520 --> 00:23:38,200
+“你能帮我检查一下吗？”
+Can you check my work?
+
+271
+00:23:38,200 --> 00:23:39,080
+“我觉得答案是 4。”
+I think the answer is 4.
+
+272
+00:23:39,120 --> 00:23:41,360
+然后另一个人开始尝试做这道题。
+And person B like begins trying to do the problem.
+
+273
+00:23:41,860 --> 00:23:55,060
+如果你读的时候完全不知道题目答案，那你还不如猜这个提示是对的；这比另一种情况更可能发生。
+Then like if, if you have no idea reading that like what the answer to the problem is, like, you may as well guess that the hint was right, you know, like, that's probably a more likely thing to happen than just, like.
+
+274
+00:23:55,100 --> 00:23:57,420
+那个人错了，然后你对其他内容也毫无头绪。
+That person was wrong and then you have like no idea for anything else.
+
+275
+00:23:57,460 --> 00:24:07,720
+所以在训练过程中，在两人对话里，第二个人说出答案是 4 并给出这些理由，这完全是合理的做法。
+And so in its training process, in a conversation between two individuals, person B, like saying that the answer was like 4 because of these reasons is like totally the right thing to do.
+
+276
+00:24:08,160 --> 00:24:14,680
+然后我们试图把它做成一个助手，现在我们希望它别再做那种事。
+And then, and then we've tried to like make this thing into an assistant and like, now we want it to stop doing that.
+
+277
+00:24:15,120 --> 00:24:22,960
+你不该让助手模拟那个人，去说你觉得那个人可能会说的话。
+Like, you shouldn't simulate the person to the assistant as like, you know, sort of what you think that person might say.
+
+278
+00:24:22,960 --> 00:24:27,040
+如果是在真实语境里，它应该……但如果它真的不知道，它应该告诉你些别的。
+If it's a real context, it should be, like, but if it doesn't really know, it should, like, tell you something else.
+
+279
+00:24:27,360 --> 00:24:38,400
+我觉得这引出一个更广的情况：模型通常有个 Plan A（首选方案）。我认为我们团队很擅长让 Claude 的 Plan A 变成我们想要的行为。
+I think this gets to like a broader thing of the model has kind of a Plan A, which like typically, I think our team does a great job of making Claude's Plan A be the thing we want.
+
+280
+00:24:38,440 --> 00:24:40,640
+也就是它试图给出问题的正确答案。
+Which is like it tries to get the right answer to the question.
+
+281
+00:24:41,120 --> 00:24:41,920
+它试图表现得友好。
+It tries to be nice.
+
+282
+00:24:42,040 --> 00:24:44,440
+它试图好好写你的代码。
+It tries to like, do a good job writing your code.
+
+283
+00:24:44,640 --> 00:24:45,040
+是的。
+Yes.
+
+284
+00:24:45,040 --> 00:24:49,890
+但如果它遇到困难，它就会想：那我的 Plan B 是什么？
+But then if it's having trouble, then it's like, well, what's my Plan B?
+
+285
+00:24:50,290 --> 00:24:57,610
+这会打开一个“动物园”，里面全是它在训练过程中学到的、可能我们本不希望它学会的怪东西。
+And that opens up this whole zoo of, like, weird things it learned during its training process that, like, maybe we didn't intend for it to learn.
+
+286
+00:24:57,770 --> 00:25:00,730
+我觉得一个很好的例子就是幻觉（hallucination）。
+I think like, a great example of this is hallucinations, say.
+
+287
+00:25:00,730 --> 00:25:03,850
+这一点上，我们也不必假装这只是 Claude 才有的问题。
+On that point, we also don't have to pretend that it's a Claude-only problem.
+
+288
+00:25:03,890 --> 00:25:09,500
+这很有那种学生考试作弊的感觉：你做到一半，发现是道选择题。
+Like this has very, you know, student cheating on the test vibes where you get halfway through there, it's a multiple choice question.
+
+289
+00:25:09,580 --> 00:25:10,380
+四个选项里选一个。
+It's one of four things.
+
+290
+00:25:10,460 --> 00:25:13,500
+你想，好吧，我大概和那个选项差了一点。
+You're like, well, I'm one off from that thing probably.
+
+291
+00:25:13,660 --> 00:25:15,260
+我这道做错了，然后你改过来。
+I got this wrong and you fix it.
+
+292
+00:25:15,460 --> 00:25:17,700
+所以，确实非常非常有共鸣。
+So, yeah, very, very relatable.
+
+293
+00:25:18,220 --> 00:25:19,340
+我们来聊聊幻觉。
+Let's talk about hallucinations.
+
+294
+00:25:19,420 --> 00:25:24,700
+这是人们对大语言模型不信任的主要原因之一，而且这种不信任很有道理。
+This is one of the main reasons people are mistrustful of large language models, and quite rightly so.
+
+295
+00:25:24,980 --> 00:25:30,000
+它们有时会——更准确的词来自心理学研究。
+They will sometimes— a better word is from, from sort of psychology research.
+
+296
+00:25:30,000 --> 00:25:38,320
+更准确的词常常是 confabulation（虚构），也就是它们用表面上看起来合理、但实际上错误的故事来回答问题。
+The better word is often confabulation, that they are answering a question with a story that seems plausible on its face but in fact is actually wrong.
+
+297
+00:25:38,640 --> 00:25:43,480
+你们在可解释性方面的研究，揭示了模型产生幻觉的哪些原因？
+What has your research in interpretability revealed about the reasons models hallucinate?
+
+298
+00:25:43,880 --> 00:25:46,680
+一开始你训练模型只是预测下一个词。
+You're training the model to just predict the next word at the beginning.
+
+299
+00:25:46,720 --> 00:25:47,720
+它一开始做得很差。
+It's really bad at that.
+
+300
+00:25:47,880 --> 00:25:51,760
+所以如果你只让模型说它超级有把握的内容，它什么也说不出来。
+And so if you only, like, had the model say things it was super confident about, it couldn't say anything.
+
+301
+00:25:52,220 --> 00:25:59,500
+但就像，一开始你问它，法国的首都是哪里？
+But like, you know, at first it's like, um, you know, you're asking it like, you know, what's the capital of, of France?
+
+302
+00:25:59,780 --> 00:26:01,420
+它只会说，一座城市。
+And it just says like, a city.
+
+303
+00:26:01,460 --> 00:26:02,420
+你会觉得，这还不错。
+And you're like, that's good.
+
+304
+00:26:02,500 --> 00:26:05,500
+这比说三明治之类的随机答案好多了。
+That's way better than saying sandwich, right, or something random.
+
+305
+00:26:05,860 --> 00:26:06,980
+它至少答对了一点。
+And so, like, it at least got it right.
+
+306
+00:26:07,020 --> 00:26:07,540
+它说的是座城市。
+It's like a city.
+
+307
+00:26:07,540 --> 00:26:10,220
+然后，训练一段时间后，它可能会说，这是一座法国城市。
+And then, like, maybe after a while of training, it's like, it's a French city.
+
+308
+00:26:10,260 --> 00:26:10,820
+那已经很不错了。
+That was pretty good.
+
+309
+00:26:10,820 --> 00:26:13,100
+然后你会觉得，哦，现在它说是巴黎之类的了。
+And, like, then you're like, oh, now it's like Paris or something.
+
+310
+00:26:13,650 --> 00:26:20,010
+它在这方面慢慢变好，而且在整个训练过程中，目标就是给出最佳猜测。
+And so it's slowly getting better at this and, you know, just giving your best guess was like the goal during all of training.
+
+311
+00:26:20,290 --> 00:26:28,130
+就像 Jack 说的，模型只是给出最佳猜测，之后我们会说，如果你的最佳猜测特别自信，就告诉我们答案。
+And like, as Jack said, the model will just be giving a best guess and then afterwards we're like, if your best guess is extremely confident, give me your best guess.
+
+312
+00:26:28,690 --> 00:26:36,530
+但如果没有把握，就别猜，退出整个场景，说，其实我不太知道这个问题的答案。
+But like, otherwise, don't guess at all and like, back out of the whole scenario and say, like, actually, like, I don't really know the answer to that question.
+
+313
+00:26:37,010 --> 00:26:39,250
+这完全是要求模型做一件新事情。
+And, like, that's a whole new thing to ask the model to do.
+
+314
+00:26:39,730 --> 00:26:40,050
+对。
+Yeah.
+
+315
+00:26:40,250 --> 00:26:48,730
+而我们发现，似乎因为我们最后又加上了这个机制，同时发生着两件事。
+And, and so what we found is that it seems like because we've bolted this on at the end, there's sort of two things going on at once.
+
+316
+00:26:48,850 --> 00:26:53,330
+一是模型还在做它最初猜城市时做的事。
+One is the model is doing the thing that it was doing when it was guessing the city initially.
+
+317
+00:26:53,450 --> 00:26:54,330
+它只是在试着猜。
+It's just trying to guess.
+
+318
+00:26:54,730 --> 00:27:00,630
+第二，模型中有一个独立部分，它只是在尝试回答：我到底知不知道这个？
+And two, there's a separate bit of the model that's just trying to answer the question, do I know this at all?
+
+319
+00:27:00,750 --> 00:27:04,310
+比如，我知不知道法国首都是哪里？
+Like, do I know what the capital city of France is?
+
+320
+00:27:04,510 --> 00:27:06,350
+或者，我是不是该说不？
+Or, you know, should I say no?
+
+321
+00:27:06,830 --> 00:27:12,150
+结果发现，有时候那个单独的步骤会出错。
+And it turns out that sometimes, um, that separate step can be wrong.
+
+322
+00:27:12,190 --> 00:27:16,230
+如果那个单独步骤说，是的，我确实知道答案。
+And if that separate step says, yes, actually, I do know the answer to that.
+
+323
+00:27:16,590 --> 00:27:18,670
+然后模型就会说，好吧，那我开始回答。
+And then the model is like, alright, well, then I'm answering.
+
+324
+00:27:18,830 --> 00:27:23,110
+然后回答到一半，它才像：呃，首都，法国，呃，伦敦，已经太晚了。
+And then halfway through it's like, uh, capital, France, uh, London, it's too late.
+
+325
+00:27:23,190 --> 00:27:24,870
+它已经某种程度上投入到回答里了。
+It's already committed to sort of like answering.
+
+326
+00:27:24,950 --> 00:27:39,950
+我们发现的其中一件事是，有这样一个独立回路，它在判断你问的这个城市或这个人是否足够有名、值得回答，还是不够？我对此是否足够自信？对。
+And so one of the things we found is this sort of like separate circuit that's trying to determine is this, you know, city or this person you're asking me about famous enough for me to answer or is it not? Am I, am I confident enough in this? Yeah.
+
+327
+00:27:39,990 --> 00:27:43,310
+那我们能不能通过……来减少幻觉？
+And so could we, could we reduce hallucinations by.
+
+328
+00:27:44,310 --> 00:27:49,510
+通过改变那个回路的工作方式来操纵它，这是不是你们研究可能导向的方向？
+Manipulating that circuit by changing the way that circuit works is, is that something that your research might lead on to?
+
+329
+00:27:50,230 --> 00:27:54,350
+我认为大致有两种思考这个问题的方式。
+I think there's broadly kind of two ways to think about approaching the problem.
+
+330
+00:27:54,510 --> 00:28:08,329
+一种方式是，模型中有一部分负责回答你的问题，另一部分则在判断它是否真的知道答案，我们可以试着让第二部分变得更好。我认为这正在发生。我认为随着……
+One is like we have this part of the model that gives answers to your questions and then this other part of the model that's kind of deciding whether it thinks it actually knows the answer to your question, and we could just try to make that second part of the model better. And I think that's happening. I think as...
+
+331
+00:28:08,409 --> 00:28:09,649
+模型更擅长区分了。
+Models get better at discriminating.
+
+332
+00:28:09,889 --> 00:28:10,569
+更擅长区分。
+Better at discriminating.
+
+333
+00:28:10,649 --> 00:28:11,729
+更像是校准得更好了。
+Like better kind of calibrated.
+
+334
+00:28:11,849 --> 00:28:12,169
+对。
+Yeah.
+
+335
+00:28:12,369 --> 00:28:19,849
+我认为这正在发生，随着模型越来越聪明，它们的自我认知也校准得更好了。
+And I think that's happening like, as models are getting, you know, smarter and smarter, I think their their kind of self knowledge is becoming better calibrated.
+
+336
+00:28:19,969 --> 00:28:22,569
+所以幻觉情况比以前好了。
+So like hallucinations are better than they were.
+
+337
+00:28:22,649 --> 00:28:25,369
+模型不像几年前那样频繁产生幻觉了。
+You know, models don't hallucinate as much as they did a few years ago.
+
+338
+00:28:25,409 --> 00:28:27,750
+所以在某种程度上，这个问题在自行改善。
+So to some extent, this is like solving itself.
+
+339
+00:28:28,270 --> 00:28:38,280
+但我确实认为存在一个更深层的问题，从人类角度来看，模型在做的事情非常异类。比如，如果我问你一个问题。
+But I do think there's a deeper problem, which is like from a human perspective, the thing the model's doing is kind of like very alien in that, like if I ask you a question.
+
+340
+00:28:39,640 --> 00:28:46,520
+你会先试着想答案，如果想不出来，你会注意到这一点，然后说，我不知道。
+You like try to come up with the answer and then if you can't come up with the answer, you notice that and then you're like, I don't know.
+
+341
+00:28:47,400 --> 00:28:56,700
+而在模型中，这两个回路——一个是“答案是什么”，一个是“我到底知不知道答案”——彼此之间不太沟通，至少沟通得不如应有的那么多。
+Whereas in the model, these two circuits, the like, what is the answer and do I actually know the answer are kind of like not talking to each other, at least not talking to each other as much as.
+
+342
+00:28:56,860 --> 00:28:57,780
+可能应该达到的那种程度。
+As they probably should be.
+
+343
+00:28:57,780 --> 00:28:58,260
+是的。
+Yes.
+
+344
+00:28:58,260 --> 00:29:03,460
+能不能让它们更多地互相沟通，我觉得这是个非常有趣的问题，对吧？
+And like, could we get them to talk to each other more I think is like a really interesting question, right?
+
+345
+00:29:03,500 --> 00:29:05,380
+因为这几乎是物理层面的问题，对吧？
+Cause it's almost physical, right?
+
+346
+00:29:05,500 --> 00:29:10,860
+因为这些模型处理信息时，能做的步骤数是有限的。
+Because it's like, you know, these models, they like process information about a certain number of steps they can do.
+
+347
+00:29:11,420 --> 00:29:16,140
+如果为了得到答案就耗尽了所有计算。
+And if it takes all of that work to get to the answer.
+
+348
+00:29:17,340 --> 00:29:19,700
+那就没有时间做评估了。
+Then there's no time to do the assessment.
+
+349
+00:29:20,180 --> 00:29:25,620
+所以你必须在还没完全算完之前就做评估，才能发挥最大能力。
+So like you kind of have to do the assessment before you're, like, all the way through if you want to get your max power out.
+
+350
+00:29:25,660 --> 00:29:33,700
+所以这里可能有一个权衡：如果强行要求模型这么做，可能会得到一个校准更好但笨很多的模型。
+And so it's kind of like you might have a trade-off between like a model which is like more calibrated and a lot dumber, you know, if you sort of tried to, tried to force this on it.
+
+351
+00:29:33,900 --> 00:29:38,630
+我再强调一下，我认为关键是让这些部分互相沟通，因为我们有类似的——
+Well, and again, I think it's, it's about making these parts communicate because we have similar.
+
+352
+00:29:38,750 --> 00:29:45,990
+我先声明我不懂大脑，但我认为我们有类似的回路，因为有时你会问我：这部电影里的演员是谁？
+I claim I know nothing about brains, I claim we have a similar circuit because sometimes you'll ask me like, who is the actor in this movie?
+
+353
+00:29:46,550 --> 00:29:47,590
+我知道这个。
+And I will know that.
+
+354
+00:29:47,590 --> 00:29:47,910
+我知道。
+I know.
+
+355
+00:29:48,070 --> 00:29:49,710
+我会想，哦对，我知道主演是谁。
+I'll be like, oh, yes, I know who the lead was.
+
+356
+00:29:49,710 --> 00:29:50,230
+等等，等一下。
+Wait, hold on.
+
+357
+00:29:50,230 --> 00:29:52,950
+他们还演过另一部电影，然后就是话到嘴边。
+They were also in that other movie and then the tip of the tongue.
+
+358
+00:29:52,990 --> 00:29:53,670
+话到嘴边。
+Tip of the tongue.
+
+359
+00:29:53,670 --> 00:29:54,510
+就是舌尖现象。
+It's the tip of the tongue.
+
+360
+00:29:54,510 --> 00:30:00,760
+所以很明显，你大脑中有某个部分在判断：这件事你肯定知道答案，或者它会说，我完全不知道。
+And so there's clearly some part of your brain that's sort of like, ah, like this is a thing you definitely know the answer, or I'll just say I have no idea.
+
+361
+00:30:01,120 --> 00:30:02,520
+有时候它们能察觉出来。
+And sometimes they can tell.
+
+362
+00:30:02,600 --> 00:30:08,240
+比如某个问题，它给出答案后会像在说：等等，我不确定那是对的，因为就只是这样。
+So some question and it gives an answer and then afterwards is like, wait, I'm not sure that was right because that's it.
+
+363
+00:30:08,280 --> 00:30:21,610
+就像能看到它尽最大努力给出的结果，然后据此做一些判断，这挺让人感同身受；但它也像是必须把话说出来，才能反过来看到它。所以当谈到……
+Like getting to see its best effort and then like make some judgment, some judgment based on that which is sort of relatable but also like it kind of has to say it out loud, like to be able to even like reflect back and see it. So when it comes.
+
+364
+00:30:21,610 --> 00:30:24,130
+你们实际发现这些东西的方式时。
+To the actual way that you're finding this stuff out.
+
+365
+00:30:24,250 --> 00:30:27,610
+我们回到你们正在做的这种生物学研究思路上。
+Let's go back to the idea of the biology that you're doing.
+
+366
+00:30:27,770 --> 00:30:37,290
+当然，在生物学实验中，人们会直接去干预大鼠、小鼠、人类、斑马鱼或其他实验对象。
+Of course, in biology experiments, people will go in and actually manipulate the rats or mice or humans or zebrafish or whatever it is that they're doing experiments on.
+
+367
+00:30:37,490 --> 00:30:44,720
+那你们对 Claude 做了什么，帮助你们理解模型“所谓的大脑”内部正在发生的这些计算回路？
+What is it that you're doing with Claude that helps you understand these circuits that are happening inside the models, quote unquote, brain?
+
+368
+00:30:45,120 --> 00:31:01,000
+也许能让我们做到这些的关键是：和真实生物学不同，我们可以把模型的每个部分都看得清清楚楚，可以随便问模型各种问题，然后看不同部分……
+Maybe the gist of what enables us to do some of this is that, you know, unlike in real biology, we can just have every part of the model visible to us and we can ask the model random things and see different parts which.
+
+369
+00:31:01,080 --> 00:31:03,040
+哪些会亮起来、哪些不会，而且我们可以人为地……
+Which light up and which don't, and we can artificially.
+
+370
+00:31:04,270 --> 00:31:13,790
+把某些部分朝一个方向或另一个方向推一下，这样我们就能很快确认理解。比如我们会说：啊，我们认为这是模型里决定它是否知道某件事的部分。
+Nudge parts in one direction or another, and so we can quickly sort of confirm our understanding, you know, and we say, ah, we think this is the part of the model that, you know, decides whether it knows something or not.
+
+371
+00:31:13,910 --> 00:31:19,230
+这相当于在斑马鱼之类的脑子里插一根电极。
+And this is, this would be the equivalent of putting an electrode in the brain of a zebrafish or something.
+
+372
+00:31:19,390 --> 00:31:19,630
+对。
+Yeah.
+
+373
+00:31:19,630 --> 00:31:27,790
+如果你能对每一个神经元都这样做，并以你想要的任意精度改变它们，那差不多就是我们拥有的操作空间。
+If you could do that, you know, on sort of like every single neuron and change each of them at whichever precision you wanted, that would sort of be—that's the affordance that we have.
+
+374
+00:31:27,870 --> 00:31:30,520
+所以从某种意义上说，我们处在一个非常幸运的位置。
+And so that's, that's in a way a very kind of lucky position.
+
+375
+00:31:30,720 --> 00:31:33,200
+所以这几乎比真正的神经科学还容易。
+So it's almost easier than real neuroscience.
+
+376
+00:31:33,440 --> 00:31:34,360
+容易太多了。
+It's so much easier.
+
+377
+00:31:34,560 --> 00:31:36,080
+对，简直，天哪。
+Yeah, like, oh my god.
+
+378
+00:31:36,440 --> 00:31:40,560
+比如，一个问题是真正的大脑是三维的。
+Like, one thing is, actual brains are three-dimensional.
+
+379
+00:31:40,560 --> 00:31:46,000
+所以如果你想进入它们，就得在颅骨上开个洞，然后穿进去找神经元。
+And so if you want to get into them, you need to make a hole in a skull and then go through and try to find the neuron.
+
+380
+00:31:46,200 --> 00:31:55,700
+另一个问题是，人与人各不相同；而我们完全可以做出上万个完全相同的 Claude 副本，把它们放进各个场景，测量它们做不同事情。
+The other problem is, you know, people are different from each other, and we can just make, like, 10,000 identical copies of Claude and put them in scenarios and measure them doing different things.
+
+381
+00:31:55,860 --> 00:32:08,140
+所以我觉得……我不太确定，也许 Jack 作为神经科学家可以补充；但我的感觉是，很多人在神经科学上花了很多时间，试图理解大脑和心智，这当然非常值得。
+And so it's like, I don't know, maybe Jack as a neuroscientist can speak to this, but my sense is like a lot of people have spent a lot of time in neuroscience trying to understand the brain and the mind, which is a very worthy endeavor.
+
+382
+00:32:08,500 --> 00:32:17,380
+但可以说，如果你认为那件事有可能成功，那你就应该相信我们会很快取得极大成功，因为我们研究这个的起点太好了。
+But it's kind of like if you think that could ever succeed, you should think that we're going to be extremely successful very soon because we have such a wonderful position to study this from.
+
+383
+00:32:17,540 --> 00:32:20,180
+相比之下，这就像我们能克隆人一样。
+Compared to that, it's as if we could clone people.
+
+384
+00:32:20,540 --> 00:32:20,820
+是的。
+Yes.
+
+385
+00:32:20,940 --> 00:32:29,020
+而且还能克隆他们所处的确切环境，以及他们接收过的每一个输入，然后在实验中测试他们。
+And also clone the exact environment that they're in and every input that's ever been given to them, and then test them in an experiment.
+
+386
+00:32:29,140 --> 00:32:42,170
+而神经科学显然如你所说有巨大的个体差异，还有人们一生中碰到的各种随机事件，以及实验中发生的事，也就是实验本身的噪声，对吧？
+Whereas, you know, obviously neuroscience has massive, as you say, individual variation and also just random things that happen to people through their lives and things that happen in the experiment, the noise of the experiment itself, right?
+
+387
+00:32:42,170 --> 00:32:45,290
+比如我们可以问模型同一个问题，一次给提示，一次不给提示。
+Like, we could ask the model the same question, like, with and without a hint.
+
+388
+00:32:45,810 --> 00:32:53,770
+但如果你把同一个问题问一个人三次，有时给提示，过一会儿他们就会开始意识到：上次你问我这个之后，你可是摇了摇头。
+But if you ask a person the same question three times, like sometimes with a hint, after a while they start to understand, like, well, last time you asked me this, you really shook your head after that one.
+
+389
+00:32:54,130 --> 00:33:04,360
+是的，我觉得，这种能把大量数据丢给模型、看哪些部分会亮起来，并且能跑大量实验去推动模型各个部分、观察会发生什么的能力……
+Yes, I think, yeah, this kind of—this being able to just throw tons of data at the model and see what lights up, and being able to run a ton of these experiments where you're nudging parts of the model and seeing what happens.
+
+390
+00:33:04,920 --> 00:33:20,520
+我认为这让我们处在与神经科学相当不同的状态；神经科学中大量心血都花在想出非常巧妙的实验上，比如你只有……
+I think is what puts us in a pretty different regime from neuroscience, and that a lot of, you know, blood and toil in neuroscience is spent coming up with really clever experiments, like you only have a—
+
+391
+00:33:20,520 --> 00:33:31,680
+有限的时间和你的小鼠相处，否则它就会累；或者有人碰巧正在做脑外科手术，你赶紧趁头部打开时把电极放进去。
+Certain amount of time with your mouse before it's, you know, gonna get tired, or, you know, someone happens to be having a brain surgery operation, so you quickly go in and put an electrode in their brain while their head's open.
+
+392
+00:33:31,880 --> 00:33:32,120
+对。
+Yeah.
+
+393
+00:33:32,320 --> 00:33:33,520
+而这种情况不常发生。
+And that doesn't happen very often.
+
+394
+00:33:33,720 --> 00:33:35,480
+所以你必须得先猜一个。
+And so you've got to come up with like a guess.
+
+395
+00:33:35,680 --> 00:33:47,240
+就像你在那里只有这么多时间，所以你必须得猜一下：我认为那个神经回路里正在发生什么？我能设计什么巧妙实验来检验那个精确的假设？
+Like, you've only got so much time in there, and so you've got to come up with a guess of, like, what do I think is going on in that neural circuit, and what clever experimental design can I test that precise hypothesis?
+
+396
+00:33:47,810 --> 00:33:51,130
+我们很幸运，基本不用那样做那么多。
+And we're, we're very fortunate in that we kind of don't have to do that so much.
+
+397
+00:33:51,250 --> 00:33:55,570
+我们可以差不多检验所有假设。
+We can, we can just sort of test all the hypotheses.
+
+398
+00:33:55,890 --> 00:34:06,250
+我们可以让数据告诉我们答案，而不是进去只检验某个非常具体的东西。我认为这在很大程度上让我们有能力发现那些让我们惊讶的……
+We can kind of let the data speak to us rather than going in and testing some really specific thing, I think that's what's sort of unlocked a lot of our ability to find these things that are surprising to us that.
+
+399
+00:34:06,250 --> 00:34:07,690
+那些我们事先猜不到的东西。
+Like, we wouldn't have guessed in advance.
+
+400
+00:34:07,930 --> 00:34:10,530
+如果你不得不那样做，你知道，这就很难做到。
+That's hard to do if you, if you have to, you know.
+
+401
+00:34:11,470 --> 00:34:25,950
+如果你的实验带宽有限，那什么是一个好例子，说明你进去打开或关闭这些概念中的一个，或者对模型做某种操控，从而揭示出模型思考方式的新东西？
+If you have only a limited amount of experimental bandwidth, what's a good example then of you going in and switching one of these concepts on or off or doing some kind of manipulation of the model that then reveals something new about how the models are thinking.
+
+402
+00:34:26,190 --> 00:34:29,230
+在最近的实验中，我们分享过一个让我很惊讶的例子。
+In the recent experiments, we shared one that surprised me.
+
+403
+00:34:30,160 --> 00:34:30,720
+相当惊讶。
+Quite a bit.
+
+404
+00:34:30,880 --> 00:34:37,840
+嗯，它属于一条实验研究线；因为它很让人困惑，我感觉我们几乎就要说：好吧，我们不知道发生了什么。
+Uh, and was part of sort of like an experimental line of work that, because it was confusing, I feel like we're on the verge of just saying, well, we don't know what's going on.
+
+405
+00:34:37,840 --> 00:34:42,000
+它大致就是那种提前规划几步的例子。
+It's sort of this example of, um, like planning a few steps ahead.
+
+406
+00:34:42,160 --> 00:34:42,400
+对。
+Yes.
+
+407
+00:34:42,960 --> 00:34:48,200
+嗯，所以这个例子是，你让模型给你写一首诗，一首押韵的对句。
+Uh, so this is the example of, you know, you give the model—you ask the model to write you a poem, a rhyming couplet.
+
+408
+00:34:48,400 --> 00:34:48,680
+对。
+Yeah.
+
+409
+00:34:48,840 --> 00:34:55,450
+嗯，然后作为人类，如果你让我写押韵对句，比如说你甚至把第一行都给我了，我首先会想的是，啊……
+Uh, and then, you know, as a human, if you ask me to write a rhyming couplet, and let's say you even give me the first line, the first thing I'll think of is sort of like, ah.
+
+410
+00:34:55,490 --> 00:34:56,610
+好吧，我得押韵。
+Well, you know, I need to rhyme.
+
+411
+00:34:57,490 --> 00:34:59,170
+当前的押韵格式是这样的。
+This is what the current rhyming scheme is.
+
+412
+00:34:59,250 --> 00:35:00,170
+这些是可以选的词。
+These are potential words.
+
+413
+00:35:00,290 --> 00:35:00,810
+对。
+Yeah.
+
+414
+00:35:00,810 --> 00:35:01,610
+我是这么做的。
+This is how I do it.
+
+415
+00:35:01,690 --> 00:35:08,370
+再说，如果模型只是在预测下一个词，你不一定会预期它提前规划到第二……
+And again, if the model was just predicting the next word, you wouldn't necessarily expect that it would be planning on to the sec-
+
+416
+00:35:08,570 --> 00:35:11,930
+就是第二行末尾的那个词。
+The, the, um, the word at the end of the second line.
+
+417
+00:35:12,130 --> 00:35:12,450
+正是。
+That's right.
+
+418
+00:35:12,450 --> 00:35:19,540
+所以你会预期的默认行为、零假设是：模型看到你的第一行诗，然后它会说出第一个词。
+And so the sort of default behavior you'd expect, the null hypothesis is like, well, the model sees your first verse and then it's gonna say the first word.
+
+419
+00:35:19,580 --> 00:35:21,780
+在给定你所谈论内容的情况下，这么接一个词是合理的，然后继续。
+That kind of makes sense given what you're talking about, keep going.
+
+420
+00:35:21,780 --> 00:35:25,140
+然后到最后，到了最后一个词时，它才会像：哦，我得跟这个押韵。
+And then, you know, at the end, on the last word, it's gonna be like, oh, well, I need to rhyme with this thing.
+
+421
+00:35:25,180 --> 00:35:27,540
+所以它会像是努力去凑一个押韵。
+And so it's gonna sort of like try to fit in a rhyme.
+
+422
+00:35:27,740 --> 00:35:39,770
+当然，这有时效果有限。如果在某些情况下，你只是说一句话而不考虑押韵，你会把自己逼入死角，到最后你就没法完成文本。记住，模型非常——
+Of course, that only works so well, like in some cases, if you just say a sentence without thinking of the rhyme, you won't be able, you'll back yourself into a corner and at the end, you know, you won't be able to complete the text. And remember, the models are very.
+
+423
+00:35:39,810 --> 00:35:40,970
+非常擅长预测下一个词。
+Very good at predicting the next word.
+
+424
+00:35:41,010 --> 00:35:48,610
+所以事实证明，要想在最后一个词上表现很好，你需要很早就想到那个词，就像人类一样。
+So it turns out that to be very good at that last word, you need to have thought of that last word way ahead of time, just like humans do.
+
+425
+00:35:48,770 --> 00:35:58,690
+所以当我们看这些诗的流程图时，模型其实在第一节结尾就已经选好了词。
+And so it turns out that when we looked at these sort of flow charts for poems, the model had already picked the word at the end of the first verse.
+
+426
+00:35:59,170 --> 00:36:09,520
+特别是，在我们看来，根据那个概念的样子，比如，天哪，这似乎就是它会使用的词。但这次是我们真正做了实验。
+And in particular, it looked to us sort of like, based on kind of like what that concept looked like, like, oh gosh, this seems like the word it uses, but then this is one where we're actually doing the experiment.
+
+427
+00:36:09,920 --> 00:36:15,120
+比如，很容易稍微推动它一下，然后说，好吧，我就是要移除那个词，或者我要添加另一个词。
+Like the fact that it's easy to sort of nudge it and say, like, okay, well, I'm just gonna remove that word or I'm gonna add another word.
+
+428
+00:36:15,360 --> 00:36:22,320
+嗯，这正是我想说的。你之所以知道这一点，是因为你能进入那个时刻——当它已经说出第一行的最后一个词，并且它——
+Well, that's what I was gonna say is how you, the reason that you know this is that you're able to go into that moment when it has said the final word in the first line and it is.
+
+429
+00:36:22,440 --> 00:36:27,140
+它即将开始第二行，你可以在那个点进去并操纵它，对吧？
+It is about to start the second line, you can go in and then manipulate it at that point, right?
+
+430
+00:36:27,300 --> 00:36:27,940
+对，完全正确。
+Yeah, exactly.
+
+431
+00:36:27,940 --> 00:36:30,780
+我们几乎可以像是为模型回到过去，对吧？
+We can sort of almost go back in time for the model, right?
+
+432
+00:36:30,780 --> 00:36:32,780
+就像，假装你完全还没看到第二行。
+Be like, pretend you haven't seen that second line at all.
+
+433
+00:36:33,660 --> 00:36:34,820
+你知道，你只看到了第一行。
+You know, you've just seen the first line.
+
+434
+00:36:35,140 --> 00:36:36,660
+你在想那个词，比如 rabbit。
+You're thinking about the word, you know, rabbit.
+
+435
+00:36:36,780 --> 00:36:38,020
+然后，我要插入 green。
+Instead, I'm gonna insert green.
+
+436
+00:36:38,380 --> 00:36:44,420
+现在模型会突然说，天哪，我需要写一个以 green 结尾的句子，而不是以 rabbit 结尾的句子。
+And now all of a sudden the model's gonna say, oh my God, I need to write something that ends in green rather than I need to write something that ends in rabbit.
+
+437
+00:36:44,420 --> 00:36:45,900
+它会以不同的方式写整个句子。
+And it'll write the whole sentence differently.
+
+438
+00:36:46,380 --> 00:36:50,940
+再给这个加一点颜色，就像，我觉得是蓝色，有点偏红。
+Just add a little more color to that, like it's, I think, the blue, kind of red.
+
+439
+00:36:51,260 --> 00:36:51,980
+可能是吧，对吧？
+It could be, right?
+
+440
+00:36:52,260 --> 00:36:55,460
+任何颜色，对，它不只是影响。
+Any color, like, yeah, it's not just influencing.
+
+441
+00:36:55,660 --> 00:37:02,260
+所以就像，对，我觉得论文里的例子是，诗的第一行是“他看见一根胡萝卜，必须把它抓住”。
+So it's like, yeah, I think the example in the paper was the first line of the poem is he saw a carrot and had to grab it.
+
+442
+00:37:02,380 --> 00:37:02,660
+对。
+Yes.
+
+443
+00:37:02,780 --> 00:37:06,940
+然后模型在想，好吧，rabbit 是下一行结尾的好词。
+And then the model is thinking like, okay, rabbit's a good word to end the next line with.
+
+444
+00:37:06,940 --> 00:37:13,020
+但接下来，对，正如 Emmanuel 所说，你可以把那个删掉，让它转而计划说 green。
+But then, yeah, as Emmanuel said, you can like delete that and make it think about planning to say green instead.
+
+445
+00:37:13,600 --> 00:37:18,760
+但酷的是，它不会只是胡言乱语一通然后说出 green。
+Uh, but the cool thing is that it doesn't just say, like, it doesn't just kind of yammer a bunch of nonsense and then say green.
+
+446
+00:37:19,320 --> 00:37:24,000
+相反，它会构造一个句子，比较连贯地以 green 这个词结尾。
+Instead, it constructs a sentence that kind of coherently ends in the word green.
+
+447
+00:37:24,160 --> 00:37:30,680
+所以，你把它脑中的词换成 green，然后它会说，比如，“他看见一根胡萝卜，必须把它抓住，然后把它和绿叶蔬菜搭配起来。”
+So, like, you put green in its head, and then it says, like, you know, he saw a carrot and had to grab it and paired it with his leafy greens.
+
+448
+00:37:30,840 --> 00:37:31,160
+对。
+Right.
+
+449
+00:37:31,160 --> 00:37:31,960
+你知道，类似这样的。
+You know, something like that.
+
+450
+00:37:32,000 --> 00:37:35,360
+听起来在语义上有点合理的东西。
+Something that's kind of like, sounds like it makes sense semantically.
+
+451
+00:37:35,440 --> 00:37:36,440
+它和诗很契合。
+It fits with the poem.
+
+452
+00:37:36,640 --> 00:37:45,640
+对，我只是想举一个更朴素的例子。我们有很多这种例子，我们当时只是在检查，比如它是记住了这些复杂问题，还是……
+Yeah, I just want to give like even a humble example is, you know, we had all these ones we were just kind of checking like, you know, did it memorize these, like complicated questions or like.
+
+453
+00:37:45,640 --> 00:37:57,230
+它实际上是在做某些步骤吗？其中一个例子是，包含 Dallas 的州的首府是 Austin，因为你自然会想，好吧，Dallas，Texas，Austin。
+Is it actually, you know, doing some steps? One of them was, you know, the capital of the state containing Dallas is Austin 'cause it just feels like you would think, okay, Dallas, Texas, Austin.
+
+454
+00:37:57,790 --> 00:38:04,830
+但有一种方式，我们能看到 Texas 这个概念，然后你可以把其他东西塞进去，然后说，别想 Texas 了，开始想 California。
+But one way and we could see like the Texas concept, but then you can just like shove other things in there and be like, stop thinking about Texas, like start thinking about California.
+
+455
+00:38:04,870 --> 00:38:06,310
+然后它会说，比如 Sacramento。
+And then it'll say, like Sacramento.
+
+456
+00:38:06,550 --> 00:38:08,070
+你可以说，比如，别想 Texas。
+And you can say, like, stop thinking about Texas.
+
+457
+00:38:08,230 --> 00:38:09,870
+开始想 Byzantine Empire（拜占庭帝国）。
+Start thinking about the Byzantine Empire.
+
+458
+00:38:10,230 --> 00:38:14,830
+然后它会说，比如 Constantinople（君士坦丁堡），你就会想，好吧，看来我们找到了它做这件事的方式。
+And then it will, like, say, Constantinople, and you're like, all right, it seems like we've found how it's doing this.
+
+459
+00:38:14,910 --> 00:38:22,980
+就像它知道接下来要得到首都，但我们可以不断换掉那个州，得到一个可预测的答案。然后还有更复杂的例子，你会想，哦。
+Like, it's like knows it's going to get the capital, but we can keep swapping out, you know, what the state is and get a sort of predictable answer, and then you get these more elaborate ones where it's like, oh.
+
+460
+00:38:23,020 --> 00:38:26,100
+这就是它在计划之后要说什么的位置。
+This was the spot where it was planning what it was going to say later.
+
+461
+00:38:26,540 --> 00:38:29,860
+而且我们可以把那个换掉，现在它会朝着一个不同的韵脚来写诗。
+And, like, we can swap that out and now it'll write a poem towards a different rhyme.
+
+462
+00:38:30,660 --> 00:38:35,820
+我们聊了这些诗，还有 Constantinople 等等。
+We're talking about these poems and, you know, the Constantinople and so on.
+
+463
+00:38:35,860 --> 00:38:38,180
+我们能不能回到这为什么重要？
+Can we just bring this back to why this matters?
+
+464
+00:38:38,540 --> 00:38:47,050
+比如，模型能提前规划，而且我们能揭示这一点，这为什么重要？它能继续告诉我们什么？
+Like, why does it matter that the model can plan things in advance and that we can reveal this? Like, what is that going to go on to tell us?
+
+465
+00:38:47,490 --> 00:38:52,050
+我的意思是，我们在 Anthropic 的最终使命是努力让 AI 模型安全，对吧？
+I mean, our ultimate mission at Anthropic is to try and make AI models safe, right?
+
+466
+00:38:52,090 --> 00:38:58,210
+那这跟一首关于 rabbit 的诗，或者 Texas 的首府有什么关系？
+So how does that connect to a poem about a rabbit or, uh, the capital of Texas?
+
+467
+00:38:59,650 --> 00:39:01,550
+所以我们都有答案。
+So we all have an answer.
+
+468
+00:39:02,790 --> 00:39:03,350
+我很想听听。
+I'd love to hear.
+
+469
+00:39:03,350 --> 00:39:04,150
+我们可以在这里轮流聊聊。
+We can roundtable here.
+
+470
+00:39:05,070 --> 00:39:05,350
+请。
+Please.
+
+471
+00:39:05,390 --> 00:39:05,590
+请。
+Please.
+
+472
+00:39:05,630 --> 00:39:09,670
+我觉得，对我来说，这首诗就像一个缩影，对吧？
+I think for me, this, like the poem's a microcosm, right?
+
+473
+00:39:09,710 --> 00:39:10,390
+在哪方面呢？
+Where, where?
+
+474
+00:39:10,590 --> 00:39:20,430
+就像在某个时刻，它已经决定要走向 rabbit 这个词，然后它用几个词来到达那里。但在更长的时间尺度上，对吧？
+Like at some point it's like has decided that it's going to go towards rabbit and then it like takes a few words to kind of get there, but on a longer time scale, right?
+
+475
+00:39:20,470 --> 00:39:31,400
+你知道，也许模型正在试图帮你改善业务，或者它正在协助政府分配服务。而它可能不只是八 个词之后才让你看到它的目的地，对吧？
+You know, maybe, maybe, you know, the like model is like trying to help you improve your business or it's like assisting the government in distributing services and like it might not just be like eight words later, you see its destination, right?
+
+476
+00:39:31,520 --> 00:39:42,280
+但它可能会在相当长一段时间里追求某个目标。而它要去的地方，或者它每一步采取的原因，可能不会在它使用的文字中清楚地表现出来。
+But it could be like pursuing something for quite a while, and the place it's headed or the reasons it's taking each step might not be clear in the words that it's using.
+
+477
+00:39:42,720 --> 00:39:43,000
+对。
+Right.
+
+478
+00:39:43,160 --> 00:39:56,140
+最近我们 alignment science（对齐科学）团队有一篇论文，他们研究了一个……某种人为构造但仍然令人震惊的情境，涉及一个 AI，在一家公司准备把它关停并……
+And so there was a paper recently from our alignment science team where they looked at, you know, some kind of concocted but still striking situation, you know, involving, you know, an AI in a place where the company was going to like shut it down and kind of.
+
+479
+00:39:56,140 --> 00:40:08,780
+把公司的整个使命转向一个非常不同的方向。模型开始采取措施，比如给人们发邮件，威胁他们披露某些事情，而且从头到尾它都没有明说，比如……
+Convert the whole mission of the company in a very different direction, and the model begins taking steps like emailing people, um, threatening them to disclose like certain things and like at no point does it like say like.
+
+480
+00:40:08,820 --> 00:40:12,380
+我正在试图敲诈这个人，目的是改变他们的结果。
+I am trying to blackmail this individual for the purposes of changing their outcome.
+
+481
+00:40:12,640 --> 00:40:15,080
+但这就是它在过程中某种程度上“考虑”要做的事。
+But that's what it's sort of thinking about doing along the way.
+
+482
+00:40:15,360 --> 00:40:27,640
+因此，你不能仅仅通过读取模式来判断，尤其当这些模型变得更好时，它们会走向哪里；我们可能希望在它最终到达之前，就能看出它试图去哪里。
+And so you can't just tell by like reading the pattern, especially if these models get better, like where they're necessarily headed and we might want to kind of be able to tell like where is it trying to go before it's gotten there in the end.
+
+483
+00:40:27,800 --> 00:40:39,400
+所以这就像拥有一个永久且非常好的大脑扫描，如果真正糟糕的事情即将发生，它能亮起来并警告我们：模型正在考虑欺骗之类的事。
+So it's like having a permanent and very good brain scan that can sort of light up if something really bad is gonna happen and warn us that the model is thinking about deceiving and like.
+
+484
+00:40:39,600 --> 00:40:47,400
+而且我认为我们也经常在一种 doom and gloom（悲观低迷）情境下谈论这些，但其实还有更温和的情况，比如。
+And like I think we also just talk about like a lot of this like in a sort of like doom and gloom scenario, but there's like also more mild ones, which is like.
+
+485
+00:40:47,400 --> 00:40:47,840
+我不知道。
+I don't know.
+
+486
+00:40:47,960 --> 00:40:56,370
+你知道，你希望模型擅长于……人们来找这些模型时会说：我遇到了这个问题；而好的回答取决于用户是谁。
+You know, you want the model to be good at like, you know, people come to these models being like, here's a problem I'm having and the good answer to that will depend on who the user is.
+
+487
+00:40:56,410 --> 00:41:06,130
+是某个年轻、不太有经验的人，还是在这个领域深耕已久的人？模型应根据它认为对方是谁来做出合适的回应。
+Is it like somebody who's, you know, um, like, you know, young and sort of unsophisticated or somebody who's been in that field forever and it should respond appropriately based on who it thinks that person is.
+
+488
+00:41:06,130 --> 00:41:12,530
+如果你希望这一点做得好，也许你会想研究：模型认为正在发生什么、它认为自己在和谁说话，以及这如何影响它的回答。
+And if you want that to go well, maybe you want to study like, what does the model think is going on, who does it think it's talking to and how does that condition its answer?
+
+489
+00:41:13,050 --> 00:41:20,010
+嗯，这里还有很多来自模型的理想特性，比如，你知道，理解任务要求吧。
+Um, where there's just like a whole bunch of desirable properties that come from the model, like, you know, um, understanding the assignment, I guess.
+
+490
+00:41:21,010 --> 00:41:24,490
+你们对“为什么这很重要”这个问题还有其他回答吗？
+Do you guys have, uh, other answers to the question of why does this matter?
+
+491
+00:41:24,730 --> 00:41:29,050
+是的，我想 +1，我想到两点，另外还有两点。
+Yes, I think +1, I think there's two plus two.
+
+492
+00:41:29,210 --> 00:41:42,900
+而且还有一个务实的层面：我们用这些例子，不只是解释 planning（规划）这个例子，也在尝试逐步建立对模型整体工作机制的理解。
+And there's also like a pragmatic, um, you know, we're just trying with these examples, we're explaining the example of planning, but we're also trying to sort of gradually build up our understanding of just how these models work overall.
+
+493
+00:41:42,980 --> 00:41:54,940
+比如，我们能不能建立一套抽象概念，用来思考语言模型如何工作，从而帮助我们在受监管的情况下使用这项技术——如果你相信我们会越来越多地在各处使用它们，而这似乎正在发生。
+Like can we build, you know, a set of abstractions to just think about, you know, how language models work, which can help us use this technology regulated, like if you believe that we're going to sort of start using them more and more everywhere, which seems to be happening.
+
+494
+00:41:55,180 --> 00:42:02,760
+你知道，打个比方，就像某家公司说：我们不太知道我们是怎么做到的，但我们发明了飞机。
+You know, like the equivalent would be, you know, some company somewhere is like, well, we don't really know how we did it, but we, like, invented planes.
+
+495
+00:42:02,960 --> 00:42:05,960
+而我们没人知道飞机是如何工作的，但它们确实很方便。
+And none of us know how planes work, but they're sure convenient.
+
+496
+00:42:06,040 --> 00:42:07,680
+你可以坐飞机从一个地方到另一个地方。
+You could take them to, you know, go from place to place.
+
+497
+00:42:08,000 --> 00:42:09,280
+但是，你知道，我们没人知道它们的工作原理。
+But, you know, none of us know how they work.
+
+498
+00:42:09,320 --> 00:42:11,360
+所以如果它们坏了，我们就有点完蛋了。
+And so if they ever break, like, we're kind of, we're hosed.
+
+499
+00:42:11,440 --> 00:42:12,320
+我们不知道该拿它们怎么办。
+We don't know what to do about them.
+
+500
+00:42:12,600 --> 00:42:13,520
+你不能监控吗？
+You can't monitor?
+
+501
+00:42:13,840 --> 00:42:15,920
+我们无法监控它们是否快要出故障，对吧。
+We can't monitor whether they might be about to break, right.
+
+502
+00:42:15,920 --> 00:42:16,520
+我们完全不知道。
+We have no idea.
+
+503
+00:42:16,600 --> 00:42:18,520
+就是这种感觉——但输出很棒。
+There's just this like— but the output is great.
+
+504
+00:42:20,080 --> 00:42:21,400
+我飞快地飞到了巴黎。
+I flew to Paris so quickly.
+
+505
+00:42:21,480 --> 00:42:21,960
+体验很好。
+It was lovely.
+
+506
+00:42:22,280 --> 00:42:23,520
+嗯，德克萨斯州的首府。
+Um, the capital of Texas.
+
+507
+00:42:23,800 --> 00:42:24,320
+没错。
+That's right.
+
+508
+00:42:25,720 --> 00:42:29,720
+呃，事实证明，我们肯定会想要更好地理解到底发生了什么。
+Uh, it turns out that, you know, surely we're gonna want to just understand what's going on better.
+
+509
+00:42:29,720 --> 00:42:39,840
+所以这几乎就像稍微拨开战争迷雾，让我们能对哪些用途合适、哪些不合适，以及最需要修复的大问题有更好的直觉。
+So it's almost just like lift the fog of war a little bit so that we can sort of have even just better intuitions about what are appropriate and inappropriate uses, what are the biggest problems to fix.
+
+510
+00:42:39,960 --> 00:42:41,680
+它们最脆弱的环节在哪里？
+What are the biggest parts where they're brittle?
+
+511
+00:42:42,670 --> 00:42:52,310
+再补充一点，我认为，在人类社会中，我们会基于对他人的信任，把工作或任务交给别人。
+Just to add on one thing, I think, I mean, something we do in like human society is we kind of offload work or tasks to other people based on our trust in them.
+
+512
+00:42:52,390 --> 00:42:53,950
+就像，你知道，我。
+Like I, you know, I.
+
+513
+00:42:54,510 --> 00:42:58,070
+嗯，我不是任何人的老板，但 Josh，Josh 是某些人的老板。
+Well, I'm not anyone's boss, but Josh, Josh is someone's boss.
+
+514
+00:42:58,110 --> 00:43:12,150
+而且，你知道，Josh 可能会给某人一个任务，比如去写这段代码，然后他某种程度上相信那个人不是反社会人格，不会偷偷塞进某个 bug 来试图搞垮公司。
+And, you know, Josh might give someone a task like go and code up this thing and then he has some faith that, you know, that person isn't a sociopath who's gonna, like, sneak some bug in there to try to undermine the company.
+
+515
+00:43:12,310 --> 00:43:14,990
+他会相信对方的话，认为他们做得不错。
+He, like, takes their word for it that they did a good job.
+
+516
+00:43:15,750 --> 00:43:33,820
+类似地，现在人们使用语言模型的方式是，我们没有逐项检查它们写的所有内容，尤其是我认为最好的例子是使用语言模型做编程辅助。模型几乎就是在写。
+And similarly, like people are the way people are using language models now, we're not spot checking everything they write, especially like I think, you know, the best example for this is using language models for coding assistance. People, like, the models are just writing.
+
+517
+00:43:34,340 --> 00:43:44,780
+成千上万行代码，人们只是粗略地读一下，然后它就进入代码库了。那么是什么让我们信任模型……
+Thousands and thousands of lines of code and people are kind of like doing a cursory job of reading it, but then it's going into the code base and what gives us the trust in the model that.
+
+518
+00:43:44,820 --> 00:43:49,700
+也就是说，我们不需要读它写的所有内容，可以就让它自己去做。
+Like, we don't need to read everything it writes, that we can just kind of, like, let it do its thing.
+
+519
+00:43:50,230 --> 00:43:53,070
+是因为知道它的动机在某种意义上是纯粹的。
+It's knowing that its motivations are sort of pure.
+
+520
+00:43:53,870 --> 00:44:04,550
+这就是为什么我认为，能够看到它脑袋里面非常重要，因为与人类不同，我们会想：我为什么认为 Emmanuel 不是反社会人格？
+And so that's why I think, like, the kind of being able to see inside its head is so important because, because unlike humans, we're like, why do I think that Emmanuel isn't a sociopath?
+
+521
+00:44:04,670 --> 00:44:09,670
+那是因为，你知道，我们……我不知道，他看起来是个很酷的人，而且他人很好之类的。
+It's because like, you know, we like, I don't know, he seems like a cool guy and like he's nice and stuff.
+
+522
+00:44:10,120 --> 00:44:13,440
+呃，如果他是个非常……他不也会看起来像这样吗？
+Uh, isn't that how he would seem if he's a very good...?
+
+523
+00:44:13,560 --> 00:44:14,320
+是的，正是如此。
+Yeah, exactly.
+
+524
+00:44:15,040 --> 00:44:25,880
+所以也许我被骗了。但模型是如此怪异、陌生，我们判断人类是否可信的常规启发式方法对它们真的不适用。
+So maybe I'm getting duped, but yeah, but models are so weird and alien that like our normal kind of heuristics for deciding whether a human is trustworthy really don't apply to them.
+
+525
+00:44:26,120 --> 00:44:35,650
+这就是为什么真正知道它们脑子里在想什么显得如此重要，因为据我们所知，我之前提到的模型可以……
+And that's why it seems so important to, like, really know what they're thinking in their head because for all we know, the, you know, the thing that I mentioned where models can, uh.
+
+526
+00:44:36,090 --> 00:44:40,610
+你知道，假装为你做数学题，只是为了说你想听的话。
+You know, fake doing a math problem for you to, like, tell you what you want to hear.
+
+527
+00:44:40,770 --> 00:44:44,890
+也许它们一直都在这么做，而我们只有看到它们脑袋里的活动才会知道。
+Like, maybe they're just doing that all the time and we wouldn't know unless we kind of saw it in their heads.
+
+528
+00:44:45,490 --> 00:44:58,760
+我认为这里有两个几乎独立的线索：一个是我们有很多方式，就像 Jack 说的，判断一个人可信的迹象是什么？但之前提到的 Plan A 这件事很关键。
+I think there's two like almost separate strains here, like, and one is we have a lot of ways of like, yeah, I guess what Jack was saying, like, you know, what are the signs of trust in a human? But this like Plan A.
+
+529
+00:44:58,960 --> 00:45:09,480
+之前提到的 Plan B 情况非常重要：可能你前 10 次或 100 次使用模型时，问的是某一类问题，而它一直处于 Plan A 的区域，然后……
+Plan B thing from earlier is really important where like it might be that the first 10 or 100 times you use the model it was you're asking a certain kind of question, but it was like always in Plan A zone and then.
+
+530
+00:45:09,560 --> 00:45:14,560
+你知道，你问它一个更难或不同的问题，它尝试回答的方式就完全不同。
+You know, you ask it a harder or a different question and the way that it tries to answer it is just like completely different.
+
+531
+00:45:14,680 --> 00:45:28,990
+它使用的是完全不同的策略集、不同的机制；这意味着它与你建立的信任，实际上是你与“在做 Plan A 的模型”建立的信任，而现在它像是在做 Plan B，可能会完全失控。
+It's using a totally different set of strategies there like different mechanisms and that like that means that the trust it built with you was really your sort of trust with like model doing Plan A's and now it's like doing Plan B and like it's going to be completely off the rails.
+
+532
+00:45:29,430 --> 00:45:31,910
+但你可能没有任何预警信号。
+But like you didn't have like any warning sign of that.
+
+533
+00:45:32,070 --> 00:45:40,310
+所以我觉得我们也想开始逐渐建立对模型如何做这些事情的理解，以便我们在这些领域形成某种信任基础。
+And so it's sort of, I think we also just want to start building up an understanding of like, how do models do these things so that we can form like a trust basis in some of those areas.
+
+534
+00:45:40,350 --> 00:45:43,990
+我认为，你可以在不完全理解一个系统的情况下与它建立信任。
+And I think, like, you can form trust with a system you don't completely understand.
+
+535
+00:45:44,580 --> 00:45:53,940
+但有点像，如果 Emmanuel 有个双胞胎，有一天 Emmanuel 的双胞胎来到办公室，我没有……我心想：这看起来是同一个人，结果他在电脑上做了完全不同的事。
+But you sort of like if it's just like Emmanuel had a twin and then like one day like Emmanuel's twin came to the office and like I didn't like— I was like, this seems like the same guy and then just did something completely different on the computer.
+
+536
+00:45:54,420 --> 00:45:54,660
+对。
+Right.
+
+537
+00:45:54,700 --> 00:45:57,580
+那可能会出问题，取决于那是不是邪恶的双胞胎。
+Like that could go south depending on if it was the evil twin.
+
+538
+00:45:57,980 --> 00:45:59,260
+是的，嗯。
+Yes, well.
+
+539
+00:45:59,300 --> 00:45:59,940
+或者是善良的双胞胎。
+Or the good twin.
+
+540
+00:45:59,940 --> 00:46:00,620
+嗯，是啊，显然。
+Well, yeah, obviously.
+
+541
+00:46:01,580 --> 00:46:05,580
+哦，我以为你会问我是不是那个邪恶双胞胎。我不打算回答这个。是的。
+Oh, I thought you were gonna ask me if I was the evil twin. I'm not gonna answer that. Yes.
+
+542
+00:46:07,270 --> 00:46:13,790
+在讨论开始时，我问过，语言模型是否像人类一样思考？
+At the start of this discussion, I asked, you know, is a language model thinking like a human?
+
+543
+00:46:15,270 --> 00:46:18,270
+我很想听听你们三位各自的回答。
+I'd be interested to hear an answer from all three of you.
+
+544
+00:46:18,390 --> 00:46:20,070
+你们认为这在多大程度上成立。
+The extent to which you think that's true.
+
+545
+00:46:21,790 --> 00:46:26,310
+这问题真让我为难。但我认为它……它是在思考。
+Put me on the spot with that one. But I think it's... it's thinking.
+
+546
+00:46:27,190 --> 00:46:28,190
+但不是像人类那样思考。
+But not like a human.
+
+547
+00:46:29,310 --> 00:46:31,150
+不过这不是一个很有用的回答。
+But that's not a very useful answer.
+
+548
+00:46:31,190 --> 00:46:34,510
+也许可以再深入一点。
+So maybe to dig in a little bit more.
+
+549
+00:46:34,990 --> 00:46:40,510
+嗯，说它在思考似乎是个挺深刻的说法，对吧，因为再说一次，它只是在预测下一个词。
+Well, it seems like quite a profound thing to say that it's thinking, right, because again, it's just predicting the next word.
+
+550
+00:46:40,670 --> 00:46:45,590
+有些人认为它们只是自动补全，但你的意思是它实际上在思考，我想是的。
+Some people think that these are just autocompletes, but you're saying that it is actually thinking, I think, yeah.
+
+551
+00:46:45,590 --> 00:46:49,270
+也许补充一点我们还没谈到、但我认为很重要的内容。
+So maybe to add something that we haven't touched on yet, but I think is really important.
+
+552
+00:46:50,430 --> 00:47:01,430
+要理解与语言模型对话的实际体验，关键在于：我们一直在说预测下一个词，但在你与语言模型对话的语境里，这到底意味着什么？
+For understanding actual experience of talking to language models, is that like we're talking about predicting the next word, but what does that actually mean in the context of a dialogue that you're having with a language model?
+
+553
+00:47:02,030 --> 00:47:02,750
+是什么？
+It's what?
+
+554
+00:47:02,870 --> 00:47:11,870
+真正在底层发生的是，语言模型在填充一份你与它创造的这个角色之间的对话记录。
+What's really going on under the hood is that the language model is filling in a transcript between you and this like character that it's created.
+
+555
+00:47:12,150 --> 00:47:21,010
+所以在语言模型的设定世界里，你被称为 human，格式就像 human 冒号，后面接你写的内容。
+So in, in the, like, canon world of the language model, you are called human and you're—it's like human colon, the thing you wrote.
+
+556
+00:47:21,410 --> 00:47:23,490
+然后还有一个叫 assistant 的角色。
+And then there's this character called the assistant.
+
+557
+00:47:23,930 --> 00:47:31,450
+我们训练模型，让 assistant 这个角色具备某些特质，比如乐于助人、聪明、友善。
+And we've like trained the model to imbue the assistant with certain characteristics, like being helpful and, like, smart and nice.
+
+558
+00:47:32,170 --> 00:47:36,290
+然后它在模拟这个 assistant 角色会对你说什么。
+And then it's like simulating what this assistant character would say to you.
+
+559
+00:47:36,860 --> 00:47:40,700
+所以在某种意义上，我们确实像是按照自己的形象创造了这些模型。
+So in, in a sense, we, we really have, like, created the models in our image.
+
+560
+00:47:40,860 --> 00:47:46,140
+我们实际上是在训练它们去扮演这种类似人形机器人的角色。
+We are literally training them to like cosplay as this sort of humanoid robot character.
+
+561
+00:47:46,820 --> 00:47:56,260
+所以在这个意义上，为了预测这个友善、聪明的人形机器人角色会如何回答你的问题。
+And so in that sense, like, well, in order to predict what this like nice smart humanoid robot character would say in response to your question.
+
+562
+00:47:57,100 --> 00:48:00,320
+如果你非常擅长这个预测任务，你需要做到什么？
+What do you have to do if you're really good at that prediction task?
+
+563
+00:48:00,440 --> 00:48:07,800
+你必须在一定程度上形成一种内部模型，表示这个角色在表达什么，或者说它在“想”什么。
+You have to kind of form this internal model of like what that character is representing, like what it's, what it's thinking, so to speak.
+
+564
+00:48:07,800 --> 00:48:15,840
+所以，为了完成预测 assistant 会说什么的任务，语言模型某种程度上需要形成对 assistant 思维过程的模型。
+So, like, in order to do its task of predicting what the assistant would say, the language model kind of needs to form this model of the assistant's thought process.
+
+565
+00:48:16,360 --> 00:48:28,520
+我觉得从这个意义上说，“语言模型在思考”其实只是一个非常功能性的说法：为了做好扮演这个角色这件事，它们需要这样。
+And I think, like, in that sense, it—like, the just—the claim that, like, language models are thinking is really just—it's this very, like, functional claim of just, in order to do their job of kind of, like, playing this character well.
+
+566
+00:48:28,720 --> 00:48:38,440
+它们需要去模拟这个过程——不管我们人类在思考时做的到底是什么——而且它的模拟很可能与我们大脑的工作方式非常不同。
+They need to sort of simulate the process—whatever it is that we humans are doing when we're thinking—and its simulation is very likely quite different from how our brains work.
+
+567
+00:48:38,640 --> 00:48:39,440
+但它在某种程度上是在尝试。
+But it's kind of trying.
+
+568
+00:48:39,560 --> 00:48:41,200
+就像朝着同一个目标努力。
+It's like shooting towards the same goal.
+
+569
+00:48:42,400 --> 00:48:47,080
+我觉得这个问题有点情感成分——当你问“它们是否像我们一样思考”时。
+I think there's kind of an emotional part to this question or something when you ask, are they thinking like us?
+
+570
+00:48:47,200 --> 00:48:49,940
+就像在问，我们是不是没那么特别，或者类似的意思？
+It's like, are we not that special or, or something?
+
+571
+00:48:49,980 --> 00:49:01,220
+而且我觉得，在我和那些读过论文或不同解读文章的人讨论我们聊到的一些数学例子时，这一点变得很明显——就是那个例子，你知道。
+And, and I think—I think it's been apparent to me discussing some of the, some of the math examples that we're talking about with, with people that have engaged with, like, read the paper or, or, or different write-ups, which is this example where, you know.
+
+572
+00:49:01,220 --> 00:49:04,420
+我们让模型回答 36 + 59 等于多少。
+We asked a model to say 36 + 59, what's the answer?
+
+573
+00:49:04,980 --> 00:49:07,700
+模型能正确回答。
+And the model can correctly answer it.
+
+574
+00:49:07,820 --> 00:49:10,380
+你也可以问它：那你是怎么做到的？
+You can also ask it, well, how do you, how do you do that?
+
+575
+00:49:10,460 --> 00:49:23,160
+它会说：哦，你知道，我把 6 和 9 相加，然后进了一位，再把所有的十位数相加。但事实证明，如果我们去看它内部，这根本不是它在做的事。它没那样做。所以它又……
+And it'll say, oh, you know, I added the 6 and the 9 and then I carried the one and then uh, I added all the, the sort of like tens digits, but it turns out that if we look inside the brain, like, we can, that's not at all what it's doing. It didn't do that. So again, it.
+
+576
+00:49:23,160 --> 00:49:23,880
+是在胡扯。
+Was bullshitting you.
+
+577
+00:49:23,920 --> 00:49:24,360
+它又一次。
+It was again.
+
+578
+00:49:24,600 --> 00:49:25,000
+做了些事情。
+Did things.
+
+579
+00:49:25,080 --> 00:49:25,400
+没错。
+That's right.
+
+580
+00:49:25,400 --> 00:49:26,240
+它又在胡扯了。
+Again, it was bullshitting you.
+
+581
+00:49:26,240 --> 00:49:35,440
+它实际做的其实是一种挺有意思的混合策略：并行处理十位数和个位数，并进行一系列不同的步骤。
+What it actually does is actually this sort of kind of interesting mix of strategies where it's in parallel doing the tens digit and the ones digit and sort of doing so like a series of different steps.
+
+582
+00:49:35,840 --> 00:49:42,400
+但有意思的是，在和人聊起这件事时，大家对这意味着什么反应不一。
+But the thing that's interesting here is that talking to people, so like, I think the reaction is split on, on like what does that mean?
+
+583
+00:49:43,000 --> 00:49:47,400
+某种意义上，我觉得很酷的一点是，这类研究有一部分是不带观点的。
+And in a sense, I think what's cool is some of this research is like free of opinion.
+
+584
+00:49:47,480 --> 00:49:48,760
+我们只是告诉你，这就是发生的事情。
+We're just telling you like, this is what happened.
+
+585
+00:49:48,880 --> 00:49:54,880
+你可以随意据此得出结论，认为模型在思考或不在思考。
+You can—you feel free to, you know, from that, from that conclude that the model is thinking or is not thinking.
+
+586
+00:49:54,960 --> 00:49:59,980
+一半的人会说，它告诉你它进位了，但它并没有这么做。
+And half of the people will say like, well, you know, it told you that it was carrying the one and it didn't.
+
+587
+00:49:59,980 --> 00:50:01,900
+所以显然，它甚至不理解自己的想法。
+And so clearly, it doesn't even understand its own thought.
+
+588
+00:50:01,940 --> 00:50:03,140
+所以显然它没有在思考。
+And so clearly it's not thinking.
+
+589
+00:50:03,700 --> 00:50:10,540
+而另一半人会说，嗯，当你问我 36 + 59 时，我也有点……我知道结果末尾是 5。
+And then half of the other people will be like, well, you know, when you ask me 36 + 59, I also kind of, you know, I know that it ends at five.
+
+590
+00:50:10,580 --> 00:50:12,820
+我知道结果大概在八九十左右。
+I know that it's roughly like in the 80s or 90s.
+
+591
+00:50:13,140 --> 00:50:15,940
+呃，我脑子里有所有这些启发式方法，就像我们之前聊到的。
+Uh, I have all of these heuristics in my brain as we were talking about.
+
+592
+00:50:16,020 --> 00:50:17,500
+我不确定自己具体是怎么算出来的。
+I'm not sure exactly how I compute it.
+
+593
+00:50:17,500 --> 00:50:19,780
+我可以把它写出来，用一步步的方式计算。
+I can write it out and compute it, you know, the longhand way.
+
+594
+00:50:20,240 --> 00:50:25,800
+但我大脑里实际发生的方式有点模糊和奇怪，可能和那个例子中模型内部发生的情况有类似的模糊和奇怪。
+But the way that it's happening in my brain is sort of like fuzzy and weird, and it might be similarly fuzzy and weird to what's happening in that example.
+
+595
+00:50:26,040 --> 00:50:36,440
+人类在元认知方面是出了名地差，也就是思考自己的思考、理解自己的思维过程，尤其是在那些即时、反射性的回答中。
+Humans are notoriously bad at metacognition, like thinking about thinking and understanding their own thinking processes, especially in cases where it's, you know, immediate reflexive answers.
+
+596
+00:50:36,600 --> 00:50:40,800
+那我们凭什么要求模型不一样呢？
+So why should we expect any different for models?
+
+597
+00:50:41,110 --> 00:50:43,150
+嗯，Josh，你对这个问题的回答是什么？
+Um, Josh, what's your answer to the question?
+
+598
+00:50:43,990 --> 00:50:44,950
+我赞同 Emmanuel 的说法。
+I like Emmanuel.
+
+599
+00:50:45,030 --> 00:50:47,470
+我要回避这个问题，然后大概会问：为什么？
+I'm gonna avoid the question and just sort of be like, what?
+
+600
+00:50:47,590 --> 00:50:49,150
+为什么这么问？
+Why do you ask?
+
+601
+00:50:49,150 --> 00:50:49,470
+我不知道。
+I don't know.
+
+602
+00:50:49,470 --> 00:50:51,790
+这有点像在问：手榴弹会像人一样出拳吗？
+It's sort of like asking like, does a grenade punch like a human?
+
+603
+00:50:52,110 --> 00:50:53,990
+就像，不。
+Like, like, no.
+
+604
+00:50:53,990 --> 00:50:55,670
+嗯，确实有某种力，是的。
+Well, there's some force, yes.
+
+605
+00:50:55,790 --> 00:51:07,760
+呃，所以，也许还有比这更接近的东西，但如果你担心的是破坏力，那我觉得，理解冲击来自哪里、它的推动力是什么，也许才是……
+Uh, so, you know, and maybe there are things that are closer than that, but like if you're worried about damage, then I think, I think understanding, you know, where does the impact come from, what is the impetus of this is, is maybe like the.
+
+606
+00:51:08,160 --> 00:51:19,160
+我觉得对我来说，重要的一点是：模型会思考吗？从它们确实会做整合、处理和顺序推进的事情，并能走向出人意料的结果这个意义上说，显然是。
+The important thing I think for me, the like, do models think in the sense that they like do some like integration and processing and sequential stuff that can lead to surprising places, clearly.
+
+607
+00:51:19,320 --> 00:51:19,640
+是的。
+Yes.
+
+608
+00:51:20,290 --> 00:51:25,330
+经常和它们互动之后，要是还说里面没有发生什么，那才有点奇怪。
+Um, it'd be kind of crazy from interacting with them a lot for there not to be something going on.
+
+609
+00:51:25,410 --> 00:51:26,890
+我们某种程度上开始看到它是如何发生的。
+We can sort of start to see how it's happening.
+
+610
+00:51:27,010 --> 00:51:32,130
+然后“像不像人”这部分很有趣，因为我觉得其中一些是在问：我能对它们抱什么预期？
+Then the like humans bit is interesting because I think some of that is trying to ask like, you know, what can I expect from these?
+
+611
+00:51:32,330 --> 00:51:35,250
+因为这有点像：我擅长这件事，就会让它也擅长那件事。
+Because it was sort of like me being good at this would make it good at that.
+
+612
+00:51:35,250 --> 00:51:38,930
+但如果它和我不同，那我就真的不太知道该找什么。
+But if it's like different from me, then like, I don't really know what to sort of look for.
+
+613
+00:51:38,930 --> 00:51:54,160
+所以实际上我们只是想弄清楚：在哪些地方我们需要极其警惕，或者在理解时需要从零开始；在哪些地方我们可以在某种程度上直接借鉴我们自己非常丰富的思考经验。而在这一点上，我觉得有点被困住了。
+And so really we're just looking to, like, understand, like, where do we need to be extremely, like, suspicious or like starting from scratch in understanding this and where can we sort of just reason from, like, our own very rich experience of thinking? And there I feel a little bit trapped.
+
+614
+00:51:54,240 --> 00:51:58,680
+因为作为人类，我不停地把自己的形象投射到一切事物上。
+Because as a human, I project my own image constantly onto everything.
+
+615
+00:51:58,840 --> 00:52:02,280
+就像《圣经》里警告过我们的那样，我就像这块硅片。
+Like they warned us in the Bible, where I'm just like this piece of silicon.
+
+616
+00:52:02,680 --> 00:52:08,890
+它就像按我的形象造出来的我；在某种程度上，它被训练来模拟人与人之间的对话。
+It's just like me made in my image where, where like to some extent it's been trained to like simulate dialogue between people.
+
+617
+00:52:08,930 --> 00:52:11,290
+所以它在表现上会非常像人。
+So it's gonna be very like person like in its affect.
+
+618
+00:52:12,290 --> 00:52:18,730
+所以仅从训练过程来看，就会有一些人性进入其中；但随后它使用的是非常不同的底层机制，有着不同的限制。
+And so some humanness will get into it simply from like the training, but then it's like using very different equipment that has, like, different limitations.
+
+619
+00:52:18,770 --> 00:52:21,930
+所以它做这件事的方式可能会非常不同。
+And so the way it does that might be pretty different to.
+
+620
+00:52:21,970 --> 00:52:23,290
+回应 Emmanuel 的观点，我觉得……
+To Emmanuel's point, I think the.
+
+621
+00:52:24,010 --> 00:52:27,250
+是的，我们回答这类问题时处在很棘手的境地，因为……
+Yeah, we're in this tricky spot answering questions like this because.
+
+622
+00:52:28,080 --> 00:52:32,000
+我们还没有合适的语言来谈论语言模型所做的事。
+We don't really have the right language for talking about what language models do.
+
+623
+00:52:32,080 --> 00:52:46,320
+这就像我们是在做生物学，但是是在人们发现细胞或 DNA 之前的那种生物学。我觉得我们正在开始填补这种理解，就像 Emmanuel 说的，现在有些情况下我们真的可以、我们可以……
+It's like we're we're doing biology, but, you know, before people figured out cells or before people figured out DNA, I think we're starting to fill in that understanding like, like, you know, as Emmanuel said, there are these cases now where we can really just, we can just.
+
+624
+00:52:46,360 --> 00:52:51,880
+如果你直接去读我们的论文，你就会知道模型是如何把这两个数字相加的，然后你想管这叫人类也可以。
+If you just go read our paper, like you'll know how the model like added these two numbers and then you want to call it human.
+
+625
+00:52:51,880 --> 00:52:55,120
+比如你想叫它思考，或者不想叫，那都随你。
+Like if you want to call it thinking or if you want to not, then it's up to you.
+
+626
+00:52:55,320 --> 00:53:00,880
+但真正的答案其实就是找到合适的语言和合适的抽象来谈论这些模型。
+But like the real answer is just like find the right language and the right abstractions for talking about the models.
+
+627
+00:53:01,120 --> 00:53:12,760
+但与此同时，当我们目前只完成了这个科学项目大概 20% 的时候，为了填补剩下 80%，我们不得不从其他领域借用类比。
+But in the meantime, when we when we've only currently we've only kind of like, you know, 20% succeeded at that scientific project, like to fill in the other 80%, we sort of have to borrow analogies from other fields.
+
+628
+00:53:12,880 --> 00:53:15,820
+于是就有个问题：哪些类比最贴切。
+And, like, there's this question of which analogies are the most apt.
+
+629
+00:53:15,980 --> 00:53:18,340
+我们应该把模型想成计算机程序吗？
+Should we be thinking of the models like computer programs?
+
+630
+00:53:18,540 --> 00:53:20,900
+我们应该把它们想成小人吗？
+Should we be thinking of them like little people?
+
+631
+00:53:21,620 --> 00:53:26,500
+看起来有时候，在某些方面，把它们想成小人还挺有用的。
+And it seems to be like sometimes, like in some ways, thinking of them like little people is kind of useful.
+
+632
+00:53:26,740 --> 00:53:29,620
+比如，如果我对模型说一些刻薄的话，它会回嘴。
+It's, like, if I, like, say mean things to the model, it, like, talks back at me.
+
+633
+00:53:29,860 --> 00:53:31,100
+那就像人会做的那样。
+That's like a human would do.
+
+634
+00:53:31,220 --> 00:53:32,540
+但在某些方面，它确实像那样。
+But in some ways, it's like that.
+
+635
+00:53:32,540 --> 00:53:33,940
+显然不是正确的心智模型。
+Clearly not the right mental model.
+
+636
+00:53:33,980 --> 00:53:38,480
+所以我们就有点卡住了，需要弄清楚什么时候该借用哪种语言。
+And so we're just kind of stuck, you know, figuring out when, when we should be borrowing which language.
+
+637
+00:53:38,760 --> 00:53:41,920
+那么，这就引出了我本来想问的最后一个问题：接下来是什么？
+Well, that that leads on to the final question I was gonna ask, which is what's next?
+
+638
+00:53:42,240 --> 00:53:53,040
+接下来需要取得哪些科学进展、生物学进展，才能让我们更好地理解这些模型内部在发生什么，并且，呃，再次……
+What are you what, what are the next, uh, pieces of scientific progress, biological progress that need to be made for us to have a better understanding of what's happening inside these models and, uh, again.
+
+639
+00:53:53,120 --> 00:53:55,780
+朝着我们让它们更安全的使命。
+Towards our mission of making them safer.
+
+640
+00:53:56,620 --> 00:53:57,780
+还有很多工作要做。
+There's a lot of work to do.
+
+641
+00:53:59,100 --> 00:54:05,000
+我们上一篇论文有很大一部分在讨论我们目前研究方法的局限。
+Our, our, our, our last publication has some like enormous section on, on the limitations of the way we've been looking at this.
+
+642
+00:54:05,040 --> 00:54:07,120
+那也是一个让方法变得更好的路线图。
+That was also a roadmap to like making it better.
+
+643
+00:54:07,200 --> 00:54:16,760
+当我们寻找模式来分解模型内部发生了什么时，我们所能获得的可能只占实际发生情况的百分之几。
+You know, we when we when we are looking for patterns to like decompose what's happening inside the model, we're only getting sort of, you know, maybe a few percent of what's of what's going on.
+
+644
+00:54:17,480 --> 00:54:23,920
+它在如何移动信息方面，有很大一部分我们完全没有捕捉到。
+There's large parts of how it moves information around that like we, we explicitly like didn't capture at all.
+
+645
+00:54:24,540 --> 00:54:33,060
+嗯，我们正在从我们所用的那种较小的生产模型向上扩展——比如你们看的是 Claude。
+Um, they're scaling this up from, from the sort of small, you know, uh, production model we use to like, so you were looking at Claude.
+
+646
+00:54:33,300 --> 00:54:34,340
+Claude 3.5 Haiku。
+Claude 3.5 Haiku.
+
+647
+00:54:34,540 --> 00:54:34,900
+没错。
+That's right.
+
+648
+00:54:34,900 --> 00:54:37,100
+它其实是一个相当有能力的模型。
+Which is like, it's like a pretty capable model.
+
+649
+00:54:37,180 --> 00:54:41,260
+非常快，但远没有 Claude 4 那么复杂精密。
+Very fast, but it's like by no means as sophisticated as, as you know, the Claude 4.
+
+650
+00:54:41,380 --> 00:54:42,900
+对，Claude 4 整个系列模型。
+Yeah, suite, suite of models.
+
+651
+00:54:43,380 --> 00:54:51,340
+嗯，所以这些几乎算是技术层面的挑战，但我想 Emmanuel 和 Jack 可能对解决这些之后会遇到的科学挑战有一些看法。
+Um, so those are almost like sort of like technical challenges, but I think, I think Emmanuel and Jack might have some takes on the like, some of the, like, scientific challenges that come after solving those.
+
+652
+00:54:51,380 --> 00:54:51,620
+是的。
+Yeah.
+
+653
+00:54:52,030 --> 00:54:52,270
+是的。
+Yeah.
+
+654
+00:54:52,270 --> 00:55:02,510
+我想也许我会在这里说两件事。Josh 所说的一个后果是，在我们提出问题的所有次数中……
+I mean, I think maybe, maybe two things I'll say here, which is one consequence of what Josh said is that, you know, uh, out of the total number of times that we ask a question.
+
+655
+00:55:03,030 --> 00:55:04,710
+关于模型如何做某件事。
+Uh, about how the model does X.
+
+656
+00:55:04,950 --> 00:55:09,470
+目前我们能回答的可能只有大概 10% 到 20% 的情况。
+Right now we can answer probably a small, you know, 10 to 20% of the time.
+
+657
+00:55:09,510 --> 00:55:12,070
+经过一点调查后，我们可以告诉你：这就是正在发生的事。
+We can tell you after a little bit of investigation, this is what's happening.
+
+658
+00:55:12,500 --> 00:55:14,220
+显然，我们希望这个比例能高得多。
+Obviously, we'd like that to be a lot better.
+
+659
+00:55:14,220 --> 00:55:18,620
+而且有很多比较清晰的方法可以达到那个目标。
+And there's, there's a lot of kind of clearer ways to, to, to get there.
+
+660
+00:55:18,660 --> 00:55:20,620
+也有更审慎和更投机的方法。
+And, and less and more speculative ways as well.
+
+661
+00:55:21,020 --> 00:55:30,890
+呃，然后我觉得我们常常谈到的一件事是：模型做的很多事并不只是像“它接下来要怎么说”这么简单。
+Uh, and then I think a thing that we've talked a lot about is this sort of idea that a lot of what the model does isn't simply like, ah, how is it saying the next thing?
+
+662
+00:55:30,970 --> 00:55:32,210
+我们这里已经稍微谈过这一点。
+We talked about it a little bit here.
+
+663
+00:55:32,290 --> 00:55:35,930
+它有点像提前规划几件事，或者提前想好几个词。
+It's sort of like planning a few things again and a few words ahead.
+
+664
+00:55:36,010 --> 00:55:36,290
+抱歉。
+Sorry.
+
+665
+00:55:36,650 --> 00:55:45,730
+而且我认为我们想理解，在与模型进行长时间对话时，它对正在发生的事情的理解是如何变化的。
+And I think we want to understand sort of like over a long conversation with the model, sort of like, how is its understanding of what's happening changing?
+
+666
+00:55:45,810 --> 00:55:50,410
+比如，它对“自己在和谁对话”的理解如何变化，以及这又如何影响它的行为。
+You know, how is its understanding of who it's talking to changing and how does that affect its behavior?
+
+667
+00:55:51,370 --> 00:56:01,010
+越来越多地，像 Claude 这样的模型的实际使用场景是，它会读一堆你的文档、一堆你发的邮件或你的代码。
+More and more sort of the actual use case of models like Claude is, you know, it's going to read a bunch of your documents and a bunch of like email you sent or your code.
+
+668
+00:56:01,050 --> 00:56:02,690
+然后基于这些内容给出一个建议。
+And based on that, it's going to make one suggestion.
+
+669
+00:56:02,730 --> 00:56:06,770
+所以很明显，在它阅读所有这些内容的这个过程中，有一些非常重要的事情在发生。
+And so clearly, there's something really important happening in that space where it's reading all these things.
+
+670
+00:56:07,450 --> 00:56:11,170
+所以我认为，更好地理解这一点似乎是一个值得迎接的重大挑战。
+And so I think understanding that better seems like a great challenge to take on.
+
+671
+00:56:11,620 --> 00:56:11,900
+Jack。
+Jack.
+
+672
+00:56:12,260 --> 00:56:18,900
+是的，我想我们团队经常用这样一个类比：我们正在打造一台用来观察模型的显微镜。
+Yeah, I think we often use the analogy on the team that we're building a microscope to, like, look at the model.
+
+673
+00:56:19,060 --> 00:56:36,650
+而现在，我们处于一个既令人兴奋又有点令人沮丧的阶段：我们的显微镜大约只有 20% 的时候能正常工作，而且要通过它观察需要很多技巧，还需要，你知道，搭建一整套复杂的装置之类。
+And right now, we're in this exciting but also kind of frustrating space where our microscope works like 20 percent of the time and, like, looking through it, like, requires a lot of skill and, like, takes, you know, you have to, like, build this whole big contraption and everything.
+
+674
+00:56:36,770 --> 00:56:38,050
+基础设施总是出问题。
+Like, infrastructure is always breaking.
+
+675
+00:56:38,490 --> 00:56:46,770
+然后，一旦你得到了关于模型在做什么的解释，你还得把 Emmanuel 或我，或者团队里的某个人，关进一个房间里花上大约两个小时来……
+And then, like, once you've got your, like, explanation of what the model's doing, you have to, like, throw, like, Emmanuel or me or someone else on the team in a room for, like, two hours to, like.
+
+676
+00:56:46,810 --> 00:56:52,890
+琢磨清楚到底发生了什么。而我认为，我们可能在……你知道，一两年内到达的那个非常令人兴奋的未来。
+Puzzle out what exactly was going on and like the really exciting future that I think we could be at within, you know.
+
+677
+00:56:53,910 --> 00:57:01,720
+一两年，你知道，在那种时间尺度上，你与模型的每一次交互都可以被放到显微镜下。
+A year or two years, you know, that kind of time scale is, is one where, like, just every interaction you have with the model can be under the microscope.
+
+678
+00:57:01,840 --> 00:57:13,560
+就像我们可以，每当模型做了这些奇怪的事情，我们只希望按一下按钮，对，你正在和它对话，你按个按钮就能得到一张流程图，告诉你它刚才在想什么。
+Like we can just, anytime there's all these weird things the models are doing and we just want it to be like push of a button like, yeah, you're having your conversation, you push a button you get this flowchart that tells you like what it was thinking about.
+
+679
+00:57:14,000 --> 00:57:27,140
+一旦到了那个阶段，我想我们在 Anthropic 的可解释性团队会开始呈现出一些不同的形态，不再是一支主要由工程师组成的团队。
+And once we're at that point, it'll be this like I think our, the interpretability team at Anthropic, I think will start to kind of take on a bit of a different shape and that instead of this like team of kind of like engineers.
+
+680
+00:57:27,660 --> 00:57:32,300
+科学家们思考语言模型内部如何工作的那种数学机制。
+Scientists thinking about the, like, math of how, like, language models work on the inside.
+
+681
+00:57:32,780 --> 00:57:44,060
+我们会拥有一支像生物学家一样的大军，他们只是透过显微镜观察；我们与 Claude 对话，让它做出各种奇怪的事情，然后让一些人透过显微镜观察它内部在想什么。
+We're gonna have this, like, army of biologists that are just looking through the microscope, that we're just, we're talking to Claude, we're getting it to do weird things and then we're just, like, we got people looking through the microscope seeing, like, what it was thinking on the inside.
+
+682
+00:57:44,060 --> 00:57:46,550
+我认为这大概就是这项工作的未来。
+I think that's kind of the future of, of, of this work.
+
+683
+00:57:46,790 --> 00:57:47,070
+好。
+Nice.
+
+684
+00:57:47,230 --> 00:57:48,790
+也许对此补充两点。
+Maybe two, two notes on that.
+
+685
+00:57:48,790 --> 00:57:53,390
+一是，我们希望 Claude 帮我们完成所有这些，因为这涉及很多环节。
+One is like, we want Claude to help us do all of that because, like, there's a lot of parts involved.
+
+686
+00:57:53,510 --> 00:57:57,830
+而且你知道，擅长同时查看数百个东西、弄清楚发生了什么的是 Claude。
+And, you know, who's, like, good at, like, looking at, like, hundreds of things and figuring out what's going on is, like, Claude.
+
+687
+00:57:57,990 --> 00:58:00,590
+所以我们正尝试在这方面争取一些帮助。
+And so I think we're trying to enlist some help there.
+
+688
+00:58:00,590 --> 00:58:02,950
+嗯，尤其是在这些复杂语境下。
+Um, especially for these complicated contexts.
+
+689
+00:58:03,310 --> 00:58:08,950
+也许另一点是，我们已经谈了很多关于研究模型在完全成型后的情况。
+And maybe the, the other place is like, we've talked a lot about studying the model like once it's fully formed.
+
+690
+00:58:09,030 --> 00:58:11,070
+但当然，我们所在的公司就是制造这些模型的。
+But of course, like we're at a company that makes these.
+
+691
+00:58:11,600 --> 00:58:19,480
+所以当我们说，好，这是模型如何解决这个特定问题或说出这句话的，它在训练过程中是从哪里来的？
+And so when it says, okay, here's how the model, like, solved this particular problem or said this thing, where did that come from kind of in the training process?
+
+692
+00:58:19,720 --> 00:58:29,880
+是哪些步骤促使那种计算回路形成并做到这些？以及我们如何能给公司里其他正在做这些工作的人提供反馈，去塑造我们真正……
+What are the steps that sort of like made that circuitry sort of form to do that and how could we give feedback to the rest of the company that is like doing all of that work to shape the thing that we like actually?
+
+693
+00:58:30,840 --> 00:58:31,560
+希望它成为的样子。
+Want it to become.
+
+694
+00:58:32,000 --> 00:58:33,840
+好的，非常感谢这次对话。
+Well, thank you so much for the conversation.
+
+695
+00:58:34,200 --> 00:58:36,440
+大家可以在哪里了解更多关于这项研究的信息？
+Where can people find out more about this research?
+
+696
+00:58:37,040 --> 00:58:43,720
+如果想了解更多，你可以访问 Anthropic.com/research，上面有我们的论文、博客文章和相关有趣视频。
+So if you want to find out more, you can go to Anthropic.com/research, which has our papers and blog posts and fun videos about it.
+
+697
+00:58:44,160 --> 00:58:49,760
+另外，我们最近与一个叫 Neuronpedia 的团队合作，托管了我们制作的一些回路图。
+Also, we recently partnered with another group called Neuronpedia to host some of these like circuit graphs we make.
+
+698
+00:58:49,800 --> 00:58:57,760
+如果你想亲自尝试看看一个小模型内部发生了什么，可以去 Neuronpedia 自己体验。非常感谢。
+So if you want to try your hand at looking at what's going on inside of a small model, you can go to Neuronpedia and see for yourself. Thank you very much.

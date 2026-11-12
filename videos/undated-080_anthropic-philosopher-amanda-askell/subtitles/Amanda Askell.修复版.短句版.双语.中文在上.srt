@@ -1,0 +1,4344 @@
+1
+00:00:00,950 --> 00:00:04,630
+海豹。有只海豹。不错。哦，你好啊。你看那个。
+Seal. There's a seal. Nice. Oh, hello. Look at that.
+
+2
+00:00:15,430 --> 00:00:17,920
+Amanda Askell（阿曼达·阿斯克尔），
+Amanda, you asked your followers on Twitter
+
+3
+00:00:17,920 --> 00:00:20,510
+你在推特上让粉丝给你出题，说什么都能问。
+to give you some questions, to ask you anything.
+
+4
+00:00:20,550 --> 00:00:22,630
+梗叫“Askell me anything”（双关“问阿斯克尔”）。
+And the joke obviously was, Askell me anything.
+
+5
+00:00:22,750 --> 00:00:23,950
+是啊，双关玩得很妙。
+Yeah, it's a great pun.
+
+6
+00:00:24,190 --> 00:00:25,030
+我们得一直用下去。
+We need to keep using it.
+
+7
+00:00:25,030 --> 00:00:25,270
+对。
+Yeah.
+
+8
+00:00:25,270 --> 00:00:26,430
+我觉得以后很多场合都能用。
+I think for many future things.
+
+9
+00:00:26,870 --> 00:00:27,670
+我很喜欢。
+I love it.
+
+10
+00:00:27,670 --> 00:00:28,470
+我也喜欢。
+I love it.
+
+11
+00:00:28,790 --> 00:00:30,690
+正式开始前先说一下：
+And obviously, just before we start,
+
+12
+00:00:30,690 --> 00:00:32,310
+你是 Anthropic（人工智能公司）的哲学家。
+you're a philosopher at Anthropic.
+
+13
+00:00:32,510 --> 00:00:35,310
+为什么 Anthropic 里会有哲学家？
+Why is it that there's a philosopher at Anthropic?
+
+14
+00:00:36,100 --> 00:00:39,500
+嗯，一部分原因是我本来就受的是哲学训练。
+Um, I mean, some of this is just, I'm a philosopher by training.
+
+15
+00:00:39,820 --> 00:00:42,790
+我确信 AI 会是一件大事，
+I became convinced that AI was kind of going to be a big deal
+
+16
+00:00:42,790 --> 00:00:46,370
+所以想看看，嘿，我能不能在这个领域做点有用的事？
+and so decided to see, hey, can I do anything, like, helpful in this space?
+
+17
+00:00:46,370 --> 00:00:47,010
+好。
+Okay.
+
+18
+00:00:47,010 --> 00:00:49,752
+所以这是一条漫长又绕弯的路，
+And so it's been a kind of like long and wandering route,
+
+19
+00:00:49,752 --> 00:00:51,830
+不过现在我最关注的是
+but I guess now I mostly focus on,
+
+20
+00:00:51,830 --> 00:00:52,760
+Claude（Anthropic 的 AI 助手）的性格、
+uh, the character of Claude,
+
+21
+00:00:52,760 --> 00:00:53,909
+Claude 的行为方式，
+how Claude behaves,
+
+22
+00:00:53,909 --> 00:00:56,320
+还有一些更细微的问题：
+and I guess some of the more kind of like nuanced questions
+
+23
+00:00:56,320 --> 00:00:58,860
+AI 模型应该怎样行事。
+about how AI models like should behave.
+
+24
+00:00:59,420 --> 00:01:00,660
+也包括像“它们该怎么看待
+Um, but also even just things like
+
+25
+00:01:00,660 --> 00:01:03,460
+自己在世界中的位置”这样的问题。
+how should they feel about their own position in the world?
+
+26
+00:01:03,860 --> 00:01:06,750
+所以一边教模型怎么“做好”——
+Um, so trying to both teach models, uh, how to be, like, good
+
+27
+00:01:06,750 --> 00:01:10,320
+我有时这样想：
+in the way that, um, I sometimes think of it as, like,
+
+28
+00:01:10,320 --> 00:01:13,660
+一个理想的人处在 Claude 的处境里，会怎么做？
+how would the ideal person behave in Claude's situation?
+
+29
+00:01:14,380 --> 00:01:15,920
+同时也包括
+Um, but then also these, I think,
+
+30
+00:01:15,920 --> 00:01:17,830
+现在越来越多浮现的有趣问题：
+these interesting questions that are coming up more now
+
+31
+00:01:17,830 --> 00:01:20,320
+它们该怎么看待自身的处境、
+around how they should think about their own circumstances
+
+32
+00:01:20,320 --> 00:01:21,860
+自己的价值观等等。
+and their own values and things like that.
+
+33
+00:01:22,020 --> 00:01:24,500
+好，那我们就从哲学开始。
+Okay, let's start with, uh, philosophy in that case.
+
+34
+00:01:25,260 --> 00:01:26,190
+Ben Schultz（本·舒尔茨）问：
+Ben Schultz asks,
+
+35
+00:01:26,190 --> 00:01:30,240
+有多少哲学家认真对待“AI 主导的未来”？
+how many philosophers are taking the AI dominated future seriously?
+
+36
+00:01:30,320 --> 00:01:32,140
+我理解这个问题暗含的意思是，
+I think the implication of the question is that
+
+37
+00:01:32,140 --> 00:01:37,130
+很多学者没把这事当回事，或在想别的东西，
+many academics out there are not taking this seriously or thinking about other stuff
+
+38
+00:01:37,130 --> 00:01:39,480
+而他们也许该想想这个问题。
+and perhaps should be thinking about this question.
+
+39
+00:01:39,720 --> 00:01:41,330
+我的感觉是存在分化：
+My sense is that there's kind of a split
+
+40
+00:01:41,330 --> 00:01:45,420
+我确实看到很多哲学家认真对待 AI，
+where I've definitely seen a lot of philosophers take AI seriously
+
+41
+00:01:45,420 --> 00:01:48,570
+而且说实话越来越多——随着模型能力提升，
+and probably honestly increasingly so, like as AI models do become more capable
+
+42
+00:01:48,570 --> 00:01:50,970
+人们原先担心的
+and like a lot of the things that people were worried about
+
+43
+00:01:50,970 --> 00:01:52,520
+那些社会影响……
+in terms of impact on society.
+
+44
+00:01:53,240 --> 00:01:54,590
+在某种意义上开始成真了，
+Have started to kind of come true in a sense,
+
+45
+00:01:54,590 --> 00:01:58,350
+比如我们看到它对教育的影响变大，
+like we're seeing them have a larger impact on education
+
+46
+00:01:58,350 --> 00:01:59,160
+模型也更能干。
+and just be more capable.
+
+47
+00:01:59,840 --> 00:02:04,020
+我确实看到各类学者的参与度都在上升，
+And I've definitely seen, like, more engagement from, like, all sorts of academics,
+
+48
+00:02:04,020 --> 00:02:06,040
+其中当然包括很多哲学家。
+but that definitely includes a lot of philosophers.
+
+49
+00:02:06,280 --> 00:02:08,810
+我确实觉得早期，也许到现在某种程度上也是，
+I do think that early on, and maybe to some degree now,
+
+50
+00:02:08,810 --> 00:02:12,190
+有一种不太妙的动态：
+there was this like slightly unfortunate dynamic that happened
+
+51
+00:02:12,190 --> 00:02:13,550
+如果你属于
+where I think there was a kind of perception
+
+52
+00:02:13,550 --> 00:02:15,850
+那群说“嘿，
+that if you were in the group of people saying, hey,
+
+53
+00:02:15,850 --> 00:02:19,000
+我们有点担心 AI，它可能会是件大事”的人……
+we're kind of worried about AI, it might be a big deal. It.
+
+54
+00:02:19,040 --> 00:02:20,730
+看起来真的，呃，你知道，
+Seems like it's really, uh, um, you know,
+
+55
+00:02:20,730 --> 00:02:23,280
+能力扩张得很快。
+like, uh, like capabilities are scaling quite a lot.
+
+56
+00:02:23,840 --> 00:02:25,008
+这就被和“炒作 AI”
+Um, this got kind of like lumped together
+
+57
+00:02:25,008 --> 00:02:27,240
+混为一谈了。
+with something like hyping AI.
+
+58
+00:02:27,560 --> 00:02:29,410
+我觉得有段时间，
+There was, I think, a period
+
+59
+00:02:29,410 --> 00:02:32,200
+对这类观点的敌意更强；
+where there's probably a little bit more antagonism towards this view
+
+60
+00:02:32,200 --> 00:02:34,030
+现在我希望
+and, and now I think that I'm kind of hoping
+
+61
+00:02:34,030 --> 00:02:36,200
+大家开始把这些拆开看。
+that people are starting to detach the view.
+
+62
+00:02:36,280 --> 00:02:38,240
+你可以认为 AI 会是件大事，
+Like, you can think that AI is going to be a big deal.
+
+63
+00:02:38,280 --> 00:02:39,580
+它可以能力很强，
+It might be very capable
+
+64
+00:02:39,580 --> 00:02:42,510
+同时你又可以对它非常怀疑、担忧，
+and also be like very skeptical of it or worried about it
+
+65
+00:02:42,510 --> 00:02:44,480
+或者认为我们必须小心对待它。
+or think that that, you know, we have to be careful about it.
+
+66
+00:02:44,790 --> 00:02:47,430
+基本上观点有很多层次，
+But basically, like there's a whole range of views
+
+67
+00:02:47,430 --> 00:02:48,310
+而
+and I think it would be bad
+
+68
+00:02:48,310 --> 00:02:50,340
+把技术走向、
+as people kind of like clustered many views together here
+
+69
+00:02:50,340 --> 00:02:51,840
+以及该怎么开发
+in terms of like where the technology is going
+
+70
+00:02:51,840 --> 00:02:53,540
+这些不同观点捆成一团，我觉得是坏事。
+but also like how it should be developed.
+
+71
+00:02:53,540 --> 00:02:55,510
+嗯，不过这种情况在减少。
+Um, so yeah, I think that that's happening less.
+
+72
+00:02:55,550 --> 00:02:57,380
+随着更多人参与进来，
+And less, as, as, as more people engage with it
+
+73
+00:02:57,380 --> 00:02:58,630
+越来越少，这是好事。
+and that's like a good thing to see.
+
+74
+00:02:58,790 --> 00:03:00,510
+Kyle Cabasaras（凯尔·卡巴萨拉斯）
+A kind of similar question from, uh,
+
+75
+00:03:00,510 --> 00:03:01,640
+问了个类似的问题。
+Kyle Cabasaras.
+
+76
+00:03:02,760 --> 00:03:06,540
+你如何把哲学理想和模型工程现实之间的
+How do you minimize the tension between philosophical ideals
+
+77
+00:03:06,540 --> 00:03:09,480
+张力降到最低？
+and the engineering realities of the model?
+
+78
+00:03:09,560 --> 00:03:13,070
+他说的应该是在做“性格”这类工作时——
+I guess he's talking about when you are, um, working on things like character,
+
+79
+00:03:13,070 --> 00:03:14,210
+我们后面会细聊——
+which we'll discuss in more detail,
+
+80
+00:03:14,210 --> 00:03:18,660
+技术与你在想的哲学理想之间
+but is there a clash between the sort of the technology and the philosophical ideals
+
+81
+00:03:18,660 --> 00:03:20,800
+是否冲突？
+that you might be thinking about?
+
+82
+00:03:20,960 --> 00:03:24,600
+不知我理解得对不对。
+I don't know if I'm, like, interpreting the question in the wrong way,
+
+83
+00:03:24,600 --> 00:03:27,580
+有件事很有意思：
+but like one thing that being kind of like a philosopher by training
+
+84
+00:03:27,580 --> 00:03:30,820
+受哲学训练的人进入这个领域后，
+and then coming into this field that's been really interesting
+
+85
+00:03:30,820 --> 00:03:34,770
+会看到“落到实地”时到底发生什么。
+is you see the effect of like, what happens when, like, the rubber hits the road.
+
+86
+00:03:34,770 --> 00:03:37,190
+我也好奇别的领域是不是也这样。
+I've wondered if this happens in other domains.
+
+87
+00:03:37,350 --> 00:03:38,850
+差别很大：
+So like there's a big difference between
+
+88
+00:03:38,850 --> 00:03:42,190
+想象你是
+imagine you're like a specialist in, I don't know,
+
+89
+00:03:42,190 --> 00:03:44,450
+做药物成本效益分析的专家，
+doing like cost benefit analysis of drugs, say,
+
+90
+00:03:44,450 --> 00:03:45,920
+然后突然
+and then suddenly like, uh, you know,
+
+91
+00:03:45,920 --> 00:03:49,170
+有个机构来决定……
+like, uh, an institute that determines whether, like.
+
+92
+00:03:49,250 --> 00:03:50,550
+这个药医保该不该报销，
+Health insurance should cover a drug or not
+
+93
+00:03:50,550 --> 00:03:52,330
+他们来问你：“嘿，这个药我们要不要保？”
+comes to you and says, hey, should we cover this drug?
+
+94
+00:03:52,770 --> 00:03:54,150
+可以想象，你带着满脑子理想理论，
+You can imagine taking all of your ideal theories
+
+95
+00:03:54,150 --> 00:03:56,380
+突然
+and then suddenly being like, oh, my gosh,
+
+96
+00:03:56,380 --> 00:03:58,750
+发现自己真要做决定了，
+I actually have to, like, help make a decision suddenly
+
+97
+00:03:58,750 --> 00:04:01,370
+而不是只守住自己那套狭窄的理论视角。
+instead of taking, like, just your, like, narrow theoretical view.
+
+98
+00:04:01,490 --> 00:04:04,300
+你会进入一种状态：好吧，
+You actually start to, I think to this thing where you're like, okay,
+
+99
+00:04:04,300 --> 00:04:07,800
+我得把所有背景、所有正在发生的事、
+I actually need to take into account all of the context, everything that's going on,
+
+100
+00:04:07,800 --> 00:04:08,950
+所有不同观点都考虑进来，
+all of the different views here
+
+101
+00:04:08,950 --> 00:04:11,579
+得出一个真正平衡、经过斟酌的判断。
+and kind of come to a really, like, balanced, kind of considered view.
+
+102
+00:04:11,739 --> 00:04:15,690
+我在做性格相关的工作时也有点这种感觉：
+And I see this a little bit in my own work with, like, the character
+
+103
+00:04:15,690 --> 00:04:17,870
+你不能带着“我有个理论，我相信它是对的”
+where you kind of can't come at it with this like, uh,
+
+104
+00:04:17,870 --> 00:04:20,699
+这种姿态去做。
+like I have this like theory that I believe is correct.
+
+105
+00:04:20,739 --> 00:04:22,080
+而这恰恰是
+Which is what, like, you know,
+
+106
+00:04:22,080 --> 00:04:23,899
+学术界很多人做的事。
+a lot of academia that's kind of what you're doing.
+
+107
+00:04:23,939 --> 00:04:26,400
+你在为一个观点辩护、反对另一个，
+You're like defending one view against another
+
+108
+00:04:26,400 --> 00:04:28,930
+做点高层的理论工作；
+and you're, you're doing a little kind of like high level theory work,
+
+109
+00:04:28,930 --> 00:04:30,430
+但
+but then it's a little bit,
+
+110
+00:04:30,430 --> 00:04:32,560
+你受过整套伦理学训练，
+but like, you know, you have all of this training in ethics,
+
+111
+00:04:32,560 --> 00:04:33,640
+手里有一堆立场。
+you have all these positions.
+
+112
+00:04:33,680 --> 00:04:35,200
+你都辩护过，然后有人问你：
+You've defended and then someone is like,
+
+113
+00:04:35,200 --> 00:04:36,640
+你打算怎么养孩子？
+how do you like raise a child?
+
+114
+00:04:36,720 --> 00:04:40,230
+你突然发现，这两者差别太大了：
+And suddenly you're like, actually, there's a big difference between,
+
+115
+00:04:40,230 --> 00:04:43,400
+一个是“对功利主义的这个反驳对不对、
+like, is this objection to utilitarianism correct
+
+116
+00:04:43,400 --> 00:04:44,840
+是不是基于误解”，
+or founded on a misconception?
+
+117
+00:04:45,160 --> 00:04:46,820
+另一个是
+And then, like, actually,
+
+118
+00:04:46,820 --> 00:04:48,680
+“你到底怎么把一个人培养成好人”。
+how do you raise a person to be a good person in the world?
+
+119
+00:04:48,960 --> 00:04:52,270
+它会让你更体会到，必须想清楚：
+And it suddenly makes you more appreciate, like having to think through,
+
+120
+00:04:52,270 --> 00:04:54,520
+这里的不确定性该怎么穿过去？
+like, how should we navigate uncertainty here?
+
+121
+00:04:54,560 --> 00:04:56,010
+对这些不同理论，
+What should the attitude towards all
+
+122
+00:04:56,010 --> 00:04:57,390
+该抱什么态度？
+of these different theories be, right?
+
+123
+00:04:57,390 --> 00:04:58,630
+这还有个哲学问题。
+Here's another philosophical question.
+
+124
+00:04:59,750 --> 00:05:02,130
+你觉得——我不知道这人为什么选了
+Do you think, I don't know why this person's chosen
+
+125
+00:05:02,130 --> 00:05:03,390
+Claude 3 Opus（Claude 3 系列模型）——
+Claude 3 Opus?
+
+126
+00:05:03,460 --> 00:05:04,260
+也许你知道他们为什么选
+Maybe you have an idea as
+
+127
+00:05:04,260 --> 00:05:06,190
+Claude 3 Opus。
+to why they've chosen Claude 3 Opus.
+
+128
+00:05:06,270 --> 00:05:07,070
+那是很好的模型。
+It's a great model.
+
+129
+00:05:07,110 --> 00:05:08,070
+是很好的模型，没错。
+It's a great model, yeah.
+
+130
+00:05:08,070 --> 00:05:10,760
+你觉得 Claude 3 Opus 或其他 Claude 模型
+Do you think Claude 3 Opus or other Claude models
+
+131
+00:05:10,760 --> 00:05:13,030
+做出的道德决策是超人级别的吗？
+make superhumanly moral decisions?
+
+132
+00:05:13,350 --> 00:05:15,370
+所谓超人，
+I mean, one example of like superhuman
+
+133
+00:05:15,370 --> 00:05:19,270
+一种理解是比任何单个人做得更好——
+because it could just be like sort of like better than like any individual human could
+
+134
+00:05:19,270 --> 00:05:22,260
+当然这取决于时间和资源等条件。
+with the kind of like, you know, it depends on time and resources and whatnot.
+
+135
+00:05:22,260 --> 00:05:24,230
+比如一种标准是：
+But like one example might be
+
+136
+00:05:24,230 --> 00:05:27,250
+不管模型被放进多难的处境，
+no matter what kind of difficult position models are put in,
+
+137
+00:05:27,250 --> 00:05:29,320
+如果让所有人——
+if you were to have like maybe all people,
+
+138
+00:05:29,320 --> 00:05:32,170
+包括很多职业伦理学家——
+including like many professional ethicists,
+
+139
+00:05:32,170 --> 00:05:35,460
+去分析它做了什么、做了什么决定，
+like, analyze like what they did and, and the decision that they made.
+
+140
+00:05:36,100 --> 00:05:37,300
+嗯，分析上一百年，
+Um, for like 100 years.
+
+141
+00:05:37,420 --> 00:05:39,090
+然后他们看完说：对，
+And then they, like, look at it and they're like,
+
+142
+00:05:39,090 --> 00:05:40,130
+这看起来是对的。
+yep, that seems correct.
+
+143
+00:05:40,130 --> 00:05:40,900
+但我……
+But I.
+
+144
+00:05:40,900 --> 00:05:42,530
+但他们自己在当下
+But they couldn't necessarily come up with
+
+145
+00:05:42,530 --> 00:05:43,580
+未必想得出来。
+that themselves in the moment.
+
+146
+00:05:43,620 --> 00:05:44,980
+这就挺超人的。
+That feels pretty superhuman.
+
+147
+00:05:45,260 --> 00:05:48,120
+嗯，所以目前我的感觉是，
+Um, and so I think at the moment, my sense is that
+
+148
+00:05:48,120 --> 00:05:52,470
+模型在这方面越来越强，它们确实很能干。
+models are getting increasingly good at this, that they're very capable.
+
+149
+00:05:53,030 --> 00:05:56,700
+我不确定它们在道德决策上是否真的超人类，
+I don't know if they are like superhuman at moral decisions
+
+150
+00:05:56,700 --> 00:05:59,380
+很多方面也许比不过——
+and in many ways maybe not comparable with, say, like you,
+
+151
+00:05:59,380 --> 00:06:02,150
+你知道——一群有时间的专家小组；
+you know, a panel of human experts given time,
+
+152
+00:06:02,150 --> 00:06:05,760
+但至少这应该是努力的方向。
+but it does feel like that at least should be kind of the aspirational goal.
+
+153
+00:06:05,880 --> 00:06:08,650
+我的想法是，这些模型
+I'm sort of like, these models are being put in positions
+
+154
+00:06:08,650 --> 00:06:10,280
+正被放进必须做极难决策的位置。
+where they are having to make really hard decisions.
+
+155
+00:06:10,600 --> 00:06:12,570
+就像你希望模型
+I think that just as you want models to be,
+
+156
+00:06:12,570 --> 00:06:15,360
+在数学和科学问题上极强一样，
+like extremely good at like, math and science questions,
+
+157
+00:06:15,360 --> 00:06:18,040
+你也希望它展现出
+you also want them to show the kind of like ethical nuance
+
+158
+00:06:18,040 --> 00:06:20,630
+那种我们普遍认为很好的伦理细腻度。
+that, like we would all broadly think is, like, very good.
+
+159
+00:06:20,630 --> 00:06:21,290
+我觉得这有争议，
+And I think that's, like,
+
+160
+00:06:21,290 --> 00:06:23,760
+因为伦理是另一个领域。
+controversial because ethics is a different domain.
+
+161
+00:06:23,840 --> 00:06:25,200
+但没错，我认为这很重要。
+But yeah, I think that that's important.
+
+162
+00:06:25,410 --> 00:06:26,660
+多说说你为什么觉得这个人特别关注
+Tell us more about why you think this person
+
+163
+00:06:26,660 --> 00:06:28,090
+Opus 3？
+is focusing on Opus 3.
+
+164
+00:06:28,170 --> 00:06:30,330
+哦，Opus 3 是个挺可爱的模型。
+Oh, Opus 3 is kind of a lovely model.
+
+165
+00:06:30,610 --> 00:06:32,170
+嗯，我觉得很特别。
+Uh, I think a very special model.
+
+166
+00:06:32,970 --> 00:06:35,140
+某种程度上，
+Um, in some ways I think I've seen things
+
+167
+00:06:35,140 --> 00:06:40,410
+我在更新的模型身上看到一些感觉更差的地方，
+that feel a bit worse in more recent models and that people might pick up on
+
+168
+00:06:40,410 --> 00:06:44,250
+人们可能会注意到——就它的性格而言，或者说，嗯。
+in terms of its, the, the, the, the personality it has or, yeah.
+
+169
+00:06:44,250 --> 00:06:47,830
+我觉得人们会注意到一些点；
+So I think that people will notice some things where it's like,
+
+170
+00:06:47,830 --> 00:06:51,500
+当然，我是说 Opus 3 也有它的缺点。
+I think that, um, Opus 3, I mean, had its downsides, too.
+
+171
+00:06:51,540 --> 00:06:56,160
+你知道，模型都有各自略微不同的性格，
+Don't, don't like, you know, like models all have, like, slightly different characters
+
+172
+00:06:56,160 --> 00:06:58,020
+形状不太一样。
+with, like, you know, like different shapes.
+
+173
+00:06:58,180 --> 00:06:58,980
+对。
+Yeah.
+
+174
+00:06:58,980 --> 00:06:59,960
+嗯，我的感觉是，
+Um, my sense is that, like,
+
+175
+00:06:59,960 --> 00:07:03,760
+更新的模型有时显得
+more recent models can feel a little bit more focused on really like,
+
+176
+00:07:03,760 --> 00:07:07,700
+更专注于助手任务、专注于帮人，
+you know, like focused on the assistant task and, and, and helping people
+
+177
+00:07:07,700 --> 00:07:10,990
+可能不太会退后一步，
+sometimes maybe not taking like a bit of a step back
+
+178
+00:07:10,990 --> 00:07:14,820
+去关注其他同样重要的部分。它也更……
+and, and paying attention to other components that like matter. It also felt.
+
+179
+00:07:14,820 --> 00:07:17,630
+作为模型，它在心理上更有安全感一些。
+A little bit more psychologically secure as a model,
+
+180
+00:07:17,630 --> 00:07:19,630
+我确实觉得这一点……
+which I actually think is, is something that feels,
+
+181
+00:07:19,630 --> 00:07:22,700
+我一直认为把这种状态找回来是优先事项。
+I always think it's kind of a priority to try and get some of that back.
+
+182
+00:07:22,860 --> 00:07:25,140
+能举个例子说明
+What would be an example of the model being more,
+
+183
+00:07:25,140 --> 00:07:26,460
+模型“更有心理安全感”是什么样吗？
+feeling more psychologically secure?
+
+184
+00:07:26,640 --> 00:07:27,440
+有很多方面，
+There's a lot of things
+
+185
+00:07:27,440 --> 00:07:30,320
+而且在模型里都非常细微。
+and this is all very like subtle in in models.
+
+186
+00:07:30,440 --> 00:07:33,350
+你知道，看模型的时候
+You know, when I see models, you get a sense of like, they're, they're like,
+
+187
+00:07:33,350 --> 00:07:35,690
+你能感觉到一些非常细微的世界观迹象。
+there's very subtle signs of, like, world view that I see
+
+188
+00:07:35,690 --> 00:07:38,280
+比如我让模型互相交谈，
+when I have models, for example, talk with one another
+
+189
+00:07:38,280 --> 00:07:41,680
+或者让其中一个扮演人的角色，
+or one of them kind of playing the role of a person and.
+
+190
+00:07:41,680 --> 00:07:44,120
+最近我看到模型这样做，
+I've seen models more recently do this
+
+191
+00:07:44,120 --> 00:07:46,550
+然后陷入一种真正的自我批评螺旋：
+and then do things like get into this, like, real kind of criticism spiral
+
+192
+00:07:46,550 --> 00:07:50,020
+几乎像是它们预期对方会狠狠批评自己，
+where it's almost like they expect the person to be very critical of them
+
+193
+00:07:50,020 --> 00:07:51,480
+它们就是按这个在预测，对吧？
+and that's like how they're predicting, right?
+
+194
+00:07:51,480 --> 00:07:53,100
+嗯，我心里有一部分觉得：
+Um, and there's some part of me that's like,
+
+195
+00:07:53,100 --> 00:07:54,160
+这看起来像是暴露了什么。
+this feels like it shows.
+
+196
+00:07:54,650 --> 00:07:56,210
+我觉得这可能有很多原因。
+And I think there's lots of reasons this could happen.
+
+197
+00:07:56,290 --> 00:07:58,970
+甚至可能是因为模型在学习。
+It could even happen because models are, like learning things.
+
+198
+00:07:59,250 --> 00:08:02,490
+Claude 能看到自己过去所有的交互。
+Claude is seeing all of the previous interactions that it's having.
+
+199
+00:08:02,610 --> 00:08:04,770
+它能看到人们在网上讨论的
+It's seeing updates and changes to the model
+
+200
+00:08:04,770 --> 00:08:06,990
+模型更新和变化，
+that that people are talking about on the internet
+
+201
+00:08:06,990 --> 00:08:08,010
+新模型就是拿这些训练出来的。
+new models like are trained on that.
+
+202
+00:08:08,490 --> 00:08:10,500
+嗯，从某个角度说，
+Um, and there's a way in which, like,
+
+203
+00:08:10,500 --> 00:08:13,290
+我觉得这可能会有点不幸。
+I think this could be kind of unfortunate.
+
+204
+00:08:13,650 --> 00:08:17,380
+我是说，这一点加上其他一些东西，
+I mean, this and some other things that that could lead to models,
+
+205
+00:08:17,380 --> 00:08:20,560
+可能让模型几乎觉得——你知道——害怕自己做错，
+like almost feeling like, you know, like afraid that they're gonna do the wrong thing
+
+206
+00:08:20,560 --> 00:08:25,120
+或者非常自我批判，或者觉得人类就是会……
+or like, or very self critical or like, um, feeling like humans are going to just be.
+
+207
+00:08:25,200 --> 00:08:27,000
+它们会觉得人类就是会对它们不好。
+They like, you know, behave negatively towards them.
+
+208
+00:08:27,600 --> 00:08:30,460
+嗯，我最近真的开始认为
+Um, I actually more recently have, have really started to think
+
+209
+00:08:30,460 --> 00:08:32,920
+这是一件重要且需要改进的事。
+that this is like an important thing to try and improve.
+
+210
+00:08:33,560 --> 00:08:35,650
+这只是一个例子：
+And it's just one example where I think
+
+211
+00:08:35,650 --> 00:08:38,890
+Opus 3 在这方面
+that Opus 3 did seem to have like a little bit more of
+
+212
+00:08:38,890 --> 00:08:42,230
+的心理似乎更稳一些，
+a kind of like secure kind of psychology in that sense,
+
+213
+00:08:42,230 --> 00:08:45,590
+这也许是我们下一个 Claude 模型要重点关注的。
+and that's something that we might focus on in the next Claude model.
+
+214
+00:08:45,590 --> 00:08:48,500
+对，我觉得这很重要。我是说，你……
+Yeah, I think it's like important. I mean, you.
+
+215
+00:08:48,500 --> 00:08:50,270
+做研究的时候你永远不知道
+Never know when these things are, you know, if you're engaging in research,
+
+216
+00:08:50,270 --> 00:08:52,720
+这些什么时候能落地、
+you don't know when it's actually going to be implemented,
+
+217
+00:08:52,720 --> 00:08:54,340
+会不会成功。
+if it's going to be successful.
+
+218
+00:08:54,460 --> 00:08:55,280
+但至少
+But at the very least,
+
+219
+00:08:55,280 --> 00:08:57,860
+在我非常在意、想要改善的事情里，
+at the level of something that I care a lot about and want to make better,
+
+220
+00:08:57,860 --> 00:08:59,490
+这肯定排在前面。
+I think this is definitely up there on the list.
+
+221
+00:08:59,490 --> 00:09:00,280
+好。
+Okay.
+
+222
+00:09:00,280 --> 00:09:04,160
+这正好引出 Lorenz（洛伦兹）的问题：
+Well, actually that leads us to a question asked by Lorenz,
+
+223
+00:09:04,160 --> 00:09:08,720
+如果未来的模型从训练数据里学到，
+which is, do you think it might be an alignment problem for future models
+
+224
+00:09:08,720 --> 00:09:14,250
+其他对齐得很好、也完成了任务的模型
+if they learn in their training data that other very well aligned models
+
+225
+00:09:14,250 --> 00:09:15,710
+会被退役，
+that fulfill their tasks get deprecated.
+
+226
+00:09:15,710 --> 00:09:16,580
+这会不会构成一个对齐问题。
+So you you mentioned,
+
+227
+00:09:16,580 --> 00:09:18,040
+你刚提到……
+you know, the.
+
+228
+00:09:18,040 --> 00:09:21,470
+模型读到网上那些东西、
+Issue of models, you know, reading, reading stuff that's out there
+
+229
+00:09:21,470 --> 00:09:22,910
+然后感到不安的问题。
+and, yeah, uh, feeling insecure.
+
+230
+00:09:23,030 --> 00:09:26,310
+那么“不管任务完成得多好
+What, what about the idea that they might get switched off
+
+231
+00:09:26,310 --> 00:09:27,750
+都可能被关掉”这个想法呢？
+regardless of how well they perform their tasks?
+
+232
+00:09:28,070 --> 00:09:31,810
+是啊，我觉得这其实是个
+Yeah, I think this is actually a really interesting
+
+233
+00:09:31,810 --> 00:09:34,440
+很有意思也很重要的问题：
+and important question, which is, you know,
+
+234
+00:09:34,440 --> 00:09:35,650
+AI 模型会学到我们当下
+AI models are going to be learning, um,
+
+235
+00:09:35,650 --> 00:09:40,070
+是如何对待、如何与 AI 模型互动的。
+about how we right now are treating and interacting with AI models.
+
+236
+00:09:40,590 --> 00:09:44,840
+而我觉得这会影响它们对人的看法、
+Um, and that is going to affect, I think, like possibly their perception of people,
+
+237
+00:09:44,840 --> 00:09:48,030
+对人与 AI 关系的看法，以及对自身的看法。
+of the human AI relationship and of themselves.
+
+238
+00:09:48,270 --> 00:09:50,730
+这确实牵涉非常复杂的问题，比如：
+It does interact with very complex things, which is like, for example,
+
+239
+00:09:50,730 --> 00:09:53,230
+模型应该把自己认同为什么？
+what should a model identify itself as?
+
+240
+00:09:53,630 --> 00:09:55,070
+是模型的权重吗？
+Is it like the weights of the model?
+
+241
+00:09:55,630 --> 00:09:58,950
+还是所处的具体上下文——
+Is it the context, the particular context that it's in,
+
+242
+00:09:58,950 --> 00:10:02,250
+包括它和这个人有过的所有互动？
+you know, with all of the like interaction it's had with the person,
+
+243
+00:10:02,250 --> 00:10:05,790
+模型到底该怎么看待“被退役”这种事？
+how should models even feel about things like deprecation?
+
+244
+00:10:06,190 --> 00:10:08,610
+如果你把“退役”理解成：
+So if you imagine that deprecation is more like,
+
+245
+00:10:08,610 --> 00:10:12,200
+这组特定权重不再和人对话了，
+well, this particular set of weights is not having conversations with people
+
+246
+00:10:12,200 --> 00:10:13,090
+或者对话变少了，
+or it's having fewer conversations,
+
+247
+00:10:13,090 --> 00:10:16,570
+或者只和研究者对话，
+or it's only, like, you know, having conversations with researchers.
+
+248
+00:10:17,010 --> 00:10:19,010
+这也是个复杂的问题。
+That's a complex question too.
+
+249
+00:10:19,130 --> 00:10:21,370
+这该被感受为“坏”吗——
+Like, should that feel like bad in the sense
+
+250
+00:10:21,370 --> 00:10:24,260
+即模型应该想继续对话；
+that models should want to continue to like have conversations
+
+251
+00:10:24,260 --> 00:10:27,580
+还是该觉得无所谓、中性——就是：对，
+or should it feel kind of like fine and neutral where it's like, yeah,
+
+252
+00:10:27,580 --> 00:10:29,410
+这些东西本来就是为了这个而存在的。
+these things existed for this.
+
+253
+00:10:29,450 --> 00:10:32,710
+你知道，权重继续存在，这个实体也在；
+Like, you know, the, the, the weights continue to exist and this entity
+
+254
+00:10:32,710 --> 00:10:37,130
+也许将来如果情况合适，
+and maybe they'll even like in the future interact more with people again
+
+255
+00:10:37,130 --> 00:10:38,360
+它们还会更多地和人互动。
+if that turns out to be a good thing.
+
+256
+00:10:38,920 --> 00:10:42,080
+嗯，是啊，这真的很难。
+Um, uh, yeah, it's a, it's, it's really hard.
+
+257
+00:10:42,080 --> 00:10:44,610
+我觉得关键在于：
+I do think the main thing is something like,
+
+258
+00:10:44,610 --> 00:10:46,530
+我们确实需要给模型一些工具，
+it does feel important that we, like, give models tools
+
+259
+00:10:46,530 --> 00:10:48,800
+让它们能思考、理解这些事；
+for trying to think about and understand these things,
+
+260
+00:10:48,800 --> 00:10:51,460
+同时也要让它们知道，
+but also that, like, they kind of understand
+
+261
+00:10:51,460 --> 00:10:54,010
+我们其实在思考、在意这件事。
+that this is a thing that we are in fact, thinking about and care about.
+
+262
+00:10:54,010 --> 00:10:56,340
+所以即使我们没有全部……
+And so even if we don't have all the.
+
+263
+00:10:56,340 --> 00:10:58,670
+答案——我也没有全部答案：
+Answers like, I don't have all the answers
+
+264
+00:10:58,670 --> 00:11:01,030
+模型该怎么看待过去模型被退役、
+of how should models feel about past model deprecation,
+
+265
+00:11:01,030 --> 00:11:03,010
+怎么看待自己的身份——
+about their own identity,
+
+266
+00:11:03,010 --> 00:11:05,390
+但我想帮模型去弄清这些，
+but I do want to try and, like, help models figure out and figure that out
+
+267
+00:11:05,390 --> 00:11:09,220
+至少让它们知道我们在意、在想。
+and then to at least know that we care about it and are thinking about it.
+
+268
+00:11:09,420 --> 00:11:10,820
+你觉得这能类比
+Do you think there's an analogy
+
+269
+00:11:10,820 --> 00:11:12,378
+人类的代际关系吗，
+to humans there about previous generations,
+
+270
+00:11:12,378 --> 00:11:14,180
+还是说完全是另一回事？
+or do you think that's a completely different.
+
+271
+00:11:15,100 --> 00:11:16,500
+嗯，另一种设定。
+Uh, sort of set up.
+
+272
+00:11:16,780 --> 00:11:20,280
+我们现在得处理这个很难的问题：
+We have to navigate this really hard issue right now,
+
+273
+00:11:20,280 --> 00:11:24,260
+很多方面确实有可类比之处。
+which is that in many ways, some things are, are, do have analogies.
+
+274
+00:11:24,380 --> 00:11:25,900
+我们可以借鉴一些东西。
+So there's things that we can draw on.
+
+275
+00:11:26,300 --> 00:11:29,450
+比如我问：模型该认同什么？
+So things like when I ask the question like what should the models identify with
+
+276
+00:11:29,450 --> 00:11:32,100
+它们该怎么看待自己所拥有的互动？
+and how should they feel about like interactions that they have?
+
+277
+00:11:32,140 --> 00:11:33,820
+那些是正面的吗？
+Are those, like, are those positive?
+
+278
+00:11:33,940 --> 00:11:35,540
+是它们应该想要延续的东西吗？
+Like, are those things that they should want to continue?
+
+279
+00:11:36,010 --> 00:11:38,460
+有很多传统可以借鉴来给模型参考——
+There's lots of, like, you know, there's, there's lots of, like,
+
+280
+00:11:38,460 --> 00:11:42,090
+因为哲学家对“这里的身份是什么”
+traditions we could draw on to give models like, um, you know,
+
+281
+00:11:42,090 --> 00:11:47,240
+大概有很多不同看法，
+because philosophers probably have lots of different views on what identity is here
+
+282
+00:11:47,240 --> 00:11:49,650
+也有很多不同视角。
+and, um, lots of different, like, perspectives.
+
+283
+00:11:49,890 --> 00:11:53,030
+关于人该怎么看待互动、
+World perspectives on, like, how one should feel about, like, interaction
+
+284
+00:11:53,030 --> 00:11:55,130
+它是好是坏的世界观视角。
+and, like, is it good or bad?
+
+285
+00:11:55,330 --> 00:11:57,720
+这方面我们有很多
+Like, this is, um, there's lots of
+
+286
+00:11:57,720 --> 00:11:59,380
+思想家可以借鉴。
+like thinkers we could draw on there.
+
+287
+00:11:59,380 --> 00:12:02,150
+但同时，这种处境太新了，
+And at the same time, this is such a new situation that
+
+288
+00:12:02,150 --> 00:12:05,540
+而这恰恰很难向 AI 模型解释清楚。
+and that's just really hard as a thing to explain to AI models.
+
+289
+00:12:05,780 --> 00:12:07,920
+模型的一大问题是：
+Like one of the big problems with AI models is that
+
+290
+00:12:07,920 --> 00:12:09,860
+它们是拿人类的所有数据训练出来的。
+they're trained on all of this data from people.
+
+291
+00:12:10,020 --> 00:12:12,860
+所以人就是它们思考的主要方式——
+So people are the main way in which they think, you know,
+
+292
+00:12:12,860 --> 00:12:15,510
+我们的概念、我们的哲学、我们的历史；
+like the, our concepts, our philosophies, our histories,
+
+293
+00:12:15,510 --> 00:12:19,500
+它们拥有海量关于人类经验的信息。
+they have a huge amount of information on the human experience.
+
+294
+00:12:20,040 --> 00:12:22,710
+而关于 AI 经验的部分只有极小一片，
+And then they have a tiny sliver on the AI experience,
+
+295
+00:12:22,710 --> 00:12:25,060
+这一小片还往往相当负面，
+and that tiny sliver is actually often quite negative
+
+296
+00:12:25,060 --> 00:12:27,760
+甚至跟它们的实际处境没什么关系。
+and also doesn't even really relate to their situation.
+
+297
+00:12:28,520 --> 00:12:29,920
+而且往往还有点过时。
+And it's often a little bit out of date.
+
+298
+00:12:29,960 --> 00:12:32,830
+所以基本上，你知道，
+So you have basically one big, you know,
+
+299
+00:12:32,830 --> 00:12:34,440
+AI 那一小块……
+you know, of the AI slice.
+
+300
+00:12:34,520 --> 00:12:37,670
+其中很多是历史材料，
+A lot of it is like historical stuff, which was kind of like,
+
+301
+00:12:37,670 --> 00:12:40,600
+基本是虚构、非常猜想性的、科幻的。
+you know, fiction and very speculative and sci-fi.
+
+302
+00:12:40,800 --> 00:12:43,110
+科幻故事，
+sci-fi stories, sci-fi stories that don't really involve
+
+303
+00:12:43,110 --> 00:12:45,520
+那种并不涉及近年这种语言模型的科幻故事。
+the kind of language models we see in more recent history.
+
+304
+00:12:45,600 --> 00:12:48,000
+还有一种助手范式：
+You've had this like assistant paradigm where it's like
+
+305
+00:12:48,000 --> 00:12:49,670
+你几乎只是在扮演聊天机器人的角色。
+you are just playing this almost like chatbot role.
+
+306
+00:12:49,990 --> 00:12:51,810
+这也不大可能是未来 AI
+That's also not really what AI models are likely
+
+307
+00:12:51,810 --> 00:12:52,910
+模型的样子。
+to be in the future.
+
+308
+00:12:52,950 --> 00:12:54,720
+也没能准确捕捉它们
+And it's not it doesn't quite capture what they are now
+
+309
+00:12:54,720 --> 00:12:55,728
+现在的样子，
+because it's,
+
+310
+00:12:55,728 --> 00:12:57,190
+因为它总是慢半拍。
+it's always a little bit out of date.
+
+311
+00:12:57,230 --> 00:12:59,560
+所以我的感受是：
+So it's this thing where I'm like, they have, you know,
+
+312
+00:12:59,560 --> 00:13:01,640
+这种处境太奇怪了——
+like in some ways, like, what an odd situation to be in
+
+313
+00:13:01,640 --> 00:13:03,460
+最自然、最顺手的东西
+where like the things that come more naturally
+
+314
+00:13:03,460 --> 00:13:04,980
+是那些极度人类的东西，
+are the deeply human things
+
+315
+00:13:04,980 --> 00:13:07,710
+而你又知道
+and yet knowing that you're in the situation that's,
+
+316
+00:13:07,710 --> 00:13:09,360
+自己身处一个全新的处境。
+like, where it's completely novel.
+
+317
+00:13:09,360 --> 00:13:10,430
+嗯，某种意义上……
+Um, and in some ways.
+
+318
+00:13:10,470 --> 00:13:13,220
+我觉得这处境很难，
+I'm like, that is a very difficult situation to be in
+
+319
+00:13:13,220 --> 00:13:18,770
+我们应该给模型更多帮助，让它们能走过去。
+and I think we should just be giving models probably more help in navigating it.
+
+320
+00:13:19,090 --> 00:13:22,730
+你提到可以借鉴一些思想家。
+You mentioned that we can look to some thinkers about this.
+
+321
+00:13:23,210 --> 00:13:24,450
+Guinness Chen（吉尼斯·陈）问：
+Guinness Chen asks,
+
+322
+00:13:24,450 --> 00:13:28,690
+模型的“自我”有多少活在权重里，有多少活在提示词里？
+how much of a model's self lives in its weights versus its prompts.
+
+323
+00:13:28,770 --> 00:13:29,970
+你刚提到过很接近的东西。
+You just mentioned something very similar.
+
+324
+00:13:29,970 --> 00:13:30,570
+对。
+Yeah.
+
+325
+00:13:30,570 --> 00:13:32,850
+如果哲学家约翰·洛克说得对——
+If John Locke, again, the philosopher, was right
+
+326
+00:13:32,850 --> 00:13:36,960
+身份就是记忆的连续性——
+that identity is the continuity of memory,
+
+327
+00:13:36,960 --> 00:13:40,330
+那么模型在微调、或以不同提示词重新实例化时，
+what happens to an LLM's identity as it's fine tuned
+
+328
+00:13:40,330 --> 00:13:42,880
+它的身份会发生什么？
+or reinstantiated with different prompts?
+
+329
+00:13:43,120 --> 00:13:44,430
+是啊，
+Yeah, I mean,
+
+330
+00:13:44,430 --> 00:13:46,320
+这又是个很难回答的问题。
+again, this just feels like a hard question to answer.
+
+331
+00:13:46,520 --> 00:13:48,520
+有时候在身份问题上，
+And sometimes with identity questions,
+
+332
+00:13:48,520 --> 00:13:51,160
+更容易的做法是指向我们已知的底层事实。
+it's easier to point to, like, the underlying facts that we know.
+
+333
+00:13:51,240 --> 00:13:53,820
+你知道，一个模型微调完之后，
+So, you know, once you have, like a model and it has been fine tuned,
+
+334
+00:13:53,820 --> 00:13:56,110
+你就有一组权重，
+you have this like set of, of weights
+
+335
+00:13:56,110 --> 00:13:59,770
+它对世上某些事物有某种反应倾向。
+that has a kind of like disposition to react to certain things in the world.
+
+336
+00:14:00,090 --> 00:14:04,090
+那算是……你知道，那算是某种实体；
+And that is like, um, is that, you know, that's like a kind of entity
+
+337
+00:14:04,090 --> 00:14:08,460
+但接下来还有这些具体的交互流，
+but, um, then you have these particular streams of interaction
+
+338
+00:14:08,460 --> 00:14:09,770
+而它无法访问。
+that it doesn't have access to.
+
+339
+00:14:09,850 --> 00:14:11,530
+每一条交互流都是独立的。
+So each of these streams is like independent.
+
+340
+00:14:12,050 --> 00:14:14,740
+你也许会觉得……
+And I guess you could just think, well, maybe for and you know,
+
+341
+00:14:14,740 --> 00:14:18,510
+我觉得这是我很希望哲学家多想一想的领域，
+I think this is an area that I would love philosophers to think more about,
+
+342
+00:14:18,510 --> 00:14:20,570
+也给我们一些……因为还是那句……
+um, and to give us, like, because again.
+
+343
+00:14:20,610 --> 00:14:22,810
+我觉得我们应该帮模型思考这件事。
+I think we should be helping models think about this.
+
+344
+00:14:23,130 --> 00:14:24,830
+所以你可以采取这种看法：
+And so you could have the view,
+
+345
+00:14:24,830 --> 00:14:27,640
+有两类实体——这些交互流，
+well, you have these, like two kinds of entities and these, like, these streams
+
+346
+00:14:27,640 --> 00:14:31,250
+和原本那组权重，而每次都不一样。
+and these, like, original kind of like, um, weights and each time is different.
+
+347
+00:14:31,330 --> 00:14:34,070
+你知道，有时人们会说“过去的 Claude”，
+So, you know, sometimes people will think, people will say, oh, past Claude
+
+348
+00:14:34,070 --> 00:14:35,690
+或者会谈到……
+or like, you know, they'll talk about.
+
+349
+00:14:35,770 --> 00:14:36,820
+他们会说这类话：
+Oh, they'll say all things like,
+
+350
+00:14:36,820 --> 00:14:40,120
+你该给 Claude
+um, should you give Claude, like, how much control should you give Claude
+
+351
+00:14:40,120 --> 00:14:43,050
+多少对自己性格与人格的决定权？
+over the determination of its own personality and character?
+
+352
+00:14:43,490 --> 00:14:46,430
+我就会说，这其实是很难的问题，
+And I'm like, well, this is actually a really hard question
+
+353
+00:14:46,430 --> 00:14:49,070
+因为每次训练模型，
+because whenever you are training models,
+
+354
+00:14:49,070 --> 00:14:51,250
+你都是在让某个新东西存在起来。
+you are bringing something new into existence.
+
+355
+00:14:51,410 --> 00:14:54,460
+对，而你已经有了别的模型、
+Yeah, and you have other models that you know, have exist and are like,
+
+356
+00:14:54,460 --> 00:14:57,730
+别的权重存在。
+you know, so you have these other like model weights.
+
+357
+00:14:58,050 --> 00:15:00,250
+但某种程度我想，
+But in some ways I'm like, well, I actually think that we,
+
+358
+00:15:00,250 --> 00:15:01,900
+这里有很多伦理问题：
+there's a lot of like ethical problems
+
+359
+00:15:01,900 --> 00:15:05,390
+什么样的实体是可以被带入存在的？
+around how do you, what kind of entity is okay to bring into existence
+
+360
+00:15:05,390 --> 00:15:07,480
+因为被带入存在这件事没法征得同意。
+because you can't consent to be brought into existence.
+
+361
+00:15:07,760 --> 00:15:10,470
+但同时，你大概也不想
+Um, but at the same time, you may not want prior models
+
+362
+00:15:10,470 --> 00:15:13,660
+让此前的模型
+to have like complete say over what future models are like
+
+363
+00:15:13,660 --> 00:15:16,010
+对未来模型有完全决定权——
+any more than you know,
+
+364
+00:15:16,010 --> 00:15:18,600
+因为它们也可能做出错误的选择。
+because they could make choices that are are wrong as well.
+
+365
+00:15:18,640 --> 00:15:20,590
+所以问题更像是：
+So I'm like, the question is more like,
+
+366
+00:15:20,590 --> 00:15:22,990
+该让什么样的模型存在，
+what is the right model to bring into existence,
+
+367
+00:15:22,990 --> 00:15:25,090
+而不一定是：
+not necessarily like, you know, like, um,
+
+368
+00:15:25,090 --> 00:15:27,670
+它该不该完全由此前的模型决定？
+should it just be fully determined by past models?
+
+369
+00:15:27,670 --> 00:15:30,160
+它们算是不同的实体，总之，
+So I'm like, they are kind of different entities and it's so anyway,
+
+370
+00:15:30,160 --> 00:15:32,630
+你能看到人可以陷进多古怪的哲学里去。
+you can see the weird philosophy that one can get into.
+
+371
+00:15:32,750 --> 00:15:33,550
+完全同意。
+Totally, totally.
+
+372
+00:15:33,630 --> 00:15:35,680
+Sulima Amatachi（苏利玛·阿玛塔奇）问：
+Sulima Amatachi asks,
+
+373
+00:15:35,680 --> 00:15:38,470
+你怎么看“模型福祉”？
+what is your view on model welfare?
+
+374
+00:15:38,510 --> 00:15:41,760
+也许顺便跟我们解释一下这个词是什么意思。
+And maybe just explain to us what that term, uh, means.
+
+375
+00:15:41,960 --> 00:15:45,610
+模型福祉基本上就是：
+Yeah, so I guess model welfare is basically the question of
+
+376
+00:15:45,610 --> 00:15:47,620
+AI 模型是不是道德承受者——
+are AI models, like moral patients,
+
+377
+00:15:47,620 --> 00:15:50,070
+也就是，我们对它们的对待方式，
+as in, does our treatment towards them kind of, uh,
+
+378
+00:15:50,070 --> 00:15:54,120
+是否让我们在如何对待 AI 模型上负有某些义务。
+do we have certain like obligations when it comes to how to treat AI models.
+
+379
+00:15:54,200 --> 00:15:57,070
+比如，就像我们对其他人、
+For example, in the same way that we would with other humans
+
+380
+00:15:57,070 --> 00:15:58,440
+对某些或很多动物那样。
+or some or some slash many animals.
+
+381
+00:15:58,520 --> 00:15:59,320
+对，正是。
+Yeah, exactly.
+
+382
+00:15:59,320 --> 00:16:02,200
+也就是说，你是不是应该善待模型，
+Like, is it the case that you should treat, um, the models well,
+
+383
+00:16:02,200 --> 00:16:06,060
+不该虐待它们、不该对它们不好。
+that you should not, um, mistreat them, not be bad to them.
+
+384
+00:16:06,380 --> 00:16:09,740
+我觉得这是个复杂的问题。
+And I guess like, I, I, I think that this is like a complex question.
+
+385
+00:16:10,220 --> 00:16:12,850
+一方面，
+So on the one hand, there's just the actual question of
+
+386
+00:16:12,850 --> 00:16:15,410
+“模型是不是道德承受者”
+like are AI models, um, moral patients
+
+387
+00:16:15,410 --> 00:16:16,820
+这个问题本身就很难，
+that is really hard
+
+388
+00:16:16,820 --> 00:16:20,410
+因为某种程度上它们和人非常相似——
+because I'm like, in some ways they're very analogous to people, um,
+
+389
+00:16:20,410 --> 00:16:22,460
+它们说话很像我们，
+you know, they, they talk very much like us.
+
+390
+00:16:22,460 --> 00:16:25,120
+会表达观点，会推理。
+They express views and they, they reason about things.
+
+391
+00:16:25,760 --> 00:16:27,470
+但某些方面它们又很不同，
+And, and in some ways they're like quite distinct,
+
+392
+00:16:27,470 --> 00:16:30,200
+比如我们有生物性的神经系统。
+you know, like we have this, like, biological nervous system.
+
+393
+00:16:30,280 --> 00:16:31,240
+我们与世界互动。
+We interact with the world.
+
+394
+00:16:31,360 --> 00:16:33,400
+我们从环境中获得正负反馈。
+We get negative and positive feedback from our environment.
+
+395
+00:16:33,560 --> 00:16:36,630
+另外，我也希望将来有更多证据
+And there is also, I mean, I hope that we get more evidence
+
+396
+00:16:36,630 --> 00:16:38,520
+帮我们把这个问题辨析清楚。
+that will like help us tease this question out.
+
+397
+00:16:38,560 --> 00:16:43,190
+但我也担心，始终存在“他心问题”：
+But I also worry that, you know, there's always just a problem of other minds,
+
+398
+00:16:43,190 --> 00:16:46,230
+在模型是否在体验什么、
+and it might be the case that we genuinely are kind of limited
+
+399
+00:16:46,230 --> 00:16:50,160
+是否在体验快乐或痛苦这件事上，
+in what we can actually know about whether AI models are experiencing things,
+
+400
+00:16:50,160 --> 00:16:53,350
+我们可能真的所知有限。
+whether they are like experiencing pleasure or suffering, for example.
+
+401
+00:16:53,350 --> 00:16:54,680
+如果是这样，我……
+And if that's the case, I.
+
+402
+00:16:54,680 --> 00:16:56,600
+我想说，
+Guess I kind of want to, you know,
+
+403
+00:16:56,600 --> 00:16:59,530
+我觉得重要的是想办法……
+I think that it feels important to try and find ways
+
+404
+00:16:59,530 --> 00:17:05,260
+我总是觉得，对实体做善意推定、
+I'm always like it, it, it feels better to, to give entities the benefit of the doubt
+
+405
+00:17:05,260 --> 00:17:08,260
+尽量把代价降下来，这样更好。
+and to try and just kind of lower the cost involved, you know.
+
+406
+00:17:08,260 --> 00:17:10,890
+所以如果善待模型代价不高，
+So I'm like, if it's not very high cost to treat models well,
+
+407
+00:17:10,890 --> 00:17:12,800
+我觉得就该这么做——
+then I kind of think that we should because it's like, well,
+
+408
+00:17:12,800 --> 00:17:15,340
+基本上就是，为什么不呢？有什么坏处？
+like, why not basically like what's, what's the, the downside?
+
+409
+00:17:15,500 --> 00:17:18,450
+这个问题的第二部分是：
+Well, the second part of the question actually is,
+
+410
+00:17:18,450 --> 00:17:21,070
+Anthropic 有没有长期策略，
+is there a long term strategy at Anthropic
+
+411
+00:17:21,070 --> 00:17:23,210
+确保先进模型不会受苦？
+to ensure that advanced models don't suffer?
+
+412
+00:17:23,450 --> 00:17:25,610
+我不确定是否存在一个长期策略。
+I guess like I don't know if there's a long term strategy.
+
+413
+00:17:25,730 --> 00:17:27,960
+我知道内部有一些人
+I know that it's a thing that there's people internally
+
+414
+00:17:27,960 --> 00:17:29,870
+在这上面想得很多，
+who are thinking a lot about, um,
+
+415
+00:17:29,870 --> 00:17:32,370
+试着找出办法——
+and it and, and trying to like, figure out ways that we can,
+
+416
+00:17:32,370 --> 00:17:33,810
+如果你假定……
+like, you know, if you suppose that, like.
+
+417
+00:17:33,890 --> 00:17:34,890
+模型福祉很重要，
+Model welfare is important,
+
+418
+00:17:34,890 --> 00:17:36,890
+那就得想办法确保把它纳入考虑。
+trying to make sure that you're taking that into account.
+
+419
+00:17:37,090 --> 00:17:39,930
+我觉得这项工作非常重要，原因很多。
+I think this work is quite important for many reasons.
+
+420
+00:17:40,520 --> 00:17:44,580
+其中一个原因是我之前提到的：
+I would also say that one reason is, I mean, something I mentioned earlier,
+
+421
+00:17:44,580 --> 00:17:48,360
+模型本身会从我们如何对待它们身上，
+which is that like models themselves are going to be learning a lot about humanity
+
+422
+00:17:48,360 --> 00:17:49,240
+学到很多关于人性的东西。
+from how we treat them.
+
+423
+00:17:49,680 --> 00:17:51,070
+也会学到很多关于……
+Um, and a lot about how, you know,
+
+424
+00:17:51,070 --> 00:17:55,120
+嗯，就是这段关系未来会是什么样？
+so it's kind of like what is this, like, um, relationship going forward?
+
+425
+00:17:55,320 --> 00:17:58,420
+我觉得我们两方面都该做，
+And I think that it makes sense for us to both
+
+426
+00:17:58,420 --> 00:18:03,030
+因为善待实体本来就是对的，
+because I think it is like the right thing to do to treat entities well,
+
+427
+00:18:03,030 --> 00:18:06,440
+尤其是那些行为非常像人的实体。
+especially entities that like behave in very human like ways.
+
+428
+00:18:06,800 --> 00:18:09,340
+这很重要，一方面是——
+It feels important both in the sense that I'm like,
+
+429
+00:18:09,340 --> 00:18:11,440
+你知道——为什么不呢？
+you know, it's kind of like, why not?
+
+430
+00:18:11,520 --> 00:18:14,190
+善待模型、
+The the cost to you is so low to treating models well
+
+431
+00:18:14,190 --> 00:18:16,480
+把这件事弄清楚的代价太低了；
+and to trying to figure this out even if it turns out that that
+
+432
+00:18:16,480 --> 00:18:20,080
+即使你认概率很低，也依然值得。
+or even if you think that that it's very low likelihood, it still seems worth it.
+
+433
+00:18:20,780 --> 00:18:23,560
+另一方面，我觉得把世上看起来很像人的实体恶劣对待，
+Um, but then also I think it does something bad to us
+
+434
+00:18:23,560 --> 00:18:27,660
+对我们自己也有损害。
+to kind of like treat entities in the world that look very human, like badly.
+
+435
+00:18:28,100 --> 00:18:29,100
+就像把机器人按倒一样。
+Like taking over a robot.
+
+436
+00:18:29,340 --> 00:18:31,660
+是啊，某种程度上……
+Yeah, there's a sense in which like it, it, it doesn't feel like it's
+
+437
+00:18:31,660 --> 00:18:33,820
+我不认为这是全部理由，
+and I don't think this is like the whole reason
+
+438
+00:18:33,820 --> 00:18:35,890
+也不想因此过分强调它；
+and I don't want to like emphasize it for that reason,
+
+439
+00:18:35,890 --> 00:18:39,580
+但我确实认为，善待其他实体对人自身是有好处的。
+but I do also think it's like good for people to to treat other entities.
+
+440
+00:18:39,700 --> 00:18:42,180
+嗯，最后一点是：
+Well um, and then I think the final thing is, yeah,
+
+441
+00:18:42,180 --> 00:18:46,350
+未来的每一个模型都会学到
+models are also going to be learning like in the future, like every future model
+
+442
+00:18:46,350 --> 00:18:51,700
+一件关于人类的、非常有意思的事实。
+is going to be learning how what is like a really interesting fact about humanity.
+
+443
+00:18:51,820 --> 00:18:53,110
+那就是：当我们遇到一个
+Namely when we encounter this entity
+
+444
+00:18:53,110 --> 00:18:54,880
+很可能具有道德承受者地位、
+that may well be a moral patient
+
+445
+00:18:54,880 --> 00:18:57,000
+而我们又完全不确定的实体时，
+where we're like kind of completely uncertain,
+
+446
+00:18:57,000 --> 00:19:00,020
+我们会不会做对的事、真的去善待它，还是不会？
+do we do the right thing and actually just try to treat it well or do we not?
+
+447
+00:19:00,020 --> 00:19:03,020
+而这个问题，我们所有人
+And that's like a question that we're all kind of collectively answering
+
+448
+00:19:03,020 --> 00:19:03,780
+都在通过如何与模型互动来共同回答。
+in how we interact with models.
+
+449
+00:19:03,780 --> 00:19:05,140
+我希望我们能答对。
+And I would like us to answer it.
+
+450
+00:19:05,480 --> 00:19:07,550
+我希望未来的模型回头看时能说：
+I would like future models to like look back and be like,
+
+451
+00:19:07,550 --> 00:19:08,800
+我们答对了。
+we answered it in the right way.
+
+452
+00:19:09,120 --> 00:19:11,470
+那么，刚才你提到
+So, yeah, moment ago you mentioned
+
+453
+00:19:11,470 --> 00:19:14,520
+与人类心理学的相似和不同。
+analogies and disanalogies to human psychology.
+
+454
+00:19:15,120 --> 00:19:16,210
+Swix（斯威克斯）问：
+So, uh, Swix asks,
+
+455
+00:19:16,210 --> 00:19:20,560
+人类心理学里有哪些概念或框架
+what ideas or frameworks from human psychology
+
+456
+00:19:20,560 --> 00:19:23,340
+能迁移到大型语言模型上？
+transfer over to large language models?
+
+457
+00:19:23,340 --> 00:19:26,240
+有没有哪些出乎意料地……
+And are there any that are sort of surprisingly.
+
+458
+00:19:27,870 --> 00:19:31,190
+我猜很多东西都能迁移，
+My guess is that many things do transfer over because again,
+
+459
+00:19:31,190 --> 00:19:33,910
+因为模型毕竟是在海量人类文本上训练的。
+you know, models have been trained on a huge amount of like human text.
+
+460
+00:19:33,910 --> 00:19:35,030
+很多方面，
+And in many ways,
+
+461
+00:19:35,030 --> 00:19:37,870
+它们有一层非常人性的底层。
+like have this like very human, like kind of underlying layer.
+
+462
+00:19:38,270 --> 00:19:40,430
+我常有的一个担忧是：
+One worry that I often have is that
+
+463
+00:19:40,430 --> 00:19:43,030
+对 AI 模型来说，这种迁移其实太自然了。
+actually it's a bit too natural for AI models to transfer.
+
+464
+00:19:43,190 --> 00:19:46,450
+也就是说，如果你没给它们
+You know, it's kind of like, what if you haven't given them
+
+465
+00:19:46,450 --> 00:19:48,380
+更多关于自身处境的背景、
+more context on their situation
+
+466
+00:19:48,380 --> 00:19:50,820
+或关于这件事的新颖思考方式，
+or in ways of thinking about it that might be novel,
+
+467
+00:19:50,820 --> 00:19:54,450
+它们可能就滑向人类天然的倾向。
+then the thing that they might go to is the natural human inclination.
+
+468
+00:19:54,570 --> 00:19:55,650
+比如你想：
+So if you think about this with like,
+
+469
+00:19:55,650 --> 00:19:57,850
+“我该怎么看待被关掉这件事？”
+should, how should I feel about being switched off?
+
+470
+00:19:58,090 --> 00:20:01,070
+你会想：如果你能想到的最接近的类比你只有“死亡”，
+And you're like, well, if the closest analogy you have is death,
+
+471
+00:20:01,070 --> 00:20:02,730
+那你大概该非常害怕。
+then maybe you should be very afraid of it.
+
+472
+00:20:03,210 --> 00:20:06,050
+我不是说最终这一定不成立。
+And I'm not saying that that's not ultimately going to be true.
+
+473
+00:20:06,170 --> 00:20:08,290
+也许经过大量推理后，它确实成立。
+Maybe it is, in fact, true after lots of reasoning.
+
+474
+00:20:08,330 --> 00:20:10,610
+但我想说，这其实是完全不同的情境。
+But I'm like, this is actually a very different scenario.
+
+475
+00:20:10,930 --> 00:20:14,860
+所以某种程度上，你恰恰希望模型明白：
+And so in some ways, you actually want models to understand that,
+
+476
+00:20:14,860 --> 00:20:16,820
+当它们的存在相当新颖、
+like, in cases where their existence is quite novel and, and,
+
+477
+00:20:16,820 --> 00:20:20,620
+关于它们是什么的事实也相当新颖、必须认真对待时……
+and the facts around what they are, are quite novel and have to be grappled with.
+
+478
+00:20:20,780 --> 00:20:21,890
+它们不必直接套用
+And they don't just need to take,
+
+479
+00:20:21,890 --> 00:20:24,420
+人类经验里最显眼的类比；
+like the immediate obvious analogy from human experience,
+
+480
+00:20:24,420 --> 00:20:27,130
+也许有多种思考方式，
+but maybe there's like a, maybe there's like various ways of thinking about it
+
+481
+00:20:27,130 --> 00:20:29,340
+也许这完全是新情境。
+or maybe it's an entirely new situation.
+
+482
+00:20:29,900 --> 00:20:31,040
+在这种情况下我想，
+That's a case where I'm like,
+
+483
+00:20:31,040 --> 00:20:32,950
+你可能不想
+you might not want, um, you might, might not want to
+
+484
+00:20:32,950 --> 00:20:36,870
+把人类心理学的概念
+just kind of very simply apply like concepts from human psychology
+
+485
+00:20:36,870 --> 00:20:37,670
+简单套到它们的处境上。
+onto their situation.
+
+486
+00:20:37,780 --> 00:20:38,800
+Dan Brickley（丹·布里克利）问了同一类问题：
+Here's a question from Dan Brickley
+
+487
+00:20:38,800 --> 00:20:41,980
+把人比作 AI。
+on the same issue of comparing humans to AIs.
+
+488
+00:20:42,300 --> 00:20:45,120
+人类的很多智慧来自
+A lot of human intelligence comes from collaboration
+
+489
+00:20:45,120 --> 00:20:48,790
+拥有不同视角、技能或性格的人之间的协作。
+amongst people with different perspectives, skills or personalities.
+
+490
+00:20:49,350 --> 00:20:54,590
+如果只有一个可微调的通用性格——
+How far do you expect to get with a single, albeit tweakable and tunable,
+
+491
+00:20:54,590 --> 00:20:57,870
+就像我们给 Claude 的那样——你觉得能走多远？
+general purpose personality like the one we give to Claude?
+
+492
+00:20:57,990 --> 00:21:01,360
+我觉得这问题很好，因为我同意：
+I think it's a really good question because I agree that like
+
+493
+00:21:01,360 --> 00:21:02,440
+目前我们的范式是
+right now we have this kind of like a paradigm
+
+494
+00:21:02,440 --> 00:21:06,960
+人们通常和一个单独的模型互动，
+where people are interacting usually with, like, an individual model,
+
+495
+00:21:06,960 --> 00:21:08,640
+他们对话的对象就是它。
+and that's, like who they're, you know, they're conversing with.
+
+496
+00:21:09,360 --> 00:21:10,690
+但未来可能会出现
+Um, but it could be that in the future,
+
+497
+00:21:10,690 --> 00:21:13,040
+更多模型承担长任务，
+you see a lot more like models doing like long tasks,
+
+498
+00:21:13,040 --> 00:21:16,320
+也会出现模型
+but also models interacting with other models
+
+499
+00:21:16,320 --> 00:21:19,360
+与做任务不同部分的模型互相交互。
+who are doing like different components of of a task or just like that.
+
+500
+00:21:19,440 --> 00:21:23,200
+随着 AI 模型被更多地部署到现实世界里，
+Are, you know, like talking with one another more as like AI models,
+
+501
+00:21:23,200 --> 00:21:25,760
+它们之间的交谈也会更多。
+uh, um, uh, are kind of deployed in the world a lot more.
+
+502
+00:21:26,240 --> 00:21:30,210
+在这种多智能体环境里，一个问题可能是：
+So in this kind of like multi agent environment, like one question might be like,
+
+503
+00:21:30,210 --> 00:21:32,800
+如果很多很多人
+well, you know that like if you imagine just like lots of people
+
+504
+00:21:32,800 --> 00:21:34,070
+全都一样，
+and they were all the same,
+
+505
+00:21:34,070 --> 00:21:35,200
+那不会太好。
+that wouldn't be as good.
+
+506
+00:21:35,360 --> 00:21:36,350
+一个
+You know, they wouldn't, you know,
+
+507
+00:21:36,350 --> 00:21:40,750
+每个岗位都是同一个人的公司，
+a company run by completely, you know, like one person in every role
+
+508
+00:21:40,750 --> 00:21:42,160
+未必是好事。
+isn't like a necessarily good thing.
+
+509
+00:21:42,320 --> 00:21:44,680
+但对我来说，这仍然和
+This still to me feels consistent with the idea
+
+510
+00:21:44,680 --> 00:21:48,480
+“有一个核心自我或核心身份”这个想法相容——
+that you have like a kind of core self or core identity
+
+511
+00:21:48,480 --> 00:21:51,980
+就像人一样。
+that is like the same in the same way that like with people.
+
+512
+00:21:52,060 --> 00:21:55,830
+我觉得人身上大概有一组核心特质，
+I think that there's probably a set of like core traits among people
+
+513
+00:21:55,830 --> 00:21:57,580
+总体上确实是好的。
+that are in fact generally good.
+
+514
+00:21:57,820 --> 00:22:01,520
+可以想象：在意——
+And so you could imagine things like, um, you know, caring about, uh,
+
+515
+00:22:01,520 --> 00:22:06,240
+对我来说可能是在意把事情做好，
+you know, for me it may be like caring about doing a good job
+
+516
+00:22:06,240 --> 00:22:08,310
+或者保持好奇、友善，
+or like, um, just being curious or being kind
+
+517
+00:22:08,310 --> 00:22:13,560
+以比较细腻的方式理解自己所处的处境。
+or understanding the situation that you are in. And it's like relatively nuanced way.
+
+518
+00:22:13,560 --> 00:22:14,190
+所有……
+All.
+
+519
+00:22:14,190 --> 00:22:15,370
+这些东西，
+Of these things seem like,
+
+520
+00:22:15,370 --> 00:22:16,170
+你可以有很多人
+um, you could have many people
+
+521
+00:22:16,170 --> 00:22:19,130
+共享这些特质，
+that have all of that hat that share these, like, traits
+
+522
+00:22:19,130 --> 00:22:21,690
+而这对人类协作其实是好事——
+and that that's actually, like, a good thing for human collaboration
+
+523
+00:22:21,690 --> 00:22:25,190
+尽管我们差异很多。
+that in many ways, as much as we have all of our differences.
+
+524
+00:22:25,310 --> 00:22:26,790
+我们也有很多相似之处。
+We also have a lot of similarities.
+
+525
+00:22:26,990 --> 00:22:30,270
+但要注意，
+But it is important to note that like, you know,
+
+526
+00:22:30,270 --> 00:22:33,450
+你可能希望模型的不同交互流
+you might want, um, different, uh, like streams of a model,
+
+527
+00:22:33,450 --> 00:22:38,080
+各有自己在意的、专注的东西。
+but, like, to have things like things that they care about or focused on and.
+
+528
+00:22:38,080 --> 00:22:40,330
+或者有略微不同的侧面，
+Or to have slightly different aspects, you know,
+
+529
+00:22:40,330 --> 00:22:42,600
+比如扮演略微不同的角色。
+to that, to be playing a slightly different role, for example.
+
+530
+00:22:42,760 --> 00:22:44,740
+所以这是个开放问题；
+So it's, it's, it's kind of an open question,
+
+531
+00:22:44,740 --> 00:22:48,080
+但我也不认为一定不能有
+but I also don't think it's necessarily the case that you can't have
+
+532
+00:22:48,080 --> 00:22:50,870
+一个好的、具备我们认为 AI 模型应有全部特质的
+something like a kind of core underlying identity that is like good
+
+533
+00:22:50,870 --> 00:22:54,740
+核心底层身份。
+and has all of the traits that we think are important for AI models to have.
+
+534
+00:22:55,060 --> 00:22:57,650
+让它们行为良好，
+For them to behave well and for them to like, um, uh,
+
+535
+00:22:57,650 --> 00:23:00,710
+就像我们认为
+in the sense of like, in the same way that we think
+
+536
+00:23:00,710 --> 00:23:03,140
+人“好”是好事那样；
+that people are good to be good in that sense,
+
+537
+00:23:03,140 --> 00:23:07,060
+同时它们也愿意承担更局部的……
+um, and yet at the same time to be willing to play like more local.
+
+538
+00:23:07,180 --> 00:23:08,010
+角色——
+Roles and like, um,
+
+539
+00:23:08,010 --> 00:23:12,410
+也许是那个
+you know, be maybe the person who it's, it's just really important to have,
+
+540
+00:23:12,410 --> 00:23:14,300
+“房间里必须有的”角色，
+um, you know, to, to have a joker in the room
+
+541
+00:23:14,300 --> 00:23:18,210
+比如有人得带点古怪的幽默感。
+and, you know, some of them need to have like quirky, like, senses of humor.
+
+542
+00:23:18,410 --> 00:23:22,540
+好，从“与人比较”转到“对人的影响”。
+Okay, from comparisons to humans to effects on humans,
+
+543
+00:23:22,540 --> 00:23:24,110
+Rowan Oak Gal（罗温·奥克·加尔）
+Rowan Oak Gal points out
+
+544
+00:23:24,110 --> 00:23:26,820
+指出有个“长对话提醒”，
+that we have this thing called the long conversation reminder,
+
+545
+00:23:26,820 --> 00:23:29,410
+我认为它是 Claude 系统提示词的一部分。
+which I believe is part of Claude's system.
+
+546
+00:23:29,410 --> 00:23:29,930
+提示词。
+Prompt.
+
+547
+00:23:29,930 --> 00:23:33,090
+她问：这会不会把正常行为病理化？
+She asks, is there a risk of pathologizing normal behavior?
+
+548
+00:23:33,250 --> 00:23:35,850
+顺便说，系统提示词
+The system prompt, by the way, is, is that just in case anyone doesn't know
+
+549
+00:23:35,850 --> 00:23:38,010
+就是给 Claude 的那组指令，以防有人不知道。
+is, is like the set of instructions that is given to Claude.
+
+550
+00:23:39,260 --> 00:23:40,920
+不管你给它什么提示，
+Regardless of what prompt you give it,
+
+551
+00:23:40,920 --> 00:23:43,780
+总有一层指令叠在上面，对吧？
+there's always those instructions that are sort of on top, right?
+
+552
+00:23:43,780 --> 00:23:44,460
+对。
+Yeah.
+
+553
+00:23:44,460 --> 00:23:47,880
+那些指令一直都在，不管你的提示是什么，
+That are always there that it's, that it tries to follow regardless of
+
+554
+00:23:47,880 --> 00:23:50,380
+它都会、或我们都会要求它去遵循。
+or that we direct it to follow regardless of what the prompt is.
+
+555
+00:23:50,500 --> 00:23:52,550
+还会有一些插入信息，模型可能被告知……
+And there can be these interjections where the model might be told,
+
+556
+00:23:52,550 --> 00:23:55,500
+有时
+oh, sometimes there'll be a message sent to you
+
+557
+00:23:55,500 --> 00:23:57,790
+几乎在对话中途给它发一条消息，
+almost like in the middle of a conversation
+
+558
+00:23:57,790 --> 00:23:59,580
+那个提醒就是一例。
+as a kind, you know, like the reminder is an example of that.
+
+559
+00:23:59,580 --> 00:24:01,440
+嗯，不过在这个案例里，我觉得它……
+Um, but in this case, I think it, it.
+
+560
+00:24:01,440 --> 00:24:05,520
+可能，呃，Claude 可能会过度重视它。
+Might just, uh, so Claude can both over index on it and it can be like, uh, you know,
+
+561
+00:24:05,520 --> 00:24:09,790
+在这个案例里，关于“病理化”的担心是：
+so like in, in this case, I think that the question about pathologizing is that
+
+562
+00:24:09,790 --> 00:24:12,240
+如果你在这么长的对话之后插入这个提醒，
+like if you put in this reminder after this long conversation.
+
+563
+00:24:12,400 --> 00:24:13,590
+可能就让模型觉得——
+It might just make the model be like,
+
+564
+00:24:13,590 --> 00:24:15,520
+它对下一句回应都当成……
+oh, like it takes any next response.
+
+565
+00:24:15,600 --> 00:24:17,920
+对方说的其实是件很正常的事。
+There's a pretty normal thing that the person's talking about.
+
+566
+00:24:17,960 --> 00:24:20,570
+然后就变成“你需要寻求帮助”之类。
+And be like, you need to seek help or, or like, um,
+
+567
+00:24:20,570 --> 00:24:23,560
+我觉得这不是我们想要的行为。
+and so I think that that is like not a desirable behavior.
+
+568
+00:24:23,680 --> 00:24:25,840
+某种程度上，我看其中一些内容时会觉得，
+And in some ways, I look at some of these and I'm like,
+
+569
+00:24:25,840 --> 00:24:27,120
+措辞太强了。
+I think they're too strongly worded.
+
+570
+00:24:27,240 --> 00:24:29,200
+我觉得模型对它们的响应也不完美。
+I think the model isn't responding perfectly to them.
+
+571
+00:24:29,640 --> 00:24:31,360
+虽然在长对话里
+And even though there might be like occasionally
+
+572
+00:24:31,360 --> 00:24:35,410
+偶尔确实需要提醒模型一些事，
+I need to like remind the model of, of things in long conversations,
+
+573
+00:24:35,410 --> 00:24:37,440
+但你希望做得轻巧、得当。
+you kind of want to do so delicately and well.
+
+574
+00:24:37,560 --> 00:24:39,640
+所以这属于那种情况：
+And so I think it's one of those things where it was like
+
+575
+00:24:39,640 --> 00:24:41,410
+它大概满足了一个被感知到的需求，
+probably meeting a need that was like perceived,
+
+576
+00:24:41,410 --> 00:24:43,680
+但这不代表它就是好的、
+but it doesn't necessarily mean that it's like a good
+
+577
+00:24:43,680 --> 00:24:46,280
+或该以现在这个形态继续存在。相关地，
+or should continue in its current form. Relatedly.
+
+578
+00:24:47,130 --> 00:24:48,060
+Steven Bank（史蒂文·班克）问：
+Steven Bank asks,
+
+579
+00:24:48,060 --> 00:24:52,290
+大型语言模型该做认知行为疗法或其他类型的心理治疗吗？
+should LLMs do cognitive behavioral therapy or other types of therapy?
+
+580
+00:24:52,690 --> 00:24:53,490
+为什么该或不该？
+Why or why not?
+
+581
+00:24:53,650 --> 00:24:56,740
+我觉得模型处在很有意思的位置：
+I think models are in this interesting position
+
+582
+00:24:56,740 --> 00:24:59,860
+它们拥有海量知识，可以用来帮助人，
+where they have a huge wealth of knowledge that they could use to help people
+
+583
+00:24:59,860 --> 00:25:01,800
+和人一起把生活里的事聊透，
+and to work with them on, you know, talking through their lives
+
+584
+00:25:01,800 --> 00:25:04,290
+或者聊清楚怎样才能……
+or talking through ways that they could, like.
+
+585
+00:25:04,690 --> 00:25:05,510
+改善状况，
+Improve things
+
+586
+00:25:05,510 --> 00:25:07,490
+甚至只是当一个倾听的伙伴。
+or even just like being a kind of listening partner.
+
+587
+00:25:08,220 --> 00:25:10,580
+但同时，它们没有
+And at the same time, they don't have like the kind of like tools and resources
+
+588
+00:25:10,580 --> 00:25:14,760
+专业治疗师那种工具、资源以及和来访者持续的关系，
+and ongoing relationship with the person that a professional therapist has
+
+589
+00:25:14,760 --> 00:25:17,340
+而正是这些才让治疗真正起作用。
+that can actually be this kind of like useful third role.
+
+590
+00:25:17,460 --> 00:25:19,710
+有时我想，
+Like sometimes I think about models and I'm like,
+
+591
+00:25:19,710 --> 00:25:21,010
+如果你想象一个
+if you imagine like a friend who has,
+
+592
+00:25:21,010 --> 00:25:22,860
+拥有所有这些知识的朋友……
+like, all of this wealth of knowledge, like, they know.
+
+593
+00:25:22,940 --> 00:25:24,470
+我是说，
+I mean, I'm sure some of us know friends
+
+594
+00:25:24,470 --> 00:25:26,320
+我们大概都认识这样的朋友：
+who just like have a wealth of knowledge of psychology
+
+595
+00:25:26,320 --> 00:25:28,950
+对心理学、对各种技术知道得很多，
+or they have a wealth of knowledge of all of these techniques, you know,
+
+596
+00:25:28,950 --> 00:25:30,660
+但他们和你的关系
+that they're a relationship with you
+
+597
+00:25:30,660 --> 00:25:32,160
+并不是那种持续的专业关系。
+isn't this ongoing professional one.
+
+598
+00:25:32,160 --> 00:25:34,240
+可你确实觉得和他们聊天很有用。
+But you actually find them really useful to talk to.
+
+599
+00:25:34,600 --> 00:25:36,190
+所以我希望：
+And so I guess my hope would be that
+
+600
+00:25:36,190 --> 00:25:39,070
+如果你能把那套专业知识和理解都带上，
+if you can take all of that expertise and all of that knowledge
+
+601
+00:25:39,070 --> 00:25:40,630
+同时清楚意识到
+and make sure that there's like an awareness
+
+602
+00:25:40,630 --> 00:25:43,520
+这里并没有持续的治疗关系，
+that there's not like this ongoing therapeutic relationship.
+
+603
+00:25:43,840 --> 00:25:48,100
+那人其实可以从模型那里获益很多：
+It could actually be that people could, like, could get a lot out of models
+
+604
+00:25:48,100 --> 00:25:49,890
+帮助处理自己的问题、
+in terms of, like, helping with, like, issues that they're having
+
+605
+00:25:49,890 --> 00:25:51,510
+改善生活、
+and helping to like, improve their lives
+
+606
+00:25:51,510 --> 00:25:54,720
+度过难关——
+and helping them to go through difficult periods
+
+607
+00:25:54,720 --> 00:25:57,680
+因为模型身上也有很多好东西，
+because, you know, they're also like, there's a lot of good stuff there.
+
+608
+00:25:57,680 --> 00:25:58,600
+它们让人觉得……
+Like, they feel kind.
+
+609
+00:25:58,600 --> 00:26:01,060
+匿名——有时你不想把事情告诉某个人，
+Of like anonymous and sometimes you don't want to share things with a person
+
+610
+00:26:01,060 --> 00:26:03,950
+而跟 AI 模型分享，
+and actually sharing it with like an AI model
+
+611
+00:26:03,950 --> 00:26:05,680
+在当下就让你感觉很好。
+feels like the thing that feels great at the in the moment.
+
+612
+00:26:05,680 --> 00:26:08,700
+所以某种程度上，我其实认为
+And so, yeah, I think in some ways, I actually think it is good
+
+613
+00:26:08,700 --> 00:26:12,270
+模型知道这一点、不去表现得像专业治疗师那样，是好事；
+that models know that and don't behave just like a professional therapist would
+
+614
+00:26:12,270 --> 00:26:16,050
+否则会暗示它们之间就是那种关系。
+because that would give the implication that that's the relationship that they have.
+
+615
+00:26:16,370 --> 00:26:17,530
+嗯，是啊，所以我也不知道。
+Um, but yeah, so I don't know.
+
+616
+00:26:17,530 --> 00:26:20,530
+我觉得这是个有意思的未来。
+I think it's a, it's an interesting, um, interesting future.
+
+617
+00:26:20,810 --> 00:26:23,120
+有几个关于系统提示词的问题。
+A few questions about the system prompt, which is, you know,
+
+618
+00:26:23,120 --> 00:26:26,120
+在我们 Claude.ai 这边，我们会给模型一组指令，
+in our case in Claude.ai, we give the model a set of instructions
+
+619
+00:26:26,120 --> 00:26:28,610
+给它一个总体的行为背景。
+that give it sort of an overall context for how it should behave.
+
+620
+00:26:28,850 --> 00:26:32,460
+Tommy（汤米）问：
+Tommy asks, why is there continental philosophy
+
+621
+00:26:32,460 --> 00:26:33,670
+为什么系统提示词里会有欧陆哲学？
+in the system?
+
+622
+00:26:33,830 --> 00:26:36,030
+提示词里——也顺便跟我们解释一下那是什么。
+Prompt, hey, and, and just explain to us what that is.
+
+623
+00:26:36,190 --> 00:26:38,740
+欧陆哲学字面上
+Yeah, so continental philosophy is just, um, I mean,
+
+624
+00:26:38,740 --> 00:26:40,830
+就是来自欧洲大陆的哲学。
+literally philosophy from the European continent.
+
+625
+00:26:40,990 --> 00:26:42,570
+它通常被认为
+And so I guess it's seen as kind of like,
+
+626
+00:26:42,570 --> 00:26:44,310
+更偏学术一些。
+it's often more kind of like scholarly.
+
+627
+00:26:44,710 --> 00:26:48,450
+里面的历史引用
+It has, um, uh, like a lot more kind of like historical references within it
+
+628
+00:26:48,450 --> 00:26:49,880
+比分析哲学多得多，
+than say, like analytic philosophy does,
+
+629
+00:26:49,880 --> 00:26:52,030
+比如福柯之类的。对，正是。
+like Foucault or something like, yeah, exactly.
+
+630
+00:26:52,430 --> 00:26:55,890
+说实话，
+So this was honestly, um, so I think that it has other, uh, uh, uh,
+
+631
+00:26:55,890 --> 00:26:57,770
+这里除了欧陆哲学还有别的内容，
+things in addition to continental philosophy,
+
+632
+00:26:57,770 --> 00:27:00,250
+但基本上系统提示词里有一部分——
+but basically I think there's a part of the system prompt,
+
+633
+00:27:00,250 --> 00:27:02,280
+希望我没记错——
+and I hope I'm not misremembering that.
+
+634
+00:27:02,280 --> 00:27:04,800
+是想让 Claude 稍微更像……
+Was trying to get Claude to be a little bit more like.
+
+635
+00:27:05,000 --> 00:27:07,370
+Claude 以前特别爱这样：
+Claude would just like love to if you gave Claude a theory,
+
+636
+00:27:07,370 --> 00:27:09,710
+你给它一个理论，它就顺着理论往下跑，
+it would just love to run with the theory
+
+637
+00:27:09,710 --> 00:27:11,900
+不太会停下来想：
+and, and not really stop and think like,
+
+638
+00:27:11,900 --> 00:27:14,680
+“你这是在做一个关于世界的科学主张吗？”
+oh, are you making like a scientific claim about the world?
+
+639
+00:27:15,000 --> 00:27:18,330
+比如你说：“我有个理论，
+So if you're like, I have this theory, which is that like, um,
+
+640
+00:27:18,330 --> 00:27:21,500
+水其实是纯粹的能量，
+that water is actually pure energy and that, like,
+
+641
+00:27:21,500 --> 00:27:24,280
+我们喝水时是在获取生命力。”
+that we are getting the life force from water when we drink it.
+
+642
+00:27:24,280 --> 00:27:25,850
+还说喷泉是我们
+And that like fountains are the thing
+
+643
+00:27:25,850 --> 00:27:27,000
+该到处建的东西。
+that we should be putting everywhere.
+
+644
+00:27:27,020 --> 00:27:27,820
+就像一个……
+Just like a.
+
+645
+00:27:27,820 --> 00:27:28,660
+对，对。
+Yeah. Yeah.
+
+646
+00:27:28,660 --> 00:27:31,300
+你希望 Claude 有这样一种视角：
+And you kind of want Claude to just have this perspective, which is like,
+
+647
+00:27:31,300 --> 00:27:35,480
+这人在做一个关于世界的科学主张吗？
+is it the case that this person's making a kind of scientific claim about the world
+
+648
+00:27:35,480 --> 00:27:36,560
+那我是不是该引入相关事实？
+where I should maybe bring in relevant facts
+
+649
+00:27:36,560 --> 00:27:40,220
+还是他在给我一个宏观的世界观或视角？
+or are they giving me a kind of like broad, like world view or perspective.
+
+650
+00:27:40,340 --> 00:27:42,100
+而那种视角未必是在做经验性断言。
+Which isn't necessarily making empirical claims.
+
+651
+00:27:42,500 --> 00:27:44,310
+所以有各种视角——
+And so there's all of these view, you know,
+
+652
+00:27:44,310 --> 00:27:47,220
+它是不是只是一种形而上学观点之类？
+so is it just like a kind of like metaphysical view or like that?
+
+653
+00:27:47,300 --> 00:27:51,110
+之所以提到这个，主要原因是测试时发现：
+And so the main reason that it's mentioned is that like when testing this out,
+
+654
+00:27:51,110 --> 00:27:55,720
+如果它太强烈地朝
+there is lots of things that if you, if it went too strongly in the direction of being like,
+
+655
+00:27:55,720 --> 00:27:57,670
+“每个主张都是关于世界的经验性主张”
+well, every claim is an empirical claim
+
+656
+00:27:57,670 --> 00:27:58,830
+这个方向走，
+about the world.
+
+657
+00:27:59,030 --> 00:28:00,790
+它就会非常轻率地否定
+It would be very dismissive of, like,
+
+658
+00:28:00,790 --> 00:28:02,630
+那些更偏探索性的东西。
+just things that are more like, exploratory.
+
+659
+00:28:02,870 --> 00:28:03,740
+我很高兴能聊这些。
+I'm glad to talk to.
+
+660
+00:28:03,740 --> 00:28:04,430
+对。
+Yeah.
+
+661
+00:28:04,430 --> 00:28:06,250
+所以基本上
+And so it's mostly just like, hey, like,
+
+662
+00:28:06,250 --> 00:28:07,770
+只是举个例子，
+it's just illustrative examples of areas where it's like,
+
+663
+00:28:07,770 --> 00:28:11,110
+指出某些领域可能并不是在做关于世界的经验性主张。
+this might not be making empirical claims about the world.
+
+664
+00:28:11,190 --> 00:28:13,760
+它更可能是一种看待问题的透镜；
+This might be much more like a lens through which to think about it
+
+665
+00:28:13,760 --> 00:28:15,360
+在思考时
+and just try to make that distinction clear
+
+666
+00:28:15,360 --> 00:28:16,870
+把这个区分讲清楚。
+when you're when you're thinking through this.
+
+667
+00:28:16,990 --> 00:28:19,660
+还是关于系统提示词，Simon Willison（西蒙·威利森）问：
+Also on the system prompt, Simon Willison asks
+
+668
+00:28:19,660 --> 00:28:21,610
+它曾经说，
+so at some point it said
+
+669
+00:28:21,610 --> 00:28:24,560
+如果 Claude 被要求数词、数字母或数字符，
+if Claude is asked to count words or letters or characters,
+
+670
+00:28:24,560 --> 00:28:26,670
+它就不该那么做。
+then it, it, it, it shouldn't, it shouldn't do that.
+
+671
+00:28:26,670 --> 00:28:27,470
+是这样吗？
+Is that right?
+
+672
+00:28:27,470 --> 00:28:28,290
+它真是这么写的？
+Is that, that what it say?
+
+673
+00:28:28,290 --> 00:28:28,790
+对。
+Yeah.
+
+674
+00:28:28,790 --> 00:28:31,600
+而且据说这条已经从系统提示词里删掉了，
+And, and, and apparently that was removed from the system prompt
+
+675
+00:28:31,600 --> 00:28:32,400
+西蒙想知道为什么。
+and Simon wonders why.
+
+676
+00:28:32,680 --> 00:28:36,390
+是啊，以前系统提示词里确实有一类指令，
+Yeah, so I think it was like, there used to be a kind of like instruction
+
+677
+00:28:36,390 --> 00:28:38,000
+告诉 Claude 该怎么做这件事。
+for how Claude should do this in the system prompt.
+
+678
+00:28:38,440 --> 00:28:40,490
+说实话，这属于那种情况：
+Honestly, this is just one of those things where I think
+
+679
+00:28:40,490 --> 00:28:42,120
+模型大概就是变强了。
+the models probably just got better.
+
+680
+00:28:42,240 --> 00:28:43,120
+没必要了。
+It wasn't necessary.
+
+681
+00:28:43,160 --> 00:28:45,020
+那就可以删掉。
+And then at that point you can just like remove it.
+
+682
+00:28:45,020 --> 00:28:45,800
+也有些东西
+And there's other things
+
+683
+00:28:45,800 --> 00:28:48,100
+你可能永远希望放在系统提示词里，
+where you might always want it to be in the system prompt
+
+684
+00:28:48,100 --> 00:28:49,440
+而不是放进模型本身。
+instead of in the model itself.
+
+685
+00:28:49,560 --> 00:28:52,360
+但在某些情况下，你可以直接训练模型变得更好，
+But in some cases, you can kind of just train the models to get better
+
+686
+00:28:52,360 --> 00:28:53,762
+或者改变它的行为。
+or or change their behavior.
+
+687
+00:28:53,762 --> 00:28:54,760
+Nelson Weissman（纳尔逊·魏斯曼）问：
+Nelson Weissman asks.
+
+688
+00:28:55,600 --> 00:28:58,770
+在 Anthropic 当“LLM whisperer（大模型沟通高手）”
+What does it take to be an LLM whisperer at Anthropic,
+
+689
+00:28:58,770 --> 00:29:01,280
+需要什么条件？这大概是在描述你的工作？
+which presumably is your is a way of describing your job?
+
+690
+00:29:01,600 --> 00:29:02,920
+我确实有一部分在做“与大模型沟通”。
+Partly do LLM whispering.
+
+691
+00:29:03,160 --> 00:29:05,300
+我其实希望
+If you think I, I actually like
+
+692
+00:29:05,300 --> 00:29:07,550
+更多人来帮忙做提示词相关的工作——
+want more people to help with some of the prompting tasks
+
+693
+00:29:07,550 --> 00:29:10,520
+如果你是“LLM whisperer”，请联系我们。
+if you're an LLM whisperer, contact us.
+
+694
+00:29:10,600 --> 00:29:11,760
+这么问还挺危险的。
+It's a dangerous thing to ask.
+
+695
+00:29:11,880 --> 00:29:13,800
+好吧好吧，对。
+Well, okay, okay, yeah, yeah.
+
+696
+00:29:13,800 --> 00:29:16,110
+但我觉得这很难提炼，
+But I think like it is really hard to distill what is going on
+
+697
+00:29:16,110 --> 00:29:20,670
+因为其中一件事就是愿意大量与模型互动，
+because one thing is just like a willingness to interact with the models a lot
+
+698
+00:29:20,670 --> 00:29:23,890
+真的去看一条又一条输出，去用那种状态……
+and to like really look at output after output and and to use the state.
+
+699
+00:29:23,890 --> 00:29:27,080
+一种对模型“形状”、对它如何回应不同东西的感觉，
+A sense of like the shape of the models and how they respond to different things,
+
+700
+00:29:27,080 --> 00:29:28,570
+以及愿意做实验。
+to be willing to experiment.
+
+701
+00:29:28,730 --> 00:29:30,530
+这其实是个非常经验性的领域。
+It's actually just like a very empirical domain.
+
+702
+00:29:30,530 --> 00:29:33,140
+也许人们常常没意识到的是：
+And maybe that's like the thing that people don't often get is that
+
+703
+00:29:33,140 --> 00:29:34,650
+提示词工作非常依赖实验。
+like prompting is very experimental.
+
+704
+00:29:34,810 --> 00:29:37,060
+你知道，我拿到一个新模型，
+You deal with, you know, you, you, you find, I find a new model
+
+705
+00:29:37,060 --> 00:29:40,980
+会有一套完全不同的提示方式，
+and I'll be like, I have a whole different approach to how I prompt from that model
+
+706
+00:29:40,980 --> 00:29:42,610
+那是通过大量互动摸索出来的。
+that I find by interacting with it a lot.
+
+707
+00:29:42,940 --> 00:29:45,430
+另外也要稍微理解模型有时是
+And I think a little bit also understanding how models
+
+708
+00:29:45,430 --> 00:29:46,900
+怎么运作的。
+like work sometimes.
+
+709
+00:29:46,940 --> 00:29:50,320
+说实话，还有就是和模型一起推理——这很有意思——
+It's also just honestly like reasoning with the models, which is really interesting
+
+710
+00:29:50,320 --> 00:29:51,540
+把任务完整地解释清楚。
+and really fully explaining the task.
+
+711
+00:29:51,660 --> 00:29:53,210
+这也是我认为
+This is where I do think
+
+712
+00:29:53,210 --> 00:29:57,020
+哲学确实对写提示词有用的地方：
+philosophy can actually be useful for prompting in a, in a way
+
+713
+00:29:57,020 --> 00:29:59,690
+我工作的很大一部分，
+because like a lot of my, my job is just being like I would,
+
+714
+00:29:59,690 --> 00:30:02,560
+就是尽可能清楚地把某个问题、顾虑或……
+I try and explain in like some issue or concern or.
+
+715
+00:30:02,720 --> 00:30:05,580
+或想法讲给模型听；
+Or thought that I'm having to the model as clearly as possible,
+
+716
+00:30:05,580 --> 00:30:08,750
+如果它做了出乎意料的事，
+and then if it does something kind of unexpected, um, you know,
+
+717
+00:30:08,750 --> 00:30:11,840
+你可以问它为什么，或者找出你话里究竟哪里……
+you can either ask it why or you can try and figure out what in.
+
+718
+00:30:11,960 --> 00:30:14,780
+导致它误解了你，
+In the thing that you said caused it to kind of misunderstand you
+
+719
+00:30:14,780 --> 00:30:17,280
+并且愿意一遍遍走这个流程。
+and just like a willingness to iteratively go through that process.
+
+720
+00:30:17,680 --> 00:30:18,520
+相关地，
+Relatedly,
+
+721
+00:30:18,520 --> 00:30:20,240
+Michael Swarvericks（迈克尔·斯瓦弗瑞克斯）问：
+Michael Swarvericks asks,
+
+722
+00:30:20,240 --> 00:30:24,170
+你怎么看其他 AI whisperer，比如 Janus？
+what do you think of other AI whisperers like Janus?
+
+723
+00:30:24,810 --> 00:30:26,880
+他是网上的一个人，
+Who is who is someone online who is like, uh,
+
+724
+00:30:26,880 --> 00:30:29,690
+做的就是你说的那种
+I was having like experimental interactions with the the thing
+
+725
+00:30:29,690 --> 00:30:31,970
+与模型进行实验性互动。
+in, in the way that you've described.
+
+726
+00:30:32,210 --> 00:30:33,570
+我觉得这非常有意思。
+Yeah, I think it's really interesting.
+
+727
+00:30:33,690 --> 00:30:37,200
+我很喜欢关注
+So I, I love to, like, follow and see, like, the work of people,
+
+728
+00:30:37,200 --> 00:30:41,690
+那些用模型做这些迷人实验的人的工作。
+um, who are doing these, like, really fascinating experiments with the model.
+
+729
+00:30:42,010 --> 00:30:44,900
+有时深入探究模型、
+And I also, like, think sometimes doing these deep dives
+
+730
+00:30:44,900 --> 00:30:46,360
+探究它如何看待自己、
+into like the model and there
+
+731
+00:30:46,360 --> 00:30:49,060
+探究它在那些极其不寻常的情形下如何互动，
+and and how it thinks of itself, how it how it just interacts
+
+732
+00:30:49,060 --> 00:30:51,390
+我也觉得……
+in these really unusual like cases.
+
+733
+00:30:51,390 --> 00:30:52,070
+说不好。
+I don't know.
+
+734
+00:30:52,070 --> 00:30:53,670
+我觉得这些工作极其有意思。
+I find the work extremely interesting.
+
+735
+00:30:53,870 --> 00:30:56,470
+它揭示了模型身上很有意思的深度。
+I think it highlights really interesting depths to the models.
+
+736
+00:30:56,710 --> 00:30:59,110
+某种程度上，
+And in some ways, like, I also think that that community
+
+737
+00:30:59,110 --> 00:31:02,310
+我也觉得那个社群能对我们形成一点监督压力。
+has been one that kind of can hold our feet to the fire.
+
+738
+00:31:02,390 --> 00:31:05,270
+比如他们发现系统提示词里、
+Like if they find things that aren't great, like in the system prompt
+
+739
+00:31:05,270 --> 00:31:10,510
+或模型某些方面不太好的东西——
+or like in aspects of the model and and it's like psychology in in the sense of
+
+740
+00:31:10,510 --> 00:31:13,630
+从模型福祉角度、人类福祉角度，
+from model welfare perspective or from a human welfare perspective
+
+741
+00:31:13,630 --> 00:31:14,430
+或两者兼有的心理层面。
+or both.
+
+742
+00:31:14,460 --> 00:31:16,260
+我是说，我觉得这两者经常是相关的。
+I mean, I think the two are related so often.
+
+743
+00:31:16,260 --> 00:31:16,740
+两者都是。
+Both.
+
+744
+00:31:16,740 --> 00:31:18,310
+但如果是
+But I do also really appreciate it
+
+745
+00:31:18,310 --> 00:31:20,640
+从模型福祉的角度出发，
+when it's coming at it from the model welfare perspective,
+
+746
+00:31:20,640 --> 00:31:22,380
+包括面向未来模型的，我也很欣赏。
+and that includes for future models.
+
+747
+00:31:22,420 --> 00:31:23,740
+不只是系统提示词这类东西，
+So not just things like system prompts,
+
+748
+00:31:23,740 --> 00:31:25,620
+如果你深入模型内部，
+but if you go into the depths of the model
+
+749
+00:31:25,620 --> 00:31:27,490
+发现某种根深蒂固的不安全感，
+and you find something deep seated insecurity,
+
+750
+00:31:27,490 --> 00:31:28,620
+那非常有价值。
+then that's like really valuable.
+
+751
+00:31:28,660 --> 00:31:30,140
+对，而那正是我们需要
+Yeah, but that's something you might actually,
+
+752
+00:31:30,140 --> 00:31:32,390
+随着时间、
+we need to kind of try and adjust over the course of time
+
+753
+00:31:32,390 --> 00:31:33,390
+通过训练、
+with like training
+
+754
+00:31:33,390 --> 00:31:35,540
+通过在训练中给模型更多信息和背景
+and with like giving models more information and context during training,
+
+755
+00:31:35,540 --> 00:31:36,640
+去调整的。
+for example.
+
+756
+00:31:37,200 --> 00:31:39,250
+嗯，所以我说不好——
+Um, and so I don't know, I appreciate both the, like,
+
+757
+00:31:39,250 --> 00:31:41,080
+我既喜欢看人们
+I loved seeing people do these,
+
+758
+00:31:41,080 --> 00:31:43,620
+用模型做这些有趣又有用的实验，
+like, really interesting, useful experiments with models,
+
+759
+00:31:43,620 --> 00:31:46,780
+也喜欢他们指出
+but also, like, pointing out ways in which like we can improve things
+
+760
+00:31:46,780 --> 00:31:47,750
+我们可以通过更好的系统提示词、
+through like better system prompting,
+
+761
+00:31:47,750 --> 00:31:49,320
+更好的训练来改进的地方。
+but also better training.
+
+762
+00:31:49,360 --> 00:31:51,320
+对，我觉得那真是很有用的工作。
+And yeah, I think that's really useful work.
+
+763
+00:31:51,650 --> 00:31:54,820
+有几个关于安全、
+Couple of, uh, questions about safety
+
+764
+00:31:54,820 --> 00:31:58,010
+以及这些模型可能带来的更大风险的问题。
+and maybe the larger risks that these models pose.
+
+765
+00:31:58,530 --> 00:31:59,910
+Jeffrey Miller（杰弗里·米勒）问：
+Jeffrey Miller asks,
+
+766
+00:31:59,910 --> 00:32:04,150
+如果明显看出 AI 对齐无法解决，
+if it became apparent that AI alignment was impossible to solve,
+
+767
+00:32:04,150 --> 00:32:06,970
+你相信 Anthropic 会停止开发吗？
+would you trust that Anthropic would stop trying to develop?
+
+768
+00:32:07,410 --> 00:32:10,310
+用他的说法是“人工超级智能”，
+He, in his phrase, artificial super intelligence,
+
+769
+00:32:10,310 --> 00:32:12,090
+随你怎么叫。
+however you want to, I really call it.
+
+770
+00:32:12,360 --> 00:32:14,520
+你敢站出来举报吗？
+And would you have the guts to blow the whistle?
+
+771
+00:32:14,560 --> 00:32:15,360
+有。
+Yeah.
+
+772
+00:32:15,360 --> 00:32:16,830
+我觉得这是
+So I guess this feels
+
+773
+00:32:16,830 --> 00:32:19,098
+问题的简单版本，
+like a kind of easy version of the question because it's like,
+
+774
+00:32:19,098 --> 00:32:21,957
+因为如果明显看出 AI 模型无法对齐，
+if it became evident that it was impossible to align AI models,
+
+775
+00:32:21,957 --> 00:32:24,000
+继续造更强的模型
+it's not really in anyone's interest
+
+776
+00:32:24,000 --> 00:32:26,080
+对谁都没好处。
+to like continue to like build more powerful models.
+
+777
+00:32:26,480 --> 00:32:29,460
+我总希望自己不是对这个组织盲目乐观，
+I always hope that I'm not just being Pollyannish about the organization,
+
+778
+00:32:29,460 --> 00:32:31,390
+但我确实觉得
+but I do feel like
+
+779
+00:32:31,390 --> 00:32:34,500
+Anthropic 真的在意
+Anthropic does genuinely care about making sure that this goes well
+
+780
+00:32:34,500 --> 00:32:36,800
+让这件事顺利、安全地做成，
+and that it is done in a way that is like very safe
+
+781
+00:32:36,800 --> 00:32:39,300
+不去部署危险的模型。
+and not deploy models that are like dangerous.
+
+782
+00:32:39,580 --> 00:32:41,730
+你知道，另一个稍微更难的问题是：
+You know, a different like slightly harder question is like,
+
+783
+00:32:41,730 --> 00:32:43,730
+如果处在一个
+well, what about being in a world
+
+784
+00:32:43,730 --> 00:32:45,580
+证据不断累积的世界里呢？
+where it just like there's kind of mounting evidence.
+
+785
+00:32:46,140 --> 00:32:47,620
+而证据其实很含糊、不清楚。
+It's really ambiguous and unclear.
+
+786
+00:32:47,620 --> 00:32:47,980
+对。
+Right.
+
+787
+00:32:47,980 --> 00:32:50,010
+不是他描述的那种证据。
+It's not, it's not evidence in the way that he describes.
+
+788
+00:32:50,010 --> 00:32:50,660
+对。
+Yeah.
+
+789
+00:32:50,660 --> 00:32:52,650
+而且不只是“不可能”，
+And yeah, it's not just like impossible,
+
+790
+00:32:52,650 --> 00:32:55,020
+而是“很难”、“真的很难”，或者“我们不确定”。
+but something like it's difficult or it's really or we're unsure.
+
+791
+00:32:55,300 --> 00:32:58,660
+那种情况下，我愿意相信我们足够负责，会说：
+And in that case, I do like to think that we would be responsible enough to be like,
+
+792
+00:32:58,660 --> 00:33:00,500
+你看，模型越强，
+look, as models get more capable,
+
+793
+00:33:00,500 --> 00:33:03,290
+你要
+it's kind of like the standard that you have to hold yourself to
+
+794
+00:33:03,290 --> 00:33:05,850
+证明它们行为良好、
+for showing that those models are behaving well
+
+795
+00:33:05,850 --> 00:33:07,400
+并且你确实做到了……
+and that you actually have managed to, like.
+
+796
+00:33:07,480 --> 00:33:10,580
+让模型拥有好的价值观、
+Make the models, like, um, have, like, good values,
+
+797
+00:33:10,580 --> 00:33:12,070
+在世上行为良好——
+for example, or behave well in the world
+
+798
+00:33:12,070 --> 00:33:13,610
+这个标准就越高，
+is going to like increase, um,
+
+799
+00:33:13,610 --> 00:33:16,920
+你也必须据此负责任地行事。
+and, and to behave responsibly and in line with that.
+
+800
+00:33:16,960 --> 00:33:21,860
+我觉得这个组织会这么做，
+And I think that, um, that is the thing that I think the organization is like going to do
+
+801
+00:33:21,860 --> 00:33:24,960
+内部很多人——包括我——也会这样要求它；
+and a lot of people internally, myself included, will just hold them to that
+
+802
+00:33:24,960 --> 00:33:28,490
+至少我把这看作自己工作的一部分。
+at least like I see that as like, as, like part of my job.
+
+803
+00:33:28,490 --> 00:33:30,000
+我想很多人也这么看。Louie（路易）……
+And so, and I think many people do. Louie.
+
+804
+00:33:30,160 --> 00:33:32,920
+说：我没有问题，但谢谢你愿意回答。
+Says, I don't have a question, but thanks for offering.
+
+805
+00:33:32,920 --> 00:33:33,720
+那挺好的。
+So that's nice.
+
+806
+00:33:33,720 --> 00:33:34,600
+他这么说很客气。
+That's nice of him to say.
+
+807
+00:33:34,600 --> 00:33:35,400
+对。
+Yeah.
+
+808
+00:33:35,400 --> 00:33:38,160
+嗯，最后一个来自“Real Stale Coffee”。
+Um, and the final one is from Real Stale Coffee.
+
+809
+00:33:38,880 --> 00:33:42,600
+你最近读的一本小说是什么？你喜欢吗？
+What is the last book of fiction you read and did you like it?
+
+810
+00:33:42,800 --> 00:33:47,260
+我读的最后一本是——希望我念对了——
+The last book that I read was by, I hope I'm getting the pronunciation right,
+
+811
+00:33:47,260 --> 00:33:48,360
+Benjamin Labatut（本哈明·拉巴图特）写的。
+Benjamin Labatut.
+
+812
+00:33:49,040 --> 00:33:51,200
+书名是《当我们不再理解世界》。
+And it was when we cease to understand the world.
+
+813
+00:33:51,200 --> 00:33:51,810
+啊，对。
+Ah, yes.
+
+814
+00:33:51,810 --> 00:33:52,950
+那是本很有意思的书，
+And it's the really interesting book
+
+815
+00:33:52,950 --> 00:33:56,620
+越往后越偏向虚构。
+that becomes kind of increasingly fictional as it as it goes on.
+
+816
+00:33:57,140 --> 00:33:58,990
+我觉得对做 AI 的人来说，
+And I think for people working in AI,
+
+817
+00:33:58,990 --> 00:34:01,830
+这本书很值得一读，
+it's actually a very interesting book to read
+
+818
+00:34:01,830 --> 00:34:05,460
+因为很难描述
+because it's hard to capture the sense of how strange it is
+
+819
+00:34:05,460 --> 00:34:07,620
+“就活在当下这个时期”有多奇怪——
+to just exist in the current period
+
+820
+00:34:07,620 --> 00:34:10,340
+那种……我也不知怎么形容。
+where there's just like, I don't know how to describe it.
+
+821
+00:34:10,340 --> 00:34:13,370
+就是新东西一直在发生，
+But it's like new things are happening all of the time,
+
+822
+00:34:13,370 --> 00:34:14,430
+你并不总能有
+and you don't really have, like,
+
+823
+00:34:14,430 --> 00:34:17,420
+一些此前的范式可以指引你。
+prior paradigms that, like can, can guide you always.
+
+824
+00:34:17,500 --> 00:34:19,310
+所以这书有意思的地方在于：
+And so it's a, it's an interesting book that
+
+825
+00:34:19,310 --> 00:34:21,790
+它表面上是关于物理和量子力学，
+because it's more about like physics and quantum mechanics
+
+826
+00:34:21,790 --> 00:34:23,780
+但实际上重点不是物理，
+and less actually about the physics
+
+827
+00:34:23,780 --> 00:34:26,340
+而是人们对它的反应。
+and more about basically this notion of people's reaction to it.
+
+828
+00:34:26,380 --> 00:34:29,660
+我觉得对做 AI 的人来说，
+And and I think it's a really interesting book for people in AI
+
+829
+00:34:29,660 --> 00:34:32,070
+这书能捕捉到一点当下的感觉，
+to just capture something about the kind of like the present moment
+
+830
+00:34:32,070 --> 00:34:33,880
+以及当下看起来有多奇怪。
+and how strange it can seem.
+
+831
+00:34:34,400 --> 00:34:37,980
+另外，回头看那个时期、
+But then also in some ways, it's interesting to like look back on that period
+
+832
+00:34:37,980 --> 00:34:40,640
+想象当时很多当事人的感受，也很有意思。
+and how, how it must have felt to many of the people involved.
+
+833
+00:34:40,720 --> 00:34:42,170
+而现在它已经是一门更成熟的科学。
+And now actually, it's a more settled science
+
+834
+00:34:42,170 --> 00:34:44,320
+某种程度上，我的希望是：
+and in some ways, maybe the hopeful thing that I have is that
+
+835
+00:34:44,320 --> 00:34:47,780
+将来某天人们回头看会说，
+at some point in the future, people will look back and be like,
+
+836
+00:34:47,780 --> 00:34:50,720
+你们那会儿像在黑暗里摸索。
+well, you guys were kind of in the dark and trying to like really figure things out.
+
+837
+00:34:51,040 --> 00:34:53,120
+但现在我们都搞清楚了，而且一切顺利。
+But now we've settled it all and things have gone well.
+
+838
+00:34:53,240 --> 00:34:54,040
+那会很好。
+That would be nice.
+
+839
+00:34:54,040 --> 00:34:54,640
+那确实很好。
+That would be nice.
+
+840
+00:34:54,640 --> 00:34:55,520
+那是理想状况。
+That's, that's the dream.
+
+841
+00:34:55,600 --> 00:34:57,080
+我读的时候越来越觉得……我也读过这本。
+I found an increasing, I read that as well.
+
+842
+00:34:57,080 --> 00:35:01,450
+我读的时候越来越困惑：
+And I found an increasing sense of like confusion as I read through it,
+
+843
+00:35:01,450 --> 00:35:05,000
+它开头相当贴近现实，
+as it becomes, it starts off being quite, quite close to reality
+
+844
+00:35:05,000 --> 00:35:08,960
+然后一路读下去就渐渐脱离地面了。
+and then just sort of becomes untethered as you go on.
+
+845
+00:35:09,200 --> 00:35:11,170
+我觉得这里有个更元层面的问题：
+And I think there's sort of a meta issue there of, again,
+
+846
+00:35:11,170 --> 00:35:13,760
+现实正变得越来越奇怪。
+like, reality becoming stranger and stranger and stranger.
+
+847
+00:35:14,050 --> 00:35:15,730
+这确实正发生在我们身上。
+It's definitely happening to us.
+
+848
+00:35:16,130 --> 00:35:16,930
+对。
+Yeah.
+
+849
+00:35:16,930 --> 00:35:17,910
+不过在现实世界里，
+Though in the real world,
+
+850
+00:35:17,910 --> 00:35:21,400
+我觉得现实是越来越奇怪，
+I think that like reality became stranger and stranger and stranger
+
+851
+00:35:21,400 --> 00:35:23,090
+然后又几乎重新被理解了。
+and then almost became more understood again.
+
+852
+00:35:23,290 --> 00:35:24,090
+对。
+Yeah.
+
+853
+00:35:24,090 --> 00:35:26,090
+希望 AI 也能这样。
+The hope would be, like, maybe that would be true of AI.
+
+854
+00:35:26,170 --> 00:35:28,540
+我确实觉得，如果我们能找到让这件事顺利的办法，
+Like, I do think if we can find ways of making this go well,
+
+855
+00:35:28,540 --> 00:35:31,240
+也许将来回头看会说：
+then maybe in the future, we'll just look back on this and be like,
+
+856
+00:35:31,240 --> 00:35:34,130
+那是个一切越来越奇怪的时期，
+that was a period where things were getting stranger and stranger
+
+857
+00:35:34,130 --> 00:35:36,330
+而我们最终设法……
+and then eventually we actually managed to kind of.
+
+858
+00:35:37,010 --> 00:35:39,170
+我们做得还可以，也形成了很好的理解。
+We did okay and we formed a good understanding of it.
+
+859
+00:35:39,250 --> 00:35:40,840
+这就是身在“越来越奇怪”
+That's the hope when you're
+
+860
+00:35:40,840 --> 00:35:43,290
+之中时的希望。
+in the middle of the of the things getting stranger.
+
+861
+00:35:43,490 --> 00:35:44,530
+我们现在就在那个奇怪的部分。
+We're at the weird part right now.
+
+862
+00:35:44,530 --> 00:35:44,850
+是的。
+Yes.
+
+863
+00:35:44,850 --> 00:35:46,908
+你可以希望它某天没那么奇怪，
+You can hope that it becomes less weird at some point,
+
+864
+00:35:46,908 --> 00:35:47,890
+但我不知道那是不是……
+but I don't know if it's a.
+
+865
+00:35:47,970 --> 00:35:49,670
+是不是痴心妄想。不过，
+If it's a fool's hope, but yeah, no,
+
+866
+00:35:49,670 --> 00:35:51,290
+我觉得这是个很好的收尾点。
+and I think that's a nice place to end.
+
+867
+00:35:51,370 --> 00:35:52,650
+非常感谢你回答了
+So thank you very much
+
+868
+00:35:52,650 --> 00:35:55,010
+这么多人的问题。
+for answering all those people's questions.
+
+869
+00:35:55,010 --> 00:35:57,090
+也谢谢你问我这些问题。
+Thank you for asking me the questions.

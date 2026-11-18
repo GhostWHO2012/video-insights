@@ -1,0 +1,1044 @@
+1
+00:00:00,000 --> 00:00:01,890
+大家好，我是 Nikolay Petrov，
+Hello, my name is Nikolay Petrov,
+
+2
+00:00:01,890 --> 00:00:05,280
+今天要聊的是 Skill（技能包），以及智能体对
+and we will be talking about skills and agents' knowledge of
+
+3
+00:00:05,280 --> 00:00:10,560
+这些 Skill 的了解程度。先从简单的提示词说起，
+those skills. We'll start with the simple prompts,
+
+4
+00:00:10,560 --> 00:00:13,910
+我们一开始用提示词试各种新东西，
+where we've been playing with the new
+
+5
+00:00:13,910 --> 00:00:15,910
+让智能体去做新的工作，
+stuff, new work being done by the agents,
+
+6
+00:00:15,910 --> 00:00:17,770
+一遍又一遍地重复这些提示词，
+repeating those prompts over and over again,
+
+7
+00:00:18,110 --> 00:00:20,830
+然后就开始把它们打包成 Skill，
+and then we start packing those into skills,
+
+8
+00:00:20,830 --> 00:00:25,480
+变成可重复、可复现、可移植的
+creating repeatable, reproducible, portable types
+
+9
+00:00:25,480 --> 00:00:29,810
+功能或能力，
+of functionality or capabilities
+
+10
+00:00:29,810 --> 00:00:34,020
+可以教给智能体去用。其中有些
+that we can teach agents to work with. And some of those
+
+11
+00:00:34,020 --> 00:00:38,880
+Skill 非常重要，在 GitHub 上有几百颗星。
+skills are very important, hundreds of stars on GitHub.
+
+12
+00:00:38,880 --> 00:00:41,940
+Skill 有不同的类型：
+There are different types of skills:
+
+13
+00:00:41,940 --> 00:00:43,710
+有的教模型新东西，
+some teach models something new,
+
+14
+00:00:43,710 --> 00:00:47,980
+给模型带来新的知识或能力；
+bringing new knowledge or capabilities to the model,
+
+15
+00:00:47,980 --> 00:00:54,430
+也有的只是引导型或流程型 Skill，
+but there are also types of just steering or process skills,
+
+16
+00:00:54,430 --> 00:00:56,360
+并不带来任何
+where we do not bring any
+
+17
+00:00:56,360 --> 00:00:58,840
+额外信息，
+additional information,
+
+18
+00:00:58,840 --> 00:01:02,290
+只是把我们希望智能体执行的那串动作
+but just get a repeatable flow of the actions that we
+
+19
+00:01:02,290 --> 00:01:05,330
+变成可重复的流程。两种都有用。
+want agents to perform. Both are useful.
+
+20
+00:01:05,330 --> 00:01:07,770
+这次我们要讲的是
+In this session we'll be talking about
+
+21
+00:01:07,770 --> 00:01:11,960
+带来新知识的那类 Skill，
+the new-knowledge type of skills,
+
+22
+00:01:11,960 --> 00:01:16,540
+看看能从模型
+and we'll see what we can get from the
+
+23
+00:01:16,540 --> 00:01:20,700
+对这些 Skill 的理解里得到什么。
+model's understanding of those skills.
+
+24
+00:01:20,700 --> 00:01:24,280
+第一批 Skill 打包好之后，
+So we get our first skills packed, start
+
+25
+00:01:24,280 --> 00:01:30,730
+开始用起来，基本先凭感觉判断：“它管不管用？”
+using them, basically starting with the feel of "does it work
+
+26
+00:01:30,730 --> 00:01:33,450
+但还有一种
+or not?" But there is also the
+
+27
+00:01:33,450 --> 00:01:36,230
+更技术化、更确定的方法，
+more technical way, and more deterministic way,
+
+28
+00:01:36,230 --> 00:01:38,250
+用来检查 Skill 有没有起作用，
+of checking if skills are working or not and
+
+29
+00:01:38,250 --> 00:01:41,330
+以及作用有多大，那就是评测（evals）。
+what the impacts of those skills are: evals.
+
+30
+00:01:41,330 --> 00:01:45,400
+评测可以用不同的格式来定义，
+There are different formats where evals can be defined,
+
+31
+00:01:45,400 --> 00:01:49,090
+但本质上就是一份任务定义，
+but in essence this is a task definition
+
+32
+00:01:49,090 --> 00:01:54,500
+写明你希望智能体能解决什么。把它
+that you want your agent to be able to solve. You put it in
+
+33
+00:01:54,500 --> 00:01:58,450
+设定好，最好是确定性的，
+place, ideally more deterministic,
+
+34
+00:01:58,450 --> 00:02:02,340
+这样才能验证。然后对比两组：一组
+so we can validate it, and we can check two arms: one
+
+35
+00:02:02,340 --> 00:02:05,170
+不加载 Skill，另一组
+where no skill is loaded, and the second one
+
+36
+00:02:05,170 --> 00:02:06,820
+加载 Skill，
+where we're loading the skill and providing
+
+37
+00:02:06,820 --> 00:02:09,490
+把这些额外信息放进上下文。
+this additional information to the context.
+
+38
+00:02:09,490 --> 00:02:12,820
+然后比较两组。要比较的有好几项：
+And we compare the arms. There are multiple things:
+
+39
+00:02:12,820 --> 00:02:17,290
+一是解决了多少道评测题。这个例子里，
+one is how many evals have been solved. In this case,
+
+40
+00:02:17,290 --> 00:02:20,240
+不加载 Skill 时 5 题做对 3 题，
+with no skill we're solving three out of five,
+
+41
+00:02:21,260 --> 00:02:24,700
+加载后 5 题全对，也就是说
+with the skill we're solving all five, meaning
+
+42
+00:02:24,700 --> 00:02:28,380
+多解决了两个任务。另外还会影响
+that we get two more tasks. There would also be implications
+
+43
+00:02:28,380 --> 00:02:33,430
+token（词元）用量、完成任务的耗时
+on token usage, or the time it took those tasks to be completed,
+
+44
+00:02:33,430 --> 00:02:35,580
+以及其他因素。但
+and other factors. But at
+
+45
+00:02:35,580 --> 00:02:39,310
+最后就是对比这些，看哪些说得通、
+the end we are comparing those and seeing what makes sense,
+
+46
+00:02:39,310 --> 00:02:41,520
+哪些说不通。这是评估 Skill 的主要
+what not. And this is one of the main
+
+47
+00:02:41,520 --> 00:02:44,400
+工具之一，用来证明
+tools for evaluating skills and saying
+
+48
+00:02:44,400 --> 00:02:49,120
+它们不只是好点子，而是真正有效的
+that they're not just nice ideas, but actually working
+
+49
+00:02:49,120 --> 00:02:53,500
+给智能体的指令和上下文。
+pieces of instructions and context for the agents.
+
+50
+00:02:53,500 --> 00:02:56,690
+那接下来呢？到了这个阶段，
+But what next? We get to the stage
+
+51
+00:02:56,690 --> 00:03:01,210
+Skill 能用了，也能通过一些评测，
+where we have a working skill, it solves some evals,
+
+52
+00:03:01,210 --> 00:03:04,640
+但我们知道肯定有更好的
+but we know that there should be a better
+
+53
+00:03:04,640 --> 00:03:10,630
+办法。模型在不断进化，也可能有些情况
+way. We have models evolving, there might be cases
+
+54
+00:03:10,630 --> 00:03:16,580
+我们想让 Skill 更高效，
+where we want to get the skill more efficient,
+
+55
+00:03:16,580 --> 00:03:19,040
+也就是少消耗 token。
+meaning consuming fewer tokens.
+
+56
+00:03:19,040 --> 00:03:23,300
+那有哪些办法？一种是逐行
+So what are the options there? One is just to change line by
+
+57
+00:03:23,300 --> 00:03:28,830
+修改，暴力穷举所有组合。
+line and try to brute-force all the different combinations.
+
+58
+00:03:28,830 --> 00:03:31,390
+另一种是好好想清楚
+Another would be to think through
+
+59
+00:03:31,390 --> 00:03:35,080
+怎么改才合理，比如利用
+what makes sense, so maybe use something
+
+60
+00:03:35,080 --> 00:03:38,820
+用户对 Skill 的反馈，看看
+like user feedback on the skills to see where the
+
+61
+00:03:38,820 --> 00:03:42,530
+Skill 哪里表现好、哪里不好；换了新模型，
+skills perform well, where they don't, and with new models,
+
+62
+00:03:42,530 --> 00:03:46,660
+就直接跑一遍 Skill，看看效果。
+just running the skill and seeing how it works.
+
+63
+00:03:47,300 --> 00:03:49,460
+可选的办法有哪些？
+What are the options there,
+
+64
+00:03:49,460 --> 00:03:53,010
+改动又该多大？只改
+and how large should those modifications be? Just
+
+65
+00:03:54,270 --> 00:04:01,690
+几行、几句，还是思路？我们发现
+lines, sentences, ideas? So what we found to be useful is,
+
+66
+00:04:01,690 --> 00:04:06,610
+有用的做法是：与其靠运气，
+instead of relying on luck, we can
+
+67
+00:04:07,170 --> 00:04:10,220
+不如用更确定的流程，
+put a more deterministic process here,
+
+68
+00:04:10,220 --> 00:04:13,490
+借用 FActScore（事实性评测法）的思路。
+using the idea of atoms from FActScore.
+
+69
+00:04:15,520 --> 00:04:22,580
+把 Skill 和指令拆成一个个 atom（原子项），
+We can split the skill and instructions into those atoms,
+
+70
+00:04:22,580 --> 00:04:24,180
+每个原子项
+and for each of those
+
+71
+00:04:24,740 --> 00:04:29,540
+都配一组我们期望的问题和答案。
+have a pair of question and answer that we expect.
+
+72
+00:04:29,540 --> 00:04:32,580
+可以是一般性的想法，比如
+This could be either general ideas, like
+
+73
+00:04:32,580 --> 00:04:36,140
+这里的命题，也可以是契约，
+a proposition in this case, or contracts,
+
+74
+00:04:36,140 --> 00:04:40,740
+对动作提出更明确的要求。
+where we put a more definitive expectation on the action.
+
+75
+00:04:44,080 --> 00:04:49,320
+一般来说，每个 Skill
+And in general we will be getting some
+
+76
+00:04:49,320 --> 00:04:54,350
+会拆出预先定好数量的原子项，
+predefined amount of atoms per skill, and
+
+77
+00:04:54,350 --> 00:05:00,330
+比如每个 Skill 25 到 30 个。
+we will have, let's say, 25 or 30 atoms per skill.
+
+78
+00:05:00,330 --> 00:05:05,620
+然后对每个原子项，同样跑
+Then for each of the atoms we will again run
+
+79
+00:05:05,620 --> 00:05:10,260
+两组：一组不加载 Skill，一组加载，
+two arms, one without the skill and one with the skill,
+
+80
+00:05:10,260 --> 00:05:14,830
+再由一个评审模型或一个评审团
+and we will have a judge, or a panel of judges, that
+
+81
+00:05:14,830 --> 00:05:15,867
+来给模型的回答打分。
+will be evaluating model answers.
+
+82
+00:05:15,867 --> 00:05:19,790
+也就是把这些问题拿去问我们关心的
+So we're asking those questions to the model that we're interested
+
+83
+00:05:19,790 --> 00:05:23,540
+那个模型，再用评审模型来评判回答，
+in, we're evaluating those answers with the judge,
+
+84
+00:05:23,540 --> 00:05:28,420
+评审最好用不同家族的模型，或者用
+ideally a different family of models, or a
+
+85
+00:05:29,140 --> 00:05:33,070
+评审团。这样也能确保
+panel of judges. It also ensures
+
+86
+00:05:33,070 --> 00:05:36,880
+问题本身不会泄露答案。我们
+that the questions do not leak answers. We,
+
+87
+00:05:38,030 --> 00:05:41,660
+可以视情况不给工具、
+depending on the case, can compare with no tools
+
+88
+00:05:41,660 --> 00:05:44,590
+不给额外信息，来测模型内部的
+or additional information, to check the internal
+
+89
+00:05:44,590 --> 00:05:49,040
+理解，或者给它一些工具，
+model understanding, or provide it with some tools,
+
+90
+00:05:49,040 --> 00:05:50,910
+比如联网，这样会更
+like web access, so it would be more
+
+91
+00:05:50,910 --> 00:05:58,850
+贴近实用。由此得到一个简单的四格矩阵，
+practical. And we can get a simple four-outcome matrix,
+
+92
+00:05:58,850 --> 00:06:03,840
+基本上就是检查
+basically, where we are checking
+
+93
+00:06:03,840 --> 00:06:09,310
+模型知道还是不知道某个东西，
+whether the model knows or doesn't know something,
+
+94
+00:06:09,310 --> 00:06:13,420
+以及这对应到 Skill 起了什么作用。
+and how this maps to the skill's impact.
+
+95
+00:06:13,420 --> 00:06:17,350
+最简单的情况是，模型
+So the simplest option is where the model was able
+
+96
+00:06:17,350 --> 00:06:22,540
+不管有没有 Skill
+to answer this particular question even without
+
+97
+00:06:22,540 --> 00:06:24,590
+都能答对这个问题。这说明
+the skill or with the skill. This means
+
+98
+00:06:24,590 --> 00:06:27,420
+Skill 在这里没起作用，这本来就是
+that the skill has no impact here, and this was already part of
+
+99
+00:06:27,420 --> 00:06:29,540
+模型已有的知识。第二种情况是，
+the model's knowledge. The second one is where,
+
+100
+00:06:29,540 --> 00:06:33,790
+不加载 Skill 时模型能答对，
+without the skill, the model was able to answer
+
+101
+00:06:33,790 --> 00:06:38,180
+加了 Skill 后反而看到退步：
+this correctly, and by adding the skill we saw degradation
+
+102
+00:06:38,180 --> 00:06:41,950
+表现下降，模型
+in performance and in the model's capability to
+
+103
+00:06:42,830 --> 00:06:47,180
+讲解某些内容的能力也变弱。理想情况是，
+talk about or explain particular aspects. The ideal case is where,
+
+104
+00:06:47,180 --> 00:06:51,460
+不加载 Skill 时模型答不出
+without the skill, the model wasn't able to answer
+
+105
+00:06:51,460 --> 00:06:53,810
+某些问题，加载之后
+something, and with the skill we start seeing
+
+106
+00:06:53,810 --> 00:06:56,820
+就能回答这些新类型的问题
+that it can answer those new types of questions
+
+107
+00:06:56,820 --> 00:06:59,590
+和场景了。这正是我们的目标：
+and scenarios. And this is what we were aiming for:
+
+108
+00:06:59,590 --> 00:07:03,540
+教会模型新东西。但还可能有
+teach the model something new. But there also can be
+
+109
+00:07:03,540 --> 00:07:10,320
+第四种情况：Skill 写得不够好，
+the fourth option, where skills were written not ideally,
+
+110
+00:07:10,320 --> 00:07:14,260
+或者不够清晰，
+or in some maybe not clean way, where
+
+111
+00:07:14,820 --> 00:07:18,680
+模型不管有没有 Skill
+the model wasn't able to answer it either without the skill
+
+112
+00:07:18,680 --> 00:07:20,100
+都答不出来。虽然这个主题
+or with the skill. And while this topic might
+
+113
+00:07:20,100 --> 00:07:24,710
+可能对模型来说既相关又重要，
+be relevant and important for the model,
+
+114
+00:07:24,710 --> 00:07:28,800
+但模型还是没抓住其中一些概念。最容易
+it still sort of misses some of those concepts. The simplest
+
+115
+00:07:28,800 --> 00:07:33,250
+修复的，是那些真正拖累表现的
+thing to fix are instructions or atoms
+
+116
+00:07:33,250 --> 00:07:39,710
+指令或原子项。在热门
+that actually hurt performance, and for popular
+
+117
+00:07:39,710 --> 00:07:41,620
+Skill 里这种很少。
+skills those are pretty rare.
+
+118
+00:07:41,620 --> 00:07:50,050
+下面框里可以看到，Anthropic 官方 Skill
+So in the box below you see that it's just one case out of almost
+
+119
+00:07:50,050 --> 00:07:55,760
+近 400 个原子项里只有 1 个，其他的都没有。
+400 atoms in Anthropic's skills, and others don't have those.
+
+120
+00:07:55,760 --> 00:07:59,150
+但那些比较小、
+But for the smaller skills that are
+
+121
+00:07:59,150 --> 00:08:02,030
+不太热门的 Skill，你大概会碰到。
+less popular, you'll probably come across those.
+
+122
+00:08:02,030 --> 00:08:03,790
+这是我们在一些
+This is what we're seeing with some of our
+
+123
+00:08:04,510 --> 00:08:08,420
+实验里看到的。这一步很直接，
+experiments. And this is just straightforward,
+
+124
+00:08:08,420 --> 00:08:13,380
+是最容易修的，确保
+the simplest thing to fix, to ensure that
+
+125
+00:08:13,380 --> 00:08:18,320
+你的 Skill 不会削弱模型的能力和表现，
+your skill doesn't reduce model capabilities and performance,
+
+126
+00:08:18,320 --> 00:08:20,430
+只带来相关的上下文。
+and brings only relevant context.
+
+127
+00:08:22,160 --> 00:08:24,280
+我们还可以给它上色。
+And we also can actually color this.
+
+128
+00:08:24,360 --> 00:08:27,160
+这里是按行上色的，
+In this scenario, this is done by lines,
+
+129
+00:08:27,160 --> 00:08:28,880
+但如果按原子项来分，
+but actually, going with atoms,
+
+130
+00:08:29,060 --> 00:08:31,440
+你可能会看到不同的颜色
+you might have different coloring
+
+131
+00:08:31,440 --> 00:08:33,280
+落在同一行或同一句里。
+for a single line or a single sentence.
+
+132
+00:08:35,700 --> 00:08:39,720
+这就是一个可视化的例子，标出
+And this just gives you an example of the visualization,
+
+133
+00:08:39,720 --> 00:08:43,940
+哪些是有用的细节和指令，
+where these would be helpful details and instructions
+
+134
+00:08:43,940 --> 00:08:48,020
+也就是你给模型带来了哪些新东西，
+in terms of what new stuff you bring to the model,
+
+135
+00:08:48,020 --> 00:08:54,100
+哪些是模型本来就知道的。
+and what is something that the model already knows.
+
+136
+00:08:54,100 --> 00:08:59,680
+成本方面，要把这些问题都拿去问模型，
+Cost-wise, we are running all those questions and asking the model,
+
+137
+00:08:59,680 --> 00:09:04,300
+但还是比较便宜：29 个 Skill 只花了 14 美元，
+but still, relatively, this is cheap: for 29 skills,
+
+138
+00:09:04,300 --> 00:09:10,710
+Sonnet 和 Haiku（Anthropic 中小模型），Sonnet 当评审。
+14 bucks of Sonnet and Haiku calls, with Sonnet used as a judge.
+
+139
+00:09:10,710 --> 00:09:16,360
+我们还可以用几种方式，
+And there are a couple of ways we can
+
+140
+00:09:16,360 --> 00:09:23,580
+以不同的严格程度检查模型知道多少。
+also check the strictness of the knowledge.
+
+141
+00:09:23,580 --> 00:09:27,830
+有宽松和严格两种检查方式，
+We have lenient and strict ways of checking this,
+
+142
+00:09:27,830 --> 00:09:31,340
+前者检查大意，
+where the first checks the general
+
+143
+00:09:31,340 --> 00:09:37,080
+后者检查确切的细节。
+idea, while the second one is checking for exact details.
+
+144
+00:09:37,080 --> 00:09:38,820
+你可以这样理解两者的区别：
+And you can think about the
+
+145
+00:09:38,820 --> 00:09:41,600
+一边是一般性知识
+difference between general knowledge
+
+146
+00:09:41,600 --> 00:09:45,220
+和对主题的理解，另一边是对确切的
+and understanding of the topic, versus understanding of the exact
+
+147
+00:09:45,220 --> 00:09:49,540
+键、参数、具体取值或步骤的掌握。
+keys, parameters, and exact values or steps.
+
+148
+00:09:49,540 --> 00:09:52,500
+我们在各个模型上看到的是，
+And what we see across the models is
+
+149
+00:09:53,380 --> 00:10:00,000
+两者差距很大，尤其是更大的前沿模型，
+the difference is large, especially with the larger frontier models,
+
+150
+00:10:00,000 --> 00:10:02,840
+像 Opus（Anthropic 大模型）就从 70%
+where we see Opus dropping from 70% understanding
+
+151
+00:10:02,840 --> 00:10:05,720
+对 Skill 大意的理解，
+of the skill in the case of general understanding
+
+152
+00:10:05,720 --> 00:10:11,000
+降到具体细节只有 22%。
+to just 22% on the specific details.
+
+153
+00:10:12,280 --> 00:10:14,660
+这符合我们的预期。
+And this matches our expectations.
+
+154
+00:10:14,840 --> 00:10:17,140
+我们看到新模型泛化得很好，
+We see that new models are pretty well generalized
+
+155
+00:10:17,140 --> 00:10:19,080
+能理解概念，
+and understand concepts,
+
+156
+00:10:19,320 --> 00:10:22,370
+但给它们提供确切的细节
+but it's still helpful to provide them with exact details
+
+157
+00:10:22,370 --> 00:10:27,140
+和解决问题需要的数据，仍然有帮助。
+and data that will be useful for solving those problems.
+
+158
+00:10:27,140 --> 00:10:32,860
+这里是三个热门
+Here is an outlook comparing those three
+
+159
+00:10:32,860 --> 00:10:39,260
+Skill 仓库在不同
+popular repos with skills across different
+
+160
+00:10:39,260 --> 00:10:43,580
+模型上的对比。其中一个有意思的发现是，
+models. So one of the interesting observations here is
+
+161
+00:10:43,580 --> 00:10:46,220
+小模型整体上
+that smaller models have, in general,
+
+162
+00:10:46,220 --> 00:10:49,980
+对 Skill 的理解更低，
+lower understanding of the skills,
+
+163
+00:10:49,980 --> 00:10:55,910
+更大的 Sonnet 理解得更好，这也正是
+with the larger Sonnet having better understanding, which is
+
+164
+00:10:55,910 --> 00:11:00,860
+我们要更大模型的原因。但总体来看，
+why we have bigger models. But also we see that overall,
+
+165
+00:11:00,860 --> 00:11:04,520
+模型已经掌握了这些 Skill 的
+the models already understand a lot of
+
+166
+00:11:04,520 --> 00:11:07,700
+很多细节和上下文。
+the details and context of those skills.
+
+167
+00:11:07,700 --> 00:11:13,080
+你也可以预期，随着新模型出来、
+And you would expect that with newer models and more
+
+168
+00:11:13,080 --> 00:11:19,130
+训练能力不断进步，
+advances in better training capabilities,
+
+169
+00:11:19,130 --> 00:11:23,280
+模型的理解
+we will have more and more in terms of the models'
+
+170
+00:11:23,280 --> 00:11:25,580
+会越来越深。但我们也看到，
+understanding. But also we see
+
+171
+00:11:25,580 --> 00:11:31,150
+不同 Skill 之间差别相当大，这
+that this pretty significantly differs skill to skill, and it's
+
+172
+00:11:31,150 --> 00:11:34,520
+并不是坏事：有些 Skill 本来就只是给个方向。
+not bad: some skills are intended to be directional.
+
+173
+00:11:34,520 --> 00:11:38,110
+但这也是很有用的信息，可以看到
+But it's also a useful piece of information to see
+
+174
+00:11:38,110 --> 00:11:42,720
+这些 Skill 给不同模型、
+how those skills bring new knowledge to different models
+
+175
+00:11:42,720 --> 00:11:45,690
+不同模型家族带来了多少新知识，
+and different families, and
+
+176
+00:11:45,690 --> 00:11:54,650
+最好在更多模型上都跑一遍。
+this should be run, ideally, on a broader set of models.
+
+177
+00:11:54,650 --> 00:12:00,080
+novelty（新颖度）这项
+Just having this novelty piece of
+
+178
+00:12:00,080 --> 00:12:02,800
+信息只是其中一个信号，
+information is just one of the signals.
+
+179
+00:12:02,800 --> 00:12:06,580
+基本上是优化的初始方向。
+It's basically an initial vector for optimization.
+
+180
+00:12:06,580 --> 00:12:10,740
+最后还是得跑评测，验证
+At the end, we still have to run evals and validate
+
+181
+00:12:10,740 --> 00:12:14,260
+我们对 Skill 做的所有改动
+that all the changes that we try to make to the
+
+182
+00:12:14,260 --> 00:12:20,610
+确实有效。一个比较简单的做法是：
+skill actually work. So one of the simpler scenarios would be:
+
+183
+00:12:20,610 --> 00:12:22,560
+看一下 Skill，
+we can look at the skill and
+
+184
+00:12:23,360 --> 00:12:27,100
+试着把模型已知的信息
+try to remove some or all of the already known
+
+185
+00:12:27,100 --> 00:12:30,400
+从 Skill 里删掉一部分或全部，然后
+pieces of information from the skill, and
+
+186
+00:12:30,400 --> 00:12:33,750
+跑评测。结果可能分数一样，
+run evaluation. It might come up with the same scoring,
+
+187
+00:12:33,750 --> 00:12:37,340
+基本上会得到一样的
+basically, we will be getting the same
+
+188
+00:12:37,340 --> 00:12:40,670
+结果，模型照样能解决这些问题。
+results, the model still capable of solving those problems.
+
+189
+00:12:40,670 --> 00:12:43,500
+那就太好了，可以缩小 Skill，
+Then great, we can reduce skill size,
+
+190
+00:12:43,500 --> 00:12:47,540
+省 token、省上下文。与其暴力穷举、
+save tokens, save context. And instead of brute-forcing
+
+191
+00:12:47,540 --> 00:12:50,830
+靠猜该删什么、加什么，
+and guessing what we can or should
+
+192
+00:12:50,830 --> 00:12:56,410
+或者怎么修复退步，
+remove or add, or how to fix the degradations,
+
+193
+00:12:56,410 --> 00:13:03,500
+不如有据可依。所有这些测量、
+we can have guidance. So all of those measurements,
+
+194
+00:13:03,500 --> 00:13:05,790
+实验都是用 Docami（评测框架）做的，
+experiments, have been done with Docami,
+
+195
+00:13:05,790 --> 00:13:10,880
+它是个框架，用来对比跟智能体和
+which is a framework for comparing everything related to
+
+196
+00:13:10,880 --> 00:13:16,610
+上下文相关的一切：Skill、AGENTS.md（智能体说明文件）、
+agents and context, whether it's skills, AGENTS.md,
+
+197
+00:13:16,610 --> 00:13:21,230
+MCP（模型上下文协议）、工具等等。novelty 是
+MCP, tools, whatever. And novelty is one of the
+
+198
+00:13:21,230 --> 00:13:24,330
+其中一项功能，可以拿到
+pieces of functionality where you can get
+
+199
+00:13:24,330 --> 00:13:27,550
+这个 Skill 优化和评测的
+this initial vector for skill optimization
+
+200
+00:13:27,550 --> 00:13:30,910
+初始方向。此外还有评测、
+and evaluation. But there are also evals,
+
+201
+00:13:30,910 --> 00:13:34,910
+上下文影响评估、路由、对比
+there is assessment of the context impact, routing, comparing
+
+202
+00:13:34,910 --> 00:13:38,060
+描述、命名，
+the descriptions, naming,
+
+203
+00:13:38,060 --> 00:13:44,780
+一大堆跟 Skill 相关的事情，在这些方面
+a bunch of things related to skills, where it would be helpful
+
+204
+00:13:44,780 --> 00:13:48,910
+能做更确定的评估会很有帮助，
+to actually get more deterministic evaluations,
+
+205
+00:13:48,910 --> 00:13:50,000
+帮我们有意识地决定
+to make conscious decisions in
+
+206
+00:13:50,000 --> 00:13:54,050
+该怎么处理 Skill。
+terms of what should be done with the skills.
+
+207
+00:13:54,050 --> 00:13:58,280
+谢谢大家的时间，也请大家
+So thank you for your time, and please go ahead
+
+208
+00:13:58,280 --> 00:13:59,320
+去写出更好的 Skill 吧。
+and write better skills.
+
+209
+00:13:59,820 --> 00:14:00,800
+谢谢。
+Thank you.

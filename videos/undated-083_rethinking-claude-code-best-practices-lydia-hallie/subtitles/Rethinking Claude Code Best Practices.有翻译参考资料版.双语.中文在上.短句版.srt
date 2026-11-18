@@ -1,0 +1,2564 @@
+1
+00:00:00,110 --> 00:00:04,750
+今天上午演讲时我遇到了点技术故障，
+I had some technical difficulties during my talk this morning,
+
+2
+00:00:04,750 --> 00:00:06,210
+所以我跑回了家，打算
+so I ran back home and I'm just
+
+3
+00:00:06,210 --> 00:00:08,640
+改成在自己电脑上录。
+going to record it from my computer instead.
+
+4
+00:00:08,640 --> 00:00:09,770
+大家好，我是 Lydia，
+So hi everyone, I'm Lydia,
+
+5
+00:00:09,770 --> 00:00:10,650
+我在 Claude Code（编程智能体）团队，
+I work on the Claude Code team
+
+6
+00:00:10,650 --> 00:00:12,300
+在 Anthropic（AI 公司）工作。
+at Anthropic,
+
+7
+00:00:12,300 --> 00:00:15,270
+最近模型变得非常强。
+and the models have gotten really good lately.
+
+8
+00:00:15,270 --> 00:00:16,510
+比如 Opus 5.5（Claude 模型），
+So we have Opus 5.5,
+
+9
+00:00:16,570 --> 00:00:18,580
+它是我日常最爱用的模型。
+which is my favorite daily driver,
+
+10
+00:00:18,580 --> 00:00:20,490
+这周早些时候，
+and earlier this week
+
+11
+00:00:20,490 --> 00:00:22,350
+我们还发布了 Fable 5.2（Claude 新模型）。
+we also launched Fable 5.2.
+
+12
+00:00:22,350 --> 00:00:25,580
+这些模型非常擅长长时间运行的任务，
+And these models are extremely good at long-running tasks
+
+13
+00:00:25,580 --> 00:00:27,730
+也很懂你的代码库，尤其是
+and understanding your code base, and especially
+
+14
+00:00:27,730 --> 00:00:30,620
+Fable 还特别擅长验证自己的输出。
+Fable is also really good at verifying its own output.
+
+15
+00:00:30,620 --> 00:00:33,310
+但随着模型变强，
+But as these models get better, the way
+
+16
+00:00:33,310 --> 00:00:36,640
+我们在 Claude Code 里使用它们的方式也在变。
+that we work with them in Claude Code also changes.
+
+17
+00:00:36,640 --> 00:00:38,670
+不知道大家还记不记得，今年早些时候，
+So earlier this year, I don't know if you remember,
+
+18
+00:00:38,670 --> 00:00:40,480
+会话大概是这个样子。
+but sessions kind of used to look like this.
+
+19
+00:00:40,480 --> 00:00:43,770
+我们用的是 Opus 4.5（旧模型），说实话
+So we'd use a model like Opus 4.5, which honestly
+
+20
+00:00:43,770 --> 00:00:45,020
+在当时已经很好了。
+for its time was really good.
+
+21
+00:00:45,020 --> 00:00:47,380
+我很喜欢用 Opus 4.5，
+I really enjoyed working with Opus 4.5,
+
+22
+00:00:47,380 --> 00:00:48,490
+但和现在比，它
+but compared to today, it
+
+23
+00:00:48,490 --> 00:00:49,346
+会早早就停下来。
+would just stop a lot earlier.
+
+24
+00:00:49,346 --> 00:00:53,930
+运行时间短得多，而且我们还得
+So it would just run for shorter amounts of time, and we'd also
+
+25
+00:00:53,930 --> 00:00:57,560
+不停地纠正它，不停地提醒它做事，
+keep correcting it. We'd keep reminding it to do things,
+
+26
+00:00:57,560 --> 00:00:59,250
+还会加上“IMPORTANT!”（重要！）这类强调，
+add things like IMPORTANT!,
+
+27
+00:00:59,250 --> 00:01:01,350
+全都写进 CLAUDE.md（项目说明文件）。
+all these things, to our CLAUDE.md file.
+
+28
+00:01:01,350 --> 00:01:03,130
+而且当时 auto mode（自动权限模式）
+And also features like auto mode
+
+29
+00:01:03,130 --> 00:01:04,510
+这类功能还不存在，所以我们
+didn't exist yet, so we
+
+30
+00:01:04,510 --> 00:01:08,260
+要么手动审批所有操作，
+were either approving everything manually,
+
+31
+00:01:08,260 --> 00:01:10,310
+要么走更冒险的路子，
+or taking the riskier approach
+
+32
+00:01:10,310 --> 00:01:11,870
+直接用 --dangerously-skip-permissions（跳过审批）。
+with --dangerously-skip-permissions.
+
+33
+00:01:11,870 --> 00:01:15,210
+所以那时我们人还牢牢地在循环里。
+So we were still very much in the loop as humans,
+
+34
+00:01:15,210 --> 00:01:17,130
+但随着模型越来越擅长
+but as these models got better at
+
+35
+00:01:17,130 --> 00:01:19,460
+承担更大的任务，我们的会话也变了。
+taking on bigger tasks, our sessions also changed.
+
+36
+00:01:19,460 --> 00:01:22,550
+现在至少在 Anthropic，我们的会话
+So nowadays, at least at Anthropic, our sessions
+
+37
+00:01:22,550 --> 00:01:23,190
+更像这个样子。
+look more like this.
+
+38
+00:01:23,190 --> 00:01:27,170
+我们同时跑几十个会话，每个都跑好几个小时，
+So we're running dozens of sessions at the same time, running for hours,
+
+39
+00:01:27,170 --> 00:01:29,560
+一路上自己验证结果，
+verifying their own results along the way,
+
+40
+00:01:29,560 --> 00:01:33,430
+甚至还有会话在编排其他会话。
+and we even have sessions orchestrate other sessions.
+
+41
+00:01:33,430 --> 00:01:36,390
+以前我们几乎每一步都在循环里，
+So whereas we used to be in the loop for almost every step
+
+42
+00:01:36,390 --> 00:01:38,530
+同时只跑一两个会话，
+and running one or just a couple sessions at
+
+43
+00:01:38,530 --> 00:01:41,400
+现在我们基本上
+a time, we've now essentially become
+
+44
+00:01:41,400 --> 00:01:43,570
+成了几十个会话的经理。
+managers for dozens of sessions.
+
+45
+00:01:43,570 --> 00:01:44,730
+我们完成的事也多了很多，
+We also get a lot more done,
+
+46
+00:01:44,730 --> 00:01:47,070
+你可能看过我们 10 月的一篇博客，
+though. Now, you may have seen our blog post in October
+
+47
+00:01:47,070 --> 00:01:49,090
+讲 Anthropic 怎么从大约
+about how Anthropic went from about
+
+48
+00:01:49,090 --> 00:01:51,540
+5 月每天约 2,500 个改动，
+2,500 changes a day in May
+
+49
+00:01:51,540 --> 00:01:54,660
+增长到 9 月每天超过 30,000 个。
+to more than 30,000 a day in September.
+
+50
+00:01:54,660 --> 00:01:56,650
+但这也意味着，我们
+But this also means that we as
+
+51
+00:01:56,650 --> 00:01:59,910
+开发者得重新想想该把精力放在哪。
+developers just have to rethink what we're focused on instead.
+
+52
+00:01:59,910 --> 00:02:01,690
+回想一下我们
+So if you think about our
+
+53
+00:02:01,690 --> 00:02:03,660
+今年早些时候的最佳实践，
+best practices from earlier this year,
+
+54
+00:02:03,660 --> 00:02:06,750
+主要就是引导会话、审批命令、
+it was mainly about steering sessions, approving commands,
+
+55
+00:02:07,130 --> 00:02:08,820
+拒绝某些操作、
+saying no to certain things
+
+56
+00:02:08,820 --> 00:02:10,400
+限制 Claude（Anthropic 的 AI）能做什么、
+or restricting what Claude could do,
+
+57
+00:02:10,400 --> 00:02:12,310
+检查输出，还有
+checking the output, and also
+
+58
+00:02:12,310 --> 00:02:13,920
+启动会话。
+starting the sessions.
+
+59
+00:02:13,920 --> 00:02:15,640
+所以凡是我们退出循环的地方，
+So everywhere that we now step out of that loop,
+
+60
+00:02:15,640 --> 00:02:17,790
+都得有别的东西来
+something else has to take
+
+61
+00:02:17,790 --> 00:02:21,060
+接手：要么是模型、harness（运行框架），
+over. And this is either the model, the harness,
+
+62
+00:02:21,060 --> 00:02:23,990
+要么是它运行的环境。
+or the environment that it's running in.
+
+63
+00:02:23,990 --> 00:02:26,260
+如果我们不在循环里审批每条命令，
+So if we are not in the loop to approve every command,
+
+64
+00:02:26,260 --> 00:02:28,570
+又同时跑这么多会话，
+and we're running so many sessions at the same time,
+
+65
+00:02:28,930 --> 00:02:30,210
+怎么确保
+how can we make sure
+
+66
+00:02:30,210 --> 00:02:32,540
+它写的代码质量依然很高？
+that the code it's writing is still high quality?
+
+67
+00:02:32,540 --> 00:02:33,690
+最重要的是，
+And most importantly,
+
+68
+00:02:33,690 --> 00:02:35,310
+如果这些会话一跑好几个小时，
+if these sessions are running for hours
+
+69
+00:02:35,310 --> 00:02:37,180
+没人盯着，
+without our supervision,
+
+70
+00:02:37,180 --> 00:02:38,270
+怎么确保它们
+how can we make sure that they're
+
+71
+00:02:38,270 --> 00:02:39,490
+运行得安全？
+running safely?
+
+72
+00:02:39,490 --> 00:02:41,780
+我们就拿这个旧会话来过一遍，
+So let's go through that by taking this old session
+
+73
+00:02:41,780 --> 00:02:43,730
+看看要改哪些地方，
+and seeing what we have to change
+
+74
+00:02:43,730 --> 00:02:45,530
+才能得到前面展示的那个最终效果。
+to get to that end result that I showed earlier.
+
+75
+00:02:46,130 --> 00:02:48,330
+首先，我们就用现在
+Well, first of all, let's use the actual defaults
+
+76
+00:02:48,330 --> 00:02:49,530
+会话启动时的实际默认配置。
+we start sessions in nowadays.
+
+77
+00:02:49,790 --> 00:02:51,990
+这个其实不用你操心。
+So that's not really something you should think about.
+
+78
+00:02:52,150 --> 00:02:55,330
+把这里的模型从 Opus 4.5 换成 Opus 5.5，
+So let's update the model here from Opus 4.5 to Opus 5.5
+
+79
+00:02:55,330 --> 00:02:57,950
+把手动审批改成 auto mode。
+and change the manual permission to auto mode.
+
+80
+00:02:58,470 --> 00:03:01,690
+Opus 5.5 更能理解你的意图，
+And Opus 5.5 is a lot better at understanding your intent
+
+81
+00:03:01,690 --> 00:03:02,950
+也更懂你的代码库。
+and understanding your code base.
+
+82
+00:03:02,950 --> 00:03:04,590
+所以我们真的不用再像以前那样
+So we really don't have to steer it
+
+83
+00:03:04,590 --> 00:03:05,730
+在会话中途频繁引导它了。
+as much anymore mid-session.
+
+84
+00:03:06,250 --> 00:03:08,590
+你也不用再审批每一条命令，
+And you also no longer have to approve every command
+
+85
+00:03:08,590 --> 00:03:10,130
+因为从 8 月起，
+because we started making auto mode
+
+86
+00:03:10,130 --> 00:03:11,810
+auto mode 就成了默认的权限模式。
+the default permission mode back in August.
+
+87
+00:03:12,610 --> 00:03:14,260
+模型更懂你的意图
+Now, being better at understanding
+
+88
+00:03:14,260 --> 00:03:15,990
+和代码库，
+your intent and your code base
+
+89
+00:03:15,990 --> 00:03:17,990
+也意味着我们得重新审视
+also means that we have to rethink
+
+90
+00:03:17,990 --> 00:03:19,370
+代码库里写给它的那些指令。
+the instructions we have in our code base.
+
+91
+00:03:19,370 --> 00:03:22,580
+如果你照着今年早些时候的最佳实践来，
+So if you followed our best practices from earlier this year,
+
+92
+00:03:22,580 --> 00:03:24,250
+可能还写着 IMPORTANT、
+you may still have things like IMPORTANT,
+
+93
+00:03:24,250 --> 00:03:25,990
+NEVER DO THIS（绝不要这样做）、
+NEVER DO THIS,
+
+94
+00:03:25,990 --> 00:03:28,090
+一堆感叹号，全在 CLAUDE.md 里。
+exclamation marks, all these things in your CLAUDE.md file.
+
+95
+00:03:28,390 --> 00:03:30,770
+但对现在的模型来说，真的没必要。
+But with today's models, you really don't need that.
+
+96
+00:03:30,870 --> 00:03:33,170
+反而可能让模型跑偏，
+And it can actually make the model go off track.
+
+97
+00:03:33,350 --> 00:03:36,630
+结果工具调用更多，整体效果更差。
+So you end up with more tool calls and overall worse results.
+
+98
+00:03:37,290 --> 00:03:39,130
+所以现在，CLAUDE.md 只该写
+So nowadays, your CLAUDE.md file should only include
+
+99
+00:03:39,130 --> 00:03:41,970
+Claude 从代码里看不到的东西。
+the things that Claude cannot see from your code.
+
+100
+00:03:42,090 --> 00:03:44,510
+比如，你可能有个服务
+So for example, maybe you have a service
+
+101
+00:03:44,510 --> 00:03:46,470
+还在某处用着遗留的代码来源，
+that's still using some legacy source somewhere,
+
+102
+00:03:46,710 --> 00:03:48,650
+但代码里没有直接引用它，
+but it's not directly referenced in the code.
+
+103
+00:03:48,910 --> 00:03:50,330
+这种就值得留着。
+That's still good to keep in there.
+
+104
+00:03:50,830 --> 00:03:52,730
+但其他的，比如你用什么技术栈、
+But everything else, like what stack you're on
+
+105
+00:03:52,730 --> 00:03:54,610
+该去哪里找，这些你真的
+or where to look, you really don't need
+
+106
+00:03:54,610 --> 00:03:55,410
+已经不需要了。
+that anymore.
+
+107
+00:03:55,490 --> 00:03:57,210
+我们还专门有个命令，
+And we actually have a command for this
+
+108
+00:03:57,210 --> 00:03:58,720
+叫 /doctor prompt-audit（提示词审计），
+called /doctor prompt-audit,
+
+109
+00:03:58,720 --> 00:04:00,090
+能很方便地
+which makes it really easy
+
+110
+00:04:00,090 --> 00:04:02,470
+针对某个模型优化你的环境。
+to optimize your environment for a specific model.
+
+111
+00:04:02,470 --> 00:04:05,270
+比如你在用 Opus 5.5，运行这个命令，
+So if you're on Opus 5.5 here and you run this command,
+
+112
+00:04:05,270 --> 00:04:07,510
+它会自动检查你的 CLAUDE.md
+it will automatically check your CLAUDE.md
+
+113
+00:04:07,510 --> 00:04:08,180
+和 Skills（技能包），
+and your skills
+
+114
+00:04:08,180 --> 00:04:11,070
+看看哪些是新模型不再需要的。
+to see what the new model no longer needs.
+
+115
+00:04:11,070 --> 00:04:12,970
+auto mode 是一种权限
+Now, auto mode is a permission
+
+116
+00:04:12,970 --> 00:04:14,680
+模式，会用一个独立的分类器，
+mode that runs a separate classifier
+
+117
+00:04:14,680 --> 00:04:18,010
+审查几乎所有不是单纯读写
+on pretty much everything that isn't just reading or editing
+
+118
+00:04:18,010 --> 00:04:20,000
+项目文件的操作。
+files in your project.
+
+119
+00:04:20,000 --> 00:04:23,150
+它会自动放行确定安全的命令，
+So it automatically allows commands that it knows are safe,
+
+120
+00:04:23,150 --> 00:04:23,770
+比如运行
+like running
+
+121
+00:04:23,770 --> 00:04:26,040
+测试、安装依赖，
+tests or installing dependencies,
+
+122
+00:04:26,040 --> 00:04:28,870
+但只要拿不准是否安全，
+but it still blocks commands where it's unsure whether they're
+
+123
+00:04:28,870 --> 00:04:31,110
+它就会拦下。通常这挺好的，
+safe. And normally that's pretty good,
+
+124
+00:04:31,110 --> 00:04:33,370
+一般来说，这正是我们想要的。
+uh, normally that's kind of, you know, what we want.
+
+125
+00:04:33,370 --> 00:04:34,070
+但比如
+But for
+
+126
+00:04:34,070 --> 00:04:37,710
+这里，我们让它把东西发布到预发布环境，
+example here, if we ask it to ship something to staging,
+
+127
+00:04:37,710 --> 00:04:39,290
+以前我们会直接审批
+we would have just, you know, approved the
+
+128
+00:04:39,290 --> 00:04:41,070
+往部署仓库的推送。
+push to our deploy repo.
+
+129
+00:04:41,070 --> 00:04:43,540
+但默认情况下，auto mode 只信任
+But by default, auto mode only trusts
+
+130
+00:04:43,540 --> 00:04:45,530
+当前这个文件夹和仓库，所以它会
+this folder and this repo, so it would
+
+131
+00:04:45,530 --> 00:04:48,120
+拦下这条命令，我们又回到了循环里。
+block that command, so we're back in the loop.
+
+132
+00:04:48,120 --> 00:04:51,170
+默认配置在大多数情况下够用，但如果
+Now, the defaults should be good in most cases, but if
+
+133
+00:04:51,170 --> 00:04:53,420
+你发现还是得审批很多命令，
+you still notice that you have to approve a lot of commands
+
+134
+00:04:53,420 --> 00:04:56,230
+即使开着 auto mode，那首先要
+even in auto mode, the first thing to
+
+135
+00:04:56,230 --> 00:04:58,100
+看的就是这里的设置，
+look at is settings here,
+
+136
+00:04:58,100 --> 00:04:59,500
+因为你可以在自己的设置里
+because you can configure auto mode
+
+137
+00:04:59,500 --> 00:05:01,050
+配置 auto mode，直接用大白话
+in your own settings, just in plain
+
+138
+00:05:01,050 --> 00:05:03,650
+写就行。这些内容会发给分类器，
+English. And this is what gets sent to the classifier,
+
+139
+00:05:03,650 --> 00:05:05,390
+由它决定是拒绝
+which then decides whether to reject
+
+140
+00:05:05,390 --> 00:05:06,840
+还是放行某些命令。
+or allow certain commands.
+
+141
+00:05:06,840 --> 00:05:10,250
+我们可以直接写信任哪些仓库、存储桶、域名，
+So here we can just write which repos, buckets, domains we trust
+
+142
+00:05:10,250 --> 00:05:13,030
+哪些操作总是允许、哪些永远不做。
+and what it should always allow or never do.
+
+143
+00:05:13,030 --> 00:05:16,010
+说实话，这一步挺简单的。只要用上
+Okay, so honestly this was pretty easy. By just using
+
+144
+00:05:16,010 --> 00:05:16,910
+现在的默认配置，
+today's defaults,
+
+145
+00:05:16,910 --> 00:05:20,130
+我们就已经甩掉了大部分循环里的活，
+we've already gotten rid of most of our in-the-loop stuff,
+
+146
+00:05:20,130 --> 00:05:21,310
+因为模型接手了
+because the model took
+
+147
+00:05:21,310 --> 00:05:22,410
+引导方向，
+over the steering,
+
+148
+00:05:22,410 --> 00:05:23,600
+auto mode 接手了所有审批。
+and auto mode took over all the approving.
+
+149
+00:05:23,600 --> 00:05:26,150
+所以退出循环很容易，
+So getting out of the loop is easy,
+
+150
+00:05:26,150 --> 00:05:27,080
+但更难的问题是，
+but the harder question now is
+
+151
+00:05:27,080 --> 00:05:30,370
+我们不在了，怎么确保一切没问题？
+how do we make sure it's okay that we're not there anymore?
+
+152
+00:05:30,370 --> 00:05:34,140
+首先是保证安全，然后是验证。
+So first is keeping it safe, and then also verification.
+
+153
+00:05:34,140 --> 00:05:35,630
+我们先从保证安全
+So let's start with keeping it
+
+154
+00:05:35,630 --> 00:05:37,390
+说起，因为到目前为止的一切，
+safe, because everything so far,
+
+155
+00:05:37,390 --> 00:05:40,090
+升级模型、用 auto mode，
+so upgrading the model and using auto mode,
+
+156
+00:05:40,090 --> 00:05:40,970
+都只是在和
+is just working with
+
+157
+00:05:40,970 --> 00:05:44,800
+模型打交道。大多数时候它会照你说的做，
+a model, and in most cases it does what you tell it to do,
+
+158
+00:05:44,800 --> 00:05:46,720
+但这并没有保证。
+but that's not a guarantee.
+
+159
+00:05:46,720 --> 00:05:47,570
+在一项
+So in a study
+
+160
+00:05:47,570 --> 00:05:48,230
+8 月发布的研究里，
+we published back in August,
+
+161
+00:05:48,230 --> 00:05:51,440
+我们拿 auto mode 和真人审批做了对比，
+we tested auto mode versus real people in the loop,
+
+162
+00:05:51,440 --> 00:05:52,690
+结果只有约 14%
+and only about 14
+
+163
+00:05:52,690 --> 00:05:55,810
+的人发现了明显危险的命令，
+percent of people caught a clearly dangerous command.
+
+164
+00:05:56,230 --> 00:05:58,690
+auto mode 拦下了其中 89%。
+Auto mode blocked 89% of them.
+
+165
+00:05:58,750 --> 00:06:01,460
+它比我们强得多，
+So it is a lot better at it than we were,
+
+166
+00:06:01,460 --> 00:06:02,950
+但仍有大约十分之一的
+but about one in 10 of
+
+167
+00:06:02,950 --> 00:06:04,510
+危险命令漏了过去。
+those commands still went through.
+
+168
+00:06:04,810 --> 00:06:06,980
+所以如果你真想要保证，
+So if you do want the guarantee,
+
+169
+00:06:06,980 --> 00:06:09,010
+只能在 harness 层面强制执行。
+you can only enforce that in the harness.
+
+170
+00:06:09,190 --> 00:06:11,530
+这时候，我们一些老的最佳实践
+And this is where some of our older best practices still
+
+171
+00:06:11,530 --> 00:06:12,910
+依然有用，那就是权限。
+matter, and that's permissions.
+
+172
+00:06:12,910 --> 00:06:15,730
+比如你设了一条 deny rule（拒绝规则），
+So for example, if you have a deny rule
+
+173
+00:06:15,730 --> 00:06:17,630
+针对项目里某个特定的工具调用，
+for a specific tool call in your project,
+
+174
+00:06:17,870 --> 00:06:19,490
+Claude Code 会先检查这条规则，
+Claude Code looks at this rule
+
+175
+00:06:19,490 --> 00:06:21,450
+比 auto mode 分类器还早。
+before the auto mode classifier even looks at it.
+
+176
+00:06:21,450 --> 00:06:23,840
+事实上，只要工具调用命中了 deny rule，
+In fact, if a tool call matches a deny rule,
+
+177
+00:06:23,840 --> 00:06:26,190
+分类器根本就看不到它。
+the classifier never even sees it.
+
+178
+00:06:26,190 --> 00:06:27,570
+所以 deny rule
+So having deny rules
+
+179
+00:06:27,570 --> 00:06:29,500
+仍然是最好的办法，
+is still the best way
+
+180
+00:06:29,500 --> 00:06:32,000
+确保 Claude 绝对不做某件事。
+to make sure Claude actually never does something.
+
+181
+00:06:32,000 --> 00:06:33,510
+但你怎么判断
+But then how do you know what
+
+182
+00:06:33,510 --> 00:06:35,290
+哪些需要在项目里写成规则，
+needs to be a rule in your project
+
+183
+00:06:35,290 --> 00:06:37,730
+哪些模型自己就懂，毕竟它们已经
+versus what the model can just know, because they've gotten
+
+184
+00:06:37,730 --> 00:06:41,290
+这么厉害了？我觉得关键就一点：
+so good at it? Um, I think it kind of just comes down to:
+
+185
+00:06:41,290 --> 00:06:43,350
+如果 Claude 错了一次，我能不能
+if Claude gets this wrong once, can I take
+
+186
+00:06:43,350 --> 00:06:44,110
+撤回？
+it back?
+
+187
+00:06:44,110 --> 00:06:47,070
+如果它写错了代码，你还能回滚，
+So if it writes the wrong code, you can still revert that,
+
+188
+00:06:47,070 --> 00:06:48,590
+那这种就可以交给
+um, so you can still leave that
+
+189
+00:06:48,590 --> 00:06:51,500
+模型。但如果它丢掉了我们未提交的改动，
+to the model. But if it throws away our uncommitted changes,
+
+190
+00:06:51,500 --> 00:06:53,190
+或者读了某个密钥，结果密钥进了
+or it reads a key that's now in your
+
+191
+00:06:53,190 --> 00:06:55,370
+对话记录，而你并不想这样，
+transcript and you don't want that,
+
+192
+00:06:55,370 --> 00:06:57,130
+那就该写成规则。
+that should still be a rule.
+
+193
+00:06:57,130 --> 00:06:58,590
+比如说，
+So for example, let's say that
+
+194
+00:06:58,590 --> 00:07:01,560
+我们绝不想让 Claude 读 .env（环境变量文件）。
+we just never want Claude reading our .env file.
+
+195
+00:07:01,560 --> 00:07:03,850
+默认情况下，auto mode 觉得这没问题，所以它
+Now by default, auto mode is fine with this, so it
+
+196
+00:07:03,850 --> 00:07:05,220
+会直接放行。
+would have just approved it.
+
+197
+00:07:05,220 --> 00:07:08,980
+如果你想确保 Claude 永远读不到这个文件，
+So if you want to make sure that Claude can never read this file,
+
+198
+00:07:09,120 --> 00:07:10,880
+就加一条 deny rule。
+you should just add a deny rule.
+
+199
+00:07:10,880 --> 00:07:13,180
+这样连 cat（查看文件命令）也打不开它。
+And then commands like cat cannot open this file either.
+
+200
+00:07:13,780 --> 00:07:15,630
+但事情不总是这么简单，
+But it's not always that straightforward,
+
+201
+00:07:15,630 --> 00:07:17,380
+因为有些命令会带来
+because sometimes certain commands can have
+
+202
+00:07:17,380 --> 00:07:18,530
+副作用。
+side effects.
+
+203
+00:07:18,530 --> 00:07:20,890
+比如这里的 npm test（运行测试），
+So for example, let's say npm test here,
+
+204
+00:07:20,890 --> 00:07:23,420
+很普通的命令，只是跑个测试，
+a very normal command, it's just a test,
+
+205
+00:07:23,420 --> 00:07:25,380
+auto mode 会直接运行，这没问题。
+so auto mode runs it, that's fine.
+
+206
+00:07:25,380 --> 00:07:26,520
+但脚本运行时，
+But when the script is running,
+
+207
+00:07:26,520 --> 00:07:28,420
+它会执行不是你写的代码，
+it runs code that you didn't
+
+208
+00:07:28,420 --> 00:07:30,300
+比如你的依赖，
+write, like your dependencies,
+
+209
+00:07:30,300 --> 00:07:31,480
+或者 Claude 临时跑个
+or maybe Claude runs a script real quick
+
+210
+00:07:31,480 --> 00:07:32,980
+自己写的脚本，只为了
+that it wrote just to
+
+211
+00:07:32,980 --> 00:07:34,920
+快速检查点东西。
+quickly check something.
+
+212
+00:07:34,920 --> 00:07:37,500
+如果其中某个脚本被攻破了，
+So if one of those scripts is compromised,
+
+213
+00:07:37,500 --> 00:07:39,180
+它就能打开同一个 .env 文件，
+it could just open that same .env file
+
+214
+00:07:39,180 --> 00:07:39,900
+或者你的 SSH 密钥（远程登录凭证），
+or your SSH keys
+
+215
+00:07:39,900 --> 00:07:44,290
+发到一个你从没听说过的服务器上。
+and send those to a server you've never heard of, right?
+
+216
+00:07:44,290 --> 00:07:45,740
+就算我们
+And even if we were
+
+217
+00:07:45,740 --> 00:07:48,040
+还在那儿亲手审批一切，
+still there as humans approving everything,
+
+218
+00:07:48,040 --> 00:07:48,910
+说实话我们也只会点“允许”，
+honestly, we would have just clicked allow,
+
+219
+00:07:48,910 --> 00:07:49,900
+因为根本
+because there's
+
+220
+00:07:49,900 --> 00:07:52,460
+没什么可拒绝的。
+nothing to say no to.
+
+221
+00:07:52,460 --> 00:07:53,730
+那只是脚本的一部分，
+It's just part of the script
+
+222
+00:07:53,730 --> 00:07:56,480
+在这个例子里就是 npm test 跑的东西。
+that, in this example case, npm test runs.
+
+223
+00:07:56,480 --> 00:07:59,650
+权限只决定工具调用能不能运行，
+And permissions only decide if a tool call runs,
+
+224
+00:07:59,650 --> 00:08:02,080
+管不了它运行起来以后能碰到什么。
+but they cannot limit what it can reach once it's
+
+225
+00:08:02,080 --> 00:08:04,090
+我们希望确保
+running. So we want to make sure
+
+226
+00:08:04,090 --> 00:08:05,190
+这类脚本还能正常运行，
+that these kinds of scripts can still run,
+
+227
+00:08:05,190 --> 00:08:07,360
+因为这本来就是
+because this is just part
+
+228
+00:08:07,360 --> 00:08:10,420
+Claude 检查自己工作的方式：跑测试。
+of how Claude can check its own work, running tests.
+
+229
+00:08:10,420 --> 00:08:12,560
+所以我们不能直接拦掉 npm test，
+So we cannot just block npm test,
+
+230
+00:08:12,560 --> 00:08:14,380
+但要限制它的副作用。
+but we want to limit its side effects.
+
+231
+00:08:14,780 --> 00:08:16,210
+说到底，我们要限制的
+So really, we just want to limit
+
+232
+00:08:16,210 --> 00:08:17,380
+是它运行的环境。
+the environment that it's running in.
+
+233
+00:08:18,120 --> 00:08:20,860
+如果你是在本地、在自己电脑上运行，
+So if you're running it locally or on your own machine,
+
+234
+00:08:21,020 --> 00:08:23,380
+可以把这类命令放进沙箱里跑。
+you can run commands like that in a sandbox.
+
+235
+00:08:23,980 --> 00:08:25,730
+这样你就能控制
+So then you have control
+
+236
+00:08:25,730 --> 00:08:27,100
+命令能读哪些文件、
+over which files a command can read,
+
+237
+00:08:27,200 --> 00:08:30,460
+能写哪些文件夹、能访问哪些主机，
+which folders it can write to, which hosts it can reach,
+
+238
+00:08:30,940 --> 00:08:33,140
+并由操作系统来强制执行。
+and the operating system enforces that.
+
+239
+00:08:34,060 --> 00:08:35,910
+而且这同样适用于
+Also, this also applies
+
+240
+00:08:35,910 --> 00:08:36,980
+这个命令启动的所有东西，
+to everything that command then starts,
+
+241
+00:08:37,080 --> 00:08:38,380
+也就是所有子进程。
+so any child processes.
+
+242
+00:08:39,040 --> 00:08:42,080
+单独来看，那条 deny rule 由 Claude 检查，
+So on its own, that deny rule got checked by Claude
+
+243
+00:08:42,080 --> 00:08:43,560
+在命令运行之前。
+before the command runs,
+
+244
+00:08:43,560 --> 00:08:45,250
+但它看到的只有 npm test，
+but all it sees there is npm test,
+
+245
+00:08:45,250 --> 00:08:47,260
+看不到这个
+so it doesn't see which files that
+
+246
+00:08:47,260 --> 00:08:48,880
+脚本最终会打开哪些文件。
+script ends up opening.
+
+247
+00:08:48,880 --> 00:08:49,480
+但开了沙箱以后，
+But with the sandbox on,
+
+248
+00:08:49,480 --> 00:08:52,380
+同一条规则会交给操作
+that same rule gets passed on to the operating
+
+249
+00:08:52,380 --> 00:08:54,560
+系统。这样当那个依赖
+system. So now when that dependency
+
+250
+00:08:54,560 --> 00:08:56,330
+想打开我们的 .env 文件时，
+tries to open our .env file,
+
+251
+00:08:56,330 --> 00:08:58,360
+操作系统直接不
+the operating system just doesn't
+
+252
+00:08:58,360 --> 00:08:59,300
+让它打开。
+let it.
+
+253
+00:08:59,300 --> 00:09:01,370
+默认它还能读你电脑上的大部分东西，
+And by default it can still read most of your machine,
+
+254
+00:09:01,370 --> 00:09:02,780
+所以你可能要再加一条
+so you'd want to add another
+
+255
+00:09:02,780 --> 00:09:06,260
+规则保护 SSH 密钥，如果你在意的话。
+rule for your SSH keys if you care about that,
+
+256
+00:09:06,260 --> 00:09:09,580
+它也访问不了没被允许的主机。
+and it also cannot reach a host that wasn't approved.
+
+257
+00:09:09,580 --> 00:09:11,420
+但沙箱只管
+But the sandbox only covers
+
+258
+00:09:11,420 --> 00:09:13,710
+Claude 运行的 shell（命令行）命令，
+the shell commands that Claude runs,
+
+259
+00:09:13,710 --> 00:09:14,780
+以及这些命令启动的东西。
+and whatever those start,
+
+260
+00:09:14,780 --> 00:09:15,890
+但 Claude 自己的文件读写、
+but Claude's own files,
+
+261
+00:09:15,890 --> 00:09:17,740
+MCP（模型上下文协议）服务器，
+your MCP servers,
+
+262
+00:09:17,740 --> 00:09:20,020
+还有 hooks（钩子脚本），都在沙箱外运行。
+and all of your hooks still run outside of it.
+
+263
+00:09:20,020 --> 00:09:21,040
+所以会话剩下的部分
+So the rest of
+
+264
+00:09:21,040 --> 00:09:23,190
+仍然跑在你自己的电脑上，
+your session still runs on your own machine,
+
+265
+00:09:23,190 --> 00:09:24,460
+能碰到上面的所有东西。
+and everything that's on there.
+
+266
+00:09:24,460 --> 00:09:25,760
+所以理想情况下，
+So ideally you want
+
+267
+00:09:25,760 --> 00:09:28,440
+你希望整个会话跑在一个
+this whole thing to run somewhere
+
+268
+00:09:28,440 --> 00:09:30,090
+根本没有这些东西的地方，
+where none of that is even there in the first place,
+
+269
+00:09:30,090 --> 00:09:30,920
+那就是
+and that is
+
+270
+00:09:30,920 --> 00:09:32,050
+cloud session（云端会话）。
+a cloud session,
+
+271
+00:09:32,050 --> 00:09:33,460
+因为在那里，它有自己的机器，
+because there it gets its own machine
+
+272
+00:09:33,460 --> 00:09:36,460
+和一份全新的仓库副本，而且
+with a fresh copy of the repo, and this
+
+273
+00:09:36,460 --> 00:09:38,110
+合上笔记本也照样运行，
+runs even when we close our laptop,
+
+274
+00:09:38,110 --> 00:09:40,380
+这对那种长时间
+which is definitely something you want for these longer
+
+275
+00:09:40,380 --> 00:09:42,810
+运行好几个小时的会话来说正是刚需。
+running sessions that run for hours.
+
+276
+00:09:42,810 --> 00:09:44,550
+这样一来，
+So in this case, this automatically
+
+277
+00:09:44,550 --> 00:09:46,380
+.env 文件的问题自动就没了，
+gets rid of the .env file
+
+278
+00:09:46,380 --> 00:09:48,190
+因为它不在 git（版本控制）里，
+issue, because it's not in git,
+
+279
+00:09:48,190 --> 00:09:49,820
+我的 SSH 密钥不在，
+and neither are my SSH keys
+
+280
+00:09:49,820 --> 00:09:51,660
+GitHub（代码托管平台）令牌也不在。
+or our GitHub token.
+
+281
+00:09:51,660 --> 00:09:52,610
+如果它还需要
+And if it still needs
+
+282
+00:09:52,610 --> 00:09:53,710
+API（接口）密钥，
+an API key,
+
+283
+00:09:53,710 --> 00:09:55,570
+可以把它加成 network secret（网络密钥）。
+you can add that as a network secret,
+
+284
+00:09:55,570 --> 00:09:57,570
+会话中途它会告诉你：嘿，我缺一个
+where it will tell you, like, hey, I'm missing an
+
+285
+00:09:57,570 --> 00:09:59,970
+API 密钥。
+API key mid-session.
+
+286
+00:10:00,000 --> 00:10:01,350
+这样它能用上这个密钥，
+So it can use it
+
+287
+00:10:01,350 --> 00:10:03,020
+但密钥永远不会发给模型。
+without actually ever sending it to the model.
+
+288
+00:10:03,120 --> 00:10:05,860
+而且默认情况下，在云端会话里，
+And by default, also in a cloud session,
+
+289
+00:10:05,860 --> 00:10:07,820
+网络访问也只限于
+network access is limited to things
+
+290
+00:10:07,820 --> 00:10:09,600
+软件包仓库和 GitHub 这些。
+like package registries and GitHub.
+
+291
+00:10:09,900 --> 00:10:13,140
+所以你得在环境里明确加上域名，
+So you have to explicitly add those domains to your environment
+
+292
+00:10:13,140 --> 00:10:16,830
+Claude 才能访问其他主机。
+for Claude to reach other hosts.
+
+293
+00:10:16,830 --> 00:10:17,730
+有了云端会话，
+So with a cloud session,
+
+294
+00:10:17,730 --> 00:10:20,490
+我们就能跑这些长时间的会话，即使
+we can run these long-running sessions, even with
+
+295
+00:10:20,490 --> 00:10:21,580
+合上了笔记本，
+our laptop closed,
+
+296
+00:10:21,580 --> 00:10:23,100
+而且它很安全，
+and it keeps us safe,
+
+297
+00:10:23,100 --> 00:10:25,510
+因为它运行在独立的环境里。
+because it runs in its own environment.
+
+298
+00:10:26,030 --> 00:10:28,190
+不过还是要记住，
+Now, it's still good to remember
+
+299
+00:10:28,190 --> 00:10:29,730
+这台机器是一次性的，但
+that this machine is disposable, but the
+
+300
+00:10:29,730 --> 00:10:31,460
+从它那里出去的东西不是。
+things that leave it aren't.
+
+301
+00:10:31,460 --> 00:10:32,500
+比如推送了一个提交，
+So a commit is pushed,
+
+302
+00:10:32,500 --> 00:10:35,870
+或者通过连接器发了一条消息。
+or a message is sent through a connector.
+
+303
+00:10:35,870 --> 00:10:38,230
+所以我们仍然开着 auto mode 和 deny rule，
+So we still run it in auto mode with our deny rules,
+
+304
+00:10:38,230 --> 00:10:38,830
+把规则提交进仓库，
+just commit them into the repo
+
+305
+00:10:38,830 --> 00:10:40,230
+让它们跟着一起走，
+so they come along,
+
+306
+00:10:40,230 --> 00:10:42,790
+这样仍能拦住强制推送、
+so it could still catch things like a force push,
+
+307
+00:10:42,790 --> 00:10:45,470
+提交里夹带密钥这类事。
+or a secret in a commit, all that kind of stuff.
+
+308
+00:10:45,470 --> 00:10:47,080
+除了安全，
+And beyond just safety,
+
+309
+00:10:47,080 --> 00:10:49,670
+我们还得确保
+we also need to make sure
+
+310
+00:10:49,670 --> 00:10:53,200
+Claude 做的确实是对的事。
+that Claude is actually working on the right thing.
+
+311
+00:10:53,200 --> 00:10:55,160
+接下来是验证。
+So next is verification.
+
+312
+00:10:55,160 --> 00:10:57,800
+在循环里的好处是，
+And the nice thing about being in the loop was
+
+313
+00:10:57,800 --> 00:10:59,280
+我们大概知道这些工作
+that we kind of knew the work
+
+314
+00:10:59,280 --> 00:11:02,100
+是好的，因为每个改动我们都看过，
+was good, because we'd already kind of seen every change,
+
+315
+00:11:02,100 --> 00:11:03,670
+每一步都是我们审批过的。
+we'd approved everything.
+
+316
+00:11:03,670 --> 00:11:04,420
+但现在如果 Claude
+But now if Claude
+
+317
+00:11:04,420 --> 00:11:05,850
+在后台一干就是几个小时，
+works for hours in the background,
+
+318
+00:11:05,850 --> 00:11:07,410
+我们就没有这种把握了，
+we don't have that anymore,
+
+319
+00:11:07,410 --> 00:11:09,160
+我们也不会真的去读
+and we're not really going to read
+
+320
+00:11:09,160 --> 00:11:12,080
+最后的每一个文件。
+every file at the end either.
+
+321
+00:11:12,080 --> 00:11:13,510
+比如说，我们让它
+So, you know, say that we ask it
+
+322
+00:11:13,510 --> 00:11:16,670
+把认证迁移到一个新的 API。
+to move our auth to a new API. Well,
+
+323
+00:11:16,670 --> 00:11:19,180
+Claude 很擅长理解我们想要什么，
+Claude is very good at understanding what we want,
+
+324
+00:11:19,180 --> 00:11:21,610
+但它一路上还是要做很多小决定，
+but there are still a lot of small decisions that
+
+325
+00:11:21,610 --> 00:11:23,050
+这些都得它自己拿主意。
+it has to make along the way.
+
+326
+00:11:23,050 --> 00:11:24,820
+同样的提示词，
+So with the exact same prompt,
+
+327
+00:11:24,820 --> 00:11:26,370
+有一次可能迁过去了，
+one run might move it over
+
+328
+00:11:26,370 --> 00:11:28,660
+但旧 API 还留着；
+but leave the old API in there,
+
+329
+00:11:28,660 --> 00:11:30,130
+另一次可能迁了，但只对新登录生效；
+or one might move it but only for new logins,
+
+330
+00:11:30,130 --> 00:11:32,130
+还有一次可能
+and another one might
+
+331
+00:11:32,130 --> 00:11:34,430
+迁过去了，却把所有人都登出了。
+move it but log everyone out.
+
+332
+00:11:34,430 --> 00:11:36,580
+这些看起来都挺合理，
+And these all look pretty reasonable,
+
+333
+00:11:36,580 --> 00:11:38,270
+但沿途设好
+but it really helps to set up
+
+334
+00:11:38,270 --> 00:11:40,600
+验证点会很有帮助，
+these verification points along the way,
+
+335
+00:11:40,600 --> 00:11:42,990
+让 Claude 不断验证自己的结果。
+so Claude keeps verifying its own results.
+
+336
+00:11:42,990 --> 00:11:43,810
+验证点可以是
+And those can be
+
+337
+00:11:43,810 --> 00:11:46,560
+任何能返回通过或失败的东西，
+anything that comes back as a pass or fail,
+
+338
+00:11:46,560 --> 00:11:49,250
+测试、构建、截图，有什么用什么。
+so tests, a build, a screenshot, whatever you have.
+
+339
+00:11:49,250 --> 00:11:51,260
+现在我们只需要确保
+So now we just want to make sure
+
+340
+00:11:51,260 --> 00:11:53,350
+审查这些验证点就行。
+that we review these verification points.
+
+341
+00:11:53,350 --> 00:11:54,840
+它们审起来短得多，
+They're a lot shorter to review
+
+342
+00:11:54,840 --> 00:11:57,970
+比最后审整个改动
+than if we just had to review the whole change at the
+
+343
+00:11:57,970 --> 00:11:59,950
+轻松多了，这很合理。
+end. So that's pretty reasonable.
+
+344
+00:11:59,950 --> 00:12:02,590
+如果某次运行还是会把所有人登出，
+So if one of these runs would still log everyone out,
+
+345
+00:12:02,590 --> 00:12:03,210
+它就过不了
+it doesn't
+
+346
+00:12:03,210 --> 00:12:04,530
+第一道检查，
+get past that first check,
+
+347
+00:12:04,530 --> 00:12:06,330
+只能另想办法。
+and then it just has to find another way.
+
+348
+00:12:06,330 --> 00:12:07,810
+设置验证点有几种方式，
+And there's a couple ways to set
+
+349
+00:12:07,810 --> 00:12:11,130
+最简单的当然是写在提示词里。
+this up. The easiest one is of course just in your prompt.
+
+350
+00:12:11,130 --> 00:12:12,510
+你说清楚“完成”是什么样子，
+So, you know, you say what done looks
+
+351
+00:12:12,510 --> 00:12:14,610
+让它拆成多个任务，
+like, and ask it to split that into tasks
+
+352
+00:12:14,610 --> 00:12:16,260
+每个任务都有自己的测试。
+so they have their own tests.
+
+353
+00:12:16,260 --> 00:12:17,710
+我还喜欢让它
+And I also like to ask it
+
+354
+00:12:17,710 --> 00:12:19,450
+把实际输出展示出来，
+to show the actual output,
+
+355
+00:12:19,450 --> 00:12:21,100
+因为你当时不在场。
+because you weren't there to see it.
+
+356
+00:12:21,100 --> 00:12:22,750
+不过，提示词并不能
+But again, prompting is not a
+
+357
+00:12:22,750 --> 00:12:24,540
+保证模型一定会照做。
+guarantee that a model will do it.
+
+358
+00:12:24,540 --> 00:12:27,260
+所以对那些必须执行的检查，
+So for the ones that have to run, guaranteed,
+
+359
+00:12:27,260 --> 00:12:28,750
+我会用
+I would use
+
+360
+00:12:28,750 --> 00:12:30,600
+hooks，它其实就是
+hooks, which are just scripts
+
+361
+00:12:30,600 --> 00:12:34,570
+Claude Code 在特定时机运行的脚本。
+that Claude Code runs at a specific point.
+
+362
+00:12:34,570 --> 00:12:35,270
+它们让你
+And those give you
+
+363
+00:12:35,270 --> 00:12:36,250
+有很大的控制权，
+a lot of control,
+
+364
+00:12:36,250 --> 00:12:38,230
+因为什么时候跑由你决定，
+because you decide when they run,
+
+365
+00:12:38,230 --> 00:12:40,150
+跑什么、查什么也由你决定。
+what they run and what they check. So for
+
+366
+00:12:40,150 --> 00:12:41,770
+比如，每次它编辑文件，
+example, every time it edits a file,
+
+367
+00:12:41,770 --> 00:12:42,560
+我们就跑 linter（代码检查工具）。
+we can run our linter.
+
+368
+00:12:42,560 --> 00:12:45,170
+每次它要把任务标成
+Every time it wants to mark a task as
+
+369
+00:12:45,170 --> 00:12:47,940
+完成时，就跑它改动部分的测试。
+complete, we can run the tests for what it changed.
+
+370
+00:12:47,940 --> 00:12:49,970
+比如它动了认证代码之类的，
+So if it touched our auth code or
+
+371
+00:12:49,970 --> 00:12:51,470
+就必须通过认证测试。
+something, it has to pass the auth tests.
+
+372
+00:12:51,470 --> 00:12:53,680
+它想结束整个会话时，
+And when it wants to finish the whole session,
+
+373
+00:12:53,680 --> 00:12:55,030
+我们就
+we can just
+
+374
+00:12:55,030 --> 00:12:56,920
+跑完整的测试套件。
+run the entire test suite.
+
+375
+00:12:56,920 --> 00:12:58,130
+只要有一个失败，
+And if one of those fails,
+
+376
+00:12:58,130 --> 00:13:00,300
+它就会说：哦，还没修好，然后回头
+it goes, oh, that's still broken. It goes
+
+377
+00:13:00,300 --> 00:13:03,270
+直到通过为止，把它修好。
+back until it passes. So it fixes it.
+
+378
+00:13:03,270 --> 00:13:05,080
+不过要注意一点：
+Now, just one thing:
+
+379
+00:13:05,080 --> 00:13:07,540
+测试失败时，大多数工具默认
+when a test fails, by default most
+
+380
+00:13:07,540 --> 00:13:09,820
+会以退出码 1 退出。
+tools exit with exit code 1.
+
+381
+00:13:09,820 --> 00:13:11,070
+但退出码是 1 的话，
+But with exit code 1,
+
+382
+00:13:11,070 --> 00:13:14,200
+这个任务在 Claude Code 里还是会被标成
+that task in Claude Code just gets marked as
+
+383
+00:13:14,200 --> 00:13:15,640
+已完成。
+completed anyway.
+
+384
+00:13:15,640 --> 00:13:18,960
+所以一定要让脚本以退出码 2 退出，
+So make sure that your scripts exit with exit code 2,
+
+385
+00:13:18,960 --> 00:13:20,000
+因为只有这样
+because that's what
+
+386
+00:13:20,000 --> 00:13:22,110
+才会让 Claude 回去修。
+actually sends Claude back to fix it.
+
+387
+00:13:22,110 --> 00:13:23,760
+好，现在我们有了一个会话，
+So, okay, now we have one session
+
+388
+00:13:23,760 --> 00:13:26,270
+我已经挺放心
+that I'm pretty comfortable
+
+389
+00:13:26,270 --> 00:13:28,110
+让它自己跑了。
+with leaving alone.
+
+390
+00:13:28,110 --> 00:13:30,910
+现在可以多开几个这样的会话，
+So now we can start a few more of those,
+
+391
+00:13:30,910 --> 00:13:31,790
+因为它们都有自己的
+because they've all got their
+
+392
+00:13:31,790 --> 00:13:35,230
+机器，不会都挤在同一个文件夹里，
+own machine, so they're not all working in the same folder,
+
+393
+00:13:35,230 --> 00:13:36,110
+我们也不太需要
+and we don't really have to
+
+394
+00:13:36,110 --> 00:13:39,200
+自己操心 worktree（Git 工作树）了。
+think about worktrees too much ourselves anymore.
+
+395
+00:13:39,200 --> 00:13:42,230
+但每个会话还是我们自己启动的，
+But then we still start every session ourselves,
+
+396
+00:13:42,230 --> 00:13:44,160
+每一个也都要我们来审。
+and we review every one of them.
+
+397
+00:13:44,160 --> 00:13:46,170
+说实话，能做到这一步已经很不错了。
+And honestly, this is already a pretty good place to be.
+
+398
+00:13:46,170 --> 00:13:47,490
+我们依然
+We are still
+
+399
+00:13:47,490 --> 00:13:50,550
+完全掌控启动什么、
+fully in control over what gets started
+
+400
+00:13:50,550 --> 00:13:53,250
+什么时候算任务完成。
+and when we call a task done.
+
+401
+00:13:53,250 --> 00:13:55,440
+但即便如此，
+But even there, we're
+
+402
+00:13:55,440 --> 00:13:57,540
+每个会话还是我们亲手启动，
+still the ones kicking off every session,
+
+403
+00:13:57,540 --> 00:13:59,930
+每一个我们都还在循环里。
+and we're still in the loop for all of them.
+
+404
+00:13:59,930 --> 00:14:00,640
+所以我觉得
+So I think the
+
+405
+00:14:00,640 --> 00:14:03,270
+这时最重要的是
+most important thing to have in place here now
+
+406
+00:14:03,270 --> 00:14:04,250
+你的 CI（持续集成），
+is your CI,
+
+407
+00:14:04,250 --> 00:14:05,720
+因为这些会话最终都会
+because all of these sessions eventually
+
+408
+00:14:05,720 --> 00:14:06,840
+开一个 PR（代码合并请求），
+open a PR,
+
+409
+00:14:06,840 --> 00:14:08,620
+而 CI 会对每个 PR 跑同样的检查，
+and your CI runs the same checks on every one of them,
+
+410
+00:14:08,620 --> 00:14:10,620
+不管那个会话
+no matter how that session
+
+411
+00:14:10,620 --> 00:14:11,490
+怎么配置的，
+was set up,
+
+412
+00:14:11,490 --> 00:14:13,420
+也不管 Claude 一路上做了什么决定。
+or what Claude decided to do along the way.
+
+413
+00:14:13,420 --> 00:14:15,300
+如果你开启自动修复，
+And if you turn on auto-fix, we have
+
+414
+00:14:15,300 --> 00:14:16,550
+比如 CI Autofix（CI 自动修复），
+like, CI Autofix,
+
+415
+00:14:16,550 --> 00:14:19,080
+Claude 就能看到哪项检查失败了，
+Claude can also see when one of those checks fails
+
+416
+00:14:19,080 --> 00:14:21,000
+然后回去修好。
+and then go back to fix it. So
+
+417
+00:14:21,000 --> 00:14:23,410
+这样你就不用把审查精力
+you're not the one spending your review
+
+418
+00:14:23,410 --> 00:14:25,580
+浪费在检查本来就能发现的问题上。
+on things that a check could have already caught.
+
+419
+00:14:25,580 --> 00:14:26,890
+有些 PR 你甚至可以
+And for some of them,
+
+420
+00:14:26,890 --> 00:14:29,490
+打开 merge when ready（检查通过即合并），
+you can even turn on merge when ready,
+
+421
+00:14:29,490 --> 00:14:32,200
+这样等所有
+so then GitHub merges the PR once all
+
+422
+00:14:32,200 --> 00:14:33,430
+检查都通过后，GitHub 就会合并 PR，
+of the checks have passed,
+
+423
+00:14:33,430 --> 00:14:36,130
+你不用在循环里审查。
+so you're not in the loop to review.
+
+424
+00:14:36,130 --> 00:14:37,220
+不过，这不是
+But again, that's not the
+
+425
+00:14:37,220 --> 00:14:39,220
+默认设置，而且要看
+default, and it really depends
+
+426
+00:14:39,220 --> 00:14:40,130
+改动风险有多大。
+on how risky the change is.
+
+427
+00:14:40,130 --> 00:14:42,760
+比如在我们团队，每个 PR
+So for example, on our team, every PR gets
+
+428
+00:14:42,760 --> 00:14:44,230
+都先由 Claude 审，
+reviewed by Claude first,
+
+429
+00:14:44,230 --> 00:14:46,490
+不是写代码的那个会话，
+not by the session that wrote it,
+
+430
+00:14:46,490 --> 00:14:48,500
+所以它带着全新的上下文，
+so it comes with a fresh context,
+
+431
+00:14:48,500 --> 00:14:51,230
+还有另一组智能体
+and also a separate group of agents
+
+432
+00:14:51,230 --> 00:14:53,640
+复核它找到的每个 bug（程序缺陷）。
+to just double-check every bug it finds.
+
+433
+00:14:53,640 --> 00:14:54,780
+至于我们自己
+And then how much we
+
+434
+00:14:54,780 --> 00:14:56,990
+审多少，就看风险。
+review ourselves just depends on the risk.
+
+435
+00:14:56,990 --> 00:14:58,650
+小改动，比如文档或文案，
+So smaller changes like docs or copy,
+
+436
+00:14:58,650 --> 00:14:59,400
+不需要
+they don't need
+
+437
+00:14:59,400 --> 00:15:00,270
+人来审，
+a person,
+
+438
+00:15:00,270 --> 00:15:02,380
+自动检查一全绿，
+so once the automated checks are green,
+
+439
+00:15:02,380 --> 00:15:04,980
+就可以直接合了。普通的产品
+we're pretty good to go. Maybe ordinary product
+
+440
+00:15:04,980 --> 00:15:07,510
+改动只要一个人审，
+changes just need one reviewer,
+
+441
+00:15:07,510 --> 00:15:09,870
+高风险的改动可能要两个人。
+and then risky changes might need two.
+
+442
+00:15:09,870 --> 00:15:11,880
+最终，
+Now, ultimately, kind of
+
+443
+00:15:11,880 --> 00:15:12,620
+我们看到的趋势是，
+where we see things going,
+
+444
+00:15:12,620 --> 00:15:16,190
+Anthropic 内部已经越来越多这样做了：
+and we're already kind of doing more of that at Anthropic,
+
+445
+00:15:16,190 --> 00:15:16,820
+那就是你
+is that you're
+
+446
+00:15:16,820 --> 00:15:19,500
+连这些会话也不用自己一个个启动了。
+not really starting all of those sessions yourself either.
+
+447
+00:15:19,500 --> 00:15:21,020
+如果你跟我一样，
+Because if you're anything like me, I'm
+
+448
+00:15:21,020 --> 00:15:22,380
+特别不擅长切换上下文，
+terrible at context switching,
+
+449
+00:15:22,380 --> 00:15:24,910
+那同时管这么多会话
+so having to manage so many sessions at the same time
+
+450
+00:15:24,910 --> 00:15:26,100
+往往不会
+doesn't always
+
+451
+00:15:26,100 --> 00:15:27,290
+太顺利。
+go well.
+
+452
+00:15:27,290 --> 00:15:28,720
+所以，你只需要一个主会话，
+So instead, you just have one main session
+
+453
+00:15:28,720 --> 00:15:32,600
+当作你的 orchestrator（编排会话）。
+that's your orchestrator. And you can already see
+
+454
+00:15:32,600 --> 00:15:34,310
+比如 Claude Code Projects（多会话编排），
+this in things like Claude Code Projects,
+
+455
+00:15:34,310 --> 00:15:37,050
+它还在 beta（测试版）阶段，
+which is still in beta,
+
+456
+00:15:37,050 --> 00:15:38,780
+你只要告诉它要做什么，
+but you just tell it what it needs
+
+457
+00:15:38,780 --> 00:15:41,220
+orchestrator 就会把它拆开，
+to be done, and the orchestrator splits it up
+
+458
+00:15:41,220 --> 00:15:44,520
+为每个任务启动其他会话，
+and then starts other sessions for each task, and it
+
+459
+00:15:44,520 --> 00:15:45,730
+并跟踪返回的结果。
+keeps track of what comes back.
+
+460
+00:15:45,730 --> 00:15:48,430
+它会自动启动并验证这些 threads（子会话），
+So it automatically starts and verifies these threads,
+
+461
+00:15:48,430 --> 00:15:49,100
+其实就是
+which are just
+
+462
+00:15:49,100 --> 00:15:50,570
+新会话。
+new sessions.
+
+463
+00:15:50,570 --> 00:15:53,030
+所以你不用跟八个会话打交道，
+So instead of talking to eight sessions,
+
+464
+00:15:53,030 --> 00:15:55,350
+只跟一个对话就行。
+you're just talking to one. And the
+
+465
+00:15:55,350 --> 00:15:57,230
+主会话自己不写代码。
+main session doesn't write the code itself.
+
+466
+00:15:57,230 --> 00:15:59,550
+所以它需要一个特别擅长
+So there you want a model that's really good at
+
+467
+00:15:59,550 --> 00:16:02,110
+决定做什么、评判返回结果的模型，
+deciding what to do and judging what comes back,
+
+468
+00:16:02,110 --> 00:16:03,410
+比如 Fable。
+a model like Fable.
+
+469
+00:16:03,410 --> 00:16:05,030
+如果有东西交回来
+And if something comes back
+
+470
+00:16:05,030 --> 00:16:07,560
+却没真正做完，它就打回去，
+that isn't actually done, it just sends it back,
+
+471
+00:16:07,560 --> 00:16:08,930
+直到真正完成，
+until it's actually done and
+
+472
+00:16:08,930 --> 00:16:10,070
+全部检查都通过。
+passes everything.
+
+473
+00:16:10,070 --> 00:16:11,820
+而 threads 需要一个
+And the threads need a model
+
+474
+00:16:11,820 --> 00:16:13,950
+擅长真正动手干活的模型，比如
+that's good at actually doing the work, like
+
+475
+00:16:13,950 --> 00:16:17,080
+Opus 5.5。这两个可以分开设置。
+Opus 5.5. And you can set those separately.
+
+476
+00:16:17,080 --> 00:16:19,010
+主会话用一个模型，
+So one model for the main session, and then
+
+477
+00:16:19,010 --> 00:16:20,360
+threads 用另一个。
+another one for the threads.
+
+478
+00:16:20,360 --> 00:16:22,520
+这样设置还有个好处，
+And another benefit is that with this setup,
+
+479
+00:16:22,520 --> 00:16:24,390
+用 Claude Code Projects
+with Claude Code Projects
+
+480
+00:16:24,390 --> 00:16:27,080
+的话，我们不用再管上下文了，
+specifically, we don't manage context anymore.
+
+481
+00:16:27,080 --> 00:16:29,020
+全都自动处理好了，
+That's all done automatically for us,
+
+482
+00:16:29,020 --> 00:16:29,770
+所以
+so we no
+
+483
+00:16:29,770 --> 00:16:33,810
+不用再考虑什么时候压缩、什么时候清空，
+longer have to think about when to compact or clear,
+
+484
+00:16:33,810 --> 00:16:34,440
+这些都不用管了。
+all of that stuff.
+
+485
+00:16:34,440 --> 00:16:35,260
+好，
+Okay, so if
+
+486
+00:16:35,260 --> 00:16:38,710
+回头看那些老的最佳实践，
+you look back at those old best practices,
+
+487
+00:16:38,710 --> 00:16:40,720
+它们都还在，只是换了位置。
+they're all still there, but they've just moved.
+
+488
+00:16:40,720 --> 00:16:42,430
+现在由模型来引导，
+So the model steers it now,
+
+489
+00:16:42,430 --> 00:16:43,140
+auto mode 负责审批，
+auto mode approves,
+
+490
+00:16:43,140 --> 00:16:45,700
+deny rule 和运行环境
+your deny rules and the environment
+
+491
+00:16:45,700 --> 00:16:46,340
+限制能做什么，
+restrict what's possible,
+
+492
+00:16:46,340 --> 00:16:48,490
+测试、hooks 和 CI 负责检查，
+your tests, your hooks, and your CI check it,
+
+493
+00:16:48,490 --> 00:16:51,800
+最终，连启动会话都能交给 Claude。
+and then ultimately Claude can just start them as well.
+
+494
+00:16:51,800 --> 00:16:54,820
+几乎所有我们以前亲手做的事，
+So almost everything we used to do ourselves
+
+495
+00:16:54,820 --> 00:16:57,240
+现在都交给了模型、harness 或
+is now either the model, the harness, or the
+
+496
+00:16:57,240 --> 00:16:58,240
+运行环境。
+environment.
+
+497
+00:16:58,240 --> 00:17:00,840
+我们只需要启动第一个会话，
+And we're really just here to start that first one
+
+498
+00:17:00,840 --> 00:17:02,660
+再审查产出的结果。
+and to just review what comes out.
+
+499
+00:17:02,660 --> 00:17:05,300
+如果你想在自己的环境里试试，
+So if you want to try this in your own setup,
+
+500
+00:17:05,300 --> 00:17:06,660
+我建议拿一件
+I would say just take one thing that's way
+
+501
+00:17:06,660 --> 00:17:08,790
+比平时交给 Claude 的大得多的任务，
+bigger than you'd normally give Claude,
+
+502
+00:17:08,790 --> 00:17:11,140
+确保你的 CI 真能拦住你
+make sure your CI actually catches the things you
+
+503
+00:17:11,140 --> 00:17:12,100
+在意的问题，
+care about,
+
+504
+00:17:12,100 --> 00:17:13,230
+然后花点时间
+and then spend a bit of time
+
+505
+00:17:13,230 --> 00:17:15,160
+配置好你的环境，比如网络
+just configuring your environment, like its network
+
+506
+00:17:15,160 --> 00:17:18,140
+访问、密钥和初始化脚本，
+access, its secrets, and its setup script,
+
+507
+00:17:18,140 --> 00:17:20,300
+然后从云端开始，看看
+and then start in the cloud and see where
+
+508
+00:17:20,300 --> 00:17:23,140
+你的会话卡在哪、你还在哪些环节里，
+your sessions get stuck and where you're still in the loop,
+
+509
+00:17:23,140 --> 00:17:24,840
+因为那就是下一步要交给
+because that's the next thing to hand
+
+510
+00:17:24,840 --> 00:17:25,770
+Claude 的地方。
+over to Claude.
+
+511
+00:17:25,770 --> 00:17:28,050
+我也强烈推荐大家去看看
+I also highly recommend checking out
+
+512
+00:17:28,050 --> 00:17:30,050
+文档里的最佳实践。
+our best practices in the docs as well.
+
+513
+00:17:30,050 --> 00:17:31,060
+非常感谢大家。
+Thank you so much.

@@ -1,5 +1,86 @@
 [
   {
+    "title": "你的 SKILL.md 里 70% 的内容模型早已掌握 | Nikolay Petrov",
+    "bilibili_title": "你的 SKILL.md 里 70% 的内容模型早已掌握 | Nikolay Petrov",
+    "original_title": "Your SKILL.md Is 70% Stuff the Model Already Knows - Nikolay Petrov, Intel",
+    "bilibili_url": "https://www.bilibili.com/video/BV1U2sB6QEPg/",
+    "youtube_url": "https://www.youtube.com/watch?v=yzx4IuEh_tU",
+    "channel": "AI Engineer",
+    "duration": "00:14:01",
+    "published_at": "2026-11-17",
+    "up": "通用人工智障",
+    "speakers": [
+      "Nikolay Petrov"
+    ],
+    "folder_title": "你的 SKILL.md 里 70% 的内容模型早已掌握 | Nikolay Petrov",
+    "path": "videos/undated-085_skill-md-70-percent-nikolay-petrov/",
+    "slug": "undated-085_skill-md-70-percent-nikolay-petrov",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-11-11",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png"
+    ],
+    "subtitle_file": "Your SKILL.md Is 70% - Nikolay Petrov.有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "Meta Muse 幕后揭秘 如何打造出今年最成功的消费级 AI 产品 |  Mona Sarantakos",
+    "bilibili_title": "Meta Muse 幕后揭秘 如何打造出今年最成功的消费级 AI 产品 |  Mona Sarantakos",
+    "original_title": "Meta’s Muse: Inside the launch of the most successful consumer product this year | Mona Sarantakos",
+    "bilibili_url": "https://www.bilibili.com/video/BV1j3sz6vEBr/",
+    "youtube_url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+    "channel": "Lenny’s Podcast",
+    "duration": "01:27:16",
+    "published_at": "2026-11-17",
+    "up": "通用人工智障",
+    "speakers": [
+      "Mona Sarantakos",
+      "Lenny Rachitsky"
+    ],
+    "folder_title": "Meta Muse 幕后揭秘 如何打造出今年最成功的消费级 AI 产品 |  Mona Sarantakos",
+    "path": "videos/undated-084_meta-muse-mona-sarantakos/",
+    "slug": "undated-084_meta-muse-mona-sarantakos",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-11-15",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png"
+    ],
+    "subtitle_file": "Meta’s Muse - Mona Sarantakos.有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "模型进化后 我们该如何与 Agent 协作 | Lydia Hallie",
+    "bilibili_title": "模型进化后 我们该如何与 Agent 协作 | Lydia Hallie",
+    "original_title": "Rethinking Claude Code Best Practices — Lydia Hallie, Anthropic",
+    "bilibili_url": "https://www.bilibili.com/video/BV191sg6UE47/",
+    "youtube_url": "https://www.youtube.com/watch?v=vlfCjWuv4es",
+    "channel": "AI Engineer",
+    "duration": "00:17:32",
+    "published_at": "2026-11-17",
+    "up": "通用人工智障",
+    "speakers": [
+      "Lydia Hallie"
+    ],
+    "folder_title": "模型进化后 我们该如何与 Agent 协作 | Lydia Hallie",
+    "path": "videos/undated-083_rethinking-claude-code-best-practices-lydia-hallie/",
+    "slug": "undated-083_rethinking-claude-code-best-practices-lydia-hallie",
+    "cover": "cover.jpeg",
+    "outline_count": 2,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png"
+    ],
+    "subtitle_file": "Rethinking Claude Code Best Practices.有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
     "title": "别再抱怨 AI 写垃圾代码了 教你把代码变成黄金 | Lauren Tan",
     "bilibili_title": "别再抱怨 AI 写垃圾代码了 教你把代码变成黄金 | Lauren Tan",
     "original_title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",

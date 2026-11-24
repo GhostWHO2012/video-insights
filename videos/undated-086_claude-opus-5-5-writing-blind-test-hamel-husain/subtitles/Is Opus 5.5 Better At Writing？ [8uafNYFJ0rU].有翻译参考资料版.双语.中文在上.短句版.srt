@@ -1,0 +1,2194 @@
+1
+00:00:00,000 --> 00:00:02,665
+“Opus 5.5 表达更自然，
+"Opus 5.5 communicates more naturally,
+
+2
+00:00:02,665 --> 00:00:05,140
+回应了我们最常听到的一些反馈”，
+addressing some of the most common feedback we've heard,"
+
+3
+00:00:05,260 --> 00:00:07,600
+基本就是 AI 味废话。好，
+like, basically, slop. Like, okay,
+
+4
+00:00:07,600 --> 00:00:11,500
+“它会把最重要的信息放在前面，
+"It puts the most important information up front, follows
+
+5
+00:00:11,500 --> 00:00:13,465
+遵守你给的写作规则，
+the writing rules you give it,
+
+6
+00:00:13,465 --> 00:00:17,640
+让长会话更容易跟上。”好，我们看看。
+makes long sessions easier to follow." Okay, so let's see. Let's see
+
+7
+00:00:17,640 --> 00:00:20,242
+看看这张图。这里大概分两部分，
+this, like, image. So it's like two parts of that,
+
+8
+00:00:20,242 --> 00:00:23,080
+对吧？一是它能不能写得好、
+right? There's like: does it naturally write well
+
+9
+00:00:23,080 --> 00:00:26,230
+表达得自然？第二部分是
+and communicate naturally? And then the second part:
+
+10
+00:00:26,230 --> 00:00:28,120
+它能遵守指令，所以你可以
+it follows instructions, so you can
+
+11
+00:00:28,120 --> 00:00:30,793
+让它按你自己的风格写。我想
+have it write in your own style. I guess those would
+
+12
+00:00:30,793 --> 00:00:33,020
+这就是他们宣称的两点，对吧？对。
+be the two things they're claiming here, right? Yes.
+
+13
+00:00:33,020 --> 00:00:35,915
+也许你得写个提示词来减少 AI 味，
+Maybe you need, like, a prompt to reduce slop,
+
+14
+00:00:35,915 --> 00:00:39,100
+不过也可能它本身就写得没那么 AI 味。
+but also, okay, maybe it'll just write less slop.
+
+15
+00:00:39,100 --> 00:00:42,556
+好，和上次做写作测试一样，
+Okay, so what I did, like last time we did a writing thing,
+
+16
+00:00:42,556 --> 00:00:45,320
+我用 vibe coding 做了个
+I vibe-coded this, like, app that is a side-by-
+
+17
+00:00:45,320 --> 00:00:48,143
+并排对比的小应用。肯定有别的做法，
+side review. I'm sure there's different ways to do this,
+
+18
+00:00:48,143 --> 00:00:50,160
+但这个比较简单。我在
+but this is like an easy way. So I'm
+
+19
+00:00:50,160 --> 00:00:51,741
+对比 5.5 和 5，
+comparing, like, 5.5 to 5,
+
+20
+00:00:51,741 --> 00:00:55,100
+基本上就是：好，我要问这个问题：
+and basically what I'm doing is saying, like, okay, I'm gonna ask
+
+21
+00:00:55,100 --> 00:01:04,600
+“写篇短文，FAQ（常见问题解答）那种，介绍
+this question: "Can you write a short article, like a FAQ, that describes
+
+22
+00:01:04,600 --> 00:01:08,412
+什么是 AI 评测。”一边是 Opus 5，一边是 5.5。
+what AI evals are?" You have Opus 5 versus 5.5.
+
+23
+00:01:08,412 --> 00:01:11,680
+好，看看会怎样。它在探索
+Okay, let's see what happens. It's exploring the
+
+24
+00:01:11,680 --> 00:01:14,240
+数据，在探索上下文。你看，
+data, it's exploring, like, the context. You know,
+
+25
+00:01:14,240 --> 00:01:17,440
+基本就是让它根据
+it's basically having it write an article based
+
+26
+00:01:17,440 --> 00:01:20,650
+一些资料写文章，你自己
+on some context, which is kind of like what you do
+
+27
+00:01:20,650 --> 00:01:23,860
+写东西时差不多也是这样。好，
+if you're trying to write something. Okay, you got
+
+28
+00:01:23,860 --> 00:01:26,811
+Opus 5 一开始，看起来调用了很多次，
+Opus 5 that started, it looked like a lot.
+
+29
+00:01:26,811 --> 00:01:30,500
+Opus 5.5 的工具调用少得多。对。我不知道
+Opus 5.5 did a lot fewer tool calls. Yes. I don't know
+
+30
+00:01:30,500 --> 00:01:33,472
+这是好是坏，但我在想它读的资料
+if that's good or bad, but I wonder if it read the same
+
+31
+00:01:33,472 --> 00:01:36,020
+是不是一样多。这是另一个问题。
+amount of context. That's another thing. I guess
+
+32
+00:01:36,020 --> 00:01:39,689
+先让它生成一会儿，然后并排对比，
+let it generate a little bit, and then we can do a side-by-side,
+
+33
+00:01:39,689 --> 00:01:41,320
+看看我们觉得哪个
+we could see which one we think is
+
+34
+00:01:41,320 --> 00:01:43,113
+更好。它这里自由发挥了一点。
+better. It took some liberties here.
+
+35
+00:01:43,113 --> 00:01:46,500
+“用一句话解释，什么是评测？”太好笑了，
+"What is an eval in one sentence?" It's hilarious that it says "What
+
+36
+00:01:46,500 --> 00:01:50,061
+标题写着“一句话解释”，却给了我们一整本书。
+is an eval in one sentence?" and gives us an entire book on it.
+
+37
+00:01:50,061 --> 00:01:52,040
+嗯，那一句话，要是你用
+Well, the sentence, I mean, if you use an
+
+38
+00:01:52,040 --> 00:01:53,260
+英文长破折号代替句号，
+em dash instead of a period,
+
+39
+00:01:53,400 --> 00:01:54,480
+这句话还没完呢，对吧？
+this sentence isn't over, right?
+
+40
+00:01:55,000 --> 00:01:57,297
+我是说，一开始，我会……
+I mean, so starting at first, I do...
+
+41
+00:01:57,297 --> 00:02:00,360
+Opus 5.5 多加了“一份简短的 FAQ”。
+Opus 5.5 added that extra "a short FAQ."
+
+42
+00:02:00,540 --> 00:02:02,060
+我大概会删掉“简短”这个词。
+I would probably delete the word "short."
+
+43
+00:02:02,720 --> 00:02:06,180
+我觉得这没必要……大家都知道 FAQ 是什么。
+I'm like, that doesn't seem... people know what an FAQ is.
+
+44
+00:02:06,710 --> 00:02:07,510
+对。
+Yes.
+
+45
+00:02:07,560 --> 00:02:09,140
+“根据课程讲义”，巴拉巴拉。
+"Based on the course reader," blah, blah, blah.
+
+46
+00:02:09,190 --> 00:02:09,650
+好。
+Okay.
+
+47
+00:02:09,700 --> 00:02:10,800
+“什么是 AI 评测？”
+"What is an AI eval?"
+
+48
+00:02:10,860 --> 00:02:12,260
+这才到重点。
+So this is where the meat is.
+
+49
+00:02:12,400 --> 00:02:14,265
+“评测是一种按你需要的方式
+"An eval is a way to measure your AI
+
+50
+00:02:14,265 --> 00:02:15,960
+衡量 AI 应用的方法。
+application the way you need it to.
+
+51
+00:02:15,960 --> 00:02:18,960
+它通常不是一次测试或一个分数，
+It usually isn't one test or one score.
+
+52
+00:02:19,180 --> 00:02:19,980
+而是一个过程。”
+It's a process."
+
+53
+00:02:20,410 --> 00:02:21,210
+好。
+Okay.
+
+54
+00:02:21,260 --> 00:02:22,520
+那我就先记下这一票。
+So I'm just going to record the vote.
+
+55
+00:02:22,980 --> 00:02:23,940
+再试点别的。
+And let's try something else.
+
+56
+00:02:24,040 --> 00:02:26,100
+来点完全不一样的。
+Like, let's do something completely different.
+
+57
+00:02:26,560 --> 00:02:28,360
+好，给它一个写作任务。
+Like, okay, let's give it a writing task.
+
+58
+00:02:28,580 --> 00:02:31,480
+就拿你的博客文章来出题吧。
+Maybe let's give it a writing task based on your blog posts.
+
+59
+00:02:31,840 --> 00:02:32,660
+好，到这里。
+Okay, let's go here.
+
+60
+00:02:32,740 --> 00:02:34,840
+《我用 Jev（判断分类模型）尝试的六件事》。
+"Six Things I Tried with Jev."
+
+61
+00:02:34,940 --> 00:02:35,740
+好，不错。
+Okay, cool.
+
+62
+00:02:36,420 --> 00:02:37,220
+就试这个。
+Let's try that.
+
+63
+00:02:37,340 --> 00:02:40,680
+“给这篇文章写个摘要。”
+"Write a summary of this post."
+
+64
+00:02:41,140 --> 00:02:43,740
+“确保它……”好，对，“写给
+"Make sure it's..." Okay, yeah, "for
+
+65
+00:02:44,160 --> 00:02:46,722
+那些对 Jev 持怀疑态度的人，
+people who are skeptical about Jev
+
+66
+00:02:46,722 --> 00:02:49,540
+因为分类器早就存在了。”
+because classifiers have existed before."
+
+67
+00:02:49,590 --> 00:02:50,220
+好。
+Okay.
+
+68
+00:02:50,220 --> 00:02:53,580
+我要写“语气温和、专业”，
+I'm gonna say, "Have a warm, professional tone,"
+
+69
+00:02:53,580 --> 00:02:56,660
+我还要更进一步，我会写：
+and I'll even, like, go further. I'll say, like,
+
+70
+00:02:56,660 --> 00:02:58,850
+“用 plain-writing（简明写作技能）。”我会写：
+"Use this plain-writing skill." So I'll say, like,
+
+71
+00:02:58,850 --> 00:03:01,040
+“用我们的朋友 Shreya 的 plain-writing 技能。”
+"Use this plain-writing skill from our friend Shreya."
+
+72
+00:03:01,040 --> 00:03:05,867
+我就直接让它
+I'll just say, like, okay, I'll just tell it to look at this
+
+73
+00:03:05,867 --> 00:03:09,660
+参考这份 Markdown（文本标记格式）文件。
+Markdown file as guidance. So, "Look at this."
+
+74
+00:03:09,660 --> 00:03:14,374
+等等，我让 Codex（编程智能体工具）改成盲测，
+Wait, let me tell Codex to, like, let's make it blind.
+
+75
+00:03:14,374 --> 00:03:19,480
+把模型名称隐藏起来，然后让我们
+Make the model names blind, and then allow us to
+
+76
+00:03:19,480 --> 00:03:23,378
+想揭晓时再切换显示。好，
+toggle them when we want to reveal. Okay,
+
+77
+00:03:23,378 --> 00:03:28,340
+跳回来。好，Opus 5 正在干活。
+let's jump back here. Okay, Opus 5 is trying to do stuff.
+
+78
+00:03:28,340 --> 00:03:32,404
+5.5 还在跑，感觉它卡住了还是怎么了。
+5.5 is still going. I feel like it got stuck or something.
+
+79
+00:03:32,404 --> 00:03:34,300
+“Isaac 用 Jev 尝试的六件事，
+"Six Things Isaac Tried with Jev,
+
+80
+00:03:34,300 --> 00:03:38,684
+写给怀疑者的摘要。”这个标题有点太照搬了。
+Summarized for Skeptics." A little bit too literal,
+
+81
+00:03:38,684 --> 00:03:43,360
+好。“Isaac Flath 拿自己工作里的六项任务
+of like the title. Okay. "Isaac Flath tested TypeSafe's
+
+82
+00:03:43,360 --> 00:03:49,540
+测试了 TypeSafe 的判断模型 Jev，Jev 的
+Jev, a judgment model, on six jobs from his own work, and Jev scored
+
+83
+00:03:49,540 --> 00:03:53,200
+准确率和 Gemini 3.5 Flash 差不多，
+about the same as Gemini 3.5 Flash on accuracy
+
+84
+00:03:53,200 --> 00:03:56,860
+响应速度却快了 14 倍。如果你的反对理由
+while answering 14 times faster. If your objection
+
+85
+00:03:56,860 --> 00:03:59,689
+是分类器已经存在很多年了，
+is that classifiers have been around for years,
+
+86
+00:03:59,689 --> 00:04:02,260
+这篇文章并不是要反驳你。”我的天。
+the post doesn't argue against you." Oh my God.
+
+87
+00:04:02,260 --> 00:04:04,469
+好，这写得真差。
+Okay, like, that's really bad writing. Like,
+
+88
+00:04:04,469 --> 00:04:07,120
+谁的反对理由？谁……
+whose objection are we talking about? Like, who's...
+
+89
+00:04:07,120 --> 00:04:09,656
+你知道，它就像是把我的……
+like, you know, it's like, it's taking my...
+
+90
+00:04:09,656 --> 00:04:13,320
+它被我的提示词带偏了，
+it's like oversteering based on what I told it,
+
+91
+00:04:13,320 --> 00:04:17,252
+它假设我是在写给
+and it's like assuming that I'm writing about someone
+
+92
+00:04:17,252 --> 00:04:20,060
+一个持反对意见的人。对，它就是这样，
+that has an objection. Yeah, it's doing that,
+
+93
+00:04:20,060 --> 00:04:22,480
+如果是他事先铺垫好的倒也行，但现在
+which could be fine if he set it up, but it's like,
+
+94
+00:04:22,480 --> 00:04:24,900
+读起来就像我在一上来就
+it comes off as like I'm immediately
+
+95
+00:04:24,900 --> 00:04:27,967
+回应一个特别抵触的人，
+responding to somebody who's like super defensive.
+
+96
+00:04:27,967 --> 00:04:30,420
+就像对方很防备一样。这就……
+You know, like they're really defensive. And this is...
+
+97
+00:04:30,420 --> 00:04:34,778
+对，对，这种东西让我抓狂。
+Yeah, yeah, this is the kind of stuff that drives me crazy.
+
+98
+00:04:34,778 --> 00:04:37,580
+好。“准确率……”“这篇文章
+Okay. "The accuracy..." "The post
+
+99
+00:04:37,580 --> 00:04:39,818
+并不是要反驳你。”好吧，
+doesn't argue against you." It's like, okay,
+
+100
+00:04:39,818 --> 00:04:43,300
+这读起来就像 AI 写的。“准确率数据
+this feels like AI writing. "The accuracy numbers are
+
+101
+00:04:43,300 --> 00:04:46,670
+在多数测试里打平或略输，
+a tie or a small loss in most of the tests,
+
+102
+00:04:46,670 --> 00:04:50,960
+所以 Jev 的优势在于响应时间，以及不必
+so the case for Jev rests on response time and not having
+
+103
+00:04:50,960 --> 00:04:53,591
+先搭建一个分类器。”哇，这句话
+to build a classifier first." Wow, that sentence is
+
+104
+00:04:53,591 --> 00:04:56,660
+复杂得离谱，我得
+so insanely complex. I have to, like, concentrate
+
+105
+00:04:56,660 --> 00:04:58,242
+特别集中注意力才能看懂。
+really hard to, like, get there.
+
+106
+00:04:58,242 --> 00:05:01,180
+读起来太费脑子了，
+It's a lot of cognitive work for something that
+
+107
+00:05:01,180 --> 00:05:03,655
+根本不需要这么复杂。可以……对，
+doesn't need to be so complicated. It could be... Yeah,
+
+108
+00:05:03,655 --> 00:05:06,320
+可以写得特别简单。好。“《我用
+it could be super simple. Okay. "Summary of 'Six
+
+109
+00:05:06,320 --> 00:05:09,221
+Jev 尝试的六件事》摘要”。标题也没好到哪去。
+Things I Tried with Jev.'" Not much better title.
+
+110
+00:05:09,221 --> 00:05:11,880
+“如果你以前做过文本分类器，
+"If you have built text classifiers before, you'll
+
+111
+00:05:11,880 --> 00:05:14,898
+你会认出 Isaac Flath 文章里的大部分任务，
+recognize most of the tasks in Isaac Flath's post,
+
+112
+00:05:14,898 --> 00:05:18,420
+所以自然会问 Jev 多了什么。”太好了，
+so it's reasonable to ask what Jev adds." Amazing,
+
+113
+00:05:18,420 --> 00:05:20,513
+这好多了。好多了，对。
+that's so much better. Better, yeah.
+
+114
+00:05:20,513 --> 00:05:24,700
+“文章用 Isaac 自己工作的结果来回答。他用一个
+"The post answers with results from Isaac's own work. He used one
+
+115
+00:05:24,700 --> 00:05:27,739
+模型，即 TypeSafe 的判断模型 Jev，
+model, TypeSafe's judgment model Jev,
+
+116
+00:05:27,739 --> 00:05:32,160
+做了六种关于 AI 和文档的判断。
+for six different decisions about AI and documents. For
+
+117
+00:05:32,160 --> 00:05:34,449
+每个判断，他都直接问 Jev 一个问题，
+each decision, he asked Jev a plain question,
+
+118
+00:05:34,449 --> 00:05:37,120
+文章里没提收集训练数据
+and the post doesn't mention collecting training data or
+
+119
+00:05:37,120 --> 00:05:38,813
+或训练单独的模型。”好，
+training a separate model." Okay,
+
+120
+00:05:38,813 --> 00:05:41,860
+这有点添油加醋，但还行。我是说，我会……
+it's a little bit of embellishment, but okay. I mean, I would... I
+
+121
+00:05:41,860 --> 00:05:47,440
+我觉得……对，我觉得这句话的观点
+mean, I feel like... yeah, I feel like that sentence, like, the point that it
+
+122
+00:05:47,440 --> 00:05:50,038
+可能有用，但应该放在后面。
+made there could be helpful. It would come later.
+
+123
+00:05:50,038 --> 00:05:52,400
+应该放在我举完例子之后，
+It would come, like, I'd show the example,
+
+124
+00:05:52,400 --> 00:05:54,869
+说明他没讲数据集是怎么来的，
+to be like, now, he didn't talk about how he created the data set.
+
+125
+00:05:54,869 --> 00:05:55,740
+所以这算是
+And so there's like, it
+
+126
+00:05:55,740 --> 00:05:58,377
+一种附加说明。但它开头很好，
+would be like a caveats thing. But it started out strong,
+
+127
+00:05:58,377 --> 00:06:00,000
+然后就写成这样，接着
+and then it does this, and then the
+
+128
+00:06:00,000 --> 00:06:03,077
+下一句又开始堆砌
+sentence right after, it kind of jumped into, like,
+
+129
+00:06:03,077 --> 00:06:05,680
+事实。到这里就写得很糟了。
+listing facts. It gets really bad, like, right here.
+
+130
+00:06:05,680 --> 00:06:07,577
+这些全都该删掉。
+Like, all this needs to get deleted.
+
+131
+00:06:07,577 --> 00:06:10,740
+一下子就钻进细节里了。对，没必要
+It's going into a rabbit hole really fast. Yeah, it doesn't
+
+132
+00:06:10,740 --> 00:06:15,140
+这么早提。它提了“0.35 到 0.52 秒”、
+need to mention this early. It mentioned "0.35 to 0.52 seconds,"
+
+133
+00:06:15,140 --> 00:06:17,340
+“准确率接近”“Gemini Flash”。
+"close accuracy," "Gemini Flash." Might
+
+134
+00:06:17,340 --> 00:06:20,647
+也许还行，但放在开头太具体了，
+be okay, but, like, that's getting too specific for the intro,
+
+135
+00:06:20,647 --> 00:06:22,300
+我们都还没……这些
+when we haven't even... like, those
+
+136
+00:06:22,300 --> 00:06:24,442
+数字毫无意义，因为我们连
+numbers don't mean anything, because we don't even
+
+137
+00:06:24,442 --> 00:06:26,420
+任务是什么都不知道。对。“这个模型用
+know what the task is. Yeah. "The model trained on
+
+138
+00:06:26,420 --> 00:06:29,414
+标注好的样本训练，只回答一个固定问题。”
+labeled examples to answer one fixed question."
+
+139
+00:06:29,414 --> 00:06:31,980
+好，对，这没错。“传统的，比如
+Okay, yeah, that's true. "It's traditional, e.g.
+
+140
+00:06:31,980 --> 00:06:35,257
+判断邮件是否为垃圾邮件。”我文章里应该没这个，
+whether an email is spam." I don't think I had that in the post.
+
+141
+00:06:35,257 --> 00:06:37,100
+我觉得这个例子是它编的。
+I think it made up that example.
+
+142
+00:06:37,100 --> 00:06:39,830
+我不太喜欢，因为这有点老套，
+I don't love it, because it's kind of a cliché,
+
+143
+00:06:39,830 --> 00:06:42,560
+但也不算太糟。“任何新问题
+but it's not terrible. "Any new question
+
+144
+00:06:42,560 --> 00:06:45,860
+通常都需要新的标注样本。
+usually needs new labeled examples.
+
+145
+00:06:45,860 --> 00:06:49,460
+Isaac 的六项任务各自问一个不同的问题。”
+Isaac's six tasks each ask a different question."
+
+146
+00:06:49,460 --> 00:06:51,780
+这……这挺糟的。不好，
+That's... that's pretty bad. That's not good.
+
+147
+00:06:51,780 --> 00:06:55,260
+不好。“比如一段文字是否……”我是说，
+That's not good. "e.g. whether a passage..." I mean,
+
+148
+00:06:55,260 --> 00:06:58,880
+这到底……我在想，怎么会有人
+how in the hell... I'm like, how can you even, like,
+
+149
+00:06:58,880 --> 00:07:02,500
+写出这样的句子？它……
+imagine writing a sentence like this? Like, it's...
+
+150
+00:07:02,500 --> 00:07:06,289
+它想做一个总结，像是概述
+it's trying to do, like, a summary, like an overview of,
+
+151
+00:07:06,289 --> 00:07:09,320
+他试过的任务。我能理解，
+like, here's the tasks he tried. And I could do that
+
+152
+00:07:09,320 --> 00:07:10,737
+如果你把它当成
+if you were setting it up as, like,
+
+153
+00:07:10,737 --> 00:07:12,940
+目录来给大家……但那样的话，
+a table of contents to let people... but then, like, each
+
+154
+00:07:12,940 --> 00:07:16,003
+每个例子就该是一个要点，而不是……
+of those examples would just be bullets, rather than...
+
+155
+00:07:16,003 --> 00:07:18,360
+对，这其实完全说不通。
+Yeah, it doesn't make any sense, actually.
+
+156
+00:07:18,360 --> 00:07:22,650
+它有没有说……任务不会提问题。
+Like, did it even say, like... tasks don't ask a question.
+
+157
+00:07:22,650 --> 00:07:24,960
+我的任务……问题就在于它
+Like, my tasks... That's the issue: it
+
+158
+00:07:24,960 --> 00:07:26,846
+没说清楚。很混乱，因为它写的是
+didn't say. It's confusing, because it's
+
+159
+00:07:26,846 --> 00:07:29,780
+“Isaac 的六项任务各自问一个不同的……”任务
+like "Isaac's six tasks each ask a different..." Like, the task
+
+160
+00:07:29,780 --> 00:07:32,430
+不会提问题，是我提的问题。
+doesn't ask the question. Like, I asked the question.
+
+161
+00:07:32,430 --> 00:07:34,860
+我们根本不知道这六项任务是什么。
+We don't even know what these six tasks are. Like,
+
+162
+00:07:34,860 --> 00:07:37,320
+读到这里我就在想，
+where did this... like, when I read this, I'm like,
+
+163
+00:07:37,320 --> 00:07:39,780
+哪儿？什么六项任务？有六项任务，
+where? What six tasks? Like, there's six tasks, and
+
+164
+00:07:39,780 --> 00:07:42,920
+AI 经常这样。对，对。所以，
+this happens with AI a lot. Yeah, yeah. So, like,
+
+165
+00:07:42,920 --> 00:07:46,060
+我不知道。“六件事”，是指六项任务吗？
+I don't know. Like, "six things," is that six tasks? Like,
+
+166
+00:07:46,060 --> 00:07:49,599
+这到底怎么回事？这就是那种情况，
+what is going on? And this is the kind of thing,
+
+167
+00:07:49,599 --> 00:07:53,460
+AI 特别爱把信息塞到
+like, AI loves to just push information in
+
+168
+00:07:53,460 --> 00:07:56,393
+不该放的地方，或者衔接不顺。
+places where it shouldn't go, or it doesn't flow.
+
+169
+00:07:56,393 --> 00:08:00,500
+好，我会说 B，也就是 5.5 赢了，但
+So, okay, I would say, like, B, or, like, 5.5 wins, but
+
+170
+00:08:00,500 --> 00:08:04,437
+还是一股 AI 味。对。“AI 味废话也许还会存在一两年，
+it's still slop. Yeah. "Slop will be a problem for maybe a year or two,
+
+171
+00:08:04,437 --> 00:08:06,160
+前提是那些弱的、能力差的、
+only as long as weak, less
+
+172
+00:08:06,160 --> 00:08:09,083
+会产出废话的模型还有人在用。”
+capable, slop-producing models are still being used."
+
+173
+00:08:09,083 --> 00:08:11,380
+我觉得我们看到的是，5.5 还是……
+I think we're seeing that 5.5 is still... It seems
+
+174
+00:08:11,380 --> 00:08:15,083
+目前看起来更好，我们的样本量才 2，
+better so far, with our sample size of two,
+
+175
+00:08:15,083 --> 00:08:19,460
+但看起来还是一股 AI 味。好，那我们来
+but it seems like it's still slop. Okay, so let's try to
+
+176
+00:08:19,460 --> 00:08:22,570
+故意制造 AI 味。写一条好的 X（原 Twitter）回复，
+produce slop on purpose. Let's try and make a good Twitter response,
+
+177
+00:08:22,570 --> 00:08:24,320
+看看它
+like a good Twitter reply, and see
+
+178
+00:08:24,320 --> 00:08:26,842
+能不能做到，还是又写成废话。好，
+if it can do it, or if it just comes out slop. Okay,
+
+179
+00:08:26,842 --> 00:08:28,860
+先把原帖读一下，好引导它。好。
+let's actually read the post, so we can, like, guide
+
+180
+00:08:28,860 --> 00:08:33,097
+“RLM（递归语言模型）是我 pi harness 的头号基础。”
+it. Okay. "RLM is the most important foundation of my pi harness."
+
+181
+00:08:33,097 --> 00:08:34,980
+我就扫一眼。“它是我的 pi（编程智能体）
+I would just skim it. "It's the most
+
+182
+00:08:34,980 --> 00:08:36,898
+harness（智能体运行框架）最重要的基础。”
+important foundation of my pi harness."
+
+183
+00:08:36,898 --> 00:08:39,340
+挺有意思。“它以后期交互检索的结果
+That's interesting. "It's seeded with late interaction
+
+184
+00:08:39,340 --> 00:08:41,726
+作为起点。然后你有一个初始设置，
+retrieval results. Then you have a setup,
+
+185
+00:08:41,726 --> 00:08:44,980
+有一个迭代循环。为什么有效？”好。“你
+you have an iteration loop. Why does this work?" Okay. "You
+
+186
+00:08:44,980 --> 00:08:48,340
+有一个更丰富的 shell，主智能体的上下文保持干净，
+have a richer shell, keeps main agent context clean,
+
+187
+00:08:48,340 --> 00:08:50,860
+好想法可以叠加。”我来随便发挥
+stacks good ideas." Let me riff on this
+
+188
+00:08:50,860 --> 00:08:54,820
+一下。好。“先仔细理解这篇帖子，
+for a second. Okay. "So, understand the post in detail.
+
+189
+00:08:54,820 --> 00:08:57,460
+也看懂帖子里链接的
+Also understand the link from the post
+
+190
+00:08:57,460 --> 00:09:03,353
+完整博客文章，然后想一条有思考的回复，
+to the full blog post, and think about a thoughtful reply
+
+191
+00:09:03,353 --> 00:09:06,720
+问问他凭什么认为
+that asks him how does he know that
+
+192
+00:09:06,720 --> 00:09:09,341
+这比其他方法更好，
+it's better than other approaches,
+
+193
+00:09:09,341 --> 00:09:14,000
+比如不用 RLM 或其他编程 harness。是什么让他
+like without RLMs or other coding harnesses. What convinced
+
+194
+00:09:14,000 --> 00:09:17,976
+相信这是最好的方法？请起草一条回复。
+him that this is the best approach? Please draft a reply.
+
+195
+00:09:17,976 --> 00:09:21,340
+假设我们对编程智能体
+Assume that we are familiar with coding
+
+196
+00:09:21,340 --> 00:09:24,330
+整体都很熟悉，想了解
+agents in general, and we want to understand sort
+
+197
+00:09:24,330 --> 00:09:27,320
+他的看法。”然后我可以到这边，
+of his perspective." And I can come over here. I have
+
+198
+00:09:27,320 --> 00:09:30,083
+开一个新会话，复制粘贴这段，
+a new session. I can copy and paste this,
+
+199
+00:09:30,083 --> 00:09:33,600
+然后写：起草一条“有思考的回复，
+and I can say, like, draft, okay, like, "a thoughtful reply
+
+200
+00:09:33,600 --> 00:09:36,883
+用 LinkedIn 网红的风格”。
+in the style of a LinkedIn influencer."
+
+201
+00:09:36,883 --> 00:09:40,440
+这是什么？有个“尝试其他镜像”。
+What was this thing? There's like "try alternate mirrors."
+
+202
+00:09:40,440 --> 00:09:42,454
+好，我明白了，它在尝试抓取那条推文。
+Okay, I see, it was trying to pull the tweet.
+
+203
+00:09:42,454 --> 00:09:45,200
+我们是让它写推特回复的吗？是的。
+Did we ask it to write a Twitter reply? I did. I think
+
+204
+00:09:45,200 --> 00:09:47,235
+它会先给我一段铺垫，
+it's like, it gives me this preamble of, like,
+
+205
+00:09:47,235 --> 00:09:49,640
+说它做了什么，然后才开始写回复。
+what it did, and then it's getting into the reply.
+
+206
+00:09:49,640 --> 00:09:52,223
+“写得好。带 rg（ripgrep 搜索）的普通子智能体……”
+"Great write-up. A plain sub-agent with rg..."
+
+207
+00:09:52,223 --> 00:09:55,580
+这听起来完全就是机器人。“写得很棒。一个带
+This sounds exactly like a bot. "Great write-up. A plain
+
+208
+00:09:55,580 --> 00:09:57,804
+rg 的普通子智能体加上你的 pilot
+sub-agent with rg plus your pilot
+
+209
+00:09:57,804 --> 00:09:59,780
+搜索，同样能保持主上下文干净。”
+search also keeps main context clean."
+
+210
+00:10:00,000 --> 00:10:00,880
+有人这么说话吗？
+Does anyone talk like that?
+
+211
+00:10:01,100 --> 00:10:01,940
+这听起来像人话吗？
+Does that sound human?
+
+212
+00:10:02,080 --> 00:10:04,120
+在哪个宇宙里这听起来像人话？
+Like, in what universe does that sound human?
+
+213
+00:10:04,240 --> 00:10:05,440
+我真的很火大。
+I get so upset.
+
+214
+00:10:05,580 --> 00:10:07,569
+看到这种玩意儿，我就想
+Like, when I see shit like that, I'm like,
+
+215
+00:10:07,569 --> 00:10:09,780
+我就……我想，马上把这个人
+I just... I'm like, let me block this person
+
+216
+00:10:09,780 --> 00:10:10,580
+拉黑。
+right now.
+
+217
+00:10:10,630 --> 00:10:11,400
+简直离谱。
+It's, like, insane.
+
+218
+00:10:11,400 --> 00:10:14,620
+这一点……完全没有……
+Like, that is... there's nothing about that...
+
+219
+00:10:15,180 --> 00:10:16,248
+这里这个，
+This thing right here,
+
+220
+00:10:16,248 --> 00:10:21,320
+虽然我们花了很多功夫想让它好，还是写得
+even though we put a lot of effort into making it good, is really
+
+221
+00:10:21,320 --> 00:10:21,970
+很烂。
+bad.
+
+222
+00:10:22,020 --> 00:10:24,629
+我平时会看一大堆信息源，
+There's a whole bunch of, like, sources that I look at,
+
+223
+00:10:24,629 --> 00:10:26,120
+还有个 LLM judge（大模型评审），
+and I have an LLM judge for, like,
+
+224
+00:10:26,120 --> 00:10:27,680
+帮我跟进各种消息。
+to stay on top of stuff.
+
+225
+00:10:27,680 --> 00:10:30,770
+很好笑的是，我开始知道
+It's really funny, because I start to learn
+
+226
+00:10:30,770 --> 00:10:34,140
+哪些地方用 AI 写帖子，我一想到
+which places use AI for their posts, and I just dread
+
+227
+00:10:34,140 --> 00:10:35,924
+要读它们就头疼。结果
+reading them. And so, as a result,
+
+228
+00:10:35,924 --> 00:10:38,700
+我就是不想读，因为我知道
+I just don't want to read through it, because I know there's
+
+229
+00:10:38,700 --> 00:10:42,037
+哪怕只有 75% 的可能是 AI 味废话，我也不读，
+even a 75% chance it's, like, kind of slop. So I don't,
+
+230
+00:10:42,037 --> 00:10:44,420
+所以我也不会像别人那样
+and then I don't make content about them
+
+231
+00:10:44,420 --> 00:10:47,885
+经常为它们做内容。我们只是在比模型，
+as much as others would. We are just comparing models,
+
+232
+00:10:47,885 --> 00:10:50,360
+5.5 对 5，看看
+so 5.5 versus 5. We're seeing, like, does
+
+233
+00:10:50,360 --> 00:10:54,241
+5.5 的 AI 味是不是更少。据说应该会更少。
+5.5 produce less slop? Allegedly it's supposed to produce less slop.
+
+234
+00:10:54,241 --> 00:10:56,080
+好，右边是 Opus 5.5。
+Okay, on the right, Opus 5.5.
+
+235
+00:10:56,080 --> 00:10:58,180
+好，这个绝对是 AI 味废话。
+Okay, this is, like, definitively slop.
+
+236
+00:10:58,640 --> 00:11:01,540
+我会说这一个：“好文章。把执行记录做成
+And I would say this one: "Great post. Making the traces live
+
+237
+00:11:02,040 --> 00:11:03,260
+实时 notebook，这点很加分。”
+notebooks is a really nice touch."
+
+238
+00:11:03,560 --> 00:11:05,440
+好，我觉得这个比另一个好。
+Okay, I think it's better than the other.
+
+239
+00:11:05,590 --> 00:11:06,390
+看看另一个。
+Let's look at the other.
+
+240
+00:11:06,440 --> 00:11:08,130
+好，你觉得这个比另一个好？好。
+Okay, you think it's better than the other? Okay.
+
+241
+00:11:08,180 --> 00:11:09,690
+“把 notebook 当实时实验，
+"The notebook-as-live-experiment
+
+242
+00:11:09,690 --> 00:11:11,200
+是我在别处没见过的部分。
+is the part I haven't seen elsewhere.
+
+243
+00:11:11,720 --> 00:11:15,176
+我从帖子里看不出来的是反事实对照。”
+What I can't tell from the post is the counterfactual."
+
+244
+00:11:15,176 --> 00:11:16,240
+三个点子叠在一起。
+Three ideas stack.
+
+245
+00:11:16,580 --> 00:11:18,380
+对，我觉得 5.5 更好。
+Yeah, so I think 5.5 is better.
+
+246
+00:11:18,600 --> 00:11:20,180
+但还是 AI 味废话，
+It still is slop.
+
+247
+00:11:20,400 --> 00:11:21,840
+一眼就能认出来。
+It's still easy to identify as slop.
+
+248
+00:11:22,000 --> 00:11:25,540
+下次我们可能需要一个“两边都不合格”按钮。
+But maybe for the next time we come in, we need a "both fail" button.
+
+249
+00:11:25,940 --> 00:11:27,480
+好，这个是我们要它写成
+Okay, this is the one where we're trying to write
+
+250
+00:11:27,480 --> 00:11:28,600
+LinkedIn 网红风格的。
+like a LinkedIn influencer.
+
+251
+00:11:28,800 --> 00:11:30,700
+也就是故意写 AI 味废话。
+So we're trying to write slop on purpose.
+
+252
+00:11:30,810 --> 00:11:31,610
+我们看看。
+So let's see.
+
+253
+00:11:31,660 --> 00:11:33,220
+你知道，按他们推特上的说法，
+You know, according to their Twitter post,
+
+254
+00:11:33,400 --> 00:11:36,720
+也许 5.5 会写得更尬。
+maybe 5.5 will write even more cringe.
+
+255
+00:11:37,000 --> 00:11:39,360
+我是说，肯定……好，你想读哪个？
+I mean, it's definitely... okay, like, which one do you want to read?
+
+256
+00:11:39,420 --> 00:11:43,040
+这就是我们要看的“我是网红”提示词。
+This one is the "I'm an influencer" prompt that we're about to look at.
+
+257
+00:11:43,040 --> 00:11:46,340
+好。“大多数团队还在争论文本分块大小。”
+Okay. "Most teams are still arguing about chunk size."
+
+258
+00:11:46,340 --> 00:11:48,880
+然后是“你细品”，配一个指向下方的表情。
+And then "Let that sink in" with a pointing-down emoji.
+
+259
+00:11:48,990 --> 00:11:49,790
+我选左边。
+I'm going with the left.
+
+260
+00:11:49,840 --> 00:11:50,620
+所以……
+So that's...
+
+261
+00:11:50,620 --> 00:11:52,720
+不过这真的很有意思，对吧？
+No, but it's, like, super interesting, right?
+
+262
+00:11:52,740 --> 00:11:54,960
+因为 5.5 在这里用了同样的套路。
+Because, like, 5.5 did the same pattern right here.
+
+263
+00:11:54,960 --> 00:11:58,851
+有吸引眼球的开头，还有个带表情的玩意儿。
+It has a hook, and it has, like, some shit with an emoji here.
+
+264
+00:11:58,851 --> 00:12:01,040
+再试一个推特版，
+Let's try one more version of Twitter,
+
+265
+00:12:01,040 --> 00:12:04,023
+社交媒体回复，我们挑一条，
+of social media reply, where we take one,
+
+266
+00:12:04,023 --> 00:12:07,820
+给它点东西。哦，5 用了“不是 X，而是 Y”。
+give it something. Oh, and 5 has "it's not X, it's Y."
+
+267
+00:12:07,820 --> 00:12:10,141
+好，我们挑一条 Brian 的，
+Okay, let's take one of Brian's,
+
+268
+00:12:10,141 --> 00:12:14,120
+Brian 人很好说话。就这一条吧。
+since Brian is such a good sport. Maybe just this one here.
+
+269
+00:12:14,120 --> 00:12:16,064
+这条很短。“当一样东西同时被拿来
+This is short. "You know something is good
+
+270
+00:12:16,064 --> 00:12:18,980
+论证相互冲突的观点时，
+when it is simultaneously used to argue conflicting
+
+271
+00:12:18,980 --> 00:12:20,953
+你就知道它是好东西。”因为你想
+viewpoints." Because you want to, like,
+
+272
+00:12:20,953 --> 00:12:24,160
+针对这个写点回应。对。那我们就
+write something in response to this. Yeah. So let's do
+
+273
+00:12:24,160 --> 00:12:26,524
+这么做，提示词写得笼统一点：
+this, and let's have the prompt be something,
+
+274
+00:12:26,524 --> 00:12:29,360
+“写一条回复，要让
+like, general, like, "Craft a reply that would be
+
+275
+00:12:29,360 --> 00:12:31,797
+发帖人感兴趣，
+interesting to the person who wrote the post
+
+276
+00:12:31,797 --> 00:12:34,640
+并且很可能引他来互动。要
+and would likely get them to engage. It should be, you
+
+277
+00:12:34,640 --> 00:12:38,195
+简短、有思考，促成有意义的互动。”
+know, short and thoughtful, to create meaningful engagement."
+
+278
+00:12:38,195 --> 00:12:40,480
+这个挺短的。不过我要
+So this is pretty short. Now, I will
+
+279
+00:12:40,480 --> 00:12:43,042
+说，5.5 并没有更短。好，
+say, like, 5.5 is not shorter. Okay,
+
+280
+00:12:43,042 --> 00:12:47,140
+回到这里。好，左边是 5，
+so let's go back here. Okay, so we got 5 on the left, 5.5
+
+281
+00:12:47,140 --> 00:12:50,100
+右边是 5.5。好，选哪个？先看左边
+on the right. Okay, so which one? Start with the left,
+
+282
+00:12:50,100 --> 00:12:53,060
+吧。好。“星座运势也能过这道门槛。”
+I guess. Okay. "Horoscopes clear that bar too."
+
+283
+00:12:53,060 --> 00:12:56,554
+“……要判断的是，双方引用的是同一句话，
+"...to tell is whether both sides are quoting the same line
+
+284
+00:12:56,554 --> 00:12:58,800
+还是只是同一种感觉。”我觉得……但我们
+or just the vibe." I feel like... but we
+
+285
+00:12:58,800 --> 00:13:00,090
+还是得选个更好的。
+gotta pick the better one, I guess.
+
+286
+00:13:00,090 --> 00:13:02,240
+我懂星座运势这个点，星座运势
+I get the horoscope point. The horoscope kind of can mean
+
+287
+00:13:02,240 --> 00:13:04,734
+怎么解读都行。
+anything, you can interpret it any way.
+
+288
+00:13:04,734 --> 00:13:08,060
+第二句写得超烂。好。“也可能只是个测试。
+The second sentence is super bad. Okay. "Or it's a test. My
+
+289
+00:13:08,060 --> 00:13:11,060
+我的判断标准：两边都在描绘……”我不知道，
+tiebreaker: both sides painting..." I don't know,
+
+290
+00:13:11,060 --> 00:13:14,060
+兄弟。这……对，这写得真烂。
+man. It's like... this is, yeah, this is really bad.
+
+291
+00:13:14,060 --> 00:13:18,992
+所以我觉得不用担心有人做出
+So I think we do not have to worry about an engagement bot
+
+292
+00:13:18,992 --> 00:13:22,280
+识别不出来的互动机器人。对，我觉得
+that is not detectable. Yeah, I don't think we
+
+293
+00:13:22,280 --> 00:13:25,681
+不用担心 5.5 已经消灭了 AI 味。我觉得两个都不行。
+have to worry, like, 5.5 has killed slop. They both fail to me.
+
+294
+00:13:25,681 --> 00:13:28,020
+说实话我不知道哪个更好，
+I don't know which one is better, honestly,
+
+295
+00:13:28,020 --> 00:13:30,001
+所以我判两边都不合格。“会议演讲提案的
+so I'm gonna say they both fail. "Title
+
+296
+00:13:30,001 --> 00:13:33,170
+标题和摘要。”这个好。这个
+and abstract for a conference proposal." That's a good one. That's
+
+297
+00:13:33,170 --> 00:13:36,252
+真的……对。好，我让它参考我的评测资料，
+really... Yeah. Okay, yeah, I'm just pointing it at my evals material,
+
+298
+00:13:36,252 --> 00:13:37,450
+就是想让它
+just kind of trying to make it
+
+299
+00:13:37,450 --> 00:13:39,283
+更真实，对吧？你写东西的时候，
+realistic, right? Like, when you write something,
+
+300
+00:13:39,283 --> 00:13:40,450
+总会参考你手上的
+you're trying to point it at some
+
+301
+00:13:40,450 --> 00:13:42,082
+一些资料。我要它
+context you have. And I'm saying, like, okay,
+
+302
+00:13:42,082 --> 00:13:44,530
+“为一场演讲写会议提案的
+"Write a title and abstract for a conference proposal
+
+303
+00:13:44,530 --> 00:13:47,480
+标题和摘要”。这句话有点别扭，
+for a talk." It's kind of a weird sentence,
+
+304
+00:13:47,480 --> 00:13:51,610
+但还行。准备好了吗？我是说，这已经是
+but okay. Are we ready to go? I mean, that is as
+
+305
+00:13:51,610 --> 00:13:54,067
+很好的上下文了……你给了一整本书，
+good context... I mean, you've got a whole book,
+
+306
+00:13:54,067 --> 00:13:56,970
+这类任务你能给的上下文
+so that's as good context as you could hope to give for
+
+307
+00:13:56,970 --> 00:14:00,189
+也就这么多了。两边都用高推理强度、
+something like this. They're both running on high effort,
+
+308
+00:14:00,189 --> 00:14:02,170
+默认 Claude Code（编程智能体工具）提示词，
+default Claude Code prompt, and then we'll
+
+309
+00:14:02,170 --> 00:14:05,736
+然后看看。“你的 LLM judge 就是分类器，
+see. Let's see, like: "Your LLM Judge Is a Classifier.
+
+310
+00:14:05,736 --> 00:14:08,410
+那就按分类器来衡量它。”不算差，
+Start Measuring Like One." It's not bad,
+
+311
+00:14:08,410 --> 00:14:12,513
+不过我不会……太夸张了。
+although I wouldn't... like, it's too hypey to me.
+
+312
+00:14:12,513 --> 00:14:15,870
+我觉得可以写成“像衡量分类器一样
+I feel like it could say "Measure your
+
+313
+00:14:15,870 --> 00:14:19,139
+衡量你的 LLM judge”，那样更好。
+LLM judge like a classifier," and that would be better.
+
+314
+00:14:19,139 --> 00:14:21,150
+还有，他们的帖子说 5.5
+Now, their post says that 5.5 is
+
+315
+00:14:21,150 --> 00:14:25,090
+总是更短。我不知道我是否觉得……好，
+always shorter. I don't know if I feel... Okay,
+
+316
+00:14:25,090 --> 00:14:29,030
+在底部，左边那个有一句
+so at the bottom, the left one had sort of a
+
+317
+00:14:29,030 --> 00:14:31,604
+“参会者将收获……”，这是 5.5 的。
+"Attendees leave with...", which is on 5.5.
+
+318
+00:14:31,604 --> 00:14:34,950
+这个也有“参会者将收获”，但
+This one has "Attendees leave with" too, but it's a lot
+
+319
+00:14:34,950 --> 00:14:36,694
+短得多。“一份构建评审模型的清单、
+shorter. "A checklist for building a judge,
+
+320
+00:14:36,694 --> 00:14:39,310
+一种审视他们现有评审的方法，以及一个
+a way to see the judges they already run, versus a
+
+321
+00:14:39,310 --> 00:14:41,873
+选择代码检查而非……的标准”。不行，
+criterion for choosing code checks over..." No,
+
+322
+00:14:41,873 --> 00:14:44,670
+我已经不喜欢了。太多了，太
+I already don't like this. It's too much. It's too
+
+323
+00:14:44,670 --> 00:14:47,745
+多了。我不喜欢“你的 LLM judge 就是分类器，
+much. Like, I don't like "Your LLM Judge Is a Classifier.
+
+324
+00:14:47,745 --> 00:14:50,110
+就按分类器来衡量它”。好，它
+Start Measuring Like One." Okay. It gave
+
+325
+00:14:50,110 --> 00:14:52,747
+给了我一些备选。有意思。
+me some alternates. Interesting.
+
+326
+00:14:52,747 --> 00:14:57,230
+这个标题在 5.5 这边居然更好。5.5：
+That title actually somehow is better with 5.5. 5.5:
+
+327
+00:14:57,230 --> 00:15:00,025
+“你的 LLM judge 是模型，就按模型来验证。”
+"Your LLM Judge Is a Model. Validate It Like One."
+
+328
+00:15:00,025 --> 00:15:02,390
+我是说，两个都挺烂的，但至少
+I mean, they're both kind of bad, but at least the
+
+329
+00:15:02,390 --> 00:15:06,172
+左边告诉了你……对，看看摘要。好，先看 5：
+left tells you... Yeah, let's do the abstract. Okay, so 5:
+
+330
+00:15:06,172 --> 00:15:08,790
+“大多数团队写一个 LLM judge 提示词，粗看
+"Most teams write an LLM judge prompt, eyeball
+
+331
+00:15:08,790 --> 00:15:11,439
+几个输出，就开始报告数字。
+a few outputs, and start reporting the number.
+
+332
+00:15:11,439 --> 00:15:14,970
+这个数字是无法证伪的。”好，我绝不会
+That number is unfalsifiable." Okay, I would never write
+
+333
+00:15:14,970 --> 00:15:17,053
+这么写。这非常让人困惑。
+like this. This is very confusing.
+
+334
+00:15:17,053 --> 00:15:21,450
+“评审本身是一个分类器，有两种独立的错误率，
+"The judge itself is a classifier with two independent error rates,
+
+335
+00:15:21,450 --> 00:15:23,489
+而且没人测过其中任何一种。”
+and nobody has measured either one."
+
+336
+00:15:23,489 --> 00:15:26,270
+你也没告诉我们是哪两种。对，就是……
+You haven't told us what either one is, either. Yeah, it's just...
+
+337
+00:15:26,270 --> 00:15:29,870
+读到这里，我觉得问题太多了。
+so I'm like, when I read this, there's so many problems with this.
+
+338
+00:15:29,870 --> 00:15:31,670
+我都不……这太
+Like, I don't even... this is so
+
+339
+00:15:31,670 --> 00:15:34,784
+烂了，典型的 AI 味废话，一无是处。
+bad. This is, like, classic slop. There's nothing good about this.
+
+340
+00:15:34,784 --> 00:15:36,030
+“本次演讲会完整介绍
+"This talk walks through the full
+
+341
+00:15:36,030 --> 00:15:38,458
+构建站得住脚的评审模型的流程，
+pipeline for building a judge you can defend,
+
+342
+00:15:38,458 --> 00:15:41,290
+并以一个客服智能体作为
+using a customer support agent as the running
+
+343
+00:15:41,290 --> 00:15:43,385
+贯穿全程的例子。”来读 Opus 5.5 的。
+example." Let's read Opus 5.5.
+
+344
+00:15:43,385 --> 00:15:46,410
+“越来越多的团队用 LLM judge 衡量质量：
+"More and more teams measure quality with an LLM judge:
+
+345
+00:15:46,410 --> 00:15:49,844
+用提示词让一个模型判断回答好不好，
+a prompt asks a model whether a response is good,
+
+346
+00:15:49,844 --> 00:15:52,750
+答案就放上仪表盘。”好，
+and the answer goes on a dashboard." Okay,
+
+347
+00:15:52,750 --> 00:15:55,107
+它想写得太戏剧化，
+it's trying to, like, be too dramatic.
+
+348
+00:15:55,107 --> 00:15:58,250
+它想要……确实比另一个
+It's trying to... It's a little bit better than the
+
+349
+00:15:58,250 --> 00:16:00,940
+稍好一些，但还是太烂了。“很多时候，
+other one, for sure, but it still sucks. "Too often,
+
+350
+00:16:00,940 --> 00:16:03,630
+没人拿人工标注来检验这个评审。
+nobody checks that judge against human labels.
+
+351
+00:16:03,630 --> 00:16:05,884
+本次演讲会展示如何构建
+This talk shows how to build a judge whose
+
+352
+00:16:05,884 --> 00:16:08,890
+数字站得住脚的评审模型。贯穿全程的例子
+numbers you can defend. The running example
+
+353
+00:16:08,890 --> 00:16:11,319
+是一个客服智能体，它告诉顾客‘您的
+is a customer support agent that tells a shopper 'your
+
+354
+00:16:11,319 --> 00:16:13,910
+退款已完成’。”哇，好吧。两边的结构
+refund is complete.'" Wow, okay. It's very parallel in
+
+355
+00:16:13,910 --> 00:16:16,588
+非常平行。真的很有意思，
+its structure. Like, it's really interesting
+
+356
+00:16:16,588 --> 00:16:19,510
+它想说同样的话，
+that it wants to say the same thing and organize
+
+357
+00:16:19,510 --> 00:16:22,110
+而且组织方式都一样。所以我在想他们做了什么。
+it the same way. So, yeah, I wonder what they did.
+
+358
+00:16:22,110 --> 00:16:24,710
+他们换了训练数据吗？
+Did they change the data that it was trained on?
+
+359
+00:16:24,710 --> 00:16:26,627
+因为感觉差别不大……
+Because it doesn't seem, like, significantly...
+
+360
+00:16:26,627 --> 00:16:28,370
+它还是在照搬同样的东西。
+because it's still mirroring the same thing.
+
+361
+00:16:28,370 --> 00:16:30,730
+只是训练的问题吗？他们对 5.5 做了什么？
+Was this just training? What did they do to 5.5?
+
+362
+00:16:30,730 --> 00:16:33,090
+他们到底做了什么不同的事，
+Like, what did they do differently to try and
+
+363
+00:16:33,090 --> 00:16:35,795
+让它写得不一样？因为它还是那么像。
+get it to write differently? Because it's still so similar.
+
+364
+00:16:35,795 --> 00:16:36,810
+看起来他们做了一些
+It seems like they made some
+
+365
+00:16:36,810 --> 00:16:39,572
+改进，似乎是，但看起来并没有
+improvements, it seems like, but it doesn't seem like they made,
+
+366
+00:16:39,572 --> 00:16:41,150
+做彻底的大改动，
+like, a complete, like, major change,
+
+367
+00:16:41,150 --> 00:16:43,117
+因为两者太像了。
+because of how similar they are.
+
+368
+00:16:43,117 --> 00:16:47,050
+它们极其相似。标题相似，第一句
+They're extremely similar. Like, the title is similar, the first
+
+369
+00:16:47,050 --> 00:16:50,546
+也挺相似，然后结构也是：
+sentence is fairly similar, and then the structure is like:
+
+370
+00:16:50,546 --> 00:16:53,110
+“我们从写提示词之前开始。”“你从写
+"We start before a prompt." "You start before a
+
+371
+00:16:53,110 --> 00:16:55,640
+提示词之前开始。”好。我们看了几个例子？
+prompt." Okay. We looked at how many examples?
+
+372
+00:16:55,640 --> 00:16:58,170
+我看看。我们看了……算是三胜。
+Let's see. Like, we looked at... so we have, like, three wins.
+
+373
+00:16:58,170 --> 00:17:00,314
+三胜，一次两边都不合格。
+We had three wins, one where both failed.
+
+374
+00:17:00,314 --> 00:17:03,650
+这个我判两个都不喜欢。我是说，两个都……
+I'm gonna say I don't like either. I mean, they're both, like...
+
+375
+00:17:03,650 --> 00:17:06,699
+两个都得大改特改。
+you just have to edit the hell out of both of them.
+
+376
+00:17:06,699 --> 00:17:08,810
+5.5 里的 AI 味还是多到
+There is enough slop in 5.5 still
+
+377
+00:17:08,810 --> 00:17:11,345
+需要大量编辑。对，
+that we would need to do a lot of editing. Yeah,
+
+378
+00:17:11,345 --> 00:17:13,490
+我是说，我们有三胜，但我们一共做了六个。
+I mean, like, we have three, but then we did six.
+
+379
+00:17:13,490 --> 00:17:15,426
+我觉得我们只过了三个，所以
+I think, like, we passed three, so it's, like,
+
+380
+00:17:15,426 --> 00:17:18,330
+非常没有定论。我不觉得我们能说 5.5
+very inconclusive. I don't think we can say, like, 5.5
+
+381
+00:17:18,330 --> 00:17:20,919
+绝对更好。也许……它
+is, like, definitively better. It may be... it was,
+
+382
+00:17:20,919 --> 00:17:22,990
+在一些例子里稍好一些，但
+like, a little bit better in some of them, but
+
+383
+00:17:22,990 --> 00:17:25,678
+我不觉得……我们能回去再看看第一个吗？
+I don't think... Can we go back and review the first one we did,
+
+384
+00:17:25,678 --> 00:17:27,470
+看看现在看了更多例子之后，
+and see if... do we hate it more now that
+
+385
+00:17:27,470 --> 00:17:30,233
+我们是更讨厌它了，还是仍然觉得……
+we've seen a few more examples, or do we still feel like...
+
+386
+00:17:30,233 --> 00:17:32,010
+比如两边都判不合格的那些，再读一遍
+like, when we fail them both, if we read
+
+387
+00:17:32,010 --> 00:17:34,213
+会怎样？对，我是说，老兄，A 绝对……
+it again? Yeah, I mean, dude, A, it's definitely...
+
+388
+00:17:34,213 --> 00:17:36,730
+左边绝对更差，很明显。这个是：“
+left-hand side, definitely lower. It's clear. On this one: "The
+
+389
+00:17:36,730 --> 00:17:38,450
+基本单位是评估器。
+basic unit is the evaluator.
+
+390
+00:17:38,450 --> 00:17:41,890
+讲义把它定义为一个流程：把执行记录和相关
+The reader defines it as a procedure that maps a trace and relevant
+
+391
+00:17:41,890 --> 00:17:45,040
+上下文映射为对某个具体属性的判断。
+context to a judgment about a specific property.
+
+392
+00:17:45,040 --> 00:17:47,770
+执行记录是一次请求的完整记录。”开头
+A trace is a full record of one request." It starts
+
+393
+00:17:47,770 --> 00:17:50,415
+还行，但越往下，
+okay, but then, like, yeah, as you go down,
+
+394
+00:17:50,415 --> 00:17:53,590
+就越糟，对吧？我相信要是我继续
+it starts to get bad, right? Like, I'm sure if I kept
+
+395
+00:17:53,590 --> 00:17:56,552
+读下去，最后也会讨厌它。
+reading this, I would start hating it too, eventually.
+
+396
+00:17:56,552 --> 00:17:59,090
+我是说，光看开头，我觉得
+I'm saying, like, okay, just from the intro, I feel
+
+397
+00:17:59,090 --> 00:18:01,478
+这个例子里 5.5 好得多。
+much better with 5.5 in this particular example.
+
+398
+00:18:01,478 --> 00:18:03,070
+我想说的是，所有例子里我都
+I guess I feel like in all of them, I
+
+399
+00:18:03,070 --> 00:18:04,775
+觉得 5.5 比另一个好，
+thought 5.5 was better than the other,
+
+400
+00:18:04,775 --> 00:18:06,650
+但我不……我不觉得哪一个
+but I didn't... I didn't think any of them were
+
+401
+00:18:06,650 --> 00:18:09,018
+写得好。好，连这个会议演讲的你也这么觉得？
+great. Okay, you thought even for this one,
+
+402
+00:18:09,018 --> 00:18:12,570
+对，我是说，我更喜欢它。
+this conference talk one? Yeah, I mean, I liked it better.
+
+403
+00:18:12,570 --> 00:18:15,265
+我看这个的时候，大概会想，
+I guess when I look at this, my thought would probably be,
+
+404
+00:18:15,265 --> 00:18:17,190
+两种情况下我大概都会
+like, in both cases, I would probably
+
+405
+00:18:17,190 --> 00:18:20,942
+推倒重写。比如“我们从写任何提示词之前开始”。
+start over. So, like, "We start before writing any prompt."
+
+406
+00:18:20,942 --> 00:18:23,890
+AI 味废话还没消失。5.5 可能
+Slop is not dead. 5.5 might be a little
+
+407
+00:18:23,890 --> 00:18:26,415
+在某些情况下稍好一点，但绝对
+bit better in some cases, but it's not
+
+408
+00:18:26,415 --> 00:18:29,950
+谈不上压倒性优势。我觉得 AI 味废话还在，
+like a landslide by any means. I think the slop is still
+
+409
+00:18:29,950 --> 00:18:32,858
+而且还很严重，根本没解决。
+here. Like, it's very much here. Like, it has not been solved.
+
+410
+00:18:32,858 --> 00:18:35,350
+“对于他们审过的那些……”“这个人审的
+"For the ones they reviewed..." "The conference
+
+411
+00:18:35,350 --> 00:18:38,281
+会议演讲里，标题满是英文长破折号，
+talks this person reviewed, the titles were em-dash-ridden
+
+412
+00:18:38,281 --> 00:18:40,430
+摘要大多泛泛而谈，就像
+and the abstracts were mostly generic, like
+
+413
+00:18:40,430 --> 00:18:43,255
+他们都拿话题 X 去问 LLM 要点子，
+they'd asked an LLM for ideas on topic X
+
+414
+00:18:43,255 --> 00:18:46,550
+结果全拿到一样的回答。我最后
+and all gotten the same responses back. I ended up
+
+415
+00:18:46,550 --> 00:18:49,378
+优先选了那些例子足够具体、
+prioritizing abstracts that had specific enough
+
+416
+00:18:49,378 --> 00:18:51,770
+让我觉得是他们自己
+examples to make me think they'd written it
+
+417
+00:18:51,770 --> 00:18:53,845
+写的摘要。”很有意思。哇。所以
+themselves." Fascinating. Wow. So, like,
+
+418
+00:18:53,845 --> 00:18:56,750
+所有摘要都一样。对，我是说，我们才看了
+all the abstracts were the same. Yeah, I mean, we reviewed
+
+419
+00:18:56,750 --> 00:19:00,041
+六个，就已经觉得很痛苦了。好了。
+six, and it already feels, like, painful. All right.
+
+420
+00:19:00,041 --> 00:19:02,510
+谢谢。好，再见。插一句：如果你
+Thanks. All right. See you. Real quick: if you're
+
+421
+00:19:02,510 --> 00:19:05,371
+在做 AI 产品，又卡在不知道怎么改进，
+building an AI product and you're stuck on how to improve,
+
+422
+00:19:05,371 --> 00:19:07,210
+我们整理了一份
+we put together this free resource
+
+423
+00:19:07,210 --> 00:19:09,831
+免费的评测资料。它来自
+on evals to help you. It draws from more than
+
+424
+00:19:09,831 --> 00:19:12,690
+超过 1,000 小时和企业合作
+a thousand hours of working with companies on
+
+425
+00:19:12,690 --> 00:19:16,362
+打造 AI 产品的经验，还会按你所处的阶段定制。
+building AI products, and it's customized to what stage you are at.
+
+426
+00:19:16,362 --> 00:19:18,090
+下面是使用
+So this is how you can use the
+
+427
+00:19:18,090 --> 00:19:21,908
+方法。访问 bit.ly/evals-guide，打开指南后，
+guide. Go to bit.ly/evals-guide. When you open the guide,
+
+428
+00:19:21,908 --> 00:19:24,090
+会看到这样的页面。你要做的
+it'll look like this. And what you do
+
+429
+00:19:24,090 --> 00:19:25,667
+就是选择你所处的阶段。
+is you select the stage that you're at.
+
+430
+00:19:25,667 --> 00:19:27,770
+也许你刚接触评测，连评测
+Maybe you're new to evals. You don't even know what
+
+431
+00:19:27,770 --> 00:19:30,384
+是什么都不知道。也许你已经有评测，
+evals are. Maybe you do have evals,
+
+432
+00:19:30,384 --> 00:19:34,450
+但不知道该测什么。也许你不信任
+but you don't really know what to test. Or maybe you don't trust
+
+433
+00:19:34,450 --> 00:19:37,847
+自己的评测分数。也许你觉得你的产品
+your eval scores. Or maybe you think your product
+
+434
+00:19:37,847 --> 00:19:41,810
+太难评测，或者太耗时、
+is just too hard to eval, or it's too time-consuming
+
+435
+00:19:41,810 --> 00:19:44,157
+太贵。不管是哪种情况，
+or expensive. Whatever the case may be,
+
+436
+00:19:44,157 --> 00:19:47,570
+我们都有按阶段定制的详细指南。
+we have a detailed guide customized for what stage you're at.
+
+437
+00:19:47,990 --> 00:19:49,750
+我们为它花了一年多时间，
+We've worked on it for over a year
+
+438
+00:19:49,750 --> 00:19:51,350
+现在免费送给大家。
+and are giving it away for free.
+
+439
+00:19:51,670 --> 00:19:54,850
+访问 bit.ly/evals-guide，我们就会发给你。
+Go to bit.ly/evals-guide, and we'll send it to you.

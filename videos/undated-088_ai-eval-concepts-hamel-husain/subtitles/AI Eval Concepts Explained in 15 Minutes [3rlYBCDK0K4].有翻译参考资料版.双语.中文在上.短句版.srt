@@ -1,0 +1,1729 @@
+1
+00:00:00,000 --> 00:00:02,180
+你大概知道，做 AI 产品，
+You probably know if you're building an AI product,
+
+2
+00:00:02,180 --> 00:00:04,120
+就得有办法衡量它
+you need a way to measure if the thing
+
+3
+00:00:04,120 --> 00:00:05,980
+到底好不好。我们这个频道
+is good or not. And on this channel,
+
+4
+00:00:05,980 --> 00:00:08,480
+经常聊评测（evals），但我发现很多人
+we talk a lot about evals, but I realize that a lot of people
+
+5
+00:00:08,480 --> 00:00:11,500
+并不知道评测是什么，对这个话题很陌生。
+don't know what evals are, and they're very new to the subject.
+
+6
+00:00:11,500 --> 00:00:13,800
+所以我想做个很轻松的
+And I want to do a very gentle
+
+7
+00:00:13,800 --> 00:00:15,830
+入门介绍，讲讲
+introduction that just goes over some
+
+8
+00:00:15,830 --> 00:00:18,880
+评测里的几个重要概念。我们开始吧。
+of the important concepts in evals. So let's dive in.
+
+9
+00:00:19,060 --> 00:00:21,060
+首先，讲讲
+First, we'll discuss the difference between
+
+10
+00:00:21,060 --> 00:00:23,300
+产品专属评测和基础模型
+product-specific evals and foundation model
+
+11
+00:00:23,300 --> 00:00:25,890
+基准测试的区别。基础模型基准测试
+benchmarks. Now, foundation model benchmarks
+
+12
+00:00:25,890 --> 00:00:28,960
+基本上就是通用智力测试。
+are basically general intelligence tests. Think
+
+13
+00:00:28,960 --> 00:00:31,410
+想想 SAT（美国高考）或者智商测试，
+about the SAT or an IQ test,
+
+14
+00:00:31,410 --> 00:00:35,100
+它只是在测模型的通用智力。而
+and it's just trying to test the model's general intelligence. Whereas
+
+15
+00:00:35,100 --> 00:00:38,550
+产品专属评测针对的是你的产品
+product-specific evals are very specific to your product
+
+16
+00:00:38,550 --> 00:00:40,960
+或你想完成的任务。比如
+or task that you want to achieve. So let's
+
+17
+00:00:40,960 --> 00:00:42,870
+你有个 AI 助手，
+say you have some kind of AI assistant whose
+
+18
+00:00:42,870 --> 00:00:45,600
+工作是帮用户处理订单。比如
+job is to help people with orders. Let's say for
+
+19
+00:00:45,600 --> 00:00:48,830
+电商，你想针对具体任务做评测，
+e-commerce, you want to have an eval for specific tasks
+
+20
+00:00:48,830 --> 00:00:52,360
+比如能不能正确取消订单。
+like the ability to cancel orders correctly. You
+
+21
+00:00:52,360 --> 00:00:55,040
+你看，用户可能会说“取消我的订单”，
+can see a user might ask, "Cancel my order."
+
+22
+00:00:55,040 --> 00:00:57,020
+请求经过你的智能体，可能要
+It goes through your agent. There might be context
+
+23
+00:00:57,020 --> 00:01:00,830
+调取上下文，可能要多次调用 LLM（大语言模型），
+that needs to be pulled, there might be multiple calls to the LLM,
+
+24
+00:01:00,830 --> 00:01:02,300
+然后得到一个
+and then you have an outcome
+
+25
+00:01:02,300 --> 00:01:04,680
+可以衡量的结果：订单取消了吗？
+that you can measure: has the order been canceled?
+
+26
+00:01:04,680 --> 00:01:06,640
+这和基础模型基准测试
+And that's a very different exercise than
+
+27
+00:01:06,640 --> 00:01:08,010
+完全是两回事。
+foundation model benchmarks.
+
+28
+00:01:08,010 --> 00:01:10,820
+基础模型基准测试的例子有
+So examples of foundation model benchmarks are things like
+
+29
+00:01:10,820 --> 00:01:13,630
+MMLU（学科知识）、Terminal-Bench（终端操作）、
+MMLU, Terminal-Bench, Humanity's Last Exam,
+
+30
+00:01:13,630 --> 00:01:16,320
+Humanity's Last Exam（人类最后的考试），这些
+and you usually see these foundation model benchmarks
+
+31
+00:01:16,320 --> 00:01:18,840
+基准测试通常用帕累托图这样展示。
+presented like this, with a Pareto chart.
+
+32
+00:01:18,840 --> 00:01:21,800
+帕累托图纵轴是性能，
+And the Pareto chart has performance on the y-axis
+
+33
+00:01:21,800 --> 00:01:23,960
+横轴是成本。
+and cost on the x-axis.
+
+34
+00:01:24,140 --> 00:01:26,060
+坐标轴也可以反过来，但道理一样。
+And this can be flipped, but the idea is the same.
+
+35
+00:01:26,200 --> 00:01:30,100
+基本上，AI 通常要在成本和性能之间权衡：
+Basically, with AI, there's usually a cost-performance trade-off,
+
+36
+00:01:30,240 --> 00:01:33,900
+思考时间越长、花的 token 越多，
+meaning the longer you spend thinking or the more tokens you spend,
+
+37
+00:01:34,020 --> 00:01:36,000
+任务往往就做得越好。
+the better you can often perform on a task.
+
+38
+00:01:36,140 --> 00:01:37,280
+所以这里有个权衡。
+So there's a trade-off.
+
+39
+00:01:37,400 --> 00:01:39,020
+换成产品专属评测，
+When it comes to product-specific evals,
+
+40
+00:01:39,340 --> 00:01:41,680
+你会发现帕累托前沿完全不一样。
+you'll find that the Pareto frontier becomes very different.
+
+41
+00:01:41,880 --> 00:01:45,040
+那些灰点，有些原本在底部的，
+Those gray dots, some of them that were at the bottom,
+
+42
+00:01:45,040 --> 00:01:49,200
+会升到顶部，因为你的具体任务表现
+they will rise to the top, because your task-specific performance
+
+43
+00:01:49,200 --> 00:01:52,540
+通常和这种通用智力测试差别很大。
+is usually very different than this general intelligence test.
+
+44
+00:01:52,740 --> 00:01:55,760
+当用户使用你的应用时，
+So when a user interacts with your application,
+
+45
+00:01:55,760 --> 00:01:56,760
+比如聊天机器人，
+for example, a chatbot,
+
+46
+00:01:56,980 --> 00:02:01,500
+LLM 在上下文里会看到很多东西。
+there's a number of things that happen in context that the LLM sees.
+
+47
+00:02:01,780 --> 00:02:04,100
+一段对话常常是这样的：
+And a conversation can often look like this,
+
+48
+00:02:04,100 --> 00:02:05,580
+用户提一个问题，
+where a user asks a question,
+
+49
+00:02:05,820 --> 00:02:09,120
+智能体看系统提示词，可能调用一个工具，
+the agent looks at the system prompt, it might make a tool call,
+
+50
+00:02:09,300 --> 00:02:12,820
+然后拿到工具返回结果，助手回复，
+there might be a tool call result, and the assistant may reply,
+
+51
+00:02:13,040 --> 00:02:15,500
+用户可能还会追问，就这样一直往下。
+and there might be follow-up questions, and it goes on and on.
+
+52
+00:02:15,620 --> 00:02:17,620
+聊天机器人里随处可见。
+You'll see this in chatbots all the time.
+
+53
+00:02:17,620 --> 00:02:22,160
+简单说，trace（完整调用记录）记下了
+Basically, a trace is a comprehensive record of everything
+
+54
+00:02:22,160 --> 00:02:23,380
+一次用户会话里的所有事。
+that happened in a user session.
+
+55
+00:02:23,520 --> 00:02:24,680
+不一定是聊天机器人，
+Now, it doesn't have to be a chatbot.
+
+56
+00:02:24,780 --> 00:02:27,920
+任何 AI 工作流都行，关键是什么都要记下来。
+It can be any AI workflow, but you are capturing everything.
+
+57
+00:02:28,260 --> 00:02:29,790
+所有提示词、
+You're capturing all the prompts,
+
+58
+00:02:29,790 --> 00:02:32,400
+所有上下文、工具调用、调用结果，
+all the context, tool calls, tool call results,
+
+59
+00:02:32,580 --> 00:02:36,120
+AI 为解决问题看到的一切，
+anything that the AI sees in order to solve the problem,
+
+60
+00:02:36,120 --> 00:02:37,340
+包括所有子智能体。
+including any sub-agents.
+
+61
+00:02:37,480 --> 00:02:38,740
+你需要给代码埋点，
+You need to instrument your code.
+
+62
+00:02:38,920 --> 00:02:41,580
+把这些 trace 存起来，一般存进数据库。
+You want to store those traces somewhere, usually in a database.
+
+63
+00:02:41,900 --> 00:02:45,080
+然后还要有个 trace 查看器，
+And then you also want to have some kind of trace viewer
+
+64
+00:02:45,080 --> 00:02:45,840
+让人能直观地
+that allows you to see these
+
+65
+00:02:45,840 --> 00:02:48,450
+查看这些 trace，
+traces in a human-readable way,
+
+66
+00:02:48,450 --> 00:02:50,440
+方便审阅。你会用 trace 找出
+so that you can review them. You'll use traces to find issues
+
+67
+00:02:50,440 --> 00:02:53,240
+应用里的问题，也会用同样的 trace
+in your application. You'll use these same traces
+
+68
+00:02:53,240 --> 00:02:55,580
+测试你想做的改动，
+to also test changes that you may want to make,
+
+69
+00:02:55,580 --> 00:02:59,000
+以及调试失败。再看一个 trace，
+and then debug failures. So again, here is a trace.
+
+70
+00:02:59,000 --> 00:03:00,660
+它大概长这样。
+It might look something like this, and what you
+
+71
+00:03:00,660 --> 00:03:03,210
+标注 trace 时，你要做的就是
+want to do when you annotate a trace is just
+
+72
+00:03:03,210 --> 00:03:05,400
+描述哪里出了错。比如这里，
+describe what went wrong. So in this case, there
+
+73
+00:03:05,400 --> 00:03:08,490
+有一次工具调用取消失败了，
+is a tool call where the cancellation failed,
+
+74
+00:03:08,490 --> 00:03:10,580
+但助手还是告诉用户
+but the assistant still gave the user a message of
+
+75
+00:03:10,580 --> 00:03:13,650
+“您的订单已取消”。所以你会写个备注：
+"Your order is cancelled." So you would want to write some notes like,
+
+76
+00:03:13,650 --> 00:03:14,380
+“我们说已取消，
+"Hey, we said it was cancelled,
+
+77
+00:03:14,380 --> 00:03:17,790
+其实没有。”然后可以让 AI 帮你给失败归类。
+but it's not." Then you can ask AI to help you group failures.
+
+78
+00:03:17,790 --> 00:03:19,020
+你要找的是
+And what you're looking for is
+
+79
+00:03:19,020 --> 00:03:22,450
+失败的主题、类别或分类体系，
+themes of failures, or categories, or a taxonomy,
+
+80
+00:03:22,450 --> 00:03:23,860
+叫什么都行，关键是要
+whatever you want to call it, but you want to
+
+81
+00:03:23,860 --> 00:03:26,260
+把失败分组。比如，
+group your failures. For example,
+
+82
+00:03:26,260 --> 00:03:28,220
+可能有刚才那种虚假确认，
+you might have false confirmations like we just saw,
+
+83
+00:03:28,320 --> 00:03:30,730
+也可能有订单搞错、漏转人工。
+or you might have wrong orders or missed handoffs.
+
+84
+00:03:30,730 --> 00:03:32,580
+你要弄清数据里
+You want to get an idea of the patterns that
+
+85
+00:03:32,580 --> 00:03:35,330
+存在哪些模式。那些虚假确认里
+exist in your data. Those false confirmations,
+
+86
+00:03:35,330 --> 00:03:37,140
+可能其实有两个不同的
+they might actually have two different distinct
+
+87
+00:03:37,140 --> 00:03:39,350
+小类，比如工具调用失败了，
+groups in there, like the tool call has failed
+
+88
+00:03:39,350 --> 00:03:41,440
+或者根本没调用工具。你可能想
+or the tool is never called. And you might want
+
+89
+00:03:41,440 --> 00:03:44,200
+把它们拆开，但要审阅这些分组，
+to break that out, but you need to review these groups
+
+90
+00:03:44,200 --> 00:03:46,080
+稍加细化，直到你满意为止。
+and refine them a bit until you're satisfied
+
+91
+00:03:46,080 --> 00:03:47,200
+分好组之后，
+with these groups. After you've created these groups,
+
+92
+00:03:47,200 --> 00:03:49,900
+下一步是做一些
+the next thing you want to do is do some
+
+93
+00:03:49,900 --> 00:03:52,590
+很简单的分析。我建议先从计数开始，
+very simple analysis. My recommendation is to start with counting.
+
+94
+00:03:52,590 --> 00:03:54,460
+数一数每组里
+You can just count the failures
+
+95
+00:03:54,460 --> 00:03:55,660
+有多少失败，让这个数字
+in each of the groups. You can let
+
+96
+00:03:55,660 --> 00:03:59,040
+指引你接下来该做什么。接下来
+that guide you towards what you should work on next. The next
+
+97
+00:03:59,040 --> 00:04:02,430
+自然会问：到底该看哪些 trace？
+natural question is, how do you know what traces to even look at?
+
+98
+00:04:02,430 --> 00:04:03,900
+就随便挑着一直标注吗？
+Should you just keep annotating
+
+99
+00:04:03,900 --> 00:04:06,580
+怎么才能把时间用好？
+them randomly? How do you make good use of your time here?
+
+100
+00:04:06,580 --> 00:04:08,380
+这就涉及到 trace
+And that's when we get into sampling
+
+101
+00:04:08,380 --> 00:04:10,390
+抽样了。方法有很多，
+traces. And there's lots of different ways to do this.
+
+102
+00:04:10,390 --> 00:04:13,040
+是一个连续的谱系，一端是探索
+There's a spectrum, from exploring your
+
+103
+00:04:13,040 --> 00:04:15,120
+trace，也就是随机抽样，
+traces, so using random sampling,
+
+104
+00:04:15,120 --> 00:04:18,180
+这样你学到的东西最多，因为你在
+and that's where you are going to learn the most, because you're
+
+105
+00:04:18,180 --> 00:04:20,060
+探索未知的未知，
+trying to explore unknown unknowns.
+
+106
+00:04:20,060 --> 00:04:22,660
+在找新问题。还有聚类，
+You're trying to look for new problems. There's also clustering,
+
+107
+00:04:22,660 --> 00:04:25,750
+把 trace 按相似主题分组，
+where you can group your traces into similar themes
+
+108
+00:04:25,750 --> 00:04:27,820
+更有条理地探索
+and explore what might be going wrong
+
+109
+00:04:27,820 --> 00:04:30,670
+可能出了什么问题。也可以做数据分析，
+in a more structured way. You can also use data analysis,
+
+110
+00:04:30,670 --> 00:04:32,040
+计算 trace 的
+which is, you can compute statistics
+
+111
+00:04:32,040 --> 00:04:34,420
+各种统计量，比如对话轮数、延迟、
+about your traces, like number of turns, latency,
+
+112
+00:04:34,420 --> 00:04:37,720
+工具调用次数等等。
+number of tool calls, so on and so forth. And you
+
+113
+00:04:37,720 --> 00:04:39,570
+看看有没有离群值，
+can see if there's any outliers,
+
+114
+00:04:39,570 --> 00:04:42,040
+这能给你线索，告诉你哪里值得深挖。
+and that could give you clues on promising things to explore.
+
+115
+00:04:42,180 --> 00:04:45,000
+刚开始时，应该多探索。
+When you're starting out, you should do more exploration.
+
+116
+00:04:45,000 --> 00:04:47,400
+等你对数据集或问题
+As you gain more experience in the
+
+117
+00:04:47,400 --> 00:04:50,270
+更熟悉了，就可以用更多信号。
+data set or in the problem, you can use more signals.
+
+118
+00:04:50,270 --> 00:04:52,520
+但你始终要保留
+But you always want to do some level
+
+119
+00:04:52,520 --> 00:04:55,920
+一定的探索。合成数据用处很有限，
+of exploration at all times. Synthetic data is very limited,
+
+120
+00:04:55,920 --> 00:04:57,620
+不该一上来就用，
+and you shouldn't reach for it first,
+
+121
+00:04:57,620 --> 00:04:59,860
+但值得放在你的工具箱里。
+but it is a good tool to have in your tool belt.
+
+122
+00:04:59,860 --> 00:05:02,300
+合成数据怎么用？让 AI
+So how does synthetic data work? You get an AI
+
+123
+00:05:02,300 --> 00:05:04,160
+生成用户输入。
+to generate user inputs.
+
+124
+00:05:04,160 --> 00:05:07,080
+你不要整条 trace 都合成。
+You don't want to generate an entire trace synthetically. What
+
+125
+00:05:07,080 --> 00:05:10,180
+你要做的是生成系统的输入，
+you want to do is generate the input to your system.
+
+126
+00:05:10,180 --> 00:05:11,860
+可以是一条用户消息；如果是
+That can be a user message, or if it's an
+
+127
+00:05:11,860 --> 00:05:13,510
+不是聊天机器人的 AI 工作流，
+AI workflow that's not a chatbot,
+
+128
+00:05:13,510 --> 00:05:16,220
+就是 AI 接收到的
+it can be whatever the input to your system is that AI is
+
+129
+00:05:16,220 --> 00:05:18,400
+任何系统输入。比如“取消我的订单”，
+receiving. For example, "Cancel my order."
+
+130
+00:05:18,400 --> 00:05:21,400
+把这条合成输入放进你的应用，
+And put that synthetic input into your application and
+
+131
+00:05:21,400 --> 00:05:22,420
+然后记录 trace。当然，
+then log the trace. And then, of course,
+
+132
+00:05:22,420 --> 00:05:25,640
+拿到 trace 之后，就可以进入人工
+after you have this trace, then you can go on to human
+
+133
+00:05:25,640 --> 00:05:27,540
+审阅。想生成更高质量的
+review. One good way to generate higher-quality
+
+134
+00:05:27,540 --> 00:05:30,480
+合成数据，一个好办法是想想
+synthetic data is to think about the various
+
+135
+00:05:30,480 --> 00:05:32,510
+你要模拟的各种场景。比如
+scenarios that you want to simulate. For example,
+
+136
+00:05:32,510 --> 00:05:34,900
+说到取消订单，假设
+when it comes to canceling your order, let's say
+
+137
+00:05:34,900 --> 00:05:37,830
+你想给这个场景补充更多数据，
+you want to fill in that scenario with more data.
+
+138
+00:05:37,830 --> 00:05:39,680
+这里可能有不同的场景：
+There might be different scenarios that apply here.
+
+139
+00:05:39,760 --> 00:05:42,960
+比如在发货前和发货后
+For example, what does canceling your order look
+
+140
+00:05:42,960 --> 00:05:44,540
+取消订单分别是什么样？或者
+like before shipping or after shipping? Or what
+
+141
+00:05:44,540 --> 00:05:46,230
+如果订单不明确呢？
+if the order is unclear?
+
+142
+00:05:46,230 --> 00:05:49,520
+如果订单号不明确呢？这些都是
+Or what if the order number is unclear? These are all different
+
+143
+00:05:49,520 --> 00:05:51,150
+实际可能发生的不同场景。
+scenarios that might actually happen.
+
+144
+00:05:51,150 --> 00:05:53,900
+同样，你要把这些
+And what you want to do, again, is you want to review all
+
+145
+00:05:53,900 --> 00:05:55,730
+都审一遍，确保合理。
+of these to make sure they make sense.
+
+146
+00:05:55,730 --> 00:05:58,580
+AI 很乐意生成非常
+AI will gladly produce synthetic inputs that are very
+
+147
+00:05:58,580 --> 00:06:01,950
+清楚的输入，比如“取消 42 号订单”。但用户
+clear, like "Cancel order number 42." But users,
+
+148
+00:06:01,950 --> 00:06:04,000
+会说“请把蓝色那个
+they'll say stuff like, "Please cancel the blue
+
+149
+00:06:04,000 --> 00:06:07,080
+取消了”。问题是这里根本没有订单号。
+one." And, you know, the problem is there's no order number here.
+
+150
+00:06:07,080 --> 00:06:07,840
+所以你要想想
+So you might want to think
+
+151
+00:06:07,840 --> 00:06:10,520
+该生成什么样的合成查询。
+about what kind of synthetic queries you want to generate.
+
+152
+00:06:10,520 --> 00:06:12,220
+生成的合成查询
+You want to generate synthetic queries
+
+153
+00:06:12,220 --> 00:06:14,510
+或合成输入，要符合用户
+or synthetic inputs that match what users are
+
+154
+00:06:14,510 --> 00:06:17,480
+在生产环境里的实际行为，
+going to do in production, or that are going to
+
+155
+00:06:17,480 --> 00:06:19,620
+要符合真实世界的混乱。
+match the messiness of the real world.
+
+156
+00:06:19,620 --> 00:06:22,200
+合成数据另一个很有用的地方
+Another place where synthetic data is really useful
+
+157
+00:06:22,200 --> 00:06:25,730
+是检索，也就是 RAG（检索增强生成）。做法是
+is retrieval, or RAG. And so the way it works is
+
+158
+00:06:25,730 --> 00:06:28,160
+从你的文档库出发。比如
+you start with your corpus of documents. So let's
+
+159
+00:06:28,160 --> 00:06:30,290
+这是一份退货政策。
+say, for example, this is the return policy.
+
+160
+00:06:30,290 --> 00:06:33,060
+你让 LLM 生成一个
+And what you do is you have an LLM generate a
+
+161
+00:06:33,060 --> 00:06:35,720
+这份文档能回答的合理问题，
+plausible question that can be answered by that document.
+
+162
+00:06:35,720 --> 00:06:37,440
+比如“退货期限是
+So for example, "How long do you have to
+
+163
+00:06:37,440 --> 00:06:41,000
+多久？”你的任务就是根据这个问题
+return items?" And your task is to retrieve this
+
+164
+00:06:41,000 --> 00:06:44,100
+检索出这份文档。所以是
+document given this question. So you're going in
+
+165
+00:06:44,100 --> 00:06:47,180
+反着来的。我知道这些讲得很快，
+reverse. Look, I know we're going through this stuff really fast.
+
+166
+00:06:47,180 --> 00:06:48,480
+如果你想了解更多
+If you want more details about
+
+167
+00:06:48,480 --> 00:06:50,790
+怎么用评测验证你的产品，
+how to validate your product with evals,
+
+168
+00:06:50,790 --> 00:06:53,060
+我会在评论区留个链接，里面
+I'll leave a link in the comments. I'll give you a
+
+169
+00:06:53,060 --> 00:06:55,040
+对这些概念讲得详细得多。
+lot more detail into these concepts.
+
+170
+00:06:55,040 --> 00:06:58,820
+现在可以做自动化评测了。自动化评测
+Now you're ready to create automated evals. Automated evals
+
+171
+00:06:58,820 --> 00:07:01,150
+形式很多，但本质上
+can take many forms, but essentially what you're
+
+172
+00:07:01,150 --> 00:07:03,920
+就是给 trace 打分。打分
+doing is grading traces. And that grading of
+
+173
+00:07:03,920 --> 00:07:05,730
+可以离线做，
+traces can be done offline,
+
+174
+00:07:05,730 --> 00:07:09,760
+也可以把生产数据实时流过评测来
+or you can stream production data through an eval and have it be
+
+175
+00:07:09,760 --> 00:07:12,230
+打分。给 trace 打分的方法有很多。
+graded. And so there's many ways to grade a trace.
+
+176
+00:07:12,230 --> 00:07:15,100
+你可以写代码对 trace
+So you can write code to assert something about a
+
+177
+00:07:15,100 --> 00:07:18,660
+做断言，比如不应包含某个用户 ID，
+trace. Let's say, like, it shouldn't contain a certain user ID,
+
+178
+00:07:18,660 --> 00:07:20,560
+或不应包含某个
+or it shouldn't contain a certain
+
+179
+00:07:20,560 --> 00:07:22,690
+工具调用，检查
+tool call. You can check to see whether
+
+180
+00:07:22,690 --> 00:07:26,300
+这条 trace 是否有某种失败模式。其他
+that trace has some kind of failure mode. The other kinds of
+
+181
+00:07:26,300 --> 00:07:27,700
+打分方式里，一种是分类器，
+ways of grading a trace: one is a classifier,
+
+182
+00:07:27,700 --> 00:07:30,920
+可以用决策模型（decision model）
+so you can use something like a decision model or a
+
+183
+00:07:30,920 --> 00:07:34,900
+或普通分类器判断 trace 是好是坏。
+normal classifier to classify if a trace is good or bad.
+
+184
+00:07:34,900 --> 00:07:37,120
+也可以用 LLM 评审（LLM-as-a-judge）。
+Or you can use an LLM as a judge. Now, I
+
+185
+00:07:37,120 --> 00:07:39,930
+我建议把 LLM 评审也当分类器用，
+recommend using an LLM as a judge as a classifier too,
+
+186
+00:07:39,930 --> 00:07:42,860
+判断一条 trace 是通过还是不通过。
+to say if some trace is either pass or fail.
+
+187
+00:07:42,860 --> 00:07:45,380
+强烈推荐二元评分，
+Highly recommend binary scores,
+
+188
+00:07:45,380 --> 00:07:48,840
+因为如果输出更复杂的分数，
+because if you try to output a more complicated score, like something
+
+189
+00:07:48,840 --> 00:07:51,000
+比如 1 到 5 分或 0 到 100 分，
+on a range of one to five or zero to a hundred,
+
+190
+00:07:51,000 --> 00:07:53,160
+没人知道那是什么意思，而且以后
+nobody knows what that means, and that gets very
+
+191
+00:07:53,160 --> 00:07:55,250
+要验证这些自动化评测时
+complicated later on when it comes time
+
+192
+00:07:55,250 --> 00:07:57,720
+会变得非常复杂。所以
+to validating these automated evals. So you don't
+
+193
+00:07:57,720 --> 00:08:00,510
+别这么做，就用通过/不通过两种结果。
+want to do that. You want these binary pass and fail.
+
+194
+00:08:00,510 --> 00:08:02,840
+要信任这些自动化
+So when it comes to trusting these automated
+
+195
+00:08:02,840 --> 00:08:05,210
+评测，你得有某种标准答案，
+evals, you have some kind of ground truth.
+
+196
+00:08:05,210 --> 00:08:07,440
+标准答案通常来自人工。
+And the ground truth is usually coming from a human.
+
+197
+00:08:07,620 --> 00:08:09,890
+你要先标注一些数据，
+And you want to have labeled some data.
+
+198
+00:08:09,890 --> 00:08:12,040
+可能在做错误分析时已经标过，
+And you might have done this during error analysis. You
+
+199
+00:08:12,040 --> 00:08:13,710
+也可能在别处标过，
+might have labeled data elsewhere.
+
+200
+00:08:13,710 --> 00:08:16,600
+但总得认真标注一批数据。
+But you want to go through an exercise of labeling some data.
+
+201
+00:08:16,600 --> 00:08:19,170
+AI 可以帮你标注。
+And AI can help you label this data.
+
+202
+00:08:19,170 --> 00:08:21,520
+有些技巧能快速标注：
+There's techniques that you can use to quickly label
+
+203
+00:08:21,520 --> 00:08:24,740
+让 AI 先提出标签，你来确认。
+data: have AI propose labels and you accept them.
+
+204
+00:08:24,740 --> 00:08:26,540
+你会遇到不同类型的错误，
+And you'll have different kinds of errors. You'll
+
+205
+00:08:26,540 --> 00:08:29,520
+一种是漏报，就是你没抓到的问题；
+have missed failures. So these are things you didn't catch.
+
+206
+00:08:29,520 --> 00:08:30,960
+另一种是误报，
+And then you'll have false alarms,
+
+207
+00:08:31,220 --> 00:08:33,540
+被标成失败，
+the things that are marked as a failure,
+
+208
+00:08:33,540 --> 00:08:35,260
+其实并没有失败。你可以把数据集
+but they're really not. So you can split your data
+
+209
+00:08:35,260 --> 00:08:37,740
+分成三份。第一份是训练集，
+set into three pieces. The first piece is a train set.
+
+210
+00:08:37,740 --> 00:08:41,320
+训练集可以用作
+And the train set can be used as examples
+
+211
+00:08:41,320 --> 00:08:42,500
+提示词示例。LLM 评审
+in your prompts. Your LLM as a judge
+
+212
+00:08:42,500 --> 00:08:46,840
+或决策模型会有提示词，写明
+or decision model will have a prompt with instructions saying
+
+213
+00:08:46,840 --> 00:08:47,980
+好坏标准。提示词里
+what is good and bad. And in that prompt,
+
+214
+00:08:47,980 --> 00:08:51,520
+你还要给一些示例，可以从
+you also want to show some examples. And you can pull
+
+215
+00:08:51,520 --> 00:08:53,440
+训练集里挑。
+these examples from this training set.
+
+216
+00:08:53,440 --> 00:08:56,840
+另一份要单独留出来的数据
+Another segment of your data that you want to hold aside
+
+217
+00:08:56,840 --> 00:08:58,970
+是开发集。开发集
+is your dev set. Now, this dev set is
+
+218
+00:08:58,970 --> 00:09:02,520
+用来调优评审模型，大约占
+where you're going to tune your model. This can be roughly 40%
+
+219
+00:09:02,520 --> 00:09:05,180
+数据集的 40%。在这里你要观察人工和
+of your data set. What you can do here is observe the agreement
+
+220
+00:09:05,180 --> 00:09:07,400
+评审之间
+or disagreement between the human
+
+221
+00:09:07,400 --> 00:09:10,260
+一致还是不一致，
+and the evaluator. And what you want to do is
+
+222
+00:09:10,260 --> 00:09:13,080
+然后不断改进提示词，让结果变好，
+then keep refining your prompt until this gets better,
+
+223
+00:09:13,080 --> 00:09:14,460
+不断爬坡优化，让两者
+and keep hill climbing towards making
+
+224
+00:09:14,460 --> 00:09:17,600
+尽可能对齐。
+these two as aligned as possible.
+
+225
+00:09:17,820 --> 00:09:19,080
+AI 很擅长做这件事，
+And AI is really good at this.
+
+226
+00:09:19,200 --> 00:09:21,120
+也有算法能帮你。
+There's algorithms that can help you with this.
+
+227
+00:09:21,300 --> 00:09:23,360
+唯一要注意的是别过拟合。
+Now, the only trick is you don't want to overfit.
+
+228
+00:09:23,440 --> 00:09:25,050
+很容易过拟合，让你的
+It's very easy to overfit and make your
+
+229
+00:09:25,050 --> 00:09:27,840
+自动化评测只在开发集上表现很好。
+automated eval really good on this dev set.
+
+230
+00:09:27,940 --> 00:09:28,980
+你不想这样，
+And you don't want to do that.
+
+231
+00:09:29,060 --> 00:09:32,140
+你要确保这个评测在开发集以外也管用。
+You want to make sure that this eval works outside the dev set.
+
+232
+00:09:32,240 --> 00:09:34,920
+所以要留出最后的测试集。
+And so that's why you set aside this final test set.
+
+233
+00:09:34,920 --> 00:09:38,680
+在测试集上，你拿最终版的提示词，
+And on the final test set, what you do is you take your finished prompt,
+
+234
+00:09:38,680 --> 00:09:41,430
+最后检查一次人工
+and then you do a final check on how well the human
+
+235
+00:09:41,430 --> 00:09:43,640
+和评审的一致程度。
+and the evaluator agree with each other.
+
+236
+00:09:43,720 --> 00:09:46,460
+如果结果好，说明没有过拟合；
+And if this is good, then you know that you haven't overfit.
+
+237
+00:09:46,600 --> 00:09:48,420
+如果不好，说明过拟合了，
+If this is bad, then you know you've overfitted.
+
+238
+00:09:48,580 --> 00:09:50,280
+就得把整个过程重来一遍。
+And then you need to do this whole thing again.
+
+239
+00:09:50,440 --> 00:09:53,460
+做好自动化评测并且信任它之后，
+So after you've created these automated evals and you trust them,
+
+240
+00:09:53,580 --> 00:09:55,540
+就可以部署到不同地方。
+now you can deploy them in different places.
+
+241
+00:09:55,800 --> 00:09:58,180
+比如放进 CI/CD（持续集成与部署）。
+So you can put automated evals in CI/CD.
+
+242
+00:09:58,460 --> 00:10:00,000
+也可以让自动化……
+You can have your automated...
+
+243
+00:10:00,000 --> 00:10:04,330
+评测监控生产流量，实时或准实时
+evals monitor production traffic and tell you in real time
+
+244
+00:10:04,330 --> 00:10:05,640
+告诉你哪里
+or near real time where errors are
+
+245
+00:10:05,640 --> 00:10:08,760
+出错了。也可以把评测做成护栏（guardrails）。
+occurring. Or you can also make some of these evals guardrails.
+
+246
+00:10:08,760 --> 00:10:10,600
+护栏就是
+So guardrails are just things
+
+247
+00:10:10,600 --> 00:10:12,680
+放在请求-响应路径上，
+that sit in the request-response path
+
+248
+00:10:12,680 --> 00:10:15,740
+拦住某些内容不让它到达用户。通常是
+and block things from reaching the user. They usually are
+
+249
+00:10:15,740 --> 00:10:18,120
+拦住不安全的内容。
+blocking unsafe things from reaching the user.
+
+250
+00:10:18,120 --> 00:10:20,120
+讲完了自动化评测，
+So now that you've learned about automated evals,
+
+251
+00:10:20,280 --> 00:10:23,610
+接下来我想讲几个大坑，
+the next thing I want to do is cover some big traps
+
+252
+00:10:23,610 --> 00:10:25,900
+只要你做评测，
+that you're likely to fall into if you're
+
+253
+00:10:25,900 --> 00:10:27,750
+哪怕是团队里别人
+dealing with evals, or even if someone else on
+
+254
+00:10:27,750 --> 00:10:30,720
+在写评测，你都很可能踩到。第一个坑
+your team is writing the evals. And the first trap is
+
+255
+00:10:30,720 --> 00:10:34,690
+是用通用指标。永远不要用通用指标。
+using generic metrics. You don't want to ever use generic metrics.
+
+256
+00:10:34,690 --> 00:10:36,580
+你会看到 1 到 5 分的
+You'll see scores on a range of
+
+257
+00:10:36,580 --> 00:10:38,480
+评分，其实没什么意义。
+one to five. They don't really make sense.
+
+258
+00:10:38,480 --> 00:10:43,040
+想一想，4.2、4.5、3.9 有什么区别？
+If you think about it, what is 4.2 versus 4.5 versus 3.9?
+
+259
+00:10:43,120 --> 00:10:45,200
+到底是什么意思？它没法指导行动。
+Like, what does it even mean? It's not actionable.
+
+260
+00:10:45,200 --> 00:10:47,820
+你应该衡量的是
+What you want to do instead is measure specific
+
+261
+00:10:47,820 --> 00:10:50,490
+你产品里具体的、可行动的失败。
+failures to your product that are actionable.
+
+262
+00:10:50,490 --> 00:10:53,120
+回到取消订单的例子，
+And so back to the order cancellation example,
+
+263
+00:10:53,120 --> 00:10:56,090
+你要的评测是能判断
+what you want to do is have evals that capture whether
+
+264
+00:10:56,090 --> 00:10:59,580
+这个任务有没有成功完成。
+or not this task is happening successfully.
+
+265
+00:10:59,800 --> 00:11:01,220
+另外，评测很贵，
+Now, evals are expensive. They take time
+
+266
+00:11:01,220 --> 00:11:04,020
+搭建和维护都要时间和资源，你不可能
+and resources to build and maintain, and you can't
+
+267
+00:11:04,020 --> 00:11:06,500
+什么都做评测。真要那样，
+build an eval for everything. If you tried to do that,
+
+268
+00:11:06,500 --> 00:11:08,180
+你的时间和钱
+you would run out of time and money
+
+269
+00:11:08,180 --> 00:11:10,070
+很快就会耗光。有几条经验法则，
+really fast. There are some rules of thumb you
+
+270
+00:11:10,070 --> 00:11:12,640
+帮你决定
+should think about when it comes time to deciding
+
+271
+00:11:12,640 --> 00:11:14,850
+要不要为观察到的问题
+whether or not you should build an eval for
+
+272
+00:11:14,850 --> 00:11:17,540
+建一个评测。一是要先观察到
+a problem you are observing. One is try to observe
+
+273
+00:11:17,540 --> 00:11:21,070
+这个问题：要么在 trace 里发现了，
+the problem. So either you found the problem in your traces,
+
+274
+00:11:21,070 --> 00:11:22,920
+要么你能复现它。
+or you're able to reproduce the
+
+275
+00:11:22,920 --> 00:11:26,160
+当然也可以头脑风暴
+problem. It's also okay to brainstorm potential things
+
+276
+00:11:26,160 --> 00:11:28,220
+可能出错的地方，担心
+that can go wrong. And it's okay to worry
+
+277
+00:11:28,220 --> 00:11:29,800
+还没发生的问题也没关系。
+about problems that haven't happened yet.
+
+278
+00:11:29,800 --> 00:11:32,340
+但如果你担心这些问题，就得
+If you are worried about those problems, you need to be
+
+279
+00:11:32,340 --> 00:11:34,260
+能在系统里复现它们。
+able to reproduce them in your system.
+
+280
+00:11:34,260 --> 00:11:36,900
+另一点要想的是：这个问题
+Another thing you want to think about is: is this problem
+
+281
+00:11:36,900 --> 00:11:38,410
+是你要反复迭代的吗？
+something you're going to iterate on?
+
+282
+00:11:38,410 --> 00:11:41,500
+评测最适合那些需要反复迭代、
+Evals are best for things where you'll need to iterate and
+
+283
+00:11:41,500 --> 00:11:43,590
+一时不知道怎么修的问题。
+you don't know how to fix off the bat.
+
+284
+00:11:43,590 --> 00:11:45,680
+这种评测价值很大，因为它
+That eval is going to give you a lot of value, because it'll
+
+285
+00:11:45,680 --> 00:11:48,270
+会给你信号，让你做很多
+give you signal, so that you can do a lot
+
+286
+00:11:48,270 --> 00:11:50,120
+实验，尝试各种办法
+of experiments to try out things in order to fix
+
+287
+00:11:50,120 --> 00:11:54,110
+来修问题。评测应该指导产品决策，
+a problem. Evals should help guide your product decision-making.
+
+288
+00:11:54,110 --> 00:11:55,880
+应该有一个门槛，
+There should be some threshold
+
+289
+00:11:55,880 --> 00:11:58,410
+超过它就足够好、可以上线，
+over which something is good enough to ship,
+
+290
+00:11:58,410 --> 00:12:01,240
+你要把这个门槛写进评测里。
+and you need to encode that into your evals. It takes
+
+291
+00:12:01,240 --> 00:12:03,640
+让评测只输出二元结果、
+some discipline to have binary outputs in your
+
+292
+00:12:03,640 --> 00:12:06,740
+说清通过还是不通过，需要一些自律，
+evals to say something passes or fails, but you
+
+293
+00:12:06,740 --> 00:12:09,110
+但你得想清楚怎样才算足够好、可以上线，
+need to figure out what is good enough to ship,
+
+294
+00:12:09,110 --> 00:12:12,760
+也要非常清楚
+and you need to be very clear on what constitutes a
+
+295
+00:12:12,760 --> 00:12:14,080
+通过与否的界线。最重要的
+pass versus a fail. The most important thing
+
+296
+00:12:14,080 --> 00:12:17,520
+一点是：要用评测
+to know about evals is you should be using evals to
+
+297
+00:12:17,520 --> 00:12:19,360
+让产品变得更好，这才是重点。
+make your product better. That's the whole point.
+
+298
+00:12:19,360 --> 00:12:21,760
+不是为了评测而评测。每当
+You're not making evals for eval's sake. Whenever
+
+299
+00:12:21,760 --> 00:12:24,390
+你改了提示词或代码，
+you make a change to, let's say, your prompt or code,
+
+300
+00:12:24,390 --> 00:12:26,600
+就跑一遍评测，然后
+you can run your evals, and then you can
+
+301
+00:12:26,600 --> 00:12:28,700
+判断这些改动好不好。
+decide whether those changes are good or not. Now,
+
+302
+00:12:28,700 --> 00:12:30,980
+这不一定要手动做，也可以
+you don't have to do this manually. You can also
+
+303
+00:12:30,980 --> 00:12:33,670
+自动化，很多人已经这么做了：
+automate this process. And a lot of people have done this.
+
+304
+00:12:33,670 --> 00:12:35,840
+让你的智能体自动
+You can have your agent automatically
+
+305
+00:12:35,840 --> 00:12:38,570
+爬坡优化，跑评测、看哪里失败，
+try to hill climb by running evals and seeing what fails,
+
+306
+00:12:38,570 --> 00:12:41,560
+再迭代你的系统。
+and then iterating on your system.
+
+307
+00:12:41,560 --> 00:12:43,770
+这么做要小心，
+You have to be careful when you do this.
+
+308
+00:12:43,770 --> 00:12:46,140
+你得有一套相当好的评测，
+You have to have a pretty good set of evals that are
+
+309
+00:12:46,140 --> 00:12:49,820
+足够全面，覆盖所有可能出错的地方，
+comprehensive and span the space of things that can go wrong,
+
+310
+00:12:49,820 --> 00:12:52,100
+免得你的智能体
+so that your agent doesn't try to
+
+311
+00:12:52,100 --> 00:12:53,770
+去刷指标：评测分数很高，
+hack this metric: do really well on evals at
+
+312
+00:12:53,770 --> 00:12:57,380
+却牺牲了别的东西。我建议不要
+the expense of something else. I recommend not just
+
+313
+00:12:57,380 --> 00:12:59,950
+让智能体自己闷头去搞。
+letting an agent go at it by itself.
+
+314
+00:12:59,950 --> 00:13:02,780
+很多这种自我改进的系统里，
+What happens in a lot of these self-improving systems
+
+315
+00:13:02,780 --> 00:13:05,370
+智能体会去改进提示词。
+is that this agent will try to improve the prompt.
+
+316
+00:13:05,370 --> 00:13:08,620
+我建议让人审一下
+What I recommend is having a human review the
+
+317
+00:13:08,620 --> 00:13:10,810
+智能体写出来的提示词，
+prompt that the agent comes up with,
+
+318
+00:13:10,810 --> 00:13:13,060
+然后精简、清理提示词，
+and then simplifying or cleaning up the prompt and getting
+
+319
+00:13:13,060 --> 00:13:15,680
+从中借鉴思路，而不是
+ideas from the prompt, rather than just adopting
+
+320
+00:13:15,680 --> 00:13:18,700
+盲目照搬智能体的方案。
+whatever the agent proposes here blindly. One
+
+321
+00:13:18,700 --> 00:13:20,950
+这里还有一件事要做：
+thing you're going to want to do here is make
+
+322
+00:13:20,950 --> 00:13:23,580
+确保在没见过的测试用例上
+sure you check your system's behavior on unseen
+
+323
+00:13:23,580 --> 00:13:26,560
+检查系统表现。另一种
+test cases. Another way to make your product
+
+324
+00:13:26,560 --> 00:13:29,440
+用评测改进产品的办法，是尝试不同
+better by using evals is to explore different
+
+325
+00:13:29,440 --> 00:13:33,120
+模型，尤其是在特定任务上用更小的模型。
+models, especially using a smaller model for a specific task.
+
+326
+00:13:33,120 --> 00:13:34,680
+你可以
+And what you can do is measure
+
+327
+00:13:34,680 --> 00:13:37,000
+从成本和质量两方面衡量任务，
+your tasks on both cost and quality,
+
+328
+00:13:37,000 --> 00:13:39,800
+用评测来衡量质量。挑出重要的
+using your evals to measure quality. You can take important
+
+329
+00:13:39,800 --> 00:13:41,940
+任务，设定最低质量线，
+tasks and set a minimum quality bar,
+
+330
+00:13:41,940 --> 00:13:45,240
+然后看看当前的任务换成
+and then you can see if, for current tasks, when moving to a
+
+331
+00:13:45,240 --> 00:13:48,590
+更小的模型后，能不能保持甚至提高质量，
+smaller model, you can keep the same or higher quality
+
+332
+00:13:48,590 --> 00:13:50,440
+同时降低成本。这是
+but just decrease the cost. And this is a
+
+333
+00:13:50,440 --> 00:13:51,540
+很常见的做法，
+very common thing to do,
+
+334
+00:13:51,540 --> 00:13:55,960
+有了评测之后往往唾手可得。还有很多
+often a low-hanging fruit after you have evals. There's a lot of things I
+
+335
+00:13:55,960 --> 00:13:59,650
+我没讲到的，比如怎么评测检索，
+haven't covered here, for example, how to evaluate retrieval,
+
+336
+00:13:59,650 --> 00:14:01,640
+这本身就是个很深的话题，
+which is a deep subject on its own, as
+
+337
+00:14:01,640 --> 00:14:02,850
+还有一大堆别的内容。
+well as a whole bunch of other stuff.
+
+338
+00:14:02,850 --> 00:14:04,840
+但我觉得这些概念是
+But these are the concepts I think that you should pay
+
+339
+00:14:04,840 --> 00:14:06,153
+初学评测时最该关注的。
+attention to if you're first learning about evals.
+
+340
+00:14:06,153 --> 00:14:08,740
+如果你刚开始接触评测，
+If you're just getting started with evals and
+
+341
+00:14:08,740 --> 00:14:11,260
+又看完了整个视频，
+you made it all the way through this video
+
+342
+00:14:11,260 --> 00:14:12,760
+还想学更多，推荐接着看
+and you want to learn more, a good next video to watch
+
+343
+00:14:12,760 --> 00:14:14,660
+这期“AI 评测梯队榜”。我会讲很多
+is this AI evals tier list. I go through a bunch
+
+344
+00:14:14,660 --> 00:14:18,060
+大家做评测时常踩的坑，
+of common pitfalls people make with evals, and I
+
+345
+00:14:18,060 --> 00:14:20,420
+并给它们排名。这样能很快学会
+rank them. And it's a good way to quickly learn
+
+346
+00:14:20,420 --> 00:14:23,040
+做评测时怎么不浪费时间。
+how you can not waste time when doing evals.

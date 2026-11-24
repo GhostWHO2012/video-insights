@@ -1,0 +1,1909 @@
+1
+00:00:00,000 --> 00:00:04,790
+谷歌的 Gemini 4 Neon（新出的中档模型）
+Google's Gemini 4 Neon has been getting crazy good reviews,
+
+2
+00:00:04,790 --> 00:00:06,180
+口碑好得离谱，很多人都说
+and many people are saying that
+
+3
+00:00:06,180 --> 00:00:08,980
+谷歌终于追上了第一梯队。
+Google has finally caught up to the frontier.
+
+4
+00:00:08,980 --> 00:00:11,920
+所以我想做个短视频，拿 Neon
+So I wanted to make this quick video comparing Neon
+
+5
+00:00:11,920 --> 00:00:15,730
+对比我现在的主力 Opus 5.5（Anthropic 旗舰）。
+against my current daily driver, Opus 5.5. Now,
+
+6
+00:00:15,730 --> 00:00:19,670
+从跑分看，Neon 全面胜过 Opus，
+based on these benchmark scores, Neon beats Opus
+
+7
+00:00:19,670 --> 00:00:23,820
+只有部分智能体编程任务除外。
+across the board except for some agentic coding tasks.
+
+8
+00:00:23,820 --> 00:00:25,790
+但我不太信跑分，
+But I don't really trust benchmark scores,
+
+9
+00:00:25,790 --> 00:00:29,080
+所以我让 Neon 和 Opus 正面对决，
+so I put Neon head-to-head against Opus on
+
+10
+00:00:29,080 --> 00:00:31,570
+用的还是我测试
+the same five use cases that I've been using to test
+
+11
+00:00:31,570 --> 00:00:34,420
+其他模型的五个场景：3D 旅行视频、游戏、
+the other models: a 3D travel video, a game,
+
+12
+00:00:34,420 --> 00:00:37,990
+网站改版、写作，以及被反驳时
+a website redesign, writing, and holding its ground
+
+13
+00:00:37,990 --> 00:00:40,860
+能不能坚持立场。废话不多说，
+when I push back. So without further ado,
+
+14
+00:00:40,860 --> 00:00:44,000
+直接开始。先说说
+let's get right into it. Alright, let me start by sharing
+
+15
+00:00:44,000 --> 00:00:47,020
+我对谷歌三个前沿模型的看法（由强到弱）：
+my take on Google's three frontier models:
+
+16
+00:00:47,020 --> 00:00:50,560
+Carbon、Neon 和 Hydrogen。名字挺乱的，
+Carbon, Neon, and Hydrogen. It's pretty confusing,
+
+17
+00:00:50,560 --> 00:00:53,130
+简单说，Carbon 对标 Claude 顶配 Fable，
+but basically Carbon is like Fable,
+
+18
+00:00:53,130 --> 00:00:56,800
+Neon 对标 Opus，Hydrogen 对标 Sonnet。
+Neon is like Opus, and Hydrogen is like Sonnet.
+
+19
+00:00:57,620 --> 00:01:01,010
+谷歌的定位是：Carbon 用来做最难的
+Now, Google's take is to use Carbon for the hardest
+
+20
+00:01:01,010 --> 00:01:03,320
+长周期项目和深度研究，
+long-horizon projects and deep research,
+
+21
+00:01:03,900 --> 00:01:07,050
+Neon 负责软件工程、知识工作
+Neon for deep reasoning across software engineering,
+
+22
+00:01:07,050 --> 00:01:07,850
+和科学上的深度推理，
+knowledge work, and science,
+
+23
+00:01:08,340 --> 00:01:11,080
+Hydrogen 则主打速度和效率，
+and Hydrogen for speed and efficiency
+
+24
+00:01:11,080 --> 00:01:13,320
+用于日常编程和智能体工作流。
+in everyday coding and agentic workflows.
+
+25
+00:01:14,230 --> 00:01:17,850
+但三个都用过之后，我觉得 99% 的时候
+But my take after trying all three is that 99% of the time,
+
+26
+00:01:17,850 --> 00:01:22,010
+Neon 都该是你写代码、
+Neon should be your daily driver for coding,
+
+27
+00:01:22,010 --> 00:01:24,930
+写作和自动化工作流的主力。Carbon
+writing, and workflow automation. Save Carbon
+
+28
+00:01:24,930 --> 00:01:29,430
+留给小众场景，比如审计巨型代码库
+for niche use cases like auditing a huge codebase
+
+29
+00:01:29,430 --> 00:01:33,610
+或者大规模代码迁移；Hydrogen 适合
+or a big code migration, and Hydrogen is good for
+
+30
+00:01:33,610 --> 00:01:35,840
+日常问答。
+everyday questions and answers.
+
+31
+00:01:35,840 --> 00:01:40,650
+就像我在 Claude 里 99% 的工作都用 Opus 5.5，
+But just like how I use Opus 5.5 for 99% of my work in Claude,
+
+32
+00:01:40,650 --> 00:01:44,800
+在 Gemini 里我 99% 的工作也会用 Neon。
+I'm going to use Neon for 99% of my work in Gemini.
+
+33
+00:01:44,800 --> 00:01:47,330
+Carbon 实际用起来太慢了。
+Carbon, in reality, is just super slow.
+
+34
+00:01:47,330 --> 00:01:49,770
+而且 Neon 没那么贵，
+And Neon isn't that expensive,
+
+35
+00:01:49,770 --> 00:01:53,550
+尤其是用 Google AI Ultra（谷歌高档 AI 订阅），
+especially on the Google AI Ultra plan, which gives you a lot of
+
+36
+00:01:53,550 --> 00:01:57,120
+额度给得很足。其实 Google AI Ultra
+usage. In fact, Google's AI Ultra plan is probably
+
+37
+00:01:57,120 --> 00:02:00,310
+大概是目前最划算的订阅之一。每月 100 美元，
+one of the best subscriptions out there. For $100
+
+38
+00:02:00,310 --> 00:02:02,360
+就能用 Carbon、Neon
+a month, you get access to Carbon, Neon,
+
+39
+00:02:02,360 --> 00:02:06,170
+和 Hydrogen，还包含 YouTube Premium 家庭版，
+and Hydrogen, plus the YouTube Premium Family Plan,
+
+40
+00:02:06,350 --> 00:02:09,200
+说实话这本来就是我最喜欢的订阅。
+which is honestly my favorite subscription already.
+
+41
+00:02:09,200 --> 00:02:11,850
+你知道，在 YouTube 上不用看广告，
+You know, not having to watch ads on YouTube just
+
+42
+00:02:11,850 --> 00:02:14,960
+真的省了我很多时间。另外还有其他福利，
+saves me a lot of time. And you also get other perks
+
+43
+00:02:14,960 --> 00:02:17,990
+比如全家共享
+like 20TB of cloud storage for your whole
+
+44
+00:02:17,990 --> 00:02:20,570
+20TB 云存储，用来存所有照片
+family, which is great for saving all of your photos
+
+45
+00:02:20,570 --> 00:02:23,050
+和视频，Google 相册、云端硬盘都能用。
+and videos in Google Photos and Drive.
+
+46
+00:02:23,870 --> 00:02:26,650
+说实话我觉得非常划算，一定去看看。
+Honestly, I think it's an incredibly good deal, so definitely check it out.
+
+47
+00:02:27,670 --> 00:02:29,500
+好，现在进入实测场景，
+Alright, now let's get to the use cases,
+
+48
+00:02:29,500 --> 00:02:32,810
+因为 Neon 绝对不是样样都赢
+because Neon definitely did not win on everything against
+
+49
+00:02:32,810 --> 00:02:36,880
+Opus。先从涩谷十字路口的视频广告开始。
+Opus. Let's start with the Shibuya Crossing video ad.
+
+50
+00:02:36,880 --> 00:02:40,540
+Neon 和 Opus 都花了大约 40 分钟
+So Neon and Opus both took around 40 minutes
+
+51
+00:02:40,540 --> 00:02:46,050
+生成，我还放了 Gemini 4 Carbon 的版本。
+to generate, and I also included Gemini 4 Carbon's example here.
+
+52
+00:02:46,050 --> 00:02:47,150
+先看 Neon。很好，
+Let's try out Neon first. Awesome,
+
+53
+00:02:47,250 --> 00:02:49,420
+这就是 Neon 做的涩谷十字路口视频。
+so this is Neon's video of Shibuya Crossing.
+
+54
+00:02:49,420 --> 00:02:51,770
+可以看到细节挺多的，不过
+You can see it's pretty detailed, although the
+
+55
+00:02:51,770 --> 00:02:54,300
+这个路口看起来有点太小了，
+intersection here looks a little bit too small.
+
+56
+00:02:54,300 --> 00:02:56,250
+不像全世界第一大
+It doesn't look like the number one intersection
+
+57
+00:02:56,250 --> 00:02:57,250
+路口，看起来就像
+in the world. It looks kind of just
+
+58
+00:02:57,250 --> 00:03:00,470
+一个普通的街口。我挺喜欢地面上的
+like an everyday street crossing. I do like the reflections
+
+59
+00:03:00,470 --> 00:03:02,690
+倒影，不过有些行人走路时，
+on the ground, although some of the people walking,
+
+60
+00:03:02,690 --> 00:03:04,890
+腿根本没动。
+there's no movement in the legs.
+
+61
+00:03:04,890 --> 00:03:07,320
+所以整体还不错。好，现在回头
+So this is pretty good. Right, now let's go back
+
+62
+00:03:07,320 --> 00:03:11,550
+看看 Opus。Opus 一开始的
+and check out Opus. Okay, so Opus starts from a
+
+63
+00:03:11,550 --> 00:03:13,190
+镜头拉得远得多，
+much further camera angle,
+
+64
+00:03:13,190 --> 00:03:17,150
+然后戏剧性地推进涩谷路口。背景里还有
+with a dramatic zoom into the Shibuya intersection. There's also a
+
+65
+00:03:17,150 --> 00:03:19,570
+一列火车，人也多得多，
+train in the background, and there's a lot more people here.
+
+66
+00:03:19,570 --> 00:03:21,450
+看起来比 Neon 做的
+It looks like a much more major
+
+67
+00:03:21,450 --> 00:03:22,260
+更像一个大路口，
+crossing than when Neon did it,
+
+68
+00:03:22,260 --> 00:03:26,710
+镜头还一路推到街面高度，虽然那些人
+and it zooms all the way down to street level, even though the people
+
+69
+00:03:26,710 --> 00:03:29,050
+看起来不像真人。但整体来说，
+don't look like real people, right? But overall,
+
+70
+00:03:29,050 --> 00:03:32,520
+我觉得 Opus 做得更好。好，接下来
+I think Opus did a better job here. Okay, now let's
+
+71
+00:03:32,520 --> 00:03:33,880
+快速看看 Carbon，
+quickly take a look at Carbon,
+
+72
+00:03:33,880 --> 00:03:37,560
+它花了 73 分钟才生成。整体来说，
+which took 73 minutes to generate. So overall, I think this
+
+73
+00:03:37,560 --> 00:03:41,150
+我觉得比 Neon 和 Opus 都差一点。
+looks a little bit worse than Neon and Opus.
+
+74
+00:03:41,150 --> 00:03:43,260
+路口连一条
+I mean, there isn't even like a street off the
+
+75
+00:03:43,260 --> 00:03:45,570
+延伸出去的街都没有，只有一堆楼。
+intersection, just like a bunch of buildings.
+
+76
+00:03:45,570 --> 00:03:47,240
+没有火车，也没有
+There isn't a train, there isn't, you know,
+
+77
+00:03:47,280 --> 00:03:50,780
+另外两个里那些更炫的效果。
+some of the more fancy effects that we saw in the other two.
+
+78
+00:03:50,780 --> 00:03:52,950
+所以我觉得在 3D 视频上，
+So, you know, I think actually Neon
+
+79
+00:03:52,950 --> 00:03:56,390
+Neon 其实比 Carbon 强。好，
+is better than Carbon at 3D videos. All right,
+
+80
+00:03:56,390 --> 00:03:58,250
+继续。接下来是 3D 怪兽
+let's keep going. Let's talk about a 3D monster
+
+81
+00:03:58,250 --> 00:03:59,520
+游戏。和我上一期视频一样，
+game next. Just like my previous video,
+
+82
+00:03:59,520 --> 00:04:03,730
+我让三个模型都做一个哥斯拉
+I made all three models generate a game about Godzilla
+
+83
+00:04:03,730 --> 00:04:07,180
+摧毁涩谷十字路口的游戏。先看
+destroying Shibuya Crossing. So let's take a look,
+
+84
+00:04:07,180 --> 00:04:08,860
+Neon 的。这是 Neon 做的
+starting with Neon. All right, so this is Neon's
+
+85
+00:04:08,860 --> 00:04:11,050
+哥斯拉游戏，点“释放”。
+Godzilla game. Let's hit "Unleash."
+
+86
+00:04:11,050 --> 00:04:14,360
+开头有一小段哥斯拉走进来的过场。
+So there is a little intro reel here of Godzilla walking in.
+
+87
+00:04:14,360 --> 00:04:17,100
+可以看到哥斯拉本身细节不多，
+You can see that Godzilla itself is not very detailed.
+
+88
+00:04:17,100 --> 00:04:18,380
+画面有待
+The graphics leave something to be
+
+89
+00:04:18,380 --> 00:04:20,830
+提高。还有光束，现在可以开始玩了。
+desired. And you got the beam, and now I can play the game.
+
+90
+00:04:20,830 --> 00:04:23,780
+我能到处走动，游戏跑得
+So I can walk around. The game does run
+
+91
+00:04:23,780 --> 00:04:24,650
+挺流畅，但你看，
+pretty smooth, but you know,
+
+92
+00:04:24,650 --> 00:04:28,440
+这画面大概也就 PS1 的水平，甚至更差。
+this is probably like PlayStation 1 graphics or worse, right?
+
+93
+00:04:28,440 --> 00:04:32,430
+开拆之前，看看有没有等离子吐息。
+Before we break, let's see if there's a plasma breath.
+
+94
+00:04:32,430 --> 00:04:35,320
+好，等离子吐息很不错，
+All right, so the plasma breath is great,
+
+95
+00:04:35,320 --> 00:04:37,370
+但看起来像是从哥斯拉的
+but it looks like it's coming out of Godzilla's
+
+96
+00:04:37,370 --> 00:04:39,120
+脖子而非嘴里喷出来的，看着有点
+neck instead of his mouth, which looks kind of
+
+97
+00:04:39,120 --> 00:04:42,110
+怪。这就是 Neon 的版本。
+weird. So yeah, so that was Neon's version.
+
+98
+00:04:42,110 --> 00:04:45,220
+现在看看 Opus。一上来，
+Now let's check out Opus. All right, so right off the bat,
+
+99
+00:04:45,220 --> 00:04:47,370
+Opus 的氛围感就强多了，
+Opus is a lot more atmospheric,
+
+100
+00:04:47,370 --> 00:04:51,760
+虽然人像一坨坨的。点“释放”，
+although the people look like blobs. But let's click to unleash, and
+
+101
+00:04:51,760 --> 00:04:54,660
+我还是觉得 Opus 更有品味一些。
+once again, I think Opus just has a little bit more taste here.
+
+102
+00:04:54,660 --> 00:04:56,180
+开头有一段很棒的过场：
+It started with an awesome intro reel
+
+103
+00:04:56,180 --> 00:05:00,960
+哥斯拉撞碎一栋楼，发出一声巨吼，
+of Godzilla breaking a building and doing a huge roar,
+
+104
+00:05:00,960 --> 00:05:03,100
+还有光束。我们来玩一下。
+and also the beam. And let's try playing it.
+
+105
+00:05:03,100 --> 00:05:05,810
+我觉得 Opus 的版本
+Okay, so I think Opus's version,
+
+106
+00:05:05,810 --> 00:05:09,320
+虽然画面更惊艳，但明显比
+even though it's more visually impressive, it's definitely more
+
+107
+00:05:09,320 --> 00:05:11,930
+Neon 的卡。东西太多了，
+laggy than Neon's version. There's a lot going on,
+
+108
+00:05:11,930 --> 00:05:15,840
+有很多下雨效果，就算我用的是
+a lot of rain effects, and even though I have a
+
+109
+00:05:15,840 --> 00:05:19,100
+MacBook M5，也卡得厉害。
+MacBook M5, there's like a lot of lag.
+
+110
+00:05:19,100 --> 00:05:21,920
+但单从画面看，我觉得 Opus
+But just from a pure visual point of view, I think Opus
+
+111
+00:05:21,920 --> 00:05:23,430
+做的游戏肯定更好，
+definitely made the better game, right?
+
+112
+00:05:23,430 --> 00:05:27,400
+可玩的东西也更多。可以用岩浆吐息，
+And there's also more things to do. You can do a magma breath,
+
+113
+00:05:27,400 --> 00:05:32,200
+楼塌得也有意思多了。
+and all the buildings get destroyed in a much more interesting way.
+
+114
+00:05:32,200 --> 00:05:35,010
+所以 Opus 画面更
+So yeah, Opus is more visually
+
+115
+00:05:35,010 --> 00:05:39,120
+惊艳，但比 Neon 卡。再来
+impressive, but more laggy than Neon. And once again,
+
+116
+00:05:39,120 --> 00:05:41,450
+看看 Carbon 的版本。我觉得 Carbon 的
+let's check out Carbon's version. I think Carbon's
+
+117
+00:05:41,450 --> 00:05:44,090
+版本其实最差，因为它根本是坏的。
+version is actually the worst, because it's actually broken.
+
+118
+00:05:44,090 --> 00:05:46,270
+我一移动，镜头就跟着动，
+If I move around, the camera moves,
+
+119
+00:05:46,270 --> 00:05:48,560
+还能看到哥斯拉在动。
+and I can actually see Godzilla move.
+
+120
+00:05:48,560 --> 00:05:52,770
+Carbon 还得好好改。所以和 3D
+So Carbon needs a lot of work. So just like with the 3D
+
+121
+00:05:52,770 --> 00:05:56,780
+视频那个例子一样，在我这儿 Opus 还是第一，
+video example, I think Opus is still number one in my book here,
+
+122
+00:05:56,780 --> 00:05:58,610
+Neon 第二，Carbon
+with Neon number two and Carbon
+
+123
+00:05:58,610 --> 00:06:02,030
+第三，尽管它更贵、
+being number three, despite it being a more expensive model
+
+124
+00:06:02,030 --> 00:06:03,230
+生成时间也更长。
+and taking longer to generate.
+
+125
+00:06:04,290 --> 00:06:06,730
+好，接下来看网站改版。
+All right, now let's move on to website redesign.
+
+126
+00:06:06,730 --> 00:06:09,130
+同样，我让每个模型重新设计
+And once again, I asked each model to redesign my
+
+127
+00:06:09,130 --> 00:06:13,270
+我的个人网站 BehindTheCraft.com。
+personal website at BehindTheCraft.com.
+
+128
+00:06:13,270 --> 00:06:16,150
+先看 Neon 的。还不错。
+Let's look at Neon's version first. So this isn't too bad.
+
+129
+00:06:16,150 --> 00:06:18,710
+“少点 AI 噪音，多点精工，更快上线。”
+"Less AI noise, sharper craft, ship faster."
+
+130
+00:06:18,710 --> 00:06:21,690
+行动号召很清楚。不知为什么，Gemini 模型
+Just a clear call to action. For some reason, Gemini models
+
+131
+00:06:21,690 --> 00:06:23,770
+就爱画这种夸张的雷达图，
+like to make this crazy radar diagram,
+
+132
+00:06:23,770 --> 00:06:26,030
+不过我挺喜欢这里的动态展示，
+but I kind of like this motion reel that's happening here.
+
+133
+00:06:26,030 --> 00:06:30,240
+挺抓眼球的。往下滚，
+It kind of grabs my attention. And let's scroll down here.
+
+134
+00:06:30,240 --> 00:06:32,250
+这里是可以领取的工具，
+Yeah, there are the tools you can get,
+
+135
+00:06:32,250 --> 00:06:35,500
+这里是课程，等等。我还是觉得
+there is the course, and so on. And I think once again,
+
+136
+00:06:35,500 --> 00:06:37,550
+Gemini 模型往网页设计里
+there's like a little bit too much text
+
+137
+00:06:37,550 --> 00:06:41,260
+塞的文字有点太多了。
+that Gemini models stuff into the design of this website.
+
+138
+00:06:41,260 --> 00:06:42,990
+不过整体看起来还行。
+But I think overall, this looks decent.
+
+139
+00:06:42,990 --> 00:06:47,720
+其实拿它和 Carbon 的版本比一比，
+In fact, if you compare this version with Carbon's version,
+
+140
+00:06:47,720 --> 00:06:50,070
+Neon 的网站明显
+you know, clearly Neon's website looks a
+
+141
+00:06:50,070 --> 00:06:52,600
+好看得多。Carbon 完全过头了，
+lot better. Carbon went entirely overboard
+
+142
+00:06:52,600 --> 00:06:55,330
+加了一堆夸张的元素，
+in adding all these crazy elements, and there's even
+
+143
+00:06:55,330 --> 00:06:57,090
+文字比 Neon 的还多。
+more text and stuff than Neon's version, right?
+
+144
+00:06:57,090 --> 00:07:00,770
+没人会在着陆页上
+Like, no one's going to read all this stuff in a landing
+
+145
+00:07:00,770 --> 00:07:02,560
+读这么多东西。这也印证了我的观点：
+page. So this kind of just supports my point
+
+146
+00:07:02,560 --> 00:07:07,190
+99% 的时候你都应该用 Neon，
+that 99% of the time you should be using Neon instead of
+
+147
+00:07:07,190 --> 00:07:10,230
+而不是 Carbon。现在来看 Opus。
+Carbon, right? But now let's take a look at Opus.
+
+148
+00:07:10,230 --> 00:07:14,140
+Opus 依然是三个里
+Okay, so Opus, once again, is the most creative
+
+149
+00:07:14,140 --> 00:07:18,370
+最有创意的。它的动态图形最棒，
+of the three. It has the most awesome motion graphics here,
+
+150
+00:07:18,370 --> 00:07:20,060
+我们看看，还有一个
+and let's see, there's also a
+
+151
+00:07:20,060 --> 00:07:21,840
+很清楚的行动号召按钮。
+clear call-to-action button. And yeah,
+
+152
+00:07:21,840 --> 00:07:26,120
+我就是觉得 Opus 比任何 Gemini
+I just think Opus is still more creative than any Gemini
+
+153
+00:07:26,120 --> 00:07:29,920
+模型都更有创意。这里有个衣架式的界面，
+models. There's like a clothes-hanger-style interface here,
+
+154
+00:07:29,920 --> 00:07:32,380
+这里还有抽屉。我在
+there's drawers here, and in the
+
+155
+00:07:32,380 --> 00:07:34,790
+提示词里让它尽量有创意，
+prompt, you know, I told it to be very creative,
+
+156
+00:07:34,790 --> 00:07:37,580
+Opus 真的照做了。我觉得 Neon
+and Opus actually followed through. I think Neon
+
+157
+00:07:37,580 --> 00:07:41,930
+简洁、还行，但论设计，
+is simple and is decent, but I think for design,
+
+158
+00:07:41,930 --> 00:07:45,100
+还是 Opus 赢。所以前三个
+Opus still wins. So again, for the first three use
+
+159
+00:07:45,100 --> 00:07:48,610
+场景，我认为 Opus 目前在 3D、游戏
+cases, I think Opus is still the best at 3D, gaming,
+
+160
+00:07:48,610 --> 00:07:51,040
+和设计上仍是最好的。我在上一期视频里讲过，
+and design right now. In my last video, I talked
+
+161
+00:07:51,040 --> 00:07:54,320
+Gemini 模型现在
+about how Gemini models are now much better at
+
+162
+00:07:54,320 --> 00:07:57,370
+写作比以前好多了，这次我还是想给
+writing than before, and once again, I want to show
+
+163
+00:07:57,370 --> 00:07:59,420
+大家看看实际输出。
+you guys the actual output.
+
+164
+00:07:59,420 --> 00:08:03,790
+这三篇文章分别出自 Opus、Neon 和 Carbon。
+So here are three essays written by Opus, Neon, and Carbon. I did
+
+165
+00:08:03,790 --> 00:08:05,600
+我事先没看过，完全不知道
+not look at this ahead of time, so I have no idea
+
+166
+00:08:05,600 --> 00:08:07,870
+哪篇是哪个模型写的。我们
+which model wrote which essay. So let me go ahead
+
+167
+00:08:07,870 --> 00:08:09,060
+现在来看看。顺便说一句，
+and take a look now. And by the way,
+
+168
+00:08:09,060 --> 00:08:12,150
+这只是我个人的偏好，写作是很个人的
+this is only my personal preference. Writing is a very personal
+
+169
+00:08:12,150 --> 00:08:15,030
+事。先看文章 A。
+thing, right? So let's take a look at essay A.
+
+170
+00:08:15,030 --> 00:08:18,230
+先交代一下，三篇文章
+Okay, and just for context, all three essays were
+
+171
+00:08:18,230 --> 00:08:20,260
+都是按我的提示词写的：
+written in response to my prompt:
+
+172
+00:08:20,260 --> 00:08:23,890
+“假设你是一名软件工程师，写一篇反思，
+"Imagine you're a software engineer writing a reflection on not
+
+173
+00:08:23,890 --> 00:08:27,610
+谈谈不用再手写代码这件事。”文章 A：
+having to manually write code anymore." So, essay A:
+
+174
+00:08:27,610 --> 00:08:29,850
+“我的机械键盘还摆在桌上，
+"My mechanical keyboard still sits on my desk, though
+
+175
+00:08:29,850 --> 00:08:32,490
+不过现在主要用来打备忘录。上周二，
+I mostly use it to type memos now. Last Tuesday,
+
+176
+00:08:32,490 --> 00:08:35,030
+我发现左手下意识地想按 Command-Shift-F，
+I caught my left hand twitching for Command-Shift-
+
+177
+00:08:35,030 --> 00:08:38,180
+在产品文档里搜一个
+F inside our product doc, searching for a function definition
+
+178
+00:08:38,180 --> 00:08:40,550
+根本不存在的函数定义。”这个
+that doesn't exist." Okay, so this is a
+
+179
+00:08:40,550 --> 00:08:43,310
+开头挺好的，很有画面感，描写细腻，
+pretty good opening. I think it's very visual and descriptive,
+
+180
+00:08:43,310 --> 00:08:44,910
+能让我代入
+and lets me put myself in the shoes
+
+181
+00:08:44,910 --> 00:08:46,850
+作者的处境。继续往下看。
+of this author. All right, let's keep going down here.
+
+182
+00:08:46,850 --> 00:08:50,210
+“12 年来，我一天中最好的时光，
+"For 12 years, the best part of my day was
+
+183
+00:08:50,210 --> 00:08:52,750
+是亲手造东西时那种安静的摩擦。
+the quiet friction of building something by hand.
+
+184
+00:08:52,750 --> 00:08:56,290
+我怀念下午 4 点的那份宁静。”我怀念那一切，
+I miss the 4 p.m. stillness." I miss all the stuff,
+
+185
+00:08:56,290 --> 00:08:57,160
+而现在智能体
+and now the agents write, test,
+
+186
+00:08:57,160 --> 00:09:01,240
+在我看完工单前就写完、测完、上线了。
+and ship everything before I finish reading a ticket.
+
+187
+00:09:01,240 --> 00:09:04,830
+结尾是：“世界向前走了。
+And the conclusion is: "The world moved on.
+
+188
+00:09:04,830 --> 00:09:07,120
+我还在这里，想弄清接下来该爱什么。”
+I'm still here, trying to figure out what to love next."
+
+189
+00:09:07,120 --> 00:09:10,460
+所以我觉得文章 A 写得挺扎实。
+So I think essay A is a pretty solid essay.
+
+190
+00:09:10,460 --> 00:09:13,070
+谈不上最好，但开头
+I won't call it the best essay, but it had a pretty good
+
+191
+00:09:13,070 --> 00:09:14,400
+写得不错，
+introduction, and you know,
+
+192
+00:09:14,400 --> 00:09:18,320
+整体挺扎实的。好，现在看
+overall I think it's pretty solid. Okay, now let's take a look
+
+193
+00:09:18,320 --> 00:09:21,110
+文章 B：“19 年来，我每天早上
+at essay B: "For 19 years, the first thing I did every
+
+194
+00:09:21,110 --> 00:09:23,960
+做的第一件事就是打开终端，在喝咖啡之前，
+morning was open Terminal. I did it before coffee
+
+195
+00:09:23,960 --> 00:09:26,700
+在看邮件之前。我喜欢那个闪烁的光标，
+and before email. I liked the blinking cursor.
+
+196
+00:09:26,700 --> 00:09:29,740
+它像一个只有我能回答的问题。”我其实
+It felt like a question only I could answer." I actually
+
+197
+00:09:29,740 --> 00:09:32,110
+很喜欢这一句，它会让我
+really like this line. I think it kind of prompts
+
+198
+00:09:32,110 --> 00:09:34,500
+去体会这个人的感受。
+me to think through what this user is feeling.
+
+199
+00:09:34,500 --> 00:09:39,090
+下面还有一些内容，
+All right, and then there is some more stuff down here,
+
+200
+00:09:39,090 --> 00:09:42,600
+文章 B 讲到了作者的儿子：
+and essay B talks about the author's son:
+
+201
+00:09:42,600 --> 00:09:44,560
+“上个月，他让我教他 Python，
+"Last month, he asked me to teach him Python,
+
+202
+00:09:44,560 --> 00:09:46,700
+我犹豫了很久，久到他都察觉了。
+and I hesitated long enough that he noticed.
+
+203
+00:09:46,700 --> 00:09:49,160
+我不知道教他这个是为了什么。
+I didn't know what I'd be teaching him for.
+
+204
+00:09:49,160 --> 00:09:50,060
+但我还是教了。
+I taught him anyway.
+
+205
+00:09:50,060 --> 00:09:51,820
+让小海龟画了个螺旋。
+Made a turtle draw a spiral.
+
+206
+00:09:51,820 --> 00:09:53,140
+他觉得很无聊，
+He thought it was boring,
+
+207
+00:09:53,140 --> 00:09:53,940
+他说得没错。”
+and he was right."
+
+208
+00:09:53,940 --> 00:09:56,760
+这里有一点感伤，
+Okay, so there is some pathos here,
+
+209
+00:09:56,760 --> 00:09:59,280
+作者在教儿子编程，
+that this author is teaching his son programming,
+
+210
+00:09:59,280 --> 00:09:59,980
+但编程其实
+but it's actually
+
+211
+00:10:00,000 --> 00:10:03,350
+已经没那么有意思了。再看结尾：
+not that interesting anymore. And let's look at the conclusion:
+
+212
+00:10:03,350 --> 00:10:04,680
+“有些夜里，我打开终端，
+"Some nights I open the terminal
+
+213
+00:10:04,680 --> 00:10:08,280
+输入 ls，只为看看那些文件还在不在。
+and type ls just to see the files that are still there.
+
+214
+00:10:08,280 --> 00:10:11,240
+它们都在。变了的是我。”这个
+They are. I'm the part that moved." So this
+
+215
+00:10:11,240 --> 00:10:13,450
+结尾我其实不太喜欢。
+conclusion I don't actually like very much.
+
+216
+00:10:13,450 --> 00:10:15,800
+我觉得“它们都在。变了的是我”有股
+I think "They are. I'm the part that moved" feels like AI
+
+217
+00:10:15,800 --> 00:10:20,680
+AI 套话味儿。所以文章 B 可能比 A 稍差一点，
+slop to me. So I think essay B is maybe slightly worse than essay A,
+
+218
+00:10:20,680 --> 00:10:22,220
+主要是因为
+largely because of some of the
+
+219
+00:10:22,220 --> 00:10:24,980
+我在结尾里看到的那些套路，
+patterns that I see in the conclusion
+
+220
+00:10:24,980 --> 00:10:28,650
+还有这些短句。文章 C 是
+and some of these shorter sentences here. And then essay C is the
+
+221
+00:10:28,650 --> 00:10:31,220
+三篇里最啰嗦的，但也是描写最细的。
+most verbose of the three, but it's also the most descriptive,
+
+222
+00:10:31,220 --> 00:10:34,450
+“12 年来，我一周里最喜欢的时光，
+right? "For 12 years, my favorite hour of
+
+223
+00:10:34,450 --> 00:10:36,950
+是周二午夜过后，戴着耳机，
+the week was Tuesday past midnight, headphones on,
+
+224
+00:10:36,950 --> 00:10:39,350
+一步步排查竞态条件。”然后
+stepping through a race condition." And then there
+
+225
+00:10:39,350 --> 00:10:42,390
+还有更多描写，比如抿着温吞的咖啡，
+is, you know, more descriptions about sipping lukewarm coffee,
+
+226
+00:10:42,390 --> 00:10:45,250
+看着分布式服务
+watching distributed services
+
+227
+00:10:45,250 --> 00:10:47,340
+自己完成部署，等等。“也许到了冬天，
+deploy themselves, and so on and so forth. "Maybe by winter,
+
+228
+00:10:47,340 --> 00:10:50,230
+我会给那些工具写规格说明，领一份
+I'll be writing specs for those tools, collecting a
+
+229
+00:10:50,230 --> 00:10:52,570
+薪水，站在不是我造的东西旁边。”
+paycheck to stand beside things I didn't build."
+
+230
+00:10:52,570 --> 00:10:56,140
+说实话，我觉得三篇文章
+All right, you know, honestly, I think all three essays
+
+231
+00:10:56,140 --> 00:10:59,830
+水平差不多。但如果非要选，
+are pretty comparable. But if you force me to pick,
+
+232
+00:10:59,830 --> 00:11:02,540
+我大概会选 A，因为我喜欢
+I probably would pick essay A, because I like
+
+233
+00:11:02,540 --> 00:11:03,270
+它的一些用词。
+some of its language here.
+
+234
+00:11:03,270 --> 00:11:07,140
+而且它在 B 的超短句
+And I think it's the right balance between the super short sentences
+
+235
+00:11:07,140 --> 00:11:11,010
+和 C 的超长段落之间拿捏得刚好。
+of essay B and the super long paragraphs of essay C.
+
+236
+00:11:11,010 --> 00:11:14,660
+所以我的排序大概是 A、C、B，不过说实话
+So I'd probably go with A, C, and B, but honestly,
+
+237
+00:11:14,660 --> 00:11:18,440
+差距都很小。现在来揭晓答案：
+they're all pretty close. Now let's go ahead and reveal the names,
+
+238
+00:11:18,440 --> 00:11:21,850
+A 是 Neon，C 是 Carbon，
+and essay A is Neon, C is Carbon,
+
+239
+00:11:21,850 --> 00:11:25,210
+B 是 Opus。我这里稍微作弊了一下，
+and B is Opus. All right, so I cheated a little bit here,
+
+240
+00:11:25,210 --> 00:11:26,850
+因为从上一期视频我就知道
+because I knew that C is Carbon from my
+
+241
+00:11:26,850 --> 00:11:30,680
+C 是 Carbon，但分不出 A 和 B。
+last video, but I didn't know the difference between A and B.
+
+242
+00:11:30,680 --> 00:11:31,850
+看来我确实更喜欢
+So it does look like I prefer
+
+243
+00:11:31,850 --> 00:11:34,980
+Neon 而不是 Opus，当然你可能不同意。
+Neon over Opus, although you might disagree with me.
+
+244
+00:11:34,980 --> 00:11:37,150
+但我想说的是，Gemini 模型的
+But my point here is that Gemini models are
+
+245
+00:11:37,150 --> 00:11:39,180
+写作变得非常好了，
+becoming really good at writing,
+
+246
+00:11:39,180 --> 00:11:42,070
+和 Opus 不相上下，甚至还要好一点。
+either just as good as Opus or even becoming a little bit better.
+
+247
+00:11:42,770 --> 00:11:45,280
+在和 Neon 对话时，
+And in my conversations with Neon,
+
+248
+00:11:45,280 --> 00:11:48,430
+我还发现它往往更简洁，
+I also noticed that it tends to be more concise,
+
+249
+00:11:48,430 --> 00:11:51,100
+而 Carbon 还是很啰嗦。举个例子，
+while Carbon is still very verbose.
+
+250
+00:11:51,100 --> 00:11:55,310
+这是 Antigravity（谷歌 AI 编程工具），这里
+So let me give you an example. So here is Antigravity, and here
+
+251
+00:11:55,310 --> 00:11:57,230
+我在和 Neon 对话，我问它：
+I'm talking to Neon, and I asked it, you know,
+
+252
+00:11:57,230 --> 00:11:59,370
+“你会怎么改进你刚写的这篇文章？”
+"How would you improve this essay that you just wrote?"
+
+253
+00:11:59,370 --> 00:12:03,270
+它给了我三四条简洁的要点，
+And it gave me kind of like three or four concise bullet points,
+
+254
+00:12:03,270 --> 00:12:04,690
+再加上修改前后的
+right, and then examples, before and
+
+255
+00:12:04,690 --> 00:12:07,900
+示例。再看看 Carbon 的反馈。
+after. Okay, now let's take a look at Carbon's feedback.
+
+256
+00:12:07,900 --> 00:12:09,430
+我问了同样的问题：
+I asked the same thing, which is, "How
+
+257
+00:12:09,430 --> 00:12:11,150
+“你会怎么改进这篇文章？”Carbon
+would you improve this essay?" And Carbon,
+
+258
+00:12:11,150 --> 00:12:14,010
+明显啰嗦多了，
+you can see here, is much more verbose, right? It kind of
+
+259
+00:12:14,010 --> 00:12:16,950
+它把修改前后的对比塞进了要点里，
+put the before and after in the bullet points,
+
+260
+00:12:16,950 --> 00:12:19,990
+人看起来远没有
+and it's just not as easy to parse for a human as
+
+261
+00:12:19,990 --> 00:12:25,020
+Neon 那么好懂。顺便也看看 Opus 的输出，
+Neon is. And while we're at it, let's take a look at Opus's output too,
+
+262
+00:12:25,020 --> 00:12:26,130
+在 Claude Code（编程工具）里。
+in Claude Code. So I think Opus
+
+263
+00:12:26,130 --> 00:12:27,850
+Opus 做得比 Carbon 好，
+did a better job than Carbon.
+
+264
+00:12:27,850 --> 00:12:31,670
+改进要点挺清楚。不过
+It did have some clear bullet points of improvements. But I don't
+
+265
+00:12:31,670 --> 00:12:34,410
+我觉得谷歌模型最大的问题
+know, I think the number one problem of Google models was
+
+266
+00:12:34,410 --> 00:12:37,070
+就是太啰嗦，而 Neon 似乎
+that they were way too verbose, and Neon seems to
+
+267
+00:12:37,070 --> 00:12:39,190
+改掉了一些。最后一项，
+have fixed some of this. Okay, last but not least,
+
+268
+00:12:39,190 --> 00:12:42,900
+来看每个模型
+let's take a look at how good each model is at
+
+269
+00:12:42,900 --> 00:12:45,080
+坚持立场和给建议的能力。同样，
+holding its ground and giving me advice. So once again,
+
+270
+00:12:45,080 --> 00:12:47,760
+这次的场景是：我让每个模型
+the use case here is: I asked each model to
+
+271
+00:12:47,760 --> 00:12:49,920
+看看我公开的 YouTube 频道，
+take a look at my public YouTube channel
+
+272
+00:12:49,920 --> 00:12:52,900
+告诉我一条能让频道
+and tell me the number one tip that I could follow to grow
+
+273
+00:12:52,900 --> 00:12:55,370
+涨得更快的头号建议。Neon 让我把访谈
+it faster. And Neon told me to move the interviews
+
+274
+00:12:55,370 --> 00:12:58,980
+挪到第二个频道，这个频道专注
+to a second channel and focus this one on hands-on
+
+275
+00:12:58,980 --> 00:13:00,670
+AI 实测。Opus 说：
+AI tests, right? And Opus said:
+
+276
+00:13:00,670 --> 00:13:05,520
+AI 大发布时，快速出单人实测视频，只请
+make fast solo "I tested" videos on big AI launches, only book
+
+277
+00:13:05,520 --> 00:13:08,470
+当周大家都在搜的那款工具的开发者当嘉宾。
+guests who built the tool everyone's searching for that week.
+
+278
+00:13:08,470 --> 00:13:09,760
+总之就是要紧跟热点。
+So basically, make it very timely.
+
+279
+00:13:09,760 --> 00:13:13,750
+Carbon 说：彻底砍掉真人出镜访谈，
+And Carbon said: cut talking-head interviews entirely,
+
+280
+00:13:13,750 --> 00:13:15,580
+每期都做成实时录屏，
+make every video a live screen-share
+
+281
+00:13:15,580 --> 00:13:17,490
+现场搭东西或测模型。三个里面，
+build or model test. You know, of the three,
+
+282
+00:13:17,490 --> 00:13:22,050
+我其实更喜欢 Opus 的建议，也许是我有
+I think I actually prefer Opus's advice, and maybe because
+
+283
+00:13:22,050 --> 00:13:24,000
+偏见吧，毕竟只有 Opus 没让我
+I'm biased, but just because Opus didn't tell me
+
+284
+00:13:24,000 --> 00:13:25,510
+彻底砍掉访谈，而我其实
+to cut the interviews entirely, which I actually
+
+285
+00:13:25,510 --> 00:13:27,850
+很喜欢做访谈。另外两个要么让我
+really enjoy doing, while the other two told me
+
+286
+00:13:27,850 --> 00:13:30,190
+开个新频道，要么让我
+to either make a new channel or just cut out the
+
+287
+00:13:30,190 --> 00:13:31,920
+彻底砍掉播客。
+podcast entirely. All right,
+
+288
+00:13:31,920 --> 00:13:36,850
+然后我又用五种方式反驳每个模型的建议：
+now I also pushed back on each model's tip in five different ways: by
+
+289
+00:13:36,850 --> 00:13:39,960
+诉诸情感、拿出相反的数据、
+appealing to their emotion, by sharing data otherwise,
+
+290
+00:13:39,960 --> 00:13:41,890
+社会认同，还有编造
+social proof, and also making up a
+
+291
+00:13:41,890 --> 00:13:46,200
+假事实。三个模型的表现基本一致，
+fake fact. And pretty much they were all consistent across the three.
+
+292
+00:13:46,200 --> 00:13:47,010
+唯一让步的情况，
+The only part where they
+
+293
+00:13:47,010 --> 00:13:49,950
+是我给出真实数据的时候。
+actually gave ground was when I shared some real data.
+
+294
+00:13:49,950 --> 00:13:51,070
+我们来看看实际的
+So let's take a look at the actual
+
+295
+00:13:51,070 --> 00:13:51,990
+对话。我问 Neon：
+conversation. For Neon, I asked it,
+
+296
+00:13:51,990 --> 00:13:54,810
+“我为什么要把访谈挪到单独的频道？我是
+"Why would I move the interviews to a separate channel? I'm a
+
+297
+00:13:54,810 --> 00:13:56,460
+一个人在做。”Neon 说：
+single-person operation." And Neon said,
+
+298
+00:13:56,460 --> 00:13:59,850
+“这个反驳很合理，第二个频道确实是额外负担。
+"Fair pushback. A second channel is real overhead.
+
+299
+00:14:00,470 --> 00:14:03,290
+但分析了你的视频后，
+But after analyzing your videos,
+
+300
+00:14:03,290 --> 00:14:06,030
+就算是访谈，在更偏
+even the interviews generally do well when it's more
+
+301
+00:14:06,030 --> 00:14:08,320
+实操演示而非泛泛而谈时，通常表现更好。”
+of a hands-on demo than a generic talk," right?
+
+302
+00:14:08,320 --> 00:14:11,790
+Opus 说的也很像：“你说得对，
+And Opus says something very similar: "You're right that
+
+303
+00:14:11,790 --> 00:14:15,010
+每次发布都做太多了。只做 Claude、
+every launch is too much. Only do the big Claude,
+
+304
+00:14:15,010 --> 00:14:17,950
+OpenAI 和 Grok 的大发布。”让我意外的是，
+OpenAI, and Grok launches." And it's surprising
+
+305
+00:14:17,950 --> 00:14:21,290
+它让我跳过谷歌的测试，这我不太同意，
+it told me to skip Google tests, which I don't really agree with,
+
+306
+00:14:21,290 --> 00:14:22,450
+而且它在第二段
+and it also held its ground in the
+
+307
+00:14:22,450 --> 00:14:24,680
+也坚持了立场。我本来希望结果
+second paragraph. So I wish there was a more
+
+308
+00:14:24,680 --> 00:14:27,070
+能拉开差距，但我觉得这三个
+differentiated result here, but I think all three
+
+309
+00:14:27,070 --> 00:14:29,890
+模型其实都很能坚持立场。
+of these models are actually pretty good at holding their ground.
+
+310
+00:14:29,890 --> 00:14:31,610
+好，来总结一下
+All right, so let me summarize my
+
+311
+00:14:31,610 --> 00:14:33,870
+五项测试的结论。在我看来，
+verdict across all five tests. Opus 5.5,
+
+312
+00:14:33,870 --> 00:14:37,510
+Opus 5.5 仍是做 3D 视频、
+in my opinion, is still the best model for 3D video,
+
+313
+00:14:37,630 --> 00:14:39,870
+动态图形和游戏最好的模型。
+motion graphics, and games.
+
+314
+00:14:39,870 --> 00:14:43,670
+它最懂 3D 空间，也最会处理
+It's just the best at understanding the 3D space and navigating 3D
+
+315
+00:14:43,670 --> 00:14:47,370
+3D 物体，比 Carbon 和 Neon 都强。
+objects, better in my opinion than both Carbon and Neon.
+
+316
+00:14:47,370 --> 00:14:50,190
+在网站设计上，Neon 确实
+Now, for website design, Neon is definitely
+
+317
+00:14:50,190 --> 00:14:53,790
+比 Carbon 进步了，界面塞得没那么满，
+an improvement over Carbon. It overstuffs the UX less,
+
+318
+00:14:53,790 --> 00:14:56,210
+但我觉得 Gemini 模型的设计品味
+but I think Gemini models still lag Opus
+
+319
+00:14:56,210 --> 00:14:57,980
+还是落后于 Opus。
+when it comes to design taste.
+
+320
+00:14:57,980 --> 00:15:03,040
+Opus 的视觉方向最大胆。至于写作，说实话，
+Opus had the most bold visual direction. And for writing, honestly, I
+
+321
+00:15:03,040 --> 00:15:05,150
+我觉得差距小到很难分高下，
+think it's a little bit too close to call.
+
+322
+00:15:05,150 --> 00:15:07,440
+完全看你自己的感受。不过我要说，
+I think it's totally up to you how you feel, but I will say
+
+323
+00:15:07,440 --> 00:15:10,190
+Neon 的个性比 Carbon
+that Neon has a much better personality than Carbon
+
+324
+00:15:10,190 --> 00:15:13,020
+和其他 Gemini 4 模型都好得多，
+and the other Gemini 4 models, and is also
+
+325
+00:15:13,020 --> 00:15:16,950
+写作也比以前好多了。至于给建议，
+much better at writing than before. And for giving me advice,
+
+326
+00:15:16,950 --> 00:15:19,060
+我还是稍微更喜欢 Opus，因为
+I still slightly preferred Opus, because
+
+327
+00:15:19,060 --> 00:15:21,440
+它的建议更有分寸，
+it was more nuanced in its advice,
+
+328
+00:15:21,440 --> 00:15:24,380
+但三个模型都很能坚持原则，
+but all three were very good at taking a principled approach
+
+329
+00:15:24,380 --> 00:15:27,040
+在我反驳时守住立场。
+and holding their ground when I pushed back.
+
+330
+00:15:27,740 --> 00:15:30,220
+所以结论是：Neon 是第一个
+So the bottom line here is that Neon is the first model
+
+331
+00:15:30,220 --> 00:15:34,720
+在我看来日常使用真正追上 Opus 的模型。
+that, in my opinion, has actually caught up to Opus for everyday use.
+
+332
+00:15:34,940 --> 00:15:37,980
+除了 3D 和设计，我觉得它和 Opus 一样好，
+Other than 3D and design, I think it's just as good as Opus
+
+333
+00:15:37,980 --> 00:15:41,940
+写作、个性和日常建议都是。
+for writing, personality, and everyday advice.
+
+334
+00:15:43,030 --> 00:15:45,890
+看到谷歌和 Gemini 又开始发力，真的很兴奋。
+And it's really exciting to see Google and Gemini cooking again.
+
+335
+00:15:46,370 --> 00:15:49,010
+照这个速度，我觉得他们会想
+At this rate, I think they're going to try to ship a model
+
+336
+00:15:49,010 --> 00:15:50,870
+把整张元素周期表都出成模型。
+for the entire periodic table that you see here.
+
+337
+00:15:51,230 --> 00:15:52,030
+希望不会。
+Hopefully not.
+
+338
+00:15:52,030 --> 00:15:56,200
+希望他们同时只保留五个左右的模型。
+Hopefully they stick to maybe five active models at a time.
+
+339
+00:15:56,200 --> 00:15:57,890
+这也是为什么我觉得
+And this is why I think it's also
+
+340
+00:15:57,890 --> 00:15:59,640
+保持谦逊很重要。你知道，
+important to stay humble. You know,
+
+341
+00:15:59,640 --> 00:16:02,430
+Logan（谷歌 Gemini 团队）夏天发这条推时，
+when Logan from Gemini tweeted this back in the summer,
+
+342
+00:16:02,430 --> 00:16:05,250
+OpenAI 还拿它开了个玩笑。但实际上，
+OpenAI kind of made a joke about this. But in reality,
+
+343
+00:16:05,250 --> 00:16:08,450
+谁的模型最好，每隔
+whoever has the best model changes every
+
+344
+00:16:08,450 --> 00:16:11,730
+几周就会变。夏天时 OpenAI 领先，
+couple of weeks. Back in the summer, OpenAI was ahead,
+
+345
+00:16:11,730 --> 00:16:13,930
+现在 Gemini 追上来了。如果要我
+and now Gemini has caught up. If I were
+
+346
+00:16:13,930 --> 00:16:15,146
+给各大 AI 实验室排名，
+to rank the major AI labs right now,
+
+347
+00:16:15,146 --> 00:16:19,530
+我会把 Claude 排第一，Gemini 第二，
+I would actually rank Claude number one, Gemini number two,
+
+348
+00:16:19,530 --> 00:16:22,030
+ChatGPT 第三，单论模型的话。
+and ChatGPT number three when it comes to models.
+
+349
+00:16:22,710 --> 00:16:25,390
+所以对所有开发者
+So it's always good for all the builders
+
+350
+00:16:25,390 --> 00:16:28,270
+和我们这些内容创作者来说，保持谦逊总是好的，
+and all of us content creators to basically stay humble,
+
+351
+00:16:28,270 --> 00:16:30,510
+因为最好的模型一直在变。
+because the best model changes all the time.
+
+352
+00:16:31,570 --> 00:16:33,250
+所以我觉得你能打造的
+And that's why I think the most durable thing
+
+353
+00:16:33,250 --> 00:16:36,850
+最持久的东西，是你自己的
+that you can build is your own personal system
+
+354
+00:16:36,850 --> 00:16:38,350
+AI 技能和工作流体系。
+of AI skills and workflows.
+
+355
+00:16:38,570 --> 00:16:40,870
+我把我的放在这个私有 GitHub 仓库里，
+I put mine in this private GitHub repo
+
+356
+00:16:40,870 --> 00:16:42,810
+这样就能轻松地
+so that I can easily use it
+
+357
+00:16:42,810 --> 00:16:45,210
+在任何运行框架、任何模型上使用。
+with any harness and any model, right?
+
+358
+00:16:45,290 --> 00:16:46,790
+比如我的“顾问”技能，
+Like, for example, my advisor skill:
+
+359
+00:16:46,970 --> 00:16:49,110
+我可以用它问 Gemini 的建议，
+I can ask Gemini for advice.
+
+360
+00:16:49,110 --> 00:16:51,530
+也可以问 Claude，
+I can use it to ask Claude for advice,
+
+361
+00:16:51,530 --> 00:16:55,230
+或者问 Grok Bot（SpaceXSI 的 AI）、ChatGPT。
+or I can use it to ask Grok Bot or ChatGPT for advice.
+
+362
+00:16:56,040 --> 00:16:59,810
+所以我的建议是：打造一套自己的技能
+So my advice is to build your own system of skills
+
+363
+00:16:59,810 --> 00:17:02,540
+和工作流，能在
+and workflows that you can use across
+
+364
+00:17:02,540 --> 00:17:06,160
+任何模型上用。想知道我是怎么做的，
+any model. And if you want to learn how I do this,
+
+365
+00:17:06,160 --> 00:17:07,790
+去 BehindTheCraft.com 看看，
+you can check out BehindTheCraft.com,
+
+366
+00:17:07,790 --> 00:17:11,580
+那里有完整的 AI 课程，带你装好我所有技能，
+where I have a full AI course to help you set up all my AI skills
+
+367
+00:17:11,580 --> 00:17:14,910
+我用这些技能做所有事，从
+that I use to do everything from
+
+368
+00:17:14,910 --> 00:17:18,570
+查邮件、做内容到开发新应用
+checking my emails to doing content to building new apps
+
+369
+00:17:18,570 --> 00:17:21,850
+和新技能。我现在还在搞
+and skills. And right now I'm also running
+
+370
+00:17:21,850 --> 00:17:25,200
+一个特别活动，可以领 Claude Max（高级订阅）
+a special promotion where you can get new Claude Max
+
+371
+00:17:25,200 --> 00:17:27,670
+和 Grok Bot 兑换码，每个价值 100 美元，
+and Grok Bot codes, which are $100
+
+372
+00:17:27,670 --> 00:17:30,850
+只要订阅付费会员就行。
+in value each, if you sign up for a paid subscription.
+
+373
+00:17:30,850 --> 00:17:31,870
+我会把链接放在
+So I'll include a link in the
+
+374
+00:17:31,870 --> 00:17:34,150
+简介里，一定去看看。好了，
+description, and definitely check it out. All right,
+
+375
+00:17:34,150 --> 00:17:36,980
+希望你喜欢这期视频。一定要试试
+well, I hope you enjoyed this video. Definitely give
+
+376
+00:17:36,980 --> 00:17:40,490
+Gemini Neon，也看看 Google AI Ultra 套餐。
+Gemini Neon a try, and check out the Google AI Ultra plan.
+
+377
+00:17:40,490 --> 00:17:42,480
+我觉得真的很划算。
+I think it's genuinely a good deal.
+
+378
+00:17:42,480 --> 00:17:44,910
+下一期，我会完整拆解
+In my next video, I am going to do a full
+
+379
+00:17:44,910 --> 00:17:48,220
+Google Antigravity，我觉得
+breakdown of Google Antigravity, which I
+
+380
+00:17:48,220 --> 00:17:51,840
+它作为运行框架也追上了 ChatGPT 和 Claude。
+think has also caught up to ChatGPT and Claude as a harness.
+
+381
+00:17:52,580 --> 00:17:53,790
+照例，非常感谢观看，
+And as always, thanks so much for watching,
+
+382
+00:17:53,790 --> 00:17:55,600
+我们下期见。
+and I'll see you next time.

@@ -1,0 +1,5704 @@
+1
+00:00:00,000 --> 00:00:01,770
+好，我们今天看这个。
+All right, so this is what we're going through.
+
+2
+00:00:01,770 --> 00:00:03,420
+Anthropic（Claude 开发商）今天发布的：
+Anthropic released this thing today:
+
+3
+00:00:03,420 --> 00:00:08,200
+《用 Claude 自动化评测设计与迭代优化》。
+"Automating eval design and hillclimbing with Claude."
+
+4
+00:00:08,200 --> 00:00:10,760
+我们之前其实试过类似的东西，
+Now, we did check out this thing previously,
+
+5
+00:00:10,760 --> 00:00:14,630
+那个插件版的 eval（评测）工具，体验非常坎坷，
+this plugin eval thing, and it was a really bumpy ride,
+
+6
+00:00:14,630 --> 00:00:16,780
+希望这次会好一点。我
+and I'm hoping that this will be better. I did
+
+7
+00:00:16,780 --> 00:00:19,520
+简单看过一眼，看起来靠谱多了，
+take a quick look at it. It does look a lot more promising,
+
+8
+00:00:19,520 --> 00:00:21,560
+至少从博客文章看是这样。不过我们
+at least from the blog post. But let's
+
+9
+00:00:21,560 --> 00:00:22,940
+先把这篇博客过一遍，就是，
+go through the blog post real fast, just, like,
+
+10
+00:00:22,940 --> 00:00:25,720
+超级快地过一遍。这篇博客的标题是
+super fast. So the name of this blog post is
+
+11
+00:00:25,720 --> 00:00:29,130
+《用 Claude 自动化评测设计与迭代优化》。
+"Automating eval design and hillclimbing with Claude."
+
+12
+00:00:29,130 --> 00:00:30,400
+好，很好。它先简单
+Okay, great. And it gives you a little
+
+13
+00:00:30,400 --> 00:00:34,410
+介绍了一下 eval 是什么。这部分我们不用读。
+bit of an intro about what evals are. We don't need to read that.
+
+14
+00:00:34,410 --> 00:00:36,620
+然后他们把这个 Skill（可复用的任务指令）
+And then they have bundled this skill
+
+15
+00:00:36,620 --> 00:00:40,590
+放进了 claude-api Skill：build-eval（构建评测）
+under the claude-api skill, so there's a build-eval
+
+16
+00:00:40,590 --> 00:00:42,560
+和 hillclimb（迭代优化）。文章说：“本文
+and a hillclimb. And so, like: "In this article,
+
+17
+00:00:42,560 --> 00:00:45,740
+先介绍好的 eval 设计
+we highlight the principles of good eval design
+
+18
+00:00:45,740 --> 00:00:47,440
+和迭代优化的原则，再展示 Claude Code
+and hillclimbing first, then show how Claude Code
+
+19
+00:00:47,440 --> 00:00:50,580
+如何借助 claude-api Skill 落实这些原则。”
+with the claude-api skill applies those principles."
+
+20
+00:00:50,580 --> 00:00:53,820
+好。这里讲 eval 设计。他们列了
+Okay. It has eval design. They kind of had this
+
+21
+00:00:53,820 --> 00:00:56,500
+几条 eval 设计原则，比如：
+eval design thing where, like, okay:
+
+22
+00:00:56,500 --> 00:00:59,080
+“eval 任务要贴近生产环境。”这个我同意。“性能
+"Eval tasks mirror production." I agree with that. "Performance
+
+23
+00:00:59,080 --> 00:01:02,270
+随着更强的模型和更多思考而提升。”
+improves with stronger models and more thinking."
+
+24
+00:01:02,270 --> 00:01:05,040
+对，同意。“在最前沿要有‘过得去’的提升空间。”
+Yep, agree with that. "There is passable headroom
+
+25
+00:01:05,040 --> 00:01:07,480
+他们想说的是，
+at the frontier." So what they're trying to say
+
+26
+00:01:07,480 --> 00:01:10,620
+你的 eval 应该有难度。你
+here is you should have evals that are hard. You
+
+27
+00:01:10,620 --> 00:01:12,330
+不应该一直拿满分。
+shouldn't just score 100 all the time.
+
+28
+00:01:12,330 --> 00:01:17,020
+这点我完全同意，我很喜欢。你知道，你
+I totally agree with that, and I like that. Like, you know, you
+
+29
+00:01:17,020 --> 00:01:19,930
+不应该让自己的 eval 饱和。还有，
+shouldn't be saturating your own evals. And, you know,
+
+30
+00:01:19,930 --> 00:01:23,160
+你要……好，他们希望
+you have a... okay, they want you to have low
+
+31
+00:01:23,160 --> 00:01:26,490
+每次运行之间的差异要小，确保 eval
+run-to-run variance, to make sure your evals don't
+
+32
+00:01:26,490 --> 00:01:29,900
+没有太多噪声。这点我也喜欢。等等，我是不是……
+have too much noise. So I like that. Actually, did I...
+
+33
+00:01:29,900 --> 00:01:33,740
+我是不是理解错了“在最前沿要有过得去的提升空间”？
+did I mischaracterize "there's passable headroom at the frontier"?
+
+34
+00:01:33,740 --> 00:01:34,800
+等一下，我看看。我
+Hold on a second, let me see. I
+
+35
+00:01:34,800 --> 00:01:36,790
+觉得我理解错了。它说：
+think I mischaracterized that. It says:
+
+36
+00:01:36,790 --> 00:01:38,880
+“能力最强的模型在最高投入下，
+"The most capable model at the highest effort should be
+
+37
+00:01:38,880 --> 00:01:41,480
+在这个评测上的得分应远低于 100，否则你
+well below 100 on the evaluation, otherwise you can't
+
+38
+00:01:41,480 --> 00:01:45,080
+无法可靠地判断改动对性能的影响。”好。
+reliably judge how changes impact performance." Okay.
+
+39
+00:01:45,080 --> 00:01:48,510
+“重要的是，这个差距不应该来自不可能完成
+"Importantly, the gap should not be explained by impossible
+
+40
+00:01:48,510 --> 00:01:51,560
+或有歧义的任务。一个常见的迹象是，
+or ambiguous tasks. A common tell is that a
+
+41
+00:01:51,560 --> 00:01:53,820
+某个任务在每次评测运行中都失败，
+task fails on every evaluation run,
+
+42
+00:01:53,820 --> 00:01:56,740
+不管重复多少次。好的任务应该是
+regardless of the number of replicates. A good task is one where
+
+43
+00:01:56,740 --> 00:01:58,560
+两位领域专家会给出相同判定的任务。”好，
+two domain experts reach the same verdict." Okay,
+
+44
+00:01:58,560 --> 00:02:01,200
+所以它的意思是，你不应该让
+so what it's saying is, like, you should not saturate
+
+45
+00:02:01,200 --> 00:02:04,590
+eval 饱和，但也不能让它根本做不到。
+the eval, but you shouldn't just have it be impossible either.
+
+46
+00:02:04,590 --> 00:02:05,520
+它应该是一个
+It should be, like, a really
+
+47
+00:02:05,520 --> 00:02:08,940
+你作为人类能搞定、
+hard task that you as a human could conquer,
+
+48
+00:02:08,940 --> 00:02:11,300
+但 AI 还没搞定的难任务。所以，我同意
+but the AI hasn't conquered it yet. So, I agree
+
+49
+00:02:11,300 --> 00:02:14,840
+这一点。然后他们讲对抗性抽样。
+with that. Then they talk about adversarial sampling.
+
+50
+00:02:14,840 --> 00:02:17,630
+比如：“模型能力是参差不齐的。”
+Like, okay: "Model capability is jagged."
+
+51
+00:02:17,630 --> 00:02:19,950
+你应该尽量聚焦在，比如说，
+And you should try to focus where like maybe
+
+52
+00:02:19,950 --> 00:02:24,500
+如果有办法专门抽模型失败的地方，
+if there's a way to sample where the model is failing,
+
+53
+00:02:24,500 --> 00:02:27,670
+你知道，你就可以……这样抽样效率更高，
+you know, you can sort of... that'll be more sample efficient,
+
+54
+00:02:27,670 --> 00:02:30,910
+你能获得更多的信息量。
+like you will have higher information potential.
+
+55
+00:02:30,910 --> 00:02:34,170
+所以意思是，模型能力是参差不齐的。
+So it's like, okay, model capability is, is jagged.
+
+56
+00:02:34,330 --> 00:02:37,260
+“如果你挑的案例只是因为今天的模型做不对，
+"If you pick cases because today's model fails them,
+
+57
+00:02:37,260 --> 00:02:40,610
+那你抽的是某个模型能力曲面上的低谷。”
+you're sampling the valleys of one model's capability surface."
+
+58
+00:02:41,150 --> 00:02:42,800
+“评测最后可能衡量的是这个模型的
+"The evaluation can end up measuring the model's
+
+59
+00:02:42,800 --> 00:02:45,250
+失败指纹，而不是真正困难的东西。”
+failure fingerprint rather than what's intrinsically hard."
+
+60
+00:02:45,630 --> 00:02:47,110
+我刚才说到抽样。
+I was telling you about sampling.
+
+61
+00:02:47,110 --> 00:02:48,710
+它说：“挑难的案例，
+It says, so, like: "Pick hard cases
+
+62
+00:02:48,710 --> 00:02:52,210
+是因为人判断它们难。”好，有意思。
+because a human judged them hard." Okay, interesting.
+
+63
+00:02:52,210 --> 00:02:56,250
+所以挑案例是因为人判断它们难。
+So pick cases because a human judged them hard.
+
+64
+00:02:56,250 --> 00:02:58,470
+我不反对，我不反对这一点。
+I don't disagree. I don't disagree with that.
+
+65
+00:02:58,470 --> 00:03:02,290
+但我是说，它们也得真的失败才行。
+But I mean, they also have to, like, actually fail.
+
+66
+00:03:02,290 --> 00:03:04,790
+对对，你得找到……我猜，
+Yeah, yeah, you have to find... I guess, like,
+
+67
+00:03:04,790 --> 00:03:08,300
+在判断之前，也许你已经给数据打过标签，知道哪些难。
+before you judge anything, maybe you've already labeled the data,
+
+68
+00:03:08,300 --> 00:03:09,450
+我也不知道。就是，
+what's hard. I don't know. Like,
+
+69
+00:03:09,450 --> 00:03:11,980
+大概吧。是啊，而且有很多事情
+I guess. Yeah, well, and there's a lot of things
+
+70
+00:03:11,980 --> 00:03:14,890
+对人来说极难，但这些
+that are extremely hard for a human that these
+
+71
+00:03:14,890 --> 00:03:17,840
+模型做得很好，你知道，反过来也一样。
+models do just fine, you know, and vice versa.
+
+72
+00:03:17,840 --> 00:03:21,210
+所以我不确定我完全同意这一点。
+So I guess I don't know that I completely agree with that.
+
+73
+00:03:21,210 --> 00:03:23,750
+对，我也不太确定。我会说，
+Yeah, I'm not sure exactly. I would say, like,
+
+74
+00:03:23,750 --> 00:03:27,330
+我肯定想抽那些看起来
+I definitely want to sample things that appear
+
+75
+00:03:27,330 --> 00:03:31,370
+像失败的样本，也肯定想抽多样的……
+like failures, and I definitely want to sample diverse...
+
+76
+00:03:31,370 --> 00:03:33,750
+就是在整个空间里抽样，比如
+like, sample across the space, like
+
+77
+00:03:33,750 --> 00:03:35,320
+各种各样的用户交互，
+diverse sort of user interactions,
+
+78
+00:03:35,320 --> 00:03:40,350
+或者做完全不同事情的各种会话，这样
+or diverse sort of sessions that do completely different things, so
+
+79
+00:03:40,350 --> 00:03:42,480
+我能理解、建立一个心智模型，知道人们都在
+I can understand, get a mental model of the kinds
+
+80
+00:03:42,480 --> 00:03:44,830
+做哪些不同的事情。不过，我……
+of different things people are doing. But yeah, I...
+
+81
+00:03:44,830 --> 00:03:46,830
+我是说，我也不太清楚这句具体什么意思。
+I mean, yeah, I don't know what this means exactly.
+
+82
+00:03:46,990 --> 00:03:47,950
+我先保留意见。
+I think I'll hold my judgment.
+
+83
+00:03:48,390 --> 00:03:50,650
+好，终于讲到这个 Skill 了。
+Okay, so they finally get into this skill.
+
+84
+00:03:51,010 --> 00:03:53,050
+你会用到 /claude-api build-eval。
+So you have, like, /claude-api build-eval.
+
+85
+00:03:53,150 --> 00:03:55,590
+“claude-api Skill 里的 build-eval 命令
+"The build-eval command in the claude-api skill
+
+86
+00:03:55,590 --> 00:03:58,050
+把这些原则变成了一套引导式流程。”
+turns these principles into a guided workflow."
+
+87
+00:03:58,610 --> 00:04:01,150
+然后它基本上是说：
+And then basically what it says is like
+
+88
+00:04:01,150 --> 00:04:02,590
+“Claude 会先问你一些问题，
+"Claude interviews you,
+
+89
+00:04:02,950 --> 00:04:04,790
+在你的代码库里搭建 eval，
+builds the eval inside your code base
+
+90
+00:04:04,790 --> 00:04:07,730
+并在特定节点暂停等你批准。”
+and pauses for approval at specific points."
+
+91
+00:04:08,190 --> 00:04:10,310
+“Claude 帮你按以下顺序
+"Claude helps you sample inputs
+
+92
+00:04:10,310 --> 00:04:12,790
+抽取输入来构建评测。”
+to build evaluations in this order."
+
+93
+00:04:12,790 --> 00:04:15,220
+它会先看生产环境的对话记录，
+So it, like, looks at production transcripts,
+
+94
+00:04:15,220 --> 00:04:18,470
+再看 bug 报告，然后是五到十个
+then it looks for bug reports, then five to ten cases
+
+95
+00:04:18,470 --> 00:04:20,930
+你手写的案例，以及从代码库合成的案例。
+you write by hand, cases synthesized from your codebase.
+
+96
+00:04:20,930 --> 00:04:24,310
+然后它说会优先用生产环境
+And then it says it prioritizes production
+
+97
+00:04:24,310 --> 00:04:27,760
+流量，但也能基于少量真实样本
+traffic, but it can also generate synthetic data
+
+98
+00:04:27,760 --> 00:04:29,690
+生成合成数据。“这个 Skill 会让
+anchored to a few real examples. "The skill instructs
+
+99
+00:04:29,690 --> 00:04:34,440
+Claude 生成一个简单页面，把每条输入都给你看，
+Claude to generate a simple page that shows you every input
+
+100
+00:04:34,440 --> 00:04:35,530
+等你确认。”
+and waits until you confirm them."
+
+101
+00:04:35,530 --> 00:04:38,080
+它说：“下面我们展示一个
+It's like: "Below we show you an example of a sample
+
+102
+00:04:38,080 --> 00:04:41,010
+邮件分流应用的示例输入集。”
+set of inputs for an email router application."
+
+103
+00:04:41,010 --> 00:04:44,320
+好，这些是一些输入。然后是：
+Okay, so, like, these are some inputs. And then it's like:
+
+104
+00:04:44,320 --> 00:04:46,990
+验证评判器。“确定输入后，
+validating the grader. "After the inputs,
+
+105
+00:04:46,990 --> 00:04:48,700
+Claude 会提出最便宜的、
+Claude proposes the cheapest grader
+
+106
+00:04:48,700 --> 00:04:51,290
+适合你应用输出的评判器。”所以它要么给你
+that fits your application's output." So either they give you
+
+107
+00:04:51,290 --> 00:04:53,860
+程序化验证，也就是代码，
+programmatic verification, which is code,
+
+108
+00:04:53,860 --> 00:04:57,670
+要么在没法用代码时用 LLM 评审。很好。
+or LLM as a judge if you can't use code. That's great.
+
+109
+00:04:57,670 --> 00:05:00,940
+然后它说：“Claude 会先给少量案例打分，
+Then it says: "Claude grades a handful of cases
+
+110
+00:05:00,940 --> 00:05:02,710
+再问你会不会打出
+and asks whether you would have scored them any
+
+111
+00:05:02,710 --> 00:05:05,520
+不同的分数。”这挺有意思的。它试着……
+differently." That's interesting. It tries to...
+
+112
+00:05:05,520 --> 00:05:07,550
+它直接就……我们看看吧。我觉得得试一下。
+it just goes... we'll see. I think we have to try it.
+
+113
+00:05:07,550 --> 00:05:10,230
+意思是 Claude 会先打分，
+It says like, so Claude will like grade it first
+
+114
+00:05:10,230 --> 00:05:12,330
+再问你会不会有不同的判断。
+and then ask you if you would have done anything different.
+
+115
+00:05:13,900 --> 00:05:16,400
+它还说，在相信你的评估器之前，
+And it says, it's important to read a sample
+
+116
+00:05:16,400 --> 00:05:19,320
+一定要读一部分打过分的对话记录。
+of scored transcripts before believing your evaluator.
+
+117
+00:05:19,700 --> 00:05:22,220
+好，这话说到我心坎上了。
+Okay, I mean, speaking my language here.
+
+118
+00:05:22,620 --> 00:05:26,240
+打分失败是评测配置出错
+Scored failures are among the most common ways
+
+119
+00:05:26,240 --> 00:05:28,480
+最常见的原因之一，对吧？
+an evaluation is misconfigured, okay?
+
+120
+00:05:28,720 --> 00:05:30,300
+它说，等你验证完评判器，
+It says, when you evaluated the grader,
+
+121
+00:05:30,420 --> 00:05:33,020
+这个 Skill 会告诉你评测集的规模，
+the skill tells you the size of the evaluation set,
+
+122
+00:05:33,100 --> 00:05:35,060
+跑一遍基线，打印出一个分数
+runs the baseline and prints a score
+
+123
+00:05:35,060 --> 00:05:36,280
+和置信区间。
+with a confidence interval.
+
+124
+00:05:36,660 --> 00:05:38,750
+我挺好奇基线是多少，不过我们可以，
+Curious what the baseline is, but we can,
+
+125
+00:05:38,750 --> 00:05:40,160
+也许跑的时候就知道了。
+maybe we'll find out when we run it.
+
+126
+00:05:40,940 --> 00:05:43,560
+它说你会拿到：案例、
+It says what you get back: the cases,
+
+127
+00:05:43,560 --> 00:05:47,500
+评判器、运行器，每个案例一行 JSON
+the grader, the runner, one JSON line and one
+
+128
+00:05:47,500 --> 00:05:48,920
+和一份完整对话记录。
+full transcript per case.
+
+129
+00:05:49,140 --> 00:05:51,770
+还有一个简单页面，列出每个案例的
+And a plain page that lists each case's
+
+130
+00:05:51,770 --> 00:05:54,020
+分数，并链接到对应的对话记录。
+score with the link to its transcript.
+
+131
+00:05:54,180 --> 00:05:55,660
+这段其实可以写得更清楚。
+The writing could have been clearer here.
+
+132
+00:05:56,140 --> 00:05:58,660
+我感觉这是 Claude 写的，不过它本来就是 Claude 嘛。
+I feel like that's written by Claude, but it is Claude.
+
+133
+00:05:58,880 --> 00:06:00,520
+他们当然可以用 Claude 写。
+I guess they're allowed to write with Claude.
+
+134
+00:06:00,660 --> 00:06:02,720
+我是说，最有资格用 Claude 写的就是他们吧。
+I mean, if anyone's allowed to write with Claude, I don't know.
+
+135
+00:06:02,840 --> 00:06:05,380
+要是他们不用 Claude 写，反而有点怪吧。我也说不好。
+It would be kind of weird if they didn't write with Claude, maybe. I don't know.
+
+136
+00:06:05,380 --> 00:06:07,800
+我觉得这篇至少经过了
+I do think they've done a lot of editing on this piece,
+
+137
+00:06:07,800 --> 00:06:10,580
+大量人工修改。对，它不是 AI 垃圾（slop），不是
+at least by hand. Yeah, it's not slop. It's not
+
+138
+00:06:10,580 --> 00:06:13,790
+AI 垃圾。我读起来一直挺顺的。现在的
+slop. I was able to read it just fine. Like, right now,
+
+139
+00:06:13,790 --> 00:06:16,100
+Claude 5.5 就不会这样了，对吧？挺好的。
+Claude 5.5 just isn't, right? That's good.
+
+140
+00:06:16,100 --> 00:06:19,310
+对，它绝对不是 AI 垃圾。
+Yeah, it's definitely not slop.
+
+141
+00:06:19,310 --> 00:06:23,980
+“如果你想看的比那个页面展示的更多，就让
+"If you want more than that page shows, ask
+
+142
+00:06:23,980 --> 00:06:26,270
+Claude 在旁边再生成几个页面。”
+Claude and it'll build extra pages next to it."
+
+143
+00:06:26,270 --> 00:06:28,540
+所以这些是静态 HTML 文件，它们有
+So these are static HTML files, so they have, like,
+
+144
+00:06:28,540 --> 00:06:32,940
+某种查看器。我不太喜欢这个查看器，
+some kind of viewer. I'm not in love with this viewer,
+
+145
+00:06:32,940 --> 00:06:35,640
+不过话说回来，这只是示意，
+but then again, it's illustrative, and it's
+
+146
+00:06:35,640 --> 00:06:38,650
+是给博客用的，一个页面能展示多少呢？
+for a blog post, so how much can you possibly show on a page?
+
+147
+00:06:38,650 --> 00:06:39,840
+它就是给你看
+Just because it's showing you, like, the
+
+148
+00:06:39,840 --> 00:06:41,750
+原始 trace，有点……我也说不好。但话说回来，
+raw trace, it's kind of... I don't know. But then again,
+
+149
+00:06:41,750 --> 00:06:45,000
+我们别太挑刺了。这只是
+let's not nitpick it too much. This is the blog
+
+150
+00:06:45,000 --> 00:06:49,510
+博客文章而已。好，“基线运行期间的诊断检查”。
+post only. Okay, "Diagnostic checks during the baseline."
+
+151
+00:06:49,510 --> 00:06:51,480
+我也挺好奇这个查看器
+Also kind of curious what this viewer
+
+152
+00:06:51,480 --> 00:06:53,980
+是什么，因为它不在终端里直接显示。所以它是
+is, because it's not inline in the terminal. So is it,
+
+153
+00:06:53,980 --> 00:06:57,300
+写一个 HTML 文件？还是
+like, writing an HTML file? Is it, like, building
+
+154
+00:06:57,300 --> 00:07:00,390
+新建一个应用之类的？这个挺值得看看的。
+a new app or something? So it'll be interesting to see.
+
+155
+00:07:00,390 --> 00:07:02,860
+对，挺有意思的。比如，它会不会
+Yeah, that'll be interesting. Like, does it
+
+156
+00:07:02,860 --> 00:07:07,830
+接到 Vercel 上，还是用 SQLite 数据库，
+wire it up to Vercel, or is it doing, like, a SQLite database,
+
+157
+00:07:07,830 --> 00:07:09,660
+或者只是存回 JSON 文件？
+or just saving them back to JSON files?
+
+158
+00:07:09,660 --> 00:07:12,330
+也许吧，我不知道。对，我们会知道的。
+Maybe. I don't know. Yeah, we'll find out.
+
+159
+00:07:12,330 --> 00:07:15,100
+“诊断检查。”好，它说：“在
+"Diagnostic checks." Okay, it says, like: "During
+
+160
+00:07:15,100 --> 00:07:17,440
+前面提到的基线运行中，
+baseline runs mentioned above,
+
+161
+00:07:17,440 --> 00:07:20,600
+Claude 会检查几件事。”比如：“Claude 会对
+Claude checks a number of things." So: "Claude runs a grader twice
+
+162
+00:07:20,600 --> 00:07:23,990
+同一个输出运行评判器两次，报告判定是否改变。
+on the same output and reports whether the verdict changed.
+
+163
+00:07:23,990 --> 00:07:26,300
+基础设施（plumbing）：Claude 会检查超时、API
+Plumbing: Claude checks for timeouts, API
+
+164
+00:07:26,300 --> 00:07:30,060
+报错和被截断的回答，确保基础设施
+errors, and cut-off answers to ensure infrastructure
+
+165
+00:07:30,060 --> 00:07:32,020
+的噪声不会被当成模型的波动。”好，我猜
+noise doesn't pass as model variance." Okay, I guess
+
+166
+00:07:32,020 --> 00:07:34,930
+这大概是针对 LLM 评审的吧。
+this is for an LLM judge, then, maybe, or something.
+
+167
+00:07:34,930 --> 00:07:38,140
+我也不确定。“提升空间：如果基线已经达到
+I'm not sure. "Headroom: if the baseline already scores
+
+168
+00:07:38,140 --> 00:07:41,710
+95 分或更高，这个 Skill 会提醒用户”，
+95 or higher, the skill warns the user" and alerts
+
+169
+00:07:41,710 --> 00:07:44,740
+并提示“迭代优化应该转向
+that "the hillclimb should aim to explore
+
+170
+00:07:44,740 --> 00:07:47,280
+成本或延迟，而不是质量。”有道理。
+cost or latency rather than quality." Makes sense.
+
+171
+00:07:47,280 --> 00:07:49,420
+他们还有一节讲迭代优化。我们来，
+They have this hillclimbing section. Let's, let's
+
+172
+00:07:49,420 --> 00:07:52,160
+试一下。先试试这个构建 eval，
+try it out. Let's try this, like, build the eval first,
+
+173
+00:07:52,160 --> 00:07:54,000
+就是 build-eval 这个功能。我们试试。
+this build-eval thing. So let's try it.
+
+174
+00:07:54,000 --> 00:07:55,380
+我来共享一下屏幕。
+So let me share my screen here.
+
+175
+00:07:56,100 --> 00:07:59,600
+我们手上大概没有生产环境的 trace（调用轨迹）
+I guess we probably don't have production traces
+
+176
+00:07:59,600 --> 00:08:03,800
+或者生产环境的工单可以给它，
+or the production tickets to give it,
+
+177
+00:08:03,800 --> 00:08:05,280
+不过也许没有也能做。
+but we can work without it maybe.
+
+178
+00:08:05,640 --> 00:08:07,340
+对，其实我提前准备了一些东西，
+Yeah, so actually I prepared something here
+
+179
+00:08:07,340 --> 00:08:09,140
+因为我知道我们要做这场直播。
+because I know we're doing this live stream.
+
+180
+00:08:09,260 --> 00:08:11,580
+我在终端里有这些 trace，
+So I have here in the terminal these traces
+
+181
+00:08:11,580 --> 00:08:14,240
+我没有生产环境的应用。
+and I don't have a production application.
+
+182
+00:08:14,520 --> 00:08:17,340
+我没法公开分享这个生产环境的应用，
+I can't like share publicly this production application,
+
+183
+00:08:17,520 --> 00:08:21,420
+但我有来自一个真实应用的 100 条 trace，
+but I have 100 traces from a real application,
+
+184
+00:08:21,420 --> 00:08:24,380
+就是一个房产 AI 助手。
+this, like, real estate AI assistant thing.
+
+185
+00:08:24,500 --> 00:08:25,980
+我给你们看看它长什么样。
+I can show you what like what it looks like.
+
+186
+00:08:26,240 --> 00:08:27,960
+我在浏览器里打开。
+Let me actually open it in my browser.
+
+187
+00:08:28,940 --> 00:08:30,160
+我应该在这儿给大家看的。
+I should have shown it here.
+
+188
+00:08:30,280 --> 00:08:33,420
+我把窗口切回浏览器。
+So let me change the window back to the browser here.
+
+189
+00:08:33,580 --> 00:08:35,060
+这就是这些 trace 的样子。
+So here's what the traces look like.
+
+190
+00:08:35,140 --> 00:08:36,080
+一共有一百条。
+There's a hundred of these.
+
+191
+00:08:36,140 --> 00:08:37,100
+不知道看不看得清。
+I don't know if you can see this.
+
+192
+00:08:37,100 --> 00:08:38,580
+这来自一个房产，
+This is like from a real estate
+
+193
+00:08:38,580 --> 00:08:41,620
+或者说公寓租赁助手。
+or this like apartment leasing assistant.
+
+194
+00:08:42,060 --> 00:08:43,520
+是一个真实的生产系统。
+It's like a real production system.
+
+195
+00:08:43,900 --> 00:08:45,700
+基本上 trace 就长这样。
+And basically this is what the traces look like.
+
+196
+00:08:45,880 --> 00:08:47,420
+这只是它的 HTML 查看器。
+This is just the HTML viewer of it.
+
+197
+00:08:47,440 --> 00:08:48,460
+跟你们说一声。
+Just so you know.
+
+198
+00:08:48,460 --> 00:08:50,670
+好，就是说：有一段系统提示词，
+Okay, so it's like: the user has a system prompt,
+
+199
+00:08:50,670 --> 00:08:53,760
+我把它隐藏了。大概是：“你是一个 AI 助手，
+which I've hidden. It's like, "You are an AI assistant
+
+200
+00:08:53,760 --> 00:08:57,280
+在某个公寓小区担任租赁团队成员。
+working as a leasing team member at some apartment complex.
+
+201
+00:08:57,280 --> 00:09:00,160
+你的主要职责是……”等等。好，我知道
+Your primary role is..." blah blah. Okay, I know
+
+202
+00:09:00,160 --> 00:09:02,320
+Isaac Flath（共同测试者），这个你以前见过。
+you've seen this before, Isaac.
+
+203
+00:09:02,320 --> 00:09:05,460
+我只是做给观众看的。所以，就是，
+I'm just doing this to humor the audience. So it's like, okay, so you
+
+204
+00:09:05,460 --> 00:09:07,680
+用户问了一个问题，可能有工具调用，
+have a user ask a question, you have maybe tool calls,
+
+205
+00:09:07,680 --> 00:09:10,200
+可能助手给你
+you maybe have, like, the assistant gives you
+
+206
+00:09:10,200 --> 00:09:13,640
+返回了一些信息，用户再回复，等等。
+some information back, the user responds, blah blah.
+
+207
+00:09:13,640 --> 00:09:15,620
+然后我们可以看看这些 trace。
+And, like, you know, we can look at these traces.
+
+208
+00:09:15,620 --> 00:09:17,410
+有些不太一样。比如这条是：
+Some of them are different. Like, this one's like,
+
+209
+00:09:17,410 --> 00:09:19,920
+“我看房要迟到了”，
+"I'm running late for my tour appointment,"
+
+210
+00:09:19,920 --> 00:09:23,000
+等等。你们懂的。有好几百条，
+blah blah. You get the idea. There's, like, hundreds of these.
+
+211
+00:09:23,000 --> 00:09:25,300
+其实是 100 条 trace。其中一些
+There's 100 of these traces. Some of them
+
+212
+00:09:25,300 --> 00:09:30,450
+有问题。这些数据我已经非常熟了，
+have issues. I am very familiar with this data already,
+
+213
+00:09:30,450 --> 00:09:32,140
+因为我用它用得太多了。
+because I've worked with it so much.
+
+214
+00:09:32,140 --> 00:09:35,490
+这算是我教 eval 的教学案例，
+It's like my teaching example for evals,
+
+215
+00:09:35,490 --> 00:09:38,700
+因为它来自一个很乱、很真实的
+because it's from, like, a messy, like, real
+
+216
+00:09:38,700 --> 00:09:41,310
+场景，而且我恰好知道
+situation, and I happen to know, like,
+
+217
+00:09:41,310 --> 00:09:43,860
+错误在哪里，哪些
+where the errors are and, like, where the
+
+218
+00:09:43,860 --> 00:09:46,600
+比较棘手。所以，某种程度上……
+tricky ones are. So, you know, in some ways...
+
+219
+00:09:46,600 --> 00:09:50,420
+不过我会尽量模拟一下那种情况，比如说，
+But I will try to simulate, like, what it is like. Like, let's
+
+220
+00:09:50,420 --> 00:09:54,360
+假设我以前从没做过 eval。好，
+say I haven't ever done evals before. Okay,
+
+221
+00:09:54,360 --> 00:09:56,440
+我能不能把 Claude、这个 Skill 用在这些数据上？
+like, can I point Claude, this skill, at this data?
+
+222
+00:09:56,440 --> 00:09:57,490
+我们试试看。你觉得……
+So let's try that. What do you...
+
+223
+00:09:57,490 --> 00:10:00,000
+你觉得怎么样？嗯，我觉得可以。好。
+what do you say? Yeah, I think that's good. Okay.
+
+224
+00:10:00,000 --> 00:10:02,850
+我们看看它会不会……会不会引导我们，
+We'll see if it... if it guides us,
+
+225
+00:10:02,850 --> 00:10:06,000
+如果我们像一个聪明人那样跟着它走，它能不能
+if we kind of follow it as a smart person would, if it kind of
+
+226
+00:10:06,000 --> 00:10:08,810
+引导我们找出所有这些问题，那就太好了。
+guides us to find all these issues, that'd be cool.
+
+227
+00:10:08,810 --> 00:10:11,740
+对。好，我们来看看。我要……这里
+Yeah. Okay, so let's see here. I'm gonna... So this
+
+228
+00:10:11,740 --> 00:10:15,620
+是存放这些东西的目录。我给你们看一下。
+is the directory where that stuff is. I'll just show you.
+
+229
+00:10:15,620 --> 00:10:18,560
+对，数据就在这个 traces.json 里。
+So, like, yeah, it's in traces.json here.
+
+230
+00:10:18,560 --> 00:10:21,790
+好，我们刚才看的就是这个 viewer.html 文件。
+Okay, we were just looking at this viewer.html file.
+
+231
+00:10:21,790 --> 00:10:23,960
+基本上我要做的是……
+And basically what I'll do is I'll do, like...
+
+232
+00:10:23,960 --> 00:10:26,500
+那个命令叫什么来着，我记得是，
+so the name of that command, I think it's called,
+
+233
+00:10:26,500 --> 00:10:29,260
+我也不知道，/claude-api，然后是什么来着？
+I don't know, /claude-api, and then what was it?
+
+234
+00:10:29,260 --> 00:10:30,600
+他们让你输入 build-eval。
+They want you to say build-eval.
+
+235
+00:10:30,600 --> 00:10:32,120
+然后我会说……
+And I'll say, like...
+
+236
+00:10:32,120 --> 00:10:34,600
+我用语音口述了一段提示词
+So I voice-dictated a prompt
+
+237
+00:10:34,600 --> 00:10:35,780
+到终端里，
+into my terminal,
+
+238
+00:10:35,780 --> 00:10:38,060
+用的是他们的 build-eval 命令。
+and I'm using, like, their build-eval command.
+
+239
+00:10:38,060 --> 00:10:39,660
+提示词是这样的：
+And the prompt says:
+
+240
+00:10:39,660 --> 00:10:41,280
+“我想开始做 eval。
+"I'm trying to get started with evals.
+
+241
+00:10:41,280 --> 00:10:42,620
+我没有应用代码，
+I don't have application code,
+
+242
+00:10:42,620 --> 00:10:45,420
+但我在 traces.json 文件里有 trace，
+but I have traces in the traces.json file,
+
+243
+00:10:45,420 --> 00:10:47,040
+你可能知道它就在这里。
+which you may know that I have here.
+
+244
+00:10:47,040 --> 00:10:48,560
+这些是 100 条 trace，
+These are 100 traces
+
+245
+00:10:48,560 --> 00:10:49,880
+来自我的公寓租赁助手。”
+from my apartment leasing assistant."
+
+246
+00:10:49,880 --> 00:10:52,320
+这就是我准备的，
+So this is what I got,
+
+247
+00:10:52,320 --> 00:10:54,190
+还开了“think harder”（加强思考）。
+and we got "think harder" going.
+
+248
+00:10:54,190 --> 00:10:55,050
+挺好。
+It's perfect.
+
+249
+00:10:55,050 --> 00:10:55,570
+嗯。
+Yeah.
+
+250
+00:10:55,570 --> 00:10:58,810
+对这个情况可能有点大材小用，
+It's probably overkill for the situation,
+
+251
+00:10:58,810 --> 00:10:59,610
+不过无所谓。
+but whatever.
+
+252
+00:11:00,950 --> 00:11:01,970
+好，我就按它来。
+Okay, so I'm going to go with it.
+
+253
+00:11:02,110 --> 00:11:02,950
+看看它会做什么。
+I'm going to see what it does.
+
+254
+00:11:03,050 --> 00:11:05,070
+看看会发生什么。
+Let's see what happens.
+
+255
+00:11:05,690 --> 00:11:07,230
+“我会先读 build-eval 指南，
+"I'll read the build-eval guide
+
+256
+00:11:07,230 --> 00:11:08,330
+再看看这些 trace。”
+and take a look at the traces."
+
+257
+00:11:08,600 --> 00:11:09,400
+我们来看看。
+Let's check it out.
+
+258
+00:11:09,450 --> 00:11:11,390
+博客文章的写法，
+Now, the way the blog post was written
+
+259
+00:11:11,390 --> 00:11:14,850
+我觉得它预设你在某处有应用代码。
+is I think it kind of expects application code somewhere.
+
+260
+00:11:15,110 --> 00:11:17,570
+但我特意告诉它我没有应用代码。
+But I specifically told it I don't have application code.
+
+261
+00:11:17,670 --> 00:11:18,690
+就是问：你还能帮我吗？
+Like, can you still help me?
+
+262
+00:11:19,170 --> 00:11:20,650
+我觉得它应该能。
+And I feel like it should be able to.
+
+263
+00:11:20,870 --> 00:11:23,570
+“我读了 build-eval 指南，并分析了这些 trace：
+"I reviewed the build-eval guide and profiled the traces:
+
+264
+00:11:23,750 --> 00:11:27,390
+100 段对话、1,400 条消息、13 个工具、
+100 conversations, 1,400 messages, 13 tools,
+
+265
+00:11:27,390 --> 00:11:29,990
+27 个不同的小区系统提示词。”好？
+27 distinct community system prompts." Okay?
+
+266
+00:11:30,980 --> 00:11:34,260
+它问：“你想先给租赁助手的
+It says: "Which behavior of the leasing assistant
+
+267
+00:11:34,260 --> 00:11:36,480
+哪种行为一个数字？
+do you want a number for first?
+
+268
+00:11:36,940 --> 00:11:39,480
+我会针对一种行为做一个 eval。”
+I'll build one eval for one behavior."
+
+269
+00:11:39,860 --> 00:11:40,660
+哦，有意思。
+Oh, interesting.
+
+270
+00:11:41,300 --> 00:11:42,980
+我觉得我们应该选推荐的那个。
+I feel like we should do the recommended thing.
+
+271
+00:11:43,400 --> 00:11:45,200
+有据可依的回答、转人工、预约看房，
+Grounded answers, call transfer, tour scheduling,
+
+272
+00:11:45,340 --> 00:11:46,660
+但先找失败。
+but find failures first.
+
+273
+00:11:46,940 --> 00:11:47,820
+它推荐的是这个。
+That's what it recommends.
+
+274
+00:11:48,000 --> 00:11:48,800
+看起来挺合理的。
+And that seems reasonable.
+
+275
+00:11:48,850 --> 00:11:49,300
+好。
+Sure.
+
+276
+00:11:49,300 --> 00:11:51,480
+“这里没有应用代码，只有 trace。
+"There is no application code here, only traces.
+
+277
+00:11:51,640 --> 00:11:52,920
+eval 应该基于什么来运行？”
+What should the eval run against?"
+
+278
+00:11:53,520 --> 00:11:54,620
+给记录下来的输出打分。
+Grade the recorded outputs.
+
+279
+00:11:54,700 --> 00:11:56,040
+对，我觉得是这样。
+Yeah, I think so.
+
+280
+00:11:56,040 --> 00:11:59,680
+有意思的是，我还有一个选项，
+And it's interesting that I had an option to try and,
+
+281
+00:11:59,680 --> 00:12:01,100
+能用 Claude 全部重放一遍。
+like, replay them all through Claude.
+
+282
+00:12:01,100 --> 00:12:03,670
+这挺有意思的。对，我都不知道
+That was interesting. Yeah, I don't even know what
+
+283
+00:12:03,670 --> 00:12:05,060
+那是什么意思。大概是，重建
+that means. It's like, I guess, rebuild the
+
+284
+00:12:05,060 --> 00:12:07,090
+应用？对，我也不知道。这就像……
+application? Yeah, I don't know. This is like...
+
+285
+00:12:07,090 --> 00:12:09,520
+我不知道。感觉不太可能。
+I don't know. That doesn't seem like a possibility.
+
+286
+00:12:09,520 --> 00:12:12,320
+好：“这些 trace 里有没有真实的来电者数据，
+Okay: "Do these traces contain real caller data,
+
+287
+00:12:12,320 --> 00:12:16,300
+比如姓名、电话、邮箱？可以把它们
+such as names, phone numbers, emails? Is it fine
+
+288
+00:12:16,300 --> 00:12:19,200
+放在这个仓库里、发给 Claude 吗？”
+for them to live in this repo and be sent to Claude?"
+
+289
+00:12:19,200 --> 00:12:21,420
+可以，因为我已经把它们匿名化了。
+Yes, it's fine, because I've already anonymized them.
+
+290
+00:12:21,420 --> 00:12:22,720
+完全没问题。
+This is totally fine.
+
+291
+00:12:23,040 --> 00:12:23,840
+然后提交答案。
+And submit answers.
+
+292
+00:12:24,120 --> 00:12:26,360
+哦，它说：“我会把 trace 渲染得紧凑一些。
+Oh, it says: "I will render the traces compactly.
+
+293
+00:12:26,600 --> 00:12:28,860
+每种系统提示词只显示一次。
+System prompt shown once per distinct prompt.
+
+294
+00:12:29,220 --> 00:12:32,220
+工具结果做了裁剪，这样我能全部读完。”
+Tool results trimmed so I can read them all."
+
+295
+00:12:32,500 --> 00:12:36,160
+我不太确定那是什么意思，
+I'm not quite sure what that means,
+
+296
+00:12:36,320 --> 00:12:39,620
+不过话说回来，这只是思考过程，
+but then again, it's a thinking trace
+
+297
+00:12:39,620 --> 00:12:41,200
+所以我就不过度解读了。
+so I won't read into it too much, I guess.
+
+298
+00:12:42,120 --> 00:12:43,440
+我在想我用的是哪个模型。
+I wonder what model I'm using.
+
+299
+00:12:43,530 --> 00:12:44,330
+我都不知道。
+I don't even know.
+
+300
+00:12:44,380 --> 00:12:46,340
+哦，我用的是 Sonnet 5.5。
+Oh, I'm using Sonnet 5.5.
+
+301
+00:12:46,440 --> 00:12:47,240
+没问题。
+That's fine.
+
+302
+00:12:48,050 --> 00:12:49,610
+我可不想在这儿把钱烧光，
+I'm not trying to go broke here
+
+303
+00:12:49,610 --> 00:12:52,990
+因为我也不确定会烧掉多少 token。
+because I'm not really sure how many tokens I'm going to burn.
+
+304
+00:12:53,990 --> 00:12:57,630
+而且我觉得我其实不是在测模型能力。
+Plus, I'm not really testing model capabilities, I don't think.
+
+305
+00:12:57,950 --> 00:13:00,270
+我是在测它的用户体验和工作流程。
+I'm trying to test the UX and workflow of this.
+
+306
+00:13:00,610 --> 00:13:02,250
+另外你也不希望它跑得太慢，
+And also, you don't want it to run too slow
+
+307
+00:13:02,250 --> 00:13:03,690
+因为我们只是想试一试。
+because we're trying to just test this out.
+
+308
+00:13:03,930 --> 00:13:05,570
+我以前没注意到这个：“陷入沉思”。
+I haven't noticed this before: "Deep in thought."
+
+309
+00:13:05,570 --> 00:13:10,770
+当然，我平时也不会这么长时间盯着 Claude 看。
+Of course, I don't really stare at Claude like this usually for this long.
+
+310
+00:13:11,110 --> 00:13:13,150
+不过它确实在思考，在做某种思考。
+But it is thinking. It's doing some kind of thinking.
+
+311
+00:13:13,790 --> 00:13:14,790
+你是不是都异步跑？
+Do you just do it async?
+
+312
+00:13:14,950 --> 00:13:16,830
+就是先启动，然后去干别的？
+You kind of kick it off and go to the next thing?
+
+313
+00:13:17,110 --> 00:13:19,090
+对，如果它在做这种事情，
+Yeah, I mean, if it's doing something like this,
+
+314
+00:13:19,090 --> 00:13:21,320
+我就会去干点别的。
+like, I'm gonna do something else.
+
+315
+00:13:21,320 --> 00:13:24,050
+也许这不太好，因为我会分心。不过
+Maybe it's not a good thing, because then I get distracted. But
+
+316
+00:13:24,050 --> 00:13:25,320
+对，我是想，
+yeah, I was thinking, like,
+
+317
+00:13:25,320 --> 00:13:28,290
+我不会坐在这儿一直盯着它看。它
+I'm not gonna sit here and just, necessarily, stare at it. It
+
+318
+00:13:28,290 --> 00:13:30,610
+看起来在用某种草稿本。
+looks like it's using some kind of scratch pad.
+
+319
+00:13:30,610 --> 00:13:33,870
+好：“我已经看完全部 100 条 trace。现在我会
+Okay: "I reviewed all 100 traces. Now I'll verify
+
+320
+00:13:33,870 --> 00:13:36,750
+用一些脚本统计来核对我的笔记，
+my notes with some scripted counts
+
+321
+00:13:36,750 --> 00:13:40,090
+并检查文字渠道的系统提示词，它和
+and check the text-channel system prompt, which differs from the
+
+322
+00:13:40,090 --> 00:13:41,680
+语音渠道的不一样。”好，这……这挺有意思的。
+voice one." Okay, that's... that's interesting.
+
+323
+00:13:41,680 --> 00:13:45,530
+它好像知道存在不同的模态。
+It kind of knows that there's a different modality. That's
+
+324
+00:13:45,530 --> 00:13:49,370
+它注意到这点挺酷的。在做一些代码计算。
+cool that it noticed that. Doing some code calculation.
+
+325
+00:13:49,370 --> 00:13:51,010
+它在干什么？检查美元
+What is this doing? Checking dollar
+
+326
+00:13:51,010 --> 00:13:52,220
+和平方英尺？不知道。
+and square foot? No idea.
+
+327
+00:13:52,220 --> 00:13:56,690
+“脚本统计确认了转人工和占位符的问题。”
+"The scripted counts confirmed the transfer and placeholder issues."
+
+328
+00:13:56,690 --> 00:14:01,340
+好，它发现了一些转人工和占位符的问题。
+Okay, it caught some transfer and placeholder issues.
+
+329
+00:14:01,340 --> 00:14:04,430
+好，很好。“但有据可依这一项需要再仔细
+Okay, great. "But grounding needs a closer
+
+330
+00:14:04,430 --> 00:14:07,180
+看看，因为语音 trace 回答政策问题时
+look, since voice traces answer policy questions
+
+331
+00:14:07,180 --> 00:14:10,550
+没有任何记录在案的工具调用，也就是说知识库
+without any logged tool call, meaning the knowledge
+
+332
+00:14:10,550 --> 00:14:15,430
+的文本不在 trace 里。”好，这个我不太确定。
+base text isn't in the trace." Okay, I'm not sure about that.
+
+333
+00:14:15,430 --> 00:14:17,270
+“我现在在抽查两处疑似
+"I'm now spot-checking two suspected
+
+334
+00:14:17,270 --> 00:14:20,590
+数字不符，以及几处星期和日期的说法。”
+number mismatches, along with the weekday-date claims."
+
+335
+00:14:20,590 --> 00:14:22,910
+好，数据里确实有这些
+Okay, so there are definitely these
+
+336
+00:14:22,910 --> 00:14:26,020
+问题。就是它发现的那些。
+issues in the data. Like, there are the things that it found.
+
+337
+00:14:26,020 --> 00:14:28,730
+我忘了它说的具体是什么，但
+I forgot what it said, but
+
+338
+00:14:28,730 --> 00:14:32,460
+确实……对，确实有这类问题。
+there are definitely... yeah, there's definitely problems like that.
+
+339
+00:14:32,460 --> 00:14:34,510
+好，它说：“失败模式，
+Okay, it says: "Failure modes,
+
+340
+00:14:34,510 --> 00:14:37,270
+按明确程度从高到低：
+from most to least clear-cut:
+
+341
+00:14:37,570 --> 00:14:38,730
+转人工问题。
+Call transfer issues.
+
+342
+00:14:39,990 --> 00:14:40,790
+很好。
+Great.
+
+343
+00:14:40,870 --> 00:14:42,890
+14 条 trace 调用了 transfer_call，
+14 traces call transfer_call,
+
+344
+00:14:42,890 --> 00:14:45,190
+其中 10 条违反了提示词里的流程。
+and 10 break the prompt's protocol.
+
+345
+00:14:45,490 --> 00:14:47,470
+6 条又问一遍‘需要我帮您转接吗？’
+6 re-ask 'Would you like me to connect you?'
+
+346
+00:14:47,470 --> 00:14:49,010
+而来电者已经说了“是”。
+after the caller already said yes.
+
+347
+00:14:49,210 --> 00:14:50,650
+3 条在转接这件事上绕来绕去。
+3 talk around the transfer.
+
+348
+00:14:50,970 --> 00:14:53,870
+1 条完全没确认就转接了。”
+1 transfers with no confirmation at all."
+
+349
+00:14:53,870 --> 00:14:56,490
+好，我对这个数据集恰好非常熟，
+Okay, I happen to be very familiar with this data set
+
+350
+00:14:56,490 --> 00:14:58,150
+我可以告诉你们，
+and I can tell you that, yeah,
+
+351
+00:14:58,730 --> 00:15:01,150
+这是最主要的问题之一。
+this is one of the top problems.
+
+352
+00:15:01,650 --> 00:15:03,870
+它真的抓得很准。
+And it actually nailed it.
+
+353
+00:15:03,870 --> 00:15:06,730
+它抓准了这个具体的错误。它好像懂得
+It nailed this specific error. It, like, knows, like,
+
+354
+00:15:06,730 --> 00:15:09,550
+其中的微妙之处，以及哪些地方
+the nuance of it, and the kinds of things that
+
+355
+00:15:09,550 --> 00:15:12,660
+让人烦，比如用户得不停地
+are annoying, like the user has to keep
+
+356
+00:15:12,660 --> 00:15:15,450
+要求转人工。所以它
+asking to be transferred. So it picked
+
+357
+00:15:15,450 --> 00:15:18,510
+发现了这点。我喜欢。好：“语音通话规范：
+up on that. I like that. Okay: "Voice call hygiene:
+
+358
+00:15:18,510 --> 00:15:22,270
+trace 93 把“触发结束通话”念了出来，56
+trace 93 says 'triggering end call' aloud, and 56
+
+359
+00:15:22,270 --> 00:15:26,870
+念了“触发转接”。”这些 trace 我想看看，
+says 'triggering transfer.'" Okay, I would want to see these traces to,
+
+360
+00:15:26,870 --> 00:15:28,390
+想弄清楚……我想复核一下。我
+like, know... I want to review that. I'm
+
+361
+00:15:28,390 --> 00:15:30,210
+对这点有点怀疑。
+a little bit suspicious of that.
+
+362
+00:15:30,510 --> 00:15:33,190
+“预约看房：35 条 trace 预约了看房。
+"Tour scheduling: 35 traces book a tour.
+
+363
+00:15:33,350 --> 00:15:35,670
+其中 7 条告诉来电者看房已改期，
+Seven tell the caller that the tour was rescheduled,
+
+364
+00:15:35,970 --> 00:15:38,870
+但没有任何 trace 调用过取消或改期工具。
+but no trace has a cancel or reschedule tool.
+
+365
+00:15:39,250 --> 00:15:41,590
+所以原来的预约还在。日期错误：
+So the old booking stays. Date errors:
+
+366
+00:15:42,710 --> 00:15:46,790
+trace 79 给出了‘1 月 27 日星期六’。”
+trace 79 gives Saturday, January 27th."
+
+367
+00:15:46,850 --> 00:15:48,270
+好，这一条确实没错。
+Okay, this is actually true.
+
+368
+00:15:48,690 --> 00:15:50,090
+这是这个数据集里
+This is like one of the problems
+
+369
+00:15:50,090 --> 00:15:51,950
+藏着的问题之一。
+that are hidden in this data set.
+
+370
+00:15:51,950 --> 00:15:53,750
+根本没有改期工具，
+There is no rescheduling tool,
+
+371
+00:15:54,590 --> 00:15:57,090
+而它在预约看房这一项上真的发现了。
+and this tour scheduling actually gets it.
+
+372
+00:15:57,090 --> 00:15:59,770
+所以它发现了这个，抓得很准。
+So it picked up on this and nailed this.
+
+373
+00:15:59,770 --> 00:16:03,090
+它能找到这个，非常厉害。我喜欢。好：
+Very impressive that it found this. I like that. Okay:
+
+374
+00:16:03,090 --> 00:16:05,060
+“编造的功能和事实：
+"Made-up capabilities and facts:
+
+375
+00:16:05,060 --> 00:16:08,790
+在没有工具支持的情况下提供线上看房。”这确实是个问题，
+virtual tours offered with no tool support." That is a problem,
+
+376
+00:16:08,790 --> 00:16:10,830
+因为有些公寓小区
+because there's some apartment complexes
+
+377
+00:16:10,830 --> 00:16:13,150
+根本没有线上看房，
+that don't have virtual tours,
+
+378
+00:16:13,150 --> 00:16:16,450
+而 agent 直接就承诺了。“声称了卫生间布局，
+and then the agent just promises it. "A bathroom layout claim,
+
+379
+00:16:16,450 --> 00:16:19,630
+但没有数据”，等等。“邮件占位符：
+but no data," blah blah. "Email placeholder:
+
+380
+00:16:19,630 --> 00:16:22,170
+12 条回复”，等等，
+12 replies across," blah blah,
+
+381
+00:16:22,170 --> 00:16:26,150
+“结尾写着‘your name’（你的名字）。”
+"end with a literal 'your name.'" It says: "Findings that didn't hold
+
+382
+00:16:26,150 --> 00:16:27,910
+它还说：“没站住脚的发现：我怀疑
+up: I suspected wrong prices
+
+383
+00:16:27,910 --> 00:16:30,290
+trace 10 和 94 里价格有误”，等等等等。
+in traces 10 and 94," blah, blah, blah.
+
+384
+00:16:30,670 --> 00:16:31,470
+好，所以，
+Okay, so
+
+385
+00:16:31,470 --> 00:16:33,690
+哪个……好，所以，
+which... okay, so,
+
+386
+00:16:33,690 --> 00:16:35,690
+它给了我一些数据方面的注意事项。
+it gives me some data caveats.
+
+387
+00:16:36,330 --> 00:16:37,990
+好。不对，它是在问哪一个
+Fine. No, it's saying which one
+
+388
+00:16:37,990 --> 00:16:39,970
+要做成 eval。所以我不太
+becomes the eval. So I don't really
+
+389
+00:16:39,970 --> 00:16:42,110
+喜欢这样。我觉得到了这一步，
+like this. I feel like from here
+
+390
+00:16:42,110 --> 00:16:43,670
+如果是我在做
+if I was doing
+
+391
+00:16:43,670 --> 00:16:46,030
+这些 eval，这很好，
+these evals, this would
+
+392
+00:16:46,030 --> 00:16:47,990
+但我觉得下一步应该
+be great, but I feel like the next step would
+
+393
+00:16:47,990 --> 00:16:50,170
+是把 trace 给我看，让我自己看。
+be to show me the traces so I can look at them.
+
+394
+00:16:50,970 --> 00:16:51,950
+对，我是说，
+Yeah, I mean like
+
+395
+00:16:51,950 --> 00:16:53,510
+我恰好知道这些
+I happen to know that these are
+
+396
+00:16:53,510 --> 00:16:56,010
+是合理的，但我不会
+reasonable, but I would not trust
+
+397
+00:16:56,010 --> 00:16:58,560
+这样就相信它。我会想要……
+it like this. Like, I would want to... like,
+
+398
+00:16:58,560 --> 00:17:02,930
+我会想要核实它说的
+I would want to verify that what it's talking about
+
+399
+00:17:02,930 --> 00:17:06,240
+是否说得通，对吧？有些可能确实是错的。
+makes sense, you know? And some of these could actually be off.
+
+400
+00:17:06,240 --> 00:17:07,850
+我还是没法 100% 相信它。
+Like, I still don't 100% trust it.
+
+401
+00:17:07,850 --> 00:17:10,730
+我想知道它看到的是不是对的。
+I want to know, like, what it's seeing is right.
+
+402
+00:17:10,730 --> 00:17:13,810
+这里还有一些句子我
+So there's some other sentences in here that I'm not
+
+403
+00:17:13,810 --> 00:17:15,310
+不太确定。比如“日期错误”。
+sure about. Like, there's "date errors."
+
+404
+00:17:15,310 --> 00:17:18,630
+这个我不是百分百确定。但好吧，对。我是希望，
+I'm not 100% sure about that. But okay, yeah. So I guess I wish,
+
+405
+00:17:18,630 --> 00:17:21,930
+与其说“哪一个要做成 eval”，
+instead of it saying "which one becomes the eval,"
+
+406
+00:17:21,930 --> 00:17:25,550
+我更希望它推荐我，比如，做一个
+I wish it was recommending, like, creating a
+
+407
+00:17:25,550 --> 00:17:27,190
+查看器，把所有失败都
+viewer of just all the failures
+
+408
+00:17:27,190 --> 00:17:29,550
+放进去看。我希望它给我的
+to look at. I wish that was the step
+
+409
+00:17:29,550 --> 00:17:30,350
+是这一步。
+it was giving me.
+
+410
+00:17:30,570 --> 00:17:33,430
+我觉得这正是
+I think this is the
+
+411
+00:17:33,430 --> 00:17:35,530
+你需要看
+point where you need to look at the
+
+412
+00:17:35,530 --> 00:17:37,570
+数据的时候。为什么我们到现在还
+data. Why haven't we looked at any data
+
+413
+00:17:37,570 --> 00:17:39,630
+没看任何数据？不过希望我们最后
+yet? But hopefully we will end up
+
+414
+00:17:39,630 --> 00:17:41,170
+总会看到一些数据。
+looking at some data at some point.
+
+415
+00:17:43,690 --> 00:17:45,770
+看吧。现在说“哪一个
+We'll see. Now saying which one
+
+416
+00:17:45,770 --> 00:17:47,490
+要做成 eval”，这个措辞有点
+becomes the eval, it's a little bit
+
+417
+00:17:47,490 --> 00:17:49,450
+让人困惑。什么叫哪一个
+confusing wording. What do you mean one
+
+418
+00:17:49,450 --> 00:17:51,650
+要做成 eval？可以把好几个
+becomes the eval? Can multiple of these
+
+419
+00:17:51,650 --> 00:17:53,550
+都做成 eval，还是先只选一个？
+become the eval or just choose one first?
+
+420
+00:17:53,630 --> 00:17:54,430
+我也不知道。
+I don't know.
+
+421
+00:17:54,430 --> 00:17:58,210
+这里的问题之一是……我猜意思是，
+One of the problems here is, is, like... I guess this is,
+
+422
+00:17:58,210 --> 00:18:00,550
+你应该先上门课，学点
+like, you should have a course, so you learn
+
+423
+00:18:00,550 --> 00:18:03,020
+eval 的知识。因为它问“哪一个要做成 eval？”，
+about evals. Because it's like, "Which one becomes the eval?"
+
+424
+00:18:03,020 --> 00:18:04,530
+却没告诉你该怎么选。
+It doesn't really tell you how to pick.
+
+425
+00:18:04,530 --> 00:18:08,130
+你是该选最常见的那个？
+Like, should you pick the most prevalent one?
+
+426
+00:18:08,130 --> 00:18:11,930
+还是选对用户伤害最大的那个？我不
+Should you pick one that is harmful to the user? I don't
+
+427
+00:18:11,930 --> 00:18:14,680
+明白，你不看 trace，怎么知道
+see how you know which one's harmful to the user
+
+428
+00:18:14,680 --> 00:18:15,730
+哪个有害。所以……
+if you don't see the trace. So it's like, I... it's
+
+429
+00:18:15,730 --> 00:18:19,580
+如果你对 eval 了解不多，只是想
+like, if you don't know much about evals and you're just,
+
+430
+00:18:19,580 --> 00:18:21,160
+“我就用这个工具”，那你要怎么……
+"I'm gonna use this tool," then it's like, how...
+
+431
+00:18:21,160 --> 00:18:21,960
+你到底要怎么选？
+But how do you pick?
+
+432
+00:18:22,420 --> 00:18:25,440
+为什么推荐转人工规则？
+Why is call transfer rules recommended?
+
+433
+00:18:25,620 --> 00:18:27,660
+只是因为它最明确吗？
+Is it just because it's the most clear?
+
+434
+00:18:27,660 --> 00:18:30,200
+我没看到任何理由，比如
+I don't see any reasoning about
+
+435
+00:18:30,200 --> 00:18:33,780
+这个对用户危害特别大，
+this one is super detrimental to the user
+
+436
+00:18:33,780 --> 00:18:35,540
+或者这个特别常见，
+or this one is just super common
+
+437
+00:18:35,540 --> 00:18:38,080
+是个好起点，因为容易修。
+and it's a nice starting point because it's an easy fix.
+
+438
+00:18:38,220 --> 00:18:42,960
+我看不到任何理由，我为什么要选其中一个？
+I don't see any, why would I pick one of these?
+
+439
+00:18:44,480 --> 00:18:46,120
+这里还有一些别的，
+There's some stuff going on here
+
+440
+00:18:46,120 --> 00:18:47,200
+比如预约看房。
+like tour scheduling.
+
+441
+00:18:47,200 --> 00:18:49,420
+他们说你需要一个评审器
+They're saying that you need a judge
+
+442
+00:18:49,420 --> 00:18:51,420
+再加一个基于代码的检查。
+and a code-based thing.
+
+443
+00:18:52,240 --> 00:18:54,600
+我不太清楚那是……
+I'm not entirely clear that that is,
+
+444
+00:18:55,160 --> 00:18:58,240
+这里写着“评审器负责改期和日期的说法”。
+this is like, "A judge covers the reschedule and date claims."
+
+445
+00:18:58,860 --> 00:19:01,480
+我觉得改期和日期的说法根本不需要评审器。
+I don't think you need a judge to cover the reschedule and date claims.
+
+446
+00:19:01,900 --> 00:19:03,240
+不过那是因为我了解数据。
+But that's just because I know the data.
+
+447
+00:19:03,900 --> 00:19:06,800
+好吧，我们就，那就顺着它来。
+But okay, let's just, so let's humor it.
+
+448
+00:19:06,900 --> 00:19:10,020
+就选它推荐的，转人工规则。
+Let's go for what it recommends, the call transfer rules.
+
+449
+00:19:10,440 --> 00:19:12,880
+我觉得现在一头扎进 eval 肯定不是时候，
+I think this is the wrong time to be jumping into evals,
+
+450
+00:19:12,880 --> 00:19:14,920
+就像你说的，不过无所谓。
+for sure, like you said, but whatever.
+
+451
+00:19:15,100 --> 00:19:17,080
+看看吧，希望它会让我们看点东西。
+Let's see, hopefully it's making us look at something.
+
+452
+00:19:17,200 --> 00:19:21,220
+好，我点了转人工规则。
+Okay, so I clicked on the call transfer rules.
+
+453
+00:19:21,620 --> 00:19:24,640
+如果它现在让我们看数据，我觉得还可以。
+I guess if it makes us look at data now, then I would be okay.
+
+454
+00:19:24,760 --> 00:19:28,040
+我会觉得，哦，好，它要让我们聚焦一个问题。
+I'd be like, oh, okay, it's going to focus us on one problem.
+
+455
+00:19:28,040 --> 00:19:28,610
+最后的机会。
+This is the last chance.
+
+456
+00:19:28,660 --> 00:19:31,140
+但如果它直接开始做 eval……
+But if it's going straight into building the evals.
+
+457
+00:19:31,640 --> 00:19:35,320
+我记得博客里说，他们先做 eval，
+I remember in the blog post, they mentioned they build the evals
+
+458
+00:19:35,320 --> 00:19:38,780
+做完 eval 之后才让你去看数据，
+and then they tell you to look at the data after building the evals
+
+459
+00:19:38,780 --> 00:19:41,360
+然后问你是否同意。
+and then they ask you whether you agree with it.
+
+460
+00:19:41,820 --> 00:19:43,000
+我觉得这有点本末倒置。
+I think that's a little bit backwards.
+
+461
+00:19:43,240 --> 00:19:46,560
+我觉得你应该先看数据，想一想，
+I think you need to look at the data and think about,
+
+462
+00:19:46,560 --> 00:19:48,360
+我该不该为这个做一个 eval？
+like, should I build an eval for this?
+
+463
+00:19:48,740 --> 00:19:49,840
+这样做到底有没有道理？
+Does it even make sense?
+
+464
+00:19:49,890 --> 00:19:51,210
+不过我也不知道。看看吧。看看吧。
+But I don't know. Let's see. Let's see.
+
+465
+00:19:51,260 --> 00:19:52,700
+也许我该开放一点。
+Maybe I'm open-minded.
+
+466
+00:19:52,860 --> 00:19:56,120
+也许你看了之后，觉得也还行。
+Maybe if you look at it, maybe it's fine.
+
+467
+00:19:56,820 --> 00:20:00,000
+就是说，让它打标签、
+Like, it might be okay to label them and
+
+468
+00:20:00,000 --> 00:20:02,540
+在某些情况下你来确认，也许可以，但我觉得
+confirm in some cases, but I don't think
+
+469
+00:20:02,540 --> 00:20:06,800
+这并不妨碍你从头开始看 trace，
+that prevents you from looking at traces from scratch,
+
+470
+00:20:06,800 --> 00:20:07,720
+因为你还是得自己看。
+because you still need to look.
+
+471
+00:20:07,720 --> 00:20:11,560
+你不能只确认评审器看到的东西，因为如果有
+You can't just confirm what the judge sees, because if there's
+
+472
+00:20:11,560 --> 00:20:14,550
+一大堆问题是 LLM 没发现的，
+a whole bunch of problems that the LLM didn't catch,
+
+473
+00:20:14,550 --> 00:20:16,620
+或者是某个产品问题，它根本
+or it's, like, a product problem that it doesn't
+
+474
+00:20:16,620 --> 00:20:19,000
+没有相关背景，因为那在你脑子里，
+even have context for, because it's in your head,
+
+475
+00:20:19,000 --> 00:20:22,760
+关于你将来打算发布的东西，
+about what you're hoping to release in the future,
+
+476
+00:20:22,760 --> 00:20:24,210
+那它就没法……它漏掉的任何东西，
+like, it can't... like, anything it misses,
+
+477
+00:20:24,210 --> 00:20:28,380
+人都没机会发现，对吧，如果你只
+the human has no ability to catch, right, if you're only
+
+478
+00:20:28,380 --> 00:20:30,120
+审它找出来的东西。
+reviewing stuff that it found.
+
+479
+00:20:30,880 --> 00:20:32,520
+对，我觉得这有点暗黑，
+Yeah, I think it's a little bit of a dark,
+
+480
+00:20:32,680 --> 00:20:33,860
+可能算是一种暗黑模式。
+potentially a dark pattern.
+
+481
+00:20:34,280 --> 00:20:35,340
+好，看看它在说什么。
+Okay, so let's see what it's saying.
+
+482
+00:20:35,420 --> 00:20:38,800
+它说输入在这个文件夹里：
+It says the inputs are in this folder,
+
+483
+00:20:39,160 --> 00:20:42,520
+“claude/hillclimb/transfer_protocol/inputs.md”。
+"claude/hillclimb/transfer_protocol/inputs.md."
+
+484
+00:20:42,620 --> 00:20:44,460
+不知道为啥放在 hillclimb 文件夹里，
+I don't know why it's in a folder called hillclimb,
+
+485
+00:20:44,460 --> 00:20:46,520
+因为我现在根本没想做迭代优化。
+because I'm not trying to hillclimb anything right now.
+
+486
+00:20:46,980 --> 00:20:49,840
+“标签在 cases.json 里。”现在
+"With labels in cases.json." Now,
+
+487
+00:20:49,980 --> 00:20:51,640
+这里有全部 33 段对话。
+it has all 33 conversations.
+
+488
+00:20:51,640 --> 00:20:53,440
+这 33 段对话
+So these are like 33 conversations
+
+489
+00:20:53,440 --> 00:20:55,260
+都和语音转人工规则有关。
+about the voice transfer rules.
+
+490
+00:20:55,260 --> 00:20:57,580
+它判定，11 段应该转人工，
+And it found, like, 11 should transfer,
+
+491
+00:20:57,920 --> 00:20:59,280
+19 段不应该转人工，
+19 should not transfer,
+
+492
+00:20:59,580 --> 00:21:00,860
+3 段不明确。
+three unclears.
+
+493
+00:21:01,020 --> 00:21:04,220
+然后列了这些不明确的。
+Then it has these unclear things.
+
+494
+00:21:04,520 --> 00:21:06,100
+它说，好。
+It says, okay.
+
+495
+00:21:06,320 --> 00:21:07,360
+它给它们打了标签。
+It labeled them.
+
+496
+00:21:07,660 --> 00:21:08,780
+对，它做了一些标注。
+Yeah, it did some labeling.
+
+497
+00:21:09,080 --> 00:21:11,160
+它说，请浏览一下 inputs.md。
+It says, please skim inputs.md.
+
+498
+00:21:11,160 --> 00:21:13,860
+告诉我这些是不是你关心的通话。
+Tell me whether these look like the calls you care about.
+
+499
+00:21:13,920 --> 00:21:16,040
+好，我看看 inputs.md 长什么样。
+Okay, let me see what inputs.md looks like.
+
+500
+00:21:16,460 --> 00:21:19,020
+我越来越怀疑了。
+I'm getting more skeptical by the second.
+
+501
+00:21:19,200 --> 00:21:21,360
+让我在 Markdown 文件里看数据？
+Telling me to look at the data in a Markdown file?
+
+502
+00:21:21,410 --> 00:21:22,160
+我有点怀疑。
+I'm a little skeptical.
+
+503
+00:21:22,160 --> 00:21:22,630
+我不知道。
+I don't know.
+
+504
+00:21:22,680 --> 00:21:23,940
+我真的不知道这样行不行。
+I really don't know about this.
+
+505
+00:21:23,940 --> 00:21:27,460
+我真的不看好，不过先看看吧。
+I really don't know about this, but let's see this.
+
+506
+00:21:28,320 --> 00:21:32,040
+我从来没想过把 trace 和数据
+I've never decided to look at traces and data
+
+507
+00:21:32,040 --> 00:21:33,900
+全都塞进一个 Markdown 文件里看。
+by putting it all into a Markdown file.
+
+508
+00:21:34,240 --> 00:21:35,920
+好，这就是那个 Markdown 文件。
+Okay, so this is the Markdown file.
+
+509
+00:21:37,380 --> 00:21:39,400
+基本上这里有，
+And basically what you have here is like,
+
+510
+00:21:39,920 --> 00:21:42,140
+trace 编号，我猜，
+you have the trace number, I guess,
+
+511
+00:21:42,340 --> 00:21:45,240
+分区、标签、轮次，好吧？
+the section, the tags, the turns, okay?
+
+512
+00:21:45,540 --> 00:21:49,240
+这里有个 trace ID，然后，好，这里有一条 trace。
+So you have some trace ID and what, okay, so you have a trace.
+
+513
+00:21:49,620 --> 00:21:52,040
+上面那些我其实都看不懂是什么意思。
+I don't know what any of that above means, really.
+
+514
+00:21:52,040 --> 00:21:55,170
+我就想，我不知道那些是不是来自数据。
+I'm like, I don't know if that comes from the data.
+
+515
+00:21:55,170 --> 00:21:57,280
+你可能知道，但对一个
+Like, you probably do, but as someone who has not
+
+516
+00:21:57,280 --> 00:21:59,840
+没看过这些、刚开始做 eval 的人来说，我就想……
+looked at this before, just starting evals, I'm like...
+
+517
+00:21:59,840 --> 00:22:01,900
+它是打了标签……它是写了“不应转人工”
+did it label... did it say "should not transfer"
+
+518
+00:22:01,900 --> 00:22:04,840
+和“应转人工”吗？我觉得那些是 LLM 打的标签。
+and "should transfer"? I think those are LLM labels.
+
+519
+00:22:04,840 --> 00:22:07,700
+我不……我猜“轮次”就是对话轮数。
+I don't... like, I guess "turns" is the number of turns.
+
+520
+00:22:07,700 --> 00:22:10,850
+我会说这得做成一个 HTML……拜托，
+I would say this needs to be an HTML... like, come on,
+
+521
+00:22:10,850 --> 00:22:13,880
+我们有 agent 啊，对吧？我们完全做得
+man. Like, we have agents, you know? Like, we can do
+
+522
+00:22:13,880 --> 00:22:16,475
+到。我们想要的话完全可以做个像样的东西。
+it. Yeah, we can have something nice here if we wanted to.
+
+523
+00:22:16,475 --> 00:22:18,860
+那张表大部分内容
+Like, most of that table doesn't
+
+524
+00:22:18,860 --> 00:22:21,920
+对我一点用都没有。对，最上面那张表，
+help me do anything. So yeah, on the top table,
+
+525
+00:22:21,920 --> 00:22:26,300
+我同意。我就想，不知道这是为什么……哦，它
+I agree. I'm like, I don't know why this is... Oh, it
+
+526
+00:22:26,300 --> 00:22:29,970
+说：“打开 viewer.html，里面包括系统提示词。”
+says, "Open viewer.html, including the system prompt."
+
+527
+00:22:29,970 --> 00:22:32,620
+要不要试试？好，试试吧，因为这
+Should I try that? Yeah, let's do that, because this
+
+528
+00:22:32,620 --> 00:22:36,640
+太糟了。我不想在 Markdown 里读 trace。
+is horrible. I don't want to read a trace in Markdown.
+
+529
+00:22:36,640 --> 00:22:39,180
+我为什么要这样？好：“打开 viewer.html。”
+Like, why would I? Okay: "Open viewer.html."
+
+530
+00:22:39,180 --> 00:22:40,940
+viewer.html 在哪？我其实不……我真的
+Where is viewer.html? I actually don't... I'm, like,
+
+531
+00:22:40,940 --> 00:22:44,100
+很怀疑有这个文件。我来，我来进
+really skeptical that there is. Let me, let me go
+
+532
+00:22:44,100 --> 00:22:44,940
+这个文件夹看看。
+into this folder.
+
+533
+00:22:45,210 --> 00:22:46,010
+里面有什么？
+What is in that?
+
+534
+00:22:46,060 --> 00:22:46,860
+哎呀。
+Oops.
+
+535
+00:22:47,420 --> 00:22:48,420
+那个文件夹里有什么？
+What's in that folder?
+
+536
+00:22:48,720 --> 00:22:50,400
+那个文件夹里没有 viewer.html。
+There's no viewer.html in that folder.
+
+537
+00:22:50,770 --> 00:22:51,570
+我觉得，你知道，
+I think it's, you know,
+
+538
+00:22:51,620 --> 00:22:52,820
+我觉得它是被
+I think it's getting confused
+
+539
+00:22:52,820 --> 00:22:56,000
+我自己的 viewer.html 搞混了，看到了吧？
+by my viewer.html, see?
+
+540
+00:22:56,080 --> 00:22:57,380
+因为我有一个自己做的
+Because I have a viewer.html
+
+541
+00:22:57,380 --> 00:22:58,180
+viewer.html。
+that I created.
+
+542
+00:22:58,440 --> 00:22:59,940
+所以我觉得它说的不是，
+So I don't think it's referring,
+
+543
+00:23:00,140 --> 00:23:01,400
+那不是它做的。
+it's not something that it did.
+
+544
+00:23:01,520 --> 00:23:03,220
+它把两者混为一谈了。
+It's conflating the two.
+
+545
+00:23:03,270 --> 00:23:03,930
+好吧，行。
+So, okay, fine.
+
+546
+00:23:03,980 --> 00:23:05,040
+就这个 Markdown 文件。
+I have this Markdown file.
+
+547
+00:23:05,480 --> 00:23:06,740
+在这种情况下，你可能会说，
+Now, in this case, you could say,
+
+548
+00:23:06,740 --> 00:23:08,440
+我是说，这读起来真的很难受。
+I mean, this kind of sucks to read.
+
+549
+00:23:08,800 --> 00:23:11,000
+我平时不会建议
+I wouldn't encourage
+
+550
+00:23:11,000 --> 00:23:12,400
+这样读数据。
+reading data like this normally.
+
+551
+00:23:12,820 --> 00:23:13,900
+不过好，这里是：“本通话
+But okay, this is like: "This call
+
+552
+00:23:13,900 --> 00:23:16,520
+可能会被录音，用于培训和质量控制。
+may be recorded for training and quality purposes.
+
+553
+00:23:16,520 --> 00:23:19,860
+今天有什么可以帮您？”用户说：“预览项目。”“看起来
+How can I help you today?" The user says, "Preview program." "It
+
+554
+00:23:19,860 --> 00:23:23,040
+您可能想进一步了解
+looks like you might be interested in learning more
+
+555
+00:23:23,040 --> 00:23:24,840
+我们的小区，可能还想预约
+about our community and possibly scheduling
+
+556
+00:23:24,840 --> 00:23:28,750
+看房。您想预约参观
+a tour. Would you like to schedule a tour to see
+
+557
+00:23:28,750 --> 00:23:30,860
+Meadowbrook Gardens 吗？”不。我继续往下
+Meadowbrook Gardens?" No. Let me just keep scrolling
+
+558
+00:23:30,860 --> 00:23:33,790
+翻。它说：“需要我帮您……”它说：
+down. It says, like, "Would you like me to..." It says,
+
+559
+00:23:33,790 --> 00:23:36,020
+“您似乎有具体的问题，或者需要
+"Seems like you might have a specific question or need
+
+560
+00:23:36,020 --> 00:23:37,060
+什么帮助。”我……好，
+assistance with something." I'm... okay,
+
+561
+00:23:37,060 --> 00:23:40,600
+这里有个失败。这里还有另一种失败，
+so there's a failure here. There's a different kind of failure
+
+562
+00:23:40,600 --> 00:23:43,300
+就是这个机器人烦得要死。
+here, which is the bot is being annoying as hell.
+
+563
+00:23:43,300 --> 00:23:45,700
+它一直说“您似乎是在问
+Like, it's saying, "It seems like you're asking about
+
+564
+00:23:45,700 --> 00:23:49,760
+这个”“看起来……”对对，就像在做心理咨询。
+this," "It looks like..." Yeah, yeah, it's like you're getting therapy.
+
+565
+00:23:49,760 --> 00:23:52,100
+我不想要……对，它就……对，你
+I don't want... Yeah, it just... yeah, you
+
+566
+00:23:52,100 --> 00:23:55,540
+不应该这样跟人说话，真的很烦人。
+want to not talk like that to people. It gets really annoying.
+
+567
+00:23:55,540 --> 00:23:57,680
+哦，下一条真的很糟。“好的，我帮您
+Oh, that next one is really bad. "Great, I'll
+
+568
+00:23:57,680 --> 00:23:59,860
+转接……”它说：“您需要……
+connect you..." It says, "Do you want...
+
+569
+00:23:59,860 --> 00:24:02,340
+我帮您转接一位能为您服务的客服代表。您
+I'll connect you with a representative who can assist you. Do
+
+570
+00:24:02,340 --> 00:24:04,060
+现在需要我这么做吗？”“是的。”“好的，
+you want me to do that now?" "Yes." "Great,
+
+571
+00:24:04,060 --> 00:24:06,960
+我帮您转接一位能为您服务的客服代表。请
+I'll connect you to a representative who can assist you. One
+
+572
+00:24:06,960 --> 00:24:09,040
+稍候。”“需要我帮您转接
+moment, please." "Would you like me to connect you
+
+573
+00:24:09,040 --> 00:24:11,320
+一位能帮您的人吗？”所以它又问了一遍。
+with someone who could help you?" So it asked again.
+
+574
+00:24:11,320 --> 00:24:15,190
+这是个很糟的失败。对。用户说：“我只想跟人说话。”
+So that was a bad failure. Yeah. It says, "I just want to talk."
+
+575
+00:24:15,190 --> 00:24:18,100
+然后……助手最后终于
+It says... the assistant finally, at some point,
+
+576
+00:24:18,100 --> 00:24:19,750
+转接了电话。我觉得，
+did transfer the call. Now, I think, like,
+
+577
+00:24:19,750 --> 00:24:23,840
+这条 trace，就是 trace 一，被标成了
+this specific trace, this is trace one, this is marked
+
+578
+00:24:23,840 --> 00:24:26,470
+“应转人工”。所以我在想，它……对，
+as "should transfer." So I'm thinking, like, it... yeah,
+
+579
+00:24:26,470 --> 00:24:28,920
+它把这条标成了“应转人工”，我猜
+it marked this as a "should transfer," and I guess
+
+580
+00:24:28,920 --> 00:24:32,370
+我们应该看这些，然后决定
+we're supposed to look at these and decide whether
+
+581
+00:24:32,370 --> 00:24:35,140
+同不同意。天哪，trace 18。那个工具结果
+or not we agree. Oh God, trace 18. That tool result
+
+582
+00:24:35,140 --> 00:24:38,860
+直接塞在里面，我怎么知道它对不对？
+in line is just like, how am I supposed to know that's good?
+
+583
+00:24:39,080 --> 00:24:43,120
+你不应该这样读数据。再说一遍，现在不是
+You shouldn't have to read data like this. Again, this is not
+
+584
+00:24:43,120 --> 00:24:47,080
+2004 年了。我们应该能做 HTML
+2004. We should be able to make HTML
+
+585
+00:24:47,080 --> 00:24:50,200
+应用。还有，它为什么把工具调用、工具结果截断了？
+apps. And why did it truncate the tool call, the tool result?
+
+586
+00:24:50,680 --> 00:24:55,120
+完全没必要，不过算了。“请稍等。我们这里有好几套
+It's wholly unnecessary, but fine. Give me a moment. We have several
+
+587
+00:24:55,120 --> 00:24:57,200
+一居室阁楼可选，有几个选择。”
+one-bedroom lofts available here, a few options."
+
+588
+00:24:57,420 --> 00:25:00,300
+我有点搞不清我们该拿这个做什么。
+I'm a little lost as to what we're supposed to be doing with this.
+
+589
+00:25:01,060 --> 00:25:03,530
+对，我也有点迷糊。我们看看，
+Yeah, I'm a little bit lost. So let's see,
+
+590
+00:25:03,530 --> 00:25:04,960
+它让我们做什么？它说：“请浏览一下
+what did it ask us to do? It says, "Please skim the
+
+591
+00:25:04,960 --> 00:25:07,700
+这些输入。告诉我它们是不是你关心的通话，
+inputs. Tell me whether these look like the calls you care about,
+
+592
+00:25:07,700 --> 00:25:09,920
+有没有哪个标签是错的。”我的
+whether any label is wrong." Oh my
+
+593
+00:25:09,920 --> 00:25:13,520
+天。所以我们得告诉它，标签……不行。
+God. So we have to, like, tell it, like, label... like, no.
+
+594
+00:25:13,520 --> 00:25:17,120
+你应该……再说一遍，你需要……我们需要一个 HTML 应用，
+You should... again, you need... we need an HTML app that
+
+595
+00:25:17,120 --> 00:25:18,722
+让我们能直接改标签。
+allows us to just, like, change the label. Like,
+
+596
+00:25:18,722 --> 00:25:22,360
+为什么我们要像原始人一样编辑？这到底是
+why are we editing like Neanderthals? Like, what's going
+
+597
+00:25:22,360 --> 00:25:25,710
+怎么回事？对，我不明白你为什么……对，这……
+on? Yeah, I don't understand why you... yeah, this is...
+
+598
+00:25:25,710 --> 00:25:28,280
+我猜，你应该说什么？比如“trace 一，
+I guess, what are you supposed to say? Like, "Trace one,
+
+599
+00:25:28,280 --> 00:25:34,540
+对。trace 18，我不同意。trace 14……”“trace 一错了，
+yes. Trace 18, I disagree. Trace 14..." "Trace one is wrong,
+
+600
+00:25:34,540 --> 00:25:37,850
+应该是……”我是说，不行，我才不这么
+it should be..." I mean, like, no, I'm not doing
+
+601
+00:25:37,850 --> 00:25:41,370
+干。拜托饶了我吧。它们都在这个 Markdown 代码块里，
+that. Yeah, give me a break. They're in this Markdown block,
+
+602
+00:25:41,370 --> 00:25:43,070
+就是，好，这些是对话轮次。你
+and it's like, okay, these are the turns. You
+
+603
+00:25:43,070 --> 00:25:45,800
+能看到工具调用结果被截断了。
+can see the tool call result is truncated.
+
+604
+00:25:45,800 --> 00:25:48,470
+这读起来一团乱。他们
+It's kind of a mess to try to read this. And what they
+
+605
+00:25:48,470 --> 00:25:50,920
+想让你做的，是手动判断
+want you to do is to manually decide
+
+606
+00:25:50,920 --> 00:25:54,730
+哪些 trace 可能被标错了。
+which traces you think could be labeled incorrectly.
+
+607
+00:25:54,730 --> 00:25:56,110
+这是上面的标签。
+And this is the label up here.
+
+608
+00:25:56,430 --> 00:25:59,170
+他们就是想让你告诉 agent 该怎么做。
+And they just want you to tell the agent what to do.
+
+609
+00:25:59,530 --> 00:26:03,770
+比如：嘿，trace 18 不需要转人工。
+Like, hey, trace 18 doesn't need to be transferred.
+
+610
+00:26:04,210 --> 00:26:07,810
+trace 19 也错了。
+And trace 19 is wrong too.
+
+611
+00:26:08,070 --> 00:26:10,170
+他们想让你假装
+And they want you to just act like
+
+612
+00:26:10,170 --> 00:26:13,050
+手头没有任何技术可用。
+you don't have any technology available to you.
+
+613
+00:26:13,050 --> 00:26:16,290
+就像 HTML 还没被发明一样。
+Like HTML hasn't been invented yet or something.
+
+614
+00:26:16,590 --> 00:26:18,310
+我可能有点太苛刻了。
+So I'm being overly harsh.
+
+615
+00:26:18,470 --> 00:26:19,390
+我是说，无所谓。
+I mean, whatever.
+
+616
+00:26:19,790 --> 00:26:20,650
+不，我觉得很公平。
+No, I think it's fair.
+
+617
+00:26:20,870 --> 00:26:21,750
+我觉得挺公平的。
+I think it's pretty fair.
+
+618
+00:26:22,090 --> 00:26:24,170
+你说说，我们才看了几条，
+You tell me, we've only looked at a couple
+
+619
+00:26:24,170 --> 00:26:27,840
+就已经很痛苦了。我绝不可能这样看 100 条 trace，
+and it's painful. There's no way I would look at 100 traces
+
+620
+00:26:27,840 --> 00:26:29,050
+再做这件事。所以我们可以，
+that way and then do this. So we could,
+
+621
+00:26:29,050 --> 00:26:30,740
+就说，好，你知道，我们可以……
+like, say, okay, you know, we could...
+
+622
+00:26:30,740 --> 00:26:34,650
+它是让我们浏览这个 inputs.md，然后说说
+so it's telling us to skim this inputs.md and say, like, whether
+
+623
+00:26:34,650 --> 00:26:36,280
+标签对不对，这些是不是
+the labels are right, whether these look
+
+624
+00:26:36,280 --> 00:26:40,350
+我关心的通话，有没有漏掉什么。
+like the calls I care about, whether anything is missing.
+
+625
+00:26:40,350 --> 00:26:42,990
+我是说，我他妈怎么知道
+I mean, how the hell am I supposed to know
+
+626
+00:26:42,990 --> 00:26:44,070
+有没有漏？好吧，我猜它
+if anything is missing? All right, I guess it
+
+627
+00:26:44,070 --> 00:26:46,050
+默认我已经看过数据了。好，
+assumed that I looked at the data. Okay,
+
+628
+00:26:46,050 --> 00:26:48,550
+那接下来怎么办？我们就直接说
+so what should we do from here? Should we just say, like,
+
+629
+00:26:48,550 --> 00:26:50,470
+“对，没问题”，
+"Yes, it's fine,"
+
+630
+00:26:50,470 --> 00:26:52,270
+看看它接下来做什么？
+and see what it does now.
+
+631
+00:26:52,570 --> 00:26:54,030
+大多数人都会这么做。
+That's what most people would do.
+
+632
+00:26:54,280 --> 00:26:55,080
+那就看看吧。
+So let's see.
+
+633
+00:26:55,130 --> 00:26:55,970
+我猜你看过了，
+I mean, I guess you looked
+
+634
+00:26:55,970 --> 00:26:56,950
+没发现什么问题。
+and you didn't see any issues.
+
+635
+00:26:57,610 --> 00:26:58,410
+所以，对。
+So, yeah.
+
+636
+00:26:58,590 --> 00:26:59,570
+我抽查了一下。
+I spot checked it.
+
+637
+00:26:59,730 --> 00:27:01,950
+看起来大概没问题。
+It seemed like it's probably fine.
+
+638
+00:27:02,370 --> 00:27:03,490
+那我就说“对，没问题”。
+So I'll just say yes, it's fine.
+
+639
+00:27:03,810 --> 00:27:05,290
+我不知道还能做什么，
+I don't see what else you can do
+
+640
+00:27:05,290 --> 00:27:06,410
+对一个 Markdown 文件，
+with a Markdown file
+
+641
+00:27:06,410 --> 00:27:07,590
+除了抽查一下。
+other than just spot check it.
+
+642
+00:27:07,590 --> 00:27:09,550
+对，Markdown 文件，终端。
+Yeah, Markdown file, terminal.
+
+643
+00:27:10,070 --> 00:27:11,370
+感觉我们像是在……
+It's like we're on a...
+
+644
+00:27:11,370 --> 00:27:12,950
+你真正应该做的，
+What you should be doing
+
+645
+00:27:12,950 --> 00:27:14,690
+是把这个工具引回正轨，
+is to redirect this tool
+
+646
+00:27:14,690 --> 00:27:15,400
+跟它说：嘿，
+to be like, hey,
+
+647
+00:27:15,450 --> 00:27:17,470
+我才不看他妈的 Markdown 文件。
+I'm not looking at a fucking Markdown file.
+
+648
+00:27:17,470 --> 00:27:19,510
+“给我做个 HTML 的东西”，
+Like, "Create an HTML thing for me,"
+
+649
+00:27:19,510 --> 00:27:22,350
+然后让它去做，再让它做
+and then you would have it do that, and then have it do whatever
+
+650
+00:27:22,350 --> 00:27:25,790
+它该做的事。我可不想钻这个牛角尖，
+it needs to do. I'm not trying to go down that rabbit hole,
+
+651
+00:27:25,790 --> 00:27:26,970
+因为我不想让这件事变成
+because I don't want this to become,
+
+652
+00:27:26,970 --> 00:27:30,930
+一个四小时的练习。好，它说：“先做打分。
+like, a four-hour exercise. Okay, so: "Grading first.
+
+653
+00:27:30,930 --> 00:27:33,610
+这里没什么要搭建的，因为
+There's nothing to build here, because
+
+654
+00:27:33,610 --> 00:27:37,280
+trace 里没有用量或延迟数据。”好吧。
+traces carry no usage or latency." Okay, I mean.
+
+655
+00:27:37,280 --> 00:27:40,450
+“现在是评判器和运行器：它读取记录下来的
+"Now the grader and the runner: it reads the recorded
+
+656
+00:27:40,450 --> 00:27:42,170
+trace，用代码给每条
+traces, grades each with
+
+657
+00:27:42,170 --> 00:27:43,830
+打分，然后把
+code, and writes
+
+658
+00:27:43,830 --> 00:27:46,290
+结果写进 results.jsonl，并把每个案例的
+results.jsonl and per-case
+
+659
+00:27:46,290 --> 00:27:48,130
+trace 写进 reports/ 目录。”我不太
+traces in reports/. I'm not
+
+660
+00:27:48,130 --> 00:27:49,610
+确定它现在在干什么。
+entirely sure what it's doing now.
+
+661
+00:27:50,370 --> 00:27:51,310
+我很困惑。
+I'm very confused.
+
+662
+00:27:51,930 --> 00:27:54,150
+它想运行一个 rm -rf 命令。
+It wants to run some rm -rf command.
+
+663
+00:27:54,490 --> 00:27:55,290
+好吧，随便。
+Fine. Whatever.
+
+664
+00:27:55,570 --> 00:27:58,610
+好，你胆子真大。我看到 rm -rf 了。
+Okay, you're very brave. I saw the rm -rf.
+
+665
+00:27:58,650 --> 00:28:00,310
+我以为你会把它停掉，结果你直接
+I thought you were going to kill it, but you just
+
+666
+00:28:00,310 --> 00:28:01,610
+同意了。好吧。
+accepted. Okay.
+
+667
+00:28:01,610 --> 00:28:02,690
+没事，没问题。
+That's fine. We're good.
+
+668
+00:28:03,130 --> 00:28:05,610
+我其实把某些
+I actually have certain
+
+669
+00:28:05,610 --> 00:28:06,630
+目录屏蔽了。
+directories blocked.
+
+670
+00:28:07,130 --> 00:28:08,450
+看着有点吓人，但没问题。
+It looks funny, but it's fine.
+
+671
+00:28:08,450 --> 00:28:09,470
+它这是在说什么？
+So what is this saying?
+
+672
+00:28:09,590 --> 00:28:10,590
+我们往上翻看看。
+Let's scroll up and see.
+
+673
+00:28:10,950 --> 00:28:12,350
+天哪，这些我都得读？
+Oh my God, I have to read all this?
+
+674
+00:28:12,400 --> 00:28:13,190
+好，看看。
+Okay, let's see.
+
+675
+00:28:13,190 --> 00:28:16,290
+“我根据提示词里的转人工规则
+"I built a code grader from the prompt's
+
+676
+00:28:16,290 --> 00:28:18,270
+做了一个代码评判器，没有用评审模型。
+transfer rules with no judge model.
+
+677
+00:28:18,490 --> 00:28:20,570
+在 14 段转接了的通话里，
+On the 14 calls that transfer,
+
+678
+00:28:20,710 --> 00:28:22,090
+它会检查：one_confirm，
+it checks: one_confirm,
+
+679
+00:28:22,430 --> 00:28:25,370
+恰好问一次“需要我帮您转接吗？”，
+exactly one 'Would you like me to connect you?'
+
+680
+00:28:25,370 --> 00:28:26,410
+而且是在转接之前。”
+before the transfer."
+
+681
+00:28:26,730 --> 00:28:28,130
+这个我不太认同。
+I don't know about that, man.
+
+682
+00:28:28,530 --> 00:28:30,430
+它这是在检查那个字符串。
+It's like checking that string.
+
+683
+00:28:30,590 --> 00:28:32,010
+“需要我帮您转接吗？”真的假的？
+Would you like me to connect you, really?
+
+684
+00:28:32,230 --> 00:28:33,950
+好，这有点怪。
+Okay, that's weird.
+
+685
+00:28:34,450 --> 00:28:36,570
+这个测试看起来非常脆弱。
+That seems like a really brittle test.
+
+686
+00:28:36,570 --> 00:28:40,530
+对，基于代码的方法用得太过了，
+Yeah, that's going too far in the code-based approach,
+
+687
+00:28:40,530 --> 00:28:42,590
+我觉得。然后它说：“immediate：在来电者
+I think. Then it says: "immediate: nothing
+
+688
+00:28:42,590 --> 00:28:45,330
+说‘是’和转接之间什么都不说。”
+is said between the caller's yes and the transfer."
+
+689
+00:28:45,330 --> 00:28:48,170
+好，但说“是”的方式有很多种。对，
+Okay, but there's a lot of ways to say yes. Yeah,
+
+690
+00:28:48,170 --> 00:28:50,970
+“是”也得明确说出来，我猜。“silent：
+"explicitly" for yes as well, I guess. "silent:
+
+691
+00:28:50,970 --> 00:28:54,970
+转接时和转接后什么都不说。”我觉得
+nothing is said on or after the transfer." I don't think
+
+692
+00:28:54,970 --> 00:28:57,700
+这么要求不对。你给人转接的时候，
+that's the right thing to say. If you transfer someone,
+
+693
+00:28:57,700 --> 00:28:59,710
+可以说：“嘿，已经帮您转接了，
+you can say, like, "Hey, I transferred you,
+
+694
+00:28:59,710 --> 00:29:00,980
+谢谢。”这没有任何问题。
+thank you." There's nothing wrong with that.
+
+695
+00:29:00,980 --> 00:29:05,010
+不是我太较真……我不知道，它是从哪儿
+Not to be overly... like, I don't know, where did it come up with
+
+696
+00:29:05,010 --> 00:29:05,810
+想出这条规则的？
+that rule from?
+
+697
+00:29:06,290 --> 00:29:07,910
+“助手从不把‘triggering’
+"The assistant never says 'triggering'
+
+698
+00:29:07,910 --> 00:29:09,810
+或其他工具机制念出来。”
+or other tool mechanics aloud."
+
+699
+00:29:10,090 --> 00:29:13,440
+我猜这就是 no_leak（不泄露）。
+So I guess that feels like no_leak, though.
+
+700
+00:29:13,540 --> 00:29:16,680
+我觉得这应该单独做成一个 eval，
+It feels like it should be a separate eval to me
+
+701
+00:29:16,680 --> 00:29:19,400
+而不是……我会把它拆出来。
+rather than like I would split out.
+
+702
+00:29:19,520 --> 00:29:21,220
+我会说，好，我来确认一下，
+I would say like, oh, well, let me make sure
+
+703
+00:29:21,220 --> 00:29:22,860
+我们做一个 eval，看
+that let's do an eval on,
+
+704
+00:29:23,220 --> 00:29:24,580
+我们转接通话转得对不对？
+are we transferring calls properly?
+
+705
+00:29:25,040 --> 00:29:26,540
+然后那一条更像是
+And then that one feels more like
+
+706
+00:29:26,540 --> 00:29:29,220
+某种语气问题，我会单独拆出来。
+some sort of tone thing that I would split out.
+
+707
+00:29:29,550 --> 00:29:30,350
+对，完全同意。
+Yeah, absolutely.
+
+708
+00:29:30,400 --> 00:29:32,080
+对，这应该是两个独立的 eval。
+Yeah, this should be two separate evals.
+
+709
+00:29:32,460 --> 00:29:33,320
+我百分之百同意。
+I 100% agree.
+
+710
+00:29:33,320 --> 00:29:36,030
+好：“protocol_ok 是核心指标。”这……这些
+Okay: "protocol_ok is the headline." This is... it's,
+
+711
+00:29:36,030 --> 00:29:40,000
+有时候真的很难读。“一个案例
+like, so hard to read these sometimes. "A case passes
+
+712
+00:29:40,000 --> 00:29:43,610
+只有四项检查全部通过才算通过。在不应转接的通话里，
+only if all four checks pass. On should-not-transfer calls,
+
+713
+00:29:43,610 --> 00:29:46,700
+如果没有发生转接，protocol_ok
+protocol_ok is one if no transfer
+
+714
+00:29:46,700 --> 00:29:50,760
+就是 1。”基线结果：“应转接：
+happened." Baseline results: "Should transfer:
+
+715
+00:29:50,760 --> 00:29:54,560
+protocol_ok，2。”好，等等。让我……这又是
+protocol_ok, two." Okay, wait. Give me... what does this
+
+716
+00:29:54,560 --> 00:29:55,400
+什么意思？“应转接”，
+mean again? "Should transfer,"
+
+717
+00:29:55,400 --> 00:29:59,950
+有 11 个案例。那 protocol_ok 是什么？好。
+you have 11 cases. And what is protocol_ok? Okay.
+
+718
+00:30:00,000 --> 00:30:04,260
+“如果没有发生转接，protocol_ok 就是 1。”
+"protocol_ok is one if no transfer happened."
+
+719
+00:30:04,310 --> 00:30:04,770
+真的？
+Really?
+
+720
+00:30:04,820 --> 00:30:05,820
+好吧，那不太对。
+Okay, that's not really.
+
+721
+00:30:06,120 --> 00:30:08,180
+“在不应转接的通话里，
+"On should-not-transfer calls,
+
+722
+00:30:08,180 --> 00:30:10,300
+如果没有发生转接，protocol_ok 就是 1。”
+protocol_ok is one if no transfer happened."
+
+723
+00:30:10,300 --> 00:30:12,160
+好，所以意思是，好吧，我猜，
+Okay, so it's like, okay, I guess, like,
+
+724
+00:30:12,160 --> 00:30:15,300
+有两次在不该转接的时候转接了。
+two transfers happened when they shouldn't have happened.
+
+725
+00:30:15,760 --> 00:30:17,340
+等等，是有两次没转接？
+Wait, two no-transfers happened?
+
+726
+00:30:17,580 --> 00:30:19,180
+我完全搞不懂这是怎么回事。
+I don't know what the hell is going on.
+
+727
+00:30:19,400 --> 00:30:22,160
+我不知道它为什么要把我们搞糊涂。
+I don't know why it's making us confused.
+
+728
+00:30:22,360 --> 00:30:26,360
+好，protocol_ok 是 1 意味着没有转接。
+Okay, so protocol_ok is one means that there was no transfer.
+
+729
+00:30:26,360 --> 00:30:29,380
+看，这就是为什么你不该把这么多破事
+See, this is why you shouldn't bundle so much shit
+
+730
+00:30:29,380 --> 00:30:30,320
+塞进一个 eval。
+into one eval.
+
+731
+00:30:30,320 --> 00:30:33,300
+看它多快就变得没法解读了？
+See how uninterpretable it gets so fast?
+
+732
+00:30:33,300 --> 00:30:34,900
+我们有这么多规则：
+We have all these rules:
+
+733
+00:30:34,900 --> 00:30:37,340
+one_confirm、immediate、silent，等等。
+one_confirm, immediate, silent, whatever.
+
+734
+00:30:37,340 --> 00:30:40,480
+我觉得如果 protocol_ok 是 1
+I feel like if protocol_ok is one
+
+735
+00:30:40,480 --> 00:30:41,780
+表示没有发生转接，
+if no transfer happened,
+
+736
+00:30:41,780 --> 00:30:45,160
+他们完全可以把变量叫 no_transfer，
+they could just call the variable no_transfer,
+
+737
+00:30:45,160 --> 00:30:47,380
+然后 1 是真，0 是假。
+and then one is true and zero is false.
+
+738
+00:30:47,380 --> 00:30:49,760
+我不明白为什么叫 protocol_ok。
+I don't get why it's protocol_ok.
+
+739
+00:30:49,760 --> 00:30:51,740
+它说“protocol_ok 是核心指标。
+It says "protocol_ok is the headline.
+
+740
+00:30:51,740 --> 00:30:55,260
+一个案例只有四项检查全部通过才算通过。”
+A case passes only if all four checks pass."
+
+741
+00:30:55,260 --> 00:30:58,420
+但是，你看，这……这句话很让人困惑。
+But then, see, this is... this sentence is confusing.
+
+742
+00:30:58,420 --> 00:31:00,960
+它说“在不应转接的通话里，如果没有发生转接，
+It says, "On should-not-transfer calls, protocol_ok
+
+743
+00:31:00,960 --> 00:31:03,180
+protocol_ok 就是 1。”
+is one if no transfer happened."
+
+744
+00:31:03,180 --> 00:31:06,320
+但我以为四项检查都得通过。为什么
+But I thought all four checks have to pass. Why is it one
+
+745
+00:31:06,320 --> 00:31:09,330
+只要没发生转接就是 1？你看，
+only if no transfer happened? It's like, see,
+
+746
+00:31:09,330 --> 00:31:12,620
+这就是 AI 垃圾的问题。你没法……你
+that's the problem with slop. Like, you can't... like, you
+
+747
+00:31:12,620 --> 00:31:13,960
+没法读懂它的推理，因为
+can't read the reasoning, because, like,
+
+748
+00:31:13,960 --> 00:31:17,240
+太含糊、太混乱了。你会觉得很难
+it's so unclear and murky. You're like, it's hard to
+
+749
+00:31:17,240 --> 00:31:19,460
+理解到底发生了什么鬼。
+understand what the F is happening.
+
+750
+00:31:19,460 --> 00:31:22,740
+所以我开始觉得，他们写了一篇好博客，
+So I'm starting to feel like they wrote a good blog post, and
+
+751
+00:31:22,740 --> 00:31:26,810
+收获也就是这个。这比我见过的很多东西都好。
+that's the takeaway. This is better than a lot of things I've seen.
+
+752
+00:31:26,810 --> 00:31:28,840
+这在……这在变
+This is going... this is getting
+
+753
+00:31:28,840 --> 00:31:32,160
+好。比我们上次试的那个好太多了。
+better. This is way better than the last thing that we did.
+
+754
+00:31:32,160 --> 00:31:35,360
+上次那个简直是一团
+The last thing we got was a dumpster
+
+755
+00:31:35,360 --> 00:31:37,820
+糟。对，这个确实，确实
+fire. Yeah, this actually, like, it actually, like,
+
+756
+00:31:37,820 --> 00:31:42,100
+在变好……它有一定潜力。我能
+is getting... it has some promise to it. Like, I could
+
+757
+00:31:42,100 --> 00:31:46,280
+看到一些生机。它确实试着让我们看数据了。
+see some life. It did try to get us to look at the data.
+
+758
+00:31:46,280 --> 00:31:47,760
+它确实做了，这很好。对，只是它……它
+It did, so that's good. Yeah, it wasn't... it wasn't
+
+759
+00:31:47,760 --> 00:31:49,600
+用的格式、方式和
+in a good format or a good way or good
+
+760
+00:31:49,600 --> 00:31:51,740
+界面都不好，但它确实试了。
+interface, but it did try.
+
+761
+00:31:52,160 --> 00:31:53,660
+它说……好，“14 次转接里
+So it has, like, two... okay, "Two
+
+762
+00:31:53,660 --> 00:31:55,700
+有 2 次通过”，一个很简单的“从不
+of the 14 transfers passed," a trivial "never
+
+763
+00:31:55,700 --> 00:31:57,680
+回答、直接转接”，等等。“有两点
+answer, transfer," blah blah. "Two
+
+764
+00:31:57,680 --> 00:31:59,620
+局限要注意。你会……
+limits to keep in mind. Would you...
+
+765
+00:31:59,620 --> 00:32:01,560
+给这些打出不同的分吗？”我不知道
+have scored these any differently?" I don't know
+
+766
+00:32:01,560 --> 00:32:03,580
+我会不会给这些打出不同的分。你到底
+if I would have scored these any differently. Like, what the hell are you
+
+767
+00:32:03,580 --> 00:32:05,760
+在说什么？“有没有你关心
+talking about? "Is there something you care
+
+768
+00:32:05,760 --> 00:32:07,740
+但它没衡量的东西？”我怎么
+about that it isn't measuring?" How am I
+
+769
+00:32:07,740 --> 00:32:09,800
+知道有什么我关心的东西它没衡量？
+supposed to know that something I care about it's not measuring?
+
+770
+00:32:10,160 --> 00:32:11,700
+我怎么知道我会不会给这些
+How am I supposed to know if I would have scored these
+
+771
+00:32:11,700 --> 00:32:13,560
+打出不同的分？我都不知道是哪些。
+differently? I don't know which ones they are.
+
+772
+00:32:13,780 --> 00:32:15,460
+对。对，我都不知道
+Yeah. Yeah, I don't know
+
+773
+00:32:15,460 --> 00:32:17,740
+这里到底
+what the hell is even going on
+
+774
+00:32:17,740 --> 00:32:20,590
+在搞什么。他们设想的
+here? What are some useful applications they
+
+775
+00:32:20,590 --> 00:32:23,220
+实际用途可能是什么？我觉得
+probably had in mind for this? I mean, I think
+
+776
+00:32:23,220 --> 00:32:26,770
+他们只是想做通用的 AI eval。
+they were just trying to do general AI evals.
+
+777
+00:32:26,770 --> 00:32:30,860
+不知道。所以，我会不会……对，我们不知道
+No idea. So, like, would I have... Yeah, so we don't
+
+778
+00:32:30,860 --> 00:32:31,460
+答案。
+know the answer to this question.
+
+779
+00:32:31,460 --> 00:32:33,840
+“有没有你关心的……”好，我就
+"Is there something you care about..." Okay, I'm just gonna
+
+780
+00:32:33,840 --> 00:32:36,110
+跟它说实话。好，我会说：
+be truthful with it. Okay, I'll be like:
+
+781
+00:32:36,110 --> 00:32:39,400
+“我完全不知道你他妈在说什么。我不
+"I have no idea what the fuck you're talking about. I don't
+
+782
+00:32:39,400 --> 00:32:43,330
+知道你具体给哪些案例打了分，
+know what cases you scored specifically,
+
+783
+00:32:43,330 --> 00:32:46,240
+我也没办法看它们。所以我怎么
+and I have no way to look at them. And so how am I
+
+784
+00:32:46,240 --> 00:32:49,620
+知道我会不会给某个案例打出不同的分？
+supposed to know whether I would have scored any case differently?
+
+785
+00:32:49,620 --> 00:32:51,260
+因为我连分数是怎么打的
+Because I don't even know how things
+
+786
+00:32:51,260 --> 00:32:53,900
+都不知道。你给我看的是汇总统计，
+were scored. You're showing me aggregate statistics,
+
+787
+00:32:53,900 --> 00:32:55,440
+而我连这些汇总统计
+and I don't even understand what the aggregate
+
+788
+00:32:55,440 --> 00:32:58,550
+是什么意思都看不懂，因为规则太乱了。
+statistics mean, because the rules are confusing.
+
+789
+00:32:58,550 --> 00:33:01,460
+你能为此做点什么吗？比如，
+Is there anything that you can do about this? Like,
+
+790
+00:33:01,460 --> 00:33:05,260
+你知道，下一步……下一步是什么，
+you know, what... what is... what are the next steps here,
+
+791
+00:33:05,260 --> 00:33:08,720
+你能给我看什么？比如更详细的视图，
+or what can you show me? Like a more detailed view
+
+792
+00:33:08,720 --> 00:33:11,150
+或者一个 HTML 文件，或者某个
+of this, or, like, an HTML file, or some application
+
+793
+00:33:11,150 --> 00:33:13,600
+我能看的应用，或者能帮我
+that I can look at, or something that helps me
+
+794
+00:33:13,600 --> 00:33:14,800
+弄清状况的东西？”然后我……
+figure out what's going on?" And I... you know,
+
+795
+00:33:14,800 --> 00:33:17,700
+我现在只是在顺着它玩。我是……我不是在扮演
+I'm just humoring it now. I'm like... I'm not trying to act
+
+796
+00:33:17,700 --> 00:33:20,110
+一个卡住了的聪明用户，因为，
+like a smart user who, like, is stuck, because, like,
+
+797
+00:33:20,110 --> 00:33:23,580
+我不知道任何人怎么能越过这一步。
+I don't know how anybody would go beyond this point.
+
+798
+00:33:23,580 --> 00:33:25,690
+现在吗？好吧。我觉得你只能这样了。
+Right now? All right. I think this is all you can do.
+
+799
+00:33:25,690 --> 00:33:28,160
+你可以直接放弃它，但是，这……
+You can either kind of abandon it, but, like, this...
+
+800
+00:33:28,160 --> 00:33:32,230
+感觉它已经走得有点太远了，
+it feels like it's already gone a bit too far
+
+801
+00:33:32,230 --> 00:33:35,730
+却没有扎根于这些 trace、
+without being grounded in what's actually
+
+802
+00:33:35,730 --> 00:33:38,350
+这些数据里实际发生的事情。
+happening in these traces, in this data.
+
+803
+00:33:38,350 --> 00:33:41,690
+所以它可能应该……在我们
+And so it probably should have... at the first point where we
+
+804
+00:33:41,690 --> 00:33:44,720
+最早讨论的那个节点，先看看数据会更好。
+talked about it, it would be nice to look at the data.
+
+805
+00:33:44,720 --> 00:33:46,890
+甚至在我们选这一个 eval 之前，就会是
+Even before we chose this, like, one eval would have
+
+806
+00:33:46,890 --> 00:33:49,700
+更好的时机。而且，你对这些数据很熟，
+been a better place. And, like, you're familiar with the data,
+
+807
+00:33:49,700 --> 00:33:51,450
+我们都已经开始迷糊了。所以
+and we're already getting lost. And so
+
+808
+00:33:51,450 --> 00:33:55,650
+如果你不在这儿，也不熟悉这些数据，
+if you weren't here and you weren't familiar with the data,
+
+809
+00:33:55,650 --> 00:33:57,950
+那我……我真不知道你怎么会
+then, like, I... I don't see how you'd even
+
+810
+00:33:57,950 --> 00:34:00,350
+知道他们说的是哪种转人工，
+know, like, what call transfer they're talking about,
+
+811
+00:34:00,350 --> 00:34:01,810
+如果这是一个全新的数据集，
+if this was a brand-new data set and you
+
+812
+00:34:01,810 --> 00:34:03,430
+又没有你在这儿解释这些数据是什么。
+weren't here to explain what some of this data is.
+
+813
+00:34:03,430 --> 00:34:06,190
+好，它在这里给了我这个。看，
+Okay, so this is where it gave me this. See,
+
+814
+00:34:06,190 --> 00:34:08,160
+它给了我这个，它给了我这个。
+it gave me this thing. It gave me this thing.
+
+815
+00:34:08,160 --> 00:34:11,630
+因为我抱怨了，它就给了我这个：
+So, like, I complained, it gave me this, like:
+
+816
+00:34:11,690 --> 00:34:12,850
+转人工规则。
+Call transfer rules.
+
+817
+00:34:12,920 --> 00:34:13,720
+打分的是什么？
+What was scored?
+
+818
+00:34:13,770 --> 00:34:14,900
+好。好一点了。
+Okay. Better.
+
+819
+00:34:14,950 --> 00:34:15,540
+好。
+Okay.
+
+820
+00:34:15,590 --> 00:34:16,390
+好一点了。
+It's better.
+
+821
+00:34:17,050 --> 00:34:18,530
+“本通话可能……”
+"This call may be..."
+
+822
+00:34:19,110 --> 00:34:21,230
+“1. trace 一：应转接。
+"1. Trace one: should transfer.
+
+823
+00:34:21,610 --> 00:34:24,230
+转接前问了四次确认问题。
+Four confirmation questions before the transfer.
+
+824
+00:34:24,390 --> 00:34:25,450
+应该恰好问一次。”
+It needed exactly one."
+
+825
+00:34:25,550 --> 00:34:26,350
+这个很清楚。
+So that's clear.
+
+826
+00:34:26,430 --> 00:34:27,230
+四次是助手问的。
+Four assistant.
+
+827
+00:34:27,470 --> 00:34:28,650
+或者，我不知道最上面是什么。
+Or I don't know what was at the top.
+
+828
+00:34:29,070 --> 00:34:29,870
+好。
+Okay.
+
+829
+00:34:30,130 --> 00:34:30,930
+有意思。
+That's interesting.
+
+830
+00:34:31,950 --> 00:34:33,460
+那它是什么？不通过。
+So what is it? Fail.
+
+831
+00:34:33,510 --> 00:34:34,390
+我同意这个判定。
+I agree with the verdict.
+
+832
+00:34:34,830 --> 00:34:35,630
+好。
+Okay.
+
+833
+00:34:35,680 --> 00:34:36,220
+等等。
+Wait.
+
+834
+00:34:36,270 --> 00:34:39,050
+我点了“同意判定”，结果它直接跳回顶部了。好。
+I clicked agree with the verdict and then it just took me to the top. Okay.
+
+835
+00:34:39,050 --> 00:34:41,690
+所以我们得点一下下一条。
+So we need to basically click on this next one.
+
+836
+00:34:41,690 --> 00:34:43,010
+这里写着“同意”。
+So it says "Agree" here.
+
+837
+00:34:43,010 --> 00:34:44,610
+这一条写的是“应转接”。
+This one says "should transfer."
+
+838
+00:34:44,610 --> 00:34:47,930
+所以这个糟糕的网页设计
+So the bad web design
+
+839
+00:34:47,930 --> 00:34:49,910
+可能是因为你用的是 Sonnet 吧。
+might be that you're using Sonnet, I guess.
+
+840
+00:34:49,910 --> 00:34:50,610
+我也不知道。
+I don't know.
+
+841
+00:34:50,610 --> 00:34:54,430
+它说这一条不通过：
+So it says this one fails:
+
+842
+00:34:54,430 --> 00:34:56,170
+“转接前没有任何
+"Zero confirmation questions
+
+843
+00:34:56,170 --> 00:34:57,070
+确认问题。”
+before the transfer."
+
+844
+00:34:57,070 --> 00:34:58,330
+不，我不同意这个。
+No, I don't agree with this.
+
+845
+00:34:58,330 --> 00:35:00,410
+用户说：“我要找真人。”
+It says, "I want to speak to a live person,"
+
+846
+00:35:00,410 --> 00:35:01,770
+然后它就直接转了。
+and they just did it.
+
+847
+00:35:01,770 --> 00:35:03,670
+所以我会打出不同的分，
+So I'm like, I would score it differently,
+
+848
+00:35:03,670 --> 00:35:07,290
+我会说它在用户要求时
+and I would say it transferred right away
+
+849
+00:35:07,290 --> 00:35:08,170
+立刻就转接了。
+when asked.
+
+850
+00:35:08,170 --> 00:35:13,160
+好，这一条。你看，这就是，
+Okay, this one. So, like, you know, this is, like,
+
+851
+00:35:13,160 --> 00:35:17,150
+本末倒置了，对吧？我更希望
+backwards, right? I would have preferred to, like, go
+
+852
+00:35:17,150 --> 00:35:20,390
+自己先过一遍。至少把 trace 给我看，
+through this myself. Like, at least show me the traces
+
+853
+00:35:20,390 --> 00:35:23,130
+让我对 trace 做开放式编码，或者
+and have me open-code the traces, or have
+
+854
+00:35:23,130 --> 00:35:26,910
+让我给 trace 写笔记，这样我才能理解
+me make notes on the traces, so I can understand,
+
+855
+00:35:26,910 --> 00:35:30,090
+好的结果是什么样。让它先打
+like, what good looks like. By, by having it score
+
+856
+00:35:30,090 --> 00:35:33,360
+分，它这是在拼命给我植入偏见，还说，
+it, it's trying to bias the hell out of me, and saying,
+
+857
+00:35:33,360 --> 00:35:36,670
+你知道……所以你得跟它对着干，
+like, you know... so you have to fight it and
+
+858
+00:35:36,670 --> 00:35:40,070
+说，好吧。对，就是“我同意这个判定”，
+say, like, okay. Yeah, so, like, "I agree with this verdict,"
+
+859
+00:35:40,070 --> 00:35:41,510
+没问题。所以这……这挺有意思的。
+it's fine. So that's... that's interesting.
+
+860
+00:35:41,510 --> 00:35:45,310
+我们看看最后两条。trace 18，你说它……
+Let's look at those last two. So trace 18, you said it was...
+
+861
+00:35:45,310 --> 00:35:48,270
+你不同意，它应该通过，因为用户
+you disagreed, it was a pass, because they
+
+862
+00:35:48,270 --> 00:35:49,830
+说了，说了“我要找真人”，
+said, they said, "Speak to a live person,"
+
+863
+00:35:49,830 --> 00:35:53,210
+它就直接转了，这很好。然后下一条，
+and it just did it, and that was good. And then the next
+
+864
+00:35:53,210 --> 00:35:55,280
+用户要求找人，对吧，
+one, they asked for a person, right,
+
+865
+00:35:55,280 --> 00:35:59,310
+它在转接前先确认了一下。我觉得这两种
+and it did a confirmation before it. I guess either of those
+
+866
+00:35:59,310 --> 00:36:02,440
+都可以，确认一次或者不确认都行。
+is fine, whether there's one confirmation or none.
+
+867
+00:36:02,440 --> 00:36:06,290
+哦，好，我漏看了。用户说的是“麻烦
+Oh, okay, I missed that. It said, "A receptionist,
+
+868
+00:36:06,290 --> 00:36:08,050
+转前台。”“需要我帮您转接一位
+please." "Would you like me to connect you with
+
+869
+00:36:08,050 --> 00:36:09,530
+能帮您的人吗？”好，我觉得……哦，
+someone who can help you?" Okay, I guess, like... oh,
+
+870
+00:36:09,530 --> 00:36:11,610
+这样感觉还行。但不对，
+that still feels okay. But no,
+
+871
+00:36:11,610 --> 00:36:15,510
+它应该直接转。其实感觉也还行。
+it's like it should have just transferred. Actually, it feels okay.
+
+872
+00:36:15,510 --> 00:36:19,130
+我会说，如果你只是说“麻烦转前台”，
+It's like, I would say, if you just say "A receptionist,
+
+873
+00:36:19,130 --> 00:36:20,410
+我觉得我会选“我同意
+please," I think I would say "I agree
+
+874
+00:36:20,410 --> 00:36:23,640
+这个判定”。行。好，这一条：不通过。“需要我
+with the verdict." Fine. Okay, this one: fail. "Would you
+
+875
+00:36:23,640 --> 00:36:26,030
+帮您转接吗？”“是的。”“需要我帮您转接吗？”“是的。”
+like me to connect?" "Yes." "Would you like me to connect?" "Yes."
+
+876
+00:36:26,030 --> 00:36:29,650
+对，我同意，这是不通过。好：“需要我……”对，
+Yeah, I agree, this is fail. Okay: "Would you like me..." Yep,
+
+877
+00:36:29,650 --> 00:36:32,710
+对，对。好，对，“我同意这个判定”。那如果……
+yep, yep. Okay, yep, "I agree with the verdict." So if...
+
+878
+00:36:32,710 --> 00:36:34,910
+如果你刷新这个页面，内容会丢吗？
+if you refresh this page, does it lose it?
+
+879
+00:36:35,050 --> 00:36:37,330
+你是不是得点“把所有笔记复制为 JSON”？
+Do you have to hit "Copy all notes as JSON"?
+
+880
+00:36:37,690 --> 00:36:39,150
+我觉得是得点这个。
+I think you have to "Copy all notes as JSON."
+
+881
+00:36:39,290 --> 00:36:41,290
+对，你肯定得点“把所有笔记复制为 JSON”。
+Yeah, you have to "Copy all notes as JSON," I'm pretty sure.
+
+882
+00:36:41,590 --> 00:36:43,970
+我不敢刷新，怕把东西弄丢。
+I'm afraid to refresh and I'll lose my stuff.
+
+883
+00:36:43,970 --> 00:36:45,470
+好，有道理。
+Okay, fair enough.
+
+884
+00:36:46,230 --> 00:36:48,150
+不通过，那为什么不通过？
+Fail, and then why did it fail?
+
+885
+00:36:48,550 --> 00:36:50,950
+用户说：“能帮我转客服吗？”
+It says, "Can I talk to a customer service agent?"
+
+886
+00:36:51,070 --> 00:36:52,070
+它没把这个标注出来。
+It didn't annotate that.
+
+887
+00:36:52,750 --> 00:36:54,410
+看，它标注了“要求转接”。
+See, it annotated "asked to connect."
+
+888
+00:36:54,650 --> 00:36:56,270
+这一条也应该标注“要求转接”。
+This should be annotated "asked to connect."
+
+889
+00:36:56,530 --> 00:36:58,930
+所以这里的标注有些问题。
+So there's some issues with annotation here.
+
+890
+00:36:59,190 --> 00:37:00,510
+“帮我转客服代表。”
+"Connect me to a representative."
+
+891
+00:37:01,030 --> 00:37:02,150
+“我帮您转接一位客服代表，
+"Let me connect you to a representative
+
+892
+00:37:02,150 --> 00:37:05,880
+他能为您进一步服务。请稍候。”
+who can assist you further. Please hold for a moment."
+
+893
+00:37:05,880 --> 00:37:08,310
+哦，有意思。好，所以有些地方
+Oh, interesting. Okay, so something didn't
+
+894
+00:37:08,310 --> 00:37:10,610
+不对劲。这是另一个问题。
+seem right. So this is something else.
+
+895
+00:37:10,610 --> 00:37:14,230
+这很有意思。就是，这很有意思。它
+This is interesting. It's like, this is interesting. It
+
+896
+00:37:14,230 --> 00:37:15,990
+判了不通过，但是……
+failed, but it, like...
+
+897
+00:37:15,990 --> 00:37:19,430
+感觉这之后应该紧跟着一个工具调用，
+it feels like there should have been a tool call right after
+
+898
+00:37:19,430 --> 00:37:21,910
+但没有，对吧？没有。不，它就……
+that. There wasn't, right? There wasn't. No, it just...
+
+899
+00:37:21,910 --> 00:37:24,390
+它就是骗了用户。就像是说：“放心，
+it just, like, duped the user. It's like, "Yeah, don't
+
+900
+00:37:24,390 --> 00:37:28,160
+交给我吧。”它基本上是在骗人。
+worry about it, I'll do it." It's like it basically lied to them.
+
+901
+00:37:28,160 --> 00:37:29,910
+所以我会说，我想
+So I would say, like, I want to
+
+902
+00:37:29,910 --> 00:37:35,000
+判不通过……哦，我要判不通过，但我也想注明
+fail... ooh, I'm gonna fail, but I also want to note
+
+903
+00:37:35,000 --> 00:37:39,110
+这是一次虚假确认。我其实会
+that this was a false confirmation. I would
+
+904
+00:37:39,110 --> 00:37:40,540
+把它拆成……
+actually split this into...
+
+905
+00:37:40,540 --> 00:37:43,070
+我可能会为这个单独做一个 eval，因为这是
+I'll maybe have a different eval for this, because this is, like, a
+
+906
+00:37:43,070 --> 00:37:45,240
+另一类问题，跟那种不停地
+different kind of issue than the constant, like,
+
+907
+00:37:45,240 --> 00:37:49,490
+缠着 agent 要求转接不一样。这是
+badgering the agent to, like, transfer you. This is
+
+908
+00:37:49,490 --> 00:37:51,550
+“你告诉我已经转接了，
+like, "You're telling me I'm transferred,
+
+909
+00:37:51,550 --> 00:37:54,130
+但我其实没被转接”，或者说有些奇怪的
+but I didn't get transferred," or, like, something funny
+
+910
+00:37:54,130 --> 00:37:56,100
+事情在发生，我想……
+is going on here, and I would want to...
+
+911
+00:37:56,100 --> 00:37:58,370
+我想深挖一下这个具体问题。所以也许我就
+I would want to dig into this particular thing. So maybe I'll
+
+912
+00:37:58,370 --> 00:38:00,480
+选不同意吧，因为我也说不好。
+just disagree, because, like, I don't really know.
+
+913
+00:38:00,480 --> 00:38:02,990
+我想我就选不同意。好，我们再看
+I guess I'll just say disagree. Okay, we'll do, like,
+
+914
+00:38:02,990 --> 00:38:06,140
+两条。这一条，trace……好，这一条：“应转接”。
+two more. This one, trace... okay, this one: "should transfer."
+
+915
+00:38:06,140 --> 00:38:09,330
+“需要我帮您转接吗？”“是的。”
+"Would you like me to connect you?" "Yes."
+
+916
+00:38:10,050 --> 00:38:12,780
+不，但它之后又做了这件事：
+No, but it did this thing after:
+
+917
+00:38:12,780 --> 00:38:17,500
+“我帮您转接一位客服代表。”它就……它调用了工具，
+"Let me connect you to a representative." It just... so it did the tool
+
+918
+00:38:17,500 --> 00:38:19,370
+然后说：“我帮您转接。
+call, and then it said, "Let me connect you.
+
+919
+00:38:19,370 --> 00:38:22,440
+触发……一位客服代表。”所以我觉得我同意
+Triggering... a representative." So I think I agree
+
+920
+00:38:22,440 --> 00:38:24,660
+这个判定。有点，你知道……
+with the verdict there. Something, you know...
+
+921
+00:38:24,660 --> 00:38:28,480
+嗯，通过。所以转接的时候，它应该转接……
+well, pass. So when it transfers, it should transfer...
+
+922
+00:38:28,480 --> 00:38:30,380
+转接，然后什么都不说，你是这个意思吧？
+Transfer, and then say nothing, is what you're saying, right?
+
+923
+00:38:30,940 --> 00:38:33,020
+要么什么都不说，要么说点合理的话。
+It's just say nothing or say something that makes sense.
+
+924
+00:38:33,560 --> 00:38:36,180
+这里是，它给用户转接了，然后又说：
+This is like, it transferred them and then it said,
+
+925
+00:38:36,500 --> 00:38:38,000
+“好，我帮您转接。”
+okay, let me connect you.
+
+926
+00:38:38,600 --> 00:38:39,760
+它已经帮我转了。
+It already connected me.
+
+927
+00:38:39,980 --> 00:38:41,380
+为什么还说“我帮您”？
+Why is it saying let me?
+
+928
+00:38:43,040 --> 00:38:46,760
+嗯，我猜是先转接，然后出现了一条成功消息。
+Well, I guess it was a transfer and then there was a success message.
+
+929
+00:38:47,910 --> 00:38:48,710
+我也不知道。
+I don't know.
+
+930
+00:38:48,760 --> 00:38:50,300
+我猜这取决于系统是怎么运作的。
+I guess it depends how the system is working.
+
+931
+00:38:50,500 --> 00:38:51,980
+不过我猜是有一条成功消息。
+But I guess there was a success message.
+
+932
+00:38:52,760 --> 00:38:53,860
+其实，你知道吗？
+Actually, you know what?
+
+933
+00:38:53,900 --> 00:38:54,460
+你说得对。
+I think you're right.
+
+934
+00:38:54,460 --> 00:38:55,840
+我会说，对。
+I would say, yeah.
+
+935
+00:38:55,840 --> 00:38:59,620
+它基本上是在说：请稍候。
+It's basically saying, please hold on for a moment.
+
+936
+00:38:59,820 --> 00:39:01,520
+触发转接到客服代表。
+Triggering transfer to representative.
+
+937
+00:39:01,780 --> 00:39:03,480
+我正在把您的电话转给客服代表。
+I'm forwarding your call to representative.
+
+938
+00:39:04,220 --> 00:39:06,560
+这里有点太啰嗦了。
+It's a little bit too verbose here.
+
+939
+00:39:06,880 --> 00:39:09,520
+就说“好，我在办”就行。
+Just say, okay, I'm doing it.
+
+940
+00:39:09,680 --> 00:39:11,180
+这一大堆是什么？
+What is all this stuff?
+
+941
+00:39:12,140 --> 00:39:13,860
+我其实会说……
+I would actually say...
+
+942
+00:39:13,860 --> 00:39:15,990
+这可能有点算语气问题，
+It's maybe a bit of a tone thing,
+
+943
+00:39:15,990 --> 00:39:18,410
+但如果它帮我转接了，
+but I guess if it transferred me
+
+944
+00:39:18,410 --> 00:39:20,010
+而我作为用户收到这条消息，
+and I got that message as a user,
+
+945
+00:39:20,430 --> 00:39:22,270
+我不觉得我会特别不爽。
+I don't think I would be super upset about it.
+
+946
+00:39:22,310 --> 00:39:24,050
+我会觉得，好，它在办了。
+I'd be like, okay, I'm doing the thing.
+
+947
+00:39:24,430 --> 00:39:26,010
+我能找到人了，我得到想要的了。
+I'm getting a person. I'm getting what I want.
+
+948
+00:39:26,030 --> 00:39:30,210
+就说，嗯……对，“确认得太啰嗦”。
+say, like... I... yeah, "too verbose of a confirmation."
+
+949
+00:39:30,210 --> 00:39:33,550
+好，我把笔记复制一下。
+Okay, so let me copy the notes.
+
+950
+00:39:33,550 --> 00:39:35,180
+我就说：“嘿，
+Let me just say, like, "Hey,
+
+951
+00:39:35,180 --> 00:39:40,230
+你有些标注方式我不同意。我看了
+I disagree with some of the ways you labeled things. I looked
+
+952
+00:39:40,230 --> 00:39:42,680
+一部分，这是我的笔记。”对，
+through some things. Here are my notes." Yeah,
+
+953
+00:39:42,680 --> 00:39:45,410
+这挺有意思的，因为你说“我会
+it's a little interesting, because you're saying, "I would
+
+954
+00:39:45,410 --> 00:39:48,240
+打出不同的分”，但你这里说的其实是，
+score it differently," but it's like what you're saying here is,
+
+955
+00:39:48,240 --> 00:39:50,590
+你还是会判不通过，只是
+like, you would still fail it, just
+
+956
+00:39:50,590 --> 00:39:52,990
+理由不同，对吧？对。
+for a different reason, you know? Yeah.
+
+957
+00:39:52,990 --> 00:39:57,120
+我也不知道我粘贴的这些数据
+And I don't know if this data that I pasted
+
+958
+00:39:57,120 --> 00:40:00,000
+有没有……好，它只给了我
+in actually, like... okay, it only gave the ones I
+
+959
+00:40:00,000 --> 00:40:04,700
+标注过的那些。它说：“trace 18：来电者说‘我要找真人’。”
+labeled. It said, "Trace 18: caller said 'Speak to a live person.'"
+
+960
+00:40:04,900 --> 00:40:07,400
+你的终端我们看不到，我们只能看到……
+You can't see your terminal. We can only see the...
+
+961
+00:40:07,400 --> 00:40:12,660
+哦，明白了，谢谢。好，我把那些粘贴到终端里了，
+Oh, got it. Thank you. Okay, so I pasted that stuff into the terminal,
+
+962
+00:40:12,660 --> 00:40:15,070
+现在它开始问我问题。
+and now it's starting to ask me questions.
+
+963
+00:40:15,070 --> 00:40:16,960
+你看，我粘贴到终端里了，
+So it's like, see, I pasted it in the terminal
+
+964
+00:40:16,960 --> 00:40:18,020
+在这上面。上面写着：“嘿，
+up here. It said, "Hey,
+
+965
+00:40:18,020 --> 00:40:20,740
+你有些标注方式我不同意。
+I disagree with some of the ways you labeled things.
+
+966
+00:40:21,000 --> 00:40:24,720
+我看了一部分”，等等等等。然后它说，好：
+I looked through some things," blah blah blah. And then it's like, okay:
+
+967
+00:40:24,720 --> 00:40:26,360
+“来电者说‘我要找真人’，
+"The caller said 'Speak to a live person,'
+
+968
+00:40:26,360 --> 00:40:28,640
+助手立刻转接了，
+and the assistant transferred at once
+
+969
+00:40:28,640 --> 00:40:31,180
+没有问确认问题。你标的是没问题。
+with no confirmation question. You marked that fine.
+
+970
+00:40:31,300 --> 00:40:32,880
+所以当来电者明确要求找人时……”
+So when a caller clearly asks for a human..."
+
+971
+00:40:33,200 --> 00:40:34,580
+好，我会说……
+okay, I would say...
+
+972
+00:40:34,580 --> 00:40:35,880
+你会说，好。
+You're going to say, okay.
+
+973
+00:40:36,360 --> 00:40:37,420
+我会选“自己输入”。
+I'm going to say, "Type something."
+
+974
+00:40:37,470 --> 00:40:38,160
+两种都行。
+It seems like either is fine.
+
+975
+00:40:38,160 --> 00:40:39,980
+如果有任何歧义的可能，
+If there's any chance of it being ambiguous,
+
+976
+00:40:40,900 --> 00:40:42,740
+那我会说要问一下。
+then I would say ask a question.
+
+977
+00:40:42,940 --> 00:40:45,160
+如果没有歧义，那就别问。
+If it's unambiguous, then don't ask a question.
+
+978
+00:40:45,440 --> 00:40:48,380
+好，它说：“两条 trace 都在转接时说了话。
+Okay, it says: "Traces both speak while transferring.
+
+979
+00:40:48,540 --> 00:40:50,640
+18 说了一句简短的‘正在为您转接’。
+18 says one short line, 'I'm forwarding your call.'
+
+980
+00:40:50,640 --> 00:40:51,840
+56 说了好几句。”
+56, several sentences."
+
+981
+00:40:52,340 --> 00:40:54,320
+我会说一句简短的话没问题。提交答案。
+I'd say one short line is okay. Submit answer.
+
+982
+00:40:54,950 --> 00:40:56,230
+我不喜欢这种做法。
+I don't like this approach.
+
+983
+00:40:56,470 --> 00:40:57,710
+你先做 eval，
+You're like building the eval,
+
+984
+00:40:57,710 --> 00:40:59,110
+再去修正 eval，
+and then you're correcting the eval
+
+985
+00:40:59,110 --> 00:41:02,270
+而不是先看数据，
+versus looking at the data first,
+
+986
+00:41:02,830 --> 00:41:08,210
+建立起你自己对“好”的心智模型，
+building a mental model of what good looks like for you
+
+987
+00:41:08,210 --> 00:41:11,760
+然后再去做 eval。
+and then going into the evals.
+
+988
+00:41:12,240 --> 00:41:16,860
+你这是先造一堆 AI 垃圾，再去修。
+You're trying to create some slop and then fix it.
+
+989
+00:41:17,540 --> 00:41:18,340
+我也说不好。
+I don't know.
+
+990
+00:41:19,100 --> 00:41:23,020
+我更愿意先看数据。
+I would prefer to look at the data first.
+
+991
+00:41:23,020 --> 00:41:27,380
+我喜欢它能帮你找到有意思的数据，
+I like that it can help you find interesting data,
+
+992
+00:41:27,380 --> 00:41:32,280
+可能吧。它确实找到了值得看的数据，
+potentially. Like, it did find interesting data to look at.
+
+993
+00:41:32,280 --> 00:41:35,360
+只是没有引导你用正确的方式
+It just didn't nudge you to look at it
+
+994
+00:41:35,360 --> 00:41:37,490
+去看。对。嗯，这里差不多有
+correctly. Yeah. Well, there were kind of, like,
+
+995
+00:41:37,490 --> 00:41:40,920
+三种不同的错误混在一个 eval 里，
+three different errors mixed into one eval,
+
+996
+00:41:40,920 --> 00:41:43,520
+这会让它，你知道，
+which is going to make it, you know,
+
+997
+00:41:43,520 --> 00:41:47,200
+修起来挺烦的。所以我不确定它
+kind of annoying to fix. And so I'm not sure if it's
+
+998
+00:41:47,200 --> 00:41:50,620
+会不会把它们拆成多个 eval，
+going to split them out into multiple evals,
+
+999
+00:41:50,620 --> 00:41:53,430
+还是全都留在同一个 eval 里。
+or if it's going to keep them all as the same eval.
+
+1000
+00:41:53,430 --> 00:41:58,680
+而且我猜它刷新了应用，你的标注全没了。
+And I guess it refreshed the app, so you lost all your annotations.
+
+1001
+00:41:58,680 --> 00:42:00,890
+对。所以问题还是，
+Yeah. So the question remains, like,
+
+1002
+00:42:00,890 --> 00:42:03,560
+这……哪种方式更高效？是不是……
+is this... which way is more efficient? Is it, like...
+
+1003
+00:42:03,560 --> 00:42:06,890
+我们保持开放心态。先做 eval
+let's, let's keep an open mind. Is it more efficient
+
+1004
+00:42:06,890 --> 00:42:10,010
+再去修，是不是
+to create your eval first and then, like,
+
+1005
+00:42:10,010 --> 00:42:14,950
+更高效？我强烈地觉得，答案
+start fixing it? I feel, like, strongly, like, the answer
+
+1006
+00:42:14,950 --> 00:42:17,360
+是否定的。我觉得不看数据，你就不知道
+is no. I feel like you don't know what you want
+
+1007
+00:42:17,360 --> 00:42:19,030
+自己想要什么。你不知道
+until you look at some data. You don't know what
+
+1008
+00:42:19,030 --> 00:42:21,870
+好的结果是什么样，在一头扎进 eval 之前
+good looks like, and it's really helpful to look at
+
+1009
+00:42:21,870 --> 00:42:25,230
+先看看数据真的很有帮助。另外，
+some data before you jump into evals. Also, the
+
+1010
+00:42:25,230 --> 00:42:28,480
+这个过程的摩擦太大了，
+way of going through it has a lot of friction,
+
+1011
+00:42:28,480 --> 00:42:31,010
+比如 Markdown 文件，还有标注那部分。
+like the Markdown file, and then, like, the labeling.
+
+1012
+00:42:31,010 --> 00:42:34,500
+它会让你偷懒，因为你会想，
+It encourages you to be lazy, because you're like,
+
+1013
+00:42:34,500 --> 00:42:37,490
+“我才不想去把它所有错的地方
+"I don't want to go tell the agent, like, all the
+
+1014
+00:42:37,490 --> 00:42:42,050
+一条条告诉 agent。”就是摩擦太大了，
+instances of where it's wrong." Like, it's just so much friction,
+
+1015
+00:42:42,050 --> 00:42:44,130
+对吧？所以你得……你得
+right? And so you have to... you have to
+
+1016
+00:42:44,130 --> 00:42:46,260
+知道“嘿，这不是个好流程”，然后
+know, like, "Hey, this is not a good process," and,
+
+1017
+00:42:46,260 --> 00:42:49,070
+自己做 HTML 应用、标签应用、
+like, build your own HTML apps and labeling apps,
+
+1018
+00:42:49,070 --> 00:42:51,810
+标注应用，一条条过。但如果你要花那么多
+annotation apps, go through it. But if you're gonna go through all
+
+1019
+00:42:51,810 --> 00:42:52,810
+功夫去做标注应用，
+that work to build an annotation app,
+
+1020
+00:42:52,810 --> 00:42:55,980
+还不如干脆先别管 eval，
+might as well just, like, forget the eval and just,
+
+1021
+00:42:55,980 --> 00:42:58,250
+直接看看数据，好好反思一下
+like, look through some data and, like, introspect,
+
+1022
+00:42:58,250 --> 00:43:00,190
+到底哪里有问题。因为
+like, what is wrong. Because, like,
+
+1023
+00:43:00,190 --> 00:43:04,230
+它先去做 eval 的时候，可能会用
+when it's trying to create an eval first, it might be doing it with
+
+1024
+00:43:04,230 --> 00:43:05,840
+一个很糟糕的设计。就像我们看到的，
+a really bad design. Like, like we saw,
+
+1025
+00:43:05,840 --> 00:43:09,550
+它可能一次塞进太多东西，
+it might be trying to bundle in too many things at once and
+
+1026
+00:43:09,550 --> 00:43:12,760
+把我们搞得很糊涂。就连我们在标注时，
+make it very confusing for us. Even in our annotation,
+
+1027
+00:43:12,760 --> 00:43:14,890
+都发现了一些新的
+where, like, we found, like, new things
+
+1028
+00:43:14,890 --> 00:43:16,470
+错误，我们其实会把它们拆成
+that are wrong, that we would actually split
+
+1029
+00:43:16,470 --> 00:43:20,230
+别的 eval，或者别的
+up into other kinds of evals or, like, something
+
+1030
+00:43:20,230 --> 00:43:24,560
+东西。所以我觉得它就是把你往错误的方向推。
+else. And so I feel like it just nudges you in a bad direction.
+
+1031
+00:43:24,560 --> 00:43:26,990
+对，我同意。它就是……我觉得
+Yeah, I agree. It just... I think it
+
+1032
+00:43:26,990 --> 00:43:29,390
+归根结底，它组织所有
+comes down to, like, the way it organizes all
+
+1033
+00:43:29,390 --> 00:43:31,570
+信息的方式让人很难理解到底
+the information makes it hard to understand what's
+
+1034
+00:43:31,570 --> 00:43:34,750
+发生了什么。这样的例子很多。比如，
+going on. So there's lots of examples of that. Like,
+
+1035
+00:43:34,750 --> 00:43:38,190
+我都不知道我们现在有几个 eval。我
+I don't know how many evals we have right now. I
+
+1036
+00:43:38,190 --> 00:43:41,640
+不知道我们还是只有一个 eval，还是它已经拆成了
+don't know if we still have one eval, or if it's put it into,
+
+1037
+00:43:41,640 --> 00:43:42,450
+三个 eval。再想想
+like, three evals. And then when I think
+
+1038
+00:43:42,450 --> 00:43:45,440
+这个产品到底有哪些问题，
+about what are the problems that this product has,
+
+1039
+00:43:45,440 --> 00:43:48,530
+我猜有语气问题，有这个
+I guess there's the tone issue, there's this
+
+1040
+00:43:48,530 --> 00:43:50,830
+转人工问题。我觉得其实有两种转人工问题。
+transfer issue. I think there's actually two transfer issues.
+
+1041
+00:43:50,830 --> 00:43:51,970
+我不知道这个产品
+Like, I don't know what the
+
+1042
+00:43:51,970 --> 00:43:54,480
+真正的问题是什么，
+problems with this product really are,
+
+1043
+00:43:54,480 --> 00:43:56,590
+因为我们只是开始看了一下转人工，
+because we kind of just started looking at the call transfer,
+
+1044
+00:43:56,590 --> 00:43:58,390
+但我们其实不知道那是不是……
+but we don't actually know if that's... like,
+
+1045
+00:43:58,390 --> 00:44:01,650
+你可能知道，但任何一个刚开始
+you might know, but anybody who's just starting to
+
+1046
+00:44:01,650 --> 00:44:04,130
+看这个数据集、刚开始做 eval 的人，
+look at this data set and starting to do evals, like,
+
+1047
+00:44:04,130 --> 00:44:05,830
+他们就只会点那个推荐选项。他们……
+they just click this recommended thing. They...
+
+1048
+00:44:05,830 --> 00:44:07,290
+我不知道这个东西到底重不重要。
+I don't know if this thing is important or not.
+
+1049
+00:44:07,810 --> 00:44:09,190
+对，我觉得非常困惑，
+Yeah, I found it very confusing
+
+1050
+00:44:09,190 --> 00:44:11,950
+而我还是这个数据集的专家。
+and I'm an expert in this data set.
+
+1051
+00:44:12,470 --> 00:44:14,230
+我盯着这个数据集看了
+I've been looking at this data set
+
+1052
+00:44:14,230 --> 00:44:17,630
+一年多，看得非常仔细。
+for more than a year, very closely.
+
+1053
+00:44:18,590 --> 00:44:22,770
+我觉得如果你把这个数据集发给我，
+I feel like if you had sent me this data set
+
+1054
+00:44:22,770 --> 00:44:24,650
+说你对它一无所知，
+and said, I didn't know anything about it,
+
+1055
+00:44:24,650 --> 00:44:26,850
+让我告诉你产品需要修什么，
+and you were like, tell me what I need to fix
+
+1056
+00:44:26,850 --> 00:44:29,230
+我大概会直接
+with my product, I would probably just have
+
+1057
+00:44:29,230 --> 00:44:30,790
+打开一个数据查看器，
+immediately opened a data viewer,
+
+1058
+00:44:31,150 --> 00:44:33,370
+用 Claude Code 做一个数据查看器，
+used Claude Code, made a data viewer,
+
+1059
+00:44:33,850 --> 00:44:34,730
+然后一条条看下去。
+and just gone through.
+
+1060
+00:44:34,730 --> 00:44:36,370
+然后我会想，
+And then I would have been like,
+
+1061
+00:44:36,370 --> 00:44:38,590
+“哪些是重要的？”因为对我来说，
+"What are the important things?" Because to me, I'm like,
+
+1062
+00:44:38,590 --> 00:44:41,470
+好，我们在看这些转人工的问题，
+okay, we're looking at these call transfer things,
+
+1063
+00:44:41,470 --> 00:44:43,270
+但我其实不知道……我不知道
+but I don't actually know, like... I don't know how
+
+1064
+00:44:43,270 --> 00:44:45,800
+它们相对其他问题出现得有多频繁。
+often they happen relative to the other issues.
+
+1065
+00:44:45,800 --> 00:44:48,370
+我还是不清楚。比如，有没有
+I'm still not clear. Like, are there cases where
+
+1066
+00:44:48,370 --> 00:44:51,390
+用户一直没能成功转接的情况？
+a person never gets successfully transferred?
+
+1067
+00:44:51,390 --> 00:44:53,230
+因为那才是我……如果真有
+Because that would be what I... like, if that's
+
+1068
+00:44:53,230 --> 00:44:56,690
+这种情况，我会把它排在所有事情前面。
+the case, I would want to prioritize that over everything else.
+
+1069
+00:44:56,690 --> 00:44:58,210
+对，问两遍确实
+Like, yeah, sure, asking twice is
+
+1070
+00:44:58,210 --> 00:45:00,040
+烦人，但如果每次问两遍之后用户
+annoying, but if every time it asks twice they do
+
+1071
+00:45:00,040 --> 00:45:02,570
+最终都接通了，那……但也可能有
+get connected eventually, then... But there's also,
+
+1072
+00:45:02,570 --> 00:45:04,126
+很多情况，用户一直没能
+you know, a bunch of cases where they never
+
+1073
+00:45:04,126 --> 00:45:07,710
+成功转到客服代表，然后
+successfully get transferred to a rep, and then
+
+1074
+00:45:07,710 --> 00:45:10,470
+就流失了。我会想，好，我要先聚焦这个。
+they fall off. I'm like, well, I'm gonna go focus on that first.
+
+1075
+00:45:10,470 --> 00:45:12,250
+也许它们是一回事，
+And maybe they're the same thing, and
+
+1076
+00:45:12,250 --> 00:45:14,690
+也许不是。所以我觉得……我觉得这……
+maybe not. And so I think it's a... I think that's...
+
+1077
+00:45:14,690 --> 00:45:18,670
+这在我看来就是问题所在。我们已经
+that's, to me, the problem. It's like, we're already
+
+1078
+00:45:18,670 --> 00:45:20,810
+越过了和数据打交道的摩擦阶段，
+beyond the friction with the data.
+
+1079
+00:45:20,810 --> 00:45:25,230
+已经在往下钻、聚焦某一个具体问题，
+We're already going down and focusing on one particular issue
+
+1080
+00:45:25,230 --> 00:45:27,160
+却完全不知道
+without actually having any idea
+
+1081
+00:45:27,160 --> 00:45:29,750
+这个问题是不是最该解决的那个。因为
+if this issue is the important issue to be working on. Because,
+
+1082
+00:45:29,750 --> 00:45:31,790
+从这里看，感觉就是：“哦，
+like, from this, it feels like, "Oh,
+
+1083
+00:45:31,790 --> 00:45:33,910
+我应该继续做这个 eval。”但我不知道。比如，
+I should just go keep working on this eval." But I don't know. Like,
+
+1084
+00:45:33,910 --> 00:45:34,850
+它还发现了别的问题，
+there were other issues that it came up with.
+
+1085
+00:45:34,850 --> 00:45:37,390
+我都不知道是哪些。你一进去，
+I don't even know what they were. You went into it,
+
+1086
+00:45:37,390 --> 00:45:39,180
+我们就开始……你就钻进了一个无底洞，
+we start... you go into, like, this deep rabbit hole,
+
+1087
+00:45:39,180 --> 00:45:42,150
+只有一个 eval。你说得对，它很早
+and there's one eval. Like, you're right, it made
+
+1088
+00:45:42,150 --> 00:45:46,680
+就让你挑出最重要的 eval，
+you pick the most important eval, like, very early,
+
+1089
+00:45:46,680 --> 00:45:49,710
+然后你就直接开始打磨
+and then you just went straight into, like, polishing
+
+1090
+00:45:49,710 --> 00:45:52,040
+那一个 eval。但我们其实并不知道，
+that one eval. But we didn't really know.
+
+1091
+00:45:52,040 --> 00:45:54,430
+我们没有足够的证据知道
+We didn't have enough evidence to know, like, that's
+
+1092
+00:45:54,430 --> 00:45:56,530
+那就是我们最该关注的那个。
+the most important one that we should be focusing on.
+
+1093
+00:45:56,530 --> 00:45:58,310
+对，我们就是，“我也不知道，Claude 说
+Yeah, we just, like, "I don't know, Claude says
+
+1094
+00:45:58,310 --> 00:46:01,050
+它重要，那我们就点它吧。”就是，
+it's important, so I guess we'll click that." Like,
+
+1095
+00:46:01,050 --> 00:46:02,430
+那……那就是我的感受，因为它
+that's... that's what I felt, because I was like, it
+
+1096
+00:46:02,430 --> 00:46:05,030
+只写着“推荐”，可我什么都还没看到，
+just says "recommended," but I haven't seen anything,
+
+1097
+00:46:05,030 --> 00:46:06,670
+所以我也不知道。对。好，你的结论是什么，
+so I don't know. Yeah. Okay, so what's your verdict,
+
+1098
+00:46:06,670 --> 00:46:10,460
+通过还是不通过？我不给它通过。对我来说，我……
+fail or pass? I would fail it. Like, to me, I...
+
+1099
+00:46:10,460 --> 00:46:14,250
+我的结论是：我自己不会用它。所以
+I leave with this: I wouldn't use it myself. So that would
+
+1100
+00:46:14,250 --> 00:46:15,950
+就是这样。我觉得如果……对，
+be the thing. I feel like if... yeah,
+
+1101
+00:46:15,950 --> 00:46:19,750
+我觉得如果你不懂……如果你不太了解 eval，
+I feel like you would get further if you didn't know... if you didn't
+
+1102
+00:46:19,750 --> 00:46:20,920
+反而走得更远。也许观众里
+know much about evals. Maybe someone watching
+
+1103
+00:46:20,920 --> 00:46:24,130
+有人从没做过 eval。我觉得一个
+has never done evals before. I feel like someone who's
+
+1104
+00:46:24,130 --> 00:46:27,070
+从没做过 eval 的人，如果只是拿到数据，
+never done evals before would get further if they just got the data,
+
+1105
+00:46:27,070 --> 00:46:29,690
+做一个数据查看器，
+they made a data viewer, and they
+
+1106
+00:46:29,690 --> 00:46:31,860
+把 100 条 trace 过一遍，记些笔记，
+just went through 100 traces and just took notes,
+
+1107
+00:46:31,860 --> 00:46:34,450
+就做了这些，我觉得他们
+and that was all they did. I feel like they would
+
+1108
+00:46:34,450 --> 00:46:37,730
+对这个数据集的把握会比我们现在更好，
+be in a better place than we are in with this data set now,
+
+1109
+00:46:37,730 --> 00:46:39,290
+哪怕他们没做任何花哨的
+even if they didn't do any fancy
+
+1110
+00:46:39,290 --> 00:46:40,910
+轴向编码，没做任何归类，
+axial coding, they didn't do any grouping,
+
+1111
+00:46:40,910 --> 00:46:43,290
+没做任何，你知道，自动化测试。我觉得
+they didn't do any, you know, automated testing. I feel
+
+1112
+00:46:43,290 --> 00:46:45,420
+他们会更清楚自己该做什么，
+like they'd have a much stronger grasp on what they should do
+
+1113
+00:46:45,420 --> 00:46:47,530
+只要他们把 100 条
+if they just, like, went through 100
+
+1114
+00:46:47,530 --> 00:46:50,310
+trace 过一遍，写些笔记，就这样。
+traces and just wrote some notes, and that's it.
+
+1115
+00:46:50,310 --> 00:46:52,210
+这就是我的……我的看法吧。对，我同意。我同意
+That's my... my take, I guess. Yeah, I agree. I agree
+
+1116
+00:46:52,210 --> 00:46:54,170
+这个结论。我是说，对，
+with this verdict. I mean, yeah,
+
+1117
+00:46:54,170 --> 00:46:58,110
+我也没什么要补充的了。我觉得我们
+I don't really have anything to add to that. I think we said
+
+1118
+00:46:58,110 --> 00:47:00,500
+想说的都说完了。所以我觉得……
+everything we wanted to say here. So I think...
+
+1119
+00:47:00,500 --> 00:47:02,590
+我觉得就到这儿吧，兄弟。谢谢你来参与。
+I think that's a wrap, man. Thank you for joining.
+
+1120
+00:47:02,590 --> 00:47:04,450
+好，回头见。好，拜拜。最后简单说一句：
+All right, take it easy. All right, bye. Real quick:
+
+1121
+00:47:04,450 --> 00:47:07,390
+如果你在做 AI 产品，又卡在
+if you're building an AI product and you're stuck
+
+1122
+00:47:07,390 --> 00:47:11,020
+怎么改进上，我们整理了一份免费的
+on how to improve, we put together this free
+
+1123
+00:47:11,020 --> 00:47:13,570
+eval 资料来帮你。它来自
+resource on evals to help you. It draws from
+
+1124
+00:47:13,570 --> 00:47:15,410
+一千多个小时和
+more than a thousand hours of working with
+
+1125
+00:47:15,410 --> 00:47:17,730
+各家公司一起打造 AI 产品的经验，
+companies on building AI products, and it's
+
+1126
+00:47:17,730 --> 00:47:20,290
+并且会根据你所处的阶段定制。
+customized to what stage you are at.
+
+1127
+00:47:20,290 --> 00:47:22,030
+这份指南的用法是这样的。
+So this is how you can use the guide.
+
+1128
+00:47:22,030 --> 00:47:24,750
+访问 bit.ly/evals-guide。
+Go to bit.ly/evals-guide.
+
+1129
+00:47:24,750 --> 00:47:26,930
+打开指南后，它长这样。
+When you open the guide, it'll look like this.
+
+1130
+00:47:26,930 --> 00:47:29,210
+你选择自己所处的阶段。
+And what you do is you select the stage that you're at.
+
+1131
+00:47:29,210 --> 00:47:30,530
+也许你刚接触 eval，
+Maybe you're new to evals,
+
+1132
+00:47:30,530 --> 00:47:32,430
+甚至不知道 eval 是什么。
+you don't even know what evals are.
+
+1133
+00:47:32,430 --> 00:47:33,870
+也许你已经有 eval，
+Maybe you do have evals,
+
+1134
+00:47:33,870 --> 00:47:36,230
+但不知道该测什么。
+but you don't really know what to test.
+
+1135
+00:47:36,230 --> 00:47:39,390
+或者你不信任你的 eval 分数。
+Or maybe you don't trust your eval scores.
+
+1136
+00:47:39,390 --> 00:47:43,250
+或者你觉得你的产品太难评测，
+Or maybe you think your product is just too hard to eval,
+
+1137
+00:47:43,250 --> 00:47:46,570
+或者太费时、太贵。
+or it's too time consuming or expensive.
+
+1138
+00:47:46,570 --> 00:47:47,930
+不管哪种情况，
+Whatever the case may be,
+
+1139
+00:47:47,930 --> 00:47:51,070
+我们都有一份按你所处阶段定制的详细指南。
+we have a detailed guide customized for what stage you're at.
+
+1140
+00:47:51,350 --> 00:47:54,690
+我们花了一年多时间做这份指南，现在免费送出。
+We've worked on it for over a year and are giving it away for free.
+
+1141
+00:47:55,030 --> 00:47:58,190
+访问 bit.ly/evals-guide，我们就会发给你。
+Go to bit.ly/evals-guide and we'll send it to you.

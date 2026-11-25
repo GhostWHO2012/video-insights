@@ -1,0 +1,1354 @@
+1
+00:00:00,000 --> 00:00:02,950
+现在发布 AI 产品容易多了，
+It's gotten much easier to ship AI products,
+
+2
+00:00:02,950 --> 00:00:05,540
+但要弄清 AI 是否真的按
+but figuring out whether the AI actually works the
+
+3
+00:00:05,540 --> 00:00:07,950
+你想的那样工作，仍然很难。我见过最大的
+way you want is still hard. And one of the biggest
+
+4
+00:00:07,950 --> 00:00:11,060
+错误之一，就是急着做 eval（评测），
+mistakes I see is people jumping into evals before
+
+5
+00:00:11,060 --> 00:00:12,760
+却还没看过实际
+they've looked at any failures that are actually
+
+6
+00:00:12,760 --> 00:00:15,280
+出现在产品里的失败。所以我和同事
+happening in their product. So my colleague
+
+7
+00:00:15,280 --> 00:00:18,560
+Shreya Shankar（共同开发者）一起做了 8 个
+Shreya Shankar and I built eight eval skills to help with
+
+8
+00:00:18,560 --> 00:00:20,840
+eval Skill（可复用的任务指令）来帮忙。
+that process. We've iterated on these
+
+9
+00:00:20,840 --> 00:00:23,340
+我们和 50 多家公司合作、
+skills by working with over 50 companies
+
+10
+00:00:23,340 --> 00:00:26,120
+在 AI eval 课程里教了 5000 多名学员，
+and teaching over 5,000 students in our AI evals
+
+11
+00:00:26,120 --> 00:00:28,120
+不断打磨这些 Skill。8 个我都会讲：做什么、
+course. I'll walk through all eight, what they do,
+
+12
+00:00:28,120 --> 00:00:31,880
+什么时候用。好，你可以在
+and when to use each one. Okay, so you can find
+
+13
+00:00:31,880 --> 00:00:35,790
+GitHub 上找到这些 Skill，我这里打开了。
+the eval skills on GitHub. I have it pulled up right here.
+
+14
+00:00:35,790 --> 00:00:37,760
+我会把网址放在上面，
+I'm going to share the URL up here
+
+15
+00:00:37,760 --> 00:00:42,770
+就是这个 GitHub 仓库。README 写得不错，
+above to the GitHub repo. And the GitHub has a nice readme in it.
+
+16
+00:00:42,770 --> 00:00:44,560
+能看到一些信息。
+You can see some information.
+
+17
+00:00:44,920 --> 00:00:47,560
+先从这张表开始很重要。
+It's important to start with this table here.
+
+18
+00:00:47,560 --> 00:00:49,080
+你会看到一堆 Skill。入口
+You'll see a bunch of skills. The entry point
+
+19
+00:00:49,080 --> 00:00:53,540
+是 evals-start。它能让你的 agent，
+is the evals-start skill. And the evals-start skill just lets your agent,
+
+20
+00:00:53,540 --> 00:00:54,780
+不管是 Claude Code 还是
+whether it's Claude Code or
+
+21
+00:00:54,780 --> 00:00:57,490
+Codex（编程智能体工具），转到合适的 Skill。
+Codex, route to the appropriate skill.
+
+22
+00:00:57,490 --> 00:01:00,700
+agent 能读这张表。我最喜欢的
+So there's this table that your agent can read. My favorite
+
+23
+00:01:00,700 --> 00:01:03,850
+就是 error-discovery（错误发现）。
+skill out of all of these is the error-discovery skill.
+
+24
+00:01:03,850 --> 00:01:05,920
+它最有价值，因为它
+It's the most valuable skill because it
+
+25
+00:01:05,920 --> 00:01:08,850
+引导你用正确的方式看数据，
+guides you through looking at your data in the right way
+
+26
+00:01:08,850 --> 00:01:10,740
+让你能做出好的 eval。
+so that you can build good evals. You
+
+27
+00:01:10,740 --> 00:01:13,980
+如果你已经有 trace（调用轨迹），
+will get directed to this skill if you already have traces
+
+28
+00:01:13,980 --> 00:01:15,620
+想找失败模式，
+and you want to find failure modes
+
+29
+00:01:15,620 --> 00:01:19,180
+又还没发现有哪些，就会被引到这个 Skill。
+and you haven't discovered what your failure modes are yet.
+
+30
+00:01:19,180 --> 00:01:21,160
+还有这个 eval-audit（评测审计），
+There's also this eval-audit skill, which
+
+31
+00:01:21,160 --> 00:01:23,230
+如果你已经有 eval，想找出哪里有问题，
+is really handy if you already have evals
+
+32
+00:01:23,230 --> 00:01:26,520
+它就特别好用。另外还有一大
+and you want to find out what's wrong. And there's a whole
+
+33
+00:01:26,520 --> 00:01:29,890
+堆别的，比如帮你写评审提示词、
+bunch of other stuff like getting help with writing a judge prompt,
+
+34
+00:01:29,890 --> 00:01:32,180
+怎么验证你的 LLM 评审（LLM-as-a-judge），
+how to validate your LLM
+
+35
+00:01:32,180 --> 00:01:35,730
+确保 LLM 评审靠谱，
+as a judge and make sure your LLM as a judge is good,
+
+36
+00:01:35,730 --> 00:01:37,600
+以及其他一些内容，比如怎么
+as well as some other things like how to
+
+37
+00:01:37,600 --> 00:01:40,360
+生成合成数据、怎么写定制的
+generate synthetic data or how to write a custom
+
+38
+00:01:40,360 --> 00:01:43,420
+标注界面，或者怎么评测
+annotation interface or how to evaluate search
+
+39
+00:01:43,420 --> 00:01:46,980
+RAG（检索增强生成）的检索。插件里都有。
+for your RAG pipelines. This is what comes with this evals plugin.
+
+40
+00:01:46,980 --> 00:01:48,100
+我真心建议
+I really want to encourage
+
+41
+00:01:48,100 --> 00:01:50,790
+大家从 error-discovery 开始。
+everyone to start with the error-discovery skill.
+
+42
+00:01:50,790 --> 00:01:53,680
+它是这套里最强的 Skill。下面
+It's the most powerful skill in the set. And let
+
+43
+00:01:53,680 --> 00:01:55,040
+我带你看看它做什么。
+me walk you through what it does.
+
+44
+00:01:55,040 --> 00:01:57,840
+我们可以先瞄一眼 error-discovery。
+We can take a sneak peek at the error-discovery skill. Now the
+
+45
+00:01:57,840 --> 00:02:00,580
+error-discovery 做的事很多，
+error-discovery skill does a lot of things,
+
+46
+00:02:00,580 --> 00:02:03,780
+但它分成几个阶段。首先，它让
+but it goes through different phases. So first, it lets
+
+47
+00:02:03,780 --> 00:02:05,890
+你的编程 agent 理解你的数据，
+your coding agent understand your data
+
+48
+00:02:05,890 --> 00:02:08,520
+指示它读取、解析数据，
+and instructs it to read and parse the data and to
+
+49
+00:02:08,520 --> 00:02:11,600
+弄清数据的结构。
+identify what the structure is of that data.
+
+50
+00:02:11,600 --> 00:02:14,860
+然后让 agent 找出
+Then it tells your agent to identify what are the
+
+51
+00:02:14,860 --> 00:02:18,550
+差异维度，说穿了就是
+dimensions of variation, which is just a fancy way of saying,
+
+52
+00:02:18,550 --> 00:02:20,400
+找出数据里最该
+identify what the most important
+
+53
+00:02:20,400 --> 00:02:22,780
+关注的东西：
+things to pay attention to are in the data.
+
+54
+00:02:22,780 --> 00:02:25,920
+数据里哪些维度造成了最大的
+What dimensions in the data account for the biggest
+
+55
+00:02:25,920 --> 00:02:29,870
+差异？它还会让 agent 想清楚
+differences? And it also instructs your agent to think
+
+56
+00:02:29,870 --> 00:02:31,080
+什么算“坏”。第二阶段让
+about what bad means. Phase two instructs
+
+57
+00:02:31,080 --> 00:02:33,580
+你的编程 agent 设计标注界面，
+your coding agent to design the annotation interface
+
+58
+00:02:33,580 --> 00:02:35,000
+就是你用来看
+that you're going to use to look at
+
+59
+00:02:35,000 --> 00:02:37,430
+数据的界面。这里有一些设计原则，
+the data. And there's some design principles here.
+
+60
+00:02:37,430 --> 00:02:39,160
+核心是格式塔（Gestalt）原则。
+There's these core Gestalt principles.
+
+61
+00:02:39,800 --> 00:02:41,240
+这是设计领域的术语，
+This is design terminology.
+
+62
+00:02:41,420 --> 00:02:42,400
+不是我们编的，
+It's not something we made up,
+
+63
+00:02:42,620 --> 00:02:45,360
+它列出了一些设计原则，
+but this just lays out some design principles
+
+64
+00:02:45,360 --> 00:02:48,940
+涉及颜色、间距、背景和容器、
+around color, spacing, backgrounds and containers,
+
+65
+00:02:49,340 --> 00:02:50,600
+不透明度和对比度，
+opacity and contrast,
+
+66
+00:02:50,940 --> 00:02:53,080
+还有一些视觉编码规则，
+as well as some visual encoding rules,
+
+67
+00:02:53,360 --> 00:02:57,080
+比如字体排版、边框、容器之类。
+things like typography, borders, containers, things like that.
+
+68
+00:02:57,380 --> 00:03:00,320
+第三阶段是让 agent
+And then phase three is where we instruct your agent
+
+69
+00:03:00,320 --> 00:03:02,600
+搭建审阅界面，
+to build the review interface
+
+70
+00:03:02,600 --> 00:03:04,180
+或者选用合适的架构。
+or use an appropriate architecture.
+
+71
+00:03:04,180 --> 00:03:06,400
+最后做出这个 HTML 应用。
+And then finally build the HTML app.
+
+72
+00:03:06,520 --> 00:03:08,200
+这些我们不用逐条看，
+And we don't have to read every part of this,
+
+73
+00:03:08,200 --> 00:03:11,130
+但本质上它能让你
+but essentially what it does is it allows you
+
+74
+00:03:11,130 --> 00:03:13,040
+快速拿到一个标注数据的界面。
+to quickly get an interface for annotating your data.
+
+75
+00:03:13,400 --> 00:03:14,840
+我给你看看是什么样子。
+And let me show you what that looks like.
+
+76
+00:03:15,120 --> 00:03:17,540
+标注界面大概长这样。
+This is what an annotation interface might look like.
+
+77
+00:03:17,660 --> 00:03:18,630
+屏幕上是
+What I'm showing you on the screen is
+
+78
+00:03:18,630 --> 00:03:22,300
+一个房产助手的标注界面。
+an annotation interface for a real estate assistant.
+
+79
+00:03:22,760 --> 00:03:26,300
+这个房产助手是个多轮对话的聊天机器人。
+And the real estate assistant is a chatbot that has multiple turns.
+
+80
+00:03:26,660 --> 00:03:28,460
+我们在看它的日志。
+And what we're doing is looking at the logs.
+
+81
+00:03:28,620 --> 00:03:31,140
+这里能看到系统提示词：
+And we can see here, I can see the system prompt.
+
+82
+00:03:31,540 --> 00:03:33,600
+“你是 Meadowbrook Gardens 公寓
+"You are a leasing team member at
+
+83
+00:03:33,600 --> 00:03:35,460
+租赁团队的一员。
+the Meadowbrook Gardens apartments.
+
+84
+00:03:35,460 --> 00:03:37,980
+你叫 Taylor。你的目标是回答问题、
+Your name is Taylor. Your goal is to answer questions,
+
+85
+00:03:38,200 --> 00:03:40,460
+鼓励客户预约看房。”
+encourage customers to schedule tours."
+
+86
+00:03:40,460 --> 00:03:43,000
+这样你大概能了解这个 agent 是
+And that kind of gives you an idea of what this agent is
+
+87
+00:03:43,000 --> 00:03:44,710
+干什么的。然后能看到多轮对话：
+about. And then we see multiple turns:
+
+88
+00:03:44,710 --> 00:03:48,920
+助手说完是用户说。你看，
+we see an assistant followed by user turns. And you see, like,
+
+89
+00:03:48,920 --> 00:03:50,600
+这像是一通电话，
+this seems like it's a phone call,
+
+90
+00:03:50,600 --> 00:03:54,600
+因为助手说的第一句话是
+because "this call is recorded" is the first thing the assistant
+
+91
+00:03:54,600 --> 00:03:58,060
+“本通话会被录音”。能看到来回的对话，
+says. You can see there's a back-and-forth conversation.
+
+92
+00:03:58,060 --> 00:03:59,560
+甚至还有一次工具调用，
+There's even a tool call where
+
+93
+00:03:59,560 --> 00:04:03,150
+在转接，然后显示成功。
+a transfer is taking place, and then a success.
+
+94
+00:04:03,150 --> 00:04:05,600
+我们可以翻几条，看看
+And we can page through some of these and see
+
+95
+00:04:05,600 --> 00:04:06,670
+不同的对话。
+the different conversations.
+
+96
+00:04:06,670 --> 00:04:10,840
+这里用户在问某套公寓
+We see a user is asking a question about a specific apartment
+
+97
+00:04:10,840 --> 00:04:12,430
+什么时候能租。
+and when it's available.
+
+98
+00:04:12,430 --> 00:04:14,940
+能看到调用了好几个工具。这个
+And we see there's several tool calls being made. And there's this
+
+99
+00:04:14,940 --> 00:04:17,220
+工具调用是在查公寓空房情况，
+tool call that's getting apartment availability
+
+100
+00:04:17,220 --> 00:04:19,460
+然后是工具返回结果，接着是其他
+and a tool response followed by some other
+
+101
+00:04:19,460 --> 00:04:22,750
+对话。所以你看，这能让我们看日志。
+conversations. So you can see this allows us to look at the logs.
+
+102
+00:04:22,750 --> 00:04:25,060
+这正是
+And this is exactly what this
+
+103
+00:04:25,060 --> 00:04:28,210
+这个 Skill 能帮你做的：做出
+skill allows you to do is create something
+
+104
+00:04:28,210 --> 00:04:31,000
+一个顺手的界面，让你飞快地
+that has good ergonomics and allows you to flip through
+
+105
+00:04:31,000 --> 00:04:35,080
+翻看数据。不是所有标注界面都
+the data really fast. Not all annotation interfaces will look
+
+106
+00:04:35,080 --> 00:04:36,220
+长这样。agent 会做一个
+like this. The agent will create an
+
+107
+00:04:36,220 --> 00:04:39,480
+按你的数据定制的标注界面。
+annotation interface that is customized to your data.
+
+108
+00:04:39,480 --> 00:04:41,880
+所以你的标注界面很可能
+So it's likely that your annotation interface
+
+109
+00:04:41,880 --> 00:04:43,880
+跟这个差别很大。
+is going to look much different than this.
+
+110
+00:04:43,880 --> 00:04:46,180
+这个 Skill 的下一个阶段，是让 agent
+The next phase of the skill allows your agent to
+
+111
+00:04:46,180 --> 00:04:49,650
+智能地抽样数据。看数据非常枯燥。
+intelligently sample data. Looking at data is very tedious.
+
+112
+00:04:49,650 --> 00:04:51,340
+你可以想象，如果只是
+You can imagine if you just were to go
+
+113
+00:04:51,340 --> 00:04:54,220
+随机地一条条看这种日志，
+through logs like this one at a time randomly,
+
+114
+00:04:54,220 --> 00:04:57,120
+会非常单调，很快就累了。
+it would be very monotonous and you'll get tired
+
+115
+00:04:57,120 --> 00:04:57,790
+所以很重要的是，
+quickly. It's really important
+
+116
+00:04:57,790 --> 00:05:01,100
+看数据要尽可能高效。
+that you're looking at data as efficiently as possible.
+
+117
+00:05:01,580 --> 00:05:03,770
+也就是说，要随机看
+So what that means is it's important to look at
+
+118
+00:05:03,770 --> 00:05:06,140
+一些数据，确保你在
+some data randomly. So to make sure you're
+
+119
+00:05:06,140 --> 00:05:09,480
+探索整个空间，同时也要确保
+exploring the space, but also making sure
+
+120
+00:05:09,480 --> 00:05:12,420
+你看的样本足够多样，这样你
+that you are looking at diverse samples so that you
+
+121
+00:05:12,420 --> 00:05:14,700
+就能探索产品的广度，
+are exploring the breadth of your product
+
+122
+00:05:14,700 --> 00:05:17,520
+有时也要深挖你
+and sometimes also drilling into failures that you
+
+123
+00:05:17,520 --> 00:05:19,570
+已经发现的失败，了解更多。
+already uncovered so that you can learn more.
+
+124
+00:05:19,570 --> 00:05:22,740
+这部分 Skill 做的正是这件事：
+And so that's exactly what this part of the skill does
+
+125
+00:05:22,740 --> 00:05:25,560
+它让 agent 把数据聚成簇，
+is it instructs your agent to cluster your data
+
+126
+00:05:25,560 --> 00:05:27,600
+从各个簇里抽样，
+and sample from the clusters,
+
+127
+00:05:27,780 --> 00:05:29,780
+同时也随机抽样，
+but then also random sample
+
+128
+00:05:29,780 --> 00:05:31,640
+这样你就能做探索。
+so that you can do that exploration.
+
+129
+00:05:31,880 --> 00:05:34,460
+你看，这个阶段我们优先考虑多样性。
+As you see here in this phase, we prioritize diversity.
+
+130
+00:05:34,780 --> 00:05:36,860
+目标是发现失败模式，
+The goal is discovering failure modes,
+
+131
+00:05:36,920 --> 00:05:38,420
+而不是估计它们有多常见。
+not estimating how common they are.
+
+132
+00:05:38,660 --> 00:05:40,960
+最后是这个交互式审阅循环。
+And then finally, there's this interactive review loop.
+
+133
+00:05:41,100 --> 00:05:42,600
+这是这个 Skill 里我最喜欢的部分。
+This is my favorite part of this skill.
+
+134
+00:05:43,020 --> 00:05:46,000
+它让 agent 进入
+This instructs your agent to enter
+
+135
+00:05:46,000 --> 00:05:48,080
+一个交互式审阅循环，
+an interactive review loop
+
+136
+00:05:48,080 --> 00:05:52,480
+随着你标注 trace，它会调整抽样方式。
+so that it samples differently as you annotate traces.
+
+137
+00:05:52,740 --> 00:05:55,350
+你发现新错误后，
+So as you discover new errors,
+
+138
+00:05:55,350 --> 00:05:59,860
+agent 会更新抽样机制，给你看
+the agent will update its sampling mechanism and show you
+
+139
+00:05:59,860 --> 00:06:02,520
+相应的 trace。我们点开这个审阅
+appropriate traces. So we can click on this review
+
+140
+00:06:02,520 --> 00:06:05,140
+循环看看。能看到有
+loop to see what's going on here. See that there's
+
+141
+00:06:05,140 --> 00:06:07,450
+广度和深度。广度的目标是覆盖
+breadth and depth. The goal of breadth is to cover
+
+142
+00:06:07,450 --> 00:06:10,820
+数据集里尽可能多的部分。深度是
+as much of the dataset as possible. And depth is
+
+143
+00:06:10,820 --> 00:06:13,330
+一旦你发现了一个错误或失败模式，
+when once you found an error or a failure mode,
+
+144
+00:06:13,330 --> 00:06:16,900
+就彻底检查它，找出更多类似的
+examine it thoroughly and find more traces like
+
+145
+00:06:16,900 --> 00:06:19,000
+trace。它的工作方式是在后台
+that. And the way it works is it monitors your
+
+146
+00:06:19,000 --> 00:06:22,820
+监控你的标注，并在标注
+annotations in the background and processes them
+
+147
+00:06:22,820 --> 00:06:26,500
+进来时处理。这个 Skill 还多讲了一些
+as they arrive. This skill talks a little bit more about
+
+148
+00:06:26,500 --> 00:06:28,400
+深度模式是什么意思、具体怎么
+what depth mode means, how to actually go
+
+149
+00:06:28,400 --> 00:06:30,750
+做，广度怎么做，
+about that, how to do breadth,
+
+150
+00:06:30,750 --> 00:06:35,220
+以及重新审阅的一些规则。它会要求
+and some rules around re-reviewing things. And it's instructing
+
+151
+00:06:35,220 --> 00:06:38,190
+一直给你推送样本，直到收敛，
+to keep serving you samples until you converge
+
+152
+00:06:38,190 --> 00:06:41,140
+也就是再也找不到新类型的失败模式。
+or you're not finding any new kinds of failure modes.
+
+153
+00:06:41,140 --> 00:06:43,720
+这就是 error-discovery。
+So that's the error-discovery skill.
+
+154
+00:06:44,000 --> 00:06:46,440
+我们有一期视频详细讲这个 Skill，
+We have a video walking through this skill
+
+155
+00:06:46,440 --> 00:06:48,580
+是现场实操的。
+in a lot of detail where we do it live.
+
+156
+00:06:48,780 --> 00:06:50,960
+链接放在这里，你可以去看。
+We'll put the link here so you can get to it.
+
+157
+00:06:51,140 --> 00:06:52,540
+如果你想深入了解它怎么运作，
+And if you wanna dig into how it works,
+
+158
+00:06:52,600 --> 00:06:53,580
+一定要看看那期。
+you should totally watch that.
+
+159
+00:06:53,760 --> 00:06:55,480
+顺便说一句，如果你在学 AI eval，
+By the way, if you're learning AI evals,
+
+160
+00:06:55,620 --> 00:06:57,720
+我整理了一套知识卡片，
+I put together a set of flashcards
+
+161
+00:06:57,720 --> 00:06:59,980
+带你过一遍我们 AI eval 课程里
+that walk you through the most important concepts
+
+162
+00:06:59,980 --> 00:07:01,220
+最重要的概念。
+in our AI evals course.
+
+163
+00:07:01,540 --> 00:07:02,920
+链接放在下方。
+I'll leave the link to them below.
+
+164
+00:07:03,100 --> 00:07:05,840
+接下来我想给你看 eval-audit。
+The next thing I wanna show you is the eval-audit skill.
+
+165
+00:07:06,000 --> 00:07:09,040
+这是插件里我第二喜欢的 Skill。
+This is my second favorite skill out of the plugin.
+
+166
+00:07:09,040 --> 00:07:10,380
+基本上它的作用
+And basically what it does,
+
+167
+00:07:10,380 --> 00:07:14,230
+是让你快速找出大家
+is it allows you to quickly identify common mistakes
+
+168
+00:07:14,230 --> 00:07:15,860
+搭 eval 时常犯的错误。
+that people make in their eval setup. We've been
+
+169
+00:07:15,860 --> 00:07:18,090
+这些年我们一直用这个 Skill，
+using this skill successfully for years to uncover
+
+170
+00:07:18,090 --> 00:07:21,460
+成功找出别人 eval 流程里的真实问题。而且它
+real problems in people's eval pipelines. And it's
+
+171
+00:07:21,460 --> 00:07:23,400
+又快又好用。
+really fast and easy to use.
+
+172
+00:07:23,400 --> 00:07:26,640
+简单说，它会对照一份常见错误清单
+Basically what it will do is it'll check against a list of common
+
+173
+00:07:26,640 --> 00:07:29,840
+检查，确保你没有犯这些错误。
+mistakes to make sure you are not making those mistakes.
+
+174
+00:07:29,840 --> 00:07:31,460
+下面是其中一些错误。
+So here are some of those mistakes.
+
+175
+00:07:31,580 --> 00:07:33,440
+我们快速过一遍。
+Let's speed run them really fast.
+
+176
+00:07:33,440 --> 00:07:36,620
+这个 Skill 会连接你的 eval 基础设施，
+This skill is going to connect to your eval infrastructure,
+
+177
+00:07:36,620 --> 00:07:38,690
+做一些诊断检查。
+do some diagnostic checks.
+
+178
+00:07:38,690 --> 00:07:41,160
+它要做的是确认你做过
+But what it's going to do is it's going to make sure that you've done
+
+179
+00:07:41,160 --> 00:07:44,710
+错误分析，也就是我们刚才
+error analysis, which is the skill we just covered
+
+180
+00:07:44,710 --> 00:07:46,380
+讲 error-discovery 时说的。它会
+before with the error discovery. It's going to
+
+181
+00:07:46,380 --> 00:07:49,030
+确认你的失败类别
+make sure that your failure categories are ones
+
+182
+00:07:49,030 --> 00:07:52,160
+都是你观察到的，也就是你给
+that you observe, so that you have annotations
+
+183
+00:07:52,160 --> 00:07:56,980
+数据做了标注，你写的 eval 都基于数据，
+on your data, that any evals you write are based on data
+
+184
+00:07:56,980 --> 00:07:58,840
+而不是头脑风暴出来的、可能
+and not brainstormed problems that might
+
+185
+00:07:58,840 --> 00:08:03,870
+发生的问题。它还会检查你的 eval 是不是二元的，
+happen. And it'll check to make sure that your evals are binary,
+
+186
+00:08:03,870 --> 00:08:05,340
+通过/失败，而不是
+pass-fail, and not things like
+
+187
+00:08:05,340 --> 00:08:07,900
+李克特量表或字母等级。
+Likert scales or letter grades.
+
+188
+00:08:07,900 --> 00:08:11,460
+你通常不想要字母等级或李克特量表，
+You often don't want letter grades or Likert scales
+
+189
+00:08:11,460 --> 00:08:14,060
+因为它们往往很难驾驭，
+because those tend to be very unwieldy
+
+190
+00:08:14,060 --> 00:08:16,520
+还经常带来大量噪声。
+and often add a lot of noise.
+
+191
+00:08:16,520 --> 00:08:19,560
+它还会确认 LLM 评审没有塞太多标准，
+It also makes sure your LLM judges are not over-scoped.
+
+192
+00:08:19,560 --> 00:08:21,800
+能用代码检查的地方就用代码检查，
+You're using code-based checks when you can,
+
+193
+00:08:21,800 --> 00:08:24,020
+没有过度依赖 LLM 评审。
+and you're not over-relying on LLM judges.
+
+194
+00:08:24,020 --> 00:08:25,820
+它还会检查
+It also checks for the case
+
+195
+00:08:25,820 --> 00:08:27,960
+你是否滥用了相似度指标。
+where you're abusing similarity metrics.
+
+196
+00:08:27,960 --> 00:08:30,980
+很多人想拿相似度指标来做 eval，
+A lot of people try to abuse similarity metrics for evals,
+
+197
+00:08:30,980 --> 00:08:34,640
+但相似度指标用在这里
+and similarity metrics are rarely ever useful
+
+198
+00:08:34,640 --> 00:08:35,740
+几乎从来没什么用。
+for this purpose.
+
+199
+00:08:35,740 --> 00:08:37,380
+eval-audit 还会确认
+The eval-audit will also make sure
+
+200
+00:08:37,380 --> 00:08:39,680
+你验证过你的 LLM 评审。
+that you're validating your LLM as a judge.
+
+201
+00:08:39,680 --> 00:08:43,620
+换句话说，确保你的 LLM 评审是好的。
+In other words, make sure that your LLM judge is good.
+
+202
+00:08:43,620 --> 00:08:46,720
+怎么测试 LLM 评审好不好？
+How do you test if your LLM judge is good?
+
+203
+00:08:46,720 --> 00:08:48,800
+你得拿人工标签来检验它。
+You have to check it against human labels.
+
+204
+00:08:48,800 --> 00:08:50,940
+审计的这一部分就是干这个的。
+And that's what this part of the audit will do.
+
+205
+00:08:50,940 --> 00:08:53,300
+即使你在拿人工标签检验，
+Even if you are checking against human labels,
+
+206
+00:08:53,300 --> 00:08:55,820
+它也会确认你
+it will make sure that you are splitting up
+
+207
+00:08:55,820 --> 00:08:58,820
+正确地划分了数据，数据处理规范，
+your data properly and that you have good data hygiene
+
+208
+00:08:58,820 --> 00:09:00,200
+这样就不会过拟合，
+so you're not overfitting
+
+209
+00:09:00,200 --> 00:09:03,160
+不会偷看人工标签，
+and you're not peeking at the human labels
+
+210
+00:09:03,160 --> 00:09:04,980
+也不会让 LLM 评审
+and allowing the judge to cheat
+
+211
+00:09:04,980 --> 00:09:06,860
+在你评估它的时候作弊。
+in your evaluation of the judge.
+
+212
+00:09:06,860 --> 00:09:08,520
+eval-audit 还会确认
+This eval-audit will also make sure
+
+213
+00:09:08,520 --> 00:09:10,640
+你在标注数据时
+that you're using good review processes
+
+214
+00:09:10,640 --> 00:09:11,980
+用了好的审阅流程。
+when you're annotating data.
+
+215
+00:09:11,980 --> 00:09:14,700
+接着，它会检查你有没有足够的已标注数据
+Next, it will check to make sure you have enough labeled data
+
+216
+00:09:14,700 --> 00:09:16,220
+覆盖每一种失败模式。
+for every failure mode.
+
+217
+00:09:16,220 --> 00:09:20,440
+我们的目标是至少 100 条 trace，
+What we have is we target at least 100 traces
+
+218
+00:09:20,440 --> 00:09:22,880
+每种失败模式都要有这么多。
+for every failure mode you have.
+
+219
+00:09:22,880 --> 00:09:27,080
+这只是个建议，但它会看这一项。
+This is just a suggestion, but it will look at that.
+
+220
+00:09:27,080 --> 00:09:28,340
+如果不够，
+And if you don't have enough,
+
+221
+00:09:28,340 --> 00:09:31,380
+它会建议你怎么获取这些数据。
+it will try to suggest ways that you can acquire those.
+
+222
+00:09:31,380 --> 00:09:34,180
+最后，它会看你整个 eval 流程是否规范。
+Finally, it'll look at your overall eval pipeline hygiene.
+
+223
+00:09:34,180 --> 00:09:37,480
+它会确认你在定期
+It will make sure that you're running error analysis
+
+224
+00:09:37,480 --> 00:09:39,140
+做错误分析，
+on a consistent basis.
+
+225
+00:09:39,140 --> 00:09:40,940
+还会确认你在好好
+It will also make sure you're maintaining
+
+226
+00:09:40,940 --> 00:09:42,920
+维护你的评估器。
+your evaluators properly.
+
+227
+00:09:42,920 --> 00:09:45,520
+最终，它会生成一份报告
+And then finally, it will generate a report
+
+228
+00:09:45,520 --> 00:09:46,840
+给你审阅。
+for you to review.
+
+229
+00:09:46,840 --> 00:09:49,880
+error-discovery 和 eval-audit 这两个 Skill，
+The error-discovery skill and the eval-audit skill,
+
+230
+00:09:49,880 --> 00:09:53,380
+是我会花最多时间的两个。
+those are the two skills I would spend most of my time on.
+
+231
+00:09:53,380 --> 00:09:55,520
+只要你把这两个 Skill 过一遍，
+If you get through just those two skills
+
+232
+00:09:55,520 --> 00:09:57,300
+并且用起来，
+and you apply those two skills,
+
+233
+00:09:57,300 --> 00:09:59,940
+你在 eval 上就会远远领先
+you'll be far ahead of most people
+
+234
+00:10:00,000 --> 00:10:03,030
+大多数人。我们快速过一下其他 Skill。
+on evals. Let's quickly touch on the other skills.
+
+235
+00:10:03,030 --> 00:10:05,380
+我们已经讲了 error-discovery、
+So we already covered the error-discovery skill
+
+236
+00:10:05,380 --> 00:10:07,990
+eval-audit 和 evals-start。
+and the audit skill as well as the start skill.
+
+237
+00:10:07,990 --> 00:10:10,900
+generate-synthetic-data（生成合成数据）
+The generate-synthetic-data skill is useful when
+
+238
+00:10:10,900 --> 00:10:15,270
+适合拿不到数据的时候。比如你还没有用户，
+you can't acquire any data. Let's say you don't have any users,
+
+239
+00:10:15,270 --> 00:10:17,460
+产品还没上线，又想
+you are pre-product and you want
+
+240
+00:10:17,460 --> 00:10:19,450
+对产品做压力测试，
+to stress test your product.
+
+241
+00:10:19,450 --> 00:10:22,280
+就可以生成合成数据。生成合成数据有对的
+You might want to generate synthetic data. There is a right and
+
+242
+00:10:22,280 --> 00:10:24,040
+和错的方法。
+wrong way to generate synthetic data.
+
+243
+00:10:24,040 --> 00:10:26,620
+这个 Skill 会帮你做好这件事，尽量提高
+This skill will help with that and maximize the diversity
+
+244
+00:10:26,620 --> 00:10:28,520
+合成数据的多样性，让你
+of that synthetic data so that you are pushing
+
+245
+00:10:28,520 --> 00:10:31,920
+以正确的方式去试探应用的边界。
+the boundaries of your application in the right way.
+
+246
+00:10:32,160 --> 00:10:35,340
+然后有一个 Skill，帮你写 LLM
+Then there's a skill that will help you write an LLM
+
+247
+00:10:35,340 --> 00:10:36,880
+评审的提示词，并审查这些提示词，
+as a judge prompt and audit those prompts
+
+248
+00:10:36,880 --> 00:10:39,220
+确保它们符合最佳实践，这些实践来自
+to make sure they follow best practices based upon
+
+249
+00:10:39,220 --> 00:10:42,180
+我们和很多公司在这方面合作的经验。
+what we've found working with many companies
+
+250
+00:10:42,180 --> 00:10:46,190
+接着是 validate-evaluator（验证评估器），
+on this topic. Next, there's this validate-evaluator skill
+
+251
+00:10:46,190 --> 00:10:48,100
+它确保你的任何 LLM
+that makes sure that any LLM
+
+252
+00:10:48,100 --> 00:10:50,590
+评审都经过审查，以正确的方式
+as a judge you have is vetted and is checked
+
+253
+00:10:50,590 --> 00:10:53,420
+拿人工标签检验过，这样
+against human labels in the right way so that
+
+254
+00:10:53,420 --> 00:10:57,330
+你才能信任它。还有 evaluate-rag，
+you can trust it. There's also this evaluate-rag skill,
+
+255
+00:10:57,330 --> 00:11:00,240
+它帮你建立搜索和检索方面的评测指标。
+which will help you build evaluation metrics
+
+256
+00:11:00,240 --> 00:11:02,380
+最后，
+around search and retrieval. And finally,
+
+257
+00:11:02,380 --> 00:11:05,320
+还有 build-review-interface（搭建审阅界面）。
+there's this build-review-interface. The build-review-interface
+
+258
+00:11:05,320 --> 00:11:08,840
+它其实会被 error-discovery 调用，
+is actually leveraged by this error-discovery skill,
+
+259
+00:11:08,840 --> 00:11:10,140
+因为做错误发现时，
+because in error discovery,
+
+260
+00:11:10,800 --> 00:11:12,820
+你得审阅样本。
+you will have to review examples.
+
+261
+00:11:12,820 --> 00:11:16,380
+所以它算是给别的 Skill 用的 Skill。
+So this is kind of a skill used by other skills. There's a little
+
+262
+00:11:16,380 --> 00:11:19,720
+README 再往下还多讲了一点它的工作方式，
+bit more about how this skill works further down in the readme
+
+263
+00:11:19,720 --> 00:11:21,240
+如果你想了解整体
+if you want to know the general
+
+264
+00:11:21,240 --> 00:11:23,470
+流程、这些是怎么配合的，
+process of how this all fits together.
+
+265
+00:11:23,470 --> 00:11:25,600
+可以看这张图，或者读这
+You can see this diagram or read this
+
+266
+00:11:25,600 --> 00:11:28,190
+一段。如果你想看真实的
+paragraph. If you want to see how a real
+
+267
+00:11:28,190 --> 00:11:30,300
+团队怎么在生产环境里用这些 Skill，
+team is using these skills in production,
+
+268
+00:11:30,300 --> 00:11:33,270
+我最近和我们以前的一位学员
+I recently talked with one of our former students,
+
+269
+00:11:33,270 --> 00:11:35,880
+Lucas 聊了聊，他的团队怎么
+Lucas, about how his team uses
+
+270
+00:11:35,880 --> 00:11:38,290
+在生产环境里配合 Claude Code 用它们。
+them with Claude Code in production.
+
+271
+00:11:38,290 --> 00:11:41,900
+接下来可以看那期对话。
+You can watch that conversation next.

@@ -1,0 +1,1469 @@
+1
+00:00:00,000 --> 00:00:00,800
+嘿，大家好。
+Hey, how's it going?
+
+2
+00:00:01,040 --> 00:00:02,220
+如果你一直在看这个频道，
+If you've been watching this channel,
+
+3
+00:00:02,360 --> 00:00:04,300
+就知道我专注于 AI eval（评测）。
+you know that I focus on AI evals.
+
+4
+00:00:04,760 --> 00:00:07,300
+我做 eval 已经两年多了，
+I've been working on evals for over two years,
+
+5
+00:00:07,660 --> 00:00:09,580
+和 50 多家公司合作过，
+and I've worked with over 50 companies
+
+6
+00:00:09,580 --> 00:00:11,600
+用 eval 改进他们的 AI 产品，
+improving their AI products with evals,
+
+7
+00:00:11,740 --> 00:00:14,340
+同样的错误我一次又一次地看到。
+and I see the same mistake over and over again.
+
+8
+00:00:14,500 --> 00:00:16,620
+所以我来做个有意思的练习：
+So what I'm gonna do is this fun exercise
+
+9
+00:00:16,620 --> 00:00:19,460
+我这里有一堆 eval 概念，
+where I have all of these eval concepts,
+
+10
+00:00:20,000 --> 00:00:23,020
+我们把它们从 S 档排到 F 档。
+and we're gonna rank them from S tier to F.
+
+11
+00:00:23,120 --> 00:00:24,780
+我们直接开始。
+So let's get right into it.
+
+12
+00:00:24,860 --> 00:00:26,380
+第一个，通用指标。
+First thing, generic metrics.
+
+13
+00:00:26,560 --> 00:00:27,460
+什么是通用指标？
+What are generic metrics?
+
+14
+00:00:27,460 --> 00:00:30,360
+就是有帮助程度评分、简洁程度评分这类东西。
+These are things like helpfulness score, conciseness score.
+
+15
+00:00:30,840 --> 00:00:32,020
+它们非常泛，
+They're very generic.
+
+16
+00:00:32,420 --> 00:00:34,720
+通常是 eval 工具自带的，
+They usually come with eval tools,
+
+17
+00:00:35,040 --> 00:00:37,740
+用的是别人写的提示词。
+and they involve prompts written by someone else.
+
+18
+00:00:38,620 --> 00:00:40,160
+我把它放进 F 档，
+I'm going to put this in the F tier
+
+19
+00:00:40,160 --> 00:00:42,740
+因为这纯粹是浪费时间。
+because this is a giant waste of time.
+
+20
+00:00:43,000 --> 00:00:45,300
+如果你的仪表盘上有这种通用指标，
+If you have generic metrics like this on your dashboard,
+
+21
+00:00:46,100 --> 00:00:47,700
+它们很可能什么都没告诉你，
+they're probably not telling you anything,
+
+22
+00:00:48,140 --> 00:00:50,500
+通常一点用都没有。
+and they're usually not useful at all.
+
+23
+00:00:50,820 --> 00:00:52,920
+好，第二个，错误分析。
+Okay, the second thing, error analysis.
+
+24
+00:00:53,240 --> 00:00:54,200
+什么是错误分析？
+What is error analysis?
+
+25
+00:00:54,200 --> 00:00:57,480
+错误分析是一个帮你看数据的流程，
+Error analysis is a process that helps you look at your data.
+
+26
+00:00:57,520 --> 00:01:00,960
+算是一种快速看数据的结构化方法，
+It's like a structured approach to looking at your data quickly
+
+27
+00:01:00,960 --> 00:01:03,780
+让你找出应用里哪里坏了。
+so that you can find what's broken in your application.
+
+28
+00:01:04,980 --> 00:01:06,200
+我把它放进 S 档。
+I'm going to put this on the S tier.
+
+29
+00:01:06,580 --> 00:01:08,740
+如果你没做这个，你的 eval 就做错了，
+If you're not doing this, you're doing evals wrong,
+
+30
+00:01:08,960 --> 00:01:10,700
+你需要去看数据。
+and you need to be looking at data.
+
+31
+00:01:11,450 --> 00:01:13,170
+后面我会再细讲。
+I'll talk more about that later.
+
+32
+00:01:13,470 --> 00:01:14,830
+好，下一个。
+Okay, here's the next one.
+
+33
+00:01:14,990 --> 00:01:16,890
+还没开始做产品，就先写 eval。
+Writing evals before building anything.
+
+34
+00:01:17,450 --> 00:01:21,190
+我的意思是，在开始写 eval 之前，
+So what I mean by this is before you start writing evals,
+
+35
+00:01:21,270 --> 00:01:24,190
+你坐在一个房间里，或者某个阴暗的角落，
+you sit down in a room or maybe a dark corner,
+
+36
+00:01:24,190 --> 00:01:27,210
+把你的应用所有可能出错的地方
+and you just brainstorm all the things
+
+37
+00:01:27,210 --> 00:01:29,390
+都头脑风暴一遍，
+that could possibly go wrong with your application.
+
+38
+00:01:29,910 --> 00:01:32,290
+然后为这些写一大堆 eval，
+And then you write a whole bunch of evals for that
+
+39
+00:01:32,290 --> 00:01:33,430
+从这里起步。
+and you start there.
+
+40
+00:01:33,710 --> 00:01:37,130
+我会说，我把它放进 C 档。
+I would say, I'm going to put that in the C tier.
+
+41
+00:01:37,650 --> 00:01:39,290
+你不应该这么做，
+You don't want to do this
+
+42
+00:01:39,290 --> 00:01:41,410
+因为 AI 产品可能出错的地方
+because there's an infinite surface area
+
+43
+00:01:41,410 --> 00:01:44,030
+是无穷无尽的。
+of things that can go wrong in your AI product.
+
+44
+00:01:44,150 --> 00:01:45,450
+你只会浪费大量时间，
+You're just going to waste a lot of time
+
+45
+00:01:45,450 --> 00:01:48,010
+如果你一上来就用这种自上而下的方式。
+if you just come at it with a top-down approach like that.
+
+46
+00:01:48,530 --> 00:01:49,970
+这不是世界上最糟的事，
+It's not the worst thing in the world
+
+47
+00:01:49,970 --> 00:01:51,670
+因为至少你在做点什么，
+because at least you're doing something,
+
+48
+00:01:51,670 --> 00:01:55,450
+但这样安排时间的优先级很糟糕。
+but it's a bad way to prioritize your time.
+
+49
+00:01:55,810 --> 00:01:57,390
+你应该先看数据，
+You should be looking at data first
+
+50
+00:01:57,390 --> 00:01:59,410
+看看实际哪里坏了，
+and seeing what's actually broken
+
+51
+00:01:59,410 --> 00:02:02,190
+再据此决定先写哪些 eval，
+and let that help you prioritize what evals to write
+
+52
+00:02:02,190 --> 00:02:03,450
+因为 eval 不便宜。
+because evals aren't cheap.
+
+53
+00:02:03,730 --> 00:02:04,810
+自定义标注工具。
+Custom annotation tool.
+
+54
+00:02:05,680 --> 00:02:07,100
+这个自定义标注工具，
+So this custom annotation tool,
+
+55
+00:02:07,620 --> 00:02:10,300
+基本上就是说，你应该自己写
+basically like you should be writing
+
+56
+00:02:10,300 --> 00:02:13,340
+一个自定义标注工具来帮你看数据。
+a custom annotation tool to help you look at your data.
+
+57
+00:02:13,660 --> 00:02:14,880
+所以我把它放进 S 档。
+So I'm gonna put it in the S tier.
+
+58
+00:02:15,480 --> 00:02:18,220
+意思是用 Claude、Codex（编程智能体工具）等
+And what I mean by this is like use Claude, Codex, whatever
+
+59
+00:02:18,220 --> 00:02:21,640
+做一个自定义标注应用，
+and create a custom annotation app
+
+60
+00:02:21,640 --> 00:02:24,280
+去掉查看 trace（调用轨迹）时的所有阻力，
+that removes all the friction from looking at your traces
+
+61
+00:02:24,280 --> 00:02:26,180
+把它做得非常好用。
+and make it really good.
+
+62
+00:02:26,760 --> 00:02:29,380
+比如说，你有一个 AI 系统
+So like, let's say you have an AI system
+
+63
+00:02:29,380 --> 00:02:31,600
+帮你写邮件，那就把它渲染成邮件的样子。
+that helps you write emails, render it like an email.
+
+64
+00:02:31,740 --> 00:02:33,220
+这比电子表格好得多。
+It's way better than spreadsheets.
+
+65
+00:02:33,720 --> 00:02:36,140
+自己做定制的标注工具，
+And there's just a lot of alpha there
+
+66
+00:02:36,140 --> 00:02:38,060
+能带来很大的回报。
+in creating your own custom annotation tool.
+
+67
+00:02:38,060 --> 00:02:42,220
+好，下一个：假设你有一套 eval，
+Okay, the next one, let's say you have a suite of evals
+
+68
+00:02:42,220 --> 00:02:45,300
+你的 eval 100% 通过。
+and your evals pass 100%.
+
+69
+00:02:45,300 --> 00:02:47,060
+就是你整套 eval
+Like your whole suite of evals,
+
+70
+00:02:47,200 --> 00:02:50,300
+在所有测试用例上都 100% 通过。
+they're all 100% passing against all your test cases.
+
+71
+00:02:50,300 --> 00:02:51,980
+这是好事吗？
+Is that a good thing?
+
+72
+00:02:52,100 --> 00:02:53,620
+我会说这是 D 档。
+I would say that's D tier.
+
+73
+00:02:53,840 --> 00:02:56,500
+如果你的 eval 一直
+If your evals are always passing all the time
+
+74
+00:02:56,500 --> 00:02:58,120
+在所有测试用例上都通过，
+on all your test cases,
+
+75
+00:02:58,260 --> 00:02:59,860
+它们什么都没告诉你。
+they're not telling you anything at all.
+
+76
+00:03:00,160 --> 00:03:01,660
+它们只是一直在通过。
+They're just passing all the time.
+
+77
+00:03:02,480 --> 00:03:04,260
+你应该把 eval 看得和软件里的
+You should think of evals a little bit different
+
+78
+00:03:04,260 --> 00:03:06,520
+单元测试有点不一样。
+than your unit tests in software.
+
+79
+00:03:06,840 --> 00:03:09,180
+你不希望它们总是通过。
+Like you don't want them to always be passing.
+
+80
+00:03:09,320 --> 00:03:11,560
+你应该一直有一些还很难通过的 eval，
+You should always have some hard to reach evals
+
+81
+00:03:11,560 --> 00:03:14,680
+有挑战性的、你正在攻克的，
+that are challenging, that you're working on
+
+82
+00:03:14,680 --> 00:03:16,980
+这样你就能用这些 eval
+so that you can use those evals
+
+83
+00:03:16,980 --> 00:03:18,260
+来帮你改进应用。
+to help improve your application.
+
+84
+00:03:18,260 --> 00:03:20,320
+好，自己读 trace。
+Okay, reading traces yourself.
+
+85
+00:03:20,400 --> 00:03:24,810
+这同样是 S 档，又回到了看数据。
+This is, again, S tier. This goes back to looking at the data.
+
+86
+00:03:24,810 --> 00:03:27,320
+没有什么比看数据
+There's nothing more valuable than looking at
+
+87
+00:03:27,320 --> 00:03:30,310
+更有价值了。好，现成的 LLM 评审器。
+the data. Okay, off-the-shelf LLM judges.
+
+88
+00:03:30,310 --> 00:03:34,400
+这是什么意思？如果你去找一家热门的 eval 供应商，
+What does that mean? If you go to a popular evals vendor,
+
+89
+00:03:34,400 --> 00:03:36,140
+很多时候他们会有
+a lot of times they'll have, like,
+
+90
+00:03:36,140 --> 00:03:39,000
+一个现成的 LLM 评审器，附带别人替你
+an off-the-shelf LLM judge with a prompt someone has written for
+
+91
+00:03:39,000 --> 00:03:41,360
+写好的提示词。我会说这是 F 档。
+you. I would say this is F tier.
+
+92
+00:03:41,360 --> 00:03:45,040
+这跟通用指标是一回事。别这么做，别用
+This is the same thing as generic metrics. Don't do this. Don't use
+
+93
+00:03:45,040 --> 00:03:48,210
+那些东西。不信你去读读那些提示词。
+those things. I challenge you to go read those prompts.
+
+94
+00:03:48,210 --> 00:03:49,980
+那些提示词很少说得通，
+Those prompts rarely make any sense,
+
+95
+00:03:49,980 --> 00:03:54,340
+而且超级泛，通常不适合你的产品。
+and they're super generic. They're usually not good for your product.
+
+96
+00:03:54,340 --> 00:03:55,920
+好，没有 eval 的
+Okay. Prompt optimization
+
+97
+00:03:55,920 --> 00:03:58,540
+提示词优化。这大概也是 F 档。
+without evals. This is probably also F tier.
+
+98
+00:03:58,540 --> 00:04:01,660
+如果没有 eval，你到底
+Like what are you even optimizing against if you don't
+
+99
+00:04:01,660 --> 00:04:04,880
+在针对什么优化？我经常看到
+have evals? I see this all the time
+
+100
+00:04:04,880 --> 00:04:08,820
+有人直接让 Claude 改进他们的产品，然后只给
+where people just ask Claude to improve their product and give
+
+101
+00:04:08,820 --> 00:04:12,500
+一个很模糊的描述，说明什么才算好。
+like, a very vague description of what good looks like.
+
+102
+00:04:12,500 --> 00:04:15,870
+这通常是个坏主意。你的 agent 最后
+It's usually a bad idea. Your agent will
+
+103
+00:04:15,870 --> 00:04:17,570
+会产出一堆粗制滥造的东西。别这么做。
+end up producing a lot of slop. Don't do this.
+
+104
+00:04:17,570 --> 00:04:20,950
+在着手提示词优化之前，
+Think about evals a little bit before you jump
+
+105
+00:04:20,950 --> 00:04:23,650
+先稍微想想 eval。先看看你的数据，
+into prompt optimization. Look at your data before
+
+106
+00:04:23,650 --> 00:04:26,150
+再着手提示词优化，并且想清楚
+you jump into prompt optimization and think about
+
+107
+00:04:26,150 --> 00:04:27,730
+你要针对什么优化。好，
+what you're trying to optimize against. Okay,
+
+108
+00:04:27,730 --> 00:04:30,930
+二元的通过/失败指标。我把它放进
+binary pass/fail metrics. I'm going to put this
+
+109
+00:04:30,930 --> 00:04:33,430
+A 档。我的意思是，不管你做哪种 eval，
+in A tier. So what I mean by that is
+
+110
+00:04:33,430 --> 00:04:37,030
+尤其是 LLM 评审（LLM-as-a-judge）
+if you're building any kind of eval, especially LLM as a
+
+111
+00:04:37,030 --> 00:04:39,210
+或分类器，你都希望输出是
+judge or a classifier, you want the output to be
+
+112
+00:04:39,210 --> 00:04:42,470
+二元的，而不是李克特量表。二元判定
+binary rather than a Likert scale. Binary is just
+
+113
+00:04:42,470 --> 00:04:44,400
+能去掉大量噪声，
+going to cut through a lot of noise
+
+114
+00:04:44,400 --> 00:04:47,750
+帮你理清决策：什么是
+and help you clarify your decision-making in terms of what is
+
+115
+00:04:47,750 --> 00:04:50,260
+好、什么是坏。如果你用李克特量表，
+good and what is bad. If you have a Likert scale,
+
+116
+00:04:50,260 --> 00:04:53,710
+比如 1 到 5 分，甚至 0 到
+like one to five, or even a score from zero to
+
+117
+00:04:53,710 --> 00:04:56,970
+100 分，很多时候你会把大量复杂性藏起来，
+a hundred, oftentimes you're going to hide a lot of complexity
+
+118
+00:04:56,970 --> 00:04:59,470
+等于把该做的决定
+and kind of kick the can down the
+
+119
+00:04:59,470 --> 00:05:01,480
+往后拖。
+road in terms of decision-making.
+
+120
+00:05:01,480 --> 00:05:04,710
+你会把它藏在那些中间分值里。而那些分值
+You're going to hide that in those middle values. And those
+
+121
+00:05:04,710 --> 00:05:06,070
+其实没那么好解读。
+aren't really that interpretable.
+
+122
+00:05:06,070 --> 00:05:08,750
+所以我一般不建议大家这么做，
+So I would discourage people from doing that generally,
+
+123
+00:05:08,830 --> 00:05:10,170
+除非你有充分的理由。
+unless you have a good reason to.
+
+124
+00:05:10,170 --> 00:05:12,370
+顺便说一下，这些我会讲得很快。
+And I'm going to go through these really fast, by the way.
+
+125
+00:05:12,770 --> 00:05:15,610
+我有一份 eval 指南，每一项
+I have an evals guide that talks about each
+
+126
+00:05:15,610 --> 00:05:18,510
+都讲得很详细。你可以在
+of these things in a lot of detail. You can find
+
+127
+00:05:18,510 --> 00:05:21,310
+bit.ly/evals-guide 找到。好，
+it if you go to bit.ly/evals-guide. Okay,
+
+128
+00:05:21,310 --> 00:05:24,850
+下一个是用公开基准测试
+so the next thing is public benchmarks as a substitute
+
+129
+00:05:24,850 --> 00:05:27,470
+代替产品 eval。我们知道
+for product evals. Okay, so we know
+
+130
+00:05:27,470 --> 00:05:30,750
+外面有各种公开基准测试，Terminal-Bench、
+that there's public benchmarks out there, Terminal-Bench,
+
+131
+00:05:30,750 --> 00:05:33,980
+SWE-bench，等等。你应不应该
+SWE-bench, you name it. Should you just use those
+
+132
+00:05:33,980 --> 00:05:37,550
+直接拿这些基准测试当你的 eval？我会说
+benchmarks somehow as your evals? I would say
+
+133
+00:05:37,550 --> 00:05:42,030
+绝对不行。这些基准测试也许能帮你选模型，
+absolutely not. Those benchmarks may help you choose a model,
+
+134
+00:05:42,030 --> 00:05:43,630
+但它们通常和你产品特有的失败
+but they usually don't correlate
+
+135
+00:05:43,630 --> 00:05:46,650
+关联不大。
+that well to your product-specific failures.
+
+136
+00:05:46,650 --> 00:05:49,230
+你需要给你的产品建 eval。
+You need to create evals for your product.
+
+137
+00:05:49,450 --> 00:05:52,770
+下一个：只让开发者标注数据。
+The next one: only devs annotate data.
+
+138
+00:05:52,770 --> 00:05:57,570
+我把它放进 D 档。除非你做的是
+I'm going to put this in D tier. So unless you're building
+
+139
+00:05:57,570 --> 00:05:59,680
+编程 agent，否则开发者不应该是
+a coding agent, your developers should not be
+
+140
+00:05:59,680 --> 00:06:02,650
+标注数据的人。应该让领域
+the ones annotating data. You should have the domain
+
+141
+00:06:02,650 --> 00:06:05,710
+专家来标注数据。
+experts be the ones that are annotating data.
+
+142
+00:06:05,710 --> 00:06:08,050
+通常是产品经理这样的人，
+Usually that's someone like a product manager,
+
+143
+00:06:08,050 --> 00:06:13,590
+或者如果是专家型助手，比如医疗 AI 助手，
+or if it's an expert assistant, like a medical AI assistant,
+
+144
+00:06:13,590 --> 00:06:14,950
+那你就需要
+then you would need, like, a
+
+145
+00:06:14,950 --> 00:06:18,890
+医生或者有足够专业知识的人来审数据，
+doctor or somebody with enough expertise to be reviewing the data,
+
+146
+00:06:18,890 --> 00:06:20,510
+而不是开发者。为验证
+and not a developer. Designing
+
+147
+00:06:20,510 --> 00:06:24,430
+而设计：这一条就是说，
+for verification: this one just refers to, hey,
+
+148
+00:06:24,430 --> 00:06:27,710
+把你的应用设计得容易
+design your application such that it's easy to
+
+149
+00:06:27,710 --> 00:06:32,670
+验证，也就是给专家看中间输出，
+verify, meaning show your experts intermediate outputs.
+
+150
+00:06:32,670 --> 00:06:34,670
+别一次性只给他们一个答案。
+Don't just show them the answer in one shot.
+
+151
+00:06:34,670 --> 00:06:37,410
+我把它放进 B 档。这算是进阶的，不是必需的，
+I'll put it in B. It's kind of advanced. It's not necessary,
+
+152
+00:06:37,410 --> 00:06:40,170
+但是个非常好的主意。1 到 5 分
+but it's a really good idea. One-to-five
+
+153
+00:06:40,170 --> 00:06:41,340
+打分：我们已经讲过了。
+ratings: we already talked about this.
+
+154
+00:06:41,340 --> 00:06:44,350
+别用李克特量表。我直接把它
+Don't use Likert scales. I'm gonna go ahead and put this
+
+155
+00:06:44,350 --> 00:06:48,540
+放进 F 档，因为我讨厌它，觉得它很浪费时间，
+in F because I hate it. I think it wastes a lot of time,
+
+156
+00:06:48,540 --> 00:06:51,150
+而且 eval 结果不是二元的话，
+and it just makes you spin your wheels as
+
+157
+00:06:51,150 --> 00:06:54,600
+会让整个工程团队或产品团队
+an engineering team or a product team in general
+
+158
+00:06:54,600 --> 00:06:57,810
+原地打转。好，
+to have non-binary outcomes for your evals. Okay,
+
+159
+00:06:57,910 --> 00:07:00,670
+一个评审器包揽一切。我看到很多团队
+one judge for everything. I see a lot of teams just,
+
+160
+00:07:00,670 --> 00:07:02,510
+把所有东西都塞进一个评审器。他们
+like, push everything into one judge. They
+
+161
+00:07:02,510 --> 00:07:05,420
+给评审器写一个巨大的提示词，
+have, like, one giant prompt for the judge of, like,
+
+162
+00:07:05,420 --> 00:07:09,540
+列出所有能想到的错误。说实话，这种情况下
+every thinkable mistake. And honestly, the judge
+
+163
+00:07:09,540 --> 00:07:13,140
+评审器的范围定得太大了。
+in these situations is scoped way too large.
+
+164
+00:07:13,320 --> 00:07:14,540
+我其实会把它放进 F 档。
+I'd actually put that in the F tier.
+
+165
+00:07:14,700 --> 00:07:15,580
+我觉得这非常糟糕。
+I think that's really bad.
+
+166
+00:07:15,840 --> 00:07:17,780
+你成功的可能性非常低，
+Your likelihood of success is very low
+
+167
+00:07:17,780 --> 00:07:20,620
+如果你只用一个评审器管所有事。
+if you just have one judge for everything.
+
+168
+00:07:20,860 --> 00:07:22,420
+基于代码的检查，S 档。
+Code-based checks, S tier.
+
+169
+00:07:22,900 --> 00:07:25,480
+你应该始终尽量用便宜的 eval，
+You should always try to have cheap evals
+
+170
+00:07:25,480 --> 00:07:26,320
+能用就用。
+wherever possible.
+
+171
+00:07:26,940 --> 00:07:30,020
+LLM 评审是最贵的
+So LLM as a judge is the most expensive
+
+172
+00:07:30,020 --> 00:07:32,040
+一种 eval。
+kind of eval you can have.
+
+173
+00:07:32,620 --> 00:07:35,160
+分类器更便宜，比如 Jev（一种决策模型）。
+A classifier is even cheaper, something like Jev.
+
+174
+00:07:35,500 --> 00:07:37,120
+比它还便宜的是代码。
+Even cheaper than that is code.
+
+175
+00:07:37,720 --> 00:07:41,540
+所以尽量用你能用的最便宜的 eval 手段。
+So try to use the cheapest eval machinery you can.
+
+176
+00:07:42,260 --> 00:07:44,320
+当然，你要确保
+Obviously, you want to make sure
+
+177
+00:07:44,320 --> 00:07:46,260
+你的 eval 和人工标签一致，
+that your eval agrees with human labels.
+
+178
+00:07:46,360 --> 00:07:47,440
+要验证这一点。
+You want to validate that.
+
+179
+00:07:47,440 --> 00:07:50,110
+但在这个前提下，要用对工具，
+But within that, use the right tool for the job
+
+180
+00:07:50,110 --> 00:07:53,940
+看看能不能巧妙一点，
+and try to see if you can be clever and
+
+181
+00:07:53,940 --> 00:07:56,420
+用更便宜的方法，因为这很划算。
+use cheaper methods because it pays off.
+
+182
+00:07:56,600 --> 00:07:59,620
+好，只基于头脑风暴出来的失败写 eval。
+Okay, evals based only on brainstormed failures.
+
+183
+00:07:59,920 --> 00:08:01,680
+这又是 F 档。
+This again is F tier.
+
+184
+00:08:02,080 --> 00:08:04,010
+我们之前算是讲过了，
+We kind of talked about this,
+
+185
+00:08:04,010 --> 00:08:06,500
+别坐在那里头脑风暴失败，再拿它们
+like don't sit there and brainstorm failures and use those
+
+186
+00:08:06,500 --> 00:08:12,200
+来驱动 eval，要做错误分析。至少你在做点什么，
+to drive evals, do error analysis. At least you're doing something,
+
+187
+00:08:12,200 --> 00:08:14,120
+你知道的，你应该先看
+you know, you should look at your
+
+188
+00:08:14,120 --> 00:08:16,900
+数据。那就算它 C 档吧。嘿，其实，
+data first. So let's make that C tier. Hey, it's just,
+
+189
+00:08:16,900 --> 00:08:19,380
+它跟还没做产品就先写 eval
+it's really the same as writing evals before
+
+190
+00:08:19,380 --> 00:08:22,330
+是一回事。通用的有帮助程度、连贯性评分。
+building. Generic helpfulness and coherence scores.
+
+191
+00:08:22,330 --> 00:08:24,320
+我们已经讲过了。放进 F
+We already talked about this. That goes in the F
+
+192
+00:08:24,320 --> 00:08:26,430
+档。好，“仁慈独裁者”（由一人拍板）。
+tier. Okay. Benevolent dictator.
+
+193
+00:08:26,430 --> 00:08:30,160
+如果你靠委员会来标注数据，那会超级
+So if you are annotating your data by committee, that is super
+
+194
+00:08:30,160 --> 00:08:32,230
+痛苦、超级昂贵。只要有可能，
+painful and super costly. Where possible,
+
+195
+00:08:32,230 --> 00:08:35,600
+就尽量指定一位“仁慈独裁者”。我把它放进
+try to appoint a benevolent dictator. I'm going to put
+
+196
+00:08:35,600 --> 00:08:39,140
+A 档。“仁慈独裁者”就是
+it in A tier. Benevolent dictator is someone
+
+197
+00:08:39,140 --> 00:08:41,200
+一个你信得过、能标注你数据、能
+that you trust to annotate your data, someone that can
+
+198
+00:08:41,200 --> 00:08:43,850
+做最终决定的人。理想情况下就是这个人，
+make the final call. And hopefully that's the person,
+
+199
+00:08:43,850 --> 00:08:46,420
+针对某个特定的
+you only need one person for that specific
+
+200
+00:08:46,420 --> 00:08:50,380
+功能、产品或地区，只需要一个人来标注
+feature, product, or geography to be able to annotate
+
+201
+00:08:50,380 --> 00:08:52,700
+这些数据。不必一个人
+that data. It doesn't have to be one
+
+202
+00:08:52,700 --> 00:08:54,980
+管所有东西，但参与标注的人
+person for everything, but the fewer people
+
+203
+00:08:54,980 --> 00:08:58,680
+越少，对你越
+that you can have annotating data, the better off you
+
+204
+00:08:58,680 --> 00:09:01,950
+有利。好，先选 eval 供应商。
+are. Okay, picking an eval vendor first.
+
+205
+00:09:01,950 --> 00:09:05,720
+我把它放进 F 档。如果你
+I'm going to put that in F tier. So if the first thing you
+
+206
+00:09:05,720 --> 00:09:09,590
+解决 eval 问题时，第一件事就去挑供应商，
+do when trying to solve for evals is you go pick a vendor,
+
+207
+00:09:09,590 --> 00:09:11,680
+那你就麻烦了。别这么做。
+you're in trouble. Don't do that. It's
+
+208
+00:09:11,680 --> 00:09:14,260
+关键不在工具，要专注于流程。
+not about the tools. Focus on the process.
+
+209
+00:09:14,260 --> 00:09:18,660
+看数据，写一些最小限度的 eval，弄清
+Look at the data. Write some minimal evals. Understand
+
+210
+00:09:18,660 --> 00:09:20,610
+发生了什么。别直奔工具。
+what's happening. Don't go straight for the tools.
+
+211
+00:09:20,610 --> 00:09:23,040
+如果你直奔工具，很可能
+If you go straight for the tools, you're likely
+
+212
+00:09:23,040 --> 00:09:26,040
+会被带偏。别这么做，专注于流程。
+going to be led astray. Don't do that. Focus on the process.
+
+213
+00:09:26,040 --> 00:09:28,160
+好，用 ROUGE 和 BERTScore（文本相似度指标）
+Okay, ROUGE and BERTScore for answer
+
+214
+00:09:28,160 --> 00:09:31,030
+评回答质量。很多时候这些指标
+quality. These metrics don't even make sense a lot
+
+215
+00:09:31,030 --> 00:09:33,000
+用来评回答质量根本说不通。你不想要
+of times for answer quality. You don't want some
+
+216
+00:09:33,000 --> 00:09:37,480
+ROUGE 这种字符串相似度分数来评 AI 输出，
+kind of string similarity score like ROUGE for AI outputs,
+
+217
+00:09:37,480 --> 00:09:39,780
+一般来说也不想要
+and you don't want generic metrics in
+
+218
+00:09:39,780 --> 00:09:42,350
+通用指标。别用这些。要针对你的失败
+general. Just don't use that. Create product-specific
+
+219
+00:09:42,350 --> 00:09:46,440
+建立产品特有的指标。降低一直通过的
+metrics for your failures. Running always-passing
+
+220
+00:09:46,440 --> 00:09:50,210
+eval 的运行频率：这一点非常值得记住。
+evals less often: this is a really good thing to keep in mind.
+
+221
+00:09:50,210 --> 00:09:52,900
+我把它放进 A 档。eval
+I'm gonna put it in A tier. So evals
+
+222
+00:09:52,900 --> 00:09:56,730
+不是免费的。很多时候跑 eval 要花钱，
+are not free. It costs money a lot of times to run evals,
+
+223
+00:09:56,730 --> 00:09:59,180
+尤其是不基于代码的 eval，
+especially if they're not code-based evals.
+
+224
+00:10:00,000 --> 00:10:01,950
+比如 LLM 评审，你要权衡这个 eval 的
+If they're LLM as a judge, you want to weigh the costs
+
+225
+00:10:01,950 --> 00:10:05,440
+成本和收益。所以如果它
+and benefits of the eval. And so if it's
+
+226
+00:10:05,440 --> 00:10:08,510
+一直通过，就是一个信号：这个 eval
+always passing, that's one sign that the eval is
+
+227
+00:10:08,510 --> 00:10:11,260
+对你的用处在变小，可以考虑
+becoming less useful to you and maybe consider
+
+228
+00:10:11,260 --> 00:10:12,880
+让它退役。好，下一个，
+retiring it. Okay, the next one,
+
+229
+00:10:12,880 --> 00:10:16,810
+每发现一个失败就马上写一个 eval。我
+immediately writing an eval for every failure. I'm going to
+
+230
+00:10:16,810 --> 00:10:19,800
+把它放进 D 档。其实我还是放 F 档吧。
+put this in the D tier. I'll put this in the F tier actually.
+
+231
+00:10:19,800 --> 00:10:21,690
+如果你一看到失败
+So if you immediately write an eval
+
+232
+00:10:21,690 --> 00:10:25,410
+就马上写一个 eval，大概不是好主意，
+for every failure you see, it's probably a bad idea
+
+233
+00:10:25,410 --> 00:10:27,450
+因为还是那句话，eval 不是免费的。你得
+because again, evals aren't free. You have
+
+234
+00:10:27,450 --> 00:10:29,210
+权衡成本和收益。
+to weigh the costs and benefits.
+
+235
+00:10:29,210 --> 00:10:33,830
+如果这个失败很严重，你又不知道怎么修，
+So if the failure is really bad and you don't know how to fix it,
+
+236
+00:10:34,110 --> 00:10:36,600
+那正是写 eval 的绝佳时机，
+that's an amazing situation in which to write an eval,
+
+237
+00:10:36,600 --> 00:10:39,150
+因为这个 eval 很可能会给
+because that eval is probably going to provide
+
+238
+00:10:39,150 --> 00:10:43,170
+你带来价值。它不仅能抓住这个错误，
+you with value. It's not only useful to catch that error,
+
+239
+00:10:43,170 --> 00:10:46,610
+而且你要修好这个错误，
+but you're going to have to iterate a lot
+
+240
+00:10:46,610 --> 00:10:49,320
+得花一段时间反复迭代。
+over a period of time to fix that error.
+
+241
+00:10:49,320 --> 00:10:51,390
+这个 eval 能帮到你，因为它
+And that eval is going to help you because it's going to
+
+242
+00:10:51,390 --> 00:10:54,020
+给了你一个不断调优的目标。好，下一个，
+give you a goal to hill climb against. Okay, next one,
+
+243
+00:10:54,020 --> 00:10:57,050
+用人工标签验证评审器。我
+validating judges against human labels. I'm
+
+244
+00:10:57,050 --> 00:11:01,340
+把它放进 S 档。大多数人写 LLM 评审，
+going to put that in S tier. So most people write an LLM judge,
+
+245
+00:11:01,340 --> 00:11:03,650
+就只写个提示词，然后
+they just write a prompt, and they
+
+246
+00:11:03,650 --> 00:11:06,820
+说：这就是我的评审器。可你怎么信得过它？
+say, this is my judge. But how do you trust that judge?
+
+247
+00:11:06,820 --> 00:11:09,040
+唯一能信任评审器的办法，就是拿
+The only way to trust a judge is to check
+
+248
+00:11:09,040 --> 00:11:14,610
+人工标签检验。所以用人工标签验证是 S 档。
+it with human labels. And so validating with human labels is S tier.
+
+249
+00:11:14,610 --> 00:11:16,220
+好，现成的护栏（约束机制）。
+Okay, off-the-shelf guardrails.
+
+250
+00:11:16,620 --> 00:11:18,110
+现成的护栏，F 档。
+Off-the-shelf guardrails, F tier.
+
+251
+00:11:18,110 --> 00:11:22,060
+非常糟糕的主意，原因跟通用指标
+Very bad idea for the same reasons that generic metrics are a
+
+252
+00:11:22,060 --> 00:11:25,510
+一样。你不应该盲目地用
+bad idea. You don't want to just blindly use
+
+253
+00:11:25,510 --> 00:11:27,530
+别人的提示词，或者别人的
+someone else's prompts or use someone else's
+
+254
+00:11:27,530 --> 00:11:30,610
+分类器。通常是个坏主意。
+classifier. Usually it's a bad idea.
+
+255
+00:11:30,610 --> 00:11:33,880
+它们没有针对你的产品调过。别这么做。我看到的
+They're not tuned to your product. Don't do this. Most of the
+
+256
+00:11:33,880 --> 00:11:36,680
+现成护栏，大多数时候就是别人写的提示词。
+time I see off-the-shelf guardrails are just someone else's prompt.
+
+257
+00:11:36,680 --> 00:11:38,240
+先定评分细则再
+Deciding on a rubric before
+
+258
+00:11:38,240 --> 00:11:40,980
+读数据。这个我还是给 C 档。
+reading data. I'm going to call it C tier again.
+
+259
+00:11:40,980 --> 00:11:44,180
+意思就是你坐在那里
+This is the idea that you are just sitting there
+
+260
+00:11:44,180 --> 00:11:47,680
+头脑风暴、反复琢磨你的 AI 产品
+brainstorming, ruminating about what can go
+
+261
+00:11:47,680 --> 00:11:51,120
+会出什么问题。别这么做。要看
+wrong about your AI product. Don't do this. Look at
+
+262
+00:11:51,120 --> 00:11:54,580
+数据。先看数据。你要做的第一件事
+data. Look at data first. It should be the first thing
+
+263
+00:11:54,580 --> 00:11:56,280
+就是看数据。下一个，由领域专家
+you do is look at data. Next, domain experts
+
+264
+00:11:56,280 --> 00:11:58,620
+写提示词。我直接把它
+writing prompts. I'm going to go ahead and put
+
+265
+00:11:58,620 --> 00:12:01,600
+放进 S 档。很多人把
+that in the S tier. So a lot of people outsource
+
+266
+00:12:01,600 --> 00:12:04,180
+所有跟 AI 有关的事都外包给开发者。
+everything that has to do with AI to developers.
+
+267
+00:12:04,180 --> 00:12:06,960
+别这么做。AI 的意义就在于让
+Don't do this. The whole point of AI is to have
+
+268
+00:12:06,960 --> 00:12:10,550
+领域专家离产品更近，
+the domain expert closer to the product.
+
+269
+00:12:10,550 --> 00:12:14,530
+这样就不会有这种分工上的隔阂。你应该
+So you don't have this separation of concerns. You should
+
+270
+00:12:14,530 --> 00:12:17,340
+让领域专家来。比如做法律助手，
+have your domain expert. Let's say it's a legal assistant.
+
+271
+00:12:17,340 --> 00:12:18,630
+就该让律师来写
+You should have your lawyer writing
+
+272
+00:12:18,630 --> 00:12:20,430
+提示词。最后，
+the prompt. And then finally,
+
+273
+00:12:20,430 --> 00:12:24,050
+这一个是让 AI 包揽你所有的 eval。我把它
+the last one is letting AI do all your evals. I'm going to put
+
+274
+00:12:24,050 --> 00:12:26,990
+放进 F 档，因为这样你会被带偏。
+this in the F tier because this is how you can get led astray.
+
+275
+00:12:26,990 --> 00:12:29,810
+很多人直接用 Claude Code
+A lot of people just use Claude Code
+
+276
+00:12:29,810 --> 00:12:32,820
+或 Codex 去找出所有问题。
+or Codex to go find all the problems.
+
+277
+00:12:32,820 --> 00:12:36,950
+这只能抓到一部分问题，我敢保证它
+That can only catch some issues, but I guarantee you it
+
+278
+00:12:36,950 --> 00:12:39,170
+抓不全，也抓不到
+won't catch all of your issues and it won't catch
+
+279
+00:12:39,170 --> 00:12:42,130
+最重要的那些，那些需要
+the most important ones, the tricky ones that take
+
+280
+00:12:42,130 --> 00:12:44,470
+上下文、品味和判断才能看懂的棘手问题。
+context, taste, and judgment to understand.
+
+281
+00:12:44,470 --> 00:12:48,730
+刚才讲得很快。如果你想多了解
+I went through that really fast. If you want to learn
+
+282
+00:12:48,730 --> 00:12:51,530
+eval，我做了一份详细的指南，
+more about evals, I made this detailed guide
+
+283
+00:12:51,530 --> 00:12:54,310
+讲清楚你需要知道的一切，
+that walks through everything you need to know about
+
+284
+00:12:54,310 --> 00:12:57,670
+按你做 eval 所处的阶段来。
+evals, depending on what stage you're at with evals.
+
+285
+00:12:57,670 --> 00:12:59,650
+也许你对 eval
+So maybe you don't know anything about
+
+286
+00:12:59,650 --> 00:13:02,390
+一无所知，也许你已经有 eval，
+evals, or maybe you have evals,
+
+287
+00:13:02,390 --> 00:13:05,210
+但不知道该测什么，也许你
+but you don't really know what to test, or maybe you don't
+
+288
+00:13:05,210 --> 00:13:06,660
+不信任你的 eval 分数，
+trust your eval scores,
+
+289
+00:13:06,660 --> 00:13:10,550
+也许你觉得你的产品太难评测，或者你发现
+or maybe your product feels too difficult to eval, or you're finding
+
+290
+00:13:10,550 --> 00:13:13,410
+评测太贵了。不管哪种情况，
+that it's too expensive. Whatever the case may be,
+
+291
+00:13:13,410 --> 00:13:15,790
+我都有一份详细的指南，带你
+I have a detailed guide for you that will walk
+
+292
+00:13:15,790 --> 00:13:17,170
+了解你需要知道的东西。
+you through what you need to know.
+
+293
+00:13:17,170 --> 00:13:21,730
+你可以在 bit.ly/evals-guide 找到。点链接，我们就
+You can find it at bit.ly/evals-guide. Click the link and we'll
+
+294
+00:13:21,730 --> 00:13:22,530
+发给你。
+send it to you.

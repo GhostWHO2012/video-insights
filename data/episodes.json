@@ -1,5 +1,170 @@
 [
   {
+    "title": "【中英双语】AI Eval 概念从差到优全排名| Hamel Husain",
+    "bilibili_title": "【中英双语】AI Eval 概念从差到优全排名| Hamel Husain",
+    "original_title": "I Ranked Every AI Eval Concept From Worst to Best",
+    "bilibili_url": "https://www.bilibili.com/video/BV1HEyrz7Eqe/",
+    "youtube_url": "https://www.youtube.com/watch?v=Bc15F1xlbTA",
+    "channel": "Hamel Husain",
+    "duration": "00:13:24",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "speakers": [
+      "Hamel Husain"
+    ],
+    "folder_title": "【中英双语】AI Eval 概念从差到优全排名| Hamel Husain",
+    "path": "videos/undated-093_ai-eval-concepts-ranked-hamel-husain/",
+    "slug": "undated-093_ai-eval-concepts-ranked-hamel-husain",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-10-07",
+    "outline_count": 4,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png",
+      "outline-04.png"
+    ],
+    "subtitle_file": "I Ranked Every AI Eval Concept From Worst to Best [Bc15F1xlbTA].有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "【中英双语】用 Claude Code 做好 AI Eval的 8 个核心 Skills | Hamel Husain",
+    "bilibili_title": "【中英双语】用 Claude Code 做好 AI Eval的 8 个核心 Skills | Hamel Husain",
+    "original_title": "8 Claude Code skills I use for building better AI evals",
+    "bilibili_url": "https://www.bilibili.com/video/BV1zPykz1EkF/",
+    "youtube_url": "https://www.youtube.com/watch?v=c5Ur73GosR4",
+    "channel": "Hamel Husain",
+    "duration": "00:11:41",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "speakers": [
+      "Hamel Husain"
+    ],
+    "folder_title": "【中英双语】用 Claude Code 做好 AI Eval的 8 个核心 Skills | Hamel Husain",
+    "path": "videos/undated-092_claude-code-eval-skills-hamel-husain/",
+    "slug": "undated-092_claude-code-eval-skills-hamel-husain",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-09-30",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png"
+    ],
+    "subtitle_file": "8 Claude Code skills I use for building better AI evals [c5Ur73GosR4].有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "【中英双语】AI Eval 最常见的 7 个误区 | Hamel Husain",
+    "bilibili_title": "【中英双语】AI Eval 最常见的 7 个误区 | Hamel Husain",
+    "original_title": "7 Most Common AI Eval Mistakes (From Teaching 5K+ Engineers & PMs)",
+    "bilibili_url": "https://www.bilibili.com/video/BV1TmyrztEdA/",
+    "youtube_url": "https://www.youtube.com/watch?v=Ime2rOZTVAw",
+    "channel": "Hamel Husain",
+    "duration": "00:12:47",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "speakers": [
+      "Hamel Husain"
+    ],
+    "folder_title": "【中英双语】AI Eval 最常见的 7 个误区 | Hamel Husain",
+    "path": "videos/undated-091_seven-ai-eval-mistakes-hamel-husain/",
+    "slug": "undated-091_seven-ai-eval-mistakes-hamel-husain",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-10-12",
+    "outline_count": 2,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png"
+    ],
+    "subtitle_file": "7 Most Common AI Eval Mistakes (From Teaching 5K+ Engineers & PMs) [Ime2rOZTVAw].有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "【中英双语】如何从零写出你的第一个高质量 AI 评测 | SallyAnn DeLucia",
+    "bilibili_title": "【中英双语】如何从零写出你的第一个高质量 AI 评测 | SallyAnn DeLucia",
+    "original_title": "How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI",
+    "bilibili_url": "https://www.bilibili.com/video/BV18sykzwEWB/",
+    "youtube_url": "https://www.youtube.com/watch?v=gv4w23xYj-0",
+    "channel": "AI Engineer",
+    "duration": "00:35:20",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "speakers": [
+      "SallyAnn DeLucia"
+    ],
+    "folder_title": "【中英双语】如何从零写出你的第一个高质量 AI 评测 | SallyAnn DeLucia",
+    "path": "videos/undated-090_how-to-write-your-first-ai-eval-sallyann-delucia/",
+    "slug": "undated-090_how-to-write-your-first-ai-eval-sallyann-delucia",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-10-25",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png"
+    ],
+    "subtitle_file": "How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI [gv4w23xYj-0].有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "【中英双语】Claude 能直接帮你搭建 AI Eval 吗？| Hamel Husain",
+    "bilibili_title": "【中英双语】Claude 能直接帮你搭建 AI Eval 吗？| Hamel Husain",
+    "original_title": "Can Claude Build Your Evals?",
+    "bilibili_url": "https://www.bilibili.com/video/BV1vVykzzEiT/",
+    "youtube_url": "https://www.youtube.com/watch?v=5ykulgyB8kk",
+    "channel": "Hamel Husain",
+    "duration": "00:47:59",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "speakers": [
+      "Hamel Husain",
+      "Isaac Flath"
+    ],
+    "folder_title": "【中英双语】Claude 能直接帮你搭建 AI Eval 吗？| Hamel Husain",
+    "path": "videos/undated-089_can-claude-build-your-evals-hamel-husain/",
+    "slug": "undated-089_can-claude-build-your-evals-hamel-husain",
+    "cover": "cover.jpeg",
+    "source_published_at": "2026-10-13",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png"
+    ],
+    "subtitle_file": "Can Claude Build Your Evals？ [5ykulgyB8kk].有翻译参考资料版.双语.中文在上.短句版.srt"
+  },
+  {
+    "title": "【中英双语】Claude Opus 5.5 写作真的变强了吗？| Hamel Husain",
+    "original_title": "Is Opus 5.5 Better At Writing?",
+    "youtube_url": "https://www.youtube.com/watch?v=8uafNYFJ0rU",
+    "channel": "Hamel Husain",
+    "duration": "00:19:56",
+    "speakers": [
+      "Hamel Husain",
+      "Isaac Flath"
+    ],
+    "folder_title": "【中英双语】Claude Opus 5.5 写作真的变强了吗？| Hamel Husain",
+    "path": "videos/undated-086_claude-opus-5-5-writing-blind-test-hamel-husain/",
+    "slug": "undated-086_claude-opus-5-5-writing-blind-test-hamel-husain",
+    "cover": "cover.jpeg",
+    "outline_count": 3,
+    "subtitle_count": 1,
+    "outline_files": [
+      "outline-01.png",
+      "outline-02.png",
+      "outline-03.png"
+    ],
+    "subtitle_file": "Is Opus 5.5 Better At Writing？ [8uafNYFJ0rU].有翻译参考资料版.双语.中文在上.短句版.srt",
+    "bilibili_title": "【中英双语】Claude Opus 5.5 写作真的变强了吗？| Hamel Husain",
+    "bilibili_url": "https://www.bilibili.com/video/BV1EUykz1EeY/",
+    "published_at": "2026-11-25",
+    "up": "通用人工智障",
+    "source_published_at": "2026-10-08",
+    "bilibili_status": "仅自己可见，待公开"
+  },
+  {
     "title": "【中英字幕】15 分钟讲透 AI Eval | Hamel Husain",
     "original_title": "AI Eval Concepts Explained in 15 Minutes",
     "youtube_url": "https://www.youtube.com/watch?v=3rlYBCDK0K4",
@@ -2057,29 +2222,6 @@
       "02.png"
     ],
     "subtitle_file": "翻译好的.srt"
-  },
-  {
-    "title": "Claude Opus 5.5 写作真的变强了吗？多场景盲测：能否彻底摆脱“AI 味” | Hamel Husain",
-    "original_title": "Is Opus 5.5 Better At Writing?",
-    "youtube_url": "https://www.youtube.com/watch?v=8uafNYFJ0rU",
-    "channel": "Hamel Husain",
-    "duration": "00:19:56",
-    "speakers": [
-      "Hamel Husain"
-    ],
-    "folder_title": "Claude Opus 5.5 写作真的变强了吗？多场景盲测：能否彻底摆脱“AI 味” | Hamel Husain",
-    "path": "videos/undated-086_claude-opus-5-5-writing-blind-test-hamel-husain/",
-    "slug": "undated-086_claude-opus-5-5-writing-blind-test-hamel-husain",
-    "cover": "cover.jpeg",
-    "bilibili_status": "仅自己可见，待公开",
-    "outline_count": 3,
-    "subtitle_count": 1,
-    "outline_files": [
-      "outline-01.png",
-      "outline-02.png",
-      "outline-03.png"
-    ],
-    "subtitle_file": "Is Opus 5.5 Better At Writing？ [8uafNYFJ0rU].有翻译参考资料版.双语.中文在上.短句版.srt"
   },
   {
     "title": "现在是 AI 创业最好时机",

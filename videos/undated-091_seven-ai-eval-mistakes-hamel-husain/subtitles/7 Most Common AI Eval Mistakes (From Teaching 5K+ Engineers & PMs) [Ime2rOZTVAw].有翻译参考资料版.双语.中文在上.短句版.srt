@@ -1,0 +1,1499 @@
+1
+00:00:00,000 --> 00:00:03,560
+我给 5000 多名工程师和产品经理讲过 eval（评测），
+I've taught evals to more than 5,000 engineers and PMs
+
+2
+00:00:03,560 --> 00:00:06,500
+也和 50 多家公司一起做过 eval。
+and worked with over 50 companies on their evals.
+
+3
+00:00:06,760 --> 00:00:08,600
+我见过很多重复出现的错误，
+And I've seen a lot of the same mistakes
+
+4
+00:00:08,600 --> 00:00:10,820
+让团队白白浪费时间，
+which lead to teams wasting their time
+
+5
+00:00:10,820 --> 00:00:12,800
+做出不可靠的 eval，
+building unreliable evals
+
+6
+00:00:12,800 --> 00:00:14,520
+或者追着错误的问题跑。
+or chasing down the wrong problems.
+
+7
+00:00:14,840 --> 00:00:16,600
+所以这期视频，我会讲讲
+So in this video, I'm gonna walk through
+
+8
+00:00:16,600 --> 00:00:19,720
+大家做 eval 最常犯的七个错误，
+the seven most common mistakes people make with evals
+
+9
+00:00:19,720 --> 00:00:22,640
+让你做出真正信得过的 eval。
+so you can build evals that you actually trust.
+
+10
+00:00:22,900 --> 00:00:26,240
+第一个错误：还没看数据就写 eval。
+Number one is creating evals before you look at any data.
+
+11
+00:00:26,400 --> 00:00:28,940
+如果你还没看数据就写 eval，
+So if you create evals before looking at any data,
+
+12
+00:00:28,940 --> 00:00:30,590
+会浪费大量时间。
+you're going to waste a lot of time.
+
+13
+00:00:30,590 --> 00:00:33,860
+如果一开始只是头脑风暴所有可能出错的地方，
+If you start with just brainstorming anything that can go wrong,
+
+14
+00:00:33,980 --> 00:00:37,280
+问题在于，可能出错的情况是无穷无尽的。
+what happens is the space of what can go wrong is infinite.
+
+15
+00:00:37,280 --> 00:00:38,860
+结果你会浪费
+And so you're going to end up wasting
+
+16
+00:00:38,860 --> 00:00:40,950
+大量时间，得到一个满是指标的仪表盘，
+tons of time and you're going to have a dashboard
+
+17
+00:00:40,950 --> 00:00:43,980
+却没有一个能告诉你
+full of metrics that are not going to point you
+
+18
+00:00:43,980 --> 00:00:45,770
+该往哪个方向去改。
+in the direction of what you need to work on.
+
+19
+00:00:45,770 --> 00:00:47,420
+我举个例子说明我的意思。
+Let me show you an example of what I mean.
+
+20
+00:00:47,500 --> 00:00:50,730
+这是我们合作过的一个 AI 租房助手的
+Here is a simplified conversation from an AI
+
+21
+00:00:50,730 --> 00:00:52,900
+一段简化对话。这个
+leasing assistant we've worked with. The purpose
+
+22
+00:00:52,900 --> 00:00:56,380
+AI 租房助手的用途，是帮物业经理
+of this AI leasing assistant is to help property
+
+23
+00:00:56,380 --> 00:00:58,480
+处理和潜在租客的对话。
+managers handle conversations with prospective
+
+24
+00:00:58,480 --> 00:01:01,490
+这是我们看数据时发现的
+tenants. So this is one real conversation that we found
+
+25
+00:01:01,490 --> 00:01:03,780
+一段真实对话。来回聊了
+when looking at the data. After a bunch of
+
+26
+00:01:03,780 --> 00:01:06,350
+一阵之后，潜在租客最后说：
+back and forth, the prospect eventually said,
+
+27
+00:01:06,350 --> 00:01:08,820
+“嘿，这超出我的预算了。谢谢你们的
+"Hey, this is out of my budget. Thank you for your
+
+28
+00:01:08,820 --> 00:01:11,630
+服务。”然后租房助手回答说：
+business." And then the leasing assistant went ahead and said,
+
+29
+00:01:11,630 --> 00:01:12,860
+“不客气。如果您的情况
+"You're welcome. If your situation
+
+30
+00:01:12,860 --> 00:01:15,550
+有变化，或者以后有其他问题，
+changes or you have any other questions in the future,
+
+31
+00:01:15,550 --> 00:01:17,560
+随时联系我们。祝您愉快。”在有些
+feel free to reach out. Have a great day." To some
+
+32
+00:01:17,560 --> 00:01:18,920
+人看来，这回答挺好的。
+people, this might sound great.
+
+33
+00:01:18,920 --> 00:01:22,100
+如果你让 AI 来看这段对话，它会说
+If you point AI at a conversation like this, it's going to say
+
+34
+00:01:22,100 --> 00:01:25,720
+一切顺利，因为看起来客户很满意。
+everything went well because it looks like the customer is happy.
+
+35
+00:01:25,720 --> 00:01:26,800
+但别忘了，这个应用
+But remember, this application
+
+36
+00:01:26,800 --> 00:01:30,820
+是销售助手，它应该持续跟进这位潜在租客。
+is a sales assistant. It's supposed to nurture the prospective tenant.
+
+37
+00:01:30,820 --> 00:01:31,740
+所以在这个
+And so in this particular
+
+38
+00:01:31,740 --> 00:01:34,640
+场景下，它本可以做得更好，
+situation, it could have done a better job at
+
+39
+00:01:34,640 --> 00:01:36,180
+去找同一家公司名下
+looking for other properties owned by the same
+
+40
+00:01:36,180 --> 00:01:38,360
+其他符合这个人需求的房源。
+company that would have fit that person's needs.
+
+41
+00:01:38,360 --> 00:01:40,860
+在这个具体场景里，AI 没有
+In this specific situation, the AI didn't do
+
+42
+00:01:40,860 --> 00:01:43,210
+在后台做任何事去应对这个异议，
+anything in the background to try to handle this objection,
+
+43
+00:01:43,210 --> 00:01:44,840
+只是说了句“好的，谢谢”。所以
+and it just said, "Okay, thank you." And
+
+44
+00:01:44,840 --> 00:01:47,600
+这个例子说明了为什么你需要看数据：
+so this is the example why you need to look at data
+
+45
+00:01:47,600 --> 00:01:50,500
+这样你才能提醒自己，
+so that you can remind yourself about what
+
+46
+00:01:50,500 --> 00:01:52,660
+好的结果是什么样，并让你写的 eval
+good looks like and ground the evals
+
+47
+00:01:52,660 --> 00:01:55,640
+立足于实际出现的
+that you choose to write in actual problems that are
+
+48
+00:01:55,640 --> 00:01:57,600
+问题。第二个错误是
+coming up. The second mistake people make is using
+
+49
+00:01:57,600 --> 00:02:01,000
+直接套用现成的通用指标。你去找任何一家
+generic metrics off the shelf. So if you go to any
+
+50
+00:02:01,000 --> 00:02:04,270
+eval 供应商或者任何 eval 工具，
+evals vendor or any evals tool out there,
+
+51
+00:02:04,270 --> 00:02:07,480
+它们都会给你一份通用指标清单，
+they'll serve you up a menu of generic metrics that you
+
+52
+00:02:07,480 --> 00:02:10,450
+直接放上仪表盘就行。感觉像是有进展，
+can just put on a dashboard. And it feels like progress,
+
+53
+00:02:10,450 --> 00:02:12,960
+但这是最浪费时间的
+but there is no better way to waste
+
+54
+00:02:12,960 --> 00:02:15,390
+做法。最后你会得到一个
+your time. What you'll end up with is a dashboard
+
+55
+00:02:15,390 --> 00:02:18,300
+这样的仪表盘：有用性、真实性、
+that looks like this. Helpfulness, truthfulness,
+
+56
+00:02:18,720 --> 00:02:22,060
+简洁度评分，全都是 1 到 5 分。
+conciseness score, all on a scale of one to five.
+
+57
+00:02:22,060 --> 00:02:24,640
+看起来不错，但没人知道是什么意思。
+And it looks good, but nobody knows what it means.
+
+58
+00:02:24,640 --> 00:02:29,240
+简洁度 4.9 是什么意思？有用性 4.2 又是什么意思？
+What does conciseness 4.9 mean, or helpfulness 4.2 mean?
+
+59
+00:02:29,360 --> 00:02:31,810
+它没法指导行动，而且太泛了，
+It's not actionable and it's so generic
+
+60
+00:02:31,810 --> 00:02:33,800
+纯粹浪费大家的时间。
+that it's a waste of everyone's time.
+
+61
+00:02:33,920 --> 00:02:37,820
+我们不知道 3.7 和 4.3 有什么区别。
+We don't know what a 3.7 versus a 4.3 means.
+
+62
+00:02:37,960 --> 00:02:39,240
+别这么做。
+You don't want to do this.
+
+63
+00:02:39,380 --> 00:02:41,400
+你应该从看数据开始。
+You want to start with looking at your data.
+
+64
+00:02:41,640 --> 00:02:43,910
+更好的指标会是这样：
+An example of a better metric would have been:
+
+65
+00:02:43,910 --> 00:02:46,880
+当出现符合条件的销售机会时，
+did we handle the sales objection when a qualifying
+
+66
+00:02:46,880 --> 00:02:48,380
+我们有没有处理好销售异议？
+opportunity was presented?
+
+67
+00:02:48,640 --> 00:02:49,460
+这就很具体。
+That is specific.
+
+68
+00:02:49,780 --> 00:02:51,510
+这是应用里真实出错的地方，
+That is something that's going wrong with the application
+
+69
+00:02:51,510 --> 00:02:53,160
+是你想衡量的东西，
+and that's something you want
+
+70
+00:02:53,160 --> 00:02:55,670
+而不是这些泛泛的主题。
+to measure rather than these generic topics.
+
+71
+00:02:55,670 --> 00:02:58,180
+再展开讲一下，我有这张
+Just to expand on this topic further, I have this flash
+
+72
+00:02:58,180 --> 00:02:59,870
+知识卡片，能把这一点讲透。
+card that helps drive home this point.
+
+73
+00:02:59,870 --> 00:03:03,260
+你不要 ROUGE、BLEU（文本相似度指标）、
+So you don't want generic metrics like ROUGE, BLEU,
+
+74
+00:03:03,400 --> 00:03:07,130
+忠实度、有用性这类通用指标，而要具体的指标，
+faithfulness, helpfulness; you want these specific metrics,
+
+75
+00:03:07,130 --> 00:03:08,240
+比如日历预约
+like a calendar scheduling
+
+76
+00:03:08,240 --> 00:03:10,550
+失败、对话流程被打断、
+failure, interrupted conversation flow,
+
+77
+00:03:10,550 --> 00:03:13,400
+某个组件没显示出来、邮件收件人
+a widget not rendering, maybe the email recipient is
+
+78
+00:03:13,400 --> 00:03:17,280
+填错了，或者没能转人工。
+incorrect, or maybe you have failed to escalate to a human.
+
+79
+00:03:17,280 --> 00:03:19,200
+你看，这些错误都很具体，而不是
+See how these errors are specific and not
+
+80
+00:03:19,200 --> 00:03:20,990
+像那个有用性评分那样泛泛而谈。
+generic like that helpfulness score.
+
+81
+00:03:20,990 --> 00:03:23,220
+所以你要考虑的是，确保
+And so what you want to think about is you want to make sure
+
+82
+00:03:23,220 --> 00:03:26,620
+你的 eval 指标对应你观察到的东西：
+your eval metrics correlate to something you have observed.
+
+83
+00:03:26,620 --> 00:03:28,360
+是你在数据里看到过的，
+There's some data that you observed,
+
+84
+00:03:28,500 --> 00:03:30,110
+或者至少是你
+or at the very least, it's something you have
+
+85
+00:03:30,110 --> 00:03:33,160
+能复现的。如果是某个你
+been able to reproduce. If it's some error that
+
+86
+00:03:33,160 --> 00:03:34,860
+特别担心会发生的错误，
+you're really worried about happening,
+
+87
+00:03:34,860 --> 00:03:37,940
+在建 eval 之前，你应该尽力把它复现出来。
+you should try really hard to reproduce it before creating
+
+88
+00:03:37,940 --> 00:03:40,290
+你的 eval 指标
+the eval. You also want your eval metrics
+
+89
+00:03:40,290 --> 00:03:42,160
+还应该针对不容易解决的问题。别把
+to relate to a non-trivial issue. Don't waste your
+
+90
+00:03:42,160 --> 00:03:45,200
+时间花在给很容易修的问题建 eval 上，
+time creating evals for things that can be fixed super easily,
+
+91
+00:03:45,200 --> 00:03:47,100
+因为 eval 是有成本的。你还
+as evals are not free. You also
+
+92
+00:03:47,100 --> 00:03:49,830
+要让 eval 只针对某一种具体失败。
+want your evals to be scoped to a specific failure.
+
+93
+00:03:49,830 --> 00:03:51,900
+你不要一个包罗万象的 eval。如果你有一个
+You don't want a catch-all eval. If you have a
+
+94
+00:03:51,900 --> 00:03:54,070
+包罗万象的 eval，用一大段提示词列出所有
+catch-all eval with a giant prompt of anything
+
+95
+00:03:54,070 --> 00:03:57,060
+可能出错的地方，那就和通用指标
+that can go wrong, that's very similar to a generic
+
+96
+00:03:57,060 --> 00:03:59,560
+差不多，最终用处不大。
+metric, and ultimately it's not that helpful.
+
+97
+00:03:59,560 --> 00:04:02,760
+你还要尽量让 eval 输出
+You also want to try to make sure your evals have a
+
+98
+00:04:02,760 --> 00:04:06,370
+二元结果，通过或失败，而不是某种分数，
+binary outcome, pass or fail, instead of some kind of score,
+
+99
+00:04:06,370 --> 00:04:08,820
+因为分数背后藏着大量复杂性，
+because a score hides a lot of complexity
+
+100
+00:04:08,820 --> 00:04:11,800
+要让团队对 1、2、3、4、5 分
+in it, and it becomes exponentially more expensive
+
+101
+00:04:11,800 --> 00:04:15,400
+各代表什么达成一致，成本会成倍上升。
+to align your team on what a 1, 2, 3, 4, or 5
+
+102
+00:04:15,400 --> 00:04:18,570
+最后，你的 eval 要可验证。
+means. And finally, you want your evals to be verifiable.
+
+103
+00:04:18,570 --> 00:04:20,340
+你要用人工标签，
+You want to use human labels so that
+
+104
+00:04:20,340 --> 00:04:23,070
+拿人工核定的参考答案来衡量 eval，
+you can measure your evals against a ground truth
+
+105
+00:04:23,070 --> 00:04:26,080
+对这个 eval 有多好心里有数。
+and build confidence around how good that eval is.
+
+106
+00:04:26,240 --> 00:04:28,070
+这就引出了第三个错误：
+And that brings us to our third mistake,
+
+107
+00:04:28,070 --> 00:04:32,540
+不拿人工标签验证 LLM 评审（LLM-as-a-judge）或 eval。
+not validating your LLM judge or eval against human
+
+108
+00:04:32,540 --> 00:04:36,480
+你最不想遇到的情况，
+labels. The last situation you want to be in is
+
+109
+00:04:36,480 --> 00:04:38,600
+就是被人问：凭什么你的 LLM 评审
+where you are challenged to explain why your LLM
+
+110
+00:04:38,600 --> 00:04:41,440
+信得过，或者为什么你的 eval 信得过。
+as a judge can be trusted or why your eval can be trusted.
+
+111
+00:04:41,440 --> 00:04:42,580
+你不能只写个提示词，
+You don't want to just write a prompt
+
+112
+00:04:42,580 --> 00:04:44,320
+就假设这个 eval 是好的。
+and assume that the eval is good.
+
+113
+00:04:44,400 --> 00:04:46,200
+那就跟单纯祈祷
+That would be the same thing as just praying
+
+114
+00:04:46,200 --> 00:04:47,220
+eval 是好的一样。
+that the eval is good.
+
+115
+00:04:47,300 --> 00:04:49,660
+你应该先有人工标签，
+Instead, what you want to do is have human labels,
+
+116
+00:04:49,660 --> 00:04:52,600
+然后测试这些人工标签
+and you want to test to make sure those human labels
+
+117
+00:04:52,600 --> 00:04:55,820
+和你的 LLM 评审或分类器是否一致。
+align with your LLM as a judge or classifier.
+
+118
+00:04:56,080 --> 00:04:58,420
+屏幕上是这张知识卡片。
+And so I have this flashcard here on the screen.
+
+119
+00:04:58,620 --> 00:05:00,900
+基本上你要做的就是把数据分组：
+And basically what you want to do is segment your data.
+
+120
+00:05:01,120 --> 00:05:04,200
+大约 20% 作训练集，
+You want around 20% of your data to be train,
+
+121
+00:05:04,460 --> 00:05:06,980
+40% 作开发集，40% 作测试集。
+40% to be dev, and 40% to be test.
+
+122
+00:05:07,120 --> 00:05:08,860
+基本做法是，
+And essentially what you want to do is
+
+123
+00:05:08,860 --> 00:05:11,000
+写 LLM 评审的提示词时，
+when you're writing your LLM as a judge prompt,
+
+124
+00:05:11,000 --> 00:05:14,840
+从训练集里挑示例。
+you want to source examples from that train set.
+
+125
+00:05:14,840 --> 00:05:17,800
+用开发集调整 LLM
+And with that dev set, you want to tune the LLM as
+
+126
+00:05:17,800 --> 00:05:21,040
+评审，让它尽量和开发集一致，
+a judge to agree with the dev set as much as possible.
+
+127
+00:05:21,040 --> 00:05:22,480
+基本上就是针对开发集
+So basically you want to hill climb
+
+128
+00:05:22,480 --> 00:05:25,130
+不断调优。而测试集，
+against that dev set. And that test set,
+
+129
+00:05:25,130 --> 00:05:27,600
+你要先留着，甚至对自己保密，直到最后
+you want to hold out, or hide from yourself, to the very
+
+130
+00:05:27,600 --> 00:05:30,090
+才用，确保你没有对开发集过拟合。
+end, just to make sure you didn't overfit to the dev set.
+
+131
+00:05:30,090 --> 00:05:32,700
+你要确保你建的任何 LLM 评审
+You want to make sure that any LLM judge
+
+132
+00:05:32,700 --> 00:05:37,390
+或分类器，都能泛化到
+or classifier you create can generalize outside of the data
+
+133
+00:05:37,390 --> 00:05:39,580
+LLM 或分类器
+that the LLM or the classifier
+
+134
+00:05:39,580 --> 00:05:42,200
+没见过的数据上。另外，不能只看准确率，
+has seen. Now, you shouldn't just measure accuracy.
+
+135
+00:05:42,200 --> 00:05:44,580
+还要看精确率和召回率，
+You should measure precision and recall, and that's
+
+136
+00:05:44,580 --> 00:05:47,580
+也就是 TPR 和 TNR（真阳性率、真阴性率）。
+what TPR and TNR are. I won't go into the details
+
+137
+00:05:47,580 --> 00:05:50,260
+具体怎么算我不展开，但最重要的一点是，
+of those calculations, but the most important thing
+
+138
+00:05:50,260 --> 00:05:53,080
+如果你用 LLM 评审，
+to take away here is that if you have an LLM judge,
+
+139
+00:05:53,080 --> 00:05:56,000
+就必须让它和人工标签对齐，必须
+you need to align it with human labels. You need
+
+140
+00:05:56,000 --> 00:05:58,020
+拿人工标签来衡量它。除了这些错误，
+to measure it against human labels. Beyond these mistakes,
+
+141
+00:05:58,020 --> 00:06:00,480
+做 eval 还会遇到很多问题。
+there's a lot of questions that come up
+
+142
+00:06:00,480 --> 00:06:03,810
+所以我整理了这份免费的 AI eval
+with evals. So I've put together this free AI evals
+
+143
+00:06:03,810 --> 00:06:05,960
+FAQ（常见问题解答），收录了我们在 eval 课程
+FAQ with the most common questions we get
+
+144
+00:06:05,960 --> 00:06:08,200
+答疑时间里最常被问到的问题。
+during our evals course office hours.
+
+145
+00:06:08,200 --> 00:06:10,760
+我们一直在补充，链接放在
+We're always adding to it, and I'll leave a link in the
+
+146
+00:06:10,760 --> 00:06:12,790
+下方简介里。第四个错误是
+description below. The fourth mistake is not
+
+147
+00:06:12,790 --> 00:06:15,800
+一开始就没把产品设计成
+designing your product for success with evals
+
+148
+00:06:15,800 --> 00:06:18,180
+方便做 eval 的样子。我举个例子。
+in the first place. Let me show you an example.
+
+149
+00:06:18,180 --> 00:06:20,600
+我屏幕上的是一个数据 agent（数据分析智能体）。
+So what I have on my screen is a data agent. The
+
+150
+00:06:20,600 --> 00:06:24,000
+这个数据 agent 的用途是回答业务问题，比如
+purpose of the data agent is to answer business questions like,
+
+151
+00:06:24,000 --> 00:06:26,040
+“产品 A 上个季度的
+"What was net revenue for product
+
+152
+00:06:26,040 --> 00:06:29,460
+净收入是多少？”很多人会把这种东西
+A last quarter?" Now, a lot of times people design
+
+153
+00:06:29,460 --> 00:06:32,120
+设计成一个聊天机器人，直接给你
+such a thing as a chatbot that just gives you
+
+154
+00:06:32,120 --> 00:06:33,330
+答案。问题是，
+the answer. And the problem is,
+
+155
+00:06:33,330 --> 00:06:36,980
+你要怎么评测它？唯一的
+how are you supposed to evaluate this? The only way to
+
+156
+00:06:36,980 --> 00:06:41,290
+办法就是把所有工作重做一遍。
+evaluate something like this would be to redo all of the work.
+
+157
+00:06:41,290 --> 00:06:43,500
+那样评测的成本
+And that would become extremely
+
+158
+00:06:43,500 --> 00:06:46,230
+会高得离谱。你根本不可能
+expensive to evaluate. There's no way
+
+159
+00:06:46,230 --> 00:06:49,700
+写 eval 或者看这些数据
+that you could write evals or look at this data without
+
+160
+00:06:49,700 --> 00:06:51,600
+而不耗费大量时间。
+it consuming a lot of time.
+
+161
+00:06:51,600 --> 00:06:55,620
+你应该换一种方式设计产品，
+And what you want to do is design your product differently such that
+
+162
+00:06:55,620 --> 00:06:57,510
+让它方便你做 eval，
+it sets you up for success with evals,
+
+163
+00:06:57,510 --> 00:07:01,080
+同时也带来更好的用户体验。只要你的
+but also is a better user experience. Anytime you have an
+
+164
+00:07:01,080 --> 00:07:02,590
+AI 产品面向专家用户，
+AI product that caters to an expert user,
+
+165
+00:07:02,590 --> 00:07:05,560
+比如这个数据 agent，你就应该
+like this data agent, what you want to do is design
+
+166
+00:07:05,560 --> 00:07:08,800
+围绕这类用户来设计。所以不要做成
+for that persona in mind. So instead of something
+
+167
+00:07:08,800 --> 00:07:09,760
+我屏幕上这样，
+that looks like this, what I'm showing on the
+
+168
+00:07:09,760 --> 00:07:13,160
+而是设计成这样：
+screen, you want to design something that maybe looks like this:
+
+169
+00:07:13,160 --> 00:07:15,040
+你提一个问题，它会告诉你
+you ask a question, but it shows
+
+170
+00:07:15,040 --> 00:07:16,390
+答案从哪里来，
+you where the answer is coming from.
+
+171
+00:07:16,390 --> 00:07:20,160
+给你看中间的计算过程，
+And it shows you the intermediate calculations, it shows you
+
+172
+00:07:20,160 --> 00:07:22,990
+相关的数字，等等。
+correlated numbers, so on and so forth.
+
+173
+00:07:22,990 --> 00:07:25,780
+它还可能给你看很多细节，
+And it might also show you a lot of detail around how
+
+174
+00:07:25,780 --> 00:07:27,930
+说明是怎么算出来的，让你一步步
+it was computed and give you the chance to walk
+
+175
+00:07:27,930 --> 00:07:30,840
+走一遍这个数字是怎么算出来的，
+through step by step how that number was computed
+
+176
+00:07:30,840 --> 00:07:32,880
+甚至可以改变计算方式，
+and even change the way it's computed
+
+177
+00:07:32,880 --> 00:07:35,180
+并给你一堆可信度信号，
+and give you a bunch of trust signals,
+
+178
+00:07:35,320 --> 00:07:37,980
+比如这个指标以前是怎么算的？
+such as: how was this metric computed previously?
+
+179
+00:07:38,220 --> 00:07:39,700
+有没有相关报告，
+Are there any related reports
+
+180
+00:07:39,700 --> 00:07:41,380
+里面这个数字
+where this number is consistent
+
+181
+00:07:41,380 --> 00:07:43,640
+和之前报告的一致，等等。
+with what was previously reported, et cetera?
+
+182
+00:07:43,780 --> 00:07:45,400
+如果你这样设计产品，
+If you design your product like this,
+
+183
+00:07:45,480 --> 00:07:47,340
+你做 eval 成功的
+you have a much better chance
+
+184
+00:07:47,340 --> 00:07:48,860
+机会就大得多。
+of being successful with evals.
+
+185
+00:07:49,000 --> 00:07:51,340
+而且不只限于数据 agent。
+And it's not just constrained to data agents.
+
+186
+00:07:51,340 --> 00:07:53,880
+这篇博客里还有别的例子。
+There are other examples in this blog post.
+
+187
+00:07:54,040 --> 00:07:55,980
+我讲了一个给学校用的课程设计工具，
+I talk about a curriculum builder for schools
+
+188
+00:07:55,980 --> 00:07:57,660
+与其做一个
+where instead of just an app
+
+189
+00:07:57,660 --> 00:07:59,620
+直接吐出教案的应用，
+that just spits out a lesson plan,
+
+190
+00:07:59,620 --> 00:08:02,500
+不如做一个应用，带着老师
+what you want is an app that walks the teacher
+
+191
+00:08:02,500 --> 00:08:05,540
+逐条查看相对于一份已有的、可信的
+through the changes from an existing, trusted
+
+192
+00:08:05,540 --> 00:08:08,830
+教案做了哪些改动，让他们决定接受还是拒绝。
+lesson plan and allows them to accept or reject those changes.
+
+193
+00:08:08,830 --> 00:08:10,100
+同样，博客里还有一个
+And similarly, I have another
+
+194
+00:08:10,100 --> 00:08:12,580
+医疗场景的例子，我现在就不展开了，
+example in the blog post, which I won't go through right now,
+
+195
+00:08:12,580 --> 00:08:14,640
+我会把链接
+about a medical use case. I'll put a
+
+196
+00:08:14,640 --> 00:08:17,540
+放在简介里，方便你仔细看。
+link in the description so you can go through this more carefully.
+
+197
+00:08:17,540 --> 00:08:19,280
+下一个最常见的错误，
+The next most common mistake at
+
+198
+00:08:19,280 --> 00:08:21,470
+第五个，是给 LLM 评审
+number five is using a Likert scale
+
+199
+00:08:21,470 --> 00:08:25,260
+用李克特量表，也就是 1 到 5 分。我在
+or a one to five scale with an LLM judge. And I've shared a
+
+200
+00:08:25,260 --> 00:08:27,860
+屏幕上放了一张知识卡片来说明。
+flash card on the screen to help illustrate the point.
+
+201
+00:08:27,860 --> 00:08:29,160
+做 LLM 评审时，
+It's really common when you're building
+
+202
+00:08:29,160 --> 00:08:31,450
+大家常常会觉得需要一个分数，
+an LLM judge to think you want a score
+
+203
+00:08:31,450 --> 00:08:35,100
+比如 1 到 5 分或 0 到 100 分，因为生活中
+like a 1 to 5 score or a 0 to 100 score because in life
+
+204
+00:08:35,100 --> 00:08:37,360
+很多时候存在灰色地带，
+a lot of times there are shades of gray.
+
+205
+00:08:37,360 --> 00:08:39,820
+不是非黑即白。有些东西还行
+There's no black and white. Something is kind of good but
+
+206
+00:08:39,820 --> 00:08:41,360
+但称不上好，可你不应该把
+not great and you don't want to carry
+
+207
+00:08:41,360 --> 00:08:44,780
+这种直觉带到构建 eval 的方式里。
+that intuition over into the way you construct evals.
+
+208
+00:08:45,040 --> 00:08:47,240
+你的 eval 应该反映
+You want to create evals that mirror the way
+
+209
+00:08:47,240 --> 00:08:49,700
+你做产品和业务决策的
+that you are going to make product and business
+
+210
+00:08:49,700 --> 00:08:51,940
+方式。你要考虑的是：
+decisions. What you want to think about is:
+
+211
+00:08:51,940 --> 00:08:55,760
+够不够好、能不能上线，是或否？还要非常清楚
+is this good enough to ship, yes or no? And be very clear
+
+212
+00:08:55,760 --> 00:08:57,860
+什么算好、什么不算好。
+about what is good and what is not.
+
+213
+00:08:57,940 --> 00:08:59,680
+在你的业务里，很可能
+And it's very likely in your business
+
+214
+00:08:59,680 --> 00:09:02,180
+本来就有一条线，划分什么足够好、
+that you have a line of what is good enough
+
+215
+00:09:02,180 --> 00:09:03,980
+什么还不够好、不能上线。
+and what is not good enough to ship.
+
+216
+00:09:04,080 --> 00:09:05,840
+如果你建的 eval
+If you are constructing evals
+
+217
+00:09:05,840 --> 00:09:07,240
+输出 1 到 5 分，
+that output a one to five score,
+
+218
+00:09:07,380 --> 00:09:10,000
+你就会陷入极大的复杂性。
+you're gonna be trapped in massive complexity.
+
+219
+00:09:10,280 --> 00:09:11,560
+你得有一套评分细则，
+You're gonna have to have a rubric
+
+220
+00:09:11,560 --> 00:09:15,020
+写明 1、2、3、4、5 分各代表什么，
+that specifies what a one, two, three, four, five means.
+
+221
+00:09:15,100 --> 00:09:17,220
+还得花大量时间
+And you're gonna have to spend a lot of time
+
+222
+00:09:17,220 --> 00:09:19,640
+让大家对它的确切含义达成一致，
+aligning humans on exactly what that means.
+
+223
+00:09:19,780 --> 00:09:22,220
+整个流程会慢上好几倍。
+And it's gonna slow down the process exponentially.
+
+224
+00:09:22,540 --> 00:09:23,520
+别这么做。
+You don't want to do this.
+
+225
+00:09:23,520 --> 00:09:26,380
+你还应该给 eval 划定范围，
+Another thing you want to do is scope your evals
+
+226
+00:09:26,380 --> 00:09:28,660
+让每个 eval 只盯一种错误。
+so that they are focused on a single error.
+
+227
+00:09:28,840 --> 00:09:30,700
+这样划定范围之后，
+When you scope your evals like this,
+
+228
+00:09:30,700 --> 00:09:33,960
+就更容易做成二元评分了。
+it becomes much easier to create a binary score.
+
+229
+00:09:34,200 --> 00:09:37,400
+这张图展示的就是正确的做法。
+So in this diagram, we're showing you how to do things correctly.
+
+230
+00:09:37,640 --> 00:09:39,820
+再说一遍，不要用李克特评分。
+Again, you don't want this Likert score.
+
+231
+00:09:39,980 --> 00:09:43,010
+你要的是通过/失败的二元结果，
+What you want to do is have binary pass/fail outcomes
+
+232
+00:09:43,010 --> 00:09:45,080
+并把 eval 限定在一个非常具体的错误上，
+and scope your evals to a very specific error,
+
+233
+00:09:45,280 --> 00:09:48,020
+比如：是否礼貌、有没有预约错误、
+like: is it polite, or is there a scheduling error,
+
+234
+00:09:48,020 --> 00:09:51,260
+转人工有没有出错？每一项都只判通过或失败。
+or was there a human handoff error? And have those be pass or fail.
+
+235
+00:09:51,260 --> 00:09:54,210
+这样更能指导行动，管理起来
+Those are more actionable and going to be way easier
+
+236
+00:09:54,210 --> 00:09:56,080
+也容易得多、便宜得多。
+and less expensive to manage.
+
+237
+00:09:56,240 --> 00:09:59,960
+用 1 到 5 分的李克特量表只会让你陷入复杂性，
+Having a 1 to 5 Likert scale will just trap you in complexity.
+
+238
+00:10:00,000 --> 00:10:02,540
+开会一开就是几个小时。
+and result in meetings that go on for hours.
+
+239
+00:10:02,700 --> 00:10:03,640
+别这么做。
+You don't want to do this.
+
+240
+00:10:03,760 --> 00:10:06,840
+第六个错误：让不合适的人审数据。
+Number six is having the wrong people review the data.
+
+241
+00:10:06,960 --> 00:10:11,100
+大家很容易想把 eval 外包给开发者。
+So it's very tempting to outsource evals to your developers.
+
+242
+00:10:11,420 --> 00:10:13,810
+毕竟开发者就是
+After all, your developers are the ones
+
+243
+00:10:13,810 --> 00:10:14,940
+做这个 AI 应用的人。
+who are making the AI application.
+
+244
+00:10:15,120 --> 00:10:16,450
+但在大多数情况下，开发者
+However, your developers are not
+
+245
+00:10:16,450 --> 00:10:18,880
+并不是领域专家，
+the domain expert in most situations,
+
+246
+00:10:19,200 --> 00:10:22,020
+除非你做的是编程应用或编程 agent。
+unless you're building a coding application or a coding agent.
+
+247
+00:10:22,100 --> 00:10:24,130
+应该审数据的人，
+The people that should be reviewing the data
+
+248
+00:10:24,130 --> 00:10:25,760
+是懂这些数据的人。
+are the people who understand the data.
+
+249
+00:10:25,900 --> 00:10:28,240
+如果是法律助手，就该由律师来审；
+So if it's a legal assistant, it should be a lawyer.
+
+250
+00:10:28,240 --> 00:10:31,350
+如果是医疗助手，就该由医生，
+If it's a medical assistant, it should be a doctor
+
+251
+00:10:31,350 --> 00:10:34,620
+或者有足够医学专业知识、
+or a person with enough medical expertise
+
+252
+00:10:34,620 --> 00:10:37,540
+能判断结果好坏的人来审。
+to understand whether or not the outcome is good.
+
+253
+00:10:37,620 --> 00:10:40,840
+要做好这一点，你应该自己做标注应用。
+To do this well, you want to create your own annotation apps.
+
+254
+00:10:41,100 --> 00:10:43,130
+你可以用 Claude Code、Codex（编程智能体工具）
+You can use Claude Code, Codex,
+
+255
+00:10:43,130 --> 00:10:46,750
+或你喜欢的编程 agent，做一个定制的标注应用，
+or your favorite coding agents to create a customized annotation app
+
+256
+00:10:46,750 --> 00:10:49,620
+让专家能轻松地审数据。
+that makes it easy for that expert to review the data.
+
+257
+00:10:49,720 --> 00:10:52,350
+这是一个定制标注应用的例子，
+This is an example of a custom annotation app for
+
+258
+00:10:52,350 --> 00:10:54,900
+给我们前面讲过的那个公寓租房 AI 助手用的。
+that apartment leasing AI assistant that we discussed earlier.
+
+259
+00:10:54,900 --> 00:10:58,300
+它是按数据定制的，让一位专家，
+This is customized to the data and allows an expert, which is
+
+260
+00:10:58,300 --> 00:11:02,080
+也就是负责这个应用的产品经理，来审数据。
+a product manager working on this application, to review the data.
+
+261
+00:11:02,200 --> 00:11:05,090
+这么做非常值得，让领域专家
+It is a really good idea to do this so your domain experts are the ones
+
+262
+00:11:05,090 --> 00:11:08,760
+来标注和审阅数据，而不是开发者。
+who are annotating and reviewing data, not the developers.
+
+263
+00:11:09,000 --> 00:11:10,690
+第七个错误是过度依赖
+For number seven, the mistake is relying too much
+
+264
+00:11:10,690 --> 00:11:14,020
+自动化方法或自动化 eval。
+on automated approaches or automated evals.
+
+265
+00:11:14,240 --> 00:11:17,820
+屏幕上有个梗图，大家真的一直这么干：
+So I have a meme here on the screen, and people literally do
+
+266
+00:11:17,820 --> 00:11:21,160
+直接让编程 agent 把所有错误都找出来。
+this all the time: just ask your coding agent to find all the errors.
+
+267
+00:11:21,160 --> 00:11:23,970
+编程 agent 能找到一些错误，
+Now, a coding agent can find some errors,
+
+268
+00:11:23,970 --> 00:11:26,220
+但找不全。
+but it's not going to find all the errors.
+
+269
+00:11:26,380 --> 00:11:29,060
+关于什么是好、什么是坏，
+There's a lot of context that an agent doesn't
+
+270
+00:11:29,060 --> 00:11:30,980
+有很多上下文是 agent 不知道的。
+have about what is good and what is bad.
+
+271
+00:11:31,120 --> 00:11:32,890
+探索什么是好、
+The best way to explore what is good
+
+272
+00:11:32,890 --> 00:11:35,400
+什么是坏，最好的办法是自己看数据。
+and what is bad is to look at the data yourself.
+
+273
+00:11:35,640 --> 00:11:38,320
+我们最近做了一项研究，比较了各家主流
+So we recently did a study comparing all of the leading
+
+274
+00:11:38,320 --> 00:11:41,160
+eval 供应商在自动化 eval 方面的能力。
+eval vendors on their capabilities with automated evals.
+
+275
+00:11:41,880 --> 00:11:45,320
+各家主流供应商都有某种功能，
+And all of the leading vendors have some sort of feature
+
+276
+00:11:45,320 --> 00:11:48,860
+能让 agent 翻遍你的全部数据来找问题。
+that allows an agent to look through all of your data to find issues.
+
+277
+00:11:48,860 --> 00:11:51,620
+我们比较了 Arize、LangSmith、Braintrust（eval 平台），
+We compared Arize, LangSmith, and Braintrust,
+
+278
+00:11:51,620 --> 00:11:54,660
+发现它们都能找到
+and we found that they can all find issues that are
+
+279
+00:11:54,660 --> 00:11:57,240
+明显的问题，但都在同样的地方失手。
+obvious, but they all fail in the same ways.
+
+280
+00:11:57,240 --> 00:11:59,960
+我们用的还是同一份公寓租房 AI 助手的数据，
+We use the same apartment leasing AI assistant data
+
+281
+00:11:59,960 --> 00:12:01,390
+就是前面讲过的那个。
+that we've discussed before.
+
+282
+00:12:01,390 --> 00:12:04,320
+这些 agent 都以完全相同的方式失败，
+So all of these agents failed in the exact same way and failed
+
+283
+00:12:04,320 --> 00:12:06,070
+漏掉了同样的错误。比如，
+to catch the same errors. For example,
+
+284
+00:12:06,070 --> 00:12:10,020
+它们都漏掉了销售异议的问题，
+they all missed issues with sales objections. They missed
+
+285
+00:12:10,020 --> 00:12:14,070
+漏了短信里出现 Markdown（文本标记格式）的问题，
+formatting issues like having Markdown in text messages.
+
+286
+00:12:14,070 --> 00:12:15,540
+都没能发现
+They all failed to capture problems
+
+287
+00:12:15,540 --> 00:12:17,650
+语音 agent 被打断的问题，
+with interruptions in the voice agent,
+
+288
+00:12:17,650 --> 00:12:20,680
+也都没能发现转人工
+and they also all failed to capture problems with human
+
+289
+00:12:20,680 --> 00:12:23,010
+的问题。我会把这项研究的链接放在简介里，
+handoff. I'll put a link to this study in the description
+
+290
+00:12:23,010 --> 00:12:24,680
+你可以深入看看，但你要
+so you can dig deeper, but what you
+
+291
+00:12:24,680 --> 00:12:26,990
+知道的是，你得亲自看数据，
+need to know is you need to be looking at your data
+
+292
+00:12:26,990 --> 00:12:28,920
+才能不断明确好的结果是什么样。
+so that you can refine what good looks like.
+
+293
+00:12:29,020 --> 00:12:32,030
+不看数据，你不可能知道
+It's impossible for you to know what good looks
+
+294
+00:12:32,030 --> 00:12:34,060
+好的结果是什么样。如果你
+like without looking at some data. If you were
+
+295
+00:12:34,060 --> 00:12:36,800
+只是一开始就把这些全部头脑风暴出来，
+just tasked with brainstorming all of this up front,
+
+296
+00:12:36,800 --> 00:12:38,500
+很可能会漏掉一些东西，
+it's likely you would miss something and
+
+297
+00:12:38,500 --> 00:12:40,190
+你的 eval 也不会真的好。
+your evals wouldn't be really good.
+
+298
+00:12:40,190 --> 00:12:42,520
+想在实践中避开这些错误，可以看看
+If you want to avoid these mistakes in practice, check out
+
+299
+00:12:42,520 --> 00:12:45,010
+这期视频，我讲了 8 个 Claude Code 技能，
+this video where I go over eight Claude Code skills
+
+300
+00:12:45,010 --> 00:12:46,480
+能帮你改进 eval。
+that can help you improve your evals.
